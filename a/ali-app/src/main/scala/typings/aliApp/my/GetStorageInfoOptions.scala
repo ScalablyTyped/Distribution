@@ -18,7 +18,8 @@ object GetStorageInfoOptions {
     __obj.asInstanceOf[GetStorageInfoOptions]
   }
   
-  extension [Self <: GetStorageInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStorageInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: StorageInfo => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }

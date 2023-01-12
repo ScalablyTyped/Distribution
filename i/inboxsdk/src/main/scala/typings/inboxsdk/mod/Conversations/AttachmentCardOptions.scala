@@ -43,7 +43,8 @@ object AttachmentCardOptions {
     __obj.asInstanceOf[AttachmentCardOptions]
   }
   
-  extension [Self <: AttachmentCardOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachmentCardOptions] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: js.Array[DownloadButtonDescriptor | CustomButtonDescriptor]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

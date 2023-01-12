@@ -35,7 +35,8 @@ object DocumentMSPasswordRequest2 {
     __obj.asInstanceOf[DocumentMSPasswordRequest2]
   }
   
-  extension [Self <: DocumentMSPasswordRequest2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentMSPasswordRequest2] (val x: Self) extends AnyVal {
     
     inline def setIsRequestPasswordToModify(value: Boolean): Self = StObject.set(x, "IsRequestPasswordToModify", value.asInstanceOf[js.Any])
   }

@@ -26,7 +26,8 @@ object AnalysisKeepWordsTokenFilter {
     __obj.asInstanceOf[AnalysisKeepWordsTokenFilter]
   }
   
-  extension [Self <: AnalysisKeepWordsTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisKeepWordsTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setKeep_words(value: js.Array[String]): Self = StObject.set(x, "keep_words", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object distUtilsHasItemsMod {
       __obj.asInstanceOf[CollectionLike[T]]
     }
     
-    extension [Self <: CollectionLike[?], T](x: Self & CollectionLike[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectionLike[?], T] (val x: Self & CollectionLike[T]) extends AnyVal {
       
       inline def setHas(value: T => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     }

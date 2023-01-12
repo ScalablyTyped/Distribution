@@ -21,7 +21,8 @@ object TruncateRequestedEventOptions {
     __obj.asInstanceOf[TruncateRequestedEventOptions]
   }
   
-  extension [Self <: TruncateRequestedEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TruncateRequestedEventOptions] (val x: Self) extends AnyVal {
     
     inline def setLength(value: double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }

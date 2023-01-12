@@ -18,7 +18,8 @@ object SetAcceptedEncodingsRequest {
     __obj.asInstanceOf[SetAcceptedEncodingsRequest]
   }
   
-  extension [Self <: SetAcceptedEncodingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetAcceptedEncodingsRequest] (val x: Self) extends AnyVal {
     
     inline def setEncodings(value: js.Array[ContentEncoding]): Self = StObject.set(x, "encodings", value.asInstanceOf[js.Any])
     

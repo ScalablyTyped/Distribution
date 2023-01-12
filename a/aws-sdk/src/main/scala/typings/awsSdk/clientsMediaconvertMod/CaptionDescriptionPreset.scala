@@ -33,7 +33,8 @@ object CaptionDescriptionPreset {
     __obj.asInstanceOf[CaptionDescriptionPreset]
   }
   
-  extension [Self <: CaptionDescriptionPreset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionDescriptionPreset] (val x: Self) extends AnyVal {
     
     inline def setCustomLanguageCode(value: stringPatternAZaZ23AZaZ): Self = StObject.set(x, "CustomLanguageCode", value.asInstanceOf[js.Any])
     

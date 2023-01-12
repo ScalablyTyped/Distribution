@@ -38,7 +38,8 @@ object FieldValidationMessage {
     __obj.asInstanceOf[FieldValidationMessage]
   }
   
-  extension [Self <: FieldValidationMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldValidationMessage] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

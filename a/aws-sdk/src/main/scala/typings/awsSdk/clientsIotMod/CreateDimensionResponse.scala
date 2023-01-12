@@ -23,7 +23,8 @@ object CreateDimensionResponse {
     __obj.asInstanceOf[CreateDimensionResponse]
   }
   
-  extension [Self <: CreateDimensionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDimensionResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: DimensionArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

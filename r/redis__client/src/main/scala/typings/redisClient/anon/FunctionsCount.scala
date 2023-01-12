@@ -17,7 +17,8 @@ object FunctionsCount {
     __obj.asInstanceOf[FunctionsCount]
   }
   
-  extension [Self <: FunctionsCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionsCount] (val x: Self) extends AnyVal {
     
     inline def setFunctionsCount(value: Double): Self = StObject.set(x, "functionsCount", value.asInstanceOf[js.Any])
     

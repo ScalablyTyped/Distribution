@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[CrawlerOptions]
     }
     
-    extension [Self <: CrawlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrawlerOptions] (val x: Self) extends AnyVal {
       
       inline def setCsv(value: String): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object mod {
       __obj.asInstanceOf[License]
     }
     
-    extension [Self <: License](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: License] (val x: Self) extends AnyVal {
       
       inline def setLicenseUrl(value: String): Self = StObject.set(x, "licenseUrl", value.asInstanceOf[js.Any])
       

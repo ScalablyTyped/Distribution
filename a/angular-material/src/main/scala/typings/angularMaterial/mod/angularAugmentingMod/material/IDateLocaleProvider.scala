@@ -50,7 +50,8 @@ object IDateLocaleProvider {
     __obj.asInstanceOf[IDateLocaleProvider]
   }
   
-  extension [Self <: IDateLocaleProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDateLocaleProvider] (val x: Self) extends AnyVal {
     
     inline def setDates(value: js.Array[String]): Self = StObject.set(x, "dates", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ReadonlyHighlightProps {
     __obj.asInstanceOf[ReadonlyHighlightProps]
   }
   
-  extension [Self <: ReadonlyHighlightProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyHighlightProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

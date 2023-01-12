@@ -70,7 +70,8 @@ object CreateLabelingJobRequest {
     __obj.asInstanceOf[CreateLabelingJobRequest]
   }
   
-  extension [Self <: CreateLabelingJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLabelingJobRequest] (val x: Self) extends AnyVal {
     
     inline def setHumanTaskConfig(value: HumanTaskConfig): Self = StObject.set(x, "HumanTaskConfig", value.asInstanceOf[js.Any])
     

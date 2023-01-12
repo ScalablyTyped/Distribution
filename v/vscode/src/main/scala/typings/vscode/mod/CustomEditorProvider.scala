@@ -119,7 +119,8 @@ object CustomEditorProvider {
     __obj.asInstanceOf[CustomEditorProvider[T]]
   }
   
-  extension [Self <: CustomEditorProvider[?], T /* <: CustomDocument */](x: Self & CustomEditorProvider[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomEditorProvider[?], T /* <: CustomDocument */] (val x: Self & CustomEditorProvider[T]) extends AnyVal {
     
     inline def setBackupCustomDocument(value: (T, CustomDocumentBackupContext, CancellationToken) => Thenable[CustomDocumentBackup]): Self = StObject.set(x, "backupCustomDocument", js.Any.fromFunction3(value))
     

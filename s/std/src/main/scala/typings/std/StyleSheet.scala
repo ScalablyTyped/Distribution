@@ -36,7 +36,8 @@ object StyleSheet {
     __obj.asInstanceOf[StyleSheet]
   }
   
-  extension [Self <: StyleSheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleSheet] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: scala.Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

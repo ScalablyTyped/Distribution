@@ -15,7 +15,8 @@ object UserDescriptorServices {
     __obj.asInstanceOf[UserDescriptorServices]
   }
   
-  extension [Self <: UserDescriptorServices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserDescriptorServices] (val x: Self) extends AnyVal {
     
     inline def setUsers(value: Users): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object LoadPolicyConfig {
     __obj.asInstanceOf[LoadPolicyConfig]
   }
   
-  extension [Self <: LoadPolicyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadPolicyConfig] (val x: Self) extends AnyVal {
     
     inline def setMaxEventLoopDelay(value: Double): Self = StObject.set(x, "maxEventLoopDelay", value.asInstanceOf[js.Any])
     

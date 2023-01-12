@@ -40,7 +40,8 @@ object DateTimeUtil {
       __obj.asInstanceOf[SimpleDate]
     }
     
-    extension [Self <: SimpleDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleDate] (val x: Self) extends AnyVal {
       
       inline def setGet_day(value: () => Double): Self = StObject.set(x, "get_day", js.Any.fromFunction0(value))
       

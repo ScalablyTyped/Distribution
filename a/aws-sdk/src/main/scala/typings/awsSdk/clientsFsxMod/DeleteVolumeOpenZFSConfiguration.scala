@@ -18,7 +18,8 @@ object DeleteVolumeOpenZFSConfiguration {
     __obj.asInstanceOf[DeleteVolumeOpenZFSConfiguration]
   }
   
-  extension [Self <: DeleteVolumeOpenZFSConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVolumeOpenZFSConfiguration] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: DeleteOpenZFSVolumeOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     

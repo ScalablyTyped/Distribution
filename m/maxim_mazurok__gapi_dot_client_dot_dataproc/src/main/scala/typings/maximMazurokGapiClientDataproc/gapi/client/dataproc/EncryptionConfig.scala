@@ -16,7 +16,8 @@ object EncryptionConfig {
     __obj.asInstanceOf[EncryptionConfig]
   }
   
-  extension [Self <: EncryptionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncryptionConfig] (val x: Self) extends AnyVal {
     
     inline def setGcePdKmsKeyName(value: String): Self = StObject.set(x, "gcePdKmsKeyName", value.asInstanceOf[js.Any])
     

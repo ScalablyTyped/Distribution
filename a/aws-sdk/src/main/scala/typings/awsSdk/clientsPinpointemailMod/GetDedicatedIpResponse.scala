@@ -18,7 +18,8 @@ object GetDedicatedIpResponse {
     __obj.asInstanceOf[GetDedicatedIpResponse]
   }
   
-  extension [Self <: GetDedicatedIpResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDedicatedIpResponse] (val x: Self) extends AnyVal {
     
     inline def setDedicatedIp(value: DedicatedIp): Self = StObject.set(x, "DedicatedIp", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object tooltip {
       __obj.asInstanceOf[ITooltip]
     }
     
-    extension [Self <: ITooltip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltip] (val x: Self) extends AnyVal {
       
       inline def set$promise(value: IPromise[Unit]): Self = StObject.set(x, "$promise", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object tooltip {
       __obj.asInstanceOf[ITooltipOptions]
     }
     
-    extension [Self <: ITooltipOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -177,7 +179,8 @@ object tooltip {
       __obj.asInstanceOf[ITooltipProvider]
     }
     
-    extension [Self <: ITooltipProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipProvider] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: ITooltipOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }

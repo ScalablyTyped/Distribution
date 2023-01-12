@@ -139,7 +139,8 @@ object typesUseScaleTransitionMod {
       __obj.asInstanceOf[ScaleTransitionHookOptions[E]]
     }
     
-    extension [Self <: ScaleTransitionHookOptions[?], E /* <: HTMLElement */](x: Self & ScaleTransitionHookOptions[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScaleTransitionHookOptions[?], E /* <: HTMLElement */] (val x: Self & ScaleTransitionHookOptions[E]) extends AnyVal {
       
       inline def setClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       

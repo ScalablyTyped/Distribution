@@ -48,7 +48,8 @@ object ListVirtualClustersRequest {
     __obj.asInstanceOf[ListVirtualClustersRequest]
   }
   
-  extension [Self <: ListVirtualClustersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListVirtualClustersRequest] (val x: Self) extends AnyVal {
     
     inline def setContainerProviderId(value: String1024): Self = StObject.set(x, "containerProviderId", value.asInstanceOf[js.Any])
     

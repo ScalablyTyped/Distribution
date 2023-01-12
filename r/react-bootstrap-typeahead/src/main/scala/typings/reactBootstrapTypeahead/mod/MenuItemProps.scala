@@ -19,7 +19,8 @@ object MenuItemProps {
     __obj.asInstanceOf[MenuItemProps[T]]
   }
   
-  extension [Self <: MenuItemProps[?], T /* <: TypeaheadModel */](x: Self & MenuItemProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuItemProps[?], T /* <: TypeaheadModel */] (val x: Self & MenuItemProps[T]) extends AnyVal {
     
     inline def setOption(value: T): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object TableData {
     __obj.asInstanceOf[TableData]
   }
   
-  extension [Self <: TableData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableData] (val x: Self) extends AnyVal {
     
     inline def setBorderVisible(value: Boolean): Self = StObject.set(x, "borderVisible", value.asInstanceOf[js.Any])
     

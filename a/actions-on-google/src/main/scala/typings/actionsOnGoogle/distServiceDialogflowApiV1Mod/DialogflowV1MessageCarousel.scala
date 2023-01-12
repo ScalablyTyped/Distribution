@@ -19,7 +19,8 @@ object DialogflowV1MessageCarousel {
     __obj.asInstanceOf[DialogflowV1MessageCarousel]
   }
   
-  extension [Self <: DialogflowV1MessageCarousel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1MessageCarousel] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[DialogflowV1MessageOptionItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object DateSpanInput {
     __obj.asInstanceOf[DateSpanInput]
   }
   
-  extension [Self <: DateSpanInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateSpanInput] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: DateInput): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

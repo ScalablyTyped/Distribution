@@ -22,7 +22,8 @@ object CloudStorageProviders {
     __obj.asInstanceOf[CloudStorageProviders]
   }
   
-  extension [Self <: CloudStorageProviders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudStorageProviders] (val x: Self) extends AnyVal {
     
     inline def setStorageProviders(
       value: js.Array[

@@ -23,7 +23,8 @@ object EventTimeRange {
     __obj.asInstanceOf[EventTimeRange]
   }
   
-  extension [Self <: EventTimeRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventTimeRange] (val x: Self) extends AnyVal {
     
     inline def setFromTime(value: js.Date): Self = StObject.set(x, "FromTime", value.asInstanceOf[js.Any])
     

@@ -551,7 +551,8 @@ object sapMP13nPopupMod {
       __obj.asInstanceOf[PopupSettings]
     }
     
-    extension [Self <: PopupSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupSettings] (val x: Self) extends AnyVal {
       
       inline def setAdditionalButtons(
         value: js.Array[typings.openui5.sapMButtonMod.default] | typings.openui5.sapMButtonMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

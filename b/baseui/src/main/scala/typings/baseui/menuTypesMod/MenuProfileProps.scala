@@ -30,7 +30,8 @@ object MenuProfileProps {
     __obj.asInstanceOf[MenuProfileProps]
   }
   
-  extension [Self <: MenuProfileProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuProfileProps] (val x: Self) extends AnyVal {
     
     inline def setGetProfileItemImg(value: /* item */ Item => String | ComponentType[Any]): Self = StObject.set(x, "getProfileItemImg", js.Any.fromFunction1(value))
     

@@ -28,7 +28,8 @@ object ASPxClientRichEditCustomCommandExecutedEventArgs {
     __obj.asInstanceOf[ASPxClientRichEditCustomCommandExecutedEventArgs]
   }
   
-  extension [Self <: ASPxClientRichEditCustomCommandExecutedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRichEditCustomCommandExecutedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
     

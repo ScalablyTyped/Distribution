@@ -15,7 +15,8 @@ object EnumValuesCreateBranchPermissionRequired {
     __obj.asInstanceOf[EnumValuesCreateBranchPermissionRequired]
   }
   
-  extension [Self <: EnumValuesCreateBranchPermissionRequired](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesCreateBranchPermissionRequired] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: CreateBranchPermissionRequired): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

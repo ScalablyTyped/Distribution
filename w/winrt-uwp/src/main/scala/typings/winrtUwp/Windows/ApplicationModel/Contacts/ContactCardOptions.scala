@@ -28,7 +28,8 @@ object ContactCardOptions {
     __obj.asInstanceOf[ContactCardOptions]
   }
   
-  extension [Self <: ContactCardOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactCardOptions] (val x: Self) extends AnyVal {
     
     inline def setHeaderKind(value: ContactCardHeaderKind): Self = StObject.set(x, "headerKind", value.asInstanceOf[js.Any])
     

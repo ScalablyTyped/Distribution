@@ -19,7 +19,8 @@ object PickQueryStructurewhereEl {
     __obj.asInstanceOf[PickQueryStructurewhereEl]
   }
   
-  extension [Self <: PickQueryStructurewhereEl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickQueryStructurewhereEl] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: StringDictionary[Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object PackageInstalledResponse {
     __obj.asInstanceOf[PackageInstalledResponse]
   }
   
-  extension [Self <: PackageInstalledResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageInstalledResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: ActionPackageInstalled): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

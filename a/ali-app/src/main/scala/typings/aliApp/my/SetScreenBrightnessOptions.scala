@@ -18,7 +18,8 @@ object SetScreenBrightnessOptions {
     __obj.asInstanceOf[SetScreenBrightnessOptions]
   }
   
-  extension [Self <: SetScreenBrightnessOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetScreenBrightnessOptions] (val x: Self) extends AnyVal {
     
     inline def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
   }

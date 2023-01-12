@@ -23,7 +23,8 @@ object Condition {
     __obj.asInstanceOf[Condition]
   }
   
-  extension [Self <: Condition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
     
     inline def setAttributeValueList(value: AttributeValueList): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
     

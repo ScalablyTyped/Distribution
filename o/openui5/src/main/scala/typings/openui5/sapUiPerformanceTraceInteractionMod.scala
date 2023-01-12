@@ -89,7 +89,8 @@ object sapUiPerformanceTraceInteractionMod extends Shortcut {
       __obj.asInstanceOf[Interaction]
     }
     
-    extension [Self <: Interaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Interaction] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: js.Function => js.Array[js.Object]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       

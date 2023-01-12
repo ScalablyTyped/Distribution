@@ -66,7 +66,8 @@ object Policy {
     __obj.asInstanceOf[Policy]
   }
   
-  extension [Self <: Policy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Policy] (val x: Self) extends AnyVal {
     
     inline def setAdmissionWhitelistPatterns(value: js.Array[AdmissionWhitelistPattern]): Self = StObject.set(x, "admissionWhitelistPatterns", value.asInstanceOf[js.Any])
     

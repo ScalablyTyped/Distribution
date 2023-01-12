@@ -17,7 +17,8 @@ object IRequest {
     __obj.asInstanceOf[IRequest]
   }
   
-  extension [Self <: IRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRequest] (val x: Self) extends AnyVal {
     
     inline def setReqCert(value: CertID): Self = StObject.set(x, "reqCert", value.asInstanceOf[js.Any])
     

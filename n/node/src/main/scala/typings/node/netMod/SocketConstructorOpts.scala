@@ -24,7 +24,8 @@ object SocketConstructorOpts {
     __obj.asInstanceOf[SocketConstructorOpts]
   }
   
-  extension [Self <: SocketConstructorOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocketConstructorOpts] (val x: Self) extends AnyVal {
     
     inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
     

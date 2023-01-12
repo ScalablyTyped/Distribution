@@ -27,7 +27,8 @@ object DriveItemObject {
     __obj.asInstanceOf[DriveItemObject]
   }
   
-  extension [Self <: DriveItemObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DriveItemObject] (val x: Self) extends AnyVal {
     
     inline def setAddonHasFileScopePermission(value: Boolean): Self = StObject.set(x, "addonHasFileScopePermission", value.asInstanceOf[js.Any])
     

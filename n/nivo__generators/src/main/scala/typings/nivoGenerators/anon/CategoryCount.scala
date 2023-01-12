@@ -19,7 +19,8 @@ object CategoryCount {
     __obj.asInstanceOf[CategoryCount]
   }
   
-  extension [Self <: CategoryCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CategoryCount] (val x: Self) extends AnyVal {
     
     inline def setCategoryCount(value: Double): Self = StObject.set(x, "categoryCount", value.asInstanceOf[js.Any])
     

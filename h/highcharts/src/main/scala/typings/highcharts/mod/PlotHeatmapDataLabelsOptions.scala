@@ -273,7 +273,8 @@ object PlotHeatmapDataLabelsOptions {
     __obj.asInstanceOf[PlotHeatmapDataLabelsOptions]
   }
   
-  extension [Self <: PlotHeatmapDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotHeatmapDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

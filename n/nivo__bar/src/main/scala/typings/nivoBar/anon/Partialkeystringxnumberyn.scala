@@ -26,7 +26,8 @@ object Partialkeystringxnumberyn {
     __obj.asInstanceOf[Partialkeystringxnumberyn]
   }
   
-  extension [Self <: Partialkeystringxnumberyn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialkeystringxnumberyn] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

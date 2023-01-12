@@ -34,7 +34,8 @@ object srcNgtscAnnotationsNgModuleSrcModuleWithProvidersMod {
       __obj.asInstanceOf[ResolvedModuleWithProviders]
     }
     
-    extension [Self <: ResolvedModuleWithProviders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedModuleWithProviders] (val x: Self) extends AnyVal {
       
       inline def setMwpCall(value: CallExpression): Self = StObject.set(x, "mwpCall", value.asInstanceOf[js.Any])
       

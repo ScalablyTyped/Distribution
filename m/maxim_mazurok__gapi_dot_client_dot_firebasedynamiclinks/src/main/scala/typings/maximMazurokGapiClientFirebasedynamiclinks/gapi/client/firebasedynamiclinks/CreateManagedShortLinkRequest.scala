@@ -34,7 +34,8 @@ object CreateManagedShortLinkRequest {
     __obj.asInstanceOf[CreateManagedShortLinkRequest]
   }
   
-  extension [Self <: CreateManagedShortLinkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateManagedShortLinkRequest] (val x: Self) extends AnyVal {
     
     inline def setDynamicLinkInfo(value: DynamicLinkInfo): Self = StObject.set(x, "dynamicLinkInfo", value.asInstanceOf[js.Any])
     

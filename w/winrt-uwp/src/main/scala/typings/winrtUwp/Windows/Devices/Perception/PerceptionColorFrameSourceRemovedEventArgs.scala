@@ -17,7 +17,8 @@ object PerceptionColorFrameSourceRemovedEventArgs {
     __obj.asInstanceOf[PerceptionColorFrameSourceRemovedEventArgs]
   }
   
-  extension [Self <: PerceptionColorFrameSourceRemovedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerceptionColorFrameSourceRemovedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setFrameSource(value: PerceptionColorFrameSource): Self = StObject.set(x, "frameSource", value.asInstanceOf[js.Any])
   }

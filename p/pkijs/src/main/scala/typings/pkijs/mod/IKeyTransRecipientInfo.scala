@@ -30,7 +30,8 @@ object IKeyTransRecipientInfo {
     __obj.asInstanceOf[IKeyTransRecipientInfo]
   }
   
-  extension [Self <: IKeyTransRecipientInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKeyTransRecipientInfo] (val x: Self) extends AnyVal {
     
     inline def setEncryptedKey(value: OctetString): Self = StObject.set(x, "encryptedKey", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object SecuritySchemeName {
     __obj.asInstanceOf[SecuritySchemeName]
   }
   
-  extension [Self <: SecuritySchemeName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecuritySchemeName] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: NameString): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object OnAfterEnteringVRObservableEvent {
     __obj.asInstanceOf[OnAfterEnteringVRObservableEvent]
   }
   
-  extension [Self <: OnAfterEnteringVRObservableEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnAfterEnteringVRObservableEvent] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }

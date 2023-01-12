@@ -169,7 +169,8 @@ object CTemplatePrinter {
     __obj.asInstanceOf[CTemplatePrinter]
   }
   
-  extension [Self <: CTemplatePrinter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CTemplatePrinter] (val x: Self) extends AnyVal {
     
     inline def setAllLinkedDocuments(value: Boolean): Self = StObject.set(x, "allLinkedDocuments", value.asInstanceOf[js.Any])
     

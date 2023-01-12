@@ -29,7 +29,8 @@ object libGComponentsLineMod extends Shortcut {
       __obj.asInstanceOf[ILineProps]
     }
     
-    extension [Self <: ILineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILineProps] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: X1): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     }

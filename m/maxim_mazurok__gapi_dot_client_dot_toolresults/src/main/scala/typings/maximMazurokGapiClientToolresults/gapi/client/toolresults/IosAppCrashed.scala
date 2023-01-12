@@ -16,7 +16,8 @@ object IosAppCrashed {
     __obj.asInstanceOf[IosAppCrashed]
   }
   
-  extension [Self <: IosAppCrashed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosAppCrashed] (val x: Self) extends AnyVal {
     
     inline def setStackTrace(value: StackTrace): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
     

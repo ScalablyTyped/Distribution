@@ -20,7 +20,8 @@ object ParentProjection {
     __obj.asInstanceOf[ParentProjection[ES]]
   }
   
-  extension [Self <: ParentProjection[?], ES /* <: ExprRef | SignalRef */](x: Self & ParentProjection[ES]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParentProjection[?], ES /* <: ExprRef | SignalRef */] (val x: Self & ParentProjection[ES]) extends AnyVal {
     
     inline def setParentProjection(value: Projection[ES]): Self = StObject.set(x, "parentProjection", value.asInstanceOf[js.Any])
     

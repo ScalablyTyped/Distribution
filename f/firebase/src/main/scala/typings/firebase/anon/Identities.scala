@@ -22,7 +22,8 @@ object Identities {
     __obj.asInstanceOf[Identities]
   }
   
-  extension [Self <: Identities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Identities] (val x: Self) extends AnyVal {
     
     inline def setIdentities(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ provider in firebase.firebase/compat.firebase.FirebaseSignInProvider ]:? std.Array<string>} */ js.Any

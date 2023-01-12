@@ -23,7 +23,8 @@ object RecipientSMSAuthentication {
     __obj.asInstanceOf[RecipientSMSAuthentication]
   }
   
-  extension [Self <: RecipientSMSAuthentication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientSMSAuthentication] (val x: Self) extends AnyVal {
     
     inline def setSenderProvidedNumbers(value: js.Array[String]): Self = StObject.set(x, "senderProvidedNumbers", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object GoogleActionsOrdersV3VerticalsPurchaseProductDetails {
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchaseProductDetails]
   }
   
-  extension [Self <: GoogleActionsOrdersV3VerticalsPurchaseProductDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsOrdersV3VerticalsPurchaseProductDetails] (val x: Self) extends AnyVal {
     
     inline def setGtin(value: String): Self = StObject.set(x, "gtin", value.asInstanceOf[js.Any])
     

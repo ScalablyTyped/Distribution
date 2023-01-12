@@ -19,7 +19,8 @@ object GoogleCloudDialogflowCxV3WebhookRequestFulfillmentInfo {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3WebhookRequestFulfillmentInfo]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3WebhookRequestFulfillmentInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3WebhookRequestFulfillmentInfo] (val x: Self) extends AnyVal {
     
     inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     

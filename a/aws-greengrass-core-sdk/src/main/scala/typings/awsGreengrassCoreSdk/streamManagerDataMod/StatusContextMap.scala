@@ -21,7 +21,8 @@ object StatusContextMap {
     __obj.asInstanceOf[StatusContextMap]
   }
   
-  extension [Self <: StatusContextMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusContextMap] (val x: Self) extends AnyVal {
     
     inline def setExportIdentifier(value: String): Self = StObject.set(x, "exportIdentifier", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object libShapesRingMod {
       __obj.asInstanceOf[RingConfig]
     }
     
-    extension [Self <: RingConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RingConfig] (val x: Self) extends AnyVal {
       
       inline def setInnerRadius(value: Double): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
       

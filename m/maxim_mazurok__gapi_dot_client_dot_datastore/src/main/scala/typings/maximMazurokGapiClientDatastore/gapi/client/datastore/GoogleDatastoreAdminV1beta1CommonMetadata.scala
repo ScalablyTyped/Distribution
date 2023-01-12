@@ -30,7 +30,8 @@ object GoogleDatastoreAdminV1beta1CommonMetadata {
     __obj.asInstanceOf[GoogleDatastoreAdminV1beta1CommonMetadata]
   }
   
-  extension [Self <: GoogleDatastoreAdminV1beta1CommonMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDatastoreAdminV1beta1CommonMetadata] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

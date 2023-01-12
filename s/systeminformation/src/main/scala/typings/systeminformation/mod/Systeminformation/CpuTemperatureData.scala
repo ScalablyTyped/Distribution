@@ -23,7 +23,8 @@ object CpuTemperatureData {
     __obj.asInstanceOf[CpuTemperatureData]
   }
   
-  extension [Self <: CpuTemperatureData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CpuTemperatureData] (val x: Self) extends AnyVal {
     
     inline def setChipset(value: Double): Self = StObject.set(x, "chipset", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object XChartShapeContainer {
     __obj.asInstanceOf[XChartShapeContainer]
   }
   
-  extension [Self <: XChartShapeContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XChartShapeContainer] (val x: Self) extends AnyVal {
     
     inline def setAddShape(value: XShape => Unit): Self = StObject.set(x, "addShape", js.Any.fromFunction1(value))
     

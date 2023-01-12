@@ -18,7 +18,8 @@ object LiteralFactory {
     __obj.asInstanceOf[LiteralFactory]
   }
   
-  extension [Self <: LiteralFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiteralFactory] (val x: Self) extends AnyVal {
     
     inline def setLiteralFactory(value: Expression): Self = StObject.set(x, "literalFactory", value.asInstanceOf[js.Any])
     

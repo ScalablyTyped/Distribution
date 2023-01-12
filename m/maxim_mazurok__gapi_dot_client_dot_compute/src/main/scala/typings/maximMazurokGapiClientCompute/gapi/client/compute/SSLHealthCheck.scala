@@ -38,7 +38,8 @@ object SSLHealthCheck {
     __obj.asInstanceOf[SSLHealthCheck]
   }
   
-  extension [Self <: SSLHealthCheck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SSLHealthCheck] (val x: Self) extends AnyVal {
     
     inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     

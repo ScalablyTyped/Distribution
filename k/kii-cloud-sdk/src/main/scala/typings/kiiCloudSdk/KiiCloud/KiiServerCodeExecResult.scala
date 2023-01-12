@@ -30,7 +30,8 @@ object KiiServerCodeExecResult {
     __obj.asInstanceOf[KiiServerCodeExecResult]
   }
   
-  extension [Self <: KiiServerCodeExecResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KiiServerCodeExecResult] (val x: Self) extends AnyVal {
     
     inline def setGetExecutedSteps(value: () => Double): Self = StObject.set(x, "getExecutedSteps", js.Any.fromFunction0(value))
     

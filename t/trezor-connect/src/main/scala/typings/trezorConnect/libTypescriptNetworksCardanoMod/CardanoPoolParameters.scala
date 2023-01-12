@@ -41,7 +41,8 @@ object CardanoPoolParameters {
     __obj.asInstanceOf[CardanoPoolParameters]
   }
   
-  extension [Self <: CardanoPoolParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoPoolParameters] (val x: Self) extends AnyVal {
     
     inline def setCost(value: String): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object VirtualGatewayTlsValidationContextSdsTrust {
     __obj.asInstanceOf[VirtualGatewayTlsValidationContextSdsTrust]
   }
   
-  extension [Self <: VirtualGatewayTlsValidationContextSdsTrust](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualGatewayTlsValidationContextSdsTrust] (val x: Self) extends AnyVal {
     
     inline def setSecretName(value: VirtualGatewaySdsSecretName): Self = StObject.set(x, "secretName", value.asInstanceOf[js.Any])
   }

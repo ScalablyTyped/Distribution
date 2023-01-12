@@ -151,7 +151,8 @@ object GmeClasses {
       __obj.asInstanceOf[Commit]
     }
     
-    extension [Self <: Commit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Commit] (val x: Self) extends AnyVal {
       
       inline def setBranchName(value: String): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
       
@@ -1925,7 +1926,8 @@ object GmeClasses {
       __obj.asInstanceOf[LibraryInfo]
     }
     
-    extension [Self <: LibraryInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LibraryInfo] (val x: Self) extends AnyVal {
       
       inline def setBranchName(value: String): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
       
@@ -1971,7 +1973,8 @@ object GmeClasses {
       __obj.asInstanceOf[MetaNodeParameters]
     }
     
-    extension [Self <: MetaNodeParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetaNodeParameters] (val x: Self) extends AnyVal {
       
       inline def setAspect(value: String): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
       
@@ -2004,7 +2007,8 @@ object GmeClasses {
       __obj.asInstanceOf[MetaRule]
     }
     
-    extension [Self <: MetaRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetaRule] (val x: Self) extends AnyVal {
       
       inline def setEnum(value: js.Array[String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       
@@ -2043,7 +2047,8 @@ object GmeClasses {
       __obj.asInstanceOf[MetaSetParameters]
     }
     
-    extension [Self <: MetaSetParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetaSetParameters] (val x: Self) extends AnyVal {
       
       inline def setMultiplicity(value: Boolean): Self = StObject.set(x, "multiplicity", value.asInstanceOf[js.Any])
       
@@ -2079,7 +2084,8 @@ object GmeClasses {
       __obj.asInstanceOf[NodeParameters]
     }
     
-    extension [Self <: NodeParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeParameters] (val x: Self) extends AnyVal {
       
       inline def setBase(value: Node): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -2868,7 +2874,8 @@ object GmeClasses {
       __obj.asInstanceOf[TraversalOptions]
     }
     
-    extension [Self <: TraversalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraversalOptions] (val x: Self) extends AnyVal {
       
       inline def setExcludeRoot(value: Boolean): Self = StObject.set(x, "excludeRoot", value.asInstanceOf[js.Any])
       

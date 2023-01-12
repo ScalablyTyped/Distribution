@@ -36,7 +36,8 @@ object DatabaseReplicateResponse {
     __obj.asInstanceOf[DatabaseReplicateResponse]
   }
   
-  extension [Self <: DatabaseReplicateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseReplicateResponse] (val x: Self) extends AnyVal {
     
     inline def setHistory(value: js.Array[DatabaseReplicationHistoryItem]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     

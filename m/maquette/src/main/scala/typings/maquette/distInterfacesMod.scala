@@ -45,7 +45,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[CalculationCache[Result]]
     }
     
-    extension [Self <: CalculationCache[?], Result](x: Self & CalculationCache[Result]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalculationCache[?], Result] (val x: Self & CalculationCache[Result]) extends AnyVal {
       
       inline def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
       
@@ -64,7 +65,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[Component]
     }
     
-    extension [Self <: Component](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
       
       inline def setRenderMaquette(value: () => js.UndefOr[VNode | Null]): Self = StObject.set(x, "renderMaquette", js.Any.fromFunction0(value))
     }
@@ -167,7 +169,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[Mapping[Source, Target]]
     }
     
-    extension [Self <: Mapping[?, ?], Source, Target](x: Self & (Mapping[Source, Target])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mapping[?, ?], Source, Target] (val x: Self & (Mapping[Source, Target])) extends AnyVal {
       
       inline def setMap(value: js.Array[Source] => Unit): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
@@ -191,7 +194,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[MaquetteComponent]
     }
     
-    extension [Self <: MaquetteComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaquetteComponent] (val x: Self) extends AnyVal {
       
       inline def setRender(value: () => js.UndefOr[VNode | Null]): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
     }
@@ -243,7 +247,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[Projection]
     }
     
-    extension [Self <: Projection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
       
       inline def setDomNode(value: Element): Self = StObject.set(x, "domNode", value.asInstanceOf[js.Any])
       
@@ -282,7 +287,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[ProjectionOptions]
     }
     
-    extension [Self <: ProjectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectionOptions] (val x: Self) extends AnyVal {
       
       inline def setEventHandlerInterceptor(
         value: (/* propertyName */ String, /* eventHandler */ EventHandler, /* domNode */ Node, /* properties */ VNodeProperties) => js.UndefOr[EventHandler]
@@ -373,7 +379,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[Projector]
     }
     
-    extension [Self <: Projector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Projector] (val x: Self) extends AnyVal {
       
       inline def setAppend(value: (Element, js.Function0[VNode]) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
       
@@ -418,7 +425,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[ProjectorOptions]
     }
     
-    extension [Self <: ProjectorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectorOptions] (val x: Self) extends AnyVal {
       
       inline def setPerformanceLogger(value: (/* eventType */ PerformanceLoggerEvent, /* trigger */ js.UndefOr[Event]) => Unit): Self = StObject.set(x, "performanceLogger", js.Any.fromFunction2(value))
       
@@ -457,7 +465,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[ProjectorService]
     }
     
-    extension [Self <: ProjectorService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectorService] (val x: Self) extends AnyVal {
       
       inline def setRenderNow(value: () => Unit): Self = StObject.set(x, "renderNow", js.Any.fromFunction0(value))
       
@@ -501,7 +510,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[VNode]
     }
     
-    extension [Self <: VNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[VNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -815,7 +825,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[VNodeProperties]
     }
     
-    extension [Self <: VNodeProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VNodeProperties] (val x: Self) extends AnyVal {
       
       inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       

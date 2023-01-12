@@ -28,7 +28,8 @@ object typingsModelsShippingAddressMod {
         __obj.asInstanceOf[ShippingAddressData]
       }
       
-      extension [Self <: ShippingAddressData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ShippingAddressData] (val x: Self) extends AnyVal {
         
         inline def setAddress(value: AddressType): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
         

@@ -23,7 +23,8 @@ object DataTableSelectParams {
     __obj.asInstanceOf[DataTableSelectParams]
   }
   
-  extension [Self <: DataTableSelectParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableSelectParams] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

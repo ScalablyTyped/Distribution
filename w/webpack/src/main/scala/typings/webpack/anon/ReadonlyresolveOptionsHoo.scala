@@ -44,7 +44,8 @@ object ReadonlyresolveOptionsHoo {
     __obj.asInstanceOf[ReadonlyresolveOptionsHoo]
   }
   
-  extension [Self <: ReadonlyresolveOptionsHoo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyresolveOptionsHoo] (val x: Self) extends AnyVal {
     
     inline def setResolveOptions(
       value: HookMap[

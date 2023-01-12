@@ -33,7 +33,8 @@ object TreeListMessagesCommands {
     __obj.asInstanceOf[TreeListMessagesCommands]
   }
   
-  extension [Self <: TreeListMessagesCommands](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListMessagesCommands] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

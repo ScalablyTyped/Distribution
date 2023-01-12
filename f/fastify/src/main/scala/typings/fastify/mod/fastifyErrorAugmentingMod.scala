@@ -18,7 +18,8 @@ object fastifyErrorAugmentingMod {
       __obj.asInstanceOf[FastifyError]
     }
     
-    extension [Self <: FastifyError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FastifyError] (val x: Self) extends AnyVal {
       
       inline def setValidation(value: js.Array[ValidationResult]): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
       

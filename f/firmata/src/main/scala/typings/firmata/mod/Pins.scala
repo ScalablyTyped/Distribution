@@ -32,7 +32,8 @@ object Pins {
     __obj.asInstanceOf[Pins]
   }
   
-  extension [Self <: Pins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pins] (val x: Self) extends AnyVal {
     
     inline def setAnalogChannel(value: Double): Self = StObject.set(x, "analogChannel", value.asInstanceOf[js.Any])
     

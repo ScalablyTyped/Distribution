@@ -32,7 +32,8 @@ object BaseSparklineOptions {
     __obj.asInstanceOf[BaseSparklineOptions[TComponent]]
   }
   
-  extension [Self <: BaseSparklineOptions[?], TComponent](x: Self & BaseSparklineOptions[TComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseSparklineOptions[?], TComponent] (val x: Self & BaseSparklineOptions[TComponent]) extends AnyVal {
     
     inline def setOnTooltipHidden(value: /* e */ EventInfo[TComponent] => Unit): Self = StObject.set(x, "onTooltipHidden", js.Any.fromFunction1(value))
     

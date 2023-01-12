@@ -18,7 +18,8 @@ object ScheduleRunResult {
     __obj.asInstanceOf[ScheduleRunResult]
   }
   
-  extension [Self <: ScheduleRunResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduleRunResult] (val x: Self) extends AnyVal {
     
     inline def setRun(value: Run): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
     

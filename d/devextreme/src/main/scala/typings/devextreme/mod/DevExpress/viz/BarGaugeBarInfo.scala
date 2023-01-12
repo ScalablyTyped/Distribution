@@ -28,7 +28,8 @@ object BarGaugeBarInfo {
     __obj.asInstanceOf[BarGaugeBarInfo]
   }
   
-  extension [Self <: BarGaugeBarInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarGaugeBarInfo] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

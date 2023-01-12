@@ -19,7 +19,8 @@ object RevertTemplateResponse {
     __obj.asInstanceOf[RevertTemplateResponse]
   }
   
-  extension [Self <: RevertTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevertTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setTemplate(value: CustomTemplate): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     

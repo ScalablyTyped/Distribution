@@ -22,7 +22,8 @@ object Response {
     __obj.asInstanceOf[Response]
   }
   
-  extension [Self <: Response](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

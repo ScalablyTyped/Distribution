@@ -47,7 +47,8 @@ object ITranslatableGroup {
     __obj.asInstanceOf[ITranslatableGroup]
   }
   
-  extension [Self <: ITranslatableGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITranslatableGroup] (val x: Self) extends AnyVal {
     
     inline def setGetActiveIndex(value: () => Double): Self = StObject.set(x, "getActiveIndex", js.Any.fromFunction0(value))
     

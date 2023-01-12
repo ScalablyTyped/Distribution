@@ -44,7 +44,8 @@ object SinonSandboxConfig {
     __obj.asInstanceOf[SinonSandboxConfig]
   }
   
-  extension [Self <: SinonSandboxConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SinonSandboxConfig] (val x: Self) extends AnyVal {
     
     inline def setInjectInto(value: js.Object): Self = StObject.set(x, "injectInto", value.asInstanceOf[js.Any])
     

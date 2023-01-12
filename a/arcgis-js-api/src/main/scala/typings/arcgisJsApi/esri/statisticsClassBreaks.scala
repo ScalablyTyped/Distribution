@@ -25,7 +25,8 @@ object statisticsClassBreaks {
     __obj.asInstanceOf[statisticsClassBreaks]
   }
   
-  extension [Self <: statisticsClassBreaks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: statisticsClassBreaks] (val x: Self) extends AnyVal {
     
     inline def setClassBreaks(value: classBreaksClassBreaksParams => js.Promise[ClassBreaksResult]): Self = StObject.set(x, "classBreaks", js.Any.fromFunction1(value))
   }

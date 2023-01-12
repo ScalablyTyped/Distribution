@@ -62,7 +62,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[DDDragInOpt]
     }
     
-    extension [Self <: DDDragInOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DDDragInOpt] (val x: Self) extends AnyVal {
       
       inline def setHelper(value: String | (js.Function1[/* event */ Event, HTMLElement])): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[DDDragOpt]
     }
     
-    extension [Self <: DDDragOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DDDragOpt] (val x: Self) extends AnyVal {
       
       inline def setAppendTo(value: String): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[DDRemoveOpt]
     }
     
-    extension [Self <: DDRemoveOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DDRemoveOpt] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
@@ -144,7 +147,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[DDResizeOpt]
     }
     
-    extension [Self <: DDResizeOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DDResizeOpt] (val x: Self) extends AnyVal {
       
       inline def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
       
@@ -171,7 +175,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[DDUIData]
     }
     
-    extension [Self <: DDUIData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DDUIData] (val x: Self) extends AnyVal {
       
       inline def setDraggable(value: HTMLElement): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
@@ -261,7 +266,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[GridStackMoveOpts]
     }
     
-    extension [Self <: GridStackMoveOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridStackMoveOpts] (val x: Self) extends AnyVal {
       
       inline def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
       
@@ -330,7 +336,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[GridStackNode]
     }
     
-    extension [Self <: GridStackNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridStackNode] (val x: Self) extends AnyVal {
       
       inline def setEl(value: GridItemHTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
@@ -519,7 +526,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[GridStackOptions]
     }
     
-    extension [Self <: GridStackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridStackOptions] (val x: Self) extends AnyVal {
       
       inline def setAcceptWidgets(value: Boolean | String | (js.Function1[/* element */ Element, Boolean])): Self = StObject.set(x, "acceptWidgets", value.asInstanceOf[js.Any])
       
@@ -712,7 +720,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[GridStackPosition]
     }
     
-    extension [Self <: GridStackPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridStackPosition] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -779,7 +788,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[GridStackWidget]
     }
     
-    extension [Self <: GridStackWidget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridStackWidget] (val x: Self) extends AnyVal {
       
       inline def setAutoPosition(value: Boolean): Self = StObject.set(x, "autoPosition", value.asInstanceOf[js.Any])
       
@@ -844,7 +854,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -877,7 +888,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

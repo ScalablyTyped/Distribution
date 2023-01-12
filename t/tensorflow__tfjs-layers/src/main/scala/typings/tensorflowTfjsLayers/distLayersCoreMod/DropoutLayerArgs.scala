@@ -32,7 +32,8 @@ object DropoutLayerArgs {
     __obj.asInstanceOf[DropoutLayerArgs]
   }
   
-  extension [Self <: DropoutLayerArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropoutLayerArgs] (val x: Self) extends AnyVal {
     
     inline def setNoiseShape(value: js.Array[Double]): Self = StObject.set(x, "noiseShape", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object Bootstrap {
     __obj.asInstanceOf[Bootstrap[T]]
   }
   
-  extension [Self <: Bootstrap[?], T](x: Self & Bootstrap[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bootstrap[?], T] (val x: Self & Bootstrap[T]) extends AnyVal {
     
     inline def setBootstrap(value: js.Array[Type[Any]] | js.Function0[js.Array[Type[Any]]]): Self = StObject.set(x, "bootstrap", value.asInstanceOf[js.Any])
     

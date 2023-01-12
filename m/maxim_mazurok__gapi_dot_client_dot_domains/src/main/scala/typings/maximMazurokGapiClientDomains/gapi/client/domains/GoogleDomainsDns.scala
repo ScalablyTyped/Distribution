@@ -25,7 +25,8 @@ object GoogleDomainsDns {
     __obj.asInstanceOf[GoogleDomainsDns]
   }
   
-  extension [Self <: GoogleDomainsDns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDomainsDns] (val x: Self) extends AnyVal {
     
     inline def setDsRecords(value: js.Array[DsRecord]): Self = StObject.set(x, "dsRecords", value.asInstanceOf[js.Any])
     

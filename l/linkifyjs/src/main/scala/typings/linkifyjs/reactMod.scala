@@ -28,7 +28,8 @@ object reactMod {
       __obj.asInstanceOf[LinkifyProps]
     }
     
-    extension [Self <: LinkifyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkifyProps] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

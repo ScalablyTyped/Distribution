@@ -18,7 +18,8 @@ object DisassociateMemberResponse {
     __obj.asInstanceOf[DisassociateMemberResponse]
   }
   
-  extension [Self <: DisassociateMemberResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateMemberResponse] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
   }

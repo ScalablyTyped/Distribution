@@ -36,7 +36,8 @@ object Import {
     __obj.asInstanceOf[Import]
   }
   
-  extension [Self <: Import](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Import] (val x: Self) extends AnyVal {
     
     inline def setOnce(value: scala.Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object IntrospectionInputValue {
     __obj.asInstanceOf[IntrospectionInputValue]
   }
   
-  extension [Self <: IntrospectionInputValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntrospectionInputValue] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

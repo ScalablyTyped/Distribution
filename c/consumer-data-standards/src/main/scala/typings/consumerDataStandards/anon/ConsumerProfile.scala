@@ -104,7 +104,8 @@ object ConsumerProfile {
     __obj.asInstanceOf[ConsumerProfile]
   }
   
-  extension [Self <: ConsumerProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumerProfile] (val x: Self) extends AnyVal {
     
     inline def setConsumerProfile(value: Classification): Self = StObject.set(x, "consumerProfile", value.asInstanceOf[js.Any])
     

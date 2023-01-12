@@ -30,7 +30,8 @@ object GoogleActionsV2UiElementsOpenUrlAction {
     __obj.asInstanceOf[GoogleActionsV2UiElementsOpenUrlAction]
   }
   
-  extension [Self <: GoogleActionsV2UiElementsOpenUrlAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2UiElementsOpenUrlAction] (val x: Self) extends AnyVal {
     
     inline def setAndroidApp(value: GoogleActionsV2DevicesAndroidApp): Self = StObject.set(x, "androidApp", value.asInstanceOf[js.Any])
     

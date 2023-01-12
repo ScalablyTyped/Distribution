@@ -32,7 +32,8 @@ object ApigatewayLocation {
     __obj.asInstanceOf[ApigatewayLocation]
   }
   
-  extension [Self <: ApigatewayLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApigatewayLocation] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

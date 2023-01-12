@@ -30,7 +30,8 @@ object RenderOptions {
     __obj.asInstanceOf[RenderOptions]
   }
   
-  extension [Self <: RenderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
     
     inline def setFeatures(value: StringDictionary[Boolean]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     

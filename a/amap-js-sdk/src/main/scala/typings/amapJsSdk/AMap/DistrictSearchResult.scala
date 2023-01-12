@@ -17,7 +17,8 @@ object DistrictSearchResult {
     __obj.asInstanceOf[DistrictSearchResult]
   }
   
-  extension [Self <: DistrictSearchResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistrictSearchResult] (val x: Self) extends AnyVal {
     
     inline def setDistrictList(value: js.Array[District]): Self = StObject.set(x, "districtList", value.asInstanceOf[js.Any])
     

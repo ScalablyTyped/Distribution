@@ -94,7 +94,8 @@ object distCommonjsElementsListListItemMod extends Shortcut {
       __obj.asInstanceOf[StrictListItemProps]
     }
     
-    extension [Self <: StrictListItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictListItemProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

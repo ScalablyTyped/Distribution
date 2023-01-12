@@ -21,7 +21,8 @@ object ArgsFunc {
     __obj.asInstanceOf[ArgsFunc[Args, Result]]
   }
   
-  extension [Self <: ArgsFunc[?, ?], Args /* <: js.Array[Any] */, Result](x: Self & (ArgsFunc[Args, Result])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArgsFunc[?, ?], Args /* <: js.Array[Any] */, Result] (val x: Self & (ArgsFunc[Args, Result])) extends AnyVal {
     
     inline def setArgs(value: Args): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

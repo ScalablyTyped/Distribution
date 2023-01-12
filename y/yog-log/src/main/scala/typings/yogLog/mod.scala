@@ -190,7 +190,8 @@ object mod {
       __obj.asInstanceOf[LEVELS]
     }
     
-    extension [Self <: LEVELS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LEVELS] (val x: Self) extends AnyVal {
       
       inline def set0(value: ACCESS): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
@@ -291,7 +292,8 @@ object mod {
       __obj.asInstanceOf[LogConfig]
     }
     
-    extension [Self <: LogConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogConfig] (val x: Self) extends AnyVal {
       
       inline def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
       
@@ -358,7 +360,8 @@ object mod {
       __obj.asInstanceOf[LogInfo]
     }
     
-    extension [Self <: LogInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogInfo] (val x: Self) extends AnyVal {
       
       inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     }
@@ -383,7 +386,8 @@ object mod {
       __obj.asInstanceOf[WriteLogConfig]
     }
     
-    extension [Self <: WriteLogConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteLogConfig] (val x: Self) extends AnyVal {
       
       inline def setErrno(value: Double): Self = StObject.set(x, "errno", value.asInstanceOf[js.Any])
       

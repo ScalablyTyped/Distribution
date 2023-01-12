@@ -48,7 +48,8 @@ object Host {
     __obj.asInstanceOf[Host]
   }
   
-  extension [Self <: Host](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
     
     inline def setHostArn(value: HostArn): Self = StObject.set(x, "HostArn", value.asInstanceOf[js.Any])
     

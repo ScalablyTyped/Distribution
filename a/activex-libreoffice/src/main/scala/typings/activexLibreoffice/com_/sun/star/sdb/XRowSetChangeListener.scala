@@ -33,7 +33,8 @@ object XRowSetChangeListener {
     __obj.asInstanceOf[XRowSetChangeListener]
   }
   
-  extension [Self <: XRowSetChangeListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRowSetChangeListener] (val x: Self) extends AnyVal {
     
     inline def setOnRowSetChanged(value: EventObject => Unit): Self = StObject.set(x, "onRowSetChanged", js.Any.fromFunction1(value))
   }

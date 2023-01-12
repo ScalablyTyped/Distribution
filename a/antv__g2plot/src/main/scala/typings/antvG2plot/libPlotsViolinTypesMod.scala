@@ -67,7 +67,8 @@ object libPlotsViolinTypesMod {
       __obj.asInstanceOf[ViolinOptions]
     }
     
-    extension [Self <: ViolinOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViolinOptions] (val x: Self) extends AnyVal {
       
       inline def setBox(value: Boolean | State): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
       

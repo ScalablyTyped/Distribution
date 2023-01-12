@@ -627,7 +627,8 @@ object OmitSliderset {
     __obj.asInstanceOf[OmitSliderset]
   }
   
-  extension [Self <: OmitSliderset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitSliderset] (val x: Self) extends AnyVal {
     
     inline def set$getProperty(value: /* name */ String => Any): Self = StObject.set(x, "$getProperty", js.Any.fromFunction1(value))
     

@@ -19,7 +19,8 @@ object NodesExtendedMemoryStats {
     __obj.asInstanceOf[NodesExtendedMemoryStats]
   }
   
-  extension [Self <: NodesExtendedMemoryStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesExtendedMemoryStats] (val x: Self) extends AnyVal {
     
     inline def setFree_percent(value: integer): Self = StObject.set(x, "free_percent", value.asInstanceOf[js.Any])
     

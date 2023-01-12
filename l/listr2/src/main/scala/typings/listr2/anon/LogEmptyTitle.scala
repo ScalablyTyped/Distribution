@@ -48,7 +48,8 @@ object LogEmptyTitle {
     __obj.asInstanceOf[LogEmptyTitle]
   }
   
-  extension [Self <: LogEmptyTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogEmptyTitle] (val x: Self) extends AnyVal {
     
     inline def setLogEmptyTitle(value: Boolean): Self = StObject.set(x, "logEmptyTitle", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object SplitChunksPlugin {
     __obj.asInstanceOf[SplitChunksPlugin]
   }
   
-  extension [Self <: SplitChunksPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitChunksPlugin] (val x: Self) extends AnyVal {
     
     inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     

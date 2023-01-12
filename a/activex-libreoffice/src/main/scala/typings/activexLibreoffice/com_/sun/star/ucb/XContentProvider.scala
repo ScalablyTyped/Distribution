@@ -46,7 +46,8 @@ object XContentProvider {
     __obj.asInstanceOf[XContentProvider]
   }
   
-  extension [Self <: XContentProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XContentProvider] (val x: Self) extends AnyVal {
     
     inline def setCompareContentIds(value: (XContentIdentifier, XContentIdentifier) => Double): Self = StObject.set(x, "compareContentIds", js.Any.fromFunction2(value))
     

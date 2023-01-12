@@ -89,7 +89,8 @@ object SeriesLabelOptionsObject {
     __obj.asInstanceOf[SeriesLabelOptionsObject]
   }
   
-  extension [Self <: SeriesLabelOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesLabelOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setBoxesToAvoid(value: js.Array[LabelIntersectBoxObject]): Self = StObject.set(x, "boxesToAvoid", value.asInstanceOf[js.Any])
     

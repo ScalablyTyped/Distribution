@@ -32,7 +32,8 @@ object PivotTransform {
     __obj.asInstanceOf[PivotTransform]
   }
   
-  extension [Self <: PivotTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotTransform] (val x: Self) extends AnyVal {
     
     inline def setField(value: FieldRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

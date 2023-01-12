@@ -19,7 +19,8 @@ object MaxHandle {
     __obj.asInstanceOf[MaxHandle]
   }
   
-  extension [Self <: MaxHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxHandle] (val x: Self) extends AnyVal {
     
     inline def setBrush(value: Boolean): Self = StObject.set(x, "brush", value.asInstanceOf[js.Any])
     

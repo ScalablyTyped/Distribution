@@ -20,7 +20,8 @@ object ReportColumnHeader {
     __obj.asInstanceOf[ReportColumnHeader]
   }
   
-  extension [Self <: ReportColumnHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportColumnHeader] (val x: Self) extends AnyVal {
     
     inline def setGetBulkUploadColumnName(value: () => String): Self = StObject.set(x, "getBulkUploadColumnName", js.Any.fromFunction0(value))
     

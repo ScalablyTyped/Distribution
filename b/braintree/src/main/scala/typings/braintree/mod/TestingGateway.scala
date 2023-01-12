@@ -29,7 +29,8 @@ object TestingGateway {
     __obj.asInstanceOf[TestingGateway]
   }
   
-  extension [Self <: TestingGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestingGateway] (val x: Self) extends AnyVal {
     
     inline def setSettle(value: String => js.Promise[ValidatedResponse[Transaction]]): Self = StObject.set(x, "settle", js.Any.fromFunction1(value))
     

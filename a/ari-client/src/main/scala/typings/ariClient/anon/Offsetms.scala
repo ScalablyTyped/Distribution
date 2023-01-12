@@ -23,7 +23,8 @@ object Offsetms {
     __obj.asInstanceOf[Offsetms]
   }
   
-  extension [Self <: Offsetms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Offsetms] (val x: Self) extends AnyVal {
     
     inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     

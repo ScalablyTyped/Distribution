@@ -30,7 +30,8 @@ object TransformationRule {
     __obj.asInstanceOf[TransformationRule]
   }
   
-  extension [Self <: TransformationRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformationRule] (val x: Self) extends AnyVal {
     
     inline def setApply(value: (js.Array[js.Array[String]], Double) => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     

@@ -22,7 +22,8 @@ object RelationshipInterest {
     __obj.asInstanceOf[RelationshipInterest]
   }
   
-  extension [Self <: RelationshipInterest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationshipInterest] (val x: Self) extends AnyVal {
     
     inline def setFormattedValue(value: String): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
     

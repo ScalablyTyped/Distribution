@@ -17,7 +17,8 @@ object Dynamic {
     __obj.asInstanceOf[Dynamic]
   }
   
-  extension [Self <: Dynamic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dynamic] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: /* args */ js.UndefOr[Any] => Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     

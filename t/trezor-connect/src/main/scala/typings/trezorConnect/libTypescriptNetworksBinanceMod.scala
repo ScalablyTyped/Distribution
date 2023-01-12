@@ -28,7 +28,8 @@ object libTypescriptNetworksBinanceMod {
       __obj.asInstanceOf[BinanceAddress]
     }
     
-    extension [Self <: BinanceAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BinanceAddress] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object libTypescriptNetworksBinanceMod {
       __obj.asInstanceOf[BinanceGetAddress]
     }
     
-    extension [Self <: BinanceGetAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BinanceGetAddress] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object libTypescriptNetworksBinanceMod {
       __obj.asInstanceOf[BinanceGetPublicKey]
     }
     
-    extension [Self <: BinanceGetPublicKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BinanceGetPublicKey] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String | js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -167,7 +170,8 @@ object libTypescriptNetworksBinanceMod {
       __obj.asInstanceOf[BinancePreparedTransaction]
     }
     
-    extension [Self <: BinancePreparedTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BinancePreparedTransaction] (val x: Self) extends AnyVal {
       
       inline def setAccount_number(value: Double): Self = StObject.set(x, "account_number", value.asInstanceOf[js.Any])
       
@@ -206,7 +210,8 @@ object libTypescriptNetworksBinanceMod {
       __obj.asInstanceOf[BinancePublicKey]
     }
     
-    extension [Self <: BinancePublicKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BinancePublicKey] (val x: Self) extends AnyVal {
       
       inline def setPath(value: js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -246,7 +251,8 @@ object libTypescriptNetworksBinanceMod {
       __obj.asInstanceOf[BinanceSDKTransaction]
     }
     
-    extension [Self <: BinanceSDKTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BinanceSDKTransaction] (val x: Self) extends AnyVal {
       
       inline def setAccount_number(value: Double): Self = StObject.set(x, "account_number", value.asInstanceOf[js.Any])
       
@@ -293,7 +299,8 @@ object libTypescriptNetworksBinanceMod {
       __obj.asInstanceOf[BinanceSignTransaction]
     }
     
-    extension [Self <: BinanceSignTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BinanceSignTransaction] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String | js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

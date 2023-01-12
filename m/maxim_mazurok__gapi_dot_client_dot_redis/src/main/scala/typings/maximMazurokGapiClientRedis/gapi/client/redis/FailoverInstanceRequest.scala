@@ -16,7 +16,8 @@ object FailoverInstanceRequest {
     __obj.asInstanceOf[FailoverInstanceRequest]
   }
   
-  extension [Self <: FailoverInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailoverInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setDataProtectionMode(value: String): Self = StObject.set(x, "dataProtectionMode", value.asInstanceOf[js.Any])
     

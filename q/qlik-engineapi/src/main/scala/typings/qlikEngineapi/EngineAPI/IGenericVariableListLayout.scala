@@ -20,7 +20,8 @@ object IGenericVariableListLayout {
     __obj.asInstanceOf[IGenericVariableListLayout]
   }
   
-  extension [Self <: IGenericVariableListLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericVariableListLayout] (val x: Self) extends AnyVal {
     
     inline def setQVariableListObject(value: IVariableList): Self = StObject.set(x, "qVariableListObject", value.asInstanceOf[js.Any])
   }

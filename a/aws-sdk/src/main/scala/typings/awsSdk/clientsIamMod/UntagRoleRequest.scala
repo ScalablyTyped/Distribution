@@ -23,7 +23,8 @@ object UntagRoleRequest {
     __obj.asInstanceOf[UntagRoleRequest]
   }
   
-  extension [Self <: UntagRoleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UntagRoleRequest] (val x: Self) extends AnyVal {
     
     inline def setRoleName(value: roleNameType): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
     

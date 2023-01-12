@@ -25,7 +25,8 @@ object CustomDialogOptions {
     __obj.asInstanceOf[CustomDialogOptions]
   }
   
-  extension [Self <: CustomDialogOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomDialogOptions] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: js.Array[dxButtonOptions]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

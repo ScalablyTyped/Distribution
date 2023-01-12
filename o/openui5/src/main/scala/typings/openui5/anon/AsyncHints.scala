@@ -50,7 +50,8 @@ object AsyncHints {
     __obj.asInstanceOf[AsyncHints]
   }
   
-  extension [Self <: AsyncHints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncHints] (val x: Self) extends AnyVal {
     
     inline def setAltManifestUrl(value: String): Self = StObject.set(x, "altManifestUrl", value.asInstanceOf[js.Any])
     

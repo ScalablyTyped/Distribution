@@ -23,7 +23,8 @@ object RootCauseException {
     __obj.asInstanceOf[RootCauseException]
   }
   
-  extension [Self <: RootCauseException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RootCauseException] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

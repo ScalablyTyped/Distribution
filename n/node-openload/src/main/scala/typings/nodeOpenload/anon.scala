@@ -46,7 +46,8 @@ object anon {
       __obj.asInstanceOf[Added]
     }
     
-    extension [Self <: Added](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Added] (val x: Self) extends AnyVal {
       
       inline def setAdded(value: String): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object anon {
       __obj.asInstanceOf[Contenttype]
     }
     
-    extension [Self <: Contenttype](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contenttype] (val x: Self) extends AnyVal {
       
       inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
       
@@ -150,7 +152,8 @@ object anon {
       __obj.asInstanceOf[Cstatus]
     }
     
-    extension [Self <: Cstatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cstatus] (val x: Self) extends AnyVal {
       
       inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
       
@@ -189,7 +192,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -210,7 +214,8 @@ object anon {
       __obj.asInstanceOf[Left]
     }
     
-    extension [Self <: Left](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       

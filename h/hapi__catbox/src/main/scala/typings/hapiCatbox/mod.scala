@@ -124,7 +124,8 @@ object mod {
       __obj.asInstanceOf[CacheKey]
     }
     
-    extension [Self <: CacheKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheKey] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object mod {
       __obj.asInstanceOf[CacheStatisticsObject]
     }
     
-    extension [Self <: CacheStatisticsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheStatisticsObject] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: Double): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -193,7 +195,8 @@ object mod {
       __obj.asInstanceOf[CachedObject[T]]
     }
     
-    extension [Self <: CachedObject[?], T](x: Self & CachedObject[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CachedObject[?], T] (val x: Self & CachedObject[T]) extends AnyVal {
       
       inline def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
@@ -252,7 +255,8 @@ object mod {
       __obj.asInstanceOf[ClientApi[T]]
     }
     
-    extension [Self <: ClientApi[?], T](x: Self & ClientApi[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApi[?], T] (val x: Self & ClientApi[T]) extends AnyVal {
       
       inline def setDrop(value: CacheKey => js.Promise[Unit]): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
       
@@ -284,7 +288,8 @@ object mod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setPartition(value: String): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
       
@@ -309,7 +314,8 @@ object mod {
       __obj.asInstanceOf[DecoratedPolicyOptions[T]]
     }
     
-    extension [Self <: DecoratedPolicyOptions[?], T](x: Self & DecoratedPolicyOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecoratedPolicyOptions[?], T] (val x: Self & DecoratedPolicyOptions[T]) extends AnyVal {
       
       inline def setGetDecoratedValue(value: Boolean): Self = StObject.set(x, "getDecoratedValue", value.asInstanceOf[js.Any])
       
@@ -332,7 +338,8 @@ object mod {
       __obj.asInstanceOf[DecoratedResult[T]]
     }
     
-    extension [Self <: DecoratedResult[?], T](x: Self & DecoratedResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecoratedResult[?], T] (val x: Self & DecoratedResult[T]) extends AnyVal {
       
       inline def setCached(value: PolicyGetCachedOptions[T]): Self = StObject.set(x, "cached", value.asInstanceOf[js.Any])
       
@@ -362,7 +369,8 @@ object mod {
       __obj.asInstanceOf[GenerateFuncFlags]
     }
     
-    extension [Self <: GenerateFuncFlags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateFuncFlags] (val x: Self) extends AnyVal {
       
       inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     }
@@ -391,7 +399,8 @@ object mod {
       __obj.asInstanceOf[PolicyGetCachedOptions[T]]
     }
     
-    extension [Self <: PolicyGetCachedOptions[?], T](x: Self & PolicyGetCachedOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolicyGetCachedOptions[?], T] (val x: Self & PolicyGetCachedOptions[T]) extends AnyVal {
       
       inline def setIsStale(value: Boolean): Self = StObject.set(x, "isStale", value.asInstanceOf[js.Any])
       
@@ -427,7 +436,8 @@ object mod {
       __obj.asInstanceOf[PolicyGetReportLog]
     }
     
-    extension [Self <: PolicyGetReportLog](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolicyGetReportLog] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -514,7 +524,8 @@ object mod {
       __obj.asInstanceOf[PolicyOptions[T]]
     }
     
-    extension [Self <: PolicyOptions[?], T](x: Self & PolicyOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolicyOptions[?], T] (val x: Self & PolicyOptions[T]) extends AnyVal {
       
       inline def setDropOnError(value: Boolean): Self = StObject.set(x, "dropOnError", value.asInstanceOf[js.Any])
       

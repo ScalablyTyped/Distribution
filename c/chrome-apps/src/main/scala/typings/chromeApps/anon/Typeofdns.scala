@@ -21,7 +21,8 @@ object Typeofdns {
     __obj.asInstanceOf[Typeofdns]
   }
   
-  extension [Self <: Typeofdns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofdns] (val x: Self) extends AnyVal {
     
     inline def setResolve(value: (String, js.Function1[/* resolveInfo */ ResolveCallbackResolveInfo, Unit]) => Unit): Self = StObject.set(x, "resolve", js.Any.fromFunction2(value))
   }

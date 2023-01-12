@@ -27,7 +27,8 @@ object AnnotOptions {
     __obj.asInstanceOf[AnnotOptions]
   }
   
-  extension [Self <: AnnotOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotOptions] (val x: Self) extends AnyVal {
     
     inline def setFlag(value: AnnotOptionsFlag): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     

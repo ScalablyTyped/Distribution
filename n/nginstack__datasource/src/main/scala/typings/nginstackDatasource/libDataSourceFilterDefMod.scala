@@ -47,7 +47,8 @@ object libDataSourceFilterDefMod {
       __obj.asInstanceOf[DataSourceFilterDef]
     }
     
-    extension [Self <: DataSourceFilterDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceFilterDef] (val x: Self) extends AnyVal {
       
       inline def setDisableGetChildren(value: Boolean): Self = StObject.set(x, "disableGetChildren", value.asInstanceOf[js.Any])
       

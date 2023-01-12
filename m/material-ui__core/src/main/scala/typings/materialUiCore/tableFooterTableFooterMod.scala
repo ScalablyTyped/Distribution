@@ -50,7 +50,8 @@ object tableFooterTableFooterMod extends Shortcut {
       __obj.asInstanceOf[TableFooterTypeMap[P, D]]
     }
     
-    extension [Self <: TableFooterTypeMap[?, ?], P /* <: js.Object */, D /* <: ElementType[Any] */](x: Self & (TableFooterTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableFooterTypeMap[?, ?], P /* <: js.Object */, D /* <: ElementType[Any] */] (val x: Self & (TableFooterTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: TableFooterClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

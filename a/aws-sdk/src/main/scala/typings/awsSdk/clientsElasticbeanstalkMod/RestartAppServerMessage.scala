@@ -23,7 +23,8 @@ object RestartAppServerMessage {
     __obj.asInstanceOf[RestartAppServerMessage]
   }
   
-  extension [Self <: RestartAppServerMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestartAppServerMessage] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
     

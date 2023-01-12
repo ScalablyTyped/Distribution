@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[Distribution]
     }
     
-    extension [Self <: Distribution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Distribution] (val x: Self) extends AnyVal {
       
       inline def setCdf(value: Double => Double): Self = StObject.set(x, "cdf", js.Any.fromFunction1(value))
       

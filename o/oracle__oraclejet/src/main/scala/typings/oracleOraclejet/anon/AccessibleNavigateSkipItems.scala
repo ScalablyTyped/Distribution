@@ -39,7 +39,8 @@ object AccessibleNavigateSkipItems {
     __obj.asInstanceOf[AccessibleNavigateSkipItems]
   }
   
-  extension [Self <: AccessibleNavigateSkipItems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessibleNavigateSkipItems] (val x: Self) extends AnyVal {
     
     inline def setAccessibleNavigateSkipItems(value: String): Self = StObject.set(x, "accessibleNavigateSkipItems", value.asInstanceOf[js.Any])
     

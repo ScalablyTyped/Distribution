@@ -25,7 +25,8 @@ object IncrementalProgramOptions {
     __obj.asInstanceOf[IncrementalProgramOptions[T]]
   }
   
-  extension [Self <: IncrementalProgramOptions[?], T /* <: BuilderProgram */](x: Self & IncrementalProgramOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncrementalProgramOptions[?], T /* <: BuilderProgram */] (val x: Self & IncrementalProgramOptions[T]) extends AnyVal {
     
     inline def setConfigFileParsingDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "configFileParsingDiagnostics", value.asInstanceOf[js.Any])
     

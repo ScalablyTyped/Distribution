@@ -20,7 +20,8 @@ object BootstrapSchedulerAppointmentOperation {
     __obj.asInstanceOf[BootstrapSchedulerAppointmentOperation]
   }
   
-  extension [Self <: BootstrapSchedulerAppointmentOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapSchedulerAppointmentOperation] (val x: Self) extends AnyVal {
     
     inline def setApply(value: () => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction0(value))
     

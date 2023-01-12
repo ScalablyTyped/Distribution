@@ -21,7 +21,8 @@ object NavigationAnnotationsControlPointStyleOptions {
     __obj.asInstanceOf[NavigationAnnotationsControlPointStyleOptions]
   }
   
-  extension [Self <: NavigationAnnotationsControlPointStyleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationAnnotationsControlPointStyleOptions] (val x: Self) extends AnyVal {
     
     inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object StructureDefinitionSnapshot {
     __obj.asInstanceOf[StructureDefinitionSnapshot]
   }
   
-  extension [Self <: StructureDefinitionSnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureDefinitionSnapshot] (val x: Self) extends AnyVal {
     
     inline def setElement(value: js.Array[ElementDefinition]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

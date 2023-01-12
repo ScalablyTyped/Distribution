@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[ConverterOptions]
     }
     
-    extension [Self <: ConverterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConverterOptions] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Locale): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object mod {
       __obj.asInstanceOf[HTMLConvertHandler]
     }
     
-    extension [Self <: HTMLConvertHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTMLConvertHandler] (val x: Self) extends AnyVal {
       
       inline def setConvert(value: () => Unit): Self = StObject.set(x, "convert", js.Any.fromFunction0(value))
       

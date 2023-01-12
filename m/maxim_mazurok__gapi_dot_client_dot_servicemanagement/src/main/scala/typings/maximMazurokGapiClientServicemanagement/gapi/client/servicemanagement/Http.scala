@@ -22,7 +22,8 @@ object Http {
     __obj.asInstanceOf[Http]
   }
   
-  extension [Self <: Http](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Http] (val x: Self) extends AnyVal {
     
     inline def setFullyDecodeReservedExpansion(value: Boolean): Self = StObject.set(x, "fullyDecodeReservedExpansion", value.asInstanceOf[js.Any])
     

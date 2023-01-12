@@ -18,7 +18,8 @@ object CapacityUsageSummary {
     __obj.asInstanceOf[CapacityUsageSummary]
   }
   
-  extension [Self <: CapacityUsageSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapacityUsageSummary] (val x: Self) extends AnyVal {
     
     inline def setCIDRs(value: CIDRSummary): Self = StObject.set(x, "CIDRs", value.asInstanceOf[js.Any])
     

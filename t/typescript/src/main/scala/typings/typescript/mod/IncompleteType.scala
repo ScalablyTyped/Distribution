@@ -20,7 +20,8 @@ object IncompleteType {
     __obj.asInstanceOf[IncompleteType]
   }
   
-  extension [Self <: IncompleteType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncompleteType] (val x: Self) extends AnyVal {
     
     inline def setFlags(value: TypeFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     

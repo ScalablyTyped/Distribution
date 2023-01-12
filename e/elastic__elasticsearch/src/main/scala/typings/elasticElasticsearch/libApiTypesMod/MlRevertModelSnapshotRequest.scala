@@ -21,7 +21,8 @@ object MlRevertModelSnapshotRequest {
     __obj.asInstanceOf[MlRevertModelSnapshotRequest]
   }
   
-  extension [Self <: MlRevertModelSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlRevertModelSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setDelete_intervening_results(value: Boolean): Self = StObject.set(x, "delete_intervening_results", value.asInstanceOf[js.Any])
     

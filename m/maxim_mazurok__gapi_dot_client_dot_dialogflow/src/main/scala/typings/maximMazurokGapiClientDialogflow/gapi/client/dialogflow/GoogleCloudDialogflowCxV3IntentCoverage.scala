@@ -19,7 +19,8 @@ object GoogleCloudDialogflowCxV3IntentCoverage {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3IntentCoverage]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3IntentCoverage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3IntentCoverage] (val x: Self) extends AnyVal {
     
     inline def setCoverageScore(value: Double): Self = StObject.set(x, "coverageScore", value.asInstanceOf[js.Any])
     

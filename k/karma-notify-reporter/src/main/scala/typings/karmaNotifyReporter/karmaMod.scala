@@ -22,7 +22,8 @@ object karmaMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setNotifyReporter(value: NotifyReporterOptions): Self = StObject.set(x, "notifyReporter", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object karmaMod {
       __obj.asInstanceOf[NotifyReporterOptions]
     }
     
-    extension [Self <: NotifyReporterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotifyReporterOptions] (val x: Self) extends AnyVal {
       
       inline def setReportBackToSuccess(value: Boolean): Self = StObject.set(x, "reportBackToSuccess", value.asInstanceOf[js.Any])
       

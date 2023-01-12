@@ -25,7 +25,8 @@ object LiveChatBan {
     __obj.asInstanceOf[LiveChatBan]
   }
   
-  extension [Self <: LiveChatBan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveChatBan] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

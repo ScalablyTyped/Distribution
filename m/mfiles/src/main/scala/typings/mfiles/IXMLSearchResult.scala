@@ -17,7 +17,8 @@ object IXMLSearchResult {
     __obj.asInstanceOf[IXMLSearchResult]
   }
   
-  extension [Self <: IXMLSearchResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IXMLSearchResult] (val x: Self) extends AnyVal {
     
     inline def setMoreResults(value: Boolean): Self = StObject.set(x, "MoreResults", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object libGComponentsPolygonMod extends Shortcut {
       __obj.asInstanceOf[IPolygonProps]
     }
     
-    extension [Self <: IPolygonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPolygonProps] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: Points): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     }

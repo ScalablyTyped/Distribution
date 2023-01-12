@@ -15,7 +15,8 @@ object IndicesDownsampleConfig {
     __obj.asInstanceOf[IndicesDownsampleConfig]
   }
   
-  extension [Self <: IndicesDownsampleConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesDownsampleConfig] (val x: Self) extends AnyVal {
     
     inline def setFixed_interval(value: DurationLarge): Self = StObject.set(x, "fixed_interval", value.asInstanceOf[js.Any])
   }

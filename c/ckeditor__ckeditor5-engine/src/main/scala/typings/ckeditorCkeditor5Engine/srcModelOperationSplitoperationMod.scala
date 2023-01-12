@@ -216,7 +216,8 @@ object srcModelOperationSplitoperationMod {
       __obj.asInstanceOf[SplitOperation]
     }
     
-    extension [Self <: SplitOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitOperation] (val x: Self) extends AnyVal {
       
       inline def setClone_(value: () => SplitOperation): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
       

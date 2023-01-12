@@ -37,7 +37,8 @@ object distTypescriptTypesMod {
       __obj.asInstanceOf[LocationAccuracyOptions]
     }
     
-    extension [Self <: LocationAccuracyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocationAccuracyOptions] (val x: Self) extends AnyVal {
       
       inline def setPurposeKey(value: String): Self = StObject.set(x, "purposeKey", value.asInstanceOf[js.Any])
     }
@@ -97,7 +98,8 @@ object distTypescriptTypesMod {
       __obj.asInstanceOf[NotificationSettings]
     }
     
-    extension [Self <: NotificationSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationSettings] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: Boolean): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
@@ -150,7 +152,8 @@ object distTypescriptTypesMod {
       __obj.asInstanceOf[NotificationsResponse]
     }
     
-    extension [Self <: NotificationsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationsResponse] (val x: Self) extends AnyVal {
       
       inline def setSettings(value: NotificationSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       

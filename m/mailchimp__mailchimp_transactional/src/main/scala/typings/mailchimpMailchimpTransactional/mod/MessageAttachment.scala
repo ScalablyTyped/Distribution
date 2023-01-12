@@ -23,7 +23,8 @@ object MessageAttachment {
     __obj.asInstanceOf[MessageAttachment]
   }
   
-  extension [Self <: MessageAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageAttachment] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

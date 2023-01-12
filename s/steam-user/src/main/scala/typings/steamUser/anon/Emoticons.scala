@@ -17,7 +17,8 @@ object Emoticons {
     __obj.asInstanceOf[Emoticons]
   }
   
-  extension [Self <: Emoticons](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Emoticons] (val x: Self) extends AnyVal {
     
     inline def setEmoticons(value: Record[String, Emoticon]): Self = StObject.set(x, "emoticons", value.asInstanceOf[js.Any])
   }

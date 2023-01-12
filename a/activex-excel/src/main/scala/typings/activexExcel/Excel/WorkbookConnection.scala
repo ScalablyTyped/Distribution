@@ -57,7 +57,8 @@ object WorkbookConnection {
     __obj.asInstanceOf[WorkbookConnection]
   }
   
-  extension [Self <: WorkbookConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookConnection] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

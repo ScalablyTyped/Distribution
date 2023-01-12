@@ -27,7 +27,8 @@ object lib3dSecureMod {
       __obj.asInstanceOf[RiskOptions]
     }
     
-    extension [Self <: RiskOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RiskOptions] (val x: Self) extends AnyVal {
       
       inline def setActionTokenId(value: String): Self = StObject.set(x, "actionTokenId", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object QuotaSettings {
     __obj.asInstanceOf[QuotaSettings]
   }
   
-  extension [Self <: QuotaSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuotaSettings] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Integer): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

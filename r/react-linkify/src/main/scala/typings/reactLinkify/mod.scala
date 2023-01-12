@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[MatchInfo]
     }
     
-    extension [Self <: MatchInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchInfo] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object mod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

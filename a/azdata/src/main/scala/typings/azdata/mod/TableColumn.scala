@@ -30,7 +30,8 @@ object TableColumn {
     __obj.asInstanceOf[TableColumn]
   }
   
-  extension [Self <: TableColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableColumn] (val x: Self) extends AnyVal {
     
     inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     

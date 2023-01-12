@@ -38,7 +38,8 @@ object IBehaviorAware {
     __obj.asInstanceOf[IBehaviorAware[T]]
   }
   
-  extension [Self <: IBehaviorAware[?], T](x: Self & IBehaviorAware[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBehaviorAware[?], T] (val x: Self & IBehaviorAware[T]) extends AnyVal {
     
     inline def setAddBehavior(value: Behavior[T] => T): Self = StObject.set(x, "addBehavior", js.Any.fromFunction1(value))
     

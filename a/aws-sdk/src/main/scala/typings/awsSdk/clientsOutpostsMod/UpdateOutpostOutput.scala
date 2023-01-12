@@ -15,7 +15,8 @@ object UpdateOutpostOutput {
     __obj.asInstanceOf[UpdateOutpostOutput]
   }
   
-  extension [Self <: UpdateOutpostOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateOutpostOutput] (val x: Self) extends AnyVal {
     
     inline def setOutpost(value: Outpost): Self = StObject.set(x, "Outpost", value.asInstanceOf[js.Any])
     

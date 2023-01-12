@@ -60,7 +60,8 @@ object libDsvEchartsvisualizationMod {
       __obj.asInstanceOf[EChartsVisualization]
     }
     
-    extension [Self <: EChartsVisualization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EChartsVisualization] (val x: Self) extends AnyVal {
       
       inline def setChart_(value: Any): Self = StObject.set(x, "chart_", value.asInstanceOf[js.Any])
       

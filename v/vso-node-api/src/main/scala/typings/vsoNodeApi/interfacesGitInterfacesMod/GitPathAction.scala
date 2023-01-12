@@ -29,7 +29,8 @@ object GitPathAction {
     __obj.asInstanceOf[GitPathAction]
   }
   
-  extension [Self <: GitPathAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitPathAction] (val x: Self) extends AnyVal {
     
     inline def setAction(value: GitPathActions): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

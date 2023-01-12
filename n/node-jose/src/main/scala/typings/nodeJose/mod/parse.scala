@@ -54,7 +54,8 @@ object parse {
       __obj.asInstanceOf[ParseReturn]
     }
     
-    extension [Self <: ParseReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseReturn] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: compact | json): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

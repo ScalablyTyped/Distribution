@@ -40,7 +40,8 @@ object MemberSharedItems {
     __obj.asInstanceOf[MemberSharedItems]
   }
   
-  extension [Self <: MemberSharedItems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberSharedItems] (val x: Self) extends AnyVal {
     
     inline def setEnvelopes(value: js.Array[/* Information about the shared item. */ SharedItem]): Self = StObject.set(x, "envelopes", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object FenceToken {
     __obj.asInstanceOf[FenceToken]
   }
   
-  extension [Self <: FenceToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FenceToken] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: `false`): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

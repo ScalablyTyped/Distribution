@@ -120,7 +120,8 @@ object libComponentsSwatchColorPickerSwatchColorPickerDotbaseMod {
       __obj.asInstanceOf[ISwatchColorPickerState]
     }
     
-    extension [Self <: ISwatchColorPickerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISwatchColorPickerState] (val x: Self) extends AnyVal {
       
       inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
       

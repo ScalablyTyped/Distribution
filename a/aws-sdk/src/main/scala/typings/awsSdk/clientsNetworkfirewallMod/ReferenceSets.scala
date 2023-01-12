@@ -18,7 +18,8 @@ object ReferenceSets {
     __obj.asInstanceOf[ReferenceSets]
   }
   
-  extension [Self <: ReferenceSets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceSets] (val x: Self) extends AnyVal {
     
     inline def setIPSetReferences(value: IPSetReferenceMap): Self = StObject.set(x, "IPSetReferences", value.asInstanceOf[js.Any])
     

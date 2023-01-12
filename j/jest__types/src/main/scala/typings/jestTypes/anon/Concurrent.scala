@@ -36,7 +36,8 @@ object Concurrent {
     __obj.asInstanceOf[Concurrent]
   }
   
-  extension [Self <: Concurrent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Concurrent] (val x: Self) extends AnyVal {
     
     inline def setAsyncError(value: js.Error): Self = StObject.set(x, "asyncError", value.asInstanceOf[js.Any])
     

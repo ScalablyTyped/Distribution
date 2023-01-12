@@ -23,7 +23,8 @@ object ProductInformation {
     __obj.asInstanceOf[ProductInformation]
   }
   
-  extension [Self <: ProductInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductInformation] (val x: Self) extends AnyVal {
     
     inline def setProductInformationFilterList(value: ProductInformationFilterList): Self = StObject.set(x, "ProductInformationFilterList", value.asInstanceOf[js.Any])
     

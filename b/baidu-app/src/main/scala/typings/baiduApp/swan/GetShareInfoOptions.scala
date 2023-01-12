@@ -22,7 +22,8 @@ object GetShareInfoOptions {
     __obj.asInstanceOf[GetShareInfoOptions]
   }
   
-  extension [Self <: GetShareInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetShareInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setShareTicket(value: String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
     

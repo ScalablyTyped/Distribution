@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[VisitorState]
     }
     
-    extension [Self <: VisitorState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisitorState] (val x: Self) extends AnyVal {
       
       inline def setFile(value: Opts): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }

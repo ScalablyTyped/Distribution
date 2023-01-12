@@ -41,7 +41,8 @@ object BrowserInfoData {
     __obj.asInstanceOf[BrowserInfoData]
   }
   
-  extension [Self <: BrowserInfoData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserInfoData] (val x: Self) extends AnyVal {
     
     inline def setAcceptHeader(value: String): Self = StObject.set(x, "AcceptHeader", value.asInstanceOf[js.Any])
     

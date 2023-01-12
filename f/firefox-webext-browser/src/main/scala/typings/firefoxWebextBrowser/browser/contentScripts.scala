@@ -23,7 +23,8 @@ object contentScripts {
       __obj.asInstanceOf[RegisteredContentScript]
     }
     
-    extension [Self <: RegisteredContentScript](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisteredContentScript] (val x: Self) extends AnyVal {
       
       inline def setUnregister(value: () => js.Promise[Any]): Self = StObject.set(x, "unregister", js.Any.fromFunction0(value))
     }
@@ -68,7 +69,8 @@ object contentScripts {
       __obj.asInstanceOf[RegisteredContentScriptOptions]
     }
     
-    extension [Self <: RegisteredContentScriptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisteredContentScriptOptions] (val x: Self) extends AnyVal {
       
       inline def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
       

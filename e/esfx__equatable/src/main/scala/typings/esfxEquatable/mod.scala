@@ -99,7 +99,8 @@ object mod {
     @js.native
     val tupleStructuralComparer: Comparer[js.Array[Any]] = js.native
     
-    extension [Self <: Comparer[?], T](x: Self & Comparer[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comparer[?], T] (val x: Self & Comparer[T]) extends AnyVal {
       
       inline def setCompare(value: (T, T) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
     }
@@ -183,7 +184,8 @@ object mod {
     @js.native
     val tupleStructuralEqualer: Equaler[js.Array[Any]] = js.native
     
-    extension [Self <: Equaler[?], T](x: Self & Equaler[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Equaler[?], T] (val x: Self & Equaler[T]) extends AnyVal {
       
       inline def setEquals_(value: (T, T) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
       

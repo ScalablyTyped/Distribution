@@ -31,7 +31,8 @@ object libComponentsMaterialMaterialMod {
       __obj.asInstanceOf[MaterialPickerProps]
     }
     
-    extension [Self <: MaterialPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaterialPickerProps] (val x: Self) extends AnyVal {
       
       inline def setStyles(value: PartialClassesMaterialPic): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object libComponentsMaterialMaterialMod {
       __obj.asInstanceOf[MaterialPickerStylesProps]
     }
     
-    extension [Self <: MaterialPickerStylesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaterialPickerStylesProps] (val x: Self) extends AnyVal {
       
       inline def setHEXinput(value: CSSProperties): Self = StObject.set(x, "HEXinput", value.asInstanceOf[js.Any])
       

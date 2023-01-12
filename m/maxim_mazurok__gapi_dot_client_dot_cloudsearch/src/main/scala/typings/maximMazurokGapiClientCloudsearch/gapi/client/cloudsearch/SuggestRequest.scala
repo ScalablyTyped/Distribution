@@ -25,7 +25,8 @@ object SuggestRequest {
     __obj.asInstanceOf[SuggestRequest]
   }
   
-  extension [Self <: SuggestRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestRequest] (val x: Self) extends AnyVal {
     
     inline def setDataSourceRestrictions(value: js.Array[DataSourceRestriction]): Self = StObject.set(x, "dataSourceRestrictions", value.asInstanceOf[js.Any])
     

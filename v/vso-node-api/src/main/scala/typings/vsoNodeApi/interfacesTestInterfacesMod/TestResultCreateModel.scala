@@ -93,7 +93,8 @@ object TestResultCreateModel {
     __obj.asInstanceOf[TestResultCreateModel]
   }
   
-  extension [Self <: TestResultCreateModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestResultCreateModel] (val x: Self) extends AnyVal {
     
     inline def setArea(value: ShallowReference): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     

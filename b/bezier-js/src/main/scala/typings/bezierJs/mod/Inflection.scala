@@ -21,7 +21,8 @@ object Inflection {
     __obj.asInstanceOf[Inflection]
   }
   
-  extension [Self <: Inflection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Inflection] (val x: Self) extends AnyVal {
     
     inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     

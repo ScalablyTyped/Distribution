@@ -431,7 +431,8 @@ object IgPercentEditor {
     __obj.asInstanceOf[IgPercentEditor]
   }
   
-  extension [Self <: IgPercentEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgPercentEditor] (val x: Self) extends AnyVal {
     
     inline def setAllowNullValue(value: Boolean): Self = StObject.set(x, "allowNullValue", value.asInstanceOf[js.Any])
     

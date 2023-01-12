@@ -120,7 +120,8 @@ object DescribeTransformJobResponse {
     __obj.asInstanceOf[DescribeTransformJobResponse]
   }
   
-  extension [Self <: DescribeTransformJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTransformJobResponse] (val x: Self) extends AnyVal {
     
     inline def setAutoMLJobArn(value: AutoMLJobArn): Self = StObject.set(x, "AutoMLJobArn", value.asInstanceOf[js.Any])
     

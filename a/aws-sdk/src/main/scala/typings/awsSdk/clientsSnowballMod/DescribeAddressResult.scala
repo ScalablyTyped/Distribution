@@ -18,7 +18,8 @@ object DescribeAddressResult {
     __obj.asInstanceOf[DescribeAddressResult]
   }
   
-  extension [Self <: DescribeAddressResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAddressResult] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: Address): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object Readonlynameexecutestarte {
     __obj.asInstanceOf[Readonlynameexecutestarte]
   }
   
-  extension [Self <: Readonlynameexecutestarte](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlynameexecutestarte] (val x: Self) extends AnyVal {
     
     inline def setCacheConfig(value: CacheConfig): Self = StObject.set(x, "cacheConfig", value.asInstanceOf[js.Any])
     

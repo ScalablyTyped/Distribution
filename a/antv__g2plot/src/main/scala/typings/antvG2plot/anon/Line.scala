@@ -15,7 +15,8 @@ object Line {
     __obj.asInstanceOf[Line]
   }
   
-  extension [Self <: Line](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
     
     inline def setLine(value: StyleLineDashArray): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
   }

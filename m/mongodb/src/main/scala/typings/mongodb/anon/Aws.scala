@@ -30,7 +30,8 @@ object Aws {
     __obj.asInstanceOf[Aws]
   }
   
-  extension [Self <: Aws](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Aws] (val x: Self) extends AnyVal {
     
     inline def setAws(value: AccessKeyId): Self = StObject.set(x, "aws", value.asInstanceOf[js.Any])
     

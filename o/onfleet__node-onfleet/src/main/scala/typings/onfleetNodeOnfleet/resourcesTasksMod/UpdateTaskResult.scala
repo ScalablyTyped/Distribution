@@ -55,7 +55,8 @@ object UpdateTaskResult {
     __obj.asInstanceOf[UpdateTaskResult]
   }
   
-  extension [Self <: UpdateTaskResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTaskResult] (val x: Self) extends AnyVal {
     
     inline def setEstimatedArrivalTime(value: Double): Self = StObject.set(x, "estimatedArrivalTime", value.asInstanceOf[js.Any])
     

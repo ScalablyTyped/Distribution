@@ -17,7 +17,8 @@ object EosAsset {
     __obj.asInstanceOf[EosAsset]
   }
   
-  extension [Self <: EosAsset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EosAsset] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: UintType): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object LicenseOperationFailure {
     __obj.asInstanceOf[LicenseOperationFailure]
   }
   
-  extension [Self <: LicenseOperationFailure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LicenseOperationFailure] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     

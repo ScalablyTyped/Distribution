@@ -23,7 +23,8 @@ object ReferenceOptions {
     __obj.asInstanceOf[ReferenceOptions]
   }
   
-  extension [Self <: ReferenceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceOptions] (val x: Self) extends AnyVal {
     
     inline def setContextPrefix(value: String): Self = StObject.set(x, "contextPrefix", value.asInstanceOf[js.Any])
     

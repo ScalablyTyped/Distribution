@@ -247,7 +247,8 @@ object ojThematicMapMarkerEventMap {
     __obj.asInstanceOf[ojThematicMapMarkerEventMap]
   }
   
-  extension [Self <: ojThematicMapMarkerEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojThematicMapMarkerEventMap] (val x: Self) extends AnyVal {
     
     inline def setBorderColorChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "borderColorChanged", value.asInstanceOf[js.Any])
     

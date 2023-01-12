@@ -245,7 +245,8 @@ object XStorage {
     __obj.asInstanceOf[XStorage]
   }
   
-  extension [Self <: XStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStorage] (val x: Self) extends AnyVal {
     
     inline def setCloneEncryptedStreamElement(value: (String, String) => XStream): Self = StObject.set(x, "cloneEncryptedStreamElement", js.Any.fromFunction2(value))
     

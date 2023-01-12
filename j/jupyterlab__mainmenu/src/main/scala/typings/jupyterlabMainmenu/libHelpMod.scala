@@ -67,7 +67,8 @@ object libHelpMod {
         __obj.asInstanceOf[IKernelUser[T]]
       }
       
-      extension [Self <: IKernelUser[?], T /* <: Widget */](x: Self & IKernelUser[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IKernelUser[?], T /* <: Widget */] (val x: Self & IKernelUser[T]) extends AnyVal {
         
         inline def setGetKernel(value: T => IKernelConnection | Null): Self = StObject.set(x, "getKernel", js.Any.fromFunction1(value))
       }

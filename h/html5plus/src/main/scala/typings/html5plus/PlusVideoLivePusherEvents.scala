@@ -80,7 +80,8 @@ object PlusVideoLivePusherEvents {
     __obj.asInstanceOf[PlusVideoLivePusherEvents]
   }
   
-  extension [Self <: PlusVideoLivePusherEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusVideoLivePusherEvents] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

@@ -119,7 +119,8 @@ object mod {
       __obj.asInstanceOf[ConvertersMethods]
     }
     
-    extension [Self <: ConvertersMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvertersMethods] (val x: Self) extends AnyVal {
       
       inline def setBlockquote(value: (String | js.Array[String], /* json2md */ typings.json2md.mod.json2md) => String): Self = StObject.set(x, "blockquote", js.Any.fromFunction2(value))
       
@@ -185,7 +186,8 @@ object mod {
       __obj.asInstanceOf[DataObject]
     }
     
-    extension [Self <: DataObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataObject] (val x: Self) extends AnyVal {
       
       inline def setBlockquote(value: String | js.Array[String]): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
       
@@ -278,7 +280,8 @@ object mod {
         __obj.asInstanceOf[CodeInput]
       }
       
-      extension [Self <: CodeInput](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CodeInput] (val x: Self) extends AnyVal {
         
         inline def setContent(value: String | js.Array[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -341,7 +344,8 @@ object mod {
         __obj.asInstanceOf[Converters]
       }
       
-      extension [Self <: Converters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Converters] (val x: Self) extends AnyVal {
         
         inline def setBlockquote(value: String | js.Array[String]): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
         
@@ -406,7 +410,8 @@ object mod {
         __obj.asInstanceOf[ImgInput]
       }
       
-      extension [Self <: ImgInput](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ImgInput] (val x: Self) extends AnyVal {
         
         inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
@@ -427,7 +432,8 @@ object mod {
         __obj.asInstanceOf[TableInput]
       }
       
-      extension [Self <: TableInput](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableInput] (val x: Self) extends AnyVal {
         
         inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
         

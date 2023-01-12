@@ -41,7 +41,8 @@ object Rename {
     __obj.asInstanceOf[Rename]
   }
   
-  extension [Self <: Rename](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rename] (val x: Self) extends AnyVal {
     
     inline def setActor(value: Avatarurl): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object OptionsHistory {
     __obj.asInstanceOf[OptionsHistory]
   }
   
-  extension [Self <: OptionsHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsHistory] (val x: Self) extends AnyVal {
     
     inline def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     

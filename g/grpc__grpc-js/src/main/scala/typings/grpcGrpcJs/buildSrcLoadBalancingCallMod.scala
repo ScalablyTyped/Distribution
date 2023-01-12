@@ -115,7 +115,8 @@ object buildSrcLoadBalancingCallMod {
       __obj.asInstanceOf[LoadBalancingCallInterceptingListener]
     }
     
-    extension [Self <: LoadBalancingCallInterceptingListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadBalancingCallInterceptingListener] (val x: Self) extends AnyVal {
       
       inline def setOnReceiveStatus(value: StatusObjectWithProgress => Unit): Self = StObject.set(x, "onReceiveStatus", js.Any.fromFunction1(value))
     }
@@ -152,7 +153,8 @@ object buildSrcLoadBalancingCallMod {
       __obj.asInstanceOf[StatusObjectWithProgress]
     }
     
-    extension [Self <: StatusObjectWithProgress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatusObjectWithProgress] (val x: Self) extends AnyVal {
       
       inline def setProgress(value: RpcProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     }

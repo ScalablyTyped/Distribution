@@ -17,7 +17,8 @@ object LanguageModels {
     __obj.asInstanceOf[LanguageModels]
   }
   
-  extension [Self <: LanguageModels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageModels] (val x: Self) extends AnyVal {
     
     inline def setCustomizations(value: js.Array[LanguageModel]): Self = StObject.set(x, "customizations", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object QueueChildMessage {
     __obj.asInstanceOf[QueueChildMessage]
   }
   
-  extension [Self <: QueueChildMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueueChildMessage] (val x: Self) extends AnyVal {
     
     inline def setOnCustomMessage(value: /* message */ js.Array[Any] | Any => Unit): Self = StObject.set(x, "onCustomMessage", js.Any.fromFunction1(value))
     

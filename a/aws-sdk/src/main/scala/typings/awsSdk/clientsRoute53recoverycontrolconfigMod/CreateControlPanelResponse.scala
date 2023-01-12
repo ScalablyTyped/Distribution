@@ -18,7 +18,8 @@ object CreateControlPanelResponse {
     __obj.asInstanceOf[CreateControlPanelResponse]
   }
   
-  extension [Self <: CreateControlPanelResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateControlPanelResponse] (val x: Self) extends AnyVal {
     
     inline def setControlPanel(value: ControlPanel): Self = StObject.set(x, "ControlPanel", value.asInstanceOf[js.Any])
     

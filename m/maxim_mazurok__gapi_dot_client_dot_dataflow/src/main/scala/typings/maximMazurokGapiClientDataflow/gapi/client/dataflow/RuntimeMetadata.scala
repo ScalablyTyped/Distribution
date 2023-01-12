@@ -19,7 +19,8 @@ object RuntimeMetadata {
     __obj.asInstanceOf[RuntimeMetadata]
   }
   
-  extension [Self <: RuntimeMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeMetadata] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: js.Array[ParameterMetadata]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

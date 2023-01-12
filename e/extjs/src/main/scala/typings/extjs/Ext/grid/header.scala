@@ -84,7 +84,8 @@ object header {
       __obj.asInstanceOf[IContainer]
     }
     
-    extension [Self <: IContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContainer] (val x: Self) extends AnyVal {
       
       inline def setDefaultWidth(value: Double): Self = StObject.set(x, "defaultWidth", value.asInstanceOf[js.Any])
       

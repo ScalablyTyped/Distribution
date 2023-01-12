@@ -29,7 +29,8 @@ object SavedPreferencesParams {
     __obj.asInstanceOf[SavedPreferencesParams]
   }
   
-  extension [Self <: SavedPreferencesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavedPreferencesParams] (val x: Self) extends AnyVal {
     
     inline def setAppendComponentStack(value: Boolean): Self = StObject.set(x, "appendComponentStack", value.asInstanceOf[js.Any])
     

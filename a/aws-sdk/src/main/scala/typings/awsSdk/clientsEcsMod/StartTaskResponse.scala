@@ -23,7 +23,8 @@ object StartTaskResponse {
     __obj.asInstanceOf[StartTaskResponse]
   }
   
-  extension [Self <: StartTaskResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartTaskResponse] (val x: Self) extends AnyVal {
     
     inline def setFailures(value: Failures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     

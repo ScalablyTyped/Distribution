@@ -22,7 +22,8 @@ object ProcessInfo {
     __obj.asInstanceOf[ProcessInfo]
   }
   
-  extension [Self <: ProcessInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessInfo] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

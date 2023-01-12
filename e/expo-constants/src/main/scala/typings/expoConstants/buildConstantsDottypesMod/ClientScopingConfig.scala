@@ -19,7 +19,8 @@ object ClientScopingConfig {
     __obj.asInstanceOf[ClientScopingConfig]
   }
   
-  extension [Self <: ClientScopingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientScopingConfig] (val x: Self) extends AnyVal {
     
     inline def setScopeKey(value: String): Self = StObject.set(x, "scopeKey", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object LineBasicMaterialParameters {
     __obj.asInstanceOf[LineBasicMaterialParameters]
   }
   
-  extension [Self <: LineBasicMaterialParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineBasicMaterialParameters] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Double | String | Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

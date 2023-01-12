@@ -23,7 +23,8 @@ object OnResult {
     __obj.asInstanceOf[OnResult]
   }
   
-  extension [Self <: OnResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnResult] (val x: Self) extends AnyVal {
     
     inline def setOnDone(value: Any): Self = StObject.set(x, "onDone", value.asInstanceOf[js.Any])
     

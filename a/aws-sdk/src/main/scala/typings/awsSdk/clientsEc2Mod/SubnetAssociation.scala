@@ -23,7 +23,8 @@ object SubnetAssociation {
     __obj.asInstanceOf[SubnetAssociation]
   }
   
-  extension [Self <: SubnetAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubnetAssociation] (val x: Self) extends AnyVal {
     
     inline def setState(value: TransitGatewayMulitcastDomainAssociationState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object Memory {
     __obj.asInstanceOf[Memory]
   }
   
-  extension [Self <: Memory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Memory] (val x: Self) extends AnyVal {
     
     inline def setMemory(value: Textures): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     

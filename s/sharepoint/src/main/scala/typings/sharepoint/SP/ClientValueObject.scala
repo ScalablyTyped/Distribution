@@ -29,7 +29,8 @@ object ClientValueObject {
     __obj.asInstanceOf[ClientValueObject]
   }
   
-  extension [Self <: ClientValueObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientValueObject] (val x: Self) extends AnyVal {
     
     inline def setCustomFromJson(value: Any => Boolean): Self = StObject.set(x, "customFromJson", js.Any.fromFunction1(value))
     

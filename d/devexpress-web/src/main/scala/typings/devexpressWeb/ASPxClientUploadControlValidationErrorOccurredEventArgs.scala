@@ -43,7 +43,8 @@ object ASPxClientUploadControlValidationErrorOccurredEventArgs {
     __obj.asInstanceOf[ASPxClientUploadControlValidationErrorOccurredEventArgs]
   }
   
-  extension [Self <: ASPxClientUploadControlValidationErrorOccurredEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientUploadControlValidationErrorOccurredEventArgs] (val x: Self) extends AnyVal {
     
     inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     

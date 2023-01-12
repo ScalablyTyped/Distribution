@@ -17,7 +17,8 @@ object ResourcePermission {
     __obj.asInstanceOf[ResourcePermission]
   }
   
-  extension [Self <: ResourcePermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourcePermission] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object AuthenticateCognitoActionConfig {
     __obj.asInstanceOf[AuthenticateCognitoActionConfig]
   }
   
-  extension [Self <: AuthenticateCognitoActionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticateCognitoActionConfig] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationRequestExtraParams(value: AuthenticateCognitoActionAuthenticationRequestExtraParams): Self = StObject.set(x, "AuthenticationRequestExtraParams", value.asInstanceOf[js.Any])
     

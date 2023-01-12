@@ -23,7 +23,8 @@ object GetBucketRequest {
     __obj.asInstanceOf[GetBucketRequest]
   }
   
-  extension [Self <: GetBucketRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

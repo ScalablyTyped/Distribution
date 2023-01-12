@@ -25,7 +25,8 @@ object GridControlOptions {
     __obj.asInstanceOf[GridControlOptions]
   }
   
-  extension [Self <: GridControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridControlOptions] (val x: Self) extends AnyVal {
     
     inline def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
     

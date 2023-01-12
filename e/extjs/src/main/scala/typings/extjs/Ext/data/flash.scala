@@ -79,7 +79,8 @@ object flash {
       __obj.asInstanceOf[IBinaryXhr]
     }
     
-    extension [Self <: IBinaryXhr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBinaryXhr] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       

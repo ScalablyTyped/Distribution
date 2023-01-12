@@ -15,7 +15,8 @@ object DimUndefined {
     __obj.asInstanceOf[DimUndefined]
   }
   
-  extension [Self <: DimUndefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimUndefined] (val x: Self) extends AnyVal {
     
     inline def setDim(value: Unit): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object CellLabel {
     __obj.asInstanceOf[CellLabel]
   }
   
-  extension [Self <: CellLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellLabel] (val x: Self) extends AnyVal {
     
     inline def setCellLabel(value: String): Self = StObject.set(x, "cellLabel", value.asInstanceOf[js.Any])
     

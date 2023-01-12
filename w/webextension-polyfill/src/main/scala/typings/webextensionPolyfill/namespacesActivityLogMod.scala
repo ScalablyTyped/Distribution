@@ -50,7 +50,8 @@ object namespacesActivityLogMod {
         __obj.asInstanceOf[OnExtensionActivityDetailsType]
       }
       
-      extension [Self <: OnExtensionActivityDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OnExtensionActivityDetailsType] (val x: Self) extends AnyVal {
         
         inline def setData(value: OnExtensionActivityDetailsTypeDataType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -104,7 +105,8 @@ object namespacesActivityLogMod {
         __obj.asInstanceOf[OnExtensionActivityDetailsTypeDataType]
       }
       
-      extension [Self <: OnExtensionActivityDetailsTypeDataType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OnExtensionActivityDetailsTypeDataType] (val x: Self) extends AnyVal {
         
         inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
@@ -189,7 +191,8 @@ object namespacesActivityLogMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setOnExtensionActivity(value: onExtensionActivityEvent): Self = StObject.set(x, "onExtensionActivity", value.asInstanceOf[js.Any])
       }
@@ -222,7 +225,8 @@ object namespacesActivityLogMod {
         __obj.asInstanceOf[onExtensionActivityEvent]
       }
       
-      extension [Self <: onExtensionActivityEvent](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: onExtensionActivityEvent] (val x: Self) extends AnyVal {
         
         inline def setAddListener(value: (js.Function1[/* details */ OnExtensionActivityDetailsType, Unit], String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       }

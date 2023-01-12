@@ -46,7 +46,8 @@ object ExampleScenarioActor {
     __obj.asInstanceOf[ExampleScenarioActor]
   }
   
-  extension [Self <: ExampleScenarioActor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExampleScenarioActor] (val x: Self) extends AnyVal {
     
     inline def setActorId(value: String): Self = StObject.set(x, "actorId", value.asInstanceOf[js.Any])
     

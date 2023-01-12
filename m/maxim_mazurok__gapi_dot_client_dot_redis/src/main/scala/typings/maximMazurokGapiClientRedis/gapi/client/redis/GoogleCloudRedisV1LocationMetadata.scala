@@ -21,7 +21,8 @@ object GoogleCloudRedisV1LocationMetadata {
     __obj.asInstanceOf[GoogleCloudRedisV1LocationMetadata]
   }
   
-  extension [Self <: GoogleCloudRedisV1LocationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRedisV1LocationMetadata] (val x: Self) extends AnyVal {
     
     inline def setAvailableZones(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

@@ -21,7 +21,8 @@ object IntrospectionDirective {
     __obj.asInstanceOf[IntrospectionDirective]
   }
   
-  extension [Self <: IntrospectionDirective](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntrospectionDirective] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[IntrospectionInputValue]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

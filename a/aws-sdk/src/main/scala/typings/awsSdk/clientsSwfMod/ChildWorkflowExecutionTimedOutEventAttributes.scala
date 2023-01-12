@@ -44,7 +44,8 @@ object ChildWorkflowExecutionTimedOutEventAttributes {
     __obj.asInstanceOf[ChildWorkflowExecutionTimedOutEventAttributes]
   }
   
-  extension [Self <: ChildWorkflowExecutionTimedOutEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildWorkflowExecutionTimedOutEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setInitiatedEventId(value: EventId): Self = StObject.set(x, "initiatedEventId", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object select {
       __obj.asInstanceOf[ISelect]
     }
     
-    extension [Self <: ISelect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelect] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Double => Double): Self = StObject.set(x, "active", js.Any.fromFunction1(value))
       
@@ -109,7 +110,8 @@ object select {
       __obj.asInstanceOf[ISelectOptions]
     }
     
-    extension [Self <: ISelectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelectOptions] (val x: Self) extends AnyVal {
       
       inline def setAllNoneButtons(value: Boolean): Self = StObject.set(x, "allNoneButtons", value.asInstanceOf[js.Any])
       
@@ -212,7 +214,8 @@ object select {
       __obj.asInstanceOf[ISelectProvider]
     }
     
-    extension [Self <: ISelectProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelectProvider] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: ISelectOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }

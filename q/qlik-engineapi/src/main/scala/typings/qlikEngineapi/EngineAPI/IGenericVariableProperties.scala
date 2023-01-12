@@ -51,7 +51,8 @@ object IGenericVariableProperties {
     __obj.asInstanceOf[IGenericVariableProperties]
   }
   
-  extension [Self <: IGenericVariableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericVariableProperties] (val x: Self) extends AnyVal {
     
     inline def setQComment(value: String): Self = StObject.set(x, "qComment", value.asInstanceOf[js.Any])
     

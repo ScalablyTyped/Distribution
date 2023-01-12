@@ -37,7 +37,8 @@ object ToObjectOutput {
     __obj.asInstanceOf[ToObjectOutput]
   }
   
-  extension [Self <: ToObjectOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToObjectOutput] (val x: Self) extends AnyVal {
     
     inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     

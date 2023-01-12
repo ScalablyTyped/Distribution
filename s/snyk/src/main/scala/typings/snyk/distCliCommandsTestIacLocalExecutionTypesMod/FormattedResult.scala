@@ -60,7 +60,8 @@ object FormattedResult {
     __obj.asInstanceOf[FormattedResult]
   }
   
-  extension [Self <: FormattedResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormattedResult] (val x: Self) extends AnyVal {
     
     inline def setDependencyCount(value: Double): Self = StObject.set(x, "dependencyCount", value.asInstanceOf[js.Any])
     

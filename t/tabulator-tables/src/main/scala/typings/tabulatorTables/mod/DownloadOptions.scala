@@ -32,7 +32,8 @@ object DownloadOptions {
     __obj.asInstanceOf[DownloadOptions]
   }
   
-  extension [Self <: DownloadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoTable(value: js.Object | (js.Function1[/* doc */ Any, Any])): Self = StObject.set(x, "autoTable", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object TextBlock {
     __obj.asInstanceOf[TextBlock]
   }
   
-  extension [Self <: TextBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextBlock] (val x: Self) extends AnyVal {
     
     inline def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
     

@@ -98,7 +98,8 @@ object distOperationsTriggersTypesMod {
       __obj.asInstanceOf[TriggerOptions]
     }
     
-    extension [Self <: TriggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TriggerOptions] (val x: Self) extends AnyVal {
       
       inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
       

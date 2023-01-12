@@ -19,7 +19,8 @@ object MediaKeySessionEventMap {
     __obj.asInstanceOf[MediaKeySessionEventMap]
   }
   
-  extension [Self <: MediaKeySessionEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaKeySessionEventMap] (val x: Self) extends AnyVal {
     
     inline def setKeystatuseschange(value: Event): Self = StObject.set(x, "keystatuseschange", value.asInstanceOf[js.Any])
     

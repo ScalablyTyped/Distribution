@@ -17,7 +17,8 @@ object PointerPosition {
     __obj.asInstanceOf[PointerPosition]
   }
   
-  extension [Self <: PointerPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerPosition] (val x: Self) extends AnyVal {
     
     inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
     

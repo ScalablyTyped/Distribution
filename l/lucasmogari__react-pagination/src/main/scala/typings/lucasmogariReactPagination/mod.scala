@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[PageItem]
     }
     
-    extension [Self <: PageItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageItem] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object mod {
       __obj.asInstanceOf[PageItemProps]
     }
     
-    extension [Self <: PageItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageItemProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-current`(value: Boolean): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
       
@@ -129,7 +131,8 @@ object mod {
       __obj.asInstanceOf[UseNavigationParameters]
     }
     
-    extension [Self <: UseNavigationParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseNavigationParameters] (val x: Self) extends AnyVal {
       
       inline def setArrows(value: Boolean): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
       
@@ -213,7 +216,8 @@ object mod {
       __obj.asInstanceOf[UseNavigationPayload]
     }
     
-    extension [Self <: UseNavigationPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseNavigationPayload] (val x: Self) extends AnyVal {
       
       inline def setArrows(value: Boolean): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
       

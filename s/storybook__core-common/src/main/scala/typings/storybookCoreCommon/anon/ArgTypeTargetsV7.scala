@@ -76,7 +76,8 @@ object ArgTypeTargetsV7 {
     __obj.asInstanceOf[ArgTypeTargetsV7]
   }
   
-  extension [Self <: ArgTypeTargetsV7](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArgTypeTargetsV7] (val x: Self) extends AnyVal {
     
     inline def setArgTypeTargetsV7(value: Boolean): Self = StObject.set(x, "argTypeTargetsV7", value.asInstanceOf[js.Any])
     

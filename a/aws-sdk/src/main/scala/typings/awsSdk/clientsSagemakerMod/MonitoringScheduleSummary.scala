@@ -59,7 +59,8 @@ object MonitoringScheduleSummary {
     __obj.asInstanceOf[MonitoringScheduleSummary]
   }
   
-  extension [Self <: MonitoringScheduleSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoringScheduleSummary] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

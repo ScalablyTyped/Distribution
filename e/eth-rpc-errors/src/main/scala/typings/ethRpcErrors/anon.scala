@@ -47,7 +47,8 @@ object anon {
       __obj.asInstanceOf[ChainDisconnected]
     }
     
-    extension [Self <: ChainDisconnected](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChainDisconnected] (val x: Self) extends AnyVal {
       
       inline def setChainDisconnected(value: `4901`): Self = StObject.set(x, "chainDisconnected", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object anon {
       __obj.asInstanceOf[FallbackError]
     }
     
-    extension [Self <: FallbackError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FallbackError] (val x: Self) extends AnyVal {
       
       inline def setFallbackError(value: SerializedEthereumRpcError): Self = StObject.set(x, "fallbackError", value.asInstanceOf[js.Any])
       
@@ -161,7 +163,8 @@ object anon {
       __obj.asInstanceOf[Internal]
     }
     
-    extension [Self <: Internal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Internal] (val x: Self) extends AnyVal {
       
       inline def setInternal(value: `-32603`): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
       
@@ -288,7 +291,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

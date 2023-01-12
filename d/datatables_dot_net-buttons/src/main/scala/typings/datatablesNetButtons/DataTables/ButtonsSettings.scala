@@ -22,7 +22,8 @@ object ButtonsSettings {
     __obj.asInstanceOf[ButtonsSettings]
   }
   
-  extension [Self <: ButtonsSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonsSettings] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: js.Array[String | FunctionButtom | ButtonSettings]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

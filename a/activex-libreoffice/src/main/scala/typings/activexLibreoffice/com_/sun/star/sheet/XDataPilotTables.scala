@@ -60,7 +60,8 @@ object XDataPilotTables {
     __obj.asInstanceOf[XDataPilotTables]
   }
   
-  extension [Self <: XDataPilotTables](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataPilotTables] (val x: Self) extends AnyVal {
     
     inline def setCreateDataPilotDescriptor(value: () => XDataPilotDescriptor): Self = StObject.set(x, "createDataPilotDescriptor", js.Any.fromFunction0(value))
     

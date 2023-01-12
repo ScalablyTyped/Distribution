@@ -37,7 +37,8 @@ object distSrcModulesFullScreenManagerTypesMod {
       __obj.asInstanceOf[IFullScreenAPI]
     }
     
-    extension [Self <: IFullScreenAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFullScreenAPI] (val x: Self) extends AnyVal {
       
       inline def setDisableEnterFullScreenOnPlay(value: () => Unit): Self = StObject.set(x, "disableEnterFullScreenOnPlay", js.Any.fromFunction0(value))
       
@@ -102,7 +103,8 @@ object distSrcModulesFullScreenManagerTypesMod {
       __obj.asInstanceOf[IFullScreenConfig]
     }
     
-    extension [Self <: IFullScreenConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFullScreenConfig] (val x: Self) extends AnyVal {
       
       inline def setEnterFullScreenOnPlay(value: Boolean): Self = StObject.set(x, "enterFullScreenOnPlay", value.asInstanceOf[js.Any])
       
@@ -150,7 +152,8 @@ object distSrcModulesFullScreenManagerTypesMod {
       __obj.asInstanceOf[IFullScreenHelper]
     }
     
-    extension [Self <: IFullScreenHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFullScreenHelper] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -215,7 +218,8 @@ object distSrcModulesFullScreenManagerTypesMod {
       __obj.asInstanceOf[IFullScreenManager]
     }
     
-    extension [Self <: IFullScreenManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFullScreenManager] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

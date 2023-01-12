@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[CallbackNode]
     }
     
-    extension [Self <: CallbackNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackNode] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: /* deadline */ Deadline => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
@@ -66,7 +67,8 @@ object mod {
       __obj.asInstanceOf[Deadline]
     }
     
-    extension [Self <: Deadline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Deadline] (val x: Self) extends AnyVal {
       
       inline def setDidTimeout(value: Boolean): Self = StObject.set(x, "didTimeout", value.asInstanceOf[js.Any])
       

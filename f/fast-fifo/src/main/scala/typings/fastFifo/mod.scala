@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[FastFIFO[T]]
     }
     
-    extension [Self <: FastFIFO[?], T](x: Self & FastFIFO[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FastFIFO[?], T] (val x: Self & FastFIFO[T]) extends AnyVal {
       
       inline def setHead(value: typings.fastFifo.fixedSizeMod.^[T]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       

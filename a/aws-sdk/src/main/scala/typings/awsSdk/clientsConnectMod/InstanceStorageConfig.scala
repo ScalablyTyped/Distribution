@@ -43,7 +43,8 @@ object InstanceStorageConfig {
     __obj.asInstanceOf[InstanceStorageConfig]
   }
   
-  extension [Self <: InstanceStorageConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceStorageConfig] (val x: Self) extends AnyVal {
     
     inline def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     

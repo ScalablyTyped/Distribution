@@ -26,7 +26,8 @@ object Router {
     __obj.asInstanceOf[Router[TState]]
   }
   
-  extension [Self <: Router[?], TState](x: Self & Router[TState]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Router[?], TState] (val x: Self & Router[TState]) extends AnyVal {
     
     inline def setGetActionForPathAndParams(value: String => Nullable[js.Object]): Self = StObject.set(x, "getActionForPathAndParams", js.Any.fromFunction1(value))
     

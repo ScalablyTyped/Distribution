@@ -52,7 +52,8 @@ object XFormulaOpCodeMapper {
     __obj.asInstanceOf[XFormulaOpCodeMapper]
   }
   
-  extension [Self <: XFormulaOpCodeMapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFormulaOpCodeMapper] (val x: Self) extends AnyVal {
     
     inline def setGetAvailableMappings(value: (Double, Double) => SafeArray[FormulaOpCodeMapEntry]): Self = StObject.set(x, "getAvailableMappings", js.Any.fromFunction2(value))
     

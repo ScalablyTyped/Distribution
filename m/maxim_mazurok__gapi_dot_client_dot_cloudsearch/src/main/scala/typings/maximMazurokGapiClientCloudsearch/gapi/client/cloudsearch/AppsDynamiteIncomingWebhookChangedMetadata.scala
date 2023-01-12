@@ -34,7 +34,8 @@ object AppsDynamiteIncomingWebhookChangedMetadata {
     __obj.asInstanceOf[AppsDynamiteIncomingWebhookChangedMetadata]
   }
   
-  extension [Self <: AppsDynamiteIncomingWebhookChangedMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteIncomingWebhookChangedMetadata] (val x: Self) extends AnyVal {
     
     inline def setIncomingWebhookName(value: String): Self = StObject.set(x, "incomingWebhookName", value.asInstanceOf[js.Any])
     

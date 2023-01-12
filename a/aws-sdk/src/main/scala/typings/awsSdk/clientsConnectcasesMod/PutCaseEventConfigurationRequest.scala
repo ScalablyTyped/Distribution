@@ -23,7 +23,8 @@ object PutCaseEventConfigurationRequest {
     __obj.asInstanceOf[PutCaseEventConfigurationRequest]
   }
   
-  extension [Self <: PutCaseEventConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutCaseEventConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainId(value: DomainId): Self = StObject.set(x, "domainId", value.asInstanceOf[js.Any])
     

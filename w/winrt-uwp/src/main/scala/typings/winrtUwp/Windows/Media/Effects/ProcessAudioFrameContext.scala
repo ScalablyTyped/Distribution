@@ -21,7 +21,8 @@ object ProcessAudioFrameContext {
     __obj.asInstanceOf[ProcessAudioFrameContext]
   }
   
-  extension [Self <: ProcessAudioFrameContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessAudioFrameContext] (val x: Self) extends AnyVal {
     
     inline def setInputFrame(value: AudioFrame): Self = StObject.set(x, "inputFrame", value.asInstanceOf[js.Any])
     

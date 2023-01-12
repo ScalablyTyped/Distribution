@@ -21,7 +21,8 @@ object TileLayerFetchTileOptions {
     __obj.asInstanceOf[TileLayerFetchTileOptions]
   }
   
-  extension [Self <: TileLayerFetchTileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileLayerFetchTileOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

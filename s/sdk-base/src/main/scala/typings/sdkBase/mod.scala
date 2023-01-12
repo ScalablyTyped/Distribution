@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[BaseOptions]
     }
     
-    extension [Self <: BaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
       
       inline def setInitMethod(value: String): Self = StObject.set(x, "initMethod", value.asInstanceOf[js.Any])
       

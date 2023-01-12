@@ -30,7 +30,8 @@ object AppLicenseCollection {
     __obj.asInstanceOf[AppLicenseCollection]
   }
   
-  extension [Self <: AppLicenseCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppLicenseCollection] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: AppLicense => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

@@ -22,7 +22,8 @@ object EndState {
     __obj.asInstanceOf[EndState]
   }
   
-  extension [Self <: EndState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndState] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: PathWidth): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

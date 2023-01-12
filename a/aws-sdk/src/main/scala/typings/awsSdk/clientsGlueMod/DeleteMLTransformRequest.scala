@@ -18,7 +18,8 @@ object DeleteMLTransformRequest {
     __obj.asInstanceOf[DeleteMLTransformRequest]
   }
   
-  extension [Self <: DeleteMLTransformRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMLTransformRequest] (val x: Self) extends AnyVal {
     
     inline def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
   }

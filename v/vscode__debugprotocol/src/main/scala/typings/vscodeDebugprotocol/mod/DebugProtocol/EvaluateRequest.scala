@@ -32,7 +32,8 @@ object EvaluateRequest {
     __obj.asInstanceOf[EvaluateRequest]
   }
   
-  extension [Self <: EvaluateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluateRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: EvaluateArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

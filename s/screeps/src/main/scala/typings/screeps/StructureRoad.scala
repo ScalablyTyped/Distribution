@@ -37,7 +37,8 @@ object StructureRoad {
     __obj.asInstanceOf[StructureRoad]
   }
   
-  extension [Self <: StructureRoad](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureRoad] (val x: Self) extends AnyVal {
     
     inline def setTicksToDecay(value: Double): Self = StObject.set(x, "ticksToDecay", value.asInstanceOf[js.Any])
   }

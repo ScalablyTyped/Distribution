@@ -36,7 +36,8 @@ object DefaultHelpProvider {
     __obj.asInstanceOf[DefaultHelpProvider]
   }
   
-  extension [Self <: DefaultHelpProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultHelpProvider] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: XObjectInspectorUI => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }

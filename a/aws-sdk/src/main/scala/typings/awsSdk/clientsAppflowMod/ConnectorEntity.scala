@@ -28,7 +28,8 @@ object ConnectorEntity {
     __obj.asInstanceOf[ConnectorEntity]
   }
   
-  extension [Self <: ConnectorEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorEntity] (val x: Self) extends AnyVal {
     
     inline def setHasNestedEntities(value: Boolean): Self = StObject.set(x, "hasNestedEntities", value.asInstanceOf[js.Any])
     

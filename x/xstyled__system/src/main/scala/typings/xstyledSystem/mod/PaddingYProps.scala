@@ -16,7 +16,8 @@ object PaddingYProps {
     __obj.asInstanceOf[PaddingYProps[TLength]]
   }
   
-  extension [Self <: PaddingYProps[?], TLength](x: Self & PaddingYProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaddingYProps[?], TLength] (val x: Self & PaddingYProps[TLength]) extends AnyVal {
     
     inline def setPy(value: ResponsiveValue[PaddingTop[TLength]]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
     

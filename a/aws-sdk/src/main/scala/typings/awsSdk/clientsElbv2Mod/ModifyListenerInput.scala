@@ -48,7 +48,8 @@ object ModifyListenerInput {
     __obj.asInstanceOf[ModifyListenerInput]
   }
   
-  extension [Self <: ModifyListenerInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyListenerInput] (val x: Self) extends AnyVal {
     
     inline def setAlpnPolicy(value: AlpnPolicyName): Self = StObject.set(x, "AlpnPolicy", value.asInstanceOf[js.Any])
     

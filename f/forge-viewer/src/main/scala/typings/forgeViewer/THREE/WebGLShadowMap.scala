@@ -42,7 +42,8 @@ object WebGLShadowMap {
     __obj.asInstanceOf[WebGLShadowMap]
   }
   
-  extension [Self <: WebGLShadowMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLShadowMap] (val x: Self) extends AnyVal {
     
     inline def setAutoUpdate(value: Boolean): Self = StObject.set(x, "autoUpdate", value.asInstanceOf[js.Any])
     

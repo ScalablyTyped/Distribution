@@ -38,7 +38,8 @@ object TokenSpan {
     __obj.asInstanceOf[TokenSpan]
   }
   
-  extension [Self <: TokenSpan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenSpan] (val x: Self) extends AnyVal {
     
     inline def setKind(value: () => SyntaxKind): Self = StObject.set(x, "kind", js.Any.fromFunction0(value))
     

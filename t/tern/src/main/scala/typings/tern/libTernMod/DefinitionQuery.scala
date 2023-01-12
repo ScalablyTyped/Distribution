@@ -35,7 +35,8 @@ object DefinitionQuery {
     __obj.asInstanceOf[DefinitionQuery]
   }
   
-  extension [Self <: DefinitionQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefinitionQuery] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double | Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

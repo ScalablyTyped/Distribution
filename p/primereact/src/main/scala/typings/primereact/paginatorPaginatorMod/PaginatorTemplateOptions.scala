@@ -32,7 +32,8 @@ object PaginatorTemplateOptions {
     __obj.asInstanceOf[PaginatorTemplateOptions]
   }
   
-  extension [Self <: PaginatorTemplateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginatorTemplateOptions] (val x: Self) extends AnyVal {
     
     inline def setCurrentPageReport(value: PaginatorCurrentPageReportType): Self = StObject.set(x, "CurrentPageReport", value.asInstanceOf[js.Any])
     

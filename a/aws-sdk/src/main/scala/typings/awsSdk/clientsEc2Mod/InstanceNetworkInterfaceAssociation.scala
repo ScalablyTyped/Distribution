@@ -38,7 +38,8 @@ object InstanceNetworkInterfaceAssociation {
     __obj.asInstanceOf[InstanceNetworkInterfaceAssociation]
   }
   
-  extension [Self <: InstanceNetworkInterfaceAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceNetworkInterfaceAssociation] (val x: Self) extends AnyVal {
     
     inline def setCarrierIp(value: String): Self = StObject.set(x, "CarrierIp", value.asInstanceOf[js.Any])
     

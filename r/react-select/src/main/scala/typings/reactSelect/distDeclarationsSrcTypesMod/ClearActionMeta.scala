@@ -22,7 +22,8 @@ object ClearActionMeta {
     __obj.asInstanceOf[ClearActionMeta[Option]]
   }
   
-  extension [Self <: ClearActionMeta[?], Option](x: Self & ClearActionMeta[Option]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearActionMeta[?], Option] (val x: Self & ClearActionMeta[Option]) extends AnyVal {
     
     inline def setAction(value: clear): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

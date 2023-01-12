@@ -54,7 +54,8 @@ object PretargetingConfig {
     __obj.asInstanceOf[PretargetingConfig]
   }
   
-  extension [Self <: PretargetingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PretargetingConfig] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListApplicationsRequest {
     __obj.asInstanceOf[ListApplicationsRequest]
   }
   
-  extension [Self <: ListApplicationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListApplicationsRequest] (val x: Self) extends AnyVal {
     
     inline def setExclusiveStartApplicationName(value: ApplicationName): Self = StObject.set(x, "ExclusiveStartApplicationName", value.asInstanceOf[js.Any])
     

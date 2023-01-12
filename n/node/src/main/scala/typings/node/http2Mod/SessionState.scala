@@ -31,7 +31,8 @@ object SessionState {
     __obj.asInstanceOf[SessionState]
   }
   
-  extension [Self <: SessionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionState] (val x: Self) extends AnyVal {
     
     inline def setDeflateDynamicTableSize(value: Double): Self = StObject.set(x, "deflateDynamicTableSize", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object libSrcTypesAuthenticationMiddlewareOptionsMod {
       __obj.asInstanceOf[AuthenticationMiddlewareOptions]
     }
     
-    extension [Self <: AuthenticationMiddlewareOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticationMiddlewareOptions] (val x: Self) extends AnyVal {
       
       inline def setGetTokenInfo(
         value: (/* tokenInfoUrl */ String, /* accessToken */ String, /* logger */ js.UndefOr[Logger]) => js.Promise[Token[Record[String | Double | js.Symbol, Any]]]

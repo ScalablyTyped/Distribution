@@ -18,7 +18,8 @@ object DuplicateTimestamps {
     __obj.asInstanceOf[DuplicateTimestamps]
   }
   
-  extension [Self <: DuplicateTimestamps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DuplicateTimestamps] (val x: Self) extends AnyVal {
     
     inline def setTotalNumberOfDuplicateTimestamps(value: Integer): Self = StObject.set(x, "TotalNumberOfDuplicateTimestamps", value.asInstanceOf[js.Any])
   }

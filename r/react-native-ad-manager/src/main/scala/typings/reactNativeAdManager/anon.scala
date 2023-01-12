@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Accuracy]
     }
     
-    extension [Self <: Accuracy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accuracy] (val x: Self) extends AnyVal {
       
       inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Info]
     }
     
-    extension [Self <: Info](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
       
       inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
@@ -89,7 +92,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -106,7 +110,8 @@ object anon {
       __obj.asInstanceOf[Remove]
     }
     
-    extension [Self <: Remove](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Remove] (val x: Self) extends AnyVal {
       
       inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     }

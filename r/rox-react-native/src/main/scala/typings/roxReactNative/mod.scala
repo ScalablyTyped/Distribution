@@ -274,7 +274,8 @@ object mod {
       __obj.asInstanceOf[RoxFetcherResult]
     }
     
-    extension [Self <: RoxFetcherResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoxFetcherResult] (val x: Self) extends AnyVal {
       
       inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
@@ -299,7 +300,8 @@ object mod {
       __obj.asInstanceOf[RoxFlagOptions]
     }
     
-    extension [Self <: RoxFlagOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoxFlagOptions] (val x: Self) extends AnyVal {
       
       inline def setFreeze(value: FreezeOptions): Self = StObject.set(x, "freeze", value.asInstanceOf[js.Any])
       
@@ -322,7 +324,8 @@ object mod {
       __obj.asInstanceOf[RoxReporting]
     }
     
-    extension [Self <: RoxReporting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoxReporting] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -373,7 +376,8 @@ object mod {
       __obj.asInstanceOf[RoxSetupOptions]
     }
     
-    extension [Self <: RoxSetupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoxSetupOptions] (val x: Self) extends AnyVal {
       
       inline def setAsyncStorage(value: Any): Self = StObject.set(x, "AsyncStorage", value.asInstanceOf[js.Any])
       

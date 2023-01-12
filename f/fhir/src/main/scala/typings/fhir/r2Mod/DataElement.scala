@@ -117,7 +117,8 @@ object DataElement {
     __obj.asInstanceOf[DataElement]
   }
   
-  extension [Self <: DataElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataElement] (val x: Self) extends AnyVal {
     
     inline def setContact(value: js.Array[DataElementContact]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     

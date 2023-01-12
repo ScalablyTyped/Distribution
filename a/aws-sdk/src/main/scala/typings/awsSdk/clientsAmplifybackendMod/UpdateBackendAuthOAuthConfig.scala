@@ -43,7 +43,8 @@ object UpdateBackendAuthOAuthConfig {
     __obj.asInstanceOf[UpdateBackendAuthOAuthConfig]
   }
   
-  extension [Self <: UpdateBackendAuthOAuthConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBackendAuthOAuthConfig] (val x: Self) extends AnyVal {
     
     inline def setDomainPrefix(value: string): Self = StObject.set(x, "DomainPrefix", value.asInstanceOf[js.Any])
     

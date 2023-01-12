@@ -38,7 +38,8 @@ object CustomDataIdentifierSummary {
     __obj.asInstanceOf[CustomDataIdentifierSummary]
   }
   
-  extension [Self <: CustomDataIdentifierSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomDataIdentifierSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

@@ -112,7 +112,8 @@ object UsageLogEvent {
     __obj.asInstanceOf[UsageLogEvent]
   }
   
-  extension [Self <: UsageLogEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsageLogEvent] (val x: Self) extends AnyVal {
     
     inline def setAdbShellCommandEvent(value: AdbShellCommandEvent): Self = StObject.set(x, "adbShellCommandEvent", value.asInstanceOf[js.Any])
     

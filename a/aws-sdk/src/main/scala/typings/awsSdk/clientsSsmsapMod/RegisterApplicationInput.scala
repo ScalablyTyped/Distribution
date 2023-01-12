@@ -53,7 +53,8 @@ object RegisterApplicationInput {
     __obj.asInstanceOf[RegisterApplicationInput]
   }
   
-  extension [Self <: RegisterApplicationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterApplicationInput] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: ApplicationId): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

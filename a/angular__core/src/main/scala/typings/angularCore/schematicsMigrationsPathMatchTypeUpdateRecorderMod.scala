@@ -30,7 +30,8 @@ object schematicsMigrationsPathMatchTypeUpdateRecorderMod {
       __obj.asInstanceOf[UpdateRecorder]
     }
     
-    extension [Self <: UpdateRecorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateRecorder] (val x: Self) extends AnyVal {
       
       inline def setCommitUpdate(value: () => Unit): Self = StObject.set(x, "commitUpdate", js.Any.fromFunction0(value))
       

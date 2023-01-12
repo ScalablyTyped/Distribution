@@ -30,7 +30,8 @@ object addons {
       __obj.asInstanceOf[TestModuleStatic]
     }
     
-    extension [Self <: TestModuleStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestModuleStatic] (val x: Self) extends AnyVal {
       
       inline def setMarkTestCompleted(value: () => Unit): Self = StObject.set(x, "markTestCompleted", js.Any.fromFunction0(value))
       

@@ -23,7 +23,8 @@ object DisassociateMacSecKeyRequest {
     __obj.asInstanceOf[DisassociateMacSecKeyRequest]
   }
   
-  extension [Self <: DisassociateMacSecKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateMacSecKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     

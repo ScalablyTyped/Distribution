@@ -21,7 +21,8 @@ object Formatter {
     __obj.asInstanceOf[Formatter]
   }
   
-  extension [Self <: Formatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Formatter] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

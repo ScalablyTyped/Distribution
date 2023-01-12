@@ -19,7 +19,8 @@ object GetTopUserIDsResponse {
     __obj.asInstanceOf[GetTopUserIDsResponse]
   }
   
-  extension [Self <: GetTopUserIDsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTopUserIDsResponse] (val x: Self) extends AnyVal {
     
     inline def setTopUsers(value: Record[String, js.Array[UserIDResponse]]): Self = StObject.set(x, "topUsers", value.asInstanceOf[js.Any])
   }

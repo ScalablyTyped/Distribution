@@ -16,7 +16,8 @@ object ReportStateAndNotificationResponse {
     __obj.asInstanceOf[ReportStateAndNotificationResponse]
   }
   
-  extension [Self <: ReportStateAndNotificationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportStateAndNotificationResponse] (val x: Self) extends AnyVal {
     
     inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     

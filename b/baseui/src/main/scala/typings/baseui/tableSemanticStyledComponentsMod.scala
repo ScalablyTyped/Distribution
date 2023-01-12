@@ -92,7 +92,8 @@ object tableSemanticStyledComponentsMod {
       __obj.asInstanceOf[StyledRootProps]
     }
     
-    extension [Self <: StyledRootProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledRootProps] (val x: Self) extends AnyVal {
       
       inline def set$divider(value: Divider): Self = StObject.set(x, "$divider", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object tableSemanticStyledComponentsMod {
       __obj.asInstanceOf[StyledTableBodyCellProps]
     }
     
-    extension [Self <: StyledTableBodyCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledTableBodyCellProps] (val x: Self) extends AnyVal {
       
       inline def set$col(value: js.Object): Self = StObject.set(x, "$col", value.asInstanceOf[js.Any])
       
@@ -204,7 +206,8 @@ object tableSemanticStyledComponentsMod {
       __obj.asInstanceOf[StyledTableBodyRowProps]
     }
     
-    extension [Self <: StyledTableBodyRowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledTableBodyRowProps] (val x: Self) extends AnyVal {
       
       inline def set$col(value: js.Object): Self = StObject.set(x, "$col", value.asInstanceOf[js.Any])
       
@@ -246,7 +249,8 @@ object tableSemanticStyledComponentsMod {
       __obj.asInstanceOf[StyledTableHeadCellProps]
     }
     
-    extension [Self <: StyledTableHeadCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledTableHeadCellProps] (val x: Self) extends AnyVal {
       
       inline def set$col(value: js.Object): Self = StObject.set(x, "$col", value.asInstanceOf[js.Any])
       
@@ -286,7 +290,8 @@ object tableSemanticStyledComponentsMod {
       __obj.asInstanceOf[StyledTableProps]
     }
     
-    extension [Self <: StyledTableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledTableProps] (val x: Self) extends AnyVal {
       
       inline def set$width(value: String): Self = StObject.set(x, "$width", value.asInstanceOf[js.Any])
       

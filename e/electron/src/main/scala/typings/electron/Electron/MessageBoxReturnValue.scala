@@ -23,7 +23,8 @@ object MessageBoxReturnValue {
     __obj.asInstanceOf[MessageBoxReturnValue]
   }
   
-  extension [Self <: MessageBoxReturnValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageBoxReturnValue] (val x: Self) extends AnyVal {
     
     inline def setCheckboxChecked(value: Boolean): Self = StObject.set(x, "checkboxChecked", value.asInstanceOf[js.Any])
     

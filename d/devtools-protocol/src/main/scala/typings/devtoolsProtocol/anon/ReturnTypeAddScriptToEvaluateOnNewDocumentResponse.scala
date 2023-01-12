@@ -22,7 +22,8 @@ object ReturnTypeAddScriptToEvaluateOnNewDocumentResponse {
     __obj.asInstanceOf[ReturnTypeAddScriptToEvaluateOnNewDocumentResponse]
   }
   
-  extension [Self <: ReturnTypeAddScriptToEvaluateOnNewDocumentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeAddScriptToEvaluateOnNewDocumentResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[AddScriptToEvaluateOnNewDocumentRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

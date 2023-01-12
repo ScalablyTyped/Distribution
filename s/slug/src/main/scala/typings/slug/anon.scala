@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Pretty]
     }
     
-    extension [Self <: Pretty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pretty] (val x: Self) extends AnyVal {
       
       inline def setPretty(value: Mode): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
       

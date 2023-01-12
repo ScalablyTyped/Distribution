@@ -19,7 +19,8 @@ object LocationSelectOpts {
     __obj.asInstanceOf[LocationSelectOpts]
   }
   
-  extension [Self <: LocationSelectOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationSelectOpts] (val x: Self) extends AnyVal {
     
     inline def setCascDisabled(value: Boolean): Self = StObject.set(x, "cascDisabled", value.asInstanceOf[js.Any])
     

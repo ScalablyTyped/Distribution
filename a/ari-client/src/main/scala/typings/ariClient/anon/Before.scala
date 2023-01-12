@@ -23,7 +23,8 @@ object Before {
     __obj.asInstanceOf[Before]
   }
   
-  extension [Self <: Before](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Before] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: Double): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

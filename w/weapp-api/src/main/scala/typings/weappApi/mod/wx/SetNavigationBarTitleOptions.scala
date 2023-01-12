@@ -25,7 +25,8 @@ object SetNavigationBarTitleOptions {
     __obj.asInstanceOf[SetNavigationBarTitleOptions]
   }
   
-  extension [Self <: SetNavigationBarTitleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetNavigationBarTitleOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

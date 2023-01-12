@@ -48,7 +48,8 @@ object UpdateGatewayRouteInput {
     __obj.asInstanceOf[UpdateGatewayRouteInput]
   }
   
-  extension [Self <: UpdateGatewayRouteInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateGatewayRouteInput] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

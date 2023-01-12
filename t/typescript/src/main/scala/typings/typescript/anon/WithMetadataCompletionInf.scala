@@ -52,7 +52,8 @@ object WithMetadataCompletionInf {
     __obj.asInstanceOf[WithMetadataCompletionInf]
   }
   
-  extension [Self <: WithMetadataCompletionInf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WithMetadataCompletionInf] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: js.Array[CompletionEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

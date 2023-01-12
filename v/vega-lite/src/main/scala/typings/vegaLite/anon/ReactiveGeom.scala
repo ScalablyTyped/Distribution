@@ -15,7 +15,8 @@ object ReactiveGeom {
     __obj.asInstanceOf[ReactiveGeom]
   }
   
-  extension [Self <: ReactiveGeom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactiveGeom] (val x: Self) extends AnyVal {
     
     inline def setReactiveGeom(value: Boolean): Self = StObject.set(x, "reactiveGeom", value.asInstanceOf[js.Any])
     

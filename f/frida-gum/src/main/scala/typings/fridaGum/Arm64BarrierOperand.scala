@@ -22,7 +22,8 @@ object Arm64BarrierOperand {
     __obj.asInstanceOf[Arm64BarrierOperand]
   }
   
-  extension [Self <: Arm64BarrierOperand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Arm64BarrierOperand] (val x: Self) extends AnyVal {
     
     inline def setType(value: barrier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

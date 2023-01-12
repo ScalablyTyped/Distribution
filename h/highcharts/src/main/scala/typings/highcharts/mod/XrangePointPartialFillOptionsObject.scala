@@ -26,7 +26,8 @@ object XrangePointPartialFillOptionsObject {
     __obj.asInstanceOf[XrangePointPartialFillOptionsObject]
   }
   
-  extension [Self <: XrangePointPartialFillOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XrangePointPartialFillOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

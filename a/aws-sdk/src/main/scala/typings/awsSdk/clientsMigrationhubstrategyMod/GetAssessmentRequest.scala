@@ -18,7 +18,8 @@ object GetAssessmentRequest {
     __obj.asInstanceOf[GetAssessmentRequest]
   }
   
-  extension [Self <: GetAssessmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAssessmentRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: AsyncTaskId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,8 @@ object IEntityDeathEventData {
     __obj.asInstanceOf[IEntityDeathEventData]
   }
   
-  extension [Self <: IEntityDeathEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEntityDeathEventData] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
   }

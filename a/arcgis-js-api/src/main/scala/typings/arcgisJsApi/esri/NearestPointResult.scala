@@ -41,7 +41,8 @@ object NearestPointResult {
     __obj.asInstanceOf[NearestPointResult]
   }
   
-  extension [Self <: NearestPointResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NearestPointResult] (val x: Self) extends AnyVal {
     
     inline def setCoordinate(value: Point): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     

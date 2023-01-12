@@ -43,7 +43,8 @@ object GeoLocationDetails {
     __obj.asInstanceOf[GeoLocationDetails]
   }
   
-  extension [Self <: GeoLocationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoLocationDetails] (val x: Self) extends AnyVal {
     
     inline def setContinentCode(value: GeoLocationContinentCode): Self = StObject.set(x, "ContinentCode", value.asInstanceOf[js.Any])
     

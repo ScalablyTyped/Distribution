@@ -25,7 +25,8 @@ object libTypesRadialGradientConfigurationMod {
       __obj.asInstanceOf[RadialGradientConfiguration]
     }
     
-    extension [Self <: RadialGradientConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadialGradientConfiguration] (val x: Self) extends AnyVal {
       
       inline def setColorStops(value: js.Array[String]): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
       

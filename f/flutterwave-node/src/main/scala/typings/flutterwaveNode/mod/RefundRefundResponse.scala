@@ -18,7 +18,8 @@ object RefundRefundResponse {
     __obj.asInstanceOf[RefundRefundResponse]
   }
   
-  extension [Self <: RefundRefundResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefundRefundResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: AmountRefunded): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

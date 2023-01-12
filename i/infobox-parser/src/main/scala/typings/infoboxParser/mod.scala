@@ -24,7 +24,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setSimplifyDataValues(value: Boolean): Self = StObject.set(x, "simplifyDataValues", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object mod {
       __obj.asInstanceOf[ParseResult]
     }
     
-    extension [Self <: ParseResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseResult] (val x: Self) extends AnyVal {
       
       inline def setGeneral(value: Any): Self = StObject.set(x, "general", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object ListJobMessagesResponse {
     __obj.asInstanceOf[ListJobMessagesResponse]
   }
   
-  extension [Self <: ListJobMessagesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListJobMessagesResponse] (val x: Self) extends AnyVal {
     
     inline def setAutoscalingEvents(value: js.Array[AutoscalingEvent]): Self = StObject.set(x, "autoscalingEvents", value.asInstanceOf[js.Any])
     

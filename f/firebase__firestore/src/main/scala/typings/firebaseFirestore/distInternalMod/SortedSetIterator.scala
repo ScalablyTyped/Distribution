@@ -19,7 +19,8 @@ object SortedSetIterator {
     __obj.asInstanceOf[SortedSetIterator[T]]
   }
   
-  extension [Self <: SortedSetIterator[?], T](x: Self & SortedSetIterator[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortedSetIterator[?], T] (val x: Self & SortedSetIterator[T]) extends AnyVal {
     
     inline def setGetNext(value: () => T): Self = StObject.set(x, "getNext", js.Any.fromFunction0(value))
     

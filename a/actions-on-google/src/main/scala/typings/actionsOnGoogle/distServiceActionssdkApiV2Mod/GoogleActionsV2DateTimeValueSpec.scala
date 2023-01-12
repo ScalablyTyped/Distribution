@@ -18,7 +18,8 @@ object GoogleActionsV2DateTimeValueSpec {
     __obj.asInstanceOf[GoogleActionsV2DateTimeValueSpec]
   }
   
-  extension [Self <: GoogleActionsV2DateTimeValueSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2DateTimeValueSpec] (val x: Self) extends AnyVal {
     
     inline def setDialogSpec(value: GoogleActionsV2DateTimeValueSpecDateTimeDialogSpec): Self = StObject.set(x, "dialogSpec", value.asInstanceOf[js.Any])
     

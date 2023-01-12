@@ -70,7 +70,8 @@ object InitialParcelOptions {
     __obj.asInstanceOf[InitialParcelOptions]
   }
   
-  extension [Self <: InitialParcelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitialParcelOptions] (val x: Self) extends AnyVal {
     
     inline def setAdditionalReporters(value: js.Array[typings.parcelTypes.anon.PackageName]): Self = StObject.set(x, "additionalReporters", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object RequestAuth {
     __obj.asInstanceOf[RequestAuth[AuthUser, AuthApp, CredentialsExtra, ArtifactsExtra]]
   }
   
-  extension [Self <: RequestAuth[?, ?, ?, ?], AuthUser /* <: js.Object */, AuthApp /* <: js.Object */, CredentialsExtra /* <: js.Object */, ArtifactsExtra](x: Self & (RequestAuth[AuthUser, AuthApp, CredentialsExtra, ArtifactsExtra])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestAuth[?, ?, ?, ?], AuthUser /* <: js.Object */, AuthApp /* <: js.Object */, CredentialsExtra /* <: js.Object */, ArtifactsExtra] (val x: Self & (RequestAuth[AuthUser, AuthApp, CredentialsExtra, ArtifactsExtra])) extends AnyVal {
     
     inline def setArtifacts(value: ArtifactsExtra): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     

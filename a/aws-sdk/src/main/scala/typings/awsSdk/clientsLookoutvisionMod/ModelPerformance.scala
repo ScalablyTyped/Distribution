@@ -28,7 +28,8 @@ object ModelPerformance {
     __obj.asInstanceOf[ModelPerformance]
   }
   
-  extension [Self <: ModelPerformance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelPerformance] (val x: Self) extends AnyVal {
     
     inline def setF1Score(value: Float): Self = StObject.set(x, "F1Score", value.asInstanceOf[js.Any])
     

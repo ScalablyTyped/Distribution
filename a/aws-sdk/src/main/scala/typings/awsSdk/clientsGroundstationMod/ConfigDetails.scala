@@ -25,7 +25,8 @@ object ConfigDetails {
     __obj.asInstanceOf[ConfigDetails]
   }
   
-  extension [Self <: ConfigDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigDetails] (val x: Self) extends AnyVal {
     
     inline def setAntennaDemodDecodeDetails(value: AntennaDemodDecodeDetails): Self = StObject.set(x, "antennaDemodDecodeDetails", value.asInstanceOf[js.Any])
     

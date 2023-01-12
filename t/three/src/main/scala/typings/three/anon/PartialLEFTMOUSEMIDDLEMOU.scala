@@ -21,7 +21,8 @@ object PartialLEFTMOUSEMIDDLEMOU {
     __obj.asInstanceOf[PartialLEFTMOUSEMIDDLEMOU]
   }
   
-  extension [Self <: PartialLEFTMOUSEMIDDLEMOU](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLEFTMOUSEMIDDLEMOU] (val x: Self) extends AnyVal {
     
     inline def setLEFT(value: MOUSE): Self = StObject.set(x, "LEFT", value.asInstanceOf[js.Any])
     

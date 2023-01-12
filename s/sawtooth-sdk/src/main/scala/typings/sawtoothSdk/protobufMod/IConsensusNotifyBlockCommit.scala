@@ -16,7 +16,8 @@ object IConsensusNotifyBlockCommit {
     __obj.asInstanceOf[IConsensusNotifyBlockCommit]
   }
   
-  extension [Self <: IConsensusNotifyBlockCommit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConsensusNotifyBlockCommit] (val x: Self) extends AnyVal {
     
     inline def setBlockId(value: js.typedarray.Uint8Array): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
     

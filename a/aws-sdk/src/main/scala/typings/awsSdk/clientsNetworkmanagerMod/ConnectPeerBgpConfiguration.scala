@@ -33,7 +33,8 @@ object ConnectPeerBgpConfiguration {
     __obj.asInstanceOf[ConnectPeerBgpConfiguration]
   }
   
-  extension [Self <: ConnectPeerBgpConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectPeerBgpConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCoreNetworkAddress(value: IPAddress): Self = StObject.set(x, "CoreNetworkAddress", value.asInstanceOf[js.Any])
     

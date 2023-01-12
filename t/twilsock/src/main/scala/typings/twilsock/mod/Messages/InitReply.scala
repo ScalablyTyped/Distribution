@@ -28,7 +28,8 @@ object InitReply {
     __obj.asInstanceOf[InitReply]
   }
   
-  extension [Self <: InitReply](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitReply] (val x: Self) extends AnyVal {
     
     inline def setConfirmedCapabilities(value: Set[String]): Self = StObject.set(x, "confirmedCapabilities", value.asInstanceOf[js.Any])
     

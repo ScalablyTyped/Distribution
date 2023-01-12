@@ -38,7 +38,8 @@ object IToSVGOptions {
     __obj.asInstanceOf[IToSVGOptions]
   }
   
-  extension [Self <: IToSVGOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IToSVGOptions] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

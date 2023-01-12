@@ -35,7 +35,8 @@ object libUtilCreateMod {
       __obj.asInstanceOf[Definition]
     }
     
-    extension [Self <: Definition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Definition] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

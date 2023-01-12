@@ -23,7 +23,8 @@ object KnockoutSecureBindingOptions {
     __obj.asInstanceOf[KnockoutSecureBindingOptions]
   }
   
-  extension [Self <: KnockoutSecureBindingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutSecureBindingOptions] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

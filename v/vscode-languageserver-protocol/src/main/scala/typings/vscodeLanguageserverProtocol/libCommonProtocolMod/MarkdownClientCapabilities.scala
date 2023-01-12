@@ -31,7 +31,8 @@ object MarkdownClientCapabilities {
     __obj.asInstanceOf[MarkdownClientCapabilities]
   }
   
-  extension [Self <: MarkdownClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkdownClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setAllowedTags(value: js.Array[String]): Self = StObject.set(x, "allowedTags", value.asInstanceOf[js.Any])
     

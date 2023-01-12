@@ -23,7 +23,8 @@ object OnProgressParameters {
     __obj.asInstanceOf[OnProgressParameters]
   }
   
-  extension [Self <: OnProgressParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnProgressParameters] (val x: Self) extends AnyVal {
     
     inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     

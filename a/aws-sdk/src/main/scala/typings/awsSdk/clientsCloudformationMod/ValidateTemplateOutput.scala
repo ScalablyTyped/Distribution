@@ -38,7 +38,8 @@ object ValidateTemplateOutput {
     __obj.asInstanceOf[ValidateTemplateOutput]
   }
   
-  extension [Self <: ValidateTemplateOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateTemplateOutput] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: Capabilities): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     

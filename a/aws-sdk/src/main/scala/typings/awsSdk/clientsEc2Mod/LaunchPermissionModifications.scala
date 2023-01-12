@@ -23,7 +23,8 @@ object LaunchPermissionModifications {
     __obj.asInstanceOf[LaunchPermissionModifications]
   }
   
-  extension [Self <: LaunchPermissionModifications](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchPermissionModifications] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: LaunchPermissionList): Self = StObject.set(x, "Add", value.asInstanceOf[js.Any])
     

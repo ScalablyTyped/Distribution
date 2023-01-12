@@ -47,7 +47,8 @@ object ASPxClientCustomizeExportOptionsEventArgs {
     __obj.asInstanceOf[ASPxClientCustomizeExportOptionsEventArgs]
   }
   
-  extension [Self <: ASPxClientCustomizeExportOptionsEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCustomizeExportOptionsEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGetExportOptionsModel(value: Any => Any): Self = StObject.set(x, "GetExportOptionsModel", js.Any.fromFunction1(value))
     

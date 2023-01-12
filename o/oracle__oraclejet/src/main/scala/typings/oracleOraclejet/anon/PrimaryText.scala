@@ -19,7 +19,8 @@ object PrimaryText {
     __obj.asInstanceOf[PrimaryText]
   }
   
-  extension [Self <: PrimaryText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrimaryText] (val x: Self) extends AnyVal {
     
     inline def setPrimaryText(value: String): Self = StObject.set(x, "primaryText", value.asInstanceOf[js.Any])
     

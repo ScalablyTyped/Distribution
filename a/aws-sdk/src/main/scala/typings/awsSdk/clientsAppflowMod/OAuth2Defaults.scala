@@ -38,7 +38,8 @@ object OAuth2Defaults {
     __obj.asInstanceOf[OAuth2Defaults]
   }
   
-  extension [Self <: OAuth2Defaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuth2Defaults] (val x: Self) extends AnyVal {
     
     inline def setAuthCodeUrls(value: AuthCodeUrlList): Self = StObject.set(x, "authCodeUrls", value.asInstanceOf[js.Any])
     

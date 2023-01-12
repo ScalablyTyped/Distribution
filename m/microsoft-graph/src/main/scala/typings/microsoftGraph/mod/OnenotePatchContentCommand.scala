@@ -34,7 +34,8 @@ object OnenotePatchContentCommand {
     __obj.asInstanceOf[OnenotePatchContentCommand]
   }
   
-  extension [Self <: OnenotePatchContentCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnenotePatchContentCommand] (val x: Self) extends AnyVal {
     
     inline def setAction(value: OnenotePatchActionType): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

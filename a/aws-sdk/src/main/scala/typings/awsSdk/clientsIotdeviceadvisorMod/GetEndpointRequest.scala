@@ -23,7 +23,8 @@ object GetEndpointRequest {
     __obj.asInstanceOf[GetEndpointRequest]
   }
   
-  extension [Self <: GetEndpointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEndpointRequest] (val x: Self) extends AnyVal {
     
     inline def setCertificateArn(value: AmazonResourceName): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
     

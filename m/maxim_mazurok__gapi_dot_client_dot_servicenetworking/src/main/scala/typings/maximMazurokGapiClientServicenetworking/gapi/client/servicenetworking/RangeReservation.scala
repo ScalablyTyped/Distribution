@@ -37,7 +37,8 @@ object RangeReservation {
     __obj.asInstanceOf[RangeReservation]
   }
   
-  extension [Self <: RangeReservation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeReservation] (val x: Self) extends AnyVal {
     
     inline def setIpPrefixLength(value: Double): Self = StObject.set(x, "ipPrefixLength", value.asInstanceOf[js.Any])
     

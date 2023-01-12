@@ -205,7 +205,8 @@ object distTypesSrcBasesBaseMod {
       __obj.asInstanceOf[Encoder[Base, Prefix]]
     }
     
-    extension [Self <: Encoder[?, ?], Base /* <: String */, Prefix /* <: String */](x: Self & (Encoder[Base, Prefix])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoder[?, ?], Base /* <: String */, Prefix /* <: String */] (val x: Self & (Encoder[Base, Prefix])) extends AnyVal {
       
       inline def setName(value: Base): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

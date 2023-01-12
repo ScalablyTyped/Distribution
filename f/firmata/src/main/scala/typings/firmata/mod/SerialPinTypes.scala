@@ -38,7 +38,8 @@ object SerialPinTypes {
     __obj.asInstanceOf[SerialPinTypes]
   }
   
-  extension [Self <: SerialPinTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerialPinTypes] (val x: Self) extends AnyVal {
     
     inline def setRES_RX0(value: SERIAL_PIN_TYPE): Self = StObject.set(x, "RES_RX0", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object AssociateRoleToGroupResponse {
     __obj.asInstanceOf[AssociateRoleToGroupResponse]
   }
   
-  extension [Self <: AssociateRoleToGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateRoleToGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setAssociatedAt(value: string): Self = StObject.set(x, "AssociatedAt", value.asInstanceOf[js.Any])
     

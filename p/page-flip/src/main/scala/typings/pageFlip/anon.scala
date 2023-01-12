@@ -59,7 +59,8 @@ object anon {
       __obj.asInstanceOf[PartialFlipSetting]
     }
     
-    extension [Self <: PartialFlipSetting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFlipSetting] (val x: Self) extends AnyVal {
       
       inline def setAutoSize(value: Boolean): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
       

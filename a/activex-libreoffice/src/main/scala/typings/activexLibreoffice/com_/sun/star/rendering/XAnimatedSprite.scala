@@ -111,7 +111,8 @@ object XAnimatedSprite {
     __obj.asInstanceOf[XAnimatedSprite]
   }
   
-  extension [Self <: XAnimatedSprite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAnimatedSprite] (val x: Self) extends AnyVal {
     
     inline def setResetAnimation(value: () => Unit): Self = StObject.set(x, "resetAnimation", js.Any.fromFunction0(value))
     

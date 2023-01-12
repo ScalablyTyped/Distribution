@@ -62,7 +62,8 @@ object Report {
     __obj.asInstanceOf[Report]
   }
   
-  extension [Self <: Report](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
     
     inline def setExportToSheet(value: Sheet => Unit): Self = StObject.set(x, "exportToSheet", js.Any.fromFunction1(value))
     

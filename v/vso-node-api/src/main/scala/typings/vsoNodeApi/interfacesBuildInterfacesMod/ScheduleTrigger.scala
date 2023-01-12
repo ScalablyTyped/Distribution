@@ -17,7 +17,8 @@ object ScheduleTrigger {
     __obj.asInstanceOf[ScheduleTrigger]
   }
   
-  extension [Self <: ScheduleTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduleTrigger] (val x: Self) extends AnyVal {
     
     inline def setSchedules(value: js.Array[Schedule]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
     

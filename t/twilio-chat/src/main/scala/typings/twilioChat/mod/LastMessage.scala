@@ -26,7 +26,8 @@ object LastMessage {
     __obj.asInstanceOf[LastMessage]
   }
   
-  extension [Self <: LastMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LastMessage] (val x: Self) extends AnyVal {
     
     inline def setDateCreated(value: js.Date): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
     

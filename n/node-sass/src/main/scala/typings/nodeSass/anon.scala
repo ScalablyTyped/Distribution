@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Contents]
     }
     
-    extension [Self <: Contents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contents] (val x: Self) extends AnyVal {
       
       inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[Duration]
     }
     
-    extension [Self <: Duration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -80,7 +82,8 @@ object anon {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }

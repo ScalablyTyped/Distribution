@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[PartialIBaseCellJupyterMe]
     }
     
-    extension [Self <: PartialIBaseCellJupyterMe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIBaseCellJupyterMe] (val x: Self) extends AnyVal {
       
       inline def setSource_hidden(value: Boolean): Self = StObject.set(x, "source_hidden", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[PartialICodeCellJupyterMe]
     }
     
-    extension [Self <: PartialICodeCellJupyterMe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialICodeCellJupyterMe] (val x: Self) extends AnyVal {
       
       inline def setOutputs_hidden(value: Boolean): Self = StObject.set(x, "outputs_hidden", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object anon {
       __obj.asInstanceOf[PartialICodeCellMetadata]
     }
     
-    extension [Self <: PartialICodeCellMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialICodeCellMetadata] (val x: Self) extends AnyVal {
       
       inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
@@ -125,7 +128,8 @@ object anon {
       __obj.asInstanceOf[PartialIRawCellMetadata]
     }
     
-    extension [Self <: PartialIRawCellMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIRawCellMetadata] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

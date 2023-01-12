@@ -15,7 +15,8 @@ object FormatterFactory {
     __obj.asInstanceOf[FormatterFactory[T]]
   }
   
-  extension [Self <: FormatterFactory[?], T /* <: SlickData */](x: Self & FormatterFactory[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatterFactory[?], T /* <: SlickData */] (val x: Self & FormatterFactory[T]) extends AnyVal {
     
     inline def setGetFormatter(value: Column[T] => Formatter[Any]): Self = StObject.set(x, "getFormatter", js.Any.fromFunction1(value))
   }

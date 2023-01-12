@@ -23,7 +23,8 @@ object UpdateDecoderManifestResponse {
     __obj.asInstanceOf[UpdateDecoderManifestResponse]
   }
   
-  extension [Self <: UpdateDecoderManifestResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDecoderManifestResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

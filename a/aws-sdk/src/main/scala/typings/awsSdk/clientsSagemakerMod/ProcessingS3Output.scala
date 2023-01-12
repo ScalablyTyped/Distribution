@@ -28,7 +28,8 @@ object ProcessingS3Output {
     __obj.asInstanceOf[ProcessingS3Output]
   }
   
-  extension [Self <: ProcessingS3Output](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessingS3Output] (val x: Self) extends AnyVal {
     
     inline def setLocalPath(value: ProcessingLocalPath): Self = StObject.set(x, "LocalPath", value.asInstanceOf[js.Any])
     

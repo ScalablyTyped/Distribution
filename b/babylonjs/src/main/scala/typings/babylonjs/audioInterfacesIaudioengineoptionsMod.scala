@@ -28,7 +28,8 @@ object audioInterfacesIaudioengineoptionsMod {
       __obj.asInstanceOf[IAudioEngineOptions]
     }
     
-    extension [Self <: IAudioEngineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAudioEngineOptions] (val x: Self) extends AnyVal {
       
       inline def setAudioContext(value: AudioContext): Self = StObject.set(x, "audioContext", value.asInstanceOf[js.Any])
       

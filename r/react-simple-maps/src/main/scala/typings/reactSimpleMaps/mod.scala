@@ -190,7 +190,8 @@ object mod {
       __obj.asInstanceOf[AnnotationProps]
     }
     
-    extension [Self <: AnnotationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationProps] (val x: Self) extends AnyVal {
       
       inline def setConnectorProps(value: SVGProps[SVGPathElement]): Self = StObject.set(x, "connectorProps", value.asInstanceOf[js.Any])
       
@@ -237,7 +238,8 @@ object mod {
       __obj.asInstanceOf[ComposableMapProps]
     }
     
-    extension [Self <: ComposableMapProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComposableMapProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -274,7 +276,8 @@ object mod {
       __obj.asInstanceOf[GeographiesChildrenArgument]
     }
     
-    extension [Self <: GeographiesChildrenArgument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeographiesChildrenArgument] (val x: Self) extends AnyVal {
       
       inline def setGeographies(value: js.Array[Any]): Self = StObject.set(x, "geographies", value.asInstanceOf[js.Any])
       
@@ -1084,7 +1087,8 @@ object mod {
       __obj.asInstanceOf[GeographiesProps]
     }
     
-    extension [Self <: GeographiesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeographiesProps] (val x: Self) extends AnyVal {
       
       inline def setAccentHeight(value: Double | String): Self = StObject.set(x, "accentHeight", value.asInstanceOf[js.Any])
       
@@ -3464,7 +3468,8 @@ object mod {
       __obj.asInstanceOf[GeographyProps]
     }
     
-    extension [Self <: GeographyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeographyProps] (val x: Self) extends AnyVal {
       
       inline def setAccentHeight(value: Double | String): Self = StObject.set(x, "accentHeight", value.asInstanceOf[js.Any])
       
@@ -5062,7 +5067,8 @@ object mod {
       __obj.asInstanceOf[GraticuleProps]
     }
     
-    extension [Self <: GraticuleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraticuleProps] (val x: Self) extends AnyVal {
       
       inline def setStep(value: Point): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
@@ -5886,7 +5892,8 @@ object mod {
       __obj.asInstanceOf[LineProps]
     }
     
-    extension [Self <: LineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineProps] (val x: Self) extends AnyVal {
       
       inline def setAccentHeight(value: Double | String): Self = StObject.set(x, "accentHeight", value.asInstanceOf[js.Any])
       
@@ -8276,7 +8283,8 @@ object mod {
       __obj.asInstanceOf[MarkerProps]
     }
     
-    extension [Self <: MarkerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerProps] (val x: Self) extends AnyVal {
       
       inline def setAccentHeight(value: Double | String): Self = StObject.set(x, "accentHeight", value.asInstanceOf[js.Any])
       
@@ -9881,7 +9889,8 @@ object mod {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
       
@@ -9914,7 +9923,8 @@ object mod {
       __obj.asInstanceOf[ProjectionConfig]
     }
     
-    extension [Self <: ProjectionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectionConfig] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
@@ -9971,7 +9981,8 @@ object mod {
       __obj.asInstanceOf[SphereProps]
     }
     
-    extension [Self <: SphereProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SphereProps] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -10045,7 +10056,8 @@ object mod {
       __obj.asInstanceOf[ZoomableGroupProps]
     }
     
-    extension [Self <: ZoomableGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomableGroupProps] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       

@@ -184,7 +184,8 @@ object BackendService {
     __obj.asInstanceOf[BackendService]
   }
   
-  extension [Self <: BackendService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendService] (val x: Self) extends AnyVal {
     
     inline def setAffinityCookieTtlSec(value: Double): Self = StObject.set(x, "affinityCookieTtlSec", value.asInstanceOf[js.Any])
     

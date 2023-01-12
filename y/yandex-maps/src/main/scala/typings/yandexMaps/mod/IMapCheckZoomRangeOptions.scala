@@ -15,7 +15,8 @@ object IMapCheckZoomRangeOptions {
     __obj.asInstanceOf[IMapCheckZoomRangeOptions]
   }
   
-  extension [Self <: IMapCheckZoomRangeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMapCheckZoomRangeOptions] (val x: Self) extends AnyVal {
     
     inline def setCheckZoomRange(value: Boolean): Self = StObject.set(x, "checkZoomRange", value.asInstanceOf[js.Any])
     

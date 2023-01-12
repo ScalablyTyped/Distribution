@@ -49,7 +49,8 @@ object Push {
       __obj.asInstanceOf[PushData]
     }
     
-    extension [Self <: PushData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PushData] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: String): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object Push {
       __obj.asInstanceOf[SendOptions]
     }
     
-    extension [Self <: SendOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendOptions] (val x: Self) extends AnyVal {
       
       inline def setError(value: /* error */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       

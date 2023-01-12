@@ -15,7 +15,8 @@ object AlgString {
     __obj.asInstanceOf[AlgString]
   }
   
-  extension [Self <: AlgString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlgString] (val x: Self) extends AnyVal {
     
     inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
   }

@@ -31,7 +31,8 @@ object FileSystemStorage {
     __obj.asInstanceOf[FileSystemStorage]
   }
   
-  extension [Self <: FileSystemStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemStorage] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

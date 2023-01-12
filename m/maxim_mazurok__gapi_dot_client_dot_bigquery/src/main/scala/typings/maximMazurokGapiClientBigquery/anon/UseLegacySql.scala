@@ -16,7 +16,8 @@ object UseLegacySql {
     __obj.asInstanceOf[UseLegacySql]
   }
   
-  extension [Self <: UseLegacySql](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseLegacySql] (val x: Self) extends AnyVal {
     
     inline def setUseLegacySql(value: Boolean): Self = StObject.set(x, "useLegacySql", value.asInstanceOf[js.Any])
     

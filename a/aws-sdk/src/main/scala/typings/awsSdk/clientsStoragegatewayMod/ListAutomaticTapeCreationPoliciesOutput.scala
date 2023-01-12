@@ -18,7 +18,8 @@ object ListAutomaticTapeCreationPoliciesOutput {
     __obj.asInstanceOf[ListAutomaticTapeCreationPoliciesOutput]
   }
   
-  extension [Self <: ListAutomaticTapeCreationPoliciesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAutomaticTapeCreationPoliciesOutput] (val x: Self) extends AnyVal {
     
     inline def setAutomaticTapeCreationPolicyInfos(value: AutomaticTapeCreationPolicyInfos): Self = StObject.set(x, "AutomaticTapeCreationPolicyInfos", value.asInstanceOf[js.Any])
     

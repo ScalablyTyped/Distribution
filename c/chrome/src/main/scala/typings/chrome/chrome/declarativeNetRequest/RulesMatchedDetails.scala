@@ -16,7 +16,8 @@ object RulesMatchedDetails {
     __obj.asInstanceOf[RulesMatchedDetails]
   }
   
-  extension [Self <: RulesMatchedDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RulesMatchedDetails] (val x: Self) extends AnyVal {
     
     inline def setRulesMatchedInfo(value: js.Array[MatchedRuleInfo]): Self = StObject.set(x, "rulesMatchedInfo", value.asInstanceOf[js.Any])
     

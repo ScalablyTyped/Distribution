@@ -17,7 +17,8 @@ object ParametersQueryRefSort {
     __obj.asInstanceOf[ParametersQueryRefSort]
   }
   
-  extension [Self <: ParametersQueryRefSort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersQueryRefSort] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: QueryRefSort): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AutoScalingGroup {
     __obj.asInstanceOf[AutoScalingGroup]
   }
   
-  extension [Self <: AutoScalingGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoScalingGroup] (val x: Self) extends AnyVal {
     
     inline def setHook(value: AutoScalingGroupHook): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
     

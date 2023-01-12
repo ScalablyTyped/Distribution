@@ -17,7 +17,8 @@ object IDescriptorProtoExtensionRange {
     __obj.asInstanceOf[IDescriptorProtoExtensionRange]
   }
   
-  extension [Self <: IDescriptorProtoExtensionRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDescriptorProtoExtensionRange] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

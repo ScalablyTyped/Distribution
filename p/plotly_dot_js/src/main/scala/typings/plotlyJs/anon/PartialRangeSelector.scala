@@ -46,7 +46,8 @@ object PartialRangeSelector {
     __obj.asInstanceOf[PartialRangeSelector]
   }
   
-  extension [Self <: PartialRangeSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRangeSelector] (val x: Self) extends AnyVal {
     
     inline def setActivecolor(value: String): Self = StObject.set(x, "activecolor", value.asInstanceOf[js.Any])
     

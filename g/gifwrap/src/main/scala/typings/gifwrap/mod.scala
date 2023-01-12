@@ -258,7 +258,8 @@ object mod {
       __obj.asInstanceOf[Dither]
     }
     
-    extension [Self <: Dither](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dither] (val x: Self) extends AnyVal {
       
       inline def setCalculateErrorLikeGIMP(value: Boolean): Self = StObject.set(x, "calculateErrorLikeGIMP", value.asInstanceOf[js.Any])
       
@@ -320,7 +321,8 @@ object mod {
       __obj.asInstanceOf[GifCodecOptions]
     }
     
-    extension [Self <: GifCodecOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GifCodecOptions] (val x: Self) extends AnyVal {
       
       inline def setTransparentRGB(value: Double): Self = StObject.set(x, "transparentRGB", value.asInstanceOf[js.Any])
       
@@ -339,7 +341,8 @@ object mod {
       __obj.asInstanceOf[GifDecoder]
     }
     
-    extension [Self <: GifDecoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GifDecoder] (val x: Self) extends AnyVal {
       
       inline def setDecodeGif(value: Buffer => js.Promise[Gif]): Self = StObject.set(x, "decodeGif", js.Any.fromFunction1(value))
     }
@@ -356,7 +359,8 @@ object mod {
       __obj.asInstanceOf[GifEncoder]
     }
     
-    extension [Self <: GifEncoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GifEncoder] (val x: Self) extends AnyVal {
       
       inline def setEncodeGif(value: (js.Array[GifFrame], GifSpec) => js.Promise[Gif]): Self = StObject.set(x, "encodeGif", js.Any.fromFunction2(value))
     }
@@ -381,7 +385,8 @@ object mod {
       __obj.asInstanceOf[GifFrameOptions]
     }
     
-    extension [Self <: GifFrameOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GifFrameOptions] (val x: Self) extends AnyVal {
       
       inline def setDelayCentisecs(value: Double): Self = StObject.set(x, "delayCentisecs", value.asInstanceOf[js.Any])
       
@@ -420,7 +425,8 @@ object mod {
       __obj.asInstanceOf[GifPalette]
     }
     
-    extension [Self <: GifPalette](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GifPalette] (val x: Self) extends AnyVal {
       
       inline def setColors(value: js.Array[Double]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -445,7 +451,8 @@ object mod {
       __obj.asInstanceOf[GifSpec]
     }
     
-    extension [Self <: GifSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GifSpec] (val x: Self) extends AnyVal {
       
       inline def setColorScope(value: `0` | `1` | `2`): Self = StObject.set(x, "colorScope", value.asInstanceOf[js.Any])
       
@@ -472,7 +479,8 @@ object mod {
       __obj.asInstanceOf[JimpBitmap]
     }
     
-    extension [Self <: JimpBitmap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JimpBitmap] (val x: Self) extends AnyVal {
       
       inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "convert-layout"
-version := "0.5-dt-20211202Z-366728"
+version := "0.5-dt-20211202Z-fd8b1f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

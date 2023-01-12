@@ -25,7 +25,8 @@ object GcRule {
     __obj.asInstanceOf[GcRule]
   }
   
-  extension [Self <: GcRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GcRule] (val x: Self) extends AnyVal {
     
     inline def setIntersection(value: Intersection): Self = StObject.set(x, "intersection", value.asInstanceOf[js.Any])
     

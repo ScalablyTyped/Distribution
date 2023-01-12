@@ -15,7 +15,8 @@ object EnumValuesAlwaysReturnBasicInformation {
     __obj.asInstanceOf[EnumValuesAlwaysReturnBasicInformation]
   }
   
-  extension [Self <: EnumValuesAlwaysReturnBasicInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesAlwaysReturnBasicInformation] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: AlwaysReturnBasicInformation): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

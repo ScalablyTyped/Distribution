@@ -25,7 +25,8 @@ object ClinicalUseIssueInteractionInteractant {
     __obj.asInstanceOf[ClinicalUseIssueInteractionInteractant]
   }
   
-  extension [Self <: ClinicalUseIssueInteractionInteractant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClinicalUseIssueInteractionInteractant] (val x: Self) extends AnyVal {
     
     inline def setItemCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "itemCodeableConcept", value.asInstanceOf[js.Any])
     

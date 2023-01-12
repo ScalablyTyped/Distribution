@@ -37,7 +37,8 @@ object utilsMod {
       __obj.asInstanceOf[CopyLibFilesOptions]
     }
     
-    extension [Self <: CopyLibFilesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyLibFilesOptions] (val x: Self) extends AnyVal {
       
       inline def setDebugDir(value: Boolean): Self = StObject.set(x, "debugDir", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object utilsMod {
       __obj.asInstanceOf[LibDirOptions]
     }
     
-    extension [Self <: LibDirOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LibDirOptions] (val x: Self) extends AnyVal {
       
       inline def setDebugDir(value: Boolean): Self = StObject.set(x, "debugDir", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object utilsMod {
       __obj.asInstanceOf[PartytownRollupOptions]
     }
     
-    extension [Self <: PartytownRollupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartytownRollupOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       

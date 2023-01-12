@@ -21,7 +21,8 @@ object AudioDecoderConfig {
     __obj.asInstanceOf[AudioDecoderConfig]
   }
   
-  extension [Self <: AudioDecoderConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioDecoderConfig] (val x: Self) extends AnyVal {
     
     inline def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     

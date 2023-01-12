@@ -19,7 +19,8 @@ object GoogleCloudAssetV1p7beta1RelatedAssets {
     __obj.asInstanceOf[GoogleCloudAssetV1p7beta1RelatedAssets]
   }
   
-  extension [Self <: GoogleCloudAssetV1p7beta1RelatedAssets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudAssetV1p7beta1RelatedAssets] (val x: Self) extends AnyVal {
     
     inline def setAssets(value: js.Array[GoogleCloudAssetV1p7beta1RelatedAsset]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     

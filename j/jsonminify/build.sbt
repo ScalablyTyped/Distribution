@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsonminify"
-version := "0.4.1-dt-20220818Z-606e2d"
+version := "0.4.1-dt-20220818Z-3a89ca"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

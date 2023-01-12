@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[FocusButton]
     }
     
-    extension [Self <: FocusButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusButton] (val x: Self) extends AnyVal {
       
       inline def setFocusButton(value: Boolean): Self = StObject.set(x, "focusButton", value.asInstanceOf[js.Any])
     }
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[FocusMenu]
     }
     
-    extension [Self <: FocusMenu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusMenu] (val x: Self) extends AnyVal {
       
       inline def setFocusMenu(value: Boolean): Self = StObject.set(x, "focusMenu", value.asInstanceOf[js.Any])
     }
@@ -59,7 +61,8 @@ object anon {
       __obj.asInstanceOf[IsOpen]
     }
     
-    extension [Self <: IsOpen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsOpen] (val x: Self) extends AnyVal {
       
       inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     }

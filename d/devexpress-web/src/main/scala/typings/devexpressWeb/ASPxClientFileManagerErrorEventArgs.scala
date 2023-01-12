@@ -38,7 +38,8 @@ object ASPxClientFileManagerErrorEventArgs {
     __obj.asInstanceOf[ASPxClientFileManagerErrorEventArgs]
   }
   
-  extension [Self <: ASPxClientFileManagerErrorEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFileManagerErrorEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
     

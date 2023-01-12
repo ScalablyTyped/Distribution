@@ -15,7 +15,8 @@ object ParseJSON {
     __obj.asInstanceOf[ParseJSON]
   }
   
-  extension [Self <: ParseJSON](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseJSON] (val x: Self) extends AnyVal {
     
     inline def setParseJSON(value: String => js.Object): Self = StObject.set(x, "parseJSON", js.Any.fromFunction1(value))
   }

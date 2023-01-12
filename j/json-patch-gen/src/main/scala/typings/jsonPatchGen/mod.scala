@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[JsonPatch]
     }
     
-    extension [Self <: JsonPatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonPatch] (val x: Self) extends AnyVal {
       
       inline def setOp(value: PatchOperation): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       

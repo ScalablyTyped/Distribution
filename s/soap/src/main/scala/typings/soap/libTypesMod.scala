@@ -103,7 +103,8 @@ object libTypesMod {
       __obj.asInstanceOf[IMTOMAttachments]
     }
     
-    extension [Self <: IMTOMAttachments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMTOMAttachments] (val x: Self) extends AnyVal {
       
       inline def setParts(value: js.Array[Body]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object libTypesMod {
       __obj.asInstanceOf[IOneWayOptions]
     }
     
-    extension [Self <: IOneWayOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOneWayOptions] (val x: Self) extends AnyVal {
       
       inline def setEmptyBody(value: Boolean): Self = StObject.set(x, "emptyBody", value.asInstanceOf[js.Any])
       
@@ -174,7 +176,8 @@ object libTypesMod {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomDeserializer(value: Any): Self = StObject.set(x, "customDeserializer", value.asInstanceOf[js.Any])
       
@@ -235,7 +238,8 @@ object libTypesMod {
       __obj.asInstanceOf[ISecurity]
     }
     
-    extension [Self <: ISecurity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISecurity] (val x: Self) extends AnyVal {
       
       inline def setAddHeaders(value: /* headers */ IHeaders => Unit): Self = StObject.set(x, "addHeaders", js.Any.fromFunction1(value))
       
@@ -284,7 +288,8 @@ object libTypesMod {
       __obj.asInstanceOf[IServerOptions]
     }
     
-    extension [Self <: IServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IServerOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: (/* err */ Any, /* res */ Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
@@ -359,7 +364,8 @@ object libTypesMod {
       __obj.asInstanceOf[ISoapFault11]
     }
     
-    extension [Self <: ISoapFault11](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISoapFault11] (val x: Self) extends AnyVal {
       
       inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
@@ -392,7 +398,8 @@ object libTypesMod {
       __obj.asInstanceOf[ISoapFault12]
     }
     
-    extension [Self <: ISoapFault12](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISoapFault12] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Subcode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
       
@@ -415,7 +422,8 @@ object libTypesMod {
       __obj.asInstanceOf[ISoapFaultError]
     }
     
-    extension [Self <: ISoapFaultError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISoapFaultError] (val x: Self) extends AnyVal {
       
       inline def setFault(value: ISoapFault): Self = StObject.set(x, "Fault", value.asInstanceOf[js.Any])
     }
@@ -484,7 +492,8 @@ object libTypesMod {
       __obj.asInstanceOf[IWsdlBaseOptions]
     }
     
-    extension [Self <: IWsdlBaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWsdlBaseOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributesKey(value: String): Self = StObject.set(x, "attributesKey", value.asInstanceOf[js.Any])
       
@@ -571,7 +580,8 @@ object libTypesMod {
       __obj.asInstanceOf[IXmlAttribute]
     }
     
-    extension [Self <: IXmlAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IXmlAttribute] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

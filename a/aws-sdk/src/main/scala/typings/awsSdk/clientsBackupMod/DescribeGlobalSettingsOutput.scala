@@ -23,7 +23,8 @@ object DescribeGlobalSettingsOutput {
     __obj.asInstanceOf[DescribeGlobalSettingsOutput]
   }
   
-  extension [Self <: DescribeGlobalSettingsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeGlobalSettingsOutput] (val x: Self) extends AnyVal {
     
     inline def setGlobalSettings(value: GlobalSettings): Self = StObject.set(x, "GlobalSettings", value.asInstanceOf[js.Any])
     

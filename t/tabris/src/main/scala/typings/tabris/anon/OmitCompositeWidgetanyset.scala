@@ -719,7 +719,8 @@ object OmitCompositeWidgetanyset {
     __obj.asInstanceOf[OmitCompositeWidgetanyset[ChildType]]
   }
   
-  extension [Self <: OmitCompositeWidgetanyset[?], ChildType /* <: AnyWidget */](x: Self & OmitCompositeWidgetanyset[ChildType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitCompositeWidgetanyset[?], ChildType /* <: AnyWidget */] (val x: Self & OmitCompositeWidgetanyset[ChildType]) extends AnyVal {
     
     inline def set$children(value: js.Array[Widget[Any]]): Self = StObject.set(x, "$children", value.asInstanceOf[js.Any])
     

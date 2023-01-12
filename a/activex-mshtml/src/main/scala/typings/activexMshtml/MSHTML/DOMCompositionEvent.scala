@@ -92,7 +92,8 @@ object DOMCompositionEvent {
     __obj.asInstanceOf[DOMCompositionEvent]
   }
   
-  extension [Self <: DOMCompositionEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMCompositionEvent] (val x: Self) extends AnyVal {
     
     inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     

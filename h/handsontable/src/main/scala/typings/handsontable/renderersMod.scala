@@ -477,7 +477,8 @@ object renderersMod {
       __obj.asInstanceOf[Renderers]
     }
     
-    extension [Self <: Renderers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Renderers] (val x: Self) extends AnyVal {
       
       inline def setAutocomplete(
         value: (/* instance */ default, /* TD */ HTMLTableCellElement, /* row */ Double, /* col */ Double, /* prop */ String | Double, /* value */ Any, /* cellProperties */ CellProperties) => Unit

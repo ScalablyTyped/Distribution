@@ -74,7 +74,8 @@ object SubstanceDefinitionName {
     __obj.asInstanceOf[SubstanceDefinitionName]
   }
   
-  extension [Self <: SubstanceDefinitionName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceDefinitionName] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: js.Array[CodeableConcept]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

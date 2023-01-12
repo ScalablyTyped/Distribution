@@ -23,7 +23,8 @@ object DescribeInstanceRefreshesAnswer {
     __obj.asInstanceOf[DescribeInstanceRefreshesAnswer]
   }
   
-  extension [Self <: DescribeInstanceRefreshesAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInstanceRefreshesAnswer] (val x: Self) extends AnyVal {
     
     inline def setInstanceRefreshes(value: InstanceRefreshes): Self = StObject.set(x, "InstanceRefreshes", value.asInstanceOf[js.Any])
     

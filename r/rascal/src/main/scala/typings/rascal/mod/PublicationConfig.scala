@@ -32,7 +32,8 @@ object PublicationConfig {
     __obj.asInstanceOf[PublicationConfig]
   }
   
-  extension [Self <: PublicationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicationConfig] (val x: Self) extends AnyVal {
     
     inline def setAutoCreated(value: Boolean): Self = StObject.set(x, "autoCreated", value.asInstanceOf[js.Any])
     

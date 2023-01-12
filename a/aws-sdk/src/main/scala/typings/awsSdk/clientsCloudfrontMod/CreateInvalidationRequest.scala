@@ -23,7 +23,8 @@ object CreateInvalidationRequest {
     __obj.asInstanceOf[CreateInvalidationRequest]
   }
   
-  extension [Self <: CreateInvalidationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateInvalidationRequest] (val x: Self) extends AnyVal {
     
     inline def setDistributionId(value: String): Self = StObject.set(x, "DistributionId", value.asInstanceOf[js.Any])
     

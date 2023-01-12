@@ -21,7 +21,8 @@ object SnapshotVerifyRepositoryParams {
     __obj.asInstanceOf[SnapshotVerifyRepositoryParams]
   }
   
-  extension [Self <: SnapshotVerifyRepositoryParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotVerifyRepositoryParams] (val x: Self) extends AnyVal {
     
     inline def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     

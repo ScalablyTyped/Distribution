@@ -151,7 +151,8 @@ object KmlLink {
     __obj.asInstanceOf[KmlLink]
   }
   
-  extension [Self <: KmlLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlLink] (val x: Self) extends AnyVal {
     
     inline def setGetHref(value: () => String): Self = StObject.set(x, "getHref", js.Any.fromFunction0(value))
     

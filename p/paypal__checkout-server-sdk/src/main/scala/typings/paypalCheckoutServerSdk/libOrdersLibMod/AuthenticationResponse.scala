@@ -17,7 +17,8 @@ object AuthenticationResponse {
     __obj.asInstanceOf[AuthenticationResponse]
   }
   
-  extension [Self <: AuthenticationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticationResponse] (val x: Self) extends AnyVal {
     
     inline def setLiability_shift(value: LiabilityShift): Self = StObject.set(x, "liability_shift", value.asInstanceOf[js.Any])
     

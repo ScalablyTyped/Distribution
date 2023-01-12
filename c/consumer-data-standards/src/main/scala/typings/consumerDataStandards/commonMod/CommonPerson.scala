@@ -62,7 +62,8 @@ object CommonPerson {
     __obj.asInstanceOf[CommonPerson]
   }
   
-  extension [Self <: CommonPerson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonPerson] (val x: Self) extends AnyVal {
     
     inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
     

@@ -151,7 +151,8 @@ object StackHeaderOptions {
     __obj.asInstanceOf[StackHeaderOptions]
   }
   
-  extension [Self <: StackHeaderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackHeaderOptions] (val x: Self) extends AnyVal {
     
     inline def setHeaderBackAccessibilityLabel(value: String): Self = StObject.set(x, "headerBackAccessibilityLabel", value.asInstanceOf[js.Any])
     

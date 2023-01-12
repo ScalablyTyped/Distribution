@@ -35,7 +35,8 @@ object CoverageCostToBeneficiary {
     __obj.asInstanceOf[CoverageCostToBeneficiary]
   }
   
-  extension [Self <: CoverageCostToBeneficiary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoverageCostToBeneficiary] (val x: Self) extends AnyVal {
     
     inline def setException(value: js.Array[CoverageCostToBeneficiaryException]): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
     

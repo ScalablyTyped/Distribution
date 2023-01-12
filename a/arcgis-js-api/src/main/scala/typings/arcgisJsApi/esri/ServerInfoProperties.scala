@@ -69,7 +69,8 @@ object ServerInfoProperties {
     __obj.asInstanceOf[ServerInfoProperties]
   }
   
-  extension [Self <: ServerInfoProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerInfoProperties] (val x: Self) extends AnyVal {
     
     inline def setAdminTokenServiceUrl(value: String): Self = StObject.set(x, "adminTokenServiceUrl", value.asInstanceOf[js.Any])
     

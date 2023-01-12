@@ -135,7 +135,8 @@ object mod {
       __obj.asInstanceOf[CustomSource]
     }
     
-    extension [Self <: CustomSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomSource] (val x: Self) extends AnyVal {
       
       inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
@@ -164,7 +165,8 @@ object mod {
       __obj.asInstanceOf[LibratoConfig]
     }
     
-    extension [Self <: LibratoConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LibratoConfig] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -217,7 +219,8 @@ object mod {
       __obj.asInstanceOf[LibratoRequestOptions]
     }
     
-    extension [Self <: LibratoRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LibratoRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthorization(value: String): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
       
@@ -264,7 +267,8 @@ object mod {
       __obj.asInstanceOf[LibratoSimulate]
     }
     
-    extension [Self <: LibratoSimulate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LibratoSimulate] (val x: Self) extends AnyVal {
       
       inline def setSimulate(value: `true`): Self = StObject.set(x, "simulate", value.asInstanceOf[js.Any])
     }

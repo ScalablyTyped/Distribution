@@ -31,7 +31,8 @@ object distConfigMod {
       __obj.asInstanceOf[GlobalConfigOptions]
     }
     
-    extension [Self <: GlobalConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setGlobal(value: RequiredOmitGlobalMountOp): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       

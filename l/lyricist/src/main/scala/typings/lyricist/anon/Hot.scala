@@ -19,7 +19,8 @@ object Hot {
     __obj.asInstanceOf[Hot]
   }
   
-  extension [Self <: Hot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hot] (val x: Self) extends AnyVal {
     
     inline def setHot(value: Boolean): Self = StObject.set(x, "hot", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ListDevicesInput {
     __obj.asInstanceOf[ListDevicesInput]
   }
   
-  extension [Self <: ListDevicesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDevicesInput] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Easing {
     __obj.asInstanceOf[Easing]
   }
   
-  extension [Self <: Easing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Easing] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

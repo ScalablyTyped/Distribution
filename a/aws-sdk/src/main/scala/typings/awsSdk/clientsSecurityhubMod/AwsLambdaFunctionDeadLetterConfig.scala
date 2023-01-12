@@ -18,7 +18,8 @@ object AwsLambdaFunctionDeadLetterConfig {
     __obj.asInstanceOf[AwsLambdaFunctionDeadLetterConfig]
   }
   
-  extension [Self <: AwsLambdaFunctionDeadLetterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsLambdaFunctionDeadLetterConfig] (val x: Self) extends AnyVal {
     
     inline def setTargetArn(value: NonEmptyString): Self = StObject.set(x, "TargetArn", value.asInstanceOf[js.Any])
     

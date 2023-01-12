@@ -21,7 +21,8 @@ object PartialStyleRulesImageLisRoot {
     __obj.asInstanceOf[PartialStyleRulesImageLisRoot]
   }
   
-  extension [Self <: PartialStyleRulesImageLisRoot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesImageLisRoot] (val x: Self) extends AnyVal {
     
     inline def setRoot(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

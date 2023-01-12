@@ -18,7 +18,8 @@ object AppInstanceRetentionSettings {
     __obj.asInstanceOf[AppInstanceRetentionSettings]
   }
   
-  extension [Self <: AppInstanceRetentionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppInstanceRetentionSettings] (val x: Self) extends AnyVal {
     
     inline def setChannelRetentionSettings(value: ChannelRetentionSettings): Self = StObject.set(x, "ChannelRetentionSettings", value.asInstanceOf[js.Any])
     

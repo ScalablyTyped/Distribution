@@ -17,7 +17,8 @@ object MessageButtonDescriptor {
     __obj.asInstanceOf[MessageButtonDescriptor]
   }
   
-  extension [Self <: MessageButtonDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageButtonDescriptor] (val x: Self) extends AnyVal {
     
     inline def setOnClick(value: Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     

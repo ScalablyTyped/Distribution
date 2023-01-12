@@ -37,7 +37,8 @@ object libErrorFrameworkErrorMod {
       __obj.asInstanceOf[FrameworkError]
     }
     
-    extension [Self <: FrameworkError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameworkError] (val x: Self) extends AnyVal {
       
       inline def set_name(value: Any): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     }

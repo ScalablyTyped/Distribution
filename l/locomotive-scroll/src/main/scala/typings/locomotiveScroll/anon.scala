@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[DeviceOptionsbreakpointnu]
     }
     
-    extension [Self <: DeviceOptionsbreakpointnu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceOptionsbreakpointnu] (val x: Self) extends AnyVal {
       
       inline def setBreakpoint(value: Double): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object anon {
       __obj.asInstanceOf[El]
     }
     
-    extension [Self <: El](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: El] (val x: Self) extends AnyVal {
       
       inline def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       

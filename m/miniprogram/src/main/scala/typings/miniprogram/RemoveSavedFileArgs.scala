@@ -17,7 +17,8 @@ object RemoveSavedFileArgs {
     __obj.asInstanceOf[RemoveSavedFileArgs]
   }
   
-  extension [Self <: RemoveSavedFileArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveSavedFileArgs] (val x: Self) extends AnyVal {
     
     inline def setApFilePath(value: String): Self = StObject.set(x, "apFilePath", value.asInstanceOf[js.Any])
   }

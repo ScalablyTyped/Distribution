@@ -19,7 +19,8 @@ object Formatted {
     __obj.asInstanceOf[Formatted]
   }
   
-  extension [Self <: Formatted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Formatted] (val x: Self) extends AnyVal {
     
     inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
     

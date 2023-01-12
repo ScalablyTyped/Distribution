@@ -18,7 +18,8 @@ object UserInfoList {
     __obj.asInstanceOf[UserInfoList]
   }
   
-  extension [Self <: UserInfoList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserInfoList] (val x: Self) extends AnyVal {
     
     inline def setUsers(value: js.Array[UserInfo]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     

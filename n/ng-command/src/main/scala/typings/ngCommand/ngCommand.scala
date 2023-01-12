@@ -44,7 +44,8 @@ object ngCommand {
       __obj.asInstanceOf[ICommand]
     }
     
-    extension [Self <: ICommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommand] (val x: Self) extends AnyVal {
       
       inline def setCanExecute(value: Boolean): Self = StObject.set(x, "canExecute", value.asInstanceOf[js.Any])
       

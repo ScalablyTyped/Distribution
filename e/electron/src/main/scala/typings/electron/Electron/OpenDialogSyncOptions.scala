@@ -58,7 +58,8 @@ object OpenDialogSyncOptions {
     __obj.asInstanceOf[OpenDialogSyncOptions]
   }
   
-  extension [Self <: OpenDialogSyncOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenDialogSyncOptions] (val x: Self) extends AnyVal {
     
     inline def setButtonLabel(value: String): Self = StObject.set(x, "buttonLabel", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object MlGetMemoryStatsResponse {
     __obj.asInstanceOf[MlGetMemoryStatsResponse]
   }
   
-  extension [Self <: MlGetMemoryStatsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetMemoryStatsResponse] (val x: Self) extends AnyVal {
     
     inline def setCluster_name(value: Name): Self = StObject.set(x, "cluster_name", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object mod {
       __obj.asInstanceOf[KadDHTComponents]
     }
     
-    extension [Self <: KadDHTComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KadDHTComponents] (val x: Self) extends AnyVal {
       
       inline def setAddressManager(value: AddressManager): Self = StObject.set(x, "addressManager", value.asInstanceOf[js.Any])
       
@@ -135,7 +136,8 @@ object mod {
       __obj.asInstanceOf[KadDHTInit]
     }
     
-    extension [Self <: KadDHTInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KadDHTInit] (val x: Self) extends AnyVal {
       
       inline def setClientMode(value: Boolean): Self = StObject.set(x, "clientMode", value.asInstanceOf[js.Any])
       

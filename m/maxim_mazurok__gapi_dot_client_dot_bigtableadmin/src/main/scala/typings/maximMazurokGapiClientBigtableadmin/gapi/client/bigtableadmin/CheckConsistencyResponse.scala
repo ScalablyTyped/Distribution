@@ -16,7 +16,8 @@ object CheckConsistencyResponse {
     __obj.asInstanceOf[CheckConsistencyResponse]
   }
   
-  extension [Self <: CheckConsistencyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckConsistencyResponse] (val x: Self) extends AnyVal {
     
     inline def setConsistent(value: Boolean): Self = StObject.set(x, "consistent", value.asInstanceOf[js.Any])
     

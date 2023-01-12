@@ -68,7 +68,8 @@ object typesBroadcastChannelMod {
       __obj.asInstanceOf[BroadcastChannelEventMap]
     }
     
-    extension [Self <: BroadcastChannelEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BroadcastChannelEventMap] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: MessageEvent[Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object typesBroadcastChannelMod {
       __obj.asInstanceOf[BroadcastChannelOptions]
     }
     
-    extension [Self <: BroadcastChannelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BroadcastChannelOptions] (val x: Self) extends AnyVal {
       
       inline def setIdb(value: FallbackInterval): Self = StObject.set(x, "idb", value.asInstanceOf[js.Any])
       
@@ -162,7 +164,8 @@ object typesBroadcastChannelMod {
       __obj.asInstanceOf[BroadcastMethod[State]]
     }
     
-    extension [Self <: BroadcastMethod[?], State](x: Self & BroadcastMethod[State]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BroadcastMethod[?], State] (val x: Self & BroadcastMethod[State]) extends AnyVal {
       
       inline def setAverageResponseTime(value: () => Double): Self = StObject.set(x, "averageResponseTime", js.Any.fromFunction0(value))
       

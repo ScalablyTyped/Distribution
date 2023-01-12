@@ -37,7 +37,8 @@ object marker {
       __obj.asInstanceOf[AdvancedMarkerView]
     }
     
-    extension [Self <: AdvancedMarkerView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdvancedMarkerView] (val x: Self) extends AnyVal {
       
       inline def setAddListener(value: (String, js.Function) => MapsEventListener): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
@@ -139,7 +140,8 @@ object marker {
       __obj.asInstanceOf[AdvancedMarkerViewOptions]
     }
     
-    extension [Self <: AdvancedMarkerViewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdvancedMarkerViewOptions] (val x: Self) extends AnyVal {
       
       inline def setCollisionBehavior(value: CollisionBehavior): Self = StObject.set(x, "collisionBehavior", value.asInstanceOf[js.Any])
       
@@ -216,7 +218,8 @@ object marker {
       __obj.asInstanceOf[PinView]
     }
     
-    extension [Self <: PinView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinView] (val x: Self) extends AnyVal {
       
       inline def setAddListener(value: (String, js.Function) => MapsEventListener): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
     }
@@ -272,7 +275,8 @@ object marker {
       __obj.asInstanceOf[PinViewOptions]
     }
     
-    extension [Self <: PinViewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinViewOptions] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       

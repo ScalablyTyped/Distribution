@@ -33,7 +33,8 @@ object ApkManifest {
     __obj.asInstanceOf[ApkManifest]
   }
   
-  extension [Self <: ApkManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApkManifest] (val x: Self) extends AnyVal {
     
     inline def setApplicationLabel(value: String): Self = StObject.set(x, "applicationLabel", value.asInstanceOf[js.Any])
     

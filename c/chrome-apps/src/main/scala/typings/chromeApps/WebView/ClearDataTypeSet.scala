@@ -47,7 +47,8 @@ object ClearDataTypeSet {
     __obj.asInstanceOf[ClearDataTypeSet]
   }
   
-  extension [Self <: ClearDataTypeSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearDataTypeSet] (val x: Self) extends AnyVal {
     
     inline def setAppcache(value: Boolean): Self = StObject.set(x, "appcache", value.asInstanceOf[js.Any])
     

@@ -82,7 +82,8 @@ object mod {
       __obj.asInstanceOf[ProtooNotification]
     }
     
-    extension [Self <: ProtooNotification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtooNotification] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object mod {
       __obj.asInstanceOf[ProtooRequest]
     }
     
-    extension [Self <: ProtooRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtooRequest] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

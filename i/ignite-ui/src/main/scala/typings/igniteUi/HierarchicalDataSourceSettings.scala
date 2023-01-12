@@ -70,7 +70,8 @@ object HierarchicalDataSourceSettings {
     __obj.asInstanceOf[HierarchicalDataSourceSettings]
   }
   
-  extension [Self <: HierarchicalDataSourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HierarchicalDataSourceSettings] (val x: Self) extends AnyVal {
     
     inline def setAutogenerate(value: Boolean): Self = StObject.set(x, "autogenerate", value.asInstanceOf[js.Any])
     

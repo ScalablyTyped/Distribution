@@ -68,7 +68,8 @@ object DescribeBatchPredictionsInput {
     __obj.asInstanceOf[DescribeBatchPredictionsInput]
   }
   
-  extension [Self <: DescribeBatchPredictionsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBatchPredictionsInput] (val x: Self) extends AnyVal {
     
     inline def setEQ(value: ComparatorValue): Self = StObject.set(x, "EQ", value.asInstanceOf[js.Any])
     

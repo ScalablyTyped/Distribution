@@ -15,7 +15,8 @@ object PressureObserverOptions {
     __obj.asInstanceOf[PressureObserverOptions]
   }
   
-  extension [Self <: PressureObserverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PressureObserverOptions] (val x: Self) extends AnyVal {
     
     inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SimpleImageOptions {
     __obj.asInstanceOf[SimpleImageOptions]
   }
   
-  extension [Self <: SimpleImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleImageOptions] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

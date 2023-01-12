@@ -96,7 +96,8 @@ object libDateDataTypesMod {
         __obj.asInstanceOf[CellData]
       }
       
-      extension [Self <: CellData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CellData] (val x: Self) extends AnyVal {
         
         inline def setDayOfMonth(value: Double): Self = StObject.set(x, "dayOfMonth", value.asInstanceOf[js.Any])
         
@@ -132,7 +133,8 @@ object libDateDataTypesMod {
         __obj.asInstanceOf[ExtraData]
       }
       
-      extension [Self <: ExtraData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExtraData] (val x: Self) extends AnyVal {
         
         inline def setCellCls(value: Any): Self = StObject.set(x, "cellCls", value.asInstanceOf[js.Any])
         
@@ -237,7 +239,8 @@ object libDateDataTypesMod {
         __obj.asInstanceOf[Locale]
       }
       
-      extension [Self <: Locale](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
         
         inline def setAm(value: String): Self = StObject.set(x, "am", value.asInstanceOf[js.Any])
         
@@ -320,7 +323,8 @@ object libDateDataTypesMod {
         __obj.asInstanceOf[MonthData]
       }
       
-      extension [Self <: MonthData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MonthData] (val x: Self) extends AnyVal {
         
         inline def setComponent(value: ReactNode): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
         

@@ -21,7 +21,8 @@ object RequestLogger_ {
     __obj.asInstanceOf[RequestLogger_]
   }
   
-  extension [Self <: RequestLogger_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestLogger_] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

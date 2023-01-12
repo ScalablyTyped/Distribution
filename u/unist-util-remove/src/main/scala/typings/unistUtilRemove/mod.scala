@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[RemoveOptions]
     }
     
-    extension [Self <: RemoveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveOptions] (val x: Self) extends AnyVal {
       
       inline def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
       

@@ -51,7 +51,8 @@ object typesDeleteVaultAccessPolicyInputMod {
       __obj.asInstanceOf[DeleteVaultAccessPolicyInput]
     }
     
-    extension [Self <: DeleteVaultAccessPolicyInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteVaultAccessPolicyInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

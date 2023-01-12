@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[SeqStreamOptions]
     }
     
-    extension [Self <: SeqStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeqStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       

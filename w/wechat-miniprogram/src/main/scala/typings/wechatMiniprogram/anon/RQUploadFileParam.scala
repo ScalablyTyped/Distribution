@@ -24,7 +24,8 @@ object RQUploadFileParam {
     __obj.asInstanceOf[RQUploadFileParam]
   }
   
-  extension [Self <: RQUploadFileParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RQUploadFileParam] (val x: Self) extends AnyVal {
     
     inline def setCloudPath(value: String): Self = StObject.set(x, "cloudPath", value.asInstanceOf[js.Any])
     

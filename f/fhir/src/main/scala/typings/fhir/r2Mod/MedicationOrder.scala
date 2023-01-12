@@ -119,7 +119,8 @@ object MedicationOrder {
     __obj.asInstanceOf[MedicationOrder]
   }
   
-  extension [Self <: MedicationOrder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationOrder] (val x: Self) extends AnyVal {
     
     inline def setDateEnded(value: String): Self = StObject.set(x, "dateEnded", value.asInstanceOf[js.Any])
     

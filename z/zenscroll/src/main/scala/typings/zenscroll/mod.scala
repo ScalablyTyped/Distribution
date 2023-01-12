@@ -27,7 +27,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[setupOption]
       }
       
-      extension [Self <: setupOption](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: setupOption] (val x: Self) extends AnyVal {
         
         inline def setDefaultDuration(value: Double): Self = StObject.set(x, "defaultDuration", value.asInstanceOf[js.Any])
         
@@ -100,7 +101,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setNoZensmooth(value: Boolean): Self = StObject.set(x, "noZensmooth", value.asInstanceOf[js.Any])
       }

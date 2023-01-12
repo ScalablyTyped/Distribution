@@ -170,7 +170,8 @@ object AnimatePropsImageProps {
     __obj.asInstanceOf[AnimatePropsImageProps]
   }
   
-  extension [Self <: AnimatePropsImageProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimatePropsImageProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(
       value: js.Array[AccessibilityActionInfo] | AnimatedNode[js.UndefOr[js.Array[AccessibilityActionInfo]]]

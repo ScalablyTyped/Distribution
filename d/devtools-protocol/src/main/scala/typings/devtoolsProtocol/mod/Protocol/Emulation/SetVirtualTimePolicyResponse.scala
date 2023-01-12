@@ -18,7 +18,8 @@ object SetVirtualTimePolicyResponse {
     __obj.asInstanceOf[SetVirtualTimePolicyResponse]
   }
   
-  extension [Self <: SetVirtualTimePolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetVirtualTimePolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setVirtualTimeTicksBase(value: Double): Self = StObject.set(x, "virtualTimeTicksBase", value.asInstanceOf[js.Any])
   }

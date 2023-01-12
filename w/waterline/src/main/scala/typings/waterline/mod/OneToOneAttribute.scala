@@ -18,7 +18,8 @@ object OneToOneAttribute {
     __obj.asInstanceOf[OneToOneAttribute]
   }
   
-  extension [Self <: OneToOneAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OneToOneAttribute] (val x: Self) extends AnyVal {
     
     inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }

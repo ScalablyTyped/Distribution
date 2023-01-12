@@ -31,7 +31,8 @@ object ActionConfiguration {
     __obj.asInstanceOf[ActionConfiguration]
   }
   
-  extension [Self <: ActionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setActionConfiguration(value: Configuration): Self = StObject.set(x, "actionConfiguration", value.asInstanceOf[js.Any])
     

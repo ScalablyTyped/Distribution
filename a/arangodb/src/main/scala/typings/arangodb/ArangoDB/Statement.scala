@@ -26,7 +26,8 @@ object Statement {
     __obj.asInstanceOf[Statement[T]]
   }
   
-  extension [Self <: Statement[?], T](x: Self & Statement[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Statement[?], T] (val x: Self & Statement[T]) extends AnyVal {
     
     inline def setBind(value: (String, Any) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
     

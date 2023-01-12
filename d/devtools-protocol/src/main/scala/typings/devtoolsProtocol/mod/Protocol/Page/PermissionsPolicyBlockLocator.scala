@@ -17,7 +17,8 @@ object PermissionsPolicyBlockLocator {
     __obj.asInstanceOf[PermissionsPolicyBlockLocator]
   }
   
-  extension [Self <: PermissionsPolicyBlockLocator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionsPolicyBlockLocator] (val x: Self) extends AnyVal {
     
     inline def setBlockReason(value: PermissionsPolicyBlockReason): Self = StObject.set(x, "blockReason", value.asInstanceOf[js.Any])
     

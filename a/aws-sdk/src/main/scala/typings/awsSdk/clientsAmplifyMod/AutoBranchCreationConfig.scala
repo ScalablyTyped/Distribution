@@ -63,7 +63,8 @@ object AutoBranchCreationConfig {
     __obj.asInstanceOf[AutoBranchCreationConfig]
   }
   
-  extension [Self <: AutoBranchCreationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoBranchCreationConfig] (val x: Self) extends AnyVal {
     
     inline def setBasicAuthCredentials(value: BasicAuthCredentials): Self = StObject.set(x, "basicAuthCredentials", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object StateTokenBuilder {
     __obj.asInstanceOf[StateTokenBuilder]
   }
   
-  extension [Self <: StateTokenBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateTokenBuilder] (val x: Self) extends AnyVal {
     
     inline def setCreateToken(value: () => String): Self = StObject.set(x, "createToken", js.Any.fromFunction0(value))
     

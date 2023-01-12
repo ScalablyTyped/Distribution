@@ -33,7 +33,8 @@ object PutRumMetricsDestinationRequest {
     __obj.asInstanceOf[PutRumMetricsDestinationRequest]
   }
   
-  extension [Self <: PutRumMetricsDestinationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRumMetricsDestinationRequest] (val x: Self) extends AnyVal {
     
     inline def setAppMonitorName(value: AppMonitorName): Self = StObject.set(x, "AppMonitorName", value.asInstanceOf[js.Any])
     

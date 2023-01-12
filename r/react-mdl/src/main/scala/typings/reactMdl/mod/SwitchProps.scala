@@ -22,7 +22,8 @@ object SwitchProps {
     __obj.asInstanceOf[SwitchProps]
   }
   
-  extension [Self <: SwitchProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwitchProps] (val x: Self) extends AnyVal {
     
     inline def setOnChange(value: FormEvent[Switch] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     

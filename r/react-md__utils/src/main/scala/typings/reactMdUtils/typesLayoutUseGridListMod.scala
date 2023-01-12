@@ -63,7 +63,8 @@ object typesLayoutUseGridListMod {
       __obj.asInstanceOf[GridListSize]
     }
     
-    extension [Self <: GridListSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridListSize] (val x: Self) extends AnyVal {
       
       inline def setCellWidth(value: Double): Self = StObject.set(x, "cellWidth", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object typesLayoutUseGridListMod {
       __obj.asInstanceOf[ProvidedGridListProps[E]]
     }
     
-    extension [Self <: ProvidedGridListProps[?], E /* <: HTMLElement */](x: Self & ProvidedGridListProps[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvidedGridListProps[?], E /* <: HTMLElement */] (val x: Self & ProvidedGridListProps[E]) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object typesLayoutUseGridListMod {
       __obj.asInstanceOf[UseGridListOptions]
     }
     
-    extension [Self <: UseGridListOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseGridListOptions] (val x: Self) extends AnyVal {
       
       inline def setCellMargin(value: String): Self = StObject.set(x, "cellMargin", value.asInstanceOf[js.Any])
       

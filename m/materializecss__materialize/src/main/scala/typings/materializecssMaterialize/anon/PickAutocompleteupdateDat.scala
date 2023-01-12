@@ -19,7 +19,8 @@ object PickAutocompleteupdateDat {
     __obj.asInstanceOf[PickAutocompleteupdateDat]
   }
   
-  extension [Self <: PickAutocompleteupdateDat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickAutocompleteupdateDat] (val x: Self) extends AnyVal {
     
     inline def setUpdateData(value: /* data */ AutocompleteData => Unit): Self = StObject.set(x, "updateData", js.Any.fromFunction1(value))
   }

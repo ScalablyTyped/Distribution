@@ -17,7 +17,8 @@ object SpreadsheetSheetFilter {
     __obj.asInstanceOf[SpreadsheetSheetFilter]
   }
   
-  extension [Self <: SpreadsheetSheetFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetSheetFilter] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: js.Array[SpreadsheetSheetFilterColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

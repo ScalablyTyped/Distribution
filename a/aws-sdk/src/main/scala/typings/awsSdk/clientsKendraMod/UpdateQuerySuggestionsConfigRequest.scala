@@ -43,7 +43,8 @@ object UpdateQuerySuggestionsConfigRequest {
     __obj.asInstanceOf[UpdateQuerySuggestionsConfigRequest]
   }
   
-  extension [Self <: UpdateQuerySuggestionsConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateQuerySuggestionsConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeQueriesWithoutUserInformation(value: ObjectBoolean): Self = StObject.set(x, "IncludeQueriesWithoutUserInformation", value.asInstanceOf[js.Any])
     

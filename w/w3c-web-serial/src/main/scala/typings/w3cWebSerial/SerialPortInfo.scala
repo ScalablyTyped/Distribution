@@ -18,7 +18,8 @@ object SerialPortInfo {
     __obj.asInstanceOf[SerialPortInfo]
   }
   
-  extension [Self <: SerialPortInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerialPortInfo] (val x: Self) extends AnyVal {
     
     inline def setUsbProductId(value: Double): Self = StObject.set(x, "usbProductId", value.asInstanceOf[js.Any])
     

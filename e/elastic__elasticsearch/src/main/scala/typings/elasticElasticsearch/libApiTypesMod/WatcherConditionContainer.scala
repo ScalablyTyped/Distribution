@@ -26,7 +26,8 @@ object WatcherConditionContainer {
     __obj.asInstanceOf[WatcherConditionContainer]
   }
   
-  extension [Self <: WatcherConditionContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherConditionContainer] (val x: Self) extends AnyVal {
     
     inline def setAlways(value: WatcherAlwaysCondition): Self = StObject.set(x, "always", value.asInstanceOf[js.Any])
     

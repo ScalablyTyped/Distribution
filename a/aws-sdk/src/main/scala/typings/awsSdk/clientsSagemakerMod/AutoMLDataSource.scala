@@ -18,7 +18,8 @@ object AutoMLDataSource {
     __obj.asInstanceOf[AutoMLDataSource]
   }
   
-  extension [Self <: AutoMLDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoMLDataSource] (val x: Self) extends AnyVal {
     
     inline def setS3DataSource(value: AutoMLS3DataSource): Self = StObject.set(x, "S3DataSource", value.asInstanceOf[js.Any])
   }

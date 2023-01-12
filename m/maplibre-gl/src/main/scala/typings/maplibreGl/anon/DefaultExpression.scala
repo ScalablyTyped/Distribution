@@ -36,7 +36,8 @@ object DefaultExpression {
     __obj.asInstanceOf[DefaultExpression]
   }
   
-  extension [Self <: DefaultExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultExpression] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: js.Array[String]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

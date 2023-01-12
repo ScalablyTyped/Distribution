@@ -21,7 +21,8 @@ object GSSolverOptions {
     __obj.asInstanceOf[GSSolverOptions]
   }
   
-  extension [Self <: GSSolverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GSSolverOptions] (val x: Self) extends AnyVal {
     
     inline def setFrictionIterations(value: Double): Self = StObject.set(x, "frictionIterations", value.asInstanceOf[js.Any])
     

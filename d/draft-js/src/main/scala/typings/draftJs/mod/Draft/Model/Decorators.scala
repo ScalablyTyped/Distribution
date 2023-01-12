@@ -46,7 +46,8 @@ object Decorators {
       __obj.asInstanceOf[CompositeDraftDecorator]
     }
     
-    extension [Self <: CompositeDraftDecorator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompositeDraftDecorator] (val x: Self) extends AnyVal {
       
       inline def setGetComponentForKey(value: String => js.Function): Self = StObject.set(x, "getComponentForKey", js.Any.fromFunction1(value))
       
@@ -93,7 +94,8 @@ object Decorators {
       __obj.asInstanceOf[DraftDecorator]
     }
     
-    extension [Self <: DraftDecorator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraftDecorator] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: js.Function): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -143,7 +145,8 @@ object Decorators {
       __obj.asInstanceOf[DraftDecoratorType]
     }
     
-    extension [Self <: DraftDecoratorType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraftDecoratorType] (val x: Self) extends AnyVal {
       
       inline def setGetComponentForKey(value: String => js.Function): Self = StObject.set(x, "getComponentForKey", js.Any.fromFunction1(value))
       

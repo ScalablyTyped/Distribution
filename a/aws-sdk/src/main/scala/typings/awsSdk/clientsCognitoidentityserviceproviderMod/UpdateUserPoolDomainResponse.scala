@@ -18,7 +18,8 @@ object UpdateUserPoolDomainResponse {
     __obj.asInstanceOf[UpdateUserPoolDomainResponse]
   }
   
-  extension [Self <: UpdateUserPoolDomainResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateUserPoolDomainResponse] (val x: Self) extends AnyVal {
     
     inline def setCloudFrontDomain(value: DomainType): Self = StObject.set(x, "CloudFrontDomain", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object TargetingTemplatesListResponse {
     __obj.asInstanceOf[TargetingTemplatesListResponse]
   }
   
-  extension [Self <: TargetingTemplatesListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetingTemplatesListResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

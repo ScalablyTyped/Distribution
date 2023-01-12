@@ -24,7 +24,8 @@ object StepOptionDocument {
     __obj.asInstanceOf[StepOptionDocument]
   }
   
-  extension [Self <: StepOptionDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepOptionDocument] (val x: Self) extends AnyVal {
     
     inline def setDocumentTypes(value: PartialRecordDocumentType): Self = StObject.set(x, "documentTypes", value.asInstanceOf[js.Any])
     

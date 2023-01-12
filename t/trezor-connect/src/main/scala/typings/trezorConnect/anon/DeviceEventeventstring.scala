@@ -25,7 +25,8 @@ object DeviceEventeventstring {
     __obj.asInstanceOf[DeviceEventeventstring]
   }
   
-  extension [Self <: DeviceEventeventstring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceEventeventstring] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: /* "DEVICE_EVENT" */ String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

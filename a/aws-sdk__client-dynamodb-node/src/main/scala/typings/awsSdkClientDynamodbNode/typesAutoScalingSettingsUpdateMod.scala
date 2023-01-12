@@ -42,7 +42,8 @@ object typesAutoScalingSettingsUpdateMod {
       __obj.asInstanceOf[AutoScalingSettingsUpdate]
     }
     
-    extension [Self <: AutoScalingSettingsUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoScalingSettingsUpdate] (val x: Self) extends AnyVal {
       
       inline def setAutoScalingDisabled(value: Boolean): Self = StObject.set(x, "AutoScalingDisabled", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object typesAutoScalingSettingsUpdateMod {
       __obj.asInstanceOf[UnmarshalledAutoScalingSettingsUpdate]
     }
     
-    extension [Self <: UnmarshalledAutoScalingSettingsUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledAutoScalingSettingsUpdate] (val x: Self) extends AnyVal {
       
       inline def setScalingPolicyUpdate(value: UnmarshalledAutoScalingPolicyUpdate): Self = StObject.set(x, "ScalingPolicyUpdate", value.asInstanceOf[js.Any])
       

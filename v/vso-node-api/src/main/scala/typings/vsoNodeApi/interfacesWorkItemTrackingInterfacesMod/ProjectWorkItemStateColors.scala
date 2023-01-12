@@ -23,7 +23,8 @@ object ProjectWorkItemStateColors {
     __obj.asInstanceOf[ProjectWorkItemStateColors]
   }
   
-  extension [Self <: ProjectWorkItemStateColors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectWorkItemStateColors] (val x: Self) extends AnyVal {
     
     inline def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object IncludeSynonyms {
     __obj.asInstanceOf[IncludeSynonyms]
   }
   
-  extension [Self <: IncludeSynonyms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeSynonyms] (val x: Self) extends AnyVal {
     
     inline def setIncludeSynonyms(value: Boolean): Self = StObject.set(x, "includeSynonyms", value.asInstanceOf[js.Any])
     

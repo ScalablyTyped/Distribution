@@ -58,7 +58,8 @@ object libUtilitiesIconsMod {
       __obj.asInstanceOf[IIconOptions]
     }
     
-    extension [Self <: IIconOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIconOptions] (val x: Self) extends AnyVal {
       
       inline def setDisableWarnings(value: Boolean): Self = StObject.set(x, "disableWarnings", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object libUtilitiesIconsMod {
       __obj.asInstanceOf[IIconRecord]
     }
     
-    extension [Self <: IIconRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIconRecord] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object libUtilitiesIconsMod {
       __obj.asInstanceOf[IIconRecords]
     }
     
-    extension [Self <: IIconRecords](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIconRecords] (val x: Self) extends AnyVal {
       
       inline def set__options(value: IIconOptions): Self = StObject.set(x, "__options", value.asInstanceOf[js.Any])
       
@@ -135,7 +138,8 @@ object libUtilitiesIconsMod {
       __obj.asInstanceOf[IIconSubset]
     }
     
-    extension [Self <: IIconSubset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIconSubset] (val x: Self) extends AnyVal {
       
       inline def setFontFace(value: IFontFace): Self = StObject.set(x, "fontFace", value.asInstanceOf[js.Any])
       
@@ -168,7 +172,8 @@ object libUtilitiesIconsMod {
       __obj.asInstanceOf[IIconSubsetRecord]
     }
     
-    extension [Self <: IIconSubsetRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIconSubsetRecord] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

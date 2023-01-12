@@ -29,7 +29,8 @@ object ObjectWithIdPagingOptionsIncludefields {
     __obj.asInstanceOf[ObjectWithIdPagingOptionsIncludefields]
   }
   
-  extension [Self <: ObjectWithIdPagingOptionsIncludefields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectWithIdPagingOptionsIncludefields] (val x: Self) extends AnyVal {
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

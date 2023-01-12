@@ -41,7 +41,8 @@ object PHPPTE {
     __obj.asInstanceOf[PHPPTE]
   }
   
-  extension [Self <: PHPPTE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PHPPTE] (val x: Self) extends AnyVal {
     
     inline def setAUD(value: js.Array[String]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object Tap {
     __obj.asInstanceOf[Tap]
   }
   
-  extension [Self <: Tap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tap] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

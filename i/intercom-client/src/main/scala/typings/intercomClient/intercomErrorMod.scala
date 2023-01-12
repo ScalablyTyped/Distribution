@@ -23,7 +23,8 @@ object intercomErrorMod {
       __obj.asInstanceOf[IntercomError]
     }
     
-    extension [Self <: IntercomError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntercomError] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Errors): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

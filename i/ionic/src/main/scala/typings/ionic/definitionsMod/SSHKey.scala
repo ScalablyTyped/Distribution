@@ -35,7 +35,8 @@ object SSHKey {
     __obj.asInstanceOf[SSHKey]
   }
   
-  extension [Self <: SSHKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SSHKey] (val x: Self) extends AnyVal {
     
     inline def setAnnotation(value: String): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     

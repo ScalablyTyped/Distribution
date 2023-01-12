@@ -28,7 +28,8 @@ object QuantileOptions {
     __obj.asInstanceOf[QuantileOptions]
   }
   
-  extension [Self <: QuantileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuantileOptions] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: js.Array[Double]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

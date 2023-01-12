@@ -19,7 +19,8 @@ object DevicesLongRunningOperationResponse {
     __obj.asInstanceOf[DevicesLongRunningOperationResponse]
   }
   
-  extension [Self <: DevicesLongRunningOperationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevicesLongRunningOperationResponse] (val x: Self) extends AnyVal {
     
     inline def setPerDeviceStatus(value: js.Array[OperationPerDevice]): Self = StObject.set(x, "perDeviceStatus", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object FileManager {
     __obj.asInstanceOf[FileManager]
   }
   
-  extension [Self <: FileManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileManager] (val x: Self) extends AnyVal {
     
     inline def setAcceptedExts(value: js.Array[String]): Self = StObject.set(x, "acceptedExts", value.asInstanceOf[js.Any])
     

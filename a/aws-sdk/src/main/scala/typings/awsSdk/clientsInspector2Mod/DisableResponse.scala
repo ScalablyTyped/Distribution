@@ -23,7 +23,8 @@ object DisableResponse {
     __obj.asInstanceOf[DisableResponse]
   }
   
-  extension [Self <: DisableResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableResponse] (val x: Self) extends AnyVal {
     
     inline def setAccounts(value: AccountList): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     

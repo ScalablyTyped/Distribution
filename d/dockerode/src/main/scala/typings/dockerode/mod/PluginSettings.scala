@@ -26,7 +26,8 @@ object PluginSettings {
     __obj.asInstanceOf[PluginSettings]
   }
   
-  extension [Self <: PluginSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginSettings] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     

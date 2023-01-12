@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[`0`[ElementT, OutputT, LengthT]]
     }
     
-    extension [Self <: `0`[?, ?, ?], ElementT, OutputT /* <: js.Array[Any] */, LengthT /* <: Double */](x: Self & (`0`[ElementT, OutputT, LengthT])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`[?, ?, ?], ElementT, OutputT /* <: js.Array[Any] */, LengthT /* <: Double */] (val x: Self & (`0`[ElementT, OutputT, LengthT])) extends AnyVal {
       
       inline def set0(value: js.Array[ElementT]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object anon {
       __obj.asInstanceOf[Property]
     }
     
-    extension [Self <: Property](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Property] (val x: Self) extends AnyVal {
       
       inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       

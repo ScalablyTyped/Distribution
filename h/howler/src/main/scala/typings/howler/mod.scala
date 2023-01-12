@@ -375,7 +375,8 @@ object mod {
       __obj.asInstanceOf[HowlListeners]
     }
     
-    extension [Self <: HowlListeners](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HowlListeners] (val x: Self) extends AnyVal {
       
       inline def setOnend(value: /* soundId */ Double => Unit): Self = StObject.set(x, "onend", js.Any.fromFunction1(value))
       
@@ -526,7 +527,8 @@ object mod {
       __obj.asInstanceOf[HowlOptions]
     }
     
-    extension [Self <: HowlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HowlOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
@@ -605,7 +607,8 @@ object mod {
       __obj.asInstanceOf[PannerAttributes]
     }
     
-    extension [Self <: PannerAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PannerAttributes] (val x: Self) extends AnyVal {
       
       inline def setConeInnerAngle(value: Double): Self = StObject.set(x, "coneInnerAngle", value.asInstanceOf[js.Any])
       

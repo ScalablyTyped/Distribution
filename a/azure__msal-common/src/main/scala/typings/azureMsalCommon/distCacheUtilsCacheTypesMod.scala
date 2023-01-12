@@ -34,7 +34,8 @@ object distCacheUtilsCacheTypesMod {
       __obj.asInstanceOf[AccountFilter]
     }
     
-    extension [Self <: AccountFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccountFilter] (val x: Self) extends AnyVal {
       
       inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object distCacheUtilsCacheTypesMod {
       __obj.asInstanceOf[AppMetadataFilter]
     }
     
-    extension [Self <: AppMetadataFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppMetadataFilter] (val x: Self) extends AnyVal {
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object distCacheUtilsCacheTypesMod {
       __obj.asInstanceOf[CredentialCache]
     }
     
-    extension [Self <: CredentialCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CredentialCache] (val x: Self) extends AnyVal {
       
       inline def setAccessTokens(value: AccessTokenCache): Self = StObject.set(x, "accessTokens", value.asInstanceOf[js.Any])
       
@@ -137,7 +140,8 @@ object distCacheUtilsCacheTypesMod {
       __obj.asInstanceOf[CredentialFilter]
     }
     
-    extension [Self <: CredentialFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CredentialFilter] (val x: Self) extends AnyVal {
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       

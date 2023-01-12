@@ -56,7 +56,8 @@ object VastNonLinearAd {
     __obj.asInstanceOf[VastNonLinearAd]
   }
   
-  extension [Self <: VastNonLinearAd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VastNonLinearAd] (val x: Self) extends AnyVal {
     
     inline def setAdParameters(value: String): Self = StObject.set(x, "adParameters", value.asInstanceOf[js.Any])
     

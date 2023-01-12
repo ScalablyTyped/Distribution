@@ -18,7 +18,8 @@ object IBound {
     __obj.asInstanceOf[IBound]
   }
   
-  extension [Self <: IBound](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBound] (val x: Self) extends AnyVal {
     
     inline def setMax(value: X): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

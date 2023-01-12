@@ -23,7 +23,8 @@ object CustomConnectorSourceProperties {
     __obj.asInstanceOf[CustomConnectorSourceProperties]
   }
   
-  extension [Self <: CustomConnectorSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomConnectorSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setCustomProperties(value: CustomProperties): Self = StObject.set(x, "customProperties", value.asInstanceOf[js.Any])
     

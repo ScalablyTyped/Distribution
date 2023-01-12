@@ -98,7 +98,8 @@ object mod {
       __obj.asInstanceOf[BiMap[TValue]]
     }
     
-    extension [Self <: BiMap[?], TValue](x: Self & BiMap[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BiMap[?], TValue] (val x: Self & BiMap[TValue]) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       

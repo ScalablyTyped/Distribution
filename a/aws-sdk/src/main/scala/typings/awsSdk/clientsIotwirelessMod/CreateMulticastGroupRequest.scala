@@ -29,7 +29,8 @@ object CreateMulticastGroupRequest {
     __obj.asInstanceOf[CreateMulticastGroupRequest]
   }
   
-  extension [Self <: CreateMulticastGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMulticastGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

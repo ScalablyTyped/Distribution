@@ -66,7 +66,8 @@ object XToolkit {
     __obj.asInstanceOf[XToolkit]
   }
   
-  extension [Self <: XToolkit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XToolkit] (val x: Self) extends AnyVal {
     
     inline def setCreateRegion(value: () => XRegion): Self = StObject.set(x, "createRegion", js.Any.fromFunction0(value))
     

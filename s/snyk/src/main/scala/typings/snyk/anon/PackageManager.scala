@@ -16,7 +16,8 @@ object PackageManager {
     __obj.asInstanceOf[PackageManager]
   }
   
-  extension [Self <: PackageManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageManager] (val x: Self) extends AnyVal {
     
     inline def setPackageManager(value: SupportedPackageManagers): Self = StObject.set(x, "packageManager", value.asInstanceOf[js.Any])
     

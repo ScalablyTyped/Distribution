@@ -18,7 +18,8 @@ object DisassociateThirdPartyFirewallRequest {
     __obj.asInstanceOf[DisassociateThirdPartyFirewallRequest]
   }
   
-  extension [Self <: DisassociateThirdPartyFirewallRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateThirdPartyFirewallRequest] (val x: Self) extends AnyVal {
     
     inline def setThirdPartyFirewall(value: ThirdPartyFirewall): Self = StObject.set(x, "ThirdPartyFirewall", value.asInstanceOf[js.Any])
   }

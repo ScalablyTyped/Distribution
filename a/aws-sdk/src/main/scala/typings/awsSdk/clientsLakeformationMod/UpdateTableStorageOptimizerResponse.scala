@@ -18,7 +18,8 @@ object UpdateTableStorageOptimizerResponse {
     __obj.asInstanceOf[UpdateTableStorageOptimizerResponse]
   }
   
-  extension [Self <: UpdateTableStorageOptimizerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTableStorageOptimizerResponse] (val x: Self) extends AnyVal {
     
     inline def setResult(value: Result): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     

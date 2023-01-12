@@ -17,7 +17,8 @@ object RankEvalUnratedDocument {
     __obj.asInstanceOf[RankEvalUnratedDocument]
   }
   
-  extension [Self <: RankEvalUnratedDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RankEvalUnratedDocument] (val x: Self) extends AnyVal {
     
     inline def set_id(value: Id): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     

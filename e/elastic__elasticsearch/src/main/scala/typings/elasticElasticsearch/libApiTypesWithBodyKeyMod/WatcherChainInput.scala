@@ -17,7 +17,8 @@ object WatcherChainInput {
     __obj.asInstanceOf[WatcherChainInput]
   }
   
-  extension [Self <: WatcherChainInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherChainInput] (val x: Self) extends AnyVal {
     
     inline def setInputs(value: js.Array[Partial[Record[String, WatcherInputContainer]]]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     

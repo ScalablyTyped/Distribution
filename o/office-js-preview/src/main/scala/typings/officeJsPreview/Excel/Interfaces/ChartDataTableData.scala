@@ -62,7 +62,8 @@ object ChartDataTableData {
     __obj.asInstanceOf[ChartDataTableData]
   }
   
-  extension [Self <: ChartDataTableData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartDataTableData] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: ChartDataTableFormatData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

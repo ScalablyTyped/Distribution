@@ -39,7 +39,8 @@ object BarStyle {
     __obj.asInstanceOf[BarStyle]
   }
   
-  extension [Self <: BarStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarStyle] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

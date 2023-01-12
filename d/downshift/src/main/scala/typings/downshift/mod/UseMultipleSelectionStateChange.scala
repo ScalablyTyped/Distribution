@@ -21,7 +21,8 @@ object UseMultipleSelectionStateChange {
     __obj.asInstanceOf[UseMultipleSelectionStateChange[Item]]
   }
   
-  extension [Self <: UseMultipleSelectionStateChange[?], Item](x: Self & UseMultipleSelectionStateChange[Item]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseMultipleSelectionStateChange[?], Item] (val x: Self & UseMultipleSelectionStateChange[Item]) extends AnyVal {
     
     inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     

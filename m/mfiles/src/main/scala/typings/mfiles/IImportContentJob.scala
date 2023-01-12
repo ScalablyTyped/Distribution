@@ -60,7 +60,8 @@ object IImportContentJob {
     __obj.asInstanceOf[IImportContentJob]
   }
   
-  extension [Self <: IImportContentJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IImportContentJob] (val x: Self) extends AnyVal {
     
     inline def setActivateAutomaticPermissionsForNewOrChangedDefinitions(value: Boolean): Self = StObject.set(x, "ActivateAutomaticPermissionsForNewOrChangedDefinitions", value.asInstanceOf[js.Any])
     

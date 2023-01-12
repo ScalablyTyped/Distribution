@@ -44,7 +44,8 @@ object SmsSendMessageResult {
     __obj.asInstanceOf[SmsSendMessageResult]
   }
   
-  extension [Self <: SmsSendMessageResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmsSendMessageResult] (val x: Self) extends AnyVal {
     
     inline def setCellularClass(value: CellularClass): Self = StObject.set(x, "cellularClass", value.asInstanceOf[js.Any])
     

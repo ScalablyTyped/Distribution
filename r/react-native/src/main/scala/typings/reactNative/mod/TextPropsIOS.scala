@@ -29,7 +29,8 @@ object TextPropsIOS {
     __obj.asInstanceOf[TextPropsIOS]
   }
   
-  extension [Self <: TextPropsIOS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextPropsIOS] (val x: Self) extends AnyVal {
     
     inline def setAdjustsFontSizeToFit(value: Boolean): Self = StObject.set(x, "adjustsFontSizeToFit", value.asInstanceOf[js.Any])
     

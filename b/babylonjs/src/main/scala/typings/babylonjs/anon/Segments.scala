@@ -19,7 +19,8 @@ object Segments {
     __obj.asInstanceOf[Segments]
   }
   
-  extension [Self <: Segments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Segments] (val x: Self) extends AnyVal {
     
     inline def setDiameter(value: Double): Self = StObject.set(x, "diameter", value.asInstanceOf[js.Any])
     

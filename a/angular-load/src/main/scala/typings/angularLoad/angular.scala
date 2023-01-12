@@ -22,7 +22,8 @@ object angular {
         __obj.asInstanceOf[IAngularLoadService]
       }
       
-      extension [Self <: IAngularLoadService](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IAngularLoadService] (val x: Self) extends AnyVal {
         
         inline def setLoadCSS(value: String => IPromise[Any]): Self = StObject.set(x, "loadCSS", js.Any.fromFunction1(value))
         

@@ -19,7 +19,8 @@ object TimesArray {
     __obj.asInstanceOf[TimesArray]
   }
   
-  extension [Self <: TimesArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimesArray] (val x: Self) extends AnyVal {
     
     inline def setPoints(value: js.Array[Cartesian3 | Double | Quaternion]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     

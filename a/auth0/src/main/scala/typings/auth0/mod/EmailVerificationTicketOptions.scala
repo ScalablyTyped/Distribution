@@ -28,7 +28,8 @@ object EmailVerificationTicketOptions {
     __obj.asInstanceOf[EmailVerificationTicketOptions]
   }
   
-  extension [Self <: EmailVerificationTicketOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailVerificationTicketOptions] (val x: Self) extends AnyVal {
     
     inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object OtherRecipientInfoJson {
     __obj.asInstanceOf[OtherRecipientInfoJson]
   }
   
-  extension [Self <: OtherRecipientInfoJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtherRecipientInfoJson] (val x: Self) extends AnyVal {
     
     inline def setOriType(value: String): Self = StObject.set(x, "oriType", value.asInstanceOf[js.Any])
     

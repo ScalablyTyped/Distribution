@@ -17,7 +17,8 @@ object RefreshOptions {
     __obj.asInstanceOf[RefreshOptions]
   }
   
-  extension [Self <: RefreshOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshOptions] (val x: Self) extends AnyVal {
     
     inline def setEagerRefreshThresholdMillis(value: Double): Self = StObject.set(x, "eagerRefreshThresholdMillis", value.asInstanceOf[js.Any])
     

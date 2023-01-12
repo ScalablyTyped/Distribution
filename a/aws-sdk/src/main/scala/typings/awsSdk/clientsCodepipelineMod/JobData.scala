@@ -53,7 +53,8 @@ object JobData {
     __obj.asInstanceOf[JobData]
   }
   
-  extension [Self <: JobData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobData] (val x: Self) extends AnyVal {
     
     inline def setActionConfiguration(value: ActionConfiguration): Self = StObject.set(x, "actionConfiguration", value.asInstanceOf[js.Any])
     

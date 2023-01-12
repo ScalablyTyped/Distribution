@@ -37,7 +37,8 @@ object distTypesOdataConfigMod {
       __obj.asInstanceOf[OdataBatchConfig]
     }
     
-    extension [Self <: OdataBatchConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OdataBatchConfig] (val x: Self) extends AnyVal {
       
       inline def setBoundaryPrefix(value: String): Self = StObject.set(x, "boundaryPrefix", value.asInstanceOf[js.Any])
       

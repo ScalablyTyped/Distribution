@@ -27,7 +27,8 @@ object typesRetryMod {
       __obj.asInstanceOf[RetryContext]
     }
     
-    extension [Self <: RetryContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryContext] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object typesRetryMod {
       __obj.asInstanceOf[RetryOptions[V]]
     }
     
-    extension [Self <: RetryOptions[?], V](x: Self & RetryOptions[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryOptions[?], V] (val x: Self & RetryOptions[V]) extends AnyVal {
       
       inline def setDelay(value: /* context */ RetryContext => Double): Self = StObject.set(x, "delay", js.Any.fromFunction1(value))
       

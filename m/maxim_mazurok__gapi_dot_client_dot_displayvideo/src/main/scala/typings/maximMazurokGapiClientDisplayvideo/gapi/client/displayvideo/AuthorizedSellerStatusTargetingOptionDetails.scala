@@ -16,7 +16,8 @@ object AuthorizedSellerStatusTargetingOptionDetails {
     __obj.asInstanceOf[AuthorizedSellerStatusTargetingOptionDetails]
   }
   
-  extension [Self <: AuthorizedSellerStatusTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizedSellerStatusTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setAuthorizedSellerStatus(value: String): Self = StObject.set(x, "authorizedSellerStatus", value.asInstanceOf[js.Any])
     

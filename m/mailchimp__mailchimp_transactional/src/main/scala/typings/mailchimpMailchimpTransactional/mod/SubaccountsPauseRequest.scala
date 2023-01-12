@@ -18,7 +18,8 @@ object SubaccountsPauseRequest {
     __obj.asInstanceOf[SubaccountsPauseRequest]
   }
   
-  extension [Self <: SubaccountsPauseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubaccountsPauseRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

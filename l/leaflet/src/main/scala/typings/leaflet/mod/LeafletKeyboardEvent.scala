@@ -28,7 +28,8 @@ object LeafletKeyboardEvent {
     __obj.asInstanceOf[LeafletKeyboardEvent]
   }
   
-  extension [Self <: LeafletKeyboardEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeafletKeyboardEvent] (val x: Self) extends AnyVal {
     
     inline def setOriginalEvent(value: KeyboardEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
   }

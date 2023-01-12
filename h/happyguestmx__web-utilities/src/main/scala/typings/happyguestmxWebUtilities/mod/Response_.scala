@@ -27,7 +27,8 @@ object Response_ {
     __obj.asInstanceOf[Response_]
   }
   
-  extension [Self <: Response_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Response_] (val x: Self) extends AnyVal {
     
     inline def setBadRequest(value: js.Object => APIGatewayProxyResult): Self = StObject.set(x, "badRequest", js.Any.fromFunction1(value))
     

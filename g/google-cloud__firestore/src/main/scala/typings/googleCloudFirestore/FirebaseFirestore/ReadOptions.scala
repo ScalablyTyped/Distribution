@@ -23,7 +23,8 @@ object ReadOptions {
     __obj.asInstanceOf[ReadOptions]
   }
   
-  extension [Self <: ReadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadOptions] (val x: Self) extends AnyVal {
     
     inline def setFieldMask(value: js.Array[String | FieldPath]): Self = StObject.set(x, "fieldMask", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetLicenseUsageResponse {
     __obj.asInstanceOf[GetLicenseUsageResponse]
   }
   
-  extension [Self <: GetLicenseUsageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLicenseUsageResponse] (val x: Self) extends AnyVal {
     
     inline def setLicenseUsage(value: LicenseUsage): Self = StObject.set(x, "LicenseUsage", value.asInstanceOf[js.Any])
     

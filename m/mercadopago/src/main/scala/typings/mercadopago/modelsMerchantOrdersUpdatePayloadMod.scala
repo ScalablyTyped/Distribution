@@ -41,7 +41,8 @@ object modelsMerchantOrdersUpdatePayloadMod {
       __obj.asInstanceOf[UpdateMerchantOrderItem]
     }
     
-    extension [Self <: UpdateMerchantOrderItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateMerchantOrderItem] (val x: Self) extends AnyVal {
       
       inline def setCategory_id(value: String): Self = StObject.set(x, "category_id", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object modelsMerchantOrdersUpdatePayloadMod {
       __obj.asInstanceOf[UpdateMerchantOrderPayload]
     }
     
-    extension [Self <: UpdateMerchantOrderPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateMerchantOrderPayload] (val x: Self) extends AnyVal {
       
       inline def setAdditional_info(value: String): Self = StObject.set(x, "additional_info", value.asInstanceOf[js.Any])
       

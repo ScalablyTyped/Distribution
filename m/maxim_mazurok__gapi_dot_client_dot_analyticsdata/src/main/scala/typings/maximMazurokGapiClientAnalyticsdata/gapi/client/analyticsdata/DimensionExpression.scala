@@ -22,7 +22,8 @@ object DimensionExpression {
     __obj.asInstanceOf[DimensionExpression]
   }
   
-  extension [Self <: DimensionExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionExpression] (val x: Self) extends AnyVal {
     
     inline def setConcatenate(value: ConcatenateExpression): Self = StObject.set(x, "concatenate", value.asInstanceOf[js.Any])
     

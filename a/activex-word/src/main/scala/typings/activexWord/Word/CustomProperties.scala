@@ -37,7 +37,8 @@ object CustomProperties {
     __obj.asInstanceOf[CustomProperties]
   }
   
-  extension [Self <: CustomProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomProperties] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (String, String) => CustomProperty): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

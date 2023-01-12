@@ -19,7 +19,8 @@ object ConditionalAccessPlatforms {
     __obj.asInstanceOf[ConditionalAccessPlatforms]
   }
   
-  extension [Self <: ConditionalAccessPlatforms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalAccessPlatforms] (val x: Self) extends AnyVal {
     
     inline def setExcludePlatforms(value: js.Array[ConditionalAccessDevicePlatform]): Self = StObject.set(x, "excludePlatforms", value.asInstanceOf[js.Any])
     

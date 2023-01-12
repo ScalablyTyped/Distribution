@@ -25,7 +25,8 @@ object ChargeItemPerformer {
     __obj.asInstanceOf[ChargeItemPerformer]
   }
   
-  extension [Self <: ChargeItemPerformer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChargeItemPerformer] (val x: Self) extends AnyVal {
     
     inline def setActor(value: Reference): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

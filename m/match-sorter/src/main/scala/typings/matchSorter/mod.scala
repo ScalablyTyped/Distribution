@@ -120,7 +120,8 @@ object mod {
       __obj.asInstanceOf[IndexedItem[ItemType]]
     }
     
-    extension [Self <: IndexedItem[?], ItemType](x: Self & IndexedItem[ItemType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexedItem[?], ItemType] (val x: Self & IndexedItem[ItemType]) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -143,7 +144,8 @@ object mod {
       __obj.asInstanceOf[KeyAttributes]
     }
     
-    extension [Self <: KeyAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyAttributes] (val x: Self) extends AnyVal {
       
       inline def setMaxRanking(value: Ranking): Self = StObject.set(x, "maxRanking", value.asInstanceOf[js.Any])
       
@@ -172,7 +174,8 @@ object mod {
       __obj.asInstanceOf[KeyAttributesOptions[ItemType]]
     }
     
-    extension [Self <: KeyAttributesOptions[?], ItemType](x: Self & KeyAttributesOptions[ItemType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyAttributesOptions[?], ItemType] (val x: Self & KeyAttributesOptions[ItemType]) extends AnyVal {
       
       inline def setKey(value: String | ValueGetterKey[ItemType]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -215,7 +218,8 @@ object mod {
       __obj.asInstanceOf[MatchSorterOptions[ItemType]]
     }
     
-    extension [Self <: MatchSorterOptions[?], ItemType](x: Self & MatchSorterOptions[ItemType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchSorterOptions[?], ItemType] (val x: Self & MatchSorterOptions[ItemType]) extends AnyVal {
       
       inline def setBaseSort(value: (/* a */ RankedItem[ItemType], /* b */ RankedItem[ItemType]) => Double): Self = StObject.set(x, "baseSort", js.Any.fromFunction2(value))
       
@@ -301,7 +305,8 @@ object mod {
       __obj.asInstanceOf[RankingInfo]
     }
     
-    extension [Self <: RankingInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RankingInfo] (val x: Self) extends AnyVal {
       
       inline def setKeyIndex(value: Double): Self = StObject.set(x, "keyIndex", value.asInstanceOf[js.Any])
       

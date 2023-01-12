@@ -25,7 +25,8 @@ object ActionInfo {
     __obj.asInstanceOf[ActionInfo]
   }
   
-  extension [Self <: ActionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionInfo] (val x: Self) extends AnyVal {
     
     inline def setApiName(value: String): Self = StObject.set(x, "apiName", value.asInstanceOf[js.Any])
     

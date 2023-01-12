@@ -48,7 +48,8 @@ object IBackgroundUploadProperties {
     __obj.asInstanceOf[IBackgroundUploadProperties]
   }
   
-  extension [Self <: IBackgroundUploadProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBackgroundUploadProperties] (val x: Self) extends AnyVal {
     
     inline def setFile_input(value: Any): Self = StObject.set(x, "file_input", value.asInstanceOf[js.Any])
     

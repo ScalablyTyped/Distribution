@@ -130,7 +130,8 @@ object IAppState {
     __obj.asInstanceOf[IAppState]
   }
   
-  extension [Self <: IAppState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAppState] (val x: Self) extends AnyVal {
     
     inline def setGetGlobalState(value: String => IGlobalState): Self = StObject.set(x, "getGlobalState", js.Any.fromFunction1(value))
     

@@ -19,7 +19,8 @@ object ReturnTypeGetWasmBytecodeResponse {
     __obj.asInstanceOf[ReturnTypeGetWasmBytecodeResponse]
   }
   
-  extension [Self <: ReturnTypeGetWasmBytecodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetWasmBytecodeResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetWasmBytecodeRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

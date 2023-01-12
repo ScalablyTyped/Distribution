@@ -17,7 +17,8 @@ object CachePeriodInMinutes {
     __obj.asInstanceOf[CachePeriodInMinutes]
   }
   
-  extension [Self <: CachePeriodInMinutes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CachePeriodInMinutes] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     

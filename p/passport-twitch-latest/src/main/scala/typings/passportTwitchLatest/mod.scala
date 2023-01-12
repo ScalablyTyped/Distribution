@@ -93,7 +93,8 @@ object mod {
       __obj.asInstanceOf[AuthenticateOptions]
     }
     
-    extension [Self <: AuthenticateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticateOptions] (val x: Self) extends AnyVal {
       
       inline def setForceVerify(value: Boolean): Self = StObject.set(x, "forceVerify", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object mod {
       __obj.asInstanceOf[AuthenticateRet]
     }
     
-    extension [Self <: AuthenticateRet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticateRet] (val x: Self) extends AnyVal {
       
       inline def setForce_verify(value: Boolean): Self = StObject.set(x, "force_verify", value.asInstanceOf[js.Any])
       
@@ -162,7 +164,8 @@ object mod {
       __obj.asInstanceOf[StrategyOptions]
     }
     
-    extension [Self <: StrategyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationURL(value: String): Self = StObject.set(x, "authorizationURL", value.asInstanceOf[js.Any])
       
@@ -264,7 +267,8 @@ object mod {
       __obj.asInstanceOf[StrategyOptionsWithRequest]
     }
     
-    extension [Self <: StrategyOptionsWithRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyOptionsWithRequest] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationURL(value: String): Self = StObject.set(x, "authorizationURL", value.asInstanceOf[js.Any])
       
@@ -365,7 +369,8 @@ object mod {
       __obj.asInstanceOf[TwitchProfile]
     }
     
-    extension [Self <: TwitchProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwitchProfile] (val x: Self) extends AnyVal {
       
       inline def setBroadcaster_type(value: String): Self = StObject.set(x, "broadcaster_type", value.asInstanceOf[js.Any])
       

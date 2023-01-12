@@ -21,7 +21,8 @@ object TableProgress {
     __obj.asInstanceOf[TableProgress]
   }
   
-  extension [Self <: TableProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableProgress] (val x: Self) extends AnyVal {
     
     inline def setEstimatedCopiedBytes(value: String): Self = StObject.set(x, "estimatedCopiedBytes", value.asInstanceOf[js.Any])
     

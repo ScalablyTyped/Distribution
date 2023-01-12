@@ -9977,7 +9977,8 @@ object CSSPropertiesPartialRecorBackgroundBlendMode {
     __obj.asInstanceOf[CSSPropertiesPartialRecorBackgroundBlendMode]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorBackgroundBlendMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorBackgroundBlendMode] (val x: Self) extends AnyVal {
     
     inline def `set--fill-color`(value: String): Self = StObject.set(x, "--fill-color", value.asInstanceOf[js.Any])
     

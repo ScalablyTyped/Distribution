@@ -30,7 +30,8 @@ object Map {
     __obj.asInstanceOf[Map[E, M]]
   }
   
-  extension [Self <: Map[?, ?], E, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & (Map[E, M])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Map[?, ?], E, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & (Map[E, M])) extends AnyVal {
     
     inline def setAp(
       value: (TheseT2[M, Any, E, js.Function1[Any, Any]], TheseT2[M, Any, E, Any]) => TheseT2[M, Any, E, Any]

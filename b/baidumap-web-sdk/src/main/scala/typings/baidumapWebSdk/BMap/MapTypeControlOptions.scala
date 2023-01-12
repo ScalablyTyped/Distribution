@@ -17,7 +17,8 @@ object MapTypeControlOptions {
     __obj.asInstanceOf[MapTypeControlOptions]
   }
   
-  extension [Self <: MapTypeControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapTypeControlOptions] (val x: Self) extends AnyVal {
     
     inline def setMapTypes(value: js.Array[MapType]): Self = StObject.set(x, "mapTypes", value.asInstanceOf[js.Any])
     

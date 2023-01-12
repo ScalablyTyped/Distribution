@@ -21,7 +21,8 @@ object XRFrustumDetectionBoundary {
     __obj.asInstanceOf[XRFrustumDetectionBoundary]
   }
   
-  extension [Self <: XRFrustumDetectionBoundary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRFrustumDetectionBoundary] (val x: Self) extends AnyVal {
     
     inline def setFrustum(value: XRFrustum): Self = StObject.set(x, "frustum", value.asInstanceOf[js.Any])
     

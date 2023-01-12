@@ -15,7 +15,8 @@ object SingOutOptions {
     __obj.asInstanceOf[SingOutOptions]
   }
   
-  extension [Self <: SingOutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingOutOptions] (val x: Self) extends AnyVal {
     
     inline def setMustInvalidate(value: Boolean): Self = StObject.set(x, "mustInvalidate", value.asInstanceOf[js.Any])
   }

@@ -219,7 +219,8 @@ object libNativeMod {
       __obj.asInstanceOf[EncodeOptions]
     }
     
-    extension [Self <: EncodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodeOptions] (val x: Self) extends AnyVal {
       
       inline def setLossByte(value: Double): Self = StObject.set(x, "lossByte", value.asInstanceOf[js.Any])
       
@@ -249,7 +250,8 @@ object libNativeMod {
       __obj.asInstanceOf[SelectAndEncodeOptions]
     }
     
-    extension [Self <: SelectAndEncodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectAndEncodeOptions] (val x: Self) extends AnyVal {
       
       inline def setIsEncodingOk(value: /* encoding */ StringEncoding => Boolean): Self = StObject.set(x, "isEncodingOk", js.Any.fromFunction1(value))
       
@@ -272,7 +274,8 @@ object libNativeMod {
       __obj.asInstanceOf[TextAndEncoding]
     }
     
-    extension [Self <: TextAndEncoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextAndEncoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: StringEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

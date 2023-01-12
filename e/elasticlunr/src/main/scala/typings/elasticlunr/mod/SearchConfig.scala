@@ -19,7 +19,8 @@ object SearchConfig {
     __obj.asInstanceOf[SearchConfig[T]]
   }
   
-  extension [Self <: SearchConfig[?], T /* <: js.Object */](x: Self & SearchConfig[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchConfig[?], T /* <: js.Object */] (val x: Self & SearchConfig[T]) extends AnyVal {
     
     inline def setBool(value: Bool): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
     

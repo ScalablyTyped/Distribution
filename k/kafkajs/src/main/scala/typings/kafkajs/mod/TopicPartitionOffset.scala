@@ -17,7 +17,8 @@ object TopicPartitionOffset {
     __obj.asInstanceOf[TopicPartitionOffset]
   }
   
-  extension [Self <: TopicPartitionOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicPartitionOffset] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }

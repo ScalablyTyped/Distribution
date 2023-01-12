@@ -16,7 +16,8 @@ object DeleteAccountResponse {
     __obj.asInstanceOf[DeleteAccountResponse]
   }
   
-  extension [Self <: DeleteAccountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAccountResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DescribeStorediSCSIVolumesInput {
     __obj.asInstanceOf[DescribeStorediSCSIVolumesInput]
   }
   
-  extension [Self <: DescribeStorediSCSIVolumesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStorediSCSIVolumesInput] (val x: Self) extends AnyVal {
     
     inline def setVolumeARNs(value: VolumeARNs): Self = StObject.set(x, "VolumeARNs", value.asInstanceOf[js.Any])
     

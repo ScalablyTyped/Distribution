@@ -52,7 +52,8 @@ object links {
       __obj.asInstanceOf[AnalyticsParameters]
     }
     
-    extension [Self <: AnalyticsParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsParameters] (val x: Self) extends AnyVal {
       
       inline def setSetCampaign(value: String => DynamicLink): Self = StObject.set(x, "setCampaign", js.Any.fromFunction1(value))
       
@@ -85,7 +86,8 @@ object links {
       __obj.asInstanceOf[AndroidParameters]
     }
     
-    extension [Self <: AndroidParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AndroidParameters] (val x: Self) extends AnyVal {
       
       inline def setSetFallbackUrl(value: String => DynamicLink): Self = StObject.set(x, "setFallbackUrl", js.Any.fromFunction1(value))
       
@@ -126,7 +128,8 @@ object links {
       __obj.asInstanceOf[IOSParameters]
     }
     
-    extension [Self <: IOSParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOSParameters] (val x: Self) extends AnyVal {
       
       inline def setSetAppStoreId(value: String => DynamicLink): Self = StObject.set(x, "setAppStoreId", js.Any.fromFunction1(value))
       
@@ -163,7 +166,8 @@ object links {
       __obj.asInstanceOf[ITunesParameters]
     }
     
-    extension [Self <: ITunesParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITunesParameters] (val x: Self) extends AnyVal {
       
       inline def setSetAffiliateToken(value: String => DynamicLink): Self = StObject.set(x, "setAffiliateToken", js.Any.fromFunction1(value))
       
@@ -209,7 +213,8 @@ object links {
       __obj.asInstanceOf[Links]
     }
     
-    extension [Self <: Links](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Links] (val x: Self) extends AnyVal {
       
       inline def setCreateDynamicLink(value: DynamicLink => js.Promise[String]): Self = StObject.set(x, "createDynamicLink", js.Any.fromFunction1(value))
       
@@ -236,7 +241,8 @@ object links {
       __obj.asInstanceOf[LinksStatics]
     }
     
-    extension [Self <: LinksStatics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinksStatics] (val x: Self) extends AnyVal {
       
       inline def setDynamicLink(value: Instantiable2[/* link */ String, /* domainURIPrefix */ String, DynamicLink]): Self = StObject.set(x, "DynamicLink", value.asInstanceOf[js.Any])
     }
@@ -253,7 +259,8 @@ object links {
       __obj.asInstanceOf[NavigationParameters]
     }
     
-    extension [Self <: NavigationParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationParameters] (val x: Self) extends AnyVal {
       
       inline def setSetForcedRedirectEnabled(value: Boolean => DynamicLink): Self = StObject.set(x, "setForcedRedirectEnabled", js.Any.fromFunction1(value))
     }
@@ -278,7 +285,8 @@ object links {
       __obj.asInstanceOf[SocialParameters]
     }
     
-    extension [Self <: SocialParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocialParameters] (val x: Self) extends AnyVal {
       
       inline def setSetDescriptionText(value: String => DynamicLink): Self = StObject.set(x, "setDescriptionText", js.Any.fromFunction1(value))
       

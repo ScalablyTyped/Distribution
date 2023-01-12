@@ -30,7 +30,8 @@ object StatusIndicatorFactory {
     __obj.asInstanceOf[StatusIndicatorFactory]
   }
   
-  extension [Self <: StatusIndicatorFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusIndicatorFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateWithFrame(value: (XFrame, Boolean, Boolean) => Unit): Self = StObject.set(x, "createWithFrame", js.Any.fromFunction3(value))
     

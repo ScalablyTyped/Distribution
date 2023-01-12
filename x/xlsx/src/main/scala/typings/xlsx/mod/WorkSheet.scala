@@ -35,7 +35,8 @@ object WorkSheet {
     __obj.asInstanceOf[WorkSheet]
   }
   
-  extension [Self <: WorkSheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkSheet] (val x: Self) extends AnyVal {
     
     inline def setExclamationmarkautofilter(value: AutoFilterInfo): Self = StObject.set(x, "!autofilter", value.asInstanceOf[js.Any])
     

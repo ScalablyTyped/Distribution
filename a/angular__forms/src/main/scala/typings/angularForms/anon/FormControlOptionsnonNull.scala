@@ -54,7 +54,8 @@ object FormControlOptionsnonNull {
     __obj.asInstanceOf[FormControlOptionsnonNull]
   }
   
-  extension [Self <: FormControlOptionsnonNull](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormControlOptionsnonNull] (val x: Self) extends AnyVal {
     
     inline def setAsyncValidators(value: AsyncValidatorFn | js.Array[AsyncValidatorFn]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
     

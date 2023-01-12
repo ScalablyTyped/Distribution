@@ -129,7 +129,8 @@ object distLoadStrategiesXhrLoadStrategyMod {
       __obj.asInstanceOf[IXhrLoadConfig]
     }
     
-    extension [Self <: IXhrLoadConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IXhrLoadConfig] (val x: Self) extends AnyVal {
       
       inline def setXhrType(value: XhrResponseType): Self = StObject.set(x, "xhrType", value.asInstanceOf[js.Any])
       

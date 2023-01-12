@@ -43,7 +43,8 @@ object TestDNSAnswerRequest {
     __obj.asInstanceOf[TestDNSAnswerRequest]
   }
   
-  extension [Self <: TestDNSAnswerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestDNSAnswerRequest] (val x: Self) extends AnyVal {
     
     inline def setEDNS0ClientSubnetIP(value: IPAddress): Self = StObject.set(x, "EDNS0ClientSubnetIP", value.asInstanceOf[js.Any])
     

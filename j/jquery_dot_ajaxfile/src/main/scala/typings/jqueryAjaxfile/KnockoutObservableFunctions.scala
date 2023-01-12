@@ -15,7 +15,8 @@ object KnockoutObservableFunctions {
     __obj.asInstanceOf[KnockoutObservableFunctions[T]]
   }
   
-  extension [Self <: KnockoutObservableFunctions[?], T](x: Self & KnockoutObservableFunctions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutObservableFunctions[?], T] (val x: Self & KnockoutObservableFunctions[T]) extends AnyVal {
     
     inline def setEqualityComparer(value: (Any, Any) => Boolean): Self = StObject.set(x, "equalityComparer", js.Any.fromFunction2(value))
   }

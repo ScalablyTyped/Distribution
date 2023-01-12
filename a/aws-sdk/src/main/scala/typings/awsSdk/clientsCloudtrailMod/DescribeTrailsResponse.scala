@@ -18,7 +18,8 @@ object DescribeTrailsResponse {
     __obj.asInstanceOf[DescribeTrailsResponse]
   }
   
-  extension [Self <: DescribeTrailsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTrailsResponse] (val x: Self) extends AnyVal {
     
     inline def setTrailList(value: TrailList): Self = StObject.set(x, "trailList", value.asInstanceOf[js.Any])
     

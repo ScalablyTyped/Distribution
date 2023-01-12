@@ -36,7 +36,8 @@ object FancyBoxIframeSettings {
     __obj.asInstanceOf[FancyBoxIframeSettings]
   }
   
-  extension [Self <: FancyBoxIframeSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancyBoxIframeSettings] (val x: Self) extends AnyVal {
     
     inline def setAttr(value: FancyBoxPlainObject): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     

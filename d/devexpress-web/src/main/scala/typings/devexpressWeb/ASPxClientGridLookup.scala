@@ -110,7 +110,8 @@ object ASPxClientGridLookup {
     __obj.asInstanceOf[ASPxClientGridLookup]
   }
   
-  extension [Self <: ASPxClientGridLookup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGridLookup] (val x: Self) extends AnyVal {
     
     inline def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientGridLookup]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     

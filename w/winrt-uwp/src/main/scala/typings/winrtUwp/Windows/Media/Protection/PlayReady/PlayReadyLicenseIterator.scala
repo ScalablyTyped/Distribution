@@ -37,7 +37,8 @@ object PlayReadyLicenseIterator {
     __obj.asInstanceOf[PlayReadyLicenseIterator]
   }
   
-  extension [Self <: PlayReadyLicenseIterator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayReadyLicenseIterator] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: IPlayReadyLicense): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

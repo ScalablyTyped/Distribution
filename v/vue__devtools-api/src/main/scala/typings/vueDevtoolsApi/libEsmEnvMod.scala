@@ -35,7 +35,8 @@ object libEsmEnvMod {
       __obj.asInstanceOf[GlobalTarget]
     }
     
-    extension [Self <: GlobalTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalTarget] (val x: Self) extends AnyVal {
       
       inline def set__VUE_DEVTOOLS_PLUGINS__(value: js.Array[PluginQueueItem]): Self = StObject.set(x, "__VUE_DEVTOOLS_PLUGINS__", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object libEsmEnvMod {
       __obj.asInstanceOf[PluginQueueItem]
     }
     
-    extension [Self <: PluginQueueItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginQueueItem] (val x: Self) extends AnyVal {
       
       inline def setPluginDescriptor(value: PluginDescriptor): Self = StObject.set(x, "pluginDescriptor", value.asInstanceOf[js.Any])
       

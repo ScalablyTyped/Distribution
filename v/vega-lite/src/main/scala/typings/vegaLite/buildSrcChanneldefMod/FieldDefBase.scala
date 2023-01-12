@@ -66,7 +66,8 @@ object FieldDefBase {
     __obj.asInstanceOf[FieldDefBase[F, B]]
   }
   
-  extension [Self <: FieldDefBase[?, ?], F, B /* <: Bin */](x: Self & (FieldDefBase[F, B])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldDefBase[?, ?], F, B /* <: Bin */] (val x: Self & (FieldDefBase[F, B])) extends AnyVal {
     
     inline def setAggregate(value: Aggregate | HiddenCompositeAggregate): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     

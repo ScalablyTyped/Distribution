@@ -62,7 +62,8 @@ object ConfigurationPropertyDefinitionRuntimeAttributes {
     __obj.asInstanceOf[ConfigurationPropertyDefinitionRuntimeAttributes]
   }
   
-  extension [Self <: ConfigurationPropertyDefinitionRuntimeAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationPropertyDefinitionRuntimeAttributes] (val x: Self) extends AnyVal {
     
     inline def setApply(value: String): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
     

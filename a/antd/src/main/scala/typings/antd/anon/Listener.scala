@@ -19,7 +19,8 @@ object Listener {
     __obj.asInstanceOf[Listener]
   }
   
-  extension [Self <: Listener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
     
     inline def setListener(value: js.ThisFunction1[/* this */ MediaQueryList, /* ev */ MediaQueryListEvent, Any]): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
     

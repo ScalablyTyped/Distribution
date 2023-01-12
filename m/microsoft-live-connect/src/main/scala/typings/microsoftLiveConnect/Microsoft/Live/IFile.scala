@@ -143,7 +143,8 @@ object IFile {
     __obj.asInstanceOf[IFile]
   }
   
-  extension [Self <: IFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFile] (val x: Self) extends AnyVal {
     
     inline def setClient_updated_time(value: String): Self = StObject.set(x, "client_updated_time", value.asInstanceOf[js.Any])
     

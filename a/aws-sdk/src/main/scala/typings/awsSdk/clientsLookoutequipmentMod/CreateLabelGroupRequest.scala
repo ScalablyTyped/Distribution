@@ -33,7 +33,8 @@ object CreateLabelGroupRequest {
     __obj.asInstanceOf[CreateLabelGroupRequest]
   }
   
-  extension [Self <: CreateLabelGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLabelGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: IdempotenceToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

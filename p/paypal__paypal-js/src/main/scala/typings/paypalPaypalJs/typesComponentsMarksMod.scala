@@ -30,7 +30,8 @@ object typesComponentsMarksMod {
       __obj.asInstanceOf[PayPalMarksComponentOptions]
     }
     
-    extension [Self <: PayPalMarksComponentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayPalMarksComponentOptions] (val x: Self) extends AnyVal {
       
       inline def setFundingSource(value: String): Self = StObject.set(x, "fundingSource", value.asInstanceOf[js.Any])
       

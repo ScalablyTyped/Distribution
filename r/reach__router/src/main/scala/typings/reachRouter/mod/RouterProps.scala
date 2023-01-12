@@ -22,7 +22,8 @@ object RouterProps {
     __obj.asInstanceOf[RouterProps]
   }
   
-  extension [Self <: RouterProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterProps] (val x: Self) extends AnyVal {
     
     inline def setBasepath(value: String): Self = StObject.set(x, "basepath", value.asInstanceOf[js.Any])
     

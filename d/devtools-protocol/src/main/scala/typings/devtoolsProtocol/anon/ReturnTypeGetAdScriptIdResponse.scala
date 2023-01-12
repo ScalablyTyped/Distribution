@@ -19,7 +19,8 @@ object ReturnTypeGetAdScriptIdResponse {
     __obj.asInstanceOf[ReturnTypeGetAdScriptIdResponse]
   }
   
-  extension [Self <: ReturnTypeGetAdScriptIdResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetAdScriptIdResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetAdScriptIdRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object AttrsMeanAttrs {
     __obj.asInstanceOf[AttrsMeanAttrs]
   }
   
-  extension [Self <: AttrsMeanAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsMeanAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: MeanAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

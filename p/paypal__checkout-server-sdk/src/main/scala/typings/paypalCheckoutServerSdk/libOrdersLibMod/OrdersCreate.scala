@@ -23,7 +23,8 @@ object OrdersCreate {
       __obj.asInstanceOf[RequestData]
     }
     
-    extension [Self <: RequestData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestData] (val x: Self) extends AnyVal {
       
       inline def setApplication_context(value: OrderApplicationContext): Self = StObject.set(x, "application_context", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object OrdersCreate {
       __obj.asInstanceOf[RequestHeaders]
     }
     
-    extension [Self <: RequestHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestHeaders] (val x: Self) extends AnyVal {
       
       inline def `setPayPal-Partner-Attribution-Id`(value: String): Self = StObject.set(x, "PayPal-Partner-Attribution-Id", value.asInstanceOf[js.Any])
       

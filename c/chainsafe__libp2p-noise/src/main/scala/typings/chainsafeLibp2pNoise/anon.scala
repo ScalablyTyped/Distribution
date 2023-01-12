@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Cs1]
     }
     
-    extension [Self <: Cs1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cs1] (val x: Self) extends AnyVal {
       
       inline def setCs1(value: CipherState): Self = StObject.set(x, "cs1", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Plaintext]
     }
     
-    extension [Self <: Plaintext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plaintext] (val x: Self) extends AnyVal {
       
       inline def setPlaintext(value: js.typedarray.Uint8Array): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
       

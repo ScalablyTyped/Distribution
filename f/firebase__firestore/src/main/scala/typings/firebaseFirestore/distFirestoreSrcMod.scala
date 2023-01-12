@@ -1040,7 +1040,8 @@ object distFirestoreSrcMod {
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      extension [Self <: NameServiceMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
         
         inline def setFirestore(value: typings.firebaseFirestore.distFirestoreSrcApiDatabaseMod.Firestore): Self = StObject.set(x, "firestore", value.asInstanceOf[js.Any])
       }

@@ -15,7 +15,8 @@ object UpdatedArgs {
     __obj.asInstanceOf[UpdatedArgs]
   }
   
-  extension [Self <: UpdatedArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatedArgs] (val x: Self) extends AnyVal {
     
     inline def setForced(value: Boolean): Self = StObject.set(x, "forced", value.asInstanceOf[js.Any])
   }

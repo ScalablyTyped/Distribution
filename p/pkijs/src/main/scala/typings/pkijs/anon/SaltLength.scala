@@ -22,7 +22,8 @@ object SaltLength {
     __obj.asInstanceOf[SaltLength]
   }
   
-  extension [Self <: SaltLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaltLength] (val x: Self) extends AnyVal {
     
     inline def setHashAlgorithm(value: AlgorithmIdentifierSchema): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
     

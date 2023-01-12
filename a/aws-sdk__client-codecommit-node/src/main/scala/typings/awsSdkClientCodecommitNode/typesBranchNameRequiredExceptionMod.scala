@@ -31,7 +31,8 @@ object typesBranchNameRequiredExceptionMod {
       __obj.asInstanceOf[BranchNameRequiredException]
     }
     
-    extension [Self <: BranchNameRequiredException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BranchNameRequiredException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BranchNameRequiredException

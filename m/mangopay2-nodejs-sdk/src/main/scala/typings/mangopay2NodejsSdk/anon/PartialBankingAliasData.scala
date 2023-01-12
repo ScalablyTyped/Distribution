@@ -34,7 +34,8 @@ object PartialBankingAliasData {
     __obj.asInstanceOf[PartialBankingAliasData]
   }
   
-  extension [Self <: PartialBankingAliasData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBankingAliasData] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     

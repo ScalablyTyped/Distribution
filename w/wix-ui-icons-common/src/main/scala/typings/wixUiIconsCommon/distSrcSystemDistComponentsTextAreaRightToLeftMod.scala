@@ -27,7 +27,8 @@ object distSrcSystemDistComponentsTextAreaRightToLeftMod extends Shortcut {
       __obj.asInstanceOf[TextAreaRightToLeftProps]
     }
     
-    extension [Self <: TextAreaRightToLeftProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextAreaRightToLeftProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

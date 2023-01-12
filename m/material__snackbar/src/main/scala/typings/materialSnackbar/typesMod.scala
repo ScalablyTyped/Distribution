@@ -31,7 +31,8 @@ object typesMod {
       __obj.asInstanceOf[MDCSnackbarCloseEventDetail]
     }
     
-    extension [Self <: MDCSnackbarCloseEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCSnackbarCloseEventDetail] (val x: Self) extends AnyVal {
       
       inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       

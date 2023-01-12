@@ -27,7 +27,8 @@ object distTypesClassicEditorSystemDistComponentsShoutoutMod extends Shortcut {
       __obj.asInstanceOf[ShoutoutProps]
     }
     
-    extension [Self <: ShoutoutProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShoutoutProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

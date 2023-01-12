@@ -54,7 +54,8 @@ object ViewPrototype {
     __obj.asInstanceOf[ViewPrototype]
   }
   
-  extension [Self <: ViewPrototype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewPrototype] (val x: Self) extends AnyVal {
     
     inline def setInit(value: js.Function): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     

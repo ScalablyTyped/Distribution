@@ -19,7 +19,8 @@ object EventKeyboardEventValue {
     __obj.asInstanceOf[EventKeyboardEventValue]
   }
   
-  extension [Self <: EventKeyboardEventValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventKeyboardEventValue] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: KeyboardEvent[HTMLInputElement]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

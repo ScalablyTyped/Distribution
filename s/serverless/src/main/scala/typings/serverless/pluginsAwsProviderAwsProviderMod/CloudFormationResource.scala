@@ -24,7 +24,8 @@ object CloudFormationResource {
     __obj.asInstanceOf[CloudFormationResource]
   }
   
-  extension [Self <: CloudFormationResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudFormationResource] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: String): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     

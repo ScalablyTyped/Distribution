@@ -33,7 +33,8 @@ object ReimportApiRequest {
     __obj.asInstanceOf[ReimportApiRequest]
   }
   
-  extension [Self <: ReimportApiRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReimportApiRequest] (val x: Self) extends AnyVal {
     
     inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     

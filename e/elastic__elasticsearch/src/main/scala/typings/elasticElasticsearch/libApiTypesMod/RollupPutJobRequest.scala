@@ -40,7 +40,8 @@ object RollupPutJobRequest {
     __obj.asInstanceOf[RollupPutJobRequest]
   }
   
-  extension [Self <: RollupPutJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupPutJobRequest] (val x: Self) extends AnyVal {
     
     inline def setCron(value: String): Self = StObject.set(x, "cron", value.asInstanceOf[js.Any])
     

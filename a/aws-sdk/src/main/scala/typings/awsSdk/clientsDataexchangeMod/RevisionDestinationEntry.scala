@@ -28,7 +28,8 @@ object RevisionDestinationEntry {
     __obj.asInstanceOf[RevisionDestinationEntry]
   }
   
-  extension [Self <: RevisionDestinationEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevisionDestinationEntry] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: string): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

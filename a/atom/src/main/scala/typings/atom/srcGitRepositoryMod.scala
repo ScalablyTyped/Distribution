@@ -189,7 +189,8 @@ object srcGitRepositoryMod {
       __obj.asInstanceOf[RepoStatusChangedEvent]
     }
     
-    extension [Self <: RepoStatusChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepoStatusChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

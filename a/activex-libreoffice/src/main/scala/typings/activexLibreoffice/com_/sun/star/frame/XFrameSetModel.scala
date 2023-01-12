@@ -34,7 +34,8 @@ object XFrameSetModel {
     __obj.asInstanceOf[XFrameSetModel]
   }
   
-  extension [Self <: XFrameSetModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFrameSetModel] (val x: Self) extends AnyVal {
     
     inline def setGetSource(value: () => String): Self = StObject.set(x, "getSource", js.Any.fromFunction0(value))
     

@@ -49,7 +49,8 @@ object BorderRadiusProps {
     __obj.asInstanceOf[BorderRadiusProps[ThemeType, TVal]]
   }
   
-  extension [Self <: BorderRadiusProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (BorderRadiusProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderRadiusProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BorderRadiusProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setBorderBottomLeftRadius(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
     

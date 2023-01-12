@@ -51,7 +51,8 @@ object RefinementListExposed {
     __obj.asInstanceOf[RefinementListExposed]
   }
   
-  extension [Self <: RefinementListExposed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefinementListExposed] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

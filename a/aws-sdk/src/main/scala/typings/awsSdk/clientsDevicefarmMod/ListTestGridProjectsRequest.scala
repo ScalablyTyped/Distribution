@@ -23,7 +23,8 @@ object ListTestGridProjectsRequest {
     __obj.asInstanceOf[ListTestGridProjectsRequest]
   }
   
-  extension [Self <: ListTestGridProjectsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTestGridProjectsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResult(value: MaxPageSize): Self = StObject.set(x, "maxResult", value.asInstanceOf[js.Any])
     

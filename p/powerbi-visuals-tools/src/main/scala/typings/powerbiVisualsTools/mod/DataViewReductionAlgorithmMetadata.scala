@@ -15,7 +15,8 @@ object DataViewReductionAlgorithmMetadata {
     __obj.asInstanceOf[DataViewReductionAlgorithmMetadata]
   }
   
-  extension [Self <: DataViewReductionAlgorithmMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewReductionAlgorithmMetadata] (val x: Self) extends AnyVal {
     
     inline def setBinnedLineSample(value: js.Object): Self = StObject.set(x, "binnedLineSample", value.asInstanceOf[js.Any])
     

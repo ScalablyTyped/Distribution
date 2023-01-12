@@ -19,7 +19,8 @@ object WafExpressionSetExpression {
     __obj.asInstanceOf[WafExpressionSetExpression]
   }
   
-  extension [Self <: WafExpressionSetExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WafExpressionSetExpression] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

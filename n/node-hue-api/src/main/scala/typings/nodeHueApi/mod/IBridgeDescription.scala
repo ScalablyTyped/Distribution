@@ -27,7 +27,8 @@ object IBridgeDescription {
     __obj.asInstanceOf[IBridgeDescription]
   }
   
-  extension [Self <: IBridgeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBridgeDescription] (val x: Self) extends AnyVal {
     
     inline def setIcons(value: js.Array[IBridgeIcon]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     

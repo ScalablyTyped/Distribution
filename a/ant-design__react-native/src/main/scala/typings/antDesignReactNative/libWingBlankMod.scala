@@ -50,7 +50,8 @@ object libWingBlankMod {
       __obj.asInstanceOf[WingBlankProps]
     }
     
-    extension [Self <: WingBlankProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WingBlankProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object CertValidationFailureEvent {
     __obj.asInstanceOf[CertValidationFailureEvent]
   }
   
-  extension [Self <: CertValidationFailureEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertValidationFailureEvent] (val x: Self) extends AnyVal {
     
     inline def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     

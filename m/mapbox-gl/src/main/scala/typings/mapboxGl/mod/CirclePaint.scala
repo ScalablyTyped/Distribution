@@ -55,7 +55,8 @@ object CirclePaint {
     __obj.asInstanceOf[CirclePaint]
   }
   
-  extension [Self <: CirclePaint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CirclePaint] (val x: Self) extends AnyVal {
     
     inline def `setCircle-blur`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "circle-blur", value.asInstanceOf[js.Any])
     

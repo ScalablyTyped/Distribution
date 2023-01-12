@@ -135,7 +135,8 @@ object PartialNode {
     __obj.asInstanceOf[PartialNode]
   }
   
-  extension [Self <: PartialNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialNode] (val x: Self) extends AnyVal {
     
     inline def setAutoExpandRelations(value: Boolean): Self = StObject.set(x, "autoExpandRelations", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ReturnTypeGetRelayoutBoundaryResponse {
     __obj.asInstanceOf[ReturnTypeGetRelayoutBoundaryResponse]
   }
   
-  extension [Self <: ReturnTypeGetRelayoutBoundaryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetRelayoutBoundaryResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetRelayoutBoundaryRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

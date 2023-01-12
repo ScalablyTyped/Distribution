@@ -23,7 +23,8 @@ object TouchSwipeEvent {
     __obj.asInstanceOf[TouchSwipeEvent]
   }
   
-  extension [Self <: TouchSwipeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchSwipeEvent] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

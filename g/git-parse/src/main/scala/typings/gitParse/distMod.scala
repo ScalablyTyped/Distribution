@@ -37,7 +37,8 @@ object distMod {
       __obj.asInstanceOf[GitToJsOptions]
     }
     
-    extension [Self <: GitToJsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitToJsOptions] (val x: Self) extends AnyVal {
       
       inline def setSinceCommit(value: String): Self = StObject.set(x, "sinceCommit", value.asInstanceOf[js.Any])
       

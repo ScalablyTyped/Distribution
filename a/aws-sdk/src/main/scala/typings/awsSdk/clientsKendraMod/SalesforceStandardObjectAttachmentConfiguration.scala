@@ -23,7 +23,8 @@ object SalesforceStandardObjectAttachmentConfiguration {
     __obj.asInstanceOf[SalesforceStandardObjectAttachmentConfiguration]
   }
   
-  extension [Self <: SalesforceStandardObjectAttachmentConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SalesforceStandardObjectAttachmentConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDocumentTitleFieldName(value: DataSourceFieldName): Self = StObject.set(x, "DocumentTitleFieldName", value.asInstanceOf[js.Any])
     

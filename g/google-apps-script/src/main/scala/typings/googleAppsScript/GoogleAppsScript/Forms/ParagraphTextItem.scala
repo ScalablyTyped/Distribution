@@ -75,7 +75,8 @@ object ParagraphTextItem {
     __obj.asInstanceOf[ParagraphTextItem]
   }
   
-  extension [Self <: ParagraphTextItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphTextItem] (val x: Self) extends AnyVal {
     
     inline def setClearValidation(value: () => ParagraphTextItem): Self = StObject.set(x, "clearValidation", js.Any.fromFunction0(value))
     

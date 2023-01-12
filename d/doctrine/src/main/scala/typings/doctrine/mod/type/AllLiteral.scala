@@ -19,7 +19,8 @@ object AllLiteral {
     __obj.asInstanceOf[AllLiteral]
   }
   
-  extension [Self <: AllLiteral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllLiteral] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.doctrine.doctrineStrings.AllLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

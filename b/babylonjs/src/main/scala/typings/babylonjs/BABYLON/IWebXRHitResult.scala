@@ -48,7 +48,8 @@ object IWebXRHitResult {
     __obj.asInstanceOf[IWebXRHitResult]
   }
   
-  extension [Self <: IWebXRHitResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRHitResult] (val x: Self) extends AnyVal {
     
     inline def setInputSource(value: XRInputSource): Self = StObject.set(x, "inputSource", value.asInstanceOf[js.Any])
     

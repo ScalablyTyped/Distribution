@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Current]
     }
     
-    extension [Self <: Current](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Current] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: HTMLElement): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -62,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: typings.useEditable.distTypesUseEditableMod.Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       

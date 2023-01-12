@@ -31,7 +31,8 @@ object DataRequirementSort {
     __obj.asInstanceOf[DataRequirementSort]
   }
   
-  extension [Self <: DataRequirementSort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataRequirementSort] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: ascending | descending): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

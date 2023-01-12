@@ -78,7 +78,8 @@ object extensionTypes {
       __obj.asInstanceOf[ImageDetails]
     }
     
-    extension [Self <: ImageDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageDetails] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: ImageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object extensionTypes {
       __obj.asInstanceOf[ImageDetailsRect]
     }
     
-    extension [Self <: ImageDetailsRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageDetailsRect] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -190,7 +192,8 @@ object extensionTypes {
       __obj.asInstanceOf[InjectDetails]
     }
     
-    extension [Self <: InjectDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectDetails] (val x: Self) extends AnyVal {
       
       inline def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
       

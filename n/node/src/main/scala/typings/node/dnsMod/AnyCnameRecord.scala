@@ -21,7 +21,8 @@ object AnyCnameRecord {
     __obj.asInstanceOf[AnyCnameRecord]
   }
   
-  extension [Self <: AnyCnameRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnyCnameRecord] (val x: Self) extends AnyVal {
     
     inline def setType(value: CNAME): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

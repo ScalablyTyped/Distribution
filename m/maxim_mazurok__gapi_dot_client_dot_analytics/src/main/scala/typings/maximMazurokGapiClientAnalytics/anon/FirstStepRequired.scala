@@ -28,7 +28,8 @@ object FirstStepRequired {
     __obj.asInstanceOf[FirstStepRequired]
   }
   
-  extension [Self <: FirstStepRequired](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstStepRequired] (val x: Self) extends AnyVal {
     
     inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     

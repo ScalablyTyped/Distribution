@@ -44,7 +44,8 @@ object Linejoin {
     __obj.asInstanceOf[Linejoin]
   }
   
-  extension [Self <: Linejoin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Linejoin] (val x: Self) extends AnyVal {
     
     inline def `setLine-cap`(value: PropertyValueSpecification[butt | round | square]): Self = StObject.set(x, "line-cap", value.asInstanceOf[js.Any])
     

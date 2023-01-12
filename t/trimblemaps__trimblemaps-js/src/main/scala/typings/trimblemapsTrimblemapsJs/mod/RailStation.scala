@@ -24,7 +24,8 @@ object RailStation {
     __obj.asInstanceOf[RailStation]
   }
   
-  extension [Self <: RailStation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RailStation] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: FSAC | R260 | SPLC | ERPC | StationState): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

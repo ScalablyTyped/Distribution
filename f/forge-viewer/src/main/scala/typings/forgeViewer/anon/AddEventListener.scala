@@ -104,7 +104,8 @@ object AddEventListener {
     __obj.asInstanceOf[AddEventListener]
   }
   
-  extension [Self <: AddEventListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddEventListener] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(
       value: (/* type */ String, /* callback */ js.Function1[/* event */ Any, Unit], /* options */ js.UndefOr[Any]) => Any

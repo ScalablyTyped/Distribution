@@ -70,7 +70,8 @@ object PrintHandlers {
     __obj.asInstanceOf[PrintHandlers]
   }
   
-  extension [Self <: PrintHandlers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintHandlers] (val x: Self) extends AnyVal {
     
     inline def setHasGlobalName(value: /* name */ java.lang.String => Boolean): Self = StObject.set(x, "hasGlobalName", js.Any.fromFunction1(value))
     

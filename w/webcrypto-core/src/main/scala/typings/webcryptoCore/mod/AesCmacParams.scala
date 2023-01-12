@@ -18,7 +18,8 @@ object AesCmacParams {
     __obj.asInstanceOf[AesCmacParams]
   }
   
-  extension [Self <: AesCmacParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AesCmacParams] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }

@@ -37,7 +37,8 @@ object PlusMessagingBodyType {
     __obj.asInstanceOf[PlusMessagingBodyType]
   }
   
-  extension [Self <: PlusMessagingBodyType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusMessagingBodyType] (val x: Self) extends AnyVal {
     
     inline def setTextSlashhtml(value: String): Self = StObject.set(x, "text/html", value.asInstanceOf[js.Any])
     

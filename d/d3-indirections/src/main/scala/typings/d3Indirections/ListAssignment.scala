@@ -22,7 +22,8 @@ object ListAssignment {
     __obj.asInstanceOf[ListAssignment]
   }
   
-  extension [Self <: ListAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAssignment] (val x: Self) extends AnyVal {
     
     inline def setResourceIndex(value: Double): Self = StObject.set(x, "resourceIndex", value.asInstanceOf[js.Any])
   }

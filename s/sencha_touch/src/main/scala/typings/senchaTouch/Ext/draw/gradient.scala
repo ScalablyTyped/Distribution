@@ -35,7 +35,8 @@ object gradient {
       __obj.asInstanceOf[IGradient]
     }
     
-    extension [Self <: IGradient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGradient] (val x: Self) extends AnyVal {
       
       inline def setDefines(value: Any): Self = StObject.set(x, "Defines", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object gradient {
       __obj.asInstanceOf[ILinear]
     }
     
-    extension [Self <: ILinear](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILinear] (val x: Self) extends AnyVal {
       
       inline def setThe(value: Double): Self = StObject.set(x, "The", value.asInstanceOf[js.Any])
       
@@ -110,7 +112,8 @@ object gradient {
       __obj.asInstanceOf[IRadial]
     }
     
-    extension [Self <: IRadial](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRadial] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

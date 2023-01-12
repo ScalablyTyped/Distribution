@@ -76,7 +76,8 @@ object XSpellAlternatives {
     __obj.asInstanceOf[XSpellAlternatives]
   }
   
-  extension [Self <: XSpellAlternatives](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSpellAlternatives] (val x: Self) extends AnyVal {
     
     inline def setAlternatives(value: SafeArray[String]): Self = StObject.set(x, "Alternatives", value.asInstanceOf[js.Any])
     

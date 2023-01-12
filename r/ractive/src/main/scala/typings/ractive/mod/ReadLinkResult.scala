@@ -19,7 +19,8 @@ object ReadLinkResult {
     __obj.asInstanceOf[ReadLinkResult]
   }
   
-  extension [Self <: ReadLinkResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadLinkResult] (val x: Self) extends AnyVal {
     
     inline def setKeypath(value: String): Self = StObject.set(x, "keypath", value.asInstanceOf[js.Any])
     

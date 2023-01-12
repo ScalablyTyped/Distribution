@@ -23,7 +23,8 @@ object KinesisStreamSourceConfiguration {
     __obj.asInstanceOf[KinesisStreamSourceConfiguration]
   }
   
-  extension [Self <: KinesisStreamSourceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KinesisStreamSourceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setKinesisStreamARN(value: KinesisStreamARN): Self = StObject.set(x, "KinesisStreamARN", value.asInstanceOf[js.Any])
     

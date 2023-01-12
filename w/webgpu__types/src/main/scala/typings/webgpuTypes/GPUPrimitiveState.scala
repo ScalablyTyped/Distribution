@@ -50,7 +50,8 @@ object GPUPrimitiveState {
     __obj.asInstanceOf[GPUPrimitiveState]
   }
   
-  extension [Self <: GPUPrimitiveState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUPrimitiveState] (val x: Self) extends AnyVal {
     
     inline def setCullMode(value: GPUCullMode): Self = StObject.set(x, "cullMode", value.asInstanceOf[js.Any])
     

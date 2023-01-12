@@ -17,7 +17,8 @@ object ApiDimensionFilterGroup {
     __obj.asInstanceOf[ApiDimensionFilterGroup]
   }
   
-  extension [Self <: ApiDimensionFilterGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiDimensionFilterGroup] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: js.Array[ApiDimensionFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

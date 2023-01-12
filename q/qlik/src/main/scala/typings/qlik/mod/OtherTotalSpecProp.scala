@@ -65,7 +65,8 @@ object OtherTotalSpecProp {
     __obj.asInstanceOf[OtherTotalSpecProp]
   }
   
-  extension [Self <: OtherTotalSpecProp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtherTotalSpecProp] (val x: Self) extends AnyVal {
     
     inline def setQApplyEvenWhenPossiblyWrongResult(value: Boolean): Self = StObject.set(x, "qApplyEvenWhenPossiblyWrongResult", value.asInstanceOf[js.Any])
     

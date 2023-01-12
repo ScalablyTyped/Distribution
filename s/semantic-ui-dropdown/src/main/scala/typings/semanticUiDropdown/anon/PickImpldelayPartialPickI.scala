@@ -174,7 +174,8 @@ object PickImpldelayPartialPickI {
     __obj.asInstanceOf[PickImpldelayPartialPickI]
   }
   
-  extension [Self <: PickImpldelayPartialPickI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImpldelayPartialPickI] (val x: Self) extends AnyVal {
     
     inline def setAction(
       value: activate | select | combo | nothing | hide | (js.ThisFunction3[

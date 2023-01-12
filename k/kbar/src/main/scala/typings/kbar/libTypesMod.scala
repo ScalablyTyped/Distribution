@@ -76,7 +76,8 @@ object libTypesMod {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: String | ReactElement | ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object libTypesMod {
       __obj.asInstanceOf[ActionGroup]
     }
     
-    extension [Self <: ActionGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionGroup] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[ActionImpl]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -182,7 +184,8 @@ object libTypesMod {
       __obj.asInstanceOf[HistoryItem]
     }
     
-    extension [Self <: HistoryItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HistoryItem] (val x: Self) extends AnyVal {
       
       inline def setNegate(value: () => Any): Self = StObject.set(x, "negate", js.Any.fromFunction0(value))
       
@@ -212,7 +215,8 @@ object libTypesMod {
       __obj.asInstanceOf[IKBarContext]
     }
     
-    extension [Self <: IKBarContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKBarContext] (val x: Self) extends AnyVal {
       
       inline def setGetState(value: () => KBarState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
@@ -263,7 +267,8 @@ object libTypesMod {
       __obj.asInstanceOf[KBarOptions]
     }
     
-    extension [Self <: KBarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KBarOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimations(value: EnterMs): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
       
@@ -304,7 +309,8 @@ object libTypesMod {
       __obj.asInstanceOf[KBarProviderProps]
     }
     
-    extension [Self <: KBarProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KBarProviderProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -356,7 +362,8 @@ object libTypesMod {
       __obj.asInstanceOf[KBarState]
     }
     
-    extension [Self <: KBarState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KBarState] (val x: Self) extends AnyVal {
       
       inline def setActions(value: ActionTree): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

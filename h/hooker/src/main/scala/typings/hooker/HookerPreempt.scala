@@ -17,7 +17,8 @@ object HookerPreempt {
     __obj.asInstanceOf[HookerPreempt]
   }
   
-  extension [Self <: HookerPreempt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HookerPreempt] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object WatcherPutWatchResponse {
     __obj.asInstanceOf[WatcherPutWatchResponse]
   }
   
-  extension [Self <: WatcherPutWatchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherPutWatchResponse] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: Boolean): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     

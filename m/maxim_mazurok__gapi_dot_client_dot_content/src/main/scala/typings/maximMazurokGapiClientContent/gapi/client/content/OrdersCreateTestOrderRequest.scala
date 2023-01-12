@@ -28,7 +28,8 @@ object OrdersCreateTestOrderRequest {
     __obj.asInstanceOf[OrdersCreateTestOrderRequest]
   }
   
-  extension [Self <: OrdersCreateTestOrderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrdersCreateTestOrderRequest] (val x: Self) extends AnyVal {
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     

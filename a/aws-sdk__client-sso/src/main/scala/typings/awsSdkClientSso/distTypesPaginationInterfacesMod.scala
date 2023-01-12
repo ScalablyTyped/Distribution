@@ -23,7 +23,8 @@ object distTypesPaginationInterfacesMod {
       __obj.asInstanceOf[SSOPaginationConfiguration]
     }
     
-    extension [Self <: SSOPaginationConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SSOPaginationConfiguration] (val x: Self) extends AnyVal {
       
       inline def setClient(value: SSO | SSOClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }

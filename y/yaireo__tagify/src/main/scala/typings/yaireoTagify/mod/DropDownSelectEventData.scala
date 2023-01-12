@@ -27,7 +27,8 @@ object DropDownSelectEventData {
     __obj.asInstanceOf[DropDownSelectEventData[T]]
   }
   
-  extension [Self <: DropDownSelectEventData[?], T /* <: BaseTagData */](x: Self & DropDownSelectEventData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropDownSelectEventData[?], T /* <: BaseTagData */] (val x: Self & DropDownSelectEventData[T]) extends AnyVal {
     
     inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object Type {
     __obj.asInstanceOf[Type[N, O]]
   }
   
-  extension [Self <: Type[?, ?], N, O](x: Self & (Type[N, O])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Type[?, ?], N, O] (val x: Self & (Type[N, O])) extends AnyVal {
     
     inline def setBaseVersion(value: Double): Self = StObject.set(x, "baseVersion", value.asInstanceOf[js.Any])
     

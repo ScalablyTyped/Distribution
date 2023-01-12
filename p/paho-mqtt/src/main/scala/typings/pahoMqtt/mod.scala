@@ -482,7 +482,8 @@ object mod {
             __obj.asInstanceOf[ConnectionOptions]
           }
           
-          extension [Self <: ConnectionOptions](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
             
             inline def setCleanSession(value: Boolean): Self = StObject.set(x, "cleanSession", value.asInstanceOf[js.Any])
             
@@ -583,7 +584,8 @@ object mod {
             __obj.asInstanceOf[MQTTError]
           }
           
-          extension [Self <: MQTTError](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: MQTTError] (val x: Self) extends AnyVal {
             
             inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
             
@@ -637,7 +639,8 @@ object mod {
             __obj.asInstanceOf[OnSubscribeSuccessParams]
           }
           
-          extension [Self <: OnSubscribeSuccessParams](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: OnSubscribeSuccessParams] (val x: Self) extends AnyVal {
             
             inline def setGrantedQos(value: Qos): Self = StObject.set(x, "grantedQos", value.asInstanceOf[js.Any])
           }
@@ -705,7 +708,8 @@ object mod {
             __obj.asInstanceOf[SubscribeOptions]
           }
           
-          extension [Self <: SubscribeOptions](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: SubscribeOptions] (val x: Self) extends AnyVal {
             
             inline def setInvocationContext(value: Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
             
@@ -742,7 +746,8 @@ object mod {
             __obj.asInstanceOf[TraceElement]
           }
           
-          extension [Self <: TraceElement](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: TraceElement] (val x: Self) extends AnyVal {
             
             inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
             
@@ -779,7 +784,8 @@ object mod {
             __obj.asInstanceOf[UnsubscribeOptions]
           }
           
-          extension [Self <: UnsubscribeOptions](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: UnsubscribeOptions] (val x: Self) extends AnyVal {
             
             inline def setInvocationContext(value: Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
             
@@ -814,7 +820,8 @@ object mod {
             __obj.asInstanceOf[WithInvocationContext]
           }
           
-          extension [Self <: WithInvocationContext](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: WithInvocationContext] (val x: Self) extends AnyVal {
             
             inline def setInvocationContext(value: Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
           }

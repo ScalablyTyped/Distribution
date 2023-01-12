@@ -29,7 +29,8 @@ object ParaUserDefinedAttributesSupplier {
     __obj.asInstanceOf[ParaUserDefinedAttributesSupplier]
   }
   
-  extension [Self <: ParaUserDefinedAttributesSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParaUserDefinedAttributesSupplier] (val x: Self) extends AnyVal {
     
     inline def setParaUserDefinedAttributes(value: XNameContainer): Self = StObject.set(x, "ParaUserDefinedAttributes", value.asInstanceOf[js.Any])
   }

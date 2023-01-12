@@ -18,7 +18,8 @@ object TeamResponse {
     __obj.asInstanceOf[TeamResponse]
   }
   
-  extension [Self <: TeamResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamResponse] (val x: Self) extends AnyVal {
     
     inline def setTeam(value: Team): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
   }

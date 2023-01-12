@@ -19,7 +19,8 @@ object ITheme {
     __obj.asInstanceOf[ITheme]
   }
   
-  extension [Self <: ITheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITheme] (val x: Self) extends AnyVal {
     
     inline def setLast(value: `0`): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
   }

@@ -31,7 +31,8 @@ object Attenuation {
     __obj.asInstanceOf[Attenuation]
   }
   
-  extension [Self <: Attenuation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Attenuation] (val x: Self) extends AnyVal {
     
     inline def setAttenuation(value: Boolean): Self = StObject.set(x, "attenuation", value.asInstanceOf[js.Any])
     

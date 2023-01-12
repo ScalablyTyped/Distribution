@@ -22,7 +22,8 @@ object ListCaPoolsResponse {
     __obj.asInstanceOf[ListCaPoolsResponse]
   }
   
-  extension [Self <: ListCaPoolsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCaPoolsResponse] (val x: Self) extends AnyVal {
     
     inline def setCaPools(value: js.Array[CaPool]): Self = StObject.set(x, "caPools", value.asInstanceOf[js.Any])
     

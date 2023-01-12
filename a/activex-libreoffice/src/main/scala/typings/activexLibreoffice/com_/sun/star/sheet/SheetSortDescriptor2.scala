@@ -64,7 +64,8 @@ object SheetSortDescriptor2 {
     __obj.asInstanceOf[SheetSortDescriptor2]
   }
   
-  extension [Self <: SheetSortDescriptor2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetSortDescriptor2] (val x: Self) extends AnyVal {
     
     inline def setBindFormatsToContent(value: Boolean): Self = StObject.set(x, "BindFormatsToContent", value.asInstanceOf[js.Any])
     

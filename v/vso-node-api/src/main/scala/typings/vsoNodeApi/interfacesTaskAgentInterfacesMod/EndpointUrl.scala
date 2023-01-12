@@ -23,7 +23,8 @@ object EndpointUrl {
     __obj.asInstanceOf[EndpointUrl]
   }
   
-  extension [Self <: EndpointUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointUrl] (val x: Self) extends AnyVal {
     
     inline def setDependsOn(value: DependsOn): Self = StObject.set(x, "dependsOn", value.asInstanceOf[js.Any])
     

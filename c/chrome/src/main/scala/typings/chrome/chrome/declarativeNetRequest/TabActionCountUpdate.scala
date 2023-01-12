@@ -21,7 +21,8 @@ object TabActionCountUpdate {
     __obj.asInstanceOf[TabActionCountUpdate]
   }
   
-  extension [Self <: TabActionCountUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabActionCountUpdate] (val x: Self) extends AnyVal {
     
     inline def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
     

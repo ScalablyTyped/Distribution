@@ -121,7 +121,8 @@ object MediaControllerPlaybackAbilities {
     __obj.asInstanceOf[MediaControllerPlaybackAbilities]
   }
   
-  extension [Self <: MediaControllerPlaybackAbilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaControllerPlaybackAbilities] (val x: Self) extends AnyVal {
     
     inline def setForward(value: MediaControllerAbilitySupport): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     

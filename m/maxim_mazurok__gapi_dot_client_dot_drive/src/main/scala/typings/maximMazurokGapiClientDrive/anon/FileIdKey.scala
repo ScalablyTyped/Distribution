@@ -47,7 +47,8 @@ object FileIdKey {
     __obj.asInstanceOf[FileIdKey]
   }
   
-  extension [Self <: FileIdKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileIdKey] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

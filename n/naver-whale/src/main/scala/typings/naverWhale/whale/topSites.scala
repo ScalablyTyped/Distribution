@@ -27,7 +27,8 @@ object topSites {
       __obj.asInstanceOf[MostVisitedURL]
     }
     
-    extension [Self <: MostVisitedURL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MostVisitedURL] (val x: Self) extends AnyVal {
       
       inline def setFrom_history(value: Boolean): Self = StObject.set(x, "from_history", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object topSites {
       __obj.asInstanceOf[MostVisitedURL2]
     }
     
-    extension [Self <: MostVisitedURL2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MostVisitedURL2] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

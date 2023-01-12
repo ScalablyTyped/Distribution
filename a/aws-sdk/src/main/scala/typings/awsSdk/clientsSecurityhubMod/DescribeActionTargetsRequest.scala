@@ -28,7 +28,8 @@ object DescribeActionTargetsRequest {
     __obj.asInstanceOf[DescribeActionTargetsRequest]
   }
   
-  extension [Self <: DescribeActionTargetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeActionTargetsRequest] (val x: Self) extends AnyVal {
     
     inline def setActionTargetArns(value: ArnList): Self = StObject.set(x, "ActionTargetArns", value.asInstanceOf[js.Any])
     

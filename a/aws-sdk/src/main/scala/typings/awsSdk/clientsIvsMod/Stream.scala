@@ -48,7 +48,8 @@ object Stream {
     __obj.asInstanceOf[Stream]
   }
   
-  extension [Self <: Stream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
     
     inline def setChannelArn(value: ChannelArn): Self = StObject.set(x, "channelArn", value.asInstanceOf[js.Any])
     

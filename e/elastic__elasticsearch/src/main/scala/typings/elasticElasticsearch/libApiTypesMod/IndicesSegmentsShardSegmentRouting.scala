@@ -19,7 +19,8 @@ object IndicesSegmentsShardSegmentRouting {
     __obj.asInstanceOf[IndicesSegmentsShardSegmentRouting]
   }
   
-  extension [Self <: IndicesSegmentsShardSegmentRouting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSegmentsShardSegmentRouting] (val x: Self) extends AnyVal {
     
     inline def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     

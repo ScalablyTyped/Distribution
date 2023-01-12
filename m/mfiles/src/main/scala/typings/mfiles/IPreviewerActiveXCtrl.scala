@@ -32,7 +32,8 @@ object IPreviewerActiveXCtrl {
     __obj.asInstanceOf[IPreviewerActiveXCtrl]
   }
   
-  extension [Self <: IPreviewerActiveXCtrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPreviewerActiveXCtrl] (val x: Self) extends AnyVal {
     
     inline def setClearPreview(value: () => Double): Self = StObject.set(x, "ClearPreview", js.Any.fromFunction0(value))
     

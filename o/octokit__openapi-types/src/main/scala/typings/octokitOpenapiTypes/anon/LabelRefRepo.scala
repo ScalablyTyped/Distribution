@@ -23,7 +23,8 @@ object LabelRefRepo {
     __obj.asInstanceOf[LabelRefRepo]
   }
   
-  extension [Self <: LabelRefRepo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelRefRepo] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

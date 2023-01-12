@@ -35,7 +35,8 @@ object SchemaOptions {
     __obj.asInstanceOf[SchemaOptions]
   }
   
-  extension [Self <: SchemaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaOptions] (val x: Self) extends AnyVal {
     
     inline def set$id(value: String): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
     

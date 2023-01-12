@@ -49,7 +49,8 @@ object srcThemeManagerMod {
       __obj.asInstanceOf[ThemeManager]
     }
     
-    extension [Self <: ThemeManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeManager] (val x: Self) extends AnyVal {
       
       inline def setGetActiveThemeNames(value: () => js.UndefOr[js.Array[String]]): Self = StObject.set(x, "getActiveThemeNames", js.Any.fromFunction0(value))
       

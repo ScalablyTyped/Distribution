@@ -23,7 +23,8 @@ object StartMLLabelingSetGenerationTaskRunRequest {
     __obj.asInstanceOf[StartMLLabelingSetGenerationTaskRunRequest]
   }
   
-  extension [Self <: StartMLLabelingSetGenerationTaskRunRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartMLLabelingSetGenerationTaskRunRequest] (val x: Self) extends AnyVal {
     
     inline def setOutputS3Path(value: UriString): Self = StObject.set(x, "OutputS3Path", value.asInstanceOf[js.Any])
     

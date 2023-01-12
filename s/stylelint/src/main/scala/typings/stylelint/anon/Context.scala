@@ -28,7 +28,8 @@ object Context {
     __obj.asInstanceOf[Context[T, O]]
   }
   
-  extension [Self <: Context[?, ?], T, O /* <: js.Object */](x: Self & (Context[T, O])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Context[?, ?], T, O /* <: js.Object */] (val x: Self & (Context[T, O])) extends AnyVal {
     
     inline def setContext(value: RuleContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

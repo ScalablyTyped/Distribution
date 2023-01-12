@@ -27,7 +27,8 @@ object EBSStorageInfo {
     __obj.asInstanceOf[EBSStorageInfo]
   }
   
-  extension [Self <: EBSStorageInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EBSStorageInfo] (val x: Self) extends AnyVal {
     
     inline def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
     

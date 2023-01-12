@@ -67,7 +67,8 @@ object IJsonWriter {
     __obj.asInstanceOf[IJsonWriter]
   }
   
-  extension [Self <: IJsonWriter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IJsonWriter] (val x: Self) extends AnyVal {
     
     inline def setAllowSingle(value: Boolean): Self = StObject.set(x, "allowSingle", value.asInstanceOf[js.Any])
     

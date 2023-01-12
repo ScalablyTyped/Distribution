@@ -19,7 +19,8 @@ object CertIntoTypePlugin {
     __obj.asInstanceOf[CertIntoTypePlugin]
   }
   
-  extension [Self <: CertIntoTypePlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertIntoTypePlugin] (val x: Self) extends AnyVal {
     
     inline def setCAPICOM_CERT_INFO_ISSUER_SIMPLE_NAME(value: `1`): Self = StObject.set(x, "CAPICOM_CERT_INFO_ISSUER_SIMPLE_NAME", value.asInstanceOf[js.Any])
     

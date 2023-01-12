@@ -35,7 +35,8 @@ object ASPxDesignerNavigateTab {
     __obj.asInstanceOf[ASPxDesignerNavigateTab]
   }
   
-  extension [Self <: ASPxDesignerNavigateTab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxDesignerNavigateTab] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<string> */ Any

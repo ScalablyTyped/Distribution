@@ -18,7 +18,8 @@ object DeleteCollectionResponse {
     __obj.asInstanceOf[DeleteCollectionResponse]
   }
   
-  extension [Self <: DeleteCollectionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCollectionResponse] (val x: Self) extends AnyVal {
     
     inline def setStatusCode(value: UInteger): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object libAvatarListMod {
       __obj.asInstanceOf[AvatarListProps]
     }
     
-    extension [Self <: AvatarListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvatarListProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

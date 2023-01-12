@@ -26,7 +26,8 @@ object TagHeaderFlags {
     __obj.asInstanceOf[TagHeaderFlags]
   }
   
-  extension [Self <: TagHeaderFlags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagHeaderFlags] (val x: Self) extends AnyVal {
     
     inline def setExperimental_indicator(value: Boolean): Self = StObject.set(x, "experimental_indicator", value.asInstanceOf[js.Any])
     

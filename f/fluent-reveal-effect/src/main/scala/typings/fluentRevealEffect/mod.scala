@@ -23,7 +23,8 @@ object mod {
       __obj.asInstanceOf[FluentRevealEffectType]
     }
     
-    extension [Self <: FluentRevealEffectType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FluentRevealEffectType] (val x: Self) extends AnyVal {
       
       inline def setApplyEffect(value: (String, RevealOptions) => Unit): Self = StObject.set(x, "applyEffect", js.Any.fromFunction2(value))
     }
@@ -48,7 +49,8 @@ object mod {
       __obj.asInstanceOf[RevealOptions]
     }
     
-    extension [Self <: RevealOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RevealOptions] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: BorderSelector): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

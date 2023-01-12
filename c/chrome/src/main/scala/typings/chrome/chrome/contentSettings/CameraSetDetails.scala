@@ -21,7 +21,8 @@ object CameraSetDetails {
     __obj.asInstanceOf[CameraSetDetails]
   }
   
-  extension [Self <: CameraSetDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraSetDetails] (val x: Self) extends AnyVal {
     
     inline def setSetting(value: allow | block | ask): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }

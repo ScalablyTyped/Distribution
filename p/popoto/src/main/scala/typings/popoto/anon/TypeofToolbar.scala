@@ -39,7 +39,8 @@ object TypeofToolbar {
     __obj.asInstanceOf[TypeofToolbar]
   }
   
-  extension [Self <: TypeofToolbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofToolbar] (val x: Self) extends AnyVal {
     
     inline def setRender(value: SVGGElement => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     

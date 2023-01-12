@@ -21,7 +21,8 @@ object dxGanttContextMenuItem {
     __obj.asInstanceOf[dxGanttContextMenuItem]
   }
   
-  extension [Self <: dxGanttContextMenuItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxGanttContextMenuItem] (val x: Self) extends AnyVal {
     
     inline def setName(value: GanttPredefinedContextMenuItem | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

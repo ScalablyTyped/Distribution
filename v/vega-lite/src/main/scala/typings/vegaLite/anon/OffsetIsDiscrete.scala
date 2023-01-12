@@ -17,7 +17,8 @@ object OffsetIsDiscrete {
     __obj.asInstanceOf[OffsetIsDiscrete]
   }
   
-  extension [Self <: OffsetIsDiscrete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OffsetIsDiscrete] (val x: Self) extends AnyVal {
     
     inline def setOffsetIsDiscrete(value: Boolean): Self = StObject.set(x, "offsetIsDiscrete", value.asInstanceOf[js.Any])
     

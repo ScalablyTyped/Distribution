@@ -22,7 +22,8 @@ object PartialScrollSpyOptions {
     __obj.asInstanceOf[PartialScrollSpyOptions]
   }
   
-  extension [Self <: PartialScrollSpyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialScrollSpyOptions] (val x: Self) extends AnyVal {
     
     inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object Bg {
     __obj.asInstanceOf[Bg]
   }
   
-  extension [Self <: Bg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bg] (val x: Self) extends AnyVal {
     
     inline def setBg(value: js.Array[EventRenderRange]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     

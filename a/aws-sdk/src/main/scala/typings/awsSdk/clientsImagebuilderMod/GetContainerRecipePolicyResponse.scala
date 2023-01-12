@@ -23,7 +23,8 @@ object GetContainerRecipePolicyResponse {
     __obj.asInstanceOf[GetContainerRecipePolicyResponse]
   }
   
-  extension [Self <: GetContainerRecipePolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetContainerRecipePolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setPolicy(value: ResourcePolicyDocument): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     

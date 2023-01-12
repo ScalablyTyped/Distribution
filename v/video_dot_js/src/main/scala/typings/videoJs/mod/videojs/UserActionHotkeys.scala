@@ -19,7 +19,8 @@ object UserActionHotkeys {
     __obj.asInstanceOf[UserActionHotkeys]
   }
   
-  extension [Self <: UserActionHotkeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserActionHotkeys] (val x: Self) extends AnyVal {
     
     inline def setFullscreenKey(value: /* event */ KeyboardEvent => Boolean): Self = StObject.set(x, "fullscreenKey", js.Any.fromFunction1(value))
     

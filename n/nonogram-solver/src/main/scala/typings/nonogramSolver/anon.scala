@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[RequiredInput]
     }
     
-    extension [Self <: RequiredInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredInput] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

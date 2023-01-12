@@ -23,7 +23,8 @@ object BatchPutGeofenceError {
     __obj.asInstanceOf[BatchPutGeofenceError]
   }
   
-  extension [Self <: BatchPutGeofenceError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchPutGeofenceError] (val x: Self) extends AnyVal {
     
     inline def setError(value: BatchItemError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     

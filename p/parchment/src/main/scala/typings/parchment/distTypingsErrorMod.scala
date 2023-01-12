@@ -41,7 +41,8 @@ object distTypingsErrorMod {
       __obj.asInstanceOf[ParchmentError]
     }
     
-    extension [Self <: ParchmentError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParchmentError] (val x: Self) extends AnyVal {
       
       inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     }

@@ -19,7 +19,8 @@ object FeatureType {
     __obj.asInstanceOf[FeatureType]
   }
   
-  extension [Self <: FeatureType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureType] (val x: Self) extends AnyVal {
     
     inline def setCertain(value: Color): Self = StObject.set(x, "certain", value.asInstanceOf[js.Any])
     

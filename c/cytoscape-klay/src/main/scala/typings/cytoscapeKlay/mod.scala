@@ -225,7 +225,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[KlayAlgorithmOptions]
     }
     
-    extension [Self <: KlayAlgorithmOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KlayAlgorithmOptions] (val x: Self) extends AnyVal {
       
       inline def setAddUnnecessaryBendpoints(value: Boolean): Self = StObject.set(x, "addUnnecessaryBendpoints", value.asInstanceOf[js.Any])
       
@@ -394,7 +395,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[KlayLayoutOptions]
     }
     
-    extension [Self <: KlayLayoutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KlayLayoutOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

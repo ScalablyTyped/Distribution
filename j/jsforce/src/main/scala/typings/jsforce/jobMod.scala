@@ -72,7 +72,8 @@ object jobMod {
       __obj.asInstanceOf[JobInfo]
     }
     
-    extension [Self <: JobInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JobInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object SetFlagOptions {
     __obj.asInstanceOf[SetFlagOptions]
   }
   
-  extension [Self <: SetFlagOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetFlagOptions] (val x: Self) extends AnyVal {
     
     inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
   }

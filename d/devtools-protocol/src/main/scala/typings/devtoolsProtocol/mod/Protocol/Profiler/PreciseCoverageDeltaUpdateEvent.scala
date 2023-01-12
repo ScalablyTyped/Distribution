@@ -28,7 +28,8 @@ object PreciseCoverageDeltaUpdateEvent {
     __obj.asInstanceOf[PreciseCoverageDeltaUpdateEvent]
   }
   
-  extension [Self <: PreciseCoverageDeltaUpdateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreciseCoverageDeltaUpdateEvent] (val x: Self) extends AnyVal {
     
     inline def setOccasion(value: String): Self = StObject.set(x, "occasion", value.asInstanceOf[js.Any])
     

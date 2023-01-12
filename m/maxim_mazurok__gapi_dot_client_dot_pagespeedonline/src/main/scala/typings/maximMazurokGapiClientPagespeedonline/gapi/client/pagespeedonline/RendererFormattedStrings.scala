@@ -160,7 +160,8 @@ object RendererFormattedStrings {
     __obj.asInstanceOf[RendererFormattedStrings]
   }
   
-  extension [Self <: RendererFormattedStrings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RendererFormattedStrings] (val x: Self) extends AnyVal {
     
     inline def setAuditGroupExpandTooltip(value: String): Self = StObject.set(x, "auditGroupExpandTooltip", value.asInstanceOf[js.Any])
     

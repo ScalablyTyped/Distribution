@@ -17,7 +17,8 @@ object dataSeries {
     __obj.asInstanceOf[dataSeries]
   }
   
-  extension [Self <: dataSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dataSeries] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

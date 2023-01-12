@@ -23,7 +23,8 @@ object DeleteFilterRequest {
     __obj.asInstanceOf[DeleteFilterRequest]
   }
   
-  extension [Self <: DeleteFilterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFilterRequest] (val x: Self) extends AnyVal {
     
     inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     

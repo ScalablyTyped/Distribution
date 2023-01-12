@@ -33,7 +33,8 @@ object AppsDynamiteGsuiteIntegrationMetadata {
     __obj.asInstanceOf[AppsDynamiteGsuiteIntegrationMetadata]
   }
   
-  extension [Self <: AppsDynamiteGsuiteIntegrationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteGsuiteIntegrationMetadata] (val x: Self) extends AnyVal {
     
     inline def setActivityFeedData(value: AppsDynamiteSharedActivityFeedAnnotationData): Self = StObject.set(x, "activityFeedData", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object TextEditorSelectionChangeEvent {
     __obj.asInstanceOf[TextEditorSelectionChangeEvent]
   }
   
-  extension [Self <: TextEditorSelectionChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextEditorSelectionChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setKind(value: TextEditorSelectionChangeKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

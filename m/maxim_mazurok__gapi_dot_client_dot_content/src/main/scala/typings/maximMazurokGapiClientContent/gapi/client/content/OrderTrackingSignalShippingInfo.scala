@@ -58,7 +58,8 @@ object OrderTrackingSignalShippingInfo {
     __obj.asInstanceOf[OrderTrackingSignalShippingInfo]
   }
   
-  extension [Self <: OrderTrackingSignalShippingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderTrackingSignalShippingInfo] (val x: Self) extends AnyVal {
     
     inline def setActualDeliveryTime(value: DateTime): Self = StObject.set(x, "actualDeliveryTime", value.asInstanceOf[js.Any])
     

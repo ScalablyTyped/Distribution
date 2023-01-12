@@ -24,7 +24,8 @@ object AppLicense {
     __obj.asInstanceOf[AppLicense]
   }
   
-  extension [Self <: AppLicense](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppLicense] (val x: Self) extends AnyVal {
     
     inline def setGet_rawXMLLicenseToken(value: () => String): Self = StObject.set(x, "get_rawXMLLicenseToken", js.Any.fromFunction0(value))
   }

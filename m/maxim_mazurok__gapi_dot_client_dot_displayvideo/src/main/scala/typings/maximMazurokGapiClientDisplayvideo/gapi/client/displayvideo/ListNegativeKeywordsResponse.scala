@@ -19,7 +19,8 @@ object ListNegativeKeywordsResponse {
     __obj.asInstanceOf[ListNegativeKeywordsResponse]
   }
   
-  extension [Self <: ListNegativeKeywordsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNegativeKeywordsResponse] (val x: Self) extends AnyVal {
     
     inline def setNegativeKeywords(value: js.Array[NegativeKeyword]): Self = StObject.set(x, "negativeKeywords", value.asInstanceOf[js.Any])
     

@@ -164,7 +164,8 @@ object DOMMouseEvent {
     __obj.asInstanceOf[DOMMouseEvent]
   }
   
-  extension [Self <: DOMMouseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMMouseEvent] (val x: Self) extends AnyVal {
     
     inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
     

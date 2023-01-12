@@ -24,7 +24,8 @@ object CompareParam {
     __obj.asInstanceOf[CompareParam]
   }
   
-  extension [Self <: CompareParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompareParam] (val x: Self) extends AnyVal {
     
     inline def set$compare(value: OrArray[String]): Self = StObject.set(x, "$compare", value.asInstanceOf[js.Any])
     

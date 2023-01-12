@@ -22,7 +22,8 @@ object TakePhotoOptions {
     __obj.asInstanceOf[TakePhotoOptions]
   }
   
-  extension [Self <: TakePhotoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TakePhotoOptions] (val x: Self) extends AnyVal {
     
     inline def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object CHITEST {
     __obj.asInstanceOf[CHITEST]
   }
   
-  extension [Self <: CHITEST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CHITEST] (val x: Self) extends AnyVal {
     
     inline def setCHITEST(value: String): Self = StObject.set(x, "CHITEST", value.asInstanceOf[js.Any])
     

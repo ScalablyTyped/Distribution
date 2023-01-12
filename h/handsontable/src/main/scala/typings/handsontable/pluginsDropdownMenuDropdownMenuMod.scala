@@ -62,7 +62,8 @@ object pluginsDropdownMenuDropdownMenuMod {
       __obj.asInstanceOf[DetailedSettings]
     }
     
-    extension [Self <: DetailedSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailedSettings] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* key */ String, /* selection */ js.Array[Selection], /* clickEvent */ MouseEvent) => Unit
@@ -87,7 +88,8 @@ object pluginsDropdownMenuDropdownMenuMod {
       __obj.asInstanceOf[SeparatorObject]
     }
     
-    extension [Self <: SeparatorObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeparatorObject] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

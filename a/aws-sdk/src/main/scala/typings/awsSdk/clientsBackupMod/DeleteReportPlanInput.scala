@@ -18,7 +18,8 @@ object DeleteReportPlanInput {
     __obj.asInstanceOf[DeleteReportPlanInput]
   }
   
-  extension [Self <: DeleteReportPlanInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteReportPlanInput] (val x: Self) extends AnyVal {
     
     inline def setReportPlanName(value: ReportPlanName): Self = StObject.set(x, "ReportPlanName", value.asInstanceOf[js.Any])
   }

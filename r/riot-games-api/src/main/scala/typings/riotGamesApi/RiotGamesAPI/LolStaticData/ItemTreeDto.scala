@@ -17,7 +17,8 @@ object ItemTreeDto {
     __obj.asInstanceOf[ItemTreeDto]
   }
   
-  extension [Self <: ItemTreeDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemTreeDto] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object NodeNextConfig {
     __obj.asInstanceOf[NodeNextConfig]
   }
   
-  extension [Self <: NodeNextConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeNextConfig] (val x: Self) extends AnyVal {
     
     inline def setType(value: nodenext): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

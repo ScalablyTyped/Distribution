@@ -43,7 +43,8 @@ object distLibCommandsZrangebyscoreMod {
       __obj.asInstanceOf[ZRangeByScoreOptions]
     }
     
-    extension [Self <: ZRangeByScoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZRangeByScoreOptions] (val x: Self) extends AnyVal {
       
       inline def setLIMIT(value: Count): Self = StObject.set(x, "LIMIT", value.asInstanceOf[js.Any])
       

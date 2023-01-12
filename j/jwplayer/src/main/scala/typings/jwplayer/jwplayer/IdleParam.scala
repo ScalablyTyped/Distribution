@@ -18,7 +18,8 @@ object IdleParam {
     __obj.asInstanceOf[IdleParam]
   }
   
-  extension [Self <: IdleParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdleParam] (val x: Self) extends AnyVal {
     
     inline def setOldstate(value: buffering | playing | paused): Self = StObject.set(x, "oldstate", value.asInstanceOf[js.Any])
   }

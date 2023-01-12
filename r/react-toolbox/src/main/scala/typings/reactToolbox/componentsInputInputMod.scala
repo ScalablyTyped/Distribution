@@ -163,7 +163,8 @@ object componentsInputInputMod {
       __obj.asInstanceOf[InputProps]
     }
     
-    extension [Self <: InputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -325,7 +326,8 @@ object componentsInputInputMod {
       __obj.asInstanceOf[InputTheme]
     }
     
-    extension [Self <: InputTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputTheme] (val x: Self) extends AnyVal {
       
       inline def setBar(value: String): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
       

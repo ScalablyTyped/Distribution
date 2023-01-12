@@ -34,7 +34,8 @@ object ClassNames {
     __obj.asInstanceOf[ClassNames]
   }
   
-  extension [Self <: ClassNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassNames] (val x: Self) extends AnyVal {
     
     inline def setBASE(value: `x-hellosign-embedded`): Self = StObject.set(x, "BASE", value.asInstanceOf[js.Any])
     

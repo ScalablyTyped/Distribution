@@ -41,7 +41,8 @@ object rsocketserverMod {
       __obj.asInstanceOf[RSocketServer[D, M]]
     }
     
-    extension [Self <: RSocketServer[?, ?], D, M](x: Self & (RSocketServer[D, M])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RSocketServer[?, ?], D, M] (val x: Self & (RSocketServer[D, M])) extends AnyVal {
       
       inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
@@ -71,7 +72,8 @@ object rsocketserverMod {
       __obj.asInstanceOf[ServerConfig[D, M]]
     }
     
-    extension [Self <: ServerConfig[?, ?], D, M](x: Self & (ServerConfig[D, M])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerConfig[?, ?], D, M] (val x: Self & (ServerConfig[D, M])) extends AnyVal {
       
       inline def setErrorHandler(value: /* e */ js.Error => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
       
@@ -104,7 +106,8 @@ object rsocketserverMod {
       __obj.asInstanceOf[TransportServer]
     }
     
-    extension [Self <: TransportServer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransportServer] (val x: Self) extends AnyVal {
       
       inline def setStart(value: () => Flowable[DuplexConnection]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       

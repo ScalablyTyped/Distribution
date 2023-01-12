@@ -18,7 +18,8 @@ object Plan {
     __obj.asInstanceOf[Plan]
   }
   
-  extension [Self <: Plan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Plan] (val x: Self) extends AnyVal {
     
     inline def setAddons(value: StringDictionary[String]): Self = StObject.set(x, "addons", value.asInstanceOf[js.Any])
     

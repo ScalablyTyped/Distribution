@@ -50,7 +50,8 @@ object distCjsSerializerMod {
       __obj.asInstanceOf[SerializerOptions[T]]
     }
     
-    extension [Self <: SerializerOptions[?], T /* <: TreeAdapterTypeMap[Any, Any, Any, Any, Any, Any, Any, Any, Any, Any] */](x: Self & SerializerOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializerOptions[?], T /* <: TreeAdapterTypeMap[Any, Any, Any, Any, Any, Any, Any, Any, Any, Any] */] (val x: Self & SerializerOptions[T]) extends AnyVal {
       
       inline def setScriptingEnabled(value: Boolean): Self = StObject.set(x, "scriptingEnabled", value.asInstanceOf[js.Any])
       

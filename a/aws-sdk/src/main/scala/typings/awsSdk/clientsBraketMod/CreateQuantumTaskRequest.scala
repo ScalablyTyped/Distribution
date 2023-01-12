@@ -65,7 +65,8 @@ object CreateQuantumTaskRequest {
     __obj.asInstanceOf[CreateQuantumTaskRequest]
   }
   
-  extension [Self <: CreateQuantumTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateQuantumTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setAction(value: JsonValue): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

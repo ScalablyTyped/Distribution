@@ -382,7 +382,8 @@ object libTypescriptComponentsSwipeableMod {
       __obj.asInstanceOf[SwipeableProps]
     }
     
-    extension [Self <: SwipeableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeableProps] (val x: Self) extends AnyVal {
       
       inline def setActivateAfterLongPress(value: Double): Self = StObject.set(x, "activateAfterLongPress", value.asInstanceOf[js.Any])
       
@@ -627,7 +628,8 @@ object libTypescriptComponentsSwipeableMod {
       __obj.asInstanceOf[SwipeableState]
     }
     
-    extension [Self <: SwipeableState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeableState] (val x: Self) extends AnyVal {
       
       inline def setDragX(value: Value): Self = StObject.set(x, "dragX", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object StridedSliceAttrs {
     __obj.asInstanceOf[StridedSliceAttrs]
   }
   
-  extension [Self <: StridedSliceAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StridedSliceAttrs] (val x: Self) extends AnyVal {
     
     inline def setBegin(value: js.Array[Double]): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
     

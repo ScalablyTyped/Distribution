@@ -28,7 +28,8 @@ object SmartHomeAppliance {
     __obj.asInstanceOf[SmartHomeAppliance]
   }
   
-  extension [Self <: SmartHomeAppliance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartHomeAppliance] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: ApplianceDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

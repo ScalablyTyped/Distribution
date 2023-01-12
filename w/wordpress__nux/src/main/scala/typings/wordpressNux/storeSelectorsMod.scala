@@ -40,7 +40,8 @@ object storeSelectorsMod {
       __obj.asInstanceOf[GuideInfo]
     }
     
-    extension [Self <: GuideInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GuideInfo] (val x: Self) extends AnyVal {
       
       inline def setCurrentTipId(value: String): Self = StObject.set(x, "currentTipId", value.asInstanceOf[js.Any])
       

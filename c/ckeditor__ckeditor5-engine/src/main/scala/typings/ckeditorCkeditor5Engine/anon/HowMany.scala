@@ -22,7 +22,8 @@ object HowMany {
     __obj.asInstanceOf[HowMany]
   }
   
-  extension [Self <: HowMany](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HowMany] (val x: Self) extends AnyVal {
     
     inline def setHowMany(value: Double): Self = StObject.set(x, "howMany", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object distParserAstDotcoreOverloadingValidator08Mod {
       __obj.asInstanceOf[OverloadingValidator]
     }
     
-    extension [Self <: OverloadingValidator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverloadingValidator] (val x: Self) extends AnyVal {
       
       inline def setAcceptResource(value: Resource => Unit): Self = StObject.set(x, "acceptResource", js.Any.fromFunction1(value))
       

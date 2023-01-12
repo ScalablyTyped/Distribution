@@ -154,7 +154,8 @@ object mod {
       __obj.asInstanceOf[BackFileOptions]
     }
     
-    extension [Self <: BackFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackFileOptions] (val x: Self) extends AnyVal {
       
       inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     }
@@ -338,7 +339,8 @@ object mod {
       __obj.asInstanceOf[MKDirOptions]
     }
     
-    extension [Self <: MKDirOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MKDirOptions] (val x: Self) extends AnyVal {
       
       inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     }
@@ -397,7 +399,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
       
@@ -444,7 +447,8 @@ object mod {
       __obj.asInstanceOf[ReadFileOptions]
     }
     
-    extension [Self <: ReadFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadFileOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: utf8): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -496,7 +500,8 @@ object mod {
       __obj.asInstanceOf[Stats]
     }
     
-    extension [Self <: Stats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
       
       inline def setCtimeMs(value: Any): Self = StObject.set(x, "ctimeMs", value.asInstanceOf[js.Any])
       
@@ -541,7 +546,8 @@ object mod {
       __obj.asInstanceOf[WriteFileOptions]
     }
     
-    extension [Self <: WriteFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteFileOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: utf8): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

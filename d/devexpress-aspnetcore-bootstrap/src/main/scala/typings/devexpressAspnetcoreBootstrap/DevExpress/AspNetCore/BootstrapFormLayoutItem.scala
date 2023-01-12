@@ -39,7 +39,8 @@ object BootstrapFormLayoutItem {
     __obj.asInstanceOf[BootstrapFormLayoutItem]
   }
   
-  extension [Self <: BootstrapFormLayoutItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapFormLayoutItem] (val x: Self) extends AnyVal {
     
     inline def setFormLayout(value: BootstrapFormLayout): Self = StObject.set(x, "formLayout", value.asInstanceOf[js.Any])
     

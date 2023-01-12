@@ -26,7 +26,8 @@ object SegmentDrawActionProperties {
     __obj.asInstanceOf[SegmentDrawActionProperties]
   }
   
-  extension [Self <: SegmentDrawActionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentDrawActionProperties] (val x: Self) extends AnyVal {
     
     inline def setMode(value: freehand | click): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

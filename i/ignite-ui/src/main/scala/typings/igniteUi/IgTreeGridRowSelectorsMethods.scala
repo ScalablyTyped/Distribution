@@ -87,7 +87,8 @@ object IgTreeGridRowSelectorsMethods {
     __obj.asInstanceOf[IgTreeGridRowSelectorsMethods]
   }
   
-  extension [Self <: IgTreeGridRowSelectorsMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTreeGridRowSelectorsMethods] (val x: Self) extends AnyVal {
     
     inline def setChangeCheckState(value: (Double, Boolean) => Unit): Self = StObject.set(x, "changeCheckState", js.Any.fromFunction2(value))
     

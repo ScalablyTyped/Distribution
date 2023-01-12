@@ -23,7 +23,8 @@ object StyleImageOptions {
     __obj.asInstanceOf[StyleImageOptions]
   }
   
-  extension [Self <: StyleImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleImageOptions] (val x: Self) extends AnyVal {
     
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     

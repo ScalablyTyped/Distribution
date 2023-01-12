@@ -23,7 +23,8 @@ object PutChannelPolicyRequest {
     __obj.asInstanceOf[PutChannelPolicyRequest]
   }
   
-  extension [Self <: PutChannelPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutChannelPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelName(value: _String): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
     

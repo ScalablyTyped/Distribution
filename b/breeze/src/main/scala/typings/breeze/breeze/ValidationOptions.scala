@@ -33,7 +33,8 @@ object ValidationOptions {
     __obj.asInstanceOf[ValidationOptions]
   }
   
-  extension [Self <: ValidationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationOptions] (val x: Self) extends AnyVal {
     
     inline def setSetAsDefault(value: () => ValidationOptions): Self = StObject.set(x, "setAsDefault", js.Any.fromFunction0(value))
     

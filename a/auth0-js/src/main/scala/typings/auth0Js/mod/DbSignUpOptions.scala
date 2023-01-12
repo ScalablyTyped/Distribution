@@ -30,7 +30,8 @@ object DbSignUpOptions {
     __obj.asInstanceOf[DbSignUpOptions]
   }
   
-  extension [Self <: DbSignUpOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbSignUpOptions] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

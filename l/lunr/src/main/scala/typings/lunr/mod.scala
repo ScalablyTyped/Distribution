@@ -352,7 +352,8 @@ object mod {
         __obj.asInstanceOf[Attributes]
       }
       
-      extension [Self <: Attributes](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
         
         inline def setDocumentVectors(value: StringDictionary[Vector]): Self = StObject.set(x, "documentVectors", value.asInstanceOf[js.Any])
         
@@ -445,7 +446,8 @@ object mod {
         __obj.asInstanceOf[Result]
       }
       
-      extension [Self <: Result](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
         
         inline def setMatchData(value: MatchData): Self = StObject.set(x, "matchData", value.asInstanceOf[js.Any])
         
@@ -792,7 +794,8 @@ object mod {
         __obj.asInstanceOf[Clause]
       }
       
-      extension [Self <: Clause](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Clause] (val x: Self) extends AnyVal {
         
         inline def setBoost(value: Double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
         

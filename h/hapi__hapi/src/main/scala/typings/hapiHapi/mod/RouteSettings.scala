@@ -17,7 +17,8 @@ object RouteSettings {
     __obj.asInstanceOf[RouteSettings]
   }
   
-  extension [Self <: RouteSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteSettings] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: AuthSettings): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

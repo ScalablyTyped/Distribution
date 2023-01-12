@@ -29,7 +29,8 @@ object NovaSymbol {
     __obj.asInstanceOf[NovaSymbol]
   }
   
-  extension [Self <: NovaSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NovaSymbol] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

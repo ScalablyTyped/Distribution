@@ -45,7 +45,8 @@ object TemporaryAccessPassAuthenticationMethodConfiguration {
     __obj.asInstanceOf[TemporaryAccessPassAuthenticationMethodConfiguration]
   }
   
-  extension [Self <: TemporaryAccessPassAuthenticationMethodConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemporaryAccessPassAuthenticationMethodConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDefaultLength(value: NullableOption[Double]): Self = StObject.set(x, "defaultLength", value.asInstanceOf[js.Any])
     

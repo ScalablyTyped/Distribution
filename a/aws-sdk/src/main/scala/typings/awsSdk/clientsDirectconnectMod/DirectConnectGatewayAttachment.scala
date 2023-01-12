@@ -48,7 +48,8 @@ object DirectConnectGatewayAttachment {
     __obj.asInstanceOf[DirectConnectGatewayAttachment]
   }
   
-  extension [Self <: DirectConnectGatewayAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectConnectGatewayAttachment] (val x: Self) extends AnyVal {
     
     inline def setAttachmentState(value: DirectConnectGatewayAttachmentState): Self = StObject.set(x, "attachmentState", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object UdevInfo {
     __obj.asInstanceOf[UdevInfo]
   }
   
-  extension [Self <: UdevInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UdevInfo] (val x: Self) extends AnyVal {
     
     inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
     

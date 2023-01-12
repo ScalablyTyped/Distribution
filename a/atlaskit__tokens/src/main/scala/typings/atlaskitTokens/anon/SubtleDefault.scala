@@ -15,7 +15,8 @@ object SubtleDefault {
     __obj.asInstanceOf[SubtleDefault]
   }
   
-  extension [Self <: SubtleDefault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtleDefault] (val x: Self) extends AnyVal {
     
     inline def setSubtle(value: Default): Self = StObject.set(x, "subtle", value.asInstanceOf[js.Any])
   }

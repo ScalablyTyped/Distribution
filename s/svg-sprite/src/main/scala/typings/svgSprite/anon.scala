@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Attributes]
     }
     
-    extension [Self <: Attributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Boolean): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Box]
     }
     
-    extension [Self <: Box](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Box] (val x: Self) extends AnyVal {
       
       inline def setBox(value: String): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object anon {
       __obj.asInstanceOf[Generator]
     }
     
-    extension [Self <: Generator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Generator] (val x: Self) extends AnyVal {
       
       inline def setGenerator(value: String | (js.Function1[/* svg */ String, String])): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
       
@@ -151,7 +154,8 @@ object anon {
       __obj.asInstanceOf[Plugins]
     }
     
-    extension [Self <: Plugins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
       
       inline def setPlugins(value: js.Array[StringDictionary[Boolean]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       

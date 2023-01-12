@@ -583,7 +583,8 @@ object AsyncElementProto {
     __obj.asInstanceOf[AsyncElementProto]
   }
   
-  extension [Self <: AsyncElementProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncElementProto] (val x: Self) extends AnyVal {
     
     inline def set$(
       value: /* args */ Parameters[

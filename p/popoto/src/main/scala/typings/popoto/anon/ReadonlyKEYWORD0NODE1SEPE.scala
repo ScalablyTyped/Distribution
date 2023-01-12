@@ -38,7 +38,8 @@ object ReadonlyKEYWORD0NODE1SEPE {
     __obj.asInstanceOf[ReadonlyKEYWORD0NODE1SEPE]
   }
   
-  extension [Self <: ReadonlyKEYWORD0NODE1SEPE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyKEYWORD0NODE1SEPE] (val x: Self) extends AnyVal {
     
     inline def setKEYWORD(value: `0`): Self = StObject.set(x, "KEYWORD", value.asInstanceOf[js.Any])
     

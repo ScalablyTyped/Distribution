@@ -18,7 +18,8 @@ object GetSoftwareUpdatesResult {
     __obj.asInstanceOf[GetSoftwareUpdatesResult]
   }
   
-  extension [Self <: GetSoftwareUpdatesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSoftwareUpdatesResult] (val x: Self) extends AnyVal {
     
     inline def setUpdatesURI(value: String): Self = StObject.set(x, "UpdatesURI", value.asInstanceOf[js.Any])
     

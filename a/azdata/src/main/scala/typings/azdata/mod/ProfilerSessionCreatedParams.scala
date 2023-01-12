@@ -19,7 +19,8 @@ object ProfilerSessionCreatedParams {
     __obj.asInstanceOf[ProfilerSessionCreatedParams]
   }
   
-  extension [Self <: ProfilerSessionCreatedParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfilerSessionCreatedParams] (val x: Self) extends AnyVal {
     
     inline def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
     

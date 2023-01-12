@@ -33,7 +33,8 @@ object distApiInterfacesWebHooksMod {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     }
@@ -55,7 +56,8 @@ object distApiInterfacesWebHooksMod {
       __obj.asInstanceOf[IssueAssignedEvent]
     }
     
-    extension [Self <: IssueAssignedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssueAssignedEvent] (val x: Self) extends AnyVal {
       
       inline def setAction(value: assigned | unassigned): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -79,7 +81,8 @@ object distApiInterfacesWebHooksMod {
       __obj.asInstanceOf[IssueEditedEvent]
     }
     
-    extension [Self <: IssueEditedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssueEditedEvent] (val x: Self) extends AnyVal {
       
       inline def setAction(value: edited): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -106,7 +109,8 @@ object distApiInterfacesWebHooksMod {
       __obj.asInstanceOf[IssueEvent]
     }
     
-    extension [Self <: IssueEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssueEvent] (val x: Self) extends AnyVal {
       
       inline def setAction(
         value: assigned | unassigned | labeled | unlabeled | opened | edited | milestoned | demilestoned | closed | reopened
@@ -132,7 +136,8 @@ object distApiInterfacesWebHooksMod {
       __obj.asInstanceOf[IssueLabeledEvent]
     }
     
-    extension [Self <: IssueLabeledEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssueLabeledEvent] (val x: Self) extends AnyVal {
       
       inline def setAction(value: labeled | unlabeled): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -163,7 +168,8 @@ object distApiInterfacesWebHooksMod {
       __obj.asInstanceOf[IssueWebHookData]
     }
     
-    extension [Self <: IssueWebHookData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssueWebHookData] (val x: Self) extends AnyVal {
       
       inline def setOrganization(value: OrganizationSummary): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
       
@@ -194,7 +200,8 @@ object distApiInterfacesWebHooksMod {
       __obj.asInstanceOf[WebHookData]
     }
     
-    extension [Self <: WebHookData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebHookData] (val x: Self) extends AnyVal {
       
       inline def setOrganization(value: OrganizationSummary): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
       

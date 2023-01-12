@@ -15,7 +15,8 @@ object BackAndroidRevoker {
     __obj.asInstanceOf[BackAndroidRevoker]
   }
   
-  extension [Self <: BackAndroidRevoker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackAndroidRevoker] (val x: Self) extends AnyVal {
     
     inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }

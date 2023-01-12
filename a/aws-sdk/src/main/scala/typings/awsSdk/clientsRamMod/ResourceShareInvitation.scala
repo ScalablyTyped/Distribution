@@ -58,7 +58,8 @@ object ResourceShareInvitation {
     __obj.asInstanceOf[ResourceShareInvitation]
   }
   
-  extension [Self <: ResourceShareInvitation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceShareInvitation] (val x: Self) extends AnyVal {
     
     inline def setInvitationTimestamp(value: js.Date): Self = StObject.set(x, "invitationTimestamp", value.asInstanceOf[js.Any])
     

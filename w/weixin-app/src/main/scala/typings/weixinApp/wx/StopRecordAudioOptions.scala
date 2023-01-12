@@ -18,7 +18,8 @@ object StopRecordAudioOptions {
     __obj.asInstanceOf[StopRecordAudioOptions]
   }
   
-  extension [Self <: StopRecordAudioOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopRecordAudioOptions] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: /* res */ TempFileResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

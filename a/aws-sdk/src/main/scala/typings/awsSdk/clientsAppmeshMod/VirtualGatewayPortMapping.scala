@@ -23,7 +23,8 @@ object VirtualGatewayPortMapping {
     __obj.asInstanceOf[VirtualGatewayPortMapping]
   }
   
-  extension [Self <: VirtualGatewayPortMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualGatewayPortMapping] (val x: Self) extends AnyVal {
     
     inline def setPort(value: PortNumber): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object W3CCapabilities {
     __obj.asInstanceOf[W3CCapabilities]
   }
   
-  extension [Self <: W3CCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: W3CCapabilities] (val x: Self) extends AnyVal {
     
     inline def setAlwaysMatch(value: Capabilities): Self = StObject.set(x, "alwaysMatch", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PpvObj {
     __obj.asInstanceOf[PpvObj]
   }
   
-  extension [Self <: PpvObj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PpvObj] (val x: Self) extends AnyVal {
     
     inline def setPpvObj(value: Unit): Self = StObject.set(x, "ppvObj", value.asInstanceOf[js.Any])
     

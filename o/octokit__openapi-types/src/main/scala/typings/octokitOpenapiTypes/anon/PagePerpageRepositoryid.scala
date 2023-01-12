@@ -22,7 +22,8 @@ object PagePerpageRepositoryid {
     __obj.asInstanceOf[PagePerpageRepositoryid]
   }
   
-  extension [Self <: PagePerpageRepositoryid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PagePerpageRepositoryid] (val x: Self) extends AnyVal {
     
     inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

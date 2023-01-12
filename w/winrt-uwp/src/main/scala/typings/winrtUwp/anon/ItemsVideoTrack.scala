@@ -18,7 +18,8 @@ object ItemsVideoTrack {
     __obj.asInstanceOf[ItemsVideoTrack]
   }
   
-  extension [Self <: ItemsVideoTrack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemsVideoTrack] (val x: Self) extends AnyVal {
     
     inline def setItems(value: VideoTrack): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

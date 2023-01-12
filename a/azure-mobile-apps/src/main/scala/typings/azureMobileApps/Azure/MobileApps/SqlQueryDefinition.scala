@@ -17,7 +17,8 @@ object SqlQueryDefinition {
     __obj.asInstanceOf[SqlQueryDefinition]
   }
   
-  extension [Self <: SqlQueryDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlQueryDefinition] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: js.Array[SqlParameterDefinition]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

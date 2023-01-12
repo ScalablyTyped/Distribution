@@ -40,7 +40,8 @@ object PropertyTest {
     __obj.asInstanceOf[PropertyTest]
   }
   
-  extension [Self <: PropertyTest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyTest] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

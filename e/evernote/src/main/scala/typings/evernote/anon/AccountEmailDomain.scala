@@ -41,7 +41,8 @@ object AccountEmailDomain {
     __obj.asInstanceOf[AccountEmailDomain]
   }
   
-  extension [Self <: AccountEmailDomain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountEmailDomain] (val x: Self) extends AnyVal {
     
     inline def setAccountEmailDomain(value: String): Self = StObject.set(x, "accountEmailDomain", value.asInstanceOf[js.Any])
     

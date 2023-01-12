@@ -18,7 +18,8 @@ object PreluInputs {
     __obj.asInstanceOf[PreluInputs]
   }
   
-  extension [Self <: PreluInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreluInputs] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: scala.Any): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

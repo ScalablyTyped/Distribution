@@ -17,7 +17,8 @@ object Ping {
     __obj.asInstanceOf[Ping]
   }
   
-  extension [Self <: Ping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ping] (val x: Self) extends AnyVal {
     
     inline def setButton_protection(value: Boolean): Self = StObject.set(x, "button_protection", value.asInstanceOf[js.Any])
     

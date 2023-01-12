@@ -67,7 +67,8 @@ object typeCreatePCClassRendererParams {
     __obj.asInstanceOf[typeCreatePCClassRendererParams]
   }
   
-  extension [Self <: typeCreatePCClassRendererParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typeCreatePCClassRendererParams] (val x: Self) extends AnyVal {
     
     inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     

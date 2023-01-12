@@ -2331,7 +2331,8 @@ object mod {
       __obj.asInstanceOf[Aggregator[T, U]]
     }
     
-    extension [Self <: Aggregator[?, ?], T, U](x: Self & (Aggregator[T, U])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Aggregator[?, ?], T, U] (val x: Self & (Aggregator[T, U])) extends AnyVal {
       
       inline def setInsArr(value: js.Array[Stream[T]]): Self = StObject.set(x, "insArr", value.asInstanceOf[js.Any])
       
@@ -2413,7 +2414,8 @@ object mod {
       __obj.asInstanceOf[InternalListener[T]]
     }
     
-    extension [Self <: InternalListener[?], T](x: Self & InternalListener[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalListener[?], T] (val x: Self & InternalListener[T]) extends AnyVal {
       
       inline def set_c(value: () => Unit): Self = StObject.set(x, "_c", js.Any.fromFunction0(value))
       
@@ -2436,7 +2438,8 @@ object mod {
       __obj.asInstanceOf[InternalProducer[T]]
     }
     
-    extension [Self <: InternalProducer[?], T](x: Self & InternalProducer[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalProducer[?], T] (val x: Self & InternalProducer[T]) extends AnyVal {
       
       inline def set_start(value: InternalListener[T] => Unit): Self = StObject.set(x, "_start", js.Any.fromFunction1(value))
       
@@ -2459,7 +2462,8 @@ object mod {
       __obj.asInstanceOf[Listener[T]]
     }
     
-    extension [Self <: Listener[?], T](x: Self & Listener[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Listener[?], T] (val x: Self & Listener[T]) extends AnyVal {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
@@ -2535,7 +2539,8 @@ object mod {
       __obj.asInstanceOf[Observable[T]]
     }
     
-    extension [Self <: Observable[?], T](x: Self & Observable[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observable[?], T] (val x: Self & Observable[T]) extends AnyVal {
       
       inline def setSubscribe(value: Listener[T] => Subscription): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     }
@@ -2570,7 +2575,8 @@ object mod {
       __obj.asInstanceOf[Operator[T, R]]
     }
     
-    extension [Self <: Operator[?, ?], T, R](x: Self & (Operator[T, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Operator[?, ?], T, R] (val x: Self & (Operator[T, R])) extends AnyVal {
       
       inline def setIns(value: Stream[T]): Self = StObject.set(x, "ins", value.asInstanceOf[js.Any])
       
@@ -2591,7 +2597,8 @@ object mod {
       __obj.asInstanceOf[OutSender[T]]
     }
     
-    extension [Self <: OutSender[?], T](x: Self & OutSender[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutSender[?], T] (val x: Self & OutSender[T]) extends AnyVal {
       
       inline def setOut(value: Stream[T]): Self = StObject.set(x, "out", value.asInstanceOf[js.Any])
     }
@@ -2610,7 +2617,8 @@ object mod {
       __obj.asInstanceOf[Producer[T]]
     }
     
-    extension [Self <: Producer[?], T](x: Self & Producer[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Producer[?], T] (val x: Self & Producer[T]) extends AnyVal {
       
       inline def setStart(value: Listener[T] => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
       
@@ -2629,7 +2637,8 @@ object mod {
       __obj.asInstanceOf[Subscription]
     }
     
-    extension [Self <: Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
       
       inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }

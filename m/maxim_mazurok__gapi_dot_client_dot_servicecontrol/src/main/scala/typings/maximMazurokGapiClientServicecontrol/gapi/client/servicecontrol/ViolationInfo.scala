@@ -25,7 +25,8 @@ object ViolationInfo {
     __obj.asInstanceOf[ViolationInfo]
   }
   
-  extension [Self <: ViolationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViolationInfo] (val x: Self) extends AnyVal {
     
     inline def setCheckedValue(value: String): Self = StObject.set(x, "checkedValue", value.asInstanceOf[js.Any])
     

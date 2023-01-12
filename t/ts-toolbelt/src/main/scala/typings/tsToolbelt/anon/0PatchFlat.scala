@@ -28,7 +28,8 @@ object `0PatchFlat` {
     __obj.asInstanceOf[`0PatchFlat`[O, depth, K]]
   }
   
-  extension [Self <: `0PatchFlat`[?, ?, ?], O /* <: js.Object */, depth /* <: Depth */, K /* <: Key */](x: Self & (`0PatchFlat`[O, depth, K])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0PatchFlat`[?, ?, ?], O /* <: js.Object */, depth /* <: Depth */, K /* <: Key */] (val x: Self & (`0PatchFlat`[O, depth, K])) extends AnyVal {
     
     inline def set0(value: PatchFlat[OptionalPart[Pick[O, K], depth], O, BuiltIn, scala.Nothing]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

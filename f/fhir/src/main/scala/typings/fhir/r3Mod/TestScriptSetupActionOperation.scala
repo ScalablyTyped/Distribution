@@ -123,7 +123,8 @@ object TestScriptSetupActionOperation {
     __obj.asInstanceOf[TestScriptSetupActionOperation]
   }
   
-  extension [Self <: TestScriptSetupActionOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestScriptSetupActionOperation] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: xml | json | ttl | none): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     

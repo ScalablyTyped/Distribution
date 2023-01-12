@@ -20,7 +20,8 @@ object DropExitEvent {
     __obj.asInstanceOf[DropExitEvent]
   }
   
-  extension [Self <: DropExitEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropExitEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: dropexit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

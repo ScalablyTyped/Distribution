@@ -27,7 +27,8 @@ object KeepJobsOptions {
     __obj.asInstanceOf[KeepJobsOptions]
   }
   
-  extension [Self <: KeepJobsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeepJobsOptions] (val x: Self) extends AnyVal {
     
     inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     

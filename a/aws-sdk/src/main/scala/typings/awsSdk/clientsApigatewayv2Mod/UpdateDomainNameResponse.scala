@@ -38,7 +38,8 @@ object UpdateDomainNameResponse {
     __obj.asInstanceOf[UpdateDomainNameResponse]
   }
   
-  extension [Self <: UpdateDomainNameResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDomainNameResponse] (val x: Self) extends AnyVal {
     
     inline def setApiMappingSelectionExpression(value: SelectionExpression): Self = StObject.set(x, "ApiMappingSelectionExpression", value.asInstanceOf[js.Any])
     

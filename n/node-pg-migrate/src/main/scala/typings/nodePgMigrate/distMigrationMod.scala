@@ -200,7 +200,8 @@ object distMigrationMod {
       __obj.asInstanceOf[CreateOptionsDefault]
     }
     
-    extension [Self <: CreateOptionsDefault](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOptionsDefault] (val x: Self) extends AnyVal {
       
       inline def setIgnorePattern(value: String): Self = StObject.set(x, "ignorePattern", value.asInstanceOf[js.Any])
       
@@ -223,7 +224,8 @@ object distMigrationMod {
       __obj.asInstanceOf[CreateOptionsTemplate]
     }
     
-    extension [Self <: CreateOptionsTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOptionsTemplate] (val x: Self) extends AnyVal {
       
       inline def setTemplateFileName(value: String): Self = StObject.set(x, "templateFileName", value.asInstanceOf[js.Any])
     }
@@ -244,7 +246,8 @@ object distMigrationMod {
       __obj.asInstanceOf[RunMigration]
     }
     
-    extension [Self <: RunMigration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunMigration] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

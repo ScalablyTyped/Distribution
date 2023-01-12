@@ -36,7 +36,8 @@ object WorkbookRangeFont {
     __obj.asInstanceOf[WorkbookRangeFont]
   }
   
-  extension [Self <: WorkbookRangeFont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookRangeFont] (val x: Self) extends AnyVal {
     
     inline def setBold(value: NullableOption[Boolean]): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     

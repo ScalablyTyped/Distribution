@@ -38,7 +38,8 @@ object Routes {
     __obj.asInstanceOf[Routes[State]]
   }
   
-  extension [Self <: Routes[?], State /* <: NavigationState[ParamListBase] */](x: Self & Routes[State]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Routes[?], State /* <: NavigationState[ParamListBase] */] (val x: Self & Routes[State]) extends AnyVal {
     
     inline def setRoutes(
       value: js.Array[

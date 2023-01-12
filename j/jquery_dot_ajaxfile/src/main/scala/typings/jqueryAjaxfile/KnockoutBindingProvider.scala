@@ -27,7 +27,8 @@ object KnockoutBindingProvider {
     __obj.asInstanceOf[KnockoutBindingProvider]
   }
   
-  extension [Self <: KnockoutBindingProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutBindingProvider] (val x: Self) extends AnyVal {
     
     inline def setGetBindingAccessors(value: (/* node */ Node, /* bindingContext */ KnockoutBindingContext) => StringDictionary[String]): Self = StObject.set(x, "getBindingAccessors", js.Any.fromFunction2(value))
     

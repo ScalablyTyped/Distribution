@@ -19,7 +19,8 @@ object MenuButtonCommands {
     __obj.asInstanceOf[MenuButtonCommands]
   }
   
-  extension [Self <: MenuButtonCommands](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuButtonCommands] (val x: Self) extends AnyVal {
     
     inline def setType(value: commands): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

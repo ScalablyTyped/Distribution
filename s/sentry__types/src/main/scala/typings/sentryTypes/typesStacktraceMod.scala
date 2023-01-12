@@ -26,7 +26,8 @@ object typesStacktraceMod {
       __obj.asInstanceOf[Stacktrace]
     }
     
-    extension [Self <: Stacktrace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stacktrace] (val x: Self) extends AnyVal {
       
       inline def setFrames(value: js.Array[StackFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       

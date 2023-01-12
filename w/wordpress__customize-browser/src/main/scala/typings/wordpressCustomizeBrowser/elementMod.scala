@@ -66,7 +66,8 @@ object elementMod {
       __obj.asInstanceOf[ElementSynchronizer]
     }
     
-    extension [Self <: ElementSynchronizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementSynchronizer] (val x: Self) extends AnyVal {
       
       inline def setCheckbox(value: ElementSynchronizerMethod[Boolean]): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
       

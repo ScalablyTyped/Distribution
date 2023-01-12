@@ -18,7 +18,8 @@ object TabStripSelectEvent {
     __obj.asInstanceOf[TabStripSelectEvent]
   }
   
-  extension [Self <: TabStripSelectEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabStripSelectEvent] (val x: Self) extends AnyVal {
     
     inline def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

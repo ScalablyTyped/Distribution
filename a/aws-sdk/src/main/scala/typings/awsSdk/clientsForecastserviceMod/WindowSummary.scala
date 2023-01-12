@@ -38,7 +38,8 @@ object WindowSummary {
     __obj.asInstanceOf[WindowSummary]
   }
   
-  extension [Self <: WindowSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowSummary] (val x: Self) extends AnyVal {
     
     inline def setEvaluationType(value: EvaluationType): Self = StObject.set(x, "EvaluationType", value.asInstanceOf[js.Any])
     

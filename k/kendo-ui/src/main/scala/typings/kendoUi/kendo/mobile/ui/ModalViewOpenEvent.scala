@@ -18,7 +18,8 @@ object ModalViewOpenEvent {
     __obj.asInstanceOf[ModalViewOpenEvent]
   }
   
-  extension [Self <: ModalViewOpenEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalViewOpenEvent] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

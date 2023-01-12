@@ -18,7 +18,8 @@ object SendPipelineExecutionStepSuccessResponse {
     __obj.asInstanceOf[SendPipelineExecutionStepSuccessResponse]
   }
   
-  extension [Self <: SendPipelineExecutionStepSuccessResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendPipelineExecutionStepSuccessResponse] (val x: Self) extends AnyVal {
     
     inline def setPipelineExecutionArn(value: PipelineExecutionArn): Self = StObject.set(x, "PipelineExecutionArn", value.asInstanceOf[js.Any])
     

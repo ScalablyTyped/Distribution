@@ -80,7 +80,8 @@ object AriaLabel_ {
     __obj.asInstanceOf[AriaLabel_]
   }
   
-  extension [Self <: AriaLabel_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AriaLabel_] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

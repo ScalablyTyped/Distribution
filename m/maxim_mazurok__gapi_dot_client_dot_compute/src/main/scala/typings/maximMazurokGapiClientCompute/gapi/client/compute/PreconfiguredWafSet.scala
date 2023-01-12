@@ -16,7 +16,8 @@ object PreconfiguredWafSet {
     __obj.asInstanceOf[PreconfiguredWafSet]
   }
   
-  extension [Self <: PreconfiguredWafSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreconfiguredWafSet] (val x: Self) extends AnyVal {
     
     inline def setExpressionSets(value: js.Array[WafExpressionSet]): Self = StObject.set(x, "expressionSets", value.asInstanceOf[js.Any])
     

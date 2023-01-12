@@ -18,7 +18,8 @@ object DockingPanelOptions {
     __obj.asInstanceOf[DockingPanelOptions]
   }
   
-  extension [Self <: DockingPanelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DockingPanelOptions] (val x: Self) extends AnyVal {
     
     inline def setLocalizeTitle(value: Boolean): Self = StObject.set(x, "localizeTitle", value.asInstanceOf[js.Any])
     

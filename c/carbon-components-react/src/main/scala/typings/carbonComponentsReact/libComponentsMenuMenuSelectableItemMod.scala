@@ -27,7 +27,8 @@ object libComponentsMenuMenuSelectableItemMod extends Shortcut {
       __obj.asInstanceOf[MenuSelectableItemProps]
     }
     
-    extension [Self <: MenuSelectableItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuSelectableItemProps] (val x: Self) extends AnyVal {
       
       inline def setInitialChecked(value: Boolean): Self = StObject.set(x, "initialChecked", value.asInstanceOf[js.Any])
       

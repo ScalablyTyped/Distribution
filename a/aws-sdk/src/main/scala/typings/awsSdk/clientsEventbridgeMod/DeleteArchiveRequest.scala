@@ -18,7 +18,8 @@ object DeleteArchiveRequest {
     __obj.asInstanceOf[DeleteArchiveRequest]
   }
   
-  extension [Self <: DeleteArchiveRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteArchiveRequest] (val x: Self) extends AnyVal {
     
     inline def setArchiveName(value: ArchiveName): Self = StObject.set(x, "ArchiveName", value.asInstanceOf[js.Any])
   }

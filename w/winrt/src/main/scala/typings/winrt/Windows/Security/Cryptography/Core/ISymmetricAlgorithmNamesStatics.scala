@@ -71,7 +71,8 @@ object ISymmetricAlgorithmNamesStatics {
     __obj.asInstanceOf[ISymmetricAlgorithmNamesStatics]
   }
   
-  extension [Self <: ISymmetricAlgorithmNamesStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISymmetricAlgorithmNamesStatics] (val x: Self) extends AnyVal {
     
     inline def setAesCbc(value: String): Self = StObject.set(x, "aesCbc", value.asInstanceOf[js.Any])
     

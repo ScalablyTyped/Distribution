@@ -101,7 +101,8 @@ object libComponentsContextualMenuContextualMenuItemDottypesMod {
       __obj.asInstanceOf[IContextualMenuItemProps]
     }
     
-    extension [Self <: IContextualMenuItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContextualMenuItemProps] (val x: Self) extends AnyVal {
       
       inline def setClassNames(value: IMenuItemClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
@@ -263,7 +264,8 @@ object libComponentsContextualMenuContextualMenuItemDottypesMod {
       __obj.asInstanceOf[IContextualMenuItemStyleProps]
     }
     
-    extension [Self <: IContextualMenuItemStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContextualMenuItemStyleProps] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -369,7 +371,8 @@ object libComponentsContextualMenuContextualMenuItemDottypesMod {
       __obj.asInstanceOf[IContextualMenuItemStyles]
     }
     
-    extension [Self <: IContextualMenuItemStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContextualMenuItemStyles] (val x: Self) extends AnyVal {
       
       inline def setAnchorLink(value: IStyle): Self = StObject.set(x, "anchorLink", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object GetPrincipalTagAttributeMapInput {
     __obj.asInstanceOf[GetPrincipalTagAttributeMapInput]
   }
   
-  extension [Self <: GetPrincipalTagAttributeMapInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPrincipalTagAttributeMapInput] (val x: Self) extends AnyVal {
     
     inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     

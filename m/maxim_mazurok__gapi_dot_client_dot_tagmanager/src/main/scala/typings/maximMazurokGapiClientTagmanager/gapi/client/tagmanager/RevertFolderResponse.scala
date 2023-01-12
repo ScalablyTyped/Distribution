@@ -19,7 +19,8 @@ object RevertFolderResponse {
     __obj.asInstanceOf[RevertFolderResponse]
   }
   
-  extension [Self <: RevertFolderResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevertFolderResponse] (val x: Self) extends AnyVal {
     
     inline def setFolder(value: Folder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     

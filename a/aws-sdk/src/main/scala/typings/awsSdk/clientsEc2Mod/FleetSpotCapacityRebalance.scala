@@ -23,7 +23,8 @@ object FleetSpotCapacityRebalance {
     __obj.asInstanceOf[FleetSpotCapacityRebalance]
   }
   
-  extension [Self <: FleetSpotCapacityRebalance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FleetSpotCapacityRebalance] (val x: Self) extends AnyVal {
     
     inline def setReplacementStrategy(value: FleetReplacementStrategy): Self = StObject.set(x, "ReplacementStrategy", value.asInstanceOf[js.Any])
     

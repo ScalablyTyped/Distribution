@@ -477,7 +477,8 @@ object PartialSnackbarContentPro {
     __obj.asInstanceOf[PartialSnackbarContentPro]
   }
   
-  extension [Self <: PartialSnackbarContentPro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSnackbarContentPro] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

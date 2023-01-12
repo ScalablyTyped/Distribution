@@ -19,7 +19,8 @@ object AppsDynamiteSharedActionActionParameter {
     __obj.asInstanceOf[AppsDynamiteSharedActionActionParameter]
   }
   
-  extension [Self <: AppsDynamiteSharedActionActionParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedActionActionParameter] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

@@ -234,7 +234,8 @@ object mod {
       __obj.asInstanceOf[ExtraSpawnOptions]
     }
     
-    extension [Self <: ExtraSpawnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtraSpawnOptions] (val x: Self) extends AnyVal {
       
       inline def setIsPipeInput(value: Boolean): Self = StObject.set(x, "isPipeInput", value.asInstanceOf[js.Any])
       

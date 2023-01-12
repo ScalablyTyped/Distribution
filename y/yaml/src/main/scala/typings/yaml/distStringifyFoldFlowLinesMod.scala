@@ -74,7 +74,8 @@ object distStringifyFoldFlowLinesMod {
       __obj.asInstanceOf[FoldOptions]
     }
     
-    extension [Self <: FoldOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FoldOptions] (val x: Self) extends AnyVal {
       
       inline def setIndentAtStart(value: Double): Self = StObject.set(x, "indentAtStart", value.asInstanceOf[js.Any])
       

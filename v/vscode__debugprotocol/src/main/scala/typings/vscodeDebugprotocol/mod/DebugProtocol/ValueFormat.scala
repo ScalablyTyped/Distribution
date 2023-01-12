@@ -17,7 +17,8 @@ object ValueFormat {
     __obj.asInstanceOf[ValueFormat]
   }
   
-  extension [Self <: ValueFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueFormat] (val x: Self) extends AnyVal {
     
     inline def setHex(value: Boolean): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
     

@@ -113,7 +113,8 @@ object TunnelOption {
     __obj.asInstanceOf[TunnelOption]
   }
   
-  extension [Self <: TunnelOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TunnelOption] (val x: Self) extends AnyVal {
     
     inline def setDpdTimeoutAction(value: String): Self = StObject.set(x, "DpdTimeoutAction", value.asInstanceOf[js.Any])
     

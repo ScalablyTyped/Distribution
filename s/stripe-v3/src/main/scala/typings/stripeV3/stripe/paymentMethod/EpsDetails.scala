@@ -15,7 +15,8 @@ object EpsDetails {
     __obj.asInstanceOf[EpsDetails]
   }
   
-  extension [Self <: EpsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EpsDetails] (val x: Self) extends AnyVal {
     
     inline def setVerified_name(value: String): Self = StObject.set(x, "verified_name", value.asInstanceOf[js.Any])
   }

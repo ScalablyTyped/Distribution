@@ -53,7 +53,8 @@ object CreateVpcEndpointServiceConfigurationRequest {
     __obj.asInstanceOf[CreateVpcEndpointServiceConfigurationRequest]
   }
   
-  extension [Self <: CreateVpcEndpointServiceConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVpcEndpointServiceConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setAcceptanceRequired(value: Boolean): Self = StObject.set(x, "AcceptanceRequired", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object KubernetesUserDetails {
     __obj.asInstanceOf[KubernetesUserDetails]
   }
   
-  extension [Self <: KubernetesUserDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KubernetesUserDetails] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: Groups): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     

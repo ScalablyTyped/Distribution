@@ -34,7 +34,8 @@ object typesOrderCollectedMod {
       __obj.asInstanceOf[OrderCollected]
     }
     
-    extension [Self <: OrderCollected](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrderCollected] (val x: Self) extends AnyVal {
       
       inline def setBilling_address(value: Boolean): Self = StObject.set(x, "billing_address", value.asInstanceOf[js.Any])
       

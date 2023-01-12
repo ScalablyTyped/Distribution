@@ -53,7 +53,8 @@ object CreateWorkflowStepGroupResponse {
     __obj.asInstanceOf[CreateWorkflowStepGroupResponse]
   }
   
-  extension [Self <: CreateWorkflowStepGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWorkflowStepGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

@@ -103,7 +103,8 @@ object mod {
       __obj.asInstanceOf[AnonymousMechanism]
     }
     
-    extension [Self <: AnonymousMechanism](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnonymousMechanism] (val x: Self) extends AnyVal {
       
       inline def setClientFirst(value: `true`): Self = StObject.set(x, "clientFirst", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object mod {
       __obj.asInstanceOf[Credentials]
     }
     
-    extension [Self <: Credentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
       
       inline def setTrace(value: String): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
       

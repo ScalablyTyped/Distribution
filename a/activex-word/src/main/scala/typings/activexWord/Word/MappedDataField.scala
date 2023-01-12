@@ -43,7 +43,8 @@ object MappedDataField {
     __obj.asInstanceOf[MappedDataField]
   }
   
-  extension [Self <: MappedDataField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappedDataField] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

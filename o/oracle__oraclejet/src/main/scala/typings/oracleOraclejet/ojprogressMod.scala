@@ -235,7 +235,8 @@ object ojprogressMod {
       __obj.asInstanceOf[ojProgressEventMap]
     }
     
-    extension [Self <: ojProgressEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojProgressEventMap] (val x: Self) extends AnyVal {
       
       inline def setMaxChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "maxChanged", value.asInstanceOf[js.Any])
       
@@ -266,7 +267,8 @@ object ojprogressMod {
       __obj.asInstanceOf[ojProgressSettableProperties]
     }
     
-    extension [Self <: ojProgressSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojProgressSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -298,7 +300,8 @@ object ojprogressMod {
       __obj.asInstanceOf[ojProgressSettablePropertiesLenient]
     }
     
-    extension [Self <: ojProgressSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojProgressSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       

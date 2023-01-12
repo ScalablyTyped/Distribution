@@ -26,7 +26,8 @@ object libApiSubscriberOptionsMod {
       __obj.asInstanceOf[SubscriberOptions]
     }
     
-    extension [Self <: SubscriberOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriberOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

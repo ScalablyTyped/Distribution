@@ -43,7 +43,8 @@ object NotebookExecutionSummary {
     __obj.asInstanceOf[NotebookExecutionSummary]
   }
   
-  extension [Self <: NotebookExecutionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookExecutionSummary] (val x: Self) extends AnyVal {
     
     inline def setEditorId(value: XmlStringMaxLen256): Self = StObject.set(x, "EditorId", value.asInstanceOf[js.Any])
     

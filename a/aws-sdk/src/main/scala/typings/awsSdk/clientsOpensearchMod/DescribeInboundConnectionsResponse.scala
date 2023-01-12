@@ -23,7 +23,8 @@ object DescribeInboundConnectionsResponse {
     __obj.asInstanceOf[DescribeInboundConnectionsResponse]
   }
   
-  extension [Self <: DescribeInboundConnectionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInboundConnectionsResponse] (val x: Self) extends AnyVal {
     
     inline def setConnections(value: InboundConnections): Self = StObject.set(x, "Connections", value.asInstanceOf[js.Any])
     

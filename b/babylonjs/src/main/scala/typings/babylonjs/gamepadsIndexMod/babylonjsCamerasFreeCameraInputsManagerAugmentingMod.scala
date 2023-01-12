@@ -27,7 +27,8 @@ object babylonjsCamerasFreeCameraInputsManagerAugmentingMod {
       __obj.asInstanceOf[FreeCameraInputsManager]
     }
     
-    extension [Self <: FreeCameraInputsManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FreeCameraInputsManager] (val x: Self) extends AnyVal {
       
       inline def setAddGamepad(
         value: () => typings.babylonjs.gamepadsGamepadSceneComponentMod.babylonjsCamerasFreeCameraInputsManagerAugmentingMod.FreeCameraInputsManager

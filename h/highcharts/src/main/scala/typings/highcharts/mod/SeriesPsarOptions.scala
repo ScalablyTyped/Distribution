@@ -77,7 +77,8 @@ object SeriesPsarOptions {
     __obj.asInstanceOf[SeriesPsarOptions]
   }
   
-  extension [Self <: SeriesPsarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesPsarOptions] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

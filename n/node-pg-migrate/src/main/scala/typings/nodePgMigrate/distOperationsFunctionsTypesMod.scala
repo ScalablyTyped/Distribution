@@ -84,7 +84,8 @@ object distOperationsFunctionsTypesMod {
       __obj.asInstanceOf[FunctionOptions]
     }
     
-    extension [Self <: FunctionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionOptions] (val x: Self) extends AnyVal {
       
       inline def setBehavior(value: IMMUTABLE | STABLE | VOLATILE): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object distOperationsFunctionsTypesMod {
       __obj.asInstanceOf[FunctionParamType]
     }
     
-    extension [Self <: FunctionParamType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionParamType] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Value): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

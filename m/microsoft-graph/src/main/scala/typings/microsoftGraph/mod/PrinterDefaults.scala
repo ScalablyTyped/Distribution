@@ -81,7 +81,8 @@ object PrinterDefaults {
     __obj.asInstanceOf[PrinterDefaults]
   }
   
-  extension [Self <: PrinterDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrinterDefaults] (val x: Self) extends AnyVal {
     
     inline def setColorMode(value: NullableOption[PrintColorMode]): Self = StObject.set(x, "colorMode", value.asInstanceOf[js.Any])
     

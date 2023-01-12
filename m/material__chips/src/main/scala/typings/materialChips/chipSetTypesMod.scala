@@ -29,7 +29,8 @@ object chipSetTypesMod {
       __obj.asInstanceOf[MDCChipSetInteractionEventDetail]
     }
     
-    extension [Self <: MDCChipSetInteractionEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCChipSetInteractionEventDetail] (val x: Self) extends AnyVal {
       
       inline def setChipID(value: String): Self = StObject.set(x, "chipID", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object chipSetTypesMod {
       __obj.asInstanceOf[MDCChipSetRemovalEventDetail]
     }
     
-    extension [Self <: MDCChipSetRemovalEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCChipSetRemovalEventDetail] (val x: Self) extends AnyVal {
       
       inline def setChipID(value: String): Self = StObject.set(x, "chipID", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object chipSetTypesMod {
       __obj.asInstanceOf[MDCChipSetSelectionEventDetail]
     }
     
-    extension [Self <: MDCChipSetSelectionEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCChipSetSelectionEventDetail] (val x: Self) extends AnyVal {
       
       inline def setChipID(value: String): Self = StObject.set(x, "chipID", value.asInstanceOf[js.Any])
       

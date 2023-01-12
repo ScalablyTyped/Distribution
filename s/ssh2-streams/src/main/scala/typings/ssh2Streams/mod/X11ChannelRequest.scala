@@ -37,7 +37,8 @@ object X11ChannelRequest {
     __obj.asInstanceOf[X11ChannelRequest]
   }
   
-  extension [Self <: X11ChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X11ChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     

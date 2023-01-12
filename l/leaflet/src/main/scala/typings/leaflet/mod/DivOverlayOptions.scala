@@ -24,7 +24,8 @@ object DivOverlayOptions {
     __obj.asInstanceOf[DivOverlayOptions]
   }
   
-  extension [Self <: DivOverlayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DivOverlayOptions] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

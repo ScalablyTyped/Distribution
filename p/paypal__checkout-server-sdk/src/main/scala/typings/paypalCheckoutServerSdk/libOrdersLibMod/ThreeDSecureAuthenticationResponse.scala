@@ -17,7 +17,8 @@ object ThreeDSecureAuthenticationResponse {
     __obj.asInstanceOf[ThreeDSecureAuthenticationResponse]
   }
   
-  extension [Self <: ThreeDSecureAuthenticationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreeDSecureAuthenticationResponse] (val x: Self) extends AnyVal {
     
     inline def setAuthentication_status(value: AuthenticationStatus): Self = StObject.set(x, "authentication_status", value.asInstanceOf[js.Any])
     

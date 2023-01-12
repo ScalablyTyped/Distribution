@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[DndMoveEvent]
     }
     
-    extension [Self <: DndMoveEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DndMoveEvent] (val x: Self) extends AnyVal {
       
       inline def setSourceLabel(value: String): Self = StObject.set(x, "sourceLabel", value.asInstanceOf[js.Any])
       

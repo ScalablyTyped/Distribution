@@ -23,7 +23,8 @@ object TimeSeriesTransformation {
     __obj.asInstanceOf[TimeSeriesTransformation]
   }
   
-  extension [Self <: TimeSeriesTransformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeSeriesTransformation] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

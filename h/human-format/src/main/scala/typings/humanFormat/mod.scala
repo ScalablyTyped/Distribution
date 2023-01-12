@@ -88,7 +88,8 @@ object mod {
       __obj.asInstanceOf[FormatOptions]
     }
     
-    extension [Self <: FormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
       
       inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object mod {
       __obj.asInstanceOf[ParseResult]
     }
     
-    extension [Self <: ParseResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseResult] (val x: Self) extends AnyVal {
       
       inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
@@ -167,7 +169,8 @@ object mod {
       __obj.asInstanceOf[ScaleOptions]
     }
     
-    extension [Self <: ScaleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScaleOptions] (val x: Self) extends AnyVal {
       
       inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
       

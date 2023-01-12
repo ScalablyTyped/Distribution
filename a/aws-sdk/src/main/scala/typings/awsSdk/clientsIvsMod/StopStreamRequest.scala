@@ -18,7 +18,8 @@ object StopStreamRequest {
     __obj.asInstanceOf[StopStreamRequest]
   }
   
-  extension [Self <: StopStreamRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopStreamRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelArn(value: ChannelArn): Self = StObject.set(x, "channelArn", value.asInstanceOf[js.Any])
   }

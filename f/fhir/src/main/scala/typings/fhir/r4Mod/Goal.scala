@@ -127,7 +127,8 @@ object Goal {
     __obj.asInstanceOf[Goal]
   }
   
-  extension [Self <: Goal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Goal] (val x: Self) extends AnyVal {
     
     inline def setAchievementStatus(value: CodeableConcept): Self = StObject.set(x, "achievementStatus", value.asInstanceOf[js.Any])
     

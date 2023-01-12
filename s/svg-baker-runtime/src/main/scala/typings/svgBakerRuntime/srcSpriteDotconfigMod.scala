@@ -23,7 +23,8 @@ object srcSpriteDotconfigMod extends Shortcut {
       __obj.asInstanceOf[SpriteConfig]
     }
     
-    extension [Self <: SpriteConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpriteConfig] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: Ariahidden): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       

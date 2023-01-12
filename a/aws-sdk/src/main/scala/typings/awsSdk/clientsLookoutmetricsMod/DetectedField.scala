@@ -28,7 +28,8 @@ object DetectedField {
     __obj.asInstanceOf[DetectedField]
   }
   
-  extension [Self <: DetectedField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectedField] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Confidence): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     

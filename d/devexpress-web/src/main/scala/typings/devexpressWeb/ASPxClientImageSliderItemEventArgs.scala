@@ -23,7 +23,8 @@ object ASPxClientImageSliderItemEventArgs {
     __obj.asInstanceOf[ASPxClientImageSliderItemEventArgs]
   }
   
-  extension [Self <: ASPxClientImageSliderItemEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientImageSliderItemEventArgs] (val x: Self) extends AnyVal {
     
     inline def setItem(value: ASPxClientImageSliderItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }

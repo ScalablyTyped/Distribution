@@ -21,7 +21,8 @@ object ConsumerGroup {
     __obj.asInstanceOf[ConsumerGroup]
   }
   
-  extension [Self <: ConsumerGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumerGroup] (val x: Self) extends AnyVal {
     
     inline def setCoordinator(value: Broker): Self = StObject.set(x, "coordinator", value.asInstanceOf[js.Any])
     

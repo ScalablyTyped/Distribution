@@ -133,7 +133,8 @@ object mod {
       __obj.asInstanceOf[PeekInterface]
     }
     
-    extension [Self <: PeekInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeekInterface] (val x: Self) extends AnyVal {
       
       inline def setIsExpired(value: Boolean): Self = StObject.set(x, "isExpired", value.asInstanceOf[js.Any])
       

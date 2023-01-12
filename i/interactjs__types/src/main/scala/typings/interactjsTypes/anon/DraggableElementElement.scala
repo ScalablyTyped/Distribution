@@ -17,7 +17,8 @@ object DraggableElementElement {
     __obj.asInstanceOf[DraggableElementElement]
   }
   
-  extension [Self <: DraggableElementElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggableElementElement] (val x: Self) extends AnyVal {
     
     inline def setDraggableElement(value: typings.interactjsTypes.coreTypesMod.Element): Self = StObject.set(x, "draggableElement", value.asInstanceOf[js.Any])
     

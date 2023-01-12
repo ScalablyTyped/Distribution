@@ -19,7 +19,8 @@ object UpdateMembershipRolesParams {
     __obj.asInstanceOf[UpdateMembershipRolesParams]
   }
   
-  extension [Self <: UpdateMembershipRolesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateMembershipRolesParams] (val x: Self) extends AnyVal {
     
     inline def setFieldMask(value: String): Self = StObject.set(x, "fieldMask", value.asInstanceOf[js.Any])
     

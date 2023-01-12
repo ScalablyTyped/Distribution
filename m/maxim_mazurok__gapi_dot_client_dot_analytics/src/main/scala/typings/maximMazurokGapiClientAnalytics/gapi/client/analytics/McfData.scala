@@ -70,7 +70,8 @@ object McfData {
     __obj.asInstanceOf[McfData]
   }
   
-  extension [Self <: McfData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: McfData] (val x: Self) extends AnyVal {
     
     inline def setColumnHeaders(value: js.Array[ColumnType]): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object sourcetimertypenumberidID {
     __obj.asInstanceOf[sourcetimertypenumberidID]
   }
   
-  extension [Self <: sourcetimertypenumberidID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sourcetimertypenumberidID] (val x: Self) extends AnyVal {
     
     inline def setBetween(value: js.Tuple2[ID, ID]): Self = StObject.set(x, "between", value.asInstanceOf[js.Any])
     

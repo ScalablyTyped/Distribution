@@ -74,7 +74,8 @@ object contribAutoRenderMod {
       __obj.asInstanceOf[RenderMathInElementSpecificOptions]
     }
     
-    extension [Self <: RenderMathInElementSpecificOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderMathInElementSpecificOptions] (val x: Self) extends AnyVal {
       
       inline def setDelimiters(value: js.Array[RenderMathInElementSpecificOptionsDelimiters]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object contribAutoRenderMod {
       __obj.asInstanceOf[RenderMathInElementSpecificOptionsDelimiters]
     }
     
-    extension [Self <: RenderMathInElementSpecificOptionsDelimiters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderMathInElementSpecificOptionsDelimiters] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       

@@ -111,7 +111,8 @@ object Deployment {
       __obj.asInstanceOf[DeploymentProgress]
     }
     
-    extension [Self <: DeploymentProgress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeploymentProgress] (val x: Self) extends AnyVal {
       
       inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       
@@ -145,7 +146,8 @@ object Deployment {
       __obj.asInstanceOf[IDeploymentResult]
     }
     
-    extension [Self <: IDeploymentResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDeploymentResult] (val x: Self) extends AnyVal {
       
       inline def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
       
@@ -200,7 +202,8 @@ object Deployment {
       __obj.asInstanceOf[IPackageUserInformation]
     }
     
-    extension [Self <: IPackageUserInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPackageUserInformation] (val x: Self) extends AnyVal {
       
       inline def setInstallState(value: PackageInstallState): Self = StObject.set(x, "installState", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,8 @@ object BaseTag {
     __obj.asInstanceOf[BaseTag]
   }
   
-  extension [Self <: BaseTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseTag] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

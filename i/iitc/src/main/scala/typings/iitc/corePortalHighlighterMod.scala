@@ -55,7 +55,8 @@ object corePortalHighlighterMod {
         __obj.asInstanceOf[Hightligher]
       }
       
-      extension [Self <: Hightligher](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Hightligher] (val x: Self) extends AnyVal {
         
         inline def setHightlight(value: Portal => Unit): Self = StObject.set(x, "hightlight", js.Any.fromFunction1(value))
       }

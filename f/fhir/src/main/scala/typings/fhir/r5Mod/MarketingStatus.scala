@@ -42,7 +42,8 @@ object MarketingStatus {
     __obj.asInstanceOf[MarketingStatus]
   }
   
-  extension [Self <: MarketingStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarketingStatus] (val x: Self) extends AnyVal {
     
     inline def setCountry(value: CodeableConcept): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     

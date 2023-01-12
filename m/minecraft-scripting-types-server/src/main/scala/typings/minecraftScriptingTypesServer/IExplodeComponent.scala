@@ -74,7 +74,8 @@ object IExplodeComponent {
     __obj.asInstanceOf[IExplodeComponent]
   }
   
-  extension [Self <: IExplodeComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExplodeComponent] (val x: Self) extends AnyVal {
     
     inline def setBreaks_blocks(value: Boolean): Self = StObject.set(x, "breaks_blocks", value.asInstanceOf[js.Any])
     

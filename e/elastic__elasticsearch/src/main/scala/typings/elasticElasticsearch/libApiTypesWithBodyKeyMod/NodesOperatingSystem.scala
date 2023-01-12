@@ -23,7 +23,8 @@ object NodesOperatingSystem {
     __obj.asInstanceOf[NodesOperatingSystem]
   }
   
-  extension [Self <: NodesOperatingSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesOperatingSystem] (val x: Self) extends AnyVal {
     
     inline def setCgroup(value: NodesCgroup): Self = StObject.set(x, "cgroup", value.asInstanceOf[js.Any])
     

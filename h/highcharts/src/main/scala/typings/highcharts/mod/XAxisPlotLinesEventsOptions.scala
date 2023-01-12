@@ -34,7 +34,8 @@ object XAxisPlotLinesEventsOptions {
     __obj.asInstanceOf[XAxisPlotLinesEventsOptions]
   }
   
-  extension [Self <: XAxisPlotLinesEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAxisPlotLinesEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setClick(value: EventCallbackFunction[PlotLineOrBand]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     

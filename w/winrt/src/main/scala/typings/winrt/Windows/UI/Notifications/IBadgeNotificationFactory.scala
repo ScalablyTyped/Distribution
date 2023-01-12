@@ -16,7 +16,8 @@ object IBadgeNotificationFactory {
     __obj.asInstanceOf[IBadgeNotificationFactory]
   }
   
-  extension [Self <: IBadgeNotificationFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBadgeNotificationFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateBadgeNotification(value: XmlDocument => BadgeNotification): Self = StObject.set(x, "createBadgeNotification", js.Any.fromFunction1(value))
   }

@@ -23,7 +23,8 @@ object GetConnectorsRequest {
     __obj.asInstanceOf[GetConnectorsRequest]
   }
   
-  extension [Self <: GetConnectorsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetConnectorsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

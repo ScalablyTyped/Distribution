@@ -23,7 +23,8 @@ object RelatedResources {
     __obj.asInstanceOf[RelatedResources]
   }
   
-  extension [Self <: RelatedResources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedResources] (val x: Self) extends AnyVal {
     
     inline def setAuthorization(value: AuthorizationResource): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
     

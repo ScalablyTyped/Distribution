@@ -20,7 +20,8 @@ object ATVController {
     __obj.asInstanceOf[ATVController]
   }
   
-  extension [Self <: ATVController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVController] (val x: Self) extends AnyVal {
     
     inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }

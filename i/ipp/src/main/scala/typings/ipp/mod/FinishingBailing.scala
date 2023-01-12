@@ -17,7 +17,8 @@ object FinishingBailing {
     __obj.asInstanceOf[FinishingBailing]
   }
   
-  extension [Self <: FinishingBailing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinishingBailing] (val x: Self) extends AnyVal {
     
     inline def `setBaling-type`(value: BalingType): Self = StObject.set(x, "baling-type", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object UntagCertificateAuthorityRequest {
     __obj.asInstanceOf[UntagCertificateAuthorityRequest]
   }
   
-  extension [Self <: UntagCertificateAuthorityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UntagCertificateAuthorityRequest] (val x: Self) extends AnyVal {
     
     inline def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
     

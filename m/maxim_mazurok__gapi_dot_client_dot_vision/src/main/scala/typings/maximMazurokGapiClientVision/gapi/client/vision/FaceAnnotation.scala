@@ -65,7 +65,8 @@ object FaceAnnotation {
     __obj.asInstanceOf[FaceAnnotation]
   }
   
-  extension [Self <: FaceAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaceAnnotation] (val x: Self) extends AnyVal {
     
     inline def setAngerLikelihood(value: String): Self = StObject.set(x, "angerLikelihood", value.asInstanceOf[js.Any])
     

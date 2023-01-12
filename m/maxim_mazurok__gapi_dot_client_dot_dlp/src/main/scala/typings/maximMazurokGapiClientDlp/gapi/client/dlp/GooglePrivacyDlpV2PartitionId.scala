@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2PartitionId {
     __obj.asInstanceOf[GooglePrivacyDlpV2PartitionId]
   }
   
-  extension [Self <: GooglePrivacyDlpV2PartitionId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2PartitionId] (val x: Self) extends AnyVal {
     
     inline def setNamespaceId(value: String): Self = StObject.set(x, "namespaceId", value.asInstanceOf[js.Any])
     

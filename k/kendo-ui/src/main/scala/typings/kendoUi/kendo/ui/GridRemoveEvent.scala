@@ -21,7 +21,8 @@ object GridRemoveEvent {
     __obj.asInstanceOf[GridRemoveEvent]
   }
   
-  extension [Self <: GridRemoveEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridRemoveEvent] (val x: Self) extends AnyVal {
     
     inline def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     

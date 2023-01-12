@@ -122,7 +122,8 @@ object mod {
       __obj.asInstanceOf[FS]
     }
     
-    extension [Self <: FS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FS] (val x: Self) extends AnyVal {
       
       inline def setAt(value: /* index */ Double => FSMerger): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
       
@@ -251,7 +252,8 @@ object mod {
       __obj.asInstanceOf[FSMergerObject]
     }
     
-    extension [Self <: FSMergerObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FSMergerObject] (val x: Self) extends AnyVal {
       
       inline def setAbsRootWithSep(value: String): Self = StObject.set(x, "absRootWithSep", value.asInstanceOf[js.Any])
       
@@ -284,7 +286,8 @@ object mod {
       __obj.asInstanceOf[FileMeta]
     }
     
-    extension [Self <: FileMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileMeta] (val x: Self) extends AnyVal {
       
       inline def setGetDestinationPath(value: js.Function): Self = StObject.set(x, "getDestinationPath", value.asInstanceOf[js.Any])
       
@@ -309,7 +312,8 @@ object mod {
       __obj.asInstanceOf[FileMetaOption]
     }
     
-    extension [Self <: FileMetaOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileMetaOption] (val x: Self) extends AnyVal {
       
       inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     }

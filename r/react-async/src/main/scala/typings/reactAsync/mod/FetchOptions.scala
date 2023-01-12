@@ -19,7 +19,8 @@ object FetchOptions {
     __obj.asInstanceOf[FetchOptions[T]]
   }
   
-  extension [Self <: FetchOptions[?], T](x: Self & FetchOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchOptions[?], T] (val x: Self & FetchOptions[T]) extends AnyVal {
     
     inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     

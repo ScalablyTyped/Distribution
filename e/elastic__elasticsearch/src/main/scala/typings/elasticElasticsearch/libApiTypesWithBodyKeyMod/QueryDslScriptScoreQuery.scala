@@ -21,7 +21,8 @@ object QueryDslScriptScoreQuery {
     __obj.asInstanceOf[QueryDslScriptScoreQuery]
   }
   
-  extension [Self <: QueryDslScriptScoreQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslScriptScoreQuery] (val x: Self) extends AnyVal {
     
     inline def setMin_score(value: float): Self = StObject.set(x, "min_score", value.asInstanceOf[js.Any])
     

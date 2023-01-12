@@ -307,7 +307,8 @@ object typingsMysqlLibConnectionMod {
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    extension [Self <: ConnectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setBigNumberStrings(value: Boolean): Self = StObject.set(x, "bigNumberStrings", value.asInstanceOf[js.Any])
       
@@ -458,7 +459,8 @@ object typingsMysqlLibConnectionMod {
       __obj.asInstanceOf[SslOptions]
     }
     
-    extension [Self <: SslOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SslOptions] (val x: Self) extends AnyVal {
       
       inline def setCa(value: String | js.Array[String]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       

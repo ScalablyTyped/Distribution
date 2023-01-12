@@ -28,7 +28,8 @@ object AddMarkersOption {
     __obj.asInstanceOf[AddMarkersOption]
   }
   
-  extension [Self <: AddMarkersOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddMarkersOption] (val x: Self) extends AnyVal {
     
     inline def setClear(value: Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     

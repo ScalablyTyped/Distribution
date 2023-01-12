@@ -22,7 +22,8 @@ object AnyAssignAction {
     __obj.asInstanceOf[AnyAssignAction[TContext, TEvent]]
   }
   
-  extension [Self <: AnyAssignAction[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (AnyAssignAction[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnyAssignAction[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (AnyAssignAction[TContext, TEvent])) extends AnyVal {
     
     inline def setAssignment(value: Any): Self = StObject.set(x, "assignment", value.asInstanceOf[js.Any])
     

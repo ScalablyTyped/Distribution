@@ -18,7 +18,8 @@ object DescribeEnvironmentsRequest {
     __obj.asInstanceOf[DescribeEnvironmentsRequest]
   }
   
-  extension [Self <: DescribeEnvironmentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEnvironmentsRequest] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentIds(value: BoundedEnvironmentIdList): Self = StObject.set(x, "environmentIds", value.asInstanceOf[js.Any])
     

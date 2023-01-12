@@ -63,7 +63,8 @@ object TextProvider {
     __obj.asInstanceOf[TextProvider]
   }
   
-  extension [Self <: TextProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextProvider] (val x: Self) extends AnyVal {
     
     inline def setFontAsset(value: Font): Self = StObject.set(x, "fontAsset", value.asInstanceOf[js.Any])
     

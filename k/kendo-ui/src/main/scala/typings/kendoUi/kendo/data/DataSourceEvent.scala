@@ -15,7 +15,8 @@ object DataSourceEvent {
     __obj.asInstanceOf[DataSourceEvent]
   }
   
-  extension [Self <: DataSourceEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceEvent] (val x: Self) extends AnyVal {
     
     inline def setSender(value: DataSource): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     

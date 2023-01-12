@@ -28,7 +28,8 @@ object InitiateJobInput {
     __obj.asInstanceOf[InitiateJobInput]
   }
   
-  extension [Self <: InitiateJobInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitiateJobInput] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

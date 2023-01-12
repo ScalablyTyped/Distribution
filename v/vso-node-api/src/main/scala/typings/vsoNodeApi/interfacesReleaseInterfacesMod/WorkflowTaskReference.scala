@@ -19,7 +19,8 @@ object WorkflowTaskReference {
     __obj.asInstanceOf[WorkflowTaskReference]
   }
   
-  extension [Self <: WorkflowTaskReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowTaskReference] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

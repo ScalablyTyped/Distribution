@@ -128,7 +128,8 @@ object mod {
       __obj.asInstanceOf[GeneratorOptions]
     }
     
-    extension [Self <: GeneratorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeneratorOptions] (val x: Self) extends AnyVal {
       
       inline def setAuxiliaryCommentAfter(value: String): Self = StObject.set(x, "auxiliaryCommentAfter", value.asInstanceOf[js.Any])
       
@@ -209,7 +210,8 @@ object mod {
       __obj.asInstanceOf[GeneratorResult]
     }
     
-    extension [Self <: GeneratorResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeneratorResult] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

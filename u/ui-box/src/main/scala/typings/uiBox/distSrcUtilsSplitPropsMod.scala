@@ -32,7 +32,8 @@ object distSrcUtilsSplitPropsMod {
       __obj.asInstanceOf[SplitProps[P, K]]
     }
     
-    extension [Self <: SplitProps[?, ?], P, K /* <: /* keyof P */ String */](x: Self & (SplitProps[P, K])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitProps[?, ?], P, K /* <: /* keyof P */ String */] (val x: Self & (SplitProps[P, K])) extends AnyVal {
       
       inline def setMatchedProps(value: Pick[P, K]): Self = StObject.set(x, "matchedProps", value.asInstanceOf[js.Any])
       

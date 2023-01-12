@@ -19,7 +19,8 @@ object WheelDeltaX {
     __obj.asInstanceOf[WheelDeltaX]
   }
   
-  extension [Self <: WheelDeltaX](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WheelDeltaX] (val x: Self) extends AnyVal {
     
     inline def setWheelDeltaX(value: Double): Self = StObject.set(x, "wheelDeltaX", value.asInstanceOf[js.Any])
     

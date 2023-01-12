@@ -19,7 +19,8 @@ object PushTimeDays {
     __obj.asInstanceOf[PushTimeDays]
   }
   
-  extension [Self <: PushTimeDays](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushTimeDays] (val x: Self) extends AnyVal {
     
     inline def setPushTimeDays(value: js.Array[Double]): Self = StObject.set(x, "pushTimeDays", value.asInstanceOf[js.Any])
     

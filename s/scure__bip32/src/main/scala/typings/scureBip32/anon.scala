@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Xpriv]
     }
     
-    extension [Self <: Xpriv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Xpriv] (val x: Self) extends AnyVal {
       
       inline def setXpriv(value: String): Self = StObject.set(x, "xpriv", value.asInstanceOf[js.Any])
     }
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Xpub]
     }
     
-    extension [Self <: Xpub](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Xpub] (val x: Self) extends AnyVal {
       
       inline def setXpriv(value: String): Self = StObject.set(x, "xpriv", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object PickExpoConfigFacebookfac {
     __obj.asInstanceOf[PickExpoConfigFacebookfac]
   }
   
-  extension [Self <: PickExpoConfigFacebookfac](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickExpoConfigFacebookfac] (val x: Self) extends AnyVal {
     
     inline def setFacebookAppId(value: String): Self = StObject.set(x, "facebookAppId", value.asInstanceOf[js.Any])
     

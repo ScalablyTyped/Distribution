@@ -87,7 +87,8 @@ object b2RevoluteJointDef {
     __obj.asInstanceOf[b2RevoluteJointDef]
   }
   
-  extension [Self <: b2RevoluteJointDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2RevoluteJointDef] (val x: Self) extends AnyVal {
     
     inline def setEnableLimit(value: Boolean): Self = StObject.set(x, "enableLimit", value.asInstanceOf[js.Any])
     

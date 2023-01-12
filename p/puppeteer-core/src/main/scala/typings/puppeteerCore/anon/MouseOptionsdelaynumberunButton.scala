@@ -21,7 +21,8 @@ object MouseOptionsdelaynumberunButton {
     __obj.asInstanceOf[MouseOptionsdelaynumberunButton]
   }
   
-  extension [Self <: MouseOptionsdelaynumberunButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseOptionsdelaynumberunButton] (val x: Self) extends AnyVal {
     
     inline def setButton(value: MouseButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

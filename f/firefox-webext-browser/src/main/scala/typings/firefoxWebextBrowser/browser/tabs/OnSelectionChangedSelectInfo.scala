@@ -16,7 +16,8 @@ object OnSelectionChangedSelectInfo {
     __obj.asInstanceOf[OnSelectionChangedSelectInfo]
   }
   
-  extension [Self <: OnSelectionChangedSelectInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnSelectionChangedSelectInfo] (val x: Self) extends AnyVal {
     
     inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
   }

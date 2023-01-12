@@ -23,7 +23,8 @@ object ThingTypeProperties {
     __obj.asInstanceOf[ThingTypeProperties]
   }
   
-  extension [Self <: ThingTypeProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThingTypeProperties] (val x: Self) extends AnyVal {
     
     inline def setSearchableAttributes(value: SearchableAttributes): Self = StObject.set(x, "searchableAttributes", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object ISplitButton {
     __obj.asInstanceOf[ISplitButton]
   }
   
-  extension [Self <: ISplitButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISplitButton] (val x: Self) extends AnyVal {
     
     inline def setArrowHandler(value: Any): Self = StObject.set(x, "arrowHandler", value.asInstanceOf[js.Any])
     

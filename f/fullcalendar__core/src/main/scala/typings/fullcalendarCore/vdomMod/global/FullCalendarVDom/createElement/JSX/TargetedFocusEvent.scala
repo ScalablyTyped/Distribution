@@ -108,7 +108,8 @@ object TargetedFocusEvent {
     __obj.asInstanceOf[TargetedFocusEvent[Target]]
   }
   
-  extension [Self <: TargetedFocusEvent[?], Target /* <: EventTarget */](x: Self & TargetedFocusEvent[Target]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetedFocusEvent[?], Target /* <: EventTarget */] (val x: Self & TargetedFocusEvent[Target]) extends AnyVal {
     
     inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
     

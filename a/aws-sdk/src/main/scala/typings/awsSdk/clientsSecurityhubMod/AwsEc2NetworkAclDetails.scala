@@ -43,7 +43,8 @@ object AwsEc2NetworkAclDetails {
     __obj.asInstanceOf[AwsEc2NetworkAclDetails]
   }
   
-  extension [Self <: AwsEc2NetworkAclDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2NetworkAclDetails] (val x: Self) extends AnyVal {
     
     inline def setAssociations(value: AwsEc2NetworkAclAssociationList): Self = StObject.set(x, "Associations", value.asInstanceOf[js.Any])
     

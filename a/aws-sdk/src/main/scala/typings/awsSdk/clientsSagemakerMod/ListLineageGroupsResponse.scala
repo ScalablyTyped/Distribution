@@ -23,7 +23,8 @@ object ListLineageGroupsResponse {
     __obj.asInstanceOf[ListLineageGroupsResponse]
   }
   
-  extension [Self <: ListLineageGroupsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLineageGroupsResponse] (val x: Self) extends AnyVal {
     
     inline def setLineageGroupSummaries(value: LineageGroupSummaries): Self = StObject.set(x, "LineageGroupSummaries", value.asInstanceOf[js.Any])
     

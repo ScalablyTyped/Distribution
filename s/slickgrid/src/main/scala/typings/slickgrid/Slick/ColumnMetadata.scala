@@ -38,7 +38,8 @@ object ColumnMetadata {
     __obj.asInstanceOf[ColumnMetadata[T]]
   }
   
-  extension [Self <: ColumnMetadata[?], T /* <: SlickData */](x: Self & ColumnMetadata[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnMetadata[?], T /* <: SlickData */] (val x: Self & ColumnMetadata[T]) extends AnyVal {
     
     inline def setColspan(value: Double | String): Self = StObject.set(x, "colspan", value.asInstanceOf[js.Any])
     

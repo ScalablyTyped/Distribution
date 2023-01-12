@@ -33,7 +33,8 @@ object UpdateVpcAttachmentRequest {
     __obj.asInstanceOf[UpdateVpcAttachmentRequest]
   }
   
-  extension [Self <: UpdateVpcAttachmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateVpcAttachmentRequest] (val x: Self) extends AnyVal {
     
     inline def setAddSubnetArns(value: SubnetArnList): Self = StObject.set(x, "AddSubnetArns", value.asInstanceOf[js.Any])
     

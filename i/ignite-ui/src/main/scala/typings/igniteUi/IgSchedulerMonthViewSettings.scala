@@ -87,7 +87,8 @@ object IgSchedulerMonthViewSettings {
     __obj.asInstanceOf[IgSchedulerMonthViewSettings]
   }
   
-  extension [Self <: IgSchedulerMonthViewSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgSchedulerMonthViewSettings] (val x: Self) extends AnyVal {
     
     inline def setAgendaVisibilityType(value: String): Self = StObject.set(x, "agendaVisibilityType", value.asInstanceOf[js.Any])
     

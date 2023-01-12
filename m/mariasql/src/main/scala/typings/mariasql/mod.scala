@@ -75,7 +75,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ClientConfig]
     }
     
-    extension [Self <: ClientConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientConfig] (val x: Self) extends AnyVal {
       
       inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
@@ -204,7 +205,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MariaInfo]
     }
     
-    extension [Self <: MariaInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MariaInfo] (val x: Self) extends AnyVal {
       
       inline def setAffectedRows(value: Double): Self = StObject.set(x, "affectedRows", value.asInstanceOf[js.Any])
       

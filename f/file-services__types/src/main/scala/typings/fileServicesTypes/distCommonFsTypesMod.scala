@@ -120,7 +120,8 @@ object distCommonFsTypesMod {
       __obj.asInstanceOf[IDirectoryEntry]
     }
     
-    extension [Self <: IDirectoryEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDirectoryEntry] (val x: Self) extends AnyVal {
       
       inline def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
       
@@ -155,7 +156,8 @@ object distCommonFsTypesMod {
       __obj.asInstanceOf[IFileSystemDescriptor]
     }
     
-    extension [Self <: IFileSystemDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFileSystemDescriptor] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -203,7 +205,8 @@ object distCommonFsTypesMod {
       __obj.asInstanceOf[IFileSystemStats]
     }
     
-    extension [Self <: IFileSystemStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFileSystemStats] (val x: Self) extends AnyVal {
       
       inline def setBirthtime(value: js.Date): Self = StObject.set(x, "birthtime", value.asInstanceOf[js.Any])
       
@@ -242,7 +245,8 @@ object distCommonFsTypesMod {
       __obj.asInstanceOf[IWalkOptions]
     }
     
-    extension [Self <: IWalkOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWalkOptions] (val x: Self) extends AnyVal {
       
       inline def setFilterDirectory(value: /* pathDesc */ IFileSystemDescriptor => Boolean): Self = StObject.set(x, "filterDirectory", js.Any.fromFunction1(value))
       
@@ -282,7 +286,8 @@ object distCommonFsTypesMod {
       __obj.asInstanceOf[RmOptions]
     }
     
-    extension [Self <: RmOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RmOptions] (val x: Self) extends AnyVal {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
@@ -309,7 +314,8 @@ object distCommonFsTypesMod {
       __obj.asInstanceOf[StatSyncOptions]
     }
     
-    extension [Self <: StatSyncOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatSyncOptions] (val x: Self) extends AnyVal {
       
       inline def setThrowIfNoEntry(value: Boolean): Self = StObject.set(x, "throwIfNoEntry", value.asInstanceOf[js.Any])
       

@@ -78,7 +78,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CodeBlockProps]
     }
     
-    extension [Self <: CodeBlockProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeBlockProps] (val x: Self) extends AnyVal {
       
       inline def setCodeinfo(value: js.Array[String]): Self = StObject.set(x, "codeinfo", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CodeProps]
     }
     
-    extension [Self <: CodeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeProps] (val x: Self) extends AnyVal {
       
       inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     }
@@ -129,7 +131,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CommonProps]
     }
     
-    extension [Self <: CommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -158,7 +161,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HeadingProps]
     }
     
-    extension [Self <: HeadingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeadingProps] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     }
@@ -181,7 +185,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HtmlInlineBlockProps]
     }
     
-    extension [Self <: HtmlInlineBlockProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlInlineBlockProps] (val x: Self) extends AnyVal {
       
       inline def setEscapeHtml(value: Boolean): Self = StObject.set(x, "escapeHtml", value.asInstanceOf[js.Any])
       
@@ -208,7 +213,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ImageProps]
     }
     
-    extension [Self <: ImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageProps] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -237,7 +243,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LinkProps]
     }
     
-    extension [Self <: LinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
       
       inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
@@ -269,7 +276,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ListProps]
     }
     
-    extension [Self <: ListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListProps] (val x: Self) extends AnyVal {
       
       inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
@@ -312,7 +320,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowNode(value: /* node */ Children => Any): Self = StObject.set(x, "allowNode", js.Any.fromFunction1(value))
       
@@ -428,7 +437,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Renderer]
     }
     
-    extension [Self <: Renderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Renderer] (val x: Self) extends AnyVal {
       
       inline def setAllowNode(value: /* node */ Props => Any): Self = StObject.set(x, "allowNode", js.Any.fromFunction1(value))
       
@@ -507,7 +517,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Renderers]
     }
     
-    extension [Self <: Renderers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Renderers] (val x: Self) extends AnyVal {
       
       inline def setBlockquote(value: String | ComponentType[CommonProps]): Self = StObject.set(x, "Blockquote", value.asInstanceOf[js.Any])
       
@@ -592,7 +603,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SoftBreakProps]
     }
     
-    extension [Self <: SoftBreakProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SoftBreakProps] (val x: Self) extends AnyVal {
       
       inline def setSoftBreak(value: String): Self = StObject.set(x, "softBreak", value.asInstanceOf[js.Any])
     }

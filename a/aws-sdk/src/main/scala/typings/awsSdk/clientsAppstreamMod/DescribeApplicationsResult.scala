@@ -23,7 +23,8 @@ object DescribeApplicationsResult {
     __obj.asInstanceOf[DescribeApplicationsResult]
   }
   
-  extension [Self <: DescribeApplicationsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeApplicationsResult] (val x: Self) extends AnyVal {
     
     inline def setApplications(value: Applications): Self = StObject.set(x, "Applications", value.asInstanceOf[js.Any])
     

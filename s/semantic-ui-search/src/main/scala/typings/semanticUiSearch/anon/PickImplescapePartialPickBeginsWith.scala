@@ -21,7 +21,8 @@ object PickImplescapePartialPickBeginsWith {
     __obj.asInstanceOf[PickImplescapePartialPickBeginsWith]
   }
   
-  extension [Self <: PickImplescapePartialPickBeginsWith](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplescapePartialPickBeginsWith] (val x: Self) extends AnyVal {
     
     inline def setBeginsWith(value: String): Self = StObject.set(x, "beginsWith", value.asInstanceOf[js.Any])
     

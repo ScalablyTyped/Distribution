@@ -19,7 +19,8 @@ object CustomerSearchApplicationStats {
     __obj.asInstanceOf[CustomerSearchApplicationStats]
   }
   
-  extension [Self <: CustomerSearchApplicationStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerSearchApplicationStats] (val x: Self) extends AnyVal {
     
     inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

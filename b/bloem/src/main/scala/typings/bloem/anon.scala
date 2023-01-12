@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Initialcapacity]
     }
     
-    extension [Self <: Initialcapacity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Initialcapacity] (val x: Self) extends AnyVal {
       
       inline def setInitial_capacity(value: Double): Self = StObject.set(x, "initial_capacity", value.asInstanceOf[js.Any])
       

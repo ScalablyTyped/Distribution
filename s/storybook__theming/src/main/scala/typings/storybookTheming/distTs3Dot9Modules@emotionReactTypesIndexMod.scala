@@ -786,7 +786,8 @@ object `distTs3Dot9Modules@emotionReactTypesIndexMod` {
           __obj.asInstanceOf[IntrinsicElements]
         }
         
-        extension [Self <: IntrinsicElements](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
           
           inline def setA(value: DetailedHTMLPropsAnchorHT): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
           
@@ -1192,7 +1193,8 @@ object `distTs3Dot9Modules@emotionReactTypesIndexMod` {
       __obj.asInstanceOf[ClassNamesProps]
     }
     
-    extension [Self <: ClassNamesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassNamesProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ClassNamesContent => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
@@ -1209,7 +1211,8 @@ object `distTs3Dot9Modules@emotionReactTypesIndexMod` {
       __obj.asInstanceOf[GlobalProps]
     }
     
-    extension [Self <: GlobalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalProps] (val x: Self) extends AnyVal {
       
       inline def setStyles(value: Interpolation[Theme]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

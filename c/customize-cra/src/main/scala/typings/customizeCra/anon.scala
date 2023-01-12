@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[Dest]
     }
     
-    extension [Self <: Dest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dest] (val x: Self) extends AnyVal {
       
       inline def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
@@ -144,7 +145,8 @@ object anon {
       __obj.asInstanceOf[RequiredRuleSetRule]
     }
     
-    extension [Self <: RequiredRuleSetRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredRuleSetRule] (val x: Self) extends AnyVal {
       
       inline def setAssert(value: StringDictionary[RuleSetConditionOrConditions]): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
       

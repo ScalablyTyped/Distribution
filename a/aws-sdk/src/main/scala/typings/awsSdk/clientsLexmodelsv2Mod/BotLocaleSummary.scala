@@ -43,7 +43,8 @@ object BotLocaleSummary {
     __obj.asInstanceOf[BotLocaleSummary]
   }
   
-  extension [Self <: BotLocaleSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BotLocaleSummary] (val x: Self) extends AnyVal {
     
     inline def setBotLocaleStatus(value: BotLocaleStatus): Self = StObject.set(x, "botLocaleStatus", value.asInstanceOf[js.Any])
     

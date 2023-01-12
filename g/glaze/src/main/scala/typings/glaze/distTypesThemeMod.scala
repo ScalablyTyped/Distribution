@@ -71,7 +71,8 @@ object distTypesThemeMod {
       __obj.asInstanceOf[CommonTheme]
     }
     
-    extension [Self <: CommonTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonTheme] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: StringDictionary[hack | Tokens[shorthands]]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object distTypesThemeMod {
       __obj.asInstanceOf[RuntimeTheme]
     }
     
-    extension [Self <: RuntimeTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuntimeTheme] (val x: Self) extends AnyVal {
       
       inline def setRef(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeRef */ Any
@@ -136,7 +138,8 @@ object distTypesThemeMod {
       __obj.asInstanceOf[StaticTheme]
     }
     
-    extension [Self <: StaticTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticTheme] (val x: Self) extends AnyVal {
       
       inline def setMatchers(value: propertyinkeyofCSSPropert): Self = StObject.set(x, "matchers", value.asInstanceOf[js.Any])
       

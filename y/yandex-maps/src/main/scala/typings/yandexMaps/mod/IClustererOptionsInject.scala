@@ -33,7 +33,8 @@ object IClustererOptionsInject {
     __obj.asInstanceOf[IClustererOptionsInject]
   }
   
-  extension [Self <: IClustererOptionsInject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClustererOptionsInject] (val x: Self) extends AnyVal {
     
     inline def setGridSize(value: Double): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
     

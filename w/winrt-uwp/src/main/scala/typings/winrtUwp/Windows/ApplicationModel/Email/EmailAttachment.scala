@@ -56,7 +56,8 @@ object EmailAttachment {
     __obj.asInstanceOf[EmailAttachment]
   }
   
-  extension [Self <: EmailAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailAttachment] (val x: Self) extends AnyVal {
     
     inline def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
     

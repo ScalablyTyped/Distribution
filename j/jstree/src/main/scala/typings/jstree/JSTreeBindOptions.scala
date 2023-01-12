@@ -21,7 +21,8 @@ object JSTreeBindOptions {
     __obj.asInstanceOf[JSTreeBindOptions]
   }
   
-  extension [Self <: JSTreeBindOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSTreeBindOptions] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

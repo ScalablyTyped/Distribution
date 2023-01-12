@@ -168,7 +168,8 @@ object CAPICOM_OID {
     __obj.asInstanceOf[CAPICOM_OID]
   }
   
-  extension [Self <: CAPICOM_OID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CAPICOM_OID] (val x: Self) extends AnyVal {
     
     inline def setCAPICOM_OID_APPLICATION_CERT_POLICIES_EXTENSION(value: `23`): Self = StObject.set(x, "CAPICOM_OID_APPLICATION_CERT_POLICIES_EXTENSION", value.asInstanceOf[js.Any])
     

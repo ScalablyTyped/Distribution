@@ -32,7 +32,8 @@ object getOptions {
     __obj.asInstanceOf[getOptions]
   }
   
-  extension [Self <: getOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: getOptions] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: () => Unit): Self = StObject.set(x, "query", js.Any.fromFunction0(value))
     

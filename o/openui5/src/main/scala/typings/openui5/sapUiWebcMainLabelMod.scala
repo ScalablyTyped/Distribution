@@ -369,7 +369,8 @@ object sapUiWebcMainLabelMod {
       __obj.asInstanceOf[LabelSettings]
     }
     
-    extension [Self <: LabelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelSettings] (val x: Self) extends AnyVal {
       
       inline def setLabelFor(value: typings.openui5.sapUiCoreControlMod.default | String): Self = StObject.set(x, "labelFor", value.asInstanceOf[js.Any])
       

@@ -132,7 +132,8 @@ object libRendererMod {
       __obj.asInstanceOf[RenderRuleRecord]
     }
     
-    extension [Self <: RenderRuleRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderRuleRecord] (val x: Self) extends AnyVal {
       
       inline def setCode_block(
         value: (/* tokens */ js.Array[typings.markdownIt.libTokenMod.^], /* idx */ Double, /* options */ Options, /* env */ Any, /* self */ Renderer) => String
@@ -279,7 +280,8 @@ object libRendererMod {
       __obj.asInstanceOf[Renderer]
     }
     
-    extension [Self <: Renderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Renderer] (val x: Self) extends AnyVal {
       
       inline def setRender(value: (js.Array[typings.markdownIt.libTokenMod.^], Options, Any) => String): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
       

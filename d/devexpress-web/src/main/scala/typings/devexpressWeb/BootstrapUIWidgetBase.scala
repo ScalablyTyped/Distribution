@@ -128,7 +128,8 @@ object BootstrapUIWidgetBase {
     __obj.asInstanceOf[BootstrapUIWidgetBase]
   }
   
-  extension [Self <: BootstrapUIWidgetBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapUIWidgetBase] (val x: Self) extends AnyVal {
     
     inline def setDisposing(value: ASPxClientEvent[BootstrapUIWidgetDisposingEventHandler[BootstrapUIWidgetBase]]): Self = StObject.set(x, "Disposing", value.asInstanceOf[js.Any])
     

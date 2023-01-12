@@ -20,7 +20,8 @@ object ServerTemplate {
     __obj.asInstanceOf[ServerTemplate]
   }
   
-  extension [Self <: ServerTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerTemplate] (val x: Self) extends AnyVal {
     
     inline def setSequence(value: String): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     

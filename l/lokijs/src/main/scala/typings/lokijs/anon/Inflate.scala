@@ -17,7 +17,8 @@ object Inflate {
     __obj.asInstanceOf[Inflate]
   }
   
-  extension [Self <: Inflate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Inflate] (val x: Self) extends AnyVal {
     
     inline def setInflate(value: (/* src */ js.Object, /* dest */ js.UndefOr[js.Object]) => Unit): Self = StObject.set(x, "inflate", js.Any.fromFunction2(value))
     

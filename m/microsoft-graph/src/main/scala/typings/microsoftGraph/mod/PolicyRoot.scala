@@ -69,7 +69,8 @@ object PolicyRoot {
     __obj.asInstanceOf[PolicyRoot]
   }
   
-  extension [Self <: PolicyRoot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyRoot] (val x: Self) extends AnyVal {
     
     inline def setActivityBasedTimeoutPolicies(value: NullableOption[js.Array[ActivityBasedTimeoutPolicy]]): Self = StObject.set(x, "activityBasedTimeoutPolicies", value.asInstanceOf[js.Any])
     

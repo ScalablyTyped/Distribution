@@ -43,7 +43,8 @@ object PlaceAttribute {
     __obj.asInstanceOf[PlaceAttribute]
   }
   
-  extension [Self <: PlaceAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceAttribute] (val x: Self) extends AnyVal {
     
     inline def setAppColonid(value: String): Self = StObject.set(x, "app:id", value.asInstanceOf[js.Any])
     

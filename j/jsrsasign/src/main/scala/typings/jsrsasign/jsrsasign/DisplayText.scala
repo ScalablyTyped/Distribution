@@ -18,7 +18,8 @@ object DisplayText {
     __obj.asInstanceOf[DisplayText]
   }
   
-  extension [Self <: DisplayText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayText] (val x: Self) extends AnyVal {
     
     inline def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
     

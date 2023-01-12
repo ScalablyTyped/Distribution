@@ -23,7 +23,8 @@ object ApplySchemaRequest {
     __obj.asInstanceOf[ApplySchemaRequest]
   }
   
-  extension [Self <: ApplySchemaRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplySchemaRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     

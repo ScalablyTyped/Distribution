@@ -20,7 +20,8 @@ object ReadonlyreadonlyASCASCrea {
     __obj.asInstanceOf[ReadonlyreadonlyASCASCrea]
   }
   
-  extension [Self <: ReadonlyreadonlyASCASCrea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyreadonlyASCASCrea] (val x: Self) extends AnyVal {
     
     inline def setASC(value: ASC): Self = StObject.set(x, "ASC", value.asInstanceOf[js.Any])
     

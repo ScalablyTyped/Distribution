@@ -240,7 +240,8 @@ object sapUiTestMatchersBindingPathMod {
       __obj.asInstanceOf[BindingPathSettings]
     }
     
-    extension [Self <: BindingPathSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BindingPathSettings] (val x: Self) extends AnyVal {
       
       inline def setModelName(value: String | PropertyBindingInfo): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
       

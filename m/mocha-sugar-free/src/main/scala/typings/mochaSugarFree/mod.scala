@@ -262,7 +262,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AnyInterface]
     }
     
-    extension [Self <: AnyInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnyInterface] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: HookFunction): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -848,7 +849,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BDD]
     }
     
-    extension [Self <: BDD](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BDD] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: HookFunction): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -904,7 +906,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BaseInterface]
     }
     
-    extension [Self <: BaseInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseInterface] (val x: Self) extends AnyVal {
       
       inline def setDetectedInterface(value: bdd | tdd | qunit): Self = StObject.set(x, "detectedInterface", value.asInstanceOf[js.Any])
       
@@ -975,7 +978,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HookContext]
     }
     
-    extension [Self <: HookContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookContext] (val x: Self) extends AnyVal {
       
       inline def setHook(value: before | after | beforeEach | afterEach): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
       
@@ -1076,7 +1080,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -1213,7 +1218,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[QUnit]
     }
     
-    extension [Self <: QUnit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QUnit] (val x: Self) extends AnyVal {
       
       inline def setDetectedInterface(value: qunit): Self = StObject.set(x, "detectedInterface", value.asInstanceOf[js.Any])
       
@@ -1240,7 +1246,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SuiteContext]
     }
     
-    extension [Self <: SuiteContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuiteContext] (val x: Self) extends AnyVal {
       
       inline def setIsHook(value: `false`): Self = StObject.set(x, "isHook", value.asInstanceOf[js.Any])
       
@@ -1547,7 +1554,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TDD]
     }
     
-    extension [Self <: TDD](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TDD] (val x: Self) extends AnyVal {
       
       inline def setDetectedInterface(value: tdd): Self = StObject.set(x, "detectedInterface", value.asInstanceOf[js.Any])
       

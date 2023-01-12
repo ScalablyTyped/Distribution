@@ -210,7 +210,8 @@ object srcNgtscPartialEvaluatorSrcDynamicMod {
       __obj.asInstanceOf[DynamicValueVisitor[R]]
     }
     
-    extension [Self <: DynamicValueVisitor[?], R](x: Self & DynamicValueVisitor[R]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicValueVisitor[?], R] (val x: Self & DynamicValueVisitor[R]) extends AnyVal {
       
       inline def setVisitComplexFunctionCall(value: DynamicValue[FunctionDefinition] => R): Self = StObject.set(x, "visitComplexFunctionCall", js.Any.fromFunction1(value))
       

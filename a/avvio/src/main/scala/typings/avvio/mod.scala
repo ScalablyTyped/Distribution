@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object mod {
       __obj.asInstanceOf[Server[I]]
     }
     
-    extension [Self <: Server[?], I](x: Self & Server[I]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Server[?], I] (val x: Self & Server[I]) extends AnyVal {
       
       inline def setAfter(value: After[I, context[I]]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       

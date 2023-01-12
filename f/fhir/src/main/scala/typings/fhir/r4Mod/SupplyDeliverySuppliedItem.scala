@@ -30,7 +30,8 @@ object SupplyDeliverySuppliedItem {
     __obj.asInstanceOf[SupplyDeliverySuppliedItem]
   }
   
-  extension [Self <: SupplyDeliverySuppliedItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupplyDeliverySuppliedItem] (val x: Self) extends AnyVal {
     
     inline def setItemCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "itemCodeableConcept", value.asInstanceOf[js.Any])
     

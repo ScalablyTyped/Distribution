@@ -27,7 +27,8 @@ object distSrcSystemDistComponentsFaceNeutral30Mod extends Shortcut {
       __obj.asInstanceOf[FaceNeutral30Props]
     }
     
-    extension [Self <: FaceNeutral30Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaceNeutral30Props] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

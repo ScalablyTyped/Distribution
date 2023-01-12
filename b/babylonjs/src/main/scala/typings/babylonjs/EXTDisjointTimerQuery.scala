@@ -51,7 +51,8 @@ object EXTDisjointTimerQuery {
     __obj.asInstanceOf[EXTDisjointTimerQuery]
   }
   
-  extension [Self <: EXTDisjointTimerQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EXTDisjointTimerQuery] (val x: Self) extends AnyVal {
     
     inline def setBeginQueryEXT(value: (Double, WebGLQuery) => Unit): Self = StObject.set(x, "beginQueryEXT", js.Any.fromFunction2(value))
     

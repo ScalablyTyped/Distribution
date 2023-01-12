@@ -37,7 +37,8 @@ object Commiturl {
     __obj.asInstanceOf[Commiturl]
   }
   
-  extension [Self <: Commiturl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Commiturl] (val x: Self) extends AnyVal {
     
     inline def setCommit_url(value: String): Self = StObject.set(x, "commit_url", value.asInstanceOf[js.Any])
     

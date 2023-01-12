@@ -19,7 +19,8 @@ object MUIDataTableTextLabelsSelectedRows {
     __obj.asInstanceOf[MUIDataTableTextLabelsSelectedRows]
   }
   
-  extension [Self <: MUIDataTableTextLabelsSelectedRows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableTextLabelsSelectedRows] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     

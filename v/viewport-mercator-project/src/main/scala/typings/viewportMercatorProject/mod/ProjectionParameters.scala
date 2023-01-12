@@ -23,7 +23,8 @@ object ProjectionParameters {
     __obj.asInstanceOf[ProjectionParameters]
   }
   
-  extension [Self <: ProjectionParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectionParameters] (val x: Self) extends AnyVal {
     
     inline def setAspect(value: Double): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
     

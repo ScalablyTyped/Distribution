@@ -15,7 +15,8 @@ object ElmApp {
     __obj.asInstanceOf[ElmApp[P]]
   }
   
-  extension [Self <: ElmApp[?], P](x: Self & ElmApp[P]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElmApp[?], P] (val x: Self & ElmApp[P]) extends AnyVal {
     
     inline def setPorts(value: P): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
   }

@@ -102,7 +102,8 @@ object mod {
       __obj.asInstanceOf[JdenticonCompatibleCanvas]
     }
     
-    extension [Self <: JdenticonCompatibleCanvas](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JdenticonCompatibleCanvas] (val x: Self) extends AnyVal {
       
       inline def setGetContext(value: `2d` => JdenticonCompatibleCanvasRenderingContext2D | Null): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
       
@@ -212,7 +213,8 @@ object mod {
       __obj.asInstanceOf[JdenticonConfig]
     }
     
-    extension [Self <: JdenticonConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JdenticonConfig] (val x: Self) extends AnyVal {
       
       inline def setBackColor(value: String): Self = StObject.set(x, "backColor", value.asInstanceOf[js.Any])
       
@@ -260,7 +262,8 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setJdenticon_config(value: JdenticonConfig): Self = StObject.set(x, "jdenticon_config", value.asInstanceOf[js.Any])
         

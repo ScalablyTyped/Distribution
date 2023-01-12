@@ -24,7 +24,8 @@ object XRLightEstimate {
     __obj.asInstanceOf[XRLightEstimate]
   }
   
-  extension [Self <: XRLightEstimate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRLightEstimate] (val x: Self) extends AnyVal {
     
     inline def setPrimaryLightDirection(value: DOMPointReadOnly): Self = StObject.set(x, "primaryLightDirection", value.asInstanceOf[js.Any])
     

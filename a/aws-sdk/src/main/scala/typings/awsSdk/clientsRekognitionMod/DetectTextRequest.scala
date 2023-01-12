@@ -23,7 +23,8 @@ object DetectTextRequest {
     __obj.asInstanceOf[DetectTextRequest]
   }
   
-  extension [Self <: DetectTextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectTextRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: DetectTextFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GoogleCloudDialogflowV2DeleteConversationModelOperationMetadata {
     __obj.asInstanceOf[GoogleCloudDialogflowV2DeleteConversationModelOperationMetadata]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2DeleteConversationModelOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2DeleteConversationModelOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setConversationModel(value: String): Self = StObject.set(x, "conversationModel", value.asInstanceOf[js.Any])
     

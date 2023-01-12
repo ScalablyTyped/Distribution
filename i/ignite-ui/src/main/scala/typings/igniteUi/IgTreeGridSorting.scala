@@ -318,7 +318,8 @@ object IgTreeGridSorting {
     __obj.asInstanceOf[IgTreeGridSorting]
   }
   
-  extension [Self <: IgTreeGridSorting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTreeGridSorting] (val x: Self) extends AnyVal {
     
     inline def setApplySortedColumnCss(value: Boolean): Self = StObject.set(x, "applySortedColumnCss", value.asInstanceOf[js.Any])
     

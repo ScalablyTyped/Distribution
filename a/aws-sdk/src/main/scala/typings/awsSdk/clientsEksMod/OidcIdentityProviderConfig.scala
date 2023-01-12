@@ -73,7 +73,8 @@ object OidcIdentityProviderConfig {
     __obj.asInstanceOf[OidcIdentityProviderConfig]
   }
   
-  extension [Self <: OidcIdentityProviderConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OidcIdentityProviderConfig] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     

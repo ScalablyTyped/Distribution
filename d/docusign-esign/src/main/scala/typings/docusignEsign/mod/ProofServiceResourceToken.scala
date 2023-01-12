@@ -15,7 +15,8 @@ object ProofServiceResourceToken {
     __obj.asInstanceOf[ProofServiceResourceToken]
   }
   
-  extension [Self <: ProofServiceResourceToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProofServiceResourceToken] (val x: Self) extends AnyVal {
     
     inline def setResourceToken(value: String): Self = StObject.set(x, "ResourceToken", value.asInstanceOf[js.Any])
     

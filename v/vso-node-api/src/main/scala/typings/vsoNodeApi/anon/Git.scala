@@ -17,7 +17,8 @@ object Git {
     __obj.asInstanceOf[Git]
   }
   
-  extension [Self <: Git](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Git] (val x: Self) extends AnyVal {
     
     inline def setGit(value: scala.Double): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
     

@@ -109,7 +109,8 @@ object HTMLHyperlinkElementUtils {
     __obj.asInstanceOf[HTMLHyperlinkElementUtils]
   }
   
-  extension [Self <: HTMLHyperlinkElementUtils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLHyperlinkElementUtils] (val x: Self) extends AnyVal {
     
     inline def setHash(value: java.lang.String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

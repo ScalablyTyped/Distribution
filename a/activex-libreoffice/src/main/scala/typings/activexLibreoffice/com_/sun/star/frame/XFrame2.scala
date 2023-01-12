@@ -108,7 +108,8 @@ object XFrame2 {
     __obj.asInstanceOf[XFrame2]
   }
   
-  extension [Self <: XFrame2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFrame2] (val x: Self) extends AnyVal {
     
     inline def setDispatchRecorderSupplier(value: XDispatchRecorderSupplier): Self = StObject.set(x, "DispatchRecorderSupplier", value.asInstanceOf[js.Any])
     

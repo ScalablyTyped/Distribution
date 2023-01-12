@@ -59,7 +59,8 @@ object ApplyChangesMode {
     __obj.asInstanceOf[ApplyChangesMode]
   }
   
-  extension [Self <: ApplyChangesMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplyChangesMode] (val x: Self) extends AnyVal {
     
     inline def setAllowSearch(value: Boolean): Self = StObject.set(x, "allowSearch", value.asInstanceOf[js.Any])
     

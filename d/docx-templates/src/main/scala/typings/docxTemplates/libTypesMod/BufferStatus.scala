@@ -19,7 +19,8 @@ object BufferStatus {
     __obj.asInstanceOf[BufferStatus]
   }
   
-  extension [Self <: BufferStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferStatus] (val x: Self) extends AnyVal {
     
     inline def setCmds(value: String): Self = StObject.set(x, "cmds", value.asInstanceOf[js.Any])
     

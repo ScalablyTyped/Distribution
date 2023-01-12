@@ -209,7 +209,8 @@ object libMod {
       __obj.asInstanceOf[ErrorFields]
     }
     
-    extension [Self <: ErrorFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorFields] (val x: Self) extends AnyVal {
       
       inline def setAbandonedHeadElementChild(value: ErrorSeverity): Self = StObject.set(x, "abandonedHeadElementChild", value.asInstanceOf[js.Any])
       
@@ -597,7 +598,8 @@ object libMod {
       __obj.asInstanceOf[FromParse5Options]
     }
     
-    extension [Self <: FromParse5Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromParse5Options] (val x: Self) extends AnyVal {
       
       inline def setSpace(value: Space): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
       
@@ -765,7 +767,8 @@ object libMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAbandonedHeadElementChild(value: ErrorSeverity): Self = StObject.set(x, "abandonedHeadElementChild", value.asInstanceOf[js.Any])
       
@@ -1176,7 +1179,8 @@ object libMod {
       __obj.asInstanceOf[ParseFields]
     }
     
-    extension [Self <: ParseFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseFields] (val x: Self) extends AnyVal {
       
       inline def setEmitParseErrors(value: Boolean): Self = StObject.set(x, "emitParseErrors", value.asInstanceOf[js.Any])
       

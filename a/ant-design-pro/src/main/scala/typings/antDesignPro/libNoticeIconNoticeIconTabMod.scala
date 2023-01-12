@@ -34,7 +34,8 @@ object libNoticeIconNoticeIconTabMod {
       __obj.asInstanceOf[NoticeIconData]
     }
     
-    extension [Self <: NoticeIconData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoticeIconData] (val x: Self) extends AnyVal {
       
       inline def setAvatar(value: String | ReactNode): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object libNoticeIconNoticeIconTabMod {
       __obj.asInstanceOf[NoticeIconTabProps]
     }
     
-    extension [Self <: NoticeIconTabProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoticeIconTabProps] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

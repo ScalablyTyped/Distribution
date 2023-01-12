@@ -67,7 +67,8 @@ object ReferenceDelegate {
     __obj.asInstanceOf[ReferenceDelegate]
   }
   
-  extension [Self <: ReferenceDelegate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceDelegate] (val x: Self) extends AnyVal {
     
     inline def setAddReference(
       value: (PersistenceTransaction, TargetId, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _DocumentKey */ Any) => PersistencePromise[Unit]

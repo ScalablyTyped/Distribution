@@ -216,7 +216,8 @@ object dxTreeListOptions {
     __obj.asInstanceOf[dxTreeListOptions[TRowData, TKey]]
   }
   
-  extension [Self <: dxTreeListOptions[?, ?], TRowData, TKey](x: Self & (dxTreeListOptions[TRowData, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxTreeListOptions[?, ?], TRowData, TKey] (val x: Self & (dxTreeListOptions[TRowData, TKey])) extends AnyVal {
     
     inline def setAutoExpandAll(value: Boolean): Self = StObject.set(x, "autoExpandAll", value.asInstanceOf[js.Any])
     

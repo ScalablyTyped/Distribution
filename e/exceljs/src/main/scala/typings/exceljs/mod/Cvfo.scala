@@ -18,7 +18,8 @@ object Cvfo {
     __obj.asInstanceOf[Cvfo]
   }
   
-  extension [Self <: Cvfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cvfo] (val x: Self) extends AnyVal {
     
     inline def setType(value: CfvoTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

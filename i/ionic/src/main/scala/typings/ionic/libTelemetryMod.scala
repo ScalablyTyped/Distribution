@@ -69,7 +69,8 @@ object libTelemetryMod {
       __obj.asInstanceOf[TelemetryDeps]
     }
     
-    extension [Self <: TelemetryDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TelemetryDeps] (val x: Self) extends AnyVal {
       
       inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       

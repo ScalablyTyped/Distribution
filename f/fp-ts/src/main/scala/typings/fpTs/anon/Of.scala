@@ -30,7 +30,8 @@ object Of {
     __obj.asInstanceOf[Of[W, M]]
   }
   
-  extension [Self <: Of[?, ?], W, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & (Of[W, M])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Of[?, ?], W, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & (Of[W, M])) extends AnyVal {
     
     inline def setAp(value: (WriterT1[M, W, js.Function1[Any, Any]], WriterT1[M, W, Any]) => WriterT1[M, W, Any]): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
     

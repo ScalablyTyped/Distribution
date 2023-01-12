@@ -132,7 +132,8 @@ object OmitTimeRangeSvgPropsheig {
     __obj.asInstanceOf[OmitTimeRangeSvgPropsheig]
   }
   
-  extension [Self <: OmitTimeRangeSvgPropsheig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitTimeRangeSvgPropsheig] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: BoxAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object LayoutTreeNode {
     __obj.asInstanceOf[LayoutTreeNode]
   }
   
-  extension [Self <: LayoutTreeNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutTreeNode] (val x: Self) extends AnyVal {
     
     inline def setBoundingBox(value: Rect): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
     

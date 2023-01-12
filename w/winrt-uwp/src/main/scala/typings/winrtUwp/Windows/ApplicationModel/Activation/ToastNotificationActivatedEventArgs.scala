@@ -36,7 +36,8 @@ object ToastNotificationActivatedEventArgs {
     __obj.asInstanceOf[ToastNotificationActivatedEventArgs]
   }
   
-  extension [Self <: ToastNotificationActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToastNotificationActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: String): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     

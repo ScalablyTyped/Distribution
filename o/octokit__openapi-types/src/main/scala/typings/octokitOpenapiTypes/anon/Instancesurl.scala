@@ -65,7 +65,8 @@ object Instancesurl {
     __obj.asInstanceOf[Instancesurl]
   }
   
-  extension [Self <: Instancesurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Instancesurl] (val x: Self) extends AnyVal {
     
     inline def setCreated_at(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['alert-created-at'] */ js.Any

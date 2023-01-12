@@ -48,7 +48,8 @@ object RTCTransportStats {
     __obj.asInstanceOf[RTCTransportStats]
   }
   
-  extension [Self <: RTCTransportStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCTransportStats] (val x: Self) extends AnyVal {
     
     inline def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
     

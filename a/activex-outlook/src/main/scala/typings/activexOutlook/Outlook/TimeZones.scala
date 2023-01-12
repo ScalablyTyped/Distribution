@@ -44,7 +44,8 @@ object TimeZones {
     __obj.asInstanceOf[TimeZones]
   }
   
-  extension [Self <: TimeZones](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeZones] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

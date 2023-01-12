@@ -72,7 +72,8 @@ object materialsTexturesProceduralsProceduralTextureSceneComponentMod {
         __obj.asInstanceOf[AbstractScene]
       }
       
-      extension [Self <: AbstractScene](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AbstractScene] (val x: Self) extends AnyVal {
         
         inline def setProceduralTextures(value: js.Array[ProceduralTexture]): Self = StObject.set(x, "proceduralTextures", value.asInstanceOf[js.Any])
         

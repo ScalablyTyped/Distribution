@@ -38,7 +38,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DropDownOption[T]]
     }
     
-    extension [Self <: DropDownOption[?], T](x: Self & DropDownOption[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropDownOption[?], T] (val x: Self & DropDownOption[T]) extends AnyVal {
       
       inline def setLabel(value: String | Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DropDownSelection[T]]
     }
     
-    extension [Self <: DropDownSelection[?], T](x: Self & DropDownSelection[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropDownSelection[?], T] (val x: Self & DropDownSelection[T]) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

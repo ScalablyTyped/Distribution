@@ -27,7 +27,8 @@ object distTypesOnStageReactionsDistComponentsSurprisedSmallMod extends Shortcut
       __obj.asInstanceOf[SurprisedSmallProps]
     }
     
-    extension [Self <: SurprisedSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SurprisedSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

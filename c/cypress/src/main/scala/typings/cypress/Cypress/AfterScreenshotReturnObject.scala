@@ -19,7 +19,8 @@ object AfterScreenshotReturnObject {
     __obj.asInstanceOf[AfterScreenshotReturnObject]
   }
   
-  extension [Self <: AfterScreenshotReturnObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AfterScreenshotReturnObject] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: Dimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     

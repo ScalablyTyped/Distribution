@@ -23,7 +23,8 @@ object GdgAttributes {
     __obj.asInstanceOf[GdgAttributes]
   }
   
-  extension [Self <: GdgAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GdgAttributes] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Integer): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object filteringFormatterOptionsStrictOptionsMod {
       __obj.asInstanceOf[StrictOptions]
     }
     
-    extension [Self <: StrictOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictOptions] (val x: Self) extends AnyVal {
       
       inline def setExactMatch(value: Boolean): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
       

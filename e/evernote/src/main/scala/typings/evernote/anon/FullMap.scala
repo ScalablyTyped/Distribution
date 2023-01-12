@@ -19,7 +19,8 @@ object FullMap {
     __obj.asInstanceOf[FullMap]
   }
   
-  extension [Self <: FullMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullMap] (val x: Self) extends AnyVal {
     
     inline def setFullMap(value: Map[String, String]): Self = StObject.set(x, "fullMap", value.asInstanceOf[js.Any])
     

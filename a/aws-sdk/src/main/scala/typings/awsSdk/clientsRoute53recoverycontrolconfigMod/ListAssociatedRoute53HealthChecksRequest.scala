@@ -28,7 +28,8 @@ object ListAssociatedRoute53HealthChecksRequest {
     __obj.asInstanceOf[ListAssociatedRoute53HealthChecksRequest]
   }
   
-  extension [Self <: ListAssociatedRoute53HealthChecksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAssociatedRoute53HealthChecksRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

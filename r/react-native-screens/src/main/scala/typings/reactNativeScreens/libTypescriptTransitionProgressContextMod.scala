@@ -28,7 +28,8 @@ object libTypescriptTransitionProgressContextMod extends Shortcut {
       __obj.asInstanceOf[TransitionProgressContextBody]
     }
     
-    extension [Self <: TransitionProgressContextBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionProgressContextBody] (val x: Self) extends AnyVal {
       
       inline def setClosing(value: Value): Self = StObject.set(x, "closing", value.asInstanceOf[js.Any])
       

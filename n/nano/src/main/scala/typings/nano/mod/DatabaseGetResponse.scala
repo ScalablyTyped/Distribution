@@ -60,7 +60,8 @@ object DatabaseGetResponse {
     __obj.asInstanceOf[DatabaseGetResponse]
   }
   
-  extension [Self <: DatabaseGetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseGetResponse] (val x: Self) extends AnyVal {
     
     inline def setCompact_running(value: Boolean): Self = StObject.set(x, "compact_running", value.asInstanceOf[js.Any])
     

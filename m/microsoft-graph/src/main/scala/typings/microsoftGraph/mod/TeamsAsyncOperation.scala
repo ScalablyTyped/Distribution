@@ -42,7 +42,8 @@ object TeamsAsyncOperation {
     __obj.asInstanceOf[TeamsAsyncOperation]
   }
   
-  extension [Self <: TeamsAsyncOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamsAsyncOperation] (val x: Self) extends AnyVal {
     
     inline def setAttemptsCount(value: Double): Self = StObject.set(x, "attemptsCount", value.asInstanceOf[js.Any])
     

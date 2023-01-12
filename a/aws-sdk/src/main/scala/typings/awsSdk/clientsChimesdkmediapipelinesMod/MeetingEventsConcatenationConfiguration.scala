@@ -18,7 +18,8 @@ object MeetingEventsConcatenationConfiguration {
     __obj.asInstanceOf[MeetingEventsConcatenationConfiguration]
   }
   
-  extension [Self <: MeetingEventsConcatenationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeetingEventsConcatenationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setState(value: ArtifactsConcatenationState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }

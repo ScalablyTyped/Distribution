@@ -32,7 +32,8 @@ object ExpirationPattern {
     __obj.asInstanceOf[ExpirationPattern]
   }
   
-  extension [Self <: ExpirationPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpirationPattern] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: NullableOption[String]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

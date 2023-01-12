@@ -23,7 +23,8 @@ object TaskAutoAssign {
     __obj.asInstanceOf[TaskAutoAssign]
   }
   
-  extension [Self <: TaskAutoAssign](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskAutoAssign] (val x: Self) extends AnyVal {
     
     inline def setConsiderDependencies(value: Boolean): Self = StObject.set(x, "considerDependencies", value.asInstanceOf[js.Any])
     

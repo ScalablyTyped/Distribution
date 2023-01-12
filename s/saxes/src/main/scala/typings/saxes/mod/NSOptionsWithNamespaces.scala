@@ -19,7 +19,8 @@ object NSOptionsWithNamespaces {
     __obj.asInstanceOf[NSOptionsWithNamespaces]
   }
   
-  extension [Self <: NSOptionsWithNamespaces](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NSOptionsWithNamespaces] (val x: Self) extends AnyVal {
     
     inline def setXmlns(value: `true`): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
   }

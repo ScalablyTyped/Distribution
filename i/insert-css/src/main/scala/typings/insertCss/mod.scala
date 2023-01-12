@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[InsertCssOptions]
     }
     
-    extension [Self <: InsertCssOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InsertCssOptions] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

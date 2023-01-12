@@ -42,7 +42,8 @@ object WorkItemTypeFieldModel {
     __obj.asInstanceOf[WorkItemTypeFieldModel]
   }
   
-  extension [Self <: WorkItemTypeFieldModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemTypeFieldModel] (val x: Self) extends AnyVal {
     
     inline def setAllowGroups(value: Boolean): Self = StObject.set(x, "allowGroups", value.asInstanceOf[js.Any])
     

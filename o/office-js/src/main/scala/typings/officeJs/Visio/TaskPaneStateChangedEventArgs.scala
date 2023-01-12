@@ -41,7 +41,8 @@ object TaskPaneStateChangedEventArgs {
     __obj.asInstanceOf[TaskPaneStateChangedEventArgs]
   }
   
-  extension [Self <: TaskPaneStateChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskPaneStateChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     

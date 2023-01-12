@@ -17,7 +17,8 @@ object JSDocLinkDisplayPart {
     __obj.asInstanceOf[JSDocLinkDisplayPart]
   }
   
-  extension [Self <: JSDocLinkDisplayPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSDocLinkDisplayPart] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: DocumentSpan): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

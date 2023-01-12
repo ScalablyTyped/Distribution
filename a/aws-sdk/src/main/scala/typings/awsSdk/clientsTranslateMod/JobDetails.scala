@@ -28,7 +28,8 @@ object JobDetails {
     __obj.asInstanceOf[JobDetails]
   }
   
-  extension [Self <: JobDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobDetails] (val x: Self) extends AnyVal {
     
     inline def setDocumentsWithErrorsCount(value: Integer): Self = StObject.set(x, "DocumentsWithErrorsCount", value.asInstanceOf[js.Any])
     

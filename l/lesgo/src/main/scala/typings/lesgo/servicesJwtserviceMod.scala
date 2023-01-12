@@ -62,7 +62,8 @@ object servicesJwtserviceMod {
       __obj.asInstanceOf[Config[T]]
     }
     
-    extension [Self <: Config[?], T](x: Self & Config[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config[?], T] (val x: Self & Config[T]) extends AnyVal {
       
       inline def setCustomClaims(value: Validate[T]): Self = StObject.set(x, "customClaims", value.asInstanceOf[js.Any])
       
@@ -200,7 +201,8 @@ object servicesJwtserviceMod {
       __obj.asInstanceOf[JWTService[TDecoded]]
     }
     
-    extension [Self <: JWTService[?], TDecoded /* <: js.Object | String */](x: Self & JWTService[TDecoded]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JWTService[?], TDecoded /* <: js.Object | String */] (val x: Self & JWTService[TDecoded]) extends AnyVal {
       
       inline def setDecoded(value: TDecoded): Self = StObject.set(x, "decoded", value.asInstanceOf[js.Any])
       

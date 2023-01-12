@@ -109,7 +109,8 @@ object FlexTemplateRuntimeEnvironment {
     __obj.asInstanceOf[FlexTemplateRuntimeEnvironment]
   }
   
-  extension [Self <: FlexTemplateRuntimeEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexTemplateRuntimeEnvironment] (val x: Self) extends AnyVal {
     
     inline def setAdditionalExperiments(value: js.Array[String]): Self = StObject.set(x, "additionalExperiments", value.asInstanceOf[js.Any])
     

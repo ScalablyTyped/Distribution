@@ -27,7 +27,8 @@ object ITextSnapshot {
     __obj.asInstanceOf[ITextSnapshot]
   }
   
-  extension [Self <: ITextSnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextSnapshot] (val x: Self) extends AnyVal {
     
     inline def setGetLineFromLineNumber(value: Double => ITextSnapshotLine): Self = StObject.set(x, "getLineFromLineNumber", js.Any.fromFunction1(value))
     

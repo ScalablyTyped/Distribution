@@ -17,7 +17,8 @@ object MenuHTMLAttributes {
     __obj.asInstanceOf[MenuHTMLAttributes]
   }
   
-  extension [Self <: MenuHTMLAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuHTMLAttributes] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

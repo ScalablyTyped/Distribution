@@ -23,7 +23,8 @@ object GetThirdPartyFirewallAssociationStatusResponse {
     __obj.asInstanceOf[GetThirdPartyFirewallAssociationStatusResponse]
   }
   
-  extension [Self <: GetThirdPartyFirewallAssociationStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetThirdPartyFirewallAssociationStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setMarketplaceOnboardingStatus(value: MarketplaceSubscriptionOnboardingStatus): Self = StObject.set(x, "MarketplaceOnboardingStatus", value.asInstanceOf[js.Any])
     

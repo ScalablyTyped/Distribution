@@ -19,7 +19,8 @@ object PlotDependencywheelDataLabelsTextPathAttributesOptions {
     __obj.asInstanceOf[PlotDependencywheelDataLabelsTextPathAttributesOptions]
   }
   
-  extension [Self <: PlotDependencywheelDataLabelsTextPathAttributesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotDependencywheelDataLabelsTextPathAttributesOptions] (val x: Self) extends AnyVal {
     
     inline def setDy(value: SVGAttributes): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     

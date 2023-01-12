@@ -74,7 +74,8 @@ object NumberingRules {
     __obj.asInstanceOf[NumberingRules]
   }
   
-  extension [Self <: NumberingRules](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberingRules] (val x: Self) extends AnyVal {
     
     inline def setDefaultListId(value: String): Self = StObject.set(x, "DefaultListId", value.asInstanceOf[js.Any])
     

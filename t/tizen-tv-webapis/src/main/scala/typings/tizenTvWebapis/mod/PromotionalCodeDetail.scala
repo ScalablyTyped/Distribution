@@ -26,7 +26,8 @@ object PromotionalCodeDetail {
     __obj.asInstanceOf[PromotionalCodeDetail]
   }
   
-  extension [Self <: PromotionalCodeDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromotionalCodeDetail] (val x: Self) extends AnyVal {
     
     inline def setAppliedCouponCount(value: String): Self = StObject.set(x, "AppliedCouponCount", value.asInstanceOf[js.Any])
     

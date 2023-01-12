@@ -17,7 +17,8 @@ object TypeofunsignedTx {
     __obj.asInstanceOf[TypeofunsignedTx]
   }
   
-  extension [Self <: TypeofunsignedTx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofunsignedTx] (val x: Self) extends AnyVal {
     
     inline def setEncode(value: Transaction => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
   }

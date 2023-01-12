@@ -29,7 +29,8 @@ object libSrcTypesScopeMiddlewareOptionsMod {
       __obj.asInstanceOf[ScopeMiddlewareOptions]
     }
     
-    extension [Self <: ScopeMiddlewareOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScopeMiddlewareOptions] (val x: Self) extends AnyVal {
       
       inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object CopyIndexOptions {
     __obj.asInstanceOf[CopyIndexOptions]
   }
   
-  extension [Self <: CopyIndexOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyIndexOptions] (val x: Self) extends AnyVal {
     
     inline def setScope(value: js.Array[ScopeType]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     

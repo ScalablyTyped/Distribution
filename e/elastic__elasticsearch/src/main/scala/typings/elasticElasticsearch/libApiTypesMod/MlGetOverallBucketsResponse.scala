@@ -17,7 +17,8 @@ object MlGetOverallBucketsResponse {
     __obj.asInstanceOf[MlGetOverallBucketsResponse]
   }
   
-  extension [Self <: MlGetOverallBucketsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetOverallBucketsResponse] (val x: Self) extends AnyVal {
     
     inline def setCount(value: long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

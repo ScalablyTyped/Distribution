@@ -196,7 +196,8 @@ object sapMStandardTreeItemMod {
       __obj.asInstanceOf[StandardTreeItemSettings]
     }
     
-    extension [Self <: StandardTreeItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StandardTreeItemSettings] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       

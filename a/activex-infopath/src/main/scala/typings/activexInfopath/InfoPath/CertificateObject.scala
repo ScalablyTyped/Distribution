@@ -31,7 +31,8 @@ object CertificateObject {
     __obj.asInstanceOf[CertificateObject]
   }
   
-  extension [Self <: CertificateObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateObject] (val x: Self) extends AnyVal {
     
     inline def setExpirationDate(value: String): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     

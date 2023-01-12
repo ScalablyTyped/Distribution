@@ -28,7 +28,8 @@ object ListAccessControlConfigurationsRequest {
     __obj.asInstanceOf[ListAccessControlConfigurationsRequest]
   }
   
-  extension [Self <: ListAccessControlConfigurationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccessControlConfigurationsRequest] (val x: Self) extends AnyVal {
     
     inline def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
     

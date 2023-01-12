@@ -102,7 +102,8 @@ object libEsmTableHotkeysMod {
       __obj.asInstanceOf[TableHandlers]
     }
     
-    extension [Self <: TableHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableHandlers] (val x: Self) extends AnyVal {
       
       inline def setGetEnabledSelectionHandler(value: RegionCardinality => js.Function1[/* selectedRegions */ js.Array[Region], Unit]): Self = StObject.set(x, "getEnabledSelectionHandler", js.Any.fromFunction1(value))
       

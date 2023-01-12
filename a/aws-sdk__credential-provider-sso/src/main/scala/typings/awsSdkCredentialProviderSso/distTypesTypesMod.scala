@@ -23,7 +23,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[SSOToken]
     }
     
-    extension [Self <: SSOToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SSOToken] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[SsoProfile]
     }
     
-    extension [Self <: SsoProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SsoProfile] (val x: Self) extends AnyVal {
       
       inline def setSso_account_id(value: String): Self = StObject.set(x, "sso_account_id", value.asInstanceOf[js.Any])
       

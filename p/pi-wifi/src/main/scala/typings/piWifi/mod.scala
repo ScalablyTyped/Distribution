@@ -106,7 +106,8 @@ object mod {
       __obj.asInstanceOf[ConnectionCheck]
     }
     
-    extension [Self <: ConnectionCheck](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionCheck] (val x: Self) extends AnyVal {
       
       inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
       
@@ -135,7 +136,8 @@ object mod {
       __obj.asInstanceOf[ListNetwork]
     }
     
-    extension [Self <: ListNetwork](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListNetwork] (val x: Self) extends AnyVal {
       
       inline def setBssid(value: String): Self = StObject.set(x, "bssid", value.asInstanceOf[js.Any])
       
@@ -170,7 +172,8 @@ object mod {
       __obj.asInstanceOf[NetworkDetails]
     }
     
-    extension [Self <: NetworkDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkDetails] (val x: Self) extends AnyVal {
       
       inline def setEap(value: String): Self = StObject.set(x, "eap", value.asInstanceOf[js.Any])
       
@@ -219,7 +222,8 @@ object mod {
       __obj.asInstanceOf[ScanNetwork]
     }
     
-    extension [Self <: ScanNetwork](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScanNetwork] (val x: Self) extends AnyVal {
       
       inline def setBssid(value: String): Self = StObject.set(x, "bssid", value.asInstanceOf[js.Any])
       
@@ -282,7 +286,8 @@ object mod {
       __obj.asInstanceOf[Status_]
     }
     
-    extension [Self <: Status_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Status_] (val x: Self) extends AnyVal {
       
       inline def setBssid(value: String): Self = StObject.set(x, "bssid", value.asInstanceOf[js.Any])
       

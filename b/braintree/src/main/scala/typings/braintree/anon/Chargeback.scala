@@ -15,7 +15,8 @@ object Chargeback {
     __obj.asInstanceOf[Chargeback]
   }
   
-  extension [Self <: Chargeback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Chargeback] (val x: Self) extends AnyVal {
     
     inline def setChargeback(value: String): Self = StObject.set(x, "Chargeback", value.asInstanceOf[js.Any])
   }

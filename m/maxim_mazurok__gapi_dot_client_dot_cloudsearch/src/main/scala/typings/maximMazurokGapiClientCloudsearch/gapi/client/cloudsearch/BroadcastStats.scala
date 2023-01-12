@@ -16,7 +16,8 @@ object BroadcastStats {
     __obj.asInstanceOf[BroadcastStats]
   }
   
-  extension [Self <: BroadcastStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BroadcastStats] (val x: Self) extends AnyVal {
     
     inline def setEstimatedViewerCount(value: String): Self = StObject.set(x, "estimatedViewerCount", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object SupportedTrigger {
     __obj.asInstanceOf[SupportedTrigger]
   }
   
-  extension [Self <: SupportedTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportedTrigger] (val x: Self) extends AnyVal {
     
     inline def setDefaultPollingInterval(value: Double): Self = StObject.set(x, "defaultPollingInterval", value.asInstanceOf[js.Any])
     

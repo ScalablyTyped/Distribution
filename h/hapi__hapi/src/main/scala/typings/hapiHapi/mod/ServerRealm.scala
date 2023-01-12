@@ -33,7 +33,8 @@ object ServerRealm {
     __obj.asInstanceOf[ServerRealm]
   }
   
-  extension [Self <: ServerRealm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerRealm] (val x: Self) extends AnyVal {
     
     inline def setModifiers(value: Route): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     

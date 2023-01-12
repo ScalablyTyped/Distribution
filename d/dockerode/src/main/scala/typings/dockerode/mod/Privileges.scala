@@ -19,7 +19,8 @@ object Privileges {
     __obj.asInstanceOf[Privileges]
   }
   
-  extension [Self <: Privileges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Privileges] (val x: Self) extends AnyVal {
     
     inline def setCredentialSpec(value: File): Self = StObject.set(x, "CredentialSpec", value.asInstanceOf[js.Any])
     

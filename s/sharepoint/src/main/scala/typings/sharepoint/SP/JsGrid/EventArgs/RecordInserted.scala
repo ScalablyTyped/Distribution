@@ -25,7 +25,8 @@ object RecordInserted {
     __obj.asInstanceOf[RecordInserted]
   }
   
-  extension [Self <: RecordInserted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordInserted] (val x: Self) extends AnyVal {
     
     inline def setAfterRecordKey(value: Double): Self = StObject.set(x, "afterRecordKey", value.asInstanceOf[js.Any])
     

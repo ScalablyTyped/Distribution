@@ -30,7 +30,8 @@ object EnumerateMethodsMatchGroup {
     __obj.asInstanceOf[EnumerateMethodsMatchGroup]
   }
   
-  extension [Self <: EnumerateMethodsMatchGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumerateMethodsMatchGroup] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: Array[EnumerateMethodsMatchClass]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

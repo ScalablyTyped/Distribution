@@ -87,7 +87,8 @@ object BarGroupPadding {
     __obj.asInstanceOf[BarGroupPadding]
   }
   
-  extension [Self <: BarGroupPadding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarGroupPadding] (val x: Self) extends AnyVal {
     
     inline def setBarGroupPadding(value: Double): Self = StObject.set(x, "barGroupPadding", value.asInstanceOf[js.Any])
     

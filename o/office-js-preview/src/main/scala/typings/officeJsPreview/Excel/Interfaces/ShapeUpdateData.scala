@@ -136,7 +136,8 @@ object ShapeUpdateData {
     __obj.asInstanceOf[ShapeUpdateData]
   }
   
-  extension [Self <: ShapeUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeUpdateData] (val x: Self) extends AnyVal {
     
     inline def setAltTextDescription(value: String): Self = StObject.set(x, "altTextDescription", value.asInstanceOf[js.Any])
     

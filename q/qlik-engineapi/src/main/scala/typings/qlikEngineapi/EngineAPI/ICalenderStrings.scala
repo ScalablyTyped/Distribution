@@ -41,7 +41,8 @@ object ICalenderStrings {
     __obj.asInstanceOf[ICalenderStrings]
   }
   
-  extension [Self <: ICalenderStrings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICalenderStrings] (val x: Self) extends AnyVal {
     
     inline def setQDayNames(value: js.Array[String]): Self = StObject.set(x, "qDayNames", value.asInstanceOf[js.Any])
     

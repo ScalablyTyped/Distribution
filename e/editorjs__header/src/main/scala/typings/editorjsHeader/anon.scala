@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Api]
     }
     
-    extension [Self <: Api](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
       
       inline def setApi(value: js.Object): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Export]
     }
     
-    extension [Self <: Export](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Export] (val x: Self) extends AnyVal {
       
       inline def setExport(value: String): Self = StObject.set(x, "export", value.asInstanceOf[js.Any])
       
@@ -73,7 +75,8 @@ object anon {
       __obj.asInstanceOf[Icon]
     }
     
-    extension [Self <: Icon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
@@ -94,7 +97,8 @@ object anon {
       __obj.asInstanceOf[Level]
     }
     
-    extension [Self <: Level](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: Boolean): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

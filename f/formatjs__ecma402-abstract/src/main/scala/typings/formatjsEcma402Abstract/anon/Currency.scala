@@ -40,7 +40,8 @@ object Currency {
     __obj.asInstanceOf[Currency]
   }
   
-  extension [Self <: Currency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
     
     inline def setCompactDisplay(value: NumberFormatOptionsCompactDisplay): Self = StObject.set(x, "compactDisplay", value.asInstanceOf[js.Any])
     

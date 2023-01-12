@@ -49,7 +49,8 @@ object typesWiaAriaMovementUseActiveDescendantMovementMod {
       __obj.asInstanceOf[ActiveDescendantMovementProviders[CE, IE]]
     }
     
-    extension [Self <: ActiveDescendantMovementProviders[?, ?], CE /* <: HTMLElement */, IE /* <: HTMLElement */](x: Self & (ActiveDescendantMovementProviders[CE, IE])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveDescendantMovementProviders[?, ?], CE /* <: HTMLElement */, IE /* <: HTMLElement */] (val x: Self & (ActiveDescendantMovementProviders[CE, IE])) extends AnyVal {
       
       inline def setActiveId(value: ActiveDescendantId): Self = StObject.set(x, "activeId", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object typesWiaAriaMovementUseActiveDescendantMovementMod {
       __obj.asInstanceOf[ActiveDescendantOptions[D, CE, IE]]
     }
     
-    extension [Self <: ActiveDescendantOptions[?, ?, ?], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](x: Self & (ActiveDescendantOptions[D, CE, IE])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveDescendantOptions[?, ?, ?], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */] (val x: Self & (ActiveDescendantOptions[D, CE, IE])) extends AnyVal {
       
       inline def setBaseId(value: String): Self = StObject.set(x, "baseId", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object ReviewReplyResult {
     __obj.asInstanceOf[ReviewReplyResult]
   }
   
-  extension [Self <: ReviewReplyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReviewReplyResult] (val x: Self) extends AnyVal {
     
     inline def setLastEdited(value: Timestamp): Self = StObject.set(x, "lastEdited", value.asInstanceOf[js.Any])
     

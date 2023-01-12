@@ -21,7 +21,8 @@ object DeterministicChunkIdsPlugin {
     __obj.asInstanceOf[DeterministicChunkIdsPlugin]
   }
   
-  extension [Self <: DeterministicChunkIdsPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeterministicChunkIdsPlugin] (val x: Self) extends AnyVal {
     
     inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     

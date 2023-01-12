@@ -33,7 +33,8 @@ object DecimalColumnStatisticsData {
     __obj.asInstanceOf[DecimalColumnStatisticsData]
   }
   
-  extension [Self <: DecimalColumnStatisticsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecimalColumnStatisticsData] (val x: Self) extends AnyVal {
     
     inline def setMaximumValue(value: DecimalNumber): Self = StObject.set(x, "MaximumValue", value.asInstanceOf[js.Any])
     

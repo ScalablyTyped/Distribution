@@ -53,7 +53,8 @@ object esComponentsToastToastMod {
       __obj.asInstanceOf[ToastProps]
     }
     
-    extension [Self <: ToastProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastProps] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       

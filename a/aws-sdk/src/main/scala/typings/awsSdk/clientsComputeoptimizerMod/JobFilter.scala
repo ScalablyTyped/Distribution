@@ -23,7 +23,8 @@ object JobFilter {
     __obj.asInstanceOf[JobFilter]
   }
   
-  extension [Self <: JobFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: JobFilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

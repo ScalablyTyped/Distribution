@@ -16,7 +16,8 @@ object PartialSerializedMultiFac {
     __obj.asInstanceOf[PartialSerializedMultiFac]
   }
   
-  extension [Self <: PartialSerializedMultiFac](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSerializedMultiFac] (val x: Self) extends AnyVal {
     
     inline def setMultiFactorSession(value: IdToken): Self = StObject.set(x, "multiFactorSession", value.asInstanceOf[js.Any])
     

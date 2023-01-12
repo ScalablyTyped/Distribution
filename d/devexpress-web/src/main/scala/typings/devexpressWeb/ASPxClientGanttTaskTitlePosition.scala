@@ -31,7 +31,8 @@ object ASPxClientGanttTaskTitlePosition {
     __obj.asInstanceOf[ASPxClientGanttTaskTitlePosition]
   }
   
-  extension [Self <: ASPxClientGanttTaskTitlePosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGanttTaskTitlePosition] (val x: Self) extends AnyVal {
     
     inline def setInside(value: Double): Self = StObject.set(x, "Inside", value.asInstanceOf[js.Any])
     

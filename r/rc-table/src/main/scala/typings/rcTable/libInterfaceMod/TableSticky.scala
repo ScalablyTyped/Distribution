@@ -23,7 +23,8 @@ object TableSticky {
     __obj.asInstanceOf[TableSticky]
   }
   
-  extension [Self <: TableSticky](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableSticky] (val x: Self) extends AnyVal {
     
     inline def setGetContainer(value: () => Window | HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
     

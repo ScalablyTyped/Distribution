@@ -17,7 +17,8 @@ object ISuspendingOperation {
     __obj.asInstanceOf[ISuspendingOperation]
   }
   
-  extension [Self <: ISuspendingOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISuspendingOperation] (val x: Self) extends AnyVal {
     
     inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     

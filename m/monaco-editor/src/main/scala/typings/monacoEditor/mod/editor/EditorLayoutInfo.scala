@@ -113,7 +113,8 @@ object EditorLayoutInfo {
     __obj.asInstanceOf[EditorLayoutInfo]
   }
   
-  extension [Self <: EditorLayoutInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorLayoutInfo] (val x: Self) extends AnyVal {
     
     inline def setContentLeft(value: Double): Self = StObject.set(x, "contentLeft", value.asInstanceOf[js.Any])
     

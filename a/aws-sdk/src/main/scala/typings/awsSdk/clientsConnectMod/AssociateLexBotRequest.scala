@@ -23,7 +23,8 @@ object AssociateLexBotRequest {
     __obj.asInstanceOf[AssociateLexBotRequest]
   }
   
-  extension [Self <: AssociateLexBotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateLexBotRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

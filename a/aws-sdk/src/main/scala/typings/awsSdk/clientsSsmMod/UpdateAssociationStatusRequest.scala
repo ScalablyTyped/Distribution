@@ -28,7 +28,8 @@ object UpdateAssociationStatusRequest {
     __obj.asInstanceOf[UpdateAssociationStatusRequest]
   }
   
-  extension [Self <: UpdateAssociationStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAssociationStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setAssociationStatus(value: AssociationStatus): Self = StObject.set(x, "AssociationStatus", value.asInstanceOf[js.Any])
     

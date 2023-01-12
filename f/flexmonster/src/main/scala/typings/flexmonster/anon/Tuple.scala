@@ -21,7 +21,8 @@ object Tuple {
     __obj.asInstanceOf[Tuple]
   }
   
-  extension [Self <: Tuple](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tuple] (val x: Self) extends AnyVal {
     
     inline def setMeasure(value: MeasureObject): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object SubstituteNumberFormatOptions {
     __obj.asInstanceOf[SubstituteNumberFormatOptions]
   }
   
-  extension [Self <: SubstituteNumberFormatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstituteNumberFormatOptions] (val x: Self) extends AnyVal {
     
     inline def setIntlOptions(value: NumberFormatOptions): Self = StObject.set(x, "intlOptions", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object MerchantReferenceInfo {
     __obj.asInstanceOf[MerchantReferenceInfo]
   }
   
-  extension [Self <: MerchantReferenceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MerchantReferenceInfo] (val x: Self) extends AnyVal {
     
     inline def setMerchant_reference_info(value: Affiliatecodes): Self = StObject.set(x, "merchant_reference_info", value.asInstanceOf[js.Any])
   }

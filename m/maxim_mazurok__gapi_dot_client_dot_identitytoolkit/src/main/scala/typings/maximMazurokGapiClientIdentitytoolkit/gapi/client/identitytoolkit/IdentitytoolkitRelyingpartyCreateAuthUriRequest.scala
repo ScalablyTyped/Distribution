@@ -66,7 +66,8 @@ object IdentitytoolkitRelyingpartyCreateAuthUriRequest {
     __obj.asInstanceOf[IdentitytoolkitRelyingpartyCreateAuthUriRequest]
   }
   
-  extension [Self <: IdentitytoolkitRelyingpartyCreateAuthUriRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentitytoolkitRelyingpartyCreateAuthUriRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

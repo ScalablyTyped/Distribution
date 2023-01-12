@@ -28,7 +28,8 @@ object QuerySchemaVersionMetadataResponse {
     __obj.asInstanceOf[QuerySchemaVersionMetadataResponse]
   }
   
-  extension [Self <: QuerySchemaVersionMetadataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuerySchemaVersionMetadataResponse] (val x: Self) extends AnyVal {
     
     inline def setMetadataInfoMap(value: MetadataInfoMap): Self = StObject.set(x, "MetadataInfoMap", value.asInstanceOf[js.Any])
     

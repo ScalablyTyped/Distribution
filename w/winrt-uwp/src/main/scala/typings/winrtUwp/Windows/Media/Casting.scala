@@ -217,7 +217,8 @@ object Casting {
       __obj.asInstanceOf[CastingConnectionErrorOccurredEventArgs]
     }
     
-    extension [Self <: CastingConnectionErrorOccurredEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CastingConnectionErrorOccurredEventArgs] (val x: Self) extends AnyVal {
       
       inline def setErrorStatus(value: CastingConnectionErrorStatus): Self = StObject.set(x, "errorStatus", value.asInstanceOf[js.Any])
       
@@ -262,7 +263,8 @@ object Casting {
       __obj.asInstanceOf[CastingDevice]
     }
     
-    extension [Self <: CastingDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CastingDevice] (val x: Self) extends AnyVal {
       
       inline def setCreateCastingConnection(value: () => CastingConnection): Self = StObject.set(x, "createCastingConnection", js.Any.fromFunction0(value))
       
@@ -359,7 +361,8 @@ object Casting {
       __obj.asInstanceOf[CastingDevicePickerFilter]
     }
     
-    extension [Self <: CastingDevicePickerFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CastingDevicePickerFilter] (val x: Self) extends AnyVal {
       
       inline def setSupportedCastingSources(value: IVector[CastingSource]): Self = StObject.set(x, "supportedCastingSources", value.asInstanceOf[js.Any])
       
@@ -384,7 +387,8 @@ object Casting {
       __obj.asInstanceOf[CastingDeviceSelectedEventArgs]
     }
     
-    extension [Self <: CastingDeviceSelectedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CastingDeviceSelectedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setSelectedCastingDevice(value: CastingDevice): Self = StObject.set(x, "selectedCastingDevice", value.asInstanceOf[js.Any])
     }
@@ -403,7 +407,8 @@ object Casting {
       __obj.asInstanceOf[CastingSource]
     }
     
-    extension [Self <: CastingSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CastingSource] (val x: Self) extends AnyVal {
       
       inline def setPreferredSourceUri(value: Uri): Self = StObject.set(x, "preferredSourceUri", value.asInstanceOf[js.Any])
     }

@@ -17,7 +17,8 @@ object PruneImagesInfo {
     __obj.asInstanceOf[PruneImagesInfo]
   }
   
-  extension [Self <: PruneImagesInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PruneImagesInfo] (val x: Self) extends AnyVal {
     
     inline def setImagesDeleted(value: js.Array[ImageRemoveInfo]): Self = StObject.set(x, "ImagesDeleted", value.asInstanceOf[js.Any])
     

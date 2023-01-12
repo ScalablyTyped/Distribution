@@ -25,7 +25,8 @@ object HistoryParams {
     __obj.asInstanceOf[HistoryParams]
   }
   
-  extension [Self <: HistoryParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryParams] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

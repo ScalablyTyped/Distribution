@@ -141,7 +141,8 @@ object OrderBy {
     __obj.asInstanceOf[OrderBy]
   }
   
-  extension [Self <: OrderBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderBy] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object Notification {
     __obj.asInstanceOf[Notification]
   }
   
-  extension [Self <: Notification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
     
     inline def setSetText(value: String => Notification): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
   }

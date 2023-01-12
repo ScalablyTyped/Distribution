@@ -33,7 +33,8 @@ object ProviderDescription {
     __obj.asInstanceOf[ProviderDescription]
   }
   
-  extension [Self <: ProviderDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProviderDescription] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     

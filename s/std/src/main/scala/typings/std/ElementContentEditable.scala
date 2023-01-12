@@ -30,7 +30,8 @@ object ElementContentEditable {
     __obj.asInstanceOf[ElementContentEditable]
   }
   
-  extension [Self <: ElementContentEditable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementContentEditable] (val x: Self) extends AnyVal {
     
     inline def setContentEditable(value: java.lang.String): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     

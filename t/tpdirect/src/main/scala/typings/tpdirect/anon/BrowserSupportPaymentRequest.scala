@@ -23,7 +23,8 @@ object BrowserSupportPaymentRequest {
     __obj.asInstanceOf[BrowserSupportPaymentRequest]
   }
   
-  extension [Self <: BrowserSupportPaymentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserSupportPaymentRequest] (val x: Self) extends AnyVal {
     
     inline def setBrowserSupportPaymentRequest(value: Boolean): Self = StObject.set(x, "browserSupportPaymentRequest", value.asInstanceOf[js.Any])
     

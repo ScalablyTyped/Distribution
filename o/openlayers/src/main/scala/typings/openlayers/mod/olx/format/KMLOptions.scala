@@ -22,7 +22,8 @@ object KMLOptions {
     __obj.asInstanceOf[KMLOptions]
   }
   
-  extension [Self <: KMLOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KMLOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultStyle(value: js.Array[Style]): Self = StObject.set(x, "defaultStyle", value.asInstanceOf[js.Any])
     

@@ -494,7 +494,8 @@ object dataview {
       __obj.asInstanceOf[typings.senchaTouch.Ext.dataview.IDataView]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.dataview.IDataView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.dataview.IDataView] (val x: Self) extends AnyVal {
       
       inline def setAllowDeselect(value: Boolean): Self = StObject.set(x, "allowDeselect", value.asInstanceOf[js.Any])
       
@@ -996,7 +997,8 @@ object dataview {
       __obj.asInstanceOf[typings.senchaTouch.Ext.dataview.IIndexBar]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.dataview.IIndexBar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.dataview.IIndexBar] (val x: Self) extends AnyVal {
       
       inline def setAlphabet(value: Boolean): Self = StObject.set(x, "alphabet", value.asInstanceOf[js.Any])
       
@@ -1279,7 +1281,8 @@ object dataview {
       __obj.asInstanceOf[typings.senchaTouch.Ext.dataview.IList]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.dataview.IList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.dataview.IList] (val x: Self) extends AnyVal {
       
       inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       
@@ -1799,7 +1802,8 @@ object dataview {
       __obj.asInstanceOf[typings.senchaTouch.Ext.dataview.INestedList]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.dataview.INestedList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.dataview.INestedList] (val x: Self) extends AnyVal {
       
       inline def setAllowDeselect(value: Boolean): Self = StObject.set(x, "allowDeselect", value.asInstanceOf[js.Any])
       
@@ -2145,7 +2149,8 @@ object dataview {
         __obj.asInstanceOf[IDataItem]
       }
       
-      extension [Self <: IDataItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IDataItem] (val x: Self) extends AnyVal {
         
         inline def setDataMap(value: Any): Self = StObject.set(x, "dataMap", value.asInstanceOf[js.Any])
         
@@ -2226,7 +2231,8 @@ object dataview {
         __obj.asInstanceOf[IListItem]
       }
       
-      extension [Self <: IListItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IListItem] (val x: Self) extends AnyVal {
         
         inline def setGetBody(value: () => Any): Self = StObject.set(x, "getBody", js.Any.fromFunction0(value))
         
@@ -2285,7 +2291,8 @@ object dataview {
         __obj.asInstanceOf[ISimpleListItem]
       }
       
-      extension [Self <: ISimpleListItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISimpleListItem] (val x: Self) extends AnyVal {
         
         inline def setGetDisclosure(value: () => Any): Self = StObject.set(x, "getDisclosure", js.Any.fromFunction0(value))
         

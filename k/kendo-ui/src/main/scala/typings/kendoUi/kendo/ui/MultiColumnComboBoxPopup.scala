@@ -19,7 +19,8 @@ object MultiColumnComboBoxPopup {
     __obj.asInstanceOf[MultiColumnComboBoxPopup]
   }
   
-  extension [Self <: MultiColumnComboBoxPopup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiColumnComboBoxPopup] (val x: Self) extends AnyVal {
     
     inline def setAppendTo(value: String): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     

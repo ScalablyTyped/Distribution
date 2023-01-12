@@ -34,7 +34,8 @@ object IShellListingEvents {
     __obj.asInstanceOf[IShellListingEvents]
   }
   
-  extension [Self <: IShellListingEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShellListingEvents] (val x: Self) extends AnyVal {
     
     inline def setOnContentChanged(value: /* items */ IShellItems => Unit): Self = StObject.set(x, "OnContentChanged", js.Any.fromFunction1(value))
     

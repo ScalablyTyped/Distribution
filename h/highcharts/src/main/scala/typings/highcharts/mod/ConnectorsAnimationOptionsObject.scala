@@ -15,7 +15,8 @@ object ConnectorsAnimationOptionsObject {
     __obj.asInstanceOf[ConnectorsAnimationOptionsObject]
   }
   
-  extension [Self <: ConnectorsAnimationOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorsAnimationOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     

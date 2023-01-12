@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "docx-templates"
-version := "4.9.2-e63367"
+version := "4.9.2-fa69f0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "jszip" % "3.10.1-6cfba9",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-def929",
-  "org.scalablytyped" %%% "sax" % "1.2-dt-20220329Z-f59770",
-  "org.scalablytyped" %%% "std" % "4.9-5f989f")
+  "org.scalablytyped" %%% "jszip" % "3.10.1-91e145",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
+  "org.scalablytyped" %%% "sax" % "1.2-dt-20220329Z-1c699e",
+  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

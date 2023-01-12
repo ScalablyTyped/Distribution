@@ -55,7 +55,8 @@ object RefreshJourneyOptions {
     __obj.asInstanceOf[RefreshJourneyOptions]
   }
   
-  extension [Self <: RefreshJourneyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshJourneyOptions] (val x: Self) extends AnyVal {
     
     inline def setEntrances(value: Boolean): Self = StObject.set(x, "entrances", value.asInstanceOf[js.Any])
     

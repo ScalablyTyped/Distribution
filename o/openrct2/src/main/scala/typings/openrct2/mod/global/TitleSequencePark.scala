@@ -28,7 +28,8 @@ object TitleSequencePark {
     __obj.asInstanceOf[TitleSequencePark]
   }
   
-  extension [Self <: TitleSequencePark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TitleSequencePark] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: () => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     

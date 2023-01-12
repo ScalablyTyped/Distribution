@@ -36,7 +36,8 @@ object esHooksUseEntitiesMod {
       __obj.asInstanceOf[OptionsInfo]
     }
     
-    extension [Self <: OptionsInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsInfo] (val x: Self) extends AnyVal {
       
       inline def setKeyEntities(value: Record[String, DataEntity[DataNode]]): Self = StObject.set(x, "keyEntities", value.asInstanceOf[js.Any])
       

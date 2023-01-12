@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[ContainerClassName]
     }
     
-    extension [Self <: ContainerClassName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerClassName] (val x: Self) extends AnyVal {
       
       inline def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[ContainerStyle]
     }
     
-    extension [Self <: ContainerStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerStyle] (val x: Self) extends AnyVal {
       
       inline def setContainerStyle(value: CSSProperties): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object anon {
       __obj.asInstanceOf[Crop]
     }
     
-    extension [Self <: Crop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Crop] (val x: Self) extends AnyVal {
       
       inline def setCrop(value: X): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
       
@@ -105,7 +108,8 @@ object anon {
       __obj.asInstanceOf[CroppedAreaPercentages]
     }
     
-    extension [Self <: CroppedAreaPercentages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CroppedAreaPercentages] (val x: Self) extends AnyVal {
       
       inline def setCroppedAreaPercentages(value: Area): Self = StObject.set(x, "croppedAreaPercentages", value.asInstanceOf[js.Any])
       
@@ -124,7 +128,8 @@ object anon {
       __obj.asInstanceOf[ShouldUpdatePosition]
     }
     
-    extension [Self <: ShouldUpdatePosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShouldUpdatePosition] (val x: Self) extends AnyVal {
       
       inline def setShouldUpdatePosition(value: Boolean): Self = StObject.set(x, "shouldUpdatePosition", value.asInstanceOf[js.Any])
       
@@ -145,7 +150,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -166,7 +172,8 @@ object anon {
       __obj.asInstanceOf[Zoom]
     }
     
-    extension [Self <: Zoom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Zoom] (val x: Self) extends AnyVal {
       
       inline def setCrop(value: Point): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
       

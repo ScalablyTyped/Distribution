@@ -76,7 +76,8 @@ object HttpCheck {
     __obj.asInstanceOf[HttpCheck]
   }
   
-  extension [Self <: HttpCheck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpCheck] (val x: Self) extends AnyVal {
     
     inline def setAcceptedResponseStatusCodes(value: js.Array[ResponseStatusCode]): Self = StObject.set(x, "acceptedResponseStatusCodes", value.asInstanceOf[js.Any])
     

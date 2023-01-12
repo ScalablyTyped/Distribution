@@ -38,7 +38,8 @@ object ReindexResponse {
     __obj.asInstanceOf[ReindexResponse]
   }
   
-  extension [Self <: ReindexResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReindexResponse] (val x: Self) extends AnyVal {
     
     inline def setFailures(value: js.Array[Any]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     

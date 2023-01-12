@@ -15,7 +15,8 @@ object IntrospectionQuery_ {
     __obj.asInstanceOf[IntrospectionQuery_]
   }
   
-  extension [Self <: IntrospectionQuery_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntrospectionQuery_] (val x: Self) extends AnyVal {
     
     inline def set__schema(value: IntrospectionSchema): Self = StObject.set(x, "__schema", value.asInstanceOf[js.Any])
   }

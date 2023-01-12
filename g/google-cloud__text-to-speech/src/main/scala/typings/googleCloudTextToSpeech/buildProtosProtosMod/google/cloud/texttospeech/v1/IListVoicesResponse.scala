@@ -17,7 +17,8 @@ object IListVoicesResponse {
     __obj.asInstanceOf[IListVoicesResponse]
   }
   
-  extension [Self <: IListVoicesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListVoicesResponse] (val x: Self) extends AnyVal {
     
     inline def setVoices(value: js.Array[IVoice]): Self = StObject.set(x, "voices", value.asInstanceOf[js.Any])
     

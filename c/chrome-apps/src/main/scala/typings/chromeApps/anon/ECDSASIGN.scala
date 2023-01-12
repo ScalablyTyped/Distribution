@@ -19,7 +19,8 @@ object ECDSASIGN {
     __obj.asInstanceOf[ECDSASIGN]
   }
   
-  extension [Self <: ECDSASIGN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ECDSASIGN] (val x: Self) extends AnyVal {
     
     inline def setECDSA_SIGN(value: ecdsaSign): Self = StObject.set(x, "ECDSA_SIGN", value.asInstanceOf[js.Any])
     

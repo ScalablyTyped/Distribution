@@ -22,7 +22,8 @@ object animalClassifyResponse {
     __obj.asInstanceOf[animalClassifyResponse]
   }
   
-  extension [Self <: animalClassifyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: animalClassifyResponse] (val x: Self) extends AnyVal {
     
     inline def setLog_id(value: Double): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
     

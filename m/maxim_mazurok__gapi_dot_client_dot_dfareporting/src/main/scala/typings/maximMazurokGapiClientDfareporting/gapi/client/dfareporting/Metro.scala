@@ -34,7 +34,8 @@ object Metro {
     __obj.asInstanceOf[Metro]
   }
   
-  extension [Self <: Metro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Metro] (val x: Self) extends AnyVal {
     
     inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     

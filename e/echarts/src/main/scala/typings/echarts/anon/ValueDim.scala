@@ -236,7 +236,8 @@ object ValueDim {
     __obj.asInstanceOf[ValueDim]
   }
   
-  extension [Self <: ValueDim](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueDim] (val x: Self) extends AnyVal {
     
     inline def setCoord(value: js.Array[Any]): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
     

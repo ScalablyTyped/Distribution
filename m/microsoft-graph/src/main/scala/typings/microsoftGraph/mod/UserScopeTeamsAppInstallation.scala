@@ -18,7 +18,8 @@ object UserScopeTeamsAppInstallation {
     __obj.asInstanceOf[UserScopeTeamsAppInstallation]
   }
   
-  extension [Self <: UserScopeTeamsAppInstallation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserScopeTeamsAppInstallation] (val x: Self) extends AnyVal {
     
     inline def setChat(value: NullableOption[Chat]): Self = StObject.set(x, "chat", value.asInstanceOf[js.Any])
     

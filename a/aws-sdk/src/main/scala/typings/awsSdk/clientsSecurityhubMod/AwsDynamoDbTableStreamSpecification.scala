@@ -23,7 +23,8 @@ object AwsDynamoDbTableStreamSpecification {
     __obj.asInstanceOf[AwsDynamoDbTableStreamSpecification]
   }
   
-  extension [Self <: AwsDynamoDbTableStreamSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsDynamoDbTableStreamSpecification] (val x: Self) extends AnyVal {
     
     inline def setStreamEnabled(value: Boolean): Self = StObject.set(x, "StreamEnabled", value.asInstanceOf[js.Any])
     

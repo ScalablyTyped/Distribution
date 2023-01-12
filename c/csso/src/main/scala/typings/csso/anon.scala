@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Ast]
     }
     
-    extension [Self <: Ast](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ast] (val x: Self) extends AnyVal {
       
       inline def setAst(value: CssNode): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     }
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Classes]
     }
     
-    extension [Self <: Classes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Classes] (val x: Self) extends AnyVal {
       
       inline def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Typeofident]
     }
     
-    extension [Self <: Typeofident](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofident] (val x: Self) extends AnyVal {
       
       inline def setDecode(value: String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       
@@ -104,7 +107,8 @@ object anon {
       __obj.asInstanceOf[Typeofurl]
     }
     
-    extension [Self <: Typeofurl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofurl] (val x: Self) extends AnyVal {
       
       inline def setDecode(value: String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       

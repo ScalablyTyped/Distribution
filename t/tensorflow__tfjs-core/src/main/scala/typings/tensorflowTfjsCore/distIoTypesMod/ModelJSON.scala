@@ -72,7 +72,8 @@ object ModelJSON {
     __obj.asInstanceOf[ModelJSON]
   }
   
-  extension [Self <: ModelJSON](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelJSON] (val x: Self) extends AnyVal {
     
     inline def setConvertedBy(value: String): Self = StObject.set(x, "convertedBy", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object SkinEntry {
     __obj.asInstanceOf[SkinEntry]
   }
   
-  extension [Self <: SkinEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkinEntry] (val x: Self) extends AnyVal {
     
     inline def setAttachment(value: Attachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object Segment {
     __obj.asInstanceOf[Segment]
   }
   
-  extension [Self <: Segment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
     
     inline def setPrimitiveLength(value: Double): Self = StObject.set(x, "primitiveLength", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ClarifyExplainerConfig {
     __obj.asInstanceOf[ClarifyExplainerConfig]
   }
   
-  extension [Self <: ClarifyExplainerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClarifyExplainerConfig] (val x: Self) extends AnyVal {
     
     inline def setEnableExplanations(value: ClarifyEnableExplanations): Self = StObject.set(x, "EnableExplanations", value.asInstanceOf[js.Any])
     

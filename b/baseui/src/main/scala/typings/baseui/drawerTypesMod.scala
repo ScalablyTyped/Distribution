@@ -46,7 +46,8 @@ object drawerTypesMod {
       __obj.asInstanceOf[DrawerOverrides]
     }
     
-    extension [Self <: DrawerOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerOverrides] (val x: Self) extends AnyVal {
       
       inline def setBackdrop(value: Override[Any]): Self = StObject.set(x, "Backdrop", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,8 @@ object drawerTypesMod {
       __obj.asInstanceOf[DrawerProps]
     }
     
-    extension [Self <: DrawerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerProps] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: AnchorProp): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -223,7 +225,8 @@ object drawerTypesMod {
       __obj.asInstanceOf[DrawerPropsWithoutChildren]
     }
     
-    extension [Self <: DrawerPropsWithoutChildren](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerPropsWithoutChildren] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: AnchorProp): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -278,7 +281,8 @@ object drawerTypesMod {
       __obj.asInstanceOf[DrawerState]
     }
     
-    extension [Self <: DrawerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerState] (val x: Self) extends AnyVal {
       
       inline def setIsFocusVisible(value: Boolean): Self = StObject.set(x, "isFocusVisible", value.asInstanceOf[js.Any])
       
@@ -299,7 +303,8 @@ object drawerTypesMod {
       __obj.asInstanceOf[ElementRef]
     }
     
-    extension [Self <: ElementRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementRef] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -351,7 +356,8 @@ object drawerTypesMod {
       __obj.asInstanceOf[SharedStylePropsArg]
     }
     
-    extension [Self <: SharedStylePropsArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedStylePropsArg] (val x: Self) extends AnyVal {
       
       inline def set$anchor(value: AnchorProp): Self = StObject.set(x, "$anchor", value.asInstanceOf[js.Any])
       

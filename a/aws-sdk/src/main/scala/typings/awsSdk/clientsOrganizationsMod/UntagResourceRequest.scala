@@ -23,7 +23,8 @@ object UntagResourceRequest {
     __obj.asInstanceOf[UntagResourceRequest]
   }
   
-  extension [Self <: UntagResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UntagResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: TaggableResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     

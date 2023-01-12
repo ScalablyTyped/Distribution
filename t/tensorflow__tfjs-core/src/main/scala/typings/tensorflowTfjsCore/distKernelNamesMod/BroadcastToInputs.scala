@@ -16,7 +16,8 @@ object BroadcastToInputs {
     __obj.asInstanceOf[BroadcastToInputs]
   }
   
-  extension [Self <: BroadcastToInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BroadcastToInputs] (val x: Self) extends AnyVal {
     
     inline def setX(value: scala.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

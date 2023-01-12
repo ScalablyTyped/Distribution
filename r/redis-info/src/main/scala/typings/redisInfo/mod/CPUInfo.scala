@@ -26,7 +26,8 @@ object CPUInfo {
     __obj.asInstanceOf[CPUInfo]
   }
   
-  extension [Self <: CPUInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CPUInfo] (val x: Self) extends AnyVal {
     
     inline def setUsed_cpu_sys(value: String): Self = StObject.set(x, "used_cpu_sys", value.asInstanceOf[js.Any])
     

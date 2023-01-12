@@ -23,7 +23,8 @@ object TokensProvider {
     __obj.asInstanceOf[TokensProvider]
   }
   
-  extension [Self <: TokensProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokensProvider] (val x: Self) extends AnyVal {
     
     inline def setGetInitialState(value: () => IState): Self = StObject.set(x, "getInitialState", js.Any.fromFunction0(value))
     

@@ -89,7 +89,8 @@ object IgToolbarMethods {
     __obj.asInstanceOf[IgToolbarMethods]
   }
   
-  extension [Self <: IgToolbarMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgToolbarMethods] (val x: Self) extends AnyVal {
     
     inline def setActivateItem(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "activateItem", js.Any.fromFunction2(value))
     

@@ -28,7 +28,8 @@ object EnvironmentLifecycle {
     __obj.asInstanceOf[EnvironmentLifecycle]
   }
   
-  extension [Self <: EnvironmentLifecycle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentLifecycle] (val x: Self) extends AnyVal {
     
     inline def setFailureResource(value: String): Self = StObject.set(x, "failureResource", value.asInstanceOf[js.Any])
     

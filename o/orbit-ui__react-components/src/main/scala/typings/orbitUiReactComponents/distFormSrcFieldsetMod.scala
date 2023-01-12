@@ -57,7 +57,8 @@ object distFormSrcFieldsetMod {
       __obj.asInstanceOf[InnerFieldsetProps]
     }
     
-    extension [Self <: InnerFieldsetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerFieldsetProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

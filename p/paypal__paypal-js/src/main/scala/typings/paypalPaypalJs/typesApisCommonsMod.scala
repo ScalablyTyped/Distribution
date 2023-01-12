@@ -44,7 +44,8 @@ object typesApisCommonsMod {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setAddress_line_1(value: String): Self = StObject.set(x, "address_line_1", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object typesApisCommonsMod {
       __obj.asInstanceOf[AmountWithCurrencyCode]
     }
     
-    extension [Self <: AmountWithCurrencyCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AmountWithCurrencyCode] (val x: Self) extends AnyVal {
       
       inline def setCurrency_code(value: String): Self = StObject.set(x, "currency_code", value.asInstanceOf[js.Any])
       
@@ -162,7 +164,8 @@ object typesApisCommonsMod {
       __obj.asInstanceOf[Card]
     }
     
-    extension [Self <: Card](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Card] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Vault): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -216,7 +219,8 @@ object typesApisCommonsMod {
       __obj.asInstanceOf[Taxes]
     }
     
-    extension [Self <: Taxes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Taxes] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: AmountWithCurrencyCode): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       

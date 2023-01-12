@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[For[T]]
     }
     
-    extension [Self <: For[?], T](x: Self & For[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: For[?], T] (val x: Self & For[T]) extends AnyVal {
       
       inline def setSeconds(value: T): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: String): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -156,7 +158,8 @@ object mod {
       __obj.asInstanceOf[ReportOptions]
     }
     
-    extension [Self <: ReportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReportOptions] (val x: Self) extends AnyVal {
       
       inline def setGraph(value: C2mem): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
       
@@ -271,7 +274,8 @@ object mod {
       __obj.asInstanceOf[Task]
     }
     
-    extension [Self <: Task](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
       
       inline def setConcurrent(value: Double => Task): Self = StObject.set(x, "concurrent", js.Any.fromFunction1(value))
       

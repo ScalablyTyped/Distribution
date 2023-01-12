@@ -25,7 +25,8 @@ object TypeOnlyImport {
     __obj.asInstanceOf[TypeOnlyImport]
   }
   
-  extension [Self <: TypeOnlyImport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeOnlyImport] (val x: Self) extends AnyVal {
     
     inline def setKind(value: `2`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object IPathErrorStats {
     __obj.asInstanceOf[IPathErrorStats]
   }
   
-  extension [Self <: IPathErrorStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPathErrorStats] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: StringDictionary[IPathErrorStats]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

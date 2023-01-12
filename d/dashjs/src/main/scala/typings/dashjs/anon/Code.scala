@@ -23,7 +23,8 @@ object Code {
     __obj.asInstanceOf[Code]
   }
   
-  extension [Self <: Code](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
     
     inline def setCode(
       value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 53, starting with typings.dashjs.dashjsInts.`10`, typings.dashjs.dashjsInts.`11`, typings.dashjs.dashjsInts.`12` */ Any

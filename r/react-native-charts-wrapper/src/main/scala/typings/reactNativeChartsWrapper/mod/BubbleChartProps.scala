@@ -17,7 +17,8 @@ object BubbleChartProps {
     __obj.asInstanceOf[BubbleChartProps]
   }
   
-  extension [Self <: BubbleChartProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BubbleChartProps] (val x: Self) extends AnyVal {
     
     inline def setData(value: BubbleData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SimpleTask {
     __obj.asInstanceOf[SimpleTask]
   }
   
-  extension [Self <: SimpleTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleTask] (val x: Self) extends AnyVal {
     
     inline def setGen(value: () => Unit): Self = StObject.set(x, "gen", js.Any.fromFunction0(value))
     

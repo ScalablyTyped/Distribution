@@ -25,7 +25,8 @@ object WriteEventStream {
     __obj.asInstanceOf[WriteEventStream]
   }
   
-  extension [Self <: WriteEventStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteEventStream] (val x: Self) extends AnyVal {
     
     inline def setDestinationStreamArn(value: string): Self = StObject.set(x, "DestinationStreamArn", value.asInstanceOf[js.Any])
     

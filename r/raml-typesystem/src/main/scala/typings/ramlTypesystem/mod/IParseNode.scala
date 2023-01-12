@@ -45,7 +45,8 @@ object IParseNode {
     __obj.asInstanceOf[IParseNode]
   }
   
-  extension [Self <: IParseNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IParseNode] (val x: Self) extends AnyVal {
     
     inline def setChildWithKey(value: String => IParseNode): Self = StObject.set(x, "childWithKey", js.Any.fromFunction1(value))
     

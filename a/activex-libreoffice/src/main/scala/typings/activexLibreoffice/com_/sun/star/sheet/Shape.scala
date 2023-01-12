@@ -116,7 +116,8 @@ object Shape {
     __obj.asInstanceOf[Shape]
   }
   
-  extension [Self <: Shape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Shape] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: XInterface): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
     

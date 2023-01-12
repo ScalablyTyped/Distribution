@@ -47,7 +47,8 @@ object esPanelsHeaderMod {
       __obj.asInstanceOf[HeaderProps]
     }
     
-    extension [Self <: HeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object Connection {
     __obj.asInstanceOf[Connection]
   }
   
-  extension [Self <: Connection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
     
     inline def setCloudSql(value: CloudSqlProperties): Self = StObject.set(x, "cloudSql", value.asInstanceOf[js.Any])
     

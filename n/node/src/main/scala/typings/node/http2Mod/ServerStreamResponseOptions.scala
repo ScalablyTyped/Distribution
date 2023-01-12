@@ -17,7 +17,8 @@ object ServerStreamResponseOptions {
     __obj.asInstanceOf[ServerStreamResponseOptions]
   }
   
-  extension [Self <: ServerStreamResponseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerStreamResponseOptions] (val x: Self) extends AnyVal {
     
     inline def setEndStream(value: Boolean): Self = StObject.set(x, "endStream", value.asInstanceOf[js.Any])
     

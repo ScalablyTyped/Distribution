@@ -29,7 +29,8 @@ object JsxMeterElementProps {
     __obj.asInstanceOf[JsxMeterElementProps]
   }
   
-  extension [Self <: JsxMeterElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxMeterElementProps] (val x: Self) extends AnyVal {
     
     inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     

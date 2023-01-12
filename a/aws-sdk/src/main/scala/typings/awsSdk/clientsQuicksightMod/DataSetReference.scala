@@ -23,7 +23,8 @@ object DataSetReference {
     __obj.asInstanceOf[DataSetReference]
   }
   
-  extension [Self <: DataSetReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSetReference] (val x: Self) extends AnyVal {
     
     inline def setDataSetArn(value: Arn): Self = StObject.set(x, "DataSetArn", value.asInstanceOf[js.Any])
     

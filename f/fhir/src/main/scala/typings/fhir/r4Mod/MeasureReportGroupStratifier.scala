@@ -25,7 +25,8 @@ object MeasureReportGroupStratifier {
     __obj.asInstanceOf[MeasureReportGroupStratifier]
   }
   
-  extension [Self <: MeasureReportGroupStratifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeasureReportGroupStratifier] (val x: Self) extends AnyVal {
     
     inline def setCode(value: js.Array[CodeableConcept]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

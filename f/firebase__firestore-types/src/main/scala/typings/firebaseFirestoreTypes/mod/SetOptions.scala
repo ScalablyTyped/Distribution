@@ -17,7 +17,8 @@ object SetOptions {
     __obj.asInstanceOf[SetOptions]
   }
   
-  extension [Self <: SetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetOptions] (val x: Self) extends AnyVal {
     
     inline def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     

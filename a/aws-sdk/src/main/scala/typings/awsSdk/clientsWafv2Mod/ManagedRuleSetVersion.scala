@@ -43,7 +43,8 @@ object ManagedRuleSetVersion {
     __obj.asInstanceOf[ManagedRuleSetVersion]
   }
   
-  extension [Self <: ManagedRuleSetVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedRuleSetVersion] (val x: Self) extends AnyVal {
     
     inline def setAssociatedRuleGroupArn(value: ResourceArn): Self = StObject.set(x, "AssociatedRuleGroupArn", value.asInstanceOf[js.Any])
     

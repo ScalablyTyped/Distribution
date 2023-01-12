@@ -17,7 +17,8 @@ object AddSider {
     __obj.asInstanceOf[AddSider]
   }
   
-  extension [Self <: AddSider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddSider] (val x: Self) extends AnyVal {
     
     inline def setAddSider(value: String => Unit): Self = StObject.set(x, "addSider", js.Any.fromFunction1(value))
     

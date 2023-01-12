@@ -76,7 +76,8 @@ object IAssetsService {
     __obj.asInstanceOf[IAssetsService]
   }
   
-  extension [Self <: IAssetsService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAssetsService] (val x: Self) extends AnyVal {
     
     inline def setLoad(value: (js.Array[String], IScope) => IPromise[Any]): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
     

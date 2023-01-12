@@ -46,7 +46,8 @@ object Typeofevent {
     __obj.asInstanceOf[Typeofevent]
   }
   
-  extension [Self <: Typeofevent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofevent] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: Instantiable0[Group]): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     

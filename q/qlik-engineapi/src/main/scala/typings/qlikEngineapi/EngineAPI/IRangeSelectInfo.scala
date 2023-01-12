@@ -26,7 +26,8 @@ object IRangeSelectInfo {
     __obj.asInstanceOf[IRangeSelectInfo]
   }
   
-  extension [Self <: IRangeSelectInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRangeSelectInfo] (val x: Self) extends AnyVal {
     
     inline def setQRange(value: IRange): Self = StObject.set(x, "qRange", value.asInstanceOf[js.Any])
   }

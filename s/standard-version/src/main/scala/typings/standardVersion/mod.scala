@@ -178,7 +178,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBumpFiles(value: js.Array[String]): Self = StObject.set(x, "bumpFiles", value.asInstanceOf[js.Any])
       
@@ -319,7 +320,8 @@ object mod {
         __obj.asInstanceOf[Scripts]
       }
       
-      extension [Self <: Scripts](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Scripts] (val x: Self) extends AnyVal {
         
         inline def setPostbump(value: String): Self = StObject.set(x, "postbump", value.asInstanceOf[js.Any])
         
@@ -377,7 +379,8 @@ object mod {
         __obj.asInstanceOf[Skip]
       }
       
-      extension [Self <: Skip](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Skip] (val x: Self) extends AnyVal {
         
         inline def setBump(value: Boolean): Self = StObject.set(x, "bump", value.asInstanceOf[js.Any])
         

@@ -34,7 +34,8 @@ object ClearObjectStoreRequest {
     __obj.asInstanceOf[ClearObjectStoreRequest]
   }
   
-  extension [Self <: ClearObjectStoreRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearObjectStoreRequest] (val x: Self) extends AnyVal {
     
     inline def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     

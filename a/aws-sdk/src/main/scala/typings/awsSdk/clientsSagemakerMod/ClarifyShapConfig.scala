@@ -38,7 +38,8 @@ object ClarifyShapConfig {
     __obj.asInstanceOf[ClarifyShapConfig]
   }
   
-  extension [Self <: ClarifyShapConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClarifyShapConfig] (val x: Self) extends AnyVal {
     
     inline def setNumberOfSamples(value: ClarifyShapNumberOfSamples): Self = StObject.set(x, "NumberOfSamples", value.asInstanceOf[js.Any])
     

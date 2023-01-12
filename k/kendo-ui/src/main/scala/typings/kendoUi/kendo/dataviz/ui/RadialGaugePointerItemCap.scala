@@ -17,7 +17,8 @@ object RadialGaugePointerItemCap {
     __obj.asInstanceOf[RadialGaugePointerItemCap]
   }
   
-  extension [Self <: RadialGaugePointerItemCap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadialGaugePointerItemCap] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

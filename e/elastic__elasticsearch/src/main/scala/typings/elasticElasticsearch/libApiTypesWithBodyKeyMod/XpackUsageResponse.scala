@@ -91,7 +91,8 @@ object XpackUsageResponse {
     __obj.asInstanceOf[XpackUsageResponse]
   }
   
-  extension [Self <: XpackUsageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageResponse] (val x: Self) extends AnyVal {
     
     inline def setAggregate_metric(value: XpackUsageBase): Self = StObject.set(x, "aggregate_metric", value.asInstanceOf[js.Any])
     

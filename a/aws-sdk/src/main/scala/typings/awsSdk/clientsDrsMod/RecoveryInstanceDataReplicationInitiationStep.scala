@@ -23,7 +23,8 @@ object RecoveryInstanceDataReplicationInitiationStep {
     __obj.asInstanceOf[RecoveryInstanceDataReplicationInitiationStep]
   }
   
-  extension [Self <: RecoveryInstanceDataReplicationInitiationStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecoveryInstanceDataReplicationInitiationStep] (val x: Self) extends AnyVal {
     
     inline def setName(value: RecoveryInstanceDataReplicationInitiationStepName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

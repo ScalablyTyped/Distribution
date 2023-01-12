@@ -18,7 +18,8 @@ object ReturnTypeGetNavigationHistoryResponse {
     __obj.asInstanceOf[ReturnTypeGetNavigationHistoryResponse]
   }
   
-  extension [Self <: ReturnTypeGetNavigationHistoryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetNavigationHistoryResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[Any]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

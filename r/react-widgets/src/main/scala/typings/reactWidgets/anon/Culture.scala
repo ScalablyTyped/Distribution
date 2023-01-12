@@ -17,7 +17,8 @@ object Culture {
     __obj.asInstanceOf[Culture]
   }
   
-  extension [Self <: Culture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Culture] (val x: Self) extends AnyVal {
     
     inline def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     

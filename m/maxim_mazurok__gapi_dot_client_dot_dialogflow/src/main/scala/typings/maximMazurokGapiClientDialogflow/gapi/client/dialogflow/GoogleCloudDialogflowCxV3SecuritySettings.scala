@@ -68,7 +68,8 @@ object GoogleCloudDialogflowCxV3SecuritySettings {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3SecuritySettings]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3SecuritySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3SecuritySettings] (val x: Self) extends AnyVal {
     
     inline def setAudioExportSettings(value: GoogleCloudDialogflowCxV3SecuritySettingsAudioExportSettings): Self = StObject.set(x, "audioExportSettings", value.asInstanceOf[js.Any])
     

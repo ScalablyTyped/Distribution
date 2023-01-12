@@ -25,7 +25,8 @@ object OptionsGenerateCommandArg {
     __obj.asInstanceOf[OptionsGenerateCommandArg]
   }
   
-  extension [Self <: OptionsGenerateCommandArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsGenerateCommandArg] (val x: Self) extends AnyVal {
     
     inline def setDefaults(value: Boolean): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     

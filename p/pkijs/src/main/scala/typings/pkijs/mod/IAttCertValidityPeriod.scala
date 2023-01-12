@@ -17,7 +17,8 @@ object IAttCertValidityPeriod {
     __obj.asInstanceOf[IAttCertValidityPeriod]
   }
   
-  extension [Self <: IAttCertValidityPeriod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAttCertValidityPeriod] (val x: Self) extends AnyVal {
     
     inline def setNotAfterTime(value: js.Date): Self = StObject.set(x, "notAfterTime", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object IosMinimumOperatingSystem {
     __obj.asInstanceOf[IosMinimumOperatingSystem]
   }
   
-  extension [Self <: IosMinimumOperatingSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosMinimumOperatingSystem] (val x: Self) extends AnyVal {
     
     inline def setV10_0(value: Boolean): Self = StObject.set(x, "v10_0", value.asInstanceOf[js.Any])
     

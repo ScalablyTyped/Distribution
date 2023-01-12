@@ -28,7 +28,8 @@ object PartialConfirmOptions {
     __obj.asInstanceOf[PartialConfirmOptions]
   }
   
-  extension [Self <: PartialConfirmOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialConfirmOptions] (val x: Self) extends AnyVal {
     
     inline def setCancelButtonText(value: String): Self = StObject.set(x, "cancelButtonText", value.asInstanceOf[js.Any])
     

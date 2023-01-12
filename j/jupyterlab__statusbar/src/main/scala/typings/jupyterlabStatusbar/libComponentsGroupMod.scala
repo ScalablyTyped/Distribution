@@ -40,7 +40,8 @@ object libComponentsGroupMod {
         __obj.asInstanceOf[IProps]
       }
       
-      extension [Self <: IProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IProps] (val x: Self) extends AnyVal {
         
         inline def setChildren(value: js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         

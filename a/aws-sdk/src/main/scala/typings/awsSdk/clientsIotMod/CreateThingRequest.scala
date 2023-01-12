@@ -33,7 +33,8 @@ object CreateThingRequest {
     __obj.asInstanceOf[CreateThingRequest]
   }
   
-  extension [Self <: CreateThingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateThingRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributePayload(value: AttributePayload): Self = StObject.set(x, "attributePayload", value.asInstanceOf[js.Any])
     

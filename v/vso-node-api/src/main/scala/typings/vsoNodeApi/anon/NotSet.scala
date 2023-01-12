@@ -29,7 +29,8 @@ object NotSet {
     __obj.asInstanceOf[NotSet]
   }
   
-  extension [Self <: NotSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotSet] (val x: Self) extends AnyVal {
     
     inline def setAbandoned(value: scala.Double): Self = StObject.set(x, "abandoned", value.asInstanceOf[js.Any])
     

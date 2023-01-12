@@ -22,7 +22,8 @@ object DoubleVerifyBrandSafetyCategories {
     __obj.asInstanceOf[DoubleVerifyBrandSafetyCategories]
   }
   
-  extension [Self <: DoubleVerifyBrandSafetyCategories](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoubleVerifyBrandSafetyCategories] (val x: Self) extends AnyVal {
     
     inline def setAvoidUnknownBrandSafetyCategory(value: Boolean): Self = StObject.set(x, "avoidUnknownBrandSafetyCategory", value.asInstanceOf[js.Any])
     

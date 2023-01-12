@@ -43,7 +43,8 @@ object ExcludedVideoMobileApplication {
     __obj.asInstanceOf[ExcludedVideoMobileApplication]
   }
   
-  extension [Self <: ExcludedVideoMobileApplication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcludedVideoMobileApplication] (val x: Self) extends AnyVal {
     
     inline def setGetAppId(value: () => String): Self = StObject.set(x, "getAppId", js.Any.fromFunction0(value))
     

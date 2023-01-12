@@ -16,7 +16,8 @@ object TaskResolvableAction {
     __obj.asInstanceOf[TaskResolvableAction[T]]
   }
   
-  extension [Self <: TaskResolvableAction[?], T /* <: Transferrable */](x: Self & TaskResolvableAction[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskResolvableAction[?], T /* <: Transferrable */] (val x: Self & TaskResolvableAction[T]) extends AnyVal {
     
     inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

@@ -25,7 +25,8 @@ object PaginatorDeps {
     __obj.asInstanceOf[PaginatorDeps[T, S]]
   }
   
-  extension [Self <: PaginatorDeps[?, ?], T /* <: Response[js.Array[js.Object]] */, S](x: Self & (PaginatorDeps[T, S])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginatorDeps[?, ?], T /* <: Response[js.Array[js.Object]] */, S] (val x: Self & (PaginatorDeps[T, S])) extends AnyVal {
     
     inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

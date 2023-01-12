@@ -23,7 +23,8 @@ object ShowModalRes {
     __obj.asInstanceOf[ShowModalRes]
   }
   
-  extension [Self <: ShowModalRes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowModalRes] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

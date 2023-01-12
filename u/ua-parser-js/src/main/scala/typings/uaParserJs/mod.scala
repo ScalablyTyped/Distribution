@@ -48,7 +48,8 @@ object mod {
     @js.native
     val ^ : BROWSER = js.native
     
-    extension [Self <: BROWSER](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BROWSER] (val x: Self) extends AnyVal {
       
       inline def setMAJOR(value: major): Self = StObject.set(x, "MAJOR", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object mod {
     @js.native
     val ^ : CPU = js.native
     
-    extension [Self <: CPU](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CPU] (val x: Self) extends AnyVal {
       
       inline def setARCHITECTURE(value: architecture): Self = StObject.set(x, "ARCHITECTURE", value.asInstanceOf[js.Any])
     }
@@ -163,7 +165,8 @@ object mod {
     @js.native
     val ^ : DEVICE = js.native
     
-    extension [Self <: DEVICE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DEVICE] (val x: Self) extends AnyVal {
       
       inline def setCONSOLE(value: console): Self = StObject.set(x, "CONSOLE", value.asInstanceOf[js.Any])
       
@@ -197,7 +200,8 @@ object mod {
     @js.native
     val ^ : ENGINE = js.native
     
-    extension [Self <: ENGINE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ENGINE] (val x: Self) extends AnyVal {
       
       inline def setNAME(value: name): Self = StObject.set(x, "NAME", value.asInstanceOf[js.Any])
       
@@ -217,7 +221,8 @@ object mod {
     @js.native
     val ^ : OS = js.native
     
-    extension [Self <: OS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OS] (val x: Self) extends AnyVal {
       
       inline def setNAME(value: name): Self = StObject.set(x, "NAME", value.asInstanceOf[js.Any])
       
@@ -272,7 +277,8 @@ object mod {
       __obj.asInstanceOf[IBrowser]
     }
     
-    extension [Self <: IBrowser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBrowser] (val x: Self) extends AnyVal {
       
       inline def setMajor(value: String): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
       
@@ -304,7 +310,8 @@ object mod {
       __obj.asInstanceOf[ICPU]
     }
     
-    extension [Self <: ICPU](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICPU] (val x: Self) extends AnyVal {
       
       inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
       
@@ -341,7 +348,8 @@ object mod {
       __obj.asInstanceOf[IDevice]
     }
     
-    extension [Self <: IDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDevice] (val x: Self) extends AnyVal {
       
       inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -378,7 +386,8 @@ object mod {
       __obj.asInstanceOf[IEngine]
     }
     
-    extension [Self <: IEngine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEngine] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -415,7 +424,8 @@ object mod {
       __obj.asInstanceOf[IOS]
     }
     
-    extension [Self <: IOS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOS] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -448,7 +458,8 @@ object mod {
       __obj.asInstanceOf[IResult]
     }
     
-    extension [Self <: IResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResult] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: IBrowser): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -522,7 +533,8 @@ object mod {
       __obj.asInstanceOf[UAParserInstance]
     }
     
-    extension [Self <: UAParserInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UAParserInstance] (val x: Self) extends AnyVal {
       
       inline def setGetBrowser(value: () => IBrowser): Self = StObject.set(x, "getBrowser", js.Any.fromFunction0(value))
       

@@ -34,7 +34,8 @@ object PermOverviewEntry {
     __obj.asInstanceOf[PermOverviewEntry]
   }
   
-  extension [Self <: PermOverviewEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermOverviewEntry] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

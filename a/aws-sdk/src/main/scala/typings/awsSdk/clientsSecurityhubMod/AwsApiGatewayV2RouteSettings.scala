@@ -38,7 +38,8 @@ object AwsApiGatewayV2RouteSettings {
     __obj.asInstanceOf[AwsApiGatewayV2RouteSettings]
   }
   
-  extension [Self <: AwsApiGatewayV2RouteSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsApiGatewayV2RouteSettings] (val x: Self) extends AnyVal {
     
     inline def setDataTraceEnabled(value: Boolean): Self = StObject.set(x, "DataTraceEnabled", value.asInstanceOf[js.Any])
     

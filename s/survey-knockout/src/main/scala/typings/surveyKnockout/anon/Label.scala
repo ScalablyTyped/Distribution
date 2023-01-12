@@ -53,7 +53,8 @@ object Label {
     __obj.asInstanceOf[Label]
   }
   
-  extension [Self <: Label](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
     
     inline def setClearButton(value: String): Self = StObject.set(x, "clearButton", value.asInstanceOf[js.Any])
     

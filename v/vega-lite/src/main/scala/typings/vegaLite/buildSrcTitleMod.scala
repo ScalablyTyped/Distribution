@@ -139,7 +139,8 @@ object buildSrcTitleMod {
       __obj.asInstanceOf[BaseTitleNoValueRefs[ES]]
     }
     
-    extension [Self <: BaseTitleNoValueRefs[?], ES /* <: ExprRef | SignalRef */](x: Self & BaseTitleNoValueRefs[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseTitleNoValueRefs[?], ES /* <: ExprRef | SignalRef */] (val x: Self & BaseTitleNoValueRefs[ES]) extends AnyVal {
       
       inline def setAlign(value: Exclude[js.UndefOr[AlignValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -341,7 +342,8 @@ object buildSrcTitleMod {
       __obj.asInstanceOf[TitleBase[ES]]
     }
     
-    extension [Self <: TitleBase[?], ES /* <: ExprRef | SignalRef */](x: Self & TitleBase[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleBase[?], ES /* <: ExprRef | SignalRef */] (val x: Self & TitleBase[ES]) extends AnyVal {
       
       inline def setAnchor(value: TitleAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -478,7 +480,8 @@ object buildSrcTitleMod {
       __obj.asInstanceOf[TitleConfig[ES]]
     }
     
-    extension [Self <: TitleConfig[?], ES /* <: ExprRef | SignalRef */](x: Self & TitleConfig[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & TitleConfig[ES]) extends AnyVal {
       
       inline def setAlign(value: Exclude[js.UndefOr[AlignValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -654,7 +657,8 @@ object buildSrcTitleMod {
       __obj.asInstanceOf[TitleParams[ES]]
     }
     
-    extension [Self <: TitleParams[?], ES /* <: ExprRef | SignalRef */](x: Self & TitleParams[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleParams[?], ES /* <: ExprRef | SignalRef */] (val x: Self & TitleParams[ES]) extends AnyVal {
       
       inline def setSubtitle(value: Text): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object Zc {
     __obj.asInstanceOf[Zc]
   }
   
-  extension [Self <: Zc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Zc] (val x: Self) extends AnyVal {
     
     inline def setConverter(value: Any): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     

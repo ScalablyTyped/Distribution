@@ -19,7 +19,8 @@ object BackendMathBackendWebGL {
     __obj.asInstanceOf[BackendMathBackendWebGL]
   }
   
-  extension [Self <: BackendMathBackendWebGL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendMathBackendWebGL] (val x: Self) extends AnyVal {
     
     inline def setBackend(value: MathBackendWebGL): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,8 @@ object mod {
       __obj.asInstanceOf[MemcachedSessionOptions]
     }
     
-    extension [Self <: MemcachedSessionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemcachedSessionOptions] (val x: Self) extends AnyVal {
       
       inline def setHosts(value: Location): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
       

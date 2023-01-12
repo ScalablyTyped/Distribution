@@ -27,7 +27,8 @@ object ValueDescriptionInfinity {
     __obj.asInstanceOf[ValueDescriptionInfinity]
   }
   
-  extension [Self <: ValueDescriptionInfinity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueDescriptionInfinity] (val x: Self) extends AnyVal {
     
     inline def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
     

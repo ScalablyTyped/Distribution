@@ -25,7 +25,8 @@ object Rotation {
     __obj.asInstanceOf[Rotation]
   }
   
-  extension [Self <: Rotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rotation] (val x: Self) extends AnyVal {
     
     inline def setNextRotationTime(value: String): Self = StObject.set(x, "nextRotationTime", value.asInstanceOf[js.Any])
     

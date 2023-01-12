@@ -18,7 +18,8 @@ object AddressValidationMessage {
     __obj.asInstanceOf[AddressValidationMessage]
   }
   
-  extension [Self <: AddressValidationMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddressValidationMessage] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: ButtonRequestData): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

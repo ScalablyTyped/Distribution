@@ -22,7 +22,8 @@ object RequestorManager {
     __obj.asInstanceOf[RequestorManager]
   }
   
-  extension [Self <: RequestorManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestorManager] (val x: Self) extends AnyVal {
     
     inline def setManagerLevel(value: NullableOption[Double]): Self = StObject.set(x, "managerLevel", value.asInstanceOf[js.Any])
     

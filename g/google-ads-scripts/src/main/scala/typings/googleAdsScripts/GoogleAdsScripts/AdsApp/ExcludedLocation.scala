@@ -69,7 +69,8 @@ object ExcludedLocation {
     __obj.asInstanceOf[ExcludedLocation]
   }
   
-  extension [Self <: ExcludedLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcludedLocation] (val x: Self) extends AnyVal {
     
     inline def setGetBaseCampaign(value: () => Campaign): Self = StObject.set(x, "getBaseCampaign", js.Any.fromFunction0(value))
     

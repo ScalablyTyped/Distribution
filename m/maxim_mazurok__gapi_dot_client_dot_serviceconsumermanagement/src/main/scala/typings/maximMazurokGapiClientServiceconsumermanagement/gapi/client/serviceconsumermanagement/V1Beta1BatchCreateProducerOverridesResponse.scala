@@ -16,7 +16,8 @@ object V1Beta1BatchCreateProducerOverridesResponse {
     __obj.asInstanceOf[V1Beta1BatchCreateProducerOverridesResponse]
   }
   
-  extension [Self <: V1Beta1BatchCreateProducerOverridesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: V1Beta1BatchCreateProducerOverridesResponse] (val x: Self) extends AnyVal {
     
     inline def setOverrides(value: js.Array[V1Beta1QuotaOverride]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     

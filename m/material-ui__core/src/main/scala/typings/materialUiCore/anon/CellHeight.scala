@@ -20,7 +20,8 @@ object CellHeight {
     __obj.asInstanceOf[CellHeight]
   }
   
-  extension [Self <: CellHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellHeight] (val x: Self) extends AnyVal {
     
     inline def setCellHeight(value: Double | auto): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
     

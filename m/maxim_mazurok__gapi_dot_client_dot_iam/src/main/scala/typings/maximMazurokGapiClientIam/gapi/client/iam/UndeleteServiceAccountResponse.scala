@@ -16,7 +16,8 @@ object UndeleteServiceAccountResponse {
     __obj.asInstanceOf[UndeleteServiceAccountResponse]
   }
   
-  extension [Self <: UndeleteServiceAccountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UndeleteServiceAccountResponse] (val x: Self) extends AnyVal {
     
     inline def setRestoredAccount(value: ServiceAccount): Self = StObject.set(x, "restoredAccount", value.asInstanceOf[js.Any])
     

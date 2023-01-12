@@ -220,7 +220,8 @@ object distServerNextServerMod {
       __obj.asInstanceOf[ServerConstructor]
     }
     
-    extension [Self <: ServerConstructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerConstructor] (val x: Self) extends AnyVal {
       
       inline def setConf(value: NextConfig): Self = StObject.set(x, "conf", value.asInstanceOf[js.Any])
       

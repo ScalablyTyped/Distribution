@@ -31,7 +31,8 @@ object GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance {
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance]
   }
   
-  extension [Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance] (val x: Self) extends AnyVal {
     
     inline def setFeaturePolicy(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy): Self = StObject.set(x, "featurePolicy", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object I18nMeta {
     __obj.asInstanceOf[I18nMeta]
   }
   
-  extension [Self <: I18nMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: I18nMeta] (val x: Self) extends AnyVal {
     
     inline def setCustomId(value: String): Self = StObject.set(x, "customId", value.asInstanceOf[js.Any])
     

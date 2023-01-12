@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[Chunk]
     }
     
-    extension [Self <: Chunk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chunk] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object mod {
       __obj.asInstanceOf[FindAllArgs]
     }
     
-    extension [Self <: FindAllArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindAllArgs] (val x: Self) extends AnyVal {
       
       inline def setFindChunks(value: /* args */ FindChunksArgs => js.Array[Chunk]): Self = StObject.set(x, "findChunks", js.Any.fromFunction1(value))
       
@@ -77,7 +79,8 @@ object mod {
       __obj.asInstanceOf[FindChunksArgs]
     }
     
-    extension [Self <: FindChunksArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindChunksArgs] (val x: Self) extends AnyVal {
       
       inline def setAutoEscape(value: Boolean): Self = StObject.set(x, "autoEscape", value.asInstanceOf[js.Any])
       

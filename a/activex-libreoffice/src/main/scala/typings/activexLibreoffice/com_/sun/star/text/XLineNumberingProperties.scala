@@ -31,7 +31,8 @@ object XLineNumberingProperties {
     __obj.asInstanceOf[XLineNumberingProperties]
   }
   
-  extension [Self <: XLineNumberingProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLineNumberingProperties] (val x: Self) extends AnyVal {
     
     inline def setGetLineNumberingProperties(value: () => XPropertySet): Self = StObject.set(x, "getLineNumberingProperties", js.Any.fromFunction0(value))
     

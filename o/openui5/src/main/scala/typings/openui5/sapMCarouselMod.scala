@@ -1055,7 +1055,8 @@ object sapMCarouselMod {
       __obj.asInstanceOf[CarouselSettings]
     }
     
-    extension [Self <: CarouselSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselSettings] (val x: Self) extends AnyVal {
       
       inline def setActivePage(value: typings.openui5.sapUiCoreControlMod.default | String): Self = StObject.set(x, "activePage", value.asInstanceOf[js.Any])
       

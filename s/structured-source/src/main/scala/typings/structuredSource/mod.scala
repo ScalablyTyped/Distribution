@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[SourceLocation]
     }
     
-    extension [Self <: SourceLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceLocation] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: SourcePosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object mod {
       __obj.asInstanceOf[SourcePosition]
     }
     
-    extension [Self <: SourcePosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourcePosition] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object mod {
       __obj.asInstanceOf[StructuredSource]
     }
     
-    extension [Self <: StructuredSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StructuredSource] (val x: Self) extends AnyVal {
       
       inline def setIndexToPosition(value: Double => SourcePosition): Self = StObject.set(x, "indexToPosition", js.Any.fromFunction1(value))
       

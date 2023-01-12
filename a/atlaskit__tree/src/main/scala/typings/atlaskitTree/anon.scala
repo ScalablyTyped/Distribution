@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[scala.Nothing]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[DestinationPosition]
     }
     
-    extension [Self <: DestinationPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestinationPosition] (val x: Self) extends AnyVal {
       
       inline def setDestinationPosition(value: TreeDestinationPosition): Self = StObject.set(x, "destinationPosition", value.asInstanceOf[js.Any])
       
@@ -66,7 +68,8 @@ object anon {
       __obj.asInstanceOf[DraggedItemId]
     }
     
-    extension [Self <: DraggedItemId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraggedItemId] (val x: Self) extends AnyVal {
       
       inline def setDraggedItemId(value: ItemId): Self = StObject.set(x, "draggedItemId", value.asInstanceOf[js.Any])
       
@@ -100,7 +103,8 @@ object anon {
       __obj.asInstanceOf[FlatItem]
     }
     
-    extension [Self <: FlatItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlatItem] (val x: Self) extends AnyVal {
       
       inline def setFlatItem(value: FlattenedItem): Self = StObject.set(x, "flatItem", value.asInstanceOf[js.Any])
       
@@ -131,7 +135,8 @@ object anon {
       __obj.asInstanceOf[FlattenedTree]
     }
     
-    extension [Self <: FlattenedTree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlattenedTree] (val x: Self) extends AnyVal {
       
       inline def setDraggedItemId(value: Unit): Self = StObject.set(x, "draggedItemId", value.asInstanceOf[js.Any])
       
@@ -178,7 +183,8 @@ object anon {
       __obj.asInstanceOf[IsDragEnabled]
     }
     
-    extension [Self <: IsDragEnabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsDragEnabled] (val x: Self) extends AnyVal {
       
       inline def setIsDragEnabled(value: Boolean): Self = StObject.set(x, "isDragEnabled", value.asInstanceOf[js.Any])
       

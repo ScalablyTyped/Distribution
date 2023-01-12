@@ -57,7 +57,8 @@ object anon {
       __obj.asInstanceOf[AfterOptions]
     }
     
-    extension [Self <: AfterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AfterOptions] (val x: Self) extends AnyVal {
       
       inline def setAfterOptions(value: SyncHook[js.Array[Options], Unit, UnsetAdditionalOptions]): Self = StObject.set(x, "afterOptions", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object anon {
       __obj.asInstanceOf[Assets]
     }
     
-    extension [Self <: Assets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Assets] (val x: Self) extends AnyVal {
       
       inline def setAssets(value: js.Array[Asset]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       

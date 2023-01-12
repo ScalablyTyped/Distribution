@@ -25,7 +25,8 @@ object typestringdefaultstringunDefault {
     __obj.asInstanceOf[typestringdefaultstringunDefault]
   }
   
-  extension [Self <: typestringdefaultstringunDefault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typestringdefaultstringunDefault] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

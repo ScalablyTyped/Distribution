@@ -47,7 +47,8 @@ object angularModal {
       __obj.asInstanceOf[AngularModalSettings]
     }
     
-    extension [Self <: AngularModalSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AngularModalSettings] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: AngularModalJQuerySelector): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object angularModal {
       __obj.asInstanceOf[AngularModalSettingsWithTemplate]
     }
     
-    extension [Self <: AngularModalSettingsWithTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AngularModalSettingsWithTemplate] (val x: Self) extends AnyVal {
       
       inline def setTemplate(value: Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     }
@@ -97,7 +99,8 @@ object angularModal {
       __obj.asInstanceOf[AngularModalSettingsWithTemplateUrl]
     }
     
-    extension [Self <: AngularModalSettingsWithTemplateUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AngularModalSettingsWithTemplateUrl] (val x: Self) extends AnyVal {
       
       inline def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     }

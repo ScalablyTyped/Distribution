@@ -26,7 +26,8 @@ object Variance_ {
     __obj.asInstanceOf[Variance_]
   }
   
-  extension [Self <: Variance_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Variance_] (val x: Self) extends AnyVal {
     
     inline def setKind(value: minus | plus): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

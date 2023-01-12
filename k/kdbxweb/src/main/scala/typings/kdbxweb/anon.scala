@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Binaries]
     }
     
-    extension [Self <: Binaries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Binaries] (val x: Self) extends AnyVal {
       
       inline def setBinaries(value: Boolean): Self = StObject.set(x, "binaries", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[ExportXml]
     }
     
-    extension [Self <: ExportXml](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportXml] (val x: Self) extends AnyVal {
       
       inline def setExportXml(value: Boolean): Self = StObject.set(x, "exportXml", value.asInstanceOf[js.Any])
       
@@ -72,7 +74,8 @@ object anon {
       __obj.asInstanceOf[PreserveXml]
     }
     
-    extension [Self <: PreserveXml](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreserveXml] (val x: Self) extends AnyVal {
       
       inline def setPreserveXml(value: Boolean): Self = StObject.set(x, "preserveXml", value.asInstanceOf[js.Any])
       

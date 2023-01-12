@@ -24,7 +24,8 @@ object QRCodeToStringOptionsOther {
     __obj.asInstanceOf[QRCodeToStringOptionsOther]
   }
   
-  extension [Self <: QRCodeToStringOptionsOther](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QRCodeToStringOptionsOther] (val x: Self) extends AnyVal {
     
     inline def setType(value: Exclude[QRCodeStringType, terminal]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

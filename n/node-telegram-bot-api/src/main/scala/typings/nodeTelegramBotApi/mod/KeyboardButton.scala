@@ -23,7 +23,8 @@ object KeyboardButton {
     __obj.asInstanceOf[KeyboardButton]
   }
   
-  extension [Self <: KeyboardButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyboardButton] (val x: Self) extends AnyVal {
     
     inline def setRequest_contact(value: Boolean): Self = StObject.set(x, "request_contact", value.asInstanceOf[js.Any])
     

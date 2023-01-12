@@ -24,7 +24,8 @@ object ChatRenamedEventMessageDetail {
     __obj.asInstanceOf[ChatRenamedEventMessageDetail]
   }
   
-  extension [Self <: ChatRenamedEventMessageDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatRenamedEventMessageDetail] (val x: Self) extends AnyVal {
     
     inline def setChatDisplayName(value: NullableOption[String]): Self = StObject.set(x, "chatDisplayName", value.asInstanceOf[js.Any])
     

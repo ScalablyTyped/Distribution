@@ -19,7 +19,8 @@ object MarkerEvent {
     __obj.asInstanceOf[MarkerEvent]
   }
   
-  extension [Self <: MarkerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

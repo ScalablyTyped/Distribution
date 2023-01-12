@@ -21,7 +21,8 @@ object HeaderDefinition {
     __obj.asInstanceOf[HeaderDefinition]
   }
   
-  extension [Self <: HeaderDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeaderDefinition] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

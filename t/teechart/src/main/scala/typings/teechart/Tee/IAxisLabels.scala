@@ -54,7 +54,8 @@ object IAxisLabels {
     __obj.asInstanceOf[IAxisLabels]
   }
   
-  extension [Self <: IAxisLabels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAxisLabels] (val x: Self) extends AnyVal {
     
     inline def setAlternate(value: Boolean): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     

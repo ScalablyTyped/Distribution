@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "timestring"
-version := "6.0-dt-20220624Z-8fb08d"
+version := "6.0-dt-20220624Z-eb0cc1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

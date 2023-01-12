@@ -33,7 +33,8 @@ object Site {
     __obj.asInstanceOf[Site]
   }
   
-  extension [Self <: Site](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Site] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: Model[Category]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

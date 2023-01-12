@@ -29,7 +29,8 @@ object IndicesSplitRequest {
     __obj.asInstanceOf[IndicesSplitRequest]
   }
   
-  extension [Self <: IndicesSplitRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSplitRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Settings): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

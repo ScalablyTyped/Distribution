@@ -25,7 +25,8 @@ object SnapshotRepositorySettings {
     __obj.asInstanceOf[SnapshotRepositorySettings]
   }
   
-  extension [Self <: SnapshotRepositorySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotRepositorySettings] (val x: Self) extends AnyVal {
     
     inline def setChunk_size(value: String): Self = StObject.set(x, "chunk_size", value.asInstanceOf[js.Any])
     

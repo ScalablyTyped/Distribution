@@ -83,7 +83,8 @@ object UpdateClusterRequest {
     __obj.asInstanceOf[UpdateClusterRequest]
   }
   
-  extension [Self <: UpdateClusterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateClusterRequest] (val x: Self) extends AnyVal {
     
     inline def setACLName(value: ACLName): Self = StObject.set(x, "ACLName", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object DataSourceRequestEndEvent {
     __obj.asInstanceOf[DataSourceRequestEndEvent]
   }
   
-  extension [Self <: DataSourceRequestEndEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceRequestEndEvent] (val x: Self) extends AnyVal {
     
     inline def setResponse(value: Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     

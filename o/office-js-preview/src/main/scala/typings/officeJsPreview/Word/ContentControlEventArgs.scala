@@ -50,7 +50,8 @@ object ContentControlEventArgs {
     __obj.asInstanceOf[ContentControlEventArgs]
   }
   
-  extension [Self <: ContentControlEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentControlEventArgs] (val x: Self) extends AnyVal {
     
     inline def setContentControl(value: ContentControl): Self = StObject.set(x, "contentControl", value.asInstanceOf[js.Any])
     

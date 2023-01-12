@@ -17,7 +17,8 @@ object CloseOptions {
     __obj.asInstanceOf[CloseOptions]
   }
   
-  extension [Self <: CloseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseOptions] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

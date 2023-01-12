@@ -23,7 +23,8 @@ object GroupNameAndArn {
     __obj.asInstanceOf[GroupNameAndArn]
   }
   
-  extension [Self <: GroupNameAndArn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupNameAndArn] (val x: Self) extends AnyVal {
     
     inline def setGroupArn(value: ThingGroupArn): Self = StObject.set(x, "groupArn", value.asInstanceOf[js.Any])
     

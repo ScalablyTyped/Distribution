@@ -80,7 +80,8 @@ object anon {
       __obj.asInstanceOf[Albumid]
     }
     
-    extension [Self <: Albumid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Albumid] (val x: Self) extends AnyVal {
       
       inline def setAlbum_id(value: Double): Self = StObject.set(x, "album_id", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object anon {
       __obj.asInstanceOf[Apikey]
     }
     
-    extension [Self <: Apikey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Apikey] (val x: Self) extends AnyVal {
       
       inline def setApikey(value: String): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
       
@@ -166,7 +168,8 @@ object anon {
       __obj.asInstanceOf[Available]
     }
     
-    extension [Self <: Available](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Available] (val x: Self) extends AnyVal {
       
       inline def setAvailable(value: Double): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
       
@@ -189,7 +192,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Tracklist): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -208,7 +212,8 @@ object anon {
       __obj.asInstanceOf[Musicgenre]
     }
     
-    extension [Self <: Musicgenre](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Musicgenre] (val x: Self) extends AnyVal {
       
       inline def setMusic_genre(value: MusicGenre): Self = StObject.set(x, "music_genre", value.asInstanceOf[js.Any])
     }
@@ -225,7 +230,8 @@ object anon {
       __obj.asInstanceOf[Tracklist]
     }
     
-    extension [Self <: Tracklist](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tracklist] (val x: Self) extends AnyVal {
       
       inline def setTrack_list(value: js.Array[TrackResult]): Self = StObject.set(x, "track_list", value.asInstanceOf[js.Any])
       

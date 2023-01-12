@@ -402,7 +402,8 @@ object mod {
       __obj.asInstanceOf[AwnDurations]
     }
     
-    extension [Self <: AwnDurations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AwnDurations] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: Double): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
@@ -457,7 +458,8 @@ object mod {
       __obj.asInstanceOf[AwnIcons]
     }
     
-    extension [Self <: AwnIcons](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AwnIcons] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: String): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
@@ -526,7 +528,8 @@ object mod {
       __obj.asInstanceOf[AwnLabels]
     }
     
-    extension [Self <: AwnLabels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AwnLabels] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: String): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
@@ -595,7 +598,8 @@ object mod {
       __obj.asInstanceOf[AwnOptions]
     }
     
-    extension [Self <: AwnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AwnOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       

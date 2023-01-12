@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCatchall(value: Boolean): Self = StObject.set(x, "catchall", value.asInstanceOf[js.Any])
       

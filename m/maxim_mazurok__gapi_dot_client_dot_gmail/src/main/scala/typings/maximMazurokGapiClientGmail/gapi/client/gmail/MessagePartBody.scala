@@ -28,7 +28,8 @@ object MessagePartBody {
     __obj.asInstanceOf[MessagePartBody]
   }
   
-  extension [Self <: MessagePartBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagePartBody] (val x: Self) extends AnyVal {
     
     inline def setAttachmentId(value: String): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
     

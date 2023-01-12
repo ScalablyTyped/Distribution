@@ -94,7 +94,8 @@ object distLibCommandsMemorySTATSMod {
       __obj.asInstanceOf[MemoryStatsReply]
     }
     
-    extension [Self <: MemoryStatsReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemoryStatsReply] (val x: Self) extends AnyVal {
       
       inline def setAllocatorActive(value: Double): Self = StObject.set(x, "allocatorActive", value.asInstanceOf[js.Any])
       

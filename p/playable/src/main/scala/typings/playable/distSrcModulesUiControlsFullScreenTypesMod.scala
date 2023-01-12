@@ -27,7 +27,8 @@ object distSrcModulesUiControlsFullScreenTypesMod {
       __obj.asInstanceOf[IFullScreenControl]
     }
     
-    extension [Self <: IFullScreenControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFullScreenControl] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -50,7 +51,8 @@ object distSrcModulesUiControlsFullScreenTypesMod {
       __obj.asInstanceOf[IFullScreenViewCallbacks]
     }
     
-    extension [Self <: IFullScreenViewCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFullScreenViewCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnButtonClick(value: () => Unit): Self = StObject.set(x, "onButtonClick", js.Any.fromFunction0(value))
     }
@@ -78,7 +80,8 @@ object distSrcModulesUiControlsFullScreenTypesMod {
       __obj.asInstanceOf[IFullScreenViewConfig]
     }
     
-    extension [Self <: IFullScreenViewConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFullScreenViewConfig] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: IFullScreenViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -121,7 +124,8 @@ object distSrcModulesUiControlsFullScreenTypesMod {
       __obj.asInstanceOf[IFullScreenViewStyles]
     }
     
-    extension [Self <: IFullScreenViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFullScreenViewStyles] (val x: Self) extends AnyVal {
       
       inline def setEnterIcon(value: String): Self = StObject.set(x, "enterIcon", value.asInstanceOf[js.Any])
       

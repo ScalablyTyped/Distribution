@@ -63,7 +63,8 @@ object CapabilityStatementMessagingEvent {
     __obj.asInstanceOf[CapabilityStatementMessagingEvent]
   }
   
-  extension [Self <: CapabilityStatementMessagingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapabilityStatementMessagingEvent] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: Consequence | Currency | Notification): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

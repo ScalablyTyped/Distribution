@@ -19,7 +19,8 @@ object GoogleCloudDialogflowCxV3IntentTrainingPhrasePart {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3IntentTrainingPhrasePart]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3IntentTrainingPhrasePart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3IntentTrainingPhrasePart] (val x: Self) extends AnyVal {
     
     inline def setParameterId(value: String): Self = StObject.set(x, "parameterId", value.asInstanceOf[js.Any])
     

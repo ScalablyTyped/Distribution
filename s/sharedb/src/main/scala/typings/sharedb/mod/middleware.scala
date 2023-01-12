@@ -82,7 +82,8 @@ object middleware {
       __obj.asInstanceOf[ActionContextMap]
     }
     
-    extension [Self <: ActionContextMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionContextMap] (val x: Self) extends AnyVal {
       
       inline def setAfterSubmit(value: SubmitContext): Self = StObject.set(x, "afterSubmit", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object middleware {
       __obj.asInstanceOf[BaseContext]
     }
     
-    extension [Self <: BaseContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseContext] (val x: Self) extends AnyVal {
       
       inline def setAction(
         value: afterSubmit | afterWrite | apply | commit | connect | doc | op | query | readSnapshots | receive | receivePresence | reply | sendPresence | submit
@@ -218,7 +220,8 @@ object middleware {
       __obj.asInstanceOf[ConnectContext]
     }
     
-    extension [Self <: ConnectContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectContext] (val x: Self) extends AnyVal {
       
       inline def setReq(value: Any): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
@@ -250,7 +253,8 @@ object middleware {
       __obj.asInstanceOf[DocContext]
     }
     
-    extension [Self <: DocContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocContext] (val x: Self) extends AnyVal {
       
       inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
@@ -284,7 +288,8 @@ object middleware {
       __obj.asInstanceOf[OpContext]
     }
     
-    extension [Self <: OpContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpContext] (val x: Self) extends AnyVal {
       
       inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
@@ -314,7 +319,8 @@ object middleware {
       __obj.asInstanceOf[PresenceContext]
     }
     
-    extension [Self <: PresenceContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PresenceContext] (val x: Self) extends AnyVal {
       
       inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
@@ -363,7 +369,8 @@ object middleware {
       __obj.asInstanceOf[QueryContext]
     }
     
-    extension [Self <: QueryContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryContext] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -415,7 +422,8 @@ object middleware {
       __obj.asInstanceOf[ReadSnapshotsContext]
     }
     
-    extension [Self <: ReadSnapshotsContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadSnapshotsContext] (val x: Self) extends AnyVal {
       
       inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
@@ -445,7 +453,8 @@ object middleware {
       __obj.asInstanceOf[ReceiveContext]
     }
     
-    extension [Self <: ReceiveContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReceiveContext] (val x: Self) extends AnyVal {
       
       inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -472,7 +481,8 @@ object middleware {
       __obj.asInstanceOf[ReplyContext]
     }
     
-    extension [Self <: ReplyContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplyContext] (val x: Self) extends AnyVal {
       
       inline def setReply(value: StringDictionary[Any]): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
       

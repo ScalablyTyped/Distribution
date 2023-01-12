@@ -21,7 +21,8 @@ object WorkerEventMap {
     __obj.asInstanceOf[WorkerEventMap]
   }
   
-  extension [Self <: WorkerEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerEventMap] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: MessageEvent[Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

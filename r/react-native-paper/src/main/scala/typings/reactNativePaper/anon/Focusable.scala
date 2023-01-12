@@ -22,7 +22,8 @@ object Focusable {
     __obj.asInstanceOf[Focusable]
   }
   
-  extension [Self <: Focusable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Focusable] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityElementsHidden(value: Boolean): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
     

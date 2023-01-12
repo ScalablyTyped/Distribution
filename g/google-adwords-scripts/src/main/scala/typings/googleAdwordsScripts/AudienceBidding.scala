@@ -37,7 +37,8 @@ object AudienceBidding {
     __obj.asInstanceOf[AudienceBidding]
   }
   
-  extension [Self <: AudienceBidding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudienceBidding] (val x: Self) extends AnyVal {
     
     inline def setClearCpc(value: () => Unit): Self = StObject.set(x, "clearCpc", js.Any.fromFunction0(value))
     

@@ -19,7 +19,8 @@ object AgentOtherDeviceId {
     __obj.asInstanceOf[AgentOtherDeviceId]
   }
   
-  extension [Self <: AgentOtherDeviceId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentOtherDeviceId] (val x: Self) extends AnyVal {
     
     inline def setAgentId(value: String): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
     

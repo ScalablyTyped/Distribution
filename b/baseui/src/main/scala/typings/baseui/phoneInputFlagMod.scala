@@ -36,7 +36,8 @@ object phoneInputFlagMod {
       __obj.asInstanceOf[FlagProps]
     }
     
-    extension [Self <: FlagProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlagProps] (val x: Self) extends AnyVal {
       
       inline def set$iso(value: CountryIso): Self = StObject.set(x, "$iso", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object phoneInputFlagMod {
       __obj.asInstanceOf[SizeStyleProps]
     }
     
-    extension [Self <: SizeStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeStyleProps] (val x: Self) extends AnyVal {
       
       inline def set$size(value: Size): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
       

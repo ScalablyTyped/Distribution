@@ -64,7 +64,8 @@ object ejsonMod {
       __obj.asInstanceOf[typings.meteor.ejsonMod.EJSONableCustomType]
     }
     
-    extension [Self <: typings.meteor.ejsonMod.EJSONableCustomType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.meteor.ejsonMod.EJSONableCustomType] (val x: Self) extends AnyVal {
       
       inline def setClone_(value: () => typings.meteor.ejsonMod.EJSONableCustomType): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
       

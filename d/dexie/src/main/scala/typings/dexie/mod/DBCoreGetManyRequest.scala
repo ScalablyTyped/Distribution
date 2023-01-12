@@ -21,7 +21,8 @@ object DBCoreGetManyRequest {
     __obj.asInstanceOf[DBCoreGetManyRequest]
   }
   
-  extension [Self <: DBCoreGetManyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBCoreGetManyRequest] (val x: Self) extends AnyVal {
     
     inline def setCache(value: immutable | clone): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

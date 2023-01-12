@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[LibraryConfig]
     }
     
-    extension [Self <: LibraryConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LibraryConfig] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       

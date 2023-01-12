@@ -59,7 +59,8 @@ object mod {
     @js.native
     val ^ : AbstractIteratorConstructor = js.native
     
-    extension [Self <: AbstractIterator[?, ?], K, V](x: Self & (AbstractIterator[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractIterator[?, ?], K, V] (val x: Self & (AbstractIterator[K, V])) extends AnyVal {
       
       inline def setDb(value: typings.abstractLeveldown.mod.AbstractLevelDOWN[K, V]): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
@@ -181,7 +182,8 @@ object mod {
       __obj.asInstanceOf[AbstractGetOptions]
     }
     
-    extension [Self <: AbstractGetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractGetOptions] (val x: Self) extends AnyVal {
       
       inline def setAsBuffer(value: Boolean): Self = StObject.set(x, "asBuffer", value.asInstanceOf[js.Any])
       
@@ -230,7 +232,8 @@ object mod {
       __obj.asInstanceOf[AbstractIteratorOptions[K]]
     }
     
-    extension [Self <: AbstractIteratorOptions[?], K](x: Self & AbstractIteratorOptions[K]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractIteratorOptions[?], K] (val x: Self & AbstractIteratorOptions[K]) extends AnyVal {
       
       inline def setGt(value: K): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
       
@@ -302,7 +305,8 @@ object mod {
       __obj.asInstanceOf[AbstractOpenOptions]
     }
     
-    extension [Self <: AbstractOpenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractOpenOptions] (val x: Self) extends AnyVal {
       
       inline def setCreateIfMissing(value: Boolean): Self = StObject.set(x, "createIfMissing", value.asInstanceOf[js.Any])
       
@@ -332,7 +336,8 @@ object mod {
       __obj.asInstanceOf[DelBatch[K, V]]
     }
     
-    extension [Self <: DelBatch[?, ?], K, V](x: Self & (DelBatch[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DelBatch[?, ?], K, V] (val x: Self & (DelBatch[K, V])) extends AnyVal {
       
       inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -364,7 +369,8 @@ object mod {
       __obj.asInstanceOf[PutBatch[K, V]]
     }
     
-    extension [Self <: PutBatch[?, ?], K, V](x: Self & (PutBatch[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutBatch[?, ?], K, V] (val x: Self & (PutBatch[K, V])) extends AnyVal {
       
       inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

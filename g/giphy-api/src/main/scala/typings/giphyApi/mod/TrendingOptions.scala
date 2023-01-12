@@ -17,7 +17,8 @@ object TrendingOptions {
     __obj.asInstanceOf[TrendingOptions]
   }
   
-  extension [Self <: TrendingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrendingOptions] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

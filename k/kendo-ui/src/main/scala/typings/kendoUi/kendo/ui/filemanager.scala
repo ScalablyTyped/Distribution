@@ -20,7 +20,8 @@ object filemanager {
       __obj.asInstanceOf[FileManagerCommand]
     }
     
-    extension [Self <: FileManagerCommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileManagerCommand] (val x: Self) extends AnyVal {
       
       inline def setExec(value: () => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction0(value))
       
@@ -45,7 +46,8 @@ object filemanager {
         __obj.asInstanceOf[ChangeViewCommand]
       }
       
-      extension [Self <: ChangeViewCommand](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChangeViewCommand] (val x: Self) extends AnyVal {
         
         inline def setExec(value: () => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction0(value))
         
@@ -72,7 +74,8 @@ object filemanager {
         __obj.asInstanceOf[CopyCommand]
       }
       
-      extension [Self <: CopyCommand](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CopyCommand] (val x: Self) extends AnyVal {
         
         inline def setExec(value: () => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction0(value))
         
@@ -99,7 +102,8 @@ object filemanager {
         __obj.asInstanceOf[CreateFolderCommand]
       }
       
-      extension [Self <: CreateFolderCommand](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateFolderCommand] (val x: Self) extends AnyVal {
         
         inline def setExec(value: () => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction0(value))
         
@@ -128,7 +132,8 @@ object filemanager {
         __obj.asInstanceOf[DeleteCommand]
       }
       
-      extension [Self <: DeleteCommand](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteCommand] (val x: Self) extends AnyVal {
         
         inline def setExec(value: () => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction0(value))
         
@@ -159,7 +164,8 @@ object filemanager {
         __obj.asInstanceOf[MoveCommand]
       }
       
-      extension [Self <: MoveCommand](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MoveCommand] (val x: Self) extends AnyVal {
         
         inline def setExec(value: () => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction0(value))
         
@@ -186,7 +192,8 @@ object filemanager {
         __obj.asInstanceOf[OpenDialogCommand]
       }
       
-      extension [Self <: OpenDialogCommand](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OpenDialogCommand] (val x: Self) extends AnyVal {
         
         inline def setExec(value: () => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction0(value))
         
@@ -213,7 +220,8 @@ object filemanager {
         __obj.asInstanceOf[RenameCommand]
       }
       
-      extension [Self <: RenameCommand](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenameCommand] (val x: Self) extends AnyVal {
         
         inline def setExec(value: () => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction0(value))
         
@@ -240,7 +248,8 @@ object filemanager {
         __obj.asInstanceOf[SearchCommand]
       }
       
-      extension [Self <: SearchCommand](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchCommand] (val x: Self) extends AnyVal {
         
         inline def setExec(value: () => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction0(value))
         
@@ -267,7 +276,8 @@ object filemanager {
         __obj.asInstanceOf[SortCommand]
       }
       
-      extension [Self <: SortCommand](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SortCommand] (val x: Self) extends AnyVal {
         
         inline def setExec(value: () => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction0(value))
         
@@ -296,7 +306,8 @@ object filemanager {
         __obj.asInstanceOf[TogglePaneCommand]
       }
       
-      extension [Self <: TogglePaneCommand](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TogglePaneCommand] (val x: Self) extends AnyVal {
         
         inline def setExec(value: () => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction0(value))
         

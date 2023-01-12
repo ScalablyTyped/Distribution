@@ -16,7 +16,8 @@ object PartialINodeMaterialOptio {
     __obj.asInstanceOf[PartialINodeMaterialOptio]
   }
   
-  extension [Self <: PartialINodeMaterialOptio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialINodeMaterialOptio] (val x: Self) extends AnyVal {
     
     inline def setEmitComments(value: Boolean): Self = StObject.set(x, "emitComments", value.asInstanceOf[js.Any])
     

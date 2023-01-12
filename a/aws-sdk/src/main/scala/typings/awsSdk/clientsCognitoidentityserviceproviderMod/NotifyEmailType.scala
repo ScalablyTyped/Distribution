@@ -28,7 +28,8 @@ object NotifyEmailType {
     __obj.asInstanceOf[NotifyEmailType]
   }
   
-  extension [Self <: NotifyEmailType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifyEmailType] (val x: Self) extends AnyVal {
     
     inline def setHtmlBody(value: EmailNotificationBodyType): Self = StObject.set(x, "HtmlBody", value.asInstanceOf[js.Any])
     

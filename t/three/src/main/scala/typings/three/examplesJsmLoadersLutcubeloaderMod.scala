@@ -68,7 +68,8 @@ object examplesJsmLoadersLutcubeloaderMod {
       __obj.asInstanceOf[LUTCubeResult]
     }
     
-    extension [Self <: LUTCubeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LUTCubeResult] (val x: Self) extends AnyVal {
       
       inline def setDomainMax(value: Vector3): Self = StObject.set(x, "domainMax", value.asInstanceOf[js.Any])
       

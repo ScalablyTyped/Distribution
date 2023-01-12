@@ -27,7 +27,8 @@ object RegisterDataHolderAuth {
     __obj.asInstanceOf[RegisterDataHolderAuth]
   }
   
-  extension [Self <: RegisterDataHolderAuth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterDataHolderAuth] (val x: Self) extends AnyVal {
     
     inline def setJwksEndpoint(value: String): Self = StObject.set(x, "jwksEndpoint", value.asInstanceOf[js.Any])
     

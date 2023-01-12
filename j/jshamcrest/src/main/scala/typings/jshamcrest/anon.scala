@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[AttachAssertions]
     }
     
-    extension [Self <: AttachAssertions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttachAssertions] (val x: Self) extends AnyVal {
       
       inline def setAttachAssertions(value: Boolean): Self = StObject.set(x, "attachAssertions", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Scope]
     }
     
-    extension [Self <: Scope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
       
       inline def setScope(value: js.Object): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       

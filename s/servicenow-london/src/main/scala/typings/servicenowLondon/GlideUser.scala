@@ -56,7 +56,8 @@ object GlideUser {
     __obj.asInstanceOf[GlideUser]
   }
   
-  extension [Self <: GlideUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlideUser] (val x: Self) extends AnyVal {
     
     inline def setGetCompanyID(value: () => String): Self = StObject.set(x, "getCompanyID", js.Any.fromFunction0(value))
     

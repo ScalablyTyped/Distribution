@@ -17,7 +17,8 @@ object Entity {
     __obj.asInstanceOf[Entity]
   }
   
-  extension [Self <: Entity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
     
     inline def setEntityAspect(value: EntityAspect): Self = StObject.set(x, "entityAspect", value.asInstanceOf[js.Any])
     

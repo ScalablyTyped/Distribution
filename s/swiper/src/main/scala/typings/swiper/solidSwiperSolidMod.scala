@@ -49,7 +49,8 @@ object solidSwiperSolidMod {
       __obj.asInstanceOf[SlideData]
     }
     
-    extension [Self <: SlideData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlideData] (val x: Self) extends AnyVal {
       
       inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
@@ -678,7 +679,8 @@ object solidSwiperSolidMod {
       __obj.asInstanceOf[SwiperProps]
     }
     
-    extension [Self <: SwiperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwiperProps] (val x: Self) extends AnyVal {
       
       inline def setOnActiveIndexChange(value: /* swiper */ typings.swiper.typesMod.Swiper => Unit): Self = StObject.set(x, "onActiveIndexChange", js.Any.fromFunction1(value))
       
@@ -1098,7 +1100,8 @@ object solidSwiperSolidMod {
       __obj.asInstanceOf[SwiperSlideProps]
     }
     
-    extension [Self <: SwiperSlideProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwiperSlideProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Element | (js.Function1[/* slideData */ SlideData, Element])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

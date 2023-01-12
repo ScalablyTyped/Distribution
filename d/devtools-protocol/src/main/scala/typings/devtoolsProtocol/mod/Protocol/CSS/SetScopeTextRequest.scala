@@ -19,7 +19,8 @@ object SetScopeTextRequest {
     __obj.asInstanceOf[SetScopeTextRequest]
   }
   
-  extension [Self <: SetScopeTextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetScopeTextRequest] (val x: Self) extends AnyVal {
     
     inline def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object TypeofKeyboardEvent {
     __obj.asInstanceOf[TypeofKeyboardEvent]
   }
   
-  extension [Self <: TypeofKeyboardEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofKeyboardEvent] (val x: Self) extends AnyVal {
     
     inline def setDOM_KEY_LOCATION_LEFT(value: Double): Self = StObject.set(x, "DOM_KEY_LOCATION_LEFT", value.asInstanceOf[js.Any])
     

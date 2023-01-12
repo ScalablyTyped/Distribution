@@ -15,7 +15,8 @@ object RecoverAttempts {
     __obj.asInstanceOf[RecoverAttempts]
   }
   
-  extension [Self <: RecoverAttempts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecoverAttempts] (val x: Self) extends AnyVal {
     
     inline def setRecoverAttempts(value: MediaErrorDecode): Self = StObject.set(x, "recoverAttempts", value.asInstanceOf[js.Any])
     

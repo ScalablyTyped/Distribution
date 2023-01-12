@@ -23,7 +23,8 @@ object IMapLoadOptions {
     __obj.asInstanceOf[IMapLoadOptions]
   }
   
-  extension [Self <: IMapLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMapLoadOptions] (val x: Self) extends AnyVal {
     
     inline def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     

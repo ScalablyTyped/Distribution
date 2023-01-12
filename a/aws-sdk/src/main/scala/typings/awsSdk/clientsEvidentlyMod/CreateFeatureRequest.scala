@@ -53,7 +53,8 @@ object CreateFeatureRequest {
     __obj.asInstanceOf[CreateFeatureRequest]
   }
   
-  extension [Self <: CreateFeatureRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFeatureRequest] (val x: Self) extends AnyVal {
     
     inline def setDefaultVariation(value: VariationName): Self = StObject.set(x, "defaultVariation", value.asInstanceOf[js.Any])
     

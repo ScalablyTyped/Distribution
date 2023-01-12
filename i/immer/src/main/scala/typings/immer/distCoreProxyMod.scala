@@ -64,7 +64,8 @@ object distCoreProxyMod {
       __obj.asInstanceOf[ProxyArrayState]
     }
     
-    extension [Self <: ProxyArrayState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyArrayState] (val x: Self) extends AnyVal {
       
       inline def setBase_(value: AnyArray): Self = StObject.set(x, "base_", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object distCoreProxyMod {
       __obj.asInstanceOf[ProxyBaseState]
     }
     
-    extension [Self <: ProxyBaseState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyBaseState] (val x: Self) extends AnyVal {
       
       inline def setAssigned_(value: StringDictionary[Boolean]): Self = StObject.set(x, "assigned_", value.asInstanceOf[js.Any])
       
@@ -143,7 +145,8 @@ object distCoreProxyMod {
       __obj.asInstanceOf[ProxyObjectState]
     }
     
-    extension [Self <: ProxyObjectState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyObjectState] (val x: Self) extends AnyVal {
       
       inline def setBase_(value: Any): Self = StObject.set(x, "base_", value.asInstanceOf[js.Any])
       

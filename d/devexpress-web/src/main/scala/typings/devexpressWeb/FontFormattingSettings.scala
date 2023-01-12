@@ -95,7 +95,8 @@ object FontFormattingSettings {
     __obj.asInstanceOf[FontFormattingSettings]
   }
   
-  extension [Self <: FontFormattingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontFormattingSettings] (val x: Self) extends AnyVal {
     
     inline def setAllCaps(value: Boolean): Self = StObject.set(x, "allCaps", value.asInstanceOf[js.Any])
     

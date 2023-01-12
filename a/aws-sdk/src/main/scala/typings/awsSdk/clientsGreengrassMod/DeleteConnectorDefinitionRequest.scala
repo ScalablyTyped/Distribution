@@ -18,7 +18,8 @@ object DeleteConnectorDefinitionRequest {
     __obj.asInstanceOf[DeleteConnectorDefinitionRequest]
   }
   
-  extension [Self <: DeleteConnectorDefinitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteConnectorDefinitionRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectorDefinitionId(value: string): Self = StObject.set(x, "ConnectorDefinitionId", value.asInstanceOf[js.Any])
   }

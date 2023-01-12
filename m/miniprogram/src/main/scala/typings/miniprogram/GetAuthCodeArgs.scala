@@ -30,7 +30,8 @@ object GetAuthCodeArgs {
     __obj.asInstanceOf[GetAuthCodeArgs]
   }
   
-  extension [Self <: GetAuthCodeArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAuthCodeArgs] (val x: Self) extends AnyVal {
     
     inline def setScopes(value: String | js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     

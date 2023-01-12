@@ -975,7 +975,8 @@ object distCommonjsAutolinkerMod {
       __obj.asInstanceOf[Autolinker]
     }
     
-    extension [Self <: Autolinker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Autolinker] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -1062,7 +1063,8 @@ object distCommonjsAutolinkerMod {
       __obj.asInstanceOf[AutolinkerConfig]
     }
     
-    extension [Self <: AutolinkerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutolinkerConfig] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -1185,7 +1187,8 @@ object distCommonjsAutolinkerMod {
       __obj.asInstanceOf[StripPrefixConfigObj]
     }
     
-    extension [Self <: StripPrefixConfigObj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StripPrefixConfigObj] (val x: Self) extends AnyVal {
       
       inline def setScheme(value: Boolean): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       
@@ -1212,7 +1215,8 @@ object distCommonjsAutolinkerMod {
       __obj.asInstanceOf[TruncateConfigObj]
     }
     
-    extension [Self <: TruncateConfigObj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TruncateConfigObj] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -1241,7 +1245,8 @@ object distCommonjsAutolinkerMod {
       __obj.asInstanceOf[UrlsConfigObj]
     }
     
-    extension [Self <: UrlsConfigObj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlsConfigObj] (val x: Self) extends AnyVal {
       
       inline def setIpV4Matches(value: Boolean): Self = StObject.set(x, "ipV4Matches", value.asInstanceOf[js.Any])
       

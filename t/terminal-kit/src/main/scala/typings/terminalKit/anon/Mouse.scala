@@ -20,7 +20,8 @@ object Mouse {
     __obj.asInstanceOf[Mouse]
   }
   
-  extension [Self <: Mouse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mouse] (val x: Self) extends AnyVal {
     
     inline def setMouse(value: button | drag | motion): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
     

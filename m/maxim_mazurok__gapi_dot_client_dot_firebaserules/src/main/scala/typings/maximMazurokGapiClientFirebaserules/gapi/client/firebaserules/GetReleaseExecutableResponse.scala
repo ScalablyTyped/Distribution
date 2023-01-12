@@ -31,7 +31,8 @@ object GetReleaseExecutableResponse {
     __obj.asInstanceOf[GetReleaseExecutableResponse]
   }
   
-  extension [Self <: GetReleaseExecutableResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetReleaseExecutableResponse] (val x: Self) extends AnyVal {
     
     inline def setExecutable(value: String): Self = StObject.set(x, "executable", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ToTempFileParams {
     __obj.asInstanceOf[ToTempFileParams]
   }
   
-  extension [Self <: ToTempFileParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToTempFileParams] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

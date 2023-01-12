@@ -20,7 +20,8 @@ object TSTupleType {
   @js.native
   def apply(elementTypes: js.Array[TSType]): TSTupleType = js.native
   
-  extension [Self <: TSTupleType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSTupleType] (val x: Self) extends AnyVal {
     
     inline def setElementTypes(value: js.Array[TSType]): Self = StObject.set(x, "elementTypes", value.asInstanceOf[js.Any])
     

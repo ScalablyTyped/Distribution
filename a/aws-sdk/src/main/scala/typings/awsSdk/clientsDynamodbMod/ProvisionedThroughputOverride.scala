@@ -18,7 +18,8 @@ object ProvisionedThroughputOverride {
     __obj.asInstanceOf[ProvisionedThroughputOverride]
   }
   
-  extension [Self <: ProvisionedThroughputOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisionedThroughputOverride] (val x: Self) extends AnyVal {
     
     inline def setReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
     

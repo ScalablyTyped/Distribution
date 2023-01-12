@@ -43,7 +43,8 @@ object TopicRulePayload {
     __obj.asInstanceOf[TopicRulePayload]
   }
   
-  extension [Self <: TopicRulePayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicRulePayload] (val x: Self) extends AnyVal {
     
     inline def setActions(value: ActionList): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object CreateStreamingSessionStreamRequest {
     __obj.asInstanceOf[CreateStreamingSessionStreamRequest]
   }
   
-  extension [Self <: CreateStreamingSessionStreamRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStreamingSessionStreamRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

@@ -124,7 +124,8 @@ object mod {
       __obj.asInstanceOf[IGoogleApiOptions]
     }
     
-    extension [Self <: IGoogleApiOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGoogleApiOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -186,7 +187,8 @@ object mod {
       __obj.asInstanceOf[IInfoWindowProps]
     }
     
-    extension [Self <: IInfoWindowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInfoWindowProps] (val x: Self) extends AnyVal {
       
       inline def setGoogle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google */ Any): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
       
@@ -284,7 +286,8 @@ object mod {
       __obj.asInstanceOf[IMapProps]
     }
     
-    extension [Self <: IMapProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMapProps] (val x: Self) extends AnyVal {
       
       inline def setBounds(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.LatLngBounds */ Any
@@ -506,7 +509,8 @@ object mod {
       __obj.asInstanceOf[IMarkerProps]
     }
     
-    extension [Self <: IMarkerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMarkerProps] (val x: Self) extends AnyVal {
       
       inline def setMapCenter(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.LatLng */ Any
@@ -545,7 +549,8 @@ object mod {
       __obj.asInstanceOf[IProvidedProps]
     }
     
-    extension [Self <: IProvidedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProvidedProps] (val x: Self) extends AnyVal {
       
       inline def setGoogle(value: GoogleAPI): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
       

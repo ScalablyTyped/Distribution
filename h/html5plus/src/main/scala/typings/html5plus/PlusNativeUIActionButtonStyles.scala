@@ -54,7 +54,8 @@ object PlusNativeUIActionButtonStyles {
     __obj.asInstanceOf[PlusNativeUIActionButtonStyles]
   }
   
-  extension [Self <: PlusNativeUIActionButtonStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNativeUIActionButtonStyles] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

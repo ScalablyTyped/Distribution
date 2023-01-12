@@ -22,7 +22,8 @@ object Ban {
     __obj.asInstanceOf[Ban]
   }
   
-  extension [Self <: Ban](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ban] (val x: Self) extends AnyVal {
     
     inline def setBan_reason(value: _empty): Self = StObject.set(x, "ban_reason", value.asInstanceOf[js.Any])
     

@@ -124,7 +124,8 @@ object RouteOptionsPayload {
     __obj.asInstanceOf[RouteOptionsPayload]
   }
   
-  extension [Self <: RouteOptionsPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteOptionsPayload] (val x: Self) extends AnyVal {
     
     inline def setAllow(value: String | js.Array[String]): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     

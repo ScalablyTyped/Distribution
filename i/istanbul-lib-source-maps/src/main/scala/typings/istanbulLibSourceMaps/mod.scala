@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[MapStore]
     }
     
-    extension [Self <: MapStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapStore] (val x: Self) extends AnyVal {
       
       inline def setAddInputSourceMapsSync(value: Any => Unit): Self = StObject.set(x, "addInputSourceMapsSync", js.Any.fromFunction1(value))
       
@@ -116,7 +117,8 @@ object mod {
       __obj.asInstanceOf[MapStoreOptions]
     }
     
-    extension [Self <: MapStoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapStoreOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
       

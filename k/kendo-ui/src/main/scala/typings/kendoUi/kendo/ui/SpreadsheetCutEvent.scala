@@ -18,7 +18,8 @@ object SpreadsheetCutEvent {
     __obj.asInstanceOf[SpreadsheetCutEvent]
   }
   
-  extension [Self <: SpreadsheetCutEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetCutEvent] (val x: Self) extends AnyVal {
     
     inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

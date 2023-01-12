@@ -43,7 +43,8 @@ object CreateSnapshotsRequest {
     __obj.asInstanceOf[CreateSnapshotsRequest]
   }
   
-  extension [Self <: CreateSnapshotsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSnapshotsRequest] (val x: Self) extends AnyVal {
     
     inline def setCopyTagsFromSource(value: CopyTagsFromSource): Self = StObject.set(x, "CopyTagsFromSource", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListDocumentClassificationJobsResponse {
     __obj.asInstanceOf[ListDocumentClassificationJobsResponse]
   }
   
-  extension [Self <: ListDocumentClassificationJobsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDocumentClassificationJobsResponse] (val x: Self) extends AnyVal {
     
     inline def setDocumentClassificationJobPropertiesList(value: DocumentClassificationJobPropertiesList): Self = StObject.set(x, "DocumentClassificationJobPropertiesList", value.asInstanceOf[js.Any])
     

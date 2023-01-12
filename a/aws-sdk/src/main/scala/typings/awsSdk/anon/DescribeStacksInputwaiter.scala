@@ -30,7 +30,8 @@ object DescribeStacksInputwaiter {
     __obj.asInstanceOf[DescribeStacksInputwaiter]
   }
   
-  extension [Self <: DescribeStacksInputwaiter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStacksInputwaiter] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

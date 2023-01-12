@@ -23,7 +23,8 @@ object IntersectionInfo {
     __obj.asInstanceOf[IntersectionInfo]
   }
   
-  extension [Self <: IntersectionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntersectionInfo] (val x: Self) extends AnyVal {
     
     inline def setBu(value: Nullable[Double]): Self = StObject.set(x, "bu", value.asInstanceOf[js.Any])
     

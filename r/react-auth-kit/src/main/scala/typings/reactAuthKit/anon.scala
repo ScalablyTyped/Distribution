@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[AuthToken]
     }
     
-    extension [Self <: AuthToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthToken] (val x: Self) extends AnyVal {
       
       inline def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object anon {
       __obj.asInstanceOf[ExpiresAt]
     }
     
-    extension [Self <: ExpiresAt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpiresAt] (val x: Self) extends AnyVal {
       
       inline def setExpiresAt(value: js.Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object anon {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setExpiresAt(value: js.Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
       

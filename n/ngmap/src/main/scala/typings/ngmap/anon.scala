@@ -96,7 +96,8 @@ object anon {
       __obj.asInstanceOf[AnchorPoint]
     }
     
-    extension [Self <: AnchorPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnchorPoint] (val x: Self) extends AnyVal {
       
       inline def setAnchorPoint(value: Point): Self = StObject.set(x, "anchorPoint", value.asInstanceOf[js.Any])
       

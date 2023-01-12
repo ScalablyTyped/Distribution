@@ -28,7 +28,8 @@ object ReadonlyPromiseSearchDict {
     __obj.asInstanceOf[ReadonlyPromiseSearchDict]
   }
   
-  extension [Self <: ReadonlyPromiseSearchDict](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyPromiseSearchDict] (val x: Self) extends AnyVal {
     
     inline def setCatch(value: () => js.Promise[SearchDictionaryEntriesResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     

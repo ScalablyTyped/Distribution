@@ -23,7 +23,8 @@ object StartVpcEndpointServicePrivateDnsVerificationRequest {
     __obj.asInstanceOf[StartVpcEndpointServicePrivateDnsVerificationRequest]
   }
   
-  extension [Self <: StartVpcEndpointServicePrivateDnsVerificationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartVpcEndpointServicePrivateDnsVerificationRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object RegisterParameters {
     __obj.asInstanceOf[RegisterParameters]
   }
   
-  extension [Self <: RegisterParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterParameters] (val x: Self) extends AnyVal {
     
     inline def setAvailability(value: String): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     

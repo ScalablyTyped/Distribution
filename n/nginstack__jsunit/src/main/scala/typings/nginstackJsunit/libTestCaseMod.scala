@@ -65,7 +65,8 @@ object libTestCaseMod {
       __obj.asInstanceOf[TestCase]
     }
     
-    extension [Self <: TestCase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestCase] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       

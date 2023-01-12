@@ -74,7 +74,8 @@ object InterruptEngineEvent {
     __obj.asInstanceOf[InterruptEngineEvent]
   }
   
-  extension [Self <: InterruptEngineEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterruptEngineEvent] (val x: Self) extends AnyVal {
     
     inline def setEndColumn(value: Double): Self = StObject.set(x, "EndColumn", value.asInstanceOf[js.Any])
     

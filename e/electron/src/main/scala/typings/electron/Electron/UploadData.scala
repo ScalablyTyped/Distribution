@@ -30,7 +30,8 @@ object UploadData {
     __obj.asInstanceOf[UploadData]
   }
   
-  extension [Self <: UploadData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadData] (val x: Self) extends AnyVal {
     
     inline def setBlobUUID(value: String): Self = StObject.set(x, "blobUUID", value.asInstanceOf[js.Any])
     

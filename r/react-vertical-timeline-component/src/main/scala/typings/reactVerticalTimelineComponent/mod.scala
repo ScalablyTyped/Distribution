@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[VerticalTimelineElementProps]
     }
     
-    extension [Self <: VerticalTimelineElementProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerticalTimelineElementProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -171,7 +172,8 @@ object mod {
       __obj.asInstanceOf[VerticalTimelineProps]
     }
     
-    extension [Self <: VerticalTimelineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerticalTimelineProps] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

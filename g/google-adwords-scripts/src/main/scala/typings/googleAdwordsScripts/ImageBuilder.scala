@@ -24,7 +24,8 @@ object ImageBuilder {
     __obj.asInstanceOf[ImageBuilder[Media]]
   }
   
-  extension [Self <: ImageBuilder[?], Media](x: Self & ImageBuilder[Media]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageBuilder[?], Media] (val x: Self & ImageBuilder[Media]) extends AnyVal {
     
     inline def setWithData(value: Blob => ImageBuilder[Media]): Self = StObject.set(x, "withData", js.Any.fromFunction1(value))
     

@@ -37,7 +37,8 @@ object DisassociateCreatedArtifactRequest {
     __obj.asInstanceOf[DisassociateCreatedArtifactRequest]
   }
   
-  extension [Self <: DisassociateCreatedArtifactRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateCreatedArtifactRequest] (val x: Self) extends AnyVal {
     
     inline def setCreatedArtifactName(value: CreatedArtifactName): Self = StObject.set(x, "CreatedArtifactName", value.asInstanceOf[js.Any])
     

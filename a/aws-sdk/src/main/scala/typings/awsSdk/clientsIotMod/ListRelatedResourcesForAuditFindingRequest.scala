@@ -28,7 +28,8 @@ object ListRelatedResourcesForAuditFindingRequest {
     __obj.asInstanceOf[ListRelatedResourcesForAuditFindingRequest]
   }
   
-  extension [Self <: ListRelatedResourcesForAuditFindingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRelatedResourcesForAuditFindingRequest] (val x: Self) extends AnyVal {
     
     inline def setFindingId(value: FindingId): Self = StObject.set(x, "findingId", value.asInstanceOf[js.Any])
     

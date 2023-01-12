@@ -15,7 +15,8 @@ object SizeProps {
     __obj.asInstanceOf[SizeProps[ThemeType, TVal]]
   }
   
-  extension [Self <: SizeProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (SizeProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (SizeProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setSize(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

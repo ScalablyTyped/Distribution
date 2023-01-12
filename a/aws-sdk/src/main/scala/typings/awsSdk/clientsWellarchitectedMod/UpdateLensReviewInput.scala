@@ -21,7 +21,8 @@ object UpdateLensReviewInput {
     __obj.asInstanceOf[UpdateLensReviewInput]
   }
   
-  extension [Self <: UpdateLensReviewInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateLensReviewInput] (val x: Self) extends AnyVal {
     
     inline def setLensAlias(value: LensAlias): Self = StObject.set(x, "LensAlias", value.asInstanceOf[js.Any])
     

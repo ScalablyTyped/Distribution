@@ -18,7 +18,8 @@ object CreateAccessPointOutput {
     __obj.asInstanceOf[CreateAccessPointOutput]
   }
   
-  extension [Self <: CreateAccessPointOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAccessPointOutput] (val x: Self) extends AnyVal {
     
     inline def setDNSName(value: DNSName): Self = StObject.set(x, "DNSName", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Attributes]
     }
     
-    extension [Self <: Attributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[ObjSearchSingleAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[BaseUrl]
     }
     
-    extension [Self <: BaseUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseUrl] (val x: Self) extends AnyVal {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -99,7 +102,8 @@ object anon {
       __obj.asInstanceOf[ContentType]
     }
     
-    extension [Self <: ContentType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentType] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -122,7 +126,8 @@ object anon {
       __obj.asInstanceOf[DumpLoaded]
     }
     
-    extension [Self <: DumpLoaded](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DumpLoaded] (val x: Self) extends AnyVal {
       
       inline def setDumpLoaded(value: Boolean): Self = StObject.set(x, "dumpLoaded", value.asInstanceOf[js.Any])
     }
@@ -141,7 +146,8 @@ object anon {
       __obj.asInstanceOf[Hash]
     }
     
-    extension [Self <: Hash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -166,7 +172,8 @@ object anon {
       __obj.asInstanceOf[IncludeObjs]
     }
     
-    extension [Self <: IncludeObjs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncludeObjs] (val x: Self) extends AnyVal {
       
       inline def setIncludeObjs(value: Double): Self = StObject.set(x, "includeObjs", value.asInstanceOf[js.Any])
       
@@ -185,7 +192,8 @@ object anon {
       __obj.asInstanceOf[Length]
     }
     
-    extension [Self <: Length](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -204,7 +212,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -225,7 +234,8 @@ object anon {
       __obj.asInstanceOf[PreloadDump]
     }
     
-    extension [Self <: PreloadDump](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreloadDump] (val x: Self) extends AnyVal {
       
       inline def setPreloadDump(value: Any): Self = StObject.set(x, "preloadDump", value.asInstanceOf[js.Any])
       
@@ -246,7 +256,8 @@ object anon {
       __obj.asInstanceOf[Query]
     }
     
-    extension [Self <: Query](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -269,7 +280,8 @@ object anon {
       __obj.asInstanceOf[Toolbar]
     }
     
-    extension [Self <: Toolbar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Toolbar] (val x: Self) extends AnyVal {
       
       inline def setToolbar(value: js.Array[String]): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
       

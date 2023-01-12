@@ -28,7 +28,8 @@ object ReplicationInstanceTaskLog {
     __obj.asInstanceOf[ReplicationInstanceTaskLog]
   }
   
-  extension [Self <: ReplicationInstanceTaskLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationInstanceTaskLog] (val x: Self) extends AnyVal {
     
     inline def setReplicationInstanceTaskLogSize(value: Long): Self = StObject.set(x, "ReplicationInstanceTaskLogSize", value.asInstanceOf[js.Any])
     

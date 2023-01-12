@@ -29,7 +29,8 @@ object distTypesRequestOptionsMod {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

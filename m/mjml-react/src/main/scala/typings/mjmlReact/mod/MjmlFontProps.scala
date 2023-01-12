@@ -20,7 +20,8 @@ object MjmlFontProps {
     __obj.asInstanceOf[MjmlFontProps]
   }
   
-  extension [Self <: MjmlFontProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MjmlFontProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object QueryStreamEvents {
     __obj.asInstanceOf[QueryStreamEvents[T]]
   }
   
-  extension [Self <: QueryStreamEvents[?], T](x: Self & QueryStreamEvents[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryStreamEvents[?], T] (val x: Self & QueryStreamEvents[T]) extends AnyVal {
     
     inline def setAddListener(
       value: (metadata, js.Function1[/* metadata */ js.Array[Metadata[T]], Unit]) => QueryStreamEvents[T]

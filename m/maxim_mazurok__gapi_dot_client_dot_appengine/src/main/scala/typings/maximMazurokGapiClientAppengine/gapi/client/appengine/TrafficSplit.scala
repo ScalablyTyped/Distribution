@@ -25,7 +25,8 @@ object TrafficSplit {
     __obj.asInstanceOf[TrafficSplit]
   }
   
-  extension [Self <: TrafficSplit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrafficSplit] (val x: Self) extends AnyVal {
     
     inline def setAllocations(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: number} */ js.Any

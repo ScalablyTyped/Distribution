@@ -20,7 +20,8 @@ object `4` {
     __obj.asInstanceOf[`4`[TEvent]]
   }
   
-  extension [Self <: `4`[?], TEvent /* <: EventObject */](x: Self & `4`[TEvent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `4`[?], TEvent /* <: EventObject */] (val x: Self & `4`[TEvent]) extends AnyVal {
     
     inline def setEvent(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | NullEvent | Asterisk

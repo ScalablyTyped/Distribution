@@ -129,7 +129,8 @@ object googleProtobufApiPbMod {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setMethodsList(value: js.Array[typings.googleProtobuf.googleProtobufApiPbMod.Method.AsObject]): Self = StObject.set(x, "methodsList", value.asInstanceOf[js.Any])
         
@@ -252,7 +253,8 @@ object googleProtobufApiPbMod {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -324,7 +326,8 @@ object googleProtobufApiPbMod {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         

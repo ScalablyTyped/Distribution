@@ -19,7 +19,8 @@ object ReturnTypeAddVirtualAuthenticatorResponse {
     __obj.asInstanceOf[ReturnTypeAddVirtualAuthenticatorResponse]
   }
   
-  extension [Self <: ReturnTypeAddVirtualAuthenticatorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeAddVirtualAuthenticatorResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[AddVirtualAuthenticatorRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

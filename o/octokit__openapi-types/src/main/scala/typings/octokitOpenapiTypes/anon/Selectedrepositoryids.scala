@@ -16,7 +16,8 @@ object Selectedrepositoryids {
     __obj.asInstanceOf[Selectedrepositoryids]
   }
   
-  extension [Self <: Selectedrepositoryids](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Selectedrepositoryids] (val x: Self) extends AnyVal {
     
     inline def setSelected_repository_ids(value: js.Array[Double]): Self = StObject.set(x, "selected_repository_ids", value.asInstanceOf[js.Any])
     

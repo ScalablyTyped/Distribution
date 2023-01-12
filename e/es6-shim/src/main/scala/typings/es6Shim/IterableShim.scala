@@ -19,7 +19,8 @@ object IterableShim {
     __obj.asInstanceOf[IterableShim[T]]
   }
   
-  extension [Self <: IterableShim[?], T](x: Self & IterableShim[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IterableShim[?], T] (val x: Self & IterableShim[T]) extends AnyVal {
     
     inline def `set_es6-shim iterator_`(value: () => Iterator[T]): Self = StObject.set(x, "_es6-shim iterator_", js.Any.fromFunction0(value))
   }

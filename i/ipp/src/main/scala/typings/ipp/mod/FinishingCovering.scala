@@ -15,7 +15,8 @@ object FinishingCovering {
     __obj.asInstanceOf[FinishingCovering]
   }
   
-  extension [Self <: FinishingCovering](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinishingCovering] (val x: Self) extends AnyVal {
     
     inline def `setCovering-name`(value: String): Self = StObject.set(x, "covering-name", value.asInstanceOf[js.Any])
     

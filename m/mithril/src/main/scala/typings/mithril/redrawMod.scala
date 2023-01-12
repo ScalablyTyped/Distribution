@@ -27,7 +27,8 @@ object redrawMod extends Shortcut {
       __obj.asInstanceOf[Static]
     }
     
-    extension [Self <: Static](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
       
       inline def setRedraw(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof redraw */ Any): Self = StObject.set(x, "redraw", value.asInstanceOf[js.Any])
       

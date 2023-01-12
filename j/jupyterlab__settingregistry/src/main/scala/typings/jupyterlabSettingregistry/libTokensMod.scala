@@ -226,7 +226,8 @@ object libTokensMod {
         __obj.asInstanceOf[IContextMenuItem]
       }
       
-      extension [Self <: IContextMenuItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IContextMenuItem] (val x: Self) extends AnyVal {
         
         inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       }
@@ -293,7 +294,8 @@ object libTokensMod {
         __obj.asInstanceOf[IMenu]
       }
       
-      extension [Self <: IMenu](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IMenu] (val x: Self) extends AnyVal {
         
         inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
         
@@ -380,7 +382,8 @@ object libTokensMod {
         __obj.asInstanceOf[IMenuItem]
       }
       
-      extension [Self <: IMenuItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IMenuItem] (val x: Self) extends AnyVal {
         
         inline def setArgs(value: PartialJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
@@ -452,7 +455,8 @@ object libTokensMod {
         __obj.asInstanceOf[IPlugin]
       }
       
-      extension [Self <: IPlugin](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPlugin] (val x: Self) extends AnyVal {
         
         inline def setData(value: ISettingBundle): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -526,7 +530,8 @@ object libTokensMod {
         __obj.asInstanceOf[IProperty]
       }
       
-      extension [Self <: IProperty](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IProperty] (val x: Self) extends AnyVal {
         
         inline def setDefault(value: PartialJSONValue): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         
@@ -642,7 +647,8 @@ object libTokensMod {
         __obj.asInstanceOf[ISchema]
       }
       
-      extension [Self <: ISchema](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISchema] (val x: Self) extends AnyVal {
         
         inline def setJupyterDotlabDotmenus(value: Context): Self = StObject.set(x, "jupyter.lab.menus", value.asInstanceOf[js.Any])
         
@@ -709,7 +715,8 @@ object libTokensMod {
         __obj.asInstanceOf[ISettingBundle]
       }
       
-      extension [Self <: ISettingBundle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISettingBundle] (val x: Self) extends AnyVal {
         
         inline def setComposite(value: PartialJSONObject): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
         
@@ -849,7 +856,8 @@ object libTokensMod {
         __obj.asInstanceOf[ISettings]
       }
       
-      extension [Self <: ISettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISettings] (val x: Self) extends AnyVal {
         
         inline def setAnnotatedDefaults(value: () => String): Self = StObject.set(x, "annotatedDefaults", js.Any.fromFunction0(value))
         
@@ -927,7 +935,8 @@ object libTokensMod {
         __obj.asInstanceOf[IShortcut]
       }
       
-      extension [Self <: IShortcut](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IShortcut] (val x: Self) extends AnyVal {
         
         inline def setArgs(value: PartialJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
@@ -1015,7 +1024,8 @@ object libTokensMod {
         __obj.asInstanceOf[IToolbarItem]
       }
       
-      extension [Self <: IToolbarItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IToolbarItem] (val x: Self) extends AnyVal {
         
         inline def setArgs(value: PartialJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
@@ -1049,7 +1059,8 @@ object libTokensMod {
       }
     }
     
-    extension [Self <: ISettingRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISettingRegistry] (val x: Self) extends AnyVal {
       
       inline def setConnector(value: IDataConnector[IPlugin, String, String, String]): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
       

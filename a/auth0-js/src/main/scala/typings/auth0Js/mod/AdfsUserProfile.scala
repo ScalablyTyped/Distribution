@@ -27,7 +27,8 @@ object AdfsUserProfile {
     __obj.asInstanceOf[AdfsUserProfile]
   }
   
-  extension [Self <: AdfsUserProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdfsUserProfile] (val x: Self) extends AnyVal {
     
     inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     

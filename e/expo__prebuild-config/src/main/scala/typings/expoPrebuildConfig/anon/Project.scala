@@ -20,7 +20,8 @@ object Project {
     __obj.asInstanceOf[Project]
   }
   
-  extension [Self <: Project](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Project] (val x: Self) extends AnyVal {
     
     inline def setProject(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ Any

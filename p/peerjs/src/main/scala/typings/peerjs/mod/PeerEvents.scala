@@ -50,7 +50,8 @@ object PeerEvents {
     __obj.asInstanceOf[PeerEvents]
   }
   
-  extension [Self <: PeerEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeerEvents] (val x: Self) extends AnyVal {
     
     inline def setCall(value: MediaConnection => Unit): Self = StObject.set(x, "call", js.Any.fromFunction1(value))
     

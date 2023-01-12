@@ -28,7 +28,8 @@ object PostCommentReplyInput {
     __obj.asInstanceOf[PostCommentReplyInput]
   }
   
-  extension [Self <: PostCommentReplyInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostCommentReplyInput] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     

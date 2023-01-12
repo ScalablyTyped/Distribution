@@ -37,7 +37,8 @@ object GroundCreateElevationSamplerOptions {
     __obj.asInstanceOf[GroundCreateElevationSamplerOptions]
   }
   
-  extension [Self <: GroundCreateElevationSamplerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroundCreateElevationSamplerOptions] (val x: Self) extends AnyVal {
     
     inline def setDemResolution(value: Double | String): Self = StObject.set(x, "demResolution", value.asInstanceOf[js.Any])
     

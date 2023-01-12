@@ -18,7 +18,8 @@ object KinesisDataStream {
     __obj.asInstanceOf[KinesisDataStream]
   }
   
-  extension [Self <: KinesisDataStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KinesisDataStream] (val x: Self) extends AnyVal {
     
     inline def setArn(value: KinesisDataArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

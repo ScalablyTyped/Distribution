@@ -28,7 +28,8 @@ object ListBackupPlansInput {
     __obj.asInstanceOf[ListBackupPlansInput]
   }
   
-  extension [Self <: ListBackupPlansInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBackupPlansInput] (val x: Self) extends AnyVal {
     
     inline def setIncludeDeleted(value: Boolean): Self = StObject.set(x, "IncludeDeleted", value.asInstanceOf[js.Any])
     

@@ -148,7 +148,8 @@ object outCodeSignMacCodeSignMod {
       __obj.asInstanceOf[CodeSigningInfo]
     }
     
-    extension [Self <: CodeSigningInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeSigningInfo] (val x: Self) extends AnyVal {
       
       inline def setKeychainFile(value: String): Self = StObject.set(x, "keychainFile", value.asInstanceOf[js.Any])
       
@@ -179,7 +180,8 @@ object outCodeSignMacCodeSignMod {
       __obj.asInstanceOf[CreateKeychainOptions]
     }
     
-    extension [Self <: CreateKeychainOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateKeychainOptions] (val x: Self) extends AnyVal {
       
       inline def setCscIKeyPassword(value: String): Self = StObject.set(x, "cscIKeyPassword", value.asInstanceOf[js.Any])
       

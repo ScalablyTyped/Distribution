@@ -38,7 +38,8 @@ object CreateCustomRoutingEndpointGroupRequest {
     __obj.asInstanceOf[CreateCustomRoutingEndpointGroupRequest]
   }
   
-  extension [Self <: CreateCustomRoutingEndpointGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCustomRoutingEndpointGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationConfigurations(value: CustomRoutingDestinationConfigurations): Self = StObject.set(x, "DestinationConfigurations", value.asInstanceOf[js.Any])
     

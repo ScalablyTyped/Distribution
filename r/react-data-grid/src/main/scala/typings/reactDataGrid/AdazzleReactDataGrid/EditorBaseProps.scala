@@ -38,7 +38,8 @@ object EditorBaseProps {
     __obj.asInstanceOf[EditorBaseProps]
   }
   
-  extension [Self <: EditorBaseProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorBaseProps] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: ExcelColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

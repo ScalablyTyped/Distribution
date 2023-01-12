@@ -19,7 +19,8 @@ object IFileOptions {
     __obj.asInstanceOf[IFileOptions]
   }
   
-  extension [Self <: IFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileOptions] (val x: Self) extends AnyVal {
     
     inline def setFlag(value: TFlags): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     

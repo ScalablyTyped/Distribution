@@ -82,7 +82,8 @@ object PackageInformation {
     __obj.asInstanceOf[PackageInformation]
   }
   
-  extension [Self <: PackageInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageInformation] (val x: Self) extends AnyVal {
     
     inline def setAppIds(value: js.Array[ApplicationId]): Self = StObject.set(x, "appIds", value.asInstanceOf[js.Any])
     

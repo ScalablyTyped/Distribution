@@ -34,7 +34,8 @@ object typesLifecycleRuleFilterMod {
       __obj.asInstanceOf[LifecycleRuleFilter]
     }
     
-    extension [Self <: LifecycleRuleFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LifecycleRuleFilter] (val x: Self) extends AnyVal {
       
       inline def setAnd(value: LifecycleRuleAndOperator): Self = StObject.set(x, "And", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object typesLifecycleRuleFilterMod {
       __obj.asInstanceOf[UnmarshalledLifecycleRuleFilter]
     }
     
-    extension [Self <: UnmarshalledLifecycleRuleFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledLifecycleRuleFilter] (val x: Self) extends AnyVal {
       
       inline def setAnd(value: UnmarshalledLifecycleRuleAndOperator): Self = StObject.set(x, "And", value.asInstanceOf[js.Any])
       

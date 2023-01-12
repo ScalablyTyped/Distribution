@@ -33,7 +33,8 @@ object QueryStagePlanNode {
     __obj.asInstanceOf[QueryStagePlanNode]
   }
   
-  extension [Self <: QueryStagePlanNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryStagePlanNode] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: QueryStagePlanNodes): Self = StObject.set(x, "Children", value.asInstanceOf[js.Any])
     

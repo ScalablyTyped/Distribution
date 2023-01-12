@@ -43,7 +43,8 @@ object CreatePlatformVersionRequest {
     __obj.asInstanceOf[CreatePlatformVersionRequest]
   }
   
-  extension [Self <: CreatePlatformVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePlatformVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     

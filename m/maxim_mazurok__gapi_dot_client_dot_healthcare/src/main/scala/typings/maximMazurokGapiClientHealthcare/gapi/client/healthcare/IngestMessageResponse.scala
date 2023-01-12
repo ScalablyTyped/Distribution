@@ -19,7 +19,8 @@ object IngestMessageResponse {
     __obj.asInstanceOf[IngestMessageResponse]
   }
   
-  extension [Self <: IngestMessageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestMessageResponse] (val x: Self) extends AnyVal {
     
     inline def setHl7Ack(value: String): Self = StObject.set(x, "hl7Ack", value.asInstanceOf[js.Any])
     

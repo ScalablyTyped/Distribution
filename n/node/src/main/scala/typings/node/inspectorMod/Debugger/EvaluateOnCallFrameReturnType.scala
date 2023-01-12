@@ -25,7 +25,8 @@ object EvaluateOnCallFrameReturnType {
     __obj.asInstanceOf[EvaluateOnCallFrameReturnType]
   }
   
-  extension [Self <: EvaluateOnCallFrameReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluateOnCallFrameReturnType] (val x: Self) extends AnyVal {
     
     inline def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
     

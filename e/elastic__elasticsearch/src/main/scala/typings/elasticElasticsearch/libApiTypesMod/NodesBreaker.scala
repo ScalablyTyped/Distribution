@@ -25,7 +25,8 @@ object NodesBreaker {
     __obj.asInstanceOf[NodesBreaker]
   }
   
-  extension [Self <: NodesBreaker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesBreaker] (val x: Self) extends AnyVal {
     
     inline def setEstimated_size(value: String): Self = StObject.set(x, "estimated_size", value.asInstanceOf[js.Any])
     

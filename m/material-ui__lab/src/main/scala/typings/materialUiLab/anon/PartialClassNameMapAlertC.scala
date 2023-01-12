@@ -46,7 +46,8 @@ object PartialClassNameMapAlertC {
     __obj.asInstanceOf[PartialClassNameMapAlertC]
   }
   
-  extension [Self <: PartialClassNameMapAlertC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapAlertC] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

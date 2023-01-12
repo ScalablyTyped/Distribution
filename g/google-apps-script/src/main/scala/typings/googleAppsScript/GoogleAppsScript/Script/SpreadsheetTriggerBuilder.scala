@@ -32,7 +32,8 @@ object SpreadsheetTriggerBuilder {
     __obj.asInstanceOf[SpreadsheetTriggerBuilder]
   }
   
-  extension [Self <: SpreadsheetTriggerBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetTriggerBuilder] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: () => Trigger): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     

@@ -23,7 +23,8 @@ object CSSComputedStyleProperty {
     __obj.asInstanceOf[CSSComputedStyleProperty]
   }
   
-  extension [Self <: CSSComputedStyleProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSComputedStyleProperty] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object Coords {
     __obj.asInstanceOf[Coords]
   }
   
-  extension [Self <: Coords](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Coords] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Crs): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
   }

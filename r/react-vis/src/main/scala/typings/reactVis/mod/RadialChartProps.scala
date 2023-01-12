@@ -65,7 +65,8 @@ object RadialChartProps {
     __obj.asInstanceOf[RadialChartProps]
   }
   
-  extension [Self <: RadialChartProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadialChartProps] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: String | AnimationParam | Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

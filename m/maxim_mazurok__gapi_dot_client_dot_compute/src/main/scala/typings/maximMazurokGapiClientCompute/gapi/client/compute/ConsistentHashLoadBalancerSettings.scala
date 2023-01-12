@@ -28,7 +28,8 @@ object ConsistentHashLoadBalancerSettings {
     __obj.asInstanceOf[ConsistentHashLoadBalancerSettings]
   }
   
-  extension [Self <: ConsistentHashLoadBalancerSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsistentHashLoadBalancerSettings] (val x: Self) extends AnyVal {
     
     inline def setHttpCookie(value: ConsistentHashLoadBalancerSettingsHttpCookie): Self = StObject.set(x, "httpCookie", value.asInstanceOf[js.Any])
     

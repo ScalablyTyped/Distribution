@@ -45,7 +45,8 @@ object AllowDraw {
     __obj.asInstanceOf[AllowDraw]
   }
   
-  extension [Self <: AllowDraw](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowDraw] (val x: Self) extends AnyVal {
     
     inline def setAllowDrag(value: Boolean): Self = StObject.set(x, "allowDrag", value.asInstanceOf[js.Any])
     

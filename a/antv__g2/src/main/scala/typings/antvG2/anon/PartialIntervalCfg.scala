@@ -65,7 +65,8 @@ object PartialIntervalCfg {
     __obj.asInstanceOf[PartialIntervalCfg]
   }
   
-  extension [Self <: PartialIntervalCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIntervalCfg] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: Style): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

@@ -382,7 +382,8 @@ object layersEffectLayerMod {
       __obj.asInstanceOf[IEffectLayerOptions]
     }
     
-    extension [Self <: IEffectLayerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEffectLayerOptions] (val x: Self) extends AnyVal {
       
       inline def setAlphaBlendingMode(value: Double): Self = StObject.set(x, "alphaBlendingMode", value.asInstanceOf[js.Any])
       

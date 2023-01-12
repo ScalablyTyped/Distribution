@@ -40,7 +40,8 @@ object IMsoBorder {
     __obj.asInstanceOf[IMsoBorder]
   }
   
-  extension [Self <: IMsoBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMsoBorder] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

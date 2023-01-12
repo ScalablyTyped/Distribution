@@ -48,7 +48,8 @@ object IVisualizationHyperCubeDef {
     __obj.asInstanceOf[IVisualizationHyperCubeDef]
   }
   
-  extension [Self <: IVisualizationHyperCubeDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVisualizationHyperCubeDef] (val x: Self) extends AnyVal {
     
     inline def setCustomErrorMessage(value: ICustomErrorMessage): Self = StObject.set(x, "customErrorMessage", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object RequestInfo {
     __obj.asInstanceOf[RequestInfo]
   }
   
-  extension [Self <: RequestInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestInfo] (val x: Self) extends AnyVal {
     
     inline def setAppDeveloperEmail(value: js.Array[String]): Self = StObject.set(x, "appDeveloperEmail", value.asInstanceOf[js.Any])
     

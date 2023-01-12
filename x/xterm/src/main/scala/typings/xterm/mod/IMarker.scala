@@ -32,7 +32,8 @@ object IMarker {
     __obj.asInstanceOf[IMarker]
   }
   
-  extension [Self <: IMarker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMarker] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

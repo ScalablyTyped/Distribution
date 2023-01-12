@@ -27,7 +27,8 @@ object distTypesResponsiveEditorSystemDistComponentsBreakpointsMod extends Short
       __obj.asInstanceOf[BreakpointsProps]
     }
     
-    extension [Self <: BreakpointsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreakpointsProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

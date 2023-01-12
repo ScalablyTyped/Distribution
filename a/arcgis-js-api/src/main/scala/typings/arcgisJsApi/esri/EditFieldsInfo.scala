@@ -41,7 +41,8 @@ object EditFieldsInfo {
     __obj.asInstanceOf[EditFieldsInfo]
   }
   
-  extension [Self <: EditFieldsInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditFieldsInfo] (val x: Self) extends AnyVal {
     
     inline def setCreationDateField(value: String): Self = StObject.set(x, "creationDateField", value.asInstanceOf[js.Any])
     

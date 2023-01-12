@@ -29,7 +29,8 @@ object EnrichStatsCoordinatorStats {
     __obj.asInstanceOf[EnrichStatsCoordinatorStats]
   }
   
-  extension [Self <: EnrichStatsCoordinatorStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnrichStatsCoordinatorStats] (val x: Self) extends AnyVal {
     
     inline def setExecuted_searches_total(value: long): Self = StObject.set(x, "executed_searches_total", value.asInstanceOf[js.Any])
     

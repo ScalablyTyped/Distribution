@@ -18,7 +18,8 @@ object ImportDataSourceConfig {
     __obj.asInstanceOf[ImportDataSourceConfig]
   }
   
-  extension [Self <: ImportDataSourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportDataSourceConfig] (val x: Self) extends AnyVal {
     
     inline def setDataSourceUrl(value: SecureURL): Self = StObject.set(x, "dataSourceUrl", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object StatusMessage {
     __obj.asInstanceOf[StatusMessage]
   }
   
-  extension [Self <: StatusMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusMessage] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: FormatMessage): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

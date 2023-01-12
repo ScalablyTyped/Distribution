@@ -68,7 +68,8 @@ object ImportInstanceLaunchSpecification {
     __obj.asInstanceOf[ImportInstanceLaunchSpecification]
   }
   
-  extension [Self <: ImportInstanceLaunchSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportInstanceLaunchSpecification] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInfo(value: String): Self = StObject.set(x, "AdditionalInfo", value.asInstanceOf[js.Any])
     

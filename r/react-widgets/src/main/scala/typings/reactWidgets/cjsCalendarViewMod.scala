@@ -67,7 +67,8 @@ object cjsCalendarViewMod {
       __obj.asInstanceOf[CalendarViewProps]
     }
     
-    extension [Self <: CalendarViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarViewProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object cjsCalendarViewMod {
       __obj.asInstanceOf[CellProps]
     }
     
-    extension [Self <: CellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

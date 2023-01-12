@@ -17,7 +17,8 @@ object GetServerState {
     __obj.asInstanceOf[GetServerState[S]]
   }
   
-  extension [Self <: GetServerState[?], S /* <: StoreApi[Any] */](x: Self & GetServerState[S]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServerState[?], S /* <: StoreApi[Any] */] (val x: Self & GetServerState[S]) extends AnyVal {
     
     inline def setGetServerState(value: () => ExtractState[S]): Self = StObject.set(x, "getServerState", js.Any.fromFunction0(value))
     

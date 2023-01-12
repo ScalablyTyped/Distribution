@@ -31,7 +31,8 @@ object AndroidManifestAttributesAndroidglEsVersion {
     __obj.asInstanceOf[AndroidManifestAttributesAndroidglEsVersion]
   }
   
-  extension [Self <: AndroidManifestAttributesAndroidglEsVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidManifestAttributesAndroidglEsVersion] (val x: Self) extends AnyVal {
     
     inline def setAndroidColonglEsVersion(value: String): Self = StObject.set(x, "android:glEsVersion", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object MapTypeId {
     __obj.asInstanceOf[MapTypeId]
   }
   
-  extension [Self <: MapTypeId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapTypeId] (val x: Self) extends AnyVal {
     
     inline def setMapTypeId(value: Name): Self = StObject.set(x, "mapTypeId", value.asInstanceOf[js.Any])
   }

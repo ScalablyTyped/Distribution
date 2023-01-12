@@ -21,7 +21,8 @@ object typesReferenceTypeNotSupportedExceptionMod {
       __obj.asInstanceOf[ReferenceTypeNotSupportedException]
     }
     
-    extension [Self <: ReferenceTypeNotSupportedException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferenceTypeNotSupportedException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ReferenceTypeNotSupportedException

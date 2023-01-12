@@ -37,7 +37,8 @@ object integrationMod {
       __obj.asInstanceOf[ApplyHookOptions]
     }
     
-    extension [Self <: ApplyHookOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplyHookOptions] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object integrationMod {
       __obj.asInstanceOf[HookOptions]
     }
     
-    extension [Self <: HookOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookOptions] (val x: Self) extends AnyVal {
       
       inline def setConstructor(value: String): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
       
@@ -222,7 +224,8 @@ object integrationMod {
       __obj.asInstanceOf[PartytownConfig]
     }
     
-    extension [Self <: PartytownConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartytownConfig] (val x: Self) extends AnyVal {
       
       inline def setApply(value: /* opts */ ApplyHookOptions => Any): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
@@ -352,7 +355,8 @@ object integrationMod {
       __obj.asInstanceOf[SetHookOptions]
     }
     
-    extension [Self <: SetHookOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetHookOptions] (val x: Self) extends AnyVal {
       
       inline def setPrevent(value: js.Symbol): Self = StObject.set(x, "prevent", value.asInstanceOf[js.Any])
       

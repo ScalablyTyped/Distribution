@@ -58,7 +58,8 @@ object helperTextAdapterMod {
       __obj.asInstanceOf[MDCTextFieldHelperTextAdapter]
     }
     
-    extension [Self <: MDCTextFieldHelperTextAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCTextFieldHelperTextAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

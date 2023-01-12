@@ -25,7 +25,8 @@ object WorkspaceSchema {
     __obj.asInstanceOf[WorkspaceSchema]
   }
   
-  extension [Self <: WorkspaceSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceSchema] (val x: Self) extends AnyVal {
     
     inline def setCli(value: WorkspaceCLISchema): Self = StObject.set(x, "cli", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsFeedMod extends Shortcut {
       __obj.asInstanceOf[FeedProps]
     }
     
-    extension [Self <: FeedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object distComponentsImageUploadButtonMod {
       __obj.asInstanceOf[ImageUploadButtonProps]
     }
     
-    extension [Self <: ImageUploadButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageUploadButtonProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

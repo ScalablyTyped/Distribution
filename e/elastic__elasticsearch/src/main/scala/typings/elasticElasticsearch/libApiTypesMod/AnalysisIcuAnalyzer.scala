@@ -23,7 +23,8 @@ object AnalysisIcuAnalyzer {
     __obj.asInstanceOf[AnalysisIcuAnalyzer]
   }
   
-  extension [Self <: AnalysisIcuAnalyzer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisIcuAnalyzer] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: AnalysisIcuNormalizationType): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

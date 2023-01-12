@@ -31,7 +31,8 @@ object typesGetApnsVoipChannelOutputMod {
       __obj.asInstanceOf[GetApnsVoipChannelOutput]
     }
     
-    extension [Self <: GetApnsVoipChannelOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetApnsVoipChannelOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

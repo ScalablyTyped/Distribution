@@ -130,7 +130,8 @@ object IMetadataCardControl {
     __obj.asInstanceOf[IMetadataCardControl]
   }
   
-  extension [Self <: IMetadataCardControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMetadataCardControl] (val x: Self) extends AnyVal {
     
     inline def setActivateLink(value: Any => Unit): Self = StObject.set(x, "ActivateLink", js.Any.fromFunction1(value))
     

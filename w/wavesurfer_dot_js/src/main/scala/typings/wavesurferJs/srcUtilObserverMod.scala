@@ -80,7 +80,8 @@ object srcUtilObserverMod {
       __obj.asInstanceOf[Observer]
     }
     
-    extension [Self <: Observer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observer] (val x: Self) extends AnyVal {
       
       inline def setFireEvent(value: (String, /* repeated */ Any) => Unit): Self = StObject.set(x, "fireEvent", js.Any.fromFunction2(value))
       

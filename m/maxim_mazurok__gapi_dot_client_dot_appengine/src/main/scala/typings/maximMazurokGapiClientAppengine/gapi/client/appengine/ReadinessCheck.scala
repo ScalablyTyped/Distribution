@@ -34,7 +34,8 @@ object ReadinessCheck {
     __obj.asInstanceOf[ReadinessCheck]
   }
   
-  extension [Self <: ReadinessCheck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadinessCheck] (val x: Self) extends AnyVal {
     
     inline def setAppStartTimeout(value: String): Self = StObject.set(x, "appStartTimeout", value.asInstanceOf[js.Any])
     

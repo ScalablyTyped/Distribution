@@ -27,7 +27,8 @@ object EmitHelperBase {
     __obj.asInstanceOf[EmitHelperBase]
   }
   
-  extension [Self <: EmitHelperBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmitHelperBase] (val x: Self) extends AnyVal {
     
     inline def setDependencies(value: js.Array[EmitHelper]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     

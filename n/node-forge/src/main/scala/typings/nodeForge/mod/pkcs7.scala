@@ -71,7 +71,8 @@ object pkcs7 {
       __obj.asInstanceOf[PkcsEnvelopedData]
     }
     
-    extension [Self <: PkcsEnvelopedData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PkcsEnvelopedData] (val x: Self) extends AnyVal {
       
       inline def setAddRecipient(value: Certificate => Unit): Self = StObject.set(x, "addRecipient", js.Any.fromFunction1(value))
       

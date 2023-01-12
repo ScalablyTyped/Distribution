@@ -42,7 +42,8 @@ object XAlterTable {
     __obj.asInstanceOf[XAlterTable]
   }
   
-  extension [Self <: XAlterTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAlterTable] (val x: Self) extends AnyVal {
     
     inline def setAlterColumnByIndex(value: (Double, XPropertySet) => Unit): Self = StObject.set(x, "alterColumnByIndex", js.Any.fromFunction2(value))
     

@@ -34,7 +34,8 @@ object RowProps {
     __obj.asInstanceOf[RowProps]
   }
   
-  extension [Self <: RowProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowProps] (val x: Self) extends AnyVal {
     
     inline def setCell(value: Any): Self = StObject.set(x, "Cell", value.asInstanceOf[js.Any])
     

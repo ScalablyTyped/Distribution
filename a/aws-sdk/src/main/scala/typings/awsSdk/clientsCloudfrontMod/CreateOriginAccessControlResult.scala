@@ -28,7 +28,8 @@ object CreateOriginAccessControlResult {
     __obj.asInstanceOf[CreateOriginAccessControlResult]
   }
   
-  extension [Self <: CreateOriginAccessControlResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateOriginAccessControlResult] (val x: Self) extends AnyVal {
     
     inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     

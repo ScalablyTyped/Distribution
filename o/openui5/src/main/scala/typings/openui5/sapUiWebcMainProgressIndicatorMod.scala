@@ -389,7 +389,8 @@ object sapUiWebcMainProgressIndicatorMod {
       __obj.asInstanceOf[ProgressIndicatorSettings]
     }
     
-    extension [Self <: ProgressIndicatorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressIndicatorSettings] (val x: Self) extends AnyVal {
       
       inline def setDisplayValue(value: String | PropertyBindingInfo): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
       

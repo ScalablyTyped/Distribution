@@ -39,7 +39,8 @@ object GoogleCloudRunV2ExecutionTemplate {
     __obj.asInstanceOf[GoogleCloudRunV2ExecutionTemplate]
   }
   
-  extension [Self <: GoogleCloudRunV2ExecutionTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRunV2ExecutionTemplate] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

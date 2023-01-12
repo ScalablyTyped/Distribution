@@ -25,7 +25,8 @@ object ArrayTypeAnnotation_ {
     __obj.asInstanceOf[ArrayTypeAnnotation_]
   }
   
-  extension [Self <: ArrayTypeAnnotation_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayTypeAnnotation_] (val x: Self) extends AnyVal {
     
     inline def setElementType(value: FlowType): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     

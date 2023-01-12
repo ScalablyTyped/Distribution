@@ -63,7 +63,8 @@ object namespacesScriptingMod {
         __obj.asInstanceOf[CSSInjection]
       }
       
-      extension [Self <: CSSInjection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CSSInjection] (val x: Self) extends AnyVal {
         
         inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
         
@@ -114,7 +115,8 @@ object namespacesScriptingMod {
         __obj.asInstanceOf[ContentScriptFilter]
       }
       
-      extension [Self <: ContentScriptFilter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ContentScriptFilter] (val x: Self) extends AnyVal {
         
         inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
         
@@ -165,7 +167,8 @@ object namespacesScriptingMod {
         __obj.asInstanceOf[InjectionResult]
       }
       
-      extension [Self <: InjectionResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InjectionResult] (val x: Self) extends AnyVal {
         
         inline def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
         
@@ -200,7 +203,8 @@ object namespacesScriptingMod {
         __obj.asInstanceOf[InjectionResultErrorType]
       }
       
-      extension [Self <: InjectionResultErrorType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InjectionResultErrorType] (val x: Self) extends AnyVal {
         
         inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       }
@@ -236,7 +240,8 @@ object namespacesScriptingMod {
         __obj.asInstanceOf[InjectionTarget]
       }
       
-      extension [Self <: InjectionTarget](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InjectionTarget] (val x: Self) extends AnyVal {
         
         inline def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
         
@@ -314,7 +319,8 @@ object namespacesScriptingMod {
         __obj.asInstanceOf[RegisteredContentScript]
       }
       
-      extension [Self <: RegisteredContentScript](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RegisteredContentScript] (val x: Self) extends AnyVal {
         
         inline def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
         
@@ -408,7 +414,8 @@ object namespacesScriptingMod {
         __obj.asInstanceOf[ScriptInjection]
       }
       
-      extension [Self <: ScriptInjection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ScriptInjection] (val x: Self) extends AnyVal {
         
         inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         

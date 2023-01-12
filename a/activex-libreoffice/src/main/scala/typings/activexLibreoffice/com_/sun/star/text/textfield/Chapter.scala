@@ -61,7 +61,8 @@ object Chapter {
     __obj.asInstanceOf[Chapter]
   }
   
-  extension [Self <: Chapter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Chapter] (val x: Self) extends AnyVal {
     
     inline def setChapterFormat(value: Double): Self = StObject.set(x, "ChapterFormat", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object IOS {
     __obj.asInstanceOf[IOS]
   }
   
-  extension [Self <: IOS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOS] (val x: Self) extends AnyVal {
     
     inline def setAndroid(
       value: ComponentType[PickRemoveChildrenComponeBorderless] & (NonReactStatics[

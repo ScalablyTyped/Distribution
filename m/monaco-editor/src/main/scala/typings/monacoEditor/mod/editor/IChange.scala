@@ -26,7 +26,8 @@ object IChange {
     __obj.asInstanceOf[IChange]
   }
   
-  extension [Self <: IChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IChange] (val x: Self) extends AnyVal {
     
     inline def setModifiedEndLineNumber(value: Double): Self = StObject.set(x, "modifiedEndLineNumber", value.asInstanceOf[js.Any])
     

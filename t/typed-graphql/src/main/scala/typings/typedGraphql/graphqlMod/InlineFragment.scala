@@ -26,7 +26,8 @@ object InlineFragment {
     __obj.asInstanceOf[InlineFragment]
   }
   
-  extension [Self <: InlineFragment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineFragment] (val x: Self) extends AnyVal {
     
     inline def setDirectives(value: js.Array[Directive]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     

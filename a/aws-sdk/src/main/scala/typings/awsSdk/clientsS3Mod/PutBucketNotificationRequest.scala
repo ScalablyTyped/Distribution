@@ -38,7 +38,8 @@ object PutBucketNotificationRequest {
     __obj.asInstanceOf[PutBucketNotificationRequest]
   }
   
-  extension [Self <: PutBucketNotificationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutBucketNotificationRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

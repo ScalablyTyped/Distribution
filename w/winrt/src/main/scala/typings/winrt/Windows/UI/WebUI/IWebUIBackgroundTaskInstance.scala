@@ -15,7 +15,8 @@ object IWebUIBackgroundTaskInstance {
     __obj.asInstanceOf[IWebUIBackgroundTaskInstance]
   }
   
-  extension [Self <: IWebUIBackgroundTaskInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebUIBackgroundTaskInstance] (val x: Self) extends AnyVal {
     
     inline def setSucceeded(value: Boolean): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
   }

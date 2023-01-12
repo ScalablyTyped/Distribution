@@ -17,7 +17,8 @@ object DropDownListAnimationOpen {
     __obj.asInstanceOf[DropDownListAnimationOpen]
   }
   
-  extension [Self <: DropDownListAnimationOpen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropDownListAnimationOpen] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

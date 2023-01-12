@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[ToDate]
     }
     
-    extension [Self <: ToDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToDate] (val x: Self) extends AnyVal {
       
       inline def setToDate(value: () => js.Date): Self = StObject.set(x, "toDate", js.Any.fromFunction0(value))
       

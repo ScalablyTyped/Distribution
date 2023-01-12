@@ -19,7 +19,8 @@ object CurEventTarget {
     __obj.asInstanceOf[CurEventTarget]
   }
   
-  extension [Self <: CurEventTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurEventTarget] (val x: Self) extends AnyVal {
     
     inline def setCurEventTarget(value: typings.std.EventTarget): Self = StObject.set(x, "curEventTarget", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object EndKey {
     __obj.asInstanceOf[EndKey[K]]
   }
   
-  extension [Self <: EndKey[?], K](x: Self & EndKey[K]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndKey[?], K] (val x: Self & EndKey[K]) extends AnyVal {
     
     inline def setEndIndex(value: ColumnNumber): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     

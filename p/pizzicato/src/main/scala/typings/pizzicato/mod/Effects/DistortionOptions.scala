@@ -17,7 +17,8 @@ object DistortionOptions {
     __obj.asInstanceOf[DistortionOptions]
   }
   
-  extension [Self <: DistortionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistortionOptions] (val x: Self) extends AnyVal {
     
     inline def setGain(value: Double): Self = StObject.set(x, "gain", value.asInstanceOf[js.Any])
     

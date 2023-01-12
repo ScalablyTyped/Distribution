@@ -38,7 +38,8 @@ object Scte35DeliveryRestrictions {
     __obj.asInstanceOf[Scte35DeliveryRestrictions]
   }
   
-  extension [Self <: Scte35DeliveryRestrictions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scte35DeliveryRestrictions] (val x: Self) extends AnyVal {
     
     inline def setArchiveAllowedFlag(value: Scte35ArchiveAllowedFlag): Self = StObject.set(x, "ArchiveAllowedFlag", value.asInstanceOf[js.Any])
     

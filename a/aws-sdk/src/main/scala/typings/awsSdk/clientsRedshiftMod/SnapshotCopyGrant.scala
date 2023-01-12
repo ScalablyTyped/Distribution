@@ -28,7 +28,8 @@ object SnapshotCopyGrant {
     __obj.asInstanceOf[SnapshotCopyGrant]
   }
   
-  extension [Self <: SnapshotCopyGrant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotCopyGrant] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     

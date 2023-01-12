@@ -32,7 +32,8 @@ object IVBSAXErrorHandler {
     __obj.asInstanceOf[IVBSAXErrorHandler]
   }
   
-  extension [Self <: IVBSAXErrorHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVBSAXErrorHandler] (val x: Self) extends AnyVal {
     
     inline def setError(value: (IVBSAXLocator, String, Double) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
     

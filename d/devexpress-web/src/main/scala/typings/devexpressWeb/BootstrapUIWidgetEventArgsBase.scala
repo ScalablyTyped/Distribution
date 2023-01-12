@@ -28,7 +28,8 @@ object BootstrapUIWidgetEventArgsBase {
     __obj.asInstanceOf[BootstrapUIWidgetEventArgsBase]
   }
   
-  extension [Self <: BootstrapUIWidgetEventArgsBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapUIWidgetEventArgsBase] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object SampleTransform {
     __obj.asInstanceOf[SampleTransform]
   }
   
-  extension [Self <: SampleTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SampleTransform] (val x: Self) extends AnyVal {
     
     inline def setSize(value: Double | SignalRef): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

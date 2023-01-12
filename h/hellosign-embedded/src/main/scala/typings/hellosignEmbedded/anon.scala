@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[CcEmailAddresses]
     }
     
-    extension [Self <: CcEmailAddresses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CcEmailAddresses] (val x: Self) extends AnyVal {
       
       inline def setCcEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "ccEmailAddresses", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object anon {
       __obj.asInstanceOf[CcRoles]
     }
     
-    extension [Self <: CcRoles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CcRoles] (val x: Self) extends AnyVal {
       
       inline def setCcRoles(value: String): Self = StObject.set(x, "ccRoles", value.asInstanceOf[js.Any])
       

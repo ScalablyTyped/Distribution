@@ -25,7 +25,8 @@ object RawSignatureAsync {
     __obj.asInstanceOf[RawSignatureAsync]
   }
   
-  extension [Self <: RawSignatureAsync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawSignatureAsync] (val x: Self) extends AnyVal {
     
     inline def setSignHash(
       value: /* import warning: importer.ImportType#apply Failed type conversion: (hash : cadesplugin.CAdESCOM.CPHashedData, certificate : string | undefined): string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<(hash : cadesplugin.CAdESCOM.CPHashedData, certificate : string | undefined): string> : // tslint:disable-line ban-types

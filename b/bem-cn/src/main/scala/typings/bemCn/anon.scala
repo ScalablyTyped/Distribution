@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[PartialBemSettings]
     }
     
-    extension [Self <: PartialBemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialBemSettings] (val x: Self) extends AnyVal {
       
       inline def setClassMap(value: Record[String, String]): Self = StObject.set(x, "classMap", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object ProviderEvent {
     __obj.asInstanceOf[ProviderEvent]
   }
   
-  extension [Self <: ProviderEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProviderEvent] (val x: Self) extends AnyVal {
     
     inline def setName(value: PROVIDER): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

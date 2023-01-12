@@ -31,7 +31,8 @@ object MessageSecurityState {
     __obj.asInstanceOf[MessageSecurityState]
   }
   
-  extension [Self <: MessageSecurityState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageSecurityState] (val x: Self) extends AnyVal {
     
     inline def setConnectingIP(value: NullableOption[String]): Self = StObject.set(x, "connectingIP", value.asInstanceOf[js.Any])
     

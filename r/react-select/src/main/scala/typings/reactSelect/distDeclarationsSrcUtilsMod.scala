@@ -169,7 +169,8 @@ object distDeclarationsSrcUtilsMod {
       __obj.asInstanceOf[RectType]
     }
     
-    extension [Self <: RectType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RectType] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFormatter(value: /* name */ String => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
       
@@ -123,7 +124,8 @@ object mod {
       __obj.asInstanceOf[ShortCssVars]
     }
     
-    extension [Self <: ShortCssVars](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShortCssVars] (val x: Self) extends AnyVal {
       
       inline def setGetMap(value: () => StringDictionary[String]): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))
       

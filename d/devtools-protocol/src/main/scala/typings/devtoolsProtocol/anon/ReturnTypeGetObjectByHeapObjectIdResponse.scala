@@ -19,7 +19,8 @@ object ReturnTypeGetObjectByHeapObjectIdResponse {
     __obj.asInstanceOf[ReturnTypeGetObjectByHeapObjectIdResponse]
   }
   
-  extension [Self <: ReturnTypeGetObjectByHeapObjectIdResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetObjectByHeapObjectIdResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetObjectByHeapObjectIdRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

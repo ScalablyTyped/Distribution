@@ -37,7 +37,8 @@ object ReadonlyPickerProps {
     __obj.asInstanceOf[ReadonlyPickerProps]
   }
   
-  extension [Self <: ReadonlyPickerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyPickerProps] (val x: Self) extends AnyVal {
     
     inline def setDefaultSelectedValue(value: Any): Self = StObject.set(x, "defaultSelectedValue", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object IUSER_VARIABLES_UPDATE {
     __obj.asInstanceOf[IUSER_VARIABLES_UPDATE]
   }
   
-  extension [Self <: IUSER_VARIABLES_UPDATE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUSER_VARIABLES_UPDATE] (val x: Self) extends AnyVal {
     
     inline def setChangedVars(value: js.Array[String]): Self = StObject.set(x, "changedVars", value.asInstanceOf[js.Any])
     

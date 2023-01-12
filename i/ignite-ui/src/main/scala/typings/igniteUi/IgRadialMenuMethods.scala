@@ -69,7 +69,8 @@ object IgRadialMenuMethods {
     __obj.asInstanceOf[IgRadialMenuMethods]
   }
   
-  extension [Self <: IgRadialMenuMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgRadialMenuMethods] (val x: Self) extends AnyVal {
     
     inline def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     

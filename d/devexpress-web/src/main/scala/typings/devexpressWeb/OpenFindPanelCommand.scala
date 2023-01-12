@@ -23,7 +23,8 @@ object OpenFindPanelCommand {
     __obj.asInstanceOf[OpenFindPanelCommand]
   }
   
-  extension [Self <: OpenFindPanelCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenFindPanelCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

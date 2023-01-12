@@ -20,7 +20,8 @@ object OnGetNextScrollableMonths {
     __obj.asInstanceOf[OnGetNextScrollableMonths]
   }
   
-  extension [Self <: OnGetNextScrollableMonths](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnGetNextScrollableMonths] (val x: Self) extends AnyVal {
     
     inline def setOrientation(value: OrientationShape): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     

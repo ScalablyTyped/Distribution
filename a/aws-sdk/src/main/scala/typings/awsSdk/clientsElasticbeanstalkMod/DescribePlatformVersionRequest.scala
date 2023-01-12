@@ -18,7 +18,8 @@ object DescribePlatformVersionRequest {
     __obj.asInstanceOf[DescribePlatformVersionRequest]
   }
   
-  extension [Self <: DescribePlatformVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePlatformVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setPlatformArn(value: PlatformArn): Self = StObject.set(x, "PlatformArn", value.asInstanceOf[js.Any])
     

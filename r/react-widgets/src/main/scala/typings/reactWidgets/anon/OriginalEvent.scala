@@ -29,7 +29,8 @@ object OriginalEvent {
     __obj.asInstanceOf[OriginalEvent[TDataItem]]
   }
   
-  extension [Self <: OriginalEvent[?], TDataItem](x: Self & OriginalEvent[TDataItem]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginalEvent[?], TDataItem] (val x: Self & OriginalEvent[TDataItem]) extends AnyVal {
     
     inline def setAction(value: insert | remove): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object InputTypesBoolean {
     __obj.asInstanceOf[InputTypesBoolean]
   }
   
-  extension [Self <: InputTypesBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputTypesBoolean] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

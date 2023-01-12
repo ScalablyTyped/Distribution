@@ -91,7 +91,8 @@ object distTs3Dot9LibStoriesMod {
       __obj.asInstanceOf[Group]
     }
     
-    extension [Self <: Group](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
       
       inline def setChildren(
         value: js.Array[
@@ -244,7 +245,8 @@ object distTs3Dot9LibStoriesMod {
       __obj.asInstanceOf[Root]
     }
     
-    extension [Self <: Root](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Root] (val x: Self) extends AnyVal {
       
       inline def setChildren(
         value: js.Array[
@@ -357,7 +359,8 @@ object distTs3Dot9LibStoriesMod {
       __obj.asInstanceOf[Story]
     }
     
-    extension [Self <: Story](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Story] (val x: Self) extends AnyVal {
       
       inline def setArgTypes(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ArgTypes */ Any
@@ -451,7 +454,8 @@ object distTs3Dot9LibStoriesMod {
       __obj.asInstanceOf[StoryIndex]
     }
     
-    extension [Self <: StoryIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoryIndex] (val x: Self) extends AnyVal {
       
       inline def setStories(
         value: Record[
@@ -488,7 +492,8 @@ object distTs3Dot9LibStoriesMod {
       __obj.asInstanceOf[StoryIndexStory]
     }
     
-    extension [Self <: StoryIndexStory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoryIndexStory] (val x: Self) extends AnyVal {
       
       inline def setId(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any
@@ -542,7 +547,8 @@ object distTs3Dot9LibStoriesMod {
       __obj.asInstanceOf[StoryInput]
     }
     
-    extension [Self <: StoryInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoryInput] (val x: Self) extends AnyVal {
       
       inline def setArgs(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Args */ Any

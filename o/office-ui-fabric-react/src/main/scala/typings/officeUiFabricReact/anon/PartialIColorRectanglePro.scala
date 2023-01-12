@@ -52,7 +52,8 @@ object PartialIColorRectanglePro {
     __obj.asInstanceOf[PartialIColorRectanglePro]
   }
   
-  extension [Self <: PartialIColorRectanglePro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIColorRectanglePro] (val x: Self) extends AnyVal {
     
     inline def setAriaDescription(value: String): Self = StObject.set(x, "ariaDescription", value.asInstanceOf[js.Any])
     

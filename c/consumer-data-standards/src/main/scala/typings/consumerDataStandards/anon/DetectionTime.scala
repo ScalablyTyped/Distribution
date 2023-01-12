@@ -45,7 +45,8 @@ object DetectionTime {
     __obj.asInstanceOf[DetectionTime]
   }
   
-  extension [Self <: DetectionTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectionTime] (val x: Self) extends AnyVal {
     
     inline def setDetectionTime(value: String): Self = StObject.set(x, "detectionTime", value.asInstanceOf[js.Any])
     

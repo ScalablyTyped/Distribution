@@ -36,7 +36,8 @@ object PropsWithChildrenwidthnum {
     __obj.asInstanceOf[PropsWithChildrenwidthnum]
   }
   
-  extension [Self <: PropsWithChildrenwidthnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsWithChildrenwidthnum] (val x: Self) extends AnyVal {
     
     inline def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
     

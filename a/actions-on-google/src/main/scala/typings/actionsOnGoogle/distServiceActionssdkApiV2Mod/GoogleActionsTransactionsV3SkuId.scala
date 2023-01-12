@@ -29,7 +29,8 @@ object GoogleActionsTransactionsV3SkuId {
     __obj.asInstanceOf[GoogleActionsTransactionsV3SkuId]
   }
   
-  extension [Self <: GoogleActionsTransactionsV3SkuId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsTransactionsV3SkuId] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

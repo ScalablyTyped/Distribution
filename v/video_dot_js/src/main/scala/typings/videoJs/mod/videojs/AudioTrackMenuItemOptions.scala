@@ -17,7 +17,8 @@ object AudioTrackMenuItemOptions {
     __obj.asInstanceOf[AudioTrackMenuItemOptions]
   }
   
-  extension [Self <: AudioTrackMenuItemOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioTrackMenuItemOptions] (val x: Self) extends AnyVal {
     
     inline def setTrack(value: VideojsAudioTrack): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     

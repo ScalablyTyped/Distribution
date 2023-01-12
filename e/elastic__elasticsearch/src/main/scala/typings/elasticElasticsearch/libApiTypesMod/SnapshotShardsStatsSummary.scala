@@ -28,7 +28,8 @@ object SnapshotShardsStatsSummary {
     __obj.asInstanceOf[SnapshotShardsStatsSummary]
   }
   
-  extension [Self <: SnapshotShardsStatsSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotShardsStatsSummary] (val x: Self) extends AnyVal {
     
     inline def setIncremental(value: SnapshotShardsStatsSummaryItem): Self = StObject.set(x, "incremental", value.asInstanceOf[js.Any])
     

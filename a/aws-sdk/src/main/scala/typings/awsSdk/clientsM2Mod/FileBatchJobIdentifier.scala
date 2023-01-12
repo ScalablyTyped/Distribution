@@ -23,7 +23,8 @@ object FileBatchJobIdentifier {
     __obj.asInstanceOf[FileBatchJobIdentifier]
   }
   
-  extension [Self <: FileBatchJobIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileBatchJobIdentifier] (val x: Self) extends AnyVal {
     
     inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Teamwork {
     __obj.asInstanceOf[Teamwork]
   }
   
-  extension [Self <: Teamwork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Teamwork] (val x: Self) extends AnyVal {
     
     inline def setWorkforceIntegrations(value: NullableOption[js.Array[WorkforceIntegration]]): Self = StObject.set(x, "workforceIntegrations", value.asInstanceOf[js.Any])
     

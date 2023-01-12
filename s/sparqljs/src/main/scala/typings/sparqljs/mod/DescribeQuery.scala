@@ -23,7 +23,8 @@ object DescribeQuery {
     __obj.asInstanceOf[DescribeQuery]
   }
   
-  extension [Self <: DescribeQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeQuery] (val x: Self) extends AnyVal {
     
     inline def setQueryType(value: DESCRIBE): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
     

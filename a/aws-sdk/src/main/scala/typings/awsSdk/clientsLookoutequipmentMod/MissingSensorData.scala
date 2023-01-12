@@ -23,7 +23,8 @@ object MissingSensorData {
     __obj.asInstanceOf[MissingSensorData]
   }
   
-  extension [Self <: MissingSensorData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MissingSensorData] (val x: Self) extends AnyVal {
     
     inline def setAffectedSensorCount(value: Integer): Self = StObject.set(x, "AffectedSensorCount", value.asInstanceOf[js.Any])
     

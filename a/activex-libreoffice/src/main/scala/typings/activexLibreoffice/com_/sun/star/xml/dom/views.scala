@@ -29,7 +29,8 @@ object views {
       __obj.asInstanceOf[XAbstractView]
     }
     
-    extension [Self <: XAbstractView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XAbstractView] (val x: Self) extends AnyVal {
       
       inline def setDocument(value: XDocumentView): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object views {
       __obj.asInstanceOf[XDocumentView]
     }
     
-    extension [Self <: XDocumentView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XDocumentView] (val x: Self) extends AnyVal {
       
       inline def setDefaultView(value: XAbstractView): Self = StObject.set(x, "DefaultView", value.asInstanceOf[js.Any])
       

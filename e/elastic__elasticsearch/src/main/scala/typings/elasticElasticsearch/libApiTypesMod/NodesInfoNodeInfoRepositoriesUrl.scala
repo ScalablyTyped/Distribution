@@ -15,7 +15,8 @@ object NodesInfoNodeInfoRepositoriesUrl {
     __obj.asInstanceOf[NodesInfoNodeInfoRepositoriesUrl]
   }
   
-  extension [Self <: NodesInfoNodeInfoRepositoriesUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoRepositoriesUrl] (val x: Self) extends AnyVal {
     
     inline def setAllowed_urls(value: String): Self = StObject.set(x, "allowed_urls", value.asInstanceOf[js.Any])
   }

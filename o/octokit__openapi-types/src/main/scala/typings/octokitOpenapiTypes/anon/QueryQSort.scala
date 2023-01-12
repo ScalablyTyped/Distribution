@@ -15,7 +15,8 @@ object QueryQSort {
     __obj.asInstanceOf[QueryQSort]
   }
   
-  extension [Self <: QueryQSort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryQSort] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: QSort): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

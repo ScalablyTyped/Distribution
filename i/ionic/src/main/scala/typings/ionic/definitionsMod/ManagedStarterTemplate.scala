@@ -22,7 +22,8 @@ object ManagedStarterTemplate {
     __obj.asInstanceOf[ManagedStarterTemplate]
   }
   
-  extension [Self <: ManagedStarterTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedStarterTemplate] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

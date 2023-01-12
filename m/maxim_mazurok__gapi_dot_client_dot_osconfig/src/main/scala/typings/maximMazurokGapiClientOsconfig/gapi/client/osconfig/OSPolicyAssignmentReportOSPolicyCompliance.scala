@@ -33,7 +33,8 @@ object OSPolicyAssignmentReportOSPolicyCompliance {
     __obj.asInstanceOf[OSPolicyAssignmentReportOSPolicyCompliance]
   }
   
-  extension [Self <: OSPolicyAssignmentReportOSPolicyCompliance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPolicyAssignmentReportOSPolicyCompliance] (val x: Self) extends AnyVal {
     
     inline def setComplianceState(value: String): Self = StObject.set(x, "complianceState", value.asInstanceOf[js.Any])
     

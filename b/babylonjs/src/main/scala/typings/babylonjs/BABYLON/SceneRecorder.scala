@@ -43,7 +43,8 @@ object SceneRecorder {
     __obj.asInstanceOf[SceneRecorder]
   }
   
-  extension [Self <: SceneRecorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneRecorder] (val x: Self) extends AnyVal {
     
     inline def setGetDelta(value: () => Any): Self = StObject.set(x, "getDelta", js.Any.fromFunction0(value))
     

@@ -30,7 +30,8 @@ object ResultSetStats {
     __obj.asInstanceOf[ResultSetStats]
   }
   
-  extension [Self <: ResultSetStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultSetStats] (val x: Self) extends AnyVal {
     
     inline def setQueryPlan(value: QueryPlan): Self = StObject.set(x, "queryPlan", value.asInstanceOf[js.Any])
     

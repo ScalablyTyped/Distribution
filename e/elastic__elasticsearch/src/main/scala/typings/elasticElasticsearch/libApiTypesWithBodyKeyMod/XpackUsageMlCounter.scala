@@ -15,7 +15,8 @@ object XpackUsageMlCounter {
     __obj.asInstanceOf[XpackUsageMlCounter]
   }
   
-  extension [Self <: XpackUsageMlCounter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageMlCounter] (val x: Self) extends AnyVal {
     
     inline def setCount(value: long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
   }

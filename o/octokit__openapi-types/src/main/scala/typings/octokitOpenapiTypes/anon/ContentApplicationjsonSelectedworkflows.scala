@@ -15,7 +15,8 @@ object ContentApplicationjsonSelectedworkflows {
     __obj.asInstanceOf[ContentApplicationjsonSelectedworkflows]
   }
   
-  extension [Self <: ContentApplicationjsonSelectedworkflows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonSelectedworkflows] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonSelectedworkflows): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

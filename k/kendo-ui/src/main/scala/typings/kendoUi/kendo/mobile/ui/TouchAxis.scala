@@ -23,7 +23,8 @@ object TouchAxis {
     __obj.asInstanceOf[TouchAxis]
   }
   
-  extension [Self <: TouchAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchAxis] (val x: Self) extends AnyVal {
     
     inline def setClient(value: Double): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

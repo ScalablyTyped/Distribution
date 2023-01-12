@@ -84,7 +84,8 @@ object `3rdpartyWalkontableSrcCellCoordsMod` {
       __obj.asInstanceOf[CellCoords]
     }
     
-    extension [Self <: CellCoords](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellCoords] (val x: Self) extends AnyVal {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       

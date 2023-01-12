@@ -44,7 +44,8 @@ object dxFormEmptyItem {
     __obj.asInstanceOf[dxFormEmptyItem]
   }
   
-  extension [Self <: dxFormEmptyItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxFormEmptyItem] (val x: Self) extends AnyVal {
     
     inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object AutoprovisioningNodePoolDefaults {
     __obj.asInstanceOf[AutoprovisioningNodePoolDefaults]
   }
   
-  extension [Self <: AutoprovisioningNodePoolDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoprovisioningNodePoolDefaults] (val x: Self) extends AnyVal {
     
     inline def setBootDiskKmsKey(value: String): Self = StObject.set(x, "bootDiskKmsKey", value.asInstanceOf[js.Any])
     

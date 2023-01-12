@@ -44,7 +44,8 @@ object MessageEnvelopeObject {
     __obj.asInstanceOf[MessageEnvelopeObject]
   }
   
-  extension [Self <: MessageEnvelopeObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageEnvelopeObject] (val x: Self) extends AnyVal {
     
     inline def setBcc(value: js.Array[MessageAddressObject]): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
     

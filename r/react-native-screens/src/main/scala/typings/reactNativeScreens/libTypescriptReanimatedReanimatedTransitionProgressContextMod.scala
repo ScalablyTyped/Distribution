@@ -28,7 +28,8 @@ object libTypescriptReanimatedReanimatedTransitionProgressContextMod extends Sho
       __obj.asInstanceOf[ReanimatedTransitionProgressContextBody]
     }
     
-    extension [Self <: ReanimatedTransitionProgressContextBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReanimatedTransitionProgressContextBody] (val x: Self) extends AnyVal {
       
       inline def setClosing(value: SharedValue[Double]): Self = StObject.set(x, "closing", value.asInstanceOf[js.Any])
       

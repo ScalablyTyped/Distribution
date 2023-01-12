@@ -19,7 +19,8 @@ object RangeUnderflow {
     __obj.asInstanceOf[RangeUnderflow]
   }
   
-  extension [Self <: RangeUnderflow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeUnderflow] (val x: Self) extends AnyVal {
     
     inline def setExact(value: String): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     

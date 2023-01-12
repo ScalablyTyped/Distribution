@@ -40,7 +40,8 @@ object OnPremisesConfiguration {
     __obj.asInstanceOf[OnPremisesConfiguration]
   }
   
-  extension [Self <: OnPremisesConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnPremisesConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCaCertificate(value: String): Self = StObject.set(x, "caCertificate", value.asInstanceOf[js.Any])
     

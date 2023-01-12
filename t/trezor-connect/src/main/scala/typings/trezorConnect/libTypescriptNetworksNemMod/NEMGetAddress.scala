@@ -21,7 +21,8 @@ object NEMGetAddress {
     __obj.asInstanceOf[NEMGetAddress]
   }
   
-  extension [Self <: NEMGetAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NEMGetAddress] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

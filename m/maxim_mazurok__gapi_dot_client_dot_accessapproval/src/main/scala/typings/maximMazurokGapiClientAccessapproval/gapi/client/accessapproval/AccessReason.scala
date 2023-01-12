@@ -19,7 +19,8 @@ object AccessReason {
     __obj.asInstanceOf[AccessReason]
   }
   
-  extension [Self <: AccessReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessReason] (val x: Self) extends AnyVal {
     
     inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     

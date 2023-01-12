@@ -22,7 +22,8 @@ object UpdateTableParams {
     __obj.asInstanceOf[UpdateTableParams]
   }
   
-  extension [Self <: UpdateTableParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTableParams] (val x: Self) extends AnyVal {
     
     inline def setReservedThroughput(value: ReservedThroughput): Self = StObject.set(x, "reservedThroughput", value.asInstanceOf[js.Any])
     

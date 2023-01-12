@@ -56,7 +56,8 @@ object XEditable {
     __obj.asInstanceOf[XEditable]
   }
   
-  extension [Self <: XEditable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEditable] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: () => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
     

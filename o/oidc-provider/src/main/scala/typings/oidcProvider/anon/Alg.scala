@@ -18,7 +18,8 @@ object Alg {
     __obj.asInstanceOf[Alg]
   }
   
-  extension [Self <: Alg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Alg] (val x: Self) extends AnyVal {
     
     inline def setAlg(value: AsymmetricSigningAlgorithm): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
     

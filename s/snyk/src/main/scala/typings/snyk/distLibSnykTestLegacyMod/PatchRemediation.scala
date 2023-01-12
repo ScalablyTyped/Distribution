@@ -15,7 +15,8 @@ object PatchRemediation {
     __obj.asInstanceOf[PatchRemediation]
   }
   
-  extension [Self <: PatchRemediation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchRemediation] (val x: Self) extends AnyVal {
     
     inline def setPaths(value: js.Array[PatchObject]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     

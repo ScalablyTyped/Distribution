@@ -40,7 +40,8 @@ object XOOXMLDocumentPropertiesImporter {
     __obj.asInstanceOf[XOOXMLDocumentPropertiesImporter]
   }
   
-  extension [Self <: XOOXMLDocumentPropertiesImporter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XOOXMLDocumentPropertiesImporter] (val x: Self) extends AnyVal {
     
     inline def setImportProperties(value: (XStorage, XDocumentProperties) => Unit): Self = StObject.set(x, "importProperties", js.Any.fromFunction2(value))
   }

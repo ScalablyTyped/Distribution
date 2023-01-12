@@ -30,7 +30,8 @@ object XRLayerInit {
     __obj.asInstanceOf[XRLayerInit]
   }
   
-  extension [Self <: XRLayerInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRLayerInit] (val x: Self) extends AnyVal {
     
     inline def setColorFormat(value: GLenum): Self = StObject.set(x, "colorFormat", value.asInstanceOf[js.Any])
     

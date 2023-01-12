@@ -20,7 +20,8 @@ object SupportingWidgetDefaultsFeatureForm {
     __obj.asInstanceOf[SupportingWidgetDefaultsFeatureForm]
   }
   
-  extension [Self <: SupportingWidgetDefaultsFeatureForm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportingWidgetDefaultsFeatureForm] (val x: Self) extends AnyVal {
     
     inline def setGroupDisplay(value: String): Self = StObject.set(x, "groupDisplay", value.asInstanceOf[js.Any])
     

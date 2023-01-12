@@ -68,7 +68,8 @@ object Resolver {
     __obj.asInstanceOf[Resolver]
   }
   
-  extension [Self <: Resolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resolver] (val x: Self) extends AnyVal {
     
     inline def setCachingConfig(value: CachingConfig): Self = StObject.set(x, "cachingConfig", value.asInstanceOf[js.Any])
     

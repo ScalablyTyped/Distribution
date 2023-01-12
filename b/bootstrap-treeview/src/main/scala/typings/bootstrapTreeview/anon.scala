@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Checked]
     }
     
-    extension [Self <: Checked](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Checked] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       

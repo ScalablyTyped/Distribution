@@ -48,7 +48,8 @@ object sourceCartoDBMod {
       __obj.asInstanceOf[CartoDBLayerInfo]
     }
     
-    extension [Self <: CartoDBLayerInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CartoDBLayerInfo] (val x: Self) extends AnyVal {
       
       inline def setCdn_url(value: Any): Self = StObject.set(x, "cdn_url", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object sourceCartoDBMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       

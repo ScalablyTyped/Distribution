@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[ContentSecurityPolicy]
     }
     
-    extension [Self <: ContentSecurityPolicy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentSecurityPolicy] (val x: Self) extends AnyVal {
       
       inline def setContentSecurityPolicy(value: Boolean): Self = StObject.set(x, "contentSecurityPolicy", value.asInstanceOf[js.Any])
     }

@@ -20,7 +20,8 @@ object AspectRating {
     __obj.asInstanceOf[AspectRating]
   }
   
-  extension [Self <: AspectRating](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AspectRating] (val x: Self) extends AnyVal {
     
     inline def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     

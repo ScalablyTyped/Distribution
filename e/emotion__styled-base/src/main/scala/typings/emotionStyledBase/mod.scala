@@ -1413,7 +1413,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[StyledOptions]
     }
     
-    extension [Self <: StyledOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledOptions] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

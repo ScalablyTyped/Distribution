@@ -73,7 +73,8 @@ object componentsMediaUploadMod {
         __obj.asInstanceOf[Props[T]]
       }
       
-      extension [Self <: Props[?], T /* <: Boolean */](x: Self & Props[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props[?], T /* <: Boolean */] (val x: Self & Props[T]) extends AnyVal {
         
         inline def setAddToGallery(value: Boolean): Self = StObject.set(x, "addToGallery", value.asInstanceOf[js.Any])
         

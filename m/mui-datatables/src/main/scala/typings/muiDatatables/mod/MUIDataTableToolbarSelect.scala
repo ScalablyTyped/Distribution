@@ -26,7 +26,8 @@ object MUIDataTableToolbarSelect {
     __obj.asInstanceOf[MUIDataTableToolbarSelect]
   }
   
-  extension [Self <: MUIDataTableToolbarSelect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableToolbarSelect] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object libFallbackProviderMod {
       __obj.asInstanceOf[FallbackProviderConfig]
     }
     
-    extension [Self <: FallbackProviderConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FallbackProviderConfig] (val x: Self) extends AnyVal {
       
       inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       

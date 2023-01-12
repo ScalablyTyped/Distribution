@@ -21,7 +21,8 @@ object distLibTypesMod {
       __obj.asInstanceOf[FunctionCov]
     }
     
-    extension [Self <: FunctionCov](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionCov] (val x: Self) extends AnyVal {
       
       inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object distLibTypesMod {
       __obj.asInstanceOf[ProcessCov]
     }
     
-    extension [Self <: ProcessCov](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessCov] (val x: Self) extends AnyVal {
       
       inline def setResult(value: js.Array[ScriptCov]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
@@ -65,7 +67,8 @@ object distLibTypesMod {
       __obj.asInstanceOf[Range]
     }
     
-    extension [Self <: Range](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -88,7 +91,8 @@ object distLibTypesMod {
       __obj.asInstanceOf[RangeCov]
     }
     
-    extension [Self <: RangeCov](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeCov] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -113,7 +117,8 @@ object distLibTypesMod {
       __obj.asInstanceOf[ScriptCov]
     }
     
-    extension [Self <: ScriptCov](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptCov] (val x: Self) extends AnyVal {
       
       inline def setFunctions(value: js.Array[FunctionCov]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
       

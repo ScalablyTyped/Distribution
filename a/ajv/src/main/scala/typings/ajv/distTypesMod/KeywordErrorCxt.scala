@@ -53,7 +53,8 @@ object KeywordErrorCxt {
     __obj.asInstanceOf[KeywordErrorCxt]
   }
   
-  extension [Self <: KeywordErrorCxt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeywordErrorCxt] (val x: Self) extends AnyVal {
     
     inline def set$data(value: String | `false`): Self = StObject.set(x, "$data", value.asInstanceOf[js.Any])
     

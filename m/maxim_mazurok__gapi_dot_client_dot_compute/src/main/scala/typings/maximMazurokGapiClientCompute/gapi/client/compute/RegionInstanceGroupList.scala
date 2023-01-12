@@ -35,7 +35,8 @@ object RegionInstanceGroupList {
     __obj.asInstanceOf[RegionInstanceGroupList]
   }
   
-  extension [Self <: RegionInstanceGroupList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionInstanceGroupList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

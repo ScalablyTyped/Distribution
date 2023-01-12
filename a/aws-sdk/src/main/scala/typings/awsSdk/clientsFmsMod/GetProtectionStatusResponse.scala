@@ -33,7 +33,8 @@ object GetProtectionStatusResponse {
     __obj.asInstanceOf[GetProtectionStatusResponse]
   }
   
-  extension [Self <: GetProtectionStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetProtectionStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setAdminAccountId(value: AWSAccountId): Self = StObject.set(x, "AdminAccountId", value.asInstanceOf[js.Any])
     

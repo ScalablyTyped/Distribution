@@ -28,7 +28,8 @@ object InterconnectAttachmentPartnerMetadata {
     __obj.asInstanceOf[InterconnectAttachmentPartnerMetadata]
   }
   
-  extension [Self <: InterconnectAttachmentPartnerMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterconnectAttachmentPartnerMetadata] (val x: Self) extends AnyVal {
     
     inline def setInterconnectName(value: String): Self = StObject.set(x, "interconnectName", value.asInstanceOf[js.Any])
     

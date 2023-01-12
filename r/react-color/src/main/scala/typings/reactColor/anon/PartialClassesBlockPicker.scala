@@ -16,7 +16,8 @@ object PartialClassesBlockPicker {
     __obj.asInstanceOf[PartialClassesBlockPicker]
   }
   
-  extension [Self <: PartialClassesBlockPicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassesBlockPicker] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: PartialBlockPickerStylesP): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

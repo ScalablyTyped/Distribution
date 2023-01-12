@@ -18,7 +18,8 @@ object IPv6CidrRange {
     __obj.asInstanceOf[IPv6CidrRange]
   }
   
-  extension [Self <: IPv6CidrRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPv6CidrRange] (val x: Self) extends AnyVal {
     
     inline def setCidrAddress(value: String): Self = StObject.set(x, "cidrAddress", value.asInstanceOf[js.Any])
     

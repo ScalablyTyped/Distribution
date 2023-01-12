@@ -38,7 +38,8 @@ object RTCDataChannelEventMap {
     __obj.asInstanceOf[RTCDataChannelEventMap]
   }
   
-  extension [Self <: RTCDataChannelEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCDataChannelEventMap] (val x: Self) extends AnyVal {
     
     inline def setBufferedamountlow(value: Event): Self = StObject.set(x, "bufferedamountlow", value.asInstanceOf[js.Any])
     

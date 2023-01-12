@@ -19,7 +19,8 @@ object libIstyleoptionsMod {
       __obj.asInstanceOf[IStyleOptions]
     }
     
-    extension [Self <: IStyleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStyleOptions] (val x: Self) extends AnyVal {
       
       inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       

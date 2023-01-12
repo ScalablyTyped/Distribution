@@ -43,7 +43,8 @@ object Record {
     __obj.asInstanceOf[Record]
   }
   
-  extension [Self <: Record](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
     
     inline def setDeviceLastModifiedDate(value: js.Date): Self = StObject.set(x, "DeviceLastModifiedDate", value.asInstanceOf[js.Any])
     

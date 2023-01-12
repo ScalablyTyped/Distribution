@@ -16,7 +16,8 @@ object ClientCert {
     __obj.asInstanceOf[ClientCert]
   }
   
-  extension [Self <: ClientCert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientCert] (val x: Self) extends AnyVal {
     
     inline def setClientCert(value: APIGatewayEventClientCertificate): Self = StObject.set(x, "clientCert", value.asInstanceOf[js.Any])
   }

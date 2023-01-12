@@ -28,7 +28,8 @@ object DeleteFleetSuccessItem {
     __obj.asInstanceOf[DeleteFleetSuccessItem]
   }
   
-  extension [Self <: DeleteFleetSuccessItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFleetSuccessItem] (val x: Self) extends AnyVal {
     
     inline def setCurrentFleetState(value: FleetStateCode): Self = StObject.set(x, "CurrentFleetState", value.asInstanceOf[js.Any])
     

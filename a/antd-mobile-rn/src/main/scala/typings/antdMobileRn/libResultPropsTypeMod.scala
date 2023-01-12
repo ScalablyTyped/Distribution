@@ -32,7 +32,8 @@ object libResultPropsTypeMod {
       __obj.asInstanceOf[ResultPropsType]
     }
     
-    extension [Self <: ResultPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultPropsType] (val x: Self) extends AnyVal {
       
       inline def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
       

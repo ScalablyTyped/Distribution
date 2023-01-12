@@ -18,7 +18,8 @@ object EsamSignalProcessingNotification {
     __obj.asInstanceOf[EsamSignalProcessingNotification]
   }
   
-  extension [Self <: EsamSignalProcessingNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EsamSignalProcessingNotification] (val x: Self) extends AnyVal {
     
     inline def setSccXml(value: stringPatternSNSignalProcessingNotificationNS): Self = StObject.set(x, "SccXml", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object WaveShaperOptions {
     __obj.asInstanceOf[WaveShaperOptions]
   }
   
-  extension [Self <: WaveShaperOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaveShaperOptions] (val x: Self) extends AnyVal {
     
     inline def setCurve(value: js.Array[Double] | js.typedarray.Float32Array): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     

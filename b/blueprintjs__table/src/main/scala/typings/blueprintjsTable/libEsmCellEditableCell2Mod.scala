@@ -188,7 +188,8 @@ object libEsmCellEditableCell2Mod {
       __obj.asInstanceOf[EditableCell2Props]
     }
     
-    extension [Self <: EditableCell2Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditableCell2Props] (val x: Self) extends AnyVal {
       
       inline def setCellRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "cellRef", value.asInstanceOf[js.Any])
       
@@ -305,7 +306,8 @@ object libEsmCellEditableCell2Mod {
       __obj.asInstanceOf[EditableCell2State]
     }
     
-    extension [Self <: EditableCell2State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditableCell2State] (val x: Self) extends AnyVal {
       
       inline def setDirtyValue(value: String): Self = StObject.set(x, "dirtyValue", value.asInstanceOf[js.Any])
       

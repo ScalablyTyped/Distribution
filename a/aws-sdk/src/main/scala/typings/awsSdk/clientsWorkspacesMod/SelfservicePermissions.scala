@@ -38,7 +38,8 @@ object SelfservicePermissions {
     __obj.asInstanceOf[SelfservicePermissions]
   }
   
-  extension [Self <: SelfservicePermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelfservicePermissions] (val x: Self) extends AnyVal {
     
     inline def setChangeComputeType(value: ReconnectEnum): Self = StObject.set(x, "ChangeComputeType", value.asInstanceOf[js.Any])
     

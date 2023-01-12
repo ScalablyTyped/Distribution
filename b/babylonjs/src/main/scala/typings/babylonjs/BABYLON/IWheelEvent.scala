@@ -76,7 +76,8 @@ object IWheelEvent {
     __obj.asInstanceOf[IWheelEvent]
   }
   
-  extension [Self <: IWheelEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWheelEvent] (val x: Self) extends AnyVal {
     
     inline def setDeltaMode(value: Double): Self = StObject.set(x, "deltaMode", value.asInstanceOf[js.Any])
     

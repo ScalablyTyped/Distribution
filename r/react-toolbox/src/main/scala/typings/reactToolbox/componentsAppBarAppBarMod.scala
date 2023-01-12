@@ -96,7 +96,8 @@ object componentsAppBarAppBarMod {
       __obj.asInstanceOf[AppBarProps]
     }
     
-    extension [Self <: AppBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppBarProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -184,7 +185,8 @@ object componentsAppBarAppBarMod {
       __obj.asInstanceOf[AppBarTheme]
     }
     
-    extension [Self <: AppBarTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppBarTheme] (val x: Self) extends AnyVal {
       
       inline def setAppBar(value: String): Self = StObject.set(x, "appBar", value.asInstanceOf[js.Any])
       

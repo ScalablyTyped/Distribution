@@ -29,7 +29,8 @@ object NativeDeviceInputSystem {
     __obj.asInstanceOf[NativeDeviceInputSystem]
   }
   
-  extension [Self <: NativeDeviceInputSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeDeviceInputSystem] (val x: Self) extends AnyVal {
     
     inline def set_createDummyNativeInput(value: Any): Self = StObject.set(x, "_createDummyNativeInput", value.asInstanceOf[js.Any])
     

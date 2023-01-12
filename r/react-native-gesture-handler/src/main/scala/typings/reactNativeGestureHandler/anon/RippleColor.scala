@@ -15,7 +15,8 @@ object RippleColor {
     __obj.asInstanceOf[RippleColor]
   }
   
-  extension [Self <: RippleColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RippleColor] (val x: Self) extends AnyVal {
     
     inline def setRippleColor(value: Null): Self = StObject.set(x, "rippleColor", value.asInstanceOf[js.Any])
   }

@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[OptionBufferOutput]
     }
     
-    extension [Self <: OptionBufferOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionBufferOutput] (val x: Self) extends AnyVal {
       
       inline def setOutputFormat(value: buffer): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
     }
@@ -80,7 +81,8 @@ object mod {
       __obj.asInstanceOf[OptionsHexOutput]
     }
     
-    extension [Self <: OptionsHexOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsHexOutput] (val x: Self) extends AnyVal {
       
       inline def setOutputFormat(value: hex): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
       

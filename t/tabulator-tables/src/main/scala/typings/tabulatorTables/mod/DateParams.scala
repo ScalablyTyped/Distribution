@@ -22,7 +22,8 @@ object DateParams {
     __obj.asInstanceOf[DateParams]
   }
   
-  extension [Self <: DateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateParams] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

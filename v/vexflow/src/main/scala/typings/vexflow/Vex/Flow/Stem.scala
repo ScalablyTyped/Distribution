@@ -60,7 +60,8 @@ object Stem {
     __obj.asInstanceOf[Stem]
   }
   
-  extension [Self <: Stem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stem] (val x: Self) extends AnyVal {
     
     inline def setApplyStyle(value: IRenderContext => Stem): Self = StObject.set(x, "applyStyle", js.Any.fromFunction1(value))
     

@@ -355,7 +355,8 @@ object AppiumXCUITestCapabilities {
     __obj.asInstanceOf[AppiumXCUITestCapabilities]
   }
   
-  extension [Self <: AppiumXCUITestCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppiumXCUITestCapabilities] (val x: Self) extends AnyVal {
     
     inline def setAppiumColonabsoluteWebLocations(value: Boolean): Self = StObject.set(x, "appium:absoluteWebLocations", value.asInstanceOf[js.Any])
     

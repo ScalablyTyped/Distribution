@@ -16,7 +16,8 @@ object LatencyCriteria {
     __obj.asInstanceOf[LatencyCriteria]
   }
   
-  extension [Self <: LatencyCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LatencyCriteria] (val x: Self) extends AnyVal {
     
     inline def setThreshold(value: String): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     

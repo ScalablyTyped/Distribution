@@ -20,7 +20,8 @@ object MethodIdentifier {
     __obj.asInstanceOf[MethodIdentifier]
   }
   
-  extension [Self <: MethodIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MethodIdentifier] (val x: Self) extends AnyVal {
     
     inline def setKind(value: Method): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }

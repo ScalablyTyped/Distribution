@@ -20,7 +20,8 @@ object ListElasticsearchVersionsRequest {
     __obj.asInstanceOf[ListElasticsearchVersionsRequest]
   }
   
-  extension [Self <: ListElasticsearchVersionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListElasticsearchVersionsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

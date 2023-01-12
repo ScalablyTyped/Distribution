@@ -18,7 +18,8 @@ object UpdateInstanceProfileResult {
     __obj.asInstanceOf[UpdateInstanceProfileResult]
   }
   
-  extension [Self <: UpdateInstanceProfileResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateInstanceProfileResult] (val x: Self) extends AnyVal {
     
     inline def setInstanceProfile(value: InstanceProfile): Self = StObject.set(x, "instanceProfile", value.asInstanceOf[js.Any])
     

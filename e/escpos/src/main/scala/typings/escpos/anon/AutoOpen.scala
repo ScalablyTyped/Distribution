@@ -17,7 +17,8 @@ object AutoOpen {
     __obj.asInstanceOf[AutoOpen]
   }
   
-  extension [Self <: AutoOpen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoOpen] (val x: Self) extends AnyVal {
     
     inline def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
     

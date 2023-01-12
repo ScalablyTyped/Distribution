@@ -43,7 +43,8 @@ object GetProfileRequest {
     __obj.asInstanceOf[GetProfileRequest]
   }
   
-  extension [Self <: GetProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     

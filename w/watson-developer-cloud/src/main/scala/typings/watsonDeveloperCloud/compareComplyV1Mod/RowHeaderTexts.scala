@@ -17,7 +17,8 @@ object RowHeaderTexts {
     __obj.asInstanceOf[RowHeaderTexts]
   }
   
-  extension [Self <: RowHeaderTexts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowHeaderTexts] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object COMAddIn {
     __obj.asInstanceOf[COMAddIn]
   }
   
-  extension [Self <: COMAddIn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: COMAddIn] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

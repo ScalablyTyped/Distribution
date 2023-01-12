@@ -23,7 +23,8 @@ object dxHtmlEditorMediaResizing {
     __obj.asInstanceOf[dxHtmlEditorMediaResizing]
   }
   
-  extension [Self <: dxHtmlEditorMediaResizing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxHtmlEditorMediaResizing] (val x: Self) extends AnyVal {
     
     inline def setAllowedTargets(value: js.Array[String]): Self = StObject.set(x, "allowedTargets", value.asInstanceOf[js.Any])
     

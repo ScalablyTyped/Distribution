@@ -155,7 +155,8 @@ object libStageMod {
       __obj.asInstanceOf[StageConfig]
     }
     
-    extension [Self <: StageConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StageConfig] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: HTMLDivElement | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     }

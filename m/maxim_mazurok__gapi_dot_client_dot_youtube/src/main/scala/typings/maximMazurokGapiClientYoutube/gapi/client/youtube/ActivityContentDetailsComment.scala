@@ -16,7 +16,8 @@ object ActivityContentDetailsComment {
     __obj.asInstanceOf[ActivityContentDetailsComment]
   }
   
-  extension [Self <: ActivityContentDetailsComment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityContentDetailsComment] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object RenameFileOptions {
     __obj.asInstanceOf[RenameFileOptions]
   }
   
-  extension [Self <: RenameFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenameFileOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreIfExists(value: Boolean): Self = StObject.set(x, "ignoreIfExists", value.asInstanceOf[js.Any])
     

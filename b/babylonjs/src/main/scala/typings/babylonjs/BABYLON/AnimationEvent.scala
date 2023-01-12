@@ -30,7 +30,8 @@ object AnimationEvent {
     __obj.asInstanceOf[AnimationEvent]
   }
   
-  extension [Self <: AnimationEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationEvent] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Double => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     

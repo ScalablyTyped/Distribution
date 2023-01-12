@@ -29,7 +29,8 @@ object libComponentsMultiSelectFilterableMultiSelectMod {
       __obj.asInstanceOf[FilterItemsExtra[T]]
     }
     
-    extension [Self <: FilterItemsExtra[?], T](x: Self & FilterItemsExtra[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterItemsExtra[?], T] (val x: Self & FilterItemsExtra[T]) extends AnyVal {
       
       inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object libComponentsMultiSelectFilterableMultiSelectMod {
       __obj.asInstanceOf[FilterableMultiSelectProps[T]]
     }
     
-    extension [Self <: FilterableMultiSelectProps[?], T /* <: ListBoxBaseItemType */](x: Self & FilterableMultiSelectProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterableMultiSelectProps[?], T /* <: ListBoxBaseItemType */] (val x: Self & FilterableMultiSelectProps[T]) extends AnyVal {
       
       inline def setFilterItems(value: (/* items */ js.Array[T], /* extra */ FilterItemsExtra[T]) => js.Array[T]): Self = StObject.set(x, "filterItems", js.Any.fromFunction2(value))
       

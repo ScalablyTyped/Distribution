@@ -18,7 +18,8 @@ object PickConsoleLogLevel {
     __obj.asInstanceOf[PickConsoleLogLevel]
   }
   
-  extension [Self <: PickConsoleLogLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickConsoleLogLevel] (val x: Self) extends AnyVal {
     
     inline def setError(value: /* repeated */ Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     

@@ -54,7 +54,8 @@ object SelenoidOptions {
     __obj.asInstanceOf[SelenoidOptions]
   }
   
-  extension [Self <: SelenoidOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelenoidOptions] (val x: Self) extends AnyVal {
     
     inline def setAdditionalNetworks(value: js.Array[String]): Self = StObject.set(x, "additionalNetworks", value.asInstanceOf[js.Any])
     

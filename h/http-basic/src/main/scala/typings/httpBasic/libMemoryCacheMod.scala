@@ -62,7 +62,8 @@ object libMemoryCacheMod {
       __obj.asInstanceOf[MemoryCache]
     }
     
-    extension [Self <: MemoryCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemoryCache] (val x: Self) extends AnyVal {
       
       inline def setGetResponse(
         value: (String, js.Function2[/* err */ Null | js.Error, /* response */ Null | CachedResponse, Unit]) => Unit

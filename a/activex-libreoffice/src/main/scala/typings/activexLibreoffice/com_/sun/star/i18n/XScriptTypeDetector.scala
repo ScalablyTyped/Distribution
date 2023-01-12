@@ -53,7 +53,8 @@ object XScriptTypeDetector {
     __obj.asInstanceOf[XScriptTypeDetector]
   }
   
-  extension [Self <: XScriptTypeDetector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XScriptTypeDetector] (val x: Self) extends AnyVal {
     
     inline def setBeginOfCTLScriptType(value: (String, Double) => Double): Self = StObject.set(x, "beginOfCTLScriptType", js.Any.fromFunction2(value))
     

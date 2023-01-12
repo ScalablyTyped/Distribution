@@ -21,7 +21,8 @@ object StreamLayerViewQueryObjectIdsOptions {
     __obj.asInstanceOf[StreamLayerViewQueryObjectIdsOptions]
   }
   
-  extension [Self <: StreamLayerViewQueryObjectIdsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamLayerViewQueryObjectIdsOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

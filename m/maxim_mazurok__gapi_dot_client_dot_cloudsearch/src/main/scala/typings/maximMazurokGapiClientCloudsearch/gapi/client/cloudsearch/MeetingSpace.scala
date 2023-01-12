@@ -70,7 +70,8 @@ object MeetingSpace {
     __obj.asInstanceOf[MeetingSpace]
   }
   
-  extension [Self <: MeetingSpace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeetingSpace] (val x: Self) extends AnyVal {
     
     inline def setAcceptedNumberClass(value: js.Array[String]): Self = StObject.set(x, "acceptedNumberClass", value.asInstanceOf[js.Any])
     

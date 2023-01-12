@@ -28,7 +28,8 @@ object DebugError {
     __obj.asInstanceOf[DebugError]
   }
   
-  extension [Self <: DebugError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugError] (val x: Self) extends AnyVal {
     
     inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
     

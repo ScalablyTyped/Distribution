@@ -26,7 +26,8 @@ object Package {
     __obj.asInstanceOf[Package]
   }
   
-  extension [Self <: Package](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Package] (val x: Self) extends AnyVal {
     
     inline def setXmlnsColonandroid(value: String): Self = StObject.set(x, "xmlns:android", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object HistogramEntry {
     __obj.asInstanceOf[HistogramEntry]
   }
   
-  extension [Self <: HistogramEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistogramEntry] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

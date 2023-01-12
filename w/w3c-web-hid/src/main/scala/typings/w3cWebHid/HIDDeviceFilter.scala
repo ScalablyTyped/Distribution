@@ -21,7 +21,8 @@ object HIDDeviceFilter {
     __obj.asInstanceOf[HIDDeviceFilter]
   }
   
-  extension [Self <: HIDDeviceFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HIDDeviceFilter] (val x: Self) extends AnyVal {
     
     inline def setProductId(value: Double): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     

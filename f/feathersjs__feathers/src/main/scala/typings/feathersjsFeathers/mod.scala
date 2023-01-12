@@ -73,7 +73,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ClientSideParams]
     }
     
-    extension [Self <: ClientSideParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientSideParams] (val x: Self) extends AnyVal {
       
       inline def setPaginate(value: `false` | PickPaginationOptionsmax): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
       
@@ -202,7 +203,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HookContext[T]]
     }
     
-    extension [Self <: HookContext[?], T](x: Self & HookContext[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookContext[?], T] (val x: Self & HookContext[T]) extends AnyVal {
       
       inline def setApp(value: Application[js.Object]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -273,7 +275,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HookMap]
     }
     
-    extension [Self <: HookMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookMap] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Hook | js.Array[Hook]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -354,7 +357,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HooksObject]
     }
     
-    extension [Self <: HooksObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HooksObject] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: PartialHookMap | Hook | js.Array[Hook]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -413,7 +417,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Paginated[T]]
     }
     
-    extension [Self <: Paginated[?], T](x: Self & Paginated[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Paginated[?], T] (val x: Self & Paginated[T]) extends AnyVal {
       
       inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -440,7 +445,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PaginationOptions]
     }
     
-    extension [Self <: PaginationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationOptions] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -463,7 +469,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setPaginate(value: `false` | PickPaginationOptionsmax): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
       
@@ -554,7 +561,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SetupMethod]
     }
     
-    extension [Self <: SetupMethod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetupMethod] (val x: Self) extends AnyVal {
       
       inline def setSetup(value: (Application[Any], String) => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction2(value))
     }

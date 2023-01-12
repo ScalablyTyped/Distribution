@@ -115,7 +115,8 @@ object GetMLModelOutput {
     __obj.asInstanceOf[GetMLModelOutput]
   }
   
-  extension [Self <: GetMLModelOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMLModelOutput] (val x: Self) extends AnyVal {
     
     inline def setComputeTime(value: LongType): Self = StObject.set(x, "ComputeTime", value.asInstanceOf[js.Any])
     

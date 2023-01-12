@@ -46,7 +46,8 @@ object V1Beta1ProducerQuotaPolicy {
     __obj.asInstanceOf[V1Beta1ProducerQuotaPolicy]
   }
   
-  extension [Self <: V1Beta1ProducerQuotaPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: V1Beta1ProducerQuotaPolicy] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

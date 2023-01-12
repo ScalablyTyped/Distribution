@@ -32,7 +32,8 @@ object AutoRotate {
     __obj.asInstanceOf[AutoRotate]
   }
   
-  extension [Self <: AutoRotate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoRotate] (val x: Self) extends AnyVal {
     
     inline def setAutoRotate(value: Boolean): Self = StObject.set(x, "autoRotate", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ServiceResourceCost {
     __obj.asInstanceOf[ServiceResourceCost]
   }
   
-  extension [Self <: ServiceResourceCost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceResourceCost] (val x: Self) extends AnyVal {
     
     inline def setCost(value: Cost): Self = StObject.set(x, "Cost", value.asInstanceOf[js.Any])
     

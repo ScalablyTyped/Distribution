@@ -15,7 +15,8 @@ object MlCloseJobResponse {
     __obj.asInstanceOf[MlCloseJobResponse]
   }
   
-  extension [Self <: MlCloseJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlCloseJobResponse] (val x: Self) extends AnyVal {
     
     inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
   }

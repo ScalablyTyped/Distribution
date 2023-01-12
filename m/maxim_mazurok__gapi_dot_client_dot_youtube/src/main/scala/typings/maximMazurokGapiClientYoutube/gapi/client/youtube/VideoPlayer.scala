@@ -21,7 +21,8 @@ object VideoPlayer {
     __obj.asInstanceOf[VideoPlayer]
   }
   
-  extension [Self <: VideoPlayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoPlayer] (val x: Self) extends AnyVal {
     
     inline def setEmbedHeight(value: String): Self = StObject.set(x, "embedHeight", value.asInstanceOf[js.Any])
     

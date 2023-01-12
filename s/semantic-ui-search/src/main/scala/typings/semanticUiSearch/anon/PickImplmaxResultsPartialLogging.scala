@@ -31,7 +31,8 @@ object PickImplmaxResultsPartialLogging {
     __obj.asInstanceOf[PickImplmaxResultsPartialLogging]
   }
   
-  extension [Self <: PickImplmaxResultsPartialLogging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplmaxResultsPartialLogging] (val x: Self) extends AnyVal {
     
     inline def setLogging(value: String): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     

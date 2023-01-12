@@ -63,7 +63,8 @@ object mod {
     @js.native
     def apply(props: CardProps): ReactElement = js.native
     
-    extension [Self <: Card](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Card] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
@@ -114,7 +115,8 @@ object mod {
     @js.native
     def apply(props: TabProps): ReactElement = js.native
     
-    extension [Self <: Tab](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
@@ -156,7 +158,8 @@ object mod {
       __obj.asInstanceOf[BottomNavigationProps]
     }
     
-    extension [Self <: BottomNavigationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BottomNavigationProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -225,7 +228,8 @@ object mod {
       __obj.asInstanceOf[NavBarProps]
     }
     
-    extension [Self <: NavBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavBarProps] (val x: Self) extends AnyVal {
       
       inline def setBackButtonTintColor(value: String): Self = StObject.set(x, "backButtonTintColor", value.asInstanceOf[js.Any])
       
@@ -290,7 +294,8 @@ object mod {
       __obj.asInstanceOf[NavigationComponentProps]
     }
     
-    extension [Self <: NavigationComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationComponentProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -327,7 +332,8 @@ object mod {
       __obj.asInstanceOf[NavigationProps]
     }
     
-    extension [Self <: NavigationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationProps] (val x: Self) extends AnyVal {
       
       inline def setCardStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "cardStyle", value.asInstanceOf[js.Any])
       
@@ -366,7 +372,8 @@ object mod {
       __obj.asInstanceOf[TabBarComponentProps]
     }
     
-    extension [Self <: TabBarComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabBarComponentProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -411,7 +418,8 @@ object mod {
       __obj.asInstanceOf[TabBarProps]
     }
     
-    extension [Self <: TabBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabBarProps] (val x: Self) extends AnyVal {
       
       inline def setHideTabBar(value: Boolean): Self = StObject.set(x, "hideTabBar", value.asInstanceOf[js.Any])
       
@@ -487,7 +495,8 @@ object mod {
       __obj.asInstanceOf[TabProps]
     }
     
-    extension [Self <: TabProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabProps] (val x: Self) extends AnyVal {
       
       inline def setOnIndexChange(value: /* index */ Double => Unit): Self = StObject.set(x, "onIndexChange", js.Any.fromFunction1(value))
       
@@ -525,7 +534,8 @@ object mod {
       __obj.asInstanceOf[TabsProps]
     }
     
-    extension [Self <: TabsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsProps] (val x: Self) extends AnyVal {
       
       inline def setConfigureTransition(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ Any, /* prevTransitionProps */ js.UndefOr[

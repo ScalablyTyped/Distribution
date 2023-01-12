@@ -28,7 +28,8 @@ object InputDataConfig {
     __obj.asInstanceOf[InputDataConfig]
   }
   
-  extension [Self <: InputDataConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputDataConfig] (val x: Self) extends AnyVal {
     
     inline def setDataAccessRoleArn(value: DataAccessRoleArn): Self = StObject.set(x, "DataAccessRoleArn", value.asInstanceOf[js.Any])
     

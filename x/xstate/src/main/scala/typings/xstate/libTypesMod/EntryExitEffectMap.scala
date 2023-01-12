@@ -17,7 +17,8 @@ object EntryExitEffectMap {
     __obj.asInstanceOf[EntryExitEffectMap[TContext, TEvent]]
   }
   
-  extension [Self <: EntryExitEffectMap[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (EntryExitEffectMap[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntryExitEffectMap[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (EntryExitEffectMap[TContext, TEvent])) extends AnyVal {
     
     inline def setEntry(value: js.Array[ActionObject[TContext, TEvent]]): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     

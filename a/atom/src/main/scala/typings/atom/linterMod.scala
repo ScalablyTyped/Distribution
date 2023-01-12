@@ -34,7 +34,8 @@ object linterMod {
       __obj.asInstanceOf[CallbackSolution]
     }
     
-    extension [Self <: CallbackSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackSolution] (val x: Self) extends AnyVal {
       
       inline def setApply(value: () => Any): Self = StObject.set(x, "apply", js.Any.fromFunction0(value))
       
@@ -61,7 +62,8 @@ object linterMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -101,7 +103,8 @@ object linterMod {
       __obj.asInstanceOf[IndieDelegate]
     }
     
-    extension [Self <: IndieDelegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndieDelegate] (val x: Self) extends AnyVal {
       
       inline def setClearMessages(value: () => Unit): Self = StObject.set(x, "clearMessages", js.Any.fromFunction0(value))
       
@@ -150,7 +153,8 @@ object linterMod {
       __obj.asInstanceOf[LinterProvider]
     }
     
-    extension [Self <: LinterProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinterProvider] (val x: Self) extends AnyVal {
       
       inline def setGrammarScopes(value: js.Array[String]): Self = StObject.set(x, "grammarScopes", value.asInstanceOf[js.Any])
       
@@ -205,7 +209,8 @@ object linterMod {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String | (js.Function0[js.Promise[String] | String])): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -262,7 +267,8 @@ object linterMod {
       __obj.asInstanceOf[ReplacementSolution]
     }
     
-    extension [Self <: ReplacementSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplacementSolution] (val x: Self) extends AnyVal {
       
       inline def setCurrentText(value: String): Self = StObject.set(x, "currentText", value.asInstanceOf[js.Any])
       

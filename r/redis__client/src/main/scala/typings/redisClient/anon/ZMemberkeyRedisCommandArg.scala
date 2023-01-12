@@ -21,7 +21,8 @@ object ZMemberkeyRedisCommandArg {
     __obj.asInstanceOf[ZMemberkeyRedisCommandArg]
   }
   
-  extension [Self <: ZMemberkeyRedisCommandArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZMemberkeyRedisCommandArg] (val x: Self) extends AnyVal {
     
     inline def setKey(value: RedisCommandArgument): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

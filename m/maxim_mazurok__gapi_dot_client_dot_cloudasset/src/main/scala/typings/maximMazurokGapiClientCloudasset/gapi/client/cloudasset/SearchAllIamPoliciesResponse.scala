@@ -19,7 +19,8 @@ object SearchAllIamPoliciesResponse {
     __obj.asInstanceOf[SearchAllIamPoliciesResponse]
   }
   
-  extension [Self <: SearchAllIamPoliciesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchAllIamPoliciesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

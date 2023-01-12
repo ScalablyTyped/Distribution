@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Contents]
     }
     
-    extension [Self <: Contents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contents] (val x: Self) extends AnyVal {
       
       inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
@@ -80,7 +82,8 @@ object anon {
       __obj.asInstanceOf[Detached]
     }
     
-    extension [Self <: Detached](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Detached] (val x: Self) extends AnyVal {
       
       inline def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
       
@@ -105,7 +108,8 @@ object anon {
       __obj.asInstanceOf[Dictpage]
     }
     
-    extension [Self <: Dictpage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictpage] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -144,7 +148,8 @@ object anon {
       __obj.asInstanceOf[Domain]
     }
     
-    extension [Self <: Domain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -183,7 +188,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setContents(value: Dictpage): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       

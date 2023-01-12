@@ -47,7 +47,8 @@ object IGeoJsonObject {
     __obj.asInstanceOf[IGeoJsonObject]
   }
   
-  extension [Self <: IGeoJsonObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeoJsonObject] (val x: Self) extends AnyVal {
     
     inline def setCoordinates(value: js.Array[(js.Array[(js.Array[js.Array[Double] | Double]) | Double]) | Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     

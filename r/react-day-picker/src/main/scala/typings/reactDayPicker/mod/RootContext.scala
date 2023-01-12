@@ -19,7 +19,8 @@ object RootContext {
     __obj.asInstanceOf[RootContext]
   }
   
-  extension [Self <: RootContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RootContext] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

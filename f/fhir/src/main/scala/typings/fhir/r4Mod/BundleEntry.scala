@@ -48,7 +48,8 @@ object BundleEntry {
     __obj.asInstanceOf[BundleEntry[BundleContentType]]
   }
   
-  extension [Self <: BundleEntry[?], BundleContentType](x: Self & BundleEntry[BundleContentType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BundleEntry[?], BundleContentType] (val x: Self & BundleEntry[BundleContentType]) extends AnyVal {
     
     inline def setFullUrl(value: String): Self = StObject.set(x, "fullUrl", value.asInstanceOf[js.Any])
     

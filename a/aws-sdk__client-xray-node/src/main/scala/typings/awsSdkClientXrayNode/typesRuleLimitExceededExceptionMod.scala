@@ -21,7 +21,8 @@ object typesRuleLimitExceededExceptionMod {
       __obj.asInstanceOf[RuleLimitExceededException]
     }
     
-    extension [Self <: RuleLimitExceededException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuleLimitExceededException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.RuleLimitExceededException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -41,7 +42,8 @@ object typesRuleLimitExceededExceptionMod {
       __obj.asInstanceOf[RuleLimitExceededExceptionDetails]
     }
     
-    extension [Self <: RuleLimitExceededExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuleLimitExceededExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

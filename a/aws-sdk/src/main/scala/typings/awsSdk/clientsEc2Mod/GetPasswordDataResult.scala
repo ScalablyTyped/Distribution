@@ -28,7 +28,8 @@ object GetPasswordDataResult {
     __obj.asInstanceOf[GetPasswordDataResult]
   }
   
-  extension [Self <: GetPasswordDataResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPasswordDataResult] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object GetBLEDeviceCharacteristicsOptions {
     __obj.asInstanceOf[GetBLEDeviceCharacteristicsOptions]
   }
   
-  extension [Self <: GetBLEDeviceCharacteristicsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBLEDeviceCharacteristicsOptions] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object GoogleCloudDialogflowCxV3OutputAudioConfig {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3OutputAudioConfig]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3OutputAudioConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3OutputAudioConfig] (val x: Self) extends AnyVal {
     
     inline def setAudioEncoding(value: String): Self = StObject.set(x, "audioEncoding", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object ChartTableAddressSupplier {
     __obj.asInstanceOf[ChartTableAddressSupplier]
   }
   
-  extension [Self <: ChartTableAddressSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartTableAddressSupplier] (val x: Self) extends AnyVal {
     
     inline def setCategoriesRangeAddress(value: String): Self = StObject.set(x, "CategoriesRangeAddress", value.asInstanceOf[js.Any])
     

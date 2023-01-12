@@ -25,7 +25,8 @@ object IfNode {
     __obj.asInstanceOf[IfNode]
   }
   
-  extension [Self <: IfNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IfNode] (val x: Self) extends AnyVal {
     
     inline def setBranches(value: js.Array[IfBranchNode]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
     

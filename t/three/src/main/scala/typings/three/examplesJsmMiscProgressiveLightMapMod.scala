@@ -87,7 +87,8 @@ object examplesJsmMiscProgressiveLightMapMod {
       __obj.asInstanceOf[LightMapContainers]
     }
     
-    extension [Self <: LightMapContainers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LightMapContainers] (val x: Self) extends AnyVal {
       
       inline def setBasicMat(value: Material | js.Array[Material]): Self = StObject.set(x, "basicMat", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object examplesJsmMiscProgressiveLightMapMod {
       __obj.asInstanceOf[UVBoxes]
     }
     
-    extension [Self <: UVBoxes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UVBoxes] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       

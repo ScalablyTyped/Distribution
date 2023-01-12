@@ -16,7 +16,8 @@ object HangoutsChatInfo {
     __obj.asInstanceOf[HangoutsChatInfo]
   }
   
-  extension [Self <: HangoutsChatInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HangoutsChatInfo] (val x: Self) extends AnyVal {
     
     inline def setRoomId(value: js.Array[String]): Self = StObject.set(x, "roomId", value.asInstanceOf[js.Any])
     

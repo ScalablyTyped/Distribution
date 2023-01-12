@@ -23,7 +23,8 @@ object HyperlinkExecutingEventUIParam {
     __obj.asInstanceOf[HyperlinkExecutingEventUIParam]
   }
   
-  extension [Self <: HyperlinkExecutingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HyperlinkExecutingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setHyperlink(value: Any): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
     

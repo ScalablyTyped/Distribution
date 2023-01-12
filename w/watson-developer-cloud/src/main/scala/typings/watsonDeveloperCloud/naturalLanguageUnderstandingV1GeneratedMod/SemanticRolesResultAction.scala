@@ -22,7 +22,8 @@ object SemanticRolesResultAction {
     __obj.asInstanceOf[SemanticRolesResultAction]
   }
   
-  extension [Self <: SemanticRolesResultAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SemanticRolesResultAction] (val x: Self) extends AnyVal {
     
     inline def setNormalized(value: String): Self = StObject.set(x, "normalized", value.asInstanceOf[js.Any])
     

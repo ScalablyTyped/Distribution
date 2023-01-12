@@ -58,7 +58,8 @@ object DescribeOrderableDBInstanceOptionsMessage {
     __obj.asInstanceOf[DescribeOrderableDBInstanceOptionsMessage]
   }
   
-  extension [Self <: DescribeOrderableDBInstanceOptionsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeOrderableDBInstanceOptionsMessage] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZoneGroup(value: String): Self = StObject.set(x, "AvailabilityZoneGroup", value.asInstanceOf[js.Any])
     

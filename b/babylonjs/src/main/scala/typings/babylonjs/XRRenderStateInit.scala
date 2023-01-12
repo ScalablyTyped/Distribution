@@ -23,7 +23,8 @@ object XRRenderStateInit {
     __obj.asInstanceOf[XRRenderStateInit]
   }
   
-  extension [Self <: XRRenderStateInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRRenderStateInit] (val x: Self) extends AnyVal {
     
     inline def setBaseLayer(value: XRWebGLLayer): Self = StObject.set(x, "baseLayer", value.asInstanceOf[js.Any])
     

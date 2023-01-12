@@ -37,7 +37,8 @@ object typesUtilsMod {
       __obj.asInstanceOf[DefaultAnchorOptions]
     }
     
-    extension [Self <: DefaultAnchorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultAnchorOptions] (val x: Self) extends AnyVal {
       
       inline def setFloating(value: FABPosition): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
       

@@ -57,7 +57,8 @@ object PivotGroup {
     __obj.asInstanceOf[PivotGroup]
   }
   
-  extension [Self <: PivotGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotGroup] (val x: Self) extends AnyVal {
     
     inline def setDataSourceColumnReference(value: DataSourceColumnReference): Self = StObject.set(x, "dataSourceColumnReference", value.asInstanceOf[js.Any])
     

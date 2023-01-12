@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[SubscriptionConfig[S, T]]
     }
     
-    extension [Self <: SubscriptionConfig[?, ?], S, T](x: Self & (SubscriptionConfig[S, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionConfig[?, ?], S, T] (val x: Self & (SubscriptionConfig[S, T])) extends AnyVal {
       
       inline def setGetCurrentValue(value: S => T): Self = StObject.set(x, "getCurrentValue", js.Any.fromFunction1(value))
       
@@ -63,7 +64,8 @@ object mod {
       __obj.asInstanceOf[SubscriptionProps[S, T]]
     }
     
-    extension [Self <: SubscriptionProps[?, ?], S, T](x: Self & (SubscriptionProps[S, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionProps[?, ?], S, T] (val x: Self & (SubscriptionProps[S, T])) extends AnyVal {
       
       inline def setChildren(value: T => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       

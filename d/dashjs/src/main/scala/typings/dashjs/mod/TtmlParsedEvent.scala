@@ -24,7 +24,8 @@ object TtmlParsedEvent {
     __obj.asInstanceOf[TtmlParsedEvent]
   }
   
-  extension [Self <: TtmlParsedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TtmlParsedEvent] (val x: Self) extends AnyVal {
     
     inline def setTtmlDoc(value: js.Object): Self = StObject.set(x, "ttmlDoc", value.asInstanceOf[js.Any])
     

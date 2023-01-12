@@ -9975,7 +9975,8 @@ object CSSPropertiesPartialRecorBackgroundPosition {
     __obj.asInstanceOf[CSSPropertiesPartialRecorBackgroundPosition]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorBackgroundPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorBackgroundPosition] (val x: Self) extends AnyVal {
     
     inline def `set--border-radius`(value: String): Self = StObject.set(x, "--border-radius", value.asInstanceOf[js.Any])
     

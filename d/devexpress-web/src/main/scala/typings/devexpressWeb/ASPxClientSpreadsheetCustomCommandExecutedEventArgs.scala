@@ -34,7 +34,8 @@ object ASPxClientSpreadsheetCustomCommandExecutedEventArgs {
     __obj.asInstanceOf[ASPxClientSpreadsheetCustomCommandExecutedEventArgs]
   }
   
-  extension [Self <: ASPxClientSpreadsheetCustomCommandExecutedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSpreadsheetCustomCommandExecutedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
     

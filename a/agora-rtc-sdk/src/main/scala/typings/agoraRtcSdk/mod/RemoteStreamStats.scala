@@ -85,7 +85,8 @@ object RemoteStreamStats {
     __obj.asInstanceOf[RemoteStreamStats]
   }
   
-  extension [Self <: RemoteStreamStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteStreamStats] (val x: Self) extends AnyVal {
     
     inline def setAccessDelay(value: String): Self = StObject.set(x, "accessDelay", value.asInstanceOf[js.Any])
     

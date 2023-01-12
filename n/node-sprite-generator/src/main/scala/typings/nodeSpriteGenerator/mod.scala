@@ -114,7 +114,8 @@ object mod {
       __obj.asInstanceOf[Compositor]
     }
     
-    extension [Self <: Compositor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compositor] (val x: Self) extends AnyVal {
       
       inline def setReadImages(
         value: (js.Array[String], js.Function2[/* error */ js.Error, /* images */ js.Array[Image], Unit]) => Unit
@@ -161,7 +162,8 @@ object mod {
       __obj.asInstanceOf[CompositorOption]
     }
     
-    extension [Self <: CompositorOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompositorOption] (val x: Self) extends AnyVal {
       
       inline def setCompressionLevel(value: Double): Self = StObject.set(x, "compressionLevel", value.asInstanceOf[js.Any])
       
@@ -188,7 +190,8 @@ object mod {
       __obj.asInstanceOf[Image]
     }
     
-    extension [Self <: Image](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -213,7 +216,8 @@ object mod {
       __obj.asInstanceOf[Layout]
     }
     
-    extension [Self <: Layout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -245,7 +249,8 @@ object mod {
       __obj.asInstanceOf[LayoutOption]
     }
     
-    extension [Self <: LayoutOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutOption] (val x: Self) extends AnyVal {
       
       inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
@@ -284,7 +289,8 @@ object mod {
       __obj.asInstanceOf[Option]
     }
     
-    extension [Self <: Option](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
       
       inline def setCompositor(value: BuiltinCompositors | Compositor): Self = StObject.set(x, "compositor", value.asInstanceOf[js.Any])
       
@@ -360,7 +366,8 @@ object mod {
       __obj.asInstanceOf[StylesheetOption]
     }
     
-    extension [Self <: StylesheetOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StylesheetOption] (val x: Self) extends AnyVal {
       
       inline def setNameMapping(value: () => String): Self = StObject.set(x, "nameMapping", js.Any.fromFunction0(value))
       

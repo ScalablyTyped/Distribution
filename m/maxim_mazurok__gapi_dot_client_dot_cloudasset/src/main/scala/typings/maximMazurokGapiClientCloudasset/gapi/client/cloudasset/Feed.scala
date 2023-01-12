@@ -55,7 +55,8 @@ object Feed {
     __obj.asInstanceOf[Feed]
   }
   
-  extension [Self <: Feed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Feed] (val x: Self) extends AnyVal {
     
     inline def setAssetNames(value: js.Array[String]): Self = StObject.set(x, "assetNames", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DeleteNetworkSiteRequest {
     __obj.asInstanceOf[DeleteNetworkSiteRequest]
   }
   
-  extension [Self <: DeleteNetworkSiteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteNetworkSiteRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

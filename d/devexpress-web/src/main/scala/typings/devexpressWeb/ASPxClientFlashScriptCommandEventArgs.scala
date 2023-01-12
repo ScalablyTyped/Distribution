@@ -28,7 +28,8 @@ object ASPxClientFlashScriptCommandEventArgs {
     __obj.asInstanceOf[ASPxClientFlashScriptCommandEventArgs]
   }
   
-  extension [Self <: ASPxClientFlashScriptCommandEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFlashScriptCommandEventArgs] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: String): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

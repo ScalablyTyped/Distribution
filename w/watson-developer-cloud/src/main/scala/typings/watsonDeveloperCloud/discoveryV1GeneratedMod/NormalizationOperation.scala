@@ -23,7 +23,8 @@ object NormalizationOperation {
     __obj.asInstanceOf[NormalizationOperation]
   }
   
-  extension [Self <: NormalizationOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizationOperation] (val x: Self) extends AnyVal {
     
     inline def setDestination_field(value: String): Self = StObject.set(x, "destination_field", value.asInstanceOf[js.Any])
     

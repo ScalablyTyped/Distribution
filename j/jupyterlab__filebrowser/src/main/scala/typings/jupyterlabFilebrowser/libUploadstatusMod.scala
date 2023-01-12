@@ -86,7 +86,8 @@ object libUploadstatusMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setTracker(value: WidgetTracker[FileBrowser]): Self = StObject.set(x, "tracker", value.asInstanceOf[js.Any])
         
@@ -125,7 +126,8 @@ object libUploadstatusMod {
       __obj.asInstanceOf[IFileUploadItem]
     }
     
-    extension [Self <: IFileUploadItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFileUploadItem] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       

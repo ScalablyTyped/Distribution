@@ -33,7 +33,8 @@ object DeleteCustomVocabularyResponse {
     __obj.asInstanceOf[DeleteCustomVocabularyResponse]
   }
   
-  extension [Self <: DeleteCustomVocabularyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCustomVocabularyResponse] (val x: Self) extends AnyVal {
     
     inline def setBotId(value: Id): Self = StObject.set(x, "botId", value.asInstanceOf[js.Any])
     

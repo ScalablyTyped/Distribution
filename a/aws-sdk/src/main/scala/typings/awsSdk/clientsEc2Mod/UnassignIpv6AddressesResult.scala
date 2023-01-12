@@ -28,7 +28,8 @@ object UnassignIpv6AddressesResult {
     __obj.asInstanceOf[UnassignIpv6AddressesResult]
   }
   
-  extension [Self <: UnassignIpv6AddressesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnassignIpv6AddressesResult] (val x: Self) extends AnyVal {
     
     inline def setNetworkInterfaceId(value: String): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     

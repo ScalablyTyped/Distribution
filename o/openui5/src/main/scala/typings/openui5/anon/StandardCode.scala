@@ -19,7 +19,8 @@ object StandardCode {
     __obj.asInstanceOf[StandardCode]
   }
   
-  extension [Self <: StandardCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardCode] (val x: Self) extends AnyVal {
     
     inline def setStandardCode(value: String): Self = StObject.set(x, "StandardCode", value.asInstanceOf[js.Any])
     

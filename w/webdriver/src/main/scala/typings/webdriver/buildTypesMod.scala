@@ -94,7 +94,8 @@ object buildTypesMod {
       __obj.asInstanceOf[AttachOptions]
     }
     
-    extension [Self <: AttachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttachOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Http): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -255,7 +256,8 @@ object buildTypesMod {
       __obj.asInstanceOf[JSONWPCommandError]
     }
     
-    extension [Self <: JSONWPCommandError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONWPCommandError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -308,7 +310,8 @@ object buildTypesMod {
       __obj.asInstanceOf[SessionFlags]
     }
     
-    extension [Self <: SessionFlags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionFlags] (val x: Self) extends AnyVal {
       
       inline def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
       

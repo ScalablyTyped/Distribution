@@ -32,7 +32,8 @@ object ContactOrganization {
     __obj.asInstanceOf[ContactOrganization]
   }
   
-  extension [Self <: ContactOrganization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactOrganization] (val x: Self) extends AnyVal {
     
     inline def setDepartment(value: String): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
     

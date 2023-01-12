@@ -20,7 +20,8 @@ object RevealCSSOptions {
     __obj.asInstanceOf[RevealCSSOptions]
   }
   
-  extension [Self <: RevealCSSOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevealCSSOptions] (val x: Self) extends AnyVal {
     
     inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     

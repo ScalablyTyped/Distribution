@@ -20,7 +20,8 @@ object FetcherOptions {
     __obj.asInstanceOf[FetcherOptions[K, V]]
   }
   
-  extension [Self <: FetcherOptions[?, ?], K, V](x: Self & (FetcherOptions[K, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetcherOptions[?, ?], K, V] (val x: Self & (FetcherOptions[K, V])) extends AnyVal {
     
     inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

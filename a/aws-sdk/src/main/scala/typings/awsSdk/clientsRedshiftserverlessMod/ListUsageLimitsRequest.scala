@@ -33,7 +33,8 @@ object ListUsageLimitsRequest {
     __obj.asInstanceOf[ListUsageLimitsRequest]
   }
   
-  extension [Self <: ListUsageLimitsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListUsageLimitsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ListUsageLimitsRequestMaxResultsInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

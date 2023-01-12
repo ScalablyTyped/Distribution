@@ -34,7 +34,8 @@ object PartialRestrictSizeOption {
     __obj.asInstanceOf[PartialRestrictSizeOption]
   }
   
-  extension [Self <: PartialRestrictSizeOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRestrictSizeOption] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

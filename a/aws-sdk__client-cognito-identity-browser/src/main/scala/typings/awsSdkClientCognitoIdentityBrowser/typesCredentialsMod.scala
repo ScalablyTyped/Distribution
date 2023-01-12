@@ -35,7 +35,8 @@ object typesCredentialsMod {
       __obj.asInstanceOf[Credentials]
     }
     
-    extension [Self <: Credentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
       
       inline def setAccessKeyId(value: String): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object typesCredentialsMod {
       __obj.asInstanceOf[UnmarshalledCredentials]
     }
     
-    extension [Self <: UnmarshalledCredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledCredentials] (val x: Self) extends AnyVal {
       
       inline def setExpiration(value: js.Date): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
       

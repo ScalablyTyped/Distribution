@@ -19,7 +19,8 @@ object EncodingPersistent {
     __obj.asInstanceOf[EncodingPersistent]
   }
   
-  extension [Self <: EncodingPersistent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncodingPersistent] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

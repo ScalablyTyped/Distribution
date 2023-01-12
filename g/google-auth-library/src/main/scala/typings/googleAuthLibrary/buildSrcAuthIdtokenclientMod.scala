@@ -44,7 +44,8 @@ object buildSrcAuthIdtokenclientMod {
       __obj.asInstanceOf[IdTokenOptions]
     }
     
-    extension [Self <: IdTokenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdTokenOptions] (val x: Self) extends AnyVal {
       
       inline def setIdTokenProvider(value: IdTokenProvider): Self = StObject.set(x, "idTokenProvider", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object buildSrcAuthIdtokenclientMod {
       __obj.asInstanceOf[IdTokenProvider]
     }
     
-    extension [Self <: IdTokenProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdTokenProvider] (val x: Self) extends AnyVal {
       
       inline def setFetchIdToken(value: String => js.Promise[String]): Self = StObject.set(x, "fetchIdToken", js.Any.fromFunction1(value))
     }

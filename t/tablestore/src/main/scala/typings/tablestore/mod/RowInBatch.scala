@@ -25,7 +25,8 @@ object RowInBatch {
     __obj.asInstanceOf[RowInBatch]
   }
   
-  extension [Self <: RowInBatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowInBatch] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object ConcreteDeclaration {
     __obj.asInstanceOf[ConcreteDeclaration[T]]
   }
   
-  extension [Self <: ConcreteDeclaration[?], T /* <: typings.typescript.mod.Declaration */](x: Self & ConcreteDeclaration[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConcreteDeclaration[?], T /* <: typings.typescript.mod.Declaration */] (val x: Self & ConcreteDeclaration[T]) extends AnyVal {
     
     inline def setIdentity(value: SpecialDeclarationIdentity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     

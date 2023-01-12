@@ -48,7 +48,8 @@ object CreateIntegrationAssociationRequest {
     __obj.asInstanceOf[CreateIntegrationAssociationRequest]
   }
   
-  extension [Self <: CreateIntegrationAssociationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateIntegrationAssociationRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

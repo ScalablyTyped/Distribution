@@ -27,7 +27,8 @@ object CIMVectorMarkerAnchorPoint {
     __obj.asInstanceOf[CIMVectorMarkerAnchorPoint]
   }
   
-  extension [Self <: CIMVectorMarkerAnchorPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMVectorMarkerAnchorPoint] (val x: Self) extends AnyVal {
     
     inline def setX(value: Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

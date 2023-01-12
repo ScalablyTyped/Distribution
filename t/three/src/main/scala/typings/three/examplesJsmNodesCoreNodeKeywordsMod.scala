@@ -78,7 +78,8 @@ object examplesJsmNodesCoreNodeKeywordsMod {
       __obj.asInstanceOf[NodeKeywords]
     }
     
-    extension [Self <: NodeKeywords](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeKeywords] (val x: Self) extends AnyVal {
       
       inline def setAddKeyword(
         value: (String, js.Function1[/* name */ String, typings.three.examplesJsmNodesCoreNodeMod.default]) => Unit

@@ -23,7 +23,8 @@ object DescribeRulesPackagesRequest {
     __obj.asInstanceOf[DescribeRulesPackagesRequest]
   }
   
-  extension [Self <: DescribeRulesPackagesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRulesPackagesRequest] (val x: Self) extends AnyVal {
     
     inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

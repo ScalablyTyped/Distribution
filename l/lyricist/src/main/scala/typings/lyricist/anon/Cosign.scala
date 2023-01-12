@@ -19,7 +19,8 @@ object Cosign {
     __obj.asInstanceOf[Cosign]
   }
   
-  extension [Self <: Cosign](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cosign] (val x: Self) extends AnyVal {
     
     inline def setCosign(value: Boolean): Self = StObject.set(x, "cosign", value.asInstanceOf[js.Any])
     

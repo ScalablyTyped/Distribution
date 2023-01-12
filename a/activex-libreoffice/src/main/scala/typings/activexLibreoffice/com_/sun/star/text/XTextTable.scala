@@ -98,7 +98,8 @@ object XTextTable {
     __obj.asInstanceOf[XTextTable]
   }
   
-  extension [Self <: XTextTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextTable] (val x: Self) extends AnyVal {
     
     inline def setCellNames(value: SafeArray[String]): Self = StObject.set(x, "CellNames", value.asInstanceOf[js.Any])
     

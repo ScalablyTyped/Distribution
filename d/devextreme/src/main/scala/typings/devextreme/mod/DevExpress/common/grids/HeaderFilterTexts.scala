@@ -28,7 +28,8 @@ object HeaderFilterTexts {
     __obj.asInstanceOf[HeaderFilterTexts]
   }
   
-  extension [Self <: HeaderFilterTexts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeaderFilterTexts] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

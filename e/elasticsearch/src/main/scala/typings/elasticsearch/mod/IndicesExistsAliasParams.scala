@@ -17,7 +17,8 @@ object IndicesExistsAliasParams {
     __obj.asInstanceOf[IndicesExistsAliasParams]
   }
   
-  extension [Self <: IndicesExistsAliasParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesExistsAliasParams] (val x: Self) extends AnyVal {
     
     inline def setName(value: NameList): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

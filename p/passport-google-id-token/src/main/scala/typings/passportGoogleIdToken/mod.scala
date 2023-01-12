@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[ParsedToken]
     }
     
-    extension [Self <: ParsedToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedToken] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: Email): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
@@ -69,7 +70,8 @@ object mod {
       __obj.asInstanceOf[StrategyOptions]
     }
     
-    extension [Self <: StrategyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyOptions] (val x: Self) extends AnyVal {
       
       inline def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object IacCustomRules {
     __obj.asInstanceOf[IacCustomRules]
   }
   
-  extension [Self <: IacCustomRules](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IacCustomRules] (val x: Self) extends AnyVal {
     
     inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     

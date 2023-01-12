@@ -28,7 +28,8 @@ object SearchSchemaVersionSummary {
     __obj.asInstanceOf[SearchSchemaVersionSummary]
   }
   
-  extension [Self <: SearchSchemaVersionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchSchemaVersionSummary] (val x: Self) extends AnyVal {
     
     inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     

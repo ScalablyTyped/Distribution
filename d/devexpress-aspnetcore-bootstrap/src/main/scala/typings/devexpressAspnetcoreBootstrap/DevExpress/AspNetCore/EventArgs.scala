@@ -15,7 +15,8 @@ object EventArgs {
     __obj.asInstanceOf[EventArgs]
   }
   
-  extension [Self <: EventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventArgs] (val x: Self) extends AnyVal {
     
     inline def setSender(value: Control): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }

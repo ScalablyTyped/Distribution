@@ -93,7 +93,8 @@ object AwsElasticBeanstalkEnvironmentDetails {
     __obj.asInstanceOf[AwsElasticBeanstalkEnvironmentDetails]
   }
   
-  extension [Self <: AwsElasticBeanstalkEnvironmentDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElasticBeanstalkEnvironmentDetails] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: NonEmptyString): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     

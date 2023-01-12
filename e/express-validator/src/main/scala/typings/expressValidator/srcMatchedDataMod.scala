@@ -32,7 +32,8 @@ object srcMatchedDataMod {
       __obj.asInstanceOf[MatchedDataOptions]
     }
     
-    extension [Self <: MatchedDataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchedDataOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludeOptionals(value: Boolean): Self = StObject.set(x, "includeOptionals", value.asInstanceOf[js.Any])
       

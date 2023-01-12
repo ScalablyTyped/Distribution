@@ -50,7 +50,8 @@ object IRR {
     __obj.asInstanceOf[IRR]
   }
   
-  extension [Self <: IRR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRR] (val x: Self) extends AnyVal {
     
     inline def setAFN(value: js.Array[String]): Self = StObject.set(x, "AFN", value.asInstanceOf[js.Any])
     

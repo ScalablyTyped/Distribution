@@ -16,7 +16,8 @@ object SetBasicFilterRequest {
     __obj.asInstanceOf[SetBasicFilterRequest]
   }
   
-  extension [Self <: SetBasicFilterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetBasicFilterRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: BasicFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DescribeSolutionVersionResponse {
     __obj.asInstanceOf[DescribeSolutionVersionResponse]
   }
   
-  extension [Self <: DescribeSolutionVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSolutionVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setSolutionVersion(value: SolutionVersion): Self = StObject.set(x, "solutionVersion", value.asInstanceOf[js.Any])
     

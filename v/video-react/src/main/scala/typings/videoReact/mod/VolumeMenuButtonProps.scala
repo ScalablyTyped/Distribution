@@ -18,7 +18,8 @@ object VolumeMenuButtonProps {
     __obj.asInstanceOf[VolumeMenuButtonProps]
   }
   
-  extension [Self <: VolumeMenuButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeMenuButtonProps] (val x: Self) extends AnyVal {
     
     inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     

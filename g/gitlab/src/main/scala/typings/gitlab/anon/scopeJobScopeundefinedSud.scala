@@ -19,7 +19,8 @@ object scopeJobScopeundefinedSud {
     __obj.asInstanceOf[scopeJobScopeundefinedSud]
   }
   
-  extension [Self <: scopeJobScopeundefinedSud](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: scopeJobScopeundefinedSud] (val x: Self) extends AnyVal {
     
     inline def setScope(value: JobScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     

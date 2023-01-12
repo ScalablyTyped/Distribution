@@ -33,7 +33,8 @@ object ViewNode {
     __obj.asInstanceOf[ViewNode]
   }
   
-  extension [Self <: ViewNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewNode] (val x: Self) extends AnyVal {
     
     inline def setChildNodes(value: js.Array[ViewNode]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
     

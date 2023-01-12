@@ -20,7 +20,8 @@ object CalendarYearLegendsProps {
     __obj.asInstanceOf[CalendarYearLegendsProps]
   }
   
-  extension [Self <: CalendarYearLegendsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarYearLegendsProps] (val x: Self) extends AnyVal {
     
     inline def setLegend(value: Double => String | Double): Self = StObject.set(x, "legend", js.Any.fromFunction1(value))
     

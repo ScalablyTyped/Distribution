@@ -16,7 +16,8 @@ object GetResponses200ContentApplicationjsonTotalcountNumber {
     __obj.asInstanceOf[GetResponses200ContentApplicationjsonTotalcountNumber]
   }
   
-  extension [Self <: GetResponses200ContentApplicationjsonTotalcountNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResponses200ContentApplicationjsonTotalcountNumber] (val x: Self) extends AnyVal {
     
     inline def setGet(value: Responses200ContentApplicationjsonTotalcountNumber): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }

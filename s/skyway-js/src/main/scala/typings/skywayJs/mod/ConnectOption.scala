@@ -20,7 +20,8 @@ object ConnectOption {
     __obj.asInstanceOf[ConnectOption]
   }
   
-  extension [Self <: ConnectOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectOption] (val x: Self) extends AnyVal {
     
     inline def setDcInit(value: RTCDataChannelInit): Self = StObject.set(x, "dcInit", value.asInstanceOf[js.Any])
     

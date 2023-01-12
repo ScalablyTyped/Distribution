@@ -57,7 +57,8 @@ object LinearGradientProps {
     __obj.asInstanceOf[LinearGradientProps]
   }
   
-  extension [Self <: LinearGradientProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinearGradientProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

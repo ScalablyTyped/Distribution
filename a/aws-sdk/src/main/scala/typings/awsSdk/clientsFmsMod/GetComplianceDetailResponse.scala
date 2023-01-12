@@ -18,7 +18,8 @@ object GetComplianceDetailResponse {
     __obj.asInstanceOf[GetComplianceDetailResponse]
   }
   
-  extension [Self <: GetComplianceDetailResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetComplianceDetailResponse] (val x: Self) extends AnyVal {
     
     inline def setPolicyComplianceDetail(value: PolicyComplianceDetail): Self = StObject.set(x, "PolicyComplianceDetail", value.asInstanceOf[js.Any])
     

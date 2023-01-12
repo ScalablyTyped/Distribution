@@ -20,7 +20,8 @@ object GPUComputePipelineDescriptor {
     __obj.asInstanceOf[GPUComputePipelineDescriptor]
   }
   
-  extension [Self <: GPUComputePipelineDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUComputePipelineDescriptor] (val x: Self) extends AnyVal {
     
     inline def setCompute(value: GPUProgrammableStage): Self = StObject.set(x, "compute", value.asInstanceOf[js.Any])
   }

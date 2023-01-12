@@ -50,7 +50,8 @@ object FieldIndexProperties {
     __obj.asInstanceOf[FieldIndexProperties]
   }
   
-  extension [Self <: FieldIndexProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldIndexProperties] (val x: Self) extends AnyVal {
     
     inline def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     

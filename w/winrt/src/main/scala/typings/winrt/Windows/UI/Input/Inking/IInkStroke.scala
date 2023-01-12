@@ -31,7 +31,8 @@ object IInkStroke {
     __obj.asInstanceOf[IInkStroke]
   }
   
-  extension [Self <: IInkStroke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInkStroke] (val x: Self) extends AnyVal {
     
     inline def setBoundingRect(value: Rect): Self = StObject.set(x, "boundingRect", value.asInstanceOf[js.Any])
     

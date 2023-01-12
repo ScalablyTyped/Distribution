@@ -20,7 +20,8 @@ object EosActionUnlinkAuth {
     __obj.asInstanceOf[EosActionUnlinkAuth]
   }
   
-  extension [Self <: EosActionUnlinkAuth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EosActionUnlinkAuth] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     

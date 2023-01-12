@@ -21,7 +21,8 @@ object AgentNotebookMaterializedInfo {
     __obj.asInstanceOf[AgentNotebookMaterializedInfo]
   }
   
-  extension [Self <: AgentNotebookMaterializedInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentNotebookMaterializedInfo] (val x: Self) extends AnyVal {
     
     inline def setFavorite(value: Boolean): Self = StObject.set(x, "favorite", value.asInstanceOf[js.Any])
     

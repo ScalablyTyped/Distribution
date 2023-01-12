@@ -255,7 +255,8 @@ object Cell {
     __obj.asInstanceOf[Cell]
   }
   
-  extension [Self <: Cell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cell] (val x: Self) extends AnyVal {
     
     inline def setAsianVerticalMode(value: Boolean): Self = StObject.set(x, "AsianVerticalMode", value.asInstanceOf[js.Any])
     

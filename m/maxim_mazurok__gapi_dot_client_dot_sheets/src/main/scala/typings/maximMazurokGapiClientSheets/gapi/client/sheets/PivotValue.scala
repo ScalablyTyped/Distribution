@@ -38,7 +38,8 @@ object PivotValue {
     __obj.asInstanceOf[PivotValue]
   }
   
-  extension [Self <: PivotValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotValue] (val x: Self) extends AnyVal {
     
     inline def setCalculatedDisplayType(value: String): Self = StObject.set(x, "calculatedDisplayType", value.asInstanceOf[js.Any])
     

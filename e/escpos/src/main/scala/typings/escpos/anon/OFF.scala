@@ -20,7 +20,8 @@ object OFF {
     __obj.asInstanceOf[OFF]
   }
   
-  extension [Self <: OFF](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OFF] (val x: Self) extends AnyVal {
     
     inline def setOFF(value: InformationseparatorthreeECNull): Self = StObject.set(x, "OFF", value.asInstanceOf[js.Any])
     

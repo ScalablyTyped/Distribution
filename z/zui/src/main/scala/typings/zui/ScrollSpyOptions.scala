@@ -17,7 +17,8 @@ object ScrollSpyOptions {
     __obj.asInstanceOf[ScrollSpyOptions]
   }
   
-  extension [Self <: ScrollSpyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollSpyOptions] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

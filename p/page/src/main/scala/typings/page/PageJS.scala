@@ -131,7 +131,8 @@ object PageJS {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setClick(value: Boolean): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
@@ -195,7 +196,8 @@ object PageJS {
       __obj.asInstanceOf[RouteOptions]
     }
     
-    extension [Self <: RouteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteOptions] (val x: Self) extends AnyVal {
       
       inline def setSensitive(value: Boolean): Self = StObject.set(x, "sensitive", value.asInstanceOf[js.Any])
       

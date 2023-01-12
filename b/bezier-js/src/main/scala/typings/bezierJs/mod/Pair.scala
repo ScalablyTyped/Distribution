@@ -17,7 +17,8 @@ object Pair {
     __obj.asInstanceOf[Pair]
   }
   
-  extension [Self <: Pair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pair] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: Bezier): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

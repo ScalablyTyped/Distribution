@@ -32,7 +32,8 @@ object DeviceComponentProductionSpecification {
     __obj.asInstanceOf[DeviceComponentProductionSpecification]
   }
   
-  extension [Self <: DeviceComponentProductionSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceComponentProductionSpecification] (val x: Self) extends AnyVal {
     
     inline def setComponentId(value: Identifier): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
     

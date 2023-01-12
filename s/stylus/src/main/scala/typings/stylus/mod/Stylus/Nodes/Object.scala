@@ -61,7 +61,8 @@ object Object {
     __obj.asInstanceOf[Object]
   }
   
-  extension [Self <: Object](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Object] (val x: Self) extends AnyVal {
     
     inline def setGet(value: java.lang.String => Node): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     

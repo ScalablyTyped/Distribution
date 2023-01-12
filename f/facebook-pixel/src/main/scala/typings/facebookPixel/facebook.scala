@@ -27,7 +27,8 @@ object facebook {
         __obj.asInstanceOf[AddPaymentInfoParameters]
       }
       
-      extension [Self <: AddPaymentInfoParameters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AddPaymentInfoParameters] (val x: Self) extends AnyVal {
         
         inline def setContent_category(value: String): Self = StObject.set(x, "content_category", value.asInstanceOf[js.Any])
         
@@ -68,7 +69,8 @@ object facebook {
         __obj.asInstanceOf[AddToCartParameters]
       }
       
-      extension [Self <: AddToCartParameters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AddToCartParameters] (val x: Self) extends AnyVal {
         
         inline def setContent_ids(value: js.Array[String]): Self = StObject.set(x, "content_ids", value.asInstanceOf[js.Any])
         
@@ -113,7 +115,8 @@ object facebook {
         __obj.asInstanceOf[AddToWishlistParameters]
       }
       
-      extension [Self <: AddToWishlistParameters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AddToWishlistParameters] (val x: Self) extends AnyVal {
         
         inline def setContent_category(value: String): Self = StObject.set(x, "content_category", value.asInstanceOf[js.Any])
         
@@ -156,7 +159,8 @@ object facebook {
         __obj.asInstanceOf[CompleteRegistrationParameters]
       }
       
-      extension [Self <: CompleteRegistrationParameters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CompleteRegistrationParameters] (val x: Self) extends AnyVal {
         
         inline def setContent_name(value: String): Self = StObject.set(x, "content_name", value.asInstanceOf[js.Any])
         
@@ -281,7 +285,8 @@ object facebook {
         __obj.asInstanceOf[InitiateCheckoutParameters]
       }
       
-      extension [Self <: InitiateCheckoutParameters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InitiateCheckoutParameters] (val x: Self) extends AnyVal {
         
         inline def setContent_category(value: String): Self = StObject.set(x, "content_category", value.asInstanceOf[js.Any])
         
@@ -328,7 +333,8 @@ object facebook {
         __obj.asInstanceOf[LeadParameters]
       }
       
-      extension [Self <: LeadParameters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LeadParameters] (val x: Self) extends AnyVal {
         
         inline def setContent_category(value: String): Self = StObject.set(x, "content_category", value.asInstanceOf[js.Any])
         
@@ -371,7 +377,8 @@ object facebook {
         __obj.asInstanceOf[PurchaseParameters]
       }
       
-      extension [Self <: PurchaseParameters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PurchaseParameters] (val x: Self) extends AnyVal {
         
         inline def setContent_ids(value: js.Array[String]): Self = StObject.set(x, "content_ids", value.asInstanceOf[js.Any])
         
@@ -420,7 +427,8 @@ object facebook {
         __obj.asInstanceOf[SearchParameters]
       }
       
-      extension [Self <: SearchParameters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchParameters] (val x: Self) extends AnyVal {
         
         inline def setContent_category(value: String): Self = StObject.set(x, "content_category", value.asInstanceOf[js.Any])
         
@@ -469,7 +477,8 @@ object facebook {
         __obj.asInstanceOf[ViewContentParameters]
       }
       
-      extension [Self <: ViewContentParameters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ViewContentParameters] (val x: Self) extends AnyVal {
         
         inline def setContent_category(value: String): Self = StObject.set(x, "content_category", value.asInstanceOf[js.Any])
         

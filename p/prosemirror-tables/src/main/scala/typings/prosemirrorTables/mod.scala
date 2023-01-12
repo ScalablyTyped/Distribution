@@ -275,7 +275,8 @@ object mod {
       __obj.asInstanceOf[CellAttributes]
     }
     
-    extension [Self <: CellAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellAttributes] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -306,7 +307,8 @@ object mod {
       __obj.asInstanceOf[CellBookmark]
     }
     
-    extension [Self <: CellBookmark](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellBookmark] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -334,7 +336,8 @@ object mod {
       __obj.asInstanceOf[CellSelectionJSON]
     }
     
-    extension [Self <: CellSelectionJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellSelectionJSON] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -359,7 +362,8 @@ object mod {
       __obj.asInstanceOf[GetCellTypeOptions]
     }
     
-    extension [Self <: GetCellTypeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetCellTypeOptions] (val x: Self) extends AnyVal {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
@@ -386,7 +390,8 @@ object mod {
       __obj.asInstanceOf[Rect]
     }
     
-    extension [Self <: Rect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -409,7 +414,8 @@ object mod {
       __obj.asInstanceOf[TableEditingOptions]
     }
     
-    extension [Self <: TableEditingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableEditingOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowTableNodeSelection(value: Boolean): Self = StObject.set(x, "allowTableNodeSelection", value.asInstanceOf[js.Any])
       
@@ -432,7 +438,8 @@ object mod {
       __obj.asInstanceOf[TableNodesOptions]
     }
     
-    extension [Self <: TableNodesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableNodesOptions] (val x: Self) extends AnyVal {
       
       inline def setCellAttributes(value: StringDictionary[CellAttributes]): Self = StObject.set(x, "cellAttributes", value.asInstanceOf[js.Any])
       
@@ -461,7 +468,8 @@ object mod {
       __obj.asInstanceOf[TableNodes_]
     }
     
-    extension [Self <: TableNodes_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableNodes_] (val x: Self) extends AnyVal {
       
       inline def setTable(value: NodeSpec): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
@@ -498,7 +506,8 @@ object mod {
       __obj.asInstanceOf[TableRect]
     }
     
-    extension [Self <: TableRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableRect] (val x: Self) extends AnyVal {
       
       inline def setMap(value: TableMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       

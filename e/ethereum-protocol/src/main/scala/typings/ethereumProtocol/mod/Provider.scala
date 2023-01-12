@@ -15,7 +15,8 @@ object Provider {
     __obj.asInstanceOf[Provider]
   }
   
-  extension [Self <: Provider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
     
     inline def setSendAsync(value: (JSONRPCRequestPayload, JSONRPCErrorCallback) => scala.Unit): Self = StObject.set(x, "sendAsync", js.Any.fromFunction2(value))
   }

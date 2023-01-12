@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "purdy"
-version := "3.5-dt-20211202Z-52c681"
+version := "3.5-dt-20211202Z-b139b4"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

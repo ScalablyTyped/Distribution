@@ -15,7 +15,8 @@ object HasFocus {
     __obj.asInstanceOf[HasFocus]
   }
   
-  extension [Self <: HasFocus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasFocus] (val x: Self) extends AnyVal {
     
     inline def setHasFocus(value: Boolean): Self = StObject.set(x, "hasFocus", value.asInstanceOf[js.Any])
   }

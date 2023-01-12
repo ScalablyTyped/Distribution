@@ -55,7 +55,8 @@ object distSrcMod {
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      extension [Self <: NameServiceMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
         
         inline def `setRemote-config`(value: RemoteConfig): Self = StObject.set(x, "remote-config", value.asInstanceOf[js.Any])
       }
@@ -75,7 +76,8 @@ object distSrcMod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setFIREBASE_REMOTE_CONFIG_URL_BASE(value: String): Self = StObject.set(x, "FIREBASE_REMOTE_CONFIG_URL_BASE", value.asInstanceOf[js.Any])
       }

@@ -18,7 +18,8 @@ object AssociateUserResponse {
     __obj.asInstanceOf[AssociateUserResponse]
   }
   
-  extension [Self <: AssociateUserResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateUserResponse] (val x: Self) extends AnyVal {
     
     inline def setInstanceUserSummary(value: InstanceUserSummary): Self = StObject.set(x, "InstanceUserSummary", value.asInstanceOf[js.Any])
   }

@@ -49,7 +49,8 @@ object WebViewHTMLAttributes {
     __obj.asInstanceOf[WebViewHTMLAttributes]
   }
   
-  extension [Self <: WebViewHTMLAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebViewHTMLAttributes] (val x: Self) extends AnyVal {
     
     inline def setAllowfullscreen(value: Boolean): Self = StObject.set(x, "allowfullscreen", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object BlockHash {
     __obj.asInstanceOf[BlockHash[T]]
   }
   
-  extension [Self <: BlockHash[?], T](x: Self & BlockHash[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockHash[?], T] (val x: Self & BlockHash[T]) extends AnyVal {
     
     inline def setEndian(value: big | little): Self = StObject.set(x, "endian", value.asInstanceOf[js.Any])
     

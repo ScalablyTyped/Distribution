@@ -55,7 +55,8 @@ object libCaptureArgCaptorMod {
       __obj.asInstanceOf[ArgCaptor1[T]]
     }
     
-    extension [Self <: ArgCaptor1[?], T](x: Self & ArgCaptor1[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgCaptor1[?], T] (val x: Self & ArgCaptor1[T]) extends AnyVal {
       
       inline def setBeforeLast(value: () => js.Array[T]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
       
@@ -99,7 +100,8 @@ object libCaptureArgCaptorMod {
       __obj.asInstanceOf[ArgCaptor10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]]
     }
     
-    extension [Self <: ArgCaptor10[?, ?, ?, ?, ?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5, T6, T7, T8, T9](x: Self & (ArgCaptor10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgCaptor10[?, ?, ?, ?, ?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5, T6, T7, T8, T9] (val x: Self & (ArgCaptor10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9])) extends AnyVal {
       
       inline def setBeforeLast(value: () => js.Tuple10[T0, T1, T2, T3, T4, T5, T6, T7, T8, T9]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
       
@@ -143,7 +145,8 @@ object libCaptureArgCaptorMod {
       __obj.asInstanceOf[ArgCaptor2[T0, T1]]
     }
     
-    extension [Self <: ArgCaptor2[?, ?], T0, T1](x: Self & (ArgCaptor2[T0, T1])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgCaptor2[?, ?], T0, T1] (val x: Self & (ArgCaptor2[T0, T1])) extends AnyVal {
       
       inline def setBeforeLast(value: () => js.Tuple2[T0, T1]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
       
@@ -187,7 +190,8 @@ object libCaptureArgCaptorMod {
       __obj.asInstanceOf[ArgCaptor3[T0, T1, T2]]
     }
     
-    extension [Self <: ArgCaptor3[?, ?, ?], T0, T1, T2](x: Self & (ArgCaptor3[T0, T1, T2])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgCaptor3[?, ?, ?], T0, T1, T2] (val x: Self & (ArgCaptor3[T0, T1, T2])) extends AnyVal {
       
       inline def setBeforeLast(value: () => js.Tuple3[T0, T1, T2]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
       
@@ -231,7 +235,8 @@ object libCaptureArgCaptorMod {
       __obj.asInstanceOf[ArgCaptor4[T0, T1, T2, T3]]
     }
     
-    extension [Self <: ArgCaptor4[?, ?, ?, ?], T0, T1, T2, T3](x: Self & (ArgCaptor4[T0, T1, T2, T3])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgCaptor4[?, ?, ?, ?], T0, T1, T2, T3] (val x: Self & (ArgCaptor4[T0, T1, T2, T3])) extends AnyVal {
       
       inline def setBeforeLast(value: () => js.Tuple4[T0, T1, T2, T3]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
       
@@ -275,7 +280,8 @@ object libCaptureArgCaptorMod {
       __obj.asInstanceOf[ArgCaptor5[T0, T1, T2, T3, T4]]
     }
     
-    extension [Self <: ArgCaptor5[?, ?, ?, ?, ?], T0, T1, T2, T3, T4](x: Self & (ArgCaptor5[T0, T1, T2, T3, T4])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgCaptor5[?, ?, ?, ?, ?], T0, T1, T2, T3, T4] (val x: Self & (ArgCaptor5[T0, T1, T2, T3, T4])) extends AnyVal {
       
       inline def setBeforeLast(value: () => js.Tuple5[T0, T1, T2, T3, T4]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
       
@@ -319,7 +325,8 @@ object libCaptureArgCaptorMod {
       __obj.asInstanceOf[ArgCaptor6[T0, T1, T2, T3, T4, T5]]
     }
     
-    extension [Self <: ArgCaptor6[?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5](x: Self & (ArgCaptor6[T0, T1, T2, T3, T4, T5])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgCaptor6[?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5] (val x: Self & (ArgCaptor6[T0, T1, T2, T3, T4, T5])) extends AnyVal {
       
       inline def setBeforeLast(value: () => js.Tuple6[T0, T1, T2, T3, T4, T5]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
       
@@ -363,7 +370,8 @@ object libCaptureArgCaptorMod {
       __obj.asInstanceOf[ArgCaptor7[T0, T1, T2, T3, T4, T5, T6]]
     }
     
-    extension [Self <: ArgCaptor7[?, ?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5, T6](x: Self & (ArgCaptor7[T0, T1, T2, T3, T4, T5, T6])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgCaptor7[?, ?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5, T6] (val x: Self & (ArgCaptor7[T0, T1, T2, T3, T4, T5, T6])) extends AnyVal {
       
       inline def setBeforeLast(value: () => js.Tuple7[T0, T1, T2, T3, T4, T5, T6]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
       
@@ -407,7 +415,8 @@ object libCaptureArgCaptorMod {
       __obj.asInstanceOf[ArgCaptor8[T0, T1, T2, T3, T4, T5, T6, T7]]
     }
     
-    extension [Self <: ArgCaptor8[?, ?, ?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5, T6, T7](x: Self & (ArgCaptor8[T0, T1, T2, T3, T4, T5, T6, T7])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgCaptor8[?, ?, ?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5, T6, T7] (val x: Self & (ArgCaptor8[T0, T1, T2, T3, T4, T5, T6, T7])) extends AnyVal {
       
       inline def setBeforeLast(value: () => js.Tuple8[T0, T1, T2, T3, T4, T5, T6, T7]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
       
@@ -451,7 +460,8 @@ object libCaptureArgCaptorMod {
       __obj.asInstanceOf[ArgCaptor9[T0, T1, T2, T3, T4, T5, T6, T7, T8]]
     }
     
-    extension [Self <: ArgCaptor9[?, ?, ?, ?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5, T6, T7, T8](x: Self & (ArgCaptor9[T0, T1, T2, T3, T4, T5, T6, T7, T8])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgCaptor9[?, ?, ?, ?, ?, ?, ?, ?, ?], T0, T1, T2, T3, T4, T5, T6, T7, T8] (val x: Self & (ArgCaptor9[T0, T1, T2, T3, T4, T5, T6, T7, T8])) extends AnyVal {
       
       inline def setBeforeLast(value: () => js.Tuple9[T0, T1, T2, T3, T4, T5, T6, T7, T8]): Self = StObject.set(x, "beforeLast", js.Any.fromFunction0(value))
       

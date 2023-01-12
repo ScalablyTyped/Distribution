@@ -18,7 +18,8 @@ object GetMessagingSessionEndpointResponse {
     __obj.asInstanceOf[GetMessagingSessionEndpointResponse]
   }
   
-  extension [Self <: GetMessagingSessionEndpointResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMessagingSessionEndpointResponse] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: MessagingSessionEndpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     

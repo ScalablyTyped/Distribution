@@ -50,7 +50,8 @@ object CacheNode {
     __obj.asInstanceOf[CacheNode]
   }
   
-  extension [Self <: CacheNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheNode] (val x: Self) extends AnyVal {
     
     inline def setFiltered_(value: Any): Self = StObject.set(x, "filtered_", value.asInstanceOf[js.Any])
     

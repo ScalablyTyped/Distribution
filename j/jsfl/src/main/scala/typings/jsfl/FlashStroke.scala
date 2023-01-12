@@ -114,7 +114,8 @@ object FlashStroke {
     __obj.asInstanceOf[FlashStroke]
   }
   
-  extension [Self <: FlashStroke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashStroke] (val x: Self) extends AnyVal {
     
     inline def setBreakAtCorners(value: Boolean): Self = StObject.set(x, "breakAtCorners", value.asInstanceOf[js.Any])
     

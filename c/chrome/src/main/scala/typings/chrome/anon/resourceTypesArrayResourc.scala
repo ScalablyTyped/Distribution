@@ -193,7 +193,8 @@ object resourceTypesArrayResourc {
     __obj.asInstanceOf[resourceTypesArrayResourc]
   }
   
-  extension [Self <: resourceTypesArrayResourc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: resourceTypesArrayResourc] (val x: Self) extends AnyVal {
     
     inline def setDomainType(value: DomainType): Self = StObject.set(x, "domainType", value.asInstanceOf[js.Any])
     

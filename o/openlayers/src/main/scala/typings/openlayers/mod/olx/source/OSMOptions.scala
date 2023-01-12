@@ -35,7 +35,8 @@ object OSMOptions {
     __obj.asInstanceOf[OSMOptions]
   }
   
-  extension [Self <: OSMOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSMOptions] (val x: Self) extends AnyVal {
     
     inline def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
     

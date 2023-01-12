@@ -57,7 +57,8 @@ object PartialStyleRulesSelectCl {
     __obj.asInstanceOf[PartialStyleRulesSelectCl]
   }
   
-  extension [Self <: PartialStyleRulesSelectCl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesSelectCl] (val x: Self) extends AnyVal {
     
     inline def setDisabled(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

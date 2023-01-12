@@ -61,7 +61,8 @@ object mod {
     @js.native
     def apply(react: TypeofReact): FluxChildMixin = js.native
     
-    extension [Self <: FluxChildMixin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FluxChildMixin] (val x: Self) extends AnyVal {
       
       inline def setGetFlux(value: () => Flux): Self = StObject.set(x, "getFlux", js.Any.fromFunction0(value))
     }
@@ -77,7 +78,8 @@ object mod {
     @js.native
     def apply(react: TypeofReact): FluxMixin = js.native
     
-    extension [Self <: FluxMixin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FluxMixin] (val x: Self) extends AnyVal {
       
       inline def setGetFlux(value: () => Flux): Self = StObject.set(x, "getFlux", js.Any.fromFunction0(value))
     }
@@ -93,7 +95,8 @@ object mod {
     @js.native
     def apply[StoreState](storeNames: String*): StoreWatchMixin[StoreState] = js.native
     
-    extension [Self <: StoreWatchMixin[?], StoreState](x: Self & StoreWatchMixin[StoreState]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreWatchMixin[?], StoreState] (val x: Self & StoreWatchMixin[StoreState]) extends AnyVal {
       
       inline def setGetStateFromFlux(value: () => StoreState): Self = StObject.set(x, "getStateFromFlux", js.Any.fromFunction0(value))
     }
@@ -117,7 +120,8 @@ object mod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setFlux(value: Flux): Self = StObject.set(x, "flux", value.asInstanceOf[js.Any])
     }
@@ -155,7 +159,8 @@ object mod {
       __obj.asInstanceOf[StoreSpec]
     }
     
-    extension [Self <: StoreSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreSpec] (val x: Self) extends AnyVal {
       
       inline def setActions(value: Any): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

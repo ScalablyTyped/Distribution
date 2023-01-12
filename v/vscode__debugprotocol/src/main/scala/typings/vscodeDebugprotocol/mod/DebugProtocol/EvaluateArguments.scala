@@ -43,7 +43,8 @@ object EvaluateArguments {
     __obj.asInstanceOf[EvaluateArguments]
   }
   
-  extension [Self <: EvaluateArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluateArguments] (val x: Self) extends AnyVal {
     
     inline def setContext(value: variables | watch | repl | hover | clipboard | String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

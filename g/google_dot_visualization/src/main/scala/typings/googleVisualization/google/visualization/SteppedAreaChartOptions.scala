@@ -73,7 +73,8 @@ object SteppedAreaChartOptions {
     __obj.asInstanceOf[SteppedAreaChartOptions]
   }
   
-  extension [Self <: SteppedAreaChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SteppedAreaChartOptions] (val x: Self) extends AnyVal {
     
     inline def setAggregationTarget(value: String): Self = StObject.set(x, "aggregationTarget", value.asInstanceOf[js.Any])
     

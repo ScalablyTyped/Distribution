@@ -18,7 +18,8 @@ object String {
   @js.native
   val ^ : StringConstructor = js.native
   
-  extension [Self <: String](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: String] (val x: Self) extends AnyVal {
     
     inline def setGetValue(value: () => java.lang.String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     

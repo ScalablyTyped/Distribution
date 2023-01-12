@@ -68,7 +68,8 @@ object mod {
     @js.native
     val ^ : accounts = js.native
     
-    extension [Self <: accounts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: accounts] (val x: Self) extends AnyVal {
       
       inline def setId(value: Cancel): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -90,7 +91,8 @@ object mod {
       __obj.asInstanceOf[CredentialResponse]
     }
     
-    extension [Self <: CredentialResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CredentialResponse] (val x: Self) extends AnyVal {
       
       inline def setCredential(value: String): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
       
@@ -125,7 +127,8 @@ object mod {
       __obj.asInstanceOf[GsiButtonConfiguration]
     }
     
-    extension [Self <: GsiButtonConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GsiButtonConfiguration] (val x: Self) extends AnyVal {
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -201,7 +204,8 @@ object mod {
       __obj.asInstanceOf[IdConfiguration]
     }
     
-    extension [Self <: IdConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdConfiguration] (val x: Self) extends AnyVal {
       
       inline def setAllowed_parent_origin(value: String | js.Array[String]): Self = StObject.set(x, "allowed_parent_origin", value.asInstanceOf[js.Any])
       
@@ -302,7 +306,8 @@ object mod {
       __obj.asInstanceOf[PromptMomentNotification]
     }
     
-    extension [Self <: PromptMomentNotification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromptMomentNotification] (val x: Self) extends AnyVal {
       
       inline def setGetDismissedReason(value: () => credential_returned | cancel_called | flow_restarted): Self = StObject.set(x, "getDismissedReason", js.Any.fromFunction0(value))
       
@@ -339,7 +344,8 @@ object mod {
       __obj.asInstanceOf[RevocationResponse]
     }
     
-    extension [Self <: RevocationResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RevocationResponse] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

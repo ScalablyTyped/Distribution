@@ -17,7 +17,8 @@ object CoreDateTimeContext {
     __obj.asInstanceOf[CoreDateTimeContext[DateTimeFormats]]
   }
   
-  extension [Self <: CoreDateTimeContext[?], DateTimeFormats](x: Self & CoreDateTimeContext[DateTimeFormats]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreDateTimeContext[?], DateTimeFormats] (val x: Self & CoreDateTimeContext[DateTimeFormats]) extends AnyVal {
     
     inline def setDatetimeFormats(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof DateTimeFormats ]: DateTimeFormats[K]} */ js.Any

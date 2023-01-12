@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Cancellation]
     }
     
-    extension [Self <: Cancellation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancellation] (val x: Self) extends AnyVal {
       
       inline def setCancellation(value: Boolean): Self = StObject.set(x, "cancellation", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[WForgottenReturn]
     }
     
-    extension [Self <: WForgottenReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WForgottenReturn] (val x: Self) extends AnyVal {
       
       inline def setWForgottenReturn(value: Boolean): Self = StObject.set(x, "wForgottenReturn", value.asInstanceOf[js.Any])
     }

@@ -176,7 +176,8 @@ object XWizard {
     __obj.asInstanceOf[XWizard]
   }
   
-  extension [Self <: XWizard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XWizard] (val x: Self) extends AnyVal {
     
     inline def setActivatePath(value: (Double, Boolean) => Unit): Self = StObject.set(x, "activatePath", js.Any.fromFunction2(value))
     

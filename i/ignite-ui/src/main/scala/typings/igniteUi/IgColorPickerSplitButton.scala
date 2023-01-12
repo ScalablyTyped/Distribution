@@ -90,7 +90,8 @@ object IgColorPickerSplitButton {
     __obj.asInstanceOf[IgColorPickerSplitButton]
   }
   
-  extension [Self <: IgColorPickerSplitButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgColorPickerSplitButton] (val x: Self) extends AnyVal {
     
     inline def setClick(value: (/* event */ Event, /* ui */ ClickEventUIParam) => Unit): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
     

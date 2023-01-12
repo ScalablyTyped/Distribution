@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[BorderRadius]
     }
     
-    extension [Self <: BorderRadius](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BorderRadius] (val x: Self) extends AnyVal {
       
       inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
       

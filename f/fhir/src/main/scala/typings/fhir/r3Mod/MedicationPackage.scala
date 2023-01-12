@@ -30,7 +30,8 @@ object MedicationPackage {
     __obj.asInstanceOf[MedicationPackage]
   }
   
-  extension [Self <: MedicationPackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationPackage] (val x: Self) extends AnyVal {
     
     inline def setBatch(value: js.Array[MedicationPackageBatch]): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     

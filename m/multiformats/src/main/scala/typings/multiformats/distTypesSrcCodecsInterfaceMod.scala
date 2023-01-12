@@ -21,7 +21,8 @@ object distTypesSrcCodecsInterfaceMod {
       __obj.asInstanceOf[BlockCodec[Code, T]]
     }
     
-    extension [Self <: BlockCodec[?, ?], Code /* <: Double */, T](x: Self & (BlockCodec[Code, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockCodec[?, ?], Code /* <: Double */, T] (val x: Self & (BlockCodec[Code, T])) extends AnyVal {
       
       inline def setDecode(value: ByteView[T] => T): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     }
@@ -40,7 +41,8 @@ object distTypesSrcCodecsInterfaceMod {
       __obj.asInstanceOf[BlockDecoder[Code, T]]
     }
     
-    extension [Self <: BlockDecoder[?, ?], Code /* <: Double */, T](x: Self & (BlockDecoder[Code, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockDecoder[?, ?], Code /* <: Double */, T] (val x: Self & (BlockDecoder[Code, T])) extends AnyVal {
       
       inline def setCode(value: Code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -63,7 +65,8 @@ object distTypesSrcCodecsInterfaceMod {
       __obj.asInstanceOf[BlockEncoder[Code, T]]
     }
     
-    extension [Self <: BlockEncoder[?, ?], Code /* <: Double */, T](x: Self & (BlockEncoder[Code, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockEncoder[?, ?], Code /* <: Double */, T] (val x: Self & (BlockEncoder[Code, T])) extends AnyVal {
       
       inline def setCode(value: Code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

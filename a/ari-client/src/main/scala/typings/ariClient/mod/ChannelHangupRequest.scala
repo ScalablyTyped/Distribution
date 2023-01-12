@@ -38,7 +38,8 @@ object ChannelHangupRequest {
     __obj.asInstanceOf[ChannelHangupRequest]
   }
   
-  extension [Self <: ChannelHangupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelHangupRequest] (val x: Self) extends AnyVal {
     
     inline def setCause(value: Double): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object TElementContainerNode {
     __obj.asInstanceOf[TElementContainerNode]
   }
   
-  extension [Self <: TElementContainerNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TElementContainerNode] (val x: Self) extends AnyVal {
     
     inline def setChild(value: TElementNode | TTextNode | TContainerNode | TElementContainerNode | TProjectionNode): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object HalfExtents {
     __obj.asInstanceOf[HalfExtents]
   }
   
-  extension [Self <: HalfExtents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HalfExtents] (val x: Self) extends AnyVal {
     
     inline def setCalculateTangents(value: Boolean): Self = StObject.set(x, "calculateTangents", value.asInstanceOf[js.Any])
     

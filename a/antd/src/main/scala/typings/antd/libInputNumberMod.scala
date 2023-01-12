@@ -575,7 +575,8 @@ object libInputNumberMod extends Shortcut {
       __obj.asInstanceOf[InputNumberProps[T]]
     }
     
-    extension [Self <: InputNumberProps[?], T /* <: ValueType */](x: Self & InputNumberProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputNumberProps[?], T /* <: ValueType */] (val x: Self & InputNumberProps[T]) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

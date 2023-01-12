@@ -38,7 +38,8 @@ object Processor {
     __obj.asInstanceOf[Processor]
   }
   
-  extension [Self <: Processor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Processor] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: ProcessorConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     

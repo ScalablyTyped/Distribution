@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsMicrosoft365SmallMod extends Shortcut {
       __obj.asInstanceOf[Microsoft365SmallProps]
     }
     
-    extension [Self <: Microsoft365SmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Microsoft365SmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

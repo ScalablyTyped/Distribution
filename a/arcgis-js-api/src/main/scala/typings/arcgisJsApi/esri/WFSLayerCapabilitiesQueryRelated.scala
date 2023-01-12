@@ -34,7 +34,8 @@ object WFSLayerCapabilitiesQueryRelated {
     __obj.asInstanceOf[WFSLayerCapabilitiesQueryRelated]
   }
   
-  extension [Self <: WFSLayerCapabilitiesQueryRelated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WFSLayerCapabilitiesQueryRelated] (val x: Self) extends AnyVal {
     
     inline def setSupportsCount(value: Boolean): Self = StObject.set(x, "supportsCount", value.asInstanceOf[js.Any])
     

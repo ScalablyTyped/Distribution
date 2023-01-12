@@ -26,7 +26,8 @@ object SelectClause {
     __obj.asInstanceOf[SelectClause]
   }
   
-  extension [Self <: SelectClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectClause] (val x: Self) extends AnyVal {
     
     inline def setPropertyPaths(value: js.Array[String]): Self = StObject.set(x, "propertyPaths", value.asInstanceOf[js.Any])
     

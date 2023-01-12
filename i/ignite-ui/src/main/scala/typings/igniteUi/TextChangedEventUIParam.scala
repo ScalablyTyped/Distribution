@@ -28,7 +28,8 @@ object TextChangedEventUIParam {
     __obj.asInstanceOf[TextChangedEventUIParam]
   }
   
-  extension [Self <: TextChangedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextChangedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setOldText(value: String): Self = StObject.set(x, "oldText", value.asInstanceOf[js.Any])
     

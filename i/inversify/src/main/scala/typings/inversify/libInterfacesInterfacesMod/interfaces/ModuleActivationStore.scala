@@ -29,7 +29,8 @@ object ModuleActivationStore {
     __obj.asInstanceOf[ModuleActivationStore]
   }
   
-  extension [Self <: ModuleActivationStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleActivationStore] (val x: Self) extends AnyVal {
     
     inline def setAddActivation(value: (Double, ServiceIdentifier[Any], BindingActivation[Any]) => Unit): Self = StObject.set(x, "addActivation", js.Any.fromFunction3(value))
     

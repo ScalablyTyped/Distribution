@@ -22,7 +22,8 @@ object CustomList {
     __obj.asInstanceOf[CustomList]
   }
   
-  extension [Self <: CustomList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomList] (val x: Self) extends AnyVal {
     
     inline def setCustomListId(value: String): Self = StObject.set(x, "customListId", value.asInstanceOf[js.Any])
     

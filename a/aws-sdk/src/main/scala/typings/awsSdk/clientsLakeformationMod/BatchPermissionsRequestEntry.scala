@@ -38,7 +38,8 @@ object BatchPermissionsRequestEntry {
     __obj.asInstanceOf[BatchPermissionsRequestEntry]
   }
   
-  extension [Self <: BatchPermissionsRequestEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchPermissionsRequestEntry] (val x: Self) extends AnyVal {
     
     inline def setId(value: Identifier): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

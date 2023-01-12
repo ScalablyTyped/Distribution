@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsAdminAccessMod extends Shortcu
       __obj.asInstanceOf[AdminAccessProps]
     }
     
-    extension [Self <: AdminAccessProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdminAccessProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

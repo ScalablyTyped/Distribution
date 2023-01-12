@@ -19,7 +19,8 @@ object ItemActionStat {
     __obj.asInstanceOf[ItemActionStat]
   }
   
-  extension [Self <: ItemActionStat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemActionStat] (val x: Self) extends AnyVal {
     
     inline def setActionCount(value: NullableOption[Double]): Self = StObject.set(x, "actionCount", value.asInstanceOf[js.Any])
     

@@ -121,7 +121,8 @@ object mod {
       __obj.asInstanceOf[DvaOption]
     }
     
-    extension [Self <: DvaOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DvaOption] (val x: Self) extends AnyVal {
       
       inline def setHistory(value: js.Object): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object mod {
       __obj.asInstanceOf[EffectsCommandMap]
     }
     
-    extension [Self <: EffectsCommandMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EffectsCommandMap] (val x: Self) extends AnyVal {
       
       inline def setCall(value: js.Function): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
       
@@ -217,7 +219,8 @@ object mod {
       __obj.asInstanceOf[Hooks]
     }
     
-    extension [Self <: Hooks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hooks] (val x: Self) extends AnyVal {
       
       inline def setExtraEnhancers(value: js.Array[StoreEnhancer[Any, js.Object]]): Self = StObject.set(x, "extraEnhancers", value.asInstanceOf[js.Any])
       
@@ -278,7 +281,8 @@ object mod {
       __obj.asInstanceOf[Model]
     }
     
-    extension [Self <: Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Model] (val x: Self) extends AnyVal {
       
       inline def setEffects(value: EffectsMapObject): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
       
@@ -319,7 +323,8 @@ object mod {
       __obj.asInstanceOf[RouterAPI]
     }
     
-    extension [Self <: RouterAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterAPI] (val x: Self) extends AnyVal {
       
       inline def setApp(value: DvaInstance): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -342,7 +347,8 @@ object mod {
       __obj.asInstanceOf[SubscriptionAPI]
     }
     
-    extension [Self <: SubscriptionAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionAPI] (val x: Self) extends AnyVal {
       
       inline def setDispatch(value: Any => Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       

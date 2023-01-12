@@ -95,7 +95,8 @@ object XConversionDictionaryList {
     __obj.asInstanceOf[XConversionDictionaryList]
   }
   
-  extension [Self <: XConversionDictionaryList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConversionDictionaryList] (val x: Self) extends AnyVal {
     
     inline def setAddNewDictionary(value: (String, Locale, Double) => XConversionDictionary): Self = StObject.set(x, "addNewDictionary", js.Any.fromFunction3(value))
     

@@ -18,7 +18,8 @@ object AnalysisSourceEntity {
     __obj.asInstanceOf[AnalysisSourceEntity]
   }
   
-  extension [Self <: AnalysisSourceEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisSourceEntity] (val x: Self) extends AnyVal {
     
     inline def setSourceTemplate(value: AnalysisSourceTemplate): Self = StObject.set(x, "SourceTemplate", value.asInstanceOf[js.Any])
     

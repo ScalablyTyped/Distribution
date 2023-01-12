@@ -30,7 +30,8 @@ object AllTypeaheadOwnAndInjectedProps {
     __obj.asInstanceOf[AllTypeaheadOwnAndInjectedProps[T]]
   }
   
-  extension [Self <: AllTypeaheadOwnAndInjectedProps[?], T /* <: TypeaheadModel */](x: Self & AllTypeaheadOwnAndInjectedProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllTypeaheadOwnAndInjectedProps[?], T /* <: TypeaheadModel */] (val x: Self & AllTypeaheadOwnAndInjectedProps[T]) extends AnyVal {
     
     inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     

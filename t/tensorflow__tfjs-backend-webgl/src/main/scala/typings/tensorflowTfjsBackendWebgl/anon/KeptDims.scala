@@ -19,7 +19,8 @@ object KeptDims {
     __obj.asInstanceOf[KeptDims]
   }
   
-  extension [Self <: KeptDims](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeptDims] (val x: Self) extends AnyVal {
     
     inline def setKeptDims(value: js.Array[Double]): Self = StObject.set(x, "keptDims", value.asInstanceOf[js.Any])
     

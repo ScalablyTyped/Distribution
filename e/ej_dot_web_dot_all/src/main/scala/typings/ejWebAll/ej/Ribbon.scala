@@ -337,7 +337,8 @@ object Ribbon {
       __obj.asInstanceOf[ApplicationTab]
     }
     
-    extension [Self <: ApplicationTab](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplicationTab] (val x: Self) extends AnyVal {
       
       inline def setBackstageSettings(value: ApplicationTabBackstageSettings): Self = StObject.set(x, "backstageSettings", value.asInstanceOf[js.Any])
       
@@ -391,7 +392,8 @@ object Ribbon {
       __obj.asInstanceOf[ApplicationTabBackstageSettings]
     }
     
-    extension [Self <: ApplicationTabBackstageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplicationTabBackstageSettings] (val x: Self) extends AnyVal {
       
       inline def setHeaderWidth(value: String | Double): Self = StObject.set(x, "headerWidth", value.asInstanceOf[js.Any])
       
@@ -452,7 +454,8 @@ object Ribbon {
       __obj.asInstanceOf[ApplicationTabBackstageSettingsPage]
     }
     
-    extension [Self <: ApplicationTabBackstageSettingsPage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplicationTabBackstageSettingsPage] (val x: Self) extends AnyVal {
       
       inline def setContentID(value: String): Self = StObject.set(x, "contentID", value.asInstanceOf[js.Any])
       
@@ -509,7 +512,8 @@ object Ribbon {
       __obj.asInstanceOf[BackstageItemClickEventArgs]
     }
     
-    extension [Self <: BackstageItemClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackstageItemClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -562,7 +566,8 @@ object Ribbon {
       __obj.asInstanceOf[BeforeTabRemoveEventArgs]
     }
     
-    extension [Self <: BeforeTabRemoveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeTabRemoveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -603,7 +608,8 @@ object Ribbon {
       __obj.asInstanceOf[CollapseEventArgs]
     }
     
-    extension [Self <: CollapseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -638,7 +644,8 @@ object Ribbon {
       __obj.asInstanceOf[CollapsePinSettings]
     }
     
-    extension [Self <: CollapsePinSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapsePinSettings] (val x: Self) extends AnyVal {
       
       inline def setCustomToolTip(value: Any): Self = StObject.set(x, "customToolTip", value.asInstanceOf[js.Any])
       
@@ -674,7 +681,8 @@ object Ribbon {
       __obj.asInstanceOf[ContextualTab]
     }
     
-    extension [Self <: ContextualTab](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextualTab] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -713,7 +721,8 @@ object Ribbon {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -754,7 +763,8 @@ object Ribbon {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -795,7 +805,8 @@ object Ribbon {
       __obj.asInstanceOf[ExpandEventArgs]
     }
     
-    extension [Self <: ExpandEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpandEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -830,7 +841,8 @@ object Ribbon {
       __obj.asInstanceOf[ExpandPinSettings]
     }
     
-    extension [Self <: ExpandPinSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpandPinSettings] (val x: Self) extends AnyVal {
       
       inline def setCustomToolTip(value: Any): Self = StObject.set(x, "customToolTip", value.asInstanceOf[js.Any])
       
@@ -871,7 +883,8 @@ object Ribbon {
       __obj.asInstanceOf[GalleryItemClickEventArgs]
     }
     
-    extension [Self <: GalleryItemClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GalleryItemClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -920,7 +933,8 @@ object Ribbon {
       __obj.asInstanceOf[GroupClickEventArgs]
     }
     
-    extension [Self <: GroupClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -965,7 +979,8 @@ object Ribbon {
       __obj.asInstanceOf[GroupExpandEventArgs]
     }
     
-    extension [Self <: GroupExpandEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupExpandEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1006,7 +1021,8 @@ object Ribbon {
       __obj.asInstanceOf[LoadEventArgs]
     }
     
-    extension [Self <: LoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1191,7 +1207,8 @@ object Ribbon {
       __obj.asInstanceOf[typings.ejWebAll.ej.Ribbon.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Ribbon.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Ribbon.Model] (val x: Self) extends AnyVal {
       
       inline def setAllowResizing(value: Boolean): Self = StObject.set(x, "allowResizing", value.asInstanceOf[js.Any])
       
@@ -1368,7 +1385,8 @@ object Ribbon {
       __obj.asInstanceOf[QatMenuItemClickEventArgs]
     }
     
-    extension [Self <: QatMenuItemClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QatMenuItemClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1412,7 +1430,8 @@ object Ribbon {
       __obj.asInstanceOf[typings.ejWebAll.ej.Ribbon.Tab]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Ribbon.Tab](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Ribbon.Tab] (val x: Self) extends AnyVal {
       
       inline def setGroups(value: js.Array[TabsGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
@@ -1459,7 +1478,8 @@ object Ribbon {
       __obj.asInstanceOf[TabAddEventArgs]
     }
     
-    extension [Self <: TabAddEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabAddEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1520,7 +1540,8 @@ object Ribbon {
       __obj.asInstanceOf[TabClickEventArgs]
     }
     
-    extension [Self <: TabClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActiveHeader(value: Any): Self = StObject.set(x, "activeHeader", value.asInstanceOf[js.Any])
       
@@ -1577,7 +1598,8 @@ object Ribbon {
       __obj.asInstanceOf[TabCreateEventArgs]
     }
     
-    extension [Self <: TabCreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabCreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1622,7 +1644,8 @@ object Ribbon {
       __obj.asInstanceOf[TabRemoveEventArgs]
     }
     
-    extension [Self <: TabRemoveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabRemoveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1679,7 +1702,8 @@ object Ribbon {
       __obj.asInstanceOf[TabSelectEventArgs]
     }
     
-    extension [Self <: TabSelectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabSelectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActiveHeader(value: Any): Self = StObject.set(x, "activeHeader", value.asInstanceOf[js.Any])
       
@@ -1761,7 +1785,8 @@ object Ribbon {
       __obj.asInstanceOf[TabsGroup]
     }
     
-    extension [Self <: TabsGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsGroup] (val x: Self) extends AnyVal {
       
       inline def setAlignType(value: AlignType | String): Self = StObject.set(x, "alignType", value.asInstanceOf[js.Any])
       
@@ -1818,7 +1843,8 @@ object Ribbon {
       __obj.asInstanceOf[TabsGroupsContent]
     }
     
-    extension [Self <: TabsGroupsContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsGroupsContent] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: TabsGroupsContentDefaults): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
@@ -1861,7 +1887,8 @@ object Ribbon {
       __obj.asInstanceOf[TabsGroupsContentDefaults]
     }
     
-    extension [Self <: TabsGroupsContentDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsGroupsContentDefaults] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -1998,7 +2025,8 @@ object Ribbon {
       __obj.asInstanceOf[TabsGroupsContentGroup]
     }
     
-    extension [Self <: TabsGroupsContentGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsGroupsContentGroup] (val x: Self) extends AnyVal {
       
       inline def setButtonSettings(value: Any): Self = StObject.set(x, "buttonSettings", value.asInstanceOf[js.Any])
       
@@ -2134,7 +2162,8 @@ object Ribbon {
       __obj.asInstanceOf[TabsGroupsContentGroupsCustomGalleryItem]
     }
     
-    extension [Self <: TabsGroupsContentGroupsCustomGalleryItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsGroupsContentGroupsCustomGalleryItem] (val x: Self) extends AnyVal {
       
       inline def setButtonSettings(value: Any): Self = StObject.set(x, "buttonSettings", value.asInstanceOf[js.Any])
       
@@ -2190,7 +2219,8 @@ object Ribbon {
       __obj.asInstanceOf[TabsGroupsContentGroupsCustomToolTip]
     }
     
-    extension [Self <: TabsGroupsContentGroupsCustomToolTip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsGroupsContentGroupsCustomToolTip] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -2235,7 +2265,8 @@ object Ribbon {
       __obj.asInstanceOf[TabsGroupsContentGroupsGalleryItem]
     }
     
-    extension [Self <: TabsGroupsContentGroupsGalleryItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsGroupsContentGroupsGalleryItem] (val x: Self) extends AnyVal {
       
       inline def setButtonSettings(value: Any): Self = StObject.set(x, "buttonSettings", value.asInstanceOf[js.Any])
       
@@ -2274,7 +2305,8 @@ object Ribbon {
       __obj.asInstanceOf[TabsGroupsGroupExpanderSettings]
     }
     
-    extension [Self <: TabsGroupsGroupExpanderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsGroupsGroupExpanderSettings] (val x: Self) extends AnyVal {
       
       inline def setCustomToolTip(value: Any): Self = StObject.set(x, "customToolTip", value.asInstanceOf[js.Any])
       
@@ -2311,7 +2343,8 @@ object Ribbon {
       __obj.asInstanceOf[ToggleButtonClickEventArgs]
     }
     
-    extension [Self <: ToggleButtonClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleButtonClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

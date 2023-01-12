@@ -17,7 +17,8 @@ object IInputEnabledEventArgs {
     __obj.asInstanceOf[IInputEnabledEventArgs]
   }
   
-  extension [Self <: IInputEnabledEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInputEnabledEventArgs] (val x: Self) extends AnyVal {
     
     inline def setInputEnabled(value: Boolean): Self = StObject.set(x, "inputEnabled", value.asInstanceOf[js.Any])
   }

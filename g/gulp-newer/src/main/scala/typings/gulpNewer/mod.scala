@@ -52,7 +52,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       

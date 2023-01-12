@@ -68,7 +68,8 @@ object typesSessionflusherMod {
       __obj.asInstanceOf[ReleaseHealthAttributes]
     }
     
-    extension [Self <: ReleaseHealthAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReleaseHealthAttributes] (val x: Self) extends AnyVal {
       
       inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       

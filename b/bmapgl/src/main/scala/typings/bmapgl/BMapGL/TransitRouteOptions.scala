@@ -32,7 +32,8 @@ object TransitRouteOptions {
     __obj.asInstanceOf[TransitRouteOptions]
   }
   
-  extension [Self <: TransitRouteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitRouteOptions] (val x: Self) extends AnyVal {
     
     inline def setOnInfoHtmlSet(value: (/* poi */ LocalResultPoi, /* html */ HTMLElement) => Unit): Self = StObject.set(x, "onInfoHtmlSet", js.Any.fromFunction2(value))
     

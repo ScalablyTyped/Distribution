@@ -21,7 +21,8 @@ object SourceTargetPathRequestedEventOptions {
     __obj.asInstanceOf[SourceTargetPathRequestedEventOptions]
   }
   
-  extension [Self <: SourceTargetPathRequestedEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceTargetPathRequestedEventOptions] (val x: Self) extends AnyVal {
     
     inline def setSourcePath(value: String): Self = StObject.set(x, "sourcePath", value.asInstanceOf[js.Any])
     

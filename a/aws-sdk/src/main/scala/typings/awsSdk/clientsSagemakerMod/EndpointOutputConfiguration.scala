@@ -38,7 +38,8 @@ object EndpointOutputConfiguration {
     __obj.asInstanceOf[EndpointOutputConfiguration]
   }
   
-  extension [Self <: EndpointOutputConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointOutputConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEndpointName(value: String): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
     

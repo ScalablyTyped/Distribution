@@ -15,7 +15,8 @@ object BvnVerificationRequest {
     __obj.asInstanceOf[BvnVerificationRequest]
   }
   
-  extension [Self <: BvnVerificationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BvnVerificationRequest] (val x: Self) extends AnyVal {
     
     inline def setBvn(value: String): Self = StObject.set(x, "bvn", value.asInstanceOf[js.Any])
   }

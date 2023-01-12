@@ -18,7 +18,8 @@ object SpecUserListen {
     __obj.asInstanceOf[SpecUserListen]
   }
   
-  extension [Self <: SpecUserListen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecUserListen] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: String | SpecQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     

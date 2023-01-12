@@ -24,7 +24,8 @@ object Readonlynameentrypointroo {
     __obj.asInstanceOf[Readonlynameentrypointroo]
   }
   
-  extension [Self <: Readonlynameentrypointroo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlynameentrypointroo] (val x: Self) extends AnyVal {
     
     inline def setName(value: entrypointDotrootDotconsume): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object RegisteredUserEmbeddingExperienceConfiguration {
     __obj.asInstanceOf[RegisteredUserEmbeddingExperienceConfiguration]
   }
   
-  extension [Self <: RegisteredUserEmbeddingExperienceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisteredUserEmbeddingExperienceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDashboard(value: RegisteredUserDashboardEmbeddingConfiguration): Self = StObject.set(x, "Dashboard", value.asInstanceOf[js.Any])
     

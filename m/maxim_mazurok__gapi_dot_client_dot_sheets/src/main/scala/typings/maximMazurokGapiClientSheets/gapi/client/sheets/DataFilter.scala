@@ -22,7 +22,8 @@ object DataFilter {
     __obj.asInstanceOf[DataFilter]
   }
   
-  extension [Self <: DataFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataFilter] (val x: Self) extends AnyVal {
     
     inline def setA1Range(value: String): Self = StObject.set(x, "a1Range", value.asInstanceOf[js.Any])
     

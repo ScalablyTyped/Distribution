@@ -28,7 +28,8 @@ object BatchImportFindingsResponse {
     __obj.asInstanceOf[BatchImportFindingsResponse]
   }
   
-  extension [Self <: BatchImportFindingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchImportFindingsResponse] (val x: Self) extends AnyVal {
     
     inline def setFailedCount(value: Integer): Self = StObject.set(x, "FailedCount", value.asInstanceOf[js.Any])
     

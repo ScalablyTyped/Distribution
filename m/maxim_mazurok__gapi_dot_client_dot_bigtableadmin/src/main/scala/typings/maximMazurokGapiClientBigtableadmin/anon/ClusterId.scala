@@ -60,7 +60,8 @@ object ClusterId {
     __obj.asInstanceOf[ClusterId]
   }
   
-  extension [Self <: ClusterId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

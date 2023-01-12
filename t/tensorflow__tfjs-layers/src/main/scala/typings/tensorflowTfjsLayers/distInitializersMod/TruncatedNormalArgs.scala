@@ -22,7 +22,8 @@ object TruncatedNormalArgs {
     __obj.asInstanceOf[TruncatedNormalArgs]
   }
   
-  extension [Self <: TruncatedNormalArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TruncatedNormalArgs] (val x: Self) extends AnyVal {
     
     inline def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object InclusionProtectionGroupFilters {
     __obj.asInstanceOf[InclusionProtectionGroupFilters]
   }
   
-  extension [Self <: InclusionProtectionGroupFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InclusionProtectionGroupFilters] (val x: Self) extends AnyVal {
     
     inline def setAggregations(value: ProtectionGroupAggregationFilters): Self = StObject.set(x, "Aggregations", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object HeadersReceivedResponse {
     __obj.asInstanceOf[HeadersReceivedResponse]
   }
   
-  extension [Self <: HeadersReceivedResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeadersReceivedResponse] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

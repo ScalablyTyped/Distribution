@@ -21,7 +21,8 @@ object SwiperRef {
     __obj.asInstanceOf[SwiperRef]
   }
   
-  extension [Self <: SwiperRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwiperRef] (val x: Self) extends AnyVal {
     
     inline def setSwiperRef(value: Required): Self = StObject.set(x, "swiperRef", value.asInstanceOf[js.Any])
     

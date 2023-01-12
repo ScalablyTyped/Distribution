@@ -67,7 +67,8 @@ object OnlineId {
       __obj.asInstanceOf[IOnlineIdServiceTicket]
     }
     
-    extension [Self <: IOnlineIdServiceTicket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOnlineIdServiceTicket] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object OnlineId {
       __obj.asInstanceOf[IOnlineIdServiceTicketRequest]
     }
     
-    extension [Self <: IOnlineIdServiceTicketRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOnlineIdServiceTicketRequest] (val x: Self) extends AnyVal {
       
       inline def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object OnlineId {
       __obj.asInstanceOf[IUserIdentity]
     }
     
-    extension [Self <: IUserIdentity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUserIdentity] (val x: Self) extends AnyVal {
       
       inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
       

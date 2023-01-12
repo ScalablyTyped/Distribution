@@ -41,7 +41,8 @@ object ASPxClientTouchUIOptions {
     __obj.asInstanceOf[ASPxClientTouchUIOptions]
   }
   
-  extension [Self <: ASPxClientTouchUIOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTouchUIOptions] (val x: Self) extends AnyVal {
     
     inline def setHScrollClassName(value: String): Self = StObject.set(x, "hScrollClassName", value.asInstanceOf[js.Any])
     

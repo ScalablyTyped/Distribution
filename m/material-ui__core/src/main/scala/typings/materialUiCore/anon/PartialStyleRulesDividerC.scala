@@ -41,7 +41,8 @@ object PartialStyleRulesDividerC {
     __obj.asInstanceOf[PartialStyleRulesDividerC]
   }
   
-  extension [Self <: PartialStyleRulesDividerC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesDividerC] (val x: Self) extends AnyVal {
     
     inline def setAbsolute(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

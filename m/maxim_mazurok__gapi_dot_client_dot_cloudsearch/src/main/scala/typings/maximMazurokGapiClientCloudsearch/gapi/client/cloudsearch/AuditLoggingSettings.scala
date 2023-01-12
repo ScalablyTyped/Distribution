@@ -28,7 +28,8 @@ object AuditLoggingSettings {
     __obj.asInstanceOf[AuditLoggingSettings]
   }
   
-  extension [Self <: AuditLoggingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditLoggingSettings] (val x: Self) extends AnyVal {
     
     inline def setLogAdminReadActions(value: Boolean): Self = StObject.set(x, "logAdminReadActions", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Prefixes {
     __obj.asInstanceOf[Prefixes]
   }
   
-  extension [Self <: Prefixes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Prefixes] (val x: Self) extends AnyVal {
     
     inline def setCompactIri(value: String => String): Self = StObject.set(x, "compactIri", js.Any.fromFunction1(value))
     

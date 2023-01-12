@@ -17,7 +17,8 @@ object FileSize {
     __obj.asInstanceOf[FileSize]
   }
   
-  extension [Self <: FileSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSize] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

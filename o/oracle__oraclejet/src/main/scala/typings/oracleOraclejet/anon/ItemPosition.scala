@@ -24,7 +24,8 @@ object ItemPosition {
     __obj.asInstanceOf[ItemPosition]
   }
   
-  extension [Self <: ItemPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemPosition] (val x: Self) extends AnyVal {
     
     inline def setItem(value: typings.std.Element): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

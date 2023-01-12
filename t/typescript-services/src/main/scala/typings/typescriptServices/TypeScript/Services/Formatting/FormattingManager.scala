@@ -48,7 +48,8 @@ object FormattingManager {
     __obj.asInstanceOf[FormattingManager]
   }
   
-  extension [Self <: FormattingManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormattingManager] (val x: Self) extends AnyVal {
     
     inline def setFormatDocument(value: (Double, Double) => js.Array[TextEdit]): Self = StObject.set(x, "formatDocument", js.Any.fromFunction2(value))
     

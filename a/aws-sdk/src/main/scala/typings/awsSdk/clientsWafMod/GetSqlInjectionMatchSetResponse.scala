@@ -18,7 +18,8 @@ object GetSqlInjectionMatchSetResponse {
     __obj.asInstanceOf[GetSqlInjectionMatchSetResponse]
   }
   
-  extension [Self <: GetSqlInjectionMatchSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSqlInjectionMatchSetResponse] (val x: Self) extends AnyVal {
     
     inline def setSqlInjectionMatchSet(value: SqlInjectionMatchSet): Self = StObject.set(x, "SqlInjectionMatchSet", value.asInstanceOf[js.Any])
     

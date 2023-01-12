@@ -60,7 +60,8 @@ object EdgeDeploymentPlanSummary {
     __obj.asInstanceOf[EdgeDeploymentPlanSummary]
   }
   
-  extension [Self <: EdgeDeploymentPlanSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeDeploymentPlanSummary] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

@@ -60,7 +60,8 @@ object PartialStateCommon {
     __obj.asInstanceOf[PartialStateCommon]
   }
   
-  extension [Self <: PartialStateCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStateCommon] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: Write): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

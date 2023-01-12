@@ -18,7 +18,8 @@ object CellError {
     __obj.asInstanceOf[CellError]
   }
   
-  extension [Self <: CellError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellError] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

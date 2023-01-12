@@ -121,7 +121,8 @@ object IPagingToolbar {
     __obj.asInstanceOf[IPagingToolbar]
   }
   
-  extension [Self <: IPagingToolbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPagingToolbar] (val x: Self) extends AnyVal {
     
     inline def setAfterPageText(value: java.lang.String): Self = StObject.set(x, "afterPageText", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object IListEntityTypesRequest {
     __obj.asInstanceOf[IListEntityTypesRequest]
   }
   
-  extension [Self <: IListEntityTypesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListEntityTypesRequest] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     

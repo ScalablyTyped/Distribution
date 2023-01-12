@@ -19,7 +19,8 @@ object WEBGLLoseContext {
     __obj.asInstanceOf[WEBGLLoseContext]
   }
   
-  extension [Self <: WEBGLLoseContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WEBGLLoseContext] (val x: Self) extends AnyVal {
     
     inline def setLoseContext(value: () => Unit): Self = StObject.set(x, "loseContext", js.Any.fromFunction0(value))
     

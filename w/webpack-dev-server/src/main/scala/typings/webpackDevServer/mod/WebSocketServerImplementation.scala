@@ -17,7 +17,8 @@ object WebSocketServerImplementation {
     __obj.asInstanceOf[WebSocketServerImplementation]
   }
   
-  extension [Self <: WebSocketServerImplementation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebSocketServerImplementation] (val x: Self) extends AnyVal {
     
     inline def setClients(value: js.Array[ClientConnection]): Self = StObject.set(x, "clients", value.asInstanceOf[js.Any])
     

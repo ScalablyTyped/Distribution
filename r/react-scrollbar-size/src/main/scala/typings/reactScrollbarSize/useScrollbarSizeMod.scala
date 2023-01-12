@@ -27,7 +27,8 @@ object useScrollbarSizeMod {
       __obj.asInstanceOf[ScrollbarMeasurements]
     }
     
-    extension [Self <: ScrollbarMeasurements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollbarMeasurements] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

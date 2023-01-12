@@ -16,7 +16,8 @@ object TargetPoolsAddHealthCheckRequest {
     __obj.asInstanceOf[TargetPoolsAddHealthCheckRequest]
   }
   
-  extension [Self <: TargetPoolsAddHealthCheckRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetPoolsAddHealthCheckRequest] (val x: Self) extends AnyVal {
     
     inline def setHealthChecks(value: js.Array[HealthCheckReference]): Self = StObject.set(x, "healthChecks", value.asInstanceOf[js.Any])
     

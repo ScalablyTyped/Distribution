@@ -48,7 +48,8 @@ object VoxelDynamicSectionProperties {
     __obj.asInstanceOf[VoxelDynamicSectionProperties]
   }
   
-  extension [Self <: VoxelDynamicSectionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoxelDynamicSectionProperties] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

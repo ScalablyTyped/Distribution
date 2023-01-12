@@ -49,7 +49,8 @@ object distKernelUtilsKernelFuncsUtilsMod {
       __obj.asInstanceOf[BinaryKernelFuncConfig]
     }
     
-    extension [Self <: BinaryKernelFuncConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BinaryKernelFuncConfig] (val x: Self) extends AnyVal {
       
       inline def setCheckOutOfBounds(value: Boolean): Self = StObject.set(x, "checkOutOfBounds", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object distKernelUtilsKernelFuncsUtilsMod {
       __obj.asInstanceOf[UnaryKernelFuncConfig]
     }
     
-    extension [Self <: UnaryKernelFuncConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnaryKernelFuncConfig] (val x: Self) extends AnyVal {
       
       inline def setCpuKernelImpl(
         value: (/* values */ TypedArray, /* dtype */ DataType, /* attrs */ js.UndefOr[NamedAttrMap]) => TypedArray

@@ -2057,7 +2057,8 @@ object libEitherTMod {
       __obj.asInstanceOf[EitherM[M]]
     }
     
-    extension [Self <: EitherM[?], M](x: Self & EitherM[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EitherM[?], M] (val x: Self & EitherM[M]) extends AnyVal {
       
       inline def setAlt(value: (EitherT[M, Any, Any], Lazy[EitherT[M, Any, Any]]) => EitherT[M, Any, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
@@ -2179,7 +2180,8 @@ object libEitherTMod {
       __obj.asInstanceOf[EitherM1[M]]
     }
     
-    extension [Self <: EitherM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & EitherM1[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EitherM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & EitherM1[M]) extends AnyVal {
       
       inline def setAlt(value: (EitherT1[M, Any, Any], Lazy[EitherT1[M, Any, Any]]) => EitherT1[M, Any, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
@@ -2301,7 +2303,8 @@ object libEitherTMod {
       __obj.asInstanceOf[EitherM2[M]]
     }
     
-    extension [Self <: EitherM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & EitherM2[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EitherM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & EitherM2[M]) extends AnyVal {
       
       inline def setAlt(
         value: (EitherT2[M, Any, Any, Any], Lazy[EitherT2[M, Any, Any, Any]]) => EitherT2[M, Any, Any, Any]

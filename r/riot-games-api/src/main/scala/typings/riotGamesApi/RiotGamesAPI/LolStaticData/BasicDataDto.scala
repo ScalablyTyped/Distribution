@@ -84,7 +84,8 @@ object BasicDataDto {
     __obj.asInstanceOf[BasicDataDto]
   }
   
-  extension [Self <: BasicDataDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicDataDto] (val x: Self) extends AnyVal {
     
     inline def setColloq(value: String): Self = StObject.set(x, "colloq", value.asInstanceOf[js.Any])
     

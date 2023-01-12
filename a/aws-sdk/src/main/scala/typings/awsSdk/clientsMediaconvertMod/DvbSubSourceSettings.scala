@@ -18,7 +18,8 @@ object DvbSubSourceSettings {
     __obj.asInstanceOf[DvbSubSourceSettings]
   }
   
-  extension [Self <: DvbSubSourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DvbSubSourceSettings] (val x: Self) extends AnyVal {
     
     inline def setPid(value: integerMin1Max2147483647): Self = StObject.set(x, "Pid", value.asInstanceOf[js.Any])
     

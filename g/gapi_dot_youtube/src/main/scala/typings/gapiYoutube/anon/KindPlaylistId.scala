@@ -33,7 +33,8 @@ object KindPlaylistId {
     __obj.asInstanceOf[KindPlaylistId]
   }
   
-  extension [Self <: KindPlaylistId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KindPlaylistId] (val x: Self) extends AnyVal {
     
     inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     

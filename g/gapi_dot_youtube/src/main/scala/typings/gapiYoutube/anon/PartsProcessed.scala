@@ -28,7 +28,8 @@ object PartsProcessed {
     __obj.asInstanceOf[PartsProcessed]
   }
   
-  extension [Self <: PartsProcessed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartsProcessed] (val x: Self) extends AnyVal {
     
     inline def setPartsProcessed(value: Double): Self = StObject.set(x, "partsProcessed", value.asInstanceOf[js.Any])
     

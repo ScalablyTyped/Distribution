@@ -38,7 +38,8 @@ object libInputMod extends Shortcut {
       __obj.asInstanceOf[DialogInputProps]
     }
     
-    extension [Self <: DialogInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogInputProps] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

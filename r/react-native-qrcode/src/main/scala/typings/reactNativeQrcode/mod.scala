@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[QRCodeProperties]
     }
     
-    extension [Self <: QRCodeProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QRCodeProperties] (val x: Self) extends AnyVal {
       
       inline def setBgColor(value: String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object ChatCommentChatEventData {
     __obj.asInstanceOf[ChatCommentChatEventData]
   }
   
-  extension [Self <: ChatCommentChatEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatCommentChatEventData] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

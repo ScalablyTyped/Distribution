@@ -53,7 +53,8 @@ object XCellRangeData {
     __obj.asInstanceOf[XCellRangeData]
   }
   
-  extension [Self <: XCellRangeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCellRangeData] (val x: Self) extends AnyVal {
     
     inline def setDataArray(value: SafeArray[SafeArray[Any]]): Self = StObject.set(x, "DataArray", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object AppendResonseObject {
     __obj.asInstanceOf[AppendResonseObject]
   }
   
-  extension [Self <: AppendResonseObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppendResonseObject] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

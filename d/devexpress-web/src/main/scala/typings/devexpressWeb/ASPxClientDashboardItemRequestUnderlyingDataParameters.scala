@@ -41,7 +41,8 @@ object ASPxClientDashboardItemRequestUnderlyingDataParameters {
     __obj.asInstanceOf[ASPxClientDashboardItemRequestUnderlyingDataParameters]
   }
   
-  extension [Self <: ASPxClientDashboardItemRequestUnderlyingDataParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardItemRequestUnderlyingDataParameters] (val x: Self) extends AnyVal {
     
     inline def setAxisPoints(value: js.Array[ASPxClientDashboardItemDataAxisPoint]): Self = StObject.set(x, "AxisPoints", value.asInstanceOf[js.Any])
     

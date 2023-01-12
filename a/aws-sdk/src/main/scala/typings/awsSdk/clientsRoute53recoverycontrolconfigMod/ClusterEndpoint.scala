@@ -23,7 +23,8 @@ object ClusterEndpoint {
     __obj.asInstanceOf[ClusterEndpoint]
   }
   
-  extension [Self <: ClusterEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterEndpoint] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: stringMin1Max128PatternAZaZ09): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     

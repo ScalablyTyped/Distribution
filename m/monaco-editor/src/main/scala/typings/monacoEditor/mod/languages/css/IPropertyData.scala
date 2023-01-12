@@ -31,7 +31,8 @@ object IPropertyData {
     __obj.asInstanceOf[IPropertyData]
   }
   
-  extension [Self <: IPropertyData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPropertyData] (val x: Self) extends AnyVal {
     
     inline def setBrowsers(value: js.Array[String]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
     

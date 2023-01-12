@@ -23,7 +23,8 @@ object BackHandlerStatic {
     __obj.asInstanceOf[BackHandlerStatic]
   }
   
-  extension [Self <: BackHandlerStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackHandlerStatic] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: (BackPressEventName, js.Function0[js.UndefOr[Boolean | Null]]) => NativeEventSubscription): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     

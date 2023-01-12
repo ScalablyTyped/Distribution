@@ -25,7 +25,8 @@ object GoogleMapsPlayablelocationsV3SampleFilter {
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3SampleFilter]
   }
   
-  extension [Self <: GoogleMapsPlayablelocationsV3SampleFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleMapsPlayablelocationsV3SampleFilter] (val x: Self) extends AnyVal {
     
     inline def setIncludedTypes(value: js.Array[String]): Self = StObject.set(x, "includedTypes", value.asInstanceOf[js.Any])
     

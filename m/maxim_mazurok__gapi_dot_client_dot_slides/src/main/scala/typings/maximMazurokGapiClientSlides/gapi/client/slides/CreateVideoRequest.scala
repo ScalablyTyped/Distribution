@@ -37,7 +37,8 @@ object CreateVideoRequest {
     __obj.asInstanceOf[CreateVideoRequest]
   }
   
-  extension [Self <: CreateVideoRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVideoRequest] (val x: Self) extends AnyVal {
     
     inline def setElementProperties(value: PageElementProperties): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
     

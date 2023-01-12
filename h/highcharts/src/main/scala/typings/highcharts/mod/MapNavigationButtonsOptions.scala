@@ -29,7 +29,8 @@ object MapNavigationButtonsOptions {
     __obj.asInstanceOf[MapNavigationButtonsOptions]
   }
   
-  extension [Self <: MapNavigationButtonsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapNavigationButtonsOptions] (val x: Self) extends AnyVal {
     
     inline def setZoomIn(value: MapNavigationButtonsZoomInOptions): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object RestProperty_ {
     __obj.asInstanceOf[RestProperty_]
   }
   
-  extension [Self <: RestProperty_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestProperty_] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: LVal): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     

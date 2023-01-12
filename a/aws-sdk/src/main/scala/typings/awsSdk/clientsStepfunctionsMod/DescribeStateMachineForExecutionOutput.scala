@@ -45,7 +45,8 @@ object DescribeStateMachineForExecutionOutput {
     __obj.asInstanceOf[DescribeStateMachineForExecutionOutput]
   }
   
-  extension [Self <: DescribeStateMachineForExecutionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStateMachineForExecutionOutput] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: Definition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

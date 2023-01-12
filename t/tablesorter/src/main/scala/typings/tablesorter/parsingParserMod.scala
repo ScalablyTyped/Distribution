@@ -63,7 +63,8 @@ object parsingParserMod {
       __obj.asInstanceOf[Parser[TElement]]
     }
     
-    extension [Self <: Parser[?], TElement](x: Self & Parser[TElement]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parser[?], TElement] (val x: Self & Parser[TElement]) extends AnyVal {
       
       inline def setFormat(value: (String, TElement) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       

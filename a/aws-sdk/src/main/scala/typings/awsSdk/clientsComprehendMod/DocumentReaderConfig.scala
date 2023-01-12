@@ -28,7 +28,8 @@ object DocumentReaderConfig {
     __obj.asInstanceOf[DocumentReaderConfig]
   }
   
-  extension [Self <: DocumentReaderConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentReaderConfig] (val x: Self) extends AnyVal {
     
     inline def setDocumentReadAction(value: DocumentReadAction): Self = StObject.set(x, "DocumentReadAction", value.asInstanceOf[js.Any])
     

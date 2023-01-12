@@ -33,7 +33,8 @@ object libTypesDisplaynamesMod {
       __obj.asInstanceOf[DisplayNamesData]
     }
     
-    extension [Self <: DisplayNamesData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayNamesData] (val x: Self) extends AnyVal {
       
       inline def setPatterns(value: Locale): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object Typeofvow {
     __obj.asInstanceOf[Typeofvow]
   }
   
-  extension [Self <: Typeofvow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofvow] (val x: Self) extends AnyVal {
     
     inline def setDeferred(value: Instantiable0[Deferred]): Self = StObject.set(x, "Deferred", value.asInstanceOf[js.Any])
     

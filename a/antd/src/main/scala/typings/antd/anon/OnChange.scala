@@ -28,7 +28,8 @@ object OnChange {
     __obj.asInstanceOf[OnChange[DateType]]
   }
   
-  extension [Self <: OnChange[?], DateType](x: Self & OnChange[DateType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnChange[?], DateType] (val x: Self & OnChange[DateType]) extends AnyVal {
     
     inline def setOnChange(value: DateType => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     

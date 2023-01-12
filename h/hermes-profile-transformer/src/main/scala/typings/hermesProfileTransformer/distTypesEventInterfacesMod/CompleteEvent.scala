@@ -22,7 +22,8 @@ object CompleteEvent {
     __obj.asInstanceOf[CompleteEvent]
   }
   
-  extension [Self <: CompleteEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompleteEvent] (val x: Self) extends AnyVal {
     
     inline def setDur(value: Double): Self = StObject.set(x, "dur", value.asInstanceOf[js.Any])
     

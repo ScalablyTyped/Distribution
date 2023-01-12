@@ -29,7 +29,8 @@ object CollisionArrays {
     __obj.asInstanceOf[CollisionArrays]
   }
   
-  extension [Self <: CollisionArrays](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollisionArrays] (val x: Self) extends AnyVal {
     
     inline def setIconBox(value: SingleCollisionBox): Self = StObject.set(x, "iconBox", value.asInstanceOf[js.Any])
     

@@ -242,7 +242,8 @@ object IVaultEntryEvents {
     __obj.asInstanceOf[IVaultEntryEvents]
   }
   
-  extension [Self <: IVaultEntryEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultEntryEvents] (val x: Self) extends AnyVal {
     
     inline def setOnAddObjectFile(
       value: (/* objVer */ IObjVer, /* sourceObjectFile */ ISourceObjectFile) => Null | Boolean | Finally

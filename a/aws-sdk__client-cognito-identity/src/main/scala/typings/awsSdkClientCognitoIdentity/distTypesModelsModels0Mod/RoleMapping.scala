@@ -38,7 +38,8 @@ object RoleMapping {
     __obj.asInstanceOf[RoleMapping]
   }
   
-  extension [Self <: RoleMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoleMapping] (val x: Self) extends AnyVal {
     
     inline def setAmbiguousRoleResolution(value: AmbiguousRoleResolutionType | String): Self = StObject.set(x, "AmbiguousRoleResolution", value.asInstanceOf[js.Any])
     

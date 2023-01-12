@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[Anchor]
     }
     
-    extension [Self <: Anchor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Anchor] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Changes]
     }
     
-    extension [Self <: Changes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Changes] (val x: Self) extends AnyVal {
       
       inline def setChanges(value: ChangeSpec): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object anon {
       __obj.asInstanceOf[Dispatch]
     }
     
-    extension [Self <: Dispatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dispatch] (val x: Self) extends AnyVal {
       
       inline def setDispatch(value: Transaction => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
@@ -108,7 +111,8 @@ object anon {
       __obj.asInstanceOf[Effects]
     }
     
-    extension [Self <: Effects](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Effects] (val x: Self) extends AnyVal {
       
       inline def setChanges(value: ChangeSet): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
       
@@ -132,7 +136,8 @@ object anon {
       __obj.asInstanceOf[Extension]
     }
     
-    extension [Self <: Extension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extension] (val x: Self) extends AnyVal {
       
       inline def setExtension(value: Any): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     }
@@ -155,7 +160,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -183,7 +189,8 @@ object anon {
       __obj.asInstanceOf[PickTransactionSpeceffect]
     }
     
-    extension [Self <: PickTransactionSpeceffect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickTransactionSpeceffect] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: Annotation[Any] | js.Array[Annotation[Any]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       

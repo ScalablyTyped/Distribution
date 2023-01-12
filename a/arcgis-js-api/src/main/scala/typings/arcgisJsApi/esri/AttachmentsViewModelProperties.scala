@@ -46,7 +46,8 @@ object AttachmentsViewModelProperties {
     __obj.asInstanceOf[AttachmentsViewModelProperties]
   }
   
-  extension [Self <: AttachmentsViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachmentsViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setActiveAttachmentInfo(value: AttachmentInfoProperties): Self = StObject.set(x, "activeAttachmentInfo", value.asInstanceOf[js.Any])
     

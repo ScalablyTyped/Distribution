@@ -22,7 +22,8 @@ object TypeofBatchType {
     __obj.asInstanceOf[TypeofBatchType]
   }
   
-  extension [Self <: TypeofBatchType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofBatchType] (val x: Self) extends AnyVal {
     
     inline def setDELETE(value: `3`): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
     

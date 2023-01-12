@@ -21,7 +21,8 @@ object CaptureResource {
     __obj.asInstanceOf[CaptureResource]
   }
   
-  extension [Self <: CaptureResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptureResource] (val x: Self) extends AnyVal {
     
     inline def setInvoice_number(value: String): Self = StObject.set(x, "invoice_number", value.asInstanceOf[js.Any])
     

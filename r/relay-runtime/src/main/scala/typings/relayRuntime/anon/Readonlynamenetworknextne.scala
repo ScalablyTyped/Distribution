@@ -26,7 +26,8 @@ object Readonlynamenetworknextne {
     __obj.asInstanceOf[Readonlynamenetworknextne]
   }
   
-  extension [Self <: Readonlynamenetworknextne](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlynamenetworknextne] (val x: Self) extends AnyVal {
     
     inline def setName(value: networkDotnext): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

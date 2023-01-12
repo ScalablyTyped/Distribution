@@ -24,7 +24,8 @@ object LocaleWeekStartsOn {
     __obj.asInstanceOf[LocaleWeekStartsOn]
   }
   
-  extension [Self <: LocaleWeekStartsOn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocaleWeekStartsOn] (val x: Self) extends AnyVal {
     
     inline def setLocale(value: typings.dateFns.Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

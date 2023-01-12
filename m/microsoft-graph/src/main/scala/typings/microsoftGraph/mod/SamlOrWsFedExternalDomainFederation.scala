@@ -18,7 +18,8 @@ object SamlOrWsFedExternalDomainFederation {
     __obj.asInstanceOf[SamlOrWsFedExternalDomainFederation]
   }
   
-  extension [Self <: SamlOrWsFedExternalDomainFederation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SamlOrWsFedExternalDomainFederation] (val x: Self) extends AnyVal {
     
     inline def setDomains(value: NullableOption[js.Array[ExternalDomainName]]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
     

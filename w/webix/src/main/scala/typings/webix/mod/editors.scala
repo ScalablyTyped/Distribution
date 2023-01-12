@@ -48,7 +48,8 @@ object editors {
   @js.native
   val ^ : typings.webix.webix.editors = js.native
   
-  extension [Self <: editors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: editors] (val x: Self) extends AnyVal {
     
     inline def set$popup(value: obj): Self = StObject.set(x, "$popup", value.asInstanceOf[js.Any])
     

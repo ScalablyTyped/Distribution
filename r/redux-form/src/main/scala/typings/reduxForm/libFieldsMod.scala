@@ -49,7 +49,8 @@ object libFieldsMod {
       __obj.asInstanceOf[BaseFieldsProps[P]]
     }
     
-    extension [Self <: BaseFieldsProps[?], P](x: Self & BaseFieldsProps[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseFieldsProps[?], P] (val x: Self & BaseFieldsProps[P]) extends AnyVal {
       
       inline def setComponent(value: ComponentType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

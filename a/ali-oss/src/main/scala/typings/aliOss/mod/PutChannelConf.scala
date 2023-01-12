@@ -20,7 +20,8 @@ object PutChannelConf {
     __obj.asInstanceOf[PutChannelConf]
   }
   
-  extension [Self <: PutChannelConf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutChannelConf] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

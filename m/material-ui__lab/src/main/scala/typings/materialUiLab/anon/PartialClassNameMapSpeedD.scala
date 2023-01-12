@@ -30,7 +30,8 @@ object PartialClassNameMapSpeedD {
     __obj.asInstanceOf[PartialClassNameMapSpeedD]
   }
   
-  extension [Self <: PartialClassNameMapSpeedD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapSpeedD] (val x: Self) extends AnyVal {
     
     inline def setActions(value: String): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

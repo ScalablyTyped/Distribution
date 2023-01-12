@@ -18,7 +18,8 @@ object InstanceStatusReason {
     __obj.asInstanceOf[InstanceStatusReason]
   }
   
-  extension [Self <: InstanceStatusReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceStatusReason] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

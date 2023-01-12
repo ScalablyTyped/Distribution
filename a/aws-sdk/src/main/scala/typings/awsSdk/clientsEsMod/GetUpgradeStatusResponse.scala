@@ -28,7 +28,8 @@ object GetUpgradeStatusResponse {
     __obj.asInstanceOf[GetUpgradeStatusResponse]
   }
   
-  extension [Self <: GetUpgradeStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUpgradeStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setStepStatus(value: UpgradeStatus): Self = StObject.set(x, "StepStatus", value.asInstanceOf[js.Any])
     

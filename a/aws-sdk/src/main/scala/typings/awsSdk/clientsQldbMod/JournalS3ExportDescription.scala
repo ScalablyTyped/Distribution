@@ -64,7 +64,8 @@ object JournalS3ExportDescription {
     __obj.asInstanceOf[JournalS3ExportDescription]
   }
   
-  extension [Self <: JournalS3ExportDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JournalS3ExportDescription] (val x: Self) extends AnyVal {
     
     inline def setExclusiveEndTime(value: js.Date): Self = StObject.set(x, "ExclusiveEndTime", value.asInstanceOf[js.Any])
     

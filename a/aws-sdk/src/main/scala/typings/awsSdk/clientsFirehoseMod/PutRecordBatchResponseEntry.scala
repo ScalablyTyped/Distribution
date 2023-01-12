@@ -28,7 +28,8 @@ object PutRecordBatchResponseEntry {
     __obj.asInstanceOf[PutRecordBatchResponseEntry]
   }
   
-  extension [Self <: PutRecordBatchResponseEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRecordBatchResponseEntry] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

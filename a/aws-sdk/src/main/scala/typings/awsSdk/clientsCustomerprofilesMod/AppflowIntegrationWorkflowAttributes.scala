@@ -28,7 +28,8 @@ object AppflowIntegrationWorkflowAttributes {
     __obj.asInstanceOf[AppflowIntegrationWorkflowAttributes]
   }
   
-  extension [Self <: AppflowIntegrationWorkflowAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppflowIntegrationWorkflowAttributes] (val x: Self) extends AnyVal {
     
     inline def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "ConnectorProfileName", value.asInstanceOf[js.Any])
     

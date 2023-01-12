@@ -19,7 +19,8 @@ object InstancesStartWithEncryptionKeyRequest {
     __obj.asInstanceOf[InstancesStartWithEncryptionKeyRequest]
   }
   
-  extension [Self <: InstancesStartWithEncryptionKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancesStartWithEncryptionKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setDisks(value: js.Array[CustomerEncryptionKeyProtectedDisk]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     

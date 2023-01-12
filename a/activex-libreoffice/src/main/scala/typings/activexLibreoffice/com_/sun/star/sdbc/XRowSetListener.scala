@@ -47,7 +47,8 @@ object XRowSetListener {
     __obj.asInstanceOf[XRowSetListener]
   }
   
-  extension [Self <: XRowSetListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRowSetListener] (val x: Self) extends AnyVal {
     
     inline def setCursorMoved(value: EventObject => Unit): Self = StObject.set(x, "cursorMoved", js.Any.fromFunction1(value))
     

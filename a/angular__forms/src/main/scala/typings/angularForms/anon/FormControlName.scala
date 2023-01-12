@@ -22,7 +22,8 @@ object FormControlName {
     __obj.asInstanceOf[FormControlName]
   }
   
-  extension [Self <: FormControlName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormControlName] (val x: Self) extends AnyVal {
     
     inline def setFormControlName(value: formControlName): Self = StObject.set(x, "formControlName", value.asInstanceOf[js.Any])
     

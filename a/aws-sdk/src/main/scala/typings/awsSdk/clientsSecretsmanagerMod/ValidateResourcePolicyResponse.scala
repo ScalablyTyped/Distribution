@@ -23,7 +23,8 @@ object ValidateResourcePolicyResponse {
     __obj.asInstanceOf[ValidateResourcePolicyResponse]
   }
   
-  extension [Self <: ValidateResourcePolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateResourcePolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setPolicyValidationPassed(value: BooleanType): Self = StObject.set(x, "PolicyValidationPassed", value.asInstanceOf[js.Any])
     

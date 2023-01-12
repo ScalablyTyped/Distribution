@@ -40,7 +40,8 @@ object EasingFunction {
     __obj.asInstanceOf[EasingFunction]
   }
   
-  extension [Self <: EasingFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EasingFunction] (val x: Self) extends AnyVal {
     
     inline def setEaseInCore(value: Double => Double): Self = StObject.set(x, "easeInCore", js.Any.fromFunction1(value))
     

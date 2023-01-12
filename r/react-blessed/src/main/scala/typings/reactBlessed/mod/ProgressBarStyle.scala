@@ -18,7 +18,8 @@ object ProgressBarStyle {
     __obj.asInstanceOf[ProgressBarStyle]
   }
   
-  extension [Self <: ProgressBarStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressBarStyle] (val x: Self) extends AnyVal {
     
     inline def setBar(value: Bg): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object DocumentAnalysis {
     __obj.asInstanceOf[DocumentAnalysis]
   }
   
-  extension [Self <: DocumentAnalysis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentAnalysis] (val x: Self) extends AnyVal {
     
     inline def setTone_categories(value: js.Array[ToneCategory]): Self = StObject.set(x, "tone_categories", value.asInstanceOf[js.Any])
     

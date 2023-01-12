@@ -18,7 +18,8 @@ object AccelerationSettings {
     __obj.asInstanceOf[AccelerationSettings]
   }
   
-  extension [Self <: AccelerationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccelerationSettings] (val x: Self) extends AnyVal {
     
     inline def setMode(value: AccelerationMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
   }

@@ -79,7 +79,8 @@ object typesDeleteBucketCorsInputMod {
       __obj.asInstanceOf[DeleteBucketCorsInput]
     }
     
-    extension [Self <: DeleteBucketCorsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteBucketCorsInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

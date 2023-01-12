@@ -60,7 +60,8 @@ object ElevationProfileLineInput {
     __obj.asInstanceOf[ElevationProfileLineInput]
   }
   
-  extension [Self <: ElevationProfileLineInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElevationProfileLineInput] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

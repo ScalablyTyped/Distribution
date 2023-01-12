@@ -25,7 +25,8 @@ object Key {
     __obj.asInstanceOf[Key]
   }
   
-  extension [Self <: Key](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

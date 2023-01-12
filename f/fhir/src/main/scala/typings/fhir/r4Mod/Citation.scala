@@ -195,7 +195,8 @@ object Citation {
     __obj.asInstanceOf[Citation]
   }
   
-  extension [Self <: Citation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Citation] (val x: Self) extends AnyVal {
     
     inline def setApprovalDate(value: String): Self = StObject.set(x, "approvalDate", value.asInstanceOf[js.Any])
     

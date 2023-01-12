@@ -27,7 +27,8 @@ object TooltipDomStyles {
     __obj.asInstanceOf[TooltipDomStyles]
   }
   
-  extension [Self <: TooltipDomStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipDomStyles] (val x: Self) extends AnyVal {
     
     inline def `setG2-tooltip`(value: LooseObject): Self = StObject.set(x, "g2-tooltip", value.asInstanceOf[js.Any])
     

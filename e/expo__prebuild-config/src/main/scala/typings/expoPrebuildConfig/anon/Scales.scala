@@ -20,7 +20,8 @@ object Scales {
     __obj.asInstanceOf[Scales]
   }
   
-  extension [Self <: Scales](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scales] (val x: Self) extends AnyVal {
     
     inline def setScales(value: js.Array[`1` | `2` | `3`]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
     

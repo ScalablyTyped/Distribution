@@ -15,7 +15,8 @@ object GetTableOptions {
     __obj.asInstanceOf[GetTableOptions]
   }
   
-  extension [Self <: GetTableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTableOptions] (val x: Self) extends AnyVal {
     
     inline def setUseOutdated(value: Boolean): Self = StObject.set(x, "useOutdated", value.asInstanceOf[js.Any])
   }

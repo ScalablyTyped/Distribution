@@ -209,7 +209,8 @@ object BasicDataStatsDto {
     __obj.asInstanceOf[BasicDataStatsDto]
   }
   
-  extension [Self <: BasicDataStatsDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicDataStatsDto] (val x: Self) extends AnyVal {
     
     inline def setFlatArmorMod(value: Double): Self = StObject.set(x, "FlatArmorMod", value.asInstanceOf[js.Any])
     

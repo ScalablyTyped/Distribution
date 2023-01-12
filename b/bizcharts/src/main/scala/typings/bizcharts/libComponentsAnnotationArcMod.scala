@@ -30,7 +30,8 @@ object libComponentsAnnotationArcMod {
       __obj.asInstanceOf[AnnotationArcProps]
     }
     
-    extension [Self <: AnnotationArcProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationArcProps] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: AnnotationPosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

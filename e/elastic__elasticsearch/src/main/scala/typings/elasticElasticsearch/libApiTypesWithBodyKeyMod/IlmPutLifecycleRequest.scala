@@ -25,7 +25,8 @@ object IlmPutLifecycleRequest {
     __obj.asInstanceOf[IlmPutLifecycleRequest]
   }
   
-  extension [Self <: IlmPutLifecycleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IlmPutLifecycleRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Policy): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

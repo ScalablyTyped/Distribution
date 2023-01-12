@@ -45,7 +45,8 @@ object libObjectStatusObjectStatusMod extends Shortcut {
       __obj.asInstanceOf[ObjectStatusProps]
     }
     
-    extension [Self <: ObjectStatusProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectStatusProps] (val x: Self) extends AnyVal {
       
       inline def setGlyph(value: String): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
       

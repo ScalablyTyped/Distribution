@@ -232,7 +232,8 @@ object CycleOptions {
     __obj.asInstanceOf[CycleOptions]
   }
   
-  extension [Self <: CycleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CycleOptions] (val x: Self) extends AnyVal {
     
     inline def setActivePagerClass(value: String): Self = StObject.set(x, "activePagerClass", value.asInstanceOf[js.Any])
     

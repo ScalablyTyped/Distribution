@@ -23,7 +23,8 @@ object StopDeploymentInput {
     __obj.asInstanceOf[StopDeploymentInput]
   }
   
-  extension [Self <: StopDeploymentInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopDeploymentInput] (val x: Self) extends AnyVal {
     
     inline def setAutoRollbackEnabled(value: NullableBoolean): Self = StObject.set(x, "autoRollbackEnabled", value.asInstanceOf[js.Any])
     

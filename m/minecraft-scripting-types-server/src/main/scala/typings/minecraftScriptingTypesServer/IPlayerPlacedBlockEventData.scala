@@ -28,7 +28,8 @@ object IPlayerPlacedBlockEventData {
     __obj.asInstanceOf[IPlayerPlacedBlockEventData]
   }
   
-  extension [Self <: IPlayerPlacedBlockEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPlayerPlacedBlockEventData] (val x: Self) extends AnyVal {
     
     inline def setBlock_position(value: VectorXYZ): Self = StObject.set(x, "block_position", value.asInstanceOf[js.Any])
     

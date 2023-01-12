@@ -141,7 +141,8 @@ object libUtilitiesButtonGridButtonGridCellDottypesMod {
       __obj.asInstanceOf[IButtonGridCellProps[T]]
     }
     
-    extension [Self <: IButtonGridCellProps[?], T](x: Self & IButtonGridCellProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IButtonGridCellProps[?], T] (val x: Self & IButtonGridCellProps[T]) extends AnyVal {
       
       inline def setCellDisabledStyle(value: js.Array[String]): Self = StObject.set(x, "cellDisabledStyle", value.asInstanceOf[js.Any])
       

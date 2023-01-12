@@ -61,7 +61,8 @@ object distTypesTreeMapNodesMod {
       __obj.asInstanceOf[TreeMapNodesProps[Datum]]
     }
     
-    extension [Self <: TreeMapNodesProps[?], Datum /* <: js.Object */](x: Self & TreeMapNodesProps[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeMapNodesProps[?], Datum /* <: js.Object */] (val x: Self & TreeMapNodesProps[Datum]) extends AnyVal {
       
       inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
       

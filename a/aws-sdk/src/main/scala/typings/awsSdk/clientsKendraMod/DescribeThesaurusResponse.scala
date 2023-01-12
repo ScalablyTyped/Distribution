@@ -75,7 +75,8 @@ object DescribeThesaurusResponse {
     __obj.asInstanceOf[DescribeThesaurusResponse]
   }
   
-  extension [Self <: DescribeThesaurusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeThesaurusResponse] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

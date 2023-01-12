@@ -108,7 +108,8 @@ object srcPluginSpectrogramMod {
       __obj.asInstanceOf[SpectrogramPluginParams]
     }
     
-    extension [Self <: SpectrogramPluginParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpectrogramPluginParams] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object srcPluginSpectrogramMod {
         __obj.asInstanceOf[WaveSurfer]
       }
       
-      extension [Self <: WaveSurfer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WaveSurfer] (val x: Self) extends AnyVal {
         
         inline def setFFT(value: (Double, Double, WindowFunction, Double) => Unit): Self = StObject.set(x, "FFT", js.Any.fromFunction4(value))
       }

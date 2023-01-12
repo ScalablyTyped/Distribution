@@ -23,7 +23,8 @@ object ZipInflate {
     __obj.asInstanceOf[ZipInflate]
   }
   
-  extension [Self <: ZipInflate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZipInflate] (val x: Self) extends AnyVal {
     
     inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
   }

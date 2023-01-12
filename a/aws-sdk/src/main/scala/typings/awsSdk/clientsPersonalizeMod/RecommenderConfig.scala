@@ -23,7 +23,8 @@ object RecommenderConfig {
     __obj.asInstanceOf[RecommenderConfig]
   }
   
-  extension [Self <: RecommenderConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommenderConfig] (val x: Self) extends AnyVal {
     
     inline def setItemExplorationConfig(value: HyperParameters): Self = StObject.set(x, "itemExplorationConfig", value.asInstanceOf[js.Any])
     

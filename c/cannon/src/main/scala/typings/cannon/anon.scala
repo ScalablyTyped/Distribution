@@ -43,7 +43,8 @@ object anon {
       __obj.asInstanceOf[BOX]
     }
     
-    extension [Self <: BOX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BOX] (val x: Self) extends AnyVal {
       
       inline def setBOX(value: Double): Self = StObject.set(x, "BOX", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object anon {
       __obj.asInstanceOf[Broadphaser]
     }
     
-    extension [Self <: Broadphaser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Broadphaser] (val x: Self) extends AnyVal {
       
       inline def setBroadphaser(value: Double): Self = StObject.set(x, "broadphaser", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object anon {
       __obj.asInstanceOf[Keys]
     }
     
-    extension [Self <: Keys](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Keys] (val x: Self) extends AnyVal {
       
       inline def setKeys(value: js.Array[Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       

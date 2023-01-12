@@ -17,7 +17,8 @@ object UpdateMetadataInfo {
     __obj.asInstanceOf[UpdateMetadataInfo]
   }
   
-  extension [Self <: UpdateMetadataInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateMetadataInfo] (val x: Self) extends AnyVal {
     
     inline def setCurrentName(value: String): Self = StObject.set(x, "currentName", value.asInstanceOf[js.Any])
     

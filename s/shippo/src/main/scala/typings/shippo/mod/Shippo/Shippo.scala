@@ -37,7 +37,8 @@ object Shippo {
     __obj.asInstanceOf[typings.shippo.mod.Shippo.Shippo]
   }
   
-  extension [Self <: typings.shippo.mod.Shippo.Shippo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typings.shippo.mod.Shippo.Shippo] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: typings.shippo.anon.List): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

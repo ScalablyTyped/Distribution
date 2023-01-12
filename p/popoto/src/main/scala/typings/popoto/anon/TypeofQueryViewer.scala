@@ -55,7 +55,8 @@ object TypeofQueryViewer {
     __obj.asInstanceOf[TypeofQueryViewer]
   }
   
-  extension [Self <: TypeofQueryViewer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofQueryViewer] (val x: Self) extends AnyVal {
     
     inline def setCHOOSE_LABEL(value: String): Self = StObject.set(x, "CHOOSE_LABEL", value.asInstanceOf[js.Any])
     

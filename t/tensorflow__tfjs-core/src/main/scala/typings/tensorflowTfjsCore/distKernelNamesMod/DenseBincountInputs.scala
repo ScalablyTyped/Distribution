@@ -18,7 +18,8 @@ object DenseBincountInputs {
     __obj.asInstanceOf[DenseBincountInputs]
   }
   
-  extension [Self <: DenseBincountInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DenseBincountInputs] (val x: Self) extends AnyVal {
     
     inline def setWeights(value: scala.Any): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
     

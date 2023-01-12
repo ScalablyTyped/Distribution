@@ -23,7 +23,8 @@ object UpdateDraftBodyAction {
     __obj.asInstanceOf[UpdateDraftBodyAction]
   }
   
-  extension [Self <: UpdateDraftBodyAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDraftBodyAction] (val x: Self) extends AnyVal {
     
     inline def setAddUpdateContent(value: (String, ContentType) => UpdateDraftBodyAction): Self = StObject.set(x, "addUpdateContent", js.Any.fromFunction2(value))
     

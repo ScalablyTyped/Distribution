@@ -257,7 +257,8 @@ object libLoggerMod {
         __obj.asInstanceOf[typings.jupyterlabLogconsole.libLoggerMod.Logger.IOptions]
       }
       
-      extension [Self <: typings.jupyterlabLogconsole.libLoggerMod.Logger.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabLogconsole.libLoggerMod.Logger.IOptions] (val x: Self) extends AnyVal {
         
         inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
         
@@ -318,7 +319,8 @@ object libLoggerMod {
         __obj.asInstanceOf[typings.jupyterlabLogconsole.libLoggerMod.LoggerOutputAreaModel.IOptions]
       }
       
-      extension [Self <: typings.jupyterlabLogconsole.libLoggerMod.LoggerOutputAreaModel.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabLogconsole.libLoggerMod.LoggerOutputAreaModel.IOptions] (val x: Self) extends AnyVal {
         
         inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       }
@@ -386,7 +388,8 @@ object libLoggerMod {
       __obj.asInstanceOf[ILogOutputModel]
     }
     
-    extension [Self <: ILogOutputModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILogOutputModel] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: FullLogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

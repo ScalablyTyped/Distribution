@@ -50,7 +50,8 @@ object libMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setIgnore(value: Test): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object libMod {
       __obj.asInstanceOf[RegExpMatchObject]
     }
     
-    extension [Self <: RegExpMatchObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegExpMatchObject] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

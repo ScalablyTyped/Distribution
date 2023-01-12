@@ -19,7 +19,8 @@ object Shift {
     __obj.asInstanceOf[Shift]
   }
   
-  extension [Self <: Shift](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Shift] (val x: Self) extends AnyVal {
     
     inline def setFieldList(value: Double): Self = StObject.set(x, "FieldList", value.asInstanceOf[js.Any])
     

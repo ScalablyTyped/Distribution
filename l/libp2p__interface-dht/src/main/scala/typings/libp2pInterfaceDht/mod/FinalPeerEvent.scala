@@ -27,7 +27,8 @@ object FinalPeerEvent {
     __obj.asInstanceOf[FinalPeerEvent]
   }
   
-  extension [Self <: FinalPeerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinalPeerEvent] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: PeerId): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

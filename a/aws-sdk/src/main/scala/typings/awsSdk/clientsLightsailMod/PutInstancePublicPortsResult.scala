@@ -18,7 +18,8 @@ object PutInstancePublicPortsResult {
     __obj.asInstanceOf[PutInstancePublicPortsResult]
   }
   
-  extension [Self <: PutInstancePublicPortsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutInstancePublicPortsResult] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     

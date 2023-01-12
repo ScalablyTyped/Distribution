@@ -20,7 +20,8 @@ object UnzipOptions {
     __obj.asInstanceOf[UnzipOptions]
   }
   
-  extension [Self <: UnzipOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnzipOptions] (val x: Self) extends AnyVal {
     
     inline def setTargetPath(value: String): Self = StObject.set(x, "targetPath", value.asInstanceOf[js.Any])
     

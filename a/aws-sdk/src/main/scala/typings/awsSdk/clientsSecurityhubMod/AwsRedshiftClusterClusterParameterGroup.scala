@@ -28,7 +28,8 @@ object AwsRedshiftClusterClusterParameterGroup {
     __obj.asInstanceOf[AwsRedshiftClusterClusterParameterGroup]
   }
   
-  extension [Self <: AwsRedshiftClusterClusterParameterGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRedshiftClusterClusterParameterGroup] (val x: Self) extends AnyVal {
     
     inline def setClusterParameterStatusList(value: AwsRedshiftClusterClusterParameterStatusList): Self = StObject.set(x, "ClusterParameterStatusList", value.asInstanceOf[js.Any])
     

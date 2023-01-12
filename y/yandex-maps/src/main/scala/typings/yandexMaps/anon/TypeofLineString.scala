@@ -20,7 +20,8 @@ object TypeofLineString {
     __obj.asInstanceOf[TypeofLineString]
   }
   
-  extension [Self <: TypeofLineString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofLineString] (val x: Self) extends AnyVal {
     
     inline def setFromEncodedCoordinates(value: String => LineString): Self = StObject.set(x, "fromEncodedCoordinates", js.Any.fromFunction1(value))
     

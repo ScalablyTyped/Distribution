@@ -20,7 +20,8 @@ object AutoscalingConfig {
     __obj.asInstanceOf[AutoscalingConfig]
   }
   
-  extension [Self <: AutoscalingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscalingConfig] (val x: Self) extends AnyVal {
     
     inline def setPolicyUri(value: String): Self = StObject.set(x, "policyUri", value.asInstanceOf[js.Any])
     

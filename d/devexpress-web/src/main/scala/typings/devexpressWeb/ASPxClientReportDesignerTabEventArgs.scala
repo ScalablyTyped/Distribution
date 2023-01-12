@@ -23,7 +23,8 @@ object ASPxClientReportDesignerTabEventArgs {
     __obj.asInstanceOf[ASPxClientReportDesignerTabEventArgs]
   }
   
-  extension [Self <: ASPxClientReportDesignerTabEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientReportDesignerTabEventArgs] (val x: Self) extends AnyVal {
     
     inline def setTab(value: ASPxDesignerNavigateTab): Self = StObject.set(x, "Tab", value.asInstanceOf[js.Any])
   }

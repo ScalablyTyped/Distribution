@@ -33,7 +33,8 @@ object ISQLDatabase {
     __obj.asInstanceOf[ISQLDatabase]
   }
   
-  extension [Self <: ISQLDatabase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISQLDatabase] (val x: Self) extends AnyVal {
     
     inline def setAdminUser(value: IImpersonation): Self = StObject.set(x, "AdminUser", value.asInstanceOf[js.Any])
     

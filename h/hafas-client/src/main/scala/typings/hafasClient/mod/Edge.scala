@@ -23,7 +23,8 @@ object Edge {
     __obj.asInstanceOf[Edge]
   }
   
-  extension [Self <: Edge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
     
     inline def setDir(value: Double): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     

@@ -174,7 +174,8 @@ object global {
         __obj.asInstanceOf[ElementAttributesProperty]
       }
       
-      extension [Self <: ElementAttributesProperty](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ElementAttributesProperty] (val x: Self) extends AnyVal {
         
         inline def setProps(value: PropsElement): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       }
@@ -191,7 +192,8 @@ object global {
         __obj.asInstanceOf[ElementChildrenAttribute]
       }
       
-      extension [Self <: ElementChildrenAttribute](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ElementChildrenAttribute] (val x: Self) extends AnyVal {
         
         inline def setContent(value: js.Array[VNode]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -581,7 +583,8 @@ object global {
         __obj.asInstanceOf[IntrinsicClassAttributes[T]]
       }
       
-      extension [Self <: IntrinsicClassAttributes[?], T](x: Self & IntrinsicClassAttributes[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IntrinsicClassAttributes[?], T] (val x: Self & IntrinsicClassAttributes[T]) extends AnyVal {
         
         inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
         
@@ -1914,7 +1917,8 @@ object global {
         __obj.asInstanceOf[IntrinsicElements]
       }
       
-      extension [Self <: IntrinsicElements](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
         
         inline def setA(value: PropsHTMLAnchorElementcon): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
         

@@ -25,7 +25,8 @@ object mod {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setSpread(value: Boolean): Self = StObject.set(x, "spread", value.asInstanceOf[js.Any])
     }

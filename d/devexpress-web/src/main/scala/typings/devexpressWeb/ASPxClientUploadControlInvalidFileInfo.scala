@@ -31,7 +31,8 @@ object ASPxClientUploadControlInvalidFileInfo {
     __obj.asInstanceOf[ASPxClientUploadControlInvalidFileInfo]
   }
   
-  extension [Self <: ASPxClientUploadControlInvalidFileInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientUploadControlInvalidFileInfo] (val x: Self) extends AnyVal {
     
     inline def setErrorType(value: ASPxClientUploadControlValidationErrorTypeConsts): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
     

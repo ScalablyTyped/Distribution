@@ -20,7 +20,8 @@ object OriginalLabelsIn {
     __obj.asInstanceOf[OriginalLabelsIn]
   }
   
-  extension [Self <: OriginalLabelsIn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginalLabelsIn] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: js.Array[Category]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

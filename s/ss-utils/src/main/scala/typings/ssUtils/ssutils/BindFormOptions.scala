@@ -24,7 +24,8 @@ object BindFormOptions {
     __obj.asInstanceOf[BindFormOptions]
   }
   
-  extension [Self <: BindFormOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindFormOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* repeated */ Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

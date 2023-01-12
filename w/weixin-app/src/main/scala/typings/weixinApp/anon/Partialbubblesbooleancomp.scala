@@ -20,7 +20,8 @@ object Partialbubblesbooleancomp {
     __obj.asInstanceOf[Partialbubblesbooleancomp]
   }
   
-  extension [Self <: Partialbubblesbooleancomp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialbubblesbooleancomp] (val x: Self) extends AnyVal {
     
     inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     

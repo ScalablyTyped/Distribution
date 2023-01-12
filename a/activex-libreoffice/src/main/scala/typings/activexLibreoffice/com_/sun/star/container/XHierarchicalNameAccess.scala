@@ -44,7 +44,8 @@ object XHierarchicalNameAccess {
     __obj.asInstanceOf[XHierarchicalNameAccess]
   }
   
-  extension [Self <: XHierarchicalNameAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XHierarchicalNameAccess] (val x: Self) extends AnyVal {
     
     inline def setGetByHierarchicalName(value: String => Any): Self = StObject.set(x, "getByHierarchicalName", js.Any.fromFunction1(value))
     

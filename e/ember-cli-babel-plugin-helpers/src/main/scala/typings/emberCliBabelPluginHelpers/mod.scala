@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[AddPluginOptions]
     }
     
-    extension [Self <: AddPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object mod {
       __obj.asInstanceOf[ConfigurationTarget]
     }
     
-    extension [Self <: ConfigurationTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigurationTarget] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Babel): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

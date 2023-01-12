@@ -88,7 +88,8 @@ object Props {
     __obj.asInstanceOf[Props]
   }
   
-  extension [Self <: Props](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
     
     inline def setBootstrapURLKeys(value: BootstrapURLKeys): Self = StObject.set(x, "bootstrapURLKeys", value.asInstanceOf[js.Any])
     

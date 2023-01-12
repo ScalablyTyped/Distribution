@@ -15,7 +15,8 @@ object TypingInstallerRequestWithProjectName {
     __obj.asInstanceOf[TypingInstallerRequestWithProjectName]
   }
   
-  extension [Self <: TypingInstallerRequestWithProjectName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypingInstallerRequestWithProjectName] (val x: Self) extends AnyVal {
     
     inline def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
   }

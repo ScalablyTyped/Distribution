@@ -21,7 +21,8 @@ object CameraRollNodeInfo {
     __obj.asInstanceOf[CameraRollNodeInfo]
   }
   
-  extension [Self <: CameraRollNodeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraRollNodeInfo] (val x: Self) extends AnyVal {
     
     inline def setGroup_name(value: String): Self = StObject.set(x, "group_name", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ALWAYS {
     __obj.asInstanceOf[ALWAYS]
   }
   
-  extension [Self <: ALWAYS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ALWAYS] (val x: Self) extends AnyVal {
     
     inline def setALWAYS(value: String): Self = StObject.set(x, "ALWAYS", value.asInstanceOf[js.Any])
     

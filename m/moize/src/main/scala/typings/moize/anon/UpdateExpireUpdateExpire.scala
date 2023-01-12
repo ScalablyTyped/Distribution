@@ -15,7 +15,8 @@ object UpdateExpireUpdateExpire {
     __obj.asInstanceOf[UpdateExpireUpdateExpire[UpdateExpire]]
   }
   
-  extension [Self <: UpdateExpireUpdateExpire[?], UpdateExpire /* <: Boolean */](x: Self & UpdateExpireUpdateExpire[UpdateExpire]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateExpireUpdateExpire[?], UpdateExpire /* <: Boolean */] (val x: Self & UpdateExpireUpdateExpire[UpdateExpire]) extends AnyVal {
     
     inline def setUpdateExpire(value: UpdateExpire): Self = StObject.set(x, "updateExpire", value.asInstanceOf[js.Any])
   }

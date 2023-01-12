@@ -68,7 +68,8 @@ object PutSlotTypeResponse {
     __obj.asInstanceOf[PutSlotTypeResponse]
   }
   
-  extension [Self <: PutSlotTypeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutSlotTypeResponse] (val x: Self) extends AnyVal {
     
     inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     

@@ -142,7 +142,8 @@ object distDomUtilsCommonMod {
       __obj.asInstanceOf[MoveQueueItem]
     }
     
-    extension [Self <: MoveQueueItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoveQueueItem] (val x: Self) extends AnyVal {
       
       inline def setDom(value: Element): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       

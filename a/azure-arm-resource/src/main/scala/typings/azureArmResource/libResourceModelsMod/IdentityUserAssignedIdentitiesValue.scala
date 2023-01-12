@@ -23,7 +23,8 @@ object IdentityUserAssignedIdentitiesValue {
     __obj.asInstanceOf[IdentityUserAssignedIdentitiesValue]
   }
   
-  extension [Self <: IdentityUserAssignedIdentitiesValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityUserAssignedIdentitiesValue] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     

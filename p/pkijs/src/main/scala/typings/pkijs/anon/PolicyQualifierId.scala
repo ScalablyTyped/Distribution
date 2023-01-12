@@ -17,7 +17,8 @@ object PolicyQualifierId {
     __obj.asInstanceOf[PolicyQualifierId]
   }
   
-  extension [Self <: PolicyQualifierId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyQualifierId] (val x: Self) extends AnyVal {
     
     inline def setPolicyQualifierId(value: String): Self = StObject.set(x, "policyQualifierId", value.asInstanceOf[js.Any])
     

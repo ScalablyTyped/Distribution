@@ -90,7 +90,8 @@ object DatabaseNextSet {
     __obj.asInstanceOf[DatabaseNextSet]
   }
   
-  extension [Self <: DatabaseNextSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseNextSet] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: String): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     

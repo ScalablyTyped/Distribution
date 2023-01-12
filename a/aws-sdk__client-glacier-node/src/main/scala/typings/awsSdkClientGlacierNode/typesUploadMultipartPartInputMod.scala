@@ -68,7 +68,8 @@ object typesUploadMultipartPartInputMod {
       __obj.asInstanceOf[UploadMultipartPartInput[StreamType]]
     }
     
-    extension [Self <: UploadMultipartPartInput[?], StreamType](x: Self & UploadMultipartPartInput[StreamType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadMultipartPartInput[?], StreamType] (val x: Self & UploadMultipartPartInput[StreamType]) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

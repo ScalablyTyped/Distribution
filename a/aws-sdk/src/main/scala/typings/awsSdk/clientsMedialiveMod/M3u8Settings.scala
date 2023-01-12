@@ -98,7 +98,8 @@ object M3u8Settings {
     __obj.asInstanceOf[M3u8Settings]
   }
   
-  extension [Self <: M3u8Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: M3u8Settings] (val x: Self) extends AnyVal {
     
     inline def setAudioFramesPerPes(value: integerMin0): Self = StObject.set(x, "AudioFramesPerPes", value.asInstanceOf[js.Any])
     

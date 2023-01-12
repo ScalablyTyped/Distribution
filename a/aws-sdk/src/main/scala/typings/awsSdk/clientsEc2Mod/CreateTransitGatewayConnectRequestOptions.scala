@@ -18,7 +18,8 @@ object CreateTransitGatewayConnectRequestOptions {
     __obj.asInstanceOf[CreateTransitGatewayConnectRequestOptions]
   }
   
-  extension [Self <: CreateTransitGatewayConnectRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTransitGatewayConnectRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setProtocol(value: ProtocolValue): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
   }

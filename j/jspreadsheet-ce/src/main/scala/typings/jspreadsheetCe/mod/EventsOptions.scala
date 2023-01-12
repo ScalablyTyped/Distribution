@@ -221,7 +221,8 @@ object EventsOptions {
     __obj.asInstanceOf[EventsOptions]
   }
   
-  extension [Self <: EventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventsOptions] (val x: Self) extends AnyVal {
     
     inline def setOnafterchanges(value: (/* instance */ HTMLElement, /* cellChanges */ js.Array[CellChange]) => Unit): Self = StObject.set(x, "onafterchanges", js.Any.fromFunction2(value))
     

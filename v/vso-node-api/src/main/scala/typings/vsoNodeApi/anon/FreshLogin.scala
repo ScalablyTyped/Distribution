@@ -21,7 +21,8 @@ object FreshLogin {
     __obj.asInstanceOf[FreshLogin]
   }
   
-  extension [Self <: FreshLogin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FreshLogin] (val x: Self) extends AnyVal {
     
     inline def setFreshLogin(value: scala.Double): Self = StObject.set(x, "freshLogin", value.asInstanceOf[js.Any])
     

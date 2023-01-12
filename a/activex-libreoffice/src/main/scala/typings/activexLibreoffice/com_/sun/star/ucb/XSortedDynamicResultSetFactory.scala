@@ -33,7 +33,8 @@ object XSortedDynamicResultSetFactory {
     __obj.asInstanceOf[XSortedDynamicResultSetFactory]
   }
   
-  extension [Self <: XSortedDynamicResultSetFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSortedDynamicResultSetFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateSortedDynamicResultSet(value: (XDynamicResultSet, SeqEquiv[NumberedSortingInfo], XAnyCompareFactory) => XDynamicResultSet): Self = StObject.set(x, "createSortedDynamicResultSet", js.Any.fromFunction3(value))
   }

@@ -23,7 +23,8 @@ object AwsRedshiftClusterEndpoint {
     __obj.asInstanceOf[AwsRedshiftClusterEndpoint]
   }
   
-  extension [Self <: AwsRedshiftClusterEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRedshiftClusterEndpoint] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: NonEmptyString): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     

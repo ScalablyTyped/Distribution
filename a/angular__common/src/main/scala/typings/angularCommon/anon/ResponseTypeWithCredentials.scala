@@ -37,7 +37,8 @@ object ResponseTypeWithCredentials {
     __obj.asInstanceOf[ResponseTypeWithCredentials]
   }
   
-  extension [Self <: ResponseTypeWithCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseTypeWithCredentials] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

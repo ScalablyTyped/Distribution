@@ -20,7 +20,8 @@ object Datatestid {
     __obj.asInstanceOf[Datatestid]
   }
   
-  extension [Self <: Datatestid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Datatestid] (val x: Self) extends AnyVal {
     
     inline def `setData-testid`(value: String): Self = StObject.set(x, "data-testid", value.asInstanceOf[js.Any])
     

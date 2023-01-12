@@ -32,7 +32,8 @@ object CommunicationPayload {
     __obj.asInstanceOf[CommunicationPayload]
   }
   
-  extension [Self <: CommunicationPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommunicationPayload] (val x: Self) extends AnyVal {
     
     inline def setContentAttachment(value: Attachment): Self = StObject.set(x, "contentAttachment", value.asInstanceOf[js.Any])
     

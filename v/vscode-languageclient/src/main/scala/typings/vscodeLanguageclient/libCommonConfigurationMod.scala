@@ -71,7 +71,8 @@ object libCommonConfigurationMod {
       __obj.asInstanceOf[ConfigurationMiddleware]
     }
     
-    extension [Self <: ConfigurationMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigurationMiddleware] (val x: Self) extends AnyVal {
       
       inline def setConfiguration(
         value: (/* params */ ConfigurationParams, /* token */ CancellationToken, /* next */ HandlerSignature) => HandlerResult[js.Array[LSPAny], Unit]
@@ -94,7 +95,8 @@ object libCommonConfigurationMod {
       __obj.asInstanceOf[ConfigurationOptions]
     }
     
-    extension [Self <: ConfigurationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigurationOptions] (val x: Self) extends AnyVal {
       
       inline def setSynchronize(value: SynchronizeOptions): Self = StObject.set(x, "synchronize", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object libCommonConfigurationMod {
       __obj.asInstanceOf[ConfigurationWorkspaceMiddleware]
     }
     
-    extension [Self <: ConfigurationWorkspaceMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigurationWorkspaceMiddleware] (val x: Self) extends AnyVal {
       
       inline def setWorkspace(value: ConfigurationMiddleware): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
       
@@ -143,7 +146,8 @@ object libCommonConfigurationMod {
       __obj.asInstanceOf[DidChangeConfigurationMiddleware]
     }
     
-    extension [Self <: DidChangeConfigurationMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DidChangeConfigurationMiddleware] (val x: Self) extends AnyVal {
       
       inline def setDidChangeConfiguration(
         value: js.ThisFunction2[
@@ -171,7 +175,8 @@ object libCommonConfigurationMod {
       __obj.asInstanceOf[DidChangeConfigurationWorkspaceMiddleware]
     }
     
-    extension [Self <: DidChangeConfigurationWorkspaceMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DidChangeConfigurationWorkspaceMiddleware] (val x: Self) extends AnyVal {
       
       inline def setWorkspace(value: DidChangeConfigurationMiddleware): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
       
@@ -206,7 +211,8 @@ object libCommonConfigurationMod {
       __obj.asInstanceOf[SynchronizeOptions]
     }
     
-    extension [Self <: SynchronizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SynchronizeOptions] (val x: Self) extends AnyVal {
       
       inline def setConfigurationSection(value: String | js.Array[String]): Self = StObject.set(x, "configurationSection", value.asInstanceOf[js.Any])
       

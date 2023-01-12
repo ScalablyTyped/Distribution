@@ -31,7 +31,8 @@ object ThreadsResponse {
     __obj.asInstanceOf[ThreadsResponse]
   }
   
-  extension [Self <: ThreadsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreadsResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Threads): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

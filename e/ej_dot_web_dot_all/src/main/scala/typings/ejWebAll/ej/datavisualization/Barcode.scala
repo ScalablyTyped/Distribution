@@ -132,7 +132,8 @@ object Barcode {
       __obj.asInstanceOf[LoadEventArgs]
     }
     
-    extension [Self <: LoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -226,7 +227,8 @@ object Barcode {
       __obj.asInstanceOf[typings.ejWebAll.ej.datavisualization.Barcode.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.datavisualization.Barcode.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.datavisualization.Barcode.Model] (val x: Self) extends AnyVal {
       
       inline def setBarHeight(value: Double): Self = StObject.set(x, "barHeight", value.asInstanceOf[js.Any])
       
@@ -319,7 +321,8 @@ object Barcode {
       __obj.asInstanceOf[QuietZone]
     }
     
-    extension [Self <: QuietZone](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuietZone] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       

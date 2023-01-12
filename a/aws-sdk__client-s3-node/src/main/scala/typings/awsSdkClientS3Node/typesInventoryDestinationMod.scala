@@ -22,7 +22,8 @@ object typesInventoryDestinationMod {
       __obj.asInstanceOf[InventoryDestination]
     }
     
-    extension [Self <: InventoryDestination](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InventoryDestination] (val x: Self) extends AnyVal {
       
       inline def setS3BucketDestination(value: InventoryS3BucketDestination): Self = StObject.set(x, "S3BucketDestination", value.asInstanceOf[js.Any])
     }
@@ -45,7 +46,8 @@ object typesInventoryDestinationMod {
       __obj.asInstanceOf[UnmarshalledInventoryDestination]
     }
     
-    extension [Self <: UnmarshalledInventoryDestination](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledInventoryDestination] (val x: Self) extends AnyVal {
       
       inline def setS3BucketDestination(value: UnmarshalledInventoryS3BucketDestination): Self = StObject.set(x, "S3BucketDestination", value.asInstanceOf[js.Any])
     }

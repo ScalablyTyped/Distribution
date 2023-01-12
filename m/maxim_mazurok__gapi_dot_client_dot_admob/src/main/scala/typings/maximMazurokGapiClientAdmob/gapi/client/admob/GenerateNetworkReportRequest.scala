@@ -16,7 +16,8 @@ object GenerateNetworkReportRequest {
     __obj.asInstanceOf[GenerateNetworkReportRequest]
   }
   
-  extension [Self <: GenerateNetworkReportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateNetworkReportRequest] (val x: Self) extends AnyVal {
     
     inline def setReportSpec(value: NetworkReportSpec): Self = StObject.set(x, "reportSpec", value.asInstanceOf[js.Any])
     

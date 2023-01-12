@@ -111,7 +111,8 @@ object mod {
       __obj.asInstanceOf[IEditorParams]
     }
     
-    extension [Self <: IEditorParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEditorParams] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object mod {
       __obj.asInstanceOf[IFileOptions]
     }
     
-    extension [Self <: IFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFileOptions] (val x: Self) extends AnyVal {
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       

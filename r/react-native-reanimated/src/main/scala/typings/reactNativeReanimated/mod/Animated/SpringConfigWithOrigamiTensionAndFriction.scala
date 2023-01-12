@@ -35,7 +35,8 @@ object SpringConfigWithOrigamiTensionAndFriction {
     __obj.asInstanceOf[SpringConfigWithOrigamiTensionAndFriction]
   }
   
-  extension [Self <: SpringConfigWithOrigamiTensionAndFriction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpringConfigWithOrigamiTensionAndFriction] (val x: Self) extends AnyVal {
     
     inline def setFriction(value: Adaptable[Double]): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     

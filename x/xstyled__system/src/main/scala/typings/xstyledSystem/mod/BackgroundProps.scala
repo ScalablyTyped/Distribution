@@ -16,7 +16,8 @@ object BackgroundProps {
     __obj.asInstanceOf[BackgroundProps]
   }
   
-  extension [Self <: BackgroundProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundProps] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: ResponsiveValue[Background[String]]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object ResiliencyPolicy {
     __obj.asInstanceOf[ResiliencyPolicy]
   }
   
-  extension [Self <: ResiliencyPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResiliencyPolicy] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

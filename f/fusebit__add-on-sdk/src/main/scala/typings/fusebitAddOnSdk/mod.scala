@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[FusebitContext]
     }
     
-    extension [Self <: FusebitContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FusebitContext] (val x: Self) extends AnyVal {
       
       inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object mod {
       __obj.asInstanceOf[ListStorageOptions]
     }
     
-    extension [Self <: ListStorageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListStorageOptions] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object mod {
       __obj.asInstanceOf[ListStorageResult]
     }
     
-    extension [Self <: ListStorageResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListStorageResult] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[StorageItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -216,7 +219,8 @@ object mod {
       __obj.asInstanceOf[StorageDataObject]
     }
     
-    extension [Self <: StorageDataObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageDataObject] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -245,7 +249,8 @@ object mod {
       __obj.asInstanceOf[StorageItem]
     }
     
-    extension [Self <: StorageItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageItem] (val x: Self) extends AnyVal {
       
       inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       

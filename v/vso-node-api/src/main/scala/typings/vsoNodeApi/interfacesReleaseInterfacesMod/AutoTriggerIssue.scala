@@ -29,7 +29,8 @@ object AutoTriggerIssue {
     __obj.asInstanceOf[AutoTriggerIssue]
   }
   
-  extension [Self <: AutoTriggerIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoTriggerIssue] (val x: Self) extends AnyVal {
     
     inline def setIssue(value: Issue): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
     

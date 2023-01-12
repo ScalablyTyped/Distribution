@@ -23,7 +23,8 @@ object ExtensionFilterResultMetadata {
     __obj.asInstanceOf[ExtensionFilterResultMetadata]
   }
   
-  extension [Self <: ExtensionFilterResultMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionFilterResultMetadata] (val x: Self) extends AnyVal {
     
     inline def setMetadataItems(value: js.Array[MetadataItem]): Self = StObject.set(x, "metadataItems", value.asInstanceOf[js.Any])
     

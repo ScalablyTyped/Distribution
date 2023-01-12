@@ -18,7 +18,8 @@ object ICommandsEvents {
     __obj.asInstanceOf[ICommandsEvents]
   }
   
-  extension [Self <: ICommandsEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICommandsEvents] (val x: Self) extends AnyVal {
     
     inline def setOnCustomCommand(value: /* commandID */ Double => Unit): Self = StObject.set(x, "OnCustomCommand", js.Any.fromFunction1(value))
     

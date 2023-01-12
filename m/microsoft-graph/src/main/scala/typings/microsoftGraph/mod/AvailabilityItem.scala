@@ -28,7 +28,8 @@ object AvailabilityItem {
     __obj.asInstanceOf[AvailabilityItem]
   }
   
-  extension [Self <: AvailabilityItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvailabilityItem] (val x: Self) extends AnyVal {
     
     inline def setEndDateTime(value: DateTimeTimeZone): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
     

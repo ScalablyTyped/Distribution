@@ -23,7 +23,8 @@ object ControlgroupOptions {
     __obj.asInstanceOf[ControlgroupOptions]
   }
   
-  extension [Self <: ControlgroupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlgroupOptions] (val x: Self) extends AnyVal {
     
     inline def setCorners(value: Boolean): Self = StObject.set(x, "corners", value.asInstanceOf[js.Any])
     

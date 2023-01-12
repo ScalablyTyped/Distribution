@@ -17,7 +17,8 @@ object FormGridOptions {
     __obj.asInstanceOf[FormGridOptions]
   }
   
-  extension [Self <: FormGridOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormGridOptions] (val x: Self) extends AnyVal {
     
     inline def setCols(value: String | Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     

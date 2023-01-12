@@ -59,7 +59,8 @@ object VideoAdGroupBuilder {
     __obj.asInstanceOf[VideoAdGroupBuilder]
   }
   
-  extension [Self <: VideoAdGroupBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoAdGroupBuilder] (val x: Self) extends AnyVal {
     
     inline def setWithAdGroupType(value: String => VideoAdGroupBuilder): Self = StObject.set(x, "withAdGroupType", js.Any.fromFunction1(value))
     

@@ -671,7 +671,8 @@ object DetailedHTMLPropsIframeHT {
     __obj.asInstanceOf[DetailedHTMLPropsIframeHT]
   }
   
-  extension [Self <: DetailedHTMLPropsIframeHT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailedHTMLPropsIframeHT] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

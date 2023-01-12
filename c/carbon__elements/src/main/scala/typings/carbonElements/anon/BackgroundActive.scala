@@ -411,7 +411,8 @@ object BackgroundActive {
     __obj.asInstanceOf[BackgroundActive]
   }
   
-  extension [Self <: BackgroundActive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundActive] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: Numbersignf4f4f4): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

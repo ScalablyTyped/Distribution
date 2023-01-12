@@ -37,7 +37,8 @@ object LabelSymbol3DProperties {
     __obj.asInstanceOf[LabelSymbol3DProperties]
   }
   
-  extension [Self <: LabelSymbol3DProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelSymbol3DProperties] (val x: Self) extends AnyVal {
     
     inline def setCallout(value: Callout3DProperties): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
     

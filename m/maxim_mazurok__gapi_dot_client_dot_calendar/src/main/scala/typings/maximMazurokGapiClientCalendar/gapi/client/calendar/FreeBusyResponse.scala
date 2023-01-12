@@ -32,7 +32,8 @@ object FreeBusyResponse {
     __obj.asInstanceOf[FreeBusyResponse]
   }
   
-  extension [Self <: FreeBusyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FreeBusyResponse] (val x: Self) extends AnyVal {
     
     inline def setCalendars(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.FreeBusyCalendar} */ js.Any

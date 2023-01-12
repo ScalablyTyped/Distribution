@@ -80,7 +80,8 @@ object ASPxClientWebChartControlHotTrackEventArgs {
     __obj.asInstanceOf[ASPxClientWebChartControlHotTrackEventArgs]
   }
   
-  extension [Self <: ASPxClientWebChartControlHotTrackEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientWebChartControlHotTrackEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAbsoluteX(value: Double): Self = StObject.set(x, "absoluteX", value.asInstanceOf[js.Any])
     

@@ -114,7 +114,8 @@ object libCascaderMod extends Shortcut {
       __obj.asInstanceOf[CascaderRef]
     }
     
-    extension [Self <: CascaderRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CascaderRef] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       
@@ -140,7 +141,8 @@ object libCascaderMod extends Shortcut {
       __obj.asInstanceOf[FilledFieldNamesType]
     }
     
-    extension [Self <: FilledFieldNamesType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilledFieldNamesType] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -408,7 +410,8 @@ object libCascaderMod extends Shortcut {
       __obj.asInstanceOf[MultipleCascaderProps]
     }
     
-    extension [Self <: MultipleCascaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipleCascaderProps] (val x: Self) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
@@ -1160,7 +1163,8 @@ object libCascaderMod extends Shortcut {
       __obj.asInstanceOf[SingleCascaderProps]
     }
     
-    extension [Self <: SingleCascaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingleCascaderProps] (val x: Self) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       

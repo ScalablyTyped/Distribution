@@ -90,7 +90,8 @@ object b2PulleyJointDef {
     __obj.asInstanceOf[b2PulleyJointDef]
   }
   
-  extension [Self <: b2PulleyJointDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2PulleyJointDef] (val x: Self) extends AnyVal {
     
     inline def setGroundAnchorA(value: b2Vec2): Self = StObject.set(x, "groundAnchorA", value.asInstanceOf[js.Any])
     

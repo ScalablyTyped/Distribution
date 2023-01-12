@@ -17,7 +17,8 @@ object PullVisibleSymbolsInfo {
     __obj.asInstanceOf[PullVisibleSymbolsInfo]
   }
   
-  extension [Self <: PullVisibleSymbolsInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullVisibleSymbolsInfo] (val x: Self) extends AnyVal {
     
     inline def setEnclosingScopeSymbol(value: PullSymbol): Self = StObject.set(x, "enclosingScopeSymbol", value.asInstanceOf[js.Any])
     

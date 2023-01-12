@@ -23,7 +23,8 @@ object OFITrainingMetricsValue {
     __obj.asInstanceOf[OFITrainingMetricsValue]
   }
   
-  extension [Self <: OFITrainingMetricsValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OFITrainingMetricsValue] (val x: Self) extends AnyVal {
     
     inline def setMetricDataPoints(value: OFIMetricDataPointsList): Self = StObject.set(x, "metricDataPoints", value.asInstanceOf[js.Any])
     

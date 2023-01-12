@@ -25,7 +25,8 @@ object ThreadRowActionButtonDescriptor {
     __obj.asInstanceOf[ThreadRowActionButtonDescriptor]
   }
   
-  extension [Self <: ThreadRowActionButtonDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreadRowActionButtonDescriptor] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

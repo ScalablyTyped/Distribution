@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Encoding]
     }
     
-    extension [Self <: Encoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object anon {
       __obj.asInstanceOf[ErrorstatusCodenumberorig]
     }
     
-    extension [Self <: ErrorstatusCodenumberorig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorstatusCodenumberorig] (val x: Self) extends AnyVal {
       
       inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

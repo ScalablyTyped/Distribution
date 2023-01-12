@@ -52,7 +52,8 @@ object FaxInboundRoutingMethod {
     __obj.asInstanceOf[FaxInboundRoutingMethod]
   }
   
-  extension [Self <: FaxInboundRoutingMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxInboundRoutingMethod] (val x: Self) extends AnyVal {
     
     inline def setExtensionFriendlyName(value: String): Self = StObject.set(x, "ExtensionFriendlyName", value.asInstanceOf[js.Any])
     

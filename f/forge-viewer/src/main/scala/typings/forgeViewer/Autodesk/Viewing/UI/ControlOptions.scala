@@ -18,7 +18,8 @@ object ControlOptions {
     __obj.asInstanceOf[ControlOptions]
   }
   
-  extension [Self <: ControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlOptions] (val x: Self) extends AnyVal {
     
     inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
     

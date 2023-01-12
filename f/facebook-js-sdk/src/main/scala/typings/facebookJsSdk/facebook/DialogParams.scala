@@ -28,7 +28,8 @@ object DialogParams {
     __obj.asInstanceOf[DialogParams]
   }
   
-  extension [Self <: DialogParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogParams] (val x: Self) extends AnyVal {
     
     inline def setApp_id(value: String): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
     

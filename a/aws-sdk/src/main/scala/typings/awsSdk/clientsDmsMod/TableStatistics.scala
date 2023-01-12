@@ -108,7 +108,8 @@ object TableStatistics {
     __obj.asInstanceOf[TableStatistics]
   }
   
-  extension [Self <: TableStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableStatistics] (val x: Self) extends AnyVal {
     
     inline def setDdls(value: Long): Self = StObject.set(x, "Ddls", value.asInstanceOf[js.Any])
     

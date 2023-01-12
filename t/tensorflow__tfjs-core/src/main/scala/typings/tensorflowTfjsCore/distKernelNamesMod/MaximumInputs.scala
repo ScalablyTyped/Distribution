@@ -18,7 +18,8 @@ object MaximumInputs {
     __obj.asInstanceOf[MaximumInputs]
   }
   
-  extension [Self <: MaximumInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaximumInputs] (val x: Self) extends AnyVal {
     
     inline def setA(value: scala.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

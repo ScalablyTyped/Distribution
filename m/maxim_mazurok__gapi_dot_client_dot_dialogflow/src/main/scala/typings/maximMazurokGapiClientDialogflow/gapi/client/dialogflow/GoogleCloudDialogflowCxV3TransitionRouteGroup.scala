@@ -25,7 +25,8 @@ object GoogleCloudDialogflowCxV3TransitionRouteGroup {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3TransitionRouteGroup]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3TransitionRouteGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3TransitionRouteGroup] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

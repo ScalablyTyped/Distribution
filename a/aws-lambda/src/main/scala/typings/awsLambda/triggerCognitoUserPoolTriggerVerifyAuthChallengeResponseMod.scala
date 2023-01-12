@@ -35,7 +35,8 @@ object triggerCognitoUserPoolTriggerVerifyAuthChallengeResponseMod {
       __obj.asInstanceOf[VerifyAuthChallengeResponseTriggerEvent]
     }
     
-    extension [Self <: VerifyAuthChallengeResponseTriggerEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifyAuthChallengeResponseTriggerEvent] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: PrivateChallengeParameters): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       

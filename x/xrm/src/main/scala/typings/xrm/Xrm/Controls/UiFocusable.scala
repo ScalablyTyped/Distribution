@@ -21,7 +21,8 @@ object UiFocusable {
     __obj.asInstanceOf[UiFocusable]
   }
   
-  extension [Self <: UiFocusable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UiFocusable] (val x: Self) extends AnyVal {
     
     inline def setSetFocus(value: () => Unit): Self = StObject.set(x, "setFocus", js.Any.fromFunction0(value))
   }

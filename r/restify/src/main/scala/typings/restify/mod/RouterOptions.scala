@@ -23,7 +23,8 @@ object RouterOptions {
     __obj.asInstanceOf[RouterOptions]
   }
   
-  extension [Self <: RouterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreTrailingSlash(value: Boolean): Self = StObject.set(x, "ignoreTrailingSlash", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ContentPrefetchTrigger {
     __obj.asInstanceOf[ContentPrefetchTrigger]
   }
   
-  extension [Self <: ContentPrefetchTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentPrefetchTrigger] (val x: Self) extends AnyVal {
     
     inline def setWaitInterval(value: Double): Self = StObject.set(x, "waitInterval", value.asInstanceOf[js.Any])
   }

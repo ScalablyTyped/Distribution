@@ -35,7 +35,8 @@ object TopoDataFormat {
     __obj.asInstanceOf[TopoDataFormat]
   }
   
-  extension [Self <: TopoDataFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopoDataFormat] (val x: Self) extends AnyVal {
     
     inline def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ScrollViewPageable {
     __obj.asInstanceOf[ScrollViewPageable]
   }
   
-  extension [Self <: ScrollViewPageable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollViewPageable] (val x: Self) extends AnyVal {
     
     inline def setARIATemplate(value: String): Self = StObject.set(x, "ARIATemplate", value.asInstanceOf[js.Any])
     

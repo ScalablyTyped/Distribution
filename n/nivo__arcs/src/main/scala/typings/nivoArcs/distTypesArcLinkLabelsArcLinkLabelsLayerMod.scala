@@ -64,7 +64,8 @@ object distTypesArcLinkLabelsArcLinkLabelsLayerMod {
       __obj.asInstanceOf[ArcLinkLabelsLayerProps[Datum]]
     }
     
-    extension [Self <: ArcLinkLabelsLayerProps[?], Datum /* <: DatumWithArcAndColor */](x: Self & ArcLinkLabelsLayerProps[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcLinkLabelsLayerProps[?], Datum /* <: DatumWithArcAndColor */] (val x: Self & ArcLinkLabelsLayerProps[Datum]) extends AnyVal {
       
       inline def setCenter(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       

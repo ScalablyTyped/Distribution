@@ -37,7 +37,8 @@ object PartialOptionsAllowedAutoPlacements {
     __obj.asInstanceOf[PartialOptionsAllowedAutoPlacements]
   }
   
-  extension [Self <: PartialOptionsAllowedAutoPlacements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOptionsAllowedAutoPlacements] (val x: Self) extends AnyVal {
     
     inline def setAllowedAutoPlacements(value: js.Array[Placement]): Self = StObject.set(x, "allowedAutoPlacements", value.asInstanceOf[js.Any])
     

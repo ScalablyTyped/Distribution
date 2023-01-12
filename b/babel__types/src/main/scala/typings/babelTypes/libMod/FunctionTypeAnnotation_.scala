@@ -33,7 +33,8 @@ object FunctionTypeAnnotation_ {
     __obj.asInstanceOf[FunctionTypeAnnotation_]
   }
   
-  extension [Self <: FunctionTypeAnnotation_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionTypeAnnotation_] (val x: Self) extends AnyVal {
     
     inline def setParams(value: js.Array[FunctionTypeParam_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     

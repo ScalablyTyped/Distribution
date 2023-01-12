@@ -58,7 +58,8 @@ object Descriptors {
     __obj.asInstanceOf[Descriptors[State, EventMap, ActionHelpers, ScreenOptions]]
   }
   
-  extension [Self <: Descriptors[?, ?, ?, ?], State /* <: NavigationState[ParamListBase] */, EventMap /* <: Record[String, Any] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */](x: Self & (Descriptors[State, EventMap, ActionHelpers, ScreenOptions])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Descriptors[?, ?, ?, ?], State /* <: NavigationState[ParamListBase] */, EventMap /* <: Record[String, Any] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */] (val x: Self & (Descriptors[State, EventMap, ActionHelpers, ScreenOptions])) extends AnyVal {
     
     inline def setDescriptors(
       value: Record[

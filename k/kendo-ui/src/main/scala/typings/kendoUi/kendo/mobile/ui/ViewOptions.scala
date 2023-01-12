@@ -45,7 +45,8 @@ object ViewOptions {
     __obj.asInstanceOf[ViewOptions]
   }
   
-  extension [Self <: ViewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewOptions] (val x: Self) extends AnyVal {
     
     inline def setAfterShow(value: /* e */ ViewAfterShowEvent => Unit): Self = StObject.set(x, "afterShow", js.Any.fromFunction1(value))
     

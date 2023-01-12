@@ -24,7 +24,8 @@ object distTypesInternalSchedulerDateTimestampProviderMod {
       __obj.asInstanceOf[DateTimestampProvider_]
     }
     
-    extension [Self <: DateTimestampProvider_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateTimestampProvider_] (val x: Self) extends AnyVal {
       
       inline def setDelegate(value: TimestampProvider): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
       

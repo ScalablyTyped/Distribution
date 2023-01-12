@@ -94,7 +94,8 @@ object CommentContentRangeData {
     __obj.asInstanceOf[CommentContentRangeData]
   }
   
-  extension [Self <: CommentContentRangeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentContentRangeData] (val x: Self) extends AnyVal {
     
     inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     

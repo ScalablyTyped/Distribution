@@ -23,7 +23,8 @@ object RegenerateSecurityTokenRequest {
     __obj.asInstanceOf[RegenerateSecurityTokenRequest]
   }
   
-  extension [Self <: RegenerateSecurityTokenRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegenerateSecurityTokenRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

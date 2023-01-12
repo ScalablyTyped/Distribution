@@ -23,7 +23,8 @@ object ColumnImportance {
     __obj.asInstanceOf[ColumnImportance]
   }
   
-  extension [Self <: ColumnImportance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnImportance] (val x: Self) extends AnyVal {
     
     inline def setColumnName(value: NameString): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
     

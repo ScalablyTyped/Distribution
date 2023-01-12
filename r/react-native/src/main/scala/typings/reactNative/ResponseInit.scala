@@ -19,7 +19,8 @@ object ResponseInit {
     __obj.asInstanceOf[ResponseInit]
   }
   
-  extension [Self <: ResponseInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseInit] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: HeadersInit): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

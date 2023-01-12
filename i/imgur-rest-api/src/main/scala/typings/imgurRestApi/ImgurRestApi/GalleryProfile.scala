@@ -26,7 +26,8 @@ object GalleryProfile {
     __obj.asInstanceOf[GalleryProfile]
   }
   
-  extension [Self <: GalleryProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GalleryProfile] (val x: Self) extends AnyVal {
     
     inline def setTotal_gallery_comments(value: Double): Self = StObject.set(x, "total_gallery_comments", value.asInstanceOf[js.Any])
     

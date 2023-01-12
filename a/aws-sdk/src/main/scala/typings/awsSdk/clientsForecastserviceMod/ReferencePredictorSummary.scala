@@ -23,7 +23,8 @@ object ReferencePredictorSummary {
     __obj.asInstanceOf[ReferencePredictorSummary]
   }
   
-  extension [Self <: ReferencePredictorSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferencePredictorSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -130,7 +130,8 @@ object mod {
       __obj.asInstanceOf[Options[ReturnType]]
     }
     
-    extension [Self <: Options[?], ReturnType](x: Self & Options[ReturnType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], ReturnType] (val x: Self & Options[ReturnType]) extends AnyVal {
       
       inline def setCustomTimers(value: ClearTimeout): Self = StObject.set(x, "customTimers", value.asInstanceOf[js.Any])
       

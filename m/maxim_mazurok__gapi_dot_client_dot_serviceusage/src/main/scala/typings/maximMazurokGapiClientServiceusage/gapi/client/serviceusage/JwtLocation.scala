@@ -29,7 +29,8 @@ object JwtLocation {
     __obj.asInstanceOf[JwtLocation]
   }
   
-  extension [Self <: JwtLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JwtLocation] (val x: Self) extends AnyVal {
     
     inline def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     

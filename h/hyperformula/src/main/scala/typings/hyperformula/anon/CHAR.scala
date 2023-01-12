@@ -17,7 +17,8 @@ object CHAR {
     __obj.asInstanceOf[CHAR]
   }
   
-  extension [Self <: CHAR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CHAR] (val x: Self) extends AnyVal {
     
     inline def setCHAR(value: Method): Self = StObject.set(x, "CHAR", value.asInstanceOf[js.Any])
     

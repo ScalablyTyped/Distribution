@@ -18,7 +18,8 @@ object TimestampValue {
     __obj.asInstanceOf[TimestampValue]
   }
   
-  extension [Self <: TimestampValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimestampValue] (val x: Self) extends AnyVal {
     
     inline def setTimeInMillis(value: EpochMilliTimestamp): Self = StObject.set(x, "timeInMillis", value.asInstanceOf[js.Any])
     

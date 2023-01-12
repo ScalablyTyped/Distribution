@@ -43,7 +43,8 @@ object urlstringRequestOptions {
     __obj.asInstanceOf[urlstringRequestOptions]
   }
   
-  extension [Self <: urlstringRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: urlstringRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: Password | Bearer): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

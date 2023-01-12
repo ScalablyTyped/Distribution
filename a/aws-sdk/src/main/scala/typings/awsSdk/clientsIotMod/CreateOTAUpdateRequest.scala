@@ -78,7 +78,8 @@ object CreateOTAUpdateRequest {
     __obj.asInstanceOf[CreateOTAUpdateRequest]
   }
   
-  extension [Self <: CreateOTAUpdateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateOTAUpdateRequest] (val x: Self) extends AnyVal {
     
     inline def setAdditionalParameters(value: AdditionalParameterMap): Self = StObject.set(x, "additionalParameters", value.asInstanceOf[js.Any])
     

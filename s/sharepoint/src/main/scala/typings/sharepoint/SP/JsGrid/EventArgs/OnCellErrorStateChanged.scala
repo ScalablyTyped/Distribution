@@ -35,7 +35,8 @@ object OnCellErrorStateChanged {
     __obj.asInstanceOf[OnCellErrorStateChanged]
   }
   
-  extension [Self <: OnCellErrorStateChanged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnCellErrorStateChanged] (val x: Self) extends AnyVal {
     
     inline def setBAddingError(value: Boolean): Self = StObject.set(x, "bAddingError", value.asInstanceOf[js.Any])
     

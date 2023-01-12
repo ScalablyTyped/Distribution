@@ -27,7 +27,8 @@ object libUsersMod {
       __obj.asInstanceOf[Users]
     }
     
-    extension [Self <: Users](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Users] (val x: Self) extends AnyVal {
       
       inline def setOpenedCount(value: () => js.Promise[Double | String]): Self = StObject.set(x, "openedCount", js.Any.fromFunction0(value))
     }

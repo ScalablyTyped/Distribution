@@ -15,7 +15,8 @@ object JobTriggersSupported {
     __obj.asInstanceOf[JobTriggersSupported]
   }
   
-  extension [Self <: JobTriggersSupported](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobTriggersSupported] (val x: Self) extends AnyVal {
     
     inline def `setPreset-name`(value: String): Self = StObject.set(x, "preset-name", value.asInstanceOf[js.Any])
     

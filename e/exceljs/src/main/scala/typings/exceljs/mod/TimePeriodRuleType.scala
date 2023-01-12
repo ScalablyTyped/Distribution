@@ -22,7 +22,8 @@ object TimePeriodRuleType {
     __obj.asInstanceOf[TimePeriodRuleType]
   }
   
-  extension [Self <: TimePeriodRuleType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimePeriodRuleType] (val x: Self) extends AnyVal {
     
     inline def setTimePeriod(value: TimePeriodTypes): Self = StObject.set(x, "timePeriod", value.asInstanceOf[js.Any])
     

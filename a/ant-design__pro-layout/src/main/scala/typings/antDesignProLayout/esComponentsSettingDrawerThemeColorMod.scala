@@ -31,7 +31,8 @@ object esComponentsSettingDrawerThemeColorMod {
       __obj.asInstanceOf[TagProps]
     }
     
-    extension [Self <: TagProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagProps] (val x: Self) extends AnyVal {
       
       inline def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object esComponentsSettingDrawerThemeColorMod {
       __obj.asInstanceOf[ThemeColorProps]
     }
     
-    extension [Self <: ThemeColorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeColorProps] (val x: Self) extends AnyVal {
       
       inline def setColorList(value: js.Array[Color]): Self = StObject.set(x, "colorList", value.asInstanceOf[js.Any])
       

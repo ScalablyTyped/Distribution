@@ -46,7 +46,8 @@ object X86Instruction {
     __obj.asInstanceOf[X86Instruction]
   }
   
-  extension [Self <: X86Instruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X86Instruction] (val x: Self) extends AnyVal {
     
     inline def setOperands(value: js.Array[X86Operand]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
     

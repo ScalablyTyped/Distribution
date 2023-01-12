@@ -74,7 +74,8 @@ object ManagementResource {
     __obj.asInstanceOf[ManagementResource]
   }
   
-  extension [Self <: ManagementResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagementResource] (val x: Self) extends AnyVal {
     
     inline def setAccountSummaries(value: AccountSummariesResource): Self = StObject.set(x, "accountSummaries", value.asInstanceOf[js.Any])
     

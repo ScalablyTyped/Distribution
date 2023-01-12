@@ -27,7 +27,8 @@ object opensshDirectStreamLocalChannelInfo {
     __obj.asInstanceOf[opensshDirectStreamLocalChannelInfo]
   }
   
-  extension [Self <: opensshDirectStreamLocalChannelInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: opensshDirectStreamLocalChannelInfo] (val x: Self) extends AnyVal {
     
     inline def setData(value: SocketChannelData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

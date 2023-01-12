@@ -18,7 +18,8 @@ object GetIdentityPoolConfigurationRequest {
     __obj.asInstanceOf[GetIdentityPoolConfigurationRequest]
   }
   
-  extension [Self <: GetIdentityPoolConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIdentityPoolConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
   }

@@ -31,7 +31,8 @@ object GoogleAppsScriptTypeAddOnEntryPoint {
     __obj.asInstanceOf[GoogleAppsScriptTypeAddOnEntryPoint]
   }
   
-  extension [Self <: GoogleAppsScriptTypeAddOnEntryPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsScriptTypeAddOnEntryPoint] (val x: Self) extends AnyVal {
     
     inline def setAddOnType(value: String): Self = StObject.set(x, "addOnType", value.asInstanceOf[js.Any])
     

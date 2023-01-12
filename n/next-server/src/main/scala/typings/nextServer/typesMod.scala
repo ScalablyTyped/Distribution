@@ -23,7 +23,8 @@ object typesMod {
       __obj.asInstanceOf[PageConfig]
     }
     
-    extension [Self <: PageConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageConfig] (val x: Self) extends AnyVal {
       
       inline def setAmp(value: Boolean | hybrid): Self = StObject.set(x, "amp", value.asInstanceOf[js.Any])
       

@@ -224,7 +224,8 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
       __obj.asInstanceOf[FieldTypeInstanceUpdateOptions]
     }
     
-    extension [Self <: FieldTypeInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldTypeInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
       
@@ -389,7 +390,8 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
       __obj.asInstanceOf[FieldTypeListInstanceCreateOptions]
     }
     
-    extension [Self <: FieldTypeListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldTypeListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
       
@@ -440,7 +442,8 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
       __obj.asInstanceOf[FieldTypeListInstanceEachOptions]
     }
     
-    extension [Self <: FieldTypeListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldTypeListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ FieldTypeInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -489,7 +492,8 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
       __obj.asInstanceOf[FieldTypeListInstanceOptions]
     }
     
-    extension [Self <: FieldTypeListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldTypeListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -523,7 +527,8 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
       __obj.asInstanceOf[FieldTypeListInstancePageOptions]
     }
     
-    extension [Self <: FieldTypeListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldTypeListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
@@ -604,7 +609,8 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
       __obj.asInstanceOf[FieldTypeResource]
     }
     
-    extension [Self <: FieldTypeResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldTypeResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -637,7 +643,8 @@ object libRestPreviewUnderstandAssistantFieldTypeMod {
       __obj.asInstanceOf[FieldTypeSolution]
     }
     
-    extension [Self <: FieldTypeSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldTypeSolution] (val x: Self) extends AnyVal {
       
       inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
       

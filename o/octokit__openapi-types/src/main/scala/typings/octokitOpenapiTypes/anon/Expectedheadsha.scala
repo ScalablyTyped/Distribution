@@ -16,7 +16,8 @@ object Expectedheadsha {
     __obj.asInstanceOf[Expectedheadsha]
   }
   
-  extension [Self <: Expectedheadsha](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Expectedheadsha] (val x: Self) extends AnyVal {
     
     inline def setExpected_head_sha(value: String): Self = StObject.set(x, "expected_head_sha", value.asInstanceOf[js.Any])
     

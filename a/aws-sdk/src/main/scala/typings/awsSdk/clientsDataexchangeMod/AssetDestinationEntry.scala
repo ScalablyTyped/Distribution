@@ -28,7 +28,8 @@ object AssetDestinationEntry {
     __obj.asInstanceOf[AssetDestinationEntry]
   }
   
-  extension [Self <: AssetDestinationEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetDestinationEntry] (val x: Self) extends AnyVal {
     
     inline def setAssetId(value: Id): Self = StObject.set(x, "AssetId", value.asInstanceOf[js.Any])
     

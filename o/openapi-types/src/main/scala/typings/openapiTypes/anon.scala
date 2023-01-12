@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[AuthorizationCode]
     }
     
-    extension [Self <: AuthorizationCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizationCode] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationCode(value: Scopes): Self = StObject.set(x, "authorizationCode", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object anon {
       __obj.asInstanceOf[AuthorizationUrl]
     }
     
-    extension [Self <: AuthorizationUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizationUrl] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Callbacks]
     }
     
-    extension [Self <: Callbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callbacks] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: Record[String, ReferenceObject | CallbackObject]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -163,7 +166,8 @@ object anon {
       __obj.asInstanceOf[Consumes]
     }
     
-    extension [Self <: Consumes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Consumes] (val x: Self) extends AnyVal {
       
       inline def setConsumes(value: MimeTypes): Self = StObject.set(x, "consumes", value.asInstanceOf[js.Any])
       
@@ -268,7 +272,8 @@ object anon {
       __obj.asInstanceOf[Deprecated]
     }
     
-    extension [Self <: Deprecated](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Deprecated] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(
         value: StringDictionary[
@@ -353,7 +358,8 @@ object anon {
       __obj.asInstanceOf[Info]
     }
     
-    extension [Self <: Info](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
       
       inline def setInfo(value: InfoObject): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
@@ -382,7 +388,8 @@ object anon {
       __obj.asInstanceOf[Parameters]
     }
     
-    extension [Self <: Parameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
       
       inline def setParameters(value: js.Array[ReferenceObject | ParameterObject]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
@@ -413,7 +420,8 @@ object anon {
       __obj.asInstanceOf[RefreshUrl]
     }
     
-    extension [Self <: RefreshUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshUrl] (val x: Self) extends AnyVal {
       
       inline def setRefreshUrl(value: String): Self = StObject.set(x, "refreshUrl", value.asInstanceOf[js.Any])
       
@@ -442,7 +450,8 @@ object anon {
       __obj.asInstanceOf[Scopes]
     }
     
-    extension [Self <: Scopes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scopes] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
       

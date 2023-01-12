@@ -20,7 +20,8 @@ object IdentitySelector {
     __obj.asInstanceOf[IdentitySelector]
   }
   
-  extension [Self <: IdentitySelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentitySelector] (val x: Self) extends AnyVal {
     
     inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     

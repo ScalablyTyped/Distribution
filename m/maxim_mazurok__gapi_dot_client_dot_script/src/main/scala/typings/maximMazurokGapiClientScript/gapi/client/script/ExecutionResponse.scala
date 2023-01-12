@@ -19,7 +19,8 @@ object ExecutionResponse {
     __obj.asInstanceOf[ExecutionResponse]
   }
   
-  extension [Self <: ExecutionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionResponse] (val x: Self) extends AnyVal {
     
     inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

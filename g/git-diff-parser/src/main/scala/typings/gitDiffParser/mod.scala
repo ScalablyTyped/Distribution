@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[Commit]
     }
     
-    extension [Self <: Commit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Commit] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object mod {
       __obj.asInstanceOf[DetailedCommit]
     }
     
-    extension [Self <: DetailedCommit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailedCommit] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object mod {
       __obj.asInstanceOf[DetailedResult]
     }
     
-    extension [Self <: DetailedResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailedResult] (val x: Self) extends AnyVal {
       
       inline def setCommits(value: js.Array[DetailedCommit]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
       
@@ -121,7 +124,8 @@ object mod {
       __obj.asInstanceOf[DryResult]
     }
     
-    extension [Self <: DryResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DryResult] (val x: Self) extends AnyVal {
       
       inline def setDetailed(value: `false`): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
     }
@@ -159,7 +163,8 @@ object mod {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setAdded(value: Boolean): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
       
@@ -211,7 +216,8 @@ object mod {
       __obj.asInstanceOf[Line]
     }
     
-    extension [Self <: Line](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
       
       inline def setBreak(value: Boolean): Self = StObject.set(x, "break", value.asInstanceOf[js.Any])
       
@@ -256,7 +262,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setCommits(value: js.Array[Commit]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
       

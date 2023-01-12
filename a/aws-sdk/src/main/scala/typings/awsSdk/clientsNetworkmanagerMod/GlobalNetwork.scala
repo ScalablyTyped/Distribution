@@ -43,7 +43,8 @@ object GlobalNetwork {
     __obj.asInstanceOf[GlobalNetwork]
   }
   
-  extension [Self <: GlobalNetwork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalNetwork] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

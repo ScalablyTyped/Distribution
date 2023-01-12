@@ -18,7 +18,8 @@ object FontOpts {
     __obj.asInstanceOf[FontOpts]
   }
   
-  extension [Self <: FontOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontOpts] (val x: Self) extends AnyVal {
     
     inline def setPrimary(value: Regular): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object NewXMLNode {
     __obj.asInstanceOf[NewXMLNode]
   }
   
-  extension [Self <: NewXMLNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewXMLNode] (val x: Self) extends AnyVal {
     
     inline def setNewXMLNode(value: typings.activexWord.Word.XMLNode): Self = StObject.set(x, "NewXMLNode", value.asInstanceOf[js.Any])
     

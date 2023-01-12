@@ -17,7 +17,8 @@ object RenderOption {
     __obj.asInstanceOf[RenderOption]
   }
   
-  extension [Self <: RenderOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderOption] (val x: Self) extends AnyVal {
     
     inline def setDriver(value: Any): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
     

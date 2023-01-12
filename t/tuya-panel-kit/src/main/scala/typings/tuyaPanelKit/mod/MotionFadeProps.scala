@@ -27,7 +27,8 @@ object MotionFadeProps {
     __obj.asInstanceOf[MotionFadeProps]
   }
   
-  extension [Self <: MotionFadeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MotionFadeProps] (val x: Self) extends AnyVal {
     
     inline def setFadeOpacity(value: Double): Self = StObject.set(x, "fadeOpacity", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object SubstancePolymer {
     __obj.asInstanceOf[SubstancePolymer]
   }
   
-  extension [Self <: SubstancePolymer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstancePolymer] (val x: Self) extends AnyVal {
     
     inline def setClass(value: CodeableConcept): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     

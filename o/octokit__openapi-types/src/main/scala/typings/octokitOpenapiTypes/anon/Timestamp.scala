@@ -26,7 +26,8 @@ object Timestamp {
     __obj.asInstanceOf[Timestamp]
   }
   
-  extension [Self <: Timestamp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Timestamp] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: EmailString): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

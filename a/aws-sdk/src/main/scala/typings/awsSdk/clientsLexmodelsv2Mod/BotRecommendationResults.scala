@@ -28,7 +28,8 @@ object BotRecommendationResults {
     __obj.asInstanceOf[BotRecommendationResults]
   }
   
-  extension [Self <: BotRecommendationResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BotRecommendationResults] (val x: Self) extends AnyVal {
     
     inline def setAssociatedTranscriptsUrl(value: PresignedS3Url): Self = StObject.set(x, "associatedTranscriptsUrl", value.asInstanceOf[js.Any])
     

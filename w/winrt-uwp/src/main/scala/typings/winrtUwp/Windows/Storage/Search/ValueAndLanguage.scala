@@ -20,7 +20,8 @@ object ValueAndLanguage {
     __obj.asInstanceOf[ValueAndLanguage]
   }
   
-  extension [Self <: ValueAndLanguage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueAndLanguage] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

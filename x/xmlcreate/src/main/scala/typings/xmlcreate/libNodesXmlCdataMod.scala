@@ -35,7 +35,8 @@ object libNodesXmlCdataMod {
       __obj.asInstanceOf[IXmlCdataOptions]
     }
     
-    extension [Self <: IXmlCdataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IXmlCdataOptions] (val x: Self) extends AnyVal {
       
       inline def setCharData(value: String): Self = StObject.set(x, "charData", value.asInstanceOf[js.Any])
       

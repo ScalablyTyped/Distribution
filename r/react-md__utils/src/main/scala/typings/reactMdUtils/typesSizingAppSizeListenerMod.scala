@@ -36,7 +36,8 @@ object typesSizingAppSizeListenerMod {
       __obj.asInstanceOf[AppSizeListenerProps]
     }
     
-    extension [Self <: AppSizeListenerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppSizeListenerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

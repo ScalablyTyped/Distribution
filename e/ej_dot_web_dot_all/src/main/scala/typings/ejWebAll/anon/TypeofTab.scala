@@ -20,7 +20,8 @@ object TypeofTab {
     __obj.asInstanceOf[TypeofTab]
   }
   
-  extension [Self <: TypeofTab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTab] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Tab): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

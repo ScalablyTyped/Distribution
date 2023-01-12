@@ -51,7 +51,8 @@ object MagneticStripeReaderBankCardDataReceivedEventArgs {
     __obj.asInstanceOf[MagneticStripeReaderBankCardDataReceivedEventArgs]
   }
   
-  extension [Self <: MagneticStripeReaderBankCardDataReceivedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MagneticStripeReaderBankCardDataReceivedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAccountNumber(value: String): Self = StObject.set(x, "accountNumber", value.asInstanceOf[js.Any])
     

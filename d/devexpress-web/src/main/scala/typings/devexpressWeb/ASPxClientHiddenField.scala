@@ -102,7 +102,8 @@ object ASPxClientHiddenField {
     __obj.asInstanceOf[ASPxClientHiddenField]
   }
   
-  extension [Self <: ASPxClientHiddenField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHiddenField] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (String, Any) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

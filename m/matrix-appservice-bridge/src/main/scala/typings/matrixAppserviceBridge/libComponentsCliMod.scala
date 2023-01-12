@@ -102,7 +102,8 @@ object libComponentsCliMod {
       __obj.asInstanceOf[CliArgs]
     }
     
-    extension [Self <: CliArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CliArgs] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

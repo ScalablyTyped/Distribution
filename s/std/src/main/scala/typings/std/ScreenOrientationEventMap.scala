@@ -16,7 +16,8 @@ object ScreenOrientationEventMap {
     __obj.asInstanceOf[ScreenOrientationEventMap]
   }
   
-  extension [Self <: ScreenOrientationEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScreenOrientationEventMap] (val x: Self) extends AnyVal {
     
     inline def setChange(value: Event): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
   }

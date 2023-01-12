@@ -16,7 +16,8 @@ object NotifierSecretRef {
     __obj.asInstanceOf[NotifierSecretRef]
   }
   
-  extension [Self <: NotifierSecretRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifierSecretRef] (val x: Self) extends AnyVal {
     
     inline def setSecretRef(value: String): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
     

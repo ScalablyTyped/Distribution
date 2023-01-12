@@ -28,7 +28,8 @@ object DebugConsole {
     __obj.asInstanceOf[DebugConsole]
   }
   
-  extension [Self <: DebugConsole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugConsole] (val x: Self) extends AnyVal {
     
     inline def setAppend(value: String => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     

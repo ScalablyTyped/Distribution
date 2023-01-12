@@ -124,7 +124,8 @@ object distSrcCommandMod {
       __obj.asInstanceOf[CloseEvent]
     }
     
-    extension [Self <: CloseEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseEvent] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: CommandInfo): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
@@ -174,7 +175,8 @@ object distSrcCommandMod {
       __obj.asInstanceOf[CommandInfo]
     }
     
-    extension [Self <: CommandInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandInfo] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
@@ -211,7 +213,8 @@ object distSrcCommandMod {
       __obj.asInstanceOf[TimerEvent]
     }
     
-    extension [Self <: TimerEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimerEvent] (val x: Self) extends AnyVal {
       
       inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       

@@ -36,7 +36,8 @@ object CollectionLayout {
     __obj.asInstanceOf[CollectionLayout]
   }
   
-  extension [Self <: CollectionLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionLayout] (val x: Self) extends AnyVal {
     
     inline def setCreateLayout(value: LayoutOptions => Layouts): Self = StObject.set(x, "createLayout", js.Any.fromFunction1(value))
     

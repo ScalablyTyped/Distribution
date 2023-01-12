@@ -21,7 +21,8 @@ object DevMode {
     __obj.asInstanceOf[DevMode]
   }
   
-  extension [Self <: DevMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevMode] (val x: Self) extends AnyVal {
     
     inline def setDevMode(value: Boolean): Self = StObject.set(x, "devMode", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object typingsModelsBankingAliasMod {
         __obj.asInstanceOf[BankingAliasData]
       }
       
-      extension [Self <: BankingAliasData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BankingAliasData] (val x: Self) extends AnyVal {
         
         inline def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
         
@@ -98,7 +99,8 @@ object typingsModelsBankingAliasMod {
         __obj.asInstanceOf[CreateIBANBankingAlias]
       }
       
-      extension [Self <: CreateIBANBankingAlias](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateIBANBankingAlias] (val x: Self) extends AnyVal {
         
         inline def setCountry(value: CountryISO): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
         
@@ -152,7 +154,8 @@ object typingsModelsBankingAliasMod {
         __obj.asInstanceOf[IBANBankingAliasData]
       }
       
-      extension [Self <: IBANBankingAliasData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IBANBankingAliasData] (val x: Self) extends AnyVal {
         
         inline def setBIC(value: String): Self = StObject.set(x, "BIC", value.asInstanceOf[js.Any])
         

@@ -27,7 +27,8 @@ object WritableWriter {
     __obj.asInstanceOf[WritableWriter]
   }
   
-  extension [Self <: WritableWriter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WritableWriter] (val x: Self) extends AnyVal {
     
     inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     

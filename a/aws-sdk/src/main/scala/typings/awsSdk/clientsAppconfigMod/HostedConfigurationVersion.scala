@@ -43,7 +43,8 @@ object HostedConfigurationVersion {
     __obj.asInstanceOf[HostedConfigurationVersion]
   }
   
-  extension [Self <: HostedConfigurationVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostedConfigurationVersion] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: Id): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

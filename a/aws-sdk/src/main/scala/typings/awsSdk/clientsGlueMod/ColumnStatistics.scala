@@ -38,7 +38,8 @@ object ColumnStatistics {
     __obj.asInstanceOf[ColumnStatistics]
   }
   
-  extension [Self <: ColumnStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnStatistics] (val x: Self) extends AnyVal {
     
     inline def setAnalyzedTime(value: js.Date): Self = StObject.set(x, "AnalyzedTime", value.asInstanceOf[js.Any])
     

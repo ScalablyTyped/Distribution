@@ -18,7 +18,8 @@ object LocationSummary {
     __obj.asInstanceOf[LocationSummary]
   }
   
-  extension [Self <: LocationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationSummary] (val x: Self) extends AnyVal {
     
     inline def setLocationName(value: CidrLocationNameDefaultAllowed): Self = StObject.set(x, "LocationName", value.asInstanceOf[js.Any])
     

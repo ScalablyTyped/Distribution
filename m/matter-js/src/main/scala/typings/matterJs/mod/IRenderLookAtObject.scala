@@ -22,7 +22,8 @@ object IRenderLookAtObject {
     __obj.asInstanceOf[IRenderLookAtObject]
   }
   
-  extension [Self <: IRenderLookAtObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRenderLookAtObject] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

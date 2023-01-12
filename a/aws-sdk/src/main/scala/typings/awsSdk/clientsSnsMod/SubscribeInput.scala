@@ -38,7 +38,8 @@ object SubscribeInput {
     __obj.asInstanceOf[SubscribeInput]
   }
   
-  extension [Self <: SubscribeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscribeInput] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: SubscriptionAttributesMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

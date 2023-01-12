@@ -27,7 +27,8 @@ object StructuredMessage {
       __obj.asInstanceOf[Action[T]]
     }
     
-    extension [Self <: Action[?], T /* <: QUICK_REPLY_ACTION | LINK_ACTION */](x: Self & Action[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action[?], T /* <: QUICK_REPLY_ACTION | LINK_ACTION */] (val x: Self & Action[T]) extends AnyVal {
       
       inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object StructuredMessage {
       __obj.asInstanceOf[Button[T]]
     }
     
-    extension [Self <: Button[?], T /* <: QUICK_REPLY_ACTION | LINK_ACTION */](x: Self & Button[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Button[?], T /* <: QUICK_REPLY_ACTION | LINK_ACTION */] (val x: Self & Button[T]) extends AnyVal {
       
       inline def setAction(value: Action[T]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object StructuredMessage {
       __obj.asInstanceOf[ButtonTemplate]
     }
     
-    extension [Self <: ButtonTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonTemplate] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: js.Array[Button[QUICK_REPLY_ACTION | LINK_ACTION]]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
@@ -103,7 +106,8 @@ object StructuredMessage {
       __obj.asInstanceOf[ListItem]
     }
     
-    extension [Self <: ListItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItem] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Action[LINK_ACTION]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -135,7 +139,8 @@ object StructuredMessage {
       __obj.asInstanceOf[ListTemplate]
     }
     
-    extension [Self <: ListTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListTemplate] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: js.Array[Button[QUICK_REPLY_ACTION | LINK_ACTION]]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
@@ -209,7 +214,8 @@ object StructuredMessage {
       __obj.asInstanceOf[Panel]
     }
     
-    extension [Self <: Panel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Panel] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Action[LINK_ACTION]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -245,7 +251,8 @@ object StructuredMessage {
       __obj.asInstanceOf[PanelTemplate]
     }
     
-    extension [Self <: PanelTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelTemplate] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: js.Array[Button[LINK_ACTION]]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
@@ -275,7 +282,8 @@ object StructuredMessage {
       __obj.asInstanceOf[PanelTemplateCarousel]
     }
     
-    extension [Self <: PanelTemplateCarousel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelTemplateCarousel] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[PanelTemplate]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -303,7 +311,8 @@ object StructuredMessage {
       __obj.asInstanceOf[QuickReplies]
     }
     
-    extension [Self <: QuickReplies](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickReplies] (val x: Self) extends AnyVal {
       
       inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       

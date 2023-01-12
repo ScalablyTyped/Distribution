@@ -34,7 +34,8 @@ object TooltipService {
     __obj.asInstanceOf[TooltipService]
   }
   
-  extension [Self <: TooltipService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipService] (val x: Self) extends AnyVal {
     
     inline def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     

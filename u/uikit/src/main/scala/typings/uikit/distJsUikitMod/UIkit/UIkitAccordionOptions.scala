@@ -33,7 +33,8 @@ object UIkitAccordionOptions {
     __obj.asInstanceOf[UIkitAccordionOptions]
   }
   
-  extension [Self <: UIkitAccordionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitAccordionOptions] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

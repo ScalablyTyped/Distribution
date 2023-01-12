@@ -1140,7 +1140,8 @@ object Calendar {
       __obj.asInstanceOf[EventGuest]
     }
     
-    extension [Self <: EventGuest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventGuest] (val x: Self) extends AnyVal {
       
       inline def setGetAdditionalGuests(value: () => Integer): Self = StObject.set(x, "getAdditionalGuests", js.Any.fromFunction0(value))
       
@@ -1200,7 +1201,8 @@ object Calendar {
       __obj.asInstanceOf[EventRecurrence]
     }
     
-    extension [Self <: EventRecurrence](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventRecurrence] (val x: Self) extends AnyVal {
       
       inline def setAddDailyExclusion(value: () => RecurrenceRule): Self = StObject.set(x, "addDailyExclusion", js.Any.fromFunction0(value))
       
@@ -1226,7 +1228,8 @@ object Calendar {
     }
   }
   
-  extension [Self <: typings.googleAppsScript.GoogleAppsScript.Calendar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Calendar] (val x: Self) extends AnyVal {
     
     inline def setAcl(value: AclCollection): Self = StObject.set(x, "Acl", value.asInstanceOf[js.Any])
     
@@ -1415,7 +1418,8 @@ object Calendar {
       __obj.asInstanceOf[RecurrenceRule]
     }
     
-    extension [Self <: RecurrenceRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecurrenceRule] (val x: Self) extends AnyVal {
       
       inline def setAddDailyExclusion(value: () => RecurrenceRule): Self = StObject.set(x, "addDailyExclusion", js.Any.fromFunction0(value))
       
@@ -1490,7 +1494,8 @@ object Calendar {
         __obj.asInstanceOf[Acl]
       }
       
-      extension [Self <: Acl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Acl] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -1535,7 +1540,8 @@ object Calendar {
         __obj.asInstanceOf[AclRule]
       }
       
-      extension [Self <: AclRule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AclRule] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -1572,7 +1578,8 @@ object Calendar {
         __obj.asInstanceOf[AclRuleScope]
       }
       
-      extension [Self <: AclRuleScope](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AclRuleScope] (val x: Self) extends AnyVal {
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -1609,7 +1616,8 @@ object Calendar {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.Calendar]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.Calendar](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.Calendar] (val x: Self) extends AnyVal {
         
         inline def setConferenceProperties(value: ConferenceProperties): Self = StObject.set(x, "conferenceProperties", value.asInstanceOf[js.Any])
         
@@ -1664,7 +1672,8 @@ object Calendar {
         __obj.asInstanceOf[CalendarList]
       }
       
-      extension [Self <: CalendarList](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CalendarList] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -1737,7 +1746,8 @@ object Calendar {
         __obj.asInstanceOf[CalendarListEntry]
       }
       
-      extension [Self <: CalendarListEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CalendarListEntry] (val x: Self) extends AnyVal {
         
         inline def setAccessRole(value: String): Self = StObject.set(x, "accessRole", value.asInstanceOf[js.Any])
         
@@ -1830,7 +1840,8 @@ object Calendar {
         __obj.asInstanceOf[CalendarListEntryNotificationSettings]
       }
       
-      extension [Self <: CalendarListEntryNotificationSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CalendarListEntryNotificationSettings] (val x: Self) extends AnyVal {
         
         inline def setNotifications(value: js.Array[CalendarNotification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
         
@@ -1853,7 +1864,8 @@ object Calendar {
         __obj.asInstanceOf[CalendarNotification]
       }
       
-      extension [Self <: CalendarNotification](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CalendarNotification] (val x: Self) extends AnyVal {
         
         inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         
@@ -1894,7 +1906,8 @@ object Calendar {
         __obj.asInstanceOf[Channel]
       }
       
-      extension [Self <: Channel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
         
         inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
@@ -1951,7 +1964,8 @@ object Calendar {
         __obj.asInstanceOf[ColorDefinition]
       }
       
-      extension [Self <: ColorDefinition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ColorDefinition] (val x: Self) extends AnyVal {
         
         inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
         
@@ -1980,7 +1994,8 @@ object Calendar {
         __obj.asInstanceOf[Colors]
       }
       
-      extension [Self <: Colors](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
         
         inline def setCalendar(value: js.Object): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
         
@@ -2023,7 +2038,8 @@ object Calendar {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.ConferenceData]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.ConferenceData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.ConferenceData] (val x: Self) extends AnyVal {
         
         inline def setConferenceId(value: String): Self = StObject.set(x, "conferenceId", value.asInstanceOf[js.Any])
         
@@ -2068,7 +2084,8 @@ object Calendar {
         __obj.asInstanceOf[ConferenceParameters]
       }
       
-      extension [Self <: ConferenceParameters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConferenceParameters] (val x: Self) extends AnyVal {
         
         inline def setAddOnParameters(value: ConferenceParametersAddOnParameters): Self = StObject.set(x, "addOnParameters", value.asInstanceOf[js.Any])
         
@@ -2087,7 +2104,8 @@ object Calendar {
         __obj.asInstanceOf[ConferenceParametersAddOnParameters]
       }
       
-      extension [Self <: ConferenceParametersAddOnParameters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConferenceParametersAddOnParameters] (val x: Self) extends AnyVal {
         
         inline def setParameters(value: Record[String, String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
         
@@ -2106,7 +2124,8 @@ object Calendar {
         __obj.asInstanceOf[ConferenceProperties]
       }
       
-      extension [Self <: ConferenceProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConferenceProperties] (val x: Self) extends AnyVal {
         
         inline def setAllowedConferenceSolutionTypes(value: js.Array[String]): Self = StObject.set(x, "allowedConferenceSolutionTypes", value.asInstanceOf[js.Any])
         
@@ -2127,7 +2146,8 @@ object Calendar {
         __obj.asInstanceOf[ConferenceRequestStatus]
       }
       
-      extension [Self <: ConferenceRequestStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConferenceRequestStatus] (val x: Self) extends AnyVal {
         
         inline def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
         
@@ -2150,7 +2170,8 @@ object Calendar {
         __obj.asInstanceOf[ConferenceSolution]
       }
       
-      extension [Self <: ConferenceSolution](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConferenceSolution] (val x: Self) extends AnyVal {
         
         inline def setIconUri(value: String): Self = StObject.set(x, "iconUri", value.asInstanceOf[js.Any])
         
@@ -2177,7 +2198,8 @@ object Calendar {
         __obj.asInstanceOf[ConferenceSolutionKey]
       }
       
-      extension [Self <: ConferenceSolutionKey](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConferenceSolutionKey] (val x: Self) extends AnyVal {
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -2200,7 +2222,8 @@ object Calendar {
         __obj.asInstanceOf[CreateConferenceRequest]
       }
       
-      extension [Self <: CreateConferenceRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateConferenceRequest] (val x: Self) extends AnyVal {
         
         inline def setConferenceSolutionKey(value: ConferenceSolutionKey): Self = StObject.set(x, "conferenceSolutionKey", value.asInstanceOf[js.Any])
         
@@ -2245,7 +2268,8 @@ object Calendar {
         __obj.asInstanceOf[EntryPoint]
       }
       
-      extension [Self <: EntryPoint](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EntryPoint] (val x: Self) extends AnyVal {
         
         inline def setAccessCode(value: String): Self = StObject.set(x, "accessCode", value.asInstanceOf[js.Any])
         
@@ -2304,7 +2328,8 @@ object Calendar {
         __obj.asInstanceOf[Error]
       }
       
-      extension [Self <: Error](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
         
         inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
         
@@ -2401,7 +2426,8 @@ object Calendar {
         __obj.asInstanceOf[Event]
       }
       
-      extension [Self <: Event](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
         
         inline def setAnyoneCanAddSelf(value: Boolean): Self = StObject.set(x, "anyoneCanAddSelf", value.asInstanceOf[js.Any])
         
@@ -2582,7 +2608,8 @@ object Calendar {
         __obj.asInstanceOf[EventAttachment]
       }
       
-      extension [Self <: EventAttachment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventAttachment] (val x: Self) extends AnyVal {
         
         inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
         
@@ -2635,7 +2662,8 @@ object Calendar {
         __obj.asInstanceOf[EventAttendee]
       }
       
-      extension [Self <: EventAttendee](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventAttendee] (val x: Self) extends AnyVal {
         
         inline def setAdditionalGuests(value: Double): Self = StObject.set(x, "additionalGuests", value.asInstanceOf[js.Any])
         
@@ -2696,7 +2724,8 @@ object Calendar {
         __obj.asInstanceOf[EventCreator]
       }
       
-      extension [Self <: EventCreator](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventCreator] (val x: Self) extends AnyVal {
         
         inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
@@ -2731,7 +2760,8 @@ object Calendar {
         __obj.asInstanceOf[EventDateTime]
       }
       
-      extension [Self <: EventDateTime](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventDateTime] (val x: Self) extends AnyVal {
         
         inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
         
@@ -2760,7 +2790,8 @@ object Calendar {
         __obj.asInstanceOf[EventExtendedProperties]
       }
       
-      extension [Self <: EventExtendedProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventExtendedProperties] (val x: Self) extends AnyVal {
         
         inline def setPrivate(value: Record[String, String]): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
         
@@ -2797,7 +2828,8 @@ object Calendar {
         __obj.asInstanceOf[EventGadget]
       }
       
-      extension [Self <: EventGadget](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventGadget] (val x: Self) extends AnyVal {
         
         inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
         
@@ -2850,7 +2882,8 @@ object Calendar {
         __obj.asInstanceOf[EventOrganizer]
       }
       
-      extension [Self <: EventOrganizer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventOrganizer] (val x: Self) extends AnyVal {
         
         inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
@@ -2883,7 +2916,8 @@ object Calendar {
         __obj.asInstanceOf[EventReminder]
       }
       
-      extension [Self <: EventReminder](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventReminder] (val x: Self) extends AnyVal {
         
         inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         
@@ -2908,7 +2942,8 @@ object Calendar {
         __obj.asInstanceOf[EventReminders]
       }
       
-      extension [Self <: EventReminders](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventReminders] (val x: Self) extends AnyVal {
         
         inline def setOverrides(value: js.Array[EventReminder]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
         
@@ -2935,7 +2970,8 @@ object Calendar {
         __obj.asInstanceOf[EventSource]
       }
       
-      extension [Self <: EventSource](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventSource] (val x: Self) extends AnyVal {
         
         inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
@@ -2978,7 +3014,8 @@ object Calendar {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.Events]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.Events](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Calendar.Schema.Events] (val x: Self) extends AnyVal {
         
         inline def setAccessRole(value: String): Self = StObject.set(x, "accessRole", value.asInstanceOf[js.Any])
         
@@ -3043,7 +3080,8 @@ object Calendar {
         __obj.asInstanceOf[FreeBusyCalendar]
       }
       
-      extension [Self <: FreeBusyCalendar](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FreeBusyCalendar] (val x: Self) extends AnyVal {
         
         inline def setBusy(value: js.Array[TimePeriod]): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
         
@@ -3072,7 +3110,8 @@ object Calendar {
         __obj.asInstanceOf[FreeBusyGroup]
       }
       
-      extension [Self <: FreeBusyGroup](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FreeBusyGroup] (val x: Self) extends AnyVal {
         
         inline def setCalendars(value: js.Array[String]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
         
@@ -3109,7 +3148,8 @@ object Calendar {
         __obj.asInstanceOf[FreeBusyRequest]
       }
       
-      extension [Self <: FreeBusyRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FreeBusyRequest] (val x: Self) extends AnyVal {
         
         inline def setCalendarExpansionMax(value: Double): Self = StObject.set(x, "calendarExpansionMax", value.asInstanceOf[js.Any])
         
@@ -3150,7 +3190,8 @@ object Calendar {
         __obj.asInstanceOf[FreeBusyRequestItem]
       }
       
-      extension [Self <: FreeBusyRequestItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FreeBusyRequestItem] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -3177,7 +3218,8 @@ object Calendar {
         __obj.asInstanceOf[FreeBusyResponse]
       }
       
-      extension [Self <: FreeBusyResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FreeBusyResponse] (val x: Self) extends AnyVal {
         
         inline def setCalendars(value: js.Object): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
         
@@ -3218,7 +3260,8 @@ object Calendar {
         __obj.asInstanceOf[Setting]
       }
       
-      extension [Self <: Setting](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Setting] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -3257,7 +3300,8 @@ object Calendar {
         __obj.asInstanceOf[Settings]
       }
       
-      extension [Self <: Settings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -3296,7 +3340,8 @@ object Calendar {
         __obj.asInstanceOf[TimePeriod]
       }
       
-      extension [Self <: TimePeriod](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TimePeriod] (val x: Self) extends AnyVal {
         
         inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         

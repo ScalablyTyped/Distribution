@@ -19,7 +19,8 @@ object TypeofAuthorization {
     __obj.asInstanceOf[TypeofAuthorization]
   }
   
-  extension [Self <: TypeofAuthorization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofAuthorization] (val x: Self) extends AnyVal {
     
     inline def setPendingRequest(value: Any): Self = StObject.set(x, "PendingRequest", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object XInteractionSupplyName {
     __obj.asInstanceOf[XInteractionSupplyName]
   }
   
-  extension [Self <: XInteractionSupplyName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInteractionSupplyName] (val x: Self) extends AnyVal {
     
     inline def setSetName(value: String => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
   }

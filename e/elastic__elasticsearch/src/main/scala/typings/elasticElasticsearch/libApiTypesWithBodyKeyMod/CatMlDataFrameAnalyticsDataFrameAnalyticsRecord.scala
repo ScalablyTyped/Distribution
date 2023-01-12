@@ -100,7 +100,8 @@ object CatMlDataFrameAnalyticsDataFrameAnalyticsRecord {
     __obj.asInstanceOf[CatMlDataFrameAnalyticsDataFrameAnalyticsRecord]
   }
   
-  extension [Self <: CatMlDataFrameAnalyticsDataFrameAnalyticsRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatMlDataFrameAnalyticsDataFrameAnalyticsRecord] (val x: Self) extends AnyVal {
     
     inline def setAe(value: String): Self = StObject.set(x, "ae", value.asInstanceOf[js.Any])
     

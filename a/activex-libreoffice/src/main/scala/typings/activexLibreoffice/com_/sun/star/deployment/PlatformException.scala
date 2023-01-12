@@ -26,7 +26,8 @@ object PlatformException {
     __obj.asInstanceOf[PlatformException]
   }
   
-  extension [Self <: PlatformException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlatformException] (val x: Self) extends AnyVal {
     
     inline def set_package(value: XPackage): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }

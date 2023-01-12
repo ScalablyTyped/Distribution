@@ -25,7 +25,8 @@ object PsbtOutputUpdate {
     __obj.asInstanceOf[PsbtOutputUpdate]
   }
   
-  extension [Self <: PsbtOutputUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PsbtOutputUpdate] (val x: Self) extends AnyVal {
     
     inline def setBip32Derivation(value: js.Array[Bip32Derivation]): Self = StObject.set(x, "bip32Derivation", value.asInstanceOf[js.Any])
     

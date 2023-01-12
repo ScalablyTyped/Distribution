@@ -29,7 +29,8 @@ object ColumnIndex {
     __obj.asInstanceOf[ColumnIndex[K]]
   }
   
-  extension [Self <: ColumnIndex[?], K](x: Self & ColumnIndex[K]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnIndex[?], K] (val x: Self & ColumnIndex[K]) extends AnyVal {
     
     inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object TableStyleProperties {
     __obj.asInstanceOf[TableStyleProperties]
   }
   
-  extension [Self <: TableStyleProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableStyleProperties] (val x: Self) extends AnyVal {
     
     inline def setShowColumnStripes(value: Boolean): Self = StObject.set(x, "showColumnStripes", value.asInstanceOf[js.Any])
     

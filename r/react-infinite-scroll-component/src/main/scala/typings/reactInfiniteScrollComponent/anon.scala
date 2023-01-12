@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[HasMore]
     }
     
-    extension [Self <: HasMore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasMore] (val x: Self) extends AnyVal {
       
       inline def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
       
@@ -59,7 +61,8 @@ object anon {
       __obj.asInstanceOf[Items]
     }
     
-    extension [Self <: Items](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Items] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -82,7 +85,8 @@ object anon {
       __obj.asInstanceOf[PrevDataLength]
     }
     
-    extension [Self <: PrevDataLength](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrevDataLength] (val x: Self) extends AnyVal {
       
       inline def setPrevDataLength(value: Double): Self = StObject.set(x, "prevDataLength", value.asInstanceOf[js.Any])
       
@@ -105,7 +109,8 @@ object anon {
       __obj.asInstanceOf[Unit]
     }
     
-    extension [Self <: Unit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unit] (val x: Self) extends AnyVal {
       
       inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       

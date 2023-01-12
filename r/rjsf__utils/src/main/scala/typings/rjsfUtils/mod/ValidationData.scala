@@ -20,7 +20,8 @@ object ValidationData {
     __obj.asInstanceOf[ValidationData[T]]
   }
   
-  extension [Self <: ValidationData[?], T](x: Self & ValidationData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationData[?], T] (val x: Self & ValidationData[T]) extends AnyVal {
     
     inline def setErrorSchema(value: ErrorSchema[T]): Self = StObject.set(x, "errorSchema", value.asInstanceOf[js.Any])
     

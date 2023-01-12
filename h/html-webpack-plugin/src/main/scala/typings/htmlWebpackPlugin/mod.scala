@@ -98,7 +98,8 @@ object mod {
       __obj.asInstanceOf[Hooks]
     }
     
-    extension [Self <: Hooks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hooks] (val x: Self) extends AnyVal {
       
       inline def setAfterEmit(value: AsyncSeriesWaterfallHook[Plugin, UnsetAdditionalOptions]): Self = StObject.set(x, "afterEmit", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object mod {
       __obj.asInstanceOf[HtmlTagObject]
     }
     
-    extension [Self <: HtmlTagObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlTagObject] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[js.UndefOr[String | Boolean | Null]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -197,7 +199,8 @@ object mod {
       __obj.asInstanceOf[HtmlWebpackPlugin]
     }
     
-    extension [Self <: HtmlWebpackPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlWebpackPlugin] (val x: Self) extends AnyVal {
       
       inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
@@ -351,7 +354,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -531,7 +535,8 @@ object mod {
       __obj.asInstanceOf[ProcessedOptions]
     }
     
-    extension [Self <: ProcessedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessedOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -613,7 +618,8 @@ object mod {
       __obj.asInstanceOf[TemplateParameter]
     }
     
-    extension [Self <: TemplateParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateParameter] (val x: Self) extends AnyVal {
       
       inline def setCompilation(value: Any): Self = StObject.set(x, "compilation", value.asInstanceOf[js.Any])
       

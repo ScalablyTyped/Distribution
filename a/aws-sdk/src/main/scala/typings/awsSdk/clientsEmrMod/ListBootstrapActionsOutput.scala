@@ -23,7 +23,8 @@ object ListBootstrapActionsOutput {
     __obj.asInstanceOf[ListBootstrapActionsOutput]
   }
   
-  extension [Self <: ListBootstrapActionsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBootstrapActionsOutput] (val x: Self) extends AnyVal {
     
     inline def setBootstrapActions(value: CommandList): Self = StObject.set(x, "BootstrapActions", value.asInstanceOf[js.Any])
     

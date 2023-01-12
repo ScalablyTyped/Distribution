@@ -28,7 +28,8 @@ object GooglePrivacyDlpV2Location {
     __obj.asInstanceOf[GooglePrivacyDlpV2Location]
   }
   
-  extension [Self <: GooglePrivacyDlpV2Location](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2Location] (val x: Self) extends AnyVal {
     
     inline def setByteRange(value: GooglePrivacyDlpV2Range): Self = StObject.set(x, "byteRange", value.asInstanceOf[js.Any])
     

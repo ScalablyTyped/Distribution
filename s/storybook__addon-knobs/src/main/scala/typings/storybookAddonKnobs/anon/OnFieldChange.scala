@@ -20,7 +20,8 @@ object OnFieldChange {
     __obj.asInstanceOf[OnFieldChange]
   }
   
-  extension [Self <: OnFieldChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnFieldChange] (val x: Self) extends AnyVal {
     
     inline def setKnobs(value: js.Array[KnobStoreKnob]): Self = StObject.set(x, "knobs", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object DeletedDeprecated {
     __obj.asInstanceOf[DeletedDeprecated[Group]]
   }
   
-  extension [Self <: DeletedDeprecated[?], Group /* <: Groups */](x: Self & DeletedDeprecated[Group]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletedDeprecated[?], Group /* <: Groups */] (val x: Self & DeletedDeprecated[Group]) extends AnyVal {
     
     inline def setDeleted(value: String): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     

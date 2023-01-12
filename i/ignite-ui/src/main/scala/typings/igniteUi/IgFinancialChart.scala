@@ -1206,7 +1206,8 @@ object IgFinancialChart {
     __obj.asInstanceOf[IgFinancialChart]
   }
   
-  extension [Self <: IgFinancialChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgFinancialChart] (val x: Self) extends AnyVal {
     
     inline def setActualRangeSelectorOptions(value: Any): Self = StObject.set(x, "actualRangeSelectorOptions", value.asInstanceOf[js.Any])
     

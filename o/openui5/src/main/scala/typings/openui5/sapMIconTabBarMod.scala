@@ -1232,7 +1232,8 @@ object sapMIconTabBarMod {
       __obj.asInstanceOf[IconTabBarSettings]
     }
     
-    extension [Self <: IconTabBarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconTabBarSettings] (val x: Self) extends AnyVal {
       
       inline def setApplyContentPadding(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "applyContentPadding", value.asInstanceOf[js.Any])
       

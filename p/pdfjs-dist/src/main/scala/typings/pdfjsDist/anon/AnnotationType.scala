@@ -35,7 +35,8 @@ object AnnotationType {
     __obj.asInstanceOf[AnnotationType]
   }
   
-  extension [Self <: AnnotationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationType] (val x: Self) extends AnyVal {
     
     inline def setAnnotationType(value: Double): Self = StObject.set(x, "annotationType", value.asInstanceOf[js.Any])
     

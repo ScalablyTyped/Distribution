@@ -21,7 +21,8 @@ object KESUGX {
     __obj.asInstanceOf[KESUGX]
   }
   
-  extension [Self <: KESUGX](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KESUGX] (val x: Self) extends AnyVal {
     
     inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     

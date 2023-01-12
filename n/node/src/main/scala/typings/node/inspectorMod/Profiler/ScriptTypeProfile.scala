@@ -33,7 +33,8 @@ object ScriptTypeProfile {
     __obj.asInstanceOf[ScriptTypeProfile]
   }
   
-  extension [Self <: ScriptTypeProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptTypeProfile] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: js.Array[TypeProfileEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

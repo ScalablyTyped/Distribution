@@ -42,7 +42,8 @@ object replMod {
       __obj.asInstanceOf[ReplOptions]
     }
     
-    extension [Self <: ReplOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplOptions] (val x: Self) extends AnyVal {
       
       inline def setEval(value: js.Function): Self = StObject.set(x, "eval", value.asInstanceOf[js.Any])
       

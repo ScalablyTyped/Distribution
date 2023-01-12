@@ -9983,7 +9983,8 @@ object CSSPropertiesPartialRecorBorderBlock {
     __obj.asInstanceOf[CSSPropertiesPartialRecorBorderBlock]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorBorderBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorBorderBlock] (val x: Self) extends AnyVal {
     
     inline def `set--caret-color`(value: String): Self = StObject.set(x, "--caret-color", value.asInstanceOf[js.Any])
     

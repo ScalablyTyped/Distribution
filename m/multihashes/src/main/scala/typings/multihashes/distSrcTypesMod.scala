@@ -715,7 +715,8 @@ object distSrcTypesMod {
   }
   object CodeNameMap {
     
-    extension [Self <: CodeNameMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeNameMap] (val x: Self) extends AnyVal {
       
       inline def set0x00(value: HashName): Self = StObject.set(x, "0x00", value.asInstanceOf[js.Any])
       
@@ -2128,7 +2129,8 @@ object distSrcTypesMod {
   }
   object NameCodeMap {
     
-    extension [Self <: NameCodeMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameCodeMap] (val x: Self) extends AnyVal {
       
       inline def `setBlake2b-104`(value: HashCode): Self = StObject.set(x, "blake2b-104", value.asInstanceOf[js.Any])
       

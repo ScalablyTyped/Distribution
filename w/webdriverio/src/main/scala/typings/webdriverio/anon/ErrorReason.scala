@@ -26,7 +26,8 @@ object ErrorReason {
     __obj.asInstanceOf[ErrorReason]
   }
   
-  extension [Self <: ErrorReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorReason] (val x: Self) extends AnyVal {
     
     inline def setErrorReason(value: typings.devtoolsProtocol.mod.Protocol.Network.ErrorReason): Self = StObject.set(x, "errorReason", value.asInstanceOf[js.Any])
     

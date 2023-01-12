@@ -19,7 +19,8 @@ object BetweenFilter {
     __obj.asInstanceOf[BetweenFilter]
   }
   
-  extension [Self <: BetweenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BetweenFilter] (val x: Self) extends AnyVal {
     
     inline def setFromValue(value: NumericValue): Self = StObject.set(x, "fromValue", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object libHttpHeadersMod {
       __obj.asInstanceOf[HttpHeaders]
     }
     
-    extension [Self <: HttpHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpHeaders] (val x: Self) extends AnyVal {
       
       inline def setSet(value: (String, String) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       

@@ -58,7 +58,8 @@ object CreateUserLegalPayerData {
     __obj.asInstanceOf[CreateUserLegalPayerData]
   }
   
-  extension [Self <: CreateUserLegalPayerData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateUserLegalPayerData] (val x: Self) extends AnyVal {
     
     inline def setCompanyNumber(value: String): Self = StObject.set(x, "CompanyNumber", value.asInstanceOf[js.Any])
     

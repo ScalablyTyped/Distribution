@@ -18,7 +18,8 @@ object Statusmsg {
     __obj.asInstanceOf[Statusmsg]
   }
   
-  extension [Self <: Statusmsg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Statusmsg] (val x: Self) extends AnyVal {
     
     inline def setPresence(value: String): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
     

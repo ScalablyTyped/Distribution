@@ -151,7 +151,8 @@ object Accordion {
       __obj.asInstanceOf[ActivateEventArgs]
     }
     
-    extension [Self <: ActivateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActivateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActiveHeader(value: Any): Self = StObject.set(x, "activeHeader", value.asInstanceOf[js.Any])
       
@@ -204,7 +205,8 @@ object Accordion {
       __obj.asInstanceOf[AjaxBeforeLoadEventArgs]
     }
     
-    extension [Self <: AjaxBeforeLoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxBeforeLoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -253,7 +255,8 @@ object Accordion {
       __obj.asInstanceOf[AjaxErrorEventArgs]
     }
     
-    extension [Self <: AjaxErrorEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxErrorEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -302,7 +305,8 @@ object Accordion {
       __obj.asInstanceOf[AjaxLoadEventArgs]
     }
     
-    extension [Self <: AjaxLoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxLoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -355,7 +359,8 @@ object Accordion {
       __obj.asInstanceOf[typings.ejWebAll.ej.Accordion.AjaxSettings]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Accordion.AjaxSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Accordion.AjaxSettings] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -416,7 +421,8 @@ object Accordion {
       __obj.asInstanceOf[AjaxSuccessEventArgs]
     }
     
-    extension [Self <: AjaxSuccessEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxSuccessEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -473,7 +479,8 @@ object Accordion {
       __obj.asInstanceOf[BeforeActivateEventArgs]
     }
     
-    extension [Self <: BeforeActivateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeActivateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       
@@ -526,7 +533,8 @@ object Accordion {
       __obj.asInstanceOf[BeforeInactivateEventArgs]
     }
     
-    extension [Self <: BeforeInactivateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeInactivateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -571,7 +579,8 @@ object Accordion {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -604,7 +613,8 @@ object Accordion {
       __obj.asInstanceOf[CustomIcon]
     }
     
-    extension [Self <: CustomIcon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomIcon] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -637,7 +647,8 @@ object Accordion {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -686,7 +697,8 @@ object Accordion {
       __obj.asInstanceOf[InActivateEventArgs]
     }
     
-    extension [Self <: InActivateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InActivateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -882,7 +894,8 @@ object Accordion {
       __obj.asInstanceOf[typings.ejWebAll.ej.Accordion.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Accordion.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Accordion.Model] (val x: Self) extends AnyVal {
       
       inline def setActivate(value: /* e */ ActivateEventArgs => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
       

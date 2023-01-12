@@ -43,7 +43,8 @@ object LexiconAttributes {
     __obj.asInstanceOf[LexiconAttributes]
   }
   
-  extension [Self <: LexiconAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexiconAttributes] (val x: Self) extends AnyVal {
     
     inline def setAlphabet(value: Alphabet): Self = StObject.set(x, "Alphabet", value.asInstanceOf[js.Any])
     

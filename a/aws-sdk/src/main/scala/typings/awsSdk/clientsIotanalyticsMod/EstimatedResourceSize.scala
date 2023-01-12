@@ -23,7 +23,8 @@ object EstimatedResourceSize {
     __obj.asInstanceOf[EstimatedResourceSize]
   }
   
-  extension [Self <: EstimatedResourceSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EstimatedResourceSize] (val x: Self) extends AnyVal {
     
     inline def setEstimatedOn(value: js.Date): Self = StObject.set(x, "estimatedOn", value.asInstanceOf[js.Any])
     

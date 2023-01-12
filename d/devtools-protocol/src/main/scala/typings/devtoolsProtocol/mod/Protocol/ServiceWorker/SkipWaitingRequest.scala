@@ -15,7 +15,8 @@ object SkipWaitingRequest {
     __obj.asInstanceOf[SkipWaitingRequest]
   }
   
-  extension [Self <: SkipWaitingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkipWaitingRequest] (val x: Self) extends AnyVal {
     
     inline def setScopeURL(value: String): Self = StObject.set(x, "scopeURL", value.asInstanceOf[js.Any])
   }

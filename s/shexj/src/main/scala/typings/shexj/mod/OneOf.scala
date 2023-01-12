@@ -24,7 +24,8 @@ object OneOf {
     __obj.asInstanceOf[OneOf]
   }
   
-  extension [Self <: OneOf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OneOf] (val x: Self) extends AnyVal {
     
     inline def setExpressions(value: js.Array[tripleExprOrRef]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object MlDataframeAnalysisOutlierDetection {
     __obj.asInstanceOf[MlDataframeAnalysisOutlierDetection]
   }
   
-  extension [Self <: MlDataframeAnalysisOutlierDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeAnalysisOutlierDetection] (val x: Self) extends AnyVal {
     
     inline def setCompute_feature_influence(value: Boolean): Self = StObject.set(x, "compute_feature_influence", value.asInstanceOf[js.Any])
     

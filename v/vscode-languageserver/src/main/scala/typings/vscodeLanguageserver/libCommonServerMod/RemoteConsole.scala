@@ -59,7 +59,8 @@ object RemoteConsole {
     __obj.asInstanceOf[RemoteConsole]
   }
   
-  extension [Self <: RemoteConsole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteConsole] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object DurationEffect {
     __obj.asInstanceOf[DurationEffect]
   }
   
-  extension [Self <: DurationEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DurationEffect] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: operator): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

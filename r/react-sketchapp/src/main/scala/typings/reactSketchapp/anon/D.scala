@@ -115,7 +115,8 @@ object D {
     __obj.asInstanceOf[D]
   }
   
-  extension [Self <: D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: D] (val x: Self) extends AnyVal {
     
     inline def setClipPath(value: Requireable[String]): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
     

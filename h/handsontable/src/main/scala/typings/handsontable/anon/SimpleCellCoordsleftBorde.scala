@@ -30,7 +30,8 @@ object SimpleCellCoordsleftBorde {
     __obj.asInstanceOf[SimpleCellCoordsleftBorde]
   }
   
-  extension [Self <: SimpleCellCoordsleftBorde](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleCellCoordsleftBorde] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: BorderOptions | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

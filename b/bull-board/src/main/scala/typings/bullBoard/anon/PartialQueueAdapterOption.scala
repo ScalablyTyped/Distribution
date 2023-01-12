@@ -16,7 +16,8 @@ object PartialQueueAdapterOption {
     __obj.asInstanceOf[PartialQueueAdapterOption]
   }
   
-  extension [Self <: PartialQueueAdapterOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialQueueAdapterOption] (val x: Self) extends AnyVal {
     
     inline def setReadOnlyMode(value: Boolean): Self = StObject.set(x, "readOnlyMode", value.asInstanceOf[js.Any])
     

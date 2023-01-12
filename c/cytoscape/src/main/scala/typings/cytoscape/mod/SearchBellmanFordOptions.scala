@@ -32,7 +32,8 @@ object SearchBellmanFordOptions {
     __obj.asInstanceOf[SearchBellmanFordOptions]
   }
   
-  extension [Self <: SearchBellmanFordOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchBellmanFordOptions] (val x: Self) extends AnyVal {
     
     inline def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     

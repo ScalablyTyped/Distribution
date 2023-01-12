@@ -26,7 +26,8 @@ object typingsModelsHookMod {
         __obj.asInstanceOf[CreateHook]
       }
       
-      extension [Self <: CreateHook](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateHook] (val x: Self) extends AnyVal {
         
         inline def setEventType(value: EventType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
         
@@ -77,7 +78,8 @@ object typingsModelsHookMod {
         __obj.asInstanceOf[HookData]
       }
       
-      extension [Self <: HookData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HookData] (val x: Self) extends AnyVal {
         
         inline def setEventType(value: EventType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
         
@@ -136,7 +138,8 @@ object typingsModelsHookMod {
         __obj.asInstanceOf[UpdateHook]
       }
       
-      extension [Self <: UpdateHook](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateHook] (val x: Self) extends AnyVal {
         
         inline def setEventType(value: EventType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
         

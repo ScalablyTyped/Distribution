@@ -31,7 +31,8 @@ object XEndnotesSettingsSupplier {
     __obj.asInstanceOf[XEndnotesSettingsSupplier]
   }
   
-  extension [Self <: XEndnotesSettingsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEndnotesSettingsSupplier] (val x: Self) extends AnyVal {
     
     inline def setEndnotesSettings(value: XPropertySet): Self = StObject.set(x, "EndnotesSettings", value.asInstanceOf[js.Any])
     

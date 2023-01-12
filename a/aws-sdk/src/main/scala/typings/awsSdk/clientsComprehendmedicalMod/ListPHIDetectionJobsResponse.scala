@@ -25,7 +25,8 @@ object ListPHIDetectionJobsResponse {
     __obj.asInstanceOf[ListPHIDetectionJobsResponse]
   }
   
-  extension [Self <: ListPHIDetectionJobsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPHIDetectionJobsResponse] (val x: Self) extends AnyVal {
     
     inline def setComprehendMedicalAsyncJobPropertiesList(value: ComprehendMedicalAsyncJobPropertiesList): Self = StObject.set(x, "ComprehendMedicalAsyncJobPropertiesList", value.asInstanceOf[js.Any])
     

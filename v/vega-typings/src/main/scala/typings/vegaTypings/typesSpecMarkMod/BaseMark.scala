@@ -42,7 +42,8 @@ object BaseMark {
     __obj.asInstanceOf[BaseMark]
   }
   
-  extension [Self <: BaseMark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseMark] (val x: Self) extends AnyVal {
     
     inline def setAria(value: Boolean): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
     

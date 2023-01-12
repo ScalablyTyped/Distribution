@@ -23,7 +23,8 @@ object UpdateAccountSettingsResponse {
     __obj.asInstanceOf[UpdateAccountSettingsResponse]
   }
   
-  extension [Self <: UpdateAccountSettingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAccountSettingsResponse] (val x: Self) extends AnyVal {
     
     inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     

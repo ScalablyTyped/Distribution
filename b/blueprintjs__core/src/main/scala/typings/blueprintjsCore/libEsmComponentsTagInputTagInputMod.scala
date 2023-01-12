@@ -265,7 +265,8 @@ object libEsmComponentsTagInputTagInputMod {
       __obj.asInstanceOf[ITagInputProps]
     }
     
-    extension [Self <: ITagInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITagInputProps] (val x: Self) extends AnyVal {
       
       inline def setAddOnBlur(value: Boolean): Self = StObject.set(x, "addOnBlur", value.asInstanceOf[js.Any])
       
@@ -378,7 +379,8 @@ object libEsmComponentsTagInputTagInputMod {
       __obj.asInstanceOf[ITagInputState]
     }
     
-    extension [Self <: ITagInputState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITagInputState] (val x: Self) extends AnyVal {
       
       inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object FileSystemWatcher {
     __obj.asInstanceOf[FileSystemWatcher]
   }
   
-  extension [Self <: FileSystemWatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemWatcher] (val x: Self) extends AnyVal {
     
     inline def setOnDidChange(value: js.Function1[/* path */ String, Unit] => Unit): Self = StObject.set(x, "onDidChange", js.Any.fromFunction1(value))
   }

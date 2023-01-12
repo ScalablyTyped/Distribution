@@ -38,7 +38,8 @@ object CreateDevicePoolRequest {
     __obj.asInstanceOf[CreateDevicePoolRequest]
   }
   
-  extension [Self <: CreateDevicePoolRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDevicePoolRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

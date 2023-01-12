@@ -102,7 +102,8 @@ object JWA {
       __obj.asInstanceOf[DecryptEncryptOptions]
     }
     
-    extension [Self <: DecryptEncryptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecryptEncryptOptions] (val x: Self) extends AnyVal {
       
       inline def setAad(value: Buffer): Self = StObject.set(x, "aad", value.asInstanceOf[js.Any])
       
@@ -192,7 +193,8 @@ object JWA {
       __obj.asInstanceOf[DeriveOptions]
     }
     
-    extension [Self <: DeriveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeriveOptions] (val x: Self) extends AnyVal {
       
       inline def setHash(value: Buffer): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -234,7 +236,8 @@ object JWA {
       __obj.asInstanceOf[EncryptReturn]
     }
     
-    extension [Self <: EncryptReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptReturn] (val x: Self) extends AnyVal {
       
       inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -258,7 +261,8 @@ object JWA {
       __obj.asInstanceOf[SignReturn]
     }
     
-    extension [Self <: SignReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignReturn] (val x: Self) extends AnyVal {
       
       inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -277,7 +281,8 @@ object JWA {
       __obj.asInstanceOf[SignVerifyOptions]
     }
     
-    extension [Self <: SignVerifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignVerifyOptions] (val x: Self) extends AnyVal {
       
       inline def setLoose(value: Boolean): Self = StObject.set(x, "loose", value.asInstanceOf[js.Any])
       
@@ -302,7 +307,8 @@ object JWA {
       __obj.asInstanceOf[VerifyReturn]
     }
     
-    extension [Self <: VerifyReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifyReturn] (val x: Self) extends AnyVal {
       
       inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

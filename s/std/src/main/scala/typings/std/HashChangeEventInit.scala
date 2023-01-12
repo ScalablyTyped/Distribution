@@ -21,7 +21,8 @@ object HashChangeEventInit {
     __obj.asInstanceOf[HashChangeEventInit]
   }
   
-  extension [Self <: HashChangeEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HashChangeEventInit] (val x: Self) extends AnyVal {
     
     inline def setNewURL(value: java.lang.String): Self = StObject.set(x, "newURL", value.asInstanceOf[js.Any])
     

@@ -105,7 +105,8 @@ object mod {
       __obj.asInstanceOf[Pattern]
     }
     
-    extension [Self <: Pattern](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object mod {
       __obj.asInstanceOf[PatternOptions]
     }
     
-    extension [Self <: PatternOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatternOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseColor(value: String): Self = StObject.set(x, "baseColor", value.asInstanceOf[js.Any])
       

@@ -37,7 +37,8 @@ object Insert {
     __obj.asInstanceOf[Insert[Fn, T, U]]
   }
   
-  extension [Self <: Insert[?, ?, ?], Fn /* <: Transform[T] */, T, U](x: Self & (Insert[Fn, T, U])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Insert[?, ?, ?], Fn /* <: Transform[T] */, T, U] (val x: Self & (Insert[Fn, T, U])) extends AnyVal {
     
     inline def setFetch(value: js.Array[String]): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
     

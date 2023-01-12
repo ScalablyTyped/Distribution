@@ -70,7 +70,8 @@ object libComponentsShortcutListMod {
       __obj.asInstanceOf[IShortcutListProps]
     }
     
-    extension [Self <: IShortcutListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShortcutListProps] (val x: Self) extends AnyVal {
       
       inline def setClearConflicts(value: js.Function): Self = StObject.set(x, "clearConflicts", value.asInstanceOf[js.Any])
       

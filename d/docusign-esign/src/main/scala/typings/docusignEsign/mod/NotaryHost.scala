@@ -429,7 +429,8 @@ object NotaryHost {
     __obj.asInstanceOf[NotaryHost]
   }
   
-  extension [Self <: NotaryHost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotaryHost] (val x: Self) extends AnyVal {
     
     inline def setAccessCode(value: String): Self = StObject.set(x, "accessCode", value.asInstanceOf[js.Any])
     

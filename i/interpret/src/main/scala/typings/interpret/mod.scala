@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[ExtensionDescriptor]
     }
     
-    extension [Self <: ExtensionDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtensionDescriptor] (val x: Self) extends AnyVal {
       
       inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       

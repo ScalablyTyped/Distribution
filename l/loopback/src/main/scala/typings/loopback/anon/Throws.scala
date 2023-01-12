@@ -17,7 +17,8 @@ object Throws {
     __obj.asInstanceOf[Throws]
   }
   
-  extension [Self <: Throws](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Throws] (val x: Self) extends AnyVal {
     
     inline def setThrows(value: Boolean): Self = StObject.set(x, "throws", value.asInstanceOf[js.Any])
     

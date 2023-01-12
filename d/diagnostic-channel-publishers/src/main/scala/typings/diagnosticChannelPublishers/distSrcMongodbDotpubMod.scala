@@ -42,7 +42,8 @@ object distSrcMongodbDotpubMod {
       __obj.asInstanceOf[IMongoData]
     }
     
-    extension [Self <: IMongoData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMongoData] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: CommandName): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       

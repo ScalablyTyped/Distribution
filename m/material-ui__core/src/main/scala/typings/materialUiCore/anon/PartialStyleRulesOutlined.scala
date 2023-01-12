@@ -77,7 +77,8 @@ object PartialStyleRulesOutlined {
     __obj.asInstanceOf[PartialStyleRulesOutlined]
   }
   
-  extension [Self <: PartialStyleRulesOutlined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesOutlined] (val x: Self) extends AnyVal {
     
     inline def setAdornedEnd(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

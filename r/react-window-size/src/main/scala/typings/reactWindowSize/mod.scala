@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[WindowSizeProps]
     }
     
-    extension [Self <: WindowSizeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowSizeProps] (val x: Self) extends AnyVal {
       
       inline def setWindowHeight(value: Double): Self = StObject.set(x, "windowHeight", value.asInstanceOf[js.Any])
       

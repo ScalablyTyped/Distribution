@@ -47,7 +47,8 @@ object GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy {
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy]
   }
   
-  extension [Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicy] (val x: Self) extends AnyVal {
     
     inline def setContainerImageSources(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature): Self = StObject.set(x, "containerImageSources", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object HttpHeaderMatch {
     __obj.asInstanceOf[HttpHeaderMatch]
   }
   
-  extension [Self <: HttpHeaderMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpHeaderMatch] (val x: Self) extends AnyVal {
     
     inline def setExactMatch(value: String): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
     

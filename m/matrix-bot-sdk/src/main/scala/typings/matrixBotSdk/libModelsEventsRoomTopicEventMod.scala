@@ -29,7 +29,8 @@ object libModelsEventsRoomTopicEventMod {
       __obj.asInstanceOf[RoomTopicEventContent]
     }
     
-    extension [Self <: RoomTopicEventContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoomTopicEventContent] (val x: Self) extends AnyVal {
       
       inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     }

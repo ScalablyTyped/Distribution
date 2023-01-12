@@ -15,7 +15,8 @@ object ISOCKET_ERROR {
     __obj.asInstanceOf[ISOCKET_ERROR]
   }
   
-  extension [Self <: ISOCKET_ERROR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISOCKET_ERROR] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
   }

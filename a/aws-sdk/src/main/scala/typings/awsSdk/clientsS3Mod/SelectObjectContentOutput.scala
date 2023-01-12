@@ -19,7 +19,8 @@ object SelectObjectContentOutput {
     __obj.asInstanceOf[SelectObjectContentOutput]
   }
   
-  extension [Self <: SelectObjectContentOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectObjectContentOutput] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: SelectObjectContentEventStream): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
     

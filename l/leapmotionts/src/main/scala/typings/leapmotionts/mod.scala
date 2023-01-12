@@ -735,7 +735,8 @@ object mod {
       __obj.asInstanceOf[Listener]
     }
     
-    extension [Self <: Listener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
       
       inline def setOnConnect(value: Controller => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction1(value))
       

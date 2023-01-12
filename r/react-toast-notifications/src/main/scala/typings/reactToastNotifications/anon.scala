@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[AddToast]
     }
     
-    extension [Self <: AddToast](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddToast] (val x: Self) extends AnyVal {
       
       inline def setAddToast(
         value: (/* content */ ReactNode, /* options */ js.UndefOr[Options], /* callback */ js.UndefOr[js.Function1[/* id */ String, Unit]]) => Unit
@@ -76,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Appearance]
     }
     
-    extension [Self <: Appearance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Appearance] (val x: Self) extends AnyVal {
       
       inline def setAppearance(value: AppearanceTypes): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object anon {
       __obj.asInstanceOf[Toast]
     }
     
-    extension [Self <: Toast](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Toast] (val x: Self) extends AnyVal {
       
       inline def setToast(value: ComponentType[ToastProps]): Self = StObject.set(x, "Toast", value.asInstanceOf[js.Any])
       

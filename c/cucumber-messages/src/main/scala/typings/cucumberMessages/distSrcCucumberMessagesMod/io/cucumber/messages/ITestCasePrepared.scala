@@ -20,7 +20,8 @@ object ITestCasePrepared {
     __obj.asInstanceOf[ITestCasePrepared]
   }
   
-  extension [Self <: ITestCasePrepared](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITestCasePrepared] (val x: Self) extends AnyVal {
     
     inline def setPickleId(value: String): Self = StObject.set(x, "pickleId", value.asInstanceOf[js.Any])
     

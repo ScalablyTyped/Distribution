@@ -72,7 +72,8 @@ object coreInteractablePreventDefaultMod {
         __obj.asInstanceOf[Interactable]
       }
       
-      extension [Self <: Interactable](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Interactable] (val x: Self) extends AnyVal {
         
         inline def setCheckAndPreventDefault(value: Event => Unit): Self = StObject.set(x, "checkAndPreventDefault", js.Any.fromFunction1(value))
         

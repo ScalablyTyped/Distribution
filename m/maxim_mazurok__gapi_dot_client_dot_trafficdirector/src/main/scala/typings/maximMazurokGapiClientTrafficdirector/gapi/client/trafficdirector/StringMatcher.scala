@@ -38,7 +38,8 @@ object StringMatcher {
     __obj.asInstanceOf[StringMatcher]
   }
   
-  extension [Self <: StringMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringMatcher] (val x: Self) extends AnyVal {
     
     inline def setExact(value: String): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     

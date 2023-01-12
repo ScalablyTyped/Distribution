@@ -30,7 +30,8 @@ object SimpleMethodSpec {
     __obj.asInstanceOf[SimpleMethodSpec[I]]
   }
   
-  extension [Self <: SimpleMethodSpec[?], I](x: Self & SimpleMethodSpec[I]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleMethodSpec[?], I] (val x: Self & SimpleMethodSpec[I]) extends AnyVal {
     
     inline def setArgTypes(value: js.Array[String]): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
     

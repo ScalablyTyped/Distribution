@@ -23,7 +23,8 @@ object S3BucketDefinitionForJob {
     __obj.asInstanceOf[S3BucketDefinitionForJob]
   }
   
-  extension [Self <: S3BucketDefinitionForJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3BucketDefinitionForJob] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

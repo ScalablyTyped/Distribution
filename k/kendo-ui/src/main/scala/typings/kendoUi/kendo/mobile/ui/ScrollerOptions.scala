@@ -35,7 +35,8 @@ object ScrollerOptions {
     __obj.asInstanceOf[ScrollerOptions]
   }
   
-  extension [Self <: ScrollerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollerOptions] (val x: Self) extends AnyVal {
     
     inline def setElastic(value: Boolean): Self = StObject.set(x, "elastic", value.asInstanceOf[js.Any])
     

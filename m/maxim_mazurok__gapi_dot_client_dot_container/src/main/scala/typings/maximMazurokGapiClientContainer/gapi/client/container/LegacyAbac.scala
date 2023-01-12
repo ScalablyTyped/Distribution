@@ -19,7 +19,8 @@ object LegacyAbac {
     __obj.asInstanceOf[LegacyAbac]
   }
   
-  extension [Self <: LegacyAbac](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegacyAbac] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object nativeDistDistUtilsStylisMod {
       __obj.asInstanceOf[StylisInstanceConstructorArgs]
     }
     
-    extension [Self <: StylisInstanceConstructorArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StylisInstanceConstructorArgs] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Prefix): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

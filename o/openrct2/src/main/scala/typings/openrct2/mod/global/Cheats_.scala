@@ -80,7 +80,8 @@ object Cheats_ {
     __obj.asInstanceOf[Cheats_]
   }
   
-  extension [Self <: Cheats_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cheats_] (val x: Self) extends AnyVal {
     
     inline def setAllowArbitraryRideTypeChanges(value: Boolean): Self = StObject.set(x, "allowArbitraryRideTypeChanges", value.asInstanceOf[js.Any])
     

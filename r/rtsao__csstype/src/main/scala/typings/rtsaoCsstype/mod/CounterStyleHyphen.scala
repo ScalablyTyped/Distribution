@@ -33,7 +33,8 @@ object CounterStyleHyphen {
     __obj.asInstanceOf[CounterStyleHyphen]
   }
   
-  extension [Self <: CounterStyleHyphen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CounterStyleHyphen] (val x: Self) extends AnyVal {
     
     inline def `setAdditive-symbols`(value: String): Self = StObject.set(x, "additive-symbols", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object DescribeSubscribersForNotificationRequest {
     __obj.asInstanceOf[DescribeSubscribersForNotificationRequest]
   }
   
-  extension [Self <: DescribeSubscribersForNotificationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSubscribersForNotificationRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

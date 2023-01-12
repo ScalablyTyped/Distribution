@@ -17,7 +17,8 @@ object MlPerPartitionCategorization {
     __obj.asInstanceOf[MlPerPartitionCategorization]
   }
   
-  extension [Self <: MlPerPartitionCategorization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPerPartitionCategorization] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

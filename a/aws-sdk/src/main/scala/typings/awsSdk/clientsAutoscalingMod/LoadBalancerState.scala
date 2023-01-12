@@ -23,7 +23,8 @@ object LoadBalancerState {
     __obj.asInstanceOf[LoadBalancerState]
   }
   
-  extension [Self <: LoadBalancerState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadBalancerState] (val x: Self) extends AnyVal {
     
     inline def setLoadBalancerName(value: XmlStringMaxLen255): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
     

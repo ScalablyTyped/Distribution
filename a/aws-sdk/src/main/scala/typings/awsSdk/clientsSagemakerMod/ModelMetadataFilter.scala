@@ -23,7 +23,8 @@ object ModelMetadataFilter {
     __obj.asInstanceOf[ModelMetadataFilter]
   }
   
-  extension [Self <: ModelMetadataFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelMetadataFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: ModelMetadataFilterType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

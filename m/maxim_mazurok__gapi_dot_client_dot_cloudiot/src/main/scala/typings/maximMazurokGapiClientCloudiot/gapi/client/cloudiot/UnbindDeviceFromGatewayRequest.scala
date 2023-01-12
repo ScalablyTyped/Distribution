@@ -19,7 +19,8 @@ object UnbindDeviceFromGatewayRequest {
     __obj.asInstanceOf[UnbindDeviceFromGatewayRequest]
   }
   
-  extension [Self <: UnbindDeviceFromGatewayRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnbindDeviceFromGatewayRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     

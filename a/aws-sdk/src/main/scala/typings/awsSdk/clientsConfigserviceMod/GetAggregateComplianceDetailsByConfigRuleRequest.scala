@@ -53,7 +53,8 @@ object GetAggregateComplianceDetailsByConfigRuleRequest {
     __obj.asInstanceOf[GetAggregateComplianceDetailsByConfigRuleRequest]
   }
   
-  extension [Self <: GetAggregateComplianceDetailsByConfigRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAggregateComplianceDetailsByConfigRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

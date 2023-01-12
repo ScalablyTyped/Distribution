@@ -68,7 +68,8 @@ object PhotoSequence {
     __obj.asInstanceOf[PhotoSequence]
   }
   
-  extension [Self <: PhotoSequence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhotoSequence] (val x: Self) extends AnyVal {
     
     inline def setCaptureTimeOverride(value: String): Self = StObject.set(x, "captureTimeOverride", value.asInstanceOf[js.Any])
     

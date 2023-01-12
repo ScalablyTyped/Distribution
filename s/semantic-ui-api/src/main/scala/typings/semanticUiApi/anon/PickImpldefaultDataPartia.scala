@@ -152,7 +152,8 @@ object PickImpldefaultDataPartia {
     __obj.asInstanceOf[PickImpldefaultDataPartia]
   }
   
-  extension [Self <: PickImpldefaultDataPartia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImpldefaultDataPartia] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String | `false`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

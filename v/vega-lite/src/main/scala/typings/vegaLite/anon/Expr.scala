@@ -39,7 +39,8 @@ object Expr {
     __obj.asInstanceOf[Expr]
   }
   
-  extension [Self <: Expr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Expr] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: typings.vegaLite.buildSrcConfigMod.Config[ExprRef | SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

@@ -137,7 +137,8 @@ object typesHelpersHelpersDotcoreMod {
       __obj.asInstanceOf[MergeOptions]
     }
     
-    extension [Self <: MergeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeOptions] (val x: Self) extends AnyVal {
       
       inline def setMerger(
         value: (/* key */ String, /* target */ AnyObject, /* source */ AnyObject, /* options */ AnyObject) => AnyObject

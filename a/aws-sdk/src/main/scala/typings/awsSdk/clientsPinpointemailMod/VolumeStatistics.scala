@@ -33,7 +33,8 @@ object VolumeStatistics {
     __obj.asInstanceOf[VolumeStatistics]
   }
   
-  extension [Self <: VolumeStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeStatistics] (val x: Self) extends AnyVal {
     
     inline def setInboxRawCount(value: Volume): Self = StObject.set(x, "InboxRawCount", value.asInstanceOf[js.Any])
     

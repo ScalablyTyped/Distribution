@@ -17,7 +17,8 @@ object Weights {
     __obj.asInstanceOf[Weights]
   }
   
-  extension [Self <: Weights](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Weights] (val x: Self) extends AnyVal {
     
     inline def setTimes(value: js.Array[Double]): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
     

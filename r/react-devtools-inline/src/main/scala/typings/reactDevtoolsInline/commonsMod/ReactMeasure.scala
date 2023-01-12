@@ -33,7 +33,8 @@ object ReactMeasure {
     __obj.asInstanceOf[ReactMeasure]
   }
   
-  extension [Self <: ReactMeasure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactMeasure] (val x: Self) extends AnyVal {
     
     inline def setBatchUID(value: BatchUID): Self = StObject.set(x, "batchUID", value.asInstanceOf[js.Any])
     

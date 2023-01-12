@@ -36,7 +36,8 @@ object typesKeyboardMovementUseActiveDescendantMod {
       __obj.asInstanceOf[ActiveDescendantHookOptions[E]]
     }
     
-    extension [Self <: ActiveDescendantHookOptions[?], E /* <: HTMLElement */](x: Self & ActiveDescendantHookOptions[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveDescendantHookOptions[?], E /* <: HTMLElement */] (val x: Self & ActiveDescendantHookOptions[E]) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object typesKeyboardMovementUseActiveDescendantMod {
       __obj.asInstanceOf[ActiveDescendantHookReturnValue[E]]
     }
     
-    extension [Self <: ActiveDescendantHookReturnValue[?], E /* <: HTMLElement */](x: Self & ActiveDescendantHookReturnValue[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveDescendantHookReturnValue[?], E /* <: HTMLElement */] (val x: Self & ActiveDescendantHookReturnValue[E]) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

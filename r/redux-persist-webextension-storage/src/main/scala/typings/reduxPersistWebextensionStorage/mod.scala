@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[StorageInterface]
     }
     
-    extension [Self <: StorageInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageInterface] (val x: Self) extends AnyVal {
       
       inline def setGetItem(value: String => js.Promise[Any]): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       

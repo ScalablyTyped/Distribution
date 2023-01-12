@@ -56,7 +56,8 @@ object distEsmSrcStateMod {
       __obj.asInstanceOf[AppCheckState]
     }
     
-    extension [Self <: AppCheckState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCheckState] (val x: Self) extends AnyVal {
       
       inline def setActivated(value: Boolean): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object distEsmSrcStateMod {
       __obj.asInstanceOf[DebugState]
     }
     
-    extension [Self <: DebugState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebugState] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -134,7 +136,8 @@ object distEsmSrcStateMod {
       __obj.asInstanceOf[ReCAPTCHAState]
     }
     
-    extension [Self <: ReCAPTCHAState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReCAPTCHAState] (val x: Self) extends AnyVal {
       
       inline def setInitialized(value: Deferred[GreCAPTCHA]): Self = StObject.set(x, "initialized", value.asInstanceOf[js.Any])
       

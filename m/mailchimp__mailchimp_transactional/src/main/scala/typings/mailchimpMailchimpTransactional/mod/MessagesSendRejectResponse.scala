@@ -25,7 +25,8 @@ object MessagesSendRejectResponse {
     __obj.asInstanceOf[MessagesSendRejectResponse]
   }
   
-  extension [Self <: MessagesSendRejectResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagesSendRejectResponse] (val x: Self) extends AnyVal {
     
     inline def setReject_reason(value: RejectReason): Self = StObject.set(x, "reject_reason", value.asInstanceOf[js.Any])
     

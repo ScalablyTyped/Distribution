@@ -56,7 +56,8 @@ object KmlPolygon {
     __obj.asInstanceOf[KmlPolygon]
   }
   
-  extension [Self <: KmlPolygon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlPolygon] (val x: Self) extends AnyVal {
     
     inline def setGetInnerBoundaries(value: () => GELinearRingContainer): Self = StObject.set(x, "getInnerBoundaries", js.Any.fromFunction0(value))
     

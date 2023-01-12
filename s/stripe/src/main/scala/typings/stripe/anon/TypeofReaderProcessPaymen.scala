@@ -15,7 +15,8 @@ object TypeofReaderProcessPaymen {
     __obj.asInstanceOf[TypeofReaderProcessPaymen]
   }
   
-  extension [Self <: TypeofReaderProcessPaymen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofReaderProcessPaymen] (val x: Self) extends AnyVal {
     
     inline def setProcessConfig(value: Any): Self = StObject.set(x, "ProcessConfig", value.asInstanceOf[js.Any])
   }

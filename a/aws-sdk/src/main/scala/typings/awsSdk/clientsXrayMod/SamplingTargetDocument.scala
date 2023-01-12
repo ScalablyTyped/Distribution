@@ -38,7 +38,8 @@ object SamplingTargetDocument {
     __obj.asInstanceOf[SamplingTargetDocument]
   }
   
-  extension [Self <: SamplingTargetDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SamplingTargetDocument] (val x: Self) extends AnyVal {
     
     inline def setFixedRate(value: Double): Self = StObject.set(x, "FixedRate", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object PaginatorRowsPerPageDropdownOptions {
     __obj.asInstanceOf[PaginatorRowsPerPageDropdownOptions]
   }
   
-  extension [Self <: PaginatorRowsPerPageDropdownOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginatorRowsPerPageDropdownOptions] (val x: Self) extends AnyVal {
     
     inline def setAppendTo(value: PaginatorAppendToType): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     

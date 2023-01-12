@@ -56,7 +56,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AggregateOptions]
     }
     
-    extension [Self <: AggregateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AggregateOptions] (val x: Self) extends AnyVal {
       
       inline def setInverse(value: (/* total */ Any, /* dropped */ Any) => Any): Self = StObject.set(x, "inverse", js.Any.fromFunction2(value))
       
@@ -97,7 +98,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BackupMetadata]
     }
     
-    extension [Self <: BackupMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackupMetadata] (val x: Self) extends AnyVal {
       
       inline def setRemainingPages(value: Double): Self = StObject.set(x, "remainingPages", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BackupOptions]
     }
     
-    extension [Self <: BackupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackupOptions] (val x: Self) extends AnyVal {
       
       inline def setProgress(value: BackupMetadata => Double): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
     }
@@ -155,7 +158,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[typings.mocBetterSqlite3.mod.MocBetterSqlite3.ColumnDefinition]
       }
       
-      extension [Self <: typings.mocBetterSqlite3.mod.MocBetterSqlite3.ColumnDefinition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.mocBetterSqlite3.mod.MocBetterSqlite3.ColumnDefinition] (val x: Self) extends AnyVal {
         
         inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
@@ -327,7 +331,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFileMustExist(value: Boolean): Self = StObject.set(x, "fileMustExist", value.asInstanceOf[js.Any])
       
@@ -362,7 +367,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PragmaOptions]
     }
     
-    extension [Self <: PragmaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PragmaOptions] (val x: Self) extends AnyVal {
       
       inline def setSimple(value: Boolean): Self = StObject.set(x, "simple", value.asInstanceOf[js.Any])
       
@@ -385,7 +391,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RegistrationOptions]
     }
     
-    extension [Self <: RegistrationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegistrationOptions] (val x: Self) extends AnyVal {
       
       inline def setDeterministic(value: Boolean): Self = StObject.set(x, "deterministic", value.asInstanceOf[js.Any])
       
@@ -414,7 +421,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RunResult]
     }
     
-    extension [Self <: RunResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunResult] (val x: Self) extends AnyVal {
       
       inline def setChanges(value: Double): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
       
@@ -435,7 +443,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SqliteError]
     }
     
-    extension [Self <: SqliteError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SqliteError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }

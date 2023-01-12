@@ -29,7 +29,8 @@ object FoldingRangeProvider {
     __obj.asInstanceOf[FoldingRangeProvider]
   }
   
-  extension [Self <: FoldingRangeProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FoldingRangeProvider] (val x: Self) extends AnyVal {
     
     inline def setOnDidChange(
       value: (/* listener */ js.Function1[FoldingRangeProvider, Any], /* thisArg */ js.UndefOr[Any]) => IDisposable

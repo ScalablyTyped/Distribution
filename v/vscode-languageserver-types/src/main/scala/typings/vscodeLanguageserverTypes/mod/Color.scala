@@ -47,7 +47,8 @@ object Color {
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.Color */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Color */ Boolean]
   
-  extension [Self <: Color](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: decimal): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object RegisterVolumeResult {
     __obj.asInstanceOf[RegisterVolumeResult]
   }
   
-  extension [Self <: RegisterVolumeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterVolumeResult] (val x: Self) extends AnyVal {
     
     inline def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object libCommonTypeHierarchyMod {
       __obj.asInstanceOf[TypeHierarchyFeatureShape]
     }
     
-    extension [Self <: TypeHierarchyFeatureShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeHierarchyFeatureShape] (val x: Self) extends AnyVal {
       
       inline def setTypeHierarchy(value: OnPrepare): Self = StObject.set(x, "typeHierarchy", value.asInstanceOf[js.Any])
     }

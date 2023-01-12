@@ -38,7 +38,8 @@ object distSharedSrcCheckableContextMod {
       __obj.asInstanceOf[CheckableContextType]
     }
     
-    extension [Self <: CheckableContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckableContextType] (val x: Self) extends AnyVal {
       
       inline def setCheckedValue(value: String | js.Array[String]): Self = StObject.set(x, "checkedValue", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object distSharedSrcCheckableContextMod {
       __obj.asInstanceOf[UseCheckablePropsReturn]
     }
     
-    extension [Self <: UseCheckablePropsReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseCheckablePropsReturn] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       

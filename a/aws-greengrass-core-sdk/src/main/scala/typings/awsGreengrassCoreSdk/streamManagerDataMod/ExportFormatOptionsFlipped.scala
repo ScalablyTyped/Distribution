@@ -21,7 +21,8 @@ object ExportFormatOptionsFlipped {
     __obj.asInstanceOf[ExportFormatOptionsFlipped]
   }
   
-  extension [Self <: ExportFormatOptionsFlipped](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportFormatOptionsFlipped] (val x: Self) extends AnyVal {
     
     inline def set0(value: RAW_NOT_BATCHED): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

@@ -73,7 +73,8 @@ object AES {
     __obj.asInstanceOf[AES]
   }
   
-  extension [Self <: AES](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AES] (val x: Self) extends AnyVal {
     
     inline def setAES(value: `3`): Self = StObject.set(x, "AES", value.asInstanceOf[js.Any])
     

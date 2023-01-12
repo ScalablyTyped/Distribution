@@ -66,7 +66,8 @@ object PlusAudioRecordOptions {
     __obj.asInstanceOf[PlusAudioRecordOptions]
   }
   
-  extension [Self <: PlusAudioRecordOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusAudioRecordOptions] (val x: Self) extends AnyVal {
     
     inline def setChannels(value: mono | stereo): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     

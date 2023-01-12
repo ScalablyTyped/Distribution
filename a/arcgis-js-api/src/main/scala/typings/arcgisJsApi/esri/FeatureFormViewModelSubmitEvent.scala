@@ -19,7 +19,8 @@ object FeatureFormViewModelSubmitEvent {
     __obj.asInstanceOf[FeatureFormViewModelSubmitEvent]
   }
   
-  extension [Self <: FeatureFormViewModelSubmitEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureFormViewModelSubmitEvent] (val x: Self) extends AnyVal {
     
     inline def setInvalid(value: js.Array[String]): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     

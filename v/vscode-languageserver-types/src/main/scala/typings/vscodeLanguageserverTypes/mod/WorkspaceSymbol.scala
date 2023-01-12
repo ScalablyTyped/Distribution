@@ -47,7 +47,8 @@ object WorkspaceSymbol {
   inline def create(name: String, kind: SymbolKind, uri: DocumentUri): WorkspaceSymbol = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[WorkspaceSymbol]
   inline def create(name: String, kind: SymbolKind, uri: DocumentUri, range: Range): WorkspaceSymbol = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], uri.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[WorkspaceSymbol]
   
-  extension [Self <: WorkspaceSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceSymbol] (val x: Self) extends AnyVal {
     
     inline def setData(value: LSPAny): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

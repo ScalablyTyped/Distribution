@@ -155,7 +155,8 @@ object passwordPasswordMod {
       __obj.asInstanceOf[PasswordIconParams]
     }
     
-    extension [Self <: PasswordIconParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PasswordIconParams] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -651,7 +652,8 @@ object passwordPasswordMod {
       __obj.asInstanceOf[PasswordProps]
     }
     
-    extension [Self <: PasswordProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PasswordProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -197,7 +197,8 @@ object mod {
       __obj.asInstanceOf[WithStylesOptions]
     }
     
-    extension [Self <: WithStylesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithStylesOptions] (val x: Self) extends AnyVal {
       
       inline def setFlushBefore(value: Boolean): Self = StObject.set(x, "flushBefore", value.asInstanceOf[js.Any])
       
@@ -229,7 +230,8 @@ object mod {
       __obj.asInstanceOf[WithStylesProps[T]]
     }
     
-    extension [Self <: WithStylesProps[?], T](x: Self & WithStylesProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithStylesProps[?], T] (val x: Self & WithStylesProps[T]) extends AnyVal {
       
       inline def setCss(value: /* repeated */ Any => js.Object): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
       

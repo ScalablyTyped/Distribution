@@ -16,7 +16,8 @@ object WxSaveFileSuccessCallbackResult {
     __obj.asInstanceOf[WxSaveFileSuccessCallbackResult]
   }
   
-  extension [Self <: WxSaveFileSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WxSaveFileSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setSavedFilePath(value: Double): Self = StObject.set(x, "savedFilePath", value.asInstanceOf[js.Any])
   }

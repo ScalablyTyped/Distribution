@@ -18,7 +18,8 @@ object SSEDescription {
     __obj.asInstanceOf[SSEDescription]
   }
   
-  extension [Self <: SSEDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SSEDescription] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: SSEStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

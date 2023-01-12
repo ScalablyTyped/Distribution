@@ -18,7 +18,8 @@ object SetShowGridOverlaysRequest {
     __obj.asInstanceOf[SetShowGridOverlaysRequest]
   }
   
-  extension [Self <: SetShowGridOverlaysRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetShowGridOverlaysRequest] (val x: Self) extends AnyVal {
     
     inline def setGridNodeHighlightConfigs(value: js.Array[GridNodeHighlightConfig]): Self = StObject.set(x, "gridNodeHighlightConfigs", value.asInstanceOf[js.Any])
     

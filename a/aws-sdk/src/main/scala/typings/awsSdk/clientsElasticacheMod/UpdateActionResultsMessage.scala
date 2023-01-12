@@ -23,7 +23,8 @@ object UpdateActionResultsMessage {
     __obj.asInstanceOf[UpdateActionResultsMessage]
   }
   
-  extension [Self <: UpdateActionResultsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateActionResultsMessage] (val x: Self) extends AnyVal {
     
     inline def setProcessedUpdateActions(value: ProcessedUpdateActionList): Self = StObject.set(x, "ProcessedUpdateActions", value.asInstanceOf[js.Any])
     

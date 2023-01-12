@@ -35,7 +35,8 @@ object HookSourceAndMetadata {
     __obj.asInstanceOf[HookSourceAndMetadata]
   }
   
-  extension [Self <: HookSourceAndMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HookSourceAndMetadata] (val x: Self) extends AnyVal {
     
     inline def setHookSource(value: HookSource): Self = StObject.set(x, "hookSource", value.asInstanceOf[js.Any])
     

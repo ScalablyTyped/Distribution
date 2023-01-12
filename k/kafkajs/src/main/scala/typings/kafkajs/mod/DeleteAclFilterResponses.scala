@@ -19,7 +19,8 @@ object DeleteAclFilterResponses {
     __obj.asInstanceOf[DeleteAclFilterResponses]
   }
   
-  extension [Self <: DeleteAclFilterResponses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAclFilterResponses] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

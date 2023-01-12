@@ -17,7 +17,8 @@ object RemoveByExampleOptions {
     __obj.asInstanceOf[RemoveByExampleOptions]
   }
   
-  extension [Self <: RemoveByExampleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveByExampleOptions] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

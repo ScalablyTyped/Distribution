@@ -27,7 +27,8 @@ object SingleCharacters {
     __obj.asInstanceOf[SingleCharacters]
   }
   
-  extension [Self <: SingleCharacters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleCharacters] (val x: Self) extends AnyVal {
     
     inline def setBoundaries(value: default): Self = StObject.set(x, "boundaries", value.asInstanceOf[js.Any])
     

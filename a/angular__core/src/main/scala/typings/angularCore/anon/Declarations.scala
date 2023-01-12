@@ -26,7 +26,8 @@ object Declarations {
     __obj.asInstanceOf[Declarations]
   }
   
-  extension [Self <: Declarations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Declarations] (val x: Self) extends AnyVal {
     
     inline def setDeclarations(value: js.Array[Type[Any]] | js.Function0[js.Array[Type[Any]]]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
     

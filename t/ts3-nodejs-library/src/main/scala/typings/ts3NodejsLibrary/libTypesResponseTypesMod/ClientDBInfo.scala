@@ -59,7 +59,8 @@ object ClientDBInfo {
     __obj.asInstanceOf[ClientDBInfo]
   }
   
-  extension [Self <: ClientDBInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientDBInfo] (val x: Self) extends AnyVal {
     
     inline def setClientBase64HashClientUID(value: String): Self = StObject.set(x, "clientBase64HashClientUID", value.asInstanceOf[js.Any])
     

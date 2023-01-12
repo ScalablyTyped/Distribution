@@ -30,7 +30,8 @@ object IMinimalMotionControllerObject {
     __obj.asInstanceOf[IMinimalMotionControllerObject]
   }
   
-  extension [Self <: IMinimalMotionControllerObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMinimalMotionControllerObject] (val x: Self) extends AnyVal {
     
     inline def setAxes(value: js.Array[Double]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
     

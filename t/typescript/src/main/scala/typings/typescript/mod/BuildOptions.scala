@@ -28,7 +28,8 @@ object BuildOptions {
     __obj.asInstanceOf[BuildOptions]
   }
   
-  extension [Self <: BuildOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildOptions] (val x: Self) extends AnyVal {
     
     inline def setAssumeChangesOnlyAffectDirectDependencies(value: Boolean): Self = StObject.set(x, "assumeChangesOnlyAffectDirectDependencies", value.asInstanceOf[js.Any])
     

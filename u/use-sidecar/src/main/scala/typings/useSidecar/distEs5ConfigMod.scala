@@ -28,7 +28,8 @@ object distEs5ConfigMod {
       __obj.asInstanceOf[IConfig]
     }
     
-    extension [Self <: IConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
       
       inline def setOnError(value: js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     }

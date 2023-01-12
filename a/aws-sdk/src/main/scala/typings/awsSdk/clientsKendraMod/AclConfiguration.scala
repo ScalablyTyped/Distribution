@@ -18,7 +18,8 @@ object AclConfiguration {
     __obj.asInstanceOf[AclConfiguration]
   }
   
-  extension [Self <: AclConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AclConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAllowedGroupsColumnName(value: ColumnName): Self = StObject.set(x, "AllowedGroupsColumnName", value.asInstanceOf[js.Any])
   }

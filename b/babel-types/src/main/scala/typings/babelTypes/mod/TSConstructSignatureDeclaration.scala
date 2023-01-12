@@ -53,7 +53,8 @@ object TSConstructSignatureDeclaration {
   @js.native
   def apply(typeParameters: TypeParameterDeclaration_, parameters: Unit, typeAnnotation: TSTypeAnnotation): TSTypeElement = js.native
   
-  extension [Self <: TSConstructSignatureDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSConstructSignatureDeclaration] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: js.Array[Identifier_ | RestElement_]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

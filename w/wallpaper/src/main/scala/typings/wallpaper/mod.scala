@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[GetOptions]
     }
     
-    extension [Self <: GetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
       
       inline def setScreen(value: all | main | Double): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object mod {
       __obj.asInstanceOf[SetOptions]
     }
     
-    extension [Self <: SetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetOptions] (val x: Self) extends AnyVal {
       
       inline def setScale(value: auto | fill | fit | stretch | center): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       

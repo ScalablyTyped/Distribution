@@ -1209,7 +1209,8 @@ object ojlabelvalueMod {
       __obj.asInstanceOf[ojLabelValueEventMap]
     }
     
-    extension [Self <: ojLabelValueEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojLabelValueEventMap] (val x: Self) extends AnyVal {
       
       inline def setLabelEdgeChanged(value: JetElementCustomEvent[start | top | inherit]): Self = StObject.set(x, "labelEdgeChanged", value.asInstanceOf[js.Any])
       
@@ -1232,7 +1233,8 @@ object ojlabelvalueMod {
       __obj.asInstanceOf[ojLabelValueSettableProperties]
     }
     
-    extension [Self <: ojLabelValueSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojLabelValueSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setLabelEdge(value: start | top | inherit): Self = StObject.set(x, "labelEdge", value.asInstanceOf[js.Any])
       
@@ -1256,7 +1258,8 @@ object ojlabelvalueMod {
       __obj.asInstanceOf[ojLabelValueSettablePropertiesLenient]
     }
     
-    extension [Self <: ojLabelValueSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojLabelValueSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setLabelEdge(value: start | top | inherit): Self = StObject.set(x, "labelEdge", value.asInstanceOf[js.Any])
       

@@ -60,7 +60,8 @@ object ViewMixinOptions {
     __obj.asInstanceOf[ViewMixinOptions]
   }
   
-  extension [Self <: ViewMixinOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewMixinOptions] (val x: Self) extends AnyVal {
     
     inline def setBehaviors(value: js.Array[Behavior]): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
     

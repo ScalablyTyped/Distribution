@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Css]
     }
     
-    extension [Self <: Css](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Css] (val x: Self) extends AnyVal {
       
       inline def setCss(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSObject */ Any

@@ -19,7 +19,8 @@ object StreamDescriptionOptions {
     __obj.asInstanceOf[StreamDescriptionOptions]
   }
   
-  extension [Self <: StreamDescriptionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamDescriptionOptions] (val x: Self) extends AnyVal {
     
     inline def setCompressors(value: js.Array[CompressorName]): Self = StObject.set(x, "compressors", value.asInstanceOf[js.Any])
     

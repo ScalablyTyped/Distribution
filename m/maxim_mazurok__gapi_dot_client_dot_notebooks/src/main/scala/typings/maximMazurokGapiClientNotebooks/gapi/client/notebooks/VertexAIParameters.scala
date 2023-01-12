@@ -25,7 +25,8 @@ object VertexAIParameters {
     __obj.asInstanceOf[VertexAIParameters]
   }
   
-  extension [Self <: VertexAIParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VertexAIParameters] (val x: Self) extends AnyVal {
     
     inline def setEnv(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

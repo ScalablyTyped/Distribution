@@ -23,7 +23,8 @@ object ChangeEvent {
     __obj.asInstanceOf[ChangeEvent]
   }
   
-  extension [Self <: ChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: down | up | escape | enter | click | `type`): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

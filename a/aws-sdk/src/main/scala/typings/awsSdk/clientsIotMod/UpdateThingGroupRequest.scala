@@ -28,7 +28,8 @@ object UpdateThingGroupRequest {
     __obj.asInstanceOf[UpdateThingGroupRequest]
   }
   
-  extension [Self <: UpdateThingGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateThingGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setExpectedVersion(value: OptionalVersion): Self = StObject.set(x, "expectedVersion", value.asInstanceOf[js.Any])
     

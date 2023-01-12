@@ -595,7 +595,8 @@ object sapMObjectIdentifierMod {
       __obj.asInstanceOf[ObjectIdentifierSettings]
     }
     
-    extension [Self <: ObjectIdentifierSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectIdentifierSettings] (val x: Self) extends AnyVal {
       
       inline def setAriaLabelledBy(value: js.Array[typings.openui5.sapUiCoreControlMod.default | String]): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
       

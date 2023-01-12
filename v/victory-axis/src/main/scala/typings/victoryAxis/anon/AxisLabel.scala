@@ -33,7 +33,8 @@ object AxisLabel {
     __obj.asInstanceOf[AxisLabel]
   }
   
-  extension [Self <: AxisLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisLabel] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Requireable[js.Object]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

@@ -150,7 +150,8 @@ object buildSrcContextsMod {
       __obj.asInstanceOf[IPenFactoryContext[T]]
     }
     
-    extension [Self <: IPenFactoryContext[?], T](x: Self & IPenFactoryContext[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPenFactoryContext[?], T] (val x: Self & IPenFactoryContext[T]) extends AnyVal {
       
       inline def setCreatePen(value: (/* text */ String, /* transform */ ITransform, /* container */ js.UndefOr[T]) => IPen): Self = StObject.set(x, "createPen", js.Any.fromFunction3(value))
     }
@@ -169,7 +170,8 @@ object buildSrcContextsMod {
       __obj.asInstanceOf[IRulerFactoryContext]
     }
     
-    extension [Self <: IRulerFactoryContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRulerFactoryContext] (val x: Self) extends AnyVal {
       
       inline def setCreateRuler(value: () => IRuler): Self = StObject.set(x, "createRuler", js.Any.fromFunction0(value))
     }

@@ -213,7 +213,8 @@ object typesFocustrackerMod {
         __obj.asInstanceOf[IChangedArgs[T]]
       }
       
-      extension [Self <: IChangedArgs[?], T /* <: Widget */](x: Self & IChangedArgs[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IChangedArgs[?], T /* <: Widget */] (val x: Self & IChangedArgs[T]) extends AnyVal {
         
         inline def setNewValue(value: T): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
         

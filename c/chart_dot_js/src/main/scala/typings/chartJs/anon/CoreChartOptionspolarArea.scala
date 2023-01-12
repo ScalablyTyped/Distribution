@@ -230,7 +230,8 @@ object CoreChartOptionspolarArea {
     __obj.asInstanceOf[CoreChartOptionspolarArea]
   }
   
-  extension [Self <: CoreChartOptionspolarArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreChartOptionspolarArea] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: `false` | AnimationSpecpolarAreaonP): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

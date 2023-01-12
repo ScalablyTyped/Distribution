@@ -35,7 +35,8 @@ object ImputeTransform {
     __obj.asInstanceOf[ImputeTransform]
   }
   
-  extension [Self <: ImputeTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImputeTransform] (val x: Self) extends AnyVal {
     
     inline def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Base64]
     }
     
-    extension [Self <: Base64](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Base64] (val x: Self) extends AnyVal {
       
       inline def setBase64(value: String): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String | js.Function): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object anon {
       __obj.asInstanceOf[High]
     }
     
-    extension [Self <: High](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: High] (val x: Self) extends AnyVal {
       
       inline def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
       
@@ -112,7 +115,8 @@ object anon {
       __obj.asInstanceOf[I]
     }
     
-    extension [Self <: I](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I] (val x: Self) extends AnyVal {
       
       inline def setI(value: Double): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
       
@@ -132,7 +136,8 @@ object anon {
       __obj.asInstanceOf[NumberLong]
     }
     
-    extension [Self <: NumberLong](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberLong] (val x: Self) extends AnyVal {
       
       inline def set$numberLong(value: String): Self = StObject.set(x, "$numberLong", value.asInstanceOf[js.Any])
     }
@@ -151,7 +156,8 @@ object anon {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -635,7 +641,8 @@ object anon {
       __obj.asInstanceOf[PinExcludekeyofLongTimest]
     }
     
-    extension [Self <: PinExcludekeyofLongTimest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinExcludekeyofLongTimest] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: /* addend */ String | Double | Long | typings.bson.mod.Timestamp => Long): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -859,7 +866,8 @@ object anon {
       __obj.asInstanceOf[Timestamp]
     }
     
-    extension [Self <: Timestamp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timestamp] (val x: Self) extends AnyVal {
       
       inline def set$timestamp(value: String): Self = StObject.set(x, "$timestamp", value.asInstanceOf[js.Any])
     }
@@ -1285,7 +1293,8 @@ object anon {
       __obj.asInstanceOf[Utf8]
     }
     
-    extension [Self <: Utf8](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Utf8] (val x: Self) extends AnyVal {
       
       inline def setUtf8(value: Boolean | (Record[String, `true` | `false`])): Self = StObject.set(x, "utf8", value.asInstanceOf[js.Any])
     }

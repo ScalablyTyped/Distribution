@@ -26,7 +26,8 @@ object Access {
     __obj.asInstanceOf[Access]
   }
   
-  extension [Self <: Access](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Access] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: typings.hapiHapi.mod.Request[ReqRefDefaults] => Boolean): Self = StObject.set(x, "access", js.Any.fromFunction1(value))
   }

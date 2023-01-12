@@ -26,7 +26,8 @@ object SfBottomModal extends Shortcut {
       __obj.asInstanceOf[Constructor]
     }
     
-    extension [Self <: Constructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constructor] (val x: Self) extends AnyVal {
       
       inline def setMethods(value: Methods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object SfBottomModal extends Shortcut {
       __obj.asInstanceOf[Methods]
     }
     
-    extension [Self <: Methods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Methods] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -68,7 +70,8 @@ object SfBottomModal extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       

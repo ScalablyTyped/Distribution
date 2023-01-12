@@ -27,7 +27,8 @@ object EntitlementManagementSettings {
     __obj.asInstanceOf[EntitlementManagementSettings]
   }
   
-  extension [Self <: EntitlementManagementSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntitlementManagementSettings] (val x: Self) extends AnyVal {
     
     inline def setDurationUntilExternalUserDeletedAfterBlocked(value: NullableOption[String]): Self = StObject.set(x, "durationUntilExternalUserDeletedAfterBlocked", value.asInstanceOf[js.Any])
     

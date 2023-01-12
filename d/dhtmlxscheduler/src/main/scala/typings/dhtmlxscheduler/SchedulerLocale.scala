@@ -17,7 +17,8 @@ object SchedulerLocale {
     __obj.asInstanceOf[SchedulerLocale]
   }
   
-  extension [Self <: SchedulerLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerLocale] (val x: Self) extends AnyVal {
     
     inline def setDate(value: SchedulerLocaleDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

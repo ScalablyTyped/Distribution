@@ -97,7 +97,8 @@ object buildSrcGoogleErrorMod {
       __obj.asInstanceOf[ErrorInfo]
     }
     
-    extension [Self <: ErrorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorInfo] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object buildSrcGoogleErrorMod {
       __obj.asInstanceOf[FallbackServiceError]
     }
     
-    extension [Self <: FallbackServiceError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FallbackServiceError] (val x: Self) extends AnyVal {
       
       inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
@@ -163,7 +165,8 @@ object buildSrcGoogleErrorMod {
       __obj.asInstanceOf[FallbackStatusObject]
     }
     
-    extension [Self <: FallbackStatusObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FallbackStatusObject] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Status): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -200,7 +203,8 @@ object buildSrcGoogleErrorMod {
       __obj.asInstanceOf[GRPCStatusDetailsObject]
     }
     
-    extension [Self <: GRPCStatusDetailsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GRPCStatusDetailsObject] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: js.Array[Message[js.Object]]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
@@ -225,7 +229,8 @@ object buildSrcGoogleErrorMod {
       __obj.asInstanceOf[ProtobufAny]
     }
     
-    extension [Self <: ProtobufAny](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtobufAny] (val x: Self) extends AnyVal {
       
       inline def setType_url(value: String): Self = StObject.set(x, "type_url", value.asInstanceOf[js.Any])
       

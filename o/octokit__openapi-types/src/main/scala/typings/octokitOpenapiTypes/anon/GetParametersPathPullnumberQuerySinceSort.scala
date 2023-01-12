@@ -27,7 +27,8 @@ object GetParametersPathPullnumberQuerySinceSort {
     __obj.asInstanceOf[GetParametersPathPullnumberQuerySinceSort]
   }
   
-  extension [Self <: GetParametersPathPullnumberQuerySinceSort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersPathPullnumberQuerySinceSort] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersPathPullnumberQuerySinceSort): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     

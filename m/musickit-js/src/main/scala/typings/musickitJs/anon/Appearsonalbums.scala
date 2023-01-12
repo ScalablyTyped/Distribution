@@ -60,7 +60,8 @@ object Appearsonalbums {
     __obj.asInstanceOf[Appearsonalbums]
   }
   
-  extension [Self <: Appearsonalbums](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Appearsonalbums] (val x: Self) extends AnyVal {
     
     inline def `setAppears-on-albums`(value: View[typings.musickitJs.MusicKit.Albums]): Self = StObject.set(x, "appears-on-albums", value.asInstanceOf[js.Any])
     

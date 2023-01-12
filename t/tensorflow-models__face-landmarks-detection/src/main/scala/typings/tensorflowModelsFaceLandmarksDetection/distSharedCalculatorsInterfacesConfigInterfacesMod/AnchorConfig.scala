@@ -53,7 +53,8 @@ object AnchorConfig {
     __obj.asInstanceOf[AnchorConfig]
   }
   
-  extension [Self <: AnchorConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnchorConfig] (val x: Self) extends AnyVal {
     
     inline def setAnchorOffsetX(value: Double): Self = StObject.set(x, "anchorOffsetX", value.asInstanceOf[js.Any])
     

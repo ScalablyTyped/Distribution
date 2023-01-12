@@ -17,7 +17,8 @@ object feedError {
     __obj.asInstanceOf[feedError]
   }
   
-  extension [Self <: feedError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: feedError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

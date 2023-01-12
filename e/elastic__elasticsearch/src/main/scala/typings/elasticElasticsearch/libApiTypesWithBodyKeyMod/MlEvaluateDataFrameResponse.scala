@@ -19,7 +19,8 @@ object MlEvaluateDataFrameResponse {
     __obj.asInstanceOf[MlEvaluateDataFrameResponse]
   }
   
-  extension [Self <: MlEvaluateDataFrameResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlEvaluateDataFrameResponse] (val x: Self) extends AnyVal {
     
     inline def setClassification(value: MlEvaluateDataFrameDataframeClassificationSummary): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     

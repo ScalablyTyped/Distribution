@@ -35,7 +35,8 @@ object UndoManagerEvent {
     __obj.asInstanceOf[UndoManagerEvent]
   }
   
-  extension [Self <: UndoManagerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UndoManagerEvent] (val x: Self) extends AnyVal {
     
     inline def setUndoActionTitle(value: String): Self = StObject.set(x, "UndoActionTitle", value.asInstanceOf[js.Any])
     

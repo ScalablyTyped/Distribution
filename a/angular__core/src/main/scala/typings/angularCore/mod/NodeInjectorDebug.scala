@@ -44,7 +44,8 @@ object NodeInjectorDebug {
     __obj.asInstanceOf[NodeInjectorDebug]
   }
   
-  extension [Self <: NodeInjectorDebug](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeInjectorDebug] (val x: Self) extends AnyVal {
     
     inline def setBloom(value: String): Self = StObject.set(x, "bloom", value.asInstanceOf[js.Any])
     

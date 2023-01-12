@@ -19,7 +19,8 @@ object LCDParallelOption {
     __obj.asInstanceOf[LCDParallelOption]
   }
   
-  extension [Self <: LCDParallelOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LCDParallelOption] (val x: Self) extends AnyVal {
     
     inline def setBacklight(value: Double): Self = StObject.set(x, "backlight", value.asInstanceOf[js.Any])
     

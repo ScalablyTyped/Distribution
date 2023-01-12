@@ -47,7 +47,8 @@ object GoogleActionsOrdersV3VerticalsCommonVehicle {
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsCommonVehicle]
   }
   
-  extension [Self <: GoogleActionsOrdersV3VerticalsCommonVehicle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsOrdersV3VerticalsCommonVehicle] (val x: Self) extends AnyVal {
     
     inline def setColorName(value: String): Self = StObject.set(x, "colorName", value.asInstanceOf[js.Any])
     

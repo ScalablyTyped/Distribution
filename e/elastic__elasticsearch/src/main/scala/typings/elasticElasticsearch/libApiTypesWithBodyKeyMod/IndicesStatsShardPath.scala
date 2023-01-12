@@ -19,7 +19,8 @@ object IndicesStatsShardPath {
     __obj.asInstanceOf[IndicesStatsShardPath]
   }
   
-  extension [Self <: IndicesStatsShardPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesStatsShardPath] (val x: Self) extends AnyVal {
     
     inline def setData_path(value: String): Self = StObject.set(x, "data_path", value.asInstanceOf[js.Any])
     

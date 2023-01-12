@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[Cryptr]
     }
     
-    extension [Self <: Cryptr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cryptr] (val x: Self) extends AnyVal {
       
       inline def setDecrypt(value: String => String): Self = StObject.set(x, "decrypt", js.Any.fromFunction1(value))
       

@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsRadioButtonGroupSmallMod extends Shortcut {
       __obj.asInstanceOf[RadioButtonGroupSmallProps]
     }
     
-    extension [Self <: RadioButtonGroupSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioButtonGroupSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

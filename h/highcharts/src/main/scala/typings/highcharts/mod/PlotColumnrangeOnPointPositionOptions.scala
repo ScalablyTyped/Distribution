@@ -39,7 +39,8 @@ object PlotColumnrangeOnPointPositionOptions {
     __obj.asInstanceOf[PlotColumnrangeOnPointPositionOptions]
   }
   
-  extension [Self <: PlotColumnrangeOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotColumnrangeOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

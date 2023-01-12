@@ -23,7 +23,8 @@ object SecurityRoleTemplateInlineScript {
     __obj.asInstanceOf[SecurityRoleTemplateInlineScript]
   }
   
-  extension [Self <: SecurityRoleTemplateInlineScript](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityRoleTemplateInlineScript] (val x: Self) extends AnyVal {
     
     inline def setLang(value: ScriptLanguage): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object VclContainerEvent {
     __obj.asInstanceOf[VclContainerEvent]
   }
   
-  extension [Self <: VclContainerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VclContainerEvent] (val x: Self) extends AnyVal {
     
     inline def setChild(value: XInterface): Self = StObject.set(x, "Child", value.asInstanceOf[js.Any])
   }

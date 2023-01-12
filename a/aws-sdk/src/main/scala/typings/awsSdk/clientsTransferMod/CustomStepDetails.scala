@@ -33,7 +33,8 @@ object CustomStepDetails {
     __obj.asInstanceOf[CustomStepDetails]
   }
   
-  extension [Self <: CustomStepDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomStepDetails] (val x: Self) extends AnyVal {
     
     inline def setName(value: WorkflowStepName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

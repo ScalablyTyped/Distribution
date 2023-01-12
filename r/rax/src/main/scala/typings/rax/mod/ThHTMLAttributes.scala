@@ -30,7 +30,8 @@ object ThHTMLAttributes {
     __obj.asInstanceOf[ThHTMLAttributes[T]]
   }
   
-  extension [Self <: ThHTMLAttributes[?], T](x: Self & ThHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThHTMLAttributes[?], T] (val x: Self & ThHTMLAttributes[T]) extends AnyVal {
     
     inline def setAlign(value: left | center | right | justify | char): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

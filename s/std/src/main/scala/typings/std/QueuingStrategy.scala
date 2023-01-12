@@ -19,7 +19,8 @@ object QueuingStrategy {
     __obj.asInstanceOf[QueuingStrategy[T]]
   }
   
-  extension [Self <: QueuingStrategy[?], T](x: Self & QueuingStrategy[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueuingStrategy[?], T] (val x: Self & QueuingStrategy[T]) extends AnyVal {
     
     inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     

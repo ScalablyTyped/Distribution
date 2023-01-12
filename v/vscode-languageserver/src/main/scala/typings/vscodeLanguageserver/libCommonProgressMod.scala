@@ -37,7 +37,8 @@ object libCommonProgressMod {
       __obj.asInstanceOf[ProgressContext]
     }
     
-    extension [Self <: ProgressContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressContext] (val x: Self) extends AnyVal {
       
       inline def setSendProgress(value: (ProgressType[Any], ProgressToken, Any) => Unit): Self = StObject.set(x, "sendProgress", js.Any.fromFunction3(value))
     }
@@ -54,7 +55,8 @@ object libCommonProgressMod {
       __obj.asInstanceOf[ResultProgressReporter[R]]
     }
     
-    extension [Self <: ResultProgressReporter[?], R](x: Self & ResultProgressReporter[R]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultProgressReporter[?], R] (val x: Self & ResultProgressReporter[R]) extends AnyVal {
       
       inline def setReport(value: R => Unit): Self = StObject.set(x, "report", js.Any.fromFunction1(value))
     }

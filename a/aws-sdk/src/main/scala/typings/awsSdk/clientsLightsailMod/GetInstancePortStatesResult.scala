@@ -18,7 +18,8 @@ object GetInstancePortStatesResult {
     __obj.asInstanceOf[GetInstancePortStatesResult]
   }
   
-  extension [Self <: GetInstancePortStatesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInstancePortStatesResult] (val x: Self) extends AnyVal {
     
     inline def setPortStates(value: InstancePortStateList): Self = StObject.set(x, "portStates", value.asInstanceOf[js.Any])
     

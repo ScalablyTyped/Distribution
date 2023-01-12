@@ -23,7 +23,8 @@ object DrawableUploaderProps {
     __obj.asInstanceOf[DrawableUploaderProps]
   }
   
-  extension [Self <: DrawableUploaderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawableUploaderProps] (val x: Self) extends AnyVal {
     
     inline def setOnChange(value: js.Array[UrlObj] => js.Object): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     

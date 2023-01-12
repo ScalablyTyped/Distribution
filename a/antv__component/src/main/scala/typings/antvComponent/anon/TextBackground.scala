@@ -19,7 +19,8 @@ object TextBackground {
     __obj.asInstanceOf[TextBackground]
   }
   
-  extension [Self <: TextBackground](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextBackground] (val x: Self) extends AnyVal {
     
     inline def setLine(value: StyleStroke): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     

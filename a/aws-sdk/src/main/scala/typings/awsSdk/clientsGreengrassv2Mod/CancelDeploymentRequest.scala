@@ -18,7 +18,8 @@ object CancelDeploymentRequest {
     __obj.asInstanceOf[CancelDeploymentRequest]
   }
   
-  extension [Self <: CancelDeploymentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelDeploymentRequest] (val x: Self) extends AnyVal {
     
     inline def setDeploymentId(value: NonEmptyString): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
   }

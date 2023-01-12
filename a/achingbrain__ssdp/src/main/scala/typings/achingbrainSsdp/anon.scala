@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[PartialSSDPOptions]
     }
     
-    extension [Self <: PartialSSDPOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSSDPOptions] (val x: Self) extends AnyVal {
       
       inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object anon {
       __obj.asInstanceOf[PartialSSDPSocketOptions]
     }
     
-    extension [Self <: PartialSSDPSocketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSSDPSocketOptions] (val x: Self) extends AnyVal {
       
       inline def setBind(value: NetworkAddress): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
       

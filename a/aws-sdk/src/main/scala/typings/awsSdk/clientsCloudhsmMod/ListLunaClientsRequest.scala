@@ -18,7 +18,8 @@ object ListLunaClientsRequest {
     __obj.asInstanceOf[ListLunaClientsRequest]
   }
   
-  extension [Self <: ListLunaClientsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLunaClientsRequest] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

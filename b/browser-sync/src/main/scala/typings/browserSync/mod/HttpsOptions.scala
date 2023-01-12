@@ -17,7 +17,8 @@ object HttpsOptions {
     __obj.asInstanceOf[HttpsOptions]
   }
   
-  extension [Self <: HttpsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpsOptions] (val x: Self) extends AnyVal {
     
     inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     

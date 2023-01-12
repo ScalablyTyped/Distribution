@@ -87,7 +87,8 @@ object typesTabsManagerMod {
       __obj.asInstanceOf[InitializedTabConfig]
     }
     
-    extension [Self <: InitializedTabConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitializedTabConfig] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object typesTabsManagerMod {
       __obj.asInstanceOf[InitializedTabsManagerContext]
     }
     
-    extension [Self <: InitializedTabsManagerContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitializedTabsManagerContext] (val x: Self) extends AnyVal {
       
       inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       
@@ -215,7 +217,8 @@ object typesTabsManagerMod {
       __obj.asInstanceOf[TabsManagerContext]
     }
     
-    extension [Self <: TabsManagerContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsManagerContext] (val x: Self) extends AnyVal {
       
       inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       
@@ -303,7 +306,8 @@ object typesTabsManagerMod {
       __obj.asInstanceOf[TabsManagerProps]
     }
     
-    extension [Self <: TabsManagerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsManagerProps] (val x: Self) extends AnyVal {
       
       inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       

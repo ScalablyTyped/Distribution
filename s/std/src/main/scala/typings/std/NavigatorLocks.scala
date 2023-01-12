@@ -17,7 +17,8 @@ object NavigatorLocks {
     __obj.asInstanceOf[NavigatorLocks]
   }
   
-  extension [Self <: NavigatorLocks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorLocks] (val x: Self) extends AnyVal {
     
     inline def setLocks(value: LockManager): Self = StObject.set(x, "locks", value.asInstanceOf[js.Any])
   }

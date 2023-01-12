@@ -18,7 +18,8 @@ object CancelSimulationJobRequest {
     __obj.asInstanceOf[CancelSimulationJobRequest]
   }
   
-  extension [Self <: CancelSimulationJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelSimulationJobRequest] (val x: Self) extends AnyVal {
     
     inline def setJob(value: Arn): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
   }

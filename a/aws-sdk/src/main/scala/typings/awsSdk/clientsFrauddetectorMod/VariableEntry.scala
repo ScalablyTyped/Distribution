@@ -43,7 +43,8 @@ object VariableEntry {
     __obj.asInstanceOf[VariableEntry]
   }
   
-  extension [Self <: VariableEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariableEntry] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

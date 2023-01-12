@@ -33,7 +33,8 @@ object Editor {
     __obj.asInstanceOf[Editor]
   }
   
-  extension [Self <: Editor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Editor] (val x: Self) extends AnyVal {
     
     inline def setEditor(value: typings.ace.AceAjax.Editor | GetText): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     

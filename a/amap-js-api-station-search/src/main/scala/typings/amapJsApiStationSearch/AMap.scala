@@ -99,7 +99,8 @@ object AMap {
         __obj.asInstanceOf[Busline]
       }
       
-      extension [Self <: Busline](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Busline] (val x: Self) extends AnyVal {
         
         inline def setEnd_stop(value: String): Self = StObject.set(x, "end_stop", value.asInstanceOf[js.Any])
         
@@ -142,7 +143,8 @@ object AMap {
         __obj.asInstanceOf[CityInfo]
       }
       
-      extension [Self <: CityInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CityInfo] (val x: Self) extends AnyVal {
         
         inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
         
@@ -170,7 +172,8 @@ object AMap {
         __obj.asInstanceOf[EventMap]
       }
       
-      extension [Self <: EventMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
         
         inline def setComplete(value: Event_[complete, SearchResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
         
@@ -206,7 +209,8 @@ object AMap {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
         
@@ -251,7 +255,8 @@ object AMap {
         __obj.asInstanceOf[SearchResult]
       }
       
-      extension [Self <: SearchResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
         
         inline def setCityList(value: js.Array[CityInfo]): Self = StObject.set(x, "cityList", value.asInstanceOf[js.Any])
         
@@ -334,7 +339,8 @@ object AMap {
         __obj.asInstanceOf[StationInfo]
       }
       
-      extension [Self <: StationInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StationInfo] (val x: Self) extends AnyVal {
         
         inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
         

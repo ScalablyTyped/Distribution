@@ -23,7 +23,8 @@ object LiterallineWithoutBreakParent_ {
     __obj.asInstanceOf[LiterallineWithoutBreakParent_]
   }
   
-  extension [Self <: LiterallineWithoutBreakParent_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiterallineWithoutBreakParent_] (val x: Self) extends AnyVal {
     
     inline def setHard(value: `true`): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
     

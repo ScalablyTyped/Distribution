@@ -43,7 +43,8 @@ object DragDropPositionObject {
     __obj.asInstanceOf[DragDropPositionObject]
   }
   
-  extension [Self <: DragDropPositionObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragDropPositionObject] (val x: Self) extends AnyVal {
     
     inline def setChartX(value: Double): Self = StObject.set(x, "chartX", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object XShapeCombiner {
     __obj.asInstanceOf[XShapeCombiner]
   }
   
-  extension [Self <: XShapeCombiner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XShapeCombiner] (val x: Self) extends AnyVal {
     
     inline def setCombine(value: XShapes => XShape): Self = StObject.set(x, "combine", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object DescribeRecoverySnapshotsRequestFilters {
     __obj.asInstanceOf[DescribeRecoverySnapshotsRequestFilters]
   }
   
-  extension [Self <: DescribeRecoverySnapshotsRequestFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRecoverySnapshotsRequestFilters] (val x: Self) extends AnyVal {
     
     inline def setFromDateTime(value: ISO8601DatetimeString): Self = StObject.set(x, "fromDateTime", value.asInstanceOf[js.Any])
     

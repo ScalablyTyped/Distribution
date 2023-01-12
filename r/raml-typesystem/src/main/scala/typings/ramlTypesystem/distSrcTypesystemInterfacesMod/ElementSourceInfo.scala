@@ -22,7 +22,8 @@ object ElementSourceInfo {
     __obj.asInstanceOf[ElementSourceInfo]
   }
   
-  extension [Self <: ElementSourceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementSourceInfo] (val x: Self) extends AnyVal {
     
     inline def setScalarsSources(value: StringDictionary[js.Array[SourceInfo]]): Self = StObject.set(x, "scalarsSources", value.asInstanceOf[js.Any])
   }

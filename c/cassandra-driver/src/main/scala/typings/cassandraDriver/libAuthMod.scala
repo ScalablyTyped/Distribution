@@ -55,7 +55,8 @@ object libAuthMod {
         __obj.asInstanceOf[AuthProvider]
       }
       
-      extension [Self <: AuthProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AuthProvider] (val x: Self) extends AnyVal {
         
         inline def setNewAuthenticator(value: (String, String) => Authenticator): Self = StObject.set(x, "newAuthenticator", js.Any.fromFunction2(value))
       }

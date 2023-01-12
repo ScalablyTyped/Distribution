@@ -35,7 +35,8 @@ object distLibCommandsXsetidMod {
       __obj.asInstanceOf[XSetIdOptions]
     }
     
-    extension [Self <: XSetIdOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSetIdOptions] (val x: Self) extends AnyVal {
       
       inline def setENTRIESADDED(value: Double): Self = StObject.set(x, "ENTRIESADDED", value.asInstanceOf[js.Any])
       

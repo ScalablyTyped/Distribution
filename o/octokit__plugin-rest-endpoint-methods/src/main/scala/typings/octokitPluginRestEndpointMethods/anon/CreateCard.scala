@@ -89,7 +89,8 @@ object CreateCard {
     __obj.asInstanceOf[CreateCard]
   }
   
-  extension [Self <: CreateCard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCard] (val x: Self) extends AnyVal {
     
     inline def setAddCollaborator(value: `1243`): Self = StObject.set(x, "addCollaborator", value.asInstanceOf[js.Any])
     

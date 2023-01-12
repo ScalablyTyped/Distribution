@@ -23,7 +23,8 @@ object WiMAXProperties {
     __obj.asInstanceOf[WiMAXProperties[M, B]]
   }
   
-  extension [Self <: WiMAXProperties[?, ?], M /* <: ManagedObject */, B](x: Self & (WiMAXProperties[M, B])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WiMAXProperties[?, ?], M /* <: ManagedObject */, B] (val x: Self & (WiMAXProperties[M, B])) extends AnyVal {
     
     inline def setAutoConnect(value: B): Self = StObject.set(x, "AutoConnect", value.asInstanceOf[js.Any])
     

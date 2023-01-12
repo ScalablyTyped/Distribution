@@ -58,7 +58,8 @@ object Product {
     __obj.asInstanceOf[Product]
   }
   
-  extension [Self <: Product](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Product] (val x: Self) extends AnyVal {
     
     inline def setActivationUrl(value: NonEmptyString): Self = StObject.set(x, "ActivationUrl", value.asInstanceOf[js.Any])
     

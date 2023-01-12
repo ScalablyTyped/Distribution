@@ -83,7 +83,8 @@ object PivotLabelFilter {
     __obj.asInstanceOf[PivotLabelFilter]
   }
   
-  extension [Self <: PivotLabelFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotLabelFilter] (val x: Self) extends AnyVal {
     
     inline def setComparator(value: String): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     

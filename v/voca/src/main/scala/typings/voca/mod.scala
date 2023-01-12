@@ -1043,7 +1043,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[WordWrapOptions]
     }
     
-    extension [Self <: WordWrapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WordWrapOptions] (val x: Self) extends AnyVal {
       
       inline def setCut(value: Boolean): Self = StObject.set(x, "cut", value.asInstanceOf[js.Any])
       

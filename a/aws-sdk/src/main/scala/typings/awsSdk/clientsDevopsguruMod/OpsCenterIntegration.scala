@@ -18,7 +18,8 @@ object OpsCenterIntegration {
     __obj.asInstanceOf[OpsCenterIntegration]
   }
   
-  extension [Self <: OpsCenterIntegration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpsCenterIntegration] (val x: Self) extends AnyVal {
     
     inline def setOptInStatus(value: OptInStatus): Self = StObject.set(x, "OptInStatus", value.asInstanceOf[js.Any])
     

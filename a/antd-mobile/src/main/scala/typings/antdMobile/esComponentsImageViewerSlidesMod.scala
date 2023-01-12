@@ -38,7 +38,8 @@ object esComponentsImageViewerSlidesMod {
       __obj.asInstanceOf[SlidesType]
     }
     
-    extension [Self <: SlidesType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlidesType] (val x: Self) extends AnyVal {
       
       inline def setDefaultIndex(value: Double): Self = StObject.set(x, "defaultIndex", value.asInstanceOf[js.Any])
       

@@ -29,7 +29,8 @@ object distGiphyMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object distGiphyMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       

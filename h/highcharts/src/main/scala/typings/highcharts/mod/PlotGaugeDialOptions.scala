@@ -65,7 +65,8 @@ object PlotGaugeDialOptions {
     __obj.asInstanceOf[PlotGaugeDialOptions]
   }
   
-  extension [Self <: PlotGaugeDialOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotGaugeDialOptions] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

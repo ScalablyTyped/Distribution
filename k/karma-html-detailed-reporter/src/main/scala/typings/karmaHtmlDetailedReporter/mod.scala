@@ -42,7 +42,8 @@ object mod {
         __obj.asInstanceOf[ConfigOptions]
       }
       
-      extension [Self <: ConfigOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
         
         inline def setHtmlDetailed(value: HtmlDetailedOptions): Self = StObject.set(x, "htmlDetailed", value.asInstanceOf[js.Any])
         
@@ -111,7 +112,8 @@ object mod {
         __obj.asInstanceOf[HtmlDetailedOptions]
       }
       
-      extension [Self <: HtmlDetailedOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HtmlDetailedOptions] (val x: Self) extends AnyVal {
         
         inline def setAutoReload(value: Boolean): Self = StObject.set(x, "autoReload", value.asInstanceOf[js.Any])
         

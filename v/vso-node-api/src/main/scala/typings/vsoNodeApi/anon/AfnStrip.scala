@@ -50,7 +50,8 @@ object AfnStrip {
     __obj.asInstanceOf[AfnStrip]
   }
   
-  extension [Self <: AfnStrip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AfnStrip] (val x: Self) extends AnyVal {
     
     inline def setAfnStrip(value: scala.Double): Self = StObject.set(x, "afnStrip", value.asInstanceOf[js.Any])
     

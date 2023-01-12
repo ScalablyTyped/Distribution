@@ -55,7 +55,8 @@ object CaptionLabel {
     __obj.asInstanceOf[CaptionLabel]
   }
   
-  extension [Self <: CaptionLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionLabel] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

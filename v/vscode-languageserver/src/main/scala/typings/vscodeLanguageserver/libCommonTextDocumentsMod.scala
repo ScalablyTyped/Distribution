@@ -131,7 +131,8 @@ object libCommonTextDocumentsMod {
       __obj.asInstanceOf[ConnectionState]
     }
     
-    extension [Self <: ConnectionState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionState] (val x: Self) extends AnyVal {
       
       inline def set__textDocumentSync(value: TextDocumentSyncKind): Self = StObject.set(x, "__textDocumentSync", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object libCommonTextDocumentsMod {
       __obj.asInstanceOf[TextDocumentChangeEvent[T]]
     }
     
-    extension [Self <: TextDocumentChangeEvent[?], T](x: Self & TextDocumentChangeEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextDocumentChangeEvent[?], T] (val x: Self & TextDocumentChangeEvent[T]) extends AnyVal {
       
       inline def setDocument(value: T): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     }
@@ -187,7 +189,8 @@ object libCommonTextDocumentsMod {
       __obj.asInstanceOf[TextDocumentConnection]
     }
     
-    extension [Self <: TextDocumentConnection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextDocumentConnection] (val x: Self) extends AnyVal {
       
       inline def setOnDidChangeTextDocument(value: NotificationHandler[DidChangeTextDocumentParams] => Disposable): Self = StObject.set(x, "onDidChangeTextDocument", js.Any.fromFunction1(value))
       
@@ -224,7 +227,8 @@ object libCommonTextDocumentsMod {
       __obj.asInstanceOf[TextDocumentWillSaveEvent[T]]
     }
     
-    extension [Self <: TextDocumentWillSaveEvent[?], T](x: Self & TextDocumentWillSaveEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextDocumentWillSaveEvent[?], T] (val x: Self & TextDocumentWillSaveEvent[T]) extends AnyVal {
       
       inline def setDocument(value: T): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       
@@ -248,7 +252,8 @@ object libCommonTextDocumentsMod {
       __obj.asInstanceOf[TextDocumentsConfiguration[T]]
     }
     
-    extension [Self <: TextDocumentsConfiguration[?], T /* <: Uri */](x: Self & TextDocumentsConfiguration[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextDocumentsConfiguration[?], T /* <: Uri */] (val x: Self & TextDocumentsConfiguration[T]) extends AnyVal {
       
       inline def setCreate(value: (DocumentUri, String, Double, String) => T): Self = StObject.set(x, "create", js.Any.fromFunction4(value))
       

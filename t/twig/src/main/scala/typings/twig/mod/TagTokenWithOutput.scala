@@ -20,7 +20,8 @@ object TagTokenWithOutput {
     __obj.asInstanceOf[TagTokenWithOutput]
   }
   
-  extension [Self <: TagTokenWithOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagTokenWithOutput] (val x: Self) extends AnyVal {
     
     inline def setOutput(value: js.Array[RawOutput]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[ReduxpackLIFECYCLE]
     }
     
-    extension [Self <: ReduxpackLIFECYCLE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReduxpackLIFECYCLE] (val x: Self) extends AnyVal {
       
       inline def `setRedux-packSlashLIFECYCLE`(value: LIFECYCLEValues): Self = StObject.set(x, "redux-pack/LIFECYCLE", value.asInstanceOf[js.Any])
       

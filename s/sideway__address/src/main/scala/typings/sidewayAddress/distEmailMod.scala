@@ -36,7 +36,8 @@ object distEmailMod {
       __obj.asInstanceOf[EmailOptions]
     }
     
-    extension [Self <: EmailOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreLength(value: Boolean): Self = StObject.set(x, "ignoreLength", value.asInstanceOf[js.Any])
       

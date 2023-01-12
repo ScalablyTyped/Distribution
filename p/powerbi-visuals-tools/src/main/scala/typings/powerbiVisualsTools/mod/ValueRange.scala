@@ -17,7 +17,8 @@ object ValueRange {
     __obj.asInstanceOf[ValueRange[T]]
   }
   
-  extension [Self <: ValueRange[?], T](x: Self & ValueRange[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueRange[?], T] (val x: Self & ValueRange[T]) extends AnyVal {
     
     inline def setMax(value: T): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

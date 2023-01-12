@@ -17,7 +17,8 @@ object OnResolveOptions {
     __obj.asInstanceOf[OnResolveOptions]
   }
   
-  extension [Self <: OnResolveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnResolveOptions] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: js.RegExp): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

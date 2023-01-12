@@ -19,7 +19,8 @@ object UpdateReleaseRequest {
     __obj.asInstanceOf[UpdateReleaseRequest]
   }
   
-  extension [Self <: UpdateReleaseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateReleaseRequest] (val x: Self) extends AnyVal {
     
     inline def setRelease(value: Release): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
     

@@ -318,7 +318,8 @@ object esComponentsStepsStepMod {
       __obj.asInstanceOf[StepProps]
     }
     
-    extension [Self <: StepProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

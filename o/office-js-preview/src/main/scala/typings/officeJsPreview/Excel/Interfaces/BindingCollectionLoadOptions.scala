@@ -41,7 +41,8 @@ object BindingCollectionLoadOptions {
     __obj.asInstanceOf[BindingCollectionLoadOptions]
   }
   
-  extension [Self <: BindingCollectionLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

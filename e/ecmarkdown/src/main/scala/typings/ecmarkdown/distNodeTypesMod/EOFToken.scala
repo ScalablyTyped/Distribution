@@ -23,7 +23,8 @@ object EOFToken {
     __obj.asInstanceOf[EOFToken]
   }
   
-  extension [Self <: EOFToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EOFToken] (val x: Self) extends AnyVal {
     
     inline def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     

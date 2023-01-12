@@ -66,7 +66,8 @@ object libStrategiesPersistentMod {
       __obj.asInstanceOf[IPersistentStrategy]
     }
     
-    extension [Self <: IPersistentStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPersistentStrategy] (val x: Self) extends AnyVal {
       
       inline def setCacheKey(value: Context => String): Self = StObject.set(x, "cacheKey", js.Any.fromFunction1(value))
       

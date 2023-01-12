@@ -23,7 +23,8 @@ object Principal {
     __obj.asInstanceOf[Principal]
   }
   
-  extension [Self <: Principal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Principal] (val x: Self) extends AnyVal {
     
     inline def setPrincipalARN(value: PrincipalARN): Self = StObject.set(x, "PrincipalARN", value.asInstanceOf[js.Any])
     

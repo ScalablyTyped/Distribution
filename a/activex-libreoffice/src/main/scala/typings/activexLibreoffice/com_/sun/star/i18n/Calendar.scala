@@ -40,7 +40,8 @@ object Calendar {
     __obj.asInstanceOf[Calendar]
   }
   
-  extension [Self <: Calendar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Calendar] (val x: Self) extends AnyVal {
     
     inline def setDays(value: SafeArray[CalendarItem]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
     

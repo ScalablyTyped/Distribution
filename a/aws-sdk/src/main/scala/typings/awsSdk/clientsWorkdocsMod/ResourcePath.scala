@@ -18,7 +18,8 @@ object ResourcePath {
     __obj.asInstanceOf[ResourcePath]
   }
   
-  extension [Self <: ResourcePath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourcePath] (val x: Self) extends AnyVal {
     
     inline def setComponents(value: ResourcePathComponentList): Self = StObject.set(x, "Components", value.asInstanceOf[js.Any])
     

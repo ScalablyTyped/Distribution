@@ -20,7 +20,8 @@ object CMsgClientLogonLoginKey {
     __obj.asInstanceOf[CMsgClientLogonLoginKey]
   }
   
-  extension [Self <: CMsgClientLogonLoginKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CMsgClientLogonLoginKey] (val x: Self) extends AnyVal {
     
     inline def setLogin_key(value: String): Self = StObject.set(x, "login_key", value.asInstanceOf[js.Any])
   }

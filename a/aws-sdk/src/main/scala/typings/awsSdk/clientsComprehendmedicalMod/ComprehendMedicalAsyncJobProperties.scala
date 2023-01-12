@@ -83,7 +83,8 @@ object ComprehendMedicalAsyncJobProperties {
     __obj.asInstanceOf[ComprehendMedicalAsyncJobProperties]
   }
   
-  extension [Self <: ComprehendMedicalAsyncJobProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComprehendMedicalAsyncJobProperties] (val x: Self) extends AnyVal {
     
     inline def setDataAccessRoleArn(value: IamRoleArn): Self = StObject.set(x, "DataAccessRoleArn", value.asInstanceOf[js.Any])
     

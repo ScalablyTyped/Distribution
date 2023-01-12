@@ -28,7 +28,8 @@ object NonCompliantResource {
     __obj.asInstanceOf[NonCompliantResource]
   }
   
-  extension [Self <: NonCompliantResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonCompliantResource] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInfo(value: StringMap): Self = StObject.set(x, "additionalInfo", value.asInstanceOf[js.Any])
     

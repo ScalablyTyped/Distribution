@@ -59,7 +59,8 @@ object TableSortField {
     __obj.asInstanceOf[TableSortField]
   }
   
-  extension [Self <: TableSortField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableSortField] (val x: Self) extends AnyVal {
     
     inline def setCollatorAlgorithm(value: String): Self = StObject.set(x, "CollatorAlgorithm", value.asInstanceOf[js.Any])
     

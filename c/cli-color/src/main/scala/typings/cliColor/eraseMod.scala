@@ -57,7 +57,8 @@ object eraseMod extends Shortcut {
       __obj.asInstanceOf[Erase]
     }
     
-    extension [Self <: Erase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Erase] (val x: Self) extends AnyVal {
       
       inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object AbuseReport {
     __obj.asInstanceOf[AbuseReport]
   }
   
-  extension [Self <: AbuseReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbuseReport] (val x: Self) extends AnyVal {
     
     inline def setAbuseTypes(value: js.Array[AbuseType]): Self = StObject.set(x, "abuseTypes", value.asInstanceOf[js.Any])
     

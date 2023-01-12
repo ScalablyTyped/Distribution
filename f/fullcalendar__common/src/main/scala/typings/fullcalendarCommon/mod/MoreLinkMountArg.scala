@@ -25,7 +25,8 @@ object MoreLinkMountArg {
     __obj.asInstanceOf[MoreLinkMountArg]
   }
   
-  extension [Self <: MoreLinkMountArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoreLinkMountArg] (val x: Self) extends AnyVal {
     
     inline def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object LocalName {
     __obj.asInstanceOf[LocalName]
   }
   
-  extension [Self <: LocalName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalName] (val x: Self) extends AnyVal {
     
     inline def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
     

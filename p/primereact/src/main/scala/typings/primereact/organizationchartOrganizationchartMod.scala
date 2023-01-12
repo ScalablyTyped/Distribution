@@ -128,7 +128,8 @@ object organizationchartOrganizationchartMod {
       __obj.asInstanceOf[OrganizationChartNodeData]
     }
     
-    extension [Self <: OrganizationChartNodeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrganizationChartNodeData] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[OrganizationChartNodeData]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -169,7 +170,8 @@ object organizationchartOrganizationchartMod {
       __obj.asInstanceOf[OrganizationChartNodeSelectParams]
     }
     
-    extension [Self <: OrganizationChartNodeSelectParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrganizationChartNodeSelectParams] (val x: Self) extends AnyVal {
       
       inline def setNode(value: OrganizationChartNodeDataType): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
@@ -561,7 +563,8 @@ object organizationchartOrganizationchartMod {
       __obj.asInstanceOf[OrganizationChartProps]
     }
     
-    extension [Self <: OrganizationChartProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrganizationChartProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

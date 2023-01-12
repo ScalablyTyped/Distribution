@@ -67,7 +67,8 @@ object WorkbookUpdateData {
     __obj.asInstanceOf[WorkbookUpdateData]
   }
   
-  extension [Self <: WorkbookUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookUpdateData] (val x: Self) extends AnyVal {
     
     inline def setChartDataPointTrack(value: Boolean): Self = StObject.set(x, "chartDataPointTrack", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object ImageCropData {
     __obj.asInstanceOf[ImageCropData]
   }
   
-  extension [Self <: ImageCropData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageCropData] (val x: Self) extends AnyVal {
     
     inline def setDisplaySize(value: Height): Self = StObject.set(x, "displaySize", value.asInstanceOf[js.Any])
     

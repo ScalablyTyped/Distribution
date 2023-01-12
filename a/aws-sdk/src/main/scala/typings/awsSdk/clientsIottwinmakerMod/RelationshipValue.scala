@@ -23,7 +23,8 @@ object RelationshipValue {
     __obj.asInstanceOf[RelationshipValue]
   }
   
-  extension [Self <: RelationshipValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationshipValue] (val x: Self) extends AnyVal {
     
     inline def setTargetComponentName(value: Name): Self = StObject.set(x, "targetComponentName", value.asInstanceOf[js.Any])
     

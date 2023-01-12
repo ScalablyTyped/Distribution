@@ -38,7 +38,8 @@ object StartContactStreamingRequest {
     __obj.asInstanceOf[StartContactStreamingRequest]
   }
   
-  extension [Self <: StartContactStreamingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartContactStreamingRequest] (val x: Self) extends AnyVal {
     
     inline def setChatStreamingConfiguration(value: ChatStreamingConfiguration): Self = StObject.set(x, "ChatStreamingConfiguration", value.asInstanceOf[js.Any])
     

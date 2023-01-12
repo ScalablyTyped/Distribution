@@ -17,7 +17,8 @@ object LinkedOptions {
     __obj.asInstanceOf[LinkedOptions]
   }
   
-  extension [Self <: LinkedOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkedOptions] (val x: Self) extends AnyVal {
     
     inline def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     

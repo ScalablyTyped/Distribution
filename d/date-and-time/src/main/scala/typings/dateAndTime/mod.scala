@@ -113,7 +113,8 @@ object mod {
       __obj.asInstanceOf[Extension]
     }
     
-    extension [Self <: Extension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extension] (val x: Self) extends AnyVal {
       
       inline def setExtender(value: Extender): Self = StObject.set(x, "extender", value.asInstanceOf[js.Any])
       
@@ -203,7 +204,8 @@ object mod {
       __obj.asInstanceOf[PreparseResult]
     }
     
-    extension [Self <: PreparseResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreparseResult] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
       
@@ -259,7 +261,8 @@ object mod {
       __obj.asInstanceOf[SubtractResult]
     }
     
-    extension [Self <: SubtractResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubtractResult] (val x: Self) extends AnyVal {
       
       inline def setToDays(value: () => Double): Self = StObject.set(x, "toDays", js.Any.fromFunction0(value))
       
@@ -303,7 +306,8 @@ object mod {
       __obj.asInstanceOf[TimeSpanResult]
     }
     
-    extension [Self <: TimeSpanResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeSpanResult] (val x: Self) extends AnyVal {
       
       inline def setToDays(value: String => String): Self = StObject.set(x, "toDays", js.Any.fromFunction1(value))
       

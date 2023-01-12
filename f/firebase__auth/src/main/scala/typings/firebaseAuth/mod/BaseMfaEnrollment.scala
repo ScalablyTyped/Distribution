@@ -22,7 +22,8 @@ object BaseMfaEnrollment {
     __obj.asInstanceOf[BaseMfaEnrollment]
   }
   
-  extension [Self <: BaseMfaEnrollment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseMfaEnrollment] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

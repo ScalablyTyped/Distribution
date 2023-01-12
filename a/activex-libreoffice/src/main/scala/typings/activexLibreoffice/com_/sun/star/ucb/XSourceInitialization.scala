@@ -35,7 +35,8 @@ object XSourceInitialization {
     __obj.asInstanceOf[XSourceInitialization]
   }
   
-  extension [Self <: XSourceInitialization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSourceInitialization] (val x: Self) extends AnyVal {
     
     inline def setSetSource(value: XInterface => Unit): Self = StObject.set(x, "setSource", js.Any.fromFunction1(value))
   }

@@ -217,7 +217,8 @@ object AllowEditImage {
     __obj.asInstanceOf[AllowEditImage]
   }
   
-  extension [Self <: AllowEditImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowEditImage] (val x: Self) extends AnyVal {
     
     inline def setAllowEditImage(value: Boolean): Self = StObject.set(x, "allowEditImage", value.asInstanceOf[js.Any])
     

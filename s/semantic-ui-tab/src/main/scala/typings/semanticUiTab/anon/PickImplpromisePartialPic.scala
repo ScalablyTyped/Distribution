@@ -23,7 +23,8 @@ object PickImplpromisePartialPic {
     __obj.asInstanceOf[PickImplpromisePartialPic]
   }
   
-  extension [Self <: PickImplpromisePartialPic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplpromisePartialPic] (val x: Self) extends AnyVal {
     
     inline def setLoaded(value: String): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     

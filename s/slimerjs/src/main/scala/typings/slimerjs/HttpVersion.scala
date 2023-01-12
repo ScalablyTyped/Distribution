@@ -17,7 +17,8 @@ object HttpVersion {
     __obj.asInstanceOf[HttpVersion]
   }
   
-  extension [Self <: HttpVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpVersion] (val x: Self) extends AnyVal {
     
     inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object AutocompleteResult {
     __obj.asInstanceOf[AutocompleteResult]
   }
   
-  extension [Self <: AutocompleteResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutocompleteResult] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

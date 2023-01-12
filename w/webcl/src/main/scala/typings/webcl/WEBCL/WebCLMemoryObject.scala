@@ -18,7 +18,8 @@ object WebCLMemoryObject {
     __obj.asInstanceOf[WebCLMemoryObject]
   }
   
-  extension [Self <: WebCLMemoryObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebCLMemoryObject] (val x: Self) extends AnyVal {
     
     inline def setGetInfo(value: MemInfo => Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
     

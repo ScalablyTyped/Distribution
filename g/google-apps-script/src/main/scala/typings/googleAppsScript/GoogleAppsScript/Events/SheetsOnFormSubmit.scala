@@ -32,7 +32,8 @@ object SheetsOnFormSubmit {
     __obj.asInstanceOf[SheetsOnFormSubmit]
   }
   
-  extension [Self <: SheetsOnFormSubmit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetsOnFormSubmit] (val x: Self) extends AnyVal {
     
     inline def setNamedValues(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "namedValues", value.asInstanceOf[js.Any])
     

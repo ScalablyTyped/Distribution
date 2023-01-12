@@ -47,7 +47,8 @@ object Skeleton {
     __obj.asInstanceOf[Skeleton]
   }
   
-  extension [Self <: Skeleton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Skeleton] (val x: Self) extends AnyVal {
     
     inline def setBoneInverses(value: js.Array[Matrix4]): Self = StObject.set(x, "boneInverses", value.asInstanceOf[js.Any])
     

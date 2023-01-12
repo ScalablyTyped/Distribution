@@ -17,7 +17,8 @@ object CreateStorage {
     __obj.asInstanceOf[CreateStorage]
   }
   
-  extension [Self <: CreateStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStorage] (val x: Self) extends AnyVal {
     
     inline def setData(value: CreateStorageData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object OidcConfig {
     __obj.asInstanceOf[OidcConfig]
   }
   
-  extension [Self <: OidcConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OidcConfig] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationEndpoint(value: OidcEndpoint): Self = StObject.set(x, "AuthorizationEndpoint", value.asInstanceOf[js.Any])
     

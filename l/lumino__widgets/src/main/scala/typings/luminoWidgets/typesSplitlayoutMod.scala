@@ -259,7 +259,8 @@ object typesSplitlayoutMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setAlignment(value: Alignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
         
@@ -296,7 +297,8 @@ object typesSplitlayoutMod {
         __obj.asInstanceOf[IRenderer]
       }
       
-      extension [Self <: IRenderer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRenderer] (val x: Self) extends AnyVal {
         
         inline def setCreateHandle(value: () => HTMLDivElement): Self = StObject.set(x, "createHandle", js.Any.fromFunction0(value))
       }

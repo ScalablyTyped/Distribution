@@ -18,7 +18,8 @@ object WebvttDestinationSettings {
     __obj.asInstanceOf[WebvttDestinationSettings]
   }
   
-  extension [Self <: WebvttDestinationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebvttDestinationSettings] (val x: Self) extends AnyVal {
     
     inline def setStyleControl(value: WebvttDestinationStyleControl): Self = StObject.set(x, "StyleControl", value.asInstanceOf[js.Any])
     

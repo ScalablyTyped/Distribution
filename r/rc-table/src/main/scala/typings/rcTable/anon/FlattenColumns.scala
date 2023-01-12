@@ -21,7 +21,8 @@ object FlattenColumns {
     __obj.asInstanceOf[FlattenColumns]
   }
   
-  extension [Self <: FlattenColumns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlattenColumns] (val x: Self) extends AnyVal {
     
     inline def setFlattenColumns(value: typings.rcTable.libFooterSummaryContextMod.FlattenColumns[Any]): Self = StObject.set(x, "flattenColumns", value.asInstanceOf[js.Any])
     

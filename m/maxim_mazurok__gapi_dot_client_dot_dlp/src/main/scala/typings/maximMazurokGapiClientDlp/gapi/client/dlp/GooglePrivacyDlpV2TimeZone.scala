@@ -16,7 +16,8 @@ object GooglePrivacyDlpV2TimeZone {
     __obj.asInstanceOf[GooglePrivacyDlpV2TimeZone]
   }
   
-  extension [Self <: GooglePrivacyDlpV2TimeZone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2TimeZone] (val x: Self) extends AnyVal {
     
     inline def setOffsetMinutes(value: Double): Self = StObject.set(x, "offsetMinutes", value.asInstanceOf[js.Any])
     

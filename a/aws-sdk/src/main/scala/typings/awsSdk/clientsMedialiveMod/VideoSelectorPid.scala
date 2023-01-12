@@ -18,7 +18,8 @@ object VideoSelectorPid {
     __obj.asInstanceOf[VideoSelectorPid]
   }
   
-  extension [Self <: VideoSelectorPid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoSelectorPid] (val x: Self) extends AnyVal {
     
     inline def setPid(value: integerMin0Max8191): Self = StObject.set(x, "Pid", value.asInstanceOf[js.Any])
     

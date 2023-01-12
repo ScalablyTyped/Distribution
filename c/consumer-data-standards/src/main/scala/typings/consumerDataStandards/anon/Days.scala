@@ -49,7 +49,8 @@ object Days {
     __obj.asInstanceOf[Days]
   }
   
-  extension [Self <: Days](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Days] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInfo(value: String): Self = StObject.set(x, "additionalInfo", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object AggregationsChildrenAggregation {
     __obj.asInstanceOf[AggregationsChildrenAggregation]
   }
   
-  extension [Self <: AggregationsChildrenAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsChildrenAggregation] (val x: Self) extends AnyVal {
     
     inline def setType(value: RelationName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

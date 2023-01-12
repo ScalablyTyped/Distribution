@@ -20,7 +20,8 @@ object NDEFReadingEventInit {
     __obj.asInstanceOf[NDEFReadingEventInit]
   }
   
-  extension [Self <: NDEFReadingEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NDEFReadingEventInit] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: NDEFMessageInit): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

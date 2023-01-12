@@ -31,7 +31,8 @@ object CanAdd {
     __obj.asInstanceOf[CanAdd]
   }
   
-  extension [Self <: CanAdd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanAdd] (val x: Self) extends AnyVal {
     
     inline def setCanAdd(value: (Any, Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
     

@@ -19,7 +19,8 @@ object BasicPerfSampleSeries {
     __obj.asInstanceOf[BasicPerfSampleSeries]
   }
   
-  extension [Self <: BasicPerfSampleSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicPerfSampleSeries] (val x: Self) extends AnyVal {
     
     inline def setPerfMetricType(value: String): Self = StObject.set(x, "perfMetricType", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object widgetsZebraOptionsMod {
       __obj.asInstanceOf[ZebraOptions]
     }
     
-    extension [Self <: ZebraOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZebraOptions] (val x: Self) extends AnyVal {
       
       inline def setZebra(value: js.Tuple2[String, String]): Self = StObject.set(x, "zebra", value.asInstanceOf[js.Any])
       

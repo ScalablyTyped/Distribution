@@ -83,7 +83,8 @@ object rendererMod {
       __obj.asInstanceOf[Renderer]
     }
     
-    extension [Self <: Renderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Renderer] (val x: Self) extends AnyVal {
       
       inline def setAdjust(value: () => Unit): Self = StObject.set(x, "adjust", js.Any.fromFunction0(value))
       

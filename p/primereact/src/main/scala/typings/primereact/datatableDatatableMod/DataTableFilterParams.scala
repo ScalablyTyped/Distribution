@@ -15,7 +15,8 @@ object DataTableFilterParams {
     __obj.asInstanceOf[DataTableFilterParams]
   }
   
-  extension [Self <: DataTableFilterParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableFilterParams] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: DataTableFilterMeta): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
   }

@@ -124,7 +124,8 @@ object mod {
       __obj.asInstanceOf[FluentLinkProps[NavigationInfo, Key]]
     }
     
-    extension [Self <: FluentLinkProps[?, ?], NavigationInfo /* <: StringDictionary[Any] */, Key /* <: /* keyof NavigationInfo */ String */](x: Self & (FluentLinkProps[NavigationInfo, Key])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FluentLinkProps[?, ?], NavigationInfo /* <: StringDictionary[Any] */, Key /* <: /* keyof NavigationInfo */ String */] (val x: Self & (FluentLinkProps[NavigationInfo, Key])) extends AnyVal {
       
       inline def setNavigate(value: FluentNavigator[NavigationInfo, Key] => FluentNavigator[NavigationInfo, String]): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
       
@@ -163,7 +164,8 @@ object mod {
       __obj.asInstanceOf[LinkProps]
     }
     
-    extension [Self <: LinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
       
       inline def setHistoryAction(value: add | replace | none): Self = StObject.set(x, "historyAction", value.asInstanceOf[js.Any])
       
@@ -195,7 +197,8 @@ object mod {
       __obj.asInstanceOf[NavigationBackLinkProps]
     }
     
-    extension [Self <: NavigationBackLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationBackLinkProps] (val x: Self) extends AnyVal {
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     }
@@ -247,7 +250,8 @@ object mod {
       __obj.asInstanceOf[NavigationEvent[NavigationInfo, Key]]
     }
     
-    extension [Self <: NavigationEvent[?, ?], NavigationInfo /* <: StringDictionary[Any] */, Key /* <: /* keyof NavigationInfo */ String */](x: Self & (NavigationEvent[NavigationInfo, Key])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationEvent[?, ?], NavigationInfo /* <: StringDictionary[Any] */, Key /* <: /* keyof NavigationInfo */ String */] (val x: Self & (NavigationEvent[NavigationInfo, Key])) extends AnyVal {
       
       inline def setAsyncData(value: Any): Self = StObject.set(x, "asyncData", value.asInstanceOf[js.Any])
       
@@ -287,7 +291,8 @@ object mod {
       __obj.asInstanceOf[NavigationHandlerProps]
     }
     
-    extension [Self <: NavigationHandlerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationHandlerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -313,7 +318,8 @@ object mod {
       __obj.asInstanceOf[NavigationLinkProps[NavigationInfo, StateKey]]
     }
     
-    extension [Self <: NavigationLinkProps[?, ?], NavigationInfo /* <: StringDictionary[Any] */, StateKey /* <: /* keyof NavigationInfo */ String */](x: Self & (NavigationLinkProps[NavigationInfo, StateKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationLinkProps[?, ?], NavigationInfo /* <: StringDictionary[Any] */, StateKey /* <: /* keyof NavigationInfo */ String */] (val x: Self & (NavigationLinkProps[NavigationInfo, StateKey])) extends AnyVal {
       
       inline def setStateKey(value: StateKey & (/* keyof NavigationInfo */ String)): Self = StObject.set(x, "stateKey", value.asInstanceOf[js.Any])
     }
@@ -371,7 +377,8 @@ object mod {
       __obj.asInstanceOf[RefreshLinkProps[NavigationInfo, Key]]
     }
     
-    extension [Self <: RefreshLinkProps[?, ?], NavigationInfo /* <: StringDictionary[Any] */, Key /* <: /* keyof NavigationInfo */ String */](x: Self & (RefreshLinkProps[NavigationInfo, Key])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshLinkProps[?, ?], NavigationInfo /* <: StringDictionary[Any] */, Key /* <: /* keyof NavigationInfo */ String */] (val x: Self & (RefreshLinkProps[NavigationInfo, Key])) extends AnyVal {
       
       inline def setActiveCssClass(value: String): Self = StObject.set(x, "activeCssClass", value.asInstanceOf[js.Any])
       
@@ -434,7 +441,8 @@ object mod {
       __obj.asInstanceOf[SceneViewProps[NavigationInfo]]
     }
     
-    extension [Self <: SceneViewProps[?], NavigationInfo /* <: StringDictionary[Any] */](x: Self & SceneViewProps[NavigationInfo]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SceneViewProps[?], NavigationInfo /* <: StringDictionary[Any] */] (val x: Self & SceneViewProps[NavigationInfo]) extends AnyVal {
       
       inline def setActive(
         value: (/* keyof NavigationInfo */ String) | (js.Array[/* keyof NavigationInfo */ String]) | (js.Function1[/* stateContext */ StateContext[String, Any], Boolean])

@@ -45,7 +45,8 @@ object ComputeShaderParticleSystem {
     __obj.asInstanceOf[ComputeShaderParticleSystem]
   }
   
-  extension [Self <: ComputeShaderParticleSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputeShaderParticleSystem] (val x: Self) extends AnyVal {
     
     inline def set_bufferComputeShader(value: Any): Self = StObject.set(x, "_bufferComputeShader", value.asInstanceOf[js.Any])
     

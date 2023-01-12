@@ -173,7 +173,8 @@ object ChartSeriesItem {
     __obj.asInstanceOf[ChartSeriesItem]
   }
   
-  extension [Self <: ChartSeriesItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartSeriesItem] (val x: Self) extends AnyVal {
     
     inline def setAggregate(value: String | js.Function): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     

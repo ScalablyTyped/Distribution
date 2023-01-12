@@ -108,7 +108,8 @@ object CcrShardStats {
     __obj.asInstanceOf[CcrShardStats]
   }
   
-  extension [Self <: CcrShardStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CcrShardStats] (val x: Self) extends AnyVal {
     
     inline def setBytes_read(value: long): Self = StObject.set(x, "bytes_read", value.asInstanceOf[js.Any])
     

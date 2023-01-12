@@ -17,7 +17,8 @@ object SmallTheme {
     __obj.asInstanceOf[SmallTheme]
   }
   
-  extension [Self <: SmallTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmallTheme] (val x: Self) extends AnyVal {
     
     inline def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     

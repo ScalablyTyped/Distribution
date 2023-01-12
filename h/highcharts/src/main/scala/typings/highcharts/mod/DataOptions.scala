@@ -226,7 +226,8 @@ object DataOptions {
     __obj.asInstanceOf[DataOptions]
   }
   
-  extension [Self <: DataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataOptions] (val x: Self) extends AnyVal {
     
     inline def setBeforeParse(value: /* csv */ String => String): Self = StObject.set(x, "beforeParse", js.Any.fromFunction1(value))
     

@@ -17,7 +17,8 @@ object TeamSettingsDaysOff {
     __obj.asInstanceOf[TeamSettingsDaysOff]
   }
   
-  extension [Self <: TeamSettingsDaysOff](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamSettingsDaysOff] (val x: Self) extends AnyVal {
     
     inline def setDaysOff(value: js.Array[DateRange]): Self = StObject.set(x, "daysOff", value.asInstanceOf[js.Any])
     

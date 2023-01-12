@@ -61,7 +61,8 @@ object dxLoadPanelOptions {
     __obj.asInstanceOf[dxLoadPanelOptions]
   }
   
-  extension [Self <: dxLoadPanelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxLoadPanelOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: dxLoadPanelAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

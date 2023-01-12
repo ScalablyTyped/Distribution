@@ -83,7 +83,8 @@ object distClientModelsMessageMessageMod {
       __obj.asInstanceOf[MessageSendingResponse]
     }
     
-    extension [Self <: MessageSendingResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageSendingResponse] (val x: Self) extends AnyVal {
       
       inline def setBcc(value: String): Self = StObject.set(x, "Bcc", value.asInstanceOf[js.Any])
       

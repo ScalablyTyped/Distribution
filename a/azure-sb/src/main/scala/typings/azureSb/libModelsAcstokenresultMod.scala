@@ -29,7 +29,8 @@ object libModelsAcstokenresultMod {
             __obj.asInstanceOf[AcsTokenResponse]
           }
           
-          extension [Self <: AcsTokenResponse](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: AcsTokenResponse] (val x: Self) extends AnyVal {
             
             inline def setWrapAccessToken(
               value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Dictionary<string> */ Any
@@ -52,7 +53,8 @@ object libModelsAcstokenresultMod {
             __obj.asInstanceOf[AcsTokenResult]
           }
           
-          extension [Self <: AcsTokenResult](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: AcsTokenResult] (val x: Self) extends AnyVal {
             
             inline def setParse(value: String => AcsTokenResponse): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
           }

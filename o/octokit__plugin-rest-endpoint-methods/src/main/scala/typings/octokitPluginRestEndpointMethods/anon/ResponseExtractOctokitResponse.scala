@@ -42,7 +42,8 @@ object ResponseExtractOctokitResponse {
     __obj.asInstanceOf[ResponseExtractOctokitResponse]
   }
   
-  extension [Self <: ResponseExtractOctokitResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseExtractOctokitResponse] (val x: Self) extends AnyVal {
     
     inline def setParameters(
       value: RequestParameters & (Omit[

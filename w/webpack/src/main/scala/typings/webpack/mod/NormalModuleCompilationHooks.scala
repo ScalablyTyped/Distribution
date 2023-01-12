@@ -56,7 +56,8 @@ object NormalModuleCompilationHooks {
     __obj.asInstanceOf[NormalModuleCompilationHooks]
   }
   
-  extension [Self <: NormalModuleCompilationHooks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalModuleCompilationHooks] (val x: Self) extends AnyVal {
     
     inline def setBeforeLoaders(
       value: SyncHook[

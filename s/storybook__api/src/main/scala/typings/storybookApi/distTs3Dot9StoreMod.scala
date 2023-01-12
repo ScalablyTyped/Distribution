@@ -54,7 +54,8 @@ object distTs3Dot9StoreMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setPersistence(value: none | session | String): Self = StObject.set(x, "persistence", value.asInstanceOf[js.Any])
     }
@@ -130,7 +131,8 @@ object distTs3Dot9StoreMod {
       __obj.asInstanceOf[Patch]
     }
     
-    extension [Self <: Patch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Patch] (val x: Self) extends AnyVal {
       
       inline def setCustomQueryParams(value: QueryParams): Self = StObject.set(x, "customQueryParams", value.asInstanceOf[js.Any])
       
@@ -281,7 +283,8 @@ object distTs3Dot9StoreMod {
       __obj.asInstanceOf[Upstream]
     }
     
-    extension [Self <: Upstream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Upstream] (val x: Self) extends AnyVal {
       
       inline def setGetState(value: () => State): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       

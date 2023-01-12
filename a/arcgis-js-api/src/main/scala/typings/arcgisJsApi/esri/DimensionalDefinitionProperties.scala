@@ -43,7 +43,8 @@ object DimensionalDefinitionProperties {
     __obj.asInstanceOf[DimensionalDefinitionProperties]
   }
   
-  extension [Self <: DimensionalDefinitionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionalDefinitionProperties] (val x: Self) extends AnyVal {
     
     inline def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
     

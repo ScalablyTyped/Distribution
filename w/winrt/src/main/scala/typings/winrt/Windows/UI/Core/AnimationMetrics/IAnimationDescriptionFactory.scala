@@ -15,7 +15,8 @@ object IAnimationDescriptionFactory {
     __obj.asInstanceOf[IAnimationDescriptionFactory]
   }
   
-  extension [Self <: IAnimationDescriptionFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAnimationDescriptionFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateInstance(value: (AnimationEffect, AnimationEffectTarget) => AnimationDescription): Self = StObject.set(x, "createInstance", js.Any.fromFunction2(value))
   }

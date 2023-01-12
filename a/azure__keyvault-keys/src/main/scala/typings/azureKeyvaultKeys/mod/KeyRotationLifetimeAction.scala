@@ -28,7 +28,8 @@ object KeyRotationLifetimeAction {
     __obj.asInstanceOf[KeyRotationLifetimeAction]
   }
   
-  extension [Self <: KeyRotationLifetimeAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyRotationLifetimeAction] (val x: Self) extends AnyVal {
     
     inline def setAction(value: KeyRotationPolicyAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

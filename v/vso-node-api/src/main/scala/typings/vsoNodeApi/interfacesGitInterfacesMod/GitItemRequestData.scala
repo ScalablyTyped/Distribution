@@ -38,7 +38,8 @@ object GitItemRequestData {
     __obj.asInstanceOf[GitItemRequestData]
   }
   
-  extension [Self <: GitItemRequestData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitItemRequestData] (val x: Self) extends AnyVal {
     
     inline def setIncludeContentMetadata(value: Boolean): Self = StObject.set(x, "includeContentMetadata", value.asInstanceOf[js.Any])
     

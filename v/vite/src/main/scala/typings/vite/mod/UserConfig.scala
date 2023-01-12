@@ -178,7 +178,8 @@ object UserConfig {
     __obj.asInstanceOf[UserConfig]
   }
   
-  extension [Self <: UserConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserConfig] (val x: Self) extends AnyVal {
     
     inline def setAppType(value: AppType): Self = StObject.set(x, "appType", value.asInstanceOf[js.Any])
     

@@ -462,7 +462,8 @@ object anon {
       __obj.asInstanceOf[PartialColorPickerBasePro]
     }
     
-    extension [Self <: PartialColorPickerBasePro](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialColorPickerBasePro] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1532,7 +1533,8 @@ object anon {
       __obj.asInstanceOf[PartialColorPickerBaseProAbout]
     }
     
-    extension [Self <: PartialColorPickerBaseProAbout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialColorPickerBaseProAbout] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -2602,7 +2604,8 @@ object anon {
       __obj.asInstanceOf[PartialColorPickerBaseProAccessKey]
     }
     
-    extension [Self <: PartialColorPickerBaseProAccessKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialColorPickerBaseProAccessKey] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -3672,7 +3675,8 @@ object anon {
       __obj.asInstanceOf[PartialColorPickerBaseProAriaactivedescendant]
     }
     
-    extension [Self <: PartialColorPickerBaseProAriaactivedescendant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialColorPickerBaseProAriaactivedescendant] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -4742,7 +4746,8 @@ object anon {
       __obj.asInstanceOf[PartialColorPickerBaseProAriaatomic]
     }
     
-    extension [Self <: PartialColorPickerBaseProAriaatomic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialColorPickerBaseProAriaatomic] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -5812,7 +5817,8 @@ object anon {
       __obj.asInstanceOf[PartialColorPickerBaseProAriaautocomplete]
     }
     
-    extension [Self <: PartialColorPickerBaseProAriaautocomplete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialColorPickerBaseProAriaautocomplete] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -6882,7 +6888,8 @@ object anon {
       __obj.asInstanceOf[PartialColorPickerBaseProAriabusy]
     }
     
-    extension [Self <: PartialColorPickerBaseProAriabusy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialColorPickerBaseProAriabusy] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

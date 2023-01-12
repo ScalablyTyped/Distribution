@@ -70,7 +70,8 @@ object libGeometryBaseMod {
       __obj.asInstanceOf[GeomHelper]
     }
     
-    extension [Self <: GeomHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeomHelper] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Record[String, Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

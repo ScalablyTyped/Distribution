@@ -17,7 +17,8 @@ object BezierCurve {
     __obj.asInstanceOf[BezierCurve]
   }
   
-  extension [Self <: BezierCurve](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BezierCurve] (val x: Self) extends AnyVal {
     
     inline def setB(value: js.Tuple3[Position, Position2D, Position2D]): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
   }

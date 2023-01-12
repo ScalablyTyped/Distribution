@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Base]
     }
     
-    extension [Self <: Base](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Clientsecret]
     }
     
-    extension [Self <: Clientsecret](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Clientsecret] (val x: Self) extends AnyVal {
       
       inline def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object anon {
       __obj.asInstanceOf[Complete]
     }
     
-    extension [Self <: Complete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Complete] (val x: Self) extends AnyVal {
       
       inline def setBase(value: PaymentRequestButtonStyle): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -134,7 +137,8 @@ object anon {
       __obj.asInstanceOf[Empty]
     }
     
-    extension [Self <: Empty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Empty] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -179,7 +183,8 @@ object anon {
       __obj.asInstanceOf[Invalid]
     }
     
-    extension [Self <: Invalid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Invalid] (val x: Self) extends AnyVal {
       
       inline def setBase(value: StyleAttributes): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -210,7 +215,8 @@ object anon {
       __obj.asInstanceOf[PreventDefault]
     }
     
-    extension [Self <: PreventDefault](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreventDefault] (val x: Self) extends AnyVal {
       
       inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     }

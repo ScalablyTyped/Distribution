@@ -18,7 +18,8 @@ object DeleteTapeOutput {
     __obj.asInstanceOf[DeleteTapeOutput]
   }
   
-  extension [Self <: DeleteTapeOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTapeOutput] (val x: Self) extends AnyVal {
     
     inline def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
     

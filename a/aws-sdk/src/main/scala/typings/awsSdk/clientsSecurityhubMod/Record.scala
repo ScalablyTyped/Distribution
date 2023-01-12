@@ -23,7 +23,8 @@ object Record {
     __obj.asInstanceOf[Record]
   }
   
-  extension [Self <: Record](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
     
     inline def setJsonPath(value: NonEmptyString): Self = StObject.set(x, "JsonPath", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object EventMediaTranscodingStat {
     __obj.asInstanceOf[EventMediaTranscodingStat]
   }
   
-  extension [Self <: EventMediaTranscodingStat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventMediaTranscodingStat] (val x: Self) extends AnyVal {
     
     inline def setBinName(value: String): Self = StObject.set(x, "binName", value.asInstanceOf[js.Any])
     

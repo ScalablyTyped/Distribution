@@ -37,7 +37,8 @@ object PartialStyleRulesStepIcon {
     __obj.asInstanceOf[PartialStyleRulesStepIcon]
   }
   
-  extension [Self <: PartialStyleRulesStepIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesStepIcon] (val x: Self) extends AnyVal {
     
     inline def setActive(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

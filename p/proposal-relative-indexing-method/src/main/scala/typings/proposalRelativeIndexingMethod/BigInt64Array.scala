@@ -20,7 +20,8 @@ object BigInt64Array {
     __obj.asInstanceOf[BigInt64Array]
   }
   
-  extension [Self <: BigInt64Array](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BigInt64Array] (val x: Self) extends AnyVal {
     
     inline def setAt(value: Double => js.UndefOr[Double]): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
   }

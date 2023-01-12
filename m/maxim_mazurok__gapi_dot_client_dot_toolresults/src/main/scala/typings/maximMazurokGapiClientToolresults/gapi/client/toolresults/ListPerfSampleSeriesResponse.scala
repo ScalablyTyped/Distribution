@@ -16,7 +16,8 @@ object ListPerfSampleSeriesResponse {
     __obj.asInstanceOf[ListPerfSampleSeriesResponse]
   }
   
-  extension [Self <: ListPerfSampleSeriesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPerfSampleSeriesResponse] (val x: Self) extends AnyVal {
     
     inline def setPerfSampleSeries(value: js.Array[PerfSampleSeries]): Self = StObject.set(x, "perfSampleSeries", value.asInstanceOf[js.Any])
     

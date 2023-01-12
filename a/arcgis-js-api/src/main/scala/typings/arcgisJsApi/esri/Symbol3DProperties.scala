@@ -29,7 +29,8 @@ object Symbol3DProperties {
     __obj.asInstanceOf[Symbol3DProperties]
   }
   
-  extension [Self <: Symbol3DProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Symbol3DProperties] (val x: Self) extends AnyVal {
     
     inline def setStyleOrigin(value: StyleOriginProperties): Self = StObject.set(x, "styleOrigin", value.asInstanceOf[js.Any])
     

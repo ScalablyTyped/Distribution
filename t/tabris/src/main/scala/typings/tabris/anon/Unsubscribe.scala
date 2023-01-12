@@ -15,7 +15,8 @@ object Unsubscribe {
     __obj.asInstanceOf[Unsubscribe]
   }
   
-  extension [Self <: Unsubscribe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Unsubscribe] (val x: Self) extends AnyVal {
     
     inline def setUnsubscribe(value: js.Function): Self = StObject.set(x, "unsubscribe", value.asInstanceOf[js.Any])
   }

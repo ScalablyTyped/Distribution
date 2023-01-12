@@ -17,7 +17,8 @@ object FullScreenToggleProps {
     __obj.asInstanceOf[FullScreenToggleProps]
   }
   
-  extension [Self <: FullScreenToggleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullScreenToggleProps] (val x: Self) extends AnyVal {
     
     inline def setActions(value: Any): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
   }

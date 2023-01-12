@@ -53,7 +53,8 @@ object ILocaleDateTimeFormatDescriptor {
     __obj.asInstanceOf[ILocaleDateTimeFormatDescriptor]
   }
   
-  extension [Self <: ILocaleDateTimeFormatDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILocaleDateTimeFormatDescriptor] (val x: Self) extends AnyVal {
     
     inline def setAMPMS(value: js.Array[String]): Self = StObject.set(x, "AMPMS", value.asInstanceOf[js.Any])
     

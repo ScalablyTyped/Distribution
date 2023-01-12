@@ -62,7 +62,8 @@ object PickImplreversePartialPic {
     __obj.asInstanceOf[PickImplreversePartialPic]
   }
   
-  extension [Self <: PickImplreversePartialPic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplreversePartialPic] (val x: Self) extends AnyVal {
     
     inline def setAllowRepeats(value: Boolean): Self = StObject.set(x, "allowRepeats", value.asInstanceOf[js.Any])
     

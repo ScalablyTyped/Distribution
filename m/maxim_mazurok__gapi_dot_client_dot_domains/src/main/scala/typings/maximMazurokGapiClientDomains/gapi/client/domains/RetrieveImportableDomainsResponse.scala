@@ -19,7 +19,8 @@ object RetrieveImportableDomainsResponse {
     __obj.asInstanceOf[RetrieveImportableDomainsResponse]
   }
   
-  extension [Self <: RetrieveImportableDomainsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetrieveImportableDomainsResponse] (val x: Self) extends AnyVal {
     
     inline def setDomains(value: js.Array[Domain]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
     

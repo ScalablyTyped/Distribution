@@ -30,7 +30,8 @@ object IsDateOnly {
     __obj.asInstanceOf[IsDateOnly]
   }
   
-  extension [Self <: IsDateOnly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsDateOnly] (val x: Self) extends AnyVal {
     
     inline def setIsDateOnly(value: Boolean): Self = StObject.set(x, "isDateOnly", value.asInstanceOf[js.Any])
     

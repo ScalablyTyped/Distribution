@@ -23,7 +23,8 @@ object GetSiteAddressInput {
     __obj.asInstanceOf[GetSiteAddressInput]
   }
   
-  extension [Self <: GetSiteAddressInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSiteAddressInput] (val x: Self) extends AnyVal {
     
     inline def setAddressType(value: AddressType): Self = StObject.set(x, "AddressType", value.asInstanceOf[js.Any])
     

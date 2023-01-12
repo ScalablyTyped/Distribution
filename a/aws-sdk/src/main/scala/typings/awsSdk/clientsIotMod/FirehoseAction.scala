@@ -33,7 +33,8 @@ object FirehoseAction {
     __obj.asInstanceOf[FirehoseAction]
   }
   
-  extension [Self <: FirehoseAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirehoseAction] (val x: Self) extends AnyVal {
     
     inline def setBatchMode(value: BatchMode): Self = StObject.set(x, "batchMode", value.asInstanceOf[js.Any])
     

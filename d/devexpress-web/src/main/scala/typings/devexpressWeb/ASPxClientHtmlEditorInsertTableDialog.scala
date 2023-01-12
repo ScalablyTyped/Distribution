@@ -56,7 +56,8 @@ object ASPxClientHtmlEditorInsertTableDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertTableDialog]
   }
   
-  extension [Self <: ASPxClientHtmlEditorInsertTableDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorInsertTableDialog] (val x: Self) extends AnyVal {
     
     inline def setGetColumnCountSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetColumnCountSpinEdit", js.Any.fromFunction0(value))
     

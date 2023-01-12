@@ -23,7 +23,8 @@ object TemplateLink {
     __obj.asInstanceOf[TemplateLink]
   }
   
-  extension [Self <: TemplateLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateLink] (val x: Self) extends AnyVal {
     
     inline def setContentVersion(value: String): Self = StObject.set(x, "contentVersion", value.asInstanceOf[js.Any])
     

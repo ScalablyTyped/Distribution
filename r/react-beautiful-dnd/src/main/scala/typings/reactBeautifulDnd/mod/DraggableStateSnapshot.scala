@@ -30,7 +30,8 @@ object DraggableStateSnapshot {
     __obj.asInstanceOf[DraggableStateSnapshot]
   }
   
-  extension [Self <: DraggableStateSnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggableStateSnapshot] (val x: Self) extends AnyVal {
     
     inline def setCombineTargetFor(value: DraggableId): Self = StObject.set(x, "combineTargetFor", value.asInstanceOf[js.Any])
     

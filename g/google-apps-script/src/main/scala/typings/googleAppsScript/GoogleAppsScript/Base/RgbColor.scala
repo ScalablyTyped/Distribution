@@ -33,7 +33,8 @@ object RgbColor {
     __obj.asInstanceOf[RgbColor]
   }
   
-  extension [Self <: RgbColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RgbColor] (val x: Self) extends AnyVal {
     
     inline def setAsHexString(value: () => String): Self = StObject.set(x, "asHexString", js.Any.fromFunction0(value))
     

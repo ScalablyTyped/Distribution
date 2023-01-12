@@ -25,7 +25,8 @@ object pg {
     __obj.asInstanceOf[pg]
   }
   
-  extension [Self <: pg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: pg] (val x: Self) extends AnyVal {
     
     inline def setService(value: String | (js.Function1[/* params */ Any, String])): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     

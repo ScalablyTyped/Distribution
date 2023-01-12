@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[ClassName]
     }
     
-    extension [Self <: ClassName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordThemeKeystri]
     }
     
-    extension [Self <: PartialRecordThemeKeystri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordThemeKeystri] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: String | CSSProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

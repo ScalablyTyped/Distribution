@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object anon {
       __obj.asInstanceOf[PartialSpinnerOptions]
     }
     
-    extension [Self <: PartialSpinnerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSpinnerOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object MapLibreEvent {
     __obj.asInstanceOf[MapLibreEvent[TOrig]]
   }
   
-  extension [Self <: MapLibreEvent[?], TOrig](x: Self & MapLibreEvent[TOrig]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapLibreEvent[?], TOrig] (val x: Self & MapLibreEvent[TOrig]) extends AnyVal {
     
     inline def setOriginalEvent(value: TOrig): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     

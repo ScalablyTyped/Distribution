@@ -17,7 +17,8 @@ object SellListResponse {
     __obj.asInstanceOf[SellListResponse]
   }
   
-  extension [Self <: SellListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SellListResponse] (val x: Self) extends AnyVal {
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     

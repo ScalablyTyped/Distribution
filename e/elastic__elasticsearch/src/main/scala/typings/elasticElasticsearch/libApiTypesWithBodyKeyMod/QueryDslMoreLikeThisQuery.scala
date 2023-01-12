@@ -54,7 +54,8 @@ object QueryDslMoreLikeThisQuery {
     __obj.asInstanceOf[QueryDslMoreLikeThisQuery]
   }
   
-  extension [Self <: QueryDslMoreLikeThisQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslMoreLikeThisQuery] (val x: Self) extends AnyVal {
     
     inline def setAnalyzer(value: String): Self = StObject.set(x, "analyzer", value.asInstanceOf[js.Any])
     

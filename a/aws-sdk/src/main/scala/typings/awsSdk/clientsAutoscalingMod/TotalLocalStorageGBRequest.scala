@@ -23,7 +23,8 @@ object TotalLocalStorageGBRequest {
     __obj.asInstanceOf[TotalLocalStorageGBRequest]
   }
   
-  extension [Self <: TotalLocalStorageGBRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TotalLocalStorageGBRequest] (val x: Self) extends AnyVal {
     
     inline def setMax(value: NullablePositiveDouble): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     

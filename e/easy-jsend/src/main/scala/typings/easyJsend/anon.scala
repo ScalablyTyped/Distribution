@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Limit]
     }
     
-    extension [Self <: Limit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Partial]
     }
     
-    extension [Self <: Partial](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Partial] (val x: Self) extends AnyVal {
       
       inline def setPartial(value: Boolean): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
     }

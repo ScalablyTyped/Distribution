@@ -22,7 +22,8 @@ object SyncDocumentMetadata {
     __obj.asInstanceOf[SyncDocumentMetadata]
   }
   
-  extension [Self <: SyncDocumentMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncDocumentMetadata] (val x: Self) extends AnyVal {
     
     inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     

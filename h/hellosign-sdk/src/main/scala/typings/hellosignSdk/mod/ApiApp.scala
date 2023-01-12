@@ -47,7 +47,8 @@ object ApiApp {
     __obj.asInstanceOf[ApiApp]
   }
   
-  extension [Self <: ApiApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiApp] (val x: Self) extends AnyVal {
     
     inline def setCallback_url(value: String): Self = StObject.set(x, "callback_url", value.asInstanceOf[js.Any])
     

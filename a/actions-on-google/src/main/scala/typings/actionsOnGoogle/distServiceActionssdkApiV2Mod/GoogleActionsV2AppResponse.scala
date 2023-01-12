@@ -65,7 +65,8 @@ object GoogleActionsV2AppResponse {
     __obj.asInstanceOf[GoogleActionsV2AppResponse]
   }
   
-  extension [Self <: GoogleActionsV2AppResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2AppResponse] (val x: Self) extends AnyVal {
     
     inline def setConversationToken(value: String): Self = StObject.set(x, "conversationToken", value.asInstanceOf[js.Any])
     

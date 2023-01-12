@@ -25,7 +25,8 @@ object ElementaryStream {
     __obj.asInstanceOf[ElementaryStream]
   }
   
-  extension [Self <: ElementaryStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementaryStream] (val x: Self) extends AnyVal {
     
     inline def setAudioStream(value: AudioStream): Self = StObject.set(x, "audioStream", value.asInstanceOf[js.Any])
     

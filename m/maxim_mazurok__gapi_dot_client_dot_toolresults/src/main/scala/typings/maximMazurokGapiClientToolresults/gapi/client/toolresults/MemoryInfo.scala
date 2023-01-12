@@ -19,7 +19,8 @@ object MemoryInfo {
     __obj.asInstanceOf[MemoryInfo]
   }
   
-  extension [Self <: MemoryInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemoryInfo] (val x: Self) extends AnyVal {
     
     inline def setMemoryCapInKibibyte(value: String): Self = StObject.set(x, "memoryCapInKibibyte", value.asInstanceOf[js.Any])
     

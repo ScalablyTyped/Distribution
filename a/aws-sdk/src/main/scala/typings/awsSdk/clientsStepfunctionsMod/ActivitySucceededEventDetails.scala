@@ -23,7 +23,8 @@ object ActivitySucceededEventDetails {
     __obj.asInstanceOf[ActivitySucceededEventDetails]
   }
   
-  extension [Self <: ActivitySucceededEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivitySucceededEventDetails] (val x: Self) extends AnyVal {
     
     inline def setOutput(value: SensitiveData): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     

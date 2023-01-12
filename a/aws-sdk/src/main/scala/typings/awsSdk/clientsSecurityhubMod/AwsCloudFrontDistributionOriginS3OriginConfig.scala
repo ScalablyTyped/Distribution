@@ -18,7 +18,8 @@ object AwsCloudFrontDistributionOriginS3OriginConfig {
     __obj.asInstanceOf[AwsCloudFrontDistributionOriginS3OriginConfig]
   }
   
-  extension [Self <: AwsCloudFrontDistributionOriginS3OriginConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCloudFrontDistributionOriginS3OriginConfig] (val x: Self) extends AnyVal {
     
     inline def setOriginAccessIdentity(value: NonEmptyString): Self = StObject.set(x, "OriginAccessIdentity", value.asInstanceOf[js.Any])
     

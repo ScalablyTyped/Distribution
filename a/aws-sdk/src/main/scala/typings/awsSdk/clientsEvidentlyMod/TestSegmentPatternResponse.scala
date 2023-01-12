@@ -19,7 +19,8 @@ object TestSegmentPatternResponse {
     __obj.asInstanceOf[TestSegmentPatternResponse]
   }
   
-  extension [Self <: TestSegmentPatternResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestSegmentPatternResponse] (val x: Self) extends AnyVal {
     
     inline def setMatch(value: Boolean): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
   }

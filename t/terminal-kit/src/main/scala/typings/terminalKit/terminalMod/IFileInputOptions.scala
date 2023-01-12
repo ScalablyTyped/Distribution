@@ -17,7 +17,8 @@ object IFileInputOptions {
     __obj.asInstanceOf[IFileInputOptions]
   }
   
-  extension [Self <: IFileInputOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileInputOptions] (val x: Self) extends AnyVal {
     
     inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
   }

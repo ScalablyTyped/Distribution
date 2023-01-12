@@ -81,7 +81,8 @@ object RefinementInfo {
     __obj.asInstanceOf[RefinementInfo]
   }
   
-  extension [Self <: RefinementInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefinementInfo] (val x: Self) extends AnyVal {
     
     inline def setCulture(value: String): Self = StObject.set(x, "Culture", value.asInstanceOf[js.Any])
     

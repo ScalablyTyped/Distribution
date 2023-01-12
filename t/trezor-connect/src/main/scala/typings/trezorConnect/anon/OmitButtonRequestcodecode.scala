@@ -26,7 +26,8 @@ object OmitButtonRequestcodecode {
     __obj.asInstanceOf[OmitButtonRequestcodecode]
   }
   
-  extension [Self <: OmitButtonRequestcodecode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitButtonRequestcodecode] (val x: Self) extends AnyVal {
     
     inline def setCode(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: trezor-connect.trezor-connect/lib/typescript/trezor/protobuf.ButtonRequest['code'] */ js.Any) | ButtonRequest_FirmwareUpdate

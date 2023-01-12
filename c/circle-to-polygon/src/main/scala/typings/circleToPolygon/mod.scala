@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[PolygonConfig]
     }
     
-    extension [Self <: PolygonConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolygonConfig] (val x: Self) extends AnyVal {
       
       inline def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
       

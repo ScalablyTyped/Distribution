@@ -38,7 +38,8 @@ object XDataPilotTable {
     __obj.asInstanceOf[XDataPilotTable]
   }
   
-  extension [Self <: XDataPilotTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataPilotTable] (val x: Self) extends AnyVal {
     
     inline def setGetOutputRange(value: () => CellRangeAddress): Self = StObject.set(x, "getOutputRange", js.Any.fromFunction0(value))
     

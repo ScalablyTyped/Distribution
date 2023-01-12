@@ -79,7 +79,8 @@ object RecursivePartialPartialAvAvatarStyle {
     __obj.asInstanceOf[RecursivePartialPartialAvAvatarStyle]
   }
   
-  extension [Self <: RecursivePartialPartialAvAvatarStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecursivePartialPartialAvAvatarStyle] (val x: Self) extends AnyVal {
     
     inline def setActiveOpacity(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     

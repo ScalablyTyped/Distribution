@@ -30,7 +30,8 @@ object distTypesLoadSsoSessionDataMod {
       __obj.asInstanceOf[SsoSessionInit]
     }
     
-    extension [Self <: SsoSessionInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SsoSessionInit] (val x: Self) extends AnyVal {
       
       inline def setConfigFilepath(value: String): Self = StObject.set(x, "configFilepath", value.asInstanceOf[js.Any])
       

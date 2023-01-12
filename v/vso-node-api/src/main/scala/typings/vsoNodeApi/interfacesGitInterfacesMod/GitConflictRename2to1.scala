@@ -51,7 +51,8 @@ object GitConflictRename2to1 {
     __obj.asInstanceOf[GitConflictRename2to1]
   }
   
-  extension [Self <: GitConflictRename2to1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitConflictRename2to1] (val x: Self) extends AnyVal {
     
     inline def setResolution(value: GitResolutionPathConflict): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     

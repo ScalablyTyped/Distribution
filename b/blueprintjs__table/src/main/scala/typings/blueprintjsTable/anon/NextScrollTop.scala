@@ -17,7 +17,8 @@ object NextScrollTop {
     __obj.asInstanceOf[NextScrollTop]
   }
   
-  extension [Self <: NextScrollTop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NextScrollTop] (val x: Self) extends AnyVal {
     
     inline def setNextScrollLeft(value: Double): Self = StObject.set(x, "nextScrollLeft", value.asInstanceOf[js.Any])
     

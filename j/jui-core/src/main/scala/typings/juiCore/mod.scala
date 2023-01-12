@@ -128,7 +128,8 @@ object mod {
       __obj.asInstanceOf[UICollection]
     }
     
-    extension [Self <: UICollection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UICollection] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     }
@@ -226,7 +227,8 @@ object mod {
       __obj.asInstanceOf[UICore]
     }
     
-    extension [Self <: UICore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UICore] (val x: Self) extends AnyVal {
       
       inline def setAddValid(value: (String, js.Array[Any]) => Unit): Self = StObject.set(x, "addValid", js.Any.fromFunction2(value))
       
@@ -290,7 +292,8 @@ object mod {
       __obj.asInstanceOf[UIEvent]
     }
     
-    extension [Self <: UIEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIEvent] (val x: Self) extends AnyVal {
       
       inline def setFind(value: Any => JQuery[HTMLElement]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     }
@@ -523,7 +526,8 @@ object mod {
       __obj.asInstanceOf[UtilBase64]
     }
     
-    extension [Self <: UtilBase64](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UtilBase64] (val x: Self) extends AnyVal {
       
       inline def setDecode(value: String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       
@@ -642,7 +646,8 @@ object mod {
       __obj.asInstanceOf[UtilColor]
     }
     
-    extension [Self <: UtilColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UtilColor] (val x: Self) extends AnyVal {
       
       inline def setDarken(value: (String, Double) => String): Self = StObject.set(x, "darken", js.Any.fromFunction2(value))
       
@@ -687,7 +692,8 @@ object mod {
       __obj.asInstanceOf[UtilKeyParser]
     }
     
-    extension [Self <: UtilKeyParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UtilKeyParser] (val x: Self) extends AnyVal {
       
       inline def setChangeIndex(value: (String, String, String) => String): Self = StObject.set(x, "changeIndex", js.Any.fromFunction3(value))
       
@@ -790,7 +796,8 @@ object mod {
       __obj.asInstanceOf[UtilMath]
     }
     
-    extension [Self <: UtilMath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UtilMath] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "angle", js.Any.fromFunction4(value))
       

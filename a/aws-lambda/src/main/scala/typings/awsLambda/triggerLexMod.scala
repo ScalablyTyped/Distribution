@@ -84,7 +84,8 @@ object triggerLexMod {
       __obj.asInstanceOf[LexDialogActionBase]
     }
     
-    extension [Self <: LexDialogActionBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LexDialogActionBase] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: Content): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object triggerLexMod {
       __obj.asInstanceOf[LexDialogActionClose]
     }
     
-    extension [Self <: LexDialogActionClose](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LexDialogActionClose] (val x: Self) extends AnyVal {
       
       inline def setFulfillmentState(value: Fulfilled | Failed_): Self = StObject.set(x, "fulfillmentState", value.asInstanceOf[js.Any])
       
@@ -144,7 +146,8 @@ object triggerLexMod {
       __obj.asInstanceOf[LexDialogActionConfirmIntent]
     }
     
-    extension [Self <: LexDialogActionConfirmIntent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LexDialogActionConfirmIntent] (val x: Self) extends AnyVal {
       
       inline def setIntentName(value: String): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
       
@@ -170,7 +173,8 @@ object triggerLexMod {
       __obj.asInstanceOf[LexDialogActionDelegate]
     }
     
-    extension [Self <: LexDialogActionDelegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LexDialogActionDelegate] (val x: Self) extends AnyVal {
       
       inline def setSlots(value: StringDictionary[String | Null]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
@@ -194,7 +198,8 @@ object triggerLexMod {
       __obj.asInstanceOf[LexDialogActionElicitIntent]
     }
     
-    extension [Self <: LexDialogActionElicitIntent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LexDialogActionElicitIntent] (val x: Self) extends AnyVal {
       
       inline def setType(value: ElicitIntent): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -222,7 +227,8 @@ object triggerLexMod {
       __obj.asInstanceOf[LexDialogActionElicitSlot]
     }
     
-    extension [Self <: LexDialogActionElicitSlot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LexDialogActionElicitSlot] (val x: Self) extends AnyVal {
       
       inline def setIntentName(value: String): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
       
@@ -269,7 +275,8 @@ object triggerLexMod {
       __obj.asInstanceOf[LexEvent]
     }
     
-    extension [Self <: LexEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LexEvent] (val x: Self) extends AnyVal {
       
       inline def setBot(value: Alias): Self = StObject.set(x, "bot", value.asInstanceOf[js.Any])
       
@@ -324,7 +331,8 @@ object triggerLexMod {
       __obj.asInstanceOf[LexGenericAttachment]
     }
     
-    extension [Self <: LexGenericAttachment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LexGenericAttachment] (val x: Self) extends AnyVal {
       
       inline def setAttachmentLinkUrl(value: String): Self = StObject.set(x, "attachmentLinkUrl", value.asInstanceOf[js.Any])
       
@@ -355,7 +363,8 @@ object triggerLexMod {
       __obj.asInstanceOf[LexResult]
     }
     
-    extension [Self <: LexResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LexResult] (val x: Self) extends AnyVal {
       
       inline def setDialogAction(value: LexDialogAction): Self = StObject.set(x, "dialogAction", value.asInstanceOf[js.Any])
       
@@ -394,7 +403,8 @@ object triggerLexMod {
       __obj.asInstanceOf[LexSlotDetail]
     }
     
-    extension [Self <: LexSlotDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LexSlotDetail] (val x: Self) extends AnyVal {
       
       inline def setOriginalValue(value: String): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
       
@@ -423,7 +433,8 @@ object triggerLexMod {
       __obj.asInstanceOf[LexSlotResolution]
     }
     
-    extension [Self <: LexSlotResolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LexSlotResolution] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

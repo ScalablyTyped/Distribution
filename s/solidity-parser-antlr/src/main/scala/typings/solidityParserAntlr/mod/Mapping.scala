@@ -25,7 +25,8 @@ object Mapping {
     __obj.asInstanceOf[Mapping]
   }
   
-  extension [Self <: Mapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mapping] (val x: Self) extends AnyVal {
     
     inline def setKeyType(value: ElementaryTypeName): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
     

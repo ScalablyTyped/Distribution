@@ -24,7 +24,8 @@ object libResolverTypesMod {
       __obj.asInstanceOf[PreferOrder]
     }
     
-    extension [Self <: PreferOrder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreferOrder] (val x: Self) extends AnyVal {
       
       inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object libResolverTypesMod {
       __obj.asInstanceOf[ResolveAsset]
     }
     
-    extension [Self <: ResolveAsset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveAsset] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object libResolverTypesMod {
       __obj.asInstanceOf[ResolveURLParser]
     }
     
-    extension [Self <: ResolveURLParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveURLParser] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Record[String, Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -115,7 +118,8 @@ object libResolverTypesMod {
       __obj.asInstanceOf[ResolverBundle]
     }
     
-    extension [Self <: ResolverBundle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolverBundle] (val x: Self) extends AnyVal {
       
       inline def setAssets(value: ResolverAssetsArray | ResolverAssetsObject): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
@@ -136,7 +140,8 @@ object libResolverTypesMod {
       __obj.asInstanceOf[ResolverManifest]
     }
     
-    extension [Self <: ResolverManifest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolverManifest] (val x: Self) extends AnyVal {
       
       inline def setBundles(value: js.Array[ResolverBundle]): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
       

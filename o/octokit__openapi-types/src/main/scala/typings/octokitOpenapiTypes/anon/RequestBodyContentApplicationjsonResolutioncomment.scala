@@ -23,7 +23,8 @@ object RequestBodyContentApplicationjsonResolutioncomment {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonResolutioncomment]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonResolutioncomment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonResolutioncomment] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathAlertnumber): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

@@ -138,7 +138,8 @@ object ClinicalImpression {
     __obj.asInstanceOf[ClinicalImpression]
   }
   
-  extension [Self <: ClinicalImpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClinicalImpression] (val x: Self) extends AnyVal {
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

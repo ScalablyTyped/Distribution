@@ -150,7 +150,8 @@ object libComponentsCoachmarkPositioningContainerPositioningContainerMod {
       __obj.asInstanceOf[IPositioningContainerState]
     }
     
-    extension [Self <: IPositioningContainerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPositioningContainerState] (val x: Self) extends AnyVal {
       
       inline def setHeightOffset(value: Double): Self = StObject.set(x, "heightOffset", value.asInstanceOf[js.Any])
       

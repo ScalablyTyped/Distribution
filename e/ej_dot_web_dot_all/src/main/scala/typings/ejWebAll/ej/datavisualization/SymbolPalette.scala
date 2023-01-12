@@ -51,7 +51,8 @@ object SymbolPalette {
       __obj.asInstanceOf[DefaultSettings]
     }
     
-    extension [Self <: DefaultSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultSettings] (val x: Self) extends AnyVal {
       
       inline def setConnector(value: Any): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
       
@@ -145,7 +146,8 @@ object SymbolPalette {
       __obj.asInstanceOf[typings.ejWebAll.ej.datavisualization.SymbolPalette.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.datavisualization.SymbolPalette.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.datavisualization.SymbolPalette.Model] (val x: Self) extends AnyVal {
       
       inline def setAllowDrag(value: Boolean): Self = StObject.set(x, "allowDrag", value.asInstanceOf[js.Any])
       
@@ -235,7 +237,8 @@ object SymbolPalette {
       __obj.asInstanceOf[Palette]
     }
     
-    extension [Self <: Palette](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Palette] (val x: Self) extends AnyVal {
       
       inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
@@ -270,7 +273,8 @@ object SymbolPalette {
       __obj.asInstanceOf[SelectionChangeEventArgs]
     }
     
-    extension [Self <: SelectionChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setChangeType(value: String): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
       

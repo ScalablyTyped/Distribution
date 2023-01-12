@@ -84,7 +84,8 @@ object Renderer {
         __obj.asInstanceOf[SnapshotState]
       }
       
-      extension [Self <: SnapshotState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SnapshotState] (val x: Self) extends AnyVal {
         
         inline def setBufferHeight(value: Double): Self = StObject.set(x, "bufferHeight", value.asInstanceOf[js.Any])
         
@@ -157,7 +158,8 @@ object Renderer {
         __obj.asInstanceOf[RenderTargetConfig]
       }
       
-      extension [Self <: RenderTargetConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenderTargetConfig] (val x: Self) extends AnyVal {
         
         inline def setAutoClear(value: Boolean): Self = StObject.set(x, "autoClear", value.asInstanceOf[js.Any])
         
@@ -193,7 +195,8 @@ object Renderer {
         __obj.asInstanceOf[WebGLConst]
       }
       
-      extension [Self <: WebGLConst](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WebGLConst] (val x: Self) extends AnyVal {
         
         inline def setEnum(value: GLenum): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
         
@@ -254,7 +257,8 @@ object Renderer {
         __obj.asInstanceOf[WebGLPipelineAttribute]
       }
       
-      extension [Self <: WebGLPipelineAttribute](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WebGLPipelineAttribute] (val x: Self) extends AnyVal {
         
         inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
         
@@ -302,7 +306,8 @@ object Renderer {
         __obj.asInstanceOf[WebGLPipelineAttributeConfig]
       }
       
-      extension [Self <: WebGLPipelineAttributeConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WebGLPipelineAttributeConfig] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -385,7 +390,8 @@ object Renderer {
         __obj.asInstanceOf[WebGLPipelineConfig]
       }
       
-      extension [Self <: WebGLPipelineConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WebGLPipelineConfig] (val x: Self) extends AnyVal {
         
         inline def setAttributes(value: js.Array[WebGLPipelineAttributeConfig]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
         
@@ -472,7 +478,8 @@ object Renderer {
         __obj.asInstanceOf[WebGLPipelineShaderConfig]
       }
       
-      extension [Self <: WebGLPipelineShaderConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WebGLPipelineShaderConfig] (val x: Self) extends AnyVal {
         
         inline def setAttributes(value: js.Array[WebGLPipelineAttributeConfig]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
         
@@ -533,7 +540,8 @@ object Renderer {
         __obj.asInstanceOf[WebGLPipelineUniformsConfig]
       }
       
-      extension [Self <: WebGLPipelineUniformsConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WebGLPipelineUniformsConfig] (val x: Self) extends AnyVal {
         
         inline def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
         
@@ -581,7 +589,8 @@ object Renderer {
         __obj.asInstanceOf[WebGLTextureCompression]
       }
       
-      extension [Self <: WebGLTextureCompression](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WebGLTextureCompression] (val x: Self) extends AnyVal {
         
         inline def setETC1(value: js.Object): Self = StObject.set(x, "ETC1", value.asInstanceOf[js.Any])
         

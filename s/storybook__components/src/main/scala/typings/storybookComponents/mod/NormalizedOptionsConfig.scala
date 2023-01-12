@@ -15,7 +15,8 @@ object NormalizedOptionsConfig {
     __obj.asInstanceOf[NormalizedOptionsConfig]
   }
   
-  extension [Self <: NormalizedOptionsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizedOptionsConfig] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: OptionsObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }

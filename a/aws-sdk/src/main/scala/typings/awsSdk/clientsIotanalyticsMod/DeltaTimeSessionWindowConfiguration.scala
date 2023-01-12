@@ -18,7 +18,8 @@ object DeltaTimeSessionWindowConfiguration {
     __obj.asInstanceOf[DeltaTimeSessionWindowConfiguration]
   }
   
-  extension [Self <: DeltaTimeSessionWindowConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeltaTimeSessionWindowConfiguration] (val x: Self) extends AnyVal {
     
     inline def setTimeoutInMinutes(value: SessionTimeoutInMinutes): Self = StObject.set(x, "timeoutInMinutes", value.asInstanceOf[js.Any])
   }

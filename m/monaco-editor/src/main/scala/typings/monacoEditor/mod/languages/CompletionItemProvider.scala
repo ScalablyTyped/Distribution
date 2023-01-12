@@ -39,7 +39,8 @@ object CompletionItemProvider {
     __obj.asInstanceOf[CompletionItemProvider]
   }
   
-  extension [Self <: CompletionItemProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionItemProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideCompletionItems(
       value: (ITextModel, Position, CompletionContext, CancellationToken) => ProviderResult[CompletionList]

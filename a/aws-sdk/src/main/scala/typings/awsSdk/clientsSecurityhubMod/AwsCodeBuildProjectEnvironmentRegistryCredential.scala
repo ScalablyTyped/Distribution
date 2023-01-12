@@ -23,7 +23,8 @@ object AwsCodeBuildProjectEnvironmentRegistryCredential {
     __obj.asInstanceOf[AwsCodeBuildProjectEnvironmentRegistryCredential]
   }
   
-  extension [Self <: AwsCodeBuildProjectEnvironmentRegistryCredential](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCodeBuildProjectEnvironmentRegistryCredential] (val x: Self) extends AnyVal {
     
     inline def setCredential(value: NonEmptyString): Self = StObject.set(x, "Credential", value.asInstanceOf[js.Any])
     

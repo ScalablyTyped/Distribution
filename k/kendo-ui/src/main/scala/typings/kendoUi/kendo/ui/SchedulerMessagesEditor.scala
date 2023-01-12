@@ -39,7 +39,8 @@ object SchedulerMessagesEditor {
     __obj.asInstanceOf[SchedulerMessagesEditor]
   }
   
-  extension [Self <: SchedulerMessagesEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerMessagesEditor] (val x: Self) extends AnyVal {
     
     inline def setAllDayEvent(value: String): Self = StObject.set(x, "allDayEvent", value.asInstanceOf[js.Any])
     

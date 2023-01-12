@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordCategoryName]
     }
     
-    extension [Self <: PartialRecordCategoryName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordCategoryName] (val x: Self) extends AnyVal {
       
       inline def setActivity(value: String): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object anon {
       __obj.asInstanceOf[PickEmojiDataid]
     }
     
-    extension [Self <: PickEmojiDataid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickEmojiDataid] (val x: Self) extends AnyVal {
       
       inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -153,7 +155,8 @@ object anon {
       __obj.asInstanceOf[RecordCategoryNameReactNo]
     }
     
-    extension [Self <: RecordCategoryNameReactNo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordCategoryNameReactNo] (val x: Self) extends AnyVal {
       
       inline def setActivity(value: () => ReactNode): Self = StObject.set(x, "activity", js.Any.fromFunction0(value))
       
@@ -223,7 +226,8 @@ object anon {
       __obj.asInstanceOf[RecordCategoryNamestring]
     }
     
-    extension [Self <: RecordCategoryNamestring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordCategoryNamestring] (val x: Self) extends AnyVal {
       
       inline def setActivity(value: String): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
       
@@ -279,7 +283,8 @@ object anon {
       __obj.asInstanceOf[variantinEmojiSkinEmojiDa]
     }
     
-    extension [Self <: variantinEmojiSkinEmojiDa](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: variantinEmojiSkinEmojiDa] (val x: Self) extends AnyVal {
       
       inline def set1(value: EmojiData): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
       

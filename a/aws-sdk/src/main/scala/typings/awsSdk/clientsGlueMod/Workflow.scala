@@ -58,7 +58,8 @@ object Workflow {
     __obj.asInstanceOf[Workflow]
   }
   
-  extension [Self <: Workflow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Workflow] (val x: Self) extends AnyVal {
     
     inline def setBlueprintDetails(value: BlueprintDetails): Self = StObject.set(x, "BlueprintDetails", value.asInstanceOf[js.Any])
     

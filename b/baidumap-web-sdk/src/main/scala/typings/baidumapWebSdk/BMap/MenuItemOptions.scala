@@ -19,7 +19,8 @@ object MenuItemOptions {
     __obj.asInstanceOf[MenuItemOptions]
   }
   
-  extension [Self <: MenuItemOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuItemOptions] (val x: Self) extends AnyVal {
     
     inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     

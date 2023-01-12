@@ -19,7 +19,8 @@ object TypeofTokenCreateParams {
     __obj.asInstanceOf[TypeofTokenCreateParams]
   }
   
-  extension [Self <: TypeofTokenCreateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTokenCreateParams] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: TypeofAccountCompany): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     

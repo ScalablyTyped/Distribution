@@ -29,7 +29,8 @@ object LocationSchemeForMesh {
     __obj.asInstanceOf[LocationSchemeForMesh]
   }
   
-  extension [Self <: LocationSchemeForMesh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationSchemeForMesh] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

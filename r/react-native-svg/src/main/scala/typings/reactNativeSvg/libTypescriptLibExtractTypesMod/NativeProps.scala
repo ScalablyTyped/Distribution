@@ -16,7 +16,8 @@ object NativeProps {
     __obj.asInstanceOf[NativeProps]
   }
   
-  extension [Self <: NativeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeProps] (val x: Self) extends AnyVal {
     
     inline def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
     

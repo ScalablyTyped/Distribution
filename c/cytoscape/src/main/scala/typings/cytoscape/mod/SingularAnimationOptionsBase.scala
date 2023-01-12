@@ -35,7 +35,8 @@ object SingularAnimationOptionsBase {
     __obj.asInstanceOf[SingularAnimationOptionsBase]
   }
   
-  extension [Self <: SingularAnimationOptionsBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingularAnimationOptionsBase] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

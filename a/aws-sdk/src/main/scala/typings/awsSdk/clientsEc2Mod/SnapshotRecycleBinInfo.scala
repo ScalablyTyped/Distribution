@@ -38,7 +38,8 @@ object SnapshotRecycleBinInfo {
     __obj.asInstanceOf[SnapshotRecycleBinInfo]
   }
   
-  extension [Self <: SnapshotRecycleBinInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotRecycleBinInfo] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

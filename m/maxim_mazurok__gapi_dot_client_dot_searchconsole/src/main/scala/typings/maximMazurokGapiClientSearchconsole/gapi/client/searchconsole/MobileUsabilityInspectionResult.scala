@@ -19,7 +19,8 @@ object MobileUsabilityInspectionResult {
     __obj.asInstanceOf[MobileUsabilityInspectionResult]
   }
   
-  extension [Self <: MobileUsabilityInspectionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileUsabilityInspectionResult] (val x: Self) extends AnyVal {
     
     inline def setIssues(value: js.Array[MobileUsabilityIssue]): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
     

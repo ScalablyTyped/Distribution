@@ -55,7 +55,8 @@ object AutoHeight {
     __obj.asInstanceOf[AutoHeight]
   }
   
-  extension [Self <: AutoHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoHeight] (val x: Self) extends AnyVal {
     
     inline def setAutoHeight(value: Boolean): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
     

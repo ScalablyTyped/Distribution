@@ -226,7 +226,8 @@ object distClientModelsTemplatesTemplateMod {
       __obj.asInstanceOf[Template]
     }
     
-    extension [Self <: Template](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
       
@@ -279,7 +280,8 @@ object distClientModelsTemplatesTemplateMod {
       __obj.asInstanceOf[TemplateInList]
     }
     
-    extension [Self <: TemplateInList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateInList] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
       
@@ -316,7 +318,8 @@ object distClientModelsTemplatesTemplateMod {
       __obj.asInstanceOf[TemplatePushAction]
     }
     
-    extension [Self <: TemplatePushAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplatePushAction] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
@@ -355,7 +358,8 @@ object distClientModelsTemplatesTemplateMod {
       __obj.asInstanceOf[TemplateValidation]
     }
     
-    extension [Self <: TemplateValidation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateValidation] (val x: Self) extends AnyVal {
       
       inline def setAllContentIsValid(value: Boolean): Self = StObject.set(x, "AllContentIsValid", value.asInstanceOf[js.Any])
       
@@ -382,7 +386,8 @@ object distClientModelsTemplatesTemplateMod {
       __obj.asInstanceOf[Templates]
     }
     
-    extension [Self <: Templates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Templates] (val x: Self) extends AnyVal {
       
       inline def setTemplates(value: js.Array[TemplateInList]): Self = StObject.set(x, "Templates", value.asInstanceOf[js.Any])
       
@@ -405,7 +410,8 @@ object distClientModelsTemplatesTemplateMod {
       __obj.asInstanceOf[TemplatesPush]
     }
     
-    extension [Self <: TemplatesPush](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplatesPush] (val x: Self) extends AnyVal {
       
       inline def setTemplates(value: js.Array[TemplatePushAction]): Self = StObject.set(x, "Templates", value.asInstanceOf[js.Any])
       
@@ -430,7 +436,8 @@ object distClientModelsTemplatesTemplateMod {
       __obj.asInstanceOf[ValidationSection]
     }
     
-    extension [Self <: ValidationSection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationSection] (val x: Self) extends AnyVal {
       
       inline def setContentIsValid(value: Boolean): Self = StObject.set(x, "ContentIsValid", value.asInstanceOf[js.Any])
       

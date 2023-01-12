@@ -30,7 +30,8 @@ object IScheduledToastNotification {
     __obj.asInstanceOf[IScheduledToastNotification]
   }
   
-  extension [Self <: IScheduledToastNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IScheduledToastNotification] (val x: Self) extends AnyVal {
     
     inline def setContent(value: XmlDocument): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

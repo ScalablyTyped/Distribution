@@ -22,7 +22,8 @@ object PartialautoPaddingbooleanAutoPadding {
     __obj.asInstanceOf[PartialautoPaddingbooleanAutoPadding]
   }
   
-  extension [Self <: PartialautoPaddingbooleanAutoPadding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialautoPaddingbooleanAutoPadding] (val x: Self) extends AnyVal {
     
     inline def setAutoPadding(value: Boolean): Self = StObject.set(x, "autoPadding", value.asInstanceOf[js.Any])
     

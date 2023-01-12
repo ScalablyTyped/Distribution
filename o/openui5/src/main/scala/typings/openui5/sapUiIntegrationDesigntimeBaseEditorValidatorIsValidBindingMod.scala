@@ -43,7 +43,8 @@ object sapUiIntegrationDesigntimeBaseEditorValidatorIsValidBindingMod extends Sh
       __obj.asInstanceOf[IsValidBinding]
     }
     
-    extension [Self <: IsValidBinding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsValidBinding] (val x: Self) extends AnyVal {
       
       inline def setValidate(value: (String, AllowPlainStrings) => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
     }

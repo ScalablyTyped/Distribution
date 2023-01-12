@@ -15,7 +15,8 @@ object SlmExecuteLifecycleResponse {
     __obj.asInstanceOf[SlmExecuteLifecycleResponse]
   }
   
-  extension [Self <: SlmExecuteLifecycleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlmExecuteLifecycleResponse] (val x: Self) extends AnyVal {
     
     inline def setSnapshot_name(value: Name): Self = StObject.set(x, "snapshot_name", value.asInstanceOf[js.Any])
   }

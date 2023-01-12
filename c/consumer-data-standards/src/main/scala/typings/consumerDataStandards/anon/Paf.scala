@@ -40,7 +40,8 @@ object Paf {
     __obj.asInstanceOf[Paf]
   }
   
-  extension [Self <: Paf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Paf] (val x: Self) extends AnyVal {
     
     inline def setAddressUType(value: paf | simple): Self = StObject.set(x, "addressUType", value.asInstanceOf[js.Any])
     

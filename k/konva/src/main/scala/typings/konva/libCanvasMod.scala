@@ -73,7 +73,8 @@ object libCanvasMod {
       __obj.asInstanceOf[ICanvasConfig]
     }
     
-    extension [Self <: ICanvasConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICanvasConfig] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

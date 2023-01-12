@@ -33,7 +33,8 @@ object SetBackgroundTextStyleOptions {
     __obj.asInstanceOf[SetBackgroundTextStyleOptions]
   }
   
-  extension [Self <: SetBackgroundTextStyleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetBackgroundTextStyleOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

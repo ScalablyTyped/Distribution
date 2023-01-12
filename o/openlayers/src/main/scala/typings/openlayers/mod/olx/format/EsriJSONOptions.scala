@@ -15,7 +15,8 @@ object EsriJSONOptions {
     __obj.asInstanceOf[EsriJSONOptions]
   }
   
-  extension [Self <: EsriJSONOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EsriJSONOptions] (val x: Self) extends AnyVal {
     
     inline def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
     

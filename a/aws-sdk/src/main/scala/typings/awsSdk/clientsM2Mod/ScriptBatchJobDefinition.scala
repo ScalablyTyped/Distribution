@@ -18,7 +18,8 @@ object ScriptBatchJobDefinition {
     __obj.asInstanceOf[ScriptBatchJobDefinition]
   }
   
-  extension [Self <: ScriptBatchJobDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptBatchJobDefinition] (val x: Self) extends AnyVal {
     
     inline def setScriptName(value: String): Self = StObject.set(x, "scriptName", value.asInstanceOf[js.Any])
   }

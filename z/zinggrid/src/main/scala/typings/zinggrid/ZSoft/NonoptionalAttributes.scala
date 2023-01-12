@@ -35,7 +35,8 @@ object NonoptionalAttributes {
     __obj.asInstanceOf[NonoptionalAttributes]
   }
   
-  extension [Self <: NonoptionalAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonoptionalAttributes] (val x: Self) extends AnyVal {
     
     inline def setContextMenu(value: String | Boolean): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     

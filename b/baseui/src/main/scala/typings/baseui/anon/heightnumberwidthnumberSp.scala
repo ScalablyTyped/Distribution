@@ -58,7 +58,8 @@ object heightnumberwidthnumberSp {
     __obj.asInstanceOf[heightnumberwidthnumberSp]
   }
   
-  extension [Self <: heightnumberwidthnumberSp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: heightnumberwidthnumberSp] (val x: Self) extends AnyVal {
     
     inline def set$borderWidth(
       value: Double | String | scale0 | scale100 | scale200 | scale300 | scale400 | scale500 | scale550 | scale600 | scale650 | scale700 | scale750 | scale800 | scale850 | scale900 | scale950 | scale1000 | scale1200 | scale1400 | scale1600 | scale2400 | scale3200 | scale4800 | typings.baseui.spinnerTypesMod.Size

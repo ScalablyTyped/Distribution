@@ -23,7 +23,8 @@ object BuildNotDeleted {
     __obj.asInstanceOf[BuildNotDeleted]
   }
   
-  extension [Self <: BuildNotDeleted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildNotDeleted] (val x: Self) extends AnyVal {
     
     inline def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

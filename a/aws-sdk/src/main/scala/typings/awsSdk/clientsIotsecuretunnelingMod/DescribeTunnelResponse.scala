@@ -18,7 +18,8 @@ object DescribeTunnelResponse {
     __obj.asInstanceOf[DescribeTunnelResponse]
   }
   
-  extension [Self <: DescribeTunnelResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTunnelResponse] (val x: Self) extends AnyVal {
     
     inline def setTunnel(value: Tunnel): Self = StObject.set(x, "tunnel", value.asInstanceOf[js.Any])
     

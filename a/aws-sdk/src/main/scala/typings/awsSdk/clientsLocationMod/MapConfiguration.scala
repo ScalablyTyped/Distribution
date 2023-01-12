@@ -18,7 +18,8 @@ object MapConfiguration {
     __obj.asInstanceOf[MapConfiguration]
   }
   
-  extension [Self <: MapConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapConfiguration] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: MapStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
   }

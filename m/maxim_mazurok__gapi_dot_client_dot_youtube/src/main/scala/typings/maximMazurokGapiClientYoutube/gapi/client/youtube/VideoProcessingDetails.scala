@@ -52,7 +52,8 @@ object VideoProcessingDetails {
     __obj.asInstanceOf[VideoProcessingDetails]
   }
   
-  extension [Self <: VideoProcessingDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoProcessingDetails] (val x: Self) extends AnyVal {
     
     inline def setEditorSuggestionsAvailability(value: String): Self = StObject.set(x, "editorSuggestionsAvailability", value.asInstanceOf[js.Any])
     

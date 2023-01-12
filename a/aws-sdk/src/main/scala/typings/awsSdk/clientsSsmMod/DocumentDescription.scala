@@ -163,7 +163,8 @@ object DocumentDescription {
     __obj.asInstanceOf[DocumentDescription]
   }
   
-  extension [Self <: DocumentDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentDescription] (val x: Self) extends AnyVal {
     
     inline def setApprovedVersion(value: DocumentVersion): Self = StObject.set(x, "ApprovedVersion", value.asInstanceOf[js.Any])
     

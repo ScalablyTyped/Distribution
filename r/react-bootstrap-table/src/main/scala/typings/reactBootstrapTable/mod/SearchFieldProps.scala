@@ -34,7 +34,8 @@ object SearchFieldProps {
     __obj.asInstanceOf[SearchFieldProps]
   }
   
-  extension [Self <: SearchFieldProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchFieldProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

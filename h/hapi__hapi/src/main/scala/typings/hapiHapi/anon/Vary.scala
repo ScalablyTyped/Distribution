@@ -17,7 +17,8 @@ object Vary {
     __obj.asInstanceOf[Vary]
   }
   
-  extension [Self <: Vary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Vary] (val x: Self) extends AnyVal {
     
     inline def setVary(value: Boolean): Self = StObject.set(x, "vary", value.asInstanceOf[js.Any])
     

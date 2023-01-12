@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[DataURIBase64]
     }
     
-    extension [Self <: DataURIBase64](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataURIBase64] (val x: Self) extends AnyVal {
       
       inline def setDataURIBase64(value: String): Self = StObject.set(x, "dataURIBase64", value.asInstanceOf[js.Any])
       

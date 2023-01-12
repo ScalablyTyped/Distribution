@@ -153,7 +153,8 @@ object mod {
         __obj.asInstanceOf[Props[HolderProps]]
       }
       
-      extension [Self <: Props[?], HolderProps /* <: js.Object */](x: Self & Props[HolderProps]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props[?], HolderProps /* <: js.Object */] (val x: Self & Props[HolderProps]) extends AnyVal {
         
         inline def setBottomOffset(value: Double): Self = StObject.set(x, "bottomOffset", value.asInstanceOf[js.Any])
         

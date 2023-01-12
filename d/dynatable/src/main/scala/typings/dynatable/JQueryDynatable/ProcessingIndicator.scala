@@ -47,7 +47,8 @@ object ProcessingIndicator {
     __obj.asInstanceOf[ProcessingIndicator]
   }
   
-  extension [Self <: ProcessingIndicator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessingIndicator] (val x: Self) extends AnyVal {
     
     inline def setAttach(value: () => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction0(value))
     

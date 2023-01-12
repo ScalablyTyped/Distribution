@@ -666,7 +666,8 @@ object mod {
       __obj.asInstanceOf[HelmetOptions]
     }
     
-    extension [Self <: HelmetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelmetOptions] (val x: Self) extends AnyVal {
       
       inline def setContentSecurityPolicy(value: ContentSecurityPolicyOptions | Boolean): Self = StObject.set(x, "contentSecurityPolicy", value.asInstanceOf[js.Any])
       

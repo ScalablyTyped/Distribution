@@ -52,7 +52,8 @@ object JQueryFormOptions {
     __obj.asInstanceOf[JQueryFormOptions]
   }
   
-  extension [Self <: JQueryFormOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryFormOptions] (val x: Self) extends AnyVal {
     
     inline def setBeforeSerialize(value: (/* $form */ JQuery, JQueryFormOptions) => Boolean): Self = StObject.set(x, "beforeSerialize", js.Any.fromFunction2(value))
     

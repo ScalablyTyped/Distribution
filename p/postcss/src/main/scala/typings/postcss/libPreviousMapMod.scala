@@ -106,7 +106,8 @@ object libPreviousMapMod {
       __obj.asInstanceOf[PreviousMap]
     }
     
-    extension [Self <: PreviousMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviousMap] (val x: Self) extends AnyVal {
       
       inline def setAnnotation(value: String): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
       

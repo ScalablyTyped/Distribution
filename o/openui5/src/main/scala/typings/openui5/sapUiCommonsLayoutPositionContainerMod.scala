@@ -375,7 +375,8 @@ object sapUiCommonsLayoutPositionContainerMod {
       __obj.asInstanceOf[PositionContainerSettings]
     }
     
-    extension [Self <: PositionContainerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositionContainerSettings] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

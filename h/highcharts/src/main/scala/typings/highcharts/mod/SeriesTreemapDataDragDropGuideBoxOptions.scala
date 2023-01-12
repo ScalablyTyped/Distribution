@@ -18,7 +18,8 @@ object SeriesTreemapDataDragDropGuideBoxOptions {
     __obj.asInstanceOf[SeriesTreemapDataDragDropGuideBoxOptions]
   }
   
-  extension [Self <: SeriesTreemapDataDragDropGuideBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesTreemapDataDragDropGuideBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

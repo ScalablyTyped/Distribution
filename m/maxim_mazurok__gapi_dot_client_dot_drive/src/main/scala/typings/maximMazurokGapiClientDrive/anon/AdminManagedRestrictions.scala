@@ -31,7 +31,8 @@ object AdminManagedRestrictions {
     __obj.asInstanceOf[AdminManagedRestrictions]
   }
   
-  extension [Self <: AdminManagedRestrictions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminManagedRestrictions] (val x: Self) extends AnyVal {
     
     inline def setAdminManagedRestrictions(value: Boolean): Self = StObject.set(x, "adminManagedRestrictions", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object TreeListMessages {
     __obj.asInstanceOf[TreeListMessages]
   }
   
-  extension [Self <: TreeListMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListMessages] (val x: Self) extends AnyVal {
     
     inline def setCommands(value: TreeListMessagesCommands): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     

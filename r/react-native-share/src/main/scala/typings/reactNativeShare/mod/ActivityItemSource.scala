@@ -34,7 +34,8 @@ object ActivityItemSource {
     __obj.asInstanceOf[ActivityItemSource]
   }
   
-  extension [Self <: ActivityItemSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityItemSource] (val x: Self) extends AnyVal {
     
     inline def setDataTypeIdentifier(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in react-native-share.react-native-share.ActivityType | string ]: string} */ js.Any

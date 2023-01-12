@@ -30,7 +30,8 @@ object CredentialsHandshake {
     __obj.asInstanceOf[CredentialsHandshake]
   }
   
-  extension [Self <: CredentialsHandshake](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CredentialsHandshake] (val x: Self) extends AnyVal {
     
     inline def setAuthData(value: CredentialsAuthData): Self = StObject.set(x, "authData", value.asInstanceOf[js.Any])
     

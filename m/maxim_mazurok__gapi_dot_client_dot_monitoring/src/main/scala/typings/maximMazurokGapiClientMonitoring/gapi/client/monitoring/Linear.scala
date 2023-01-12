@@ -22,7 +22,8 @@ object Linear {
     __obj.asInstanceOf[Linear]
   }
   
-  extension [Self <: Linear](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Linear] (val x: Self) extends AnyVal {
     
     inline def setNumFiniteBuckets(value: Double): Self = StObject.set(x, "numFiniteBuckets", value.asInstanceOf[js.Any])
     

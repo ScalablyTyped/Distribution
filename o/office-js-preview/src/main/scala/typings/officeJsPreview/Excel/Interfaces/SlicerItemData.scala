@@ -48,7 +48,8 @@ object SlicerItemData {
     __obj.asInstanceOf[SlicerItemData]
   }
   
-  extension [Self <: SlicerItemData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlicerItemData] (val x: Self) extends AnyVal {
     
     inline def setHasData(value: Boolean): Self = StObject.set(x, "hasData", value.asInstanceOf[js.Any])
     

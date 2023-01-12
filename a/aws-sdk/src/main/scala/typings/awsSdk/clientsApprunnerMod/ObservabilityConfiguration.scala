@@ -53,7 +53,8 @@ object ObservabilityConfiguration {
     __obj.asInstanceOf[ObservabilityConfiguration]
   }
   
-  extension [Self <: ObservabilityConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObservabilityConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

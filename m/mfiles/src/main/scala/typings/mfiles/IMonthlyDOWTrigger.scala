@@ -22,7 +22,8 @@ object IMonthlyDOWTrigger {
     __obj.asInstanceOf[IMonthlyDOWTrigger]
   }
   
-  extension [Self <: IMonthlyDOWTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMonthlyDOWTrigger] (val x: Self) extends AnyVal {
     
     inline def setDaysOfTheWeek(value: MFTriggerWeekDay): Self = StObject.set(x, "DaysOfTheWeek", value.asInstanceOf[js.Any])
     

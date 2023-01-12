@@ -18,7 +18,8 @@ object IFileData {
     __obj.asInstanceOf[IFileData]
   }
   
-  extension [Self <: IFileData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileData] (val x: Self) extends AnyVal {
     
     inline def setElement(value: HTMLInputElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

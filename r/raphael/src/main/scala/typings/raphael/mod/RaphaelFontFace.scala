@@ -116,7 +116,8 @@ object RaphaelFontFace {
     __obj.asInstanceOf[RaphaelFontFace]
   }
   
-  extension [Self <: RaphaelFontFace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaphaelFontFace] (val x: Self) extends AnyVal {
     
     inline def setAscent(value: Double | String): Self = StObject.set(x, "ascent", value.asInstanceOf[js.Any])
     

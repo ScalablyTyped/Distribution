@@ -210,7 +210,8 @@ object distCoreImmerClassMod {
       __obj.asInstanceOf[ProducersFns]
     }
     
-    extension [Self <: ProducersFns](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProducersFns] (val x: Self) extends AnyVal {
       
       inline def setProduce(value: IProduce): Self = StObject.set(x, "produce", value.asInstanceOf[js.Any])
       

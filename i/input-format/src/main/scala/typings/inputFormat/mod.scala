@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[ExportedFormatFunctionResult]
     }
     
-    extension [Self <: ExportedFormatFunctionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportedFormatFunctionResult] (val x: Self) extends AnyVal {
       
       inline def setCaret(value: Double): Self = StObject.set(x, "caret", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object mod {
       __obj.asInstanceOf[ExportedParseFunctionResult]
     }
     
-    extension [Self <: ExportedParseFunctionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportedParseFunctionResult] (val x: Self) extends AnyVal {
       
       inline def setCaret(value: Double): Self = StObject.set(x, "caret", value.asInstanceOf[js.Any])
       
@@ -100,7 +102,8 @@ object mod {
       __obj.asInstanceOf[FormatFunctionResult]
     }
     
-    extension [Self <: FormatFunctionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatFunctionResult] (val x: Self) extends AnyVal {
       
       inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       

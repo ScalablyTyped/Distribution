@@ -28,7 +28,8 @@ object GetBackupVaultAccessPolicyOutput {
     __obj.asInstanceOf[GetBackupVaultAccessPolicyOutput]
   }
   
-  extension [Self <: GetBackupVaultAccessPolicyOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBackupVaultAccessPolicyOutput] (val x: Self) extends AnyVal {
     
     inline def setBackupVaultArn(value: ARN): Self = StObject.set(x, "BackupVaultArn", value.asInstanceOf[js.Any])
     

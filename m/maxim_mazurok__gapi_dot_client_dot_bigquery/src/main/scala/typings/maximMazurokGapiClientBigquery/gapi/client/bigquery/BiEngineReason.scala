@@ -19,7 +19,8 @@ object BiEngineReason {
     __obj.asInstanceOf[BiEngineReason]
   }
   
-  extension [Self <: BiEngineReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BiEngineReason] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object CalculatedMember {
     __obj.asInstanceOf[CalculatedMember]
   }
   
-  extension [Self <: CalculatedMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalculatedMember] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object srcMenuManagerMod {
       __obj.asInstanceOf[MenuManager]
     }
     
-    extension [Self <: MenuManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuManager] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: js.Array[MenuOptions] => Disposable): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -48,7 +49,8 @@ object srcMenuManagerMod {
       __obj.asInstanceOf[MenuOptions]
     }
     
-    extension [Self <: MenuOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuOptions] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       

@@ -63,7 +63,8 @@ object Parameter {
     __obj.asInstanceOf[Parameter]
   }
   
-  extension [Self <: Parameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
     
     inline def setAllowedValues(value: String): Self = StObject.set(x, "AllowedValues", value.asInstanceOf[js.Any])
     

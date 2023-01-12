@@ -38,7 +38,8 @@ object MediaInfo {
     __obj.asInstanceOf[MediaInfo]
   }
   
-  extension [Self <: MediaInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaInfo] (val x: Self) extends AnyVal {
     
     inline def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
     

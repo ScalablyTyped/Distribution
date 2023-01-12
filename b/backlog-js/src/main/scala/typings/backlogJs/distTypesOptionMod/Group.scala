@@ -21,7 +21,8 @@ object Group {
       __obj.asInstanceOf[GetGroupsParams]
     }
     
-    extension [Self <: GetGroupsParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetGroupsParams] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object Group {
       __obj.asInstanceOf[PatchGroupParams]
     }
     
-    extension [Self <: PatchGroupParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatchGroupParams] (val x: Self) extends AnyVal {
       
       inline def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object Group {
       __obj.asInstanceOf[PostGroupsParams]
     }
     
-    extension [Self <: PostGroupsParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostGroupsParams] (val x: Self) extends AnyVal {
       
       inline def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       

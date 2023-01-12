@@ -22,7 +22,8 @@ object ServiceLevelIndicator {
     __obj.asInstanceOf[ServiceLevelIndicator]
   }
   
-  extension [Self <: ServiceLevelIndicator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceLevelIndicator] (val x: Self) extends AnyVal {
     
     inline def setBasicSli(value: BasicSli): Self = StObject.set(x, "basicSli", value.asInstanceOf[js.Any])
     

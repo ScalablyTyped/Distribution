@@ -16,7 +16,8 @@ object AddOnParameters {
     __obj.asInstanceOf[AddOnParameters]
   }
   
-  extension [Self <: AddOnParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddOnParameters] (val x: Self) extends AnyVal {
     
     inline def setAddOnParameters(value: StringDictionary[String]): Self = StObject.set(x, "addOnParameters", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object AuthenticatorAssertionResponse {
     __obj.asInstanceOf[AuthenticatorAssertionResponse]
   }
   
-  extension [Self <: AuthenticatorAssertionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticatorAssertionResponse] (val x: Self) extends AnyVal {
     
     inline def setAuthenticatorData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "authenticatorData", value.asInstanceOf[js.Any])
     

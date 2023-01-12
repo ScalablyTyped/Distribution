@@ -40,7 +40,8 @@ object LoadOptions {
     __obj.asInstanceOf[LoadOptions]
   }
   
-  extension [Self <: LoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadOptions] (val x: Self) extends AnyVal {
     
     inline def setBinaryAsBase64(value: Boolean): Self = StObject.set(x, "binaryAsBase64", value.asInstanceOf[js.Any])
     

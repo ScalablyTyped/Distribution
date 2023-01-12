@@ -17,7 +17,8 @@ object EventException {
     __obj.asInstanceOf[EventException]
   }
   
-  extension [Self <: EventException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventException] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotEventException_typekey(value: EventException): Self = StObject.set(x, "MSHTML.EventException_typekey", value.asInstanceOf[js.Any])
   }

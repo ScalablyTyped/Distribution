@@ -29,7 +29,8 @@ object PortalOptions {
     __obj.asInstanceOf[PortalOptions]
   }
   
-  extension [Self <: PortalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortalOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: PortalData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

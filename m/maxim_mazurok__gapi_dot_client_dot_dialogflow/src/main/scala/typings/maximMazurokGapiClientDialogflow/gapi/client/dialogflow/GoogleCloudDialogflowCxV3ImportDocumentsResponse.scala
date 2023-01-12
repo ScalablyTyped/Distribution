@@ -16,7 +16,8 @@ object GoogleCloudDialogflowCxV3ImportDocumentsResponse {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3ImportDocumentsResponse]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3ImportDocumentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3ImportDocumentsResponse] (val x: Self) extends AnyVal {
     
     inline def setWarnings(value: js.Array[GoogleRpcStatus]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     

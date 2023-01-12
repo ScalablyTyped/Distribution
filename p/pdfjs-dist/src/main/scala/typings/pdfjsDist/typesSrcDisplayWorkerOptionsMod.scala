@@ -35,7 +35,8 @@ object typesSrcDisplayWorkerOptionsMod {
       __obj.asInstanceOf[GlobalWorkerOptionsType]
     }
     
-    extension [Self <: GlobalWorkerOptionsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalWorkerOptionsType] (val x: Self) extends AnyVal {
       
       inline def setWorkerPort(value: Worker): Self = StObject.set(x, "workerPort", value.asInstanceOf[js.Any])
       

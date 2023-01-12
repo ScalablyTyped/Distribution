@@ -17,7 +17,8 @@ object ToastNotificationHistoryChangedTriggerDetail {
     __obj.asInstanceOf[ToastNotificationHistoryChangedTriggerDetail]
   }
   
-  extension [Self <: ToastNotificationHistoryChangedTriggerDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToastNotificationHistoryChangedTriggerDetail] (val x: Self) extends AnyVal {
     
     inline def setChangeType(value: ToastHistoryChangedType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
   }

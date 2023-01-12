@@ -23,7 +23,8 @@ object ChannelNameCondition {
     __obj.asInstanceOf[ChannelNameCondition]
   }
   
-  extension [Self <: ChannelNameCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelNameCondition] (val x: Self) extends AnyVal {
     
     inline def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
     

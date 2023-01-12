@@ -129,7 +129,8 @@ object nativeDistBaseMod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def `set__styled-components-init__`(value: Double): Self = StObject.set(x, "__styled-components-init__", value.asInstanceOf[js.Any])
         

@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[Blackberry]
     }
     
-    extension [Self <: Blackberry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blackberry] (val x: Self) extends AnyVal {
       
       inline def setBlackberry(value: Boolean): Self = StObject.set(x, "blackberry", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object anon {
       __obj.asInstanceOf[Device]
     }
     
-    extension [Self <: Device](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: Boolean): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object anon {
       __obj.asInstanceOf[Phone]
     }
     
-    extension [Self <: Phone](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Phone] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: Boolean): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       

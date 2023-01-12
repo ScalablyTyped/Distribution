@@ -33,7 +33,8 @@ object GetStatementResultResponse {
     __obj.asInstanceOf[GetStatementResultResponse]
   }
   
-  extension [Self <: GetStatementResultResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStatementResultResponse] (val x: Self) extends AnyVal {
     
     inline def setColumnMetadata(value: ColumnMetadataList): Self = StObject.set(x, "ColumnMetadata", value.asInstanceOf[js.Any])
     

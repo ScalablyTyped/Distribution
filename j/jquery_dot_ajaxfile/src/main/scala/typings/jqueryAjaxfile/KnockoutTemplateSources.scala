@@ -19,7 +19,8 @@ object KnockoutTemplateSources {
     __obj.asInstanceOf[KnockoutTemplateSources]
   }
   
-  extension [Self <: KnockoutTemplateSources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutTemplateSources] (val x: Self) extends AnyVal {
     
     inline def setAnonymousTemplate(value: InstantiableKnockoutTemplateAnonymous): Self = StObject.set(x, "anonymousTemplate", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ConnectorOperator {
     __obj.asInstanceOf[ConnectorOperator]
   }
   
-  extension [Self <: ConnectorOperator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorOperator] (val x: Self) extends AnyVal {
     
     inline def setMarketo(value: MarketoConnectorOperator): Self = StObject.set(x, "Marketo", value.asInstanceOf[js.Any])
     

@@ -116,7 +116,8 @@ object RiskDetection {
     __obj.asInstanceOf[RiskDetection]
   }
   
-  extension [Self <: RiskDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RiskDetection] (val x: Self) extends AnyVal {
     
     inline def setActivity(value: NullableOption[ActivityType]): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object RouterAction {
     __obj.asInstanceOf[RouterAction]
   }
   
-  extension [Self <: RouterAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterAction] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: LocationActionPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

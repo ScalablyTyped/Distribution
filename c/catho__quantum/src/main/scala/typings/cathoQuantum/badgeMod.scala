@@ -42,7 +42,8 @@ object badgeMod {
       __obj.asInstanceOf[BadgeProps]
     }
     
-    extension [Self <: BadgeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgeProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

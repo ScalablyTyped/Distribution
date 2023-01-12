@@ -189,7 +189,8 @@ object mod {
       __obj.asInstanceOf[ConfigureParams]
     }
     
-    extension [Self <: ConfigureParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigureParams] (val x: Self) extends AnyVal {
       
       inline def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
       
@@ -242,7 +243,8 @@ object mod {
       __obj.asInstanceOf[GoogleSigninButtonProps]
     }
     
-    extension [Self <: GoogleSigninButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoogleSigninButtonProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -278,7 +280,8 @@ object mod {
       __obj.asInstanceOf[HasPlayServicesParams]
     }
     
-    extension [Self <: HasPlayServicesParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasPlayServicesParams] (val x: Self) extends AnyVal {
       
       inline def setShowPlayServicesUpdateDialog(value: Boolean): Self = StObject.set(x, "showPlayServicesUpdateDialog", value.asInstanceOf[js.Any])
       
@@ -314,7 +317,8 @@ object mod {
       __obj.asInstanceOf[User]
     }
     
-    extension [Self <: User](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       

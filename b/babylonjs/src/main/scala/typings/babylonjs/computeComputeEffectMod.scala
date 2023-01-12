@@ -229,7 +229,8 @@ object computeComputeEffectMod {
       __obj.asInstanceOf[IComputeEffectCreationOptions]
     }
     
-    extension [Self <: IComputeEffectCreationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IComputeEffectCreationOptions] (val x: Self) extends AnyVal {
       
       inline def setDefines(value: Any): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
       

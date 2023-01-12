@@ -455,7 +455,8 @@ object sapUiCommonsImageMod {
       __obj.asInstanceOf[ImageSettings]
     }
     
-    extension [Self <: ImageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageSettings] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String | PropertyBindingInfo): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object MessageParams {
     __obj.asInstanceOf[MessageParams]
   }
   
-  extension [Self <: MessageParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageParams] (val x: Self) extends AnyVal {
     
     inline def setAssistant_id(value: String): Self = StObject.set(x, "assistant_id", value.asInstanceOf[js.Any])
     

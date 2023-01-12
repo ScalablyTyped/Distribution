@@ -23,7 +23,8 @@ object GetColumnStatisticsForTableResponse {
     __obj.asInstanceOf[GetColumnStatisticsForTableResponse]
   }
   
-  extension [Self <: GetColumnStatisticsForTableResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetColumnStatisticsForTableResponse] (val x: Self) extends AnyVal {
     
     inline def setColumnStatisticsList(value: ColumnStatisticsList): Self = StObject.set(x, "ColumnStatisticsList", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ComponentAPI {
     __obj.asInstanceOf[ComponentAPI]
   }
   
-  extension [Self <: ComponentAPI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentAPI] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
   }

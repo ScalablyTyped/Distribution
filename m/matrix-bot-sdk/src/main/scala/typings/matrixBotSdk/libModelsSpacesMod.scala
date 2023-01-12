@@ -109,7 +109,8 @@ object libModelsSpacesMod {
       __obj.asInstanceOf[SpaceChildEntityOptions]
     }
     
-    extension [Self <: SpaceChildEntityOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpaceChildEntityOptions] (val x: Self) extends AnyVal {
       
       inline def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
@@ -166,7 +167,8 @@ object libModelsSpacesMod {
       __obj.asInstanceOf[SpaceCreateOptions]
     }
     
-    extension [Self <: SpaceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpaceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
       

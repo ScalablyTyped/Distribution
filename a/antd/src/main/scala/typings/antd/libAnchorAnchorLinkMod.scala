@@ -34,7 +34,8 @@ object libAnchorAnchorLinkMod extends Shortcut {
       __obj.asInstanceOf[AnchorLinkProps]
     }
     
-    extension [Self <: AnchorLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnchorLinkProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object MapControl {
     __obj.asInstanceOf[MapControl]
   }
   
-  extension [Self <: MapControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapControl] (val x: Self) extends AnyVal {
     
     inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     

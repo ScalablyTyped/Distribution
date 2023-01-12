@@ -15,7 +15,8 @@ object DescribeAuditFindingResponse {
     __obj.asInstanceOf[DescribeAuditFindingResponse]
   }
   
-  extension [Self <: DescribeAuditFindingResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAuditFindingResponse] (val x: Self) extends AnyVal {
     
     inline def setFinding(value: AuditFinding): Self = StObject.set(x, "finding", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object CameraCaptureUI {
     __obj.asInstanceOf[CameraCaptureUI]
   }
   
-  extension [Self <: CameraCaptureUI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraCaptureUI] (val x: Self) extends AnyVal {
     
     inline def setCaptureFileAsync(value: CameraCaptureUIMode => IPromiseWithIAsyncOperation[StorageFile]): Self = StObject.set(x, "captureFileAsync", js.Any.fromFunction1(value))
     

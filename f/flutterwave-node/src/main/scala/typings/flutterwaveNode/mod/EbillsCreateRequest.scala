@@ -42,7 +42,8 @@ object EbillsCreateRequest {
     __obj.asInstanceOf[EbillsCreateRequest]
   }
   
-  extension [Self <: EbillsCreateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EbillsCreateRequest] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

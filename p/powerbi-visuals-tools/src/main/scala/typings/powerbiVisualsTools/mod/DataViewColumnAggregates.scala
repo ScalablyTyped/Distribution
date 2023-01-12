@@ -36,7 +36,8 @@ object DataViewColumnAggregates {
     __obj.asInstanceOf[DataViewColumnAggregates]
   }
   
-  extension [Self <: DataViewColumnAggregates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewColumnAggregates] (val x: Self) extends AnyVal {
     
     inline def setAverage(value: PrimitiveValue): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     

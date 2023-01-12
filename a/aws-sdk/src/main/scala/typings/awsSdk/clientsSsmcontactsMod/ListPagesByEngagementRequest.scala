@@ -28,7 +28,8 @@ object ListPagesByEngagementRequest {
     __obj.asInstanceOf[ListPagesByEngagementRequest]
   }
   
-  extension [Self <: ListPagesByEngagementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPagesByEngagementRequest] (val x: Self) extends AnyVal {
     
     inline def setEngagementId(value: SsmContactsArn): Self = StObject.set(x, "EngagementId", value.asInstanceOf[js.Any])
     

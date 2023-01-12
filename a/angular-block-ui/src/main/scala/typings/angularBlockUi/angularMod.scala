@@ -127,7 +127,8 @@ object angularMod {
         __obj.asInstanceOf[BlockUIConfig]
       }
       
-      extension [Self <: BlockUIConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BlockUIConfig] (val x: Self) extends AnyVal {
         
         inline def setAutoBlock(value: Boolean): Self = StObject.set(x, "autoBlock", value.asInstanceOf[js.Any])
         
@@ -182,7 +183,8 @@ object angularMod {
         __obj.asInstanceOf[BlockUIInstances]
       }
       
-      extension [Self <: BlockUIInstances](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BlockUIInstances] (val x: Self) extends AnyVal {
         
         inline def setGet(value: String => BlockUIService): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       }

@@ -37,7 +37,8 @@ object IMetadata {
     __obj.asInstanceOf[IMetadata]
   }
   
-  extension [Self <: IMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMetadata] (val x: Self) extends AnyVal {
     
     inline def setAreaSqKm(value: String): Self = StObject.set(x, "AreaSqKm", value.asInstanceOf[js.Any])
     

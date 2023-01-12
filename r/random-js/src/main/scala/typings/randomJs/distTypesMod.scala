@@ -19,7 +19,8 @@ object distTypesMod {
       __obj.asInstanceOf[Engine]
     }
     
-    extension [Self <: Engine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Engine] (val x: Self) extends AnyVal {
       
       inline def setNext(value: () => Double): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     }

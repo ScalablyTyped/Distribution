@@ -33,7 +33,8 @@ object ASPxClientCloudControlItemEventArgs {
     __obj.asInstanceOf[ASPxClientCloudControlItemEventArgs]
   }
   
-  extension [Self <: ASPxClientCloudControlItemEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCloudControlItemEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     

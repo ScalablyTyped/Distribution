@@ -25,7 +25,8 @@ object DimensionalFileInfo {
     __obj.asInstanceOf[DimensionalFileInfo]
   }
   
-  extension [Self <: DimensionalFileInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionalFileInfo] (val x: Self) extends AnyVal {
     
     inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     

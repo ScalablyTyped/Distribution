@@ -38,7 +38,8 @@ object ApplicationInformationEventCallback {
     __obj.asInstanceOf[ApplicationInformationEventCallback]
   }
   
-  extension [Self <: ApplicationInformationEventCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationInformationEventCallback] (val x: Self) extends AnyVal {
     
     inline def setOninstalled(value: ApplicationInformation => Unit): Self = StObject.set(x, "oninstalled", js.Any.fromFunction1(value))
     

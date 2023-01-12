@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyFunctionCov]
     }
     
-    extension [Self <: ReadonlyFunctionCov](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyFunctionCov] (val x: Self) extends AnyVal {
       
       inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyProcessCov]
     }
     
-    extension [Self <: ReadonlyProcessCov](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyProcessCov] (val x: Self) extends AnyVal {
       
       inline def setResult(value: js.Array[ScriptCov]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
@@ -73,7 +75,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyRangeCov]
     }
     
-    extension [Self <: ReadonlyRangeCov](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyRangeCov] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -99,7 +102,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyScriptCov]
     }
     
-    extension [Self <: ReadonlyScriptCov](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyScriptCov] (val x: Self) extends AnyVal {
       
       inline def setFunctions(value: js.Array[FunctionCov]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
       

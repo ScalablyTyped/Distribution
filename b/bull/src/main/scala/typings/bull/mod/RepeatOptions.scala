@@ -28,7 +28,8 @@ object RepeatOptions {
     __obj.asInstanceOf[RepeatOptions]
   }
   
-  extension [Self <: RepeatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepeatOptions] (val x: Self) extends AnyVal {
     
     inline def setEndDate(value: js.Date | String | Double): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     

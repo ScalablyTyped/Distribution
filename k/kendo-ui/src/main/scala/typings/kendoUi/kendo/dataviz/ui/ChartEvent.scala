@@ -19,7 +19,8 @@ object ChartEvent {
     __obj.asInstanceOf[ChartEvent]
   }
   
-  extension [Self <: ChartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

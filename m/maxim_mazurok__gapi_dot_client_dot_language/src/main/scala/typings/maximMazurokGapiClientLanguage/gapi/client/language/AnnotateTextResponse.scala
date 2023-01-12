@@ -34,7 +34,8 @@ object AnnotateTextResponse {
     __obj.asInstanceOf[AnnotateTextResponse]
   }
   
-  extension [Self <: AnnotateTextResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotateTextResponse] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: js.Array[ClassificationCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GPURenderPassDescriptor {
     __obj.asInstanceOf[GPURenderPassDescriptor]
   }
   
-  extension [Self <: GPURenderPassDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPURenderPassDescriptor] (val x: Self) extends AnyVal {
     
     inline def setColorAttachments(value: js.Array[GPURenderPassColorAttachment | Null]): Self = StObject.set(x, "colorAttachments", value.asInstanceOf[js.Any])
     

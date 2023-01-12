@@ -23,7 +23,8 @@ object VirtualServiceBackend {
     __obj.asInstanceOf[VirtualServiceBackend]
   }
   
-  extension [Self <: VirtualServiceBackend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualServiceBackend] (val x: Self) extends AnyVal {
     
     inline def setClientPolicy(value: ClientPolicy): Self = StObject.set(x, "clientPolicy", value.asInstanceOf[js.Any])
     

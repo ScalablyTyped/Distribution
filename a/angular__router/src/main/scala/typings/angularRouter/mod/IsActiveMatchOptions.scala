@@ -63,7 +63,8 @@ object IsActiveMatchOptions {
     __obj.asInstanceOf[IsActiveMatchOptions]
   }
   
-  extension [Self <: IsActiveMatchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsActiveMatchOptions] (val x: Self) extends AnyVal {
     
     inline def setFragment(value: exact | ignored): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     

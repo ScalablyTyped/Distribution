@@ -21,7 +21,8 @@ object mod {
       __obj.asInstanceOf[GetTokenOptions]
     }
     
-    extension [Self <: GetTokenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTokenOptions] (val x: Self) extends AnyVal {
       
       inline def setServiceWorkerRegistration(value: ServiceWorkerRegistration): Self = StObject.set(x, "serviceWorkerRegistration", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object mod {
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      extension [Self <: NameServiceMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
         
         inline def `setMessaging-internal`(value: MessagingInternal): Self = StObject.set(x, "messaging-internal", value.asInstanceOf[js.Any])
       }

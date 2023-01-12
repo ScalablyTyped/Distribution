@@ -25,7 +25,8 @@ object ExternalReferencePolygon {
     __obj.asInstanceOf[ExternalReferencePolygon]
   }
   
-  extension [Self <: ExternalReferencePolygon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalReferencePolygon] (val x: Self) extends AnyVal {
     
     inline def setCurveRings(value: js.Array[js.Array[js.Array[Double]]]): Self = StObject.set(x, "curveRings", value.asInstanceOf[js.Any])
     

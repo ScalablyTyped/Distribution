@@ -15,7 +15,8 @@ object RegExpLike {
     __obj.asInstanceOf[RegExpLike]
   }
   
-  extension [Self <: RegExpLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegExpLike] (val x: Self) extends AnyVal {
     
     inline def setTest(value: String => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
   }

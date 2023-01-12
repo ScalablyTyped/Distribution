@@ -41,7 +41,8 @@ object AssociatedWorkItem {
     __obj.asInstanceOf[AssociatedWorkItem]
   }
   
-  extension [Self <: AssociatedWorkItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociatedWorkItem] (val x: Self) extends AnyVal {
     
     inline def setAssignedTo(value: String): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
     

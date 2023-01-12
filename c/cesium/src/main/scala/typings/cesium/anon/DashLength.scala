@@ -22,7 +22,8 @@ object DashLength {
     __obj.asInstanceOf[DashLength]
   }
   
-  extension [Self <: DashLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashLength] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Property | typings.cesium.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

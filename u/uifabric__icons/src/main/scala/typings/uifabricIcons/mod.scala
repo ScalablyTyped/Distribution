@@ -36,7 +36,8 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setFabricConfig(value: FontBaseUrl): Self = StObject.set(x, "FabricConfig", value.asInstanceOf[js.Any])
         

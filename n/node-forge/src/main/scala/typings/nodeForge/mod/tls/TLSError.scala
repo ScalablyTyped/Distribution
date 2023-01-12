@@ -24,7 +24,8 @@ object TLSError {
     __obj.asInstanceOf[TLSError]
   }
   
-  extension [Self <: TLSError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TLSError] (val x: Self) extends AnyVal {
     
     inline def setAlert(value: Alert): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
     

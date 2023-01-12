@@ -137,7 +137,8 @@ object typesPluginMod {
       __obj.asInstanceOf[BasePlugin]
     }
     
-    extension [Self <: BasePlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasePlugin] (val x: Self) extends AnyVal {
       
       inline def setAny(value: Node => Boolean): Self = StObject.set(x, "any", js.Any.fromFunction1(value))
       
@@ -195,7 +196,8 @@ object typesPluginMod {
       __obj.asInstanceOf[Plugin]
     }
     
-    extension [Self <: Plugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
       
       inline def setDetectAndResolve(value: Node => Unit): Self = StObject.set(x, "detectAndResolve", js.Any.fromFunction1(value))
       

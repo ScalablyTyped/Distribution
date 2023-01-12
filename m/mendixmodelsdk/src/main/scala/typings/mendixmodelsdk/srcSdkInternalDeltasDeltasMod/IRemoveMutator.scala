@@ -20,7 +20,8 @@ object IRemoveMutator {
     __obj.asInstanceOf[IRemoveMutator]
   }
   
-  extension [Self <: IRemoveMutator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRemoveMutator] (val x: Self) extends AnyVal {
     
     inline def setMutatorType(value: REMOVE): Self = StObject.set(x, "mutatorType", value.asInstanceOf[js.Any])
     

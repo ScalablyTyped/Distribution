@@ -55,7 +55,8 @@ object SignatureSetup {
     __obj.asInstanceOf[SignatureSetup]
   }
   
-  extension [Self <: SignatureSetup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureSetup] (val x: Self) extends AnyVal {
     
     inline def setAdditionalXml(value: String): Self = StObject.set(x, "AdditionalXml", value.asInstanceOf[js.Any])
     

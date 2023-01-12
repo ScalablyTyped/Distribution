@@ -122,7 +122,8 @@ object libVegaLiteMod {
       __obj.asInstanceOf[VegaLiteProps]
     }
     
-    extension [Self <: VegaLiteProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VegaLiteProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: Boolean | Actions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

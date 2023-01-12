@@ -18,7 +18,8 @@ object DeleteAccountAuditConfigurationRequest {
     __obj.asInstanceOf[DeleteAccountAuditConfigurationRequest]
   }
   
-  extension [Self <: DeleteAccountAuditConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAccountAuditConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setDeleteScheduledAudits(value: DeleteScheduledAudits): Self = StObject.set(x, "deleteScheduledAudits", value.asInstanceOf[js.Any])
     

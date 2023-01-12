@@ -45,7 +45,8 @@ object ArrayPromptOptions {
     __obj.asInstanceOf[ArrayPromptOptions]
   }
   
-  extension [Self <: ArrayPromptOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayPromptOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

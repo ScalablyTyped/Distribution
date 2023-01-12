@@ -21,7 +21,8 @@ object IBAutoresizingMask {
     __obj.asInstanceOf[IBAutoresizingMask]
   }
   
-  extension [Self <: IBAutoresizingMask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBAutoresizingMask] (val x: Self) extends AnyVal {
     
     inline def set$(value: FlexibleMaxX): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
   }

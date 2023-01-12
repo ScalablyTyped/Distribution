@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[Signal]
     }
     
-    extension [Self <: Signal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Signal] (val x: Self) extends AnyVal {
       
       inline def setAction(value: SignalAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

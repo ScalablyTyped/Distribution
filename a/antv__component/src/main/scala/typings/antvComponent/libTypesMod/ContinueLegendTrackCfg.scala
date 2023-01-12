@@ -20,7 +20,8 @@ object ContinueLegendTrackCfg {
     __obj.asInstanceOf[ContinueLegendTrackCfg]
   }
   
-  extension [Self <: ContinueLegendTrackCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinueLegendTrackCfg] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object XExternalSheetName {
     __obj.asInstanceOf[XExternalSheetName]
   }
   
-  extension [Self <: XExternalSheetName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XExternalSheetName] (val x: Self) extends AnyVal {
     
     inline def setSetExternalName(value: (String, String) => Unit): Self = StObject.set(x, "setExternalName", js.Any.fromFunction2(value))
   }

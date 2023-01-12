@@ -146,7 +146,8 @@ object treeViewTreeViewMod {
       __obj.asInstanceOf[MultiSelectTreeViewProps]
     }
     
-    extension [Self <: MultiSelectTreeViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSelectTreeViewProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultSelected(value: js.Array[String]): Self = StObject.set(x, "defaultSelected", value.asInstanceOf[js.Any])
       
@@ -208,7 +209,8 @@ object treeViewTreeViewMod {
       __obj.asInstanceOf[SingleSelectTreeViewProps]
     }
     
-    extension [Self <: SingleSelectTreeViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingleSelectTreeViewProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultSelected(value: String): Self = StObject.set(x, "defaultSelected", value.asInstanceOf[js.Any])
       
@@ -671,7 +673,8 @@ object treeViewTreeViewMod {
       __obj.asInstanceOf[TreeViewPropsBase]
     }
     
-    extension [Self <: TreeViewPropsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeViewPropsBase] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

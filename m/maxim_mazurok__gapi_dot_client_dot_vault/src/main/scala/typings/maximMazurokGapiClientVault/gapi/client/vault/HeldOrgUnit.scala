@@ -19,7 +19,8 @@ object HeldOrgUnit {
     __obj.asInstanceOf[HeldOrgUnit]
   }
   
-  extension [Self <: HeldOrgUnit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeldOrgUnit] (val x: Self) extends AnyVal {
     
     inline def setHoldTime(value: String): Self = StObject.set(x, "holdTime", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     }

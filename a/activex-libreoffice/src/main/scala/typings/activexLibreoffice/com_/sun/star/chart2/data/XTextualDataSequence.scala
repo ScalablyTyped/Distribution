@@ -31,7 +31,8 @@ object XTextualDataSequence {
     __obj.asInstanceOf[XTextualDataSequence]
   }
   
-  extension [Self <: XTextualDataSequence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextualDataSequence] (val x: Self) extends AnyVal {
     
     inline def setGetTextualData(value: () => SafeArray[String]): Self = StObject.set(x, "getTextualData", js.Any.fromFunction0(value))
     

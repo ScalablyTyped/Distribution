@@ -32,7 +32,8 @@ object DataRegionOption {
     __obj.asInstanceOf[DataRegionOption]
   }
   
-  extension [Self <: DataRegionOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataRegionOption] (val x: Self) extends AnyVal {
     
     inline def setLineLength(value: Double): Self = StObject.set(x, "lineLength", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object Explorer {
     __obj.asInstanceOf[Explorer]
   }
   
-  extension [Self <: Explorer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Explorer] (val x: Self) extends AnyVal {
     
     inline def setExplorer(value: typings.activexOutlook.Outlook.Explorer): Self = StObject.set(x, "Explorer", value.asInstanceOf[js.Any])
   }

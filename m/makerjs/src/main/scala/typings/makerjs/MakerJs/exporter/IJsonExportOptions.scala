@@ -23,7 +23,8 @@ object IJsonExportOptions {
     __obj.asInstanceOf[IJsonExportOptions]
   }
   
-  extension [Self <: IJsonExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IJsonExportOptions] (val x: Self) extends AnyVal {
     
     inline def setIndentation(value: Double): Self = StObject.set(x, "indentation", value.asInstanceOf[js.Any])
     

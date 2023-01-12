@@ -94,7 +94,8 @@ object toolsSrcExtractMod {
       __obj.asInstanceOf[ExtractTranslationsOptions]
     }
     
-    extension [Self <: ExtractTranslationsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractTranslationsOptions] (val x: Self) extends AnyVal {
       
       inline def setDuplicateMessageHandling(value: DiagnosticHandlingStrategy): Self = StObject.set(x, "duplicateMessageHandling", value.asInstanceOf[js.Any])
       

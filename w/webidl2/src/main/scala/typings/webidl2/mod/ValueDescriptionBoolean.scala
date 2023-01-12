@@ -27,7 +27,8 @@ object ValueDescriptionBoolean {
     __obj.asInstanceOf[ValueDescriptionBoolean]
   }
   
-  extension [Self <: ValueDescriptionBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueDescriptionBoolean] (val x: Self) extends AnyVal {
     
     inline def setType(value: boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ObbFile {
     __obj.asInstanceOf[ObbFile]
   }
   
-  extension [Self <: ObbFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObbFile] (val x: Self) extends AnyVal {
     
     inline def setObb(value: FileReference): Self = StObject.set(x, "obb", value.asInstanceOf[js.Any])
     

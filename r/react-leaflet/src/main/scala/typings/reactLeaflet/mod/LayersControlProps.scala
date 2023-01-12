@@ -43,7 +43,8 @@ object LayersControlProps {
     __obj.asInstanceOf[LayersControlProps]
   }
   
-  extension [Self <: LayersControlProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayersControlProps] (val x: Self) extends AnyVal {
     
     inline def setAutoZIndex(value: Boolean): Self = StObject.set(x, "autoZIndex", value.asInstanceOf[js.Any])
     

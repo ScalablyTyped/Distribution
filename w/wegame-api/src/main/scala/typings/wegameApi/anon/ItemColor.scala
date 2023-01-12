@@ -29,7 +29,8 @@ object ItemColor {
     __obj.asInstanceOf[ItemColor]
   }
   
-  extension [Self <: ItemColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemColor] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

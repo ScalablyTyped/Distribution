@@ -63,7 +63,8 @@ object anon {
       __obj.asInstanceOf[A]
     }
     
-    extension [Self <: A](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: A] (val x: Self) extends AnyVal {
       
       inline def setA(value: js.Array[href]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -133,7 +134,8 @@ object anon {
       __obj.asInstanceOf[HTTP]
     }
     
-    extension [Self <: HTTP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTTP] (val x: Self) extends AnyVal {
       
       inline def setHTTP(value: Record[Double, js.Function1[/* status */ Double, Any]]): Self = StObject.set(x, "HTTP", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object anon {
       __obj.asInstanceOf[IgnoreNamespaceFragment]
     }
     
-    extension [Self <: IgnoreNamespaceFragment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IgnoreNamespaceFragment] (val x: Self) extends AnyVal {
       
       inline def setIgnoreNamespaceFragment(value: Boolean): Self = StObject.set(x, "ignoreNamespaceFragment", value.asInstanceOf[js.Any])
       
@@ -177,7 +180,8 @@ object anon {
       __obj.asInstanceOf[MatchBareFromJid]
     }
     
-    extension [Self <: MatchBareFromJid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchBareFromJid] (val x: Self) extends AnyVal {
       
       inline def setIgnoreNamespaceFragment(value: Boolean): Self = StObject.set(x, "ignoreNamespaceFragment", value.asInstanceOf[js.Any])
       
@@ -196,7 +200,8 @@ object anon {
       __obj.asInstanceOf[Tree]
     }
     
-    extension [Self <: Tree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tree] (val x: Self) extends AnyVal {
       
       inline def setTree(value: () => Element): Self = StObject.set(x, "tree", js.Any.fromFunction0(value))
     }

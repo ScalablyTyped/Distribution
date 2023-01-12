@@ -638,7 +638,8 @@ object distEs2015RendererShaderVariableVariableLibMod {
       __obj.asInstanceOf[ShaderVariable]
     }
     
-    extension [Self <: ShaderVariable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShaderVariable] (val x: Self) extends AnyVal {
       
       inline def setType(value: EVariableType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

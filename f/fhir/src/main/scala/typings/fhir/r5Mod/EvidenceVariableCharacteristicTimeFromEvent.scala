@@ -42,7 +42,8 @@ object EvidenceVariableCharacteristicTimeFromEvent {
     __obj.asInstanceOf[EvidenceVariableCharacteristicTimeFromEvent]
   }
   
-  extension [Self <: EvidenceVariableCharacteristicTimeFromEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvidenceVariableCharacteristicTimeFromEvent] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

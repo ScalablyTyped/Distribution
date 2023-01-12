@@ -27,7 +27,8 @@ object Filelike {
     __obj.asInstanceOf[Filelike]
   }
   
-  extension [Self <: Filelike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Filelike] (val x: Self) extends AnyVal {
     
     inline def setRead(value: (Double, Double, Callback[Buffer]) => Unit): Self = StObject.set(x, "read", js.Any.fromFunction3(value))
     

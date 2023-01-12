@@ -16,7 +16,8 @@ object MlPreviewDataFrameAnalyticsResponse {
     __obj.asInstanceOf[MlPreviewDataFrameAnalyticsResponse]
   }
   
-  extension [Self <: MlPreviewDataFrameAnalyticsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPreviewDataFrameAnalyticsResponse] (val x: Self) extends AnyVal {
     
     inline def setFeature_values(value: js.Array[Record[Field, String]]): Self = StObject.set(x, "feature_values", value.asInstanceOf[js.Any])
     

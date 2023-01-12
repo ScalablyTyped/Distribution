@@ -49,7 +49,8 @@ object ConditionalFormat {
     __obj.asInstanceOf[ConditionalFormat]
   }
   
-  extension [Self <: ConditionalFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalFormat] (val x: Self) extends AnyVal {
     
     inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     

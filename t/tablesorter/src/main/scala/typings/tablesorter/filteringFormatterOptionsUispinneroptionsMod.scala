@@ -96,7 +96,8 @@ object filteringFormatterOptionsUispinneroptionsMod {
       __obj.asInstanceOf[UISpinnerOptions]
     }
     
-    extension [Self <: UISpinnerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UISpinnerOptions] (val x: Self) extends AnyVal {
       
       inline def setAddToggle(value: Boolean): Self = StObject.set(x, "addToggle", value.asInstanceOf[js.Any])
       

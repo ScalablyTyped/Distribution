@@ -17,7 +17,8 @@ object CancelAuthorizationRequest {
     __obj.asInstanceOf[CancelAuthorizationRequest]
   }
   
-  extension [Self <: CancelAuthorizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelAuthorizationRequest] (val x: Self) extends AnyVal {
     
     inline def setPOSKey(value: String): Self = StObject.set(x, "POSKey", value.asInstanceOf[js.Any])
     

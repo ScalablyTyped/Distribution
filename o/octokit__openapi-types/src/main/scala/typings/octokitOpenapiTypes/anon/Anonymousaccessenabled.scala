@@ -484,7 +484,8 @@ object Anonymousaccessenabled {
     __obj.asInstanceOf[Anonymousaccessenabled]
   }
   
-  extension [Self <: Anonymousaccessenabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Anonymousaccessenabled] (val x: Self) extends AnyVal {
     
     inline def setAllow_auto_merge(value: Boolean): Self = StObject.set(x, "allow_auto_merge", value.asInstanceOf[js.Any])
     

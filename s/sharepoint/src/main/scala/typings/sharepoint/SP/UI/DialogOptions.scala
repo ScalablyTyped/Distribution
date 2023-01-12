@@ -90,7 +90,8 @@ object DialogOptions {
     __obj.asInstanceOf[DialogOptions]
   }
   
-  extension [Self <: DialogOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowMaximize(value: Boolean): Self = StObject.set(x, "allowMaximize", value.asInstanceOf[js.Any])
     

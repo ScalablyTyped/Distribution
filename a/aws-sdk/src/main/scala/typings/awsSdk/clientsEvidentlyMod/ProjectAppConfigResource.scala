@@ -32,7 +32,8 @@ object ProjectAppConfigResource {
     __obj.asInstanceOf[ProjectAppConfigResource]
   }
   
-  extension [Self <: ProjectAppConfigResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectAppConfigResource] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: AppConfigResourceId): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     

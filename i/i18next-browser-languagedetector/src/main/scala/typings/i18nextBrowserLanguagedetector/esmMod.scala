@@ -22,7 +22,8 @@ object esmMod {
         __obj.asInstanceOf[CustomPluginOptions]
       }
       
-      extension [Self <: CustomPluginOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomPluginOptions] (val x: Self) extends AnyVal {
         
         inline def setDetection(value: DetectorOptions): Self = StObject.set(x, "detection", value.asInstanceOf[js.Any])
         

@@ -18,7 +18,8 @@ object CancelDataRepositoryTaskRequest {
     __obj.asInstanceOf[CancelDataRepositoryTaskRequest]
   }
   
-  extension [Self <: CancelDataRepositoryTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelDataRepositoryTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setTaskId(value: TaskId): Self = StObject.set(x, "TaskId", value.asInstanceOf[js.Any])
   }

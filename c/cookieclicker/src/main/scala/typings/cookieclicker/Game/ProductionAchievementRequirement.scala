@@ -20,7 +20,8 @@ object ProductionAchievementRequirement {
     __obj.asInstanceOf[ProductionAchievementRequirement]
   }
   
-  extension [Self <: ProductionAchievementRequirement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductionAchievementRequirement] (val x: Self) extends AnyVal {
     
     inline def setAchiev(value: Achievement): Self = StObject.set(x, "achiev", value.asInstanceOf[js.Any])
     

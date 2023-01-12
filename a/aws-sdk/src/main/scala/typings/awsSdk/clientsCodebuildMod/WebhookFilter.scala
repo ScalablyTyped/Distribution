@@ -29,7 +29,8 @@ object WebhookFilter {
     __obj.asInstanceOf[WebhookFilter]
   }
   
-  extension [Self <: WebhookFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebhookFilter] (val x: Self) extends AnyVal {
     
     inline def setExcludeMatchedPattern(value: WrapperBoolean): Self = StObject.set(x, "excludeMatchedPattern", value.asInstanceOf[js.Any])
     

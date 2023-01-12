@@ -23,7 +23,8 @@ object UniqueAttribute {
     __obj.asInstanceOf[UniqueAttribute]
   }
   
-  extension [Self <: UniqueAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UniqueAttribute] (val x: Self) extends AnyVal {
     
     inline def setAttributePath(value: AttributePath): Self = StObject.set(x, "AttributePath", value.asInstanceOf[js.Any])
     

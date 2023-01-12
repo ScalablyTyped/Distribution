@@ -73,7 +73,8 @@ object StackResource {
     __obj.asInstanceOf[StackResource]
   }
   
-  extension [Self <: StackResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackResource] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

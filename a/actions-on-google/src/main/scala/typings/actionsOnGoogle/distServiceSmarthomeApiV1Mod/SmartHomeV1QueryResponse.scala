@@ -19,7 +19,8 @@ object SmartHomeV1QueryResponse {
     __obj.asInstanceOf[SmartHomeV1QueryResponse]
   }
   
-  extension [Self <: SmartHomeV1QueryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartHomeV1QueryResponse] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: SmartHomeV1QueryPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

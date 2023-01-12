@@ -17,7 +17,8 @@ object EncodedHookMap {
     __obj.asInstanceOf[EncodedHookMap]
   }
   
-  extension [Self <: EncodedHookMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncodedHookMap] (val x: Self) extends AnyVal {
     
     inline def setMappings(value: String): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
     

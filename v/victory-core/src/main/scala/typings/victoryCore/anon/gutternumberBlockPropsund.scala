@@ -88,7 +88,8 @@ object gutternumberBlockPropsund {
     __obj.asInstanceOf[gutternumberBlockPropsund]
   }
   
-  extension [Self <: gutternumberBlockPropsund](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: gutternumberBlockPropsund] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | AnimatePropTypeInterface): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

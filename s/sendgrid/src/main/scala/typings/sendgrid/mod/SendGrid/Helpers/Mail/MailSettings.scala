@@ -47,7 +47,8 @@ object MailSettings {
     __obj.asInstanceOf[MailSettings]
   }
   
-  extension [Self <: MailSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailSettings] (val x: Self) extends AnyVal {
     
     inline def setGetBcc(value: () => Bcc): Self = StObject.set(x, "getBcc", js.Any.fromFunction0(value))
     

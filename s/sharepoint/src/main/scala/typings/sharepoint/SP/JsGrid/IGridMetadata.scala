@@ -32,7 +32,8 @@ object IGridMetadata {
     __obj.asInstanceOf[IGridMetadata]
   }
   
-  extension [Self <: IGridMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGridMetadata] (val x: Self) extends AnyVal {
     
     inline def setGridOperationalConstantsFieldKeyMap(value: NumberDictionary[String]): Self = StObject.set(x, "GridOperationalConstantsFieldKeyMap", value.asInstanceOf[js.Any])
     

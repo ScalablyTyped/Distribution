@@ -71,7 +71,8 @@ object Extensions {
         __obj.asInstanceOf[PDFLoader]
       }
       
-      extension [Self <: PDFLoader](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PDFLoader] (val x: Self) extends AnyVal {
         
         inline def setCreatePDFDocument(value: Any => Document): Self = StObject.set(x, "createPDFDocument", js.Any.fromFunction1(value))
         
@@ -167,7 +168,8 @@ object Extensions {
         __obj.asInstanceOf[Snapper]
       }
       
-      extension [Self <: Snapper](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Snapper] (val x: Self) extends AnyVal {
         
         inline def setActivate(value: () => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
         
@@ -236,7 +238,8 @@ object Extensions {
         __obj.asInstanceOf[SnapperIndicator]
       }
       
-      extension [Self <: SnapperIndicator](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SnapperIndicator] (val x: Self) extends AnyVal {
         
         inline def setClearOverlays(value: () => Unit): Self = StObject.set(x, "clearOverlays", js.Any.fromFunction0(value))
         

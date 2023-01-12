@@ -26,7 +26,8 @@ object AccordionGroupClickEventArgs {
     __obj.asInstanceOf[AccordionGroupClickEventArgs]
   }
   
-  extension [Self <: AccordionGroupClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccordionGroupClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHtmlElement(value: js.Object): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ReplicationRuleAndOperator {
     __obj.asInstanceOf[ReplicationRuleAndOperator]
   }
   
-  extension [Self <: ReplicationRuleAndOperator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationRuleAndOperator] (val x: Self) extends AnyVal {
     
     inline def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     

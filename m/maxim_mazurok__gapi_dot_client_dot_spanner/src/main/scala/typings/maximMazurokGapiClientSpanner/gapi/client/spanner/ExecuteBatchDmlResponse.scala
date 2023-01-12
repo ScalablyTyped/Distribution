@@ -22,7 +22,8 @@ object ExecuteBatchDmlResponse {
     __obj.asInstanceOf[ExecuteBatchDmlResponse]
   }
   
-  extension [Self <: ExecuteBatchDmlResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteBatchDmlResponse] (val x: Self) extends AnyVal {
     
     inline def setResultSets(value: js.Array[ResultSet]): Self = StObject.set(x, "resultSets", value.asInstanceOf[js.Any])
     

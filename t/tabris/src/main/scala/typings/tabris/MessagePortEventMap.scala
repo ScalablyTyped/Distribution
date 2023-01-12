@@ -15,7 +15,8 @@ object MessagePortEventMap {
     __obj.asInstanceOf[MessagePortEventMap]
   }
   
-  extension [Self <: MessagePortEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagePortEventMap] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: MessageEvent): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }

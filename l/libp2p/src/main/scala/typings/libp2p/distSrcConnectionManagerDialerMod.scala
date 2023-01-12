@@ -129,7 +129,8 @@ object distSrcConnectionManagerDialerMod {
       __obj.asInstanceOf[DefaultDialerComponents]
     }
     
-    extension [Self <: DefaultDialerComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultDialerComponents] (val x: Self) extends AnyVal {
       
       inline def setConnectionGater(value: ConnectionGater): Self = StObject.set(x, "connectionGater", value.asInstanceOf[js.Any])
       
@@ -158,7 +159,8 @@ object distSrcConnectionManagerDialerMod {
       __obj.asInstanceOf[DialTarget]
     }
     
-    extension [Self <: DialTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialTarget] (val x: Self) extends AnyVal {
       
       inline def setAddrs(value: js.Array[Multiaddr_]): Self = StObject.set(x, "addrs", value.asInstanceOf[js.Any])
       
@@ -209,7 +211,8 @@ object distSrcConnectionManagerDialerMod {
       __obj.asInstanceOf[DialerInit]
     }
     
-    extension [Self <: DialerInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialerInit] (val x: Self) extends AnyVal {
       
       inline def setAddressSorter(value: (/* a */ Address, /* b */ Address) => `-1` | `0` | `1`): Self = StObject.set(x, "addressSorter", js.Any.fromFunction2(value))
       
@@ -263,7 +266,8 @@ object distSrcConnectionManagerDialerMod {
       __obj.asInstanceOf[PendingDial]
     }
     
-    extension [Self <: PendingDial](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PendingDial] (val x: Self) extends AnyVal {
       
       inline def setController(value: TimeoutController): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
@@ -288,7 +292,8 @@ object distSrcConnectionManagerDialerMod {
       __obj.asInstanceOf[PendingDialTarget]
     }
     
-    extension [Self <: PendingDialTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PendingDialTarget] (val x: Self) extends AnyVal {
       
       inline def setReject(value: js.Error => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
       

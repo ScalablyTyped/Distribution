@@ -20,7 +20,8 @@ object SemanticTokensDelta {
     __obj.asInstanceOf[SemanticTokensDelta]
   }
   
-  extension [Self <: SemanticTokensDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SemanticTokensDelta] (val x: Self) extends AnyVal {
     
     inline def setEdits(value: js.Array[SemanticTokensEdit]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
     

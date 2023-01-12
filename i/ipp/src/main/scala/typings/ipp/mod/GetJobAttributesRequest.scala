@@ -17,7 +17,8 @@ object GetJobAttributesRequest {
     __obj.asInstanceOf[GetJobAttributesRequest]
   }
   
-  extension [Self <: GetJobAttributesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetJobAttributesRequest] (val x: Self) extends AnyVal {
     
     inline def `setOperation-attributes-tag`(value: Requestedattributes): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
   }

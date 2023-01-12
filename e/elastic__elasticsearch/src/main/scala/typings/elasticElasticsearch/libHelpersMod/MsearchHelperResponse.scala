@@ -31,7 +31,8 @@ object MsearchHelperResponse {
     __obj.asInstanceOf[MsearchHelperResponse[TDocument]]
   }
   
-  extension [Self <: MsearchHelperResponse[?], TDocument](x: Self & MsearchHelperResponse[TDocument]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MsearchHelperResponse[?], TDocument] (val x: Self & MsearchHelperResponse[TDocument]) extends AnyVal {
     
     inline def setBody(value: SearchResponse[TDocument, Record[AggregateName, AggregationsAggregate]]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

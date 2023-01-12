@@ -18,7 +18,8 @@ object ListPayload {
     __obj.asInstanceOf[ListPayload]
   }
   
-  extension [Self <: ListPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPayload] (val x: Self) extends AnyVal {
     
     inline def setUsers(value: js.Array[ResponseModel]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     

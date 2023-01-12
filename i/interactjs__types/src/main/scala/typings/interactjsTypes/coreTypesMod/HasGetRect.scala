@@ -15,7 +15,8 @@ object HasGetRect {
     __obj.asInstanceOf[HasGetRect]
   }
   
-  extension [Self <: HasGetRect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasGetRect] (val x: Self) extends AnyVal {
     
     inline def setGetRect(value: Element => Rect): Self = StObject.set(x, "getRect", js.Any.fromFunction1(value))
   }

@@ -18,7 +18,8 @@ object UpdateSipMediaApplicationResponse {
     __obj.asInstanceOf[UpdateSipMediaApplicationResponse]
   }
   
-  extension [Self <: UpdateSipMediaApplicationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSipMediaApplicationResponse] (val x: Self) extends AnyVal {
     
     inline def setSipMediaApplication(value: SipMediaApplication): Self = StObject.set(x, "SipMediaApplication", value.asInstanceOf[js.Any])
     

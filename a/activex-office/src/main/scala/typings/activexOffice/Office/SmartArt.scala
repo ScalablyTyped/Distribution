@@ -55,7 +55,8 @@ object SmartArt {
     __obj.asInstanceOf[SmartArt]
   }
   
-  extension [Self <: SmartArt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartArt] (val x: Self) extends AnyVal {
     
     inline def setAllNodes(value: SmartArtNodes): Self = StObject.set(x, "AllNodes", value.asInstanceOf[js.Any])
     

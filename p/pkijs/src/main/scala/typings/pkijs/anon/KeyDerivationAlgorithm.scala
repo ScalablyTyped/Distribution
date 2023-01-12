@@ -22,7 +22,8 @@ object KeyDerivationAlgorithm {
     __obj.asInstanceOf[KeyDerivationAlgorithm]
   }
   
-  extension [Self <: KeyDerivationAlgorithm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyDerivationAlgorithm] (val x: Self) extends AnyVal {
     
     inline def setEncryptedKey(value: String): Self = StObject.set(x, "encryptedKey", value.asInstanceOf[js.Any])
     

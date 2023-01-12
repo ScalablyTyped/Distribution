@@ -25,7 +25,8 @@ object IdentityType {
     __obj.asInstanceOf[IdentityType]
   }
   
-  extension [Self <: IdentityType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityType] (val x: Self) extends AnyVal {
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

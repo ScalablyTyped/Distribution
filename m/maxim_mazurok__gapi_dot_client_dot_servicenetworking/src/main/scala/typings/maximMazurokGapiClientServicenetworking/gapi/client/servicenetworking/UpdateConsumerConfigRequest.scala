@@ -16,7 +16,8 @@ object UpdateConsumerConfigRequest {
     __obj.asInstanceOf[UpdateConsumerConfigRequest]
   }
   
-  extension [Self <: UpdateConsumerConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateConsumerConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setConsumerConfig(value: ConsumerConfig): Self = StObject.set(x, "consumerConfig", value.asInstanceOf[js.Any])
     

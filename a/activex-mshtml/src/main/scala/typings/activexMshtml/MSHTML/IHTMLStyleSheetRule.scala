@@ -28,7 +28,8 @@ object IHTMLStyleSheetRule {
     __obj.asInstanceOf[IHTMLStyleSheetRule]
   }
   
-  extension [Self <: IHTMLStyleSheetRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHTMLStyleSheetRule] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotIHTMLStyleSheetRule_typekey(value: IHTMLStyleSheetRule): Self = StObject.set(x, "MSHTML.IHTMLStyleSheetRule_typekey", value.asInstanceOf[js.Any])
     

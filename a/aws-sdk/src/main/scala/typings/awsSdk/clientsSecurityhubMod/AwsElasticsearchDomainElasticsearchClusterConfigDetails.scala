@@ -48,7 +48,8 @@ object AwsElasticsearchDomainElasticsearchClusterConfigDetails {
     __obj.asInstanceOf[AwsElasticsearchDomainElasticsearchClusterConfigDetails]
   }
   
-  extension [Self <: AwsElasticsearchDomainElasticsearchClusterConfigDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElasticsearchDomainElasticsearchClusterConfigDetails] (val x: Self) extends AnyVal {
     
     inline def setDedicatedMasterCount(value: Integer): Self = StObject.set(x, "DedicatedMasterCount", value.asInstanceOf[js.Any])
     

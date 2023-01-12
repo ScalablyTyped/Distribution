@@ -66,7 +66,8 @@ object CreatePolicy {
     __obj.asInstanceOf[CreatePolicy]
   }
   
-  extension [Self <: CreatePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePolicy] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

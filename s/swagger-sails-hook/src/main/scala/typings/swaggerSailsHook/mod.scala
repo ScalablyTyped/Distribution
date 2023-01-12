@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[SailsHook]
     }
     
-    extension [Self <: SailsHook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SailsHook] (val x: Self) extends AnyVal {
       
       inline def setInitialize(value: js.Function0[Any] => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
       

@@ -51,7 +51,8 @@ object Controls {
       __obj.asInstanceOf[INavigationOptions]
     }
     
-    extension [Self <: INavigationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INavigationOptions] (val x: Self) extends AnyVal {
       
       inline def setAppHelpPageOnClick(value: String): Self = StObject.set(x, "appHelpPageOnClick", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object Controls {
       __obj.asInstanceOf[ISettingsLink]
     }
     
-    extension [Self <: ISettingsLink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISettingsLink] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -225,7 +227,8 @@ object Controls {
       __obj.asInstanceOf[Navigation]
     }
     
-    extension [Self <: Navigation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Navigation] (val x: Self) extends AnyVal {
       
       inline def setGet_appHelpPageOnClick(value: () => String): Self = StObject.set(x, "get_appHelpPageOnClick", js.Any.fromFunction0(value))
       

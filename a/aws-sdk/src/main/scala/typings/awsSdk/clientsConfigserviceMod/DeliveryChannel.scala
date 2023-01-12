@@ -43,7 +43,8 @@ object DeliveryChannel {
     __obj.asInstanceOf[DeliveryChannel]
   }
   
-  extension [Self <: DeliveryChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliveryChannel] (val x: Self) extends AnyVal {
     
     inline def setConfigSnapshotDeliveryProperties(value: ConfigSnapshotDeliveryProperties): Self = StObject.set(x, "configSnapshotDeliveryProperties", value.asInstanceOf[js.Any])
     

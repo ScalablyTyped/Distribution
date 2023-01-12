@@ -33,7 +33,8 @@ object CreateVirtualClusterRequest {
     __obj.asInstanceOf[CreateVirtualClusterRequest]
   }
   
-  extension [Self <: CreateVirtualClusterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVirtualClusterRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

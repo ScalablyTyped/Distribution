@@ -172,7 +172,8 @@ object mod {
       __obj.asInstanceOf[KramedOptions]
     }
     
-    extension [Self <: KramedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KramedOptions] (val x: Self) extends AnyVal {
       
       inline def setBreaks(value: Boolean): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
       
@@ -233,7 +234,8 @@ object mod {
       __obj.asInstanceOf[KramedParser]
     }
     
-    extension [Self <: KramedParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KramedParser] (val x: Self) extends AnyVal {
       
       inline def setParse(value: js.Array[Any] => String): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     }
@@ -306,7 +308,8 @@ object mod {
       __obj.asInstanceOf[KramedRenderer]
     }
     
-    extension [Self <: KramedRenderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KramedRenderer] (val x: Self) extends AnyVal {
       
       inline def setBlockquote(value: String => String): Self = StObject.set(x, "blockquote", js.Any.fromFunction1(value))
       

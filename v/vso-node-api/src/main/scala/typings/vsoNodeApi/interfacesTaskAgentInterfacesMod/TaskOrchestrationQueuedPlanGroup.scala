@@ -32,7 +32,8 @@ object TaskOrchestrationQueuedPlanGroup {
     __obj.asInstanceOf[TaskOrchestrationQueuedPlanGroup]
   }
   
-  extension [Self <: TaskOrchestrationQueuedPlanGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskOrchestrationQueuedPlanGroup] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: TaskOrchestrationOwner): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

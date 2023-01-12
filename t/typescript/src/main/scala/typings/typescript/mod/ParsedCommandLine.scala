@@ -31,7 +31,8 @@ object ParsedCommandLine {
     __obj.asInstanceOf[ParsedCommandLine]
   }
   
-  extension [Self <: ParsedCommandLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedCommandLine] (val x: Self) extends AnyVal {
     
     inline def setCompileOnSave(value: Boolean): Self = StObject.set(x, "compileOnSave", value.asInstanceOf[js.Any])
     

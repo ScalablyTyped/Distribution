@@ -49,7 +49,8 @@ object srcIvySymbolMod {
       __obj.asInstanceOf[EmitFileResult]
     }
     
-    extension [Self <: EmitFileResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmitFileResult] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

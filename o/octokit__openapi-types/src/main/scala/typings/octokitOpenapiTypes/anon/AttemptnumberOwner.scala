@@ -25,7 +25,8 @@ object AttemptnumberOwner {
     __obj.asInstanceOf[AttemptnumberOwner]
   }
   
-  extension [Self <: AttemptnumberOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttemptnumberOwner] (val x: Self) extends AnyVal {
     
     inline def setAttempt_number(value: Double): Self = StObject.set(x, "attempt_number", value.asInstanceOf[js.Any])
     

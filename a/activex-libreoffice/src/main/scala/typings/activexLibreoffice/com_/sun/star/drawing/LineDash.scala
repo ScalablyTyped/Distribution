@@ -32,7 +32,8 @@ object LineDash {
     __obj.asInstanceOf[LineDash]
   }
   
-  extension [Self <: LineDash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineDash] (val x: Self) extends AnyVal {
     
     inline def setDashLen(value: Double): Self = StObject.set(x, "DashLen", value.asInstanceOf[js.Any])
     

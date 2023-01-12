@@ -19,7 +19,8 @@ object ComponentSpec {
     __obj.asInstanceOf[ComponentSpec[P, S]]
   }
   
-  extension [Self <: ComponentSpec[?, ?], P, S](x: Self & (ComponentSpec[P, S])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentSpec[?, ?], P, S] (val x: Self & (ComponentSpec[P, S])) extends AnyVal {
     
     inline def setRender(value: () => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
   }

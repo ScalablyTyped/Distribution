@@ -51,7 +51,8 @@ object EqlSearchRequest {
     __obj.asInstanceOf[EqlSearchRequest]
   }
   
-  extension [Self <: EqlSearchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EqlSearchRequest] (val x: Self) extends AnyVal {
     
     inline def setAllow_no_indices(value: Boolean): Self = StObject.set(x, "allow_no_indices", value.asInstanceOf[js.Any])
     

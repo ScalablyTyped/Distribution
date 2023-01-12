@@ -18,7 +18,8 @@ object MultiCacheQueryOptions {
     __obj.asInstanceOf[MultiCacheQueryOptions]
   }
   
-  extension [Self <: MultiCacheQueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiCacheQueryOptions] (val x: Self) extends AnyVal {
     
     inline def setCacheName(value: java.lang.String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
     

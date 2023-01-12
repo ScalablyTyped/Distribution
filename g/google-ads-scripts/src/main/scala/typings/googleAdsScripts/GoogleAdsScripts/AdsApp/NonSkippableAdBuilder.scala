@@ -48,7 +48,8 @@ object NonSkippableAdBuilder {
     __obj.asInstanceOf[NonSkippableAdBuilder]
   }
   
-  extension [Self <: NonSkippableAdBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonSkippableAdBuilder] (val x: Self) extends AnyVal {
     
     inline def setWithAdName(value: String => NonSkippableAdBuilder): Self = StObject.set(x, "withAdName", js.Any.fromFunction1(value))
     

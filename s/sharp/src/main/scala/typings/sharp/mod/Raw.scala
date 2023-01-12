@@ -23,7 +23,8 @@ object Raw {
     __obj.asInstanceOf[Raw]
   }
   
-  extension [Self <: Raw](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Raw] (val x: Self) extends AnyVal {
     
     inline def setChannels(value: `1` | `2` | `3` | `4`): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     

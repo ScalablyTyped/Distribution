@@ -21,7 +21,8 @@ object DatePickerLocale {
     __obj.asInstanceOf[DatePickerLocale]
   }
   
-  extension [Self <: DatePickerLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatePickerLocale] (val x: Self) extends AnyVal {
     
     inline def setDatePickerLocale(value: Am): Self = StObject.set(x, "DatePickerLocale", value.asInstanceOf[js.Any])
     

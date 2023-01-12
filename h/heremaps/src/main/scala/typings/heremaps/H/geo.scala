@@ -84,7 +84,8 @@ object geo {
       __obj.asInstanceOf[AbstractGeometry]
     }
     
-    extension [Self <: AbstractGeometry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractGeometry] (val x: Self) extends AnyVal {
       
       inline def setGetBoundingBox(value: () => Rect): Self = StObject.set(x, "getBoundingBox", js.Any.fromFunction0(value))
       
@@ -121,7 +122,8 @@ object geo {
       __obj.asInstanceOf[IPoint]
     }
     
-    extension [Self <: IPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPoint] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: Altitude): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -553,7 +555,8 @@ object geo {
         __obj.asInstanceOf[Direction]
       }
       
-      extension [Self <: Direction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
         
         inline def setNORTH(value: Double): Self = StObject.set(x, "NORTH", value.asInstanceOf[js.Any])
         

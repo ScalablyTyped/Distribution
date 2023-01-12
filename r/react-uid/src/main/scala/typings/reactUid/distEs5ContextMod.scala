@@ -56,7 +56,8 @@ object distEs5ContextMod {
       __obj.asInstanceOf[UIDProps]
     }
     
-    extension [Self <: UIDProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIDProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: (String, js.Function2[/* item */ Any, /* index */ js.UndefOr[Double], String]) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       

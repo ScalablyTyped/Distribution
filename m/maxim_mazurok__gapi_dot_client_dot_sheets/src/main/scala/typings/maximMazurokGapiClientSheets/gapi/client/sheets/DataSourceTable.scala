@@ -34,7 +34,8 @@ object DataSourceTable {
     __obj.asInstanceOf[DataSourceTable]
   }
   
-  extension [Self <: DataSourceTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceTable] (val x: Self) extends AnyVal {
     
     inline def setColumnSelectionType(value: String): Self = StObject.set(x, "columnSelectionType", value.asInstanceOf[js.Any])
     

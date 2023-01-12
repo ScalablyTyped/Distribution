@@ -51,7 +51,8 @@ object libSpaceCompactMod {
       __obj.asInstanceOf[SpaceCompactItemContextType]
     }
     
-    extension [Self <: SpaceCompactItemContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpaceCompactItemContextType] (val x: Self) extends AnyVal {
       
       inline def setCompactDirection(value: horizontal | vertical): Self = StObject.set(x, "compactDirection", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object libSpaceCompactMod {
       __obj.asInstanceOf[SpaceCompactProps]
     }
     
-    extension [Self <: SpaceCompactProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpaceCompactProps] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       

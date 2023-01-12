@@ -31,7 +31,8 @@ object libInterfaceMod {
       __obj.asInstanceOf[AttributeCfg]
     }
     
-    extension [Self <: AttributeCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeCfg] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: CallbackType): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       

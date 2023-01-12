@@ -18,7 +18,8 @@ object Conflicts {
     __obj.asInstanceOf[Conflicts]
   }
   
-  extension [Self <: Conflicts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conflicts] (val x: Self) extends AnyVal {
     
     inline def setConflicts(value: js.Array[Conflict]): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
     

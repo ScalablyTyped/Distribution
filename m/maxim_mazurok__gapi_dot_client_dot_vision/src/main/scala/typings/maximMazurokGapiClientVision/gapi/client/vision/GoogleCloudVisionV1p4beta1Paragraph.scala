@@ -29,7 +29,8 @@ object GoogleCloudVisionV1p4beta1Paragraph {
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1Paragraph]
   }
   
-  extension [Self <: GoogleCloudVisionV1p4beta1Paragraph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p4beta1Paragraph] (val x: Self) extends AnyVal {
     
     inline def setBoundingBox(value: GoogleCloudVisionV1p4beta1BoundingPoly): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
     

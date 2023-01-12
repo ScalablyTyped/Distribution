@@ -23,7 +23,8 @@ object DescribeBackupsResponse {
     __obj.asInstanceOf[DescribeBackupsResponse]
   }
   
-  extension [Self <: DescribeBackupsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBackupsResponse] (val x: Self) extends AnyVal {
     
     inline def setBackups(value: Backups): Self = StObject.set(x, "Backups", value.asInstanceOf[js.Any])
     

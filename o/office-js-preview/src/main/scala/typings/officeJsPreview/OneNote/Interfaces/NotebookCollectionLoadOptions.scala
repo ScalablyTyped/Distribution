@@ -81,7 +81,8 @@ object NotebookCollectionLoadOptions {
     __obj.asInstanceOf[NotebookCollectionLoadOptions]
   }
   
-  extension [Self <: NotebookCollectionLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

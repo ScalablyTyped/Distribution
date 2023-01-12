@@ -15,7 +15,8 @@ object EditorStringOptions {
     __obj.asInstanceOf[EditorStringOptions]
   }
   
-  extension [Self <: EditorStringOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorStringOptions] (val x: Self) extends AnyVal {
     
     inline def setVoids(value: Boolean): Self = StObject.set(x, "voids", value.asInstanceOf[js.Any])
     

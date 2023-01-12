@@ -25,7 +25,8 @@ object BatchGetDocumentsRequest {
     __obj.asInstanceOf[BatchGetDocumentsRequest]
   }
   
-  extension [Self <: BatchGetDocumentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetDocumentsRequest] (val x: Self) extends AnyVal {
     
     inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     

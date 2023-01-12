@@ -33,7 +33,8 @@ object PrivateLinkConfig {
     __obj.asInstanceOf[PrivateLinkConfig]
   }
   
-  extension [Self <: PrivateLinkConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateLinkConfig] (val x: Self) extends AnyVal {
     
     inline def setPrivateLinkEndpoint(value: Endpoint): Self = StObject.set(x, "PrivateLinkEndpoint", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object TotalFileCount {
     __obj.asInstanceOf[TotalFileCount]
   }
   
-  extension [Self <: TotalFileCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TotalFileCount] (val x: Self) extends AnyVal {
     
     inline def setBuildID(value: String): Self = StObject.set(x, "buildID", value.asInstanceOf[js.Any])
     

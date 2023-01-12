@@ -108,7 +108,8 @@ object ReservationPurchaseRecommendationDetail {
     __obj.asInstanceOf[ReservationPurchaseRecommendationDetail]
   }
   
-  extension [Self <: ReservationPurchaseRecommendationDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservationPurchaseRecommendationDetail] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: GenericString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

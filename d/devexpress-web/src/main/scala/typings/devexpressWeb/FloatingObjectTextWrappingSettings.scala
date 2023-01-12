@@ -53,7 +53,8 @@ object FloatingObjectTextWrappingSettings {
     __obj.asInstanceOf[FloatingObjectTextWrappingSettings]
   }
   
-  extension [Self <: FloatingObjectTextWrappingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloatingObjectTextWrappingSettings] (val x: Self) extends AnyVal {
     
     inline def setBottomDistance(value: Double): Self = StObject.set(x, "bottomDistance", value.asInstanceOf[js.Any])
     

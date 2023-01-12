@@ -21,7 +21,8 @@ object CodemirrorOptions {
     __obj.asInstanceOf[CodemirrorOptions]
   }
   
-  extension [Self <: CodemirrorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodemirrorOptions] (val x: Self) extends AnyVal {
     
     inline def setHtmlNode(value: Boolean): Self = StObject.set(x, "htmlNode", value.asInstanceOf[js.Any])
     

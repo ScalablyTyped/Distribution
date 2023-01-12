@@ -22,7 +22,8 @@ object GoogleAnalyticsAdminV1alphaListFirebaseLinksResponse {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaListFirebaseLinksResponse]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaListFirebaseLinksResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaListFirebaseLinksResponse] (val x: Self) extends AnyVal {
     
     inline def setFirebaseLinks(value: js.Array[GoogleAnalyticsAdminV1alphaFirebaseLink]): Self = StObject.set(x, "firebaseLinks", value.asInstanceOf[js.Any])
     

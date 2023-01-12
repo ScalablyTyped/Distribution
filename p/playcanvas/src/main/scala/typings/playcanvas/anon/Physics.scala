@@ -17,7 +17,8 @@ object Physics {
     __obj.asInstanceOf[Physics]
   }
   
-  extension [Self <: Physics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Physics] (val x: Self) extends AnyVal {
     
     inline def setPhysics(value: Gravity): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
     

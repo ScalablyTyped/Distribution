@@ -19,7 +19,8 @@ object SourceInstanceParams {
     __obj.asInstanceOf[SourceInstanceParams]
   }
   
-  extension [Self <: SourceInstanceParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceInstanceParams] (val x: Self) extends AnyVal {
     
     inline def setDiskConfigs(value: js.Array[DiskInstantiationConfig]): Self = StObject.set(x, "diskConfigs", value.asInstanceOf[js.Any])
     

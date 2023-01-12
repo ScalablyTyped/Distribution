@@ -49,7 +49,8 @@ object RecordLanguagesstring {
     __obj.asInstanceOf[RecordLanguagesstring]
   }
   
-  extension [Self <: RecordLanguagesstring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordLanguagesstring] (val x: Self) extends AnyVal {
     
     inline def setDe(value: String): Self = StObject.set(x, "de", value.asInstanceOf[js.Any])
     

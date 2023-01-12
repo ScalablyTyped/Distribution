@@ -56,7 +56,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CellOptions]
     }
     
-    extension [Self <: CellOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellOptions] (val x: Self) extends AnyVal {
       
       inline def setChars(value: PartialRecordCharNamestri): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
       
@@ -214,7 +215,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TableConstructorOptions]
     }
     
-    extension [Self <: TableConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setChars(value: PartialRecordCharNamestri): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
       
@@ -294,7 +296,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TableInstanceOptions]
     }
     
-    extension [Self <: TableInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setChars(value: RecordCharNamestring): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
       
@@ -336,7 +339,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TableOptions]
     }
     
-    extension [Self <: TableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableOptions] (val x: Self) extends AnyVal {
       
       inline def setColAligns(value: js.Array[HorizontalAlignment]): Self = StObject.set(x, "colAligns", value.asInstanceOf[js.Any])
       

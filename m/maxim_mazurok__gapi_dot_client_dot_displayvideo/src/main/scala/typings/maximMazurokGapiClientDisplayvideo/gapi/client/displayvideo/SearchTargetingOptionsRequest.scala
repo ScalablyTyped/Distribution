@@ -34,7 +34,8 @@ object SearchTargetingOptionsRequest {
     __obj.asInstanceOf[SearchTargetingOptionsRequest]
   }
   
-  extension [Self <: SearchTargetingOptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchTargetingOptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     

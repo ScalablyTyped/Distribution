@@ -61,7 +61,8 @@ object XUnitConversion {
     __obj.asInstanceOf[XUnitConversion]
   }
   
-  extension [Self <: XUnitConversion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUnitConversion] (val x: Self) extends AnyVal {
     
     inline def setConvertPointToLogic(value: (Point, Double) => Point): Self = StObject.set(x, "convertPointToLogic", js.Any.fromFunction2(value))
     

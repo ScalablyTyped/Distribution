@@ -26,7 +26,8 @@ object ContinuousIntegration {
     __obj.asInstanceOf[ContinuousIntegration]
   }
   
-  extension [Self <: ContinuousIntegration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinuousIntegration] (val x: Self) extends AnyVal {
     
     inline def setContinuousIntegration(value: scala.Double): Self = StObject.set(x, "continuousIntegration", value.asInstanceOf[js.Any])
     

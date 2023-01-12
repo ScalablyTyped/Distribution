@@ -19,7 +19,8 @@ object SlmRetention {
     __obj.asInstanceOf[SlmRetention]
   }
   
-  extension [Self <: SlmRetention](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlmRetention] (val x: Self) extends AnyVal {
     
     inline def setExpire_after(value: Duration): Self = StObject.set(x, "expire_after", value.asInstanceOf[js.Any])
     

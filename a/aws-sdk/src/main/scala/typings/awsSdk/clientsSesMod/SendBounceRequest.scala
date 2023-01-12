@@ -47,7 +47,8 @@ object SendBounceRequest {
     __obj.asInstanceOf[SendBounceRequest]
   }
   
-  extension [Self <: SendBounceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendBounceRequest] (val x: Self) extends AnyVal {
     
     inline def setBounceSender(value: Address): Self = StObject.set(x, "BounceSender", value.asInstanceOf[js.Any])
     

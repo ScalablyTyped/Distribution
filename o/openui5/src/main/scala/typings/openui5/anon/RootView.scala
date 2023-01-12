@@ -36,7 +36,8 @@ object RootView {
     __obj.asInstanceOf[RootView]
   }
   
-  extension [Self <: RootView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RootView] (val x: Self) extends AnyVal {
     
     inline def setRootView(value: String): Self = StObject.set(x, "rootView", value.asInstanceOf[js.Any])
     

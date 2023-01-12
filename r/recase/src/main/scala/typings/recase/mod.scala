@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[Recase]
     }
     
-    extension [Self <: Recase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Recase] (val x: Self) extends AnyVal {
       
       inline def setCamelCopy(value: Any => Any): Self = StObject.set(x, "camelCopy", js.Any.fromFunction1(value))
       

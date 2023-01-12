@@ -57,7 +57,8 @@ object ResourceTriggerId {
     __obj.asInstanceOf[ResourceTriggerId]
   }
   
-  extension [Self <: ResourceTriggerId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceTriggerId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

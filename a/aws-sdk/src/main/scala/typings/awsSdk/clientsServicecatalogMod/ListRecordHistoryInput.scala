@@ -38,7 +38,8 @@ object ListRecordHistoryInput {
     __obj.asInstanceOf[ListRecordHistoryInput]
   }
   
-  extension [Self <: ListRecordHistoryInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRecordHistoryInput] (val x: Self) extends AnyVal {
     
     inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     

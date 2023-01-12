@@ -27,7 +27,8 @@ object dataTableColumnStringMod {
       __obj.asInstanceOf[FilterParameters]
     }
     
-    extension [Self <: FilterParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterParameters] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object dataTableColumnStringMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setLineClamp(value: Double): Self = StObject.set(x, "lineClamp", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object OpenExternalOptions {
     __obj.asInstanceOf[OpenExternalOptions]
   }
   
-  extension [Self <: OpenExternalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenExternalOptions] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: Boolean): Self = StObject.set(x, "activate", value.asInstanceOf[js.Any])
     

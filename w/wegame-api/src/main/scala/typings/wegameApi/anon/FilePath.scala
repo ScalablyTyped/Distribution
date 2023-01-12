@@ -24,7 +24,8 @@ object FilePath {
     __obj.asInstanceOf[FilePath]
   }
   
-  extension [Self <: FilePath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilePath] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

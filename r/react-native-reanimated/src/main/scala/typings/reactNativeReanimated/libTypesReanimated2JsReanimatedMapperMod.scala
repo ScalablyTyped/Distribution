@@ -141,7 +141,8 @@ object libTypesReanimated2JsReanimatedMapperMod {
       __obj.asInstanceOf[Mapper[T]]
     }
     
-    extension [Self <: Mapper[?], T](x: Self & Mapper[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mapper[?], T] (val x: Self & Mapper[T]) extends AnyVal {
       
       inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       

@@ -44,7 +44,8 @@ object ContextCreatedat {
     __obj.asInstanceOf[ContextCreatedat]
   }
   
-  extension [Self <: ContextCreatedat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextCreatedat] (val x: Self) extends AnyVal {
     
     inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
     

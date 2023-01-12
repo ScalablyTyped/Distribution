@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[MappedPositionbiasnumberu]
     }
     
-    extension [Self <: MappedPositionbiasnumberu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MappedPositionbiasnumberu] (val x: Self) extends AnyVal {
       
       inline def setBias(value: Double): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object anon {
       __obj.asInstanceOf[Positionbiasnumberundefin]
     }
     
-    extension [Self <: Positionbiasnumberundefin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Positionbiasnumberundefin] (val x: Self) extends AnyVal {
       
       inline def setBias(value: Double): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
       

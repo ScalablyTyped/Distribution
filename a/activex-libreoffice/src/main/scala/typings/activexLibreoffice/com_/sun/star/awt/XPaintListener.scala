@@ -28,7 +28,8 @@ object XPaintListener {
     __obj.asInstanceOf[XPaintListener]
   }
   
-  extension [Self <: XPaintListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPaintListener] (val x: Self) extends AnyVal {
     
     inline def setWindowPaint(value: PaintEvent => Unit): Self = StObject.set(x, "windowPaint", js.Any.fromFunction1(value))
   }

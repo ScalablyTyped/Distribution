@@ -42,7 +42,8 @@ object EntityMention {
     __obj.asInstanceOf[EntityMention]
   }
   
-  extension [Self <: EntityMention](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityMention] (val x: Self) extends AnyVal {
     
     inline def setCertaintyAssessment(value: Feature): Self = StObject.set(x, "certaintyAssessment", value.asInstanceOf[js.Any])
     

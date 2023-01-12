@@ -33,7 +33,8 @@ object AssociateTimeSeriesToAssetPropertyRequest {
     __obj.asInstanceOf[AssociateTimeSeriesToAssetPropertyRequest]
   }
   
-  extension [Self <: AssociateTimeSeriesToAssetPropertyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateTimeSeriesToAssetPropertyRequest] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: PropertyAlias): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

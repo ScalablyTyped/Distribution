@@ -58,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Animated]
     }
     
-    extension [Self <: Animated](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animated] (val x: Self) extends AnyVal {
       
       inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
@@ -148,7 +149,8 @@ object anon {
       __obj.asInstanceOf[AppName]
     }
     
-    extension [Self <: AppName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppName] (val x: Self) extends AnyVal {
       
       inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
@@ -187,7 +189,8 @@ object anon {
       __obj.asInstanceOf[BackgroundColor]
     }
     
-    extension [Self <: BackgroundColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackgroundColor] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -216,7 +219,8 @@ object anon {
       __obj.asInstanceOf[Easing[V]]
     }
     
-    extension [Self <: Easing[?], V](x: Self & Easing[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Easing[?], V] (val x: Self & Easing[V]) extends AnyVal {
       
       inline def setEasing(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_info.animationEasing */ Any

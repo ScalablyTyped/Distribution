@@ -22,7 +22,8 @@ object AdaptationSetRemovedNoCapabilitiesEvent {
     __obj.asInstanceOf[AdaptationSetRemovedNoCapabilitiesEvent]
   }
   
-  extension [Self <: AdaptationSetRemovedNoCapabilitiesEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdaptationSetRemovedNoCapabilitiesEvent] (val x: Self) extends AnyVal {
     
     inline def setAdaptationSet(value: js.Object): Self = StObject.set(x, "adaptationSet", value.asInstanceOf[js.Any])
     

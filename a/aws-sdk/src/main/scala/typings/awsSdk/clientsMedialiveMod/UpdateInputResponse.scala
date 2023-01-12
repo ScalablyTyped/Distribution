@@ -15,7 +15,8 @@ object UpdateInputResponse {
     __obj.asInstanceOf[UpdateInputResponse]
   }
   
-  extension [Self <: UpdateInputResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateInputResponse] (val x: Self) extends AnyVal {
     
     inline def setInput(value: Input): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     

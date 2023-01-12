@@ -61,7 +61,8 @@ object XCachedDynamicResultSetStubFactory {
     __obj.asInstanceOf[XCachedDynamicResultSetStubFactory]
   }
   
-  extension [Self <: XCachedDynamicResultSetStubFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCachedDynamicResultSetStubFactory] (val x: Self) extends AnyVal {
     
     inline def setConnectToCache(
       value: (XDynamicResultSet, XDynamicResultSet, SeqEquiv[NumberedSortingInfo], XAnyCompareFactory) => Unit

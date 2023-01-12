@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
@@ -55,7 +56,8 @@ object mod {
       __obj.asInstanceOf[IndexRange]
     }
     
-    extension [Self <: IndexRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexRange] (val x: Self) extends AnyVal {
       
       inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object mod {
       __obj.asInstanceOf[OverscanIndexRange]
     }
     
-    extension [Self <: OverscanIndexRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverscanIndexRange] (val x: Self) extends AnyVal {
       
       inline def setOverscanStartIndex(value: Double): Self = StObject.set(x, "overscanStartIndex", value.asInstanceOf[js.Any])
       
@@ -99,7 +102,8 @@ object mod {
       __obj.asInstanceOf[PositionInfo]
     }
     
-    extension [Self <: PositionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositionInfo] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -122,7 +126,8 @@ object mod {
       __obj.asInstanceOf[ScrollEventData]
     }
     
-    extension [Self <: ScrollEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollEventData] (val x: Self) extends AnyVal {
       
       inline def setClientHeight(value: Double): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
       
@@ -145,7 +150,8 @@ object mod {
       __obj.asInstanceOf[ScrollPosition]
     }
     
-    extension [Self <: ScrollPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollPosition] (val x: Self) extends AnyVal {
       
       inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
       
@@ -178,7 +184,8 @@ object mod {
       __obj.asInstanceOf[SizeInfo]
     }
     
-    extension [Self <: SizeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeInfo] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

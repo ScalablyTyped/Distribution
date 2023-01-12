@@ -29,7 +29,8 @@ object Rejected {
     __obj.asInstanceOf[Rejected]
   }
   
-  extension [Self <: Rejected](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rejected] (val x: Self) extends AnyVal {
     
     inline def setApproved(value: scala.Double): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
     

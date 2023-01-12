@@ -26,7 +26,8 @@ object Assetid {
     __obj.asInstanceOf[Assetid]
   }
   
-  extension [Self <: Assetid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Assetid] (val x: Self) extends AnyVal {
     
     inline def setAsset_id(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['asset-id'] */ js.Any

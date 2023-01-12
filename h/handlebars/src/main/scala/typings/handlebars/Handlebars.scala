@@ -38,7 +38,8 @@ object Handlebars {
       __obj.asInstanceOf[Exception]
     }
     
-    extension [Self <: Exception](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exception] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object Handlebars {
       __obj.asInstanceOf[HelperOptions]
     }
     
-    extension [Self <: HelperOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelperOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -180,7 +182,8 @@ object Handlebars {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreStandalone(value: Boolean): Self = StObject.set(x, "ignoreStandalone", value.asInstanceOf[js.Any])
       
@@ -211,7 +214,8 @@ object Handlebars {
       __obj.asInstanceOf[ResolvePartialOptions]
     }
     
-    extension [Self <: ResolvePartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvePartialOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -266,7 +270,8 @@ object Handlebars {
       __obj.asInstanceOf[typings.handlebars.Handlebars.RuntimeOptions]
     }
     
-    extension [Self <: typings.handlebars.Handlebars.RuntimeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.handlebars.Handlebars.RuntimeOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowCallsToHelperMissing(value: Boolean): Self = StObject.set(x, "allowCallsToHelperMissing", value.asInstanceOf[js.Any])
       
@@ -333,7 +338,8 @@ object Handlebars {
       __obj.asInstanceOf[SafeString]
     }
     
-    extension [Self <: SafeString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SafeString] (val x: Self) extends AnyVal {
       
       inline def setToHTML(value: () => String): Self = StObject.set(x, "toHTML", js.Any.fromFunction0(value))
     }

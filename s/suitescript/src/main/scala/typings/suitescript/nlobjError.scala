@@ -98,7 +98,8 @@ object nlobjError {
     __obj.asInstanceOf[nlobjError]
   }
   
-  extension [Self <: nlobjError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: nlobjError] (val x: Self) extends AnyVal {
     
     inline def setGetCode(value: () => String): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
     

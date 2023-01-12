@@ -44,7 +44,8 @@ object libWorkspaceMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setServerSettings(value: ISettings): Self = StObject.set(x, "serverSettings", value.asInstanceOf[js.Any])
         
@@ -82,7 +83,8 @@ object libWorkspaceMod {
         __obj.asInstanceOf[IWorkspace]
       }
       
-      extension [Self <: IWorkspace](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IWorkspace] (val x: Self) extends AnyVal {
         
         inline def setData(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         

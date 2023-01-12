@@ -31,7 +31,8 @@ object `403ContentApplicationjsonErrors` {
     __obj.asInstanceOf[`403ContentApplicationjsonErrors`]
   }
   
-  extension [Self <: `403ContentApplicationjsonErrors`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `403ContentApplicationjsonErrors`] (val x: Self) extends AnyVal {
     
     inline def set304(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_modified'] */ js.Any

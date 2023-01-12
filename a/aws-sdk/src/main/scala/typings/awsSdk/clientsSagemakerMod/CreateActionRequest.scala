@@ -50,7 +50,8 @@ object CreateActionRequest {
     __obj.asInstanceOf[CreateActionRequest]
   }
   
-  extension [Self <: CreateActionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateActionRequest] (val x: Self) extends AnyVal {
     
     inline def setActionName(value: ExperimentEntityName): Self = StObject.set(x, "ActionName", value.asInstanceOf[js.Any])
     

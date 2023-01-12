@@ -20,7 +20,8 @@ object ClientFind {
     __obj.asInstanceOf[ClientFind]
   }
   
-  extension [Self <: ClientFind](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientFind] (val x: Self) extends AnyVal {
     
     inline def setClid(value: String): Self = StObject.set(x, "clid", value.asInstanceOf[js.Any])
     

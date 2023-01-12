@@ -17,7 +17,8 @@ object RequestBodyContentApplicationjsonExcludegitdata {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonExcludegitdata]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonExcludegitdata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonExcludegitdata] (val x: Self) extends AnyVal {
     
     inline def setRequestBody(value: ContentApplicationjsonExcludegitdata): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

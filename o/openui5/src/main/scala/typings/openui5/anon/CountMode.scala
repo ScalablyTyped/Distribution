@@ -38,7 +38,8 @@ object CountMode {
     __obj.asInstanceOf[CountMode]
   }
   
-  extension [Self <: CountMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountMode] (val x: Self) extends AnyVal {
     
     inline def setCountMode(
       value: typings.openui5.sapUiModelOdataCountModeMod.CountMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CountMode * / any */ String)

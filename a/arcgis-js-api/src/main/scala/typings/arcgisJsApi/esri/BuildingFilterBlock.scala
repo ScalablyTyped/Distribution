@@ -34,7 +34,8 @@ object BuildingFilterBlock {
     __obj.asInstanceOf[BuildingFilterBlock]
   }
   
-  extension [Self <: BuildingFilterBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildingFilterBlock] (val x: Self) extends AnyVal {
     
     inline def setFilterExpression(value: String): Self = StObject.set(x, "filterExpression", value.asInstanceOf[js.Any])
     

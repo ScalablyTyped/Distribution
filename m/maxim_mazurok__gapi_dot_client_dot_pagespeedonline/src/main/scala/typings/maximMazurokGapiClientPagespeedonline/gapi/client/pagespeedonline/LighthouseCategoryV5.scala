@@ -31,7 +31,8 @@ object LighthouseCategoryV5 {
     __obj.asInstanceOf[LighthouseCategoryV5]
   }
   
-  extension [Self <: LighthouseCategoryV5](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LighthouseCategoryV5] (val x: Self) extends AnyVal {
     
     inline def setAuditRefs(value: js.Array[AuditRefs]): Self = StObject.set(x, "auditRefs", value.asInstanceOf[js.Any])
     

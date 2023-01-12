@@ -141,7 +141,8 @@ object cssgrid {
       __obj.asInstanceOf[IGridConfigurable]
     }
     
-    extension [Self <: IGridConfigurable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGridConfigurable] (val x: Self) extends AnyVal {
       
       inline def setGetGridDomRefs(value: () => js.Array[HTMLElement | default]): Self = StObject.set(x, "getGridDomRefs", js.Any.fromFunction0(value))
       
@@ -167,7 +168,8 @@ object cssgrid {
       __obj.asInstanceOf[IGridItemLayoutData]
     }
     
-    extension [Self <: IGridItemLayoutData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGridItemLayoutData] (val x: Self) extends AnyVal {
       
       inline def set__implements__sap_ui_layout_cssgrid_IGridItemLayoutData(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_layout_cssgrid_IGridItemLayoutData", value.asInstanceOf[js.Any])
     }

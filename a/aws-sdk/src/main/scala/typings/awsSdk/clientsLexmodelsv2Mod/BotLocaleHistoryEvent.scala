@@ -23,7 +23,8 @@ object BotLocaleHistoryEvent {
     __obj.asInstanceOf[BotLocaleHistoryEvent]
   }
   
-  extension [Self <: BotLocaleHistoryEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BotLocaleHistoryEvent] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: BotLocaleHistoryEventDescription): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

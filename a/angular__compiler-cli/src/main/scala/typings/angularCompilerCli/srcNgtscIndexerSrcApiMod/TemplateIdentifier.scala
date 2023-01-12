@@ -19,7 +19,8 @@ object TemplateIdentifier {
     __obj.asInstanceOf[TemplateIdentifier]
   }
   
-  extension [Self <: TemplateIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateIdentifier] (val x: Self) extends AnyVal {
     
     inline def setKind(value: IdentifierKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

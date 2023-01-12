@@ -80,7 +80,8 @@ object PlotSupertrendAccessibilityPointOptions {
     __obj.asInstanceOf[PlotSupertrendAccessibilityPointOptions]
   }
   
-  extension [Self <: PlotSupertrendAccessibilityPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSupertrendAccessibilityPointOptions] (val x: Self) extends AnyVal {
     
     inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     

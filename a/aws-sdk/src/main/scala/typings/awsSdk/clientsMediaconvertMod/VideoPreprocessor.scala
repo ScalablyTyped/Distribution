@@ -53,7 +53,8 @@ object VideoPreprocessor {
     __obj.asInstanceOf[VideoPreprocessor]
   }
   
-  extension [Self <: VideoPreprocessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoPreprocessor] (val x: Self) extends AnyVal {
     
     inline def setColorCorrector(value: ColorCorrector): Self = StObject.set(x, "ColorCorrector", value.asInstanceOf[js.Any])
     

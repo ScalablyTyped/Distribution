@@ -79,7 +79,8 @@ object popupConfig {
     __obj.asInstanceOf[popupConfig]
   }
   
-  extension [Self <: popupConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: popupConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

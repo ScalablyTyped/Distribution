@@ -21,7 +21,8 @@ object CardanoAuxiliaryDataSupplement {
     __obj.asInstanceOf[CardanoAuxiliaryDataSupplement]
   }
   
-  extension [Self <: CardanoAuxiliaryDataSupplement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoAuxiliaryDataSupplement] (val x: Self) extends AnyVal {
     
     inline def setAuxiliaryDataHash(value: String): Self = StObject.set(x, "auxiliaryDataHash", value.asInstanceOf[js.Any])
     

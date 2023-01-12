@@ -18,7 +18,8 @@ object GetLoggerDefinitionRequest {
     __obj.asInstanceOf[GetLoggerDefinitionRequest]
   }
   
-  extension [Self <: GetLoggerDefinitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLoggerDefinitionRequest] (val x: Self) extends AnyVal {
     
     inline def setLoggerDefinitionId(value: string): Self = StObject.set(x, "LoggerDefinitionId", value.asInstanceOf[js.Any])
   }

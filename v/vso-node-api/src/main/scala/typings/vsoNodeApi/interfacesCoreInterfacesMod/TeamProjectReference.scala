@@ -62,7 +62,8 @@ object TeamProjectReference {
     __obj.asInstanceOf[TeamProjectReference]
   }
   
-  extension [Self <: TeamProjectReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamProjectReference] (val x: Self) extends AnyVal {
     
     inline def setAbbreviation(value: String): Self = StObject.set(x, "abbreviation", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object TypeofTabStripExtend {
     __obj.asInstanceOf[TypeofTabStripExtend]
   }
   
-  extension [Self <: TypeofTabStripExtend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTabStripExtend] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => TabStrip): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

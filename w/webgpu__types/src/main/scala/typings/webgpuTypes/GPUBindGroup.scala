@@ -22,7 +22,8 @@ object GPUBindGroup {
     __obj.asInstanceOf[GPUBindGroup]
   }
   
-  extension [Self <: GPUBindGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUBindGroup] (val x: Self) extends AnyVal {
     
     inline def set__brand(value: typings.webgpuTypes.webgpuTypesStrings.GPUBindGroup): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
   }

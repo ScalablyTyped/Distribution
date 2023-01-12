@@ -284,7 +284,8 @@ object distParserLowLevelASTMod {
       __obj.asInstanceOf[ICompilationUnit]
     }
     
-    extension [Self <: ICompilationUnit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICompilationUnit] (val x: Self) extends AnyVal {
       
       inline def setAbsolutePath(value: () => String): Self = StObject.set(x, "absolutePath", js.Any.fromFunction0(value))
       
@@ -464,7 +465,8 @@ object distParserLowLevelASTMod {
       __obj.asInstanceOf[ILowLevelEnvironment]
     }
     
-    extension [Self <: ILowLevelEnvironment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILowLevelEnvironment] (val x: Self) extends AnyVal {
       
       inline def setCreateProject(value: String => IProject): Self = StObject.set(x, "createProject", js.Any.fromFunction1(value))
     }
@@ -535,7 +537,8 @@ object distParserLowLevelASTMod {
       __obj.asInstanceOf[IncludeReference]
     }
     
-    extension [Self <: IncludeReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncludeReference] (val x: Self) extends AnyVal {
       
       inline def setAsString(value: () => String): Self = StObject.set(x, "asString", js.Any.fromFunction0(value))
       
@@ -561,7 +564,8 @@ object distParserLowLevelASTMod {
       __obj.asInstanceOf[InsertionPoint]
     }
     
-    extension [Self <: InsertionPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InsertionPoint] (val x: Self) extends AnyVal {
       
       inline def setPoint(value: ILowLevelASTNode): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
       
@@ -582,7 +586,8 @@ object distParserLowLevelASTMod {
       __obj.asInstanceOf[LineMapper]
     }
     
-    extension [Self <: LineMapper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineMapper] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: Double => TextPosition): Self = StObject.set(x, "position", js.Any.fromFunction1(value))
       
@@ -614,7 +619,8 @@ object distParserLowLevelASTMod {
       __obj.asInstanceOf[TextPosition]
     }
     
-    extension [Self <: TextPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextPosition] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

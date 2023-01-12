@@ -56,7 +56,8 @@ object RequestCallback {
     __obj.asInstanceOf[RequestCallback]
   }
   
-  extension [Self <: RequestCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestCallback] (val x: Self) extends AnyVal {
     
     inline def setOndelete(value: Request => Unit): Self = StObject.set(x, "ondelete", js.Any.fromFunction1(value))
     

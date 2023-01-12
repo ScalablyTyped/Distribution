@@ -18,7 +18,8 @@ object AgentIndex {
     __obj.asInstanceOf[AgentIndex]
   }
   
-  extension [Self <: AgentIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentIndex] (val x: Self) extends AnyVal {
     
     inline def setAgentIndex(value: Double): Self = StObject.set(x, "agentIndex", value.asInstanceOf[js.Any])
     

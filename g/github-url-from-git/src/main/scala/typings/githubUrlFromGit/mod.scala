@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[githubUrlFromGitOptions]
     }
     
-    extension [Self <: githubUrlFromGitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: githubUrlFromGitOptions] (val x: Self) extends AnyVal {
       
       inline def setExtraBaseUrls(value: js.Array[String]): Self = StObject.set(x, "extraBaseUrls", value.asInstanceOf[js.Any])
       

@@ -41,7 +41,8 @@ object IVaultEventLogOperations {
     __obj.asInstanceOf[IVaultEventLogOperations]
   }
   
-  extension [Self <: IVaultEventLogOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultEventLogOperations] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     

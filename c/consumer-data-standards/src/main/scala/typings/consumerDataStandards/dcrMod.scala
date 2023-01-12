@@ -229,7 +229,8 @@ object dcrMod {
       __obj.asInstanceOf[ClientRegistration]
     }
     
-    extension [Self <: ClientRegistration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientRegistration] (val x: Self) extends AnyVal {
       
       inline def setApplication_type(value: web): Self = StObject.set(x, "application_type", value.asInstanceOf[js.Any])
       
@@ -378,7 +379,8 @@ object dcrMod {
       __obj.asInstanceOf[RegistrationError]
     }
     
-    extension [Self <: RegistrationError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegistrationError] (val x: Self) extends AnyVal {
       
       inline def setError(
         value: invalid_redirect_uri | invalid_client_metadata | invalid_software_statement | unapproved_software_statement
@@ -572,7 +574,8 @@ object dcrMod {
       __obj.asInstanceOf[RegistrationProperties]
     }
     
-    extension [Self <: RegistrationProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegistrationProperties] (val x: Self) extends AnyVal {
       
       inline def setApplication_type(value: web): Self = StObject.set(x, "application_type", value.asInstanceOf[js.Any])
       

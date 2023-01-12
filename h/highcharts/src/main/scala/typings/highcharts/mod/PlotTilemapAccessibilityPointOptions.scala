@@ -81,7 +81,8 @@ object PlotTilemapAccessibilityPointOptions {
     __obj.asInstanceOf[PlotTilemapAccessibilityPointOptions]
   }
   
-  extension [Self <: PlotTilemapAccessibilityPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTilemapAccessibilityPointOptions] (val x: Self) extends AnyVal {
     
     inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     

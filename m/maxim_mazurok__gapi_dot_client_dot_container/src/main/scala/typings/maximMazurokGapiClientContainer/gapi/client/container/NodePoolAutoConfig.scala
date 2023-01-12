@@ -19,7 +19,8 @@ object NodePoolAutoConfig {
     __obj.asInstanceOf[NodePoolAutoConfig]
   }
   
-  extension [Self <: NodePoolAutoConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodePoolAutoConfig] (val x: Self) extends AnyVal {
     
     inline def setNetworkTags(value: NetworkTags): Self = StObject.set(x, "networkTags", value.asInstanceOf[js.Any])
     

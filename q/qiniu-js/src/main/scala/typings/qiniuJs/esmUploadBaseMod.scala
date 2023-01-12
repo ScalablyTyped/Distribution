@@ -157,7 +157,8 @@ object esmUploadBaseMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setCheckByMD5(value: Boolean): Self = StObject.set(x, "checkByMD5", value.asInstanceOf[js.Any])
       
@@ -232,7 +233,8 @@ object esmUploadBaseMod {
       __obj.asInstanceOf[Extra]
     }
     
-    extension [Self <: Extra](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extra] (val x: Self) extends AnyVal {
       
       inline def setCustomVars(value: StringDictionary[String]): Self = StObject.set(x, "customVars", value.asInstanceOf[js.Any])
       
@@ -306,7 +308,8 @@ object esmUploadBaseMod {
       __obj.asInstanceOf[InternalConfig]
     }
     
-    extension [Self <: InternalConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalConfig] (val x: Self) extends AnyVal {
       
       inline def setCheckByMD5(value: Boolean): Self = StObject.set(x, "checkByMD5", value.asInstanceOf[js.Any])
       
@@ -353,7 +356,8 @@ object esmUploadBaseMod {
       __obj.asInstanceOf[Progress]
     }
     
-    extension [Self <: Progress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
       
       inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
       
@@ -378,7 +382,8 @@ object esmUploadBaseMod {
       __obj.asInstanceOf[ProgressCompose]
     }
     
-    extension [Self <: ProgressCompose](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressCompose] (val x: Self) extends AnyVal {
       
       inline def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
       
@@ -407,7 +412,8 @@ object esmUploadBaseMod {
       __obj.asInstanceOf[UploadHandlers]
     }
     
-    extension [Self <: UploadHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadHandlers] (val x: Self) extends AnyVal {
       
       inline def setOnComplete(value: Any => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
       
@@ -430,7 +436,8 @@ object esmUploadBaseMod {
       __obj.asInstanceOf[UploadInfo]
     }
     
-    extension [Self <: UploadInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -457,7 +464,8 @@ object esmUploadBaseMod {
       __obj.asInstanceOf[UploadOptions]
     }
     
-    extension [Self <: UploadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadOptions] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: InternalConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -492,7 +500,8 @@ object esmUploadBaseMod {
       __obj.asInstanceOf[UploadProgress]
     }
     
-    extension [Self <: UploadProgress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadProgress] (val x: Self) extends AnyVal {
       
       inline def setChunks(value: js.Array[ProgressCompose]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
       

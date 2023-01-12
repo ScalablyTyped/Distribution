@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[FromUrl]
     }
     
-    extension [Self <: FromUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromUrl] (val x: Self) extends AnyVal {
       
       inline def setFromUrl(
         value: (String, Store, js.Function2[/* err */ js.Error, /* res */ typings.uploadcare.mod.File, Unit]) => Unit
@@ -80,7 +82,8 @@ object anon {
       __obj.asInstanceOf[Remove]
     }
     
-    extension [Self <: Remove](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Remove] (val x: Self) extends AnyVal {
       
       inline def setRemove(
         value: (String, js.Function2[/* err */ js.Error, /* res */ typings.uploadcare.mod.File, Unit]) => Unit
@@ -103,7 +106,8 @@ object anon {
       __obj.asInstanceOf[Store]
     }
     
-    extension [Self <: Store](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
       
       inline def setStore(value: Boolean): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       

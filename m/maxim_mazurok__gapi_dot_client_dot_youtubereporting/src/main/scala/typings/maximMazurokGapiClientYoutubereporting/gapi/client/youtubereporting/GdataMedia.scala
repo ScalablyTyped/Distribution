@@ -103,7 +103,8 @@ object GdataMedia {
     __obj.asInstanceOf[GdataMedia]
   }
   
-  extension [Self <: GdataMedia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GdataMedia] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

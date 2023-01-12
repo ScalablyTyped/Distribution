@@ -33,7 +33,8 @@ object AssociateMacSecKeyRequest {
     __obj.asInstanceOf[AssociateMacSecKeyRequest]
   }
   
-  extension [Self <: AssociateMacSecKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateMacSecKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setCak(value: Cak): Self = StObject.set(x, "cak", value.asInstanceOf[js.Any])
     

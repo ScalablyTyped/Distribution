@@ -18,7 +18,8 @@ object GetRequestPostDataRequest {
     __obj.asInstanceOf[GetRequestPostDataRequest]
   }
   
-  extension [Self <: GetRequestPostDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRequestPostDataRequest] (val x: Self) extends AnyVal {
     
     inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }

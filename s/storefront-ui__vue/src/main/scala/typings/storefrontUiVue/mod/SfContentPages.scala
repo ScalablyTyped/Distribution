@@ -36,7 +36,8 @@ object SfContentPages extends Shortcut {
       __obj.asInstanceOf[Computed]
     }
     
-    extension [Self <: Computed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Computed] (val x: Self) extends AnyVal {
       
       inline def setCategories(value: js.Array[Any]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object SfContentPages extends Shortcut {
       __obj.asInstanceOf[Constructor]
     }
     
-    extension [Self <: Constructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constructor] (val x: Self) extends AnyVal {
       
       inline def setComputed(value: Computed): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object SfContentPages extends Shortcut {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -112,7 +115,8 @@ object SfContentPages extends Shortcut {
       __obj.asInstanceOf[Methods]
     }
     
-    extension [Self <: Methods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Methods] (val x: Self) extends AnyVal {
       
       inline def setUpdatePage(value: String => Unit): Self = StObject.set(x, "updatePage", js.Any.fromFunction1(value))
     }
@@ -131,7 +135,8 @@ object SfContentPages extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

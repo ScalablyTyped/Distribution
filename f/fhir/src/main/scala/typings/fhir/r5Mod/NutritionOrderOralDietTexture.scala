@@ -25,7 +25,8 @@ object NutritionOrderOralDietTexture {
     __obj.asInstanceOf[NutritionOrderOralDietTexture]
   }
   
-  extension [Self <: NutritionOrderOralDietTexture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NutritionOrderOralDietTexture] (val x: Self) extends AnyVal {
     
     inline def setFoodType(value: CodeableConcept): Self = StObject.set(x, "foodType", value.asInstanceOf[js.Any])
     

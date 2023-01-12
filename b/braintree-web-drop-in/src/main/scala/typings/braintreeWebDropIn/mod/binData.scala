@@ -44,7 +44,8 @@ object binData {
     __obj.asInstanceOf[binData]
   }
   
-  extension [Self <: binData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: binData] (val x: Self) extends AnyVal {
     
     inline def setCommercial(value: String): Self = StObject.set(x, "commercial", value.asInstanceOf[js.Any])
     

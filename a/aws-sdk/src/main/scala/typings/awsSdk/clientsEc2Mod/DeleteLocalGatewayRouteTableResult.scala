@@ -15,7 +15,8 @@ object DeleteLocalGatewayRouteTableResult {
     __obj.asInstanceOf[DeleteLocalGatewayRouteTableResult]
   }
   
-  extension [Self <: DeleteLocalGatewayRouteTableResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLocalGatewayRouteTableResult] (val x: Self) extends AnyVal {
     
     inline def setLocalGatewayRouteTable(value: LocalGatewayRouteTable): Self = StObject.set(x, "LocalGatewayRouteTable", value.asInstanceOf[js.Any])
     

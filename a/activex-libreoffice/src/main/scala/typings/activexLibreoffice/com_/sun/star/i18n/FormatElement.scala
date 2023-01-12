@@ -48,7 +48,8 @@ object FormatElement {
     __obj.asInstanceOf[FormatElement]
   }
   
-  extension [Self <: FormatElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatElement] (val x: Self) extends AnyVal {
     
     inline def setFormatCode(value: String): Self = StObject.set(x, "formatCode", value.asInstanceOf[js.Any])
     

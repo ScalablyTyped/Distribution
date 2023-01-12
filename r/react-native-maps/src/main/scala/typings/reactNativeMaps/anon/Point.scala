@@ -42,7 +42,8 @@ object Point {
     __obj.asInstanceOf[Point]
   }
   
-  extension [Self <: Point](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
     
     inline def setAction(value: `callout-press`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

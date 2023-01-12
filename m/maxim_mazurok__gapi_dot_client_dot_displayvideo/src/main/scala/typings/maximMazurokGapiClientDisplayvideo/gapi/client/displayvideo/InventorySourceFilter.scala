@@ -19,7 +19,8 @@ object InventorySourceFilter {
     __obj.asInstanceOf[InventorySourceFilter]
   }
   
-  extension [Self <: InventorySourceFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventorySourceFilter] (val x: Self) extends AnyVal {
     
     inline def setInventorySourceIds(value: js.Array[String]): Self = StObject.set(x, "inventorySourceIds", value.asInstanceOf[js.Any])
     

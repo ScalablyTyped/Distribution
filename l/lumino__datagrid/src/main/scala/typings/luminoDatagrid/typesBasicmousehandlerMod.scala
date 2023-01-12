@@ -278,7 +278,8 @@ object typesBasicmousehandlerMod {
         __obj.asInstanceOf[ColumnResizeData]
       }
       
-      extension [Self <: ColumnResizeData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ColumnResizeData] (val x: Self) extends AnyVal {
         
         inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
         
@@ -381,7 +382,8 @@ object typesBasicmousehandlerMod {
         __obj.asInstanceOf[RowResizeData]
       }
       
-      extension [Self <: RowResizeData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RowResizeData] (val x: Self) extends AnyVal {
         
         inline def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
         
@@ -461,7 +463,8 @@ object typesBasicmousehandlerMod {
         __obj.asInstanceOf[SelectData]
       }
       
-      extension [Self <: SelectData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SelectData] (val x: Self) extends AnyVal {
         
         inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         

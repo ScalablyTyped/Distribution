@@ -24,7 +24,8 @@ object SuspenseListCommonProps {
     __obj.asInstanceOf[SuspenseListCommonProps]
   }
   
-  extension [Self <: SuspenseListCommonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuspenseListCommonProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(
       value: (ReactElement[Any, String | JSXElementConstructor[Any]]) | (js.Iterable[ReactElement[Any, String | JSXElementConstructor[Any]]])

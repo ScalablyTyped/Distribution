@@ -19,7 +19,8 @@ object PivotGridV2ExpandMemberEvent {
     __obj.asInstanceOf[PivotGridV2ExpandMemberEvent]
   }
   
-  extension [Self <: PivotGridV2ExpandMemberEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotGridV2ExpandMemberEvent] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

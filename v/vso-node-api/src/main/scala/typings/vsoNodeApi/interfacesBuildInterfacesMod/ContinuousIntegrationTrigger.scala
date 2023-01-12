@@ -47,7 +47,8 @@ object ContinuousIntegrationTrigger {
     __obj.asInstanceOf[ContinuousIntegrationTrigger]
   }
   
-  extension [Self <: ContinuousIntegrationTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinuousIntegrationTrigger] (val x: Self) extends AnyVal {
     
     inline def setBatchChanges(value: Boolean): Self = StObject.set(x, "batchChanges", value.asInstanceOf[js.Any])
     

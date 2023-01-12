@@ -28,7 +28,8 @@ object FileComment {
     __obj.asInstanceOf[FileComment]
   }
   
-  extension [Self <: FileComment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileComment] (val x: Self) extends AnyVal {
     
     inline def setLegacyCommentId(value: String): Self = StObject.set(x, "legacyCommentId", value.asInstanceOf[js.Any])
     

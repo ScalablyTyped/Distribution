@@ -28,7 +28,8 @@ object IJscadScriptOptions {
     __obj.asInstanceOf[IJscadScriptOptions]
   }
   
-  extension [Self <: IJscadScriptOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IJscadScriptOptions] (val x: Self) extends AnyVal {
     
     inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     

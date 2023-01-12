@@ -53,7 +53,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Instance]
     }
     
-    extension [Self <: Instance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
       
       inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       

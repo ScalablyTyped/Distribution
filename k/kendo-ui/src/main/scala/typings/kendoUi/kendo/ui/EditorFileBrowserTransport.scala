@@ -23,7 +23,8 @@ object EditorFileBrowserTransport {
     __obj.asInstanceOf[EditorFileBrowserTransport]
   }
   
-  extension [Self <: EditorFileBrowserTransport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorFileBrowserTransport] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: String | EditorFileBrowserTransportCreate): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     

@@ -118,7 +118,8 @@ object mod {
       __obj.asInstanceOf[AlertCustomOptions]
     }
     
-    extension [Self <: AlertCustomOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlertCustomOptions] (val x: Self) extends AnyVal {
       
       inline def setOnClose(value: () => js.UndefOr[Unit]): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
@@ -153,7 +154,8 @@ object mod {
       __obj.asInstanceOf[AlertInstance]
     }
     
-    extension [Self <: AlertInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlertInstance] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -220,7 +222,8 @@ object mod {
       __obj.asInstanceOf[AlertOptions]
     }
     
-    extension [Self <: AlertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlertOptions] (val x: Self) extends AnyVal {
       
       inline def setContainerStyle(value: CSSProperties): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
@@ -330,7 +333,8 @@ object mod {
       __obj.asInstanceOf[AlertProviderProps]
     }
     
-    extension [Self <: AlertProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlertProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -365,7 +369,8 @@ object mod {
       __obj.asInstanceOf[AlertTemplateProps]
     }
     
-    extension [Self <: AlertTemplateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlertTemplateProps] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -417,7 +422,8 @@ object mod {
       __obj.asInstanceOf[InjectedAlertProps]
     }
     
-    extension [Self <: InjectedAlertProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectedAlertProps] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: AlertContainer): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
     }
@@ -450,7 +456,8 @@ object mod {
       __obj.asInstanceOf[Positions_]
     }
     
-    extension [Self <: Positions_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Positions_] (val x: Self) extends AnyVal {
       
       inline def setBOTTOM_CENTER(value: `bottom center`): Self = StObject.set(x, "BOTTOM_CENTER", value.asInstanceOf[js.Any])
       
@@ -485,7 +492,8 @@ object mod {
       __obj.asInstanceOf[Transitions_]
     }
     
-    extension [Self <: Transitions_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transitions_] (val x: Self) extends AnyVal {
       
       inline def setFADE(value: fade): Self = StObject.set(x, "FADE", value.asInstanceOf[js.Any])
       
@@ -508,7 +516,8 @@ object mod {
       __obj.asInstanceOf[Types_]
     }
     
-    extension [Self <: Types_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Types_] (val x: Self) extends AnyVal {
       
       inline def setERROR(value: error): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
       

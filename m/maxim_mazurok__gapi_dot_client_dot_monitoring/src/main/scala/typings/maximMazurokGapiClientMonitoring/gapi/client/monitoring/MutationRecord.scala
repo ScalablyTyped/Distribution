@@ -19,7 +19,8 @@ object MutationRecord {
     __obj.asInstanceOf[MutationRecord]
   }
   
-  extension [Self <: MutationRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MutationRecord] (val x: Self) extends AnyVal {
     
     inline def setMutateTime(value: String): Self = StObject.set(x, "mutateTime", value.asInstanceOf[js.Any])
     

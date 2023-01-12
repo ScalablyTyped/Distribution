@@ -354,7 +354,8 @@ object SliderWithLineProps {
     __obj.asInstanceOf[SliderWithLineProps]
   }
   
-  extension [Self <: SliderWithLineProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderWithLineProps] (val x: Self) extends AnyVal {
     
     inline def setActiveBackgroundColor(value: String): Self = StObject.set(x, "activeBackgroundColor", value.asInstanceOf[js.Any])
     

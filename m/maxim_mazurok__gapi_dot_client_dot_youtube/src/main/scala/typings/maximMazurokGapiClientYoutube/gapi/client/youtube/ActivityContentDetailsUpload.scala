@@ -16,7 +16,8 @@ object ActivityContentDetailsUpload {
     __obj.asInstanceOf[ActivityContentDetailsUpload]
   }
   
-  extension [Self <: ActivityContentDetailsUpload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityContentDetailsUpload] (val x: Self) extends AnyVal {
     
     inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
     

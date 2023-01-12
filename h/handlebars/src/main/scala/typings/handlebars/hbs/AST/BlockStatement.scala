@@ -45,7 +45,8 @@ object BlockStatement {
     __obj.asInstanceOf[BlockStatement]
   }
   
-  extension [Self <: BlockStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockStatement] (val x: Self) extends AnyVal {
     
     inline def setCloseStrip(value: StripFlags): Self = StObject.set(x, "closeStrip", value.asInstanceOf[js.Any])
     

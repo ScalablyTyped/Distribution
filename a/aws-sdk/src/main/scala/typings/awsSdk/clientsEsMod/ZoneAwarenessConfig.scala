@@ -18,7 +18,8 @@ object ZoneAwarenessConfig {
     __obj.asInstanceOf[ZoneAwarenessConfig]
   }
   
-  extension [Self <: ZoneAwarenessConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoneAwarenessConfig] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZoneCount(value: IntegerClass): Self = StObject.set(x, "AvailabilityZoneCount", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeleteListenerRequest {
     __obj.asInstanceOf[DeleteListenerRequest]
   }
   
-  extension [Self <: DeleteListenerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteListenerRequest] (val x: Self) extends AnyVal {
     
     inline def setListenerArn(value: GenericString): Self = StObject.set(x, "ListenerArn", value.asInstanceOf[js.Any])
   }

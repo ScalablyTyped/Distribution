@@ -22,7 +22,8 @@ object ListEkmConnectionsResponse {
     __obj.asInstanceOf[ListEkmConnectionsResponse]
   }
   
-  extension [Self <: ListEkmConnectionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEkmConnectionsResponse] (val x: Self) extends AnyVal {
     
     inline def setEkmConnections(value: js.Array[EkmConnection]): Self = StObject.set(x, "ekmConnections", value.asInstanceOf[js.Any])
     

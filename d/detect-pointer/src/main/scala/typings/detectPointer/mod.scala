@@ -47,7 +47,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[typings.detectPointer.mod.detectPointer]
     }
     
-    extension [Self <: typings.detectPointer.mod.detectPointer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.detectPointer.mod.detectPointer] (val x: Self) extends AnyVal {
       
       inline def setAnyCoarse(value: Boolean): Self = StObject.set(x, "anyCoarse", value.asInstanceOf[js.Any])
       

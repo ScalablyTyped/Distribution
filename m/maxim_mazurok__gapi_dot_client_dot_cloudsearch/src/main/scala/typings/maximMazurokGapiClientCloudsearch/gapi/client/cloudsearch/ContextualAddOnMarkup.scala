@@ -19,7 +19,8 @@ object ContextualAddOnMarkup {
     __obj.asInstanceOf[ContextualAddOnMarkup]
   }
   
-  extension [Self <: ContextualAddOnMarkup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextualAddOnMarkup] (val x: Self) extends AnyVal {
     
     inline def setCards(value: js.Array[Card]): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
     

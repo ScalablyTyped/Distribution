@@ -121,7 +121,8 @@ object srcNgtscMetadataSrcApiMod {
       __obj.asInstanceOf[DirectiveMeta]
     }
     
-    extension [Self <: DirectiveMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectiveMeta] (val x: Self) extends AnyVal {
       
       inline def setBaseClass(value: Reference[ClassDeclaration[DeclarationNode]] | dynamic): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
       
@@ -215,7 +216,8 @@ object srcNgtscMetadataSrcApiMod {
       __obj.asInstanceOf[DirectiveTypeCheckMeta]
     }
     
-    extension [Self <: DirectiveTypeCheckMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectiveTypeCheckMeta] (val x: Self) extends AnyVal {
       
       inline def setCoercedInputFields(value: Set[ClassPropertyName]): Self = StObject.set(x, "coercedInputFields", value.asInstanceOf[js.Any])
       
@@ -254,7 +256,8 @@ object srcNgtscMetadataSrcApiMod {
       __obj.asInstanceOf[MetadataReader]
     }
     
-    extension [Self <: MetadataReader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataReader] (val x: Self) extends AnyVal {
       
       inline def setGetDirectiveMetadata(value: Reference[ClassDeclaration[DeclarationNode]] => DirectiveMeta | Null): Self = StObject.set(x, "getDirectiveMetadata", js.Any.fromFunction1(value))
       
@@ -283,7 +286,8 @@ object srcNgtscMetadataSrcApiMod {
       __obj.asInstanceOf[MetadataRegistry]
     }
     
-    extension [Self <: MetadataRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataRegistry] (val x: Self) extends AnyVal {
       
       inline def setRegisterDirectiveMetadata(value: DirectiveMeta => Unit): Self = StObject.set(x, "registerDirectiveMetadata", js.Any.fromFunction1(value))
       
@@ -352,7 +356,8 @@ object srcNgtscMetadataSrcApiMod {
       __obj.asInstanceOf[NgModuleMeta]
     }
     
-    extension [Self <: NgModuleMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NgModuleMeta] (val x: Self) extends AnyVal {
       
       inline def setDeclarations(value: js.Array[Reference[ClassDeclaration[DeclarationNode]]]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
       
@@ -413,7 +418,8 @@ object srcNgtscMetadataSrcApiMod {
       __obj.asInstanceOf[PipeMeta]
     }
     
-    extension [Self <: PipeMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PipeMeta] (val x: Self) extends AnyVal {
       
       inline def setDecorator(value: Decorator): Self = StObject.set(x, "decorator", value.asInstanceOf[js.Any])
       
@@ -457,7 +463,8 @@ object srcNgtscMetadataSrcApiMod {
       __obj.asInstanceOf[TemplateGuardMeta]
     }
     
-    extension [Self <: TemplateGuardMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateGuardMeta] (val x: Self) extends AnyVal {
       
       inline def setInputName(value: String): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
       

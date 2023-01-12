@@ -20,7 +20,8 @@ object Header {
     __obj.asInstanceOf[Header[TEvent]]
   }
   
-  extension [Self <: Header[?], TEvent /* <: js.Object */](x: Self & Header[TEvent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Header[?], TEvent /* <: js.Object */] (val x: Self & Header[TEvent]) extends AnyVal {
     
     inline def setEvent(value: ComponentType[EventProps[TEvent]]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

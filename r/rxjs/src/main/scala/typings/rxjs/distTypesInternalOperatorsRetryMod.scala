@@ -48,7 +48,8 @@ object distTypesInternalOperatorsRetryMod {
       __obj.asInstanceOf[RetryConfig]
     }
     
-    extension [Self <: RetryConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryConfig] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

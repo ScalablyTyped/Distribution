@@ -90,7 +90,8 @@ object distSrcMod {
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      extension [Self <: NameServiceMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
         
         inline def `setApp-check`(value: AppCheckService): Self = StObject.set(x, "app-check", value.asInstanceOf[js.Any])
       }

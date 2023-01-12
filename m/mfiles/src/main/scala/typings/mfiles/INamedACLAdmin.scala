@@ -26,7 +26,8 @@ object INamedACLAdmin {
     __obj.asInstanceOf[INamedACLAdmin]
   }
   
-  extension [Self <: INamedACLAdmin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INamedACLAdmin] (val x: Self) extends AnyVal {
     
     inline def setAccessControlListForNamedACL(value: IAccessControlList): Self = StObject.set(x, "AccessControlListForNamedACL", value.asInstanceOf[js.Any])
     

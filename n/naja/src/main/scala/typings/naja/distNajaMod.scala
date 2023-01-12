@@ -520,7 +520,8 @@ object distNajaMod {
       __obj.asInstanceOf[Extension]
     }
     
-    extension [Self <: Extension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extension] (val x: Self) extends AnyVal {
       
       inline def setInitialize(value: Naja => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
     }
@@ -562,7 +563,8 @@ object distNajaMod {
       __obj.asInstanceOf[NajaEventMap]
     }
     
-    extension [Self <: NajaEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NajaEventMap] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: AbortEvent): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
       
@@ -606,7 +608,8 @@ object distNajaMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: Boolean): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
       
@@ -656,7 +659,8 @@ object distNajaMod {
       __obj.asInstanceOf[Payload]
     }
     
-    extension [Self <: Payload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
       
       inline def setPostGet(value: Boolean): Self = StObject.set(x, "postGet", value.asInstanceOf[js.Any])
       

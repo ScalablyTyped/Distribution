@@ -447,7 +447,8 @@ object sapUiCommonsLayoutAbsoluteLayoutMod {
       __obj.asInstanceOf[AbsoluteLayoutSettings]
     }
     
-    extension [Self <: AbsoluteLayoutSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbsoluteLayoutSettings] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

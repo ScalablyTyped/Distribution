@@ -26,7 +26,8 @@ object NumberSkeleton {
     __obj.asInstanceOf[NumberSkeleton]
   }
   
-  extension [Self <: NumberSkeleton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberSkeleton] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

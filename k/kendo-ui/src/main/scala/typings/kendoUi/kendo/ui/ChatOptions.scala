@@ -29,7 +29,8 @@ object ChatOptions {
     __obj.asInstanceOf[ChatOptions]
   }
   
-  extension [Self <: ChatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatOptions] (val x: Self) extends AnyVal {
     
     inline def setActionClick(value: /* e */ ChatActionClickEvent => Unit): Self = StObject.set(x, "actionClick", js.Any.fromFunction1(value))
     

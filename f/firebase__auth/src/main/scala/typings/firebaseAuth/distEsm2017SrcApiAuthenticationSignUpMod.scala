@@ -31,7 +31,8 @@ object distEsm2017SrcApiAuthenticationSignUpMod {
       __obj.asInstanceOf[SignUpRequest]
     }
     
-    extension [Self <: SignUpRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignUpRequest] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object distEsm2017SrcApiAuthenticationSignUpMod {
       __obj.asInstanceOf[SignUpResponse]
     }
     
-    extension [Self <: SignUpResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignUpResponse] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       

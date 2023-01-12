@@ -112,7 +112,8 @@ object PartialAnnotationsAlign {
     __obj.asInstanceOf[PartialAnnotationsAlign]
   }
   
-  extension [Self <: PartialAnnotationsAlign](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAnnotationsAlign] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

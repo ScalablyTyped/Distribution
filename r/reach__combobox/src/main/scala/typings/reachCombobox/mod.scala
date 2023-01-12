@@ -179,7 +179,8 @@ object mod {
       __obj.asInstanceOf[ComboboxContextValue]
     }
     
-    extension [Self <: ComboboxContextValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComboboxContextValue] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -239,7 +240,8 @@ object mod {
       __obj.asInstanceOf[ComboboxInputProps]
     }
     
-    extension [Self <: ComboboxInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComboboxInputProps] (val x: Self) extends AnyVal {
       
       inline def setAutocomplete(value: Boolean): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
       
@@ -282,7 +284,8 @@ object mod {
       __obj.asInstanceOf[ComboboxListProps]
     }
     
-    extension [Self <: ComboboxListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComboboxListProps] (val x: Self) extends AnyVal {
       
       inline def setPersistSelection(value: Boolean): Self = StObject.set(x, "persistSelection", value.asInstanceOf[js.Any])
       
@@ -303,7 +306,8 @@ object mod {
       __obj.asInstanceOf[ComboboxOptionContextValue]
     }
     
-    extension [Self <: ComboboxOptionContextValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComboboxOptionContextValue] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -351,7 +355,8 @@ object mod {
       __obj.asInstanceOf[ComboboxOptionProps]
     }
     
-    extension [Self <: ComboboxOptionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComboboxOptionProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode | (js.Function1[/* props */ ComboboxOptionContextValue, ReactNode])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -389,7 +394,8 @@ object mod {
       __obj.asInstanceOf[ComboboxPopoverProps]
     }
     
-    extension [Self <: ComboboxPopoverProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComboboxPopoverProps] (val x: Self) extends AnyVal {
       
       inline def setPortal(value: Boolean): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
       
@@ -441,7 +447,8 @@ object mod {
       __obj.asInstanceOf[ComboboxProps]
     }
     
-    extension [Self <: ComboboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComboboxProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       

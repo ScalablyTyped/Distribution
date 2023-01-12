@@ -22,7 +22,8 @@ object JdbcRef {
     __obj.asInstanceOf[JdbcRef]
   }
   
-  extension [Self <: JdbcRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JdbcRef] (val x: Self) extends AnyVal {
     
     inline def setGetBaseTypeName(value: () => String): Self = StObject.set(x, "getBaseTypeName", js.Any.fromFunction0(value))
     

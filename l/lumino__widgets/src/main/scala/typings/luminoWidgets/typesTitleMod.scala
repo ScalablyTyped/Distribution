@@ -287,7 +287,8 @@ object typesTitleMod {
         __obj.asInstanceOf[IOptions[T]]
       }
       
-      extension [Self <: IOptions[?], T](x: Self & IOptions[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions[?], T] (val x: Self & IOptions[T]) extends AnyVal {
         
         inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
         

@@ -29,7 +29,8 @@ object Content {
     __obj.asInstanceOf[Content[ResponseType]]
   }
   
-  extension [Self <: Content[?], ResponseType](x: Self & Content[ResponseType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Content[?], ResponseType] (val x: Self & Content[ResponseType]) extends AnyVal {
     
     inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
     

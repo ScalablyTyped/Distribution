@@ -15,7 +15,8 @@ object PkiObjectParameters {
     __obj.asInstanceOf[PkiObjectParameters]
   }
   
-  extension [Self <: PkiObjectParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PkiObjectParameters] (val x: Self) extends AnyVal {
     
     inline def setSchema(value: SchemaType): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,8 @@ object AngularDirectiveOptionsSchema {
     __obj.asInstanceOf[AngularDirectiveOptionsSchema]
   }
   
-  extension [Self <: AngularDirectiveOptionsSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AngularDirectiveOptionsSchema] (val x: Self) extends AnyVal {
     
     inline def setExport(value: Boolean): Self = StObject.set(x, "export", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object KernelGatewayImageConfig {
     __obj.asInstanceOf[KernelGatewayImageConfig]
   }
   
-  extension [Self <: KernelGatewayImageConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KernelGatewayImageConfig] (val x: Self) extends AnyVal {
     
     inline def setFileSystemConfig(value: FileSystemConfig): Self = StObject.set(x, "FileSystemConfig", value.asInstanceOf[js.Any])
     

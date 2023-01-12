@@ -28,7 +28,8 @@ object NativeAndroidChannelGroup {
     __obj.asInstanceOf[NativeAndroidChannelGroup]
   }
   
-  extension [Self <: NativeAndroidChannelGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeAndroidChannelGroup] (val x: Self) extends AnyVal {
     
     inline def setChannels(value: Unit | js.Array[NativeAndroidChannel]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     

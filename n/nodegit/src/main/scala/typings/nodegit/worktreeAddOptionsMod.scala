@@ -25,7 +25,8 @@ object worktreeAddOptionsMod {
       __obj.asInstanceOf[WorktreeAddOptions]
     }
     
-    extension [Self <: WorktreeAddOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorktreeAddOptions] (val x: Self) extends AnyVal {
       
       inline def setLock(value: Double): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
       

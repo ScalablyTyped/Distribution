@@ -15,7 +15,8 @@ object ConfigRemoteVideoMenu {
     __obj.asInstanceOf[ConfigRemoteVideoMenu]
   }
   
-  extension [Self <: ConfigRemoteVideoMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigRemoteVideoMenu] (val x: Self) extends AnyVal {
     
     inline def setDisableKick(value: Boolean): Self = StObject.set(x, "disableKick", value.asInstanceOf[js.Any])
     

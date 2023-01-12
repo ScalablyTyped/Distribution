@@ -77,7 +77,8 @@ object ButtonRemove {
     __obj.asInstanceOf[ButtonRemove]
   }
   
-  extension [Self <: ButtonRemove](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonRemove] (val x: Self) extends AnyVal {
     
     inline def setActionsCell(value: String): Self = StObject.set(x, "actionsCell", value.asInstanceOf[js.Any])
     

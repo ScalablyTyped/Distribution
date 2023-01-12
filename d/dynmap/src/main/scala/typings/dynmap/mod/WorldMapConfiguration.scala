@@ -89,7 +89,8 @@ object WorldMapConfiguration {
     __obj.asInstanceOf[WorldMapConfiguration]
   }
   
-  extension [Self <: WorldMapConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorldMapConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAzimuth(value: Double): Self = StObject.set(x, "azimuth", value.asInstanceOf[js.Any])
     

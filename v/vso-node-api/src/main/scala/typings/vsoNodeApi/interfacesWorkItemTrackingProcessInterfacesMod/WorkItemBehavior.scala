@@ -45,7 +45,8 @@ object WorkItemBehavior {
     __obj.asInstanceOf[WorkItemBehavior]
   }
   
-  extension [Self <: WorkItemBehavior](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemBehavior] (val x: Self) extends AnyVal {
     
     inline def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
     

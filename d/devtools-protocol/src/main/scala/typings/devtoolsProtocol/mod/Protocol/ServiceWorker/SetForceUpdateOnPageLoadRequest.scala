@@ -15,7 +15,8 @@ object SetForceUpdateOnPageLoadRequest {
     __obj.asInstanceOf[SetForceUpdateOnPageLoadRequest]
   }
   
-  extension [Self <: SetForceUpdateOnPageLoadRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetForceUpdateOnPageLoadRequest] (val x: Self) extends AnyVal {
     
     inline def setForceUpdateOnPageLoad(value: Boolean): Self = StObject.set(x, "forceUpdateOnPageLoad", value.asInstanceOf[js.Any])
   }

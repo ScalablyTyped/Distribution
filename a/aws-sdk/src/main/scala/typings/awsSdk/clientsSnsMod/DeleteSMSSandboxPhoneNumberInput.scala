@@ -18,7 +18,8 @@ object DeleteSMSSandboxPhoneNumberInput {
     __obj.asInstanceOf[DeleteSMSSandboxPhoneNumberInput]
   }
   
-  extension [Self <: DeleteSMSSandboxPhoneNumberInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSMSSandboxPhoneNumberInput] (val x: Self) extends AnyVal {
     
     inline def setPhoneNumber(value: PhoneNumberString): Self = StObject.set(x, "PhoneNumber", value.asInstanceOf[js.Any])
   }

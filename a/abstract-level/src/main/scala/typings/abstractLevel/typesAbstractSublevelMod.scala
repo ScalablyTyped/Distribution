@@ -66,7 +66,8 @@ object typesAbstractSublevelMod {
       __obj.asInstanceOf[AbstractSublevelOptions[K, V]]
     }
     
-    extension [Self <: AbstractSublevelOptions[?, ?], K, V](x: Self & (AbstractSublevelOptions[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractSublevelOptions[?, ?], K, V] (val x: Self & (AbstractSublevelOptions[K, V])) extends AnyVal {
       
       inline def setKeyEncoding(value: String | (PartialEncoding[K, K])): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
       

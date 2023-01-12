@@ -22,7 +22,8 @@ object RepoTag {
     __obj.asInstanceOf[RepoTag]
   }
   
-  extension [Self <: RepoTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepoTag] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PredefinedMetricSpecification {
     __obj.asInstanceOf[PredefinedMetricSpecification]
   }
   
-  extension [Self <: PredefinedMetricSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredefinedMetricSpecification] (val x: Self) extends AnyVal {
     
     inline def setPredefinedMetricType(value: MetricType): Self = StObject.set(x, "PredefinedMetricType", value.asInstanceOf[js.Any])
     

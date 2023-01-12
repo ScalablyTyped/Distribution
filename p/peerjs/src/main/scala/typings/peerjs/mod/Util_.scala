@@ -71,7 +71,8 @@ object Util_ {
     __obj.asInstanceOf[Util_]
   }
   
-  extension [Self <: Util_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Util_] (val x: Self) extends AnyVal {
     
     inline def setBinaryStringToArrayBuffer(value: String => js.typedarray.ArrayBuffer | SharedArrayBuffer): Self = StObject.set(x, "binaryStringToArrayBuffer", js.Any.fromFunction1(value))
     

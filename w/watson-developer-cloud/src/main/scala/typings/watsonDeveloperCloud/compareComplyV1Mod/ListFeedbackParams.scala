@@ -66,7 +66,8 @@ object ListFeedbackParams {
     __obj.asInstanceOf[ListFeedbackParams]
   }
   
-  extension [Self <: ListFeedbackParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFeedbackParams] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

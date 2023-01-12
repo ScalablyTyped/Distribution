@@ -43,7 +43,8 @@ object TextDetection {
     __obj.asInstanceOf[TextDetection]
   }
   
-  extension [Self <: TextDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextDetection] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     

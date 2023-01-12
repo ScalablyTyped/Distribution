@@ -18,7 +18,8 @@ object Ipv4PrefixSpecificationResponse {
     __obj.asInstanceOf[Ipv4PrefixSpecificationResponse]
   }
   
-  extension [Self <: Ipv4PrefixSpecificationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ipv4PrefixSpecificationResponse] (val x: Self) extends AnyVal {
     
     inline def setIpv4Prefix(value: String): Self = StObject.set(x, "Ipv4Prefix", value.asInstanceOf[js.Any])
     

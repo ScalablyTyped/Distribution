@@ -18,7 +18,8 @@ object ResetPersonalPINResponse {
     __obj.asInstanceOf[ResetPersonalPINResponse]
   }
   
-  extension [Self <: ResetPersonalPINResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetPersonalPINResponse] (val x: Self) extends AnyVal {
     
     inline def setUser(value: User): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     

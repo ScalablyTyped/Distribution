@@ -23,7 +23,8 @@ object TrafficMirrorPortRangeRequest {
     __obj.asInstanceOf[TrafficMirrorPortRangeRequest]
   }
   
-  extension [Self <: TrafficMirrorPortRangeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrafficMirrorPortRangeRequest] (val x: Self) extends AnyVal {
     
     inline def setFromPort(value: Integer): Self = StObject.set(x, "FromPort", value.asInstanceOf[js.Any])
     

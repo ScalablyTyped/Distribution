@@ -25,7 +25,8 @@ object CorrelationPropertyBinding {
     __obj.asInstanceOf[CorrelationPropertyBinding]
   }
   
-  extension [Self <: CorrelationPropertyBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CorrelationPropertyBinding] (val x: Self) extends AnyVal {
     
     inline def setCorrelationPropertyRef(value: CorrelationProperty): Self = StObject.set(x, "correlationPropertyRef", value.asInstanceOf[js.Any])
     

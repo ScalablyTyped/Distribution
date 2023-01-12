@@ -1501,7 +1501,8 @@ object sapMNavContainerMod {
       __obj.asInstanceOf[NavContainerChild]
     }
     
-    extension [Self <: NavContainerChild](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavContainerChild] (val x: Self) extends AnyVal {
       
       inline def set__implements__sap_m_NavContainerChild(value: Boolean): Self = StObject.set(x, "__implements__sap_m_NavContainerChild", value.asInstanceOf[js.Any])
     }
@@ -1604,7 +1605,8 @@ object sapMNavContainerMod {
       __obj.asInstanceOf[NavContainerSettings]
     }
     
-    extension [Self <: NavContainerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavContainerSettings] (val x: Self) extends AnyVal {
       
       inline def setAfterNavigate(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterNavigate", js.Any.fromFunction1(value))
       

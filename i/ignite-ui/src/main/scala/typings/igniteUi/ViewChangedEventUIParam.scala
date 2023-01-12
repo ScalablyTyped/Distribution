@@ -23,7 +23,8 @@ object ViewChangedEventUIParam {
     __obj.asInstanceOf[ViewChangedEventUIParam]
   }
   
-  extension [Self <: ViewChangedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewChangedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setNewSelectedView(value: String): Self = StObject.set(x, "newSelectedView", value.asInstanceOf[js.Any])
     

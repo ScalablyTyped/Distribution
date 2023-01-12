@@ -41,7 +41,8 @@ object mod {
     @js.native
     def apply(value: Currency): js.Object = js.native
     
-    extension [Self <: Currency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
       
       inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     }

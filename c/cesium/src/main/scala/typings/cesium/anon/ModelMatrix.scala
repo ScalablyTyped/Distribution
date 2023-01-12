@@ -20,7 +20,8 @@ object ModelMatrix {
     __obj.asInstanceOf[ModelMatrix]
   }
   
-  extension [Self <: ModelMatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelMatrix] (val x: Self) extends AnyVal {
     
     inline def setDebugShowBoundingVolume(value: Boolean): Self = StObject.set(x, "debugShowBoundingVolume", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object Transition {
     __obj.asInstanceOf[Transition]
   }
   
-  extension [Self <: Transition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transition] (val x: Self) extends AnyVal {
     
     inline def setInterpolate(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_web.SpringValue<number> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_web.SpringValue<number> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_web.SpringValue<number> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_web.SpringValue<number> */ Any, ArcGenerator) => Any

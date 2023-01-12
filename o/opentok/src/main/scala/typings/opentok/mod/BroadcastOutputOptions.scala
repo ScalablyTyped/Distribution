@@ -17,7 +17,8 @@ object BroadcastOutputOptions {
     __obj.asInstanceOf[BroadcastOutputOptions]
   }
   
-  extension [Self <: BroadcastOutputOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BroadcastOutputOptions] (val x: Self) extends AnyVal {
     
     inline def setHls(value: js.Object): Self = StObject.set(x, "hls", value.asInstanceOf[js.Any])
     

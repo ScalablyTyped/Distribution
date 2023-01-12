@@ -90,7 +90,8 @@ object global {
         __obj.asInstanceOf[CpuUsage]
       }
       
-      extension [Self <: CpuUsage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CpuUsage] (val x: Self) extends AnyVal {
         
         inline def setSystem(value: Double): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
         
@@ -133,7 +134,8 @@ object global {
         __obj.asInstanceOf[EmitWarningOptions]
       }
       
-      extension [Self <: EmitWarningOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EmitWarningOptions] (val x: Self) extends AnyVal {
         
         inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
@@ -183,7 +185,8 @@ object global {
         __obj.asInstanceOf[MemoryUsage]
       }
       
-      extension [Self <: MemoryUsage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MemoryUsage] (val x: Self) extends AnyVal {
         
         inline def setArrayBuffers(value: Double): Self = StObject.set(x, "arrayBuffers", value.asInstanceOf[js.Any])
         
@@ -1672,7 +1675,8 @@ object global {
         __obj.asInstanceOf[ProcessConfig]
       }
       
-      extension [Self <: ProcessConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProcessConfig] (val x: Self) extends AnyVal {
         
         inline def setTarget_defaults(value: Cflags): Self = StObject.set(x, "target_defaults", value.asInstanceOf[js.Any])
         
@@ -1697,7 +1701,8 @@ object global {
         __obj.asInstanceOf[ProcessEnv]
       }
       
-      extension [Self <: ProcessEnv](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProcessEnv] (val x: Self) extends AnyVal {
         
         inline def setTZ(value: String): Self = StObject.set(x, "TZ", value.asInstanceOf[js.Any])
         
@@ -1724,7 +1729,8 @@ object global {
         __obj.asInstanceOf[ProcessRelease]
       }
       
-      extension [Self <: ProcessRelease](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProcessRelease] (val x: Self) extends AnyVal {
         
         inline def setHeadersUrl(value: String): Self = StObject.set(x, "headersUrl", value.asInstanceOf[js.Any])
         
@@ -1852,7 +1858,8 @@ object global {
         __obj.asInstanceOf[ProcessVersions]
       }
       
-      extension [Self <: ProcessVersions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProcessVersions] (val x: Self) extends AnyVal {
         
         inline def setAres(value: String): Self = StObject.set(x, "ares", value.asInstanceOf[js.Any])
         
@@ -1937,7 +1944,8 @@ object global {
         __obj.asInstanceOf[ResourceUsage]
       }
       
-      extension [Self <: ResourceUsage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ResourceUsage] (val x: Self) extends AnyVal {
         
         inline def setFsRead(value: Double): Self = StObject.set(x, "fsRead", value.asInstanceOf[js.Any])
         

@@ -23,7 +23,8 @@ object mod {
       __obj.asInstanceOf[Literal[Value, TData]]
     }
     
-    extension [Self <: Literal[?, ?], Value, TData /* <: js.Object */](x: Self & (Literal[Value, TData])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Literal[?, ?], Value, TData /* <: js.Object */] (val x: Self & (Literal[Value, TData])) extends AnyVal {
       
       inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -55,7 +56,8 @@ object mod {
       __obj.asInstanceOf[Node[TData]]
     }
     
-    extension [Self <: Node[?], TData /* <: js.Object */](x: Self & Node[TData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node[?], TData /* <: js.Object */] (val x: Self & Node[TData]) extends AnyVal {
       
       inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object mod {
       __obj.asInstanceOf[Parent[ChildNode, TData]]
     }
     
-    extension [Self <: Parent[?, ?], ChildNode /* <: Node[js.Object] */, TData /* <: js.Object */](x: Self & (Parent[ChildNode, TData])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parent[?, ?], ChildNode /* <: Node[js.Object] */, TData /* <: js.Object */] (val x: Self & (Parent[ChildNode, TData])) extends AnyVal {
       
       inline def setChildren(value: js.Array[ChildNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -128,7 +131,8 @@ object mod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -165,7 +169,8 @@ object mod {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

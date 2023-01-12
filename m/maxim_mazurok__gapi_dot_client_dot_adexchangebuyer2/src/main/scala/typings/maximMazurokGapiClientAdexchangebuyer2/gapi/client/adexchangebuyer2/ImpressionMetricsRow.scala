@@ -31,7 +31,8 @@ object ImpressionMetricsRow {
     __obj.asInstanceOf[ImpressionMetricsRow]
   }
   
-  extension [Self <: ImpressionMetricsRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImpressionMetricsRow] (val x: Self) extends AnyVal {
     
     inline def setAvailableImpressions(value: MetricValue): Self = StObject.set(x, "availableImpressions", value.asInstanceOf[js.Any])
     

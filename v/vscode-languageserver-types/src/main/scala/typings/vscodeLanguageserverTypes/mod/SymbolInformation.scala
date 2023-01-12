@@ -51,7 +51,8 @@ object SymbolInformation {
   inline def create(name: String, kind: SymbolKind, range: Range, uri: DocumentUri): SymbolInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[SymbolInformation]
   inline def create(name: String, kind: SymbolKind, range: Range, uri: DocumentUri, containerName: String): SymbolInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], uri.asInstanceOf[js.Any], containerName.asInstanceOf[js.Any])).asInstanceOf[SymbolInformation]
   
-  extension [Self <: SymbolInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolInformation] (val x: Self) extends AnyVal {
     
     inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     

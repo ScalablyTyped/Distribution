@@ -26,7 +26,8 @@ object GlobalHooks {
     __obj.asInstanceOf[GlobalHooks]
   }
   
-  extension [Self <: GlobalHooks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalHooks] (val x: Self) extends AnyVal {
     
     inline def setAfterEach(value: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]] => Unit): Self = StObject.set(x, "afterEach", js.Any.fromFunction1(value))
     

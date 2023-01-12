@@ -33,7 +33,8 @@ object Change {
     __obj.asInstanceOf[Change]
   }
   
-  extension [Self <: Change](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
     
     inline def setAdditions(value: js.Array[ResourceRecordSet]): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
     

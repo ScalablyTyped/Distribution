@@ -51,7 +51,8 @@ object PlusNativeUIPickTimeOption {
     __obj.asInstanceOf[PlusNativeUIPickTimeOption]
   }
   
-  extension [Self <: PlusNativeUIPickTimeOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNativeUIPickTimeOption] (val x: Self) extends AnyVal {
     
     inline def setIs24Hour(value: Boolean): Self = StObject.set(x, "is24Hour", value.asInstanceOf[js.Any])
     

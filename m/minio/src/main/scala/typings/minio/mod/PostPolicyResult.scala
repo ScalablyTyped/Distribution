@@ -18,7 +18,8 @@ object PostPolicyResult {
     __obj.asInstanceOf[PostPolicyResult]
   }
   
-  extension [Self <: PostPolicyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostPolicyResult] (val x: Self) extends AnyVal {
     
     inline def setFormData(value: StringDictionary[Any]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     

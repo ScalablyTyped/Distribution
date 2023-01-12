@@ -96,7 +96,8 @@ object CreateJobParams {
     __obj.asInstanceOf[CreateJobParams]
   }
   
-  extension [Self <: CreateJobParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateJobParams] (val x: Self) extends AnyVal {
     
     inline def setAcoustic_customization_id(value: String): Self = StObject.set(x, "acoustic_customization_id", value.asInstanceOf[js.Any])
     

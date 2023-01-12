@@ -58,7 +58,8 @@ object WaterSymbol3DLayerProperties {
     __obj.asInstanceOf[WaterSymbol3DLayerProperties]
   }
   
-  extension [Self <: WaterSymbol3DLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaterSymbol3DLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

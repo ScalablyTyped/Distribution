@@ -38,7 +38,8 @@ object JCanvasTextDef {
     __obj.asInstanceOf[JCanvasTextDef]
   }
   
-  extension [Self <: JCanvasTextDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JCanvasTextDef] (val x: Self) extends AnyVal {
     
     inline def setFillStyle(value: String): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
     

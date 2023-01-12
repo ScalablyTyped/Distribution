@@ -43,7 +43,8 @@ object CustomLoaderConfig {
     __obj.asInstanceOf[CustomLoaderConfig]
   }
   
-  extension [Self <: CustomLoaderConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomLoaderConfig] (val x: Self) extends AnyVal {
     
     inline def setCall(value: Boolean): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
     

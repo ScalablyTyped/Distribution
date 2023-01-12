@@ -23,7 +23,8 @@ object IWebXRMotionControllerAxesValue {
     __obj.asInstanceOf[IWebXRMotionControllerAxesValue]
   }
   
-  extension [Self <: IWebXRMotionControllerAxesValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRMotionControllerAxesValue] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

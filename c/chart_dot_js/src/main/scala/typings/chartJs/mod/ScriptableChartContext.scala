@@ -18,7 +18,8 @@ object ScriptableChartContext {
     __obj.asInstanceOf[ScriptableChartContext]
   }
   
-  extension [Self <: ScriptableChartContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptableChartContext] (val x: Self) extends AnyVal {
     
     inline def setChart(value: Chart[ChartType, DefaultDataPoint[ChartType], Any]): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     

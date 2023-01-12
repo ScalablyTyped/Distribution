@@ -29,7 +29,8 @@ object libColGroupMod {
       __obj.asInstanceOf[ColGroupProps[RecordType]]
     }
     
-    extension [Self <: ColGroupProps[?], RecordType](x: Self & ColGroupProps[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColGroupProps[?], RecordType] (val x: Self & ColGroupProps[RecordType]) extends AnyVal {
       
       inline def setColWidths(value: js.Array[Double | String]): Self = StObject.set(x, "colWidths", value.asInstanceOf[js.Any])
       

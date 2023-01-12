@@ -26,7 +26,8 @@ object UpdateImagePropertiesRequest {
     __obj.asInstanceOf[UpdateImagePropertiesRequest]
   }
   
-  extension [Self <: UpdateImagePropertiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateImagePropertiesRequest] (val x: Self) extends AnyVal {
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

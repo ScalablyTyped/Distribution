@@ -37,7 +37,8 @@ object componentsPostVisibilityCheckMod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setRender(value: RenderProps => Element): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       }
@@ -54,7 +55,8 @@ object componentsPostVisibilityCheckMod {
         __obj.asInstanceOf[RenderProps]
       }
       
-      extension [Self <: RenderProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenderProps] (val x: Self) extends AnyVal {
         
         inline def setCanEdit(value: Boolean): Self = StObject.set(x, "canEdit", value.asInstanceOf[js.Any])
       }

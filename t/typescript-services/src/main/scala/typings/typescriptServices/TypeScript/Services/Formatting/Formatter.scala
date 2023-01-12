@@ -272,7 +272,8 @@ object Formatter {
     __obj.asInstanceOf[Formatter]
   }
   
-  extension [Self <: Formatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Formatter] (val x: Self) extends AnyVal {
     
     inline def setFindCommonParents(value: (Any, Any) => Any): Self = StObject.set(x, "findCommonParents", js.Any.fromFunction2(value))
     

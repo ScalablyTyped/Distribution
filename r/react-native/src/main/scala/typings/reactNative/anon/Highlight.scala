@@ -21,7 +21,8 @@ object Highlight {
     __obj.asInstanceOf[Highlight]
   }
   
-  extension [Self <: Highlight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Highlight] (val x: Self) extends AnyVal {
     
     inline def setHighlight(value: () => Unit): Self = StObject.set(x, "highlight", js.Any.fromFunction0(value))
     

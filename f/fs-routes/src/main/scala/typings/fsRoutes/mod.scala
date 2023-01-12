@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[FsRoute]
     }
     
-    extension [Self <: FsRoute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FsRoute] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object mod {
       __obj.asInstanceOf[FsRoutesOptions]
     }
     
-    extension [Self <: FsRoutesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FsRoutesOptions] (val x: Self) extends AnyVal {
       
       inline def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
       

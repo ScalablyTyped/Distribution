@@ -18,7 +18,8 @@ object GetUICustomizationResponse {
     __obj.asInstanceOf[GetUICustomizationResponse]
   }
   
-  extension [Self <: GetUICustomizationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUICustomizationResponse] (val x: Self) extends AnyVal {
     
     inline def setUICustomization(value: UICustomizationType): Self = StObject.set(x, "UICustomization", value.asInstanceOf[js.Any])
   }

@@ -215,7 +215,8 @@ object typesPutObjectInputMod {
       __obj.asInstanceOf[PutObjectInput[StreamType]]
     }
     
-    extension [Self <: PutObjectInput[?], StreamType](x: Self & PutObjectInput[StreamType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutObjectInput[?], StreamType] (val x: Self & PutObjectInput[StreamType]) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

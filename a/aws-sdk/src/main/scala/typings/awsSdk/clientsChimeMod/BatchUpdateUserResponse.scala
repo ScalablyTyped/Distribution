@@ -18,7 +18,8 @@ object BatchUpdateUserResponse {
     __obj.asInstanceOf[BatchUpdateUserResponse]
   }
   
-  extension [Self <: BatchUpdateUserResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdateUserResponse] (val x: Self) extends AnyVal {
     
     inline def setUserErrors(value: UserErrorList): Self = StObject.set(x, "UserErrors", value.asInstanceOf[js.Any])
     

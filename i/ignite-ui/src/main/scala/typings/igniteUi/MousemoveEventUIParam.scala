@@ -28,7 +28,8 @@ object MousemoveEventUIParam {
     __obj.asInstanceOf[MousemoveEventUIParam]
   }
   
-  extension [Self <: MousemoveEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MousemoveEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setEditorInput(value: Any): Self = StObject.set(x, "editorInput", value.asInstanceOf[js.Any])
     

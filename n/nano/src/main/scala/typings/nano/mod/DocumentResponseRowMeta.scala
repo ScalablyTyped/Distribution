@@ -26,7 +26,8 @@ object DocumentResponseRowMeta {
     __obj.asInstanceOf[DocumentResponseRowMeta]
   }
   
-  extension [Self <: DocumentResponseRowMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentResponseRowMeta] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

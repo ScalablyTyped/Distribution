@@ -25,7 +25,8 @@ object LoggingConfig {
     __obj.asInstanceOf[LoggingConfig]
   }
   
-  extension [Self <: LoggingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoggingConfig] (val x: Self) extends AnyVal {
     
     inline def setEnableOnpremGcsTransferLogs(value: Boolean): Self = StObject.set(x, "enableOnpremGcsTransferLogs", value.asInstanceOf[js.Any])
     

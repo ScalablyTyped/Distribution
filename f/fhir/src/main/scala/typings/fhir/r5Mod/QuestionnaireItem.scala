@@ -158,7 +158,8 @@ object QuestionnaireItem {
     __obj.asInstanceOf[QuestionnaireItem]
   }
   
-  extension [Self <: QuestionnaireItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuestionnaireItem] (val x: Self) extends AnyVal {
     
     inline def setAnswerConstraint(value: optionsOnly | optionsOrType | optionsOrString): Self = StObject.set(x, "answerConstraint", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object Surface {
     __obj.asInstanceOf[Surface]
   }
   
-  extension [Self <: Surface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Surface] (val x: Self) extends AnyVal {
     
     inline def setSurface(value: Overlay): Self = StObject.set(x, "surface", value.asInstanceOf[js.Any])
   }

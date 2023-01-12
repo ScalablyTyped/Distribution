@@ -56,7 +56,8 @@ object buildSrcResolverMod {
       __obj.asInstanceOf[CallConfig]
     }
     
-    extension [Self <: CallConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallConfig] (val x: Self) extends AnyVal {
       
       inline def setDynamicFilterFactories(value: js.Array[FilterFactory[Filter]]): Self = StObject.set(x, "dynamicFilterFactories", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object buildSrcResolverMod {
       __obj.asInstanceOf[Resolver]
     }
     
-    extension [Self <: Resolver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resolver] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

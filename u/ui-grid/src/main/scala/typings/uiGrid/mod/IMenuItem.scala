@@ -35,7 +35,8 @@ object IMenuItem {
     __obj.asInstanceOf[IMenuItem]
   }
   
-  extension [Self <: IMenuItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMenuItem] (val x: Self) extends AnyVal {
     
     inline def setAction(value: /* $event */ IAngularEvent => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     

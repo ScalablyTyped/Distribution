@@ -31,7 +31,8 @@ object distComponentsAuthorizationClientRoleMod {
       __obj.asInstanceOf[ClientRoleProps]
     }
     
-    extension [Self <: ClientRoleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientRoleProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

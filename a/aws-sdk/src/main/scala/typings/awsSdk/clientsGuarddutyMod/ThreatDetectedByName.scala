@@ -33,7 +33,8 @@ object ThreatDetectedByName {
     __obj.asInstanceOf[ThreatDetectedByName]
   }
   
-  extension [Self <: ThreatDetectedByName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreatDetectedByName] (val x: Self) extends AnyVal {
     
     inline def setItemCount(value: Integer): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
     

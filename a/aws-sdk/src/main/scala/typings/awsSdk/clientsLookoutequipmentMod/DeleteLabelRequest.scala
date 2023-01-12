@@ -23,7 +23,8 @@ object DeleteLabelRequest {
     __obj.asInstanceOf[DeleteLabelRequest]
   }
   
-  extension [Self <: DeleteLabelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLabelRequest] (val x: Self) extends AnyVal {
     
     inline def setLabelGroupName(value: LabelGroupName): Self = StObject.set(x, "LabelGroupName", value.asInstanceOf[js.Any])
     

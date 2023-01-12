@@ -19,7 +19,8 @@ object PermissionsPolicyFeatureState {
     __obj.asInstanceOf[PermissionsPolicyFeatureState]
   }
   
-  extension [Self <: PermissionsPolicyFeatureState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionsPolicyFeatureState] (val x: Self) extends AnyVal {
     
     inline def setAllowed(value: Boolean): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
     

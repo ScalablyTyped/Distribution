@@ -18,7 +18,8 @@ object CreateAccessKeyResponse {
     __obj.asInstanceOf[CreateAccessKeyResponse]
   }
   
-  extension [Self <: CreateAccessKeyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAccessKeyResponse] (val x: Self) extends AnyVal {
     
     inline def setAccessKey(value: AccessKey): Self = StObject.set(x, "AccessKey", value.asInstanceOf[js.Any])
   }

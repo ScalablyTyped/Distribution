@@ -17,7 +17,8 @@ object GridColumnMenuColumns {
     __obj.asInstanceOf[GridColumnMenuColumns]
   }
   
-  extension [Self <: GridColumnMenuColumns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridColumnMenuColumns] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: js.Array[GridColumnMenuColumnsGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     

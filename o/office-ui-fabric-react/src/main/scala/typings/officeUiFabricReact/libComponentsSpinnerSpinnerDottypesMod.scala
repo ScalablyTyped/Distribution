@@ -156,7 +156,8 @@ object libComponentsSpinnerSpinnerDottypesMod {
       __obj.asInstanceOf[ISpinnerProps]
     }
     
-    extension [Self <: ISpinnerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpinnerProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -221,7 +222,8 @@ object libComponentsSpinnerSpinnerDottypesMod {
       __obj.asInstanceOf[ISpinnerStyleProps]
     }
     
-    extension [Self <: ISpinnerStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpinnerStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -260,7 +262,8 @@ object libComponentsSpinnerSpinnerDottypesMod {
       __obj.asInstanceOf[ISpinnerStyles]
     }
     
-    extension [Self <: ISpinnerStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpinnerStyles] (val x: Self) extends AnyVal {
       
       inline def setCircle(value: IStyle): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
       

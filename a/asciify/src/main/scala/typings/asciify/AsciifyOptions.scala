@@ -19,7 +19,8 @@ object AsciifyOptions {
     __obj.asInstanceOf[AsciifyOptions]
   }
   
-  extension [Self <: AsciifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsciifyOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

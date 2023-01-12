@@ -20,7 +20,8 @@ object PaletteEditor {
     __obj.asInstanceOf[PaletteEditor]
   }
   
-  extension [Self <: PaletteEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaletteEditor] (val x: Self) extends AnyVal {
     
     inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     

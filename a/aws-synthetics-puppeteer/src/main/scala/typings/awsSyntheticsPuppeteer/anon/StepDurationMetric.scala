@@ -17,7 +17,8 @@ object StepDurationMetric {
     __obj.asInstanceOf[StepDurationMetric]
   }
   
-  extension [Self <: StepDurationMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepDurationMetric] (val x: Self) extends AnyVal {
     
     inline def setStepDurationMetric(value: Boolean): Self = StObject.set(x, "stepDurationMetric", value.asInstanceOf[js.Any])
     

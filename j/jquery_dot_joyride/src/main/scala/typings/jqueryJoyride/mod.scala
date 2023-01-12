@@ -58,7 +58,8 @@ object mod {
         __obj.asInstanceOf[JQuery]
       }
       
-      extension [Self <: JQuery](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
         
         inline def setJoyride(value: Joyride): Self = StObject.set(x, "joyride", value.asInstanceOf[js.Any])
       }
@@ -292,7 +293,8 @@ object mod {
         __obj.asInstanceOf[JoyrideOptions]
       }
       
-      extension [Self <: JoyrideOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JoyrideOptions] (val x: Self) extends AnyVal {
         
         inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
         
@@ -464,7 +466,8 @@ object mod {
         __obj.asInstanceOf[JoyrideTemplate]
       }
       
-      extension [Self <: JoyrideTemplate](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JoyrideTemplate] (val x: Self) extends AnyVal {
         
         inline def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
         

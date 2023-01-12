@@ -20,7 +20,8 @@ object ITpStateSetResponse {
     __obj.asInstanceOf[ITpStateSetResponse]
   }
   
-  extension [Self <: ITpStateSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITpStateSetResponse] (val x: Self) extends AnyVal {
     
     inline def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     

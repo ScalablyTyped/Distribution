@@ -18,7 +18,8 @@ object SubscriptionDefinitionVersion {
     __obj.asInstanceOf[SubscriptionDefinitionVersion]
   }
   
-  extension [Self <: SubscriptionDefinitionVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionDefinitionVersion] (val x: Self) extends AnyVal {
     
     inline def setSubscriptions(value: listOfSubscription): Self = StObject.set(x, "Subscriptions", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object IpVer {
     __obj.asInstanceOf[IpVer]
   }
   
-  extension [Self <: IpVer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpVer] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

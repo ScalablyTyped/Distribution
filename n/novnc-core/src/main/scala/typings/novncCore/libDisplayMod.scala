@@ -186,7 +186,8 @@ object libDisplayMod {
       __obj.asInstanceOf[NvDisplayDefaults]
     }
     
-    extension [Self <: NvDisplayDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NvDisplayDefaults] (val x: Self) extends AnyVal {
       
       inline def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -252,7 +253,8 @@ object libDisplayMod {
       __obj.asInstanceOf[NvLogo]
     }
     
-    extension [Self <: NvLogo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NvLogo] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

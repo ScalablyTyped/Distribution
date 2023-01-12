@@ -19,7 +19,8 @@ object ImageDistributionDescriptorInfo {
     __obj.asInstanceOf[ImageDistributionDescriptorInfo]
   }
   
-  extension [Self <: ImageDistributionDescriptorInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageDistributionDescriptorInfo] (val x: Self) extends AnyVal {
     
     inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     

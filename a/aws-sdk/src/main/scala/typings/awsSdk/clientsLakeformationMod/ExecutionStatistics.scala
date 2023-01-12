@@ -28,7 +28,8 @@ object ExecutionStatistics {
     __obj.asInstanceOf[ExecutionStatistics]
   }
   
-  extension [Self <: ExecutionStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionStatistics] (val x: Self) extends AnyVal {
     
     inline def setAverageExecutionTimeMillis(value: NumberOfMilliseconds): Self = StObject.set(x, "AverageExecutionTimeMillis", value.asInstanceOf[js.Any])
     

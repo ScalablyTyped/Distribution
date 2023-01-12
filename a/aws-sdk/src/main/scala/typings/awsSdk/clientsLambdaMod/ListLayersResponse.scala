@@ -23,7 +23,8 @@ object ListLayersResponse {
     __obj.asInstanceOf[ListLayersResponse]
   }
   
-  extension [Self <: ListLayersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLayersResponse] (val x: Self) extends AnyVal {
     
     inline def setLayers(value: LayersList): Self = StObject.set(x, "Layers", value.asInstanceOf[js.Any])
     

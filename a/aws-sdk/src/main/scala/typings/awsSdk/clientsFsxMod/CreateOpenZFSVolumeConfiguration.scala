@@ -63,7 +63,8 @@ object CreateOpenZFSVolumeConfiguration {
     __obj.asInstanceOf[CreateOpenZFSVolumeConfiguration]
   }
   
-  extension [Self <: CreateOpenZFSVolumeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateOpenZFSVolumeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCopyTagsToSnapshots(value: Flag): Self = StObject.set(x, "CopyTagsToSnapshots", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object BULK {
     __obj.asInstanceOf[BULK]
   }
   
-  extension [Self <: BULK](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BULK] (val x: Self) extends AnyVal {
     
     inline def setBULK(value: bulk_): Self = StObject.set(x, "BULK", value.asInstanceOf[js.Any])
     

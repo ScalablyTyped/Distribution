@@ -51,7 +51,8 @@ object typesEdgeMod {
       __obj.asInstanceOf[Edge]
     }
     
-    extension [Self <: Edge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: js.Array[Alias] | js.Iterable[Alias]): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object typesEdgeMod {
       __obj.asInstanceOf[UnmarshalledEdge]
     }
     
-    extension [Self <: UnmarshalledEdge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledEdge] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: js.Array[UnmarshalledAlias]): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
       

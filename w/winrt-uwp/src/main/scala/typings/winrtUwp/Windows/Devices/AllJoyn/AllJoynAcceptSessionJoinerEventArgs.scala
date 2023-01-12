@@ -39,7 +39,8 @@ object AllJoynAcceptSessionJoinerEventArgs {
     __obj.asInstanceOf[AllJoynAcceptSessionJoinerEventArgs]
   }
   
-  extension [Self <: AllJoynAcceptSessionJoinerEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllJoynAcceptSessionJoinerEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: () => Unit): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
     

@@ -29,7 +29,8 @@ object XVbaMethodParameter {
     __obj.asInstanceOf[XVbaMethodParameter]
   }
   
-  extension [Self <: XVbaMethodParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XVbaMethodParameter] (val x: Self) extends AnyVal {
     
     inline def setGetVbaMethodParameter(value: String => Any): Self = StObject.set(x, "getVbaMethodParameter", js.Any.fromFunction1(value))
     

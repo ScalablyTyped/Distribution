@@ -162,7 +162,8 @@ object IWindowOptions {
     __obj.asInstanceOf[IWindowOptions]
   }
   
-  extension [Self <: IWindowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWindowOptions] (val x: Self) extends AnyVal {
     
     inline def setFullscreenWin(value: Boolean): Self = StObject.set(x, "fullscreenWin", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetCrawlerMetricsResponse {
     __obj.asInstanceOf[GetCrawlerMetricsResponse]
   }
   
-  extension [Self <: GetCrawlerMetricsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCrawlerMetricsResponse] (val x: Self) extends AnyVal {
     
     inline def setCrawlerMetricsList(value: CrawlerMetricsList): Self = StObject.set(x, "CrawlerMetricsList", value.asInstanceOf[js.Any])
     

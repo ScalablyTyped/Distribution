@@ -147,7 +147,8 @@ object ISelect {
     __obj.asInstanceOf[ISelect]
   }
   
-  extension [Self <: ISelect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISelect] (val x: Self) extends AnyVal {
     
     inline def setAutoSelect(value: Boolean): Self = StObject.set(x, "autoSelect", value.asInstanceOf[js.Any])
     

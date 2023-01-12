@@ -148,7 +148,8 @@ object mod {
         __obj.asInstanceOf[FontOptions]
       }
       
-      extension [Self <: FontOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FontOptions] (val x: Self) extends AnyVal {
         
         inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       }
@@ -258,7 +259,8 @@ object mod {
         __obj.asInstanceOf[TextGroupOptions[T]]
       }
       
-      extension [Self <: TextGroupOptions[?], T /* <: MultilineText */](x: Self & TextGroupOptions[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TextGroupOptions[?], T /* <: MultilineText */] (val x: Self & TextGroupOptions[T]) extends AnyVal {
         
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -335,7 +337,8 @@ object mod {
         __obj.asInstanceOf[TextOptions[T]]
       }
       
-      extension [Self <: TextOptions[?], T /* <: MultilineText */](x: Self & TextOptions[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TextOptions[?], T /* <: MultilineText */] (val x: Self & TextOptions[T]) extends AnyVal {
         
         inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
         

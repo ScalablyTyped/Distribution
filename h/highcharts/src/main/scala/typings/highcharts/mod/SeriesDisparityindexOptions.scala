@@ -77,7 +77,8 @@ object SeriesDisparityindexOptions {
     __obj.asInstanceOf[SeriesDisparityindexOptions]
   }
   
-  extension [Self <: SeriesDisparityindexOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesDisparityindexOptions] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

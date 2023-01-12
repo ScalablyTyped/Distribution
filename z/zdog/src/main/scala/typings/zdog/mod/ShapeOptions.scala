@@ -75,7 +75,8 @@ object ShapeOptions {
     __obj.asInstanceOf[ShapeOptions]
   }
   
-  extension [Self <: ShapeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeOptions] (val x: Self) extends AnyVal {
     
     inline def setBackface(value: Boolean | String): Self = StObject.set(x, "backface", value.asInstanceOf[js.Any])
     

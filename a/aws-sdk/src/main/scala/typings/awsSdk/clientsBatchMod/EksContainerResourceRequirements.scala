@@ -23,7 +23,8 @@ object EksContainerResourceRequirements {
     __obj.asInstanceOf[EksContainerResourceRequirements]
   }
   
-  extension [Self <: EksContainerResourceRequirements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EksContainerResourceRequirements] (val x: Self) extends AnyVal {
     
     inline def setLimits(value: EksLimits): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     

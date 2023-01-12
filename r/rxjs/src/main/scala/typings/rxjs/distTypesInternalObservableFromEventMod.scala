@@ -99,7 +99,8 @@ object distTypesInternalObservableFromEventMod {
       __obj.asInstanceOf[EventListenerObject[E]]
     }
     
-    extension [Self <: EventListenerObject[?], E](x: Self & EventListenerObject[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventListenerObject[?], E] (val x: Self & EventListenerObject[E]) extends AnyVal {
       
       inline def setHandleEvent(value: E => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     }
@@ -120,7 +121,8 @@ object distTypesInternalObservableFromEventMod {
       __obj.asInstanceOf[EventListenerOptions]
     }
     
-    extension [Self <: EventListenerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventListenerOptions] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
@@ -182,7 +184,8 @@ object distTypesInternalObservableFromEventMod {
       __obj.asInstanceOf[JQueryStyleEventEmitter[TContext, T]]
     }
     
-    extension [Self <: JQueryStyleEventEmitter[?, ?], TContext, T](x: Self & (JQueryStyleEventEmitter[TContext, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JQueryStyleEventEmitter[?, ?], TContext, T] (val x: Self & (JQueryStyleEventEmitter[TContext, T])) extends AnyVal {
       
       inline def setOff(value: (String, js.ThisFunction2[/* this */ TContext, /* t */ T, /* repeated */ Any, Any]) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
@@ -206,7 +209,8 @@ object distTypesInternalObservableFromEventMod {
       __obj.asInstanceOf[NodeCompatibleEventEmitter]
     }
     
-    extension [Self <: NodeCompatibleEventEmitter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeCompatibleEventEmitter] (val x: Self) extends AnyVal {
       
       inline def setAddListener(value: (String, NodeEventHandler) => Unit | js.Object): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       

@@ -36,7 +36,8 @@ object ImplementationGuideDefinitionTemplate {
     __obj.asInstanceOf[ImplementationGuideDefinitionTemplate]
   }
   
-  extension [Self <: ImplementationGuideDefinitionTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImplementationGuideDefinitionTemplate] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ListNonBillableWinningBidsResponse {
     __obj.asInstanceOf[ListNonBillableWinningBidsResponse]
   }
   
-  extension [Self <: ListNonBillableWinningBidsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNonBillableWinningBidsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

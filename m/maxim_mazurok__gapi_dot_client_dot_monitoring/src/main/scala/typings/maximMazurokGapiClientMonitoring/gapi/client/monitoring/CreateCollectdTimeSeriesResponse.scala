@@ -25,7 +25,8 @@ object CreateCollectdTimeSeriesResponse {
     __obj.asInstanceOf[CreateCollectdTimeSeriesResponse]
   }
   
-  extension [Self <: CreateCollectdTimeSeriesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCollectdTimeSeriesResponse] (val x: Self) extends AnyVal {
     
     inline def setPayloadErrors(value: js.Array[CollectdPayloadError]): Self = StObject.set(x, "payloadErrors", value.asInstanceOf[js.Any])
     

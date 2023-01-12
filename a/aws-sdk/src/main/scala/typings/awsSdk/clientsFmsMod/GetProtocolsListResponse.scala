@@ -23,7 +23,8 @@ object GetProtocolsListResponse {
     __obj.asInstanceOf[GetProtocolsListResponse]
   }
   
-  extension [Self <: GetProtocolsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetProtocolsListResponse] (val x: Self) extends AnyVal {
     
     inline def setProtocolsList(value: ProtocolsListData): Self = StObject.set(x, "ProtocolsList", value.asInstanceOf[js.Any])
     

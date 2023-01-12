@@ -19,7 +19,8 @@ object BinaryIndex {
     __obj.asInstanceOf[BinaryIndex]
   }
   
-  extension [Self <: BinaryIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinaryIndex] (val x: Self) extends AnyVal {
     
     inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
     

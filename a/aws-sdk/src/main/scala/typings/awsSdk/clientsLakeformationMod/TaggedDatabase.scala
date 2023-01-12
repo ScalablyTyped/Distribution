@@ -23,7 +23,8 @@ object TaggedDatabase {
     __obj.asInstanceOf[TaggedDatabase]
   }
   
-  extension [Self <: TaggedDatabase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaggedDatabase] (val x: Self) extends AnyVal {
     
     inline def setDatabase(value: DatabaseResource): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object NluEnrichmentSemanticRoles {
     __obj.asInstanceOf[NluEnrichmentSemanticRoles]
   }
   
-  extension [Self <: NluEnrichmentSemanticRoles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NluEnrichmentSemanticRoles] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: Boolean): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     

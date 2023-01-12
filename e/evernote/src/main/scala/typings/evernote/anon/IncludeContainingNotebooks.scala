@@ -33,7 +33,8 @@ object IncludeContainingNotebooks {
     __obj.asInstanceOf[IncludeContainingNotebooks]
   }
   
-  extension [Self <: IncludeContainingNotebooks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeContainingNotebooks] (val x: Self) extends AnyVal {
     
     inline def setIncludeContainingNotebooks(value: Boolean): Self = StObject.set(x, "includeContainingNotebooks", value.asInstanceOf[js.Any])
     

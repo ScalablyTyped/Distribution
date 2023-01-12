@@ -29,7 +29,8 @@ object QuizStart {
     __obj.asInstanceOf[QuizStart]
   }
   
-  extension [Self <: QuizStart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuizStart] (val x: Self) extends AnyVal {
     
     inline def setGameBlockCount(value: Double): Self = StObject.set(x, "gameBlockCount", value.asInstanceOf[js.Any])
     

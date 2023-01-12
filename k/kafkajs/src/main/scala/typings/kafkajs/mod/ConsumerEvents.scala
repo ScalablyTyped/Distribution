@@ -61,7 +61,8 @@ object ConsumerEvents {
     __obj.asInstanceOf[ConsumerEvents]
   }
   
-  extension [Self <: ConsumerEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumerEvents] (val x: Self) extends AnyVal {
     
     inline def setCOMMIT_OFFSETS(value: consumerDotcommit_offsets): Self = StObject.set(x, "COMMIT_OFFSETS", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object DeleteAclResponse {
     __obj.asInstanceOf[DeleteAclResponse]
   }
   
-  extension [Self <: DeleteAclResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAclResponse] (val x: Self) extends AnyVal {
     
     inline def setFilterResponses(value: js.Array[DeleteAclFilterResponses]): Self = StObject.set(x, "filterResponses", value.asInstanceOf[js.Any])
     

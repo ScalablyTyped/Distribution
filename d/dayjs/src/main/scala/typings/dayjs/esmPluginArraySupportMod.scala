@@ -49,7 +49,8 @@ object esmPluginArraySupportMod extends Shortcut {
         __obj.asInstanceOf[ConfigTypeMap]
       }
       
-      extension [Self <: ConfigTypeMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConfigTypeMap] (val x: Self) extends AnyVal {
         
         inline def setArraySupport(
           value: js.Tuple7[

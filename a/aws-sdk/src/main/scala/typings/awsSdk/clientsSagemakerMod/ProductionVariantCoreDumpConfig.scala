@@ -23,7 +23,8 @@ object ProductionVariantCoreDumpConfig {
     __obj.asInstanceOf[ProductionVariantCoreDumpConfig]
   }
   
-  extension [Self <: ProductionVariantCoreDumpConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductionVariantCoreDumpConfig] (val x: Self) extends AnyVal {
     
     inline def setDestinationS3Uri(value: DestinationS3Uri): Self = StObject.set(x, "DestinationS3Uri", value.asInstanceOf[js.Any])
     

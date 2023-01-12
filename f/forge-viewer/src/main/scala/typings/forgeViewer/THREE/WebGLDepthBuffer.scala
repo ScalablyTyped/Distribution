@@ -32,7 +32,8 @@ object WebGLDepthBuffer {
     __obj.asInstanceOf[WebGLDepthBuffer]
   }
   
-  extension [Self <: WebGLDepthBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLDepthBuffer] (val x: Self) extends AnyVal {
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     

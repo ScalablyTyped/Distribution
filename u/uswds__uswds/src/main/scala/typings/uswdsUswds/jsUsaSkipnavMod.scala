@@ -25,7 +25,8 @@ object jsUsaSkipnavMod extends Shortcut {
       __obj.asInstanceOf[Skipnav]
     }
     
-    extension [Self <: Skipnav](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Skipnav] (val x: Self) extends AnyVal {
       
       inline def setOff(value: HTMLElement => Unit): Self = StObject.set(x, "off", js.Any.fromFunction1(value))
       

@@ -18,7 +18,8 @@ object DisableIpamOrganizationAdminAccountResult {
     __obj.asInstanceOf[DisableIpamOrganizationAdminAccountResult]
   }
   
-  extension [Self <: DisableIpamOrganizationAdminAccountResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableIpamOrganizationAdminAccountResult] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: Boolean): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
     

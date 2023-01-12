@@ -17,7 +17,8 @@ object IDeleteAgentRequest {
     __obj.asInstanceOf[IDeleteAgentRequest]
   }
   
-  extension [Self <: IDeleteAgentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDeleteAgentRequest] (val x: Self) extends AnyVal {
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

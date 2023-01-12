@@ -44,7 +44,8 @@ object RefSarifid {
     __obj.asInstanceOf[RefSarifid]
   }
   
-  extension [Self <: RefSarifid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefSarifid] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

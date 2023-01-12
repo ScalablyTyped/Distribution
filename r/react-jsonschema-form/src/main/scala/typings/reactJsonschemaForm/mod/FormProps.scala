@@ -154,7 +154,8 @@ object FormProps {
     __obj.asInstanceOf[FormProps[T]]
   }
   
-  extension [Self <: FormProps[?], T](x: Self & FormProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormProps[?], T] (val x: Self & FormProps[T]) extends AnyVal {
     
     inline def setAcceptcharset(value: String): Self = StObject.set(x, "acceptcharset", value.asInstanceOf[js.Any])
     

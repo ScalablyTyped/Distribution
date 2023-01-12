@@ -17,7 +17,8 @@ object FlashPoint3D {
     __obj.asInstanceOf[FlashPoint3D]
   }
   
-  extension [Self <: FlashPoint3D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashPoint3D] (val x: Self) extends AnyVal {
     
     inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
   }

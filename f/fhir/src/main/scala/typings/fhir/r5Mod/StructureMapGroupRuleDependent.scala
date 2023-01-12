@@ -27,7 +27,8 @@ object StructureMapGroupRuleDependent {
     __obj.asInstanceOf[StructureMapGroupRuleDependent]
   }
   
-  extension [Self <: StructureMapGroupRuleDependent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureMapGroupRuleDependent] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

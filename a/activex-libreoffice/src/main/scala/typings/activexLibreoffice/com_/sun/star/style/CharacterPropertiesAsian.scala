@@ -67,7 +67,8 @@ object CharacterPropertiesAsian {
     __obj.asInstanceOf[CharacterPropertiesAsian]
   }
   
-  extension [Self <: CharacterPropertiesAsian](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CharacterPropertiesAsian] (val x: Self) extends AnyVal {
     
     inline def setCharFontCharSetAsian(value: Double): Self = StObject.set(x, "CharFontCharSetAsian", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object commandsMod {
       __obj.asInstanceOf[IonicEnvironmentDeps]
     }
     
-    extension [Self <: IonicEnvironmentDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IonicEnvironmentDeps] (val x: Self) extends AnyVal {
       
       inline def setEnv(value: IonicEnvironment): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       

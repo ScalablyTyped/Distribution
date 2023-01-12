@@ -19,7 +19,8 @@ object libAuthTokenVerifierMod {
       __obj.asInstanceOf[DecodedAuthBlockingEnrolledFactors]
     }
     
-    extension [Self <: DecodedAuthBlockingEnrolledFactors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodedAuthBlockingEnrolledFactors] (val x: Self) extends AnyVal {
       
       inline def setEnrolled_factors(value: js.Array[DecodedAuthBlockingMfaInfo]): Self = StObject.set(x, "enrolled_factors", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object libAuthTokenVerifierMod {
       __obj.asInstanceOf[DecodedAuthBlockingMetadata]
     }
     
-    extension [Self <: DecodedAuthBlockingMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodedAuthBlockingMetadata] (val x: Self) extends AnyVal {
       
       inline def setCreation_time(value: Double): Self = StObject.set(x, "creation_time", value.asInstanceOf[js.Any])
       
@@ -73,7 +75,8 @@ object libAuthTokenVerifierMod {
       __obj.asInstanceOf[DecodedAuthBlockingMfaInfo]
     }
     
-    extension [Self <: DecodedAuthBlockingMfaInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodedAuthBlockingMfaInfo] (val x: Self) extends AnyVal {
       
       inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
       
@@ -114,7 +117,8 @@ object libAuthTokenVerifierMod {
       __obj.asInstanceOf[DecodedAuthBlockingSharedUserInfo]
     }
     
-    extension [Self <: DecodedAuthBlockingSharedUserInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodedAuthBlockingSharedUserInfo] (val x: Self) extends AnyVal {
       
       inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
       
@@ -196,7 +200,8 @@ object libAuthTokenVerifierMod {
       __obj.asInstanceOf[DecodedAuthBlockingToken]
     }
     
-    extension [Self <: DecodedAuthBlockingToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodedAuthBlockingToken] (val x: Self) extends AnyVal {
       
       inline def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
       
@@ -277,7 +282,8 @@ object libAuthTokenVerifierMod {
       __obj.asInstanceOf[DecodedAuthBlockingUserInfo]
     }
     
-    extension [Self <: DecodedAuthBlockingUserInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodedAuthBlockingUserInfo] (val x: Self) extends AnyVal {
       
       inline def setProvider_id(value: String): Self = StObject.set(x, "provider_id", value.asInstanceOf[js.Any])
     }
@@ -315,7 +321,8 @@ object libAuthTokenVerifierMod {
       __obj.asInstanceOf[DecodedAuthBlockingUserRecord]
     }
     
-    extension [Self <: DecodedAuthBlockingUserRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodedAuthBlockingUserRecord] (val x: Self) extends AnyVal {
       
       inline def setCustom_claims(value: Any): Self = StObject.set(x, "custom_claims", value.asInstanceOf[js.Any])
       
@@ -476,7 +483,8 @@ object libAuthTokenVerifierMod {
       __obj.asInstanceOf[DecodedIdToken]
     }
     
-    extension [Self <: DecodedIdToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodedIdToken] (val x: Self) extends AnyVal {
       
       inline def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
       

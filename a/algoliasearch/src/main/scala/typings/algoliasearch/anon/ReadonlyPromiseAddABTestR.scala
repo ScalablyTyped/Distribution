@@ -28,7 +28,8 @@ object ReadonlyPromiseAddABTestR {
     __obj.asInstanceOf[ReadonlyPromiseAddABTestR]
   }
   
-  extension [Self <: ReadonlyPromiseAddABTestR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyPromiseAddABTestR] (val x: Self) extends AnyVal {
     
     inline def setCatch(value: () => js.Promise[AddABTestResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     

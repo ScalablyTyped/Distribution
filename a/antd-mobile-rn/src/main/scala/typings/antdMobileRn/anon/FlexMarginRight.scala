@@ -21,7 +21,8 @@ object FlexMarginRight {
     __obj.asInstanceOf[FlexMarginRight]
   }
   
-  extension [Self <: FlexMarginRight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexMarginRight] (val x: Self) extends AnyVal {
     
     inline def setFlex(value: Double): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     

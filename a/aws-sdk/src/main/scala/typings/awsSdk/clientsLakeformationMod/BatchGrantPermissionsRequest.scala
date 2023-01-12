@@ -23,7 +23,8 @@ object BatchGrantPermissionsRequest {
     __obj.asInstanceOf[BatchGrantPermissionsRequest]
   }
   
-  extension [Self <: BatchGrantPermissionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGrantPermissionsRequest] (val x: Self) extends AnyVal {
     
     inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     

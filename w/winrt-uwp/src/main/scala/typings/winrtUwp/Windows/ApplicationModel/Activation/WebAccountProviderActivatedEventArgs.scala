@@ -32,7 +32,8 @@ object WebAccountProviderActivatedEventArgs {
     __obj.asInstanceOf[WebAccountProviderActivatedEventArgs]
   }
   
-  extension [Self <: WebAccountProviderActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAccountProviderActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

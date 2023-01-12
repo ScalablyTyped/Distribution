@@ -18,7 +18,8 @@ object DeleteReplicationConfigurationTemplateRequest {
     __obj.asInstanceOf[DeleteReplicationConfigurationTemplateRequest]
   }
   
-  extension [Self <: DeleteReplicationConfigurationTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteReplicationConfigurationTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setReplicationConfigurationTemplateID(value: ReplicationConfigurationTemplateID): Self = StObject.set(x, "replicationConfigurationTemplateID", value.asInstanceOf[js.Any])
   }

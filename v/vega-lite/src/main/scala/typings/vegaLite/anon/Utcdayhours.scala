@@ -71,7 +71,8 @@ object Utcdayhours {
     __obj.asInstanceOf[Utcdayhours]
   }
   
-  extension [Self <: Utcdayhours](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Utcdayhours] (val x: Self) extends AnyVal {
     
     inline def setUtcdayhours(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "utcdayhours", value.asInstanceOf[js.Any])
     

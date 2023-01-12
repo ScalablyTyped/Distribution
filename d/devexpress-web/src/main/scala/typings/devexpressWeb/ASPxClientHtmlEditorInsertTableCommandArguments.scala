@@ -45,7 +45,8 @@ object ASPxClientHtmlEditorInsertTableCommandArguments {
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertTableCommandArguments]
   }
   
-  extension [Self <: ASPxClientHtmlEditorInsertTableCommandArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorInsertTableCommandArguments] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

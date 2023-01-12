@@ -484,7 +484,8 @@ object mod {
       __obj.asInstanceOf[IDateStructStaticReturns]
     }
     
-    extension [Self <: IDateStructStaticReturns](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDateStructStaticReturns] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
       
@@ -511,7 +512,8 @@ object mod {
       __obj.asInstanceOf[IJSONStaticOptions]
     }
     
-    extension [Self <: IJSONStaticOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJSONStaticOptions] (val x: Self) extends AnyVal {
       
       inline def setReplacer(value: (/* key */ String, /* value */ Any) => Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
       
@@ -543,7 +545,8 @@ object mod {
       __obj.asInstanceOf[IReplaceInvalidHttpHeaderCharReturns]
     }
     
-    extension [Self <: IReplaceInvalidHttpHeaderCharReturns](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IReplaceInvalidHttpHeaderCharReturns] (val x: Self) extends AnyVal {
       
       inline def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
@@ -570,7 +573,8 @@ object mod {
       __obj.asInstanceOf[ITryStaticReturns]
     }
     
-    extension [Self <: ITryStaticReturns](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITryStaticReturns] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -599,7 +603,8 @@ object mod {
       __obj.asInstanceOf[IYYYYMMDDHHmmssStaticOptions]
     }
     
-    extension [Self <: IYYYYMMDDHHmmssStaticOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IYYYYMMDDHHmmssStaticOptions] (val x: Self) extends AnyVal {
       
       inline def setDateSep(value: String): Self = StObject.set(x, "dateSep", value.asInstanceOf[js.Any])
       

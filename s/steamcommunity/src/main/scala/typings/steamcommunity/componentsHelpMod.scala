@@ -31,7 +31,8 @@ object componentsHelpMod {
       __obj.asInstanceOf[Help]
     }
     
-    extension [Self <: Help](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Help] (val x: Self) extends AnyVal {
       
       inline def setRemovePackage(value: (packageid, Callback) => Unit): Self = StObject.set(x, "removePackage", js.Any.fromFunction2(value))
       

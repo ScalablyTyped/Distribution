@@ -25,7 +25,8 @@ object ShutdownPutNodeRequest {
     __obj.asInstanceOf[ShutdownPutNodeRequest]
   }
   
-  extension [Self <: ShutdownPutNodeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShutdownPutNodeRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Allocationdelay): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

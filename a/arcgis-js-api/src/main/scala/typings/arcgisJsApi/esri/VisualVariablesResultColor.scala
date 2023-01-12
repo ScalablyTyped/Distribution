@@ -27,7 +27,8 @@ object VisualVariablesResultColor {
     __obj.asInstanceOf[VisualVariablesResultColor]
   }
   
-  extension [Self <: VisualVariablesResultColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisualVariablesResultColor] (val x: Self) extends AnyVal {
     
     inline def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
     

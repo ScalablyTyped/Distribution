@@ -23,7 +23,8 @@ object Spend {
     __obj.asInstanceOf[Spend]
   }
   
-  extension [Self <: Spend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Spend] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: NumericValue): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
     

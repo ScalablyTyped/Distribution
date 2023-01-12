@@ -17,7 +17,8 @@ object CardanoAuxiliaryData {
     __obj.asInstanceOf[CardanoAuxiliaryData]
   }
   
-  extension [Self <: CardanoAuxiliaryData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoAuxiliaryData] (val x: Self) extends AnyVal {
     
     inline def setCatalystRegistrationParameters(value: CardanoCatalystRegistrationParameters): Self = StObject.set(x, "catalystRegistrationParameters", value.asInstanceOf[js.Any])
     

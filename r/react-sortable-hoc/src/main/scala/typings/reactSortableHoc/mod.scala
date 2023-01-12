@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setWithRef(value: Boolean): Self = StObject.set(x, "withRef", value.asInstanceOf[js.Any])
     }
@@ -78,7 +79,8 @@ object mod {
       __obj.asInstanceOf[Dimensions]
     }
     
-    extension [Self <: Dimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object mod {
       __obj.asInstanceOf[SortEnd]
     }
     
-    extension [Self <: SortEnd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortEnd] (val x: Self) extends AnyVal {
       
       inline def setCollection(value: Offset): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
@@ -170,7 +173,8 @@ object mod {
       __obj.asInstanceOf[SortOver]
     }
     
-    extension [Self <: SortOver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortOver] (val x: Self) extends AnyVal {
       
       inline def setCollection(value: Offset): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
@@ -220,7 +224,8 @@ object mod {
       __obj.asInstanceOf[SortStart]
     }
     
-    extension [Self <: SortStart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortStart] (val x: Self) extends AnyVal {
       
       inline def setCollection(value: Offset): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
@@ -297,7 +302,8 @@ object mod {
       __obj.asInstanceOf[SortableContainerProps]
     }
     
-    extension [Self <: SortableContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortableContainerProps] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -414,7 +420,8 @@ object mod {
       __obj.asInstanceOf[SortableElementProps]
     }
     
-    extension [Self <: SortableElementProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortableElementProps] (val x: Self) extends AnyVal {
       
       inline def setCollection(value: Offset): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       

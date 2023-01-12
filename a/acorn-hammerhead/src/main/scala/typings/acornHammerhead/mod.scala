@@ -53,7 +53,8 @@ object mod {
       __obj.asInstanceOf[AcornOptions]
     }
     
-    extension [Self <: AcornOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AcornOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowAwaitOutsideFunction(value: Boolean): Self = StObject.set(x, "allowAwaitOutsideFunction", value.asInstanceOf[js.Any])
       

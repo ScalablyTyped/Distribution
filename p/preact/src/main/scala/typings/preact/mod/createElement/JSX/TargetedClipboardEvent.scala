@@ -95,7 +95,8 @@ object TargetedClipboardEvent {
     __obj.asInstanceOf[TargetedClipboardEvent[Target]]
   }
   
-  extension [Self <: TargetedClipboardEvent[?], Target /* <: EventTarget */](x: Self & TargetedClipboardEvent[Target]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetedClipboardEvent[?], Target /* <: EventTarget */] (val x: Self & TargetedClipboardEvent[Target]) extends AnyVal {
     
     inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
     

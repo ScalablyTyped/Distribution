@@ -20,7 +20,8 @@ object GoogleCloudAssetV1GcsDestination {
     __obj.asInstanceOf[GoogleCloudAssetV1GcsDestination]
   }
   
-  extension [Self <: GoogleCloudAssetV1GcsDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudAssetV1GcsDestination] (val x: Self) extends AnyVal {
     
     inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     

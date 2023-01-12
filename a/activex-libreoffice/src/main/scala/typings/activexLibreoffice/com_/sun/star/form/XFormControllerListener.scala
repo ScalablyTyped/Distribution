@@ -44,7 +44,8 @@ object XFormControllerListener {
     __obj.asInstanceOf[XFormControllerListener]
   }
   
-  extension [Self <: XFormControllerListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFormControllerListener] (val x: Self) extends AnyVal {
     
     inline def setFormActivated(value: EventObject => Unit): Self = StObject.set(x, "formActivated", js.Any.fromFunction1(value))
     

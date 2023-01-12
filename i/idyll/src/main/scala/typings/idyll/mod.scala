@@ -149,7 +149,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCompiler(value: typings.idyllCompiler.mod.Options): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
@@ -276,7 +277,8 @@ object mod {
       __obj.asInstanceOf[Paths]
     }
     
-    extension [Self <: Paths](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Paths] (val x: Self) extends AnyVal {
       
       inline def setAPP_PATH(value: String): Self = StObject.set(x, "APP_PATH", value.asInstanceOf[js.Any])
       

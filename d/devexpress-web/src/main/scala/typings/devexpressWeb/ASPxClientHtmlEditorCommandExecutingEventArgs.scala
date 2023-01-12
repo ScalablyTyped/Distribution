@@ -28,7 +28,8 @@ object ASPxClientHtmlEditorCommandExecutingEventArgs {
     __obj.asInstanceOf[ASPxClientHtmlEditorCommandExecutingEventArgs]
   }
   
-  extension [Self <: ASPxClientHtmlEditorCommandExecutingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorCommandExecutingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
     

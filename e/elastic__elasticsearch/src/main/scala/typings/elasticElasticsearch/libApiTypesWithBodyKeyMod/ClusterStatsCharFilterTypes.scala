@@ -38,7 +38,8 @@ object ClusterStatsCharFilterTypes {
     __obj.asInstanceOf[ClusterStatsCharFilterTypes]
   }
   
-  extension [Self <: ClusterStatsCharFilterTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsCharFilterTypes] (val x: Self) extends AnyVal {
     
     inline def setAnalyzer_types(value: js.Array[ClusterStatsFieldTypes]): Self = StObject.set(x, "analyzer_types", value.asInstanceOf[js.Any])
     

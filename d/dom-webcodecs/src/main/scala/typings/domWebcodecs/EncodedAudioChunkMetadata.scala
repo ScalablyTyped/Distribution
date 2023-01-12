@@ -15,7 +15,8 @@ object EncodedAudioChunkMetadata {
     __obj.asInstanceOf[EncodedAudioChunkMetadata]
   }
   
-  extension [Self <: EncodedAudioChunkMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncodedAudioChunkMetadata] (val x: Self) extends AnyVal {
     
     inline def setDecoderConfig(value: AudioDecoderConfig): Self = StObject.set(x, "decoderConfig", value.asInstanceOf[js.Any])
     

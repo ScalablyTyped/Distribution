@@ -49,7 +49,8 @@ object SplitNumber {
     __obj.asInstanceOf[SplitNumber]
   }
   
-  extension [Self <: SplitNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitNumber] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double | String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

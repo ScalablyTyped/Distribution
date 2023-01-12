@@ -16,7 +16,8 @@ object TableRowStyleSuggestionState {
     __obj.asInstanceOf[TableRowStyleSuggestionState]
   }
   
-  extension [Self <: TableRowStyleSuggestionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableRowStyleSuggestionState] (val x: Self) extends AnyVal {
     
     inline def setMinRowHeightSuggested(value: Boolean): Self = StObject.set(x, "minRowHeightSuggested", value.asInstanceOf[js.Any])
     

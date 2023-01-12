@@ -19,7 +19,8 @@ object TeamidNumberUsernameString {
     __obj.asInstanceOf[TeamidNumberUsernameString]
   }
   
-  extension [Self <: TeamidNumberUsernameString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamidNumberUsernameString] (val x: Self) extends AnyVal {
     
     inline def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
     

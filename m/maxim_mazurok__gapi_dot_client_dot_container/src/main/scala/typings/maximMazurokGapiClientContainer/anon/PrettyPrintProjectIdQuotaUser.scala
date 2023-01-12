@@ -66,7 +66,8 @@ object PrettyPrintProjectIdQuotaUser {
     __obj.asInstanceOf[PrettyPrintProjectIdQuotaUser]
   }
   
-  extension [Self <: PrettyPrintProjectIdQuotaUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrettyPrintProjectIdQuotaUser] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

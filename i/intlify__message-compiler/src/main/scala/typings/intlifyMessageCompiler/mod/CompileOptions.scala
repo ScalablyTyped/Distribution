@@ -38,7 +38,8 @@ object CompileOptions {
     __obj.asInstanceOf[CompileOptions]
   }
   
-  extension [Self <: CompileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompileOptions] (val x: Self) extends AnyVal {
     
     inline def setBreakLineCode(value: Linefeed | Semicolon): Self = StObject.set(x, "breakLineCode", value.asInstanceOf[js.Any])
     

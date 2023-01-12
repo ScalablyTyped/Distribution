@@ -104,7 +104,8 @@ object mod {
       __obj.asInstanceOf[BaseOptions]
     }
     
-    extension [Self <: BaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -164,7 +165,8 @@ object mod {
       __obj.asInstanceOf[GaugeOptions]
     }
     
-    extension [Self <: GaugeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GaugeOptions] (val x: Self) extends AnyVal {
       
       inline def setPercentColors(value: js.Array[js.Tuple2[Double, String]]): Self = StObject.set(x, "percentColors", value.asInstanceOf[js.Any])
       
@@ -205,7 +207,8 @@ object mod {
       __obj.asInstanceOf[PointerOptions]
     }
     
-    extension [Self <: PointerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointerOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -230,7 +233,8 @@ object mod {
       __obj.asInstanceOf[StaticZoneOptions]
     }
     
-    extension [Self <: StaticZoneOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticZoneOptions] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -251,7 +255,8 @@ object mod {
       __obj.asInstanceOf[TextRenderer]
     }
     
-    extension [Self <: TextRenderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextRenderer] (val x: Self) extends AnyVal {
       
       inline def setRender(value: Gauge => String): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     }
@@ -270,7 +275,8 @@ object mod {
       __obj.asInstanceOf[TextRendererElement]
     }
     
-    extension [Self <: TextRendererElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextRendererElement] (val x: Self) extends AnyVal {
       
       inline def setInnerHTML(value: String): Self = StObject.set(x, "innerHTML", value.asInstanceOf[js.Any])
       

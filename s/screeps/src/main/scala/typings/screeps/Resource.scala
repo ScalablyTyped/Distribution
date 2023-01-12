@@ -39,7 +39,8 @@ object Resource {
     __obj.asInstanceOf[Resource[T]]
   }
   
-  extension [Self <: Resource[?], T /* <: ResourceConstant */](x: Self & Resource[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resource[?], T /* <: ResourceConstant */] (val x: Self & Resource[T]) extends AnyVal {
     
     inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object TerminologyCapabilitiesCodeSystemVersionFilter {
     __obj.asInstanceOf[TerminologyCapabilitiesCodeSystemVersionFilter]
   }
   
-  extension [Self <: TerminologyCapabilitiesCodeSystemVersionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminologyCapabilitiesCodeSystemVersionFilter] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

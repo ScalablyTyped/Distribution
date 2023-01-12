@@ -20,7 +20,8 @@ object flowCreateRendererParamsLegendOptions {
     __obj.asInstanceOf[flowCreateRendererParamsLegendOptions]
   }
   
-  extension [Self <: flowCreateRendererParamsLegendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: flowCreateRendererParamsLegendOptions] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

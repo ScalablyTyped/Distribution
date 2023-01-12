@@ -27,7 +27,8 @@ object ActionTextUnderlayColor {
     __obj.asInstanceOf[ActionTextUnderlayColor]
   }
   
-  extension [Self <: ActionTextUnderlayColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionTextUnderlayColor] (val x: Self) extends AnyVal {
     
     inline def setActionTextActiveOpacity(value: Double): Self = StObject.set(x, "actionTextActiveOpacity", value.asInstanceOf[js.Any])
     

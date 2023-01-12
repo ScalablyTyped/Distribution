@@ -87,7 +87,8 @@ object typesScheduleMod {
       __obj.asInstanceOf[Schedule]
     }
     
-    extension [Self <: Schedule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schedule] (val x: Self) extends AnyVal {
       
       inline def setEndTime(value: String): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,8 @@ object typesScheduleMod {
       __obj.asInstanceOf[UnmarshalledSchedule]
     }
     
-    extension [Self <: UnmarshalledSchedule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSchedule] (val x: Self) extends AnyVal {
       
       inline def setQuietTime(value: UnmarshalledQuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
       

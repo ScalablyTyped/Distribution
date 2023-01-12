@@ -55,7 +55,8 @@ object buildSrcExponentialRetryMod {
       __obj.asInstanceOf[RetriedItem[T]]
     }
     
-    extension [Self <: RetriedItem[?], T](x: Self & RetriedItem[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetriedItem[?], T] (val x: Self & RetriedItem[T]) extends AnyVal {
       
       inline def setRetryInfo(value: RetryInfo[T]): Self = StObject.set(x, "retryInfo", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object buildSrcExponentialRetryMod {
       __obj.asInstanceOf[RetryInfo[T]]
     }
     
-    extension [Self <: RetryInfo[?], T](x: Self & RetryInfo[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryInfo[?], T] (val x: Self & RetryInfo[T]) extends AnyVal {
       
       inline def setCallback(value: (T, /* totalTime */ Duration) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       

@@ -31,7 +31,8 @@ object KnnSearchRequest {
     __obj.asInstanceOf[KnnSearchRequest]
   }
   
-  extension [Self <: KnnSearchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnnSearchRequest] (val x: Self) extends AnyVal {
     
     inline def setDocvalue_fields(value: js.Array[QueryDslFieldAndFormat | Field]): Self = StObject.set(x, "docvalue_fields", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object libEsmPopover2ArrowMod {
       __obj.asInstanceOf[IPopoverArrowProps]
     }
     
-    extension [Self <: IPopoverArrowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPopoverArrowProps] (val x: Self) extends AnyVal {
       
       inline def setArrowProps(value: PopperArrowProps): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object ErrioConfig {
     __obj.asInstanceOf[ErrioConfig]
   }
   
-  extension [Self <: ErrioConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrioConfig] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: Any): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     

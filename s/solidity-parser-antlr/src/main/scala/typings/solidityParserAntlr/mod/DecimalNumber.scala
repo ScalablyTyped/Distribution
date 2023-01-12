@@ -22,7 +22,8 @@ object DecimalNumber {
     __obj.asInstanceOf[DecimalNumber]
   }
   
-  extension [Self <: DecimalNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecimalNumber] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.DecimalNumber): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

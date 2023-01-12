@@ -23,7 +23,8 @@ object CreateResourcePolicyResponse {
     __obj.asInstanceOf[CreateResourcePolicyResponse]
   }
   
-  extension [Self <: CreateResourcePolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateResourcePolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setResourceArn(value: AmazonResourceName): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     

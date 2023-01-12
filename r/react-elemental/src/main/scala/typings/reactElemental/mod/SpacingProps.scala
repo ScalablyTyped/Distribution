@@ -32,7 +32,8 @@ object SpacingProps {
     __obj.asInstanceOf[SpacingProps]
   }
   
-  extension [Self <: SpacingProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpacingProps] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Boolean): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object CombinedAudienceTargetingSetting {
     __obj.asInstanceOf[CombinedAudienceTargetingSetting]
   }
   
-  extension [Self <: CombinedAudienceTargetingSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CombinedAudienceTargetingSetting] (val x: Self) extends AnyVal {
     
     inline def setCombinedAudienceId(value: String): Self = StObject.set(x, "combinedAudienceId", value.asInstanceOf[js.Any])
     

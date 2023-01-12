@@ -72,7 +72,8 @@ object PickImplstorageMethodPart {
     __obj.asInstanceOf[PickImplstorageMethodPart]
   }
   
-  extension [Self <: PickImplstorageMethodPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplstorageMethodPart] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: AnimationSettings): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

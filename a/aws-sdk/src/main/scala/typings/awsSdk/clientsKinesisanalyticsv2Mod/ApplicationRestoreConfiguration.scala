@@ -23,7 +23,8 @@ object ApplicationRestoreConfiguration {
     __obj.asInstanceOf[ApplicationRestoreConfiguration]
   }
   
-  extension [Self <: ApplicationRestoreConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationRestoreConfiguration] (val x: Self) extends AnyVal {
     
     inline def setApplicationRestoreType(value: ApplicationRestoreType): Self = StObject.set(x, "ApplicationRestoreType", value.asInstanceOf[js.Any])
     

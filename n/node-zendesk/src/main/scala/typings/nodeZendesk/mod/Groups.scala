@@ -24,7 +24,8 @@ object Groups {
       __obj.asInstanceOf[CreateModel]
     }
     
-    extension [Self <: CreateModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateModel] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object Groups {
       __obj.asInstanceOf[CreatePayload]
     }
     
-    extension [Self <: CreatePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreatePayload] (val x: Self) extends AnyVal {
       
       inline def setGroup(value: CreateModel): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     }
@@ -74,7 +76,8 @@ object Groups {
       __obj.asInstanceOf[ListPayload]
     }
     
-    extension [Self <: ListPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListPayload] (val x: Self) extends AnyVal {
       
       inline def setGroups(value: js.Array[ResponseModel]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
@@ -133,7 +136,8 @@ object Groups {
       __obj.asInstanceOf[ResponseModel]
     }
     
-    extension [Self <: ResponseModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseModel] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -162,7 +166,8 @@ object Groups {
       __obj.asInstanceOf[ResponsePayload]
     }
     
-    extension [Self <: ResponsePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsePayload] (val x: Self) extends AnyVal {
       
       inline def setGroup(value: ResponseModel): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     }
@@ -184,7 +189,8 @@ object Groups {
       __obj.asInstanceOf[UpdateModel]
     }
     
-    extension [Self <: UpdateModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateModel] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -209,7 +215,8 @@ object Groups {
       __obj.asInstanceOf[UpdatePayload]
     }
     
-    extension [Self <: UpdatePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdatePayload] (val x: Self) extends AnyVal {
       
       inline def setGroup(value: UpdateModel): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     }

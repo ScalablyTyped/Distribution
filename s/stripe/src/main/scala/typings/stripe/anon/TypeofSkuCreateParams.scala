@@ -15,7 +15,8 @@ object TypeofSkuCreateParams {
     __obj.asInstanceOf[TypeofSkuCreateParams]
   }
   
-  extension [Self <: TypeofSkuCreateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSkuCreateParams] (val x: Self) extends AnyVal {
     
     inline def setInventory(value: Any): Self = StObject.set(x, "Inventory", value.asInstanceOf[js.Any])
   }

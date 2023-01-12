@@ -18,7 +18,8 @@ object MeshStatus {
     __obj.asInstanceOf[MeshStatus]
   }
   
-  extension [Self <: MeshStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshStatus] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: MeshStatusCode): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

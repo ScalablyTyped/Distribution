@@ -21,7 +21,8 @@ object `1` {
     __obj.asInstanceOf[`1`]
   }
   
-  extension [Self <: `1`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
     
     inline def setX(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_victory-core.D3Scale<any> */ Any

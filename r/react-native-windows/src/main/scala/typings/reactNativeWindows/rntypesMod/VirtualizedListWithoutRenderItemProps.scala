@@ -168,7 +168,8 @@ object VirtualizedListWithoutRenderItemProps {
     __obj.asInstanceOf[VirtualizedListWithoutRenderItemProps[ItemT]]
   }
   
-  extension [Self <: VirtualizedListWithoutRenderItemProps[?], ItemT](x: Self & VirtualizedListWithoutRenderItemProps[ItemT]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualizedListWithoutRenderItemProps[?], ItemT] (val x: Self & VirtualizedListWithoutRenderItemProps[ItemT]) extends AnyVal {
     
     inline def setCellRendererComponent(value: ComponentType[Any]): Self = StObject.set(x, "CellRendererComponent", value.asInstanceOf[js.Any])
     

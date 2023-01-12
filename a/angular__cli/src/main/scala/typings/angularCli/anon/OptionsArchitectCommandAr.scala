@@ -18,7 +18,8 @@ object OptionsArchitectCommandAr {
     __obj.asInstanceOf[OptionsArchitectCommandAr]
   }
   
-  extension [Self <: OptionsArchitectCommandAr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsArchitectCommandAr] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

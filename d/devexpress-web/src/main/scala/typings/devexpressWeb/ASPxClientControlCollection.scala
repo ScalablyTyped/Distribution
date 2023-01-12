@@ -89,7 +89,8 @@ object ASPxClientControlCollection {
     __obj.asInstanceOf[ASPxClientControlCollection]
   }
   
-  extension [Self <: ASPxClientControlCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientControlCollection] (val x: Self) extends AnyVal {
     
     inline def setBeginCallback(value: ASPxClientEvent[ASPxClientGlobalBeginCallbackEventHandler[ASPxClientControlCollection]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     

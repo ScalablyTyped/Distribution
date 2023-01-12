@@ -16,7 +16,8 @@ object NetworkSettings {
     __obj.asInstanceOf[NetworkSettings]
   }
   
-  extension [Self <: NetworkSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkSettings] (val x: Self) extends AnyVal {
     
     inline def setIngressTrafficAllowed(value: String): Self = StObject.set(x, "ingressTrafficAllowed", value.asInstanceOf[js.Any])
     

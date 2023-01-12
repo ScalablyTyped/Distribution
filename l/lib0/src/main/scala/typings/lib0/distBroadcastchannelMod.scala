@@ -31,7 +31,8 @@ object distBroadcastchannelMod {
       __obj.asInstanceOf[Channel]
     }
     
-    extension [Self <: Channel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
       
       inline def setBc(value: Any): Self = StObject.set(x, "bc", value.asInstanceOf[js.Any])
       

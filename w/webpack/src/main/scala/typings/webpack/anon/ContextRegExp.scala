@@ -26,7 +26,8 @@ object ContextRegExp {
     __obj.asInstanceOf[ContextRegExp]
   }
   
-  extension [Self <: ContextRegExp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextRegExp] (val x: Self) extends AnyVal {
     
     inline def setContextRegExp(value: js.RegExp): Self = StObject.set(x, "contextRegExp", value.asInstanceOf[js.Any])
     

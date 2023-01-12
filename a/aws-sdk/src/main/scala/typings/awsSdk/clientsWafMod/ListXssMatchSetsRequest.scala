@@ -23,7 +23,8 @@ object ListXssMatchSetsRequest {
     __obj.asInstanceOf[ListXssMatchSetsRequest]
   }
   
-  extension [Self <: ListXssMatchSetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListXssMatchSetsRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

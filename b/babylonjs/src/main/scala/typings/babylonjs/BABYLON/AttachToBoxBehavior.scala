@@ -65,7 +65,8 @@ object AttachToBoxBehavior {
     __obj.asInstanceOf[AttachToBoxBehavior]
   }
   
-  extension [Self <: AttachToBoxBehavior](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachToBoxBehavior] (val x: Self) extends AnyVal {
     
     inline def setDistanceAwayFromBottomOfFace(value: Double): Self = StObject.set(x, "distanceAwayFromBottomOfFace", value.asInstanceOf[js.Any])
     

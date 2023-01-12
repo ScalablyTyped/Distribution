@@ -24,7 +24,8 @@ object SAMessage {
     __obj.asInstanceOf[SAMessage]
   }
   
-  extension [Self <: SAMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SAMessage] (val x: Self) extends AnyVal {
     
     inline def setSendData(value: (SAPeerAgent, String, Onsent) => Unit): Self = StObject.set(x, "sendData", js.Any.fromFunction3(value))
     

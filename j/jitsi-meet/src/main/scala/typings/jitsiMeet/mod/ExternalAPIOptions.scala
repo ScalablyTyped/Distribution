@@ -38,7 +38,8 @@ object ExternalAPIOptions {
     __obj.asInstanceOf[ExternalAPIOptions]
   }
   
-  extension [Self <: ExternalAPIOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalAPIOptions] (val x: Self) extends AnyVal {
     
     inline def setConfigOverwrite(value: Config): Self = StObject.set(x, "configOverwrite", value.asInstanceOf[js.Any])
     

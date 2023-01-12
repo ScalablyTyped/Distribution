@@ -18,7 +18,8 @@ object ConnectCustomKeyStoreRequest {
     __obj.asInstanceOf[ConnectCustomKeyStoreRequest]
   }
   
-  extension [Self <: ConnectCustomKeyStoreRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectCustomKeyStoreRequest] (val x: Self) extends AnyVal {
     
     inline def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = StObject.set(x, "CustomKeyStoreId", value.asInstanceOf[js.Any])
   }

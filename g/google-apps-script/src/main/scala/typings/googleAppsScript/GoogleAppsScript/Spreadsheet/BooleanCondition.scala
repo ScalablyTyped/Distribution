@@ -45,7 +45,8 @@ object BooleanCondition {
     __obj.asInstanceOf[BooleanCondition]
   }
   
-  extension [Self <: BooleanCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BooleanCondition] (val x: Self) extends AnyVal {
     
     inline def setGetBackground(value: () => String | Null): Self = StObject.set(x, "getBackground", js.Any.fromFunction0(value))
     

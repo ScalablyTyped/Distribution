@@ -21,7 +21,8 @@ object MSIOptions {
     __obj.asInstanceOf[MSIOptions]
   }
   
-  extension [Self <: MSIOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MSIOptions] (val x: Self) extends AnyVal {
     
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     

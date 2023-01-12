@@ -64,7 +64,8 @@ object distLitePackagesFirestoreSrcLiteApiSettingsMod {
       __obj.asInstanceOf[FirestoreSettings]
     }
     
-    extension [Self <: FirestoreSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirestoreSettings] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object distLitePackagesFirestoreSrcLiteApiSettingsMod {
       __obj.asInstanceOf[PrivateSettings]
     }
     
-    extension [Self <: PrivateSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrivateSettings] (val x: Self) extends AnyVal {
       
       inline def setCacheSizeBytes(value: Double): Self = StObject.set(x, "cacheSizeBytes", value.asInstanceOf[js.Any])
       

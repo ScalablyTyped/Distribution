@@ -32,7 +32,8 @@ object AttrParamMapper {
     __obj.asInstanceOf[AttrParamMapper]
   }
   
-  extension [Self <: AttrParamMapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrParamMapper] (val x: Self) extends AnyVal {
     
     inline def setAttrParamMapper(value: Required): Self = StObject.set(x, "AttrParamMapper", value.asInstanceOf[js.Any])
     

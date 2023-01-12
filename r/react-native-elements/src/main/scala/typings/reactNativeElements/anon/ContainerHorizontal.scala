@@ -38,7 +38,8 @@ object ContainerHorizontal {
     __obj.asInstanceOf[ContainerHorizontal]
   }
   
-  extension [Self <: ContainerHorizontal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerHorizontal] (val x: Self) extends AnyVal {
     
     inline def setContainerHorizontal(value: Height): Self = StObject.set(x, "containerHorizontal", value.asInstanceOf[js.Any])
     

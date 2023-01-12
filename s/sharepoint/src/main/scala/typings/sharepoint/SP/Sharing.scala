@@ -64,7 +64,8 @@ object Sharing {
       __obj.asInstanceOf[UserRoleAssignment]
     }
     
-    extension [Self <: UserRoleAssignment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserRoleAssignment] (val x: Self) extends AnyVal {
       
       inline def setGet_role(value: () => Role): Self = StObject.set(x, "get_role", js.Any.fromFunction0(value))
       
@@ -111,7 +112,8 @@ object Sharing {
       __obj.asInstanceOf[UserSharingResult]
     }
     
-    extension [Self <: UserSharingResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserSharingResult] (val x: Self) extends AnyVal {
       
       inline def setGet_allowedRoles(value: () => js.Array[Role]): Self = StObject.set(x, "get_allowedRoles", js.Any.fromFunction0(value))
       

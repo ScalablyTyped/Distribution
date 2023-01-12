@@ -253,7 +253,8 @@ object sapUiLayoutCssgridGridBoxLayoutMod {
       __obj.asInstanceOf[GridBoxLayoutSettings]
     }
     
-    extension [Self <: GridBoxLayoutSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridBoxLayoutSettings] (val x: Self) extends AnyVal {
       
       inline def setBoxMinWidth(value: CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "boxMinWidth", value.asInstanceOf[js.Any])
       

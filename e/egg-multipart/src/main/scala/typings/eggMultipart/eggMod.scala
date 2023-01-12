@@ -53,7 +53,8 @@ object eggMod {
       __obj.asInstanceOf[EggAppConfig]
     }
     
-    extension [Self <: EggAppConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EggAppConfig] (val x: Self) extends AnyVal {
       
       inline def setMultipart(value: AutoFields): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
     }
@@ -75,7 +76,8 @@ object eggMod {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[EggFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       

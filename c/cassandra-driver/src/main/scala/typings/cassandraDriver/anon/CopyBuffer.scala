@@ -25,7 +25,8 @@ object CopyBuffer {
     __obj.asInstanceOf[CopyBuffer]
   }
   
-  extension [Self <: CopyBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyBuffer] (val x: Self) extends AnyVal {
     
     inline def setCopyBuffer(value: Boolean): Self = StObject.set(x, "copyBuffer", value.asInstanceOf[js.Any])
     

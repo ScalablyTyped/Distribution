@@ -39,7 +39,8 @@ object libMod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setFile(value: VFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object libMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFile(value: typings.vfile.mod.VFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

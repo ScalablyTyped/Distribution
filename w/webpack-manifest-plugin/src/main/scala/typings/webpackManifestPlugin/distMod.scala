@@ -96,7 +96,8 @@ object distMod {
       __obj.asInstanceOf[InternalOptions]
     }
     
-    extension [Self <: InternalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalOptions] (val x: Self) extends AnyVal {
       
       inline def setAssetHookStage(value: Double): Self = StObject.set(x, "assetHookStage", value.asInstanceOf[js.Any])
       
@@ -179,7 +180,8 @@ object distMod {
       __obj.asInstanceOf[ManifestPluginOptions]
     }
     
-    extension [Self <: ManifestPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManifestPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setAssetHookStage(value: Double): Self = StObject.set(x, "assetHookStage", value.asInstanceOf[js.Any])
       

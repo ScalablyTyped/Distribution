@@ -23,7 +23,8 @@ object ActionRequired {
     __obj.asInstanceOf[ActionRequired]
   }
   
-  extension [Self <: ActionRequired](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionRequired] (val x: Self) extends AnyVal {
     
     inline def setActionRequiredCode(value: string): Self = StObject.set(x, "ActionRequiredCode", value.asInstanceOf[js.Any])
     

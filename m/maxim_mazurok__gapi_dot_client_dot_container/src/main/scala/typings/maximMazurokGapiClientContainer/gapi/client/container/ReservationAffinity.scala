@@ -25,7 +25,8 @@ object ReservationAffinity {
     __obj.asInstanceOf[ReservationAffinity]
   }
   
-  extension [Self <: ReservationAffinity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservationAffinity] (val x: Self) extends AnyVal {
     
     inline def setConsumeReservationType(value: String): Self = StObject.set(x, "consumeReservationType", value.asInstanceOf[js.Any])
     

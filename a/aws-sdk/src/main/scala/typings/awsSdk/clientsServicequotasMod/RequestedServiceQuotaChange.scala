@@ -83,7 +83,8 @@ object RequestedServiceQuotaChange {
     __obj.asInstanceOf[RequestedServiceQuotaChange]
   }
   
-  extension [Self <: RequestedServiceQuotaChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestedServiceQuotaChange] (val x: Self) extends AnyVal {
     
     inline def setCaseId(value: CustomerServiceEngagementId): Self = StObject.set(x, "CaseId", value.asInstanceOf[js.Any])
     

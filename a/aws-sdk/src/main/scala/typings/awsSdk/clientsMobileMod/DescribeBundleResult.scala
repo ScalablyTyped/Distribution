@@ -18,7 +18,8 @@ object DescribeBundleResult {
     __obj.asInstanceOf[DescribeBundleResult]
   }
   
-  extension [Self <: DescribeBundleResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBundleResult] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: BundleDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

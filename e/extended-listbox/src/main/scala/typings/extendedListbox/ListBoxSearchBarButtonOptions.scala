@@ -22,7 +22,8 @@ object ListBoxSearchBarButtonOptions {
     __obj.asInstanceOf[ListBoxSearchBarButtonOptions]
   }
   
-  extension [Self <: ListBoxSearchBarButtonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBoxSearchBarButtonOptions] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

@@ -154,7 +154,8 @@ object mod {
       __obj.asInstanceOf[Enable]
     }
     
-    extension [Self <: Enable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enable] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Boolean): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -215,7 +216,8 @@ object mod {
       __obj.asInstanceOf[HandleClassName]
     }
     
-    extension [Self <: HandleClassName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandleClassName] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -276,7 +278,8 @@ object mod {
       __obj.asInstanceOf[HandleComponent]
     }
     
-    extension [Self <: HandleComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandleComponent] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: ReactElement): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -337,7 +340,8 @@ object mod {
       __obj.asInstanceOf[HandleStyles]
     }
     
-    extension [Self <: HandleStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandleStyles] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: CSSProperties): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -386,7 +390,8 @@ object mod {
       __obj.asInstanceOf[NumberSize]
     }
     
-    extension [Self <: NumberSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -461,7 +466,8 @@ object mod {
       __obj.asInstanceOf[ResizableProps]
     }
     
-    extension [Self <: ResizableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizableProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: String | ComponentType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -617,7 +623,8 @@ object mod {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -655,7 +662,8 @@ object mod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setBackgroundStyle(value: CSSProperties): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
       
@@ -693,7 +701,8 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setMouseEvent(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MouseEvent */ Any): Self = StObject.set(x, "MouseEvent", value.asInstanceOf[js.Any])
         

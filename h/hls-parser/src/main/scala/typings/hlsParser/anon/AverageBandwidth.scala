@@ -44,7 +44,8 @@ object AverageBandwidth {
     __obj.asInstanceOf[AverageBandwidth]
   }
   
-  extension [Self <: AverageBandwidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AverageBandwidth] (val x: Self) extends AnyVal {
     
     inline def setAudio(value: js.Array[Rendition[AUDIO]]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     

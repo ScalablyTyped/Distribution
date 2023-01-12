@@ -28,7 +28,8 @@ object AwsOpenSearchServiceDomainMasterUserOptionsDetails {
     __obj.asInstanceOf[AwsOpenSearchServiceDomainMasterUserOptionsDetails]
   }
   
-  extension [Self <: AwsOpenSearchServiceDomainMasterUserOptionsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsOpenSearchServiceDomainMasterUserOptionsDetails] (val x: Self) extends AnyVal {
     
     inline def setMasterUserArn(value: NonEmptyString): Self = StObject.set(x, "MasterUserArn", value.asInstanceOf[js.Any])
     

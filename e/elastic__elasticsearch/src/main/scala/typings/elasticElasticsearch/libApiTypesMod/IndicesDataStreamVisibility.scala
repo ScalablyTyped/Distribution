@@ -15,7 +15,8 @@ object IndicesDataStreamVisibility {
     __obj.asInstanceOf[IndicesDataStreamVisibility]
   }
   
-  extension [Self <: IndicesDataStreamVisibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesDataStreamVisibility] (val x: Self) extends AnyVal {
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     

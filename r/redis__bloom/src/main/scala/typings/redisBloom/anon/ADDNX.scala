@@ -80,7 +80,8 @@ object ADDNX {
     __obj.asInstanceOf[ADDNX]
   }
   
-  extension [Self <: ADDNX](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ADDNX] (val x: Self) extends AnyVal {
     
     inline def setADD(value: FIRSTKEYINDEX): Self = StObject.set(x, "ADD", value.asInstanceOf[js.Any])
     

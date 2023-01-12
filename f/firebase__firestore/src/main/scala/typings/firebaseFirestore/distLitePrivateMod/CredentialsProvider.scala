@@ -42,7 +42,8 @@ object CredentialsProvider {
     __obj.asInstanceOf[CredentialsProvider[T]]
   }
   
-  extension [Self <: CredentialsProvider[?], T](x: Self & CredentialsProvider[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CredentialsProvider[?], T] (val x: Self & CredentialsProvider[T]) extends AnyVal {
     
     inline def setGetToken(value: () => js.Promise[Token | Null]): Self = StObject.set(x, "getToken", js.Any.fromFunction0(value))
     

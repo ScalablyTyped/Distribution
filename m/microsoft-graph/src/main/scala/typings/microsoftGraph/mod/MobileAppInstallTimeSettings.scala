@@ -22,7 +22,8 @@ object MobileAppInstallTimeSettings {
     __obj.asInstanceOf[MobileAppInstallTimeSettings]
   }
   
-  extension [Self <: MobileAppInstallTimeSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileAppInstallTimeSettings] (val x: Self) extends AnyVal {
     
     inline def setDeadlineDateTime(value: NullableOption[String]): Self = StObject.set(x, "deadlineDateTime", value.asInstanceOf[js.Any])
     

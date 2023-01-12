@@ -19,7 +19,8 @@ object MigrationGetFeatureUpgradeStatusMigrationFeatureIndexInfo {
     __obj.asInstanceOf[MigrationGetFeatureUpgradeStatusMigrationFeatureIndexInfo]
   }
   
-  extension [Self <: MigrationGetFeatureUpgradeStatusMigrationFeatureIndexInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MigrationGetFeatureUpgradeStatusMigrationFeatureIndexInfo] (val x: Self) extends AnyVal {
     
     inline def setFailure_cause(value: ErrorCause): Self = StObject.set(x, "failure_cause", value.asInstanceOf[js.Any])
     

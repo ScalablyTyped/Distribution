@@ -68,7 +68,8 @@ object AcquireMethod {
     __obj.asInstanceOf[AcquireMethod]
   }
   
-  extension [Self <: AcquireMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcquireMethod] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

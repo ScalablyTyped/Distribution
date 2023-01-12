@@ -23,7 +23,8 @@ object AutomationExecutionFilter {
     __obj.asInstanceOf[AutomationExecutionFilter]
   }
   
-  extension [Self <: AutomationExecutionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutomationExecutionFilter] (val x: Self) extends AnyVal {
     
     inline def setKey(value: AutomationExecutionFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

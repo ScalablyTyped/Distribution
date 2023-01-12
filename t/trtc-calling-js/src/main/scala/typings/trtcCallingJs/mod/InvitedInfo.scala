@@ -31,7 +31,8 @@ object InvitedInfo {
     __obj.asInstanceOf[InvitedInfo]
   }
   
-  extension [Self <: InvitedInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvitedInfo] (val x: Self) extends AnyVal {
     
     inline def setInviteData(value: CallEnd): Self = StObject.set(x, "inviteData", value.asInstanceOf[js.Any])
     

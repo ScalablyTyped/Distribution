@@ -20,7 +20,8 @@ object TypeofModalView {
     __obj.asInstanceOf[TypeofModalView]
   }
   
-  extension [Self <: TypeofModalView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofModalView] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => ModalView): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

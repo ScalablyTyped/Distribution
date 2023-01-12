@@ -16,7 +16,8 @@ object MaskStyle {
     __obj.asInstanceOf[MaskStyle]
   }
   
-  extension [Self <: MaskStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaskStyle] (val x: Self) extends AnyVal {
     
     inline def setMaskStyle(value: ShapeAttrs): Self = StObject.set(x, "maskStyle", value.asInstanceOf[js.Any])
   }

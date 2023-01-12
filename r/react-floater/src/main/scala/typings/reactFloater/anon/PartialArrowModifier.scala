@@ -38,7 +38,8 @@ object PartialArrowModifier {
     __obj.asInstanceOf[PartialArrowModifier]
   }
   
-  extension [Self <: PartialArrowModifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialArrowModifier] (val x: Self) extends AnyVal {
     
     inline def setData(value: Obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

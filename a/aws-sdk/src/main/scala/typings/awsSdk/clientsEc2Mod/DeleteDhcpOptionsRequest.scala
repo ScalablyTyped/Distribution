@@ -23,7 +23,8 @@ object DeleteDhcpOptionsRequest {
     __obj.asInstanceOf[DeleteDhcpOptionsRequest]
   }
   
-  extension [Self <: DeleteDhcpOptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDhcpOptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setDhcpOptionsId(value: DhcpOptionsId): Self = StObject.set(x, "DhcpOptionsId", value.asInstanceOf[js.Any])
     

@@ -120,7 +120,8 @@ object libPlotsDualAxesTypesMod {
       __obj.asInstanceOf[CommonGeometryOption]
     }
     
-    extension [Self <: CommonGeometryOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonGeometryOption] (val x: Self) extends AnyVal {
       
       inline def setColor(value: ColorAttr): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -251,7 +252,8 @@ object libPlotsDualAxesTypesMod {
       __obj.asInstanceOf[DualAxesOptions]
     }
     
-    extension [Self <: DualAxesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DualAxesOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -461,7 +463,8 @@ object libPlotsDualAxesTypesMod {
       __obj.asInstanceOf[GeometryColumnOption]
     }
     
-    extension [Self <: GeometryColumnOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeometryColumnOption] (val x: Self) extends AnyVal {
       
       inline def setColor(value: ColorAttr): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -587,7 +590,8 @@ object libPlotsDualAxesTypesMod {
       __obj.asInstanceOf[GeometryLineOption]
     }
     
-    extension [Self <: GeometryLineOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeometryLineOption] (val x: Self) extends AnyVal {
       
       inline def setColor(value: ColorAttr): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -682,7 +686,8 @@ object libPlotsDualAxesTypesMod {
       __obj.asInstanceOf[PointConfig]
     }
     
-    extension [Self <: PointConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointConfig] (val x: Self) extends AnyVal {
       
       inline def setShape(value: ShapeAttr): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       

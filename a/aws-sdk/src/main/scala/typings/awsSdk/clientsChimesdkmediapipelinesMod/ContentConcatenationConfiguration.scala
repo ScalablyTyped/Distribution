@@ -18,7 +18,8 @@ object ContentConcatenationConfiguration {
     __obj.asInstanceOf[ContentConcatenationConfiguration]
   }
   
-  extension [Self <: ContentConcatenationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentConcatenationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setState(value: ArtifactsConcatenationState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }

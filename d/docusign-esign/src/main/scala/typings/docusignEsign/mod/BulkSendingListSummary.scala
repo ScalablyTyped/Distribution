@@ -33,7 +33,8 @@ object BulkSendingListSummary {
     __obj.asInstanceOf[BulkSendingListSummary]
   }
   
-  extension [Self <: BulkSendingListSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkSendingListSummary] (val x: Self) extends AnyVal {
     
     inline def setBulkSendListId(value: String): Self = StObject.set(x, "bulkSendListId", value.asInstanceOf[js.Any])
     

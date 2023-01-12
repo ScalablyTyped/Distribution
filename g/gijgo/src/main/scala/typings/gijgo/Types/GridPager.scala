@@ -22,7 +22,8 @@ object GridPager {
     __obj.asInstanceOf[GridPager]
   }
   
-  extension [Self <: GridPager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridPager] (val x: Self) extends AnyVal {
     
     inline def setLeftControls(value: js.Array[Any]): Self = StObject.set(x, "leftControls", value.asInstanceOf[js.Any])
     

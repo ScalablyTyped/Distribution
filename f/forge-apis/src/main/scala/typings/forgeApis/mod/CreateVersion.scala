@@ -17,7 +17,8 @@ object CreateVersion {
     __obj.asInstanceOf[CreateVersion]
   }
   
-  extension [Self <: CreateVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVersion] (val x: Self) extends AnyVal {
     
     inline def setData(value: CreateVersionData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

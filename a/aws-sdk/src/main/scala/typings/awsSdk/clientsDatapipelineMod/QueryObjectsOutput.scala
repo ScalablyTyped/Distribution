@@ -28,7 +28,8 @@ object QueryObjectsOutput {
     __obj.asInstanceOf[QueryObjectsOutput]
   }
   
-  extension [Self <: QueryObjectsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryObjectsOutput] (val x: Self) extends AnyVal {
     
     inline def setHasMoreResults(value: Boolean): Self = StObject.set(x, "hasMoreResults", value.asInstanceOf[js.Any])
     

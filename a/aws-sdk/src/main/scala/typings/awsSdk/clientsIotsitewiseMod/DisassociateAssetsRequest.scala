@@ -33,7 +33,8 @@ object DisassociateAssetsRequest {
     __obj.asInstanceOf[DisassociateAssetsRequest]
   }
   
-  extension [Self <: DisassociateAssetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateAssetsRequest] (val x: Self) extends AnyVal {
     
     inline def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     

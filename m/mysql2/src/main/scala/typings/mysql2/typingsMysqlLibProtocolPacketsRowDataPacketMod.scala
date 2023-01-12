@@ -23,7 +23,8 @@ object typingsMysqlLibProtocolPacketsRowDataPacketMod {
       __obj.asInstanceOf[RowDataPacket]
     }
     
-    extension [Self <: RowDataPacket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDataPacket] (val x: Self) extends AnyVal {
       
       inline def setConstructor(value: `3`): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     }

@@ -23,7 +23,8 @@ object ListLicenseManagerReportGeneratorsResponse {
     __obj.asInstanceOf[ListLicenseManagerReportGeneratorsResponse]
   }
   
-  extension [Self <: ListLicenseManagerReportGeneratorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLicenseManagerReportGeneratorsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

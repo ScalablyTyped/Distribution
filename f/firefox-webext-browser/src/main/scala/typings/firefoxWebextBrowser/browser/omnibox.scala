@@ -38,7 +38,8 @@ object omnibox {
       __obj.asInstanceOf[DefaultSuggestResult]
     }
     
-    extension [Self <: DefaultSuggestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultSuggestResult] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object omnibox {
       __obj.asInstanceOf[DefaultSuggestResultDescriptionStyles]
     }
     
-    extension [Self <: DefaultSuggestResultDescriptionStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultSuggestResultDescriptionStyles] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object omnibox {
       __obj.asInstanceOf[DefaultSuggestResultDescriptionStylesRaw]
     }
     
-    extension [Self <: DefaultSuggestResultDescriptionStylesRaw](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultSuggestResultDescriptionStylesRaw] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -176,7 +179,8 @@ object omnibox {
       __obj.asInstanceOf[SuggestResult]
     }
     
-    extension [Self <: SuggestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuggestResult] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -214,7 +218,8 @@ object omnibox {
       __obj.asInstanceOf[SuggestResultDescriptionStyles]
     }
     
-    extension [Self <: SuggestResultDescriptionStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuggestResultDescriptionStyles] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -241,7 +246,8 @@ object omnibox {
       __obj.asInstanceOf[SuggestResultDescriptionStylesRaw]
     }
     
-    extension [Self <: SuggestResultDescriptionStylesRaw](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuggestResultDescriptionStylesRaw] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       

@@ -54,7 +54,8 @@ object ConfigshouldCancelWhenOut {
     __obj.asInstanceOf[ConfigshouldCancelWhenOut]
   }
   
-  extension [Self <: ConfigshouldCancelWhenOut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigshouldCancelWhenOut] (val x: Self) extends AnyVal {
     
     inline def setActiveOffsetXEnd(value: Double): Self = StObject.set(x, "activeOffsetXEnd", value.asInstanceOf[js.Any])
     

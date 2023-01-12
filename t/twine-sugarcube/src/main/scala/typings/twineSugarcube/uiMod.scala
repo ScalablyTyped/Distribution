@@ -274,7 +274,8 @@ object uiMod {
       __obj.asInstanceOf[DialogOptions]
     }
     
-    extension [Self <: DialogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogOptions] (val x: Self) extends AnyVal {
       
       inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
@@ -391,7 +392,8 @@ object uiMod {
       __obj.asInstanceOf[FullscreenRequestOptions]
     }
     
-    extension [Self <: FullscreenRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullscreenRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setNavigationUI(value: auto | hide | show): Self = StObject.set(x, "navigationUI", value.asInstanceOf[js.Any])
     }
@@ -423,7 +425,8 @@ object uiMod {
       __obj.asInstanceOf[LoadScreenAPI]
     }
     
-    extension [Self <: LoadScreenAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadScreenAPI] (val x: Self) extends AnyVal {
       
       inline def setLock(value: () => Double): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
       

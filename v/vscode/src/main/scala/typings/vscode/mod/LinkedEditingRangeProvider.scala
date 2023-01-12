@@ -28,7 +28,8 @@ object LinkedEditingRangeProvider {
     __obj.asInstanceOf[LinkedEditingRangeProvider]
   }
   
-  extension [Self <: LinkedEditingRangeProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkedEditingRangeProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideLinkedEditingRanges(value: (TextDocument, Position, CancellationToken) => ProviderResult[LinkedEditingRanges]): Self = StObject.set(x, "provideLinkedEditingRanges", js.Any.fromFunction3(value))
   }

@@ -18,7 +18,8 @@ object GetWirelessGatewayFirmwareInformationResponse {
     __obj.asInstanceOf[GetWirelessGatewayFirmwareInformationResponse]
   }
   
-  extension [Self <: GetWirelessGatewayFirmwareInformationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWirelessGatewayFirmwareInformationResponse] (val x: Self) extends AnyVal {
     
     inline def setLoRaWAN(value: LoRaWANGatewayCurrentVersion): Self = StObject.set(x, "LoRaWAN", value.asInstanceOf[js.Any])
     

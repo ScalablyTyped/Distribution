@@ -19,7 +19,8 @@ object SearchSmoothingModelContainer {
     __obj.asInstanceOf[SearchSmoothingModelContainer]
   }
   
-  extension [Self <: SearchSmoothingModelContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchSmoothingModelContainer] (val x: Self) extends AnyVal {
     
     inline def setLaplace(value: SearchLaplaceSmoothingModel): Self = StObject.set(x, "laplace", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IDBDatabaseInfo {
     __obj.asInstanceOf[IDBDatabaseInfo]
   }
   
-  extension [Self <: IDBDatabaseInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDBDatabaseInfo] (val x: Self) extends AnyVal {
     
     inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

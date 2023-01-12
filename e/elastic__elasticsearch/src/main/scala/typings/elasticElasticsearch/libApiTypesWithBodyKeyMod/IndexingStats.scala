@@ -53,7 +53,8 @@ object IndexingStats {
     __obj.asInstanceOf[IndexingStats]
   }
   
-  extension [Self <: IndexingStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexingStats] (val x: Self) extends AnyVal {
     
     inline def setDelete_current(value: long): Self = StObject.set(x, "delete_current", value.asInstanceOf[js.Any])
     

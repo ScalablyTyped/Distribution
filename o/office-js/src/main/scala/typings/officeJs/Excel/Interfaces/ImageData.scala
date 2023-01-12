@@ -37,7 +37,8 @@ object ImageData {
     __obj.asInstanceOf[ImageData]
   }
   
-  extension [Self <: ImageData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageData] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: PictureFormat | UNKNOWN | BMP | JPEG | GIF | PNG | SVG): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

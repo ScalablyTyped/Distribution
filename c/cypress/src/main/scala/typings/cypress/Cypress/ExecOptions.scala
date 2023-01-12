@@ -35,7 +35,8 @@ object ExecOptions {
     __obj.asInstanceOf[ExecOptions]
   }
   
-  extension [Self <: ExecOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecOptions] (val x: Self) extends AnyVal {
     
     inline def setEnv(value: js.Object): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     

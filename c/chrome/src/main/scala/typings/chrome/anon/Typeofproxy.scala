@@ -19,7 +19,8 @@ object Typeofproxy {
     __obj.asInstanceOf[Typeofproxy]
   }
   
-  extension [Self <: Typeofproxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofproxy] (val x: Self) extends AnyVal {
     
     inline def setOnProxyError(value: ProxyErrorEvent): Self = StObject.set(x, "onProxyError", value.asInstanceOf[js.Any])
     

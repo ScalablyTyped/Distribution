@@ -21,7 +21,8 @@ object RequestPermission {
     __obj.asInstanceOf[RequestPermission]
   }
   
-  extension [Self <: RequestPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestPermission] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: Permissions): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object distSrcModulesUiCoreThemeTypesMod {
       __obj.asInstanceOf[IThemeAPI]
     }
     
-    extension [Self <: IThemeAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IThemeAPI] (val x: Self) extends AnyVal {
       
       inline def setUpdateTheme(value: /* themeConfig */ IThemeConfig => Unit): Self = StObject.set(x, "updateTheme", js.Any.fromFunction1(value))
       
@@ -64,7 +65,8 @@ object distSrcModulesUiCoreThemeTypesMod {
       __obj.asInstanceOf[IThemeConfig]
     }
     
-    extension [Self <: IThemeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IThemeConfig] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object distSrcModulesUiCoreThemeTypesMod {
       __obj.asInstanceOf[IThemeService]
     }
     
-    extension [Self <: IThemeService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IThemeService] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

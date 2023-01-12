@@ -43,7 +43,8 @@ object DescribeWorldResponse {
     __obj.asInstanceOf[DescribeWorldResponse]
   }
   
-  extension [Self <: DescribeWorldResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeWorldResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

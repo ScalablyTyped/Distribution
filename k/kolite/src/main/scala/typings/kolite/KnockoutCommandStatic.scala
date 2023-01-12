@@ -21,7 +21,8 @@ object KnockoutCommandStatic {
     __obj.asInstanceOf[KnockoutCommandStatic]
   }
   
-  extension [Self <: KnockoutCommandStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutCommandStatic] (val x: Self) extends AnyVal {
     
     inline def setAsyncCommand(value: KoLiteCommandOptions => KoliteAsyncCommand): Self = StObject.set(x, "asyncCommand", js.Any.fromFunction1(value))
     

@@ -61,7 +61,8 @@ object HeaderProps {
     __obj.asInstanceOf[HeaderProps]
   }
   
-  extension [Self <: HeaderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeaderProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLevel(value: `1` | `2` | `3` | `4` | `5` | `6` | none): Self = StObject.set(x, "accessibilityLevel", value.asInstanceOf[js.Any])
     

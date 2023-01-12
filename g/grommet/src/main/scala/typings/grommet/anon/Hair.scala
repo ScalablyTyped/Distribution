@@ -31,7 +31,8 @@ object Hair {
     __obj.asInstanceOf[Hair]
   }
   
-  extension [Self <: Hair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hair] (val x: Self) extends AnyVal {
     
     inline def setHair(value: String): Self = StObject.set(x, "hair", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object SvgPanZoom {
       __obj.asInstanceOf[CustomEventHandler]
     }
     
-    extension [Self <: CustomEventHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomEventHandler] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: js.Function): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object SvgPanZoom {
       __obj.asInstanceOf[CustomEventOptions]
     }
     
-    extension [Self <: CustomEventOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomEventOptions] (val x: Self) extends AnyVal {
       
       inline def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
@@ -336,7 +338,8 @@ object SvgPanZoom {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBeforePan(value: (/* oldPan */ Point, /* newPan */ Point) => Unit | Boolean | PointModifier): Self = StObject.set(x, "beforePan", js.Any.fromFunction2(value))
       
@@ -437,7 +440,8 @@ object SvgPanZoom {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -458,7 +462,8 @@ object SvgPanZoom {
       __obj.asInstanceOf[PointModifier]
     }
     
-    extension [Self <: PointModifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointModifier] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double | Boolean): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -483,7 +488,8 @@ object SvgPanZoom {
       __obj.asInstanceOf[Sizes]
     }
     
-    extension [Self <: Sizes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sizes] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

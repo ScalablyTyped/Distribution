@@ -31,7 +31,8 @@ object Teamsurl {
     __obj.asInstanceOf[Teamsurl]
   }
   
-  extension [Self <: Teamsurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Teamsurl] (val x: Self) extends AnyVal {
     
     inline def setApps(value: js.Array[Externalurl]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
     

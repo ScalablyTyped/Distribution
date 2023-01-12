@@ -23,7 +23,8 @@ object AcceleratorCount {
     __obj.asInstanceOf[AcceleratorCount]
   }
   
-  extension [Self <: AcceleratorCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceleratorCount] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Integer): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object IsReadyToPayPaymentMethodSpecification {
     __obj.asInstanceOf[IsReadyToPayPaymentMethodSpecification]
   }
   
-  extension [Self <: IsReadyToPayPaymentMethodSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsReadyToPayPaymentMethodSpecification] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: CardParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

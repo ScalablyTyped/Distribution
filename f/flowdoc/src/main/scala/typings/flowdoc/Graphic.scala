@@ -33,7 +33,8 @@ object Graphic {
     __obj.asInstanceOf[Graphic]
   }
   
-  extension [Self <: Graphic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Graphic] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

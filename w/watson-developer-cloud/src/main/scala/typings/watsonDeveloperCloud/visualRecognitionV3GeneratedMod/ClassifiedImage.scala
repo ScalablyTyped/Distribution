@@ -29,7 +29,8 @@ object ClassifiedImage {
     __obj.asInstanceOf[ClassifiedImage]
   }
   
-  extension [Self <: ClassifiedImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassifiedImage] (val x: Self) extends AnyVal {
     
     inline def setClassifiers(value: js.Array[ClassifierResult]): Self = StObject.set(x, "classifiers", value.asInstanceOf[js.Any])
     

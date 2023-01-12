@@ -22,7 +22,8 @@ object MappingUnsignedLongNumberProperty {
     __obj.asInstanceOf[MappingUnsignedLongNumberProperty]
   }
   
-  extension [Self <: MappingUnsignedLongNumberProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingUnsignedLongNumberProperty] (val x: Self) extends AnyVal {
     
     inline def setNull_value(value: ulong): Self = StObject.set(x, "null_value", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object DirectionalHint {
     __obj.asInstanceOf[DirectionalHint]
   }
   
-  extension [Self <: DirectionalHint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionalHint] (val x: Self) extends AnyVal {
     
     inline def setBeakWidth(value: Double): Self = StObject.set(x, "beakWidth", value.asInstanceOf[js.Any])
     

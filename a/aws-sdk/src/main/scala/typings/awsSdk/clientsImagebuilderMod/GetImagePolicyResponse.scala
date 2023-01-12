@@ -23,7 +23,8 @@ object GetImagePolicyResponse {
     __obj.asInstanceOf[GetImagePolicyResponse]
   }
   
-  extension [Self <: GetImagePolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetImagePolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setPolicy(value: ResourcePolicyDocument): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     

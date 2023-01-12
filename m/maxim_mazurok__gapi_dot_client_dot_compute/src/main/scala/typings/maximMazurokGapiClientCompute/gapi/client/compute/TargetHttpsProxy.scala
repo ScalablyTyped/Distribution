@@ -89,7 +89,8 @@ object TargetHttpsProxy {
     __obj.asInstanceOf[TargetHttpsProxy]
   }
   
-  extension [Self <: TargetHttpsProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetHttpsProxy] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationPolicy(value: String): Self = StObject.set(x, "authorizationPolicy", value.asInstanceOf[js.Any])
     

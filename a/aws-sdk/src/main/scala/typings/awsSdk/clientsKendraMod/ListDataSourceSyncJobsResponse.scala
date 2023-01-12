@@ -23,7 +23,8 @@ object ListDataSourceSyncJobsResponse {
     __obj.asInstanceOf[ListDataSourceSyncJobsResponse]
   }
   
-  extension [Self <: ListDataSourceSyncJobsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDataSourceSyncJobsResponse] (val x: Self) extends AnyVal {
     
     inline def setHistory(value: DataSourceSyncJobHistoryList): Self = StObject.set(x, "History", value.asInstanceOf[js.Any])
     

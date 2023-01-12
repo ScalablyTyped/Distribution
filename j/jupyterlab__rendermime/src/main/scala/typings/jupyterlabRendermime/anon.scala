@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Math]
     }
     
-    extension [Self <: Math](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Math] (val x: Self) extends AnyVal {
       
       inline def setMath(value: js.Array[String]): Self = StObject.set(x, "math", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object libLassoMod {
       __obj.asInstanceOf[CustomPlugin]
     }
     
-    extension [Self <: CustomPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomPlugin] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object libLassoMod {
       __obj.asInstanceOf[LassoConfig]
     }
     
-    extension [Self <: LassoConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LassoConfig] (val x: Self) extends AnyVal {
       
       inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
       
@@ -281,7 +283,8 @@ object libLassoMod {
       __obj.asInstanceOf[PageConfig]
     }
     
-    extension [Self <: PageConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageConfig] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

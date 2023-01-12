@@ -21,7 +21,8 @@ object CustomScheme {
     __obj.asInstanceOf[CustomScheme]
   }
   
-  extension [Self <: CustomScheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomScheme] (val x: Self) extends AnyVal {
     
     inline def setPrivileges(value: Privileges): Self = StObject.set(x, "privileges", value.asInstanceOf[js.Any])
     

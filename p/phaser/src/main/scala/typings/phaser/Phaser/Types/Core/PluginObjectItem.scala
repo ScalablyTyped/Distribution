@@ -48,7 +48,8 @@ object PluginObjectItem {
     __obj.asInstanceOf[PluginObjectItem]
   }
   
-  extension [Self <: PluginObjectItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginObjectItem] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

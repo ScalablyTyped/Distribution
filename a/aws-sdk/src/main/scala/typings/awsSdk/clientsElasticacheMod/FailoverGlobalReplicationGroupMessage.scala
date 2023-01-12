@@ -28,7 +28,8 @@ object FailoverGlobalReplicationGroupMessage {
     __obj.asInstanceOf[FailoverGlobalReplicationGroupMessage]
   }
   
-  extension [Self <: FailoverGlobalReplicationGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailoverGlobalReplicationGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
     

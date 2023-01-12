@@ -23,7 +23,8 @@ object RenameColumnOperation {
     __obj.asInstanceOf[RenameColumnOperation]
   }
   
-  extension [Self <: RenameColumnOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenameColumnOperation] (val x: Self) extends AnyVal {
     
     inline def setColumnName(value: ColumnName): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
     

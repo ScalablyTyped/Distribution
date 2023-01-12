@@ -50,7 +50,8 @@ object typesUseTooltipPositionMod {
       __obj.asInstanceOf[TooltipPositionHookOptions]
     }
     
-    extension [Self <: TooltipPositionHookOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipPositionHookOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultPosition(value: SimplePosition): Self = StObject.set(x, "defaultPosition", value.asInstanceOf[js.Any])
       

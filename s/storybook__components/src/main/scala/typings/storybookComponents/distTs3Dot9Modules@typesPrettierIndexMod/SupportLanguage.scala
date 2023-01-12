@@ -39,7 +39,8 @@ object SupportLanguage {
     __obj.asInstanceOf[SupportLanguage]
   }
   
-  extension [Self <: SupportLanguage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportLanguage] (val x: Self) extends AnyVal {
     
     inline def setAceMode(value: String): Self = StObject.set(x, "aceMode", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DescribeIpRestrictionRequest {
     __obj.asInstanceOf[DescribeIpRestrictionRequest]
   }
   
-  extension [Self <: DescribeIpRestrictionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeIpRestrictionRequest] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
   }

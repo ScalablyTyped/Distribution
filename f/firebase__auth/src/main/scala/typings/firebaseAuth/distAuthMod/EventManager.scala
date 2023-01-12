@@ -20,7 +20,8 @@ object EventManager {
     __obj.asInstanceOf[EventManager]
   }
   
-  extension [Self <: EventManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventManager] (val x: Self) extends AnyVal {
     
     inline def setRegisterConsumer(value: AuthEventConsumer => Unit): Self = StObject.set(x, "registerConsumer", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object WorkspaceSystemSettings {
     __obj.asInstanceOf[WorkspaceSystemSettings]
   }
   
-  extension [Self <: WorkspaceSystemSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceSystemSettings] (val x: Self) extends AnyVal {
     
     inline def setDisambiguation(value: WorkspaceSystemSettingsDisambiguation): Self = StObject.set(x, "disambiguation", value.asInstanceOf[js.Any])
     

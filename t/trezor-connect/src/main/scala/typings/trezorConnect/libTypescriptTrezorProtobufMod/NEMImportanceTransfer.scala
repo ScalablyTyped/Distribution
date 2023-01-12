@@ -17,7 +17,8 @@ object NEMImportanceTransfer {
     __obj.asInstanceOf[NEMImportanceTransfer]
   }
   
-  extension [Self <: NEMImportanceTransfer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NEMImportanceTransfer] (val x: Self) extends AnyVal {
     
     inline def setMode(value: NEMImportanceTransferMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

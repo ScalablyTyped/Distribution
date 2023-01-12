@@ -17,7 +17,8 @@ object I18nParser {
     __obj.asInstanceOf[I18nParser]
   }
   
-  extension [Self <: I18nParser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: I18nParser] (val x: Self) extends AnyVal {
     
     inline def setParse(value: Any => Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     

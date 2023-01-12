@@ -52,7 +52,8 @@ object angularMod {
           __obj.asInstanceOf[ICalendarCell]
         }
         
-        extension [Self <: ICalendarCell](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ICalendarCell] (val x: Self) extends AnyVal {
           
           inline def setBadgeTotal(value: Double): Self = StObject.set(x, "badgeTotal", value.asInstanceOf[js.Any])
           
@@ -113,7 +114,8 @@ object angularMod {
           __obj.asInstanceOf[ICalendarConfig]
         }
         
-        extension [Self <: ICalendarConfig](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ICalendarConfig] (val x: Self) extends AnyVal {
           
           inline def setAllDateFormats(value: Angular): Self = StObject.set(x, "allDateFormats", value.asInstanceOf[js.Any])
           
@@ -156,7 +158,8 @@ object angularMod {
           __obj.asInstanceOf[IDateFormats]
         }
         
-        extension [Self <: IDateFormats](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IDateFormats] (val x: Self) extends AnyVal {
           
           inline def setDatetime(value: String): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
           
@@ -251,7 +254,8 @@ object angularMod {
           __obj.asInstanceOf[IEvent]
         }
         
-        extension [Self <: IEvent](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IEvent] (val x: Self) extends AnyVal {
           
           inline def setActions(value: js.Array[IEventAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
           
@@ -334,7 +338,8 @@ object angularMod {
           __obj.asInstanceOf[IEventAction]
         }
         
-        extension [Self <: IEventAction](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IEventAction] (val x: Self) extends AnyVal {
           
           inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
           
@@ -365,7 +370,8 @@ object angularMod {
           __obj.asInstanceOf[IEventColor]
         }
         
-        extension [Self <: IEventColor](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IEventColor] (val x: Self) extends AnyVal {
           
           inline def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
           
@@ -386,7 +392,8 @@ object angularMod {
           __obj.asInstanceOf[IFormats]
         }
         
-        extension [Self <: IFormats](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IFormats] (val x: Self) extends AnyVal {
           
           inline def setDate(value: IDateFormats): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
           
@@ -411,7 +418,8 @@ object angularMod {
           __obj.asInstanceOf[ITitleFormats]
         }
         
-        extension [Self <: ITitleFormats](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ITitleFormats] (val x: Self) extends AnyVal {
           
           inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
           

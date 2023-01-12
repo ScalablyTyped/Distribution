@@ -95,7 +95,8 @@ object sapUiUtilXmlhelperMod extends Shortcut {
       __obj.asInstanceOf[XMLParseErrorInfo]
     }
     
-    extension [Self <: XMLParseErrorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XMLParseErrorInfo] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: int): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       

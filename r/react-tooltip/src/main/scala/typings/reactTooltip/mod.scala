@@ -69,7 +69,8 @@ object mod {
       __obj.asInstanceOf[Offset]
     }
     
-    extension [Self <: Offset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -261,7 +262,8 @@ object mod {
       __obj.asInstanceOf[TooltipProps]
     }
     
-    extension [Self <: TooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipProps] (val x: Self) extends AnyVal {
       
       inline def setAfterHide(value: VoidFunc): Self = StObject.set(x, "afterHide", value.asInstanceOf[js.Any])
       

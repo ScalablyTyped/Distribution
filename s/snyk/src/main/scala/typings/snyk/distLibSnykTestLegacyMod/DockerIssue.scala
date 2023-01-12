@@ -19,7 +19,8 @@ object DockerIssue {
     __obj.asInstanceOf[DockerIssue]
   }
   
-  extension [Self <: DockerIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DockerIssue] (val x: Self) extends AnyVal {
     
     inline def setDockerBaseImage(value: Any): Self = StObject.set(x, "dockerBaseImage", value.asInstanceOf[js.Any])
     

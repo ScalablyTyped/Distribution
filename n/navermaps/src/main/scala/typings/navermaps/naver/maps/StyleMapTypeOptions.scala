@@ -20,7 +20,8 @@ object StyleMapTypeOptions {
     __obj.asInstanceOf[StyleMapTypeOptions]
   }
   
-  extension [Self <: StyleMapTypeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleMapTypeOptions] (val x: Self) extends AnyVal {
     
     inline def setHd(value: String): Self = StObject.set(x, "hd", value.asInstanceOf[js.Any])
     

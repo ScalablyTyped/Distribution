@@ -19,7 +19,8 @@ object InitializeHandlerArguments {
     __obj.asInstanceOf[InitializeHandlerArguments[Input]]
   }
   
-  extension [Self <: InitializeHandlerArguments[?], Input /* <: js.Object */](x: Self & InitializeHandlerArguments[Input]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitializeHandlerArguments[?], Input /* <: js.Object */] (val x: Self & InitializeHandlerArguments[Input]) extends AnyVal {
     
     inline def setInput(value: Input): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
   }

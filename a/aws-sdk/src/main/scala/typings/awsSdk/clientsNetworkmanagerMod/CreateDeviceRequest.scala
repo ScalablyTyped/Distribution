@@ -63,7 +63,8 @@ object CreateDeviceRequest {
     __obj.asInstanceOf[CreateDeviceRequest]
   }
   
-  extension [Self <: CreateDeviceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDeviceRequest] (val x: Self) extends AnyVal {
     
     inline def setAWSLocation(value: AWSLocation): Self = StObject.set(x, "AWSLocation", value.asInstanceOf[js.Any])
     

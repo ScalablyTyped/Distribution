@@ -36,7 +36,8 @@ object Sarif {
     __obj.asInstanceOf[Sarif]
   }
   
-  extension [Self <: Sarif](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sarif] (val x: Self) extends AnyVal {
     
     inline def setCheckout_uri(value: String): Self = StObject.set(x, "checkout_uri", value.asInstanceOf[js.Any])
     

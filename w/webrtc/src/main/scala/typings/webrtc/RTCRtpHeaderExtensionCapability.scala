@@ -16,7 +16,8 @@ object RTCRtpHeaderExtensionCapability {
     __obj.asInstanceOf[RTCRtpHeaderExtensionCapability]
   }
   
-  extension [Self <: RTCRtpHeaderExtensionCapability](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCRtpHeaderExtensionCapability] (val x: Self) extends AnyVal {
     
     inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     

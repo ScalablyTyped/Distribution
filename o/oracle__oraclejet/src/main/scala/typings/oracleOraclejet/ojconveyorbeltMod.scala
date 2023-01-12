@@ -206,7 +206,8 @@ object ojconveyorbeltMod {
       __obj.asInstanceOf[ojConveyorBeltEventMap]
     }
     
-    extension [Self <: ojConveyorBeltEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojConveyorBeltEventMap] (val x: Self) extends AnyVal {
       
       inline def setContentParentChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "contentParentChanged", value.asInstanceOf[js.Any])
       
@@ -229,7 +230,8 @@ object ojconveyorbeltMod {
       __obj.asInstanceOf[ojConveyorBeltSettableProperties]
     }
     
-    extension [Self <: ojConveyorBeltSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojConveyorBeltSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setContentParent(value: String): Self = StObject.set(x, "contentParent", value.asInstanceOf[js.Any])
       
@@ -257,7 +259,8 @@ object ojconveyorbeltMod {
       __obj.asInstanceOf[ojConveyorBeltSettablePropertiesLenient]
     }
     
-    extension [Self <: ojConveyorBeltSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojConveyorBeltSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setContentParent(value: String): Self = StObject.set(x, "contentParent", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object TypeQueryInterface {
     __obj.asInstanceOf[TypeQueryInterface]
   }
   
-  extension [Self <: TypeQueryInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeQueryInterface] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: typeQueryMethods): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

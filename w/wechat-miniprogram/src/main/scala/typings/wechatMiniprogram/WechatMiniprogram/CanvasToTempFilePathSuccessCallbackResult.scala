@@ -18,7 +18,8 @@ object CanvasToTempFilePathSuccessCallbackResult {
     __obj.asInstanceOf[CanvasToTempFilePathSuccessCallbackResult]
   }
   
-  extension [Self <: CanvasToTempFilePathSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasToTempFilePathSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

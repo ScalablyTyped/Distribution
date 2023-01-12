@@ -821,7 +821,8 @@ object PlotBellcurveOptions {
     __obj.asInstanceOf[PlotBellcurveOptions]
   }
   
-  extension [Self <: PlotBellcurveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotBellcurveOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: SeriesAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

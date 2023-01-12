@@ -115,7 +115,8 @@ object AutoLayout {
     __obj.asInstanceOf[AutoLayout]
   }
   
-  extension [Self <: AutoLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoLayout] (val x: Self) extends AnyVal {
     
     inline def setAutoLayout(value: DiagramDataLayoutType | Orientation): Self = StObject.set(x, "autoLayout", value.asInstanceOf[js.Any])
     

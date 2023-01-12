@@ -19,7 +19,8 @@ object Base {
     __obj.asInstanceOf[Base[TType]]
   }
   
-  extension [Self <: Base[?], TType /* <: String */](x: Self & Base[TType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Base[?], TType /* <: String */] (val x: Self & Base[TType]) extends AnyVal {
     
     inline def setLoc(value: End): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     

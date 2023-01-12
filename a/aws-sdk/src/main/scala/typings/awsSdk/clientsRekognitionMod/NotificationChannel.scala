@@ -23,7 +23,8 @@ object NotificationChannel {
     __obj.asInstanceOf[NotificationChannel]
   }
   
-  extension [Self <: NotificationChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationChannel] (val x: Self) extends AnyVal {
     
     inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     

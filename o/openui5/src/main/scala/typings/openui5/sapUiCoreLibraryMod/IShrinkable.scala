@@ -15,7 +15,8 @@ object IShrinkable {
     __obj.asInstanceOf[IShrinkable]
   }
   
-  extension [Self <: IShrinkable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShrinkable] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_core_IShrinkable(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_core_IShrinkable", value.asInstanceOf[js.Any])
   }

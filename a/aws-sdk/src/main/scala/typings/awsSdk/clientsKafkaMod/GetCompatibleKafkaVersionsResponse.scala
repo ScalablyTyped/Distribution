@@ -20,7 +20,8 @@ object GetCompatibleKafkaVersionsResponse {
     __obj.asInstanceOf[GetCompatibleKafkaVersionsResponse]
   }
   
-  extension [Self <: GetCompatibleKafkaVersionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCompatibleKafkaVersionsResponse] (val x: Self) extends AnyVal {
     
     inline def setCompatibleKafkaVersions(value: listOfCompatibleKafkaVersion): Self = StObject.set(x, "CompatibleKafkaVersions", value.asInstanceOf[js.Any])
     

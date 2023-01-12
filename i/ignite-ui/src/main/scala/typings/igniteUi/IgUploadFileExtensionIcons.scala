@@ -34,7 +34,8 @@ object IgUploadFileExtensionIcons {
     __obj.asInstanceOf[IgUploadFileExtensionIcons]
   }
   
-  extension [Self <: IgUploadFileExtensionIcons](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgUploadFileExtensionIcons] (val x: Self) extends AnyVal {
     
     inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     

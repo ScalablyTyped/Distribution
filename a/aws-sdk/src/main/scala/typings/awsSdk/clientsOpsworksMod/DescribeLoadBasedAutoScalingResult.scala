@@ -18,7 +18,8 @@ object DescribeLoadBasedAutoScalingResult {
     __obj.asInstanceOf[DescribeLoadBasedAutoScalingResult]
   }
   
-  extension [Self <: DescribeLoadBasedAutoScalingResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLoadBasedAutoScalingResult] (val x: Self) extends AnyVal {
     
     inline def setLoadBasedAutoScalingConfigurations(value: LoadBasedAutoScalingConfigurations): Self = StObject.set(x, "LoadBasedAutoScalingConfigurations", value.asInstanceOf[js.Any])
     

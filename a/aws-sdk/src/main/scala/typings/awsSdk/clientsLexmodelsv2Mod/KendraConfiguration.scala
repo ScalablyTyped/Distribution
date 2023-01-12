@@ -28,7 +28,8 @@ object KendraConfiguration {
     __obj.asInstanceOf[KendraConfiguration]
   }
   
-  extension [Self <: KendraConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KendraConfiguration] (val x: Self) extends AnyVal {
     
     inline def setKendraIndex(value: KendraIndexArn): Self = StObject.set(x, "kendraIndex", value.asInstanceOf[js.Any])
     

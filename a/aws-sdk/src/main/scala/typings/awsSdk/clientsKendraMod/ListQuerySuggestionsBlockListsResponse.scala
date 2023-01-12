@@ -23,7 +23,8 @@ object ListQuerySuggestionsBlockListsResponse {
     __obj.asInstanceOf[ListQuerySuggestionsBlockListsResponse]
   }
   
-  extension [Self <: ListQuerySuggestionsBlockListsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListQuerySuggestionsBlockListsResponse] (val x: Self) extends AnyVal {
     
     inline def setBlockListSummaryItems(value: QuerySuggestionsBlockListSummaryItems): Self = StObject.set(x, "BlockListSummaryItems", value.asInstanceOf[js.Any])
     

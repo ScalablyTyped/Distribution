@@ -23,7 +23,8 @@ object ButtonCollapsed {
     __obj.asInstanceOf[ButtonCollapsed]
   }
   
-  extension [Self <: ButtonCollapsed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonCollapsed] (val x: Self) extends AnyVal {
     
     inline def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ReferencedSymbol {
     __obj.asInstanceOf[ReferencedSymbol]
   }
   
-  extension [Self <: ReferencedSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferencedSymbol] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: ReferencedSymbolDefinitionInfo): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

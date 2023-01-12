@@ -84,7 +84,8 @@ object typesTableCellMod {
       __obj.asInstanceOf[TableCellOptions]
     }
     
-    extension [Self <: TableCellOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableCellOptions] (val x: Self) extends AnyVal {
       
       inline def setColSpan(value: Double | `100Percentsign`): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
       
@@ -162,7 +163,8 @@ object typesTableCellMod {
       __obj.asInstanceOf[TableCellProps]
     }
     
-    extension [Self <: TableCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableCellProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-sort`(value: SortOrder): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
       

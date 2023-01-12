@@ -165,7 +165,8 @@ object XColumnUpdate {
     __obj.asInstanceOf[XColumnUpdate]
   }
   
-  extension [Self <: XColumnUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XColumnUpdate] (val x: Self) extends AnyVal {
     
     inline def setUpdateBinaryStream(value: (XInputStream, Double) => Unit): Self = StObject.set(x, "updateBinaryStream", js.Any.fromFunction2(value))
     

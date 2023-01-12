@@ -25,7 +25,8 @@ object mod {
       __obj.asInstanceOf[GulpJsonValidatorOptions]
     }
     
-    extension [Self <: GulpJsonValidatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GulpJsonValidatorOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowDuplicatedKeys(value: Boolean): Self = StObject.set(x, "allowDuplicatedKeys", value.asInstanceOf[js.Any])
       

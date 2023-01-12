@@ -41,7 +41,8 @@ object TokenChargeCardRequest {
     __obj.asInstanceOf[TokenChargeCardRequest]
   }
   
-  extension [Self <: TokenChargeCardRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenChargeCardRequest] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

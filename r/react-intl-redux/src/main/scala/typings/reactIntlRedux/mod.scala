@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[IntlAction]
     }
     
-    extension [Self <: IntlAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntlAction] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: IntlState): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object mod {
       __obj.asInstanceOf[IntlState]
     }
     
-    extension [Self <: IntlState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntlState] (val x: Self) extends AnyVal {
       
       inline def setFormats(value: Any): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       

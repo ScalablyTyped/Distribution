@@ -21,7 +21,8 @@ object IntegrationAddDetails {
     __obj.asInstanceOf[IntegrationAddDetails]
   }
   
-  extension [Self <: IntegrationAddDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegrationAddDetails] (val x: Self) extends AnyVal {
     
     inline def setEnableArgs(value: js.Array[String]): Self = StObject.set(x, "enableArgs", value.asInstanceOf[js.Any])
     

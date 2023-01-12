@@ -21,7 +21,8 @@ object SignatureValue {
     __obj.asInstanceOf[SignatureValue]
   }
   
-  extension [Self <: SignatureValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureValue] (val x: Self) extends AnyVal {
     
     inline def setSignatureAlgorithm(value: AlgorithmIdentifierSchema): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
     

@@ -214,7 +214,8 @@ object sapFCardBaseMod {
       __obj.asInstanceOf[CardBaseSettings]
     }
     
-    extension [Self <: CardBaseSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardBaseSettings] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

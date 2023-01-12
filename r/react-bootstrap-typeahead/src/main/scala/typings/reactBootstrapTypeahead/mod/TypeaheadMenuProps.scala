@@ -56,7 +56,8 @@ object TypeaheadMenuProps {
     __obj.asInstanceOf[TypeaheadMenuProps[T]]
   }
   
-  extension [Self <: TypeaheadMenuProps[?], T /* <: TypeaheadModel */](x: Self & TypeaheadMenuProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeaheadMenuProps[?], T /* <: TypeaheadModel */] (val x: Self & TypeaheadMenuProps[T]) extends AnyVal {
     
     inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object TargetingTemplate {
     __obj.asInstanceOf[TargetingTemplate]
   }
   
-  extension [Self <: TargetingTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetingTemplate] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

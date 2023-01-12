@@ -25,7 +25,8 @@ object popupClusters {
     __obj.asInstanceOf[popupClusters]
   }
   
-  extension [Self <: popupClusters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: popupClusters] (val x: Self) extends AnyVal {
     
     inline def setGetTemplates(value: clustersGetTemplatesParams => js.Promise[Templates_]): Self = StObject.set(x, "getTemplates", js.Any.fromFunction1(value))
   }

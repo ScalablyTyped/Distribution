@@ -28,7 +28,8 @@ object ResourceTagMapping {
     __obj.asInstanceOf[ResourceTagMapping]
   }
   
-  extension [Self <: ResourceTagMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceTagMapping] (val x: Self) extends AnyVal {
     
     inline def setComplianceDetails(value: ComplianceDetails): Self = StObject.set(x, "ComplianceDetails", value.asInstanceOf[js.Any])
     

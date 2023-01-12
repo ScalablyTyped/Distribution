@@ -28,7 +28,8 @@ object V2LogEntryOperation {
     __obj.asInstanceOf[V2LogEntryOperation]
   }
   
-  extension [Self <: V2LogEntryOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: V2LogEntryOperation] (val x: Self) extends AnyVal {
     
     inline def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     

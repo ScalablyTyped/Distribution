@@ -20,7 +20,8 @@ object AnimationType {
     __obj.asInstanceOf[AnimationType]
   }
   
-  extension [Self <: AnimationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationType] (val x: Self) extends AnyVal {
     
     inline def setAnimationType(value: Requireable[String]): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
     

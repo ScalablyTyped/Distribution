@@ -24,7 +24,8 @@ object CaseElseNode {
     __obj.asInstanceOf[CaseElseNode]
   }
   
-  extension [Self <: CaseElseNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaseElseNode] (val x: Self) extends AnyVal {
     
     inline def setElseKw(value: KeywordNode): Self = StObject.set(x, "elseKw", value.asInstanceOf[js.Any])
     

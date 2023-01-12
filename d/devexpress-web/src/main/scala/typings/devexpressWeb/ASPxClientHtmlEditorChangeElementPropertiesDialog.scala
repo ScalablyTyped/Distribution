@@ -168,7 +168,8 @@ object ASPxClientHtmlEditorChangeElementPropertiesDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorChangeElementPropertiesDialog]
   }
   
-  extension [Self <: ASPxClientHtmlEditorChangeElementPropertiesDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorChangeElementPropertiesDialog] (val x: Self) extends AnyVal {
     
     inline def setGetAcceptTextBox(value: () => ASPxClientTextBox): Self = StObject.set(x, "GetAcceptTextBox", js.Any.fromFunction0(value))
     

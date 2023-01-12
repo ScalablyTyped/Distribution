@@ -46,7 +46,8 @@ object StructureMapGroupRuleTargetParameter {
     __obj.asInstanceOf[StructureMapGroupRuleTargetParameter]
   }
   
-  extension [Self <: StructureMapGroupRuleTargetParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureMapGroupRuleTargetParameter] (val x: Self) extends AnyVal {
     
     inline def setValueBoolean(value: Boolean): Self = StObject.set(x, "valueBoolean", value.asInstanceOf[js.Any])
     

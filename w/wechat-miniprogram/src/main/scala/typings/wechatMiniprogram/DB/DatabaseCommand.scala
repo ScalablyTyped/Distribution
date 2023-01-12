@@ -124,7 +124,8 @@ object DatabaseCommand {
     __obj.asInstanceOf[DatabaseCommand]
   }
   
-  extension [Self <: DatabaseCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseCommand] (val x: Self) extends AnyVal {
     
     inline def setAddToSet(value: Any => DatabaseUpdateCommand): Self = StObject.set(x, "addToSet", js.Any.fromFunction1(value))
     

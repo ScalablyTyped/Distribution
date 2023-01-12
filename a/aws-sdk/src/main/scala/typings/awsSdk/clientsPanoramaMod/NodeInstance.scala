@@ -48,7 +48,8 @@ object NodeInstance {
     __obj.asInstanceOf[NodeInstance]
   }
   
-  extension [Self <: NodeInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeInstance] (val x: Self) extends AnyVal {
     
     inline def setCurrentStatus(value: NodeInstanceStatus): Self = StObject.set(x, "CurrentStatus", value.asInstanceOf[js.Any])
     

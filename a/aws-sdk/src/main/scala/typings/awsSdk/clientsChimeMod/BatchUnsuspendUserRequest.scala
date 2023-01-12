@@ -23,7 +23,8 @@ object BatchUnsuspendUserRequest {
     __obj.asInstanceOf[BatchUnsuspendUserRequest]
   }
   
-  extension [Self <: BatchUnsuspendUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUnsuspendUserRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

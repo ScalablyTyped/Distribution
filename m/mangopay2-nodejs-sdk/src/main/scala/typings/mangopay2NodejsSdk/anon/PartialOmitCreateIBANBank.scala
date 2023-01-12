@@ -21,7 +21,8 @@ object PartialOmitCreateIBANBank {
     __obj.asInstanceOf[PartialOmitCreateIBANBank]
   }
   
-  extension [Self <: PartialOmitCreateIBANBank](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOmitCreateIBANBank] (val x: Self) extends AnyVal {
     
     inline def setCountry(value: CountryISO): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
     

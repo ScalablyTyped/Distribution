@@ -23,7 +23,8 @@ object DnsDuplicateRuleGroupViolation {
     __obj.asInstanceOf[DnsDuplicateRuleGroupViolation]
   }
   
-  extension [Self <: DnsDuplicateRuleGroupViolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DnsDuplicateRuleGroupViolation] (val x: Self) extends AnyVal {
     
     inline def setViolationTarget(value: ViolationTarget): Self = StObject.set(x, "ViolationTarget", value.asInstanceOf[js.Any])
     

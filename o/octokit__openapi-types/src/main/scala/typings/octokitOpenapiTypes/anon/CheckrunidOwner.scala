@@ -22,7 +22,8 @@ object CheckrunidOwner {
     __obj.asInstanceOf[CheckrunidOwner]
   }
   
-  extension [Self <: CheckrunidOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckrunidOwner] (val x: Self) extends AnyVal {
     
     inline def setCheck_run_id(value: Double): Self = StObject.set(x, "check_run_id", value.asInstanceOf[js.Any])
     

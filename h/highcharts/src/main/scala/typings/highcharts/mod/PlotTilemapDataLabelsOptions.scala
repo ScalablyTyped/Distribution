@@ -273,7 +273,8 @@ object PlotTilemapDataLabelsOptions {
     __obj.asInstanceOf[PlotTilemapDataLabelsOptions]
   }
   
-  extension [Self <: PlotTilemapDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTilemapDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

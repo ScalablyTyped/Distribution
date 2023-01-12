@@ -28,7 +28,8 @@ object sharedMod {
       __obj.asInstanceOf[ApplicateOptions]
     }
     
-    extension [Self <: ApplicateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplicateOptions] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object sharedMod {
       __obj.asInstanceOf[DebounceOptions]
     }
     
-    extension [Self <: DebounceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebounceOptions] (val x: Self) extends AnyVal {
       
       inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object sharedMod {
       __obj.asInstanceOf[MemoizeConfig[T, U]]
     }
     
-    extension [Self <: MemoizeConfig[?, ?], T, U](x: Self & (MemoizeConfig[T, U])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemoizeConfig[?, ?], T, U] (val x: Self & (MemoizeConfig[T, U])) extends AnyVal {
       
       inline def setCache(value: MemoizeMap[T, U]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -134,7 +137,8 @@ object sharedMod {
       __obj.asInstanceOf[MemoizeMap[T, U]]
     }
     
-    extension [Self <: MemoizeMap[?, ?], T, U](x: Self & (MemoizeMap[T, U])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemoizeMap[?, ?], T, U] (val x: Self & (MemoizeMap[T, U])) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
@@ -163,7 +167,8 @@ object sharedMod {
       __obj.asInstanceOf[ThrottleOptions]
     }
     
-    extension [Self <: ThrottleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThrottleOptions] (val x: Self) extends AnyVal {
       
       inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       

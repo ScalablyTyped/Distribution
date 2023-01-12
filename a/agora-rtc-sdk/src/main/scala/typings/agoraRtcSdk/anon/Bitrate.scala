@@ -45,7 +45,8 @@ object Bitrate {
     __obj.asInstanceOf[Bitrate]
   }
   
-  extension [Self <: Bitrate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bitrate] (val x: Self) extends AnyVal {
     
     inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     

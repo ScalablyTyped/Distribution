@@ -38,7 +38,8 @@ object S3JobManifestGenerator {
     __obj.asInstanceOf[S3JobManifestGenerator]
   }
   
-  extension [Self <: S3JobManifestGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3JobManifestGenerator] (val x: Self) extends AnyVal {
     
     inline def setEnableManifestOutput(value: Boolean): Self = StObject.set(x, "EnableManifestOutput", value.asInstanceOf[js.Any])
     

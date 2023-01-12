@@ -160,7 +160,8 @@ object NodesModule {
     __obj.asInstanceOf[NodesModule]
   }
   
-  extension [Self <: NodesModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesModule] (val x: Self) extends AnyVal {
     
     inline def setAddModule(value: Version => js.Promise[js.Object]): Self = StObject.set(x, "addModule", js.Any.fromFunction1(value))
     

@@ -62,7 +62,8 @@ object XEncryptionProtectedStorage {
     __obj.asInstanceOf[XEncryptionProtectedStorage]
   }
   
-  extension [Self <: XEncryptionProtectedStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEncryptionProtectedStorage] (val x: Self) extends AnyVal {
     
     inline def setEncryptionAlgorithms(value: SafeArray[NamedValue]): Self = StObject.set(x, "EncryptionAlgorithms", value.asInstanceOf[js.Any])
     

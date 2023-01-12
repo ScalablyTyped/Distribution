@@ -55,7 +55,8 @@ object DisplayCriterionBidding {
     __obj.asInstanceOf[DisplayCriterionBidding]
   }
   
-  extension [Self <: DisplayCriterionBidding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayCriterionBidding] (val x: Self) extends AnyVal {
     
     inline def setClearCpc(value: () => Unit): Self = StObject.set(x, "clearCpc", js.Any.fromFunction0(value))
     

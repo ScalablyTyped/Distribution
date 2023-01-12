@@ -25,7 +25,8 @@ object DistributionMixture {
     __obj.asInstanceOf[DistributionMixture]
   }
   
-  extension [Self <: DistributionMixture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributionMixture] (val x: Self) extends AnyVal {
     
     inline def setDistributions(value: (js.Array[Distribution | SignalRef]) | SignalRef): Self = StObject.set(x, "distributions", value.asInstanceOf[js.Any])
     

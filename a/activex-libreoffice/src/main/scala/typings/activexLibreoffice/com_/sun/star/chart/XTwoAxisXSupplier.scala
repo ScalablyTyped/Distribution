@@ -48,7 +48,8 @@ object XTwoAxisXSupplier {
     __obj.asInstanceOf[XTwoAxisXSupplier]
   }
   
-  extension [Self <: XTwoAxisXSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTwoAxisXSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetSecondaryXAxis(value: () => XPropertySet): Self = StObject.set(x, "getSecondaryXAxis", js.Any.fromFunction0(value))
     

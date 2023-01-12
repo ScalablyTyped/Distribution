@@ -33,7 +33,8 @@ object ObjectHTMLAttributes {
     __obj.asInstanceOf[ObjectHTMLAttributes]
   }
   
-  extension [Self <: ObjectHTMLAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectHTMLAttributes] (val x: Self) extends AnyVal {
     
     inline def setClassid(value: String): Self = StObject.set(x, "classid", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,8 @@ object libTabBarTabBarItemMod {
       __obj.asInstanceOf[TabBarItemProps]
     }
     
-    extension [Self <: TabBarItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabBarItemProps] (val x: Self) extends AnyVal {
       
       inline def setBadge(value: String | Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       

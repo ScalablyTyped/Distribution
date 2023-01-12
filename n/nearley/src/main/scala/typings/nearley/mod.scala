@@ -133,7 +133,8 @@ object mod {
       __obj.asInstanceOf[CompiledRules]
     }
     
-    extension [Self <: CompiledRules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompiledRules] (val x: Self) extends AnyVal {
       
       inline def setLexer(value: Lexer): Self = StObject.set(x, "Lexer", value.asInstanceOf[js.Any])
       
@@ -190,7 +191,8 @@ object mod {
       __obj.asInstanceOf[ParserOptions]
     }
     
-    extension [Self <: ParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
       
       inline def setKeepHistory(value: Boolean): Self = StObject.set(x, "keepHistory", value.asInstanceOf[js.Any])
       
@@ -217,7 +219,8 @@ object mod {
       __obj.asInstanceOf[ParserRule]
     }
     
-    extension [Self <: ParserRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserRule] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

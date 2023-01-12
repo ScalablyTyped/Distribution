@@ -19,7 +19,8 @@ object GoogleDatastoreAdminV1DatastoreFirestoreMigrationMetadata {
     __obj.asInstanceOf[GoogleDatastoreAdminV1DatastoreFirestoreMigrationMetadata]
   }
   
-  extension [Self <: GoogleDatastoreAdminV1DatastoreFirestoreMigrationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDatastoreAdminV1DatastoreFirestoreMigrationMetadata] (val x: Self) extends AnyVal {
     
     inline def setMigrationState(value: String): Self = StObject.set(x, "migrationState", value.asInstanceOf[js.Any])
     

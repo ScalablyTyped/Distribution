@@ -47,7 +47,8 @@ object srcWebpackMod {
       __obj.asInstanceOf[BuildResult]
     }
     
-    extension [Self <: BuildResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuildResult] (val x: Self) extends AnyVal {
       
       inline def setEmittedFiles(value: js.Array[EmittedFiles]): Self = StObject.set(x, "emittedFiles", value.asInstanceOf[js.Any])
       

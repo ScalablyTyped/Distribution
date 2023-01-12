@@ -28,7 +28,8 @@ object HtmlBlockToken {
     __obj.asInstanceOf[HtmlBlockToken]
   }
   
-  extension [Self <: HtmlBlockToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlBlockToken] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: `false`): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

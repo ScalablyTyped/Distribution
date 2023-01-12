@@ -29,7 +29,8 @@ object ListLensSharesInput {
     __obj.asInstanceOf[ListLensSharesInput]
   }
   
-  extension [Self <: ListLensSharesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLensSharesInput] (val x: Self) extends AnyVal {
     
     inline def setLensAlias(value: LensAlias): Self = StObject.set(x, "LensAlias", value.asInstanceOf[js.Any])
     

@@ -116,7 +116,8 @@ object IConstraintDefinition {
     __obj.asInstanceOf[IConstraintDefinition]
   }
   
-  extension [Self <: IConstraintDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConstraintDefinition] (val x: Self) extends AnyVal {
     
     inline def setBodyA(value: Body): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
     

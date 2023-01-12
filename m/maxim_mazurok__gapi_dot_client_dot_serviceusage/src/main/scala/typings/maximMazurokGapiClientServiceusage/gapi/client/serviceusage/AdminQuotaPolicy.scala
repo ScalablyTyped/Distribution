@@ -44,7 +44,8 @@ object AdminQuotaPolicy {
     __obj.asInstanceOf[AdminQuotaPolicy]
   }
   
-  extension [Self <: AdminQuotaPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminQuotaPolicy] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

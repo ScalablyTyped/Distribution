@@ -30,7 +30,8 @@ object typesItemCollectionMetricsMod {
       __obj.asInstanceOf[ItemCollectionMetrics]
     }
     
-    extension [Self <: ItemCollectionMetrics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemCollectionMetrics] (val x: Self) extends AnyVal {
       
       inline def setItemCollectionKey(value: StringDictionary[AttributeValue] | (js.Iterable[js.Tuple2[String, AttributeValue]])): Self = StObject.set(x, "ItemCollectionKey", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object typesItemCollectionMetricsMod {
       __obj.asInstanceOf[UnmarshalledItemCollectionMetrics]
     }
     
-    extension [Self <: UnmarshalledItemCollectionMetrics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledItemCollectionMetrics] (val x: Self) extends AnyVal {
       
       inline def setItemCollectionKey(value: StringDictionary[UnmarshalledAttributeValue]): Self = StObject.set(x, "ItemCollectionKey", value.asInstanceOf[js.Any])
       

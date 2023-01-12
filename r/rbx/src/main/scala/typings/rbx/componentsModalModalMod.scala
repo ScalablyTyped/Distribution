@@ -152,7 +152,8 @@ object componentsModalModalMod {
       __obj.asInstanceOf[ModalProps]
     }
     
-    extension [Self <: ModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

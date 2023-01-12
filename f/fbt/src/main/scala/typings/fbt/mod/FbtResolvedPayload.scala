@@ -21,7 +21,8 @@ object FbtResolvedPayload {
     __obj.asInstanceOf[FbtResolvedPayload]
   }
   
-  extension [Self <: FbtResolvedPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FbtResolvedPayload] (val x: Self) extends AnyVal {
     
     inline def setContents(value: Any): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

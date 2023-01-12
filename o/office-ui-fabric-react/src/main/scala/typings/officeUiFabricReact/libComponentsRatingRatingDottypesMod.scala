@@ -150,7 +150,8 @@ object libComponentsRatingRatingDottypesMod {
       __obj.asInstanceOf[IRatingProps]
     }
     
-    extension [Self <: IRatingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRatingProps] (val x: Self) extends AnyVal {
       
       inline def setAllowZeroStars(value: Boolean): Self = StObject.set(x, "allowZeroStars", value.asInstanceOf[js.Any])
       
@@ -252,7 +253,8 @@ object libComponentsRatingRatingDottypesMod {
       __obj.asInstanceOf[IRatingStarProps]
     }
     
-    extension [Self <: IRatingStarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRatingStarProps] (val x: Self) extends AnyVal {
       
       inline def setClassNames(value: IProcessedStyleSet[IRatingStyles]): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
@@ -283,7 +285,8 @@ object libComponentsRatingRatingDottypesMod {
       __obj.asInstanceOf[IRatingStyleProps]
     }
     
-    extension [Self <: IRatingStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRatingStyleProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -328,7 +331,8 @@ object libComponentsRatingRatingDottypesMod {
       __obj.asInstanceOf[IRatingStyles]
     }
     
-    extension [Self <: IRatingStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRatingStyles] (val x: Self) extends AnyVal {
       
       inline def setLabelText(value: IStyle): Self = StObject.set(x, "labelText", value.asInstanceOf[js.Any])
       

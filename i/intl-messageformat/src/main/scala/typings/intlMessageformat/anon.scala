@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Locale]
     }
     
-    extension [Self <: Locale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     }
@@ -74,7 +75,8 @@ object anon {
       __obj.asInstanceOf[PartialFormats]
     }
     
-    extension [Self <: PartialFormats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFormats] (val x: Self) extends AnyVal {
       
       inline def setDate(value: Record[Format[date], DateTimeFormatOptions]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object anon {
       __obj.asInstanceOf[PartialFormatsDate]
     }
     
-    extension [Self <: PartialFormatsDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFormatsDate] (val x: Self) extends AnyVal {
       
       inline def setDate(value: Record[typings.intlMessageformat.libSrcFormattersMod.Format[date], DateTimeFormatOptions]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       

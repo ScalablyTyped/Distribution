@@ -24,7 +24,8 @@ object MessageWebSocketInformation {
     __obj.asInstanceOf[MessageWebSocketInformation]
   }
   
-  extension [Self <: MessageWebSocketInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageWebSocketInformation] (val x: Self) extends AnyVal {
     
     inline def setBandwidthStatistics(value: BandwidthStatistics): Self = StObject.set(x, "bandwidthStatistics", value.asInstanceOf[js.Any])
     

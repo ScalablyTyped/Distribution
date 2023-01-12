@@ -29,7 +29,8 @@ object ExclusiveGateway {
     __obj.asInstanceOf[ExclusiveGateway]
   }
   
-  extension [Self <: ExclusiveGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExclusiveGateway] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: SequenceFlow): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
   }

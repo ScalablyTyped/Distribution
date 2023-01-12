@@ -28,7 +28,8 @@ object ICommandDescriptor {
     __obj.asInstanceOf[ICommandDescriptor]
   }
   
-  extension [Self <: ICommandDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICommandDescriptor] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object StreamedBatch {
     __obj.asInstanceOf[StreamedBatch[T]]
   }
   
-  extension [Self <: StreamedBatch[?], T](x: Self & StreamedBatch[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamedBatch[?], T] (val x: Self & StreamedBatch[T]) extends AnyVal {
     
     inline def setContinuationToken(value: String): Self = StObject.set(x, "continuationToken", value.asInstanceOf[js.Any])
     

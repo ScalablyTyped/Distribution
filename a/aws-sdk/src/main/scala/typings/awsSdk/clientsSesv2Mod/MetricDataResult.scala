@@ -28,7 +28,8 @@ object MetricDataResult {
     __obj.asInstanceOf[MetricDataResult]
   }
   
-  extension [Self <: MetricDataResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricDataResult] (val x: Self) extends AnyVal {
     
     inline def setId(value: QueryIdentifier): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

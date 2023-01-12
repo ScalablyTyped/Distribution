@@ -28,7 +28,8 @@ object CreateResourceDefinitionVersionRequest {
     __obj.asInstanceOf[CreateResourceDefinitionVersionRequest]
   }
   
-  extension [Self <: CreateResourceDefinitionVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateResourceDefinitionVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
     

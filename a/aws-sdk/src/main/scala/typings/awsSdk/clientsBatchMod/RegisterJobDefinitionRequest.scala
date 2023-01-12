@@ -74,7 +74,8 @@ object RegisterJobDefinitionRequest {
     __obj.asInstanceOf[RegisterJobDefinitionRequest]
   }
   
-  extension [Self <: RegisterJobDefinitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterJobDefinitionRequest] (val x: Self) extends AnyVal {
     
     inline def setContainerProperties(value: ContainerProperties): Self = StObject.set(x, "containerProperties", value.asInstanceOf[js.Any])
     

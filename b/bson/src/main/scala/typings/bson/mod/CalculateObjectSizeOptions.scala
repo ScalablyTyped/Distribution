@@ -18,7 +18,8 @@ object CalculateObjectSizeOptions {
     __obj.asInstanceOf[CalculateObjectSizeOptions]
   }
   
-  extension [Self <: CalculateObjectSizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalculateObjectSizeOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreUndefined(value: Boolean): Self = StObject.set(x, "ignoreUndefined", value.asInstanceOf[js.Any])
     

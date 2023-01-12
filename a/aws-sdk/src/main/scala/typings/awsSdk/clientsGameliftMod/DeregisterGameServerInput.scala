@@ -23,7 +23,8 @@ object DeregisterGameServerInput {
     __obj.asInstanceOf[DeregisterGameServerInput]
   }
   
-  extension [Self <: DeregisterGameServerInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterGameServerInput] (val x: Self) extends AnyVal {
     
     inline def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
     

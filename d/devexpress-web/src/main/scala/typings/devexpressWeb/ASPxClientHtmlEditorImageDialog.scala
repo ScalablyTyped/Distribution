@@ -65,7 +65,8 @@ object ASPxClientHtmlEditorImageDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorImageDialog]
   }
   
-  extension [Self <: ASPxClientHtmlEditorImageDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorImageDialog] (val x: Self) extends AnyVal {
     
     inline def setGetCreateThumbnailCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetCreateThumbnailCheckBox", js.Any.fromFunction0(value))
     

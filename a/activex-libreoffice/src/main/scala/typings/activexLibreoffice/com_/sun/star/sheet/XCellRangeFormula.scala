@@ -57,7 +57,8 @@ object XCellRangeFormula {
     __obj.asInstanceOf[XCellRangeFormula]
   }
   
-  extension [Self <: XCellRangeFormula](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCellRangeFormula] (val x: Self) extends AnyVal {
     
     inline def setFormulaArray(value: SafeArray[SafeArray[String]]): Self = StObject.set(x, "FormulaArray", value.asInstanceOf[js.Any])
     

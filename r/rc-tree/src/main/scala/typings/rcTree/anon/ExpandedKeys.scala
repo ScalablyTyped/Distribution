@@ -15,7 +15,8 @@ object ExpandedKeys {
     __obj.asInstanceOf[ExpandedKeys]
   }
   
-  extension [Self <: ExpandedKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandedKeys] (val x: Self) extends AnyVal {
     
     inline def setExpandedKeys(value: js.Array[typings.rcTree.esInterfaceMod.Key]): Self = StObject.set(x, "expandedKeys", value.asInstanceOf[js.Any])
     

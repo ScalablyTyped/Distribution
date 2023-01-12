@@ -27,7 +27,8 @@ object IAlternateStateData {
     __obj.asInstanceOf[IAlternateStateData]
   }
   
-  extension [Self <: IAlternateStateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAlternateStateData] (val x: Self) extends AnyVal {
     
     inline def setQFieldItems(value: js.Array[IBookmarkFieldItem]): Self = StObject.set(x, "qFieldItems", value.asInstanceOf[js.Any])
     

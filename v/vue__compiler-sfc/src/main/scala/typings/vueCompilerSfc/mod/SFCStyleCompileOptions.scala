@@ -43,7 +43,8 @@ object SFCStyleCompileOptions {
     __obj.asInstanceOf[SFCStyleCompileOptions]
   }
   
-  extension [Self <: SFCStyleCompileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SFCStyleCompileOptions] (val x: Self) extends AnyVal {
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     

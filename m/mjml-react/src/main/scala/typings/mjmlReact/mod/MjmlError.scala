@@ -21,7 +21,8 @@ object MjmlError {
     __obj.asInstanceOf[MjmlError]
   }
   
-  extension [Self <: MjmlError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MjmlError] (val x: Self) extends AnyVal {
     
     inline def setFormattedMessage(value: String): Self = StObject.set(x, "formattedMessage", value.asInstanceOf[js.Any])
     

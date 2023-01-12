@@ -242,7 +242,8 @@ object mod {
       __obj.asInstanceOf[ExecError]
     }
     
-    extension [Self <: ExecError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -267,7 +268,8 @@ object mod {
       __obj.asInstanceOf[SubProcessOptions]
     }
     
-    extension [Self <: SubProcessOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubProcessOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -350,7 +352,8 @@ object mod {
       __obj.asInstanceOf[TeenProcessExecOptions]
     }
     
-    extension [Self <: TeenProcessExecOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TeenProcessExecOptions] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String | URL_): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -420,7 +423,8 @@ object mod {
       __obj.asInstanceOf[TeenProcessExecResult[T]]
     }
     
-    extension [Self <: TeenProcessExecResult[?], T /* <: String | Buffer */](x: Self & TeenProcessExecResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TeenProcessExecResult[?], T /* <: String | Buffer */] (val x: Self & TeenProcessExecResult[T]) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -441,7 +445,8 @@ object mod {
       __obj.asInstanceOf[TeenProcessLogger]
     }
     
-    extension [Self <: TeenProcessLogger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TeenProcessLogger] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: /* repeated */ Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     }

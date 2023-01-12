@@ -23,7 +23,8 @@ object PostLaunchActionsStatus {
     __obj.asInstanceOf[PostLaunchActionsStatus]
   }
   
-  extension [Self <: PostLaunchActionsStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostLaunchActionsStatus] (val x: Self) extends AnyVal {
     
     inline def setPostLaunchActionsLaunchStatusList(value: PostLaunchActionsLaunchStatusList): Self = StObject.set(x, "postLaunchActionsLaunchStatusList", value.asInstanceOf[js.Any])
     

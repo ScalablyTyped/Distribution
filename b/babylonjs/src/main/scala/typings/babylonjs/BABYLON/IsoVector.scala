@@ -71,7 +71,8 @@ object IsoVector {
     __obj.asInstanceOf[IsoVector]
   }
   
-  extension [Self <: IsoVector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsoVector] (val x: Self) extends AnyVal {
     
     inline def setRotate120(value: (Double, Double) => IsoVector): Self = StObject.set(x, "rotate120", js.Any.fromFunction2(value))
     

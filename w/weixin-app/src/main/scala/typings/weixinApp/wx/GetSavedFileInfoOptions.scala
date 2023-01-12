@@ -21,7 +21,8 @@ object GetSavedFileInfoOptions {
     __obj.asInstanceOf[GetSavedFileInfoOptions]
   }
   
-  extension [Self <: GetSavedFileInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSavedFileInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     

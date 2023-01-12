@@ -32,7 +32,8 @@ object NielsenCBET {
     __obj.asInstanceOf[NielsenCBET]
   }
   
-  extension [Self <: NielsenCBET](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NielsenCBET] (val x: Self) extends AnyVal {
     
     inline def setCbetCheckDigitString(value: stringMin2Max2): Self = StObject.set(x, "CbetCheckDigitString", value.asInstanceOf[js.Any])
     

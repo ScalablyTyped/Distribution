@@ -38,7 +38,8 @@ object XSubmitListener {
     __obj.asInstanceOf[XSubmitListener]
   }
   
-  extension [Self <: XSubmitListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSubmitListener] (val x: Self) extends AnyVal {
     
     inline def setApproveSubmit(value: EventObject => Boolean): Self = StObject.set(x, "approveSubmit", js.Any.fromFunction1(value))
   }

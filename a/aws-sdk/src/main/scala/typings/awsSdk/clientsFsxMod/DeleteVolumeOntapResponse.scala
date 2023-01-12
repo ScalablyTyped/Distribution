@@ -17,7 +17,8 @@ object DeleteVolumeOntapResponse {
     __obj.asInstanceOf[DeleteVolumeOntapResponse]
   }
   
-  extension [Self <: DeleteVolumeOntapResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVolumeOntapResponse] (val x: Self) extends AnyVal {
     
     inline def setFinalBackupId(value: BackupId): Self = StObject.set(x, "FinalBackupId", value.asInstanceOf[js.Any])
     

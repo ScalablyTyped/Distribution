@@ -31,7 +31,8 @@ object distInterfacesRangeMod {
       __obj.asInstanceOf[BaseRange]
     }
     
-    extension [Self <: BaseRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseRange] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: Point): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object distInterfacesRangeMod {
       __obj.asInstanceOf[RangeEdgesOptions]
     }
     
-    extension [Self <: RangeEdgesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeEdgesOptions] (val x: Self) extends AnyVal {
       
       inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
@@ -112,7 +114,8 @@ object distInterfacesRangeMod {
       __obj.asInstanceOf[RangeTransformOptions]
     }
     
-    extension [Self <: RangeTransformOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeTransformOptions] (val x: Self) extends AnyVal {
       
       inline def setAffinity(value: RangeDirection): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
       

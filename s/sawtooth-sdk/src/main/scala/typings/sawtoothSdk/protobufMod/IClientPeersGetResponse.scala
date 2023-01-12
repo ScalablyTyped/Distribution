@@ -20,7 +20,8 @@ object IClientPeersGetResponse {
     __obj.asInstanceOf[IClientPeersGetResponse]
   }
   
-  extension [Self <: IClientPeersGetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientPeersGetResponse] (val x: Self) extends AnyVal {
     
     inline def setPeers(value: js.Array[String]): Self = StObject.set(x, "peers", value.asInstanceOf[js.Any])
     

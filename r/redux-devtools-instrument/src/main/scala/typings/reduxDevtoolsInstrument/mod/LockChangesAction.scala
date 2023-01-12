@@ -21,7 +21,8 @@ object LockChangesAction {
     __obj.asInstanceOf[LockChangesAction]
   }
   
-  extension [Self <: LockChangesAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LockChangesAction] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

@@ -70,7 +70,8 @@ object XProofreader {
     __obj.asInstanceOf[XProofreader]
   }
   
-  extension [Self <: XProofreader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XProofreader] (val x: Self) extends AnyVal {
     
     inline def setDoProofreading(value: (String, String, Locale, Double, Double, SeqEquiv[PropertyValue]) => ProofreadingResult): Self = StObject.set(x, "doProofreading", js.Any.fromFunction6(value))
     

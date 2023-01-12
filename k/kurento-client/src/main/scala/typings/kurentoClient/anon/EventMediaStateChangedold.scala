@@ -39,7 +39,8 @@ object EventMediaStateChangedold {
     __obj.asInstanceOf[EventMediaStateChangedold]
   }
   
-  extension [Self <: EventMediaStateChangedold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventMediaStateChangedold] (val x: Self) extends AnyVal {
     
     inline def setNewState(value: MediaState): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
     

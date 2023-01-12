@@ -23,7 +23,8 @@ object InsightResultValue {
     __obj.asInstanceOf[InsightResultValue]
   }
   
-  extension [Self <: InsightResultValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsightResultValue] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

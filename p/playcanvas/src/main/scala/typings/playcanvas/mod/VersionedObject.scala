@@ -17,7 +17,8 @@ object VersionedObject {
     __obj.asInstanceOf[VersionedObject]
   }
   
-  extension [Self <: VersionedObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VersionedObject] (val x: Self) extends AnyVal {
     
     inline def setIncrement(value: () => Unit): Self = StObject.set(x, "increment", js.Any.fromFunction0(value))
     

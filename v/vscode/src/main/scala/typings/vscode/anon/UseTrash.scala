@@ -17,7 +17,8 @@ object UseTrash {
     __obj.asInstanceOf[UseTrash]
   }
   
-  extension [Self <: UseTrash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseTrash] (val x: Self) extends AnyVal {
     
     inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     

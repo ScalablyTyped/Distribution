@@ -19,7 +19,8 @@ object MlStartDataFrameAnalyticsRequest {
     __obj.asInstanceOf[MlStartDataFrameAnalyticsRequest]
   }
   
-  extension [Self <: MlStartDataFrameAnalyticsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlStartDataFrameAnalyticsRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

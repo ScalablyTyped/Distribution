@@ -28,7 +28,8 @@ object FileMetadata {
     __obj.asInstanceOf[FileMetadata]
   }
   
-  extension [Self <: FileMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileMetadata] (val x: Self) extends AnyVal {
     
     inline def setAbsolutePath(value: Path): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
     

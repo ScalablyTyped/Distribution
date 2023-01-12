@@ -62,7 +62,8 @@ object XCellRangeMovement {
     __obj.asInstanceOf[XCellRangeMovement]
   }
   
-  extension [Self <: XCellRangeMovement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCellRangeMovement] (val x: Self) extends AnyVal {
     
     inline def setCopyRange(value: (CellAddress, CellRangeAddress) => Unit): Self = StObject.set(x, "copyRange", js.Any.fromFunction2(value))
     

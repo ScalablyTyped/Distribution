@@ -86,7 +86,8 @@ object ojvalidationNumberMod {
         __obj.asInstanceOf[ConverterOptions]
       }
       
-      extension [Self <: ConverterOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConverterOptions] (val x: Self) extends AnyVal {
         
         inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         
@@ -164,7 +165,8 @@ object ojvalidationNumberMod {
         __obj.asInstanceOf[Separators]
       }
       
-      extension [Self <: Separators](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Separators] (val x: Self) extends AnyVal {
         
         inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
         
@@ -229,7 +231,8 @@ object ojvalidationNumberMod {
         __obj.asInstanceOf[ValidatorOptions]
       }
       
-      extension [Self <: ValidatorOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ValidatorOptions] (val x: Self) extends AnyVal {
         
         inline def setConverter(value: NumberConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
         

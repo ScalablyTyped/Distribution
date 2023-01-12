@@ -35,7 +35,8 @@ object XSignatureCreationResultListener {
     __obj.asInstanceOf[XSignatureCreationResultListener]
   }
   
-  extension [Self <: XSignatureCreationResultListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSignatureCreationResultListener] (val x: Self) extends AnyVal {
     
     inline def setSignatureCreated(value: (Double, SecurityOperationStatus) => Unit): Self = StObject.set(x, "signatureCreated", js.Any.fromFunction2(value))
   }

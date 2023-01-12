@@ -23,7 +23,8 @@ object TensorBoardOutputConfig {
     __obj.asInstanceOf[TensorBoardOutputConfig]
   }
   
-  extension [Self <: TensorBoardOutputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TensorBoardOutputConfig] (val x: Self) extends AnyVal {
     
     inline def setLocalPath(value: DirectoryPath): Self = StObject.set(x, "LocalPath", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object IssuerSubjectPattern {
     __obj.asInstanceOf[IssuerSubjectPattern]
   }
   
-  extension [Self <: IssuerSubjectPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssuerSubjectPattern] (val x: Self) extends AnyVal {
     
     inline def setCommonName(value: String): Self = StObject.set(x, "CommonName", value.asInstanceOf[js.Any])
     

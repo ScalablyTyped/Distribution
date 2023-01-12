@@ -61,7 +61,8 @@ object PartialITableQuadrantProp {
     __obj.asInstanceOf[PartialITableQuadrantProp]
   }
   
-  extension [Self <: PartialITableQuadrantProp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialITableQuadrantProp] (val x: Self) extends AnyVal {
     
     inline def setBodyRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "bodyRef", value.asInstanceOf[js.Any])
     

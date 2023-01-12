@@ -29,7 +29,8 @@ object IColumnProperties {
     __obj.asInstanceOf[IColumnProperties]
   }
   
-  extension [Self <: IColumnProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColumnProperties] (val x: Self) extends AnyVal {
     
     inline def setArray(value: Boolean): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object Adapter {
     __obj.asInstanceOf[Adapter]
   }
   
-  extension [Self <: Adapter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Adapter] (val x: Self) extends AnyVal {
     
     inline def setConsume(value: String => js.Promise[js.UndefOr[Unit]]): Self = StObject.set(x, "consume", js.Any.fromFunction1(value))
     

@@ -56,7 +56,8 @@ object XFunctions {
     __obj.asInstanceOf[XFunctions]
   }
   
-  extension [Self <: XFunctions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFunctions] (val x: Self) extends AnyVal {
     
     inline def setCreateFunction(value: () => XFunction): Self = StObject.set(x, "createFunction", js.Any.fromFunction0(value))
   }

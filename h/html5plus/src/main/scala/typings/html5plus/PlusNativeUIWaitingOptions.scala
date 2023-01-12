@@ -132,7 +132,8 @@ object PlusNativeUIWaitingOptions {
     __obj.asInstanceOf[PlusNativeUIWaitingOptions]
   }
   
-  extension [Self <: PlusNativeUIWaitingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNativeUIWaitingOptions] (val x: Self) extends AnyVal {
     
     inline def setBack(value: none | close | transmit): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     

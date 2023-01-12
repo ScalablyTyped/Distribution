@@ -25,7 +25,8 @@ object MediaStreamTrack {
     __obj.asInstanceOf[MediaStreamTrack]
   }
   
-  extension [Self <: MediaStreamTrack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaStreamTrack] (val x: Self) extends AnyVal {
     
     inline def setKind(value: audio | video): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }

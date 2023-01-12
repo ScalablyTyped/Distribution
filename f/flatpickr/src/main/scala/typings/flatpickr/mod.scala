@@ -246,7 +246,8 @@ object mod {
           __obj.asInstanceOf[typings.flatpickr.mod.flatpickr.Options.Options]
         }
         
-        extension [Self <: typings.flatpickr.mod.flatpickr.Options.Options](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.flatpickr.mod.flatpickr.Options.Options] (val x: Self) extends AnyVal {
           
           inline def setAllowInput(value: Boolean): Self = StObject.set(x, "allowInput", value.asInstanceOf[js.Any])
           

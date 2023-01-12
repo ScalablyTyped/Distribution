@@ -238,7 +238,8 @@ object UseComboboxGetToggleButtonPropsOptions {
     __obj.asInstanceOf[UseComboboxGetToggleButtonPropsOptions]
   }
   
-  extension [Self <: UseComboboxGetToggleButtonPropsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseComboboxGetToggleButtonPropsOptions] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     

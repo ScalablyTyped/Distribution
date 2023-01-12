@@ -29,7 +29,8 @@ object EditorFileScopeActionResponseBuilder {
     __obj.asInstanceOf[EditorFileScopeActionResponseBuilder]
   }
   
-  extension [Self <: EditorFileScopeActionResponseBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorFileScopeActionResponseBuilder] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: () => EditorFileScopeActionResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     

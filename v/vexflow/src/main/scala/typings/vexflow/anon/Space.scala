@@ -15,7 +15,8 @@ object Space {
     __obj.asInstanceOf[Space]
   }
   
-  extension [Self <: Space](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Space] (val x: Self) extends AnyVal {
     
     inline def setSpace(value: Double): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
   }

@@ -37,7 +37,8 @@ object SendProjectSessionActionRequest {
     __obj.asInstanceOf[SendProjectSessionActionRequest]
   }
   
-  extension [Self <: SendProjectSessionActionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendProjectSessionActionRequest] (val x: Self) extends AnyVal {
     
     inline def setClientSessionId(value: ClientSessionId): Self = StObject.set(x, "ClientSessionId", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetLexiconOutput {
     __obj.asInstanceOf[GetLexiconOutput]
   }
   
-  extension [Self <: GetLexiconOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLexiconOutput] (val x: Self) extends AnyVal {
     
     inline def setLexicon(value: Lexicon): Self = StObject.set(x, "Lexicon", value.asInstanceOf[js.Any])
     

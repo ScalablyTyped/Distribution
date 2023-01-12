@@ -23,7 +23,8 @@ object ResourcePathComponent {
     __obj.asInstanceOf[ResourcePathComponent]
   }
   
-  extension [Self <: ResourcePathComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourcePathComponent] (val x: Self) extends AnyVal {
     
     inline def setId(value: IdType): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

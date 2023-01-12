@@ -30,7 +30,8 @@ object libTfTypesMod {
       __obj.asInstanceOf[BaseQuad]
     }
     
-    extension [Self <: BaseQuad](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseQuad] (val x: Self) extends AnyVal {
       
       inline def setGraph(value: Term): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object libTfTypesMod {
       __obj.asInstanceOf[BlankNode]
     }
     
-    extension [Self <: BlankNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlankNode] (val x: Self) extends AnyVal {
       
       inline def setTermType(value: typings.rdflib.rdflibStrings.BlankNode): Self = StObject.set(x, "termType", value.asInstanceOf[js.Any])
     }
@@ -88,7 +90,8 @@ object libTfTypesMod {
       __obj.asInstanceOf[DefaultGraph]
     }
     
-    extension [Self <: DefaultGraph](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultGraph] (val x: Self) extends AnyVal {
       
       inline def setTermType(value: typings.rdflib.rdflibStrings.DefaultGraph): Self = StObject.set(x, "termType", value.asInstanceOf[js.Any])
       
@@ -124,7 +127,8 @@ object libTfTypesMod {
       __obj.asInstanceOf[Literal]
     }
     
-    extension [Self <: Literal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Literal] (val x: Self) extends AnyVal {
       
       inline def setDatatype(value: NamedNode): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
       
@@ -155,7 +159,8 @@ object libTfTypesMod {
       __obj.asInstanceOf[NamedNode]
     }
     
-    extension [Self <: NamedNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamedNode] (val x: Self) extends AnyVal {
       
       inline def setTermType(value: typings.rdflib.rdflibStrings.NamedNode): Self = StObject.set(x, "termType", value.asInstanceOf[js.Any])
     }
@@ -182,7 +187,8 @@ object libTfTypesMod {
       __obj.asInstanceOf[Quad[S, P, O, G]]
     }
     
-    extension [Self <: Quad[?, ?, ?, ?], S /* <: Term */, P /* <: Term */, O /* <: Term */, G /* <: Term */](x: Self & (Quad[S, P, O, G])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Quad[?, ?, ?, ?], S /* <: Term */, P /* <: Term */, O /* <: Term */, G /* <: Term */] (val x: Self & (Quad[S, P, O, G])) extends AnyVal {
       
       inline def setEquals_(value: BaseQuad => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
@@ -415,7 +421,8 @@ object libTfTypesMod {
       __obj.asInstanceOf[Term]
     }
     
-    extension [Self <: Term](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Term] (val x: Self) extends AnyVal {
       
       inline def setEquals_(value: Term => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
@@ -446,7 +453,8 @@ object libTfTypesMod {
       __obj.asInstanceOf[Variable]
     }
     
-    extension [Self <: Variable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Variable] (val x: Self) extends AnyVal {
       
       inline def setTermType(value: typings.rdflib.rdflibStrings.Variable): Self = StObject.set(x, "termType", value.asInstanceOf[js.Any])
     }

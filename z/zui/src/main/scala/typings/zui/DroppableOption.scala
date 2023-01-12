@@ -43,7 +43,8 @@ object DroppableOption {
     __obj.asInstanceOf[DroppableOption]
   }
   
-  extension [Self <: DroppableOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DroppableOption] (val x: Self) extends AnyVal {
     
     inline def setAlways(value: /* e */ DroppableEvent => Unit): Self = StObject.set(x, "always", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object Verification {
     __obj.asInstanceOf[Verification]
   }
   
-  extension [Self <: Verification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Verification] (val x: Self) extends AnyVal {
     
     inline def setAllow_proof_request_override(value: Boolean): Self = StObject.set(x, "allow_proof_request_override", value.asInstanceOf[js.Any])
     

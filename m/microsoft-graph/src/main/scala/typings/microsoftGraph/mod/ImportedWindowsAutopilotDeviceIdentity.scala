@@ -36,7 +36,8 @@ object ImportedWindowsAutopilotDeviceIdentity {
     __obj.asInstanceOf[ImportedWindowsAutopilotDeviceIdentity]
   }
   
-  extension [Self <: ImportedWindowsAutopilotDeviceIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportedWindowsAutopilotDeviceIdentity] (val x: Self) extends AnyVal {
     
     inline def setAssignedUserPrincipalName(value: NullableOption[String]): Self = StObject.set(x, "assignedUserPrincipalName", value.asInstanceOf[js.Any])
     

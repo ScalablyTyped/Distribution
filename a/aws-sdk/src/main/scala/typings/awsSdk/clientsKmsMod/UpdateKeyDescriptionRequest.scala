@@ -23,7 +23,8 @@ object UpdateKeyDescriptionRequest {
     __obj.asInstanceOf[UpdateKeyDescriptionRequest]
   }
   
-  extension [Self <: UpdateKeyDescriptionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateKeyDescriptionRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: DescriptionType): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object SecuritySuggestUserProfilesHint {
     __obj.asInstanceOf[SecuritySuggestUserProfilesHint]
   }
   
-  extension [Self <: SecuritySuggestUserProfilesHint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecuritySuggestUserProfilesHint] (val x: Self) extends AnyVal {
     
     inline def setLabels(value: Record[String, String | js.Array[String]]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     

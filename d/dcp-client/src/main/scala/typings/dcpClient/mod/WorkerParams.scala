@@ -45,7 +45,8 @@ object WorkerParams {
     __obj.asInstanceOf[WorkerParams]
   }
   
-  extension [Self <: WorkerParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerParams] (val x: Self) extends AnyVal {
     
     inline def setIdentityKeystore(value: Keystore): Self = StObject.set(x, "identityKeystore", value.asInstanceOf[js.Any])
     

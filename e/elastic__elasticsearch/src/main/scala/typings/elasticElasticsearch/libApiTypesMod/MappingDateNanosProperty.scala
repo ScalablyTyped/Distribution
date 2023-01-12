@@ -32,7 +32,8 @@ object MappingDateNanosProperty {
     __obj.asInstanceOf[MappingDateNanosProperty]
   }
   
-  extension [Self <: MappingDateNanosProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingDateNanosProperty] (val x: Self) extends AnyVal {
     
     inline def setBoost(value: double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
     

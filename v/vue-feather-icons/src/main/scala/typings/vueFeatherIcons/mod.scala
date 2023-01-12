@@ -1151,7 +1151,8 @@ object mod {
       __obj.asInstanceOf[FeatherIconProps]
     }
     
-    extension [Self <: FeatherIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeatherIconProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }

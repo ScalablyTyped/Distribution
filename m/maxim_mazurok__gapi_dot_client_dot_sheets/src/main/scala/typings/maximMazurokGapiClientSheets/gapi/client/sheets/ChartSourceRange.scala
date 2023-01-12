@@ -21,7 +21,8 @@ object ChartSourceRange {
     __obj.asInstanceOf[ChartSourceRange]
   }
   
-  extension [Self <: ChartSourceRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartSourceRange] (val x: Self) extends AnyVal {
     
     inline def setSources(value: js.Array[GridRange]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     

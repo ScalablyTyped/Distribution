@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: /* error */ CordovaPluginsFileOpener2Result => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       

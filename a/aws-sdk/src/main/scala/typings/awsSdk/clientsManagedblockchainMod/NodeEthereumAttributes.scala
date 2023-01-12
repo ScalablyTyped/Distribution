@@ -23,7 +23,8 @@ object NodeEthereumAttributes {
     __obj.asInstanceOf[NodeEthereumAttributes]
   }
   
-  extension [Self <: NodeEthereumAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeEthereumAttributes] (val x: Self) extends AnyVal {
     
     inline def setHttpEndpoint(value: String): Self = StObject.set(x, "HttpEndpoint", value.asInstanceOf[js.Any])
     

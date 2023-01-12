@@ -21,7 +21,8 @@ object PoundElement {
     __obj.asInstanceOf[PoundElement]
   }
   
-  extension [Self <: PoundElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PoundElement] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object PlusWebviewWebviewTransform {
     __obj.asInstanceOf[PlusWebviewWebviewTransform]
   }
   
-  extension [Self <: PlusWebviewWebviewTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewTransform] (val x: Self) extends AnyVal {
     
     inline def setMatrix(value: String): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object EndGroup {
     __obj.asInstanceOf[EndGroup]
   }
   
-  extension [Self <: EndGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndGroup] (val x: Self) extends AnyVal {
     
     inline def setEndGroup(value: String): Self = StObject.set(x, "endGroup", value.asInstanceOf[js.Any])
     

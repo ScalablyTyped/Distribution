@@ -160,7 +160,8 @@ object mod {
       __obj.asInstanceOf[RemoteReduxDevToolsOptions]
     }
     
-    extension [Self <: RemoteReduxDevToolsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteReduxDevToolsOptions] (val x: Self) extends AnyVal {
       
       inline def setActionCreators(value: js.Array[ActionCreator[Any]] | ActionCreatorsMapObject[Any]): Self = StObject.set(x, "actionCreators", value.asInstanceOf[js.Any])
       

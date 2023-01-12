@@ -17,7 +17,8 @@ object IDeleteContextRequest {
     __obj.asInstanceOf[IDeleteContextRequest]
   }
   
-  extension [Self <: IDeleteContextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDeleteContextRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

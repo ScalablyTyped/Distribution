@@ -18,7 +18,8 @@ object DialogflowV1BaseGoogleMessage {
     __obj.asInstanceOf[DialogflowV1BaseGoogleMessage[TType]]
   }
   
-  extension [Self <: DialogflowV1BaseGoogleMessage[?], TType /* <: String */](x: Self & DialogflowV1BaseGoogleMessage[TType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1BaseGoogleMessage[?], TType /* <: String */] (val x: Self & DialogflowV1BaseGoogleMessage[TType]) extends AnyVal {
     
     inline def setPlatform(value: google): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     

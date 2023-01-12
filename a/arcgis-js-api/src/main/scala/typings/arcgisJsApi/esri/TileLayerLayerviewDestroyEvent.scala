@@ -17,7 +17,8 @@ object TileLayerLayerviewDestroyEvent {
     __obj.asInstanceOf[TileLayerLayerviewDestroyEvent]
   }
   
-  extension [Self <: TileLayerLayerviewDestroyEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileLayerLayerviewDestroyEvent] (val x: Self) extends AnyVal {
     
     inline def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
     

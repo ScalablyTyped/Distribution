@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[PwdStrengthColorOptions]
     }
     
-    extension [Self <: PwdStrengthColorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PwdStrengthColorOptions] (val x: Self) extends AnyVal {
       
       inline def setAverage(value: String): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[PwdStrengthLanguageOptions]
     }
     
-    extension [Self <: PwdStrengthLanguageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PwdStrengthLanguageOptions] (val x: Self) extends AnyVal {
       
       inline def setAverage(value: String): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
       
@@ -174,7 +176,8 @@ object mod {
       __obj.asInstanceOf[PwdStrengthOptions]
     }
     
-    extension [Self <: PwdStrengthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PwdStrengthOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: PwdStrengthColorOptions): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -231,7 +234,8 @@ object mod {
       __obj.asInstanceOf[PwdStrengthReturn]
     }
     
-    extension [Self <: PwdStrengthReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PwdStrengthReturn] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

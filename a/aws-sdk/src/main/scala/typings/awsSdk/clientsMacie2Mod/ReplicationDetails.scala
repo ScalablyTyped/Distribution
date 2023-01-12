@@ -28,7 +28,8 @@ object ReplicationDetails {
     __obj.asInstanceOf[ReplicationDetails]
   }
   
-  extension [Self <: ReplicationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationDetails] (val x: Self) extends AnyVal {
     
     inline def setReplicated(value: boolean): Self = StObject.set(x, "replicated", value.asInstanceOf[js.Any])
     

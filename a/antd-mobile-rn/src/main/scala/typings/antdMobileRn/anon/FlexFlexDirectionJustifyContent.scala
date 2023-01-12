@@ -19,7 +19,8 @@ object FlexFlexDirectionJustifyContent {
     __obj.asInstanceOf[FlexFlexDirectionJustifyContent]
   }
   
-  extension [Self <: FlexFlexDirectionJustifyContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexFlexDirectionJustifyContent] (val x: Self) extends AnyVal {
     
     inline def setFlex(value: Double): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     

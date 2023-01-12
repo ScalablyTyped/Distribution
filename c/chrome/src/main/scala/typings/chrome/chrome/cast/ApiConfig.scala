@@ -29,7 +29,8 @@ object ApiConfig {
     __obj.asInstanceOf[ApiConfig]
   }
   
-  extension [Self <: ApiConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiConfig] (val x: Self) extends AnyVal {
     
     inline def setAutoJoinPolicy(value: AutoJoinPolicy): Self = StObject.set(x, "autoJoinPolicy", value.asInstanceOf[js.Any])
     

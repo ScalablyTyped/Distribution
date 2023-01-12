@@ -21,7 +21,8 @@ object CategoryFilter {
     __obj.asInstanceOf[CategoryFilter]
   }
   
-  extension [Self <: CategoryFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CategoryFilter] (val x: Self) extends AnyVal {
     
     inline def setCategoryFilter(value: js.Array[String]): Self = StObject.set(x, "categoryFilter", value.asInstanceOf[js.Any])
     

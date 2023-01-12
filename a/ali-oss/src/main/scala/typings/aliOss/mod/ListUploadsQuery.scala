@@ -21,7 +21,8 @@ object ListUploadsQuery {
     __obj.asInstanceOf[ListUploadsQuery]
   }
   
-  extension [Self <: ListUploadsQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListUploadsQuery] (val x: Self) extends AnyVal {
     
     inline def `setKey-marker`(value: String): Self = StObject.set(x, "key-marker", value.asInstanceOf[js.Any])
     

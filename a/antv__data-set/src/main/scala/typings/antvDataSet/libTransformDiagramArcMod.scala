@@ -40,7 +40,8 @@ object libTransformDiagramArcMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setId(value: /* node */ Any => Any): Self = StObject.set(x, "id", js.Any.fromFunction1(value))
       

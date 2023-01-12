@@ -74,7 +74,8 @@ object storage {
       __obj.asInstanceOf[Client]
     }
     
-    extension [Self <: Client](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: ProviderOptions): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object storage {
       __obj.asInstanceOf[Container]
     }
     
-    extension [Self <: Container](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
       
       inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
@@ -139,7 +141,8 @@ object storage {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
@@ -164,7 +167,8 @@ object storage {
       __obj.asInstanceOf[StorageDownloadOptions]
     }
     
-    extension [Self <: StorageDownloadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageDownloadOptions] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -185,7 +189,8 @@ object storage {
       __obj.asInstanceOf[StorageUploadOptions]
     }
     
-    extension [Self <: StorageUploadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageUploadOptions] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

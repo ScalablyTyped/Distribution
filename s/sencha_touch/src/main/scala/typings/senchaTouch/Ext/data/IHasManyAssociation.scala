@@ -99,7 +99,8 @@ object IHasManyAssociation {
     __obj.asInstanceOf[IHasManyAssociation]
   }
   
-  extension [Self <: IHasManyAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHasManyAssociation] (val x: Self) extends AnyVal {
     
     inline def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
     

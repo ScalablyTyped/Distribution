@@ -92,7 +92,8 @@ object backboneMod {
       __obj.asInstanceOf[LayoutManagerOptions]
     }
     
-    extension [Self <: LayoutManagerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutManagerOptions] (val x: Self) extends AnyVal {
       
       inline def setEl(value: Boolean): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object backboneMod {
       __obj.asInstanceOf[LayoutOptions[TModel]]
     }
     
-    extension [Self <: LayoutOptions[?], TModel /* <: Model[Any, ModelSetOptions, Any] */](x: Self & LayoutOptions[TModel]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutOptions[?], TModel /* <: Model[Any, ModelSetOptions, Any] */] (val x: Self & LayoutOptions[TModel]) extends AnyVal {
       
       inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       

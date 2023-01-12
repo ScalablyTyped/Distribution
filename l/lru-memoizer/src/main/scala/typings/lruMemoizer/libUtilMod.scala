@@ -173,7 +173,8 @@ object libUtilMod {
       __obj.asInstanceOf[IParamsBase[T1, T2, T3, T4, T5, T6, TResult]]
     }
     
-    extension [Self <: IParamsBase[?, ?, ?, ?, ?, ?, ?], T1, T2, T3, T4, T5, T6, TResult](x: Self & (IParamsBase[T1, T2, T3, T4, T5, T6, TResult])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParamsBase[?, ?, ?, ?, ?, ?, ?], T1, T2, T3, T4, T5, T6, TResult] (val x: Self & (IParamsBase[T1, T2, T3, T4, T5, T6, TResult])) extends AnyVal {
       
       inline def setBypass(value: IBypassFunction[T1, T2, T3, T4, T5, T6]): Self = StObject.set(x, "bypass", value.asInstanceOf[js.Any])
       

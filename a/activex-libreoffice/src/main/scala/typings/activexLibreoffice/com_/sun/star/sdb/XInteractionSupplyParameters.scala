@@ -36,7 +36,8 @@ object XInteractionSupplyParameters {
     __obj.asInstanceOf[XInteractionSupplyParameters]
   }
   
-  extension [Self <: XInteractionSupplyParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInteractionSupplyParameters] (val x: Self) extends AnyVal {
     
     inline def setSetParameters(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "setParameters", js.Any.fromFunction1(value))
   }

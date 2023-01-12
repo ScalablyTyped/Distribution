@@ -115,7 +115,8 @@ object distLiteFirestoreSrcLocalLruGarbageCollectorMod {
       __obj.asInstanceOf[LruDelegate]
     }
     
-    extension [Self <: LruDelegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LruDelegate] (val x: Self) extends AnyVal {
       
       inline def setForEachOrphanedDocumentSequenceNumber(
         value: (PersistenceTransaction, js.Function1[/* sequenceNumber */ ListenSequenceNumber, Unit]) => PersistencePromise[Unit]
@@ -178,7 +179,8 @@ object distLiteFirestoreSrcLocalLruGarbageCollectorMod {
       __obj.asInstanceOf[LruGarbageCollector]
     }
     
-    extension [Self <: LruGarbageCollector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LruGarbageCollector] (val x: Self) extends AnyVal {
       
       inline def setCalculateTargetCount(value: (PersistenceTransaction, Double) => PersistencePromise[Double]): Self = StObject.set(x, "calculateTargetCount", js.Any.fromFunction2(value))
       
@@ -218,7 +220,8 @@ object distLiteFirestoreSrcLocalLruGarbageCollectorMod {
       __obj.asInstanceOf[LruResults]
     }
     
-    extension [Self <: LruResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LruResults] (val x: Self) extends AnyVal {
       
       inline def setDidRun(value: Boolean): Self = StObject.set(x, "didRun", value.asInstanceOf[js.Any])
       

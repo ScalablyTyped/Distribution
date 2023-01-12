@@ -53,7 +53,8 @@ object UpdatePipelineRequest {
     __obj.asInstanceOf[UpdatePipelineRequest]
   }
   
-  extension [Self <: UpdatePipelineRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePipelineRequest] (val x: Self) extends AnyVal {
     
     inline def setAwsKmsKeyArn(value: KeyArn): Self = StObject.set(x, "AwsKmsKeyArn", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object UpdatePullRequestStatusOutput {
     __obj.asInstanceOf[UpdatePullRequestStatusOutput]
   }
   
-  extension [Self <: UpdatePullRequestStatusOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePullRequestStatusOutput] (val x: Self) extends AnyVal {
     
     inline def setPullRequest(value: PullRequest): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
   }

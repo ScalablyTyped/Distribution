@@ -18,7 +18,8 @@ object TypeofPoint {
     __obj.asInstanceOf[TypeofPoint]
   }
   
-  extension [Self <: TypeofPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPoint] (val x: Self) extends AnyVal {
     
     inline def setConvert(
       value: Any => /* import warning: importer.ImportType#apply Failed type conversion: T extends std.Array<number> ? @mapbox/point-geometry.@mapbox/point-geometry.Point : T extends @mapbox/point-geometry.@mapbox/point-geometry.Point ? @mapbox/point-geometry.@mapbox/point-geometry.Point : T */ js.Any

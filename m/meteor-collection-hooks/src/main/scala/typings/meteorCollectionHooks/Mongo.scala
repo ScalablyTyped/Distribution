@@ -27,7 +27,8 @@ object Mongo {
       __obj.asInstanceOf[Collection[T]]
     }
     
-    extension [Self <: Collection[?], T](x: Self & Collection[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Collection[?], T] (val x: Self & Collection[T]) extends AnyVal {
       
       inline def setAfter(value: Update[T]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       

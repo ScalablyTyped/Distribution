@@ -30,7 +30,8 @@ object FunctionResultData {
     __obj.asInstanceOf[FunctionResultData[T]]
   }
   
-  extension [Self <: FunctionResultData[?], T](x: Self & FunctionResultData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionResultData[?], T] (val x: Self & FunctionResultData[T]) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

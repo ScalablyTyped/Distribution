@@ -43,7 +43,8 @@ object FusedDepthwiseConv2DAttrs {
     __obj.asInstanceOf[FusedDepthwiseConv2DAttrs]
   }
   
-  extension [Self <: FusedDepthwiseConv2DAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FusedDepthwiseConv2DAttrs] (val x: Self) extends AnyVal {
     
     inline def setActivation(value: Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
     

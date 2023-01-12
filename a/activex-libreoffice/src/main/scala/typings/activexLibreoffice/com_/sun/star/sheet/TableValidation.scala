@@ -111,7 +111,8 @@ object TableValidation {
     __obj.asInstanceOf[TableValidation]
   }
   
-  extension [Self <: TableValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableValidation] (val x: Self) extends AnyVal {
     
     inline def setErrorAlertStyle(value: ValidationAlertStyle): Self = StObject.set(x, "ErrorAlertStyle", value.asInstanceOf[js.Any])
     

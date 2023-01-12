@@ -25,7 +25,8 @@ object IntercomStatic {
     __obj.asInstanceOf[IntercomStatic]
   }
   
-  extension [Self <: IntercomStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntercomStatic] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

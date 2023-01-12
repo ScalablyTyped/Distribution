@@ -33,7 +33,8 @@ object Environment {
     __obj.asInstanceOf[Environment]
   }
   
-  extension [Self <: Environment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
     
     inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     

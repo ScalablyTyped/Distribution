@@ -83,7 +83,8 @@ object libEsmHooksHotkeysHotkeyConfigMod {
       __obj.asInstanceOf[HotkeyConfig]
     }
     
-    extension [Self <: HotkeyConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HotkeyConfig] (val x: Self) extends AnyVal {
       
       inline def setAllowInInput(value: Boolean): Self = StObject.set(x, "allowInInput", value.asInstanceOf[js.Any])
       

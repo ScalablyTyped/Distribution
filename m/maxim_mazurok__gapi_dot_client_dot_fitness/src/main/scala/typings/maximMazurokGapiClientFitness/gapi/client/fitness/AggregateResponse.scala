@@ -16,7 +16,8 @@ object AggregateResponse {
     __obj.asInstanceOf[AggregateResponse]
   }
   
-  extension [Self <: AggregateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateResponse] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: js.Array[AggregateBucket]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     

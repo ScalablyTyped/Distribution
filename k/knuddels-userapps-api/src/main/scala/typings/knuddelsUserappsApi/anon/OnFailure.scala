@@ -22,7 +22,8 @@ object OnFailure {
     __obj.asInstanceOf[OnFailure]
   }
   
-  extension [Self <: OnFailure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnFailure] (val x: Self) extends AnyVal {
     
     inline def setOnFailure(value: (/* responseData */ String, /* externalServerResponse */ ExternalServerResponse) => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction2(value))
     

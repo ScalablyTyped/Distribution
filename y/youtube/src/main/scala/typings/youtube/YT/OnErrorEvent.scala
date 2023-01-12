@@ -20,7 +20,8 @@ object OnErrorEvent {
     __obj.asInstanceOf[OnErrorEvent]
   }
   
-  extension [Self <: OnErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setData(value: PlayerError): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

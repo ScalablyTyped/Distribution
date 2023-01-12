@@ -21,7 +21,8 @@ object Lastnote {
     __obj.asInstanceOf[Lastnote]
   }
   
-  extension [Self <: Lastnote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lastnote] (val x: Self) extends AnyVal {
     
     inline def setFirst_indices(value: js.Array[Double]): Self = StObject.set(x, "first_indices", value.asInstanceOf[js.Any])
     

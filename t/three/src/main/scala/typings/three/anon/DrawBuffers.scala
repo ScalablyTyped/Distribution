@@ -21,7 +21,8 @@ object DrawBuffers {
     __obj.asInstanceOf[DrawBuffers]
   }
   
-  extension [Self <: DrawBuffers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawBuffers] (val x: Self) extends AnyVal {
     
     inline def setDerivatives(value: Boolean): Self = StObject.set(x, "derivatives", value.asInstanceOf[js.Any])
     

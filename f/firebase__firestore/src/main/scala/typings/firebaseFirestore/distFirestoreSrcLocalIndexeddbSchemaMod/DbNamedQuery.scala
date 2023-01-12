@@ -23,7 +23,8 @@ object DbNamedQuery {
     __obj.asInstanceOf[DbNamedQuery]
   }
   
-  extension [Self <: DbNamedQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbNamedQuery] (val x: Self) extends AnyVal {
     
     inline def setBundledQuery(value: BundledQuery): Self = StObject.set(x, "bundledQuery", value.asInstanceOf[js.Any])
     

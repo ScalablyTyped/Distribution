@@ -30,7 +30,8 @@ object TwitterAuthProviderInstance {
     __obj.asInstanceOf[TwitterAuthProviderInstance]
   }
   
-  extension [Self <: TwitterAuthProviderInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TwitterAuthProviderInstance] (val x: Self) extends AnyVal {
     
     inline def setSetCustomParameters(value: js.Object => AuthProvider): Self = StObject.set(x, "setCustomParameters", js.Any.fromFunction1(value))
   }

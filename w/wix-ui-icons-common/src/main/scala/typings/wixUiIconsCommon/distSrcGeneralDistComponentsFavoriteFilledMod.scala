@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsFavoriteFilledMod extends Shortcut {
       __obj.asInstanceOf[FavoriteFilledProps]
     }
     
-    extension [Self <: FavoriteFilledProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FavoriteFilledProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

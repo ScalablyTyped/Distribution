@@ -34,7 +34,8 @@ object iconOptionsStoreableMod {
       __obj.asInstanceOf[Storeable]
     }
     
-    extension [Self <: Storeable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Storeable] (val x: Self) extends AnyVal {
       
       inline def setIconIdResolver(value: /* id */ String => String): Self = StObject.set(x, "iconIdResolver", js.Any.fromFunction1(value))
       

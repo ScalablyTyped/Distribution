@@ -37,7 +37,8 @@ object ChartParallelAxesBreaksOptions {
     __obj.asInstanceOf[ChartParallelAxesBreaksOptions]
   }
   
-  extension [Self <: ChartParallelAxesBreaksOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartParallelAxesBreaksOptions] (val x: Self) extends AnyVal {
     
     inline def setBreakSize(value: Double): Self = StObject.set(x, "breakSize", value.asInstanceOf[js.Any])
     

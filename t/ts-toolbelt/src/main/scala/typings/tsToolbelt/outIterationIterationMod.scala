@@ -638,7 +638,8 @@ object outIterationIterationMod {
   }
   object IterationMap {
     
-    extension [Self <: IterationMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IterationMap] (val x: Self) extends AnyVal {
       
       inline def `set-1`(value: js.Tuple5[typings.tsToolbelt.tsToolbeltInts.`-1`, `-_`, `-2`, `0`, `1`]): Self = StObject.set(x, "-1", value.asInstanceOf[js.Any])
       

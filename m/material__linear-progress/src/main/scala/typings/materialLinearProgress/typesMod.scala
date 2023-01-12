@@ -36,7 +36,8 @@ object typesMod {
       __obj.asInstanceOf[MDCResizeObserverEntry]
     }
     
-    extension [Self <: MDCResizeObserverEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCResizeObserverEntry] (val x: Self) extends AnyVal {
       
       inline def setContentRect(value: DOMRectReadOnly): Self = StObject.set(x, "contentRect", value.asInstanceOf[js.Any])
     }
@@ -53,7 +54,8 @@ object typesMod {
       __obj.asInstanceOf[WithMDCResizeObserver]
     }
     
-    extension [Self <: WithMDCResizeObserver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithMDCResizeObserver] (val x: Self) extends AnyVal {
       
       inline def setResizeObserver(value: MDCResizeObserver): Self = StObject.set(x, "ResizeObserver", value.asInstanceOf[js.Any])
     }

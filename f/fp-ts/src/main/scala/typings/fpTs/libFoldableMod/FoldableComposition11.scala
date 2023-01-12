@@ -40,7 +40,8 @@ object FoldableComposition11 {
     __obj.asInstanceOf[FoldableComposition11[F, G]]
   }
   
-  extension [Self <: FoldableComposition11[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & (FoldableComposition11[F, G])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FoldableComposition11[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & (FoldableComposition11[F, G])) extends AnyVal {
     
     inline def setFoldMap(
       value: Monoid[Any] => js.Function2[

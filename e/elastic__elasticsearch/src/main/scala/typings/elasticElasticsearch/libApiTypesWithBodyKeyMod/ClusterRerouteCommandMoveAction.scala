@@ -21,7 +21,8 @@ object ClusterRerouteCommandMoveAction {
     __obj.asInstanceOf[ClusterRerouteCommandMoveAction]
   }
   
-  extension [Self <: ClusterRerouteCommandMoveAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterRerouteCommandMoveAction] (val x: Self) extends AnyVal {
     
     inline def setFrom_node(value: String): Self = StObject.set(x, "from_node", value.asInstanceOf[js.Any])
     

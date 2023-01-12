@@ -21,7 +21,8 @@ object ReconnectOptions {
     __obj.asInstanceOf[ReconnectOptions]
   }
   
-  extension [Self <: ReconnectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReconnectOptions] (val x: Self) extends AnyVal {
     
     inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     

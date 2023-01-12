@@ -19,7 +19,8 @@ object GetServiceCountryAvailabilityAPIResult {
     __obj.asInstanceOf[GetServiceCountryAvailabilityAPIResult]
   }
   
-  extension [Self <: GetServiceCountryAvailabilityAPIResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServiceCountryAvailabilityAPIResult] (val x: Self) extends AnyVal {
     
     inline def setCPResult(value: String): Self = StObject.set(x, "CPResult", value.asInstanceOf[js.Any])
     

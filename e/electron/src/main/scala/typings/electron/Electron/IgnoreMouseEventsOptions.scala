@@ -22,7 +22,8 @@ object IgnoreMouseEventsOptions {
     __obj.asInstanceOf[IgnoreMouseEventsOptions]
   }
   
-  extension [Self <: IgnoreMouseEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoreMouseEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setForward(value: Boolean): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[PhotoSwipeGalleryItem]
     }
     
-    extension [Self <: PhotoSwipeGalleryItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhotoSwipeGalleryItem] (val x: Self) extends AnyVal {
       
       inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     }
@@ -144,7 +145,8 @@ object mod {
       __obj.asInstanceOf[PhotoSwipeGalleryProps]
     }
     
-    extension [Self <: PhotoSwipeGalleryProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhotoSwipeGalleryProps] (val x: Self) extends AnyVal {
       
       inline def setAfterChange(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "afterChange", js.Any.fromFunction1(value))
       
@@ -435,7 +437,8 @@ object mod {
       __obj.asInstanceOf[PhotoSwipeProps]
     }
     
-    extension [Self <: PhotoSwipeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhotoSwipeProps] (val x: Self) extends AnyVal {
       
       inline def setAfterChange(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "afterChange", js.Any.fromFunction1(value))
       

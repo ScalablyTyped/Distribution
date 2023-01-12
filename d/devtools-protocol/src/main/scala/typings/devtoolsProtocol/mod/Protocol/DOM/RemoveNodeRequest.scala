@@ -18,7 +18,8 @@ object RemoveNodeRequest {
     __obj.asInstanceOf[RemoveNodeRequest]
   }
   
-  extension [Self <: RemoveNodeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveNodeRequest] (val x: Self) extends AnyVal {
     
     inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }

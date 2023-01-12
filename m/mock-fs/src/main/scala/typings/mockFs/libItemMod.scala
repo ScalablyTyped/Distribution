@@ -120,7 +120,8 @@ object libItemMod {
       __obj.asInstanceOf[ExtendedStats]
     }
     
-    extension [Self <: ExtendedStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedStats] (val x: Self) extends AnyVal {
       
       inline def setBlocks(value: Double): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
@@ -215,7 +216,8 @@ object libItemMod {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setCanExecute(value: () => Boolean): Self = StObject.set(x, "canExecute", js.Any.fromFunction0(value))
       
@@ -298,7 +300,8 @@ object libItemMod {
       __obj.asInstanceOf[Stats]
     }
     
-    extension [Self <: Stats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
       
       inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       

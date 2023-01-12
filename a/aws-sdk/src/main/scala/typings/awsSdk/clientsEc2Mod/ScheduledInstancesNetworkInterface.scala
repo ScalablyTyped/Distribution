@@ -73,7 +73,8 @@ object ScheduledInstancesNetworkInterface {
     __obj.asInstanceOf[ScheduledInstancesNetworkInterface]
   }
   
-  extension [Self <: ScheduledInstancesNetworkInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledInstancesNetworkInterface] (val x: Self) extends AnyVal {
     
     inline def setAssociatePublicIpAddress(value: Boolean): Self = StObject.set(x, "AssociatePublicIpAddress", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object StreamControllerConfig {
     __obj.asInstanceOf[StreamControllerConfig]
   }
   
-  extension [Self <: StreamControllerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamControllerConfig] (val x: Self) extends AnyVal {
     
     inline def setAutoStartLoad(value: Boolean): Self = StObject.set(x, "autoStartLoad", value.asInstanceOf[js.Any])
     

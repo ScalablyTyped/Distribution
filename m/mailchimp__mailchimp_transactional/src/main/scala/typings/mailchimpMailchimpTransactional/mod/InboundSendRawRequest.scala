@@ -36,7 +36,8 @@ object InboundSendRawRequest {
     __obj.asInstanceOf[InboundSendRawRequest]
   }
   
-  extension [Self <: InboundSendRawRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InboundSendRawRequest] (val x: Self) extends AnyVal {
     
     inline def setClient_address(value: String): Self = StObject.set(x, "client_address", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object wikiMod {
       __obj.asInstanceOf[WikifierOptions]
     }
     
-    extension [Self <: WikifierOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WikifierOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreTerminatorCase(value: Boolean): Self = StObject.set(x, "ignoreTerminatorCase", value.asInstanceOf[js.Any])
       

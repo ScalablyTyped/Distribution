@@ -62,7 +62,8 @@ object srcSelectionMod {
       __obj.asInstanceOf[MultipleSelection]
     }
     
-    extension [Self <: MultipleSelection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipleSelection] (val x: Self) extends AnyVal {
       
       inline def setDefaultSelectedKeys(value: all | js.Iterable[Key]): Self = StObject.set(x, "defaultSelectedKeys", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object srcSelectionMod {
       __obj.asInstanceOf[SingleSelection]
     }
     
-    extension [Self <: SingleSelection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingleSelection] (val x: Self) extends AnyVal {
       
       inline def setDefaultSelectedKey(value: Key): Self = StObject.set(x, "defaultSelectedKey", value.asInstanceOf[js.Any])
       
@@ -174,7 +176,8 @@ object srcSelectionMod {
       __obj.asInstanceOf[SpectrumSelectionProps]
     }
     
-    extension [Self <: SpectrumSelectionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpectrumSelectionProps] (val x: Self) extends AnyVal {
       
       inline def setSelectionStyle(value: checkbox | highlight): Self = StObject.set(x, "selectionStyle", value.asInstanceOf[js.Any])
       

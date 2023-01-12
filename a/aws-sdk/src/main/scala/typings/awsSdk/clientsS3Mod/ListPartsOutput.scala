@@ -85,7 +85,8 @@ object ListPartsOutput {
     __obj.asInstanceOf[ListPartsOutput]
   }
   
-  extension [Self <: ListPartsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPartsOutput] (val x: Self) extends AnyVal {
     
     inline def setAbortDate(value: js.Date): Self = StObject.set(x, "AbortDate", value.asInstanceOf[js.Any])
     

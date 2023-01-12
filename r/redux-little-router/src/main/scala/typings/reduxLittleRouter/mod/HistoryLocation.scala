@@ -23,7 +23,8 @@ object HistoryLocation {
     __obj.asInstanceOf[HistoryLocation]
   }
   
-  extension [Self <: HistoryLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryLocation] (val x: Self) extends AnyVal {
     
     inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

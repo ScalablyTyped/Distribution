@@ -27,7 +27,8 @@ object VisibleElementsScaleMenus {
     __obj.asInstanceOf[VisibleElementsScaleMenus]
   }
   
-  extension [Self <: VisibleElementsScaleMenus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisibleElementsScaleMenus] (val x: Self) extends AnyVal {
     
     inline def setMaxScaleMenu(value: Boolean): Self = StObject.set(x, "maxScaleMenu", value.asInstanceOf[js.Any])
     

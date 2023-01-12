@@ -34,7 +34,8 @@ object sapUiFlWriteApiFeaturesAPIMod extends Shortcut {
       __obj.asInstanceOf[FeaturesAPI]
     }
     
-    extension [Self <: FeaturesAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeaturesAPI] (val x: Self) extends AnyVal {
       
       inline def setIsKeyUser(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isKeyUser", js.Any.fromFunction0(value))
     }

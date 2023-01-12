@@ -23,7 +23,8 @@ object StorePackageUpdate {
     __obj.asInstanceOf[StorePackageUpdate]
   }
   
-  extension [Self <: StorePackageUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorePackageUpdate] (val x: Self) extends AnyVal {
     
     inline def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
     

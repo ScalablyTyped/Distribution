@@ -92,7 +92,8 @@ object DocumentOverlayCache {
     __obj.asInstanceOf[DocumentOverlayCache]
   }
   
-  extension [Self <: DocumentOverlayCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentOverlayCache] (val x: Self) extends AnyVal {
     
     inline def setGetOverlay(
       value: (PersistenceTransaction, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _DocumentKey */ Any) => PersistencePromise[Overlay | Null]

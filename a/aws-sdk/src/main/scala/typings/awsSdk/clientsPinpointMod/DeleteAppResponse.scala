@@ -15,7 +15,8 @@ object DeleteAppResponse {
     __obj.asInstanceOf[DeleteAppResponse]
   }
   
-  extension [Self <: DeleteAppResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAppResponse] (val x: Self) extends AnyVal {
     
     inline def setApplicationResponse(value: ApplicationResponse): Self = StObject.set(x, "ApplicationResponse", value.asInstanceOf[js.Any])
   }

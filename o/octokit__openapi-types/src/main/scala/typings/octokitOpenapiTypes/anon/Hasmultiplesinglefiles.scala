@@ -50,7 +50,8 @@ object Hasmultiplesinglefiles {
     __obj.asInstanceOf[Hasmultiplesinglefiles]
   }
   
-  extension [Self <: Hasmultiplesinglefiles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hasmultiplesinglefiles] (val x: Self) extends AnyVal {
     
     inline def setAccount(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any

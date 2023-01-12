@@ -16,7 +16,8 @@ object InteractiveOptions {
     __obj.asInstanceOf[InteractiveOptions]
   }
   
-  extension [Self <: InteractiveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractiveOptions] (val x: Self) extends AnyVal {
     
     inline def setAround(value: center): Self = StObject.set(x, "around", value.asInstanceOf[js.Any])
     

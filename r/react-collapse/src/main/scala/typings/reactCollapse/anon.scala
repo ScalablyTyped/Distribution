@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Collapse]
     }
     
-    extension [Self <: Collapse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Collapse] (val x: Self) extends AnyVal {
       
       inline def setCollapse(value: String): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

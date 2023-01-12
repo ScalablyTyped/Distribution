@@ -30,7 +30,8 @@ object libControlLabelMod {
       __obj.asInstanceOf[ControlLabelProps]
     }
     
-    extension [Self <: ControlLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlLabelProps] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       

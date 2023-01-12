@@ -15,7 +15,8 @@ object OperationString {
     __obj.asInstanceOf[OperationString]
   }
   
-  extension [Self <: OperationString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationString] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
   }

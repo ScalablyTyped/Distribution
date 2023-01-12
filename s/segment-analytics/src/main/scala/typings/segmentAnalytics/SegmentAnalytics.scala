@@ -320,7 +320,8 @@ object SegmentAnalytics {
       __obj.asInstanceOf[CookieOptions]
     }
     
-    extension [Self <: CookieOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieOptions] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -355,7 +356,8 @@ object SegmentAnalytics {
       __obj.asInstanceOf[GroupOptions]
     }
     
-    extension [Self <: GroupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupOptions] (val x: Self) extends AnyVal {
       
       inline def setCookie(value: KeyString): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
@@ -392,7 +394,8 @@ object SegmentAnalytics {
       __obj.asInstanceOf[InitOptions]
     }
     
-    extension [Self <: InitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
       
       inline def setCookie(value: CookieOptions): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
@@ -439,7 +442,8 @@ object SegmentAnalytics {
       __obj.asInstanceOf[MetricsOptions]
     }
     
-    extension [Self <: MetricsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetricsOptions] (val x: Self) extends AnyVal {
       
       inline def setFlushTimer(value: Double): Self = StObject.set(x, "flushTimer", value.asInstanceOf[js.Any])
       
@@ -475,7 +479,8 @@ object SegmentAnalytics {
       __obj.asInstanceOf[SegmentOpts]
     }
     
-    extension [Self <: SegmentOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentOpts] (val x: Self) extends AnyVal {
       
       inline def setAnonymousId(value: String): Self = StObject.set(x, "anonymousId", value.asInstanceOf[js.Any])
       
@@ -502,7 +507,8 @@ object SegmentAnalytics {
       __obj.asInstanceOf[StoreOptions]
     }
     
-    extension [Self <: StoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -525,7 +531,8 @@ object SegmentAnalytics {
       __obj.asInstanceOf[UserOptions]
     }
     
-    extension [Self <: UserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserOptions] (val x: Self) extends AnyVal {
       
       inline def setCookie(value: Key): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       

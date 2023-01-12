@@ -31,7 +31,8 @@ object PolymorphicDiscriminator {
     __obj.asInstanceOf[PolymorphicDiscriminator]
   }
   
-  extension [Self <: PolymorphicDiscriminator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolymorphicDiscriminator] (val x: Self) extends AnyVal {
     
     inline def setClientName(value: String): Self = StObject.set(x, "clientName", value.asInstanceOf[js.Any])
     

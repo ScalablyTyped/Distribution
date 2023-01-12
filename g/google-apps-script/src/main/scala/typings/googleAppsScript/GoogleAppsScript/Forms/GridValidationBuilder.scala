@@ -31,7 +31,8 @@ object GridValidationBuilder {
     __obj.asInstanceOf[GridValidationBuilder]
   }
   
-  extension [Self <: GridValidationBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridValidationBuilder] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: () => GridValidation): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     

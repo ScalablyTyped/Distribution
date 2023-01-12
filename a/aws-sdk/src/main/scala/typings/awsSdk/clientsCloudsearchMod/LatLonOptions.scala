@@ -40,7 +40,8 @@ object LatLonOptions {
     __obj.asInstanceOf[LatLonOptions]
   }
   
-  extension [Self <: LatLonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LatLonOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: FieldValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     

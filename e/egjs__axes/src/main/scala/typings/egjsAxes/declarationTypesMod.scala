@@ -59,7 +59,8 @@ object declarationTypesMod {
       __obj.asInstanceOf[AnimationParam]
     }
     
-    extension [Self <: AnimationParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationParam] (val x: Self) extends AnyVal {
       
       inline def setDelta(value: Axis): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
@@ -127,7 +128,8 @@ object declarationTypesMod {
       __obj.asInstanceOf[AxesEvents]
     }
     
-    extension [Self <: AxesEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesEvents] (val x: Self) extends AnyVal {
       
       inline def setAnimationEnd(value: OnAnimationEnd): Self = StObject.set(x, "animationEnd", value.asInstanceOf[js.Any])
       
@@ -199,7 +201,8 @@ object declarationTypesMod {
       __obj.asInstanceOf[ExtendedEvent]
     }
     
-    extension [Self <: ExtendedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedEvent] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -242,7 +245,8 @@ object declarationTypesMod {
       __obj.asInstanceOf[LatestInterval]
     }
     
-    extension [Self <: LatestInterval](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LatestInterval] (val x: Self) extends AnyVal {
       
       inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
       
@@ -265,7 +269,8 @@ object declarationTypesMod {
       __obj.asInstanceOf[OnAnimationEnd]
     }
     
-    extension [Self <: OnAnimationEnd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnAnimationEnd] (val x: Self) extends AnyVal {
       
       inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
     }
@@ -336,7 +341,8 @@ object declarationTypesMod {
       __obj.asInstanceOf[OnFinish]
     }
     
-    extension [Self <: OnFinish](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnFinish] (val x: Self) extends AnyVal {
       
       inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
     }
@@ -359,7 +365,8 @@ object declarationTypesMod {
       __obj.asInstanceOf[OnHold]
     }
     
-    extension [Self <: OnHold](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnHold] (val x: Self) extends AnyVal {
       
       inline def setInput(value: InputType): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
@@ -417,7 +424,8 @@ object declarationTypesMod {
       __obj.asInstanceOf[UpdateAnimationOption]
     }
     
-    extension [Self <: UpdateAnimationOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateAnimationOption] (val x: Self) extends AnyVal {
       
       inline def setDestPos(value: Axis): Self = StObject.set(x, "destPos", value.asInstanceOf[js.Any])
       

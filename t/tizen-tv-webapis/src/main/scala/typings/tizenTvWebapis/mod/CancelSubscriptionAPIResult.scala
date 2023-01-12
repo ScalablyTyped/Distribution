@@ -23,7 +23,8 @@ object CancelSubscriptionAPIResult {
     __obj.asInstanceOf[CancelSubscriptionAPIResult]
   }
   
-  extension [Self <: CancelSubscriptionAPIResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelSubscriptionAPIResult] (val x: Self) extends AnyVal {
     
     inline def setCPResult(value: String): Self = StObject.set(x, "CPResult", value.asInstanceOf[js.Any])
     

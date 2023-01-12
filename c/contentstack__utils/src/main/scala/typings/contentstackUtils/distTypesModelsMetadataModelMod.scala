@@ -45,7 +45,8 @@ object distTypesModelsMetadataModelMod {
       __obj.asInstanceOf[AssetAttributes]
     }
     
-    extension [Self <: AssetAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssetAttributes] (val x: Self) extends AnyVal {
       
       inline def `setData-sys-asset-contenttype`(value: String): Self = StObject.set(x, "data-sys-asset-contenttype", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object distTypesModelsMetadataModelMod {
       __obj.asInstanceOf[Attributes]
     }
     
-    extension [Self <: Attributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object distTypesModelsMetadataModelMod {
       __obj.asInstanceOf[EntryAttributes]
     }
     
-    extension [Self <: EntryAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryAttributes] (val x: Self) extends AnyVal {
       
       inline def `setData-sys-content-type-uid`(value: String): Self = StObject.set(x, "data-sys-content-type-uid", value.asInstanceOf[js.Any])
       
@@ -139,7 +142,8 @@ object distTypesModelsMetadataModelMod {
       __obj.asInstanceOf[Metadata]
     }
     
-    extension [Self <: Metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

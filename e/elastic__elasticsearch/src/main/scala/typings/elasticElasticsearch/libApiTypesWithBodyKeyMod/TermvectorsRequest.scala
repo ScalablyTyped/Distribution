@@ -45,7 +45,8 @@ object TermvectorsRequest {
     __obj.asInstanceOf[TermvectorsRequest[TDocument]]
   }
   
-  extension [Self <: TermvectorsRequest[?], TDocument](x: Self & TermvectorsRequest[TDocument]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TermvectorsRequest[?], TDocument] (val x: Self & TermvectorsRequest[TDocument]) extends AnyVal {
     
     inline def setBody(value: Doc[TDocument]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

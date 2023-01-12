@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[WeakMap[K, V]]
     }
     
-    extension [Self <: WeakMap[?, ?], K /* <: js.Object */, V](x: Self & (WeakMap[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WeakMap[?, ?], K /* <: js.Object */, V] (val x: Self & (WeakMap[K, V])) extends AnyVal {
       
       inline def setDelete(value: K => Boolean): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       

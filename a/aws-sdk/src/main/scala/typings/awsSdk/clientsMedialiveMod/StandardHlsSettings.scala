@@ -20,7 +20,8 @@ object StandardHlsSettings {
     __obj.asInstanceOf[StandardHlsSettings]
   }
   
-  extension [Self <: StandardHlsSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardHlsSettings] (val x: Self) extends AnyVal {
     
     inline def setAudioRenditionSets(value: string): Self = StObject.set(x, "AudioRenditionSets", value.asInstanceOf[js.Any])
     

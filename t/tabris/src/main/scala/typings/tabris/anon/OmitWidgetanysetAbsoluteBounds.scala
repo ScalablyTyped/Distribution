@@ -604,7 +604,8 @@ object OmitWidgetanysetAbsoluteBounds {
     __obj.asInstanceOf[OmitWidgetanysetAbsoluteBounds[TData]]
   }
   
-  extension [Self <: OmitWidgetanysetAbsoluteBounds[?], TData /* <: js.Object */](x: Self & OmitWidgetanysetAbsoluteBounds[TData]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitWidgetanysetAbsoluteBounds[?], TData /* <: js.Object */] (val x: Self & OmitWidgetanysetAbsoluteBounds[TData]) extends AnyVal {
     
     inline def set$getProperty(value: /* name */ String => Any): Self = StObject.set(x, "$getProperty", js.Any.fromFunction1(value))
     

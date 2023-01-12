@@ -38,7 +38,8 @@ object srcCommandsDocCliMod {
       __obj.asInstanceOf[DocCommandArgs]
     }
     
-    extension [Self <: DocCommandArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocCommandArgs] (val x: Self) extends AnyVal {
       
       inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
       

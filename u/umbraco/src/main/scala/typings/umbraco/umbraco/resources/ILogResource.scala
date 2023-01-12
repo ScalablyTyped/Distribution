@@ -93,7 +93,8 @@ object ILogResource {
     __obj.asInstanceOf[ILogResource]
   }
   
-  extension [Self <: ILogResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILogResource] (val x: Self) extends AnyVal {
     
     inline def setGetEntityLog(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "getEntityLog", js.Any.fromFunction1(value))
     

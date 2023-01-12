@@ -75,7 +75,8 @@ object TextItem {
     __obj.asInstanceOf[TextItem]
   }
   
-  extension [Self <: TextItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextItem] (val x: Self) extends AnyVal {
     
     inline def setClearValidation(value: () => TextItem): Self = StObject.set(x, "clearValidation", js.Any.fromFunction0(value))
     

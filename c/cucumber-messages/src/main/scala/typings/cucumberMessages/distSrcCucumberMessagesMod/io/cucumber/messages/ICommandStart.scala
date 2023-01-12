@@ -26,7 +26,8 @@ object ICommandStart {
     __obj.asInstanceOf[ICommandStart]
   }
   
-  extension [Self <: ICommandStart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICommandStart] (val x: Self) extends AnyVal {
     
     inline def setBaseDirectory(value: String): Self = StObject.set(x, "baseDirectory", value.asInstanceOf[js.Any])
     

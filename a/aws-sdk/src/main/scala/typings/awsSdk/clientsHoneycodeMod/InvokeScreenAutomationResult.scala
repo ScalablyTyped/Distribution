@@ -18,7 +18,8 @@ object InvokeScreenAutomationResult {
     __obj.asInstanceOf[InvokeScreenAutomationResult]
   }
   
-  extension [Self <: InvokeScreenAutomationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvokeScreenAutomationResult] (val x: Self) extends AnyVal {
     
     inline def setWorkbookCursor(value: WorkbookCursor): Self = StObject.set(x, "workbookCursor", value.asInstanceOf[js.Any])
   }

@@ -190,7 +190,8 @@ object CreateDBInstanceReadReplicaMessage {
     __obj.asInstanceOf[CreateDBInstanceReadReplicaMessage]
   }
   
-  extension [Self <: CreateDBInstanceReadReplicaMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDBInstanceReadReplicaMessage] (val x: Self) extends AnyVal {
     
     inline def setAutoMinorVersionUpgrade(value: BooleanOptional): Self = StObject.set(x, "AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
     

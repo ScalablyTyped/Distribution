@@ -26,7 +26,8 @@ object AccessReviewReviewerScope {
     __obj.asInstanceOf[AccessReviewReviewerScope]
   }
   
-  extension [Self <: AccessReviewReviewerScope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessReviewReviewerScope] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: NullableOption[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     

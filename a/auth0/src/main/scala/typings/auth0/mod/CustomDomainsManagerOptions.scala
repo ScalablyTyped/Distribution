@@ -19,7 +19,8 @@ object CustomDomainsManagerOptions {
     __obj.asInstanceOf[CustomDomainsManagerOptions]
   }
   
-  extension [Self <: CustomDomainsManagerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomDomainsManagerOptions] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

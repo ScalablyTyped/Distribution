@@ -29,7 +29,8 @@ object IObservableManager {
     __obj.asInstanceOf[IObservableManager]
   }
   
-  extension [Self <: IObservableManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObservableManager] (val x: Self) extends AnyVal {
     
     inline def setOnDeviceConnectedObservable(value: Observable[DeviceSourceType]): Self = StObject.set(x, "onDeviceConnectedObservable", value.asInstanceOf[js.Any])
     

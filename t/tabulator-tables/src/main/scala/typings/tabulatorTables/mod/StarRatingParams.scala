@@ -18,7 +18,8 @@ object StarRatingParams {
     __obj.asInstanceOf[StarRatingParams]
   }
   
-  extension [Self <: StarRatingParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StarRatingParams] (val x: Self) extends AnyVal {
     
     inline def setStars(value: Double): Self = StObject.set(x, "stars", value.asInstanceOf[js.Any])
     

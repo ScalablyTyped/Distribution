@@ -94,7 +94,8 @@ object paginationItemPaginationItemMod extends Shortcut {
       __obj.asInstanceOf[PaginationItemTypeMap[P, D]]
     }
     
-    extension [Self <: PaginationItemTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (PaginationItemTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationItemTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (PaginationItemTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: PaginationItemClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

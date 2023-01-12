@@ -117,7 +117,8 @@ object totpMod {
       __obj.asInstanceOf[EpochAvailable]
     }
     
-    extension [Self <: EpochAvailable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EpochAvailable] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -166,7 +167,8 @@ object totpMod {
       __obj.asInstanceOf[TOTPOptions_[T]]
     }
     
-    extension [Self <: TOTPOptions_[?], T](x: Self & TOTPOptions_[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TOTPOptions_[?], T] (val x: Self & TOTPOptions_[T]) extends AnyVal {
       
       inline def setEpoch(value: Double): Self = StObject.set(x, "epoch", value.asInstanceOf[js.Any])
       

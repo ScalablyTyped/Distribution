@@ -18,7 +18,8 @@ object ModelSettings {
     __obj.asInstanceOf[ModelSettings]
   }
   
-  extension [Self <: ModelSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelSettings] (val x: Self) extends AnyVal {
     
     inline def setLanguageModelName(value: ModelName): Self = StObject.set(x, "LanguageModelName", value.asInstanceOf[js.Any])
     

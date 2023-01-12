@@ -16,7 +16,8 @@ object MaxPodsConstraint {
     __obj.asInstanceOf[MaxPodsConstraint]
   }
   
-  extension [Self <: MaxPodsConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxPodsConstraint] (val x: Self) extends AnyVal {
     
     inline def setMaxPodsPerNode(value: String): Self = StObject.set(x, "maxPodsPerNode", value.asInstanceOf[js.Any])
     

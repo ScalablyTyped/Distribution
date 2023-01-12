@@ -16,7 +16,8 @@ object DeleteSheetRequest {
     __obj.asInstanceOf[DeleteSheetRequest]
   }
   
-  extension [Self <: DeleteSheetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSheetRequest] (val x: Self) extends AnyVal {
     
     inline def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     

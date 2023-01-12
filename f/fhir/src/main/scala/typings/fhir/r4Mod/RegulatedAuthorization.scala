@@ -94,7 +94,8 @@ object RegulatedAuthorization {
     __obj.asInstanceOf[RegulatedAuthorization]
   }
   
-  extension [Self <: RegulatedAuthorization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegulatedAuthorization] (val x: Self) extends AnyVal {
     
     inline def setBasis(value: js.Array[CodeableConcept]): Self = StObject.set(x, "basis", value.asInstanceOf[js.Any])
     

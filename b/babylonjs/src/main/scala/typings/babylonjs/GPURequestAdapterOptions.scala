@@ -17,7 +17,8 @@ object GPURequestAdapterOptions {
     __obj.asInstanceOf[GPURequestAdapterOptions]
   }
   
-  extension [Self <: GPURequestAdapterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPURequestAdapterOptions] (val x: Self) extends AnyVal {
     
     inline def setForceFallbackAdapter(value: Boolean): Self = StObject.set(x, "forceFallbackAdapter", value.asInstanceOf[js.Any])
     

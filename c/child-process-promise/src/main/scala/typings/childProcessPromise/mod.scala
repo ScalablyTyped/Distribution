@@ -81,7 +81,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object mod {
       __obj.asInstanceOf[PromiseResult[Enc]]
     }
     
-    extension [Self <: PromiseResult[?], Enc /* <: String | Buffer */](x: Self & PromiseResult[Enc]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseResult[?], Enc /* <: String | Buffer */] (val x: Self & PromiseResult[Enc]) extends AnyVal {
       
       inline def setChildProcess(value: ChildProcess): Self = StObject.set(x, "childProcess", value.asInstanceOf[js.Any])
       
@@ -135,7 +137,8 @@ object mod {
       __obj.asInstanceOf[SpawnPromiseResult]
     }
     
-    extension [Self <: SpawnPromiseResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpawnPromiseResult] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }

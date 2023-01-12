@@ -38,7 +38,8 @@ object FlipsnapOptions {
     __obj.asInstanceOf[FlipsnapOptions]
   }
   
-  extension [Self <: FlipsnapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlipsnapOptions] (val x: Self) extends AnyVal {
     
     inline def setDisable3d(value: Boolean): Self = StObject.set(x, "disable3d", value.asInstanceOf[js.Any])
     

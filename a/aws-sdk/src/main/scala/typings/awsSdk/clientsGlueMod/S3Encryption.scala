@@ -23,7 +23,8 @@ object S3Encryption {
     __obj.asInstanceOf[S3Encryption]
   }
   
-  extension [Self <: S3Encryption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3Encryption] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyArn(value: KmsKeyArn): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
     

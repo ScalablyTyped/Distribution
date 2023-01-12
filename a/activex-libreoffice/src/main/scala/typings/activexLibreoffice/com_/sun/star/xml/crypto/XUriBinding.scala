@@ -43,7 +43,8 @@ object XUriBinding {
     __obj.asInstanceOf[XUriBinding]
   }
   
-  extension [Self <: XUriBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUriBinding] (val x: Self) extends AnyVal {
     
     inline def setGetUriBinding(value: String => XInputStream): Self = StObject.set(x, "getUriBinding", js.Any.fromFunction1(value))
     

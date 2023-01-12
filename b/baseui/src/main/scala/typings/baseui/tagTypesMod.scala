@@ -184,7 +184,8 @@ object tagTypesMod {
       __obj.asInstanceOf[SharedPropsArg]
     }
     
-    extension [Self <: SharedPropsArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedPropsArg] (val x: Self) extends AnyVal {
       
       inline def set$clickable(value: Boolean): Self = StObject.set(x, "$clickable", value.asInstanceOf[js.Any])
       
@@ -251,7 +252,8 @@ object tagTypesMod {
       __obj.asInstanceOf[TagOverrides]
     }
     
-    extension [Self <: TagOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagOverrides] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Override[Any]): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
@@ -330,7 +332,8 @@ object tagTypesMod {
       __obj.asInstanceOf[TagProps]
     }
     
-    extension [Self <: TagProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -42,7 +42,8 @@ object srcCommandsConfigCliMod {
       __obj.asInstanceOf[ConfigCommandArgs]
     }
     
-    extension [Self <: ConfigCommandArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigCommandArgs] (val x: Self) extends AnyVal {
       
       inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       

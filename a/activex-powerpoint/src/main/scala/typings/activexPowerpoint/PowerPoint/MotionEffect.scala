@@ -46,7 +46,8 @@ object MotionEffect {
     __obj.asInstanceOf[MotionEffect]
   }
   
-  extension [Self <: MotionEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MotionEffect] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object Booted {
     __obj.asInstanceOf[Booted]
   }
   
-  extension [Self <: Booted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Booted] (val x: Self) extends AnyVal {
     
     inline def setBooted(value: Boolean): Self = StObject.set(x, "booted", value.asInstanceOf[js.Any])
     

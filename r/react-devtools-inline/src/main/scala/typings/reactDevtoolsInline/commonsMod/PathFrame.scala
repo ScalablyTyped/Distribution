@@ -19,7 +19,8 @@ object PathFrame {
     __obj.asInstanceOf[PathFrame]
   }
   
-  extension [Self <: PathFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathFrame] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

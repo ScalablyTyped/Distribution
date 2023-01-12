@@ -468,7 +468,8 @@ object libNodeMod {
       __obj.asInstanceOf[NodeErrorOptions]
     }
     
-    extension [Self <: NodeErrorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeErrorOptions] (val x: Self) extends AnyVal {
       
       inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
       
@@ -499,7 +500,8 @@ object libNodeMod {
       __obj.asInstanceOf[NodeProps]
     }
     
-    extension [Self <: NodeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeProps] (val x: Self) extends AnyVal {
       
       inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -531,7 +533,8 @@ object libNodeMod {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -560,7 +563,8 @@ object libNodeMod {
       __obj.asInstanceOf[Range]
     }
     
-    extension [Self <: Range](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -592,7 +596,8 @@ object libNodeMod {
       __obj.asInstanceOf[Source]
     }
     
-    extension [Self <: Source](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

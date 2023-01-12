@@ -15,7 +15,8 @@ object NotifyMethods {
     __obj.asInstanceOf[NotifyMethods]
   }
   
-  extension [Self <: NotifyMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifyMethods] (val x: Self) extends AnyVal {
     
     inline def setRemove(value: () => Any): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     

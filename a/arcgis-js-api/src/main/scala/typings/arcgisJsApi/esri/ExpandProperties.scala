@@ -124,7 +124,8 @@ object ExpandProperties {
     __obj.asInstanceOf[ExpandProperties]
   }
   
-  extension [Self <: ExpandProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandProperties] (val x: Self) extends AnyVal {
     
     inline def setAutoCollapse(value: Boolean): Self = StObject.set(x, "autoCollapse", value.asInstanceOf[js.Any])
     

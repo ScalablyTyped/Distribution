@@ -115,7 +115,8 @@ object mod {
         __obj.asInstanceOf[CrittersOptions]
       }
       
-      extension [Self <: CrittersOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CrittersOptions] (val x: Self) extends AnyVal {
         
         inline def setAdditionalStylesheets(value: js.Array[String]): Self = StObject.set(x, "additionalStylesheets", value.asInstanceOf[js.Any])
         

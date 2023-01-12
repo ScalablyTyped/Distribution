@@ -45,7 +45,8 @@ object internals {
       __obj.asInstanceOf[PriorityQueue[TTime]]
     }
     
-    extension [Self <: PriorityQueue[?], TTime](x: Self & PriorityQueue[TTime]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PriorityQueue[?], TTime] (val x: Self & PriorityQueue[TTime]) extends AnyVal {
       
       inline def setDequeue(value: () => ScheduledItem[TTime]): Self = StObject.set(x, "dequeue", js.Any.fromFunction0(value))
       
@@ -107,7 +108,8 @@ object internals {
       __obj.asInstanceOf[ScheduledItem[TTime]]
     }
     
-    extension [Self <: ScheduledItem[?], TTime](x: Self & ScheduledItem[TTime]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScheduledItem[?], TTime] (val x: Self & ScheduledItem[TTime]) extends AnyVal {
       
       inline def setAction(value: (IScheduler, Any) => IDisposable): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
       

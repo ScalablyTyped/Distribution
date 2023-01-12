@@ -60,7 +60,8 @@ object audio {
       __obj.asInstanceOf[AudioDeviceInfo]
     }
     
-    extension [Self <: AudioDeviceInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AudioDeviceInfo] (val x: Self) extends AnyVal {
       
       inline def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object audio {
       __obj.asInstanceOf[DeviceIdLists]
     }
     
-    extension [Self <: DeviceIdLists](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceIdLists] (val x: Self) extends AnyVal {
       
       inline def setInput(value: js.Array[String]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
@@ -193,7 +195,8 @@ object audio {
       __obj.asInstanceOf[Filter]
     }
     
-    extension [Self <: Filter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
       
       inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
@@ -223,7 +226,8 @@ object audio {
       __obj.asInstanceOf[SetDeviceProperties]
     }
     
-    extension [Self <: SetDeviceProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetDeviceProperties] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: integer): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

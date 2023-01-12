@@ -48,7 +48,8 @@ object GoogleIdentityAccesscontextmanagerV1ServicePerimeter {
     __obj.asInstanceOf[GoogleIdentityAccesscontextmanagerV1ServicePerimeter]
   }
   
-  extension [Self <: GoogleIdentityAccesscontextmanagerV1ServicePerimeter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleIdentityAccesscontextmanagerV1ServicePerimeter] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

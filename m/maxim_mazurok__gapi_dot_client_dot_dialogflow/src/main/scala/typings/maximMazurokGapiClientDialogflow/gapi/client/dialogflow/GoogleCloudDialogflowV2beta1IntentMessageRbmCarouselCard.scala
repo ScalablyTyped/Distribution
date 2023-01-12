@@ -19,7 +19,8 @@ object GoogleCloudDialogflowV2beta1IntentMessageRbmCarouselCard {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageRbmCarouselCard]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmCarouselCard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmCarouselCard] (val x: Self) extends AnyVal {
     
     inline def setCardContents(value: js.Array[GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent]): Self = StObject.set(x, "cardContents", value.asInstanceOf[js.Any])
     

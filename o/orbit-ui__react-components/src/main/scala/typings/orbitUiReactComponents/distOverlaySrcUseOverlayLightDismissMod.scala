@@ -42,7 +42,8 @@ object distOverlaySrcUseOverlayLightDismissMod {
       __obj.asInstanceOf[UseOverlayLightDismissOptions]
     }
     
-    extension [Self <: UseOverlayLightDismissOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseOverlayLightDismissOptions] (val x: Self) extends AnyVal {
       
       inline def setHideOnEscape(value: Boolean): Self = StObject.set(x, "hideOnEscape", value.asInstanceOf[js.Any])
       

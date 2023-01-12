@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[Endpoint]
     }
     
-    extension [Self <: Endpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
       
       inline def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       

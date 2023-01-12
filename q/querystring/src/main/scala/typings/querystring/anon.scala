@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[DecodeURIComponent]
     }
     
-    extension [Self <: DecodeURIComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeURIComponent] (val x: Self) extends AnyVal {
       
       inline def setDecodeURIComponent(value: js.Function): Self = StObject.set(x, "decodeURIComponent", value.asInstanceOf[js.Any])
       

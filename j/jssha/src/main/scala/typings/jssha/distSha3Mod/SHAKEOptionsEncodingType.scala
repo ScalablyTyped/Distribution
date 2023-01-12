@@ -17,7 +17,8 @@ object SHAKEOptionsEncodingType {
     __obj.asInstanceOf[SHAKEOptionsEncodingType]
   }
   
-  extension [Self <: SHAKEOptionsEncodingType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SHAKEOptionsEncodingType] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: EncodingType): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

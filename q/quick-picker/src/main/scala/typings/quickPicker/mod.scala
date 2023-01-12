@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[ItemType]
     }
     
-    extension [Self <: ItemType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemType] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -291,7 +292,8 @@ object mod {
       __obj.asInstanceOf[QuickPickerOpenOptions[T]]
     }
     
-    extension [Self <: QuickPickerOpenOptions[?], T](x: Self & QuickPickerOpenOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickPickerOpenOptions[?], T] (val x: Self & QuickPickerOpenOptions[T]) extends AnyVal {
       
       inline def setAndroidItemStyle(value: ViewStyle): Self = StObject.set(x, "androidItemStyle", value.asInstanceOf[js.Any])
       

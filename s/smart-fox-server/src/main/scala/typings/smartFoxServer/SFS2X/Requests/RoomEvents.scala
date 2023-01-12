@@ -30,7 +30,8 @@ object RoomEvents {
     __obj.asInstanceOf[RoomEvents]
   }
   
-  extension [Self <: RoomEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoomEvents] (val x: Self) extends AnyVal {
     
     inline def setAllowUserCountChance(value: Boolean): Self = StObject.set(x, "allowUserCountChance", value.asInstanceOf[js.Any])
     

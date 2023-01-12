@@ -81,7 +81,8 @@ object distLibBrowserMod {
       __obj.asInstanceOf[BrowserConfig]
     }
     
-    extension [Self <: BrowserConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserConfig] (val x: Self) extends AnyVal {
       
       inline def setProtocol(value: tcp | udp): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       

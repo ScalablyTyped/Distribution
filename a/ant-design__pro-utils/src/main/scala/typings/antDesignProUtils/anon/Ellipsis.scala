@@ -23,7 +23,8 @@ object Ellipsis {
     __obj.asInstanceOf[Ellipsis]
   }
   
-  extension [Self <: Ellipsis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ellipsis] (val x: Self) extends AnyVal {
     
     inline def setEllipsis(value: Boolean | ShowTitle): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
     

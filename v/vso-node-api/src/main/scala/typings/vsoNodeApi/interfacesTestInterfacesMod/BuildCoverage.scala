@@ -29,7 +29,8 @@ object BuildCoverage {
     __obj.asInstanceOf[BuildCoverage]
   }
   
-  extension [Self <: BuildCoverage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildCoverage] (val x: Self) extends AnyVal {
     
     inline def setCodeCoverageFileUrl(value: String): Self = StObject.set(x, "codeCoverageFileUrl", value.asInstanceOf[js.Any])
     

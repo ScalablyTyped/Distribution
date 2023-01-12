@@ -18,7 +18,8 @@ object StepOptionPoA {
     __obj.asInstanceOf[StepOptionPoA]
   }
   
-  extension [Self <: StepOptionPoA](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepOptionPoA] (val x: Self) extends AnyVal {
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     

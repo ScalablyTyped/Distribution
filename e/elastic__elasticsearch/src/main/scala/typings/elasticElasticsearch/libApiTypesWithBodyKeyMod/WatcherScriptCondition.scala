@@ -22,7 +22,8 @@ object WatcherScriptCondition {
     __obj.asInstanceOf[WatcherScriptCondition]
   }
   
-  extension [Self <: WatcherScriptCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherScriptCondition] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

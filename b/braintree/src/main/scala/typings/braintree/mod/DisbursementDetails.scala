@@ -32,7 +32,8 @@ object DisbursementDetails {
     __obj.asInstanceOf[DisbursementDetails]
   }
   
-  extension [Self <: DisbursementDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisbursementDetails] (val x: Self) extends AnyVal {
     
     inline def setDisbursementDate(value: js.Date): Self = StObject.set(x, "disbursementDate", value.asInstanceOf[js.Any])
     

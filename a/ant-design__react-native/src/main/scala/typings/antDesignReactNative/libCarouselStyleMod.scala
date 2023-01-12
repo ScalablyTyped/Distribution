@@ -45,7 +45,8 @@ object libCarouselStyleMod {
       __obj.asInstanceOf[CarouselStyle]
     }
     
-    extension [Self <: CarouselStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselStyle] (val x: Self) extends AnyVal {
       
       inline def setPagination(value: ViewStyle): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
       

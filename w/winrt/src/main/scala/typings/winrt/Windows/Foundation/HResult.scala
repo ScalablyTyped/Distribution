@@ -15,7 +15,8 @@ object HResult {
     __obj.asInstanceOf[HResult]
   }
   
-  extension [Self <: HResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HResult] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

@@ -286,7 +286,8 @@ object servicesAuroraDbRDSProxyServiceMod {
       __obj.asInstanceOf[AuroraDbRDSProxyServiceParams]
     }
     
-    extension [Self <: AuroraDbRDSProxyServiceParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuroraDbRDSProxyServiceParams] (val x: Self) extends AnyVal {
       
       inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
@@ -323,7 +324,8 @@ object servicesAuroraDbRDSProxyServiceMod {
       __obj.asInstanceOf[AuroraDbRDSProxyServiceResponse]
     }
     
-    extension [Self <: AuroraDbRDSProxyServiceResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuroraDbRDSProxyServiceResponse] (val x: Self) extends AnyVal {
       
       inline def setFields(value: js.Array[FieldPacket]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       

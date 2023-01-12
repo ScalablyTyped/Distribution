@@ -38,7 +38,8 @@ object SkipMetadata {
     __obj.asInstanceOf[SkipMetadata]
   }
   
-  extension [Self <: SkipMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkipMetadata] (val x: Self) extends AnyVal {
     
     inline def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PredictorExecutionDetails {
     __obj.asInstanceOf[PredictorExecutionDetails]
   }
   
-  extension [Self <: PredictorExecutionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredictorExecutionDetails] (val x: Self) extends AnyVal {
     
     inline def setPredictorExecutions(value: PredictorExecutions): Self = StObject.set(x, "PredictorExecutions", value.asInstanceOf[js.Any])
     

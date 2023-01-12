@@ -23,7 +23,8 @@ object GetAnomalySubscriptionsResponse {
     __obj.asInstanceOf[GetAnomalySubscriptionsResponse]
   }
   
-  extension [Self <: GetAnomalySubscriptionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAnomalySubscriptionsResponse] (val x: Self) extends AnyVal {
     
     inline def setAnomalySubscriptions(value: AnomalySubscriptions): Self = StObject.set(x, "AnomalySubscriptions", value.asInstanceOf[js.Any])
     

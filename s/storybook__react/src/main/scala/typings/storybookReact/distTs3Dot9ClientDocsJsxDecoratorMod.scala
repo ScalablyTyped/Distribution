@@ -60,7 +60,8 @@ object distTs3Dot9ClientDocsJsxDecoratorMod {
       __obj.asInstanceOf[JSXOptions]
     }
     
-    extension [Self <: JSXOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSXOptions] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String | (js.Function1[/* element */ ReactNode, String])): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       

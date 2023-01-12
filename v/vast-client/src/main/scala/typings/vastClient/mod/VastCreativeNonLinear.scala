@@ -18,7 +18,8 @@ object VastCreativeNonLinear {
     __obj.asInstanceOf[VastCreativeNonLinear]
   }
   
-  extension [Self <: VastCreativeNonLinear](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VastCreativeNonLinear] (val x: Self) extends AnyVal {
     
     inline def setVariations(value: js.Array[VastNonLinearAd]): Self = StObject.set(x, "variations", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object RenderUiTemplateResponse {
     __obj.asInstanceOf[RenderUiTemplateResponse]
   }
   
-  extension [Self <: RenderUiTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderUiTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: RenderingErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     

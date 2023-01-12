@@ -22,7 +22,8 @@ object Source {
     __obj.asInstanceOf[Source]
   }
   
-  extension [Self <: Source](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
     
     inline def setReason(value: `new` | changed | removed): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

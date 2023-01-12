@@ -30,7 +30,8 @@ object HttpHeadersItemType {
     __obj.asInstanceOf[HttpHeadersItemType]
   }
   
-  extension [Self <: HttpHeadersItemType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpHeadersItemType] (val x: Self) extends AnyVal {
     
     inline def setBinaryValue(value: js.Array[Double]): Self = StObject.set(x, "binaryValue", value.asInstanceOf[js.Any])
     

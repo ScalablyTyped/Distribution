@@ -114,7 +114,8 @@ object XFastParser {
     __obj.asInstanceOf[XFastParser]
   }
   
-  extension [Self <: XFastParser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFastParser] (val x: Self) extends AnyVal {
     
     inline def setGetNamespaceURL(value: String => String): Self = StObject.set(x, "getNamespaceURL", js.Any.fromFunction1(value))
     

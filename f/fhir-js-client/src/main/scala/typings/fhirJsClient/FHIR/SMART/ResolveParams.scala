@@ -31,7 +31,8 @@ object ResolveParams {
     __obj.asInstanceOf[ResolveParams]
   }
   
-  extension [Self <: ResolveParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveParams] (val x: Self) extends AnyVal {
     
     inline def setBundle(value: Resource): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
     

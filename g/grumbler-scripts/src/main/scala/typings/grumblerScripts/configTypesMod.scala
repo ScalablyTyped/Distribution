@@ -56,7 +56,8 @@ object configTypesMod {
       __obj.asInstanceOf[WebpackConfigOptions]
     }
     
-    extension [Self <: WebpackConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebpackConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: StringDictionary[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       

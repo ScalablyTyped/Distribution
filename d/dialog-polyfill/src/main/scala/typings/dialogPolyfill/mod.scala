@@ -38,7 +38,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DialogPolyfillType]
     }
     
-    extension [Self <: DialogPolyfillType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogPolyfillType] (val x: Self) extends AnyVal {
       
       inline def setForceRegisterDialog(value: HTMLDialogElement => Unit): Self = StObject.set(x, "forceRegisterDialog", js.Any.fromFunction1(value))
       

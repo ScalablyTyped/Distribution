@@ -23,7 +23,8 @@ object AwsCloudMapInstanceAttribute {
     __obj.asInstanceOf[AwsCloudMapInstanceAttribute]
   }
   
-  extension [Self <: AwsCloudMapInstanceAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCloudMapInstanceAttribute] (val x: Self) extends AnyVal {
     
     inline def setKey(value: AwsCloudMapInstanceAttributeKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

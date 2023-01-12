@@ -23,7 +23,8 @@ object APIGatewayTokenAuthorizerEvent {
     __obj.asInstanceOf[APIGatewayTokenAuthorizerEvent]
   }
   
-  extension [Self <: APIGatewayTokenAuthorizerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: APIGatewayTokenAuthorizerEvent] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationToken(value: String): Self = StObject.set(x, "authorizationToken", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object RegisteredEvent {
     __obj.asInstanceOf[RegisteredEvent]
   }
   
-  extension [Self <: RegisteredEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisteredEvent] (val x: Self) extends AnyVal {
     
     inline def setResponse(value: IncomingResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }

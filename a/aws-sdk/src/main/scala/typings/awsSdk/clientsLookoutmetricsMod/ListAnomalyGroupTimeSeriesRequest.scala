@@ -38,7 +38,8 @@ object ListAnomalyGroupTimeSeriesRequest {
     __obj.asInstanceOf[ListAnomalyGroupTimeSeriesRequest]
   }
   
-  extension [Self <: ListAnomalyGroupTimeSeriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAnomalyGroupTimeSeriesRequest] (val x: Self) extends AnyVal {
     
     inline def setAnomalyDetectorArn(value: Arn): Self = StObject.set(x, "AnomalyDetectorArn", value.asInstanceOf[js.Any])
     

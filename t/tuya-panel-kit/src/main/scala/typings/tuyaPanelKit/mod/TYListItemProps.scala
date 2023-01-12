@@ -238,7 +238,8 @@ object TYListItemProps {
     __obj.asInstanceOf[TYListItemProps]
   }
   
-  extension [Self <: TYListItemProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TYListItemProps] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Any): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

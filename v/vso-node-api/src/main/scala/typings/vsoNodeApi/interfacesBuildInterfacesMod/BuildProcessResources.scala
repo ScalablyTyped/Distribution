@@ -23,7 +23,8 @@ object BuildProcessResources {
     __obj.asInstanceOf[BuildProcessResources]
   }
   
-  extension [Self <: BuildProcessResources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildProcessResources] (val x: Self) extends AnyVal {
     
     inline def setEndpoints(value: js.Array[ServiceEndpointReference]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     

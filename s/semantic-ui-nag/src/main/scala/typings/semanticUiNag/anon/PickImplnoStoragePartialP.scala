@@ -23,7 +23,8 @@ object PickImplnoStoragePartialP {
     __obj.asInstanceOf[PickImplnoStoragePartialP]
   }
   
-  extension [Self <: PickImplnoStoragePartialP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplnoStoragePartialP] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

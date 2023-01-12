@@ -145,7 +145,8 @@ object libComponentsShortcutInputMod {
       __obj.asInstanceOf[IShortcutInputProps]
     }
     
-    extension [Self <: IShortcutInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShortcutInputProps] (val x: Self) extends AnyVal {
       
       inline def setClearConflicts(value: js.Function): Self = StObject.set(x, "clearConflicts", value.asInstanceOf[js.Any])
       
@@ -209,7 +210,8 @@ object libComponentsShortcutInputMod {
       __obj.asInstanceOf[IShortcutInputState]
     }
     
-    extension [Self <: IShortcutInputState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShortcutInputState] (val x: Self) extends AnyVal {
       
       inline def setCurrentChain(value: String): Self = StObject.set(x, "currentChain", value.asInstanceOf[js.Any])
       

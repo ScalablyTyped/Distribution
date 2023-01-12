@@ -33,7 +33,8 @@ object UdpSocket {
       __obj.asInstanceOf[Implementation]
     }
     
-    extension [Self <: Implementation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Implementation] (val x: Self) extends AnyVal {
       
       inline def setBind(value: (String, Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction3(value))
       
@@ -67,7 +68,8 @@ object UdpSocket {
       __obj.asInstanceOf[RecvFromInfo]
     }
     
-    extension [Self <: RecvFromInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecvFromInfo] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object UdpSocket {
       __obj.asInstanceOf[Socket]
     }
     
-    extension [Self <: Socket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Socket] (val x: Self) extends AnyVal {
       
       inline def setBind(value: (String, Double) => js.Promise[Unit]): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
       
@@ -137,7 +140,8 @@ object UdpSocket {
       __obj.asInstanceOf[SocketInfo]
     }
     
-    extension [Self <: SocketInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketInfo] (val x: Self) extends AnyVal {
       
       inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
       

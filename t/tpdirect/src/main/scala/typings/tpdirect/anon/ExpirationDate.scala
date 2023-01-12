@@ -20,7 +20,8 @@ object ExpirationDate {
     __obj.asInstanceOf[ExpirationDate]
   }
   
-  extension [Self <: ExpirationDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpirationDate] (val x: Self) extends AnyVal {
     
     inline def setCcv(value: elementObject): Self = StObject.set(x, "ccv", value.asInstanceOf[js.Any])
     

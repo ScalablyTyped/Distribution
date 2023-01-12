@@ -671,7 +671,8 @@ object ContentTagProps {
     __obj.asInstanceOf[ContentTagProps]
   }
   
-  extension [Self <: ContentTagProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentTagProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

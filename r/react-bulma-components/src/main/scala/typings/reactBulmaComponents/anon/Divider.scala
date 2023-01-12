@@ -27,7 +27,8 @@ object Divider {
     __obj.asInstanceOf[Divider]
   }
   
-  extension [Self <: Divider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Divider] (val x: Self) extends AnyVal {
     
     inline def setDivider(value: Omit[ElementProps[js.Object, hr], renderAs] => ReactElement): Self = StObject.set(x, "Divider", js.Any.fromFunction1(value))
     

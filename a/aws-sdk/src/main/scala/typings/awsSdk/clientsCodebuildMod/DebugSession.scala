@@ -23,7 +23,8 @@ object DebugSession {
     __obj.asInstanceOf[DebugSession]
   }
   
-  extension [Self <: DebugSession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugSession] (val x: Self) extends AnyVal {
     
     inline def setSessionEnabled(value: WrapperBoolean): Self = StObject.set(x, "sessionEnabled", value.asInstanceOf[js.Any])
     

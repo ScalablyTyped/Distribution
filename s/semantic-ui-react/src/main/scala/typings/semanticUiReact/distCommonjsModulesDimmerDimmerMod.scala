@@ -83,7 +83,8 @@ object distCommonjsModulesDimmerDimmerMod {
       __obj.asInstanceOf[StrictDimmerProps]
     }
     
-    extension [Self <: StrictDimmerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictDimmerProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

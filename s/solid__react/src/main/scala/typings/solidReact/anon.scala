@@ -107,7 +107,8 @@ object anon {
       __obj.asInstanceOf[ClassName]
     }
     
-    extension [Self <: ClassName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object anon {
       __obj.asInstanceOf[Src]
     }
     
-    extension [Self <: Src](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Src] (val x: Self) extends AnyVal {
       
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     }
@@ -143,7 +145,8 @@ object anon {
       __obj.asInstanceOf[Subscribe]
     }
     
-    extension [Self <: Subscribe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscribe] (val x: Self) extends AnyVal {
       
       inline def setSubscribe(value: Asterisk | String | js.Array[String]): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
       
@@ -686,7 +689,8 @@ object anon {
       __obj.asInstanceOf[hrefstringHTMLAttributesH]
     }
     
-    extension [Self <: hrefstringHTMLAttributesH](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: hrefstringHTMLAttributesH] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1931,7 +1935,8 @@ object anon {
       __obj.asInstanceOf[srcstringdefaultSrcstring]
     }
     
-    extension [Self <: srcstringdefaultSrcstring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: srcstringdefaultSrcstring] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

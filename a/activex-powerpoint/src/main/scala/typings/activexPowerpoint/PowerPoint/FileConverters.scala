@@ -21,7 +21,8 @@ object FileConverters {
     __obj.asInstanceOf[FileConverters]
   }
   
-  extension [Self <: FileConverters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileConverters] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

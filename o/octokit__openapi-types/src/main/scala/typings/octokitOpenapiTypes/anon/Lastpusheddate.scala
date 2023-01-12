@@ -18,7 +18,8 @@ object Lastpusheddate {
     __obj.asInstanceOf[Lastpusheddate]
   }
   
-  extension [Self <: Lastpusheddate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lastpusheddate] (val x: Self) extends AnyVal {
     
     inline def setLast_pushed_date(value: String): Self = StObject.set(x, "last_pushed_date", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object srcComponentsPanelMod extends Shortcut {
       __obj.asInstanceOf[PanelBlockProps]
     }
     
-    extension [Self <: PanelBlockProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelBlockProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object srcComponentsPanelMod extends Shortcut {
       __obj.asInstanceOf[PanelProps]
     }
     
-    extension [Self <: PanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -64,7 +66,8 @@ object srcComponentsPanelMod extends Shortcut {
       __obj.asInstanceOf[PanelTabProps]
     }
     
-    extension [Self <: PanelTabProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelTabProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object WorkloadsConfig {
     __obj.asInstanceOf[WorkloadsConfig]
   }
   
-  extension [Self <: WorkloadsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkloadsConfig] (val x: Self) extends AnyVal {
     
     inline def setScheduler(value: SchedulerResource): Self = StObject.set(x, "scheduler", value.asInstanceOf[js.Any])
     

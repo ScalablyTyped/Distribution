@@ -18,7 +18,8 @@ object ConfigSnapshotDeliveryProperties {
     __obj.asInstanceOf[ConfigSnapshotDeliveryProperties]
   }
   
-  extension [Self <: ConfigSnapshotDeliveryProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigSnapshotDeliveryProperties] (val x: Self) extends AnyVal {
     
     inline def setDeliveryFrequency(value: MaximumExecutionFrequency): Self = StObject.set(x, "deliveryFrequency", value.asInstanceOf[js.Any])
     

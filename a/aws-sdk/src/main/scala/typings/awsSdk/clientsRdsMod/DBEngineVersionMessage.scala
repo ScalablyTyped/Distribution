@@ -23,7 +23,8 @@ object DBEngineVersionMessage {
     __obj.asInstanceOf[DBEngineVersionMessage]
   }
   
-  extension [Self <: DBEngineVersionMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBEngineVersionMessage] (val x: Self) extends AnyVal {
     
     inline def setDBEngineVersions(value: DBEngineVersionList): Self = StObject.set(x, "DBEngineVersions", value.asInstanceOf[js.Any])
     

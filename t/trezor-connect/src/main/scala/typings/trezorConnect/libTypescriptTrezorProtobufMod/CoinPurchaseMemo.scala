@@ -21,7 +21,8 @@ object CoinPurchaseMemo {
     __obj.asInstanceOf[CoinPurchaseMemo]
   }
   
-  extension [Self <: CoinPurchaseMemo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoinPurchaseMemo] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

@@ -801,7 +801,8 @@ object distCommonjsCollectionsFormFormInputMod extends Shortcut {
       __obj.asInstanceOf[StrictFormInputProps]
     }
     
-    extension [Self <: StrictFormInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictFormInputProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object SunburstClickEvent {
     __obj.asInstanceOf[SunburstClickEvent]
   }
   
-  extension [Self <: SunburstClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SunburstClickEvent] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: MouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

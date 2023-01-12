@@ -381,7 +381,8 @@ object modifier {
       __obj.asInstanceOf[IAnimation]
     }
     
-    extension [Self <: IAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAnimation] (val x: Self) extends AnyVal {
       
       inline def setAddAfterListener(value: (js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any]) => Unit): Self = StObject.set(x, "addAfterListener", js.Any.fromFunction4(value))
       
@@ -637,7 +638,8 @@ object modifier {
       __obj.asInstanceOf[IHighlight]
     }
     
-    extension [Self <: IHighlight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHighlight] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -739,7 +741,8 @@ object modifier {
       __obj.asInstanceOf[IModifier]
     }
     
-    extension [Self <: IModifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModifier] (val x: Self) extends AnyVal {
       
       inline def setGetNext(value: () => IModifier): Self = StObject.set(x, "getNext", js.Any.fromFunction0(value))
       

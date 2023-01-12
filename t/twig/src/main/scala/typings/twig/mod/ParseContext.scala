@@ -24,7 +24,8 @@ object ParseContext {
     __obj.asInstanceOf[ParseContext]
   }
   
-  extension [Self <: ParseContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseContext] (val x: Self) extends AnyVal {
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     

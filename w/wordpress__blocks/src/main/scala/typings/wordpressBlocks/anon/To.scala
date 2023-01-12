@@ -25,7 +25,8 @@ object To {
     __obj.asInstanceOf[To[T]]
   }
   
-  extension [Self <: To[?], T /* <: Record[String, Any] */](x: Self & To[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: To[?], T /* <: Record[String, Any] */] (val x: Self & To[T]) extends AnyVal {
     
     inline def setFrom(value: js.Array[Transform[T]]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

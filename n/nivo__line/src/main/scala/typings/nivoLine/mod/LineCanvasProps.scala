@@ -132,7 +132,8 @@ object LineCanvasProps {
     __obj.asInstanceOf[LineCanvasProps]
   }
   
-  extension [Self <: LineCanvasProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineCanvasProps] (val x: Self) extends AnyVal {
     
     inline def setAreaBaselineValue(value: DatumValue): Self = StObject.set(x, "areaBaselineValue", value.asInstanceOf[js.Any])
     

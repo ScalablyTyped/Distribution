@@ -21,7 +21,8 @@ object srcNgtscImportsSrcReexportMod {
       __obj.asInstanceOf[Reexport]
     }
     
-    extension [Self <: Reexport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reexport] (val x: Self) extends AnyVal {
       
       inline def setAsAlias(value: String): Self = StObject.set(x, "asAlias", value.asInstanceOf[js.Any])
       

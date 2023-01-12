@@ -28,7 +28,8 @@ object BinmobilefullhdtouchLimit {
     __obj.asInstanceOf[BinmobilefullhdtouchLimit]
   }
   
-  extension [Self <: BinmobilefullhdtouchLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinmobilefullhdtouchLimit] (val x: Self) extends AnyVal {
     
     inline def setDesktop(value: ResponsiveBreakpointProps): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object CreateCodeReviewRequest {
     __obj.asInstanceOf[CreateCodeReviewRequest]
   }
   
-  extension [Self <: CreateCodeReviewRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCodeReviewRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

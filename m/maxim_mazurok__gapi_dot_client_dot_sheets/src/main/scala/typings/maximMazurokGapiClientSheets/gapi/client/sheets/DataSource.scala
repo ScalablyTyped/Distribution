@@ -28,7 +28,8 @@ object DataSource {
     __obj.asInstanceOf[DataSource]
   }
   
-  extension [Self <: DataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
     
     inline def setCalculatedColumns(value: js.Array[DataSourceColumn]): Self = StObject.set(x, "calculatedColumns", value.asInstanceOf[js.Any])
     

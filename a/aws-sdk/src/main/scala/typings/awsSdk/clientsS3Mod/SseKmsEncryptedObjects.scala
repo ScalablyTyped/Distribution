@@ -18,7 +18,8 @@ object SseKmsEncryptedObjects {
     __obj.asInstanceOf[SseKmsEncryptedObjects]
   }
   
-  extension [Self <: SseKmsEncryptedObjects](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SseKmsEncryptedObjects] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: SseKmsEncryptedObjectsStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }

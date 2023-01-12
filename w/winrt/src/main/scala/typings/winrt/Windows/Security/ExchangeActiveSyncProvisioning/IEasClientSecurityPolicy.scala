@@ -45,7 +45,8 @@ object IEasClientSecurityPolicy {
     __obj.asInstanceOf[IEasClientSecurityPolicy]
   }
   
-  extension [Self <: IEasClientSecurityPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEasClientSecurityPolicy] (val x: Self) extends AnyVal {
     
     inline def setApplyAsync(value: () => IAsyncOperation[EasComplianceResults]): Self = StObject.set(x, "applyAsync", js.Any.fromFunction0(value))
     

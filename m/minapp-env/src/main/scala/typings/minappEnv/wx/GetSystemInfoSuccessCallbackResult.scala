@@ -88,7 +88,8 @@ object GetSystemInfoSuccessCallbackResult {
     __obj.asInstanceOf[GetSystemInfoSuccessCallbackResult]
   }
   
-  extension [Self <: GetSystemInfoSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSystemInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setBenchmarkLevel(value: Double): Self = StObject.set(x, "benchmarkLevel", value.asInstanceOf[js.Any])
     

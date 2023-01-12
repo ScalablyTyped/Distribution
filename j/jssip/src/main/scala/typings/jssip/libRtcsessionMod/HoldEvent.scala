@@ -15,7 +15,8 @@ object HoldEvent {
     __obj.asInstanceOf[HoldEvent]
   }
   
-  extension [Self <: HoldEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoldEvent] (val x: Self) extends AnyVal {
     
     inline def setOriginator(value: Originator): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
   }

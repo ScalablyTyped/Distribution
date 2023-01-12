@@ -310,7 +310,8 @@ object IFieldObject {
     __obj.asInstanceOf[IFieldObject]
   }
   
-  extension [Self <: IFieldObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFieldObject] (val x: Self) extends AnyVal {
     
     inline def setAsyncValidators(value: StringDictionary[String | IExpressionFunction | IValidator]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
     

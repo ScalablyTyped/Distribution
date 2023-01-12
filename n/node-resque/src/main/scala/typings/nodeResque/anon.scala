@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Args]
     }
     
-    extension [Self <: Args](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[RTimestamp]
     }
     
-    extension [Self <: RTimestamp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RTimestamp] (val x: Self) extends AnyVal {
       
       inline def setRTimestamp(value: Double): Self = StObject.set(x, "rTimestamp", value.asInstanceOf[js.Any])
       

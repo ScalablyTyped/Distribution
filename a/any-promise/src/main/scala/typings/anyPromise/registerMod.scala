@@ -45,7 +45,8 @@ object registerMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object registerMod {
       __obj.asInstanceOf[Register]
     }
     
-    extension [Self <: Register](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Register] (val x: Self) extends AnyVal {
       
       inline def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
       

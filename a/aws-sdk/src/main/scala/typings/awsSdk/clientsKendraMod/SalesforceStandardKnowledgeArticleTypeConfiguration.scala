@@ -28,7 +28,8 @@ object SalesforceStandardKnowledgeArticleTypeConfiguration {
     __obj.asInstanceOf[SalesforceStandardKnowledgeArticleTypeConfiguration]
   }
   
-  extension [Self <: SalesforceStandardKnowledgeArticleTypeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SalesforceStandardKnowledgeArticleTypeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDocumentDataFieldName(value: DataSourceFieldName): Self = StObject.set(x, "DocumentDataFieldName", value.asInstanceOf[js.Any])
     

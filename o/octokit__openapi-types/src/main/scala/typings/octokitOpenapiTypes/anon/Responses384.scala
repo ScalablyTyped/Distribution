@@ -17,7 +17,8 @@ object Responses384 {
     __obj.asInstanceOf[Responses384]
   }
   
-  extension [Self <: Responses384](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses384] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: Path348QueryPage): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

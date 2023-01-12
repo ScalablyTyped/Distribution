@@ -21,7 +21,8 @@ object IASTSpan {
     __obj.asInstanceOf[IASTSpan]
   }
   
-  extension [Self <: IASTSpan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IASTSpan] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: () => Double): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     

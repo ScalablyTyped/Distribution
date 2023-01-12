@@ -38,7 +38,8 @@ object ResourceQuotas {
     __obj.asInstanceOf[ResourceQuotas]
   }
   
-  extension [Self <: ResourceQuotas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceQuotas] (val x: Self) extends AnyVal {
     
     inline def setApplicationQuota(value: ResourceQuota): Self = StObject.set(x, "ApplicationQuota", value.asInstanceOf[js.Any])
     

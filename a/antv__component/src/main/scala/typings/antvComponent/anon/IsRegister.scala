@@ -84,7 +84,8 @@ object IsRegister {
     __obj.asInstanceOf[IsRegister]
   }
   
-  extension [Self <: IsRegister](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsRegister] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

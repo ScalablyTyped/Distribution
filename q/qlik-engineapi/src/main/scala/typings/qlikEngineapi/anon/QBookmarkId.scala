@@ -17,7 +17,8 @@ object QBookmarkId {
     __obj.asInstanceOf[QBookmarkId]
   }
   
-  extension [Self <: QBookmarkId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QBookmarkId] (val x: Self) extends AnyVal {
     
     inline def setQBookmarkId(value: String): Self = StObject.set(x, "qBookmarkId", value.asInstanceOf[js.Any])
     

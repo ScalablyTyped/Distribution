@@ -28,7 +28,8 @@ object BlueGreenDeploymentConfiguration {
     __obj.asInstanceOf[BlueGreenDeploymentConfiguration]
   }
   
-  extension [Self <: BlueGreenDeploymentConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlueGreenDeploymentConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDeploymentReadyOption(value: DeploymentReadyOption): Self = StObject.set(x, "deploymentReadyOption", value.asInstanceOf[js.Any])
     

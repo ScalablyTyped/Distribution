@@ -27,7 +27,8 @@ object BuildingExplorerViewModelProperties {
     __obj.asInstanceOf[BuildingExplorerViewModelProperties]
   }
   
-  extension [Self <: BuildingExplorerViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildingExplorerViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setLayers(value: CollectionProperties[BuildingSceneLayerProperties]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     

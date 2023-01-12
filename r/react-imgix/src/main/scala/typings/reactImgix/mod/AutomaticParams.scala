@@ -15,7 +15,8 @@ object AutomaticParams {
     __obj.asInstanceOf[AutomaticParams]
   }
   
-  extension [Self <: AutomaticParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutomaticParams] (val x: Self) extends AnyVal {
     
     inline def setAuto(value: ImgixParamType): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     

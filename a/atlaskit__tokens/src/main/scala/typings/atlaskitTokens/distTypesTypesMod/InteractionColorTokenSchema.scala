@@ -16,7 +16,8 @@ object InteractionColorTokenSchema {
     __obj.asInstanceOf[InteractionColorTokenSchema[BaseToken]]
   }
   
-  extension [Self <: InteractionColorTokenSchema[?], BaseToken](x: Self & InteractionColorTokenSchema[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractionColorTokenSchema[?], BaseToken] (val x: Self & InteractionColorTokenSchema[BaseToken]) extends AnyVal {
     
     inline def setColor(value: Interaction10[BaseToken]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
   }

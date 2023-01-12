@@ -51,7 +51,8 @@ object StowBarInitially {
     __obj.asInstanceOf[StowBarInitially]
   }
   
-  extension [Self <: StowBarInitially](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StowBarInitially] (val x: Self) extends AnyVal {
     
     inline def setStowBarInitially(value: Boolean | Double): Self = StObject.set(x, "stowBarInitially", value.asInstanceOf[js.Any])
     

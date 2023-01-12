@@ -28,7 +28,8 @@ object ListDecoderManifestsRequest {
     __obj.asInstanceOf[ListDecoderManifestsRequest]
   }
   
-  extension [Self <: ListDecoderManifestsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDecoderManifestsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: maxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

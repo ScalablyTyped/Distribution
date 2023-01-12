@@ -31,7 +31,8 @@ object GooglePrivacyDlpV2DateShiftConfig {
     __obj.asInstanceOf[GooglePrivacyDlpV2DateShiftConfig]
   }
   
-  extension [Self <: GooglePrivacyDlpV2DateShiftConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2DateShiftConfig] (val x: Self) extends AnyVal {
     
     inline def setContext(value: GooglePrivacyDlpV2FieldId): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object IPolicyInformation {
     __obj.asInstanceOf[IPolicyInformation]
   }
   
-  extension [Self <: IPolicyInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPolicyInformation] (val x: Self) extends AnyVal {
     
     inline def setPolicyIdentifier(value: String): Self = StObject.set(x, "policyIdentifier", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object distResponseDeviceCodeResponseMod {
       __obj.asInstanceOf[DeviceCodeResponse]
     }
     
-    extension [Self <: DeviceCodeResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceCodeResponse] (val x: Self) extends AnyVal {
       
       inline def setDeviceCode(value: String): Self = StObject.set(x, "deviceCode", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object distResponseDeviceCodeResponseMod {
       __obj.asInstanceOf[ServerDeviceCodeResponse]
     }
     
-    extension [Self <: ServerDeviceCodeResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerDeviceCodeResponse] (val x: Self) extends AnyVal {
       
       inline def setDevice_code(value: String): Self = StObject.set(x, "device_code", value.asInstanceOf[js.Any])
       

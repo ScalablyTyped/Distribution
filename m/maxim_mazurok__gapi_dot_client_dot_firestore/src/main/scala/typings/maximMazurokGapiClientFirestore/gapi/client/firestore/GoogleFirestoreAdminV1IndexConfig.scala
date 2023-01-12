@@ -34,7 +34,8 @@ object GoogleFirestoreAdminV1IndexConfig {
     __obj.asInstanceOf[GoogleFirestoreAdminV1IndexConfig]
   }
   
-  extension [Self <: GoogleFirestoreAdminV1IndexConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleFirestoreAdminV1IndexConfig] (val x: Self) extends AnyVal {
     
     inline def setAncestorField(value: String): Self = StObject.set(x, "ancestorField", value.asInstanceOf[js.Any])
     

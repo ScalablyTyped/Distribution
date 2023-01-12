@@ -28,7 +28,8 @@ object UpdateReportPlanOutput {
     __obj.asInstanceOf[UpdateReportPlanOutput]
   }
   
-  extension [Self <: UpdateReportPlanOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateReportPlanOutput] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

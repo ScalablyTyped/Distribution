@@ -69,7 +69,8 @@ object Volta {
          with `type`
   }
   
-  extension [Self <: Volta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Volta] (val x: Self) extends AnyVal {
     
     inline def setDraw(value: (Stave, Double) => Volta): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
     

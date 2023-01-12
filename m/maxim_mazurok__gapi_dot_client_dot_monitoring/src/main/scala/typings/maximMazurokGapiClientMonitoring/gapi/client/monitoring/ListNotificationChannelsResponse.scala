@@ -25,7 +25,8 @@ object ListNotificationChannelsResponse {
     __obj.asInstanceOf[ListNotificationChannelsResponse]
   }
   
-  extension [Self <: ListNotificationChannelsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNotificationChannelsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

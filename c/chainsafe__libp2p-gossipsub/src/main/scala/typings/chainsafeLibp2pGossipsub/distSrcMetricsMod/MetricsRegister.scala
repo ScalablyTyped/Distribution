@@ -23,7 +23,8 @@ object MetricsRegister {
     __obj.asInstanceOf[MetricsRegister]
   }
   
-  extension [Self <: MetricsRegister](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricsRegister] (val x: Self) extends AnyVal {
     
     inline def setAvgMinMax(value: AvgMinMaxConfig[Any] => AvgMinMax[Any]): Self = StObject.set(x, "avgMinMax", js.Any.fromFunction1(value))
     

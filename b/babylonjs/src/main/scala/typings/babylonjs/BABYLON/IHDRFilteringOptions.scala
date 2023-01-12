@@ -26,7 +26,8 @@ object IHDRFilteringOptions {
     __obj.asInstanceOf[IHDRFilteringOptions]
   }
   
-  extension [Self <: IHDRFilteringOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHDRFilteringOptions] (val x: Self) extends AnyVal {
     
     inline def setHdrScale(value: Double): Self = StObject.set(x, "hdrScale", value.asInstanceOf[js.Any])
     

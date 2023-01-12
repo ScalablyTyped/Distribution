@@ -37,7 +37,8 @@ object SettlementReport {
     __obj.asInstanceOf[SettlementReport]
   }
   
-  extension [Self <: SettlementReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettlementReport] (val x: Self) extends AnyVal {
     
     inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     

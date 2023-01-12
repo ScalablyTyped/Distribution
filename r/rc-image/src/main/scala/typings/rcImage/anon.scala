@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Close]
     }
     
-    extension [Self <: Close](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Close] (val x: Self) extends AnyVal {
       
       inline def setClose(value: ReactNode): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

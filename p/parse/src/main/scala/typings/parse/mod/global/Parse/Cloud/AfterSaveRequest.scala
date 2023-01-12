@@ -19,7 +19,8 @@ object AfterSaveRequest {
     __obj.asInstanceOf[AfterSaveRequest[T]]
   }
   
-  extension [Self <: AfterSaveRequest[?], T](x: Self & AfterSaveRequest[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AfterSaveRequest[?], T] (val x: Self & AfterSaveRequest[T]) extends AnyVal {
     
     inline def setContext(value: Record[String, Any]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
   }

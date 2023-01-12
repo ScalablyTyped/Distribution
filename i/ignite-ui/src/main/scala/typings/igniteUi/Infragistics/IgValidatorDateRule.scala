@@ -51,7 +51,8 @@ object IgValidatorDateRule {
     __obj.asInstanceOf[IgValidatorDateRule]
   }
   
-  extension [Self <: IgValidatorDateRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgValidatorDateRule] (val x: Self) extends AnyVal {
     
     inline def setFormatMessage(value: String => String): Self = StObject.set(x, "formatMessage", js.Any.fromFunction1(value))
     

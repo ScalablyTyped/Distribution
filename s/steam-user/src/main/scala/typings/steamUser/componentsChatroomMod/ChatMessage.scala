@@ -34,7 +34,8 @@ object ChatMessage {
     __obj.asInstanceOf[ChatMessage]
   }
   
-  extension [Self <: ChatMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatMessage] (val x: Self) extends AnyVal {
     
     inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object PartialStyleRulesSnackbar {
     __obj.asInstanceOf[PartialStyleRulesSnackbar]
   }
   
-  extension [Self <: PartialStyleRulesSnackbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesSnackbar] (val x: Self) extends AnyVal {
     
     inline def setAnchorOriginBottomCenter(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

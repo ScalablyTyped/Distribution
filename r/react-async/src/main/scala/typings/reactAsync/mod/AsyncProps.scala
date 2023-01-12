@@ -18,7 +18,8 @@ object AsyncProps {
     __obj.asInstanceOf[AsyncProps[T]]
   }
   
-  extension [Self <: AsyncProps[?], T](x: Self & AsyncProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncProps[?], T] (val x: Self & AsyncProps[T]) extends AnyVal {
     
     inline def setChildren(value: AsyncChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

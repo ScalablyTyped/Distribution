@@ -33,7 +33,8 @@ object ListDomainsRequest {
     __obj.asInstanceOf[ListDomainsRequest]
   }
   
-  extension [Self <: ListDomainsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDomainsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilterConditions(value: FilterConditions): Self = StObject.set(x, "FilterConditions", value.asInstanceOf[js.Any])
     

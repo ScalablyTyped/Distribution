@@ -19,7 +19,8 @@ object InvideoPosition {
     __obj.asInstanceOf[InvideoPosition]
   }
   
-  extension [Self <: InvideoPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvideoPosition] (val x: Self) extends AnyVal {
     
     inline def setCornerPosition(value: String): Self = StObject.set(x, "cornerPosition", value.asInstanceOf[js.Any])
     

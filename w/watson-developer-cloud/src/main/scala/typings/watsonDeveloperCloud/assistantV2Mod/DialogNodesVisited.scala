@@ -23,7 +23,8 @@ object DialogNodesVisited {
     __obj.asInstanceOf[DialogNodesVisited]
   }
   
-  extension [Self <: DialogNodesVisited](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogNodesVisited] (val x: Self) extends AnyVal {
     
     inline def setConditions(value: String): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     

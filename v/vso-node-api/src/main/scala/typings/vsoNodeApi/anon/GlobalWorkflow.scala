@@ -17,7 +17,8 @@ object GlobalWorkflow {
     __obj.asInstanceOf[GlobalWorkflow]
   }
   
-  extension [Self <: GlobalWorkflow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalWorkflow] (val x: Self) extends AnyVal {
     
     inline def setGlobalWorkflow(value: scala.Double): Self = StObject.set(x, "globalWorkflow", value.asInstanceOf[js.Any])
     

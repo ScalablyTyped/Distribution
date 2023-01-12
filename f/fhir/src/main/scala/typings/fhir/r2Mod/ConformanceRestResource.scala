@@ -100,7 +100,8 @@ object ConformanceRestResource {
     __obj.asInstanceOf[ConformanceRestResource]
   }
   
-  extension [Self <: ConformanceRestResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConformanceRestResource] (val x: Self) extends AnyVal {
     
     inline def setConditionalCreate(value: Boolean): Self = StObject.set(x, "conditionalCreate", value.asInstanceOf[js.Any])
     

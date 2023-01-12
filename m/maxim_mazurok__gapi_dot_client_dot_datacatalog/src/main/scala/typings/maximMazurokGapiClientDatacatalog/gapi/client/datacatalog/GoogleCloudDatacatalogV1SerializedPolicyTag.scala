@@ -25,7 +25,8 @@ object GoogleCloudDatacatalogV1SerializedPolicyTag {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1SerializedPolicyTag]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1SerializedPolicyTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1SerializedPolicyTag] (val x: Self) extends AnyVal {
     
     inline def setChildPolicyTags(value: js.Array[GoogleCloudDatacatalogV1SerializedPolicyTag]): Self = StObject.set(x, "childPolicyTags", value.asInstanceOf[js.Any])
     

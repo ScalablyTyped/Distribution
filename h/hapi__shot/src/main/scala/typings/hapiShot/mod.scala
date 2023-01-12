@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[InjectedRequest]
     }
     
-    extension [Self <: InjectedRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectedRequest] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: MockSocket): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object mod {
       __obj.asInstanceOf[PartialURL]
     }
     
-    extension [Self <: PartialURL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialURL] (val x: Self) extends AnyVal {
       
       inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
@@ -196,7 +198,8 @@ object mod {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
       
@@ -282,7 +285,8 @@ object mod {
       __obj.asInstanceOf[ResponseObject]
     }
     
-    extension [Self <: ResponseObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseObject] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

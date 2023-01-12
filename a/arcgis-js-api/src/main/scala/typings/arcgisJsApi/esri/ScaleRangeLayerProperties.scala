@@ -31,7 +31,8 @@ object ScaleRangeLayerProperties {
     __obj.asInstanceOf[ScaleRangeLayerProperties]
   }
   
-  extension [Self <: ScaleRangeLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleRangeLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
     

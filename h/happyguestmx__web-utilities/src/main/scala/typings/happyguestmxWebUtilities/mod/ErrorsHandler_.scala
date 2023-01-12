@@ -15,7 +15,8 @@ object ErrorsHandler_ {
     __obj.asInstanceOf[ErrorsHandler_]
   }
   
-  extension [Self <: ErrorsHandler_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorsHandler_] (val x: Self) extends AnyVal {
     
     inline def setCaolanFormErrorHandler(value: FormError => FormErrorHandlerOutput): Self = StObject.set(x, "caolanFormErrorHandler", js.Any.fromFunction1(value))
   }

@@ -21,7 +21,8 @@ object XCallback {
     __obj.asInstanceOf[XCallback]
   }
   
-  extension [Self <: XCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCallback] (val x: Self) extends AnyVal {
     
     inline def setNotify_(value: Any => Unit): Self = StObject.set(x, "notify", js.Any.fromFunction1(value))
   }

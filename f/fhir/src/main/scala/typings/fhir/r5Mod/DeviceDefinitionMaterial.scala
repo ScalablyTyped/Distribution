@@ -34,7 +34,8 @@ object DeviceDefinitionMaterial {
     __obj.asInstanceOf[DeviceDefinitionMaterial]
   }
   
-  extension [Self <: DeviceDefinitionMaterial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceDefinitionMaterial] (val x: Self) extends AnyVal {
     
     inline def setAllergenicIndicator(value: Boolean): Self = StObject.set(x, "allergenicIndicator", value.asInstanceOf[js.Any])
     

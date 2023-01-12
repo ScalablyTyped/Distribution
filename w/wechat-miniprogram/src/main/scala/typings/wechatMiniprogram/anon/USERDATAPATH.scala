@@ -15,7 +15,8 @@ object USERDATAPATH {
     __obj.asInstanceOf[USERDATAPATH]
   }
   
-  extension [Self <: USERDATAPATH](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: USERDATAPATH] (val x: Self) extends AnyVal {
     
     inline def setUSER_DATA_PATH(value: String): Self = StObject.set(x, "USER_DATA_PATH", value.asInstanceOf[js.Any])
   }

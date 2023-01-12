@@ -91,7 +91,8 @@ object Controllers {
       __obj.asInstanceOf[b2BuoyancyController]
     }
     
-    extension [Self <: b2BuoyancyController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: b2BuoyancyController] (val x: Self) extends AnyVal {
       
       inline def setAngularDrag(value: Double): Self = StObject.set(x, "angularDrag", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object Controllers {
       __obj.asInstanceOf[b2ConstantAccelController]
     }
     
-    extension [Self <: b2ConstantAccelController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: b2ConstantAccelController] (val x: Self) extends AnyVal {
       
       inline def setA(value: b2Vec2): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
     }
@@ -175,7 +177,8 @@ object Controllers {
       __obj.asInstanceOf[b2ConstantForceController]
     }
     
-    extension [Self <: b2ConstantForceController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: b2ConstantForceController] (val x: Self) extends AnyVal {
       
       inline def setA(value: b2Vec2): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
     }
@@ -258,7 +261,8 @@ object Controllers {
       __obj.asInstanceOf[b2Controller]
     }
     
-    extension [Self <: b2Controller](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: b2Controller] (val x: Self) extends AnyVal {
       
       inline def setAddBody(value: b2Body => Unit): Self = StObject.set(x, "AddBody", js.Any.fromFunction1(value))
       
@@ -328,7 +332,8 @@ object Controllers {
       __obj.asInstanceOf[b2ControllerEdge]
     }
     
-    extension [Self <: b2ControllerEdge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: b2ControllerEdge] (val x: Self) extends AnyVal {
       
       inline def setBody(value: b2Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -379,7 +384,8 @@ object Controllers {
       __obj.asInstanceOf[b2GravityController]
     }
     
-    extension [Self <: b2GravityController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: b2GravityController] (val x: Self) extends AnyVal {
       
       inline def setG(value: Double): Self = StObject.set(x, "G", value.asInstanceOf[js.Any])
       
@@ -430,7 +436,8 @@ object Controllers {
       __obj.asInstanceOf[b2TensorDampingController]
     }
     
-    extension [Self <: b2TensorDampingController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: b2TensorDampingController] (val x: Self) extends AnyVal {
       
       inline def setMaxTimeStep(value: Double): Self = StObject.set(x, "maxTimeStep", value.asInstanceOf[js.Any])
       

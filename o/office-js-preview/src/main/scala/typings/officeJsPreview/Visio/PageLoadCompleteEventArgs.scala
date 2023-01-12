@@ -35,7 +35,8 @@ object PageLoadCompleteEventArgs {
     __obj.asInstanceOf[PageLoadCompleteEventArgs]
   }
   
-  extension [Self <: PageLoadCompleteEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageLoadCompleteEventArgs] (val x: Self) extends AnyVal {
     
     inline def setPageName(value: String): Self = StObject.set(x, "pageName", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object ViewMouseWheelEvent {
     __obj.asInstanceOf[ViewMouseWheelEvent]
   }
   
-  extension [Self <: ViewMouseWheelEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewMouseWheelEvent] (val x: Self) extends AnyVal {
     
     inline def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
     

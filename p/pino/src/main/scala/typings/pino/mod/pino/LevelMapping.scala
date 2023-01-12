@@ -25,7 +25,8 @@ object LevelMapping {
     __obj.asInstanceOf[LevelMapping]
   }
   
-  extension [Self <: LevelMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LevelMapping] (val x: Self) extends AnyVal {
     
     inline def setLabels(value: NumberDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object NodeGroupsSetNodeTemplateRequest {
     __obj.asInstanceOf[NodeGroupsSetNodeTemplateRequest]
   }
   
-  extension [Self <: NodeGroupsSetNodeTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeGroupsSetNodeTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setNodeTemplate(value: String): Self = StObject.set(x, "nodeTemplate", value.asInstanceOf[js.Any])
     

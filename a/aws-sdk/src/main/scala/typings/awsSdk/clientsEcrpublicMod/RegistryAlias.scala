@@ -38,7 +38,8 @@ object RegistryAlias {
     __obj.asInstanceOf[RegistryAlias]
   }
   
-  extension [Self <: RegistryAlias](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegistryAlias] (val x: Self) extends AnyVal {
     
     inline def setDefaultRegistryAlias(value: DefaultRegistryAliasFlag): Self = StObject.set(x, "defaultRegistryAlias", value.asInstanceOf[js.Any])
     

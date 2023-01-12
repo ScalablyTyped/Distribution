@@ -34,7 +34,8 @@ object CreateOffscreenCanvasOption {
     __obj.asInstanceOf[CreateOffscreenCanvasOption]
   }
   
-  extension [Self <: CreateOffscreenCanvasOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateOffscreenCanvasOption] (val x: Self) extends AnyVal {
     
     inline def setCompInst(value: TrivialInstance | typings.wechatMiniprogram.WechatMiniprogram.Page.TrivialInstance): Self = StObject.set(x, "compInst", value.asInstanceOf[js.Any])
     

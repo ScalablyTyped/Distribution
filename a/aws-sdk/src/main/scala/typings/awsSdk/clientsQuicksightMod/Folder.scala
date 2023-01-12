@@ -48,7 +48,8 @@ object Folder {
     __obj.asInstanceOf[Folder]
   }
   
-  extension [Self <: Folder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Folder] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

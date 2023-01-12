@@ -58,7 +58,8 @@ object BootstrapClientRibbon {
     __obj.asInstanceOf[BootstrapClientRibbon]
   }
   
-  extension [Self <: BootstrapClientRibbon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientRibbon] (val x: Self) extends AnyVal {
     
     inline def setGetQuickAccessToolbarItem(value: String => ASPxClientRibbonItem): Self = StObject.set(x, "GetQuickAccessToolbarItem", js.Any.fromFunction1(value))
   }

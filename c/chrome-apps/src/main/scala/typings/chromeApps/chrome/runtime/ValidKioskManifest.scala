@@ -43,7 +43,8 @@ object ValidKioskManifest {
     __obj.asInstanceOf[ValidKioskManifest]
   }
   
-  extension [Self <: ValidKioskManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidKioskManifest] (val x: Self) extends AnyVal {
     
     inline def setKiosk(value: Alwaysupdate): Self = StObject.set(x, "kiosk", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object libEsmApiApiMod {
       __obj.asInstanceOf[AppRecord]
     }
     
-    extension [Self <: AppRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppRecord] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object libEsmApiApiMod {
       __obj.asInstanceOf[CustomInspectorNode]
     }
     
-    extension [Self <: CustomInspectorNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomInspectorNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[CustomInspectorNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object libEsmApiApiMod {
       __obj.asInstanceOf[CustomInspectorOptions]
     }
     
-    extension [Self <: CustomInspectorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomInspectorOptions] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -217,7 +220,8 @@ object libEsmApiApiMod {
       __obj.asInstanceOf[InspectorNodeTag]
     }
     
-    extension [Self <: InspectorNodeTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InspectorNodeTag] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: Double): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -242,7 +246,8 @@ object libEsmApiApiMod {
       __obj.asInstanceOf[ScreenshotData]
     }
     
-    extension [Self <: ScreenshotData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenshotData] (val x: Self) extends AnyVal {
       
       inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
@@ -261,7 +266,8 @@ object libEsmApiApiMod {
       __obj.asInstanceOf[ScreenshotOverlayEvent]
     }
     
-    extension [Self <: ScreenshotOverlayEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenshotOverlayEvent] (val x: Self) extends AnyVal {
       
       inline def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
       
@@ -288,7 +294,8 @@ object libEsmApiApiMod {
       __obj.asInstanceOf[ScreenshotOverlayRenderContext[TData, TMeta]]
     }
     
-    extension [Self <: ScreenshotOverlayRenderContext[?, ?], TData, TMeta](x: Self & (ScreenshotOverlayRenderContext[TData, TMeta])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenshotOverlayRenderContext[?, ?], TData, TMeta] (val x: Self & (ScreenshotOverlayRenderContext[TData, TMeta])) extends AnyVal {
       
       inline def setEvents(value: js.Array[(TimelineEvent[TData, TMeta]) & ScreenshotOverlayEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -325,7 +332,8 @@ object libEsmApiApiMod {
       __obj.asInstanceOf[TimelineEvent[TData, TMeta]]
     }
     
-    extension [Self <: TimelineEvent[?, ?], TData, TMeta](x: Self & (TimelineEvent[TData, TMeta])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimelineEvent[?, ?], TData, TMeta] (val x: Self & (TimelineEvent[TData, TMeta])) extends AnyVal {
       
       inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -368,7 +376,8 @@ object libEsmApiApiMod {
       __obj.asInstanceOf[TimelineEventOptions]
     }
     
-    extension [Self <: TimelineEventOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimelineEventOptions] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -409,7 +418,8 @@ object libEsmApiApiMod {
       __obj.asInstanceOf[TimelineLayerOptions[TData, TMeta]]
     }
     
-    extension [Self <: TimelineLayerOptions[?, ?], TData, TMeta](x: Self & (TimelineLayerOptions[TData, TMeta])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimelineLayerOptions[?, ?], TData, TMeta] (val x: Self & (TimelineLayerOptions[TData, TMeta])) extends AnyVal {
       
       inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -456,7 +466,8 @@ object libEsmApiApiMod {
       __obj.asInstanceOf[TimelineMarkerOptions]
     }
     
-    extension [Self <: TimelineMarkerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimelineMarkerOptions] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       

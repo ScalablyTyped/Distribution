@@ -17,7 +17,8 @@ object libJoinSemilatticeMod {
       __obj.asInstanceOf[JoinSemilattice[A]]
     }
     
-    extension [Self <: JoinSemilattice[?], A](x: Self & JoinSemilattice[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JoinSemilattice[?], A] (val x: Self & JoinSemilattice[A]) extends AnyVal {
       
       inline def setJoin(value: (A, A) => A): Self = StObject.set(x, "join", js.Any.fromFunction2(value))
     }

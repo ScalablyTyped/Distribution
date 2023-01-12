@@ -42,7 +42,8 @@ object AccountSettings {
     __obj.asInstanceOf[AccountSettings]
   }
   
-  extension [Self <: AccountSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountSettings] (val x: Self) extends AnyVal {
     
     inline def setAccepted_gallery_terms(value: Boolean): Self = StObject.set(x, "accepted_gallery_terms", value.asInstanceOf[js.Any])
     

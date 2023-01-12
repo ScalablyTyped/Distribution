@@ -25,7 +25,8 @@ object CstNodeLocation {
     __obj.asInstanceOf[CstNodeLocation]
   }
   
-  extension [Self <: CstNodeLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CstNodeLocation] (val x: Self) extends AnyVal {
     
     inline def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
     

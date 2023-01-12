@@ -28,7 +28,8 @@ object AttributesResource {
     __obj.asInstanceOf[AttributesResource]
   }
   
-  extension [Self <: AttributesResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributesResource] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

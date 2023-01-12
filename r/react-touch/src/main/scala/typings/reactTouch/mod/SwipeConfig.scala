@@ -16,7 +16,8 @@ object SwipeConfig {
     __obj.asInstanceOf[SwipeConfig]
   }
   
-  extension [Self <: SwipeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwipeConfig] (val x: Self) extends AnyVal {
     
     inline def setSwipeDistance(value: Double): Self = StObject.set(x, "swipeDistance", value.asInstanceOf[js.Any])
     

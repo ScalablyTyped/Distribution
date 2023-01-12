@@ -55,7 +55,8 @@ object SlideInTextLayer {
     __obj.asInstanceOf[SlideInTextLayer]
   }
   
-  extension [Self <: SlideInTextLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideInTextLayer] (val x: Self) extends AnyVal {
     
     inline def setCharSpacing(value: Double): Self = StObject.set(x, "charSpacing", value.asInstanceOf[js.Any])
     

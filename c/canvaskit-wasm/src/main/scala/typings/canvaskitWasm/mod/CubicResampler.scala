@@ -18,7 +18,8 @@ object CubicResampler {
     __obj.asInstanceOf[CubicResampler]
   }
   
-  extension [Self <: CubicResampler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CubicResampler] (val x: Self) extends AnyVal {
     
     inline def setB(value: Double): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
     

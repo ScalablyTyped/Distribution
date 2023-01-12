@@ -25,7 +25,8 @@ object DraggingEventArgs {
     __obj.asInstanceOf[DraggingEventArgs]
   }
   
-  extension [Self <: DraggingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setDraggingState(value: DraggingState): Self = StObject.set(x, "draggingState", value.asInstanceOf[js.Any])
     

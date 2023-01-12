@@ -18,7 +18,8 @@ object RecognizeCelebritiesRequest {
     __obj.asInstanceOf[RecognizeCelebritiesRequest]
   }
   
-  extension [Self <: RecognizeCelebritiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecognizeCelebritiesRequest] (val x: Self) extends AnyVal {
     
     inline def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
   }

@@ -179,7 +179,8 @@ object BezierCurve {
       __obj.asInstanceOf[Options[ExtraData]]
     }
     
-    extension [Self <: Options[?], ExtraData](x: Self & Options[ExtraData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], ExtraData] (val x: Self & Options[ExtraData]) extends AnyVal {
       
       inline def setBorderWeight(value: Double): Self = StObject.set(x, "borderWeight", value.asInstanceOf[js.Any])
       

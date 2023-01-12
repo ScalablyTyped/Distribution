@@ -121,7 +121,8 @@ object OptionsGeneral {
     __obj.asInstanceOf[OptionsGeneral]
   }
   
-  extension [Self <: OptionsGeneral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsGeneral] (val x: Self) extends AnyVal {
     
     inline def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
     

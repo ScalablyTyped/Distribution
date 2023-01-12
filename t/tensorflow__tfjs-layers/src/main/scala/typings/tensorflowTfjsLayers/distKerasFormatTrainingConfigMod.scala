@@ -41,7 +41,8 @@ object distKerasFormatTrainingConfigMod {
       __obj.asInstanceOf[TrainingConfig]
     }
     
-    extension [Self <: TrainingConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrainingConfig] (val x: Self) extends AnyVal {
       
       inline def setLoss(value: LossIdentifier | js.Array[LossIdentifier] | StringDictionary[LossIdentifier]): Self = StObject.set(x, "loss", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object SESEventRecord {
     __obj.asInstanceOf[SESEventRecord]
   }
   
-  extension [Self <: SESEventRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SESEventRecord] (val x: Self) extends AnyVal {
     
     inline def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
     

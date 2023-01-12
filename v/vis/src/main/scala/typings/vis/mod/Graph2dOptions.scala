@@ -100,7 +100,8 @@ object Graph2dOptions {
     __obj.asInstanceOf[Graph2dOptions]
   }
   
-  extension [Self <: Graph2dOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Graph2dOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
     

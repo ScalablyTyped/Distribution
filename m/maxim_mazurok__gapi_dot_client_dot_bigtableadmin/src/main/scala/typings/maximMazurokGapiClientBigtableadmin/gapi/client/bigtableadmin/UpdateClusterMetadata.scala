@@ -22,7 +22,8 @@ object UpdateClusterMetadata {
     __obj.asInstanceOf[UpdateClusterMetadata]
   }
   
-  extension [Self <: UpdateClusterMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateClusterMetadata] (val x: Self) extends AnyVal {
     
     inline def setFinishTime(value: String): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     

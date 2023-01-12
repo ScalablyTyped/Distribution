@@ -37,7 +37,8 @@ object TagHold {
     __obj.asInstanceOf[TagHold]
   }
   
-  extension [Self <: TagHold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagHold] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

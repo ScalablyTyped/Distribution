@@ -34,7 +34,8 @@ object outUtilYarnMod {
       __obj.asInstanceOf[DesktopFrameworkInfo]
     }
     
-    extension [Self <: DesktopFrameworkInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DesktopFrameworkInfo] (val x: Self) extends AnyVal {
       
       inline def setUseCustomDist(value: Boolean): Self = StObject.set(x, "useCustomDist", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object outUtilYarnMod {
       __obj.asInstanceOf[RebuildOptions]
     }
     
-    extension [Self <: RebuildOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RebuildOptions] (val x: Self) extends AnyVal {
       
       inline def setAdditionalArgs(value: js.Array[String]): Self = StObject.set(x, "additionalArgs", value.asInstanceOf[js.Any])
       

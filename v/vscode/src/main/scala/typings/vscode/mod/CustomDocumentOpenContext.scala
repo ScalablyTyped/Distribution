@@ -31,7 +31,8 @@ object CustomDocumentOpenContext {
     __obj.asInstanceOf[CustomDocumentOpenContext]
   }
   
-  extension [Self <: CustomDocumentOpenContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomDocumentOpenContext] (val x: Self) extends AnyVal {
     
     inline def setBackupId(value: String): Self = StObject.set(x, "backupId", value.asInstanceOf[js.Any])
     

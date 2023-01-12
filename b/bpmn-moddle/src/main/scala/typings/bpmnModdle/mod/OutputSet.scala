@@ -34,7 +34,8 @@ object OutputSet {
     __obj.asInstanceOf[OutputSet]
   }
   
-  extension [Self <: OutputSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputSet] (val x: Self) extends AnyVal {
     
     inline def setDataOutputRefs(value: js.Array[DataOutput]): Self = StObject.set(x, "dataOutputRefs", value.asInstanceOf[js.Any])
     

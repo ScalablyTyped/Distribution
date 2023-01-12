@@ -55,7 +55,8 @@ object buildSrcParserTokenMod {
       __obj.asInstanceOf[TokenArgs]
     }
     
-    extension [Self <: TokenArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenArgs] (val x: Self) extends AnyVal {
       
       inline def setEndCursor(value: Double): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
       

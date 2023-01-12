@@ -48,7 +48,8 @@ object TargetedSentimentMention {
     __obj.asInstanceOf[TargetedSentimentMention]
   }
   
-  extension [Self <: TargetedSentimentMention](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetedSentimentMention] (val x: Self) extends AnyVal {
     
     inline def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object CreateMeetingWithAttendeesRequest {
     __obj.asInstanceOf[CreateMeetingWithAttendeesRequest]
   }
   
-  extension [Self <: CreateMeetingWithAttendeesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMeetingWithAttendeesRequest] (val x: Self) extends AnyVal {
     
     inline def setAttendees(value: CreateMeetingWithAttendeesRequestItemList): Self = StObject.set(x, "Attendees", value.asInstanceOf[js.Any])
     

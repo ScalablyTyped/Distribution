@@ -18,7 +18,8 @@ object BusinessCallingSettings {
     __obj.asInstanceOf[BusinessCallingSettings]
   }
   
-  extension [Self <: BusinessCallingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusinessCallingSettings] (val x: Self) extends AnyVal {
     
     inline def setCdrBucket(value: String): Self = StObject.set(x, "CdrBucket", value.asInstanceOf[js.Any])
     

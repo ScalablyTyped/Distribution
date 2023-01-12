@@ -25,7 +25,8 @@ object IDiffEditorModel {
     __obj.asInstanceOf[IDiffEditorModel]
   }
   
-  extension [Self <: IDiffEditorModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDiffEditorModel] (val x: Self) extends AnyVal {
     
     inline def setModified(value: ITextModel): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     

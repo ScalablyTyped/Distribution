@@ -24,7 +24,8 @@ object DataSourceErrorEvent {
     __obj.asInstanceOf[DataSourceErrorEvent]
   }
   
-  extension [Self <: DataSourceErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setErrorThrown(value: Any): Self = StObject.set(x, "errorThrown", value.asInstanceOf[js.Any])
     

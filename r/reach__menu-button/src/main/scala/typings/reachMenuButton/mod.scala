@@ -143,7 +143,8 @@ object mod {
       __obj.asInstanceOf[MenuButtonProps]
     }
     
-    extension [Self <: MenuButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuButtonProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -162,7 +163,8 @@ object mod {
       __obj.asInstanceOf[MenuContextValue]
     }
     
-    extension [Self <: MenuContextValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuContextValue] (val x: Self) extends AnyVal {
       
       inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
     }
@@ -204,7 +206,8 @@ object mod {
       __obj.asInstanceOf[MenuItemImplProps]
     }
     
-    extension [Self <: MenuItemImplProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemImplProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -253,7 +256,8 @@ object mod {
       __obj.asInstanceOf[MenuItemProps]
     }
     
-    extension [Self <: MenuItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -294,7 +298,8 @@ object mod {
       __obj.asInstanceOf[MenuItemsProps]
     }
     
-    extension [Self <: MenuItemsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemsProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -325,7 +330,8 @@ object mod {
       __obj.asInstanceOf[MenuLinkProps]
     }
     
-    extension [Self <: MenuLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuLinkProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -376,7 +382,8 @@ object mod {
       __obj.asInstanceOf[MenuListProps]
     }
     
-    extension [Self <: MenuListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuListProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -426,7 +433,8 @@ object mod {
       __obj.asInstanceOf[MenuPopoverProps]
     }
     
-    extension [Self <: MenuPopoverProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuPopoverProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -463,7 +471,8 @@ object mod {
       __obj.asInstanceOf[MenuProps]
     }
     
-    extension [Self <: MenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode | (js.Function1[/* props */ MenuContextValueisOpenboo, ReactNode])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

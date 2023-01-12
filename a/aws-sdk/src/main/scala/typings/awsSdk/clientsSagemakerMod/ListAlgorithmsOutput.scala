@@ -23,7 +23,8 @@ object ListAlgorithmsOutput {
     __obj.asInstanceOf[ListAlgorithmsOutput]
   }
   
-  extension [Self <: ListAlgorithmsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAlgorithmsOutput] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmSummaryList(value: AlgorithmSummaryList): Self = StObject.set(x, "AlgorithmSummaryList", value.asInstanceOf[js.Any])
     

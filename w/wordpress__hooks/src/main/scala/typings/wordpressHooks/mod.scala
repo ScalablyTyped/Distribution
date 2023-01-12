@@ -118,7 +118,8 @@ object mod {
       __obj.asInstanceOf[Current]
     }
     
-    extension [Self <: Current](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Current] (val x: Self) extends AnyVal {
       
       inline def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
       
@@ -155,7 +156,8 @@ object mod {
       __obj.asInstanceOf[Handler]
     }
     
-    extension [Self <: Handler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Handler] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: Callback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
@@ -184,7 +186,8 @@ object mod {
       __obj.asInstanceOf[Hook]
     }
     
-    extension [Self <: Hook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hook] (val x: Self) extends AnyVal {
       
       inline def setHandlers(value: js.Array[Handler]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       

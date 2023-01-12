@@ -46,7 +46,8 @@ object esComponentsProviderMod {
       __obj.asInstanceOf[ProviderProps[A, S]]
     }
     
-    extension [Self <: ProviderProps[?, ?], A /* <: Action[Any] */, S](x: Self & (ProviderProps[A, S])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderProps[?, ?], A /* <: Action[Any] */, S] (val x: Self & (ProviderProps[A, S])) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

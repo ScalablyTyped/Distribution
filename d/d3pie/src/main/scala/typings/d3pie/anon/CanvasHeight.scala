@@ -21,7 +21,8 @@ object CanvasHeight {
     __obj.asInstanceOf[CanvasHeight]
   }
   
-  extension [Self <: CanvasHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasHeight] (val x: Self) extends AnyVal {
     
     inline def setCanvasHeight(value: Double): Self = StObject.set(x, "canvasHeight", value.asInstanceOf[js.Any])
     

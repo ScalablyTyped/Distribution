@@ -33,7 +33,8 @@ object DescribeReleaseLabelOutput {
     __obj.asInstanceOf[DescribeReleaseLabelOutput]
   }
   
-  extension [Self <: DescribeReleaseLabelOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeReleaseLabelOutput] (val x: Self) extends AnyVal {
     
     inline def setApplications(value: SimplifiedApplicationList): Self = StObject.set(x, "Applications", value.asInstanceOf[js.Any])
     

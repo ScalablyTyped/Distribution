@@ -28,7 +28,8 @@ object AwsEcsTaskDefinitionContainerDefinitionsUlimitsDetails {
     __obj.asInstanceOf[AwsEcsTaskDefinitionContainerDefinitionsUlimitsDetails]
   }
   
-  extension [Self <: AwsEcsTaskDefinitionContainerDefinitionsUlimitsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskDefinitionContainerDefinitionsUlimitsDetails] (val x: Self) extends AnyVal {
     
     inline def setHardLimit(value: Integer): Self = StObject.set(x, "HardLimit", value.asInstanceOf[js.Any])
     

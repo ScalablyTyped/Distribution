@@ -44,7 +44,8 @@ object IObjectTemplateSelectorItem {
     __obj.asInstanceOf[IObjectTemplateSelectorItem]
   }
   
-  extension [Self <: IObjectTemplateSelectorItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjectTemplateSelectorItem] (val x: Self) extends AnyVal {
     
     inline def setGetClassID(value: () => Double): Self = StObject.set(x, "GetClassID", js.Any.fromFunction0(value))
     

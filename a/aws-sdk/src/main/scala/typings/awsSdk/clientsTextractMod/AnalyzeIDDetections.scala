@@ -28,7 +28,8 @@ object AnalyzeIDDetections {
     __obj.asInstanceOf[AnalyzeIDDetections]
   }
   
-  extension [Self <: AnalyzeIDDetections](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyzeIDDetections] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     

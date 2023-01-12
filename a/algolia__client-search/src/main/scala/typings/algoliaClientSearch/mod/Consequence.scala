@@ -41,7 +41,8 @@ object Consequence {
     __obj.asInstanceOf[Consequence]
   }
   
-  extension [Self <: Consequence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Consequence] (val x: Self) extends AnyVal {
     
     inline def setFilterPromotes(value: Boolean): Self = StObject.set(x, "filterPromotes", value.asInstanceOf[js.Any])
     

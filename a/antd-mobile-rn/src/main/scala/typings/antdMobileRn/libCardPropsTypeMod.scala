@@ -20,7 +20,8 @@ object libCardPropsTypeMod {
       __obj.asInstanceOf[CardFooterPropsType]
     }
     
-    extension [Self <: CardFooterPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardFooterPropsType] (val x: Self) extends AnyVal {
       
       inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object libCardPropsTypeMod {
       __obj.asInstanceOf[CardHeaderPropsType]
     }
     
-    extension [Self <: CardHeaderPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardHeaderPropsType] (val x: Self) extends AnyVal {
       
       inline def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object libCardPropsTypeMod {
       __obj.asInstanceOf[CardPropsType]
     }
     
-    extension [Self <: CardPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardPropsType] (val x: Self) extends AnyVal {
       
       inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       

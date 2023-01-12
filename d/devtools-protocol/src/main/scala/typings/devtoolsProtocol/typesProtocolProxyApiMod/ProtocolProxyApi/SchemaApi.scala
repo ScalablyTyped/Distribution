@@ -19,7 +19,8 @@ object SchemaApi {
     __obj.asInstanceOf[SchemaApi]
   }
   
-  extension [Self <: SchemaApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaApi] (val x: Self) extends AnyVal {
     
     inline def setGetDomains(value: () => js.Promise[GetDomainsResponse]): Self = StObject.set(x, "getDomains", js.Any.fromFunction0(value))
   }

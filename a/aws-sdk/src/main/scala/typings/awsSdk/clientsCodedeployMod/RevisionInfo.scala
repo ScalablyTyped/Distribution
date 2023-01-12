@@ -23,7 +23,8 @@ object RevisionInfo {
     __obj.asInstanceOf[RevisionInfo]
   }
   
-  extension [Self <: RevisionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevisionInfo] (val x: Self) extends AnyVal {
     
     inline def setGenericRevisionInfo(value: GenericRevisionInfo): Self = StObject.set(x, "genericRevisionInfo", value.asInstanceOf[js.Any])
     

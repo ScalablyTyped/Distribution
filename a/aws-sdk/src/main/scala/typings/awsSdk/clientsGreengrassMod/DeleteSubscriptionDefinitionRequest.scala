@@ -18,7 +18,8 @@ object DeleteSubscriptionDefinitionRequest {
     __obj.asInstanceOf[DeleteSubscriptionDefinitionRequest]
   }
   
-  extension [Self <: DeleteSubscriptionDefinitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSubscriptionDefinitionRequest] (val x: Self) extends AnyVal {
     
     inline def setSubscriptionDefinitionId(value: string): Self = StObject.set(x, "SubscriptionDefinitionId", value.asInstanceOf[js.Any])
   }

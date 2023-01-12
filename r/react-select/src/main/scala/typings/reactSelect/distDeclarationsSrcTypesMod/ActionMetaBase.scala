@@ -21,7 +21,8 @@ object ActionMetaBase {
     __obj.asInstanceOf[ActionMetaBase[Option]]
   }
   
-  extension [Self <: ActionMetaBase[?], Option](x: Self & ActionMetaBase[Option]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionMetaBase[?], Option] (val x: Self & ActionMetaBase[Option]) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

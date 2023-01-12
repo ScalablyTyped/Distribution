@@ -28,7 +28,8 @@ object GetPossibleBreakpointsParameterType {
     __obj.asInstanceOf[GetPossibleBreakpointsParameterType]
   }
   
-  extension [Self <: GetPossibleBreakpointsParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPossibleBreakpointsParameterType] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Location): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

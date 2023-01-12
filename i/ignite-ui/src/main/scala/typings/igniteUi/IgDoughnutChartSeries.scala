@@ -180,7 +180,8 @@ object IgDoughnutChartSeries {
     __obj.asInstanceOf[IgDoughnutChartSeries]
   }
   
-  extension [Self <: IgDoughnutChartSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgDoughnutChartSeries] (val x: Self) extends AnyVal {
     
     inline def setBrushes(value: Any): Self = StObject.set(x, "brushes", value.asInstanceOf[js.Any])
     

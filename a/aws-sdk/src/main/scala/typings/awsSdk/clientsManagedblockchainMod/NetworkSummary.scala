@@ -53,7 +53,8 @@ object NetworkSummary {
     __obj.asInstanceOf[NetworkSummary]
   }
   
-  extension [Self <: NetworkSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ArnString): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

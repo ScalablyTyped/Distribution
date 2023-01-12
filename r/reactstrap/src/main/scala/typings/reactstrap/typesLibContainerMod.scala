@@ -37,7 +37,8 @@ object typesLibContainerMod {
       __obj.asInstanceOf[ContainerProps]
     }
     
-    extension [Self <: ContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

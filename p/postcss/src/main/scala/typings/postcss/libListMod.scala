@@ -71,7 +71,8 @@ object libListMod extends Shortcut {
       __obj.asInstanceOf[typings.postcss.libListMod.List]
     }
     
-    extension [Self <: typings.postcss.libListMod.List](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.postcss.libListMod.List] (val x: Self) extends AnyVal {
       
       inline def setComma(value: String => js.Array[String]): Self = StObject.set(x, "comma", js.Any.fromFunction1(value))
       

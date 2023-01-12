@@ -54,7 +54,8 @@ object distMethodsPhotosTypesMod {
       __obj.asInstanceOf[Basic]
     }
     
-    extension [Self <: Basic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Basic] (val x: Self) extends AnyVal {
       
       inline def setAlt_description(value: Nullable[String]): Self = StObject.set(x, "alt_description", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object distMethodsPhotosTypesMod {
       __obj.asInstanceOf[ExifAndLocation]
     }
     
-    extension [Self <: ExifAndLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExifAndLocation] (val x: Self) extends AnyVal {
       
       inline def setExif(value: Aperture): Self = StObject.set(x, "exif", value.asInstanceOf[js.Any])
       
@@ -136,7 +138,8 @@ object distMethodsPhotosTypesMod {
       __obj.asInstanceOf[Full]
     }
     
-    extension [Self <: Full](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Full] (val x: Self) extends AnyVal {
       
       inline def setRelated_collections(value: Type): Self = StObject.set(x, "related_collections", value.asInstanceOf[js.Any])
     }
@@ -191,7 +194,8 @@ object distMethodsPhotosTypesMod {
       __obj.asInstanceOf[Stat]
     }
     
-    extension [Self <: Stat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stat] (val x: Self) extends AnyVal {
       
       inline def setHistorical(value: Change): Self = StObject.set(x, "historical", value.asInstanceOf[js.Any])
       
@@ -212,7 +216,8 @@ object distMethodsPhotosTypesMod {
       __obj.asInstanceOf[StatValue]
     }
     
-    extension [Self <: StatValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatValue] (val x: Self) extends AnyVal {
       
       inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -235,7 +240,8 @@ object distMethodsPhotosTypesMod {
       __obj.asInstanceOf[Stats]
     }
     
-    extension [Self <: Stats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
       
       inline def setDownloads(value: Stat): Self = StObject.set(x, "downloads", value.asInstanceOf[js.Any])
       
@@ -260,7 +266,8 @@ object distMethodsPhotosTypesMod {
       __obj.asInstanceOf[VeryBasic]
     }
     
-    extension [Self <: VeryBasic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VeryBasic] (val x: Self) extends AnyVal {
       
       inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       

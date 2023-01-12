@@ -17,7 +17,8 @@ object BaseFontSizeSpacing {
     __obj.asInstanceOf[BaseFontSizeSpacing]
   }
   
-  extension [Self <: BaseFontSizeSpacing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseFontSizeSpacing] (val x: Self) extends AnyVal {
     
     inline def setBaseFontSize(value: Double): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
     

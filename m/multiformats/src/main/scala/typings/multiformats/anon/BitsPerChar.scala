@@ -21,7 +21,8 @@ object BitsPerChar {
     __obj.asInstanceOf[BitsPerChar[Base, Prefix]]
   }
   
-  extension [Self <: BitsPerChar[?, ?], Base /* <: String */, Prefix /* <: String */](x: Self & (BitsPerChar[Base, Prefix])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitsPerChar[?, ?], Base /* <: String */, Prefix /* <: String */] (val x: Self & (BitsPerChar[Base, Prefix])) extends AnyVal {
     
     inline def setAlphabet(value: String): Self = StObject.set(x, "alphabet", value.asInstanceOf[js.Any])
     

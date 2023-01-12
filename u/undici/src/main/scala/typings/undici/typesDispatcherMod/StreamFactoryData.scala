@@ -22,7 +22,8 @@ object StreamFactoryData {
     __obj.asInstanceOf[StreamFactoryData]
   }
   
-  extension [Self <: StreamFactoryData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamFactoryData] (val x: Self) extends AnyVal {
     
     inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

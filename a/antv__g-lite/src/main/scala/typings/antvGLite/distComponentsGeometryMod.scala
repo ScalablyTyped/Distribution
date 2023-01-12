@@ -26,7 +26,8 @@ object distComponentsGeometryMod {
       __obj.asInstanceOf[Geometry]
     }
     
-    extension [Self <: Geometry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Geometry] (val x: Self) extends AnyVal {
       
       inline def setContentBounds(value: AABB): Self = StObject.set(x, "contentBounds", value.asInstanceOf[js.Any])
       

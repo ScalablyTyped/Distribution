@@ -15,7 +15,8 @@ object DefsProps {
     __obj.asInstanceOf[DefsProps]
   }
   
-  extension [Self <: DefsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefsProps] (val x: Self) extends AnyVal {
     
     inline def setDefs(value: js.Array[Def]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
     

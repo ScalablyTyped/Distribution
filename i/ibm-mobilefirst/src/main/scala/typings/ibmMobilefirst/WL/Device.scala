@@ -20,7 +20,8 @@ object Device {
       __obj.asInstanceOf[AddressPair]
     }
     
-    extension [Self <: AddressPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddressPair] (val x: Self) extends AnyVal {
       
       inline def set3GAddress(value: String): Self = StObject.set(x, "3GAddress", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object Device {
       __obj.asInstanceOf[NetworkInfo]
     }
     
-    extension [Self <: NetworkInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkInfo] (val x: Self) extends AnyVal {
       
       inline def setCarrierName(value: String): Self = StObject.set(x, "carrierName", value.asInstanceOf[js.Any])
       

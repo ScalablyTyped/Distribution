@@ -33,7 +33,8 @@ object ASPxClientGanttStartCellEditingEventArgs {
     __obj.asInstanceOf[ASPxClientGanttStartCellEditingEventArgs]
   }
   
-  extension [Self <: ASPxClientGanttStartCellEditingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGanttStartCellEditingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setFocusedFieldName(value: String): Self = StObject.set(x, "focusedFieldName", value.asInstanceOf[js.Any])
     

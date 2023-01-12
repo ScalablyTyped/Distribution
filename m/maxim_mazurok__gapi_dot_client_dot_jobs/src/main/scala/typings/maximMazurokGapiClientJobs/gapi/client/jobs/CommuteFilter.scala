@@ -34,7 +34,8 @@ object CommuteFilter {
     __obj.asInstanceOf[CommuteFilter]
   }
   
-  extension [Self <: CommuteFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommuteFilter] (val x: Self) extends AnyVal {
     
     inline def setAllowImpreciseAddresses(value: Boolean): Self = StObject.set(x, "allowImpreciseAddresses", value.asInstanceOf[js.Any])
     

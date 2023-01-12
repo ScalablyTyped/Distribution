@@ -28,7 +28,8 @@ object TargetHealthDescription {
     __obj.asInstanceOf[TargetHealthDescription]
   }
   
-  extension [Self <: TargetHealthDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetHealthDescription] (val x: Self) extends AnyVal {
     
     inline def setHealthCheckPort(value: HealthCheckPort): Self = StObject.set(x, "HealthCheckPort", value.asInstanceOf[js.Any])
     

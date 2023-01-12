@@ -23,7 +23,8 @@ object DeveloperMode {
     __obj.asInstanceOf[DeveloperMode]
   }
   
-  extension [Self <: DeveloperMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeveloperMode] (val x: Self) extends AnyVal {
     
     inline def setDeveloperMode(value: Boolean): Self = StObject.set(x, "developerMode", value.asInstanceOf[js.Any])
     

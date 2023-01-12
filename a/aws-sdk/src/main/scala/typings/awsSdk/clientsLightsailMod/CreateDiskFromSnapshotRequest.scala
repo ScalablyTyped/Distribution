@@ -58,7 +58,8 @@ object CreateDiskFromSnapshotRequest {
     __obj.asInstanceOf[CreateDiskFromSnapshotRequest]
   }
   
-  extension [Self <: CreateDiskFromSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDiskFromSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setAddOns(value: AddOnRequestList): Self = StObject.set(x, "addOns", value.asInstanceOf[js.Any])
     

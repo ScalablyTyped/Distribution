@@ -23,7 +23,8 @@ object TypeofBase_ {
     __obj.asInstanceOf[TypeofBase_]
   }
   
-  extension [Self <: TypeofBase_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofBase_] (val x: Self) extends AnyVal {
     
     inline def setCreatePanorama(value: AngularBBox => IPanorama): Self = StObject.set(x, "createPanorama", js.Any.fromFunction1(value))
     

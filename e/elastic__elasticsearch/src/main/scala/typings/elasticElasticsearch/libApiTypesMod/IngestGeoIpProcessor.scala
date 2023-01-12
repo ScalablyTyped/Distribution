@@ -27,7 +27,8 @@ object IngestGeoIpProcessor {
     __obj.asInstanceOf[IngestGeoIpProcessor]
   }
   
-  extension [Self <: IngestGeoIpProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestGeoIpProcessor] (val x: Self) extends AnyVal {
     
     inline def setDatabase_file(value: String): Self = StObject.set(x, "database_file", value.asInstanceOf[js.Any])
     

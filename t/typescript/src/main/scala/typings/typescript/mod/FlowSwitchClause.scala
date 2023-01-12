@@ -30,7 +30,8 @@ object FlowSwitchClause {
     __obj.asInstanceOf[FlowSwitchClause]
   }
   
-  extension [Self <: FlowSwitchClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowSwitchClause] (val x: Self) extends AnyVal {
     
     inline def setAntecedent(value: FlowNode): Self = StObject.set(x, "antecedent", value.asInstanceOf[js.Any])
     

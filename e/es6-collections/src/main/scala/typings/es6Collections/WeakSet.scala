@@ -21,7 +21,8 @@ object WeakSet {
     __obj.asInstanceOf[WeakSet[T]]
   }
   
-  extension [Self <: WeakSet[?], T](x: Self & WeakSet[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakSet[?], T] (val x: Self & WeakSet[T]) extends AnyVal {
     
     inline def setAdd(value: T => WeakSet[T]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

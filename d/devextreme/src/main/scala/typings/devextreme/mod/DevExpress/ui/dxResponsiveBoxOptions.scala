@@ -37,7 +37,8 @@ object dxResponsiveBoxOptions {
     __obj.asInstanceOf[dxResponsiveBoxOptions[TItem, TKey]]
   }
   
-  extension [Self <: dxResponsiveBoxOptions[?, ?], TItem /* <: ItemLike */, TKey](x: Self & (dxResponsiveBoxOptions[TItem, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxResponsiveBoxOptions[?, ?], TItem /* <: ItemLike */, TKey] (val x: Self & (dxResponsiveBoxOptions[TItem, TKey])) extends AnyVal {
     
     inline def setCols(value: js.Array[BaseSize]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     

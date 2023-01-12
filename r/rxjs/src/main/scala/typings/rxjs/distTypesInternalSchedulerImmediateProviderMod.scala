@@ -33,7 +33,8 @@ object distTypesInternalSchedulerImmediateProviderMod {
       __obj.asInstanceOf[ImmediateProvider_]
     }
     
-    extension [Self <: ImmediateProvider_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImmediateProvider_] (val x: Self) extends AnyVal {
       
       inline def setClearImmediate(value: /* handle */ TimerHandle => Unit): Self = StObject.set(x, "clearImmediate", js.Any.fromFunction1(value))
       

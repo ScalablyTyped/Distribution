@@ -26,7 +26,8 @@ object Entry {
     __obj.asInstanceOf[Entry]
   }
   
-  extension [Self <: Entry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
     
     inline def setGlyphs(value: NumberDictionary[StyleGlyph | Null]): Self = StObject.set(x, "glyphs", value.asInstanceOf[js.Any])
     

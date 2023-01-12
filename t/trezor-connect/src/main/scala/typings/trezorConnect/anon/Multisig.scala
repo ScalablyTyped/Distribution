@@ -40,7 +40,8 @@ object Multisig {
     __obj.asInstanceOf[Multisig]
   }
   
-  extension [Self <: Multisig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Multisig] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: scala.Unit): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

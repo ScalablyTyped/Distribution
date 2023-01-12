@@ -21,7 +21,8 @@ object ProductsGenerateApprovalUrlResponse {
     __obj.asInstanceOf[ProductsGenerateApprovalUrlResponse]
   }
   
-  extension [Self <: ProductsGenerateApprovalUrlResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductsGenerateApprovalUrlResponse] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

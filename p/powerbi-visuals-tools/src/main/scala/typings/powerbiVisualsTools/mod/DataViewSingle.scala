@@ -15,7 +15,8 @@ object DataViewSingle {
     __obj.asInstanceOf[DataViewSingle]
   }
   
-  extension [Self <: DataViewSingle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewSingle] (val x: Self) extends AnyVal {
     
     inline def setValue(value: PrimitiveValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

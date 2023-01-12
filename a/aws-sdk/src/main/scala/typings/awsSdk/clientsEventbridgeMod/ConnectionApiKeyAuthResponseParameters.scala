@@ -18,7 +18,8 @@ object ConnectionApiKeyAuthResponseParameters {
     __obj.asInstanceOf[ConnectionApiKeyAuthResponseParameters]
   }
   
-  extension [Self <: ConnectionApiKeyAuthResponseParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionApiKeyAuthResponseParameters] (val x: Self) extends AnyVal {
     
     inline def setApiKeyName(value: AuthHeaderParameters): Self = StObject.set(x, "ApiKeyName", value.asInstanceOf[js.Any])
     

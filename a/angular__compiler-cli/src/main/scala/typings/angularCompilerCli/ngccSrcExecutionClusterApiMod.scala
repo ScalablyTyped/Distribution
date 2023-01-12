@@ -34,7 +34,8 @@ object ngccSrcExecutionClusterApiMod {
       __obj.asInstanceOf[ErrorMessage]
     }
     
-    extension [Self <: ErrorMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorMessage] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object ngccSrcExecutionClusterApiMod {
       __obj.asInstanceOf[ProcessTaskMessage]
     }
     
-    extension [Self <: ProcessTaskMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessTaskMessage] (val x: Self) extends AnyVal {
       
       inline def setTask(value: Task): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object ngccSrcExecutionClusterApiMod {
       __obj.asInstanceOf[ReadyMessage]
     }
     
-    extension [Self <: ReadyMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadyMessage] (val x: Self) extends AnyVal {
       
       inline def setType(value: ready): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -149,7 +152,8 @@ object ngccSrcExecutionClusterApiMod {
       __obj.asInstanceOf[TaskCompletedMessage]
     }
     
-    extension [Self <: TaskCompletedMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskCompletedMessage] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -178,7 +182,8 @@ object ngccSrcExecutionClusterApiMod {
       __obj.asInstanceOf[TransformedFilesMessage]
     }
     
-    extension [Self <: TransformedFilesMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformedFilesMessage] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[AbsoluteFsPath]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -207,7 +212,8 @@ object ngccSrcExecutionClusterApiMod {
       __obj.asInstanceOf[UpdatePackageJsonMessage]
     }
     
-    extension [Self <: UpdatePackageJsonMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdatePackageJsonMessage] (val x: Self) extends AnyVal {
       
       inline def setChanges(value: js.Array[PackageJsonChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
       

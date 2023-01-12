@@ -23,7 +23,8 @@ object AnomalyReportedTimeRange {
     __obj.asInstanceOf[AnomalyReportedTimeRange]
   }
   
-  extension [Self <: AnomalyReportedTimeRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnomalyReportedTimeRange] (val x: Self) extends AnyVal {
     
     inline def setCloseTime(value: js.Date): Self = StObject.set(x, "CloseTime", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object AssembleAttachment {
     __obj.asInstanceOf[AssembleAttachment]
   }
   
-  extension [Self <: AssembleAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssembleAttachment] (val x: Self) extends AnyVal {
     
     inline def setFile(value: Blob): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

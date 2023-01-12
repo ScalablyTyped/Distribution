@@ -19,7 +19,8 @@ object ReponameString {
     __obj.asInstanceOf[ReponameString]
   }
   
-  extension [Self <: ReponameString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReponameString] (val x: Self) extends AnyVal {
     
     inline def setMigration_id(value: Double): Self = StObject.set(x, "migration_id", value.asInstanceOf[js.Any])
     

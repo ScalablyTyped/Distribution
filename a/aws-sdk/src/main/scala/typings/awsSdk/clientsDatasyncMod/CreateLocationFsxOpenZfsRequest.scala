@@ -42,7 +42,8 @@ object CreateLocationFsxOpenZfsRequest {
     __obj.asInstanceOf[CreateLocationFsxOpenZfsRequest]
   }
   
-  extension [Self <: CreateLocationFsxOpenZfsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLocationFsxOpenZfsRequest] (val x: Self) extends AnyVal {
     
     inline def setFsxFilesystemArn(value: FsxFilesystemArn): Self = StObject.set(x, "FsxFilesystemArn", value.asInstanceOf[js.Any])
     

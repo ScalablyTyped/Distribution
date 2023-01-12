@@ -19,7 +19,8 @@ object TabStripEvent {
     __obj.asInstanceOf[TabStripEvent]
   }
   
-  extension [Self <: TabStripEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabStripEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

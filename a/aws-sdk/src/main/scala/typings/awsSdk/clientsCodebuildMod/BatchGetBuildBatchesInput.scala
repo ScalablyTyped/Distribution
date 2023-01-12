@@ -18,7 +18,8 @@ object BatchGetBuildBatchesInput {
     __obj.asInstanceOf[BatchGetBuildBatchesInput]
   }
   
-  extension [Self <: BatchGetBuildBatchesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetBuildBatchesInput] (val x: Self) extends AnyVal {
     
     inline def setIds(value: BuildBatchIds): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     

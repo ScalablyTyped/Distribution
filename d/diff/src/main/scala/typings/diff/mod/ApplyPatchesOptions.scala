@@ -25,7 +25,8 @@ object ApplyPatchesOptions {
     __obj.asInstanceOf[ApplyPatchesOptions]
   }
   
-  extension [Self <: ApplyPatchesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplyPatchesOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

@@ -16,7 +16,8 @@ object SystemEvent {
     __obj.asInstanceOf[SystemEvent]
   }
   
-  extension [Self <: SystemEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

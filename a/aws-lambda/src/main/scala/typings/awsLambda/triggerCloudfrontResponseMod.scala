@@ -23,7 +23,8 @@ object triggerCloudfrontResponseMod {
       __obj.asInstanceOf[CloudFrontResponseEvent]
     }
     
-    extension [Self <: CloudFrontResponseEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudFrontResponseEvent] (val x: Self) extends AnyVal {
       
       inline def setRecords(value: js.Array[Cf]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       

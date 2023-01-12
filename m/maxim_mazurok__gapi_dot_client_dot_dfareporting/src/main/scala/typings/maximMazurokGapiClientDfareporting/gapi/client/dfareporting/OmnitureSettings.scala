@@ -19,7 +19,8 @@ object OmnitureSettings {
     __obj.asInstanceOf[OmnitureSettings]
   }
   
-  extension [Self <: OmnitureSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmnitureSettings] (val x: Self) extends AnyVal {
     
     inline def setOmnitureCostDataEnabled(value: Boolean): Self = StObject.set(x, "omnitureCostDataEnabled", value.asInstanceOf[js.Any])
     

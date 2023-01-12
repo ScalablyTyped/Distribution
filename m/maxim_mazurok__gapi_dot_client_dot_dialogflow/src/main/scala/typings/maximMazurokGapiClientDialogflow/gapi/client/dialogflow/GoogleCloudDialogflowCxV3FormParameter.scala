@@ -43,7 +43,8 @@ object GoogleCloudDialogflowCxV3FormParameter {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3FormParameter]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3FormParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3FormParameter] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

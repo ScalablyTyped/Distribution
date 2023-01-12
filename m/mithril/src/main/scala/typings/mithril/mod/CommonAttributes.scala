@@ -43,7 +43,8 @@ object CommonAttributes {
     __obj.asInstanceOf[CommonAttributes[Attrs, State]]
   }
   
-  extension [Self <: CommonAttributes[?, ?], Attrs, State](x: Self & (CommonAttributes[Attrs, State])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonAttributes[?, ?], Attrs, State] (val x: Self & (CommonAttributes[Attrs, State])) extends AnyVal {
     
     inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

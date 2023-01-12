@@ -45,7 +45,8 @@ object UpdateTaskRequest {
     __obj.asInstanceOf[UpdateTaskRequest]
   }
   
-  extension [Self <: UpdateTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchLogGroupArn(value: LogGroupArn): Self = StObject.set(x, "CloudWatchLogGroupArn", value.asInstanceOf[js.Any])
     

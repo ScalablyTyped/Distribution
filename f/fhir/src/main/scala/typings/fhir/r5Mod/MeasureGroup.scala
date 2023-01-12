@@ -64,7 +64,8 @@ object MeasureGroup {
     __obj.asInstanceOf[MeasureGroup]
   }
   
-  extension [Self <: MeasureGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeasureGroup] (val x: Self) extends AnyVal {
     
     inline def setBasis(value: String): Self = StObject.set(x, "basis", value.asInstanceOf[js.Any])
     

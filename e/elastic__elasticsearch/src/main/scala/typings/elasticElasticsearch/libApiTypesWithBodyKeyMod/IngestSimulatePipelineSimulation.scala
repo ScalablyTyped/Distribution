@@ -23,7 +23,8 @@ object IngestSimulatePipelineSimulation {
     __obj.asInstanceOf[IngestSimulatePipelineSimulation]
   }
   
-  extension [Self <: IngestSimulatePipelineSimulation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestSimulatePipelineSimulation] (val x: Self) extends AnyVal {
     
     inline def setDoc(value: IngestSimulateDocumentSimulation): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     

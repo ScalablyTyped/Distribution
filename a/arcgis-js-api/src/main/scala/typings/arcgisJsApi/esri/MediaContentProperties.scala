@@ -45,7 +45,8 @@ object MediaContentProperties {
     __obj.asInstanceOf[MediaContentProperties]
   }
   
-  extension [Self <: MediaContentProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaContentProperties] (val x: Self) extends AnyVal {
     
     inline def setActiveMediaInfoIndex(value: String): Self = StObject.set(x, "activeMediaInfoIndex", value.asInstanceOf[js.Any])
     

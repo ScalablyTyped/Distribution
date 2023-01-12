@@ -31,7 +31,8 @@ object BandedRange {
     __obj.asInstanceOf[BandedRange]
   }
   
-  extension [Self <: BandedRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BandedRange] (val x: Self) extends AnyVal {
     
     inline def setBandedRangeId(value: Double): Self = StObject.set(x, "bandedRangeId", value.asInstanceOf[js.Any])
     

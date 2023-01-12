@@ -40,7 +40,8 @@ object UpdateThesaurusRequest {
     __obj.asInstanceOf[UpdateThesaurusRequest]
   }
   
-  extension [Self <: UpdateThesaurusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateThesaurusRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object FillOpacity {
     __obj.asInstanceOf[FillOpacity]
   }
   
-  extension [Self <: FillOpacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillOpacity] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

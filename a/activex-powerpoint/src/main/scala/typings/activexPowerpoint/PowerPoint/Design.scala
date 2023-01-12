@@ -53,7 +53,8 @@ object Design {
     __obj.asInstanceOf[Design]
   }
   
-  extension [Self <: Design](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Design] (val x: Self) extends AnyVal {
     
     inline def setAddTitleMaster(value: () => Master): Self = StObject.set(x, "AddTitleMaster", js.Any.fromFunction0(value))
     

@@ -113,7 +113,8 @@ object DownloadProfile {
     __obj.asInstanceOf[DownloadProfile]
   }
   
-  extension [Self <: DownloadProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadProfile] (val x: Self) extends AnyVal {
     
     inline def setConnectEnd(value: Double): Self = StObject.set(x, "connectEnd", value.asInstanceOf[js.Any])
     

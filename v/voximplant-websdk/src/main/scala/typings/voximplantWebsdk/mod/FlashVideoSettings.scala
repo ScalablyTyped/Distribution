@@ -56,7 +56,8 @@ object FlashVideoSettings {
     __obj.asInstanceOf[FlashVideoSettings]
   }
   
-  extension [Self <: FlashVideoSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashVideoSettings] (val x: Self) extends AnyVal {
     
     inline def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     

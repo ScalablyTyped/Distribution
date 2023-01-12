@@ -106,7 +106,8 @@ object TBSCertList {
     __obj.asInstanceOf[TBSCertList]
   }
   
-  extension [Self <: TBSCertList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TBSCertList] (val x: Self) extends AnyVal {
     
     inline def setAddRevokedCert(value: (IntegerParam, StringParam) => Unit): Self = StObject.set(x, "addRevokedCert", js.Any.fromFunction2(value))
     

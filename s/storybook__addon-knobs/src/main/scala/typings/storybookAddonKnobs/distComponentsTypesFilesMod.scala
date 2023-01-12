@@ -68,7 +68,8 @@ object distComponentsTypesFilesMod {
       __obj.asInstanceOf[FileTypeKnob]
     }
     
-    extension [Self <: FileTypeKnob](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileTypeKnob] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     }
@@ -88,7 +89,8 @@ object distComponentsTypesFilesMod {
       __obj.asInstanceOf[FilesTypeProps]
     }
     
-    extension [Self <: FilesTypeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilesTypeProps] (val x: Self) extends AnyVal {
       
       inline def setKnob(value: FileTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     }

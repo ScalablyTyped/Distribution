@@ -18,7 +18,8 @@ object MessageImprintJson {
     __obj.asInstanceOf[MessageImprintJson]
   }
   
-  extension [Self <: MessageImprintJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageImprintJson] (val x: Self) extends AnyVal {
     
     inline def setHashAlgorithm(value: AlgorithmIdentifierJson): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
     

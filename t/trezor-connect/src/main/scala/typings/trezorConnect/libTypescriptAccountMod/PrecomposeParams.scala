@@ -36,7 +36,8 @@ object PrecomposeParams {
     __obj.asInstanceOf[PrecomposeParams]
   }
   
-  extension [Self <: PrecomposeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrecomposeParams] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: Addresses): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     

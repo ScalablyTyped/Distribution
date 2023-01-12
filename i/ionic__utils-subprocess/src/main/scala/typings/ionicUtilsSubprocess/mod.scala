@@ -155,7 +155,8 @@ object mod {
       __obj.asInstanceOf[SubprocessBashifyOptions]
     }
     
-    extension [Self <: SubprocessBashifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubprocessBashifyOptions] (val x: Self) extends AnyVal {
       
       inline def setMaskArgv0(value: Boolean): Self = StObject.set(x, "maskArgv0", value.asInstanceOf[js.Any])
       
@@ -186,7 +187,8 @@ object mod {
       __obj.asInstanceOf[WhichOptions]
     }
     
-    extension [Self <: WhichOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WhichOptions] (val x: Self) extends AnyVal {
       
       inline def setPATH(value: String): Self = StObject.set(x, "PATH", value.asInstanceOf[js.Any])
       

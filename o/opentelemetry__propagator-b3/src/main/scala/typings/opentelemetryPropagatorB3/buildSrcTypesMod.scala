@@ -39,7 +39,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[B3PropagatorConfig]
     }
     
-    extension [Self <: B3PropagatorConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: B3PropagatorConfig] (val x: Self) extends AnyVal {
       
       inline def setInjectEncoding(value: B3InjectEncoding): Self = StObject.set(x, "injectEncoding", value.asInstanceOf[js.Any])
       

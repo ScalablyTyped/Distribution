@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Arguments]
     }
     
-    extension [Self <: Arguments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Arguments] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: js.Array[FlowArgType]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -67,7 +69,8 @@ object anon {
       __obj.asInstanceOf[Properties]
     }
     
-    extension [Self <: Properties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Properties] (val x: Self) extends AnyVal {
       
       inline def setProperties(value: js.Array[Key]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
@@ -86,7 +89,8 @@ object anon {
       __obj.asInstanceOf[PropertiesArray]
     }
     
-    extension [Self <: PropertiesArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropertiesArray] (val x: Self) extends AnyVal {
       
       inline def setProperties(value: js.Array[Value]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
@@ -108,7 +112,8 @@ object anon {
       __obj.asInstanceOf[Return]
     }
     
-    extension [Self <: Return](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Return] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: js.Array[TSArgType]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
@@ -129,7 +134,8 @@ object anon {
       __obj.asInstanceOf[Rows]
     }
     
-    extension [Self <: Rows](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rows] (val x: Self) extends AnyVal {
       
       inline def setRows(value: js.Array[PropDef]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
@@ -152,7 +158,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

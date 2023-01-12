@@ -20,7 +20,8 @@ object TemplateOptions {
     __obj.asInstanceOf[TemplateOptions]
   }
   
-  extension [Self <: TemplateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateOptions] (val x: Self) extends AnyVal {
     
     inline def setSourceURL(value: java.lang.String): Self = StObject.set(x, "sourceURL", value.asInstanceOf[js.Any])
     

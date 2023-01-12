@@ -66,7 +66,8 @@ object reactPropsMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setHtmlRef(value: /* i */ Any => Unit): Self = StObject.set(x, "htmlRef", js.Any.fromFunction1(value))
       

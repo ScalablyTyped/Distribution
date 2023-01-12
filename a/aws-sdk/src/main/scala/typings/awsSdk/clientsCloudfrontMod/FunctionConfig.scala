@@ -23,7 +23,8 @@ object FunctionConfig {
     __obj.asInstanceOf[FunctionConfig]
   }
   
-  extension [Self <: FunctionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionConfig] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     

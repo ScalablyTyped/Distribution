@@ -28,7 +28,8 @@ object DisassociateNodeRequest {
     __obj.asInstanceOf[DisassociateNodeRequest]
   }
   
-  extension [Self <: DisassociateNodeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateNodeRequest] (val x: Self) extends AnyVal {
     
     inline def setEngineAttributes(value: EngineAttributes): Self = StObject.set(x, "EngineAttributes", value.asInstanceOf[js.Any])
     

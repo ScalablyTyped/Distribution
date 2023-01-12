@@ -216,7 +216,8 @@ object enginesEngineCapabilitiesMod {
       __obj.asInstanceOf[EngineCapabilities]
     }
     
-    extension [Self <: EngineCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EngineCapabilities] (val x: Self) extends AnyVal {
       
       inline def setAstc(value: Any): Self = StObject.set(x, "astc", value.asInstanceOf[js.Any])
       

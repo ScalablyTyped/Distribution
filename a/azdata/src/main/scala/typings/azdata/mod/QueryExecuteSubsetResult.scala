@@ -17,7 +17,8 @@ object QueryExecuteSubsetResult {
     __obj.asInstanceOf[QueryExecuteSubsetResult]
   }
   
-  extension [Self <: QueryExecuteSubsetResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryExecuteSubsetResult] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

@@ -88,7 +88,8 @@ object GetEventPredictionMetadataResult {
     __obj.asInstanceOf[GetEventPredictionMetadataResult]
   }
   
-  extension [Self <: GetEventPredictionMetadataResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEventPredictionMetadataResult] (val x: Self) extends AnyVal {
     
     inline def setDetectorId(value: identifier): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
     

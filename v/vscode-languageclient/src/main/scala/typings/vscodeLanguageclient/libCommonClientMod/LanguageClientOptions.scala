@@ -62,7 +62,8 @@ object LanguageClientOptions {
     __obj.asInstanceOf[LanguageClientOptions]
   }
   
-  extension [Self <: LanguageClientOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageClientOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectionOptions(value: CancellationStrategy): Self = StObject.set(x, "connectionOptions", value.asInstanceOf[js.Any])
     

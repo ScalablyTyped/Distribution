@@ -38,7 +38,8 @@ object UpdateBucketRequest {
     __obj.asInstanceOf[UpdateBucketRequest]
   }
   
-  extension [Self <: UpdateBucketRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBucketRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessLogConfig(value: BucketAccessLogConfig): Self = StObject.set(x, "accessLogConfig", value.asInstanceOf[js.Any])
     

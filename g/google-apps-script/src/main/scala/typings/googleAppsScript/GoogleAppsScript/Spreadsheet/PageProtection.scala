@@ -36,7 +36,8 @@ object PageProtection {
     __obj.asInstanceOf[PageProtection]
   }
   
-  extension [Self <: PageProtection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageProtection] (val x: Self) extends AnyVal {
     
     inline def setAddUser(value: String => Unit): Self = StObject.set(x, "addUser", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object ChartValueAxisItemMajorTicks {
     __obj.asInstanceOf[ChartValueAxisItemMajorTicks]
   }
   
-  extension [Self <: ChartValueAxisItemMajorTicks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartValueAxisItemMajorTicks] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

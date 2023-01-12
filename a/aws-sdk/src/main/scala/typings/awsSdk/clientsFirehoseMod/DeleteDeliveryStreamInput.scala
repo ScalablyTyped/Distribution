@@ -23,7 +23,8 @@ object DeleteDeliveryStreamInput {
     __obj.asInstanceOf[DeleteDeliveryStreamInput]
   }
   
-  extension [Self <: DeleteDeliveryStreamInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDeliveryStreamInput] (val x: Self) extends AnyVal {
     
     inline def setAllowForceDelete(value: BooleanObject): Self = StObject.set(x, "AllowForceDelete", value.asInstanceOf[js.Any])
     

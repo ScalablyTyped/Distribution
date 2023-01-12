@@ -23,7 +23,8 @@ object Command {
     __obj.asInstanceOf[Command]
   }
   
-  extension [Self <: Command](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
     
     inline def setReboot(value: Reboot): Self = StObject.set(x, "reboot", value.asInstanceOf[js.Any])
     

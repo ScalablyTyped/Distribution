@@ -83,7 +83,8 @@ object MongoDbSettings {
     __obj.asInstanceOf[MongoDbSettings]
   }
   
-  extension [Self <: MongoDbSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MongoDbSettings] (val x: Self) extends AnyVal {
     
     inline def setAuthMechanism(value: AuthMechanismValue): Self = StObject.set(x, "AuthMechanism", value.asInstanceOf[js.Any])
     

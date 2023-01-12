@@ -40,7 +40,8 @@ object distDiagnosticsMod {
       __obj.asInstanceOf[IDiagnostics]
     }
     
-    extension [Self <: IDiagnostics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDiagnostics] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: DiagnosticCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       

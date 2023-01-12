@@ -15,7 +15,8 @@ object CapLevelControllerConfig {
     __obj.asInstanceOf[CapLevelControllerConfig]
   }
   
-  extension [Self <: CapLevelControllerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapLevelControllerConfig] (val x: Self) extends AnyVal {
     
     inline def setCapLevelToPlayerSize(value: Boolean): Self = StObject.set(x, "capLevelToPlayerSize", value.asInstanceOf[js.Any])
   }

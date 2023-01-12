@@ -16,7 +16,8 @@ object IClientBatchGetRequest {
     __obj.asInstanceOf[IClientBatchGetRequest]
   }
   
-  extension [Self <: IClientBatchGetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientBatchGetRequest] (val x: Self) extends AnyVal {
     
     inline def setBatchId(value: String): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     

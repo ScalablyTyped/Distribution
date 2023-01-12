@@ -28,7 +28,8 @@ object BreakpointsChangeEvent {
     __obj.asInstanceOf[BreakpointsChangeEvent]
   }
   
-  extension [Self <: BreakpointsChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreakpointsChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setAdded(value: js.Array[Breakpoint]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     

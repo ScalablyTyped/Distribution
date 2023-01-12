@@ -18,7 +18,8 @@ object ISerializer {
     __obj.asInstanceOf[ISerializer[T]]
   }
   
-  extension [Self <: ISerializer[?], T](x: Self & ISerializer[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISerializer[?], T] (val x: Self & ISerializer[T]) extends AnyVal {
     
     inline def setDecode(value: Buffer => T | Null): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     

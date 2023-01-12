@@ -65,7 +65,8 @@ object distLibConverterCommentsMod {
       __obj.asInstanceOf[CommentParserConfig]
     }
     
-    extension [Self <: CommentParserConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentParserConfig] (val x: Self) extends AnyVal {
       
       inline def setBlockTags(value: Set[String]): Self = StObject.set(x, "blockTags", value.asInstanceOf[js.Any])
       

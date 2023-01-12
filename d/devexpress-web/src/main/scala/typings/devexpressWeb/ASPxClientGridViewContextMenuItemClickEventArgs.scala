@@ -50,7 +50,8 @@ object ASPxClientGridViewContextMenuItemClickEventArgs {
     __obj.asInstanceOf[ASPxClientGridViewContextMenuItemClickEventArgs]
   }
   
-  extension [Self <: ASPxClientGridViewContextMenuItemClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGridViewContextMenuItemClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setElementIndex(value: Double): Self = StObject.set(x, "elementIndex", value.asInstanceOf[js.Any])
     

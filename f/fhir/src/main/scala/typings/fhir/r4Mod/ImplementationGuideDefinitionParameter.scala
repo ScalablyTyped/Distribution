@@ -42,7 +42,8 @@ object ImplementationGuideDefinitionParameter {
     __obj.asInstanceOf[ImplementationGuideDefinitionParameter]
   }
   
-  extension [Self <: ImplementationGuideDefinitionParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImplementationGuideDefinitionParameter] (val x: Self) extends AnyVal {
     
     inline def setCode(
       value: apply | `path-resource` | `path-pages` | `path-tx-cache` | `expansion-parameter` | `rule-broken-links` | `generate-xml` | `generate-json` | `generate-turtle` | `html-template`

@@ -53,7 +53,8 @@ object mod {
       __obj.asInstanceOf[GCStatistics]
     }
     
-    extension [Self <: GCStatistics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GCStatistics] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: MemoryStatistics): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -127,7 +128,8 @@ object mod {
       __obj.asInstanceOf[MemoryStatistics]
     }
     
-    extension [Self <: MemoryStatistics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemoryStatistics] (val x: Self) extends AnyVal {
       
       inline def setHeapSizeLimit(value: Double): Self = StObject.set(x, "heapSizeLimit", value.asInstanceOf[js.Any])
       

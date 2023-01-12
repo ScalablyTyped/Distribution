@@ -28,7 +28,8 @@ object ListDomainsRequest {
     __obj.asInstanceOf[ListDomainsRequest]
   }
   
-  extension [Self <: ListDomainsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDomainsRequest] (val x: Self) extends AnyVal {
     
     inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
     

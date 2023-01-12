@@ -20,7 +20,8 @@ object CustomTypeParameters {
     __obj.asInstanceOf[CustomTypeParameters]
   }
   
-  extension [Self <: CustomTypeParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomTypeParameters] (val x: Self) extends AnyVal {
     
     inline def setReturnEmptyString(value: Boolean): Self = StObject.set(x, "returnEmptyString", value.asInstanceOf[js.Any])
     

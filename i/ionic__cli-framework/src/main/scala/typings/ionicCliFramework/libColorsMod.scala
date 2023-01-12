@@ -38,7 +38,8 @@ object libColorsMod {
       __obj.asInstanceOf[Colors]
     }
     
-    extension [Self <: Colors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
       
       inline def setHelp(value: HelpColors): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     }
@@ -65,7 +66,8 @@ object libColorsMod {
       __obj.asInstanceOf[HelpColors]
     }
     
-    extension [Self <: HelpColors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelpColors] (val x: Self) extends AnyVal {
       
       inline def setGroup(value: HelpGroupColors): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object libColorsMod {
       __obj.asInstanceOf[HelpGroupColors]
     }
     
-    extension [Self <: HelpGroupColors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelpGroupColors] (val x: Self) extends AnyVal {
       
       inline def setBeta(value: ColorFunction): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
       

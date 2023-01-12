@@ -33,7 +33,8 @@ object RollupBuild {
     __obj.asInstanceOf[RollupBuild]
   }
   
-  extension [Self <: RollupBuild](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupBuild] (val x: Self) extends AnyVal {
     
     inline def setCache(value: RollupCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

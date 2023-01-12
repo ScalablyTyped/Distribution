@@ -15,7 +15,8 @@ object IPickerClosingDeferral {
     __obj.asInstanceOf[IPickerClosingDeferral]
   }
   
-  extension [Self <: IPickerClosingDeferral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPickerClosingDeferral] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }

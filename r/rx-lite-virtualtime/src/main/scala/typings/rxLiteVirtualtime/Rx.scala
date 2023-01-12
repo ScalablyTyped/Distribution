@@ -90,7 +90,8 @@ object Rx {
       __obj.asInstanceOf[VirtualTimeScheduler[TAbsolute, TRelative]]
     }
     
-    extension [Self <: VirtualTimeScheduler[?, ?], TAbsolute, TRelative](x: Self & (VirtualTimeScheduler[TAbsolute, TRelative])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualTimeScheduler[?, ?], TAbsolute, TRelative] (val x: Self & (VirtualTimeScheduler[TAbsolute, TRelative])) extends AnyVal {
       
       inline def setAdd(value: (TAbsolute, TRelative) => TAbsolute): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       

@@ -21,7 +21,8 @@ object BasicAuthenticationSecurity {
     __obj.asInstanceOf[BasicAuthenticationSecurity]
   }
   
-  extension [Self <: BasicAuthenticationSecurity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicAuthenticationSecurity] (val x: Self) extends AnyVal {
     
     inline def setType(value: basic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

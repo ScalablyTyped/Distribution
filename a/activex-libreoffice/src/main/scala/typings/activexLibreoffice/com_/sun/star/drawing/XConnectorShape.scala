@@ -47,7 +47,8 @@ object XConnectorShape {
     __obj.asInstanceOf[XConnectorShape]
   }
   
-  extension [Self <: XConnectorShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConnectorShape] (val x: Self) extends AnyVal {
     
     inline def setConnectEnd(value: (XConnectableShape, ConnectionType) => Unit): Self = StObject.set(x, "connectEnd", js.Any.fromFunction2(value))
     

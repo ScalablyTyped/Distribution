@@ -29,7 +29,8 @@ object NetworkResourceDefinition {
     __obj.asInstanceOf[NetworkResourceDefinition]
   }
   
-  extension [Self <: NetworkResourceDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkResourceDefinition] (val x: Self) extends AnyVal {
     
     inline def setCount(value: NetworkResourceDefinitionCountInteger): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

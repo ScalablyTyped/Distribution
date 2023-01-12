@@ -46,7 +46,8 @@ object Qwest {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object Qwest {
       __obj.asInstanceOf[Promise]
     }
     
-    extension [Self <: Promise](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Promise] (val x: Self) extends AnyVal {
       
       inline def setCatch(
         value: js.Function3[/* e */ Any, /* xhr */ js.UndefOr[Any], /* response */ js.UndefOr[Any], Any] => Promise

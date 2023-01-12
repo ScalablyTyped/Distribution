@@ -25,7 +25,8 @@ object SendAnimationOptions {
     __obj.asInstanceOf[SendAnimationOptions]
   }
   
-  extension [Self <: SendAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     

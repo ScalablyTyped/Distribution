@@ -58,7 +58,8 @@ object typesTreatmentResourceMod {
       __obj.asInstanceOf[TreatmentResource]
     }
     
-    extension [Self <: TreatmentResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreatmentResource] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object typesTreatmentResourceMod {
       __obj.asInstanceOf[UnmarshalledTreatmentResource]
     }
     
-    extension [Self <: UnmarshalledTreatmentResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledTreatmentResource] (val x: Self) extends AnyVal {
       
       inline def setMessageConfiguration(value: UnmarshalledMessageConfiguration): Self = StObject.set(x, "MessageConfiguration", value.asInstanceOf[js.Any])
       

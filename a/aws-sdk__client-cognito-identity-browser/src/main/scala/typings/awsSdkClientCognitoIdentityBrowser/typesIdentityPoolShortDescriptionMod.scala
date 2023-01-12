@@ -25,7 +25,8 @@ object typesIdentityPoolShortDescriptionMod {
       __obj.asInstanceOf[IdentityPoolShortDescription]
     }
     
-    extension [Self <: IdentityPoolShortDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentityPoolShortDescription] (val x: Self) extends AnyVal {
       
       inline def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
       

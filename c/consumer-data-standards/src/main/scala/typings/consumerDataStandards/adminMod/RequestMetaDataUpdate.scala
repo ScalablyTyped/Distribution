@@ -21,7 +21,8 @@ object RequestMetaDataUpdate {
     __obj.asInstanceOf[RequestMetaDataUpdate]
   }
   
-  extension [Self <: RequestMetaDataUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestMetaDataUpdate] (val x: Self) extends AnyVal {
     
     inline def setData(value: Action): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

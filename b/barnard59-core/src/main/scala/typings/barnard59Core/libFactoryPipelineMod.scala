@@ -39,7 +39,8 @@ object libFactoryPipelineMod {
       __obj.asInstanceOf[CreatePipeline]
     }
     
-    extension [Self <: CreatePipeline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreatePipeline] (val x: Self) extends AnyVal {
       
       inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       

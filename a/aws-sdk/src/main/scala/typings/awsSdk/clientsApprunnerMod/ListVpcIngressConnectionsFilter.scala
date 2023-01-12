@@ -23,7 +23,8 @@ object ListVpcIngressConnectionsFilter {
     __obj.asInstanceOf[ListVpcIngressConnectionsFilter]
   }
   
-  extension [Self <: ListVpcIngressConnectionsFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListVpcIngressConnectionsFilter] (val x: Self) extends AnyVal {
     
     inline def setServiceArn(value: AppRunnerResourceArn): Self = StObject.set(x, "ServiceArn", value.asInstanceOf[js.Any])
     

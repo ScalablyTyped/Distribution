@@ -24,7 +24,8 @@ object AssignmentProperty {
     __obj.asInstanceOf[AssignmentProperty]
   }
   
-  extension [Self <: AssignmentProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignmentProperty] (val x: Self) extends AnyVal {
     
     inline def setKey(value: Identifier): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

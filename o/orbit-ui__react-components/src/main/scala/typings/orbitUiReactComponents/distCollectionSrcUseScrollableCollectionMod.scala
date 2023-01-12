@@ -40,7 +40,8 @@ object distCollectionSrcUseScrollableCollectionMod {
       __obj.asInstanceOf[UseScrollableCollectionOptions]
     }
     
-    extension [Self <: UseScrollableCollectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseScrollableCollectionOptions] (val x: Self) extends AnyVal {
       
       inline def setBorderHeight(value: Double): Self = StObject.set(x, "borderHeight", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Angle]
     }
     
-    extension [Self <: Angle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Angle] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object anon {
       __obj.asInstanceOf[AvailablePan]
     }
     
-    extension [Self <: AvailablePan](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvailablePan] (val x: Self) extends AnyVal {
       
       inline def setAvailablePan(value: Boolean): Self = StObject.set(x, "availablePan", value.asInstanceOf[js.Any])
       
@@ -179,7 +181,8 @@ object anon {
       __obj.asInstanceOf[Direction]
     }
     
-    extension [Self <: Direction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -210,7 +213,8 @@ object anon {
       __obj.asInstanceOf[Time]
     }
     
-    extension [Self <: Time](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Time] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       

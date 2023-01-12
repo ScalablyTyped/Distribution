@@ -27,7 +27,8 @@ object PickImplescapePartialPick {
     __obj.asInstanceOf[PickImplescapePartialPick]
   }
   
-  extension [Self <: PickImplescapePartialPick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplescapePartialPick] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: /* response */ Any => String): Self = StObject.set(x, "category", js.Any.fromFunction1(value))
     

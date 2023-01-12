@@ -18,7 +18,8 @@ object MediaPrompt {
     __obj.asInstanceOf[MediaPrompt]
   }
   
-  extension [Self <: MediaPrompt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaPrompt] (val x: Self) extends AnyVal {
     
     inline def setMediaInfo(value: MediaInfo): Self = StObject.set(x, "mediaInfo", value.asInstanceOf[js.Any])
     

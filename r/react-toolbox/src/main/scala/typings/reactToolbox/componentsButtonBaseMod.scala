@@ -70,7 +70,8 @@ object componentsButtonBaseMod {
       __obj.asInstanceOf[ButtonBaseProps]
     }
     
-    extension [Self <: ButtonBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonBaseProps] (val x: Self) extends AnyVal {
       
       inline def setAccent(value: Boolean): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
       
@@ -179,7 +180,8 @@ object componentsButtonBaseMod {
       __obj.asInstanceOf[ButtonTheme]
     }
     
-    extension [Self <: ButtonTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonTheme] (val x: Self) extends AnyVal {
       
       inline def setAccent(value: String): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
       

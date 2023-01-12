@@ -28,7 +28,8 @@ object UntagAttendeeRequest {
     __obj.asInstanceOf[UntagAttendeeRequest]
   }
   
-  extension [Self <: UntagAttendeeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UntagAttendeeRequest] (val x: Self) extends AnyVal {
     
     inline def setAttendeeId(value: GuidString): Self = StObject.set(x, "AttendeeId", value.asInstanceOf[js.Any])
     

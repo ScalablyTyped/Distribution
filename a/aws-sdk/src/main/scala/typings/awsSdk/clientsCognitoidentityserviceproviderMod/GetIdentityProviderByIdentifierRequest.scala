@@ -23,7 +23,8 @@ object GetIdentityProviderByIdentifierRequest {
     __obj.asInstanceOf[GetIdentityProviderByIdentifierRequest]
   }
   
-  extension [Self <: GetIdentityProviderByIdentifierRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIdentityProviderByIdentifierRequest] (val x: Self) extends AnyVal {
     
     inline def setIdpIdentifier(value: IdpIdentifierType): Self = StObject.set(x, "IdpIdentifier", value.asInstanceOf[js.Any])
     

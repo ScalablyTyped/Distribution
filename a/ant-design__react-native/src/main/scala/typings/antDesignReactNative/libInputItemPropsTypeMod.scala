@@ -71,7 +71,8 @@ object libInputItemPropsTypeMod {
       __obj.asInstanceOf[InputItemPropsType]
     }
     
-    extension [Self <: InputItemPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputItemPropsType] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

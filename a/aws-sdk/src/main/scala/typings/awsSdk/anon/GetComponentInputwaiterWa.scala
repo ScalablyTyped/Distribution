@@ -24,7 +24,8 @@ object GetComponentInputwaiterWa {
     __obj.asInstanceOf[GetComponentInputwaiterWa]
   }
   
-  extension [Self <: GetComponentInputwaiterWa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetComponentInputwaiterWa] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

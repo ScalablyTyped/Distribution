@@ -22,7 +22,8 @@ object ScopedPlayerIds {
     __obj.asInstanceOf[ScopedPlayerIds]
   }
   
-  extension [Self <: ScopedPlayerIds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScopedPlayerIds] (val x: Self) extends AnyVal {
     
     inline def setDeveloperPlayerKey(value: String): Self = StObject.set(x, "developerPlayerKey", value.asInstanceOf[js.Any])
     

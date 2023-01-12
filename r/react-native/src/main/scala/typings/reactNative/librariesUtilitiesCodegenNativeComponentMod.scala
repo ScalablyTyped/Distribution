@@ -35,7 +35,8 @@ object librariesUtilitiesCodegenNativeComponentMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setExcludedPlatforms(value: js.Array[iOS | android]): Self = StObject.set(x, "excludedPlatforms", value.asInstanceOf[js.Any])
       

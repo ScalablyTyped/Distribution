@@ -21,7 +21,8 @@ object AlphaTypeEnumValues {
     __obj.asInstanceOf[AlphaTypeEnumValues]
   }
   
-  extension [Self <: AlphaTypeEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlphaTypeEnumValues] (val x: Self) extends AnyVal {
     
     inline def setOpaque(value: AlphaType): Self = StObject.set(x, "Opaque", value.asInstanceOf[js.Any])
     

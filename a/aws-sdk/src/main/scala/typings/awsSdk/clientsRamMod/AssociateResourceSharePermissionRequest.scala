@@ -38,7 +38,8 @@ object AssociateResourceSharePermissionRequest {
     __obj.asInstanceOf[AssociateResourceSharePermissionRequest]
   }
   
-  extension [Self <: AssociateResourceSharePermissionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateResourceSharePermissionRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

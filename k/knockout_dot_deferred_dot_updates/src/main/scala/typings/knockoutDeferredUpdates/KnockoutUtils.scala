@@ -18,7 +18,8 @@ object KnockoutUtils {
     __obj.asInstanceOf[KnockoutUtils]
   }
   
-  extension [Self <: KnockoutUtils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutUtils] (val x: Self) extends AnyVal {
     
     inline def setObjectForEach(value: (Any, js.Function) => Unit): Self = StObject.set(x, "objectForEach", js.Any.fromFunction2(value))
     

@@ -18,7 +18,8 @@ object AwsService {
     __obj.asInstanceOf[AwsService]
   }
   
-  extension [Self <: AwsService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsService] (val x: Self) extends AnyVal {
     
     inline def setInvokedBy(value: string): Self = StObject.set(x, "invokedBy", value.asInstanceOf[js.Any])
     

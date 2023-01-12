@@ -71,7 +71,8 @@ object EnforceSingleParent {
     __obj.asInstanceOf[EnforceSingleParent]
   }
   
-  extension [Self <: EnforceSingleParent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnforceSingleParent] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

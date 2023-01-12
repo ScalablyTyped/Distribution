@@ -23,7 +23,8 @@ object UntagProjectRequest {
     __obj.asInstanceOf[UntagProjectRequest]
   }
   
-  extension [Self <: UntagProjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UntagProjectRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: ProjectId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

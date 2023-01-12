@@ -27,7 +27,8 @@ object Flat {
     __obj.asInstanceOf[Flat]
   }
   
-  extension [Self <: Flat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Flat] (val x: Self) extends AnyVal {
     
     inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     

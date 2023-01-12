@@ -23,7 +23,8 @@ object PhoneMultiFactorEnrollInfoOptions {
     __obj.asInstanceOf[PhoneMultiFactorEnrollInfoOptions]
   }
   
-  extension [Self <: PhoneMultiFactorEnrollInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhoneMultiFactorEnrollInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     

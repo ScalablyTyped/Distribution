@@ -97,7 +97,8 @@ object mod {
       __obj.asInstanceOf[Diff2HtmlConfig]
     }
     
-    extension [Self <: Diff2HtmlConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Diff2HtmlConfig] (val x: Self) extends AnyVal {
       
       inline def setDrawFileList(value: Boolean): Self = StObject.set(x, "drawFileList", value.asInstanceOf[js.Any])
       

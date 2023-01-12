@@ -34,7 +34,8 @@ object SceneLayerCapabilitiesEditing {
     __obj.asInstanceOf[SceneLayerCapabilitiesEditing]
   }
   
-  extension [Self <: SceneLayerCapabilitiesEditing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneLayerCapabilitiesEditing] (val x: Self) extends AnyVal {
     
     inline def setSupportsGeometryUpdate(value: Boolean): Self = StObject.set(x, "supportsGeometryUpdate", value.asInstanceOf[js.Any])
     

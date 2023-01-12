@@ -205,7 +205,8 @@ object IRendererOptions {
     __obj.asInstanceOf[IRendererOptions]
   }
   
-  extension [Self <: IRendererOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRendererOptions] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

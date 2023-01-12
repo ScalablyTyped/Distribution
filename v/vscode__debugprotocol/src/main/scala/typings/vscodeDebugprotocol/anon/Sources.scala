@@ -16,7 +16,8 @@ object Sources {
     __obj.asInstanceOf[Sources]
   }
   
-  extension [Self <: Sources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sources] (val x: Self) extends AnyVal {
     
     inline def setSources(value: js.Array[typings.vscodeDebugprotocol.mod.DebugProtocol.Source]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     

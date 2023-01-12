@@ -164,7 +164,8 @@ object mod {
       __obj.asInstanceOf[Wasm]
     }
     
-    extension [Self <: Wasm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Wasm] (val x: Self) extends AnyVal {
       
       inline def setMemory(value: Memory): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       

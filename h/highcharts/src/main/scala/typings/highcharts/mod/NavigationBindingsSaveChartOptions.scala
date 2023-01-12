@@ -15,7 +15,8 @@ object NavigationBindingsSaveChartOptions {
     __obj.asInstanceOf[NavigationBindingsSaveChartOptions]
   }
   
-  extension [Self <: NavigationBindingsSaveChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationBindingsSaveChartOptions] (val x: Self) extends AnyVal {
     
     inline def setNoDataState(value: String): Self = StObject.set(x, "noDataState", value.asInstanceOf[js.Any])
     

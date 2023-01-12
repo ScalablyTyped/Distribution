@@ -22,7 +22,8 @@ object OpacitySliderStyleProperties {
     __obj.asInstanceOf[OpacitySliderStyleProperties]
   }
   
-  extension [Self <: OpacitySliderStyleProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpacitySliderStyleProperties] (val x: Self) extends AnyVal {
     
     inline def setTrackFillColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "trackFillColor", value.asInstanceOf[js.Any])
     

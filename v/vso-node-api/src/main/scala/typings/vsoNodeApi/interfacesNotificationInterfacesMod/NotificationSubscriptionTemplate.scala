@@ -30,7 +30,8 @@ object NotificationSubscriptionTemplate {
     __obj.asInstanceOf[NotificationSubscriptionTemplate]
   }
   
-  extension [Self <: NotificationSubscriptionTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationSubscriptionTemplate] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

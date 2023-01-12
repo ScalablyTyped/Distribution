@@ -27,7 +27,8 @@ object srcWorkflowInterfaceMod {
       __obj.asInstanceOf[LifeCycleEvent]
     }
     
-    extension [Self <: LifeCycleEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LifeCycleEvent] (val x: Self) extends AnyVal {
       
       inline def setKind(value: start | end | `workflow-start` | `workflow-end` | `post-tasks-start` | `post-tasks-end`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     }
@@ -48,7 +49,8 @@ object srcWorkflowInterfaceMod {
       __obj.asInstanceOf[RequiredWorkflowExecutionContext]
     }
     
-    extension [Self <: RequiredWorkflowExecutionContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredWorkflowExecutionContext] (val x: Self) extends AnyVal {
       
       inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
@@ -71,7 +73,8 @@ object srcWorkflowInterfaceMod {
       __obj.asInstanceOf[Workflow]
     }
     
-    extension [Self <: Workflow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Workflow] (val x: Self) extends AnyVal {
       
       inline def setContext(value: ReadonlyWorkflowExecution): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -98,7 +101,8 @@ object srcWorkflowInterfaceMod {
       __obj.asInstanceOf[WorkflowExecutionContext]
     }
     
-    extension [Self <: WorkflowExecutionContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkflowExecutionContext] (val x: Self) extends AnyVal {
       
       inline def setAllowPrivate(value: Boolean): Self = StObject.set(x, "allowPrivate", value.asInstanceOf[js.Any])
       

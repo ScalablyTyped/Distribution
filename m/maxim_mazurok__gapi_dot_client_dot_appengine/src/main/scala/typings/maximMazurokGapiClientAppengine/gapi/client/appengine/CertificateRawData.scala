@@ -25,7 +25,8 @@ object CertificateRawData {
     __obj.asInstanceOf[CertificateRawData]
   }
   
-  extension [Self <: CertificateRawData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateRawData] (val x: Self) extends AnyVal {
     
     inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
     

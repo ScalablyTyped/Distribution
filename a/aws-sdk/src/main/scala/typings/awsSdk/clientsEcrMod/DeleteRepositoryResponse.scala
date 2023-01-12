@@ -18,7 +18,8 @@ object DeleteRepositoryResponse {
     __obj.asInstanceOf[DeleteRepositoryResponse]
   }
   
-  extension [Self <: DeleteRepositoryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRepositoryResponse] (val x: Self) extends AnyVal {
     
     inline def setRepository(value: Repository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     

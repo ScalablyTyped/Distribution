@@ -64,7 +64,8 @@ object GoogleAppsCloudidentityDevicesV1ClientState {
     __obj.asInstanceOf[GoogleAppsCloudidentityDevicesV1ClientState]
   }
   
-  extension [Self <: GoogleAppsCloudidentityDevicesV1ClientState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1ClientState] (val x: Self) extends AnyVal {
     
     inline def setAssetTags(value: js.Array[String]): Self = StObject.set(x, "assetTags", value.asInstanceOf[js.Any])
     

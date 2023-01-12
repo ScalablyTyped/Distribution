@@ -203,7 +203,8 @@ object anon {
       __obj.asInstanceOf[Throttle]
     }
     
-    extension [Self <: Throttle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Throttle] (val x: Self) extends AnyVal {
       
       inline def setThrottle(value: (js.Function1[/* repeated */ Any, Any], Double) => js.Function1[/* repeated */ Any, Any]): Self = StObject.set(x, "throttle", js.Any.fromFunction2(value))
     }

@@ -19,7 +19,8 @@ object TableOptions {
     __obj.asInstanceOf[TableOptions]
   }
   
-  extension [Self <: TableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxTimeDeviation(value: Double): Self = StObject.set(x, "maxTimeDeviation", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object PartialGithubPickerStyles {
     __obj.asInstanceOf[PartialGithubPickerStyles]
   }
   
-  extension [Self <: PartialGithubPickerStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialGithubPickerStyles] (val x: Self) extends AnyVal {
     
     inline def setCard(value: CSSProperties): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     

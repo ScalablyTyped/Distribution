@@ -92,7 +92,8 @@ object OmitSearchControlPropspro {
     __obj.asInstanceOf[OmitSearchControlPropspro]
   }
   
-  extension [Self <: OmitSearchControlPropspro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitSearchControlPropspro] (val x: Self) extends AnyVal {
     
     inline def setAnimateZoom(value: Boolean): Self = StObject.set(x, "animateZoom", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object typingsMysqlLibProtocolPacketsOkPacketMod {
       __obj.asInstanceOf[OkPacket]
     }
     
-    extension [Self <: OkPacket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OkPacket] (val x: Self) extends AnyVal {
       
       inline def setAffectedRows(value: Double): Self = StObject.set(x, "affectedRows", value.asInstanceOf[js.Any])
       

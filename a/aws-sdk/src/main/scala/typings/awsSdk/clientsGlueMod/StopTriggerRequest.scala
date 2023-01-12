@@ -18,7 +18,8 @@ object StopTriggerRequest {
     __obj.asInstanceOf[StopTriggerRequest]
   }
   
-  extension [Self <: StopTriggerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopTriggerRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

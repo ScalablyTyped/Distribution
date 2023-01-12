@@ -17,7 +17,8 @@ object FileDescriptorInfo {
     __obj.asInstanceOf[FileDescriptorInfo]
   }
   
-  extension [Self <: FileDescriptorInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileDescriptorInfo] (val x: Self) extends AnyVal {
     
     inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     

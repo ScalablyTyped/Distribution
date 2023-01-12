@@ -79,7 +79,8 @@ object DeploymentPropertiesExtended {
     __obj.asInstanceOf[DeploymentPropertiesExtended]
   }
   
-  extension [Self <: DeploymentPropertiesExtended](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentPropertiesExtended] (val x: Self) extends AnyVal {
     
     inline def setCorrelationId(value: String): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
     

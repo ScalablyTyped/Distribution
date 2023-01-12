@@ -16,7 +16,8 @@ object CustomListGroup {
     __obj.asInstanceOf[CustomListGroup]
   }
   
-  extension [Self <: CustomListGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomListGroup] (val x: Self) extends AnyVal {
     
     inline def setSettings(value: js.Array[CustomListTargetingSetting]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     

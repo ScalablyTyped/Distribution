@@ -48,7 +48,8 @@ object DataCellsFilter {
     __obj.asInstanceOf[DataCellsFilter]
   }
   
-  extension [Self <: DataCellsFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataCellsFilter] (val x: Self) extends AnyVal {
     
     inline def setColumnNames(value: ColumnNames): Self = StObject.set(x, "ColumnNames", value.asInstanceOf[js.Any])
     

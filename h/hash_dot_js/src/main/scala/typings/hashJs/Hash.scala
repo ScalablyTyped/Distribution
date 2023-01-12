@@ -61,7 +61,8 @@ object Hash {
     __obj.asInstanceOf[Hash]
   }
   
-  extension [Self <: Hash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
     
     inline def setHmac(value: (/* hash */ BlockHash[Any], /* key */ Any, /* enc */ js.UndefOr[hex]) => Hmac): Self = StObject.set(x, "hmac", js.Any.fromFunction3(value))
     

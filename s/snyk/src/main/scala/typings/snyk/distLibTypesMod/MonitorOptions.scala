@@ -47,7 +47,8 @@ object MonitorOptions {
     __obj.asInstanceOf[MonitorOptions]
   }
   
-  extension [Self <: MonitorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitorOptions] (val x: Self) extends AnyVal {
     
     inline def setAllProjects(value: Boolean): Self = StObject.set(x, "allProjects", value.asInstanceOf[js.Any])
     

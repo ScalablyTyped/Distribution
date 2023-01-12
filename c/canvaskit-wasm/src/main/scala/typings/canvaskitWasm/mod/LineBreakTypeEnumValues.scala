@@ -19,7 +19,8 @@ object LineBreakTypeEnumValues {
     __obj.asInstanceOf[LineBreakTypeEnumValues]
   }
   
-  extension [Self <: LineBreakTypeEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineBreakTypeEnumValues] (val x: Self) extends AnyVal {
     
     inline def setHardtLineBreak(value: LineBreakType): Self = StObject.set(x, "HardtLineBreak", value.asInstanceOf[js.Any])
     

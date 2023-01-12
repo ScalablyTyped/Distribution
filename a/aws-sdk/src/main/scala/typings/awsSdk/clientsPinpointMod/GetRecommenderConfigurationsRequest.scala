@@ -23,7 +23,8 @@ object GetRecommenderConfigurationsRequest {
     __obj.asInstanceOf[GetRecommenderConfigurationsRequest]
   }
   
-  extension [Self <: GetRecommenderConfigurationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRecommenderConfigurationsRequest] (val x: Self) extends AnyVal {
     
     inline def setPageSize(value: string): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     

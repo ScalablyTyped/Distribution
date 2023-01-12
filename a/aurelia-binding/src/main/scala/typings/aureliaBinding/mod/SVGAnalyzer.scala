@@ -15,7 +15,8 @@ object SVGAnalyzer {
     __obj.asInstanceOf[SVGAnalyzer]
   }
   
-  extension [Self <: SVGAnalyzer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGAnalyzer] (val x: Self) extends AnyVal {
     
     inline def setIsStandardSvgAttribute(value: (String, String) => Boolean): Self = StObject.set(x, "isStandardSvgAttribute", js.Any.fromFunction2(value))
   }

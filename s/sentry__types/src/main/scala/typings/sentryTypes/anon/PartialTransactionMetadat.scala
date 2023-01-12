@@ -36,7 +36,8 @@ object PartialTransactionMetadat {
     __obj.asInstanceOf[PartialTransactionMetadat]
   }
   
-  extension [Self <: PartialTransactionMetadat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTransactionMetadat] (val x: Self) extends AnyVal {
     
     inline def setChanges(value: js.Array[TransactionNameChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     

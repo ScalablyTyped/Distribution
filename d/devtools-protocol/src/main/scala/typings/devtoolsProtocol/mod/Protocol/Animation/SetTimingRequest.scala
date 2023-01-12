@@ -28,7 +28,8 @@ object SetTimingRequest {
     __obj.asInstanceOf[SetTimingRequest]
   }
   
-  extension [Self <: SetTimingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetTimingRequest] (val x: Self) extends AnyVal {
     
     inline def setAnimationId(value: String): Self = StObject.set(x, "animationId", value.asInstanceOf[js.Any])
     

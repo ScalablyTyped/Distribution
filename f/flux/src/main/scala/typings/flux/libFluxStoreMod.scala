@@ -175,7 +175,8 @@ object libFluxStoreMod {
       __obj.asInstanceOf[FluxStore[TPayload]]
     }
     
-    extension [Self <: FluxStore[?], TPayload](x: Self & FluxStore[TPayload]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FluxStore[?], TPayload] (val x: Self & FluxStore[TPayload]) extends AnyVal {
       
       inline def setAddListener(value: js.Function0[Unit] => EventSubscription): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
       

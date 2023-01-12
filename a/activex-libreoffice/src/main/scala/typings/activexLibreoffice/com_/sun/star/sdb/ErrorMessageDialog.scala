@@ -50,7 +50,8 @@ object ErrorMessageDialog {
     __obj.asInstanceOf[ErrorMessageDialog]
   }
   
-  extension [Self <: ErrorMessageDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorMessageDialog] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: (String, XWindow, Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
   }

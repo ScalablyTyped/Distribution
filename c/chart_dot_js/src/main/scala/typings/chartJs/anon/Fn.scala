@@ -46,7 +46,8 @@ object Fn {
     __obj.asInstanceOf[Fn[TType]]
   }
   
-  extension [Self <: Fn[?], TType /* <: ChartType */](x: Self & Fn[TType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fn[?], TType /* <: ChartType */] (val x: Self & Fn[TType]) extends AnyVal {
     
     inline def setFn(value: (Any, Any, Double) => Any): Self = StObject.set(x, "fn", js.Any.fromFunction3(value))
     

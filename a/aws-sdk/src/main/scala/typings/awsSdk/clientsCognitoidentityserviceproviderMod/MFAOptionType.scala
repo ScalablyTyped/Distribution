@@ -23,7 +23,8 @@ object MFAOptionType {
     __obj.asInstanceOf[MFAOptionType]
   }
   
-  extension [Self <: MFAOptionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MFAOptionType] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: AttributeNameType): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     

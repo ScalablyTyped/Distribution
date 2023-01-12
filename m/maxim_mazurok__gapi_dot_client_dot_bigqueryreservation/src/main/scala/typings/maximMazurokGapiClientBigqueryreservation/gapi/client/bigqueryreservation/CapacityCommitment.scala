@@ -49,7 +49,8 @@ object CapacityCommitment {
     __obj.asInstanceOf[CapacityCommitment]
   }
   
-  extension [Self <: CapacityCommitment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapacityCommitment] (val x: Self) extends AnyVal {
     
     inline def setCommitmentEndTime(value: String): Self = StObject.set(x, "commitmentEndTime", value.asInstanceOf[js.Any])
     

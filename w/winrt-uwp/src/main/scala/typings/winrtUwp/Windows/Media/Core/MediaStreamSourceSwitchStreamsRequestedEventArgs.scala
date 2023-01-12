@@ -17,7 +17,8 @@ object MediaStreamSourceSwitchStreamsRequestedEventArgs {
     __obj.asInstanceOf[MediaStreamSourceSwitchStreamsRequestedEventArgs]
   }
   
-  extension [Self <: MediaStreamSourceSwitchStreamsRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaStreamSourceSwitchStreamsRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: MediaStreamSourceSwitchStreamsRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }

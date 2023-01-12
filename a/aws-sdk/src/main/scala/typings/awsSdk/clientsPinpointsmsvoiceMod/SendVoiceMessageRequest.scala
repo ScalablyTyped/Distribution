@@ -35,7 +35,8 @@ object SendVoiceMessageRequest {
     __obj.asInstanceOf[SendVoiceMessageRequest]
   }
   
-  extension [Self <: SendVoiceMessageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendVoiceMessageRequest] (val x: Self) extends AnyVal {
     
     inline def setCallerId(value: String): Self = StObject.set(x, "CallerId", value.asInstanceOf[js.Any])
     

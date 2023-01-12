@@ -17,7 +17,8 @@ object NodesSerializedClusterState {
     __obj.asInstanceOf[NodesSerializedClusterState]
   }
   
-  extension [Self <: NodesSerializedClusterState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesSerializedClusterState] (val x: Self) extends AnyVal {
     
     inline def setDiffs(value: NodesSerializedClusterStateDetail): Self = StObject.set(x, "diffs", value.asInstanceOf[js.Any])
     

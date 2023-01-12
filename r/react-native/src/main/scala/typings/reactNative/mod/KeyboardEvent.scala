@@ -30,7 +30,8 @@ object KeyboardEvent {
     __obj.asInstanceOf[KeyboardEvent]
   }
   
-  extension [Self <: KeyboardEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyboardEvent] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

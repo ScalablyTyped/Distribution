@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[FilesOptions]
     }
     
-    extension [Self <: FilesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilesOptions] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object mod {
       __obj.asInstanceOf[GenerateAttributesOptions]
     }
     
-    extension [Self <: GenerateAttributesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateAttributesOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: AttributesType): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -133,7 +135,8 @@ object mod {
       __obj.asInstanceOf[MiniHtmlWebpackPlugin]
     }
     
-    extension [Self <: MiniHtmlWebpackPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MiniHtmlWebpackPlugin] (val x: Self) extends AnyVal {
       
       inline def setPlugin(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ Any, js.Function0[Unit]) => Unit
@@ -172,7 +175,8 @@ object mod {
       __obj.asInstanceOf[PluginContext]
     }
     
-    extension [Self <: PluginContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginContext] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -238,7 +242,8 @@ object mod {
       __obj.asInstanceOf[PluginOptions]
     }
     
-    extension [Self <: PluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
       
       inline def setChunks(value: js.Array[String]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
       

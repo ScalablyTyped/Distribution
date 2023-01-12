@@ -33,7 +33,8 @@ object srcCoreServiceMod {
       __obj.asInstanceOf[Service]
     }
     
-    extension [Self <: Service](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
       
       inline def setBroadcast(value: (String, Any) => Unit): Self = StObject.set(x, "broadcast", js.Any.fromFunction2(value))
       

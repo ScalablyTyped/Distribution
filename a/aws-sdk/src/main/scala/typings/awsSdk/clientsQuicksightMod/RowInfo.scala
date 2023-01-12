@@ -28,7 +28,8 @@ object RowInfo {
     __obj.asInstanceOf[RowInfo]
   }
   
-  extension [Self <: RowInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowInfo] (val x: Self) extends AnyVal {
     
     inline def setRowsDropped(value: Long): Self = StObject.set(x, "RowsDropped", value.asInstanceOf[js.Any])
     

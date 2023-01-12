@@ -19,7 +19,8 @@ object TezosProposalOp {
     __obj.asInstanceOf[TezosProposalOp]
   }
   
-  extension [Self <: TezosProposalOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TezosProposalOp] (val x: Self) extends AnyVal {
     
     inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     

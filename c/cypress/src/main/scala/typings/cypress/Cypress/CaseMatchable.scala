@@ -23,7 +23,8 @@ object CaseMatchable {
     __obj.asInstanceOf[CaseMatchable]
   }
   
-  extension [Self <: CaseMatchable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaseMatchable] (val x: Self) extends AnyVal {
     
     inline def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
   }

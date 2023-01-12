@@ -23,7 +23,8 @@ object DropCapFormat {
     __obj.asInstanceOf[DropCapFormat]
   }
   
-  extension [Self <: DropCapFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropCapFormat] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

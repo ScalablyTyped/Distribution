@@ -101,7 +101,8 @@ object VisualMap {
       __obj.asInstanceOf[Continuous]
     }
     
-    extension [Self <: Continuous](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Continuous] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: auto | left | right | top | bottom): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -274,7 +275,8 @@ object VisualMap {
       __obj.asInstanceOf[PiecesObject]
     }
     
-    extension [Self <: PiecesObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PiecesObject] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -391,7 +393,8 @@ object VisualMap {
       __obj.asInstanceOf[Piecewise]
     }
     
-    extension [Self <: Piecewise](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Piecewise] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: auto | left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -598,7 +601,8 @@ object VisualMap {
       __obj.asInstanceOf[RangeObject]
     }
     
-    extension [Self <: RangeObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeObject] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String | js.Array[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

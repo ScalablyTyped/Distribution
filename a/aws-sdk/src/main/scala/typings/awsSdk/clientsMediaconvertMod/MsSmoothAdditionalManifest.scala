@@ -23,7 +23,8 @@ object MsSmoothAdditionalManifest {
     __obj.asInstanceOf[MsSmoothAdditionalManifest]
   }
   
-  extension [Self <: MsSmoothAdditionalManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MsSmoothAdditionalManifest] (val x: Self) extends AnyVal {
     
     inline def setManifestNameModifier(value: stringMin1): Self = StObject.set(x, "ManifestNameModifier", value.asInstanceOf[js.Any])
     

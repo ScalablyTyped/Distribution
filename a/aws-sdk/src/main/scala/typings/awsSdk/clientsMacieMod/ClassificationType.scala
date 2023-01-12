@@ -23,7 +23,8 @@ object ClassificationType {
     __obj.asInstanceOf[ClassificationType]
   }
   
-  extension [Self <: ClassificationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassificationType] (val x: Self) extends AnyVal {
     
     inline def setContinuous(value: S3ContinuousClassificationType): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
     

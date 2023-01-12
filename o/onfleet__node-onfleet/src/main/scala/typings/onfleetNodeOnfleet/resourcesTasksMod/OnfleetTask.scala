@@ -105,7 +105,8 @@ object OnfleetTask {
     __obj.asInstanceOf[OnfleetTask]
   }
   
-  extension [Self <: OnfleetTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnfleetTask] (val x: Self) extends AnyVal {
     
     inline def setBarcodes(value: Captured): Self = StObject.set(x, "barcodes", value.asInstanceOf[js.Any])
     

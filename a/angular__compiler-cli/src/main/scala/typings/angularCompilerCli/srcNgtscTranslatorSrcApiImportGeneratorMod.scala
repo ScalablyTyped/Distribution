@@ -22,7 +22,8 @@ object srcNgtscTranslatorSrcApiImportGeneratorMod {
       __obj.asInstanceOf[ImportGenerator[TExpression]]
     }
     
-    extension [Self <: ImportGenerator[?], TExpression](x: Self & ImportGenerator[TExpression]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportGenerator[?], TExpression] (val x: Self & ImportGenerator[TExpression]) extends AnyVal {
       
       inline def setGenerateNamedImport(value: (String, String) => NamedImport[TExpression]): Self = StObject.set(x, "generateNamedImport", js.Any.fromFunction2(value))
       
@@ -45,7 +46,8 @@ object srcNgtscTranslatorSrcApiImportGeneratorMod {
       __obj.asInstanceOf[NamedImport[TExpression]]
     }
     
-    extension [Self <: NamedImport[?], TExpression](x: Self & NamedImport[TExpression]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamedImport[?], TExpression] (val x: Self & NamedImport[TExpression]) extends AnyVal {
       
       inline def setModuleImport(value: TExpression): Self = StObject.set(x, "moduleImport", value.asInstanceOf[js.Any])
       

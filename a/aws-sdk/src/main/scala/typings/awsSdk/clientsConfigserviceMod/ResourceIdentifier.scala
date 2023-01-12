@@ -33,7 +33,8 @@ object ResourceIdentifier {
     __obj.asInstanceOf[ResourceIdentifier]
   }
   
-  extension [Self <: ResourceIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceIdentifier] (val x: Self) extends AnyVal {
     
     inline def setResourceDeletionTime(value: js.Date): Self = StObject.set(x, "resourceDeletionTime", value.asInstanceOf[js.Any])
     

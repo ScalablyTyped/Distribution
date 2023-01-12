@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsLockSquareMod extends Short
       __obj.asInstanceOf[LockSquareProps]
     }
     
-    extension [Self <: LockSquareProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LockSquareProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object libNavbarToggleMod {
       __obj.asInstanceOf[NavbarToggleProps]
     }
     
-    extension [Self <: NavbarToggleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarToggleProps] (val x: Self) extends AnyVal {
       
       inline def setOnClick(value: MouseEvent[Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       

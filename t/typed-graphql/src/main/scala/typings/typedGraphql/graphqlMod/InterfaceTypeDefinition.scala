@@ -24,7 +24,8 @@ object InterfaceTypeDefinition {
     __obj.asInstanceOf[InterfaceTypeDefinition]
   }
   
-  extension [Self <: InterfaceTypeDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterfaceTypeDefinition] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[FieldDefinition]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

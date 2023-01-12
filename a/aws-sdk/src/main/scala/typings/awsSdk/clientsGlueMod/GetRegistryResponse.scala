@@ -43,7 +43,8 @@ object GetRegistryResponse {
     __obj.asInstanceOf[GetRegistryResponse]
   }
   
-  extension [Self <: GetRegistryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRegistryResponse] (val x: Self) extends AnyVal {
     
     inline def setCreatedTime(value: CreatedTimestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     

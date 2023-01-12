@@ -28,7 +28,8 @@ object DatabaseUpdateCommand {
     __obj.asInstanceOf[DatabaseUpdateCommand]
   }
   
-  extension [Self <: DatabaseUpdateCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseUpdateCommand] (val x: Self) extends AnyVal {
     
     inline def setFieldName(value: String | InternalSymbol): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ReadableStreamIteratorOptions {
     __obj.asInstanceOf[ReadableStreamIteratorOptions]
   }
   
-  extension [Self <: ReadableStreamIteratorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadableStreamIteratorOptions] (val x: Self) extends AnyVal {
     
     inline def setPreventCancel(value: Boolean): Self = StObject.set(x, "preventCancel", value.asInstanceOf[js.Any])
     

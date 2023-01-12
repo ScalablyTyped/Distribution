@@ -32,7 +32,8 @@ object TestResultModelBase {
     __obj.asInstanceOf[TestResultModelBase]
   }
   
-  extension [Self <: TestResultModelBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestResultModelBase] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

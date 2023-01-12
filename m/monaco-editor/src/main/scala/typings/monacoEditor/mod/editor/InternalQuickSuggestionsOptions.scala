@@ -19,7 +19,8 @@ object InternalQuickSuggestionsOptions {
     __obj.asInstanceOf[InternalQuickSuggestionsOptions]
   }
   
-  extension [Self <: InternalQuickSuggestionsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalQuickSuggestionsOptions] (val x: Self) extends AnyVal {
     
     inline def setComments(value: QuickSuggestionsValue): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     

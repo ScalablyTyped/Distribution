@@ -33,7 +33,8 @@ object distCommandsSuggetMod {
       __obj.asInstanceOf[SugGetOptions]
     }
     
-    extension [Self <: SugGetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SugGetOptions] (val x: Self) extends AnyVal {
       
       inline def setFUZZY(value: `true`): Self = StObject.set(x, "FUZZY", value.asInstanceOf[js.Any])
       

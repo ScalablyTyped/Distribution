@@ -33,7 +33,8 @@ object ValidStorageOptions {
     __obj.asInstanceOf[ValidStorageOptions]
   }
   
-  extension [Self <: ValidStorageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidStorageOptions] (val x: Self) extends AnyVal {
     
     inline def setIopsToStorageRatio(value: DoubleRangeList): Self = StObject.set(x, "IopsToStorageRatio", value.asInstanceOf[js.Any])
     

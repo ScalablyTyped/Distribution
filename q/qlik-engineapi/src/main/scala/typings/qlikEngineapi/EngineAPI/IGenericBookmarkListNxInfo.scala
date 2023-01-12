@@ -22,7 +22,8 @@ object IGenericBookmarkListNxInfo {
     __obj.asInstanceOf[IGenericBookmarkListNxInfo]
   }
   
-  extension [Self <: IGenericBookmarkListNxInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericBookmarkListNxInfo] (val x: Self) extends AnyVal {
     
     inline def setQType(value: BookmarkList): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }

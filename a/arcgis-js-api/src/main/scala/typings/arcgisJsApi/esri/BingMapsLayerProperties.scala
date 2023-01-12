@@ -54,7 +54,8 @@ object BingMapsLayerProperties {
     __obj.asInstanceOf[BingMapsLayerProperties]
   }
   
-  extension [Self <: BingMapsLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BingMapsLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     

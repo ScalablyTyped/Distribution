@@ -16,7 +16,8 @@ object ActionPosition {
     __obj.asInstanceOf[ActionPosition]
   }
   
-  extension [Self <: ActionPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionPosition] (val x: Self) extends AnyVal {
     
     inline def set$actionPosition(value: typings.baseui.bannerTypesMod.ActionPosition): Self = StObject.set(x, "$actionPosition", value.asInstanceOf[js.Any])
   }

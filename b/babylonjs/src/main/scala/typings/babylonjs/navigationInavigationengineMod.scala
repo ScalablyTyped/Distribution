@@ -68,7 +68,8 @@ object navigationInavigationengineMod {
       __obj.asInstanceOf[IAgentParameters]
     }
     
-    extension [Self <: IAgentParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAgentParameters] (val x: Self) extends AnyVal {
       
       inline def setCollisionQueryRange(value: Double): Self = StObject.set(x, "collisionQueryRange", value.asInstanceOf[js.Any])
       
@@ -257,7 +258,8 @@ object navigationInavigationengineMod {
       __obj.asInstanceOf[ICrowd]
     }
     
-    extension [Self <: ICrowd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICrowd] (val x: Self) extends AnyVal {
       
       inline def setAddAgent(value: (Vector3, IAgentParameters, TransformNode) => Double): Self = StObject.set(x, "addAgent", js.Any.fromFunction3(value))
       
@@ -408,7 +410,8 @@ object navigationInavigationengineMod {
       __obj.asInstanceOf[INavMeshParameters]
     }
     
-    extension [Self <: INavMeshParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INavMeshParameters] (val x: Self) extends AnyVal {
       
       inline def setBorderSize(value: Double): Self = StObject.set(x, "borderSize", value.asInstanceOf[js.Any])
       
@@ -659,7 +662,8 @@ object navigationInavigationengineMod {
       __obj.asInstanceOf[INavigationEnginePlugin]
     }
     
-    extension [Self <: INavigationEnginePlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INavigationEnginePlugin] (val x: Self) extends AnyVal {
       
       inline def setAddBoxObstacle(value: (Vector3, Vector3, Double) => IObstacle): Self = StObject.set(x, "addBoxObstacle", js.Any.fromFunction3(value))
       

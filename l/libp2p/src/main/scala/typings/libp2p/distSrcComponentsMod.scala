@@ -224,7 +224,8 @@ object distSrcComponentsMod {
       __obj.asInstanceOf[Components]
     }
     
-    extension [Self <: Components](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Components] (val x: Self) extends AnyVal {
       
       inline def setAddressManager(value: AddressManager): Self = StObject.set(x, "addressManager", value.asInstanceOf[js.Any])
       
@@ -309,7 +310,8 @@ object distSrcComponentsMod {
       __obj.asInstanceOf[ComponentsInit]
     }
     
-    extension [Self <: ComponentsInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentsInit] (val x: Self) extends AnyVal {
       
       inline def setAddressManager(value: AddressManager): Self = StObject.set(x, "addressManager", value.asInstanceOf[js.Any])
       

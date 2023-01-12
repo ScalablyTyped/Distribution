@@ -40,7 +40,8 @@ object distExampleExampleMod {
       __obj.asInstanceOf[ExampleState]
     }
     
-    extension [Self <: ExampleState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExampleState] (val x: Self) extends AnyVal {
       
       inline def setList(value: js.Array[PlanetListItem]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object distExampleExampleMod {
       __obj.asInstanceOf[PlanetListItem]
     }
     
-    extension [Self <: PlanetListItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlanetListItem] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

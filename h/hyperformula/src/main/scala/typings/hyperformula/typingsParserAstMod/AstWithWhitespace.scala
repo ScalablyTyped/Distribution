@@ -15,7 +15,8 @@ object AstWithWhitespace {
     __obj.asInstanceOf[AstWithWhitespace]
   }
   
-  extension [Self <: AstWithWhitespace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AstWithWhitespace] (val x: Self) extends AnyVal {
     
     inline def setLeadingWhitespace(value: String): Self = StObject.set(x, "leadingWhitespace", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object AverageTPSMetrics {
     __obj.asInstanceOf[AverageTPSMetrics]
   }
   
-  extension [Self <: AverageTPSMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AverageTPSMetrics] (val x: Self) extends AnyVal {
     
     inline def setCurrentDay(value: Double): Self = StObject.set(x, "currentDay", value.asInstanceOf[js.Any])
     

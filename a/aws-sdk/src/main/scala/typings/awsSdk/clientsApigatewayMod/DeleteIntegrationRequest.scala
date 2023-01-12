@@ -28,7 +28,8 @@ object DeleteIntegrationRequest {
     __obj.asInstanceOf[DeleteIntegrationRequest]
   }
   
-  extension [Self <: DeleteIntegrationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteIntegrationRequest] (val x: Self) extends AnyVal {
     
     inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     

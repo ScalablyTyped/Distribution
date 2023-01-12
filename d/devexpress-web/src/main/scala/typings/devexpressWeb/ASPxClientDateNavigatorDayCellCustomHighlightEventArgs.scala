@@ -33,7 +33,8 @@ object ASPxClientDateNavigatorDayCellCustomHighlightEventArgs {
     __obj.asInstanceOf[ASPxClientDateNavigatorDayCellCustomHighlightEventArgs]
   }
   
-  extension [Self <: ASPxClientDateNavigatorDayCellCustomHighlightEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDateNavigatorDayCellCustomHighlightEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAppointments(value: js.Array[ASPxClientAppointment]): Self = StObject.set(x, "appointments", value.asInstanceOf[js.Any])
     

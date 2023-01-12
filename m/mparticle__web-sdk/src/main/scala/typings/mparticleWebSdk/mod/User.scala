@@ -70,7 +70,8 @@ object User {
     __obj.asInstanceOf[User]
   }
   
-  extension [Self <: User](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
     
     inline def setGetAllUserAttributes(value: () => AllUserAttributes): Self = StObject.set(x, "getAllUserAttributes", js.Any.fromFunction0(value))
     

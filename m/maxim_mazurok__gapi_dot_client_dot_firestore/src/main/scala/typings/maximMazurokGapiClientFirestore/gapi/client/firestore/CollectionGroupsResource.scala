@@ -17,7 +17,8 @@ object CollectionGroupsResource {
     __obj.asInstanceOf[CollectionGroupsResource]
   }
   
-  extension [Self <: CollectionGroupsResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionGroupsResource] (val x: Self) extends AnyVal {
     
     inline def setFields(value: FieldsResource): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetSolutionMetricsRequest {
     __obj.asInstanceOf[GetSolutionMetricsRequest]
   }
   
-  extension [Self <: GetSolutionMetricsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSolutionMetricsRequest] (val x: Self) extends AnyVal {
     
     inline def setSolutionVersionArn(value: Arn): Self = StObject.set(x, "solutionVersionArn", value.asInstanceOf[js.Any])
   }

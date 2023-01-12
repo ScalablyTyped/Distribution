@@ -30,7 +30,8 @@ object RouteRecordRedirect {
     __obj.asInstanceOf[RouteRecordRedirect]
   }
   
-  extension [Self <: RouteRecordRedirect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteRecordRedirect] (val x: Self) extends AnyVal {
     
     inline def setRedirect(value: RouteRecordRedirectOption): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     

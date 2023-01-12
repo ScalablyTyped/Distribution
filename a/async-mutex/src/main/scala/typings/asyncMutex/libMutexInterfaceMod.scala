@@ -36,7 +36,8 @@ object libMutexInterfaceMod {
       __obj.asInstanceOf[MutexInterface]
     }
     
-    extension [Self <: MutexInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutexInterface] (val x: Self) extends AnyVal {
       
       inline def setAcquire(value: () => js.Promise[Releaser]): Self = StObject.set(x, "acquire", js.Any.fromFunction0(value))
       

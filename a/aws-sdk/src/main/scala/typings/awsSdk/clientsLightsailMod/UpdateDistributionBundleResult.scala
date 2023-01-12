@@ -18,7 +18,8 @@ object UpdateDistributionBundleResult {
     __obj.asInstanceOf[UpdateDistributionBundleResult]
   }
   
-  extension [Self <: UpdateDistributionBundleResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDistributionBundleResult] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     

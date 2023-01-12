@@ -50,7 +50,8 @@ object EnvConfig {
     __obj.asInstanceOf[EnvConfig]
   }
   
-  extension [Self <: EnvConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvConfig] (val x: Self) extends AnyVal {
     
     inline def setCoreJs(value: String): Self = StObject.set(x, "coreJs", value.asInstanceOf[js.Any])
     

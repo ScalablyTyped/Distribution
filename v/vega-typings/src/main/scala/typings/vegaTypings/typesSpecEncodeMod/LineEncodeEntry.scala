@@ -21,7 +21,8 @@ object LineEncodeEntry {
     __obj.asInstanceOf[LineEncodeEntry]
   }
   
-  extension [Self <: LineEncodeEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineEncodeEntry] (val x: Self) extends AnyVal {
     
     inline def setInterpolate(value: ProductionRule[ScaledValueRef[Interpolate]]): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
     

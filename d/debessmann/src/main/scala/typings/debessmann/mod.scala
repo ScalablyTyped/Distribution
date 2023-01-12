@@ -55,7 +55,8 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setDm(value: DM): Self = StObject.set(x, "dm", value.asInstanceOf[js.Any])
       }

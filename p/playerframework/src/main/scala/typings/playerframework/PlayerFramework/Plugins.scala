@@ -52,7 +52,8 @@ object Plugins {
       __obj.asInstanceOf[AudioSelectorPlugin]
     }
     
-    extension [Self <: AudioSelectorPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AudioSelectorPlugin] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object Plugins {
       __obj.asInstanceOf[BufferingPlugin]
     }
     
-    extension [Self <: BufferingPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferingPlugin] (val x: Self) extends AnyVal {
       
       inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
@@ -144,7 +146,8 @@ object Plugins {
       __obj.asInstanceOf[CaptionSelectorPlugin]
     }
     
-    extension [Self <: CaptionSelectorPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptionSelectorPlugin] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -190,7 +193,8 @@ object Plugins {
       __obj.asInstanceOf[ChaptersPlugin]
     }
     
-    extension [Self <: ChaptersPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChaptersPlugin] (val x: Self) extends AnyVal {
       
       inline def setAutoCreateChaptersFromTextTracks(value: Boolean): Self = StObject.set(x, "autoCreateChaptersFromTextTracks", value.asInstanceOf[js.Any])
       
@@ -237,7 +241,8 @@ object Plugins {
       __obj.asInstanceOf[ControlPlugin]
     }
     
-    extension [Self <: ControlPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlPlugin] (val x: Self) extends AnyVal {
       
       inline def setCompactThresholdInInches(value: () => Double): Self = StObject.set(x, "compactThresholdInInches", js.Any.fromFunction0(value))
       
@@ -274,7 +279,8 @@ object Plugins {
       __obj.asInstanceOf[DisplayRequestPlugin]
     }
     
-    extension [Self <: DisplayRequestPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayRequestPlugin] (val x: Self) extends AnyVal {
       
       inline def setIsRequestActive(value: Boolean): Self = StObject.set(x, "isRequestActive", value.asInstanceOf[js.Any])
     }
@@ -306,7 +312,8 @@ object Plugins {
       __obj.asInstanceOf[ErrorPlugin]
     }
     
-    extension [Self <: ErrorPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorPlugin] (val x: Self) extends AnyVal {
       
       inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
@@ -340,7 +347,8 @@ object Plugins {
       __obj.asInstanceOf[LoaderPlugin]
     }
     
-    extension [Self <: LoaderPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderPlugin] (val x: Self) extends AnyVal {
       
       inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
@@ -374,7 +382,8 @@ object Plugins {
       __obj.asInstanceOf[PlayTimeTrackingPlugin]
     }
     
-    extension [Self <: PlayTimeTrackingPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayTimeTrackingPlugin] (val x: Self) extends AnyVal {
       
       inline def setPlayTime(value: Double): Self = StObject.set(x, "playTime", value.asInstanceOf[js.Any])
       
@@ -454,7 +463,8 @@ object Plugins {
       __obj.asInstanceOf[PlaylistPlugin]
     }
     
-    extension [Self <: PlaylistPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlaylistPlugin] (val x: Self) extends AnyVal {
       
       inline def setAutoAdvance(value: Boolean): Self = StObject.set(x, "autoAdvance", value.asInstanceOf[js.Any])
       
@@ -509,7 +519,8 @@ object Plugins {
       __obj.asInstanceOf[PositionTrackingPlugin]
     }
     
-    extension [Self <: PositionTrackingPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositionTrackingPlugin] (val x: Self) extends AnyVal {
       
       inline def setEvaluateOnForwardOnly(value: Boolean): Self = StObject.set(x, "evaluateOnForwardOnly", value.asInstanceOf[js.Any])
       
@@ -551,7 +562,8 @@ object Plugins {
       __obj.asInstanceOf[SystemTransportControlsPlugin]
     }
     
-    extension [Self <: SystemTransportControlsPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SystemTransportControlsPlugin] (val x: Self) extends AnyVal {
       
       inline def setIsNextTrackEnabled(value: Boolean): Self = StObject.set(x, "isNextTrackEnabled", value.asInstanceOf[js.Any])
       
@@ -586,7 +598,8 @@ object Plugins {
       __obj.asInstanceOf[TrackingPluginBase]
     }
     
-    extension [Self <: TrackingPluginBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackingPluginBase] (val x: Self) extends AnyVal {
       
       inline def setTrackingEvents(value: js.Array[Any]): Self = StObject.set(x, "trackingEvents", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ConfigOptions {
     __obj.asInstanceOf[ConfigOptions]
   }
   
-  extension [Self <: ConfigOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
     
     inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     

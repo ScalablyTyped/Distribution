@@ -39,7 +39,8 @@ object PlotBellcurveOnPointPositionOptions {
     __obj.asInstanceOf[PlotBellcurveOnPointPositionOptions]
   }
   
-  extension [Self <: PlotBellcurveOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotBellcurveOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

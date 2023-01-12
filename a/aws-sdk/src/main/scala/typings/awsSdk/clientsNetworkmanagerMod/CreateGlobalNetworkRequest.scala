@@ -23,7 +23,8 @@ object CreateGlobalNetworkRequest {
     __obj.asInstanceOf[CreateGlobalNetworkRequest]
   }
   
-  extension [Self <: CreateGlobalNetworkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGlobalNetworkRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: ConstrainedString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

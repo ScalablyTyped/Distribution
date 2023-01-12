@@ -33,7 +33,8 @@ object DeidentifyFhirStoreRequest {
     __obj.asInstanceOf[DeidentifyFhirStoreRequest]
   }
   
-  extension [Self <: DeidentifyFhirStoreRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeidentifyFhirStoreRequest] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: DeidentifyConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

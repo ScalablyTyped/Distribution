@@ -120,7 +120,8 @@ object SortsHeaders {
     __obj.asInstanceOf[SortsHeaders]
   }
   
-  extension [Self <: SortsHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortsHeaders] (val x: Self) extends AnyVal {
     
     inline def setAppendArrowDown(value: JQuery => Unit): Self = StObject.set(x, "appendArrowDown", js.Any.fromFunction1(value))
     

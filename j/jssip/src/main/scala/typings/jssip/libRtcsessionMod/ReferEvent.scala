@@ -23,7 +23,8 @@ object ReferEvent {
     __obj.asInstanceOf[ReferEvent]
   }
   
-  extension [Self <: ReferEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferEvent] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: js.Function): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     

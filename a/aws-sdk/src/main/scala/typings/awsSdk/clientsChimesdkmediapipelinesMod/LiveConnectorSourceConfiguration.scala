@@ -26,7 +26,8 @@ object LiveConnectorSourceConfiguration {
     __obj.asInstanceOf[LiveConnectorSourceConfiguration]
   }
   
-  extension [Self <: LiveConnectorSourceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveConnectorSourceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setChimeSdkMeetingLiveConnectorConfiguration(value: ChimeSdkMeetingLiveConnectorConfiguration): Self = StObject.set(x, "ChimeSdkMeetingLiveConnectorConfiguration", value.asInstanceOf[js.Any])
     

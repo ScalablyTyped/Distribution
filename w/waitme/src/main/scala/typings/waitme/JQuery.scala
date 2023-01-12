@@ -43,7 +43,8 @@ object JQuery {
     __obj.asInstanceOf[JQuery]
   }
   
-  extension [Self <: JQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
     
     inline def setOn(value: (close, js.Function0[Unit]) => JQuery): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     

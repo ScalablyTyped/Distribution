@@ -33,7 +33,8 @@ object HighlightedRange {
     __obj.asInstanceOf[HighlightedRange]
   }
   
-  extension [Self <: HighlightedRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlightedRange] (val x: Self) extends AnyVal {
     
     inline def setAllowMerginigWithOtherRanges(value: Boolean): Self = StObject.set(x, "AllowMerginigWithOtherRanges", value.asInstanceOf[js.Any])
     

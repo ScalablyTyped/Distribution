@@ -52,7 +52,8 @@ object libCalendarHeaderMod {
       __obj.asInstanceOf[CalendarHeaderProps[DateType]]
     }
     
-    extension [Self <: CalendarHeaderProps[?], DateType](x: Self & CalendarHeaderProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarHeaderProps[?], DateType] (val x: Self & CalendarHeaderProps[DateType]) extends AnyVal {
       
       inline def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
       

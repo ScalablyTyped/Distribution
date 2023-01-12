@@ -35,7 +35,8 @@ object ObjectTypeIndexer_ {
     __obj.asInstanceOf[ObjectTypeIndexer_]
   }
   
-  extension [Self <: ObjectTypeIndexer_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectTypeIndexer_] (val x: Self) extends AnyVal {
     
     inline def setId(value: Expression): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

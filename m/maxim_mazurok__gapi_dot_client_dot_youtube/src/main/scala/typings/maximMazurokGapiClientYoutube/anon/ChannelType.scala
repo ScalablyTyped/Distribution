@@ -148,7 +148,8 @@ object ChannelType {
     __obj.asInstanceOf[ChannelType]
   }
   
-  extension [Self <: ChannelType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelType] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

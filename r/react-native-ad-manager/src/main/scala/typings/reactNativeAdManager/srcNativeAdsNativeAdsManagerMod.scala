@@ -44,7 +44,8 @@ object srcNativeAdsNativeAdsManagerMod {
       __obj.asInstanceOf[NativeAdsManager]
     }
     
-    extension [Self <: NativeAdsManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeAdsManager] (val x: Self) extends AnyVal {
       
       inline def setAdUnitID(value: String): Self = StObject.set(x, "adUnitID", value.asInstanceOf[js.Any])
       

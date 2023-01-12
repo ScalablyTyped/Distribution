@@ -38,7 +38,8 @@ object ResponseAPI {
     __obj.asInstanceOf[ResponseAPI]
   }
   
-  extension [Self <: ResponseAPI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseAPI] (val x: Self) extends AnyVal {
     
     inline def setBody(value: js.Promise[ResponseBody]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

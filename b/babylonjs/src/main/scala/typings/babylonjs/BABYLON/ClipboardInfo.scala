@@ -25,7 +25,8 @@ object ClipboardInfo {
     __obj.asInstanceOf[ClipboardInfo]
   }
   
-  extension [Self <: ClipboardInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClipboardInfo] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: ClipboardEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

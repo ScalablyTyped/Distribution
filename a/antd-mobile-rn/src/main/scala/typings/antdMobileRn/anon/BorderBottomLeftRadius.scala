@@ -32,7 +32,8 @@ object BorderBottomLeftRadius {
     __obj.asInstanceOf[BorderBottomLeftRadius]
   }
   
-  extension [Self <: BorderBottomLeftRadius](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderBottomLeftRadius] (val x: Self) extends AnyVal {
     
     inline def setBorderBottomLeftRadius(value: Double): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
     

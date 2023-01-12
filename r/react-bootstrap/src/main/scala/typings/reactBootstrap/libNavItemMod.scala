@@ -68,7 +68,8 @@ object libNavItemMod {
       __obj.asInstanceOf[NavItemProps]
     }
     
-    extension [Self <: NavItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavItemProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

@@ -67,7 +67,8 @@ object CanvasCameraOptions {
     __obj.asInstanceOf[CanvasCameraOptions]
   }
   
-  extension [Self <: CanvasCameraOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasCameraOptions] (val x: Self) extends AnyVal {
     
     inline def setCameraFacing(value: front | back): Self = StObject.set(x, "cameraFacing", value.asInstanceOf[js.Any])
     

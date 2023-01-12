@@ -1397,7 +1397,8 @@ object typesSrcSharedUtilMod {
       __obj.asInstanceOf[PromiseCapability]
     }
     
-    extension [Self <: PromiseCapability](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseCapability] (val x: Self) extends AnyVal {
       
       inline def setPromise(value: js.Promise[Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       

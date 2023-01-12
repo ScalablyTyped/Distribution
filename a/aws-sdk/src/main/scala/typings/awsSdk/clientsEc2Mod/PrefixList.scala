@@ -28,7 +28,8 @@ object PrefixList {
     __obj.asInstanceOf[PrefixList]
   }
   
-  extension [Self <: PrefixList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrefixList] (val x: Self) extends AnyVal {
     
     inline def setCidrs(value: ValueStringList): Self = StObject.set(x, "Cidrs", value.asInstanceOf[js.Any])
     

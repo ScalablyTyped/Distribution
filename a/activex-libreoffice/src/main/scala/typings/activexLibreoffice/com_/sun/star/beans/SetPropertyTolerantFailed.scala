@@ -28,7 +28,8 @@ object SetPropertyTolerantFailed {
     __obj.asInstanceOf[SetPropertyTolerantFailed]
   }
   
-  extension [Self <: SetPropertyTolerantFailed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetPropertyTolerantFailed] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

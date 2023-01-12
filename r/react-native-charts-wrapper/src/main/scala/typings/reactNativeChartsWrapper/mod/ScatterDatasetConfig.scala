@@ -30,7 +30,8 @@ object ScatterDatasetConfig {
     __obj.asInstanceOf[ScatterDatasetConfig]
   }
   
-  extension [Self <: ScatterDatasetConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScatterDatasetConfig] (val x: Self) extends AnyVal {
     
     inline def setScatterShape(value: SQUARE | CIRCLE | TRIANGLE | CROSS | X): Self = StObject.set(x, "scatterShape", value.asInstanceOf[js.Any])
     

@@ -98,7 +98,8 @@ object mod {
       __obj.asInstanceOf[SearchOptions]
     }
     
-    extension [Self <: SearchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
       
       inline def setBinc(value: Double): Self = StObject.set(x, "binc", value.asInstanceOf[js.Any])
       
@@ -161,7 +162,8 @@ object mod {
       __obj.asInstanceOf[SearchResult]
     }
     
-    extension [Self <: SearchResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
       
       inline def setBestmove(value: String): Self = StObject.set(x, "bestmove", value.asInstanceOf[js.Any])
       

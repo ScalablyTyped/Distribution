@@ -17,7 +17,8 @@ object PointProp {
     __obj.asInstanceOf[PointProp]
   }
   
-  extension [Self <: PointProp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointProp] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

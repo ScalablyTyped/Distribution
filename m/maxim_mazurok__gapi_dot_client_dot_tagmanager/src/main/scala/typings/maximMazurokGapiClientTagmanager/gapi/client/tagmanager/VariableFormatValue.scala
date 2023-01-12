@@ -28,7 +28,8 @@ object VariableFormatValue {
     __obj.asInstanceOf[VariableFormatValue]
   }
   
-  extension [Self <: VariableFormatValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariableFormatValue] (val x: Self) extends AnyVal {
     
     inline def setCaseConversionType(value: String): Self = StObject.set(x, "caseConversionType", value.asInstanceOf[js.Any])
     

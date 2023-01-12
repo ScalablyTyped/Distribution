@@ -18,7 +18,8 @@ object SubscribeResult {
     __obj.asInstanceOf[SubscribeResult]
   }
   
-  extension [Self <: SubscribeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscribeResult] (val x: Self) extends AnyVal {
     
     inline def setArn(value: NotificationRuleArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

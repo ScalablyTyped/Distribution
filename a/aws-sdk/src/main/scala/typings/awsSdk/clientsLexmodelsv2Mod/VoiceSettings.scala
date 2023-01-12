@@ -23,7 +23,8 @@ object VoiceSettings {
     __obj.asInstanceOf[VoiceSettings]
   }
   
-  extension [Self <: VoiceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceSettings] (val x: Self) extends AnyVal {
     
     inline def setEngine(value: VoiceEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     

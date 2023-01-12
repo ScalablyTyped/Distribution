@@ -22,7 +22,8 @@ object FrequencyCap {
     __obj.asInstanceOf[FrequencyCap]
   }
   
-  extension [Self <: FrequencyCap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrequencyCap] (val x: Self) extends AnyVal {
     
     inline def setMaxImpressions(value: Double): Self = StObject.set(x, "maxImpressions", value.asInstanceOf[js.Any])
     

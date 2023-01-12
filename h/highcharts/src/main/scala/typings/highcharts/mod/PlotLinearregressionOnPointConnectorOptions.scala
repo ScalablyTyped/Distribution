@@ -29,7 +29,8 @@ object PlotLinearregressionOnPointConnectorOptions {
     __obj.asInstanceOf[PlotLinearregressionOnPointConnectorOptions]
   }
   
-  extension [Self <: PlotLinearregressionOnPointConnectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotLinearregressionOnPointConnectorOptions] (val x: Self) extends AnyVal {
     
     inline def setDashstyle(value: String): Self = StObject.set(x, "dashstyle", value.asInstanceOf[js.Any])
     

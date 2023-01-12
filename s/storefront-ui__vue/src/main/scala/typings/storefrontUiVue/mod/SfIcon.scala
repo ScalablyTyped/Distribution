@@ -46,7 +46,8 @@ object SfIcon extends Shortcut {
       __obj.asInstanceOf[Computed]
     }
     
-    extension [Self <: Computed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Computed] (val x: Self) extends AnyVal {
       
       inline def setIconColorClass(value: String): Self = StObject.set(x, "iconColorClass", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object SfIcon extends Shortcut {
       __obj.asInstanceOf[Constructor]
     }
     
-    extension [Self <: Constructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constructor] (val x: Self) extends AnyVal {
       
       inline def setComputed(value: Computed): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object SfIcon extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setBadgeLabel(value: String): Self = StObject.set(x, "badgeLabel", value.asInstanceOf[js.Any])
       

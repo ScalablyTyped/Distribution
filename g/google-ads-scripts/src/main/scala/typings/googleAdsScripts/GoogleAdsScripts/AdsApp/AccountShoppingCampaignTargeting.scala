@@ -32,7 +32,8 @@ object AccountShoppingCampaignTargeting {
     __obj.asInstanceOf[AccountShoppingCampaignTargeting]
   }
   
-  extension [Self <: AccountShoppingCampaignTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountShoppingCampaignTargeting] (val x: Self) extends AnyVal {
     
     inline def setAudiences(value: () => ShoppingCampaignAudienceSelector): Self = StObject.set(x, "audiences", js.Any.fromFunction0(value))
   }

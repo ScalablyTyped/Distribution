@@ -43,7 +43,8 @@ object ConferenceProvider {
     __obj.asInstanceOf[ConferenceProvider]
   }
   
-  extension [Self <: ConferenceProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConferenceProvider] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

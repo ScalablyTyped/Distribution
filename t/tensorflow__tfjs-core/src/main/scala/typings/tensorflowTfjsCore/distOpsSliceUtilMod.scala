@@ -130,7 +130,8 @@ object distOpsSliceUtilMod {
       __obj.asInstanceOf[SliceInfo_]
     }
     
-    extension [Self <: SliceInfo_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliceInfo_] (val x: Self) extends AnyVal {
       
       inline def setBegin(value: js.Array[Double]): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
       

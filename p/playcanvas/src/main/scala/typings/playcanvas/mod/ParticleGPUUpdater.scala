@@ -158,7 +158,8 @@ object ParticleGPUUpdater {
     __obj.asInstanceOf[ParticleGPUUpdater]
   }
   
-  extension [Self <: ParticleGPUUpdater](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticleGPUUpdater] (val x: Self) extends AnyVal {
     
     inline def setConstantDelta(value: Any): Self = StObject.set(x, "constantDelta", value.asInstanceOf[js.Any])
     

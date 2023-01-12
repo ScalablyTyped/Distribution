@@ -49,7 +49,8 @@ object UpdateFunctionUrlConfigResponse {
     __obj.asInstanceOf[UpdateFunctionUrlConfigResponse]
   }
   
-  extension [Self <: UpdateFunctionUrlConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFunctionUrlConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setAuthType(value: FunctionUrlAuthType): Self = StObject.set(x, "AuthType", value.asInstanceOf[js.Any])
     

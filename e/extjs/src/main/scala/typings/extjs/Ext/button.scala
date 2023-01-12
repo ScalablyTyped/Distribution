@@ -275,7 +275,8 @@ object button {
       __obj.asInstanceOf[typings.extjs.Ext.button.IButton]
     }
     
-    extension [Self <: typings.extjs.Ext.button.IButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.button.IButton] (val x: Self) extends AnyVal {
       
       inline def setAllowDepress(value: Boolean): Self = StObject.set(x, "allowDepress", value.asInstanceOf[js.Any])
       
@@ -576,7 +577,8 @@ object button {
       __obj.asInstanceOf[ICycle]
     }
     
-    extension [Self <: ICycle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICycle] (val x: Self) extends AnyVal {
       
       inline def setChangeHandler(value: Any): Self = StObject.set(x, "changeHandler", value.asInstanceOf[js.Any])
       
@@ -645,7 +647,8 @@ object button {
       __obj.asInstanceOf[ISplit]
     }
     
-    extension [Self <: ISplit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISplit] (val x: Self) extends AnyVal {
       
       inline def setArrowHandler(value: Any): Self = StObject.set(x, "arrowHandler", value.asInstanceOf[js.Any])
       

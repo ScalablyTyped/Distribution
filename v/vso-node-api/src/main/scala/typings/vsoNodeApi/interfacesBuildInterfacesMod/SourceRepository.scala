@@ -54,7 +54,8 @@ object SourceRepository {
     __obj.asInstanceOf[SourceRepository]
   }
   
-  extension [Self <: SourceRepository](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceRepository] (val x: Self) extends AnyVal {
     
     inline def setDefaultBranch(value: String): Self = StObject.set(x, "defaultBranch", value.asInstanceOf[js.Any])
     

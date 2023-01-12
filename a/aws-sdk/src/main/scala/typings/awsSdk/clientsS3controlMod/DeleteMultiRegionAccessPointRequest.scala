@@ -32,7 +32,8 @@ object DeleteMultiRegionAccessPointRequest {
     __obj.asInstanceOf[DeleteMultiRegionAccessPointRequest]
   }
   
-  extension [Self <: DeleteMultiRegionAccessPointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMultiRegionAccessPointRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

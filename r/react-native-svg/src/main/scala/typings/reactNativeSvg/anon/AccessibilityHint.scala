@@ -133,7 +133,8 @@ object AccessibilityHint {
     __obj.asInstanceOf[AccessibilityHint]
   }
   
-  extension [Self <: AccessibilityHint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessibilityHint] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityHint(value: String): Self = StObject.set(x, "accessibilityHint", value.asInstanceOf[js.Any])
     

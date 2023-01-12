@@ -31,7 +31,8 @@ object typesUpdateApnsSandboxChannelOutputMod {
       __obj.asInstanceOf[UpdateApnsSandboxChannelOutput]
     }
     
-    extension [Self <: UpdateApnsSandboxChannelOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateApnsSandboxChannelOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

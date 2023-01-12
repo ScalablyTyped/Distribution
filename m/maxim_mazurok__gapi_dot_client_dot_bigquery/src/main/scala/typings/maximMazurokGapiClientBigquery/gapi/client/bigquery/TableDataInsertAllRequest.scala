@@ -33,7 +33,8 @@ object TableDataInsertAllRequest {
     __obj.asInstanceOf[TableDataInsertAllRequest]
   }
   
-  extension [Self <: TableDataInsertAllRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableDataInsertAllRequest] (val x: Self) extends AnyVal {
     
     inline def setIgnoreUnknownValues(value: Boolean): Self = StObject.set(x, "ignoreUnknownValues", value.asInstanceOf[js.Any])
     

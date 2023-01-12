@@ -22,7 +22,8 @@ object ExternalCA {
     __obj.asInstanceOf[ExternalCA]
   }
   
-  extension [Self <: ExternalCA](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalCA] (val x: Self) extends AnyVal {
     
     inline def setCACert(value: String): Self = StObject.set(x, "CACert", value.asInstanceOf[js.Any])
     

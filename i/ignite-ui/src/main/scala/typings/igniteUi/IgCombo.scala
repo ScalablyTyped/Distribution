@@ -559,7 +559,8 @@ object IgCombo {
     __obj.asInstanceOf[IgCombo]
   }
   
-  extension [Self <: IgCombo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgCombo] (val x: Self) extends AnyVal {
     
     inline def setAllowCustomValue(value: Boolean): Self = StObject.set(x, "allowCustomValue", value.asInstanceOf[js.Any])
     

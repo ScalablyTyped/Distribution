@@ -74,7 +74,8 @@ object connectionsClientMod {
       __obj.asInstanceOf[Connection]
     }
     
-    extension [Self <: Connection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
       
       inline def setFirstRequestedAt(value: Double): Self = StObject.set(x, "firstRequestedAt", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object connectionsClientMod {
       __obj.asInstanceOf[RemoveConnectionReponse]
     }
     
-    extension [Self <: RemoveConnectionReponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveConnectionReponse] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

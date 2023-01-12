@@ -19,7 +19,8 @@ object SparklineSeriesClickEventSeries {
     __obj.asInstanceOf[SparklineSeriesClickEventSeries]
   }
   
-  extension [Self <: SparklineSeriesClickEventSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparklineSeriesClickEventSeries] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

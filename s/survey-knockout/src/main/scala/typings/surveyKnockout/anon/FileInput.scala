@@ -68,7 +68,8 @@ object FileInput {
     __obj.asInstanceOf[FileInput]
   }
   
-  extension [Self <: FileInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileInput] (val x: Self) extends AnyVal {
     
     inline def setChooseFile(value: String): Self = StObject.set(x, "chooseFile", value.asInstanceOf[js.Any])
     

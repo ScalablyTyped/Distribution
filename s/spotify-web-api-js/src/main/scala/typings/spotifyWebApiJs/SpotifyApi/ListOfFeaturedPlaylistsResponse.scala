@@ -23,7 +23,8 @@ object ListOfFeaturedPlaylistsResponse {
     __obj.asInstanceOf[ListOfFeaturedPlaylistsResponse]
   }
   
-  extension [Self <: ListOfFeaturedPlaylistsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListOfFeaturedPlaylistsResponse] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

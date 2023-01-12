@@ -19,7 +19,8 @@ object ReportEvent {
     __obj.asInstanceOf[ReportEvent]
   }
   
-  extension [Self <: ReportEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportEvent] (val x: Self) extends AnyVal {
     
     inline def setReportEvent(value: Any => Unit): Self = StObject.set(x, "reportEvent", js.Any.fromFunction1(value))
     

@@ -67,7 +67,8 @@ object Length2 {
     __obj.asInstanceOf[Length2]
   }
   
-  extension [Self <: Length2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Length2] (val x: Self) extends AnyVal {
     
     inline def setEmphasis(value: Show): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
     

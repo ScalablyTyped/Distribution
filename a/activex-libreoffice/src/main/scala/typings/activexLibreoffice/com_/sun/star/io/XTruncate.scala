@@ -21,7 +21,8 @@ object XTruncate {
     __obj.asInstanceOf[XTruncate]
   }
   
-  extension [Self <: XTruncate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTruncate] (val x: Self) extends AnyVal {
     
     inline def setTruncate(value: () => Unit): Self = StObject.set(x, "truncate", js.Any.fromFunction0(value))
   }

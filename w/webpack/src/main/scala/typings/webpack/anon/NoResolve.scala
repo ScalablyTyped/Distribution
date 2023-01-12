@@ -62,7 +62,8 @@ object NoResolve {
     __obj.asInstanceOf[NoResolve]
   }
   
-  extension [Self <: NoResolve](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoResolve] (val x: Self) extends AnyVal {
     
     inline def setNoResolve(value: SyncHook[js.Tuple2[ResolveRequest, js.Error], Unit, UnsetAdditionalOptions]): Self = StObject.set(x, "noResolve", value.asInstanceOf[js.Any])
     

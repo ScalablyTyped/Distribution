@@ -18,7 +18,8 @@ object TokenPagination {
     __obj.asInstanceOf[TokenPagination]
   }
   
-  extension [Self <: TokenPagination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenPagination] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

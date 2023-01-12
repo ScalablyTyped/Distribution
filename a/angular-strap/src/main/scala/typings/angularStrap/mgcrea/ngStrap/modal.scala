@@ -31,7 +31,8 @@ object modal {
       __obj.asInstanceOf[IModal]
     }
     
-    extension [Self <: IModal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModal] (val x: Self) extends AnyVal {
       
       inline def set$promise(value: IPromise[Unit]): Self = StObject.set(x, "$promise", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object modal {
       __obj.asInstanceOf[IModalOptions]
     }
     
-    extension [Self <: IModalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModalOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -211,7 +213,8 @@ object modal {
       __obj.asInstanceOf[IModalProvider]
     }
     
-    extension [Self <: IModalProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModalProvider] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: IModalOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }

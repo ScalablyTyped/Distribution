@@ -23,7 +23,8 @@ object MlGetMemoryStatsMemStats {
     __obj.asInstanceOf[MlGetMemoryStatsMemStats]
   }
   
-  extension [Self <: MlGetMemoryStatsMemStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetMemoryStatsMemStats] (val x: Self) extends AnyVal {
     
     inline def setAdjusted_total(value: ByteSize): Self = StObject.set(x, "adjusted_total", value.asInstanceOf[js.Any])
     

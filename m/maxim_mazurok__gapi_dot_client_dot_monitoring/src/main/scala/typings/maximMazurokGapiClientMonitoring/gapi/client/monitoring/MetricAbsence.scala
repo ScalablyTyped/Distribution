@@ -41,7 +41,8 @@ object MetricAbsence {
     __obj.asInstanceOf[MetricAbsence]
   }
   
-  extension [Self <: MetricAbsence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricAbsence] (val x: Self) extends AnyVal {
     
     inline def setAggregations(value: js.Array[Aggregation]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object distTypesEnteringExitingPersistenceMod {
       __obj.asInstanceOf[ExitingChildContext]
     }
     
-    extension [Self <: ExitingChildContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExitingChildContext] (val x: Self) extends AnyVal {
       
       inline def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object distTypesEnteringExitingPersistenceMod {
       __obj.asInstanceOf[ExitingPersistenceProps]
     }
     
-    extension [Self <: ExitingPersistenceProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExitingPersistenceProps] (val x: Self) extends AnyVal {
       
       inline def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
       

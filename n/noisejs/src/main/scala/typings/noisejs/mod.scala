@@ -121,7 +121,8 @@ object mod {
       __obj.asInstanceOf[Noise]
     }
     
-    extension [Self <: Noise](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Noise] (val x: Self) extends AnyVal {
       
       inline def setPerlin2(value: (Double, Double) => Double): Self = StObject.set(x, "perlin2", js.Any.fromFunction2(value))
       

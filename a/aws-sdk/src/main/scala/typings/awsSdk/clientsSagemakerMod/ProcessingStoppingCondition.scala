@@ -18,7 +18,8 @@ object ProcessingStoppingCondition {
     __obj.asInstanceOf[ProcessingStoppingCondition]
   }
   
-  extension [Self <: ProcessingStoppingCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessingStoppingCondition] (val x: Self) extends AnyVal {
     
     inline def setMaxRuntimeInSeconds(value: ProcessingMaxRuntimeInSeconds): Self = StObject.set(x, "MaxRuntimeInSeconds", value.asInstanceOf[js.Any])
   }

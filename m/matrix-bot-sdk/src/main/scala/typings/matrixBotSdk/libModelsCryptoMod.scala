@@ -96,7 +96,8 @@ object libModelsCryptoMod {
       __obj.asInstanceOf[FallbackKey]
     }
     
-    extension [Self <: FallbackKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FallbackKey] (val x: Self) extends AnyVal {
       
       inline def setKey(value: SignedCurve25519OTKfallba): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -129,7 +130,8 @@ object libModelsCryptoMod {
       __obj.asInstanceOf[IMegolmEncrypted]
     }
     
-    extension [Self <: IMegolmEncrypted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMegolmEncrypted] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: MegolmV1AesSha2): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -158,7 +160,8 @@ object libModelsCryptoMod {
       __obj.asInstanceOf[IOlmEncrypted]
     }
     
-    extension [Self <: IOlmEncrypted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOlmEncrypted] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: OlmV1Curve25519AesSha2): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -184,7 +187,8 @@ object libModelsCryptoMod {
       __obj.asInstanceOf[IToDeviceMessage[T]]
     }
     
-    extension [Self <: IToDeviceMessage[?], T](x: Self & IToDeviceMessage[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToDeviceMessage[?], T] (val x: Self & IToDeviceMessage[T]) extends AnyVal {
       
       inline def setContent(value: T): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -214,7 +218,8 @@ object libModelsCryptoMod {
       __obj.asInstanceOf[MultiUserDeviceListResponse]
     }
     
-    extension [Self <: MultiUserDeviceListResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiUserDeviceListResponse] (val x: Self) extends AnyVal {
       
       inline def setDevice_keys(value: Record[String, Record[String, UserDevice]]): Self = StObject.set(x, "device_keys", value.asInstanceOf[js.Any])
       
@@ -242,7 +247,8 @@ object libModelsCryptoMod {
       __obj.asInstanceOf[OTKClaimResponse]
     }
     
-    extension [Self <: OTKClaimResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OTKClaimResponse] (val x: Self) extends AnyVal {
       
       inline def setFailures(value: StringDictionary[Any]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
       
@@ -281,7 +287,8 @@ object libModelsCryptoMod {
       __obj.asInstanceOf[OwnUserDevice]
     }
     
-    extension [Self <: OwnUserDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OwnUserDevice] (val x: Self) extends AnyVal {
       
       inline def setDevice_id(value: String): Self = StObject.set(x, "device_id", value.asInstanceOf[js.Any])
       
@@ -316,7 +323,8 @@ object libModelsCryptoMod {
       __obj.asInstanceOf[SignedCurve25519OTK]
     }
     
-    extension [Self <: SignedCurve25519OTK](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignedCurve25519OTK] (val x: Self) extends AnyVal {
       
       inline def setFallback(value: Boolean): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
@@ -355,7 +363,8 @@ object libModelsCryptoMod {
       __obj.asInstanceOf[UserDevice]
     }
     
-    extension [Self <: UserDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserDevice] (val x: Self) extends AnyVal {
       
       inline def setAlgorithms(value: js.Array[EncryptionAlgorithm | String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object SplitterEvent {
     __obj.asInstanceOf[SplitterEvent]
   }
   
-  extension [Self <: SplitterEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitterEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

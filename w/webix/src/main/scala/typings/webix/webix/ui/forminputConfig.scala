@@ -60,7 +60,8 @@ object forminputConfig {
     __obj.asInstanceOf[forminputConfig]
   }
   
-  extension [Self <: forminputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: forminputConfig] (val x: Self) extends AnyVal {
     
     inline def set$cssName(value: String): Self = StObject.set(x, "$cssName", value.asInstanceOf[js.Any])
     

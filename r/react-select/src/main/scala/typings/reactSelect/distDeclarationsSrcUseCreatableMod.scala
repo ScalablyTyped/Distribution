@@ -34,7 +34,8 @@ object distDeclarationsSrcUseCreatableMod {
       __obj.asInstanceOf[Accessors[Option]]
     }
     
-    extension [Self <: Accessors[?], Option](x: Self & Accessors[Option]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accessors[?], Option] (val x: Self & Accessors[Option]) extends AnyVal {
       
       inline def setGetOptionLabel(value: Option => String): Self = StObject.set(x, "getOptionLabel", js.Any.fromFunction1(value))
       
@@ -96,7 +97,8 @@ object distDeclarationsSrcUseCreatableMod {
       __obj.asInstanceOf[CreatableAdditionalProps[Option, Group]]
     }
     
-    extension [Self <: CreatableAdditionalProps[?, ?], Option, Group /* <: GroupBase[Option] */](x: Self & (CreatableAdditionalProps[Option, Group])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreatableAdditionalProps[?, ?], Option, Group /* <: GroupBase[Option] */] (val x: Self & (CreatableAdditionalProps[Option, Group])) extends AnyVal {
       
       inline def setAllowCreateWhileLoading(value: Boolean): Self = StObject.set(x, "allowCreateWhileLoading", value.asInstanceOf[js.Any])
       

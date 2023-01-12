@@ -402,7 +402,8 @@ object libTreeViewTreeViewMod {
       __obj.asInstanceOf[TreeHeadProps]
     }
     
-    extension [Self <: TreeHeadProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeHeadProps] (val x: Self) extends AnyVal {
       
       inline def setButtonProps(value: StringDictionary[Any]): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
       
@@ -433,7 +434,8 @@ object libTreeViewTreeViewMod {
       __obj.asInstanceOf[TreeItemProps]
     }
     
-    extension [Self <: TreeItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeItemProps] (val x: Self) extends AnyVal {
       
       inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
       
@@ -464,7 +466,8 @@ object libTreeViewTreeViewMod {
       __obj.asInstanceOf[TreeRowProps]
     }
     
-    extension [Self <: TreeRowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeRowProps] (val x: Self) extends AnyVal {
       
       inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
       
@@ -510,7 +513,8 @@ object libTreeViewTreeViewMod {
       __obj.asInstanceOf[TreeViewProps]
     }
     
-    extension [Self <: TreeViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeViewProps] (val x: Self) extends AnyVal {
       
       inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
       

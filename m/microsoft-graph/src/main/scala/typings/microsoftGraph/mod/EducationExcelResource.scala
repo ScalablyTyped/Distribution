@@ -18,7 +18,8 @@ object EducationExcelResource {
     __obj.asInstanceOf[EducationExcelResource]
   }
   
-  extension [Self <: EducationExcelResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationExcelResource] (val x: Self) extends AnyVal {
     
     inline def setFileUrl(value: NullableOption[String]): Self = StObject.set(x, "fileUrl", value.asInstanceOf[js.Any])
     

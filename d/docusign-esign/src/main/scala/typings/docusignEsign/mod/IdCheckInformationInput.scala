@@ -33,7 +33,8 @@ object IdCheckInformationInput {
     __obj.asInstanceOf[IdCheckInformationInput]
   }
   
-  extension [Self <: IdCheckInformationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdCheckInformationInput] (val x: Self) extends AnyVal {
     
     inline def setAddressInformationInput(value: AddressInformationInput): Self = StObject.set(x, "addressInformationInput", value.asInstanceOf[js.Any])
     

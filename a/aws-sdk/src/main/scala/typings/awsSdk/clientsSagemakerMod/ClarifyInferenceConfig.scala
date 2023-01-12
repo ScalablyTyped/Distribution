@@ -68,7 +68,8 @@ object ClarifyInferenceConfig {
     __obj.asInstanceOf[ClarifyInferenceConfig]
   }
   
-  extension [Self <: ClarifyInferenceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClarifyInferenceConfig] (val x: Self) extends AnyVal {
     
     inline def setContentTemplate(value: ClarifyContentTemplate): Self = StObject.set(x, "ContentTemplate", value.asInstanceOf[js.Any])
     

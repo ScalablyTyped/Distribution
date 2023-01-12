@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[InputRow]
     }
     
-    extension [Self <: InputRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputRow] (val x: Self) extends AnyVal {
       
       inline def setDeps(value: js.Array[String]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDedupe(value: Boolean): Self = StObject.set(x, "dedupe", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object mod {
       __obj.asInstanceOf[OutputRow]
     }
     
-    extension [Self <: OutputRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputRow] (val x: Self) extends AnyVal {
       
       inline def setDedupe(value: String): Self = StObject.set(x, "dedupe", value.asInstanceOf[js.Any])
       

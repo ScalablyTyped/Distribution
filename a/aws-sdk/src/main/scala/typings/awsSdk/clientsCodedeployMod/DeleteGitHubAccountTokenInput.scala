@@ -18,7 +18,8 @@ object DeleteGitHubAccountTokenInput {
     __obj.asInstanceOf[DeleteGitHubAccountTokenInput]
   }
   
-  extension [Self <: DeleteGitHubAccountTokenInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteGitHubAccountTokenInput] (val x: Self) extends AnyVal {
     
     inline def setTokenName(value: GitHubAccountTokenName): Self = StObject.set(x, "tokenName", value.asInstanceOf[js.Any])
     

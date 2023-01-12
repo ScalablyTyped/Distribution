@@ -32,7 +32,8 @@ object DocContextChangeEventObject {
     __obj.asInstanceOf[DocContextChangeEventObject]
   }
   
-  extension [Self <: DocContextChangeEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocContextChangeEventObject] (val x: Self) extends AnyVal {
     
     inline def setContext(value: IXMLDOMNode): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
     

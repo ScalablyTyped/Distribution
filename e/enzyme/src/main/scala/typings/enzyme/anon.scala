@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Adapter]
     }
     
-    extension [Self <: Adapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Adapter] (val x: Self) extends AnyVal {
       
       inline def setAdapter(value: EnzymeAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setCalledByRenderer(value: Boolean): Self = StObject.set(x, "calledByRenderer", value.asInstanceOf[js.Any])
     }
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[HasShouldComponentUpdateBug]
     }
     
-    extension [Self <: HasShouldComponentUpdateBug](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasShouldComponentUpdateBug] (val x: Self) extends AnyVal {
       
       inline def setHasShouldComponentUpdateBug(value: Boolean): Self = StObject.set(x, "hasShouldComponentUpdateBug", value.asInstanceOf[js.Any])
     }
@@ -90,7 +93,8 @@ object anon {
       __obj.asInstanceOf[IgnoreProps]
     }
     
-    extension [Self <: IgnoreProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IgnoreProps] (val x: Self) extends AnyVal {
       
       inline def setIgnoreProps(value: Boolean): Self = StObject.set(x, "ignoreProps", value.asInstanceOf[js.Any])
       
@@ -115,7 +119,8 @@ object anon {
       __obj.asInstanceOf[OnSetState]
     }
     
-    extension [Self <: OnSetState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnSetState] (val x: Self) extends AnyVal {
       
       inline def setOnSetState(value: Boolean): Self = StObject.set(x, "onSetState", value.asInstanceOf[js.Any])
       

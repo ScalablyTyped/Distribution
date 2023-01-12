@@ -24,7 +24,8 @@ object Escape {
     __obj.asInstanceOf[Escape]
   }
   
-  extension [Self <: Escape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Escape] (val x: Self) extends AnyVal {
     
     inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     

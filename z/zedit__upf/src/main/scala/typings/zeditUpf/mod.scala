@@ -129,7 +129,8 @@ object mod {
       __obj.asInstanceOf[Executor[S, L]]
     }
     
-    extension [Self <: Executor[?, ?], S, L](x: Self & (Executor[S, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Executor[?, ?], S, L] (val x: Self & (Executor[S, L])) extends AnyVal {
       
       inline def setFinalize_(value: /* args */ ExectuteCTX[S, L] => Unit): Self = StObject.set(x, "finalize", js.Any.fromFunction1(value))
       
@@ -418,7 +419,8 @@ object mod {
       __obj.asInstanceOf[ModuleInfo]
     }
     
-    extension [Self <: ModuleInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleInfo] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -501,7 +503,8 @@ object mod {
       __obj.asInstanceOf[Patcher[S, L]]
     }
     
-    extension [Self <: Patcher[?, ?], S /* <: js.Object */, L /* <: js.Object */](x: Self & (Patcher[S, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Patcher[?, ?], S /* <: js.Object */, L /* <: js.Object */] (val x: Self & (Patcher[S, L])) extends AnyVal {
       
       inline def setExecute(value: (js.Function1[/* args */ ExectuteCTX[S, L], Executor[S, L]]) | (Executor[S, L])): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
       

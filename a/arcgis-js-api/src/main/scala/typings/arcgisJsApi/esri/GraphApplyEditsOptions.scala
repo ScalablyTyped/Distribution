@@ -27,7 +27,8 @@ object GraphApplyEditsOptions {
     __obj.asInstanceOf[GraphApplyEditsOptions]
   }
   
-  extension [Self <: GraphApplyEditsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphApplyEditsOptions] (val x: Self) extends AnyVal {
     
     inline def setCascadeDelete(value: Boolean): Self = StObject.set(x, "cascadeDelete", value.asInstanceOf[js.Any])
     

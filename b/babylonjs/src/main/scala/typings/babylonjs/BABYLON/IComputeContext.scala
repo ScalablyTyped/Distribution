@@ -15,7 +15,8 @@ object IComputeContext {
     __obj.asInstanceOf[IComputeContext]
   }
   
-  extension [Self <: IComputeContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IComputeContext] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
   }

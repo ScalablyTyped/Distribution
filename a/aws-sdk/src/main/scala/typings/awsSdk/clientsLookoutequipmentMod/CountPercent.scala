@@ -23,7 +23,8 @@ object CountPercent {
     __obj.asInstanceOf[CountPercent]
   }
   
-  extension [Self <: CountPercent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountPercent] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

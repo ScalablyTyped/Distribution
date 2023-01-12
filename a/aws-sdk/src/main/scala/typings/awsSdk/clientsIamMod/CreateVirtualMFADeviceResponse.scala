@@ -18,7 +18,8 @@ object CreateVirtualMFADeviceResponse {
     __obj.asInstanceOf[CreateVirtualMFADeviceResponse]
   }
   
-  extension [Self <: CreateVirtualMFADeviceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVirtualMFADeviceResponse] (val x: Self) extends AnyVal {
     
     inline def setVirtualMFADevice(value: VirtualMFADevice): Self = StObject.set(x, "VirtualMFADevice", value.asInstanceOf[js.Any])
   }

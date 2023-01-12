@@ -23,7 +23,8 @@ object DisassociateSkillGroupFromRoomRequest {
     __obj.asInstanceOf[DisassociateSkillGroupFromRoomRequest]
   }
   
-  extension [Self <: DisassociateSkillGroupFromRoomRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateSkillGroupFromRoomRequest] (val x: Self) extends AnyVal {
     
     inline def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
     

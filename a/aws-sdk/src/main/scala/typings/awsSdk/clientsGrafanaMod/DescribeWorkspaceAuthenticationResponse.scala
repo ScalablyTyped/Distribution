@@ -18,7 +18,8 @@ object DescribeWorkspaceAuthenticationResponse {
     __obj.asInstanceOf[DescribeWorkspaceAuthenticationResponse]
   }
   
-  extension [Self <: DescribeWorkspaceAuthenticationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeWorkspaceAuthenticationResponse] (val x: Self) extends AnyVal {
     
     inline def setAuthentication(value: AuthenticationDescription): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
   }

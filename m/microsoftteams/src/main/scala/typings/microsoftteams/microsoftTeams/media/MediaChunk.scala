@@ -26,7 +26,8 @@ object MediaChunk {
     __obj.asInstanceOf[MediaChunk]
   }
   
-  extension [Self <: MediaChunk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaChunk] (val x: Self) extends AnyVal {
     
     inline def setChunk(value: String): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
     

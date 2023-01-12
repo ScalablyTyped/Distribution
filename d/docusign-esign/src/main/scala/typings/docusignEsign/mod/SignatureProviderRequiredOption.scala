@@ -23,7 +23,8 @@ object SignatureProviderRequiredOption {
     __obj.asInstanceOf[SignatureProviderRequiredOption]
   }
   
-  extension [Self <: SignatureProviderRequiredOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureProviderRequiredOption] (val x: Self) extends AnyVal {
     
     inline def setRequiredSignatureProviderOptionIds(value: js.Array[String]): Self = StObject.set(x, "requiredSignatureProviderOptionIds", value.asInstanceOf[js.Any])
     

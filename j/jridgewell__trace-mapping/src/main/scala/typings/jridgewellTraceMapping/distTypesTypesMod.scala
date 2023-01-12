@@ -48,7 +48,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[DecodedSourceMap]
     }
     
-    extension [Self <: DecodedSourceMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodedSourceMap] (val x: Self) extends AnyVal {
       
       inline def setMappings(value: js.Array[js.Array[SourceMapSegment]]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[EncodedSourceMap]
     }
     
-    extension [Self <: EncodedSourceMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodedSourceMap] (val x: Self) extends AnyVal {
       
       inline def setMappings(value: String): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
     }
@@ -113,7 +115,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[GeneratedMapping]
     }
     
-    extension [Self <: GeneratedMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeneratedMapping] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -134,7 +137,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[InvalidGeneratedMapping]
     }
     
-    extension [Self <: InvalidGeneratedMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidGeneratedMapping] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Null): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -159,7 +163,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[InvalidOriginalMapping]
     }
     
-    extension [Self <: InvalidOriginalMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidOriginalMapping] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Null): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -186,7 +191,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[Needle]
     }
     
-    extension [Self <: Needle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Needle] (val x: Self) extends AnyVal {
       
       inline def setBias(value: Bias): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
       
@@ -215,7 +221,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[OriginalMapping]
     }
     
-    extension [Self <: OriginalMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OriginalMapping] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -265,7 +272,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[Section]
     }
     
-    extension [Self <: Section](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Section] (val x: Self) extends AnyVal {
       
       inline def setMap(value: EncodedSourceMap | DecodedSourceMap | SectionedSourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
@@ -288,7 +296,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[SectionedSourceMap]
     }
     
-    extension [Self <: SectionedSourceMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SectionedSourceMap] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -329,7 +338,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[SourceMapV3]
     }
     
-    extension [Self <: SourceMapV3](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMapV3] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -376,7 +386,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[SourceNeedle]
     }
     
-    extension [Self <: SourceNeedle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceNeedle] (val x: Self) extends AnyVal {
       
       inline def setBias(value: Bias): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
       

@@ -39,7 +39,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[ICacheOptions]
       }
       
-      extension [Self <: ICacheOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICacheOptions] (val x: Self) extends AnyVal {
         
         inline def setCacheDirName(value: String): Self = StObject.set(x, "cacheDirName", value.asInstanceOf[js.Any])
       }
@@ -94,7 +95,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[IGulpCacheOptions]
       }
       
-      extension [Self <: IGulpCacheOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IGulpCacheOptions] (val x: Self) extends AnyVal {
         
         inline def setFileCache(value: IGulpCache): Self = StObject.set(x, "fileCache", value.asInstanceOf[js.Any])
         

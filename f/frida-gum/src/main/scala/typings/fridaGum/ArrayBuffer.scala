@@ -20,7 +20,8 @@ object ArrayBuffer {
     __obj.asInstanceOf[ArrayBuffer]
   }
   
-  extension [Self <: ArrayBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayBuffer] (val x: Self) extends AnyVal {
     
     inline def setUnwrap(value: () => NativePointer): Self = StObject.set(x, "unwrap", js.Any.fromFunction0(value))
   }

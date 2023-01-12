@@ -31,7 +31,8 @@ object BootstrapChartOptionChangedEventArgs {
     __obj.asInstanceOf[BootstrapChartOptionChangedEventArgs]
   }
   
-  extension [Self <: BootstrapChartOptionChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapChartOptionChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object HslToRgb {
     __obj.asInstanceOf[HslToRgb]
   }
   
-  extension [Self <: HslToRgb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HslToRgb] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Bright2Opacity): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

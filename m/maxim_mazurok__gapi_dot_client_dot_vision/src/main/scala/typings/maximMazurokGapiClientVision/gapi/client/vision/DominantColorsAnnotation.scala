@@ -16,7 +16,8 @@ object DominantColorsAnnotation {
     __obj.asInstanceOf[DominantColorsAnnotation]
   }
   
-  extension [Self <: DominantColorsAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DominantColorsAnnotation] (val x: Self) extends AnyVal {
     
     inline def setColors(value: js.Array[ColorInfo]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

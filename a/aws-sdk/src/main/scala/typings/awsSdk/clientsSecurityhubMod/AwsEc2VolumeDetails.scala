@@ -68,7 +68,8 @@ object AwsEc2VolumeDetails {
     __obj.asInstanceOf[AwsEc2VolumeDetails]
   }
   
-  extension [Self <: AwsEc2VolumeDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2VolumeDetails] (val x: Self) extends AnyVal {
     
     inline def setAttachments(value: AwsEc2VolumeAttachmentList): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
     

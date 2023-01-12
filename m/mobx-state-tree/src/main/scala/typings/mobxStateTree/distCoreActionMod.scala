@@ -56,7 +56,8 @@ object distCoreActionMod {
       __obj.asInstanceOf[IMiddlewareEvent]
     }
     
-    extension [Self <: IMiddlewareEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMiddlewareEvent] (val x: Self) extends AnyVal {
       
       inline def setAllParentIds(value: js.Array[Double]): Self = StObject.set(x, "allParentIds", value.asInstanceOf[js.Any])
       

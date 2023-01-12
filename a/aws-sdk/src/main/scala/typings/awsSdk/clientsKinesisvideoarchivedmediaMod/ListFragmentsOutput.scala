@@ -23,7 +23,8 @@ object ListFragmentsOutput {
     __obj.asInstanceOf[ListFragmentsOutput]
   }
   
-  extension [Self <: ListFragmentsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFragmentsOutput] (val x: Self) extends AnyVal {
     
     inline def setFragments(value: FragmentList): Self = StObject.set(x, "Fragments", value.asInstanceOf[js.Any])
     

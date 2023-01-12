@@ -37,7 +37,8 @@ object CSSModulesOptions {
     __obj.asInstanceOf[CSSModulesOptions]
   }
   
-  extension [Self <: CSSModulesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSModulesOptions] (val x: Self) extends AnyVal {
     
     inline def setExportGlobals(value: Boolean): Self = StObject.set(x, "exportGlobals", value.asInstanceOf[js.Any])
     

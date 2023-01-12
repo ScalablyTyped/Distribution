@@ -25,7 +25,8 @@ object IndicesIndexSettingsLifecycle {
     __obj.asInstanceOf[IndicesIndexSettingsLifecycle]
   }
   
-  extension [Self <: IndicesIndexSettingsLifecycle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesIndexSettingsLifecycle] (val x: Self) extends AnyVal {
     
     inline def setIndexing_complete(value: Boolean): Self = StObject.set(x, "indexing_complete", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object LineTouchedEvent {
     __obj.asInstanceOf[LineTouchedEvent]
   }
   
-  extension [Self <: LineTouchedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineTouchedEvent] (val x: Self) extends AnyVal {
     
     inline def setAfterIndex(value: Double): Self = StObject.set(x, "afterIndex", value.asInstanceOf[js.Any])
     

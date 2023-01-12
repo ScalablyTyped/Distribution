@@ -86,7 +86,8 @@ object InputDescriptor {
     __obj.asInstanceOf[InputDescriptor]
   }
   
-  extension [Self <: InputDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputDescriptor] (val x: Self) extends AnyVal {
     
     inline def setDependencyInputIds(value: js.Array[String]): Self = StObject.set(x, "dependencyInputIds", value.asInstanceOf[js.Any])
     

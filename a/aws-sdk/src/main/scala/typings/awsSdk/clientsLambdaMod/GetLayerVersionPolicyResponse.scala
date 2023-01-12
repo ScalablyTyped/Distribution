@@ -23,7 +23,8 @@ object GetLayerVersionPolicyResponse {
     __obj.asInstanceOf[GetLayerVersionPolicyResponse]
   }
   
-  extension [Self <: GetLayerVersionPolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLayerVersionPolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     

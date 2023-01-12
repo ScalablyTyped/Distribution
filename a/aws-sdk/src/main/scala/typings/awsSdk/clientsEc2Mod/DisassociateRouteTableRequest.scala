@@ -23,7 +23,8 @@ object DisassociateRouteTableRequest {
     __obj.asInstanceOf[DisassociateRouteTableRequest]
   }
   
-  extension [Self <: DisassociateRouteTableRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateRouteTableRequest] (val x: Self) extends AnyVal {
     
     inline def setAssociationId(value: RouteTableAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     

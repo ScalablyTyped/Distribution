@@ -66,7 +66,8 @@ object PartialShapeFillcolor {
     __obj.asInstanceOf[PartialShapeFillcolor]
   }
   
-  extension [Self <: PartialShapeFillcolor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialShapeFillcolor] (val x: Self) extends AnyVal {
     
     inline def setFillcolor(value: String): Self = StObject.set(x, "fillcolor", value.asInstanceOf[js.Any])
     

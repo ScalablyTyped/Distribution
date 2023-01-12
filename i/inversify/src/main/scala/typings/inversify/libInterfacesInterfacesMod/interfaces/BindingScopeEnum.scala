@@ -19,7 +19,8 @@ object BindingScopeEnum {
     __obj.asInstanceOf[BindingScopeEnum]
   }
   
-  extension [Self <: BindingScopeEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingScopeEnum] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: BindingScope): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object IamActionDefinition {
     __obj.asInstanceOf[IamActionDefinition]
   }
   
-  extension [Self <: IamActionDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IamActionDefinition] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: Groups): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     

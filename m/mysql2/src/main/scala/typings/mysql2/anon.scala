@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setName(value: FieldPacket): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setName(value: OkPacket): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -57,7 +59,8 @@ object anon {
       __obj.asInstanceOf[`2`]
     }
     
-    extension [Self <: `2`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `2`] (val x: Self) extends AnyVal {
       
       inline def setName(value: ResultSetHeader): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -74,7 +77,8 @@ object anon {
       __obj.asInstanceOf[`3`]
     }
     
-    extension [Self <: `3`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `3`] (val x: Self) extends AnyVal {
       
       inline def setName(value: RowDataPacket): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -93,7 +97,8 @@ object anon {
       __obj.asInstanceOf[Command]
     }
     
-    extension [Self <: Command](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
@@ -112,7 +117,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: Field): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

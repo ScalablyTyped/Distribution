@@ -33,7 +33,8 @@ object WebServerRequest {
     __obj.asInstanceOf[WebServerRequest]
   }
   
-  extension [Self <: WebServerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebServerRequest] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

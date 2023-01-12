@@ -43,7 +43,8 @@ object ListedHostKey {
     __obj.asInstanceOf[ListedHostKey]
   }
   
-  extension [Self <: ListedHostKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListedHostKey] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

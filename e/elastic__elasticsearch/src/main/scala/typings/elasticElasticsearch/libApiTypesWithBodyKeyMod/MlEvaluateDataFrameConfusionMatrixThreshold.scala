@@ -21,7 +21,8 @@ object MlEvaluateDataFrameConfusionMatrixThreshold {
     __obj.asInstanceOf[MlEvaluateDataFrameConfusionMatrixThreshold]
   }
   
-  extension [Self <: MlEvaluateDataFrameConfusionMatrixThreshold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlEvaluateDataFrameConfusionMatrixThreshold] (val x: Self) extends AnyVal {
     
     inline def setFn(value: integer): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Outparams]
     }
     
-    extension [Self <: Outparams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Outparams] (val x: Self) extends AnyVal {
       
       inline def setOutparams(value: Any): Self = StObject.set(x, "outparams", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setParams(value: js.Array[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       

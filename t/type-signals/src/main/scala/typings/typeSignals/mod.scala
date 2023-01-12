@@ -68,7 +68,8 @@ object mod {
       __obj.asInstanceOf[SignalBinding]
     }
     
-    extension [Self <: SignalBinding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignalBinding] (val x: Self) extends AnyVal {
       
       inline def setDetach(value: () => Boolean): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
       

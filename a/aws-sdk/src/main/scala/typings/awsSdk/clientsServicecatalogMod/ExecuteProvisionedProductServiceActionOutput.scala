@@ -18,7 +18,8 @@ object ExecuteProvisionedProductServiceActionOutput {
     __obj.asInstanceOf[ExecuteProvisionedProductServiceActionOutput]
   }
   
-  extension [Self <: ExecuteProvisionedProductServiceActionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteProvisionedProductServiceActionOutput] (val x: Self) extends AnyVal {
     
     inline def setRecordDetail(value: RecordDetail): Self = StObject.set(x, "RecordDetail", value.asInstanceOf[js.Any])
     

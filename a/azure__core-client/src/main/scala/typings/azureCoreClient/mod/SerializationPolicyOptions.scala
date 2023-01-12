@@ -23,7 +23,8 @@ object SerializationPolicyOptions {
     __obj.asInstanceOf[SerializationPolicyOptions]
   }
   
-  extension [Self <: SerializationPolicyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerializationPolicyOptions] (val x: Self) extends AnyVal {
     
     inline def setSerializerOptions(value: SerializerOptions): Self = StObject.set(x, "serializerOptions", value.asInstanceOf[js.Any])
     

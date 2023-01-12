@@ -30,7 +30,8 @@ object XMasterPagesSupplier {
     __obj.asInstanceOf[XMasterPagesSupplier]
   }
   
-  extension [Self <: XMasterPagesSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMasterPagesSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetMasterPages(value: () => XDrawPages): Self = StObject.set(x, "getMasterPages", js.Any.fromFunction0(value))
     

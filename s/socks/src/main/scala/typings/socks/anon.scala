@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Customauthmethod]
     }
     
-    extension [Self <: Customauthmethod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Customauthmethod] (val x: Self) extends AnyVal {
       
       inline def setCustom_auth_method(value: Double): Self = StObject.set(x, "custom_auth_method", value.asInstanceOf[js.Any])
       

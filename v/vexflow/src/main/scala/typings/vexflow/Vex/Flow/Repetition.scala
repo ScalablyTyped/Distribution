@@ -117,7 +117,8 @@ object Repetition {
          with `type`
   }
   
-  extension [Self <: Repetition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Repetition] (val x: Self) extends AnyVal {
     
     inline def setDraw(value: (Stave, Double) => Repetition): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
     

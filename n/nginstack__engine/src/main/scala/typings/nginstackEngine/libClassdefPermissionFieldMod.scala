@@ -47,7 +47,8 @@ object libClassdefPermissionFieldMod {
       __obj.asInstanceOf[PermissionField]
     }
     
-    extension [Self <: PermissionField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PermissionField] (val x: Self) extends AnyVal {
       
       inline def setReadMode(value: String): Self = StObject.set(x, "readMode", value.asInstanceOf[js.Any])
       

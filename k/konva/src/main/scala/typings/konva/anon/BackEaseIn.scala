@@ -62,7 +62,8 @@ object BackEaseIn {
     __obj.asInstanceOf[BackEaseIn]
   }
   
-  extension [Self <: BackEaseIn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackEaseIn] (val x: Self) extends AnyVal {
     
     inline def setBackEaseIn(value: (Any, Any, Any, Any) => Any): Self = StObject.set(x, "BackEaseIn", js.Any.fromFunction4(value))
     

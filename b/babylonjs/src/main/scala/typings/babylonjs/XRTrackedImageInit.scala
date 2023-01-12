@@ -18,7 +18,8 @@ object XRTrackedImageInit {
     __obj.asInstanceOf[XRTrackedImageInit]
   }
   
-  extension [Self <: XRTrackedImageInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRTrackedImageInit] (val x: Self) extends AnyVal {
     
     inline def setImage(value: ImageBitmap): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

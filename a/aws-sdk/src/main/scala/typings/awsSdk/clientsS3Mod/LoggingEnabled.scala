@@ -28,7 +28,8 @@ object LoggingEnabled {
     __obj.asInstanceOf[LoggingEnabled]
   }
   
-  extension [Self <: LoggingEnabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoggingEnabled] (val x: Self) extends AnyVal {
     
     inline def setTargetBucket(value: TargetBucket): Self = StObject.set(x, "TargetBucket", value.asInstanceOf[js.Any])
     

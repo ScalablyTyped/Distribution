@@ -29,7 +29,8 @@ object Mocks {
     __obj.asInstanceOf[Mocks]
   }
   
-  extension [Self <: Mocks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mocks] (val x: Self) extends AnyVal {
     
     inline def setMocks(value: Default): Self = StObject.set(x, "mocks", value.asInstanceOf[js.Any])
     

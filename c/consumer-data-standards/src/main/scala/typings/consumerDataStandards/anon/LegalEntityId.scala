@@ -28,7 +28,8 @@ object LegalEntityId {
     __obj.asInstanceOf[LegalEntityId]
   }
   
-  extension [Self <: LegalEntityId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegalEntityId] (val x: Self) extends AnyVal {
     
     inline def setLegalEntityId(value: String): Self = StObject.set(x, "legalEntityId", value.asInstanceOf[js.Any])
     

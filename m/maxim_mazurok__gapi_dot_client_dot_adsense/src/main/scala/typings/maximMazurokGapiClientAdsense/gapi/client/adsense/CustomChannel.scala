@@ -22,7 +22,8 @@ object CustomChannel {
     __obj.asInstanceOf[CustomChannel]
   }
   
-  extension [Self <: CustomChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomChannel] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

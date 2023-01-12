@@ -21,7 +21,8 @@ object ViewportAPI {
     __obj.asInstanceOf[ViewportAPI]
   }
   
-  extension [Self <: ViewportAPI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewportAPI] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: Rect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

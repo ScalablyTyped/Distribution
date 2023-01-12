@@ -49,7 +49,8 @@ object UIElementSettings {
     __obj.asInstanceOf[UIElementSettings]
   }
   
-  extension [Self <: UIElementSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIElementSettings] (val x: Self) extends AnyVal {
     
     inline def setUIName(value: String): Self = StObject.set(x, "UIName", value.asInstanceOf[js.Any])
   }

@@ -27,7 +27,8 @@ object ConsolaLogObject {
     __obj.asInstanceOf[ConsolaLogObject]
   }
   
-  extension [Self <: ConsolaLogObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsolaLogObject] (val x: Self) extends AnyVal {
     
     inline def setAdditional(value: String | js.Array[String]): Self = StObject.set(x, "additional", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object LayerOptions {
     __obj.asInstanceOf[LayerOptions]
   }
   
-  extension [Self <: LayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerOptions] (val x: Self) extends AnyVal {
     
     inline def setHd(value: Boolean): Self = StObject.set(x, "hd", value.asInstanceOf[js.Any])
     

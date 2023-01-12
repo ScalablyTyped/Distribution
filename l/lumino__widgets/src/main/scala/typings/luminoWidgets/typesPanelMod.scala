@@ -67,7 +67,8 @@ object typesPanelMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setLayout(value: PanelLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
         

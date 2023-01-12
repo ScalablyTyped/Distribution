@@ -50,7 +50,8 @@ object Execute {
     __obj.asInstanceOf[Execute]
   }
   
-  extension [Self <: Execute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Execute] (val x: Self) extends AnyVal {
     
     inline def setDef(value: Boolean): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
     

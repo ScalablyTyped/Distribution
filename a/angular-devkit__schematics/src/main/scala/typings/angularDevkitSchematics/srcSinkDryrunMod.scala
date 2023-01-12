@@ -55,7 +55,8 @@ object srcSinkDryrunMod {
       __obj.asInstanceOf[DryRunCreateEvent]
     }
     
-    extension [Self <: DryRunCreateEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DryRunCreateEvent] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object srcSinkDryrunMod {
       __obj.asInstanceOf[DryRunDeleteEvent]
     }
     
-    extension [Self <: DryRunDeleteEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DryRunDeleteEvent] (val x: Self) extends AnyVal {
       
       inline def setKind(value: delete): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object srcSinkDryrunMod {
       __obj.asInstanceOf[DryRunErrorEvent]
     }
     
-    extension [Self <: DryRunErrorEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DryRunErrorEvent] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: alreadyExist | doesNotExist): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -168,7 +171,8 @@ object srcSinkDryrunMod {
       __obj.asInstanceOf[DryRunRenameEvent]
     }
     
-    extension [Self <: DryRunRenameEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DryRunRenameEvent] (val x: Self) extends AnyVal {
       
       inline def setKind(value: rename): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -195,7 +199,8 @@ object srcSinkDryrunMod {
       __obj.asInstanceOf[DryRunUpdateEvent]
     }
     
-    extension [Self <: DryRunUpdateEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DryRunUpdateEvent] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object ITpProcessRequest {
     __obj.asInstanceOf[ITpProcessRequest]
   }
   
-  extension [Self <: ITpProcessRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITpProcessRequest] (val x: Self) extends AnyVal {
     
     inline def setContextId(value: String): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     

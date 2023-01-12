@@ -74,7 +74,8 @@ object libGridRowMod extends Shortcut {
       __obj.asInstanceOf[ResponsiveAligns]
     }
     
-    extension [Self <: ResponsiveAligns](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveAligns] (val x: Self) extends AnyVal {
       
       inline def setLg(value: top | middle | bottom | stretch): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object libGridRowMod extends Shortcut {
       __obj.asInstanceOf[ResponsiveJustify]
     }
     
-    extension [Self <: ResponsiveJustify](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveJustify] (val x: Self) extends AnyVal {
       
       inline def setLg(value: start | end | center | `space-around` | `space-between` | `space-evenly`): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
@@ -174,7 +176,8 @@ object libGridRowMod extends Shortcut {
       __obj.asInstanceOf[ResponsiveLike[T]]
     }
     
-    extension [Self <: ResponsiveLike[?], T](x: Self & ResponsiveLike[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveLike[?], T] (val x: Self & ResponsiveLike[T]) extends AnyVal {
       
       inline def setLg(value: T): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
@@ -225,7 +228,8 @@ object libGridRowMod extends Shortcut {
       __obj.asInstanceOf[RowProps]
     }
     
-    extension [Self <: RowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: top | middle | bottom | stretch | ResponsiveAligns): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

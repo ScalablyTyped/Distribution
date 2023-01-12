@@ -43,7 +43,8 @@ object DescribeBillingGroupResponse {
     __obj.asInstanceOf[DescribeBillingGroupResponse]
   }
   
-  extension [Self <: DescribeBillingGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBillingGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setBillingGroupArn(value: BillingGroupArn): Self = StObject.set(x, "billingGroupArn", value.asInstanceOf[js.Any])
     

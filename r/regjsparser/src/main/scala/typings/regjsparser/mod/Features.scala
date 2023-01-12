@@ -23,7 +23,8 @@ object Features {
     __obj.asInstanceOf[Features]
   }
   
-  extension [Self <: Features](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Features] (val x: Self) extends AnyVal {
     
     inline def setLookbehind(value: Boolean): Self = StObject.set(x, "lookbehind", value.asInstanceOf[js.Any])
     

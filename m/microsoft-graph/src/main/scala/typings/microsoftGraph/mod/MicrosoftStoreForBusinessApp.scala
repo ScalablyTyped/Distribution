@@ -30,7 +30,8 @@ object MicrosoftStoreForBusinessApp {
     __obj.asInstanceOf[MicrosoftStoreForBusinessApp]
   }
   
-  extension [Self <: MicrosoftStoreForBusinessApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MicrosoftStoreForBusinessApp] (val x: Self) extends AnyVal {
     
     inline def setLicenseType(value: MicrosoftStoreForBusinessLicenseType): Self = StObject.set(x, "licenseType", value.asInstanceOf[js.Any])
     

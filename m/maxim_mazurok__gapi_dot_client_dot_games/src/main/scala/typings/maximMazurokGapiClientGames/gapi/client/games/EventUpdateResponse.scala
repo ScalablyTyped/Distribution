@@ -25,7 +25,8 @@ object EventUpdateResponse {
     __obj.asInstanceOf[EventUpdateResponse]
   }
   
-  extension [Self <: EventUpdateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventUpdateResponse] (val x: Self) extends AnyVal {
     
     inline def setBatchFailures(value: js.Array[EventBatchRecordFailure]): Self = StObject.set(x, "batchFailures", value.asInstanceOf[js.Any])
     

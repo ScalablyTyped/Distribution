@@ -32,7 +32,8 @@ object DropLevelOffset {
     __obj.asInstanceOf[DropLevelOffset]
   }
   
-  extension [Self <: DropLevelOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropLevelOffset] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

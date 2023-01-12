@@ -18,7 +18,8 @@ object DeleteAliasRequest {
     __obj.asInstanceOf[DeleteAliasRequest]
   }
   
-  extension [Self <: DeleteAliasRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAliasRequest] (val x: Self) extends AnyVal {
     
     inline def setAliasName(value: AliasNameType): Self = StObject.set(x, "AliasName", value.asInstanceOf[js.Any])
   }

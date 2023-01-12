@@ -616,7 +616,8 @@ object sapMIllustratedMessageMod {
       __obj.asInstanceOf[IllustratedMessageSettings]
     }
     
-    extension [Self <: IllustratedMessageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IllustratedMessageSettings] (val x: Self) extends AnyVal {
       
       inline def setAdditionalContent(
         value: js.Array[typings.openui5.sapMButtonMod.default] | typings.openui5.sapMButtonMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

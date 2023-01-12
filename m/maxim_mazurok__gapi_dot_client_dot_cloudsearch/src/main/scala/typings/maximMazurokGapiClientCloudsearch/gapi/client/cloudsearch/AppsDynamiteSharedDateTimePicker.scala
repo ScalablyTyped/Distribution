@@ -38,7 +38,8 @@ object AppsDynamiteSharedDateTimePicker {
     __obj.asInstanceOf[AppsDynamiteSharedDateTimePicker]
   }
   
-  extension [Self <: AppsDynamiteSharedDateTimePicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedDateTimePicker] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

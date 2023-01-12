@@ -16,7 +16,8 @@ object WX_ {
     __obj.asInstanceOf[WX_]
   }
   
-  extension [Self <: WX_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WX_] (val x: Self) extends AnyVal {
     
     inline def setCloud(value: CallFunction): Self = StObject.set(x, "cloud", value.asInstanceOf[js.Any])
   }

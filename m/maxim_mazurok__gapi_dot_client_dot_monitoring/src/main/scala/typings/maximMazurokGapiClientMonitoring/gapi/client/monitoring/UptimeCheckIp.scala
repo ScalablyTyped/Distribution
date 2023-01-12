@@ -28,7 +28,8 @@ object UptimeCheckIp {
     __obj.asInstanceOf[UptimeCheckIp]
   }
   
-  extension [Self <: UptimeCheckIp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UptimeCheckIp] (val x: Self) extends AnyVal {
     
     inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     

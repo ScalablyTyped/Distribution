@@ -28,7 +28,8 @@ object FontMetricsObject {
     __obj.asInstanceOf[FontMetricsObject]
   }
   
-  extension [Self <: FontMetricsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontMetricsObject] (val x: Self) extends AnyVal {
     
     inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     

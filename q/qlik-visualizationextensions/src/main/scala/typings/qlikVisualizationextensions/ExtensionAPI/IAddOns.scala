@@ -16,7 +16,8 @@ object IAddOns {
     __obj.asInstanceOf[IAddOns]
   }
   
-  extension [Self <: IAddOns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAddOns] (val x: Self) extends AnyVal {
     
     inline def setUses(value: addons): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,8 @@ object IDisplayData {
     __obj.asInstanceOf[IDisplayData]
   }
   
-  extension [Self <: IDisplayData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDisplayData] (val x: Self) extends AnyVal {
     
     inline def setOutput_type(value: display_data): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
   }

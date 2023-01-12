@@ -19,7 +19,8 @@ object GoogleDevtoolsRemoteworkersV1test2Blob {
     __obj.asInstanceOf[GoogleDevtoolsRemoteworkersV1test2Blob]
   }
   
-  extension [Self <: GoogleDevtoolsRemoteworkersV1test2Blob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsRemoteworkersV1test2Blob] (val x: Self) extends AnyVal {
     
     inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object MutationResult {
     __obj.asInstanceOf[MutationResult]
   }
   
-  extension [Self <: MutationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MutationResult] (val x: Self) extends AnyVal {
     
     inline def setConflictDetected(value: Boolean): Self = StObject.set(x, "conflictDetected", value.asInstanceOf[js.Any])
     

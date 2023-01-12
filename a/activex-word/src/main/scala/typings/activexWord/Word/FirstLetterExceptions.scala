@@ -37,7 +37,8 @@ object FirstLetterExceptions {
     __obj.asInstanceOf[FirstLetterExceptions]
   }
   
-  extension [Self <: FirstLetterExceptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstLetterExceptions] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: String => FirstLetterException): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     

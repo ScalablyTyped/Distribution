@@ -18,7 +18,8 @@ object GetObjectsResponse {
     __obj.asInstanceOf[GetObjectsResponse[TObject]]
   }
   
-  extension [Self <: GetObjectsResponse[?], TObject](x: Self & GetObjectsResponse[TObject]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectsResponse[?], TObject] (val x: Self & GetObjectsResponse[TObject]) extends AnyVal {
     
     inline def setResults(value: js.Array[(TObject & ObjectWithObjectID) | Null]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     

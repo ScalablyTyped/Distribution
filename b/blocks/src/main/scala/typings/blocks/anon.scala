@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[BaseUrl]
     }
     
-    extension [Self <: BaseUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseUrl] (val x: Self) extends AnyVal {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Create]
     }
     
-    extension [Self <: Create](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Create] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: Url): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       
@@ -103,7 +105,8 @@ object anon {
       __obj.asInstanceOf[Express]
     }
     
-    extension [Self <: Express](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Express] (val x: Self) extends AnyVal {
       
       inline def setExpress(value: () => Any): Self = StObject.set(x, "express", js.Any.fromFunction0(value))
     }
@@ -120,7 +123,8 @@ object anon {
       __obj.asInstanceOf[History]
     }
     
-    extension [Self <: History](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: History] (val x: Self) extends AnyVal {
       
       inline def setHistory(value: String): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     }
@@ -139,7 +143,8 @@ object anon {
       __obj.asInstanceOf[Route]
     }
     
-    extension [Self <: Route](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
       
       inline def setRoute(value: Any): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
       
@@ -162,7 +167,8 @@ object anon {
       __obj.asInstanceOf[Url]
     }
     
-    extension [Self <: Url](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       

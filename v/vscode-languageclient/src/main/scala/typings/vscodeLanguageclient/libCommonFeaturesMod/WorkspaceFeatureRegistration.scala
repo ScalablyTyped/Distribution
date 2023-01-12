@@ -18,7 +18,8 @@ object WorkspaceFeatureRegistration {
     __obj.asInstanceOf[WorkspaceFeatureRegistration[PR]]
   }
   
-  extension [Self <: WorkspaceFeatureRegistration[?], PR](x: Self & WorkspaceFeatureRegistration[PR]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceFeatureRegistration[?], PR] (val x: Self & WorkspaceFeatureRegistration[PR]) extends AnyVal {
     
     inline def setDisposable(value: Disposable): Self = StObject.set(x, "disposable", value.asInstanceOf[js.Any])
     

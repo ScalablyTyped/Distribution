@@ -28,7 +28,8 @@ object FooterSection {
     __obj.asInstanceOf[FooterSection]
   }
   
-  extension [Self <: FooterSection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FooterSection] (val x: Self) extends AnyVal {
     
     inline def setGetVisible(value: () => Boolean): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
     

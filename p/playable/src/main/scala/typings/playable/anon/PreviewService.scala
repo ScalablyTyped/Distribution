@@ -19,7 +19,8 @@ object PreviewService {
     __obj.asInstanceOf[PreviewService]
   }
   
-  extension [Self <: PreviewService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreviewService] (val x: Self) extends AnyVal {
     
     inline def setPreviewService(value: IPreviewService): Self = StObject.set(x, "previewService", value.asInstanceOf[js.Any])
     

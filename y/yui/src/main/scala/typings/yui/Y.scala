@@ -21,7 +21,8 @@ object Y {
       __obj.asInstanceOf[IConfig]
     }
     
-    extension [Self <: IConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
       
       inline def setOptional(value: js.Array[String]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       

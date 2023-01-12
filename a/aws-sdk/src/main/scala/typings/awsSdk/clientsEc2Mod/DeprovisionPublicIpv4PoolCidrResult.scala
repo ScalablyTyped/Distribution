@@ -23,7 +23,8 @@ object DeprovisionPublicIpv4PoolCidrResult {
     __obj.asInstanceOf[DeprovisionPublicIpv4PoolCidrResult]
   }
   
-  extension [Self <: DeprovisionPublicIpv4PoolCidrResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeprovisionPublicIpv4PoolCidrResult] (val x: Self) extends AnyVal {
     
     inline def setDeprovisionedAddresses(value: DeprovisionedAddressSet): Self = StObject.set(x, "DeprovisionedAddresses", value.asInstanceOf[js.Any])
     

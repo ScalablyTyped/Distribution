@@ -34,7 +34,8 @@ object XSolverDescription {
     __obj.asInstanceOf[XSolverDescription]
   }
   
-  extension [Self <: XSolverDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSolverDescription] (val x: Self) extends AnyVal {
     
     inline def setComponentDescription(value: String): Self = StObject.set(x, "ComponentDescription", value.asInstanceOf[js.Any])
     

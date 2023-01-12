@@ -198,7 +198,8 @@ object buildTypesCreateI18nMod {
       __obj.asInstanceOf[I18n]
     }
     
-    extension [Self <: I18n](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I18n] (val x: Self) extends AnyVal {
       
       inline def setAddLocaleData(value: (/* data */ js.UndefOr[LocaleData], /* domain */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "addLocaleData", js.Any.fromFunction2(value))
       

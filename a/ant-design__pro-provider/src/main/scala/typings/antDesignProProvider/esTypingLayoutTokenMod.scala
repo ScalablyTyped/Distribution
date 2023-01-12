@@ -74,7 +74,8 @@ object esTypingLayoutTokenMod {
       __obj.asInstanceOf[BaseLayoutDesignToken]
     }
     
-    extension [Self <: BaseLayoutDesignToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseLayoutDesignToken] (val x: Self) extends AnyVal {
       
       inline def setBgLayout(value: String): Self = StObject.set(x, "bgLayout", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object esTypingLayoutTokenMod {
       __obj.asInstanceOf[ProTokenType]
     }
     
-    extension [Self <: ProTokenType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProTokenType] (val x: Self) extends AnyVal {
       
       inline def setLayout(value: DeepPartial[LayoutDesignToken]): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       

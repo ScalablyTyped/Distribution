@@ -20,7 +20,8 @@ object VectorTileLayerCapabilitiesExportMap {
     __obj.asInstanceOf[VectorTileLayerCapabilitiesExportMap]
   }
   
-  extension [Self <: VectorTileLayerCapabilitiesExportMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VectorTileLayerCapabilitiesExportMap] (val x: Self) extends AnyVal {
     
     inline def setMaxExportTilesCount(value: Double): Self = StObject.set(x, "maxExportTilesCount", value.asInstanceOf[js.Any])
   }

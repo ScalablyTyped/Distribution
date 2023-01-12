@@ -15,7 +15,8 @@ object BulkFetchDocsWrapper {
     __obj.asInstanceOf[BulkFetchDocsWrapper]
   }
   
-  extension [Self <: BulkFetchDocsWrapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkFetchDocsWrapper] (val x: Self) extends AnyVal {
     
     inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     

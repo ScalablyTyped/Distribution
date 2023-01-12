@@ -20,7 +20,8 @@ object TypeofValidator {
     __obj.asInstanceOf[TypeofValidator]
   }
   
-  extension [Self <: TypeofValidator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofValidator] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => Validator): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

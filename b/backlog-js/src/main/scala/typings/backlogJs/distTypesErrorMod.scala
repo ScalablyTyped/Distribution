@@ -83,7 +83,8 @@ object distTypesErrorMod {
       __obj.asInstanceOf[BacklogErrorMessage]
     }
     
-    extension [Self <: BacklogErrorMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BacklogErrorMessage] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

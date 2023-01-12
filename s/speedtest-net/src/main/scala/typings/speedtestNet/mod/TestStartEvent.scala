@@ -33,7 +33,8 @@ object TestStartEvent {
     __obj.asInstanceOf[TestStartEvent]
   }
   
-  extension [Self <: TestStartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestStartEvent] (val x: Self) extends AnyVal {
     
     inline def setInterface(value: InterfaceData): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
     

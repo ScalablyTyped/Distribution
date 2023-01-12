@@ -23,7 +23,8 @@ object BatchDisassociateResourceRequest {
     __obj.asInstanceOf[BatchDisassociateResourceRequest]
   }
   
-  extension [Self <: BatchDisassociateResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDisassociateResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setItems(value: IdentifierList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

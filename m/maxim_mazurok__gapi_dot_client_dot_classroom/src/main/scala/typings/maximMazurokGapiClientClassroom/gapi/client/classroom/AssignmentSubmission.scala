@@ -20,7 +20,8 @@ object AssignmentSubmission {
     __obj.asInstanceOf[AssignmentSubmission]
   }
   
-  extension [Self <: AssignmentSubmission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignmentSubmission] (val x: Self) extends AnyVal {
     
     inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     

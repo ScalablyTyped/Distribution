@@ -164,7 +164,8 @@ object Assign {
     __obj.asInstanceOf[Assign]
   }
   
-  extension [Self <: Assign](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Assign] (val x: Self) extends AnyVal {
     
     inline def setCloneArray(value: js.Array[Any] => js.Array[Any]): Self = StObject.set(x, "cloneArray", js.Any.fromFunction1(value))
     

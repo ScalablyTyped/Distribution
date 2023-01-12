@@ -31,7 +31,8 @@ object SingleAssignmentDisposable {
     __obj.asInstanceOf[SingleAssignmentDisposable]
   }
   
-  extension [Self <: SingleAssignmentDisposable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleAssignmentDisposable] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: IDisposable): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object CaptiveRecipient {
     __obj.asInstanceOf[CaptiveRecipient]
   }
   
-  extension [Self <: CaptiveRecipient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptiveRecipient] (val x: Self) extends AnyVal {
     
     inline def setClientUserId(value: String): Self = StObject.set(x, "clientUserId", value.asInstanceOf[js.Any])
     

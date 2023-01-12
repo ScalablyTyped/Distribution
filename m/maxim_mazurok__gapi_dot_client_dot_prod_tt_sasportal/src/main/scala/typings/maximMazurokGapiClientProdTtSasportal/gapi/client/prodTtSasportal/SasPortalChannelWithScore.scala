@@ -19,7 +19,8 @@ object SasPortalChannelWithScore {
     __obj.asInstanceOf[SasPortalChannelWithScore]
   }
   
-  extension [Self <: SasPortalChannelWithScore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalChannelWithScore] (val x: Self) extends AnyVal {
     
     inline def setFrequencyRange(value: SasPortalFrequencyRange): Self = StObject.set(x, "frequencyRange", value.asInstanceOf[js.Any])
     

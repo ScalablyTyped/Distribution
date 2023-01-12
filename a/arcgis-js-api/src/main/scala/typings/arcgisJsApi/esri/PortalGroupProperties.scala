@@ -95,7 +95,8 @@ object PortalGroupProperties {
     __obj.asInstanceOf[PortalGroupProperties]
   }
   
-  extension [Self <: PortalGroupProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortalGroupProperties] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: `private` | org_ | public): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     

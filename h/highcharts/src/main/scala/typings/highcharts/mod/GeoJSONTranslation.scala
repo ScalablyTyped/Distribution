@@ -72,7 +72,8 @@ object GeoJSONTranslation {
     __obj.asInstanceOf[GeoJSONTranslation]
   }
   
-  extension [Self <: GeoJSONTranslation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoJSONTranslation] (val x: Self) extends AnyVal {
     
     inline def setCrs(value: String): Self = StObject.set(x, "crs", value.asInstanceOf[js.Any])
     

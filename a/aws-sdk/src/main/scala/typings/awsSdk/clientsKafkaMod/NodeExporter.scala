@@ -20,7 +20,8 @@ object NodeExporter {
     __obj.asInstanceOf[NodeExporter]
   }
   
-  extension [Self <: NodeExporter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeExporter] (val x: Self) extends AnyVal {
     
     inline def setEnabledInBroker(value: boolean): Self = StObject.set(x, "EnabledInBroker", value.asInstanceOf[js.Any])
   }

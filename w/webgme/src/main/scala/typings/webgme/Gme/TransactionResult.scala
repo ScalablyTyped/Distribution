@@ -20,7 +20,8 @@ object TransactionResult {
     __obj.asInstanceOf[TransactionResult]
   }
   
-  extension [Self <: TransactionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionResult] (val x: Self) extends AnyVal {
     
     inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

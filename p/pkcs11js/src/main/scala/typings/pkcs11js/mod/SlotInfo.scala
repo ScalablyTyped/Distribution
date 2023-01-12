@@ -49,7 +49,8 @@ object SlotInfo {
     __obj.asInstanceOf[SlotInfo]
   }
   
-  extension [Self <: SlotInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotInfo] (val x: Self) extends AnyVal {
     
     inline def setFirmwareVersion(value: Version): Self = StObject.set(x, "firmwareVersion", value.asInstanceOf[js.Any])
     

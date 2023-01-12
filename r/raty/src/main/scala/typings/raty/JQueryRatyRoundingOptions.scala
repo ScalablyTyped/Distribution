@@ -19,7 +19,8 @@ object JQueryRatyRoundingOptions {
     __obj.asInstanceOf[JQueryRatyRoundingOptions]
   }
   
-  extension [Self <: JQueryRatyRoundingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryRatyRoundingOptions] (val x: Self) extends AnyVal {
     
     inline def setDown(value: Double): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
     

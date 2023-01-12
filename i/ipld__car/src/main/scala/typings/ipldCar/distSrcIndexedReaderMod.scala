@@ -129,7 +129,8 @@ object distSrcIndexedReaderMod {
       __obj.asInstanceOf[RawLocation]
     }
     
-    extension [Self <: RawLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawLocation] (val x: Self) extends AnyVal {
       
       inline def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
       

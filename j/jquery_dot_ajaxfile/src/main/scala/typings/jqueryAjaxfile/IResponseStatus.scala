@@ -19,7 +19,8 @@ object IResponseStatus {
     __obj.asInstanceOf[IResponseStatus]
   }
   
-  extension [Self <: IResponseStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IResponseStatus] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object distDeclarationsSrcUtilMod {
       __obj.asInstanceOf[MarginProps]
     }
     
-    extension [Self <: MarginProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarginProps] (val x: Self) extends AnyVal {
       
       inline def setM(value: Any): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object distDeclarationsSrcUtilMod {
       __obj.asInstanceOf[ThemeUIComponentsInternalProps]
     }
     
-    extension [Self <: ThemeUIComponentsInternalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeUIComponentsInternalProps] (val x: Self) extends AnyVal {
       
       inline def set__css(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeUICSSObject */ Any

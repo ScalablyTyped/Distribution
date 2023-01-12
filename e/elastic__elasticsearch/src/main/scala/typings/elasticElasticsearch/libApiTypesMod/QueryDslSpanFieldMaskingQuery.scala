@@ -19,7 +19,8 @@ object QueryDslSpanFieldMaskingQuery {
     __obj.asInstanceOf[QueryDslSpanFieldMaskingQuery]
   }
   
-  extension [Self <: QueryDslSpanFieldMaskingQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslSpanFieldMaskingQuery] (val x: Self) extends AnyVal {
     
     inline def setField(value: Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

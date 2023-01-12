@@ -21,7 +21,8 @@ object ExtendedAttributeRightHandSideStringList {
     __obj.asInstanceOf[ExtendedAttributeRightHandSideStringList]
   }
   
-  extension [Self <: ExtendedAttributeRightHandSideStringList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendedAttributeRightHandSideStringList] (val x: Self) extends AnyVal {
     
     inline def setType(value: `string-list`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

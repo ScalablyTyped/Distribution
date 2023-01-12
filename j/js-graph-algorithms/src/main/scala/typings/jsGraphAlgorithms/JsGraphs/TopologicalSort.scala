@@ -21,7 +21,8 @@ object TopologicalSort {
     __obj.asInstanceOf[TopologicalSort]
   }
   
-  extension [Self <: TopologicalSort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopologicalSort] (val x: Self) extends AnyVal {
     
     inline def setDfs(value: (DiGraph, Double) => Unit): Self = StObject.set(x, "dfs", js.Any.fromFunction2(value))
     

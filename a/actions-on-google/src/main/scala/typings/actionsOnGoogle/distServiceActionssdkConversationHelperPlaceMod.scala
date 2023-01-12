@@ -47,7 +47,8 @@ object distServiceActionssdkConversationHelperPlaceMod {
       __obj.asInstanceOf[PlaceOptions]
     }
     
-    extension [Self <: PlaceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlaceOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

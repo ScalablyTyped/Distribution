@@ -74,7 +74,8 @@ object apiParserMod {
         __obj.asInstanceOf[Attribute]
       }
       
-      extension [Self <: Attribute](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
         
         inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
         
@@ -105,7 +106,8 @@ object apiParserMod {
         __obj.asInstanceOf[Children]
       }
       
-      extension [Self <: Children](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
         
         inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         
@@ -134,7 +136,8 @@ object apiParserMod {
         __obj.asInstanceOf[HTML]
       }
       
-      extension [Self <: HTML](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HTML] (val x: Self) extends AnyVal {
         
         inline def setMultiline(
           value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.wordpressBlocks.wordpressBlocksStrings.a, typings.wordpressBlocks.wordpressBlocksStrings.abbr, typings.wordpressBlocks.wordpressBlocksStrings.address */ Any
@@ -165,7 +168,8 @@ object apiParserMod {
         __obj.asInstanceOf[Node]
       }
       
-      extension [Self <: Node](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
         
         inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         
@@ -192,7 +196,8 @@ object apiParserMod {
         __obj.asInstanceOf[Query[T]]
       }
       
-      extension [Self <: Query[?], T](x: Self & Query[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Query[?], T] (val x: Self & Query[T]) extends AnyVal {
         
         inline def setQuery(value: T): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
         
@@ -219,7 +224,8 @@ object apiParserMod {
         __obj.asInstanceOf[Tag]
       }
       
-      extension [Self <: Tag](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
         
         inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         
@@ -244,7 +250,8 @@ object apiParserMod {
         __obj.asInstanceOf[Text]
       }
       
-      extension [Self <: Text](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
         
         inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         

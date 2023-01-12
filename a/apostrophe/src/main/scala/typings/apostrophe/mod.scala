@@ -258,7 +258,8 @@ object mod {
       __obj.asInstanceOf[AposConstructor[M, O]]
     }
     
-    extension [Self <: AposConstructor[?, ?], M, O](x: Self & (AposConstructor[M, O])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AposConstructor[?, ?], M, O] (val x: Self & (AposConstructor[M, O])) extends AnyVal {
       
       inline def setAfterInit(value: () => Unit): Self = StObject.set(x, "afterInit", js.Any.fromFunction0(value))
       
@@ -477,7 +478,8 @@ object mod {
       __obj.asInstanceOf[AposModule]
     }
     
-    extension [Self <: AposModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AposModule] (val x: Self) extends AnyVal {
       
       inline def setEmit(value: String => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
       
@@ -519,7 +521,8 @@ object mod {
       __obj.asInstanceOf[AposModuleOptions[C]]
     }
     
-    extension [Self <: AposModuleOptions[?], C](x: Self & AposModuleOptions[C]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AposModuleOptions[?], C] (val x: Self & AposModuleOptions[C]) extends AnyVal {
       
       inline def setAddFields(value: js.Array[Field]): Self = StObject.set(x, "addFields", value.asInstanceOf[js.Any])
       
@@ -596,7 +599,8 @@ object mod {
       __obj.asInstanceOf[AposType]
     }
     
-    extension [Self <: AposType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AposType] (val x: Self) extends AnyVal {
       
       inline def setBless(value: (/* req */ Any, /* field */ Any) => Unit): Self = StObject.set(x, "bless", js.Any.fromFunction2(value))
       
@@ -644,7 +648,8 @@ object mod {
       __obj.asInstanceOf[Field]
     }
     
-    extension [Self <: Field](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
       
       inline def setChoices(value: js.Array[SelectChoice]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
       
@@ -787,7 +792,8 @@ object mod {
       __obj.asInstanceOf[Schema]
     }
     
-    extension [Self <: Schema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
       
       inline def setAddFieldType(value: AposType => Unit): Self = StObject.set(x, "addFieldType", js.Any.fromFunction1(value))
       
@@ -856,7 +862,8 @@ object mod {
       __obj.asInstanceOf[SelectChoice]
     }
     
-    extension [Self <: SelectChoice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectChoice] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

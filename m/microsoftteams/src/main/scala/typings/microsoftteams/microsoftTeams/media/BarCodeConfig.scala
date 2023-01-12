@@ -23,7 +23,8 @@ object BarCodeConfig {
     __obj.asInstanceOf[BarCodeConfig]
   }
   
-  extension [Self <: BarCodeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarCodeConfig] (val x: Self) extends AnyVal {
     
     inline def setTimeOutIntervalInSec(value: Double): Self = StObject.set(x, "timeOutIntervalInSec", value.asInstanceOf[js.Any])
     

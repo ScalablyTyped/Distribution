@@ -21,7 +21,8 @@ object CapSegments {
     __obj.asInstanceOf[CapSegments]
   }
   
-  extension [Self <: CapSegments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapSegments] (val x: Self) extends AnyVal {
     
     inline def setCapSegments(value: Double): Self = StObject.set(x, "capSegments", value.asInstanceOf[js.Any])
     

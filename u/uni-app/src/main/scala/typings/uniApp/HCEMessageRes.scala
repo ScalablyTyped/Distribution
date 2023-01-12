@@ -28,7 +28,8 @@ object HCEMessageRes {
     __obj.asInstanceOf[HCEMessageRes]
   }
   
-  extension [Self <: HCEMessageRes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HCEMessageRes] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

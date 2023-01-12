@@ -65,7 +65,8 @@ object ConditionalRangeFontLoadOptions {
     __obj.asInstanceOf[ConditionalRangeFontLoadOptions]
   }
   
-  extension [Self <: ConditionalRangeFontLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalRangeFontLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

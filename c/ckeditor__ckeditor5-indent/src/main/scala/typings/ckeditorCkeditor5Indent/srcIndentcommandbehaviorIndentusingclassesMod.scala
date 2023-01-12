@@ -48,7 +48,8 @@ object srcIndentcommandbehaviorIndentusingclassesMod {
       __obj.asInstanceOf[IndentUsingClasses]
     }
     
-    extension [Self <: IndentUsingClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndentUsingClasses] (val x: Self) extends AnyVal {
       
       inline def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       

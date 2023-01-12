@@ -126,7 +126,8 @@ object gmapGmapMod {
       __obj.asInstanceOf[GMapEventParams]
     }
     
-    extension [Self <: GMapEventParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GMapEventParams] (val x: Self) extends AnyVal {
       
       inline def setMap(value: Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
@@ -520,7 +521,8 @@ object gmapGmapMod {
       __obj.asInstanceOf[GMapProps]
     }
     
-    extension [Self <: GMapProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GMapProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

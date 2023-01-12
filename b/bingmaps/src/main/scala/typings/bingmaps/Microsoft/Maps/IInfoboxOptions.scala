@@ -72,7 +72,8 @@ object IInfoboxOptions {
     __obj.asInstanceOf[IInfoboxOptions]
   }
   
-  extension [Self <: IInfoboxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInfoboxOptions] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[IInfoboxActions]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

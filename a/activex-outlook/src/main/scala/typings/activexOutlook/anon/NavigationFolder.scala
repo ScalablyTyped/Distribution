@@ -15,7 +15,8 @@ object NavigationFolder {
     __obj.asInstanceOf[NavigationFolder]
   }
   
-  extension [Self <: NavigationFolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationFolder] (val x: Self) extends AnyVal {
     
     inline def setNavigationFolder(value: typings.activexOutlook.Outlook.NavigationFolder): Self = StObject.set(x, "NavigationFolder", value.asInstanceOf[js.Any])
   }

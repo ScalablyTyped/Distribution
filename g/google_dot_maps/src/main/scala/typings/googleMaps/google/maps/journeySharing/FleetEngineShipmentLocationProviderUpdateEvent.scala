@@ -22,7 +22,8 @@ object FleetEngineShipmentLocationProviderUpdateEvent {
     __obj.asInstanceOf[FleetEngineShipmentLocationProviderUpdateEvent]
   }
   
-  extension [Self <: FleetEngineShipmentLocationProviderUpdateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FleetEngineShipmentLocationProviderUpdateEvent] (val x: Self) extends AnyVal {
     
     inline def setTask(value: Task): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     

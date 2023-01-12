@@ -63,7 +63,8 @@ object ShowObjectSimplified {
     __obj.asInstanceOf[ShowObjectSimplified]
   }
   
-  extension [Self <: ShowObjectSimplified](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowObjectSimplified] (val x: Self) extends AnyVal {
     
     inline def setAvailable_markets(value: js.Array[String]): Self = StObject.set(x, "available_markets", value.asInstanceOf[js.Any])
     

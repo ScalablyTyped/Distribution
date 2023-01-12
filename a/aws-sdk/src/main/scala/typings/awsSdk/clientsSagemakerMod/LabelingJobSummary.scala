@@ -82,7 +82,8 @@ object LabelingJobSummary {
     __obj.asInstanceOf[LabelingJobSummary]
   }
   
-  extension [Self <: LabelingJobSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelingJobSummary] (val x: Self) extends AnyVal {
     
     inline def setAnnotationConsolidationLambdaArn(value: LambdaFunctionArn): Self = StObject.set(x, "AnnotationConsolidationLambdaArn", value.asInstanceOf[js.Any])
     

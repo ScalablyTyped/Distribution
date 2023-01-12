@@ -18,7 +18,8 @@ object UpdateTemplateSyncConfigOutput {
     __obj.asInstanceOf[UpdateTemplateSyncConfigOutput]
   }
   
-  extension [Self <: UpdateTemplateSyncConfigOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTemplateSyncConfigOutput] (val x: Self) extends AnyVal {
     
     inline def setTemplateSyncConfig(value: TemplateSyncConfig): Self = StObject.set(x, "templateSyncConfig", value.asInstanceOf[js.Any])
     

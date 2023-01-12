@@ -24,7 +24,8 @@ object PipelineBareFunction_ {
     __obj.asInstanceOf[PipelineBareFunction_]
   }
   
-  extension [Self <: PipelineBareFunction_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelineBareFunction_] (val x: Self) extends AnyVal {
     
     inline def setCallee(value: Expression): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     

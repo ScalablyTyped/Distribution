@@ -23,7 +23,8 @@ object WorldMapOptions {
     __obj.asInstanceOf[WorldMapOptions]
   }
   
-  extension [Self <: WorldMapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorldMapOptions] (val x: Self) extends AnyVal {
     
     inline def setAppend_to_world(value: String): Self = StObject.set(x, "append_to_world", value.asInstanceOf[js.Any])
     

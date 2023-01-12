@@ -69,7 +69,8 @@ object typesGenerateDataKeyWithoutPlaintextInputMod {
       __obj.asInstanceOf[GenerateDataKeyWithoutPlaintextInput]
     }
     
-    extension [Self <: GenerateDataKeyWithoutPlaintextInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateDataKeyWithoutPlaintextInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

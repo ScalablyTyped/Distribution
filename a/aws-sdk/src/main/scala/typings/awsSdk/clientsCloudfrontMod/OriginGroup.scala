@@ -28,7 +28,8 @@ object OriginGroup {
     __obj.asInstanceOf[OriginGroup]
   }
   
-  extension [Self <: OriginGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginGroup] (val x: Self) extends AnyVal {
     
     inline def setFailoverCriteria(value: OriginGroupFailoverCriteria): Self = StObject.set(x, "FailoverCriteria", value.asInstanceOf[js.Any])
     

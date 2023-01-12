@@ -41,7 +41,8 @@ object AuthoringInfoField2 {
     __obj.asInstanceOf[AuthoringInfoField2]
   }
   
-  extension [Self <: AuthoringInfoField2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthoringInfoField2] (val x: Self) extends AnyVal {
     
     inline def setClassBreakInfos(value: js.Array[AuthoringInfoField2ClassBreakInfos]): Self = StObject.set(x, "classBreakInfos", value.asInstanceOf[js.Any])
     

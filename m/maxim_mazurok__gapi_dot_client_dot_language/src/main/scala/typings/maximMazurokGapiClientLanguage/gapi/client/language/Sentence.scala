@@ -19,7 +19,8 @@ object Sentence {
     __obj.asInstanceOf[Sentence]
   }
   
-  extension [Self <: Sentence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sentence] (val x: Self) extends AnyVal {
     
     inline def setSentiment(value: Sentiment): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
     

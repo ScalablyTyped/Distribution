@@ -107,7 +107,8 @@ object Addnew {
     __obj.asInstanceOf[Addnew]
   }
   
-  extension [Self <: Addnew](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Addnew] (val x: Self) extends AnyVal {
     
     inline def setAdd_new(value: String): Self = StObject.set(x, "add_new", value.asInstanceOf[js.Any])
     

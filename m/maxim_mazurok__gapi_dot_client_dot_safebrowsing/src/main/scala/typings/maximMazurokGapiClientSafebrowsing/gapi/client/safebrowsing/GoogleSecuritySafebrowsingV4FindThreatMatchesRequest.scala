@@ -19,7 +19,8 @@ object GoogleSecuritySafebrowsingV4FindThreatMatchesRequest {
     __obj.asInstanceOf[GoogleSecuritySafebrowsingV4FindThreatMatchesRequest]
   }
   
-  extension [Self <: GoogleSecuritySafebrowsingV4FindThreatMatchesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSecuritySafebrowsingV4FindThreatMatchesRequest] (val x: Self) extends AnyVal {
     
     inline def setClient(value: GoogleSecuritySafebrowsingV4ClientInfo): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ProfileSettings {
     __obj.asInstanceOf[ProfileSettings]
   }
   
-  extension [Self <: ProfileSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileSettings] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

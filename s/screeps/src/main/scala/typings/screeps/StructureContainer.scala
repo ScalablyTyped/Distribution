@@ -51,7 +51,8 @@ object StructureContainer {
     __obj.asInstanceOf[StructureContainer]
   }
   
-  extension [Self <: StructureContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureContainer] (val x: Self) extends AnyVal {
     
     inline def setStore(value: StoreDefinition): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     

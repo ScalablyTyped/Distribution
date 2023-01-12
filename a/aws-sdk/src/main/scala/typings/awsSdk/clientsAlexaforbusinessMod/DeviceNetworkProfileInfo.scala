@@ -28,7 +28,8 @@ object DeviceNetworkProfileInfo {
     __obj.asInstanceOf[DeviceNetworkProfileInfo]
   }
   
-  extension [Self <: DeviceNetworkProfileInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceNetworkProfileInfo] (val x: Self) extends AnyVal {
     
     inline def setCertificateArn(value: Arn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     

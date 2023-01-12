@@ -28,7 +28,8 @@ object FindingActor {
     __obj.asInstanceOf[FindingActor]
   }
   
-  extension [Self <: FindingActor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindingActor] (val x: Self) extends AnyVal {
     
     inline def setDomainDetails(value: DomainDetails): Self = StObject.set(x, "domainDetails", value.asInstanceOf[js.Any])
     

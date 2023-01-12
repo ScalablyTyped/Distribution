@@ -71,7 +71,8 @@ object srcSdkInternalUndoManagerMod {
       __obj.asInstanceOf[ICustomActionChange]
     }
     
-    extension [Self <: ICustomActionChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICustomActionChange] (val x: Self) extends AnyVal {
       
       inline def setRedoAction(value: () => Unit): Self = StObject.set(x, "redoAction", js.Any.fromFunction0(value))
       
@@ -92,7 +93,8 @@ object srcSdkInternalUndoManagerMod {
       __obj.asInstanceOf[IDeltaChange]
     }
     
-    extension [Self <: IDeltaChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDeltaChange] (val x: Self) extends AnyVal {
       
       inline def setDelta(value: Delta): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object KeywordInformation {
     __obj.asInstanceOf[KeywordInformation]
   }
   
-  extension [Self <: KeywordInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeywordInformation] (val x: Self) extends AnyVal {
     
     inline def setKeyword(value: Keyword): Self = StObject.set(x, "Keyword", value.asInstanceOf[js.Any])
     

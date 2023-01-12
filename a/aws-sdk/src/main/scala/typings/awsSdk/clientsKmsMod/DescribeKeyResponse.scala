@@ -18,7 +18,8 @@ object DescribeKeyResponse {
     __obj.asInstanceOf[DescribeKeyResponse]
   }
   
-  extension [Self <: DescribeKeyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeKeyResponse] (val x: Self) extends AnyVal {
     
     inline def setKeyMetadata(value: KeyMetadata): Self = StObject.set(x, "KeyMetadata", value.asInstanceOf[js.Any])
     

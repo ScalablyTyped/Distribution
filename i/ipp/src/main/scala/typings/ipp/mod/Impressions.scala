@@ -29,7 +29,8 @@ object Impressions {
     __obj.asInstanceOf[Impressions]
   }
   
-  extension [Self <: Impressions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Impressions] (val x: Self) extends AnyVal {
     
     inline def setBlank(value: Double): Self = StObject.set(x, "blank", value.asInstanceOf[js.Any])
     

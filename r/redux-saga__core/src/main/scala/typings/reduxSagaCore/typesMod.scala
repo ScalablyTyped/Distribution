@@ -168,7 +168,8 @@ object typesMod {
       __obj.asInstanceOf[ErrorInfo]
     }
     
-    extension [Self <: ErrorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorInfo] (val x: Self) extends AnyVal {
       
       inline def setSagaStack(value: String): Self = StObject.set(x, "sagaStack", value.asInstanceOf[js.Any])
     }
@@ -193,7 +194,8 @@ object typesMod {
       __obj.asInstanceOf[EventChannel_[T]]
     }
     
-    extension [Self <: EventChannel_[?], T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NotUndefined */ Any */](x: Self & EventChannel_[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventChannel_[?], T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NotUndefined */ Any */] (val x: Self & EventChannel_[T]) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -214,7 +216,8 @@ object typesMod {
       __obj.asInstanceOf[FlushableChannel[T]]
     }
     
-    extension [Self <: FlushableChannel[?], T](x: Self & FlushableChannel[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlushableChannel[?], T] (val x: Self & FlushableChannel[T]) extends AnyVal {
       
       inline def setFlush(value: js.Function1[/* items */ js.Array[T] | typings.reduxSagaCore.typesMod.END, Unit] => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
     }
@@ -296,7 +299,8 @@ object typesMod {
       __obj.asInstanceOf[RunSagaOptions[A, S]]
     }
     
-    extension [Self <: RunSagaOptions[?, ?], A, S](x: Self & (RunSagaOptions[A, S])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunSagaOptions[?, ?], A, S] (val x: Self & (RunSagaOptions[A, S])) extends AnyVal {
       
       inline def setChannel(value: PredicateTakeableChannel[A]): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -413,7 +417,8 @@ object typesMod {
       __obj.asInstanceOf[SagaMiddlewareOptions[C]]
     }
     
-    extension [Self <: SagaMiddlewareOptions[?], C /* <: js.Object */](x: Self & SagaMiddlewareOptions[C]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SagaMiddlewareOptions[?], C /* <: js.Object */] (val x: Self & SagaMiddlewareOptions[C]) extends AnyVal {
       
       inline def setContext(value: C): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -489,7 +494,8 @@ object typesMod {
       __obj.asInstanceOf[SagaMonitor]
     }
     
-    extension [Self <: SagaMonitor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SagaMonitor] (val x: Self) extends AnyVal {
       
       inline def setActionDispatched(value: /* action */ Action[Any] => Unit): Self = StObject.set(x, "actionDispatched", js.Any.fromFunction1(value))
       
@@ -533,7 +539,8 @@ object typesMod {
       __obj.asInstanceOf[TakeableChannel[T]]
     }
     
-    extension [Self <: TakeableChannel[?], T](x: Self & TakeableChannel[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TakeableChannel[?], T] (val x: Self & TakeableChannel[T]) extends AnyVal {
       
       inline def setTake(value: js.Function1[/* message */ T | typings.reduxSagaCore.typesMod.END, Unit] => Unit): Self = StObject.set(x, "take", js.Any.fromFunction1(value))
     }

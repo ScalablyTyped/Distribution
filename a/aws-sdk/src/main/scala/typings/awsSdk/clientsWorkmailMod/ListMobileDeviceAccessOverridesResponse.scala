@@ -23,7 +23,8 @@ object ListMobileDeviceAccessOverridesResponse {
     __obj.asInstanceOf[ListMobileDeviceAccessOverridesResponse]
   }
   
-  extension [Self <: ListMobileDeviceAccessOverridesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMobileDeviceAccessOverridesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

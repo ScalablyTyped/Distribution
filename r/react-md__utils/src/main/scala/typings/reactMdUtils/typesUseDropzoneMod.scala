@@ -33,7 +33,8 @@ object typesUseDropzoneMod {
       __obj.asInstanceOf[DropzoneHanders[E]]
     }
     
-    extension [Self <: DropzoneHanders[?], E /* <: HTMLElement */](x: Self & DropzoneHanders[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropzoneHanders[?], E /* <: HTMLElement */] (val x: Self & DropzoneHanders[E]) extends AnyVal {
       
       inline def setOnDragEnter(value: DragEvent[E] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
       
@@ -71,7 +72,8 @@ object typesUseDropzoneMod {
       __obj.asInstanceOf[DropzoneHandlers[E]]
     }
     
-    extension [Self <: DropzoneHandlers[?], E /* <: HTMLElement */](x: Self & DropzoneHandlers[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropzoneHandlers[?], E /* <: HTMLElement */] (val x: Self & DropzoneHandlers[E]) extends AnyVal {
       
       inline def setOnDragEnter(value: DragEvent[E] => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction1(value))
       

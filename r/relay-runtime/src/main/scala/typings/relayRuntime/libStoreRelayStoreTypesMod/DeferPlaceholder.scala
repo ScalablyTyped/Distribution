@@ -35,7 +35,8 @@ object DeferPlaceholder {
     __obj.asInstanceOf[DeferPlaceholder]
   }
   
-  extension [Self <: DeferPlaceholder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeferPlaceholder] (val x: Self) extends AnyVal {
     
     inline def setData(value: PayloadData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

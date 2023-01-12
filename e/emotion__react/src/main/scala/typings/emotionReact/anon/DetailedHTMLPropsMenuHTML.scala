@@ -634,7 +634,8 @@ object DetailedHTMLPropsMenuHTML {
     __obj.asInstanceOf[DetailedHTMLPropsMenuHTML]
   }
   
-  extension [Self <: DetailedHTMLPropsMenuHTML](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailedHTMLPropsMenuHTML] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

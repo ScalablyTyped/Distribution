@@ -64,7 +64,8 @@ object PolygonPropertiestypepoly {
     __obj.asInstanceOf[PolygonPropertiestypepoly]
   }
   
-  extension [Self <: PolygonPropertiestypepoly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolygonPropertiestypepoly] (val x: Self) extends AnyVal {
     
     inline def setCentroid(value: PointProperties): Self = StObject.set(x, "centroid", value.asInstanceOf[js.Any])
     

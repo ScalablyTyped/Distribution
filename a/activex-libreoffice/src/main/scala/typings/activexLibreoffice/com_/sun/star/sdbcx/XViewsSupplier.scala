@@ -37,7 +37,8 @@ object XViewsSupplier {
     __obj.asInstanceOf[XViewsSupplier]
   }
   
-  extension [Self <: XViewsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XViewsSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetViews(value: () => XNameAccess): Self = StObject.set(x, "getViews", js.Any.fromFunction0(value))
     

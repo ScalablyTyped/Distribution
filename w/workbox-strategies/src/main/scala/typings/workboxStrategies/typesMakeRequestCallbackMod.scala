@@ -25,7 +25,8 @@ object typesMakeRequestCallbackMod {
       __obj.asInstanceOf[MakeRequestCallbackOptions]
     }
     
-    extension [Self <: MakeRequestCallbackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MakeRequestCallbackOptions] (val x: Self) extends AnyVal {
       
       inline def setEvent(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ Any

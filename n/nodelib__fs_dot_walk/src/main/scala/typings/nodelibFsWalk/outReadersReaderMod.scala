@@ -33,7 +33,8 @@ object outReadersReaderMod {
       __obj.asInstanceOf[Reader]
     }
     
-    extension [Self <: Reader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reader] (val x: Self) extends AnyVal {
       
       inline def set_root(value: String): Self = StObject.set(x, "_root", value.asInstanceOf[js.Any])
       

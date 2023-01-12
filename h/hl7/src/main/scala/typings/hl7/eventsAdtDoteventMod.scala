@@ -27,7 +27,8 @@ object eventsAdtDoteventMod {
       __obj.asInstanceOf[ADT]
     }
     
-    extension [Self <: ADT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ADT] (val x: Self) extends AnyVal {
       
       inline def setEVN(value: Any): Self = StObject.set(x, "EVN", value.asInstanceOf[js.Any])
       

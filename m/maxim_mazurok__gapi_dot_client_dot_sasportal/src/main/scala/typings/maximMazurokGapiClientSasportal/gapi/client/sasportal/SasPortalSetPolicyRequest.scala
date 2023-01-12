@@ -22,7 +22,8 @@ object SasPortalSetPolicyRequest {
     __obj.asInstanceOf[SasPortalSetPolicyRequest]
   }
   
-  extension [Self <: SasPortalSetPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalSetPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setDisableNotification(value: Boolean): Self = StObject.set(x, "disableNotification", value.asInstanceOf[js.Any])
     

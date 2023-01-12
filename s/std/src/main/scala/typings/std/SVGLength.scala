@@ -83,7 +83,8 @@ object SVGLength {
     __obj.asInstanceOf[SVGLength]
   }
   
-  extension [Self <: SVGLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGLength] (val x: Self) extends AnyVal {
     
     inline def setConvertToSpecifiedUnits(value: Double => Unit): Self = StObject.set(x, "convertToSpecifiedUnits", js.Any.fromFunction1(value))
     

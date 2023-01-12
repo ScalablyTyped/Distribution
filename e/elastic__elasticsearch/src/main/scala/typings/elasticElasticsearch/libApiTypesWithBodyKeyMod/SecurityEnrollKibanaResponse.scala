@@ -17,7 +17,8 @@ object SecurityEnrollKibanaResponse {
     __obj.asInstanceOf[SecurityEnrollKibanaResponse]
   }
   
-  extension [Self <: SecurityEnrollKibanaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityEnrollKibanaResponse] (val x: Self) extends AnyVal {
     
     inline def setHttp_ca(value: String): Self = StObject.set(x, "http_ca", value.asInstanceOf[js.Any])
     

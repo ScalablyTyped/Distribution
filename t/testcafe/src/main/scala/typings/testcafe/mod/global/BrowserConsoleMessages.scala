@@ -33,7 +33,8 @@ object BrowserConsoleMessages {
     __obj.asInstanceOf[BrowserConsoleMessages]
   }
   
-  extension [Self <: BrowserConsoleMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserConsoleMessages] (val x: Self) extends AnyVal {
     
     inline def setError(value: js.Array[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

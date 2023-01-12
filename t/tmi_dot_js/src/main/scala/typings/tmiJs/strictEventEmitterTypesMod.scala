@@ -196,7 +196,8 @@ object strictEventEmitterTypesMod {
       __obj.asInstanceOf[TypeRecord[T, U, V]]
     }
     
-    extension [Self <: TypeRecord[?, ?, ?], T, U, V](x: Self & (TypeRecord[T, U, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeRecord[?, ?, ?], T, U, V] (val x: Self & (TypeRecord[T, U, V])) extends AnyVal {
       
       inline def setSpace_emitType(value: V): Self = StObject.set(x, " _emitType", value.asInstanceOf[js.Any])
       

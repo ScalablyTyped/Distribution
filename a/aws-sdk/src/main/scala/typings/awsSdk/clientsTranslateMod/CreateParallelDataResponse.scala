@@ -23,7 +23,8 @@ object CreateParallelDataResponse {
     __obj.asInstanceOf[CreateParallelDataResponse]
   }
   
-  extension [Self <: CreateParallelDataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateParallelDataResponse] (val x: Self) extends AnyVal {
     
     inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

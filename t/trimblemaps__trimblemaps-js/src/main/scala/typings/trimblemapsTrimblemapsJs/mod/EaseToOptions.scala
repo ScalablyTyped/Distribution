@@ -18,7 +18,8 @@ object EaseToOptions {
     __obj.asInstanceOf[EaseToOptions]
   }
   
-  extension [Self <: EaseToOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EaseToOptions] (val x: Self) extends AnyVal {
     
     inline def setDelayEndEvents(value: Double): Self = StObject.set(x, "delayEndEvents", value.asInstanceOf[js.Any])
     

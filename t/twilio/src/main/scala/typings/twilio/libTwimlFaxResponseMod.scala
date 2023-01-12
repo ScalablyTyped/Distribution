@@ -46,7 +46,8 @@ object libTwimlFaxResponseMod {
       __obj.asInstanceOf[ReceiveAttributes]
     }
     
-    extension [Self <: ReceiveAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReceiveAttributes] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

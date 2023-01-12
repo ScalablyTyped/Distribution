@@ -123,7 +123,8 @@ object Mirror {
         __obj.asInstanceOf[AccountsCollection]
       }
       
-      extension [Self <: AccountsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountsCollection] (val x: Self) extends AnyVal {
         
         inline def setInsert(value: (Account, String, String, String) => Account): Self = StObject.set(x, "insert", js.Any.fromFunction4(value))
       }
@@ -163,7 +164,8 @@ object Mirror {
         __obj.asInstanceOf[ContactsCollection]
       }
       
-      extension [Self <: ContactsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ContactsCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: String => Contact): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
         
@@ -194,7 +196,8 @@ object Mirror {
         __obj.asInstanceOf[LocationsCollection]
       }
       
-      extension [Self <: LocationsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LocationsCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: String => Location): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
         
@@ -214,7 +217,8 @@ object Mirror {
         __obj.asInstanceOf[SettingsCollection]
       }
       
-      extension [Self <: SettingsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SettingsCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: String => Setting): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       }
@@ -246,7 +250,8 @@ object Mirror {
         __obj.asInstanceOf[SubscriptionsCollection]
       }
       
-      extension [Self <: SubscriptionsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SubscriptionsCollection] (val x: Self) extends AnyVal {
         
         inline def setInsert(value: Subscription => Subscription): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
         
@@ -310,7 +315,8 @@ object Mirror {
     }
   }
   
-  extension [Self <: Mirror](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mirror] (val x: Self) extends AnyVal {
     
     inline def setAccounts(value: AccountsCollection): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
     
@@ -384,7 +390,8 @@ object Mirror {
         __obj.asInstanceOf[Account]
       }
       
-      extension [Self <: Account](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
         
         inline def setAuthTokens(value: js.Array[AuthToken]): Self = StObject.set(x, "authTokens", value.asInstanceOf[js.Any])
         
@@ -427,7 +434,8 @@ object Mirror {
         __obj.asInstanceOf[Attachment]
       }
       
-      extension [Self <: Attachment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
         
         inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
         
@@ -460,7 +468,8 @@ object Mirror {
         __obj.asInstanceOf[AttachmentsListResponse]
       }
       
-      extension [Self <: AttachmentsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AttachmentsListResponse] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Attachment]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -487,7 +496,8 @@ object Mirror {
         __obj.asInstanceOf[AuthToken]
       }
       
-      extension [Self <: AuthToken](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AuthToken] (val x: Self) extends AnyVal {
         
         inline def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
         
@@ -510,7 +520,8 @@ object Mirror {
         __obj.asInstanceOf[Command]
       }
       
-      extension [Self <: Command](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -551,7 +562,8 @@ object Mirror {
         __obj.asInstanceOf[Contact]
       }
       
-      extension [Self <: Contact](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Contact] (val x: Self) extends AnyVal {
         
         inline def setAcceptCommands(value: js.Array[Command]): Self = StObject.set(x, "acceptCommands", value.asInstanceOf[js.Any])
         
@@ -624,7 +636,8 @@ object Mirror {
         __obj.asInstanceOf[ContactsListResponse]
       }
       
-      extension [Self <: ContactsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ContactsListResponse] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Contact]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -663,7 +676,8 @@ object Mirror {
         __obj.asInstanceOf[Location]
       }
       
-      extension [Self <: Location](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
         
         inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
         
@@ -712,7 +726,8 @@ object Mirror {
         __obj.asInstanceOf[LocationsListResponse]
       }
       
-      extension [Self <: LocationsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LocationsListResponse] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Location]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -747,7 +762,8 @@ object Mirror {
         __obj.asInstanceOf[MenuItem]
       }
       
-      extension [Self <: MenuItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MenuItem] (val x: Self) extends AnyVal {
         
         inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         
@@ -792,7 +808,8 @@ object Mirror {
         __obj.asInstanceOf[MenuValue]
       }
       
-      extension [Self <: MenuValue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MenuValue] (val x: Self) extends AnyVal {
         
         inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
@@ -829,7 +846,8 @@ object Mirror {
         __obj.asInstanceOf[Notification]
       }
       
-      extension [Self <: Notification](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
         
         inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
         
@@ -872,7 +890,8 @@ object Mirror {
         __obj.asInstanceOf[NotificationConfig]
       }
       
-      extension [Self <: NotificationConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NotificationConfig] (val x: Self) extends AnyVal {
         
         inline def setDeliveryTime(value: String): Self = StObject.set(x, "deliveryTime", value.asInstanceOf[js.Any])
         
@@ -899,7 +918,8 @@ object Mirror {
         __obj.asInstanceOf[Setting]
       }
       
-      extension [Self <: Setting](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Setting] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -942,7 +962,8 @@ object Mirror {
         __obj.asInstanceOf[Subscription]
       }
       
-      extension [Self <: Subscription](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
         
         inline def setCallbackUrl(value: String): Self = StObject.set(x, "callbackUrl", value.asInstanceOf[js.Any])
         
@@ -997,7 +1018,8 @@ object Mirror {
         __obj.asInstanceOf[SubscriptionsListResponse]
       }
       
-      extension [Self <: SubscriptionsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SubscriptionsListResponse] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Subscription]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -1072,7 +1094,8 @@ object Mirror {
         __obj.asInstanceOf[TimelineItem]
       }
       
-      extension [Self <: TimelineItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TimelineItem] (val x: Self) extends AnyVal {
         
         inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
         
@@ -1201,7 +1224,8 @@ object Mirror {
         __obj.asInstanceOf[TimelineListResponse]
       }
       
-      extension [Self <: TimelineListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TimelineListResponse] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[TimelineItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -1232,7 +1256,8 @@ object Mirror {
         __obj.asInstanceOf[UserAction]
       }
       
-      extension [Self <: UserAction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserAction] (val x: Self) extends AnyVal {
         
         inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
         
@@ -1257,7 +1282,8 @@ object Mirror {
         __obj.asInstanceOf[UserData]
       }
       
-      extension [Self <: UserData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserData] (val x: Self) extends AnyVal {
         
         inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         

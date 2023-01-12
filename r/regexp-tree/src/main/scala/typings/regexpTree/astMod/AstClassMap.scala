@@ -47,7 +47,8 @@ object AstClassMap {
     __obj.asInstanceOf[AstClassMap]
   }
   
-  extension [Self <: AstClassMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AstClassMap] (val x: Self) extends AnyVal {
     
     inline def setAlternative(value: Alternative): Self = StObject.set(x, "Alternative", value.asInstanceOf[js.Any])
     

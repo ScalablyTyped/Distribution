@@ -73,7 +73,8 @@ object libFixedHolderMod extends Shortcut {
       __obj.asInstanceOf[FixedHeaderProps[RecordType]]
     }
     
-    extension [Self <: FixedHeaderProps[?], RecordType](x: Self & FixedHeaderProps[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedHeaderProps[?], RecordType] (val x: Self & FixedHeaderProps[RecordType]) extends AnyVal {
       
       inline def setChildren(value: HeaderProps[RecordType] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       

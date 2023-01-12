@@ -89,7 +89,8 @@ object HFADD {
     __obj.asInstanceOf[HFADD]
   }
   
-  extension [Self <: HFADD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HFADD] (val x: Self) extends AnyVal {
     
     inline def setHFDotADD(value: `0`): Self = StObject.set(x, "HF.ADD", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object distContextsComponentsContextMod {
       __obj.asInstanceOf[ComponentContextType]
     }
     
-    extension [Self <: ComponentContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentContextType] (val x: Self) extends AnyVal {
       
       inline def setNotification(value: /* props */ Props => Element): Self = StObject.set(x, "Notification", js.Any.fromFunction1(value))
       

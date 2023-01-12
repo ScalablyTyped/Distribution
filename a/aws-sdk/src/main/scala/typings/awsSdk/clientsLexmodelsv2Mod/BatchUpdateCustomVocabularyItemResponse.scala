@@ -38,7 +38,8 @@ object BatchUpdateCustomVocabularyItemResponse {
     __obj.asInstanceOf[BatchUpdateCustomVocabularyItemResponse]
   }
   
-  extension [Self <: BatchUpdateCustomVocabularyItemResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdateCustomVocabularyItemResponse] (val x: Self) extends AnyVal {
     
     inline def setBotId(value: Id): Self = StObject.set(x, "botId", value.asInstanceOf[js.Any])
     

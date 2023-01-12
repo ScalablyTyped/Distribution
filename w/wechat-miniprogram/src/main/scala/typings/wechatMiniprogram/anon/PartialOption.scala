@@ -34,7 +34,8 @@ object PartialOption {
     __obj.asInstanceOf[PartialOption]
   }
   
-  extension [Self <: PartialOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOption] (val x: Self) extends AnyVal {
     
     inline def setOnError(value: /* error */ String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     

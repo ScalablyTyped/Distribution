@@ -38,7 +38,8 @@ object libPickerPickerTypesMod {
       __obj.asInstanceOf[PickerProps]
     }
     
-    extension [Self <: PickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultSelectedValue(value: Any): Self = StObject.set(x, "defaultSelectedValue", value.asInstanceOf[js.Any])
       

@@ -77,7 +77,8 @@ object SeriesKlingerOptions {
     __obj.asInstanceOf[SeriesKlingerOptions]
   }
   
-  extension [Self <: SeriesKlingerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesKlingerOptions] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

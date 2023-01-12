@@ -26,7 +26,8 @@ object libComponentsCopyButtonCopyButtonMod extends Shortcut {
       __obj.asInstanceOf[CopyButtonProps]
     }
     
-    extension [Self <: CopyButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyButtonProps] (val x: Self) extends AnyVal {
       
       inline def setIconDescription(value: String): Self = StObject.set(x, "iconDescription", value.asInstanceOf[js.Any])
       

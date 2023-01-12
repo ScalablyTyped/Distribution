@@ -34,7 +34,8 @@ object distNavigationInavigationclientMod {
       __obj.asInstanceOf[INavigationClient]
     }
     
-    extension [Self <: INavigationClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INavigationClient] (val x: Self) extends AnyVal {
       
       inline def setNavigateExternal(value: (String, NavigationOptions) => js.Promise[Boolean]): Self = StObject.set(x, "navigateExternal", js.Any.fromFunction2(value))
       

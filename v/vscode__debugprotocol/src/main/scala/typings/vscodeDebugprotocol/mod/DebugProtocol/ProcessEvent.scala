@@ -27,7 +27,8 @@ object ProcessEvent {
     __obj.asInstanceOf[ProcessEvent]
   }
   
-  extension [Self <: ProcessEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessEvent] (val x: Self) extends AnyVal {
     
     inline def setBody(value: IsLocalProcess): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

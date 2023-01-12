@@ -18,7 +18,8 @@ object DisableSnapshotCopyMessage {
     __obj.asInstanceOf[DisableSnapshotCopyMessage]
   }
   
-  extension [Self <: DisableSnapshotCopyMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableSnapshotCopyMessage] (val x: Self) extends AnyVal {
     
     inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
   }

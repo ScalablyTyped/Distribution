@@ -116,7 +116,8 @@ object mod {
         __obj.asInstanceOf[MakeBreakOptions]
       }
       
-      extension [Self <: MakeBreakOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MakeBreakOptions] (val x: Self) extends AnyVal {
         
         inline def setArgs(value: Double): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         

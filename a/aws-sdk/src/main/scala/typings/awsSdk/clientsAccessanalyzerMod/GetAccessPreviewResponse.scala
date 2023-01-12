@@ -18,7 +18,8 @@ object GetAccessPreviewResponse {
     __obj.asInstanceOf[GetAccessPreviewResponse]
   }
   
-  extension [Self <: GetAccessPreviewResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAccessPreviewResponse] (val x: Self) extends AnyVal {
     
     inline def setAccessPreview(value: AccessPreview): Self = StObject.set(x, "accessPreview", value.asInstanceOf[js.Any])
   }

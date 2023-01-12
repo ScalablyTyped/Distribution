@@ -19,7 +19,8 @@ object Locale {
     __obj.asInstanceOf[Locale]
   }
   
-  extension [Self <: Locale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
     
     inline def setI18nNodesByMsgId(value: StringDictionary[js.Array[Node]]): Self = StObject.set(x, "i18nNodesByMsgId", value.asInstanceOf[js.Any])
     

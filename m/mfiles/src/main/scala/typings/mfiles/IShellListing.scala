@@ -114,7 +114,8 @@ object IShellListing {
     __obj.asInstanceOf[IShellListing]
   }
   
-  extension [Self <: IShellListing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShellListing] (val x: Self) extends AnyVal {
     
     inline def setActivateListing(value: () => Unit): Self = StObject.set(x, "ActivateListing", js.Any.fromFunction0(value))
     

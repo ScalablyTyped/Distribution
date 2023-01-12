@@ -18,7 +18,8 @@ object SpatialInteractionSourceLocation {
     __obj.asInstanceOf[SpatialInteractionSourceLocation]
   }
   
-  extension [Self <: SpatialInteractionSourceLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialInteractionSourceLocation] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

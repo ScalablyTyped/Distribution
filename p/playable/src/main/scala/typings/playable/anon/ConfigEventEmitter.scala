@@ -19,7 +19,8 @@ object ConfigEventEmitter {
     __obj.asInstanceOf[ConfigEventEmitter]
   }
   
-  extension [Self <: ConfigEventEmitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigEventEmitter] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

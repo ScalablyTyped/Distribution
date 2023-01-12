@@ -18,7 +18,8 @@ object MultipleOperatingModes {
     __obj.asInstanceOf[MultipleOperatingModes]
   }
   
-  extension [Self <: MultipleOperatingModes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipleOperatingModes] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: StatisticalIssueStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }

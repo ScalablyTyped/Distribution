@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[BufferHelper]
     }
     
-    extension [Self <: BufferHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferHelper] (val x: Self) extends AnyVal {
       
       inline def setConcat(value: Any => BufferHelper): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
       

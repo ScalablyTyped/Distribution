@@ -19,7 +19,8 @@ object PickSourceAction {
     __obj.asInstanceOf[PickSourceAction]
   }
   
-  extension [Self <: PickSourceAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickSourceAction] (val x: Self) extends AnyVal {
     
     inline def setPickSourceAction(value: scala.Double): Self = StObject.set(x, "pickSourceAction", value.asInstanceOf[js.Any])
     

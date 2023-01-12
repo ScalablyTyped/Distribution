@@ -23,7 +23,8 @@ object OverrideAction {
     __obj.asInstanceOf[OverrideAction]
   }
   
-  extension [Self <: OverrideAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverrideAction] (val x: Self) extends AnyVal {
     
     inline def setCount(value: CountAction): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

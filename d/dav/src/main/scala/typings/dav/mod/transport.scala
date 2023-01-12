@@ -54,7 +54,8 @@ object transport {
       __obj.asInstanceOf[TransportOptions]
     }
     
-    extension [Self <: TransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransportOptions] (val x: Self) extends AnyVal {
       
       inline def setRetry(value: Boolean): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       

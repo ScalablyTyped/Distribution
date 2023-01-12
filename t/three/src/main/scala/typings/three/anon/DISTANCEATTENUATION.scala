@@ -17,7 +17,8 @@ object DISTANCEATTENUATION {
     __obj.asInstanceOf[DISTANCEATTENUATION]
   }
   
-  extension [Self <: DISTANCEATTENUATION](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DISTANCEATTENUATION] (val x: Self) extends AnyVal {
     
     inline def setDISTANCE_ATTENUATION(value: Boolean): Self = StObject.set(x, "DISTANCE_ATTENUATION", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setArweaveWallet(value: Connect): Self = StObject.set(x, "arweaveWallet", value.asInstanceOf[js.Any])
       }
@@ -65,7 +66,8 @@ object mod {
         __obj.asInstanceOf[WindowEventMap]
       }
       
-      extension [Self <: WindowEventMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WindowEventMap] (val x: Self) extends AnyVal {
         
         inline def setArweaveWalletLoaded(value: CustomEvent[js.Object]): Self = StObject.set(x, "arweaveWalletLoaded", value.asInstanceOf[js.Any])
         

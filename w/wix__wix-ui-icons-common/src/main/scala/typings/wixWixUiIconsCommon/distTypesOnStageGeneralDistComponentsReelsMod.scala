@@ -27,7 +27,8 @@ object distTypesOnStageGeneralDistComponentsReelsMod extends Shortcut {
       __obj.asInstanceOf[ReelsProps]
     }
     
-    extension [Self <: ReelsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReelsProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object JobTimers {
     __obj.asInstanceOf[JobTimers]
   }
   
-  extension [Self <: JobTimers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobTimers] (val x: Self) extends AnyVal {
     
     inline def setElapsedTimeInActiveSeconds(value: JobTimeInStateSeconds): Self = StObject.set(x, "ElapsedTimeInActiveSeconds", value.asInstanceOf[js.Any])
     

@@ -104,7 +104,8 @@ object ShapeInfo {
     __obj.asInstanceOf[ShapeInfo]
   }
   
-  extension [Self <: ShapeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeInfo] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: Style): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

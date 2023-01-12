@@ -38,7 +38,8 @@ object Behavior {
     __obj.asInstanceOf[Behavior]
   }
   
-  extension [Self <: Behavior](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Behavior] (val x: Self) extends AnyVal {
     
     inline def setCriteria(value: BehaviorCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     

@@ -695,7 +695,8 @@ object distCordovaSrcPlatformBrowserAuthWindowMod {
       __obj.asInstanceOf[AuthWindow]
     }
     
-    extension [Self <: AuthWindow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthWindow] (val x: Self) extends AnyVal {
       
       inline def setAddEventListener(
         value: (DOMContentLoaded, /* listener */ js.ThisFunction1[AuthWindow, /* ev */ Event, Any]) => Unit

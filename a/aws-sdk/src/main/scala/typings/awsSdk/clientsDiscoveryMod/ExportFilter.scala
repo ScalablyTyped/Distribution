@@ -28,7 +28,8 @@ object ExportFilter {
     __obj.asInstanceOf[ExportFilter]
   }
   
-  extension [Self <: ExportFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportFilter] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

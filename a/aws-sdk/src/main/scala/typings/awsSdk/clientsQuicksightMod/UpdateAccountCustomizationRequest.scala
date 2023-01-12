@@ -28,7 +28,8 @@ object UpdateAccountCustomizationRequest {
     __obj.asInstanceOf[UpdateAccountCustomizationRequest]
   }
   
-  extension [Self <: UpdateAccountCustomizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAccountCustomizationRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountCustomization(value: AccountCustomization): Self = StObject.set(x, "AccountCustomization", value.asInstanceOf[js.Any])
     

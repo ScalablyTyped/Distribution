@@ -33,7 +33,8 @@ object RestoreSnapshotTierResult {
     __obj.asInstanceOf[RestoreSnapshotTierResult]
   }
   
-  extension [Self <: RestoreSnapshotTierResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreSnapshotTierResult] (val x: Self) extends AnyVal {
     
     inline def setIsPermanentRestore(value: Boolean): Self = StObject.set(x, "IsPermanentRestore", value.asInstanceOf[js.Any])
     

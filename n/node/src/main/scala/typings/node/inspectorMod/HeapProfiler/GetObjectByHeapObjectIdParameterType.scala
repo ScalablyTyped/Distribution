@@ -20,7 +20,8 @@ object GetObjectByHeapObjectIdParameterType {
     __obj.asInstanceOf[GetObjectByHeapObjectIdParameterType]
   }
   
-  extension [Self <: GetObjectByHeapObjectIdParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectByHeapObjectIdParameterType] (val x: Self) extends AnyVal {
     
     inline def setObjectGroup(value: String): Self = StObject.set(x, "objectGroup", value.asInstanceOf[js.Any])
     

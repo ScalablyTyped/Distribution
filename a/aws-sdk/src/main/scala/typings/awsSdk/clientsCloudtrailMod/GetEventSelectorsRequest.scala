@@ -18,7 +18,8 @@ object GetEventSelectorsRequest {
     __obj.asInstanceOf[GetEventSelectorsRequest]
   }
   
-  extension [Self <: GetEventSelectorsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEventSelectorsRequest] (val x: Self) extends AnyVal {
     
     inline def setTrailName(value: String): Self = StObject.set(x, "TrailName", value.asInstanceOf[js.Any])
   }

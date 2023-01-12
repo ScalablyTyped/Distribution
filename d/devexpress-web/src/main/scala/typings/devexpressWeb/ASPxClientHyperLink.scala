@@ -67,7 +67,8 @@ object ASPxClientHyperLink {
     __obj.asInstanceOf[ASPxClientHyperLink]
   }
   
-  extension [Self <: ASPxClientHyperLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHyperLink] (val x: Self) extends AnyVal {
     
     inline def setGetNavigateUrl(value: () => String): Self = StObject.set(x, "GetNavigateUrl", js.Any.fromFunction0(value))
     

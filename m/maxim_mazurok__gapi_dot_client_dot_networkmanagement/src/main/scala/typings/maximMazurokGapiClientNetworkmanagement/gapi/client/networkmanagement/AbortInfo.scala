@@ -19,7 +19,8 @@ object AbortInfo {
     __obj.asInstanceOf[AbortInfo]
   }
   
-  extension [Self <: AbortInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbortInfo] (val x: Self) extends AnyVal {
     
     inline def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

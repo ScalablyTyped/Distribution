@@ -15,7 +15,8 @@ object MinimumOrderValueTable {
     __obj.asInstanceOf[MinimumOrderValueTable]
   }
   
-  extension [Self <: MinimumOrderValueTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinimumOrderValueTable] (val x: Self) extends AnyVal {
     
     inline def setStoreCodeSetWithMovs(value: js.Array[MinimumOrderValueTableStoreCodeSetWithMov]): Self = StObject.set(x, "storeCodeSetWithMovs", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object CommitCursorRequest {
     __obj.asInstanceOf[CommitCursorRequest]
   }
   
-  extension [Self <: CommitCursorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitCursorRequest] (val x: Self) extends AnyVal {
     
     inline def setCursor(value: Cursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     

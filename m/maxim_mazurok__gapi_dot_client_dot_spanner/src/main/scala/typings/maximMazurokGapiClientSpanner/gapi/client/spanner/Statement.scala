@@ -34,7 +34,8 @@ object Statement {
     __obj.asInstanceOf[Statement]
   }
   
-  extension [Self <: Statement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Statement] (val x: Self) extends AnyVal {
     
     inline def setParamTypes(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.Type} */ js.Any

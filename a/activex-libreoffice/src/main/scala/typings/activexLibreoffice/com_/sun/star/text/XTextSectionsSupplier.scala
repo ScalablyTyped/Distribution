@@ -31,7 +31,8 @@ object XTextSectionsSupplier {
     __obj.asInstanceOf[XTextSectionsSupplier]
   }
   
-  extension [Self <: XTextSectionsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextSectionsSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetTextSections(value: () => XNameAccess): Self = StObject.set(x, "getTextSections", js.Any.fromFunction0(value))
     

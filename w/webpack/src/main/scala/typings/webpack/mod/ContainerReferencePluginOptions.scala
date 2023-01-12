@@ -28,7 +28,8 @@ object ContainerReferencePluginOptions {
     __obj.asInstanceOf[ContainerReferencePluginOptions]
   }
   
-  extension [Self <: ContainerReferencePluginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerReferencePluginOptions] (val x: Self) extends AnyVal {
     
     inline def setRemoteType(value: ExternalsType): Self = StObject.set(x, "remoteType", value.asInstanceOf[js.Any])
     

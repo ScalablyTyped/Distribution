@@ -161,7 +161,8 @@ object typesMethodNotAllowedExceptionMod {
       __obj.asInstanceOf[MethodNotAllowedException]
     }
     
-    extension [Self <: MethodNotAllowedException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MethodNotAllowedException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.MethodNotAllowedException
@@ -188,7 +189,8 @@ object typesMethodNotAllowedExceptionMod {
       __obj.asInstanceOf[MethodNotAllowedExceptionDetails]
     }
     
-    extension [Self <: MethodNotAllowedExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MethodNotAllowedExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

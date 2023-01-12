@@ -1110,7 +1110,8 @@ object modulesParallelCoordinatesMod {
         __obj.asInstanceOf[Chart]
       }
       
-      extension [Self <: Chart](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Chart] (val x: Self) extends AnyVal {
         
         inline def setHasParallelCoordinates(value: Boolean): Self = StObject.set(x, "hasParallelCoordinates", value.asInstanceOf[js.Any])
       }

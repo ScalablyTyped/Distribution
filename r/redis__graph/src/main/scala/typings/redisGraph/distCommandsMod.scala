@@ -160,7 +160,8 @@ object distCommandsMod {
       __obj.asInstanceOf[QueryOptions]
     }
     
-    extension [Self <: QueryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
       
       inline def setParams(value: QueryParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       

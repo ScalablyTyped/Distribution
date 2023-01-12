@@ -47,7 +47,8 @@ object SlotCaptureSetting {
     __obj.asInstanceOf[SlotCaptureSetting]
   }
   
-  extension [Self <: SlotCaptureSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotCaptureSetting] (val x: Self) extends AnyVal {
     
     inline def setCaptureConditional(value: ConditionalSpecification): Self = StObject.set(x, "captureConditional", value.asInstanceOf[js.Any])
     

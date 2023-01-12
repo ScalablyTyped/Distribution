@@ -27,7 +27,8 @@ object StringRepresentation {
     __obj.asInstanceOf[StringRepresentation]
   }
   
-  extension [Self <: StringRepresentation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringRepresentation] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: XTypeConverter => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     

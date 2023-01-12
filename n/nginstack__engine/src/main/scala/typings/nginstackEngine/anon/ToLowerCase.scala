@@ -15,7 +15,8 @@ object ToLowerCase {
     __obj.asInstanceOf[ToLowerCase]
   }
   
-  extension [Self <: ToLowerCase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToLowerCase] (val x: Self) extends AnyVal {
     
     inline def setToLowerCase(value: Boolean): Self = StObject.set(x, "toLowerCase", value.asInstanceOf[js.Any])
   }

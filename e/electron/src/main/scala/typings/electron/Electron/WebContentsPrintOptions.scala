@@ -95,7 +95,8 @@ object WebContentsPrintOptions {
     __obj.asInstanceOf[WebContentsPrintOptions]
   }
   
-  extension [Self <: WebContentsPrintOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebContentsPrintOptions] (val x: Self) extends AnyVal {
     
     inline def setCollate(value: Boolean): Self = StObject.set(x, "collate", value.asInstanceOf[js.Any])
     

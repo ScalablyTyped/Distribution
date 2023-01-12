@@ -23,7 +23,8 @@ object Responses201ContentApplicationjsonAuthorCommitter {
     __obj.asInstanceOf[Responses201ContentApplicationjsonAuthorCommitter]
   }
   
-  extension [Self <: Responses201ContentApplicationjsonAuthorCommitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses201ContentApplicationjsonAuthorCommitter] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: `472`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

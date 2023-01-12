@@ -24,7 +24,8 @@ object KEEPTTL {
     __obj.asInstanceOf[KEEPTTL]
   }
   
-  extension [Self <: KEEPTTL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KEEPTTL] (val x: Self) extends AnyVal {
     
     inline def setEX(value: Double): Self = StObject.set(x, "EX", value.asInstanceOf[js.Any])
     

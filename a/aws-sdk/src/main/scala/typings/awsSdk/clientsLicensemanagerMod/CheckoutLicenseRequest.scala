@@ -54,7 +54,8 @@ object CheckoutLicenseRequest {
     __obj.asInstanceOf[CheckoutLicenseRequest]
   }
   
-  extension [Self <: CheckoutLicenseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckoutLicenseRequest] (val x: Self) extends AnyVal {
     
     inline def setBeneficiary(value: String): Self = StObject.set(x, "Beneficiary", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object LogisticRegressionClassifierClassification {
     __obj.asInstanceOf[LogisticRegressionClassifierClassification]
   }
   
-  extension [Self <: LogisticRegressionClassifierClassification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogisticRegressionClassifierClassification] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

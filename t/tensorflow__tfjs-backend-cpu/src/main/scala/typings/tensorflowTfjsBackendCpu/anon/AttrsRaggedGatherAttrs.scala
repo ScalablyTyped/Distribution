@@ -22,7 +22,8 @@ object AttrsRaggedGatherAttrs {
     __obj.asInstanceOf[AttrsRaggedGatherAttrs]
   }
   
-  extension [Self <: AttrsRaggedGatherAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsRaggedGatherAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: RaggedGatherAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object Header {
     __obj.asInstanceOf[Header[H]]
   }
   
-  extension [Self <: Header[?], H /* <: DataTableHeader[String] */](x: Self & Header[H]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Header[?], H /* <: DataTableHeader[String] */] (val x: Self & Header[H]) extends AnyVal {
     
     inline def setHeader(value: /* import warning: importer.ImportType#apply Failed type conversion: H['key'] */ js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
   }

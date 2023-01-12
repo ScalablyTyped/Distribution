@@ -19,7 +19,8 @@ object ApplyInvoiceAPIResult {
     __obj.asInstanceOf[ApplyInvoiceAPIResult]
   }
   
-  extension [Self <: ApplyInvoiceAPIResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplyInvoiceAPIResult] (val x: Self) extends AnyVal {
     
     inline def setAppliedTime(value: String): Self = StObject.set(x, "AppliedTime", value.asInstanceOf[js.Any])
     

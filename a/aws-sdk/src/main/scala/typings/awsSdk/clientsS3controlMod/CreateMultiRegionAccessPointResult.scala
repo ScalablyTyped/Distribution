@@ -18,7 +18,8 @@ object CreateMultiRegionAccessPointResult {
     __obj.asInstanceOf[CreateMultiRegionAccessPointResult]
   }
   
-  extension [Self <: CreateMultiRegionAccessPointResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMultiRegionAccessPointResult] (val x: Self) extends AnyVal {
     
     inline def setRequestTokenARN(value: AsyncRequestTokenARN): Self = StObject.set(x, "RequestTokenARN", value.asInstanceOf[js.Any])
     

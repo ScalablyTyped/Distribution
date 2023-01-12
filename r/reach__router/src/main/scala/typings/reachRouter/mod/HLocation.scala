@@ -23,7 +23,8 @@ object HLocation {
     __obj.asInstanceOf[HLocation[S]]
   }
   
-  extension [Self <: HLocation[?], S](x: Self & HLocation[S]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HLocation[?], S] (val x: Self & HLocation[S]) extends AnyVal {
     
     inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

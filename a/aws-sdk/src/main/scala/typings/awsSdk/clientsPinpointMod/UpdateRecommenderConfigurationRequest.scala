@@ -20,7 +20,8 @@ object UpdateRecommenderConfigurationRequest {
     __obj.asInstanceOf[UpdateRecommenderConfigurationRequest]
   }
   
-  extension [Self <: UpdateRecommenderConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRecommenderConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setRecommenderId(value: string): Self = StObject.set(x, "RecommenderId", value.asInstanceOf[js.Any])
     

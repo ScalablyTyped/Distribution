@@ -27,7 +27,8 @@ object Breakpoint {
     __obj.asInstanceOf[Breakpoint]
   }
   
-  extension [Self <: Breakpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Breakpoint] (val x: Self) extends AnyVal {
     
     inline def setBreakpoint(value: typings.vscodeDebugprotocol.mod.DebugProtocol.Breakpoint): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
     

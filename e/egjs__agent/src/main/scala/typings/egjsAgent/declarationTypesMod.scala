@@ -42,7 +42,8 @@ object declarationTypesMod {
       __obj.asInstanceOf[AgentBrowserInfo]
     }
     
-    extension [Self <: AgentBrowserInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AgentBrowserInfo] (val x: Self) extends AnyVal {
       
       inline def setChromium(value: Boolean): Self = StObject.set(x, "chromium", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object declarationTypesMod {
       __obj.asInstanceOf[AgentInfo]
     }
     
-    extension [Self <: AgentInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AgentInfo] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: AgentBrowserInfo): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object declarationTypesMod {
       __obj.asInstanceOf[AgentVersionInfo]
     }
     
-    extension [Self <: AgentVersionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AgentVersionInfo] (val x: Self) extends AnyVal {
       
       inline def setMajorVersion(value: Double): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
       
@@ -125,7 +128,8 @@ object declarationTypesMod {
       __obj.asInstanceOf[NavigatorUABrandVersion]
     }
     
-    extension [Self <: NavigatorUABrandVersion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigatorUABrandVersion] (val x: Self) extends AnyVal {
       
       inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
       
@@ -189,7 +193,8 @@ object declarationTypesMod {
       __obj.asInstanceOf[PresetInfo]
     }
     
-    extension [Self <: PresetInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PresetInfo] (val x: Self) extends AnyVal {
       
       inline def setBrand(value: Boolean): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
       
@@ -222,7 +227,8 @@ object declarationTypesMod {
       __obj.asInstanceOf[PresetResult]
     }
     
-    extension [Self <: PresetResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PresetResult] (val x: Self) extends AnyVal {
       
       inline def setPreset(value: PresetInfo): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
       
@@ -260,7 +266,8 @@ object declarationTypesMod {
       __obj.asInstanceOf[UADataValues]
     }
     
-    extension [Self <: UADataValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UADataValues] (val x: Self) extends AnyVal {
       
       inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
       

@@ -58,7 +58,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RPT2Options]
     }
     
-    extension [Self <: RPT2Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RPT2Options] (val x: Self) extends AnyVal {
       
       inline def setAbortOnError(value: Boolean): Self = StObject.set(x, "abortOnError", value.asInstanceOf[js.Any])
       

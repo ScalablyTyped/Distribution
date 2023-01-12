@@ -79,7 +79,8 @@ object mod {
       __obj.asInstanceOf[Route[TParams]]
     }
     
-    extension [Self <: Route[?], TParams /* <: js.Object */](x: Self & Route[TParams]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Route[?], TParams /* <: js.Object */] (val x: Self & Route[TParams]) extends AnyVal {
       
       inline def setMatch(
         value: String => (/* import warning: importer.ImportType#apply Failed type conversion: {[ k in keyof TParams ]: string} */ js.Any) | `false`

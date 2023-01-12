@@ -23,7 +23,8 @@ object CellInput {
     __obj.asInstanceOf[CellInput]
   }
   
-  extension [Self <: CellInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellInput] (val x: Self) extends AnyVal {
     
     inline def setFact(value: Fact): Self = StObject.set(x, "fact", value.asInstanceOf[js.Any])
     

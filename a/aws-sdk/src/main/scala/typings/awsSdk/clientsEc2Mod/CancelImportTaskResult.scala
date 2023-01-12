@@ -28,7 +28,8 @@ object CancelImportTaskResult {
     __obj.asInstanceOf[CancelImportTaskResult]
   }
   
-  extension [Self <: CancelImportTaskResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelImportTaskResult] (val x: Self) extends AnyVal {
     
     inline def setImportTaskId(value: String): Self = StObject.set(x, "ImportTaskId", value.asInstanceOf[js.Any])
     

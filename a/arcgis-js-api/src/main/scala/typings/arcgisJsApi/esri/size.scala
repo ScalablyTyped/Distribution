@@ -51,7 +51,8 @@ object size {
     __obj.asInstanceOf[size]
   }
   
-  extension [Self <: size](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: size] (val x: Self) extends AnyVal {
     
     inline def setCreateAgeRenderer(value: sizeCreateAgeRendererParams => js.Promise[sizeAgeRendererResult]): Self = StObject.set(x, "createAgeRenderer", js.Any.fromFunction1(value))
     

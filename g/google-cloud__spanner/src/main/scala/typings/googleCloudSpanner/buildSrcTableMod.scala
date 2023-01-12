@@ -900,7 +900,8 @@ object buildSrcTableMod {
       __obj.asInstanceOf[MutateRowsOptions]
     }
     
-    extension [Self <: MutateRowsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutateRowsOptions] (val x: Self) extends AnyVal {
       
       inline def setRequestOptions(
         value: Omit[

@@ -41,7 +41,8 @@ object DirectionalTransition {
     __obj.asInstanceOf[DirectionalTransition]
   }
   
-  extension [Self <: DirectionalTransition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionalTransition] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: LEFT | RIGHT | TOP | BOTTOM): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

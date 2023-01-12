@@ -25,7 +25,8 @@ object IndexAccess {
     __obj.asInstanceOf[IndexAccess]
   }
   
-  extension [Self <: IndexAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexAccess] (val x: Self) extends AnyVal {
     
     inline def setBase(value: Expression): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

@@ -217,7 +217,8 @@ object Data {
       __obj.asInstanceOf[AddFeatureEvent]
     }
     
-    extension [Self <: AddFeatureEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddFeatureEvent] (val x: Self) extends AnyVal {
       
       inline def setFeature(value: typings.googleMaps.google.maps.Data.Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     }
@@ -285,7 +286,8 @@ object Data {
       __obj.asInstanceOf[DataOptions]
     }
     
-    extension [Self <: DataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataOptions] (val x: Self) extends AnyVal {
       
       inline def setControlPosition(value: ControlPosition): Self = StObject.set(x, "controlPosition", value.asInstanceOf[js.Any])
       
@@ -410,7 +412,8 @@ object Data {
       __obj.asInstanceOf[FeatureOptions]
     }
     
-    extension [Self <: FeatureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeatureOptions] (val x: Self) extends AnyVal {
       
       inline def setGeometry(value: Geometry | LatLng | LatLngLiteral): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
@@ -448,7 +451,8 @@ object Data {
       __obj.asInstanceOf[GeoJsonOptions]
     }
     
-    extension [Self <: GeoJsonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoJsonOptions] (val x: Self) extends AnyVal {
       
       inline def setIdPropertyName(value: String): Self = StObject.set(x, "idPropertyName", value.asInstanceOf[js.Any])
       
@@ -485,7 +489,8 @@ object Data {
       __obj.asInstanceOf[Geometry]
     }
     
-    extension [Self <: Geometry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Geometry] (val x: Self) extends AnyVal {
       
       inline def setForEachLatLng(value: js.Function1[/* a */ LatLng, Unit] => Unit): Self = StObject.set(x, "forEachLatLng", js.Any.fromFunction1(value))
       
@@ -531,7 +536,8 @@ object Data {
       __obj.asInstanceOf[GeometryCollection]
     }
     
-    extension [Self <: GeometryCollection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeometryCollection] (val x: Self) extends AnyVal {
       
       inline def setGetArray(value: () => js.Array[Geometry]): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
       
@@ -577,7 +583,8 @@ object Data {
       __obj.asInstanceOf[LineString]
     }
     
-    extension [Self <: LineString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineString] (val x: Self) extends AnyVal {
       
       inline def setGetArray(value: () => js.Array[LatLng]): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
       
@@ -626,7 +633,8 @@ object Data {
       __obj.asInstanceOf[LinearRing]
     }
     
-    extension [Self <: LinearRing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinearRing] (val x: Self) extends AnyVal {
       
       inline def setGetArray(value: () => js.Array[LatLng]): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
       
@@ -660,7 +668,8 @@ object Data {
       __obj.asInstanceOf[MouseEvent]
     }
     
-    extension [Self <: MouseEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseEvent] (val x: Self) extends AnyVal {
       
       inline def setFeature(value: typings.googleMaps.google.maps.Data.Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     }
@@ -702,7 +711,8 @@ object Data {
       __obj.asInstanceOf[MultiLineString]
     }
     
-    extension [Self <: MultiLineString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiLineString] (val x: Self) extends AnyVal {
       
       inline def setGetArray(value: () => js.Array[LineString]): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
       
@@ -748,7 +758,8 @@ object Data {
       __obj.asInstanceOf[MultiPoint]
     }
     
-    extension [Self <: MultiPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiPoint] (val x: Self) extends AnyVal {
       
       inline def setGetArray(value: () => js.Array[LatLng]): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
       
@@ -794,7 +805,8 @@ object Data {
       __obj.asInstanceOf[MultiPolygon]
     }
     
-    extension [Self <: MultiPolygon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiPolygon] (val x: Self) extends AnyVal {
       
       inline def setGetArray(value: () => js.Array[typings.googleMaps.google.maps.Data.Polygon]): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
       
@@ -827,7 +839,8 @@ object Data {
       __obj.asInstanceOf[typings.googleMaps.google.maps.Data.Point]
     }
     
-    extension [Self <: typings.googleMaps.google.maps.Data.Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.googleMaps.google.maps.Data.Point] (val x: Self) extends AnyVal {
       
       inline def setGet(value: () => LatLng): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     }
@@ -873,7 +886,8 @@ object Data {
       __obj.asInstanceOf[typings.googleMaps.google.maps.Data.Polygon]
     }
     
-    extension [Self <: typings.googleMaps.google.maps.Data.Polygon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.googleMaps.google.maps.Data.Polygon] (val x: Self) extends AnyVal {
       
       inline def setGetArray(value: () => js.Array[LinearRing]): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
       
@@ -900,7 +914,8 @@ object Data {
       __obj.asInstanceOf[RemoveFeatureEvent]
     }
     
-    extension [Self <: RemoveFeatureEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveFeatureEvent] (val x: Self) extends AnyVal {
       
       inline def setFeature(value: typings.googleMaps.google.maps.Data.Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     }
@@ -933,7 +948,8 @@ object Data {
       __obj.asInstanceOf[RemovePropertyEvent]
     }
     
-    extension [Self <: RemovePropertyEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemovePropertyEvent] (val x: Self) extends AnyVal {
       
       inline def setFeature(value: typings.googleMaps.google.maps.Data.Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
       
@@ -970,7 +986,8 @@ object Data {
       __obj.asInstanceOf[SetGeometryEvent]
     }
     
-    extension [Self <: SetGeometryEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetGeometryEvent] (val x: Self) extends AnyVal {
       
       inline def setFeature(value: typings.googleMaps.google.maps.Data.Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
       
@@ -1017,7 +1034,8 @@ object Data {
       __obj.asInstanceOf[SetPropertyEvent]
     }
     
-    extension [Self <: SetPropertyEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetPropertyEvent] (val x: Self) extends AnyVal {
       
       inline def setFeature(value: typings.googleMaps.google.maps.Data.Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
       
@@ -1151,7 +1169,8 @@ object Data {
       __obj.asInstanceOf[StyleOptions]
     }
     
-    extension [Self <: StyleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

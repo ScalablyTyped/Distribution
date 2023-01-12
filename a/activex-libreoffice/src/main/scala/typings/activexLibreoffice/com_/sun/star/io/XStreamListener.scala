@@ -48,7 +48,8 @@ object XStreamListener {
     __obj.asInstanceOf[XStreamListener]
   }
   
-  extension [Self <: XStreamListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStreamListener] (val x: Self) extends AnyVal {
     
     inline def setClosed(value: () => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
     

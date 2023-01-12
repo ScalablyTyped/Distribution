@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsTestTubeSmallMod extends Short
       __obj.asInstanceOf[TestTubeSmallProps]
     }
     
-    extension [Self <: TestTubeSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestTubeSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

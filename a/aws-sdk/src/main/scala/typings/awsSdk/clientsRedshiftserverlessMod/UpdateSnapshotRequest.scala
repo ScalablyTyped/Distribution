@@ -23,7 +23,8 @@ object UpdateSnapshotRequest {
     __obj.asInstanceOf[UpdateSnapshotRequest]
   }
   
-  extension [Self <: UpdateSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setRetentionPeriod(value: Integer): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
     

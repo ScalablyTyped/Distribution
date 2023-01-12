@@ -15,7 +15,8 @@ object SecurityPutRoleResponse {
     __obj.asInstanceOf[SecurityPutRoleResponse]
   }
   
-  extension [Self <: SecurityPutRoleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityPutRoleResponse] (val x: Self) extends AnyVal {
     
     inline def setRole(value: SecurityCreatedStatus): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
   }

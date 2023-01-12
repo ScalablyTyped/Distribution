@@ -39,7 +39,8 @@ object TransformConfig {
     __obj.asInstanceOf[TransformConfig]
   }
   
-  extension [Self <: TransformConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformConfig] (val x: Self) extends AnyVal {
     
     inline def setConstModules(value: ConstModulesConfig): Self = StObject.set(x, "constModules", value.asInstanceOf[js.Any])
     

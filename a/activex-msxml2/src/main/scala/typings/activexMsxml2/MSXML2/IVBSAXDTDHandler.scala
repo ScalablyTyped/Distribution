@@ -28,7 +28,8 @@ object IVBSAXDTDHandler {
     __obj.asInstanceOf[IVBSAXDTDHandler]
   }
   
-  extension [Self <: IVBSAXDTDHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVBSAXDTDHandler] (val x: Self) extends AnyVal {
     
     inline def setMSXML2DotIVBSAXDTDHandler_typekey(value: IVBSAXDTDHandler): Self = StObject.set(x, "MSXML2.IVBSAXDTDHandler_typekey", value.asInstanceOf[js.Any])
     

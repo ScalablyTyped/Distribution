@@ -319,7 +319,8 @@ object Kanban {
       __obj.asInstanceOf[ActionBeginEventArgs]
     }
     
-    extension [Self <: ActionBeginEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionBeginEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -420,7 +421,8 @@ object Kanban {
       __obj.asInstanceOf[ActionCompleteEventArgs]
     }
     
-    extension [Self <: ActionCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -525,7 +527,8 @@ object Kanban {
       __obj.asInstanceOf[ActionFailureEventArgs]
     }
     
-    extension [Self <: ActionFailureEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionFailureEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -622,7 +625,8 @@ object Kanban {
       __obj.asInstanceOf[BeforeCardSelectEventArgs]
     }
     
-    extension [Self <: BeforeCardSelectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeCardSelectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -697,7 +701,8 @@ object Kanban {
       __obj.asInstanceOf[BeginEditEventArgs]
     }
     
-    extension [Self <: BeginEditEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeginEditEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -758,7 +763,8 @@ object Kanban {
       __obj.asInstanceOf[CardClickEventArgs]
     }
     
-    extension [Self <: CardClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -815,7 +821,8 @@ object Kanban {
       __obj.asInstanceOf[CardDoubleClickEventArgs]
     }
     
-    extension [Self <: CardDoubleClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardDoubleClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -868,7 +875,8 @@ object Kanban {
       __obj.asInstanceOf[CardDragEventArgs]
     }
     
-    extension [Self <: CardDragEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardDragEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -929,7 +937,8 @@ object Kanban {
       __obj.asInstanceOf[CardDragStartEventArgs]
     }
     
-    extension [Self <: CardDragStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardDragStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -990,7 +999,8 @@ object Kanban {
       __obj.asInstanceOf[CardDragStopEventArgs]
     }
     
-    extension [Self <: CardDragStopEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardDragStopEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1055,7 +1065,8 @@ object Kanban {
       __obj.asInstanceOf[CardDropEventArgs]
     }
     
-    extension [Self <: CardDropEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardDropEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1136,7 +1147,8 @@ object Kanban {
       __obj.asInstanceOf[CardSelectEventArgs]
     }
     
-    extension [Self <: CardSelectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardSelectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1231,7 +1243,8 @@ object Kanban {
       __obj.asInstanceOf[CardSelectingEventArgs]
     }
     
-    extension [Self <: CardSelectingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardSelectingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1300,7 +1313,8 @@ object Kanban {
       __obj.asInstanceOf[CardSettings]
     }
     
-    extension [Self <: CardSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardSettings] (val x: Self) extends AnyVal {
       
       inline def setColorMapping(value: Any): Self = StObject.set(x, "colorMapping", value.asInstanceOf[js.Any])
       
@@ -1345,7 +1359,8 @@ object Kanban {
       __obj.asInstanceOf[CellClickEventArgs]
     }
     
-    extension [Self <: CellClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1433,7 +1448,8 @@ object Kanban {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setAllowDrag(value: Boolean): Self = StObject.set(x, "allowDrag", value.asInstanceOf[js.Any])
       
@@ -1505,7 +1521,8 @@ object Kanban {
       __obj.asInstanceOf[ColumnsConstraints]
     }
     
-    extension [Self <: ColumnsConstraints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnsConstraints] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -1535,7 +1552,8 @@ object Kanban {
       __obj.asInstanceOf[ColumnsTotalCount]
     }
     
-    extension [Self <: ColumnsTotalCount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnsTotalCount] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
@@ -1576,7 +1594,8 @@ object Kanban {
       __obj.asInstanceOf[ContextClickEventArgs]
     }
     
-    extension [Self <: ContextClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1633,7 +1652,8 @@ object Kanban {
       __obj.asInstanceOf[ContextMenuSettings]
     }
     
-    extension [Self <: ContextMenuSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuSettings] (val x: Self) extends AnyVal {
       
       inline def setCustomMenuItems(value: js.Array[ContextMenuSettingsCustomMenuItem]): Self = StObject.set(x, "customMenuItems", value.asInstanceOf[js.Any])
       
@@ -1683,7 +1703,8 @@ object Kanban {
       __obj.asInstanceOf[ContextMenuSettingsCustomMenuItem]
     }
     
-    extension [Self <: ContextMenuSettingsCustomMenuItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuSettingsCustomMenuItem] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: Target | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
@@ -1732,7 +1753,8 @@ object Kanban {
       __obj.asInstanceOf[ContextOpenEventArgs]
     }
     
-    extension [Self <: ContextOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1781,7 +1803,8 @@ object Kanban {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1811,7 +1834,8 @@ object Kanban {
       __obj.asInstanceOf[CustomToolbarItem]
     }
     
-    extension [Self <: CustomToolbarItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomToolbarItem] (val x: Self) extends AnyVal {
       
       inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
@@ -1840,7 +1864,8 @@ object Kanban {
       __obj.asInstanceOf[DataBoundEventArgs]
     }
     
-    extension [Self <: DataBoundEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataBoundEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1877,7 +1902,8 @@ object Kanban {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -1937,7 +1963,8 @@ object Kanban {
       __obj.asInstanceOf[EditSettings]
     }
     
-    extension [Self <: EditSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowAdding(value: Boolean): Self = StObject.set(x, "allowAdding", value.asInstanceOf[js.Any])
       
@@ -2005,7 +2032,8 @@ object Kanban {
       __obj.asInstanceOf[EditSettingsEditItem]
     }
     
-    extension [Self <: EditSettingsEditItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditSettingsEditItem] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: String | Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -2062,7 +2090,8 @@ object Kanban {
       __obj.asInstanceOf[EndDeleteEventArgs]
     }
     
-    extension [Self <: EndDeleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndDeleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -2123,7 +2152,8 @@ object Kanban {
       __obj.asInstanceOf[EndEditEventArgs]
     }
     
-    extension [Self <: EndEditEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndEditEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -2205,7 +2235,8 @@ object Kanban {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setCollapsibleCards(value: FieldsCollapsibleCards): Self = StObject.set(x, "collapsibleCards", value.asInstanceOf[js.Any])
       
@@ -2264,7 +2295,8 @@ object Kanban {
       __obj.asInstanceOf[FieldsCollapsibleCards]
     }
     
-    extension [Self <: FieldsCollapsibleCards](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldsCollapsibleCards] (val x: Self) extends AnyVal {
       
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -2300,7 +2332,8 @@ object Kanban {
       __obj.asInstanceOf[FilterSetting]
     }
     
-    extension [Self <: FilterSetting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterSetting] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -2345,7 +2378,8 @@ object Kanban {
       __obj.asInstanceOf[HeaderClickEventArgs]
     }
     
-    extension [Self <: HeaderClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2445,7 +2479,8 @@ object Kanban {
       __obj.asInstanceOf[KanbanFilter]
     }
     
-    extension [Self <: KanbanFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KanbanFilter] (val x: Self) extends AnyVal {
       
       inline def setClearFilter(value: () => Unit): Self = StObject.set(x, "clearFilter", js.Any.fromFunction0(value))
       
@@ -2471,7 +2506,8 @@ object Kanban {
       __obj.asInstanceOf[KanbanSelection]
     }
     
-    extension [Self <: KanbanSelection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KanbanSelection] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     }
@@ -2502,7 +2538,8 @@ object Kanban {
       __obj.asInstanceOf[KanbanSwimlane]
     }
     
-    extension [Self <: KanbanSwimlane](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KanbanSwimlane] (val x: Self) extends AnyVal {
       
       inline def setCollapseAll(value: () => Unit): Self = StObject.set(x, "collapseAll", js.Any.fromFunction0(value))
       
@@ -2533,7 +2570,8 @@ object Kanban {
       __obj.asInstanceOf[LoadEventArgs]
     }
     
-    extension [Self <: LoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2846,7 +2884,8 @@ object Kanban {
       __obj.asInstanceOf[typings.ejWebAll.ej.Kanban.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Kanban.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Kanban.Model] (val x: Self) extends AnyVal {
       
       inline def setActionBegin(value: /* e */ ActionBeginEventArgs => Unit): Self = StObject.set(x, "actionBegin", js.Any.fromFunction1(value))
       
@@ -3149,7 +3188,8 @@ object Kanban {
       __obj.asInstanceOf[QueryCellInfoEventArgs]
     }
     
-    extension [Self <: QueryCellInfoEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryCellInfoEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3205,7 +3245,8 @@ object Kanban {
       __obj.asInstanceOf[ScrollSettings]
     }
     
-    extension [Self <: ScrollSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowFreezeSwimlane(value: Boolean): Self = StObject.set(x, "allowFreezeSwimlane", value.asInstanceOf[js.Any])
       
@@ -3249,7 +3290,8 @@ object Kanban {
       __obj.asInstanceOf[SearchSettings]
     }
     
-    extension [Self <: SearchSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchSettings] (val x: Self) extends AnyVal {
       
       inline def setFields(value: js.Array[Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -3285,7 +3327,8 @@ object Kanban {
       __obj.asInstanceOf[StackedHeaderRow]
     }
     
-    extension [Self <: StackedHeaderRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackedHeaderRow] (val x: Self) extends AnyVal {
       
       inline def setStackedHeaderColumns(value: js.Array[StackedHeaderRowsStackedHeaderColumn]): Self = StObject.set(x, "stackedHeaderColumns", value.asInstanceOf[js.Any])
       
@@ -3314,7 +3357,8 @@ object Kanban {
       __obj.asInstanceOf[StackedHeaderRowsStackedHeaderColumn]
     }
     
-    extension [Self <: StackedHeaderRowsStackedHeaderColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackedHeaderRowsStackedHeaderColumn] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -3363,7 +3407,8 @@ object Kanban {
       __obj.asInstanceOf[SwimlaneClickEventArgs]
     }
     
-    extension [Self <: SwimlaneClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwimlaneClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -3429,7 +3474,8 @@ object Kanban {
       __obj.asInstanceOf[SwimlaneSettings]
     }
     
-    extension [Self <: SwimlaneSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwimlaneSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowDragAndDrop(value: Boolean): Self = StObject.set(x, "allowDragAndDrop", value.asInstanceOf[js.Any])
       
@@ -3474,7 +3520,8 @@ object Kanban {
       __obj.asInstanceOf[SwimlaneSettingsHeader]
     }
     
-    extension [Self <: SwimlaneSettingsHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwimlaneSettingsHeader] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -3505,7 +3552,8 @@ object Kanban {
       __obj.asInstanceOf[SwimlaneSettingsUnassignedGroup]
     }
     
-    extension [Self <: SwimlaneSettingsUnassignedGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwimlaneSettingsUnassignedGroup] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -3564,7 +3612,8 @@ object Kanban {
       __obj.asInstanceOf[ToolbarClickEventArgs]
     }
     
-    extension [Self <: ToolbarClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3623,7 +3672,8 @@ object Kanban {
       __obj.asInstanceOf[TooltipSettings]
     }
     
-    extension [Self <: TooltipSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipSettings] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -3654,7 +3704,8 @@ object Kanban {
       __obj.asInstanceOf[Workflow]
     }
     
-    extension [Self <: Workflow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Workflow] (val x: Self) extends AnyVal {
       
       inline def setAllowedTransitions(value: String): Self = StObject.set(x, "allowedTransitions", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object GeoPolygon {
     __obj.asInstanceOf[GeoPolygon]
   }
   
-  extension [Self <: GeoPolygon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoPolygon] (val x: Self) extends AnyVal {
     
     inline def setLines(value: js.Array[GeoLineString]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     

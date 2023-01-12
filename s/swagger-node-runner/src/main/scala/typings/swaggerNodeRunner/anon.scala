@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setPath(value: Any): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
@@ -93,7 +95,8 @@ object anon {
       __obj.asInstanceOf[Register]
     }
     
-    extension [Self <: Register](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Register] (val x: Self) extends AnyVal {
       
       inline def setRegister(value: Call): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
     }
@@ -110,7 +113,8 @@ object anon {
       __obj.asInstanceOf[Swagger]
     }
     
-    extension [Self <: Swagger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Swagger] (val x: Self) extends AnyVal {
       
       inline def setSwagger(value: Path): Self = StObject.set(x, "swagger", value.asInstanceOf[js.Any])
     }

@@ -19,7 +19,8 @@ object CodeSpecimenProps {
     __obj.asInstanceOf[CodeSpecimenProps]
   }
   
-  extension [Self <: CodeSpecimenProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeSpecimenProps] (val x: Self) extends AnyVal {
     
     inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     

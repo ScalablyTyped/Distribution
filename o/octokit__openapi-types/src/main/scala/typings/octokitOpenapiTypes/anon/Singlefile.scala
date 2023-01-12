@@ -49,7 +49,8 @@ object Singlefile {
     __obj.asInstanceOf[Singlefile]
   }
   
-  extension [Self <: Singlefile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Singlefile] (val x: Self) extends AnyVal {
     
     inline def setExpires_at(value: String): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
     

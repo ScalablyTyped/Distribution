@@ -26,7 +26,8 @@ object LolStatus {
       __obj.asInstanceOf[Incident]
     }
     
-    extension [Self <: Incident](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Incident] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object LolStatus {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object LolStatus {
       __obj.asInstanceOf[Service]
     }
     
-    extension [Self <: Service](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
       
       inline def setIncidents(value: js.Array[Incident]): Self = StObject.set(x, "incidents", value.asInstanceOf[js.Any])
       
@@ -141,7 +144,8 @@ object LolStatus {
       __obj.asInstanceOf[Shard]
     }
     
-    extension [Self <: Shard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shard] (val x: Self) extends AnyVal {
       
       inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
@@ -185,7 +189,8 @@ object LolStatus {
       __obj.asInstanceOf[ShardStatus]
     }
     
-    extension [Self <: ShardStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShardStatus] (val x: Self) extends AnyVal {
       
       inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
@@ -220,7 +225,8 @@ object LolStatus {
       __obj.asInstanceOf[Translation]
     }
     
-    extension [Self <: Translation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Translation] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object XRRay {
     __obj.asInstanceOf[XRRay]
   }
   
-  extension [Self <: XRRay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRRay] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: DOMPointReadOnly): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

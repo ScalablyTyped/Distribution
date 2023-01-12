@@ -23,7 +23,8 @@ object ContactFindOptions {
     __obj.asInstanceOf[ContactFindOptions]
   }
   
-  extension [Self <: ContactFindOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactFindOptions] (val x: Self) extends AnyVal {
     
     inline def setDesiredFields(value: js.Array[ContactFieldType]): Self = StObject.set(x, "desiredFields", value.asInstanceOf[js.Any])
     

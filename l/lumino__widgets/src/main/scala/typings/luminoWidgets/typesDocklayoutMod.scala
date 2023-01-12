@@ -313,7 +313,8 @@ object typesDocklayoutMod {
         __obj.asInstanceOf[IAddOptions]
       }
       
-      extension [Self <: IAddOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IAddOptions] (val x: Self) extends AnyVal {
         
         inline def setMode(value: InsertMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
@@ -344,7 +345,8 @@ object typesDocklayoutMod {
         __obj.asInstanceOf[ILayoutConfig]
       }
       
-      extension [Self <: ILayoutConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ILayoutConfig] (val x: Self) extends AnyVal {
         
         inline def setMain(value: AreaConfig): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
         
@@ -390,7 +392,8 @@ object typesDocklayoutMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setDocument(value: Document | ShadowRoot): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
         
@@ -466,7 +469,8 @@ object typesDocklayoutMod {
         __obj.asInstanceOf[ISplitAreaConfig]
       }
       
-      extension [Self <: ISplitAreaConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISplitAreaConfig] (val x: Self) extends AnyVal {
         
         inline def setChildren(value: js.Array[AreaConfig]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
@@ -512,7 +516,8 @@ object typesDocklayoutMod {
         __obj.asInstanceOf[ITabAreaConfig]
       }
       
-      extension [Self <: ITabAreaConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ITabAreaConfig] (val x: Self) extends AnyVal {
         
         inline def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
         
@@ -621,7 +626,8 @@ object typesDocklayoutMod {
         __obj.asInstanceOf[ITabAreaGeometry]
       }
       
-      extension [Self <: ITabAreaGeometry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ITabAreaGeometry] (val x: Self) extends AnyVal {
         
         inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
         

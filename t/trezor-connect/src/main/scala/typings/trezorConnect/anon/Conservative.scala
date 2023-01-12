@@ -25,7 +25,8 @@ object Conservative {
     __obj.asInstanceOf[Conservative]
   }
   
-  extension [Self <: Conservative](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conservative] (val x: Self) extends AnyVal {
     
     inline def setConservative(value: Boolean): Self = StObject.set(x, "conservative", value.asInstanceOf[js.Any])
     

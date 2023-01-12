@@ -28,7 +28,8 @@ object global {
         __obj.asInstanceOf[Process]
       }
       
-      extension [Self <: Process](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Process] (val x: Self) extends AnyVal {
         
         inline def setEmit(value: (log, LogLevel, /* repeated */ String) => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction3(value))
         

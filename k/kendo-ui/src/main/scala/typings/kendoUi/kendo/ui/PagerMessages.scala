@@ -37,7 +37,8 @@ object PagerMessages {
     __obj.asInstanceOf[PagerMessages]
   }
   
-  extension [Self <: PagerMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PagerMessages] (val x: Self) extends AnyVal {
     
     inline def setAllPages(value: String): Self = StObject.set(x, "allPages", value.asInstanceOf[js.Any])
     

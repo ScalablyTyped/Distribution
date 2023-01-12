@@ -17,7 +17,8 @@ object CheckboxState {
     __obj.asInstanceOf[CheckboxState]
   }
   
-  extension [Self <: CheckboxState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckboxState] (val x: Self) extends AnyVal {
     
     inline def setIsFocus(value: Boolean): Self = StObject.set(x, "isFocus", value.asInstanceOf[js.Any])
     

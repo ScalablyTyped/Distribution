@@ -33,7 +33,8 @@ object CreateRecipeRequest {
     __obj.asInstanceOf[CreateRecipeRequest]
   }
   
-  extension [Self <: CreateRecipeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRecipeRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: RecipeDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

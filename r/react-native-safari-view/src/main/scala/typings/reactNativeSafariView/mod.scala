@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[SafariViewOptions]
     }
     
-    extension [Self <: SafariViewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SafariViewOptions] (val x: Self) extends AnyVal {
       
       inline def setBarTintColor(value: String): Self = StObject.set(x, "barTintColor", value.asInstanceOf[js.Any])
       

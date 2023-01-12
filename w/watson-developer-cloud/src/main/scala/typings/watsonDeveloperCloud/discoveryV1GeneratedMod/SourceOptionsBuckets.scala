@@ -20,7 +20,8 @@ object SourceOptionsBuckets {
     __obj.asInstanceOf[SourceOptionsBuckets]
   }
   
-  extension [Self <: SourceOptionsBuckets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceOptionsBuckets] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

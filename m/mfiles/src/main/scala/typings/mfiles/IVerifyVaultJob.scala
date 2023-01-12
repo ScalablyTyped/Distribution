@@ -38,7 +38,8 @@ object IVerifyVaultJob {
     __obj.asInstanceOf[IVerifyVaultJob]
   }
   
-  extension [Self <: IVerifyVaultJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVerifyVaultJob] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IVerifyVaultJob): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

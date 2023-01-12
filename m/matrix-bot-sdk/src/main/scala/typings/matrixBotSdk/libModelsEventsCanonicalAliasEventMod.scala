@@ -32,7 +32,8 @@ object libModelsEventsCanonicalAliasEventMod {
       __obj.asInstanceOf[CanonicalAliasEventContent]
     }
     
-    extension [Self <: CanonicalAliasEventContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanonicalAliasEventContent] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     }

@@ -15,7 +15,8 @@ object WebGLBuffer {
     __obj.asInstanceOf[WebGLBuffer]
   }
   
-  extension [Self <: WebGLBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLBuffer] (val x: Self) extends AnyVal {
     
     inline def set__WebGLBuffer(value: Unit): Self = StObject.set(x, "__WebGLBuffer", value.asInstanceOf[js.Any])
   }

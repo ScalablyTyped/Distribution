@@ -21,7 +21,8 @@ object FormErrorHandlerOutput {
     __obj.asInstanceOf[FormErrorHandlerOutput]
   }
   
-  extension [Self <: FormErrorHandlerOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormErrorHandlerOutput] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

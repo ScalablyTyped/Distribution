@@ -35,7 +35,8 @@ object TextAlignEnumValues {
     __obj.asInstanceOf[TextAlignEnumValues]
   }
   
-  extension [Self <: TextAlignEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextAlignEnumValues] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: TextAlign): Self = StObject.set(x, "Center", value.asInstanceOf[js.Any])
     

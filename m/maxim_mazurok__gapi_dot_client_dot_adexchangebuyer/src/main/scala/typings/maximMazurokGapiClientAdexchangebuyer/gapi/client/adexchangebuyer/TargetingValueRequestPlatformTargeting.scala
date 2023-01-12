@@ -15,7 +15,8 @@ object TargetingValueRequestPlatformTargeting {
     __obj.asInstanceOf[TargetingValueRequestPlatformTargeting]
   }
   
-  extension [Self <: TargetingValueRequestPlatformTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetingValueRequestPlatformTargeting] (val x: Self) extends AnyVal {
     
     inline def setRequestPlatforms(value: js.Array[String]): Self = StObject.set(x, "requestPlatforms", value.asInstanceOf[js.Any])
     

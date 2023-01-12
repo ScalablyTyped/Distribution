@@ -302,7 +302,8 @@ object BrowserCommandsType {
     __obj.asInstanceOf[BrowserCommandsType]
   }
   
-  extension [Self <: BrowserCommandsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserCommandsType] (val x: Self) extends AnyVal {
     
     inline def set$(
       value: /* args */ Parameters[

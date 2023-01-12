@@ -16,7 +16,8 @@ object G2tooltip {
     __obj.asInstanceOf[G2tooltip]
   }
   
-  extension [Self <: G2tooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: G2tooltip] (val x: Self) extends AnyVal {
     
     inline def `setG2-tooltip`(value: FontSizePadding): Self = StObject.set(x, "g2-tooltip", value.asInstanceOf[js.Any])
   }

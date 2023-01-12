@@ -20,7 +20,8 @@ object WorkletFunction {
     __obj.asInstanceOf[WorkletFunction]
   }
   
-  extension [Self <: WorkletFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkletFunction] (val x: Self) extends AnyVal {
     
     inline def set__optimalization(value: Double): Self = StObject.set(x, "__optimalization", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object UpdateWirelessDeviceRequest {
     __obj.asInstanceOf[UpdateWirelessDeviceRequest]
   }
   
-  extension [Self <: UpdateWirelessDeviceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateWirelessDeviceRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

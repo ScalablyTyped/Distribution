@@ -18,7 +18,8 @@ object ModelAuthTolerance {
     __obj.asInstanceOf[ModelAuthTolerance]
   }
   
-  extension [Self <: ModelAuthTolerance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelAuthTolerance] (val x: Self) extends AnyVal {
     
     inline def setAbsolute(value: Money): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
     

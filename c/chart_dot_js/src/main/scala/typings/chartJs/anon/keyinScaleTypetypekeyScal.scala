@@ -33,7 +33,8 @@ object keyinScaleTypetypekeyScal {
     __obj.asInstanceOf[keyinScaleTypetypekeyScal]
   }
   
-  extension [Self <: keyinScaleTypetypekeyScal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keyinScaleTypetypekeyScal] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: typecategoryCategoryScale): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SerializableNode {
     __obj.asInstanceOf[SerializableNode]
   }
   
-  extension [Self <: SerializableNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerializableNode] (val x: Self) extends AnyVal {
     
     inline def setPath(value: JSONPath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

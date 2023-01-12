@@ -19,7 +19,8 @@ object SecurityClearCachedRealmsRequest {
     __obj.asInstanceOf[SecurityClearCachedRealmsRequest]
   }
   
-  extension [Self <: SecurityClearCachedRealmsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityClearCachedRealmsRequest] (val x: Self) extends AnyVal {
     
     inline def setRealms(value: Names): Self = StObject.set(x, "realms", value.asInstanceOf[js.Any])
     

@@ -85,7 +85,8 @@ object libParserBlockMod {
       __obj.asInstanceOf[ParserBlock]
     }
     
-    extension [Self <: ParserBlock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserBlock] (val x: Self) extends AnyVal {
       
       inline def setParse(value: (String, MarkdownIt, Any, js.Array[typings.markdownIt.libTokenMod.^]) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction4(value))
       

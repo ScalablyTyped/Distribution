@@ -39,7 +39,8 @@ object XDataPilotTablesSupplier {
     __obj.asInstanceOf[XDataPilotTablesSupplier]
   }
   
-  extension [Self <: XDataPilotTablesSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataPilotTablesSupplier] (val x: Self) extends AnyVal {
     
     inline def setDataPilotTables(value: XDataPilotTables): Self = StObject.set(x, "DataPilotTables", value.asInstanceOf[js.Any])
     

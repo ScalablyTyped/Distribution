@@ -51,7 +51,8 @@ object IgTreeGridDataSourceSettings {
     __obj.asInstanceOf[IgTreeGridDataSourceSettings]
   }
   
-  extension [Self <: IgTreeGridDataSourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTreeGridDataSourceSettings] (val x: Self) extends AnyVal {
     
     inline def setDataLevelKey(value: String): Self = StObject.set(x, "dataLevelKey", value.asInstanceOf[js.Any])
     

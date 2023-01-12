@@ -23,7 +23,8 @@ object namestringundefinedentryO {
     __obj.asInstanceOf[namestringundefinedentryO]
   }
   
-  extension [Self <: namestringundefinedentryO](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: namestringundefinedentryO] (val x: Self) extends AnyVal {
     
     inline def setEntryOptions(value: EntryOptions): Self = StObject.set(x, "entryOptions", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object CapturePageConfig {
     __obj.asInstanceOf[CapturePageConfig]
   }
   
-  extension [Self <: CapturePageConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapturePageConfig] (val x: Self) extends AnyVal {
     
     inline def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
     

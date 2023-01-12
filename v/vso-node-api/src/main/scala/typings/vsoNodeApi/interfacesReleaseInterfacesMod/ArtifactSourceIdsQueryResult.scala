@@ -15,7 +15,8 @@ object ArtifactSourceIdsQueryResult {
     __obj.asInstanceOf[ArtifactSourceIdsQueryResult]
   }
   
-  extension [Self <: ArtifactSourceIdsQueryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactSourceIdsQueryResult] (val x: Self) extends AnyVal {
     
     inline def setArtifactSourceIds(value: js.Array[ArtifactSourceId]): Self = StObject.set(x, "artifactSourceIds", value.asInstanceOf[js.Any])
     

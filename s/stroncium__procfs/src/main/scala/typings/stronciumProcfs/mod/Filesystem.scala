@@ -17,7 +17,8 @@ object Filesystem {
     __obj.asInstanceOf[Filesystem]
   }
   
-  extension [Self <: Filesystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Filesystem] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

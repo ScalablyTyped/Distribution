@@ -20,7 +20,8 @@ object distLiteFirestoreSrcApiParseContextMod {
       __obj.asInstanceOf[ParseContext]
     }
     
-    extension [Self <: ParseContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseContext] (val x: Self) extends AnyVal {
       
       inline def setDatabaseId(value: DatabaseId): Self = StObject.set(x, "databaseId", value.asInstanceOf[js.Any])
       

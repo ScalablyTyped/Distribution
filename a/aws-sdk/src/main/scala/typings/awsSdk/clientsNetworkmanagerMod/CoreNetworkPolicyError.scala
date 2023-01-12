@@ -28,7 +28,8 @@ object CoreNetworkPolicyError {
     __obj.asInstanceOf[CoreNetworkPolicyError]
   }
   
-  extension [Self <: CoreNetworkPolicyError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreNetworkPolicyError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: ServerSideString): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

@@ -267,7 +267,8 @@ object distLibDictionaryMod {
       __obj.asInstanceOf[Dictionary[K, V]]
     }
     
-    extension [Self <: Dictionary[?, ?], K, V](x: Self & (Dictionary[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictionary[?, ?], K, V] (val x: Self & (Dictionary[K, V])) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
@@ -310,7 +311,8 @@ object distLibDictionaryMod {
       __obj.asInstanceOf[IDictionaryPair[K, V]]
     }
     
-    extension [Self <: IDictionaryPair[?, ?], K, V](x: Self & (IDictionaryPair[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDictionaryPair[?, ?], K, V] (val x: Self & (IDictionaryPair[K, V])) extends AnyVal {
       
       inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

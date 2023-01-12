@@ -16,7 +16,8 @@ object GooglePrivacyDlpV2BucketingConfig {
     __obj.asInstanceOf[GooglePrivacyDlpV2BucketingConfig]
   }
   
-  extension [Self <: GooglePrivacyDlpV2BucketingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2BucketingConfig] (val x: Self) extends AnyVal {
     
     inline def setBuckets(value: js.Array[GooglePrivacyDlpV2Bucket]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     

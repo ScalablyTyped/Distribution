@@ -23,7 +23,8 @@ object DimensionGroupDetail {
     __obj.asInstanceOf[DimensionGroupDetail]
   }
   
-  extension [Self <: DimensionGroupDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionGroupDetail] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: DimensionDetailList): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     

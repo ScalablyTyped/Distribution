@@ -43,7 +43,8 @@ object ViewpointProperties {
     __obj.asInstanceOf[ViewpointProperties]
   }
   
-  extension [Self <: ViewpointProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewpointProperties] (val x: Self) extends AnyVal {
     
     inline def setCamera(value: CameraProperties): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     

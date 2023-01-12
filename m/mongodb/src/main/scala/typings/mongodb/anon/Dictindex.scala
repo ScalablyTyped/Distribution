@@ -18,7 +18,8 @@ object Dictindex {
     __obj.asInstanceOf[Dictindex]
   }
   
-  extension [Self <: Dictindex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictindex] (val x: Self) extends AnyVal {
     
     inline def set_id_(value: Double): Self = StObject.set(x, "_id_", value.asInstanceOf[js.Any])
   }

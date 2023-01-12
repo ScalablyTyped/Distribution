@@ -18,7 +18,8 @@ object PromptFailedResult {
     __obj.asInstanceOf[PromptFailedResult]
   }
   
-  extension [Self <: PromptFailedResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromptFailedResult] (val x: Self) extends AnyVal {
     
     inline def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
   }

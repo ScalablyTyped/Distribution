@@ -35,7 +35,8 @@ object webTwainMod {
       __obj.asInstanceOf[Addon]
     }
     
-    extension [Self <: Addon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Addon] (val x: Self) extends AnyVal {
       
       inline def setBarcodeReader(value: BarcodeReader): Self = StObject.set(x, "BarcodeReader", value.asInstanceOf[js.Any])
       

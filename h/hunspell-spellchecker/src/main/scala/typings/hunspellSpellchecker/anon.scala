@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Aff]
     }
     
-    extension [Self <: Aff](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Aff] (val x: Self) extends AnyVal {
       
       inline def setAff(value: Buffer): Self = StObject.set(x, "aff", value.asInstanceOf[js.Any])
       

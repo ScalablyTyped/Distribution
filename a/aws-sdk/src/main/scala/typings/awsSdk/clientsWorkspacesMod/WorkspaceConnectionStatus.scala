@@ -33,7 +33,8 @@ object WorkspaceConnectionStatus {
     __obj.asInstanceOf[WorkspaceConnectionStatus]
   }
   
-  extension [Self <: WorkspaceConnectionStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceConnectionStatus] (val x: Self) extends AnyVal {
     
     inline def setConnectionState(value: ConnectionState): Self = StObject.set(x, "ConnectionState", value.asInstanceOf[js.Any])
     

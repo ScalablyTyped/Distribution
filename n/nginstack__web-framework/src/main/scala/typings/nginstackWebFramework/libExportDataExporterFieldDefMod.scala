@@ -81,7 +81,8 @@ object libExportDataExporterFieldDefMod {
       __obj.asInstanceOf[DataExporterFieldDef]
     }
     
-    extension [Self <: DataExporterFieldDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataExporterFieldDef] (val x: Self) extends AnyVal {
       
       inline def setDisplayFormat(value: DateFormat | LatitudeFormat | LongitudeFormat | AngleFormat | String | Double): Self = StObject.set(x, "displayFormat", value.asInstanceOf[js.Any])
       

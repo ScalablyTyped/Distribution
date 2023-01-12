@@ -21,7 +21,8 @@ object RequestConfirmation {
     __obj.asInstanceOf[RequestConfirmation]
   }
   
-  extension [Self <: RequestConfirmation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestConfirmation] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: CustomCancelButton): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

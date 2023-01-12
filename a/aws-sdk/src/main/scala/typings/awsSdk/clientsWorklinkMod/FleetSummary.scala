@@ -53,7 +53,8 @@ object FleetSummary {
     __obj.asInstanceOf[FleetSummary]
   }
   
-  extension [Self <: FleetSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FleetSummary] (val x: Self) extends AnyVal {
     
     inline def setCompanyCode(value: CompanyCode): Self = StObject.set(x, "CompanyCode", value.asInstanceOf[js.Any])
     

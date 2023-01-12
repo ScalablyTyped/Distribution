@@ -15,7 +15,8 @@ object ResultPointCallback {
     __obj.asInstanceOf[ResultPointCallback]
   }
   
-  extension [Self <: ResultPointCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultPointCallback] (val x: Self) extends AnyVal {
     
     inline def setFoundPossibleResultPoint(value: FinderPattern => Unit): Self = StObject.set(x, "foundPossibleResultPoint", js.Any.fromFunction1(value))
   }

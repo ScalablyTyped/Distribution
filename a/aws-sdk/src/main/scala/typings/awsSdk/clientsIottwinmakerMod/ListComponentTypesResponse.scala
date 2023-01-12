@@ -33,7 +33,8 @@ object ListComponentTypesResponse {
     __obj.asInstanceOf[ListComponentTypesResponse]
   }
   
-  extension [Self <: ListComponentTypesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListComponentTypesResponse] (val x: Self) extends AnyVal {
     
     inline def setComponentTypeSummaries(value: ComponentTypeSummaries): Self = StObject.set(x, "componentTypeSummaries", value.asInstanceOf[js.Any])
     

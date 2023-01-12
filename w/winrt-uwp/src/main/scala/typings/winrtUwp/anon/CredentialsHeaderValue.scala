@@ -18,7 +18,8 @@ object CredentialsHeaderValue {
     __obj.asInstanceOf[CredentialsHeaderValue]
   }
   
-  extension [Self <: CredentialsHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CredentialsHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setCredentialsHeaderValue(value: HttpCredentialsHeaderValue): Self = StObject.set(x, "credentialsHeaderValue", value.asInstanceOf[js.Any])
     

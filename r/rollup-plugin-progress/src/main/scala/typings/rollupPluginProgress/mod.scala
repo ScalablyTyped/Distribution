@@ -25,7 +25,8 @@ object mod {
       __obj.asInstanceOf[PluginProgressOptions]
     }
     
-    extension [Self <: PluginProgressOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginProgressOptions] (val x: Self) extends AnyVal {
       
       inline def setClearLine(value: Boolean): Self = StObject.set(x, "clearLine", value.asInstanceOf[js.Any])
       

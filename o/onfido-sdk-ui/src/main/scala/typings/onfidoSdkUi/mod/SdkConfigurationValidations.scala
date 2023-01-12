@@ -15,7 +15,8 @@ object SdkConfigurationValidations {
     __obj.asInstanceOf[SdkConfigurationValidations]
   }
   
-  extension [Self <: SdkConfigurationValidations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SdkConfigurationValidations] (val x: Self) extends AnyVal {
     
     inline def setOn_device(value: SdkConfigurationValidationsOnDevice): Self = StObject.set(x, "on_device", value.asInstanceOf[js.Any])
     

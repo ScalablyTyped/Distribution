@@ -15,7 +15,8 @@ object IsRTL {
     __obj.asInstanceOf[IsRTL]
   }
   
-  extension [Self <: IsRTL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsRTL] (val x: Self) extends AnyVal {
     
     inline def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
   }

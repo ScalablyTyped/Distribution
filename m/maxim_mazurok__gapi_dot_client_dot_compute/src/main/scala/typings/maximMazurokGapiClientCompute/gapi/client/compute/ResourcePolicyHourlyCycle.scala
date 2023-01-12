@@ -22,7 +22,8 @@ object ResourcePolicyHourlyCycle {
     __obj.asInstanceOf[ResourcePolicyHourlyCycle]
   }
   
-  extension [Self <: ResourcePolicyHourlyCycle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourcePolicyHourlyCycle] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

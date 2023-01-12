@@ -97,7 +97,8 @@ object distProvidersAlgoliaProviderMod {
       __obj.asInstanceOf[RawResult]
     }
     
-    extension [Self <: RawResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawResult] (val x: Self) extends AnyVal {
       
       inline def setAdmin_level(value: Double): Self = StObject.set(x, "admin_level", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object distProvidersAlgoliaProviderMod {
       __obj.asInstanceOf[RequestResult]
     }
     
-    extension [Self <: RequestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestResult] (val x: Self) extends AnyVal {
       
       inline def setHits(value: js.Array[RawResult]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
       
@@ -179,7 +181,8 @@ object distProvidersAlgoliaProviderMod {
       __obj.asInstanceOf[ValueMatch]
     }
     
-    extension [Self <: ValueMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueMatch] (val x: Self) extends AnyVal {
       
       inline def setFullyHighlighted(value: Boolean): Self = StObject.set(x, "fullyHighlighted", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object DataFlavor {
     __obj.asInstanceOf[DataFlavor]
   }
   
-  extension [Self <: DataFlavor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataFlavor] (val x: Self) extends AnyVal {
     
     inline def setDataType(value: `type`): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     

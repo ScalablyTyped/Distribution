@@ -38,7 +38,8 @@ object CreateMeetingDialOutRequest {
     __obj.asInstanceOf[CreateMeetingDialOutRequest]
   }
   
-  extension [Self <: CreateMeetingDialOutRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMeetingDialOutRequest] (val x: Self) extends AnyVal {
     
     inline def setFromPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "FromPhoneNumber", value.asInstanceOf[js.Any])
     

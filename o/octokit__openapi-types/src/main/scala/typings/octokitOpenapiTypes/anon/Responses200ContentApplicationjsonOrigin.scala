@@ -17,7 +17,8 @@ object Responses200ContentApplicationjsonOrigin {
     __obj.asInstanceOf[Responses200ContentApplicationjsonOrigin]
   }
   
-  extension [Self <: Responses200ContentApplicationjsonOrigin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses200ContentApplicationjsonOrigin] (val x: Self) extends AnyVal {
     
     inline def setRequestBody(value: ContentApplicationjsonExpiryLimit): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

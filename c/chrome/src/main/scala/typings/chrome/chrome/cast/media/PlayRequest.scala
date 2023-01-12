@@ -15,7 +15,8 @@ object PlayRequest {
     __obj.asInstanceOf[PlayRequest]
   }
   
-  extension [Self <: PlayRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayRequest] (val x: Self) extends AnyVal {
     
     inline def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
   }

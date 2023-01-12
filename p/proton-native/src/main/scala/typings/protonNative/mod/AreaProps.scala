@@ -58,7 +58,8 @@ object AreaProps {
     __obj.asInstanceOf[AreaProps]
   }
   
-  extension [Self <: AreaProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaProps] (val x: Self) extends AnyVal {
     
     inline def setOnKeyDown(value: /* event */ KeyboardEvent => Boolean): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     

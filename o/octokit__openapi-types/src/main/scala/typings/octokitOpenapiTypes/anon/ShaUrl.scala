@@ -18,7 +18,8 @@ object ShaUrl {
     __obj.asInstanceOf[ShaUrl]
   }
   
-  extension [Self <: ShaUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShaUrl] (val x: Self) extends AnyVal {
     
     inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     

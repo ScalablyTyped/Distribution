@@ -128,7 +128,8 @@ object FleetAttributes {
     __obj.asInstanceOf[FleetAttributes]
   }
   
-  extension [Self <: FleetAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FleetAttributes] (val x: Self) extends AnyVal {
     
     inline def setBuildArn(value: BuildArn): Self = StObject.set(x, "BuildArn", value.asInstanceOf[js.Any])
     

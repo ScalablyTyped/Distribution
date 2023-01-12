@@ -206,7 +206,8 @@ object srcMaterialsMeshPhysicalMaterialMod {
       __obj.asInstanceOf[MeshPhysicalMaterialParameters]
     }
     
-    extension [Self <: MeshPhysicalMaterialParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeshPhysicalMaterialParameters] (val x: Self) extends AnyVal {
       
       inline def setAttenuationColor(value: Color): Self = StObject.set(x, "attenuationColor", value.asInstanceOf[js.Any])
       

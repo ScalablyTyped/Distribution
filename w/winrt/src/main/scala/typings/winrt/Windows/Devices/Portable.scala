@@ -62,7 +62,8 @@ object Portable {
       __obj.asInstanceOf[IServiceDeviceStatics]
     }
     
-    extension [Self <: IServiceDeviceStatics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IServiceDeviceStatics] (val x: Self) extends AnyVal {
       
       inline def setGetDeviceSelector(value: ServiceDeviceType => String): Self = StObject.set(x, "getDeviceSelector", js.Any.fromFunction1(value))
       
@@ -83,7 +84,8 @@ object Portable {
       __obj.asInstanceOf[IStorageDeviceStatics]
     }
     
-    extension [Self <: IStorageDeviceStatics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStorageDeviceStatics] (val x: Self) extends AnyVal {
       
       inline def setFromId(value: String => StorageFolder): Self = StObject.set(x, "fromId", js.Any.fromFunction1(value))
       

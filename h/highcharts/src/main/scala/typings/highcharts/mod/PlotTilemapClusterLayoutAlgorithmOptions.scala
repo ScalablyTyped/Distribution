@@ -92,7 +92,8 @@ object PlotTilemapClusterLayoutAlgorithmOptions {
     __obj.asInstanceOf[PlotTilemapClusterLayoutAlgorithmOptions]
   }
   
-  extension [Self <: PlotTilemapClusterLayoutAlgorithmOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTilemapClusterLayoutAlgorithmOptions] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double | String): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

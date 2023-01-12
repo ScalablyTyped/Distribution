@@ -18,7 +18,8 @@ object MicrosoftStoreForBusinessAppAssignmentSettings {
     __obj.asInstanceOf[MicrosoftStoreForBusinessAppAssignmentSettings]
   }
   
-  extension [Self <: MicrosoftStoreForBusinessAppAssignmentSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MicrosoftStoreForBusinessAppAssignmentSettings] (val x: Self) extends AnyVal {
     
     inline def setUseDeviceContext(value: Boolean): Self = StObject.set(x, "useDeviceContext", value.asInstanceOf[js.Any])
     

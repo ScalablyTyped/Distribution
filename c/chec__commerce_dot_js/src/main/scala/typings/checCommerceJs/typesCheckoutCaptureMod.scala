@@ -40,7 +40,8 @@ object typesCheckoutCaptureMod {
       __obj.asInstanceOf[CheckoutCapture]
     }
     
-    extension [Self <: CheckoutCapture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckoutCapture] (val x: Self) extends AnyVal {
       
       inline def setBilling(value: PartialAddress): Self = StObject.set(x, "billing", value.asInstanceOf[js.Any])
       

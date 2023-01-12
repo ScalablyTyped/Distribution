@@ -36,7 +36,8 @@ object LeaseWorkItemRequest {
     __obj.asInstanceOf[LeaseWorkItemRequest]
   }
   
-  extension [Self <: LeaseWorkItemRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeaseWorkItemRequest] (val x: Self) extends AnyVal {
     
     inline def setCurrentWorkerTime(value: String): Self = StObject.set(x, "currentWorkerTime", value.asInstanceOf[js.Any])
     

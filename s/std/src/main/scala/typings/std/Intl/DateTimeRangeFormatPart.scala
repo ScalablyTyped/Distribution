@@ -22,7 +22,8 @@ object DateTimeRangeFormatPart {
     __obj.asInstanceOf[DateTimeRangeFormatPart]
   }
   
-  extension [Self <: DateTimeRangeFormatPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimeRangeFormatPart] (val x: Self) extends AnyVal {
     
     inline def setSource(value: startRange | endRange | shared): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }

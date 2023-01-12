@@ -22,7 +22,8 @@ object AsyncContextOptionsisRest {
     __obj.asInstanceOf[AsyncContextOptionsisRest]
   }
   
-  extension [Self <: AsyncContextOptionsisRest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncContextOptionsisRest] (val x: Self) extends AnyVal {
     
     inline def setAsyncContext(value: Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListHumanLoopsResponse {
     __obj.asInstanceOf[ListHumanLoopsResponse]
   }
   
-  extension [Self <: ListHumanLoopsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListHumanLoopsResponse] (val x: Self) extends AnyVal {
     
     inline def setHumanLoopSummaries(value: HumanLoopSummaries): Self = StObject.set(x, "HumanLoopSummaries", value.asInstanceOf[js.Any])
     

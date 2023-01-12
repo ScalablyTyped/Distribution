@@ -92,7 +92,8 @@ object FaxSender {
     __obj.asInstanceOf[FaxSender]
   }
   
-  extension [Self <: FaxSender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxSender] (val x: Self) extends AnyVal {
     
     inline def setBillingCode(value: String): Self = StObject.set(x, "BillingCode", value.asInstanceOf[js.Any])
     

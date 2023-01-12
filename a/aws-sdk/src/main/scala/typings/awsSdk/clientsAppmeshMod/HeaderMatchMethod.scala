@@ -38,7 +38,8 @@ object HeaderMatchMethod {
     __obj.asInstanceOf[HeaderMatchMethod]
   }
   
-  extension [Self <: HeaderMatchMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeaderMatchMethod] (val x: Self) extends AnyVal {
     
     inline def setExact(value: HeaderMatch): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     

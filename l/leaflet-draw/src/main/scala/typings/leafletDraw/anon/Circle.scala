@@ -32,7 +32,8 @@ object Circle {
     __obj.asInstanceOf[Circle]
   }
   
-  extension [Self <: Circle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Circle] (val x: Self) extends AnyVal {
     
     inline def setCircle(value: String): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     

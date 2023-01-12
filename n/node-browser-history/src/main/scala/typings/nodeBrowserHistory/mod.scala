@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[BrowserHistory]
     }
     
-    extension [Self <: BrowserHistory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserHistory] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       

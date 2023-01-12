@@ -29,7 +29,8 @@ object Curator {
     __obj.asInstanceOf[Curator]
   }
   
-  extension [Self <: Curator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Curator] (val x: Self) extends AnyVal {
     
     inline def setCurator(value: Relationship[typings.musickitJs.MusicKit.Activities | AppleCurators | Curators]): Self = StObject.set(x, "curator", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object typesUntagQueueInputMod {
       __obj.asInstanceOf[UntagQueueInput]
     }
     
-    extension [Self <: UntagQueueInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UntagQueueInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

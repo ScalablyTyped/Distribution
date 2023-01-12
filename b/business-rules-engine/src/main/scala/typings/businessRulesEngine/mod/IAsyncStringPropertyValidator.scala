@@ -18,7 +18,8 @@ object IAsyncStringPropertyValidator {
     __obj.asInstanceOf[IAsyncStringPropertyValidator]
   }
   
-  extension [Self <: IAsyncStringPropertyValidator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAsyncStringPropertyValidator] (val x: Self) extends AnyVal {
     
     inline def setIsAcceptable(value: String => Promise[Boolean]): Self = StObject.set(x, "isAcceptable", js.Any.fromFunction1(value))
   }

@@ -21,7 +21,8 @@ object AbandonRequestsRule {
     __obj.asInstanceOf[AbandonRequestsRule]
   }
   
-  extension [Self <: AbandonRequestsRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbandonRequestsRule] (val x: Self) extends AnyVal {
     
     inline def setAbandonRequestsRule(value: Boolean): Self = StObject.set(x, "abandonRequestsRule", value.asInstanceOf[js.Any])
     

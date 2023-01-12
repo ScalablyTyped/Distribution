@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[MatchOptions]
     }
     
-    extension [Self <: MatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object mod {
       __obj.asInstanceOf[TrieOptions[T]]
     }
     
-    extension [Self <: TrieOptions[?], T](x: Self & TrieOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrieOptions[?], T] (val x: Self & TrieOptions[T]) extends AnyVal {
       
       inline def setComparator(value: (/* a */ T, /* b */ T) => Double): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
       

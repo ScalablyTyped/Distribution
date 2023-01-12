@@ -46,7 +46,8 @@ object distCommandsCountMinSketchInfoMod {
       __obj.asInstanceOf[InfoReply]
     }
     
-    extension [Self <: InfoReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InfoReply] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object GetProgrammaticAccessCredentialsRequest {
     __obj.asInstanceOf[GetProgrammaticAccessCredentialsRequest]
   }
   
-  extension [Self <: GetProgrammaticAccessCredentialsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetProgrammaticAccessCredentialsRequest] (val x: Self) extends AnyVal {
     
     inline def setDurationInMinutes(value: SessionDuration): Self = StObject.set(x, "durationInMinutes", value.asInstanceOf[js.Any])
     

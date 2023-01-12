@@ -18,7 +18,8 @@ object TypeofCLUSTERSETCONFIG {
     __obj.asInstanceOf[TypeofCLUSTERSETCONFIG]
   }
   
-  extension [Self <: TypeofCLUSTERSETCONFIG](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCLUSTERSETCONFIG] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: Double => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction1(value))
     

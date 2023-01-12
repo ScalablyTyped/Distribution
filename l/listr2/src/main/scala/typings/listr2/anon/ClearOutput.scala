@@ -125,7 +125,8 @@ object ClearOutput {
     __obj.asInstanceOf[ClearOutput]
   }
   
-  extension [Self <: ClearOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearOutput] (val x: Self) extends AnyVal {
     
     inline def setClearOutput(value: Boolean): Self = StObject.set(x, "clearOutput", value.asInstanceOf[js.Any])
     

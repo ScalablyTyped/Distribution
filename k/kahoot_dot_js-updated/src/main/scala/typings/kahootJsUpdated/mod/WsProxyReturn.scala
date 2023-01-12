@@ -21,7 +21,8 @@ object WsProxyReturn {
     __obj.asInstanceOf[WsProxyReturn]
   }
   
-  extension [Self <: WsProxyReturn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WsProxyReturn] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

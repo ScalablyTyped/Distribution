@@ -327,7 +327,8 @@ object TlsOptionsservernamestrin {
     __obj.asInstanceOf[TlsOptionsservernamestrin]
   }
   
-  extension [Self <: TlsOptionsservernamestrin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TlsOptionsservernamestrin] (val x: Self) extends AnyVal {
     
     inline def setALPNProtocols(value: (js.Array[String | js.typedarray.Uint8Array]) | js.typedarray.Uint8Array): Self = StObject.set(x, "ALPNProtocols", value.asInstanceOf[js.Any])
     

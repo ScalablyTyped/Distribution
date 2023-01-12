@@ -28,7 +28,8 @@ object KernelEnum {
     __obj.asInstanceOf[KernelEnum]
   }
   
-  extension [Self <: KernelEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KernelEnum] (val x: Self) extends AnyVal {
     
     inline def setCubic(value: cubic): Self = StObject.set(x, "cubic", value.asInstanceOf[js.Any])
     

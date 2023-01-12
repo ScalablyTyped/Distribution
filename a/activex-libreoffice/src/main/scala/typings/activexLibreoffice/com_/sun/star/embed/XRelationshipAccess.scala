@@ -133,7 +133,8 @@ object XRelationshipAccess {
     __obj.asInstanceOf[XRelationshipAccess]
   }
   
-  extension [Self <: XRelationshipAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRelationshipAccess] (val x: Self) extends AnyVal {
     
     inline def setAllRelationships(value: SafeArray[SafeArray[StringPair]]): Self = StObject.set(x, "AllRelationships", value.asInstanceOf[js.Any])
     

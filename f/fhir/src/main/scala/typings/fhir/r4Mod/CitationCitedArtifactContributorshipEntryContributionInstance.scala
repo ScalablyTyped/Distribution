@@ -28,7 +28,8 @@ object CitationCitedArtifactContributorshipEntryContributionInstance {
     __obj.asInstanceOf[CitationCitedArtifactContributorshipEntryContributionInstance]
   }
   
-  extension [Self <: CitationCitedArtifactContributorshipEntryContributionInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CitationCitedArtifactContributorshipEntryContributionInstance] (val x: Self) extends AnyVal {
     
     inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     

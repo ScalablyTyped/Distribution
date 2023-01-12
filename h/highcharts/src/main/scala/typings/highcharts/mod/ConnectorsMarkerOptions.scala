@@ -70,7 +70,8 @@ object ConnectorsMarkerOptions {
     __obj.asInstanceOf[ConnectorsMarkerOptions]
   }
   
-  extension [Self <: ConnectorsMarkerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorsMarkerOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

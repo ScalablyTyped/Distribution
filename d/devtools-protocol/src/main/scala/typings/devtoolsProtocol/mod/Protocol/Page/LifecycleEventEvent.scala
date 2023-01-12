@@ -29,7 +29,8 @@ object LifecycleEventEvent {
     __obj.asInstanceOf[LifecycleEventEvent]
   }
   
-  extension [Self <: LifecycleEventEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LifecycleEventEvent] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

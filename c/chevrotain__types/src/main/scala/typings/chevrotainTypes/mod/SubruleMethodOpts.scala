@@ -24,7 +24,8 @@ object SubruleMethodOpts {
     __obj.asInstanceOf[SubruleMethodOpts[ARGS]]
   }
   
-  extension [Self <: SubruleMethodOpts[?], ARGS](x: Self & SubruleMethodOpts[ARGS]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubruleMethodOpts[?], ARGS] (val x: Self & SubruleMethodOpts[ARGS]) extends AnyVal {
     
     inline def setARGS(value: ARGS): Self = StObject.set(x, "ARGS", value.asInstanceOf[js.Any])
     

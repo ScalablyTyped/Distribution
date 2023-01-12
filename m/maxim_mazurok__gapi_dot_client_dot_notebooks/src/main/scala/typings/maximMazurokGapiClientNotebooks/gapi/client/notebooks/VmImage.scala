@@ -22,7 +22,8 @@ object VmImage {
     __obj.asInstanceOf[VmImage]
   }
   
-  extension [Self <: VmImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VmImage] (val x: Self) extends AnyVal {
     
     inline def setImageFamily(value: String): Self = StObject.set(x, "imageFamily", value.asInstanceOf[js.Any])
     

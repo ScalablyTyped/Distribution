@@ -22,7 +22,8 @@ object OptionsForExternalUrlAsValidationTargetAndTextAsResults {
     __obj.asInstanceOf[OptionsForExternalUrlAsValidationTargetAndTextAsResults]
   }
   
-  extension [Self <: OptionsForExternalUrlAsValidationTargetAndTextAsResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsForExternalUrlAsValidationTargetAndTextAsResults] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: html | xhtml | xml | gnu | text): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
   }

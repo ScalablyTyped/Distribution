@@ -25,7 +25,8 @@ object AuthSessionOpenOptions {
     __obj.asInstanceOf[AuthSessionOpenOptions]
   }
   
-  extension [Self <: AuthSessionOpenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthSessionOpenOptions] (val x: Self) extends AnyVal {
     
     inline def setPreferEphemeralSession(value: Boolean): Self = StObject.set(x, "preferEphemeralSession", value.asInstanceOf[js.Any])
     

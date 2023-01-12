@@ -43,7 +43,8 @@ object CustomView {
     __obj.asInstanceOf[CustomView]
   }
   
-  extension [Self <: CustomView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomView] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

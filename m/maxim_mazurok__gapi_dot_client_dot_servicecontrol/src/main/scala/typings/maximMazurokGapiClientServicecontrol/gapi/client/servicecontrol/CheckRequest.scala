@@ -28,7 +28,8 @@ object CheckRequest {
     __obj.asInstanceOf[CheckRequest]
   }
   
-  extension [Self <: CheckRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: AttributeContext): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

@@ -161,7 +161,8 @@ object s3 {
       __obj.asInstanceOf[S3ChunkingOptions]
     }
     
-    extension [Self <: S3ChunkingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3ChunkingOptions] (val x: Self) extends AnyVal {
       
       inline def setPartSize(value: Double): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
       
@@ -223,7 +224,8 @@ object s3 {
       __obj.asInstanceOf[S3CoreOptions]
     }
     
-    extension [Self <: S3CoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3CoreOptions] (val x: Self) extends AnyVal {
       
       inline def setChunking(value: S3ChunkingOptions): Self = StObject.set(x, "chunking", value.asInstanceOf[js.Any])
       
@@ -307,7 +309,8 @@ object s3 {
       __obj.asInstanceOf[S3CredentialsOptions]
     }
     
-    extension [Self <: S3CredentialsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3CredentialsOptions] (val x: Self) extends AnyVal {
       
       inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
@@ -348,7 +351,8 @@ object s3 {
       __obj.asInstanceOf[S3Events]
     }
     
-    extension [Self <: S3Events](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3Events] (val x: Self) extends AnyVal {
       
       inline def setOnCredentialsExpired(value: () => PromiseOptions): Self = StObject.set(x, "onCredentialsExpired", js.Any.fromFunction0(value))
       
@@ -372,7 +376,8 @@ object s3 {
       __obj.asInstanceOf[S3FailedUploadTextDisplayOptions]
     }
     
-    extension [Self <: S3FailedUploadTextDisplayOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3FailedUploadTextDisplayOptions] (val x: Self) extends AnyVal {
       
       inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -455,7 +460,8 @@ object s3 {
       __obj.asInstanceOf[S3ObjectPropertyOptions]
     }
     
-    extension [Self <: S3ObjectPropertyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3ObjectPropertyOptions] (val x: Self) extends AnyVal {
       
       inline def setAcl(value: String): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
       
@@ -518,7 +524,8 @@ object s3 {
       __obj.asInstanceOf[S3RequestOptions]
     }
     
-    extension [Self <: S3RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
@@ -546,7 +553,8 @@ object s3 {
       __obj.asInstanceOf[S3ResumableFileObject]
     }
     
-    extension [Self <: S3ResumableFileObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3ResumableFileObject] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -586,7 +594,8 @@ object s3 {
       __obj.asInstanceOf[S3SignatureOptions]
     }
     
-    extension [Self <: S3SignatureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3SignatureOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomHeaders(value: Any | S3CustomHeaderFunction): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
@@ -666,7 +675,8 @@ object s3 {
       __obj.asInstanceOf[S3UIOptions]
     }
     
-    extension [Self <: S3UIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3UIOptions] (val x: Self) extends AnyVal {
       
       inline def setChunking(value: S3ChunkingOptions): Self = StObject.set(x, "chunking", value.asInstanceOf[js.Any])
       
@@ -746,7 +756,8 @@ object s3 {
       __obj.asInstanceOf[S3UploadSuccessOptions]
     }
     
-    extension [Self <: S3UploadSuccessOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3UploadSuccessOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomHeaders(value: Any): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
@@ -783,7 +794,8 @@ object s3 {
       __obj.asInstanceOf[S3iFrameSupportOptions]
     }
     
-    extension [Self <: S3iFrameSupportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3iFrameSupportOptions] (val x: Self) extends AnyVal {
       
       inline def setLocalBlankPagePath(value: String): Self = StObject.set(x, "localBlankPagePath", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object PartialClassesChromePicke {
     __obj.asInstanceOf[PartialClassesChromePicke]
   }
   
-  extension [Self <: PartialClassesChromePicke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassesChromePicke] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: PartialChromePickerStyles): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

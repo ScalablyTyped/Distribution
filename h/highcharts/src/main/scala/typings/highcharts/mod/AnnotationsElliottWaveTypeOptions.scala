@@ -32,7 +32,8 @@ object AnnotationsElliottWaveTypeOptions {
     __obj.asInstanceOf[AnnotationsElliottWaveTypeOptions]
   }
   
-  extension [Self <: AnnotationsElliottWaveTypeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsElliottWaveTypeOptions] (val x: Self) extends AnyVal {
     
     inline def setLine(value: AnnotationsElliottWaveTypeLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     

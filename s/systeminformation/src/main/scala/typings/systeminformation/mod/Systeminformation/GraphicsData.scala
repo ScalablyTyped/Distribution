@@ -17,7 +17,8 @@ object GraphicsData {
     __obj.asInstanceOf[GraphicsData]
   }
   
-  extension [Self <: GraphicsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphicsData] (val x: Self) extends AnyVal {
     
     inline def setControllers(value: js.Array[GraphicsControllerData]): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object StartPipelineReprocessingResponse {
     __obj.asInstanceOf[StartPipelineReprocessingResponse]
   }
   
-  extension [Self <: StartPipelineReprocessingResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartPipelineReprocessingResponse] (val x: Self) extends AnyVal {
     
     inline def setReprocessingId(value: ReprocessingId): Self = StObject.set(x, "reprocessingId", value.asInstanceOf[js.Any])
     

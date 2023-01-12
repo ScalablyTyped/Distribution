@@ -90,7 +90,8 @@ object mod {
       __obj.asInstanceOf[CampaignControlGroup]
     }
     
-    extension [Self <: CampaignControlGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CampaignControlGroup] (val x: Self) extends AnyVal {
       
       inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       
@@ -168,7 +169,8 @@ object mod {
       __obj.asInstanceOf[CustomControlGroup]
     }
     
-    extension [Self <: CustomControlGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomControlGroup] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -203,7 +205,8 @@ object mod {
       __obj.asInstanceOf[Query]
     }
     
-    extension [Self <: Query](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
       
       inline def setEvent_name(value: String): Self = StObject.set(x, "event_name", value.asInstanceOf[js.Any])
       
@@ -232,7 +235,8 @@ object mod {
       __obj.asInstanceOf[QueryOptions]
     }
     
-    extension [Self <: QueryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
@@ -281,7 +285,8 @@ object mod {
       __obj.asInstanceOf[TargetBasePayload]
     }
     
-    extension [Self <: TargetBasePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetBasePayload] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Body): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -366,7 +371,8 @@ object mod {
       __obj.asInstanceOf[TargetOptions]
     }
     
-    extension [Self <: TargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Double): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -388,7 +394,8 @@ object mod {
       __obj.asInstanceOf[TargetSegmentPayload]
     }
     
-    extension [Self <: TargetSegmentPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetSegmentPayload] (val x: Self) extends AnyVal {
       
       inline def setSegment(value: all): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     }
@@ -414,7 +421,8 @@ object mod {
       __obj.asInstanceOf[TargetWherePayload]
     }
     
-    extension [Self <: TargetWherePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetWherePayload] (val x: Self) extends AnyVal {
       
       inline def setWhere(value: Commonprofileproperties): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     }
@@ -435,7 +443,8 @@ object mod {
       __obj.asInstanceOf[UploadOptions]
     }
     
-    extension [Self <: UploadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadOptions] (val x: Self) extends AnyVal {
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       

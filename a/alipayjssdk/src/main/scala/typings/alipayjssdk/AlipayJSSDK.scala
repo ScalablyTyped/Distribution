@@ -105,7 +105,8 @@ object AlipayJSSDK {
       __obj.asInstanceOf[BluetoothDeviceInfo]
     }
     
-    extension [Self <: BluetoothDeviceInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BluetoothDeviceInfo] (val x: Self) extends AnyVal {
       
       inline def setAdvertisData(value: String): Self = StObject.set(x, "advertisData", value.asInstanceOf[js.Any])
       
@@ -148,7 +149,8 @@ object AlipayJSSDK {
       __obj.asInstanceOf[NetworkTypeResult]
     }
     
-    extension [Self <: NetworkTypeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkTypeResult] (val x: Self) extends AnyVal {
       
       inline def setNetworkAvailable(value: Boolean): Self = StObject.set(x, "networkAvailable", value.asInstanceOf[js.Any])
       

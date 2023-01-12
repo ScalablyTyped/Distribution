@@ -31,7 +31,8 @@ object PartialZlibOptions {
     __obj.asInstanceOf[PartialZlibOptions]
   }
   
-  extension [Self <: PartialZlibOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialZlibOptions] (val x: Self) extends AnyVal {
     
     inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     

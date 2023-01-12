@@ -68,7 +68,8 @@ object ReplicationTaskStats {
     __obj.asInstanceOf[ReplicationTaskStats]
   }
   
-  extension [Self <: ReplicationTaskStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationTaskStats] (val x: Self) extends AnyVal {
     
     inline def setElapsedTimeMillis(value: Long): Self = StObject.set(x, "ElapsedTimeMillis", value.asInstanceOf[js.Any])
     

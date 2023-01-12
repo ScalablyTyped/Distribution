@@ -24,7 +24,8 @@ object ImageParams {
     __obj.asInstanceOf[ImageParams]
   }
   
-  extension [Self <: ImageParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageParams] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

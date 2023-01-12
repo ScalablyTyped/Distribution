@@ -20,7 +20,8 @@ object HTML {
     __obj.asInstanceOf[HTML]
   }
   
-  extension [Self <: HTML](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTML] (val x: Self) extends AnyVal {
     
     inline def setType(value: html): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

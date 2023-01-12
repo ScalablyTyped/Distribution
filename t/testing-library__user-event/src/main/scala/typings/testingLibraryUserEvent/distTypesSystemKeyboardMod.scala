@@ -101,7 +101,8 @@ object distTypesSystemKeyboardMod {
       __obj.asInstanceOf[keyboardKey]
     }
     
-    extension [Self <: keyboardKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: keyboardKey] (val x: Self) extends AnyVal {
       
       inline def setAltGr(value: Boolean): Self = StObject.set(x, "altGr", value.asInstanceOf[js.Any])
       

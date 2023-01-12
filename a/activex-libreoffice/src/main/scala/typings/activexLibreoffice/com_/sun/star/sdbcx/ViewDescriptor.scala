@@ -55,7 +55,8 @@ object ViewDescriptor {
     __obj.asInstanceOf[ViewDescriptor]
   }
   
-  extension [Self <: ViewDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewDescriptor] (val x: Self) extends AnyVal {
     
     inline def setCatalogName(value: String): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
     

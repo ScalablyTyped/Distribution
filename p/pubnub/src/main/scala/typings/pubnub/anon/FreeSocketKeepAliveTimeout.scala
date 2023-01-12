@@ -23,7 +23,8 @@ object FreeSocketKeepAliveTimeout {
     __obj.asInstanceOf[FreeSocketKeepAliveTimeout]
   }
   
-  extension [Self <: FreeSocketKeepAliveTimeout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FreeSocketKeepAliveTimeout] (val x: Self) extends AnyVal {
     
     inline def setFreeSocketKeepAliveTimeout(value: Double): Self = StObject.set(x, "freeSocketKeepAliveTimeout", value.asInstanceOf[js.Any])
     

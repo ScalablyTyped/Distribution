@@ -18,7 +18,8 @@ object GetProfileObjectTypeTemplateRequest {
     __obj.asInstanceOf[GetProfileObjectTypeTemplateRequest]
   }
   
-  extension [Self <: GetProfileObjectTypeTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetProfileObjectTypeTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setTemplateId(value: name): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
   }

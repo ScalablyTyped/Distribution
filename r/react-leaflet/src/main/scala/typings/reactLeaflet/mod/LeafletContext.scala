@@ -23,7 +23,8 @@ object LeafletContext {
     __obj.asInstanceOf[LeafletContext]
   }
   
-  extension [Self <: LeafletContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeafletContext] (val x: Self) extends AnyVal {
     
     inline def setLayerContainer(value: LayerContainer): Self = StObject.set(x, "layerContainer", value.asInstanceOf[js.Any])
     

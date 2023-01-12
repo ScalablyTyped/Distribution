@@ -44,7 +44,8 @@ object distSrcPgDotpubMod {
       __obj.asInstanceOf[IPostgresData]
     }
     
-    extension [Self <: IPostgresData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPostgresData] (val x: Self) extends AnyVal {
       
       inline def setDatabase(value: Port): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object distSrcPgDotpubMod {
       __obj.asInstanceOf[IPostgresResult]
     }
     
-    extension [Self <: IPostgresResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPostgresResult] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       

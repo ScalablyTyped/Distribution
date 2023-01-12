@@ -39,7 +39,8 @@ object MetadataBook {
     __obj.asInstanceOf[MetadataBook]
   }
   
-  extension [Self <: MetadataBook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataBook] (val x: Self) extends AnyVal {
     
     inline def setDeleteValue(value: (PeerId, String) => js.Promise[Unit]): Self = StObject.set(x, "deleteValue", js.Any.fromFunction2(value))
     

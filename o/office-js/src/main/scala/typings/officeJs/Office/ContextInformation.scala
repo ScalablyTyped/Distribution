@@ -37,7 +37,8 @@ object ContextInformation {
     __obj.asInstanceOf[ContextInformation]
   }
   
-  extension [Self <: ContextInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextInformation] (val x: Self) extends AnyVal {
     
     inline def setHost(value: HostType): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object PrinterBase {
     __obj.asInstanceOf[PrinterBase]
   }
   
-  extension [Self <: PrinterBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrinterBase] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: NullableOption[PrinterCapabilities]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     

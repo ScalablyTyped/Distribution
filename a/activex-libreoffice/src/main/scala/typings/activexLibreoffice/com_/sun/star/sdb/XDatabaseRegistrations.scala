@@ -89,7 +89,8 @@ object XDatabaseRegistrations {
     __obj.asInstanceOf[XDatabaseRegistrations]
   }
   
-  extension [Self <: XDatabaseRegistrations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDatabaseRegistrations] (val x: Self) extends AnyVal {
     
     inline def setAddDatabaseRegistrationsListener(value: XDatabaseRegistrationsListener => Unit): Self = StObject.set(x, "addDatabaseRegistrationsListener", js.Any.fromFunction1(value))
     

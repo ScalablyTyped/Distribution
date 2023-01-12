@@ -32,7 +32,8 @@ object MVTOptions {
     __obj.asInstanceOf[MVTOptions]
   }
   
-  extension [Self <: MVTOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MVTOptions] (val x: Self) extends AnyVal {
     
     inline def setFeatureClass(
       value: (js.Function1[/* geom */ Geometry | StringDictionary[Any], Any]) | (js.Function4[

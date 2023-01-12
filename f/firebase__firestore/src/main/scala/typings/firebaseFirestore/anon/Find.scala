@@ -17,7 +17,8 @@ object Find {
     __obj.asInstanceOf[Find]
   }
   
-  extension [Self <: Find](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Find] (val x: Self) extends AnyVal {
     
     inline def setFind(value: js.RegExp): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
     

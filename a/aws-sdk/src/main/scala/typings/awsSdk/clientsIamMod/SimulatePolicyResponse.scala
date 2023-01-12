@@ -28,7 +28,8 @@ object SimulatePolicyResponse {
     __obj.asInstanceOf[SimulatePolicyResponse]
   }
   
-  extension [Self <: SimulatePolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimulatePolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setEvaluationResults(value: EvaluationResultsListType): Self = StObject.set(x, "EvaluationResults", value.asInstanceOf[js.Any])
     

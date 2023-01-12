@@ -25,7 +25,8 @@ object EmailAuthenticationMethodConfiguration {
     __obj.asInstanceOf[EmailAuthenticationMethodConfiguration]
   }
   
-  extension [Self <: EmailAuthenticationMethodConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailAuthenticationMethodConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAllowExternalIdToUseEmailOtp(value: NullableOption[ExternalEmailOtpState]): Self = StObject.set(x, "allowExternalIdToUseEmailOtp", value.asInstanceOf[js.Any])
     

@@ -1208,7 +1208,8 @@ object buildSrcServerCallMod {
       __obj.asInstanceOf[BidiStreamingHandler[RequestType, ResponseType]]
     }
     
-    extension [Self <: BidiStreamingHandler[?, ?], RequestType, ResponseType](x: Self & (BidiStreamingHandler[RequestType, ResponseType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BidiStreamingHandler[?, ?], RequestType, ResponseType] (val x: Self & (BidiStreamingHandler[RequestType, ResponseType])) extends AnyVal {
       
       inline def setDeserialize(value: /* bytes */ Buffer => RequestType): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       
@@ -1256,7 +1257,8 @@ object buildSrcServerCallMod {
       __obj.asInstanceOf[ClientStreamingHandler[RequestType, ResponseType]]
     }
     
-    extension [Self <: ClientStreamingHandler[?, ?], RequestType, ResponseType](x: Self & (ClientStreamingHandler[RequestType, ResponseType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientStreamingHandler[?, ?], RequestType, ResponseType] (val x: Self & (ClientStreamingHandler[RequestType, ResponseType])) extends AnyVal {
       
       inline def setDeserialize(value: /* bytes */ Buffer => RequestType): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       
@@ -1380,7 +1382,8 @@ object buildSrcServerCallMod {
       __obj.asInstanceOf[ServerErrorResponse]
     }
     
-    extension [Self <: ServerErrorResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerErrorResponse] (val x: Self) extends AnyVal {
       
       inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
@@ -1426,7 +1429,8 @@ object buildSrcServerCallMod {
       __obj.asInstanceOf[ServerStatusResponse]
     }
     
-    extension [Self <: ServerStatusResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerStatusResponse] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Status): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -1476,7 +1480,8 @@ object buildSrcServerCallMod {
       __obj.asInstanceOf[ServerStreamingHandler[RequestType, ResponseType]]
     }
     
-    extension [Self <: ServerStreamingHandler[?, ?], RequestType, ResponseType](x: Self & (ServerStreamingHandler[RequestType, ResponseType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerStreamingHandler[?, ?], RequestType, ResponseType] (val x: Self & (ServerStreamingHandler[RequestType, ResponseType])) extends AnyVal {
       
       inline def setDeserialize(value: /* bytes */ Buffer => RequestType): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       
@@ -1544,7 +1549,8 @@ object buildSrcServerCallMod {
       __obj.asInstanceOf[UnaryHandler[RequestType, ResponseType]]
     }
     
-    extension [Self <: UnaryHandler[?, ?], RequestType, ResponseType](x: Self & (UnaryHandler[RequestType, ResponseType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnaryHandler[?, ?], RequestType, ResponseType] (val x: Self & (UnaryHandler[RequestType, ResponseType])) extends AnyVal {
       
       inline def setDeserialize(value: /* bytes */ Buffer => RequestType): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       

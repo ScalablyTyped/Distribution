@@ -51,7 +51,8 @@ object Label {
     __obj.asInstanceOf[Label]
   }
   
-  extension [Self <: Label](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
     
     inline def setForInput(value: Field | CheckBox): Self = StObject.set(x, "forInput", value.asInstanceOf[js.Any])
     

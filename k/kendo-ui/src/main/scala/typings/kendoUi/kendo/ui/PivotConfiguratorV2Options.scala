@@ -28,7 +28,8 @@ object PivotConfiguratorV2Options {
     __obj.asInstanceOf[PivotConfiguratorV2Options]
   }
   
-  extension [Self <: PivotConfiguratorV2Options](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotConfiguratorV2Options] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: Any | PivotDataSourceV2): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

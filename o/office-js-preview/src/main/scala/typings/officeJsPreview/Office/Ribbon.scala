@@ -52,7 +52,8 @@ object Ribbon {
     __obj.asInstanceOf[Ribbon]
   }
   
-  extension [Self <: Ribbon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ribbon] (val x: Self) extends AnyVal {
     
     inline def setRequestCreateControls(value: js.Object => js.Promise[Unit]): Self = StObject.set(x, "requestCreateControls", js.Any.fromFunction1(value))
     

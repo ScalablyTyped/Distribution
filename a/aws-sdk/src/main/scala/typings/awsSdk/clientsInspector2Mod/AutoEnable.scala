@@ -23,7 +23,8 @@ object AutoEnable {
     __obj.asInstanceOf[AutoEnable]
   }
   
-  extension [Self <: AutoEnable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoEnable] (val x: Self) extends AnyVal {
     
     inline def setEc2(value: Boolean): Self = StObject.set(x, "ec2", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object typesToggleAsyncSwitchMod {
       __obj.asInstanceOf[AsyncSwitchProps]
     }
     
-    extension [Self <: AsyncSwitchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncSwitchProps] (val x: Self) extends AnyVal {
       
       inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       

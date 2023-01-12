@@ -23,7 +23,8 @@ object RowDimensions {
     __obj.asInstanceOf[RowDimensions]
   }
   
-  extension [Self <: RowDimensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowDimensions] (val x: Self) extends AnyVal {
     
     inline def setPublisherIdentifier(value: String): Self = StObject.set(x, "publisherIdentifier", value.asInstanceOf[js.Any])
     

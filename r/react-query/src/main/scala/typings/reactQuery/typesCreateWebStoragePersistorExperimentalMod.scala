@@ -46,7 +46,8 @@ object typesCreateWebStoragePersistorExperimentalMod {
       __obj.asInstanceOf[CreateWebStoragePersistorOptions]
     }
     
-    extension [Self <: CreateWebStoragePersistorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateWebStoragePersistorOptions] (val x: Self) extends AnyVal {
       
       inline def setDeserialize(value: /* cachedString */ String => PersistedClient): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       

@@ -38,7 +38,8 @@ object AutoScalingSettingsDescription {
     __obj.asInstanceOf[AutoScalingSettingsDescription]
   }
   
-  extension [Self <: AutoScalingSettingsDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoScalingSettingsDescription] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingDisabled(value: BooleanObject): Self = StObject.set(x, "AutoScalingDisabled", value.asInstanceOf[js.Any])
     

@@ -92,7 +92,8 @@ object libComponentsComboBoxComboBoxDottypesMod {
       __obj.asInstanceOf[IComboBoxClassNames]
     }
     
-    extension [Self <: IComboBoxClassNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IComboBoxClassNames] (val x: Self) extends AnyVal {
       
       inline def setCallout(value: String): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object libComponentsComboBoxComboBoxDottypesMod {
       __obj.asInstanceOf[IComboBoxOption]
     }
     
-    extension [Self <: IComboBoxOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IComboBoxOption] (val x: Self) extends AnyVal {
       
       inline def setStyles(value: PartialIComboBoxOptionSty): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
@@ -168,7 +170,8 @@ object libComponentsComboBoxComboBoxDottypesMod {
       __obj.asInstanceOf[IComboBoxOptionClassNames]
     }
     
-    extension [Self <: IComboBoxOptionClassNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IComboBoxOptionClassNames] (val x: Self) extends AnyVal {
       
       inline def setOptionText(value: String): Self = StObject.set(x, "optionText", value.asInstanceOf[js.Any])
       
@@ -200,7 +203,8 @@ object libComponentsComboBoxComboBoxDottypesMod {
       __obj.asInstanceOf[IComboBoxOptionStyles]
     }
     
-    extension [Self <: IComboBoxOptionStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IComboBoxOptionStyles] (val x: Self) extends AnyVal {
       
       inline def setOptionText(value: IStyle): Self = StObject.set(x, "optionText", value.asInstanceOf[js.Any])
       
@@ -458,7 +462,8 @@ object libComponentsComboBoxComboBoxDottypesMod {
       __obj.asInstanceOf[IComboBoxProps]
     }
     
-    extension [Self <: IComboBoxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IComboBoxProps] (val x: Self) extends AnyVal {
       
       inline def setAllowFreeform(value: Boolean): Self = StObject.set(x, "allowFreeform", value.asInstanceOf[js.Any])
       
@@ -730,7 +735,8 @@ object libComponentsComboBoxComboBoxDottypesMod {
       __obj.asInstanceOf[IComboBoxStyles]
     }
     
-    extension [Self <: IComboBoxStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IComboBoxStyles] (val x: Self) extends AnyVal {
       
       inline def setCallout(value: IStyle): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
       
@@ -867,7 +873,8 @@ object libComponentsComboBoxComboBoxDottypesMod {
       __obj.asInstanceOf[IOnRenderComboBoxLabelProps]
     }
     
-    extension [Self <: IOnRenderComboBoxLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOnRenderComboBoxLabelProps] (val x: Self) extends AnyVal {
       
       inline def setMultiselectAccessibleText(value: String): Self = StObject.set(x, "multiselectAccessibleText", value.asInstanceOf[js.Any])
       

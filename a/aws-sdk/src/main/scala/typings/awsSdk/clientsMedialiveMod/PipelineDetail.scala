@@ -38,7 +38,8 @@ object PipelineDetail {
     __obj.asInstanceOf[PipelineDetail]
   }
   
-  extension [Self <: PipelineDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelineDetail] (val x: Self) extends AnyVal {
     
     inline def setActiveInputAttachmentName(value: string): Self = StObject.set(x, "ActiveInputAttachmentName", value.asInstanceOf[js.Any])
     

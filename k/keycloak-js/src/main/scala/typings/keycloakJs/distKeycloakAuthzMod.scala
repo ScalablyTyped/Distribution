@@ -67,7 +67,8 @@ object distKeycloakAuthzMod {
       __obj.asInstanceOf[AuthorizationRequest]
     }
     
-    extension [Self <: AuthorizationRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizationRequest] (val x: Self) extends AnyVal {
       
       inline def setIncrementalAuthorization(value: Boolean): Self = StObject.set(x, "incrementalAuthorization", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object distKeycloakAuthzMod {
       __obj.asInstanceOf[AuthorizationRequestMetadata]
     }
     
-    extension [Self <: AuthorizationRequestMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizationRequestMetadata] (val x: Self) extends AnyVal {
       
       inline def setResponseIncludeResourceName(value: Any): Self = StObject.set(x, "responseIncludeResourceName", value.asInstanceOf[js.Any])
       
@@ -175,7 +177,8 @@ object distKeycloakAuthzMod {
       __obj.asInstanceOf[KeycloakAuthorizationPromise]
     }
     
-    extension [Self <: KeycloakAuthorizationPromise](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeycloakAuthorizationPromise] (val x: Self) extends AnyVal {
       
       inline def setThen(value: (js.Function1[/* rpt */ String, Unit], js.Function0[Unit], js.Function0[Unit]) => Unit): Self = StObject.set(x, "then", js.Any.fromFunction3(value))
     }
@@ -200,7 +203,8 @@ object distKeycloakAuthzMod {
       __obj.asInstanceOf[ResourcePermission]
     }
     
-    extension [Self <: ResourcePermission](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourcePermission] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object RTCDataChannelEventInit {
     __obj.asInstanceOf[RTCDataChannelEventInit]
   }
   
-  extension [Self <: RTCDataChannelEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCDataChannelEventInit] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: RTCDataChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
   }

@@ -27,7 +27,8 @@ object MutedInfo {
     __obj.asInstanceOf[MutedInfo]
   }
   
-  extension [Self <: MutedInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MutedInfo] (val x: Self) extends AnyVal {
     
     inline def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
     

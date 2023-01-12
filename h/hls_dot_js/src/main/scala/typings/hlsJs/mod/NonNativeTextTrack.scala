@@ -25,7 +25,8 @@ object NonNativeTextTrack {
     __obj.asInstanceOf[NonNativeTextTrack]
   }
   
-  extension [Self <: NonNativeTextTrack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonNativeTextTrack] (val x: Self) extends AnyVal {
     
     inline def setClosedCaptions(value: MediaPlaylist): Self = StObject.set(x, "closedCaptions", value.asInstanceOf[js.Any])
     

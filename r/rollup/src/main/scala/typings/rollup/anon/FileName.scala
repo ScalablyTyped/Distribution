@@ -33,7 +33,8 @@ object FileName {
     __obj.asInstanceOf[FileName]
   }
   
-  extension [Self <: FileName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileName] (val x: Self) extends AnyVal {
     
     inline def setChunkId(value: String): Self = StObject.set(x, "chunkId", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object CreateAgentRequest {
     __obj.asInstanceOf[CreateAgentRequest]
   }
   
-  extension [Self <: CreateAgentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAgentRequest] (val x: Self) extends AnyVal {
     
     inline def setActivationKey(value: ActivationKey): Self = StObject.set(x, "ActivationKey", value.asInstanceOf[js.Any])
     

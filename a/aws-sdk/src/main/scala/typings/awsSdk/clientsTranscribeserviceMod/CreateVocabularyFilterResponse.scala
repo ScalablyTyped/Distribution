@@ -28,7 +28,8 @@ object CreateVocabularyFilterResponse {
     __obj.asInstanceOf[CreateVocabularyFilterResponse]
   }
   
-  extension [Self <: CreateVocabularyFilterResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVocabularyFilterResponse] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     

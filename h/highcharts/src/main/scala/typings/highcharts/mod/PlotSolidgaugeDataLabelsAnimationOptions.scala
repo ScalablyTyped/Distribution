@@ -20,7 +20,8 @@ object PlotSolidgaugeDataLabelsAnimationOptions {
     __obj.asInstanceOf[PlotSolidgaugeDataLabelsAnimationOptions]
   }
   
-  extension [Self <: PlotSolidgaugeDataLabelsAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSolidgaugeDataLabelsAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     

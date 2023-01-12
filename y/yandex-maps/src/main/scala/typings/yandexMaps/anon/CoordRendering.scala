@@ -28,7 +28,8 @@ object CoordRendering {
     __obj.asInstanceOf[CoordRendering]
   }
   
-  extension [Self <: CoordRendering](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoordRendering] (val x: Self) extends AnyVal {
     
     inline def setCoordRendering(value: shortestPath | straightPath): Self = StObject.set(x, "coordRendering", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object GoogleCloudDialogflowCxV3beta1ConversationTurnVirtualAgentOutput {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1ConversationTurnVirtualAgentOutput]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3beta1ConversationTurnVirtualAgentOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1ConversationTurnVirtualAgentOutput] (val x: Self) extends AnyVal {
     
     inline def setCurrentPage(value: GoogleCloudDialogflowCxV3beta1Page): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
     

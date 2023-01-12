@@ -18,7 +18,8 @@ object EventConfig {
     __obj.asInstanceOf[EventConfig[T]]
   }
   
-  extension [Self <: EventConfig[?], T](x: Self & EventConfig[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventConfig[?], T] (val x: Self & EventConfig[T]) extends AnyVal {
     
     inline def setListener(value: /* event */ NativeSyntheticEvent[T] => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
     

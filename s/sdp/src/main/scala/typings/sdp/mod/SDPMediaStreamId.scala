@@ -17,7 +17,8 @@ object SDPMediaStreamId {
     __obj.asInstanceOf[SDPMediaStreamId]
   }
   
-  extension [Self <: SDPMediaStreamId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SDPMediaStreamId] (val x: Self) extends AnyVal {
     
     inline def setStream(value: String): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     

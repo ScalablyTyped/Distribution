@@ -65,7 +65,8 @@ object libVictoryBoxPlotMod {
       __obj.asInstanceOf[VictoryBoxPlotLabelOrientationInterface]
     }
     
-    extension [Self <: VictoryBoxPlotLabelOrientationInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryBoxPlotLabelOrientationInterface] (val x: Self) extends AnyVal {
       
       inline def setMax(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OrientationTypes */ Any
@@ -200,7 +201,8 @@ object libVictoryBoxPlotMod {
       __obj.asInstanceOf[VictoryBoxPlotProps]
     }
     
-    extension [Self <: VictoryBoxPlotProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryBoxPlotProps] (val x: Self) extends AnyVal {
       
       inline def setBoxWidth(value: Double): Self = StObject.set(x, "boxWidth", value.asInstanceOf[js.Any])
       
@@ -465,7 +467,8 @@ object libVictoryBoxPlotMod {
       __obj.asInstanceOf[VictoryBoxPlotStyleInterface]
     }
     
-    extension [Self <: VictoryBoxPlotStyleInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryBoxPlotStyleInterface] (val x: Self) extends AnyVal {
       
       inline def setMax(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VictoryStyleObject */ Any

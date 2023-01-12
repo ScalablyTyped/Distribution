@@ -17,7 +17,8 @@ object DiffRange {
     __obj.asInstanceOf[DiffRange]
   }
   
-  extension [Self <: DiffRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiffRange] (val x: Self) extends AnyVal {
     
     inline def setCreateRepositorySnapshot(value: `1037`): Self = StObject.set(x, "createRepositorySnapshot", value.asInstanceOf[js.Any])
     

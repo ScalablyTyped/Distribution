@@ -38,7 +38,8 @@ object MetricDefinitionConfig {
     __obj.asInstanceOf[MetricDefinitionConfig]
   }
   
-  extension [Self <: MetricDefinitionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricDefinitionConfig] (val x: Self) extends AnyVal {
     
     inline def setEntityIdKey(value: JsonPath): Self = StObject.set(x, "entityIdKey", value.asInstanceOf[js.Any])
     

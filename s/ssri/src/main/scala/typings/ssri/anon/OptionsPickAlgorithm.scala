@@ -24,7 +24,8 @@ object OptionsPickAlgorithm {
     __obj.asInstanceOf[OptionsPickAlgorithm]
   }
   
-  extension [Self <: OptionsPickAlgorithm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsPickAlgorithm] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

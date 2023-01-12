@@ -24,7 +24,8 @@ object EditValidatorObject {
     __obj.asInstanceOf[EditValidatorObject]
   }
   
-  extension [Self <: EditValidatorObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditValidatorObject] (val x: Self) extends AnyVal {
     
     inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     

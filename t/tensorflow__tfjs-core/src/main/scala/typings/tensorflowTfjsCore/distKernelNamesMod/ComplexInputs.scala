@@ -18,7 +18,8 @@ object ComplexInputs {
     __obj.asInstanceOf[ComplexInputs]
   }
   
-  extension [Self <: ComplexInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComplexInputs] (val x: Self) extends AnyVal {
     
     inline def setImag(value: scala.Any): Self = StObject.set(x, "imag", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object ASPxDesignerSaveAsDialog {
     __obj.asInstanceOf[ASPxDesignerSaveAsDialog]
   }
   
-  extension [Self <: ASPxDesignerSaveAsDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxDesignerSaveAsDialog] (val x: Self) extends AnyVal {
     
     inline def setSave(value: String => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
   }

@@ -32,7 +32,8 @@ object GetSelectedDataOptions {
     __obj.asInstanceOf[GetSelectedDataOptions]
   }
   
-  extension [Self <: GetSelectedDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSelectedDataOptions] (val x: Self) extends AnyVal {
     
     inline def setAsyncContext(value: Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     

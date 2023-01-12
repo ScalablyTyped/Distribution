@@ -38,7 +38,8 @@ object GetJourneyExecutionActivityMetricsRequest {
     __obj.asInstanceOf[GetJourneyExecutionActivityMetricsRequest]
   }
   
-  extension [Self <: GetJourneyExecutionActivityMetricsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetJourneyExecutionActivityMetricsRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

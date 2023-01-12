@@ -18,7 +18,8 @@ object DeletePlaybackConfigurationRequest {
     __obj.asInstanceOf[DeletePlaybackConfigurationRequest]
   }
   
-  extension [Self <: DeletePlaybackConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePlaybackConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: _String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

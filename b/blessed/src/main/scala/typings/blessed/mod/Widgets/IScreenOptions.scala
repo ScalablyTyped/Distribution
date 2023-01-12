@@ -232,7 +232,8 @@ object IScreenOptions {
     __obj.asInstanceOf[IScreenOptions]
   }
   
-  extension [Self <: IScreenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IScreenOptions] (val x: Self) extends AnyVal {
     
     inline def setAbottom(value: TPosition): Self = StObject.set(x, "abottom", value.asInstanceOf[js.Any])
     

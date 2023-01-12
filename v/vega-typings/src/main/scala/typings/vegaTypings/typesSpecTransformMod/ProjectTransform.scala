@@ -24,7 +24,8 @@ object ProjectTransform {
     __obj.asInstanceOf[ProjectTransform]
   }
   
-  extension [Self <: ProjectTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: (js.Array[String | SignalRef | Null]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

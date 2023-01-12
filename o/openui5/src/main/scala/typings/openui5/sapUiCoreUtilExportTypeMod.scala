@@ -307,7 +307,8 @@ object sapUiCoreUtilExportTypeMod {
       __obj.asInstanceOf[ExportTypeSettings]
     }
     
-    extension [Self <: ExportTypeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportTypeSettings] (val x: Self) extends AnyVal {
       
       inline def setByteOrderMark(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "byteOrderMark", value.asInstanceOf[js.Any])
       

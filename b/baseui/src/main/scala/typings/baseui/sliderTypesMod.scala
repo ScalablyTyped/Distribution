@@ -33,7 +33,8 @@ object sliderTypesMod {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object sliderTypesMod {
       __obj.asInstanceOf[SliderOverrides]
     }
     
-    extension [Self <: SliderOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderOverrides] (val x: Self) extends AnyVal {
       
       inline def setInnerThumb(value: Override[Any]): Self = StObject.set(x, "InnerThumb", value.asInstanceOf[js.Any])
       
@@ -149,7 +151,8 @@ object sliderTypesMod {
       __obj.asInstanceOf[SliderProps]
     }
     
-    extension [Self <: SliderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -208,7 +211,8 @@ object sliderTypesMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -257,7 +261,8 @@ object sliderTypesMod {
       __obj.asInstanceOf[StatefulContainerProps]
     }
     
-    extension [Self <: StatefulContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulContainerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: SliderProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -316,7 +321,8 @@ object sliderTypesMod {
       __obj.asInstanceOf[StatefulSliderProps]
     }
     
-    extension [Self <: StatefulSliderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulSliderProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -397,7 +403,8 @@ object sliderTypesMod {
       __obj.asInstanceOf[StyleProps]
     }
     
-    extension [Self <: StyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleProps] (val x: Self) extends AnyVal {
       
       inline def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
       

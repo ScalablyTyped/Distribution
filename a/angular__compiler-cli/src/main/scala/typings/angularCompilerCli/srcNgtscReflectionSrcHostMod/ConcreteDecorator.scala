@@ -24,7 +24,8 @@ object ConcreteDecorator {
     __obj.asInstanceOf[ConcreteDecorator]
   }
   
-  extension [Self <: ConcreteDecorator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConcreteDecorator] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: DecoratorIdentifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

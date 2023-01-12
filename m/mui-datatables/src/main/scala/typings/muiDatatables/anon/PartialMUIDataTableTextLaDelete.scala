@@ -20,7 +20,8 @@ object PartialMUIDataTableTextLaDelete {
     __obj.asInstanceOf[PartialMUIDataTableTextLaDelete]
   }
   
-  extension [Self <: PartialMUIDataTableTextLaDelete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMUIDataTableTextLaDelete] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     

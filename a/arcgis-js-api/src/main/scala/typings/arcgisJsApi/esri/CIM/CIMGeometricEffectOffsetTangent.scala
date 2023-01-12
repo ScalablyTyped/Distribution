@@ -32,7 +32,8 @@ object CIMGeometricEffectOffsetTangent {
     __obj.asInstanceOf[CIMGeometricEffectOffsetTangent]
   }
   
-  extension [Self <: CIMGeometricEffectOffsetTangent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMGeometricEffectOffsetTangent] (val x: Self) extends AnyVal {
     
     inline def setMethod(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectOffsetTangentMethod * / any */ String

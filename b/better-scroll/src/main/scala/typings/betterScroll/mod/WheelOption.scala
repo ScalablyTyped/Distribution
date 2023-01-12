@@ -29,7 +29,8 @@ object WheelOption {
     __obj.asInstanceOf[WheelOption]
   }
   
-  extension [Self <: WheelOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WheelOption] (val x: Self) extends AnyVal {
     
     inline def setAdjustTime(value: Double): Self = StObject.set(x, "adjustTime", value.asInstanceOf[js.Any])
     

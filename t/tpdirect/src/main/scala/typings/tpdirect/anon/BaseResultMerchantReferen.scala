@@ -75,7 +75,8 @@ object BaseResultMerchantReferen {
     __obj.asInstanceOf[BaseResultMerchantReferen]
   }
   
-  extension [Self <: BaseResultMerchantReferen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseResultMerchantReferen] (val x: Self) extends AnyVal {
     
     inline def setBillingAddress(value: Address): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
     

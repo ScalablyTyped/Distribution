@@ -42,7 +42,8 @@ object OESDrawBuffersIndexed {
     __obj.asInstanceOf[OESDrawBuffersIndexed]
   }
   
-  extension [Self <: OESDrawBuffersIndexed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OESDrawBuffersIndexed] (val x: Self) extends AnyVal {
     
     inline def setBlendEquationSeparateiOES(value: (GLuint, GLenum, GLenum) => Unit): Self = StObject.set(x, "blendEquationSeparateiOES", js.Any.fromFunction3(value))
     

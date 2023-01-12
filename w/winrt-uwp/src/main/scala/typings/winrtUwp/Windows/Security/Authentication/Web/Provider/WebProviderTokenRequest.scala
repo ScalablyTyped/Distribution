@@ -47,7 +47,8 @@ object WebProviderTokenRequest {
     __obj.asInstanceOf[WebProviderTokenRequest]
   }
   
-  extension [Self <: WebProviderTokenRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebProviderTokenRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationCallbackUri(value: Uri): Self = StObject.set(x, "applicationCallbackUri", value.asInstanceOf[js.Any])
     

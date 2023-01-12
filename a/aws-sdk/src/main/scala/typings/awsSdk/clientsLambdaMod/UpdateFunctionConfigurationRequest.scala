@@ -98,7 +98,8 @@ object UpdateFunctionConfigurationRequest {
     __obj.asInstanceOf[UpdateFunctionConfigurationRequest]
   }
   
-  extension [Self <: UpdateFunctionConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFunctionConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setDeadLetterConfig(value: DeadLetterConfig): Self = StObject.set(x, "DeadLetterConfig", value.asInstanceOf[js.Any])
     

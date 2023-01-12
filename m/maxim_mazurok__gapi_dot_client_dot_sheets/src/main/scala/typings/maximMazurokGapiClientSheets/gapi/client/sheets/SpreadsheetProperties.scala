@@ -37,7 +37,8 @@ object SpreadsheetProperties {
     __obj.asInstanceOf[SpreadsheetProperties]
   }
   
-  extension [Self <: SpreadsheetProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetProperties] (val x: Self) extends AnyVal {
     
     inline def setAutoRecalc(value: String): Self = StObject.set(x, "autoRecalc", value.asInstanceOf[js.Any])
     

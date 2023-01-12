@@ -113,7 +113,8 @@ object mod {
       __obj.asInstanceOf[MersenneTwister]
     }
     
-    extension [Self <: MersenneTwister](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MersenneTwister] (val x: Self) extends AnyVal {
       
       inline def setInit_seed(value: Double => Unit): Self = StObject.set(x, "init_seed", js.Any.fromFunction1(value))
       

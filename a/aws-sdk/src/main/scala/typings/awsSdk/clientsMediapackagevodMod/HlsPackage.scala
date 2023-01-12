@@ -36,7 +36,8 @@ object HlsPackage {
     __obj.asInstanceOf[HlsPackage]
   }
   
-  extension [Self <: HlsPackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsPackage] (val x: Self) extends AnyVal {
     
     inline def setEncryption(value: HlsEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object PrevTx {
     __obj.asInstanceOf[PrevTx]
   }
   
-  extension [Self <: PrevTx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrevTx] (val x: Self) extends AnyVal {
     
     inline def setBranch_id(value: Double): Self = StObject.set(x, "branch_id", value.asInstanceOf[js.Any])
     

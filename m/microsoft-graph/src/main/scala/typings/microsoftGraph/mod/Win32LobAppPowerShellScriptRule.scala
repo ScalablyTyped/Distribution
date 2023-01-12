@@ -48,7 +48,8 @@ object Win32LobAppPowerShellScriptRule {
     __obj.asInstanceOf[Win32LobAppPowerShellScriptRule]
   }
   
-  extension [Self <: Win32LobAppPowerShellScriptRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Win32LobAppPowerShellScriptRule] (val x: Self) extends AnyVal {
     
     inline def setComparisonValue(value: NullableOption[String]): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
     

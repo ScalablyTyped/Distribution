@@ -37,7 +37,8 @@ object Lien {
     __obj.asInstanceOf[Lien]
   }
   
-  extension [Self <: Lien](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lien] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object AnalysisHtmlStripCharFilter {
     __obj.asInstanceOf[AnalysisHtmlStripCharFilter]
   }
   
-  extension [Self <: AnalysisHtmlStripCharFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisHtmlStripCharFilter] (val x: Self) extends AnyVal {
     
     inline def setType(value: html_strip): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

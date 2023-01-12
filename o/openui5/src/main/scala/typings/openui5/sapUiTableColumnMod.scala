@@ -1442,7 +1442,8 @@ object sapUiTableColumnMod {
       __obj.asInstanceOf[ColumnSettings]
     }
     
-    extension [Self <: ColumnSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnSettings] (val x: Self) extends AnyVal {
       
       inline def setAutoResizable(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "autoResizable", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object RelatedRecordsInfoProperties {
     __obj.asInstanceOf[RelatedRecordsInfoProperties]
   }
   
-  extension [Self <: RelatedRecordsInfoProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedRecordsInfoProperties] (val x: Self) extends AnyVal {
     
     inline def setOrderByFields(value: js.Array[RelatedRecordsInfoFieldOrderProperties]): Self = StObject.set(x, "orderByFields", value.asInstanceOf[js.Any])
     

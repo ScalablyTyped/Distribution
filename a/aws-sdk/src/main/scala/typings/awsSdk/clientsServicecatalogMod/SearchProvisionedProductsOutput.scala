@@ -28,7 +28,8 @@ object SearchProvisionedProductsOutput {
     __obj.asInstanceOf[SearchProvisionedProductsOutput]
   }
   
-  extension [Self <: SearchProvisionedProductsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchProvisionedProductsOutput] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     

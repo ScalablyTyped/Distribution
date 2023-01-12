@@ -77,7 +77,8 @@ object mod {
       __obj.asInstanceOf[EnvironmentContext]
     }
     
-    extension [Self <: EnvironmentContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnvironmentContext] (val x: Self) extends AnyVal {
       
       inline def setConsole(value: Console): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
@@ -492,7 +493,8 @@ object mod {
       __obj.asInstanceOf[JestEnvironmentConfig]
     }
     
-    extension [Self <: JestEnvironmentConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JestEnvironmentConfig] (val x: Self) extends AnyVal {
       
       inline def setGlobalConfig(value: GlobalConfig): Self = StObject.set(x, "globalConfig", value.asInstanceOf[js.Any])
       
@@ -513,7 +515,8 @@ object mod {
       __obj.asInstanceOf[JestImportMeta]
     }
     
-    extension [Self <: JestImportMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JestImportMeta] (val x: Self) extends AnyVal {
       
       inline def setJest(value: Jest): Self = StObject.set(x, "jest", value.asInstanceOf[js.Any])
     }

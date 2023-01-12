@@ -15,7 +15,8 @@ object HideSources {
     __obj.asInstanceOf[HideSources]
   }
   
-  extension [Self <: HideSources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HideSources] (val x: Self) extends AnyVal {
     
     inline def setHideSources(value: Boolean): Self = StObject.set(x, "hideSources", value.asInstanceOf[js.Any])
     

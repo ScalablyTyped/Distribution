@@ -161,7 +161,8 @@ object mod {
       __obj.asInstanceOf[Parts]
     }
     
-    extension [Self <: Parts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parts] (val x: Self) extends AnyVal {
       
       inline def setDuplicateQueryParameters(value: Boolean): Self = StObject.set(x, "duplicateQueryParameters", value.asInstanceOf[js.Any])
       
@@ -513,7 +514,8 @@ object mod {
       __obj.asInstanceOf[URIOptions]
     }
     
-    extension [Self <: URIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URIOptions] (val x: Self) extends AnyVal {
       
       inline def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
       
@@ -566,7 +568,8 @@ object mod {
         __obj.asInstanceOf[JQuery]
       }
       
-      extension [Self <: JQuery](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
         
         inline def setUri(value: () => URI): Self = StObject.set(x, "uri", js.Any.fromFunction0(value))
       }

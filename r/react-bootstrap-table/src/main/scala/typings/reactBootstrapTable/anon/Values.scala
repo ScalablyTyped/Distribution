@@ -19,7 +19,8 @@ object Values {
     __obj.asInstanceOf[Values[TRow]]
   }
   
-  extension [Self <: Values[?], TRow /* <: js.Object */](x: Self & Values[TRow]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Values[?], TRow /* <: js.Object */] (val x: Self & Values[TRow]) extends AnyVal {
     
     inline def setValues(
       value: EditSelectOptionValue | EditCheckboxOptionValue | (js.Function1[/* row */ TRow, EditCheckboxOptionValue | EditSelectOptionValue])

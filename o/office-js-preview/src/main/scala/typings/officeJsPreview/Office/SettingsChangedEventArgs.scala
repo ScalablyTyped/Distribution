@@ -42,7 +42,8 @@ object SettingsChangedEventArgs {
     __obj.asInstanceOf[SettingsChangedEventArgs]
   }
   
-  extension [Self <: SettingsChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettingsChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     

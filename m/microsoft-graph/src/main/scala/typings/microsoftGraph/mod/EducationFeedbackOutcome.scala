@@ -21,7 +21,8 @@ object EducationFeedbackOutcome {
     __obj.asInstanceOf[EducationFeedbackOutcome]
   }
   
-  extension [Self <: EducationFeedbackOutcome](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationFeedbackOutcome] (val x: Self) extends AnyVal {
     
     inline def setFeedback(value: NullableOption[EducationFeedback]): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     

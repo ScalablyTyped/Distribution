@@ -37,7 +37,8 @@ object dxTreeMapTooltip {
     __obj.asInstanceOf[dxTreeMapTooltip]
   }
   
-  extension [Self <: dxTreeMapTooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxTreeMapTooltip] (val x: Self) extends AnyVal {
     
     inline def setContentTemplate(
       value: template | (js.Function2[

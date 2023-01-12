@@ -18,7 +18,8 @@ object WatchFiles {
     __obj.asInstanceOf[WatchFiles]
   }
   
-  extension [Self <: WatchFiles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchFiles] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: WatchOptionsaggregateTime): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

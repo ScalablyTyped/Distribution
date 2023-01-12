@@ -28,7 +28,8 @@ object ReceivedMetadata {
     __obj.asInstanceOf[ReceivedMetadata]
   }
   
-  extension [Self <: ReceivedMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReceivedMetadata] (val x: Self) extends AnyVal {
     
     inline def setAllowedOperations(value: AllowedOperationList): Self = StObject.set(x, "AllowedOperations", value.asInstanceOf[js.Any])
     

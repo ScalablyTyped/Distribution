@@ -49,7 +49,8 @@ object InstanceLocker {
     __obj.asInstanceOf[InstanceLocker]
   }
   
-  extension [Self <: InstanceLocker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceLocker] (val x: Self) extends AnyVal {
     
     inline def setInstanceLockerCtor1(value: (XInterface, Double) => Unit): Self = StObject.set(x, "InstanceLockerCtor1", js.Any.fromFunction2(value))
     

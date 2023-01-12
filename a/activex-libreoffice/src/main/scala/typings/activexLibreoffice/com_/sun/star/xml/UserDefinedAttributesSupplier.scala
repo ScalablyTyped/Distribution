@@ -29,7 +29,8 @@ object UserDefinedAttributesSupplier {
     __obj.asInstanceOf[UserDefinedAttributesSupplier]
   }
   
-  extension [Self <: UserDefinedAttributesSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserDefinedAttributesSupplier] (val x: Self) extends AnyVal {
     
     inline def setUserDefinedAttributes(value: XNameContainer): Self = StObject.set(x, "UserDefinedAttributes", value.asInstanceOf[js.Any])
   }

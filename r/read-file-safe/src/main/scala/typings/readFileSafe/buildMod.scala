@@ -40,7 +40,8 @@ object buildMod {
       __obj.asInstanceOf[Options[T]]
     }
     
-    extension [Self <: Options[?], T /* <: Boolean */](x: Self & Options[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], T /* <: Boolean */] (val x: Self & Options[T]) extends AnyVal {
       
       inline def setBuffer(value: T): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       

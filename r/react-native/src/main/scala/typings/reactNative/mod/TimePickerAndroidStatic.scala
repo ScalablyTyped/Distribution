@@ -46,7 +46,8 @@ object TimePickerAndroidStatic {
     __obj.asInstanceOf[TimePickerAndroidStatic]
   }
   
-  extension [Self <: TimePickerAndroidStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimePickerAndroidStatic] (val x: Self) extends AnyVal {
     
     inline def setDismissedAction(value: dismissedAction): Self = StObject.set(x, "dismissedAction", value.asInstanceOf[js.Any])
     

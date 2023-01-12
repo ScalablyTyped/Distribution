@@ -27,7 +27,8 @@ object AuthoringInfoField2ClassBreakInfos {
     __obj.asInstanceOf[AuthoringInfoField2ClassBreakInfos]
   }
   
-  extension [Self <: AuthoringInfoField2ClassBreakInfos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthoringInfoField2ClassBreakInfos] (val x: Self) extends AnyVal {
     
     inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     

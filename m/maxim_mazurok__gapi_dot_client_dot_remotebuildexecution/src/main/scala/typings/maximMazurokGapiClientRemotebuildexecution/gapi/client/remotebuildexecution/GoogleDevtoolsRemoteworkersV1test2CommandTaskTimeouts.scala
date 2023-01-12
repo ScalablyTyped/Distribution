@@ -32,7 +32,8 @@ object GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts {
     __obj.asInstanceOf[GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts]
   }
   
-  extension [Self <: GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts] (val x: Self) extends AnyVal {
     
     inline def setExecution(value: String): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
     

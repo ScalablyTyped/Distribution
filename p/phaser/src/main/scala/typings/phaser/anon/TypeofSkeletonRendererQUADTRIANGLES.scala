@@ -16,7 +16,8 @@ object TypeofSkeletonRendererQUADTRIANGLES {
     __obj.asInstanceOf[TypeofSkeletonRendererQUADTRIANGLES]
   }
   
-  extension [Self <: TypeofSkeletonRendererQUADTRIANGLES](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSkeletonRendererQUADTRIANGLES] (val x: Self) extends AnyVal {
     
     inline def setQUAD_TRIANGLES(value: js.Array[Double]): Self = StObject.set(x, "QUAD_TRIANGLES", value.asInstanceOf[js.Any])
     

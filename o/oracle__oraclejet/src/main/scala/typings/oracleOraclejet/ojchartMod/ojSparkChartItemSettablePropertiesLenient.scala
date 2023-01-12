@@ -52,7 +52,8 @@ object ojSparkChartItemSettablePropertiesLenient {
     __obj.asInstanceOf[ojSparkChartItemSettablePropertiesLenient]
   }
   
-  extension [Self <: ojSparkChartItemSettablePropertiesLenient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojSparkChartItemSettablePropertiesLenient] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

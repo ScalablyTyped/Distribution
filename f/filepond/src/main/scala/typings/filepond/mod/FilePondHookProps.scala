@@ -34,7 +34,8 @@ object FilePondHookProps {
     __obj.asInstanceOf[FilePondHookProps]
   }
   
-  extension [Self <: FilePondHookProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilePondHookProps] (val x: Self) extends AnyVal {
     
     inline def setBeforeAddFile(value: /* item */ FilePondFile => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "beforeAddFile", js.Any.fromFunction1(value))
     

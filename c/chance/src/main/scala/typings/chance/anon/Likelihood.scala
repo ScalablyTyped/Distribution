@@ -15,7 +15,8 @@ object Likelihood {
     __obj.asInstanceOf[Likelihood]
   }
   
-  extension [Self <: Likelihood](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Likelihood] (val x: Self) extends AnyVal {
     
     inline def setLikelihood(value: Double): Self = StObject.set(x, "likelihood", value.asInstanceOf[js.Any])
   }

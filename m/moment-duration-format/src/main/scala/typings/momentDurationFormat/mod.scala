@@ -76,7 +76,8 @@ object mod {
         __obj.asInstanceOf[DurationFormatSettings]
       }
       
-      extension [Self <: DurationFormatSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DurationFormatSettings] (val x: Self) extends AnyVal {
         
         inline def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
         
@@ -239,7 +240,8 @@ object mod {
         __obj.asInstanceOf[DurationLabelDef]
       }
       
-      extension [Self <: DurationLabelDef](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DurationLabelDef] (val x: Self) extends AnyVal {
         
         inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
         
@@ -308,7 +310,8 @@ object mod {
         __obj.asInstanceOf[DurationLabelTypeDef]
       }
       
-      extension [Self <: DurationLabelTypeDef](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DurationLabelTypeDef] (val x: Self) extends AnyVal {
         
         inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
         
@@ -347,7 +350,8 @@ object mod {
         __obj.asInstanceOf[DurationTimeDef]
       }
       
-      extension [Self <: DurationTimeDef](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DurationTimeDef] (val x: Self) extends AnyVal {
         
         inline def setHM(value: String): Self = StObject.set(x, "HM", value.asInstanceOf[js.Any])
         
@@ -457,7 +461,8 @@ object mod {
         __obj.asInstanceOf[Duration_]
       }
       
-      extension [Self <: Duration_](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Duration_] (val x: Self) extends AnyVal {
         
         inline def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       }
@@ -503,7 +508,8 @@ object mod {
         __obj.asInstanceOf[LocaleSpecification]
       }
       
-      extension [Self <: LocaleSpecification](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LocaleSpecification] (val x: Self) extends AnyVal {
         
         inline def setDurationLabelTypes(value: js.Array[DurationLabelTypeDef]): Self = StObject.set(x, "durationLabelTypes", value.asInstanceOf[js.Any])
         

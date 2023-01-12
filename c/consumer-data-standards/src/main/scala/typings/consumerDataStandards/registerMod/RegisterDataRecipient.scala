@@ -68,7 +68,8 @@ object RegisterDataRecipient {
     __obj.asInstanceOf[RegisterDataRecipient]
   }
   
-  extension [Self <: RegisterDataRecipient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterDataRecipient] (val x: Self) extends AnyVal {
     
     inline def setAccreditationLevel(value: UNRESTRICTED | SPONSORED): Self = StObject.set(x, "accreditationLevel", value.asInstanceOf[js.Any])
     

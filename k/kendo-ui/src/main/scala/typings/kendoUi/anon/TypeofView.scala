@@ -20,7 +20,8 @@ object TypeofView {
     __obj.asInstanceOf[TypeofView]
   }
   
-  extension [Self <: TypeofView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofView] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => View): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

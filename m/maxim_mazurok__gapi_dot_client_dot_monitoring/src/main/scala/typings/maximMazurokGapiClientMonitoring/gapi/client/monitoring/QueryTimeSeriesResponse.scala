@@ -28,7 +28,8 @@ object QueryTimeSeriesResponse {
     __obj.asInstanceOf[QueryTimeSeriesResponse]
   }
   
-  extension [Self <: QueryTimeSeriesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryTimeSeriesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

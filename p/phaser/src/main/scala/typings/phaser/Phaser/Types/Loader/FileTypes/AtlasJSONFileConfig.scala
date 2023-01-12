@@ -54,7 +54,8 @@ object AtlasJSONFileConfig {
     __obj.asInstanceOf[AtlasJSONFileConfig]
   }
   
-  extension [Self <: AtlasJSONFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AtlasJSONFileConfig] (val x: Self) extends AnyVal {
     
     inline def setAtlasExtension(value: String): Self = StObject.set(x, "atlasExtension", value.asInstanceOf[js.Any])
     

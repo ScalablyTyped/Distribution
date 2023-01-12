@@ -58,7 +58,8 @@ object CreateServiceRequest {
     __obj.asInstanceOf[CreateServiceRequest]
   }
   
-  extension [Self <: CreateServiceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateServiceRequest] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingConfigurationArn(value: AppRunnerResourceArn): Self = StObject.set(x, "AutoScalingConfigurationArn", value.asInstanceOf[js.Any])
     

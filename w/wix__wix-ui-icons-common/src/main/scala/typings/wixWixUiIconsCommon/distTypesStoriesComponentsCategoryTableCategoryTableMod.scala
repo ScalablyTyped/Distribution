@@ -36,7 +36,8 @@ object distTypesStoriesComponentsCategoryTableCategoryTableMod extends Shortcut 
       __obj.asInstanceOf[CategoryTableProps]
     }
     
-    extension [Self <: CategoryTableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CategoryTableProps] (val x: Self) extends AnyVal {
       
       inline def setIconsMetadata(value: js.Array[IconMetadata]): Self = StObject.set(x, "iconsMetadata", value.asInstanceOf[js.Any])
       

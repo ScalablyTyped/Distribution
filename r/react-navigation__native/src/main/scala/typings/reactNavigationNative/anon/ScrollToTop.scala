@@ -18,7 +18,8 @@ object ScrollToTop {
     __obj.asInstanceOf[ScrollToTop]
   }
   
-  extension [Self <: ScrollToTop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollToTop] (val x: Self) extends AnyVal {
     
     inline def setScrollToTop(value: () => Unit): Self = StObject.set(x, "scrollToTop", js.Any.fromFunction0(value))
   }

@@ -938,7 +938,8 @@ object buildSrcCompileScalePropertiesMod {
       __obj.asInstanceOf[ScaleRuleParams]
     }
     
-    extension [Self <: ScaleRuleParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScaleRuleParams] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: ScaleChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       

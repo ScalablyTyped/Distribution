@@ -15,7 +15,8 @@ object NGNArray {
     __obj.asInstanceOf[NGNArray]
   }
   
-  extension [Self <: NGNArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NGNArray] (val x: Self) extends AnyVal {
     
     inline def setNGN(value: js.Array[String]): Self = StObject.set(x, "NGN", value.asInstanceOf[js.Any])
     

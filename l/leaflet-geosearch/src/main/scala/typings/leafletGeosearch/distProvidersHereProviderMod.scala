@@ -60,7 +60,8 @@ object distProvidersHereProviderMod {
       __obj.asInstanceOf[RawResult]
     }
     
-    extension [Self <: RawResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawResult] (val x: Self) extends AnyVal {
       
       inline def setAccess(value: js.Array[LatLng]): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object distProvidersHereProviderMod {
       __obj.asInstanceOf[RequestResult]
     }
     
-    extension [Self <: RequestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestResult] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[RawResult]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       

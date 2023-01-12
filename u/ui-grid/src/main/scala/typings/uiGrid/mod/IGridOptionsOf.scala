@@ -404,7 +404,8 @@ object IGridOptionsOf {
     __obj.asInstanceOf[IGridOptionsOf[TEntity]]
   }
   
-  extension [Self <: IGridOptionsOf[?], TEntity](x: Self & IGridOptionsOf[TEntity]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGridOptionsOf[?], TEntity] (val x: Self & IGridOptionsOf[TEntity]) extends AnyVal {
     
     inline def setAggregationCalcThrottle(value: Double): Self = StObject.set(x, "aggregationCalcThrottle", value.asInstanceOf[js.Any])
     

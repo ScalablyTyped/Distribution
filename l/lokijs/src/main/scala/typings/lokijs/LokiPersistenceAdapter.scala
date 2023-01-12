@@ -51,7 +51,8 @@ object LokiPersistenceAdapter {
     __obj.asInstanceOf[LokiPersistenceAdapter]
   }
   
-  extension [Self <: LokiPersistenceAdapter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LokiPersistenceAdapter] (val x: Self) extends AnyVal {
     
     inline def setDeleteDatabase(
       value: (/* dbnameOrOptions */ Any, /* callback */ js.Function2[/* err */ js.UndefOr[js.Error | Null], /* data */ js.UndefOr[Any], Unit]) => Unit

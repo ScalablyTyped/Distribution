@@ -343,7 +343,8 @@ object serversocketMod {
       __obj.asInstanceOf[AuthTokenOptions]
     }
     
-    extension [Self <: AuthTokenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthTokenOptions] (val x: Self) extends AnyVal {
       
       inline def setRejectOnFailedDelivery(value: Boolean): Self = StObject.set(x, "rejectOnFailedDelivery", value.asInstanceOf[js.Any])
       
@@ -362,7 +363,8 @@ object serversocketMod {
       __obj.asInstanceOf[AuthenticateData]
     }
     
-    extension [Self <: AuthenticateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticateData] (val x: Self) extends AnyVal {
       
       inline def setAuthToken(value: AuthToken): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
       
@@ -383,7 +385,8 @@ object serversocketMod {
       __obj.asInstanceOf[BadAuthTokenData]
     }
     
-    extension [Self <: BadAuthTokenData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadAuthTokenData] (val x: Self) extends AnyVal {
       
       inline def setAuthError(value: js.Error): Self = StObject.set(x, "authError", value.asInstanceOf[js.Any])
       
@@ -404,7 +407,8 @@ object serversocketMod {
       __obj.asInstanceOf[CloseData]
     }
     
-    extension [Self <: CloseData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseData] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -425,7 +429,8 @@ object serversocketMod {
       __obj.asInstanceOf[ConnectAbortData]
     }
     
-    extension [Self <: ConnectAbortData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectAbortData] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -450,7 +455,8 @@ object serversocketMod {
       __obj.asInstanceOf[ConnectData]
     }
     
-    extension [Self <: ConnectData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectData] (val x: Self) extends AnyVal {
       
       inline def setAuthError(value: js.Error): Self = StObject.set(x, "authError", value.asInstanceOf[js.Any])
       
@@ -475,7 +481,8 @@ object serversocketMod {
       __obj.asInstanceOf[DeauthenticateData]
     }
     
-    extension [Self <: DeauthenticateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeauthenticateData] (val x: Self) extends AnyVal {
       
       inline def setOldAuthToken(value: AuthToken): Self = StObject.set(x, "oldAuthToken", value.asInstanceOf[js.Any])
       
@@ -496,7 +503,8 @@ object serversocketMod {
       __obj.asInstanceOf[DisconnectData]
     }
     
-    extension [Self <: DisconnectData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisconnectData] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -519,7 +527,8 @@ object serversocketMod {
       __obj.asInstanceOf[StateChangeData]
     }
     
-    extension [Self <: StateChangeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateChangeData] (val x: Self) extends AnyVal {
       
       inline def setAuthToken(value: AuthToken): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
       
@@ -544,7 +553,8 @@ object serversocketMod {
       __obj.asInstanceOf[SubscribeData]
     }
     
-    extension [Self <: SubscribeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscribeData] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -567,7 +577,8 @@ object serversocketMod {
       __obj.asInstanceOf[SubscriptionOptions]
     }
     
-    extension [Self <: SubscriptionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionOptions] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -592,7 +603,8 @@ object serversocketMod {
       __obj.asInstanceOf[UnsubscribeData]
     }
     
-    extension [Self <: UnsubscribeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnsubscribeData] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     }

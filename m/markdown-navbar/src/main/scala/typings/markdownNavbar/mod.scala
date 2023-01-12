@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[MarkdownNavbarProps]
     }
     
-    extension [Self <: MarkdownNavbarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkdownNavbarProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

@@ -37,7 +37,8 @@ object XMSAAService {
     __obj.asInstanceOf[XMSAAService]
   }
   
-  extension [Self <: XMSAAService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMSAAService] (val x: Self) extends AnyVal {
     
     inline def setGetAccObjectPtr(value: (Double, Double, Double) => Double): Self = StObject.set(x, "getAccObjectPtr", js.Any.fromFunction3(value))
     

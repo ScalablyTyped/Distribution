@@ -95,7 +95,8 @@ object CleanItemButton {
     __obj.asInstanceOf[CleanItemButton]
   }
   
-  extension [Self <: CleanItemButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CleanItemButton] (val x: Self) extends AnyVal {
     
     inline def setCleanButton(value: String): Self = StObject.set(x, "cleanButton", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object GetMarker {
     __obj.asInstanceOf[GetMarker]
   }
   
-  extension [Self <: GetMarker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMarker] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: MarkerEventKeys): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

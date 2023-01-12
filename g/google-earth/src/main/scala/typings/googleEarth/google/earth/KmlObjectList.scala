@@ -23,7 +23,8 @@ object KmlObjectList {
     __obj.asInstanceOf[KmlObjectList[T]]
   }
   
-  extension [Self <: KmlObjectList[?], T /* <: KmlObject */](x: Self & KmlObjectList[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlObjectList[?], T /* <: KmlObject */] (val x: Self & KmlObjectList[T]) extends AnyVal {
     
     inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     

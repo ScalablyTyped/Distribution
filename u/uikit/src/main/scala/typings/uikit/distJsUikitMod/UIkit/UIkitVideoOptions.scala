@@ -17,7 +17,8 @@ object UIkitVideoOptions {
     __obj.asInstanceOf[UIkitVideoOptions]
   }
   
-  extension [Self <: UIkitVideoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitVideoOptions] (val x: Self) extends AnyVal {
     
     inline def setAutomute(value: Boolean): Self = StObject.set(x, "automute", value.asInstanceOf[js.Any])
     

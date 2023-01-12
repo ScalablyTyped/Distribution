@@ -54,7 +54,8 @@ object Score {
     __obj.asInstanceOf[Score]
   }
   
-  extension [Self <: Score](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Score] (val x: Self) extends AnyVal {
     
     inline def setLoop(value: () => Unit): Self = StObject.set(x, "loop", js.Any.fromFunction0(value))
     

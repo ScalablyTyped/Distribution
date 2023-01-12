@@ -18,7 +18,8 @@ object WithTimingConfig {
     __obj.asInstanceOf[WithTimingConfig]
   }
   
-  extension [Self <: WithTimingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WithTimingConfig] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object XCloseable {
     __obj.asInstanceOf[XCloseable]
   }
   
-  extension [Self <: XCloseable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCloseable] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
   }

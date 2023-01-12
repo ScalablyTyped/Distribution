@@ -17,7 +17,8 @@ object MatcherLyricsParams {
     __obj.asInstanceOf[MatcherLyricsParams]
   }
   
-  extension [Self <: MatcherLyricsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatcherLyricsParams] (val x: Self) extends AnyVal {
     
     inline def setQ_artist(value: String): Self = StObject.set(x, "q_artist", value.asInstanceOf[js.Any])
     

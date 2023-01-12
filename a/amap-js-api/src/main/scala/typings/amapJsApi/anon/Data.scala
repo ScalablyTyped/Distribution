@@ -26,7 +26,8 @@ object Data {
     __obj.asInstanceOf[Data[I]]
   }
   
-  extension [Self <: Data[?], I](x: Self & Data[I]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Data[?], I] (val x: Self & Data[I]) extends AnyVal {
     
     inline def setData(
       value: /* import warning: importer.ImportType#apply Failed type conversion: I extends amap-js-api.AMap.MassMarks<infer D> ? D : amap-js-api.AMap.MassMarks.Data */ js.Any

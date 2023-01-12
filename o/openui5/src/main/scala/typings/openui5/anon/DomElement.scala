@@ -23,7 +23,8 @@ object DomElement {
     __obj.asInstanceOf[DomElement]
   }
   
-  extension [Self <: DomElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomElement] (val x: Self) extends AnyVal {
     
     inline def setDomElement(value: typings.std.Element): Self = StObject.set(x, "domElement", value.asInstanceOf[js.Any])
     

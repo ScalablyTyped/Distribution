@@ -32,7 +32,8 @@ object AsyncSearchAsyncSearchResponseBase {
     __obj.asInstanceOf[AsyncSearchAsyncSearchResponseBase]
   }
   
-  extension [Self <: AsyncSearchAsyncSearchResponseBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncSearchAsyncSearchResponseBase] (val x: Self) extends AnyVal {
     
     inline def setExpiration_time(value: DateTime): Self = StObject.set(x, "expiration_time", value.asInstanceOf[js.Any])
     

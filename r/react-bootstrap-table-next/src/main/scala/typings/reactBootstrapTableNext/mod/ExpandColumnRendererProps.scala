@@ -19,7 +19,8 @@ object ExpandColumnRendererProps {
     __obj.asInstanceOf[ExpandColumnRendererProps]
   }
   
-  extension [Self <: ExpandColumnRendererProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandColumnRendererProps] (val x: Self) extends AnyVal {
     
     inline def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
     

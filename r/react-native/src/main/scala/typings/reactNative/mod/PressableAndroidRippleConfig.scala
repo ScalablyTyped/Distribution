@@ -21,7 +21,8 @@ object PressableAndroidRippleConfig {
     __obj.asInstanceOf[PressableAndroidRippleConfig]
   }
   
-  extension [Self <: PressableAndroidRippleConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PressableAndroidRippleConfig] (val x: Self) extends AnyVal {
     
     inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     

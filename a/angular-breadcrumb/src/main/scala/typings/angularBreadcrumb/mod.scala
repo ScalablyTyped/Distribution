@@ -37,7 +37,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[breadcrumbProvider]
         }
         
-        extension [Self <: breadcrumbProvider](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: breadcrumbProvider] (val x: Self) extends AnyVal {
           
           inline def setSetOptions(value: breadcrumbProviderOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
         }
@@ -72,7 +73,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[breadcrumbProviderOptions]
         }
         
-        extension [Self <: breadcrumbProviderOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: breadcrumbProviderOptions] (val x: Self) extends AnyVal {
           
           inline def setIncludeAbstract(value: Boolean): Self = StObject.set(x, "includeAbstract", value.asInstanceOf[js.Any])
           
@@ -111,7 +113,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[breadcrumbService]
         }
         
-        extension [Self <: breadcrumbService](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: breadcrumbService] (val x: Self) extends AnyVal {
           
           inline def setGetLastStep(value: () => IState): Self = StObject.set(x, "getLastStep", js.Any.fromFunction0(value))
           
@@ -137,7 +140,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[IState]
         }
         
-        extension [Self <: IState](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IState] (val x: Self) extends AnyVal {
           
           inline def setNcyBreadcrumb(value: Label): Self = StObject.set(x, "ncyBreadcrumb", value.asInstanceOf[js.Any])
           

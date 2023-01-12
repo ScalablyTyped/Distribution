@@ -17,7 +17,8 @@ object UploadClearEvent {
     __obj.asInstanceOf[UploadClearEvent]
   }
   
-  extension [Self <: UploadClearEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadClearEvent] (val x: Self) extends AnyVal {
     
     inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     

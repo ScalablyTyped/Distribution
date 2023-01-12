@@ -64,7 +64,8 @@ object enginesWebGPUWebgpuCacheRenderPipelineTreeMod {
       __obj.asInstanceOf[NodeState]
     }
     
-    extension [Self <: NodeState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeState] (val x: Self) extends AnyVal {
       
       inline def setCount(value: () => js.Tuple2[Double, Double]): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
       

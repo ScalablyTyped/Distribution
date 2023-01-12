@@ -15,7 +15,8 @@ object ResponsiveMode {
     __obj.asInstanceOf[ResponsiveMode]
   }
   
-  extension [Self <: ResponsiveMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponsiveMode] (val x: Self) extends AnyVal {
     
     inline def setIsActive(value: () => Unit): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
   }

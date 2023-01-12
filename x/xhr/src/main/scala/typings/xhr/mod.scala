@@ -61,7 +61,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[XhrBaseConfig]
     }
     
-    extension [Self <: XhrBaseConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XhrBaseConfig] (val x: Self) extends AnyVal {
       
       inline def setBeforeSend(value: /* xhrObject */ XMLHttpRequest => Unit): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
       
@@ -158,7 +159,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[XhrResponse]
     }
     
-    extension [Self <: XhrResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XhrResponse] (val x: Self) extends AnyVal {
       
       inline def setBody(value: js.Object | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -235,7 +237,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[XhrUriConfig]
     }
     
-    extension [Self <: XhrUriConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XhrUriConfig] (val x: Self) extends AnyVal {
       
       inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
@@ -254,7 +257,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[XhrUrlConfig]
     }
     
-    extension [Self <: XhrUrlConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XhrUrlConfig] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

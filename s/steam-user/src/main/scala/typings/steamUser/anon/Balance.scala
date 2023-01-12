@@ -20,7 +20,8 @@ object Balance {
     __obj.asInstanceOf[Balance]
   }
   
-  extension [Self <: Balance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Balance] (val x: Self) extends AnyVal {
     
     inline def setBalance(value: Double): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
     

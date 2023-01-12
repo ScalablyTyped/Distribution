@@ -30,7 +30,8 @@ object libVksharebuttonMod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       

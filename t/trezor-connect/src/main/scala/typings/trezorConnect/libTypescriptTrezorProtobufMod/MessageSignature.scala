@@ -17,7 +17,8 @@ object MessageSignature {
     __obj.asInstanceOf[MessageSignature]
   }
   
-  extension [Self <: MessageSignature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageSignature] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

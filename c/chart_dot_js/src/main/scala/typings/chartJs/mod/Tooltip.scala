@@ -17,7 +17,8 @@ object Tooltip {
   @js.native
   val ^ : Tooltip = js.native
   
-  extension [Self <: Tooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tooltip] (val x: Self) extends AnyVal {
     
     inline def setPositioners(value: TooltipPositionerMap): Self = StObject.set(x, "positioners", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object UnityLauncher {
     __obj.asInstanceOf[UnityLauncher]
   }
   
-  extension [Self <: UnityLauncher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnityLauncher] (val x: Self) extends AnyVal {
     
     inline def setAddAction(value: (String, js.Function) => Any): Self = StObject.set(x, "addAction", js.Any.fromFunction2(value))
     

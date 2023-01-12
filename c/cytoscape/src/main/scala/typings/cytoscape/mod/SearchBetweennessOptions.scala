@@ -29,7 +29,8 @@ object SearchBetweennessOptions {
     __obj.asInstanceOf[SearchBetweennessOptions]
   }
   
-  extension [Self <: SearchBetweennessOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchBetweennessOptions] (val x: Self) extends AnyVal {
     
     inline def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     

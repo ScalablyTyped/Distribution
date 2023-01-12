@@ -68,7 +68,8 @@ object HeaderFooterData {
     __obj.asInstanceOf[HeaderFooterData]
   }
   
-  extension [Self <: HeaderFooterData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeaderFooterData] (val x: Self) extends AnyVal {
     
     inline def setCenterFooter(value: String): Self = StObject.set(x, "centerFooter", value.asInstanceOf[js.Any])
     

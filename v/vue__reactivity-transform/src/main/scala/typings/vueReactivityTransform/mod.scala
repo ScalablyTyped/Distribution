@@ -68,7 +68,8 @@ object mod {
       __obj.asInstanceOf[ImportBinding]
     }
     
-    extension [Self <: ImportBinding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportBinding] (val x: Self) extends AnyVal {
       
       inline def setImported(value: String): Self = StObject.set(x, "imported", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object mod {
       __obj.asInstanceOf[RefTransformOptions]
     }
     
-    extension [Self <: RefTransformOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefTransformOptions] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -136,7 +138,8 @@ object mod {
       __obj.asInstanceOf[RefTransformResults]
     }
     
-    extension [Self <: RefTransformResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefTransformResults] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

@@ -57,7 +57,8 @@ object TypeofVictoryAxisBase {
     __obj.asInstanceOf[TypeofVictoryAxisBase]
   }
   
-  extension [Self <: TypeofVictoryAxisBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofVictoryAxisBase] (val x: Self) extends AnyVal {
     
     inline def setAnimationWhitelist(value: js.Array[crossAxis | domain | events | fixLabelOverlap | offsetX | offsetY | orientation]): Self = StObject.set(x, "animationWhitelist", value.asInstanceOf[js.Any])
     

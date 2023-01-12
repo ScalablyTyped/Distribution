@@ -33,7 +33,8 @@ object PreDragActions {
     __obj.asInstanceOf[PreDragActions]
   }
   
-  extension [Self <: PreDragActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreDragActions] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     

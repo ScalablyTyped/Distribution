@@ -33,7 +33,8 @@ object EnvironmentDimensions {
     __obj.asInstanceOf[EnvironmentDimensions]
   }
   
-  extension [Self <: EnvironmentDimensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentDimensions] (val x: Self) extends AnyVal {
     
     inline def setClientHeight(value: String): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
     

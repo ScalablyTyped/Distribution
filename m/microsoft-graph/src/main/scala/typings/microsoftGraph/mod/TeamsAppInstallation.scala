@@ -21,7 +21,8 @@ object TeamsAppInstallation {
     __obj.asInstanceOf[TeamsAppInstallation]
   }
   
-  extension [Self <: TeamsAppInstallation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamsAppInstallation] (val x: Self) extends AnyVal {
     
     inline def setTeamsApp(value: NullableOption[TeamsApp]): Self = StObject.set(x, "teamsApp", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GPUVertexAttribute {
     __obj.asInstanceOf[GPUVertexAttribute]
   }
   
-  extension [Self <: GPUVertexAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUVertexAttribute] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: GPUVertexFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

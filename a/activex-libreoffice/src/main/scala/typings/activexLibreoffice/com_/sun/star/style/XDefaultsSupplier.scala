@@ -34,7 +34,8 @@ object XDefaultsSupplier {
     __obj.asInstanceOf[XDefaultsSupplier]
   }
   
-  extension [Self <: XDefaultsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDefaultsSupplier] (val x: Self) extends AnyVal {
     
     inline def setDefaults(value: XPropertySet): Self = StObject.set(x, "Defaults", value.asInstanceOf[js.Any])
     

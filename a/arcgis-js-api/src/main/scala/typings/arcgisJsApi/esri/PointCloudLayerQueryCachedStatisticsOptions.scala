@@ -21,7 +21,8 @@ object PointCloudLayerQueryCachedStatisticsOptions {
     __obj.asInstanceOf[PointCloudLayerQueryCachedStatisticsOptions]
   }
   
-  extension [Self <: PointCloudLayerQueryCachedStatisticsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointCloudLayerQueryCachedStatisticsOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

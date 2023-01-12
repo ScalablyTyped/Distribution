@@ -30,7 +30,8 @@ object VoiceControlClientManager {
     __obj.asInstanceOf[VoiceControlClientManager]
   }
   
-  extension [Self <: VoiceControlClientManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceControlClientManager] (val x: Self) extends AnyVal {
     
     inline def setGetVoiceControlClient(value: () => VoiceControlClient): Self = StObject.set(x, "getVoiceControlClient", js.Any.fromFunction0(value))
   }

@@ -38,7 +38,8 @@ object LaunchTemplateSpotMarketOptions {
     __obj.asInstanceOf[LaunchTemplateSpotMarketOptions]
   }
   
-  extension [Self <: LaunchTemplateSpotMarketOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchTemplateSpotMarketOptions] (val x: Self) extends AnyVal {
     
     inline def setBlockDurationMinutes(value: Integer): Self = StObject.set(x, "BlockDurationMinutes", value.asInstanceOf[js.Any])
     

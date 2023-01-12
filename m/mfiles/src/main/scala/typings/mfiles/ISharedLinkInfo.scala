@@ -41,7 +41,8 @@ object ISharedLinkInfo {
     __obj.asInstanceOf[ISharedLinkInfo]
   }
   
-  extension [Self <: ISharedLinkInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISharedLinkInfo] (val x: Self) extends AnyVal {
     
     inline def setAccessKey(value: String): Self = StObject.set(x, "AccessKey", value.asInstanceOf[js.Any])
     

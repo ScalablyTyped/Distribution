@@ -32,7 +32,8 @@ object LeafletEvent {
     __obj.asInstanceOf[LeafletEvent]
   }
   
-  extension [Self <: LeafletEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeafletEvent] (val x: Self) extends AnyVal {
     
     inline def setLayer(value: Any): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[AddToastPayload]
     }
     
-    extension [Self <: AddToastPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddToastPayload] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object mod {
       __obj.asInstanceOf[BasicToastrOptions]
     }
     
-    extension [Self <: BasicToastrOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicToastrOptions] (val x: Self) extends AnyVal {
       
       inline def setAttention(value: Boolean): Self = StObject.set(x, "attention", value.asInstanceOf[js.Any])
       
@@ -192,7 +194,8 @@ object mod {
       __obj.asInstanceOf[ConfirmToastrCustomOptions]
     }
     
-    extension [Self <: ConfirmToastrCustomOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmToastrCustomOptions] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: Element): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     }
@@ -217,7 +220,8 @@ object mod {
       __obj.asInstanceOf[ConfirmToastrOptions]
     }
     
-    extension [Self <: ConfirmToastrOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmToastrOptions] (val x: Self) extends AnyVal {
       
       inline def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
       
@@ -278,7 +282,8 @@ object mod {
       __obj.asInstanceOf[LightToastrOptions]
     }
     
-    extension [Self <: LightToastrOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LightToastrOptions] (val x: Self) extends AnyVal {
       
       inline def setAttention(value: Boolean): Self = StObject.set(x, "attention", value.asInstanceOf[js.Any])
       
@@ -374,7 +379,8 @@ object mod {
       __obj.asInstanceOf[ReduxToastrProps]
     }
     
-    extension [Self <: ReduxToastrProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReduxToastrProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -484,7 +490,8 @@ object mod {
       __obj.asInstanceOf[ToastrState]
     }
     
-    extension [Self <: ToastrState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastrState] (val x: Self) extends AnyVal {
       
       inline def setConfirm(value: Id): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
       
@@ -523,7 +530,8 @@ object mod {
       __obj.asInstanceOf[Toastr_]
     }
     
-    extension [Self <: Toastr_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Toastr_] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

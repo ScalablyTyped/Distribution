@@ -26,7 +26,8 @@ object Decode {
     __obj.asInstanceOf[Decode[Base, Prefix]]
   }
   
-  extension [Self <: Decode[?, ?], Base /* <: String */, Prefix /* <: String */](x: Self & (Decode[Base, Prefix])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Decode[?, ?], Base /* <: String */, Prefix /* <: String */] (val x: Self & (Decode[Base, Prefix])) extends AnyVal {
     
     inline def setDecode(value: String => js.typedarray.Uint8Array): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     

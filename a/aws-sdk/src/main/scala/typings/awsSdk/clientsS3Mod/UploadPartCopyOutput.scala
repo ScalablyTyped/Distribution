@@ -50,7 +50,8 @@ object UploadPartCopyOutput {
     __obj.asInstanceOf[UploadPartCopyOutput]
   }
   
-  extension [Self <: UploadPartCopyOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadPartCopyOutput] (val x: Self) extends AnyVal {
     
     inline def setBucketKeyEnabled(value: BucketKeyEnabled): Self = StObject.set(x, "BucketKeyEnabled", value.asInstanceOf[js.Any])
     

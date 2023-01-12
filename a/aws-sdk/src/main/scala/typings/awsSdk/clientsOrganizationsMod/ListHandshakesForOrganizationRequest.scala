@@ -28,7 +28,8 @@ object ListHandshakesForOrganizationRequest {
     __obj.asInstanceOf[ListHandshakesForOrganizationRequest]
   }
   
-  extension [Self <: ListHandshakesForOrganizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListHandshakesForOrganizationRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: HandshakeFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

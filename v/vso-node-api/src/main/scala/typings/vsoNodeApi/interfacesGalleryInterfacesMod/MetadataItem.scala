@@ -23,7 +23,8 @@ object MetadataItem {
     __obj.asInstanceOf[MetadataItem]
   }
   
-  extension [Self <: MetadataItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataItem] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object HTMLReturn {
     __obj.asInstanceOf[HTMLReturn]
   }
   
-  extension [Self <: HTMLReturn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLReturn] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

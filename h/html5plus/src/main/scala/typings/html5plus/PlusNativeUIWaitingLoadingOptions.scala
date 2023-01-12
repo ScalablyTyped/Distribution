@@ -66,7 +66,8 @@ object PlusNativeUIWaitingLoadingOptions {
     __obj.asInstanceOf[PlusNativeUIWaitingLoadingOptions]
   }
   
-  extension [Self <: PlusNativeUIWaitingLoadingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNativeUIWaitingLoadingOptions] (val x: Self) extends AnyVal {
     
     inline def setDisplay(value: block | `inline` | none): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     

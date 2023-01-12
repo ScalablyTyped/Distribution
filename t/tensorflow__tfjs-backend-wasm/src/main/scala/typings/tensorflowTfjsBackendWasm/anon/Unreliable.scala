@@ -15,7 +15,8 @@ object Unreliable {
     __obj.asInstanceOf[Unreliable]
   }
   
-  extension [Self <: Unreliable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Unreliable] (val x: Self) extends AnyVal {
     
     inline def setUnreliable(value: Boolean): Self = StObject.set(x, "unreliable", value.asInstanceOf[js.Any])
   }

@@ -34,7 +34,8 @@ object ReturnShipment {
     __obj.asInstanceOf[ReturnShipment]
   }
   
-  extension [Self <: ReturnShipment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnShipment] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     

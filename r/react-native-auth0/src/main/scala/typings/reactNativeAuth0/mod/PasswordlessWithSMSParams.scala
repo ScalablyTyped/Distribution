@@ -21,7 +21,8 @@ object PasswordlessWithSMSParams {
     __obj.asInstanceOf[PasswordlessWithSMSParams]
   }
   
-  extension [Self <: PasswordlessWithSMSParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordlessWithSMSParams] (val x: Self) extends AnyVal {
     
     inline def setAuthParams(value: AuthParams): Self = StObject.set(x, "authParams", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[AlertOptions]
     }
     
-    extension [Self <: AlertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlertOptions] (val x: Self) extends AnyVal {
       
       inline def setOkButtonStyle(value: BootstrapStyleFlags): Self = StObject.set(x, "okButtonStyle", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object mod {
       __obj.asInstanceOf[ConfirmOptions]
     }
     
-    extension [Self <: ConfirmOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmOptions] (val x: Self) extends AnyVal {
       
       inline def setCancelButtonStyle(value: BootstrapStyleFlags): Self = StObject.set(x, "cancelButtonStyle", value.asInstanceOf[js.Any])
       

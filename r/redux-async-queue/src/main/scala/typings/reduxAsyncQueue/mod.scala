@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[AsyncQueueAction[T]]
     }
     
-    extension [Self <: AsyncQueueAction[?], T /* <: Action[Any] */](x: Self & AsyncQueueAction[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncQueueAction[?], T /* <: Action[Any] */] (val x: Self & AsyncQueueAction[T]) extends AnyVal {
       
       inline def setCallback(value: (js.Function0[Unit], Dispatch[T]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       

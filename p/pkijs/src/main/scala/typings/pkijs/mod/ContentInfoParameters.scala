@@ -20,7 +20,8 @@ object ContentInfoParameters {
     __obj.asInstanceOf[ContentInfoParameters]
   }
   
-  extension [Self <: ContentInfoParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentInfoParameters] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

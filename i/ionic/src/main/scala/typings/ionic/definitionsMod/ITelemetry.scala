@@ -15,7 +15,8 @@ object ITelemetry {
     __obj.asInstanceOf[ITelemetry]
   }
   
-  extension [Self <: ITelemetry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITelemetry] (val x: Self) extends AnyVal {
     
     inline def setSendCommand(value: (String, js.Array[String]) => js.Promise[Unit]): Self = StObject.set(x, "sendCommand", js.Any.fromFunction2(value))
   }

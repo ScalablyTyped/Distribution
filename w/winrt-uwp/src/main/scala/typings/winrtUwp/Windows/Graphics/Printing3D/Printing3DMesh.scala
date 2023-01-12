@@ -114,7 +114,8 @@ object Printing3DMesh {
     __obj.asInstanceOf[Printing3DMesh]
   }
   
-  extension [Self <: Printing3DMesh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Printing3DMesh] (val x: Self) extends AnyVal {
     
     inline def setBufferDescriptionSet(value: IPropertySet): Self = StObject.set(x, "bufferDescriptionSet", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object Address {
     __obj.asInstanceOf[Address]
   }
   
-  extension [Self <: Address](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
     
     inline def setAddressLine(value: js.Array[String]): Self = StObject.set(x, "addressLine", value.asInstanceOf[js.Any])
     

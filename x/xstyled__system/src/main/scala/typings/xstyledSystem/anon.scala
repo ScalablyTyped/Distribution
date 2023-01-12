@@ -95,7 +95,8 @@ object anon {
       __obj.asInstanceOf[CssProperty]
     }
     
-    extension [Self <: CssProperty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CssProperty] (val x: Self) extends AnyVal {
       
       inline def setCssProperty(value: String | js.Array[String]): Self = StObject.set(x, "cssProperty", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object anon {
       __obj.asInstanceOf[Generators]
     }
     
-    extension [Self <: Generators](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Generators] (val x: Self) extends AnyVal {
       
       inline def setGenerators(value: js.Array[Any]): Self = StObject.set(x, "generators", value.asInstanceOf[js.Any])
       
@@ -200,7 +202,8 @@ object anon {
       __obj.asInstanceOf[TypeofComponent]
     }
     
-    extension [Self <: TypeofComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofComponent] (val x: Self) extends AnyVal {
       
       inline def setContextType(value: Context[Any]): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object SendOTPMessageResponse {
     __obj.asInstanceOf[SendOTPMessageResponse]
   }
   
-  extension [Self <: SendOTPMessageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendOTPMessageResponse] (val x: Self) extends AnyVal {
     
     inline def setMessageResponse(value: MessageResponse): Self = StObject.set(x, "MessageResponse", value.asInstanceOf[js.Any])
   }

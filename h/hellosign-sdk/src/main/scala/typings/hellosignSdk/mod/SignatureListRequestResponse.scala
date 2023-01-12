@@ -25,7 +25,8 @@ object SignatureListRequestResponse {
     __obj.asInstanceOf[SignatureListRequestResponse]
   }
   
-  extension [Self <: SignatureListRequestResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureListRequestResponse] (val x: Self) extends AnyVal {
     
     inline def setSignature_requests(value: js.Array[SignatureRequest[StringDictionary[Any]]]): Self = StObject.set(x, "signature_requests", value.asInstanceOf[js.Any])
     

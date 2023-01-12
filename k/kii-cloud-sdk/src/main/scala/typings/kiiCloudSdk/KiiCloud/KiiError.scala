@@ -19,7 +19,8 @@ object KiiError {
     __obj.asInstanceOf[KiiError]
   }
   
-  extension [Self <: KiiError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KiiError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -71,7 +71,8 @@ object libDatabaseLogDatumIteratorMod {
       __obj.asInstanceOf[LogDatumIterator]
     }
     
-    extension [Self <: LogDatumIterator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogDatumIterator] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

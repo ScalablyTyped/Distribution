@@ -158,7 +158,8 @@ object AnnotationsLabelOptions {
     __obj.asInstanceOf[AnnotationsLabelOptions]
   }
   
-  extension [Self <: AnnotationsLabelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsLabelOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: AnnotationLabelAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

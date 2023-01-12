@@ -23,7 +23,8 @@ object DescribeRegistryResponse {
     __obj.asInstanceOf[DescribeRegistryResponse]
   }
   
-  extension [Self <: DescribeRegistryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRegistryResponse] (val x: Self) extends AnyVal {
     
     inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     

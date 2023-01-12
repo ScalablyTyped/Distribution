@@ -37,7 +37,8 @@ object typesLatestSrcOperationParameterMod {
       __obj.asInstanceOf[OperationParameter]
     }
     
-    extension [Self <: OperationParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationParameter] (val x: Self) extends AnyVal {
       
       inline def setMapper(value: Mapper): Self = StObject.set(x, "mapper", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object typesLatestSrcOperationParameterMod {
       __obj.asInstanceOf[OperationQueryParameter]
     }
     
-    extension [Self <: OperationQueryParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationQueryParameter] (val x: Self) extends AnyVal {
       
       inline def setCollectionFormat(value: QueryCollectionFormat): Self = StObject.set(x, "collectionFormat", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object typesLatestSrcOperationParameterMod {
       __obj.asInstanceOf[OperationURLParameter]
     }
     
-    extension [Self <: OperationURLParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationURLParameter] (val x: Self) extends AnyVal {
       
       inline def setSkipEncoding(value: Boolean): Self = StObject.set(x, "skipEncoding", value.asInstanceOf[js.Any])
       

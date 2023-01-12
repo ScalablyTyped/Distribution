@@ -15,7 +15,8 @@ object SecurityPoliciesWafConfig {
     __obj.asInstanceOf[SecurityPoliciesWafConfig]
   }
   
-  extension [Self <: SecurityPoliciesWafConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityPoliciesWafConfig] (val x: Self) extends AnyVal {
     
     inline def setWafRules(value: PreconfiguredWafSet): Self = StObject.set(x, "wafRules", value.asInstanceOf[js.Any])
     

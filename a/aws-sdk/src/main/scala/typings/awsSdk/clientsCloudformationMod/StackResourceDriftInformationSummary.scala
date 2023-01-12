@@ -23,7 +23,8 @@ object StackResourceDriftInformationSummary {
     __obj.asInstanceOf[StackResourceDriftInformationSummary]
   }
   
-  extension [Self <: StackResourceDriftInformationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackResourceDriftInformationSummary] (val x: Self) extends AnyVal {
     
     inline def setLastCheckTimestamp(value: js.Date): Self = StObject.set(x, "LastCheckTimestamp", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object buildCommandsBundleBuildBundleMod {
       __obj.asInstanceOf[AssetData]
     }
     
-    extension [Self <: AssetData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssetData] (val x: Self) extends AnyVal {
       
       inline def setFileSystemLocation(value: String): Self = StObject.set(x, "fileSystemLocation", value.asInstanceOf[js.Any])
       

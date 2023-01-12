@@ -23,7 +23,8 @@ object TreeNodeClickParams {
     __obj.asInstanceOf[TreeNodeClickParams]
   }
   
-  extension [Self <: TreeNodeClickParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeNodeClickParams] (val x: Self) extends AnyVal {
     
     inline def setNode(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TreeNode */ Any

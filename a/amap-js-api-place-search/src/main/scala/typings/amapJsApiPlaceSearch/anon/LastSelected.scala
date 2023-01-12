@@ -33,7 +33,8 @@ object LastSelected {
     __obj.asInstanceOf[LastSelected]
   }
   
-  extension [Self <: LastSelected](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LastSelected] (val x: Self) extends AnyVal {
     
     inline def setLastSelected(
       value: SelectChangeEventData | (SelectChangeEvent[

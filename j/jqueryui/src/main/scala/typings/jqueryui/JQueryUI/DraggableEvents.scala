@@ -22,7 +22,8 @@ object DraggableEvents {
     __obj.asInstanceOf[DraggableEvents]
   }
   
-  extension [Self <: DraggableEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggableEvents] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     

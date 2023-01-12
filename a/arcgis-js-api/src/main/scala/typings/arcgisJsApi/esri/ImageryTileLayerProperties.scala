@@ -126,7 +126,8 @@ object ImageryTileLayerProperties {
     __obj.asInstanceOf[ImageryTileLayerProperties]
   }
   
-  extension [Self <: ImageryTileLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageryTileLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setCustomParameters(value: Any): Self = StObject.set(x, "customParameters", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GiphyOptions {
     __obj.asInstanceOf[GiphyOptions]
   }
   
-  extension [Self <: GiphyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GiphyOptions] (val x: Self) extends AnyVal {
     
     inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     

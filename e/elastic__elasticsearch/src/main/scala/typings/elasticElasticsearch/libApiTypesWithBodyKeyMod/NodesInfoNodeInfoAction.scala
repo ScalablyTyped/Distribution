@@ -15,7 +15,8 @@ object NodesInfoNodeInfoAction {
     __obj.asInstanceOf[NodesInfoNodeInfoAction]
   }
   
-  extension [Self <: NodesInfoNodeInfoAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoAction] (val x: Self) extends AnyVal {
     
     inline def setDestructive_requires_name(value: String): Self = StObject.set(x, "destructive_requires_name", value.asInstanceOf[js.Any])
   }

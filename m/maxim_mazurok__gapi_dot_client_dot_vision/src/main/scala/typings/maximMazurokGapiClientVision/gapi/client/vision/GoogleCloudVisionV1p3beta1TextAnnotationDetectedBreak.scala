@@ -19,7 +19,8 @@ object GoogleCloudVisionV1p3beta1TextAnnotationDetectedBreak {
     __obj.asInstanceOf[GoogleCloudVisionV1p3beta1TextAnnotationDetectedBreak]
   }
   
-  extension [Self <: GoogleCloudVisionV1p3beta1TextAnnotationDetectedBreak](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p3beta1TextAnnotationDetectedBreak] (val x: Self) extends AnyVal {
     
     inline def setIsPrefix(value: Boolean): Self = StObject.set(x, "isPrefix", value.asInstanceOf[js.Any])
     

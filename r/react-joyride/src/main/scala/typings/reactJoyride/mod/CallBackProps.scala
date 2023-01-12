@@ -39,7 +39,8 @@ object CallBackProps {
     __obj.asInstanceOf[CallBackProps]
   }
   
-  extension [Self <: CallBackProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallBackProps] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object AdAssets {
     __obj.asInstanceOf[AdAssets]
   }
   
-  extension [Self <: AdAssets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdAssets] (val x: Self) extends AnyVal {
     
     inline def setAssets(value: () => AssetSelector): Self = StObject.set(x, "assets", js.Any.fromFunction0(value))
     

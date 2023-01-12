@@ -22,7 +22,8 @@ object ThreeTrafficLights1Set {
     __obj.asInstanceOf[ThreeTrafficLights1Set]
   }
   
-  extension [Self <: ThreeTrafficLights1Set](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreeTrafficLights1Set] (val x: Self) extends AnyVal {
     
     inline def setGreenCircle(value: Icon): Self = StObject.set(x, "greenCircle", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object Icon {
     __obj.asInstanceOf[Icon]
   }
   
-  extension [Self <: Icon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

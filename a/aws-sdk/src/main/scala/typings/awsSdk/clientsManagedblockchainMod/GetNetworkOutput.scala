@@ -18,7 +18,8 @@ object GetNetworkOutput {
     __obj.asInstanceOf[GetNetworkOutput]
   }
   
-  extension [Self <: GetNetworkOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNetworkOutput] (val x: Self) extends AnyVal {
     
     inline def setNetwork(value: Network): Self = StObject.set(x, "Network", value.asInstanceOf[js.Any])
     

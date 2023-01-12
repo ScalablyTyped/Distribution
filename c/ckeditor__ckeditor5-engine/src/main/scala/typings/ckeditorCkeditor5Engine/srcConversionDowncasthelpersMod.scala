@@ -181,7 +181,8 @@ object srcConversionDowncasthelpersMod {
       __obj.asInstanceOf[HighlightDescriptor]
     }
     
-    extension [Self <: HighlightDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HighlightDescriptor] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Record[String, String | Double | Boolean]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

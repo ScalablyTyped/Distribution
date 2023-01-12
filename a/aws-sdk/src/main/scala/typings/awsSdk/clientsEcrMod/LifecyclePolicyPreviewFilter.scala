@@ -18,7 +18,8 @@ object LifecyclePolicyPreviewFilter {
     __obj.asInstanceOf[LifecyclePolicyPreviewFilter]
   }
   
-  extension [Self <: LifecyclePolicyPreviewFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LifecyclePolicyPreviewFilter] (val x: Self) extends AnyVal {
     
     inline def setTagStatus(value: TagStatus): Self = StObject.set(x, "tagStatus", value.asInstanceOf[js.Any])
     

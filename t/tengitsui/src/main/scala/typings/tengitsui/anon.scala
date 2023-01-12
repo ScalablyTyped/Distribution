@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setAction(value: /* record */ js.Object => Boolean): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
@@ -83,7 +84,8 @@ object anon {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setFields(value: typings.tengitsui.mod.Fields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     }
@@ -102,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setValue(value: js.Array[Null | String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

@@ -88,7 +88,8 @@ object UpdateDomainConfigRequest {
     __obj.asInstanceOf[UpdateDomainConfigRequest]
   }
   
-  extension [Self <: UpdateDomainConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDomainConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessPolicies(value: PolicyDocument): Self = StObject.set(x, "AccessPolicies", value.asInstanceOf[js.Any])
     

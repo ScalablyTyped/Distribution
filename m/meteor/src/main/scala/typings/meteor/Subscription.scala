@@ -84,7 +84,8 @@ object Subscription {
     __obj.asInstanceOf[Subscription]
   }
   
-  extension [Self <: Subscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
     
     inline def setAdded(value: (String, String, js.Object) => Unit): Self = StObject.set(x, "added", js.Any.fromFunction3(value))
     

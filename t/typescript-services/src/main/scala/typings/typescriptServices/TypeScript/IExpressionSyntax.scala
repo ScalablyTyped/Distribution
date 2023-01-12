@@ -41,7 +41,8 @@ object IExpressionSyntax {
     __obj.asInstanceOf[IExpressionSyntax]
   }
   
-  extension [Self <: IExpressionSyntax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExpressionSyntax] (val x: Self) extends AnyVal {
     
     inline def setIsExpression(value: () => Boolean): Self = StObject.set(x, "isExpression", js.Any.fromFunction0(value))
   }

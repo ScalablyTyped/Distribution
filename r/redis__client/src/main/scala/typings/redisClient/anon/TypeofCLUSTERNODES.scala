@@ -21,7 +21,8 @@ object TypeofCLUSTERNODES {
     __obj.asInstanceOf[TypeofCLUSTERNODES]
   }
   
-  extension [Self <: TypeofCLUSTERNODES](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCLUSTERNODES] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: () => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction0(value))
     

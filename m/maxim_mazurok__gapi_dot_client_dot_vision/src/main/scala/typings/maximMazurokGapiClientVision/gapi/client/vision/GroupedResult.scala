@@ -22,7 +22,8 @@ object GroupedResult {
     __obj.asInstanceOf[GroupedResult]
   }
   
-  extension [Self <: GroupedResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupedResult] (val x: Self) extends AnyVal {
     
     inline def setBoundingPoly(value: BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     

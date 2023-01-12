@@ -53,7 +53,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[ButtonInvokeParameter]
     }
     
-    extension [Self <: ButtonInvokeParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonInvokeParameter] (val x: Self) extends AnyVal {
       
       inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[DataDOMInvokeParameter]
     }
     
-    extension [Self <: DataDOMInvokeParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataDOMInvokeParameter] (val x: Self) extends AnyVal {
       
       inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
@@ -165,7 +167,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[XDocumentInvokeParameter]
     }
     
-    extension [Self <: XDocumentInvokeParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XDocumentInvokeParameter] (val x: Self) extends AnyVal {
       
       inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       

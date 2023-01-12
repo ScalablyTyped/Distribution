@@ -20,7 +20,8 @@ object PlotWindbarbDataLabelsAnimationOptions {
     __obj.asInstanceOf[PlotWindbarbDataLabelsAnimationOptions]
   }
   
-  extension [Self <: PlotWindbarbDataLabelsAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotWindbarbDataLabelsAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     

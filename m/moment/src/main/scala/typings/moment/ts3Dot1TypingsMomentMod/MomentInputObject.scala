@@ -63,7 +63,8 @@ object MomentInputObject {
     __obj.asInstanceOf[MomentInputObject]
   }
   
-  extension [Self <: MomentInputObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MomentInputObject] (val x: Self) extends AnyVal {
     
     inline def setD(value: Double): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
     

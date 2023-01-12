@@ -21,7 +21,8 @@ object srcRefsMod {
       __obj.asInstanceOf[DOMRefValue[T]]
     }
     
-    extension [Self <: DOMRefValue[?], T /* <: HTMLElement */](x: Self & DOMRefValue[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DOMRefValue[?], T /* <: HTMLElement */] (val x: Self & DOMRefValue[T]) extends AnyVal {
       
       inline def setUNSAFE_getDOMNode(value: () => T): Self = StObject.set(x, "UNSAFE_getDOMNode", js.Any.fromFunction0(value))
     }
@@ -42,7 +43,8 @@ object srcRefsMod {
       __obj.asInstanceOf[FocusableRefValue[T, D]]
     }
     
-    extension [Self <: FocusableRefValue[?, ?], T /* <: HTMLElement */, D /* <: HTMLElement */](x: Self & (FocusableRefValue[T, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusableRefValue[?, ?], T /* <: HTMLElement */, D /* <: HTMLElement */] (val x: Self & (FocusableRefValue[T, D])) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }

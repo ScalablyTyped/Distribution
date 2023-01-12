@@ -49,7 +49,8 @@ object ActivityTask {
     __obj.asInstanceOf[ActivityTask]
   }
   
-  extension [Self <: ActivityTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityTask] (val x: Self) extends AnyVal {
     
     inline def setActivityId(value: ActivityId): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
     

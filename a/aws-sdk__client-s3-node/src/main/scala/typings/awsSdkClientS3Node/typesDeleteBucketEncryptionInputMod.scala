@@ -79,7 +79,8 @@ object typesDeleteBucketEncryptionInputMod {
       __obj.asInstanceOf[DeleteBucketEncryptionInput]
     }
     
-    extension [Self <: DeleteBucketEncryptionInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteBucketEncryptionInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

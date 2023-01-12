@@ -54,7 +54,8 @@ object mod {
         __obj.asInstanceOf[Segment]
       }
       
-      extension [Self <: Segment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
         
         inline def setAIL(value: AIL): Self = StObject.set(x, "AIL", value.asInstanceOf[js.Any])
         
@@ -100,7 +101,8 @@ object mod {
         __obj.asInstanceOf[TriggerEvent]
       }
       
-      extension [Self <: TriggerEvent](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TriggerEvent] (val x: Self) extends AnyVal {
         
         inline def setADT(value: ADT): Self = StObject.set(x, "ADT", value.asInstanceOf[js.Any])
         

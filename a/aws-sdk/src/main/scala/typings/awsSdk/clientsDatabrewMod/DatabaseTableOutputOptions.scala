@@ -23,7 +23,8 @@ object DatabaseTableOutputOptions {
     __obj.asInstanceOf[DatabaseTableOutputOptions]
   }
   
-  extension [Self <: DatabaseTableOutputOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseTableOutputOptions] (val x: Self) extends AnyVal {
     
     inline def setTableName(value: DatabaseTableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     

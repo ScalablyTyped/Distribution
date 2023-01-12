@@ -28,7 +28,8 @@ object UpdateServerCertificateRequest {
     __obj.asInstanceOf[UpdateServerCertificateRequest]
   }
   
-  extension [Self <: UpdateServerCertificateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateServerCertificateRequest] (val x: Self) extends AnyVal {
     
     inline def setNewPath(value: pathType): Self = StObject.set(x, "NewPath", value.asInstanceOf[js.Any])
     

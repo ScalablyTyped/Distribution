@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[IsImportant]
     }
     
-    extension [Self <: IsImportant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsImportant] (val x: Self) extends AnyVal {
       
       inline def setIsImportant(value: Boolean): Self = StObject.set(x, "isImportant", value.asInstanceOf[js.Any])
       

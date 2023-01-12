@@ -23,7 +23,8 @@ object ListBudgetsForResourceOutput {
     __obj.asInstanceOf[ListBudgetsForResourceOutput]
   }
   
-  extension [Self <: ListBudgetsForResourceOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBudgetsForResourceOutput] (val x: Self) extends AnyVal {
     
     inline def setBudgets(value: Budgets): Self = StObject.set(x, "Budgets", value.asInstanceOf[js.Any])
     

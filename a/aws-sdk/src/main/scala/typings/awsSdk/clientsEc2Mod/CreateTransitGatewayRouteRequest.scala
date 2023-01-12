@@ -38,7 +38,8 @@ object CreateTransitGatewayRouteRequest {
     __obj.asInstanceOf[CreateTransitGatewayRouteRequest]
   }
   
-  extension [Self <: CreateTransitGatewayRouteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTransitGatewayRouteRequest] (val x: Self) extends AnyVal {
     
     inline def setBlackhole(value: Boolean): Self = StObject.set(x, "Blackhole", value.asInstanceOf[js.Any])
     

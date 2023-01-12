@@ -33,7 +33,8 @@ object CreateBackupVaultInput {
     __obj.asInstanceOf[CreateBackupVaultInput]
   }
   
-  extension [Self <: CreateBackupVaultInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBackupVaultInput] (val x: Self) extends AnyVal {
     
     inline def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
     

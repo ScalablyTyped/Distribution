@@ -164,7 +164,8 @@ object distCompileMod {
       __obj.asInstanceOf[SchemaCxt]
     }
     
-    extension [Self <: SchemaCxt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaCxt] (val x: Self) extends AnyVal {
       
       inline def setAllErrors(value: Boolean): Self = StObject.set(x, "allErrors", value.asInstanceOf[js.Any])
       
@@ -277,7 +278,8 @@ object distCompileMod {
       __obj.asInstanceOf[SchemaEnvArgs]
     }
     
-    extension [Self <: SchemaEnvArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaEnvArgs] (val x: Self) extends AnyVal {
       
       inline def setBaseId(value: String): Self = StObject.set(x, "baseId", value.asInstanceOf[js.Any])
       
@@ -342,7 +344,8 @@ object distCompileMod {
       __obj.asInstanceOf[SchemaObjCxt]
     }
     
-    extension [Self <: SchemaObjCxt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaObjCxt] (val x: Self) extends AnyVal {
       
       inline def setSchema(value: AnySchemaObject): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     }

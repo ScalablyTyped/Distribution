@@ -18,7 +18,8 @@ object CreateIpGroupResult {
     __obj.asInstanceOf[CreateIpGroupResult]
   }
   
-  extension [Self <: CreateIpGroupResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateIpGroupResult] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: IpGroupId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     

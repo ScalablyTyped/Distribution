@@ -28,7 +28,8 @@ object ExtensibleObject {
     __obj.asInstanceOf[ExtensibleObject]
   }
   
-  extension [Self <: ExtensibleObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensibleObject] (val x: Self) extends AnyVal {
     
     inline def set$as(value: KnownWebTarget): Self = StObject.set(x, "$as", value.asInstanceOf[js.Any])
     

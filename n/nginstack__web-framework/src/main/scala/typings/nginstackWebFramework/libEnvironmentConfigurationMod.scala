@@ -47,7 +47,8 @@ object libEnvironmentConfigurationMod {
       __obj.asInstanceOf[Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def setIsNewJS(value: Boolean): Self = StObject.set(x, "isNewJS", value.asInstanceOf[js.Any])
       

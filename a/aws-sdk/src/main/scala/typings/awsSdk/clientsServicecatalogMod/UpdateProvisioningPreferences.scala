@@ -48,7 +48,8 @@ object UpdateProvisioningPreferences {
     __obj.asInstanceOf[UpdateProvisioningPreferences]
   }
   
-  extension [Self <: UpdateProvisioningPreferences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateProvisioningPreferences] (val x: Self) extends AnyVal {
     
     inline def setStackSetAccounts(value: StackSetAccounts): Self = StObject.set(x, "StackSetAccounts", value.asInstanceOf[js.Any])
     

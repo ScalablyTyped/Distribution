@@ -38,7 +38,8 @@ object Story {
     __obj.asInstanceOf[Story[TFramework]]
   }
   
-  extension [Self <: Story[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](x: Self & Story[TFramework]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Story[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] (val x: Self & Story[TFramework]) extends AnyVal {
     
     inline def setApplyLoaders(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryContextForLoaders<TFramework> */ Any => js.Promise[

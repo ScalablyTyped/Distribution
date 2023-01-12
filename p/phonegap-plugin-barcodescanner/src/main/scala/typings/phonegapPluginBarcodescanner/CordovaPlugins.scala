@@ -16,7 +16,8 @@ object CordovaPlugins {
     __obj.asInstanceOf[CordovaPlugins]
   }
   
-  extension [Self <: CordovaPlugins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CordovaPlugins] (val x: Self) extends AnyVal {
     
     inline def setBarcodeScanner(value: BarcodeScanner): Self = StObject.set(x, "barcodeScanner", value.asInstanceOf[js.Any])
   }

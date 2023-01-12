@@ -95,7 +95,8 @@ object Request {
     __obj.asInstanceOf[Request]
   }
   
-  extension [Self <: Request](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
     
     inline def setHasPostData(value: Boolean): Self = StObject.set(x, "hasPostData", value.asInstanceOf[js.Any])
     

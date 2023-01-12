@@ -28,7 +28,8 @@ object distClientModelsSuppressionsSuppressionMod {
       __obj.asInstanceOf[Suppression]
     }
     
-    extension [Self <: Suppression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Suppression] (val x: Self) extends AnyVal {
       
       inline def setCreatedAt(value: String): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object distClientModelsSuppressionsSuppressionMod {
       __obj.asInstanceOf[SuppressionEntries]
     }
     
-    extension [Self <: SuppressionEntries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuppressionEntries] (val x: Self) extends AnyVal {
       
       inline def setSuppressions(value: js.Array[EmailAddress]): Self = StObject.set(x, "Suppressions", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object distClientModelsSuppressionsSuppressionMod {
       __obj.asInstanceOf[SuppressionStatus]
     }
     
-    extension [Self <: SuppressionStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuppressionStatus] (val x: Self) extends AnyVal {
       
       inline def setEmailAddress(value: String): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
       
@@ -95,7 +98,8 @@ object distClientModelsSuppressionsSuppressionMod {
       __obj.asInstanceOf[SuppressionStatuses]
     }
     
-    extension [Self <: SuppressionStatuses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuppressionStatuses] (val x: Self) extends AnyVal {
       
       inline def setSuppressions(value: js.Array[SuppressionStatus]): Self = StObject.set(x, "Suppressions", value.asInstanceOf[js.Any])
       
@@ -114,7 +118,8 @@ object distClientModelsSuppressionsSuppressionMod {
       __obj.asInstanceOf[Suppressions]
     }
     
-    extension [Self <: Suppressions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Suppressions] (val x: Self) extends AnyVal {
       
       inline def setSuppressions(value: js.Array[Suppression]): Self = StObject.set(x, "Suppressions", value.asInstanceOf[js.Any])
       

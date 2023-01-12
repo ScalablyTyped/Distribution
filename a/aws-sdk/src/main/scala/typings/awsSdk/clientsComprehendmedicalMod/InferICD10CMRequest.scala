@@ -18,7 +18,8 @@ object InferICD10CMRequest {
     __obj.asInstanceOf[InferICD10CMRequest]
   }
   
-  extension [Self <: InferICD10CMRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferICD10CMRequest] (val x: Self) extends AnyVal {
     
     inline def setText(value: OntologyLinkingBoundedLengthString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }

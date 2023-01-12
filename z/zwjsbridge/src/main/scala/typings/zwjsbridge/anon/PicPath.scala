@@ -19,7 +19,8 @@ object PicPath {
     __obj.asInstanceOf[PicPath]
   }
   
-  extension [Self <: PicPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PicPath] (val x: Self) extends AnyVal {
     
     inline def setPicPath(value: js.Array[String]): Self = StObject.set(x, "picPath", value.asInstanceOf[js.Any])
     

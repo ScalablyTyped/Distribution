@@ -33,7 +33,8 @@ object distTypesCrosshairMod {
       __obj.asInstanceOf[CrosshairProps]
     }
     
-    extension [Self <: CrosshairProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrosshairProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

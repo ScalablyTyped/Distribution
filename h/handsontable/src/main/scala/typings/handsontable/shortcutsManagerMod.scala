@@ -35,7 +35,8 @@ object shortcutsManagerMod {
       __obj.asInstanceOf[ShortcutManager]
     }
     
-    extension [Self <: ShortcutManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShortcutManager] (val x: Self) extends AnyVal {
       
       inline def setAddContext(value: String => Context): Self = StObject.set(x, "addContext", js.Any.fromFunction1(value))
       

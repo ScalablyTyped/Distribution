@@ -19,7 +19,8 @@ object ReturnTypeGetSharedStorageEntriesResponse {
     __obj.asInstanceOf[ReturnTypeGetSharedStorageEntriesResponse]
   }
   
-  extension [Self <: ReturnTypeGetSharedStorageEntriesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetSharedStorageEntriesResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetSharedStorageEntriesRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

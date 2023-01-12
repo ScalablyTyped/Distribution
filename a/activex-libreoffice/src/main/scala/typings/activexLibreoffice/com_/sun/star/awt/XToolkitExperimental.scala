@@ -76,7 +76,8 @@ object XToolkitExperimental {
     __obj.asInstanceOf[XToolkitExperimental]
   }
   
-  extension [Self <: XToolkitExperimental](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XToolkitExperimental] (val x: Self) extends AnyVal {
     
     inline def setGetOpenGLBufferSwapCounter(value: () => Double): Self = StObject.set(x, "getOpenGLBufferSwapCounter", js.Any.fromFunction0(value))
     

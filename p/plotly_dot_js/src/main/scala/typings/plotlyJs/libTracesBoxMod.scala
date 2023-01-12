@@ -324,7 +324,8 @@ object libTracesBoxMod {
       __obj.asInstanceOf[BoxPlotData]
     }
     
-    extension [Self <: BoxPlotData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxPlotData] (val x: Self) extends AnyVal {
       
       inline def setAlignmentgroup(value: String): Self = StObject.set(x, "alignmentgroup", value.asInstanceOf[js.Any])
       
@@ -376,7 +377,8 @@ object libTracesBoxMod {
       __obj.asInstanceOf[BoxPlotMarker]
     }
     
-    extension [Self <: BoxPlotMarker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxPlotMarker] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

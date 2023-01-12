@@ -34,7 +34,8 @@ object PixelSize {
     __obj.asInstanceOf[PixelSize]
   }
   
-  extension [Self <: PixelSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PixelSize] (val x: Self) extends AnyVal {
     
     inline def setSpatialReference(value: PixelSizeSpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     

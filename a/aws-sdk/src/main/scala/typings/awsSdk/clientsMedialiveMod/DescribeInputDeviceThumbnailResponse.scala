@@ -38,7 +38,8 @@ object DescribeInputDeviceThumbnailResponse {
     __obj.asInstanceOf[DescribeInputDeviceThumbnailResponse]
   }
   
-  extension [Self <: DescribeInputDeviceThumbnailResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInputDeviceThumbnailResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: InputDeviceThumbnail): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     

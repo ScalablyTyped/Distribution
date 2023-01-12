@@ -21,7 +21,8 @@ object Hidden {
     __obj.asInstanceOf[Hidden]
   }
   
-  extension [Self <: Hidden](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hidden] (val x: Self) extends AnyVal {
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     

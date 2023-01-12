@@ -25,7 +25,8 @@ object EKUsAsync {
     __obj.asInstanceOf[EKUsAsync]
   }
   
-  extension [Self <: EKUsAsync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EKUsAsync] (val x: Self) extends AnyVal {
     
     inline def setCount(
       value: /* import warning: importer.ImportType#apply Failed type conversion: number extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<number> : // tslint:disable-line ban-types

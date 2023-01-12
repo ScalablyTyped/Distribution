@@ -32,7 +32,8 @@ object PartialGaugeBgcolor {
     __obj.asInstanceOf[PartialGaugeBgcolor]
   }
   
-  extension [Self <: PartialGaugeBgcolor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialGaugeBgcolor] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: PartialAxisAutorange): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

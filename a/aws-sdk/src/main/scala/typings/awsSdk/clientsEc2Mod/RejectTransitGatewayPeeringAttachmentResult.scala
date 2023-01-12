@@ -18,7 +18,8 @@ object RejectTransitGatewayPeeringAttachmentResult {
     __obj.asInstanceOf[RejectTransitGatewayPeeringAttachmentResult]
   }
   
-  extension [Self <: RejectTransitGatewayPeeringAttachmentResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RejectTransitGatewayPeeringAttachmentResult] (val x: Self) extends AnyVal {
     
     inline def setTransitGatewayPeeringAttachment(value: TransitGatewayPeeringAttachment): Self = StObject.set(x, "TransitGatewayPeeringAttachment", value.asInstanceOf[js.Any])
     

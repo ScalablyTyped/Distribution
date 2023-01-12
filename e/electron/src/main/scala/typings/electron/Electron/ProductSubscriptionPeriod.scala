@@ -29,7 +29,8 @@ object ProductSubscriptionPeriod {
     __obj.asInstanceOf[ProductSubscriptionPeriod]
   }
   
-  extension [Self <: ProductSubscriptionPeriod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductSubscriptionPeriod] (val x: Self) extends AnyVal {
     
     inline def setNumberOfUnits(value: Double): Self = StObject.set(x, "numberOfUnits", value.asInstanceOf[js.Any])
     

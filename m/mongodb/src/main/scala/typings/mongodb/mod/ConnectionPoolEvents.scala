@@ -79,7 +79,8 @@ object ConnectionPoolEvents {
     __obj.asInstanceOf[ConnectionPoolEvents]
   }
   
-  extension [Self <: ConnectionPoolEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionPoolEvents] (val x: Self) extends AnyVal {
     
     inline def setClusterTimeReceived(value: /* clusterTime */ Document => Unit): Self = StObject.set(x, "clusterTimeReceived", js.Any.fromFunction1(value))
     

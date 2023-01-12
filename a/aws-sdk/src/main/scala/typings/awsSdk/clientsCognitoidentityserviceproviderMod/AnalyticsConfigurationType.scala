@@ -38,7 +38,8 @@ object AnalyticsConfigurationType {
     __obj.asInstanceOf[AnalyticsConfigurationType]
   }
   
-  extension [Self <: AnalyticsConfigurationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyticsConfigurationType] (val x: Self) extends AnyVal {
     
     inline def setApplicationArn(value: ArnType): Self = StObject.set(x, "ApplicationArn", value.asInstanceOf[js.Any])
     

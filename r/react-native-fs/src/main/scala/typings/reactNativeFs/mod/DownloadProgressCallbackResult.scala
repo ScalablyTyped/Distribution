@@ -21,7 +21,8 @@ object DownloadProgressCallbackResult {
     __obj.asInstanceOf[DownloadProgressCallbackResult]
   }
   
-  extension [Self <: DownloadProgressCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadProgressCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
     

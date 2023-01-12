@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Dictx]
     }
     
-    extension [Self <: Dictx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictx] (val x: Self) extends AnyVal {
       
       inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
       
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Expand]
     }
     
-    extension [Self <: Expand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expand] (val x: Self) extends AnyVal {
       
       inline def setExpand(value: js.Object => String): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
     }

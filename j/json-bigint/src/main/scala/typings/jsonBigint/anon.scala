@@ -75,7 +75,8 @@ object anon {
       __obj.asInstanceOf[Stringify]
     }
     
-    extension [Self <: Stringify](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stringify] (val x: Self) extends AnyVal {
       
       inline def setParse(value: FnCall): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
       

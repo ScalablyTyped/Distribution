@@ -79,7 +79,8 @@ object PickImplonApprovePartialP {
     __obj.asInstanceOf[PickImplonApprovePartialP]
   }
   
-  extension [Self <: PickImplonApprovePartialP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplonApprovePartialP] (val x: Self) extends AnyVal {
     
     inline def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
     

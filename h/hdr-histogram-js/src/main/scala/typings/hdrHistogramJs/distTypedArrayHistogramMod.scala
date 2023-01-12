@@ -37,7 +37,8 @@ object distTypedArrayHistogramMod {
       __obj.asInstanceOf[TypedArray]
     }
     
-    extension [Self <: TypedArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypedArray] (val x: Self) extends AnyVal {
       
       inline def setBYTES_PER_ELEMENT(value: Double): Self = StObject.set(x, "BYTES_PER_ELEMENT", value.asInstanceOf[js.Any])
       

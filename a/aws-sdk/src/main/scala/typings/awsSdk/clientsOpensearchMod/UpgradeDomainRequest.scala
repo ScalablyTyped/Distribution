@@ -33,7 +33,8 @@ object UpgradeDomainRequest {
     __obj.asInstanceOf[UpgradeDomainRequest]
   }
   
-  extension [Self <: UpgradeDomainRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpgradeDomainRequest] (val x: Self) extends AnyVal {
     
     inline def setAdvancedOptions(value: AdvancedOptions): Self = StObject.set(x, "AdvancedOptions", value.asInstanceOf[js.Any])
     

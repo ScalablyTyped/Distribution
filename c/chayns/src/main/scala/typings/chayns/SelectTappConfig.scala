@@ -22,7 +22,8 @@ object SelectTappConfig {
     __obj.asInstanceOf[SelectTappConfig]
   }
   
-  extension [Self <: SelectTappConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectTappConfig] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

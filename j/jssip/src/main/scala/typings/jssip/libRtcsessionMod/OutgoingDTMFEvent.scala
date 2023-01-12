@@ -21,7 +21,8 @@ object OutgoingDTMFEvent {
     __obj.asInstanceOf[OutgoingDTMFEvent]
   }
   
-  extension [Self <: OutgoingDTMFEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutgoingDTMFEvent] (val x: Self) extends AnyVal {
     
     inline def setDtmf(value: DTMF): Self = StObject.set(x, "dtmf", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetClassifiersRequest {
     __obj.asInstanceOf[GetClassifiersRequest]
   }
   
-  extension [Self <: GetClassifiersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetClassifiersRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

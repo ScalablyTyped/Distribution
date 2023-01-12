@@ -659,7 +659,8 @@ object OmitSearchActionset {
     __obj.asInstanceOf[OmitSearchActionset]
   }
   
-  extension [Self <: OmitSearchActionset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitSearchActionset] (val x: Self) extends AnyVal {
     
     inline def set$getProperty(value: /* name */ String => Any): Self = StObject.set(x, "$getProperty", js.Any.fromFunction1(value))
     

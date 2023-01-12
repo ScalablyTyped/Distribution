@@ -23,7 +23,8 @@ object EntryPointReference {
     __obj.asInstanceOf[EntryPointReference[TPreloadedEntryPoint]]
   }
   
-  extension [Self <: EntryPointReference[?], TPreloadedEntryPoint /* <: PreloadedEntryPoint[Any] */](x: Self & EntryPointReference[TPreloadedEntryPoint]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntryPointReference[?], TPreloadedEntryPoint /* <: PreloadedEntryPoint[Any] */] (val x: Self & EntryPointReference[TPreloadedEntryPoint]) extends AnyVal {
     
     inline def setEntryPointReference(value: TPreloadedEntryPoint): Self = StObject.set(x, "entryPointReference", value.asInstanceOf[js.Any])
     

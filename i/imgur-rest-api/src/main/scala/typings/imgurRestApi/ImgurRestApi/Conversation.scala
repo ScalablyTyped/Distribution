@@ -38,7 +38,8 @@ object Conversation {
     __obj.asInstanceOf[Conversation]
   }
   
-  extension [Self <: Conversation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conversation] (val x: Self) extends AnyVal {
     
     inline def setDatetime(value: Double): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
     

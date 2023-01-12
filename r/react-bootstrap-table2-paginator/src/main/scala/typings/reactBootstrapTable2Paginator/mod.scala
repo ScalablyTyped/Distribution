@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[PaginationChildProps]
     }
     
-    extension [Self <: PaginationChildProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationChildProps] (val x: Self) extends AnyVal {
       
       inline def setBootstrap4(value: Boolean): Self = StObject.set(x, "bootstrap4", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object mod {
       __obj.asInstanceOf[PaginationCtxOptions]
     }
     
-    extension [Self <: PaginationCtxOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationCtxOptions] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: PaginationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object mod {
       __obj.asInstanceOf[SizePerPageDropdownStandaloneProps]
     }
     
-    extension [Self <: SizePerPageDropdownStandaloneProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizePerPageDropdownStandaloneProps] (val x: Self) extends AnyVal {
       
       inline def setBtnContextual(value: Boolean): Self = StObject.set(x, "btnContextual", value.asInstanceOf[js.Any])
       

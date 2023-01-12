@@ -106,7 +106,8 @@ object IEditor {
     __obj.asInstanceOf[IEditor]
   }
   
-  extension [Self <: IEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditor] (val x: Self) extends AnyVal {
     
     inline def setAfterRender(value: (/* ct */ js.UndefOr[Any], /* position */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "afterRender", js.Any.fromFunction2(value))
     

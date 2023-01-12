@@ -92,7 +92,8 @@ object RenewAuthOptions {
     __obj.asInstanceOf[RenewAuthOptions]
   }
   
-  extension [Self <: RenewAuthOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenewAuthOptions] (val x: Self) extends AnyVal {
     
     inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     

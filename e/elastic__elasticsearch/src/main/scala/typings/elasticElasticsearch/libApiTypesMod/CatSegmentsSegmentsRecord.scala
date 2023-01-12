@@ -94,7 +94,8 @@ object CatSegmentsSegmentsRecord {
     __obj.asInstanceOf[CatSegmentsSegmentsRecord]
   }
   
-  extension [Self <: CatSegmentsSegmentsRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatSegmentsSegmentsRecord] (val x: Self) extends AnyVal {
     
     inline def setCommitted(value: String): Self = StObject.set(x, "committed", value.asInstanceOf[js.Any])
     

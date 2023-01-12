@@ -114,7 +114,8 @@ object BackgroundAudioManager {
     __obj.asInstanceOf[BackgroundAudioManager]
   }
   
-  extension [Self <: BackgroundAudioManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundAudioManager] (val x: Self) extends AnyVal {
     
     inline def setBuffered(value: Double): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
     

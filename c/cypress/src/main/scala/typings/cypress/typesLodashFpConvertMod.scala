@@ -39,7 +39,8 @@ object typesLodashFpConvertMod extends Shortcut {
       __obj.asInstanceOf[ConvertOptions]
     }
     
-    extension [Self <: ConvertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvertOptions] (val x: Self) extends AnyVal {
       
       inline def setCap(value: Boolean): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
       

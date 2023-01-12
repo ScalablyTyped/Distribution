@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: StringDictionary[Any]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Extensions]
     }
     
-    extension [Self <: Extensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extensions] (val x: Self) extends AnyVal {
       
       inline def setExtensions(value: Dictkey): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
@@ -177,7 +179,8 @@ object anon {
       __obj.asInstanceOf[OmitSessionContextstarted]
     }
     
-    extension [Self <: OmitSessionContextstarted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitSessionContextstarted] (val x: Self) extends AnyVal {
       
       inline def setDid(value: String): Self = StObject.set(x, "did", value.asInstanceOf[js.Any])
       

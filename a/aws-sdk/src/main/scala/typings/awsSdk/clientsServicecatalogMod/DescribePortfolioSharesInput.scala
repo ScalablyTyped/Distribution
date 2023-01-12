@@ -33,7 +33,8 @@ object DescribePortfolioSharesInput {
     __obj.asInstanceOf[DescribePortfolioSharesInput]
   }
   
-  extension [Self <: DescribePortfolioSharesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePortfolioSharesInput] (val x: Self) extends AnyVal {
     
     inline def setPageSize(value: PageSizeMax100): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     

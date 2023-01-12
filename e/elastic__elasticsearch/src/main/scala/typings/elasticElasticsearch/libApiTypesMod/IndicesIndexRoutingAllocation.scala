@@ -21,7 +21,8 @@ object IndicesIndexRoutingAllocation {
     __obj.asInstanceOf[IndicesIndexRoutingAllocation]
   }
   
-  extension [Self <: IndicesIndexRoutingAllocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesIndexRoutingAllocation] (val x: Self) extends AnyVal {
     
     inline def setDisk(value: IndicesIndexRoutingAllocationDisk): Self = StObject.set(x, "disk", value.asInstanceOf[js.Any])
     

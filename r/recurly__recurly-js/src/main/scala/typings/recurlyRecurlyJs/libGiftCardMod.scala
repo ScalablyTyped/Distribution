@@ -22,7 +22,8 @@ object libGiftCardMod {
       __obj.asInstanceOf[GiftCardOptions]
     }
     
-    extension [Self <: GiftCardOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GiftCardOptions] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
@@ -41,7 +42,8 @@ object libGiftCardMod {
       __obj.asInstanceOf[GiftCardResult]
     }
     
-    extension [Self <: GiftCardResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GiftCardResult] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       

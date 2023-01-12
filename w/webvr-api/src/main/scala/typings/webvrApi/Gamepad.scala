@@ -15,7 +15,8 @@ object Gamepad {
     __obj.asInstanceOf[Gamepad]
   }
   
-  extension [Self <: Gamepad](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gamepad] (val x: Self) extends AnyVal {
     
     inline def setDisplayId(value: Double): Self = StObject.set(x, "displayId", value.asInstanceOf[js.Any])
   }

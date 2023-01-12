@@ -50,7 +50,8 @@ object CurrentLoadCpuData {
     __obj.asInstanceOf[CurrentLoadCpuData]
   }
   
-  extension [Self <: CurrentLoadCpuData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentLoadCpuData] (val x: Self) extends AnyVal {
     
     inline def setLoad(value: Double): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     

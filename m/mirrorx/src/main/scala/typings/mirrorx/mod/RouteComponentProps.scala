@@ -28,7 +28,8 @@ object RouteComponentProps {
     __obj.asInstanceOf[RouteComponentProps[Params]]
   }
   
-  extension [Self <: RouteComponentProps[?], Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */](x: Self & RouteComponentProps[Params]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteComponentProps[?], Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */] (val x: Self & RouteComponentProps[Params]) extends AnyVal {
     
     inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     

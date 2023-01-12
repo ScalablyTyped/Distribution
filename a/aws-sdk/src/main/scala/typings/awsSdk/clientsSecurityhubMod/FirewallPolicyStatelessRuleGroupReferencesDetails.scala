@@ -23,7 +23,8 @@ object FirewallPolicyStatelessRuleGroupReferencesDetails {
     __obj.asInstanceOf[FirewallPolicyStatelessRuleGroupReferencesDetails]
   }
   
-  extension [Self <: FirewallPolicyStatelessRuleGroupReferencesDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirewallPolicyStatelessRuleGroupReferencesDetails] (val x: Self) extends AnyVal {
     
     inline def setPriority(value: Integer): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     

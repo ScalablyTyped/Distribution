@@ -20,7 +20,8 @@ object Parameters472Responses200ContentApplicationjsonCanapprovepullrequestrevie
     __obj.asInstanceOf[Parameters472Responses200ContentApplicationjsonCanapprovepullrequestreviewsDefaultworkflowpermissions]
   }
   
-  extension [Self <: Parameters472Responses200ContentApplicationjsonCanapprovepullrequestreviewsDefaultworkflowpermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parameters472Responses200ContentApplicationjsonCanapprovepullrequestreviewsDefaultworkflowpermissions] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: `472`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

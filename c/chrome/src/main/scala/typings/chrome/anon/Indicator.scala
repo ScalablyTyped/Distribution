@@ -27,7 +27,8 @@ object Indicator {
     __obj.asInstanceOf[Indicator]
   }
   
-  extension [Self <: Indicator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Indicator] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -168,7 +168,8 @@ object dependenciesTextBufferSrcDisplayMarkerLayerMod {
       __obj.asInstanceOf[FindDisplayMarkerOptions]
     }
     
-    extension [Self <: FindDisplayMarkerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindDisplayMarkerOptions] (val x: Self) extends AnyVal {
       
       inline def setContainedInBufferRange(value: RangeCompatible): Self = StObject.set(x, "containedInBufferRange", value.asInstanceOf[js.Any])
       

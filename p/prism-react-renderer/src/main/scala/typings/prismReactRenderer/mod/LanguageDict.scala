@@ -112,7 +112,8 @@ object LanguageDict {
     __obj.asInstanceOf[LanguageDict]
   }
   
-  extension [Self <: LanguageDict](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageDict] (val x: Self) extends AnyVal {
     
     inline def setActionscript(value: PrismGrammar): Self = StObject.set(x, "actionscript", value.asInstanceOf[js.Any])
     

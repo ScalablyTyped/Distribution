@@ -18,7 +18,8 @@ object Repair {
     __obj.asInstanceOf[Repair]
   }
   
-  extension [Self <: Repair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Repair] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: `1.8`): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

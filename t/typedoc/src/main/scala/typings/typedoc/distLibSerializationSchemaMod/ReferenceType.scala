@@ -31,7 +31,8 @@ object ReferenceType {
     __obj.asInstanceOf[ReferenceType]
   }
   
-  extension [Self <: ReferenceType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceType] (val x: Self) extends AnyVal {
     
     inline def setExternalUrl(value: ToSerialized[js.UndefOr[String]]): Self = StObject.set(x, "externalUrl", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object SelectionWrapper {
     __obj.asInstanceOf[SelectionWrapper]
   }
   
-  extension [Self <: SelectionWrapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionWrapper] (val x: Self) extends AnyVal {
     
     inline def setExecCommand(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "execCommand", js.Any.fromFunction2(value))
     

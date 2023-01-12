@@ -31,7 +31,8 @@ object DropshadowSettings {
     __obj.asInstanceOf[DropshadowSettings]
   }
   
-  extension [Self <: DropshadowSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropshadowSettings] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

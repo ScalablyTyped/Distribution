@@ -45,7 +45,8 @@ object libPreviewGroupMod extends Shortcut {
       __obj.asInstanceOf[GroupConsumerProps]
     }
     
-    extension [Self <: GroupConsumerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupConsumerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object libPreviewGroupMod extends Shortcut {
       __obj.asInstanceOf[PreviewGroupPreview]
     }
     
-    extension [Self <: PreviewGroupPreview](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviewGroupPreview] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -329,7 +331,8 @@ object libPreviewGroupMod extends Shortcut {
       __obj.asInstanceOf[PreviewUrl]
     }
     
-    extension [Self <: PreviewUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviewUrl] (val x: Self) extends AnyVal {
       
       inline def setCanPreview(value: Boolean): Self = StObject.set(x, "canPreview", value.asInstanceOf[js.Any])
       

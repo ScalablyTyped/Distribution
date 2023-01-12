@@ -23,7 +23,8 @@ object SchedulerMessagesRecurrenceEditorOffsetPositions {
     __obj.asInstanceOf[SchedulerMessagesRecurrenceEditorOffsetPositions]
   }
   
-  extension [Self <: SchedulerMessagesRecurrenceEditorOffsetPositions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerMessagesRecurrenceEditorOffsetPositions] (val x: Self) extends AnyVal {
     
     inline def setFirst(value: String): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     

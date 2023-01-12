@@ -20,7 +20,8 @@ object I18nRegionSnippet {
     __obj.asInstanceOf[I18nRegionSnippet]
   }
   
-  extension [Self <: I18nRegionSnippet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: I18nRegionSnippet] (val x: Self) extends AnyVal {
     
     inline def setGl(value: String): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
     

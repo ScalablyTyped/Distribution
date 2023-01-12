@@ -36,7 +36,8 @@ object componentsRoutedButtonMod {
       __obj.asInstanceOf[RoutedButtonProps]
     }
     
-    extension [Self <: RoutedButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoutedButtonProps] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: push | replace): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object Selectedactionsurl {
     __obj.asInstanceOf[Selectedactionsurl]
   }
   
-  extension [Self <: Selectedactionsurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Selectedactionsurl] (val x: Self) extends AnyVal {
     
     inline def setAllowed_actions(value: all | local_only | selected): Self = StObject.set(x, "allowed_actions", value.asInstanceOf[js.Any])
     

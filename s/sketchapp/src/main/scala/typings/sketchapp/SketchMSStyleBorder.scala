@@ -38,7 +38,8 @@ object SketchMSStyleBorder {
     __obj.asInstanceOf[SketchMSStyleBorder]
   }
   
-  extension [Self <: SketchMSStyleBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSStyleBorder] (val x: Self) extends AnyVal {
     
     inline def setColor(value: SketchMSColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

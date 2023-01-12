@@ -25,7 +25,8 @@ object mod {
       __obj.asInstanceOf[AuthBaseConfig[OwnProps, State]]
     }
     
-    extension [Self <: AuthBaseConfig[?, ?], OwnProps, State](x: Self & (AuthBaseConfig[OwnProps, State])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthBaseConfig[?, ?], OwnProps, State] (val x: Self & (AuthBaseConfig[OwnProps, State])) extends AnyVal {
       
       inline def setAuthenticatedSelector(value: (State, OwnProps) => Boolean): Self = StObject.set(x, "authenticatedSelector", js.Any.fromFunction2(value))
       
@@ -48,7 +49,8 @@ object mod {
       __obj.asInstanceOf[AuthConfig]
     }
     
-    extension [Self <: AuthConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthConfig] (val x: Self) extends AnyVal {
       
       inline def setAuthenticatingComponent(value: ElementType[Any]): Self = StObject.set(x, "AuthenticatingComponent", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object JobStatistics4 {
     __obj.asInstanceOf[JobStatistics4]
   }
   
-  extension [Self <: JobStatistics4](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobStatistics4] (val x: Self) extends AnyVal {
     
     inline def setDestinationUriFileCounts(value: js.Array[String]): Self = StObject.set(x, "destinationUriFileCounts", value.asInstanceOf[js.Any])
     

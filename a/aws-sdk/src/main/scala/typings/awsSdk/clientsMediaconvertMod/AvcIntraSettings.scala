@@ -63,7 +63,8 @@ object AvcIntraSettings {
     __obj.asInstanceOf[AvcIntraSettings]
   }
   
-  extension [Self <: AvcIntraSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvcIntraSettings] (val x: Self) extends AnyVal {
     
     inline def setAvcIntraClass(value: AvcIntraClass): Self = StObject.set(x, "AvcIntraClass", value.asInstanceOf[js.Any])
     

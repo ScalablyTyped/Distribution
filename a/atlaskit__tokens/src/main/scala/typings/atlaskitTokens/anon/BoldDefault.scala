@@ -15,7 +15,8 @@ object BoldDefault {
     __obj.asInstanceOf[BoldDefault]
   }
   
-  extension [Self <: BoldDefault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoldDefault] (val x: Self) extends AnyVal {
     
     inline def setBold(value: Default): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
   }

@@ -62,7 +62,8 @@ object ILink {
     __obj.asInstanceOf[ILink]
   }
   
-  extension [Self <: ILink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILink] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: (MouseEvent, String) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
     

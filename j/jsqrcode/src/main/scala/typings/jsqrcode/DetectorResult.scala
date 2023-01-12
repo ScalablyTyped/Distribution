@@ -20,7 +20,8 @@ object DetectorResult {
     __obj.asInstanceOf[DetectorResult]
   }
   
-  extension [Self <: DetectorResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectorResult] (val x: Self) extends AnyVal {
     
     inline def setBits(value: BitMatrix): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
     

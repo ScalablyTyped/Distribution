@@ -29,7 +29,8 @@ object libPromptsMod {
       __obj.asInstanceOf[CreateOnFallbackOptions]
     }
     
-    extension [Self <: CreateOnFallbackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOnFallbackOptions] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: IonicEnvironmentFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       

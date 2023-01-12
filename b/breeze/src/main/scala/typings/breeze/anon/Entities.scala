@@ -20,7 +20,8 @@ object Entities {
     __obj.asInstanceOf[Entities]
   }
   
-  extension [Self <: Entities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Entities] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: js.Array[Entity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     

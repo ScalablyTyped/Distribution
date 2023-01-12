@@ -71,7 +71,8 @@ object Query {
     __obj.asInstanceOf[Query]
   }
   
-  extension [Self <: Query](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
     
     inline def setAccountInfo(value: AccountInfo): Self = StObject.set(x, "accountInfo", value.asInstanceOf[js.Any])
     

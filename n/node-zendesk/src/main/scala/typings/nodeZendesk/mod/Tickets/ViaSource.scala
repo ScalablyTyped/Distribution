@@ -19,7 +19,8 @@ object ViaSource {
     __obj.asInstanceOf[ViaSource]
   }
   
-  extension [Self <: ViaSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViaSource] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: js.Object): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ModifySelfservicePermissionsRequest {
     __obj.asInstanceOf[ModifySelfservicePermissionsRequest]
   }
   
-  extension [Self <: ModifySelfservicePermissionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifySelfservicePermissionsRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: DirectoryId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     

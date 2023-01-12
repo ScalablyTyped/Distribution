@@ -85,7 +85,8 @@ object libOptionsMod {
       __obj.asInstanceOf[FormatOptionNameOptions]
     }
     
-    extension [Self <: FormatOptionNameOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatOptionNameOptions] (val x: Self) extends AnyVal {
       
       inline def setColors(value: Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object libOptionsMod {
       __obj.asInstanceOf[HydratedOptionSpec]
     }
     
-    extension [Self <: HydratedOptionSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HydratedOptionSpec] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -137,7 +139,8 @@ object libOptionsMod {
       __obj.asInstanceOf[UnparseArgsOptions]
     }
     
-    extension [Self <: UnparseArgsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnparseArgsOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowCamelCase(value: Boolean): Self = StObject.set(x, "allowCamelCase", value.asInstanceOf[js.Any])
       

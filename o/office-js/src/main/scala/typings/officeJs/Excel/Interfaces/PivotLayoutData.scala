@@ -129,7 +129,8 @@ object PivotLayoutData {
     __obj.asInstanceOf[PivotLayoutData]
   }
   
-  extension [Self <: PivotLayoutData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotLayoutData] (val x: Self) extends AnyVal {
     
     inline def setAltTextDescription(value: String): Self = StObject.set(x, "altTextDescription", value.asInstanceOf[js.Any])
     

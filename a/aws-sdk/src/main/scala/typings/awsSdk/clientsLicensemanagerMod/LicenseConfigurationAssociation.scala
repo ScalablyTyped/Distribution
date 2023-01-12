@@ -38,7 +38,8 @@ object LicenseConfigurationAssociation {
     __obj.asInstanceOf[LicenseConfigurationAssociation]
   }
   
-  extension [Self <: LicenseConfigurationAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LicenseConfigurationAssociation] (val x: Self) extends AnyVal {
     
     inline def setAmiAssociationScope(value: String): Self = StObject.set(x, "AmiAssociationScope", value.asInstanceOf[js.Any])
     

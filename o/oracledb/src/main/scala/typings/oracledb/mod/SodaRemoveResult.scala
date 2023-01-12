@@ -19,7 +19,8 @@ object SodaRemoveResult {
     __obj.asInstanceOf[SodaRemoveResult]
   }
   
-  extension [Self <: SodaRemoveResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SodaRemoveResult] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
   }

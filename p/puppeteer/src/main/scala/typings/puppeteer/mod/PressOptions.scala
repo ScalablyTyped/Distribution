@@ -23,7 +23,8 @@ object PressOptions {
     __obj.asInstanceOf[PressOptions]
   }
   
-  extension [Self <: PressOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PressOptions] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

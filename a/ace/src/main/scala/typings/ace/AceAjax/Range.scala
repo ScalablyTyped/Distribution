@@ -213,7 +213,8 @@ object Range {
     __obj.asInstanceOf[Range]
   }
   
-  extension [Self <: Range](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
     
     inline def setClipRows(value: (Double, Double) => Range): Self = StObject.set(x, "clipRows", js.Any.fromFunction2(value))
     

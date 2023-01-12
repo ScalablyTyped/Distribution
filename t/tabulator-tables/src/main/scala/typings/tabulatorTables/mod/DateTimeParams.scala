@@ -25,7 +25,8 @@ object DateTimeParams {
     __obj.asInstanceOf[DateTimeParams]
   }
   
-  extension [Self <: DateTimeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimeParams] (val x: Self) extends AnyVal {
     
     inline def setInputFormat(value: String): Self = StObject.set(x, "inputFormat", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object XAutoTextContainer {
     __obj.asInstanceOf[XAutoTextContainer]
   }
   
-  extension [Self <: XAutoTextContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAutoTextContainer] (val x: Self) extends AnyVal {
     
     inline def setInsertNewByName(value: String => XAutoTextGroup): Self = StObject.set(x, "insertNewByName", js.Any.fromFunction1(value))
     

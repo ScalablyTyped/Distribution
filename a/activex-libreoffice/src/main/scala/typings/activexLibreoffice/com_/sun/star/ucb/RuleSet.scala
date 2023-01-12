@@ -26,7 +26,8 @@ object RuleSet {
     __obj.asInstanceOf[RuleSet]
   }
   
-  extension [Self <: RuleSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleSet] (val x: Self) extends AnyVal {
     
     inline def setHandleFolder(value: Boolean): Self = StObject.set(x, "HandleFolder", value.asInstanceOf[js.Any])
     

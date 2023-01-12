@@ -19,7 +19,8 @@ object TransitionData {
     __obj.asInstanceOf[TransitionData[TContext, TEvent]]
   }
   
-  extension [Self <: TransitionData[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (TransitionData[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionData[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (TransitionData[TContext, TEvent])) extends AnyVal {
     
     inline def setActions(value: ActionMap[TContext, TEvent]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IdleDeadline {
     __obj.asInstanceOf[IdleDeadline]
   }
   
-  extension [Self <: IdleDeadline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdleDeadline] (val x: Self) extends AnyVal {
     
     inline def setDidTimeout(value: scala.Boolean): Self = StObject.set(x, "didTimeout", value.asInstanceOf[js.Any])
     

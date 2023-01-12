@@ -501,7 +501,8 @@ object buildEsmSocketMod {
       __obj.asInstanceOf[SocketOptions]
     }
     
-    extension [Self <: SocketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(
         value: StringDictionary[Any] | (js.Function1[/* cb */ js.Function1[/* data */ js.Object, Unit], Unit])

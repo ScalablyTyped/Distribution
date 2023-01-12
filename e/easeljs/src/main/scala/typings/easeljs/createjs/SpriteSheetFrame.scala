@@ -19,7 +19,8 @@ object SpriteSheetFrame {
     __obj.asInstanceOf[SpriteSheetFrame]
   }
   
-  extension [Self <: SpriteSheetFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpriteSheetFrame] (val x: Self) extends AnyVal {
     
     inline def setImage(value: HTMLImageElement): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

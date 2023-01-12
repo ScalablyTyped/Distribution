@@ -20,7 +20,8 @@ object IVaultExtensionMethodOperations {
     __obj.asInstanceOf[IVaultExtensionMethodOperations]
   }
   
-  extension [Self <: IVaultExtensionMethodOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultExtensionMethodOperations] (val x: Self) extends AnyVal {
     
     inline def setDoesActiveVaultExtensionMethodExist(value: String => Boolean): Self = StObject.set(x, "DoesActiveVaultExtensionMethodExist", js.Any.fromFunction1(value))
     

@@ -35,7 +35,8 @@ object GetTileLayer {
     __obj.asInstanceOf[GetTileLayer]
   }
   
-  extension [Self <: GetTileLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTileLayer] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: TileLayerEventKeys): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

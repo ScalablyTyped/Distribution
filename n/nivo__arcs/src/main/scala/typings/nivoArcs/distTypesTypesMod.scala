@@ -24,7 +24,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[Arc]
     }
     
-    extension [Self <: Arc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Arc] (val x: Self) extends AnyVal {
       
       inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[DatumWithArc]
     }
     
-    extension [Self <: DatumWithArc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatumWithArc] (val x: Self) extends AnyVal {
       
       inline def setArc(value: Arc): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[DatumWithArcAndColor]
     }
     
-    extension [Self <: DatumWithArcAndColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatumWithArcAndColor] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -97,7 +100,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

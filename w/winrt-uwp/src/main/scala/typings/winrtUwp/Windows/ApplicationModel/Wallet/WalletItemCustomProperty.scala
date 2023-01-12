@@ -35,7 +35,8 @@ object WalletItemCustomProperty {
     __obj.asInstanceOf[WalletItemCustomProperty]
   }
   
-  extension [Self <: WalletItemCustomProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WalletItemCustomProperty] (val x: Self) extends AnyVal {
     
     inline def setAutoDetectLinks(value: Boolean): Self = StObject.set(x, "autoDetectLinks", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object IFaxIncomingMessage {
     __obj.asInstanceOf[IFaxIncomingMessage]
   }
   
-  extension [Self <: IFaxIncomingMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFaxIncomingMessage] (val x: Self) extends AnyVal {
     
     inline def setCSID(value: String): Self = StObject.set(x, "CSID", value.asInstanceOf[js.Any])
     

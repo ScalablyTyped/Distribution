@@ -34,7 +34,8 @@ object TimeVariations {
     __obj.asInstanceOf[TimeVariations]
   }
   
-  extension [Self <: TimeVariations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeVariations] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

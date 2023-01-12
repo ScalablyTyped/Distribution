@@ -21,7 +21,8 @@ object WxGetFileInfoSuccessCallbackResult {
     __obj.asInstanceOf[WxGetFileInfoSuccessCallbackResult]
   }
   
-  extension [Self <: WxGetFileInfoSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WxGetFileInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     

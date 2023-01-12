@@ -23,7 +23,8 @@ object CreateBGPPeerRequest {
     __obj.asInstanceOf[CreateBGPPeerRequest]
   }
   
-  extension [Self <: CreateBGPPeerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBGPPeerRequest] (val x: Self) extends AnyVal {
     
     inline def setNewBGPPeer(value: NewBGPPeer): Self = StObject.set(x, "newBGPPeer", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object TwgslOptions {
     __obj.asInstanceOf[TwgslOptions]
   }
   
-  extension [Self <: TwgslOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TwgslOptions] (val x: Self) extends AnyVal {
     
     inline def setJsPath(value: String): Self = StObject.set(x, "jsPath", value.asInstanceOf[js.Any])
     

@@ -61,7 +61,8 @@ object InternalDomainFederation {
     __obj.asInstanceOf[InternalDomainFederation]
   }
   
-  extension [Self <: InternalDomainFederation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalDomainFederation] (val x: Self) extends AnyVal {
     
     inline def setActiveSignInUri(value: NullableOption[String]): Self = StObject.set(x, "activeSignInUri", value.asInstanceOf[js.Any])
     

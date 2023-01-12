@@ -35,7 +35,8 @@ object FlowScalartypealias {
     __obj.asInstanceOf[FlowScalartypealias]
   }
   
-  extension [Self <: FlowScalartypealias](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowScalartypealias] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: js.Array[SourceToken]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

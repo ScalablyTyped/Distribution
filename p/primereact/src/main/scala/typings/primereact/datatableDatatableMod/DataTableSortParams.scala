@@ -19,7 +19,8 @@ object DataTableSortParams {
     __obj.asInstanceOf[DataTableSortParams]
   }
   
-  extension [Self <: DataTableSortParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableSortParams] (val x: Self) extends AnyVal {
     
     inline def setMultiSortMeta(value: DataTableMultiSortMetaType): Self = StObject.set(x, "multiSortMeta", value.asInstanceOf[js.Any])
     

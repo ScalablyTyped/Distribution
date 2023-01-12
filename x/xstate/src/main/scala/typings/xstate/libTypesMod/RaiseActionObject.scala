@@ -19,7 +19,8 @@ object RaiseActionObject {
     __obj.asInstanceOf[RaiseActionObject[TEvent]]
   }
   
-  extension [Self <: RaiseActionObject[?], TEvent /* <: EventObject */](x: Self & RaiseActionObject[TEvent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaiseActionObject[?], TEvent /* <: EventObject */] (val x: Self & RaiseActionObject[TEvent]) extends AnyVal {
     
     inline def setType(value: Raise): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

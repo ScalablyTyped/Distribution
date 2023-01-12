@@ -28,7 +28,8 @@ object GoogleActionsV2PlaceValueSpecPlaceDialogSpec {
     __obj.asInstanceOf[GoogleActionsV2PlaceValueSpecPlaceDialogSpec]
   }
   
-  extension [Self <: GoogleActionsV2PlaceValueSpecPlaceDialogSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2PlaceValueSpecPlaceDialogSpec] (val x: Self) extends AnyVal {
     
     inline def setPermissionContext(value: String): Self = StObject.set(x, "permissionContext", value.asInstanceOf[js.Any])
     

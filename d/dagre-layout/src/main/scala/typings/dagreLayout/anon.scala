@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Compound]
     }
     
-    extension [Self <: Compound](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compound] (val x: Self) extends AnyVal {
       
       inline def setCompound(value: Boolean): Self = StObject.set(x, "compound", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

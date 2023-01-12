@@ -23,7 +23,8 @@ object DeleteStorageLensConfigurationRequest {
     __obj.asInstanceOf[DeleteStorageLensConfigurationRequest]
   }
   
-  extension [Self <: DeleteStorageLensConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteStorageLensConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object dxCircularGaugeRangeContainer {
     __obj.asInstanceOf[dxCircularGaugeRangeContainer]
   }
   
-  extension [Self <: dxCircularGaugeRangeContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxCircularGaugeRangeContainer] (val x: Self) extends AnyVal {
     
     inline def setOrientation(value: CircularGaugeElementOrientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     

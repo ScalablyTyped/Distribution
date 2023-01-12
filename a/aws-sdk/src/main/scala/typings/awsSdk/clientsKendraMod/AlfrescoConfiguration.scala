@@ -78,7 +78,8 @@ object AlfrescoConfiguration {
     __obj.asInstanceOf[AlfrescoConfiguration]
   }
   
-  extension [Self <: AlfrescoConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlfrescoConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBlogFieldMappings(value: DataSourceToIndexFieldMappingList): Self = StObject.set(x, "BlogFieldMappings", value.asInstanceOf[js.Any])
     

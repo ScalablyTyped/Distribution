@@ -29,7 +29,8 @@ object ListViewColumn {
     __obj.asInstanceOf[ListViewColumn]
   }
   
-  extension [Self <: ListViewColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListViewColumn] (val x: Self) extends AnyVal {
     
     inline def setCanSort(value: Boolean): Self = StObject.set(x, "canSort", value.asInstanceOf[js.Any])
     

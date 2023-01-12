@@ -39,7 +39,8 @@ object srcRemoteMessageBuilderMod {
       __obj.asInstanceOf[RemoteMessageBuilderInterface]
     }
     
-    extension [Self <: RemoteMessageBuilderInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteMessageBuilderInterface] (val x: Self) extends AnyVal {
       
       inline def setCOLLAPSE_KEY(value: collapseKey): Self = StObject.set(x, "COLLAPSE_KEY", value.asInstanceOf[js.Any])
       

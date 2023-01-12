@@ -47,7 +47,8 @@ object DataCaptureConfig {
     __obj.asInstanceOf[DataCaptureConfig]
   }
   
-  extension [Self <: DataCaptureConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataCaptureConfig] (val x: Self) extends AnyVal {
     
     inline def setCaptureContentTypeHeader(value: CaptureContentTypeHeader): Self = StObject.set(x, "CaptureContentTypeHeader", value.asInstanceOf[js.Any])
     

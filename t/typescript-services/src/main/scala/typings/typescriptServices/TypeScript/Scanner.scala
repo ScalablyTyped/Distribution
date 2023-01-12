@@ -200,7 +200,8 @@ object Scanner {
     __obj.asInstanceOf[Scanner]
   }
   
-  extension [Self <: Scanner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scanner] (val x: Self) extends AnyVal {
     
     inline def setAbsoluteIndex(value: () => Double): Self = StObject.set(x, "absoluteIndex", js.Any.fromFunction0(value))
     

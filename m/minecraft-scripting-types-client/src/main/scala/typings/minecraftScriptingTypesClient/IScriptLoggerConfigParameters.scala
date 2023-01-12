@@ -34,7 +34,8 @@ object IScriptLoggerConfigParameters {
     __obj.asInstanceOf[IScriptLoggerConfigParameters]
   }
   
-  extension [Self <: IScriptLoggerConfigParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IScriptLoggerConfigParameters] (val x: Self) extends AnyVal {
     
     inline def setLog_errors(value: Boolean): Self = StObject.set(x, "log_errors", value.asInstanceOf[js.Any])
     

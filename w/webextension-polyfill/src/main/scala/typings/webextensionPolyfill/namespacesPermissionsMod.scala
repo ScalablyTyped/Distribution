@@ -31,7 +31,8 @@ object namespacesPermissionsMod {
         __obj.asInstanceOf[AnyPermissions]
       }
       
-      extension [Self <: AnyPermissions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AnyPermissions] (val x: Self) extends AnyVal {
         
         inline def setOrigins(value: js.Array[MatchPattern]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
         
@@ -66,7 +67,8 @@ object namespacesPermissionsMod {
         __obj.asInstanceOf[typings.webextensionPolyfill.namespacesPermissionsMod.Permissions.Permissions]
       }
       
-      extension [Self <: typings.webextensionPolyfill.namespacesPermissionsMod.Permissions.Permissions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.webextensionPolyfill.namespacesPermissionsMod.Permissions.Permissions] (val x: Self) extends AnyVal {
         
         inline def setOrigins(value: js.Array[MatchPattern]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
         
@@ -158,7 +160,8 @@ object namespacesPermissionsMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setContains(value: AnyPermissions => js.Promise[Boolean]): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
         

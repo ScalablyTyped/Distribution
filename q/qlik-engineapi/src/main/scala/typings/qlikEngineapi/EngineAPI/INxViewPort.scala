@@ -31,7 +31,8 @@ object INxViewPort {
     __obj.asInstanceOf[INxViewPort]
   }
   
-  extension [Self <: INxViewPort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxViewPort] (val x: Self) extends AnyVal {
     
     inline def setQHeight(value: Double): Self = StObject.set(x, "qHeight", value.asInstanceOf[js.Any])
     

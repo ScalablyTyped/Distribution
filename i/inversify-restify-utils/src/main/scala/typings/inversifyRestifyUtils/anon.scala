@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setPath(value: StrOrRegex): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
@@ -68,7 +69,8 @@ object anon {
       __obj.asInstanceOf[optionsObjectpathStrOrReg]
     }
     
-    extension [Self <: optionsObjectpathStrOrReg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: optionsObjectpathStrOrReg] (val x: Self) extends AnyVal {
       
       inline def setConstructor(value: js.Function): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
       

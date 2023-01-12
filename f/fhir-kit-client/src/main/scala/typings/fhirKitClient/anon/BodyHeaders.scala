@@ -21,7 +21,8 @@ object BodyHeaders {
     __obj.asInstanceOf[BodyHeaders]
   }
   
-  extension [Self <: BodyHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BodyHeaders] (val x: Self) extends AnyVal {
     
     inline def setBody(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify fhir.Bundle */ Any) & Type

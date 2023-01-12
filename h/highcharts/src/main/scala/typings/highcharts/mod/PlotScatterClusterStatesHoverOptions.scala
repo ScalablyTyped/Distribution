@@ -20,7 +20,8 @@ object PlotScatterClusterStatesHoverOptions {
     __obj.asInstanceOf[PlotScatterClusterStatesHoverOptions]
   }
   
-  extension [Self <: PlotScatterClusterStatesHoverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotScatterClusterStatesHoverOptions] (val x: Self) extends AnyVal {
     
     inline def setFillColor(value: ColorType): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     

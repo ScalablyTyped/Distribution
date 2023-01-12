@@ -23,7 +23,8 @@ object filteringFormatterOptionsRangeOptionsMod {
       __obj.asInstanceOf[RangeOptions]
     }
     
-    extension [Self <: RangeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeOptions] (val x: Self) extends AnyVal {
       
       inline def setAllText(value: String): Self = StObject.set(x, "allText", value.asInstanceOf[js.Any])
       

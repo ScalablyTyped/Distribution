@@ -25,7 +25,8 @@ object SpellingCorrection {
     __obj.asInstanceOf[SpellingCorrection]
   }
   
-  extension [Self <: SpellingCorrection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpellingCorrection] (val x: Self) extends AnyVal {
     
     inline def setCorrected(value: Boolean): Self = StObject.set(x, "corrected", value.asInstanceOf[js.Any])
     

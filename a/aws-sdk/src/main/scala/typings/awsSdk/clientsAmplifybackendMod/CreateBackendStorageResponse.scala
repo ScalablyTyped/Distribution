@@ -33,7 +33,8 @@ object CreateBackendStorageResponse {
     __obj.asInstanceOf[CreateBackendStorageResponse]
   }
   
-  extension [Self <: CreateBackendStorageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBackendStorageResponse] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: string): Self = StObject.set(x, "AppId", value.asInstanceOf[js.Any])
     

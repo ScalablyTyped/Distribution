@@ -52,7 +52,8 @@ object TextInputProps {
     __obj.asInstanceOf[TextInputProps]
   }
   
-  extension [Self <: TextInputProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextInputProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

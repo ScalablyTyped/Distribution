@@ -55,7 +55,8 @@ object TypeofTerminal {
     __obj.asInstanceOf[TypeofTerminal]
   }
   
-  extension [Self <: TypeofTerminal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTerminal] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: TypeofConfigurationTipping): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     

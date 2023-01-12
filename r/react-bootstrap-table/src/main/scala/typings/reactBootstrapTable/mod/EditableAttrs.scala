@@ -33,7 +33,8 @@ object EditableAttrs {
     __obj.asInstanceOf[EditableAttrs]
   }
   
-  extension [Self <: EditableAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditableAttrs] (val x: Self) extends AnyVal {
     
     inline def setOnBlur(value: () => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
     

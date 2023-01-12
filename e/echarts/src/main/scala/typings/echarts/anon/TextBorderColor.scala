@@ -398,7 +398,8 @@ object TextBorderColor {
     __obj.asInstanceOf[TextBorderColor]
   }
   
-  extension [Self <: TextBorderColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextBorderColor] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: js.Object | String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

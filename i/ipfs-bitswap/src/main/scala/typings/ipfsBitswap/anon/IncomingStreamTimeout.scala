@@ -32,7 +32,8 @@ object IncomingStreamTimeout {
     __obj.asInstanceOf[IncomingStreamTimeout]
   }
   
-  extension [Self <: IncomingStreamTimeout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncomingStreamTimeout] (val x: Self) extends AnyVal {
     
     inline def setHashLoader(value: MultihashHasherLoader): Self = StObject.set(x, "hashLoader", value.asInstanceOf[js.Any])
     

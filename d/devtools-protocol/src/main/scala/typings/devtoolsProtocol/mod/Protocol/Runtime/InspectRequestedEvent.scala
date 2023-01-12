@@ -23,7 +23,8 @@ object InspectRequestedEvent {
     __obj.asInstanceOf[InspectRequestedEvent]
   }
   
-  extension [Self <: InspectRequestedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectRequestedEvent] (val x: Self) extends AnyVal {
     
     inline def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
     

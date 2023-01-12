@@ -79,7 +79,8 @@ object typesLibPopoverMod {
       __obj.asInstanceOf[PopoverProps]
     }
     
-    extension [Self <: PopoverProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverProps] (val x: Self) extends AnyVal {
       
       inline def setBoundariesElement(value: Boundary | Element): Self = StObject.set(x, "boundariesElement", value.asInstanceOf[js.Any])
       
@@ -174,7 +175,8 @@ object typesLibPopoverMod {
       __obj.asInstanceOf[UncontrolledPopoverProps]
     }
     
-    extension [Self <: UncontrolledPopoverProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UncontrolledPopoverProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultOpen(value: Boolean): Self = StObject.set(x, "defaultOpen", value.asInstanceOf[js.Any])
       

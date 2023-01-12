@@ -15,7 +15,8 @@ object RelevantSortComponentProps {
     __obj.asInstanceOf[RelevantSortComponentProps]
   }
   
-  extension [Self <: RelevantSortComponentProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelevantSortComponentProps] (val x: Self) extends AnyVal {
     
     inline def setIsRelevantSorted(value: Boolean): Self = StObject.set(x, "isRelevantSorted", value.asInstanceOf[js.Any])
   }

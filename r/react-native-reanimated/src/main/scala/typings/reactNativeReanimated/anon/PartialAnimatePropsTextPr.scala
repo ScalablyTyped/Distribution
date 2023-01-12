@@ -188,7 +188,8 @@ object PartialAnimatePropsTextPr {
     __obj.asInstanceOf[PartialAnimatePropsTextPr]
   }
   
-  extension [Self <: PartialAnimatePropsTextPr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAnimatePropsTextPr] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(
       value: js.Array[AccessibilityActionInfo] | AnimatedNode[js.UndefOr[js.Array[AccessibilityActionInfo]]]

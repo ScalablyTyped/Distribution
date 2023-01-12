@@ -28,7 +28,8 @@ object DeleteDomainPermissionsPolicyRequest {
     __obj.asInstanceOf[DeleteDomainPermissionsPolicyRequest]
   }
   
-  extension [Self <: DeleteDomainPermissionsPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDomainPermissionsPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

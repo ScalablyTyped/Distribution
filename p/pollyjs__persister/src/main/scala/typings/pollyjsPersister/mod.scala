@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[Har]
     }
     
-    extension [Self <: Har](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Har] (val x: Self) extends AnyVal {
       
       inline def setLog(value: HarLog): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     }
@@ -80,7 +81,8 @@ object mod {
       __obj.asInstanceOf[HarEntry]
     }
     
-    extension [Self <: HarEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HarEntry] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: HarRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
@@ -126,7 +128,8 @@ object mod {
       __obj.asInstanceOf[HarLog]
     }
     
-    extension [Self <: HarLog](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HarLog] (val x: Self) extends AnyVal {
       
       inline def setAddEntries(value: js.Array[HarEntry] => Unit): Self = StObject.set(x, "addEntries", js.Any.fromFunction1(value))
       
@@ -181,7 +184,8 @@ object mod {
       __obj.asInstanceOf[HarRequest]
     }
     
-    extension [Self <: HarRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HarRequest] (val x: Self) extends AnyVal {
       
       inline def setBodySize(value: Double): Self = StObject.set(x, "bodySize", value.asInstanceOf[js.Any])
       
@@ -246,7 +250,8 @@ object mod {
       __obj.asInstanceOf[HarResponse]
     }
     
-    extension [Self <: HarResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HarResponse] (val x: Self) extends AnyVal {
       
       inline def setBodySize(value: Double): Self = StObject.set(x, "bodySize", value.asInstanceOf[js.Any])
       
@@ -285,7 +290,8 @@ object mod {
       __obj.asInstanceOf[NVObject]
     }
     
-    extension [Self <: NVObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NVObject] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

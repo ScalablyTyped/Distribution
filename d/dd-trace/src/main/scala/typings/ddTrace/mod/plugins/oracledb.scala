@@ -25,7 +25,8 @@ object oracledb {
     __obj.asInstanceOf[oracledb]
   }
   
-  extension [Self <: oracledb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: oracledb] (val x: Self) extends AnyVal {
     
     inline def setService(value: String | (js.Function1[/* params */ Any, String])): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     

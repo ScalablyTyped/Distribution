@@ -15,7 +15,8 @@ object ErrorHandlerContext {
     __obj.asInstanceOf[ErrorHandlerContext]
   }
   
-  extension [Self <: ErrorHandlerContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorHandlerContext] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: typings.sharedb.libAgentMod.^[Any]): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

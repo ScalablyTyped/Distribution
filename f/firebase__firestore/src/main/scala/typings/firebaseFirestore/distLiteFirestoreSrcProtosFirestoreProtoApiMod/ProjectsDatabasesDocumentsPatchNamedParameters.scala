@@ -48,7 +48,8 @@ object ProjectsDatabasesDocumentsPatchNamedParameters {
     __obj.asInstanceOf[ProjectsDatabasesDocumentsPatchNamedParameters]
   }
   
-  extension [Self <: ProjectsDatabasesDocumentsPatchNamedParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectsDatabasesDocumentsPatchNamedParameters] (val x: Self) extends AnyVal {
     
     inline def set$Xgafv(value: ProjectsDatabasesDocumentsApiClientXgafv): Self = StObject.set(x, "$Xgafv", value.asInstanceOf[js.Any])
     

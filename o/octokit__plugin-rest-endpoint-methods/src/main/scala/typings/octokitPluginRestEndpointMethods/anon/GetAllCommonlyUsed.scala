@@ -71,7 +71,8 @@ object GetAllCommonlyUsed {
     __obj.asInstanceOf[GetAllCommonlyUsed]
   }
   
-  extension [Self <: GetAllCommonlyUsed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAllCommonlyUsed] (val x: Self) extends AnyVal {
     
     inline def setGet(value: `350`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     

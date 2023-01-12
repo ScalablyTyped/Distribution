@@ -161,7 +161,8 @@ object mod {
       __obj.asInstanceOf[IImageOptions]
     }
     
-    extension [Self <: IImageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IImageOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckCRC(value: Boolean): Self = StObject.set(x, "checkCRC", value.asInstanceOf[js.Any])
       

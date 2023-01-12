@@ -37,7 +37,8 @@ object GoogleIdentityAccesscontextmanagerV1AccessPolicy {
     __obj.asInstanceOf[GoogleIdentityAccesscontextmanagerV1AccessPolicy]
   }
   
-  extension [Self <: GoogleIdentityAccesscontextmanagerV1AccessPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleIdentityAccesscontextmanagerV1AccessPolicy] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

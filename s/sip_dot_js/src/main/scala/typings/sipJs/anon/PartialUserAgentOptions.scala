@@ -96,7 +96,8 @@ object PartialUserAgentOptions {
     __obj.asInstanceOf[PartialUserAgentOptions]
   }
   
-  extension [Self <: PartialUserAgentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialUserAgentOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowLegacyNotifications(value: Boolean): Self = StObject.set(x, "allowLegacyNotifications", value.asInstanceOf[js.Any])
     

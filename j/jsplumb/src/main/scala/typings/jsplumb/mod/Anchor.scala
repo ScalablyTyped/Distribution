@@ -42,7 +42,8 @@ object Anchor {
     __obj.asInstanceOf[Anchor]
   }
   
-  extension [Self <: Anchor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Anchor] (val x: Self) extends AnyVal {
     
     inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     

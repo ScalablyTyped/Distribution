@@ -25,7 +25,8 @@ object SpecimenDefinitionTypeTestedContainerAdditive {
     __obj.asInstanceOf[SpecimenDefinitionTypeTestedContainerAdditive]
   }
   
-  extension [Self <: SpecimenDefinitionTypeTestedContainerAdditive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecimenDefinitionTypeTestedContainerAdditive] (val x: Self) extends AnyVal {
     
     inline def setAdditiveCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "additiveCodeableConcept", value.asInstanceOf[js.Any])
     

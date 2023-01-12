@@ -23,7 +23,8 @@ object ListArtifactsResponse {
     __obj.asInstanceOf[ListArtifactsResponse]
   }
   
-  extension [Self <: ListArtifactsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListArtifactsResponse] (val x: Self) extends AnyVal {
     
     inline def setArtifactSummaries(value: ArtifactSummaries): Self = StObject.set(x, "ArtifactSummaries", value.asInstanceOf[js.Any])
     

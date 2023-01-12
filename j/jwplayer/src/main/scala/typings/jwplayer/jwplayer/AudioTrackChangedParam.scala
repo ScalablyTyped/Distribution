@@ -15,7 +15,8 @@ object AudioTrackChangedParam {
     __obj.asInstanceOf[AudioTrackChangedParam]
   }
   
-  extension [Self <: AudioTrackChangedParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioTrackChangedParam] (val x: Self) extends AnyVal {
     
     inline def setCurrentTrack(value: Double): Self = StObject.set(x, "currentTrack", value.asInstanceOf[js.Any])
   }

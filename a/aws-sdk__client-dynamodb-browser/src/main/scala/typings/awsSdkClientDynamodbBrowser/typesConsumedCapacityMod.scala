@@ -43,7 +43,8 @@ object typesConsumedCapacityMod {
       __obj.asInstanceOf[ConsumedCapacity]
     }
     
-    extension [Self <: ConsumedCapacity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsumedCapacity] (val x: Self) extends AnyVal {
       
       inline def setCapacityUnits(value: Double): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object typesConsumedCapacityMod {
       __obj.asInstanceOf[UnmarshalledConsumedCapacity]
     }
     
-    extension [Self <: UnmarshalledConsumedCapacity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledConsumedCapacity] (val x: Self) extends AnyVal {
       
       inline def setGlobalSecondaryIndexes(value: StringDictionary[UnmarshalledCapacity]): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       

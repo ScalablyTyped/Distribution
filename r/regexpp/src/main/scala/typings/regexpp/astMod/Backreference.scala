@@ -35,7 +35,8 @@ object Backreference {
     __obj.asInstanceOf[Backreference]
   }
   
-  extension [Self <: Backreference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Backreference] (val x: Self) extends AnyVal {
     
     inline def setParent(value: Alternative | Quantifier): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object PaperSize {
     __obj.asInstanceOf[PaperSize]
   }
   
-  extension [Self <: PaperSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaperSize] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: String): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

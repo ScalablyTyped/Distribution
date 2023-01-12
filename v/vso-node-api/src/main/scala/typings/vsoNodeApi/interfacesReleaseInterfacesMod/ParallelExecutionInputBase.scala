@@ -19,7 +19,8 @@ object ParallelExecutionInputBase {
     __obj.asInstanceOf[ParallelExecutionInputBase]
   }
   
-  extension [Self <: ParallelExecutionInputBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParallelExecutionInputBase] (val x: Self) extends AnyVal {
     
     inline def setContinueOnError(value: Boolean): Self = StObject.set(x, "continueOnError", value.asInstanceOf[js.Any])
     

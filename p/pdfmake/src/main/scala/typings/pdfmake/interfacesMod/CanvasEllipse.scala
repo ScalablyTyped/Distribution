@@ -37,7 +37,8 @@ object CanvasEllipse {
     __obj.asInstanceOf[CanvasEllipse]
   }
   
-  extension [Self <: CanvasEllipse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasEllipse] (val x: Self) extends AnyVal {
     
     inline def setR1(value: Double): Self = StObject.set(x, "r1", value.asInstanceOf[js.Any])
     

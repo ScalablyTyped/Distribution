@@ -25,7 +25,8 @@ object StockChartLegendItemClickEvent {
     __obj.asInstanceOf[StockChartLegendItemClickEvent]
   }
   
-  extension [Self <: StockChartLegendItemClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartLegendItemClickEvent] (val x: Self) extends AnyVal {
     
     inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

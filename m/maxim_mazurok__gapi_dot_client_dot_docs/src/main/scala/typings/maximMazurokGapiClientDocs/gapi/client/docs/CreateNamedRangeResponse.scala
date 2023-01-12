@@ -16,7 +16,8 @@ object CreateNamedRangeResponse {
     __obj.asInstanceOf[CreateNamedRangeResponse]
   }
   
-  extension [Self <: CreateNamedRangeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateNamedRangeResponse] (val x: Self) extends AnyVal {
     
     inline def setNamedRangeId(value: String): Self = StObject.set(x, "namedRangeId", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object RelatedItemContent {
     __obj.asInstanceOf[RelatedItemContent]
   }
   
-  extension [Self <: RelatedItemContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedItemContent] (val x: Self) extends AnyVal {
     
     inline def setComment(value: CommentContent): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

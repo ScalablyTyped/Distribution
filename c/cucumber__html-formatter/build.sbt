@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "cucumber__html-formatter"
-version := "20.1.0-ef1e68"
+version := "20.1.0-a81ebf"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "cucumber__messages" % "20.0.0-975332",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-def929",
-  "org.scalablytyped" %%% "std" % "4.9-5f989f")
+  "org.scalablytyped" %%% "cucumber__messages" % "20.0.0-d0f476",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
+  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

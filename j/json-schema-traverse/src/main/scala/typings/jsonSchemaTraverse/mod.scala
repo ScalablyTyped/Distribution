@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllKeys(value: Boolean): Self = StObject.set(x, "allKeys", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object mod {
       __obj.asInstanceOf[SchemaObject]
     }
     
-    extension [Self <: SchemaObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaObject] (val x: Self) extends AnyVal {
       
       inline def set$id(value: String): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
       

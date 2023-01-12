@@ -17,7 +17,8 @@ object DialDisconnectButtonClickedEventArgs {
     __obj.asInstanceOf[DialDisconnectButtonClickedEventArgs]
   }
   
-  extension [Self <: DialDisconnectButtonClickedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialDisconnectButtonClickedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setDevice(value: DialDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
   }

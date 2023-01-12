@@ -34,7 +34,8 @@ object HTMLTimeRanges {
     __obj.asInstanceOf[HTMLTimeRanges]
   }
   
-  extension [Self <: HTMLTimeRanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLTimeRanges] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double => Double): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     

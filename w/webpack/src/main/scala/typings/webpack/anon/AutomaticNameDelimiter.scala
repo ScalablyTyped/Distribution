@@ -54,7 +54,8 @@ object AutomaticNameDelimiter {
     __obj.asInstanceOf[AutomaticNameDelimiter]
   }
   
-  extension [Self <: AutomaticNameDelimiter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutomaticNameDelimiter] (val x: Self) extends AnyVal {
     
     inline def setAutomaticNameDelimiter(value: String): Self = StObject.set(x, "automaticNameDelimiter", value.asInstanceOf[js.Any])
     

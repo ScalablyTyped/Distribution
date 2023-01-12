@@ -28,7 +28,8 @@ object GetTemplateStepRequest {
     __obj.asInstanceOf[GetTemplateStepRequest]
   }
   
-  extension [Self <: GetTemplateStepRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTemplateStepRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: StepId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object distLibCommandsSetMod {
       __obj.asInstanceOf[SetCommonOptions]
     }
     
-    extension [Self <: SetCommonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetCommonOptions] (val x: Self) extends AnyVal {
       
       inline def setGET(value: `true`): Self = StObject.set(x, "GET", value.asInstanceOf[js.Any])
       

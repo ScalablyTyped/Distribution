@@ -44,7 +44,8 @@ object WebPropertyId {
     __obj.asInstanceOf[WebPropertyId]
   }
   
-  extension [Self <: WebPropertyId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebPropertyId] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

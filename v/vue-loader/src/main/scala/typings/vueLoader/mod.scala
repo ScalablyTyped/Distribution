@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[VueLoaderOptions]
     }
     
-    extension [Self <: VueLoaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueLoaderOptions] (val x: Self) extends AnyVal {
       
       inline def setAppendExtension(value: Boolean): Self = StObject.set(x, "appendExtension", value.asInstanceOf[js.Any])
       

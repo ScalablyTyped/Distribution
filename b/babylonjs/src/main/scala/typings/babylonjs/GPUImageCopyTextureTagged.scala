@@ -19,7 +19,8 @@ object GPUImageCopyTextureTagged {
     __obj.asInstanceOf[GPUImageCopyTextureTagged]
   }
   
-  extension [Self <: GPUImageCopyTextureTagged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUImageCopyTextureTagged] (val x: Self) extends AnyVal {
     
     inline def setColorSpace(value: GPUPredefinedColorSpace): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
     

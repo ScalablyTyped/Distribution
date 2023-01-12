@@ -81,7 +81,8 @@ object mod {
       __obj.asInstanceOf[DragCallbackData]
     }
     
-    extension [Self <: DragCallbackData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragCallbackData] (val x: Self) extends AnyVal {
       
       inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object mod {
       __obj.asInstanceOf[ResizableBoxState]
     }
     
-    extension [Self <: ResizableBoxState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizableBoxState] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -165,7 +167,8 @@ object mod {
       __obj.asInstanceOf[ResizableState]
     }
     
-    extension [Self <: ResizableState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizableState] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -194,7 +197,8 @@ object mod {
       __obj.asInstanceOf[ResizeCallbackData]
     }
     
-    extension [Self <: ResizeCallbackData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeCallbackData] (val x: Self) extends AnyVal {
       
       inline def setHandle(value: ResizeHandle): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       

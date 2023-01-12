@@ -52,7 +52,8 @@ object NxCurrentSelectionItem {
     __obj.asInstanceOf[NxCurrentSelectionItem]
   }
   
-  extension [Self <: NxCurrentSelectionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NxCurrentSelectionItem] (val x: Self) extends AnyVal {
     
     inline def setQField(value: String): Self = StObject.set(x, "qField", value.asInstanceOf[js.Any])
     

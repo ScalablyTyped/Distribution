@@ -351,7 +351,8 @@ object distEngineMod {
       __obj.asInstanceOf[EngineState]
     }
     
-    extension [Self <: EngineState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EngineState] (val x: Self) extends AnyVal {
       
       inline def setActiveProfile(value: ProfileInfo): Self = StObject.set(x, "activeProfile", value.asInstanceOf[js.Any])
       
@@ -434,7 +435,8 @@ object distEngineMod {
       __obj.asInstanceOf[KernelInfo]
     }
     
-    extension [Self <: KernelInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KernelInfo] (val x: Self) extends AnyVal {
       
       inline def setBytesAdded(value: Double): Self = StObject.set(x, "bytesAdded", value.asInstanceOf[js.Any])
       
@@ -479,7 +481,8 @@ object distEngineMod {
       __obj.asInstanceOf[MemoryInfo]
     }
     
-    extension [Self <: MemoryInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemoryInfo] (val x: Self) extends AnyVal {
       
       inline def setNumBytes(value: Double): Self = StObject.set(x, "numBytes", value.asInstanceOf[js.Any])
       
@@ -525,7 +528,8 @@ object distEngineMod {
       __obj.asInstanceOf[ProfileInfo]
     }
     
-    extension [Self <: ProfileInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProfileInfo] (val x: Self) extends AnyVal {
       
       inline def setKernelNames(value: js.Array[String]): Self = StObject.set(x, "kernelNames", value.asInstanceOf[js.Any])
       
@@ -562,7 +566,8 @@ object distEngineMod {
       __obj.asInstanceOf[ScopeState]
     }
     
-    extension [Self <: ScopeState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScopeState] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -587,7 +592,8 @@ object distEngineMod {
       __obj.asInstanceOf[TimingInfo]
     }
     
-    extension [Self <: TimingInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimingInfo] (val x: Self) extends AnyVal {
       
       inline def setWallMs(value: Double): Self = StObject.set(x, "wallMs", value.asInstanceOf[js.Any])
     }

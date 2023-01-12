@@ -95,7 +95,8 @@ object ParameterDefinition {
     __obj.asInstanceOf[ParameterDefinition]
   }
   
-  extension [Self <: ParameterDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterDefinition] (val x: Self) extends AnyVal {
     
     inline def setAllowedPattern(value: string): Self = StObject.set(x, "AllowedPattern", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object PickListModel {
     __obj.asInstanceOf[PickListModel]
   }
   
-  extension [Self <: PickListModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickListModel] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[PickListItemModel]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

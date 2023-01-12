@@ -37,7 +37,8 @@ object ChunkContentCallbackArgs {
     __obj.asInstanceOf[ChunkContentCallbackArgs]
   }
   
-  extension [Self <: ChunkContentCallbackArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChunkContentCallbackArgs] (val x: Self) extends AnyVal {
     
     inline def setClientHeight(value: Double): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
     

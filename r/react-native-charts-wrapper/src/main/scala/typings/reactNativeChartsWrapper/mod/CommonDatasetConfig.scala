@@ -31,7 +31,8 @@ object CommonDatasetConfig {
     __obj.asInstanceOf[CommonDatasetConfig]
   }
   
-  extension [Self <: CommonDatasetConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonDatasetConfig] (val x: Self) extends AnyVal {
     
     inline def setAxisDependency(value: AxisDependency): Self = StObject.set(x, "axisDependency", value.asInstanceOf[js.Any])
     

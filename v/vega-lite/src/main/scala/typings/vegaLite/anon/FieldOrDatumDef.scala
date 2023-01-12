@@ -32,7 +32,8 @@ object FieldOrDatumDef {
     __obj.asInstanceOf[FieldOrDatumDef]
   }
   
-  extension [Self <: FieldOrDatumDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldOrDatumDef] (val x: Self) extends AnyVal {
     
     inline def setFieldOrDatumDef(
       value: (TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])

@@ -68,7 +68,8 @@ object Vertex {
     __obj.asInstanceOf[Vertex]
   }
   
-  extension [Self <: Vertex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Vertex] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

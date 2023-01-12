@@ -21,7 +21,8 @@ object GPUExtent3DDictStrict {
     __obj.asInstanceOf[GPUExtent3DDictStrict]
   }
   
-  extension [Self <: GPUExtent3DDictStrict](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUExtent3DDictStrict] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: Unit): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
   }

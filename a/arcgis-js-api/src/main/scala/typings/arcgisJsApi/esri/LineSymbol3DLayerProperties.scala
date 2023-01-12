@@ -68,7 +68,8 @@ object LineSymbol3DLayerProperties {
     __obj.asInstanceOf[LineSymbol3DLayerProperties]
   }
   
-  extension [Self <: LineSymbol3DLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineSymbol3DLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setCap(value: butt_ | round_ | square_): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
     

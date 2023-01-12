@@ -28,7 +28,8 @@ object PackageVersionHistory {
     __obj.asInstanceOf[PackageVersionHistory]
   }
   
-  extension [Self <: PackageVersionHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageVersionHistory] (val x: Self) extends AnyVal {
     
     inline def setCommitMessage(value: CommitMessage): Self = StObject.set(x, "CommitMessage", value.asInstanceOf[js.Any])
     

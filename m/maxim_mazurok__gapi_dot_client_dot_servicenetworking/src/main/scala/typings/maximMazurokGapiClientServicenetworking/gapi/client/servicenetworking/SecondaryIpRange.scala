@@ -19,7 +19,8 @@ object SecondaryIpRange {
     __obj.asInstanceOf[SecondaryIpRange]
   }
   
-  extension [Self <: SecondaryIpRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecondaryIpRange] (val x: Self) extends AnyVal {
     
     inline def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
     

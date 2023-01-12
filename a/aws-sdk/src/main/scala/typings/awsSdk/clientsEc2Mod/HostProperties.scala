@@ -38,7 +38,8 @@ object HostProperties {
     __obj.asInstanceOf[HostProperties]
   }
   
-  extension [Self <: HostProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostProperties] (val x: Self) extends AnyVal {
     
     inline def setCores(value: Integer): Self = StObject.set(x, "Cores", value.asInstanceOf[js.Any])
     

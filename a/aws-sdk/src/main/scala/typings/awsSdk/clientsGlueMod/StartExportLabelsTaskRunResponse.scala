@@ -18,7 +18,8 @@ object StartExportLabelsTaskRunResponse {
     __obj.asInstanceOf[StartExportLabelsTaskRunResponse]
   }
   
-  extension [Self <: StartExportLabelsTaskRunResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartExportLabelsTaskRunResponse] (val x: Self) extends AnyVal {
     
     inline def setTaskRunId(value: HashString): Self = StObject.set(x, "TaskRunId", value.asInstanceOf[js.Any])
     

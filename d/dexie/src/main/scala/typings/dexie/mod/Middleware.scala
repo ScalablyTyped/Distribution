@@ -26,7 +26,8 @@ object Middleware {
     __obj.asInstanceOf[Middleware[TStack]]
   }
   
-  extension [Self <: Middleware[?], TStack /* <: Stack */](x: Self & Middleware[TStack]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Middleware[?], TStack /* <: Stack */] (val x: Self & Middleware[TStack]) extends AnyVal {
     
     inline def setCreate(value: TStack => Partial[TStack]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     

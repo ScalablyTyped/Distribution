@@ -16,7 +16,8 @@ object PaymentRequestEventMap {
     __obj.asInstanceOf[PaymentRequestEventMap]
   }
   
-  extension [Self <: PaymentRequestEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentRequestEventMap] (val x: Self) extends AnyVal {
     
     inline def setPaymentmethodchange(value: Event): Self = StObject.set(x, "paymentmethodchange", value.asInstanceOf[js.Any])
   }

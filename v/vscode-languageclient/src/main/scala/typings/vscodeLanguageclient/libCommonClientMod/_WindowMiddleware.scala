@@ -25,7 +25,8 @@ object _WindowMiddleware {
     __obj.asInstanceOf[_WindowMiddleware]
   }
   
-  extension [Self <: _WindowMiddleware](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: _WindowMiddleware] (val x: Self) extends AnyVal {
     
     inline def setShowDocument(
       value: js.ThisFunction2[

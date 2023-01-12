@@ -27,7 +27,8 @@ object opencl {
       __obj.asInstanceOf[OpenCLDevice]
     }
     
-    extension [Self <: OpenCLDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenCLDevice] (val x: Self) extends AnyVal {
       
       inline def setDriver(value: String): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object opencl {
       __obj.asInstanceOf[OpenCLPlatform]
     }
     
-    extension [Self <: OpenCLPlatform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenCLPlatform] (val x: Self) extends AnyVal {
       
       inline def setDevices(value: SafeArray[OpenCLDevice]): Self = StObject.set(x, "Devices", value.asInstanceOf[js.Any])
       
@@ -164,7 +166,8 @@ object opencl {
       __obj.asInstanceOf[XOpenCLSelection]
     }
     
-    extension [Self <: XOpenCLSelection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XOpenCLSelection] (val x: Self) extends AnyVal {
       
       inline def setDeviceID(value: Double): Self = StObject.set(x, "DeviceID", value.asInstanceOf[js.Any])
       

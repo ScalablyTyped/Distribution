@@ -21,7 +21,8 @@ object KeepOriginalCase {
     __obj.asInstanceOf[KeepOriginalCase]
   }
   
-  extension [Self <: KeepOriginalCase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeepOriginalCase] (val x: Self) extends AnyVal {
     
     inline def setBind(value: Boolean): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object BaseChoiceMap {
     __obj.asInstanceOf[BaseChoiceMap[T]]
   }
   
-  extension [Self <: BaseChoiceMap[?], T /* <: Answers */](x: Self & BaseChoiceMap[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseChoiceMap[?], T /* <: Answers */] (val x: Self & BaseChoiceMap[T]) extends AnyVal {
     
     inline def setChoice(value: typings.inquirer.libObjectsChoiceMod.default[T]): Self = StObject.set(x, "Choice", value.asInstanceOf[js.Any])
     

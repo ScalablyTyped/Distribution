@@ -15,7 +15,8 @@ object UpdateSMBFileShareVisibilityOutput {
     __obj.asInstanceOf[UpdateSMBFileShareVisibilityOutput]
   }
   
-  extension [Self <: UpdateSMBFileShareVisibilityOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSMBFileShareVisibilityOutput] (val x: Self) extends AnyVal {
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     

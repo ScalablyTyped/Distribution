@@ -268,7 +268,8 @@ object anon {
       __obj.asInstanceOf[DefaultSigningName]
     }
     
-    extension [Self <: DefaultSigningName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultSigningName] (val x: Self) extends AnyVal {
       
       inline def setDefaultSigningName(value: String): Self = StObject.set(x, "defaultSigningName", value.asInstanceOf[js.Any])
     }
@@ -321,7 +322,8 @@ object anon {
       __obj.asInstanceOf[ExceptionOptionTypeAccess]
     }
     
-    extension [Self <: ExceptionOptionTypeAccess](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionOptionTypeAccess] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
@@ -356,7 +358,8 @@ object anon {
       __obj.asInstanceOf[ExceptionOptionTypeAuthor]
     }
     
-    extension [Self <: ExceptionOptionTypeAuthor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionOptionTypeAuthor] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
@@ -391,7 +394,8 @@ object anon {
       __obj.asInstanceOf[ExceptionOptionTypeExpire]
     }
     
-    extension [Self <: ExceptionOptionTypeExpire](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionOptionTypeExpire] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
@@ -426,7 +430,8 @@ object anon {
       __obj.asInstanceOf[ExceptionOptionTypeIntern]
     }
     
-    extension [Self <: ExceptionOptionTypeIntern](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionOptionTypeIntern] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
@@ -461,7 +466,8 @@ object anon {
       __obj.asInstanceOf[ExceptionOptionTypeInvali]
     }
     
-    extension [Self <: ExceptionOptionTypeInvali](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionOptionTypeInvali] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
@@ -496,7 +502,8 @@ object anon {
       __obj.asInstanceOf[ExceptionOptionTypeSlowDo]
     }
     
-    extension [Self <: ExceptionOptionTypeSlowDo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionOptionTypeSlowDo] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
@@ -531,7 +538,8 @@ object anon {
       __obj.asInstanceOf[ExceptionOptionTypeUnauth]
     }
     
-    extension [Self <: ExceptionOptionTypeUnauth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionOptionTypeUnauth] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
@@ -566,7 +574,8 @@ object anon {
       __obj.asInstanceOf[ExceptionOptionTypeUnsupp]
     }
     
-    extension [Self <: ExceptionOptionTypeUnsupp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionOptionTypeUnsupp] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
@@ -593,7 +602,8 @@ object anon {
       __obj.asInstanceOf[Logger]
     }
     
-    extension [Self <: Logger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
       
       inline def setLogger(value: typings.awsSdkTypes.distTypesLoggerMod.Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       

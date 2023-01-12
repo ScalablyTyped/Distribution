@@ -30,7 +30,8 @@ object InputEvent {
     __obj.asInstanceOf[InputEvent]
   }
   
-  extension [Self <: InputEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputEvent] (val x: Self) extends AnyVal {
     
     inline def setModifiers(value: Double): Self = StObject.set(x, "Modifiers", value.asInstanceOf[js.Any])
   }

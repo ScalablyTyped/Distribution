@@ -32,7 +32,8 @@ object ISearchObjectOptions {
     __obj.asInstanceOf[ISearchObjectOptions]
   }
   
-  extension [Self <: ISearchObjectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchObjectOptions] (val x: Self) extends AnyVal {
     
     inline def setQAttributes(value: js.Array[String]): Self = StObject.set(x, "qAttributes", value.asInstanceOf[js.Any])
     

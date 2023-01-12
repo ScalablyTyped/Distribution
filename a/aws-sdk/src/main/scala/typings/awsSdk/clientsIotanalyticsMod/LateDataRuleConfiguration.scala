@@ -18,7 +18,8 @@ object LateDataRuleConfiguration {
     __obj.asInstanceOf[LateDataRuleConfiguration]
   }
   
-  extension [Self <: LateDataRuleConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LateDataRuleConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDeltaTimeSessionWindowConfiguration(value: DeltaTimeSessionWindowConfiguration): Self = StObject.set(x, "deltaTimeSessionWindowConfiguration", value.asInstanceOf[js.Any])
     

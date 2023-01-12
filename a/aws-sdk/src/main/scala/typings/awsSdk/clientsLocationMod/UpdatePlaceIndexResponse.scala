@@ -28,7 +28,8 @@ object UpdatePlaceIndexResponse {
     __obj.asInstanceOf[UpdatePlaceIndexResponse]
   }
   
-  extension [Self <: UpdatePlaceIndexResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePlaceIndexResponse] (val x: Self) extends AnyVal {
     
     inline def setIndexArn(value: Arn): Self = StObject.set(x, "IndexArn", value.asInstanceOf[js.Any])
     

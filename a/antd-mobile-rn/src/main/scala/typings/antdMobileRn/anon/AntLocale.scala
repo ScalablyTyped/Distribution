@@ -16,7 +16,8 @@ object AntLocale {
     __obj.asInstanceOf[AntLocale]
   }
   
-  extension [Self <: AntLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AntLocale] (val x: Self) extends AnyVal {
     
     inline def setAntLocale(value: Requireable[js.Object]): Self = StObject.set(x, "antLocale", value.asInstanceOf[js.Any])
   }

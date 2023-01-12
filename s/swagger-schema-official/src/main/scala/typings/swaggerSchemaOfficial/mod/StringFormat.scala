@@ -27,7 +27,8 @@ object StringFormat {
     __obj.asInstanceOf[StringFormat]
   }
   
-  extension [Self <: StringFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringFormat] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: _empty | byte | binary | date | `date-time` | password): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

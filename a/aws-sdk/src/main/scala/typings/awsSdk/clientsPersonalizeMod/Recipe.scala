@@ -58,7 +58,8 @@ object Recipe {
     __obj.asInstanceOf[Recipe]
   }
   
-  extension [Self <: Recipe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Recipe] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmArn(value: Arn): Self = StObject.set(x, "algorithmArn", value.asInstanceOf[js.Any])
     

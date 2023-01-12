@@ -72,7 +72,8 @@ object distConfigThemeProviderMod {
       __obj.asInstanceOf[ThemeProps[T]]
     }
     
-    extension [Self <: ThemeProps[?], T](x: Self & ThemeProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeProps[?], T] (val x: Self & ThemeProps[T]) extends AnyVal {
       
       inline def setReplaceTheme(value: RecursivePartialFullThemeAvatar => Unit): Self = StObject.set(x, "replaceTheme", js.Any.fromFunction1(value))
       
@@ -105,7 +106,8 @@ object distConfigThemeProviderMod {
       __obj.asInstanceOf[ThemeProviderProps]
     }
     
-    extension [Self <: ThemeProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeProviderProps] (val x: Self) extends AnyVal {
       
       inline def setUseDark(value: Boolean): Self = StObject.set(x, "useDark", value.asInstanceOf[js.Any])
       
@@ -126,7 +128,8 @@ object distConfigThemeProviderMod {
       __obj.asInstanceOf[ThemeProviderState]
     }
     
-    extension [Self <: ThemeProviderState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeProviderState] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: typings.reactNativeElements.anon.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       

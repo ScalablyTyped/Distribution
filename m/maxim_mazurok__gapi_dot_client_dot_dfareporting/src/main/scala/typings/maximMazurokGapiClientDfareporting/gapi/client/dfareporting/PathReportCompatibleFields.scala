@@ -28,7 +28,8 @@ object PathReportCompatibleFields {
     __obj.asInstanceOf[PathReportCompatibleFields]
   }
   
-  extension [Self <: PathReportCompatibleFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathReportCompatibleFields] (val x: Self) extends AnyVal {
     
     inline def setChannelGroupings(value: js.Array[Dimension]): Self = StObject.set(x, "channelGroupings", value.asInstanceOf[js.Any])
     

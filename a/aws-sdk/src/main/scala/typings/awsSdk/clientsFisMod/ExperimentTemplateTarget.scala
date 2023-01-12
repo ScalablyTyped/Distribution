@@ -43,7 +43,8 @@ object ExperimentTemplateTarget {
     __obj.asInstanceOf[ExperimentTemplateTarget]
   }
   
-  extension [Self <: ExperimentTemplateTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExperimentTemplateTarget] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: ExperimentTemplateTargetFilterList): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

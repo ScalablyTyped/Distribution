@@ -193,7 +193,8 @@ object libPromisesMod {
       __obj.asInstanceOf[TFileHandleReadResult]
     }
     
-    extension [Self <: TFileHandleReadResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TFileHandleReadResult] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: Buffer | js.typedarray.Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -214,7 +215,8 @@ object libPromisesMod {
       __obj.asInstanceOf[TFileHandleWriteResult]
     }
     
-    extension [Self <: TFileHandleWriteResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TFileHandleWriteResult] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: Buffer | js.typedarray.Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       

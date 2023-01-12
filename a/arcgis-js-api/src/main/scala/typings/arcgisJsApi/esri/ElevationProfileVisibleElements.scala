@@ -69,7 +69,8 @@ object ElevationProfileVisibleElements {
     __obj.asInstanceOf[ElevationProfileVisibleElements]
   }
   
-  extension [Self <: ElevationProfileVisibleElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElevationProfileVisibleElements] (val x: Self) extends AnyVal {
     
     inline def setChart(value: Boolean): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     

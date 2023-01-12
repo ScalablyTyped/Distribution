@@ -273,7 +273,8 @@ object Compareurl {
     __obj.asInstanceOf[Compareurl]
   }
   
-  extension [Self <: Compareurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Compareurl] (val x: Self) extends AnyVal {
     
     inline def setAllow_forking(value: Boolean): Self = StObject.set(x, "allow_forking", value.asInstanceOf[js.Any])
     

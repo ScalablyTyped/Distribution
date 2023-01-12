@@ -99,7 +99,8 @@ object Service {
     __obj.asInstanceOf[Service]
   }
   
-  extension [Self <: Service](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingConfigurationSummary(value: AutoScalingConfigurationSummary): Self = StObject.set(x, "AutoScalingConfigurationSummary", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object IsISSNOptions {
     __obj.asInstanceOf[IsISSNOptions]
   }
   
-  extension [Self <: IsISSNOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsISSNOptions] (val x: Self) extends AnyVal {
     
     inline def setCase_sensitive(value: Boolean): Self = StObject.set(x, "case_sensitive", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[RedactOptions]
     }
     
-    extension [Self <: RedactOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedactOptions] (val x: Self) extends AnyVal {
       
       inline def setCensor(value: String | (js.Function1[/* v */ Any, Any])): Self = StObject.set(x, "censor", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object mod {
       __obj.asInstanceOf[RedactOptionsNoSerialize]
     }
     
-    extension [Self <: RedactOptionsNoSerialize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedactOptionsNoSerialize] (val x: Self) extends AnyVal {
       
       inline def setSerialize(value: `false`): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
     }

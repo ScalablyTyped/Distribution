@@ -16,7 +16,8 @@ object BuildOperationMetadata {
     __obj.asInstanceOf[BuildOperationMetadata]
   }
   
-  extension [Self <: BuildOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: Build): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

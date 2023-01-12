@@ -31,7 +31,8 @@ object ConsentData {
     __obj.asInstanceOf[ConsentData]
   }
   
-  extension [Self <: ConsentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsentData] (val x: Self) extends AnyVal {
     
     inline def setMeaning(value: instance | related | dependents | authoredby): Self = StObject.set(x, "meaning", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object RouteParametersAttributeParameterValue {
     __obj.asInstanceOf[RouteParametersAttributeParameterValue]
   }
   
-  extension [Self <: RouteParametersAttributeParameterValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteParametersAttributeParameterValue] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     

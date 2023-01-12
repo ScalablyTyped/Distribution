@@ -54,7 +54,8 @@ object PlotBulletTargetOptions {
     __obj.asInstanceOf[PlotBulletTargetOptions]
   }
   
-  extension [Self <: PlotBulletTargetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotBulletTargetOptions] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: ColorString): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

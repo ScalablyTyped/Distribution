@@ -19,7 +19,8 @@ object AttrsFillAttrs {
     __obj.asInstanceOf[AttrsFillAttrs]
   }
   
-  extension [Self <: AttrsFillAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsFillAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: FillAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

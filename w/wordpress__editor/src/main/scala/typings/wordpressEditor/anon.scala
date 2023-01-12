@@ -217,7 +217,8 @@ object anon {
       __obj.asInstanceOf[PartialEditorSettings]
     }
     
-    extension [Self <: PartialEditorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialEditorSettings] (val x: Self) extends AnyVal {
       
       inline def setAlignWide(value: Boolean): Self = StObject.set(x, "alignWide", value.asInstanceOf[js.Any])
       
@@ -356,7 +357,8 @@ object anon {
       __obj.asInstanceOf[PostName]
     }
     
-    extension [Self <: PostName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostName] (val x: Self) extends AnyVal {
       
       inline def setPostName(value: String): Self = StObject.set(x, "postName", value.asInstanceOf[js.Any])
       

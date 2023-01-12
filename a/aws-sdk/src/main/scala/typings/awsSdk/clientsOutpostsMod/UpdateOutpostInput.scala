@@ -27,7 +27,8 @@ object UpdateOutpostInput {
     __obj.asInstanceOf[UpdateOutpostInput]
   }
   
-  extension [Self <: UpdateOutpostInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateOutpostInput] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: OutpostDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

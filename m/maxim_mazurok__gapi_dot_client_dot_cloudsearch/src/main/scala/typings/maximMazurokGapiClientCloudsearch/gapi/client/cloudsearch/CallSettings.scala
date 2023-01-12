@@ -46,7 +46,8 @@ object CallSettings {
     __obj.asInstanceOf[CallSettings]
   }
   
-  extension [Self <: CallSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallSettings] (val x: Self) extends AnyVal {
     
     inline def setAccessLock(value: Boolean): Self = StObject.set(x, "accessLock", value.asInstanceOf[js.Any])
     

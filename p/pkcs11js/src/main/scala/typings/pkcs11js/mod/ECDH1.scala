@@ -36,7 +36,8 @@ object ECDH1 {
     __obj.asInstanceOf[ECDH1]
   }
   
-  extension [Self <: ECDH1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ECDH1] (val x: Self) extends AnyVal {
     
     inline def setKdf(value: Double): Self = StObject.set(x, "kdf", value.asInstanceOf[js.Any])
     

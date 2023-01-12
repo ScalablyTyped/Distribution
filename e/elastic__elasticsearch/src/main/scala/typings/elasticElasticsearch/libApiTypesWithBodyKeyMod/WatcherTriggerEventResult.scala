@@ -20,7 +20,8 @@ object WatcherTriggerEventResult {
     __obj.asInstanceOf[WatcherTriggerEventResult]
   }
   
-  extension [Self <: WatcherTriggerEventResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherTriggerEventResult] (val x: Self) extends AnyVal {
     
     inline def setManual(value: WatcherTriggerEventContainer): Self = StObject.set(x, "manual", value.asInstanceOf[js.Any])
     

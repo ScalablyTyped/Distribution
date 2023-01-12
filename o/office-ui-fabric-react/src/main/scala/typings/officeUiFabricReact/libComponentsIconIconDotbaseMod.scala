@@ -27,7 +27,8 @@ object libComponentsIconIconDotbaseMod {
       __obj.asInstanceOf[IIconState]
     }
     
-    extension [Self <: IIconState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIconState] (val x: Self) extends AnyVal {
       
       inline def setImageLoadError(value: Boolean): Self = StObject.set(x, "imageLoadError", value.asInstanceOf[js.Any])
     }

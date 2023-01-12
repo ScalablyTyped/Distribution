@@ -39,7 +39,8 @@ object Map {
       __obj.asInstanceOf[Object3DResult]
     }
     
-    extension [Self <: Object3DResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Object3DResult] (val x: Self) extends AnyVal {
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       

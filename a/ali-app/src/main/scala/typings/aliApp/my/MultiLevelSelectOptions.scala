@@ -31,7 +31,8 @@ object MultiLevelSelectOptions {
     __obj.asInstanceOf[MultiLevelSelectOptions]
   }
   
-  extension [Self <: MultiLevelSelectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiLevelSelectOptions] (val x: Self) extends AnyVal {
     
     inline def setList(value: js.Array[MultiLevelSelectItem]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     

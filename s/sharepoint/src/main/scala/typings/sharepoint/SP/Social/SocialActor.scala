@@ -101,7 +101,8 @@ object SocialActor {
     __obj.asInstanceOf[SocialActor]
   }
   
-  extension [Self <: SocialActor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocialActor] (val x: Self) extends AnyVal {
     
     inline def setGet_accountName(value: () => String): Self = StObject.set(x, "get_accountName", js.Any.fromFunction0(value))
     

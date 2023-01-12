@@ -26,7 +26,8 @@ object IExtension {
     __obj.asInstanceOf[IExtension]
   }
   
-  extension [Self <: IExtension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExtension] (val x: Self) extends AnyVal {
     
     inline def setController(value: Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     

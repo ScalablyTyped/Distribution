@@ -69,7 +69,8 @@ object VoxelVariable {
     __obj.asInstanceOf[VoxelVariable]
   }
   
-  extension [Self <: VoxelVariable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoxelVariable] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

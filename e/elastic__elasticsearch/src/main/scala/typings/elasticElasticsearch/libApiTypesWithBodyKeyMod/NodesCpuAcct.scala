@@ -17,7 +17,8 @@ object NodesCpuAcct {
     __obj.asInstanceOf[NodesCpuAcct]
   }
   
-  extension [Self <: NodesCpuAcct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesCpuAcct] (val x: Self) extends AnyVal {
     
     inline def setControl_group(value: String): Self = StObject.set(x, "control_group", value.asInstanceOf[js.Any])
     

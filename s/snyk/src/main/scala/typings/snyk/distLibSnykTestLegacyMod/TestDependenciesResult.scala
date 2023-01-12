@@ -48,7 +48,8 @@ object TestDependenciesResult {
     __obj.asInstanceOf[TestDependenciesResult]
   }
   
-  extension [Self <: TestDependenciesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestDependenciesResult] (val x: Self) extends AnyVal {
     
     inline def setDepGraphData(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify depGraphLib.DepGraphData */ Any

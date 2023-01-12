@@ -16,7 +16,8 @@ object ExcludedContentLabelObject {
     __obj.asInstanceOf[ExcludedContentLabelObject]
   }
   
-  extension [Self <: ExcludedContentLabelObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcludedContentLabelObject] (val x: Self) extends AnyVal {
     
     inline def setContentLabelType(value: String): Self = StObject.set(x, "contentLabelType", value.asInstanceOf[js.Any])
   }

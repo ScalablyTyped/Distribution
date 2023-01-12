@@ -17,7 +17,8 @@ object IResourceServiceProvider {
     __obj.asInstanceOf[IResourceServiceProvider]
   }
   
-  extension [Self <: IResourceServiceProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IResourceServiceProvider] (val x: Self) extends AnyVal {
     
     inline def setDefaults(value: IResourceOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
   }

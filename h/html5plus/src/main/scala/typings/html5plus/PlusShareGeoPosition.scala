@@ -33,7 +33,8 @@ object PlusShareGeoPosition {
     __obj.asInstanceOf[PlusShareGeoPosition]
   }
   
-  extension [Self <: PlusShareGeoPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusShareGeoPosition] (val x: Self) extends AnyVal {
     
     inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     

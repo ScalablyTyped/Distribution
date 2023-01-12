@@ -17,7 +17,8 @@ object IncludeRemoteServices {
     __obj.asInstanceOf[IncludeRemoteServices]
   }
   
-  extension [Self <: IncludeRemoteServices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeRemoteServices] (val x: Self) extends AnyVal {
     
     inline def setIncludeRemoteServices(value: scala.Double): Self = StObject.set(x, "includeRemoteServices", value.asInstanceOf[js.Any])
     

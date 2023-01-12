@@ -15,7 +15,8 @@ object MKRadioButtonGroup {
     __obj.asInstanceOf[MKRadioButtonGroup]
   }
   
-  extension [Self <: MKRadioButtonGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MKRadioButtonGroup] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: js.Array[Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

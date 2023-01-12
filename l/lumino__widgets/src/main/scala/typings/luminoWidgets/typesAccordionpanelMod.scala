@@ -219,7 +219,8 @@ object typesAccordionpanelMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setAlignment(value: typings.luminoWidgets.typesSplitlayoutMod.SplitLayout.Alignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
         

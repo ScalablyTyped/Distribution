@@ -20,7 +20,8 @@ object MlDataframeEvaluationMetrics {
     __obj.asInstanceOf[MlDataframeEvaluationMetrics]
   }
   
-  extension [Self <: MlDataframeEvaluationMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeEvaluationMetrics] (val x: Self) extends AnyVal {
     
     inline def setAuc_roc(value: MlDataframeEvaluationClassificationMetricsAucRoc): Self = StObject.set(x, "auc_roc", value.asInstanceOf[js.Any])
     

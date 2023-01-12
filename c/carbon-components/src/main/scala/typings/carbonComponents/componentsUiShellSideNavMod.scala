@@ -80,7 +80,8 @@ object componentsUiShellSideNavMod {
       __obj.asInstanceOf[SideNav]
     }
     
-    extension [Self <: SideNav](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideNav] (val x: Self) extends AnyVal {
       
       inline def setChangeState(value: String => Unit): Self = StObject.set(x, "changeState", js.Any.fromFunction1(value))
       
@@ -127,7 +128,8 @@ object componentsUiShellSideNavMod {
       __obj.asInstanceOf[SideNavOptions]
     }
     
-    extension [Self <: SideNavOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideNavOptions] (val x: Self) extends AnyVal {
       
       inline def setClassSideNavExpanded(value: String): Self = StObject.set(x, "classSideNavExpanded", value.asInstanceOf[js.Any])
       

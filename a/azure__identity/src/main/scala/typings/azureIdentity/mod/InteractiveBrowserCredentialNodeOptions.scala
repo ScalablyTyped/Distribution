@@ -38,7 +38,8 @@ object InteractiveBrowserCredentialNodeOptions {
     __obj.asInstanceOf[InteractiveBrowserCredentialNodeOptions]
   }
   
-  extension [Self <: InteractiveBrowserCredentialNodeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractiveBrowserCredentialNodeOptions] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     

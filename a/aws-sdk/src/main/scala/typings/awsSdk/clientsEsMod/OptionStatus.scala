@@ -38,7 +38,8 @@ object OptionStatus {
     __obj.asInstanceOf[OptionStatus]
   }
   
-  extension [Self <: OptionStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionStatus] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     

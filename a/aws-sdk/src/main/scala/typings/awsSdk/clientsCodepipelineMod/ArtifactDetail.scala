@@ -23,7 +23,8 @@ object ArtifactDetail {
     __obj.asInstanceOf[ArtifactDetail]
   }
   
-  extension [Self <: ArtifactDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactDetail] (val x: Self) extends AnyVal {
     
     inline def setName(value: ArtifactName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

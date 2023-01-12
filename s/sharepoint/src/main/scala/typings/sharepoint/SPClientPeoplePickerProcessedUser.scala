@@ -77,7 +77,8 @@ object SPClientPeoplePickerProcessedUser {
     __obj.asInstanceOf[SPClientPeoplePickerProcessedUser]
   }
   
-  extension [Self <: SPClientPeoplePickerProcessedUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SPClientPeoplePickerProcessedUser] (val x: Self) extends AnyVal {
     
     inline def setBuildUserHTML(value: () => String): Self = StObject.set(x, "BuildUserHTML", js.Any.fromFunction0(value))
     

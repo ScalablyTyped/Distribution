@@ -17,7 +17,8 @@ object `130` {
     __obj.asInstanceOf[`130`]
   }
   
-  extension [Self <: `130`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `130`] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.ExtractOctokitResponse<@octokit/openapi-types.@octokit/openapi-types.paths['/repos/{owner}/{repo}/commits/{ref}/check-runs']['get']>['data']['check_runs'] */ js.Any

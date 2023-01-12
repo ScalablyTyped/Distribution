@@ -18,7 +18,8 @@ object ListAccessControlRulesRequest {
     __obj.asInstanceOf[ListAccessControlRulesRequest]
   }
   
-  extension [Self <: ListAccessControlRulesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccessControlRulesRequest] (val x: Self) extends AnyVal {
     
     inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
   }

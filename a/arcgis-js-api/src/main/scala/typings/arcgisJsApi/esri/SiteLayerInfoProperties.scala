@@ -41,7 +41,8 @@ object SiteLayerInfoProperties {
     __obj.asInstanceOf[SiteLayerInfoProperties]
   }
   
-  extension [Self <: SiteLayerInfoProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SiteLayerInfoProperties] (val x: Self) extends AnyVal {
     
     inline def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
     

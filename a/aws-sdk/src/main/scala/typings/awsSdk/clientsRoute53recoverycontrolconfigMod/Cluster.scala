@@ -33,7 +33,8 @@ object Cluster {
     __obj.asInstanceOf[Cluster]
   }
   
-  extension [Self <: Cluster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cluster] (val x: Self) extends AnyVal {
     
     inline def setClusterArn(value: stringMin1Max256PatternAZaZ09): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     

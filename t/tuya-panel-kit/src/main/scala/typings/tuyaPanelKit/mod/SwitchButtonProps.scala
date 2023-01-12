@@ -255,7 +255,8 @@ object SwitchButtonProps {
     __obj.asInstanceOf[SwitchButtonProps]
   }
   
-  extension [Self <: SwitchButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwitchButtonProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     

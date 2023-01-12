@@ -72,7 +72,8 @@ object PivotSchemaDesigner {
       __obj.asInstanceOf[AfterServiceInvokeEventArgs]
     }
     
-    extension [Self <: AfterServiceInvokeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AfterServiceInvokeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object PivotSchemaDesigner {
       __obj.asInstanceOf[BeforeServiceInvokeEventArgs]
     }
     
-    extension [Self <: BeforeServiceInvokeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeServiceInvokeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -150,7 +152,8 @@ object PivotSchemaDesigner {
       __obj.asInstanceOf[DragMoveEventArgs]
     }
     
-    extension [Self <: DragMoveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragMoveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -183,7 +186,8 @@ object PivotSchemaDesigner {
       __obj.asInstanceOf[LoadEventArgs]
     }
     
-    extension [Self <: LoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -282,7 +286,8 @@ object PivotSchemaDesigner {
       __obj.asInstanceOf[typings.ejWebAll.ej.PivotSchemaDesigner.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.PivotSchemaDesigner.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.PivotSchemaDesigner.Model] (val x: Self) extends AnyVal {
       
       inline def setAfterServiceInvoke(value: /* e */ AfterServiceInvokeEventArgs => Unit): Self = StObject.set(x, "afterServiceInvoke", js.Any.fromFunction1(value))
       
@@ -373,7 +378,8 @@ object PivotSchemaDesigner {
       __obj.asInstanceOf[Olap]
     }
     
-    extension [Self <: Olap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Olap] (val x: Self) extends AnyVal {
       
       inline def setShowKPI(value: Boolean): Self = StObject.set(x, "showKPI", value.asInstanceOf[js.Any])
       

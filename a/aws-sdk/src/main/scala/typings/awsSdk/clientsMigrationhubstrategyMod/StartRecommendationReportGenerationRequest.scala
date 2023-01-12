@@ -23,7 +23,8 @@ object StartRecommendationReportGenerationRequest {
     __obj.asInstanceOf[StartRecommendationReportGenerationRequest]
   }
   
-  extension [Self <: StartRecommendationReportGenerationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartRecommendationReportGenerationRequest] (val x: Self) extends AnyVal {
     
     inline def setGroupIdFilter(value: GroupIds): Self = StObject.set(x, "groupIdFilter", value.asInstanceOf[js.Any])
     

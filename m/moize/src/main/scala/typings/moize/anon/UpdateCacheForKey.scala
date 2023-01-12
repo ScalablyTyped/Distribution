@@ -15,7 +15,8 @@ object UpdateCacheForKey {
     __obj.asInstanceOf[UpdateCacheForKey[UpdateWhen]]
   }
   
-  extension [Self <: UpdateCacheForKey[?], UpdateWhen /* <: typings.moize.mod.UpdateCacheForKey */](x: Self & UpdateCacheForKey[UpdateWhen]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCacheForKey[?], UpdateWhen /* <: typings.moize.mod.UpdateCacheForKey */] (val x: Self & UpdateCacheForKey[UpdateWhen]) extends AnyVal {
     
     inline def setUpdateCacheForKey(value: UpdateWhen): Self = StObject.set(x, "updateCacheForKey", value.asInstanceOf[js.Any])
   }

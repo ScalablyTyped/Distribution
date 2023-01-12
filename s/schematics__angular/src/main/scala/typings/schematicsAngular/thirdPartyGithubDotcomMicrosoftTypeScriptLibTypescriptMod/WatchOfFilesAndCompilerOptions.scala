@@ -21,7 +21,8 @@ object WatchOfFilesAndCompilerOptions {
     __obj.asInstanceOf[WatchOfFilesAndCompilerOptions[T]]
   }
   
-  extension [Self <: WatchOfFilesAndCompilerOptions[?], T](x: Self & WatchOfFilesAndCompilerOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchOfFilesAndCompilerOptions[?], T] (val x: Self & WatchOfFilesAndCompilerOptions[T]) extends AnyVal {
     
     inline def setUpdateRootFileNames(value: js.Array[java.lang.String] => Unit): Self = StObject.set(x, "updateRootFileNames", js.Any.fromFunction1(value))
   }

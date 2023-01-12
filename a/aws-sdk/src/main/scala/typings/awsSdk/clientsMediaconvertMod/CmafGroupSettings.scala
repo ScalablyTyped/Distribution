@@ -133,7 +133,8 @@ object CmafGroupSettings {
     __obj.asInstanceOf[CmafGroupSettings]
   }
   
-  extension [Self <: CmafGroupSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CmafGroupSettings] (val x: Self) extends AnyVal {
     
     inline def setAdditionalManifests(value: listOfCmafAdditionalManifest): Self = StObject.set(x, "AdditionalManifests", value.asInstanceOf[js.Any])
     

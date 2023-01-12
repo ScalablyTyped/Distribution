@@ -19,7 +19,8 @@ object ParsedCSSValue {
     __obj.asInstanceOf[ParsedCSSValue]
   }
   
-  extension [Self <: ParsedCSSValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedCSSValue] (val x: Self) extends AnyVal {
     
     inline def setParsed(value: ParsedColor): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
     

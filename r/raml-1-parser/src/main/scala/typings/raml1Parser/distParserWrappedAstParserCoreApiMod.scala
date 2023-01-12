@@ -51,7 +51,8 @@ object distParserWrappedAstParserCoreApiMod {
       __obj.asInstanceOf[AttributeNode]
     }
     
-    extension [Self <: AttributeNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeNode] (val x: Self) extends AnyVal {
       
       inline def setHighLevel(value: () => IAttribute): Self = StObject.set(x, "highLevel", js.Any.fromFunction0(value))
       
@@ -136,7 +137,8 @@ object distParserWrappedAstParserCoreApiMod {
       __obj.asInstanceOf[LoadOptions]
     }
     
-    extension [Self <: LoadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadOptions] (val x: Self) extends AnyVal {
       
       inline def setExpandExpressions(value: Boolean): Self = StObject.set(x, "expandExpressions", value.asInstanceOf[js.Any])
       
@@ -219,7 +221,8 @@ object distParserWrappedAstParserCoreApiMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAttributeDefaults(value: Boolean): Self = StObject.set(x, "attributeDefaults", value.asInstanceOf[js.Any])
       

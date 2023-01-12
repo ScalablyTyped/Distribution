@@ -69,7 +69,8 @@ object dxTreeMap {
       __obj.asInstanceOf[ClickEvent]
     }
     
-    extension [Self <: ClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEvent] (val x: Self) extends AnyVal {
       
       inline def setNode(value: dxTreeMapNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
@@ -92,7 +93,8 @@ object dxTreeMap {
       __obj.asInstanceOf[DrillEvent]
     }
     
-    extension [Self <: DrillEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrillEvent] (val x: Self) extends AnyVal {
       
       inline def setNode(value: dxTreeMapNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
@@ -151,7 +153,8 @@ object dxTreeMap {
       __obj.asInstanceOf[InteractionInfo]
     }
     
-    extension [Self <: InteractionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteractionInfo] (val x: Self) extends AnyVal {
       
       inline def setNode(value: dxTreeMapNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
@@ -170,7 +173,8 @@ object dxTreeMap {
       __obj.asInstanceOf[NodesInitializedEvent]
     }
     
-    extension [Self <: NodesInitializedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesInitializedEvent] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: dxTreeMapNode): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
@@ -189,7 +193,8 @@ object dxTreeMap {
       __obj.asInstanceOf[NodesRenderingEvent]
     }
     
-    extension [Self <: NodesRenderingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodesRenderingEvent] (val x: Self) extends AnyVal {
       
       inline def setNode(value: dxTreeMapNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }

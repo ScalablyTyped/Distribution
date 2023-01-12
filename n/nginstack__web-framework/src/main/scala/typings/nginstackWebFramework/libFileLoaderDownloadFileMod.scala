@@ -33,7 +33,8 @@ object libFileLoaderDownloadFileMod {
       __obj.asInstanceOf[DownloadFile]
     }
     
-    extension [Self <: DownloadFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadFile] (val x: Self) extends AnyVal {
       
       inline def setOpenFile(value: () => typings.nginstackEngine.libIoFileMod.^): Self = StObject.set(x, "openFile", js.Any.fromFunction0(value))
     }

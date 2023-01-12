@@ -39,7 +39,8 @@ object ScopeFolder {
     __obj.asInstanceOf[ScopeFolder]
   }
   
-  extension [Self <: ScopeFolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScopeFolder] (val x: Self) extends AnyVal {
     
     inline def setAddToSearchFolders(value: () => Unit): Self = StObject.set(x, "AddToSearchFolders", js.Any.fromFunction0(value))
     

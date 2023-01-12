@@ -36,7 +36,8 @@ object ISyndicationPerson {
     __obj.asInstanceOf[ISyndicationPerson]
   }
   
-  extension [Self <: ISyndicationPerson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyndicationPerson] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

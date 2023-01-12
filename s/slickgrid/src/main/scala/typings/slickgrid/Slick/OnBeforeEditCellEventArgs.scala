@@ -23,7 +23,8 @@ object OnBeforeEditCellEventArgs {
     __obj.asInstanceOf[OnBeforeEditCellEventArgs[T]]
   }
   
-  extension [Self <: OnBeforeEditCellEventArgs[?], T /* <: SlickData */](x: Self & OnBeforeEditCellEventArgs[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnBeforeEditCellEventArgs[?], T /* <: SlickData */] (val x: Self & OnBeforeEditCellEventArgs[T]) extends AnyVal {
     
     inline def setCell(value: Double): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     

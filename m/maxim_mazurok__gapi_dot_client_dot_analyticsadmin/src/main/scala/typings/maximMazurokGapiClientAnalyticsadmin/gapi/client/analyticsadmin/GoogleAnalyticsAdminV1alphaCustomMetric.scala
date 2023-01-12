@@ -40,7 +40,8 @@ object GoogleAnalyticsAdminV1alphaCustomMetric {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaCustomMetric]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaCustomMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaCustomMetric] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

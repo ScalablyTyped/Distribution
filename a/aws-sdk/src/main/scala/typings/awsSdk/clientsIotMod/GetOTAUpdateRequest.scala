@@ -18,7 +18,8 @@ object GetOTAUpdateRequest {
     __obj.asInstanceOf[GetOTAUpdateRequest]
   }
   
-  extension [Self <: GetOTAUpdateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOTAUpdateRequest] (val x: Self) extends AnyVal {
     
     inline def setOtaUpdateId(value: OTAUpdateId): Self = StObject.set(x, "otaUpdateId", value.asInstanceOf[js.Any])
   }

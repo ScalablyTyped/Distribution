@@ -38,7 +38,8 @@ object ExecuteSqlRequest {
     __obj.asInstanceOf[ExecuteSqlRequest]
   }
   
-  extension [Self <: ExecuteSqlRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteSqlRequest] (val x: Self) extends AnyVal {
     
     inline def setAwsSecretStoreArn(value: Arn): Self = StObject.set(x, "awsSecretStoreArn", value.asInstanceOf[js.Any])
     

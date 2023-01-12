@@ -175,7 +175,8 @@ object sapUiWebcMainColorPaletteItemMod {
       __obj.asInstanceOf[ColorPaletteItemSettings]
     }
     
-    extension [Self <: ColorPaletteItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorPaletteItemSettings] (val x: Self) extends AnyVal {
       
       inline def setValue(value: CSSColor | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

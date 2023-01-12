@@ -45,7 +45,8 @@ object ChownFileResult {
     __obj.asInstanceOf[ChownFileResult]
   }
   
-  extension [Self <: ChownFileResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChownFileResult] (val x: Self) extends AnyVal {
     
     inline def setAcl(value: FileACL): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     

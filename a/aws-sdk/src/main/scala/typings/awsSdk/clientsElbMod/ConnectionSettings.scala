@@ -18,7 +18,8 @@ object ConnectionSettings {
     __obj.asInstanceOf[ConnectionSettings]
   }
   
-  extension [Self <: ConnectionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionSettings] (val x: Self) extends AnyVal {
     
     inline def setIdleTimeout(value: IdleTimeout): Self = StObject.set(x, "IdleTimeout", value.asInstanceOf[js.Any])
   }

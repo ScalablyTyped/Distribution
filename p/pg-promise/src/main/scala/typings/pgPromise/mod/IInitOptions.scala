@@ -54,7 +54,8 @@ object IInitOptions {
     __obj.asInstanceOf[IInitOptions[Ext, C]]
   }
   
-  extension [Self <: IInitOptions[?, ?], Ext, C /* <: IClient */](x: Self & (IInitOptions[Ext, C])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInitOptions[?, ?], Ext, C /* <: IClient */] (val x: Self & (IInitOptions[Ext, C])) extends AnyVal {
     
     inline def setCapSQL(value: Boolean): Self = StObject.set(x, "capSQL", value.asInstanceOf[js.Any])
     

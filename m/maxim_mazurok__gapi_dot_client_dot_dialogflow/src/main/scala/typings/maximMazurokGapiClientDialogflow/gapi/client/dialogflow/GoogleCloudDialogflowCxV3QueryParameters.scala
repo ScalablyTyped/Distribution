@@ -74,7 +74,8 @@ object GoogleCloudDialogflowCxV3QueryParameters {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3QueryParameters]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3QueryParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3QueryParameters] (val x: Self) extends AnyVal {
     
     inline def setAnalyzeQueryTextSentiment(value: Boolean): Self = StObject.set(x, "analyzeQueryTextSentiment", value.asInstanceOf[js.Any])
     

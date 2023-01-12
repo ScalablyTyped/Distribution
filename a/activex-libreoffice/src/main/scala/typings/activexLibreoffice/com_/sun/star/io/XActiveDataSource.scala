@@ -41,7 +41,8 @@ object XActiveDataSource {
     __obj.asInstanceOf[XActiveDataSource]
   }
   
-  extension [Self <: XActiveDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XActiveDataSource] (val x: Self) extends AnyVal {
     
     inline def setGetOutputStream(value: () => XOutputStream): Self = StObject.set(x, "getOutputStream", js.Any.fromFunction0(value))
     

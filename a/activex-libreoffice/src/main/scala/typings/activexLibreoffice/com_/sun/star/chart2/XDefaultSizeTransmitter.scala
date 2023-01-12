@@ -30,7 +30,8 @@ object XDefaultSizeTransmitter {
     __obj.asInstanceOf[XDefaultSizeTransmitter]
   }
   
-  extension [Self <: XDefaultSizeTransmitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDefaultSizeTransmitter] (val x: Self) extends AnyVal {
     
     inline def setSetDefaultSize(value: Size => Unit): Self = StObject.set(x, "setDefaultSize", js.Any.fromFunction1(value))
   }

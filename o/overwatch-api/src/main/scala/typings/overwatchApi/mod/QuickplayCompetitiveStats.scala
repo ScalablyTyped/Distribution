@@ -17,7 +17,8 @@ object QuickplayCompetitiveStats {
     __obj.asInstanceOf[QuickplayCompetitiveStats]
   }
   
-  extension [Self <: QuickplayCompetitiveStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuickplayCompetitiveStats] (val x: Self) extends AnyVal {
     
     inline def setCompetitive(value: js.Array[Stat]): Self = StObject.set(x, "competitive", value.asInstanceOf[js.Any])
     

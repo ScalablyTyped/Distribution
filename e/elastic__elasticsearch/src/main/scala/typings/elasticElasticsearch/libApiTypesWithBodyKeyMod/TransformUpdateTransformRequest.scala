@@ -25,7 +25,8 @@ object TransformUpdateTransformRequest {
     __obj.asInstanceOf[TransformUpdateTransformRequest]
   }
   
-  extension [Self <: TransformUpdateTransformRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformUpdateTransformRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Meta): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

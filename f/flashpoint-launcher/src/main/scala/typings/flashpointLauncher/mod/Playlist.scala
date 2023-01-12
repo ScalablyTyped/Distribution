@@ -46,7 +46,8 @@ object Playlist {
     __obj.asInstanceOf[Playlist]
   }
   
-  extension [Self <: Playlist](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Playlist] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object RuleCondition {
     __obj.asInstanceOf[RuleCondition]
   }
   
-  extension [Self <: RuleCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleCondition] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

@@ -73,7 +73,8 @@ object Create {
     __obj.asInstanceOf[Create]
   }
   
-  extension [Self <: Create](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Create] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm_option(value: Algorithm): Self = StObject.set(x, "algorithm_option", value.asInstanceOf[js.Any])
     

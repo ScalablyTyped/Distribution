@@ -68,7 +68,8 @@ object StartChangeRequestExecutionRequest {
     __obj.asInstanceOf[StartChangeRequestExecutionRequest]
   }
   
-  extension [Self <: StartChangeRequestExecutionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartChangeRequestExecutionRequest] (val x: Self) extends AnyVal {
     
     inline def setAutoApprove(value: Boolean): Self = StObject.set(x, "AutoApprove", value.asInstanceOf[js.Any])
     

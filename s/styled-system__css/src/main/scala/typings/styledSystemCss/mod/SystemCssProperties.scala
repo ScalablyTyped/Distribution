@@ -3988,7 +3988,8 @@ object SystemCssProperties {
     __obj.asInstanceOf[SystemCssProperties]
   }
   
-  extension [Self <: SystemCssProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemCssProperties] (val x: Self) extends AnyVal {
     
     inline def setAccentColor(
       value: ResponsiveStyleValue[js.UndefOr[AccentColor]] | (js.Function1[/* theme */ Any, ResponsiveStyleValue[js.UndefOr[AccentColor]]]) | SystemStyleObject

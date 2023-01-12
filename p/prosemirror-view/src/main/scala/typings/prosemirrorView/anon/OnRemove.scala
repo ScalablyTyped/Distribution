@@ -20,7 +20,8 @@ object OnRemove {
     __obj.asInstanceOf[OnRemove]
   }
   
-  extension [Self <: OnRemove](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnRemove] (val x: Self) extends AnyVal {
     
     inline def setOnRemove(value: /* decorationSpec */ Any => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
     

@@ -170,7 +170,8 @@ object libEsmComponentsAlertAlertMod {
       __obj.asInstanceOf[IAlertProps]
     }
     
-    extension [Self <: IAlertProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAlertProps] (val x: Self) extends AnyVal {
       
       inline def setCanEscapeKeyCancel(value: Boolean): Self = StObject.set(x, "canEscapeKeyCancel", value.asInstanceOf[js.Any])
       

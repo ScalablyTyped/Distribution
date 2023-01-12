@@ -163,7 +163,8 @@ object PartialRecordkeyofCoreHea {
     __obj.asInstanceOf[PartialRecordkeyofCoreHea]
   }
   
-  extension [Self <: PartialRecordkeyofCoreHea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRecordkeyofCoreHea] (val x: Self) extends AnyVal {
     
     inline def setFormat(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align

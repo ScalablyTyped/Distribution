@@ -23,7 +23,8 @@ object typesInterfacesTypeHelpOptionsDotinterfaceMod {
       __obj.asInstanceOf[TypeHelpOptions]
     }
     
-    extension [Self <: TypeHelpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeHelpOptions] (val x: Self) extends AnyVal {
       
       inline def setNewObject(value: Any): Self = StObject.set(x, "newObject", value.asInstanceOf[js.Any])
       

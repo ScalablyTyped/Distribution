@@ -18,7 +18,8 @@ object LexToken {
     __obj.asInstanceOf[LexToken[Type]]
   }
   
-  extension [Self <: LexToken[?], Type /* <: LexTokenType */](x: Self & LexToken[Type]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexToken[?], Type /* <: LexTokenType */] (val x: Self & LexToken[Type]) extends AnyVal {
     
     inline def setLoc(value: Loc): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     

@@ -210,7 +210,8 @@ object container {
       __obj.asInstanceOf[IAbstractContainer]
     }
     
-    extension [Self <: IAbstractContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstractContainer] (val x: Self) extends AnyVal {
       
       inline def setActiveItem(value: Any): Self = StObject.set(x, "activeItem", value.asInstanceOf[js.Any])
       
@@ -371,7 +372,8 @@ object container {
       __obj.asInstanceOf[typings.extjs.Ext.container.IButtonGroup]
     }
     
-    extension [Self <: typings.extjs.Ext.container.IButtonGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.container.IButtonGroup] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -410,7 +412,8 @@ object container {
       __obj.asInstanceOf[typings.extjs.Ext.container.IContainer]
     }
     
-    extension [Self <: typings.extjs.Ext.container.IContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.container.IContainer] (val x: Self) extends AnyVal {
       
       inline def setAnchorSize(value: Any): Self = StObject.set(x, "anchorSize", value.asInstanceOf[js.Any])
       
@@ -490,7 +493,8 @@ object container {
       __obj.asInstanceOf[IDockingContainer]
     }
     
-    extension [Self <: IDockingContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDockingContainer] (val x: Self) extends AnyVal {
       
       inline def setAddDocked(value: (/* component */ js.UndefOr[Any], /* pos */ js.UndefOr[Double]) => Array): Self = StObject.set(x, "addDocked", js.Any.fromFunction2(value))
       
@@ -548,7 +552,8 @@ object container {
       __obj.asInstanceOf[typings.extjs.Ext.container.IViewport]
     }
     
-    extension [Self <: typings.extjs.Ext.container.IViewport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.container.IViewport] (val x: Self) extends AnyVal {
       
       inline def setIsViewport(value: Boolean): Self = StObject.set(x, "isViewport", value.asInstanceOf[js.Any])
       

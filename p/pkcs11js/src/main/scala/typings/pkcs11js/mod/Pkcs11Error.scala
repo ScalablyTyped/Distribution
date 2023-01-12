@@ -23,7 +23,8 @@ object Pkcs11Error {
     __obj.asInstanceOf[Pkcs11Error]
   }
   
-  extension [Self <: Pkcs11Error](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pkcs11Error] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
   }

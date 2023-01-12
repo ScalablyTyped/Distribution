@@ -50,7 +50,8 @@ object LocationObjectCoords {
     __obj.asInstanceOf[LocationObjectCoords]
   }
   
-  extension [Self <: LocationObjectCoords](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationObjectCoords] (val x: Self) extends AnyVal {
     
     inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     

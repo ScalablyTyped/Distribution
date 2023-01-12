@@ -56,7 +56,8 @@ object libLoggingIloggerMod {
       __obj.asInstanceOf[ILogger]
     }
     
-    extension [Self <: ILogger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILogger] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: (String, /* repeated */ Any) => Any): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
       

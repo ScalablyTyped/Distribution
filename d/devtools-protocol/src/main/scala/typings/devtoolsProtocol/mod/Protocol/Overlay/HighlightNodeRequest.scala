@@ -41,7 +41,8 @@ object HighlightNodeRequest {
     __obj.asInstanceOf[HighlightNodeRequest]
   }
   
-  extension [Self <: HighlightNodeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlightNodeRequest] (val x: Self) extends AnyVal {
     
     inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     

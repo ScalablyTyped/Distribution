@@ -100,7 +100,8 @@ object mod {
       __obj.asInstanceOf[PugOptions]
     }
     
-    extension [Self <: PugOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PugOptions] (val x: Self) extends AnyVal {
       
       inline def setApp(value: ^[DefaultState, DefaultContext]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object mod {
       __obj.asInstanceOf[RenderOptions]
     }
     
-    extension [Self <: RenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
       
       inline def setFromString(value: Boolean): Self = StObject.set(x, "fromString", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object ICascade {
     __obj.asInstanceOf[ICascade]
   }
   
-  extension [Self <: ICascade](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICascade] (val x: Self) extends AnyVal {
     
     inline def set$initial(value: Any): Self = StObject.set(x, "$initial", value.asInstanceOf[js.Any])
     

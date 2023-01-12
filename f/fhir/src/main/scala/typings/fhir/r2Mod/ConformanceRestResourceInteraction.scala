@@ -40,7 +40,8 @@ object ConformanceRestResourceInteraction {
     __obj.asInstanceOf[ConformanceRestResourceInteraction]
   }
   
-  extension [Self <: ConformanceRestResourceInteraction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConformanceRestResourceInteraction] (val x: Self) extends AnyVal {
     
     inline def setCode(
       value: read | vread | update | delete_ | `history-instance` | validate | `history-type` | create | `search-type`

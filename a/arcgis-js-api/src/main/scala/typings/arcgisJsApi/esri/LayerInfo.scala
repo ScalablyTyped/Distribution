@@ -76,7 +76,8 @@ object LayerInfo {
     __obj.asInstanceOf[LayerInfo]
   }
   
-  extension [Self <: LayerInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerInfo] (val x: Self) extends AnyVal {
     
     inline def setAddEnabled(value: Boolean): Self = StObject.set(x, "addEnabled", value.asInstanceOf[js.Any])
     

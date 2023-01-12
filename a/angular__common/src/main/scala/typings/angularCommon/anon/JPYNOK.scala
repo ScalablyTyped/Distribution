@@ -32,7 +32,8 @@ object JPYNOK {
     __obj.asInstanceOf[JPYNOK]
   }
   
-  extension [Self <: JPYNOK](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JPYNOK] (val x: Self) extends AnyVal {
     
     inline def setDKK(value: js.Array[String]): Self = StObject.set(x, "DKK", value.asInstanceOf[js.Any])
     

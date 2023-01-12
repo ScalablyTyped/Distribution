@@ -176,7 +176,8 @@ object libNodeInternalMod {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setClassOrder(value: Double): Self = StObject.set(x, "classOrder", value.asInstanceOf[js.Any])
       

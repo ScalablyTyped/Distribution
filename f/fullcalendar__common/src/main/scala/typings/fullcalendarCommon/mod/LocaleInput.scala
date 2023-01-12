@@ -17,7 +17,8 @@ object LocaleInput {
     __obj.asInstanceOf[LocaleInput]
   }
   
-  extension [Self <: LocaleInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocaleInput] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
   }

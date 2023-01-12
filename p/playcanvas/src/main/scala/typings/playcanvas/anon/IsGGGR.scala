@@ -17,7 +17,8 @@ object IsGGGR {
     __obj.asInstanceOf[IsGGGR]
   }
   
-  extension [Self <: IsGGGR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsGGGR] (val x: Self) extends AnyVal {
     
     inline def setIsGGGR(value: Boolean): Self = StObject.set(x, "isGGGR", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object CertificateInfoValidity {
     __obj.asInstanceOf[CertificateInfoValidity]
   }
   
-  extension [Self <: CertificateInfoValidity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateInfoValidity] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

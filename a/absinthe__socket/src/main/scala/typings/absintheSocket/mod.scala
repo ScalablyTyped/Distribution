@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[AbsintheSocket[T]]
     }
     
-    extension [Self <: AbsintheSocket[?], T](x: Self & AbsintheSocket[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbsintheSocket[?], T] (val x: Self & AbsintheSocket[T]) extends AnyVal {
       
       inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object mod {
       __obj.asInstanceOf[GqlRequest[Variables]]
     }
     
-    extension [Self <: GqlRequest[?], Variables](x: Self & GqlRequest[Variables]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GqlRequest[?], Variables] (val x: Self & GqlRequest[Variables]) extends AnyVal {
       
       inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       
@@ -148,7 +150,8 @@ object mod {
       __obj.asInstanceOf[Notifier[Variables, Result]]
     }
     
-    extension [Self <: Notifier[?, ?], Variables, Result](x: Self & (Notifier[Variables, Result])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Notifier[?, ?], Variables, Result] (val x: Self & (Notifier[Variables, Result])) extends AnyVal {
       
       inline def setActiveObservers(value: js.Array[Observer[Variables, Result]]): Self = StObject.set(x, "activeObservers", value.asInstanceOf[js.Any])
       
@@ -191,7 +194,8 @@ object mod {
       __obj.asInstanceOf[Observer[Variables, Result]]
     }
     
-    extension [Self <: Observer[?, ?], Variables, Result](x: Self & (Observer[Variables, Result])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observer[?, ?], Variables, Result] (val x: Self & (Observer[Variables, Result])) extends AnyVal {
       
       inline def setOnAbort(value: /* error */ js.Error => Any): Self = StObject.set(x, "onAbort", js.Any.fromFunction1(value))
       

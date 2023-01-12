@@ -91,7 +91,8 @@ object dropdownMenuMod {
         __obj.asInstanceOf[BaseProps]
       }
       
-      extension [Self <: BaseProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BaseProps] (val x: Self) extends AnyVal {
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
@@ -158,7 +159,8 @@ object dropdownMenuMod {
         __obj.asInstanceOf[Control]
       }
       
-      extension [Self <: Control](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Control] (val x: Self) extends AnyVal {
         
         inline def setIcon(value: Icon | Element): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
@@ -213,7 +215,8 @@ object dropdownMenuMod {
         __obj.asInstanceOf[PropsWithChildren]
       }
       
-      extension [Self <: PropsWithChildren](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PropsWithChildren] (val x: Self) extends AnyVal {
         
         inline def setChildren(value: RenderProps => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       }
@@ -239,7 +242,8 @@ object dropdownMenuMod {
         __obj.asInstanceOf[PropsWithControls]
       }
       
-      extension [Self <: PropsWithControls](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PropsWithControls] (val x: Self) extends AnyVal {
         
         inline def setControls(value: js.Array[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
         

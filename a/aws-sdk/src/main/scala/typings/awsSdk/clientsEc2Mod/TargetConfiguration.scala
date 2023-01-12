@@ -23,7 +23,8 @@ object TargetConfiguration {
     __obj.asInstanceOf[TargetConfiguration]
   }
   
-  extension [Self <: TargetConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetConfiguration] (val x: Self) extends AnyVal {
     
     inline def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     

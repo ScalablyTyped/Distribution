@@ -19,7 +19,8 @@ object GoogleCloudVisionV1p4beta1BoundingPoly {
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1BoundingPoly]
   }
   
-  extension [Self <: GoogleCloudVisionV1p4beta1BoundingPoly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p4beta1BoundingPoly] (val x: Self) extends AnyVal {
     
     inline def setNormalizedVertices(value: js.Array[GoogleCloudVisionV1p4beta1NormalizedVertex]): Self = StObject.set(x, "normalizedVertices", value.asInstanceOf[js.Any])
     

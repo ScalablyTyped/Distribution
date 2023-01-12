@@ -59,7 +59,8 @@ object ComponentOptions {
     __obj.asInstanceOf[ComponentOptions]
   }
   
-  extension [Self <: ComponentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentOptions] (val x: Self) extends AnyVal {
     
     inline def setAssetsDirs(value: js.Array[String]): Self = StObject.set(x, "assetsDirs", value.asInstanceOf[js.Any])
     

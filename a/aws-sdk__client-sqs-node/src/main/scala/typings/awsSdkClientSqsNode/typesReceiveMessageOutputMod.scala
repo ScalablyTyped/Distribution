@@ -31,7 +31,8 @@ object typesReceiveMessageOutputMod {
       __obj.asInstanceOf[ReceiveMessageOutput]
     }
     
-    extension [Self <: ReceiveMessageOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReceiveMessageOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

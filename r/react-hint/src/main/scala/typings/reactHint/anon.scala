@@ -91,7 +91,8 @@ object anon {
       __obj.asInstanceOf[Click]
     }
     
-    extension [Self <: Click](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Click] (val x: Self) extends AnyVal {
       
       inline def setClick(value: Boolean): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object anon {
       __obj.asInstanceOf[Hide]
     }
     
-    extension [Self <: Hide](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hide] (val x: Self) extends AnyVal {
       
       inline def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       
@@ -172,7 +174,8 @@ object anon {
       __obj.asInstanceOf[TypeofComponent]
     }
     
-    extension [Self <: TypeofComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofComponent] (val x: Self) extends AnyVal {
       
       inline def setContextType(value: Context[Any]): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
       

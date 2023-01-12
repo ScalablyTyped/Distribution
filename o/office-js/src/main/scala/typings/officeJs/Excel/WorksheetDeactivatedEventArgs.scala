@@ -37,7 +37,8 @@ object WorksheetDeactivatedEventArgs {
     __obj.asInstanceOf[WorksheetDeactivatedEventArgs]
   }
   
-  extension [Self <: WorksheetDeactivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetDeactivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setType(value: WorksheetDeactivated): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

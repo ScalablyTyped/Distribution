@@ -23,7 +23,8 @@ object DeleteResourceShareResponse {
     __obj.asInstanceOf[DeleteResourceShareResponse]
   }
   
-  extension [Self <: DeleteResourceShareResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteResourceShareResponse] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

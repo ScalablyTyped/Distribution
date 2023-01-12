@@ -510,7 +510,8 @@ object OmitPropstitlestringundefAccessKey {
     __obj.asInstanceOf[OmitPropstitlestringundefAccessKey]
   }
   
-  extension [Self <: OmitPropstitlestringundefAccessKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitPropstitlestringundefAccessKey] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

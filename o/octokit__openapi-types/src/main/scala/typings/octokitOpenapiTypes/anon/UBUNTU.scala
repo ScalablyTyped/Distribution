@@ -19,7 +19,8 @@ object UBUNTU {
     __obj.asInstanceOf[UBUNTU]
   }
   
-  extension [Self <: UBUNTU](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UBUNTU] (val x: Self) extends AnyVal {
     
     inline def setMACOS(value: Jobruns): Self = StObject.set(x, "MACOS", value.asInstanceOf[js.Any])
     

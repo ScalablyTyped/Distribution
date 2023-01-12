@@ -32,7 +32,8 @@ object MaxAngle {
     __obj.asInstanceOf[MaxAngle]
   }
   
-  extension [Self <: MaxAngle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxAngle] (val x: Self) extends AnyVal {
     
     inline def setBendAxis(value: Vector3): Self = StObject.set(x, "bendAxis", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object HandshakeResource {
     __obj.asInstanceOf[HandshakeResource]
   }
   
-  extension [Self <: HandshakeResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandshakeResource] (val x: Self) extends AnyVal {
     
     inline def setResources(value: HandshakeResources): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     

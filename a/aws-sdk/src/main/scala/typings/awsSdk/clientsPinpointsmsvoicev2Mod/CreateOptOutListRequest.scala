@@ -28,7 +28,8 @@ object CreateOptOutListRequest {
     __obj.asInstanceOf[CreateOptOutListRequest]
   }
   
-  extension [Self <: CreateOptOutListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateOptOutListRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

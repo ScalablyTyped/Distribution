@@ -101,7 +101,8 @@ object mod {
       __obj.asInstanceOf[IntrospectResult]
     }
     
-    extension [Self <: IntrospectResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntrospectResult] (val x: Self) extends AnyVal {
       
       inline def setActive(value: `true` | typings.tokenIntrospection.tokenIntrospectionStrings.`true`): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     }
@@ -193,7 +194,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       

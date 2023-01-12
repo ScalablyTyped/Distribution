@@ -15,7 +15,8 @@ object ReferenceLink {
     __obj.asInstanceOf[ReferenceLink]
   }
   
-  extension [Self <: ReferenceLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceLink] (val x: Self) extends AnyVal {
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
   }

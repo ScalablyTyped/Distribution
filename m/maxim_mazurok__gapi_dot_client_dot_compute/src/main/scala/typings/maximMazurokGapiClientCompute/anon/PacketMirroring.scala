@@ -67,7 +67,8 @@ object PacketMirroring {
     __obj.asInstanceOf[PacketMirroring]
   }
   
-  extension [Self <: PacketMirroring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PacketMirroring] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

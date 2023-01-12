@@ -17,7 +17,8 @@ object VastResponse {
     __obj.asInstanceOf[VastResponse]
   }
   
-  extension [Self <: VastResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VastResponse] (val x: Self) extends AnyVal {
     
     inline def setAds(value: js.Array[VastAd]): Self = StObject.set(x, "ads", value.asInstanceOf[js.Any])
     

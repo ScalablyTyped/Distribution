@@ -23,7 +23,8 @@ object WebvttDestinationSettings {
     __obj.asInstanceOf[WebvttDestinationSettings]
   }
   
-  extension [Self <: WebvttDestinationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebvttDestinationSettings] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: WebvttAccessibilitySubs): Self = StObject.set(x, "Accessibility", value.asInstanceOf[js.Any])
     

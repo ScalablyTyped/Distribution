@@ -28,7 +28,8 @@ object FunctionBreakpoint {
     __obj.asInstanceOf[FunctionBreakpoint]
   }
   
-  extension [Self <: FunctionBreakpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionBreakpoint] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object Reverse {
     __obj.asInstanceOf[Reverse[Datum]]
   }
   
-  extension [Self <: Reverse[?], Datum](x: Self & Reverse[Datum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reverse[?], Datum] (val x: Self & Reverse[Datum]) extends AnyVal {
     
     inline def setReverse(value: js.Array[Any] => js.Array[Any]): Self = StObject.set(x, "reverse", js.Any.fromFunction1(value))
     

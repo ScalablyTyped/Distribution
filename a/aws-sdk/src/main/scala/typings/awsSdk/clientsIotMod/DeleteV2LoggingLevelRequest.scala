@@ -23,7 +23,8 @@ object DeleteV2LoggingLevelRequest {
     __obj.asInstanceOf[DeleteV2LoggingLevelRequest]
   }
   
-  extension [Self <: DeleteV2LoggingLevelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteV2LoggingLevelRequest] (val x: Self) extends AnyVal {
     
     inline def setTargetName(value: LogTargetName): Self = StObject.set(x, "targetName", value.asInstanceOf[js.Any])
     

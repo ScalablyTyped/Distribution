@@ -72,7 +72,8 @@ object libPermissionClauseGeneratorMod {
       __obj.asInstanceOf[PermissionClauseGenerator]
     }
     
-    extension [Self <: PermissionClauseGenerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PermissionClauseGenerator] (val x: Self) extends AnyVal {
       
       inline def setAddClassPermission(value: (Any, Any) => Unit): Self = StObject.set(x, "addClassPermission", js.Any.fromFunction2(value))
       

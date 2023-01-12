@@ -28,7 +28,8 @@ object XPropertyControlFactory {
     __obj.asInstanceOf[XPropertyControlFactory]
   }
   
-  extension [Self <: XPropertyControlFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPropertyControlFactory] (val x: Self) extends AnyVal {
     
     inline def setCreatePropertyControl(value: (Double, Boolean) => XPropertyControl): Self = StObject.set(x, "createPropertyControl", js.Any.fromFunction2(value))
   }

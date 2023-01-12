@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[DisableHeader]
     }
     
-    extension [Self <: DisableHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisableHeader] (val x: Self) extends AnyVal {
       
       inline def setDisableHeader(value: Boolean): Self = StObject.set(x, "disableHeader", value.asInstanceOf[js.Any])
       

@@ -101,7 +101,8 @@ object AUDBBD {
     __obj.asInstanceOf[AUDBBD]
   }
   
-  extension [Self <: AUDBBD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AUDBBD] (val x: Self) extends AnyVal {
     
     inline def setAUD(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     

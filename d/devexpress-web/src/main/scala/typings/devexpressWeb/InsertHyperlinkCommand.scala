@@ -27,7 +27,8 @@ object InsertHyperlinkCommand {
     __obj.asInstanceOf[InsertHyperlinkCommand]
   }
   
-  extension [Self <: InsertHyperlinkCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertHyperlinkCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: HyperlinkSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     

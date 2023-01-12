@@ -19,7 +19,8 @@ object AuthorizedItemId {
     __obj.asInstanceOf[AuthorizedItemId]
   }
   
-  extension [Self <: AuthorizedItemId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizedItemId] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

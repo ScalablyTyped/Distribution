@@ -53,7 +53,8 @@ object UserSettingsSummary {
     __obj.asInstanceOf[UserSettingsSummary]
   }
   
-  extension [Self <: UserSettingsSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserSettingsSummary] (val x: Self) extends AnyVal {
     
     inline def setCopyAllowed(value: EnabledType): Self = StObject.set(x, "copyAllowed", value.asInstanceOf[js.Any])
     

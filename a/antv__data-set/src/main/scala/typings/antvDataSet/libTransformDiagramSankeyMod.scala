@@ -35,7 +35,8 @@ object libTransformDiagramSankeyMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setNodeAlign(value: sankeyLeft | sankeyRight | sankeyCenter | sankeyJustify): Self = StObject.set(x, "nodeAlign", value.asInstanceOf[js.Any])
       

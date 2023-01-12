@@ -43,7 +43,8 @@ object StructuredFormatting {
     __obj.asInstanceOf[StructuredFormatting]
   }
   
-  extension [Self <: StructuredFormatting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructuredFormatting] (val x: Self) extends AnyVal {
     
     inline def setMain_text(value: String): Self = StObject.set(x, "main_text", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object MetadataOptions {
     __obj.asInstanceOf[MetadataOptions]
   }
   
-  extension [Self <: MetadataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataOptions] (val x: Self) extends AnyVal {
     
     inline def setCacheableRequest(value: Boolean): Self = StObject.set(x, "cacheableRequest", value.asInstanceOf[js.Any])
     

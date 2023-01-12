@@ -16,7 +16,8 @@ object PatchParametersPathAuthorid {
     __obj.asInstanceOf[PatchParametersPathAuthorid]
   }
   
-  extension [Self <: PatchParametersPathAuthorid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchParametersPathAuthorid] (val x: Self) extends AnyVal {
     
     inline def setPatch(value: ParametersPathAuthorid): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }

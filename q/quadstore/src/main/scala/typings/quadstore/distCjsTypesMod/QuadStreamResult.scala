@@ -23,7 +23,8 @@ object QuadStreamResult {
     __obj.asInstanceOf[QuadStreamResult]
   }
   
-  extension [Self <: QuadStreamResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuadStreamResult] (val x: Self) extends AnyVal {
     
     inline def setIterator(value: AsyncIterator[Quad]): Self = StObject.set(x, "iterator", value.asInstanceOf[js.Any])
     

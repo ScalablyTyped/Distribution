@@ -68,7 +68,8 @@ object Method {
     __obj.asInstanceOf[Method]
   }
   
-  extension [Self <: Method](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Method] (val x: Self) extends AnyVal {
     
     inline def setApiKeyRequired(value: NullableBoolean): Self = StObject.set(x, "apiKeyRequired", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object TSUndefinedKeyword {
   @js.native
   def apply(): TSUndefinedKeyword = js.native
   
-  extension [Self <: TSUndefinedKeyword](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSUndefinedKeyword] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.babelTypes.babelTypesStrings.TSUndefinedKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

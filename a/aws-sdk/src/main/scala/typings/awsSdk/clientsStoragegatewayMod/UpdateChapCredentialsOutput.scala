@@ -23,7 +23,8 @@ object UpdateChapCredentialsOutput {
     __obj.asInstanceOf[UpdateChapCredentialsOutput]
   }
   
-  extension [Self <: UpdateChapCredentialsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateChapCredentialsOutput] (val x: Self) extends AnyVal {
     
     inline def setInitiatorName(value: IqnName): Self = StObject.set(x, "InitiatorName", value.asInstanceOf[js.Any])
     

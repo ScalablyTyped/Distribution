@@ -101,7 +101,8 @@ object srcNgtscIncrementalSrcStateMod {
       __obj.asInstanceOf[AnalyzedIncrementalState]
     }
     
-    extension [Self <: AnalyzedIncrementalState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyzedIncrementalState] (val x: Self) extends AnyVal {
       
       inline def setDepGraph(value: FileDependencyGraph[SourceFile]): Self = StObject.set(x, "depGraph", value.asInstanceOf[js.Any])
       
@@ -157,7 +158,8 @@ object srcNgtscIncrementalSrcStateMod {
       __obj.asInstanceOf[DeltaIncrementalState]
     }
     
-    extension [Self <: DeltaIncrementalState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeltaIncrementalState] (val x: Self) extends AnyVal {
       
       inline def setChangedResourceFiles(value: Set[AbsoluteFsPath]): Self = StObject.set(x, "changedResourceFiles", value.asInstanceOf[js.Any])
       
@@ -182,7 +184,8 @@ object srcNgtscIncrementalSrcStateMod {
       __obj.asInstanceOf[FreshIncrementalState]
     }
     
-    extension [Self <: FreshIncrementalState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FreshIncrementalState] (val x: Self) extends AnyVal {
       
       inline def setKind(value: Fresh): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     }

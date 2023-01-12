@@ -573,7 +573,8 @@ object mod {
       __obj.asInstanceOf[Project]
     }
     
-    extension [Self <: Project](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Project] (val x: Self) extends AnyVal {
       
       inline def setGeneral_token(value: String): Self = StObject.set(x, "general_token", value.asInstanceOf[js.Any])
       
@@ -612,7 +613,8 @@ object mod {
       __obj.asInstanceOf[RequestOption]
     }
     
-    extension [Self <: RequestOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOption] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

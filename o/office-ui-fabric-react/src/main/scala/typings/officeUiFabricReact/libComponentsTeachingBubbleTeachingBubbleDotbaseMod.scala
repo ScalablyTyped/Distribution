@@ -46,7 +46,8 @@ object libComponentsTeachingBubbleTeachingBubbleDotbaseMod {
       __obj.asInstanceOf[ITeachingBubbleState]
     }
     
-    extension [Self <: ITeachingBubbleState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITeachingBubbleState] (val x: Self) extends AnyVal {
       
       inline def setIsTeachingBubbleVisible(value: Boolean): Self = StObject.set(x, "isTeachingBubbleVisible", value.asInstanceOf[js.Any])
       

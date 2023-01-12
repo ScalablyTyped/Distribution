@@ -33,7 +33,8 @@ object ListAliasesRequest {
     __obj.asInstanceOf[ListAliasesRequest]
   }
   
-  extension [Self <: ListAliasesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAliasesRequest] (val x: Self) extends AnyVal {
     
     inline def setEntityId(value: WorkMailIdentifier): Self = StObject.set(x, "EntityId", value.asInstanceOf[js.Any])
     

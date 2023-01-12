@@ -18,7 +18,8 @@ object StopExecutionOutput {
     __obj.asInstanceOf[StopExecutionOutput]
   }
   
-  extension [Self <: StopExecutionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopExecutionOutput] (val x: Self) extends AnyVal {
     
     inline def setStopDate(value: js.Date): Self = StObject.set(x, "stopDate", value.asInstanceOf[js.Any])
   }

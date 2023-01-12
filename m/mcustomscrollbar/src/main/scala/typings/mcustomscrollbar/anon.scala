@@ -114,7 +114,8 @@ object anon {
       __obj.asInstanceOf[AlwaysTriggerOffsets]
     }
     
-    extension [Self <: AlwaysTriggerOffsets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlwaysTriggerOffsets] (val x: Self) extends AnyVal {
       
       inline def setAlwaysTriggerOffsets(value: Boolean): Self = StObject.set(x, "alwaysTriggerOffsets", value.asInstanceOf[js.Any])
       
@@ -265,7 +266,8 @@ object anon {
       __obj.asInstanceOf[AutoExpandHorizontalScroll]
     }
     
-    extension [Self <: AutoExpandHorizontalScroll](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoExpandHorizontalScroll] (val x: Self) extends AnyVal {
       
       inline def setAutoExpandHorizontalScroll(value: Boolean): Self = StObject.set(x, "autoExpandHorizontalScroll", value.asInstanceOf[js.Any])
       
@@ -364,7 +366,8 @@ object anon {
       __obj.asInstanceOf[Axis]
     }
     
-    extension [Self <: Axis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Axis] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: typings.mcustomscrollbar.mcustomscrollbarStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -429,7 +432,8 @@ object anon {
       __obj.asInstanceOf[Enable]
     }
     
-    extension [Self <: Enable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enable] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -476,7 +480,8 @@ object anon {
       __obj.asInstanceOf[ScrollAmount]
     }
     
-    extension [Self <: ScrollAmount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollAmount] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       

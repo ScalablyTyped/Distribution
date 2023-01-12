@@ -15,7 +15,8 @@ object IAuthenticationResultVaultFinal {
     __obj.asInstanceOf[IAuthenticationResultVaultFinal]
   }
   
-  extension [Self <: IAuthenticationResultVaultFinal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAuthenticationResultVaultFinal] (val x: Self) extends AnyVal {
     
     inline def setVault(value: IVault): Self = StObject.set(x, "Vault", value.asInstanceOf[js.Any])
   }

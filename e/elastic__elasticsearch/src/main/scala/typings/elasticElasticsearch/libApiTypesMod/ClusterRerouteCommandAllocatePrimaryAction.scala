@@ -21,7 +21,8 @@ object ClusterRerouteCommandAllocatePrimaryAction {
     __obj.asInstanceOf[ClusterRerouteCommandAllocatePrimaryAction]
   }
   
-  extension [Self <: ClusterRerouteCommandAllocatePrimaryAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterRerouteCommandAllocatePrimaryAction] (val x: Self) extends AnyVal {
     
     inline def setAccept_data_loss(value: Boolean): Self = StObject.set(x, "accept_data_loss", value.asInstanceOf[js.Any])
     

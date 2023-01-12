@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[Appear]
     }
     
-    extension [Self <: Appear](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Appear] (val x: Self) extends AnyVal {
       
       inline def setAppear(value: () => Unit): Self = StObject.set(x, "appear", js.Any.fromFunction0(value))
       

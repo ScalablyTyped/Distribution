@@ -45,7 +45,8 @@ object buildCommandsBrowserSavePDFMod {
       __obj.asInstanceOf[PDFPrintOptions]
     }
     
-    extension [Self <: PDFPrintOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PDFPrintOptions] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       

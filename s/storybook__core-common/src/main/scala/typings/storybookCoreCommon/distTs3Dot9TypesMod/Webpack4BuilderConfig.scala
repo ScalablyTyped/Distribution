@@ -20,7 +20,8 @@ object Webpack4BuilderConfig {
     __obj.asInstanceOf[Webpack4BuilderConfig]
   }
   
-  extension [Self <: Webpack4BuilderConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Webpack4BuilderConfig] (val x: Self) extends AnyVal {
     
     inline def setName(value: webpack4): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

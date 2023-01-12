@@ -106,7 +106,8 @@ object libCommonProtocolDottypeHierarchyMod {
       __obj.asInstanceOf[TypeHierarchyClientCapabilities]
     }
     
-    extension [Self <: TypeHierarchyClientCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeHierarchyClientCapabilities] (val x: Self) extends AnyVal {
       
       inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
       
@@ -155,7 +156,8 @@ object libCommonProtocolDottypeHierarchyMod {
       __obj.asInstanceOf[TypeHierarchySubtypesParams]
     }
     
-    extension [Self <: TypeHierarchySubtypesParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeHierarchySubtypesParams] (val x: Self) extends AnyVal {
       
       inline def setItem(value: TypeHierarchyItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }
@@ -175,7 +177,8 @@ object libCommonProtocolDottypeHierarchyMod {
       __obj.asInstanceOf[TypeHierarchySupertypesParams]
     }
     
-    extension [Self <: TypeHierarchySupertypesParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeHierarchySupertypesParams] (val x: Self) extends AnyVal {
       
       inline def setItem(value: TypeHierarchyItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }

@@ -23,7 +23,8 @@ object GetDatabaseInput {
     __obj.asInstanceOf[GetDatabaseInput]
   }
   
-  extension [Self <: GetDatabaseInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDatabaseInput] (val x: Self) extends AnyVal {
     
     inline def setCatalogName(value: CatalogNameString): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DatastoreIotSiteWiseMultiLayerStorageSummary {
     __obj.asInstanceOf[DatastoreIotSiteWiseMultiLayerStorageSummary]
   }
   
-  extension [Self <: DatastoreIotSiteWiseMultiLayerStorageSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatastoreIotSiteWiseMultiLayerStorageSummary] (val x: Self) extends AnyVal {
     
     inline def setCustomerManagedS3Storage(value: IotSiteWiseCustomerManagedDatastoreS3StorageSummary): Self = StObject.set(x, "customerManagedS3Storage", value.asInstanceOf[js.Any])
     

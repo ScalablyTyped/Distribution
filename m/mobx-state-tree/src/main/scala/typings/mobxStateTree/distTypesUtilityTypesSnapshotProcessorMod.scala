@@ -73,7 +73,8 @@ object distTypesUtilityTypesSnapshotProcessorMod {
       __obj.asInstanceOf[ISnapshotProcessors[C, CustomC, S, CustomS]]
     }
     
-    extension [Self <: ISnapshotProcessors[?, ?, ?, ?], C, CustomC, S, CustomS](x: Self & (ISnapshotProcessors[C, CustomC, S, CustomS])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISnapshotProcessors[?, ?, ?, ?], C, CustomC, S, CustomS] (val x: Self & (ISnapshotProcessors[C, CustomC, S, CustomS])) extends AnyVal {
       
       inline def setPostProcessor(value: /* snapshot */ S => CustomS): Self = StObject.set(x, "postProcessor", js.Any.fromFunction1(value))
       

@@ -18,7 +18,8 @@ object ManagedZoneCloudLoggingConfig {
     __obj.asInstanceOf[ManagedZoneCloudLoggingConfig]
   }
   
-  extension [Self <: ManagedZoneCloudLoggingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedZoneCloudLoggingConfig] (val x: Self) extends AnyVal {
     
     inline def setEnableLogging(value: Boolean): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
     

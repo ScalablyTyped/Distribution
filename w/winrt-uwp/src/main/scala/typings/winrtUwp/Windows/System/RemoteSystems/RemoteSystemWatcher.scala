@@ -60,7 +60,8 @@ object RemoteSystemWatcher {
     __obj.asInstanceOf[RemoteSystemWatcher]
   }
   
-  extension [Self <: RemoteSystemWatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteSystemWatcher] (val x: Self) extends AnyVal {
     
     inline def setOnenumerationcompleted(
       value: /* ev */ RemoteSystemEnumerationCompletedEventArgs & WinRTEvent[RemoteSystemWatcher] => Unit

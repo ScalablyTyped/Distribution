@@ -21,7 +21,8 @@ object typesInvalidMergeOptionExceptionMod {
       __obj.asInstanceOf[InvalidMergeOptionException]
     }
     
-    extension [Self <: InvalidMergeOptionException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidMergeOptionException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidMergeOptionException

@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[AppSelection]
     }
     
-    extension [Self <: AppSelection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppSelection] (val x: Self) extends AnyVal {
       
       inline def setUserChoice(value: UserChoice): Self = StObject.set(x, "userChoice", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object mod {
       __obj.asInstanceOf[AppSelectionOptions]
     }
     
-    extension [Self <: AppSelectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppSelectionOptions] (val x: Self) extends AnyVal {
       
       inline def setAndroidTheme(value: Double): Self = StObject.set(x, "androidTheme", value.asInstanceOf[js.Any])
       
@@ -198,7 +200,8 @@ object mod {
       __obj.asInstanceOf[LaunchNavigatorOptions]
     }
     
-    extension [Self <: LaunchNavigatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LaunchNavigatorOptions] (val x: Self) extends AnyVal {
       
       inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -448,7 +451,8 @@ object mod {
       __obj.asInstanceOf[PromptsOptions]
     }
     
-    extension [Self <: PromptsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromptsOptions] (val x: Self) extends AnyVal {
       
       inline def setBodyText(value: String): Self = StObject.set(x, "bodyText", value.asInstanceOf[js.Any])
       
@@ -507,7 +511,8 @@ object mod {
       __obj.asInstanceOf[RememberChoiceOptions]
     }
     
-    extension [Self <: RememberChoiceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RememberChoiceOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean | String): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -562,7 +567,8 @@ object mod {
       __obj.asInstanceOf[UserChoice]
     }
     
-    extension [Self <: UserChoice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserChoice] (val x: Self) extends AnyVal {
       
       inline def setClear(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
       
@@ -605,7 +611,8 @@ object mod {
       __obj.asInstanceOf[UserPrompted]
     }
     
-    extension [Self <: UserPrompted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserPrompted] (val x: Self) extends AnyVal {
       
       inline def setClear(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
       

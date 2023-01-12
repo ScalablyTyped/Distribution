@@ -37,7 +37,8 @@ object ReadDirResult {
     __obj.asInstanceOf[ReadDirResult]
   }
   
-  extension [Self <: ReadDirResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadDirResult] (val x: Self) extends AnyVal {
     
     inline def setAcl(value: EvaluatedFileACL): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     

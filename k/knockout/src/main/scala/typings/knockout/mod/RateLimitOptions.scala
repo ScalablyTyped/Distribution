@@ -22,7 +22,8 @@ object RateLimitOptions {
     __obj.asInstanceOf[RateLimitOptions]
   }
   
-  extension [Self <: RateLimitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RateLimitOptions] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: notifyAtFixedRate | notifyWhenChangesStop | RateLimitMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

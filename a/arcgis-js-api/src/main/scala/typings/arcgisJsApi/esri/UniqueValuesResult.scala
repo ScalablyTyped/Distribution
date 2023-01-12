@@ -20,7 +20,8 @@ object UniqueValuesResult {
     __obj.asInstanceOf[UniqueValuesResult]
   }
   
-  extension [Self <: UniqueValuesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UniqueValuesResult] (val x: Self) extends AnyVal {
     
     inline def setUniqueValueInfos(value: js.Array[UniqueValuesResultUniqueValueInfos]): Self = StObject.set(x, "uniqueValueInfos", value.asInstanceOf[js.Any])
     

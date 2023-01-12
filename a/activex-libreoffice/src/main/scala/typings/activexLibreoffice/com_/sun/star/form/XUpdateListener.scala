@@ -46,7 +46,8 @@ object XUpdateListener {
     __obj.asInstanceOf[XUpdateListener]
   }
   
-  extension [Self <: XUpdateListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUpdateListener] (val x: Self) extends AnyVal {
     
     inline def setApproveUpdate(value: EventObject => Boolean): Self = StObject.set(x, "approveUpdate", js.Any.fromFunction1(value))
     

@@ -18,7 +18,8 @@ object DatabaseConfigDetail {
     __obj.asInstanceOf[DatabaseConfigDetail]
   }
   
-  extension [Self <: DatabaseConfigDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseConfigDetail] (val x: Self) extends AnyVal {
     
     inline def setSecretName(value: String): Self = StObject.set(x, "secretName", value.asInstanceOf[js.Any])
     

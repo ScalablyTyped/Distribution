@@ -167,7 +167,8 @@ object MedicationDispense {
     __obj.asInstanceOf[MedicationDispense]
   }
   
-  extension [Self <: MedicationDispense](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationDispense] (val x: Self) extends AnyVal {
     
     inline def setAuthorizingPrescription(value: js.Array[Reference]): Self = StObject.set(x, "authorizingPrescription", value.asInstanceOf[js.Any])
     

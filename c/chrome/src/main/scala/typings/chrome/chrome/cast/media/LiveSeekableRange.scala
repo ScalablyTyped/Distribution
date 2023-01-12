@@ -21,7 +21,8 @@ object LiveSeekableRange {
     __obj.asInstanceOf[LiveSeekableRange]
   }
   
-  extension [Self <: LiveSeekableRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveSeekableRange] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

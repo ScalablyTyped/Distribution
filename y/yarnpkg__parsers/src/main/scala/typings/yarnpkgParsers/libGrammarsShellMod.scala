@@ -133,7 +133,8 @@ object libGrammarsShellMod {
       __obj.asInstanceOf[ArithmeticOperatorExpression]
     }
     
-    extension [Self <: ArithmeticOperatorExpression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArithmeticOperatorExpression] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: ArithmeticExpression): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -227,7 +228,8 @@ object libGrammarsShellMod {
       __obj.asInstanceOf[CommandChainThen]
     }
     
-    extension [Self <: CommandChainThen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandChainThen] (val x: Self) extends AnyVal {
       
       inline def setChain(value: CommandChain): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
       
@@ -248,7 +250,8 @@ object libGrammarsShellMod {
       __obj.asInstanceOf[CommandLine]
     }
     
-    extension [Self <: CommandLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandLine] (val x: Self) extends AnyVal {
       
       inline def setChain(value: CommandChain): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
       
@@ -272,7 +275,8 @@ object libGrammarsShellMod {
       __obj.asInstanceOf[CommandLineThen]
     }
     
-    extension [Self <: CommandLineThen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandLineThen] (val x: Self) extends AnyVal {
       
       inline def setLine(value: CommandLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
@@ -293,7 +297,8 @@ object libGrammarsShellMod {
       __obj.asInstanceOf[EnvSegment]
     }
     
-    extension [Self <: EnvSegment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnvSegment] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any | ValueArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -327,7 +332,8 @@ object libGrammarsShellMod {
       __obj.asInstanceOf[RedirectArgument]
     }
     
-    extension [Self <: RedirectArgument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedirectArgument] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[ValueArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -363,7 +369,8 @@ object libGrammarsShellMod {
       __obj.asInstanceOf[ValueArgument]
     }
     
-    extension [Self <: ValueArgument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueArgument] (val x: Self) extends AnyVal {
       
       inline def setSegments(value: js.Array[ArgumentSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
       

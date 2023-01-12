@@ -1834,7 +1834,8 @@ object mod {
       __obj.asInstanceOf[TraversalContext]
     }
     
-    extension [Self <: TraversalContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraversalContext] (val x: Self) extends AnyVal {
       
       inline def setOpts(value: Any): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
@@ -1861,7 +1862,8 @@ object mod {
       __obj.asInstanceOf[TraverseOptions[S]]
     }
     
-    extension [Self <: TraverseOptions[?], S](x: Self & TraverseOptions[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraverseOptions[?], S] (val x: Self & TraverseOptions[S]) extends AnyVal {
       
       inline def setNoScope(value: Boolean): Self = StObject.set(x, "noScope", value.asInstanceOf[js.Any])
       
@@ -1890,7 +1892,8 @@ object mod {
       __obj.asInstanceOf[VisitNodeObject[T]]
     }
     
-    extension [Self <: VisitNodeObject[?], T](x: Self & VisitNodeObject[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisitNodeObject[?], T] (val x: Self & VisitNodeObject[T]) extends AnyVal {
       
       inline def setEnter(value: (/* path */ NodePath[T], /* state */ Any) => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction2(value))
       
@@ -2255,7 +2258,8 @@ object mod {
       __obj.asInstanceOf[Visitor[S]]
     }
     
-    extension [Self <: Visitor[?], S](x: Self & Visitor[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Visitor[?], S] (val x: Self & Visitor[S]) extends AnyVal {
       
       inline def setAnyTypeAnnotation(value: VisitNode[S, AnyTypeAnnotation_]): Self = StObject.set(x, "AnyTypeAnnotation", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object SubnetworksSetPrivateIpGoogleAccessRequest {
     __obj.asInstanceOf[SubnetworksSetPrivateIpGoogleAccessRequest]
   }
   
-  extension [Self <: SubnetworksSetPrivateIpGoogleAccessRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubnetworksSetPrivateIpGoogleAccessRequest] (val x: Self) extends AnyVal {
     
     inline def setPrivateIpGoogleAccess(value: Boolean): Self = StObject.set(x, "privateIpGoogleAccess", value.asInstanceOf[js.Any])
     

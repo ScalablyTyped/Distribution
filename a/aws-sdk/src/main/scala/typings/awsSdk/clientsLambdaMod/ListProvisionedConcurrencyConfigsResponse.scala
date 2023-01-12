@@ -23,7 +23,8 @@ object ListProvisionedConcurrencyConfigsResponse {
     __obj.asInstanceOf[ListProvisionedConcurrencyConfigsResponse]
   }
   
-  extension [Self <: ListProvisionedConcurrencyConfigsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProvisionedConcurrencyConfigsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

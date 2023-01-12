@@ -46,7 +46,8 @@ object TextareaHTMLAttributes {
     __obj.asInstanceOf[TextareaHTMLAttributes[T]]
   }
   
-  extension [Self <: TextareaHTMLAttributes[?], T](x: Self & TextareaHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextareaHTMLAttributes[?], T] (val x: Self & TextareaHTMLAttributes[T]) extends AnyVal {
     
     inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     

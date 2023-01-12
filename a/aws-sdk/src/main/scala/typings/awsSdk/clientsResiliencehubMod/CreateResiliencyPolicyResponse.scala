@@ -18,7 +18,8 @@ object CreateResiliencyPolicyResponse {
     __obj.asInstanceOf[CreateResiliencyPolicyResponse]
   }
   
-  extension [Self <: CreateResiliencyPolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateResiliencyPolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setPolicy(value: ResiliencyPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
   }

@@ -26,7 +26,8 @@ object KikGetFromCameraCallbacks {
     __obj.asInstanceOf[KikGetFromCameraCallbacks]
   }
   
-  extension [Self <: KikGetFromCameraCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KikGetFromCameraCallbacks] (val x: Self) extends AnyVal {
     
     inline def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
     

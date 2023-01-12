@@ -23,7 +23,8 @@ object RepositoryFilter {
     __obj.asInstanceOf[RepositoryFilter]
   }
   
-  extension [Self <: RepositoryFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositoryFilter] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: RepositoryFilterValue): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object CreateChatTokenResponse {
     __obj.asInstanceOf[CreateChatTokenResponse]
   }
   
-  extension [Self <: CreateChatTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateChatTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setSessionExpirationTime(value: js.Date): Self = StObject.set(x, "sessionExpirationTime", value.asInstanceOf[js.Any])
     

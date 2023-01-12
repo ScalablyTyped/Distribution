@@ -32,7 +32,8 @@ object StringNGramsAttrs {
     __obj.asInstanceOf[StringNGramsAttrs]
   }
   
-  extension [Self <: StringNGramsAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringNGramsAttrs] (val x: Self) extends AnyVal {
     
     inline def setLeftPad(value: String): Self = StObject.set(x, "leftPad", value.asInstanceOf[js.Any])
     

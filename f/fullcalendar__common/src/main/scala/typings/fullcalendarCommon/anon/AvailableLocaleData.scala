@@ -33,7 +33,8 @@ object AvailableLocaleData {
     __obj.asInstanceOf[AvailableLocaleData]
   }
   
-  extension [Self <: AvailableLocaleData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvailableLocaleData] (val x: Self) extends AnyVal {
     
     inline def setAvailableLocaleData(value: RawLocaleInfo): Self = StObject.set(x, "availableLocaleData", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object IWebUINavigatedEventArgs {
     __obj.asInstanceOf[IWebUINavigatedEventArgs]
   }
   
-  extension [Self <: IWebUINavigatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebUINavigatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setNavigatedOperation(value: WebUINavigatedOperation): Self = StObject.set(x, "navigatedOperation", value.asInstanceOf[js.Any])
   }

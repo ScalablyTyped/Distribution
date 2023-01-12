@@ -15,7 +15,8 @@ object MlPreviewDatafeedResponse {
     __obj.asInstanceOf[MlPreviewDatafeedResponse[TDocument]]
   }
   
-  extension [Self <: MlPreviewDatafeedResponse[?], TDocument](x: Self & MlPreviewDatafeedResponse[TDocument]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPreviewDatafeedResponse[?], TDocument] (val x: Self & MlPreviewDatafeedResponse[TDocument]) extends AnyVal {
     
     inline def setData(value: js.Array[TDocument]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

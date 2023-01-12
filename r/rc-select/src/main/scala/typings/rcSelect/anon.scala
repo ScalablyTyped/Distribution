@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setSource(value: keyboard | mouse): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object anon {
       __obj.asInstanceOf[ChildrenAsData]
     }
     
-    extension [Self <: ChildrenAsData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildrenAsData] (val x: Self) extends AnyVal {
       
       inline def setChildrenAsData(value: Boolean): Self = StObject.set(x, "childrenAsData", value.asInstanceOf[js.Any])
       
@@ -112,7 +115,8 @@ object anon {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -141,7 +145,8 @@ object anon {
       __obj.asInstanceOf[LabelOptions[OptionType]]
     }
     
-    extension [Self <: LabelOptions[?], OptionType](x: Self & LabelOptions[OptionType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelOptions[?], OptionType] (val x: Self & LabelOptions[OptionType]) extends AnyVal {
       
       inline def setLabelOptions(value: Map[ReactNode, OptionType]): Self = StObject.set(x, "labelOptions", value.asInstanceOf[js.Any])
       
@@ -169,7 +174,8 @@ object anon {
       __obj.asInstanceOf[OmitDefaultOptionTypechil]
     }
     
-    extension [Self <: OmitDefaultOptionTypechil](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitDefaultOptionTypechil] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -200,7 +206,8 @@ object anon {
       __obj.asInstanceOf[OptGroup]
     }
     
-    extension [Self <: OptGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptGroup] (val x: Self) extends AnyVal {
       
       inline def setOptGroup(value: OptionGroupFC): Self = StObject.set(x, "OptGroup", value.asInstanceOf[js.Any])
       
@@ -219,7 +226,8 @@ object anon {
       __obj.asInstanceOf[Selected]
     }
     
-    extension [Self <: Selected](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Selected] (val x: Self) extends AnyVal {
       
       inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
@@ -236,7 +244,8 @@ object anon {
       __obj.asInstanceOf[Source]
     }
     
-    extension [Self <: Source](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
       
       inline def setSource(value: typing | effect | submit | blur): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
@@ -256,7 +265,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: add | remove | clear): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

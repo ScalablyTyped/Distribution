@@ -30,7 +30,8 @@ object XUnoUrlResolver {
     __obj.asInstanceOf[XUnoUrlResolver]
   }
   
-  extension [Self <: XUnoUrlResolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUnoUrlResolver] (val x: Self) extends AnyVal {
     
     inline def setResolve(value: String => XInterface): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
   }

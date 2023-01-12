@@ -19,7 +19,8 @@ object SjclCipherEncrypted {
     __obj.asInstanceOf[SjclCipherEncrypted]
   }
   
-  extension [Self <: SjclCipherEncrypted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SjclCipherEncrypted] (val x: Self) extends AnyVal {
     
     inline def setCt(value: BitArray_): Self = StObject.set(x, "ct", value.asInstanceOf[js.Any])
     

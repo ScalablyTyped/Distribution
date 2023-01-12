@@ -17,7 +17,8 @@ object HorzJoinRec {
     __obj.asInstanceOf[HorzJoinRec]
   }
   
-  extension [Self <: HorzJoinRec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HorzJoinRec] (val x: Self) extends AnyVal {
     
     inline def setEdge(value: TEdge): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     

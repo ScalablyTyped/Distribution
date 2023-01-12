@@ -33,7 +33,8 @@ object Diagnostics {
     __obj.asInstanceOf[Diagnostics]
   }
   
-  extension [Self <: Diagnostics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Diagnostics] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: LifecycleErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

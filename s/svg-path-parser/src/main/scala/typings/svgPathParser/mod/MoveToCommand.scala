@@ -29,7 +29,8 @@ object MoveToCommand {
     __obj.asInstanceOf[MoveToCommand]
   }
   
-  extension [Self <: MoveToCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveToCommand] (val x: Self) extends AnyVal {
     
     inline def setCode(value: m_ | M): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

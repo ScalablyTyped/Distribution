@@ -40,7 +40,8 @@ object PatternContentUnits {
     __obj.asInstanceOf[PatternContentUnits]
   }
   
-  extension [Self <: PatternContentUnits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatternContentUnits] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Requireable[ReactNodeLike]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

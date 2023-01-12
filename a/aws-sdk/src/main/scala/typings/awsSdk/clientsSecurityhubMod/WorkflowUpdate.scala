@@ -18,7 +18,8 @@ object WorkflowUpdate {
     __obj.asInstanceOf[WorkflowUpdate]
   }
   
-  extension [Self <: WorkflowUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowUpdate] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: WorkflowStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object PerceptionInfraredFrameSourceAddedEventArgs {
     __obj.asInstanceOf[PerceptionInfraredFrameSourceAddedEventArgs]
   }
   
-  extension [Self <: PerceptionInfraredFrameSourceAddedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerceptionInfraredFrameSourceAddedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setFrameSource(value: PerceptionInfraredFrameSource): Self = StObject.set(x, "frameSource", value.asInstanceOf[js.Any])
   }

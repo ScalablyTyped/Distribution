@@ -15,7 +15,8 @@ object RevokeDBSecurityGroupIngressResult {
     __obj.asInstanceOf[RevokeDBSecurityGroupIngressResult]
   }
   
-  extension [Self <: RevokeDBSecurityGroupIngressResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevokeDBSecurityGroupIngressResult] (val x: Self) extends AnyVal {
     
     inline def setDBSecurityGroup(value: DBSecurityGroup): Self = StObject.set(x, "DBSecurityGroup", value.asInstanceOf[js.Any])
     

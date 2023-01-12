@@ -17,7 +17,8 @@ object ComponentSizeMarginHeadingVerticalEnd {
     __obj.asInstanceOf[ComponentSizeMarginHeadingVerticalEnd]
   }
   
-  extension [Self <: ComponentSizeMarginHeadingVerticalEnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentSizeMarginHeadingVerticalEnd] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: SizeMarginHeadingVerticalEnd): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

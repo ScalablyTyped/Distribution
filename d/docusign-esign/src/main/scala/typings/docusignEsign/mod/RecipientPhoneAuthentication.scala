@@ -53,7 +53,8 @@ object RecipientPhoneAuthentication {
     __obj.asInstanceOf[RecipientPhoneAuthentication]
   }
   
-  extension [Self <: RecipientPhoneAuthentication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientPhoneAuthentication] (val x: Self) extends AnyVal {
     
     inline def setRecipMayProvideNumber(value: String): Self = StObject.set(x, "recipMayProvideNumber", value.asInstanceOf[js.Any])
     

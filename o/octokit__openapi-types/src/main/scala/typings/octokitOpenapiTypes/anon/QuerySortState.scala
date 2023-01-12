@@ -17,7 +17,8 @@ object QuerySortState {
     __obj.asInstanceOf[QuerySortState]
   }
   
-  extension [Self <: QuerySortState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuerySortState] (val x: Self) extends AnyVal {
     
     inline def setPath(value: Owner): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

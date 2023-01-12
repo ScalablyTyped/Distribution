@@ -78,7 +78,8 @@ object DpSchema {
     __obj.asInstanceOf[DpSchema]
   }
   
-  extension [Self <: DpSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DpSchema] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

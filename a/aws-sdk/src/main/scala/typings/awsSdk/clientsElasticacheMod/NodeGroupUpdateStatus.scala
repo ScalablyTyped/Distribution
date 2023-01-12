@@ -23,7 +23,8 @@ object NodeGroupUpdateStatus {
     __obj.asInstanceOf[NodeGroupUpdateStatus]
   }
   
-  extension [Self <: NodeGroupUpdateStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeGroupUpdateStatus] (val x: Self) extends AnyVal {
     
     inline def setNodeGroupId(value: String): Self = StObject.set(x, "NodeGroupId", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[AliasOf]
     }
     
-    extension [Self <: AliasOf](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AliasOf] (val x: Self) extends AnyVal {
       
       inline def setAliasOf(value: Set[String]): Self = StObject.set(x, "aliasOf", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Flags]
     }
     
-    extension [Self <: Flags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flags] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: js.Array[Flag] | Set[Flag]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       

@@ -96,7 +96,8 @@ object ITextCharacterFormat {
     __obj.asInstanceOf[ITextCharacterFormat]
   }
   
-  extension [Self <: ITextCharacterFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextCharacterFormat] (val x: Self) extends AnyVal {
     
     inline def setAllCaps(value: FormatEffect): Self = StObject.set(x, "allCaps", value.asInstanceOf[js.Any])
     

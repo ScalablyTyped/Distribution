@@ -33,7 +33,8 @@ object CoverageNormalizedUnits {
     __obj.asInstanceOf[CoverageNormalizedUnits]
   }
   
-  extension [Self <: CoverageNormalizedUnits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoverageNormalizedUnits] (val x: Self) extends AnyVal {
     
     inline def setCoverageNormalizedUnitsPercentage(value: CoverageNormalizedUnitsPercentage): Self = StObject.set(x, "CoverageNormalizedUnitsPercentage", value.asInstanceOf[js.Any])
     

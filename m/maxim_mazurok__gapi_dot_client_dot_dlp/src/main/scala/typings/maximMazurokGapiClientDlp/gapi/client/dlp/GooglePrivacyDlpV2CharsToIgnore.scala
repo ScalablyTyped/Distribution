@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2CharsToIgnore {
     __obj.asInstanceOf[GooglePrivacyDlpV2CharsToIgnore]
   }
   
-  extension [Self <: GooglePrivacyDlpV2CharsToIgnore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2CharsToIgnore] (val x: Self) extends AnyVal {
     
     inline def setCharactersToSkip(value: String): Self = StObject.set(x, "charactersToSkip", value.asInstanceOf[js.Any])
     

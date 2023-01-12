@@ -23,7 +23,8 @@ object DefaultFormatter {
     __obj.asInstanceOf[DefaultFormatter]
   }
   
-  extension [Self <: DefaultFormatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultFormatter] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: (DataTable, Double) => Unit): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
   }

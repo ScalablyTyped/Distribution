@@ -20,7 +20,8 @@ object typesConcurrencyMod {
       __obj.asInstanceOf[Concurrency]
     }
     
-    extension [Self <: Concurrency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Concurrency] (val x: Self) extends AnyVal {
       
       inline def setReservedConcurrentExecutions(value: Double): Self = StObject.set(x, "ReservedConcurrentExecutions", value.asInstanceOf[js.Any])
       

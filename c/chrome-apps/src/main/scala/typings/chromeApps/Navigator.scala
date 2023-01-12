@@ -21,7 +21,8 @@ object Navigator {
     __obj.asInstanceOf[Navigator]
   }
   
-  extension [Self <: Navigator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Navigator] (val x: Self) extends AnyVal {
     
     inline def setGeolocation(value: Geolocation): Self = StObject.set(x, "geolocation", value.asInstanceOf[js.Any])
   }

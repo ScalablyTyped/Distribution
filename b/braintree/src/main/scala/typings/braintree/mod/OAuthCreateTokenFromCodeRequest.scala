@@ -15,7 +15,8 @@ object OAuthCreateTokenFromCodeRequest {
     __obj.asInstanceOf[OAuthCreateTokenFromCodeRequest]
   }
   
-  extension [Self <: OAuthCreateTokenFromCodeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuthCreateTokenFromCodeRequest] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
   }

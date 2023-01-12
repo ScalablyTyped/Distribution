@@ -21,7 +21,8 @@ object LinkProvider {
     __obj.asInstanceOf[LinkProvider]
   }
   
-  extension [Self <: LinkProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideLinks(value: (ITextModel, CancellationToken) => ProviderResult[ILinksList]): Self = StObject.set(x, "provideLinks", js.Any.fromFunction2(value))
     

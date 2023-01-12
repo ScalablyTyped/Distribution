@@ -18,7 +18,8 @@ object DeleteLinkResponse {
     __obj.asInstanceOf[DeleteLinkResponse]
   }
   
-  extension [Self <: DeleteLinkResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLinkResponse] (val x: Self) extends AnyVal {
     
     inline def setLink(value: Link): Self = StObject.set(x, "Link", value.asInstanceOf[js.Any])
     

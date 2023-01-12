@@ -45,7 +45,8 @@ object IVaultCustomApplicationManagementOperations {
     __obj.asInstanceOf[IVaultCustomApplicationManagementOperations]
   }
   
-  extension [Self <: IVaultCustomApplicationManagementOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultCustomApplicationManagementOperations] (val x: Self) extends AnyVal {
     
     inline def setDownloadCustomApplicationBlock(value: (Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "DownloadCustomApplicationBlock", js.Any.fromFunction3(value))
     

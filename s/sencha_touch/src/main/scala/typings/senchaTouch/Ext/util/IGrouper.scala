@@ -41,7 +41,8 @@ object IGrouper {
     __obj.asInstanceOf[IGrouper]
   }
   
-  extension [Self <: IGrouper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGrouper] (val x: Self) extends AnyVal {
     
     inline def setGetGroupFn(value: () => Any): Self = StObject.set(x, "getGroupFn", js.Any.fromFunction0(value))
     

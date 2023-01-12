@@ -239,7 +239,8 @@ object mod {
       __obj.asInstanceOf[VoilabPdfTableConfig[T]]
     }
     
-    extension [Self <: VoilabPdfTableConfig[?], T](x: Self & VoilabPdfTableConfig[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VoilabPdfTableConfig[?], T] (val x: Self & VoilabPdfTableConfig[T]) extends AnyVal {
       
       inline def setBottomMargin(value: Double): Self = StObject.set(x, "bottomMargin", value.asInstanceOf[js.Any])
       
@@ -298,7 +299,8 @@ object mod {
       __obj.asInstanceOf[VoilabPdfTablePlugin[T]]
     }
     
-    extension [Self <: VoilabPdfTablePlugin[?], T](x: Self & VoilabPdfTablePlugin[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VoilabPdfTablePlugin[?], T] (val x: Self & VoilabPdfTablePlugin[T]) extends AnyVal {
       
       inline def setConfigure(value: VoilabPdfTable[T] => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
     }

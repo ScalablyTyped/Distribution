@@ -26,7 +26,8 @@ object TextMessageReceived {
     __obj.asInstanceOf[TextMessageReceived]
   }
   
-  extension [Self <: TextMessageReceived](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextMessageReceived] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: Endpoint): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object GameRequestContent {
     __obj.asInstanceOf[GameRequestContent]
   }
   
-  extension [Self <: GameRequestContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GameRequestContent] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: GameRequestActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     

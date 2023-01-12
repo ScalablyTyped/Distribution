@@ -23,7 +23,8 @@ object DescribeReplicationSubnetGroupsResponse {
     __obj.asInstanceOf[DescribeReplicationSubnetGroupsResponse]
   }
   
-  extension [Self <: DescribeReplicationSubnetGroupsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeReplicationSubnetGroupsResponse] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

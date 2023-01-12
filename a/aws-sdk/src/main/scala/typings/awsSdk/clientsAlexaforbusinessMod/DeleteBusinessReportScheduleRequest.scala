@@ -18,7 +18,8 @@ object DeleteBusinessReportScheduleRequest {
     __obj.asInstanceOf[DeleteBusinessReportScheduleRequest]
   }
   
-  extension [Self <: DeleteBusinessReportScheduleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBusinessReportScheduleRequest] (val x: Self) extends AnyVal {
     
     inline def setScheduleArn(value: Arn): Self = StObject.set(x, "ScheduleArn", value.asInstanceOf[js.Any])
   }

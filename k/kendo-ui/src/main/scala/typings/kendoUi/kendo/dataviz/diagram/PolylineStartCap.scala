@@ -19,7 +19,8 @@ object PolylineStartCap {
     __obj.asInstanceOf[PolylineStartCap]
   }
   
-  extension [Self <: PolylineStartCap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolylineStartCap] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String | PolylineStartCapFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object Coupon {
     __obj.asInstanceOf[Coupon]
   }
   
-  extension [Self <: Coupon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Coupon] (val x: Self) extends AnyVal {
     
     inline def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
     

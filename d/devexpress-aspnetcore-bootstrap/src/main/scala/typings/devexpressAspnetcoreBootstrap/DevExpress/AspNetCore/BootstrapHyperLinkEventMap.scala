@@ -17,7 +17,8 @@ object BootstrapHyperLinkEventMap {
     __obj.asInstanceOf[BootstrapHyperLinkEventMap]
   }
   
-  extension [Self <: BootstrapHyperLinkEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapHyperLinkEventMap] (val x: Self) extends AnyVal {
     
     inline def setClick(value: EditClickEventArgs): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
   }

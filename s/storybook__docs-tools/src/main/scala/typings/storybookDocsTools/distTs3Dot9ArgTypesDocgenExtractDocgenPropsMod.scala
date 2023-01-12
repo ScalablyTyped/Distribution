@@ -45,7 +45,8 @@ object distTs3Dot9ArgTypesDocgenExtractDocgenPropsMod {
       __obj.asInstanceOf[ExtractedProp]
     }
     
-    extension [Self <: ExtractedProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractedProp] (val x: Self) extends AnyVal {
       
       inline def setDocgenInfo(value: DocgenInfo): Self = StObject.set(x, "docgenInfo", value.asInstanceOf[js.Any])
       

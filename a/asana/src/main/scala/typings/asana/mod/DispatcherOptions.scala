@@ -25,7 +25,8 @@ object DispatcherOptions {
     __obj.asInstanceOf[DispatcherOptions]
   }
   
-  extension [Self <: DispatcherOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DispatcherOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthenticator(value: Authenticator): Self = StObject.set(x, "authenticator", value.asInstanceOf[js.Any])
     

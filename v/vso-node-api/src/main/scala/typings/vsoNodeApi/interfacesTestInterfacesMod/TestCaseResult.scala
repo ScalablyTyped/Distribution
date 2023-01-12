@@ -153,7 +153,8 @@ object TestCaseResult {
     __obj.asInstanceOf[TestCaseResult]
   }
   
-  extension [Self <: TestCaseResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestCaseResult] (val x: Self) extends AnyVal {
     
     inline def setAfnStripId(value: Double): Self = StObject.set(x, "afnStripId", value.asInstanceOf[js.Any])
     

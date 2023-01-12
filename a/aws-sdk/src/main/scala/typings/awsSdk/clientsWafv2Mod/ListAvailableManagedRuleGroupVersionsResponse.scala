@@ -28,7 +28,8 @@ object ListAvailableManagedRuleGroupVersionsResponse {
     __obj.asInstanceOf[ListAvailableManagedRuleGroupVersionsResponse]
   }
   
-  extension [Self <: ListAvailableManagedRuleGroupVersionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAvailableManagedRuleGroupVersionsResponse] (val x: Self) extends AnyVal {
     
     inline def setCurrentDefaultVersion(value: VersionKeyString): Self = StObject.set(x, "CurrentDefaultVersion", value.asInstanceOf[js.Any])
     

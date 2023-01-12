@@ -23,7 +23,8 @@ object GrantAccessRequest {
     __obj.asInstanceOf[GrantAccessRequest]
   }
   
-  extension [Self <: GrantAccessRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrantAccessRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

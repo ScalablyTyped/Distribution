@@ -66,7 +66,8 @@ object DatabaseCommand {
     __obj.asInstanceOf[DatabaseCommand]
   }
   
-  extension [Self <: DatabaseCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseCommand] (val x: Self) extends AnyVal {
     
     inline def setAnd(value: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
     

@@ -587,7 +587,8 @@ object sapUiWebcMainSwitchMod {
       __obj.asInstanceOf[SwitchSettings]
     }
     
-    extension [Self <: SwitchSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleName(value: String | PropertyBindingInfo): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
       

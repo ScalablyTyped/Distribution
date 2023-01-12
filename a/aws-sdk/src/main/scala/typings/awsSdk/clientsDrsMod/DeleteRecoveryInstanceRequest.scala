@@ -18,7 +18,8 @@ object DeleteRecoveryInstanceRequest {
     __obj.asInstanceOf[DeleteRecoveryInstanceRequest]
   }
   
-  extension [Self <: DeleteRecoveryInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRecoveryInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setRecoveryInstanceID(value: RecoveryInstanceID): Self = StObject.set(x, "recoveryInstanceID", value.asInstanceOf[js.Any])
   }

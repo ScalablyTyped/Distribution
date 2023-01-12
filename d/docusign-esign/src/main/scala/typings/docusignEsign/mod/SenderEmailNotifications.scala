@@ -63,7 +63,8 @@ object SenderEmailNotifications {
     __obj.asInstanceOf[SenderEmailNotifications]
   }
   
-  extension [Self <: SenderEmailNotifications](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SenderEmailNotifications] (val x: Self) extends AnyVal {
     
     inline def setChangedSigner(value: String): Self = StObject.set(x, "changedSigner", value.asInstanceOf[js.Any])
     

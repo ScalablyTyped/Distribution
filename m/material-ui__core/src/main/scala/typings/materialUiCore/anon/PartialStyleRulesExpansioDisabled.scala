@@ -33,7 +33,8 @@ object PartialStyleRulesExpansioDisabled {
     __obj.asInstanceOf[PartialStyleRulesExpansioDisabled]
   }
   
-  extension [Self <: PartialStyleRulesExpansioDisabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesExpansioDisabled] (val x: Self) extends AnyVal {
     
     inline def setDisabled(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

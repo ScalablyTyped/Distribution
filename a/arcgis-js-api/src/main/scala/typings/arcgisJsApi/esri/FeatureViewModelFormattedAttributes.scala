@@ -27,7 +27,8 @@ object FeatureViewModelFormattedAttributes {
     __obj.asInstanceOf[FeatureViewModelFormattedAttributes]
   }
   
-  extension [Self <: FeatureViewModelFormattedAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureViewModelFormattedAttributes] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object ConversionInfo {
     __obj.asInstanceOf[ConversionInfo]
   }
   
-  extension [Self <: ConversionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversionInfo] (val x: Self) extends AnyVal {
     
     inline def setConvert(value: () => scala.Unit): Self = StObject.set(x, "convert", js.Any.fromFunction0(value))
     

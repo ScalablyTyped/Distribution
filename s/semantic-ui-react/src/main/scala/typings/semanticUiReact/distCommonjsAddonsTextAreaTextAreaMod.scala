@@ -59,7 +59,8 @@ object distCommonjsAddonsTextAreaTextAreaMod {
       __obj.asInstanceOf[StrictTextAreaProps]
     }
     
-    extension [Self <: StrictTextAreaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictTextAreaProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

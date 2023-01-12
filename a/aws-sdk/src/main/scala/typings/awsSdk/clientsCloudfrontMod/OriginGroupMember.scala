@@ -18,7 +18,8 @@ object OriginGroupMember {
     __obj.asInstanceOf[OriginGroupMember]
   }
   
-  extension [Self <: OriginGroupMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginGroupMember] (val x: Self) extends AnyVal {
     
     inline def setOriginId(value: String): Self = StObject.set(x, "OriginId", value.asInstanceOf[js.Any])
   }

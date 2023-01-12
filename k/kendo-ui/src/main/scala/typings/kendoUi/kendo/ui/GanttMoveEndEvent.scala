@@ -22,7 +22,8 @@ object GanttMoveEndEvent {
     __obj.asInstanceOf[GanttMoveEndEvent]
   }
   
-  extension [Self <: GanttMoveEndEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttMoveEndEvent] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

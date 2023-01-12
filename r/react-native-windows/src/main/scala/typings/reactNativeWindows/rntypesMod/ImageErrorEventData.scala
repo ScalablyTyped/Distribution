@@ -15,7 +15,8 @@ object ImageErrorEventData {
     __obj.asInstanceOf[ImageErrorEventData]
   }
   
-  extension [Self <: ImageErrorEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageErrorEventData] (val x: Self) extends AnyVal {
     
     inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }

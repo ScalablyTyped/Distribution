@@ -26,7 +26,8 @@ object Mediumtext {
     __obj.asInstanceOf[Mediumtext]
   }
   
-  extension [Self <: Mediumtext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mediumtext] (val x: Self) extends AnyVal {
     
     inline def `setMedium-icon`(value: Any): Self = StObject.set(x, "medium-icon", value.asInstanceOf[js.Any])
     

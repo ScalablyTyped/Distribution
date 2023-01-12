@@ -32,7 +32,8 @@ object WebResponseErrorDetails {
     __obj.asInstanceOf[WebResponseErrorDetails]
   }
   
-  extension [Self <: WebResponseErrorDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebResponseErrorDetails] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }

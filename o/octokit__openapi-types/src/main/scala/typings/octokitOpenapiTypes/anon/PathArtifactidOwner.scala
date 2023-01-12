@@ -15,7 +15,8 @@ object PathArtifactidOwner {
     __obj.asInstanceOf[PathArtifactidOwner]
   }
   
-  extension [Self <: PathArtifactidOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathArtifactidOwner] (val x: Self) extends AnyVal {
     
     inline def setPath(value: ArtifactidOwner): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

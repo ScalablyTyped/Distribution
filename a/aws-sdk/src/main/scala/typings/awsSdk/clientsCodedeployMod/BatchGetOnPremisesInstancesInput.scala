@@ -18,7 +18,8 @@ object BatchGetOnPremisesInstancesInput {
     __obj.asInstanceOf[BatchGetOnPremisesInstancesInput]
   }
   
-  extension [Self <: BatchGetOnPremisesInstancesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetOnPremisesInstancesInput] (val x: Self) extends AnyVal {
     
     inline def setInstanceNames(value: InstanceNameList): Self = StObject.set(x, "instanceNames", value.asInstanceOf[js.Any])
     

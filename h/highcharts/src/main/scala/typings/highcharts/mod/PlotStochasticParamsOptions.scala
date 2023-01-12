@@ -32,7 +32,8 @@ object PlotStochasticParamsOptions {
     __obj.asInstanceOf[PlotStochasticParamsOptions]
   }
   
-  extension [Self <: PlotStochasticParamsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotStochasticParamsOptions] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object USSD {
     __obj.asInstanceOf[USSD]
   }
   
-  extension [Self <: USSD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: USSD] (val x: Self) extends AnyVal {
     
     inline def setCharge(value: USSDChargeRequest => js.Promise[AxiosResponse[USSDChargeResponse, Any]]): Self = StObject.set(x, "charge", js.Any.fromFunction1(value))
   }

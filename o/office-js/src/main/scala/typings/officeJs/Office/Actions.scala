@@ -81,7 +81,8 @@ object Actions {
     __obj.asInstanceOf[Actions]
   }
   
-  extension [Self <: Actions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Actions] (val x: Self) extends AnyVal {
     
     inline def setAreShortcutsInUse(value: js.Array[String] => js.Promise[js.Array[InUse]]): Self = StObject.set(x, "areShortcutsInUse", js.Any.fromFunction1(value))
     

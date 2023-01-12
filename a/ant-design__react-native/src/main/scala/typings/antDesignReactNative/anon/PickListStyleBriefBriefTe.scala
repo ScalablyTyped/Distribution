@@ -20,7 +20,8 @@ object PickListStyleBriefBriefTe {
     __obj.asInstanceOf[PickListStyleBriefBriefTe]
   }
   
-  extension [Self <: PickListStyleBriefBriefTe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickListStyleBriefBriefTe] (val x: Self) extends AnyVal {
     
     inline def setBrief(value: ViewStyle): Self = StObject.set(x, "Brief", value.asInstanceOf[js.Any])
     

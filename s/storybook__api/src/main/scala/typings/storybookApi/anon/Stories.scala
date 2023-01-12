@@ -18,7 +18,8 @@ object Stories {
     __obj.asInstanceOf[Stories]
   }
   
-  extension [Self <: Stories](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stories] (val x: Self) extends AnyVal {
     
     inline def setStories(value: StoriesRaw): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
     

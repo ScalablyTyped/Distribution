@@ -23,7 +23,8 @@ object PutLexiconInput {
     __obj.asInstanceOf[PutLexiconInput]
   }
   
-  extension [Self <: PutLexiconInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutLexiconInput] (val x: Self) extends AnyVal {
     
     inline def setContent(value: LexiconContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     

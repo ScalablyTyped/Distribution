@@ -19,7 +19,8 @@ object MeshDepthMaterialParameters {
     __obj.asInstanceOf[MeshDepthMaterialParameters]
   }
   
-  extension [Self <: MeshDepthMaterialParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshDepthMaterialParameters] (val x: Self) extends AnyVal {
     
     inline def setWireframe(value: Boolean): Self = StObject.set(x, "wireframe", value.asInstanceOf[js.Any])
     

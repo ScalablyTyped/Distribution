@@ -246,7 +246,8 @@ object sapUiUnifiedCalendarDatesRowMod {
       __obj.asInstanceOf[DatesRowSettings]
     }
     
-    extension [Self <: DatesRowSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatesRowSettings] (val x: Self) extends AnyVal {
       
       inline def setDays(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       

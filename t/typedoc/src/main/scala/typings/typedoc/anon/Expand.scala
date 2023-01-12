@@ -34,7 +34,8 @@ object Expand {
     __obj.asInstanceOf[Expand]
   }
   
-  extension [Self <: Expand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Expand] (val x: Self) extends AnyVal {
     
     inline def setExpand(value: expand): Self = StObject.set(x, "Expand", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeleteHsmClientCertificateMessage {
     __obj.asInstanceOf[DeleteHsmClientCertificateMessage]
   }
   
-  extension [Self <: DeleteHsmClientCertificateMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteHsmClientCertificateMessage] (val x: Self) extends AnyVal {
     
     inline def setHsmClientCertificateIdentifier(value: String): Self = StObject.set(x, "HsmClientCertificateIdentifier", value.asInstanceOf[js.Any])
   }

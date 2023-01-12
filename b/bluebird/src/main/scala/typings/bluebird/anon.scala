@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[AsyncHooks]
     }
     
-    extension [Self <: AsyncHooks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncHooks] (val x: Self) extends AnyVal {
       
       inline def setAsyncHooks(value: Boolean): Self = StObject.set(x, "asyncHooks", value.asInstanceOf[js.Any])
       
@@ -519,7 +520,8 @@ object anon {
       __obj.asInstanceOf[WForgottenReturn]
     }
     
-    extension [Self <: WForgottenReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WForgottenReturn] (val x: Self) extends AnyVal {
       
       inline def setWForgottenReturn(value: Boolean): Self = StObject.set(x, "wForgottenReturn", value.asInstanceOf[js.Any])
     }

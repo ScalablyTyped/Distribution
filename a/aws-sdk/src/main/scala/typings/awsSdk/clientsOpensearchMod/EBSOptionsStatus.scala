@@ -23,7 +23,8 @@ object EBSOptionsStatus {
     __obj.asInstanceOf[EBSOptionsStatus]
   }
   
-  extension [Self <: EBSOptionsStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EBSOptionsStatus] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: EBSOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     

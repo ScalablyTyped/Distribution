@@ -23,7 +23,8 @@ object DescribeInstanceEventWindowsResult {
     __obj.asInstanceOf[DescribeInstanceEventWindowsResult]
   }
   
-  extension [Self <: DescribeInstanceEventWindowsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInstanceEventWindowsResult] (val x: Self) extends AnyVal {
     
     inline def setInstanceEventWindows(value: InstanceEventWindowSet): Self = StObject.set(x, "InstanceEventWindows", value.asInstanceOf[js.Any])
     

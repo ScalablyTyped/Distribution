@@ -85,7 +85,8 @@ object mod {
       __obj.asInstanceOf[Combo]
     }
     
-    extension [Self <: Combo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Combo] (val x: Self) extends AnyVal {
       
       inline def setIs_counting(value: Boolean): Self = StObject.set(x, "is_counting", value.asInstanceOf[js.Any])
       
@@ -171,7 +172,8 @@ object mod {
       __obj.asInstanceOf[ListenerDefaults]
     }
     
-    extension [Self <: ListenerDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListenerDefaults] (val x: Self) extends AnyVal {
       
       inline def setIs_counting(value: Boolean): Self = StObject.set(x, "is_counting", value.asInstanceOf[js.Any])
       

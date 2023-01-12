@@ -15,7 +15,8 @@ object IsUIVisible {
     __obj.asInstanceOf[IsUIVisible]
   }
   
-  extension [Self <: IsUIVisible](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsUIVisible] (val x: Self) extends AnyVal {
     
     inline def setIsUIVisible(value: Boolean): Self = StObject.set(x, "isUIVisible", value.asInstanceOf[js.Any])
   }

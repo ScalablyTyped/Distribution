@@ -19,7 +19,8 @@ object ShippingsettingsGetSupportedHolidaysResponse {
     __obj.asInstanceOf[ShippingsettingsGetSupportedHolidaysResponse]
   }
   
-  extension [Self <: ShippingsettingsGetSupportedHolidaysResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShippingsettingsGetSupportedHolidaysResponse] (val x: Self) extends AnyVal {
     
     inline def setHolidays(value: js.Array[HolidaysHoliday]): Self = StObject.set(x, "holidays", value.asInstanceOf[js.Any])
     

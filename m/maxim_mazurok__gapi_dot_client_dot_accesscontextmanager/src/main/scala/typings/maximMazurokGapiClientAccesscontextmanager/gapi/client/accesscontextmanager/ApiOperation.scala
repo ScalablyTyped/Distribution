@@ -25,7 +25,8 @@ object ApiOperation {
     __obj.asInstanceOf[ApiOperation]
   }
   
-  extension [Self <: ApiOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiOperation] (val x: Self) extends AnyVal {
     
     inline def setMethodSelectors(value: js.Array[MethodSelector]): Self = StObject.set(x, "methodSelectors", value.asInstanceOf[js.Any])
     

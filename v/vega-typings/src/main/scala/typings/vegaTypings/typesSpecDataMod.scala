@@ -33,7 +33,8 @@ object typesSpecDataMod {
       __obj.asInstanceOf[BaseData]
     }
     
-    extension [Self <: BaseData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseData] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -169,7 +170,8 @@ object typesSpecDataMod {
       __obj.asInstanceOf[FormatDSV]
     }
     
-    extension [Self <: FormatDSV](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatDSV] (val x: Self) extends AnyVal {
       
       inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
@@ -207,7 +209,8 @@ object typesSpecDataMod {
       __obj.asInstanceOf[FormatJSON]
     }
     
-    extension [Self <: FormatJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatJSON] (val x: Self) extends AnyVal {
       
       inline def setCopy(value: Boolean): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       
@@ -243,7 +246,8 @@ object typesSpecDataMod {
       __obj.asInstanceOf[FormatSV]
     }
     
-    extension [Self <: FormatSV](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatSV] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: js.Array[String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -297,7 +301,8 @@ object typesSpecDataMod {
       __obj.asInstanceOf[SourceData]
     }
     
-    extension [Self <: SourceData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceData] (val x: Self) extends AnyVal {
       
       inline def setSource(value: String | js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -325,7 +330,8 @@ object typesSpecDataMod {
       __obj.asInstanceOf[UrlData]
     }
     
-    extension [Self <: UrlData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlData] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean | SignalRef): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -357,7 +363,8 @@ object typesSpecDataMod {
       __obj.asInstanceOf[ValuesData]
     }
     
-    extension [Self <: ValuesData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValuesData] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean | SignalRef): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

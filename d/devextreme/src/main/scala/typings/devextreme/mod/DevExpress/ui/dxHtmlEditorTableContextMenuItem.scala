@@ -28,7 +28,8 @@ object dxHtmlEditorTableContextMenuItem {
     __obj.asInstanceOf[dxHtmlEditorTableContextMenuItem]
   }
   
-  extension [Self <: dxHtmlEditorTableContextMenuItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxHtmlEditorTableContextMenuItem] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[ContextMenuItem | HtmlEditorPredefinedContextMenuItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

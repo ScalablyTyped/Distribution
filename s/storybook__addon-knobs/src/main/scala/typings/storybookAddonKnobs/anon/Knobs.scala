@@ -19,7 +19,8 @@ object Knobs {
     __obj.asInstanceOf[Knobs]
   }
   
-  extension [Self <: Knobs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Knobs] (val x: Self) extends AnyVal {
     
     inline def setKnobs(value: Record[String, KnobStoreKnob]): Self = StObject.set(x, "knobs", value.asInstanceOf[js.Any])
     

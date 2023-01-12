@@ -43,7 +43,8 @@ object XAccessibleTextSelection {
     __obj.asInstanceOf[XAccessibleTextSelection]
   }
   
-  extension [Self <: XAccessibleTextSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleTextSelection] (val x: Self) extends AnyVal {
     
     inline def setAddSelection(value: (Double, Double, Double) => Double): Self = StObject.set(x, "addSelection", js.Any.fromFunction3(value))
     

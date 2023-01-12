@@ -103,7 +103,8 @@ object distBackendCpuMod {
       __obj.asInstanceOf[TensorData[D]]
     }
     
-    extension [Self <: TensorData[?], D /* <: DataType */](x: Self & TensorData[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TensorData[?], D /* <: DataType */] (val x: Self & TensorData[D]) extends AnyVal {
       
       inline def setComplexTensorInfos(value: Imag): Self = StObject.set(x, "complexTensorInfos", value.asInstanceOf[js.Any])
       

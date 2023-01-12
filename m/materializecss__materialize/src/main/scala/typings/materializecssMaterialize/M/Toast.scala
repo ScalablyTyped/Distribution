@@ -31,7 +31,8 @@ object Toast {
     __obj.asInstanceOf[Toast]
   }
   
-  extension [Self <: Toast](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Toast] (val x: Self) extends AnyVal {
     
     inline def setDismiss(value: () => Unit): Self = StObject.set(x, "dismiss", js.Any.fromFunction0(value))
     

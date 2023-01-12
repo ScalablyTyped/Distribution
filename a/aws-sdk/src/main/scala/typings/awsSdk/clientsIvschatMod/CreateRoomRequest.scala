@@ -38,7 +38,8 @@ object CreateRoomRequest {
     __obj.asInstanceOf[CreateRoomRequest]
   }
   
-  extension [Self <: CreateRoomRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRoomRequest] (val x: Self) extends AnyVal {
     
     inline def setMaximumMessageLength(value: RoomMaxMessageLength): Self = StObject.set(x, "maximumMessageLength", value.asInstanceOf[js.Any])
     

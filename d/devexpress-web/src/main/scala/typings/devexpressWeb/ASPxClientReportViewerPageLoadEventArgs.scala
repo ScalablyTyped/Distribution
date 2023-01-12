@@ -38,7 +38,8 @@ object ASPxClientReportViewerPageLoadEventArgs {
     __obj.asInstanceOf[ASPxClientReportViewerPageLoadEventArgs]
   }
   
-  extension [Self <: ASPxClientReportViewerPageLoadEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientReportViewerPageLoadEventArgs] (val x: Self) extends AnyVal {
     
     inline def setIsFirstPage(value: () => Boolean): Self = StObject.set(x, "IsFirstPage", js.Any.fromFunction0(value))
     

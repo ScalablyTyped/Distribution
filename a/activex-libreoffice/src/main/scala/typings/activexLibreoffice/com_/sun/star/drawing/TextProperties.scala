@@ -313,7 +313,8 @@ object TextProperties {
     __obj.asInstanceOf[TextProperties]
   }
   
-  extension [Self <: TextProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextProperties] (val x: Self) extends AnyVal {
     
     inline def setIsNumbering(value: Boolean): Self = StObject.set(x, "IsNumbering", value.asInstanceOf[js.Any])
     

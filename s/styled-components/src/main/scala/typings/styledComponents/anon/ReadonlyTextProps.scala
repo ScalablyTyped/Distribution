@@ -131,7 +131,8 @@ object ReadonlyTextProps {
     __obj.asInstanceOf[ReadonlyTextProps]
   }
   
-  extension [Self <: ReadonlyTextProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyTextProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

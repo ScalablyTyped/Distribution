@@ -36,7 +36,8 @@ object DatapointProps {
     __obj.asInstanceOf[DatapointProps]
   }
   
-  extension [Self <: DatapointProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatapointProps] (val x: Self) extends AnyVal {
     
     inline def setBadge(value: BadgeObject): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     

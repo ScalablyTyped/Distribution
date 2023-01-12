@@ -16,7 +16,8 @@ object GoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesRequest {
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesRequest]
   }
   
-  extension [Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesRequest] (val x: Self) extends AnyVal {
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

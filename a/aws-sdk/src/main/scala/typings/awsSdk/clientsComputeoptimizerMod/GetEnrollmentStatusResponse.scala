@@ -38,7 +38,8 @@ object GetEnrollmentStatusResponse {
     __obj.asInstanceOf[GetEnrollmentStatusResponse]
   }
   
-  extension [Self <: GetEnrollmentStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEnrollmentStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setLastUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "lastUpdatedTimestamp", value.asInstanceOf[js.Any])
     

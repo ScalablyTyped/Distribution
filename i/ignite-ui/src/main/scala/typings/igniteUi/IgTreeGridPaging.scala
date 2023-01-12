@@ -340,7 +340,8 @@ object IgTreeGridPaging {
     __obj.asInstanceOf[IgTreeGridPaging]
   }
   
-  extension [Self <: IgTreeGridPaging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTreeGridPaging] (val x: Self) extends AnyVal {
     
     inline def setBreadcrumbDelimiter(value: String): Self = StObject.set(x, "breadcrumbDelimiter", value.asInstanceOf[js.Any])
     

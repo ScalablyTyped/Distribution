@@ -63,7 +63,8 @@ object RoutingProfile {
     __obj.asInstanceOf[RoutingProfile]
   }
   
-  extension [Self <: RoutingProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoutingProfile] (val x: Self) extends AnyVal {
     
     inline def setDefaultOutboundQueueId(value: QueueId): Self = StObject.set(x, "DefaultOutboundQueueId", value.asInstanceOf[js.Any])
     

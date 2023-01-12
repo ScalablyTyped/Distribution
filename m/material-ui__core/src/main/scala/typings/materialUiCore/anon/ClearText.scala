@@ -24,7 +24,8 @@ object ClearText {
     __obj.asInstanceOf[ClearText]
   }
   
-  extension [Self <: ClearText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearText] (val x: Self) extends AnyVal {
     
     inline def setClearText(value: String): Self = StObject.set(x, "clearText", value.asInstanceOf[js.Any])
     

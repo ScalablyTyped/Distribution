@@ -91,7 +91,8 @@ object FFAddonSDK {
       __obj.asInstanceOf[ActionButtonState]
     }
     
-    extension [Self <: ActionButtonState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionButtonState] (val x: Self) extends AnyVal {
       
       inline def setBadge(value: String | Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
@@ -178,7 +179,8 @@ object FFAddonSDK {
       __obj.asInstanceOf[Frame]
     }
     
-    extension [Self <: Frame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Frame] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -215,7 +217,8 @@ object FFAddonSDK {
       __obj.asInstanceOf[FrameEvent]
     }
     
-    extension [Self <: FrameEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -267,7 +270,8 @@ object FFAddonSDK {
       __obj.asInstanceOf[NSIException]
     }
     
-    extension [Self <: NSIException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NSIException] (val x: Self) extends AnyVal {
       
       inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
       
@@ -355,7 +359,8 @@ object FFAddonSDK {
       __obj.asInstanceOf[SDKURL]
     }
     
-    extension [Self <: SDKURL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SDKURL] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -473,7 +478,8 @@ object FFAddonSDK {
       __obj.asInstanceOf[ToggleButtonState]
     }
     
-    extension [Self <: ToggleButtonState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleButtonState] (val x: Self) extends AnyVal {
       
       inline def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       

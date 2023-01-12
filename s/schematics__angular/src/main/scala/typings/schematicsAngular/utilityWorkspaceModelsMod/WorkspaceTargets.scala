@@ -32,7 +32,8 @@ object WorkspaceTargets {
     __obj.asInstanceOf[WorkspaceTargets[TProjectType]]
   }
   
-  extension [Self <: WorkspaceTargets[?], TProjectType /* <: ProjectType */](x: Self & WorkspaceTargets[TProjectType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceTargets[?], TProjectType /* <: ProjectType */] (val x: Self & WorkspaceTargets[TProjectType]) extends AnyVal {
     
     inline def `setApp-shell`(value: AppShellBuilderTarget): Self = StObject.set(x, "app-shell", value.asInstanceOf[js.Any])
     

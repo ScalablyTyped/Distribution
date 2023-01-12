@@ -99,7 +99,8 @@ object libDispatcherMod {
       __obj.asInstanceOf[Dispatcher[TPayload]]
     }
     
-    extension [Self <: Dispatcher[?], TPayload](x: Self & Dispatcher[TPayload]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dispatcher[?], TPayload] (val x: Self & Dispatcher[TPayload]) extends AnyVal {
       
       inline def setDispatch(value: TPayload => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       

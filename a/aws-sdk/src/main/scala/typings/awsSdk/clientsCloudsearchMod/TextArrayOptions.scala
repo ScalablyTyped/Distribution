@@ -38,7 +38,8 @@ object TextArrayOptions {
     __obj.asInstanceOf[TextArrayOptions]
   }
   
-  extension [Self <: TextArrayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextArrayOptions] (val x: Self) extends AnyVal {
     
     inline def setAnalysisScheme(value: Word): Self = StObject.set(x, "AnalysisScheme", value.asInstanceOf[js.Any])
     

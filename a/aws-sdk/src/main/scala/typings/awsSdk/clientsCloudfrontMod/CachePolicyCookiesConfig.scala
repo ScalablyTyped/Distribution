@@ -20,7 +20,8 @@ object CachePolicyCookiesConfig {
     __obj.asInstanceOf[CachePolicyCookiesConfig]
   }
   
-  extension [Self <: CachePolicyCookiesConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CachePolicyCookiesConfig] (val x: Self) extends AnyVal {
     
     inline def setCookieBehavior(value: CachePolicyCookieBehavior): Self = StObject.set(x, "CookieBehavior", value.asInstanceOf[js.Any])
     

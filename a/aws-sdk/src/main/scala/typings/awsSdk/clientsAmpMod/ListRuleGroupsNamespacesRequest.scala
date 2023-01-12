@@ -33,7 +33,8 @@ object ListRuleGroupsNamespacesRequest {
     __obj.asInstanceOf[ListRuleGroupsNamespacesRequest]
   }
   
-  extension [Self <: ListRuleGroupsNamespacesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRuleGroupsNamespacesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ListRuleGroupsNamespacesRequestMaxResultsInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

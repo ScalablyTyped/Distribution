@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[HtmlEngine]
     }
     
-    extension [Self <: HtmlEngine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlEngine] (val x: Self) extends AnyVal {
       
       inline def setHtmlEngine(value: htmlEngine): Self = StObject.set(x, "htmlEngine", value.asInstanceOf[js.Any])
     }
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setAddBufferSize(value: Double): Self = StObject.set(x, "addBufferSize", value.asInstanceOf[js.Any])
       

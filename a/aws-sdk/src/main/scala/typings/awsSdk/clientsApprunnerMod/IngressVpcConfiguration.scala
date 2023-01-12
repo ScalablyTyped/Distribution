@@ -23,7 +23,8 @@ object IngressVpcConfiguration {
     __obj.asInstanceOf[IngressVpcConfiguration]
   }
   
-  extension [Self <: IngressVpcConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngressVpcConfiguration] (val x: Self) extends AnyVal {
     
     inline def setVpcEndpointId(value: String): Self = StObject.set(x, "VpcEndpointId", value.asInstanceOf[js.Any])
     

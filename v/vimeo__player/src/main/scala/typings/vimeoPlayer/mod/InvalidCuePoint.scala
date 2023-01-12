@@ -18,7 +18,8 @@ object InvalidCuePoint {
     __obj.asInstanceOf[InvalidCuePoint]
   }
   
-  extension [Self <: InvalidCuePoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidCuePoint] (val x: Self) extends AnyVal {
     
     inline def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.InvalidCuePoint): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

@@ -215,7 +215,8 @@ object OmitCascaderPropsvaluevis {
     __obj.asInstanceOf[OmitCascaderPropsvaluevis]
   }
   
-  extension [Self <: OmitCascaderPropsvaluevis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitCascaderPropsvaluevis] (val x: Self) extends AnyVal {
     
     inline def setActiveIcon(value: ReactNode): Self = StObject.set(x, "activeIcon", value.asInstanceOf[js.Any])
     

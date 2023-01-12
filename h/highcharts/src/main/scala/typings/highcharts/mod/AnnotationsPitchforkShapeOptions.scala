@@ -83,7 +83,8 @@ object AnnotationsPitchforkShapeOptions {
     __obj.asInstanceOf[AnnotationsPitchforkShapeOptions]
   }
   
-  extension [Self <: AnnotationsPitchforkShapeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsPitchforkShapeOptions] (val x: Self) extends AnyVal {
     
     inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     

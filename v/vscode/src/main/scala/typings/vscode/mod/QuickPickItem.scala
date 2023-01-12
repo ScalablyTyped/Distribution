@@ -71,7 +71,8 @@ object QuickPickItem {
     __obj.asInstanceOf[QuickPickItem]
   }
   
-  extension [Self <: QuickPickItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuickPickItem] (val x: Self) extends AnyVal {
     
     inline def setAlwaysShow(value: Boolean): Self = StObject.set(x, "alwaysShow", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Attribution {
     __obj.asInstanceOf[Attribution]
   }
   
-  extension [Self <: Attribution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Attribution] (val x: Self) extends AnyVal {
     
     inline def setAttribution(value: js.Array[Link]): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object EditorialNotes {
     __obj.asInstanceOf[EditorialNotes]
   }
   
-  extension [Self <: EditorialNotes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorialNotes] (val x: Self) extends AnyVal {
     
     inline def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     

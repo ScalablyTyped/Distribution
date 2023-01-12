@@ -18,7 +18,8 @@ object DeleteTapePoolOutput {
     __obj.asInstanceOf[DeleteTapePoolOutput]
   }
   
-  extension [Self <: DeleteTapePoolOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTapePoolOutput] (val x: Self) extends AnyVal {
     
     inline def setPoolARN(value: PoolARN): Self = StObject.set(x, "PoolARN", value.asInstanceOf[js.Any])
     

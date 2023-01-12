@@ -33,7 +33,8 @@ object typesReactHydrateMod {
       __obj.asInstanceOf[HydrateProps]
     }
     
-    extension [Self <: HydrateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HydrateProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

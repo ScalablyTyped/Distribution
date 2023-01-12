@@ -23,7 +23,8 @@ object WaitTime {
     __obj.asInstanceOf[WaitTime]
   }
   
-  extension [Self <: WaitTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaitTime] (val x: Self) extends AnyVal {
     
     inline def setWaitFor(value: string): Self = StObject.set(x, "WaitFor", value.asInstanceOf[js.Any])
     

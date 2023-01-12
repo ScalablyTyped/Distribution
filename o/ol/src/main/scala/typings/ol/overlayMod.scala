@@ -59,7 +59,8 @@ object overlayMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAutoPan(value: PanIntoViewOptions | Boolean): Self = StObject.set(x, "autoPan", value.asInstanceOf[js.Any])
       
@@ -289,7 +290,8 @@ object overlayMod {
       __obj.asInstanceOf[PanIntoViewOptions]
     }
     
-    extension [Self <: PanIntoViewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanIntoViewOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: PanOptions): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -314,7 +316,8 @@ object overlayMod {
       __obj.asInstanceOf[PanOptions]
     }
     
-    extension [Self <: PanOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanOptions] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       

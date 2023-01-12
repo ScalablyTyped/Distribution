@@ -32,7 +32,8 @@ object Actionmodes {
     __obj.asInstanceOf[Actionmodes]
   }
   
-  extension [Self <: Actionmodes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Actionmodes] (val x: Self) extends AnyVal {
     
     inline def setAction_modes(value: Record[String, WatcherActionExecutionMode]): Self = StObject.set(x, "action_modes", value.asInstanceOf[js.Any])
     

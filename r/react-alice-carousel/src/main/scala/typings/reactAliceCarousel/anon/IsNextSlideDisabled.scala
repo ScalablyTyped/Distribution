@@ -17,7 +17,8 @@ object IsNextSlideDisabled {
     __obj.asInstanceOf[IsNextSlideDisabled]
   }
   
-  extension [Self <: IsNextSlideDisabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsNextSlideDisabled] (val x: Self) extends AnyVal {
     
     inline def setIsNextSlideDisabled(value: Boolean): Self = StObject.set(x, "isNextSlideDisabled", value.asInstanceOf[js.Any])
     

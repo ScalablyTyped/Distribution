@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Literal]
     }
     
-    extension [Self <: Literal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Literal] (val x: Self) extends AnyVal {
       
       inline def setLiteral(value: Any): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
     }
@@ -68,7 +70,8 @@ object anon {
       __obj.asInstanceOf[Raw]
     }
     
-    extension [Self <: Raw](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Raw] (val x: Self) extends AnyVal {
       
       inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
@@ -93,7 +96,8 @@ object anon {
       __obj.asInstanceOf[Test]
     }
     
-    extension [Self <: Test](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Test] (val x: Self) extends AnyVal {
       
       inline def setTest(value: Any => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
     }
@@ -113,7 +117,8 @@ object anon {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
@@ -205,7 +210,8 @@ object anon {
       __obj.asInstanceOf[_empty]
     }
     
-    extension [Self <: _empty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
       
       inline def `setApostropheApostrophe-bs`(value: String): Self = StObject.set(x, "''-bs", value.asInstanceOf[js.Any])
       

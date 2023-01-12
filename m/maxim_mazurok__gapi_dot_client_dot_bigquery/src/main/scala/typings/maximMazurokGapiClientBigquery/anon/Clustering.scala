@@ -57,7 +57,8 @@ object Clustering {
     __obj.asInstanceOf[Clustering]
   }
   
-  extension [Self <: Clustering](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Clustering] (val x: Self) extends AnyVal {
     
     inline def setClustering(value: typings.maximMazurokGapiClientBigquery.gapi.client.bigquery.Clustering): Self = StObject.set(x, "clustering", value.asInstanceOf[js.Any])
     

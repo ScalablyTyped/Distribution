@@ -15,7 +15,8 @@ object ContentApplicationjsonRunnergroups {
     __obj.asInstanceOf[ContentApplicationjsonRunnergroups]
   }
   
-  extension [Self <: ContentApplicationjsonRunnergroups](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonRunnergroups] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonRunnergroups): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

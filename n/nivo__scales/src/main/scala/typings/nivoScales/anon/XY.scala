@@ -18,7 +18,8 @@ object XY {
     __obj.asInstanceOf[XY[XValue, YValue]]
   }
   
-  extension [Self <: XY[?, ?], XValue /* <: ScaleValue */, YValue /* <: ScaleValue */](x: Self & (XY[XValue, YValue])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XY[?, ?], XValue /* <: ScaleValue */, YValue /* <: ScaleValue */] (val x: Self & (XY[XValue, YValue])) extends AnyVal {
     
     inline def setX(value: XValue): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

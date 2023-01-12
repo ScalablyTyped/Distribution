@@ -55,7 +55,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TinyconOptions]
     }
     
-    extension [Self <: TinyconOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinyconOptions] (val x: Self) extends AnyVal {
       
       inline def setAbbreviate(value: Boolean): Self = StObject.set(x, "abbreviate", value.asInstanceOf[js.Any])
       

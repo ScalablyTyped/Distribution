@@ -19,7 +19,8 @@ object ModeSwitchItem {
     __obj.asInstanceOf[ModeSwitchItem]
   }
   
-  extension [Self <: ModeSwitchItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModeSwitchItem] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

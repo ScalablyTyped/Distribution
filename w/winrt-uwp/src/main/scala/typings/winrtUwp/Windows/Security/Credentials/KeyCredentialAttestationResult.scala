@@ -28,7 +28,8 @@ object KeyCredentialAttestationResult {
     __obj.asInstanceOf[KeyCredentialAttestationResult]
   }
   
-  extension [Self <: KeyCredentialAttestationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyCredentialAttestationResult] (val x: Self) extends AnyVal {
     
     inline def setAttestationBuffer(value: IBuffer): Self = StObject.set(x, "attestationBuffer", value.asInstanceOf[js.Any])
     

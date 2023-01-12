@@ -63,7 +63,8 @@ object distUriMod {
       __obj.asInstanceOf[Expression]
     }
     
-    extension [Self <: Expression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expression] (val x: Self) extends AnyVal {
       
       inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object distUriMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowQuerySquareBrackets(value: Boolean): Self = StObject.set(x, "allowQuerySquareBrackets", value.asInstanceOf[js.Any])
       

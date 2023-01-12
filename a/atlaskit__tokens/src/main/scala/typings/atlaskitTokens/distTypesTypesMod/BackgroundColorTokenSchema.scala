@@ -16,7 +16,8 @@ object BackgroundColorTokenSchema {
     __obj.asInstanceOf[BackgroundColorTokenSchema[BaseToken]]
   }
   
-  extension [Self <: BackgroundColorTokenSchema[?], BaseToken](x: Self & BackgroundColorTokenSchema[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundColorTokenSchema[?], BaseToken] (val x: Self & BackgroundColorTokenSchema[BaseToken]) extends AnyVal {
     
     inline def setColor(value: BackgroundDangerDisabled[BaseToken]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
   }

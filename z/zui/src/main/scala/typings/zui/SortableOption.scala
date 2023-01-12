@@ -31,7 +31,8 @@ object SortableOption {
     __obj.asInstanceOf[SortableOption]
   }
   
-  extension [Self <: SortableOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortableOption] (val x: Self) extends AnyVal {
     
     inline def setDragCssClass(value: String): Self = StObject.set(x, "dragCssClass", value.asInstanceOf[js.Any])
     

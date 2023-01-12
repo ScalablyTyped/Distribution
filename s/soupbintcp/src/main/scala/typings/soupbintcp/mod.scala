@@ -191,7 +191,8 @@ object mod {
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    extension [Self <: ConnectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setHeartbeatPacketType(value: PacketType): Self = StObject.set(x, "heartbeatPacketType", value.asInstanceOf[js.Any])
       
@@ -222,7 +223,8 @@ object mod {
       __obj.asInstanceOf[LoginAcceptedPayload]
     }
     
-    extension [Self <: LoginAcceptedPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoginAcceptedPayload] (val x: Self) extends AnyVal {
       
       inline def setSequenceNumber(value: Double): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
       
@@ -241,7 +243,8 @@ object mod {
       __obj.asInstanceOf[LoginRejectedPayload]
     }
     
-    extension [Self <: LoginRejectedPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoginRejectedPayload] (val x: Self) extends AnyVal {
       
       inline def setRejectReasonCode(value: String): Self = StObject.set(x, "rejectReasonCode", value.asInstanceOf[js.Any])
     }
@@ -264,7 +267,8 @@ object mod {
       __obj.asInstanceOf[LoginRequestPayload]
     }
     
-    extension [Self <: LoginRequestPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoginRequestPayload] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       

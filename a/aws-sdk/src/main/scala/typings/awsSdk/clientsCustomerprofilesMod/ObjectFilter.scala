@@ -23,7 +23,8 @@ object ObjectFilter {
     __obj.asInstanceOf[ObjectFilter]
   }
   
-  extension [Self <: ObjectFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectFilter] (val x: Self) extends AnyVal {
     
     inline def setKeyName(value: name): Self = StObject.set(x, "KeyName", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object SheetsOnEdit {
     __obj.asInstanceOf[SheetsOnEdit]
   }
   
-  extension [Self <: SheetsOnEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetsOnEdit] (val x: Self) extends AnyVal {
     
     inline def setOldValue(value: String): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     

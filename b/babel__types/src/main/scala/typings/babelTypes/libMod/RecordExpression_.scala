@@ -24,7 +24,8 @@ object RecordExpression_ {
     __obj.asInstanceOf[RecordExpression_]
   }
   
-  extension [Self <: RecordExpression_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordExpression_] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: js.Array[ObjectProperty_ | SpreadElement_]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

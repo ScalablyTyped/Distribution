@@ -18,7 +18,8 @@ object GoBackAction {
     __obj.asInstanceOf[GoBackAction]
   }
   
-  extension [Self <: GoBackAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoBackAction] (val x: Self) extends AnyVal {
     
     inline def setType(value: /* "ROUTER_GO_BACK" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

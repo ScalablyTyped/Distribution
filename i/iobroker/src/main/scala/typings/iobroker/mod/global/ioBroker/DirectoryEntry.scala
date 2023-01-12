@@ -28,7 +28,8 @@ object DirectoryEntry {
     __obj.asInstanceOf[DirectoryEntry]
   }
   
-  extension [Self <: DirectoryEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectoryEntry] (val x: Self) extends AnyVal {
     
     inline def setAcl(value: Any): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     

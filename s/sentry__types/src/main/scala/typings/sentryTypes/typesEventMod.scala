@@ -90,7 +90,8 @@ object typesEventMod {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setBreadcrumbs(value: js.Array[Breadcrumb]): Self = StObject.set(x, "breadcrumbs", value.asInstanceOf[js.Any])
       
@@ -233,7 +234,8 @@ object typesEventMod {
       __obj.asInstanceOf[EventHint]
     }
     
-    extension [Self <: EventHint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventHint] (val x: Self) extends AnyVal {
       
       inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       

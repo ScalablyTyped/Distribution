@@ -103,7 +103,8 @@ object libTypescriptSrcViewsDrawerViewMod {
       __obj.asInstanceOf[DrawerOptions]
     }
     
-    extension [Self <: DrawerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerOptions] (val x: Self) extends AnyVal {
       
       inline def setDrawerBackgroundColor(value: String): Self = StObject.set(x, "drawerBackgroundColor", value.asInstanceOf[js.Any])
       
@@ -228,7 +229,8 @@ object libTypescriptSrcViewsDrawerViewMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setDescriptors(value: SceneDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
       
@@ -257,7 +259,8 @@ object libTypescriptSrcViewsDrawerViewMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setDrawerWidth(value: Double): Self = StObject.set(x, "drawerWidth", value.asInstanceOf[js.Any])
       

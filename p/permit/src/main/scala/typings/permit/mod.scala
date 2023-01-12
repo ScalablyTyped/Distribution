@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[BearerOptions]
     }
     
-    extension [Self <: BearerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BearerOptions] (val x: Self) extends AnyVal {
       
       inline def setBasic(value: String): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object mod {
       __obj.asInstanceOf[PermitOptions]
     }
     
-    extension [Self <: PermitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PermitOptions] (val x: Self) extends AnyVal {
       
       inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       

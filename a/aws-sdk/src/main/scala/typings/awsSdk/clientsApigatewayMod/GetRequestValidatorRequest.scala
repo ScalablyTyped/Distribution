@@ -23,7 +23,8 @@ object GetRequestValidatorRequest {
     __obj.asInstanceOf[GetRequestValidatorRequest]
   }
   
-  extension [Self <: GetRequestValidatorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRequestValidatorRequest] (val x: Self) extends AnyVal {
     
     inline def setRequestValidatorId(value: String): Self = StObject.set(x, "requestValidatorId", value.asInstanceOf[js.Any])
     

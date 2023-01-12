@@ -30,7 +30,8 @@ object Prefix {
     __obj.asInstanceOf[Prefix]
   }
   
-  extension [Self <: Prefix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Prefix] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String | ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

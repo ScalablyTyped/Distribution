@@ -24,7 +24,8 @@ object CircleMarkerProps {
     __obj.asInstanceOf[CircleMarkerProps]
   }
   
-  extension [Self <: CircleMarkerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircleMarkerProps] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: LatLngExpression): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

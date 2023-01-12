@@ -20,7 +20,8 @@ object TypeofRibbon {
     __obj.asInstanceOf[TypeofRibbon]
   }
   
-  extension [Self <: TypeofRibbon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRibbon] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Ribbon): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

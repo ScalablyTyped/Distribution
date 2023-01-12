@@ -28,7 +28,8 @@ object CropPropertiesSuggestionState {
     __obj.asInstanceOf[CropPropertiesSuggestionState]
   }
   
-  extension [Self <: CropPropertiesSuggestionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CropPropertiesSuggestionState] (val x: Self) extends AnyVal {
     
     inline def setAngleSuggested(value: Boolean): Self = StObject.set(x, "angleSuggested", value.asInstanceOf[js.Any])
     

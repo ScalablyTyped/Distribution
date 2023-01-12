@@ -25,7 +25,8 @@ object GetResults {
     __obj.asInstanceOf[GetResults[TResult]]
   }
   
-  extension [Self <: GetResults[?], TResult](x: Self & GetResults[TResult]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResults[?], TResult] (val x: Self & GetResults[TResult]) extends AnyVal {
     
     inline def setCompleted(value: (/* asyncInfo */ IAsyncOperation[TResult], /* asyncStatus */ AsyncStatus) => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
     

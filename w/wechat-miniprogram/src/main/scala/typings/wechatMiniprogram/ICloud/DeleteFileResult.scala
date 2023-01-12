@@ -20,7 +20,8 @@ object DeleteFileResult {
     __obj.asInstanceOf[DeleteFileResult]
   }
   
-  extension [Self <: DeleteFileResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFileResult] (val x: Self) extends AnyVal {
     
     inline def setFileList(value: js.Array[DeleteFileResultItem]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     

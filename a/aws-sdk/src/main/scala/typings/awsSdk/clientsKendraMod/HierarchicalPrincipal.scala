@@ -18,7 +18,8 @@ object HierarchicalPrincipal {
     __obj.asInstanceOf[HierarchicalPrincipal]
   }
   
-  extension [Self <: HierarchicalPrincipal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HierarchicalPrincipal] (val x: Self) extends AnyVal {
     
     inline def setPrincipalList(value: PrincipalList): Self = StObject.set(x, "PrincipalList", value.asInstanceOf[js.Any])
     

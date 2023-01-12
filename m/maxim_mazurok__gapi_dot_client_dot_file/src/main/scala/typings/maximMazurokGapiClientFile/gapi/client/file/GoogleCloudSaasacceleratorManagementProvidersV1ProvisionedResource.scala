@@ -23,7 +23,8 @@ object GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource {
     __obj.asInstanceOf[GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource]
   }
   
-  extension [Self <: GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource] (val x: Self) extends AnyVal {
     
     inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     

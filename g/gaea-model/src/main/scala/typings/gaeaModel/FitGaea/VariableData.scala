@@ -23,7 +23,8 @@ object VariableData {
     __obj.asInstanceOf[VariableData]
   }
   
-  extension [Self <: VariableData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariableData] (val x: Self) extends AnyVal {
     
     inline def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     

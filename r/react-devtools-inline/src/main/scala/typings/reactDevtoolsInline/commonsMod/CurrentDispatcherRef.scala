@@ -15,7 +15,8 @@ object CurrentDispatcherRef {
     __obj.asInstanceOf[CurrentDispatcherRef]
   }
   
-  extension [Self <: CurrentDispatcherRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentDispatcherRef] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
   }

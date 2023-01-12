@@ -85,7 +85,8 @@ object PictureMarkerSymbolProper {
     __obj.asInstanceOf[PictureMarkerSymbolProper]
   }
   
-  extension [Self <: PictureMarkerSymbolProper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PictureMarkerSymbolProper] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

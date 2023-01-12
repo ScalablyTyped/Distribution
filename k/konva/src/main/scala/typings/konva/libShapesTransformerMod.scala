@@ -246,7 +246,8 @@ object libShapesTransformerMod {
       __obj.asInstanceOf[Box]
     }
     
-    extension [Self <: Box](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Box] (val x: Self) extends AnyVal {
       
       inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     }
@@ -309,7 +310,8 @@ object libShapesTransformerMod {
       __obj.asInstanceOf[TransformerConfig]
     }
     
-    extension [Self <: TransformerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformerConfig] (val x: Self) extends AnyVal {
       
       inline def setAnchorCornerRadius(value: Double): Self = StObject.set(x, "anchorCornerRadius", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object LifecycleRuleAndOperator {
     __obj.asInstanceOf[LifecycleRuleAndOperator]
   }
   
-  extension [Self <: LifecycleRuleAndOperator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LifecycleRuleAndOperator] (val x: Self) extends AnyVal {
     
     inline def setObjectSizeGreaterThan(value: ObjectSizeGreaterThanBytes): Self = StObject.set(x, "ObjectSizeGreaterThan", value.asInstanceOf[js.Any])
     

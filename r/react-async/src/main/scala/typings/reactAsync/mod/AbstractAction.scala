@@ -19,7 +19,8 @@ object AbstractAction {
     __obj.asInstanceOf[AbstractAction]
   }
   
-  extension [Self <: AbstractAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractAction] (val x: Self) extends AnyVal {
     
     inline def setMeta(value: Dictmeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     

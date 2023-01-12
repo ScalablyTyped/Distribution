@@ -27,7 +27,8 @@ object libTypescriptParamsMod {
       __obj.asInstanceOf[Bundle[T]]
     }
     
-    extension [Self <: Bundle[?], T](x: Self & Bundle[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bundle[?], T] (val x: Self & Bundle[T]) extends AnyVal {
       
       inline def setBundle(value: js.Array[T]): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object libTypescriptParamsMod {
       __obj.asInstanceOf[CommonParams]
     }
     
-    extension [Self <: CommonParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonParams] (val x: Self) extends AnyVal {
       
       inline def setAllowSeedlessDevice(value: Boolean): Self = StObject.set(x, "allowSeedlessDevice", value.asInstanceOf[js.Any])
       
@@ -156,7 +158,8 @@ object libTypescriptParamsMod {
       __obj.asInstanceOf[ConnectSettings]
     }
     
-    extension [Self <: ConnectSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectSettings] (val x: Self) extends AnyVal {
       
       inline def setConfigSrc(value: String): Self = StObject.set(x, "configSrc", value.asInstanceOf[js.Any])
       
@@ -253,7 +256,8 @@ object libTypescriptParamsMod {
       __obj.asInstanceOf[DefaultMessage]
     }
     
-    extension [Self <: DefaultMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultMessage] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -272,7 +276,8 @@ object libTypescriptParamsMod {
       __obj.asInstanceOf[Manifest]
     }
     
-    extension [Self <: Manifest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Manifest] (val x: Self) extends AnyVal {
       
       inline def setAppUrl(value: String): Self = StObject.set(x, "appUrl", value.asInstanceOf[js.Any])
       
@@ -299,7 +304,8 @@ object libTypescriptParamsMod {
       __obj.asInstanceOf[Success[T]]
     }
     
-    extension [Self <: Success[?], T](x: Self & Success[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Success[?], T] (val x: Self & Success[T]) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -322,7 +328,8 @@ object libTypescriptParamsMod {
       __obj.asInstanceOf[Unsuccessful]
     }
     
-    extension [Self <: Unsuccessful](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unsuccessful] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: Code): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       

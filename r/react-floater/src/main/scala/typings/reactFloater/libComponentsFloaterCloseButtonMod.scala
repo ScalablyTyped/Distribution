@@ -31,7 +31,8 @@ object libComponentsFloaterCloseButtonMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setOnClick(value: /* event */ SyntheticEvent[HTMLButtonElement, Event] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       

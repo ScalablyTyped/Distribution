@@ -37,7 +37,8 @@ object SizeRampElement {
     __obj.asInstanceOf[SizeRampElement]
   }
   
-  extension [Self <: SizeRampElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeRampElement] (val x: Self) extends AnyVal {
     
     inline def setInfos(value: js.Array[SizeRampStop]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
     

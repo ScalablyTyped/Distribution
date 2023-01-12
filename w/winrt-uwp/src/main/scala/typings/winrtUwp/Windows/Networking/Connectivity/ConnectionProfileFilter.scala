@@ -52,7 +52,8 @@ object ConnectionProfileFilter {
     __obj.asInstanceOf[ConnectionProfileFilter]
   }
   
-  extension [Self <: ConnectionProfileFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionProfileFilter] (val x: Self) extends AnyVal {
     
     inline def setIsBackgroundDataUsageRestricted(value: Boolean): Self = StObject.set(x, "isBackgroundDataUsageRestricted", value.asInstanceOf[js.Any])
     

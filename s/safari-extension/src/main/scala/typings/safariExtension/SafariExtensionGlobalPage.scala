@@ -15,7 +15,8 @@ object SafariExtensionGlobalPage {
     __obj.asInstanceOf[SafariExtensionGlobalPage]
   }
   
-  extension [Self <: SafariExtensionGlobalPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafariExtensionGlobalPage] (val x: Self) extends AnyVal {
     
     inline def setContentWindow(value: Window): Self = StObject.set(x, "contentWindow", value.asInstanceOf[js.Any])
   }

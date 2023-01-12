@@ -15,7 +15,8 @@ object XRLightProbeInit {
     __obj.asInstanceOf[XRLightProbeInit]
   }
   
-  extension [Self <: XRLightProbeInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRLightProbeInit] (val x: Self) extends AnyVal {
     
     inline def setReflectionFormat(value: XRReflectionFormat): Self = StObject.set(x, "reflectionFormat", value.asInstanceOf[js.Any])
   }

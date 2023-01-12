@@ -42,7 +42,8 @@ object ParseAsyncConfigBase {
     __obj.asInstanceOf[ParseAsyncConfigBase[T, TInput]]
   }
   
-  extension [Self <: ParseAsyncConfigBase[?, ?], T, TInput](x: Self & (ParseAsyncConfigBase[T, TInput])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseAsyncConfigBase[?, ?], T, TInput] (val x: Self & (ParseAsyncConfigBase[T, TInput])) extends AnyVal {
     
     inline def setChunk(value: (/* results */ ParseResult[T], /* parser */ Parser) => Unit): Self = StObject.set(x, "chunk", js.Any.fromFunction2(value))
     

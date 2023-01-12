@@ -17,7 +17,8 @@ object AggregationsPercentilesBucketAggregation {
     __obj.asInstanceOf[AggregationsPercentilesBucketAggregation]
   }
   
-  extension [Self <: AggregationsPercentilesBucketAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsPercentilesBucketAggregation] (val x: Self) extends AnyVal {
     
     inline def setPercents(value: js.Array[double]): Self = StObject.set(x, "percents", value.asInstanceOf[js.Any])
     

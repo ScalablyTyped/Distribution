@@ -18,7 +18,8 @@ object DeliverConfigSnapshotResponse {
     __obj.asInstanceOf[DeliverConfigSnapshotResponse]
   }
   
-  extension [Self <: DeliverConfigSnapshotResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliverConfigSnapshotResponse] (val x: Self) extends AnyVal {
     
     inline def setConfigSnapshotId(value: String): Self = StObject.set(x, "configSnapshotId", value.asInstanceOf[js.Any])
     

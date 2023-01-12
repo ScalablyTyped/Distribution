@@ -47,7 +47,8 @@ object typesModulesAutoplayMod {
       __obj.asInstanceOf[AutoplayEvents]
     }
     
-    extension [Self <: AutoplayEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoplayEvents] (val x: Self) extends AnyVal {
       
       inline def setAutoplay(value: default => Unit): Self = StObject.set(x, "autoplay", js.Any.fromFunction1(value))
       
@@ -159,7 +160,8 @@ object typesModulesAutoplayMod {
       __obj.asInstanceOf[AutoplayOptions]
     }
     
-    extension [Self <: AutoplayOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoplayOptions] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       

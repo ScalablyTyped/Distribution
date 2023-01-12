@@ -30,7 +30,8 @@ object distLoaderGridMod extends Shortcut {
       __obj.asInstanceOf[GridProps]
     }
     
-    extension [Self <: GridProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridProps] (val x: Self) extends AnyVal {
       
       inline def setRadius(value: String | Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object MultipleChoiceQuestion {
     __obj.asInstanceOf[MultipleChoiceQuestion]
   }
   
-  extension [Self <: MultipleChoiceQuestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipleChoiceQuestion] (val x: Self) extends AnyVal {
     
     inline def setChoices(value: js.Array[String]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
     

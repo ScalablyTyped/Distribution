@@ -40,7 +40,8 @@ object typesHttpMod {
       __obj.asInstanceOf[Http]
     }
     
-    extension [Self <: Http](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Http] (val x: Self) extends AnyVal {
       
       inline def setClientIp(value: String): Self = StObject.set(x, "ClientIp", value.asInstanceOf[js.Any])
       

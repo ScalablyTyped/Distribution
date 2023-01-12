@@ -28,7 +28,8 @@ object ListFirewallsRequest {
     __obj.asInstanceOf[ListFirewallsRequest]
   }
   
-  extension [Self <: ListFirewallsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFirewallsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: PaginationMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

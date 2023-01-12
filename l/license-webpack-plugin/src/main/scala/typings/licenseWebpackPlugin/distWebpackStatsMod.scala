@@ -17,7 +17,8 @@ object distWebpackStatsMod {
       __obj.asInstanceOf[WebpackStats]
     }
     
-    extension [Self <: WebpackStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebpackStats] (val x: Self) extends AnyVal {
       
       inline def setChunks(value: js.Array[WebpackStatsChunk]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object distWebpackStatsMod {
       __obj.asInstanceOf[WebpackStatsChunk]
     }
     
-    extension [Self <: WebpackStatsChunk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebpackStatsChunk] (val x: Self) extends AnyVal {
       
       inline def setModules(value: js.Array[WebpackStatsModule]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
@@ -63,7 +65,8 @@ object distWebpackStatsMod {
       __obj.asInstanceOf[WebpackStatsModule]
     }
     
-    extension [Self <: WebpackStatsModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebpackStatsModule] (val x: Self) extends AnyVal {
       
       inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       

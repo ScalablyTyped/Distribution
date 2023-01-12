@@ -18,7 +18,8 @@ object DescribeBotRequest {
     __obj.asInstanceOf[DescribeBotRequest]
   }
   
-  extension [Self <: DescribeBotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBotRequest] (val x: Self) extends AnyVal {
     
     inline def setBotId(value: Id): Self = StObject.set(x, "botId", value.asInstanceOf[js.Any])
   }

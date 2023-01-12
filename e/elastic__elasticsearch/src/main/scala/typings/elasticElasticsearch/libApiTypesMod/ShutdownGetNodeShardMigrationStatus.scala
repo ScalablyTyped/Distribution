@@ -15,7 +15,8 @@ object ShutdownGetNodeShardMigrationStatus {
     __obj.asInstanceOf[ShutdownGetNodeShardMigrationStatus]
   }
   
-  extension [Self <: ShutdownGetNodeShardMigrationStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShutdownGetNodeShardMigrationStatus] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: ShutdownGetNodeShutdownStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

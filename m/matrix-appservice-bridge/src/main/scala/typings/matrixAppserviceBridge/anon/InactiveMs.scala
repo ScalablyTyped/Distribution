@@ -17,7 +17,8 @@ object InactiveMs {
     __obj.asInstanceOf[InactiveMs]
   }
   
-  extension [Self <: InactiveMs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InactiveMs] (val x: Self) extends AnyVal {
     
     inline def setInactiveMs(value: Double): Self = StObject.set(x, "inactiveMs", value.asInstanceOf[js.Any])
     

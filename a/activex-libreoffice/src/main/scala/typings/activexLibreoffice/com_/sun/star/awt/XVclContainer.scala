@@ -42,7 +42,8 @@ object XVclContainer {
     __obj.asInstanceOf[XVclContainer]
   }
   
-  extension [Self <: XVclContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XVclContainer] (val x: Self) extends AnyVal {
     
     inline def setAddVclContainerListener(value: XVclContainerListener => Unit): Self = StObject.set(x, "addVclContainerListener", js.Any.fromFunction1(value))
     

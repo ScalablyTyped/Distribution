@@ -172,7 +172,8 @@ object ThemeButtonGroupProps {
     __obj.asInstanceOf[ThemeButtonGroupProps]
   }
   
-  extension [Self <: ThemeButtonGroupProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeButtonGroupProps] (val x: Self) extends AnyVal {
     
     inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     

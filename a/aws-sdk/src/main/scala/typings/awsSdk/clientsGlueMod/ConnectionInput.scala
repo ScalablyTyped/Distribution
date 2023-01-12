@@ -43,7 +43,8 @@ object ConnectionInput {
     __obj.asInstanceOf[ConnectionInput]
   }
   
-  extension [Self <: ConnectionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionInput] (val x: Self) extends AnyVal {
     
     inline def setConnectionProperties(value: ConnectionProperties): Self = StObject.set(x, "ConnectionProperties", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object `4` {
     __obj.asInstanceOf[`4`[State]]
   }
   
-  extension [Self <: `4`[?], State](x: Self & `4`[State]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `4`[?], State] (val x: Self & `4`[State]) extends AnyVal {
     
     inline def setTo(value: SpringChain[State] | Falsy): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     

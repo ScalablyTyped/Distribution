@@ -23,7 +23,8 @@ object RulePriorityPair {
     __obj.asInstanceOf[RulePriorityPair]
   }
   
-  extension [Self <: RulePriorityPair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RulePriorityPair] (val x: Self) extends AnyVal {
     
     inline def setPriority(value: RulePriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     

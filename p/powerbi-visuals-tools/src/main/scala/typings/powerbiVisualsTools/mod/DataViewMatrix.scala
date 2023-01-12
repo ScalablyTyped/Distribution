@@ -27,7 +27,8 @@ object DataViewMatrix {
     __obj.asInstanceOf[DataViewMatrix]
   }
   
-  extension [Self <: DataViewMatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewMatrix] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: DataViewHierarchy): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

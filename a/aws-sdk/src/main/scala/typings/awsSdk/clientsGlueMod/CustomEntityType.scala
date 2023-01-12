@@ -28,7 +28,8 @@ object CustomEntityType {
     __obj.asInstanceOf[CustomEntityType]
   }
   
-  extension [Self <: CustomEntityType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomEntityType] (val x: Self) extends AnyVal {
     
     inline def setContextWords(value: ContextWords): Self = StObject.set(x, "ContextWords", value.asInstanceOf[js.Any])
     

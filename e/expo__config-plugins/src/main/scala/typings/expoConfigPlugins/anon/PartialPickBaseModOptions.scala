@@ -18,7 +18,8 @@ object PartialPickBaseModOptions {
     __obj.asInstanceOf[PartialPickBaseModOptions]
   }
   
-  extension [Self <: PartialPickBaseModOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPickBaseModOptions] (val x: Self) extends AnyVal {
     
     inline def setSaveToInternal(value: Boolean): Self = StObject.set(x, "saveToInternal", value.asInstanceOf[js.Any])
     

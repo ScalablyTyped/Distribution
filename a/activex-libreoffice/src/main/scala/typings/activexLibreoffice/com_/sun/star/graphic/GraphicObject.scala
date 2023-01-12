@@ -43,7 +43,8 @@ object GraphicObject {
     __obj.asInstanceOf[GraphicObject]
   }
   
-  extension [Self <: GraphicObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphicObject] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     

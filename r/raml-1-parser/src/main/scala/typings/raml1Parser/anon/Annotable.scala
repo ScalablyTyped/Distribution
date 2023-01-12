@@ -236,7 +236,8 @@ object Annotable {
     __obj.asInstanceOf[Annotable]
   }
   
-  extension [Self <: Annotable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Annotable] (val x: Self) extends AnyVal {
     
     inline def setAbstractSecurityScheme(value: PropertiesSettings): Self = StObject.set(x, "AbstractSecurityScheme", value.asInstanceOf[js.Any])
     

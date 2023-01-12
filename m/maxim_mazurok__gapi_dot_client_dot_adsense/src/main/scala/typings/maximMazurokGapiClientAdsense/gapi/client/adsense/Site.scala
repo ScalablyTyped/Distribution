@@ -28,7 +28,8 @@ object Site {
     __obj.asInstanceOf[Site]
   }
   
-  extension [Self <: Site](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Site] (val x: Self) extends AnyVal {
     
     inline def setAutoAdsEnabled(value: Boolean): Self = StObject.set(x, "autoAdsEnabled", value.asInstanceOf[js.Any])
     

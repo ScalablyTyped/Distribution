@@ -17,7 +17,8 @@ object CanvasOverlayProps {
     __obj.asInstanceOf[CanvasOverlayProps]
   }
   
-  extension [Self <: CanvasOverlayProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasOverlayProps] (val x: Self) extends AnyVal {
     
     inline def setRedraw(value: CanvasRedrawOptions => Unit): Self = StObject.set(x, "redraw", js.Any.fromFunction1(value))
   }

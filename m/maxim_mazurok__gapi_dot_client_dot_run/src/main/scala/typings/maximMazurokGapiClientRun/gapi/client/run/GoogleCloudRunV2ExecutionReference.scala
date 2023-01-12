@@ -22,7 +22,8 @@ object GoogleCloudRunV2ExecutionReference {
     __obj.asInstanceOf[GoogleCloudRunV2ExecutionReference]
   }
   
-  extension [Self <: GoogleCloudRunV2ExecutionReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRunV2ExecutionReference] (val x: Self) extends AnyVal {
     
     inline def setCompletionTime(value: String): Self = StObject.set(x, "completionTime", value.asInstanceOf[js.Any])
     

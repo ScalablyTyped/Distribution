@@ -23,7 +23,8 @@ object ListConfigurationHistoryResponse {
     __obj.asInstanceOf[ListConfigurationHistoryResponse]
   }
   
-  extension [Self <: ListConfigurationHistoryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListConfigurationHistoryResponse] (val x: Self) extends AnyVal {
     
     inline def setEventList(value: ConfigurationEventList): Self = StObject.set(x, "EventList", value.asInstanceOf[js.Any])
     

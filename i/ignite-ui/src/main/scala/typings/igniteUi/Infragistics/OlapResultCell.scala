@@ -27,7 +27,8 @@ object OlapResultCell {
     __obj.asInstanceOf[OlapResultCell]
   }
   
-  extension [Self <: OlapResultCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlapResultCell] (val x: Self) extends AnyVal {
     
     inline def setCellOrdinal(value: js.Object => Double): Self = StObject.set(x, "cellOrdinal", js.Any.fromFunction1(value))
     

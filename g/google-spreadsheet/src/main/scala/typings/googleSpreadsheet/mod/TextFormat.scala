@@ -29,7 +29,8 @@ object TextFormat {
     __obj.asInstanceOf[TextFormat]
   }
   
-  extension [Self <: TextFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextFormat] (val x: Self) extends AnyVal {
     
     inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     

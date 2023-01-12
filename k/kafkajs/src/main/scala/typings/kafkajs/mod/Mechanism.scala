@@ -17,7 +17,8 @@ object Mechanism {
     __obj.asInstanceOf[Mechanism]
   }
   
-  extension [Self <: Mechanism](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mechanism] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationProvider(value: AuthenticationProviderArgs => Authenticator): Self = StObject.set(x, "authenticationProvider", js.Any.fromFunction1(value))
     

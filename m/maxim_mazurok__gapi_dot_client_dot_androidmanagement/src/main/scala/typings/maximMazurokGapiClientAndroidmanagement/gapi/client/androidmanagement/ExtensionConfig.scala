@@ -24,7 +24,8 @@ object ExtensionConfig {
     __obj.asInstanceOf[ExtensionConfig]
   }
   
-  extension [Self <: ExtensionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionConfig] (val x: Self) extends AnyVal {
     
     inline def setNotificationReceiver(value: String): Self = StObject.set(x, "notificationReceiver", value.asInstanceOf[js.Any])
     

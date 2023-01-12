@@ -39,7 +39,8 @@ object TransitionActions {
     __obj.asInstanceOf[TransitionActions]
   }
   
-  extension [Self <: TransitionActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionActions] (val x: Self) extends AnyVal {
     
     inline def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
     

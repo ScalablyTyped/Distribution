@@ -25,7 +25,8 @@ object NEMTransactionCommon {
     __obj.asInstanceOf[NEMTransactionCommon]
   }
   
-  extension [Self <: NEMTransactionCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NEMTransactionCommon] (val x: Self) extends AnyVal {
     
     inline def setAddress_n(value: js.Array[Double]): Self = StObject.set(x, "address_n", value.asInstanceOf[js.Any])
     

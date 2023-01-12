@@ -18,7 +18,8 @@ object PropertyNameSuggestion {
     __obj.asInstanceOf[PropertyNameSuggestion]
   }
   
-  extension [Self <: PropertyNameSuggestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyNameSuggestion] (val x: Self) extends AnyVal {
     
     inline def setPropertyName(value: ResourcePropertyName): Self = StObject.set(x, "PropertyName", value.asInstanceOf[js.Any])
     

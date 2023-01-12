@@ -198,7 +198,8 @@ object vectorMod {
       __obj.asInstanceOf[VectorOptions]
     }
     
-    extension [Self <: VectorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VectorOptions] (val x: Self) extends AnyVal {
       
       inline def setInitialCapacity(value: Double): Self = StObject.set(x, "initialCapacity", value.asInstanceOf[js.Any])
       

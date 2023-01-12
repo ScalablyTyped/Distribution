@@ -39,7 +39,8 @@ object BlockChunkGraph {
     __obj.asInstanceOf[BlockChunkGraph]
   }
   
-  extension [Self <: BlockChunkGraph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockChunkGraph] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: AsyncDependenciesBlock): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

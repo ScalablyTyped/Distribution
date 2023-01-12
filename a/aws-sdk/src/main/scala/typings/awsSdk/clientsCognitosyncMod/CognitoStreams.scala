@@ -28,7 +28,8 @@ object CognitoStreams {
     __obj.asInstanceOf[CognitoStreams]
   }
   
-  extension [Self <: CognitoStreams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CognitoStreams] (val x: Self) extends AnyVal {
     
     inline def setRoleArn(value: AssumeRoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     

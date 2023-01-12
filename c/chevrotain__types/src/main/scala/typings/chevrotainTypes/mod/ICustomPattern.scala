@@ -41,7 +41,8 @@ object ICustomPattern {
     __obj.asInstanceOf[ICustomPattern]
   }
   
-  extension [Self <: ICustomPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICustomPattern] (val x: Self) extends AnyVal {
     
     inline def setExec(
       value: (/* text */ String, /* offset */ Double, /* tokens */ js.Array[IToken], /* groups */ StringDictionary[js.Array[IToken]]) => CustomPatternMatcherReturn | RegExpExecArray | Null

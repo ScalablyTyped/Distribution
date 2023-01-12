@@ -18,7 +18,8 @@ object ComputeCapacity {
     __obj.asInstanceOf[ComputeCapacity]
   }
   
-  extension [Self <: ComputeCapacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputeCapacity] (val x: Self) extends AnyVal {
     
     inline def setDesiredInstances(value: Integer): Self = StObject.set(x, "DesiredInstances", value.asInstanceOf[js.Any])
   }

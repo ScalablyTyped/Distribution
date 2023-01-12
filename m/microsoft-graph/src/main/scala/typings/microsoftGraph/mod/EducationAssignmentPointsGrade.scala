@@ -18,7 +18,8 @@ object EducationAssignmentPointsGrade {
     __obj.asInstanceOf[EducationAssignmentPointsGrade]
   }
   
-  extension [Self <: EducationAssignmentPointsGrade](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationAssignmentPointsGrade] (val x: Self) extends AnyVal {
     
     inline def setPoints(value: NullableOption[Double]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     

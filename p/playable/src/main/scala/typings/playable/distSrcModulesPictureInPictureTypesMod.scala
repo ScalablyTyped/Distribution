@@ -37,7 +37,8 @@ object distSrcModulesPictureInPictureTypesMod {
       __obj.asInstanceOf[IPictureInPicture]
     }
     
-    extension [Self <: IPictureInPicture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPictureInPicture] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -74,7 +75,8 @@ object distSrcModulesPictureInPictureTypesMod {
       __obj.asInstanceOf[IPictureInPictureAPI]
     }
     
-    extension [Self <: IPictureInPictureAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPictureInPictureAPI] (val x: Self) extends AnyVal {
       
       inline def setDisablePictureInPicture(value: () => Unit): Self = StObject.set(x, "disablePictureInPicture", js.Any.fromFunction0(value))
       
@@ -123,7 +125,8 @@ object distSrcModulesPictureInPictureTypesMod {
       __obj.asInstanceOf[IPictureInPictureHelper]
     }
     
-    extension [Self <: IPictureInPictureHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPictureInPictureHelper] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

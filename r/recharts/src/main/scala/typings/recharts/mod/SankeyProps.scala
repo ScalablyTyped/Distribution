@@ -223,7 +223,8 @@ object SankeyProps {
     __obj.asInstanceOf[SankeyProps]
   }
   
-  extension [Self <: SankeyProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SankeyProps] (val x: Self) extends AnyVal {
     
     inline def setAlignmentBaseline(value: String): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     

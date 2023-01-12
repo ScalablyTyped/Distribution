@@ -35,7 +35,8 @@ object typesPullRequestCreatedEventMetadataMod {
       __obj.asInstanceOf[PullRequestCreatedEventMetadata]
     }
     
-    extension [Self <: PullRequestCreatedEventMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PullRequestCreatedEventMetadata] (val x: Self) extends AnyVal {
       
       inline def setDestinationCommitId(value: String): Self = StObject.set(x, "destinationCommitId", value.asInstanceOf[js.Any])
       

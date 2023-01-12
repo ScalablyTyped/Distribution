@@ -25,7 +25,8 @@ object YouTubeVideo {
     __obj.asInstanceOf[YouTubeVideo]
   }
   
-  extension [Self <: YouTubeVideo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YouTubeVideo] (val x: Self) extends AnyVal {
     
     inline def setAlternateLink(value: String): Self = StObject.set(x, "alternateLink", value.asInstanceOf[js.Any])
     

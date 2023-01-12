@@ -28,7 +28,8 @@ object DirectionPage {
     __obj.asInstanceOf[DirectionPage]
   }
   
-  extension [Self <: DirectionPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionPage] (val x: Self) extends AnyVal {
     
     inline def setDirection(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['direction'] */ js.Any

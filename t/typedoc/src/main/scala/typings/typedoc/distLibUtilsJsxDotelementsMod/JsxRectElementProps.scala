@@ -32,7 +32,8 @@ object JsxRectElementProps {
     __obj.asInstanceOf[JsxRectElementProps]
   }
   
-  extension [Self <: JsxRectElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxRectElementProps] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

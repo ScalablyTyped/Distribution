@@ -63,7 +63,8 @@ object ElementProperties {
     __obj.asInstanceOf[ElementProperties]
   }
   
-  extension [Self <: ElementProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementProperties] (val x: Self) extends AnyVal {
     
     inline def setAbortOnFailure(value: Boolean): Self = StObject.set(x, "abortOnFailure", value.asInstanceOf[js.Any])
     

@@ -277,7 +277,8 @@ object libComponentsContextualMenuContextualMenuDotbaseMod {
       __obj.asInstanceOf[IContextualMenuState]
     }
     
-    extension [Self <: IContextualMenuState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContextualMenuState] (val x: Self) extends AnyVal {
       
       inline def setContextualMenuItems(value: js.Array[IContextualMenuItem]): Self = StObject.set(x, "contextualMenuItems", value.asInstanceOf[js.Any])
       

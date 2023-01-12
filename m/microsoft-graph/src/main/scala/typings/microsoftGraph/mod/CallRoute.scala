@@ -22,7 +22,8 @@ object CallRoute {
     __obj.asInstanceOf[CallRoute]
   }
   
-  extension [Self <: CallRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallRoute] (val x: Self) extends AnyVal {
     
     inline def setFinal(value: IdentitySet): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
     

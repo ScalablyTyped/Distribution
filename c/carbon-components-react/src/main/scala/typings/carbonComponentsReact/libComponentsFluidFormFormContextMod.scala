@@ -22,7 +22,8 @@ object libComponentsFluidFormFormContextMod {
       __obj.asInstanceOf[FormContextProps]
     }
     
-    extension [Self <: FormContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormContextProps] (val x: Self) extends AnyVal {
       
       inline def setIsFluid(value: Boolean): Self = StObject.set(x, "isFluid", value.asInstanceOf[js.Any])
       

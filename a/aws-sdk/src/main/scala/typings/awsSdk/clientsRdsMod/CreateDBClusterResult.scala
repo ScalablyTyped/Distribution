@@ -15,7 +15,8 @@ object CreateDBClusterResult {
     __obj.asInstanceOf[CreateDBClusterResult]
   }
   
-  extension [Self <: CreateDBClusterResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDBClusterResult] (val x: Self) extends AnyVal {
     
     inline def setDBCluster(value: DBCluster): Self = StObject.set(x, "DBCluster", value.asInstanceOf[js.Any])
     

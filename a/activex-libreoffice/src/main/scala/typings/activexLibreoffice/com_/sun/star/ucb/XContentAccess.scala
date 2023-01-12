@@ -55,7 +55,8 @@ object XContentAccess {
     __obj.asInstanceOf[XContentAccess]
   }
   
-  extension [Self <: XContentAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XContentAccess] (val x: Self) extends AnyVal {
     
     inline def setQueryContent(value: () => XContent): Self = StObject.set(x, "queryContent", js.Any.fromFunction0(value))
     

@@ -31,7 +31,8 @@ object TypeoffinalScriptWitness {
     __obj.asInstanceOf[TypeoffinalScriptWitness]
   }
   
-  extension [Self <: TypeoffinalScriptWitness](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeoffinalScriptWitness] (val x: Self) extends AnyVal {
     
     inline def setCanAdd(value: (Any, Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
     

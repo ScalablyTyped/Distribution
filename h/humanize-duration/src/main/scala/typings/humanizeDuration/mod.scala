@@ -42,7 +42,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HumanizerOptions]
     }
     
-    extension [Self <: HumanizerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HumanizerOptions] (val x: Self) extends AnyVal {
       
       inline def setLanguages(value: Record[String, UnitTranslationOptions]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
       
@@ -307,7 +308,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setConjunction(value: String): Self = StObject.set(x, "conjunction", value.asInstanceOf[js.Any])
       
@@ -599,7 +601,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[UnitMeasuresOptions]
     }
     
-    extension [Self <: UnitMeasuresOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnitMeasuresOptions] (val x: Self) extends AnyVal {
       
       inline def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       
@@ -660,7 +663,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[UnitTranslationOptions]
     }
     
-    extension [Self <: UnitTranslationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnitTranslationOptions] (val x: Self) extends AnyVal {
       
       inline def setD(value: /* count */ js.UndefOr[Double] => String): Self = StObject.set(x, "d", js.Any.fromFunction1(value))
       

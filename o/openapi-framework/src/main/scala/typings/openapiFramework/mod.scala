@@ -181,7 +181,8 @@ object mod {
       __obj.asInstanceOf[OpenAPIFramework]
     }
     
-    extension [Self <: OpenAPIFramework](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPIFramework] (val x: Self) extends AnyVal {
       
       inline def setApiDoc(value: Any): Self = StObject.set(x, "apiDoc", value.asInstanceOf[js.Any])
       

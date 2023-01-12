@@ -35,7 +35,8 @@ object ServerAdapterCallbacks {
     __obj.asInstanceOf[ServerAdapterCallbacks]
   }
   
-  extension [Self <: ServerAdapterCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerAdapterCallbacks] (val x: Self) extends AnyVal {
     
     inline def setAck(value: () => Unit): Self = StObject.set(x, "ack", js.Any.fromFunction0(value))
     

@@ -32,7 +32,8 @@ object SentenceAnalysis {
     __obj.asInstanceOf[SentenceAnalysis]
   }
   
-  extension [Self <: SentenceAnalysis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SentenceAnalysis] (val x: Self) extends AnyVal {
     
     inline def setInput_from(value: Double): Self = StObject.set(x, "input_from", value.asInstanceOf[js.Any])
     

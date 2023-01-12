@@ -32,7 +32,8 @@ object IgEditorFilterMethods {
     __obj.asInstanceOf[IgEditorFilterMethods]
   }
   
-  extension [Self <: IgEditorFilterMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgEditorFilterMethods] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

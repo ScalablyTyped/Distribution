@@ -22,7 +22,8 @@ object NavigationPopActionPayload {
     __obj.asInstanceOf[NavigationPopActionPayload]
   }
   
-  extension [Self <: NavigationPopActionPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationPopActionPayload] (val x: Self) extends AnyVal {
     
     inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
     

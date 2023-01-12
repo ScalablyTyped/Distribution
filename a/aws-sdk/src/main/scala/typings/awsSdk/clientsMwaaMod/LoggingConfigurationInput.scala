@@ -38,7 +38,8 @@ object LoggingConfigurationInput {
     __obj.asInstanceOf[LoggingConfigurationInput]
   }
   
-  extension [Self <: LoggingConfigurationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoggingConfigurationInput] (val x: Self) extends AnyVal {
     
     inline def setDagProcessingLogs(value: ModuleLoggingConfigurationInput): Self = StObject.set(x, "DagProcessingLogs", value.asInstanceOf[js.Any])
     

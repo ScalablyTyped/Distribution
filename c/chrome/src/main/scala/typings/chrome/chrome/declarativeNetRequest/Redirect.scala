@@ -33,7 +33,8 @@ object Redirect {
     __obj.asInstanceOf[Redirect]
   }
   
-  extension [Self <: Redirect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Redirect] (val x: Self) extends AnyVal {
     
     inline def setExtensionPath(value: String): Self = StObject.set(x, "extensionPath", value.asInstanceOf[js.Any])
     

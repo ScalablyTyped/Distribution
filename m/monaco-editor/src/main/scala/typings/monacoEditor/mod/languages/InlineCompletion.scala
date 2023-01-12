@@ -53,7 +53,8 @@ object InlineCompletion {
     __obj.asInstanceOf[InlineCompletion]
   }
   
-  extension [Self <: InlineCompletion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineCompletion] (val x: Self) extends AnyVal {
     
     inline def setAdditionalTextEdits(value: js.Array[ISingleEditOperation]): Self = StObject.set(x, "additionalTextEdits", value.asInstanceOf[js.Any])
     

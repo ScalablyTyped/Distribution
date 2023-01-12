@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setBuff(value: js.typedarray.Uint8Array): Self = StObject.set(x, "buff", value.asInstanceOf[js.Any])
       

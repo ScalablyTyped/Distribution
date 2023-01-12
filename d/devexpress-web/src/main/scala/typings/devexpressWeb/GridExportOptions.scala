@@ -28,7 +28,8 @@ object GridExportOptions {
     __obj.asInstanceOf[GridExportOptions]
   }
   
-  extension [Self <: GridExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridExportOptions] (val x: Self) extends AnyVal {
     
     inline def setFitToPageWidth(value: Boolean): Self = StObject.set(x, "FitToPageWidth", value.asInstanceOf[js.Any])
     

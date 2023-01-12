@@ -18,7 +18,8 @@ object GetWebhookResult {
     __obj.asInstanceOf[GetWebhookResult]
   }
   
-  extension [Self <: GetWebhookResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWebhookResult] (val x: Self) extends AnyVal {
     
     inline def setWebhook(value: Webhook): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
   }

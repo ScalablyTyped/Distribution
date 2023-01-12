@@ -32,7 +32,8 @@ object buildSrcSubchannelAddressMod {
       __obj.asInstanceOf[IpcSubchannelAddress]
     }
     
-    extension [Self <: IpcSubchannelAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IpcSubchannelAddress] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
@@ -71,7 +72,8 @@ object buildSrcSubchannelAddressMod {
       __obj.asInstanceOf[TcpSubchannelAddress]
     }
     
-    extension [Self <: TcpSubchannelAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TcpSubchannelAddress] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

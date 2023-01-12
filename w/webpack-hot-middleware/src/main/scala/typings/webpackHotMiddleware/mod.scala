@@ -53,7 +53,8 @@ object mod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setAnsiColors(value: StringDictionary[Any]): Self = StObject.set(x, "ansiColors", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object mod {
       __obj.asInstanceOf[EventStream]
     }
     
-    extension [Self <: EventStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventStream] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -148,7 +150,8 @@ object mod {
       __obj.asInstanceOf[MiddlewareOptions]
     }
     
-    extension [Self <: MiddlewareOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MiddlewareOptions] (val x: Self) extends AnyVal {
       
       inline def setHeartbeat(value: Double): Self = StObject.set(x, "heartbeat", value.asInstanceOf[js.Any])
       

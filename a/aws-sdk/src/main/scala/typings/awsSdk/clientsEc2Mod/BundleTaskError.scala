@@ -23,7 +23,8 @@ object BundleTaskError {
     __obj.asInstanceOf[BundleTaskError]
   }
   
-  extension [Self <: BundleTaskError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BundleTaskError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object AutomaticTapeCreationRule {
     __obj.asInstanceOf[AutomaticTapeCreationRule]
   }
   
-  extension [Self <: AutomaticTapeCreationRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutomaticTapeCreationRule] (val x: Self) extends AnyVal {
     
     inline def setMinimumNumTapes(value: MinimumNumTapes): Self = StObject.set(x, "MinimumNumTapes", value.asInstanceOf[js.Any])
     

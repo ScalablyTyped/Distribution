@@ -39,7 +39,8 @@ object Color {
     __obj.asInstanceOf[Color]
   }
   
-  extension [Self <: Color](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
     
     inline def setColor(
       value: default | subtle | success | error | warning | info | inverse | shopping | brandPrimary | light | dark

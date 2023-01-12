@@ -28,7 +28,8 @@ object InferenceInputConfiguration {
     __obj.asInstanceOf[InferenceInputConfiguration]
   }
   
-  extension [Self <: InferenceInputConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferenceInputConfiguration] (val x: Self) extends AnyVal {
     
     inline def setInferenceInputNameConfiguration(value: InferenceInputNameConfiguration): Self = StObject.set(x, "InferenceInputNameConfiguration", value.asInstanceOf[js.Any])
     

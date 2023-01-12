@@ -63,7 +63,8 @@ object IBMDb2Settings {
     __obj.asInstanceOf[IBMDb2Settings]
   }
   
-  extension [Self <: IBMDb2Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBMDb2Settings] (val x: Self) extends AnyVal {
     
     inline def setCurrentLsn(value: String): Self = StObject.set(x, "CurrentLsn", value.asInstanceOf[js.Any])
     

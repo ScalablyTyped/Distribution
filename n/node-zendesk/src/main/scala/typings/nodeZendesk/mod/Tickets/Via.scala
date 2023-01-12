@@ -17,7 +17,8 @@ object Via {
     __obj.asInstanceOf[Via]
   }
   
-  extension [Self <: Via](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Via] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: ViaChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

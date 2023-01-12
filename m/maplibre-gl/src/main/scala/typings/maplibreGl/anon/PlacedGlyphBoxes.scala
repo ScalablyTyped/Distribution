@@ -18,7 +18,8 @@ object PlacedGlyphBoxes {
     __obj.asInstanceOf[PlacedGlyphBoxes]
   }
   
-  extension [Self <: PlacedGlyphBoxes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlacedGlyphBoxes] (val x: Self) extends AnyVal {
     
     inline def setPlacedGlyphBoxes(value: Box): Self = StObject.set(x, "placedGlyphBoxes", value.asInstanceOf[js.Any])
     

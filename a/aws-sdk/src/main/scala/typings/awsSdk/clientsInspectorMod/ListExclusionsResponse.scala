@@ -23,7 +23,8 @@ object ListExclusionsResponse {
     __obj.asInstanceOf[ListExclusionsResponse]
   }
   
-  extension [Self <: ListExclusionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListExclusionsResponse] (val x: Self) extends AnyVal {
     
     inline def setExclusionArns(value: ListReturnedArnList): Self = StObject.set(x, "exclusionArns", value.asInstanceOf[js.Any])
     

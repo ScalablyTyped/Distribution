@@ -27,7 +27,8 @@ object libComponentsBreadcrumbBreadcrumbMod extends Shortcut {
       __obj.asInstanceOf[BreadcrumbProps]
     }
     
-    extension [Self <: BreadcrumbProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbProps] (val x: Self) extends AnyVal {
       
       inline def setNoTrailingSlash(value: Boolean): Self = StObject.set(x, "noTrailingSlash", value.asInstanceOf[js.Any])
       

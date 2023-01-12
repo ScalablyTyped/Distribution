@@ -18,7 +18,8 @@ object IMonthlyDateTrigger {
     __obj.asInstanceOf[IMonthlyDateTrigger]
   }
   
-  extension [Self <: IMonthlyDateTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMonthlyDateTrigger] (val x: Self) extends AnyVal {
     
     inline def setDays(value: Double): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
     

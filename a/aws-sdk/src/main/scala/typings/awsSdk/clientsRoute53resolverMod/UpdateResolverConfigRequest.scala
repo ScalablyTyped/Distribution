@@ -23,7 +23,8 @@ object UpdateResolverConfigRequest {
     __obj.asInstanceOf[UpdateResolverConfigRequest]
   }
   
-  extension [Self <: UpdateResolverConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateResolverConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setAutodefinedReverseFlag(value: AutodefinedReverseFlag): Self = StObject.set(x, "AutodefinedReverseFlag", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object DateProfileOptions {
     __obj.asInstanceOf[DateProfileOptions]
   }
   
-  extension [Self <: DateProfileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateProfileOptions] (val x: Self) extends AnyVal {
     
     inline def setDateAlignment(value: String): Self = StObject.set(x, "dateAlignment", value.asInstanceOf[js.Any])
     

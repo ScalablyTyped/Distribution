@@ -27,7 +27,8 @@ object distSrcSystemDistComponentsCheckboxCheckedMod extends Shortcut {
       __obj.asInstanceOf[CheckboxCheckedProps]
     }
     
-    extension [Self <: CheckboxCheckedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxCheckedProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

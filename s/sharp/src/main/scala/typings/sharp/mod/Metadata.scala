@@ -118,7 +118,8 @@ object Metadata {
     __obj.asInstanceOf[Metadata]
   }
   
-  extension [Self <: Metadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: B | Double): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

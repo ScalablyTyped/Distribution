@@ -36,7 +36,8 @@ object WiFiDirectAdvertisement {
     __obj.asInstanceOf[WiFiDirectAdvertisement]
   }
   
-  extension [Self <: WiFiDirectAdvertisement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WiFiDirectAdvertisement] (val x: Self) extends AnyVal {
     
     inline def setInformationElements(value: IVector[WiFiDirectInformationElement]): Self = StObject.set(x, "informationElements", value.asInstanceOf[js.Any])
     

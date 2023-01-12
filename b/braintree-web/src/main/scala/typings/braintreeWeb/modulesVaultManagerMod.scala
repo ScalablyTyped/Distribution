@@ -71,7 +71,8 @@ object modulesVaultManagerMod {
       __obj.asInstanceOf[FetchPaymentMethodsPayload]
     }
     
-    extension [Self <: FetchPaymentMethodsPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchPaymentMethodsPayload] (val x: Self) extends AnyVal {
       
       inline def setBinData(value: Record[String, Any]): Self = StObject.set(x, "binData", value.asInstanceOf[js.Any])
       

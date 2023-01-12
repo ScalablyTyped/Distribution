@@ -31,7 +31,8 @@ object GoogleSecuritySafebrowsingV4ThreatHit {
     __obj.asInstanceOf[GoogleSecuritySafebrowsingV4ThreatHit]
   }
   
-  extension [Self <: GoogleSecuritySafebrowsingV4ThreatHit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSecuritySafebrowsingV4ThreatHit] (val x: Self) extends AnyVal {
     
     inline def setClientInfo(value: GoogleSecuritySafebrowsingV4ClientInfo): Self = StObject.set(x, "clientInfo", value.asInstanceOf[js.Any])
     

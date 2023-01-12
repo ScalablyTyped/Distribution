@@ -44,7 +44,8 @@ object MenuTransitionProps {
     __obj.asInstanceOf[MenuTransitionProps]
   }
   
-  extension [Self <: MenuTransitionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuTransitionProps] (val x: Self) extends AnyVal {
     
     inline def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
     

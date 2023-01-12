@@ -19,7 +19,8 @@ object MergeCellsRequest {
     __obj.asInstanceOf[MergeCellsRequest]
   }
   
-  extension [Self <: MergeCellsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeCellsRequest] (val x: Self) extends AnyVal {
     
     inline def setMergeType(value: String): Self = StObject.set(x, "mergeType", value.asInstanceOf[js.Any])
     

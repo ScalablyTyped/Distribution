@@ -25,7 +25,8 @@ object UserObject {
     __obj.asInstanceOf[UserObject]
   }
   
-  extension [Self <: UserObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserObject] (val x: Self) extends AnyVal {
     
     inline def setInfoPathDotUserObject_typekey(value: UserObject): Self = StObject.set(x, "InfoPath.UserObject_typekey", value.asInstanceOf[js.Any])
     

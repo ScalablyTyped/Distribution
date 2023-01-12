@@ -27,7 +27,8 @@ object Shippingtier {
     __obj.asInstanceOf[Shippingtier]
   }
   
-  extension [Self <: Shippingtier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Shippingtier] (val x: Self) extends AnyVal {
     
     inline def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
     

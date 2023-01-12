@@ -86,7 +86,8 @@ object AssociationProperties {
     __obj.asInstanceOf[AssociationProperties]
   }
   
-  extension [Self <: AssociationProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociationProperties] (val x: Self) extends AnyVal {
     
     inline def setAssociationType(value: attachment | connectivity | containment): Self = StObject.set(x, "associationType", value.asInstanceOf[js.Any])
     

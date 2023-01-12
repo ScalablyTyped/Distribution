@@ -28,7 +28,8 @@ object DeleteSecretRequest {
     __obj.asInstanceOf[DeleteSecretRequest]
   }
   
-  extension [Self <: DeleteSecretRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSecretRequest] (val x: Self) extends AnyVal {
     
     inline def setForceDeleteWithoutRecovery(value: BooleanType): Self = StObject.set(x, "ForceDeleteWithoutRecovery", value.asInstanceOf[js.Any])
     

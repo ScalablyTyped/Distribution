@@ -151,7 +151,8 @@ object xrayconfigurationMod {
       __obj.asInstanceOf[XRayConfiguration]
     }
     
-    extension [Self <: XRayConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XRayConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
@@ -300,7 +301,8 @@ object xrayconfigurationMod {
       __obj.asInstanceOf[XRayResolvableConfiguration]
     }
     
-    extension [Self <: XRayResolvableConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XRayResolvableConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBodyLengthChecker(value: Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
       
@@ -432,7 +434,8 @@ object xrayconfigurationMod {
       __obj.asInstanceOf[XRayResolvedConfiguration]
     }
     
-    extension [Self <: XRayResolvedConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XRayResolvedConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       

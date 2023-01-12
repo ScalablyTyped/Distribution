@@ -18,7 +18,8 @@ object PlotKeltnerchannelsTopLineOptions {
     __obj.asInstanceOf[PlotKeltnerchannelsTopLineOptions]
   }
   
-  extension [Self <: PlotKeltnerchannelsTopLineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotKeltnerchannelsTopLineOptions] (val x: Self) extends AnyVal {
     
     inline def setStyles(value: PlotKeltnerchannelsTopLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     

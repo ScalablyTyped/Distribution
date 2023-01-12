@@ -19,7 +19,8 @@ object ComboBoxPopup {
     __obj.asInstanceOf[ComboBoxPopup]
   }
   
-  extension [Self <: ComboBoxPopup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComboBoxPopup] (val x: Self) extends AnyVal {
     
     inline def setAppendTo(value: String): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     

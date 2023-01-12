@@ -60,7 +60,8 @@ object VppToken {
     __obj.asInstanceOf[VppToken]
   }
   
-  extension [Self <: VppToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VppToken] (val x: Self) extends AnyVal {
     
     inline def setAppleId(value: NullableOption[String]): Self = StObject.set(x, "appleId", value.asInstanceOf[js.Any])
     

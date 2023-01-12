@@ -26,7 +26,8 @@ object typesInterfacesTargetMapDotinterfaceMod {
       __obj.asInstanceOf[TargetMap]
     }
     
-    extension [Self <: TargetMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetMap] (val x: Self) extends AnyVal {
       
       inline def setProperties(value: StringDictionary[js.Function]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       

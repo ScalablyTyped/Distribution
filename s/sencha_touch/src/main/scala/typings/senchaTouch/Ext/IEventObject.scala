@@ -43,7 +43,8 @@ object IEventObject {
     __obj.asInstanceOf[IEventObject]
   }
   
-  extension [Self <: IEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEventObject] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

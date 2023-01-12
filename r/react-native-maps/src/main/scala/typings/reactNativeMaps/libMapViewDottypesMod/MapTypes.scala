@@ -31,7 +31,8 @@ object MapTypes {
     __obj.asInstanceOf[MapTypes]
   }
   
-  extension [Self <: MapTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapTypes] (val x: Self) extends AnyVal {
     
     inline def setHYBRID(value: hybrid): Self = StObject.set(x, "HYBRID", value.asInstanceOf[js.Any])
     

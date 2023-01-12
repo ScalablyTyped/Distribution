@@ -38,7 +38,8 @@ object EditModeValidationErrorEventUIParam {
     __obj.asInstanceOf[EditModeValidationErrorEventUIParam]
   }
   
-  extension [Self <: EditModeValidationErrorEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditModeValidationErrorEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

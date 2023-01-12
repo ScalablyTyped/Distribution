@@ -19,7 +19,8 @@ object GPURenderBundleEncoderDescriptor {
     __obj.asInstanceOf[GPURenderBundleEncoderDescriptor]
   }
   
-  extension [Self <: GPURenderBundleEncoderDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPURenderBundleEncoderDescriptor] (val x: Self) extends AnyVal {
     
     inline def setDepthReadOnly(value: Boolean): Self = StObject.set(x, "depthReadOnly", value.asInstanceOf[js.Any])
     

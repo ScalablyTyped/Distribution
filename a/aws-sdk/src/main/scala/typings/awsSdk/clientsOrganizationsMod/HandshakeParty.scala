@@ -23,7 +23,8 @@ object HandshakeParty {
     __obj.asInstanceOf[HandshakeParty]
   }
   
-  extension [Self <: HandshakeParty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandshakeParty] (val x: Self) extends AnyVal {
     
     inline def setId(value: HandshakePartyId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

@@ -82,7 +82,8 @@ object elementsTitleTitleMod {
       __obj.asInstanceOf[TitleModifierProps]
     }
     
-    extension [Self <: TitleModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleModifierProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -188,7 +189,8 @@ object elementsTitleTitleMod {
       __obj.asInstanceOf[TitleProps]
     }
     
-    extension [Self <: TitleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -352,7 +354,8 @@ object elementsTitleTitleMod {
       __obj.asInstanceOf[TitleVariables]
     }
     
-    extension [Self <: TitleVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleVariables] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }
@@ -369,7 +372,8 @@ object elementsTitleTitleMod {
       __obj.asInstanceOf[TitleVariablesDefaults]
     }
     
-    extension [Self <: TitleVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }

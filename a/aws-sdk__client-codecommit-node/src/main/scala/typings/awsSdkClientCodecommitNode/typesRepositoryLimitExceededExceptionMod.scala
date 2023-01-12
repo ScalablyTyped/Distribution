@@ -21,7 +21,8 @@ object typesRepositoryLimitExceededExceptionMod {
       __obj.asInstanceOf[RepositoryLimitExceededException]
     }
     
-    extension [Self <: RepositoryLimitExceededException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepositoryLimitExceededException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryLimitExceededException

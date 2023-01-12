@@ -29,7 +29,8 @@ object BlendIndices {
     __obj.asInstanceOf[BlendIndices]
   }
   
-  extension [Self <: BlendIndices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlendIndices] (val x: Self) extends AnyVal {
     
     inline def setBlendIndices(value: js.Array[Double]): Self = StObject.set(x, "blendIndices", value.asInstanceOf[js.Any])
     

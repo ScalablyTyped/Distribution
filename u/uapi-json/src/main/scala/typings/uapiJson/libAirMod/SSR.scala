@@ -22,7 +22,8 @@ object SSR {
     __obj.asInstanceOf[SSR]
   }
   
-  extension [Self <: SSR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SSR] (val x: Self) extends AnyVal {
     
     inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
     

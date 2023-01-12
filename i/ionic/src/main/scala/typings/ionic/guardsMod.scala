@@ -109,7 +109,8 @@ object guardsMod {
       __obj.asInstanceOf[OAuthLogin]
     }
     
-    extension [Self <: OAuthLogin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OAuthLogin] (val x: Self) extends AnyVal {
       
       inline def setRedirect_url(value: String): Self = StObject.set(x, "redirect_url", value.asInstanceOf[js.Any])
     }

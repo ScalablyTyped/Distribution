@@ -333,7 +333,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PushNotificationOptions]
     }
     
-    extension [Self <: PushNotificationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PushNotificationOptions] (val x: Self) extends AnyVal {
       
       inline def setOnAction(value: /* notification */ ReceivedNotification => Unit): Self = StObject.set(x, "onAction", js.Any.fromFunction1(value))
       
@@ -384,7 +385,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PushNotificationPermissions]
     }
     
-    extension [Self <: PushNotificationPermissions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PushNotificationPermissions] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: Boolean): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
@@ -444,7 +446,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ReceivedNotification]
     }
     
-    extension [Self <: ReceivedNotification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReceivedNotification] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

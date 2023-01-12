@@ -47,7 +47,8 @@ object DefaultMatchRequiredTypeValidate {
     __obj.asInstanceOf[DefaultMatchRequiredTypeValidate]
   }
   
-  extension [Self <: DefaultMatchRequiredTypeValidate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultMatchRequiredTypeValidate] (val x: Self) extends AnyVal {
     
     inline def setDefault(
       value: (js.Function2[/* oldSessionId */ String, /* newSessionId */ String, Unit]) | (js.Array[

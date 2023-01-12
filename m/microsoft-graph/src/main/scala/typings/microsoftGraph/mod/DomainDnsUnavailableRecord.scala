@@ -18,7 +18,8 @@ object DomainDnsUnavailableRecord {
     __obj.asInstanceOf[DomainDnsUnavailableRecord]
   }
   
-  extension [Self <: DomainDnsUnavailableRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainDnsUnavailableRecord] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

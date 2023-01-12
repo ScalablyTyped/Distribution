@@ -128,7 +128,8 @@ object XCharacterData {
     __obj.asInstanceOf[XCharacterData]
   }
   
-  extension [Self <: XCharacterData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCharacterData] (val x: Self) extends AnyVal {
     
     inline def setAppendData(value: String => Unit): Self = StObject.set(x, "appendData", js.Any.fromFunction1(value))
     

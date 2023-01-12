@@ -19,7 +19,8 @@ object ResizeNearestNeighborAttrs {
     __obj.asInstanceOf[ResizeNearestNeighborAttrs]
   }
   
-  extension [Self <: ResizeNearestNeighborAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizeNearestNeighborAttrs] (val x: Self) extends AnyVal {
     
     inline def setAlignCorners(value: Boolean): Self = StObject.set(x, "alignCorners", value.asInstanceOf[js.Any])
     

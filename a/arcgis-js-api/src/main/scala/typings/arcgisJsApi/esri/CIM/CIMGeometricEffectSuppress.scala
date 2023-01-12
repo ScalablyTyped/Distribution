@@ -30,7 +30,8 @@ object CIMGeometricEffectSuppress {
     __obj.asInstanceOf[CIMGeometricEffectSuppress]
   }
   
-  extension [Self <: CIMGeometricEffectSuppress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMGeometricEffectSuppress] (val x: Self) extends AnyVal {
     
     inline def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
     

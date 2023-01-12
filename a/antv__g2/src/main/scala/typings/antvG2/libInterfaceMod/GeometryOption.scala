@@ -86,7 +86,8 @@ object GeometryOption {
     __obj.asInstanceOf[GeometryOption]
   }
   
-  extension [Self <: GeometryOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeometryOption] (val x: Self) extends AnyVal {
     
     inline def setAdjust(value: String | (js.Array[AdjustOption | String]) | AdjustOption): Self = StObject.set(x, "adjust", value.asInstanceOf[js.Any])
     

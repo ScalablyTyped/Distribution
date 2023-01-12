@@ -53,7 +53,8 @@ object CreateCustomerGatewayRequest {
     __obj.asInstanceOf[CreateCustomerGatewayRequest]
   }
   
-  extension [Self <: CreateCustomerGatewayRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCustomerGatewayRequest] (val x: Self) extends AnyVal {
     
     inline def setBgpAsn(value: Integer): Self = StObject.set(x, "BgpAsn", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object ClearScrollRequest {
     __obj.asInstanceOf[ClearScrollRequest]
   }
   
-  extension [Self <: ClearScrollRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearScrollRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Scrollid): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object GetRtmpUrlOptions {
     __obj.asInstanceOf[GetRtmpUrlOptions]
   }
   
-  extension [Self <: GetRtmpUrlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRtmpUrlOptions] (val x: Self) extends AnyVal {
     
     inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeleteDataIntegrationRequest {
     __obj.asInstanceOf[DeleteDataIntegrationRequest]
   }
   
-  extension [Self <: DeleteDataIntegrationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDataIntegrationRequest] (val x: Self) extends AnyVal {
     
     inline def setDataIntegrationIdentifier(value: Identifier): Self = StObject.set(x, "DataIntegrationIdentifier", value.asInstanceOf[js.Any])
   }

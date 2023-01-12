@@ -36,7 +36,8 @@ object DrawableOptions {
     __obj.asInstanceOf[DrawableOptions]
   }
   
-  extension [Self <: DrawableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawableOptions] (val x: Self) extends AnyVal {
     
     inline def setBehavior(value: Instantiable): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     

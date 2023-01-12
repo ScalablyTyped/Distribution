@@ -16,7 +16,8 @@ object IsReact {
     __obj.asInstanceOf[IsReact]
   }
   
-  extension [Self <: IsReact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsReact] (val x: Self) extends AnyVal {
     
     inline def setIsReact(value: `true`): Self = StObject.set(x, "isReact", value.asInstanceOf[js.Any])
   }

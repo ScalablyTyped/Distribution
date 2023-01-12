@@ -44,7 +44,8 @@ object OnRefresh {
     __obj.asInstanceOf[OnRefresh]
   }
   
-  extension [Self <: OnRefresh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnRefresh] (val x: Self) extends AnyVal {
     
     inline def setOn(
       value: ServerRequestHandler[

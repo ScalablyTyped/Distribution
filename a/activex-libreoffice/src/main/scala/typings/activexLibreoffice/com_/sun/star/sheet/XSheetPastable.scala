@@ -51,7 +51,8 @@ object XSheetPastable {
     __obj.asInstanceOf[XSheetPastable]
   }
   
-  extension [Self <: XSheetPastable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSheetPastable] (val x: Self) extends AnyVal {
     
     inline def setPaste(value: CellAddress => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction1(value))
     

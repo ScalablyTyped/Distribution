@@ -318,7 +318,8 @@ object distBaseCallbacksMod {
       __obj.asInstanceOf[CustomCallbackArgs]
     }
     
-    extension [Self <: CustomCallbackArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomCallbackArgs] (val x: Self) extends AnyVal {
       
       inline def setNextFrameFunc(value: js.Function): Self = StObject.set(x, "nextFrameFunc", value.asInstanceOf[js.Any])
       

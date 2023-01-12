@@ -19,7 +19,8 @@ object TenantInfo {
     __obj.asInstanceOf[TenantInfo]
   }
   
-  extension [Self <: TenantInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TenantInfo] (val x: Self) extends AnyVal {
     
     inline def setHomeTenant(value: Boolean): Self = StObject.set(x, "homeTenant", value.asInstanceOf[js.Any])
     

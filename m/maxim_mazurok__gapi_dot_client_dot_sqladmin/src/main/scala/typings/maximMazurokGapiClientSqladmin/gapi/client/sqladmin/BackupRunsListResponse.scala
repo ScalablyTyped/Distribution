@@ -22,7 +22,8 @@ object BackupRunsListResponse {
     __obj.asInstanceOf[BackupRunsListResponse]
   }
   
-  extension [Self <: BackupRunsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackupRunsListResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[BackupRun]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

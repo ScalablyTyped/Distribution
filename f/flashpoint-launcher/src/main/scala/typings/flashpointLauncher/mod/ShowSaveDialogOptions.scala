@@ -26,7 +26,8 @@ object ShowSaveDialogOptions {
     __obj.asInstanceOf[ShowSaveDialogOptions]
   }
   
-  extension [Self <: ShowSaveDialogOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowSaveDialogOptions] (val x: Self) extends AnyVal {
     
     inline def setButtonLabel(value: String): Self = StObject.set(x, "buttonLabel", value.asInstanceOf[js.Any])
     

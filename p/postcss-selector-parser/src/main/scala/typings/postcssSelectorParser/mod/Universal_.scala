@@ -36,7 +36,8 @@ object Universal_ {
     __obj.asInstanceOf[Universal_]
   }
   
-  extension [Self <: Universal_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Universal_] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.postcssSelectorParser.postcssSelectorParserStrings.universal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

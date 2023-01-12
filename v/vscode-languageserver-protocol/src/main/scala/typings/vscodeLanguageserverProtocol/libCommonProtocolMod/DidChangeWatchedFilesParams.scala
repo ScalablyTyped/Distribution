@@ -18,7 +18,8 @@ object DidChangeWatchedFilesParams {
     __obj.asInstanceOf[DidChangeWatchedFilesParams]
   }
   
-  extension [Self <: DidChangeWatchedFilesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DidChangeWatchedFilesParams] (val x: Self) extends AnyVal {
     
     inline def setChanges(value: js.Array[FileEvent]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     

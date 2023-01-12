@@ -20,7 +20,8 @@ object DescribeResourcePoliciesResponse {
     __obj.asInstanceOf[DescribeResourcePoliciesResponse]
   }
   
-  extension [Self <: DescribeResourcePoliciesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeResourcePoliciesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object BottomText {
     __obj.asInstanceOf[BottomText]
   }
   
-  extension [Self <: BottomText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BottomText] (val x: Self) extends AnyVal {
     
     inline def setBottomText(value: ReactNode): Self = StObject.set(x, "bottomText", value.asInstanceOf[js.Any])
     

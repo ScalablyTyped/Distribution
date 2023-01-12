@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[CallbackList]
     }
     
-    extension [Self <: CallbackList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackList] (val x: Self) extends AnyVal {
       
       inline def setCallbackList(value: typings.tensorflowTfjsLayers.distBaseCallbacksMod.CallbackList): Self = StObject.set(x, "callbackList", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[Constants]
     }
     
-    extension [Self <: Constants](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constants] (val x: Self) extends AnyVal {
       
       inline def setConstants(value: js.Array[SymbolicTensor | Tensor[Rank]]): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object anon {
       __obj.asInstanceOf[Count]
     }
     
-    extension [Self <: Count](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -114,7 +117,8 @@ object anon {
       __obj.asInstanceOf[MaskValue]
     }
     
-    extension [Self <: MaskValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaskValue] (val x: Self) extends AnyVal {
       
       inline def setMaskValue(value: Double): Self = StObject.set(x, "maskValue", value.asInstanceOf[js.Any])
     }
@@ -131,7 +135,8 @@ object anon {
       __obj.asInstanceOf[Rate]
     }
     
-    extension [Self <: Rate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rate] (val x: Self) extends AnyVal {
       
       inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     }
@@ -153,7 +158,8 @@ object anon {
       __obj.asInstanceOf[RecipientMap]
     }
     
-    extension [Self <: RecipientMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecipientMap] (val x: Self) extends AnyVal {
       
       inline def setRecipientMap(value: typings.tensorflowTfjsLayers.distEngineExecutorMod.RecipientMap): Self = StObject.set(x, "recipientMap", value.asInstanceOf[js.Any])
       
@@ -174,7 +180,8 @@ object anon {
       __obj.asInstanceOf[Stddev]
     }
     
-    extension [Self <: Stddev](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stddev] (val x: Self) extends AnyVal {
       
       inline def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
     }

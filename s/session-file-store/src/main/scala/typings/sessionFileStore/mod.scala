@@ -154,7 +154,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDecoder(value: /* repeated */ Any => Unit): Self = StObject.set(x, "decoder", js.Any.fromFunction1(value))
       

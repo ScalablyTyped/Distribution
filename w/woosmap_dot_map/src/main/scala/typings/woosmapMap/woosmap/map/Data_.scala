@@ -119,7 +119,8 @@ object Data_ {
       __obj.asInstanceOf[Geometry[T, C]]
     }
     
-    extension [Self <: Geometry[?, ?], T, C](x: Self & (Geometry[T, C])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Geometry[?, ?], T, C] (val x: Self & (Geometry[T, C])) extends AnyVal {
       
       inline def setGetType(value: () => T): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     }
@@ -158,7 +159,8 @@ object Data_ {
       __obj.asInstanceOf[GeometryCollection]
     }
     
-    extension [Self <: GeometryCollection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeometryCollection] (val x: Self) extends AnyVal {
       
       inline def setForEachLatLng(value: js.Function1[/* point */ LatLng, Unit] => Unit): Self = StObject.set(x, "forEachLatLng", js.Any.fromFunction1(value))
       
@@ -208,7 +210,8 @@ object Data_ {
       __obj.asInstanceOf[LineString]
     }
     
-    extension [Self <: LineString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineString] (val x: Self) extends AnyVal {
       
       inline def setForEachLatLng(value: js.Function1[/* point */ LatLng, Unit] => Unit): Self = StObject.set(x, "forEachLatLng", js.Any.fromFunction1(value))
       
@@ -254,7 +257,8 @@ object Data_ {
       __obj.asInstanceOf[MultiLineString]
     }
     
-    extension [Self <: MultiLineString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiLineString] (val x: Self) extends AnyVal {
       
       inline def setForEachLatLng(value: js.Function1[/* point */ LatLng, Unit] => Unit): Self = StObject.set(x, "forEachLatLng", js.Any.fromFunction1(value))
       
@@ -308,7 +312,8 @@ object Data_ {
       __obj.asInstanceOf[MultiPoint]
     }
     
-    extension [Self <: MultiPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiPoint] (val x: Self) extends AnyVal {
       
       inline def setForEachLatLng(value: js.Function1[/* point */ LatLng, Unit] => Unit): Self = StObject.set(x, "forEachLatLng", js.Any.fromFunction1(value))
       
@@ -361,7 +366,8 @@ object Data_ {
       __obj.asInstanceOf[MultiPolygon]
     }
     
-    extension [Self <: MultiPolygon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiPolygon] (val x: Self) extends AnyVal {
       
       inline def setForEachLatLng(value: js.Function1[/* point */ LatLng, Unit] => Unit): Self = StObject.set(x, "forEachLatLng", js.Any.fromFunction1(value))
       
@@ -402,7 +408,8 @@ object Data_ {
       __obj.asInstanceOf[typings.woosmapMap.woosmap.map.Data_.Point]
     }
     
-    extension [Self <: typings.woosmapMap.woosmap.map.Data_.Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.woosmapMap.woosmap.map.Data_.Point] (val x: Self) extends AnyVal {
       
       inline def setForEachLatLng(value: js.Function1[/* point */ LatLng, Unit] => Unit): Self = StObject.set(x, "forEachLatLng", js.Any.fromFunction1(value))
       
@@ -454,7 +461,8 @@ object Data_ {
       __obj.asInstanceOf[typings.woosmapMap.woosmap.map.Data_.Polygon]
     }
     
-    extension [Self <: typings.woosmapMap.woosmap.map.Data_.Polygon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.woosmapMap.woosmap.map.Data_.Polygon] (val x: Self) extends AnyVal {
       
       inline def setForEachLatLng(value: js.Function1[/* point */ LatLng, Unit] => Unit): Self = StObject.set(x, "forEachLatLng", js.Any.fromFunction1(value))
       

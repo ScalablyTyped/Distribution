@@ -17,7 +17,8 @@ object Responses200ContentApplicationjsonRunners {
     __obj.asInstanceOf[Responses200ContentApplicationjsonRunners]
   }
   
-  extension [Self <: Responses200ContentApplicationjsonRunners](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses200ContentApplicationjsonRunners] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathRunnergroupidQueryPage): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

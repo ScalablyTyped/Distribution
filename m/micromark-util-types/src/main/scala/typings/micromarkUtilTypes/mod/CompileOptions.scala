@@ -49,7 +49,8 @@ object CompileOptions {
     __obj.asInstanceOf[CompileOptions]
   }
   
-  extension [Self <: CompileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompileOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowDangerousHtml(value: Boolean): Self = StObject.set(x, "allowDangerousHtml", value.asInstanceOf[js.Any])
     

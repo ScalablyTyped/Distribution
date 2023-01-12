@@ -23,7 +23,8 @@ object ListAppMonitorsResponse {
     __obj.asInstanceOf[ListAppMonitorsResponse]
   }
   
-  extension [Self <: ListAppMonitorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAppMonitorsResponse] (val x: Self) extends AnyVal {
     
     inline def setAppMonitorSummaries(value: AppMonitorSummaryList): Self = StObject.set(x, "AppMonitorSummaries", value.asInstanceOf[js.Any])
     

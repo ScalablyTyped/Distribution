@@ -18,7 +18,8 @@ object AreaEncodeEntry {
     __obj.asInstanceOf[AreaEncodeEntry]
   }
   
-  extension [Self <: AreaEncodeEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaEncodeEntry] (val x: Self) extends AnyVal {
     
     inline def setOrient(value: ProductionRule[ScaledValueRef[Orientation]]): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
     

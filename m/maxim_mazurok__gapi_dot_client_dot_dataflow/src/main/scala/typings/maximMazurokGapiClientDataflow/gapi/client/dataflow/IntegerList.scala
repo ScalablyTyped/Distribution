@@ -16,7 +16,8 @@ object IntegerList {
     __obj.asInstanceOf[IntegerList]
   }
   
-  extension [Self <: IntegerList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegerList] (val x: Self) extends AnyVal {
     
     inline def setElements(value: js.Array[SplitInt64]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     

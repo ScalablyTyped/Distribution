@@ -54,7 +54,8 @@ object jira {
       __obj.asInstanceOf[DatePickerOptions]
     }
     
-    extension [Self <: DatePickerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerOptions] (val x: Self) extends AnyVal {
       
       inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object jira {
       __obj.asInstanceOf[WorkflowConfiguration]
     }
     
-    extension [Self <: WorkflowConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkflowConfiguration] (val x: Self) extends AnyVal {
       
       inline def setOnSave(value: js.Function1[/* listener */ js.Object, Unit] => Unit): Self = StObject.set(x, "onSave", js.Any.fromFunction1(value))
       
@@ -127,7 +129,8 @@ object jira {
       __obj.asInstanceOf[WorkflowConfigurationTriggerResponse]
     }
     
-    extension [Self <: WorkflowConfigurationTriggerResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkflowConfigurationTriggerResponse] (val x: Self) extends AnyVal {
       
       inline def setValid(value: Any): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       

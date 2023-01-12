@@ -59,7 +59,8 @@ object Blobsha {
     __obj.asInstanceOf[Blobsha]
   }
   
-  extension [Self <: Blobsha](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Blobsha] (val x: Self) extends AnyVal {
     
     inline def setBlob_sha(value: String): Self = StObject.set(x, "blob_sha", value.asInstanceOf[js.Any])
     

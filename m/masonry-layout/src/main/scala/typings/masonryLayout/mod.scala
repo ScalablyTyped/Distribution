@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[HiddenOrVisibleStyleOption]
     }
     
-    extension [Self <: HiddenOrVisibleStyleOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HiddenOrVisibleStyleOption] (val x: Self) extends AnyVal {
       
       inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object mod {
       __obj.asInstanceOf[Masonry]
     }
     
-    extension [Self <: Masonry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Masonry] (val x: Self) extends AnyVal {
       
       inline def setAddItems(value: /* elements */ js.Array[Any] => Unit): Self = StObject.set(x, "addItems", js.Any.fromFunction1(value))
       
@@ -200,7 +202,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setColumnWidth(value: Any): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
       

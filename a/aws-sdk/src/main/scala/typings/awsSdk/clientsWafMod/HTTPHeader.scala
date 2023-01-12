@@ -23,7 +23,8 @@ object HTTPHeader {
     __obj.asInstanceOf[HTTPHeader]
   }
   
-  extension [Self <: HTTPHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTTPHeader] (val x: Self) extends AnyVal {
     
     inline def setName(value: HeaderName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

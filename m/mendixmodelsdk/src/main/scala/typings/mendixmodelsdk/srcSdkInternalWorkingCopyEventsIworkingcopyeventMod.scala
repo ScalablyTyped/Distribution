@@ -38,7 +38,8 @@ object srcSdkInternalWorkingCopyEventsIworkingcopyeventMod {
       __obj.asInstanceOf[IBuildResultEvent]
     }
     
-    extension [Self <: IBuildResultEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBuildResultEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: EventId): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object srcSdkInternalWorkingCopyEventsIworkingcopyeventMod {
       __obj.asInstanceOf[IWorkingCopyDataEvent]
     }
     
-    extension [Self <: IWorkingCopyDataEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWorkingCopyDataEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: IWorkingCopy): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

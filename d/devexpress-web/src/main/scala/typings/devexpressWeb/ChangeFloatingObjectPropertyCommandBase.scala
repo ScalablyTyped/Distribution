@@ -27,7 +27,8 @@ object ChangeFloatingObjectPropertyCommandBase {
     __obj.asInstanceOf[ChangeFloatingObjectPropertyCommandBase[T]]
   }
   
-  extension [Self <: ChangeFloatingObjectPropertyCommandBase[?], T](x: Self & ChangeFloatingObjectPropertyCommandBase[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeFloatingObjectPropertyCommandBase[?], T] (val x: Self & ChangeFloatingObjectPropertyCommandBase[T]) extends AnyVal {
     
     inline def setExecute(value: T => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     

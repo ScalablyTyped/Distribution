@@ -20,7 +20,8 @@ object CorkedRequest {
     __obj.asInstanceOf[CorkedRequest]
   }
   
-  extension [Self <: CorkedRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CorkedRequest] (val x: Self) extends AnyVal {
     
     inline def setEntry(value: Any): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     

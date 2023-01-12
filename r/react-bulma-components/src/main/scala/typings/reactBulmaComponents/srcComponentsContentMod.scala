@@ -25,7 +25,8 @@ object srcComponentsContentMod extends Shortcut {
       __obj.asInstanceOf[ContentProps]
     }
     
-    extension [Self <: ContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

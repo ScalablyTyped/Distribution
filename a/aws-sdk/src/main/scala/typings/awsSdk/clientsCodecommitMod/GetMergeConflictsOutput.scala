@@ -48,7 +48,8 @@ object GetMergeConflictsOutput {
     __obj.asInstanceOf[GetMergeConflictsOutput]
   }
   
-  extension [Self <: GetMergeConflictsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMergeConflictsOutput] (val x: Self) extends AnyVal {
     
     inline def setBaseCommitId(value: ObjectId): Self = StObject.set(x, "baseCommitId", value.asInstanceOf[js.Any])
     

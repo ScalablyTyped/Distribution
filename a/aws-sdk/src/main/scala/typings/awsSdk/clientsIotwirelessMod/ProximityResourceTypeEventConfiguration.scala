@@ -18,7 +18,8 @@ object ProximityResourceTypeEventConfiguration {
     __obj.asInstanceOf[ProximityResourceTypeEventConfiguration]
   }
   
-  extension [Self <: ProximityResourceTypeEventConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProximityResourceTypeEventConfiguration] (val x: Self) extends AnyVal {
     
     inline def setSidewalk(value: SidewalkResourceTypeEventConfiguration): Self = StObject.set(x, "Sidewalk", value.asInstanceOf[js.Any])
     

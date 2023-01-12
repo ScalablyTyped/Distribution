@@ -44,7 +44,8 @@ object RequestOptions {
     __obj.asInstanceOf[RequestOptions]
   }
   
-  extension [Self <: RequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: String | js.Object | js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object CommandCountStats {
     __obj.asInstanceOf[CommandCountStats]
   }
   
-  extension [Self <: CommandCountStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandCountStats] (val x: Self) extends AnyVal {
     
     inline def setAll(value: Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

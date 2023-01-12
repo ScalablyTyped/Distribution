@@ -224,7 +224,8 @@ object CodeEditor {
         __obj.asInstanceOf[typings.jupyterlabCodeeditor.libEditorMod.CodeEditor.Model.IOptions]
       }
       
-      extension [Self <: typings.jupyterlabCodeeditor.libEditorMod.CodeEditor.Model.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabCodeeditor.libEditorMod.CodeEditor.Model.IOptions] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -393,7 +394,8 @@ object CodeEditor {
       __obj.asInstanceOf[IConfig]
     }
     
-    extension [Self <: IConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
       
       inline def setAutoClosingBrackets(value: Boolean): Self = StObject.set(x, "autoClosingBrackets", value.asInstanceOf[js.Any])
       
@@ -486,7 +488,8 @@ object CodeEditor {
       __obj.asInstanceOf[IDimension]
     }
     
-    extension [Self <: IDimension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDimension] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -858,7 +861,8 @@ object CodeEditor {
       __obj.asInstanceOf[IModel]
     }
     
-    extension [Self <: IModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModel] (val x: Self) extends AnyVal {
       
       inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
@@ -920,7 +924,8 @@ object CodeEditor {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: PartialIConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -968,7 +973,8 @@ object CodeEditor {
       __obj.asInstanceOf[IPosition]
     }
     
-    extension [Self <: IPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPosition] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -1008,7 +1014,8 @@ object CodeEditor {
       __obj.asInstanceOf[IRange]
     }
     
-    extension [Self <: IRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRange] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: IPosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -1088,7 +1095,8 @@ object CodeEditor {
       __obj.asInstanceOf[ISelectionOwner]
     }
     
-    extension [Self <: ISelectionOwner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelectionOwner] (val x: Self) extends AnyVal {
       
       inline def setGetCursorPosition(value: () => IPosition): Self = StObject.set(x, "getCursorPosition", js.Any.fromFunction0(value))
       
@@ -1135,7 +1143,8 @@ object CodeEditor {
       __obj.asInstanceOf[ISelectionStyle]
     }
     
-    extension [Self <: ISelectionStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelectionStyle] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -1169,7 +1178,8 @@ object CodeEditor {
       __obj.asInstanceOf[ITextSelection]
     }
     
-    extension [Self <: ITextSelection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextSelection] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: ISelectionStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -1204,7 +1214,8 @@ object CodeEditor {
       __obj.asInstanceOf[IToken]
     }
     
-    extension [Self <: IToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToken] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       

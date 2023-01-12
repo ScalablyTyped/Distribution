@@ -51,7 +51,8 @@ object Group {
     __obj.asInstanceOf[Group]
   }
   
-  extension [Self <: Group](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object BuildingArtPicture {
     __obj.asInstanceOf[BuildingArtPicture]
   }
   
-  extension [Self <: BuildingArtPicture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildingArtPicture] (val x: Self) extends AnyVal {
     
     inline def setFrame(value: Double): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     

@@ -110,7 +110,8 @@ object distTypesOptionsMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDisableESTransforms(value: Boolean): Self = StObject.set(x, "disableESTransforms", value.asInstanceOf[js.Any])
       
@@ -181,7 +182,8 @@ object distTypesOptionsMod {
       __obj.asInstanceOf[SourceMapOptions]
     }
     
-    extension [Self <: SourceMapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMapOptions] (val x: Self) extends AnyVal {
       
       inline def setCompiledFilename(value: String): Self = StObject.set(x, "compiledFilename", value.asInstanceOf[js.Any])
     }

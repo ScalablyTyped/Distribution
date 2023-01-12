@@ -15,7 +15,8 @@ object TextStyleProps {
     __obj.asInstanceOf[TextStyleProps[ThemeType]]
   }
   
-  extension [Self <: TextStyleProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & TextStyleProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextStyleProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & TextStyleProps[ThemeType]) extends AnyVal {
     
     inline def setTextStyle(value: ResponsiveValue[String, ThemeType]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     

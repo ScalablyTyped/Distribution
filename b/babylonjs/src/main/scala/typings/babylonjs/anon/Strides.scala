@@ -32,7 +32,8 @@ object Strides {
     __obj.asInstanceOf[Strides]
   }
   
-  extension [Self <: Strides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Strides] (val x: Self) extends AnyVal {
     
     inline def setData(value: StringDictionary[js.typedarray.Float32Array]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

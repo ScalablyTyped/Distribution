@@ -20,7 +20,8 @@ object TypeofTagCloud {
     __obj.asInstanceOf[TypeofTagCloud]
   }
   
-  extension [Self <: TypeofTagCloud](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTagCloud] (val x: Self) extends AnyVal {
     
     inline def setFn(value: TagCloud): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

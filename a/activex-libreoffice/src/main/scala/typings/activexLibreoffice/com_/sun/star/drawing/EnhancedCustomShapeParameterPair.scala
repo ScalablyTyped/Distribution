@@ -18,7 +18,8 @@ object EnhancedCustomShapeParameterPair {
     __obj.asInstanceOf[EnhancedCustomShapeParameterPair]
   }
   
-  extension [Self <: EnhancedCustomShapeParameterPair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnhancedCustomShapeParameterPair] (val x: Self) extends AnyVal {
     
     inline def setFirst(value: EnhancedCustomShapeParameter): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])
     

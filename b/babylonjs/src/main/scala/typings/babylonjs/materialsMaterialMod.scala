@@ -1225,7 +1225,8 @@ object materialsMaterialMod {
       __obj.asInstanceOf[ICustomShaderNameResolveOptions]
     }
     
-    extension [Self <: ICustomShaderNameResolveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICustomShaderNameResolveOptions] (val x: Self) extends AnyVal {
       
       inline def setProcessFinalCode(value: (/* shaderType */ String, /* code */ String) => String): Self = StObject.set(x, "processFinalCode", js.Any.fromFunction2(value))
       
@@ -1254,7 +1255,8 @@ object materialsMaterialMod {
       __obj.asInstanceOf[IMaterialCompilationOptions]
     }
     
-    extension [Self <: IMaterialCompilationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMaterialCompilationOptions] (val x: Self) extends AnyVal {
       
       inline def setClipPlane(value: Boolean): Self = StObject.set(x, "clipPlane", value.asInstanceOf[js.Any])
       

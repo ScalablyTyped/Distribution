@@ -17,7 +17,8 @@ object VerifyKeyObjectInput {
     __obj.asInstanceOf[VerifyKeyObjectInput]
   }
   
-  extension [Self <: VerifyKeyObjectInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyKeyObjectInput] (val x: Self) extends AnyVal {
     
     inline def setKey(value: KeyObject): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }

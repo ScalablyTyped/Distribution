@@ -54,7 +54,8 @@ object XFileDialog {
     __obj.asInstanceOf[XFileDialog]
   }
   
-  extension [Self <: XFileDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFileDialog] (val x: Self) extends AnyVal {
     
     inline def setCurrentFilter(value: String): Self = StObject.set(x, "CurrentFilter", value.asInstanceOf[js.Any])
     

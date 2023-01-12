@@ -53,7 +53,8 @@ object ASPxClientRect {
     __obj.asInstanceOf[ASPxClientRect]
   }
   
-  extension [Self <: ASPxClientRect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRect] (val x: Self) extends AnyVal {
     
     inline def setGetBottom(value: () => Double): Self = StObject.set(x, "GetBottom", js.Any.fromFunction0(value))
     

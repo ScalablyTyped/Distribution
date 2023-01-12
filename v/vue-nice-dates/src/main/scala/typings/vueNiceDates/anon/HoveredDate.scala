@@ -19,7 +19,8 @@ object HoveredDate {
     __obj.asInstanceOf[HoveredDate]
   }
   
-  extension [Self <: HoveredDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoveredDate] (val x: Self) extends AnyVal {
     
     inline def setHoveredDate(value: js.Date): Self = StObject.set(x, "hoveredDate", value.asInstanceOf[js.Any])
     

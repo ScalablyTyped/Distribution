@@ -19,7 +19,8 @@ object SurfaceClickEvent {
     __obj.asInstanceOf[SurfaceClickEvent]
   }
   
-  extension [Self <: SurfaceClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SurfaceClickEvent] (val x: Self) extends AnyVal {
     
     inline def setElement(value: typings.kendoUi.kendo.drawing.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

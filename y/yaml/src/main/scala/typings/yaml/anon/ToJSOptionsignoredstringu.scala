@@ -46,7 +46,8 @@ object ToJSOptionsignoredstringu {
     __obj.asInstanceOf[ToJSOptionsignoredstringu]
   }
   
-  extension [Self <: ToJSOptionsignoredstringu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToJSOptionsignoredstringu] (val x: Self) extends AnyVal {
     
     inline def setMapAsMap(value: Boolean): Self = StObject.set(x, "mapAsMap", value.asInstanceOf[js.Any])
     

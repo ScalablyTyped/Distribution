@@ -30,7 +30,8 @@ object GoogleActionsV2RegisterUpdateValueSpec {
     __obj.asInstanceOf[GoogleActionsV2RegisterUpdateValueSpec]
   }
   
-  extension [Self <: GoogleActionsV2RegisterUpdateValueSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2RegisterUpdateValueSpec] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[GoogleActionsV2Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

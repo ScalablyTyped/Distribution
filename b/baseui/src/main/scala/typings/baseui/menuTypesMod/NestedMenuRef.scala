@@ -16,7 +16,8 @@ object NestedMenuRef {
     __obj.asInstanceOf[NestedMenuRef]
   }
   
-  extension [Self <: NestedMenuRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NestedMenuRef] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: HTMLElement): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

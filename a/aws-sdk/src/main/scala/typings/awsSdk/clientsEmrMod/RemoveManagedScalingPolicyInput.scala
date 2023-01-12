@@ -18,7 +18,8 @@ object RemoveManagedScalingPolicyInput {
     __obj.asInstanceOf[RemoveManagedScalingPolicyInput]
   }
   
-  extension [Self <: RemoveManagedScalingPolicyInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveManagedScalingPolicyInput] (val x: Self) extends AnyVal {
     
     inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
   }

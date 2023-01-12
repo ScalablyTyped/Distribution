@@ -30,7 +30,8 @@ object Paymentplan {
     __obj.asInstanceOf[Paymentplan]
   }
   
-  extension [Self <: Paymentplan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Paymentplan] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: PaymentplanCancelRequest => js.Promise[AxiosResponse[PaymentplanCancelResponse, Any]]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     

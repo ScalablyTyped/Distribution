@@ -23,7 +23,8 @@ object ChunkedBatchResponse {
     __obj.asInstanceOf[ChunkedBatchResponse]
   }
   
-  extension [Self <: ChunkedBatchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChunkedBatchResponse] (val x: Self) extends AnyVal {
     
     inline def setObjectIDs(value: js.Array[String]): Self = StObject.set(x, "objectIDs", value.asInstanceOf[js.Any])
     

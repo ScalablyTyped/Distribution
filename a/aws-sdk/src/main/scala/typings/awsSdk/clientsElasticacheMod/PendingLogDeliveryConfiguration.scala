@@ -33,7 +33,8 @@ object PendingLogDeliveryConfiguration {
     __obj.asInstanceOf[PendingLogDeliveryConfiguration]
   }
   
-  extension [Self <: PendingLogDeliveryConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PendingLogDeliveryConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDestinationDetails(value: DestinationDetails): Self = StObject.set(x, "DestinationDetails", value.asInstanceOf[js.Any])
     

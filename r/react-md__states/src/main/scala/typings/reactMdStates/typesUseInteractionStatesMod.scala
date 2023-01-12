@@ -117,7 +117,8 @@ object typesUseInteractionStatesMod {
       __obj.asInstanceOf[InteractionStatesOptions[E]]
     }
     
-    extension [Self <: InteractionStatesOptions[?], E /* <: HTMLElement */](x: Self & InteractionStatesOptions[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteractionStatesOptions[?], E /* <: HTMLElement */] (val x: Self & InteractionStatesOptions[E]) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -188,7 +189,8 @@ object typesUseInteractionStatesMod {
       __obj.asInstanceOf[ReturnValue[E]]
     }
     
-    extension [Self <: ReturnValue[?], E /* <: HTMLElement */](x: Self & ReturnValue[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReturnValue[?], E /* <: HTMLElement */] (val x: Self & ReturnValue[E]) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

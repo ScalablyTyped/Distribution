@@ -31,7 +31,8 @@ object distFtpMod {
       __obj.asInstanceOf[FTPOptions]
     }
     
-    extension [Self <: FTPOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FTPOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: FTPReadable): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

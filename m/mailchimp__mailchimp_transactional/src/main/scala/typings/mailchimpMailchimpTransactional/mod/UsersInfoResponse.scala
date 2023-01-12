@@ -49,7 +49,8 @@ object UsersInfoResponse {
     __obj.asInstanceOf[UsersInfoResponse]
   }
   
-  extension [Self <: UsersInfoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsersInfoResponse] (val x: Self) extends AnyVal {
     
     inline def setBacklog(value: Double): Self = StObject.set(x, "backlog", value.asInstanceOf[js.Any])
     

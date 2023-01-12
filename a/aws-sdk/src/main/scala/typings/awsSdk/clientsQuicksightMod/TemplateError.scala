@@ -23,7 +23,8 @@ object TemplateError {
     __obj.asInstanceOf[TemplateError]
   }
   
-  extension [Self <: TemplateError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateError] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: NonEmptyString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

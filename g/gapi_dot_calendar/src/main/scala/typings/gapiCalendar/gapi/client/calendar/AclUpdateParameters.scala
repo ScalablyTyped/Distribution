@@ -18,7 +18,8 @@ object AclUpdateParameters {
     __obj.asInstanceOf[AclUpdateParameters]
   }
   
-  extension [Self <: AclUpdateParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AclUpdateParameters] (val x: Self) extends AnyVal {
     
     inline def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
   }

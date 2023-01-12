@@ -20,7 +20,8 @@ object SelectInputs {
     __obj.asInstanceOf[SelectInputs]
   }
   
-  extension [Self <: SelectInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectInputs] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: scala.Any): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

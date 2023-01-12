@@ -60,7 +60,8 @@ object iconAdapterMod {
       __obj.asInstanceOf[MDCSelectIconAdapter]
     }
     
-    extension [Self <: MDCSelectIconAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCSelectIconAdapter] (val x: Self) extends AnyVal {
       
       inline def setDeregisterInteractionHandler(value: (Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "deregisterInteractionHandler", js.Any.fromFunction2(value))
       

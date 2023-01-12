@@ -28,7 +28,8 @@ object SendPipelineExecutionStepSuccessRequest {
     __obj.asInstanceOf[SendPipelineExecutionStepSuccessRequest]
   }
   
-  extension [Self <: SendPipelineExecutionStepSuccessRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendPipelineExecutionStepSuccessRequest] (val x: Self) extends AnyVal {
     
     inline def setCallbackToken(value: CallbackToken): Self = StObject.set(x, "CallbackToken", value.asInstanceOf[js.Any])
     

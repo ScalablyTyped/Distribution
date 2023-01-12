@@ -23,7 +23,8 @@ object JoinColumn {
     __obj.asInstanceOf[JoinColumn]
   }
   
-  extension [Self <: JoinColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JoinColumn] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: EnclosedInStringProperty): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     

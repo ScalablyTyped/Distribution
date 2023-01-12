@@ -93,7 +93,8 @@ object ReimportApiResponse {
     __obj.asInstanceOf[ReimportApiResponse]
   }
   
-  extension [Self <: ReimportApiResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReimportApiResponse] (val x: Self) extends AnyVal {
     
     inline def setApiEndpoint(value: string): Self = StObject.set(x, "ApiEndpoint", value.asInstanceOf[js.Any])
     

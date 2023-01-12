@@ -34,7 +34,8 @@ object CodeActionParams {
     __obj.asInstanceOf[CodeActionParams]
   }
   
-  extension [Self <: CodeActionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeActionParams] (val x: Self) extends AnyVal {
     
     inline def setContext(value: CodeActionContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

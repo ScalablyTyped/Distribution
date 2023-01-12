@@ -79,7 +79,8 @@ object RDN {
     __obj.asInstanceOf[RDN]
   }
   
-  extension [Self <: RDN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RDN] (val x: Self) extends AnyVal {
     
     inline def setAddByMultiValuedString(value: String => Unit): Self = StObject.set(x, "addByMultiValuedString", js.Any.fromFunction1(value))
     

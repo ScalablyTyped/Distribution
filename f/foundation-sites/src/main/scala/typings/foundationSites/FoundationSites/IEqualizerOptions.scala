@@ -19,7 +19,8 @@ object IEqualizerOptions {
     __obj.asInstanceOf[IEqualizerOptions]
   }
   
-  extension [Self <: IEqualizerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEqualizerOptions] (val x: Self) extends AnyVal {
     
     inline def setEqualizeByRow(value: Boolean): Self = StObject.set(x, "equalizeByRow", value.asInstanceOf[js.Any])
     

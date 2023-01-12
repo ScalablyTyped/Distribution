@@ -21,7 +21,8 @@ object BackgroundColorBorderBottomColor {
     __obj.asInstanceOf[BackgroundColorBorderBottomColor]
   }
   
-  extension [Self <: BackgroundColorBorderBottomColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundColorBorderBottomColor] (val x: Self) extends AnyVal {
     
     inline def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CapacityUpdate {
     __obj.asInstanceOf[CapacityUpdate]
   }
   
-  extension [Self <: CapacityUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapacityUpdate] (val x: Self) extends AnyVal {
     
     inline def setAutoScaling(value: AutoScalingUpdate): Self = StObject.set(x, "autoScaling", value.asInstanceOf[js.Any])
     

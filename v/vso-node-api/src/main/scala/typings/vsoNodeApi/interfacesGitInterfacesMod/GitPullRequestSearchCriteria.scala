@@ -62,7 +62,8 @@ object GitPullRequestSearchCriteria {
     __obj.asInstanceOf[GitPullRequestSearchCriteria]
   }
   
-  extension [Self <: GitPullRequestSearchCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitPullRequestSearchCriteria] (val x: Self) extends AnyVal {
     
     inline def setCreatorId(value: String): Self = StObject.set(x, "creatorId", value.asInstanceOf[js.Any])
     

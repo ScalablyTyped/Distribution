@@ -15,7 +15,8 @@ object Detached {
     __obj.asInstanceOf[Detached]
   }
   
-  extension [Self <: Detached](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Detached] (val x: Self) extends AnyVal {
     
     inline def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object ContentRestriction {
     __obj.asInstanceOf[ContentRestriction]
   }
   
-  extension [Self <: ContentRestriction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentRestriction] (val x: Self) extends AnyVal {
     
     inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     

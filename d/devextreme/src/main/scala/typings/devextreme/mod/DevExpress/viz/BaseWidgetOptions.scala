@@ -96,7 +96,8 @@ object BaseWidgetOptions {
     __obj.asInstanceOf[BaseWidgetOptions[TComponent]]
   }
   
-  extension [Self <: BaseWidgetOptions[?], TComponent](x: Self & BaseWidgetOptions[TComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseWidgetOptions[?], TComponent] (val x: Self & BaseWidgetOptions[TComponent]) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

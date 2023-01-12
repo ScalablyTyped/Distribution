@@ -29,7 +29,8 @@ object ProjectCache {
     __obj.asInstanceOf[ProjectCache]
   }
   
-  extension [Self <: ProjectCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectCache] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

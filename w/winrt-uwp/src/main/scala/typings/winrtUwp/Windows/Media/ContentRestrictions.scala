@@ -108,7 +108,8 @@ object ContentRestrictions {
       __obj.asInstanceOf[ContentRestrictionsBrowsePolicy]
     }
     
-    extension [Self <: ContentRestrictionsBrowsePolicy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentRestrictionsBrowsePolicy] (val x: Self) extends AnyVal {
       
       inline def setGeographicRegion(value: String): Self = StObject.set(x, "geographicRegion", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object ContentRestrictions {
       __obj.asInstanceOf[RatedContentDescription]
     }
     
-    extension [Self <: RatedContentDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatedContentDescription] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: RatedContentCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       

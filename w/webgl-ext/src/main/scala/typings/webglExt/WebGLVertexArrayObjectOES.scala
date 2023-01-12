@@ -17,7 +17,8 @@ object WebGLVertexArrayObjectOES {
     __obj.asInstanceOf[WebGLVertexArrayObjectOES]
   }
   
-  extension [Self <: WebGLVertexArrayObjectOES](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLVertexArrayObjectOES] (val x: Self) extends AnyVal {
     
     inline def set__WebGLVertexArrayObjectOES(value: Unit): Self = StObject.set(x, "__WebGLVertexArrayObjectOES", value.asInstanceOf[js.Any])
   }

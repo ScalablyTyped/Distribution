@@ -72,7 +72,8 @@ object PartialDraggableOptions {
     __obj.asInstanceOf[PartialDraggableOptions]
   }
   
-  extension [Self <: PartialDraggableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDraggableOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowFrom(value: String | typings.interactjsTypes.coreTypesMod.Element): Self = StObject.set(x, "allowFrom", value.asInstanceOf[js.Any])
     

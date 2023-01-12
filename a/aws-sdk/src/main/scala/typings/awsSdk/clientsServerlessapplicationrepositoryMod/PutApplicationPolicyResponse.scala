@@ -18,7 +18,8 @@ object PutApplicationPolicyResponse {
     __obj.asInstanceOf[PutApplicationPolicyResponse]
   }
   
-  extension [Self <: PutApplicationPolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutApplicationPolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setStatements(value: listOfApplicationPolicyStatement): Self = StObject.set(x, "Statements", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object d3pie {
       __obj.asInstanceOf[ID3PieChart]
     }
     
-    extension [Self <: ID3PieChart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ID3PieChart] (val x: Self) extends AnyVal {
       
       inline def setCloseSegment(value: Unit => Unit): Self = StObject.set(x, "closeSegment", js.Any.fromFunction1(value))
       
@@ -88,7 +89,8 @@ object d3pie {
       __obj.asInstanceOf[ID3PieLabelsOptions]
     }
     
-    extension [Self <: ID3PieLabelsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ID3PieLabelsOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(
         value: label | value | percentage | `label-value1` | `label-value2` | `label-percentage1` | `label-percentage2`
@@ -129,7 +131,8 @@ object d3pie {
       __obj.asInstanceOf[ID3PieOptions]
     }
     
-    extension [Self <: ID3PieOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ID3PieOptions] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: OnClickSegment): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -182,7 +185,8 @@ object d3pie {
       __obj.asInstanceOf[ID3PieStyleOptions]
     }
     
-    extension [Self <: ID3PieStyleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ID3PieStyleOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -211,7 +215,8 @@ object d3pie {
       __obj.asInstanceOf[ID3PieTextOptions]
     }
     
-    extension [Self <: ID3PieTextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ID3PieTextOptions] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object ContentWidth {
     __obj.asInstanceOf[ContentWidth]
   }
   
-  extension [Self <: ContentWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentWidth] (val x: Self) extends AnyVal {
     
     inline def setContentHeight(value: CSSSize): Self = StObject.set(x, "contentHeight", value.asInstanceOf[js.Any])
     

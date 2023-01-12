@@ -42,7 +42,8 @@ object IChart {
     __obj.asInstanceOf[IChart]
   }
   
-  extension [Self <: IChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IChart] (val x: Self) extends AnyVal {
     
     inline def setFlipXY(value: Boolean): Self = StObject.set(x, "flipXY", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DescribeScheduledQueryResponse {
     __obj.asInstanceOf[DescribeScheduledQueryResponse]
   }
   
-  extension [Self <: DescribeScheduledQueryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeScheduledQueryResponse] (val x: Self) extends AnyVal {
     
     inline def setScheduledQuery(value: ScheduledQueryDescription): Self = StObject.set(x, "ScheduledQuery", value.asInstanceOf[js.Any])
   }

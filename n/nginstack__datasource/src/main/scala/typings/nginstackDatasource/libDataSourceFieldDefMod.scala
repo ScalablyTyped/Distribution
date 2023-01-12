@@ -61,7 +61,8 @@ object libDataSourceFieldDefMod {
       __obj.asInstanceOf[DataSourceFieldDef]
     }
     
-    extension [Self <: DataSourceFieldDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceFieldDef] (val x: Self) extends AnyVal {
       
       inline def setClassKey(value: Double): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

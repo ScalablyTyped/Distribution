@@ -31,7 +31,8 @@ object Iconfig {
     __obj.asInstanceOf[Iconfig]
   }
   
-  extension [Self <: Iconfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Iconfig] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

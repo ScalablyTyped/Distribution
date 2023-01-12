@@ -40,7 +40,8 @@ object IDBKeyRange {
     __obj.asInstanceOf[IDBKeyRange]
   }
   
-  extension [Self <: IDBKeyRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDBKeyRange] (val x: Self) extends AnyVal {
     
     inline def setIncludes(value: Any => scala.Boolean): Self = StObject.set(x, "includes", js.Any.fromFunction1(value))
     

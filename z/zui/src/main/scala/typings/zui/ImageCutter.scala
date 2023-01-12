@@ -17,7 +17,8 @@ object ImageCutter {
     __obj.asInstanceOf[ImageCutter]
   }
   
-  extension [Self <: ImageCutter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageCutter] (val x: Self) extends AnyVal {
     
     inline def setGetData(value: () => ImageData): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     

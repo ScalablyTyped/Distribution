@@ -38,7 +38,8 @@ object BusLine {
     __obj.asInstanceOf[BusLine]
   }
   
-  extension [Self <: BusLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusLine] (val x: Self) extends AnyVal {
     
     inline def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     

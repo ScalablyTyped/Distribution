@@ -88,7 +88,8 @@ object ConnectorSummary {
     __obj.asInstanceOf[ConnectorSummary]
   }
   
-  extension [Self <: ConnectorSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorSummary] (val x: Self) extends AnyVal {
     
     inline def setCapacity(value: CapacityDescription): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     

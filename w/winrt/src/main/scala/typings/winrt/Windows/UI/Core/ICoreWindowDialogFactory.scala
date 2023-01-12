@@ -15,7 +15,8 @@ object ICoreWindowDialogFactory {
     __obj.asInstanceOf[ICoreWindowDialogFactory]
   }
   
-  extension [Self <: ICoreWindowDialogFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICoreWindowDialogFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateWithTitle(value: String => CoreWindowDialog): Self = StObject.set(x, "createWithTitle", js.Any.fromFunction1(value))
   }

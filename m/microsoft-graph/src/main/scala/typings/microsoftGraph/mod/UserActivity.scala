@@ -76,7 +76,8 @@ object UserActivity {
     __obj.asInstanceOf[UserActivity]
   }
   
-  extension [Self <: UserActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserActivity] (val x: Self) extends AnyVal {
     
     inline def setActivationUrl(value: String): Self = StObject.set(x, "activationUrl", value.asInstanceOf[js.Any])
     

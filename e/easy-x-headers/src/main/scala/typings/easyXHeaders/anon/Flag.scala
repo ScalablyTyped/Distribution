@@ -17,7 +17,8 @@ object Flag {
     __obj.asInstanceOf[Flag]
   }
   
-  extension [Self <: Flag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Flag] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

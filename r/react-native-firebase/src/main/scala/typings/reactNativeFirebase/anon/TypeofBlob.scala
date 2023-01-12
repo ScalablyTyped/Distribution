@@ -20,7 +20,8 @@ object TypeofBlob {
     __obj.asInstanceOf[TypeofBlob]
   }
   
-  extension [Self <: TypeofBlob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofBlob] (val x: Self) extends AnyVal {
     
     inline def setFromBase64String(value: String => Blob): Self = StObject.set(x, "fromBase64String", js.Any.fromFunction1(value))
     

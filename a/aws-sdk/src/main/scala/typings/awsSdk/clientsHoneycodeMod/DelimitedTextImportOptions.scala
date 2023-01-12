@@ -33,7 +33,8 @@ object DelimitedTextImportOptions {
     __obj.asInstanceOf[DelimitedTextImportOptions]
   }
   
-  extension [Self <: DelimitedTextImportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DelimitedTextImportOptions] (val x: Self) extends AnyVal {
     
     inline def setDataCharacterEncoding(value: ImportDataCharacterEncoding): Self = StObject.set(x, "dataCharacterEncoding", value.asInstanceOf[js.Any])
     

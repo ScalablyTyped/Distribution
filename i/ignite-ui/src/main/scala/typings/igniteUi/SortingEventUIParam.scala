@@ -23,7 +23,8 @@ object SortingEventUIParam {
     __obj.asInstanceOf[SortingEventUIParam]
   }
   
-  extension [Self <: SortingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

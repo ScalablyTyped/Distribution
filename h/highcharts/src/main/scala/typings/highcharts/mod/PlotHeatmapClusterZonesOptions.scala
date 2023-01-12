@@ -35,7 +35,8 @@ object PlotHeatmapClusterZonesOptions {
     __obj.asInstanceOf[PlotHeatmapClusterZonesOptions]
   }
   
-  extension [Self <: PlotHeatmapClusterZonesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotHeatmapClusterZonesOptions] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

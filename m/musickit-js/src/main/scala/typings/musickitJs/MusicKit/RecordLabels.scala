@@ -35,7 +35,8 @@ object RecordLabels {
     __obj.asInstanceOf[RecordLabels]
   }
   
-  extension [Self <: RecordLabels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordLabels] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Description): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

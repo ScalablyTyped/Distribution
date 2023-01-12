@@ -33,7 +33,8 @@ object timepickerTypesMod {
       __obj.asInstanceOf[TimePickerDefaultProps]
     }
     
-    extension [Self <: TimePickerDefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimePickerDefaultProps] (val x: Self) extends AnyVal {
       
       inline def setAdapter(value: DateIOAdapter[js.Date]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object timepickerTypesMod {
       __obj.asInstanceOf[TimePickerOverrides]
     }
     
-    extension [Self <: TimePickerOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimePickerOverrides] (val x: Self) extends AnyVal {
       
       inline def setSelect(value: Override[Any]): Self = StObject.set(x, "Select", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object timepickerTypesMod {
       __obj.asInstanceOf[TimePickerProps[T]]
     }
     
-    extension [Self <: TimePickerProps[?], T](x: Self & TimePickerProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimePickerProps[?], T] (val x: Self & TimePickerProps[T]) extends AnyVal {
       
       inline def setAdapter(value: DateIOAdapter[T]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
@@ -206,7 +209,8 @@ object timepickerTypesMod {
       __obj.asInstanceOf[TimePickerState]
     }
     
-    extension [Self <: TimePickerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimePickerState] (val x: Self) extends AnyVal {
       
       inline def setSteps(value: js.Array[Double]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       

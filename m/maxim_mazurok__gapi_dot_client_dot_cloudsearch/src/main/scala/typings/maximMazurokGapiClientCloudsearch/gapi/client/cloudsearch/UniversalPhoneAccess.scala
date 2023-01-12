@@ -25,7 +25,8 @@ object UniversalPhoneAccess {
     __obj.asInstanceOf[UniversalPhoneAccess]
   }
   
-  extension [Self <: UniversalPhoneAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UniversalPhoneAccess] (val x: Self) extends AnyVal {
     
     inline def setPin(value: String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     

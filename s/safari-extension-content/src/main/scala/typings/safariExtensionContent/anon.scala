@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Typeofsafari]
     }
     
-    extension [Self <: Typeofsafari](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofsafari] (val x: Self) extends AnyVal {
       
       inline def setExtension(value: SafariContentExtension): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       

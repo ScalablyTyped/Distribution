@@ -28,7 +28,8 @@ object Fix {
     __obj.asInstanceOf[Fix]
   }
   
-  extension [Self <: Fix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fix] (val x: Self) extends AnyVal {
     
     inline def setArtifactChanges(value: js.Array[ArtifactChange]): Self = StObject.set(x, "artifactChanges", value.asInstanceOf[js.Any])
     

@@ -95,7 +95,8 @@ object AddSubnetworkRequest {
     __obj.asInstanceOf[AddSubnetworkRequest]
   }
   
-  extension [Self <: AddSubnetworkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddSubnetworkRequest] (val x: Self) extends AnyVal {
     
     inline def setCheckServiceNetworkingUsePermission(value: Boolean): Self = StObject.set(x, "checkServiceNetworkingUsePermission", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object FiltersScore {
     __obj.asInstanceOf[FiltersScore]
   }
   
-  extension [Self <: FiltersScore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FiltersScore] (val x: Self) extends AnyVal {
     
     inline def setFiltersScore(value: Double): Self = StObject.set(x, "filtersScore", value.asInstanceOf[js.Any])
     

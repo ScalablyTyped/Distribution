@@ -18,7 +18,8 @@ object PromptProps {
     __obj.asInstanceOf[PromptProps]
   }
   
-  extension [Self <: PromptProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromptProps] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String | (js.Function1[/* location */ Location, String | Boolean])): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

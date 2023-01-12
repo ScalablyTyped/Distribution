@@ -33,7 +33,8 @@ object Interactor {
     __obj.asInstanceOf[Interactor]
   }
   
-  extension [Self <: Interactor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Interactor] (val x: Self) extends AnyVal {
     
     inline def setObject(value: interactor): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }

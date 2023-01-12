@@ -19,7 +19,8 @@ object WebImage {
     __obj.asInstanceOf[WebImage]
   }
   
-  extension [Self <: WebImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebImage] (val x: Self) extends AnyVal {
     
     inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     

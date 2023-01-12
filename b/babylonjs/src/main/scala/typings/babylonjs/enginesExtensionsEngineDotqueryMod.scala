@@ -173,7 +173,8 @@ object enginesExtensionsEngineDotqueryMod {
         __obj.asInstanceOf[Engine]
       }
       
-      extension [Self <: Engine](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Engine] (val x: Self) extends AnyVal {
         
         inline def setBeginOcclusionQuery(value: (Double, OcclusionQuery) => Boolean): Self = StObject.set(x, "beginOcclusionQuery", js.Any.fromFunction2(value))
         
@@ -303,7 +304,8 @@ object enginesExtensionsEngineDotqueryMod {
         __obj.asInstanceOf[AbstractMesh]
       }
       
-      extension [Self <: AbstractMesh](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AbstractMesh] (val x: Self) extends AnyVal {
         
         inline def setForceRenderingWhenOccluded(value: Boolean): Self = StObject.set(x, "forceRenderingWhenOccluded", value.asInstanceOf[js.Any])
         

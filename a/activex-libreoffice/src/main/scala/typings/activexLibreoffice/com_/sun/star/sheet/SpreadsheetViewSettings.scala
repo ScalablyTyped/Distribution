@@ -126,7 +126,8 @@ object SpreadsheetViewSettings {
     __obj.asInstanceOf[SpreadsheetViewSettings]
   }
   
-  extension [Self <: SpreadsheetViewSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetViewSettings] (val x: Self) extends AnyVal {
     
     inline def setGridColor(value: Color): Self = StObject.set(x, "GridColor", value.asInstanceOf[js.Any])
     

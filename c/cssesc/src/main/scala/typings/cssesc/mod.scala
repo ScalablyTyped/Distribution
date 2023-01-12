@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[Options_]
     }
     
-    extension [Self <: Options_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options_] (val x: Self) extends AnyVal {
       
       inline def setEscapeEverything(value: Boolean): Self = StObject.set(x, "escapeEverything", value.asInstanceOf[js.Any])
       

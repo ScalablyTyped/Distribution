@@ -33,7 +33,8 @@ object ShadowCastViewModelDurationOptionsProperties {
     __obj.asInstanceOf[ShadowCastViewModelDurationOptionsProperties]
   }
   
-  extension [Self <: ShadowCastViewModelDurationOptionsProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShadowCastViewModelDurationOptionsProperties] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -254,7 +254,8 @@ object WeakValidationMapactiveKe {
     __obj.asInstanceOf[WeakValidationMapactiveKe]
   }
   
-  extension [Self <: WeakValidationMapactiveKe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapactiveKe] (val x: Self) extends AnyVal {
     
     inline def setActiveKey(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | null | undefined ? react.react.Validator<string | null | undefined | null | undefined> : undefined extends string | null | undefined ? react.react.Validator<string | null | undefined | null | undefined> : react.react.Validator<string | null | undefined> */ js.Any

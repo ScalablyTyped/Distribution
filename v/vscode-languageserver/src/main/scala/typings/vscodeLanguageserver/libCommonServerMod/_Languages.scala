@@ -35,7 +35,8 @@ object _Languages {
     __obj.asInstanceOf[_Languages]
   }
   
-  extension [Self <: _Languages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: _Languages] (val x: Self) extends AnyVal {
     
     inline def setAttachPartialResultProgress(value: (ProgressType[Any], PartialResultParams) => js.UndefOr[ResultProgressReporter[Any]]): Self = StObject.set(x, "attachPartialResultProgress", js.Any.fromFunction2(value))
     

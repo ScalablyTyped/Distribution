@@ -25,7 +25,8 @@ object MlGetDataFrameAnalyticsRequest {
     __obj.asInstanceOf[MlGetDataFrameAnalyticsRequest]
   }
   
-  extension [Self <: MlGetDataFrameAnalyticsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetDataFrameAnalyticsRequest] (val x: Self) extends AnyVal {
     
     inline def setAllow_no_match(value: Boolean): Self = StObject.set(x, "allow_no_match", value.asInstanceOf[js.Any])
     

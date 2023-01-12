@@ -33,7 +33,8 @@ object DatabaseShortInfoResponse {
     __obj.asInstanceOf[DatabaseShortInfoResponse]
   }
   
-  extension [Self <: DatabaseShortInfoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseShortInfoResponse] (val x: Self) extends AnyVal {
     
     inline def setDatabaseEngine(value: String): Self = StObject.set(x, "DatabaseEngine", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ProcessingFailureDetails {
     __obj.asInstanceOf[ProcessingFailureDetails]
   }
   
-  extension [Self <: ProcessingFailureDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessingFailureDetails] (val x: Self) extends AnyVal {
     
     inline def setGpsDataGapDetails(value: GpsDataGapFailureDetails): Self = StObject.set(x, "gpsDataGapDetails", value.asInstanceOf[js.Any])
     

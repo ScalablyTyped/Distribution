@@ -137,7 +137,8 @@ object mod {
       __obj.asInstanceOf[CSRCreationOptions]
     }
     
-    extension [Self <: CSRCreationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSRCreationOptions] (val x: Self) extends AnyVal {
       
       inline def setAltNames(value: js.Array[String]): Self = StObject.set(x, "altNames", value.asInstanceOf[js.Any])
       
@@ -247,7 +248,8 @@ object mod {
       __obj.asInstanceOf[CertificateCreationOptions]
     }
     
-    extension [Self <: CertificateCreationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateCreationOptions] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -304,7 +306,8 @@ object mod {
       __obj.asInstanceOf[CertificateCreationResult]
     }
     
-    extension [Self <: CertificateCreationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateCreationResult] (val x: Self) extends AnyVal {
       
       inline def setCertificate(value: Any): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
@@ -347,7 +350,8 @@ object mod {
       __obj.asInstanceOf[CertificateSubjectReadResult]
     }
     
-    extension [Self <: CertificateSubjectReadResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateSubjectReadResult] (val x: Self) extends AnyVal {
       
       inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
       
@@ -387,7 +391,8 @@ object mod {
       __obj.asInstanceOf[ModuleConfiguration]
     }
     
-    extension [Self <: ModuleConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleConfiguration] (val x: Self) extends AnyVal {
       
       inline def setPathOpenSSL(value: String): Self = StObject.set(x, "pathOpenSSL", value.asInstanceOf[js.Any])
     }
@@ -408,7 +413,8 @@ object mod {
       __obj.asInstanceOf[Pkcs12CreationOptions]
     }
     
-    extension [Self <: Pkcs12CreationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pkcs12CreationOptions] (val x: Self) extends AnyVal {
       
       inline def setCertFiles(value: js.Array[String]): Self = StObject.set(x, "certFiles", value.asInstanceOf[js.Any])
       
@@ -439,7 +445,8 @@ object mod {
       __obj.asInstanceOf[Pkcs12ReadOptions]
     }
     
-    extension [Self <: Pkcs12ReadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pkcs12ReadOptions] (val x: Self) extends AnyVal {
       
       inline def setClientKeyPassword(value: String): Self = StObject.set(x, "clientKeyPassword", value.asInstanceOf[js.Any])
       
@@ -466,7 +473,8 @@ object mod {
       __obj.asInstanceOf[Pkcs12ReadResult]
     }
     
-    extension [Self <: Pkcs12ReadResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pkcs12ReadResult] (val x: Self) extends AnyVal {
       
       inline def setCa(value: js.Array[String]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
@@ -505,7 +513,8 @@ object mod {
       __obj.asInstanceOf[PrivateKeyCreationOptions]
     }
     
-    extension [Self <: PrivateKeyCreationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrivateKeyCreationOptions] (val x: Self) extends AnyVal {
       
       inline def setCipher(value: PrivateKeyCipher): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
       

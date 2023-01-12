@@ -23,7 +23,8 @@ object DeleteResponseHeadersPolicyRequest {
     __obj.asInstanceOf[DeleteResponseHeadersPolicyRequest]
   }
   
-  extension [Self <: DeleteResponseHeadersPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteResponseHeadersPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

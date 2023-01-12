@@ -45,7 +45,8 @@ object ClusterHealthParams {
     __obj.asInstanceOf[ClusterHealthParams]
   }
   
-  extension [Self <: ClusterHealthParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterHealthParams] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

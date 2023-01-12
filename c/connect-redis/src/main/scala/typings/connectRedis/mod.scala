@@ -90,7 +90,8 @@ object mod {
       __obj.asInstanceOf[RedisStoreOptions]
     }
     
-    extension [Self <: RedisStoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisStoreOptions] (val x: Self) extends AnyVal {
       
       inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object mod {
       __obj.asInstanceOf[Serializer]
     }
     
-    extension [Self <: Serializer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Serializer] (val x: Self) extends AnyVal {
       
       inline def setParse(value: js.Function): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
       

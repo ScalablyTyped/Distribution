@@ -22,7 +22,8 @@ object DescribeAclResource {
     __obj.asInstanceOf[DescribeAclResource]
   }
   
-  extension [Self <: DescribeAclResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAclResource] (val x: Self) extends AnyVal {
     
     inline def setAcls(value: js.Array[Acl]): Self = StObject.set(x, "acls", value.asInstanceOf[js.Any])
     

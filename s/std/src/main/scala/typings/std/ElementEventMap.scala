@@ -19,7 +19,8 @@ object ElementEventMap {
     __obj.asInstanceOf[ElementEventMap]
   }
   
-  extension [Self <: ElementEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementEventMap] (val x: Self) extends AnyVal {
     
     inline def setFullscreenchange(value: Event): Self = StObject.set(x, "fullscreenchange", value.asInstanceOf[js.Any])
     

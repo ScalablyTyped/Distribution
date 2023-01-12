@@ -15,7 +15,8 @@ object Cacheable {
     __obj.asInstanceOf[Cacheable]
   }
   
-  extension [Self <: Cacheable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cacheable] (val x: Self) extends AnyVal {
     
     inline def setCacheable(value: Boolean): Self = StObject.set(x, "cacheable", value.asInstanceOf[js.Any])
     

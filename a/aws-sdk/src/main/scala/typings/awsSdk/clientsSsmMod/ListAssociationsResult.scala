@@ -23,7 +23,8 @@ object ListAssociationsResult {
     __obj.asInstanceOf[ListAssociationsResult]
   }
   
-  extension [Self <: ListAssociationsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAssociationsResult] (val x: Self) extends AnyVal {
     
     inline def setAssociations(value: AssociationList): Self = StObject.set(x, "Associations", value.asInstanceOf[js.Any])
     

@@ -89,7 +89,8 @@ object radioGroupMod {
       __obj.asInstanceOf[RadioButtonProps]
     }
     
-    extension [Self <: RadioButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioButtonProps] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object radioGroupMod {
       __obj.asInstanceOf[RadioGroupProps]
     }
     
-    extension [Self <: RadioGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioGroupProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -249,7 +251,8 @@ object radioGroupMod {
       __obj.asInstanceOf[RadioProps]
     }
     
-    extension [Self <: RadioProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String | js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

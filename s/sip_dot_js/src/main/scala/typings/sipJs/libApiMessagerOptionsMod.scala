@@ -22,7 +22,8 @@ object libApiMessagerOptionsMod {
       __obj.asInstanceOf[MessagerOptions]
     }
     
-    extension [Self <: MessagerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessagerOptions] (val x: Self) extends AnyVal {
       
       inline def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object DescribeNotificationSubscriptionsRequest {
     __obj.asInstanceOf[DescribeNotificationSubscriptionsRequest]
   }
   
-  extension [Self <: DescribeNotificationSubscriptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNotificationSubscriptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: LimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

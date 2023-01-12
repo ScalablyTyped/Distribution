@@ -19,7 +19,8 @@ object Explanation {
     __obj.asInstanceOf[Explanation]
   }
   
-  extension [Self <: Explanation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Explanation] (val x: Self) extends AnyVal {
     
     inline def setAttribution(value: Double): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[DefaultProps]
     }
     
-    extension [Self <: DefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object mod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

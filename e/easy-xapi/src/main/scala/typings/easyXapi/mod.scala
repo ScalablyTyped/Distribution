@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setLog(value: Level): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[InitConfig]
     }
     
-    extension [Self <: InitConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitConfig] (val x: Self) extends AnyVal {
       
       inline def setJSend(value: Partial): Self = StObject.set(x, "jSend", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setApp(value: Application_): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       

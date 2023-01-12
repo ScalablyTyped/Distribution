@@ -41,7 +41,8 @@ object WebAccountProvider {
     __obj.asInstanceOf[WebAccountProvider]
   }
   
-  extension [Self <: WebAccountProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAccountProvider] (val x: Self) extends AnyVal {
     
     inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
     

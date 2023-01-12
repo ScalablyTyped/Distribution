@@ -15,7 +15,8 @@ object BackupOptions {
     __obj.asInstanceOf[BackupOptions]
   }
   
-  extension [Self <: BackupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackupOptions] (val x: Self) extends AnyVal {
     
     inline def setProgress(value: BackupMetadata => Double): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
   }

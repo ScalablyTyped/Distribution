@@ -17,7 +17,8 @@ object SceneNodeMixin {
     __obj.asInstanceOf[SceneNodeMixin]
   }
   
-  extension [Self <: SceneNodeMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneNodeMixin] (val x: Self) extends AnyVal {
     
     inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     

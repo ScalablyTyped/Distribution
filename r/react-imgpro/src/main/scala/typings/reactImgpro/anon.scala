@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Amount]
     }
     
-    extension [Self <: Amount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Amount] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object anon {
       __obj.asInstanceOf[Blue]
     }
     
-    extension [Self <: Blue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blue] (val x: Self) extends AnyVal {
       
       inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,8 @@ object anon {
       __obj.asInstanceOf[Degree]
     }
     
-    extension [Self <: Degree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Degree] (val x: Self) extends AnyVal {
       
       inline def setDegree(value: Double): Self = StObject.set(x, "degree", value.asInstanceOf[js.Any])
       
@@ -163,7 +166,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -184,7 +188,8 @@ object anon {
       __obj.asInstanceOf[Horizontal]
     }
     
-    extension [Self <: Horizontal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Horizontal] (val x: Self) extends AnyVal {
       
       inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       

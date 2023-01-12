@@ -38,7 +38,8 @@ object DescribeThemePermissionsResponse {
     __obj.asInstanceOf[DescribeThemePermissionsResponse]
   }
   
-  extension [Self <: DescribeThemePermissionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeThemePermissionsResponse] (val x: Self) extends AnyVal {
     
     inline def setPermissions(value: ResourcePermissionList): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object Folder {
     __obj.asInstanceOf[Folder]
   }
   
-  extension [Self <: Folder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Folder] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

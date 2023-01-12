@@ -77,7 +77,8 @@ object CatTasksTasksRecord {
     __obj.asInstanceOf[CatTasksTasksRecord]
   }
   
-  extension [Self <: CatTasksTasksRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatTasksTasksRecord] (val x: Self) extends AnyVal {
     
     inline def setAc(value: String): Self = StObject.set(x, "ac", value.asInstanceOf[js.Any])
     

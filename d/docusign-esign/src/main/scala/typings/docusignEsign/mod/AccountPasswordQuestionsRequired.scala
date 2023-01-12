@@ -23,7 +23,8 @@ object AccountPasswordQuestionsRequired {
     __obj.asInstanceOf[AccountPasswordQuestionsRequired]
   }
   
-  extension [Self <: AccountPasswordQuestionsRequired](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountPasswordQuestionsRequired] (val x: Self) extends AnyVal {
     
     inline def setMaximumQuestions(value: String): Self = StObject.set(x, "maximumQuestions", value.asInstanceOf[js.Any])
     

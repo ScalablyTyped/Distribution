@@ -23,7 +23,8 @@ object GetDetectorsResult {
     __obj.asInstanceOf[GetDetectorsResult]
   }
   
-  extension [Self <: GetDetectorsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDetectorsResult] (val x: Self) extends AnyVal {
     
     inline def setDetectors(value: DetectorList): Self = StObject.set(x, "detectors", value.asInstanceOf[js.Any])
     

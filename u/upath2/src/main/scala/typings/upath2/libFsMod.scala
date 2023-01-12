@@ -30,7 +30,8 @@ object libFsMod {
         __obj.asInstanceOf[IPath]
       }
       
-      extension [Self <: IPath](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPath] (val x: Self) extends AnyVal {
         
         inline def setFilterNameEntry(value: /* name */ String => String): Self = StObject.set(x, "filterNameEntry", js.Any.fromFunction1(value))
         

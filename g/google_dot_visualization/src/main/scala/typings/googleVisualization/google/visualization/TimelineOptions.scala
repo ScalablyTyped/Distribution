@@ -37,7 +37,8 @@ object TimelineOptions {
     __obj.asInstanceOf[TimelineOptions]
   }
   
-  extension [Self <: TimelineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineOptions] (val x: Self) extends AnyVal {
     
     inline def setAvoidOverlappingGridLines(value: Boolean): Self = StObject.set(x, "avoidOverlappingGridLines", value.asInstanceOf[js.Any])
     

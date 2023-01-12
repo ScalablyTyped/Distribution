@@ -16,7 +16,8 @@ object AlignProperty {
     __obj.asInstanceOf[AlignProperty]
   }
   
-  extension [Self <: AlignProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlignProperty] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: ProductionRule[ScaledValueRef[Align]]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

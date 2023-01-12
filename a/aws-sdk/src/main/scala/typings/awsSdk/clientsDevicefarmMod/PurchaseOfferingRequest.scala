@@ -28,7 +28,8 @@ object PurchaseOfferingRequest {
     __obj.asInstanceOf[PurchaseOfferingRequest]
   }
   
-  extension [Self <: PurchaseOfferingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PurchaseOfferingRequest] (val x: Self) extends AnyVal {
     
     inline def setOfferingId(value: OfferingIdentifier): Self = StObject.set(x, "offeringId", value.asInstanceOf[js.Any])
     

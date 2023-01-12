@@ -39,7 +39,8 @@ object FrameController {
     __obj.asInstanceOf[FrameController]
   }
   
-  extension [Self <: FrameController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameController] (val x: Self) extends AnyVal {
     
     inline def setExposureCompensationControl(value: FrameExposureCompensationControl): Self = StObject.set(x, "exposureCompensationControl", value.asInstanceOf[js.Any])
     

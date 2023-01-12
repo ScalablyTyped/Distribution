@@ -22,7 +22,8 @@ object GoogleCloudRecommenderV1CostProjection {
     __obj.asInstanceOf[GoogleCloudRecommenderV1CostProjection]
   }
   
-  extension [Self <: GoogleCloudRecommenderV1CostProjection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommenderV1CostProjection] (val x: Self) extends AnyVal {
     
     inline def setCost(value: GoogleTypeMoney): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     

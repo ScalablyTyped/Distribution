@@ -24,7 +24,8 @@ object RgbaColor {
     __obj.asInstanceOf[RgbaColor]
   }
   
-  extension [Self <: RgbaColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RgbaColor] (val x: Self) extends AnyVal {
     
     inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

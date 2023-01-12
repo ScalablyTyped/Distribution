@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[AttributeConverter]
     }
     
-    extension [Self <: AttributeConverter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeConverter] (val x: Self) extends AnyVal {
       
       inline def setConvert(value: (String, Any) => String): Self = StObject.set(x, "convert", js.Any.fromFunction2(value))
       
@@ -207,7 +208,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setArrayAccessForm(value: property | none): Self = StObject.set(x, "arrayAccessForm", value.asInstanceOf[js.Any])
       

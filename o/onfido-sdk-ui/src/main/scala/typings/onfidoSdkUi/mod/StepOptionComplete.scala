@@ -17,7 +17,8 @@ object StepOptionComplete {
     __obj.asInstanceOf[StepOptionComplete]
   }
   
-  extension [Self <: StepOptionComplete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepOptionComplete] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

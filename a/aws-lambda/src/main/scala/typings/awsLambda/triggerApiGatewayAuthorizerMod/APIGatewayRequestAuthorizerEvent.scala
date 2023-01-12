@@ -48,7 +48,8 @@ object APIGatewayRequestAuthorizerEvent {
     __obj.asInstanceOf[APIGatewayRequestAuthorizerEvent]
   }
   
-  extension [Self <: APIGatewayRequestAuthorizerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: APIGatewayRequestAuthorizerEvent] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: APIGatewayRequestAuthorizerEventHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

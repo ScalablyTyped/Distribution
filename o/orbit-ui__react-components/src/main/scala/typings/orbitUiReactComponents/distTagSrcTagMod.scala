@@ -83,7 +83,8 @@ object distTagSrcTagMod {
       __obj.asInstanceOf[InnerTagProps]
     }
     
-    extension [Self <: InnerTagProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerTagProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

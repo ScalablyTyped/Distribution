@@ -79,7 +79,8 @@ object Container {
     __obj.asInstanceOf[Container[Option, IsMulti, Group]]
   }
   
-  extension [Self <: Container[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](x: Self & (Container[Option, IsMulti, Group])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Container[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] (val x: Self & (Container[Option, IsMulti, Group])) extends AnyVal {
     
     inline def setClearIndicator(
       value: (/* base */ CSSObjectWithLabel, ClearIndicatorProps[Option, IsMulti, Group]) => CSSObjectWithLabel

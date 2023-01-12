@@ -17,7 +17,8 @@ object DataMask {
     __obj.asInstanceOf[DataMask]
   }
   
-  extension [Self <: DataMask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataMask] (val x: Self) extends AnyVal {
     
     inline def setIsMasked(value: (Double, Double) => Boolean): Self = StObject.set(x, "isMasked", js.Any.fromFunction2(value))
     

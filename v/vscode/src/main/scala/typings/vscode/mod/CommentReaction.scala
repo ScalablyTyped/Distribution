@@ -33,7 +33,8 @@ object CommentReaction {
     __obj.asInstanceOf[CommentReaction]
   }
   
-  extension [Self <: CommentReaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentReaction] (val x: Self) extends AnyVal {
     
     inline def setAuthorHasReacted(value: Boolean): Self = StObject.set(x, "authorHasReacted", value.asInstanceOf[js.Any])
     

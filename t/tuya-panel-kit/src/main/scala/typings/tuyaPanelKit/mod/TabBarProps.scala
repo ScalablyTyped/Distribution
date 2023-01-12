@@ -237,7 +237,8 @@ object TabBarProps {
     __obj.asInstanceOf[TabBarProps]
   }
   
-  extension [Self <: TabBarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabBarProps] (val x: Self) extends AnyVal {
     
     inline def setActiveColor(value: String): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
     

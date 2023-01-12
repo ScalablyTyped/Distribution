@@ -29,7 +29,8 @@ object DetectData {
     __obj.asInstanceOf[DetectData]
   }
   
-  extension [Self <: DetectData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectData] (val x: Self) extends AnyVal {
     
     inline def setOrientation_confidence(value: Double): Self = StObject.set(x, "orientation_confidence", value.asInstanceOf[js.Any])
     

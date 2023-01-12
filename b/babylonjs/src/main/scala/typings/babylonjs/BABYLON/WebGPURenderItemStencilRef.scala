@@ -18,7 +18,8 @@ object WebGPURenderItemStencilRef {
     __obj.asInstanceOf[WebGPURenderItemStencilRef]
   }
   
-  extension [Self <: WebGPURenderItemStencilRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGPURenderItemStencilRef] (val x: Self) extends AnyVal {
     
     inline def setRef(value: Double): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
   }

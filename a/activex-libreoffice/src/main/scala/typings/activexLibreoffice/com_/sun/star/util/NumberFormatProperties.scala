@@ -33,7 +33,8 @@ object NumberFormatProperties {
     __obj.asInstanceOf[NumberFormatProperties]
   }
   
-  extension [Self <: NumberFormatProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberFormatProperties] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     

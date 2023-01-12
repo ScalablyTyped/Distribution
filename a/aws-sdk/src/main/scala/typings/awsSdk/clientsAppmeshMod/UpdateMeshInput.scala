@@ -28,7 +28,8 @@ object UpdateMeshInput {
     __obj.asInstanceOf[UpdateMeshInput]
   }
   
-  extension [Self <: UpdateMeshInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateMeshInput] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

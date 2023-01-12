@@ -97,7 +97,8 @@ object srcNgtscCoreApiSrcPublicOptionsMod {
       __obj.asInstanceOf[BazelAndG3Options]
     }
     
-    extension [Self <: BazelAndG3Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BazelAndG3Options] (val x: Self) extends AnyVal {
       
       inline def setAnnotateForClosureCompiler(value: Boolean): Self = StObject.set(x, "annotateForClosureCompiler", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object srcNgtscCoreApiSrcPublicOptionsMod {
       __obj.asInstanceOf[DiagnosticOptions]
     }
     
-    extension [Self <: DiagnosticOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiagnosticOptions] (val x: Self) extends AnyVal {
       
       inline def setExtendedDiagnostics(value: Checks): Self = StObject.set(x, "extendedDiagnostics", value.asInstanceOf[js.Any])
       
@@ -192,7 +194,8 @@ object srcNgtscCoreApiSrcPublicOptionsMod {
       __obj.asInstanceOf[I18nOptions]
     }
     
-    extension [Self <: I18nOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I18nOptions] (val x: Self) extends AnyVal {
       
       inline def setEnableI18nLegacyMessageIdFormat(value: Boolean): Self = StObject.set(x, "enableI18nLegacyMessageIdFormat", value.asInstanceOf[js.Any])
       
@@ -300,7 +303,8 @@ object srcNgtscCoreApiSrcPublicOptionsMod {
       __obj.asInstanceOf[LegacyNgcOptions]
     }
     
-    extension [Self <: LegacyNgcOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyNgcOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowEmptyCodegenFiles(value: Boolean): Self = StObject.set(x, "allowEmptyCodegenFiles", value.asInstanceOf[js.Any])
       
@@ -348,7 +352,8 @@ object srcNgtscCoreApiSrcPublicOptionsMod {
       __obj.asInstanceOf[MiscOptions]
     }
     
-    extension [Self <: MiscOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MiscOptions] (val x: Self) extends AnyVal {
       
       inline def setCompileNonExportedClasses(value: Boolean): Self = StObject.set(x, "compileNonExportedClasses", value.asInstanceOf[js.Any])
       
@@ -398,7 +403,8 @@ object srcNgtscCoreApiSrcPublicOptionsMod {
       __obj.asInstanceOf[NgcCompatibilityOptions]
     }
     
-    extension [Self <: NgcCompatibilityOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NgcCompatibilityOptions] (val x: Self) extends AnyVal {
       
       inline def setEnableIvy(value: Boolean | ngtsc): Self = StObject.set(x, "enableIvy", value.asInstanceOf[js.Any])
       
@@ -551,7 +557,8 @@ object srcNgtscCoreApiSrcPublicOptionsMod {
       __obj.asInstanceOf[StrictTemplateOptions]
     }
     
-    extension [Self <: StrictTemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictTemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setStrictAttributeTypes(value: Boolean): Self = StObject.set(x, "strictAttributeTypes", value.asInstanceOf[js.Any])
       
@@ -617,7 +624,8 @@ object srcNgtscCoreApiSrcPublicOptionsMod {
       __obj.asInstanceOf[TargetOptions]
     }
     
-    extension [Self <: TargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetOptions] (val x: Self) extends AnyVal {
       
       inline def setCompilationMode(value: full | partial): Self = StObject.set(x, "compilationMode", value.asInstanceOf[js.Any])
       

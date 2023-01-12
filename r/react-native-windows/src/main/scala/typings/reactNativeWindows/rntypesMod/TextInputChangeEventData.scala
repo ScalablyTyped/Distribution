@@ -19,7 +19,8 @@ object TextInputChangeEventData {
     __obj.asInstanceOf[TextInputChangeEventData]
   }
   
-  extension [Self <: TextInputChangeEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextInputChangeEventData] (val x: Self) extends AnyVal {
     
     inline def setEventCount(value: Double): Self = StObject.set(x, "eventCount", value.asInstanceOf[js.Any])
     

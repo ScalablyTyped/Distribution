@@ -19,7 +19,8 @@ object RecentNotebookLinks {
     __obj.asInstanceOf[RecentNotebookLinks]
   }
   
-  extension [Self <: RecentNotebookLinks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecentNotebookLinks] (val x: Self) extends AnyVal {
     
     inline def setOneNoteClientUrl(value: NullableOption[ExternalLink]): Self = StObject.set(x, "oneNoteClientUrl", value.asInstanceOf[js.Any])
     

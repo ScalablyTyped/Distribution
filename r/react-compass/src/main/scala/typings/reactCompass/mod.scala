@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[ReactCompassProps]
     }
     
-    extension [Self <: ReactCompassProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactCompassProps] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       

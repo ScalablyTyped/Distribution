@@ -23,7 +23,8 @@ object PrevInput {
     __obj.asInstanceOf[PrevInput]
   }
   
-  extension [Self <: PrevInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrevInput] (val x: Self) extends AnyVal {
     
     inline def setDecred_tree(value: Double): Self = StObject.set(x, "decred_tree", value.asInstanceOf[js.Any])
     

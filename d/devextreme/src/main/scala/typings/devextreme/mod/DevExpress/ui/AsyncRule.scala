@@ -43,7 +43,8 @@ object AsyncRule {
     __obj.asInstanceOf[AsyncRule]
   }
   
-  extension [Self <: AsyncRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncRule] (val x: Self) extends AnyVal {
     
     inline def setIgnoreEmptyValue(value: Boolean): Self = StObject.set(x, "ignoreEmptyValue", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object CIMLineSymbol {
     __obj.asInstanceOf[CIMLineSymbol]
   }
   
-  extension [Self <: CIMLineSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMLineSymbol] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMLineSymbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

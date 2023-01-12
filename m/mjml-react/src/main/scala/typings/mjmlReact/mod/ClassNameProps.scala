@@ -17,7 +17,8 @@ object ClassNameProps {
     __obj.asInstanceOf[ClassNameProps]
   }
   
-  extension [Self <: ClassNameProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassNameProps] (val x: Self) extends AnyVal {
     
     inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     

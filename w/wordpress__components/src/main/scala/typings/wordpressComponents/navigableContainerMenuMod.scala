@@ -44,7 +44,8 @@ object navigableContainerMenuMod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setOrientation(value: vertical | horizontal | both): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
         

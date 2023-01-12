@@ -61,7 +61,8 @@ object distCssRuntimeRendererMod {
         __obj.asInstanceOf[typings.stylableRuntime.distCssRuntimeRendererMod.global.Window]
       }
       
-      extension [Self <: typings.stylableRuntime.distCssRuntimeRendererMod.global.Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.stylableRuntime.distCssRuntimeRendererMod.global.Window] (val x: Self) extends AnyVal {
         
         inline def set__stylable_renderer_global_counter(value: Double): Self = StObject.set(x, "__stylable_renderer_global_counter", value.asInstanceOf[js.Any])
         

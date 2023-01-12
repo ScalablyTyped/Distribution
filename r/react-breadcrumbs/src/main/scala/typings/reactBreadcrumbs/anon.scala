@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Title]
     }
     
-    extension [Self <: Title](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Title] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

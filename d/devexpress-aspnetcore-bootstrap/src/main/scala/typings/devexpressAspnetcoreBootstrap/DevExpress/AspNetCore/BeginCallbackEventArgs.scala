@@ -17,7 +17,8 @@ object BeginCallbackEventArgs {
     __obj.asInstanceOf[BeginCallbackEventArgs]
   }
   
-  extension [Self <: BeginCallbackEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeginCallbackEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
   }

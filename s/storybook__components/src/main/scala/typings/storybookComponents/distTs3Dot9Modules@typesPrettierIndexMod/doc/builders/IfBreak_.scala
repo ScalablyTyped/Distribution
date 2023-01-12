@@ -23,7 +23,8 @@ object IfBreak_ {
     __obj.asInstanceOf[IfBreak_]
   }
   
-  extension [Self <: IfBreak_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IfBreak_] (val x: Self) extends AnyVal {
     
     inline def setBreakContents(value: Doc): Self = StObject.set(x, "breakContents", value.asInstanceOf[js.Any])
     

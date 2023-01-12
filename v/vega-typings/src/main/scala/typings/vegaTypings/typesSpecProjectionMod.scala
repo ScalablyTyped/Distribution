@@ -170,7 +170,8 @@ object typesSpecProjectionMod {
       __obj.asInstanceOf[BaseProjection]
     }
     
-    extension [Self <: BaseProjection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseProjection] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
@@ -296,7 +297,8 @@ object typesSpecProjectionMod {
       __obj.asInstanceOf[Projection]
     }
     
-    extension [Self <: Projection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

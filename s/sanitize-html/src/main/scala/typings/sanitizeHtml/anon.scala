@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Multiple]
     }
     
-    extension [Self <: Multiple](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Multiple] (val x: Self) extends AnyVal {
       
       inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       

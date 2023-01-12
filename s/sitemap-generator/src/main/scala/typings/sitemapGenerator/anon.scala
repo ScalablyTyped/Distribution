@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[ChangeFreq]
     }
     
-    extension [Self <: ChangeFreq](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeFreq] (val x: Self) extends AnyVal {
       
       inline def setChangeFreq(value: FreqValues): Self = StObject.set(x, "changeFreq", value.asInstanceOf[js.Any])
       

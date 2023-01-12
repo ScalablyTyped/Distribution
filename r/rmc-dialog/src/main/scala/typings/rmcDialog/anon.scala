@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[AfterClose]
     }
     
-    extension [Self <: AfterClose](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AfterClose] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       
@@ -75,7 +76,8 @@ object anon {
       __obj.asInstanceOf[OnClose]
     }
     
-    extension [Self <: OnClose](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnClose] (val x: Self) extends AnyVal {
       
       inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
@@ -96,7 +98,8 @@ object anon {
       __obj.asInstanceOf[Visible]
     }
     
-    extension [Self <: Visible](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Visible] (val x: Self) extends AnyVal {
       
       inline def setVisible(value: Any): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }

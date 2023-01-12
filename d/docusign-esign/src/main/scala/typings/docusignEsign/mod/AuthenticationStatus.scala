@@ -150,7 +150,8 @@ object AuthenticationStatus {
     __obj.asInstanceOf[AuthenticationStatus]
   }
   
-  extension [Self <: AuthenticationStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticationStatus] (val x: Self) extends AnyVal {
     
     inline def setAccessCodeResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "accessCodeResult", value.asInstanceOf[js.Any])
     

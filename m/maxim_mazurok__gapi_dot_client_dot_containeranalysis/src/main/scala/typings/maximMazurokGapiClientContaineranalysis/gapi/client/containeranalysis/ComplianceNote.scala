@@ -33,7 +33,8 @@ object ComplianceNote {
     __obj.asInstanceOf[ComplianceNote]
   }
   
-  extension [Self <: ComplianceNote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComplianceNote] (val x: Self) extends AnyVal {
     
     inline def setCisBenchmark(value: CisBenchmark): Self = StObject.set(x, "cisBenchmark", value.asInstanceOf[js.Any])
     

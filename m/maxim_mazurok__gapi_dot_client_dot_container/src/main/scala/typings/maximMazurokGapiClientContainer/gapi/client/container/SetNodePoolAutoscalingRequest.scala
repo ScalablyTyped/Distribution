@@ -37,7 +37,8 @@ object SetNodePoolAutoscalingRequest {
     __obj.asInstanceOf[SetNodePoolAutoscalingRequest]
   }
   
-  extension [Self <: SetNodePoolAutoscalingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetNodePoolAutoscalingRequest] (val x: Self) extends AnyVal {
     
     inline def setAutoscaling(value: NodePoolAutoscaling): Self = StObject.set(x, "autoscaling", value.asInstanceOf[js.Any])
     

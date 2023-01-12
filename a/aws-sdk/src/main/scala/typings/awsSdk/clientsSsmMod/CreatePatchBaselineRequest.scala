@@ -78,7 +78,8 @@ object CreatePatchBaselineRequest {
     __obj.asInstanceOf[CreatePatchBaselineRequest]
   }
   
-  extension [Self <: CreatePatchBaselineRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePatchBaselineRequest] (val x: Self) extends AnyVal {
     
     inline def setApprovalRules(value: PatchRuleGroup): Self = StObject.set(x, "ApprovalRules", value.asInstanceOf[js.Any])
     

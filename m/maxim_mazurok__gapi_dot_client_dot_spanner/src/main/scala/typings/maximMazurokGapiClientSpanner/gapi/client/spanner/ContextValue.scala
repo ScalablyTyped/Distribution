@@ -25,7 +25,8 @@ object ContextValue {
     __obj.asInstanceOf[ContextValue]
   }
   
-  extension [Self <: ContextValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextValue] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: LocalizedString): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

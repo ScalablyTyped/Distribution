@@ -17,7 +17,8 @@ object ParametersQueryManifest {
     __obj.asInstanceOf[ParametersQueryManifest]
   }
   
-  extension [Self <: ParametersQueryManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersQueryManifest] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: QueryManifest): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

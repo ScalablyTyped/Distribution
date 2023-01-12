@@ -28,7 +28,8 @@ object JobHandlerContext {
     __obj.asInstanceOf[JobHandlerContext[MinimumArgumentValueT, MinimumInputValueT, MinimumOutputValueT]]
   }
   
-  extension [Self <: JobHandlerContext[?, ?, ?], MinimumArgumentValueT /* <: JsonValue */, MinimumInputValueT /* <: JsonValue */, MinimumOutputValueT /* <: JsonValue */](x: Self & (JobHandlerContext[MinimumArgumentValueT, MinimumInputValueT, MinimumOutputValueT])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobHandlerContext[?, ?, ?], MinimumArgumentValueT /* <: JsonValue */, MinimumInputValueT /* <: JsonValue */, MinimumOutputValueT /* <: JsonValue */] (val x: Self & (JobHandlerContext[MinimumArgumentValueT, MinimumInputValueT, MinimumOutputValueT])) extends AnyVal {
     
     inline def setDependencies(value: js.Array[Job[JsonValue, JsonValue, JsonValue]]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     

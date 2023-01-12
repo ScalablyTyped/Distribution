@@ -38,7 +38,8 @@ object DataObjectReference {
     __obj.asInstanceOf[DataObjectReference]
   }
   
-  extension [Self <: DataObjectReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataObjectReference] (val x: Self) extends AnyVal {
     
     inline def setAuditing(value: Auditing): Self = StObject.set(x, "auditing", value.asInstanceOf[js.Any])
     

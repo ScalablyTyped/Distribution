@@ -29,7 +29,8 @@ object TextureAtlas {
     __obj.asInstanceOf[TextureAtlas]
   }
   
-  extension [Self <: TextureAtlas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextureAtlas] (val x: Self) extends AnyVal {
     
     inline def setFindRegion(value: String => TextureAtlasRegion): Self = StObject.set(x, "findRegion", js.Any.fromFunction1(value))
     

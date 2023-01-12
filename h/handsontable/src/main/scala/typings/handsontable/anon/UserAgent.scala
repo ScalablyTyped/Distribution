@@ -17,7 +17,8 @@ object UserAgent {
     __obj.asInstanceOf[UserAgent]
   }
   
-  extension [Self <: UserAgent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserAgent] (val x: Self) extends AnyVal {
     
     inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     

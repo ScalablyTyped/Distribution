@@ -61,7 +61,8 @@ object InMemoryScrollingOptions {
     __obj.asInstanceOf[InMemoryScrollingOptions]
   }
   
-  extension [Self <: InMemoryScrollingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InMemoryScrollingOptions] (val x: Self) extends AnyVal {
     
     inline def setAnchorScrolling(value: disabled | enabled): Self = StObject.set(x, "anchorScrolling", value.asInstanceOf[js.Any])
     

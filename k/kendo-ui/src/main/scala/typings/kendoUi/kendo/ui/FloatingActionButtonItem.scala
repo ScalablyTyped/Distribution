@@ -25,7 +25,8 @@ object FloatingActionButtonItem {
     __obj.asInstanceOf[FloatingActionButtonItem]
   }
   
-  extension [Self <: FloatingActionButtonItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloatingActionButtonItem] (val x: Self) extends AnyVal {
     
     inline def setClick(value: /* e */ FloatingActionButtonItemClickEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     

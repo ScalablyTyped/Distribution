@@ -41,7 +41,8 @@ object SupportingWidgetDefaultsSketch {
     __obj.asInstanceOf[SupportingWidgetDefaultsSketch]
   }
   
-  extension [Self <: SupportingWidgetDefaultsSketch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportingWidgetDefaultsSketch] (val x: Self) extends AnyVal {
     
     inline def setDefaultUpdateOptions(value: Any): Self = StObject.set(x, "defaultUpdateOptions", value.asInstanceOf[js.Any])
     

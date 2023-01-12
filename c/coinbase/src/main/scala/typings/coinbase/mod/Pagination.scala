@@ -31,7 +31,8 @@ object Pagination {
     __obj.asInstanceOf[Pagination]
   }
   
-  extension [Self <: Pagination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pagination] (val x: Self) extends AnyVal {
     
     inline def setEnding_before(value: String): Self = StObject.set(x, "ending_before", value.asInstanceOf[js.Any])
     

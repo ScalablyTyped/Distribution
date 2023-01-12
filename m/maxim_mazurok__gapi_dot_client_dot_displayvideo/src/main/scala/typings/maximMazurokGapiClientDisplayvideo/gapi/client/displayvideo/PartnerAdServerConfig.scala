@@ -16,7 +16,8 @@ object PartnerAdServerConfig {
     __obj.asInstanceOf[PartnerAdServerConfig]
   }
   
-  extension [Self <: PartnerAdServerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartnerAdServerConfig] (val x: Self) extends AnyVal {
     
     inline def setMeasurementConfig(value: MeasurementConfig): Self = StObject.set(x, "measurementConfig", value.asInstanceOf[js.Any])
     

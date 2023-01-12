@@ -18,7 +18,8 @@ object Inserting {
     __obj.asInstanceOf[Inserting]
   }
   
-  extension [Self <: Inserting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Inserting] (val x: Self) extends AnyVal {
     
     inline def setInserting(value: Range): Self = StObject.set(x, "inserting", value.asInstanceOf[js.Any])
     

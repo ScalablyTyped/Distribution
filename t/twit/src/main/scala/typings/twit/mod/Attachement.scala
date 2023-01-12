@@ -24,7 +24,8 @@ object Attachement {
     __obj.asInstanceOf[Attachement]
   }
   
-  extension [Self <: Attachement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Attachement] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: Sharedcoordinate): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

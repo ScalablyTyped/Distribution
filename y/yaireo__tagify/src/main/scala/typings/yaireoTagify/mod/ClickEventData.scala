@@ -29,7 +29,8 @@ object ClickEventData {
     __obj.asInstanceOf[ClickEventData[T]]
   }
   
-  extension [Self <: ClickEventData[?], T /* <: BaseTagData */](x: Self & ClickEventData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClickEventData[?], T /* <: BaseTagData */] (val x: Self & ClickEventData[T]) extends AnyVal {
     
     inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

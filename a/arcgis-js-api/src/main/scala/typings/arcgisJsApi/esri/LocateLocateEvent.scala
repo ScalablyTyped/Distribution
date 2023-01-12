@@ -15,7 +15,8 @@ object LocateLocateEvent {
     __obj.asInstanceOf[LocateLocateEvent]
   }
   
-  extension [Self <: LocateLocateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocateLocateEvent] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }

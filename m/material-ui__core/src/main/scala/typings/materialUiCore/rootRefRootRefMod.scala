@@ -62,7 +62,8 @@ object rootRefRootRefMod extends Shortcut {
       __obj.asInstanceOf[RootRefProps[T]]
     }
     
-    extension [Self <: RootRefProps[?], T](x: Self & RootRefProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RootRefProps[?], T] (val x: Self & RootRefProps[T]) extends AnyVal {
       
       inline def setRootRef(value: (js.Function1[/* instance */ T | Null, Unit]) | RefObject[T]): Self = StObject.set(x, "rootRef", value.asInstanceOf[js.Any])
       

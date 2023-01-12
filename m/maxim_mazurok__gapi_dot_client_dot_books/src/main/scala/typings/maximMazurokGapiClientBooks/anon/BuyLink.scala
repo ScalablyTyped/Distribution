@@ -40,7 +40,8 @@ object BuyLink {
     __obj.asInstanceOf[BuyLink]
   }
   
-  extension [Self <: BuyLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuyLink] (val x: Self) extends AnyVal {
     
     inline def setBuyLink(value: String): Self = StObject.set(x, "buyLink", value.asInstanceOf[js.Any])
     

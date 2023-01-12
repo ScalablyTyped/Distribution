@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[EffectiveConnectionType]
     }
     
-    extension [Self <: EffectiveConnectionType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EffectiveConnectionType] (val x: Self) extends AnyVal {
       
       inline def setEffectiveConnectionType(value: typings.reactAdaptiveHooks.networkMod.EffectiveConnectionType): Self = StObject.set(x, "effectiveConnectionType", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[HasMediaConfig]
     }
     
-    extension [Self <: HasMediaConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasMediaConfig] (val x: Self) extends AnyVal {
       
       inline def setHasMediaConfig(value: Boolean): Self = StObject.set(x, "hasMediaConfig", value.asInstanceOf[js.Any])
       
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[MediaCapabilities[T]]
     }
     
-    extension [Self <: MediaCapabilities[?], T](x: Self & MediaCapabilities[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaCapabilities[?], T] (val x: Self & MediaCapabilities[T]) extends AnyVal {
       
       inline def setMediaCapabilities(value: (HasMediaConfig & T) | hasMediaConfigundefinedMe): Self = StObject.set(x, "mediaCapabilities", value.asInstanceOf[js.Any])
     }
@@ -89,7 +92,8 @@ object anon {
       __obj.asInstanceOf[NumberOfLogicalProcessors]
     }
     
-    extension [Self <: NumberOfLogicalProcessors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberOfLogicalProcessors] (val x: Self) extends AnyVal {
       
       inline def setNumberOfLogicalProcessors(value: Double): Self = StObject.set(x, "numberOfLogicalProcessors", value.asInstanceOf[js.Any])
       
@@ -115,7 +119,8 @@ object anon {
       __obj.asInstanceOf[PartialMediaConfiguration]
     }
     
-    extension [Self <: PartialMediaConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMediaConfiguration] (val x: Self) extends AnyVal {
       
       inline def setPowerEfficient(value: Boolean): Self = StObject.set(x, "powerEfficient", value.asInstanceOf[js.Any])
       
@@ -149,7 +154,8 @@ object anon {
       __obj.asInstanceOf[PartialMemoryStatus]
     }
     
-    extension [Self <: PartialMemoryStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMemoryStatus] (val x: Self) extends AnyVal {
       
       inline def setDeviceMemory(value: Double): Self = StObject.set(x, "deviceMemory", value.asInstanceOf[js.Any])
       
@@ -188,7 +194,8 @@ object anon {
       __obj.asInstanceOf[SaveData]
     }
     
-    extension [Self <: SaveData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SaveData] (val x: Self) extends AnyVal {
       
       inline def setSaveData(value: Boolean): Self = StObject.set(x, "saveData", value.asInstanceOf[js.Any])
       
@@ -209,7 +216,8 @@ object anon {
       __obj.asInstanceOf[Unsupported]
     }
     
-    extension [Self <: Unsupported](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unsupported] (val x: Self) extends AnyVal {
       
       inline def setUnsupported(value: `true`): Self = StObject.set(x, "unsupported", value.asInstanceOf[js.Any])
     }
@@ -232,7 +240,8 @@ object anon {
       __obj.asInstanceOf[audioAudioMediaConfigurat]
     }
     
-    extension [Self <: audioAudioMediaConfigurat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: audioAudioMediaConfigurat] (val x: Self) extends AnyVal {
       
       inline def setAudio(value: AudioMediaConfiguration): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
@@ -258,7 +267,8 @@ object anon {
       __obj.asInstanceOf[hasMediaConfigundefinedMe]
     }
     
-    extension [Self <: hasMediaConfigundefinedMe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: hasMediaConfigundefinedMe] (val x: Self) extends AnyVal {
       
       inline def setHasMediaConfig(value: Unit): Self = StObject.set(x, "hasMediaConfig", value.asInstanceOf[js.Any])
       
@@ -290,7 +300,8 @@ object anon {
       __obj.asInstanceOf[unsupportedfalseMemorySta]
     }
     
-    extension [Self <: unsupportedfalseMemorySta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: unsupportedfalseMemorySta] (val x: Self) extends AnyVal {
       
       inline def setDeviceMemory(value: Double): Self = StObject.set(x, "deviceMemory", value.asInstanceOf[js.Any])
       
@@ -327,7 +338,8 @@ object anon {
       __obj.asInstanceOf[videoVideoMediaConfigurat]
     }
     
-    extension [Self <: videoVideoMediaConfigurat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: videoVideoMediaConfigurat] (val x: Self) extends AnyVal {
       
       inline def setType(value: file | record | transmission | `media-source`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

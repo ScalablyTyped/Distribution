@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[FilterPlaceholder]
     }
     
-    extension [Self <: FilterPlaceholder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterPlaceholder] (val x: Self) extends AnyVal {
       
       inline def setFilterPlaceholder(value: String): Self = StObject.set(x, "filterPlaceholder", value.asInstanceOf[js.Any])
       

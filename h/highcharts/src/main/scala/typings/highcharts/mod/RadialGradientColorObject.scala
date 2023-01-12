@@ -28,7 +28,8 @@ object RadialGradientColorObject {
     __obj.asInstanceOf[RadialGradientColorObject]
   }
   
-  extension [Self <: RadialGradientColorObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadialGradientColorObject] (val x: Self) extends AnyVal {
     
     inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     

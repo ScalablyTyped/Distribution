@@ -99,7 +99,8 @@ object RegulatedAuthorization {
     __obj.asInstanceOf[RegulatedAuthorization]
   }
   
-  extension [Self <: RegulatedAuthorization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegulatedAuthorization] (val x: Self) extends AnyVal {
     
     inline def setAttachedDocument(value: js.Array[Reference]): Self = StObject.set(x, "attachedDocument", value.asInstanceOf[js.Any])
     

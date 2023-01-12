@@ -22,7 +22,8 @@ object Size {
     __obj.asInstanceOf[Size]
   }
   
-  extension [Self <: Size](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

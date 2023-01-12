@@ -41,7 +41,8 @@ object DeveloperMetadataFinder {
     __obj.asInstanceOf[DeveloperMetadataFinder]
   }
   
-  extension [Self <: DeveloperMetadataFinder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeveloperMetadataFinder] (val x: Self) extends AnyVal {
     
     inline def setFind(value: () => js.Array[DeveloperMetadata]): Self = StObject.set(x, "find", js.Any.fromFunction0(value))
     

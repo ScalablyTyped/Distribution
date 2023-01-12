@@ -31,7 +31,8 @@ object LiasettingsCustomBatchResponseEntry {
     __obj.asInstanceOf[LiasettingsCustomBatchResponseEntry]
   }
   
-  extension [Self <: LiasettingsCustomBatchResponseEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiasettingsCustomBatchResponseEntry] (val x: Self) extends AnyVal {
     
     inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     

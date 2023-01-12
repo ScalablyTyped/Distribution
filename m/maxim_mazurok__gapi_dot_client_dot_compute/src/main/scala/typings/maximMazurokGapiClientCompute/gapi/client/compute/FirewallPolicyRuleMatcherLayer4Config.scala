@@ -25,7 +25,8 @@ object FirewallPolicyRuleMatcherLayer4Config {
     __obj.asInstanceOf[FirewallPolicyRuleMatcherLayer4Config]
   }
   
-  extension [Self <: FirewallPolicyRuleMatcherLayer4Config](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirewallPolicyRuleMatcherLayer4Config] (val x: Self) extends AnyVal {
     
     inline def setIpProtocol(value: String): Self = StObject.set(x, "ipProtocol", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object ReadonlyRequiredIDropInto {
     __obj.asInstanceOf[ReadonlyRequiredIDropInto]
   }
   
-  extension [Self <: ReadonlyRequiredIDropInto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyRequiredIDropInto] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }

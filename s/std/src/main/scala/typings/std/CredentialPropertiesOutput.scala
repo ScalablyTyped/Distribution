@@ -16,7 +16,8 @@ object CredentialPropertiesOutput {
     __obj.asInstanceOf[CredentialPropertiesOutput]
   }
   
-  extension [Self <: CredentialPropertiesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CredentialPropertiesOutput] (val x: Self) extends AnyVal {
     
     inline def setRk(value: scala.Boolean): Self = StObject.set(x, "rk", value.asInstanceOf[js.Any])
     

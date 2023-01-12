@@ -23,7 +23,8 @@ object CreateVPCAssociationAuthorizationRequest {
     __obj.asInstanceOf[CreateVPCAssociationAuthorizationRequest]
   }
   
-  extension [Self <: CreateVPCAssociationAuthorizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVPCAssociationAuthorizationRequest] (val x: Self) extends AnyVal {
     
     inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     

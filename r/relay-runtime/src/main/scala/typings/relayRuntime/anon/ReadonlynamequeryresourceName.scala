@@ -24,7 +24,8 @@ object ReadonlynamequeryresourceName {
     __obj.asInstanceOf[ReadonlynamequeryresourceName]
   }
   
-  extension [Self <: ReadonlynamequeryresourceName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlynamequeryresourceName] (val x: Self) extends AnyVal {
     
     inline def setName(value: queryresourceDotretain): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object DailyVolume {
     __obj.asInstanceOf[DailyVolume]
   }
   
-  extension [Self <: DailyVolume](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DailyVolume] (val x: Self) extends AnyVal {
     
     inline def setDomainIspPlacements(value: DomainIspPlacements): Self = StObject.set(x, "DomainIspPlacements", value.asInstanceOf[js.Any])
     

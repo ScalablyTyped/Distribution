@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[CastReturnObject]
     }
     
-    extension [Self <: CastReturnObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CastReturnObject] (val x: Self) extends AnyVal {
       
       inline def setDelimiter(value: String | Buffer): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object mod {
       __obj.asInstanceOf[CastingContext]
     }
     
-    extension [Self <: CastingContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CastingContext] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double | String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object mod {
       __obj.asInstanceOf[ColumnOption]
     }
     
-    extension [Self <: ColumnOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnOption] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -241,7 +244,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBom(value: Boolean): Self = StObject.set(x, "bom", value.asInstanceOf[js.Any])
       

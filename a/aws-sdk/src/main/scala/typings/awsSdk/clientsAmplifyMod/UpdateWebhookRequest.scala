@@ -28,7 +28,8 @@ object UpdateWebhookRequest {
     __obj.asInstanceOf[UpdateWebhookRequest]
   }
   
-  extension [Self <: UpdateWebhookRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateWebhookRequest] (val x: Self) extends AnyVal {
     
     inline def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     

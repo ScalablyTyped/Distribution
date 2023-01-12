@@ -19,7 +19,8 @@ object Measured {
     __obj.asInstanceOf[Measured]
   }
   
-  extension [Self <: Measured](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Measured] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

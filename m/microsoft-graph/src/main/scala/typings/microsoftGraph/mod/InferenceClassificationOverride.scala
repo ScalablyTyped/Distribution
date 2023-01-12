@@ -24,7 +24,8 @@ object InferenceClassificationOverride {
     __obj.asInstanceOf[InferenceClassificationOverride]
   }
   
-  extension [Self <: InferenceClassificationOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferenceClassificationOverride] (val x: Self) extends AnyVal {
     
     inline def setClassifyAs(value: NullableOption[InferenceClassificationType]): Self = StObject.set(x, "classifyAs", value.asInstanceOf[js.Any])
     

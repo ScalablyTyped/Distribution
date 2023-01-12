@@ -19,7 +19,8 @@ object TabMoveInfo {
     __obj.asInstanceOf[TabMoveInfo]
   }
   
-  extension [Self <: TabMoveInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabMoveInfo] (val x: Self) extends AnyVal {
     
     inline def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object AssetTypeJSON {
     __obj.asInstanceOf[AssetTypeJSON]
   }
   
-  extension [Self <: AssetTypeJSON](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetTypeJSON] (val x: Self) extends AnyVal {
     
     inline def setAssetTypeCode(value: Double): Self = StObject.set(x, "assetTypeCode", value.asInstanceOf[js.Any])
     

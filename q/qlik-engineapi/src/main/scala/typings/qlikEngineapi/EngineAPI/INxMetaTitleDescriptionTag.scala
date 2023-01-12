@@ -23,7 +23,8 @@ object INxMetaTitleDescriptionTag {
     __obj.asInstanceOf[INxMetaTitleDescriptionTag]
   }
   
-  extension [Self <: INxMetaTitleDescriptionTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxMetaTitleDescriptionTag] (val x: Self) extends AnyVal {
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

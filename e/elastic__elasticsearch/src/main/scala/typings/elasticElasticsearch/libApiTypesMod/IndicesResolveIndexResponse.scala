@@ -23,7 +23,8 @@ object IndicesResolveIndexResponse {
     __obj.asInstanceOf[IndicesResolveIndexResponse]
   }
   
-  extension [Self <: IndicesResolveIndexResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesResolveIndexResponse] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: js.Array[IndicesResolveIndexResolveIndexAliasItem]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

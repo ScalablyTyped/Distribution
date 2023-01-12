@@ -22,7 +22,8 @@ object AttrsMinAttrs {
     __obj.asInstanceOf[AttrsMinAttrs]
   }
   
-  extension [Self <: AttrsMinAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsMinAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: MinAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

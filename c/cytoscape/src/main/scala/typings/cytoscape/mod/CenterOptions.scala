@@ -15,7 +15,8 @@ object CenterOptions {
     __obj.asInstanceOf[CenterOptions]
   }
   
-  extension [Self <: CenterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CenterOptions] (val x: Self) extends AnyVal {
     
     inline def setEles(value: CollectionArgument | Selector): Self = StObject.set(x, "eles", value.asInstanceOf[js.Any])
   }

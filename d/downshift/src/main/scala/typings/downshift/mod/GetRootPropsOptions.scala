@@ -15,7 +15,8 @@ object GetRootPropsOptions {
     __obj.asInstanceOf[GetRootPropsOptions]
   }
   
-  extension [Self <: GetRootPropsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRootPropsOptions] (val x: Self) extends AnyVal {
     
     inline def setRefKey(value: String): Self = StObject.set(x, "refKey", value.asInstanceOf[js.Any])
   }

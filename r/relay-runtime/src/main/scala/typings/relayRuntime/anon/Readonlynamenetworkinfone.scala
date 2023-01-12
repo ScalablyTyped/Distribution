@@ -24,7 +24,8 @@ object Readonlynamenetworkinfone {
     __obj.asInstanceOf[Readonlynamenetworkinfone]
   }
   
-  extension [Self <: Readonlynamenetworkinfone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlynamenetworkinfone] (val x: Self) extends AnyVal {
     
     inline def setInfo(value: Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     

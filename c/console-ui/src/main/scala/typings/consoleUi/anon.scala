@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Ci]
     }
     
-    extension [Self <: Ci](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ci] (val x: Self) extends AnyVal {
       
       inline def setCi(value: Boolean): Self = StObject.set(x, "ci", value.asInstanceOf[js.Any])
       

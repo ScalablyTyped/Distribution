@@ -84,7 +84,8 @@ object distMethodsTopicsMod {
       __obj.asInstanceOf[TopicIdOrSlug]
     }
     
-    extension [Self <: TopicIdOrSlug](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopicIdOrSlug] (val x: Self) extends AnyVal {
       
       inline def setTopicIdOrSlug(value: String): Self = StObject.set(x, "topicIdOrSlug", value.asInstanceOf[js.Any])
     }

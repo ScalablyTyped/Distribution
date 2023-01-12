@@ -22,7 +22,8 @@ object TechnologyTargeting {
     __obj.asInstanceOf[TechnologyTargeting]
   }
   
-  extension [Self <: TechnologyTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TechnologyTargeting] (val x: Self) extends AnyVal {
     
     inline def setDeviceCapabilityTargeting(value: CriteriaTargeting): Self = StObject.set(x, "deviceCapabilityTargeting", value.asInstanceOf[js.Any])
     

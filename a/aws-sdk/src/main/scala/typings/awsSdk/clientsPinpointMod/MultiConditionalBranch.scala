@@ -23,7 +23,8 @@ object MultiConditionalBranch {
     __obj.asInstanceOf[MultiConditionalBranch]
   }
   
-  extension [Self <: MultiConditionalBranch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiConditionalBranch] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: SimpleCondition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     

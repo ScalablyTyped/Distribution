@@ -56,7 +56,8 @@ object WebServiceAdapterObject {
     __obj.asInstanceOf[WebServiceAdapterObject]
   }
   
-  extension [Self <: WebServiceAdapterObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebServiceAdapterObject] (val x: Self) extends AnyVal {
     
     inline def setErrorsLocation(value: IXMLDOMNode): Self = StObject.set(x, "ErrorsLocation", value.asInstanceOf[js.Any])
     

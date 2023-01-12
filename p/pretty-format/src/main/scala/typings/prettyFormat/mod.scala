@@ -159,7 +159,8 @@ object mod {
       __obj.asInstanceOf[Colors]
     }
     
-    extension [Self <: Colors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
       
       inline def setComment(value: Close): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -226,7 +227,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setCallToJSON(value: Boolean): Self = StObject.set(x, "callToJSON", value.asInstanceOf[js.Any])
       
@@ -283,7 +285,8 @@ object mod {
       __obj.asInstanceOf[NewPlugin]
     }
     
-    extension [Self <: NewPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewPlugin] (val x: Self) extends AnyVal {
       
       inline def setSerialize(value: (Any, Config, String, Double, Refs, Printer) => String): Self = StObject.set(x, "serialize", js.Any.fromFunction6(value))
       
@@ -308,7 +311,8 @@ object mod {
       __obj.asInstanceOf[OldPlugin]
     }
     
-    extension [Self <: OldPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OldPlugin] (val x: Self) extends AnyVal {
       
       inline def setPrint(value: (Any, Print, Indent, PluginOptions, Colors) => String): Self = StObject.set(x, "print", js.Any.fromFunction5(value))
       
@@ -336,7 +340,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCompareKeys(value: (/* a */ String, /* b */ String) => Double): Self = StObject.set(x, "compareKeys", js.Any.fromFunction2(value))
       
@@ -387,7 +392,8 @@ object mod {
       __obj.asInstanceOf[PluginOptions]
     }
     
-    extension [Self <: PluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
       
       inline def setEdgeSpacing(value: String): Self = StObject.set(x, "edgeSpacing", value.asInstanceOf[js.Any])
       
@@ -413,7 +419,8 @@ object mod {
       __obj.asInstanceOf[PrettyFormatOptions]
     }
     
-    extension [Self <: PrettyFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrettyFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setCompareKeys(value: (/* a */ String, /* b */ String) => Double): Self = StObject.set(x, "compareKeys", js.Any.fromFunction2(value))
       

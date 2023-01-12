@@ -191,7 +191,8 @@ object libHistoryMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setSessionContext(value: ISessionContext): Self = StObject.set(x, "sessionContext", value.asInstanceOf[js.Any])
       }
@@ -272,7 +273,8 @@ object libHistoryMod {
       __obj.asInstanceOf[IConsoleHistory]
     }
     
-    extension [Self <: IConsoleHistory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConsoleHistory] (val x: Self) extends AnyVal {
       
       inline def setBack(value: String => js.Promise[String]): Self = StObject.set(x, "back", js.Any.fromFunction1(value))
       

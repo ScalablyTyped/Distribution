@@ -33,7 +33,8 @@ object BatchUpdateTableRowsRequest {
     __obj.asInstanceOf[BatchUpdateTableRowsRequest]
   }
   
-  extension [Self <: BatchUpdateTableRowsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdateTableRowsRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     

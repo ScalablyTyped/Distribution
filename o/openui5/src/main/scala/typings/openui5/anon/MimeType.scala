@@ -35,7 +35,8 @@ object MimeType {
     __obj.asInstanceOf[MimeType]
   }
   
-  extension [Self <: MimeType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MimeType] (val x: Self) extends AnyVal {
     
     inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     

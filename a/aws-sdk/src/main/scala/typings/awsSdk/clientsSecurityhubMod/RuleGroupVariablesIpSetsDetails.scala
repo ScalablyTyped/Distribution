@@ -18,7 +18,8 @@ object RuleGroupVariablesIpSetsDetails {
     __obj.asInstanceOf[RuleGroupVariablesIpSetsDetails]
   }
   
-  extension [Self <: RuleGroupVariablesIpSetsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleGroupVariablesIpSetsDetails] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: NonEmptyStringList): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
     

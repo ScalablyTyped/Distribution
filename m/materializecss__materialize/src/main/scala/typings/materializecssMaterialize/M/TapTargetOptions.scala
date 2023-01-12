@@ -26,7 +26,8 @@ object TapTargetOptions {
     __obj.asInstanceOf[TapTargetOptions]
   }
   
-  extension [Self <: TapTargetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TapTargetOptions] (val x: Self) extends AnyVal {
     
     inline def setOnClose(value: Element => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
     

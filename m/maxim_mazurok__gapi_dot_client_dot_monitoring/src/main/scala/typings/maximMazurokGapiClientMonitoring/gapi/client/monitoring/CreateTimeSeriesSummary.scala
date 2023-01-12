@@ -22,7 +22,8 @@ object CreateTimeSeriesSummary {
     __obj.asInstanceOf[CreateTimeSeriesSummary]
   }
   
-  extension [Self <: CreateTimeSeriesSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTimeSeriesSummary] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

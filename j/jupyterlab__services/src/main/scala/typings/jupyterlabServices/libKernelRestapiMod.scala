@@ -47,7 +47,8 @@ object libKernelRestapiMod {
       __obj.asInstanceOf[IKernelOptions]
     }
     
-    extension [Self <: IKernelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKernelOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object libKernelRestapiMod {
       __obj.asInstanceOf[IModel]
     }
     
-    extension [Self <: IModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModel] (val x: Self) extends AnyVal {
       
       inline def setConnections(value: Double): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
       

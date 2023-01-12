@@ -28,7 +28,8 @@ object EnvironmentTier {
     __obj.asInstanceOf[EnvironmentTier]
   }
   
-  extension [Self <: EnvironmentTier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentTier] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

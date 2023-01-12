@@ -20,7 +20,8 @@ object IGenericMeasureListLayout {
     __obj.asInstanceOf[IGenericMeasureListLayout]
   }
   
-  extension [Self <: IGenericMeasureListLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericMeasureListLayout] (val x: Self) extends AnyVal {
     
     inline def setQMeassureListObject(value: IMeassureList): Self = StObject.set(x, "qMeassureListObject", value.asInstanceOf[js.Any])
   }

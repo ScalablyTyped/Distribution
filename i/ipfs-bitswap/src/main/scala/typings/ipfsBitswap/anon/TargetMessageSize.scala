@@ -17,7 +17,8 @@ object TargetMessageSize {
     __obj.asInstanceOf[TargetMessageSize]
   }
   
-  extension [Self <: TargetMessageSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetMessageSize] (val x: Self) extends AnyVal {
     
     inline def setMaxSizeReplaceHasWithBlock(value: Double): Self = StObject.set(x, "maxSizeReplaceHasWithBlock", value.asInstanceOf[js.Any])
     

@@ -121,7 +121,8 @@ object ICarousel {
     __obj.asInstanceOf[ICarousel]
   }
   
-  extension [Self <: ICarousel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICarousel] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: java.lang.String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

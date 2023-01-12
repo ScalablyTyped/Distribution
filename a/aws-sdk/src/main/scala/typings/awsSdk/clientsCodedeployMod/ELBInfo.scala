@@ -18,7 +18,8 @@ object ELBInfo {
     __obj.asInstanceOf[ELBInfo]
   }
   
-  extension [Self <: ELBInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ELBInfo] (val x: Self) extends AnyVal {
     
     inline def setName(value: ELBName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

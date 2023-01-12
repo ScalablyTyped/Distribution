@@ -30,7 +30,8 @@ object settingsMod {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setApplication(value: Password): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       

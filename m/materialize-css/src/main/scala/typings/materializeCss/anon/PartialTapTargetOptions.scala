@@ -20,7 +20,8 @@ object PartialTapTargetOptions {
     __obj.asInstanceOf[PartialTapTargetOptions]
   }
   
-  extension [Self <: PartialTapTargetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTapTargetOptions] (val x: Self) extends AnyVal {
     
     inline def setOnClose(value: js.ThisFunction1[/* this */ TapTarget, /* origin */ Element, Unit]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
     

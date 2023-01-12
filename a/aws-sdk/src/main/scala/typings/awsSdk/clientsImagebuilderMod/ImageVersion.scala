@@ -58,7 +58,8 @@ object ImageVersion {
     __obj.asInstanceOf[ImageVersion]
   }
   
-  extension [Self <: ImageVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageVersion] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ImageBuilderArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object UnclaimedDraft {
     __obj.asInstanceOf[UnclaimedDraft]
   }
   
-  extension [Self <: UnclaimedDraft](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnclaimedDraft] (val x: Self) extends AnyVal {
     
     inline def setClaim_url(value: String): Self = StObject.set(x, "claim_url", value.asInstanceOf[js.Any])
     

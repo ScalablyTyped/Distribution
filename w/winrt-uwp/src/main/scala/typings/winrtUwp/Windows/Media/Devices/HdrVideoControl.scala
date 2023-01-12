@@ -24,7 +24,8 @@ object HdrVideoControl {
     __obj.asInstanceOf[HdrVideoControl]
   }
   
-  extension [Self <: HdrVideoControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HdrVideoControl] (val x: Self) extends AnyVal {
     
     inline def setMode(value: HdrVideoMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

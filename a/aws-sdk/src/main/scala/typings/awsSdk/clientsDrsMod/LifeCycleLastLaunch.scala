@@ -18,7 +18,8 @@ object LifeCycleLastLaunch {
     __obj.asInstanceOf[LifeCycleLastLaunch]
   }
   
-  extension [Self <: LifeCycleLastLaunch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LifeCycleLastLaunch] (val x: Self) extends AnyVal {
     
     inline def setInitiated(value: LifeCycleLastLaunchInitiated): Self = StObject.set(x, "initiated", value.asInstanceOf[js.Any])
     

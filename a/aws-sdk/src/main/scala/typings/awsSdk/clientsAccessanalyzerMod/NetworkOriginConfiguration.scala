@@ -20,7 +20,8 @@ object NetworkOriginConfiguration {
     __obj.asInstanceOf[NetworkOriginConfiguration]
   }
   
-  extension [Self <: NetworkOriginConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkOriginConfiguration] (val x: Self) extends AnyVal {
     
     inline def setInternetConfiguration(value: InternetConfiguration): Self = StObject.set(x, "internetConfiguration", value.asInstanceOf[js.Any])
     

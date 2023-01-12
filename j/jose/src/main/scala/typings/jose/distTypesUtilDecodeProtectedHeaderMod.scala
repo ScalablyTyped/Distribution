@@ -35,7 +35,8 @@ object distTypesUtilDecodeProtectedHeaderMod {
       __obj.asInstanceOf[ProtectedHeaderParameters]
     }
     
-    extension [Self <: ProtectedHeaderParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtectedHeaderParameters] (val x: Self) extends AnyVal {
       
       inline def setEnc(value: String): Self = StObject.set(x, "enc", value.asInstanceOf[js.Any])
       

@@ -95,7 +95,8 @@ object typesWiaAriaFocusContainerMod {
       __obj.asInstanceOf[FocusContainerOptionsProps]
     }
     
-    extension [Self <: FocusContainerOptionsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusContainerOptionsProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultFocus(value: first | last | String): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
       
@@ -151,7 +152,8 @@ object typesWiaAriaFocusContainerMod {
       __obj.asInstanceOf[FocusContainerProps]
     }
     
-    extension [Self <: FocusContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusContainerProps] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: ElementType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

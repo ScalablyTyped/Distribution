@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[AcceptTokens]
     }
     
-    extension [Self <: AcceptTokens](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AcceptTokens] (val x: Self) extends AnyVal {
       
       inline def setAcceptTokens(value: js.Array[Type]): Self = StObject.set(x, "acceptTokens", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

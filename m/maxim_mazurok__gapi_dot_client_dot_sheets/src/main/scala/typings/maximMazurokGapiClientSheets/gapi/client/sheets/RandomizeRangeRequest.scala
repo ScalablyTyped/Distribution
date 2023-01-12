@@ -16,7 +16,8 @@ object RandomizeRangeRequest {
     __obj.asInstanceOf[RandomizeRangeRequest]
   }
   
-  extension [Self <: RandomizeRangeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RandomizeRangeRequest] (val x: Self) extends AnyVal {
     
     inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

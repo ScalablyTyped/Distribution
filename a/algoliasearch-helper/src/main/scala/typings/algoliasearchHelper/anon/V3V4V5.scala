@@ -33,7 +33,8 @@ object V3V4V5 {
     __obj.asInstanceOf[V3V4V5]
   }
   
-  extension [Self <: V3V4V5](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: V3V4V5] (val x: Self) extends AnyVal {
     
     inline def setV3(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlgoliaSearch.QueryParameters */ Any

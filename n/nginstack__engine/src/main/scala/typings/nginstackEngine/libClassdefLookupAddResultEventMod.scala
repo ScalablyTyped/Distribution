@@ -53,7 +53,8 @@ object libClassdefLookupAddResultEventMod {
       __obj.asInstanceOf[LookupAddResultEvent]
     }
     
-    extension [Self <: LookupAddResultEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LookupAddResultEvent] (val x: Self) extends AnyVal {
       
       inline def setClassKey(value: Double): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2InfoTypeSummary {
     __obj.asInstanceOf[GooglePrivacyDlpV2InfoTypeSummary]
   }
   
-  extension [Self <: GooglePrivacyDlpV2InfoTypeSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2InfoTypeSummary] (val x: Self) extends AnyVal {
     
     inline def setEstimatedPrevalence(value: Double): Self = StObject.set(x, "estimatedPrevalence", value.asInstanceOf[js.Any])
     

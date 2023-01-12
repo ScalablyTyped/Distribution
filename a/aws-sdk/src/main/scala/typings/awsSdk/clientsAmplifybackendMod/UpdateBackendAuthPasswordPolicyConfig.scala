@@ -23,7 +23,8 @@ object UpdateBackendAuthPasswordPolicyConfig {
     __obj.asInstanceOf[UpdateBackendAuthPasswordPolicyConfig]
   }
   
-  extension [Self <: UpdateBackendAuthPasswordPolicyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBackendAuthPasswordPolicyConfig] (val x: Self) extends AnyVal {
     
     inline def setAdditionalConstraints(value: ListOfAdditionalConstraintsElement): Self = StObject.set(x, "AdditionalConstraints", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ScaleBarViewModelProperties {
     __obj.asInstanceOf[ScaleBarViewModelProperties]
   }
   
-  extension [Self <: ScaleBarViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleBarViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

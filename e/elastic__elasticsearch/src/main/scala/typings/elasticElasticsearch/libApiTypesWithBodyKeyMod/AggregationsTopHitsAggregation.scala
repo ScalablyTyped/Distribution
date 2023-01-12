@@ -40,7 +40,8 @@ object AggregationsTopHitsAggregation {
     __obj.asInstanceOf[AggregationsTopHitsAggregation]
   }
   
-  extension [Self <: AggregationsTopHitsAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsTopHitsAggregation] (val x: Self) extends AnyVal {
     
     inline def setDocvalue_fields(value: Fields): Self = StObject.set(x, "docvalue_fields", value.asInstanceOf[js.Any])
     

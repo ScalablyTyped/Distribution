@@ -75,7 +75,8 @@ object PartialOmitAppConfigisNat {
     __obj.asInstanceOf[PartialOmitAppConfigisNat]
   }
   
-  extension [Self <: PartialOmitAppConfigisNat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOmitAppConfigisNat] (val x: Self) extends AnyVal {
     
     inline def setCompilerOptions(value: RuntimeCompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
     

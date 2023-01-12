@@ -29,7 +29,8 @@ object TSModelVisitor {
     __obj.asInstanceOf[TSModelVisitor]
   }
   
-  extension [Self <: TSModelVisitor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSModelVisitor] (val x: Self) extends AnyVal {
     
     inline def setBetweenElements(value: () => Unit): Self = StObject.set(x, "betweenElements", js.Any.fromFunction0(value))
     

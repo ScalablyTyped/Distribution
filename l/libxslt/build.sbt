@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "libxslt"
-version := "0.9-dt-20211202Z-e9047d"
+version := "0.9-dt-20211202Z-f2f265"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "libxmljs" % "0.18-dt-20220824Z-153907",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-def929",
-  "org.scalablytyped" %%% "std" % "4.9-5f989f")
+  "org.scalablytyped" %%% "libxmljs" % "0.18-dt-20220824Z-74ab4d",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
+  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

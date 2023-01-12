@@ -19,7 +19,8 @@ object InstallPluginInstallFunction {
     __obj.asInstanceOf[InstallPluginInstallFunction]
   }
   
-  extension [Self <: InstallPluginInstallFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstallPluginInstallFunction] (val x: Self) extends AnyVal {
     
     inline def setInstall(value: PluginInstallFunction): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
   }

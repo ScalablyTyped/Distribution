@@ -26,7 +26,8 @@ object ControllerInfo {
     __obj.asInstanceOf[ControllerInfo]
   }
   
-  extension [Self <: ControllerInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControllerInfo] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

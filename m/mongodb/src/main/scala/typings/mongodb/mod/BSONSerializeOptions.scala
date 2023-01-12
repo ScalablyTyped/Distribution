@@ -38,7 +38,8 @@ object BSONSerializeOptions {
     __obj.asInstanceOf[BSONSerializeOptions]
   }
   
-  extension [Self <: BSONSerializeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BSONSerializeOptions] (val x: Self) extends AnyVal {
     
     inline def setBsonRegExp(value: Boolean): Self = StObject.set(x, "bsonRegExp", value.asInstanceOf[js.Any])
     

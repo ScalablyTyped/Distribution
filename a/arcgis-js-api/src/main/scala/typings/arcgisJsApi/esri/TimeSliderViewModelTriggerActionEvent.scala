@@ -15,7 +15,8 @@ object TimeSliderViewModelTriggerActionEvent {
     __obj.asInstanceOf[TimeSliderViewModelTriggerActionEvent]
   }
   
-  extension [Self <: TimeSliderViewModelTriggerActionEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeSliderViewModelTriggerActionEvent] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }

@@ -42,7 +42,8 @@ object GetMergeCommitInput {
     __obj.asInstanceOf[GetMergeCommitInput]
   }
   
-  extension [Self <: GetMergeCommitInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMergeCommitInput] (val x: Self) extends AnyVal {
     
     inline def setConflictDetailLevel(value: ConflictDetailLevelTypeEnum): Self = StObject.set(x, "conflictDetailLevel", value.asInstanceOf[js.Any])
     

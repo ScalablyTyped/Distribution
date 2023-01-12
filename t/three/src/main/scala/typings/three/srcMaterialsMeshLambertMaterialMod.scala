@@ -232,7 +232,8 @@ object srcMaterialsMeshLambertMaterialMod {
       __obj.asInstanceOf[MeshLambertMaterialParameters]
     }
     
-    extension [Self <: MeshLambertMaterialParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeshLambertMaterialParameters] (val x: Self) extends AnyVal {
       
       inline def setAlphaMap(value: Texture): Self = StObject.set(x, "alphaMap", value.asInstanceOf[js.Any])
       

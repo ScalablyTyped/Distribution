@@ -45,7 +45,8 @@ object CoreTransformationContext {
     __obj.asInstanceOf[CoreTransformationContext]
   }
   
-  extension [Self <: CoreTransformationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreTransformationContext] (val x: Self) extends AnyVal {
     
     inline def setEndLexicalEnvironment(value: () => js.UndefOr[js.Array[Statement]]): Self = StObject.set(x, "endLexicalEnvironment", js.Any.fromFunction0(value))
     

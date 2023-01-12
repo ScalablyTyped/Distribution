@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[Alias]
     }
     
-    extension [Self <: Alias](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alias] (val x: Self) extends AnyVal {
       
       inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
@@ -238,7 +239,8 @@ object mod {
       __obj.asInstanceOf[CurrencyInfo]
     }
     
-    extension [Self <: CurrencyInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrencyInfo] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -265,7 +267,8 @@ object mod {
       __obj.asInstanceOf[KeyType]
     }
     
-    extension [Self <: KeyType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyType] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -291,7 +294,8 @@ object mod {
       __obj.asInstanceOf[NumberingSystem]
     }
     
-    extension [Self <: NumberingSystem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberingSystem] (val x: Self) extends AnyVal {
       
       inline def setDigits(value: js.Array[String]): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
       
@@ -338,7 +342,8 @@ object mod {
       __obj.asInstanceOf[WeekData]
     }
     
-    extension [Self <: WeekData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WeekData] (val x: Self) extends AnyVal {
       
       inline def setFirstDay(value: js.Array[Any]): Self = StObject.set(x, "firstDay", value.asInstanceOf[js.Any])
       
@@ -377,7 +382,8 @@ object mod {
       __obj.asInstanceOf[WindowsZone]
     }
     
-    extension [Self <: WindowsZone](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowsZone] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

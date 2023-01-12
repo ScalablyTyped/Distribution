@@ -439,7 +439,8 @@ object sapUiBaseDataTypeMod {
       __obj.asInstanceOf[DataType]
     }
     
-    extension [Self <: DataType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataType] (val x: Self) extends AnyVal {
       
       inline def setGetBaseType(value: () => js.UndefOr[DataType]): Self = StObject.set(x, "getBaseType", js.Any.fromFunction0(value))
       

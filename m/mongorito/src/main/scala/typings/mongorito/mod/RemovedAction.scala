@@ -19,7 +19,8 @@ object RemovedAction {
     __obj.asInstanceOf[RemovedAction]
   }
   
-  extension [Self <: RemovedAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemovedAction] (val x: Self) extends AnyVal {
     
     inline def setType(value: REMOVED): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

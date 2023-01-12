@@ -19,7 +19,8 @@ object WatcherStatsRequest {
     __obj.asInstanceOf[WatcherStatsRequest]
   }
   
-  extension [Self <: WatcherStatsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherStatsRequest] (val x: Self) extends AnyVal {
     
     inline def setEmit_stacktraces(value: Boolean): Self = StObject.set(x, "emit_stacktraces", value.asInstanceOf[js.Any])
     

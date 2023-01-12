@@ -16,7 +16,8 @@ object TabWindowInfo {
     __obj.asInstanceOf[TabWindowInfo]
   }
   
-  extension [Self <: TabWindowInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabWindowInfo] (val x: Self) extends AnyVal {
     
     inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
   }

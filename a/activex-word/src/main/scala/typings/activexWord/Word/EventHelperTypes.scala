@@ -85,7 +85,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[ApplicationEPostageInsertExParameter]
     }
     
-    extension [Self <: ApplicationEPostageInsertExParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplicationEPostageInsertExParameter] (val x: Self) extends AnyVal {
       
       inline def setBstrPaperFeed(value: String): Self = StObject.set(x, "bstrPaperFeed", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[ApplicationInvokeParameter]
     }
     
-    extension [Self <: ApplicationInvokeParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplicationInvokeParameter] (val x: Self) extends AnyVal {
       
       inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       

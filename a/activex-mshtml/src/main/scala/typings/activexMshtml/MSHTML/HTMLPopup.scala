@@ -34,7 +34,8 @@ object HTMLPopup {
     __obj.asInstanceOf[HTMLPopup]
   }
   
-  extension [Self <: HTMLPopup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLPopup] (val x: Self) extends AnyVal {
     
     inline def setConstructor(value: Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     

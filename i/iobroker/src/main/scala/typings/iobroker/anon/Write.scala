@@ -22,7 +22,8 @@ object Write {
     __obj.asInstanceOf[Write]
   }
   
-  extension [Self <: Write](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Write] (val x: Self) extends AnyVal {
     
     inline def setId(value: String | Read): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

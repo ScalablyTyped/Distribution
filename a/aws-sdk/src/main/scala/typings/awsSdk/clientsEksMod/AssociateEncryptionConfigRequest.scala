@@ -28,7 +28,8 @@ object AssociateEncryptionConfigRequest {
     __obj.asInstanceOf[AssociateEncryptionConfigRequest]
   }
   
-  extension [Self <: AssociateEncryptionConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateEncryptionConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: String): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     

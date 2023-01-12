@@ -22,7 +22,8 @@ object LinkedKeyNode {
     __obj.asInstanceOf[LinkedKeyNode]
   }
   
-  extension [Self <: LinkedKeyNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkedKeyNode] (val x: Self) extends AnyVal {
     
     inline def setType(value: `7`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

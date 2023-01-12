@@ -48,7 +48,8 @@ object SnowflakeConnectorProfileProperties {
     __obj.asInstanceOf[SnowflakeConnectorProfileProperties]
   }
   
-  extension [Self <: SnowflakeConnectorProfileProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnowflakeConnectorProfileProperties] (val x: Self) extends AnyVal {
     
     inline def setAccountName(value: AccountName): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     

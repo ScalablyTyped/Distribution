@@ -17,7 +17,8 @@ object SavingsTradeUserKYCStartDocumentImage {
     __obj.asInstanceOf[SavingsTradeUserKYCStartDocumentImage]
   }
   
-  extension [Self <: SavingsTradeUserKYCStartDocumentImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsTradeUserKYCStartDocumentImage] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

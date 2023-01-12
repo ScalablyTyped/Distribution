@@ -23,7 +23,8 @@ object TypeofAppearance {
     __obj.asInstanceOf[TypeofAppearance]
   }
   
-  extension [Self <: TypeofAppearance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofAppearance] (val x: Self) extends AnyVal {
     
     inline def setAddChangeListener(value: AppearanceListener => NativeEventSubscription): Self = StObject.set(x, "addChangeListener", js.Any.fromFunction1(value))
     

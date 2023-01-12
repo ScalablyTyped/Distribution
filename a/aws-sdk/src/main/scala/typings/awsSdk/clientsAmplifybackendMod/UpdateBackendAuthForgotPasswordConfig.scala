@@ -28,7 +28,8 @@ object UpdateBackendAuthForgotPasswordConfig {
     __obj.asInstanceOf[UpdateBackendAuthForgotPasswordConfig]
   }
   
-  extension [Self <: UpdateBackendAuthForgotPasswordConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBackendAuthForgotPasswordConfig] (val x: Self) extends AnyVal {
     
     inline def setDeliveryMethod(value: DeliveryMethod): Self = StObject.set(x, "DeliveryMethod", value.asInstanceOf[js.Any])
     

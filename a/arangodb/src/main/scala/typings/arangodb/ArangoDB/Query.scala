@@ -20,7 +20,8 @@ object Query {
     __obj.asInstanceOf[Query]
   }
   
-  extension [Self <: Query](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
     
     inline def setBindVars(value: js.Object): Self = StObject.set(x, "bindVars", value.asInstanceOf[js.Any])
     

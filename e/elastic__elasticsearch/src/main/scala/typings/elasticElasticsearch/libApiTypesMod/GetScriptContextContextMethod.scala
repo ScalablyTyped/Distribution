@@ -19,7 +19,8 @@ object GetScriptContextContextMethod {
     __obj.asInstanceOf[GetScriptContextContextMethod]
   }
   
-  extension [Self <: GetScriptContextContextMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetScriptContextContextMethod] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

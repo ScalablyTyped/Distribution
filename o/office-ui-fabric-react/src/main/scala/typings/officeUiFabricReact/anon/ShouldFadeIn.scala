@@ -15,7 +15,8 @@ object ShouldFadeIn {
     __obj.asInstanceOf[ShouldFadeIn]
   }
   
-  extension [Self <: ShouldFadeIn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShouldFadeIn] (val x: Self) extends AnyVal {
     
     inline def setShouldFadeIn(value: Boolean): Self = StObject.set(x, "shouldFadeIn", value.asInstanceOf[js.Any])
   }

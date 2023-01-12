@@ -25,7 +25,8 @@ object UpdateFileCacheRequest {
     __obj.asInstanceOf[UpdateFileCacheRequest]
   }
   
-  extension [Self <: UpdateFileCacheRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFileCacheRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

@@ -109,7 +109,8 @@ object mod {
       __obj.asInstanceOf[RingBuffer[T]]
     }
     
-    extension [Self <: RingBuffer[?], T](x: Self & RingBuffer[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RingBuffer[?], T] (val x: Self & RingBuffer[T]) extends AnyVal {
       
       inline def setCapacity(value: () => Double): Self = StObject.set(x, "capacity", js.Any.fromFunction0(value))
       

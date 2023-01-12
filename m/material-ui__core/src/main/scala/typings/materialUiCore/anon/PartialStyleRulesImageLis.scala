@@ -33,7 +33,8 @@ object PartialStyleRulesImageLis {
     __obj.asInstanceOf[PartialStyleRulesImageLis]
   }
   
-  extension [Self <: PartialStyleRulesImageLis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesImageLis] (val x: Self) extends AnyVal {
     
     inline def setImgFullHeight(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

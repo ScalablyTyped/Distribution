@@ -30,7 +30,8 @@ object mod {
         __obj.asInstanceOf[BaseContext]
       }
       
-      extension [Self <: BaseContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BaseContext] (val x: Self) extends AnyVal {
         
         inline def setCookie(value: Record[String, Any]): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       }

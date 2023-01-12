@@ -29,7 +29,8 @@ object RefreshToken {
     __obj.asInstanceOf[RefreshToken]
   }
   
-  extension [Self <: RefreshToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshToken] (val x: Self) extends AnyVal {
     
     inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

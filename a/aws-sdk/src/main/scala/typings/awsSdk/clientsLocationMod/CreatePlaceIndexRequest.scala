@@ -43,7 +43,8 @@ object CreatePlaceIndexRequest {
     __obj.asInstanceOf[CreatePlaceIndexRequest]
   }
   
-  extension [Self <: CreatePlaceIndexRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePlaceIndexRequest] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: String): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
     

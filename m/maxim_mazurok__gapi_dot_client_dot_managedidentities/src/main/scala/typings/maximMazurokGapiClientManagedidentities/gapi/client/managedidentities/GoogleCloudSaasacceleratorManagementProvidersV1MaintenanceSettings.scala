@@ -31,7 +31,8 @@ object GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings {
     __obj.asInstanceOf[GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings]
   }
   
-  extension [Self <: GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: Boolean): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     

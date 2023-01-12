@@ -34,7 +34,8 @@ object Pageurl {
     __obj.asInstanceOf[Pageurl]
   }
   
-  extension [Self <: Pageurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pageurl] (val x: Self) extends AnyVal {
     
     inline def setPage_url(value: String): Self = StObject.set(x, "page_url", value.asInstanceOf[js.Any])
     

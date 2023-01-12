@@ -39,7 +39,8 @@ object distCommandsAlterMod {
       __obj.asInstanceOf[AlterOptions]
     }
     
-    extension [Self <: AlterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlterOptions] (val x: Self) extends AnyVal {
       
       inline def setCHUNK_SIZE(value: Double): Self = StObject.set(x, "CHUNK_SIZE", value.asInstanceOf[js.Any])
       

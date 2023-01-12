@@ -26,7 +26,8 @@ object ITunesConnectAnalytics {
     __obj.asInstanceOf[ITunesConnectAnalytics]
   }
   
-  extension [Self <: ITunesConnectAnalytics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITunesConnectAnalytics] (val x: Self) extends AnyVal {
     
     inline def setAt(value: String): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     

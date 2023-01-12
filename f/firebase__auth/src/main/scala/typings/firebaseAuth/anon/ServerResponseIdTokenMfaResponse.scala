@@ -16,7 +16,8 @@ object ServerResponseIdTokenMfaResponse {
     __obj.asInstanceOf[ServerResponseIdTokenMfaResponse]
   }
   
-  extension [Self <: ServerResponseIdTokenMfaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerResponseIdTokenMfaResponse] (val x: Self) extends AnyVal {
     
     inline def set_serverResponse(value: IdTokenMfaResponse): Self = StObject.set(x, "_serverResponse", value.asInstanceOf[js.Any])
   }

@@ -53,7 +53,8 @@ object FlashPresetPanel {
     __obj.asInstanceOf[FlashPresetPanel]
   }
   
-  extension [Self <: FlashPresetPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashPresetPanel] (val x: Self) extends AnyVal {
     
     inline def setAddNewItem(value: () => Any): Self = StObject.set(x, "addNewItem", js.Any.fromFunction0(value))
     

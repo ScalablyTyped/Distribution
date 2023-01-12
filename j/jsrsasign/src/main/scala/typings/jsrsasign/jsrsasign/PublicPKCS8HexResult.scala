@@ -23,7 +23,8 @@ object PublicPKCS8HexResult {
     __obj.asInstanceOf[PublicPKCS8HexResult]
   }
   
-  extension [Self <: PublicPKCS8HexResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicPKCS8HexResult] (val x: Self) extends AnyVal {
     
     inline def setAlgoid(value: String): Self = StObject.set(x, "algoid", value.asInstanceOf[js.Any])
     

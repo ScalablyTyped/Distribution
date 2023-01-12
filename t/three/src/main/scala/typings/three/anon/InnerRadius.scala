@@ -32,7 +32,8 @@ object InnerRadius {
     __obj.asInstanceOf[InnerRadius]
   }
   
-  extension [Self <: InnerRadius](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InnerRadius] (val x: Self) extends AnyVal {
     
     inline def setInnerRadius(value: Double): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
     

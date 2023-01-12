@@ -23,7 +23,8 @@ object CreateVolumePermission {
     __obj.asInstanceOf[CreateVolumePermission]
   }
   
-  extension [Self <: CreateVolumePermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVolumePermission] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: PermissionGroup): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     

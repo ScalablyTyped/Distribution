@@ -124,7 +124,8 @@ object Comment {
     __obj.asInstanceOf[Comment]
   }
   
-  extension [Self <: Comment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
     
     inline def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object FrontmatterContentMap {
     __obj.asInstanceOf[FrontmatterContentMap]
   }
   
-  extension [Self <: FrontmatterContentMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrontmatterContentMap] (val x: Self) extends AnyVal {
     
     inline def setYaml(value: YAML): Self = StObject.set(x, "yaml", value.asInstanceOf[js.Any])
   }

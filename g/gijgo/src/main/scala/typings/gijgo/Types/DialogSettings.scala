@@ -69,7 +69,8 @@ object DialogSettings {
     __obj.asInstanceOf[DialogSettings]
   }
   
-  extension [Self <: DialogSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogSettings] (val x: Self) extends AnyVal {
     
     inline def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
     

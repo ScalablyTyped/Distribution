@@ -33,7 +33,8 @@ object WorkflowExecutionSignaledEventAttributes {
     __obj.asInstanceOf[WorkflowExecutionSignaledEventAttributes]
   }
   
-  extension [Self <: WorkflowExecutionSignaledEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowExecutionSignaledEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setExternalInitiatedEventId(value: EventId): Self = StObject.set(x, "externalInitiatedEventId", value.asInstanceOf[js.Any])
     

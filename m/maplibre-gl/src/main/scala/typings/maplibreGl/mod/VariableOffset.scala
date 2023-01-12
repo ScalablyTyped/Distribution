@@ -31,7 +31,8 @@ object VariableOffset {
     __obj.asInstanceOf[VariableOffset]
   }
   
-  extension [Self <: VariableOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariableOffset] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: TextAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

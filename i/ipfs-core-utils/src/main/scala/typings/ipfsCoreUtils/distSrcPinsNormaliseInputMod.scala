@@ -31,7 +31,8 @@ object distSrcPinsNormaliseInputMod {
       __obj.asInstanceOf[Pin]
     }
     
-    extension [Self <: Pin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pin] (val x: Self) extends AnyVal {
       
       inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object distSrcPinsNormaliseInputMod {
       __obj.asInstanceOf[Pinnable]
     }
     
-    extension [Self <: Pinnable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pinnable] (val x: Self) extends AnyVal {
       
       inline def setCid(value: CID[Any, Double, Double, Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       

@@ -488,7 +488,8 @@ object PartialMobileStepperProps {
     __obj.asInstanceOf[PartialMobileStepperProps]
   }
   
-  extension [Self <: PartialMobileStepperProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMobileStepperProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

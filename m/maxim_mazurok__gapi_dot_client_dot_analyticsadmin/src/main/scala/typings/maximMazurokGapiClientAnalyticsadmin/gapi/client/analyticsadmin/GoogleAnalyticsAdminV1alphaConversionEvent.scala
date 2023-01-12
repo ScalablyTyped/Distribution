@@ -32,7 +32,8 @@ object GoogleAnalyticsAdminV1alphaConversionEvent {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaConversionEvent]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaConversionEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaConversionEvent] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

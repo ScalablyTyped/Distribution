@@ -31,7 +31,8 @@ object ContaineranalysisGoogleDevtoolsCloudbuildV1SourceProvenance {
     __obj.asInstanceOf[ContaineranalysisGoogleDevtoolsCloudbuildV1SourceProvenance]
   }
   
-  extension [Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1SourceProvenance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1SourceProvenance] (val x: Self) extends AnyVal {
     
     inline def setFileHashes(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.containeranalysis.gapi.client.containeranalysis.ContaineranalysisGoogleDevtoolsCloudbuildV1FileHashes} */ js.Any

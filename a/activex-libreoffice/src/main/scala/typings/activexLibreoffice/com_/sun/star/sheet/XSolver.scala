@@ -52,7 +52,8 @@ object XSolver {
     __obj.asInstanceOf[XSolver]
   }
   
-  extension [Self <: XSolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSolver] (val x: Self) extends AnyVal {
     
     inline def setConstraints(value: SafeArray[SolverConstraint]): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
     

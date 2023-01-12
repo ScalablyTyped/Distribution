@@ -20,7 +20,8 @@ object FederatedSignonCertsResponse {
     __obj.asInstanceOf[FederatedSignonCertsResponse]
   }
   
-  extension [Self <: FederatedSignonCertsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FederatedSignonCertsResponse] (val x: Self) extends AnyVal {
     
     inline def setCerts(value: Certificates): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
     

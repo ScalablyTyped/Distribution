@@ -469,7 +469,8 @@ object libComponentsSelectItemGroupSelectItemGroupMod extends Shortcut {
       __obj.asInstanceOf[SelectItemGroupProps]
     }
     
-    extension [Self <: SelectItemGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectItemGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

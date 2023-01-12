@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -263,7 +265,8 @@ object anon {
       __obj.asInstanceOf[TypeofRedis]
     }
     
-    extension [Self <: TypeofRedis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofRedis] (val x: Self) extends AnyVal {
       
       inline def setCluster(
         value: Instantiable2[
@@ -334,7 +337,8 @@ object anon {
       __obj.asInstanceOf[Typeofdefault]
     }
     
-    extension [Self <: Typeofdefault](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofdefault] (val x: Self) extends AnyVal {
       
       inline def setCluster(
         value: Instantiable2[

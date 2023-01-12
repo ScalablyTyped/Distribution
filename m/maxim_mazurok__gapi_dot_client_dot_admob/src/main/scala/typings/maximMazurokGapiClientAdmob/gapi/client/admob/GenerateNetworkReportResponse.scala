@@ -22,7 +22,8 @@ object GenerateNetworkReportResponse {
     __obj.asInstanceOf[GenerateNetworkReportResponse]
   }
   
-  extension [Self <: GenerateNetworkReportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateNetworkReportResponse] (val x: Self) extends AnyVal {
     
     inline def setFooter(value: ReportFooter): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     

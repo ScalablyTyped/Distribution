@@ -79,7 +79,8 @@ object distOperationsRolesTypesMod {
       __obj.asInstanceOf[RoleOptions]
     }
     
-    extension [Self <: RoleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoleOptions] (val x: Self) extends AnyVal {
       
       inline def setAdmin(value: String | js.Array[String]): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
       

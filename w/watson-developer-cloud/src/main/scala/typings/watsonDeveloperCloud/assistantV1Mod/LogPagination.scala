@@ -23,7 +23,8 @@ object LogPagination {
     __obj.asInstanceOf[LogPagination]
   }
   
-  extension [Self <: LogPagination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogPagination] (val x: Self) extends AnyVal {
     
     inline def setMatched(value: Double): Self = StObject.set(x, "matched", value.asInstanceOf[js.Any])
     

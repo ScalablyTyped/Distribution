@@ -19,7 +19,8 @@ object Armoredpublickey {
     __obj.asInstanceOf[Armoredpublickey]
   }
   
-  extension [Self <: Armoredpublickey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Armoredpublickey] (val x: Self) extends AnyVal {
     
     inline def setArmored_public_key(value: String): Self = StObject.set(x, "armored_public_key", value.asInstanceOf[js.Any])
     

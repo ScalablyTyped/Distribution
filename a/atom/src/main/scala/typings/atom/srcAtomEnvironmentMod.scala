@@ -342,7 +342,8 @@ object srcAtomEnvironmentMod {
       __obj.asInstanceOf[ConfirmationOptions]
     }
     
-    extension [Self <: ConfirmationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmationOptions] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: js.Array[String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
@@ -415,7 +416,8 @@ object srcAtomEnvironmentMod {
       __obj.asInstanceOf[ExceptionThrownEvent]
     }
     
-    extension [Self <: ExceptionThrownEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionThrownEvent] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -449,7 +451,8 @@ object srcAtomEnvironmentMod {
       __obj.asInstanceOf[PreventableExceptionThrownEvent]
     }
     
-    extension [Self <: PreventableExceptionThrownEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreventableExceptionThrownEvent] (val x: Self) extends AnyVal {
       
       inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     }
@@ -468,7 +471,8 @@ object srcAtomEnvironmentMod {
       __obj.asInstanceOf[TimingMarker]
     }
     
-    extension [Self <: TimingMarker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimingMarker] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

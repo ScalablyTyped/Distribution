@@ -194,7 +194,8 @@ object BsOption {
     __obj.asInstanceOf[BsOption]
   }
   
-  extension [Self <: BsOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BsOption] (val x: Self) extends AnyVal {
     
     inline def setAutoBlur(value: Boolean): Self = StObject.set(x, "autoBlur", value.asInstanceOf[js.Any])
     

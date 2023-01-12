@@ -33,7 +33,8 @@ object IndentationRule {
     __obj.asInstanceOf[IndentationRule]
   }
   
-  extension [Self <: IndentationRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndentationRule] (val x: Self) extends AnyVal {
     
     inline def setDecreaseIndentPattern(value: js.RegExp): Self = StObject.set(x, "decreaseIndentPattern", value.asInstanceOf[js.Any])
     

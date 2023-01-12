@@ -28,7 +28,8 @@ object MaintenanceWindowLambdaParameters {
     __obj.asInstanceOf[MaintenanceWindowLambdaParameters]
   }
   
-  extension [Self <: MaintenanceWindowLambdaParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaintenanceWindowLambdaParameters] (val x: Self) extends AnyVal {
     
     inline def setClientContext(value: MaintenanceWindowLambdaClientContext): Self = StObject.set(x, "ClientContext", value.asInstanceOf[js.Any])
     

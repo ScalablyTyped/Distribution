@@ -28,7 +28,8 @@ object dxButton {
       __obj.asInstanceOf[ClickEvent]
     }
     
-    extension [Self <: ClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEvent] (val x: Self) extends AnyVal {
       
       inline def setValidationGroup(value: Any): Self = StObject.set(x, "validationGroup", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object dxButton {
       __obj.asInstanceOf[TemplateData]
     }
     
-    extension [Self <: TemplateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateData] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       

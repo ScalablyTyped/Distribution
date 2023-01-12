@@ -26,7 +26,8 @@ object ICodeEditorViewState {
     __obj.asInstanceOf[ICodeEditorViewState]
   }
   
-  extension [Self <: ICodeEditorViewState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICodeEditorViewState] (val x: Self) extends AnyVal {
     
     inline def setContributionsState(value: StringDictionary[Any]): Self = StObject.set(x, "contributionsState", value.asInstanceOf[js.Any])
     

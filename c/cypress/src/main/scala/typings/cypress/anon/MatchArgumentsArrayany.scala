@@ -228,7 +228,8 @@ object MatchArgumentsArrayany {
     __obj.asInstanceOf[MatchArgumentsArrayany]
   }
   
-  extension [Self <: MatchArgumentsArrayany](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchArgumentsArrayany] (val x: Self) extends AnyVal {
     
     inline def setAt(
       value: SinonMatcher | (/* import warning: importer.ImportType#apply Failed type conversion: (index : number): any | undefined extends object ? cypress.cypress/types/sinon.MatchArguments<(index : number): any | undefined> : never */ js.Any) | (js.Function1[/* index */ Double, js.UndefOr[Any]])

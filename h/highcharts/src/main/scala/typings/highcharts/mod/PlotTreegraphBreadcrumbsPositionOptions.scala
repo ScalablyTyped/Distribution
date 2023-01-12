@@ -35,7 +35,8 @@ object PlotTreegraphBreadcrumbsPositionOptions {
     __obj.asInstanceOf[PlotTreegraphBreadcrumbsPositionOptions]
   }
   
-  extension [Self <: PlotTreegraphBreadcrumbsPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTreegraphBreadcrumbsPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

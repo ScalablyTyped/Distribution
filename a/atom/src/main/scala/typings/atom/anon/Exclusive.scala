@@ -27,7 +27,8 @@ object Exclusive {
     __obj.asInstanceOf[Exclusive]
   }
   
-  extension [Self <: Exclusive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Exclusive] (val x: Self) extends AnyVal {
     
     inline def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
     

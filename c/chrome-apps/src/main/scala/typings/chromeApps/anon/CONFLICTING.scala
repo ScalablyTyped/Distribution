@@ -22,7 +22,8 @@ object CONFLICTING {
     __obj.asInstanceOf[CONFLICTING]
   }
   
-  extension [Self <: CONFLICTING](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CONFLICTING] (val x: Self) extends AnyVal {
     
     inline def setCONFLICTING(value: conflicting_): Self = StObject.set(x, "CONFLICTING", value.asInstanceOf[js.Any])
     

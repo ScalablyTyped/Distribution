@@ -17,7 +17,8 @@ object UIkitSvgOptions {
     __obj.asInstanceOf[UIkitSvgOptions]
   }
   
-  extension [Self <: UIkitSvgOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitSvgOptions] (val x: Self) extends AnyVal {
     
     inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     

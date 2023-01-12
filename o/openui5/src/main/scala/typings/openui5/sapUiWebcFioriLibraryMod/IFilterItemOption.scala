@@ -15,7 +15,8 @@ object IFilterItemOption {
     __obj.asInstanceOf[IFilterItemOption]
   }
   
-  extension [Self <: IFilterItemOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFilterItemOption] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_webc_fiori_IFilterItemOption(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_webc_fiori_IFilterItemOption", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object Closest {
     __obj.asInstanceOf[Closest]
   }
   
-  extension [Self <: Closest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Closest] (val x: Self) extends AnyVal {
     
     inline def setMdist(value: Double): Self = StObject.set(x, "mdist", value.asInstanceOf[js.Any])
     

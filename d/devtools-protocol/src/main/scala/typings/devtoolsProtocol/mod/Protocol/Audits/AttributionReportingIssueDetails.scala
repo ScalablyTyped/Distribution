@@ -22,7 +22,8 @@ object AttributionReportingIssueDetails {
     __obj.asInstanceOf[AttributionReportingIssueDetails]
   }
   
-  extension [Self <: AttributionReportingIssueDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributionReportingIssueDetails] (val x: Self) extends AnyVal {
     
     inline def setInvalidParameter(value: String): Self = StObject.set(x, "invalidParameter", value.asInstanceOf[js.Any])
     

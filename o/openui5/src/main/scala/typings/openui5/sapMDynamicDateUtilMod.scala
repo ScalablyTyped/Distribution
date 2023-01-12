@@ -106,7 +106,8 @@ object sapMDynamicDateUtilMod extends Shortcut {
       __obj.asInstanceOf[DynamicDateUtil]
     }
     
-    extension [Self <: DynamicDateUtil](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicDateUtil] (val x: Self) extends AnyVal {
       
       inline def setAddOption(value: typings.openui5.sapMDynamicDateOptionMod.default => Unit): Self = StObject.set(x, "addOption", js.Any.fromFunction1(value))
       

@@ -19,7 +19,8 @@ object SliderTrackClickEvent {
     __obj.asInstanceOf[SliderTrackClickEvent]
   }
   
-  extension [Self <: SliderTrackClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderTrackClickEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: `track-click`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

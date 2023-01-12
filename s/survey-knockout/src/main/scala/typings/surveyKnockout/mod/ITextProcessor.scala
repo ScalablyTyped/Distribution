@@ -17,7 +17,8 @@ object ITextProcessor {
     __obj.asInstanceOf[ITextProcessor]
   }
   
-  extension [Self <: ITextProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextProcessor] (val x: Self) extends AnyVal {
     
     inline def setProcessText(value: (String, Boolean) => String): Self = StObject.set(x, "processText", js.Any.fromFunction2(value))
     

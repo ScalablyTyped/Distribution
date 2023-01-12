@@ -25,7 +25,8 @@ object CrossAxis {
     __obj.asInstanceOf[CrossAxis]
   }
   
-  extension [Self <: CrossAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrossAxis] (val x: Self) extends AnyVal {
     
     inline def setCrossAxis(value: Double): Self = StObject.set(x, "crossAxis", value.asInstanceOf[js.Any])
     

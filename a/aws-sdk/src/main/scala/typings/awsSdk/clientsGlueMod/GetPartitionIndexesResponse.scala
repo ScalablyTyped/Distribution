@@ -23,7 +23,8 @@ object GetPartitionIndexesResponse {
     __obj.asInstanceOf[GetPartitionIndexesResponse]
   }
   
-  extension [Self <: GetPartitionIndexesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPartitionIndexesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

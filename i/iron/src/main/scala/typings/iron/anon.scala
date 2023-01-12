@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[IvBits]
     }
     
-    extension [Self <: IvBits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IvBits] (val x: Self) extends AnyVal {
       
       inline def setIvBits(value: Double): Self = StObject.set(x, "ivBits", value.asInstanceOf[js.Any])
       
@@ -61,7 +63,8 @@ object anon {
       __obj.asInstanceOf[KeyBits]
     }
     
-    extension [Self <: KeyBits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyBits] (val x: Self) extends AnyVal {
       
       inline def setKeyBits(value: Double): Self = StObject.set(x, "keyBits", value.asInstanceOf[js.Any])
     }

@@ -53,7 +53,8 @@ object ConfigurationRecorderStatus {
     __obj.asInstanceOf[ConfigurationRecorderStatus]
   }
   
-  extension [Self <: ConfigurationRecorderStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationRecorderStatus] (val x: Self) extends AnyVal {
     
     inline def setLastErrorCode(value: String): Self = StObject.set(x, "lastErrorCode", value.asInstanceOf[js.Any])
     

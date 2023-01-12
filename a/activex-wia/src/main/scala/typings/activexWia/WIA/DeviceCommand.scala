@@ -27,7 +27,8 @@ object DeviceCommand {
     __obj.asInstanceOf[DeviceCommand]
   }
   
-  extension [Self <: DeviceCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceCommand] (val x: Self) extends AnyVal {
     
     inline def setCommandID(value: String): Self = StObject.set(x, "CommandID", value.asInstanceOf[js.Any])
     

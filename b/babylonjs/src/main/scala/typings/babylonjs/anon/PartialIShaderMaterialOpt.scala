@@ -40,7 +40,8 @@ object PartialIShaderMaterialOpt {
     __obj.asInstanceOf[PartialIShaderMaterialOpt]
   }
   
-  extension [Self <: PartialIShaderMaterialOpt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIShaderMaterialOpt] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

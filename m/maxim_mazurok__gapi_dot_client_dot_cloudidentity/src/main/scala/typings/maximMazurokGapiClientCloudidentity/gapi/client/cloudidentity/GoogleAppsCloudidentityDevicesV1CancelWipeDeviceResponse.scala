@@ -16,7 +16,8 @@ object GoogleAppsCloudidentityDevicesV1CancelWipeDeviceResponse {
     __obj.asInstanceOf[GoogleAppsCloudidentityDevicesV1CancelWipeDeviceResponse]
   }
   
-  extension [Self <: GoogleAppsCloudidentityDevicesV1CancelWipeDeviceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1CancelWipeDeviceResponse] (val x: Self) extends AnyVal {
     
     inline def setDevice(value: GoogleAppsCloudidentityDevicesV1Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     

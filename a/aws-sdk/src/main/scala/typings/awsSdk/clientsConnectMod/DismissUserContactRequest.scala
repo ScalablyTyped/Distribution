@@ -28,7 +28,8 @@ object DismissUserContactRequest {
     __obj.asInstanceOf[DismissUserContactRequest]
   }
   
-  extension [Self <: DismissUserContactRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DismissUserContactRequest] (val x: Self) extends AnyVal {
     
     inline def setContactId(value: ContactId): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
     

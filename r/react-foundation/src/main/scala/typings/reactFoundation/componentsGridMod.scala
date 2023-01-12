@@ -209,7 +209,8 @@ object componentsGridMod {
       __obj.asInstanceOf[ColumnProps]
     }
     
-    extension [Self <: ColumnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -655,7 +656,8 @@ object componentsGridMod {
       __obj.asInstanceOf[RowProps]
     }
     
-    extension [Self <: RowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -45,7 +45,8 @@ object ParenthesizedArrowFunctionExpression {
     __obj.asInstanceOf[ParenthesizedArrowFunctionExpression]
   }
   
-  extension [Self <: ParenthesizedArrowFunctionExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParenthesizedArrowFunctionExpression] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

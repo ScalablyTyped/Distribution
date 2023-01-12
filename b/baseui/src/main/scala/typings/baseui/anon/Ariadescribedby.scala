@@ -23,7 +23,8 @@ object Ariadescribedby {
     __obj.asInstanceOf[Ariadescribedby]
   }
   
-  extension [Self <: Ariadescribedby](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ariadescribedby] (val x: Self) extends AnyVal {
     
     inline def setAdapter(value: DateIOAdapter[js.Date]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     

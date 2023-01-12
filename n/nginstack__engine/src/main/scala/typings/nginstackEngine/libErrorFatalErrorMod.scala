@@ -33,7 +33,8 @@ object libErrorFatalErrorMod {
       __obj.asInstanceOf[FatalError]
     }
     
-    extension [Self <: FatalError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FatalError] (val x: Self) extends AnyVal {
       
       inline def set_name(value: Any): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     }

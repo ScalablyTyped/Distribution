@@ -581,7 +581,8 @@ object mod {
       __obj.asInstanceOf[AutoLinkOptions]
     }
     
-    extension [Self <: AutoLinkOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoLinkOptions] (val x: Self) extends AnyVal {
       
       inline def setCashtagClass(value: String): Self = StObject.set(x, "cashtagClass", value.asInstanceOf[js.Any])
       
@@ -678,7 +679,8 @@ object mod {
       __obj.asInstanceOf[CashtagWithIndices]
     }
     
-    extension [Self <: CashtagWithIndices](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CashtagWithIndices] (val x: Self) extends AnyVal {
       
       inline def setCashtag(value: String): Self = StObject.set(x, "cashtag", value.asInstanceOf[js.Any])
       
@@ -737,7 +739,8 @@ object mod {
       __obj.asInstanceOf[HashtagWithIndices]
     }
     
-    extension [Self <: HashtagWithIndices](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashtagWithIndices] (val x: Self) extends AnyVal {
       
       inline def setHashtag(value: String): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
       
@@ -758,7 +761,8 @@ object mod {
       __obj.asInstanceOf[Indices]
     }
     
-    extension [Self <: Indices](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Indices] (val x: Self) extends AnyVal {
       
       inline def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     }
@@ -781,7 +785,8 @@ object mod {
       __obj.asInstanceOf[MentionOrListWithIndices]
     }
     
-    extension [Self <: MentionOrListWithIndices](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MentionOrListWithIndices] (val x: Self) extends AnyVal {
       
       inline def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
       
@@ -806,7 +811,8 @@ object mod {
       __obj.asInstanceOf[MentionWithIndices]
     }
     
-    extension [Self <: MentionWithIndices](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MentionWithIndices] (val x: Self) extends AnyVal {
       
       inline def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
       
@@ -837,7 +843,8 @@ object mod {
       __obj.asInstanceOf[ParseTweetOptions]
     }
     
-    extension [Self <: ParseTweetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseTweetOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultWeight(value: Double): Self = StObject.set(x, "defaultWeight", value.asInstanceOf[js.Any])
       
@@ -902,7 +909,8 @@ object mod {
       __obj.asInstanceOf[ParsedTweet]
     }
     
-    extension [Self <: ParsedTweet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedTweet] (val x: Self) extends AnyVal {
       
       inline def setDisplayRangeEnd(value: Double): Self = StObject.set(x, "displayRangeEnd", value.asInstanceOf[js.Any])
       
@@ -933,7 +941,8 @@ object mod {
       __obj.asInstanceOf[TweetLengthOptions]
     }
     
-    extension [Self <: TweetLengthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TweetLengthOptions] (val x: Self) extends AnyVal {
       
       inline def setShort_url_length(value: Double): Self = StObject.set(x, "short_url_length", value.asInstanceOf[js.Any])
       
@@ -958,7 +967,8 @@ object mod {
       __obj.asInstanceOf[UrlEntity]
     }
     
-    extension [Self <: UrlEntity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlEntity] (val x: Self) extends AnyVal {
       
       inline def setDisplay_url(value: String): Self = StObject.set(x, "display_url", value.asInstanceOf[js.Any])
       
@@ -985,7 +995,8 @@ object mod {
       __obj.asInstanceOf[UrlWithIndices]
     }
     
-    extension [Self <: UrlWithIndices](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlWithIndices] (val x: Self) extends AnyVal {
       
       inline def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
       

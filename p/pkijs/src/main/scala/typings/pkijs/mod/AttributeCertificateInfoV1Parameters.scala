@@ -38,7 +38,8 @@ object AttributeCertificateInfoV1Parameters {
     __obj.asInstanceOf[AttributeCertificateInfoV1Parameters]
   }
   
-  extension [Self <: AttributeCertificateInfoV1Parameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeCertificateInfoV1Parameters] (val x: Self) extends AnyVal {
     
     inline def setAttrCertValidityPeriod(value: AttCertValidityPeriod): Self = StObject.set(x, "attrCertValidityPeriod", value.asInstanceOf[js.Any])
     

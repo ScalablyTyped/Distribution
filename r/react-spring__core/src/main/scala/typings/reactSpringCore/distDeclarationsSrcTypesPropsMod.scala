@@ -108,7 +108,8 @@ object distDeclarationsSrcTypesPropsMod {
       __obj.asInstanceOf[AnimationProps[T]]
     }
     
-    extension [Self <: AnimationProps[?], T](x: Self & AnimationProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationProps[?], T] (val x: Self & AnimationProps[T]) extends AnyVal {
       
       inline def setCancel(value: MatchProp[T]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -231,7 +232,8 @@ object distDeclarationsSrcTypesPropsMod {
       __obj.asInstanceOf[ControllerProps[State, Item]]
     }
     
-    extension [Self <: ControllerProps[?, ?], State /* <: Lookup[Any] */, Item](x: Self & (ControllerProps[State, Item])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControllerProps[?, ?], State /* <: Lookup[Any] */, Item] (val x: Self & (ControllerProps[State, Item])) extends AnyVal {
       
       inline def setFrom(value: GoalValues[State] | Falsy): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -390,7 +392,8 @@ object distDeclarationsSrcTypesPropsMod {
       __obj.asInstanceOf[ReservedEventProps]
     }
     
-    extension [Self <: ReservedEventProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReservedEventProps] (val x: Self) extends AnyVal {
       
       inline def setOnChange(value: Any): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
       
@@ -485,7 +488,8 @@ object distDeclarationsSrcTypesPropsMod {
       __obj.asInstanceOf[ReservedProps]
     }
     
-    extension [Self <: ReservedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReservedProps] (val x: Self) extends AnyVal {
       
       inline def setCallId(value: Any): Self = StObject.set(x, "callId", value.asInstanceOf[js.Any])
       
@@ -629,7 +633,8 @@ object distDeclarationsSrcTypesPropsMod {
       __obj.asInstanceOf[SpringProps[T]]
     }
     
-    extension [Self <: SpringProps[?], T](x: Self & SpringProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpringProps[?], T] (val x: Self & SpringProps[T]) extends AnyVal {
       
       inline def setFrom(value: GoalValue[T]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

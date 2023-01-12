@@ -38,7 +38,8 @@ object distCommandsGetMod {
       __obj.asInstanceOf[GetOptions]
     }
     
-    extension [Self <: GetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
       
       inline def setLATEST(value: Boolean): Self = StObject.set(x, "LATEST", value.asInstanceOf[js.Any])
       

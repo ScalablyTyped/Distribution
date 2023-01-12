@@ -16,7 +16,8 @@ object Adloox {
     __obj.asInstanceOf[Adloox]
   }
   
-  extension [Self <: Adloox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Adloox] (val x: Self) extends AnyVal {
     
     inline def setExcludedAdlooxCategories(value: js.Array[String]): Self = StObject.set(x, "excludedAdlooxCategories", value.asInstanceOf[js.Any])
     

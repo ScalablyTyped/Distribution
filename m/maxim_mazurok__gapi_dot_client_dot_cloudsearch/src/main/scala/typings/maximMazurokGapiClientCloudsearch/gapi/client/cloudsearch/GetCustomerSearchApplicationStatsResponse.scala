@@ -19,7 +19,8 @@ object GetCustomerSearchApplicationStatsResponse {
     __obj.asInstanceOf[GetCustomerSearchApplicationStatsResponse]
   }
   
-  extension [Self <: GetCustomerSearchApplicationStatsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCustomerSearchApplicationStatsResponse] (val x: Self) extends AnyVal {
     
     inline def setAverageSearchApplicationCount(value: String): Self = StObject.set(x, "averageSearchApplicationCount", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetPortfolioSummaryResponse {
     __obj.asInstanceOf[GetPortfolioSummaryResponse]
   }
   
-  extension [Self <: GetPortfolioSummaryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPortfolioSummaryResponse] (val x: Self) extends AnyVal {
     
     inline def setAssessmentSummary(value: AssessmentSummary): Self = StObject.set(x, "assessmentSummary", value.asInstanceOf[js.Any])
     

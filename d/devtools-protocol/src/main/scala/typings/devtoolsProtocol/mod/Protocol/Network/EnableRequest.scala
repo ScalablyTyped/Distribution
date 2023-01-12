@@ -29,7 +29,8 @@ object EnableRequest {
     __obj.asInstanceOf[EnableRequest]
   }
   
-  extension [Self <: EnableRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxPostDataSize(value: integer): Self = StObject.set(x, "maxPostDataSize", value.asInstanceOf[js.Any])
     

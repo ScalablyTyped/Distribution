@@ -28,7 +28,8 @@ object TextColumn {
     __obj.asInstanceOf[TextColumn]
   }
   
-  extension [Self <: TextColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextColumn] (val x: Self) extends AnyVal {
     
     inline def setAllowMultipleLines(value: NullableOption[Boolean]): Self = StObject.set(x, "allowMultipleLines", value.asInstanceOf[js.Any])
     

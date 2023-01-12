@@ -165,7 +165,8 @@ object distCssParserColorMod {
       __obj.asInstanceOf[Pattern]
     }
     
-    extension [Self <: Pattern](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
       
       inline def setImage(value: String | CanvasImageSource): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       

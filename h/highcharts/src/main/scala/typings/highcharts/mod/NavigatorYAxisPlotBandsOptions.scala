@@ -104,7 +104,8 @@ object NavigatorYAxisPlotBandsOptions {
     __obj.asInstanceOf[NavigatorYAxisPlotBandsOptions]
   }
   
-  extension [Self <: NavigatorYAxisPlotBandsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorYAxisPlotBandsOptions] (val x: Self) extends AnyVal {
     
     inline def setAcrossPanes(value: Boolean): Self = StObject.set(x, "acrossPanes", value.asInstanceOf[js.Any])
     

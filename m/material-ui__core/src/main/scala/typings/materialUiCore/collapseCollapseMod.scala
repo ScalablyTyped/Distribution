@@ -132,7 +132,8 @@ object collapseCollapseMod {
       __obj.asInstanceOf[CollapseProps]
     }
     
-    extension [Self <: CollapseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapseProps] (val x: Self) extends AnyVal {
       
       inline def setAddEndListener(value: Any): Self = StObject.set(x, "addEndListener", value.asInstanceOf[js.Any])
       

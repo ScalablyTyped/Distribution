@@ -35,7 +35,8 @@ object distTokeniserMod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       

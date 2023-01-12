@@ -104,7 +104,8 @@ object direct {
       __obj.asInstanceOf[IEvent]
     }
     
-    extension [Self <: IEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -201,7 +202,8 @@ object direct {
       __obj.asInstanceOf[IExceptionEvent]
     }
     
-    extension [Self <: IExceptionEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IExceptionEvent] (val x: Self) extends AnyVal {
       
       inline def setGetError(value: () => Any): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
       
@@ -230,7 +232,8 @@ object direct {
       __obj.asInstanceOf[IJsonProvider]
     }
     
-    extension [Self <: IJsonProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJsonProvider] (val x: Self) extends AnyVal {
       
       inline def setCreateEvent(value: /* response */ js.UndefOr[Any] => IEvent): Self = StObject.set(x, "createEvent", js.Any.fromFunction1(value))
       
@@ -299,7 +302,8 @@ object direct {
       __obj.asInstanceOf[IPollingProvider]
     }
     
-    extension [Self <: IPollingProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPollingProvider] (val x: Self) extends AnyVal {
       
       inline def setBaseParams(value: Any): Self = StObject.set(x, "baseParams", value.asInstanceOf[js.Any])
       
@@ -388,7 +392,8 @@ object direct {
       __obj.asInstanceOf[IProvider]
     }
     
-    extension [Self <: IProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProvider] (val x: Self) extends AnyVal {
       
       inline def setConnect(value: () => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
       
@@ -451,7 +456,8 @@ object direct {
       __obj.asInstanceOf[IRemotingEvent]
     }
     
-    extension [Self <: IRemotingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRemotingEvent] (val x: Self) extends AnyVal {
       
       inline def setGetTid(value: () => Any): Self = StObject.set(x, "getTid", js.Any.fromFunction0(value))
       
@@ -534,7 +540,8 @@ object direct {
       __obj.asInstanceOf[IRemotingMethod]
     }
     
-    extension [Self <: IRemotingMethod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRemotingMethod] (val x: Self) extends AnyVal {
       
       inline def setGetCallData(value: /* args */ js.UndefOr[Array] => Any): Self = StObject.set(x, "getCallData", js.Any.fromFunction1(value))
       
@@ -684,7 +691,8 @@ object direct {
       __obj.asInstanceOf[IRemotingProvider]
     }
     
-    extension [Self <: IRemotingProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRemotingProvider] (val x: Self) extends AnyVal {
       
       inline def setActions(value: Any): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -873,7 +881,8 @@ object direct {
       __obj.asInstanceOf[ITransaction]
     }
     
-    extension [Self <: ITransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITransaction] (val x: Self) extends AnyVal {
       
       inline def setGetAction(value: () => Any): Self = StObject.set(x, "getAction", js.Any.fromFunction0(value))
       

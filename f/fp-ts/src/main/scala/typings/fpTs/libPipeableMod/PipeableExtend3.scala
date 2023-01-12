@@ -42,7 +42,8 @@ object PipeableExtend3 {
     __obj.asInstanceOf[PipeableExtend3[F]]
   }
   
-  extension [Self <: PipeableExtend3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & PipeableExtend3[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableExtend3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & PipeableExtend3[F]) extends AnyVal {
     
     inline def setDuplicate(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any => Any

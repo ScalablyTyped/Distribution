@@ -23,7 +23,8 @@ object ListActivitiesInput {
     __obj.asInstanceOf[ListActivitiesInput]
   }
   
-  extension [Self <: ListActivitiesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListActivitiesInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: PageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

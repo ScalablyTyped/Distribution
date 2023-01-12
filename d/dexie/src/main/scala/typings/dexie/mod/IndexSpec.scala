@@ -27,7 +27,8 @@ object IndexSpec {
     __obj.asInstanceOf[IndexSpec]
   }
   
-  extension [Self <: IndexSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexSpec] (val x: Self) extends AnyVal {
     
     inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     

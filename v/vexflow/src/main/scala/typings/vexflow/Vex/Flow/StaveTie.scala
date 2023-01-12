@@ -39,7 +39,8 @@ object StaveTie {
     __obj.asInstanceOf[StaveTie]
   }
   
-  extension [Self <: StaveTie](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaveTie] (val x: Self) extends AnyVal {
     
     inline def setDraw(value: () => Boolean): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
     

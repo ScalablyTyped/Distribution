@@ -25,7 +25,8 @@ object TypeofTypeAnnotation_ {
     __obj.asInstanceOf[TypeofTypeAnnotation_]
   }
   
-  extension [Self <: TypeofTypeAnnotation_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTypeAnnotation_] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: FlowType): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     

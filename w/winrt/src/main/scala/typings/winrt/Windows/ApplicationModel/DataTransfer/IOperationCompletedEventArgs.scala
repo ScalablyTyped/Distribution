@@ -15,7 +15,8 @@ object IOperationCompletedEventArgs {
     __obj.asInstanceOf[IOperationCompletedEventArgs]
   }
   
-  extension [Self <: IOperationCompletedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOperationCompletedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: DataPackageOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
   }

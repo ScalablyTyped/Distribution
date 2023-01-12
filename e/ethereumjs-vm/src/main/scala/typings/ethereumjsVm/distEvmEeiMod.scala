@@ -329,7 +329,8 @@ object distEvmEeiMod {
       __obj.asInstanceOf[Env]
     }
     
-    extension [Self <: Env](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Env] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: Buffer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -377,7 +378,8 @@ object distEvmEeiMod {
       __obj.asInstanceOf[RunResult]
     }
     
-    extension [Self <: RunResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunResult] (val x: Self) extends AnyVal {
       
       inline def setLogs(value: Any): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
       

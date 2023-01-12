@@ -23,7 +23,8 @@ object typesRequestTimeoutExceptionMod {
       __obj.asInstanceOf[RequestTimeoutException]
     }
     
-    extension [Self <: RequestTimeoutException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestTimeoutException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.RequestTimeoutException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -53,7 +54,8 @@ object typesRequestTimeoutExceptionMod {
       __obj.asInstanceOf[RequestTimeoutExceptionDetails]
     }
     
-    extension [Self <: RequestTimeoutExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestTimeoutExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

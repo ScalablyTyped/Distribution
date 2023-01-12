@@ -44,7 +44,8 @@ object BootstrapUploadControlEventMap {
     __obj.asInstanceOf[BootstrapUploadControlEventMap]
   }
   
-  extension [Self <: BootstrapUploadControlEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapUploadControlEventMap] (val x: Self) extends AnyVal {
     
     inline def setDropZoneEnter(value: UploadControlDropZoneEnterEventArgs): Self = StObject.set(x, "dropZoneEnter", value.asInstanceOf[js.Any])
     

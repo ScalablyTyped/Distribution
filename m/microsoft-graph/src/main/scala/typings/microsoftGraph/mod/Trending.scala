@@ -32,7 +32,8 @@ object Trending {
     __obj.asInstanceOf[Trending]
   }
   
-  extension [Self <: Trending](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Trending] (val x: Self) extends AnyVal {
     
     inline def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     

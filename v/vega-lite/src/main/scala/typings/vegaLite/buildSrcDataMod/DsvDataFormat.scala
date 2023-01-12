@@ -28,7 +28,8 @@ object DsvDataFormat {
     __obj.asInstanceOf[DsvDataFormat]
   }
   
-  extension [Self <: DsvDataFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DsvDataFormat] (val x: Self) extends AnyVal {
     
     inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     

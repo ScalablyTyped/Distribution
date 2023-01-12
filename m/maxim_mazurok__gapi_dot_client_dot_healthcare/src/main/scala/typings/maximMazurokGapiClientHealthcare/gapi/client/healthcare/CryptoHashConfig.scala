@@ -19,7 +19,8 @@ object CryptoHashConfig {
     __obj.asInstanceOf[CryptoHashConfig]
   }
   
-  extension [Self <: CryptoHashConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CryptoHashConfig] (val x: Self) extends AnyVal {
     
     inline def setCryptoKey(value: String): Self = StObject.set(x, "cryptoKey", value.asInstanceOf[js.Any])
     

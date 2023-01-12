@@ -15,7 +15,8 @@ object EventOnAddStream {
     __obj.asInstanceOf[EventOnAddStream]
   }
   
-  extension [Self <: EventOnAddStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventOnAddStream] (val x: Self) extends AnyVal {
     
     inline def setStream(value: MediaStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
   }

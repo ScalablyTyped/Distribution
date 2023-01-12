@@ -28,7 +28,8 @@ object ListCampaignsRequest {
     __obj.asInstanceOf[ListCampaignsRequest]
   }
   
-  extension [Self <: ListCampaignsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCampaignsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: maxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

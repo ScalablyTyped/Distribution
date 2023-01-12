@@ -18,7 +18,8 @@ object DescribeSubscribedWorkteamResponse {
     __obj.asInstanceOf[DescribeSubscribedWorkteamResponse]
   }
   
-  extension [Self <: DescribeSubscribedWorkteamResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSubscribedWorkteamResponse] (val x: Self) extends AnyVal {
     
     inline def setSubscribedWorkteam(value: SubscribedWorkteam): Self = StObject.set(x, "SubscribedWorkteam", value.asInstanceOf[js.Any])
   }

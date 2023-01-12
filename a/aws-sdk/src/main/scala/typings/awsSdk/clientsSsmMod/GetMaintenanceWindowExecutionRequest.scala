@@ -18,7 +18,8 @@ object GetMaintenanceWindowExecutionRequest {
     __obj.asInstanceOf[GetMaintenanceWindowExecutionRequest]
   }
   
-  extension [Self <: GetMaintenanceWindowExecutionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMaintenanceWindowExecutionRequest] (val x: Self) extends AnyVal {
     
     inline def setWindowExecutionId(value: MaintenanceWindowExecutionId): Self = StObject.set(x, "WindowExecutionId", value.asInstanceOf[js.Any])
   }

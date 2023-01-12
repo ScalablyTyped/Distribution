@@ -18,7 +18,8 @@ object RdsDbClusterSnapshotAttributeValue {
     __obj.asInstanceOf[RdsDbClusterSnapshotAttributeValue]
   }
   
-  extension [Self <: RdsDbClusterSnapshotAttributeValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RdsDbClusterSnapshotAttributeValue] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: RdsDbClusterSnapshotAccountIdsList): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
     

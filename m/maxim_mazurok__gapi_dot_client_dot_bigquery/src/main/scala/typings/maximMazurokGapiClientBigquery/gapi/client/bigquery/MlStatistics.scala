@@ -19,7 +19,8 @@ object MlStatistics {
     __obj.asInstanceOf[MlStatistics]
   }
   
-  extension [Self <: MlStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlStatistics] (val x: Self) extends AnyVal {
     
     inline def setIterationResults(value: js.Array[IterationResult]): Self = StObject.set(x, "iterationResults", value.asInstanceOf[js.Any])
     

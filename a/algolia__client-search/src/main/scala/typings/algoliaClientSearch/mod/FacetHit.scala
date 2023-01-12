@@ -28,7 +28,8 @@ object FacetHit {
     __obj.asInstanceOf[FacetHit]
   }
   
-  extension [Self <: FacetHit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FacetHit] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

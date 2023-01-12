@@ -30,7 +30,8 @@ object XScreenCursor {
     __obj.asInstanceOf[XScreenCursor]
   }
   
-  extension [Self <: XScreenCursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XScreenCursor] (val x: Self) extends AnyVal {
     
     inline def setScreenDown(value: () => Boolean): Self = StObject.set(x, "screenDown", js.Any.fromFunction0(value))
     

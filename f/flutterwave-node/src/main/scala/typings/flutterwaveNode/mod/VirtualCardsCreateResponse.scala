@@ -18,7 +18,8 @@ object VirtualCardsCreateResponse {
     __obj.asInstanceOf[VirtualCardsCreateResponse]
   }
   
-  extension [Self <: VirtualCardsCreateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualCardsCreateResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: Address1): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

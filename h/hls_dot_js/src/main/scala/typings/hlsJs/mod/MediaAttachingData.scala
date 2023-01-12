@@ -16,7 +16,8 @@ object MediaAttachingData {
     __obj.asInstanceOf[MediaAttachingData]
   }
   
-  extension [Self <: MediaAttachingData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaAttachingData] (val x: Self) extends AnyVal {
     
     inline def setMedia(value: HTMLMediaElement): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
   }

@@ -98,7 +98,8 @@ object ContainerRecipe {
     __obj.asInstanceOf[ContainerRecipe]
   }
   
-  extension [Self <: ContainerRecipe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerRecipe] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ImageBuilderArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

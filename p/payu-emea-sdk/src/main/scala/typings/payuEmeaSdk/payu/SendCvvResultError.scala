@@ -21,7 +21,8 @@ object SendCvvResultError {
     __obj.asInstanceOf[SendCvvResultError]
   }
   
-  extension [Self <: SendCvvResultError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendCvvResultError] (val x: Self) extends AnyVal {
     
     inline def setCorrelationId(value: String): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
     

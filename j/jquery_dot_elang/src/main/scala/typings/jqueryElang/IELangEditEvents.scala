@@ -27,7 +27,8 @@ object IELangEditEvents {
     __obj.asInstanceOf[IELangEditEvents]
   }
   
-  extension [Self <: IELangEditEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IELangEditEvents] (val x: Self) extends AnyVal {
     
     inline def setInsert(value: JQueryDeferred[Any]): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     

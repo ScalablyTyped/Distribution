@@ -18,7 +18,8 @@ object Lags {
     __obj.asInstanceOf[Lags]
   }
   
-  extension [Self <: Lags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lags] (val x: Self) extends AnyVal {
     
     inline def setLags(value: LagList): Self = StObject.set(x, "lags", value.asInstanceOf[js.Any])
     

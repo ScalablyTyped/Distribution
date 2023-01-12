@@ -38,7 +38,8 @@ object PopupDockOptions {
     __obj.asInstanceOf[PopupDockOptions]
   }
   
-  extension [Self <: PopupDockOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupDockOptions] (val x: Self) extends AnyVal {
     
     inline def setBreakpoint(value: Boolean | PopupDockOptionsBreakpoint): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
     

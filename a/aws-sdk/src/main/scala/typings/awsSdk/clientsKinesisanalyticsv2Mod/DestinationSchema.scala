@@ -18,7 +18,8 @@ object DestinationSchema {
     __obj.asInstanceOf[DestinationSchema]
   }
   
-  extension [Self <: DestinationSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestinationSchema] (val x: Self) extends AnyVal {
     
     inline def setRecordFormatType(value: RecordFormatType): Self = StObject.set(x, "RecordFormatType", value.asInstanceOf[js.Any])
   }

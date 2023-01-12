@@ -43,7 +43,8 @@ object ImmunizationEducation {
     __obj.asInstanceOf[ImmunizationEducation]
   }
   
-  extension [Self <: ImmunizationEducation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImmunizationEducation] (val x: Self) extends AnyVal {
     
     inline def setDocumentType(value: String): Self = StObject.set(x, "documentType", value.asInstanceOf[js.Any])
     

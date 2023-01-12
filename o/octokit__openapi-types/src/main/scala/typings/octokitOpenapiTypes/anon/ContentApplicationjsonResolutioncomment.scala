@@ -15,7 +15,8 @@ object ContentApplicationjsonResolutioncomment {
     __obj.asInstanceOf[ContentApplicationjsonResolutioncomment]
   }
   
-  extension [Self <: ContentApplicationjsonResolutioncomment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonResolutioncomment] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonResolutioncomment): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

@@ -24,7 +24,8 @@ object IQueryFileOptions {
     __obj.asInstanceOf[IQueryFileOptions]
   }
   
-  extension [Self <: IQueryFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IQueryFileOptions] (val x: Self) extends AnyVal {
     
     inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
     

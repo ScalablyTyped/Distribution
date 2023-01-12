@@ -19,7 +19,8 @@ object libPointedMod {
       __obj.asInstanceOf[Pointed[F]]
     }
     
-    extension [Self <: Pointed[?], F](x: Self & Pointed[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pointed[?], F] (val x: Self & Pointed[F]) extends AnyVal {
       
       inline def setOf(value: Any => Any): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
       
@@ -40,7 +41,8 @@ object libPointedMod {
       __obj.asInstanceOf[Pointed1[F]]
     }
     
-    extension [Self <: Pointed1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & Pointed1[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pointed1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & Pointed1[F]) extends AnyVal {
       
       inline def setOf(value: Any => Any): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
       
@@ -61,7 +63,8 @@ object libPointedMod {
       __obj.asInstanceOf[Pointed2[F]]
     }
     
-    extension [Self <: Pointed2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & Pointed2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pointed2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & Pointed2[F]) extends AnyVal {
       
       inline def setOf(value: Any => Any): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
       
@@ -84,7 +87,8 @@ object libPointedMod {
       __obj.asInstanceOf[Pointed2C[F, E]]
     }
     
-    extension [Self <: Pointed2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (Pointed2C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pointed2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (Pointed2C[F, E])) extends AnyVal {
       
       inline def setOf(value: Any => Any): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
       
@@ -107,7 +111,8 @@ object libPointedMod {
       __obj.asInstanceOf[Pointed3[F]]
     }
     
-    extension [Self <: Pointed3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & Pointed3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pointed3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & Pointed3[F]) extends AnyVal {
       
       inline def setOf(value: Any => Any): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
       
@@ -130,7 +135,8 @@ object libPointedMod {
       __obj.asInstanceOf[Pointed3C[F, E]]
     }
     
-    extension [Self <: Pointed3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (Pointed3C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pointed3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (Pointed3C[F, E])) extends AnyVal {
       
       inline def setOf(value: Any => Any): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
       
@@ -153,7 +159,8 @@ object libPointedMod {
       __obj.asInstanceOf[Pointed4[F]]
     }
     
-    extension [Self <: Pointed4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & Pointed4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pointed4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & Pointed4[F]) extends AnyVal {
       
       inline def setOf(value: Any => Any): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
       

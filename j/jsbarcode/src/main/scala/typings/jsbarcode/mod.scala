@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[JsBarcodeOptions]
     }
     
-    extension [Self <: JsBarcodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsBarcodeOptions] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       

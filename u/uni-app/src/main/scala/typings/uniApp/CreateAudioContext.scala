@@ -33,7 +33,8 @@ object CreateAudioContext {
     __obj.asInstanceOf[CreateAudioContext]
   }
   
-  extension [Self <: CreateAudioContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAudioContext] (val x: Self) extends AnyVal {
     
     inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     

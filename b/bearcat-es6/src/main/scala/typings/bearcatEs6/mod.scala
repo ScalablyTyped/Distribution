@@ -856,7 +856,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BeanPostProcessor]
     }
     
-    extension [Self <: BeanPostProcessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeanPostProcessor] (val x: Self) extends AnyVal {
       
       inline def setPostProcessBeanFactory(value: () => Unit): Self = StObject.set(x, "postProcessBeanFactory", js.Any.fromFunction0(value))
     }
@@ -1135,7 +1136,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BootStrapLoader]
     }
     
-    extension [Self <: BootStrapLoader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BootStrapLoader] (val x: Self) extends AnyVal {
       
       inline def setLoad(value: js.Array[String] => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     }
@@ -1183,7 +1185,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ConfigLoader]
     }
     
-    extension [Self <: ConfigLoader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigLoader] (val x: Self) extends AnyVal {
       
       inline def setGetMetaLoader(value: () => MetaLoader): Self = StObject.set(x, "getMetaLoader", js.Any.fromFunction0(value))
       
@@ -1241,7 +1244,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MetaLoader]
     }
     
-    extension [Self <: MetaLoader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetaLoader] (val x: Self) extends AnyVal {
       
       inline def setGetMetaObjects(value: () => js.Object): Self = StObject.set(x, "getMetaObjects", js.Any.fromFunction0(value))
       
@@ -1275,7 +1279,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ModuleFactory]
     }
     
-    extension [Self <: ModuleFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleFactory] (val x: Self) extends AnyVal {
       
       inline def setDefine(value: (String, js.Object) => Unit): Self = StObject.set(x, "define", js.Any.fromFunction2(value))
       
@@ -1333,7 +1338,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ResourceLoader]
     }
     
-    extension [Self <: ResourceLoader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceLoader] (val x: Self) extends AnyVal {
       
       inline def setAddLoadPath(value: String => Unit): Self = StObject.set(x, "addLoadPath", js.Any.fromFunction1(value))
       
@@ -1410,7 +1416,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SingletonBeanFactory]
     }
     
-    extension [Self <: SingletonBeanFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingletonBeanFactory] (val x: Self) extends AnyVal {
       
       inline def setAddSingleton(value: (String, js.Object) => Unit): Self = StObject.set(x, "addSingleton", js.Any.fromFunction2(value))
       

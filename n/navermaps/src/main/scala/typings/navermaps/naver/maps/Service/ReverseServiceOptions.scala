@@ -19,7 +19,8 @@ object ReverseServiceOptions {
     __obj.asInstanceOf[ReverseServiceOptions]
   }
   
-  extension [Self <: ReverseServiceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReverseServiceOptions] (val x: Self) extends AnyVal {
     
     inline def setCoords(value: String | Coord | CoordLiteral): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
   }

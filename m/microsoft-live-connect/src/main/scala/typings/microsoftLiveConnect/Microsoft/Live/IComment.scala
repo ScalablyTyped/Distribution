@@ -42,7 +42,8 @@ object IComment {
     __obj.asInstanceOf[IComment]
   }
   
-  extension [Self <: IComment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IComment] (val x: Self) extends AnyVal {
     
     inline def setCreated_time(value: String): Self = StObject.set(x, "created_time", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object Section {
   @js.native
   def apply(start: Double, stop: Double, color: String): Section = js.native
   
-  extension [Self <: Section](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Section] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

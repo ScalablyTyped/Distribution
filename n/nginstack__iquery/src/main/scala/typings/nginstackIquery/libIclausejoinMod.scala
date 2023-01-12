@@ -119,7 +119,8 @@ object libIclausejoinMod {
       __obj.asInstanceOf[IClauseJoin]
     }
     
-    extension [Self <: IClauseJoin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IClauseJoin] (val x: Self) extends AnyVal {
       
       inline def setGetClauseOn(value: Double => IClauseWhere): Self = StObject.set(x, "getClauseOn", js.Any.fromFunction1(value))
       
@@ -176,7 +177,8 @@ object libIclausejoinMod {
       __obj.asInstanceOf[RightTableAsSubQueryConfig]
     }
     
-    extension [Self <: RightTableAsSubQueryConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RightTableAsSubQueryConfig] (val x: Self) extends AnyVal {
       
       inline def setClauseSelect(value: typings.nginstackIquery.libIclauseselectMod.^): Self = StObject.set(x, "clauseSelect", value.asInstanceOf[js.Any])
       

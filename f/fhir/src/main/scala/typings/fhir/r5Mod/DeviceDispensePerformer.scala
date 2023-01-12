@@ -25,7 +25,8 @@ object DeviceDispensePerformer {
     __obj.asInstanceOf[DeviceDispensePerformer]
   }
   
-  extension [Self <: DeviceDispensePerformer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceDispensePerformer] (val x: Self) extends AnyVal {
     
     inline def setActor(value: Reference): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

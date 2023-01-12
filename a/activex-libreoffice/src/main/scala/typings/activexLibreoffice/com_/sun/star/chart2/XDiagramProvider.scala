@@ -31,7 +31,8 @@ object XDiagramProvider {
     __obj.asInstanceOf[XDiagramProvider]
   }
   
-  extension [Self <: XDiagramProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDiagramProvider] (val x: Self) extends AnyVal {
     
     inline def setDiagram(value: XDiagram): Self = StObject.set(x, "Diagram", value.asInstanceOf[js.Any])
     

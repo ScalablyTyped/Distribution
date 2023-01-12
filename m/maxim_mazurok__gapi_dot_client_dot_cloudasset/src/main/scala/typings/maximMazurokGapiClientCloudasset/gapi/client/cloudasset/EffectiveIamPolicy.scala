@@ -27,7 +27,8 @@ object EffectiveIamPolicy {
     __obj.asInstanceOf[EffectiveIamPolicy]
   }
   
-  extension [Self <: EffectiveIamPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EffectiveIamPolicy] (val x: Self) extends AnyVal {
     
     inline def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
     

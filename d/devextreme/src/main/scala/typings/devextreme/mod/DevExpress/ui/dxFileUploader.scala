@@ -75,7 +75,8 @@ object dxFileUploader {
       __obj.asInstanceOf[BeforeSendEvent]
     }
     
-    extension [Self <: BeforeSendEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeSendEvent] (val x: Self) extends AnyVal {
       
       inline def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object dxFileUploader {
       __obj.asInstanceOf[DropZoneEnterEvent]
     }
     
-    extension [Self <: DropZoneEnterEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropZoneEnterEvent] (val x: Self) extends AnyVal {
       
       inline def setDropZoneElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "dropZoneElement", value.asInstanceOf[js.Any])
     }
@@ -131,7 +133,8 @@ object dxFileUploader {
       __obj.asInstanceOf[DropZoneLeaveEvent]
     }
     
-    extension [Self <: DropZoneLeaveEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropZoneLeaveEvent] (val x: Self) extends AnyVal {
       
       inline def setDropZoneElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "dropZoneElement", value.asInstanceOf[js.Any])
     }
@@ -197,7 +200,8 @@ object dxFileUploader {
       __obj.asInstanceOf[ProgressEvent]
     }
     
-    extension [Self <: ProgressEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressEvent] (val x: Self) extends AnyVal {
       
       inline def setBytesLoaded(value: Double): Self = StObject.set(x, "bytesLoaded", value.asInstanceOf[js.Any])
       
@@ -236,7 +240,8 @@ object dxFileUploader {
       __obj.asInstanceOf[UploadAbortedEvent]
     }
     
-    extension [Self <: UploadAbortedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadAbortedEvent] (val x: Self) extends AnyVal {
       
       inline def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -272,7 +277,8 @@ object dxFileUploader {
       __obj.asInstanceOf[UploadErrorEvent]
     }
     
-    extension [Self <: UploadErrorEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadErrorEvent] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -311,7 +317,8 @@ object dxFileUploader {
       __obj.asInstanceOf[UploadStartedEvent]
     }
     
-    extension [Self <: UploadStartedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadStartedEvent] (val x: Self) extends AnyVal {
       
       inline def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -342,7 +349,8 @@ object dxFileUploader {
       __obj.asInstanceOf[UploadedEvent]
     }
     
-    extension [Self <: UploadedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadedEvent] (val x: Self) extends AnyVal {
       
       inline def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -367,7 +375,8 @@ object dxFileUploader {
       __obj.asInstanceOf[ValueChangedEvent]
     }
     
-    extension [Self <: ValueChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setPreviousValue(value: js.Array[File]): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object Tool {
     __obj.asInstanceOf[Tool]
   }
   
-  extension [Self <: Tool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tool] (val x: Self) extends AnyVal {
     
     inline def setDriver(value: ToolComponent): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
     

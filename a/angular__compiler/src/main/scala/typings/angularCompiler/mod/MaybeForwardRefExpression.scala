@@ -39,7 +39,8 @@ object MaybeForwardRefExpression {
     __obj.asInstanceOf[MaybeForwardRefExpression[T]]
   }
   
-  extension [Self <: MaybeForwardRefExpression[?], T /* <: Expression */](x: Self & MaybeForwardRefExpression[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaybeForwardRefExpression[?], T /* <: Expression */] (val x: Self & MaybeForwardRefExpression[T]) extends AnyVal {
     
     inline def setExpression(value: T): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

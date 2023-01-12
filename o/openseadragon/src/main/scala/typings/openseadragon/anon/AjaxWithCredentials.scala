@@ -23,7 +23,8 @@ object AjaxWithCredentials {
     __obj.asInstanceOf[AjaxWithCredentials]
   }
   
-  extension [Self <: AjaxWithCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AjaxWithCredentials] (val x: Self) extends AnyVal {
     
     inline def setAjaxWithCredentials(value: String | Boolean): Self = StObject.set(x, "ajaxWithCredentials", value.asInstanceOf[js.Any])
     

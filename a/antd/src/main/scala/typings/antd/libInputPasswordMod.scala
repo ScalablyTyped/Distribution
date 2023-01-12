@@ -35,7 +35,8 @@ object libInputPasswordMod extends Shortcut {
       __obj.asInstanceOf[PasswordProps]
     }
     
-    extension [Self <: PasswordProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PasswordProps] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object libInputPasswordMod extends Shortcut {
       __obj.asInstanceOf[VisibilityToggle]
     }
     
-    extension [Self <: VisibilityToggle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisibilityToggle] (val x: Self) extends AnyVal {
       
       inline def setOnVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction1(value))
       

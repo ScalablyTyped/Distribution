@@ -44,7 +44,8 @@ object libApiInviterInviteOptionsMod {
       __obj.asInstanceOf[InviterInviteOptions]
     }
     
-    extension [Self <: InviterInviteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InviterInviteOptions] (val x: Self) extends AnyVal {
       
       inline def setRequestDelegate(value: OutgoingRequestDelegate): Self = StObject.set(x, "requestDelegate", value.asInstanceOf[js.Any])
       

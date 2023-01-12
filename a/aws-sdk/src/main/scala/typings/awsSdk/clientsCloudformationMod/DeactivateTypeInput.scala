@@ -28,7 +28,8 @@ object DeactivateTypeInput {
     __obj.asInstanceOf[DeactivateTypeInput]
   }
   
-  extension [Self <: DeactivateTypeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeactivateTypeInput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: PrivateTypeArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

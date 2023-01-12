@@ -638,7 +638,8 @@ object DetailedHTMLPropsFieldset {
     __obj.asInstanceOf[DetailedHTMLPropsFieldset]
   }
   
-  extension [Self <: DetailedHTMLPropsFieldset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailedHTMLPropsFieldset] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SparklineCategoryAxisItemCrosshairTooltipBorder {
     __obj.asInstanceOf[SparklineCategoryAxisItemCrosshairTooltipBorder]
   }
   
-  extension [Self <: SparklineCategoryAxisItemCrosshairTooltipBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparklineCategoryAxisItemCrosshairTooltipBorder] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object TrackIndexedDBForStorageKeyRequest {
     __obj.asInstanceOf[TrackIndexedDBForStorageKeyRequest]
   }
   
-  extension [Self <: TrackIndexedDBForStorageKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackIndexedDBForStorageKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
   }

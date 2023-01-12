@@ -48,7 +48,8 @@ object libDockMonitorMod extends Shortcut {
       __obj.asInstanceOf[DefaultProps]
     }
     
-    extension [Self <: DefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultIsVisible(value: Boolean): Self = StObject.set(x, "defaultIsVisible", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object libDockMonitorMod extends Shortcut {
       __obj.asInstanceOf[DockMonitorProps[S, A]]
     }
     
-    extension [Self <: DockMonitorProps[?, ?], S, A /* <: Action[Any] */](x: Self & (DockMonitorProps[S, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DockMonitorProps[?, ?], S, A /* <: Action[Any] */] (val x: Self & (DockMonitorProps[S, A])) extends AnyVal {
       
       inline def setChangeMonitorKey(value: String): Self = StObject.set(x, "changeMonitorKey", value.asInstanceOf[js.Any])
       
@@ -172,7 +174,8 @@ object libDockMonitorMod extends Shortcut {
       __obj.asInstanceOf[ExternalProps[S, A]]
     }
     
-    extension [Self <: ExternalProps[?, ?], S, A /* <: Action[Any] */](x: Self & (ExternalProps[S, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternalProps[?, ?], S, A /* <: Action[Any] */] (val x: Self & (ExternalProps[S, A])) extends AnyVal {
       
       inline def setChangeMonitorKey(value: String): Self = StObject.set(x, "changeMonitorKey", value.asInstanceOf[js.Any])
       

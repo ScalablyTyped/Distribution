@@ -44,7 +44,8 @@ object RewardedVideoAdOnErrorCallbackResult {
     __obj.asInstanceOf[RewardedVideoAdOnErrorCallbackResult]
   }
   
-  extension [Self <: RewardedVideoAdOnErrorCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RewardedVideoAdOnErrorCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrCode(value: `1000` | `1001` | `1002` | `1003` | `1004` | `1005` | `1006` | `1007` | `1008`): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     

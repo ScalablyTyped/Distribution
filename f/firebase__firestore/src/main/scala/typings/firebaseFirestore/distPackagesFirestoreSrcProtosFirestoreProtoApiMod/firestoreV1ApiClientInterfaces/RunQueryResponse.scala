@@ -21,7 +21,8 @@ object RunQueryResponse {
     __obj.asInstanceOf[RunQueryResponse]
   }
   
-  extension [Self <: RunQueryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunQueryResponse] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

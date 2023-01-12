@@ -27,7 +27,8 @@ object Lockreason {
     __obj.asInstanceOf[Lockreason]
   }
   
-  extension [Self <: Lockreason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lockreason] (val x: Self) extends AnyVal {
     
     inline def setLock_reason(value: `off-topic` | (`too heated`) | resolved | spam): Self = StObject.set(x, "lock_reason", value.asInstanceOf[js.Any])
     

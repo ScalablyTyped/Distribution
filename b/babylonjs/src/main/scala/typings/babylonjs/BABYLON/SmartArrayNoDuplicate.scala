@@ -47,7 +47,8 @@ object SmartArrayNoDuplicate {
     __obj.asInstanceOf[SmartArrayNoDuplicate[T]]
   }
   
-  extension [Self <: SmartArrayNoDuplicate[?], T](x: Self & SmartArrayNoDuplicate[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartArrayNoDuplicate[?], T] (val x: Self & SmartArrayNoDuplicate[T]) extends AnyVal {
     
     inline def setConcatWithNoDuplicate(value: Any => Unit): Self = StObject.set(x, "concatWithNoDuplicate", js.Any.fromFunction1(value))
     

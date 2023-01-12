@@ -20,7 +20,8 @@ object Navigator {
     __obj.asInstanceOf[Navigator]
   }
   
-  extension [Self <: Navigator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Navigator] (val x: Self) extends AnyVal {
     
     inline def setXr(value: XRSystem): Self = StObject.set(x, "xr", value.asInstanceOf[js.Any])
     

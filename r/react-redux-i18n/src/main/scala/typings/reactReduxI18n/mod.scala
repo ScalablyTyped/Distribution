@@ -90,7 +90,8 @@ object mod {
       __obj.asInstanceOf[I18nState]
     }
     
-    extension [Self <: I18nState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I18nState] (val x: Self) extends AnyVal {
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object mod {
       __obj.asInstanceOf[LocalizeProps]
     }
     
-    extension [Self <: LocalizeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalizeProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -182,7 +184,8 @@ object mod {
       __obj.asInstanceOf[TranslateProps]
     }
     
-    extension [Self <: TranslateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TranslateProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

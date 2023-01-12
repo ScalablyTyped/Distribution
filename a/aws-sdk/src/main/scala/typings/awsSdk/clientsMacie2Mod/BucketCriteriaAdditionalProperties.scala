@@ -49,7 +49,8 @@ object BucketCriteriaAdditionalProperties {
     __obj.asInstanceOf[BucketCriteriaAdditionalProperties]
   }
   
-  extension [Self <: BucketCriteriaAdditionalProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketCriteriaAdditionalProperties] (val x: Self) extends AnyVal {
     
     inline def setEq_(value: listOfString): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
     

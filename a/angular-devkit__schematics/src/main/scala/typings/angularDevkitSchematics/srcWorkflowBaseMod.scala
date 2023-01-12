@@ -85,7 +85,8 @@ object srcWorkflowBaseMod {
       __obj.asInstanceOf[BaseWorkflowOptions]
     }
     
-    extension [Self <: BaseWorkflowOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseWorkflowOptions] (val x: Self) extends AnyVal {
       
       inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
       

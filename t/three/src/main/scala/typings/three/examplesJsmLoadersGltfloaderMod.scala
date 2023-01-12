@@ -202,7 +202,8 @@ object examplesJsmLoadersGltfloaderMod {
       __obj.asInstanceOf[GLTF]
     }
     
-    extension [Self <: GLTF](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GLTF] (val x: Self) extends AnyVal {
       
       inline def setAnimations(value: js.Array[AnimationClip]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
       
@@ -284,7 +285,8 @@ object examplesJsmLoadersGltfloaderMod {
       __obj.asInstanceOf[GLTFLoaderPlugin]
     }
     
-    extension [Self <: GLTFLoaderPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GLTFLoaderPlugin] (val x: Self) extends AnyVal {
       
       inline def setAfterRoot(value: /* result */ GLTF => js.Promise[Unit] | Null): Self = StObject.set(x, "afterRoot", js.Any.fromFunction1(value))
       
@@ -355,7 +357,8 @@ object examplesJsmLoadersGltfloaderMod {
       __obj.asInstanceOf[GLTFReference]
     }
     
-    extension [Self <: GLTFReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GLTFReference] (val x: Self) extends AnyVal {
       
       inline def setMaterials(value: Double): Self = StObject.set(x, "materials", value.asInstanceOf[js.Any])
       

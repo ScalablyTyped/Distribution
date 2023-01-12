@@ -17,7 +17,8 @@ object SQLResultSetRowList {
     __obj.asInstanceOf[SQLResultSetRowList]
   }
   
-  extension [Self <: SQLResultSetRowList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SQLResultSetRowList] (val x: Self) extends AnyVal {
     
     inline def setItem(value: Double => Any): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
     

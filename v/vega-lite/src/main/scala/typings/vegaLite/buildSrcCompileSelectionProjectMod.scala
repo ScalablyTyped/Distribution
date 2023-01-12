@@ -58,7 +58,8 @@ object buildSrcCompileSelectionProjectMod extends Shortcut {
       __obj.asInstanceOf[SelectionProjection]
     }
     
-    extension [Self <: SelectionProjection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionProjection] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: SingleDefUnitChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       

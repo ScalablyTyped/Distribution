@@ -28,7 +28,8 @@ object DomainDeliverabilityTrackingOption {
     __obj.asInstanceOf[DomainDeliverabilityTrackingOption]
   }
   
-  extension [Self <: DomainDeliverabilityTrackingOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainDeliverabilityTrackingOption] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: Domain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     

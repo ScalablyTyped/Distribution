@@ -21,7 +21,8 @@ object Slots {
     __obj.asInstanceOf[Slots]
   }
   
-  extension [Self <: Slots](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Slots] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

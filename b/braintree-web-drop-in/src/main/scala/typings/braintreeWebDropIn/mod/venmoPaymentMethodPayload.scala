@@ -28,7 +28,8 @@ object venmoPaymentMethodPayload {
     __obj.asInstanceOf[venmoPaymentMethodPayload]
   }
   
-  extension [Self <: venmoPaymentMethodPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: venmoPaymentMethodPayload] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: Username): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

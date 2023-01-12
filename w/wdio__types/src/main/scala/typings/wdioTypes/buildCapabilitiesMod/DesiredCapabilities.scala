@@ -605,7 +605,8 @@ object DesiredCapabilities {
     __obj.asInstanceOf[DesiredCapabilities]
   }
   
-  extension [Self <: DesiredCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DesiredCapabilities] (val x: Self) extends AnyVal {
     
     inline def setAcceptSslCerts(value: Boolean): Self = StObject.set(x, "acceptSslCerts", value.asInstanceOf[js.Any])
     

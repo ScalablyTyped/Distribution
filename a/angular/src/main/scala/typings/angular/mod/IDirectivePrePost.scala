@@ -18,7 +18,8 @@ object IDirectivePrePost {
     __obj.asInstanceOf[IDirectivePrePost[TScope, TElement, TAttributes, TController]]
   }
   
-  extension [Self <: IDirectivePrePost[?, ?, ?, ?], TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */](x: Self & (IDirectivePrePost[TScope, TElement, TAttributes, TController])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDirectivePrePost[?, ?, ?, ?], TScope /* <: IScope */, TElement /* <: JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */] (val x: Self & (IDirectivePrePost[TScope, TElement, TAttributes, TController])) extends AnyVal {
     
     inline def setPost(
       value: (TScope, TElement, TAttributes, /* controller */ js.UndefOr[TController], /* transclude */ js.UndefOr[ITranscludeFunction]) => Unit

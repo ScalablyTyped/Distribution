@@ -23,7 +23,8 @@ object TLEEphemeris {
     __obj.asInstanceOf[TLEEphemeris]
   }
   
-  extension [Self <: TLEEphemeris](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TLEEphemeris] (val x: Self) extends AnyVal {
     
     inline def setS3Object(value: S3Object): Self = StObject.set(x, "s3Object", value.asInstanceOf[js.Any])
     

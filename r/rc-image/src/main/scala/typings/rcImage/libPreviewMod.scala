@@ -113,7 +113,8 @@ object libPreviewMod extends Shortcut {
       __obj.asInstanceOf[PreviewProps]
     }
     
-    extension [Self <: PreviewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviewProps] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Any): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       

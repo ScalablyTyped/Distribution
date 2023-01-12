@@ -18,7 +18,8 @@ object SslProperties {
     __obj.asInstanceOf[SslProperties]
   }
   
-  extension [Self <: SslProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SslProperties] (val x: Self) extends AnyVal {
     
     inline def setDisableSsl(value: Boolean): Self = StObject.set(x, "DisableSsl", value.asInstanceOf[js.Any])
     

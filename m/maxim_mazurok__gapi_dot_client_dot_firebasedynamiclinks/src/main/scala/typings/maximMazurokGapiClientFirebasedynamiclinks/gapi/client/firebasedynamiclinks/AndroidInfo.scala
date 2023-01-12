@@ -25,7 +25,8 @@ object AndroidInfo {
     __obj.asInstanceOf[AndroidInfo]
   }
   
-  extension [Self <: AndroidInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidInfo] (val x: Self) extends AnyVal {
     
     inline def setAndroidFallbackLink(value: String): Self = StObject.set(x, "androidFallbackLink", value.asInstanceOf[js.Any])
     

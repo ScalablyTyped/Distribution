@@ -18,7 +18,8 @@ object LocateDeviceActionResult {
     __obj.asInstanceOf[LocateDeviceActionResult]
   }
   
-  extension [Self <: LocateDeviceActionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocateDeviceActionResult] (val x: Self) extends AnyVal {
     
     inline def setDeviceLocation(value: NullableOption[DeviceGeoLocation]): Self = StObject.set(x, "deviceLocation", value.asInstanceOf[js.Any])
     

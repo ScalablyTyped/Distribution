@@ -153,7 +153,8 @@ object IgToolbar {
     __obj.asInstanceOf[IgToolbar]
   }
   
-  extension [Self <: IgToolbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgToolbar] (val x: Self) extends AnyVal {
     
     inline def setAllowCollapsing(value: Boolean): Self = StObject.set(x, "allowCollapsing", value.asInstanceOf[js.Any])
     

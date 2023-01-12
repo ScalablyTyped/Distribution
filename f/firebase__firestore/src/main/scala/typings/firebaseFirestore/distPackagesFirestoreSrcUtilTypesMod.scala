@@ -43,7 +43,8 @@ object distPackagesFirestoreSrcUtilTypesMod {
       __obj.asInstanceOf[DocumentLike]
     }
     
-    extension [Self <: DocumentLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentLike] (val x: Self) extends AnyVal {
       
       inline def setAddEventListener(value: (String, EventListener) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
@@ -78,7 +79,8 @@ object distPackagesFirestoreSrcUtilTypesMod {
       __obj.asInstanceOf[WindowLike]
     }
     
-    extension [Self <: WindowLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowLike] (val x: Self) extends AnyVal {
       
       inline def setAddEventListener(value: (String, EventListener) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       

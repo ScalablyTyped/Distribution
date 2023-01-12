@@ -36,7 +36,8 @@ object GoogleActionsV2CustomPushMessageTarget {
     __obj.asInstanceOf[GoogleActionsV2CustomPushMessageTarget]
   }
   
-  extension [Self <: GoogleActionsV2CustomPushMessageTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2CustomPushMessageTarget] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: GoogleActionsV2Argument): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     

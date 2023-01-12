@@ -76,7 +76,8 @@ object mod {
       __obj.asInstanceOf[DotenvConfigOptions]
     }
     
-    extension [Self <: DotenvConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotenvConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setDefault_node_env(value: String): Self = StObject.set(x, "default_node_env", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object mod {
       __obj.asInstanceOf[DotenvListFilesOptions]
     }
     
-    extension [Self <: DotenvListFilesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotenvListFilesOptions] (val x: Self) extends AnyVal {
       
       inline def setNode_env(value: String): Self = StObject.set(x, "node_env", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object mod {
       __obj.asInstanceOf[DotenvLoadOutput]
     }
     
-    extension [Self <: DotenvLoadOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotenvLoadOutput] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -172,7 +175,8 @@ object mod {
       __obj.asInstanceOf[DotenvReadFileOptions]
     }
     
-    extension [Self <: DotenvReadFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotenvReadFileOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

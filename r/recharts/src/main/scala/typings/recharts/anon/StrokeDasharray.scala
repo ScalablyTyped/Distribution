@@ -15,7 +15,8 @@ object StrokeDasharray {
     __obj.asInstanceOf[StrokeDasharray]
   }
   
-  extension [Self <: StrokeDasharray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StrokeDasharray] (val x: Self) extends AnyVal {
     
     inline def setStrokeDasharray(value: String): Self = StObject.set(x, "strokeDasharray", value.asInstanceOf[js.Any])
   }

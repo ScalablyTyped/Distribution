@@ -165,7 +165,8 @@ object stylesTypesMod {
       __obj.asInstanceOf[Icon]
     }
     
-    extension [Self <: Icon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: ComponentType[IconProps]): Self = StObject.set(x, "Alert", value.asInstanceOf[js.Any])
       
@@ -329,7 +330,8 @@ object stylesTypesMod {
       __obj.asInstanceOf[Theme]
     }
     
-    extension [Self <: Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

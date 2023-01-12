@@ -176,7 +176,8 @@ object scroll {
       __obj.asInstanceOf[IScroller]
     }
     
-    extension [Self <: IScroller](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScroller] (val x: Self) extends AnyVal {
       
       inline def setAcceleration(value: Double): Self = StObject.set(x, "acceleration", value.asInstanceOf[js.Any])
       
@@ -378,7 +379,8 @@ object scroll {
       __obj.asInstanceOf[IView]
     }
     
-    extension [Self <: IView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IView] (val x: Self) extends AnyVal {
       
       inline def setGetCls(value: () => java.lang.String): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
       
@@ -530,7 +532,8 @@ object scroll {
         __obj.asInstanceOf[IAbstract]
       }
       
-      extension [Self <: IAbstract](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
         
         inline def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
         
@@ -625,7 +628,8 @@ object scroll {
         __obj.asInstanceOf[ICssTransform]
       }
       
-      extension [Self <: ICssTransform](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICssTransform] (val x: Self) extends AnyVal {
         
         inline def setGetCls(value: () => java.lang.String): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
         
@@ -660,7 +664,8 @@ object scroll {
         __obj.asInstanceOf[IRounded]
       }
       
-      extension [Self <: IRounded](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRounded] (val x: Self) extends AnyVal {
         
         inline def setGetCls(value: () => java.lang.String): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
         
@@ -695,7 +700,8 @@ object scroll {
         __obj.asInstanceOf[IScrollPosition]
       }
       
-      extension [Self <: IScrollPosition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IScrollPosition] (val x: Self) extends AnyVal {
         
         inline def setGetCls(value: () => java.lang.String): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
         

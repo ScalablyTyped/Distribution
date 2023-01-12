@@ -15,7 +15,8 @@ object PERSPECTIVECAMERA {
     __obj.asInstanceOf[PERSPECTIVECAMERA]
   }
   
-  extension [Self <: PERSPECTIVECAMERA](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PERSPECTIVECAMERA] (val x: Self) extends AnyVal {
     
     inline def setPERSPECTIVE_CAMERA(value: Double): Self = StObject.set(x, "PERSPECTIVE_CAMERA", value.asInstanceOf[js.Any])
   }

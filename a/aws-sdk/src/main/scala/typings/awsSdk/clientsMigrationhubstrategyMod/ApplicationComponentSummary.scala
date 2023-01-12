@@ -23,7 +23,8 @@ object ApplicationComponentSummary {
     __obj.asInstanceOf[ApplicationComponentSummary]
   }
   
-  extension [Self <: ApplicationComponentSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationComponentSummary] (val x: Self) extends AnyVal {
     
     inline def setAppType(value: AppType): Self = StObject.set(x, "appType", value.asInstanceOf[js.Any])
     

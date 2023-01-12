@@ -25,7 +25,8 @@ object featurestringtypetopojson {
     __obj.asInstanceOf[featurestringtypetopojson]
   }
   
-  extension [Self <: featurestringtypetopojson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: featurestringtypetopojson] (val x: Self) extends AnyVal {
     
     inline def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     

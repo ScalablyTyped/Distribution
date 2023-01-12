@@ -28,7 +28,8 @@ object EnableImageDeprecationRequest {
     __obj.asInstanceOf[EnableImageDeprecationRequest]
   }
   
-  extension [Self <: EnableImageDeprecationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableImageDeprecationRequest] (val x: Self) extends AnyVal {
     
     inline def setDeprecateAt(value: js.Date): Self = StObject.set(x, "DeprecateAt", value.asInstanceOf[js.Any])
     

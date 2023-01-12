@@ -65,7 +65,8 @@ object PipeableFoldableWithIndex4 {
     __obj.asInstanceOf[PipeableFoldableWithIndex4[F, I]]
   }
   
-  extension [Self <: PipeableFoldableWithIndex4[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */, I](x: Self & (PipeableFoldableWithIndex4[F, I])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableFoldableWithIndex4[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */, I] (val x: Self & (PipeableFoldableWithIndex4[F, I])) extends AnyVal {
     
     inline def setFoldMapWithIndex(
       value: Monoid[Any] => js.Function1[

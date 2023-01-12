@@ -52,7 +52,8 @@ object ExtensionBlockMetadata {
     __obj.asInstanceOf[ExtensionBlockMetadata]
   }
   
-  extension [Self <: ExtensionBlockMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionBlockMetadata] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: Record[String, ExtensionArgumentMetadata]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

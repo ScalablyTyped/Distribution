@@ -22,7 +22,8 @@ object AnnotateTextRequest {
     __obj.asInstanceOf[AnnotateTextRequest]
   }
   
-  extension [Self <: AnnotateTextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotateTextRequest] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

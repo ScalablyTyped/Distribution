@@ -48,7 +48,8 @@ object DescribeLiveSourceResponse {
     __obj.asInstanceOf[DescribeLiveSourceResponse]
   }
   
-  extension [Self <: DescribeLiveSourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLiveSourceResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: _String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

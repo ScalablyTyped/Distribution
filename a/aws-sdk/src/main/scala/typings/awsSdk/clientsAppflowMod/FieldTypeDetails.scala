@@ -48,7 +48,8 @@ object FieldTypeDetails {
     __obj.asInstanceOf[FieldTypeDetails]
   }
   
-  extension [Self <: FieldTypeDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldTypeDetails] (val x: Self) extends AnyVal {
     
     inline def setFieldLengthRange(value: Range): Self = StObject.set(x, "fieldLengthRange", value.asInstanceOf[js.Any])
     

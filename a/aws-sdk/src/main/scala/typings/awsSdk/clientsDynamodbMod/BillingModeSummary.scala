@@ -23,7 +23,8 @@ object BillingModeSummary {
     __obj.asInstanceOf[BillingModeSummary]
   }
   
-  extension [Self <: BillingModeSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BillingModeSummary] (val x: Self) extends AnyVal {
     
     inline def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
     

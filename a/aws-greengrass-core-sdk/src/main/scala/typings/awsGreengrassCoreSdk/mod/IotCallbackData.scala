@@ -18,7 +18,8 @@ object IotCallbackData {
     __obj.asInstanceOf[IotCallbackData]
   }
   
-  extension [Self <: IotCallbackData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IotCallbackData] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: Buffer | Blob | String | ArrayLike[Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
   }

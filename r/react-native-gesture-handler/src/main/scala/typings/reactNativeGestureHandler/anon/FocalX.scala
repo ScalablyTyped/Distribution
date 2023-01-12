@@ -21,7 +21,8 @@ object FocalX {
     __obj.asInstanceOf[FocalX]
   }
   
-  extension [Self <: FocalX](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FocalX] (val x: Self) extends AnyVal {
     
     inline def setFocalX(value: Double): Self = StObject.set(x, "focalX", value.asInstanceOf[js.Any])
     

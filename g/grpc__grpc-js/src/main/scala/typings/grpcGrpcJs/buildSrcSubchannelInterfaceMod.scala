@@ -96,7 +96,8 @@ object buildSrcSubchannelInterfaceMod {
       __obj.asInstanceOf[SubchannelInterface]
     }
     
-    extension [Self <: SubchannelInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubchannelInterface] (val x: Self) extends AnyVal {
       
       inline def setAddConnectivityStateListener(value: ConnectivityStateListener => Unit): Self = StObject.set(x, "addConnectivityStateListener", js.Any.fromFunction1(value))
       

@@ -20,7 +20,8 @@ object NetworkFromPortalItemParams {
     __obj.asInstanceOf[NetworkFromPortalItemParams]
   }
   
-  extension [Self <: NetworkFromPortalItemParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkFromPortalItemParams] (val x: Self) extends AnyVal {
     
     inline def setPortalItem(value: PortalItem): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
   }

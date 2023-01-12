@@ -38,7 +38,8 @@ object Checkname {
     __obj.asInstanceOf[Checkname]
   }
   
-  extension [Self <: Checkname](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Checkname] (val x: Self) extends AnyVal {
     
     inline def setCheck_name(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['check-name'] */ js.Any

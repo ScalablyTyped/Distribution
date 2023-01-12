@@ -35,7 +35,8 @@ object ICustomArray {
     __obj.asInstanceOf[ICustomArray]
   }
   
-  extension [Self <: ICustomArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICustomArray] (val x: Self) extends AnyVal {
     
     inline def setAddTranslation(value: String): Self = StObject.set(x, "addTranslation", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DeleteRequestValidatorRequest {
     __obj.asInstanceOf[DeleteRequestValidatorRequest]
   }
   
-  extension [Self <: DeleteRequestValidatorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRequestValidatorRequest] (val x: Self) extends AnyVal {
     
     inline def setRequestValidatorId(value: String): Self = StObject.set(x, "requestValidatorId", value.asInstanceOf[js.Any])
     

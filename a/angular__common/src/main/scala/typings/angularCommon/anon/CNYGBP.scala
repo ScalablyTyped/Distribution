@@ -65,7 +65,8 @@ object CNYGBP {
     __obj.asInstanceOf[CNYGBP]
   }
   
-  extension [Self <: CNYGBP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CNYGBP] (val x: Self) extends AnyVal {
     
     inline def setAUD(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     

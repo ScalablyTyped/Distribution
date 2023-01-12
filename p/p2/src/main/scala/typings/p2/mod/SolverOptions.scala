@@ -15,7 +15,8 @@ object SolverOptions {
     __obj.asInstanceOf[SolverOptions]
   }
   
-  extension [Self <: SolverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SolverOptions] (val x: Self) extends AnyVal {
     
     inline def setEquationSortFunction(value: Equation): Self = StObject.set(x, "equationSortFunction", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object NetworksUpdatePeeringRequest {
     __obj.asInstanceOf[NetworksUpdatePeeringRequest]
   }
   
-  extension [Self <: NetworksUpdatePeeringRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworksUpdatePeeringRequest] (val x: Self) extends AnyVal {
     
     inline def setNetworkPeering(value: NetworkPeering): Self = StObject.set(x, "networkPeering", value.asInstanceOf[js.Any])
     

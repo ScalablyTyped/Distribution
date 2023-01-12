@@ -157,7 +157,8 @@ object mod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
         

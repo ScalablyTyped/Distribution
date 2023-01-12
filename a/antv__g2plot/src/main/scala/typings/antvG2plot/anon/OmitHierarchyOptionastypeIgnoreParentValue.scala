@@ -48,7 +48,8 @@ object OmitHierarchyOptionastypeIgnoreParentValue {
     __obj.asInstanceOf[OmitHierarchyOptionastypeIgnoreParentValue]
   }
   
-  extension [Self <: OmitHierarchyOptionastypeIgnoreParentValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitHierarchyOptionastypeIgnoreParentValue] (val x: Self) extends AnyVal {
     
     inline def setIgnoreParentValue(value: Boolean): Self = StObject.set(x, "ignoreParentValue", value.asInstanceOf[js.Any])
     

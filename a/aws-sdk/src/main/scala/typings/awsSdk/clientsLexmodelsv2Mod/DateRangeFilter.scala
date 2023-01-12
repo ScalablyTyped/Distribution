@@ -23,7 +23,8 @@ object DateRangeFilter {
     __obj.asInstanceOf[DateRangeFilter]
   }
   
-  extension [Self <: DateRangeFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateRangeFilter] (val x: Self) extends AnyVal {
     
     inline def setEndDateTime(value: js.Date): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object ClaimResponseProcessNote {
     __obj.asInstanceOf[ClaimResponseProcessNote]
   }
   
-  extension [Self <: ClaimResponseProcessNote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClaimResponseProcessNote] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: CodeableConcept): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

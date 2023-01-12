@@ -28,7 +28,8 @@ object Connection {
     __obj.asInstanceOf[Connection]
   }
   
-  extension [Self <: Connection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
     
     inline def setDestinationIp(value: String): Self = StObject.set(x, "destinationIp", value.asInstanceOf[js.Any])
     

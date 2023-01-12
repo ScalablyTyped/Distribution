@@ -217,7 +217,8 @@ object libRestPreviewHostedNumbersAuthorizationDocumentMod {
       __obj.asInstanceOf[AuthorizationDocumentInstanceUpdateOptions]
     }
     
-    extension [Self <: AuthorizationDocumentInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizationDocumentInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setAddressSid(value: String): Self = StObject.set(x, "addressSid", value.asInstanceOf[js.Any])
       
@@ -442,7 +443,8 @@ object libRestPreviewHostedNumbersAuthorizationDocumentMod {
       __obj.asInstanceOf[AuthorizationDocumentListInstanceCreateOptions]
     }
     
-    extension [Self <: AuthorizationDocumentListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizationDocumentListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setAddressSid(value: String): Self = StObject.set(x, "addressSid", value.asInstanceOf[js.Any])
       
@@ -511,7 +513,8 @@ object libRestPreviewHostedNumbersAuthorizationDocumentMod {
       __obj.asInstanceOf[AuthorizationDocumentListInstanceEachOptions]
     }
     
-    extension [Self <: AuthorizationDocumentListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizationDocumentListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ AuthorizationDocumentInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -574,7 +577,8 @@ object libRestPreviewHostedNumbersAuthorizationDocumentMod {
       __obj.asInstanceOf[AuthorizationDocumentListInstanceOptions]
     }
     
-    extension [Self <: AuthorizationDocumentListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizationDocumentListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -622,7 +626,8 @@ object libRestPreviewHostedNumbersAuthorizationDocumentMod {
       __obj.asInstanceOf[AuthorizationDocumentListInstancePageOptions]
     }
     
-    extension [Self <: AuthorizationDocumentListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizationDocumentListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -711,7 +716,8 @@ object libRestPreviewHostedNumbersAuthorizationDocumentMod {
       __obj.asInstanceOf[AuthorizationDocumentResource]
     }
     
-    extension [Self <: AuthorizationDocumentResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizationDocumentResource] (val x: Self) extends AnyVal {
       
       inline def setAddress_sid(value: String): Self = StObject.set(x, "address_sid", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[Captcha]
     }
     
-    extension [Self <: Captcha](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Captcha] (val x: Self) extends AnyVal {
       
       inline def setGet(value: () => js.Tuple2[String, Buffer]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     }
@@ -59,7 +60,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFontsize(value: Double): Self = StObject.set(x, "fontsize", value.asInstanceOf[js.Any])
       

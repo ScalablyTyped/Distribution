@@ -66,7 +66,8 @@ object notyfDotoptionsMod {
       __obj.asInstanceOf[INotyfIcon]
     }
     
-    extension [Self <: INotyfIcon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INotyfIcon] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object notyfDotoptionsMod {
       __obj.asInstanceOf[INotyfNotificationOptions]
     }
     
-    extension [Self <: INotyfNotificationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INotyfNotificationOptions] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -173,7 +175,8 @@ object notyfDotoptionsMod {
       __obj.asInstanceOf[INotyfOptions]
     }
     
-    extension [Self <: INotyfOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INotyfOptions] (val x: Self) extends AnyVal {
       
       inline def setDismissible(value: Boolean): Self = StObject.set(x, "dismissible", value.asInstanceOf[js.Any])
       
@@ -202,7 +205,8 @@ object notyfDotoptionsMod {
       __obj.asInstanceOf[INotyfPosition]
     }
     
-    extension [Self <: INotyfPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INotyfPosition] (val x: Self) extends AnyVal {
       
       inline def setX(value: NotyfHorizontalPosition): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

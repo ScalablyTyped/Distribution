@@ -23,7 +23,8 @@ object Ground {
     __obj.asInstanceOf[Ground]
   }
   
-  extension [Self <: Ground](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ground] (val x: Self) extends AnyVal {
     
     inline def setGround(value: Boolean): Self = StObject.set(x, "ground", value.asInstanceOf[js.Any])
     

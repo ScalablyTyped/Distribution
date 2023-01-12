@@ -18,7 +18,8 @@ object InitialRouteName {
     __obj.asInstanceOf[InitialRouteName[ParamList]]
   }
   
-  extension [Self <: InitialRouteName[?], ParamList /* <: js.Object */](x: Self & InitialRouteName[ParamList]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitialRouteName[?], ParamList /* <: js.Object */] (val x: Self & InitialRouteName[ParamList]) extends AnyVal {
     
     inline def setInitialRouteName(value: /* keyof ParamList */ String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
     

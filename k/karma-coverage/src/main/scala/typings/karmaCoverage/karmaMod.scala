@@ -24,7 +24,8 @@ object karmaMod {
       __obj.asInstanceOf[CheckTresholds]
     }
     
-    extension [Self <: CheckTresholds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckTresholds] (val x: Self) extends AnyVal {
       
       inline def setEach(value: Tresholds): Self = StObject.set(x, "each", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object karmaMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setCoverageReporter(value: KarmaCoverageReporterrepo): Self = StObject.set(x, "coverageReporter", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object karmaMod {
       __obj.asInstanceOf[KarmaCoverageReporter]
     }
     
-    extension [Self <: KarmaCoverageReporter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KarmaCoverageReporter] (val x: Self) extends AnyVal {
       
       inline def setCheck(value: CheckTresholds): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
@@ -195,7 +198,8 @@ object karmaMod {
       __obj.asInstanceOf[Reporter]
     }
     
-    extension [Self <: Reporter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reporter] (val x: Self) extends AnyVal {
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -276,7 +280,8 @@ object karmaMod {
       __obj.asInstanceOf[Tresholds]
     }
     
-    extension [Self <: Tresholds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tresholds] (val x: Self) extends AnyVal {
       
       inline def setBranches(value: Double): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
@@ -323,7 +328,8 @@ object karmaMod {
       __obj.asInstanceOf[Watermarks]
     }
     
-    extension [Self <: Watermarks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Watermarks] (val x: Self) extends AnyVal {
       
       inline def setBranches(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       

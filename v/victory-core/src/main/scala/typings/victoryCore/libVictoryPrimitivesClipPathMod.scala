@@ -39,7 +39,8 @@ object libVictoryPrimitivesClipPathMod {
       __obj.asInstanceOf[ClipPathProps]
     }
     
-    extension [Self <: ClipPathProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClipPathProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

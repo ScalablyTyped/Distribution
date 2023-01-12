@@ -25,7 +25,8 @@ object GoogleDevtoolsRemotebuildbotResourceUsageIOStats {
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildbotResourceUsageIOStats]
   }
   
-  extension [Self <: GoogleDevtoolsRemotebuildbotResourceUsageIOStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsRemotebuildbotResourceUsageIOStats] (val x: Self) extends AnyVal {
     
     inline def setReadBytesCount(value: String): Self = StObject.set(x, "readBytesCount", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object enginesWebGPUExtensionsEngineDottextureSamplerMod {
         __obj.asInstanceOf[Effect]
       }
       
-      extension [Self <: Effect](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Effect] (val x: Self) extends AnyVal {
         
         inline def setSetTextureSampler(value: (String, Nullable[TextureSampler]) => Unit): Self = StObject.set(x, "setTextureSampler", js.Any.fromFunction2(value))
       }

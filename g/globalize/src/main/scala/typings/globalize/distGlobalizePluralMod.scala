@@ -58,7 +58,8 @@ object distGlobalizePluralMod extends Shortcut {
         __obj.asInstanceOf[PluralGeneratorOptions]
       }
       
-      extension [Self <: PluralGeneratorOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PluralGeneratorOptions] (val x: Self) extends AnyVal {
         
         inline def setType(value: cardinal | ordinal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         

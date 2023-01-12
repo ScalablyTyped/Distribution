@@ -43,7 +43,8 @@ object AllowAdding {
     __obj.asInstanceOf[AllowAdding]
   }
   
-  extension [Self <: AllowAdding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowAdding] (val x: Self) extends AnyVal {
     
     inline def setAllowAdding(value: Boolean): Self = StObject.set(x, "allowAdding", value.asInstanceOf[js.Any])
     

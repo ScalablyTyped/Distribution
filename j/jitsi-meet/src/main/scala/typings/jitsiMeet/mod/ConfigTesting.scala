@@ -28,7 +28,8 @@ object ConfigTesting {
     __obj.asInstanceOf[ConfigTesting]
   }
   
-  extension [Self <: ConfigTesting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigTesting] (val x: Self) extends AnyVal {
     
     inline def setCallStatsThreshold(value: Double): Self = StObject.set(x, "callStatsThreshold", value.asInstanceOf[js.Any])
     

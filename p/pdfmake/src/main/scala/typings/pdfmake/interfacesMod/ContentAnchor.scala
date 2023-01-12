@@ -343,7 +343,8 @@ object ContentAnchor {
     __obj.asInstanceOf[ContentAnchor]
   }
   
-  extension [Self <: ContentAnchor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentAnchor] (val x: Self) extends AnyVal {
     
     inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
     

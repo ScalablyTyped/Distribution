@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[XMPPError[TName]]
     }
     
-    extension [Self <: XMPPError[?], TName /* <: String */](x: Self & XMPPError[TName]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XMPPError[?], TName /* <: String */] (val x: Self & XMPPError[TName]) extends AnyVal {
       
       inline def setApplication(value: Element): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       

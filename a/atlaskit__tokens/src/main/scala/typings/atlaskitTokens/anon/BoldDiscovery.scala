@@ -84,7 +84,8 @@ object BoldDiscovery {
     __obj.asInstanceOf[BoldDiscovery[BaseToken]]
   }
   
-  extension [Self <: BoldDiscovery[?], BaseToken](x: Self & BoldDiscovery[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoldDiscovery[?], BaseToken] (val x: Self & BoldDiscovery[BaseToken]) extends AnyVal {
     
     inline def setAccent(value: BlueGreen[BaseToken]): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
     

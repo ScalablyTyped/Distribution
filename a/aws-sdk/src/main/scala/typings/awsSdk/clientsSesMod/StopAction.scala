@@ -23,7 +23,8 @@ object StopAction {
     __obj.asInstanceOf[StopAction]
   }
   
-  extension [Self <: StopAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopAction] (val x: Self) extends AnyVal {
     
     inline def setScope(value: StopScope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     

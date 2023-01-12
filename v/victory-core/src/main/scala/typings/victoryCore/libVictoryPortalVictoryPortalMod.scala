@@ -92,7 +92,8 @@ object libVictoryPortalVictoryPortalMod {
       __obj.asInstanceOf[VictoryPortalProps]
     }
     
-    extension [Self <: VictoryPortalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryPortalProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -37,7 +37,8 @@ object GetDefaultLocale {
     __obj.asInstanceOf[GetDefaultLocale]
   }
   
-  extension [Self <: GetDefaultLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDefaultLocale] (val x: Self) extends AnyVal {
     
     inline def setAvailableLocales(value: Set[String]): Self = StObject.set(x, "availableLocales", value.asInstanceOf[js.Any])
     

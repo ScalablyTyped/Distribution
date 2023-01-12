@@ -25,7 +25,8 @@ object PublicInnerError {
     __obj.asInstanceOf[PublicInnerError]
   }
   
-  extension [Self <: PublicInnerError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicInnerError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: NullableOption[String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object FileSystemWatcher {
     __obj.asInstanceOf[FileSystemWatcher]
   }
   
-  extension [Self <: FileSystemWatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemWatcher] (val x: Self) extends AnyVal {
     
     inline def setGlobPattern(value: GlobPattern): Self = StObject.set(x, "globPattern", value.asInstanceOf[js.Any])
     

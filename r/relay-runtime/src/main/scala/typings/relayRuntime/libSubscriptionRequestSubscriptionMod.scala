@@ -62,7 +62,8 @@ object libSubscriptionRequestSubscriptionMod {
       __obj.asInstanceOf[GraphQLSubscriptionConfig[TSubscription]]
     }
     
-    extension [Self <: GraphQLSubscriptionConfig[?], TSubscription /* <: OperationType */](x: Self & GraphQLSubscriptionConfig[TSubscription]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphQLSubscriptionConfig[?], TSubscription /* <: OperationType */] (val x: Self & GraphQLSubscriptionConfig[TSubscription]) extends AnyVal {
       
       inline def setConfigs(value: js.Array[DeclarativeMutationConfig]): Self = StObject.set(x, "configs", value.asInstanceOf[js.Any])
       

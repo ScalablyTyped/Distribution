@@ -47,7 +47,8 @@ object FileAppender {
     __obj.asInstanceOf[FileAppender]
   }
   
-  extension [Self <: FileAppender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileAppender] (val x: Self) extends AnyVal {
     
     inline def setBackups(value: Double): Self = StObject.set(x, "backups", value.asInstanceOf[js.Any])
     

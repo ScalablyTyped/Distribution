@@ -17,7 +17,8 @@ object BaseReactScheduleEvent {
     __obj.asInstanceOf[BaseReactScheduleEvent]
   }
   
-  extension [Self <: BaseReactScheduleEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseReactScheduleEvent] (val x: Self) extends AnyVal {
     
     inline def setLanes(value: js.Array[ReactLane]): Self = StObject.set(x, "lanes", value.asInstanceOf[js.Any])
     

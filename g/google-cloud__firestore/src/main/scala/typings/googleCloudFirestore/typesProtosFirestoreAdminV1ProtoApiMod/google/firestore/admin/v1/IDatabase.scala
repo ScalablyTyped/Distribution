@@ -31,7 +31,8 @@ object IDatabase {
     __obj.asInstanceOf[IDatabase]
   }
   
-  extension [Self <: IDatabase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDatabase] (val x: Self) extends AnyVal {
     
     inline def setConcurrencyMode(value: ConcurrencyMode): Self = StObject.set(x, "concurrencyMode", value.asInstanceOf[js.Any])
     

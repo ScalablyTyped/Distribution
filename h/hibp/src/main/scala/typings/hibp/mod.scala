@@ -129,7 +129,8 @@ object mod {
       __obj.asInstanceOf[Breach_]
     }
     
-    extension [Self <: Breach_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Breach_] (val x: Self) extends AnyVal {
       
       inline def setAddedDate(value: String): Self = StObject.set(x, "AddedDate", value.asInstanceOf[js.Any])
       
@@ -261,7 +262,8 @@ object mod {
       __obj.asInstanceOf[HIBP]
     }
     
-    extension [Self <: HIBP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HIBP] (val x: Self) extends AnyVal {
       
       inline def setBreach(value: (/* breachName */ String, /* options */ js.UndefOr[BaseUrl]) => js.Promise[Breach_ | Null]): Self = StObject.set(x, "breach", js.Any.fromFunction2(value))
       
@@ -319,7 +321,8 @@ object mod {
       __obj.asInstanceOf[Paste]
     }
     
-    extension [Self <: Paste](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Paste] (val x: Self) extends AnyVal {
       
       inline def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
       
@@ -348,7 +351,8 @@ object mod {
       __obj.asInstanceOf[SearchResults]
     }
     
-    extension [Self <: SearchResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchResults] (val x: Self) extends AnyVal {
       
       inline def setBreaches(value: js.Array[Breach_]): Self = StObject.set(x, "breaches", value.asInstanceOf[js.Any])
       

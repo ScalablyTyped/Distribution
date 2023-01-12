@@ -353,7 +353,8 @@ object Utils_ {
       __obj.asInstanceOf[FilePath]
     }
     
-    extension [Self <: FilePath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilePath] (val x: Self) extends AnyVal {
       
       inline def setCACHES_DIRECTORY(value: String): Self = StObject.set(x, "CACHES_DIRECTORY", value.asInstanceOf[js.Any])
       
@@ -443,7 +444,8 @@ object Utils_ {
       __obj.asInstanceOf[PlayServicesAvailability]
     }
     
-    extension [Self <: PlayServicesAvailability](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayServicesAvailability] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -474,7 +476,8 @@ object Utils_ {
       __obj.asInstanceOf[Statics]
     }
     
-    extension [Self <: Statics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Statics] (val x: Self) extends AnyVal {
       
       inline def setFilePath(value: FilePath): Self = StObject.set(x, "FilePath", value.asInstanceOf[js.Any])
     }

@@ -386,7 +386,8 @@ object OmitNightwatchAssertionsn {
     __obj.asInstanceOf[OmitNightwatchAssertionsn]
   }
   
-  extension [Self <: OmitNightwatchAssertionsn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitNightwatchAssertionsn] (val x: Self) extends AnyVal {
     
     inline def setAttributeContains(
       value: (/* selector */ Definition, /* attribute */ String, /* expected */ String, /* message */ js.UndefOr[String]) => AwaitableNightwatchAPINigAcceptAlert

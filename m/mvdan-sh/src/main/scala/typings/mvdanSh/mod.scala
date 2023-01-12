@@ -59,7 +59,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Command]
     }
     
-    extension [Self <: Command](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
       
       inline def setOpPos(value: Pos): Self = StObject.set(x, "OpPos", value.asInstanceOf[js.Any])
     }
@@ -80,7 +81,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Comment]
     }
     
-    extension [Self <: Comment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
       
       inline def setHash(value: Pos): Self = StObject.set(x, "Hash", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setLast(value: js.Array[Stmt]): Self = StObject.set(x, "Last", value.asInstanceOf[js.Any])
       
@@ -138,7 +141,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Lit]
     }
     
-    extension [Self <: Lit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lit] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
       
@@ -161,7 +165,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: () => Pos): Self = StObject.set(x, "End", js.Any.fromFunction0(value))
       
@@ -206,7 +211,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Pos]
     }
     
-    extension [Self <: Pos](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pos] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: Pos => Boolean): Self = StObject.set(x, "After", js.Any.fromFunction1(value))
       
@@ -233,7 +239,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Printer]
     }
     
-    extension [Self <: Printer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Printer] (val x: Self) extends AnyVal {
       
       inline def setPrint(value: Node => String): Self = StObject.set(x, "Print", js.Any.fromFunction1(value))
     }
@@ -252,7 +259,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ShellScript]
     }
     
-    extension [Self <: ShellScript](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellScript] (val x: Self) extends AnyVal {
       
       inline def setSyntax(value: BinaryNextLine): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
     }
@@ -293,7 +301,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Stmt]
     }
     
-    extension [Self <: Stmt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stmt] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: Boolean): Self = StObject.set(x, "Background", value.asInstanceOf[js.Any])
       
@@ -328,7 +337,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Word]
     }
     
-    extension [Self <: Word](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Word] (val x: Self) extends AnyVal {
       
       inline def setLit(value: () => String): Self = StObject.set(x, "Lit", js.Any.fromFunction0(value))
       

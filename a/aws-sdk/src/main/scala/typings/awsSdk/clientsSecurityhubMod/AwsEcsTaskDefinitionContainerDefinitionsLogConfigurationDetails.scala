@@ -28,7 +28,8 @@ object AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetails {
     __obj.asInstanceOf[AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetails]
   }
   
-  extension [Self <: AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetails] (val x: Self) extends AnyVal {
     
     inline def setLogDriver(value: NonEmptyString): Self = StObject.set(x, "LogDriver", value.asInstanceOf[js.Any])
     

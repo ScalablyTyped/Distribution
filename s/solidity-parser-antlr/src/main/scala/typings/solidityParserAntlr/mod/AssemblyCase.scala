@@ -20,7 +20,8 @@ object AssemblyCase {
     __obj.asInstanceOf[AssemblyCase]
   }
   
-  extension [Self <: AssemblyCase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssemblyCase] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCase): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

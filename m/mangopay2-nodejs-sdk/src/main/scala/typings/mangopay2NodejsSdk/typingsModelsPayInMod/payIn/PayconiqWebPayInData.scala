@@ -70,7 +70,8 @@ object PayconiqWebPayInData {
     __obj.asInstanceOf[PayconiqWebPayInData]
   }
   
-  extension [Self <: PayconiqWebPayInData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PayconiqWebPayInData] (val x: Self) extends AnyVal {
     
     inline def setDeepLinkURL(value: String): Self = StObject.set(x, "DeepLinkURL", value.asInstanceOf[js.Any])
     

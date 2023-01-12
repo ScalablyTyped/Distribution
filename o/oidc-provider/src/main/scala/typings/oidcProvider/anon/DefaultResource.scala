@@ -43,7 +43,8 @@ object DefaultResource {
     __obj.asInstanceOf[DefaultResource]
   }
   
-  extension [Self <: DefaultResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultResource] (val x: Self) extends AnyVal {
     
     inline def setDefaultResource(value: /* ctx */ KoaContextWithOIDC => CanBePromise[String | js.Array[String]]): Self = StObject.set(x, "defaultResource", js.Any.fromFunction1(value))
     

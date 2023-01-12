@@ -17,7 +17,8 @@ object SuggesterStatus {
     __obj.asInstanceOf[SuggesterStatus]
   }
   
-  extension [Self <: SuggesterStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggesterStatus] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: Suggester): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     

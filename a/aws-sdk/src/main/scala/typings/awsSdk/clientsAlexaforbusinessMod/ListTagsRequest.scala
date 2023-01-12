@@ -28,7 +28,8 @@ object ListTagsRequest {
     __obj.asInstanceOf[ListTagsRequest]
   }
   
-  extension [Self <: ListTagsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTagsRequest] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

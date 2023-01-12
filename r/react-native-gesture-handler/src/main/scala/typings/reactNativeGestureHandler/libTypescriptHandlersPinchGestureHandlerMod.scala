@@ -52,7 +52,8 @@ object libTypescriptHandlersPinchGestureHandlerMod {
       __obj.asInstanceOf[PinchGestureHandlerEventPayload]
     }
     
-    extension [Self <: PinchGestureHandlerEventPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinchGestureHandlerEventPayload] (val x: Self) extends AnyVal {
       
       inline def setFocalX(value: Double): Self = StObject.set(x, "focalX", value.asInstanceOf[js.Any])
       

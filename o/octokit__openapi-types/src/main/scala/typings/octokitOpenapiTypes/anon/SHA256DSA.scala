@@ -21,7 +21,8 @@ object SHA256DSA {
     __obj.asInstanceOf[SHA256DSA]
   }
   
-  extension [Self <: SHA256DSA](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SHA256DSA] (val x: Self) extends AnyVal {
     
     inline def setSHA256_DSA(value: String): Self = StObject.set(x, "SHA256_DSA", value.asInstanceOf[js.Any])
     

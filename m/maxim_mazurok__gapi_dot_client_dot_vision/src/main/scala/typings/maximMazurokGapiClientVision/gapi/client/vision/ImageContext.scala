@@ -36,7 +36,8 @@ object ImageContext {
     __obj.asInstanceOf[ImageContext]
   }
   
-  extension [Self <: ImageContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageContext] (val x: Self) extends AnyVal {
     
     inline def setCropHintsParams(value: CropHintsParams): Self = StObject.set(x, "cropHintsParams", value.asInstanceOf[js.Any])
     

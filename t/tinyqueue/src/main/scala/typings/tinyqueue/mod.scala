@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[TinyQueue[Item]]
     }
     
-    extension [Self <: TinyQueue[?], Item](x: Self & TinyQueue[Item]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinyQueue[?], Item] (val x: Self & TinyQueue[Item]) extends AnyVal {
       
       inline def setData(value: js.Array[Item]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

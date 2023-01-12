@@ -18,7 +18,8 @@ object ManagedZoneServiceDirectoryConfig {
     __obj.asInstanceOf[ManagedZoneServiceDirectoryConfig]
   }
   
-  extension [Self <: ManagedZoneServiceDirectoryConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedZoneServiceDirectoryConfig] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

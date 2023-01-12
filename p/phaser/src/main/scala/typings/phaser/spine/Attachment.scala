@@ -17,7 +17,8 @@ object Attachment {
     __obj.asInstanceOf[Attachment]
   }
   
-  extension [Self <: Attachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: () => Attachment): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     

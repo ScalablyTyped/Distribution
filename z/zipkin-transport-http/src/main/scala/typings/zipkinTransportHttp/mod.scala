@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[ErrorLogger]
     }
     
-    extension [Self <: ErrorLogger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorLogger] (val x: Self) extends AnyVal {
       
       inline def setError(value: /* repeated */ Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     }

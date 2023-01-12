@@ -28,7 +28,8 @@ object AssociationOverview {
     __obj.asInstanceOf[AssociationOverview]
   }
   
-  extension [Self <: AssociationOverview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociationOverview] (val x: Self) extends AnyVal {
     
     inline def setAssociationStatusAggregatedCount(value: AssociationStatusAggregatedCount): Self = StObject.set(x, "AssociationStatusAggregatedCount", value.asInstanceOf[js.Any])
     

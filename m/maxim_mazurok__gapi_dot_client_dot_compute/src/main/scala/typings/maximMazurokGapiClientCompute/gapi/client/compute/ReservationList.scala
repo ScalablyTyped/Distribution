@@ -35,7 +35,8 @@ object ReservationList {
     __obj.asInstanceOf[ReservationList]
   }
   
-  extension [Self <: ReservationList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservationList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

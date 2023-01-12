@@ -21,7 +21,8 @@ object ResultJson {
     __obj.asInstanceOf[ResultJson]
   }
   
-  extension [Self <: ResultJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultJson] (val x: Self) extends AnyVal {
     
     inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

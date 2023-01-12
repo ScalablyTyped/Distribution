@@ -22,7 +22,8 @@ object DisplayNameLocalization {
     __obj.asInstanceOf[DisplayNameLocalization]
   }
   
-  extension [Self <: DisplayNameLocalization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayNameLocalization] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

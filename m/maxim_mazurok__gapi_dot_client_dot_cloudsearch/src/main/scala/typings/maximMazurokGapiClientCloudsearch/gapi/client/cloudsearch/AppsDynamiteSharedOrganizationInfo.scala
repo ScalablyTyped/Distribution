@@ -17,7 +17,8 @@ object AppsDynamiteSharedOrganizationInfo {
     __obj.asInstanceOf[AppsDynamiteSharedOrganizationInfo]
   }
   
-  extension [Self <: AppsDynamiteSharedOrganizationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedOrganizationInfo] (val x: Self) extends AnyVal {
     
     inline def setConsumerInfo(value: Any): Self = StObject.set(x, "consumerInfo", value.asInstanceOf[js.Any])
     

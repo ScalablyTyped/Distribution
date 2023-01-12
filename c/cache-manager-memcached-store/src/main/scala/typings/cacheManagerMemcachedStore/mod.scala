@@ -39,7 +39,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CacheManagerMemcachedStoreConfig]
     }
     
-    extension [Self <: CacheManagerMemcachedStoreConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheManagerMemcachedStoreConfig] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: CacheManagerMemcachedStoreOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CacheManagerMemcachedStoreConstructor]
     }
     
-    extension [Self <: CacheManagerMemcachedStoreConstructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheManagerMemcachedStoreConstructor] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: CacheManagerMemcachedStoreConfig => Store): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
@@ -95,7 +97,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CacheManagerMemcachedStoreOptions]
     }
     
-    extension [Self <: CacheManagerMemcachedStoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheManagerMemcachedStoreOptions] (val x: Self) extends AnyVal {
       
       inline def setAutodiscover(value: Boolean): Self = StObject.set(x, "autodiscover", value.asInstanceOf[js.Any])
       

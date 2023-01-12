@@ -18,7 +18,8 @@ object ModelCursor {
     __obj.asInstanceOf[ModelCursor]
   }
   
-  extension [Self <: ModelCursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelCursor] (val x: Self) extends AnyVal {
     
     inline def setModelCursor(value: default): Self = StObject.set(x, "modelCursor", value.asInstanceOf[js.Any])
     

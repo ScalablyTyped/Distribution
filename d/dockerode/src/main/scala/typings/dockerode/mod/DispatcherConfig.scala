@@ -15,7 +15,8 @@ object DispatcherConfig {
     __obj.asInstanceOf[DispatcherConfig]
   }
   
-  extension [Self <: DispatcherConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DispatcherConfig] (val x: Self) extends AnyVal {
     
     inline def setHeartbeatPeriod(value: Duration): Self = StObject.set(x, "HeartbeatPeriod", value.asInstanceOf[js.Any])
     

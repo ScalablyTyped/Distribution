@@ -147,7 +147,8 @@ object leafletMod {
       __obj.asInstanceOf[FreeHandShapesOptions]
     }
     
-    extension [Self <: FreeHandShapesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FreeHandShapesOptions] (val x: Self) extends AnyVal {
       
       inline def setConcave_polygons(value: Boolean): Self = StObject.set(x, "concave_polygons", value.asInstanceOf[js.Any])
       
@@ -186,7 +187,8 @@ object leafletMod {
       __obj.asInstanceOf[Polygon]
     }
     
-    extension [Self <: Polygon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Polygon] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

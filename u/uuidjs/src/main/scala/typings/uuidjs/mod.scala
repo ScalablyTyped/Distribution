@@ -150,7 +150,8 @@ object mod {
       __obj.asInstanceOf[UUID]
     }
     
-    extension [Self <: UUID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UUID] (val x: Self) extends AnyVal {
       
       inline def setBitFields(value: UUIDFields[String]): Self = StObject.set(x, "bitFields", value.asInstanceOf[js.Any])
       
@@ -210,7 +211,8 @@ object mod {
       __obj.asInstanceOf[UUIDClass]
     }
     
-    extension [Self <: UUIDClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UUIDClass] (val x: Self) extends AnyVal {
       
       inline def setBitFields(value: UUIDFields[String]): Self = StObject.set(x, "bitFields", value.asInstanceOf[js.Any])
       

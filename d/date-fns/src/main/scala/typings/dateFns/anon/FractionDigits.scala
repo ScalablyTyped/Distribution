@@ -17,7 +17,8 @@ object FractionDigits {
     __obj.asInstanceOf[FractionDigits]
   }
   
-  extension [Self <: FractionDigits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FractionDigits] (val x: Self) extends AnyVal {
     
     inline def setFractionDigits(value: typings.dateFns.dateFnsInts.`0` | typings.dateFns.dateFnsInts.`1` | `2` | `3`): Self = StObject.set(x, "fractionDigits", value.asInstanceOf[js.Any])
     

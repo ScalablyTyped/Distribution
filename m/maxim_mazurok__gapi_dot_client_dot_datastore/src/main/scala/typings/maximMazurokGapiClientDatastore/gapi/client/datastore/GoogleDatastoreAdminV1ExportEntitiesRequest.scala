@@ -31,7 +31,8 @@ object GoogleDatastoreAdminV1ExportEntitiesRequest {
     __obj.asInstanceOf[GoogleDatastoreAdminV1ExportEntitiesRequest]
   }
   
-  extension [Self <: GoogleDatastoreAdminV1ExportEntitiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDatastoreAdminV1ExportEntitiesRequest] (val x: Self) extends AnyVal {
     
     inline def setEntityFilter(value: GoogleDatastoreAdminV1EntityFilter): Self = StObject.set(x, "entityFilter", value.asInstanceOf[js.Any])
     

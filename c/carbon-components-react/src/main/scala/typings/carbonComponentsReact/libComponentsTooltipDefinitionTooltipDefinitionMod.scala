@@ -486,7 +486,8 @@ object libComponentsTooltipDefinitionTooltipDefinitionMod extends Shortcut {
       __obj.asInstanceOf[TooltipDefinitionProps]
     }
     
-    extension [Self <: TooltipDefinitionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipDefinitionProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object SharedImagePermissions {
     __obj.asInstanceOf[SharedImagePermissions]
   }
   
-  extension [Self <: SharedImagePermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedImagePermissions] (val x: Self) extends AnyVal {
     
     inline def setImagePermissions(value: ImagePermissions): Self = StObject.set(x, "imagePermissions", value.asInstanceOf[js.Any])
     

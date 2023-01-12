@@ -30,7 +30,8 @@ object Selector {
     __obj.asInstanceOf[Selector]
   }
   
-  extension [Self <: Selector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Selector] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

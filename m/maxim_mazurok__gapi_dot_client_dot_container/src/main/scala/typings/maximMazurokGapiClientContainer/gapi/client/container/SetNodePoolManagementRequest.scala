@@ -37,7 +37,8 @@ object SetNodePoolManagementRequest {
     __obj.asInstanceOf[SetNodePoolManagementRequest]
   }
   
-  extension [Self <: SetNodePoolManagementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetNodePoolManagementRequest] (val x: Self) extends AnyVal {
     
     inline def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     

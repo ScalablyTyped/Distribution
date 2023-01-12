@@ -20,7 +20,8 @@ object EventBreakpoints {
       __obj.asInstanceOf[RemoveInstrumentationBreakpointRequest]
     }
     
-    extension [Self <: RemoveInstrumentationBreakpointRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveInstrumentationBreakpointRequest] (val x: Self) extends AnyVal {
       
       inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     }
@@ -40,7 +41,8 @@ object EventBreakpoints {
       __obj.asInstanceOf[SetInstrumentationBreakpointRequest]
     }
     
-    extension [Self <: SetInstrumentationBreakpointRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetInstrumentationBreakpointRequest] (val x: Self) extends AnyVal {
       
       inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     }

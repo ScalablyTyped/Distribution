@@ -20,7 +20,8 @@ object MappingMurmur3HashProperty {
     __obj.asInstanceOf[MappingMurmur3HashProperty]
   }
   
-  extension [Self <: MappingMurmur3HashProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingMurmur3HashProperty] (val x: Self) extends AnyVal {
     
     inline def setType(value: murmur3): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

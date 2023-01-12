@@ -17,7 +17,8 @@ object MoreLinkRootState {
     __obj.asInstanceOf[MoreLinkRootState]
   }
   
-  extension [Self <: MoreLinkRootState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoreLinkRootState] (val x: Self) extends AnyVal {
     
     inline def setIsPopoverOpen(value: Boolean): Self = StObject.set(x, "isPopoverOpen", value.asInstanceOf[js.Any])
     

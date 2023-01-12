@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Latitude]
     }
     
-    extension [Self <: Latitude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Latitude] (val x: Self) extends AnyVal {
       
       inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[LocationServicesEnabled]
     }
     
-    extension [Self <: LocationServicesEnabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocationServicesEnabled] (val x: Self) extends AnyVal {
       
       inline def setLocationServicesEnabled(value: Boolean): Self = StObject.set(x, "locationServicesEnabled", value.asInstanceOf[js.Any])
     }
@@ -58,7 +60,8 @@ object anon {
       __obj.asInstanceOf[PickLocationGeocodedLocat]
     }
     
-    extension [Self <: PickLocationGeocodedLocat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickLocationGeocodedLocat] (val x: Self) extends AnyVal {
       
       inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       

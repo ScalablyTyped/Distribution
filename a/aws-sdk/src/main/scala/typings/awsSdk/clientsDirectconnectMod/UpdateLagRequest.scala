@@ -33,7 +33,8 @@ object UpdateLagRequest {
     __obj.asInstanceOf[UpdateLagRequest]
   }
   
-  extension [Self <: UpdateLagRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateLagRequest] (val x: Self) extends AnyVal {
     
     inline def setEncryptionMode(value: EncryptionMode): Self = StObject.set(x, "encryptionMode", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object SVGStopElement {
     __obj.asInstanceOf[SVGStopElement]
   }
   
-  extension [Self <: SVGStopElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGStopElement] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: SVGAnimatedString): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

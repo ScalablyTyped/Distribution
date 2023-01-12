@@ -28,7 +28,8 @@ object GetArchitectureRecommendationsResponse {
     __obj.asInstanceOf[GetArchitectureRecommendationsResponse]
   }
   
-  extension [Self <: GetArchitectureRecommendationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetArchitectureRecommendationsResponse] (val x: Self) extends AnyVal {
     
     inline def setLastAuditTimestamp(value: js.Date): Self = StObject.set(x, "LastAuditTimestamp", value.asInstanceOf[js.Any])
     

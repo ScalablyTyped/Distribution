@@ -90,7 +90,8 @@ object namespacesUrlbarMod {
         __obj.asInstanceOf[Query]
       }
       
-      extension [Self <: Query](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
         
         inline def setIsPrivate(value: Boolean): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
         
@@ -138,7 +139,8 @@ object namespacesUrlbarMod {
         __obj.asInstanceOf[Result]
       }
       
-      extension [Self <: Result](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
         
         inline def setPayload(value: ResultPayloadType): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
         
@@ -205,7 +207,8 @@ object namespacesUrlbarMod {
         __obj.asInstanceOf[SearchOptions]
       }
       
-      extension [Self <: SearchOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
         
         inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
         
@@ -337,7 +340,8 @@ object namespacesUrlbarMod {
         __obj.asInstanceOf[onBehaviorRequestedEvent]
       }
       
-      extension [Self <: onBehaviorRequestedEvent](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: onBehaviorRequestedEvent] (val x: Self) extends AnyVal {
         
         inline def setAddListener(value: (js.Function1[/* query */ Query, OnBehaviorRequestedReturnEnum], String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       }
@@ -370,7 +374,8 @@ object namespacesUrlbarMod {
         __obj.asInstanceOf[onEngagementEvent]
       }
       
-      extension [Self <: onEngagementEvent](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: onEngagementEvent] (val x: Self) extends AnyVal {
         
         inline def setAddListener(value: (js.Function1[/* state */ EngagementState, Unit], String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       }
@@ -404,7 +409,8 @@ object namespacesUrlbarMod {
         __obj.asInstanceOf[onQueryCanceledEvent]
       }
       
-      extension [Self <: onQueryCanceledEvent](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: onQueryCanceledEvent] (val x: Self) extends AnyVal {
         
         inline def setAddListener(value: (js.Function1[/* query */ Query, Unit], String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       }
@@ -445,7 +451,8 @@ object namespacesUrlbarMod {
         __obj.asInstanceOf[onResultPickedEvent]
       }
       
-      extension [Self <: onResultPickedEvent](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: onResultPickedEvent] (val x: Self) extends AnyVal {
         
         inline def setAddListener(
           value: (js.Function2[/* payload */ OnResultPickedPayloadType, /* elementName */ String, Unit], String) => Unit
@@ -482,7 +489,8 @@ object namespacesUrlbarMod {
         __obj.asInstanceOf[onResultsRequestedEvent]
       }
       
-      extension [Self <: onResultsRequestedEvent](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: onResultsRequestedEvent] (val x: Self) extends AnyVal {
         
         inline def setAddListener(value: (js.Function1[/* query */ Query, js.Array[Result]], String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       }

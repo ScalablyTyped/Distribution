@@ -34,7 +34,8 @@ object Always {
     __obj.asInstanceOf[Always]
   }
   
-  extension [Self <: Always](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Always] (val x: Self) extends AnyVal {
     
     inline def setAlways(value: /* param */ ApiResponse | ApiError => Unit): Self = StObject.set(x, "always", js.Any.fromFunction1(value))
     

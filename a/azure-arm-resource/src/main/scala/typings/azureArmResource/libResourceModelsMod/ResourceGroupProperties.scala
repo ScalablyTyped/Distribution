@@ -18,7 +18,8 @@ object ResourceGroupProperties {
     __obj.asInstanceOf[ResourceGroupProperties]
   }
   
-  extension [Self <: ResourceGroupProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceGroupProperties] (val x: Self) extends AnyVal {
     
     inline def setProvisioningState(value: String): Self = StObject.set(x, "provisioningState", value.asInstanceOf[js.Any])
     

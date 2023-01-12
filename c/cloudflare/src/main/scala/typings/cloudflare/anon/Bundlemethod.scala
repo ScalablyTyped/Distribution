@@ -36,7 +36,8 @@ object Bundlemethod {
     __obj.asInstanceOf[Bundlemethod]
   }
   
-  extension [Self <: Bundlemethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bundlemethod] (val x: Self) extends AnyVal {
     
     inline def setBundle_method(value: String): Self = StObject.set(x, "bundle_method", value.asInstanceOf[js.Any])
     

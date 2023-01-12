@@ -21,7 +21,8 @@ object ComplexTypeOptions {
     __obj.asInstanceOf[ComplexTypeOptions]
   }
   
-  extension [Self <: ComplexTypeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComplexTypeOptions] (val x: Self) extends AnyVal {
     
     inline def setCustom(value: js.Object): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     

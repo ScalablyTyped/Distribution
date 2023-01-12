@@ -22,7 +22,8 @@ object AttrsAvgPool3DGradAttrs {
     __obj.asInstanceOf[AttrsAvgPool3DGradAttrs]
   }
   
-  extension [Self <: AttrsAvgPool3DGradAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsAvgPool3DGradAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: AvgPool3DGradAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

@@ -430,7 +430,8 @@ object mod {
       __obj.asInstanceOf[DataTableColumn]
     }
     
-    extension [Self <: DataTableColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTableColumn] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -477,7 +478,8 @@ object mod {
       __obj.asInstanceOf[DataTableColumnOptions]
     }
     
-    extension [Self <: DataTableColumnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTableColumnOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -557,7 +559,8 @@ object mod {
       __obj.asInstanceOf[DataTableExportOptions]
     }
     
-    extension [Self <: DataTableExportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTableExportOptions] (val x: Self) extends AnyVal {
       
       inline def setColumnDelimiter(value: String): Self = StObject.set(x, "columnDelimiter", value.asInstanceOf[js.Any])
       
@@ -624,7 +627,8 @@ object mod {
       __obj.asInstanceOf[DataTableImportOptions]
     }
     
-    extension [Self <: DataTableImportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTableImportOptions] (val x: Self) extends AnyVal {
       
       inline def setColumnDelimiter(value: String): Self = StObject.set(x, "columnDelimiter", value.asInstanceOf[js.Any])
       
@@ -661,7 +665,8 @@ object mod {
       __obj.asInstanceOf[DataTableLabels]
     }
     
-    extension [Self <: DataTableLabels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTableLabels] (val x: Self) extends AnyVal {
       
       inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
@@ -694,7 +699,8 @@ object mod {
       __obj.asInstanceOf[DataTableLayout]
     }
     
-    extension [Self <: DataTableLayout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTableLayout] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -760,7 +766,8 @@ object mod {
       __obj.asInstanceOf[DataTableOptions]
     }
     
-    extension [Self <: DataTableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTableOptions] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[DataTableColumnOptions]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

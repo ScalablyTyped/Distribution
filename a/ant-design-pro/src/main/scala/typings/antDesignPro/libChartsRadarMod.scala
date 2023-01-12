@@ -35,7 +35,8 @@ object libChartsRadarMod {
       __obj.asInstanceOf[IRadarProps]
     }
     
-    extension [Self <: IRadarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRadarProps] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Label]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

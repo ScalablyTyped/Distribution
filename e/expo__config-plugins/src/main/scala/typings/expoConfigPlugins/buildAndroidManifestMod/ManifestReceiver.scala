@@ -18,7 +18,8 @@ object ManifestReceiver {
     __obj.asInstanceOf[ManifestReceiver]
   }
   
-  extension [Self <: ManifestReceiver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestReceiver] (val x: Self) extends AnyVal {
     
     inline def set$(value: typings.expoConfigPlugins.anon.AndroidManifestAttributes): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
     

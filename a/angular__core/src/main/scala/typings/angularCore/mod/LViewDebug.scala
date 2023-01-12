@@ -106,7 +106,8 @@ object LViewDebug {
     __obj.asInstanceOf[LViewDebug[T]]
   }
   
-  extension [Self <: LViewDebug[?], T](x: Self & LViewDebug[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LViewDebug[?], T] (val x: Self & LViewDebug[T]) extends AnyVal {
     
     inline def setChildViews(value: js.Array[LViewDebug[Any] | LContainerDebug]): Self = StObject.set(x, "childViews", value.asInstanceOf[js.Any])
     

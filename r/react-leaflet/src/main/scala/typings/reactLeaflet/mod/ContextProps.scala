@@ -15,7 +15,8 @@ object ContextProps {
     __obj.asInstanceOf[ContextProps]
   }
   
-  extension [Self <: ContextProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextProps] (val x: Self) extends AnyVal {
     
     inline def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
     

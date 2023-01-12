@@ -23,7 +23,8 @@ object RuleResult {
     __obj.asInstanceOf[RuleResult]
   }
   
-  extension [Self <: RuleResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleResult] (val x: Self) extends AnyVal {
     
     inline def setOutcomes(value: ListOfStrings): Self = StObject.set(x, "outcomes", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object DeviceMinutes {
     __obj.asInstanceOf[DeviceMinutes]
   }
   
-  extension [Self <: DeviceMinutes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceMinutes] (val x: Self) extends AnyVal {
     
     inline def setMetered(value: Double): Self = StObject.set(x, "metered", value.asInstanceOf[js.Any])
     

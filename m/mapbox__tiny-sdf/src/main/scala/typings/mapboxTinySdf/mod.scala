@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[TinySDF]
     }
     
-    extension [Self <: TinySDF](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinySDF] (val x: Self) extends AnyVal {
       
       inline def setDraw(value: String => Data): Self = StObject.set(x, "draw", js.Any.fromFunction1(value))
     }
@@ -58,7 +59,8 @@ object mod {
       __obj.asInstanceOf[TinySDFOptions]
     }
     
-    extension [Self <: TinySDFOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinySDFOptions] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: Double): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       

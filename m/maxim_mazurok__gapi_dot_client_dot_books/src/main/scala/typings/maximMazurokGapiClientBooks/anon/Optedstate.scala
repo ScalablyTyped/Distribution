@@ -15,7 +15,8 @@ object Optedstate {
     __obj.asInstanceOf[Optedstate]
   }
   
-  extension [Self <: Optedstate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Optedstate] (val x: Self) extends AnyVal {
     
     inline def setOpted_state(value: String): Self = StObject.set(x, "opted_state", value.asInstanceOf[js.Any])
     

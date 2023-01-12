@@ -29,7 +29,8 @@ object ResumeOptions {
     __obj.asInstanceOf[ResumeOptions]
   }
   
-  extension [Self <: ResumeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResumeOptions] (val x: Self) extends AnyVal {
     
     inline def setBatchSize(value: scala.Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     

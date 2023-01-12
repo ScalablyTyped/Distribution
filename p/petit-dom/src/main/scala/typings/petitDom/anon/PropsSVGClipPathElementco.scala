@@ -638,7 +638,8 @@ object PropsSVGClipPathElementco {
     __obj.asInstanceOf[PropsSVGClipPathElementco]
   }
   
-  extension [Self <: PropsSVGClipPathElementco](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsSVGClipPathElementco] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

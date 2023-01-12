@@ -36,7 +36,8 @@ object distServicesContextServiceMod {
     @js.native
     val ^ : DefinedToken = js.native
     
-    extension [Self <: ContextService[?], Context](x: Self & ContextService[Context]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextService[?], Context] (val x: Self & ContextService[Context]) extends AnyVal {
       
       inline def setApplyCursorStyle(value: String => Unit): Self = StObject.set(x, "applyCursorStyle", js.Any.fromFunction1(value))
       
@@ -78,7 +79,8 @@ object distServicesContextServiceMod {
       __obj.asInstanceOf[DataURLOptions]
     }
     
-    extension [Self <: DataURLOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataURLOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoderOptions(value: Double): Self = StObject.set(x, "encoderOptions", value.asInstanceOf[js.Any])
       

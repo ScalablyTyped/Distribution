@@ -33,7 +33,8 @@ object CollectionSummary {
     __obj.asInstanceOf[CollectionSummary]
   }
   
-  extension [Self <: CollectionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

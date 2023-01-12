@@ -396,7 +396,8 @@ object libLayoutPanelLayoutPanelMod {
       __obj.asInstanceOf[LayoutPanelHeadProps]
     }
     
-    extension [Self <: LayoutPanelHeadProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutPanelHeadProps] (val x: Self) extends AnyVal {
       
       inline def setHeadingLevel(value: `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "headingLevel", value.asInstanceOf[js.Any])
       

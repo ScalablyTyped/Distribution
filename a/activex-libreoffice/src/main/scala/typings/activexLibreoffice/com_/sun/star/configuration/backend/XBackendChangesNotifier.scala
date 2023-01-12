@@ -41,7 +41,8 @@ object XBackendChangesNotifier {
     __obj.asInstanceOf[XBackendChangesNotifier]
   }
   
-  extension [Self <: XBackendChangesNotifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBackendChangesNotifier] (val x: Self) extends AnyVal {
     
     inline def setAddChangesListener(value: (XBackendChangesListener, String) => Unit): Self = StObject.set(x, "addChangesListener", js.Any.fromFunction2(value))
     

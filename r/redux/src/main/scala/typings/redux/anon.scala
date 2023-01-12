@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[`0`[Ext1, Ext2]]
     }
     
-    extension [Self <: `0`[?, ?], Ext1, Ext2](x: Self & (`0`[Ext1, Ext2])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`[?, ?], Ext1, Ext2] (val x: Self & (`0`[Ext1, Ext2])) extends AnyVal {
       
       inline def setDispatch(value: Ext1 & Ext2): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
     }
@@ -34,7 +35,8 @@ object anon {
       __obj.asInstanceOf[`1`[Ext1, Ext2, Ext3]]
     }
     
-    extension [Self <: `1`[?, ?, ?], Ext1, Ext2, Ext3](x: Self & (`1`[Ext1, Ext2, Ext3])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`[?, ?, ?], Ext1, Ext2, Ext3] (val x: Self & (`1`[Ext1, Ext2, Ext3])) extends AnyVal {
       
       inline def setDispatch(value: Ext1 & Ext2 & Ext3): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
     }
@@ -51,7 +53,8 @@ object anon {
       __obj.asInstanceOf[`2`[Ext1, Ext2, Ext3, Ext4]]
     }
     
-    extension [Self <: `2`[?, ?, ?, ?], Ext1, Ext2, Ext3, Ext4](x: Self & (`2`[Ext1, Ext2, Ext3, Ext4])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `2`[?, ?, ?, ?], Ext1, Ext2, Ext3, Ext4] (val x: Self & (`2`[Ext1, Ext2, Ext3, Ext4])) extends AnyVal {
       
       inline def setDispatch(value: Ext1 & Ext2 & Ext3 & Ext4): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
     }
@@ -68,7 +71,8 @@ object anon {
       __obj.asInstanceOf[`3`[Ext1, Ext2, Ext3, Ext4, Ext5]]
     }
     
-    extension [Self <: `3`[?, ?, ?, ?, ?], Ext1, Ext2, Ext3, Ext4, Ext5](x: Self & (`3`[Ext1, Ext2, Ext3, Ext4, Ext5])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `3`[?, ?, ?, ?, ?], Ext1, Ext2, Ext3, Ext4, Ext5] (val x: Self & (`3`[Ext1, Ext2, Ext3, Ext4, Ext5])) extends AnyVal {
       
       inline def setDispatch(value: Ext1 & Ext2 & Ext3 & Ext4 & Ext5): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
     }
@@ -85,7 +89,8 @@ object anon {
       __obj.asInstanceOf[Dispatch[Ext1]]
     }
     
-    extension [Self <: Dispatch[?], Ext1](x: Self & Dispatch[Ext1]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dispatch[?], Ext1] (val x: Self & Dispatch[Ext1]) extends AnyVal {
       
       inline def setDispatch(value: Ext1): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
     }
@@ -102,7 +107,8 @@ object anon {
       __obj.asInstanceOf[DispatchExt[Ext]]
     }
     
-    extension [Self <: DispatchExt[?], Ext](x: Self & DispatchExt[Ext]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DispatchExt[?], Ext] (val x: Self & DispatchExt[Ext]) extends AnyVal {
       
       inline def setDispatch(value: Ext): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
     }
@@ -121,7 +127,8 @@ object anon {
       __obj.asInstanceOf[Unsubscribe]
     }
     
-    extension [Self <: Unsubscribe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unsubscribe] (val x: Self) extends AnyVal {
       
       inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }

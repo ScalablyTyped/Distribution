@@ -80,7 +80,8 @@ object TableListListItem {
     __obj.asInstanceOf[TableListListItem]
   }
   
-  extension [Self <: TableListListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableListListItem] (val x: Self) extends AnyVal {
     
     inline def setActionsOpen(value: Boolean): Self = StObject.set(x, "actionsOpen", value.asInstanceOf[js.Any])
     

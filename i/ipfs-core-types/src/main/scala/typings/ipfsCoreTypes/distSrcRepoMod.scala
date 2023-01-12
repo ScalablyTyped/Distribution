@@ -50,7 +50,8 @@ object distSrcRepoMod {
       __obj.asInstanceOf[GCError]
     }
     
-    extension [Self <: GCError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GCError] (val x: Self) extends AnyVal {
       
       inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
     }
@@ -69,7 +70,8 @@ object distSrcRepoMod {
       __obj.asInstanceOf[GCOptions]
     }
     
-    extension [Self <: GCOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GCOptions] (val x: Self) extends AnyVal {
       
       inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
@@ -110,7 +112,8 @@ object distSrcRepoMod {
       __obj.asInstanceOf[GCSuccess]
     }
     
-    extension [Self <: GCSuccess](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GCSuccess] (val x: Self) extends AnyVal {
       
       inline def setCid(value: CID[Any, Double, Double, Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     }
@@ -141,7 +144,8 @@ object distSrcRepoMod {
       __obj.asInstanceOf[StatResult]
     }
     
-    extension [Self <: StatResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatResult] (val x: Self) extends AnyVal {
       
       inline def setNumObjects(value: js.BigInt): Self = StObject.set(x, "numObjects", value.asInstanceOf[js.Any])
       

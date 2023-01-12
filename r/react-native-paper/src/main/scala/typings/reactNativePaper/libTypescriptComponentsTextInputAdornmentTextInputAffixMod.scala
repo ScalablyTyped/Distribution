@@ -95,7 +95,8 @@ object libTypescriptComponentsTextInputAdornmentTextInputAffixMod extends Shortc
       __obj.asInstanceOf[ContextState]
     }
     
-    extension [Self <: ContextState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextState] (val x: Self) extends AnyVal {
       
       inline def setMaxFontSizeMultiplier(value: Double): Self = StObject.set(x, "maxFontSizeMultiplier", value.asInstanceOf[js.Any])
       
@@ -155,7 +156,8 @@ object libTypescriptComponentsTextInputAdornmentTextInputAffixMod extends Shortc
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
       

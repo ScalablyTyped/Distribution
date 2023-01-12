@@ -16,7 +16,8 @@ object FrameManager2 {
     __obj.asInstanceOf[FrameManager2]
   }
   
-  extension [Self <: FrameManager2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameManager2] (val x: Self) extends AnyVal {
     
     inline def setFrame(value: String => Frame | Null): Self = StObject.set(x, "frame", js.Any.fromFunction1(value))
   }

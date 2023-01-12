@@ -24,7 +24,8 @@ object distNodeEsmSrcModelApplicationVerifierMod {
       __obj.asInstanceOf[ApplicationVerifierInternal]
     }
     
-    extension [Self <: ApplicationVerifierInternal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplicationVerifierInternal] (val x: Self) extends AnyVal {
       
       inline def set_reset(value: () => Unit): Self = StObject.set(x, "_reset", js.Any.fromFunction0(value))
     }

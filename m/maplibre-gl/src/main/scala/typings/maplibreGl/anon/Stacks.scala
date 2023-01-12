@@ -16,7 +16,8 @@ object Stacks {
     __obj.asInstanceOf[Stacks]
   }
   
-  extension [Self <: Stacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stacks] (val x: Self) extends AnyVal {
     
     inline def setStacks(value: StringDictionary[js.Array[Double]]): Self = StObject.set(x, "stacks", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object ConnectionState {
     __obj.asInstanceOf[ConnectionState]
   }
   
-  extension [Self <: ConnectionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionState] (val x: Self) extends AnyVal {
     
     inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     

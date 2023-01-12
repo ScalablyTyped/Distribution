@@ -16,7 +16,8 @@ object ThirdPartyOnlyConfig {
     __obj.asInstanceOf[ThirdPartyOnlyConfig]
   }
   
-  extension [Self <: ThirdPartyOnlyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThirdPartyOnlyConfig] (val x: Self) extends AnyVal {
     
     inline def setPixelOrderIdReportingEnabled(value: Boolean): Self = StObject.set(x, "pixelOrderIdReportingEnabled", value.asInstanceOf[js.Any])
     

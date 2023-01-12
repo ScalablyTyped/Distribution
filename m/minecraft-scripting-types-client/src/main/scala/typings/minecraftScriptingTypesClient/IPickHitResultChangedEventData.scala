@@ -28,7 +28,8 @@ object IPickHitResultChangedEventData {
     __obj.asInstanceOf[IPickHitResultChangedEventData]
   }
   
-  extension [Self <: IPickHitResultChangedEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPickHitResultChangedEventData] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

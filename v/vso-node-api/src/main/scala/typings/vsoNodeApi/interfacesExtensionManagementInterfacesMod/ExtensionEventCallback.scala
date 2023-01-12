@@ -18,7 +18,8 @@ object ExtensionEventCallback {
     __obj.asInstanceOf[ExtensionEventCallback]
   }
   
-  extension [Self <: ExtensionEventCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionEventCallback] (val x: Self) extends AnyVal {
     
     inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }

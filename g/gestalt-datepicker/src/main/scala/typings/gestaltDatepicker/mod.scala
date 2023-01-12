@@ -72,7 +72,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DatePickerProps]
     }
     
-    extension [Self <: DatePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -187,7 +188,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Locale]
     }
     
-    extension [Self <: Locale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object DeleteParallelDataRequest {
     __obj.asInstanceOf[DeleteParallelDataRequest]
   }
   
-  extension [Self <: DeleteParallelDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteParallelDataRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

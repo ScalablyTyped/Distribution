@@ -53,7 +53,8 @@ object TestInvokeAuthorizerRequest {
     __obj.asInstanceOf[TestInvokeAuthorizerRequest]
   }
   
-  extension [Self <: TestInvokeAuthorizerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestInvokeAuthorizerRequest] (val x: Self) extends AnyVal {
     
     inline def setAdditionalContext(value: MapOfStringToString): Self = StObject.set(x, "additionalContext", value.asInstanceOf[js.Any])
     

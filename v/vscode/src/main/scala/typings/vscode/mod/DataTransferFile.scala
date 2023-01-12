@@ -31,7 +31,8 @@ object DataTransferFile {
     __obj.asInstanceOf[DataTransferFile]
   }
   
-  extension [Self <: DataTransferFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTransferFile] (val x: Self) extends AnyVal {
     
     inline def setData(value: () => Thenable[js.typedarray.Uint8Array]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
     

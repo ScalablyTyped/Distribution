@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[ICompositeOptions]
     }
     
-    extension [Self <: ICompositeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICompositeOptions] (val x: Self) extends AnyVal {
       
       inline def setCompositeData(value: Buffer): Self = StObject.set(x, "compositeData", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object mod {
       __obj.asInstanceOf[IConstPixelsItem]
     }
     
-    extension [Self <: IConstPixelsItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConstPixelsItem] (val x: Self) extends AnyVal {
       
       inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object mod {
       __obj.asInstanceOf[IConstPixelsOptions]
     }
     
-    extension [Self <: IConstPixelsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConstPixelsOptions] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -165,7 +168,8 @@ object mod {
       __obj.asInstanceOf[IConvertOptions]
     }
     
-    extension [Self <: IConvertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConvertOptions] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       
@@ -254,7 +258,8 @@ object mod {
       __obj.asInstanceOf[IIdentifyOptions]
     }
     
-    extension [Self <: IIdentifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIdentifyOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -289,7 +294,8 @@ object mod {
       __obj.asInstanceOf[IIdentifyResult]
     }
     
-    extension [Self <: IIdentifyResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIdentifyResult] (val x: Self) extends AnyVal {
       
       inline def setDensity(value: Height): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
       
@@ -322,7 +328,8 @@ object mod {
       __obj.asInstanceOf[IQuantizeColorsItem]
     }
     
-    extension [Self <: IQuantizeColorsItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IQuantizeColorsItem] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -351,7 +358,8 @@ object mod {
       __obj.asInstanceOf[IQuantizeColorsOptions]
     }
     
-    extension [Self <: IQuantizeColorsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IQuantizeColorsOptions] (val x: Self) extends AnyVal {
       
       inline def setColors(value: Double): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -410,7 +418,8 @@ object mod {
       __obj.asInstanceOf[IStreamConvertOptions]
     }
     
-    extension [Self <: IStreamConvertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStreamConvertOptions] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       

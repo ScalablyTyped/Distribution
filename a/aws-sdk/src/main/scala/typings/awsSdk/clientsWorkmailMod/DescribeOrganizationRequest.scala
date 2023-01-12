@@ -18,7 +18,8 @@ object DescribeOrganizationRequest {
     __obj.asInstanceOf[DescribeOrganizationRequest]
   }
   
-  extension [Self <: DescribeOrganizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeOrganizationRequest] (val x: Self) extends AnyVal {
     
     inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
   }

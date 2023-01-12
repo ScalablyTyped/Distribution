@@ -53,7 +53,8 @@ object StatusBar {
     __obj.asInstanceOf[StatusBar]
   }
   
-  extension [Self <: StatusBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusBar] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColorByHexString(value: String => Unit): Self = StObject.set(x, "backgroundColorByHexString", js.Any.fromFunction1(value))
     

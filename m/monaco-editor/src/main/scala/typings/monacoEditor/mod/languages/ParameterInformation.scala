@@ -26,7 +26,8 @@ object ParameterInformation {
     __obj.asInstanceOf[ParameterInformation]
   }
   
-  extension [Self <: ParameterInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterInformation] (val x: Self) extends AnyVal {
     
     inline def setDocumentation(value: String | IMarkdownString): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     

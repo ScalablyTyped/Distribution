@@ -52,7 +52,8 @@ object namespacesEventsMod {
         __obj.asInstanceOf[Event[T]]
       }
       
-      extension [Self <: Event[?], T /* <: js.Function1[/* repeated */ Any, Any] */](x: Self & Event[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Event[?], T /* <: js.Function1[/* repeated */ Any, Any] */] (val x: Self & Event[T]) extends AnyVal {
         
         inline def setAddListener(value: (T, /* repeated */ Any) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
         
@@ -104,7 +105,8 @@ object namespacesEventsMod {
         __obj.asInstanceOf[Rule]
       }
       
-      extension [Self <: Rule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
         
         inline def setActions(value: js.Array[Any]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
         
@@ -277,7 +279,8 @@ object namespacesEventsMod {
         __obj.asInstanceOf[UrlFilter]
       }
       
-      extension [Self <: UrlFilter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UrlFilter] (val x: Self) extends AnyVal {
         
         inline def setHostContains(value: String): Self = StObject.set(x, "hostContains", value.asInstanceOf[js.Any])
         

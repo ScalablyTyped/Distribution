@@ -151,7 +151,8 @@ object MarkerClusterer {
     __obj.asInstanceOf[MarkerClusterer]
   }
   
-  extension [Self <: MarkerClusterer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerClusterer] (val x: Self) extends AnyVal {
     
     inline def setAddMarker(value: Marker => Unit): Self = StObject.set(x, "addMarker", js.Any.fromFunction1(value))
     

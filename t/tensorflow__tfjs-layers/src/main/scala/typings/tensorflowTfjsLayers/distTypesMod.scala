@@ -23,7 +23,8 @@ object distTypesMod {
       __obj.asInstanceOf[HasShape]
     }
     
-    extension [Self <: HasShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasShape] (val x: Self) extends AnyVal {
       
       inline def setShape(value: Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object distTypesMod {
       __obj.asInstanceOf[NamedTensor]
     }
     
-    extension [Self <: NamedTensor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamedTensor] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

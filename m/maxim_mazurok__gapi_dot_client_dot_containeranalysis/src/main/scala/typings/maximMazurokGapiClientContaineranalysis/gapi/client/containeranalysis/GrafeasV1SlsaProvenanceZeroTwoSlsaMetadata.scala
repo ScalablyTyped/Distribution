@@ -23,7 +23,8 @@ object GrafeasV1SlsaProvenanceZeroTwoSlsaMetadata {
     __obj.asInstanceOf[GrafeasV1SlsaProvenanceZeroTwoSlsaMetadata]
   }
   
-  extension [Self <: GrafeasV1SlsaProvenanceZeroTwoSlsaMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrafeasV1SlsaProvenanceZeroTwoSlsaMetadata] (val x: Self) extends AnyVal {
     
     inline def setBuildFinishedOn(value: String): Self = StObject.set(x, "buildFinishedOn", value.asInstanceOf[js.Any])
     

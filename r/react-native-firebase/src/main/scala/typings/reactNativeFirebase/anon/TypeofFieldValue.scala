@@ -36,7 +36,8 @@ object TypeofFieldValue {
     __obj.asInstanceOf[TypeofFieldValue]
   }
   
-  extension [Self <: TypeofFieldValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofFieldValue] (val x: Self) extends AnyVal {
     
     inline def setArrayRemove(value: /* repeated */ AnyJs => FieldValue): Self = StObject.set(x, "arrayRemove", js.Any.fromFunction1(value))
     

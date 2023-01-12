@@ -28,7 +28,8 @@ object ExtensionQuery {
     __obj.asInstanceOf[ExtensionQuery]
   }
   
-  extension [Self <: ExtensionQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionQuery] (val x: Self) extends AnyVal {
     
     inline def setAssetTypes(value: js.Array[String]): Self = StObject.set(x, "assetTypes", value.asInstanceOf[js.Any])
     

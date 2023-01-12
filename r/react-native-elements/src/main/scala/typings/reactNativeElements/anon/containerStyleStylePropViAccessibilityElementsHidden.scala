@@ -310,7 +310,8 @@ object containerStyleStylePropViAccessibilityElementsHidden {
     __obj.asInstanceOf[containerStyleStylePropViAccessibilityElementsHidden]
   }
   
-  extension [Self <: containerStyleStylePropViAccessibilityElementsHidden](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: containerStyleStylePropViAccessibilityElementsHidden] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

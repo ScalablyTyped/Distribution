@@ -16,7 +16,8 @@ object LanguageConfig {
     __obj.asInstanceOf[LanguageConfig]
   }
   
-  extension [Self <: LanguageConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageConfig] (val x: Self) extends AnyVal {
     
     inline def setSpokenLanguages(value: js.Array[String]): Self = StObject.set(x, "spokenLanguages", value.asInstanceOf[js.Any])
     

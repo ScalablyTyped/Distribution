@@ -21,7 +21,8 @@ object S3 {
     __obj.asInstanceOf[S3]
   }
   
-  extension [Self <: S3](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3] (val x: Self) extends AnyVal {
     
     inline def setCustom(value: CloudFrontCustomOrigin): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
   }

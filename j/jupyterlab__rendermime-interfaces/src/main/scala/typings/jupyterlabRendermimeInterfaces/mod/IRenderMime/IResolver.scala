@@ -40,7 +40,8 @@ object IResolver {
     __obj.asInstanceOf[IResolver]
   }
   
-  extension [Self <: IResolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IResolver] (val x: Self) extends AnyVal {
     
     inline def setGetDownloadUrl(value: String => js.Promise[String]): Self = StObject.set(x, "getDownloadUrl", js.Any.fromFunction1(value))
     

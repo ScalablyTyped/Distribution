@@ -18,7 +18,8 @@ object BatchGetReportsInput {
     __obj.asInstanceOf[BatchGetReportsInput]
   }
   
-  extension [Self <: BatchGetReportsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetReportsInput] (val x: Self) extends AnyVal {
     
     inline def setReportArns(value: ReportArns): Self = StObject.set(x, "reportArns", value.asInstanceOf[js.Any])
     

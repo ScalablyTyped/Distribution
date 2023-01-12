@@ -33,7 +33,8 @@ object ReleaseApprovalHistory {
     __obj.asInstanceOf[ReleaseApprovalHistory]
   }
   
-  extension [Self <: ReleaseApprovalHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseApprovalHistory] (val x: Self) extends AnyVal {
     
     inline def setApprover(value: IdentityRef): Self = StObject.set(x, "approver", value.asInstanceOf[js.Any])
     

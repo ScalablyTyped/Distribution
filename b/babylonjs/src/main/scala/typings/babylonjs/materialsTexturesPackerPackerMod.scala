@@ -195,7 +195,8 @@ object materialsTexturesPackerPackerMod {
       __obj.asInstanceOf[ITexturePackerJSON]
     }
     
-    extension [Self <: ITexturePackerJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITexturePackerJSON] (val x: Self) extends AnyVal {
       
       inline def setFrames(value: js.Array[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
@@ -283,7 +284,8 @@ object materialsTexturesPackerPackerMod {
       __obj.asInstanceOf[ITexturePackerOptions]
     }
     
-    extension [Self <: ITexturePackerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITexturePackerOptions] (val x: Self) extends AnyVal {
       
       inline def setColnum(value: Double): Self = StObject.set(x, "colnum", value.asInstanceOf[js.Any])
       

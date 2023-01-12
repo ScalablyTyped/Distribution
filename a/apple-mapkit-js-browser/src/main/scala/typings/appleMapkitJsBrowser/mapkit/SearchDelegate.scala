@@ -40,7 +40,8 @@ object SearchDelegate {
     __obj.asInstanceOf[SearchDelegate]
   }
   
-  extension [Self <: SearchDelegate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchDelegate] (val x: Self) extends AnyVal {
     
     inline def setAutocompleteDidComplete(value: /* data */ SearchAutocompleteResponse => Unit): Self = StObject.set(x, "autocompleteDidComplete", js.Any.fromFunction1(value))
     

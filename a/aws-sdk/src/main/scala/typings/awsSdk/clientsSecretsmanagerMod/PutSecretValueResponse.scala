@@ -33,7 +33,8 @@ object PutSecretValueResponse {
     __obj.asInstanceOf[PutSecretValueResponse]
   }
   
-  extension [Self <: PutSecretValueResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutSecretValueResponse] (val x: Self) extends AnyVal {
     
     inline def setARN(value: SecretARNType): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

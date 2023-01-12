@@ -21,7 +21,8 @@ object DimensionLayerViewCreateLengthDimensionsOptions {
     __obj.asInstanceOf[DimensionLayerViewCreateLengthDimensionsOptions]
   }
   
-  extension [Self <: DimensionLayerViewCreateLengthDimensionsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionLayerViewCreateLengthDimensionsOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

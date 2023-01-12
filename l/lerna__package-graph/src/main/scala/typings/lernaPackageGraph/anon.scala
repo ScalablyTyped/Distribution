@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[PickResultgitCommittishgi]
     }
     
-    extension [Self <: PickResultgitCommittishgi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickResultgitCommittishgi] (val x: Self) extends AnyVal {
       
       inline def setFetchSpec(value: String): Self = StObject.set(x, "fetchSpec", value.asInstanceOf[js.Any])
       

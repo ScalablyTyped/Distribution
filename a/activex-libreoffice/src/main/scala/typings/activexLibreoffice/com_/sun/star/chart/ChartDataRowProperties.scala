@@ -222,7 +222,8 @@ object ChartDataRowProperties {
     __obj.asInstanceOf[ChartDataRowProperties]
   }
   
-  extension [Self <: ChartDataRowProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartDataRowProperties] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Double): Self = StObject.set(x, "Axis", value.asInstanceOf[js.Any])
     

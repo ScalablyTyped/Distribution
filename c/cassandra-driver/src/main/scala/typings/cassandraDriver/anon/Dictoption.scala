@@ -18,7 +18,8 @@ object Dictoption {
     __obj.asInstanceOf[Dictoption]
   }
   
-  extension [Self <: Dictoption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictoption] (val x: Self) extends AnyVal {
     
     inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object ChildrenArray {
     __obj.asInstanceOf[ChildrenArray]
   }
   
-  extension [Self <: ChildrenArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildrenArray] (val x: Self) extends AnyVal {
     
     inline def setChildrenArray(value: js.Array[ReactElement]): Self = StObject.set(x, "childrenArray", value.asInstanceOf[js.Any])
     

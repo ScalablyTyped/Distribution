@@ -37,7 +37,8 @@ object OpenJsCad {
       __obj.asInstanceOf[IViewerOptions]
     }
     
-    extension [Self <: IViewerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IViewerOptions] (val x: Self) extends AnyVal {
       
       inline def setBgColor(value: Double): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
       
@@ -223,7 +224,8 @@ object OpenJsCad {
       __obj.asInstanceOf[ProcessorOptions]
     }
     
-    extension [Self <: ProcessorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessorOptions] (val x: Self) extends AnyVal {
       
       inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
@@ -338,7 +340,8 @@ object OpenJsCad {
       __obj.asInstanceOf[ViewerSize]
     }
     
-    extension [Self <: ViewerSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewerSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

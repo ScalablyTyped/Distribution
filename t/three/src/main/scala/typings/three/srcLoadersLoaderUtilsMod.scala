@@ -21,7 +21,8 @@ object srcLoadersLoaderUtilsMod {
     @js.native
     val ^ : LoaderUtils = js.native
     
-    extension [Self <: LoaderUtils](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderUtils] (val x: Self) extends AnyVal {
       
       inline def setDecodeText(value: BufferSource => String): Self = StObject.set(x, "decodeText", js.Any.fromFunction1(value))
       

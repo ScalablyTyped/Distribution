@@ -48,7 +48,8 @@ object WorksheetView {
     __obj.asInstanceOf[WorksheetView]
   }
   
-  extension [Self <: WorksheetView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetView] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object libSrcMockFxTargetsStorageMod {
       __obj.asInstanceOf[StorageDefinitionConfiguration]
     }
     
-    extension [Self <: StorageDefinitionConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageDefinitionConfiguration] (val x: Self) extends AnyVal {
       
       inline def setLoadRequests(value: /* context */ Context => js.Promise[js.Array[Request]]): Self = StObject.set(x, "loadRequests", js.Any.fromFunction1(value))
       

@@ -23,7 +23,8 @@ object ResourceDetails {
     __obj.asInstanceOf[ResourceDetails]
   }
   
-  extension [Self <: ResourceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceDetails] (val x: Self) extends AnyVal {
     
     inline def setAwsEc2Instance(value: AwsEc2InstanceDetails): Self = StObject.set(x, "awsEc2Instance", value.asInstanceOf[js.Any])
     

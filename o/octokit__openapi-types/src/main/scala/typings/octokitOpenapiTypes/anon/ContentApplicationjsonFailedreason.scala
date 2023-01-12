@@ -15,7 +15,8 @@ object ContentApplicationjsonFailedreason {
     __obj.asInstanceOf[ContentApplicationjsonFailedreason]
   }
   
-  extension [Self <: ContentApplicationjsonFailedreason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonFailedreason] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonFailedreason): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

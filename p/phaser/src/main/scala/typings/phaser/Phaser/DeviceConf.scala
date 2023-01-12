@@ -69,7 +69,8 @@ object DeviceConf {
     __obj.asInstanceOf[DeviceConf]
   }
   
-  extension [Self <: DeviceConf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceConf] (val x: Self) extends AnyVal {
     
     inline def setAudio(value: Audio): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     

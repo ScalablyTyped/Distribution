@@ -33,7 +33,8 @@ object libCachedResponseMod {
       __obj.asInstanceOf[CachedResponse]
     }
     
-    extension [Self <: CachedResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CachedResponse] (val x: Self) extends AnyVal {
       
       inline def setBody(value: ReadableStream): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

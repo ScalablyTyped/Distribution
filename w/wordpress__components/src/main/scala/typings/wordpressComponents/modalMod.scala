@@ -129,7 +129,8 @@ object modalMod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setAria(value: Describedby): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
         

@@ -411,7 +411,8 @@ object VueI18nOptions {
     __obj.asInstanceOf[VueI18nOptions[Schema, Locales, Options]]
   }
   
-  extension [Self <: VueI18nOptions[?, ?, ?], Schema /* <: Datetime */, Locales /* <: DatetimeFormats | String */, Options /* <: ComposerOptions[
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VueI18nOptions[?, ?, ?], Schema /* <: Datetime */, Locales /* <: DatetimeFormats | String */, Options /* <: ComposerOptions[
     Schema, 
     Locales, 
     /* import warning: importer.ImportType#apply Failed type conversion: Locales extends {  messages :infer M} ? M : Locales extends string ? Locales : @intlify/core-base.@intlify/core-base.Locale */ js.Any, 
@@ -437,7 +438,7 @@ object VueI18nOptions {
   {}> */ js.Any, 
       /* import warning: importer.ImportType#apply Failed type conversion: Locales extends {  numberFormats :infer N} ? N : Locales extends string ? Locales : @intlify/core-base.@intlify/core-base.Locale */ js.Any
     ]
-  ] */](x: Self & (VueI18nOptions[Schema, Locales, Options])) {
+  ] */] (val x: Self & (VueI18nOptions[Schema, Locales, Options])) extends AnyVal {
     
     inline def setAvailableLocales(value: js.Array[Locale]): Self = StObject.set(x, "availableLocales", value.asInstanceOf[js.Any])
     

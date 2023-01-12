@@ -28,7 +28,8 @@ object SpecWatchEntity {
     __obj.asInstanceOf[SpecWatchEntity]
   }
   
-  extension [Self <: SpecWatchEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecWatchEntity] (val x: Self) extends AnyVal {
     
     inline def setDoc(value: SpecDocument): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     

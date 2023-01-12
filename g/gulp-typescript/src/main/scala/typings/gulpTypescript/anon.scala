@@ -393,7 +393,8 @@ object anon {
       __obj.asInstanceOf[Character]
     }
     
-    extension [Self <: Character](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Character] (val x: Self) extends AnyVal {
       
       inline def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
       
@@ -414,7 +415,8 @@ object anon {
       __obj.asInstanceOf[TypeofScriptSnapshot]
     }
     
-    extension [Self <: TypeofScriptSnapshot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofScriptSnapshot] (val x: Self) extends AnyVal {
       
       inline def setFromString(value: String => IScriptSnapshot): Self = StObject.set(x, "fromString", js.Any.fromFunction1(value))
     }

@@ -18,7 +18,8 @@ object SuppressionAttributes {
     __obj.asInstanceOf[SuppressionAttributes]
   }
   
-  extension [Self <: SuppressionAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuppressionAttributes] (val x: Self) extends AnyVal {
     
     inline def setSuppressedReasons(value: SuppressionListReasons): Self = StObject.set(x, "SuppressedReasons", value.asInstanceOf[js.Any])
     

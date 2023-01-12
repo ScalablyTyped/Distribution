@@ -29,7 +29,8 @@ object Activity {
     __obj.asInstanceOf[Activity]
   }
   
-  extension [Self <: Activity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
     
     inline def setCcy_exec_peak(value: js.Array[Double]): Self = StObject.set(x, "ccy_exec_peak", value.asInstanceOf[js.Any])
     

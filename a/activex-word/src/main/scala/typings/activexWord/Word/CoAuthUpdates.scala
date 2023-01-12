@@ -34,7 +34,8 @@ object CoAuthUpdates {
     __obj.asInstanceOf[CoAuthUpdates]
   }
   
-  extension [Self <: CoAuthUpdates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoAuthUpdates] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

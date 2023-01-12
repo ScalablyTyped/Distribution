@@ -34,7 +34,8 @@ object ZypperSettings {
     __obj.asInstanceOf[ZypperSettings]
   }
   
-  extension [Self <: ZypperSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZypperSettings] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

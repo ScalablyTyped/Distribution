@@ -17,7 +17,8 @@ object EscalationEventDefinition {
     __obj.asInstanceOf[EscalationEventDefinition]
   }
   
-  extension [Self <: EscalationEventDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EscalationEventDefinition] (val x: Self) extends AnyVal {
     
     inline def setEscalationRef(value: Escalation): Self = StObject.set(x, "escalationRef", value.asInstanceOf[js.Any])
   }

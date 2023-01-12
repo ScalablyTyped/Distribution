@@ -57,7 +57,8 @@ object FindPlaceFromPhoneNumberRequest {
     __obj.asInstanceOf[FindPlaceFromPhoneNumberRequest]
   }
   
-  extension [Self <: FindPlaceFromPhoneNumberRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindPlaceFromPhoneNumberRequest] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

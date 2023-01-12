@@ -41,7 +41,8 @@ object ConversationAttributes {
     __obj.asInstanceOf[ConversationAttributes]
   }
   
-  extension [Self <: ConversationAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversationAttributes] (val x: Self) extends AnyVal {
     
     inline def setInboundAutocreation(value: Boolean): Self = StObject.set(x, "inboundAutocreation", value.asInstanceOf[js.Any])
     

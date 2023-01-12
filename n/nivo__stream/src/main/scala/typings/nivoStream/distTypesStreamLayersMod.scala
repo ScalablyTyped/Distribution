@@ -45,7 +45,8 @@ object distTypesStreamLayersMod {
       __obj.asInstanceOf[StreamLayersProps[RawDatum]]
     }
     
-    extension [Self <: StreamLayersProps[?], RawDatum /* <: StreamDatum */](x: Self & StreamLayersProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamLayersProps[?], RawDatum /* <: StreamDatum */] (val x: Self & StreamLayersProps[RawDatum]) extends AnyVal {
       
       inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
       

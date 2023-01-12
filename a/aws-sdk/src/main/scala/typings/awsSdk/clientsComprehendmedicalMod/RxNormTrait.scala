@@ -23,7 +23,8 @@ object RxNormTrait {
     __obj.asInstanceOf[RxNormTrait]
   }
   
-  extension [Self <: RxNormTrait](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RxNormTrait] (val x: Self) extends AnyVal {
     
     inline def setName(value: RxNormTraitName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListVirtualClustersResponse {
     __obj.asInstanceOf[ListVirtualClustersResponse]
   }
   
-  extension [Self <: ListVirtualClustersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListVirtualClustersResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

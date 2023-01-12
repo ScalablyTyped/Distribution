@@ -55,7 +55,8 @@ object AutoTextGroup {
     __obj.asInstanceOf[AutoTextGroup]
   }
   
-  extension [Self <: AutoTextGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoTextGroup] (val x: Self) extends AnyVal {
     
     inline def setFilePath(value: String): Self = StObject.set(x, "FilePath", value.asInstanceOf[js.Any])
     

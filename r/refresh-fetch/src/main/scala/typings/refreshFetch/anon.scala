@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Body[ResponseBody]]
     }
     
-    extension [Self <: Body[?], ResponseBody](x: Self & Body[ResponseBody]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body[?], ResponseBody] (val x: Self & Body[ResponseBody]) extends AnyVal {
       
       inline def setBody(value: ResponseBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Fetch[T]]
     }
     
-    extension [Self <: Fetch[?], T](x: Self & Fetch[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fetch[?], T] (val x: Self & Fetch[T]) extends AnyVal {
       
       inline def setFetch(value: T): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       

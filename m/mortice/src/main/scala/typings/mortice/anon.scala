@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[RequiredMorticeOptions]
     }
     
-    extension [Self <: RequiredMorticeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredMorticeOptions] (val x: Self) extends AnyVal {
       
       inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       

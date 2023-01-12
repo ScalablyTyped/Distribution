@@ -159,7 +159,8 @@ object mod {
       __obj.asInstanceOf[MatrixLike]
     }
     
-    extension [Self <: MatrixLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatrixLike] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -202,7 +203,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       

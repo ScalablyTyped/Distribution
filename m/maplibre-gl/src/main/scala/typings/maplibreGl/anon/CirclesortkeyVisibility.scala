@@ -30,7 +30,8 @@ object CirclesortkeyVisibility {
     __obj.asInstanceOf[CirclesortkeyVisibility]
   }
   
-  extension [Self <: CirclesortkeyVisibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CirclesortkeyVisibility] (val x: Self) extends AnyVal {
     
     inline def `setCircle-sort-key`(value: DataDrivenPropertyValueSpecification[Double]): Self = StObject.set(x, "circle-sort-key", value.asInstanceOf[js.Any])
     

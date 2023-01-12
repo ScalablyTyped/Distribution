@@ -21,7 +21,8 @@ object Pushpin {
     __obj.asInstanceOf[Pushpin]
   }
   
-  extension [Self <: Pushpin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pushpin] (val x: Self) extends AnyVal {
     
     inline def setOriginalOffset(value: Double): Self = StObject.set(x, "originalOffset", value.asInstanceOf[js.Any])
   }

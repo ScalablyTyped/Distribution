@@ -34,7 +34,8 @@ object ImageAngleResultProperties {
     __obj.asInstanceOf[ImageAngleResultProperties]
   }
   
-  extension [Self <: ImageAngleResultProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageAngleResultProperties] (val x: Self) extends AnyVal {
     
     inline def setNorth(value: Double): Self = StObject.set(x, "north", value.asInstanceOf[js.Any])
     

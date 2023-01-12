@@ -19,7 +19,8 @@ object PositionedObjectProperties {
     __obj.asInstanceOf[PositionedObjectProperties]
   }
   
-  extension [Self <: PositionedObjectProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionedObjectProperties] (val x: Self) extends AnyVal {
     
     inline def setEmbeddedObject(value: EmbeddedObject): Self = StObject.set(x, "embeddedObject", value.asInstanceOf[js.Any])
     

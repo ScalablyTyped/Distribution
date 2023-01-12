@@ -29,7 +29,8 @@ object SketchMSBorderOptions {
     __obj.asInstanceOf[SketchMSBorderOptions]
   }
   
-  extension [Self <: SketchMSBorderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSBorderOptions] (val x: Self) extends AnyVal {
     
     inline def setDashPattern(value: js.Array[Double]): Self = StObject.set(x, "dashPattern", value.asInstanceOf[js.Any])
     

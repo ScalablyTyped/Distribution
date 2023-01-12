@@ -17,7 +17,8 @@ object WidgetMetadataResponse {
     __obj.asInstanceOf[WidgetMetadataResponse]
   }
   
-  extension [Self <: WidgetMetadataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WidgetMetadataResponse] (val x: Self) extends AnyVal {
     
     inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     

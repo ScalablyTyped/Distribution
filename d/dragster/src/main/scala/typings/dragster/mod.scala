@@ -40,7 +40,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Dragster]
     }
     
-    extension [Self <: Dragster](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dragster] (val x: Self) extends AnyVal {
       
       inline def setRemoveListeners(value: () => Unit): Self = StObject.set(x, "removeListeners", js.Any.fromFunction0(value))
       
@@ -76,7 +77,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setDragster(value: DragsterStatic): Self = StObject.set(x, "Dragster", value.asInstanceOf[js.Any])
       }

@@ -716,7 +716,8 @@ object anon {
       __obj.asInstanceOf[PartialTagNameinkeyofIntr]
     }
     
-    extension [Self <: PartialTagNameinkeyofIntr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTagNameinkeyofIntr] (val x: Self) extends AnyVal {
       
       inline def setA(
         value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.rehypeReact.rehypeReactStrings.a, typings.rehypeReact.rehypeReactStrings.abbr, typings.rehypeReact.rehypeReactStrings.address */ Any
@@ -2480,7 +2481,8 @@ object anon {
       __obj.asInstanceOf[PartialTagNameinkeyofIntrA]
     }
     
-    extension [Self <: PartialTagNameinkeyofIntrA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTagNameinkeyofIntrA] (val x: Self) extends AnyVal {
       
       inline def setA(
         value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.rehypeReact.rehypeReactStrings.a, typings.rehypeReact.rehypeReactStrings.abbr, typings.rehypeReact.rehypeReactStrings.address */ Any

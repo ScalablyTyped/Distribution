@@ -27,7 +27,8 @@ object UnorderedListItemNode {
     __obj.asInstanceOf[UnorderedListItemNode]
   }
   
-  extension [Self <: UnorderedListItemNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnorderedListItemNode] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: js.Array[Key]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

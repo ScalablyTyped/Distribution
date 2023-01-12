@@ -19,7 +19,8 @@ object JSONEditorBuffer {
     __obj.asInstanceOf[JSONEditorBuffer]
   }
   
-  extension [Self <: JSONEditorBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONEditorBuffer] (val x: Self) extends AnyVal {
     
     inline def setFlush(value: () => String): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     

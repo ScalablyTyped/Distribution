@@ -35,7 +35,8 @@ object IELangTestDelegates {
     __obj.asInstanceOf[IELangTestDelegates]
   }
   
-  extension [Self <: IELangTestDelegates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IELangTestDelegates] (val x: Self) extends AnyVal {
     
     inline def setRdoModeClickHandler(value: js.Function): Self = StObject.set(x, "rdoModeClickHandler", value.asInstanceOf[js.Any])
     

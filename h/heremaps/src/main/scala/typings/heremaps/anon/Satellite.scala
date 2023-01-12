@@ -20,7 +20,8 @@ object Satellite {
     __obj.asInstanceOf[Satellite]
   }
   
-  extension [Self <: Satellite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Satellite] (val x: Self) extends AnyVal {
     
     inline def setNormal(value: MapType): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     

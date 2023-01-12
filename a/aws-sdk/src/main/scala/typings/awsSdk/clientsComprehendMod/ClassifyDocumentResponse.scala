@@ -23,7 +23,8 @@ object ClassifyDocumentResponse {
     __obj.asInstanceOf[ClassifyDocumentResponse]
   }
   
-  extension [Self <: ClassifyDocumentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassifyDocumentResponse] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: ListOfClasses): Self = StObject.set(x, "Classes", value.asInstanceOf[js.Any])
     

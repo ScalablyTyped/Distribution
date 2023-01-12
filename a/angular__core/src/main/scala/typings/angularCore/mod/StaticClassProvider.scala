@@ -27,7 +27,8 @@ object StaticClassProvider {
     __obj.asInstanceOf[StaticClassProvider]
   }
   
-  extension [Self <: StaticClassProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaticClassProvider] (val x: Self) extends AnyVal {
     
     inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     

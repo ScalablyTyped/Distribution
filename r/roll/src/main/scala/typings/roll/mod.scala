@@ -30,7 +30,8 @@ object mod {
     @js.native
     val ^ : InvalidInputError = js.native
     
-    extension [Self <: InvalidInputError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidInputError] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.roll.rollStrings.InvalidInputError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[RollObject]
     }
     
-    extension [Self <: RollObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RollObject] (val x: Self) extends AnyVal {
       
       inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object mod {
       __obj.asInstanceOf[RollOutput]
     }
     
-    extension [Self <: RollOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RollOutput] (val x: Self) extends AnyVal {
       
       inline def setCalculations(value: js.Array[Double]): Self = StObject.set(x, "calculations", value.asInstanceOf[js.Any])
       

@@ -51,7 +51,8 @@ object IObjectClassAdmin {
     __obj.asInstanceOf[IObjectClassAdmin]
   }
   
-  extension [Self <: IObjectClassAdmin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjectClassAdmin] (val x: Self) extends AnyVal {
     
     inline def setAdditionalClassInfo(value: IAdditionalClassInfo): Self = StObject.set(x, "AdditionalClassInfo", value.asInstanceOf[js.Any])
     

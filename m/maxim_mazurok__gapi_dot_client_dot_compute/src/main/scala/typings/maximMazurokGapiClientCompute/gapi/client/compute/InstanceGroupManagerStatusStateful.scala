@@ -23,7 +23,8 @@ object InstanceGroupManagerStatusStateful {
     __obj.asInstanceOf[InstanceGroupManagerStatusStateful]
   }
   
-  extension [Self <: InstanceGroupManagerStatusStateful](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupManagerStatusStateful] (val x: Self) extends AnyVal {
     
     inline def setHasStatefulConfig(value: Boolean): Self = StObject.set(x, "hasStatefulConfig", value.asInstanceOf[js.Any])
     

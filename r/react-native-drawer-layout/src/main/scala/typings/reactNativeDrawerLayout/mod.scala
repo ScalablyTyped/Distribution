@@ -141,7 +141,8 @@ object mod {
       __obj.asInstanceOf[DrawerLayoutProperties]
     }
     
-    extension [Self <: DrawerLayoutProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerLayoutProperties] (val x: Self) extends AnyVal {
       
       inline def setDrawerBackgroundColor(value: String): Self = StObject.set(x, "drawerBackgroundColor", value.asInstanceOf[js.Any])
       
@@ -198,7 +199,8 @@ object mod {
       __obj.asInstanceOf[DrawerLayoutSlideEvent]
     }
     
-    extension [Self <: DrawerLayoutSlideEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerLayoutSlideEvent] (val x: Self) extends AnyVal {
       
       inline def setNativeEvent(value: Offset): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
     }

@@ -47,7 +47,8 @@ object ObjectOptionsConfig {
     __obj.asInstanceOf[ObjectOptionsConfig]
   }
   
-  extension [Self <: ObjectOptionsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectOptionsConfig] (val x: Self) extends AnyVal {
     
     inline def setDragBoundFunc(value: /* pos */ Vector2d => Vector2d): Self = StObject.set(x, "dragBoundFunc", js.Any.fromFunction1(value))
     

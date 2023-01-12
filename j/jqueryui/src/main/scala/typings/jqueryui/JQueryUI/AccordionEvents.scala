@@ -20,7 +20,8 @@ object AccordionEvents {
     __obj.asInstanceOf[AccordionEvents]
   }
   
-  extension [Self <: AccordionEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccordionEvents] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
     

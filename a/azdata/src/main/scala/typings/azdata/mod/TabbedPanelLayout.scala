@@ -28,7 +28,8 @@ object TabbedPanelLayout {
     __obj.asInstanceOf[TabbedPanelLayout]
   }
   
-  extension [Self <: TabbedPanelLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabbedPanelLayout] (val x: Self) extends AnyVal {
     
     inline def setAlwaysShowTabs(value: Boolean): Self = StObject.set(x, "alwaysShowTabs", value.asInstanceOf[js.Any])
     

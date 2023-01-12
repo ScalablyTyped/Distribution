@@ -36,7 +36,8 @@ object MemberExpression_ {
     __obj.asInstanceOf[MemberExpression_]
   }
   
-  extension [Self <: MemberExpression_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberExpression_] (val x: Self) extends AnyVal {
     
     inline def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     

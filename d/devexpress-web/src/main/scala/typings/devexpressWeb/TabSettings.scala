@@ -36,7 +36,8 @@ object TabSettings {
     __obj.asInstanceOf[TabSettings]
   }
   
-  extension [Self <: TabSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabSettings] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: TabAlign): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

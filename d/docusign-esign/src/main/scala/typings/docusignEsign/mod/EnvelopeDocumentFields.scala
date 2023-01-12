@@ -29,7 +29,8 @@ object EnvelopeDocumentFields {
     __obj.asInstanceOf[EnvelopeDocumentFields]
   }
   
-  extension [Self <: EnvelopeDocumentFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeDocumentFields] (val x: Self) extends AnyVal {
     
     inline def setDocumentFields(
       value: js.Array[

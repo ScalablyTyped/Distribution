@@ -21,7 +21,8 @@ object BARCODEHEIGHTDEFAULT {
     __obj.asInstanceOf[BARCODEHEIGHTDEFAULT]
   }
   
-  extension [Self <: BARCODEHEIGHTDEFAULT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BARCODEHEIGHTDEFAULT] (val x: Self) extends AnyVal {
     
     inline def setBARCODE_HEIGHT_DEFAULT(value: InformationseparatorthreehCentsign): Self = StObject.set(x, "BARCODE_HEIGHT_DEFAULT", value.asInstanceOf[js.Any])
     

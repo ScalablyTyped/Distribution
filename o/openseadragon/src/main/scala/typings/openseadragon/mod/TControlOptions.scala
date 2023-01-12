@@ -19,7 +19,8 @@ object TControlOptions {
     __obj.asInstanceOf[TControlOptions]
   }
   
-  extension [Self <: TControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TControlOptions] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

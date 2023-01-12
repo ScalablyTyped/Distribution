@@ -73,7 +73,8 @@ object ActiveIndexAnim {
     __obj.asInstanceOf[ActiveIndexAnim]
   }
   
-  extension [Self <: ActiveIndexAnim](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveIndexAnim] (val x: Self) extends AnyVal {
     
     inline def setActiveCellOffset(value: SharedValue[Double]): Self = StObject.set(x, "activeCellOffset", value.asInstanceOf[js.Any])
     

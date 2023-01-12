@@ -21,7 +21,8 @@ object IRaycastVehicleOptions {
     __obj.asInstanceOf[IRaycastVehicleOptions]
   }
   
-  extension [Self <: IRaycastVehicleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRaycastVehicleOptions] (val x: Self) extends AnyVal {
     
     inline def setChassisBody(value: Body): Self = StObject.set(x, "chassisBody", value.asInstanceOf[js.Any])
     

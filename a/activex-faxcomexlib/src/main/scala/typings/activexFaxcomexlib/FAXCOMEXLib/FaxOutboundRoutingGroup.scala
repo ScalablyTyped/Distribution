@@ -35,7 +35,8 @@ object FaxOutboundRoutingGroup {
     __obj.asInstanceOf[FaxOutboundRoutingGroup]
   }
   
-  extension [Self <: FaxOutboundRoutingGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxOutboundRoutingGroup] (val x: Self) extends AnyVal {
     
     inline def setDeviceIds(value: FaxDeviceIds): Self = StObject.set(x, "DeviceIds", value.asInstanceOf[js.Any])
     

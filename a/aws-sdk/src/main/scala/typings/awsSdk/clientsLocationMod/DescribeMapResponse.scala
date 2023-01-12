@@ -66,7 +66,8 @@ object DescribeMapResponse {
     __obj.asInstanceOf[DescribeMapResponse]
   }
   
-  extension [Self <: DescribeMapResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMapResponse] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: MapConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     

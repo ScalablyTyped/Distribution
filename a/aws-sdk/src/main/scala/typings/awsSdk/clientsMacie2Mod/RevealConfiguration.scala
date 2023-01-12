@@ -23,7 +23,8 @@ object RevealConfiguration {
     __obj.asInstanceOf[RevealConfiguration]
   }
   
-  extension [Self <: RevealConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevealConfiguration] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyId(value: stringMin1Max2048): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
     

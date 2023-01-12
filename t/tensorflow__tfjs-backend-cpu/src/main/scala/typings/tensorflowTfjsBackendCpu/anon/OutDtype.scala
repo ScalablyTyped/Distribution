@@ -21,7 +21,8 @@ object OutDtype {
     __obj.asInstanceOf[OutDtype]
   }
   
-  extension [Self <: OutDtype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutDtype] (val x: Self) extends AnyVal {
     
     inline def setOutDtype(value: DataType): Self = StObject.set(x, "outDtype", value.asInstanceOf[js.Any])
     

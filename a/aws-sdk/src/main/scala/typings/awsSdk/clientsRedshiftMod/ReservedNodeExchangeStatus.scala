@@ -58,7 +58,8 @@ object ReservedNodeExchangeStatus {
     __obj.asInstanceOf[ReservedNodeExchangeStatus]
   }
   
-  extension [Self <: ReservedNodeExchangeStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservedNodeExchangeStatus] (val x: Self) extends AnyVal {
     
     inline def setRequestTime(value: js.Date): Self = StObject.set(x, "RequestTime", value.asInstanceOf[js.Any])
     

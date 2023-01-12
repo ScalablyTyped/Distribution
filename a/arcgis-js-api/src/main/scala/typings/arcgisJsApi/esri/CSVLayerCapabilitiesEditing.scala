@@ -86,7 +86,8 @@ object CSVLayerCapabilitiesEditing {
     __obj.asInstanceOf[CSVLayerCapabilitiesEditing]
   }
   
-  extension [Self <: CSVLayerCapabilitiesEditing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSVLayerCapabilitiesEditing] (val x: Self) extends AnyVal {
     
     inline def setSupportsDeleteByAnonymous(value: Boolean): Self = StObject.set(x, "supportsDeleteByAnonymous", value.asInstanceOf[js.Any])
     

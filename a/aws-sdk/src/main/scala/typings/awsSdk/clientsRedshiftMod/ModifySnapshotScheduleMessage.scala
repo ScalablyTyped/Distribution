@@ -23,7 +23,8 @@ object ModifySnapshotScheduleMessage {
     __obj.asInstanceOf[ModifySnapshotScheduleMessage]
   }
   
-  extension [Self <: ModifySnapshotScheduleMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifySnapshotScheduleMessage] (val x: Self) extends AnyVal {
     
     inline def setScheduleDefinitions(value: ScheduleDefinitionList): Self = StObject.set(x, "ScheduleDefinitions", value.asInstanceOf[js.Any])
     

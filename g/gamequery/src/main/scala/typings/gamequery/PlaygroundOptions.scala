@@ -27,7 +27,8 @@ object PlaygroundOptions {
     __obj.asInstanceOf[PlaygroundOptions]
   }
   
-  extension [Self <: PlaygroundOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaygroundOptions] (val x: Self) extends AnyVal {
     
     inline def setDisableCollision(value: Boolean): Self = StObject.set(x, "disableCollision", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PutAutoTerminationPolicyInput {
     __obj.asInstanceOf[PutAutoTerminationPolicyInput]
   }
   
-  extension [Self <: PutAutoTerminationPolicyInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutAutoTerminationPolicyInput] (val x: Self) extends AnyVal {
     
     inline def setAutoTerminationPolicy(value: AutoTerminationPolicy): Self = StObject.set(x, "AutoTerminationPolicy", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object RecurringTimeWindow {
     __obj.asInstanceOf[RecurringTimeWindow]
   }
   
-  extension [Self <: RecurringTimeWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecurringTimeWindow] (val x: Self) extends AnyVal {
     
     inline def setRecurrence(value: String): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
     

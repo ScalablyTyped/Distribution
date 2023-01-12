@@ -18,7 +18,8 @@ object ListItemNamesForUnmappedIdentityResponse {
     __obj.asInstanceOf[ListItemNamesForUnmappedIdentityResponse]
   }
   
-  extension [Self <: ListItemNamesForUnmappedIdentityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListItemNamesForUnmappedIdentityResponse] (val x: Self) extends AnyVal {
     
     inline def setItemNames(value: js.Array[String]): Self = StObject.set(x, "itemNames", value.asInstanceOf[js.Any])
     

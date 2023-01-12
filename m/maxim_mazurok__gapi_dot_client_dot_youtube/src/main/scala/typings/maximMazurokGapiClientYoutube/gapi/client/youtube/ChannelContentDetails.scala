@@ -16,7 +16,8 @@ object ChannelContentDetails {
     __obj.asInstanceOf[ChannelContentDetails]
   }
   
-  extension [Self <: ChannelContentDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelContentDetails] (val x: Self) extends AnyVal {
     
     inline def setRelatedPlaylists(value: Favorites): Self = StObject.set(x, "relatedPlaylists", value.asInstanceOf[js.Any])
     

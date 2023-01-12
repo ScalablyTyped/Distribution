@@ -84,7 +84,8 @@ object glviewdomMod {
       __obj.asInstanceOf[GLViewDOMProps]
     }
     
-    extension [Self <: GLViewDOMProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GLViewDOMProps] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Double): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -135,7 +136,8 @@ object glviewdomMod {
       __obj.asInstanceOf[GLViewDOMState]
     }
     
-    extension [Self <: GLViewDOMState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GLViewDOMState] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }

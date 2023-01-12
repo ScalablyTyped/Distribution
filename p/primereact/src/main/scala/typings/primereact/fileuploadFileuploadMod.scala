@@ -59,7 +59,8 @@ object fileuploadFileuploadMod {
       __obj.asInstanceOf[FileUploadBeforeUploadParams]
     }
     
-    extension [Self <: FileUploadBeforeUploadParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploadBeforeUploadParams] (val x: Self) extends AnyVal {
       
       inline def setFormData(value: FormData): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object fileuploadFileuploadMod {
       __obj.asInstanceOf[FileUploadFilesParam]
     }
     
-    extension [Self <: FileUploadFilesParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploadFilesParam] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -103,7 +105,8 @@ object fileuploadFileuploadMod {
       __obj.asInstanceOf[FileUploadHandlerOptions]
     }
     
-    extension [Self <: FileUploadHandlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploadHandlerOptions] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
@@ -124,7 +127,8 @@ object fileuploadFileuploadMod {
       __obj.asInstanceOf[FileUploadHandlerParam]
     }
     
-    extension [Self <: FileUploadHandlerParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploadHandlerParam] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: FileUploadHandlerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
@@ -158,7 +162,8 @@ object fileuploadFileuploadMod {
       __obj.asInstanceOf[FileUploadHeaderTemplateOptions]
     }
     
-    extension [Self <: FileUploadHeaderTemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploadHeaderTemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setCancelButton(value: Element): Self = StObject.set(x, "cancelButton", value.asInstanceOf[js.Any])
       
@@ -211,7 +216,8 @@ object fileuploadFileuploadMod {
       __obj.asInstanceOf[FileUploadOptionsType]
     }
     
-    extension [Self <: FileUploadOptionsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploadOptionsType] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -252,7 +258,8 @@ object fileuploadFileuploadMod {
       __obj.asInstanceOf[FileUploadProgressParams]
     }
     
-    extension [Self <: FileUploadProgressParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploadProgressParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[typings.std.Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -355,7 +362,8 @@ object fileuploadFileuploadMod {
       __obj.asInstanceOf[FileUploadProps]
     }
     
-    extension [Self <: FileUploadProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploadProps] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
@@ -552,7 +560,8 @@ object fileuploadFileuploadMod {
       __obj.asInstanceOf[FileUploadRemoveParams]
     }
     
-    extension [Self <: FileUploadRemoveParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploadRemoveParams] (val x: Self) extends AnyVal {
       
       inline def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -573,7 +582,8 @@ object fileuploadFileuploadMod {
       __obj.asInstanceOf[FileUploadSelectParams]
     }
     
-    extension [Self <: FileUploadSelectParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploadSelectParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: ChangeEvent[HTMLInputElement] | DragEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     }
@@ -592,7 +602,8 @@ object fileuploadFileuploadMod {
       __obj.asInstanceOf[FileUploadUploadParams]
     }
     
-    extension [Self <: FileUploadUploadParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploadUploadParams] (val x: Self) extends AnyVal {
       
       inline def setXhr(value: XMLHttpRequest): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
     }
@@ -638,7 +649,8 @@ object fileuploadFileuploadMod {
       __obj.asInstanceOf[ItemTemplateOptions]
     }
     
-    extension [Self <: ItemTemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemTemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       

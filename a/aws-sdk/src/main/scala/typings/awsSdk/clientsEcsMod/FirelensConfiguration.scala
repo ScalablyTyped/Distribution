@@ -24,7 +24,8 @@ object FirelensConfiguration {
     __obj.asInstanceOf[FirelensConfiguration]
   }
   
-  extension [Self <: FirelensConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirelensConfiguration] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: FirelensConfigurationOptionsMap): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

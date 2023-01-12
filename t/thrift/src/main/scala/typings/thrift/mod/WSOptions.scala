@@ -21,7 +21,8 @@ object WSOptions {
     __obj.asInstanceOf[WSOptions]
   }
   
-  extension [Self <: WSOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WSOptions] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: HttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

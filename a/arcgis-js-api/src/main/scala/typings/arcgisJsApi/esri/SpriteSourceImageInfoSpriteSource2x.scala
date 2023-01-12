@@ -30,7 +30,8 @@ object SpriteSourceImageInfoSpriteSource2x {
     __obj.asInstanceOf[SpriteSourceImageInfoSpriteSource2x]
   }
   
-  extension [Self <: SpriteSourceImageInfoSpriteSource2x](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpriteSourceImageInfoSpriteSource2x] (val x: Self) extends AnyVal {
     
     inline def setImage(value: HTMLImageElement | HTMLCanvasElement | Any | ImageData | ImageObject): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

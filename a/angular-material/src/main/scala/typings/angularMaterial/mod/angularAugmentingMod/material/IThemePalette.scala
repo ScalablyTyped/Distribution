@@ -17,7 +17,8 @@ object IThemePalette {
     __obj.asInstanceOf[IThemePalette]
   }
   
-  extension [Self <: IThemePalette](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IThemePalette] (val x: Self) extends AnyVal {
     
     inline def setHues(value: IThemeHues): Self = StObject.set(x, "hues", value.asInstanceOf[js.Any])
     

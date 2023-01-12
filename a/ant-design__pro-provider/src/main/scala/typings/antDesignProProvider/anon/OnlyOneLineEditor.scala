@@ -17,7 +17,8 @@ object OnlyOneLineEditor {
     __obj.asInstanceOf[OnlyOneLineEditor]
   }
   
-  extension [Self <: OnlyOneLineEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnlyOneLineEditor] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Add): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

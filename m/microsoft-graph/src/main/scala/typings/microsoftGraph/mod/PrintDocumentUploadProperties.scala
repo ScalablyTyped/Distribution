@@ -22,7 +22,8 @@ object PrintDocumentUploadProperties {
     __obj.asInstanceOf[PrintDocumentUploadProperties]
   }
   
-  extension [Self <: PrintDocumentUploadProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintDocumentUploadProperties] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

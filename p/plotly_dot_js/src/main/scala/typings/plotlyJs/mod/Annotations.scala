@@ -328,7 +328,8 @@ object Annotations {
     __obj.asInstanceOf[Annotations]
   }
   
-  extension [Self <: Annotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Annotations] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

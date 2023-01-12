@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[FileObject]
     }
     
-    extension [Self <: FileObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileObject] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: String): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object mod {
       __obj.asInstanceOf[FileTypes]
     }
     
-    extension [Self <: FileTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileTypes] (val x: Self) extends AnyVal {
       
       inline def setFileExtension(value: Block): Self = StObject.set(x, "fileExtension", value.asInstanceOf[js.Any])
       
@@ -216,7 +218,8 @@ object mod {
       __obj.asInstanceOf[WiredepParams]
     }
     
-    extension [Self <: WiredepParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WiredepParams] (val x: Self) extends AnyVal {
       
       inline def setBowerJson(value: String): Self = StObject.set(x, "bowerJson", value.asInstanceOf[js.Any])
       

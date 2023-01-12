@@ -41,7 +41,8 @@ object libEsmComponentsTimezonePickerTimezoneItemsMod {
       __obj.asInstanceOf[ITimezoneItem]
     }
     
-    extension [Self <: ITimezoneItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimezoneItem] (val x: Self) extends AnyVal {
       
       inline def setIconName(value: BlueprintIcons16Id): Self = StObject.set(x, "iconName", value.asInstanceOf[js.Any])
       

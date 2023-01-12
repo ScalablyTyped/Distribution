@@ -27,7 +27,8 @@ object FbtHookRegistrations {
     __obj.asInstanceOf[FbtHookRegistrations]
   }
   
-  extension [Self <: FbtHookRegistrations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FbtHookRegistrations] (val x: Self) extends AnyVal {
     
     inline def setErrorListener(value: /* context */ FbtErrorContext => Any): Self = StObject.set(x, "errorListener", js.Any.fromFunction1(value))
     

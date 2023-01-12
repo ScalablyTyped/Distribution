@@ -35,7 +35,8 @@ object TrackedMeshHitTestResult {
     __obj.asInstanceOf[TrackedMeshHitTestResult]
   }
   
-  extension [Self <: TrackedMeshHitTestResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackedMeshHitTestResult] (val x: Self) extends AnyVal {
     
     inline def setClassification(value: Double): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     

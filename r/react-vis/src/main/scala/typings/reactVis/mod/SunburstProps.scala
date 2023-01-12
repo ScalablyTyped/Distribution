@@ -51,7 +51,8 @@ object SunburstProps {
     __obj.asInstanceOf[SunburstProps]
   }
   
-  extension [Self <: SunburstProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SunburstProps] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: String | AnimationParam | Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

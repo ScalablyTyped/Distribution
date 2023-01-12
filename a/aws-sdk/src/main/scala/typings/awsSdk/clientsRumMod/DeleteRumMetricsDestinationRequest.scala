@@ -28,7 +28,8 @@ object DeleteRumMetricsDestinationRequest {
     __obj.asInstanceOf[DeleteRumMetricsDestinationRequest]
   }
   
-  extension [Self <: DeleteRumMetricsDestinationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRumMetricsDestinationRequest] (val x: Self) extends AnyVal {
     
     inline def setAppMonitorName(value: AppMonitorName): Self = StObject.set(x, "AppMonitorName", value.asInstanceOf[js.Any])
     

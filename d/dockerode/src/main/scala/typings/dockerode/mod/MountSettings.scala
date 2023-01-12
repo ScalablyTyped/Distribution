@@ -32,7 +32,8 @@ object MountSettings {
     __obj.asInstanceOf[MountSettings]
   }
   
-  extension [Self <: MountSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MountSettings] (val x: Self) extends AnyVal {
     
     inline def setBindOptions(value: Propagation): Self = StObject.set(x, "BindOptions", value.asInstanceOf[js.Any])
     

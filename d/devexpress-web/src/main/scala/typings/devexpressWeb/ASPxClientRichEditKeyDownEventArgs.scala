@@ -28,7 +28,8 @@ object ASPxClientRichEditKeyDownEventArgs {
     __obj.asInstanceOf[ASPxClientRichEditKeyDownEventArgs]
   }
   
-  extension [Self <: ASPxClientRichEditKeyDownEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRichEditKeyDownEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     

@@ -361,7 +361,8 @@ object distLibPeriodMod {
       __obj.asInstanceOf[PeriodJson]
     }
     
-    extension [Self <: PeriodJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeriodJson] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -410,7 +411,8 @@ object distLibPeriodMod {
       __obj.asInstanceOf[WeekTimeOpts]
     }
     
-    extension [Self <: WeekTimeOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WeekTimeOpts] (val x: Self) extends AnyVal {
       
       inline def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object IDynamicPageStickyContent {
     __obj.asInstanceOf[IDynamicPageStickyContent]
   }
   
-  extension [Self <: IDynamicPageStickyContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDynamicPageStickyContent] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_f_IDynamicPageStickyContent(value: Boolean): Self = StObject.set(x, "__implements__sap_f_IDynamicPageStickyContent", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,8 @@ object ReactScheduleForceUpdateEvent {
     __obj.asInstanceOf[ReactScheduleForceUpdateEvent]
   }
   
-  extension [Self <: ReactScheduleForceUpdateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactScheduleForceUpdateEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: `schedule-force-update`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

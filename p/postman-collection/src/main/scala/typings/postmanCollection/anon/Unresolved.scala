@@ -15,7 +15,8 @@ object Unresolved {
     __obj.asInstanceOf[Unresolved]
   }
   
-  extension [Self <: Unresolved](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Unresolved] (val x: Self) extends AnyVal {
     
     inline def setUnresolved(value: Boolean): Self = StObject.set(x, "unresolved", value.asInstanceOf[js.Any])
   }

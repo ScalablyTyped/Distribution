@@ -40,7 +40,8 @@ object ImplementationGuideDefinition {
     __obj.asInstanceOf[ImplementationGuideDefinition]
   }
   
-  extension [Self <: ImplementationGuideDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImplementationGuideDefinition] (val x: Self) extends AnyVal {
     
     inline def setGrouping(value: js.Array[ImplementationGuideDefinitionGrouping]): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
     

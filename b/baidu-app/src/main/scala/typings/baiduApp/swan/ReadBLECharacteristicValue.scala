@@ -39,7 +39,8 @@ object ReadBLECharacteristicValue {
     __obj.asInstanceOf[ReadBLECharacteristicValue]
   }
   
-  extension [Self <: ReadBLECharacteristicValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadBLECharacteristicValue] (val x: Self) extends AnyVal {
     
     inline def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
     

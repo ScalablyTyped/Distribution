@@ -23,7 +23,8 @@ object IConsensusRegisterResponse {
     __obj.asInstanceOf[IConsensusRegisterResponse]
   }
   
-  extension [Self <: IConsensusRegisterResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConsensusRegisterResponse] (val x: Self) extends AnyVal {
     
     inline def setChainHead(value: IConsensusBlock): Self = StObject.set(x, "chainHead", value.asInstanceOf[js.Any])
     

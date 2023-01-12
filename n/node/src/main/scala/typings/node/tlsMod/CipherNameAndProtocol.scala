@@ -28,7 +28,8 @@ object CipherNameAndProtocol {
     __obj.asInstanceOf[CipherNameAndProtocol]
   }
   
-  extension [Self <: CipherNameAndProtocol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CipherNameAndProtocol] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

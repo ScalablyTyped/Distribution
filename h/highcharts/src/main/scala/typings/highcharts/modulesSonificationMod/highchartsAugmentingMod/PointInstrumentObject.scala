@@ -38,7 +38,8 @@ object PointInstrumentObject {
     __obj.asInstanceOf[PointInstrumentObject]
   }
   
-  extension [Self <: PointInstrumentObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointInstrumentObject] (val x: Self) extends AnyVal {
     
     inline def setInstrument(value: String | Instrument): Self = StObject.set(x, "instrument", value.asInstanceOf[js.Any])
     

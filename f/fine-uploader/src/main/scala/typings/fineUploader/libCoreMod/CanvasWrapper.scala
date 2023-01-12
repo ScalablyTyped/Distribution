@@ -35,7 +35,8 @@ object CanvasWrapper {
     __obj.asInstanceOf[CanvasWrapper]
   }
   
-  extension [Self <: CanvasWrapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasWrapper] (val x: Self) extends AnyVal {
     
     inline def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     

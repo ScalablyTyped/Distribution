@@ -23,7 +23,8 @@ object CommandState {
     __obj.asInstanceOf[CommandState[T]]
   }
   
-  extension [Self <: CommandState[?], T](x: Self & CommandState[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandState[?], T] (val x: Self & CommandState[T]) extends AnyVal {
     
     inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

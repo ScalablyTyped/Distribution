@@ -17,7 +17,8 @@ object IssuingBank {
     __obj.asInstanceOf[IssuingBank]
   }
   
-  extension [Self <: IssuingBank](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssuingBank] (val x: Self) extends AnyVal {
     
     inline def setCountryOfIssuance(value: String): Self = StObject.set(x, "CountryOfIssuance", value.asInstanceOf[js.Any])
     

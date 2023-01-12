@@ -33,7 +33,8 @@ object ListAccountIntegrationsRequest {
     __obj.asInstanceOf[ListAccountIntegrationsRequest]
   }
   
-  extension [Self <: ListAccountIntegrationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccountIntegrationsRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeHidden(value: optionalBoolean): Self = StObject.set(x, "IncludeHidden", value.asInstanceOf[js.Any])
     

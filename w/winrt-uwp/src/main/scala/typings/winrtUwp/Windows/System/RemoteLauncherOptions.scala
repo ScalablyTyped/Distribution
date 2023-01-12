@@ -22,7 +22,8 @@ object RemoteLauncherOptions {
     __obj.asInstanceOf[RemoteLauncherOptions]
   }
   
-  extension [Self <: RemoteLauncherOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteLauncherOptions] (val x: Self) extends AnyVal {
     
     inline def setFallbackUri(value: Uri): Self = StObject.set(x, "FallbackUri", value.asInstanceOf[js.Any])
     

@@ -292,7 +292,8 @@ object buildSrcGrpcMod {
       __obj.asInstanceOf[ClientStubOptions]
     }
     
-    extension [Self <: ClientStubOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientStubOptions] (val x: Self) extends AnyVal {
       
       inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
@@ -345,7 +346,8 @@ object buildSrcGrpcMod {
       __obj.asInstanceOf[GrpcClientOptions]
     }
     
-    extension [Self <: GrpcClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GrpcClientOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: GoogleAuth[JSONClient]): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -481,7 +483,8 @@ object buildSrcGrpcMod {
       __obj.asInstanceOf[MetadataValue]
     }
     
-    extension [Self <: MetadataValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataValue] (val x: Self) extends AnyVal {
       
       inline def setEquals_(value: js.Function): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
     }

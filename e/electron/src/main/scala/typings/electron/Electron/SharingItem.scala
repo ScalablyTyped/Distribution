@@ -29,7 +29,8 @@ object SharingItem {
     __obj.asInstanceOf[SharingItem]
   }
   
-  extension [Self <: SharingItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharingItem] (val x: Self) extends AnyVal {
     
     inline def setFilePaths(value: js.Array[String]): Self = StObject.set(x, "filePaths", value.asInstanceOf[js.Any])
     

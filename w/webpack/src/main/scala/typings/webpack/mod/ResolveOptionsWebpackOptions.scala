@@ -160,7 +160,8 @@ object ResolveOptionsWebpackOptions {
     __obj.asInstanceOf[ResolveOptionsWebpackOptions]
   }
   
-  extension [Self <: ResolveOptionsWebpackOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveOptionsWebpackOptions] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: js.Array[Alias] | (StringDictionary[String | `false` | js.Array[String]])): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

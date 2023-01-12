@@ -22,7 +22,8 @@ object SasPortalNode {
     __obj.asInstanceOf[SasPortalNode]
   }
   
-  extension [Self <: SasPortalNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalNode] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

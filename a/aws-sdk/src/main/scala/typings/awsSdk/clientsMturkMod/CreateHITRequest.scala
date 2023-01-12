@@ -99,7 +99,8 @@ object CreateHITRequest {
     __obj.asInstanceOf[CreateHITRequest]
   }
   
-  extension [Self <: CreateHITRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateHITRequest] (val x: Self) extends AnyVal {
     
     inline def setAssignmentDurationInSeconds(value: Long): Self = StObject.set(x, "AssignmentDurationInSeconds", value.asInstanceOf[js.Any])
     

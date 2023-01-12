@@ -126,7 +126,8 @@ object srcNgtscAnnotationsComponentSrcResourcesMod {
       __obj.asInstanceOf[CommonTemplateDeclaration]
     }
     
-    extension [Self <: CommonTemplateDeclaration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonTemplateDeclaration] (val x: Self) extends AnyVal {
       
       inline def setInterpolationConfig(value: InterpolationConfig): Self = StObject.set(x, "interpolationConfig", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object srcNgtscAnnotationsComponentSrcResourcesMod {
       __obj.asInstanceOf[ExternalTemplateDeclaration]
     }
     
-    extension [Self <: ExternalTemplateDeclaration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternalTemplateDeclaration] (val x: Self) extends AnyVal {
       
       inline def setIsInline(value: `false`): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
       
@@ -187,7 +189,8 @@ object srcNgtscAnnotationsComponentSrcResourcesMod {
       __obj.asInstanceOf[ExtractTemplateOptions]
     }
     
-    extension [Self <: ExtractTemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractTemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setEnableI18nLegacyMessageIdFormat(value: Boolean): Self = StObject.set(x, "enableI18nLegacyMessageIdFormat", value.asInstanceOf[js.Any])
       
@@ -219,7 +222,8 @@ object srcNgtscAnnotationsComponentSrcResourcesMod {
       __obj.asInstanceOf[InlineTemplateDeclaration]
     }
     
-    extension [Self <: InlineTemplateDeclaration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlineTemplateDeclaration] (val x: Self) extends AnyVal {
       
       inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
@@ -257,7 +261,8 @@ object srcNgtscAnnotationsComponentSrcResourcesMod {
       __obj.asInstanceOf[ParsedComponentTemplate]
     }
     
-    extension [Self <: ParsedComponentTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedComponentTemplate] (val x: Self) extends AnyVal {
       
       inline def setDiagNodes(value: js.Array[TmplAstNode]): Self = StObject.set(x, "diagNodes", value.asInstanceOf[js.Any])
       
@@ -295,7 +300,8 @@ object srcNgtscAnnotationsComponentSrcResourcesMod {
       __obj.asInstanceOf[ParsedTemplateWithSource]
     }
     
-    extension [Self <: ParsedTemplateWithSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedTemplateWithSource] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -335,7 +341,8 @@ object srcNgtscAnnotationsComponentSrcResourcesMod {
       __obj.asInstanceOf[StyleUrlMeta]
     }
     
-    extension [Self <: StyleUrlMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleUrlMeta] (val x: Self) extends AnyVal {
       
       inline def setNodeForError(value: Node): Self = StObject.set(x, "nodeForError", value.asInstanceOf[js.Any])
       

@@ -44,7 +44,8 @@ object librariesComponentsFlyoutFlyoutPropsMod {
       __obj.asInstanceOf[IFlyoutProps]
     }
     
-    extension [Self <: IFlyoutProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFlyoutProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

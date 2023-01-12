@@ -35,7 +35,8 @@ object DocumentHighlight {
   inline def create(range: Range): DocumentHighlight = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any]).asInstanceOf[DocumentHighlight]
   inline def create(range: Range, kind: DocumentHighlightKind): DocumentHighlight = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[DocumentHighlight]
   
-  extension [Self <: DocumentHighlight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentHighlight] (val x: Self) extends AnyVal {
     
     inline def setKind(value: DocumentHighlightKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

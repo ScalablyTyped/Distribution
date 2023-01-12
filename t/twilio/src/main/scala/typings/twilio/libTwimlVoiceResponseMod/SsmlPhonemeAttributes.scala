@@ -17,7 +17,8 @@ object SsmlPhonemeAttributes {
     __obj.asInstanceOf[SsmlPhonemeAttributes]
   }
   
-  extension [Self <: SsmlPhonemeAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SsmlPhonemeAttributes] (val x: Self) extends AnyVal {
     
     inline def setAlphabet(value: SsmlPhonemeAlphabet): Self = StObject.set(x, "alphabet", value.asInstanceOf[js.Any])
     

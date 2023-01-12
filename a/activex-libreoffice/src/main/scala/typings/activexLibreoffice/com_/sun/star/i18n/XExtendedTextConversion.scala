@@ -53,7 +53,8 @@ object XExtendedTextConversion {
     __obj.asInstanceOf[XExtendedTextConversion]
   }
   
-  extension [Self <: XExtendedTextConversion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XExtendedTextConversion] (val x: Self) extends AnyVal {
     
     inline def setGetConversionWithOffset(value: (String, Double, Double, Locale, Double, Double, js.Array[SeqEquiv[Double]]) => String): Self = StObject.set(x, "getConversionWithOffset", js.Any.fromFunction7(value))
   }

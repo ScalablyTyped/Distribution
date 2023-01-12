@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[AnimationManager]
     }
     
-    extension [Self <: AnimationManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationManager] (val x: Self) extends AnyVal {
       
       inline def setAnimationManager(value: typings.egjsAxes.declarationAnimationAnimationManagerMod.AnimationManager): Self = StObject.set(x, "animationManager", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object anon {
       __obj.asInstanceOf[AxisManager]
     }
     
-    extension [Self <: AxisManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisManager] (val x: Self) extends AnyVal {
       
       inline def setAxisManager(value: typings.egjsAxes.declarationAxisManagerMod.AxisManager): Self = StObject.set(x, "axisManager", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object anon {
       __obj.asInstanceOf[DestPos]
     }
     
-    extension [Self <: DestPos](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestPos] (val x: Self) extends AnyVal {
       
       inline def setDestPos(value: Axis): Self = StObject.set(x, "destPos", value.asInstanceOf[js.Any])
       
@@ -117,7 +120,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

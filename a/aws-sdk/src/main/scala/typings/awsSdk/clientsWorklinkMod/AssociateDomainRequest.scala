@@ -33,7 +33,8 @@ object AssociateDomainRequest {
     __obj.asInstanceOf[AssociateDomainRequest]
   }
   
-  extension [Self <: AssociateDomainRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateDomainRequest] (val x: Self) extends AnyVal {
     
     inline def setAcmCertificateArn(value: AcmCertificateArn): Self = StObject.set(x, "AcmCertificateArn", value.asInstanceOf[js.Any])
     

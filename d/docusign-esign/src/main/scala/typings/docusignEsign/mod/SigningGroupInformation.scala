@@ -18,7 +18,8 @@ object SigningGroupInformation {
     __obj.asInstanceOf[SigningGroupInformation]
   }
   
-  extension [Self <: SigningGroupInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SigningGroupInformation] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: js.Array[SigningGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     

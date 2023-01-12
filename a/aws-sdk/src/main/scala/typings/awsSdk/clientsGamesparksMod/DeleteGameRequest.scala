@@ -18,7 +18,8 @@ object DeleteGameRequest {
     __obj.asInstanceOf[DeleteGameRequest]
   }
   
-  extension [Self <: DeleteGameRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteGameRequest] (val x: Self) extends AnyVal {
     
     inline def setGameName(value: GameName): Self = StObject.set(x, "GameName", value.asInstanceOf[js.Any])
   }

@@ -48,7 +48,8 @@ object UpdateComponentInput {
     __obj.asInstanceOf[UpdateComponentInput]
   }
   
-  extension [Self <: UpdateComponentInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateComponentInput] (val x: Self) extends AnyVal {
     
     inline def setDeploymentType(value: ComponentDeploymentUpdateType): Self = StObject.set(x, "deploymentType", value.asInstanceOf[js.Any])
     

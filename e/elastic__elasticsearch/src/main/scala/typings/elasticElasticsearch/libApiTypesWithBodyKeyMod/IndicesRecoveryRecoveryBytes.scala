@@ -36,7 +36,8 @@ object IndicesRecoveryRecoveryBytes {
     __obj.asInstanceOf[IndicesRecoveryRecoveryBytes]
   }
   
-  extension [Self <: IndicesRecoveryRecoveryBytes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesRecoveryRecoveryBytes] (val x: Self) extends AnyVal {
     
     inline def setPercent(value: Percentage): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     

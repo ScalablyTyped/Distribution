@@ -33,7 +33,8 @@ object GoogleActionsV2UiElementsCarouselSelect {
     __obj.asInstanceOf[GoogleActionsV2UiElementsCarouselSelect]
   }
   
-  extension [Self <: GoogleActionsV2UiElementsCarouselSelect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2UiElementsCarouselSelect] (val x: Self) extends AnyVal {
     
     inline def setImageDisplayOptions(value: GoogleActionsV2UiElementsCarouselSelectImageDisplayOptions): Self = StObject.set(x, "imageDisplayOptions", value.asInstanceOf[js.Any])
     

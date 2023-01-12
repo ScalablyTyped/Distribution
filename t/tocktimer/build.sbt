@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tocktimer"
-version := "1.0-dt-20211202Z-939480"
+version := "1.0-dt-20211202Z-295db2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

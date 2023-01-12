@@ -89,7 +89,8 @@ object mod {
         __obj.asInstanceOf[Document]
       }
       
-      extension [Self <: Document](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
         
         inline def setFonts(value: FontFaceSet): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
       }
@@ -141,7 +142,8 @@ object mod {
         __obj.asInstanceOf[FontFace]
       }
       
-      extension [Self <: FontFace](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FontFace] (val x: Self) extends AnyVal {
         
         inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
         
@@ -192,7 +194,8 @@ object mod {
         __obj.asInstanceOf[FontFaceDescriptors]
       }
       
-      extension [Self <: FontFaceDescriptors](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FontFaceDescriptors] (val x: Self) extends AnyVal {
         
         inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
         
@@ -304,7 +307,8 @@ object mod {
         __obj.asInstanceOf[WorkerGlobalScope]
       }
       
-      extension [Self <: WorkerGlobalScope](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WorkerGlobalScope] (val x: Self) extends AnyVal {
         
         inline def setFonts(value: FontFaceSet): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
       }
@@ -350,7 +354,8 @@ object mod {
       __obj.asInstanceOf[FontFaceSetCallbackMap]
     }
     
-    extension [Self <: FontFaceSetCallbackMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontFaceSetCallbackMap] (val x: Self) extends AnyVal {
       
       inline def setLoading(value: FontFaceSetLoadEvent => Any): Self = StObject.set(x, "loading", js.Any.fromFunction1(value))
       
@@ -375,7 +380,8 @@ object mod {
       __obj.asInstanceOf[FontFaceSetLoadEventInit]
     }
     
-    extension [Self <: FontFaceSetLoadEventInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontFaceSetLoadEventInit] (val x: Self) extends AnyVal {
       
       inline def setFontfaces(value: js.Array[FontFace]): Self = StObject.set(x, "fontfaces", value.asInstanceOf[js.Any])
       

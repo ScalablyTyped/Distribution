@@ -78,7 +78,8 @@ object Backend {
     __obj.asInstanceOf[Backend]
   }
   
-  extension [Self <: Backend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Backend] (val x: Self) extends AnyVal {
     
     inline def setBalancingMode(value: String): Self = StObject.set(x, "balancingMode", value.asInstanceOf[js.Any])
     

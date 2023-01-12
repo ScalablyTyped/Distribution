@@ -17,7 +17,8 @@ object SuspendUnprocessed {
     __obj.asInstanceOf[SuspendUnprocessed]
   }
   
-  extension [Self <: SuspendUnprocessed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuspendUnprocessed] (val x: Self) extends AnyVal {
     
     inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     

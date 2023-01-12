@@ -18,7 +18,8 @@ object ConfirmConnectionResponse {
     __obj.asInstanceOf[ConfirmConnectionResponse]
   }
   
-  extension [Self <: ConfirmConnectionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmConnectionResponse] (val x: Self) extends AnyVal {
     
     inline def setConnectionState(value: ConnectionState): Self = StObject.set(x, "connectionState", value.asInstanceOf[js.Any])
     

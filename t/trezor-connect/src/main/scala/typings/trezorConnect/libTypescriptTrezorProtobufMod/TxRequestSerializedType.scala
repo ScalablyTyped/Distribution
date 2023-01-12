@@ -19,7 +19,8 @@ object TxRequestSerializedType {
     __obj.asInstanceOf[TxRequestSerializedType]
   }
   
-  extension [Self <: TxRequestSerializedType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TxRequestSerializedType] (val x: Self) extends AnyVal {
     
     inline def setSerialized_tx(value: String): Self = StObject.set(x, "serialized_tx", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ParallelOptions {
     __obj.asInstanceOf[ParallelOptions]
   }
   
-  extension [Self <: ParallelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParallelOptions] (val x: Self) extends AnyVal {
     
     inline def setEvalPath(value: String): Self = StObject.set(x, "evalPath", value.asInstanceOf[js.Any])
     

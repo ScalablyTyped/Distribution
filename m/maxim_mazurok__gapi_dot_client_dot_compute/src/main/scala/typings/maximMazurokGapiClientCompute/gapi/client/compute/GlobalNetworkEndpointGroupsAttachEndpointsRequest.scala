@@ -16,7 +16,8 @@ object GlobalNetworkEndpointGroupsAttachEndpointsRequest {
     __obj.asInstanceOf[GlobalNetworkEndpointGroupsAttachEndpointsRequest]
   }
   
-  extension [Self <: GlobalNetworkEndpointGroupsAttachEndpointsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalNetworkEndpointGroupsAttachEndpointsRequest] (val x: Self) extends AnyVal {
     
     inline def setNetworkEndpoints(value: js.Array[NetworkEndpoint]): Self = StObject.set(x, "networkEndpoints", value.asInstanceOf[js.Any])
     

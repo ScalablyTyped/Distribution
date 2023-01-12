@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Container]
     }
     
-    extension [Self <: Container](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
       
       inline def `set@container`(value: `@set`): Self = StObject.set(x, "@container", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def `set@context`(value: OrArray[Null | String | ContextDefinition]): Self = StObject.set(x, "@context", value.asInstanceOf[js.Any])
       
@@ -100,7 +102,8 @@ object anon {
       __obj.asInstanceOf[Protected]
     }
     
-    extension [Self <: Protected](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Protected] (val x: Self) extends AnyVal {
       
       inline def `set@container`(value: `@set`): Self = StObject.set(x, "@container", value.asInstanceOf[js.Any])
       
@@ -144,7 +147,8 @@ object anon {
       __obj.asInstanceOf[idKeywordidnullundefinedn]
     }
     
-    extension [Self <: idKeywordidnullundefinedn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: idKeywordidnullundefinedn] (val x: Self) extends AnyVal {
       
       inline def `set@container`(value: (OrArray[`@list` | `@set` | ContainerType]) | ContainerTypeArray): Self = StObject.set(x, "@container", value.asInstanceOf[js.Any])
       
@@ -227,7 +231,8 @@ object anon {
       __obj.asInstanceOf[reverseKeywordreversecont]
     }
     
-    extension [Self <: reverseKeywordreversecont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: reverseKeywordreversecont] (val x: Self) extends AnyVal {
       
       inline def `set@container`(value: `@set` | `@index`): Self = StObject.set(x, "@container", value.asInstanceOf[js.Any])
       
@@ -289,7 +294,8 @@ object anon {
       __obj.asInstanceOf[valueKeywordvalueJsonObje]
     }
     
-    extension [Self <: valueKeywordvalueJsonObje](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: valueKeywordvalueJsonObje] (val x: Self) extends AnyVal {
       
       inline def `set@context`(value: OrArray[Null | String | ContextDefinition]): Self = StObject.set(x, "@context", value.asInstanceOf[js.Any])
       
@@ -336,7 +342,8 @@ object anon {
       __obj.asInstanceOf[valueKeywordvaluelanguage]
     }
     
-    extension [Self <: valueKeywordvaluelanguage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: valueKeywordvaluelanguage] (val x: Self) extends AnyVal {
       
       inline def `set@context`(value: OrArray[Null | String | ContextDefinition]): Self = StObject.set(x, "@context", value.asInstanceOf[js.Any])
       
@@ -388,7 +395,8 @@ object anon {
       __obj.asInstanceOf[valueKeywordvaluetypeKeyw]
     }
     
-    extension [Self <: valueKeywordvaluetypeKeyw](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: valueKeywordvaluetypeKeyw] (val x: Self) extends AnyVal {
       
       inline def `set@context`(value: OrArray[Null | String | ContextDefinition]): Self = StObject.set(x, "@context", value.asInstanceOf[js.Any])
       

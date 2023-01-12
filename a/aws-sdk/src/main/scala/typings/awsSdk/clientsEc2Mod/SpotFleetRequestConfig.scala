@@ -43,7 +43,8 @@ object SpotFleetRequestConfig {
     __obj.asInstanceOf[SpotFleetRequestConfig]
   }
   
-  extension [Self <: SpotFleetRequestConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpotFleetRequestConfig] (val x: Self) extends AnyVal {
     
     inline def setActivityStatus(value: ActivityStatus): Self = StObject.set(x, "ActivityStatus", value.asInstanceOf[js.Any])
     

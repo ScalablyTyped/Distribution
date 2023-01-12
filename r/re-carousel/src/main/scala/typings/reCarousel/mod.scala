@@ -46,7 +46,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CarouselProps]
     }
     
-    extension [Self <: CarouselProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselProps] (val x: Self) extends AnyVal {
       
       inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SiblingFrames]
     }
     
-    extension [Self <: SiblingFrames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SiblingFrames] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: HTMLDivElement): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -144,7 +146,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[WidgetProps]
     }
     
-    extension [Self <: WidgetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WidgetProps] (val x: Self) extends AnyVal {
       
       inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       

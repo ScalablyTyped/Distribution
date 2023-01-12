@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bootstrap-validator"
-version := "0.11-dt-20211202Z-a7a186"
+version := "0.11-dt-20211202Z-045f63"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

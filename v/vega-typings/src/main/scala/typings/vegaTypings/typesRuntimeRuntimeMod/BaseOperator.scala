@@ -83,7 +83,8 @@ object BaseOperator {
     __obj.asInstanceOf[BaseOperator]
   }
   
-  extension [Self <: BaseOperator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseOperator] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: StringDictionary[

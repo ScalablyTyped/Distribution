@@ -22,7 +22,8 @@ object WebServerResource {
     __obj.asInstanceOf[WebServerResource]
   }
   
-  extension [Self <: WebServerResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebServerResource] (val x: Self) extends AnyVal {
     
     inline def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     

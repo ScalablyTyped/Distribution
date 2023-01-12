@@ -17,7 +17,8 @@ object LinearGradientOptions {
     __obj.asInstanceOf[LinearGradientOptions]
   }
   
-  extension [Self <: LinearGradientOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinearGradientOptions] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object MaxAgeOnExpireUpdateExpire {
     __obj.asInstanceOf[MaxAgeOnExpireUpdateExpire[MaxAge, ExpireHandler, UpdateExpire]]
   }
   
-  extension [Self <: MaxAgeOnExpireUpdateExpire[?, ?, ?], MaxAge /* <: Double */, ExpireHandler /* <: typings.moize.mod.OnExpire */, UpdateExpire /* <: Boolean */](x: Self & (MaxAgeOnExpireUpdateExpire[MaxAge, ExpireHandler, UpdateExpire])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxAgeOnExpireUpdateExpire[?, ?, ?], MaxAge /* <: Double */, ExpireHandler /* <: typings.moize.mod.OnExpire */, UpdateExpire /* <: Boolean */] (val x: Self & (MaxAgeOnExpireUpdateExpire[MaxAge, ExpireHandler, UpdateExpire])) extends AnyVal {
     
     inline def setMaxAge(value: MaxAge): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     

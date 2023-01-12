@@ -35,7 +35,8 @@ object Bail {
     __obj.asInstanceOf[Bail[K]]
   }
   
-  extension [Self <: Bail[?], K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88, starting with typings.expressValidator.expressValidatorStrings.not, typings.expressValidator.expressValidatorStrings.withMessage, typings.expressValidator.expressValidatorStrings.custom */ Any */](x: Self & Bail[K]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bail[?], K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88, starting with typings.expressValidator.expressValidatorStrings.not, typings.expressValidator.expressValidatorStrings.withMessage, typings.expressValidator.expressValidatorStrings.custom */ Any */] (val x: Self & Bail[K]) extends AnyVal {
     
     inline def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
     

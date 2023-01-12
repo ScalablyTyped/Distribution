@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[DocoptOption]
     }
     
-    extension [Self <: DocoptOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocoptOption] (val x: Self) extends AnyVal {
       
       inline def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       

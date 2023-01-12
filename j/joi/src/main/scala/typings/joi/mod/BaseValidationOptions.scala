@@ -123,7 +123,8 @@ object BaseValidationOptions {
     __obj.asInstanceOf[BaseValidationOptions]
   }
   
-  extension [Self <: BaseValidationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseValidationOptions] (val x: Self) extends AnyVal {
     
     inline def setAbortEarly(value: Boolean): Self = StObject.set(x, "abortEarly", value.asInstanceOf[js.Any])
     

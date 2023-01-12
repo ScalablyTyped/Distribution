@@ -29,7 +29,8 @@ object esmInputMod extends Shortcut {
       __obj.asInstanceOf[InputProps]
     }
     
-    extension [Self <: InputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputProps] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: ElementType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

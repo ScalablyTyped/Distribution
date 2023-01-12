@@ -83,7 +83,8 @@ object PlayerList {
     __obj.asInstanceOf[PlayerList]
   }
   
-  extension [Self <: PlayerList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerList] (val x: Self) extends AnyVal {
     
     inline def setAddEntries(value: js.Array[String] => js.Promise[Response]): Self = StObject.set(x, "addEntries", js.Any.fromFunction1(value))
     

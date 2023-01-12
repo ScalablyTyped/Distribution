@@ -360,7 +360,8 @@ object AllowSlideNext {
     __obj.asInstanceOf[AllowSlideNext]
   }
   
-  extension [Self <: AllowSlideNext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowSlideNext] (val x: Self) extends AnyVal {
     
     inline def setA11y(value: `3`): Self = StObject.set(x, "a11y", value.asInstanceOf[js.Any])
     

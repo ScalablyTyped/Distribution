@@ -43,7 +43,8 @@ object SparkStandaloneAutoscalingConfig {
     __obj.asInstanceOf[SparkStandaloneAutoscalingConfig]
   }
   
-  extension [Self <: SparkStandaloneAutoscalingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparkStandaloneAutoscalingConfig] (val x: Self) extends AnyVal {
     
     inline def setGracefulDecommissionTimeout(value: String): Self = StObject.set(x, "gracefulDecommissionTimeout", value.asInstanceOf[js.Any])
     

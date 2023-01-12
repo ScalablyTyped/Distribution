@@ -270,7 +270,8 @@ object CoreChartOptionspieElemen {
     __obj.asInstanceOf[CoreChartOptionspieElemen]
   }
   
-  extension [Self <: CoreChartOptionspieElemen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreChartOptionspieElemen] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: `false` | AnimationSpecpieonProgres): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

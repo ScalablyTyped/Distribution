@@ -18,7 +18,8 @@ object AccessibilityAnnouncementFinishedEvent {
     __obj.asInstanceOf[AccessibilityAnnouncementFinishedEvent]
   }
   
-  extension [Self <: AccessibilityAnnouncementFinishedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessibilityAnnouncementFinishedEvent] (val x: Self) extends AnyVal {
     
     inline def setAnnouncement(value: String): Self = StObject.set(x, "announcement", value.asInstanceOf[js.Any])
     

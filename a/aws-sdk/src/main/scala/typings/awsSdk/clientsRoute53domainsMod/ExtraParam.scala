@@ -23,7 +23,8 @@ object ExtraParam {
     __obj.asInstanceOf[ExtraParam]
   }
   
-  extension [Self <: ExtraParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtraParam] (val x: Self) extends AnyVal {
     
     inline def setName(value: ExtraParamName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

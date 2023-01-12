@@ -29,7 +29,8 @@ object FaceVideoResponse {
     __obj.asInstanceOf[FaceVideoResponse]
   }
   
-  extension [Self <: FaceVideoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaceVideoResponse] (val x: Self) extends AnyVal {
     
     inline def setChallenge(value: js.Array[ChallengePayload]): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
     

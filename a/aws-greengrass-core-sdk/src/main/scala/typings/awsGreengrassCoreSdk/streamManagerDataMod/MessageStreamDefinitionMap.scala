@@ -29,7 +29,8 @@ object MessageStreamDefinitionMap {
     __obj.asInstanceOf[MessageStreamDefinitionMap]
   }
   
-  extension [Self <: MessageStreamDefinitionMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageStreamDefinitionMap] (val x: Self) extends AnyVal {
     
     inline def setExportDefinition(value: ExportDefinitionMap): Self = StObject.set(x, "exportDefinition", value.asInstanceOf[js.Any])
     

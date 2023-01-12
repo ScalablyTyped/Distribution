@@ -42,7 +42,8 @@ object MovieMediaMetadata {
     __obj.asInstanceOf[MovieMediaMetadata]
   }
   
-  extension [Self <: MovieMediaMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MovieMediaMetadata] (val x: Self) extends AnyVal {
     
     inline def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object BaseSliderProps {
     __obj.asInstanceOf[BaseSliderProps]
   }
   
-  extension [Self <: BaseSliderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseSliderProps] (val x: Self) extends AnyVal {
     
     inline def setBaseId(value: String): Self = StObject.set(x, "baseId", value.asInstanceOf[js.Any])
   }

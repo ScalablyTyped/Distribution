@@ -18,7 +18,8 @@ object EnableReportingApiRequest {
     __obj.asInstanceOf[EnableReportingApiRequest]
   }
   
-  extension [Self <: EnableReportingApiRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableReportingApiRequest] (val x: Self) extends AnyVal {
     
     inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object LoadNetworkResourceOptions {
     __obj.asInstanceOf[LoadNetworkResourceOptions]
   }
   
-  extension [Self <: LoadNetworkResourceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadNetworkResourceOptions] (val x: Self) extends AnyVal {
     
     inline def setDisableCache(value: Boolean): Self = StObject.set(x, "disableCache", value.asInstanceOf[js.Any])
     

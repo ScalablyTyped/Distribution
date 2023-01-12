@@ -53,7 +53,8 @@ object MatterConstraintRenderConfig {
     __obj.asInstanceOf[MatterConstraintRenderConfig]
   }
   
-  extension [Self <: MatterConstraintRenderConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatterConstraintRenderConfig] (val x: Self) extends AnyVal {
     
     inline def setAnchorColor(value: Double): Self = StObject.set(x, "anchorColor", value.asInstanceOf[js.Any])
     

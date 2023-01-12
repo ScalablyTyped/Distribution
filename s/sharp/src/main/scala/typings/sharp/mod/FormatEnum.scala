@@ -71,7 +71,8 @@ object FormatEnum {
     __obj.asInstanceOf[FormatEnum]
   }
   
-  extension [Self <: FormatEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatEnum] (val x: Self) extends AnyVal {
     
     inline def setAvif(value: AvailableFormatInfo): Self = StObject.set(x, "avif", value.asInstanceOf[js.Any])
     

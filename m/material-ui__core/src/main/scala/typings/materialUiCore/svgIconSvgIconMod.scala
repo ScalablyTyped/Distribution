@@ -77,7 +77,8 @@ object svgIconSvgIconMod extends Shortcut {
       __obj.asInstanceOf[SvgIconTypeMap[P, D]]
     }
     
-    extension [Self <: SvgIconTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (SvgIconTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SvgIconTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (SvgIconTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: SvgIconClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

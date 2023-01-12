@@ -48,7 +48,8 @@ object ModelPrototype {
     __obj.asInstanceOf[ModelPrototype]
   }
   
-  extension [Self <: ModelPrototype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelPrototype] (val x: Self) extends AnyVal {
     
     inline def setDataItem(value: () => js.Object): Self = StObject.set(x, "dataItem", js.Any.fromFunction0(value))
     

@@ -63,7 +63,8 @@ object anon {
       __obj.asInstanceOf[JSZipFileOptionsdirtrue]
     }
     
-    extension [Self <: JSZipFileOptionsdirtrue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSZipFileOptionsdirtrue] (val x: Self) extends AnyVal {
       
       inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object anon {
       __obj.asInstanceOf[Promise]
     }
     
-    extension [Self <: Promise](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Promise] (val x: Self) extends AnyVal {
       
       inline def setPromise(value: PromiseConstructorLike): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
     }

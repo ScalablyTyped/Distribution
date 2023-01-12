@@ -19,7 +19,8 @@ object UrlEncodedBodyParserOptions {
     __obj.asInstanceOf[UrlEncodedBodyParserOptions]
   }
   
-  extension [Self <: UrlEncodedBodyParserOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlEncodedBodyParserOptions] (val x: Self) extends AnyVal {
     
     inline def setBodyReader(value: Boolean): Self = StObject.set(x, "bodyReader", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object TSTypeReference {
   @js.native
   def apply(typeName: TSEntityName, typeParameters: TSTypeParameterInstantiation): TSTypeReference = js.native
   
-  extension [Self <: TSTypeReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSTypeReference] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.babelTypes.babelTypesStrings.TSTypeReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

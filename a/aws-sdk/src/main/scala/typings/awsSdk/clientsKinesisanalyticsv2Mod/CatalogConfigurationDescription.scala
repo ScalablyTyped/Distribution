@@ -18,7 +18,8 @@ object CatalogConfigurationDescription {
     __obj.asInstanceOf[CatalogConfigurationDescription]
   }
   
-  extension [Self <: CatalogConfigurationDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatalogConfigurationDescription] (val x: Self) extends AnyVal {
     
     inline def setGlueDataCatalogConfigurationDescription(value: GlueDataCatalogConfigurationDescription): Self = StObject.set(x, "GlueDataCatalogConfigurationDescription", value.asInstanceOf[js.Any])
   }

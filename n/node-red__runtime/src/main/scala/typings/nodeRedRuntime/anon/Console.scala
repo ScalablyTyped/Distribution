@@ -18,7 +18,8 @@ object Console {
     __obj.asInstanceOf[Console]
   }
   
-  extension [Self <: Console](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Console] (val x: Self) extends AnyVal {
     
     inline def setConsole(value: Audit): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
     

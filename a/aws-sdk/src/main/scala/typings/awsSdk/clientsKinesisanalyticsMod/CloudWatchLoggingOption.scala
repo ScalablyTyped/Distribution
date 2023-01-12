@@ -23,7 +23,8 @@ object CloudWatchLoggingOption {
     __obj.asInstanceOf[CloudWatchLoggingOption]
   }
   
-  extension [Self <: CloudWatchLoggingOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudWatchLoggingOption] (val x: Self) extends AnyVal {
     
     inline def setLogStreamARN(value: LogStreamARN): Self = StObject.set(x, "LogStreamARN", value.asInstanceOf[js.Any])
     

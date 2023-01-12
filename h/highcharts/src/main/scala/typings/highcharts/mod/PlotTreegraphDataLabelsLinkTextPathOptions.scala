@@ -15,7 +15,8 @@ object PlotTreegraphDataLabelsLinkTextPathOptions {
     __obj.asInstanceOf[PlotTreegraphDataLabelsLinkTextPathOptions]
   }
   
-  extension [Self <: PlotTreegraphDataLabelsLinkTextPathOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTreegraphDataLabelsLinkTextPathOptions] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: PlotTreegraphDataLabelsLinkTextPathAttributesOptions): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

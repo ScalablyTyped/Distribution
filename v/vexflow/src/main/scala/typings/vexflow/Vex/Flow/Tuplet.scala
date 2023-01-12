@@ -51,7 +51,8 @@ object Tuplet {
     __obj.asInstanceOf[Tuplet]
   }
   
-  extension [Self <: Tuplet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tuplet] (val x: Self) extends AnyVal {
     
     inline def setAttach(value: () => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction0(value))
     

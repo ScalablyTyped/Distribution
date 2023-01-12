@@ -23,7 +23,8 @@ object Touch {
   @js.native
   val ^ : Touch = js.native
   
-  extension [Self <: Touch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Touch] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: obj): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object anon {
       __obj.asInstanceOf[OmitLocalizationgetCalend]
     }
     
-    extension [Self <: OmitLocalizationgetCalend](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitLocalizationgetCalend] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       

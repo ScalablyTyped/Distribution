@@ -18,7 +18,8 @@ object V {
     __obj.asInstanceOf[V]
   }
   
-  extension [Self <: V](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: V] (val x: Self) extends AnyVal {
     
     inline def setTDiffuse(value: IUniform[Any]): Self = StObject.set(x, "tDiffuse", value.asInstanceOf[js.Any])
     

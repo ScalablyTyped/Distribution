@@ -36,7 +36,8 @@ object XTableChartsSupplier {
     __obj.asInstanceOf[XTableChartsSupplier]
   }
   
-  extension [Self <: XTableChartsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTableChartsSupplier] (val x: Self) extends AnyVal {
     
     inline def setCharts(value: XTableCharts): Self = StObject.set(x, "Charts", value.asInstanceOf[js.Any])
     

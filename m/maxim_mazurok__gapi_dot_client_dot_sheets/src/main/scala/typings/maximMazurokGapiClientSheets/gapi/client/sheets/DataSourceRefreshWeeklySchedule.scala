@@ -19,7 +19,8 @@ object DataSourceRefreshWeeklySchedule {
     __obj.asInstanceOf[DataSourceRefreshWeeklySchedule]
   }
   
-  extension [Self <: DataSourceRefreshWeeklySchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceRefreshWeeklySchedule] (val x: Self) extends AnyVal {
     
     inline def setDaysOfWeek(value: js.Array[String]): Self = StObject.set(x, "daysOfWeek", value.asInstanceOf[js.Any])
     

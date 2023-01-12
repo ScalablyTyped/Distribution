@@ -88,7 +88,8 @@ object CreateServerRequest {
     __obj.asInstanceOf[CreateServerRequest]
   }
   
-  extension [Self <: CreateServerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateServerRequest] (val x: Self) extends AnyVal {
     
     inline def setCertificate(value: Certificate): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     

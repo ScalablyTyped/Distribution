@@ -23,7 +23,8 @@ object StringFilter {
     __obj.asInstanceOf[StringFilter]
   }
   
-  extension [Self <: StringFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringFilter] (val x: Self) extends AnyVal {
     
     inline def setComparison(value: StringFilterComparison): Self = StObject.set(x, "Comparison", value.asInstanceOf[js.Any])
     

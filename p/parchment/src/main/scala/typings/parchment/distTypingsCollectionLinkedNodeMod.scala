@@ -21,7 +21,8 @@ object distTypingsCollectionLinkedNodeMod {
       __obj.asInstanceOf[LinkedNode]
     }
     
-    extension [Self <: LinkedNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkedNode] (val x: Self) extends AnyVal {
       
       inline def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
       

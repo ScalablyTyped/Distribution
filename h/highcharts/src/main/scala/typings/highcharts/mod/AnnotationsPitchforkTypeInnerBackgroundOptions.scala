@@ -83,7 +83,8 @@ object AnnotationsPitchforkTypeInnerBackgroundOptions {
     __obj.asInstanceOf[AnnotationsPitchforkTypeInnerBackgroundOptions]
   }
   
-  extension [Self <: AnnotationsPitchforkTypeInnerBackgroundOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsPitchforkTypeInnerBackgroundOptions] (val x: Self) extends AnyVal {
     
     inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     

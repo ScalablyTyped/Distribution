@@ -15,7 +15,8 @@ object OfflineProductStorage {
     __obj.asInstanceOf[OfflineProductStorage]
   }
   
-  extension [Self <: OfflineProductStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OfflineProductStorage] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

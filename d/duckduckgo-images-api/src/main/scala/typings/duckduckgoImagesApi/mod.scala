@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[DuckDuckGoImage]
     }
     
-    extension [Self <: DuckDuckGoImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DuckDuckGoImage] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

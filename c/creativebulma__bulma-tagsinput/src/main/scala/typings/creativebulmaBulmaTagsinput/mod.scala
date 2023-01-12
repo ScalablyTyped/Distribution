@@ -360,7 +360,8 @@ object mod {
       __obj.asInstanceOf[BulmaTagsInputEventMap]
     }
     
-    extension [Self <: BulmaTagsInputEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BulmaTagsInputEventMap] (val x: Self) extends AnyVal {
       
       inline def setAfterDotadd(value: Item): Self = StObject.set(x, "after.add", value.asInstanceOf[js.Any])
       
@@ -401,7 +402,8 @@ object mod {
       __obj.asInstanceOf[BulmaTagsInputItem]
     }
     
-    extension [Self <: BulmaTagsInputItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BulmaTagsInputItem] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
@@ -571,7 +573,8 @@ object mod {
       __obj.asInstanceOf[BulmaTagsInputOptions]
     }
     
-    extension [Self <: BulmaTagsInputOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BulmaTagsInputOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowDuplicates(value: Boolean): Self = StObject.set(x, "allowDuplicates", value.asInstanceOf[js.Any])
       

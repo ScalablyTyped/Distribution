@@ -17,7 +17,8 @@ object OnBeaconUpdateCallbackResult {
     __obj.asInstanceOf[OnBeaconUpdateCallbackResult]
   }
   
-  extension [Self <: OnBeaconUpdateCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnBeaconUpdateCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setBeacons(value: Array[IBeaconInfo]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object AutoSnapshotAddOnRequest {
     __obj.asInstanceOf[AutoSnapshotAddOnRequest]
   }
   
-  extension [Self <: AutoSnapshotAddOnRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoSnapshotAddOnRequest] (val x: Self) extends AnyVal {
     
     inline def setSnapshotTimeOfDay(value: TimeOfDay): Self = StObject.set(x, "snapshotTimeOfDay", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object XMultipleOperation {
     __obj.asInstanceOf[XMultipleOperation]
   }
   
-  extension [Self <: XMultipleOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMultipleOperation] (val x: Self) extends AnyVal {
     
     inline def setSetTableOperation(value: (CellRangeAddress, TableOperationMode, CellAddress, CellAddress) => Unit): Self = StObject.set(x, "setTableOperation", js.Any.fromFunction4(value))
   }

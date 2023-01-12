@@ -28,7 +28,8 @@ object PutPipelineDefinitionOutput {
     __obj.asInstanceOf[PutPipelineDefinitionOutput]
   }
   
-  extension [Self <: PutPipelineDefinitionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutPipelineDefinitionOutput] (val x: Self) extends AnyVal {
     
     inline def setErrored(value: Boolean): Self = StObject.set(x, "errored", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object TypeArgumentInferenceContext {
     __obj.asInstanceOf[TypeArgumentInferenceContext]
   }
   
-  extension [Self <: TypeArgumentInferenceContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeArgumentInferenceContext] (val x: Self) extends AnyVal {
     
     inline def setAddCandidateForInference(value: (PullTypeParameterSymbol, PullTypeSymbol) => Unit): Self = StObject.set(x, "addCandidateForInference", js.Any.fromFunction2(value))
     

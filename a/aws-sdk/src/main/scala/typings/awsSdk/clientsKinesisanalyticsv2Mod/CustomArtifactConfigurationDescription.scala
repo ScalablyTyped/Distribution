@@ -25,7 +25,8 @@ object CustomArtifactConfigurationDescription {
     __obj.asInstanceOf[CustomArtifactConfigurationDescription]
   }
   
-  extension [Self <: CustomArtifactConfigurationDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomArtifactConfigurationDescription] (val x: Self) extends AnyVal {
     
     inline def setArtifactType(value: ArtifactType): Self = StObject.set(x, "ArtifactType", value.asInstanceOf[js.Any])
     

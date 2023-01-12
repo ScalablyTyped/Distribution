@@ -17,7 +17,8 @@ object Subaccounts {
     __obj.asInstanceOf[Subaccounts]
   }
   
-  extension [Self <: Subaccounts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subaccounts] (val x: Self) extends AnyVal {
     
     inline def setPage_info(value: Currentpage): Self = StObject.set(x, "page_info", value.asInstanceOf[js.Any])
     

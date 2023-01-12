@@ -22,7 +22,8 @@ object SpreadsheetExcelImportEvent {
     __obj.asInstanceOf[SpreadsheetExcelImportEvent]
   }
   
-  extension [Self <: SpreadsheetExcelImportEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetExcelImportEvent] (val x: Self) extends AnyVal {
     
     inline def setFile(value: Blob | File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

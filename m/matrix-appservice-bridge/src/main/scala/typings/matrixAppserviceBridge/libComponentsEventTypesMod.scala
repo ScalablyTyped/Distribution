@@ -60,7 +60,8 @@ object libComponentsEventTypesMod {
       __obj.asInstanceOf[PresenceEvent]
     }
     
-    extension [Self <: PresenceEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PresenceEvent] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Currentlyactive): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object libComponentsEventTypesMod {
       __obj.asInstanceOf[ReadReceiptEvent]
     }
     
-    extension [Self <: ReadReceiptEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadReceiptEvent] (val x: Self) extends AnyVal {
       
       inline def setContent(value: StringDictionary[Mread]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object libComponentsEventTypesMod {
       __obj.asInstanceOf[TypingEvent]
     }
     
-    extension [Self <: TypingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypingEvent] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Userids): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -160,7 +163,8 @@ object libComponentsEventTypesMod {
       __obj.asInstanceOf[WeakEvent]
     }
     
-    extension [Self <: WeakEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WeakEvent] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Record[String, Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -207,7 +211,8 @@ object libComponentsEventTypesMod {
       __obj.asInstanceOf[WeakStateEvent]
     }
     
-    extension [Self <: WeakStateEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WeakStateEvent] (val x: Self) extends AnyVal {
       
       inline def setState_key(value: String): Self = StObject.set(x, "state_key", value.asInstanceOf[js.Any])
     }

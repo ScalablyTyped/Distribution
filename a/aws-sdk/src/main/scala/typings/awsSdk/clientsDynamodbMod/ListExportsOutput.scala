@@ -23,7 +23,8 @@ object ListExportsOutput {
     __obj.asInstanceOf[ListExportsOutput]
   }
   
-  extension [Self <: ListExportsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListExportsOutput] (val x: Self) extends AnyVal {
     
     inline def setExportSummaries(value: ExportSummaries): Self = StObject.set(x, "ExportSummaries", value.asInstanceOf[js.Any])
     

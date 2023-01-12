@@ -22,7 +22,8 @@ object HeldGroupsQuery {
     __obj.asInstanceOf[HeldGroupsQuery]
   }
   
-  extension [Self <: HeldGroupsQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeldGroupsQuery] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object LoRaWANServiceProfile {
     __obj.asInstanceOf[LoRaWANServiceProfile]
   }
   
-  extension [Self <: LoRaWANServiceProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoRaWANServiceProfile] (val x: Self) extends AnyVal {
     
     inline def setAddGwMetadata(value: AddGwMetadata): Self = StObject.set(x, "AddGwMetadata", value.asInstanceOf[js.Any])
     

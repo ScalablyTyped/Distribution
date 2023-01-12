@@ -25,7 +25,8 @@ object BundleDetails {
     __obj.asInstanceOf[BundleDetails]
   }
   
-  extension [Self <: BundleDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BundleDetails] (val x: Self) extends AnyVal {
     
     inline def setAvailablePlatforms(value: Platforms): Self = StObject.set(x, "availablePlatforms", value.asInstanceOf[js.Any])
     

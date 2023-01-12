@@ -19,7 +19,8 @@ object GoogleCloudVisionV1p4beta1WebDetectionWebLabel {
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1WebDetectionWebLabel]
   }
   
-  extension [Self <: GoogleCloudVisionV1p4beta1WebDetectionWebLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p4beta1WebDetectionWebLabel] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object CreateDatabaseMetadata {
     __obj.asInstanceOf[CreateDatabaseMetadata]
   }
   
-  extension [Self <: CreateDatabaseMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDatabaseMetadata] (val x: Self) extends AnyVal {
     
     inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     

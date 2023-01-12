@@ -33,7 +33,8 @@ object FixedToolbarOptions {
     __obj.asInstanceOf[FixedToolbarOptions]
   }
   
-  extension [Self <: FixedToolbarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FixedToolbarOptions] (val x: Self) extends AnyVal {
     
     inline def setDisablePageZoom(value: Boolean): Self = StObject.set(x, "disablePageZoom", value.asInstanceOf[js.Any])
     

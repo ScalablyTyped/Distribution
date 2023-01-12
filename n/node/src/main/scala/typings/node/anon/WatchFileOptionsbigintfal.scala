@@ -20,7 +20,8 @@ object WatchFileOptionsbigintfal {
     __obj.asInstanceOf[WatchFileOptionsbigintfal]
   }
   
-  extension [Self <: WatchFileOptionsbigintfal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchFileOptionsbigintfal] (val x: Self) extends AnyVal {
     
     inline def setBigint(value: Boolean): Self = StObject.set(x, "bigint", value.asInstanceOf[js.Any])
     

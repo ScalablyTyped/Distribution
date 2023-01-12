@@ -16,7 +16,8 @@ object MockUserToken {
     __obj.asInstanceOf[MockUserToken]
   }
   
-  extension [Self <: MockUserToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MockUserToken] (val x: Self) extends AnyVal {
     
     inline def setMockUserToken(value: EmulatorMockTokenOptions | String): Self = StObject.set(x, "mockUserToken", value.asInstanceOf[js.Any])
     

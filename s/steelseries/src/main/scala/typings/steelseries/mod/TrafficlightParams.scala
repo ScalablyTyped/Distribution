@@ -17,7 +17,8 @@ object TrafficlightParams {
     __obj.asInstanceOf[TrafficlightParams]
   }
   
-  extension [Self <: TrafficlightParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrafficlightParams] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

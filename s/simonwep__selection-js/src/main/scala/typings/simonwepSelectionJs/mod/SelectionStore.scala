@@ -27,7 +27,8 @@ object SelectionStore {
     __obj.asInstanceOf[SelectionStore]
   }
   
-  extension [Self <: SelectionStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionStore] (val x: Self) extends AnyVal {
     
     inline def setChanged(value: ChangedElements): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
     

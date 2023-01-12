@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[RomanNumeral]
     }
     
-    extension [Self <: RomanNumeral](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RomanNumeral] (val x: Self) extends AnyVal {
       
       inline def setToInt(value: () => Double): Self = StObject.set(x, "toInt", js.Any.fromFunction0(value))
     }

@@ -15,7 +15,8 @@ object FailingKeyword {
     __obj.asInstanceOf[FailingKeyword]
   }
   
-  extension [Self <: FailingKeyword](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailingKeyword] (val x: Self) extends AnyVal {
     
     inline def setFailingKeyword(value: String): Self = StObject.set(x, "failingKeyword", value.asInstanceOf[js.Any])
   }

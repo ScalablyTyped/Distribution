@@ -25,7 +25,8 @@ object CertPath {
     __obj.asInstanceOf[CertPath]
   }
   
-  extension [Self <: CertPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertPath] (val x: Self) extends AnyVal {
     
     inline def setCertPath(value: String): Self = StObject.set(x, "certPath", value.asInstanceOf[js.Any])
     

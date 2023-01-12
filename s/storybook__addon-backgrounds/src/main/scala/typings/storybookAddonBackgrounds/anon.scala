@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Background]
     }
     
-    extension [Self <: Background](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Background] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[CellAmount]
     }
     
-    extension [Self <: CellAmount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellAmount] (val x: Self) extends AnyVal {
       
       inline def setCellAmount(value: Double): Self = StObject.set(x, "cellAmount", value.asInstanceOf[js.Any])
       
@@ -61,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Grid]
     }
     
-    extension [Self <: Grid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Grid] (val x: Self) extends AnyVal {
       
       inline def setGrid(value: CellAmount): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
@@ -84,7 +87,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object EachAlwaysResult {
     __obj.asInstanceOf[EachAlwaysResult]
   }
   
-  extension [Self <: EachAlwaysResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EachAlwaysResult] (val x: Self) extends AnyVal {
     
     inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

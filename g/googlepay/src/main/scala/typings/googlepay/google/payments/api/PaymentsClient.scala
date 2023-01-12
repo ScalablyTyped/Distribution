@@ -130,7 +130,8 @@ object PaymentsClient {
     __obj.asInstanceOf[PaymentsClient]
   }
   
-  extension [Self <: PaymentsClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentsClient] (val x: Self) extends AnyVal {
     
     inline def setCreateButton(value: ButtonOptions => HTMLElement): Self = StObject.set(x, "createButton", js.Any.fromFunction1(value))
     

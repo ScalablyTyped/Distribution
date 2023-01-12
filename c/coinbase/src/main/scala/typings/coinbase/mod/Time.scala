@@ -16,7 +16,8 @@ object Time {
     __obj.asInstanceOf[Time]
   }
   
-  extension [Self <: Time](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Time] (val x: Self) extends AnyVal {
     
     inline def setData(value: Epoch): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

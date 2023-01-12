@@ -18,7 +18,8 @@ object LoggingConfig {
     __obj.asInstanceOf[LoggingConfig]
   }
   
-  extension [Self <: LoggingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoggingConfig] (val x: Self) extends AnyVal {
     
     inline def setDriverLogLevels(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

@@ -19,7 +19,8 @@ object ConfigurationVariables {
     __obj.asInstanceOf[ConfigurationVariables]
   }
   
-  extension [Self <: ConfigurationVariables](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationVariables] (val x: Self) extends AnyVal {
     
     inline def setMcmId(value: String): Self = StObject.set(x, "mcmId", value.asInstanceOf[js.Any])
     

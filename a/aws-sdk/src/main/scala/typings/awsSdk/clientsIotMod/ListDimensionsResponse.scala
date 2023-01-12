@@ -23,7 +23,8 @@ object ListDimensionsResponse {
     __obj.asInstanceOf[ListDimensionsResponse]
   }
   
-  extension [Self <: ListDimensionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDimensionsResponse] (val x: Self) extends AnyVal {
     
     inline def setDimensionNames(value: DimensionNames): Self = StObject.set(x, "dimensionNames", value.asInstanceOf[js.Any])
     

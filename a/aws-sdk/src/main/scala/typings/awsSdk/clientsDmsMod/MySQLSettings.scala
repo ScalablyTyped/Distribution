@@ -83,7 +83,8 @@ object MySQLSettings {
     __obj.asInstanceOf[MySQLSettings]
   }
   
-  extension [Self <: MySQLSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MySQLSettings] (val x: Self) extends AnyVal {
     
     inline def setAfterConnectScript(value: String): Self = StObject.set(x, "AfterConnectScript", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object WiFiDirectInformationElement {
     __obj.asInstanceOf[WiFiDirectInformationElement]
   }
   
-  extension [Self <: WiFiDirectInformationElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WiFiDirectInformationElement] (val x: Self) extends AnyVal {
     
     inline def setOui(value: IBuffer): Self = StObject.set(x, "oui", value.asInstanceOf[js.Any])
     

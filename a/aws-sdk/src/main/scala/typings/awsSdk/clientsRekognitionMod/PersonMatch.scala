@@ -28,7 +28,8 @@ object PersonMatch {
     __obj.asInstanceOf[PersonMatch]
   }
   
-  extension [Self <: PersonMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersonMatch] (val x: Self) extends AnyVal {
     
     inline def setFaceMatches(value: FaceMatchList): Self = StObject.set(x, "FaceMatches", value.asInstanceOf[js.Any])
     

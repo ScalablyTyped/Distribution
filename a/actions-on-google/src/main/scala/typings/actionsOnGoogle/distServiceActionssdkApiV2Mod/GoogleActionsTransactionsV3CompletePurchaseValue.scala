@@ -30,7 +30,8 @@ object GoogleActionsTransactionsV3CompletePurchaseValue {
     __obj.asInstanceOf[GoogleActionsTransactionsV3CompletePurchaseValue]
   }
   
-  extension [Self <: GoogleActionsTransactionsV3CompletePurchaseValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsTransactionsV3CompletePurchaseValue] (val x: Self) extends AnyVal {
     
     inline def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
     

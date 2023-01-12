@@ -20,7 +20,8 @@ object FORCE {
     __obj.asInstanceOf[FORCE]
   }
   
-  extension [Self <: FORCE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FORCE] (val x: Self) extends AnyVal {
     
     inline def setFORCE(value: `true`): Self = StObject.set(x, "FORCE", value.asInstanceOf[js.Any])
     

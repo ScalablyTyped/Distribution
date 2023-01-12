@@ -33,7 +33,8 @@ object PublishDiagnosticsParams {
     __obj.asInstanceOf[PublishDiagnosticsParams]
   }
   
-  extension [Self <: PublishDiagnosticsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishDiagnosticsParams] (val x: Self) extends AnyVal {
     
     inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     

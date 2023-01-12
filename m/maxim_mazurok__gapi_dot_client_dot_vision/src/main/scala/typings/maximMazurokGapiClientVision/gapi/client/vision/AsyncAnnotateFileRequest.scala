@@ -25,7 +25,8 @@ object AsyncAnnotateFileRequest {
     __obj.asInstanceOf[AsyncAnnotateFileRequest]
   }
   
-  extension [Self <: AsyncAnnotateFileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncAnnotateFileRequest] (val x: Self) extends AnyVal {
     
     inline def setFeatures(value: js.Array[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     

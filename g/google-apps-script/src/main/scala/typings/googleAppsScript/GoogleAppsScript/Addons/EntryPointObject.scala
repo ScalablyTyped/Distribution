@@ -48,7 +48,8 @@ object EntryPointObject {
     __obj.asInstanceOf[EntryPointObject]
   }
   
-  extension [Self <: EntryPointObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntryPointObject] (val x: Self) extends AnyVal {
     
     inline def setAccessCode(value: String): Self = StObject.set(x, "accessCode", value.asInstanceOf[js.Any])
     

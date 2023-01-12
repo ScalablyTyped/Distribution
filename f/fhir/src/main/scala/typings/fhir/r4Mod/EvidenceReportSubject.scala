@@ -25,7 +25,8 @@ object EvidenceReportSubject {
     __obj.asInstanceOf[EvidenceReportSubject]
   }
   
-  extension [Self <: EvidenceReportSubject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvidenceReportSubject] (val x: Self) extends AnyVal {
     
     inline def setCharacteristic(value: js.Array[EvidenceReportSubjectCharacteristic]): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
     

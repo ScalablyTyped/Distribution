@@ -50,7 +50,8 @@ object ASPxClientFABAction {
     __obj.asInstanceOf[ASPxClientFABAction]
   }
   
-  extension [Self <: ASPxClientFABAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFABAction] (val x: Self) extends AnyVal {
     
     inline def setGetActionItem(value: Double => ASPxClientFABActionItem): Self = StObject.set(x, "GetActionItem", js.Any.fromFunction1(value))
     

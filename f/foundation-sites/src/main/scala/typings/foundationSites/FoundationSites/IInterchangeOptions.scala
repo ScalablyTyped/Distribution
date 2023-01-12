@@ -17,7 +17,8 @@ object IInterchangeOptions {
     __obj.asInstanceOf[IInterchangeOptions]
   }
   
-  extension [Self <: IInterchangeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInterchangeOptions] (val x: Self) extends AnyVal {
     
     inline def setRules(value: js.Array[Any]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object CreatePackagingGroupRequest {
     __obj.asInstanceOf[CreatePackagingGroupRequest]
   }
   
-  extension [Self <: CreatePackagingGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePackagingGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthorization(value: Authorization): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ParametersLink {
     __obj.asInstanceOf[ParametersLink]
   }
   
-  extension [Self <: ParametersLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersLink] (val x: Self) extends AnyVal {
     
     inline def setContentVersion(value: String): Self = StObject.set(x, "contentVersion", value.asInstanceOf[js.Any])
     

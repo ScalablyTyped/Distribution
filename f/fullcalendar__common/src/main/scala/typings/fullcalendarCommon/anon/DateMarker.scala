@@ -22,7 +22,8 @@ object DateMarker {
     __obj.asInstanceOf[DateMarker]
   }
   
-  extension [Self <: DateMarker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateMarker] (val x: Self) extends AnyVal {
     
     inline def setDateMarker(value: js.Date): Self = StObject.set(x, "dateMarker", value.asInstanceOf[js.Any])
     

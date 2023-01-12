@@ -18,7 +18,8 @@ object TFIModelPerformance {
     __obj.asInstanceOf[TFIModelPerformance]
   }
   
-  extension [Self <: TFIModelPerformance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TFIModelPerformance] (val x: Self) extends AnyVal {
     
     inline def setAuc(value: float): Self = StObject.set(x, "auc", value.asInstanceOf[js.Any])
     

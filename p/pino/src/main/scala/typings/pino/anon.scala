@@ -148,7 +148,8 @@ object anon {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setAsObject(value: Boolean): Self = StObject.set(x, "asObject", value.asInstanceOf[js.Any])
       
@@ -204,7 +205,8 @@ object anon {
       __obj.asInstanceOf[Bindings]
     }
     
-    extension [Self <: Bindings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bindings] (val x: Self) extends AnyVal {
       
       inline def setBindings(value: /* bindings */ typings.pino.mod.pino.Bindings => js.Object): Self = StObject.set(x, "bindings", js.Any.fromFunction1(value))
       
@@ -243,7 +245,8 @@ object anon {
       __obj.asInstanceOf[DictlogLevel]
     }
     
-    extension [Self <: DictlogLevel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DictlogLevel] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: /* o */ js.Object => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
@@ -284,7 +287,8 @@ object anon {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -315,7 +319,8 @@ object anon {
       __obj.asInstanceOf[Level]
     }
     
-    extension [Self <: Level](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: typings.pino.mod.pino.Level | String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -340,7 +345,8 @@ object anon {
       __obj.asInstanceOf[Log]
     }
     
-    extension [Self <: Log](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
       
       inline def setBindings(value: /* bindings */ typings.pino.mod.pino.Bindings => js.Object): Self = StObject.set(x, "bindings", js.Any.fromFunction1(value))
       
@@ -381,7 +387,8 @@ object anon {
       __obj.asInstanceOf[LogMethod]
     }
     
-    extension [Self <: LogMethod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogMethod] (val x: Self) extends AnyVal {
       
       inline def setLogMethod(
         value: js.ThisFunction3[
@@ -443,7 +450,8 @@ object anon {
       __obj.asInstanceOf[WorkerOptionsautoEndboole]
     }
     
-    extension [Self <: WorkerOptionsautoEndboole](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerOptionsautoEndboole] (val x: Self) extends AnyVal {
       
       inline def setArgv(value: js.Array[Any]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       

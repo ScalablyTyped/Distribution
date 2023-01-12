@@ -43,7 +43,8 @@ object ViewFrame {
     __obj.asInstanceOf[ViewFrame]
   }
   
-  extension [Self <: ViewFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewFrame] (val x: Self) extends AnyVal {
     
     inline def setAnalytics(value: AnalyticsMode): Self = StObject.set(x, "Analytics", value.asInstanceOf[js.Any])
     

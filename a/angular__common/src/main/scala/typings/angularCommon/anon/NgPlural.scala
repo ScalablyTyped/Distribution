@@ -16,7 +16,8 @@ object NgPlural {
     __obj.asInstanceOf[NgPlural]
   }
   
-  extension [Self <: NgPlural](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NgPlural] (val x: Self) extends AnyVal {
     
     inline def setNgPlural(value: ngPlural): Self = StObject.set(x, "ngPlural", value.asInstanceOf[js.Any])
   }

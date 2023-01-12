@@ -47,7 +47,8 @@ object XDDELinks {
     __obj.asInstanceOf[XDDELinks]
   }
   
-  extension [Self <: XDDELinks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDDELinks] (val x: Self) extends AnyVal {
     
     inline def setAddDDELink(value: (String, String, String, DDELinkMode) => XDDELink): Self = StObject.set(x, "addDDELink", js.Any.fromFunction4(value))
   }

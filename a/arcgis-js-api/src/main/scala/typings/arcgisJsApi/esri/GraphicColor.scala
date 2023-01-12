@@ -34,7 +34,8 @@ object GraphicColor {
     __obj.asInstanceOf[GraphicColor]
   }
   
-  extension [Self <: GraphicColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphicColor] (val x: Self) extends AnyVal {
     
     inline def setColor(value: js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

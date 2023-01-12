@@ -50,7 +50,8 @@ object FontWeightEnumValues {
     __obj.asInstanceOf[FontWeightEnumValues]
   }
   
-  extension [Self <: FontWeightEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontWeightEnumValues] (val x: Self) extends AnyVal {
     
     inline def setBlack(value: FontWeight): Self = StObject.set(x, "Black", value.asInstanceOf[js.Any])
     

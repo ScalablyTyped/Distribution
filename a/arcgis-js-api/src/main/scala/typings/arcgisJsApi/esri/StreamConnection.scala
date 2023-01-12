@@ -41,7 +41,8 @@ object StreamConnection {
     __obj.asInstanceOf[StreamConnection]
   }
   
-  extension [Self <: StreamConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamConnection] (val x: Self) extends AnyVal {
     
     inline def setConnectionError(value: Error): Self = StObject.set(x, "connectionError", value.asInstanceOf[js.Any])
     

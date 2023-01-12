@@ -42,7 +42,8 @@ object Animation {
     __obj.asInstanceOf[Animation]
   }
   
-  extension [Self <: Animation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
     
     inline def setApply(
       value: (Skeleton, Double, Double, Boolean, js.Array[Event], Double, MixBlend, MixDirection) => Unit

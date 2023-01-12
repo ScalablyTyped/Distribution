@@ -19,7 +19,8 @@ object ListFilesResponse {
     __obj.asInstanceOf[ListFilesResponse]
   }
   
-  extension [Self <: ListFilesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFilesResponse] (val x: Self) extends AnyVal {
     
     inline def setFiles(value: js.Array[GoogleDevtoolsArtifactregistryV1File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     

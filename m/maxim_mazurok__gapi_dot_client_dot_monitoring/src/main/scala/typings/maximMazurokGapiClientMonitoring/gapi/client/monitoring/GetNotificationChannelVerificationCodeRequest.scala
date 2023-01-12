@@ -21,7 +21,8 @@ object GetNotificationChannelVerificationCodeRequest {
     __obj.asInstanceOf[GetNotificationChannelVerificationCodeRequest]
   }
   
-  extension [Self <: GetNotificationChannelVerificationCodeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNotificationChannelVerificationCodeRequest] (val x: Self) extends AnyVal {
     
     inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     

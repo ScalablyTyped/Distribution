@@ -17,7 +17,8 @@ object SlmExecuteLifecycleRequest {
     __obj.asInstanceOf[SlmExecuteLifecycleRequest]
   }
   
-  extension [Self <: SlmExecuteLifecycleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlmExecuteLifecycleRequest] (val x: Self) extends AnyVal {
     
     inline def setPolicy_id(value: Name): Self = StObject.set(x, "policy_id", value.asInstanceOf[js.Any])
   }

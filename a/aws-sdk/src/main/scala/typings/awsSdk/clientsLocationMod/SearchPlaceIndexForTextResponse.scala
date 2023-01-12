@@ -23,7 +23,8 @@ object SearchPlaceIndexForTextResponse {
     __obj.asInstanceOf[SearchPlaceIndexForTextResponse]
   }
   
-  extension [Self <: SearchPlaceIndexForTextResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchPlaceIndexForTextResponse] (val x: Self) extends AnyVal {
     
     inline def setResults(value: SearchForTextResultList): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
     

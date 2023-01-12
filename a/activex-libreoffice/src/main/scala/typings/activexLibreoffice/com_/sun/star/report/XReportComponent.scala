@@ -141,7 +141,8 @@ object XReportComponent {
     __obj.asInstanceOf[XReportComponent]
   }
   
-  extension [Self <: XReportComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XReportComponent] (val x: Self) extends AnyVal {
     
     inline def setControlBorder(value: Double): Self = StObject.set(x, "ControlBorder", value.asInstanceOf[js.Any])
     

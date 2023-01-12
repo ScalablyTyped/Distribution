@@ -32,7 +32,8 @@ object AccountGuarantor {
     __obj.asInstanceOf[AccountGuarantor]
   }
   
-  extension [Self <: AccountGuarantor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountGuarantor] (val x: Self) extends AnyVal {
     
     inline def setOnHold(value: Boolean): Self = StObject.set(x, "onHold", value.asInstanceOf[js.Any])
     

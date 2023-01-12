@@ -30,7 +30,8 @@ object InTotoProvenance {
     __obj.asInstanceOf[InTotoProvenance]
   }
   
-  extension [Self <: InTotoProvenance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InTotoProvenance] (val x: Self) extends AnyVal {
     
     inline def setBuilderConfig(value: BuilderConfig): Self = StObject.set(x, "builderConfig", value.asInstanceOf[js.Any])
     

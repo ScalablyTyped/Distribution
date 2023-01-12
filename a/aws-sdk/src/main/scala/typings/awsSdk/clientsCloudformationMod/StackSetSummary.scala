@@ -58,7 +58,8 @@ object StackSetSummary {
     __obj.asInstanceOf[StackSetSummary]
   }
   
-  extension [Self <: StackSetSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackSetSummary] (val x: Self) extends AnyVal {
     
     inline def setAutoDeployment(value: AutoDeployment): Self = StObject.set(x, "AutoDeployment", value.asInstanceOf[js.Any])
     

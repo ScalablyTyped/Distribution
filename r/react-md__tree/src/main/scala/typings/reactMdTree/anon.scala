@@ -235,7 +235,8 @@ object anon {
       __obj.asInstanceOf[BaseTreeItemvisibleIndexn]
     }
     
-    extension [Self <: BaseTreeItemvisibleIndexn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseTreeItemvisibleIndexn] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -314,7 +315,8 @@ object anon {
       __obj.asInstanceOf[ChildItems[T]]
     }
     
-    extension [Self <: ChildItems[?], T /* <: BaseTreeItem */](x: Self & ChildItems[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildItems[?], T /* <: BaseTreeItem */] (val x: Self & ChildItems[T]) extends AnyVal {
       
       inline def setChildItems(value: js.Array[NestedTreeItem[T]]): Self = StObject.set(x, "childItems", value.asInstanceOf[js.Any])
       
@@ -455,7 +457,8 @@ object anon {
       __obj.asInstanceOf[NestedTreeItemUnknownTree]
     }
     
-    extension [Self <: NestedTreeItemUnknownTree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NestedTreeItemUnknownTree] (val x: Self) extends AnyVal {
       
       inline def setChildItems(value: js.Array[NestedTreeItem[UnknownTreeItem]]): Self = StObject.set(x, "childItems", value.asInstanceOf[js.Any])
       
@@ -961,7 +964,8 @@ object anon {
       __obj.asInstanceOf[PickTreeItemWithContentCo]
     }
     
-    extension [Self <: PickTreeItemWithContentCo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickTreeItemWithContentCo] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1816,7 +1820,8 @@ object anon {
       __obj.asInstanceOf[RequiredTreeItemSelection]
     }
     
-    extension [Self <: RequiredTreeItemSelection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredTreeItemSelection] (val x: Self) extends AnyVal {
       
       inline def setMultiSelect(value: Boolean): Self = StObject.set(x, "multiSelect", value.asInstanceOf[js.Any])
       
@@ -1841,7 +1846,8 @@ object anon {
       __obj.asInstanceOf[VisibleIndex]
     }
     
-    extension [Self <: VisibleIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisibleIndex] (val x: Self) extends AnyVal {
       
       inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
     }

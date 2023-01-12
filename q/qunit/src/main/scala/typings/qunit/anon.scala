@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Actual]
     }
     
-    extension [Self <: Actual](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Actual] (val x: Self) extends AnyVal {
       
       inline def setActual(value: Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Failed]
     }
     
-    extension [Self <: Failed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Failed] (val x: Self) extends AnyVal {
       
       inline def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -127,7 +130,8 @@ object anon {
       __obj.asInstanceOf[MaxDepth]
     }
     
-    extension [Self <: MaxDepth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxDepth] (val x: Self) extends AnyVal {
       
       inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
       
@@ -148,7 +152,8 @@ object anon {
       __obj.asInstanceOf[ModuleId]
     }
     
-    extension [Self <: ModuleId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleId] (val x: Self) extends AnyVal {
       
       inline def setModuleId(value: String): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
       

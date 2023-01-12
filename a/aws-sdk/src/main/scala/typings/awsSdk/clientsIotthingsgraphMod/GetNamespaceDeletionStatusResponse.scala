@@ -38,7 +38,8 @@ object GetNamespaceDeletionStatusResponse {
     __obj.asInstanceOf[GetNamespaceDeletionStatusResponse]
   }
   
-  extension [Self <: GetNamespaceDeletionStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNamespaceDeletionStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: NamespaceDeletionStatusErrorCodes): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

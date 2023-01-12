@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[HandleProps]
     }
     
-    extension [Self <: HandleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandleProps] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object mod {
       __obj.asInstanceOf[RangerOptions]
     }
     
-    extension [Self <: RangerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangerOptions] (val x: Self) extends AnyVal {
       
       inline def setInterpolator(value: GetPercentageForValue): Self = StObject.set(x, "interpolator", value.asInstanceOf[js.Any])
       
@@ -186,7 +188,8 @@ object mod {
       __obj.asInstanceOf[SegmentProps]
     }
     
-    extension [Self <: SegmentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentProps] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -207,7 +210,8 @@ object mod {
       __obj.asInstanceOf[TickProps]
     }
     
-    extension [Self <: TickProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TickProps] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -228,7 +232,8 @@ object mod {
       __obj.asInstanceOf[TrackProps]
     }
     
-    extension [Self <: TrackProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackProps] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

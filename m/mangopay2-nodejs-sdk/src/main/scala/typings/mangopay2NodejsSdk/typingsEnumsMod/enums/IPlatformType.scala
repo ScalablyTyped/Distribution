@@ -37,7 +37,8 @@ object IPlatformType {
     __obj.asInstanceOf[IPlatformType]
   }
   
-  extension [Self <: IPlatformType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPlatformType] (val x: Self) extends AnyVal {
     
     inline def setCROWDFUNDING_DONATION(value: CROWDFUNDING_DONATION): Self = StObject.set(x, "CROWDFUNDING_DONATION", value.asInstanceOf[js.Any])
     

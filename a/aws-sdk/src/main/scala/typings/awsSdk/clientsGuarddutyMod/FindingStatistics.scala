@@ -18,7 +18,8 @@ object FindingStatistics {
     __obj.asInstanceOf[FindingStatistics]
   }
   
-  extension [Self <: FindingStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindingStatistics] (val x: Self) extends AnyVal {
     
     inline def setCountBySeverity(value: CountBySeverity): Self = StObject.set(x, "CountBySeverity", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object distTypesEndpointMod {
       __obj.asInstanceOf[EndpointARN]
     }
     
-    extension [Self <: EndpointARN](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointARN] (val x: Self) extends AnyVal {
       
       inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object distTypesEndpointMod {
       __obj.asInstanceOf[EndpointPartition]
     }
     
-    extension [Self <: EndpointPartition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointPartition] (val x: Self) extends AnyVal {
       
       inline def setDnsSuffix(value: String): Self = StObject.set(x, "dnsSuffix", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object distTypesEndpointMod {
       __obj.asInstanceOf[EndpointURL]
     }
     
-    extension [Self <: EndpointURL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointURL] (val x: Self) extends AnyVal {
       
       inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
       
@@ -189,7 +192,8 @@ object distTypesEndpointMod {
       __obj.asInstanceOf[EndpointV2]
     }
     
-    extension [Self <: EndpointV2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointV2] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Record[String, js.Array[String]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

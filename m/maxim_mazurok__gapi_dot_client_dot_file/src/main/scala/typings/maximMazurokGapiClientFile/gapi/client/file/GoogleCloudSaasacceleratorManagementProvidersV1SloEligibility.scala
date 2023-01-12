@@ -19,7 +19,8 @@ object GoogleCloudSaasacceleratorManagementProvidersV1SloEligibility {
     __obj.asInstanceOf[GoogleCloudSaasacceleratorManagementProvidersV1SloEligibility]
   }
   
-  extension [Self <: GoogleCloudSaasacceleratorManagementProvidersV1SloEligibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudSaasacceleratorManagementProvidersV1SloEligibility] (val x: Self) extends AnyVal {
     
     inline def setEligible(value: Boolean): Self = StObject.set(x, "eligible", value.asInstanceOf[js.Any])
     

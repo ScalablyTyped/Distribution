@@ -27,7 +27,8 @@ object BulkError {
     __obj.asInstanceOf[BulkError]
   }
   
-  extension [Self <: BulkError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkError] (val x: Self) extends AnyVal {
     
     inline def setFailures(value: js.Array[js.Error]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     

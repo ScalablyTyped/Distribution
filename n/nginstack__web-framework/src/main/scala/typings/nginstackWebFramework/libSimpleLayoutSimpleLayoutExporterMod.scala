@@ -40,7 +40,8 @@ object libSimpleLayoutSimpleLayoutExporterMod {
       __obj.asInstanceOf[SimpleLayoutExporter]
     }
     
-    extension [Self <: SimpleLayoutExporter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleLayoutExporter] (val x: Self) extends AnyVal {
       
       inline def setFormatFieldGroupName(value: Double => String): Self = StObject.set(x, "formatFieldGroupName", js.Any.fromFunction1(value))
       

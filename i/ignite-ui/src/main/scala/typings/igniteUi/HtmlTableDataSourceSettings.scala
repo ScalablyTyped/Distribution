@@ -24,7 +24,8 @@ object HtmlTableDataSourceSettings {
     __obj.asInstanceOf[HtmlTableDataSourceSettings]
   }
   
-  extension [Self <: HtmlTableDataSourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlTableDataSourceSettings] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

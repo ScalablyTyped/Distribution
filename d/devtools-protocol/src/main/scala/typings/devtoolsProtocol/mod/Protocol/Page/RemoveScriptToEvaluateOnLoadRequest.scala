@@ -15,7 +15,8 @@ object RemoveScriptToEvaluateOnLoadRequest {
     __obj.asInstanceOf[RemoveScriptToEvaluateOnLoadRequest]
   }
   
-  extension [Self <: RemoveScriptToEvaluateOnLoadRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveScriptToEvaluateOnLoadRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: ScriptIdentifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
   }

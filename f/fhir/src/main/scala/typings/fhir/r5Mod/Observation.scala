@@ -335,7 +335,8 @@ object Observation {
     __obj.asInstanceOf[Observation]
   }
   
-  extension [Self <: Observation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Observation] (val x: Self) extends AnyVal {
     
     inline def setBasedOn(value: js.Array[Reference]): Self = StObject.set(x, "basedOn", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object distInterfacesElementMod {
       __obj.asInstanceOf[BaseElement]
     }
     
-    extension [Self <: BaseElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseElement] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[Descendant]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object RadioGroupFocusEvent {
     __obj.asInstanceOf[RadioGroupFocusEvent]
   }
   
-  extension [Self <: RadioGroupFocusEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadioGroupFocusEvent] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

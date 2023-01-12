@@ -81,7 +81,8 @@ object IZoomableView {
     __obj.asInstanceOf[IZoomableView[T]]
   }
   
-  extension [Self <: IZoomableView[?], T](x: Self & IZoomableView[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IZoomableView[?], T] (val x: Self & IZoomableView[T]) extends AnyVal {
     
     inline def setBeginZoom(value: () => Unit): Self = StObject.set(x, "beginZoom", js.Any.fromFunction0(value))
     

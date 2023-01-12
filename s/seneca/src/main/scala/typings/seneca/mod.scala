@@ -96,7 +96,8 @@ object mod {
       __obj.asInstanceOf[EntityDataWithQuery]
     }
     
-    extension [Self <: EntityDataWithQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntityDataWithQuery] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -151,7 +152,8 @@ object mod {
       __obj.asInstanceOf[Executor]
     }
     
-    extension [Self <: Executor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Executor] (val x: Self) extends AnyVal {
       
       inline def setCb(value: (/* err */ js.Error, /* result */ Any) => Unit): Self = StObject.set(x, "cb", js.Any.fromFunction2(value))
       
@@ -346,7 +348,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setActcache(value: Active): Self = StObject.set(x, "actcache", value.asInstanceOf[js.Any])
       
@@ -443,7 +446,8 @@ object mod {
       __obj.asInstanceOf[PartialMessagePayload]
     }
     
-    extension [Self <: PartialMessagePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMessagePayload] (val x: Self) extends AnyVal {
       
       inline def setFatal$(value: Boolean): Self = StObject.set(x, "fatal$", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,8 @@ object IColumnLayout {
     __obj.asInstanceOf[IColumnLayout]
   }
   
-  extension [Self <: IColumnLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColumnLayout] (val x: Self) extends AnyVal {
     
     inline def setGetItemSizePolicy(value: (/* item */ js.UndefOr[Any], /* ownerSizeModel */ js.UndefOr[Any]) => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction2(value))
     

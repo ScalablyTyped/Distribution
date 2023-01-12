@@ -15,7 +15,8 @@ object Window {
     __obj.asInstanceOf[Window]
   }
   
-  extension [Self <: Window](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
     
     inline def setCSS(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CSS */ Any): Self = StObject.set(x, "CSS", value.asInstanceOf[js.Any])
   }

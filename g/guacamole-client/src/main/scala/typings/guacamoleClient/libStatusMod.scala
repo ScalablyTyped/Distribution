@@ -232,7 +232,8 @@ object libStatusMod {
         __obj.asInstanceOf[StatusCode]
       }
       
-      extension [Self <: StatusCode](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StatusCode] (val x: Self) extends AnyVal {
         
         inline def setCLIENT_BAD_REQUEST(value: `0x0300`): Self = StObject.set(x, "CLIENT_BAD_REQUEST", value.asInstanceOf[js.Any])
         

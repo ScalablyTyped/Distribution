@@ -18,7 +18,8 @@ object GetDomainPermissionsPolicyResult {
     __obj.asInstanceOf[GetDomainPermissionsPolicyResult]
   }
   
-  extension [Self <: GetDomainPermissionsPolicyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDomainPermissionsPolicyResult] (val x: Self) extends AnyVal {
     
     inline def setPolicy(value: ResourcePolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     

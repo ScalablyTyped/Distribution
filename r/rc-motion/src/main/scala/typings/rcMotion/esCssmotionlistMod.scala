@@ -552,7 +552,8 @@ object esCssmotionlistMod {
       __obj.asInstanceOf[CSSMotionListProps]
     }
     
-    extension [Self <: CSSMotionListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSMotionListProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1387,7 +1388,8 @@ object esCssmotionlistMod {
       __obj.asInstanceOf[CSSMotionListState]
     }
     
-    extension [Self <: CSSMotionListState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSMotionListState] (val x: Self) extends AnyVal {
       
       inline def setKeyEntities(value: js.Array[KeyObject]): Self = StObject.set(x, "keyEntities", value.asInstanceOf[js.Any])
       

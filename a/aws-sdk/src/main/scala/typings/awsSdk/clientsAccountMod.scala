@@ -135,7 +135,8 @@ object clientsAccountMod {
       __obj.asInstanceOf[AlternateContact]
     }
     
-    extension [Self <: AlternateContact](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlternateContact] (val x: Self) extends AnyVal {
       
       inline def setAlternateContactType(value: AlternateContactType): Self = StObject.set(x, "AlternateContactType", value.asInstanceOf[js.Any])
       
@@ -185,7 +186,8 @@ object clientsAccountMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -276,7 +278,8 @@ object clientsAccountMod {
       __obj.asInstanceOf[ContactInformation]
     }
     
-    extension [Self <: ContactInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContactInformation] (val x: Self) extends AnyVal {
       
       inline def setAddressLine1(value: AddressLine): Self = StObject.set(x, "AddressLine1", value.asInstanceOf[js.Any])
       
@@ -339,7 +342,8 @@ object clientsAccountMod {
       __obj.asInstanceOf[DeleteAlternateContactRequest]
     }
     
-    extension [Self <: DeleteAlternateContactRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteAlternateContactRequest] (val x: Self) extends AnyVal {
       
       inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
       
@@ -374,7 +378,8 @@ object clientsAccountMod {
       __obj.asInstanceOf[GetAlternateContactRequest]
     }
     
-    extension [Self <: GetAlternateContactRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAlternateContactRequest] (val x: Self) extends AnyVal {
       
       inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
       
@@ -398,7 +403,8 @@ object clientsAccountMod {
       __obj.asInstanceOf[GetAlternateContactResponse]
     }
     
-    extension [Self <: GetAlternateContactResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAlternateContactResponse] (val x: Self) extends AnyVal {
       
       inline def setAlternateContact(value: AlternateContact): Self = StObject.set(x, "AlternateContact", value.asInstanceOf[js.Any])
       
@@ -420,7 +426,8 @@ object clientsAccountMod {
       __obj.asInstanceOf[GetContactInformationRequest]
     }
     
-    extension [Self <: GetContactInformationRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetContactInformationRequest] (val x: Self) extends AnyVal {
       
       inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
       
@@ -442,7 +449,8 @@ object clientsAccountMod {
       __obj.asInstanceOf[GetContactInformationResponse]
     }
     
-    extension [Self <: GetContactInformationResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetContactInformationResponse] (val x: Self) extends AnyVal {
       
       inline def setContactInformation(value: ContactInformation): Self = StObject.set(x, "ContactInformation", value.asInstanceOf[js.Any])
       
@@ -501,7 +509,8 @@ object clientsAccountMod {
       __obj.asInstanceOf[PutAlternateContactRequest]
     }
     
-    extension [Self <: PutAlternateContactRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutAlternateContactRequest] (val x: Self) extends AnyVal {
       
       inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
       
@@ -538,7 +547,8 @@ object clientsAccountMod {
       __obj.asInstanceOf[PutContactInformationRequest]
     }
     
-    extension [Self <: PutContactInformationRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutContactInformationRequest] (val x: Self) extends AnyVal {
       
       inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
       

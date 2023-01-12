@@ -18,7 +18,8 @@ object ScrollRequest {
     __obj.asInstanceOf[ScrollRequest]
   }
   
-  extension [Self <: ScrollRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollRequest] (val x: Self) extends AnyVal {
     
     inline def setTime(value: Duration): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     

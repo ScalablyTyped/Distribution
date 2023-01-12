@@ -44,7 +44,8 @@ object IMetadataCardValue {
     __obj.asInstanceOf[IMetadataCardValue]
   }
   
-  extension [Self <: IMetadataCardValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMetadataCardValue] (val x: Self) extends AnyVal {
     
     inline def setHasIcon(value: Boolean): Self = StObject.set(x, "HasIcon", value.asInstanceOf[js.Any])
     

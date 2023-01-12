@@ -66,7 +66,8 @@ object PlanUpdateModel {
     __obj.asInstanceOf[PlanUpdateModel]
   }
   
-  extension [Self <: PlanUpdateModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlanUpdateModel] (val x: Self) extends AnyVal {
     
     inline def setArea(value: ShallowReference): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     

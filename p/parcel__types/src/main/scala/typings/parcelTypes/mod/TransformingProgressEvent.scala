@@ -24,7 +24,8 @@ object TransformingProgressEvent {
     __obj.asInstanceOf[TransformingProgressEvent]
   }
   
-  extension [Self <: TransformingProgressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformingProgressEvent] (val x: Self) extends AnyVal {
     
     inline def setFilePath(value: FilePath): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     

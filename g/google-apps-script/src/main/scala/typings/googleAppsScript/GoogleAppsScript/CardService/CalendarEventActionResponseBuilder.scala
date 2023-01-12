@@ -30,7 +30,8 @@ object CalendarEventActionResponseBuilder {
     __obj.asInstanceOf[CalendarEventActionResponseBuilder]
   }
   
-  extension [Self <: CalendarEventActionResponseBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarEventActionResponseBuilder] (val x: Self) extends AnyVal {
     
     inline def setAddAttachments(value: js.Array[Attachment] => CalendarEventActionResponseBuilder): Self = StObject.set(x, "addAttachments", js.Any.fromFunction1(value))
     

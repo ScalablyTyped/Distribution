@@ -26,7 +26,8 @@ object SketchMSAttributes {
     __obj.asInstanceOf[SketchMSAttributes]
   }
   
-  extension [Self <: SketchMSAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSAttributes] (val x: Self) extends AnyVal {
     
     inline def setKerning(value: Double): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
     

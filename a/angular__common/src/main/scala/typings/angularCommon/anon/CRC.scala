@@ -98,7 +98,8 @@ object CRC {
     __obj.asInstanceOf[CRC]
   }
   
-  extension [Self <: CRC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CRC] (val x: Self) extends AnyVal {
     
     inline def setAUD(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     

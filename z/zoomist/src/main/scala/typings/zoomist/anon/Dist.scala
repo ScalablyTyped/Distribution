@@ -19,7 +19,8 @@ object Dist {
     __obj.asInstanceOf[Dist]
   }
   
-  extension [Self <: Dist](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dist] (val x: Self) extends AnyVal {
     
     inline def setDist(value: Double): Self = StObject.set(x, "dist", value.asInstanceOf[js.Any])
     

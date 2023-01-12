@@ -135,7 +135,8 @@ object app {
       __obj.asInstanceOf[IAction]
     }
     
-    extension [Self <: IAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAction] (val x: Self) extends AnyVal {
       
       inline def setAction(value: java.lang.String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -468,7 +469,8 @@ object app {
       __obj.asInstanceOf[IApplication]
     }
     
-    extension [Self <: IApplication](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IApplication] (val x: Self) extends AnyVal {
       
       inline def setAppFolder(value: java.lang.String): Self = StObject.set(x, "appFolder", value.asInstanceOf[js.Any])
       
@@ -818,7 +820,8 @@ object app {
       __obj.asInstanceOf[IController]
     }
     
-    extension [Self <: IController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IController] (val x: Self) extends AnyVal {
       
       inline def setApplication(value: IApplication): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       
@@ -1015,7 +1018,8 @@ object app {
       __obj.asInstanceOf[IHistory]
     }
     
-    extension [Self <: IHistory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHistory] (val x: Self) extends AnyVal {
       
       inline def setActions(value: Array): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -1187,7 +1191,8 @@ object app {
       __obj.asInstanceOf[IProfile]
     }
     
-    extension [Self <: IProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProfile] (val x: Self) extends AnyVal {
       
       inline def setApplication(value: IApplication): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       
@@ -1359,7 +1364,8 @@ object app {
       __obj.asInstanceOf[IRoute]
     }
     
-    extension [Self <: IRoute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRoute] (val x: Self) extends AnyVal {
       
       inline def setAction(value: java.lang.String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -1475,7 +1481,8 @@ object app {
       __obj.asInstanceOf[typings.senchaTouch.Ext.app.IRouter]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.app.IRouter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.app.IRouter] (val x: Self) extends AnyVal {
       
       inline def setConnect(value: (/* url */ js.UndefOr[java.lang.String], /* params */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction2(value))
       

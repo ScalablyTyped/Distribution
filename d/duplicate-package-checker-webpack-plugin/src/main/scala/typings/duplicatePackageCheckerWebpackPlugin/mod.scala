@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setEmitError(value: Boolean): Self = StObject.set(x, "emitError", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object mod {
       __obj.asInstanceOf[PackageInstanceProperties]
     }
     
-    extension [Self <: PackageInstanceProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageInstanceProperties] (val x: Self) extends AnyVal {
       
       inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       

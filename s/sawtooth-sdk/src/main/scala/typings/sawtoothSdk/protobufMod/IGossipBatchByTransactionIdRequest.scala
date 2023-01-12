@@ -22,7 +22,8 @@ object IGossipBatchByTransactionIdRequest {
     __obj.asInstanceOf[IGossipBatchByTransactionIdRequest]
   }
   
-  extension [Self <: IGossipBatchByTransactionIdRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGossipBatchByTransactionIdRequest] (val x: Self) extends AnyVal {
     
     inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     

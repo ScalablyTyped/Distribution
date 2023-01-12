@@ -18,7 +18,8 @@ object RowContext {
     __obj.asInstanceOf[RowContext]
   }
   
-  extension [Self <: RowContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowContext] (val x: Self) extends AnyVal {
     
     inline def setRowContext(value: js.Object): Self = StObject.set(x, "rowContext", value.asInstanceOf[js.Any])
   }

@@ -62,7 +62,8 @@ object libPathPathMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setTopology(value: `4` | `6` | `8`): Self = StObject.set(x, "topology", value.asInstanceOf[js.Any])
     }
@@ -109,7 +110,8 @@ object libPathPathMod {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setCompute(value: (Double, Double, ComputeCallback) => Unit): Self = StObject.set(x, "compute", js.Any.fromFunction3(value))
       

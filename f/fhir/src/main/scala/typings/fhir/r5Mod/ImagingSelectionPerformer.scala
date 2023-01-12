@@ -25,7 +25,8 @@ object ImagingSelectionPerformer {
     __obj.asInstanceOf[ImagingSelectionPerformer]
   }
   
-  extension [Self <: ImagingSelectionPerformer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagingSelectionPerformer] (val x: Self) extends AnyVal {
     
     inline def setActor(value: Reference): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

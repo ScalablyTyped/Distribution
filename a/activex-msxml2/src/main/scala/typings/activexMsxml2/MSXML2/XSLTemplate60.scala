@@ -28,7 +28,8 @@ object XSLTemplate60 {
     __obj.asInstanceOf[XSLTemplate60]
   }
   
-  extension [Self <: XSLTemplate60](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSLTemplate60] (val x: Self) extends AnyVal {
     
     inline def setCreateProcessor(value: () => IXSLProcessor): Self = StObject.set(x, "createProcessor", js.Any.fromFunction0(value))
     

@@ -28,7 +28,8 @@ object UpdateUserIdentityInfoRequest {
     __obj.asInstanceOf[UpdateUserIdentityInfoRequest]
   }
   
-  extension [Self <: UpdateUserIdentityInfoRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateUserIdentityInfoRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentityInfo(value: UserIdentityInfo): Self = StObject.set(x, "IdentityInfo", value.asInstanceOf[js.Any])
     

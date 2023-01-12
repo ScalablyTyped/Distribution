@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "appdirsjs"
-version := "1.2.7-0d0554"
+version := "1.2.7-738adf"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

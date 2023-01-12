@@ -364,7 +364,8 @@ object mod {
       __obj.asInstanceOf[BasePluginOptions]
     }
     
-    extension [Self <: BasePluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasePluginOptions] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: Rules): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -452,7 +453,8 @@ object mod {
       __obj.asInstanceOf[ExtractCommentsObject]
     }
     
-    extension [Self <: ExtractCommentsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractCommentsObject] (val x: Self) extends AnyVal {
       
       inline def setBanner(value: ExtractCommentsBanner): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
       
@@ -510,7 +512,8 @@ object mod {
       __obj.asInstanceOf[InternalOptions[T]]
     }
     
-    extension [Self <: InternalOptions[?], T](x: Self & InternalOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalOptions[?], T] (val x: Self & InternalOptions[T]) extends AnyVal {
       
       inline def setExtractComments(value: ExtractCommentsOptions): Self = StObject.set(x, "extractComments", value.asInstanceOf[js.Any])
       
@@ -543,7 +546,8 @@ object mod {
       __obj.asInstanceOf[InternalPluginOptions[T]]
     }
     
-    extension [Self <: InternalPluginOptions[?], T](x: Self & InternalPluginOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalPluginOptions[?], T] (val x: Self & InternalPluginOptions[T]) extends AnyVal {
       
       inline def setMinimizer(value: Implementation[T]): Self = StObject.set(x, "minimizer", value.asInstanceOf[js.Any])
     }
@@ -562,7 +566,8 @@ object mod {
       __obj.asInstanceOf[MinimizeFunctionHelpers]
     }
     
-    extension [Self <: MinimizeFunctionHelpers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinimizeFunctionHelpers] (val x: Self) extends AnyVal {
       
       inline def setGetMinimizerVersion(value: () => js.UndefOr[String]): Self = StObject.set(x, "getMinimizerVersion", js.Any.fromFunction0(value))
       
@@ -589,7 +594,8 @@ object mod {
       __obj.asInstanceOf[MinimizedResult]
     }
     
-    extension [Self <: MinimizedResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinimizedResult] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -672,7 +678,8 @@ object mod {
       __obj.asInstanceOf[PredefinedOptions]
     }
     
-    extension [Self <: PredefinedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PredefinedOptions] (val x: Self) extends AnyVal {
       
       inline def setEcma(value: ECMA): Self = StObject.set(x, "ecma", value.asInstanceOf[js.Any])
       
@@ -842,7 +849,8 @@ object mod {
       __obj.asInstanceOf[TerserPlugin[T]]
     }
     
-    extension [Self <: TerserPlugin[?], T](x: Self & TerserPlugin[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TerserPlugin[?], T] (val x: Self & TerserPlugin[T]) extends AnyVal {
       
       inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       

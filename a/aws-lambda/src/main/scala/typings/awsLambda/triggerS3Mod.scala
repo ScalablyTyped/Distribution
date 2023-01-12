@@ -24,7 +24,8 @@ object triggerS3Mod {
       __obj.asInstanceOf[S3Event]
     }
     
-    extension [Self <: S3Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3Event] (val x: Self) extends AnyVal {
       
       inline def setRecords(value: js.Array[S3EventRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object triggerS3Mod {
       __obj.asInstanceOf[S3EventRecord]
     }
     
-    extension [Self <: S3EventRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3EventRecord] (val x: Self) extends AnyVal {
       
       inline def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object triggerS3Mod {
       __obj.asInstanceOf[S3EventRecordGlacierEventData]
     }
     
-    extension [Self <: S3EventRecordGlacierEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3EventRecordGlacierEventData] (val x: Self) extends AnyVal {
       
       inline def setRestoreEventData(value: S3EventRecordGlacierRestoreEventData): Self = StObject.set(x, "restoreEventData", value.asInstanceOf[js.Any])
     }
@@ -127,7 +130,8 @@ object triggerS3Mod {
       __obj.asInstanceOf[S3EventRecordGlacierRestoreEventData]
     }
     
-    extension [Self <: S3EventRecordGlacierRestoreEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3EventRecordGlacierRestoreEventData] (val x: Self) extends AnyVal {
       
       inline def setLifecycleRestorationExpiryTime(value: String): Self = StObject.set(x, "lifecycleRestorationExpiryTime", value.asInstanceOf[js.Any])
       

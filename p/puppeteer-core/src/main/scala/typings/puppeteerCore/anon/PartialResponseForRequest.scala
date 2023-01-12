@@ -24,7 +24,8 @@ object PartialResponseForRequest {
     __obj.asInstanceOf[PartialResponseForRequest]
   }
   
-  extension [Self <: PartialResponseForRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialResponseForRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String | Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

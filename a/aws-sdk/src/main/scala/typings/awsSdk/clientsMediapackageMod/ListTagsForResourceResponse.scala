@@ -15,7 +15,8 @@ object ListTagsForResourceResponse {
     __obj.asInstanceOf[ListTagsForResourceResponse]
   }
   
-  extension [Self <: ListTagsForResourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTagsForResourceResponse] (val x: Self) extends AnyVal {
     
     inline def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

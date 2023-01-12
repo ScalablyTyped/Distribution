@@ -27,7 +27,8 @@ object MouseEvents {
     __obj.asInstanceOf[MouseEvents]
   }
   
-  extension [Self <: MouseEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseEvents] (val x: Self) extends AnyVal {
     
     inline def setOn_click(value: WebixCallback): Self = StObject.set(x, "on_click", value.asInstanceOf[js.Any])
     

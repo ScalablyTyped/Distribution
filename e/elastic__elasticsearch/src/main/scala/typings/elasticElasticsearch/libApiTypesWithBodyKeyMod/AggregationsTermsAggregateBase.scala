@@ -19,7 +19,8 @@ object AggregationsTermsAggregateBase {
     __obj.asInstanceOf[AggregationsTermsAggregateBase[TBucket]]
   }
   
-  extension [Self <: AggregationsTermsAggregateBase[?], TBucket](x: Self & AggregationsTermsAggregateBase[TBucket]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsTermsAggregateBase[?], TBucket] (val x: Self & AggregationsTermsAggregateBase[TBucket]) extends AnyVal {
     
     inline def setDoc_count_error_upper_bound(value: long): Self = StObject.set(x, "doc_count_error_upper_bound", value.asInstanceOf[js.Any])
     

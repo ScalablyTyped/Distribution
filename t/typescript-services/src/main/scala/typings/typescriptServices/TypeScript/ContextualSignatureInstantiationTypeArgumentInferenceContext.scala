@@ -36,7 +36,8 @@ object ContextualSignatureInstantiationTypeArgumentInferenceContext {
     __obj.asInstanceOf[ContextualSignatureInstantiationTypeArgumentInferenceContext]
   }
   
-  extension [Self <: ContextualSignatureInstantiationTypeArgumentInferenceContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextualSignatureInstantiationTypeArgumentInferenceContext] (val x: Self) extends AnyVal {
     
     inline def setContextualSignature(value: Any): Self = StObject.set(x, "contextualSignature", value.asInstanceOf[js.Any])
     

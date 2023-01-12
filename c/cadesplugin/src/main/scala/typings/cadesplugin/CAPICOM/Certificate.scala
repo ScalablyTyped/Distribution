@@ -61,7 +61,8 @@ object Certificate {
     __obj.asInstanceOf[Certificate]
   }
   
-  extension [Self <: Certificate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Certificate] (val x: Self) extends AnyVal {
     
     inline def setDisplay(value: () => Unit): Self = StObject.set(x, "Display", js.Any.fromFunction0(value))
     

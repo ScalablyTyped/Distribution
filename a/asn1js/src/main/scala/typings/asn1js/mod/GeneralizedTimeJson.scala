@@ -35,7 +35,8 @@ object GeneralizedTimeJson {
     __obj.asInstanceOf[GeneralizedTimeJson]
   }
   
-  extension [Self <: GeneralizedTimeJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneralizedTimeJson] (val x: Self) extends AnyVal {
     
     inline def setMillisecond(value: Double): Self = StObject.set(x, "millisecond", value.asInstanceOf[js.Any])
   }

@@ -65,7 +65,8 @@ object PausedEvent {
     __obj.asInstanceOf[PausedEvent]
   }
   
-  extension [Self <: PausedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PausedEvent] (val x: Self) extends AnyVal {
     
     inline def setAsyncCallStackTraceId(value: StackTraceId): Self = StObject.set(x, "asyncCallStackTraceId", value.asInstanceOf[js.Any])
     

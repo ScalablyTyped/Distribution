@@ -20,7 +20,8 @@ object LabelDescriptorUrl {
     __obj.asInstanceOf[LabelDescriptorUrl]
   }
   
-  extension [Self <: LabelDescriptorUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelDescriptorUrl] (val x: Self) extends AnyVal {
     
     inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     

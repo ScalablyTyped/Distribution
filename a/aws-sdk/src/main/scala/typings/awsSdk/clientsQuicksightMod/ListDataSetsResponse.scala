@@ -33,7 +33,8 @@ object ListDataSetsResponse {
     __obj.asInstanceOf[ListDataSetsResponse]
   }
   
-  extension [Self <: ListDataSetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDataSetsResponse] (val x: Self) extends AnyVal {
     
     inline def setDataSetSummaries(value: DataSetSummaryList): Self = StObject.set(x, "DataSetSummaries", value.asInstanceOf[js.Any])
     

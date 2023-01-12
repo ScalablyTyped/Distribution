@@ -115,7 +115,8 @@ object WatchOptions {
     __obj.asInstanceOf[WatchOptions]
   }
   
-  extension [Self <: WatchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
     
     inline def setAlwaysStat(value: Boolean): Self = StObject.set(x, "alwaysStat", value.asInstanceOf[js.Any])
     

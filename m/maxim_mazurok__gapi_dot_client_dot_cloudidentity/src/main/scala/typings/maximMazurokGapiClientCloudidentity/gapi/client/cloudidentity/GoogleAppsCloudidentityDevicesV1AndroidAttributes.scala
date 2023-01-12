@@ -25,7 +25,8 @@ object GoogleAppsCloudidentityDevicesV1AndroidAttributes {
     __obj.asInstanceOf[GoogleAppsCloudidentityDevicesV1AndroidAttributes]
   }
   
-  extension [Self <: GoogleAppsCloudidentityDevicesV1AndroidAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1AndroidAttributes] (val x: Self) extends AnyVal {
     
     inline def setEnabledUnknownSources(value: Boolean): Self = StObject.set(x, "enabledUnknownSources", value.asInstanceOf[js.Any])
     

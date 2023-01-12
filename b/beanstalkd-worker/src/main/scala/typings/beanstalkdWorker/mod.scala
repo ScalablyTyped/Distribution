@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[BeanstalkdHandleBackoff]
     }
     
-    extension [Self <: BeanstalkdHandleBackoff](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeanstalkdHandleBackoff] (val x: Self) extends AnyVal {
       
       inline def setExponential(value: Double): Self = StObject.set(x, "exponential", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object mod {
       __obj.asInstanceOf[BeanstalkdHandleOptions]
     }
     
-    extension [Self <: BeanstalkdHandleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeanstalkdHandleOptions] (val x: Self) extends AnyVal {
       
       inline def setBackoff(value: BeanstalkdHandleBackoff): Self = StObject.set(x, "backoff", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object mod {
       __obj.asInstanceOf[BeanstalkdSpawnOptions]
     }
     
-    extension [Self <: BeanstalkdSpawnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeanstalkdSpawnOptions] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       

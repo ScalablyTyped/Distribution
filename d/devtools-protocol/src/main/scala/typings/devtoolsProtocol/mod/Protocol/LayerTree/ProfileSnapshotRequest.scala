@@ -35,7 +35,8 @@ object ProfileSnapshotRequest {
     __obj.asInstanceOf[ProfileSnapshotRequest]
   }
   
-  extension [Self <: ProfileSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setClipRect(value: Rect): Self = StObject.set(x, "clipRect", value.asInstanceOf[js.Any])
     

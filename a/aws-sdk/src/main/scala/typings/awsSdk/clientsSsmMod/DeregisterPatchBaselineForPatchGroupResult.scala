@@ -23,7 +23,8 @@ object DeregisterPatchBaselineForPatchGroupResult {
     __obj.asInstanceOf[DeregisterPatchBaselineForPatchGroupResult]
   }
   
-  extension [Self <: DeregisterPatchBaselineForPatchGroupResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterPatchBaselineForPatchGroupResult] (val x: Self) extends AnyVal {
     
     inline def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object IClientEventsUnsubscribeResponse {
     __obj.asInstanceOf[IClientEventsUnsubscribeResponse]
   }
   
-  extension [Self <: IClientEventsUnsubscribeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientEventsUnsubscribeResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

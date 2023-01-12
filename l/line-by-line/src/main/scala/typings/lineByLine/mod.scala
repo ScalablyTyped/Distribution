@@ -96,7 +96,8 @@ object mod {
       __obj.asInstanceOf[LineByLineReaderFileOptions]
     }
     
-    extension [Self <: LineByLineReaderFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineByLineReaderFileOptions] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object mod {
       __obj.asInstanceOf[LineByLineReaderOptions]
     }
     
-    extension [Self <: LineByLineReaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineByLineReaderOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: ascii | utf8 | utf16le | ucs2 | base64 | latin1 | binary | hex): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

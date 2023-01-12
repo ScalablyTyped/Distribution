@@ -180,7 +180,8 @@ object cullingBoundingInfoMod {
       __obj.asInstanceOf[ICullable]
     }
     
-    extension [Self <: ICullable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICullable] (val x: Self) extends AnyVal {
       
       inline def setIsCompletelyInFrustum(value: js.Array[Plane] => Boolean): Self = StObject.set(x, "isCompletelyInFrustum", js.Any.fromFunction1(value))
       

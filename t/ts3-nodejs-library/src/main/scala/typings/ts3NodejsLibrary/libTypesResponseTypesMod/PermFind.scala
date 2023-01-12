@@ -24,7 +24,8 @@ object PermFind {
     __obj.asInstanceOf[PermFind]
   }
   
-  extension [Self <: PermFind](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermFind] (val x: Self) extends AnyVal {
     
     inline def setId1(value: Double): Self = StObject.set(x, "id1", value.asInstanceOf[js.Any])
     

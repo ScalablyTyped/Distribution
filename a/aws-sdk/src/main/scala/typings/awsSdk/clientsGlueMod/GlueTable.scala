@@ -33,7 +33,8 @@ object GlueTable {
     __obj.asInstanceOf[GlueTable]
   }
   
-  extension [Self <: GlueTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlueTable] (val x: Self) extends AnyVal {
     
     inline def setCatalogId(value: NameString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     

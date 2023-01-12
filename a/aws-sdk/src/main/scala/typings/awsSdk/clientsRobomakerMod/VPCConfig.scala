@@ -28,7 +28,8 @@ object VPCConfig {
     __obj.asInstanceOf[VPCConfig]
   }
   
-  extension [Self <: VPCConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VPCConfig] (val x: Self) extends AnyVal {
     
     inline def setAssignPublicIp(value: Boolean): Self = StObject.set(x, "assignPublicIp", value.asInstanceOf[js.Any])
     

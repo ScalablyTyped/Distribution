@@ -973,7 +973,8 @@ object splitMod {
         __obj.asInstanceOf[CSSStyleDeclarationPartial]
       }
       
-      extension [Self <: CSSStyleDeclarationPartial](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CSSStyleDeclarationPartial] (val x: Self) extends AnyVal {
         
         inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
         
@@ -2952,7 +2953,8 @@ object splitMod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
         

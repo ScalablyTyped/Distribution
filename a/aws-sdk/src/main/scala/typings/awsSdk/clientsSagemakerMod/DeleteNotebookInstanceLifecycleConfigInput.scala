@@ -18,7 +18,8 @@ object DeleteNotebookInstanceLifecycleConfigInput {
     __obj.asInstanceOf[DeleteNotebookInstanceLifecycleConfigInput]
   }
   
-  extension [Self <: DeleteNotebookInstanceLifecycleConfigInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteNotebookInstanceLifecycleConfigInput] (val x: Self) extends AnyVal {
     
     inline def setNotebookInstanceLifecycleConfigName(value: NotebookInstanceLifecycleConfigName): Self = StObject.set(x, "NotebookInstanceLifecycleConfigName", value.asInstanceOf[js.Any])
   }

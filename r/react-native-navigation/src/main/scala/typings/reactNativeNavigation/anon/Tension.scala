@@ -22,7 +22,8 @@ object Tension {
     __obj.asInstanceOf[Tension]
   }
   
-  extension [Self <: Tension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tension] (val x: Self) extends AnyVal {
     
     inline def setTension(value: Double): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
     

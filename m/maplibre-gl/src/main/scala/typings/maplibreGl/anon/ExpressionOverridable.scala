@@ -33,7 +33,8 @@ object ExpressionOverridable {
     __obj.asInstanceOf[ExpressionOverridable]
   }
   
-  extension [Self <: ExpressionOverridable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpressionOverridable] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

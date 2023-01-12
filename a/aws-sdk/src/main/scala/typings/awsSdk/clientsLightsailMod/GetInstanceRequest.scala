@@ -18,7 +18,8 @@ object GetInstanceRequest {
     __obj.asInstanceOf[GetInstanceRequest]
   }
   
-  extension [Self <: GetInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
   }

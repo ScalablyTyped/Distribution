@@ -39,7 +39,8 @@ object Numeric {
     __obj.asInstanceOf[Numeric]
   }
   
-  extension [Self <: Numeric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Numeric] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

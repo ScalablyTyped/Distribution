@@ -26,7 +26,8 @@ object PeerInfo {
     __obj.asInstanceOf[PeerInfo]
   }
   
-  extension [Self <: PeerInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeerInfo] (val x: Self) extends AnyVal {
     
     inline def setDistinctMultiaddr(value: () => js.Array[Multiaddr]): Self = StObject.set(x, "distinctMultiaddr", js.Any.fromFunction0(value))
     

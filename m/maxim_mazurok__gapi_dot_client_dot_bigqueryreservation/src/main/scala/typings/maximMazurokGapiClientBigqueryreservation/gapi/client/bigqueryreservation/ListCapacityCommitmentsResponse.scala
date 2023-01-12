@@ -19,7 +19,8 @@ object ListCapacityCommitmentsResponse {
     __obj.asInstanceOf[ListCapacityCommitmentsResponse]
   }
   
-  extension [Self <: ListCapacityCommitmentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCapacityCommitmentsResponse] (val x: Self) extends AnyVal {
     
     inline def setCapacityCommitments(value: js.Array[CapacityCommitment]): Self = StObject.set(x, "capacityCommitments", value.asInstanceOf[js.Any])
     

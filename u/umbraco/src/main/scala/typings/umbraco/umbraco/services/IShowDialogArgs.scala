@@ -21,7 +21,8 @@ object IShowDialogArgs {
     __obj.asInstanceOf[IShowDialogArgs]
   }
   
-  extension [Self <: IShowDialogArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShowDialogArgs] (val x: Self) extends AnyVal {
     
     inline def setAction(value: IShowDialogAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

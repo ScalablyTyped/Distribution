@@ -23,7 +23,8 @@ object ISmartArrayLike {
     __obj.asInstanceOf[ISmartArrayLike[T]]
   }
   
-  extension [Self <: ISmartArrayLike[?], T](x: Self & ISmartArrayLike[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISmartArrayLike[?], T] (val x: Self & ISmartArrayLike[T]) extends AnyVal {
     
     inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

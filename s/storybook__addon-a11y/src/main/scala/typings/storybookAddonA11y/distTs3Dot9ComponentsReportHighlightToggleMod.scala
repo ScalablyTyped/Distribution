@@ -26,7 +26,8 @@ object distTs3Dot9ComponentsReportHighlightToggleMod extends Shortcut {
       __obj.asInstanceOf[ToggleProps]
     }
     
-    extension [Self <: ToggleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleProps] (val x: Self) extends AnyVal {
       
       inline def setElementsToHighlight(value: js.Array[NodeResult]): Self = StObject.set(x, "elementsToHighlight", value.asInstanceOf[js.Any])
       

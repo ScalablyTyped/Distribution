@@ -43,7 +43,8 @@ object InstanceGroupModifyConfig {
     __obj.asInstanceOf[InstanceGroupModifyConfig]
   }
   
-  extension [Self <: InstanceGroupModifyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupModifyConfig] (val x: Self) extends AnyVal {
     
     inline def setConfigurations(value: ConfigurationList): Self = StObject.set(x, "Configurations", value.asInstanceOf[js.Any])
     

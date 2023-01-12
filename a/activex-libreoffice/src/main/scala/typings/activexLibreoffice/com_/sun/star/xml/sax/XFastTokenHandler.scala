@@ -44,7 +44,8 @@ object XFastTokenHandler {
     __obj.asInstanceOf[XFastTokenHandler]
   }
   
-  extension [Self <: XFastTokenHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFastTokenHandler] (val x: Self) extends AnyVal {
     
     inline def setGetTokenFromUTF8(value: SeqEquiv[Double] => Double): Self = StObject.set(x, "getTokenFromUTF8", js.Any.fromFunction1(value))
     

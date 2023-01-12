@@ -15,7 +15,8 @@ object AggregationsMultiBucketBase {
     __obj.asInstanceOf[AggregationsMultiBucketBase]
   }
   
-  extension [Self <: AggregationsMultiBucketBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsMultiBucketBase] (val x: Self) extends AnyVal {
     
     inline def setDoc_count(value: long): Self = StObject.set(x, "doc_count", value.asInstanceOf[js.Any])
   }

@@ -31,7 +31,8 @@ object GoogleCloudVideointelligenceV1beta2LabelAnnotation {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2LabelAnnotation]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1beta2LabelAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1beta2LabelAnnotation] (val x: Self) extends AnyVal {
     
     inline def setCategoryEntities(value: js.Array[GoogleCloudVideointelligenceV1beta2Entity]): Self = StObject.set(x, "categoryEntities", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object PartialTimeouts {
     __obj.asInstanceOf[PartialTimeouts]
   }
   
-  extension [Self <: PartialTimeouts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTimeouts] (val x: Self) extends AnyVal {
     
     inline def setImplicit(value: Double): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
     

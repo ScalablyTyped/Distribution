@@ -347,7 +347,8 @@ object mod {
       __obj.asInstanceOf[Options_]
     }
     
-    extension [Self <: Options_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options_] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -461,7 +462,8 @@ object mod {
       __obj.asInstanceOf[Platform_]
     }
     
-    extension [Self <: Platform_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Platform_] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -512,7 +514,8 @@ object mod {
       __obj.asInstanceOf[Stats]
     }
     
-    extension [Self <: Stats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
       
       inline def setDeviation(value: Double): Self = StObject.set(x, "deviation", value.asInstanceOf[js.Any])
       
@@ -547,7 +550,8 @@ object mod {
       __obj.asInstanceOf[Support_]
     }
     
-    extension [Self <: Support_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Support_] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: Boolean): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -602,7 +606,8 @@ object mod {
       __obj.asInstanceOf[Target]
     }
     
-    extension [Self <: Target](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -689,7 +694,8 @@ object mod {
       __obj.asInstanceOf[Times]
     }
     
-    extension [Self <: Times](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Times] (val x: Self) extends AnyVal {
       
       inline def setCycle(value: Double): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object UpdateTagOptionInput {
     __obj.asInstanceOf[UpdateTagOptionInput]
   }
   
-  extension [Self <: UpdateTagOptionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTagOptionInput] (val x: Self) extends AnyVal {
     
     inline def setActive(value: TagOptionActive): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     

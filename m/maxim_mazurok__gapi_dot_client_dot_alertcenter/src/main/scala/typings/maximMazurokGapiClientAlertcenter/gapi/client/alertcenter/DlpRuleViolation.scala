@@ -19,7 +19,8 @@ object DlpRuleViolation {
     __obj.asInstanceOf[DlpRuleViolation]
   }
   
-  extension [Self <: DlpRuleViolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DlpRuleViolation] (val x: Self) extends AnyVal {
     
     inline def setRuleViolationInfo(value: RuleViolationInfo): Self = StObject.set(x, "ruleViolationInfo", value.asInstanceOf[js.Any])
     

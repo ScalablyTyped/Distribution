@@ -30,7 +30,8 @@ object CreateCollectionOptions {
     __obj.asInstanceOf[CreateCollectionOptions]
   }
   
-  extension [Self <: CreateCollectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCollectionOptions] (val x: Self) extends AnyVal {
     
     inline def setIsSystem(value: Boolean): Self = StObject.set(x, "isSystem", value.asInstanceOf[js.Any])
     

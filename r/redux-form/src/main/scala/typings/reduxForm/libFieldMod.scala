@@ -95,7 +95,8 @@ object libFieldMod {
       __obj.asInstanceOf[BaseFieldProps[P]]
     }
     
-    extension [Self <: BaseFieldProps[?], P](x: Self & BaseFieldProps[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseFieldProps[?], P] (val x: Self & BaseFieldProps[P]) extends AnyVal {
       
       inline def setComponent(value: (ComponentType[WrappedFieldProps & P]) | input | select | textarea): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -201,7 +202,8 @@ object libFieldMod {
       __obj.asInstanceOf[CommonFieldInputProps]
     }
     
-    extension [Self <: CommonFieldInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonFieldInputProps] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -235,7 +237,8 @@ object libFieldMod {
       __obj.asInstanceOf[CommonFieldProps]
     }
     
-    extension [Self <: CommonFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonFieldProps] (val x: Self) extends AnyVal {
       
       inline def setOnBlur(
         value: (/* event */ js.UndefOr[FocusEvent[Any, Element]], /* newValue */ js.UndefOr[Any], /* previousValue */ js.UndefOr[Any], /* name */ js.UndefOr[String]) => Unit
@@ -327,7 +330,8 @@ object libFieldMod {
       __obj.asInstanceOf[WrappedFieldInputProps]
     }
     
-    extension [Self <: WrappedFieldInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrappedFieldInputProps] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -396,7 +400,8 @@ object libFieldMod {
       __obj.asInstanceOf[WrappedFieldMetaProps]
     }
     
-    extension [Self <: WrappedFieldMetaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrappedFieldMetaProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -451,7 +456,8 @@ object libFieldMod {
       __obj.asInstanceOf[WrappedFieldProps]
     }
     
-    extension [Self <: WrappedFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrappedFieldProps] (val x: Self) extends AnyVal {
       
       inline def setInput(value: WrappedFieldInputProps): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       

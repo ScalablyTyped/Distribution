@@ -20,7 +20,8 @@ object TabBulmaComponent {
     __obj.asInstanceOf[TabBulmaComponent]
   }
   
-  extension [Self <: TabBulmaComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabBulmaComponent] (val x: Self) extends AnyVal {
     
     inline def setTab(value: /* props */ TabProps & (ElementProps[TabProps, a]) => ReactElement): Self = StObject.set(x, "Tab", js.Any.fromFunction1(value))
   }

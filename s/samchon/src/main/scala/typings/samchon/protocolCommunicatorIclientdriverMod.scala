@@ -39,7 +39,8 @@ object protocolCommunicatorIclientdriverMod {
       __obj.asInstanceOf[IClientDriver]
     }
     
-    extension [Self <: IClientDriver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IClientDriver] (val x: Self) extends AnyVal {
       
       inline def setListen(value: IProtocol => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
     }

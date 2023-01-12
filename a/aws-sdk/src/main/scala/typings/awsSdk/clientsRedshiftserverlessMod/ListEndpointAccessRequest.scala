@@ -33,7 +33,8 @@ object ListEndpointAccessRequest {
     __obj.asInstanceOf[ListEndpointAccessRequest]
   }
   
-  extension [Self <: ListEndpointAccessRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEndpointAccessRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ListEndpointAccessRequestMaxResultsInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object typesRetroMod {
       __obj.asInstanceOf[IRetroable[T]]
     }
     
-    extension [Self <: IRetroable[?], T](x: Self & IRetroable[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRetroable[?], T] (val x: Self & IRetroable[T]) extends AnyVal {
       
       inline def setRetro(value: () => IIterator[T]): Self = StObject.set(x, "retro", js.Any.fromFunction0(value))
     }

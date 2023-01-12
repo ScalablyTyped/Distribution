@@ -20,7 +20,8 @@ object UriHandler {
     __obj.asInstanceOf[UriHandler]
   }
   
-  extension [Self <: UriHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UriHandler] (val x: Self) extends AnyVal {
     
     inline def setHandleUri(value: Uri => ProviderResult[Unit]): Self = StObject.set(x, "handleUri", js.Any.fromFunction1(value))
   }

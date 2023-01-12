@@ -44,7 +44,8 @@ object IMarks {
     __obj.asInstanceOf[IMarks]
   }
   
-  extension [Self <: IMarks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMarks] (val x: Self) extends AnyVal {
     
     inline def setArrow(value: IArrow): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object NielsenNonLinearWatermarkSettings {
     __obj.asInstanceOf[NielsenNonLinearWatermarkSettings]
   }
   
-  extension [Self <: NielsenNonLinearWatermarkSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NielsenNonLinearWatermarkSettings] (val x: Self) extends AnyVal {
     
     inline def setActiveWatermarkProcess(value: NielsenActiveWatermarkProcessType): Self = StObject.set(x, "ActiveWatermarkProcess", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object RefSha {
     __obj.asInstanceOf[RefSha]
   }
   
-  extension [Self <: RefSha](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefSha] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

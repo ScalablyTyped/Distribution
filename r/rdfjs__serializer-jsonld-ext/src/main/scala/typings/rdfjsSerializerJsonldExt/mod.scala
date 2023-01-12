@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[SerializerOptions]
     }
     
-    extension [Self <: SerializerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializerOptions] (val x: Self) extends AnyVal {
       
       inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       

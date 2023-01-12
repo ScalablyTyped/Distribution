@@ -23,7 +23,8 @@ object GetSavingsPlansUtilizationResponse {
     __obj.asInstanceOf[GetSavingsPlansUtilizationResponse]
   }
   
-  extension [Self <: GetSavingsPlansUtilizationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSavingsPlansUtilizationResponse] (val x: Self) extends AnyVal {
     
     inline def setSavingsPlansUtilizationsByTime(value: SavingsPlansUtilizationsByTime): Self = StObject.set(x, "SavingsPlansUtilizationsByTime", value.asInstanceOf[js.Any])
     

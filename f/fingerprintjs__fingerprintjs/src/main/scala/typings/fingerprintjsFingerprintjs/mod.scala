@@ -782,7 +782,8 @@ object mod {
       __obj.asInstanceOf[BuiltinComponents]
     }
     
-    extension [Self <: BuiltinComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuiltinComponents] (val x: Self) extends AnyVal {
       
       inline def setAudio(
         value: Component[
@@ -1057,7 +1058,8 @@ object mod {
       __obj.asInstanceOf[CanvasFingerprint]
     }
     
-    extension [Self <: CanvasFingerprint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasFingerprint] (val x: Self) extends AnyVal {
       
       inline def setGeometry(value: String): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
@@ -1107,7 +1109,8 @@ object mod {
       __obj.asInstanceOf[Confidence]
     }
     
-    extension [Self <: Confidence](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Confidence] (val x: Self) extends AnyVal {
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -1143,7 +1146,8 @@ object mod {
       __obj.asInstanceOf[GetOptions]
     }
     
-    extension [Self <: GetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -1189,7 +1193,8 @@ object mod {
       __obj.asInstanceOf[GetResult]
     }
     
-    extension [Self <: GetResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetResult] (val x: Self) extends AnyVal {
       
       inline def setComponents(value: BuiltinComponents): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
@@ -1232,7 +1237,8 @@ object mod {
       __obj.asInstanceOf[LoadOptions]
     }
     
-    extension [Self <: LoadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -1261,7 +1267,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -1284,7 +1291,8 @@ object mod {
       __obj.asInstanceOf[PluginData]
     }
     
-    extension [Self <: PluginData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginData] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -1310,7 +1318,8 @@ object mod {
       __obj.asInstanceOf[PluginMimeTypeData]
     }
     
-    extension [Self <: PluginMimeTypeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginMimeTypeData] (val x: Self) extends AnyVal {
       
       inline def setSuffixes(value: String): Self = StObject.set(x, "suffixes", value.asInstanceOf[js.Any])
       
@@ -1372,7 +1381,8 @@ object mod {
       __obj.asInstanceOf[TouchSupport]
     }
     
-    extension [Self <: TouchSupport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TouchSupport] (val x: Self) extends AnyVal {
       
       inline def setMaxTouchPoints(value: Double): Self = StObject.set(x, "maxTouchPoints", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object EvalOptions {
     __obj.asInstanceOf[EvalOptions]
   }
   
-  extension [Self <: EvalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvalOptions] (val x: Self) extends AnyVal {
     
     inline def setNolock(value: Boolean): Self = StObject.set(x, "nolock", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ASPxClientIndicatorPoint {
     __obj.asInstanceOf[ASPxClientIndicatorPoint]
   }
   
-  extension [Self <: ASPxClientIndicatorPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientIndicatorPoint] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: Any): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetLicenseConversionTaskRequest {
     __obj.asInstanceOf[GetLicenseConversionTaskRequest]
   }
   
-  extension [Self <: GetLicenseConversionTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLicenseConversionTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setLicenseConversionTaskId(value: LicenseConversionTaskId): Self = StObject.set(x, "LicenseConversionTaskId", value.asInstanceOf[js.Any])
   }

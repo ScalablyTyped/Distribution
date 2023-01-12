@@ -165,7 +165,8 @@ object libSrcFormatterExpressionFormatterMod {
       __obj.asInstanceOf[DialectFormatOptions]
     }
     
-    extension [Self <: DialectFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialectFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setAlwaysDenseOperators(value: js.Array[String]): Self = StObject.set(x, "alwaysDenseOperators", value.asInstanceOf[js.Any])
       
@@ -325,7 +326,8 @@ object libSrcFormatterExpressionFormatterMod {
       __obj.asInstanceOf[ExpressionFormatter]
     }
     
-    extension [Self <: ExpressionFormatter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpressionFormatter] (val x: Self) extends AnyVal {
       
       inline def setCfg(value: Any): Self = StObject.set(x, "cfg", value.asInstanceOf[js.Any])
       
@@ -443,7 +445,8 @@ object libSrcFormatterExpressionFormatterMod {
       __obj.asInstanceOf[ExpressionFormatterParams]
     }
     
-    extension [Self <: ExpressionFormatterParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpressionFormatterParams] (val x: Self) extends AnyVal {
       
       inline def setCfg(value: FormatOptions): Self = StObject.set(x, "cfg", value.asInstanceOf[js.Any])
       
@@ -472,7 +475,8 @@ object libSrcFormatterExpressionFormatterMod {
       __obj.asInstanceOf[ProcessedDialectFormatOptions]
     }
     
-    extension [Self <: ProcessedDialectFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessedDialectFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setAlwaysDenseOperators(value: js.Array[String]): Self = StObject.set(x, "alwaysDenseOperators", value.asInstanceOf[js.Any])
       

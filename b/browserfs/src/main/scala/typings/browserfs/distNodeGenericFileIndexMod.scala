@@ -193,7 +193,8 @@ object distNodeGenericFileIndexMod {
       __obj.asInstanceOf[Inode]
     }
     
-    extension [Self <: Inode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Inode] (val x: Self) extends AnyVal {
       
       inline def setIsDir(value: () => Boolean): Self = StObject.set(x, "isDir", js.Any.fromFunction0(value))
       

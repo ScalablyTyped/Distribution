@@ -32,7 +32,8 @@ object NightwatchTestHooks {
     __obj.asInstanceOf[NightwatchTestHooks]
   }
   
-  extension [Self <: NightwatchTestHooks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NightwatchTestHooks] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: /* done */ js.Function1[/* err */ js.UndefOr[Any], Unit] => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
     

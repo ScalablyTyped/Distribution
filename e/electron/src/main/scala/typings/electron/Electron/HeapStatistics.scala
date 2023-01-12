@@ -41,7 +41,8 @@ object HeapStatistics {
     __obj.asInstanceOf[HeapStatistics]
   }
   
-  extension [Self <: HeapStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeapStatistics] (val x: Self) extends AnyVal {
     
     inline def setDoesZapGarbage(value: Boolean): Self = StObject.set(x, "doesZapGarbage", value.asInstanceOf[js.Any])
     

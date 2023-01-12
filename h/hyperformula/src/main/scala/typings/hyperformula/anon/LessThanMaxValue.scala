@@ -24,7 +24,8 @@ object LessThanMaxValue {
     __obj.asInstanceOf[LessThanMaxValue]
   }
   
-  extension [Self <: LessThanMaxValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LessThanMaxValue] (val x: Self) extends AnyVal {
     
     inline def setArgumentType(value: ArgumentTypes): Self = StObject.set(x, "argumentType", value.asInstanceOf[js.Any])
     

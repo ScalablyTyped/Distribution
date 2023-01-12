@@ -85,7 +85,8 @@ object UptimeCheckConfig {
     __obj.asInstanceOf[UptimeCheckConfig]
   }
   
-  extension [Self <: UptimeCheckConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UptimeCheckConfig] (val x: Self) extends AnyVal {
     
     inline def setCheckerType(value: String): Self = StObject.set(x, "checkerType", value.asInstanceOf[js.Any])
     

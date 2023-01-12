@@ -19,7 +19,8 @@ object GoogleCloudDatalabelingV1beta1GcsDestination {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1GcsDestination]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1GcsDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1GcsDestination] (val x: Self) extends AnyVal {
     
     inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     

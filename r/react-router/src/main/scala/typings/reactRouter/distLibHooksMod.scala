@@ -151,7 +151,8 @@ object distLibHooksMod {
       __obj.asInstanceOf[RenderErrorBoundaryProps]
     }
     
-    extension [Self <: RenderErrorBoundaryProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderErrorBoundaryProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object distLibHooksMod {
       __obj.asInstanceOf[RenderErrorBoundaryState]
     }
     
-    extension [Self <: RenderErrorBoundaryState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderErrorBoundaryState] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

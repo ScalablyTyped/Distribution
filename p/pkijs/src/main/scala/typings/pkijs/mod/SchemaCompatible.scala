@@ -27,7 +27,8 @@ object SchemaCompatible {
     __obj.asInstanceOf[SchemaCompatible]
   }
   
-  extension [Self <: SchemaCompatible](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaCompatible] (val x: Self) extends AnyVal {
     
     inline def setFromSchema(value: SchemaType => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
     

@@ -24,7 +24,8 @@ object ParameterRuleEnum {
     __obj.asInstanceOf[ParameterRuleEnum]
   }
   
-  extension [Self <: ParameterRuleEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterRuleEnum] (val x: Self) extends AnyVal {
     
     inline def setType(value: `enum` | enumQuestionmark): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

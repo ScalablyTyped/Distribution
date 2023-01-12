@@ -34,7 +34,8 @@ object FetchResourcesResult {
     __obj.asInstanceOf[FetchResourcesResult]
   }
   
-  extension [Self <: FetchResourcesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchResourcesResult] (val x: Self) extends AnyVal {
     
     inline def setNextStart(value: Double): Self = StObject.set(x, "nextStart", value.asInstanceOf[js.Any])
     

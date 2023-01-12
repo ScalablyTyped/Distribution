@@ -21,7 +21,8 @@ object Int {
     __obj.asInstanceOf[Int]
   }
   
-  extension [Self <: Int](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Int] (val x: Self) extends AnyVal {
     
     inline def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
     

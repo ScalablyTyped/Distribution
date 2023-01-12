@@ -53,7 +53,8 @@ object TwemojiOptions {
     __obj.asInstanceOf[TwemojiOptions]
   }
   
-  extension [Self <: TwemojiOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TwemojiOptions] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: (/* icon */ String, /* variant */ String) => js.Object): Self = StObject.set(x, "attributes", js.Any.fromFunction2(value))
     

@@ -17,7 +17,8 @@ object ISemanticAliases {
     __obj.asInstanceOf[ISemanticAliases]
   }
   
-  extension [Self <: ISemanticAliases](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISemanticAliases] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => ISemanticAliases): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

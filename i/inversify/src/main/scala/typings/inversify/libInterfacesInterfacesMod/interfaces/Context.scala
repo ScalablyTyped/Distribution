@@ -32,7 +32,8 @@ object Context {
     __obj.asInstanceOf[Context]
   }
   
-  extension [Self <: Context](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
     
     inline def setAddPlan(value: Plan => Unit): Self = StObject.set(x, "addPlan", js.Any.fromFunction1(value))
     

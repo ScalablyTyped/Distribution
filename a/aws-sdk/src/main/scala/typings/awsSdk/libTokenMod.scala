@@ -102,7 +102,8 @@ object libTokenMod {
       __obj.asInstanceOf[TokenOptions]
     }
     
-    extension [Self <: TokenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenOptions] (val x: Self) extends AnyVal {
       
       inline def setExpireTime(value: js.Date): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
       

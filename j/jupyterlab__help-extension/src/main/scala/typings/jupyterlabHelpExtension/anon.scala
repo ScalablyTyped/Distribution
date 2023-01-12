@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[PartialIPackageLicenseInf]
     }
     
-    extension [Self <: PartialIPackageLicenseInf](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIPackageLicenseInf] (val x: Self) extends AnyVal {
       
       inline def setExtractedText(value: String): Self = StObject.set(x, "extractedText", value.asInstanceOf[js.Any])
       

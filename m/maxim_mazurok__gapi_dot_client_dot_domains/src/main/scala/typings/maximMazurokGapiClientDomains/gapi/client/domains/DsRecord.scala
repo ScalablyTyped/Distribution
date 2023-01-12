@@ -25,7 +25,8 @@ object DsRecord {
     __obj.asInstanceOf[DsRecord]
   }
   
-  extension [Self <: DsRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DsRecord] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

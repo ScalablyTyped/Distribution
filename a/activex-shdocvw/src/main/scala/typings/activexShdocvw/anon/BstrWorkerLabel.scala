@@ -17,7 +17,8 @@ object BstrWorkerLabel {
     __obj.asInstanceOf[BstrWorkerLabel]
   }
   
-  extension [Self <: BstrWorkerLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BstrWorkerLabel] (val x: Self) extends AnyVal {
     
     inline def setBstrWorkerLabel(value: String): Self = StObject.set(x, "bstrWorkerLabel", value.asInstanceOf[js.Any])
     

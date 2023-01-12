@@ -18,7 +18,8 @@ object XRSessionEventInit {
     __obj.asInstanceOf[XRSessionEventInit]
   }
   
-  extension [Self <: XRSessionEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRSessionEventInit] (val x: Self) extends AnyVal {
     
     inline def setSession(value: XRSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
   }

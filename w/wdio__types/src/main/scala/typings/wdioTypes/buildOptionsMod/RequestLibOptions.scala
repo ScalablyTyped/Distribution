@@ -47,7 +47,8 @@ object RequestLibOptions {
     __obj.asInstanceOf[RequestLibOptions]
   }
   
-  extension [Self <: RequestLibOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestLibOptions] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: Agents): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object FeatureTemplateThumbnail {
     __obj.asInstanceOf[FeatureTemplateThumbnail]
   }
   
-  extension [Self <: FeatureTemplateThumbnail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureTemplateThumbnail] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: image | png | jpg | jpeg): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

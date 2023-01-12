@@ -25,7 +25,8 @@ object AppsDynamiteSharedColumnsColumn {
     __obj.asInstanceOf[AppsDynamiteSharedColumnsColumn]
   }
   
-  extension [Self <: AppsDynamiteSharedColumnsColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedColumnsColumn] (val x: Self) extends AnyVal {
     
     inline def setHorizontalAlignment(value: String): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     

@@ -67,7 +67,8 @@ object typesResourceNotFoundExceptionMod {
       __obj.asInstanceOf[ResourceNotFoundException]
     }
     
-    extension [Self <: ResourceNotFoundException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceNotFoundException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ResourceNotFoundException
@@ -89,7 +90,8 @@ object typesResourceNotFoundExceptionMod {
       __obj.asInstanceOf[ResourceNotFoundExceptionDetails]
     }
     
-    extension [Self <: ResourceNotFoundExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceNotFoundExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

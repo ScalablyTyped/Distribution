@@ -20,7 +20,8 @@ object UploadAccountResponse {
     __obj.asInstanceOf[UploadAccountResponse]
   }
   
-  extension [Self <: UploadAccountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadAccountResponse] (val x: Self) extends AnyVal {
     
     inline def setError(value: js.Array[Index]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

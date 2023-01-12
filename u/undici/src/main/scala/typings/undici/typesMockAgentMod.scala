@@ -66,7 +66,8 @@ object typesMockAgentMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: typings.undici.typesAgentMod.^): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object typesMockAgentMod {
       __obj.asInstanceOf[PendingInterceptor]
     }
     
-    extension [Self <: PendingInterceptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PendingInterceptor] (val x: Self) extends AnyVal {
       
       inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     }
@@ -110,7 +112,8 @@ object typesMockAgentMod {
       __obj.asInstanceOf[PendingInterceptorsFormatter]
     }
     
-    extension [Self <: PendingInterceptorsFormatter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PendingInterceptorsFormatter] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: js.Array[PendingInterceptor] => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     }

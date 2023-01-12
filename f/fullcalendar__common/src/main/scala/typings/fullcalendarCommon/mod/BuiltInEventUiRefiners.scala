@@ -87,7 +87,8 @@ object BuiltInEventUiRefiners {
     __obj.asInstanceOf[BuiltInEventUiRefiners]
   }
   
-  extension [Self <: BuiltInEventUiRefiners](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuiltInEventUiRefiners] (val x: Self) extends AnyVal {
     
     inline def setAllow(value: AllowFunc => AllowFunc): Self = StObject.set(x, "allow", js.Any.fromFunction1(value))
     

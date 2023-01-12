@@ -177,7 +177,8 @@ object ITimeEntryOptions {
     __obj.asInstanceOf[ITimeEntryOptions]
   }
   
-  extension [Self <: ITimeEntryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITimeEntryOptions] (val x: Self) extends AnyVal {
     
     inline def setAppendText(value: String): Self = StObject.set(x, "appendText", value.asInstanceOf[js.Any])
     

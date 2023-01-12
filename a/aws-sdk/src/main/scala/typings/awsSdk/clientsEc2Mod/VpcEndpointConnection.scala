@@ -68,7 +68,8 @@ object VpcEndpointConnection {
     __obj.asInstanceOf[VpcEndpointConnection]
   }
   
-  extension [Self <: VpcEndpointConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcEndpointConnection] (val x: Self) extends AnyVal {
     
     inline def setCreationTimestamp(value: js.Date): Self = StObject.set(x, "CreationTimestamp", value.asInstanceOf[js.Any])
     

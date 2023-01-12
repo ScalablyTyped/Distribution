@@ -61,7 +61,8 @@ object toolbarToolbarMod extends Shortcut {
       __obj.asInstanceOf[ToolbarTypeMap[P, D]]
     }
     
-    extension [Self <: ToolbarTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (ToolbarTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (ToolbarTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: ToolbarClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

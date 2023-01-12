@@ -327,7 +327,8 @@ object distParserAstDotcoreLinterMod {
       __obj.asInstanceOf[IShema]
     }
     
-    extension [Self <: IShema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShema] (val x: Self) extends AnyVal {
       
       inline def setValidate(value: (Any, ValidationAcceptor, Boolean) => Any): Self = StObject.set(x, "validate", js.Any.fromFunction3(value))
     }
@@ -348,7 +349,8 @@ object distParserAstDotcoreLinterMod {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -371,7 +373,8 @@ object distParserAstDotcoreLinterMod {
       __obj.asInstanceOf[PropertyValidator]
     }
     
-    extension [Self <: PropertyValidator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropertyValidator] (val x: Self) extends AnyVal {
       
       inline def setValidate(value: (IAttribute, ValidationAcceptor) => Any): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
     }

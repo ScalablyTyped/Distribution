@@ -38,7 +38,8 @@ object DateArrayOptions {
     __obj.asInstanceOf[DateArrayOptions]
   }
   
-  extension [Self <: DateArrayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateArrayOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: FieldValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     

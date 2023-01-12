@@ -111,7 +111,8 @@ object buildSrcCompileMarkEncodeValuerefMod {
       __obj.asInstanceOf[MidPointParams]
     }
     
-    extension [Self <: MidPointParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MidPointParams] (val x: Self) extends AnyVal {
       
       inline def setBandPosition(value: Double | SignalRef): Self = StObject.set(x, "bandPosition", value.asInstanceOf[js.Any])
       

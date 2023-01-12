@@ -33,7 +33,8 @@ object DeleteFolderResponse {
     __obj.asInstanceOf[DeleteFolderResponse]
   }
   
-  extension [Self <: DeleteFolderResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFolderResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

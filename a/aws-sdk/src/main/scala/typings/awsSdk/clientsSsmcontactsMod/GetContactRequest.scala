@@ -18,7 +18,8 @@ object GetContactRequest {
     __obj.asInstanceOf[GetContactRequest]
   }
   
-  extension [Self <: GetContactRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetContactRequest] (val x: Self) extends AnyVal {
     
     inline def setContactId(value: SsmContactsArn): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
   }

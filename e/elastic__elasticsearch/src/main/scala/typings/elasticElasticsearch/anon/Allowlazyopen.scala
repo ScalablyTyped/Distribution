@@ -51,7 +51,8 @@ object Allowlazyopen {
     __obj.asInstanceOf[Allowlazyopen]
   }
   
-  extension [Self <: Allowlazyopen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Allowlazyopen] (val x: Self) extends AnyVal {
     
     inline def setAllow_lazy_open(value: Boolean): Self = StObject.set(x, "allow_lazy_open", value.asInstanceOf[js.Any])
     

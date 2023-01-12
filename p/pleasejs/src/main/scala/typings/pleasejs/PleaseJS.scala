@@ -21,7 +21,8 @@ object PleaseJS {
       __obj.asInstanceOf[HSV]
     }
     
-    extension [Self <: HSV](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HSV] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object PleaseJS {
       __obj.asInstanceOf[MakeColorOption]
     }
     
-    extension [Self <: MakeColorOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MakeColorOption] (val x: Self) extends AnyVal {
       
       inline def setBase_color(value: String): Self = StObject.set(x, "base_color", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object PleaseJS {
       __obj.asInstanceOf[MakeSchemeOption]
     }
     
-    extension [Self <: MakeSchemeOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MakeSchemeOption] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -223,7 +226,8 @@ object PleaseJS {
       __obj.asInstanceOf[RGB]
     }
     
-    extension [Self <: RGB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RGB] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       

@@ -44,7 +44,8 @@ object SearchJobsResponse {
     __obj.asInstanceOf[SearchJobsResponse]
   }
   
-  extension [Self <: SearchJobsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchJobsResponse] (val x: Self) extends AnyVal {
     
     inline def setBroadenedQueryJobsCount(value: Double): Self = StObject.set(x, "broadenedQueryJobsCount", value.asInstanceOf[js.Any])
     

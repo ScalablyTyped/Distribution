@@ -40,7 +40,8 @@ object DataRepositoryConfiguration {
     __obj.asInstanceOf[DataRepositoryConfiguration]
   }
   
-  extension [Self <: DataRepositoryConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataRepositoryConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAutoImportPolicy(value: AutoImportPolicyType): Self = StObject.set(x, "AutoImportPolicy", value.asInstanceOf[js.Any])
     

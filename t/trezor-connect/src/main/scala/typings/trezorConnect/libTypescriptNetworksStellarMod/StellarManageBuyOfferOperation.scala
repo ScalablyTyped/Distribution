@@ -38,7 +38,8 @@ object StellarManageBuyOfferOperation {
     __obj.asInstanceOf[StellarManageBuyOfferOperation]
   }
   
-  extension [Self <: StellarManageBuyOfferOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StellarManageBuyOfferOperation] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

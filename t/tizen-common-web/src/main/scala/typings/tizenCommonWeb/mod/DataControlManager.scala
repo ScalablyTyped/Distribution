@@ -31,7 +31,8 @@ object DataControlManager {
     __obj.asInstanceOf[DataControlManager]
   }
   
-  extension [Self <: DataControlManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataControlManager] (val x: Self) extends AnyVal {
     
     inline def setGetDataControlConsumer(value: (String, String, DataType) => DataControlConsumerObject): Self = StObject.set(x, "getDataControlConsumer", js.Any.fromFunction3(value))
   }

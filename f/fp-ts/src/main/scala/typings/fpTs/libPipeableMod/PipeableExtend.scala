@@ -42,7 +42,8 @@ object PipeableExtend {
     __obj.asInstanceOf[PipeableExtend[F]]
   }
   
-  extension [Self <: PipeableExtend[?], F](x: Self & PipeableExtend[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableExtend[?], F] (val x: Self & PipeableExtend[F]) extends AnyVal {
     
     inline def setDuplicate(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any => Any

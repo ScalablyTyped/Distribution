@@ -23,7 +23,8 @@ object MinimumHealthyHosts {
     __obj.asInstanceOf[MinimumHealthyHosts]
   }
   
-  extension [Self <: MinimumHealthyHosts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinimumHealthyHosts] (val x: Self) extends AnyVal {
     
     inline def setType(value: MinimumHealthyHostsType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

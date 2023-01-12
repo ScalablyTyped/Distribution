@@ -31,7 +31,8 @@ object PartitionInfoResponse {
     __obj.asInstanceOf[PartitionInfoResponse]
   }
   
-  extension [Self <: PartitionInfoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartitionInfoResponse] (val x: Self) extends AnyVal {
     
     inline def setDb_name(value: String): Self = StObject.set(x, "db_name", value.asInstanceOf[js.Any])
     

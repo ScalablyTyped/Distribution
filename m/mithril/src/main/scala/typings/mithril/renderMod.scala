@@ -22,7 +22,8 @@ object renderMod extends Shortcut {
       __obj.asInstanceOf[Static]
     }
     
-    extension [Self <: Static](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
       
       inline def setRender(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof render */ Any): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     }

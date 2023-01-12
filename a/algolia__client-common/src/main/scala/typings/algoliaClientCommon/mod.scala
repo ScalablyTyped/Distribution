@@ -77,7 +77,8 @@ object mod {
       __obj.asInstanceOf[Auth]
     }
     
-    extension [Self <: Auth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Auth] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: () => Record[String, String]): Self = StObject.set(x, "headers", js.Any.fromFunction0(value))
       

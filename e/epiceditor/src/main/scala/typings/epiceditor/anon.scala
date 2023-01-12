@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[AutoSave]
     }
     
-    extension [Self <: AutoSave](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoSave] (val x: Self) extends AnyVal {
       
       inline def setAutoSave(value: Any): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Base]
     }
     
-    extension [Self <: Base](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -71,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Fullscreen]
     }
     
-    extension [Self <: Fullscreen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fullscreen] (val x: Self) extends AnyVal {
       
       inline def setFullscreen(value: Double): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
       
@@ -96,7 +99,8 @@ object anon {
       __obj.asInstanceOf[ToggleEdit]
     }
     
-    extension [Self <: ToggleEdit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleEdit] (val x: Self) extends AnyVal {
       
       inline def setToggleEdit(value: String): Self = StObject.set(x, "toggleEdit", value.asInstanceOf[js.Any])
       

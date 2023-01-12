@@ -21,7 +21,8 @@ object TypeofVerificationReport {
     __obj.asInstanceOf[TypeofVerificationReport]
   }
   
-  extension [Self <: TypeofVerificationReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofVerificationReport] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: TypeofDocument): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
     

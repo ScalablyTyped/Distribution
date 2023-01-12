@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[AnimatedProps]
     }
     
-    extension [Self <: AnimatedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimatedProps] (val x: Self) extends AnyVal {
       
       inline def setAnimatedProps(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<{  opacity :number,   x1 :number,   x2 :number,   y1 :number,   y2 :number}> */ Any
@@ -91,7 +92,8 @@ object anon {
       __obj.asInstanceOf[AriaHidden]
     }
     
-    extension [Self <: AriaHidden](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AriaHidden] (val x: Self) extends AnyVal {
       
       inline def setAriaHidden(value: Requireable[Boolean]): Self = StObject.set(x, "ariaHidden", value.asInstanceOf[js.Any])
       
@@ -156,7 +158,8 @@ object anon {
       __obj.asInstanceOf[Axis[Value]]
     }
     
-    extension [Self <: Axis[?], Value /* <: ScaleValue */](x: Self & Axis[Value]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Axis[?], Value /* <: ScaleValue */] (val x: Self & Axis[Value]) extends AnyVal {
       
       inline def setAxis(value: typings.nivoAxes.nivoAxesStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -241,7 +244,8 @@ object anon {
       __obj.asInstanceOf[Bottom[X, Y]]
     }
     
-    extension [Self <: Bottom[?, ?], X /* <: ScaleValue */, Y /* <: ScaleValue */](x: Self & (Bottom[X, Y])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom[?, ?], X /* <: ScaleValue */, Y /* <: ScaleValue */] (val x: Self & (Bottom[X, Y])) extends AnyVal {
       
       inline def setBottom(value: CanvasAxisProps[X]): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -304,7 +308,8 @@ object anon {
       __obj.asInstanceOf[Engine[Value]]
     }
     
-    extension [Self <: Engine[?], Value /* <: ScaleValue */](x: Self & Engine[Value]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Engine[?], Value /* <: ScaleValue */] (val x: Self & Engine[Value]) extends AnyVal {
       
       inline def setAxis(value: typings.nivoAxes.nivoAxesStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -351,7 +356,8 @@ object anon {
       __obj.asInstanceOf[Height[Value]]
     }
     
-    extension [Self <: Height[?], Value /* <: ScaleValue */](x: Self & Height[Value]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height[?], Value /* <: ScaleValue */] (val x: Self & Height[Value]) extends AnyVal {
       
       inline def setAxis(value: typings.nivoAxes.nivoAxesStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -403,7 +409,8 @@ object anon {
       __obj.asInstanceOf[Key[Value]]
     }
     
-    extension [Self <: Key[?], Value /* <: ScaleValue */](x: Self & Key[Value]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key[?], Value /* <: ScaleValue */] (val x: Self & Key[Value]) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -448,7 +455,8 @@ object anon {
       __obj.asInstanceOf[Left[X, Y]]
     }
     
-    extension [Self <: Left[?, ?], X /* <: ScaleValue */, Y /* <: ScaleValue */](x: Self & (Left[X, Y])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Left[?, ?], X /* <: ScaleValue */, Y /* <: ScaleValue */] (val x: Self & (Left[X, Y])) extends AnyVal {
       
       inline def setBottom(value: AxisProps[X]): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -511,7 +519,8 @@ object anon {
       __obj.asInstanceOf[Length[Value]]
     }
     
-    extension [Self <: Length[?], Value /* <: ScaleValue */](x: Self & Length[Value]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Length[?], Value /* <: ScaleValue */] (val x: Self & Length[Value]) extends AnyVal {
       
       inline def setAxis(value: typings.nivoAxes.nivoAxesStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -546,7 +555,8 @@ object anon {
       __obj.asInstanceOf[Lines]
     }
     
-    extension [Self <: Lines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lines] (val x: Self) extends AnyVal {
       
       inline def setLines(value: js.Array[Line]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
@@ -569,7 +579,8 @@ object anon {
       __obj.asInstanceOf[TextAlign[Value]]
     }
     
-    extension [Self <: TextAlign[?], Value /* <: ScaleValue */](x: Self & TextAlign[Value]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextAlign[?], Value /* <: ScaleValue */] (val x: Self & TextAlign[Value]) extends AnyVal {
       
       inline def setTextAlign(value: CanvasTextAlign): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
@@ -602,7 +613,8 @@ object anon {
       __obj.asInstanceOf[Width[X, Y]]
     }
     
-    extension [Self <: Width[?, ?], X /* <: ScaleValue */, Y /* <: ScaleValue */](x: Self & (Width[X, Y])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Width[?, ?], X /* <: ScaleValue */, Y /* <: ScaleValue */] (val x: Self & (Width[X, Y])) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

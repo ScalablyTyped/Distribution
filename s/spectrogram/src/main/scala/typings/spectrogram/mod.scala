@@ -74,7 +74,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SpectrogramOptions]
     }
     
-    extension [Self <: SpectrogramOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpectrogramOptions] (val x: Self) extends AnyVal {
       
       inline def setAudio(value: Enable): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       

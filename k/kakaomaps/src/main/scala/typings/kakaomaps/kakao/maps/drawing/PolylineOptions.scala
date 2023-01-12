@@ -41,7 +41,8 @@ object PolylineOptions {
     __obj.asInstanceOf[PolylineOptions]
   }
   
-  extension [Self <: PolylineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolylineOptions] (val x: Self) extends AnyVal {
     
     inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     

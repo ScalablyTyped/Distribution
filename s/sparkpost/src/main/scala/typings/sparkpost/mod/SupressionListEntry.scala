@@ -63,7 +63,8 @@ object SupressionListEntry {
     __obj.asInstanceOf[SupressionListEntry]
   }
   
-  extension [Self <: SupressionListEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupressionListEntry] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object distTypesResolveStaticCredentialsMod {
       __obj.asInstanceOf[StaticCredsProfile]
     }
     
-    extension [Self <: StaticCredsProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticCredsProfile] (val x: Self) extends AnyVal {
       
       inline def setAws_access_key_id(value: String): Self = StObject.set(x, "aws_access_key_id", value.asInstanceOf[js.Any])
       

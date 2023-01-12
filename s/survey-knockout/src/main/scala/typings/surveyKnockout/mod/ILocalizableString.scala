@@ -29,7 +29,8 @@ object ILocalizableString {
     __obj.asInstanceOf[ILocalizableString]
   }
   
-  extension [Self <: ILocalizableString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILocalizableString] (val x: Self) extends AnyVal {
     
     inline def setGetIsMultiple(value: () => Boolean): Self = StObject.set(x, "getIsMultiple", js.Any.fromFunction0(value))
     

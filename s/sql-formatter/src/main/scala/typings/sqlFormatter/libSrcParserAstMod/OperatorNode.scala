@@ -22,7 +22,8 @@ object OperatorNode {
     __obj.asInstanceOf[OperatorNode]
   }
   
-  extension [Self <: OperatorNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperatorNode] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

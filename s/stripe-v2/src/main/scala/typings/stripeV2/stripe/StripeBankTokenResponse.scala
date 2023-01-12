@@ -29,7 +29,8 @@ object StripeBankTokenResponse {
     __obj.asInstanceOf[StripeBankTokenResponse]
   }
   
-  extension [Self <: StripeBankTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StripeBankTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setBank_account(value: Bankname): Self = StObject.set(x, "bank_account", value.asInstanceOf[js.Any])
   }

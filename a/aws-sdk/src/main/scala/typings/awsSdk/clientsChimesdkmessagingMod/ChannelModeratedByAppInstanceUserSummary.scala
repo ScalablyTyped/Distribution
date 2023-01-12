@@ -18,7 +18,8 @@ object ChannelModeratedByAppInstanceUserSummary {
     __obj.asInstanceOf[ChannelModeratedByAppInstanceUserSummary]
   }
   
-  extension [Self <: ChannelModeratedByAppInstanceUserSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelModeratedByAppInstanceUserSummary] (val x: Self) extends AnyVal {
     
     inline def setChannelSummary(value: ChannelSummary): Self = StObject.set(x, "ChannelSummary", value.asInstanceOf[js.Any])
     

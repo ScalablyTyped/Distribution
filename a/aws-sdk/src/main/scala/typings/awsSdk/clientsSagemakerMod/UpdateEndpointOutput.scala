@@ -18,7 +18,8 @@ object UpdateEndpointOutput {
     __obj.asInstanceOf[UpdateEndpointOutput]
   }
   
-  extension [Self <: UpdateEndpointOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEndpointOutput] (val x: Self) extends AnyVal {
     
     inline def setEndpointArn(value: EndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
   }

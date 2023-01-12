@@ -271,7 +271,8 @@ object sapUiCommonsMessageMod {
       __obj.asInstanceOf[MessageSettings]
     }
     
-    extension [Self <: MessageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageSettings] (val x: Self) extends AnyVal {
       
       inline def setAssociatedElementId(value: String | PropertyBindingInfo): Self = StObject.set(x, "associatedElementId", value.asInstanceOf[js.Any])
       

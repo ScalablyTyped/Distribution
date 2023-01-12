@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[GooglePickerProps]
     }
     
-    extension [Self <: GooglePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GooglePickerProps] (val x: Self) extends AnyVal {
       
       inline def setAuthImmediate(value: Boolean): Self = StObject.set(x, "authImmediate", value.asInstanceOf[js.Any])
       

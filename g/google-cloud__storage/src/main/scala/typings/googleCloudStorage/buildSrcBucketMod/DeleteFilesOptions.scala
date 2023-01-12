@@ -19,7 +19,8 @@ object DeleteFilesOptions {
     __obj.asInstanceOf[DeleteFilesOptions]
   }
   
-  extension [Self <: DeleteFilesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFilesOptions] (val x: Self) extends AnyVal {
     
     inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     

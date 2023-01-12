@@ -25,7 +25,8 @@ object CandleStickValue {
     __obj.asInstanceOf[CandleStickValue]
   }
   
-  extension [Self <: CandleStickValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CandleStickValue] (val x: Self) extends AnyVal {
     
     inline def setClose(value: Double): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object VirtualJoystickCustomizations {
     __obj.asInstanceOf[VirtualJoystickCustomizations]
   }
   
-  extension [Self <: VirtualJoystickCustomizations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualJoystickCustomizations] (val x: Self) extends AnyVal {
     
     inline def setAlwaysVisible(value: Boolean): Self = StObject.set(x, "alwaysVisible", value.asInstanceOf[js.Any])
     

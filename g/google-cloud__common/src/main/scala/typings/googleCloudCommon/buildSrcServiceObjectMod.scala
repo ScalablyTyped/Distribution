@@ -191,7 +191,8 @@ object buildSrcServiceObjectMod {
       __obj.asInstanceOf[DeleteOptions]
     }
     
-    extension [Self <: DeleteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreNotFound(value: Boolean): Self = StObject.set(x, "ignoreNotFound", value.asInstanceOf[js.Any])
       
@@ -217,7 +218,8 @@ object buildSrcServiceObjectMod {
       __obj.asInstanceOf[GetConfig]
     }
     
-    extension [Self <: GetConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetConfig] (val x: Self) extends AnyVal {
       
       inline def setAutoCreate(value: Boolean): Self = StObject.set(x, "autoCreate", value.asInstanceOf[js.Any])
       
@@ -259,7 +261,8 @@ object buildSrcServiceObjectMod {
       __obj.asInstanceOf[Interceptor]
     }
     
-    extension [Self <: Interceptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Interceptor] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: Options => DecorateRequestOptions): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     }
@@ -335,7 +338,8 @@ object buildSrcServiceObjectMod {
       __obj.asInstanceOf[ServiceObjectConfig]
     }
     
-    extension [Self <: ServiceObjectConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceObjectConfig] (val x: Self) extends AnyVal {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
@@ -387,7 +391,8 @@ object buildSrcServiceObjectMod {
       __obj.asInstanceOf[ServiceObjectParent]
     }
     
-    extension [Self <: ServiceObjectParent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceObjectParent] (val x: Self) extends AnyVal {
       
       inline def setGetRequestInterceptors(value: () => js.Array[js.Function]): Self = StObject.set(x, "getRequestInterceptors", js.Any.fromFunction0(value))
       

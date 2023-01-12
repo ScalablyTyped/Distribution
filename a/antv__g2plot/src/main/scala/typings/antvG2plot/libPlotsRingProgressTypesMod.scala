@@ -119,7 +119,8 @@ object libPlotsRingProgressTypesMod {
       __obj.asInstanceOf[RingProgressOptions]
     }
     
-    extension [Self <: RingProgressOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RingProgressOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

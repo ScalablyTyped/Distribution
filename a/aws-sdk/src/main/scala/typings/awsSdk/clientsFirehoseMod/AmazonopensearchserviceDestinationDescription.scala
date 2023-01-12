@@ -39,7 +39,8 @@ object AmazonopensearchserviceDestinationDescription {
     __obj.asInstanceOf[AmazonopensearchserviceDestinationDescription]
   }
   
-  extension [Self <: AmazonopensearchserviceDestinationDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmazonopensearchserviceDestinationDescription] (val x: Self) extends AnyVal {
     
     inline def setBufferingHints(value: AmazonopensearchserviceBufferingHints): Self = StObject.set(x, "BufferingHints", value.asInstanceOf[js.Any])
     

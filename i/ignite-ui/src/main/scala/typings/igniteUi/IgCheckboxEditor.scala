@@ -196,7 +196,8 @@ object IgCheckboxEditor {
     __obj.asInstanceOf[IgCheckboxEditor]
   }
   
-  extension [Self <: IgCheckboxEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgCheckboxEditor] (val x: Self) extends AnyVal {
     
     inline def setAllowNullValue(value: Boolean): Self = StObject.set(x, "allowNullValue", value.asInstanceOf[js.Any])
     

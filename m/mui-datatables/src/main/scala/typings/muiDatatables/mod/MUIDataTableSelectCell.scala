@@ -35,7 +35,8 @@ object MUIDataTableSelectCell {
     __obj.asInstanceOf[MUIDataTableSelectCell]
   }
   
-  extension [Self <: MUIDataTableSelectCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableSelectCell] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

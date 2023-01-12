@@ -27,7 +27,8 @@ object Event {
     __obj.asInstanceOf[Event]
   }
   
-  extension [Self <: Event](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
     
     inline def setBgColor(value: String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
     

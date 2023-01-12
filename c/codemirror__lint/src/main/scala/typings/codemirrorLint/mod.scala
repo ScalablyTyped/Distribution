@@ -118,7 +118,8 @@ object mod {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setApply(value: (EditorView, Double, Double) => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction3(value))
       
@@ -179,7 +180,8 @@ object mod {
       __obj.asInstanceOf[Diagnostic]
     }
     
-    extension [Self <: Diagnostic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Diagnostic] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -234,7 +236,8 @@ object mod {
       __obj.asInstanceOf[LintConfig]
     }
     
-    extension [Self <: LintConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LintConfig] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -280,7 +283,8 @@ object mod {
       __obj.asInstanceOf[LintGutterConfig]
     }
     
-    extension [Self <: LintGutterConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LintGutterConfig] (val x: Self) extends AnyVal {
       
       inline def setHoverTime(value: Double): Self = StObject.set(x, "hoverTime", value.asInstanceOf[js.Any])
       

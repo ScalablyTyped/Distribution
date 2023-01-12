@@ -22,7 +22,8 @@ object ReaderLocalArgument {
     __obj.asInstanceOf[ReaderLocalArgument]
   }
   
-  extension [Self <: ReaderLocalArgument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaderLocalArgument] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

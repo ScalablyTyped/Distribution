@@ -15,7 +15,8 @@ object GetSettledBatchListRequest {
     __obj.asInstanceOf[GetSettledBatchListRequest]
   }
   
-  extension [Self <: GetSettledBatchListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSettledBatchListRequest] (val x: Self) extends AnyVal {
     
     inline def setGetSettledBatchListRequest(value: typings.authorizenet.mod.APIContracts.GetSettledBatchListRequest): Self = StObject.set(x, "getSettledBatchListRequest", value.asInstanceOf[js.Any])
   }

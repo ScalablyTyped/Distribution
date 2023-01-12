@@ -17,7 +17,8 @@ object OnEnter {
     __obj.asInstanceOf[OnEnter]
   }
   
-  extension [Self <: OnEnter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnEnter] (val x: Self) extends AnyVal {
     
     inline def setOnEnter(value: Duration): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
     

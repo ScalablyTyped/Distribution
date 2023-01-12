@@ -15,7 +15,8 @@ object PRIVATEDEVKITPATHFRAGMENT {
     __obj.asInstanceOf[PRIVATEDEVKITPATHFRAGMENT]
   }
   
-  extension [Self <: PRIVATEDEVKITPATHFRAGMENT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PRIVATEDEVKITPATHFRAGMENT] (val x: Self) extends AnyVal {
     
     inline def set__PRIVATE_DEVKIT_PATH_FRAGMENT(value: Unit): Self = StObject.set(x, "__PRIVATE_DEVKIT_PATH_FRAGMENT", value.asInstanceOf[js.Any])
   }

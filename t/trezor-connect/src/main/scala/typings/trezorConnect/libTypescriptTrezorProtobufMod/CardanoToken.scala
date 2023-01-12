@@ -19,7 +19,8 @@ object CardanoToken {
     __obj.asInstanceOf[CardanoToken]
   }
   
-  extension [Self <: CardanoToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoToken] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: UintType): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

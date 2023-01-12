@@ -21,7 +21,8 @@ object ViewportOptions {
     __obj.asInstanceOf[ViewportOptions]
   }
   
-  extension [Self <: ViewportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewportOptions] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

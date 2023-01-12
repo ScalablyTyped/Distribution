@@ -18,7 +18,8 @@ object GetDeviceRequest {
     __obj.asInstanceOf[GetDeviceRequest]
   }
   
-  extension [Self <: GetDeviceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDeviceRequest] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }

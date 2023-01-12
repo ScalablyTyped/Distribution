@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[Spreadsheet]
     }
     
-    extension [Self <: Spreadsheet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Spreadsheet] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object mod {
       __obj.asInstanceOf[Worksheet]
     }
     
-    extension [Self <: Worksheet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Worksheet] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Row]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object mod {
       __obj.asInstanceOf[WorksheetFromId]
     }
     
-    extension [Self <: WorksheetFromId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorksheetFromId] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Row]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

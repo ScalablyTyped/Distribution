@@ -19,7 +19,8 @@ object FetchByOffsetResults {
     __obj.asInstanceOf[FetchByOffsetResults[K, D]]
   }
   
-  extension [Self <: FetchByOffsetResults[?, ?], K, D](x: Self & (FetchByOffsetResults[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchByOffsetResults[?, ?], K, D] (val x: Self & (FetchByOffsetResults[K, D])) extends AnyVal {
     
     inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     

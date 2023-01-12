@@ -73,7 +73,8 @@ object CreateUnreferencedMergeCommitInput {
     __obj.asInstanceOf[CreateUnreferencedMergeCommitInput]
   }
   
-  extension [Self <: CreateUnreferencedMergeCommitInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateUnreferencedMergeCommitInput] (val x: Self) extends AnyVal {
     
     inline def setAuthorName(value: Name): Self = StObject.set(x, "authorName", value.asInstanceOf[js.Any])
     

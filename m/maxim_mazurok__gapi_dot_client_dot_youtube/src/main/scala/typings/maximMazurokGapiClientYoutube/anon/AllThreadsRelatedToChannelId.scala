@@ -82,7 +82,8 @@ object AllThreadsRelatedToChannelId {
     __obj.asInstanceOf[AllThreadsRelatedToChannelId]
   }
   
-  extension [Self <: AllThreadsRelatedToChannelId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllThreadsRelatedToChannelId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

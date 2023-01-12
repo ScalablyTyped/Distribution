@@ -58,7 +58,8 @@ object AssociateFileSystemInput {
     __obj.asInstanceOf[AssociateFileSystemInput]
   }
   
-  extension [Self <: AssociateFileSystemInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateFileSystemInput] (val x: Self) extends AnyVal {
     
     inline def setAuditDestinationARN(value: AuditDestinationARN): Self = StObject.set(x, "AuditDestinationARN", value.asInstanceOf[js.Any])
     

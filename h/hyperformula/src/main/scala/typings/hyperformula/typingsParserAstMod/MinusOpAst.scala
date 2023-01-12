@@ -20,7 +20,8 @@ object MinusOpAst {
     __obj.asInstanceOf[MinusOpAst]
   }
   
-  extension [Self <: MinusOpAst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinusOpAst] (val x: Self) extends AnyVal {
     
     inline def setType(value: MINUS_OP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

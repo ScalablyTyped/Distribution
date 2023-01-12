@@ -17,7 +17,8 @@ object ILanguages {
     __obj.asInstanceOf[ILanguages]
   }
   
-  extension [Self <: ILanguages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILanguages] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

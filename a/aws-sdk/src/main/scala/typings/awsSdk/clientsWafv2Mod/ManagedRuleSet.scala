@@ -48,7 +48,8 @@ object ManagedRuleSet {
     __obj.asInstanceOf[ManagedRuleSet]
   }
   
-  extension [Self <: ManagedRuleSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedRuleSet] (val x: Self) extends AnyVal {
     
     inline def setARN(value: ResourceArn): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

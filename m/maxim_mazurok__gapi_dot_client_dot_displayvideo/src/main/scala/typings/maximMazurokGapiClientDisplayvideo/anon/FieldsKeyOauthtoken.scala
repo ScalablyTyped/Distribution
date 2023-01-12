@@ -54,7 +54,8 @@ object FieldsKeyOauthtoken {
     __obj.asInstanceOf[FieldsKeyOauthtoken]
   }
   
-  extension [Self <: FieldsKeyOauthtoken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldsKeyOauthtoken] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

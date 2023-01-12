@@ -76,7 +76,8 @@ object notyfDotmodelsMod {
       __obj.asInstanceOf[INotyfEventPayload]
     }
     
-    extension [Self <: INotyfEventPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INotyfEventPayload] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object notyfDotmodelsMod {
       __obj.asInstanceOf[IRenderedNotification]
     }
     
-    extension [Self <: IRenderedNotification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRenderedNotification] (val x: Self) extends AnyVal {
       
       inline def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       

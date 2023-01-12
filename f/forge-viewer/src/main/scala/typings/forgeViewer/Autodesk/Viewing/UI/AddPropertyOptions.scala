@@ -20,7 +20,8 @@ object AddPropertyOptions {
     __obj.asInstanceOf[AddPropertyOptions]
   }
   
-  extension [Self <: AddPropertyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddPropertyOptions] (val x: Self) extends AnyVal {
     
     inline def setLocalizeCategory(value: Boolean): Self = StObject.set(x, "localizeCategory", value.asInstanceOf[js.Any])
     

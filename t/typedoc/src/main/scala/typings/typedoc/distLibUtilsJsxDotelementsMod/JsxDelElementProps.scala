@@ -19,7 +19,8 @@ object JsxDelElementProps {
     __obj.asInstanceOf[JsxDelElementProps]
   }
   
-  extension [Self <: JsxDelElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxDelElementProps] (val x: Self) extends AnyVal {
     
     inline def setCite(value: String): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
     

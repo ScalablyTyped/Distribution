@@ -52,7 +52,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyAssertion]
     }
     
-    extension [Self <: ReadonlyAssertion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyAssertion] (val x: Self) extends AnyVal {
       
       inline def setAssertionType(value: String): Self = StObject.set(x, "assertionType", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object anon {
       __obj.asInstanceOf[TypeofLogger]
     }
     
-    extension [Self <: TypeofLogger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofLogger] (val x: Self) extends AnyVal {
       
       inline def setSilent(value: Logger): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     }
@@ -231,7 +233,8 @@ object anon {
       __obj.asInstanceOf[Typeoftypes]
     }
     
-    extension [Self <: Typeoftypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeoftypes] (val x: Self) extends AnyVal {
       
       inline def setBoolean(value: TypeofBoolean): Self = StObject.set(x, "Boolean", value.asInstanceOf[js.Any])
       

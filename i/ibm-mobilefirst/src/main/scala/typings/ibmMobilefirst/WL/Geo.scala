@@ -19,7 +19,8 @@ object Geo {
       __obj.asInstanceOf[Circle]
     }
     
-    extension [Self <: Circle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Circle] (val x: Self) extends AnyVal {
       
       inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object Geo {
       __obj.asInstanceOf[Coordinate]
     }
     
-    extension [Self <: Coordinate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coordinate] (val x: Self) extends AnyVal {
       
       inline def setLatitute(value: Double): Self = StObject.set(x, "latitute", value.asInstanceOf[js.Any])
       
@@ -57,7 +59,8 @@ object Geo {
       __obj.asInstanceOf[DistanceOptions]
     }
     
-    extension [Self <: DistanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DistanceOptions] (val x: Self) extends AnyVal {
       
       inline def setBufferZoneWidth(value: Double): Self = StObject.set(x, "bufferZoneWidth", value.asInstanceOf[js.Any])
     }
@@ -77,7 +80,8 @@ object Geo {
       __obj.asInstanceOf[InsideOutsideOptions]
     }
     
-    extension [Self <: InsideOutsideOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InsideOutsideOptions] (val x: Self) extends AnyVal {
       
       inline def setConfidenceLevel(value: String): Self = StObject.set(x, "confidenceLevel", value.asInstanceOf[js.Any])
     }

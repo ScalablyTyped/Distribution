@@ -28,7 +28,8 @@ object ConstructorProvider {
     __obj.asInstanceOf[ConstructorProvider]
   }
   
-  extension [Self <: ConstructorProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstructorProvider] (val x: Self) extends AnyVal {
     
     inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     

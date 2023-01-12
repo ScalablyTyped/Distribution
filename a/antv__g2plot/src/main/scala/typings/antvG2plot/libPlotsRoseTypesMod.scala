@@ -78,7 +78,8 @@ object libPlotsRoseTypesMod {
       __obj.asInstanceOf[RoseOptions]
     }
     
-    extension [Self <: RoseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoseOptions] (val x: Self) extends AnyVal {
       
       inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object GetHostReservationPurchasePreviewRequest {
     __obj.asInstanceOf[GetHostReservationPurchasePreviewRequest]
   }
   
-  extension [Self <: GetHostReservationPurchasePreviewRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHostReservationPurchasePreviewRequest] (val x: Self) extends AnyVal {
     
     inline def setHostIdSet(value: RequestHostIdSet): Self = StObject.set(x, "HostIdSet", value.asInstanceOf[js.Any])
     

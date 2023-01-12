@@ -23,7 +23,8 @@ object ListStudioSessionMappingsOutput {
     __obj.asInstanceOf[ListStudioSessionMappingsOutput]
   }
   
-  extension [Self <: ListStudioSessionMappingsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStudioSessionMappingsOutput] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

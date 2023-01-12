@@ -28,7 +28,8 @@ object ListAssessmentFrameworkShareRequestsRequest {
     __obj.asInstanceOf[ListAssessmentFrameworkShareRequestsRequest]
   }
   
-  extension [Self <: ListAssessmentFrameworkShareRequestsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAssessmentFrameworkShareRequestsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

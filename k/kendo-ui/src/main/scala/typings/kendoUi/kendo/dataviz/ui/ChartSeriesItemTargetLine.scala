@@ -15,7 +15,8 @@ object ChartSeriesItemTargetLine {
     __obj.asInstanceOf[ChartSeriesItemTargetLine]
   }
   
-  extension [Self <: ChartSeriesItemTargetLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartSeriesItemTargetLine] (val x: Self) extends AnyVal {
     
     inline def setWidth(value: Double | js.Function): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

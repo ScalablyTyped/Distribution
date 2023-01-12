@@ -22,7 +22,8 @@ object Crypto {
     __obj.asInstanceOf[Crypto]
   }
   
-  extension [Self <: Crypto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Crypto] (val x: Self) extends AnyVal {
     
     inline def setRsaPublicKeyToPEM(value: (String, String) => String): Self = StObject.set(x, "rsaPublicKeyToPEM", js.Any.fromFunction2(value))
   }

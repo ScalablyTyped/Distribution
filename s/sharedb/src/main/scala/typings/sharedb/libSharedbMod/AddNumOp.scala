@@ -19,7 +19,8 @@ object AddNumOp {
     __obj.asInstanceOf[AddNumOp]
   }
   
-  extension [Self <: AddNumOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddNumOp] (val x: Self) extends AnyVal {
     
     inline def setNa(value: Double): Self = StObject.set(x, "na", value.asInstanceOf[js.Any])
     

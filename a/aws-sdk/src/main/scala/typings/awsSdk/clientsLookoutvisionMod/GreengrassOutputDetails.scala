@@ -28,7 +28,8 @@ object GreengrassOutputDetails {
     __obj.asInstanceOf[GreengrassOutputDetails]
   }
   
-  extension [Self <: GreengrassOutputDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GreengrassOutputDetails] (val x: Self) extends AnyVal {
     
     inline def setComponentName(value: ComponentName): Self = StObject.set(x, "ComponentName", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object SchemaAttributeType {
     __obj.asInstanceOf[SchemaAttributeType]
   }
   
-  extension [Self <: SchemaAttributeType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaAttributeType] (val x: Self) extends AnyVal {
     
     inline def setAttributeDataType(value: AttributeDataType): Self = StObject.set(x, "AttributeDataType", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object CIMGeometricEffectCut {
     __obj.asInstanceOf[CIMGeometricEffectCut]
   }
   
-  extension [Self <: CIMGeometricEffectCut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMGeometricEffectCut] (val x: Self) extends AnyVal {
     
     inline def setBeginCut(value: Double): Self = StObject.set(x, "beginCut", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object RowCollapsed {
     __obj.asInstanceOf[RowCollapsed[TEntity]]
   }
   
-  extension [Self <: RowCollapsed[?], TEntity](x: Self & RowCollapsed[TEntity]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowCollapsed[?], TEntity] (val x: Self & RowCollapsed[TEntity]) extends AnyVal {
     
     inline def setRowCollapsed(value: (IScope, rowCollapsedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowCollapsed", js.Any.fromFunction2(value))
     

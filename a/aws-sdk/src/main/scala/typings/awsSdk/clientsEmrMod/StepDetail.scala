@@ -23,7 +23,8 @@ object StepDetail {
     __obj.asInstanceOf[StepDetail]
   }
   
-  extension [Self <: StepDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepDetail] (val x: Self) extends AnyVal {
     
     inline def setExecutionStatusDetail(value: StepExecutionStatusDetail): Self = StObject.set(x, "ExecutionStatusDetail", value.asInstanceOf[js.Any])
     

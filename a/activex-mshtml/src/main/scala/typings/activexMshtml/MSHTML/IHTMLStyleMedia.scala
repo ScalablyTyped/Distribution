@@ -22,7 +22,8 @@ object IHTMLStyleMedia {
     __obj.asInstanceOf[IHTMLStyleMedia]
   }
   
-  extension [Self <: IHTMLStyleMedia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHTMLStyleMedia] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotIHTMLStyleMedia_typekey(value: IHTMLStyleMedia): Self = StObject.set(x, "MSHTML.IHTMLStyleMedia_typekey", value.asInstanceOf[js.Any])
     

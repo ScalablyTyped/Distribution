@@ -116,7 +116,8 @@ object dxDiagram {
       __obj.asInstanceOf[CustomCommandEvent]
     }
     
-    extension [Self <: CustomCommandEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomCommandEvent] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: dxDiagram): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object dxDiagram {
       __obj.asInstanceOf[CustomShapeTemplateData]
     }
     
-    extension [Self <: CustomShapeTemplateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomShapeTemplateData] (val x: Self) extends AnyVal {
       
       inline def setItem(value: dxDiagramShape): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }
@@ -154,7 +156,8 @@ object dxDiagram {
       __obj.asInstanceOf[CustomShapeToolboxTemplateData]
     }
     
-    extension [Self <: CustomShapeToolboxTemplateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomShapeToolboxTemplateData] (val x: Self) extends AnyVal {
       
       inline def setItem(value: dxDiagramShape): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }
@@ -659,7 +662,8 @@ object dxDiagram {
       __obj.asInstanceOf[ItemClickEvent]
     }
     
-    extension [Self <: ItemClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemClickEvent] (val x: Self) extends AnyVal {
       
       inline def setItem(value: Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }
@@ -678,7 +682,8 @@ object dxDiagram {
       __obj.asInstanceOf[ItemDblClickEvent]
     }
     
-    extension [Self <: ItemDblClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemDblClickEvent] (val x: Self) extends AnyVal {
       
       inline def setItem(value: Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }
@@ -723,7 +728,8 @@ object dxDiagram {
       __obj.asInstanceOf[RequestEditOperationEvent]
     }
     
-    extension [Self <: RequestEditOperationEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestEditOperationEvent] (val x: Self) extends AnyVal {
       
       inline def setAllowed(value: Boolean): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
       
@@ -756,7 +762,8 @@ object dxDiagram {
       __obj.asInstanceOf[RequestLayoutUpdateEvent]
     }
     
-    extension [Self <: RequestLayoutUpdateEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestLayoutUpdateEvent] (val x: Self) extends AnyVal {
       
       inline def setAllowed(value: Boolean): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
       
@@ -781,7 +788,8 @@ object dxDiagram {
       __obj.asInstanceOf[SelectionChangedEvent]
     }
     
-    extension [Self <: SelectionChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       

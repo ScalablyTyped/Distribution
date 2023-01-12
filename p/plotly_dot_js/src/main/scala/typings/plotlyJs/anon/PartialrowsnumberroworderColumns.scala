@@ -51,7 +51,8 @@ object PartialrowsnumberroworderColumns {
     __obj.asInstanceOf[PartialrowsnumberroworderColumns]
   }
   
-  extension [Self <: PartialrowsnumberroworderColumns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialrowsnumberroworderColumns] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

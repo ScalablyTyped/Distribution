@@ -34,7 +34,8 @@ object ConfigureLogsResponse {
     __obj.asInstanceOf[ConfigureLogsResponse]
   }
   
-  extension [Self <: ConfigureLogsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigureLogsResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

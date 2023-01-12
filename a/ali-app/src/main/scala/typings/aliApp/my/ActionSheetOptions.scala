@@ -46,7 +46,8 @@ object ActionSheetOptions {
     __obj.asInstanceOf[ActionSheetOptions]
   }
   
-  extension [Self <: ActionSheetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionSheetOptions] (val x: Self) extends AnyVal {
     
     inline def setBadges(value: js.Array[PartialBadge]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
     

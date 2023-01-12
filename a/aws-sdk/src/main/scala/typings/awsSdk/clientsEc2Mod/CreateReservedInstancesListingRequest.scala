@@ -38,7 +38,8 @@ object CreateReservedInstancesListingRequest {
     __obj.asInstanceOf[CreateReservedInstancesListingRequest]
   }
   
-  extension [Self <: CreateReservedInstancesListingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateReservedInstancesListingRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

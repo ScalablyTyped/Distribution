@@ -24,7 +24,8 @@ object PartialStyleImageMetadata {
     __obj.asInstanceOf[PartialStyleImageMetadata]
   }
   
-  extension [Self <: PartialStyleImageMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleImageMetadata] (val x: Self) extends AnyVal {
     
     inline def setContent(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

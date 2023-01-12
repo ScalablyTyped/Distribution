@@ -17,7 +17,8 @@ object RangeApiWithTimeZone {
     __obj.asInstanceOf[RangeApiWithTimeZone]
   }
   
-  extension [Self <: RangeApiWithTimeZone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeApiWithTimeZone] (val x: Self) extends AnyVal {
     
     inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
   }

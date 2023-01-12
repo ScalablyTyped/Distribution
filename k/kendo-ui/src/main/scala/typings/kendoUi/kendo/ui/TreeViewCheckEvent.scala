@@ -18,7 +18,8 @@ object TreeViewCheckEvent {
     __obj.asInstanceOf[TreeViewCheckEvent]
   }
   
-  extension [Self <: TreeViewCheckEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeViewCheckEvent] (val x: Self) extends AnyVal {
     
     inline def setNode(value: Element): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     

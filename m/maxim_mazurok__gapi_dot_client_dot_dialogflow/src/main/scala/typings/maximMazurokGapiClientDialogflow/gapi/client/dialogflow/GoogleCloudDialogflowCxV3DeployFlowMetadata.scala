@@ -16,7 +16,8 @@ object GoogleCloudDialogflowCxV3DeployFlowMetadata {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3DeployFlowMetadata]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3DeployFlowMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3DeployFlowMetadata] (val x: Self) extends AnyVal {
     
     inline def setTestErrors(value: js.Array[GoogleCloudDialogflowCxV3TestError]): Self = StObject.set(x, "testErrors", value.asInstanceOf[js.Any])
     

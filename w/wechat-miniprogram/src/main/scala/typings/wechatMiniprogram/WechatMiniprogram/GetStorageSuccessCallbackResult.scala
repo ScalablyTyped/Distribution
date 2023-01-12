@@ -18,7 +18,8 @@ object GetStorageSuccessCallbackResult {
     __obj.asInstanceOf[GetStorageSuccessCallbackResult[T]]
   }
   
-  extension [Self <: GetStorageSuccessCallbackResult[?], T](x: Self & GetStorageSuccessCallbackResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStorageSuccessCallbackResult[?], T] (val x: Self & GetStorageSuccessCallbackResult[T]) extends AnyVal {
     
     inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

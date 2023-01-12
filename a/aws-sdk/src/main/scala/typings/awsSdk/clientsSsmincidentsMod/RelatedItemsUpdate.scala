@@ -23,7 +23,8 @@ object RelatedItemsUpdate {
     __obj.asInstanceOf[RelatedItemsUpdate]
   }
   
-  extension [Self <: RelatedItemsUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedItemsUpdate] (val x: Self) extends AnyVal {
     
     inline def setItemToAdd(value: RelatedItem): Self = StObject.set(x, "itemToAdd", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GoogleCloudVisionV1p1beta1TextAnnotationDetectedLanguage {
     __obj.asInstanceOf[GoogleCloudVisionV1p1beta1TextAnnotationDetectedLanguage]
   }
   
-  extension [Self <: GoogleCloudVisionV1p1beta1TextAnnotationDetectedLanguage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p1beta1TextAnnotationDetectedLanguage] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     

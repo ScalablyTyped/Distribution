@@ -35,7 +35,8 @@ object ConsentStore {
     __obj.asInstanceOf[ConsentStore]
   }
   
-  extension [Self <: ConsentStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsentStore] (val x: Self) extends AnyVal {
     
     inline def setDefaultConsentTtl(value: String): Self = StObject.set(x, "defaultConsentTtl", value.asInstanceOf[js.Any])
     

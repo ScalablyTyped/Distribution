@@ -23,7 +23,8 @@ object PartialWithWidthOptions {
     __obj.asInstanceOf[PartialWithWidthOptions]
   }
   
-  extension [Self <: PartialWithWidthOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialWithWidthOptions] (val x: Self) extends AnyVal {
     
     inline def setInitialWidth(value: Breakpoint): Self = StObject.set(x, "initialWidth", value.asInstanceOf[js.Any])
     

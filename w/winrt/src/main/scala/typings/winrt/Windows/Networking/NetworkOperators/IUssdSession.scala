@@ -18,7 +18,8 @@ object IUssdSession {
     __obj.asInstanceOf[IUssdSession]
   }
   
-  extension [Self <: IUssdSession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUssdSession] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

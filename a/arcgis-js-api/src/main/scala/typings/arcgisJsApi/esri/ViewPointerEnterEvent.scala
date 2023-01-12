@@ -47,7 +47,8 @@ object ViewPointerEnterEvent {
     __obj.asInstanceOf[ViewPointerEnterEvent]
   }
   
-  extension [Self <: ViewPointerEnterEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewPointerEnterEvent] (val x: Self) extends AnyVal {
     
     inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Controls {
     __obj.asInstanceOf[Controls]
   }
   
-  extension [Self <: Controls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Controls] (val x: Self) extends AnyVal {
     
     inline def setControls(value: String): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     

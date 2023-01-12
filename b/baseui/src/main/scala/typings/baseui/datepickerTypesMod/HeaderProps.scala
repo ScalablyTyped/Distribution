@@ -19,7 +19,8 @@ object HeaderProps {
     __obj.asInstanceOf[HeaderProps[T]]
   }
   
-  extension [Self <: HeaderProps[?], T](x: Self & HeaderProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeaderProps[?], T] (val x: Self & HeaderProps[T]) extends AnyVal {
     
     inline def setDate(value: T): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object TypeofMaskEdit {
     __obj.asInstanceOf[TypeofMaskEdit]
   }
   
-  extension [Self <: TypeofMaskEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofMaskEdit] (val x: Self) extends AnyVal {
     
     inline def setFn(value: MaskEdit): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

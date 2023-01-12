@@ -129,7 +129,8 @@ object PartialIComboBoxOptionSty {
     __obj.asInstanceOf[PartialIComboBoxOptionSty]
   }
   
-  extension [Self <: PartialIComboBoxOptionSty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIComboBoxOptionSty] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: IStyle): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -216,7 +216,8 @@ object IContextItem {
     __obj.asInstanceOf[IContextItem]
   }
   
-  extension [Self <: IContextItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContextItem] (val x: Self) extends AnyVal {
     
     inline def setAddCls(value: /* newCls */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addCls", js.Any.fromFunction1(value))
     

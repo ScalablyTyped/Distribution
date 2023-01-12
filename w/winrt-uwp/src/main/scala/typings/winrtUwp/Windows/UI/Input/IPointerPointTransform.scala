@@ -33,7 +33,8 @@ object IPointerPointTransform {
     __obj.asInstanceOf[IPointerPointTransform]
   }
   
-  extension [Self <: IPointerPointTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPointerPointTransform] (val x: Self) extends AnyVal {
     
     inline def setInverse(value: IPointerPointTransform): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     

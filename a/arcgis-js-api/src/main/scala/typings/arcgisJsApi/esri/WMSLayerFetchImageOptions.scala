@@ -35,7 +35,8 @@ object WMSLayerFetchImageOptions {
     __obj.asInstanceOf[WMSLayerFetchImageOptions]
   }
   
-  extension [Self <: WMSLayerFetchImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WMSLayerFetchImageOptions] (val x: Self) extends AnyVal {
     
     inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
     

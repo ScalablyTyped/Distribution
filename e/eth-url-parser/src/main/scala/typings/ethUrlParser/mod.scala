@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[BuildInput]
     }
     
-    extension [Self <: BuildInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuildInput] (val x: Self) extends AnyVal {
       
       inline def setChain_id(value: /* template literal string: ${number} */ String): Self = StObject.set(x, "chain_id", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object mod {
       __obj.asInstanceOf[ParseOutput]
     }
     
-    extension [Self <: ParseOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOutput] (val x: Self) extends AnyVal {
       
       inline def setChain_id(value: /* template literal string: ${number} */ String): Self = StObject.set(x, "chain_id", value.asInstanceOf[js.Any])
       

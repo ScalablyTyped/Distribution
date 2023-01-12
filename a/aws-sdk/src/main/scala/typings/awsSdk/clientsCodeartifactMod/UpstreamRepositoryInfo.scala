@@ -18,7 +18,8 @@ object UpstreamRepositoryInfo {
     __obj.asInstanceOf[UpstreamRepositoryInfo]
   }
   
-  extension [Self <: UpstreamRepositoryInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpstreamRepositoryInfo] (val x: Self) extends AnyVal {
     
     inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     

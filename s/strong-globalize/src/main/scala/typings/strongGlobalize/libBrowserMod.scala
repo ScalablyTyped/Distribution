@@ -260,7 +260,8 @@ object libBrowserMod {
       __obj.asInstanceOf[StrongGlobalize]
     }
     
-    extension [Self <: StrongGlobalize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrongGlobalize] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: /* repeated */ Any => Any): Self = StObject.set(x, "alert", js.Any.fromFunction1(value))
       

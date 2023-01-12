@@ -41,7 +41,8 @@ object distDisplayObjectsImageMod {
       __obj.asInstanceOf[ImageStyleProps]
     }
     
-    extension [Self <: ImageStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageStyleProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object distDisplayObjectsImageMod {
       __obj.asInstanceOf[ParsedImageStyleProps]
     }
     
-    extension [Self <: ParsedImageStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedImageStyleProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

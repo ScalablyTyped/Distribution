@@ -2762,7 +2762,8 @@ object mod {
       __obj.asInstanceOf[HubInterface]
     }
     
-    extension [Self <: HubInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HubInterface] (val x: Self) extends AnyVal {
       
       inline def setAddHelper(value: String => Any): Self = StObject.set(x, "addHelper", js.Any.fromFunction1(value))
       
@@ -3703,7 +3704,8 @@ object mod {
       __obj.asInstanceOf[TraversalContext]
     }
     
-    extension [Self <: TraversalContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraversalContext] (val x: Self) extends AnyVal {
       
       inline def setOpts(value: Any): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
@@ -3730,7 +3732,8 @@ object mod {
       __obj.asInstanceOf[TraverseOptions[S]]
     }
     
-    extension [Self <: TraverseOptions[?], S](x: Self & TraverseOptions[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraverseOptions[?], S] (val x: Self & TraverseOptions[S]) extends AnyVal {
       
       inline def setNoScope(value: Boolean): Self = StObject.set(x, "noScope", value.asInstanceOf[js.Any])
       
@@ -3766,7 +3769,8 @@ object mod {
       __obj.asInstanceOf[VisitNodeObject[S, P]]
     }
     
-    extension [Self <: VisitNodeObject[?, ?], S, P /* <: Node */](x: Self & (VisitNodeObject[S, P])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisitNodeObject[?, ?], S, P /* <: Node */] (val x: Self & (VisitNodeObject[S, P])) extends AnyVal {
       
       inline def setBlacklist(value: js.Array[NodeType]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       
@@ -4407,7 +4411,8 @@ object mod {
       __obj.asInstanceOf[Visitor[S]]
     }
     
-    extension [Self <: Visitor[?], S](x: Self & Visitor[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Visitor[?], S] (val x: Self & Visitor[S]) extends AnyVal {
       
       inline def setAccessor(value: VisitNode[S, Accessor]): Self = StObject.set(x, "Accessor", value.asInstanceOf[js.Any])
       

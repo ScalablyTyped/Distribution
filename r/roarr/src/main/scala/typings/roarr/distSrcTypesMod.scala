@@ -390,7 +390,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[Message[T]]
     }
     
-    extension [Self <: Message[?], T](x: Self & Message[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message[?], T] (val x: Self & Message[T]) extends AnyVal {
       
       inline def setContext(value: T): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -461,7 +462,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[NestedAsyncLocalContext]
     }
     
-    extension [Self <: NestedAsyncLocalContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NestedAsyncLocalContext] (val x: Self) extends AnyVal {
       
       inline def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
       
@@ -497,7 +499,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[RoarrGlobalState]
     }
     
-    extension [Self <: RoarrGlobalState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoarrGlobalState] (val x: Self) extends AnyVal {
       
       inline def setAsyncLocalStorage(value: AsyncLocalStorage[AsyncLocalContext]): Self = StObject.set(x, "asyncLocalStorage", value.asInstanceOf[js.Any])
       
@@ -539,7 +542,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[TopLevelAsyncLocalContext]
     }
     
-    extension [Self <: TopLevelAsyncLocalContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopLevelAsyncLocalContext] (val x: Self) extends AnyVal {
       
       inline def setMessageContext(value: StringDictionary[JsonValue]): Self = StObject.set(x, "messageContext", value.asInstanceOf[js.Any])
       

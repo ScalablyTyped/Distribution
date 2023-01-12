@@ -25,7 +25,8 @@ object ProjectionParametersInput {
     __obj.asInstanceOf[ProjectionParametersInput]
   }
   
-  extension [Self <: ProjectionParametersInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectionParametersInput] (val x: Self) extends AnyVal {
     
     inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     

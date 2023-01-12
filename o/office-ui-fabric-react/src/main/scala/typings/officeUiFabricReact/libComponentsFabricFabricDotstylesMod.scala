@@ -27,7 +27,8 @@ object libComponentsFabricFabricDotstylesMod {
       __obj.asInstanceOf[IFabricClassNames]
     }
     
-    extension [Self <: IFabricClassNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFabricClassNames] (val x: Self) extends AnyVal {
       
       inline def setBodyThemed(value: String): Self = StObject.set(x, "bodyThemed", value.asInstanceOf[js.Any])
       

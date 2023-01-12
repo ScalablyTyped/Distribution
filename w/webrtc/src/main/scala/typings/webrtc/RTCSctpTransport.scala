@@ -18,7 +18,8 @@ object RTCSctpTransport {
     __obj.asInstanceOf[RTCSctpTransport]
   }
   
-  extension [Self <: RTCSctpTransport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCSctpTransport] (val x: Self) extends AnyVal {
     
     inline def setMaxMessageSize(value: Double): Self = StObject.set(x, "maxMessageSize", value.asInstanceOf[js.Any])
     

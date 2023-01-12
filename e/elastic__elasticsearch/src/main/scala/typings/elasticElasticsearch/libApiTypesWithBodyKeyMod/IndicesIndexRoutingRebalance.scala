@@ -15,7 +15,8 @@ object IndicesIndexRoutingRebalance {
     __obj.asInstanceOf[IndicesIndexRoutingRebalance]
   }
   
-  extension [Self <: IndicesIndexRoutingRebalance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesIndexRoutingRebalance] (val x: Self) extends AnyVal {
     
     inline def setEnable(value: IndicesIndexRoutingRebalanceOptions): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
   }

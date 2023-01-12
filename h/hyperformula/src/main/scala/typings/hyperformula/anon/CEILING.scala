@@ -58,7 +58,8 @@ object CEILING {
     __obj.asInstanceOf[CEILING]
   }
   
-  extension [Self <: CEILING](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CEILING] (val x: Self) extends AnyVal {
     
     inline def setCEILING(value: Method): Self = StObject.set(x, "CEILING", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object RejectAttributes {
     __obj.asInstanceOf[RejectAttributes]
   }
   
-  extension [Self <: RejectAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RejectAttributes] (val x: Self) extends AnyVal {
     
     inline def setReason(value: RejectReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

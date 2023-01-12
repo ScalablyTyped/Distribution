@@ -23,7 +23,8 @@ object TouchEvent {
     __obj.asInstanceOf[TouchEvent]
   }
   
-  extension [Self <: TouchEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchEvent] (val x: Self) extends AnyVal {
     
     inline def setPage_x(value: Double): Self = StObject.set(x, "page_x", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object SharedNegativeKeyword {
     __obj.asInstanceOf[SharedNegativeKeyword]
   }
   
-  extension [Self <: SharedNegativeKeyword](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedNegativeKeyword] (val x: Self) extends AnyVal {
     
     inline def setGetMatchType(value: () => MatchType): Self = StObject.set(x, "getMatchType", js.Any.fromFunction0(value))
     

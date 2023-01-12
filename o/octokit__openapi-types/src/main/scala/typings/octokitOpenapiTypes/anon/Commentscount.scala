@@ -121,7 +121,8 @@ object Commentscount {
     __obj.asInstanceOf[Commentscount]
   }
   
-  extension [Self <: Commentscount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Commentscount] (val x: Self) extends AnyVal {
     
     inline def setAuthor(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any

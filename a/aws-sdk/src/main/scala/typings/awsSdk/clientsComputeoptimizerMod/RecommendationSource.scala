@@ -23,7 +23,8 @@ object RecommendationSource {
     __obj.asInstanceOf[RecommendationSource]
   }
   
-  extension [Self <: RecommendationSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationSource] (val x: Self) extends AnyVal {
     
     inline def setRecommendationSourceArn(value: RecommendationSourceArn): Self = StObject.set(x, "recommendationSourceArn", value.asInstanceOf[js.Any])
     

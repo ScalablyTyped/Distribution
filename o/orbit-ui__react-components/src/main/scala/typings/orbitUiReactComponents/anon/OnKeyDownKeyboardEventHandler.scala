@@ -18,7 +18,8 @@ object OnKeyDownKeyboardEventHandler {
     __obj.asInstanceOf[OnKeyDownKeyboardEventHandler]
   }
   
-  extension [Self <: OnKeyDownKeyboardEventHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnKeyDownKeyboardEventHandler] (val x: Self) extends AnyVal {
     
     inline def setOnKeyDown(value: KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
   }

@@ -43,7 +43,8 @@ object CodeSystemFilter {
     __obj.asInstanceOf[CodeSystemFilter]
   }
   
-  extension [Self <: CodeSystemFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeSystemFilter] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

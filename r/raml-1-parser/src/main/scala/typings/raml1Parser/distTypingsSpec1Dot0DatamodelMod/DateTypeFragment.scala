@@ -100,7 +100,8 @@ object DateTypeFragment {
     __obj.asInstanceOf[DateTypeFragment]
   }
   
-  extension [Self <: DateTypeFragment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTypeFragment] (val x: Self) extends AnyVal {
     
     inline def setAllowedTargets(value: js.Array[String]): Self = StObject.set(x, "allowedTargets", value.asInstanceOf[js.Any])
     

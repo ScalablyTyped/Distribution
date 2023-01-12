@@ -61,7 +61,8 @@ object BackupRun {
     __obj.asInstanceOf[BackupRun]
   }
   
-  extension [Self <: BackupRun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackupRun] (val x: Self) extends AnyVal {
     
     inline def setBackupKind(value: String): Self = StObject.set(x, "backupKind", value.asInstanceOf[js.Any])
     

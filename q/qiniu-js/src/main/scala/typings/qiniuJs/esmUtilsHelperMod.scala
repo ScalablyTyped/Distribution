@@ -81,7 +81,8 @@ object esmUtilsHelperMod {
       __obj.asInstanceOf[PutPolicy]
     }
     
-    extension [Self <: PutPolicy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutPolicy] (val x: Self) extends AnyVal {
       
       inline def setAssessKey(value: String): Self = StObject.set(x, "assessKey", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object esmUtilsHelperMod {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: BodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -149,7 +151,8 @@ object esmUtilsHelperMod {
       __obj.asInstanceOf[ResponseSuccess[T]]
     }
     
-    extension [Self <: ResponseSuccess[?], T](x: Self & ResponseSuccess[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseSuccess[?], T] (val x: Self & ResponseSuccess[T]) extends AnyVal {
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

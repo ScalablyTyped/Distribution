@@ -34,7 +34,8 @@ object PopoverProps {
     __obj.asInstanceOf[PopoverProps]
   }
   
-  extension [Self <: PopoverProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopoverProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

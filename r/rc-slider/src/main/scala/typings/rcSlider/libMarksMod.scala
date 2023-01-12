@@ -28,7 +28,8 @@ object libMarksMod {
       __obj.asInstanceOf[InternalMarkObj]
     }
     
-    extension [Self <: InternalMarkObj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalMarkObj] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -47,7 +48,8 @@ object libMarksMod {
       __obj.asInstanceOf[MarkObj]
     }
     
-    extension [Self <: MarkObj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkObj] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object libMarksMod {
       __obj.asInstanceOf[MarksProps]
     }
     
-    extension [Self <: MarksProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarksProps] (val x: Self) extends AnyVal {
       
       inline def setMarks(value: js.Array[InternalMarkObj]): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
       

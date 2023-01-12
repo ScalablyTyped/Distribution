@@ -15,7 +15,8 @@ object FieldField {
     __obj.asInstanceOf[FieldField]
   }
   
-  extension [Self <: FieldField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldField] (val x: Self) extends AnyVal {
     
     inline def setField(value: typings.vegaTypings.typesSpecEncodeMod.Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
   }

@@ -53,7 +53,8 @@ object CopyOptionsBase {
     __obj.asInstanceOf[CopyOptionsBase]
   }
   
-  extension [Self <: CopyOptionsBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyOptionsBase] (val x: Self) extends AnyVal {
     
     inline def setDereference(value: Boolean): Self = StObject.set(x, "dereference", value.asInstanceOf[js.Any])
     

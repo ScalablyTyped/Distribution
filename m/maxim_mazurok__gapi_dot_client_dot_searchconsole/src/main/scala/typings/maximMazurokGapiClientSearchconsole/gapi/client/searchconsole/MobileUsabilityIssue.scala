@@ -22,7 +22,8 @@ object MobileUsabilityIssue {
     __obj.asInstanceOf[MobileUsabilityIssue]
   }
   
-  extension [Self <: MobileUsabilityIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileUsabilityIssue] (val x: Self) extends AnyVal {
     
     inline def setIssueType(value: String): Self = StObject.set(x, "issueType", value.asInstanceOf[js.Any])
     

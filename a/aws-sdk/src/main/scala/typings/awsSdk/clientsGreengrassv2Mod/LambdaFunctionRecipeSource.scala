@@ -43,7 +43,8 @@ object LambdaFunctionRecipeSource {
     __obj.asInstanceOf[LambdaFunctionRecipeSource]
   }
   
-  extension [Self <: LambdaFunctionRecipeSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaFunctionRecipeSource] (val x: Self) extends AnyVal {
     
     inline def setComponentDependencies(value: ComponentDependencyMap): Self = StObject.set(x, "componentDependencies", value.asInstanceOf[js.Any])
     

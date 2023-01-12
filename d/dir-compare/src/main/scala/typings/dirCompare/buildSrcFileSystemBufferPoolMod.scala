@@ -43,7 +43,8 @@ object buildSrcFileSystemBufferPoolMod {
       __obj.asInstanceOf[BufferPair]
     }
     
-    extension [Self <: BufferPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferPair] (val x: Self) extends AnyVal {
       
       inline def setBuf1(value: Buffer): Self = StObject.set(x, "buf1", value.asInstanceOf[js.Any])
       

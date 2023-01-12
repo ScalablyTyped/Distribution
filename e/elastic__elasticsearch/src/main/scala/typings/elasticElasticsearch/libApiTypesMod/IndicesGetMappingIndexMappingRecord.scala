@@ -17,7 +17,8 @@ object IndicesGetMappingIndexMappingRecord {
     __obj.asInstanceOf[IndicesGetMappingIndexMappingRecord]
   }
   
-  extension [Self <: IndicesGetMappingIndexMappingRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesGetMappingIndexMappingRecord] (val x: Self) extends AnyVal {
     
     inline def setItem(value: MappingTypeMapping): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

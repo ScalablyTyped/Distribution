@@ -39,7 +39,8 @@ object VertexAddEventInfo {
     __obj.asInstanceOf[VertexAddEventInfo]
   }
   
-  extension [Self <: VertexAddEventInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VertexAddEventInfo] (val x: Self) extends AnyVal {
     
     inline def setAdded(value: js.Array[Double]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object Core {
       __obj.asInstanceOf[VariablePhotoCapturedEventArgs]
     }
     
-    extension [Self <: VariablePhotoCapturedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariablePhotoCapturedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCaptureTimeOffset(value: Double): Self = StObject.set(x, "captureTimeOffset", value.asInstanceOf[js.Any])
       

@@ -53,7 +53,8 @@ object SpotOptionsRequest {
     __obj.asInstanceOf[SpotOptionsRequest]
   }
   
-  extension [Self <: SpotOptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpotOptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setAllocationStrategy(value: SpotAllocationStrategy): Self = StObject.set(x, "AllocationStrategy", value.asInstanceOf[js.Any])
     

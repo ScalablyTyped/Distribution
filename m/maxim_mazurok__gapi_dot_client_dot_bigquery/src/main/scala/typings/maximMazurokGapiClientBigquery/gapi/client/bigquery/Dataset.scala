@@ -97,7 +97,8 @@ object Dataset {
     __obj.asInstanceOf[Dataset]
   }
   
-  extension [Self <: Dataset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dataset] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: js.Array[typings.maximMazurokGapiClientBigquery.anon.Dataset]): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object CommonQueryFilters {
     __obj.asInstanceOf[CommonQueryFilters]
   }
   
-  extension [Self <: CommonQueryFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonQueryFilters] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

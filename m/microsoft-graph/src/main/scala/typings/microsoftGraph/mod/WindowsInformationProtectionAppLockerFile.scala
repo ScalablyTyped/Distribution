@@ -27,7 +27,8 @@ object WindowsInformationProtectionAppLockerFile {
     __obj.asInstanceOf[WindowsInformationProtectionAppLockerFile]
   }
   
-  extension [Self <: WindowsInformationProtectionAppLockerFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsInformationProtectionAppLockerFile] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

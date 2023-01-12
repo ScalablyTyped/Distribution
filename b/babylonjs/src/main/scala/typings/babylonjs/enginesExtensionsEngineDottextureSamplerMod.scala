@@ -27,7 +27,8 @@ object enginesExtensionsEngineDottextureSamplerMod {
         __obj.asInstanceOf[ThinEngine]
       }
       
-      extension [Self <: ThinEngine](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ThinEngine] (val x: Self) extends AnyVal {
         
         inline def setSetTextureSampler(value: (String, Nullable[TextureSampler]) => Unit): Self = StObject.set(x, "setTextureSampler", js.Any.fromFunction2(value))
       }

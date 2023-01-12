@@ -88,7 +88,8 @@ object ClusterMetadata {
     __obj.asInstanceOf[ClusterMetadata]
   }
   
-  extension [Self <: ClusterMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterMetadata] (val x: Self) extends AnyVal {
     
     inline def setAddressId(value: AddressId): Self = StObject.set(x, "AddressId", value.asInstanceOf[js.Any])
     

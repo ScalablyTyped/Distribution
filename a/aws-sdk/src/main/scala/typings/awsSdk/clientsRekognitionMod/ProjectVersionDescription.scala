@@ -88,7 +88,8 @@ object ProjectVersionDescription {
     __obj.asInstanceOf[ProjectVersionDescription]
   }
   
-  extension [Self <: ProjectVersionDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectVersionDescription] (val x: Self) extends AnyVal {
     
     inline def setBillableTrainingTimeInSeconds(value: ULong): Self = StObject.set(x, "BillableTrainingTimeInSeconds", value.asInstanceOf[js.Any])
     

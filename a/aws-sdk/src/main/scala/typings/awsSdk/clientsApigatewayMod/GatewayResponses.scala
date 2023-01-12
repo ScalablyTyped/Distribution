@@ -20,7 +20,8 @@ object GatewayResponses {
     __obj.asInstanceOf[GatewayResponses]
   }
   
-  extension [Self <: GatewayResponses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GatewayResponses] (val x: Self) extends AnyVal {
     
     inline def setItems(value: ListOfGatewayResponse): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

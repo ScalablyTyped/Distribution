@@ -17,7 +17,8 @@ object NxCellPosition {
     __obj.asInstanceOf[NxCellPosition]
   }
   
-  extension [Self <: NxCellPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NxCellPosition] (val x: Self) extends AnyVal {
     
     inline def setQx(value: Double): Self = StObject.set(x, "qx", value.asInstanceOf[js.Any])
     

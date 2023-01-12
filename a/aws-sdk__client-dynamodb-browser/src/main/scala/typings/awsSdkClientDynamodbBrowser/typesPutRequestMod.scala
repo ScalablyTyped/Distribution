@@ -23,7 +23,8 @@ object typesPutRequestMod {
       __obj.asInstanceOf[PutRequest]
     }
     
-    extension [Self <: PutRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutRequest] (val x: Self) extends AnyVal {
       
       inline def setItem(value: StringDictionary[AttributeValue] | (js.Iterable[js.Tuple2[String, AttributeValue]])): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object typesPutRequestMod {
       __obj.asInstanceOf[UnmarshalledPutRequest]
     }
     
-    extension [Self <: UnmarshalledPutRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledPutRequest] (val x: Self) extends AnyVal {
       
       inline def setItem(value: StringDictionary[UnmarshalledAttributeValue]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     }

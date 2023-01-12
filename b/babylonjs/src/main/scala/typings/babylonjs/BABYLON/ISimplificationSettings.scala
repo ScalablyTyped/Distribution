@@ -28,7 +28,8 @@ object ISimplificationSettings {
     __obj.asInstanceOf[ISimplificationSettings]
   }
   
-  extension [Self <: ISimplificationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISimplificationSettings] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

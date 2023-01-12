@@ -32,7 +32,8 @@ object tilegrid {
       __obj.asInstanceOf[TileGridOptions]
     }
     
-    extension [Self <: TileGridOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileGridOptions] (val x: Self) extends AnyVal {
       
       inline def setExtent(value: Extent_): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object tilegrid {
       __obj.asInstanceOf[WMTSOptions]
     }
     
-    extension [Self <: WMTSOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WMTSOptions] (val x: Self) extends AnyVal {
       
       inline def setExtent(value: Extent_): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object tilegrid {
       __obj.asInstanceOf[XYZOptions]
     }
     
-    extension [Self <: XYZOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XYZOptions] (val x: Self) extends AnyVal {
       
       inline def setExtent(value: Extent_): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       

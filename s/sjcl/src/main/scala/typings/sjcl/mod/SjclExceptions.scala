@@ -27,7 +27,8 @@ object SjclExceptions {
     __obj.asInstanceOf[SjclExceptions]
   }
   
-  extension [Self <: SjclExceptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SjclExceptions] (val x: Self) extends AnyVal {
     
     inline def setBug(value: SjclExceptionFactory): Self = StObject.set(x, "bug", value.asInstanceOf[js.Any])
     

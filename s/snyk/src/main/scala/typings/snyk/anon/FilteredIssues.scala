@@ -18,7 +18,8 @@ object FilteredIssues {
     __obj.asInstanceOf[FilteredIssues]
   }
   
-  extension [Self <: FilteredIssues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilteredIssues] (val x: Self) extends AnyVal {
     
     inline def setFilteredIssues(value: js.Array[FormattedResult]): Self = StObject.set(x, "filteredIssues", value.asInstanceOf[js.Any])
     

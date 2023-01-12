@@ -27,7 +27,8 @@ object TextColumnBoolExp {
     __obj.asInstanceOf[TextColumnBoolExp]
   }
   
-  extension [Self <: TextColumnBoolExp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextColumnBoolExp] (val x: Self) extends AnyVal {
     
     inline def set_ilike(value: String): Self = StObject.set(x, "_ilike", value.asInstanceOf[js.Any])
     

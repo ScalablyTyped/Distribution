@@ -119,7 +119,8 @@ object FlowRendererPropertiestyp {
     __obj.asInstanceOf[FlowRendererPropertiestyp]
   }
   
-  extension [Self <: FlowRendererPropertiestyp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowRendererPropertiestyp] (val x: Self) extends AnyVal {
     
     inline def setAuthoringInfo(value: AuthoringInfoProperties): Self = StObject.set(x, "authoringInfo", value.asInstanceOf[js.Any])
     

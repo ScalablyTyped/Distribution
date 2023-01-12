@@ -28,7 +28,8 @@ object AggregatedVariablesImpactExplanation {
     __obj.asInstanceOf[AggregatedVariablesImpactExplanation]
   }
   
-  extension [Self <: AggregatedVariablesImpactExplanation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregatedVariablesImpactExplanation] (val x: Self) extends AnyVal {
     
     inline def setEventVariableNames(value: ListOfStrings): Self = StObject.set(x, "eventVariableNames", value.asInstanceOf[js.Any])
     

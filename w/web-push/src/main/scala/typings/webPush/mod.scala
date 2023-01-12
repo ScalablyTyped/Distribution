@@ -165,7 +165,8 @@ object mod {
       __obj.asInstanceOf[EncryptionResult]
     }
     
-    extension [Self <: EncryptionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptionResult] (val x: Self) extends AnyVal {
       
       inline def setCipherText(value: Buffer): Self = StObject.set(x, "cipherText", value.asInstanceOf[js.Any])
       
@@ -190,7 +191,8 @@ object mod {
       __obj.asInstanceOf[PushSubscription]
     }
     
-    extension [Self <: PushSubscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PushSubscription] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
@@ -217,7 +219,8 @@ object mod {
       __obj.asInstanceOf[RequestDetails]
     }
     
-    extension [Self <: RequestDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestDetails] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -270,7 +273,8 @@ object mod {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -321,7 +325,8 @@ object mod {
       __obj.asInstanceOf[SendResult]
     }
     
-    extension [Self <: SendResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendResult] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -344,7 +349,8 @@ object mod {
       __obj.asInstanceOf[VapidKeys]
     }
     
-    extension [Self <: VapidKeys](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VapidKeys] (val x: Self) extends AnyVal {
       
       inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       

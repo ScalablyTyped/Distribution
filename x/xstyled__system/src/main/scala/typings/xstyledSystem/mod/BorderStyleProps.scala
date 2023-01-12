@@ -16,7 +16,8 @@ object BorderStyleProps {
     __obj.asInstanceOf[BorderStyleProps]
   }
   
-  extension [Self <: BorderStyleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderStyleProps] (val x: Self) extends AnyVal {
     
     inline def setBorderStyle(value: ResponsiveValue[BorderStyle | Double]): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
     

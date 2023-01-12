@@ -151,7 +151,8 @@ object mod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object mod {
       __obj.asInstanceOf[ServerOptions]
     }
     
-    extension [Self <: ServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -201,7 +203,8 @@ object mod {
       __obj.asInstanceOf[Sheet]
     }
     
-    extension [Self <: Sheet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sheet] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: StringDictionary[String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       

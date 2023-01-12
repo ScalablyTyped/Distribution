@@ -54,7 +54,8 @@ object XStringListControl {
     __obj.asInstanceOf[XStringListControl]
   }
   
-  extension [Self <: XStringListControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStringListControl] (val x: Self) extends AnyVal {
     
     inline def setAppendListEntry(value: String => Unit): Self = StObject.set(x, "appendListEntry", js.Any.fromFunction1(value))
     

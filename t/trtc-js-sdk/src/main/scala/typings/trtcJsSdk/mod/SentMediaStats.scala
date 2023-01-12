@@ -19,7 +19,8 @@ object SentMediaStats {
     __obj.asInstanceOf[SentMediaStats]
   }
   
-  extension [Self <: SentMediaStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SentMediaStats] (val x: Self) extends AnyVal {
     
     inline def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
     

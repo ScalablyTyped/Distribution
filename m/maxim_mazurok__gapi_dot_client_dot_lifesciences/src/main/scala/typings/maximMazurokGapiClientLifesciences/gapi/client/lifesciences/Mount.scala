@@ -22,7 +22,8 @@ object Mount {
     __obj.asInstanceOf[Mount]
   }
   
-  extension [Self <: Mount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mount] (val x: Self) extends AnyVal {
     
     inline def setDisk(value: String): Self = StObject.set(x, "disk", value.asInstanceOf[js.Any])
     

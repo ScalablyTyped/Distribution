@@ -89,7 +89,8 @@ object inspection {
       __obj.asInstanceOf[DefaultFormComponentInspectorModel]
     }
     
-    extension [Self <: DefaultFormComponentInspectorModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultFormComponentInspectorModel] (val x: Self) extends AnyVal {
       
       inline def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
       

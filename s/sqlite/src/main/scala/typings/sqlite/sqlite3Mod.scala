@@ -309,7 +309,8 @@ object sqlite3Mod {
       __obj.asInstanceOf[sqlite3]
     }
     
-    extension [Self <: sqlite3](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: sqlite3] (val x: Self) extends AnyVal {
       
       inline def setCached(value: typings.sqlite.anon.Database): Self = StObject.set(x, "cached", value.asInstanceOf[js.Any])
       

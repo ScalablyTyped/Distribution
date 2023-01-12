@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Coordpath]
     }
     
-    extension [Self <: Coordpath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coordpath] (val x: Self) extends AnyVal {
       
       inline def setCoord_path(value: String): Self = StObject.set(x, "coord_path", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[FeatureId]
     }
     
-    extension [Self <: FeatureId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeatureId] (val x: Self) extends AnyVal {
       
       inline def setFeatureId(value: String): Self = StObject.set(x, "featureId", value.asInstanceOf[js.Any])
     }
@@ -58,7 +60,8 @@ object anon {
       __obj.asInstanceOf[FeatureIds]
     }
     
-    extension [Self <: FeatureIds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeatureIds] (val x: Self) extends AnyVal {
       
       inline def setFeatureIds(value: js.Array[String]): Self = StObject.set(x, "featureIds", value.asInstanceOf[js.Any])
       
@@ -79,7 +82,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFeatureId(value: String): Self = StObject.set(x, "featureId", value.asInstanceOf[js.Any])
       
@@ -102,7 +106,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

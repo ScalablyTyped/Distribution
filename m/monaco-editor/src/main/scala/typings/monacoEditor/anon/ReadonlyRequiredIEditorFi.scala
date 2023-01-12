@@ -34,7 +34,8 @@ object ReadonlyRequiredIEditorFi {
     __obj.asInstanceOf[ReadonlyRequiredIEditorFi]
   }
   
-  extension [Self <: ReadonlyRequiredIEditorFi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyRequiredIEditorFi] (val x: Self) extends AnyVal {
     
     inline def setAddExtraSpaceOnTop(value: Boolean): Self = StObject.set(x, "addExtraSpaceOnTop", value.asInstanceOf[js.Any])
     

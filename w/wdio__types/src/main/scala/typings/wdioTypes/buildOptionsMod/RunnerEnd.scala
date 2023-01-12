@@ -19,7 +19,8 @@ object RunnerEnd {
     __obj.asInstanceOf[RunnerEnd]
   }
   
-  extension [Self <: RunnerEnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunnerEnd] (val x: Self) extends AnyVal {
     
     inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     

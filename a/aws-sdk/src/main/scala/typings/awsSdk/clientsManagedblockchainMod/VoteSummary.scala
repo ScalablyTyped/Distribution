@@ -28,7 +28,8 @@ object VoteSummary {
     __obj.asInstanceOf[VoteSummary]
   }
   
-  extension [Self <: VoteSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoteSummary] (val x: Self) extends AnyVal {
     
     inline def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
     

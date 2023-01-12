@@ -187,7 +187,8 @@ object RectangleGraphics {
       __obj.asInstanceOf[ConstructorOptions]
     }
     
-    extension [Self <: ConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setClassificationType(value: Property | ClassificationType): Self = StObject.set(x, "classificationType", value.asInstanceOf[js.Any])
       

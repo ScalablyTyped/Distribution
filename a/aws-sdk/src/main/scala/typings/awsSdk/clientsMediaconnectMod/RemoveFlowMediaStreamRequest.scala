@@ -23,7 +23,8 @@ object RemoveFlowMediaStreamRequest {
     __obj.asInstanceOf[RemoveFlowMediaStreamRequest]
   }
   
-  extension [Self <: RemoveFlowMediaStreamRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveFlowMediaStreamRequest] (val x: Self) extends AnyVal {
     
     inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     

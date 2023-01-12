@@ -23,7 +23,8 @@ object S3ExportingConfig {
     __obj.asInstanceOf[S3ExportingConfig]
   }
   
-  extension [Self <: S3ExportingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3ExportingConfig] (val x: Self) extends AnyVal {
     
     inline def setS3BucketName(value: s3BucketName): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
     

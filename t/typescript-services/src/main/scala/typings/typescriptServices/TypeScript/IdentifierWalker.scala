@@ -112,7 +112,8 @@ object IdentifierWalker {
     __obj.asInstanceOf[IdentifierWalker]
   }
   
-  extension [Self <: IdentifierWalker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentifierWalker] (val x: Self) extends AnyVal {
     
     inline def setList(value: IIndexable[Boolean]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
   }

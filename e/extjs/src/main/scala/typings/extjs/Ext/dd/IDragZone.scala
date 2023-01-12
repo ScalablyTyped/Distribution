@@ -43,7 +43,8 @@ object IDragZone {
     __obj.asInstanceOf[IDragZone]
   }
   
-  extension [Self <: IDragZone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDragZone] (val x: Self) extends AnyVal {
     
     inline def setContainerScroll(value: Any): Self = StObject.set(x, "containerScroll", value.asInstanceOf[js.Any])
     

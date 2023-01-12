@@ -27,7 +27,8 @@ object libParserConnectionStringMod {
       __obj.asInstanceOf[CollectionConfig]
     }
     
-    extension [Self <: CollectionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectionConfig] (val x: Self) extends AnyVal {
       
       inline def setQuotes(value: StringDictionary[String]): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object libParserConnectionStringMod {
       __obj.asInstanceOf[ParserConfig]
     }
     
-    extension [Self <: ParserConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserConfig] (val x: Self) extends AnyVal {
       
       inline def setKey(value: CollectionConfig): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

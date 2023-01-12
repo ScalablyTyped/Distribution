@@ -26,7 +26,8 @@ object StyleBase {
     __obj.asInstanceOf[StyleBase]
   }
   
-  extension [Self <: StyleBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleBase] (val x: Self) extends AnyVal {
     
     inline def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
     

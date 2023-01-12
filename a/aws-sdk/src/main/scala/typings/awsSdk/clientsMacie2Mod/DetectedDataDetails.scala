@@ -18,7 +18,8 @@ object DetectedDataDetails {
     __obj.asInstanceOf[DetectedDataDetails]
   }
   
-  extension [Self <: DetectedDataDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectedDataDetails] (val x: Self) extends AnyVal {
     
     inline def setValue(value: stringMin1Max128): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

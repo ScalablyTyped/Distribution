@@ -19,7 +19,8 @@ object NodeConfig {
     __obj.asInstanceOf[NodeConfig]
   }
   
-  extension [Self <: NodeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeConfig] (val x: Self) extends AnyVal {
     
     inline def setCpuCount(value: Double): Self = StObject.set(x, "cpuCount", value.asInstanceOf[js.Any])
     

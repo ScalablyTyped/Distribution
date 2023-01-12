@@ -45,7 +45,8 @@ object typesBackendConnectionErrorsMod {
       __obj.asInstanceOf[BackendConnectionErrors]
     }
     
-    extension [Self <: BackendConnectionErrors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackendConnectionErrors] (val x: Self) extends AnyVal {
       
       inline def setConnectionRefusedCount(value: Double): Self = StObject.set(x, "ConnectionRefusedCount", value.asInstanceOf[js.Any])
       

@@ -50,7 +50,8 @@ object cjsCenturyMod {
       __obj.asInstanceOf[CenturyProps]
     }
     
-    extension [Self <: CenturyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CenturyProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

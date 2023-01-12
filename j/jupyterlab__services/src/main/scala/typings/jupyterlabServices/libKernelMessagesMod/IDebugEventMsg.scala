@@ -27,7 +27,8 @@ object IDebugEventMsg {
     __obj.asInstanceOf[IDebugEventMsg]
   }
   
-  extension [Self <: IDebugEventMsg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDebugEventMsg] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Event): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

@@ -45,7 +45,8 @@ object libSegmentedControlSegmentedDotiosMod {
       __obj.asInstanceOf[SegmentedControlProps]
     }
     
-    extension [Self <: SegmentedControlProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentedControlProps] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

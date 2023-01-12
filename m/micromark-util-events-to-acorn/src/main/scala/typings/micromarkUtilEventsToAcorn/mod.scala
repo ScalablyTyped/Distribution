@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[Acorn]
     }
     
-    extension [Self <: Acorn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Acorn] (val x: Self) extends AnyVal {
       
       inline def setParse(value: (/* input */ String, /* options */ typings.acorn.mod.Options) => Node): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
       
@@ -61,7 +62,8 @@ object mod {
       __obj.asInstanceOf[AcornError]
     }
     
-    extension [Self <: AcornError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AcornError] (val x: Self) extends AnyVal {
       
       inline def setLoc(value: Column): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAcorn(value: Acorn): Self = StObject.set(x, "acorn", value.asInstanceOf[js.Any])
       

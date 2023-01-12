@@ -24,7 +24,8 @@ object OptimizingProgressEvent {
     __obj.asInstanceOf[OptimizingProgressEvent]
   }
   
-  extension [Self <: OptimizingProgressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptimizingProgressEvent] (val x: Self) extends AnyVal {
     
     inline def setBundle(value: NamedBundle): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
     

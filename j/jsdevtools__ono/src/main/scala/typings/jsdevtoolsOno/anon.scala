@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Message[E, P]]
     }
     
-    extension [Self <: Message[?, ?], E /* <: ErrorLike */, P /* <: js.Object */](x: Self & (Message[E, P])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message[?, ?], E /* <: ErrorLike */, P /* <: js.Object */] (val x: Self & (Message[E, P])) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

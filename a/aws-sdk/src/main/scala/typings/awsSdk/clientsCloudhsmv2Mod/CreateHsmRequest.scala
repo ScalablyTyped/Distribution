@@ -28,7 +28,8 @@ object CreateHsmRequest {
     __obj.asInstanceOf[CreateHsmRequest]
   }
   
-  extension [Self <: CreateHsmRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateHsmRequest] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: ExternalAz): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

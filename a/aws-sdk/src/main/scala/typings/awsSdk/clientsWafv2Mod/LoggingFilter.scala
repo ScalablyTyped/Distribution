@@ -23,7 +23,8 @@ object LoggingFilter {
     __obj.asInstanceOf[LoggingFilter]
   }
   
-  extension [Self <: LoggingFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoggingFilter] (val x: Self) extends AnyVal {
     
     inline def setDefaultBehavior(value: FilterBehavior): Self = StObject.set(x, "DefaultBehavior", value.asInstanceOf[js.Any])
     

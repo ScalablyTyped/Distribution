@@ -23,7 +23,8 @@ object RequestBodyContentApplicationjsonRemoveevents {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonRemoveevents]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonRemoveevents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonRemoveevents] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathHookidOwnerRepo): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

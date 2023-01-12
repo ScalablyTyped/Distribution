@@ -193,7 +193,8 @@ object IAbstractSelectionModel {
     __obj.asInstanceOf[IAbstractSelectionModel]
   }
   
-  extension [Self <: IAbstractSelectionModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAbstractSelectionModel] (val x: Self) extends AnyVal {
     
     inline def setAllowDeselect(value: Boolean): Self = StObject.set(x, "allowDeselect", value.asInstanceOf[js.Any])
     

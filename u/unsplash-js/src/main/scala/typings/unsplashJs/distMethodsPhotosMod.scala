@@ -124,7 +124,8 @@ object distMethodsPhotosMod {
       __obj.asInstanceOf[PhotoId]
     }
     
-    extension [Self <: PhotoId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhotoId] (val x: Self) extends AnyVal {
       
       inline def setPhotoId(value: String): Self = StObject.set(x, "photoId", value.asInstanceOf[js.Any])
     }
@@ -155,7 +156,8 @@ object distMethodsPhotosMod {
       __obj.asInstanceOf[RandomParams]
     }
     
-    extension [Self <: RandomParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RandomParams] (val x: Self) extends AnyVal {
       
       inline def setCollectionIds(value: js.Array[String]): Self = StObject.set(x, "collectionIds", value.asInstanceOf[js.Any])
       

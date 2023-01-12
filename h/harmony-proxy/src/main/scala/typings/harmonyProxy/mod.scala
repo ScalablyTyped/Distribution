@@ -77,7 +77,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[ProxyHandler[T]]
       }
       
-      extension [Self <: ProxyHandler[?], T](x: Self & ProxyHandler[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProxyHandler[?], T] (val x: Self & ProxyHandler[T]) extends AnyVal {
         
         inline def setApply(value: (/* target */ T, /* thisArg */ Any, /* argArray */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "apply", js.Any.fromFunction3(value))
         

@@ -17,7 +17,8 @@ object SuspendingEventArgs {
     __obj.asInstanceOf[SuspendingEventArgs]
   }
   
-  extension [Self <: SuspendingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuspendingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setSuspendingOperation(value: SuspendingOperation): Self = StObject.set(x, "suspendingOperation", value.asInstanceOf[js.Any])
   }

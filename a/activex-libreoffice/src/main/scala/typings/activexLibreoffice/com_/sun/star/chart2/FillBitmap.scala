@@ -67,7 +67,8 @@ object FillBitmap {
     __obj.asInstanceOf[FillBitmap]
   }
   
-  extension [Self <: FillBitmap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillBitmap] (val x: Self) extends AnyVal {
     
     inline def setABitmapMode(value: BitmapMode): Self = StObject.set(x, "aBitmapMode", value.asInstanceOf[js.Any])
     

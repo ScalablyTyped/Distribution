@@ -19,7 +19,8 @@ object coreMod {
       __obj.asInstanceOf[BabelFile]
     }
     
-    extension [Self <: BabelFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BabelFile] (val x: Self) extends AnyVal {
       
       inline def setBuildCodeFrameError(value: (Node, String) => js.Error): Self = StObject.set(x, "buildCodeFrameError", js.Any.fromFunction2(value))
     }

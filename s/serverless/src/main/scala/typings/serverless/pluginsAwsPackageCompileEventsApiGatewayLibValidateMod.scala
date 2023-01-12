@@ -32,7 +32,8 @@ object pluginsAwsPackageCompileEventsApiGatewayLibValidateMod {
       __obj.asInstanceOf[ApiGatewayEvent]
     }
     
-    extension [Self <: ApiGatewayEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApiGatewayEvent] (val x: Self) extends AnyVal {
       
       inline def setHttp(value: String | Authorizer): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     }

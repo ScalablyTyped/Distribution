@@ -53,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Controller[S]]
     }
     
-    extension [Self <: Controller[?], S /* <: js.Object */](x: Self & Controller[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Controller[?], S /* <: js.Object */] (val x: Self & Controller[S]) extends AnyVal {
       
       inline def setController(value: /* $scope */ Any => Unit): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
       
@@ -86,7 +87,8 @@ object anon {
       __obj.asInstanceOf[Execute[S, L]]
     }
     
-    extension [Self <: Execute[?, ?], S /* <: js.Object */, L /* <: js.Object */](x: Self & (Execute[S, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Execute[?, ?], S /* <: js.Object */, L /* <: js.Object */] (val x: Self & (Execute[S, L])) extends AnyVal {
       
       inline def setExecute(value: Executor[S, L]): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
     }
@@ -121,7 +123,8 @@ object anon {
       __obj.asInstanceOf[Filter]
     }
     
-    extension [Self <: Filter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: /* record */ RecordHandle => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -150,7 +153,8 @@ object anon {
       __obj.asInstanceOf[Load]
     }
     
-    extension [Self <: Load](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Load] (val x: Self) extends AnyVal {
       
       inline def setLoad(value: Filter): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     }
@@ -173,7 +177,8 @@ object anon {
       __obj.asInstanceOf[Patch[S, L]]
     }
     
-    extension [Self <: Patch[?, ?], S, L](x: Self & (Patch[S, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Patch[?, ?], S, L] (val x: Self & (Patch[S, L])) extends AnyVal {
       
       inline def setPatch(
         value: (/* record */ RecordHandle, /* helpers */ Helpers, /* settings */ S, /* locals */ L) => Unit
@@ -201,7 +206,8 @@ object anon {
       __obj.asInstanceOf[PatchFileName]
     }
     
-    extension [Self <: PatchFileName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatchFileName] (val x: Self) extends AnyVal {
       
       inline def setPatchFileName(value: String): Self = StObject.set(x, "patchFileName", value.asInstanceOf[js.Any])
       
@@ -224,7 +230,8 @@ object anon {
       __obj.asInstanceOf[Records[S, L]]
     }
     
-    extension [Self <: Records[?, ?], S, L](x: Self & (Records[S, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Records[?, ?], S, L] (val x: Self & (Records[S, L])) extends AnyVal {
       
       inline def setRecords(value: (js.Array[FileHandle], Helpers, S, L) => js.Array[RecordHandle]): Self = StObject.set(x, "records", js.Any.fromFunction4(value))
     }
@@ -245,7 +252,8 @@ object anon {
       __obj.asInstanceOf[RequiredFiles]
     }
     
-    extension [Self <: RequiredFiles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredFiles] (val x: Self) extends AnyVal {
       
       inline def setRequiredFiles(value: js.Array[String]): Self = StObject.set(x, "requiredFiles", value.asInstanceOf[js.Any])
       

@@ -50,7 +50,8 @@ object RouteData {
     __obj.asInstanceOf[RouteData]
   }
   
-  extension [Self <: RouteData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteData] (val x: Self) extends AnyVal {
     
     inline def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
     

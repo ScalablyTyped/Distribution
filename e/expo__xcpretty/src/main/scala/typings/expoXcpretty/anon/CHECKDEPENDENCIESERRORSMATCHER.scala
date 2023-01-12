@@ -154,7 +154,8 @@ object CHECKDEPENDENCIESERRORSMATCHER {
     __obj.asInstanceOf[CHECKDEPENDENCIESERRORSMATCHER]
   }
   
-  extension [Self <: CHECKDEPENDENCIESERRORSMATCHER](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CHECKDEPENDENCIESERRORSMATCHER] (val x: Self) extends AnyVal {
     
     inline def setCHECK_DEPENDENCIES_ERRORS_MATCHER(value: js.RegExp): Self = StObject.set(x, "CHECK_DEPENDENCIES_ERRORS_MATCHER", value.asInstanceOf[js.Any])
     

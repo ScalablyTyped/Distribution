@@ -33,7 +33,8 @@ object ListProvisioningArtifactsForServiceActionInput {
     __obj.asInstanceOf[ListProvisioningArtifactsForServiceActionInput]
   }
   
-  extension [Self <: ListProvisioningArtifactsForServiceActionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProvisioningArtifactsForServiceActionInput] (val x: Self) extends AnyVal {
     
     inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     

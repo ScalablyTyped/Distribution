@@ -19,7 +19,8 @@ object GPUExternalTextureDescriptor {
     __obj.asInstanceOf[GPUExternalTextureDescriptor]
   }
   
-  extension [Self <: GPUExternalTextureDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUExternalTextureDescriptor] (val x: Self) extends AnyVal {
     
     inline def setColorSpace(value: GPUPredefinedColorSpace): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object PrinterOptions {
     __obj.asInstanceOf[PrinterOptions]
   }
   
-  extension [Self <: PrinterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrinterOptions] (val x: Self) extends AnyVal {
     
     inline def setNewLine(value: NewLineKind): Self = StObject.set(x, "newLine", value.asInstanceOf[js.Any])
     

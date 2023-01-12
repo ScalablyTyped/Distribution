@@ -48,7 +48,8 @@ object NavigateToMiniProgramOptions {
     __obj.asInstanceOf[NavigateToMiniProgramOptions]
   }
   
-  extension [Self <: NavigateToMiniProgramOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigateToMiniProgramOptions] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

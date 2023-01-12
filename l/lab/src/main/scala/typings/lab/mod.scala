@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[AsyncOptions]
     }
     
-    extension [Self <: AsyncOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncOptions] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object mod {
       __obj.asInstanceOf[DoneNote]
     }
     
-    extension [Self <: DoneNote](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoneNote] (val x: Self) extends AnyVal {
       
       inline def setNote(value: String => Unit): Self = StObject.set(x, "note", js.Any.fromFunction1(value))
     }
@@ -80,7 +82,8 @@ object mod {
       __obj.asInstanceOf[ExperimentAlt]
     }
     
-    extension [Self <: ExperimentAlt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExperimentAlt] (val x: Self) extends AnyVal {
       
       inline def setDescribe(value: SkipOnlyExperiment): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
       
@@ -113,7 +116,8 @@ object mod {
       __obj.asInstanceOf[ExperimentOptions]
     }
     
-    extension [Self <: ExperimentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExperimentOptions] (val x: Self) extends AnyVal {
       
       inline def setOnly(value: Boolean): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
       
@@ -223,7 +227,8 @@ object mod {
       __obj.asInstanceOf[ScriptOptions]
     }
     
-    extension [Self <: ScriptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptOptions] (val x: Self) extends AnyVal {
       
       inline def setCli(value: Any): Self = StObject.set(x, "cli", value.asInstanceOf[js.Any])
       
@@ -260,7 +265,8 @@ object mod {
       __obj.asInstanceOf[SkipOnlyExperiment]
     }
     
-    extension [Self <: SkipOnlyExperiment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkipOnlyExperiment] (val x: Self) extends AnyVal {
       
       inline def setOnly(value: ExperimentArgs & ExperimentWithOptionsArgs): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
       
@@ -293,7 +299,8 @@ object mod {
       __obj.asInstanceOf[SkipOnlyTest]
     }
     
-    extension [Self <: SkipOnlyTest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkipOnlyTest] (val x: Self) extends AnyVal {
       
       inline def setOnly(value: TestArgs & TestWithOptionsArgs): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
       
@@ -314,7 +321,8 @@ object mod {
       __obj.asInstanceOf[TestAlt]
     }
     
-    extension [Self <: TestAlt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestAlt] (val x: Self) extends AnyVal {
       
       inline def setIt(value: SkipOnlyTest): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
       
@@ -344,7 +352,8 @@ object mod {
       __obj.asInstanceOf[TestOptions]
     }
     
-    extension [Self <: TestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestOptions] (val x: Self) extends AnyVal {
       
       inline def setPlan(value: Double): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
       

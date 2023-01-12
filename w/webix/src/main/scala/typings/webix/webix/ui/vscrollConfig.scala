@@ -39,7 +39,8 @@ object vscrollConfig {
     __obj.asInstanceOf[vscrollConfig]
   }
   
-  extension [Self <: vscrollConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: vscrollConfig] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

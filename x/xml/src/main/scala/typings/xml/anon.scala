@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Attr]
     }
     
-    extension [Self <: Attr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attr] (val x: Self) extends AnyVal {
       
       inline def set_attr(value: XmlAttrs): Self = StObject.set(x, "_attr", value.asInstanceOf[js.Any])
     }
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[AttrCdata]
     }
     
-    extension [Self <: AttrCdata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttrCdata] (val x: Self) extends AnyVal {
       
       inline def set_attr(value: XmlAttrs): Self = StObject.set(x, "_attr", value.asInstanceOf[js.Any])
       
@@ -64,7 +66,8 @@ object anon {
       __obj.asInstanceOf[Cdata]
     }
     
-    extension [Self <: Cdata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cdata] (val x: Self) extends AnyVal {
       
       inline def set_cdata(value: String): Self = StObject.set(x, "_cdata", value.asInstanceOf[js.Any])
     }
@@ -83,7 +86,8 @@ object anon {
       __obj.asInstanceOf[Encoding]
     }
     
-    extension [Self <: Encoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -120,7 +124,8 @@ object anon {
       __obj.asInstanceOf[streamtrueOption]
     }
     
-    extension [Self <: streamtrueOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: streamtrueOption] (val x: Self) extends AnyVal {
       
       inline def setDeclaration(value: Boolean | Encoding): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
       

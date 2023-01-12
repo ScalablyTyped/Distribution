@@ -16,7 +16,8 @@ object TargetHttpsProxiesSetQuicOverrideRequest {
     __obj.asInstanceOf[TargetHttpsProxiesSetQuicOverrideRequest]
   }
   
-  extension [Self <: TargetHttpsProxiesSetQuicOverrideRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetHttpsProxiesSetQuicOverrideRequest] (val x: Self) extends AnyVal {
     
     inline def setQuicOverride(value: String): Self = StObject.set(x, "quicOverride", value.asInstanceOf[js.Any])
     

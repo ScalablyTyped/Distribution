@@ -141,7 +141,8 @@ object ValueSet {
     __obj.asInstanceOf[ValueSet]
   }
   
-  extension [Self <: ValueSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueSet] (val x: Self) extends AnyVal {
     
     inline def setCompose(value: ValueSetCompose): Self = StObject.set(x, "compose", value.asInstanceOf[js.Any])
     

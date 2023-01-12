@@ -25,7 +25,8 @@ object TasksCancelParams {
     __obj.asInstanceOf[TasksCancelParams]
   }
   
-  extension [Self <: TasksCancelParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TasksCancelParams] (val x: Self) extends AnyVal {
     
     inline def setActions(value: NameList): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

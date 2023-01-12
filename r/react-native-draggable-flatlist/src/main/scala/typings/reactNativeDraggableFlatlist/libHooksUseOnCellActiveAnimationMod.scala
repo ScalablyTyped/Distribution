@@ -26,7 +26,8 @@ object libHooksUseOnCellActiveAnimationMod {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setAnimationConfig(value: PartialSpringConfig): Self = StObject.set(x, "animationConfig", value.asInstanceOf[js.Any])
     }

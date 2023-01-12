@@ -24,7 +24,8 @@ object IModelDeltaDecoration {
     __obj.asInstanceOf[IModelDeltaDecoration]
   }
   
-  extension [Self <: IModelDeltaDecoration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IModelDeltaDecoration] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: IModelDecorationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

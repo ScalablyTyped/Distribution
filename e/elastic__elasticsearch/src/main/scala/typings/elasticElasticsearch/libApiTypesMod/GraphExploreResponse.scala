@@ -29,7 +29,8 @@ object GraphExploreResponse {
     __obj.asInstanceOf[GraphExploreResponse]
   }
   
-  extension [Self <: GraphExploreResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphExploreResponse] (val x: Self) extends AnyVal {
     
     inline def setConnections(value: js.Array[GraphConnection]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CreateBackendAuthIdentityPoolConfig {
     __obj.asInstanceOf[CreateBackendAuthIdentityPoolConfig]
   }
   
-  extension [Self <: CreateBackendAuthIdentityPoolConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBackendAuthIdentityPoolConfig] (val x: Self) extends AnyVal {
     
     inline def setIdentityPoolName(value: string): Self = StObject.set(x, "IdentityPoolName", value.asInstanceOf[js.Any])
     

@@ -2169,7 +2169,8 @@ object PlotOptions {
     __obj.asInstanceOf[PlotOptions]
   }
   
-  extension [Self <: PlotOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotOptions] (val x: Self) extends AnyVal {
     
     inline def setAbands(value: PlotAbandsOptions): Self = StObject.set(x, "abands", value.asInstanceOf[js.Any])
     

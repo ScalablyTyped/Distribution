@@ -44,7 +44,8 @@ object angularMod {
           __obj.asInstanceOf[IRepeatExpression]
         }
         
-        extension [Self <: IRepeatExpression](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IRepeatExpression] (val x: Self) extends AnyVal {
           
           inline def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
           
@@ -119,7 +120,8 @@ object angularMod {
           __obj.asInstanceOf[ISelectConfig]
         }
         
-        extension [Self <: ISelectConfig](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ISelectConfig] (val x: Self) extends AnyVal {
           
           inline def setAppendToBody(value: Boolean): Self = StObject.set(x, "appendToBody", value.asInstanceOf[js.Any])
           

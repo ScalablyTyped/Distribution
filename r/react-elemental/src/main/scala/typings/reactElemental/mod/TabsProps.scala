@@ -29,7 +29,8 @@ object TabsProps {
     __obj.asInstanceOf[TabsProps]
   }
   
-  extension [Self <: TabsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabsProps] (val x: Self) extends AnyVal {
     
     inline def setFit(value: Boolean): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     

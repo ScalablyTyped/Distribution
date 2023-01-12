@@ -21,7 +21,8 @@ object AffixHeight {
     __obj.asInstanceOf[AffixHeight]
   }
   
-  extension [Self <: AffixHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AffixHeight] (val x: Self) extends AnyVal {
     
     inline def setAffixHeight(value: Double): Self = StObject.set(x, "affixHeight", value.asInstanceOf[js.Any])
     

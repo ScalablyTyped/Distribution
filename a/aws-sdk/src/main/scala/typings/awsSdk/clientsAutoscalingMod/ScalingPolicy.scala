@@ -93,7 +93,8 @@ object ScalingPolicy {
     __obj.asInstanceOf[ScalingPolicy]
   }
   
-  extension [Self <: ScalingPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScalingPolicy] (val x: Self) extends AnyVal {
     
     inline def setAdjustmentType(value: XmlStringMaxLen255): Self = StObject.set(x, "AdjustmentType", value.asInstanceOf[js.Any])
     

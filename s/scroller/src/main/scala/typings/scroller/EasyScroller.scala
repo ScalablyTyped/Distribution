@@ -19,7 +19,8 @@ object EasyScroller {
     __obj.asInstanceOf[EasyScroller]
   }
   
-  extension [Self <: EasyScroller](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EasyScroller] (val x: Self) extends AnyVal {
     
     inline def setBindEvents(value: () => Unit): Self = StObject.set(x, "bindEvents", js.Any.fromFunction0(value))
     

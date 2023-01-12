@@ -21,7 +21,8 @@ object ManagedMobileApp {
     __obj.asInstanceOf[ManagedMobileApp]
   }
   
-  extension [Self <: ManagedMobileApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedMobileApp] (val x: Self) extends AnyVal {
     
     inline def setMobileAppIdentifier(value: NullableOption[MobileAppIdentifier]): Self = StObject.set(x, "mobileAppIdentifier", value.asInstanceOf[js.Any])
     

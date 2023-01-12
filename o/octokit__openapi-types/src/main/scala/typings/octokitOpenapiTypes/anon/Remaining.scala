@@ -21,7 +21,8 @@ object Remaining {
     __obj.asInstanceOf[Remaining]
   }
   
-  extension [Self <: Remaining](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Remaining] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

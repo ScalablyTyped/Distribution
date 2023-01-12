@@ -19,7 +19,8 @@ object VisualObjectInstanceEnumerationObject {
     __obj.asInstanceOf[VisualObjectInstanceEnumerationObject]
   }
   
-  extension [Self <: VisualObjectInstanceEnumerationObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisualObjectInstanceEnumerationObject] (val x: Self) extends AnyVal {
     
     inline def setContainers(value: js.Array[VisualObjectInstanceContainer]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
     

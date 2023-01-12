@@ -18,7 +18,8 @@ object FreedomInCoreEnvOptions {
     __obj.asInstanceOf[FreedomInCoreEnvOptions]
   }
   
-  extension [Self <: FreedomInCoreEnvOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FreedomInCoreEnvOptions] (val x: Self) extends AnyVal {
     
     inline def setDebug(value: String): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     

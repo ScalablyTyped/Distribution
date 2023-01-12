@@ -140,7 +140,8 @@ object DBEngineVersion {
     __obj.asInstanceOf[DBEngineVersion]
   }
   
-  extension [Self <: DBEngineVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBEngineVersion] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     

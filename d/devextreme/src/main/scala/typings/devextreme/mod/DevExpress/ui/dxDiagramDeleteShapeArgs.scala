@@ -18,7 +18,8 @@ object dxDiagramDeleteShapeArgs {
     __obj.asInstanceOf[dxDiagramDeleteShapeArgs]
   }
   
-  extension [Self <: dxDiagramDeleteShapeArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxDiagramDeleteShapeArgs] (val x: Self) extends AnyVal {
     
     inline def setShape(value: dxDiagramShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     

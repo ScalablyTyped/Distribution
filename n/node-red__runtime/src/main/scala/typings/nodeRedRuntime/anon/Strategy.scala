@@ -22,7 +22,8 @@ object Strategy {
     __obj.asInstanceOf[Strategy]
   }
   
-  extension [Self <: Strategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Strategy] (val x: Self) extends AnyVal {
     
     inline def setStrategy(value: Icon): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     

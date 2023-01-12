@@ -32,7 +32,8 @@ object MediaElementBase {
     __obj.asInstanceOf[MediaElementBase]
   }
   
-  extension [Self <: MediaElementBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaElementBase] (val x: Self) extends AnyVal {
     
     inline def setGeoreference(value: ExtentAndRotationGeoreference | CornersGeoreference | ControlPointsGeoreference): Self = StObject.set(x, "georeference", value.asInstanceOf[js.Any])
     

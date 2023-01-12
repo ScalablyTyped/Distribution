@@ -76,7 +76,8 @@ object URL {
     __obj.asInstanceOf[URL]
   }
   
-  extension [Self <: URL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: URL] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: Double): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     

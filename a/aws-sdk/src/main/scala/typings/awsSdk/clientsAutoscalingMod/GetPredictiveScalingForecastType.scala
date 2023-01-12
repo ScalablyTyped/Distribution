@@ -38,7 +38,8 @@ object GetPredictiveScalingForecastType {
     __obj.asInstanceOf[GetPredictiveScalingForecastType]
   }
   
-  extension [Self <: GetPredictiveScalingForecastType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPredictiveScalingForecastType] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     

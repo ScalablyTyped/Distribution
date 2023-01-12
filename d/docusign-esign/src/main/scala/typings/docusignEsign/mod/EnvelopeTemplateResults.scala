@@ -53,7 +53,8 @@ object EnvelopeTemplateResults {
     __obj.asInstanceOf[EnvelopeTemplateResults]
   }
   
-  extension [Self <: EnvelopeTemplateResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeTemplateResults] (val x: Self) extends AnyVal {
     
     inline def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     

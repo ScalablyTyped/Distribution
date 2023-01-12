@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Views]
     }
     
-    extension [Self <: Views](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Views] (val x: Self) extends AnyVal {
       
       inline def setViews(value: String | js.Array[String]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
       

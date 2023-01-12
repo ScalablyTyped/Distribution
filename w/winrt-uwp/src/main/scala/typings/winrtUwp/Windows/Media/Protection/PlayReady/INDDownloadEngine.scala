@@ -59,7 +59,8 @@ object INDDownloadEngine {
     __obj.asInstanceOf[INDDownloadEngine]
   }
   
-  extension [Self <: INDDownloadEngine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INDDownloadEngine] (val x: Self) extends AnyVal {
     
     inline def setBufferFullMaxThresholdInSamples(value: Double): Self = StObject.set(x, "bufferFullMaxThresholdInSamples", value.asInstanceOf[js.Any])
     

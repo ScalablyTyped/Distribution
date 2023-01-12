@@ -54,7 +54,8 @@ object anon {
       __obj.asInstanceOf[objectModetrueundefinedRe]
     }
     
-    extension [Self <: objectModetrueundefinedRe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: objectModetrueundefinedRe] (val x: Self) extends AnyVal {
       
       inline def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
       

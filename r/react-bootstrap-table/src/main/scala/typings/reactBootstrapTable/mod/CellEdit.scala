@@ -81,7 +81,8 @@ object CellEdit {
     __obj.asInstanceOf[CellEdit[TRow]]
   }
   
-  extension [Self <: CellEdit[?], TRow /* <: js.Object */](x: Self & CellEdit[TRow]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellEdit[?], TRow /* <: js.Object */] (val x: Self & CellEdit[TRow]) extends AnyVal {
     
     inline def setAfterSaveCell(
       value: (/* row */ TRow, /* keyof TRow */ /* cellName */ String, /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, /* props */ ColIndex) => Unit

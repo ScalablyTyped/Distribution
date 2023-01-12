@@ -259,7 +259,8 @@ object mod {
       __obj.asInstanceOf[CreateTransactionArg]
     }
     
-    extension [Self <: CreateTransactionArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateTransactionArg] (val x: Self) extends AnyVal {
       
       inline def setAdditionals(value: js.Array[String]): Self = StObject.set(x, "additionals", value.asInstanceOf[js.Any])
       
@@ -347,7 +348,8 @@ object mod {
       __obj.asInstanceOf[SignP2SHTransactionArg]
     }
     
-    extension [Self <: SignP2SHTransactionArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignP2SHTransactionArg] (val x: Self) extends AnyVal {
       
       inline def setAssociatedKeysets(value: js.Array[String]): Self = StObject.set(x, "associatedKeysets", value.asInstanceOf[js.Any])
       
@@ -404,7 +406,8 @@ object mod {
       __obj.asInstanceOf[Transaction]
     }
     
-    extension [Self <: Transaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
       
       inline def setExtraData(value: Buffer): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
       
@@ -461,7 +464,8 @@ object mod {
       __obj.asInstanceOf[TransactionInput]
     }
     
-    extension [Self <: TransactionInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionInput] (val x: Self) extends AnyVal {
       
       inline def setPrevout(value: Buffer): Self = StObject.set(x, "prevout", value.asInstanceOf[js.Any])
       
@@ -488,7 +492,8 @@ object mod {
       __obj.asInstanceOf[TransactionOutput]
     }
     
-    extension [Self <: TransactionOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionOutput] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Buffer): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       

@@ -73,7 +73,8 @@ object UrlEncodedOptionItem {
     __obj.asInstanceOf[UrlEncodedOptionItem]
   }
   
-  extension [Self <: UrlEncodedOptionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlEncodedOptionItem] (val x: Self) extends AnyVal {
     
     inline def setExtended(value: Boolean): Self = StObject.set(x, "extended", value.asInstanceOf[js.Any])
     

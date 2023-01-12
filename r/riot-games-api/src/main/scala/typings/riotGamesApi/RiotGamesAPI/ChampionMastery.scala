@@ -46,7 +46,8 @@ object ChampionMastery {
       __obj.asInstanceOf[ChampionMasteryDto]
     }
     
-    extension [Self <: ChampionMasteryDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChampionMasteryDto] (val x: Self) extends AnyVal {
       
       inline def setChampionId(value: Double): Self = StObject.set(x, "championId", value.asInstanceOf[js.Any])
       

@@ -146,7 +146,8 @@ object libDatabaseDatabaseMod {
       __obj.asInstanceOf[DatabaseVersionInfo]
     }
     
-    extension [Self <: DatabaseVersionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatabaseVersionInfo] (val x: Self) extends AnyVal {
       
       inline def setClient(value: VersionInfo): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object libDatabaseDatabaseMod {
       __obj.asInstanceOf[VersionInfo]
     }
     
-    extension [Self <: VersionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VersionInfo] (val x: Self) extends AnyVal {
       
       inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
       

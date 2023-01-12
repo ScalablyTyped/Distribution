@@ -23,7 +23,8 @@ object UnifiedGroupSource {
     __obj.asInstanceOf[UnifiedGroupSource]
   }
   
-  extension [Self <: UnifiedGroupSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnifiedGroupSource] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: Group): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     

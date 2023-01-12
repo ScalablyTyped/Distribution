@@ -51,7 +51,8 @@ object TextPropsAndroid {
     __obj.asInstanceOf[TextPropsAndroid]
   }
   
-  extension [Self <: TextPropsAndroid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextPropsAndroid] (val x: Self) extends AnyVal {
     
     inline def setAndroid_hyphenationFrequency(value: normal_ | none | full | high | balanced): Self = StObject.set(x, "android_hyphenationFrequency", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[DetectedPlanes]
     }
     
-    extension [Self <: DetectedPlanes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetectedPlanes] (val x: Self) extends AnyVal {
       
       inline def setDetectedPlanes(value: XRPlaneSet): Self = StObject.set(x, "detectedPlanes", value.asInstanceOf[js.Any])
       
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Enabled]
     }
     
-    extension [Self <: Enabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     }
@@ -53,7 +55,8 @@ object anon {
       __obj.asInstanceOf[PlaneDetectionState]
     }
     
-    extension [Self <: PlaneDetectionState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlaneDetectionState] (val x: Self) extends AnyVal {
       
       inline def setPlaneDetectionState(value: Enabled): Self = StObject.set(x, "planeDetectionState", value.asInstanceOf[js.Any])
       

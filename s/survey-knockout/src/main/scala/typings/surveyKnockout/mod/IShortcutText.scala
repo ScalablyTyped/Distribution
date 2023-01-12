@@ -15,7 +15,8 @@ object IShortcutText {
     __obj.asInstanceOf[IShortcutText]
   }
   
-  extension [Self <: IShortcutText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShortcutText] (val x: Self) extends AnyVal {
     
     inline def setShortcutText(value: String): Self = StObject.set(x, "shortcutText", value.asInstanceOf[js.Any])
   }

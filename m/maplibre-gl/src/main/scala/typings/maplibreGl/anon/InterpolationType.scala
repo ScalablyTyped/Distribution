@@ -35,7 +35,8 @@ object InterpolationType {
     __obj.asInstanceOf[InterpolationType]
   }
   
-  extension [Self <: InterpolationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterpolationType] (val x: Self) extends AnyVal {
     
     inline def setInterpolationType(value: typings.maplibreGl.mod.InterpolationType): Self = StObject.set(x, "interpolationType", value.asInstanceOf[js.Any])
     

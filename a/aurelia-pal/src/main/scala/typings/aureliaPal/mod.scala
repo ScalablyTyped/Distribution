@@ -291,7 +291,8 @@ object mod {
       __obj.asInstanceOf[Feature]
     }
     
-    extension [Self <: Feature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Feature] (val x: Self) extends AnyVal {
       
       inline def setHtmlTemplateElement(value: Boolean): Self = StObject.set(x, "htmlTemplateElement", value.asInstanceOf[js.Any])
       
@@ -322,7 +323,8 @@ object mod {
       __obj.asInstanceOf[ModuleNameOptions]
     }
     
-    extension [Self <: ModuleNameOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleNameOptions] (val x: Self) extends AnyVal {
       
       inline def setChunk(value: String): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
       

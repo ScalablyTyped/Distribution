@@ -23,7 +23,8 @@ object LaunchTemplateIamInstanceProfileSpecification {
     __obj.asInstanceOf[LaunchTemplateIamInstanceProfileSpecification]
   }
   
-  extension [Self <: LaunchTemplateIamInstanceProfileSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchTemplateIamInstanceProfileSpecification] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

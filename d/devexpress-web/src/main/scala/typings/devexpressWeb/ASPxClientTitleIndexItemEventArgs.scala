@@ -33,7 +33,8 @@ object ASPxClientTitleIndexItemEventArgs {
     __obj.asInstanceOf[ASPxClientTitleIndexItemEventArgs]
   }
   
-  extension [Self <: ASPxClientTitleIndexItemEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTitleIndexItemEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     

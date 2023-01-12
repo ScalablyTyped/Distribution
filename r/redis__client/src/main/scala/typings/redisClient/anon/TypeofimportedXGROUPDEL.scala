@@ -25,7 +25,8 @@ object TypeofimportedXGROUPDEL {
     __obj.asInstanceOf[TypeofimportedXGROUPDEL]
   }
   
-  extension [Self <: TypeofimportedXGROUPDEL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofimportedXGROUPDEL] (val x: Self) extends AnyVal {
     
     inline def setFIRST_KEY_INDEX(value: /* 2 */ Double): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
     

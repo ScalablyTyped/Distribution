@@ -80,7 +80,8 @@ object BodyhtmlBodytext {
     __obj.asInstanceOf[BodyhtmlBodytext]
   }
   
-  extension [Self <: BodyhtmlBodytext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BodyhtmlBodytext] (val x: Self) extends AnyVal {
     
     inline def setAuthor_association(
       value: COLLABORATOR | CONTRIBUTOR | FIRST_TIMER | FIRST_TIME_CONTRIBUTOR | MANNEQUIN | MEMBER | NONE | OWNER

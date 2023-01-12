@@ -25,7 +25,8 @@ object NumberColumn {
     __obj.asInstanceOf[NumberColumn]
   }
   
-  extension [Self <: NumberColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberColumn] (val x: Self) extends AnyVal {
     
     inline def setDecimalPlaces(value: NullableOption[String]): Self = StObject.set(x, "decimalPlaces", value.asInstanceOf[js.Any])
     

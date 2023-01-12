@@ -46,7 +46,8 @@ object Conversation {
     __obj.asInstanceOf[Conversation]
   }
   
-  extension [Self <: Conversation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conversation] (val x: Self) extends AnyVal {
     
     inline def setBusinessLastRead(value: Double): Self = StObject.set(x, "businessLastRead", value.asInstanceOf[js.Any])
     

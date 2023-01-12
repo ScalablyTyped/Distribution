@@ -30,7 +30,8 @@ object WorldEventMap {
     __obj.asInstanceOf[WorldEventMap]
   }
   
-  extension [Self <: WorldEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorldEventMap] (val x: Self) extends AnyVal {
     
     inline def `setAdd-item`(value: AddItemWorldEvent): Self = StObject.set(x, "add-item", value.asInstanceOf[js.Any])
     

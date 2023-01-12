@@ -41,7 +41,8 @@ object Dijkstra {
     __obj.asInstanceOf[Dijkstra]
   }
   
-  extension [Self <: Dijkstra](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dijkstra] (val x: Self) extends AnyVal {
     
     inline def setCost(value: Any): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     

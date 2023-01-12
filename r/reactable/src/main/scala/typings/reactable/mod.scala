@@ -98,7 +98,8 @@ object mod {
       __obj.asInstanceOf[KeyLabelObject]
     }
     
-    extension [Self <: KeyLabelObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyLabelObject] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object mod {
       __obj.asInstanceOf[TableComponentProperties[T]]
     }
     
-    extension [Self <: TableComponentProperties[?], T](x: Self & TableComponentProperties[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableComponentProperties[?], T] (val x: Self & TableComponentProperties[T]) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -252,7 +254,8 @@ object mod {
       __obj.asInstanceOf[TdProperties]
     }
     
-    extension [Self <: TdProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TdProperties] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -285,7 +288,8 @@ object mod {
       __obj.asInstanceOf[ThProperties]
     }
     
-    extension [Self <: ThProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThProperties] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -314,7 +318,8 @@ object mod {
       __obj.asInstanceOf[TrProperties[T]]
     }
     
-    extension [Self <: TrProperties[?], T](x: Self & TrProperties[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrProperties[?], T] (val x: Self & TrProperties[T]) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

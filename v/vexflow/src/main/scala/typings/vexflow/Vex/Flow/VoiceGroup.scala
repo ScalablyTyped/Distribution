@@ -23,7 +23,8 @@ object VoiceGroup {
     __obj.asInstanceOf[VoiceGroup]
   }
   
-  extension [Self <: VoiceGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceGroup] (val x: Self) extends AnyVal {
     
     inline def setAddVoice(value: Voice => Unit): Self = StObject.set(x, "addVoice", js.Any.fromFunction1(value))
     

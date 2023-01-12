@@ -22,7 +22,8 @@ object SourceConfig {
     __obj.asInstanceOf[SourceConfig]
   }
   
-  extension [Self <: SourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceConfig] (val x: Self) extends AnyVal {
     
     inline def setCrowdingConfig(value: SourceCrowdingConfig): Self = StObject.set(x, "crowdingConfig", value.asInstanceOf[js.Any])
     

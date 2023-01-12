@@ -24,7 +24,8 @@ object PrevSubjectMap {
     __obj.asInstanceOf[PrevSubjectMap[O]]
   }
   
-  extension [Self <: PrevSubjectMap[?], O](x: Self & PrevSubjectMap[O]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrevSubjectMap[?], O] (val x: Self & PrevSubjectMap[O]) extends AnyVal {
     
     inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

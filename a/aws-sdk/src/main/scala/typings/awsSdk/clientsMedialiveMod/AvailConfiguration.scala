@@ -18,7 +18,8 @@ object AvailConfiguration {
     __obj.asInstanceOf[AvailConfiguration]
   }
   
-  extension [Self <: AvailConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvailConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAvailSettings(value: AvailSettings): Self = StObject.set(x, "AvailSettings", value.asInstanceOf[js.Any])
     

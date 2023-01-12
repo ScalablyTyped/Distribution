@@ -30,7 +30,8 @@ object libComponentsMultiSelectMultiSelectPropTypesMod {
       __obj.asInstanceOf[MultiSelectSortingProps[ItemType]]
     }
     
-    extension [Self <: MultiSelectSortingProps[?], ItemType /* <: ListBoxBaseItemType */](x: Self & MultiSelectSortingProps[ItemType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSelectSortingProps[?], ItemType /* <: ListBoxBaseItemType */] (val x: Self & MultiSelectSortingProps[ItemType]) extends AnyVal {
       
       inline def setCompareItems(value: (/* item1 */ ItemType, /* item2 */ ItemType, /* options */ SharedOptions) => Double): Self = StObject.set(x, "compareItems", js.Any.fromFunction3(value))
       
@@ -55,7 +56,8 @@ object libComponentsMultiSelectMultiSelectPropTypesMod {
       __obj.asInstanceOf[SharedOptions]
     }
     
-    extension [Self <: SharedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedOptions] (val x: Self) extends AnyVal {
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     }
@@ -81,7 +83,8 @@ object libComponentsMultiSelectMultiSelectPropTypesMod {
       __obj.asInstanceOf[SortItemsOptions[ItemType]]
     }
     
-    extension [Self <: SortItemsOptions[?], ItemType](x: Self & SortItemsOptions[ItemType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortItemsOptions[?], ItemType] (val x: Self & SortItemsOptions[ItemType]) extends AnyVal {
       
       inline def setCompareItems(value: (ItemType, ItemType, SharedOptions) => Double): Self = StObject.set(x, "compareItems", js.Any.fromFunction3(value))
       

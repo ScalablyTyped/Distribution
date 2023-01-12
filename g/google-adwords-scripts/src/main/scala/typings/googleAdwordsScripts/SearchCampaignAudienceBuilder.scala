@@ -29,7 +29,8 @@ object SearchCampaignAudienceBuilder {
     __obj.asInstanceOf[SearchCampaignAudienceBuilder[SearchCampaignAudience]]
   }
   
-  extension [Self <: SearchCampaignAudienceBuilder[?], SearchCampaignAudience](x: Self & SearchCampaignAudienceBuilder[SearchCampaignAudience]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchCampaignAudienceBuilder[?], SearchCampaignAudience] (val x: Self & SearchCampaignAudienceBuilder[SearchCampaignAudience]) extends AnyVal {
     
     inline def setExclude(value: () => AdWordsOperation[SearchCampaignAudience]): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))
     

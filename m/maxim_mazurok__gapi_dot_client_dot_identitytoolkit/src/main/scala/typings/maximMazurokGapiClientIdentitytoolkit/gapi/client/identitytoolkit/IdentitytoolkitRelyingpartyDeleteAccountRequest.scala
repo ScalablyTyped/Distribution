@@ -22,7 +22,8 @@ object IdentitytoolkitRelyingpartyDeleteAccountRequest {
     __obj.asInstanceOf[IdentitytoolkitRelyingpartyDeleteAccountRequest]
   }
   
-  extension [Self <: IdentitytoolkitRelyingpartyDeleteAccountRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentitytoolkitRelyingpartyDeleteAccountRequest] (val x: Self) extends AnyVal {
     
     inline def setDelegatedProjectNumber(value: String): Self = StObject.set(x, "delegatedProjectNumber", value.asInstanceOf[js.Any])
     

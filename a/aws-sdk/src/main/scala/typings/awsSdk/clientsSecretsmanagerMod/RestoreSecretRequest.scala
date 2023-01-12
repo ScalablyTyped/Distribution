@@ -18,7 +18,8 @@ object RestoreSecretRequest {
     __obj.asInstanceOf[RestoreSecretRequest]
   }
   
-  extension [Self <: RestoreSecretRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreSecretRequest] (val x: Self) extends AnyVal {
     
     inline def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
   }

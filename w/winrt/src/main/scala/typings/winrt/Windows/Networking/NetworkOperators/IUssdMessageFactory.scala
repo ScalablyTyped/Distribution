@@ -15,7 +15,8 @@ object IUssdMessageFactory {
     __obj.asInstanceOf[IUssdMessageFactory]
   }
   
-  extension [Self <: IUssdMessageFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUssdMessageFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateMessage(value: String => UssdMessage): Self = StObject.set(x, "createMessage", js.Any.fromFunction1(value))
   }

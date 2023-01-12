@@ -18,7 +18,8 @@ object ItemsPnpObject {
     __obj.asInstanceOf[ItemsPnpObject]
   }
   
-  extension [Self <: ItemsPnpObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemsPnpObject] (val x: Self) extends AnyVal {
     
     inline def setItems(value: PnpObject): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object ClearAppsDataParams {
     __obj.asInstanceOf[ClearAppsDataParams]
   }
   
-  extension [Self <: ClearAppsDataParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearAppsDataParams] (val x: Self) extends AnyVal {
     
     inline def setPackageNames(value: js.Array[String]): Self = StObject.set(x, "packageNames", value.asInstanceOf[js.Any])
     

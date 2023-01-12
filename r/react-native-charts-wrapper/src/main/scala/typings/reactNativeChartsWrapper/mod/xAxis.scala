@@ -28,7 +28,8 @@ object xAxis {
     __obj.asInstanceOf[xAxis]
   }
   
-  extension [Self <: xAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: xAxis] (val x: Self) extends AnyVal {
     
     inline def setAvoidFirstLastClipping(value: Boolean): Self = StObject.set(x, "avoidFirstLastClipping", value.asInstanceOf[js.Any])
     

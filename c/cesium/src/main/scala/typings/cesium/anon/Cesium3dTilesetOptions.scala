@@ -27,7 +27,8 @@ object Cesium3dTilesetOptions {
     __obj.asInstanceOf[Cesium3dTilesetOptions]
   }
   
-  extension [Self <: Cesium3dTilesetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cesium3dTilesetOptions] (val x: Self) extends AnyVal {
     
     inline def setCesium3dTilesetOptions(value: Any): Self = StObject.set(x, "cesium3dTilesetOptions", value.asInstanceOf[js.Any])
     

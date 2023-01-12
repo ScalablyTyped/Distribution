@@ -17,7 +17,8 @@ object DimensionFilters {
     __obj.asInstanceOf[DimensionFilters]
   }
   
-  extension [Self <: DimensionFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionFilters] (val x: Self) extends AnyVal {
     
     inline def setDimensionKey(value: dimensionFilterKey): Self = StObject.set(x, "dimensionKey", value.asInstanceOf[js.Any])
     

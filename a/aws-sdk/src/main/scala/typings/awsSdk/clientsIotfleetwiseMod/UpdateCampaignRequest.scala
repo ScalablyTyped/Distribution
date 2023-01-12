@@ -33,7 +33,8 @@ object UpdateCampaignRequest {
     __obj.asInstanceOf[UpdateCampaignRequest]
   }
   
-  extension [Self <: UpdateCampaignRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCampaignRequest] (val x: Self) extends AnyVal {
     
     inline def setAction(value: UpdateCampaignAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

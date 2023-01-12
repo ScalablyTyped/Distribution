@@ -48,7 +48,8 @@ object GetCapacityReservationUsageResult {
     __obj.asInstanceOf[GetCapacityReservationUsageResult]
   }
   
-  extension [Self <: GetCapacityReservationUsageResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCapacityReservationUsageResult] (val x: Self) extends AnyVal {
     
     inline def setAvailableInstanceCount(value: Integer): Self = StObject.set(x, "AvailableInstanceCount", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object GroupedColumnsChangingEventUIParam {
     __obj.asInstanceOf[GroupedColumnsChangingEventUIParam]
   }
   
-  extension [Self <: GroupedColumnsChangingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupedColumnsChangingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     

@@ -60,7 +60,8 @@ object ReporterInstance {
     __obj.asInstanceOf[ReporterInstance]
   }
   
-  extension [Self <: ReporterInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReporterInstance] (val x: Self) extends AnyVal {
     
     inline def setAfterRenderListeners(value: ListenerCollection): Self = StObject.set(x, "afterRenderListeners", value.asInstanceOf[js.Any])
     

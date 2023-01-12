@@ -605,7 +605,8 @@ object typesLibEncoderMod {
       __obj.asInstanceOf[EncodingOptions]
     }
     
-    extension [Self <: EncodingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodingOptions] (val x: Self) extends AnyVal {
       
       inline def setCanonical(value: Boolean): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
       

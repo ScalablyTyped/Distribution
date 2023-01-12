@@ -29,7 +29,8 @@ object libUtilsTransformHistogramMod {
       __obj.asInstanceOf[StatisticData]
     }
     
-    extension [Self <: StatisticData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatisticData] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

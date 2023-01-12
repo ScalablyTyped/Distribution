@@ -44,7 +44,8 @@ object distMod {
       __obj.asInstanceOf[BrotliEncodeParams]
     }
     
-    extension [Self <: BrotliEncodeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrotliEncodeParams] (val x: Self) extends AnyVal {
       
       inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       

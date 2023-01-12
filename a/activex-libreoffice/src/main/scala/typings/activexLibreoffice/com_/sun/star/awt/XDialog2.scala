@@ -37,7 +37,8 @@ object XDialog2 {
     __obj.asInstanceOf[XDialog2]
   }
   
-  extension [Self <: XDialog2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDialog2] (val x: Self) extends AnyVal {
     
     inline def setEndDialog(value: Double => Unit): Self = StObject.set(x, "endDialog", js.Any.fromFunction1(value))
     

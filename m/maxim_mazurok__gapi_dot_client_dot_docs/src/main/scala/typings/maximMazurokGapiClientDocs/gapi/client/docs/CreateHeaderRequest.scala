@@ -22,7 +22,8 @@ object CreateHeaderRequest {
     __obj.asInstanceOf[CreateHeaderRequest]
   }
   
-  extension [Self <: CreateHeaderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateHeaderRequest] (val x: Self) extends AnyVal {
     
     inline def setSectionBreakLocation(value: Location): Self = StObject.set(x, "sectionBreakLocation", value.asInstanceOf[js.Any])
     

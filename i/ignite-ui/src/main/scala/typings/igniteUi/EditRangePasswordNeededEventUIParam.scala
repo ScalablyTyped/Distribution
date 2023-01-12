@@ -28,7 +28,8 @@ object EditRangePasswordNeededEventUIParam {
     __obj.asInstanceOf[EditRangePasswordNeededEventUIParam]
   }
   
-  extension [Self <: EditRangePasswordNeededEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditRangePasswordNeededEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

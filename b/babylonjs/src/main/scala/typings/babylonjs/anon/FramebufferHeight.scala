@@ -17,7 +17,8 @@ object FramebufferHeight {
     __obj.asInstanceOf[FramebufferHeight]
   }
   
-  extension [Self <: FramebufferHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FramebufferHeight] (val x: Self) extends AnyVal {
     
     inline def setFramebufferHeight(value: Double): Self = StObject.set(x, "framebufferHeight", value.asInstanceOf[js.Any])
     

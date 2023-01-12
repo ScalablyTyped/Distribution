@@ -17,7 +17,8 @@ object GeocoderControlOptions {
     __obj.asInstanceOf[GeocoderControlOptions]
   }
   
-  extension [Self <: GeocoderControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeocoderControlOptions] (val x: Self) extends AnyVal {
     
     inline def setKeepOpen(value: Boolean): Self = StObject.set(x, "keepOpen", value.asInstanceOf[js.Any])
     

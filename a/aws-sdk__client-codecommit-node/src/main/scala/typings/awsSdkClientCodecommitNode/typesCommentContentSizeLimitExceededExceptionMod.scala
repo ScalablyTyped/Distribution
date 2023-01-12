@@ -27,7 +27,8 @@ object typesCommentContentSizeLimitExceededExceptionMod {
       __obj.asInstanceOf[CommentContentSizeLimitExceededException]
     }
     
-    extension [Self <: CommentContentSizeLimitExceededException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentContentSizeLimitExceededException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentContentSizeLimitExceededException

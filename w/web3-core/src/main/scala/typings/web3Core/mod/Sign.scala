@@ -19,7 +19,8 @@ object Sign {
     __obj.asInstanceOf[Sign]
   }
   
-  extension [Self <: Sign](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sign] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

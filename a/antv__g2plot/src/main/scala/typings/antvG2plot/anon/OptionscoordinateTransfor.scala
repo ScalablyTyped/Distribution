@@ -221,7 +221,8 @@ object OptionscoordinateTransfor {
     __obj.asInstanceOf[OptionscoordinateTransfor]
   }
   
-  extension [Self <: OptionscoordinateTransfor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionscoordinateTransfor] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

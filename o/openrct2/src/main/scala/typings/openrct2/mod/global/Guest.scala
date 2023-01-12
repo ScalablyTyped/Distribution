@@ -135,7 +135,8 @@ object Guest {
     __obj.asInstanceOf[Guest]
   }
   
-  extension [Self <: Guest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Guest] (val x: Self) extends AnyVal {
     
     inline def setBalloonColour(value: Double): Self = StObject.set(x, "balloonColour", value.asInstanceOf[js.Any])
     

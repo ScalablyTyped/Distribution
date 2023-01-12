@@ -77,7 +77,8 @@ object buildTypesSeqBitStreamMod {
       __obj.asInstanceOf[SeqBitStreamParameters]
     }
     
-    extension [Self <: SeqBitStreamParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeqBitStreamParameters] (val x: Self) extends AnyVal {
       
       inline def setAppendBlock(value: Double): Self = StObject.set(x, "appendBlock", value.asInstanceOf[js.Any])
       

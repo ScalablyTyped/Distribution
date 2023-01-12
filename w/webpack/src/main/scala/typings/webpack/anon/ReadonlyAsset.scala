@@ -21,7 +21,8 @@ object ReadonlyAsset {
     __obj.asInstanceOf[ReadonlyAsset]
   }
   
-  extension [Self <: ReadonlyAsset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyAsset] (val x: Self) extends AnyVal {
     
     inline def setInfo(value: AssetInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     

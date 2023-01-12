@@ -21,7 +21,8 @@ object CustomReportExpectation {
     __obj.asInstanceOf[CustomReportExpectation]
   }
   
-  extension [Self <: CustomReportExpectation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomReportExpectation] (val x: Self) extends AnyVal {
     
     inline def setMatcherName(value: String): Self = StObject.set(x, "matcherName", value.asInstanceOf[js.Any])
     

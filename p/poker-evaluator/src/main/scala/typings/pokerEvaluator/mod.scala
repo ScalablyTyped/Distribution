@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[EvaluatedHand]
     }
     
-    extension [Self <: EvaluatedHand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EvaluatedHand] (val x: Self) extends AnyVal {
       
       inline def setHandName(value: HandName): Self = StObject.set(x, "handName", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object GetXssMatchSetResponse {
     __obj.asInstanceOf[GetXssMatchSetResponse]
   }
   
-  extension [Self <: GetXssMatchSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetXssMatchSetResponse] (val x: Self) extends AnyVal {
     
     inline def setXssMatchSet(value: XssMatchSet): Self = StObject.set(x, "XssMatchSet", value.asInstanceOf[js.Any])
     

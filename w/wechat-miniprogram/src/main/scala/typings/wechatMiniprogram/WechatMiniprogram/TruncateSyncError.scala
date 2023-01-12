@@ -33,7 +33,8 @@ object TruncateSyncError {
     __obj.asInstanceOf[TruncateSyncError]
   }
   
-  extension [Self <: TruncateSyncError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TruncateSyncError] (val x: Self) extends AnyVal {
     
     inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     

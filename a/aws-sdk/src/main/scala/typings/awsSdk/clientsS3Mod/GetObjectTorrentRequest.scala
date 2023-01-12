@@ -30,7 +30,8 @@ object GetObjectTorrentRequest {
     __obj.asInstanceOf[GetObjectTorrentRequest]
   }
   
-  extension [Self <: GetObjectTorrentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectTorrentRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

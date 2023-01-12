@@ -16,7 +16,8 @@ object GoogleCloudDialogflowCxV3beta1EnvironmentVersionConfig {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1EnvironmentVersionConfig]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3beta1EnvironmentVersionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1EnvironmentVersionConfig] (val x: Self) extends AnyVal {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

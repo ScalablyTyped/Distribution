@@ -40,7 +40,8 @@ object libCoreSubscriptionSubscriptionDelegateMod {
       __obj.asInstanceOf[SubscriptionDelegate]
     }
     
-    extension [Self <: SubscriptionDelegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionDelegate] (val x: Self) extends AnyVal {
       
       inline def setOnNotify(value: /* request */ IncomingNotifyRequest => Unit): Self = StObject.set(x, "onNotify", js.Any.fromFunction1(value))
       

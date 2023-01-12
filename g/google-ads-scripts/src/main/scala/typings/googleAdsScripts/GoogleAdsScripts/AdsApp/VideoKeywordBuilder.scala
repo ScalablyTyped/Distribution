@@ -41,7 +41,8 @@ object VideoKeywordBuilder {
     __obj.asInstanceOf[VideoKeywordBuilder]
   }
   
-  extension [Self <: VideoKeywordBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoKeywordBuilder] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: () => ExcludedVideoKeywordOperation): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))
     

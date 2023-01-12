@@ -56,7 +56,8 @@ object StyleSheet {
       __obj.asInstanceOf[AbsoluteFillStyle]
     }
     
-    extension [Self <: AbsoluteFillStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbsoluteFillStyle] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: `0`): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

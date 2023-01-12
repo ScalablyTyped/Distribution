@@ -28,7 +28,8 @@ object GetConsoleScreenshotRequest {
     __obj.asInstanceOf[GetConsoleScreenshotRequest]
   }
   
-  extension [Self <: GetConsoleScreenshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetConsoleScreenshotRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

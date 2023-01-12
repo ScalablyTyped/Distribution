@@ -22,7 +22,8 @@ object SnippetOptions {
     __obj.asInstanceOf[SnippetOptions]
   }
   
-  extension [Self <: SnippetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnippetOptions] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

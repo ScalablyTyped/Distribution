@@ -43,7 +43,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[AbsoluteMiddlewareEntry[Input, Output]]
     }
     
-    extension [Self <: AbsoluteMiddlewareEntry[?, ?], Input /* <: js.Object */, Output /* <: js.Object */](x: Self & (AbsoluteMiddlewareEntry[Input, Output])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbsoluteMiddlewareEntry[?, ?], Input /* <: js.Object */, Output /* <: js.Object */] (val x: Self & (AbsoluteMiddlewareEntry[Input, Output])) extends AnyVal {
       
       inline def setPriority(value: Priority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[MiddlewareEntry[Input, Output]]
     }
     
-    extension [Self <: MiddlewareEntry[?, ?], Input /* <: js.Object */, Output /* <: js.Object */](x: Self & (MiddlewareEntry[Input, Output])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MiddlewareEntry[?, ?], Input /* <: js.Object */, Output /* <: js.Object */] (val x: Self & (MiddlewareEntry[Input, Output])) extends AnyVal {
       
       inline def setMiddleware(
         value: ((/* next */ BuildHandler[Input, Output]) | (/* next */ DeserializeHandler[Input, Output]) | (/* next */ FinalizeHandler[Input, Output]) | (/* next */ InitializeHandler[Input, Output]) | (/* next */ SerializeHandler[Input, Output]), /* context */ HandlerExecutionContext) => (BuildHandler[Input, Output]) | (DeserializeHandler[Input, Output]) | (FinalizeHandler[Input, Output]) | (InitializeHandler[Input, Output]) | (SerializeHandler[Input, Output])
@@ -104,7 +106,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[NormalizedRelativeEntry[Input, Output]]
     }
     
-    extension [Self <: NormalizedRelativeEntry[?, ?], Input /* <: js.Object */, Output /* <: js.Object */](x: Self & (NormalizedRelativeEntry[Input, Output])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizedRelativeEntry[?, ?], Input /* <: js.Object */, Output /* <: js.Object */] (val x: Self & (NormalizedRelativeEntry[Input, Output])) extends AnyVal {
       
       inline def setMiddleware(
         value: ((/* next */ BuildHandler[Input, Output]) | (/* next */ DeserializeHandler[Input, Output]) | (/* next */ FinalizeHandler[Input, Output]) | (/* next */ InitializeHandler[Input, Output]) | (/* next */ SerializeHandler[Input, Output]), /* context */ HandlerExecutionContext) => (BuildHandler[Input, Output]) | (DeserializeHandler[Input, Output]) | (FinalizeHandler[Input, Output]) | (InitializeHandler[Input, Output]) | (SerializeHandler[Input, Output])

@@ -49,7 +49,8 @@ object TemporalLayerProperties {
     __obj.asInstanceOf[TemporalLayerProperties]
   }
   
-  extension [Self <: TemporalLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemporalLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
     

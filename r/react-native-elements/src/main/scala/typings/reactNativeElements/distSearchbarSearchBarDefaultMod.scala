@@ -89,7 +89,8 @@ object distSearchbarSearchBarDefaultMod {
       __obj.asInstanceOf[SearchBarState]
     }
     
-    extension [Self <: SearchBarState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchBarState] (val x: Self) extends AnyVal {
       
       inline def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
     }

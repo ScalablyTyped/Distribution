@@ -21,7 +21,8 @@ object TypeofMEMORYSTATS {
     __obj.asInstanceOf[TypeofMEMORYSTATS]
   }
   
-  extension [Self <: TypeofMEMORYSTATS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofMEMORYSTATS] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: () => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction0(value))
     

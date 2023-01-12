@@ -29,7 +29,8 @@ object LinkProps {
     __obj.asInstanceOf[LinkProps]
   }
   
-  extension [Self <: LinkProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

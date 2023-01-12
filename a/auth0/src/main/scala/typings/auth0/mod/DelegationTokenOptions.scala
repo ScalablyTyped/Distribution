@@ -23,7 +23,8 @@ object DelegationTokenOptions {
     __obj.asInstanceOf[DelegationTokenOptions]
   }
   
-  extension [Self <: DelegationTokenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DelegationTokenOptions] (val x: Self) extends AnyVal {
     
     inline def setApi_type(value: String): Self = StObject.set(x, "api_type", value.asInstanceOf[js.Any])
     

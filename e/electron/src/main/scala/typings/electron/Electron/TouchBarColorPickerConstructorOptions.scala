@@ -28,7 +28,8 @@ object TouchBarColorPickerConstructorOptions {
     __obj.asInstanceOf[TouchBarColorPickerConstructorOptions]
   }
   
-  extension [Self <: TouchBarColorPickerConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchBarColorPickerConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setAvailableColors(value: js.Array[String]): Self = StObject.set(x, "availableColors", value.asInstanceOf[js.Any])
     

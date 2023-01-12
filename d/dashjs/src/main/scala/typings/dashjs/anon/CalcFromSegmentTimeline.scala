@@ -17,7 +17,8 @@ object CalcFromSegmentTimeline {
     __obj.asInstanceOf[CalcFromSegmentTimeline]
   }
   
-  extension [Self <: CalcFromSegmentTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalcFromSegmentTimeline] (val x: Self) extends AnyVal {
     
     inline def setCalcFromSegmentTimeline(value: Boolean): Self = StObject.set(x, "calcFromSegmentTimeline", value.asInstanceOf[js.Any])
     

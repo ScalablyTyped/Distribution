@@ -68,7 +68,8 @@ object PrintTemplateLayoutOptions {
     __obj.asInstanceOf[PrintTemplateLayoutOptions]
   }
   
-  extension [Self <: PrintTemplateLayoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintTemplateLayoutOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthorText(value: String): Self = StObject.set(x, "authorText", value.asInstanceOf[js.Any])
     

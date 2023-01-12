@@ -33,7 +33,8 @@ object SubnetGroup {
     __obj.asInstanceOf[SubnetGroup]
   }
   
-  extension [Self <: SubnetGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubnetGroup] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

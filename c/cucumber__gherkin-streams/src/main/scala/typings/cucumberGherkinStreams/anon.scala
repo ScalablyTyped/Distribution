@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[DefaultDialect]
     }
     
-    extension [Self <: DefaultDialect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultDialect] (val x: Self) extends AnyVal {
       
       inline def setDefaultDialect(value: String): Self = StObject.set(x, "defaultDialect", value.asInstanceOf[js.Any])
       

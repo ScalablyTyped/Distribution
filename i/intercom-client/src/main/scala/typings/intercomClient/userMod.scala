@@ -33,7 +33,8 @@ object userMod {
       __obj.asInstanceOf[Avatar]
     }
     
-    extension [Self <: Avatar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Avatar] (val x: Self) extends AnyVal {
       
       inline def setImage_url(value: String): Self = StObject.set(x, "image_url", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object userMod {
       __obj.asInstanceOf[BaseUser]
     }
     
-    extension [Self <: BaseUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseUser] (val x: Self) extends AnyVal {
       
       inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
       
@@ -188,7 +190,8 @@ object userMod {
       __obj.asInstanceOf[CreateUpdateUser]
     }
     
-    extension [Self <: CreateUpdateUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateUpdateUser] (val x: Self) extends AnyVal {
       
       inline def setCompanies(value: js.Array[PartialCompanyremoveboole]): Self = StObject.set(x, "companies", value.asInstanceOf[js.Any])
       
@@ -214,7 +217,8 @@ object userMod {
       __obj.asInstanceOf[typings.intercomClient.userMod.List]
     }
     
-    extension [Self <: typings.intercomClient.userMod.List](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.intercomClient.userMod.List] (val x: Self) extends AnyVal {
       
       inline def setPages(value: Next): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
@@ -258,7 +262,8 @@ object userMod {
       __obj.asInstanceOf[LocationData]
     }
     
-    extension [Self <: LocationData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocationData] (val x: Self) extends AnyVal {
       
       inline def setCity_name(value: String): Self = StObject.set(x, "city_name", value.asInstanceOf[js.Any])
       
@@ -311,7 +316,8 @@ object userMod {
       __obj.asInstanceOf[Segment]
     }
     
-    extension [Self <: Segment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -334,7 +340,8 @@ object userMod {
       __obj.asInstanceOf[SocialProfile]
     }
     
-    extension [Self <: SocialProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocialProfile] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -363,7 +370,8 @@ object userMod {
       __obj.asInstanceOf[Tag]
     }
     
-    extension [Self <: Tag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -406,7 +414,8 @@ object userMod {
       __obj.asInstanceOf[User]
     }
     
-    extension [Self <: User](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
       
       inline def setCompanies(value: Companies): Self = StObject.set(x, "companies", value.asInstanceOf[js.Any])
       
@@ -433,7 +442,8 @@ object userMod {
       __obj.asInstanceOf[UserEmailIdentifier]
     }
     
-    extension [Self <: UserEmailIdentifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserEmailIdentifier] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     }

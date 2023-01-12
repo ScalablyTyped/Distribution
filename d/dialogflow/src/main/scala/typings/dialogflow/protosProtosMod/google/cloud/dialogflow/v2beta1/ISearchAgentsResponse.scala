@@ -20,7 +20,8 @@ object ISearchAgentsResponse {
     __obj.asInstanceOf[ISearchAgentsResponse]
   }
   
-  extension [Self <: ISearchAgentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchAgentsResponse] (val x: Self) extends AnyVal {
     
     inline def setAgents(value: js.Array[IAgent]): Self = StObject.set(x, "agents", value.asInstanceOf[js.Any])
     

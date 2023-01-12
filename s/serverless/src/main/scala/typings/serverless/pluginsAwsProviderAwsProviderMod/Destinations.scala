@@ -17,7 +17,8 @@ object Destinations {
     __obj.asInstanceOf[Destinations]
   }
   
-  extension [Self <: Destinations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Destinations] (val x: Self) extends AnyVal {
     
     inline def setOnFailure(value: String): Self = StObject.set(x, "onFailure", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ToolEventArgs {
     __obj.asInstanceOf[ToolEventArgs]
   }
   
-  extension [Self <: ToolEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolEventArgs] (val x: Self) extends AnyVal {
     
     inline def setEntityId(value: Double): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     

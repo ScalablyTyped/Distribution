@@ -40,7 +40,8 @@ object distCalcDepthMod {
       __obj.asInstanceOf[CalcDepthContext[T]]
     }
     
-    extension [Self <: CalcDepthContext[?], T](x: Self & CalcDepthContext[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalcDepthContext[?], T] (val x: Self & CalcDepthContext[T]) extends AnyVal {
       
       inline def setGetDependencies(value: T => js.Iterable[T]): Self = StObject.set(x, "getDependencies", js.Any.fromFunction1(value))
       

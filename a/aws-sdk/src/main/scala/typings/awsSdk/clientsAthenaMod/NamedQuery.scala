@@ -43,7 +43,8 @@ object NamedQuery {
     __obj.asInstanceOf[NamedQuery]
   }
   
-  extension [Self <: NamedQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedQuery] (val x: Self) extends AnyVal {
     
     inline def setDatabase(value: DatabaseString): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     

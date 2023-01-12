@@ -64,7 +64,8 @@ object PreviewImageOptions {
     __obj.asInstanceOf[PreviewImageOptions]
   }
   
-  extension [Self <: PreviewImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreviewImageOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

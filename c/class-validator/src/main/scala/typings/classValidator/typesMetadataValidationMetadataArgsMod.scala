@@ -52,7 +52,8 @@ object typesMetadataValidationMetadataArgsMod {
       __obj.asInstanceOf[ValidationMetadataArgs]
     }
     
-    extension [Self <: ValidationMetadataArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationMetadataArgs] (val x: Self) extends AnyVal {
       
       inline def setConstraintCls(value: js.Function): Self = StObject.set(x, "constraintCls", value.asInstanceOf[js.Any])
       

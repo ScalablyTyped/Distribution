@@ -21,7 +21,8 @@ object DictkBalance {
     __obj.asInstanceOf[DictkBalance]
   }
   
-  extension [Self <: DictkBalance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictkBalance] (val x: Self) extends AnyVal {
     
     inline def setBalance(value: String): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
   }

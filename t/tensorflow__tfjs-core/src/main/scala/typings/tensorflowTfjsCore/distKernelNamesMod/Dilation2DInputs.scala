@@ -18,7 +18,8 @@ object Dilation2DInputs {
     __obj.asInstanceOf[Dilation2DInputs]
   }
   
-  extension [Self <: Dilation2DInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dilation2DInputs] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: scala.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

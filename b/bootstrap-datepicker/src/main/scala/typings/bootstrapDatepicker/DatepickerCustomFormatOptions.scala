@@ -17,7 +17,8 @@ object DatepickerCustomFormatOptions {
     __obj.asInstanceOf[DatepickerCustomFormatOptions]
   }
   
-  extension [Self <: DatepickerCustomFormatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatepickerCustomFormatOptions] (val x: Self) extends AnyVal {
     
     inline def setToDisplay(value: (/* date */ String, /* format */ Any, /* language */ Any) => String): Self = StObject.set(x, "toDisplay", js.Any.fromFunction3(value))
     

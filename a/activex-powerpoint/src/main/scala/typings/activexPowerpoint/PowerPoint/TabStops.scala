@@ -37,7 +37,8 @@ object TabStops {
     __obj.asInstanceOf[TabStops]
   }
   
-  extension [Self <: TabStops](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabStops] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (PpTabStopType, Double) => TabStop): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

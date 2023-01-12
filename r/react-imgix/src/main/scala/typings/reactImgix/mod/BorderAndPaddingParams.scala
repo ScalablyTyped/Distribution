@@ -37,7 +37,8 @@ object BorderAndPaddingParams {
     __obj.asInstanceOf[BorderAndPaddingParams]
   }
   
-  extension [Self <: BorderAndPaddingParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderAndPaddingParams] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: ImgixParamType): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

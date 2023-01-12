@@ -22,7 +22,8 @@ object CompiledSlotDescriptor {
     __obj.asInstanceOf[CompiledSlotDescriptor]
   }
   
-  extension [Self <: CompiledSlotDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompiledSlotDescriptor] (val x: Self) extends AnyVal {
     
     inline def setFn(value: SSRSlot): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

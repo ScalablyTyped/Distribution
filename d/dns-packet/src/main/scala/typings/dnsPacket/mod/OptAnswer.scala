@@ -40,7 +40,8 @@ object OptAnswer {
     __obj.asInstanceOf[OptAnswer]
   }
   
-  extension [Self <: OptAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptAnswer] (val x: Self) extends AnyVal {
     
     inline def setEdnsVersion(value: Double): Self = StObject.set(x, "ednsVersion", value.asInstanceOf[js.Any])
     

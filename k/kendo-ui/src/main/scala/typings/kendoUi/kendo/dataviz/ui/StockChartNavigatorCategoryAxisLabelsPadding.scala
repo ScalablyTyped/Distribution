@@ -21,7 +21,8 @@ object StockChartNavigatorCategoryAxisLabelsPadding {
     __obj.asInstanceOf[StockChartNavigatorCategoryAxisLabelsPadding]
   }
   
-  extension [Self <: StockChartNavigatorCategoryAxisLabelsPadding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartNavigatorCategoryAxisLabelsPadding] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

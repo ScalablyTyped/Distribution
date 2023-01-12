@@ -32,7 +32,8 @@ object KeyPath {
     __obj.asInstanceOf[KeyPath]
   }
   
-  extension [Self <: KeyPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyPath] (val x: Self) extends AnyVal {
     
     inline def setArray(value: js.Array[String]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

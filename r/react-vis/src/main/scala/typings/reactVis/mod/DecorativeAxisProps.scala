@@ -29,7 +29,8 @@ object DecorativeAxisProps {
     __obj.asInstanceOf[DecorativeAxisProps]
   }
   
-  extension [Self <: DecorativeAxisProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecorativeAxisProps] (val x: Self) extends AnyVal {
     
     inline def setAxisDomain(value: js.Array[Double]): Self = StObject.set(x, "axisDomain", value.asInstanceOf[js.Any])
     

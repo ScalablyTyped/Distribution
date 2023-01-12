@@ -29,7 +29,8 @@ object ContinuedEvent {
     __obj.asInstanceOf[ContinuedEvent]
   }
   
-  extension [Self <: ContinuedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinuedEvent] (val x: Self) extends AnyVal {
     
     inline def setBody(value: AllThreadsContinued): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

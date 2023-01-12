@@ -186,7 +186,8 @@ object distSrcGridrouterMod {
       __obj.asInstanceOf[GridLine]
     }
     
-    extension [Self <: GridLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridLine] (val x: Self) extends AnyVal {
       
       inline def setNodes(value: js.Array[NodeWrapper]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
@@ -209,7 +210,8 @@ object distSrcGridrouterMod {
       __obj.asInstanceOf[NodeAccessor[Node]]
     }
     
-    extension [Self <: NodeAccessor[?], Node](x: Self & NodeAccessor[Node]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeAccessor[?], Node] (val x: Self & NodeAccessor[Node]) extends AnyVal {
       
       inline def setGetBounds(value: Node => Rectangle): Self = StObject.set(x, "getBounds", js.Any.fromFunction1(value))
       

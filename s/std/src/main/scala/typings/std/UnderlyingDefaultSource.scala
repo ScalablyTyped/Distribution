@@ -28,7 +28,8 @@ object UnderlyingDefaultSource {
     __obj.asInstanceOf[UnderlyingDefaultSource[R]]
   }
   
-  extension [Self <: UnderlyingDefaultSource[?], R](x: Self & UnderlyingDefaultSource[R]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnderlyingDefaultSource[?], R] (val x: Self & UnderlyingDefaultSource[R]) extends AnyVal {
     
     inline def setCancel(value: /* reason */ js.UndefOr[Any] => Unit | PromiseLike[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     

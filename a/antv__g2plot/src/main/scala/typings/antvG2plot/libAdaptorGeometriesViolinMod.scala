@@ -32,7 +32,8 @@ object libAdaptorGeometriesViolinMod {
       __obj.asInstanceOf[ViolinGeometryOptions]
     }
     
-    extension [Self <: ViolinGeometryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViolinGeometryOptions] (val x: Self) extends AnyVal {
       
       inline def setSeriesField(value: String): Self = StObject.set(x, "seriesField", value.asInstanceOf[js.Any])
       

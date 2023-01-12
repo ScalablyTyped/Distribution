@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[BrowserOption]
     }
     
-    extension [Self <: BrowserOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserOption] (val x: Self) extends AnyVal {
       
       inline def setFallback(value: String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       

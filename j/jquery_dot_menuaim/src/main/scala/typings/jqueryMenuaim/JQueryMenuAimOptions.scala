@@ -61,7 +61,8 @@ object JQueryMenuAimOptions {
     __obj.asInstanceOf[JQueryMenuAimOptions]
   }
   
-  extension [Self <: JQueryMenuAimOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryMenuAimOptions] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: () => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
     

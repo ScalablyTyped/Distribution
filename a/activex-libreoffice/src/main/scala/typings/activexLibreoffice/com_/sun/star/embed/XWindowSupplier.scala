@@ -37,7 +37,8 @@ object XWindowSupplier {
     __obj.asInstanceOf[XWindowSupplier]
   }
   
-  extension [Self <: XWindowSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XWindowSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetWindow(value: () => XWindow): Self = StObject.set(x, "getWindow", js.Any.fromFunction0(value))
     

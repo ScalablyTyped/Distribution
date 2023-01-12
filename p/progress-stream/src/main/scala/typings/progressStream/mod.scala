@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDrain(value: Boolean): Self = StObject.set(x, "drain", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object mod {
       __obj.asInstanceOf[Progress]
     }
     
-    extension [Self <: Progress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
       
       inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       

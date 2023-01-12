@@ -22,7 +22,8 @@ object DefaultLength {
     __obj.asInstanceOf[DefaultLength]
   }
   
-  extension [Self <: DefaultLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultLength] (val x: Self) extends AnyVal {
     
     inline def setDefaultLength(value: Double): Self = StObject.set(x, "defaultLength", value.asInstanceOf[js.Any])
     

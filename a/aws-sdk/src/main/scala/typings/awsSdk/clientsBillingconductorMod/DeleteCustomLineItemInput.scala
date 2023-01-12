@@ -20,7 +20,8 @@ object DeleteCustomLineItemInput {
     __obj.asInstanceOf[DeleteCustomLineItemInput]
   }
   
-  extension [Self <: DeleteCustomLineItemInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCustomLineItemInput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: CustomLineItemArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

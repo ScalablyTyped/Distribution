@@ -15,7 +15,8 @@ object Gravity {
     __obj.asInstanceOf[Gravity]
   }
   
-  extension [Self <: Gravity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gravity] (val x: Self) extends AnyVal {
     
     inline def setGravity(value: js.Array[Double]): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     

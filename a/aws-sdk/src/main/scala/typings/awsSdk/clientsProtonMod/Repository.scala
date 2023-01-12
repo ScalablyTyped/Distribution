@@ -38,7 +38,8 @@ object Repository {
     __obj.asInstanceOf[Repository]
   }
   
-  extension [Self <: Repository](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Repository] (val x: Self) extends AnyVal {
     
     inline def setArn(value: RepositoryArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

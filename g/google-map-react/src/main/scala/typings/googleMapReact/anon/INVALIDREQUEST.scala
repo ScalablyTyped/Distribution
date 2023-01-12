@@ -38,7 +38,8 @@ object INVALIDREQUEST {
     __obj.asInstanceOf[INVALIDREQUEST]
   }
   
-  extension [Self <: INVALIDREQUEST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INVALIDREQUEST] (val x: Self) extends AnyVal {
     
     inline def setINVALID_REQUEST(value: String): Self = StObject.set(x, "INVALID_REQUEST", value.asInstanceOf[js.Any])
     

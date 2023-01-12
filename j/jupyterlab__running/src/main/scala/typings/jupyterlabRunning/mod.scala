@@ -34,7 +34,8 @@ object mod {
     @js.native
     val ^ : Token[IRunningSessionManagers] = js.native
     
-    extension [Self <: IRunningSessionManagers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRunningSessionManagers] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: IManager => IDisposable): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -118,7 +119,8 @@ object mod {
         __obj.asInstanceOf[IManager]
       }
       
-      extension [Self <: IManager](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IManager] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -172,7 +174,8 @@ object mod {
         __obj.asInstanceOf[IRunningItem]
       }
       
-      extension [Self <: IRunningItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRunningItem] (val x: Self) extends AnyVal {
         
         inline def setDetail(value: () => String): Self = StObject.set(x, "detail", js.Any.fromFunction0(value))
         

@@ -20,7 +20,8 @@ object SerialOutputSignals {
     __obj.asInstanceOf[SerialOutputSignals]
   }
   
-  extension [Self <: SerialOutputSignals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerialOutputSignals] (val x: Self) extends AnyVal {
     
     inline def setBreak(value: Boolean): Self = StObject.set(x, "break", value.asInstanceOf[js.Any])
     

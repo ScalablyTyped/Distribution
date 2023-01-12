@@ -22,7 +22,8 @@ object SeekEntryhighstringlowstr {
     __obj.asInstanceOf[SeekEntryhighstringlowstr]
   }
   
-  extension [Self <: SeekEntryhighstringlowstr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeekEntryhighstringlowstr] (val x: Self) extends AnyVal {
     
     inline def setHigh(value: String): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     

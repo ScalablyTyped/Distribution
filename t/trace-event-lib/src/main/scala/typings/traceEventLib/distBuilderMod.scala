@@ -89,7 +89,8 @@ object distBuilderMod {
       __obj.asInstanceOf[AutocompletedEventFields]
     }
     
-    extension [Self <: AutocompletedEventFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutocompletedEventFields] (val x: Self) extends AnyVal {
       
       inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       

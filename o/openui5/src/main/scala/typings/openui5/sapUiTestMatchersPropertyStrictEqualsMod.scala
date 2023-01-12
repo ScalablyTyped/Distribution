@@ -163,7 +163,8 @@ object sapUiTestMatchersPropertyStrictEqualsMod {
       __obj.asInstanceOf[PropertyStrictEqualsSettings]
     }
     
-    extension [Self <: PropertyStrictEqualsSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropertyStrictEqualsSettings] (val x: Self) extends AnyVal {
       
       inline def setName(value: String | PropertyBindingInfo): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

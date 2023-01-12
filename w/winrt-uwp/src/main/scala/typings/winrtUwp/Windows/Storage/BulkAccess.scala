@@ -719,7 +719,8 @@ object BulkAccess {
       __obj.asInstanceOf[IStorageItemInformation]
     }
     
-    extension [Self <: IStorageItemInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStorageItemInformation] (val x: Self) extends AnyVal {
       
       inline def setBasicProperties(value: BasicProperties): Self = StObject.set(x, "basicProperties", value.asInstanceOf[js.Any])
       

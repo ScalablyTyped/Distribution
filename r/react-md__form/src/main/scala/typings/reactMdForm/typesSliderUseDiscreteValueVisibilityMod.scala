@@ -43,7 +43,8 @@ object typesSliderUseDiscreteValueVisibilityMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object typesSliderUseDiscreteValueVisibilityMod {
       __obj.asInstanceOf[ReturnedProps]
     }
     
-    extension [Self <: ReturnedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReturnedProps] (val x: Self) extends AnyVal {
       
       inline def setAnimateValue(value: Boolean): Self = StObject.set(x, "animateValue", value.asInstanceOf[js.Any])
       

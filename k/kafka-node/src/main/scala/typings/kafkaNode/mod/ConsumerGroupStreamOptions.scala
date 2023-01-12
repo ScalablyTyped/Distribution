@@ -17,7 +17,8 @@ object ConsumerGroupStreamOptions {
     __obj.asInstanceOf[ConsumerGroupStreamOptions]
   }
   
-  extension [Self <: ConsumerGroupStreamOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumerGroupStreamOptions] (val x: Self) extends AnyVal {
     
     inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     

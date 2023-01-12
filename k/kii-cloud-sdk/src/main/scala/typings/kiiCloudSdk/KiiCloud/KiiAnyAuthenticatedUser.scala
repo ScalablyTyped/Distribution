@@ -25,7 +25,8 @@ object KiiAnyAuthenticatedUser {
     __obj.asInstanceOf[KiiAnyAuthenticatedUser]
   }
   
-  extension [Self <: KiiAnyAuthenticatedUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KiiAnyAuthenticatedUser] (val x: Self) extends AnyVal {
     
     inline def setGetID(value: () => String): Self = StObject.set(x, "getID", js.Any.fromFunction0(value))
   }

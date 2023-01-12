@@ -22,7 +22,8 @@ object CAPICOM_ATTRIBUTE {
     __obj.asInstanceOf[CAPICOM_ATTRIBUTE]
   }
   
-  extension [Self <: CAPICOM_ATTRIBUTE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CAPICOM_ATTRIBUTE] (val x: Self) extends AnyVal {
     
     inline def setCAPICOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_DESCRIPTION(value: `2`): Self = StObject.set(x, "CAPICOM_AUTHENTICATED_ATTRIBUTE_DOCUMENT_DESCRIPTION", value.asInstanceOf[js.Any])
     

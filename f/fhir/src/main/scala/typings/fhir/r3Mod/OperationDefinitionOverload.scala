@@ -29,7 +29,8 @@ object OperationDefinitionOverload {
     __obj.asInstanceOf[OperationDefinitionOverload]
   }
   
-  extension [Self <: OperationDefinitionOverload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationDefinitionOverload] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

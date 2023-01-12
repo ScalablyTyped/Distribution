@@ -60,7 +60,8 @@ object libCssCssExtractorMod {
       __obj.asInstanceOf[CssExtractor]
     }
     
-    extension [Self <: CssExtractor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CssExtractor] (val x: Self) extends AnyVal {
       
       inline def setCss_(value: Any): Self = StObject.set(x, "css_", value.asInstanceOf[js.Any])
       

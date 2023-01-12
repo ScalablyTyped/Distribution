@@ -35,7 +35,8 @@ object SjclPointJacobian {
     __obj.asInstanceOf[SjclPointJacobian]
   }
   
-  extension [Self <: SjclPointJacobian](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SjclPointJacobian] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: SjclEllipticalPoint => SjclPointJacobian): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

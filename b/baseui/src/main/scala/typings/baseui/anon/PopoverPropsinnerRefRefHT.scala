@@ -131,7 +131,8 @@ object PopoverPropsinnerRefRefHT {
     __obj.asInstanceOf[PopoverPropsinnerRefRefHT]
   }
   
-  extension [Self <: PopoverPropsinnerRefRefHT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopoverPropsinnerRefRefHT] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityType(value: AccessibilityType): Self = StObject.set(x, "accessibilityType", value.asInstanceOf[js.Any])
     

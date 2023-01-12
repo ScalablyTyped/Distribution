@@ -23,7 +23,8 @@ object PartialBorderDiagonal {
     __obj.asInstanceOf[PartialBorderDiagonal]
   }
   
-  extension [Self <: PartialBorderDiagonal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBorderDiagonal] (val x: Self) extends AnyVal {
     
     inline def setColor(value: PartialColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

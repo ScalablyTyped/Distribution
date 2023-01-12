@@ -146,7 +146,8 @@ object typesCoreQueryObserverMod {
       __obj.asInstanceOf[NotifyOptions]
     }
     
-    extension [Self <: NotifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotifyOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -179,7 +180,8 @@ object typesCoreQueryObserverMod {
       __obj.asInstanceOf[ObserverFetchOptions]
     }
     
-    extension [Self <: ObserverFetchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObserverFetchOptions] (val x: Self) extends AnyVal {
       
       inline def setThrowOnError(value: Boolean): Self = StObject.set(x, "throwOnError", value.asInstanceOf[js.Any])
       

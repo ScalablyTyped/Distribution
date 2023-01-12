@@ -23,7 +23,8 @@ object Keyword_ {
     __obj.asInstanceOf[Keyword_]
   }
   
-  extension [Self <: Keyword_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Keyword_] (val x: Self) extends AnyVal {
     
     inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
     

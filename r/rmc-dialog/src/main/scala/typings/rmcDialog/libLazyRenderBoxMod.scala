@@ -30,7 +30,8 @@ object libLazyRenderBoxMod {
       __obj.asInstanceOf[ILazyRenderBoxPropTypes]
     }
     
-    extension [Self <: ILazyRenderBoxPropTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILazyRenderBoxPropTypes] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

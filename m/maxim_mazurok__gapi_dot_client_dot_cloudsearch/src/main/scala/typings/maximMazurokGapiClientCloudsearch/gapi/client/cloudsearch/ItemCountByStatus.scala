@@ -25,7 +25,8 @@ object ItemCountByStatus {
     __obj.asInstanceOf[ItemCountByStatus]
   }
   
-  extension [Self <: ItemCountByStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemCountByStatus] (val x: Self) extends AnyVal {
     
     inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

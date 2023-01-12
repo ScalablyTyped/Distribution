@@ -37,7 +37,8 @@ object CurrentText {
     __obj.asInstanceOf[CurrentText]
   }
   
-  extension [Self <: CurrentText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentText] (val x: Self) extends AnyVal {
     
     inline def setCurrentText(value: String): Self = StObject.set(x, "currentText", value.asInstanceOf[js.Any])
     

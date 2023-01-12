@@ -169,7 +169,8 @@ object TypeScriptWorker {
     __obj.asInstanceOf[TypeScriptWorker]
   }
   
-  extension [Self <: TypeScriptWorker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeScriptWorker] (val x: Self) extends AnyVal {
     
     inline def setFindRenameLocations(value: (String, Double, Boolean, Boolean, Boolean) => js.Promise[js.UndefOr[js.Array[Any]]]): Self = StObject.set(x, "findRenameLocations", js.Any.fromFunction5(value))
     

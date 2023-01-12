@@ -82,7 +82,8 @@ object DocumentStyle {
     __obj.asInstanceOf[DocumentStyle]
   }
   
-  extension [Self <: DocumentStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentStyle] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: Background): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

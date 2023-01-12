@@ -23,7 +23,8 @@ object UpdateRegionSettingsInput {
     __obj.asInstanceOf[UpdateRegionSettingsInput]
   }
   
-  extension [Self <: UpdateRegionSettingsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRegionSettingsInput] (val x: Self) extends AnyVal {
     
     inline def setResourceTypeManagementPreference(value: ResourceTypeManagementPreference): Self = StObject.set(x, "ResourceTypeManagementPreference", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object ModelPerson {
     __obj.asInstanceOf[ModelPerson]
   }
   
-  extension [Self <: ModelPerson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelPerson] (val x: Self) extends AnyVal {
     
     inline def setAddresses(value: js.Array[ModelAddressWithConfirmation]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     

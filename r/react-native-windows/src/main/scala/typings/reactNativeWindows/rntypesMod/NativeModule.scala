@@ -31,7 +31,8 @@ object NativeModule {
     __obj.asInstanceOf[NativeModule]
   }
   
-  extension [Self <: NativeModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeModule] (val x: Self) extends AnyVal {
     
     inline def setAddListener(value: String => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
     

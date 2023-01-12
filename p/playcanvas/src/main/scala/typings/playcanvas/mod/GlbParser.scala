@@ -38,7 +38,8 @@ object GlbParser {
     __obj.asInstanceOf[GlbParser]
   }
   
-  extension [Self <: GlbParser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlbParser] (val x: Self) extends AnyVal {
     
     inline def setLoad(value: (Any, Any, Any) => Unit): Self = StObject.set(x, "load", js.Any.fromFunction3(value))
     

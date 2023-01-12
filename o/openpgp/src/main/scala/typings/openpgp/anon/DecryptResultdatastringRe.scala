@@ -26,7 +26,8 @@ object DecryptResultdatastringRe {
     __obj.asInstanceOf[DecryptResultdatastringRe]
   }
   
-  extension [Self <: DecryptResultdatastringRe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecryptResultdatastringRe] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: String | (ReadableStream[String | js.typedarray.Uint8Array]) | NodeStream | js.typedarray.Uint8Array

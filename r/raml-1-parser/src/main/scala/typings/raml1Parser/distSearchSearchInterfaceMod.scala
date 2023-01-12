@@ -165,7 +165,8 @@ object distSearchSearchInterfaceMod {
       __obj.asInstanceOf[FindUsagesResult]
     }
     
-    extension [Self <: FindUsagesResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindUsagesResult] (val x: Self) extends AnyVal {
       
       inline def setNode(value: IHighLevelNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
@@ -186,7 +187,8 @@ object distSearchSearchInterfaceMod {
       __obj.asInstanceOf[IHighLevelSourceProvider]
     }
     
-    extension [Self <: IHighLevelSourceProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHighLevelSourceProvider] (val x: Self) extends AnyVal {
       
       inline def setGetSource(value: () => IParseResult): Self = StObject.set(x, "getSource", js.Any.fromFunction0(value))
     }

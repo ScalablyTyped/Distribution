@@ -28,7 +28,8 @@ object GetRelationalDatabaseEventsRequest {
     __obj.asInstanceOf[GetRelationalDatabaseEventsRequest]
   }
   
-  extension [Self <: GetRelationalDatabaseEventsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRelationalDatabaseEventsRequest] (val x: Self) extends AnyVal {
     
     inline def setDurationInMinutes(value: integer): Self = StObject.set(x, "durationInMinutes", value.asInstanceOf[js.Any])
     

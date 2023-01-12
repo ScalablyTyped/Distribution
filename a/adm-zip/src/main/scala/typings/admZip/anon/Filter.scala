@@ -17,7 +17,8 @@ object Filter {
     __obj.asInstanceOf[Filter]
   }
   
-  extension [Self <: Filter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: js.RegExp | (js.Function1[/* filename */ String, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

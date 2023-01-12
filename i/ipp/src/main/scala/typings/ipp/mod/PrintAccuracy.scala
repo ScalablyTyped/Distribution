@@ -21,7 +21,8 @@ object PrintAccuracy {
     __obj.asInstanceOf[PrintAccuracy]
   }
   
-  extension [Self <: PrintAccuracy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintAccuracy] (val x: Self) extends AnyVal {
     
     inline def `setAccuracy-units`(value: AccuracyUnits): Self = StObject.set(x, "accuracy-units", value.asInstanceOf[js.Any])
     

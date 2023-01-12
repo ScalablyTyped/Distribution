@@ -110,7 +110,8 @@ object mod {
       __obj.asInstanceOf[ToStringOpts]
     }
     
-    extension [Self <: ToStringOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToStringOpts] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: auto | v4 | `v4-mapped` | v6): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

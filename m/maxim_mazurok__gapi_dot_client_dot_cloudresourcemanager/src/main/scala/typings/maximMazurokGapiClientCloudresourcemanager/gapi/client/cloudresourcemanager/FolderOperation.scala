@@ -25,7 +25,8 @@ object FolderOperation {
     __obj.asInstanceOf[FolderOperation]
   }
   
-  extension [Self <: FolderOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FolderOperation] (val x: Self) extends AnyVal {
     
     inline def setDestinationParent(value: String): Self = StObject.set(x, "destinationParent", value.asInstanceOf[js.Any])
     

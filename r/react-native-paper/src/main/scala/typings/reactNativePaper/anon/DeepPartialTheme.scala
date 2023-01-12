@@ -28,7 +28,8 @@ object DeepPartialTheme {
     __obj.asInstanceOf[DeepPartialTheme]
   }
   
-  extension [Self <: DeepPartialTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeepPartialTheme] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: DeepPartialThemeAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListInsightsAnyStatusFilter {
     __obj.asInstanceOf[ListInsightsAnyStatusFilter]
   }
   
-  extension [Self <: ListInsightsAnyStatusFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInsightsAnyStatusFilter] (val x: Self) extends AnyVal {
     
     inline def setStartTimeRange(value: StartTimeRange): Self = StObject.set(x, "StartTimeRange", value.asInstanceOf[js.Any])
     

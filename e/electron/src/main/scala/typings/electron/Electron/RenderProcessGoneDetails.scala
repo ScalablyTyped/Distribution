@@ -34,7 +34,8 @@ object RenderProcessGoneDetails {
     __obj.asInstanceOf[RenderProcessGoneDetails]
   }
   
-  extension [Self <: RenderProcessGoneDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderProcessGoneDetails] (val x: Self) extends AnyVal {
     
     inline def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     

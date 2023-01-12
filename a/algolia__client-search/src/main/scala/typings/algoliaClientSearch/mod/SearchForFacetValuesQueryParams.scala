@@ -23,7 +23,8 @@ object SearchForFacetValuesQueryParams {
     __obj.asInstanceOf[SearchForFacetValuesQueryParams]
   }
   
-  extension [Self <: SearchForFacetValuesQueryParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchForFacetValuesQueryParams] (val x: Self) extends AnyVal {
     
     inline def setFacetName(value: String): Self = StObject.set(x, "facetName", value.asInstanceOf[js.Any])
     

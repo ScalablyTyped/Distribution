@@ -18,7 +18,8 @@ object CreateMembersResponse {
     __obj.asInstanceOf[CreateMembersResponse]
   }
   
-  extension [Self <: CreateMembersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMembersResponse] (val x: Self) extends AnyVal {
     
     inline def setUnprocessedAccounts(value: UnprocessedAccounts): Self = StObject.set(x, "UnprocessedAccounts", value.asInstanceOf[js.Any])
     

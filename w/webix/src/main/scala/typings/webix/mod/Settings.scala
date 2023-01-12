@@ -18,7 +18,8 @@ object Settings {
   @js.native
   val ^ : Settings = js.native
   
-  extension [Self <: Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: obj): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object PartialStyleRulesStepCont {
     __obj.asInstanceOf[PartialStyleRulesStepCont]
   }
   
-  extension [Self <: PartialStyleRulesStepCont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesStepCont] (val x: Self) extends AnyVal {
     
     inline def setLast(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

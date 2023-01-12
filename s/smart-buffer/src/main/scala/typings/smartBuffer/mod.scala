@@ -931,7 +931,8 @@ object mod {
       __obj.asInstanceOf[SmartBufferOptions]
     }
     
-    extension [Self <: SmartBufferOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmartBufferOptions] (val x: Self) extends AnyVal {
       
       inline def setBuff(value: Buffer): Self = StObject.set(x, "buff", value.asInstanceOf[js.Any])
       

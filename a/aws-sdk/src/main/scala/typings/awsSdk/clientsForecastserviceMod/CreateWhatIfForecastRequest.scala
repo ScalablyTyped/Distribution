@@ -38,7 +38,8 @@ object CreateWhatIfForecastRequest {
     __obj.asInstanceOf[CreateWhatIfForecastRequest]
   }
   
-  extension [Self <: CreateWhatIfForecastRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWhatIfForecastRequest] (val x: Self) extends AnyVal {
     
     inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

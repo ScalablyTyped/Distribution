@@ -22,7 +22,8 @@ object TypeUrl {
     __obj.asInstanceOf[TypeUrl]
   }
   
-  extension [Self <: TypeUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeUrl] (val x: Self) extends AnyVal {
     
     inline def setType(value: liveStreamingStopped): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

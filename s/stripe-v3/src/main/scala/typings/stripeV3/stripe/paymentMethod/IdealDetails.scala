@@ -38,7 +38,8 @@ object IdealDetails {
     __obj.asInstanceOf[IdealDetails]
   }
   
-  extension [Self <: IdealDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdealDetails] (val x: Self) extends AnyVal {
     
     inline def setBank(
       value: abn_amro | asn_bank | bunq | handelsbanken | ing | knab | moneyou | rabobank | regiobank | sns_bank | triodos_bank | van_lanschot

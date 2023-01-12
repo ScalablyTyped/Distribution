@@ -25,7 +25,8 @@ object GoogleChatV1WidgetMarkup {
     __obj.asInstanceOf[GoogleChatV1WidgetMarkup]
   }
   
-  extension [Self <: GoogleChatV1WidgetMarkup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleChatV1WidgetMarkup] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: js.Array[GoogleChatV1WidgetMarkupButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

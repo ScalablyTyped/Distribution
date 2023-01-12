@@ -195,7 +195,8 @@ object mod {
       __obj.asInstanceOf[Continent]
     }
     
-    extension [Self <: Continent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Continent] (val x: Self) extends AnyVal {
       
       inline def setCountries(value: js.Array[Country]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
       
@@ -246,7 +247,8 @@ object mod {
       __obj.asInstanceOf[Country]
     }
     
-    extension [Self <: Country](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Country] (val x: Self) extends AnyVal {
       
       inline def setAlpha2(value: String): Self = StObject.set(x, "alpha2", value.asInstanceOf[js.Any])
       
@@ -293,7 +295,8 @@ object mod {
       __obj.asInstanceOf[Currency]
     }
     
-    extension [Self <: Currency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -324,7 +327,8 @@ object mod {
       __obj.asInstanceOf[Language]
     }
     
-    extension [Self <: Language](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
       
       inline def setAlpha2(value: String): Self = StObject.set(x, "alpha2", value.asInstanceOf[js.Any])
       
@@ -349,7 +353,8 @@ object mod {
       __obj.asInstanceOf[Region]
     }
     
-    extension [Self <: Region](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
       
       inline def setCountries(value: js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
       

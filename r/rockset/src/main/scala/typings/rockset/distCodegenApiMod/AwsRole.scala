@@ -20,7 +20,8 @@ object AwsRole {
     __obj.asInstanceOf[AwsRole]
   }
   
-  extension [Self <: AwsRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRole] (val x: Self) extends AnyVal {
     
     inline def setAws_role_arn(value: String): Self = StObject.set(x, "aws_role_arn", value.asInstanceOf[js.Any])
   }

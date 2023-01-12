@@ -19,7 +19,8 @@ object ConsistentHashRingOptions {
     __obj.asInstanceOf[ConsistentHashRingOptions]
   }
   
-  extension [Self <: ConsistentHashRingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsistentHashRingOptions] (val x: Self) extends AnyVal {
     
     inline def setComputeHash(value: (/* key */ String | Double, /* seed */ Double) => Double): Self = StObject.set(x, "computeHash", js.Any.fromFunction2(value))
     

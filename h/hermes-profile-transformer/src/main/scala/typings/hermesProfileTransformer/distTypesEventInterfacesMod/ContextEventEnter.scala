@@ -20,7 +20,8 @@ object ContextEventEnter {
     __obj.asInstanceOf[ContextEventEnter]
   }
   
-  extension [Self <: ContextEventEnter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextEventEnter] (val x: Self) extends AnyVal {
     
     inline def setPh(value: CONTEXT_EVENTS_ENTER): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
   }

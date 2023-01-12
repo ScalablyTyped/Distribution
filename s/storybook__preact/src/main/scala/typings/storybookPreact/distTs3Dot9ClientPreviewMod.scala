@@ -104,7 +104,8 @@ object distTs3Dot9ClientPreviewMod {
       __obj.asInstanceOf[ClientApi]
     }
     
-    extension [Self <: ClientApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApi] (val x: Self) extends AnyVal {
       
       inline def setClearDecorators(value: () => Unit): Self = StObject.set(x, "clearDecorators", js.Any.fromFunction0(value))
       

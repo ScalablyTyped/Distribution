@@ -59,7 +59,8 @@ object TopologyOptions {
     __obj.asInstanceOf[TopologyOptions]
   }
   
-  extension [Self <: TopologyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopologyOptions] (val x: Self) extends AnyVal {
     
     inline def setDirectConnection(value: Boolean): Self = StObject.set(x, "directConnection", value.asInstanceOf[js.Any])
     

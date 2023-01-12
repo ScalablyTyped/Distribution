@@ -20,7 +20,8 @@ object TypeofResizable {
     __obj.asInstanceOf[TypeofResizable]
   }
   
-  extension [Self <: TypeofResizable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofResizable] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Resizable): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

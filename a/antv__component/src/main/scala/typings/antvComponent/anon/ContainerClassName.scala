@@ -88,7 +88,8 @@ object ContainerClassName {
     __obj.asInstanceOf[ContainerClassName]
   }
   
-  extension [Self <: ContainerClassName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerClassName] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

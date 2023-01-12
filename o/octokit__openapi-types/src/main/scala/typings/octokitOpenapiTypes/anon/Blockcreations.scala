@@ -51,7 +51,8 @@ object Blockcreations {
     __obj.asInstanceOf[Blockcreations]
   }
   
-  extension [Self <: Blockcreations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Blockcreations] (val x: Self) extends AnyVal {
     
     inline def setAllow_deletions(value: `388`): Self = StObject.set(x, "allow_deletions", value.asInstanceOf[js.Any])
     

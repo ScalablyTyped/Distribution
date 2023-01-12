@@ -32,7 +32,8 @@ object FiveQuartersSet {
     __obj.asInstanceOf[FiveQuartersSet]
   }
   
-  extension [Self <: FiveQuartersSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FiveQuartersSet] (val x: Self) extends AnyVal {
     
     inline def setBlackCircle(value: Icon): Self = StObject.set(x, "blackCircle", value.asInstanceOf[js.Any])
     

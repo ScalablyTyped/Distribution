@@ -15,7 +15,8 @@ object IMacAlgorithmProviderStatics {
     __obj.asInstanceOf[IMacAlgorithmProviderStatics]
   }
   
-  extension [Self <: IMacAlgorithmProviderStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMacAlgorithmProviderStatics] (val x: Self) extends AnyVal {
     
     inline def setOpenAlgorithm(value: String => MacAlgorithmProvider): Self = StObject.set(x, "openAlgorithm", js.Any.fromFunction1(value))
   }

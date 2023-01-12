@@ -27,7 +27,8 @@ object PrintTaskDefinition {
     __obj.asInstanceOf[PrintTaskDefinition]
   }
   
-  extension [Self <: PrintTaskDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintTaskDefinition] (val x: Self) extends AnyVal {
     
     inline def setCreatedBy(value: AppIdentity): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     

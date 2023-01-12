@@ -41,7 +41,8 @@ object DiGraph {
     __obj.asInstanceOf[DiGraph]
   }
   
-  extension [Self <: DiGraph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiGraph] (val x: Self) extends AnyVal {
     
     inline def setAddEdge(value: (Double, Double) => Unit): Self = StObject.set(x, "addEdge", js.Any.fromFunction2(value))
     

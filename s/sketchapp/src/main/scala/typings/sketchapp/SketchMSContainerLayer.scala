@@ -40,7 +40,8 @@ object SketchMSContainerLayer {
     __obj.asInstanceOf[SketchMSContainerLayer]
   }
   
-  extension [Self <: SketchMSContainerLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSContainerLayer] (val x: Self) extends AnyVal {
     
     inline def setLayers(value: js.Array[SketchMSContainerLayer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     

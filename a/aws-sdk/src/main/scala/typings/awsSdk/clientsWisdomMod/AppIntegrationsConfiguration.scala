@@ -23,7 +23,8 @@ object AppIntegrationsConfiguration {
     __obj.asInstanceOf[AppIntegrationsConfiguration]
   }
   
-  extension [Self <: AppIntegrationsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppIntegrationsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAppIntegrationArn(value: GenericArn): Self = StObject.set(x, "appIntegrationArn", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object buildSrcFilterMod {
       __obj.asInstanceOf[Filter]
     }
     
-    extension [Self <: Filter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
       
       inline def setReceiveMessage(value: js.Promise[Buffer] => js.Promise[Buffer]): Self = StObject.set(x, "receiveMessage", js.Any.fromFunction1(value))
       
@@ -91,7 +92,8 @@ object buildSrcFilterMod {
       __obj.asInstanceOf[FilterFactory[T]]
     }
     
-    extension [Self <: FilterFactory[?], T /* <: Filter */](x: Self & FilterFactory[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterFactory[?], T /* <: Filter */] (val x: Self & FilterFactory[T]) extends AnyVal {
       
       inline def setCreateFilter(value: Call => T): Self = StObject.set(x, "createFilter", js.Any.fromFunction1(value))
     }

@@ -69,7 +69,8 @@ object AnimatedImage {
     __obj.asInstanceOf[AnimatedImage]
   }
   
-  extension [Self <: AnimatedImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimatedImage] (val x: Self) extends AnyVal {
     
     inline def setCurrentFrameDuration(value: () => Double): Self = StObject.set(x, "currentFrameDuration", js.Any.fromFunction0(value))
     

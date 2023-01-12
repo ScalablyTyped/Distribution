@@ -29,7 +29,8 @@ object drawerLocaleMod {
       __obj.asInstanceOf[DrawerLocale]
     }
     
-    extension [Self <: DrawerLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerLocale] (val x: Self) extends AnyVal {
       
       inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     }

@@ -42,7 +42,8 @@ object CustomRule {
     __obj.asInstanceOf[CustomRule]
   }
   
-  extension [Self <: CustomRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomRule] (val x: Self) extends AnyVal {
     
     inline def setIgnoreEmptyValue(value: Boolean): Self = StObject.set(x, "ignoreEmptyValue", value.asInstanceOf[js.Any])
     

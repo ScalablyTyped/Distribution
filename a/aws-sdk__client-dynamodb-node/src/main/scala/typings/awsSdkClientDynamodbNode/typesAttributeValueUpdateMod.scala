@@ -30,7 +30,8 @@ object typesAttributeValueUpdateMod {
       __obj.asInstanceOf[AttributeValueUpdate]
     }
     
-    extension [Self <: AttributeValueUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeValueUpdate] (val x: Self) extends AnyVal {
       
       inline def setAction(value: ADD | PUT | DELETE | String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object typesAttributeValueUpdateMod {
       __obj.asInstanceOf[UnmarshalledAttributeValueUpdate]
     }
     
-    extension [Self <: UnmarshalledAttributeValueUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledAttributeValueUpdate] (val x: Self) extends AnyVal {
       
       inline def setValue(value: UnmarshalledAttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
       

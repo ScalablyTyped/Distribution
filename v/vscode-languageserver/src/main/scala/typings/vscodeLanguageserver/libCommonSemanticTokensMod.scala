@@ -70,7 +70,8 @@ object libCommonSemanticTokensMod {
       __obj.asInstanceOf[SemanticTokensFeatureShape]
     }
     
-    extension [Self <: SemanticTokensFeatureShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticTokensFeatureShape] (val x: Self) extends AnyVal {
       
       inline def setSemanticTokens(value: OnDelta): Self = StObject.set(x, "semanticTokens", value.asInstanceOf[js.Any])
     }

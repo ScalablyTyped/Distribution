@@ -23,7 +23,8 @@ object RecordFormat {
     __obj.asInstanceOf[RecordFormat]
   }
   
-  extension [Self <: RecordFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordFormat] (val x: Self) extends AnyVal {
     
     inline def setMappingParameters(value: MappingParameters): Self = StObject.set(x, "MappingParameters", value.asInstanceOf[js.Any])
     

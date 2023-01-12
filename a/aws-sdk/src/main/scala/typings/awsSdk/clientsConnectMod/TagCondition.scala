@@ -23,7 +23,8 @@ object TagCondition {
     __obj.asInstanceOf[TagCondition]
   }
   
-  extension [Self <: TagCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagCondition] (val x: Self) extends AnyVal {
     
     inline def setTagKey(value: String): Self = StObject.set(x, "TagKey", value.asInstanceOf[js.Any])
     

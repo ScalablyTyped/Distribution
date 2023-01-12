@@ -31,7 +31,8 @@ object Expression_ {
     __obj.asInstanceOf[Expression_]
   }
   
-  extension [Self <: Expression_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Expression_] (val x: Self) extends AnyVal {
     
     inline def setEachChild(value: js.Function1[Expression_, Unit] => Unit): Self = StObject.set(x, "eachChild", js.Any.fromFunction1(value))
     

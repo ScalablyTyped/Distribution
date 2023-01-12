@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[Accept]
     }
     
-    extension [Self <: Accept](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accept] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: CallType): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       

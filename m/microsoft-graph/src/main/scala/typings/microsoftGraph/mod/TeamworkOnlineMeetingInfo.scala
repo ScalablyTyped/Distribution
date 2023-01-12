@@ -22,7 +22,8 @@ object TeamworkOnlineMeetingInfo {
     __obj.asInstanceOf[TeamworkOnlineMeetingInfo]
   }
   
-  extension [Self <: TeamworkOnlineMeetingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamworkOnlineMeetingInfo] (val x: Self) extends AnyVal {
     
     inline def setCalendarEventId(value: NullableOption[String]): Self = StObject.set(x, "calendarEventId", value.asInstanceOf[js.Any])
     

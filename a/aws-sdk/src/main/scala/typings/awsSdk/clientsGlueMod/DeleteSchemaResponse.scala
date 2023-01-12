@@ -28,7 +28,8 @@ object DeleteSchemaResponse {
     __obj.asInstanceOf[DeleteSchemaResponse]
   }
   
-  extension [Self <: DeleteSchemaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSchemaResponse] (val x: Self) extends AnyVal {
     
     inline def setSchemaArn(value: GlueResourceArn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
     

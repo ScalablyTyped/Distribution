@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Helmet]
     }
     
-    extension [Self <: Helmet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Helmet] (val x: Self) extends AnyVal {
       
       inline def setHelmet(value: HelmetServerState): Self = StObject.set(x, "helmet", value.asInstanceOf[js.Any])
     }

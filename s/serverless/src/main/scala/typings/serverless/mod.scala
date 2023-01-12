@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setServicePath(value: String): Self = StObject.set(x, "servicePath", value.asInstanceOf[js.Any])
     }
@@ -114,7 +115,8 @@ object mod {
       __obj.asInstanceOf[FunctionDefinition]
     }
     
-    extension [Self <: FunctionDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionDefinition] (val x: Self) extends AnyVal {
       
       inline def setEnvironment(value: StringDictionary[String]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
@@ -167,7 +169,8 @@ object mod {
       __obj.asInstanceOf[FunctionDefinitionHandler]
     }
     
-    extension [Self <: FunctionDefinitionHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionDefinitionHandler] (val x: Self) extends AnyVal {
       
       inline def setHandler(value: String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     }
@@ -186,7 +189,8 @@ object mod {
       __obj.asInstanceOf[FunctionDefinitionImage]
     }
     
-    extension [Self <: FunctionDefinitionImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionDefinitionImage] (val x: Self) extends AnyVal {
       
       inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     }
@@ -209,7 +213,8 @@ object mod {
       __obj.asInstanceOf[LogOptions]
     }
     
-    extension [Self <: LogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogOptions] (val x: Self) extends AnyVal {
       
       inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
@@ -252,7 +257,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setExtraServicePath(value: String): Self = StObject.set(x, "extraServicePath", value.asInstanceOf[js.Any])
       
@@ -305,7 +311,8 @@ object mod {
       __obj.asInstanceOf[Package]
     }
     
-    extension [Self <: Package](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Package] (val x: Self) extends AnyVal {
       
       inline def setArtifact(value: String): Self = StObject.set(x, "artifact", value.asInstanceOf[js.Any])
       
@@ -393,7 +400,8 @@ object mod {
       __obj.asInstanceOf[Serverless]
     }
     
-    extension [Self <: Serverless](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Serverless] (val x: Self) extends AnyVal {
       
       inline def setCli(value: Log): Self = StObject.set(x, "cli", value.asInstanceOf[js.Any])
       

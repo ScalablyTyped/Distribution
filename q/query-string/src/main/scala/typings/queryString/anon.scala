@@ -154,7 +154,8 @@ object anon {
       __obj.asInstanceOf[parseBooleanstrueParseOpt]
     }
     
-    extension [Self <: parseBooleanstrueParseOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: parseBooleanstrueParseOpt] (val x: Self) extends AnyVal {
       
       inline def setArrayFormat(value: bracket | index | comma | separator | `bracket-separator` | `colon-list-separator` | none): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
       
@@ -459,7 +460,8 @@ object anon {
       __obj.asInstanceOf[parseBooleanstrueParseOptArrayFormat]
     }
     
-    extension [Self <: parseBooleanstrueParseOptArrayFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: parseBooleanstrueParseOptArrayFormat] (val x: Self) extends AnyVal {
       
       inline def setArrayFormat(value: bracket | index | comma | separator | `bracket-separator` | `colon-list-separator` | none): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
       
@@ -646,7 +648,8 @@ object anon {
       __obj.asInstanceOf[parseBooleanstrueparseNum]
     }
     
-    extension [Self <: parseBooleanstrueparseNum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: parseBooleanstrueparseNum] (val x: Self) extends AnyVal {
       
       inline def setArrayFormat(value: bracket | index | comma | separator | `bracket-separator` | `colon-list-separator` | none): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
       
@@ -949,7 +952,8 @@ object anon {
       __obj.asInstanceOf[parseBooleanstrueparseNumArrayFormat]
     }
     
-    extension [Self <: parseBooleanstrueparseNumArrayFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: parseBooleanstrueparseNumArrayFormat] (val x: Self) extends AnyVal {
       
       inline def setArrayFormat(value: bracket | index | comma | separator | `bracket-separator` | `colon-list-separator` | none): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
       
@@ -1134,7 +1138,8 @@ object anon {
       __obj.asInstanceOf[parseNumberstrueParseOpti]
     }
     
-    extension [Self <: parseNumberstrueParseOpti](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: parseNumberstrueParseOpti] (val x: Self) extends AnyVal {
       
       inline def setArrayFormat(value: bracket | index | comma | separator | `bracket-separator` | `colon-list-separator` | none): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
       
@@ -1439,7 +1444,8 @@ object anon {
       __obj.asInstanceOf[parseNumberstrueParseOptiArrayFormat]
     }
     
-    extension [Self <: parseNumberstrueParseOptiArrayFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: parseNumberstrueParseOptiArrayFormat] (val x: Self) extends AnyVal {
       
       inline def setArrayFormat(value: bracket | index | comma | separator | `bracket-separator` | `colon-list-separator` | none): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
       

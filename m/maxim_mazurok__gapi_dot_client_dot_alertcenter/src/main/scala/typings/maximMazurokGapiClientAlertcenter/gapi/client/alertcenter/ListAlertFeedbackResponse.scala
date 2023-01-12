@@ -16,7 +16,8 @@ object ListAlertFeedbackResponse {
     __obj.asInstanceOf[ListAlertFeedbackResponse]
   }
   
-  extension [Self <: ListAlertFeedbackResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAlertFeedbackResponse] (val x: Self) extends AnyVal {
     
     inline def setFeedback(value: js.Array[AlertFeedback]): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     

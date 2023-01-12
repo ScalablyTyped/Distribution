@@ -19,7 +19,8 @@ object ASPxClientSideParametersModel {
     __obj.asInstanceOf[ASPxClientSideParametersModel]
   }
   
-  extension [Self <: ASPxClientSideParametersModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSideParametersModel] (val x: Self) extends AnyVal {
     
     inline def setSerializeParameters(value: () => Unit): Self = StObject.set(x, "serializeParameters", js.Any.fromFunction0(value))
     

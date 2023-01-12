@@ -21,7 +21,8 @@ object PrinterOptions {
     __obj.asInstanceOf[PrinterOptions]
   }
   
-  extension [Self <: PrinterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrinterOptions] (val x: Self) extends AnyVal {
     
     inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     

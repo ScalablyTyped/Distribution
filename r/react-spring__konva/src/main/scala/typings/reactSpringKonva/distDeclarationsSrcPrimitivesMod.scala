@@ -142,7 +142,8 @@ object distDeclarationsSrcPrimitivesMod {
       __obj.asInstanceOf[KonvaExports]
     }
     
-    extension [Self <: KonvaExports](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KonvaExports] (val x: Self) extends AnyVal {
       
       inline def setArc(value: KonvaNodeComponent[Arc, ArcConfig]): Self = StObject.set(x, "Arc", value.asInstanceOf[js.Any])
       

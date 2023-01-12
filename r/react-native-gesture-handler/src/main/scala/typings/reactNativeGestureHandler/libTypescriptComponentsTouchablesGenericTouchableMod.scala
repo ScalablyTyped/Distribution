@@ -125,7 +125,8 @@ object libTypescriptComponentsTouchablesGenericTouchableMod {
       __obj.asInstanceOf[GenericTouchableProps]
     }
     
-    extension [Self <: GenericTouchableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericTouchableProps] (val x: Self) extends AnyVal {
       
       inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object libTypescriptComponentsTouchablesGenericTouchableMod {
       __obj.asInstanceOf[InternalProps]
     }
     
-    extension [Self <: InternalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalProps] (val x: Self) extends AnyVal {
       
       inline def setExtraButtonProps(value: TouchableNativeFeedbackExtraProps): Self = StObject.set(x, "extraButtonProps", value.asInstanceOf[js.Any])
       

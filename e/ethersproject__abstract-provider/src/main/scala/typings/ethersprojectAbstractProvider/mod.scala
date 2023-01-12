@@ -221,7 +221,8 @@ object mod {
       __obj.asInstanceOf[Block]
     }
     
-    extension [Self <: Block](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
       
       inline def setTransactions(value: js.Array[String]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
       
@@ -257,7 +258,8 @@ object mod {
       __obj.asInstanceOf[BlockWithTransactions]
     }
     
-    extension [Self <: BlockWithTransactions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockWithTransactions] (val x: Self) extends AnyVal {
       
       inline def setTransactions(value: js.Array[TransactionResponse]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
       
@@ -280,7 +282,8 @@ object mod {
       __obj.asInstanceOf[EventFilter]
     }
     
-    extension [Self <: EventFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventFilter] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -319,7 +322,8 @@ object mod {
       __obj.asInstanceOf[FeeData]
     }
     
-    extension [Self <: FeeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeeData] (val x: Self) extends AnyVal {
       
       inline def setGasPrice(value: BigNumber): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
       
@@ -354,7 +358,8 @@ object mod {
       __obj.asInstanceOf[Filter]
     }
     
-    extension [Self <: Filter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
       
       inline def setFromBlock(value: BlockTag): Self = StObject.set(x, "fromBlock", value.asInstanceOf[js.Any])
       
@@ -379,7 +384,8 @@ object mod {
       __obj.asInstanceOf[FilterByBlockHash]
     }
     
-    extension [Self <: FilterByBlockHash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterByBlockHash] (val x: Self) extends AnyVal {
       
       inline def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
       
@@ -430,7 +436,8 @@ object mod {
       __obj.asInstanceOf[Log]
     }
     
-    extension [Self <: Log](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -514,7 +521,8 @@ object mod {
       __obj.asInstanceOf[TransactionReceipt]
     }
     
-    extension [Self <: TransactionReceipt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionReceipt] (val x: Self) extends AnyVal {
       
       inline def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
       
@@ -595,7 +603,8 @@ object mod {
       __obj.asInstanceOf[TransactionRequest]
     }
     
-    extension [Self <: TransactionRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionRequest] (val x: Self) extends AnyVal {
       
       inline def setAccessList(value: AccessListish): Self = StObject.set(x, "accessList", value.asInstanceOf[js.Any])
       
@@ -726,7 +735,8 @@ object mod {
       __obj.asInstanceOf[_Block]
     }
     
-    extension [Self <: _Block](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _Block] (val x: Self) extends AnyVal {
       
       inline def setBaseFeePerGas(value: BigNumber): Self = StObject.set(x, "baseFeePerGas", value.asInstanceOf[js.Any])
       

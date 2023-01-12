@@ -15,7 +15,8 @@ object XRCompositionLayerEventMap {
     __obj.asInstanceOf[XRCompositionLayerEventMap]
   }
   
-  extension [Self <: XRCompositionLayerEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRCompositionLayerEventMap] (val x: Self) extends AnyVal {
     
     inline def setRedraw(value: XRLayerEvent): Self = StObject.set(x, "redraw", value.asInstanceOf[js.Any])
   }

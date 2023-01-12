@@ -16,7 +16,8 @@ object Telemetry {
     __obj.asInstanceOf[Telemetry]
   }
   
-  extension [Self <: Telemetry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Telemetry] (val x: Self) extends AnyVal {
     
     inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     

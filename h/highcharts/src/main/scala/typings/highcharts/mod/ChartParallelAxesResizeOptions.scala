@@ -62,7 +62,8 @@ object ChartParallelAxesResizeOptions {
     __obj.asInstanceOf[ChartParallelAxesResizeOptions]
   }
   
-  extension [Self <: ChartParallelAxesResizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartParallelAxesResizeOptions] (val x: Self) extends AnyVal {
     
     inline def setControlledAxis(value: ChartParallelAxesResizeControlledAxisOptions): Self = StObject.set(x, "controlledAxis", value.asInstanceOf[js.Any])
     

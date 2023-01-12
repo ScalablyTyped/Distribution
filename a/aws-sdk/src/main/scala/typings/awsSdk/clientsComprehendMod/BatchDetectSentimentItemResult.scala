@@ -28,7 +28,8 @@ object BatchDetectSentimentItemResult {
     __obj.asInstanceOf[BatchDetectSentimentItemResult]
   }
   
-  extension [Self <: BatchDetectSentimentItemResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDetectSentimentItemResult] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Integer): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     

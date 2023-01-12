@@ -102,7 +102,8 @@ object libToolsApksUtilsMod extends Shortcut {
       __obj.asInstanceOf[InstallApksOptions]
     }
     
-    extension [Self <: InstallApksOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstallApksOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowTestPackages(value: Boolean): Self = StObject.set(x, "allowTestPackages", value.asInstanceOf[js.Any])
       

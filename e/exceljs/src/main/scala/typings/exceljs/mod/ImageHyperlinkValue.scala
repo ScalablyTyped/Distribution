@@ -17,7 +17,8 @@ object ImageHyperlinkValue {
     __obj.asInstanceOf[ImageHyperlinkValue]
   }
   
-  extension [Self <: ImageHyperlinkValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageHyperlinkValue] (val x: Self) extends AnyVal {
     
     inline def setHyperlink(value: String): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
     

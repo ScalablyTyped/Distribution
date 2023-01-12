@@ -23,7 +23,8 @@ object ExportDefaultSpecifier {
     __obj.asInstanceOf[ExportDefaultSpecifier]
   }
   
-  extension [Self <: ExportDefaultSpecifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportDefaultSpecifier] (val x: Self) extends AnyVal {
     
     inline def setExported(value: Identifier): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
     

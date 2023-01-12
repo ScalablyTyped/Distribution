@@ -61,7 +61,8 @@ object buildComponentsStaticMod {
       __obj.asInstanceOf[Props[T]]
     }
     
-    extension [Self <: Props[?], T](x: Self & Props[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?], T] (val x: Self & Props[T]) extends AnyVal {
       
       inline def setChildren(value: (T, Double) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       

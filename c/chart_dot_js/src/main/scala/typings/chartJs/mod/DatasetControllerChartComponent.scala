@@ -19,7 +19,8 @@ object DatasetControllerChartComponent {
     __obj.asInstanceOf[DatasetControllerChartComponent]
   }
   
-  extension [Self <: DatasetControllerChartComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetControllerChartComponent] (val x: Self) extends AnyVal {
     
     inline def setDefaults(value: DataElementType): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
   }

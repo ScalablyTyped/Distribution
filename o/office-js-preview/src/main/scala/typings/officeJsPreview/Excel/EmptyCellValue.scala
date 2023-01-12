@@ -47,7 +47,8 @@ object EmptyCellValue {
     __obj.asInstanceOf[EmptyCellValue]
   }
   
-  extension [Self <: EmptyCellValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmptyCellValue] (val x: Self) extends AnyVal {
     
     inline def setBasicType(value: empty | Empty): Self = StObject.set(x, "basicType", value.asInstanceOf[js.Any])
     

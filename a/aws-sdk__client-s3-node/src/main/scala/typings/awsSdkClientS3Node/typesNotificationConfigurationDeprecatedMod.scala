@@ -38,7 +38,8 @@ object typesNotificationConfigurationDeprecatedMod {
       __obj.asInstanceOf[NotificationConfigurationDeprecated]
     }
     
-    extension [Self <: NotificationConfigurationDeprecated](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationConfigurationDeprecated] (val x: Self) extends AnyVal {
       
       inline def setCloudFunctionConfiguration(value: CloudFunctionConfiguration): Self = StObject.set(x, "CloudFunctionConfiguration", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object typesNotificationConfigurationDeprecatedMod {
       __obj.asInstanceOf[UnmarshalledNotificationConfigurationDeprecated]
     }
     
-    extension [Self <: UnmarshalledNotificationConfigurationDeprecated](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledNotificationConfigurationDeprecated] (val x: Self) extends AnyVal {
       
       inline def setCloudFunctionConfiguration(value: UnmarshalledCloudFunctionConfiguration): Self = StObject.set(x, "CloudFunctionConfiguration", value.asInstanceOf[js.Any])
       

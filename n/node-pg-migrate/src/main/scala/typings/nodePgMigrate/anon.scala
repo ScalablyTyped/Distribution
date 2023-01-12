@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[CreateOptionsDefaultfilen]
     }
     
-    extension [Self <: CreateOptionsDefaultfilen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOptionsDefaultfilen] (val x: Self) extends AnyVal {
       
       inline def setFilenameFormat(value: FilenameFormat): Self = StObject.set(x, "filenameFormat", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object anon {
       __obj.asInstanceOf[CreateOptionsTemplatefile]
     }
     
-    extension [Self <: CreateOptionsTemplatefile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOptionsTemplatefile] (val x: Self) extends AnyVal {
       
       inline def setFilenameFormat(value: FilenameFormat): Self = StObject.set(x, "filenameFormat", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -112,7 +115,8 @@ object anon {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: LikeOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -150,7 +154,8 @@ object anon {
       __obj.asInstanceOf[PublicPartPgLiteral]
     }
     
-    extension [Self <: PublicPartPgLiteral](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublicPartPgLiteral] (val x: Self) extends AnyVal {
       
       inline def setConstructor(value: /* value */ String => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
       
@@ -177,7 +182,8 @@ object anon {
       __obj.asInstanceOf[Reverse]
     }
     
-    extension [Self <: Reverse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reverse] (val x: Self) extends AnyVal {
       
       inline def setReverse(value: CreateTriggerFn): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
@@ -199,7 +205,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -226,7 +233,8 @@ object anon {
       __obj.asInstanceOf[namestringTypeDropOptions]
     }
     
-    extension [Self <: namestringTypeDropOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: namestringTypeDropOptions] (val x: Self) extends AnyVal {
       
       inline def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
       

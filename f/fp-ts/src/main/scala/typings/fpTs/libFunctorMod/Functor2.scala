@@ -23,7 +23,8 @@ object Functor2 {
     __obj.asInstanceOf[Functor2[F]]
   }
   
-  extension [Self <: Functor2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & Functor2[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Functor2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & Functor2[F]) extends AnyVal {
     
     inline def setMap(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, js.Function1[Any, Any]) => Any

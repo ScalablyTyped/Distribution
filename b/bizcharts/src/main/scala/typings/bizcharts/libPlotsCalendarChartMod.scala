@@ -55,7 +55,8 @@ object libPlotsCalendarChartMod extends Shortcut {
       __obj.asInstanceOf[CalendarOptions]
     }
     
-    extension [Self <: CalendarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarOptions] (val x: Self) extends AnyVal {
       
       inline def setColors(value: ColorAttr): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       

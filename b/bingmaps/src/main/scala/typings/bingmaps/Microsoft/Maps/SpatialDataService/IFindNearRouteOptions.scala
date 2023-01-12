@@ -54,7 +54,8 @@ object IFindNearRouteOptions {
     __obj.asInstanceOf[IFindNearRouteOptions]
   }
   
-  extension [Self <: IFindNearRouteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFindNearRouteOptions] (val x: Self) extends AnyVal {
     
     inline def setAvoid(value: js.Array[String]): Self = StObject.set(x, "avoid", value.asInstanceOf[js.Any])
     

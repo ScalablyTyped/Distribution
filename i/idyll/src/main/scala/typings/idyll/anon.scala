@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Compiler]
     }
     
-    extension [Self <: Compiler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compiler] (val x: Self) extends AnyVal {
       
       inline def setCompiler(value: Options): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       

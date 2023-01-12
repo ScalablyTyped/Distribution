@@ -23,7 +23,8 @@ object FileACL {
     __obj.asInstanceOf[FileACL]
   }
   
-  extension [Self <: FileACL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileACL] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

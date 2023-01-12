@@ -41,7 +41,8 @@ object PointCloudClassBreaksRendererColorClassBreakInfos {
     __obj.asInstanceOf[PointCloudClassBreaksRendererColorClassBreakInfos]
   }
   
-  extension [Self <: PointCloudClassBreaksRendererColorClassBreakInfos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointCloudClassBreaksRendererColorClassBreakInfos] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

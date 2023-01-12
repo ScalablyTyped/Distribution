@@ -39,7 +39,8 @@ object StartModule {
     __obj.asInstanceOf[StartModule]
   }
   
-  extension [Self <: StartModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartModule] (val x: Self) extends AnyVal {
     
     inline def setCreateWithParentWindow(value: XWindow => Unit): Self = StObject.set(x, "createWithParentWindow", js.Any.fromFunction1(value))
   }

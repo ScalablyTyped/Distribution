@@ -109,7 +109,8 @@ object HighlightConfig {
     __obj.asInstanceOf[HighlightConfig]
   }
   
-  extension [Self <: HighlightConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlightConfig] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: RGBA): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

@@ -191,7 +191,8 @@ object dateMod {
       __obj.asInstanceOf[FlorealDate]
     }
     
-    extension [Self <: FlorealDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlorealDate] (val x: Self) extends AnyVal {
       
       inline def setDay(value: () => Double): Self = StObject.set(x, "day", js.Any.fromFunction0(value))
       

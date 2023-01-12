@@ -48,7 +48,8 @@ object Metadata {
       __obj.asInstanceOf[AttributeMetadata]
     }
     
-    extension [Self <: AttributeMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeMetadata] (val x: Self) extends AnyVal {
       
       inline def setAttributeType(value: AttributeTypeCode): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
       
@@ -247,7 +248,8 @@ object Metadata {
       __obj.asInstanceOf[EntityMetadata]
     }
     
-    extension [Self <: EntityMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntityMetadata] (val x: Self) extends AnyVal {
       
       inline def setActivityTypeMask(value: Double): Self = StObject.set(x, "ActivityTypeMask", value.asInstanceOf[js.Any])
       
@@ -380,7 +382,8 @@ object Metadata {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setLocalizedLabels(value: js.Array[LocalizedLabel]): Self = StObject.set(x, "LocalizedLabels", value.asInstanceOf[js.Any])
       
@@ -406,7 +409,8 @@ object Metadata {
       __obj.asInstanceOf[LocalizedLabel]
     }
     
-    extension [Self <: LocalizedLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalizedLabel] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
       
@@ -457,7 +461,8 @@ object Metadata {
       __obj.asInstanceOf[OptionMetadata]
     }
     
-    extension [Self <: OptionMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionMetadata] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
       

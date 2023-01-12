@@ -179,7 +179,8 @@ object ReactCalendarTimelineProps {
     __obj.asInstanceOf[ReactCalendarTimelineProps[CustomItem, CustomGroup]]
   }
   
-  extension [Self <: ReactCalendarTimelineProps[?, ?], CustomItem /* <: TimelineItemBase[Any] */, CustomGroup /* <: TimelineGroupBase */](x: Self & (ReactCalendarTimelineProps[CustomItem, CustomGroup])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactCalendarTimelineProps[?, ?], CustomItem /* <: TimelineItemBase[Any] */, CustomGroup /* <: TimelineGroupBase */] (val x: Self & (ReactCalendarTimelineProps[CustomItem, CustomGroup])) extends AnyVal {
     
     inline def setBuffer(value: Double): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

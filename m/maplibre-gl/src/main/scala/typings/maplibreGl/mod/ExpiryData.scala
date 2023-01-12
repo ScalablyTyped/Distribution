@@ -17,7 +17,8 @@ object ExpiryData {
     __obj.asInstanceOf[ExpiryData]
   }
   
-  extension [Self <: ExpiryData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpiryData] (val x: Self) extends AnyVal {
     
     inline def setCacheControl(value: String): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
     

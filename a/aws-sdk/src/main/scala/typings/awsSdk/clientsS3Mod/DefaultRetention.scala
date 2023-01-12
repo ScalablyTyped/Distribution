@@ -28,7 +28,8 @@ object DefaultRetention {
     __obj.asInstanceOf[DefaultRetention]
   }
   
-  extension [Self <: DefaultRetention](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultRetention] (val x: Self) extends AnyVal {
     
     inline def setDays(value: Days): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
     

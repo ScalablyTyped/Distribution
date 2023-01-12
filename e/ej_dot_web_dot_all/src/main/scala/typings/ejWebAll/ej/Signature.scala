@@ -118,7 +118,8 @@ object Signature {
       __obj.asInstanceOf[ChangeEventArgs]
     }
     
-    extension [Self <: ChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -216,7 +217,8 @@ object Signature {
       __obj.asInstanceOf[typings.ejWebAll.ej.Signature.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Signature.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Signature.Model] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -305,7 +307,8 @@ object Signature {
       __obj.asInstanceOf[MouseDownEventArgs]
     }
     
-    extension [Self <: MouseDownEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseDownEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -350,7 +353,8 @@ object Signature {
       __obj.asInstanceOf[MouseMoveEventArgs]
     }
     
-    extension [Self <: MouseMoveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseMoveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -395,7 +399,8 @@ object Signature {
       __obj.asInstanceOf[MouseUpEventArgs]
     }
     
-    extension [Self <: MouseUpEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseUpEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

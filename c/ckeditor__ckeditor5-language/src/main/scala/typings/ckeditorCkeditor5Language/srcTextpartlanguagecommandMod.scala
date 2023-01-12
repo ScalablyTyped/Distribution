@@ -37,7 +37,8 @@ object srcTextpartlanguagecommandMod {
         __obj.asInstanceOf[Commands]
       }
       
-      extension [Self <: Commands](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Commands] (val x: Self) extends AnyVal {
         
         inline def setTextPartLanguageCommand(value: TextPartLanguageCommand): Self = StObject.set(x, "TextPartLanguageCommand", value.asInstanceOf[js.Any])
       }

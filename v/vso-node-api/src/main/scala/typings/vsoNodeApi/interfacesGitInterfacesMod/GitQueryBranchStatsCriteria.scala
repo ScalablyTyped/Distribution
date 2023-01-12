@@ -17,7 +17,8 @@ object GitQueryBranchStatsCriteria {
     __obj.asInstanceOf[GitQueryBranchStatsCriteria]
   }
   
-  extension [Self <: GitQueryBranchStatsCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitQueryBranchStatsCriteria] (val x: Self) extends AnyVal {
     
     inline def setBaseCommit(value: GitVersionDescriptor): Self = StObject.set(x, "baseCommit", value.asInstanceOf[js.Any])
     

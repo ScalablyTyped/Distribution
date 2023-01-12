@@ -20,7 +20,8 @@ object TargetHttpProxiesScopedList {
     __obj.asInstanceOf[TargetHttpProxiesScopedList]
   }
   
-  extension [Self <: TargetHttpProxiesScopedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetHttpProxiesScopedList] (val x: Self) extends AnyVal {
     
     inline def setTargetHttpProxies(value: js.Array[TargetHttpProxy]): Self = StObject.set(x, "targetHttpProxies", value.asInstanceOf[js.Any])
     

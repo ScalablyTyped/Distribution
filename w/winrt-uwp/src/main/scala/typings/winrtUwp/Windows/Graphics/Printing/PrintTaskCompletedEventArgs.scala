@@ -17,7 +17,8 @@ object PrintTaskCompletedEventArgs {
     __obj.asInstanceOf[PrintTaskCompletedEventArgs]
   }
   
-  extension [Self <: PrintTaskCompletedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintTaskCompletedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCompletion(value: PrintTaskCompletion): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
   }

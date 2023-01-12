@@ -29,7 +29,8 @@ object AboveGround {
     __obj.asInstanceOf[AboveGround]
   }
   
-  extension [Self <: AboveGround](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AboveGround] (val x: Self) extends AnyVal {
     
     inline def setAboveGround(value: Boolean): Self = StObject.set(x, "aboveGround", value.asInstanceOf[js.Any])
     

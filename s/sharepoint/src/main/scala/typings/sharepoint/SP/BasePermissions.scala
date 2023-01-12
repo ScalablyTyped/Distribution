@@ -40,7 +40,8 @@ object BasePermissions {
     __obj.asInstanceOf[BasePermissions]
   }
   
-  extension [Self <: BasePermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasePermissions] (val x: Self) extends AnyVal {
     
     inline def setClear(value: PermissionKind => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     

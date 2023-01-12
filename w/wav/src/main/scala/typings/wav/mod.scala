@@ -111,7 +111,8 @@ object mod {
       __obj.asInstanceOf[Format]
     }
     
-    extension [Self <: Format](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       inline def setAudioFormat(value: Double): Self = StObject.set(x, "audioFormat", value.asInstanceOf[js.Any])
       
@@ -144,7 +145,8 @@ object mod {
       __obj.asInstanceOf[UnknownChunk]
     }
     
-    extension [Self <: UnknownChunk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnknownChunk] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -171,7 +173,8 @@ object mod {
       __obj.asInstanceOf[WriterOptions]
     }
     
-    extension [Self <: WriterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriterOptions] (val x: Self) extends AnyVal {
       
       inline def setBitDepth(value: Double): Self = StObject.set(x, "bitDepth", value.asInstanceOf[js.Any])
       

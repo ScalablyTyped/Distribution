@@ -48,7 +48,8 @@ object RangeUpdateData {
     __obj.asInstanceOf[RangeUpdateData]
   }
   
-  extension [Self <: RangeUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeUpdateData] (val x: Self) extends AnyVal {
     
     inline def setFont(value: FontUpdateData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

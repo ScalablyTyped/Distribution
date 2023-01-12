@@ -35,7 +35,8 @@ object distStringifyStringifyCollectionMod {
       __obj.asInstanceOf[StringifyCollectionOptions]
     }
     
-    extension [Self <: StringifyCollectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringifyCollectionOptions] (val x: Self) extends AnyVal {
       
       inline def setBlockItemPrefix(value: String): Self = StObject.set(x, "blockItemPrefix", value.asInstanceOf[js.Any])
       

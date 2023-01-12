@@ -53,7 +53,8 @@ object typesCardContentMod {
       __obj.asInstanceOf[CardContentProps]
     }
     
-    extension [Self <: CardContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardContentProps] (val x: Self) extends AnyVal {
       
       inline def setDisableExtraPadding(value: Boolean): Self = StObject.set(x, "disableExtraPadding", value.asInstanceOf[js.Any])
       

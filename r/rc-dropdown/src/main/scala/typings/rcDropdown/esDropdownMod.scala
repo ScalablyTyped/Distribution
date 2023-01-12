@@ -83,7 +83,8 @@ object esDropdownMod extends Shortcut {
       __obj.asInstanceOf[DropdownProps]
     }
     
-    extension [Self <: DropdownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

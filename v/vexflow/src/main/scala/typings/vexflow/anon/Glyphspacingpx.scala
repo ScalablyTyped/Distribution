@@ -35,7 +35,8 @@ object Glyphspacingpx {
     __obj.asInstanceOf[Glyphspacingpx]
   }
   
-  extension [Self <: Glyphspacingpx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Glyphspacingpx] (val x: Self) extends AnyVal {
     
     inline def setFill_style(value: String): Self = StObject.set(x, "fill_style", value.asInstanceOf[js.Any])
     

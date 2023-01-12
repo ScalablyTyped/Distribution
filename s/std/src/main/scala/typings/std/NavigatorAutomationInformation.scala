@@ -16,7 +16,8 @@ object NavigatorAutomationInformation {
     __obj.asInstanceOf[NavigatorAutomationInformation]
   }
   
-  extension [Self <: NavigatorAutomationInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorAutomationInformation] (val x: Self) extends AnyVal {
     
     inline def setWebdriver(value: scala.Boolean): Self = StObject.set(x, "webdriver", value.asInstanceOf[js.Any])
   }

@@ -77,7 +77,8 @@ object buildCommandsRunIOSMod {
       __obj.asInstanceOf[FlagsT]
     }
     
-    extension [Self <: FlagsT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlagsT] (val x: Self) extends AnyVal {
       
       inline def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
       

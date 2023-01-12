@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[EffectParams]
     }
     
-    extension [Self <: EffectParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EffectParams] (val x: Self) extends AnyVal {
       
       inline def setScreen(value: ScaledSize): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
       

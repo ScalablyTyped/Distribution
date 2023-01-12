@@ -34,7 +34,8 @@ object FontOptions {
     __obj.asInstanceOf[FontOptions]
   }
   
-  extension [Self <: FontOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontOptions] (val x: Self) extends AnyVal {
     
     inline def setDisplay(value: auto | block | swap | fallback | optional): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     

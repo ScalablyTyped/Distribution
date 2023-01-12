@@ -149,7 +149,8 @@ object mod {
       __obj.asInstanceOf[TabListProps]
     }
     
-    extension [Self <: TabListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabListProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -184,7 +185,8 @@ object mod {
       __obj.asInstanceOf[TabPanelProps]
     }
     
-    extension [Self <: TabPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabPanelProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -230,7 +232,8 @@ object mod {
       __obj.asInstanceOf[TabProps]
     }
     
-    extension [Self <: TabProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -261,7 +264,8 @@ object mod {
       __obj.asInstanceOf[TabsContextValue]
     }
     
-    extension [Self <: TabsContextValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsContextValue] (val x: Self) extends AnyVal {
       
       inline def setFocusedIndex(value: Double): Self = StObject.set(x, "focusedIndex", value.asInstanceOf[js.Any])
       
@@ -346,7 +350,8 @@ object mod {
       __obj.asInstanceOf[TabsProps]
     }
     
-    extension [Self <: TabsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode | (js.Function1[/* props */ TabsContextValue, ReactNode])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

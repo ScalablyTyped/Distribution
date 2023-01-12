@@ -29,7 +29,8 @@ object IRegisteredPlugin {
     __obj.asInstanceOf[IRegisteredPlugin]
   }
   
-  extension [Self <: IRegisteredPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRegisteredPlugin] (val x: Self) extends AnyVal {
     
     inline def setIsBinary(value: Boolean): Self = StObject.set(x, "isBinary", value.asInstanceOf[js.Any])
     

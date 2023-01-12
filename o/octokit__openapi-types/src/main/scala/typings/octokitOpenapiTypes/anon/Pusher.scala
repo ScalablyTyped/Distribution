@@ -41,7 +41,8 @@ object Pusher {
     __obj.asInstanceOf[Pusher]
   }
   
-  extension [Self <: Pusher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pusher] (val x: Self) extends AnyVal {
     
     inline def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     

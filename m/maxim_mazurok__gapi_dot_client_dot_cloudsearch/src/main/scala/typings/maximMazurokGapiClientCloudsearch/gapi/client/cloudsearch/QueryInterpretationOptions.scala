@@ -28,7 +28,8 @@ object QueryInterpretationOptions {
     __obj.asInstanceOf[QueryInterpretationOptions]
   }
   
-  extension [Self <: QueryInterpretationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryInterpretationOptions] (val x: Self) extends AnyVal {
     
     inline def setDisableNlInterpretation(value: Boolean): Self = StObject.set(x, "disableNlInterpretation", value.asInstanceOf[js.Any])
     

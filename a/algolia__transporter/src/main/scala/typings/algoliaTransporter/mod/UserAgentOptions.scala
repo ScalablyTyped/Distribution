@@ -23,7 +23,8 @@ object UserAgentOptions {
     __obj.asInstanceOf[UserAgentOptions]
   }
   
-  extension [Self <: UserAgentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserAgentOptions] (val x: Self) extends AnyVal {
     
     inline def setSegment(value: String): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     

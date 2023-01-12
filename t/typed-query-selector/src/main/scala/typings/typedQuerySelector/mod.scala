@@ -21,7 +21,8 @@ object mod {
         __obj.asInstanceOf[Element]
       }
       
-      extension [Self <: Element](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
         
         inline def setClosest(value: Any => (ParseSelector[Any, typings.typedQuerySelector.strictMod.global.Element]) | Null): Self = StObject.set(x, "closest", js.Any.fromFunction1(value))
       }
@@ -43,7 +44,8 @@ object mod {
         __obj.asInstanceOf[ParentNode]
       }
       
-      extension [Self <: ParentNode](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ParentNode] (val x: Self) extends AnyVal {
         
         inline def setQuerySelector(value: Any => (ParseSelector[Any, typings.typedQuerySelector.strictMod.global.Element]) | Null): Self = StObject.set(x, "querySelector", js.Any.fromFunction1(value))
         

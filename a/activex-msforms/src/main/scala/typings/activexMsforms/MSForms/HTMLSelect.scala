@@ -37,7 +37,8 @@ object HTMLSelect {
     __obj.asInstanceOf[HTMLSelect]
   }
   
-  extension [Self <: HTMLSelect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLSelect] (val x: Self) extends AnyVal {
     
     inline def setDisplayValues(value: Any): Self = StObject.set(x, "DisplayValues", value.asInstanceOf[js.Any])
     

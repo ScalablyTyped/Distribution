@@ -18,7 +18,8 @@ object AssociateUserToPermissionGroupResponse {
     __obj.asInstanceOf[AssociateUserToPermissionGroupResponse]
   }
   
-  extension [Self <: AssociateUserToPermissionGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateUserToPermissionGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setStatusCode(value: StatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     

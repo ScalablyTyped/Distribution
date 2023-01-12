@@ -28,7 +28,8 @@ object DescribeTableResponse {
     __obj.asInstanceOf[DescribeTableResponse]
   }
   
-  extension [Self <: DescribeTableResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTableResponse] (val x: Self) extends AnyVal {
     
     inline def setColumnList(value: ColumnList): Self = StObject.set(x, "ColumnList", value.asInstanceOf[js.Any])
     

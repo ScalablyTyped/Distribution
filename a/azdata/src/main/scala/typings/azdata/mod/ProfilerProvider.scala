@@ -48,7 +48,8 @@ object ProfilerProvider {
     __obj.asInstanceOf[ProfilerProvider]
   }
   
-  extension [Self <: ProfilerProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfilerProvider] (val x: Self) extends AnyVal {
     
     inline def setConnectSession(value: String => Thenable[Boolean]): Self = StObject.set(x, "connectSession", js.Any.fromFunction1(value))
     

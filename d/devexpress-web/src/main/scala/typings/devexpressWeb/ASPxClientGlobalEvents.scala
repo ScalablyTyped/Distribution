@@ -53,7 +53,8 @@ object ASPxClientGlobalEvents {
     __obj.asInstanceOf[ASPxClientGlobalEvents]
   }
   
-  extension [Self <: ASPxClientGlobalEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGlobalEvents] (val x: Self) extends AnyVal {
     
     inline def setBeginCallback(value: ASPxClientEvent[ASPxClientGlobalBeginCallbackEventHandler[ASPxClientGlobalEvents]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     

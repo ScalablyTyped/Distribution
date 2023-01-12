@@ -29,7 +29,8 @@ object WxaSportRecord {
     __obj.asInstanceOf[WxaSportRecord]
   }
   
-  extension [Self <: WxaSportRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WxaSportRecord] (val x: Self) extends AnyVal {
     
     inline def setCalorie(value: Double): Self = StObject.set(x, "calorie", value.asInstanceOf[js.Any])
     

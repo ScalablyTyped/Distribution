@@ -19,7 +19,8 @@ object jsCommon {
       __obj.asInstanceOf[IStringResourceProvider]
     }
     
-    extension [Self <: IStringResourceProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStringResourceProvider] (val x: Self) extends AnyVal {
       
       inline def setGet(value: String => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       

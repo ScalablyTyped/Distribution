@@ -21,7 +21,8 @@ object VariantArgs {
     __obj.asInstanceOf[VariantArgs]
   }
   
-  extension [Self <: VariantArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariantArgs] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: String | Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

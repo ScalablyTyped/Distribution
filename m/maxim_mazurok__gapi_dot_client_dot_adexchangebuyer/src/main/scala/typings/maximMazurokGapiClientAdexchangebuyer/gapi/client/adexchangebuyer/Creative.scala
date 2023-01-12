@@ -130,7 +130,8 @@ object Creative {
     __obj.asInstanceOf[Creative]
   }
   
-  extension [Self <: Creative](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Creative] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: Double): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

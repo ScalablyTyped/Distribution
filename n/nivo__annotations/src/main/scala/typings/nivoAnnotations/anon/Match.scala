@@ -20,7 +20,8 @@ object Match {
     __obj.asInstanceOf[Match[Datum]]
   }
   
-  extension [Self <: Match[?], Datum](x: Self & Match[Datum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Match[?], Datum] (val x: Self & Match[Datum]) extends AnyVal {
     
     inline def setMatch(value: ListIterateeCustom[Datum, Boolean]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object IState {
     __obj.asInstanceOf[IState]
   }
   
-  extension [Self <: IState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IState] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: IBridgeConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

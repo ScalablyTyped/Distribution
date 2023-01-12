@@ -26,7 +26,8 @@ object HandleClickDate {
     __obj.asInstanceOf[HandleClickDate]
   }
   
-  extension [Self <: HandleClickDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandleClickDate] (val x: Self) extends AnyVal {
     
     inline def setChangeLastValidDate(value: String => Unit): Self = StObject.set(x, "changeLastValidDate", js.Any.fromFunction1(value))
     

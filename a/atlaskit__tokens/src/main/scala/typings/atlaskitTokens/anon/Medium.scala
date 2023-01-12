@@ -51,7 +51,8 @@ object Medium {
     __obj.asInstanceOf[Medium[BaseToken]]
   }
   
-  extension [Self <: Medium[?], BaseToken](x: Self & Medium[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Medium[?], BaseToken] (val x: Self & Medium[BaseToken]) extends AnyVal {
     
     inline def setLarge(value: SpacingToken[BaseToken]): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     

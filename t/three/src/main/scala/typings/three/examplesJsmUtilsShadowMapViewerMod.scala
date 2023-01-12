@@ -41,7 +41,8 @@ object examplesJsmUtilsShadowMapViewerMod {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setSet(value: (Double, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
@@ -66,7 +67,8 @@ object examplesJsmUtilsShadowMapViewerMod {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

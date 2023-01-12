@@ -18,7 +18,8 @@ object AnimationStepOptions {
     __obj.asInstanceOf[AnimationStepOptions]
   }
   
-  extension [Self <: AnimationStepOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationStepOptions] (val x: Self) extends AnyVal {
     
     inline def setEasing(value: EasingType): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ListDevicePositionsRequest {
     __obj.asInstanceOf[ListDevicePositionsRequest]
   }
   
-  extension [Self <: ListDevicePositionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDevicePositionsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ListDevicePositionsRequestMaxResultsInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

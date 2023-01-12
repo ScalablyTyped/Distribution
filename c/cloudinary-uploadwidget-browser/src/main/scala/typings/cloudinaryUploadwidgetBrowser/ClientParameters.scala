@@ -37,7 +37,8 @@ object ClientParameters {
     __obj.asInstanceOf[ClientParameters]
   }
   
-  extension [Self <: ClientParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientParameters] (val x: Self) extends AnyVal {
     
     inline def setClientAllowedFormats(value: js.Array[String]): Self = StObject.set(x, "clientAllowedFormats", value.asInstanceOf[js.Any])
     

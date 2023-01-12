@@ -17,7 +17,8 @@ object CertifiedRecord {
     __obj.asInstanceOf[CertifiedRecord]
   }
   
-  extension [Self <: CertifiedRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertifiedRecord] (val x: Self) extends AnyVal {
     
     inline def setRaw(value: js.typedarray.Uint8Array): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object IStandardPrintTaskOptionsStatic {
     __obj.asInstanceOf[IStandardPrintTaskOptionsStatic]
   }
   
-  extension [Self <: IStandardPrintTaskOptionsStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStandardPrintTaskOptionsStatic] (val x: Self) extends AnyVal {
     
     inline def setBinding(value: String): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     

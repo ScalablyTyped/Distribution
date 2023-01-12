@@ -48,7 +48,8 @@ object distCommonjsViewsStatisticStatisticLabelMod extends Shortcut {
       __obj.asInstanceOf[StrictStatisticLabelProps]
     }
     
-    extension [Self <: StrictStatisticLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictStatisticLabelProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

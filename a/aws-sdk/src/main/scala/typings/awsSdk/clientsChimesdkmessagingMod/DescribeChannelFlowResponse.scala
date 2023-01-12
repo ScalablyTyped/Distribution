@@ -18,7 +18,8 @@ object DescribeChannelFlowResponse {
     __obj.asInstanceOf[DescribeChannelFlowResponse]
   }
   
-  extension [Self <: DescribeChannelFlowResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeChannelFlowResponse] (val x: Self) extends AnyVal {
     
     inline def setChannelFlow(value: ChannelFlow): Self = StObject.set(x, "ChannelFlow", value.asInstanceOf[js.Any])
     

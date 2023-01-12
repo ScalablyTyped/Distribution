@@ -168,7 +168,8 @@ object PartialSideBarProps {
     __obj.asInstanceOf[PartialSideBarProps]
   }
   
-  extension [Self <: PartialSideBarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSideBarProps] (val x: Self) extends AnyVal {
     
     inline def setActiveKey(value: String): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
     

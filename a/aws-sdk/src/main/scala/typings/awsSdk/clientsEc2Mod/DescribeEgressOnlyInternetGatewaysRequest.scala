@@ -38,7 +38,8 @@ object DescribeEgressOnlyInternetGatewaysRequest {
     __obj.asInstanceOf[DescribeEgressOnlyInternetGatewaysRequest]
   }
   
-  extension [Self <: DescribeEgressOnlyInternetGatewaysRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEgressOnlyInternetGatewaysRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

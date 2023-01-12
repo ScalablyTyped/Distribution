@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object mod {
       __obj.asInstanceOf[ScrollBooster]
     }
     
-    extension [Self <: ScrollBooster](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollBooster] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -151,7 +153,8 @@ object mod {
       __obj.asInstanceOf[ScrollBoosterOptions]
     }
     
-    extension [Self <: ScrollBoosterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollBoosterOptions] (val x: Self) extends AnyVal {
       
       inline def setBounce(value: Boolean): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
       
@@ -238,7 +241,8 @@ object mod {
       __obj.asInstanceOf[ScrollingState]
     }
     
-    extension [Self <: ScrollingState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollingState] (val x: Self) extends AnyVal {
       
       inline def setBorderCollision(value: Bottom): Self = StObject.set(x, "borderCollision", value.asInstanceOf[js.Any])
       

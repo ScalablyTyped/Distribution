@@ -18,7 +18,8 @@ object SccDestinationSettings {
     __obj.asInstanceOf[SccDestinationSettings]
   }
   
-  extension [Self <: SccDestinationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SccDestinationSettings] (val x: Self) extends AnyVal {
     
     inline def setFramerate(value: SccDestinationFramerate): Self = StObject.set(x, "Framerate", value.asInstanceOf[js.Any])
     

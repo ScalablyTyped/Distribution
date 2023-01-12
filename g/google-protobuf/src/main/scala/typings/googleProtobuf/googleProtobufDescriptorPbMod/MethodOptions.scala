@@ -117,7 +117,8 @@ object MethodOptions {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
       

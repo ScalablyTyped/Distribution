@@ -32,7 +32,8 @@ object SecurityEnrollNodeResponse {
     __obj.asInstanceOf[SecurityEnrollNodeResponse]
   }
   
-  extension [Self <: SecurityEnrollNodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityEnrollNodeResponse] (val x: Self) extends AnyVal {
     
     inline def setHttp_ca_cert(value: String): Self = StObject.set(x, "http_ca_cert", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object SketchMSMeta {
     __obj.asInstanceOf[SketchMSMeta]
   }
   
-  extension [Self <: SketchMSMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSMeta] (val x: Self) extends AnyVal {
     
     inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object CustomTypesConfig {
     __obj.asInstanceOf[CustomTypesConfig]
   }
   
-  extension [Self <: CustomTypesConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomTypesConfig] (val x: Self) extends AnyVal {
     
     inline def setGetTypeParser(value: FnCall): Self = StObject.set(x, "getTypeParser", value.asInstanceOf[js.Any])
   }

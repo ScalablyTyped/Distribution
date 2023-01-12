@@ -39,7 +39,8 @@ object UploadAsync {
     __obj.asInstanceOf[UploadAsync]
   }
   
-  extension [Self <: UploadAsync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadAsync] (val x: Self) extends AnyVal {
     
     inline def setAutoRetryAfter(value: Double): Self = StObject.set(x, "autoRetryAfter", value.asInstanceOf[js.Any])
     

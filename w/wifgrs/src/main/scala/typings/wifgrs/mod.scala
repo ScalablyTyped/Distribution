@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[WIFReturn]
     }
     
-    extension [Self <: WIFReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WIFReturn] (val x: Self) extends AnyVal {
       
       inline def setCompressed(value: Boolean): Self = StObject.set(x, "compressed", value.asInstanceOf[js.Any])
       

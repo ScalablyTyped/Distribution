@@ -40,7 +40,8 @@ object Query2 {
     __obj.asInstanceOf[Query2]
   }
   
-  extension [Self <: Query2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Query2] (val x: Self) extends AnyVal {
     
     inline def setCollectionGroup(value: String): Self = StObject.set(x, "collectionGroup", value.asInstanceOf[js.Any])
     

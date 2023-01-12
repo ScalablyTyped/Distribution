@@ -37,7 +37,8 @@ object SpinnerOptions {
     __obj.asInstanceOf[SpinnerOptions]
   }
   
-  extension [Self <: SpinnerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpinnerOptions] (val x: Self) extends AnyVal {
     
     inline def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     

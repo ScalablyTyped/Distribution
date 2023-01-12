@@ -97,7 +97,8 @@ object libKernelMod {
         __obj.asInstanceOf[IKernelUser[T]]
       }
       
-      extension [Self <: IKernelUser[?], T /* <: Widget */](x: Self & IKernelUser[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IKernelUser[?], T /* <: Widget */] (val x: Self & IKernelUser[T]) extends AnyVal {
         
         inline def setChangeKernel(value: /* widget */ T => js.Promise[Unit]): Self = StObject.set(x, "changeKernel", js.Any.fromFunction1(value))
         

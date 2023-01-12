@@ -19,7 +19,8 @@ object Digits {
     __obj.asInstanceOf[Digits]
   }
   
-  extension [Self <: Digits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Digits] (val x: Self) extends AnyVal {
     
     inline def setDigits(value: Boolean): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
     

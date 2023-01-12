@@ -28,7 +28,8 @@ object PutSigningProfileResponse {
     __obj.asInstanceOf[PutSigningProfileResponse]
   }
   
-  extension [Self <: PutSigningProfileResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutSigningProfileResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: java.lang.String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

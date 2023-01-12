@@ -260,7 +260,8 @@ object PlotGaugeDataLabelsOptions {
     __obj.asInstanceOf[PlotGaugeDataLabelsOptions]
   }
   
-  extension [Self <: PlotGaugeDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotGaugeDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

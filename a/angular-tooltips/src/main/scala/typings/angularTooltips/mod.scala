@@ -36,7 +36,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TooltipsConfProvider]
     }
     
-    extension [Self <: TooltipsConfProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipsConfProvider] (val x: Self) extends AnyVal {
       
       inline def setConfigure(value: TooltipsConfProviderOptions => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
     }
@@ -73,7 +74,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TooltipsConfProviderOptions]
     }
     
-    extension [Self <: TooltipsConfProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipsConfProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       

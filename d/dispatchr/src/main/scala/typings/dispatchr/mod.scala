@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[DispatcherError]
     }
     
-    extension [Self <: DispatcherError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DispatcherError] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object mod {
       __obj.asInstanceOf[DispatcherInterface]
     }
     
-    extension [Self <: DispatcherInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DispatcherInterface] (val x: Self) extends AnyVal {
       
       inline def setGetContext(value: () => DispatcherContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
       
@@ -121,7 +123,8 @@ object mod {
       __obj.asInstanceOf[DispatcherOption]
     }
     
-    extension [Self <: DispatcherOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DispatcherOption] (val x: Self) extends AnyVal {
       
       inline def setErrorHandler(value: (/* e */ DispatcherError, /* context */ DispatcherContext) => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
       
@@ -146,7 +149,8 @@ object mod {
       __obj.asInstanceOf[DispatcherState]
     }
     
-    extension [Self <: DispatcherState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DispatcherState] (val x: Self) extends AnyVal {
       
       inline def setStores(value: StringDictionary[Any]): Self = StObject.set(x, "stores", value.asInstanceOf[js.Any])
     }

@@ -43,7 +43,8 @@ object SceneViewRouteHit {
     __obj.asInstanceOf[SceneViewRouteHit]
   }
   
-  extension [Self <: SceneViewRouteHit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneViewRouteHit] (val x: Self) extends AnyVal {
     
     inline def setLayer(value: RouteLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

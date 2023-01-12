@@ -15,7 +15,8 @@ object PlotPriceenvelopesBottomLineOptions {
     __obj.asInstanceOf[PlotPriceenvelopesBottomLineOptions]
   }
   
-  extension [Self <: PlotPriceenvelopesBottomLineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPriceenvelopesBottomLineOptions] (val x: Self) extends AnyVal {
     
     inline def setStyles(value: PlotPriceenvelopesBottomLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     

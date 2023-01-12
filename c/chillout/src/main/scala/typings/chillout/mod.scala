@@ -84,7 +84,8 @@ object mod {
       __obj.asInstanceOf[ChilloutIterator[TValue, TReturn]]
     }
     
-    extension [Self <: ChilloutIterator[?, ?], TValue, TReturn](x: Self & (ChilloutIterator[TValue, TReturn])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChilloutIterator[?, ?], TValue, TReturn] (val x: Self & (ChilloutIterator[TValue, TReturn])) extends AnyVal {
       
       inline def setNext(value: () => js.Tuple2[`false` | `true`, js.Symbol | TReturn | TValue]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     }
@@ -149,7 +150,8 @@ object mod {
       __obj.asInstanceOf[RepeatDescriptor]
     }
     
-    extension [Self <: RepeatDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepeatDescriptor] (val x: Self) extends AnyVal {
       
       inline def setDone(value: Double): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       

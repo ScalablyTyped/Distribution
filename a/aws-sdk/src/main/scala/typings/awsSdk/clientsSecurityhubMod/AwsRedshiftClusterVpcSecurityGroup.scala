@@ -23,7 +23,8 @@ object AwsRedshiftClusterVpcSecurityGroup {
     __obj.asInstanceOf[AwsRedshiftClusterVpcSecurityGroup]
   }
   
-  extension [Self <: AwsRedshiftClusterVpcSecurityGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRedshiftClusterVpcSecurityGroup] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

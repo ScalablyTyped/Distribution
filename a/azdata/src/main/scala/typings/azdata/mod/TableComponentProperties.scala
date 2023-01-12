@@ -35,7 +35,8 @@ object TableComponentProperties {
     __obj.asInstanceOf[TableComponentProperties]
   }
   
-  extension [Self <: TableComponentProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableComponentProperties] (val x: Self) extends AnyVal {
     
     inline def setAriaColumnCount(value: Double): Self = StObject.set(x, "ariaColumnCount", value.asInstanceOf[js.Any])
     

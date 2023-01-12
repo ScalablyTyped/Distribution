@@ -28,7 +28,8 @@ object PutItemOutput {
     __obj.asInstanceOf[PutItemOutput]
   }
   
-  extension [Self <: PutItemOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutItemOutput] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: AttributeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

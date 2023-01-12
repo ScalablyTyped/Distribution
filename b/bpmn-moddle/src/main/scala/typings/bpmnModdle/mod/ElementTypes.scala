@@ -829,7 +829,8 @@ object ElementTypes {
     __obj.asInstanceOf[ElementTypes]
   }
   
-  extension [Self <: ElementTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementTypes] (val x: Self) extends AnyVal {
     
     inline def setBiocColonColoredEdge(value: ColoredEdge): Self = StObject.set(x, "bioc:ColoredEdge", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object XInterfaceMemberTypeDescription {
     __obj.asInstanceOf[XInterfaceMemberTypeDescription]
   }
   
-  extension [Self <: XInterfaceMemberTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInterfaceMemberTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setGetMemberName(value: () => String): Self = StObject.set(x, "getMemberName", js.Any.fromFunction0(value))
     

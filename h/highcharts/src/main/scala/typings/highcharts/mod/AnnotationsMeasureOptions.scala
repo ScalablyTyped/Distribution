@@ -34,7 +34,8 @@ object AnnotationsMeasureOptions {
     __obj.asInstanceOf[AnnotationsMeasureOptions]
   }
   
-  extension [Self <: AnnotationsMeasureOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsMeasureOptions] (val x: Self) extends AnyVal {
     
     inline def setControlPointOptions(value: AnnotationsMeasureControlPointOptions): Self = StObject.set(x, "controlPointOptions", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object EmissiveMap {
     __obj.asInstanceOf[EmissiveMap]
   }
   
-  extension [Self <: EmissiveMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmissiveMap] (val x: Self) extends AnyVal {
     
     inline def setEmissiveMap(value: IUniform[Any]): Self = StObject.set(x, "emissiveMap", value.asInstanceOf[js.Any])
   }

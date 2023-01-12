@@ -59,7 +59,8 @@ object Control {
       __obj.asInstanceOf[DrawConstructorOptions]
     }
     
-    extension [Self <: DrawConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setDraw(value: typings.leafletDraw.leafletMod.Control.DrawOptions): Self = StObject.set(x, "draw", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object Control {
       __obj.asInstanceOf[typings.leafletDraw.leafletMod.Control.DrawOptions]
     }
     
-    extension [Self <: typings.leafletDraw.leafletMod.Control.DrawOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.leafletDraw.leafletMod.Control.DrawOptions] (val x: Self) extends AnyVal {
       
       inline def setCircle(value: CircleOptions | `false`): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
       
@@ -185,7 +187,8 @@ object Control {
       __obj.asInstanceOf[typings.leafletDraw.leafletMod.Control.EditOptions]
     }
     
-    extension [Self <: typings.leafletDraw.leafletMod.Control.EditOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.leafletDraw.leafletMod.Control.EditOptions] (val x: Self) extends AnyVal {
       
       inline def setEdit(value: EditHandlerOptions | `false`): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
       

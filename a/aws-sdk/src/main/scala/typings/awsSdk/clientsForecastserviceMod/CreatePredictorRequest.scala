@@ -93,7 +93,8 @@ object CreatePredictorRequest {
     __obj.asInstanceOf[CreatePredictorRequest]
   }
   
-  extension [Self <: CreatePredictorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePredictorRequest] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmArn(value: Arn): Self = StObject.set(x, "AlgorithmArn", value.asInstanceOf[js.Any])
     

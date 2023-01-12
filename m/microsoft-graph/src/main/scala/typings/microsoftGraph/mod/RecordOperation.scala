@@ -21,7 +21,8 @@ object RecordOperation {
     __obj.asInstanceOf[RecordOperation]
   }
   
-  extension [Self <: RecordOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordOperation] (val x: Self) extends AnyVal {
     
     inline def setRecordingAccessToken(value: NullableOption[String]): Self = StObject.set(x, "recordingAccessToken", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object GSMVOICEDENIED {
     __obj.asInstanceOf[GSMVOICEDENIED]
   }
   
-  extension [Self <: GSMVOICEDENIED](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GSMVOICEDENIED] (val x: Self) extends AnyVal {
     
     inline def setGSM_VOICE_DENIED(value: denied): Self = StObject.set(x, "GSM_VOICE_DENIED", value.asInstanceOf[js.Any])
     

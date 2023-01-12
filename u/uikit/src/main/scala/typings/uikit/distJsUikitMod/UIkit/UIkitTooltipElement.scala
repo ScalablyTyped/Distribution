@@ -17,7 +17,8 @@ object UIkitTooltipElement {
     __obj.asInstanceOf[UIkitTooltipElement]
   }
   
-  extension [Self <: UIkitTooltipElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitTooltipElement] (val x: Self) extends AnyVal {
     
     inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     

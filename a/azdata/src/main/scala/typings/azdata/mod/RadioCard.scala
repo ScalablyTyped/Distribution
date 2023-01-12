@@ -28,7 +28,8 @@ object RadioCard {
     __obj.asInstanceOf[RadioCard]
   }
   
-  extension [Self <: RadioCard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadioCard] (val x: Self) extends AnyVal {
     
     inline def setDescriptions(value: js.Array[RadioCardDescription]): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
     

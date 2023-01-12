@@ -18,7 +18,8 @@ object DraggableEvent {
     __obj.asInstanceOf[DraggableEvent]
   }
   
-  extension [Self <: DraggableEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggableEvent] (val x: Self) extends AnyVal {
     
     inline def setOriginalEvent(value: MouseEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object OGCFeatureLayerLayerviewCreateEvent {
     __obj.asInstanceOf[OGCFeatureLayerLayerviewCreateEvent]
   }
   
-  extension [Self <: OGCFeatureLayerLayerviewCreateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OGCFeatureLayerLayerviewCreateEvent] (val x: Self) extends AnyVal {
     
     inline def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
     

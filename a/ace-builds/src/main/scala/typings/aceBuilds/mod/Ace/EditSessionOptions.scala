@@ -59,7 +59,8 @@ object EditSessionOptions {
     __obj.asInstanceOf[EditSessionOptions]
   }
   
-  extension [Self <: EditSessionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditSessionOptions] (val x: Self) extends AnyVal {
     
     inline def setFirstLineNumber(value: Double): Self = StObject.set(x, "firstLineNumber", value.asInstanceOf[js.Any])
     

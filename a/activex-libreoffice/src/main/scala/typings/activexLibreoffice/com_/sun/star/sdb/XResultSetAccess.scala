@@ -30,7 +30,8 @@ object XResultSetAccess {
     __obj.asInstanceOf[XResultSetAccess]
   }
   
-  extension [Self <: XResultSetAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XResultSetAccess] (val x: Self) extends AnyVal {
     
     inline def setCreateResultSet(value: () => XResultSet): Self = StObject.set(x, "createResultSet", js.Any.fromFunction0(value))
   }

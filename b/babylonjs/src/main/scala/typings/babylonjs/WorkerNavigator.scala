@@ -15,7 +15,8 @@ object WorkerNavigator {
     __obj.asInstanceOf[WorkerNavigator]
   }
   
-  extension [Self <: WorkerNavigator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerNavigator] (val x: Self) extends AnyVal {
     
     inline def setGpu(value: GPU): Self = StObject.set(x, "gpu", value.asInstanceOf[js.Any])
     

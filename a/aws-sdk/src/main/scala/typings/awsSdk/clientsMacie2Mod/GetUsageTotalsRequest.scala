@@ -18,7 +18,8 @@ object GetUsageTotalsRequest {
     __obj.asInstanceOf[GetUsageTotalsRequest]
   }
   
-  extension [Self <: GetUsageTotalsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUsageTotalsRequest] (val x: Self) extends AnyVal {
     
     inline def setTimeRange(value: string): Self = StObject.set(x, "timeRange", value.asInstanceOf[js.Any])
     

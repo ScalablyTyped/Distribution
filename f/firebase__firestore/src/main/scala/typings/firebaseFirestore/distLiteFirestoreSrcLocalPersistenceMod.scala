@@ -155,7 +155,8 @@ object distLiteFirestoreSrcLocalPersistenceMod {
       __obj.asInstanceOf[Persistence]
     }
     
-    extension [Self <: Persistence](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Persistence] (val x: Self) extends AnyVal {
       
       inline def setGetBundleCache(value: () => BundleCache): Self = StObject.set(x, "getBundleCache", js.Any.fromFunction0(value))
       
@@ -225,7 +226,8 @@ object distLiteFirestoreSrcLocalPersistenceMod {
       __obj.asInstanceOf[ReferenceDelegate]
     }
     
-    extension [Self <: ReferenceDelegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferenceDelegate] (val x: Self) extends AnyVal {
       
       inline def setAddReference(value: (PersistenceTransaction, TargetId, DocumentKey) => PersistencePromise[Unit]): Self = StObject.set(x, "addReference", js.Any.fromFunction3(value))
       
@@ -254,7 +256,8 @@ object distLiteFirestoreSrcLocalPersistenceMod {
       __obj.asInstanceOf[Scheduler]
     }
     
-    extension [Self <: Scheduler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scheduler] (val x: Self) extends AnyVal {
       
       inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       

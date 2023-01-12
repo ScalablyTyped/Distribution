@@ -44,7 +44,8 @@ object anon {
       __obj.asInstanceOf[PartialRichTextEditorProp]
     }
     
-    extension [Self <: PartialRichTextEditorProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRichTextEditorProp] (val x: Self) extends AnyVal {
       
       inline def setContentInset(value: ContentInset): Self = StObject.set(x, "contentInset", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object anon {
       __obj.asInstanceOf[PartialRichTextToolbarPro]
     }
     
-    extension [Self <: PartialRichTextToolbarPro](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRichTextToolbarPro] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[ACTIONS]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object BatchCreateVariableRequest {
     __obj.asInstanceOf[BatchCreateVariableRequest]
   }
   
-  extension [Self <: BatchCreateVariableRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreateVariableRequest] (val x: Self) extends AnyVal {
     
     inline def setTags(value: tagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

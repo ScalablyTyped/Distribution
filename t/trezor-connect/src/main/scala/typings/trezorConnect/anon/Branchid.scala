@@ -49,7 +49,8 @@ object Branchid {
     __obj.asInstanceOf[Branchid]
   }
   
-  extension [Self <: Branchid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Branchid] (val x: Self) extends AnyVal {
     
     inline def setBin_outputs(value: scala.Unit): Self = StObject.set(x, "bin_outputs", value.asInstanceOf[js.Any])
     

@@ -67,7 +67,8 @@ object distTypesEnteringFadeInMod {
       __obj.asInstanceOf[FadeKeyframesMotionProps]
     }
     
-    extension [Self <: FadeKeyframesMotionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FadeKeyframesMotionProps] (val x: Self) extends AnyVal {
       
       inline def setDistance(value: Distance): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       

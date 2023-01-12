@@ -26,7 +26,8 @@ object TestPointsQuery {
     __obj.asInstanceOf[TestPointsQuery]
   }
   
-  extension [Self <: TestPointsQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestPointsQuery] (val x: Self) extends AnyVal {
     
     inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     

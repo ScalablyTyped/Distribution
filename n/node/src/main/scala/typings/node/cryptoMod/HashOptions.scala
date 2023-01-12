@@ -22,7 +22,8 @@ object HashOptions {
     __obj.asInstanceOf[HashOptions]
   }
   
-  extension [Self <: HashOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HashOptions] (val x: Self) extends AnyVal {
     
     inline def setOutputLength(value: Double): Self = StObject.set(x, "outputLength", value.asInstanceOf[js.Any])
     

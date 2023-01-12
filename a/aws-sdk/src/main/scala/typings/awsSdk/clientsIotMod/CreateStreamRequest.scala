@@ -38,7 +38,8 @@ object CreateStreamRequest {
     __obj.asInstanceOf[CreateStreamRequest]
   }
   
-  extension [Self <: CreateStreamRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStreamRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: StreamDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

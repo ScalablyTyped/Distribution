@@ -23,7 +23,8 @@ object `0Repeat` {
     __obj.asInstanceOf[`0Repeat`[N, A, L, I]]
   }
   
-  extension [Self <: `0Repeat`[?, ?, ?, ?], N /* <: Double */, A, L /* <: typings.tsToolbelt.outListListMod.List[Any] */, I /* <: Iteration */](x: Self & (`0Repeat`[N, A, L, I])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0Repeat`[?, ?, ?, ?], N /* <: Double */, A, L /* <: typings.tsToolbelt.outListListMod.List[Any] */, I /* <: Iteration */] (val x: Self & (`0Repeat`[N, A, L, I])) extends AnyVal {
     
     inline def set0(value: __Repeat[N, A, Prepend[L, A], Next[I]]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

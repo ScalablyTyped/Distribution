@@ -43,7 +43,8 @@ object CreateHarvestJobRequest {
     __obj.asInstanceOf[CreateHarvestJobRequest]
   }
   
-  extension [Self <: CreateHarvestJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateHarvestJobRequest] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: string): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     

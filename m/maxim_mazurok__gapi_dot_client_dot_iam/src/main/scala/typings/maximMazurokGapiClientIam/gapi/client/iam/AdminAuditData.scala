@@ -16,7 +16,8 @@ object AdminAuditData {
     __obj.asInstanceOf[AdminAuditData]
   }
   
-  extension [Self <: AdminAuditData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminAuditData] (val x: Self) extends AnyVal {
     
     inline def setPermissionDelta(value: PermissionDelta): Self = StObject.set(x, "permissionDelta", value.asInstanceOf[js.Any])
     

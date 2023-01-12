@@ -25,7 +25,8 @@ object TermColumn {
     __obj.asInstanceOf[TermColumn]
   }
   
-  extension [Self <: TermColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TermColumn] (val x: Self) extends AnyVal {
     
     inline def setAllowMultipleValues(value: NullableOption[Boolean]): Self = StObject.set(x, "allowMultipleValues", value.asInstanceOf[js.Any])
     

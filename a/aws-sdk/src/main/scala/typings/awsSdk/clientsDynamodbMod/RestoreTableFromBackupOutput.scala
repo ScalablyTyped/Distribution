@@ -18,7 +18,8 @@ object RestoreTableFromBackupOutput {
     __obj.asInstanceOf[RestoreTableFromBackupOutput]
   }
   
-  extension [Self <: RestoreTableFromBackupOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreTableFromBackupOutput] (val x: Self) extends AnyVal {
     
     inline def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
     

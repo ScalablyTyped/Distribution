@@ -43,7 +43,8 @@ object HealthStatus {
     __obj.asInstanceOf[HealthStatus]
   }
   
-  extension [Self <: HealthStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HealthStatus] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

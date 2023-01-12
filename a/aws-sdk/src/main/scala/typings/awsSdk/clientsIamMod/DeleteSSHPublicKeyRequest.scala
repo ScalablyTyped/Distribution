@@ -23,7 +23,8 @@ object DeleteSSHPublicKeyRequest {
     __obj.asInstanceOf[DeleteSSHPublicKeyRequest]
   }
   
-  extension [Self <: DeleteSSHPublicKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSSHPublicKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setSSHPublicKeyId(value: publicKeyIdType): Self = StObject.set(x, "SSHPublicKeyId", value.asInstanceOf[js.Any])
     

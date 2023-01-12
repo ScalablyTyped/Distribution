@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[BaseProps]
     }
     
-    extension [Self <: BaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseProps] (val x: Self) extends AnyVal {
       
       inline def setRender(value: () => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
       
@@ -74,7 +75,8 @@ object mod {
       __obj.asInstanceOf[MultiQueryProps[Queries]]
     }
     
-    extension [Self <: MultiQueryProps[?], Queries](x: Self & MultiQueryProps[Queries]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiQueryProps[?], Queries] (val x: Self & MultiQueryProps[Queries]) extends AnyVal {
       
       inline def setChildren(value: (js.Function1[/* matches */ QueryResults[Queries], ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -134,7 +136,8 @@ object mod {
       __obj.asInstanceOf[SingleQueryProps]
     }
     
-    extension [Self <: SingleQueryProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingleQueryProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: (js.Function1[/* matches */ Boolean, ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

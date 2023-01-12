@@ -29,7 +29,8 @@ object XXMLExtractor {
     __obj.asInstanceOf[XXMLExtractor]
   }
   
-  extension [Self <: XXMLExtractor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XXMLExtractor] (val x: Self) extends AnyVal {
     
     inline def setExtract(value: XInputStream => XInputStream): Self = StObject.set(x, "extract", js.Any.fromFunction1(value))
   }

@@ -20,7 +20,8 @@ object MlForecastRequest {
     __obj.asInstanceOf[MlForecastRequest]
   }
   
-  extension [Self <: MlForecastRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlForecastRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: typings.elasticElasticsearch.anon.Duration): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

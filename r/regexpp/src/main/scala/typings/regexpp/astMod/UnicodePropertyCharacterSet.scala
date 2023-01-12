@@ -40,7 +40,8 @@ object UnicodePropertyCharacterSet {
     __obj.asInstanceOf[UnicodePropertyCharacterSet]
   }
   
-  extension [Self <: UnicodePropertyCharacterSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnicodePropertyCharacterSet] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

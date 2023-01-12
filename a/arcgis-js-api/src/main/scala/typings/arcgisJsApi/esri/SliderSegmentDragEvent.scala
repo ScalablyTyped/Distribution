@@ -25,7 +25,8 @@ object SliderSegmentDragEvent {
     __obj.asInstanceOf[SliderSegmentDragEvent]
   }
   
-  extension [Self <: SliderSegmentDragEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderSegmentDragEvent] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

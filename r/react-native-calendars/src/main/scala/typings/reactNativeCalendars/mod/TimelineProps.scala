@@ -38,7 +38,8 @@ object TimelineProps {
     __obj.asInstanceOf[TimelineProps]
   }
   
-  extension [Self <: TimelineProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineProps] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

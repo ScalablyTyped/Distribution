@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[BytesRead]
     }
     
-    extension [Self <: BytesRead](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BytesRead] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object mod {
       __obj.asInstanceOf[BytesWritten]
     }
     
-    extension [Self <: BytesWritten](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BytesWritten] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -488,7 +490,8 @@ object mod {
       __obj.asInstanceOf[I2CDeviceId]
     }
     
-    extension [Self <: I2CDeviceId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I2CDeviceId] (val x: Self) extends AnyVal {
       
       inline def setManufacturer(value: Double): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
       
@@ -559,7 +562,8 @@ object mod {
       __obj.asInstanceOf[I2CFuncs]
     }
     
-    extension [Self <: I2CFuncs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I2CFuncs] (val x: Self) extends AnyVal {
       
       inline def setI2c(value: Boolean): Self = StObject.set(x, "i2c", value.asInstanceOf[js.Any])
       
@@ -609,7 +613,8 @@ object mod {
       __obj.asInstanceOf[OpenOptions]
     }
     
-    extension [Self <: OpenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenOptions] (val x: Self) extends AnyVal {
       
       inline def setForceAccess(value: Boolean): Self = StObject.set(x, "forceAccess", value.asInstanceOf[js.Any])
     }

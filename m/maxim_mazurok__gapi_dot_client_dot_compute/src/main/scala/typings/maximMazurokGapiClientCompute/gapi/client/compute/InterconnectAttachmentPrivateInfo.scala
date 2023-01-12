@@ -16,7 +16,8 @@ object InterconnectAttachmentPrivateInfo {
     __obj.asInstanceOf[InterconnectAttachmentPrivateInfo]
   }
   
-  extension [Self <: InterconnectAttachmentPrivateInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterconnectAttachmentPrivateInfo] (val x: Self) extends AnyVal {
     
     inline def setTag8021q(value: Double): Self = StObject.set(x, "tag8021q", value.asInstanceOf[js.Any])
     

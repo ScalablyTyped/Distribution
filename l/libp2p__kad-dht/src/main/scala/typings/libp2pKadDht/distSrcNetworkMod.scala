@@ -128,7 +128,8 @@ object distSrcNetworkMod {
       __obj.asInstanceOf[NetworkEvents]
     }
     
-    extension [Self <: NetworkEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkEvents] (val x: Self) extends AnyVal {
       
       inline def setPeer(value: CustomEvent[PeerInfo]): Self = StObject.set(x, "peer", value.asInstanceOf[js.Any])
     }
@@ -147,7 +148,8 @@ object distSrcNetworkMod {
       __obj.asInstanceOf[NetworkInit]
     }
     
-    extension [Self <: NetworkInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkInit] (val x: Self) extends AnyVal {
       
       inline def setLan(value: Boolean): Self = StObject.set(x, "lan", value.asInstanceOf[js.Any])
       

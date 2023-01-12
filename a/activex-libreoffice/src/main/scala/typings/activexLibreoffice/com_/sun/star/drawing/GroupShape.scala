@@ -112,7 +112,8 @@ object GroupShape {
     __obj.asInstanceOf[GroupShape]
   }
   
-  extension [Self <: GroupShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupShape] (val x: Self) extends AnyVal {
     
     inline def setEnterGroup(value: () => Unit): Self = StObject.set(x, "enterGroup", js.Any.fromFunction0(value))
     

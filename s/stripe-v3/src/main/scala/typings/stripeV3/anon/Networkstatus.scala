@@ -51,7 +51,8 @@ object Networkstatus {
     __obj.asInstanceOf[Networkstatus]
   }
   
-  extension [Self <: Networkstatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Networkstatus] (val x: Self) extends AnyVal {
     
     inline def setNetwork_status(value: approved_by_network | declined_by_network | not_sent_to_network | reversed_after_approval): Self = StObject.set(x, "network_status", value.asInstanceOf[js.Any])
     

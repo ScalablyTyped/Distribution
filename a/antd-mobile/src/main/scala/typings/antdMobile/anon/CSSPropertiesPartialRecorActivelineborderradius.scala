@@ -9983,7 +9983,8 @@ object CSSPropertiesPartialRecorActivelineborderradius {
     __obj.asInstanceOf[CSSPropertiesPartialRecorActivelineborderradius]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorActivelineborderradius](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorActivelineborderradius] (val x: Self) extends AnyVal {
     
     inline def `set--active-line-border-radius`(value: String): Self = StObject.set(x, "--active-line-border-radius", value.asInstanceOf[js.Any])
     

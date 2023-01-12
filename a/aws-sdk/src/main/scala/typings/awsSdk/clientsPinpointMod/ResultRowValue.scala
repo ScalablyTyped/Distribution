@@ -28,7 +28,8 @@ object ResultRowValue {
     __obj.asInstanceOf[ResultRowValue]
   }
   
-  extension [Self <: ResultRowValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultRowValue] (val x: Self) extends AnyVal {
     
     inline def setKey(value: string): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

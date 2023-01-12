@@ -17,7 +17,8 @@ object ActPromiseResult {
     __obj.asInstanceOf[ActPromiseResult[T]]
   }
   
-  extension [Self <: ActPromiseResult[?], T](x: Self & ActPromiseResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActPromiseResult[?], T] (val x: Self & ActPromiseResult[T]) extends AnyVal {
     
     inline def setContext(value: Hemera[ClientRequest, ClientResponse]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

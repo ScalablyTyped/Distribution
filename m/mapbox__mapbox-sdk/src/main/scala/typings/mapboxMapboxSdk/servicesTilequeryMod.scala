@@ -73,7 +73,8 @@ object servicesTilequeryMod {
       __obj.asInstanceOf[TileQueryRequest]
     }
     
-    extension [Self <: TileQueryRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileQueryRequest] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: Coordinates): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object servicesTilequeryMod {
       __obj.asInstanceOf[TileQueryService]
     }
     
-    extension [Self <: TileQueryService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileQueryService] (val x: Self) extends AnyVal {
       
       inline def setListFeatures(value: TileQueryRequest => MapiRequest[Any]): Self = StObject.set(x, "listFeatures", js.Any.fromFunction1(value))
     }

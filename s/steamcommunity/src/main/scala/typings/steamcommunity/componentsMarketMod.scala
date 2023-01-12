@@ -115,7 +115,8 @@ object componentsMarketMod {
       __obj.asInstanceOf[Market]
     }
     
-    extension [Self <: Market](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Market] (val x: Self) extends AnyVal {
       
       inline def setGetGemValue(value: (appid, assetid, js.Function2[/* err */ CallbackError, /* res */ GemValue, Any]) => Unit): Self = StObject.set(x, "getGemValue", js.Any.fromFunction3(value))
       

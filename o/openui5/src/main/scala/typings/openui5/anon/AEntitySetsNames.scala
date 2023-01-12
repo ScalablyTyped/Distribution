@@ -31,7 +31,8 @@ object AEntitySetsNames {
     __obj.asInstanceOf[AEntitySetsNames]
   }
   
-  extension [Self <: AEntitySetsNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AEntitySetsNames] (val x: Self) extends AnyVal {
     
     inline def setAEntitySetsNames(value: js.Array[Any]): Self = StObject.set(x, "aEntitySetsNames", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object UnmappedIdentity {
     __obj.asInstanceOf[UnmappedIdentity]
   }
   
-  extension [Self <: UnmappedIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnmappedIdentity] (val x: Self) extends AnyVal {
     
     inline def setExternalIdentity(value: Principal): Self = StObject.set(x, "externalIdentity", value.asInstanceOf[js.Any])
     

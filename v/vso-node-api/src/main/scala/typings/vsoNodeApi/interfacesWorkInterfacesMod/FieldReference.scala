@@ -23,7 +23,8 @@ object FieldReference {
     __obj.asInstanceOf[FieldReference]
   }
   
-  extension [Self <: FieldReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldReference] (val x: Self) extends AnyVal {
     
     inline def setReferenceName(value: String): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
     

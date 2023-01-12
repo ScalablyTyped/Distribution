@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[Connection]
     }
     
-    extension [Self <: Connection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
       
       inline def setStartedAt(value: String): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     }
@@ -50,7 +51,8 @@ object mod {
       __obj.asInstanceOf[Consumer]
     }
     
-    extension [Self <: Consumer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Consumer] (val x: Self) extends AnyVal {
       
       inline def setConsume(value: (String, ConsumerCallback[Any]) => Unit): Self = StObject.set(x, "consume", js.Any.fromFunction2(value))
     }
@@ -123,7 +125,8 @@ object mod {
       __obj.asInstanceOf[Logger]
     }
     
-    extension [Self <: Logger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: LoggerOutput): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -176,7 +179,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setConsumerSuffix(value: String): Self = StObject.set(x, "consumerSuffix", value.asInstanceOf[js.Any])
       
@@ -241,7 +245,8 @@ object mod {
       __obj.asInstanceOf[ProducerOptions]
     }
     
-    extension [Self <: ProducerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProducerOptions] (val x: Self) extends AnyVal {
       
       inline def setRoutingKey(value: String): Self = StObject.set(x, "routingKey", value.asInstanceOf[js.Any])
       

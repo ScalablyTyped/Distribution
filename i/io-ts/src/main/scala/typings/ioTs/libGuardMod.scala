@@ -164,7 +164,8 @@ object libGuardMod {
       __obj.asInstanceOf[Guard[I, A]]
     }
     
-    extension [Self <: Guard[?, ?], I, A /* <: I */](x: Self & (Guard[I, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Guard[?, ?], I, A /* <: I */] (val x: Self & (Guard[I, A])) extends AnyVal {
       
       inline def setIs(value: I => /* is A */ Boolean): Self = StObject.set(x, "is", js.Any.fromFunction1(value))
     }

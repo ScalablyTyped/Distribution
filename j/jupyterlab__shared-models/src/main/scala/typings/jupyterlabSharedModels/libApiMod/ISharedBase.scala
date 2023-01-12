@@ -56,7 +56,8 @@ object ISharedBase {
     __obj.asInstanceOf[ISharedBase]
   }
   
-  extension [Self <: ISharedBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISharedBase] (val x: Self) extends AnyVal {
     
     inline def setCanRedo(value: () => Boolean): Self = StObject.set(x, "canRedo", js.Any.fromFunction0(value))
     

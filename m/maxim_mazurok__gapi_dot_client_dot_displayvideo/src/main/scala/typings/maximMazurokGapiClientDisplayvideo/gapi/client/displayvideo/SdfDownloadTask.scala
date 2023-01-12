@@ -19,7 +19,8 @@ object SdfDownloadTask {
     __obj.asInstanceOf[SdfDownloadTask]
   }
   
-  extension [Self <: SdfDownloadTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SdfDownloadTask] (val x: Self) extends AnyVal {
     
     inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     

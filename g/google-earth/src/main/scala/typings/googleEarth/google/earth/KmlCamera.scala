@@ -139,7 +139,8 @@ object KmlCamera {
     __obj.asInstanceOf[KmlCamera]
   }
   
-  extension [Self <: KmlCamera](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlCamera] (val x: Self) extends AnyVal {
     
     inline def setGetAltitude(value: () => Double): Self = StObject.set(x, "getAltitude", js.Any.fromFunction0(value))
     

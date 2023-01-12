@@ -25,7 +25,8 @@ object IPrintTextOptionDetails {
     __obj.asInstanceOf[IPrintTextOptionDetails]
   }
   
-  extension [Self <: IPrintTextOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPrintTextOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setMaxCharacters(value: Double): Self = StObject.set(x, "maxCharacters", value.asInstanceOf[js.Any])
   }

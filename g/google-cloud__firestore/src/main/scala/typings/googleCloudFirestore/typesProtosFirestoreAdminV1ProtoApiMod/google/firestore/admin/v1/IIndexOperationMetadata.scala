@@ -33,7 +33,8 @@ object IIndexOperationMetadata {
     __obj.asInstanceOf[IIndexOperationMetadata]
   }
   
-  extension [Self <: IIndexOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IIndexOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: ITimestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

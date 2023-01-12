@@ -48,7 +48,8 @@ object DescribeEventsRequest {
     __obj.asInstanceOf[DescribeEventsRequest]
   }
   
-  extension [Self <: DescribeEventsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEventsRequest] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: IntegerOptional): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     

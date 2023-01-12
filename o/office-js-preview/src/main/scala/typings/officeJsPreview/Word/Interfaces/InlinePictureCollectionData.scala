@@ -16,7 +16,8 @@ object InlinePictureCollectionData {
     __obj.asInstanceOf[InlinePictureCollectionData]
   }
   
-  extension [Self <: InlinePictureCollectionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlinePictureCollectionData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[InlinePictureData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

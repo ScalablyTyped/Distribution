@@ -18,7 +18,8 @@ object CooperativeGestures {
     __obj.asInstanceOf[CooperativeGestures]
   }
   
-  extension [Self <: CooperativeGestures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CooperativeGestures] (val x: Self) extends AnyVal {
     
     inline def setClickTolerance(value: Double): Self = StObject.set(x, "clickTolerance", value.asInstanceOf[js.Any])
     

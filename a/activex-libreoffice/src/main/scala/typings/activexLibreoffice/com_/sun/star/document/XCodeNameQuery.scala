@@ -18,7 +18,8 @@ object XCodeNameQuery {
     __obj.asInstanceOf[XCodeNameQuery]
   }
   
-  extension [Self <: XCodeNameQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCodeNameQuery] (val x: Self) extends AnyVal {
     
     inline def setGetCodeNameForContainer(value: XInterface => String): Self = StObject.set(x, "getCodeNameForContainer", js.Any.fromFunction1(value))
     

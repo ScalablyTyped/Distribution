@@ -28,7 +28,8 @@ object BotLocaleFilter {
     __obj.asInstanceOf[BotLocaleFilter]
   }
   
-  extension [Self <: BotLocaleFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BotLocaleFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: BotLocaleFilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

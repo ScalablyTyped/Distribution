@@ -17,7 +17,8 @@ object NodeCheckedEventParameters {
     __obj.asInstanceOf[NodeCheckedEventParameters[T]]
   }
   
-  extension [Self <: NodeCheckedEventParameters[?], T](x: Self & NodeCheckedEventParameters[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeCheckedEventParameters[?], T] (val x: Self & NodeCheckedEventParameters[T]) extends AnyVal {
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

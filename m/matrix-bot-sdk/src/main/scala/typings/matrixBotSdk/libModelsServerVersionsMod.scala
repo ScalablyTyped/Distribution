@@ -20,7 +20,8 @@ object libModelsServerVersionsMod {
       __obj.asInstanceOf[ServerVersions]
     }
     
-    extension [Self <: ServerVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerVersions] (val x: Self) extends AnyVal {
       
       inline def setUnstable_features(value: Record[String, Boolean]): Self = StObject.set(x, "unstable_features", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,8 @@ object CheckBox {
     __obj.asInstanceOf[CheckBox]
   }
   
-  extension [Self <: CheckBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckBox] (val x: Self) extends AnyVal {
     
     inline def setCheckBox(value: scala.Double): Self = StObject.set(x, "checkBox", value.asInstanceOf[js.Any])
     

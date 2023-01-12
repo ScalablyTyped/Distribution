@@ -153,7 +153,8 @@ object mod {
       __obj.asInstanceOf[ConnectedRouterProps[State]]
     }
     
-    extension [Self <: ConnectedRouterProps[?], State](x: Self & ConnectedRouterProps[State]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectedRouterProps[?], State] (val x: Self & ConnectedRouterProps[State]) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object mod {
       __obj.asInstanceOf[LocationActionPayload]
     }
     
-    extension [Self <: LocationActionPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocationActionPayload] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -206,7 +208,8 @@ object mod {
       __obj.asInstanceOf[LocationChangeAction]
     }
     
-    extension [Self <: LocationChangeAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocationChangeAction] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: Locationpropsmatchpathstr): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -228,7 +231,8 @@ object mod {
       __obj.asInstanceOf[RouterAction]
     }
     
-    extension [Self <: RouterAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterAction] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: LocationActionPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -247,7 +251,8 @@ object mod {
       __obj.asInstanceOf[RouterState]
     }
     
-    extension [Self <: RouterState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterState] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       

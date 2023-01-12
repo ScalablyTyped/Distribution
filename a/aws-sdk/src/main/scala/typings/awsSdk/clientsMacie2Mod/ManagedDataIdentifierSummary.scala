@@ -23,7 +23,8 @@ object ManagedDataIdentifierSummary {
     __obj.asInstanceOf[ManagedDataIdentifierSummary]
   }
   
-  extension [Self <: ManagedDataIdentifierSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedDataIdentifierSummary] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: SensitiveDataItemCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

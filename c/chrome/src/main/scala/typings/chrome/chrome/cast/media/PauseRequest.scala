@@ -15,7 +15,8 @@ object PauseRequest {
     __obj.asInstanceOf[PauseRequest]
   }
   
-  extension [Self <: PauseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PauseRequest] (val x: Self) extends AnyVal {
     
     inline def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
   }

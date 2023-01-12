@@ -17,7 +17,8 @@ object AsanaAuthorizeUrlOptions {
     __obj.asInstanceOf[AsanaAuthorizeUrlOptions]
   }
   
-  extension [Self <: AsanaAuthorizeUrlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsanaAuthorizeUrlOptions] (val x: Self) extends AnyVal {
     
     inline def setAsanaBaseUrl(value: String): Self = StObject.set(x, "asanaBaseUrl", value.asInstanceOf[js.Any])
     

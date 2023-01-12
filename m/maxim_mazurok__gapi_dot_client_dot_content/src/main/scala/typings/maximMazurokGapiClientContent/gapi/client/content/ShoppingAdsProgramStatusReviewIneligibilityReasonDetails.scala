@@ -16,7 +16,8 @@ object ShoppingAdsProgramStatusReviewIneligibilityReasonDetails {
     __obj.asInstanceOf[ShoppingAdsProgramStatusReviewIneligibilityReasonDetails]
   }
   
-  extension [Self <: ShoppingAdsProgramStatusReviewIneligibilityReasonDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShoppingAdsProgramStatusReviewIneligibilityReasonDetails] (val x: Self) extends AnyVal {
     
     inline def setCooldownTime(value: String): Self = StObject.set(x, "cooldownTime", value.asInstanceOf[js.Any])
     

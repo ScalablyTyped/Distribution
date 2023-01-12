@@ -142,7 +142,8 @@ object examplesJsmNodesShadernodeShaderNodeMod {
       __obj.asInstanceOf[Construtors[A, B, C, D]]
     }
     
-    extension [Self <: Construtors[?, ?, ?, ?], A /* <: js.UndefOr[Array[Any]] */, B /* <: js.UndefOr[Array[Any]] */, C /* <: js.UndefOr[Array[Any]] */, D /* <: js.UndefOr[Array[Any]] */](x: Self & (Construtors[A, B, C, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Construtors[?, ?, ?, ?], A /* <: js.UndefOr[Array[Any]] */, B /* <: js.UndefOr[Array[Any]] */, C /* <: js.UndefOr[Array[Any]] */, D /* <: js.UndefOr[Array[Any]] */] (val x: Self & (Construtors[A, B, C, D])) extends AnyVal {
       
       inline def setA(value: A): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -192,7 +193,8 @@ object examplesJsmNodesShadernodeShaderNodeMod {
       __obj.asInstanceOf[FilterConstructorsByScope[T, S]]
     }
     
-    extension [Self <: FilterConstructorsByScope[?, ?], T /* <: AnyConstructors */, S](x: Self & (FilterConstructorsByScope[T, S])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterConstructorsByScope[?, ?], T /* <: AnyConstructors */, S] (val x: Self & (FilterConstructorsByScope[T, S])) extends AnyVal {
       
       inline def setA(
         value: /* import warning: importer.ImportType#apply Failed type conversion: S extends T['a'][0] ? T['a'] : undefined */ js.Any

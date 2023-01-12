@@ -21,7 +21,8 @@ object StockChartNavigatorCategoryAxisTitleMargin {
     __obj.asInstanceOf[StockChartNavigatorCategoryAxisTitleMargin]
   }
   
-  extension [Self <: StockChartNavigatorCategoryAxisTitleMargin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartNavigatorCategoryAxisTitleMargin] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

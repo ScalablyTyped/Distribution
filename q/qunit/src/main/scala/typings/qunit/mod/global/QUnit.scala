@@ -381,7 +381,8 @@ object QUnit extends Shortcut {
       __obj.asInstanceOf[BeginDetails]
     }
     
-    extension [Self <: BeginDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeginDetails] (val x: Self) extends AnyVal {
       
       inline def setModules(value: js.Array[ModuleId]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
@@ -408,7 +409,8 @@ object QUnit extends Shortcut {
       __obj.asInstanceOf[DoneDetails]
     }
     
-    extension [Self <: DoneDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoneDetails] (val x: Self) extends AnyVal {
       
       inline def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
       
@@ -454,7 +456,8 @@ object QUnit extends Shortcut {
       __obj.asInstanceOf[LogDetails]
     }
     
-    extension [Self <: LogDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogDetails] (val x: Self) extends AnyVal {
       
       inline def setActual(value: Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
@@ -493,7 +496,8 @@ object QUnit extends Shortcut {
       __obj.asInstanceOf[ModuleDoneDetails]
     }
     
-    extension [Self <: ModuleDoneDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleDoneDetails] (val x: Self) extends AnyVal {
       
       inline def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
       
@@ -518,7 +522,8 @@ object QUnit extends Shortcut {
       __obj.asInstanceOf[ModuleStartDetails]
     }
     
-    extension [Self <: ModuleStartDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleStartDetails] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -545,7 +550,8 @@ object QUnit extends Shortcut {
       __obj.asInstanceOf[TestDoneDetails]
     }
     
-    extension [Self <: TestDoneDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestDoneDetails] (val x: Self) extends AnyVal {
       
       inline def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
       
@@ -574,7 +580,8 @@ object QUnit extends Shortcut {
       __obj.asInstanceOf[TestStartDetails]
     }
     
-    extension [Self <: TestStartDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestStartDetails] (val x: Self) extends AnyVal {
       
       inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       

@@ -41,7 +41,8 @@ object IHttpResponse {
     __obj.asInstanceOf[IHttpResponse[T]]
   }
   
-  extension [Self <: IHttpResponse[?], T](x: Self & IHttpResponse[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHttpResponse[?], T] (val x: Self & IHttpResponse[T]) extends AnyVal {
     
     inline def setConfig(value: IRequestConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

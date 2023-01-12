@@ -18,7 +18,8 @@ object TlsConfigInput {
     __obj.asInstanceOf[TlsConfigInput]
   }
   
-  extension [Self <: TlsConfigInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TlsConfigInput] (val x: Self) extends AnyVal {
     
     inline def setServerNameToVerify(value: StringWithLengthBetween1And512): Self = StObject.set(x, "ServerNameToVerify", value.asInstanceOf[js.Any])
     

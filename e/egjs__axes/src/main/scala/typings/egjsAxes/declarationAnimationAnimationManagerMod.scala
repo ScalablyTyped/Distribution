@@ -91,7 +91,8 @@ object declarationAnimationAnimationManagerMod {
       __obj.asInstanceOf[AnimationState]
     }
     
-    extension [Self <: AnimationState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationState] (val x: Self) extends AnyVal {
       
       inline def setEasingPer(value: Double): Self = StObject.set(x, "easingPer", value.asInstanceOf[js.Any])
       

@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[LatexProps]
     }
     
-    extension [Self <: LatexProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LatexProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

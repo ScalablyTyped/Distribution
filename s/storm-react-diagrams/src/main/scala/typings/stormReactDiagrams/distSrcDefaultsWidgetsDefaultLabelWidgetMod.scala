@@ -28,7 +28,8 @@ object distSrcDefaultsWidgetsDefaultLabelWidgetMod {
       __obj.asInstanceOf[DefaultLabelWidgetProps]
     }
     
-    extension [Self <: DefaultLabelWidgetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultLabelWidgetProps] (val x: Self) extends AnyVal {
       
       inline def setModel(value: DefaultLabelModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     }

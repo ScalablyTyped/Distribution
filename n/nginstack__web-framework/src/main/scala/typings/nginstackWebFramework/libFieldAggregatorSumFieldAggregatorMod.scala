@@ -89,7 +89,8 @@ object libFieldAggregatorSumFieldAggregatorMod {
       __obj.asInstanceOf[SumFieldAggregator]
     }
     
-    extension [Self <: SumFieldAggregator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SumFieldAggregator] (val x: Self) extends AnyVal {
       
       inline def setFValue(value: Any): Self = StObject.set(x, "fValue", value.asInstanceOf[js.Any])
       

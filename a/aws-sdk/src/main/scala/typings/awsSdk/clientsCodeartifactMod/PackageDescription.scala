@@ -33,7 +33,8 @@ object PackageDescription {
     __obj.asInstanceOf[PackageDescription]
   }
   
-  extension [Self <: PackageDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageDescription] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: PackageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

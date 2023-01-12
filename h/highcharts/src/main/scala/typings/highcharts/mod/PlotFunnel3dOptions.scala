@@ -901,7 +901,8 @@ object PlotFunnel3dOptions {
     __obj.asInstanceOf[PlotFunnel3dOptions]
   }
   
-  extension [Self <: PlotFunnel3dOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotFunnel3dOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: SeriesAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

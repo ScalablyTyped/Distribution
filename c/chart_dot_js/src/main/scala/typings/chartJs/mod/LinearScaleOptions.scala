@@ -80,7 +80,8 @@ object LinearScaleOptions {
     __obj.asInstanceOf[LinearScaleOptions]
   }
   
-  extension [Self <: LinearScaleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinearScaleOptions] (val x: Self) extends AnyVal {
     
     inline def setBeginAtZero(value: Boolean): Self = StObject.set(x, "beginAtZero", value.asInstanceOf[js.Any])
     

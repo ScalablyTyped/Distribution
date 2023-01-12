@@ -17,7 +17,8 @@ object AggregationsMatrixStatsAggregation {
     __obj.asInstanceOf[AggregationsMatrixStatsAggregation]
   }
   
-  extension [Self <: AggregationsMatrixStatsAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsMatrixStatsAggregation] (val x: Self) extends AnyVal {
     
     inline def setMode(value: SortMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

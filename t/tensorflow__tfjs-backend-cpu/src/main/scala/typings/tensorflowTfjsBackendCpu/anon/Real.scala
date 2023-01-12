@@ -17,7 +17,8 @@ object Real {
     __obj.asInstanceOf[Real]
   }
   
-  extension [Self <: Real](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Real] (val x: Self) extends AnyVal {
     
     inline def setImag(value: Double): Self = StObject.set(x, "imag", value.asInstanceOf[js.Any])
     

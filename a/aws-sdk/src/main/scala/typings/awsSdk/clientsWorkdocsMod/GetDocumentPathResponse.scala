@@ -18,7 +18,8 @@ object GetDocumentPathResponse {
     __obj.asInstanceOf[GetDocumentPathResponse]
   }
   
-  extension [Self <: GetDocumentPathResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDocumentPathResponse] (val x: Self) extends AnyVal {
     
     inline def setPath(value: ResourcePath): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     

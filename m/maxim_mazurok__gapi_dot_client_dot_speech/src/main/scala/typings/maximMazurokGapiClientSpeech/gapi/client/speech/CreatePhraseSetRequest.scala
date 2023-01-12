@@ -22,7 +22,8 @@ object CreatePhraseSetRequest {
     __obj.asInstanceOf[CreatePhraseSetRequest]
   }
   
-  extension [Self <: CreatePhraseSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePhraseSetRequest] (val x: Self) extends AnyVal {
     
     inline def setPhraseSet(value: PhraseSet): Self = StObject.set(x, "phraseSet", value.asInstanceOf[js.Any])
     

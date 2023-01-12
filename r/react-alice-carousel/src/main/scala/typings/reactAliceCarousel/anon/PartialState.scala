@@ -65,7 +65,8 @@ object PartialState {
     __obj.asInstanceOf[PartialState]
   }
   
-  extension [Self <: PartialState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialState] (val x: Self) extends AnyVal {
     
     inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     

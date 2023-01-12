@@ -15,7 +15,8 @@ object UpdateSplitTenderGroupRequest {
     __obj.asInstanceOf[UpdateSplitTenderGroupRequest]
   }
   
-  extension [Self <: UpdateSplitTenderGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSplitTenderGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setUpdateSplitTenderGroupRequest(value: typings.authorizenet.mod.APIContracts.UpdateSplitTenderGroupRequest): Self = StObject.set(x, "updateSplitTenderGroupRequest", value.asInstanceOf[js.Any])
   }

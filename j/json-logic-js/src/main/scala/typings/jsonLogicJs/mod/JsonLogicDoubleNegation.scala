@@ -20,7 +20,8 @@ object JsonLogicDoubleNegation {
     __obj.asInstanceOf[JsonLogicDoubleNegation]
   }
   
-  extension [Self <: JsonLogicDoubleNegation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicDoubleNegation] (val x: Self) extends AnyVal {
     
     inline def setExclamationmarkExclamationmark(value: Any): Self = StObject.set(x, "!!", value.asInstanceOf[js.Any])
   }

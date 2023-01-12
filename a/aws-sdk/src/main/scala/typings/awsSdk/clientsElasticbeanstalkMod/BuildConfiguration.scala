@@ -38,7 +38,8 @@ object BuildConfiguration {
     __obj.asInstanceOf[BuildConfiguration]
   }
   
-  extension [Self <: BuildConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildConfiguration] (val x: Self) extends AnyVal {
     
     inline def setArtifactName(value: String): Self = StObject.set(x, "ArtifactName", value.asInstanceOf[js.Any])
     

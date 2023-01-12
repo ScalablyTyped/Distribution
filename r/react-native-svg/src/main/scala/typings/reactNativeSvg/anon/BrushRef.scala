@@ -20,7 +20,8 @@ object BrushRef {
     __obj.asInstanceOf[BrushRef]
   }
   
-  extension [Self <: BrushRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrushRef] (val x: Self) extends AnyVal {
     
     inline def setBrushRef(value: String): Self = StObject.set(x, "brushRef", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object CacheParameterGroupStatus {
     __obj.asInstanceOf[CacheParameterGroupStatus]
   }
   
-  extension [Self <: CacheParameterGroupStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheParameterGroupStatus] (val x: Self) extends AnyVal {
     
     inline def setCacheNodeIdsToReboot(value: CacheNodeIdsList): Self = StObject.set(x, "CacheNodeIdsToReboot", value.asInstanceOf[js.Any])
     

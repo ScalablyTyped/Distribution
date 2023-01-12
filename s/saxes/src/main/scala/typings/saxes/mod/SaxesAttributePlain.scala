@@ -23,7 +23,8 @@ object SaxesAttributePlain {
     __obj.asInstanceOf[SaxesAttributePlain]
   }
   
-  extension [Self <: SaxesAttributePlain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaxesAttributePlain] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

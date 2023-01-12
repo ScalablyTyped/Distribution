@@ -25,7 +25,8 @@ object Skipms {
     __obj.asInstanceOf[Skipms]
   }
   
-  extension [Self <: Skipms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Skipms] (val x: Self) extends AnyVal {
     
     inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     

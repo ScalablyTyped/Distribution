@@ -16,7 +16,8 @@ object EncryptResult {
     __obj.asInstanceOf[EncryptResult]
   }
   
-  extension [Self <: EncryptResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncryptResult] (val x: Self) extends AnyVal {
     
     inline def setSessionKey(value: AeadAlgorithm): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
   }

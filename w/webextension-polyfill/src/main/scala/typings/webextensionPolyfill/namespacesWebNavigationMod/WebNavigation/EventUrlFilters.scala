@@ -16,7 +16,8 @@ object EventUrlFilters {
     __obj.asInstanceOf[EventUrlFilters]
   }
   
-  extension [Self <: EventUrlFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventUrlFilters] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: js.Array[UrlFilter]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

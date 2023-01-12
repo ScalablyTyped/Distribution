@@ -23,7 +23,8 @@ object ExportEC2InstanceRecommendationsResponse {
     __obj.asInstanceOf[ExportEC2InstanceRecommendationsResponse]
   }
   
-  extension [Self <: ExportEC2InstanceRecommendationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportEC2InstanceRecommendationsResponse] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     

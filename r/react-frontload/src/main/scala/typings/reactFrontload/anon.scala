@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[AllFrontloads]
     }
     
-    extension [Self <: AllFrontloads](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllFrontloads] (val x: Self) extends AnyVal {
       
       inline def setAllFrontloads(value: js.Array[FrontloadData]): Self = StObject.set(x, "allFrontloads", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object anon {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -119,7 +122,8 @@ object anon {
       __obj.asInstanceOf[Data[T]]
     }
     
-    extension [Self <: Data[?], T](x: Self & Data[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data[?], T] (val x: Self & Data[T]) extends AnyVal {
       
       inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -140,7 +144,8 @@ object anon {
       __obj.asInstanceOf[FrontloadState[T]]
     }
     
-    extension [Self <: FrontloadState[?], T](x: Self & FrontloadState[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrontloadState[?], T] (val x: Self & FrontloadState[T]) extends AnyVal {
       
       inline def setFrontloadState(value: typings.reactFrontload.mod.FrontloadState): Self = StObject.set(x, "frontloadState", value.asInstanceOf[js.Any])
       
@@ -161,7 +166,8 @@ object anon {
       __obj.asInstanceOf[Frontloads]
     }
     
-    extension [Self <: Frontloads](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Frontloads] (val x: Self) extends AnyVal {
       
       inline def setFrontloads(value: js.Array[String]): Self = StObject.set(x, "frontloads", value.asInstanceOf[js.Any])
       
@@ -182,7 +188,8 @@ object anon {
       __obj.asInstanceOf[IsFinalRender]
     }
     
-    extension [Self <: IsFinalRender](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsFinalRender] (val x: Self) extends AnyVal {
       
       inline def setIsFinalRender(value: Boolean): Self = StObject.set(x, "isFinalRender", value.asInstanceOf[js.Any])
       
@@ -205,7 +212,8 @@ object anon {
       __obj.asInstanceOf[Logging]
     }
     
-    extension [Self <: Logging](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logging] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -232,7 +240,8 @@ object anon {
       __obj.asInstanceOf[ServerRenderedData]
     }
     
-    extension [Self <: ServerRenderedData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerRenderedData] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

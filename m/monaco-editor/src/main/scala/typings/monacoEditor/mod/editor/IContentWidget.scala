@@ -58,7 +58,8 @@ object IContentWidget {
     __obj.asInstanceOf[IContentWidget]
   }
   
-  extension [Self <: IContentWidget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContentWidget] (val x: Self) extends AnyVal {
     
     inline def setAfterRender(value: /* position */ ContentWidgetPositionPreference | Null => Unit): Self = StObject.set(x, "afterRender", js.Any.fromFunction1(value))
     

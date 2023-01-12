@@ -28,7 +28,8 @@ object IDoCheck {
     __obj.asInstanceOf[IDoCheck]
   }
   
-  extension [Self <: IDoCheck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDoCheck] (val x: Self) extends AnyVal {
     
     inline def set$doCheck(value: () => Unit): Self = StObject.set(x, "$doCheck", js.Any.fromFunction0(value))
   }

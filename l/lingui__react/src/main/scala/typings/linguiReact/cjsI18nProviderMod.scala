@@ -51,7 +51,8 @@ object cjsI18nProviderMod {
       __obj.asInstanceOf[I18nContext]
     }
     
-    extension [Self <: I18nContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I18nContext] (val x: Self) extends AnyVal {
       
       inline def setDefaultComponent(value: ComponentType[TransRenderProps]): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object cjsI18nProviderMod {
       __obj.asInstanceOf[I18nProviderProps]
     }
     
-    extension [Self <: I18nProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I18nProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object cjsI18nProviderMod {
       __obj.asInstanceOf[withI18nProps]
     }
     
-    extension [Self <: withI18nProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: withI18nProps] (val x: Self) extends AnyVal {
       
       inline def setI18n(value: I18n_): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     }

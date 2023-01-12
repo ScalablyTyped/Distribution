@@ -15,7 +15,8 @@ object StateBoolean {
     __obj.asInstanceOf[StateBoolean]
   }
   
-  extension [Self <: StateBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateBoolean] (val x: Self) extends AnyVal {
     
     inline def setState(value: Boolean): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }

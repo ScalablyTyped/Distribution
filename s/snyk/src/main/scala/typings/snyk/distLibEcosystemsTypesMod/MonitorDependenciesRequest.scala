@@ -32,7 +32,8 @@ object MonitorDependenciesRequest {
     __obj.asInstanceOf[MonitorDependenciesRequest]
   }
   
-  extension [Self <: MonitorDependenciesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitorDependenciesRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: ProjectAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object DropDownProperties {
     __obj.asInstanceOf[DropDownProperties]
   }
   
-  extension [Self <: DropDownProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropDownProperties] (val x: Self) extends AnyVal {
     
     inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object AsyncValidationOptions {
     __obj.asInstanceOf[AsyncValidationOptions]
   }
   
-  extension [Self <: AsyncValidationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncValidationOptions] (val x: Self) extends AnyVal {
     
     inline def setWarnings(value: Boolean): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     

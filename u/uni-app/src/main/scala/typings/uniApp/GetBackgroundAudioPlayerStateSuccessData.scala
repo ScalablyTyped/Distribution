@@ -38,7 +38,8 @@ object GetBackgroundAudioPlayerStateSuccessData {
     __obj.asInstanceOf[GetBackgroundAudioPlayerStateSuccessData]
   }
   
-  extension [Self <: GetBackgroundAudioPlayerStateSuccessData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBackgroundAudioPlayerStateSuccessData] (val x: Self) extends AnyVal {
     
     inline def setCurrentPosition(value: Double): Self = StObject.set(x, "currentPosition", value.asInstanceOf[js.Any])
     

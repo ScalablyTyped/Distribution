@@ -17,7 +17,8 @@ object GridGroupEvent {
     __obj.asInstanceOf[GridGroupEvent]
   }
   
-  extension [Self <: GridGroupEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridGroupEvent] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: Any): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     

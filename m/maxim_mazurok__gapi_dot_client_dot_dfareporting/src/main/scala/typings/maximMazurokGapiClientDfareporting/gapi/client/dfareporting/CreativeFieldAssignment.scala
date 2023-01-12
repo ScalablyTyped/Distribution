@@ -19,7 +19,8 @@ object CreativeFieldAssignment {
     __obj.asInstanceOf[CreativeFieldAssignment]
   }
   
-  extension [Self <: CreativeFieldAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreativeFieldAssignment] (val x: Self) extends AnyVal {
     
     inline def setCreativeFieldId(value: String): Self = StObject.set(x, "creativeFieldId", value.asInstanceOf[js.Any])
     

@@ -281,7 +281,8 @@ object mod {
       __obj.asInstanceOf[ActivityButtonProps]
     }
     
-    extension [Self <: ActivityButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActivityButtonProps] (val x: Self) extends AnyVal {
       
       inline def setActivateLabel(value: String | (js.Tuple3[String, String, ReactNode])): Self = StObject.set(x, "activateLabel", value.asInstanceOf[js.Any])
       
@@ -324,7 +325,8 @@ object mod {
       __obj.asInstanceOf[AuthButtonProps]
     }
     
-    extension [Self <: AuthButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthButtonProps] (val x: Self) extends AnyVal {
       
       inline def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
       
@@ -365,7 +367,8 @@ object mod {
       __obj.asInstanceOf[ListProps]
     }
     
-    extension [Self <: ListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: (/* listItem */ LDflexValue, /* index */ Double) => Element): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       
@@ -406,7 +409,8 @@ object mod {
       __obj.asInstanceOf[LoginButtonProps]
     }
     
-    extension [Self <: LoginButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoginButtonProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

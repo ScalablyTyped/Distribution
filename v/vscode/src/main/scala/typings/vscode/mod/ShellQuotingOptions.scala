@@ -31,7 +31,8 @@ object ShellQuotingOptions {
     __obj.asInstanceOf[ShellQuotingOptions]
   }
   
-  extension [Self <: ShellQuotingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShellQuotingOptions] (val x: Self) extends AnyVal {
     
     inline def setEscape(value: String | CharsToEscape): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
     

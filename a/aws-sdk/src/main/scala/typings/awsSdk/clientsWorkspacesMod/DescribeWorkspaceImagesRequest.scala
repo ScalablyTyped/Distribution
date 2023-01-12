@@ -33,7 +33,8 @@ object DescribeWorkspaceImagesRequest {
     __obj.asInstanceOf[DescribeWorkspaceImagesRequest]
   }
   
-  extension [Self <: DescribeWorkspaceImagesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeWorkspaceImagesRequest] (val x: Self) extends AnyVal {
     
     inline def setImageIds(value: WorkspaceImageIdList): Self = StObject.set(x, "ImageIds", value.asInstanceOf[js.Any])
     

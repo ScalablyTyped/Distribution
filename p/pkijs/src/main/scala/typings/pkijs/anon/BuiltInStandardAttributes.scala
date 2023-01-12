@@ -35,7 +35,8 @@ object BuiltInStandardAttributes {
     __obj.asInstanceOf[BuiltInStandardAttributes]
   }
   
-  extension [Self <: BuiltInStandardAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuiltInStandardAttributes] (val x: Self) extends AnyVal {
     
     inline def setBlockName(value: String): Self = StObject.set(x, "blockName", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object OlapXmlaDataSourceOptionsMdxSettings {
     __obj.asInstanceOf[OlapXmlaDataSourceOptionsMdxSettings]
   }
   
-  extension [Self <: OlapXmlaDataSourceOptionsMdxSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlapXmlaDataSourceOptionsMdxSettings] (val x: Self) extends AnyVal {
     
     inline def setAddCalculatedMembersOnColumns(value: Boolean): Self = StObject.set(x, "addCalculatedMembersOnColumns", value.asInstanceOf[js.Any])
     

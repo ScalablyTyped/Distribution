@@ -33,7 +33,8 @@ object SmartSectionCollapsibleDisplaySettings {
     __obj.asInstanceOf[SmartSectionCollapsibleDisplaySettings]
   }
   
-  extension [Self <: SmartSectionCollapsibleDisplaySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartSectionCollapsibleDisplaySettings] (val x: Self) extends AnyVal {
     
     inline def setArrowClosed(value: String): Self = StObject.set(x, "arrowClosed", value.asInstanceOf[js.Any])
     

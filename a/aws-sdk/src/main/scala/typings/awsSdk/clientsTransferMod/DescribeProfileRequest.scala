@@ -18,7 +18,8 @@ object DescribeProfileRequest {
     __obj.asInstanceOf[DescribeProfileRequest]
   }
   
-  extension [Self <: DescribeProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setProfileId(value: ProfileId): Self = StObject.set(x, "ProfileId", value.asInstanceOf[js.Any])
   }

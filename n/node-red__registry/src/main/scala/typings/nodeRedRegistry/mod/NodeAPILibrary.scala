@@ -15,7 +15,8 @@ object NodeAPILibrary {
     __obj.asInstanceOf[NodeAPILibrary]
   }
   
-  extension [Self <: NodeAPILibrary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeAPILibrary] (val x: Self) extends AnyVal {
     
     inline def setRegister(value: String => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
   }

@@ -26,7 +26,8 @@ object NumBundleCreationNonCompatMode {
     __obj.asInstanceOf[NumBundleCreationNonCompatMode]
   }
   
-  extension [Self <: NumBundleCreationNonCompatMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumBundleCreationNonCompatMode] (val x: Self) extends AnyVal {
     
     inline def setNumBundleCreationNonCompatMode(value: Double): Self = StObject.set(x, "numBundleCreationNonCompatMode", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetMessageFields {
     __obj.asInstanceOf[GetMessageFields]
   }
   
-  extension [Self <: GetMessageFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMessageFields] (val x: Self) extends AnyVal {
     
     inline def setMessageCount(value: Double): Self = StObject.set(x, "messageCount", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object SecurityRoleTemplateQuery {
     __obj.asInstanceOf[SecurityRoleTemplateQuery]
   }
   
-  extension [Self <: SecurityRoleTemplateQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityRoleTemplateQuery] (val x: Self) extends AnyVal {
     
     inline def setTemplate(value: SecurityRoleTemplateScript): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     

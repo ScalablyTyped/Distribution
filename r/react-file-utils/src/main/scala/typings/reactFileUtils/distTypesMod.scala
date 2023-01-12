@@ -25,7 +25,8 @@ object distTypesMod {
       __obj.asInstanceOf[FileUpload]
     }
     
-    extension [Self <: FileUpload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUpload] (val x: Self) extends AnyVal {
       
       inline def setFile(value: LastModified): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object distTypesMod {
       __obj.asInstanceOf[ImageUpload]
     }
     
-    extension [Self <: ImageUpload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageUpload] (val x: Self) extends AnyVal {
       
       inline def setFile(value: Height): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -71,7 +73,8 @@ object distTypesMod {
       __obj.asInstanceOf[UploadInfo]
     }
     
-    extension [Self <: UploadInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

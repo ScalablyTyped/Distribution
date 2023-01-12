@@ -28,7 +28,8 @@ object ListControlDomainInsightsByAssessmentRequest {
     __obj.asInstanceOf[ListControlDomainInsightsByAssessmentRequest]
   }
   
-  extension [Self <: ListControlDomainInsightsByAssessmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListControlDomainInsightsByAssessmentRequest] (val x: Self) extends AnyVal {
     
     inline def setAssessmentId(value: UUID): Self = StObject.set(x, "assessmentId", value.asInstanceOf[js.Any])
     

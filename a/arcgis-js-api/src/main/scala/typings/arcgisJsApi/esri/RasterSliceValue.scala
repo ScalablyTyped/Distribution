@@ -34,7 +34,8 @@ object RasterSliceValue {
     __obj.asInstanceOf[RasterSliceValue]
   }
   
-  extension [Self <: RasterSliceValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterSliceValue] (val x: Self) extends AnyVal {
     
     inline def setMagdirValue(value: js.Array[Double]): Self = StObject.set(x, "magdirValue", value.asInstanceOf[js.Any])
     

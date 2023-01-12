@@ -58,7 +58,8 @@ object XDataTransferProviderAccess {
     __obj.asInstanceOf[XDataTransferProviderAccess]
   }
   
-  extension [Self <: XDataTransferProviderAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataTransferProviderAccess] (val x: Self) extends AnyVal {
     
     inline def setGetClipboard(value: String => XClipboard): Self = StObject.set(x, "getClipboard", js.Any.fromFunction1(value))
     

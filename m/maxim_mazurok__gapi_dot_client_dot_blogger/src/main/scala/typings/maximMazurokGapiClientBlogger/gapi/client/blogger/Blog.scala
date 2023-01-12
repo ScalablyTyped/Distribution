@@ -55,7 +55,8 @@ object Blog {
     __obj.asInstanceOf[Blog]
   }
   
-  extension [Self <: Blog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Blog] (val x: Self) extends AnyVal {
     
     inline def setCustomMetaData(value: String): Self = StObject.set(x, "customMetaData", value.asInstanceOf[js.Any])
     

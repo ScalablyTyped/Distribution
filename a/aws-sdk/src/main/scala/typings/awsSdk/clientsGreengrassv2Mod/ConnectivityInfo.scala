@@ -33,7 +33,8 @@ object ConnectivityInfo {
     __obj.asInstanceOf[ConnectivityInfo]
   }
   
-  extension [Self <: ConnectivityInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectivityInfo] (val x: Self) extends AnyVal {
     
     inline def setHostAddress(value: String): Self = StObject.set(x, "hostAddress", value.asInstanceOf[js.Any])
     

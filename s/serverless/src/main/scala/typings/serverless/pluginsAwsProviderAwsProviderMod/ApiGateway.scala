@@ -44,7 +44,8 @@ object ApiGateway {
     __obj.asInstanceOf[ApiGateway]
   }
   
-  extension [Self <: ApiGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiGateway] (val x: Self) extends AnyVal {
     
     inline def setApiKeySourceType(value: HEADER | AUTHORIZER | header_ | authorizer_): Self = StObject.set(x, "apiKeySourceType", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object TypeofSAVE {
     __obj.asInstanceOf[TypeofSAVE]
   }
   
-  extension [Self <: TypeofSAVE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSAVE] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: () => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction0(value))
     

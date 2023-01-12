@@ -21,7 +21,8 @@ object ConnectionCallback {
     __obj.asInstanceOf[ConnectionCallback]
   }
   
-  extension [Self <: ConnectionCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionCallback] (val x: Self) extends AnyVal {
     
     inline def setError(value: ProtocolError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

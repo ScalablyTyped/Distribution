@@ -33,7 +33,8 @@ object MobileSdkRelease {
     __obj.asInstanceOf[MobileSdkRelease]
   }
   
-  extension [Self <: MobileSdkRelease](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileSdkRelease] (val x: Self) extends AnyVal {
     
     inline def setReleaseNotes(value: ReleaseNotes): Self = StObject.set(x, "ReleaseNotes", value.asInstanceOf[js.Any])
     

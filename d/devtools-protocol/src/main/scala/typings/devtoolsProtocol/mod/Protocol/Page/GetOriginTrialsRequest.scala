@@ -15,7 +15,8 @@ object GetOriginTrialsRequest {
     __obj.asInstanceOf[GetOriginTrialsRequest]
   }
   
-  extension [Self <: GetOriginTrialsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOriginTrialsRequest] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
   }

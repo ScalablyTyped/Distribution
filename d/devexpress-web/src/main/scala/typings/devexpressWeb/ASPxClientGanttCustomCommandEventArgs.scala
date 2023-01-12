@@ -28,7 +28,8 @@ object ASPxClientGanttCustomCommandEventArgs {
     __obj.asInstanceOf[ASPxClientGanttCustomCommandEventArgs]
   }
   
-  extension [Self <: ASPxClientGanttCustomCommandEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGanttCustomCommandEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
     

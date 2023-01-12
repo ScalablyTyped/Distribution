@@ -18,7 +18,8 @@ object DeleteRelationalDatabaseResult {
     __obj.asInstanceOf[DeleteRelationalDatabaseResult]
   }
   
-  extension [Self <: DeleteRelationalDatabaseResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRelationalDatabaseResult] (val x: Self) extends AnyVal {
     
     inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object SlotTypeValue {
     __obj.asInstanceOf[SlotTypeValue]
   }
   
-  extension [Self <: SlotTypeValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotTypeValue] (val x: Self) extends AnyVal {
     
     inline def setSampleValue(value: SampleValue): Self = StObject.set(x, "sampleValue", value.asInstanceOf[js.Any])
     

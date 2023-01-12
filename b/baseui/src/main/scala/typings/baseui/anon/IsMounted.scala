@@ -15,7 +15,8 @@ object IsMounted {
     __obj.asInstanceOf[IsMounted]
   }
   
-  extension [Self <: IsMounted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsMounted] (val x: Self) extends AnyVal {
     
     inline def setIsMounted(value: Boolean): Self = StObject.set(x, "isMounted", value.asInstanceOf[js.Any])
   }

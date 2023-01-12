@@ -21,7 +21,8 @@ object PullingEvent {
     __obj.asInstanceOf[PullingEvent]
   }
   
-  extension [Self <: PullingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullingEvent] (val x: Self) extends AnyVal {
     
     inline def setContentOffset(value: Double): Self = StObject.set(x, "contentOffset", value.asInstanceOf[js.Any])
   }

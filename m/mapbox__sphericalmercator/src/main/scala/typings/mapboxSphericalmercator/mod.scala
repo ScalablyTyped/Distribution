@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[XYBounds]
     }
     
-    extension [Self <: XYBounds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XYBounds] (val x: Self) extends AnyVal {
       
       inline def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object StyleLineHeight {
     __obj.asInstanceOf[StyleLineHeight]
   }
   
-  extension [Self <: StyleLineHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleLineHeight] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: LineHeight): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }

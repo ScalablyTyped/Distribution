@@ -41,7 +41,8 @@ object Existing {
     __obj.asInstanceOf[Existing]
   }
   
-  extension [Self <: Existing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Existing] (val x: Self) extends AnyVal {
     
     inline def setExisting(value: ExistingBehavior): Self = StObject.set(x, "existing", value.asInstanceOf[js.Any])
     

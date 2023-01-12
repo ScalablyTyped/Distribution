@@ -23,7 +23,8 @@ object ListIdentitiesResponse {
     __obj.asInstanceOf[ListIdentitiesResponse]
   }
   
-  extension [Self <: ListIdentitiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIdentitiesResponse] (val x: Self) extends AnyVal {
     
     inline def setIdentities(value: IdentityList): Self = StObject.set(x, "Identities", value.asInstanceOf[js.Any])
     

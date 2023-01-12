@@ -28,7 +28,8 @@ object ICollisionBoxComponent {
     __obj.asInstanceOf[ICollisionBoxComponent]
   }
   
-  extension [Self <: ICollisionBoxComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICollisionBoxComponent] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

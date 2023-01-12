@@ -238,7 +238,8 @@ object sapMLightBoxItemMod {
       __obj.asInstanceOf[LightBoxItemSettings]
     }
     
-    extension [Self <: LightBoxItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LightBoxItemSettings] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String | PropertyBindingInfo): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       

@@ -39,7 +39,8 @@ object PubSubJS {
       __obj.asInstanceOf[CountSubscriptions]
     }
     
-    extension [Self <: CountSubscriptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CountSubscriptions] (val x: Self) extends AnyVal {
       
       inline def setCountSubscriptions(value: Token => Double): Self = StObject.set(x, "countSubscriptions", js.Any.fromFunction1(value))
     }
@@ -56,7 +57,8 @@ object PubSubJS {
       __obj.asInstanceOf[GetSubscriptions]
     }
     
-    extension [Self <: GetSubscriptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetSubscriptions] (val x: Self) extends AnyVal {
       
       inline def setGetSubscriptions(value: Token => js.Array[Message]): Self = StObject.set(x, "getSubscriptions", js.Any.fromFunction1(value))
     }
@@ -90,7 +92,8 @@ object PubSubJS {
       __obj.asInstanceOf[Subscribe[T, M]]
     }
     
-    extension [Self <: Subscribe[?, ?], T, M](x: Self & (Subscribe[T, M])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscribe[?, ?], T, M] (val x: Self & (Subscribe[T, M])) extends AnyVal {
       
       inline def setSubscribe(value: (M, SubscriptionListener[T]) => Token): Self = StObject.set(x, "subscribe", js.Any.fromFunction2(value))
       

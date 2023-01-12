@@ -54,7 +54,8 @@ object distChartsPieChartPieChartDottypesMod {
       __obj.asInstanceOf[Dot]
     }
     
-    extension [Self <: Dot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dot] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object distChartsPieChartPieChartDottypesMod {
       __obj.asInstanceOf[PieChartCreatedEvent]
     }
     
-    extension [Self <: PieChartCreatedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PieChartCreatedEvent] (val x: Self) extends AnyVal {
       
       inline def setChartRect(value: ChartRect): Self = StObject.set(x, "chartRect", value.asInstanceOf[js.Any])
       
@@ -192,7 +194,8 @@ object distChartsPieChartPieChartDottypesMod {
       __obj.asInstanceOf[PieChartOptions]
     }
     
-    extension [Self <: PieChartOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PieChartOptions] (val x: Self) extends AnyVal {
       
       inline def setChartPadding(value: Double | PartialChartPadding): Self = StObject.set(x, "chartPadding", value.asInstanceOf[js.Any])
       
@@ -357,7 +360,8 @@ object distChartsPieChartPieChartDottypesMod {
       __obj.asInstanceOf[PieChartOptionsWithDefaults]
     }
     
-    extension [Self <: PieChartOptionsWithDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PieChartOptionsWithDefaults] (val x: Self) extends AnyVal {
       
       inline def setChartPadding(value: Double | PartialChartPadding): Self = StObject.set(x, "chartPadding", value.asInstanceOf[js.Any])
       
@@ -501,7 +505,8 @@ object distChartsPieChartPieChartDottypesMod {
       __obj.asInstanceOf[SliceDrawEvent]
     }
     
-    extension [Self <: SliceDrawEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliceDrawEvent] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: Dot): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
@@ -583,7 +588,8 @@ object distChartsPieChartPieChartDottypesMod {
       __obj.asInstanceOf[SliceLabelDrawEvent]
     }
     
-    extension [Self <: SliceLabelDrawEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliceLabelDrawEvent] (val x: Self) extends AnyVal {
       
       inline def setChartRect(value: ChartRect): Self = StObject.set(x, "chartRect", value.asInstanceOf[js.Any])
       

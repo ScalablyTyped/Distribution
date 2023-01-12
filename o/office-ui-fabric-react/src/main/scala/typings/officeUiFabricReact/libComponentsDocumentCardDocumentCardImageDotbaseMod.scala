@@ -33,7 +33,8 @@ object libComponentsDocumentCardDocumentCardImageDotbaseMod {
       __obj.asInstanceOf[IDocumentCardImageState]
     }
     
-    extension [Self <: IDocumentCardImageState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardImageState] (val x: Self) extends AnyVal {
       
       inline def setImageHasLoaded(value: Boolean): Self = StObject.set(x, "imageHasLoaded", value.asInstanceOf[js.Any])
     }

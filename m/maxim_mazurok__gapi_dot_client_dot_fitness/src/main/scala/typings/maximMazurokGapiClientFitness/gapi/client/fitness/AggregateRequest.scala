@@ -53,7 +53,8 @@ object AggregateRequest {
     __obj.asInstanceOf[AggregateRequest]
   }
   
-  extension [Self <: AggregateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateRequest] (val x: Self) extends AnyVal {
     
     inline def setAggregateBy(value: js.Array[AggregateBy]): Self = StObject.set(x, "aggregateBy", value.asInstanceOf[js.Any])
     

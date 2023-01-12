@@ -47,7 +47,8 @@ object `13` {
     __obj.asInstanceOf[`13`]
   }
   
-  extension [Self <: `13`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `13`] (val x: Self) extends AnyVal {
     
     inline def setDefault(
       value: (js.Function2[/* commandName */ String, /* args */ js.Array[Any], Unit]) | (js.Array[

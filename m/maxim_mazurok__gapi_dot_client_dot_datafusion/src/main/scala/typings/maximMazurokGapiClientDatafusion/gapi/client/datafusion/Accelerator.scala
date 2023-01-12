@@ -19,7 +19,8 @@ object Accelerator {
     __obj.asInstanceOf[Accelerator]
   }
   
-  extension [Self <: Accelerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Accelerator] (val x: Self) extends AnyVal {
     
     inline def setAcceleratorType(value: String): Self = StObject.set(x, "acceleratorType", value.asInstanceOf[js.Any])
     

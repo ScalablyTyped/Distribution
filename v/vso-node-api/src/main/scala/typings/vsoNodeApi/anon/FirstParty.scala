@@ -36,7 +36,8 @@ object FirstParty {
     __obj.asInstanceOf[FirstParty]
   }
   
-  extension [Self <: FirstParty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstParty] (val x: Self) extends AnyVal {
     
     inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object GPUDeviceDescriptor {
     __obj.asInstanceOf[GPUDeviceDescriptor]
   }
   
-  extension [Self <: GPUDeviceDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUDeviceDescriptor] (val x: Self) extends AnyVal {
     
     inline def setDefaultQueue(value: GPUQueueDescriptor): Self = StObject.set(x, "defaultQueue", value.asInstanceOf[js.Any])
     

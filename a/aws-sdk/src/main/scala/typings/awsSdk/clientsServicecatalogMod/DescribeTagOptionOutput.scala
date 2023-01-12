@@ -18,7 +18,8 @@ object DescribeTagOptionOutput {
     __obj.asInstanceOf[DescribeTagOptionOutput]
   }
   
-  extension [Self <: DescribeTagOptionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTagOptionOutput] (val x: Self) extends AnyVal {
     
     inline def setTagOptionDetail(value: TagOptionDetail): Self = StObject.set(x, "TagOptionDetail", value.asInstanceOf[js.Any])
     

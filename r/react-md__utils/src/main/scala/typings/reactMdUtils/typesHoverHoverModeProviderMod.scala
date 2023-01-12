@@ -46,7 +46,8 @@ object typesHoverHoverModeProviderMod {
       __obj.asInstanceOf[HoverModeConfiguration]
     }
     
-    extension [Self <: HoverModeConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HoverModeConfiguration] (val x: Self) extends AnyVal {
       
       inline def setDeactivateTime(value: Double): Self = StObject.set(x, "deactivateTime", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object typesHoverHoverModeProviderMod {
       __obj.asInstanceOf[HoverModeProviderProps]
     }
     
-    extension [Self <: HoverModeProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HoverModeProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

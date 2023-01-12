@@ -17,7 +17,8 @@ object MUIDataTableTextLabelsViewColumns {
     __obj.asInstanceOf[MUIDataTableTextLabelsViewColumns]
   }
   
-  extension [Self <: MUIDataTableTextLabelsViewColumns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableTextLabelsViewColumns] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

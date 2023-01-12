@@ -21,7 +21,8 @@ object ExportSettingsConstraints {
     __obj.asInstanceOf[ExportSettingsConstraints]
   }
   
-  extension [Self <: ExportSettingsConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportSettingsConstraints] (val x: Self) extends AnyVal {
     
     inline def setType(value: SCALE | WIDTH | HEIGHT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

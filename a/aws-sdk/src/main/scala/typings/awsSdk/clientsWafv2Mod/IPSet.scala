@@ -49,7 +49,8 @@ object IPSet {
     __obj.asInstanceOf[IPSet]
   }
   
-  extension [Self <: IPSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPSet] (val x: Self) extends AnyVal {
     
     inline def setARN(value: ResourceArn): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

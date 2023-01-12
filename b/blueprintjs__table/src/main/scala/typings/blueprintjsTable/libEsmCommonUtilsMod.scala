@@ -206,7 +206,8 @@ object libEsmCommonUtilsMod {
       __obj.asInstanceOf[IKeyAllowlist[T]]
     }
     
-    extension [Self <: IKeyAllowlist[?], T](x: Self & IKeyAllowlist[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeyAllowlist[?], T] (val x: Self & IKeyAllowlist[T]) extends AnyVal {
       
       inline def setInclude(value: js.Array[/* keyof T */ String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
@@ -225,7 +226,8 @@ object libEsmCommonUtilsMod {
       __obj.asInstanceOf[IKeyDenylist[T]]
     }
     
-    extension [Self <: IKeyDenylist[?], T](x: Self & IKeyDenylist[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeyDenylist[?], T] (val x: Self & IKeyDenylist[T]) extends AnyVal {
       
       inline def setExclude(value: js.Array[/* keyof T */ String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       

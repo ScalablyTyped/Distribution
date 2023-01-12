@@ -67,7 +67,8 @@ object componentsTileTileMod {
       __obj.asInstanceOf[Tile]
     }
     
-    extension [Self <: Tile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tile] (val x: Self) extends AnyVal {
       
       inline def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
       
@@ -107,7 +108,8 @@ object componentsTileTileMod {
       __obj.asInstanceOf[TileOptions]
     }
     
-    extension [Self <: TileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileOptions] (val x: Self) extends AnyVal {
       
       inline def setClassClickableTile(value: String): Self = StObject.set(x, "classClickableTile", value.asInstanceOf[js.Any])
       

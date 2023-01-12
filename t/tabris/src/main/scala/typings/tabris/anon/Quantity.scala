@@ -19,7 +19,8 @@ object Quantity {
     __obj.asInstanceOf[Quantity]
   }
   
-  extension [Self <: Quantity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Quantity] (val x: Self) extends AnyVal {
     
     inline def setQuantity(value: single | multiple): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     

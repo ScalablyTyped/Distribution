@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBlockRenderers(value: StringDictionary[BlockRenderer]): Self = StObject.set(x, "blockRenderers", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object mod {
       __obj.asInstanceOf[RenderConfig]
     }
     
-    extension [Self <: RenderConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderConfig] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

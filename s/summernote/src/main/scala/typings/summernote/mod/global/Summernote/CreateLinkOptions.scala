@@ -19,7 +19,8 @@ object CreateLinkOptions {
     __obj.asInstanceOf[CreateLinkOptions]
   }
   
-  extension [Self <: CreateLinkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLinkOptions] (val x: Self) extends AnyVal {
     
     inline def setNewWindow(value: Boolean): Self = StObject.set(x, "newWindow", value.asInstanceOf[js.Any])
     

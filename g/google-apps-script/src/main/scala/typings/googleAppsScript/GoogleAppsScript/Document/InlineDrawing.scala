@@ -67,7 +67,8 @@ object InlineDrawing {
     __obj.asInstanceOf[InlineDrawing]
   }
   
-  extension [Self <: InlineDrawing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineDrawing] (val x: Self) extends AnyVal {
     
     inline def setGetAltDescription(value: () => String): Self = StObject.set(x, "getAltDescription", js.Any.fromFunction0(value))
     

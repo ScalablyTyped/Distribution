@@ -901,7 +901,8 @@ object PlotPyramid3dOptions {
     __obj.asInstanceOf[PlotPyramid3dOptions]
   }
   
-  extension [Self <: PlotPyramid3dOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPyramid3dOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: SeriesAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

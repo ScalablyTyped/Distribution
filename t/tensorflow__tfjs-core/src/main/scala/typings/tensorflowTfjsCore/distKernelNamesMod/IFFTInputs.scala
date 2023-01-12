@@ -16,7 +16,8 @@ object IFFTInputs {
     __obj.asInstanceOf[IFFTInputs]
   }
   
-  extension [Self <: IFFTInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFFTInputs] (val x: Self) extends AnyVal {
     
     inline def setInput(value: scala.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

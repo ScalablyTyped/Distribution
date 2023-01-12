@@ -42,7 +42,8 @@ object RepoSource {
     __obj.asInstanceOf[RepoSource]
   }
   
-  extension [Self <: RepoSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepoSource] (val x: Self) extends AnyVal {
     
     inline def setBranchName(value: String): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     

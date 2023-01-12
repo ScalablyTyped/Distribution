@@ -19,7 +19,8 @@ object GoogleMapsPlayablelocationsV3SamplePlayableLocationsRequest {
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3SamplePlayableLocationsRequest]
   }
   
-  extension [Self <: GoogleMapsPlayablelocationsV3SamplePlayableLocationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleMapsPlayablelocationsV3SamplePlayableLocationsRequest] (val x: Self) extends AnyVal {
     
     inline def setAreaFilter(value: GoogleMapsPlayablelocationsV3SampleAreaFilter): Self = StObject.set(x, "areaFilter", value.asInstanceOf[js.Any])
     

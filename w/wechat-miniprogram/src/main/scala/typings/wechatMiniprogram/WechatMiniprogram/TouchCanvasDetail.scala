@@ -23,7 +23,8 @@ object TouchCanvasDetail {
     __obj.asInstanceOf[TouchCanvasDetail]
   }
   
-  extension [Self <: TouchCanvasDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchCanvasDetail] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: Double): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

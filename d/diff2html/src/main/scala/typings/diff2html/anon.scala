@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object anon {
       __obj.asInstanceOf[DiffStyle]
     }
     
-    extension [Self <: DiffStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffStyle] (val x: Self) extends AnyVal {
       
       inline def setDiffStyle(value: DiffStyleType): Self = StObject.set(x, "diffStyle", value.asInstanceOf[js.Any])
       

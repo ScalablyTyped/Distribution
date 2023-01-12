@@ -20,7 +20,8 @@ object MenuShareWeibo {
     __obj.asInstanceOf[MenuShareWeibo]
   }
   
-  extension [Self <: MenuShareWeibo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuShareWeibo] (val x: Self) extends AnyVal {
     
     inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
   }

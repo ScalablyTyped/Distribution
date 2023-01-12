@@ -19,7 +19,8 @@ object DisplacementGroups {
     __obj.asInstanceOf[DisplacementGroups]
   }
   
-  extension [Self <: DisplacementGroups](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplacementGroups] (val x: Self) extends AnyVal {
     
     inline def setAll(value: js.Array[DraggableId]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

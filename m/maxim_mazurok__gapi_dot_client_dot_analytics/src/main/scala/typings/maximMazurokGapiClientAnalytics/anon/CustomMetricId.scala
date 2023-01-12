@@ -43,7 +43,8 @@ object CustomMetricId {
     __obj.asInstanceOf[CustomMetricId]
   }
   
-  extension [Self <: CustomMetricId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomMetricId] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

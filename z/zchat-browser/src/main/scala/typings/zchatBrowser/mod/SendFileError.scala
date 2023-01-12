@@ -19,7 +19,8 @@ object SendFileError {
     __obj.asInstanceOf[SendFileError]
   }
   
-  extension [Self <: SendFileError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendFileError] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: SendFileErrorMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }

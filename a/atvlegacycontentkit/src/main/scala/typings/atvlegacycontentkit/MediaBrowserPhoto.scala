@@ -27,7 +27,8 @@ object MediaBrowserPhoto {
     __obj.asInstanceOf[MediaBrowserPhoto]
   }
   
-  extension [Self <: MediaBrowserPhoto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaBrowserPhoto] (val x: Self) extends AnyVal {
     
     inline def setAssets(value: js.Array[MediaBrowserAsset]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     

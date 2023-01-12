@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[CreateTrackedMapOptions]
     }
     
-    extension [Self <: CreateTrackedMapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateTrackedMapOptions] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object mod {
       __obj.asInstanceOf[TrackedMapInit]
     }
     
-    extension [Self <: TrackedMapInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackedMapInit] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

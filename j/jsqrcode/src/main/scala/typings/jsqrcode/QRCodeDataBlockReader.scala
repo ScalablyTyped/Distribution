@@ -59,7 +59,8 @@ object QRCodeDataBlockReader {
     __obj.asInstanceOf[QRCodeDataBlockReader]
   }
   
-  extension [Self <: QRCodeDataBlockReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QRCodeDataBlockReader] (val x: Self) extends AnyVal {
     
     inline def setBitPointer(value: Double): Self = StObject.set(x, "bitPointer", value.asInstanceOf[js.Any])
     

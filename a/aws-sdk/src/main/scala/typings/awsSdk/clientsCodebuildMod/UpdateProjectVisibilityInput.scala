@@ -25,7 +25,8 @@ object UpdateProjectVisibilityInput {
     __obj.asInstanceOf[UpdateProjectVisibilityInput]
   }
   
-  extension [Self <: UpdateProjectVisibilityInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateProjectVisibilityInput] (val x: Self) extends AnyVal {
     
     inline def setProjectArn(value: NonEmptyString): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
     

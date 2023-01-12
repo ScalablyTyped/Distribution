@@ -26,7 +26,8 @@ object CIMColorSubstitution {
     __obj.asInstanceOf[CIMColorSubstitution]
   }
   
-  extension [Self <: CIMColorSubstitution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMColorSubstitution] (val x: Self) extends AnyVal {
     
     inline def setNewColor(value: js.Array[Double]): Self = StObject.set(x, "newColor", value.asInstanceOf[js.Any])
     

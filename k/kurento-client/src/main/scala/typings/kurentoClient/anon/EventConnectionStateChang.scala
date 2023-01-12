@@ -39,7 +39,8 @@ object EventConnectionStateChang {
     __obj.asInstanceOf[EventConnectionStateChang]
   }
   
-  extension [Self <: EventConnectionStateChang](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventConnectionStateChang] (val x: Self) extends AnyVal {
     
     inline def setNewState(value: ConnectionState): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
     

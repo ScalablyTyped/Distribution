@@ -47,7 +47,8 @@ object FeaturesLegacy {
     __obj.asInstanceOf[FeaturesLegacy]
   }
   
-  extension [Self <: FeaturesLegacy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeaturesLegacy] (val x: Self) extends AnyVal {
     
     inline def setBAutoWidth(value: Boolean): Self = StObject.set(x, "bAutoWidth", value.asInstanceOf[js.Any])
     

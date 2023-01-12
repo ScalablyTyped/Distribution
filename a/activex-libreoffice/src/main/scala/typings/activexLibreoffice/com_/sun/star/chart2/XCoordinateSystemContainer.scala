@@ -46,7 +46,8 @@ object XCoordinateSystemContainer {
     __obj.asInstanceOf[XCoordinateSystemContainer]
   }
   
-  extension [Self <: XCoordinateSystemContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCoordinateSystemContainer] (val x: Self) extends AnyVal {
     
     inline def setAddCoordinateSystem(value: XCoordinateSystem => Unit): Self = StObject.set(x, "addCoordinateSystem", js.Any.fromFunction1(value))
     

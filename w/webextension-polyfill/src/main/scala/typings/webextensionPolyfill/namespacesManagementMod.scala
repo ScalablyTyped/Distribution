@@ -145,7 +145,8 @@ object namespacesManagementMod {
         __obj.asInstanceOf[ExtensionInfo]
       }
       
-      extension [Self <: ExtensionInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExtensionInfo] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -268,7 +269,8 @@ object namespacesManagementMod {
         __obj.asInstanceOf[IconInfo]
       }
       
-      extension [Self <: IconInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IconInfo] (val x: Self) extends AnyVal {
         
         inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
@@ -287,7 +289,8 @@ object namespacesManagementMod {
         __obj.asInstanceOf[InstallCallbackResultType]
       }
       
-      extension [Self <: InstallCallbackResultType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InstallCallbackResultType] (val x: Self) extends AnyVal {
         
         inline def setId(value: ExtensionID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       }
@@ -313,7 +316,8 @@ object namespacesManagementMod {
         __obj.asInstanceOf[InstallOptionsType]
       }
       
-      extension [Self <: InstallOptionsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InstallOptionsType] (val x: Self) extends AnyVal {
         
         inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
         
@@ -418,7 +422,8 @@ object namespacesManagementMod {
         __obj.asInstanceOf[UninstallSelfOptionsType]
       }
       
-      extension [Self <: UninstallSelfOptionsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UninstallSelfOptionsType] (val x: Self) extends AnyVal {
         
         inline def setDialogMessage(value: String): Self = StObject.set(x, "dialogMessage", value.asInstanceOf[js.Any])
         

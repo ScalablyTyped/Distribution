@@ -40,7 +40,8 @@ object BotImportSpecification {
     __obj.asInstanceOf[BotImportSpecification]
   }
   
-  extension [Self <: BotImportSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BotImportSpecification] (val x: Self) extends AnyVal {
     
     inline def setBotName(value: Name): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
     

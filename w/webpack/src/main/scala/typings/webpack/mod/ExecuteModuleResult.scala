@@ -36,7 +36,8 @@ object ExecuteModuleResult {
     __obj.asInstanceOf[ExecuteModuleResult]
   }
   
-  extension [Self <: ExecuteModuleResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteModuleResult] (val x: Self) extends AnyVal {
     
     inline def setAssets(value: Map[String, typings.webpack.anon.Source]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     

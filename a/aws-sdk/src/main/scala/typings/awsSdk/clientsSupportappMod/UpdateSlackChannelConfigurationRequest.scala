@@ -53,7 +53,8 @@ object UpdateSlackChannelConfigurationRequest {
     __obj.asInstanceOf[UpdateSlackChannelConfigurationRequest]
   }
   
-  extension [Self <: UpdateSlackChannelConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSlackChannelConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelId(value: channelId): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object TruncateSyncOption {
     __obj.asInstanceOf[TruncateSyncOption]
   }
   
-  extension [Self <: TruncateSyncOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TruncateSyncOption] (val x: Self) extends AnyVal {
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     

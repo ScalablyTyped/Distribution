@@ -28,7 +28,8 @@ object AutoMLContainerDefinition {
     __obj.asInstanceOf[AutoMLContainerDefinition]
   }
   
-  extension [Self <: AutoMLContainerDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoMLContainerDefinition] (val x: Self) extends AnyVal {
     
     inline def setEnvironment(value: EnvironmentMap): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
     

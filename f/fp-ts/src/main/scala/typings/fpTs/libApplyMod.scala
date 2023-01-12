@@ -1191,7 +1191,8 @@ object libApplyMod {
       __obj.asInstanceOf[Apply[F]]
     }
     
-    extension [Self <: Apply[?], F](x: Self & Apply[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Apply[?], F] (val x: Self & Apply[F]) extends AnyVal {
       
       inline def setAp(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, (a : A): B> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any) => Any
@@ -1219,7 +1220,8 @@ object libApplyMod {
       __obj.asInstanceOf[Apply1[F]]
     }
     
-    extension [Self <: Apply1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & Apply1[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Apply1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & Apply1[F]) extends AnyVal {
       
       inline def setAp(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, (a : A): B> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any) => Any
@@ -1247,7 +1249,8 @@ object libApplyMod {
       __obj.asInstanceOf[Apply2[F]]
     }
     
-    extension [Self <: Apply2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & Apply2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Apply2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & Apply2[F]) extends AnyVal {
       
       inline def setAp(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, (a : A): B> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any) => Any
@@ -1276,7 +1279,8 @@ object libApplyMod {
       __obj.asInstanceOf[Apply2C[F, E]]
     }
     
-    extension [Self <: Apply2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (Apply2C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Apply2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (Apply2C[F, E])) extends AnyVal {
       
       inline def setAp(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, (a : A): B> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any) => Any
@@ -1304,7 +1308,8 @@ object libApplyMod {
       __obj.asInstanceOf[Apply3[F]]
     }
     
-    extension [Self <: Apply3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & Apply3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Apply3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & Apply3[F]) extends AnyVal {
       
       inline def setAp(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, (a : A): B> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any) => Any
@@ -1333,7 +1338,8 @@ object libApplyMod {
       __obj.asInstanceOf[Apply3C[F, E]]
     }
     
-    extension [Self <: Apply3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (Apply3C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Apply3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (Apply3C[F, E])) extends AnyVal {
       
       inline def setAp(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, (a : A): B> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any) => Any
@@ -1361,7 +1367,8 @@ object libApplyMod {
       __obj.asInstanceOf[Apply4[F]]
     }
     
-    extension [Self <: Apply4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & Apply4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Apply4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & Apply4[F]) extends AnyVal {
       
       inline def setAp(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, (a : A): B> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any) => Any

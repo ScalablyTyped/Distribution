@@ -18,7 +18,8 @@ object ListTagsLogGroupResponse {
     __obj.asInstanceOf[ListTagsLogGroupResponse]
   }
   
-  extension [Self <: ListTagsLogGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTagsLogGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

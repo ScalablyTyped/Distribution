@@ -48,7 +48,8 @@ object IpAddressResponse {
     __obj.asInstanceOf[IpAddressResponse]
   }
   
-  extension [Self <: IpAddressResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpAddressResponse] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: Rfc3339TimeString): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

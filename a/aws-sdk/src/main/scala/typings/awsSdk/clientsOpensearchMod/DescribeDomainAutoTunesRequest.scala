@@ -28,7 +28,8 @@ object DescribeDomainAutoTunesRequest {
     __obj.asInstanceOf[DescribeDomainAutoTunesRequest]
   }
   
-  extension [Self <: DescribeDomainAutoTunesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDomainAutoTunesRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

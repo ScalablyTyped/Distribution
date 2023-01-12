@@ -19,7 +19,8 @@ object ObjectAccessControls {
     __obj.asInstanceOf[ObjectAccessControls]
   }
   
-  extension [Self <: ObjectAccessControls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectAccessControls] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[ObjectAccessControl]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

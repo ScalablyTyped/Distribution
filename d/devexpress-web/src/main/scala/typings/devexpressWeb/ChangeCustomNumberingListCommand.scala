@@ -32,7 +32,8 @@ object ChangeCustomNumberingListCommand {
     __obj.asInstanceOf[ChangeCustomNumberingListCommand]
   }
   
-  extension [Self <: ChangeCustomNumberingListCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeCustomNumberingListCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: (Double, js.Array[ListLevelSettings]) => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction2(value))
     

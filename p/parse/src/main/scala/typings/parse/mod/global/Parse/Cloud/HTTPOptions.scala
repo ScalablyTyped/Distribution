@@ -57,7 +57,8 @@ object HTTPOptions {
   @js.native
   val ^ : Instantiable0[HTTPOptions] = js.native
   
-  extension [Self <: HTTPOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTTPOptions] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String | Buffer | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

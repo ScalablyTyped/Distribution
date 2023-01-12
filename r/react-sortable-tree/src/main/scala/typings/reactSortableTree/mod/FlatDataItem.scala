@@ -25,7 +25,8 @@ object FlatDataItem {
     __obj.asInstanceOf[FlatDataItem[T]]
   }
   
-  extension [Self <: FlatDataItem[?], T](x: Self & FlatDataItem[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlatDataItem[?], T] (val x: Self & FlatDataItem[T]) extends AnyVal {
     
     inline def setLowerSiblingCounts(value: js.Array[Double]): Self = StObject.set(x, "lowerSiblingCounts", value.asInstanceOf[js.Any])
     

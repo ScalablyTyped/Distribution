@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "phonetic"
-version := "0.1-dt-20220624Z-76c818"
+version := "0.1-dt-20220624Z-0ac15b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -28,7 +28,8 @@ object StellarChangeTrustOperation {
     __obj.asInstanceOf[StellarChangeTrustOperation]
   }
   
-  extension [Self <: StellarChangeTrustOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StellarChangeTrustOperation] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

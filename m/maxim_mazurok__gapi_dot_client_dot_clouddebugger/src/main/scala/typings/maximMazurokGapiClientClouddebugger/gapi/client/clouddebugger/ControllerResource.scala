@@ -15,7 +15,8 @@ object ControllerResource {
     __obj.asInstanceOf[ControllerResource]
   }
   
-  extension [Self <: ControllerResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControllerResource] (val x: Self) extends AnyVal {
     
     inline def setDebuggees(value: DebuggeesResource): Self = StObject.set(x, "debuggees", value.asInstanceOf[js.Any])
   }

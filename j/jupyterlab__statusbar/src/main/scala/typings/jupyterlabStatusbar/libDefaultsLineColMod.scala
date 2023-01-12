@@ -113,7 +113,8 @@ object libDefaultsLineColMod {
         __obj.asInstanceOf[IProps]
       }
       
-      extension [Self <: IProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IProps] (val x: Self) extends AnyVal {
         
         inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         

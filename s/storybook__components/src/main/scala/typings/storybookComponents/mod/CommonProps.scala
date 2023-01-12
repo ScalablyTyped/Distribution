@@ -19,7 +19,8 @@ object CommonProps {
     __obj.asInstanceOf[CommonProps]
   }
   
-  extension [Self <: CommonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonProps] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

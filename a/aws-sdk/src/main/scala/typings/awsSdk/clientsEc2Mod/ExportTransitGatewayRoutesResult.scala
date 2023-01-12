@@ -18,7 +18,8 @@ object ExportTransitGatewayRoutesResult {
     __obj.asInstanceOf[ExportTransitGatewayRoutesResult]
   }
   
-  extension [Self <: ExportTransitGatewayRoutesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportTransitGatewayRoutesResult] (val x: Self) extends AnyVal {
     
     inline def setS3Location(value: String): Self = StObject.set(x, "S3Location", value.asInstanceOf[js.Any])
     

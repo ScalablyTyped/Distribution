@@ -24,7 +24,8 @@ object distTypesCssPropertyDescriptorsCounterIncrementMod {
       __obj.asInstanceOf[COUNTER_INCREMENT]
     }
     
-    extension [Self <: COUNTER_INCREMENT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: COUNTER_INCREMENT] (val x: Self) extends AnyVal {
       
       inline def setCounter(value: String): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
       

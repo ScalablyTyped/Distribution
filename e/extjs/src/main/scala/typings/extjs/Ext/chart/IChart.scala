@@ -340,7 +340,8 @@ object IChart {
     __obj.asInstanceOf[IChart]
   }
   
-  extension [Self <: IChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IChart] (val x: Self) extends AnyVal {
     
     inline def setAddEvents(value: /* eventNames */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addEvents", js.Any.fromFunction1(value))
     

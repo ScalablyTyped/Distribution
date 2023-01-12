@@ -35,7 +35,8 @@ object AuthChallenge {
     __obj.asInstanceOf[AuthChallenge]
   }
   
-  extension [Self <: AuthChallenge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthChallenge] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     

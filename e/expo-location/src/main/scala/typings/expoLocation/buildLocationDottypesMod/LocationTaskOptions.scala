@@ -60,7 +60,8 @@ object LocationTaskOptions {
     __obj.asInstanceOf[LocationTaskOptions]
   }
   
-  extension [Self <: LocationTaskOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationTaskOptions] (val x: Self) extends AnyVal {
     
     inline def setActivityType(value: LocationActivityType): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
     

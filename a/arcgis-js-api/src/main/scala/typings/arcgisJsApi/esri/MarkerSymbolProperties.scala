@@ -51,7 +51,8 @@ object MarkerSymbolProperties {
     __obj.asInstanceOf[MarkerSymbolProperties]
   }
   
-  extension [Self <: MarkerSymbolProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerSymbolProperties] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

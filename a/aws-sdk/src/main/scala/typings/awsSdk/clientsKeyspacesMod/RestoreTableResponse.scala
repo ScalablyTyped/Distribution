@@ -18,7 +18,8 @@ object RestoreTableResponse {
     __obj.asInstanceOf[RestoreTableResponse]
   }
   
-  extension [Self <: RestoreTableResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreTableResponse] (val x: Self) extends AnyVal {
     
     inline def setRestoredTableARN(value: ARN): Self = StObject.set(x, "restoredTableARN", value.asInstanceOf[js.Any])
   }

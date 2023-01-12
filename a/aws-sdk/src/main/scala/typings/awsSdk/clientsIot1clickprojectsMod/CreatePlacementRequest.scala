@@ -28,7 +28,8 @@ object CreatePlacementRequest {
     __obj.asInstanceOf[CreatePlacementRequest]
   }
   
-  extension [Self <: CreatePlacementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePlacementRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: PlacementAttributeMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

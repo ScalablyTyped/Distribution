@@ -37,7 +37,8 @@ object DynamicMapLayertypemaplay {
     __obj.asInstanceOf[DynamicMapLayertypemaplay]
   }
   
-  extension [Self <: DynamicMapLayertypemaplay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicMapLayertypemaplay] (val x: Self) extends AnyVal {
     
     inline def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
     

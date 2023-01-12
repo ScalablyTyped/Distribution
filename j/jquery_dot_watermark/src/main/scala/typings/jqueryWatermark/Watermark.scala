@@ -29,7 +29,8 @@ object Watermark {
     __obj.asInstanceOf[Watermark]
   }
   
-  extension [Self <: Watermark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Watermark] (val x: Self) extends AnyVal {
     
     inline def setHide(value: String => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
     

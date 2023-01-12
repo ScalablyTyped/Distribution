@@ -18,7 +18,8 @@ object PurchaseProvisionedCapacityOutput {
     __obj.asInstanceOf[PurchaseProvisionedCapacityOutput]
   }
   
-  extension [Self <: PurchaseProvisionedCapacityOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PurchaseProvisionedCapacityOutput] (val x: Self) extends AnyVal {
     
     inline def setCapacityId(value: String): Self = StObject.set(x, "capacityId", value.asInstanceOf[js.Any])
     

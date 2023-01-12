@@ -20,7 +20,8 @@ object Language {
       __obj.asInstanceOf[LanguageAdvancedParameters]
     }
     
-    extension [Self <: LanguageAdvancedParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LanguageAdvancedParameters] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: html | text): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       

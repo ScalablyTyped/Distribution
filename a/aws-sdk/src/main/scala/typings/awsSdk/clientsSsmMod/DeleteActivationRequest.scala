@@ -18,7 +18,8 @@ object DeleteActivationRequest {
     __obj.asInstanceOf[DeleteActivationRequest]
   }
   
-  extension [Self <: DeleteActivationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteActivationRequest] (val x: Self) extends AnyVal {
     
     inline def setActivationId(value: ActivationId): Self = StObject.set(x, "ActivationId", value.asInstanceOf[js.Any])
   }

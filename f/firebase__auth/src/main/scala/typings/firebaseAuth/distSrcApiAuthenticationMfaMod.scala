@@ -33,7 +33,8 @@ object distSrcApiAuthenticationMfaMod {
       __obj.asInstanceOf[FinalizeMfaResponse]
     }
     
-    extension [Self <: FinalizeMfaResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FinalizeMfaResponse] (val x: Self) extends AnyVal {
       
       inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object distSrcApiAuthenticationMfaMod {
       __obj.asInstanceOf[FinalizePhoneMfaSignInRequest]
     }
     
-    extension [Self <: FinalizePhoneMfaSignInRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FinalizePhoneMfaSignInRequest] (val x: Self) extends AnyVal {
       
       inline def setMfaPendingCredential(value: String): Self = StObject.set(x, "mfaPendingCredential", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object distSrcApiAuthenticationMfaMod {
       __obj.asInstanceOf[IdTokenMfaResponse]
     }
     
-    extension [Self <: IdTokenMfaResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdTokenMfaResponse] (val x: Self) extends AnyVal {
       
       inline def setMfaInfo(value: js.Array[MfaEnrollment]): Self = StObject.set(x, "mfaInfo", value.asInstanceOf[js.Any])
       
@@ -140,7 +143,8 @@ object distSrcApiAuthenticationMfaMod {
       __obj.asInstanceOf[StartPhoneMfaSignInRequest]
     }
     
-    extension [Self <: StartPhoneMfaSignInRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartPhoneMfaSignInRequest] (val x: Self) extends AnyVal {
       
       inline def setMfaEnrollmentId(value: String): Self = StObject.set(x, "mfaEnrollmentId", value.asInstanceOf[js.Any])
       
@@ -165,7 +169,8 @@ object distSrcApiAuthenticationMfaMod {
       __obj.asInstanceOf[StartPhoneMfaSignInResponse]
     }
     
-    extension [Self <: StartPhoneMfaSignInResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartPhoneMfaSignInResponse] (val x: Self) extends AnyVal {
       
       inline def setPhoneResponseInfo(value: SessionInfo): Self = StObject.set(x, "phoneResponseInfo", value.asInstanceOf[js.Any])
     }

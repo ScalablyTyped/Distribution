@@ -34,7 +34,8 @@ object IPublishPacket {
     __obj.asInstanceOf[IPublishPacket]
   }
   
-  extension [Self <: IPublishPacket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPublishPacket] (val x: Self) extends AnyVal {
     
     inline def setCmd(value: publish): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     

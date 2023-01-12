@@ -53,7 +53,8 @@ object RemoteObjSpec {
     __obj.asInstanceOf[RemoteObjSpec]
   }
   
-  extension [Self <: RemoteObjSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteObjSpec] (val x: Self) extends AnyVal {
     
     inline def setCellEdit(value: Boolean): Self = StObject.set(x, "cellEdit", value.asInstanceOf[js.Any])
     

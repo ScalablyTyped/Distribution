@@ -57,7 +57,8 @@ object inputTypesMod {
       __obj.asInstanceOf[BaseInputOverrides]
     }
     
-    extension [Self <: BaseInputOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseInputOverrides] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: Override[Any]): Self = StObject.set(x, "After", value.asInstanceOf[js.Any])
       
@@ -218,7 +219,8 @@ object inputTypesMod {
       __obj.asInstanceOf[BaseInputProps[T]]
     }
     
-    extension [Self <: BaseInputProps[?], T](x: Self & BaseInputProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseInputProps[?], T] (val x: Self & BaseInputProps[T]) extends AnyVal {
       
       inline def setAdjoined(value: Adjoined): Self = StObject.set(x, "adjoined", value.asInstanceOf[js.Any])
       
@@ -544,7 +546,8 @@ object inputTypesMod {
       __obj.asInstanceOf[FullStProps]
     }
     
-    extension [Self <: FullStProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullStProps] (val x: Self) extends AnyVal {
       
       inline def setAdjoined(value: Adjoined): Self = StObject.set(x, "adjoined", value.asInstanceOf[js.Any])
       
@@ -759,7 +762,8 @@ object inputTypesMod {
       __obj.asInstanceOf[InputOverrides]
     }
     
-    extension [Self <: InputOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputOverrides] (val x: Self) extends AnyVal {
       
       inline def setEndEnhancer(value: Override[Any]): Self = StObject.set(x, "EndEnhancer", value.asInstanceOf[js.Any])
       
@@ -795,7 +799,8 @@ object inputTypesMod {
       __obj.asInstanceOf[InputProps]
     }
     
-    extension [Self <: InputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputProps] (val x: Self) extends AnyVal {
       
       inline def setEndEnhancer(value: ReactNode | (js.Function1[/* props */ SharedProps, ReactNode])): Self = StObject.set(x, "endEnhancer", value.asInstanceOf[js.Any])
       
@@ -836,7 +841,8 @@ object inputTypesMod {
       __obj.asInstanceOf[InternalState]
     }
     
-    extension [Self <: InternalState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalState] (val x: Self) extends AnyVal {
       
       inline def setIsFocusVisibleForClear(value: Boolean): Self = StObject.set(x, "isFocusVisibleForClear", value.asInstanceOf[js.Any])
       
@@ -972,7 +978,8 @@ object inputTypesMod {
       __obj.asInstanceOf[MaskedInputProps]
     }
     
-    extension [Self <: MaskedInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaskedInputProps] (val x: Self) extends AnyVal {
       
       inline def setAdjoined(value: Adjoined): Self = StObject.set(x, "adjoined", value.asInstanceOf[js.Any])
       
@@ -1219,7 +1226,8 @@ object inputTypesMod {
       __obj.asInstanceOf[SharedProps]
     }
     
-    extension [Self <: SharedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedProps] (val x: Self) extends AnyVal {
       
       inline def set$adjoined(value: Adjoined): Self = StObject.set(x, "$adjoined", value.asInstanceOf[js.Any])
       
@@ -1385,7 +1393,8 @@ object inputTypesMod {
       __obj.asInstanceOf[StInputPropsDiff]
     }
     
-    extension [Self <: StInputPropsDiff](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StInputPropsDiff] (val x: Self) extends AnyVal {
       
       inline def setAdjoined(value: Adjoined): Self = StObject.set(x, "adjoined", value.asInstanceOf[js.Any])
       
@@ -1588,7 +1597,8 @@ object inputTypesMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -1834,7 +1844,8 @@ object inputTypesMod {
       __obj.asInstanceOf[StatefulContainerProps[T]]
     }
     
-    extension [Self <: StatefulContainerProps[?], T](x: Self & StatefulContainerProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulContainerProps[?], T] (val x: Self & StatefulContainerProps[T]) extends AnyVal {
       
       inline def setAdjoined(value: Adjoined): Self = StObject.set(x, "adjoined", value.asInstanceOf[js.Any])
       
@@ -2148,7 +2159,8 @@ object inputTypesMod {
       __obj.asInstanceOf[StatefulInputProps]
     }
     
-    extension [Self <: StatefulInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulInputProps] (val x: Self) extends AnyVal {
       
       inline def setAdjoined(value: Adjoined): Self = StObject.set(x, "adjoined", value.asInstanceOf[js.Any])
       

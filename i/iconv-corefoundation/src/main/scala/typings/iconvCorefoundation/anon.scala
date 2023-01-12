@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[DecodeOptionsSelectAndEnc]
     }
     
-    extension [Self <: DecodeOptionsSelectAndEnc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeOptionsSelectAndEnc] (val x: Self) extends AnyVal {
       
       inline def setIsEncodingOk(value: /* encoding */ StringEncoding => Boolean): Self = StObject.set(x, "isEncodingOk", js.Any.fromFunction1(value))
       
@@ -81,7 +82,8 @@ object anon {
       __obj.asInstanceOf[SelectAndEncodeOptionsisE]
     }
     
-    extension [Self <: SelectAndEncodeOptionsisE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectAndEncodeOptionsisE] (val x: Self) extends AnyVal {
       
       inline def setIsEncodingOk(value: /* encoding */ StringEncoding => Boolean): Self = StObject.set(x, "isEncodingOk", js.Any.fromFunction1(value))
       

@@ -23,7 +23,8 @@ object InjectionItems {
     __obj.asInstanceOf[InjectionItems]
   }
   
-  extension [Self <: InjectionItems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InjectionItems] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

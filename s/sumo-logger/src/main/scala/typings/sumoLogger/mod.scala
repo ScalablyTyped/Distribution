@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[PerMessageOptions]
     }
     
-    extension [Self <: PerMessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerMessageOptions] (val x: Self) extends AnyVal {
       
       inline def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
       
@@ -207,7 +208,8 @@ object mod {
       __obj.asInstanceOf[SumoLoggerOptions]
     }
     
-    extension [Self <: SumoLoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SumoLoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       

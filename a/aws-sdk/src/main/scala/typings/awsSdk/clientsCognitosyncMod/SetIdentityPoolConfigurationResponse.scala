@@ -28,7 +28,8 @@ object SetIdentityPoolConfigurationResponse {
     __obj.asInstanceOf[SetIdentityPoolConfigurationResponse]
   }
   
-  extension [Self <: SetIdentityPoolConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetIdentityPoolConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setCognitoStreams(value: CognitoStreams): Self = StObject.set(x, "CognitoStreams", value.asInstanceOf[js.Any])
     

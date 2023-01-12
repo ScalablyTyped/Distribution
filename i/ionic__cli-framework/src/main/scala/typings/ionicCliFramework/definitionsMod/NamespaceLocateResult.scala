@@ -19,7 +19,8 @@ object NamespaceLocateResult {
     __obj.asInstanceOf[NamespaceLocateResult[C, N, M, I, O]]
   }
   
-  extension [Self <: NamespaceLocateResult[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](x: Self & (NamespaceLocateResult[C, N, M, I, O])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamespaceLocateResult[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (NamespaceLocateResult[C, N, M, I, O])) extends AnyVal {
     
     inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

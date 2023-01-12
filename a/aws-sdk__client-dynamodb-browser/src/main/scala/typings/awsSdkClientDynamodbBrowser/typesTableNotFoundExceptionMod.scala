@@ -31,7 +31,8 @@ object typesTableNotFoundExceptionMod {
       __obj.asInstanceOf[TableNotFoundException]
     }
     
-    extension [Self <: TableNotFoundException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableNotFoundException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.TableNotFoundException
@@ -53,7 +54,8 @@ object typesTableNotFoundExceptionMod {
       __obj.asInstanceOf[TableNotFoundExceptionDetails]
     }
     
-    extension [Self <: TableNotFoundExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableNotFoundExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

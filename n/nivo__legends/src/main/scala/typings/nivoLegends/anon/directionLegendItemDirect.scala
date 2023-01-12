@@ -34,7 +34,8 @@ object directionLegendItemDirect {
     __obj.asInstanceOf[directionLegendItemDirect]
   }
   
-  extension [Self <: directionLegendItemDirect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: directionLegendItemDirect] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: LegendItemDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ListCostAllocationTagsRequest {
     __obj.asInstanceOf[ListCostAllocationTagsRequest]
   }
   
-  extension [Self <: ListCostAllocationTagsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCostAllocationTagsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: CostAllocationTagsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

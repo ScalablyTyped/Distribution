@@ -84,7 +84,8 @@ object actionsResizePluginMod extends Shortcut {
       __obj.asInstanceOf[ResizableOptions]
     }
     
-    extension [Self <: ResizableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizableOptions] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: typings.interactjsTypes.interactjsTypesStrings.x | y | xy): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object actionsResizePluginMod extends Shortcut {
         __obj.asInstanceOf[Interactable]
       }
       
-      extension [Self <: Interactable](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Interactable] (val x: Self) extends AnyVal {
         
         inline def setResizable(value: ResizableMethod): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
       }
@@ -196,7 +198,8 @@ object actionsResizePluginMod extends Shortcut {
         __obj.asInstanceOf[Interaction[T]]
       }
       
-      extension [Self <: Interaction[?], T /* <: ActionName | Null */](x: Self & Interaction[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Interaction[?], T /* <: ActionName | Null */] (val x: Self & Interaction[T]) extends AnyVal {
         
         inline def setResizeAxes(value: typings.interactjsTypes.interactjsTypesStrings.x | y | xy): Self = StObject.set(x, "resizeAxes", value.asInstanceOf[js.Any])
         
@@ -219,7 +222,8 @@ object actionsResizePluginMod extends Shortcut {
         __obj.asInstanceOf[ActionDefaults]
       }
       
-      extension [Self <: ActionDefaults](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActionDefaults] (val x: Self) extends AnyVal {
         
         inline def setResize(value: ResizableOptions): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       }
@@ -240,7 +244,8 @@ object actionsResizePluginMod extends Shortcut {
         __obj.asInstanceOf[ActionMap]
       }
       
-      extension [Self <: ActionMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActionMap] (val x: Self) extends AnyVal {
         
         inline def setResize(value: Plugin): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
         

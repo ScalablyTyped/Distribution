@@ -18,7 +18,8 @@ object SubscriptionUserSettings {
     __obj.asInstanceOf[SubscriptionUserSettings]
   }
   
-  extension [Self <: SubscriptionUserSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionUserSettings] (val x: Self) extends AnyVal {
     
     inline def setOptedOut(value: Boolean): Self = StObject.set(x, "optedOut", value.asInstanceOf[js.Any])
   }

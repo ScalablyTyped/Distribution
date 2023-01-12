@@ -30,7 +30,8 @@ object PaintStyle {
     __obj.asInstanceOf[PaintStyle]
   }
   
-  extension [Self <: PaintStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaintStyle] (val x: Self) extends AnyVal {
     
     inline def setPaints(value: js.Array[Paint]): Self = StObject.set(x, "paints", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object GetOriginTrialsResponse {
     __obj.asInstanceOf[GetOriginTrialsResponse]
   }
   
-  extension [Self <: GetOriginTrialsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOriginTrialsResponse] (val x: Self) extends AnyVal {
     
     inline def setOriginTrials(value: js.Array[OriginTrial]): Self = StObject.set(x, "originTrials", value.asInstanceOf[js.Any])
     

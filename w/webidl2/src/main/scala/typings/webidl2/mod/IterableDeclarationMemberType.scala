@@ -34,7 +34,8 @@ object IterableDeclarationMemberType {
     __obj.asInstanceOf[IterableDeclarationMemberType]
   }
   
-  extension [Self <: IterableDeclarationMemberType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IterableDeclarationMemberType] (val x: Self) extends AnyVal {
     
     inline def setIdlType(value: js.Array[IDLTypeDescription] | (js.Tuple2[IDLTypeDescription, IDLTypeDescription])): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     

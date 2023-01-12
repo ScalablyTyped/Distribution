@@ -15,7 +15,8 @@ object ImageHead {
     __obj.asInstanceOf[ImageHead]
   }
   
-  extension [Self <: ImageHead](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageHead] (val x: Self) extends AnyVal {
     
     inline def setImageHead(value: js.typedarray.ArrayBuffer | js.typedarray.Uint8Array): Self = StObject.set(x, "imageHead", value.asInstanceOf[js.Any])
     

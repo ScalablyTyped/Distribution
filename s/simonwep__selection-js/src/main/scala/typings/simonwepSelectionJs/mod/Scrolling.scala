@@ -17,7 +17,8 @@ object Scrolling {
     __obj.asInstanceOf[Scrolling]
   }
   
-  extension [Self <: Scrolling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scrolling] (val x: Self) extends AnyVal {
     
     inline def setManualSpeed(value: Double): Self = StObject.set(x, "manualSpeed", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListCostAllocationTagsResponse {
     __obj.asInstanceOf[ListCostAllocationTagsResponse]
   }
   
-  extension [Self <: ListCostAllocationTagsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCostAllocationTagsResponse] (val x: Self) extends AnyVal {
     
     inline def setCostAllocationTags(value: CostAllocationTagList): Self = StObject.set(x, "CostAllocationTags", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object NewExpression {
     __obj.asInstanceOf[NewExpression]
   }
   
-  extension [Self <: NewExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewExpression] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.estree.estreeStrings.NewExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

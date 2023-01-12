@@ -28,7 +28,8 @@ object ASPxClientDashboardItemWidgetEventArgs {
     __obj.asInstanceOf[ASPxClientDashboardItemWidgetEventArgs]
   }
   
-  extension [Self <: ASPxClientDashboardItemWidgetEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardItemWidgetEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGetWidget(value: () => Any): Self = StObject.set(x, "GetWidget", js.Any.fromFunction0(value))
     

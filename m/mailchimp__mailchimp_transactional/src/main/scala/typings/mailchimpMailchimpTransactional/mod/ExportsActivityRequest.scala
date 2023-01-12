@@ -36,7 +36,8 @@ object ExportsActivityRequest {
     __obj.asInstanceOf[ExportsActivityRequest]
   }
   
-  extension [Self <: ExportsActivityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportsActivityRequest] (val x: Self) extends AnyVal {
     
     inline def setApi_keys(value: js.Array[String]): Self = StObject.set(x, "api_keys", value.asInstanceOf[js.Any])
     

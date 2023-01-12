@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsTextColorMod extends Shortc
       __obj.asInstanceOf[TextColorProps]
     }
     
-    extension [Self <: TextColorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextColorProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object ScopesArguments {
     __obj.asInstanceOf[ScopesArguments]
   }
   
-  extension [Self <: ScopesArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScopesArguments] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
   }

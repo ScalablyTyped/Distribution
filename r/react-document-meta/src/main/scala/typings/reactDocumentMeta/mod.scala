@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[DocumentMetaProps]
     }
     
-    extension [Self <: DocumentMetaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentMetaProps] (val x: Self) extends AnyVal {
       
       inline def setCanonical(value: String): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
       

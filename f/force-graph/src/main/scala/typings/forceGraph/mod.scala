@@ -381,7 +381,8 @@ object mod {
       __obj.asInstanceOf[GraphData]
     }
     
-    extension [Self <: GraphData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphData] (val x: Self) extends AnyVal {
       
       inline def setLinks(value: js.Array[LinkObject]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
@@ -408,7 +409,8 @@ object mod {
       __obj.asInstanceOf[LinkObject]
     }
     
-    extension [Self <: LinkObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkObject] (val x: Self) extends AnyVal {
       
       inline def setSource(value: String | Double | NodeObject): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -445,7 +447,8 @@ object mod {
       __obj.asInstanceOf[NodeObject]
     }
     
-    extension [Self <: NodeObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeObject] (val x: Self) extends AnyVal {
       
       inline def setFx(value: Double): Self = StObject.set(x, "fx", value.asInstanceOf[js.Any])
       

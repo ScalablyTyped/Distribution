@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Amount]
     }
     
-    extension [Self <: Amount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Amount] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -59,7 +61,8 @@ object anon {
       __obj.asInstanceOf[IdNumber]
     }
     
-    extension [Self <: IdNumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdNumber] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -79,7 +82,8 @@ object anon {
       __obj.asInstanceOf[OmitPhoneextension]
     }
     
-    extension [Self <: OmitPhoneextension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitPhoneextension] (val x: Self) extends AnyVal {
       
       inline def setArea_code(value: String): Self = StObject.set(x, "area_code", value.asInstanceOf[js.Any])
       
@@ -103,7 +107,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: IVA | INC): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

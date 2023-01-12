@@ -64,7 +64,8 @@ object libSwipeActionMod {
       __obj.asInstanceOf[SwipeActionProps]
     }
     
-    extension [Self <: SwipeActionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeActionProps] (val x: Self) extends AnyVal {
       
       inline def setButtonWidth(value: Double): Self = StObject.set(x, "buttonWidth", value.asInstanceOf[js.Any])
       
@@ -313,7 +314,8 @@ object libSwipeActionMod {
       __obj.asInstanceOf[SwipeableProps]
     }
     
-    extension [Self <: SwipeableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeableProps] (val x: Self) extends AnyVal {
       
       inline def setActivateAfterLongPress(value: Double): Self = StObject.set(x, "activateAfterLongPress", value.asInstanceOf[js.Any])
       
@@ -558,7 +560,8 @@ object libSwipeActionMod {
       __obj.asInstanceOf[SwipeoutButtonProps]
     }
     
-    extension [Self <: SwipeoutButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeoutButtonProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

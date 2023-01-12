@@ -43,7 +43,8 @@ object ISVGElementInstance {
     __obj.asInstanceOf[ISVGElementInstance]
   }
   
-  extension [Self <: ISVGElementInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISVGElementInstance] (val x: Self) extends AnyVal {
     
     inline def setChildNodes(value: ISVGElementInstanceList): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object Total {
     __obj.asInstanceOf[Total]
   }
   
-  extension [Self <: Total](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Total] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: Avatarurl): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

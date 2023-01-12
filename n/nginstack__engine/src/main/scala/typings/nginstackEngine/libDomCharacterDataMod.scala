@@ -70,7 +70,8 @@ object libDomCharacterDataMod {
       __obj.asInstanceOf[CharacterData]
     }
     
-    extension [Self <: CharacterData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CharacterData] (val x: Self) extends AnyVal {
       
       inline def setAppendData(value: String => Unit): Self = StObject.set(x, "appendData", js.Any.fromFunction1(value))
       

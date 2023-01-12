@@ -21,7 +21,8 @@ object ERectangle {
     __obj.asInstanceOf[ERectangle]
   }
   
-  extension [Self <: ERectangle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ERectangle] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object QueryFunctionContext {
     __obj.asInstanceOf[QueryFunctionContext[TQueryKey, TPageParam]]
   }
   
-  extension [Self <: QueryFunctionContext[?, ?], TQueryKey /* <: QueryKey */, TPageParam](x: Self & (QueryFunctionContext[TQueryKey, TPageParam])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryFunctionContext[?, ?], TQueryKey /* <: QueryKey */, TPageParam] (val x: Self & (QueryFunctionContext[TQueryKey, TPageParam])) extends AnyVal {
     
     inline def setMeta(value: QueryMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     

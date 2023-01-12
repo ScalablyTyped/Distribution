@@ -40,7 +40,8 @@ object WaterfallOptions {
     __obj.asInstanceOf[WaterfallOptions]
   }
   
-  extension [Self <: WaterfallOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaterfallOptions] (val x: Self) extends AnyVal {
     
     inline def setChartType(value: String): Self = StObject.set(x, "chartType", value.asInstanceOf[js.Any])
     

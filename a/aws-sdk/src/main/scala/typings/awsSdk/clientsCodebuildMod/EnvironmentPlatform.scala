@@ -23,7 +23,8 @@ object EnvironmentPlatform {
     __obj.asInstanceOf[EnvironmentPlatform]
   }
   
-  extension [Self <: EnvironmentPlatform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentPlatform] (val x: Self) extends AnyVal {
     
     inline def setLanguages(value: EnvironmentLanguages): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object BaseFieldOptions {
     __obj.asInstanceOf[BaseFieldOptions]
   }
   
-  extension [Self <: BaseFieldOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseFieldOptions] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

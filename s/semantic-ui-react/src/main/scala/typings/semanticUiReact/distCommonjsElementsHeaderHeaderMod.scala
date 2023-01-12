@@ -109,7 +109,8 @@ object distCommonjsElementsHeaderHeaderMod extends Shortcut {
       __obj.asInstanceOf[StrictHeaderProps]
     }
     
-    extension [Self <: StrictHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object IPlayToManagerStatics {
     __obj.asInstanceOf[IPlayToManagerStatics]
   }
   
-  extension [Self <: IPlayToManagerStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPlayToManagerStatics] (val x: Self) extends AnyVal {
     
     inline def setGetForCurrentView(value: () => PlayToManager): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
     

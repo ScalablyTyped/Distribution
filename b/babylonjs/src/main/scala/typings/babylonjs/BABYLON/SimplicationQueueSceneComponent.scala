@@ -24,7 +24,8 @@ object SimplicationQueueSceneComponent {
     __obj.asInstanceOf[SimplicationQueueSceneComponent]
   }
   
-  extension [Self <: SimplicationQueueSceneComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimplicationQueueSceneComponent] (val x: Self) extends AnyVal {
     
     inline def set_beforeCameraUpdate(value: Any): Self = StObject.set(x, "_beforeCameraUpdate", value.asInstanceOf[js.Any])
   }

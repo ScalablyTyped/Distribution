@@ -17,7 +17,8 @@ object ARABIC {
     __obj.asInstanceOf[ARABIC]
   }
   
-  extension [Self <: ARABIC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ARABIC] (val x: Self) extends AnyVal {
     
     inline def setARABIC(value: Method): Self = StObject.set(x, "ARABIC", value.asInstanceOf[js.Any])
     

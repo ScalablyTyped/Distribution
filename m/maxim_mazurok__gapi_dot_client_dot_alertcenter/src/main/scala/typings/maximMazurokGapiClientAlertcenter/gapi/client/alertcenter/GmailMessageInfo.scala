@@ -37,7 +37,8 @@ object GmailMessageInfo {
     __obj.asInstanceOf[GmailMessageInfo]
   }
   
-  extension [Self <: GmailMessageInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GmailMessageInfo] (val x: Self) extends AnyVal {
     
     inline def setAttachmentsSha256Hash(value: js.Array[String]): Self = StObject.set(x, "attachmentsSha256Hash", value.asInstanceOf[js.Any])
     

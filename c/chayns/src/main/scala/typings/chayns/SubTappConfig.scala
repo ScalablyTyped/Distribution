@@ -46,7 +46,8 @@ object SubTappConfig {
     __obj.asInstanceOf[SubTappConfig]
   }
   
-  extension [Self <: SubTappConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubTappConfig] (val x: Self) extends AnyVal {
     
     inline def setBoldText(value: Boolean): Self = StObject.set(x, "boldText", value.asInstanceOf[js.Any])
     

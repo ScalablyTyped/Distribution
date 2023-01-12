@@ -48,7 +48,8 @@ object Overrides {
     __obj.asInstanceOf[Overrides]
   }
   
-  extension [Self <: Overrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Overrides] (val x: Self) extends AnyVal {
     
     inline def setBar(value: CoreChartOptionsbarElemen): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     

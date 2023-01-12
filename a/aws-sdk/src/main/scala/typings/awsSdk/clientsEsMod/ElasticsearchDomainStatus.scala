@@ -140,7 +140,8 @@ object ElasticsearchDomainStatus {
     __obj.asInstanceOf[ElasticsearchDomainStatus]
   }
   
-  extension [Self <: ElasticsearchDomainStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElasticsearchDomainStatus] (val x: Self) extends AnyVal {
     
     inline def setARN(value: ARN): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

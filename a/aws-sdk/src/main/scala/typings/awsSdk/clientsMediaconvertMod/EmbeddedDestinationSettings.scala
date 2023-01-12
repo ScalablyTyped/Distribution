@@ -23,7 +23,8 @@ object EmbeddedDestinationSettings {
     __obj.asInstanceOf[EmbeddedDestinationSettings]
   }
   
-  extension [Self <: EmbeddedDestinationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmbeddedDestinationSettings] (val x: Self) extends AnyVal {
     
     inline def setDestination608ChannelNumber(value: integerMin1Max4): Self = StObject.set(x, "Destination608ChannelNumber", value.asInstanceOf[js.Any])
     

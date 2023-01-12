@@ -212,7 +212,8 @@ object DateTimePickerOptions {
     __obj.asInstanceOf[DateTimePickerOptions]
   }
   
-  extension [Self <: DateTimePickerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimePickerOptions] (val x: Self) extends AnyVal {
     
     inline def setAddSliderAccess(value: Boolean): Self = StObject.set(x, "addSliderAccess", value.asInstanceOf[js.Any])
     

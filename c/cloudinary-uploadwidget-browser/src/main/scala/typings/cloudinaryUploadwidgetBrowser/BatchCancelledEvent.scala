@@ -21,7 +21,8 @@ object BatchCancelledEvent {
     __obj.asInstanceOf[BatchCancelledEvent]
   }
   
-  extension [Self <: BatchCancelledEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCancelledEvent] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: `batch-cancelled`): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

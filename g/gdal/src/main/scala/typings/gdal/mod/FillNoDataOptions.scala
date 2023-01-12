@@ -21,7 +21,8 @@ object FillNoDataOptions {
     __obj.asInstanceOf[FillNoDataOptions]
   }
   
-  extension [Self <: FillNoDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillNoDataOptions] (val x: Self) extends AnyVal {
     
     inline def setMask(value: RasterBand): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     

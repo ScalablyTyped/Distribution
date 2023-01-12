@@ -23,7 +23,8 @@ object RectSeriesProps {
     __obj.asInstanceOf[RectSeriesProps]
   }
   
-  extension [Self <: RectSeriesProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RectSeriesProps] (val x: Self) extends AnyVal {
     
     inline def setLinePosAttr(value: String): Self = StObject.set(x, "linePosAttr", value.asInstanceOf[js.Any])
     

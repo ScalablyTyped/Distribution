@@ -83,7 +83,8 @@ object sapUiModelAnalyticsAnalyticalTreeBindingAdapterMod {
       __obj.asInstanceOf[AnalyticalTreeBindingAdapter]
     }
     
-    extension [Self <: AnalyticalTreeBindingAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticalTreeBindingAdapter] (val x: Self) extends AnyVal {
       
       inline def setGetNumberOfExpandedLevels(value: () => int): Self = StObject.set(x, "getNumberOfExpandedLevels", js.Any.fromFunction0(value))
       

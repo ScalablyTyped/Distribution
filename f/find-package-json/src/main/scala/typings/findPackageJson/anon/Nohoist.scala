@@ -26,7 +26,8 @@ object Nohoist {
     __obj.asInstanceOf[Nohoist]
   }
   
-  extension [Self <: Nohoist](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Nohoist] (val x: Self) extends AnyVal {
     
     inline def setNohoist(value: js.Array[String]): Self = StObject.set(x, "nohoist", value.asInstanceOf[js.Any])
     

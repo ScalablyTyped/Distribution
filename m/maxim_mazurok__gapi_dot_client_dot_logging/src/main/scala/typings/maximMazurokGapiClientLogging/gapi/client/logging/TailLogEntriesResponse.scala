@@ -22,7 +22,8 @@ object TailLogEntriesResponse {
     __obj.asInstanceOf[TailLogEntriesResponse]
   }
   
-  extension [Self <: TailLogEntriesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TailLogEntriesResponse] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: js.Array[LogEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

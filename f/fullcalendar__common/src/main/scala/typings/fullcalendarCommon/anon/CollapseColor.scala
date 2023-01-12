@@ -17,7 +17,8 @@ object CollapseColor {
     __obj.asInstanceOf[CollapseColor]
   }
   
-  extension [Self <: CollapseColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollapseColor] (val x: Self) extends AnyVal {
     
     inline def setCollapseColor(value: Boolean): Self = StObject.set(x, "collapseColor", value.asInstanceOf[js.Any])
     

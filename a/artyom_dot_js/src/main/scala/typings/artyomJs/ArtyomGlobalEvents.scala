@@ -38,7 +38,8 @@ object ArtyomGlobalEvents {
     __obj.asInstanceOf[ArtyomGlobalEvents]
   }
   
-  extension [Self <: ArtyomGlobalEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtyomGlobalEvents] (val x: Self) extends AnyVal {
     
     inline def setCOMMAND_MATCHED(value: String): Self = StObject.set(x, "COMMAND_MATCHED", value.asInstanceOf[js.Any])
     

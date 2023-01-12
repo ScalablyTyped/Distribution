@@ -44,7 +44,8 @@ object SearchUserIDsResponse {
     __obj.asInstanceOf[SearchUserIDsResponse]
   }
   
-  extension [Self <: SearchUserIDsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchUserIDsResponse] (val x: Self) extends AnyVal {
     
     inline def setHits(value: js.Array[UserIDResponse]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     

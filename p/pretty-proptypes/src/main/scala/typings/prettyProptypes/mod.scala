@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[CommonProps]
     }
     
-    extension [Self <: CommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonProps] (val x: Self) extends AnyVal {
       
       inline def setComponents(value: Components_): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object mod {
       __obj.asInstanceOf[Components_]
     }
     
-    extension [Self <: Components_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Components_] (val x: Self) extends AnyVal {
       
       inline def setButton(value: ComponentType[Any]): Self = StObject.set(x, "Button", value.asInstanceOf[js.Any])
       
@@ -164,7 +166,8 @@ object mod {
       __obj.asInstanceOf[DynamicPropsProps]
     }
     
-    extension [Self <: DynamicPropsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicPropsProps] (val x: Self) extends AnyVal {
       
       inline def setComponents(value: PartialComponents): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
@@ -199,7 +202,8 @@ object mod {
       __obj.asInstanceOf[Gen]
     }
     
-    extension [Self <: Gen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Gen] (val x: Self) extends AnyVal {
       
       inline def setKind(value: generic): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -220,7 +224,8 @@ object mod {
       __obj.asInstanceOf[Inter]
     }
     
-    extension [Self <: Inter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Inter] (val x: Self) extends AnyVal {
       
       inline def setKind(value: intersection): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -245,7 +250,8 @@ object mod {
       __obj.asInstanceOf[Obj]
     }
     
-    extension [Self <: Obj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Obj] (val x: Self) extends AnyVal {
       
       inline def setKind(value: `object`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -276,7 +282,8 @@ object mod {
       __obj.asInstanceOf[PropProps]
     }
     
-    extension [Self <: PropProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropProps] (val x: Self) extends AnyVal {
       
       inline def setShapeComponent(value: ComponentType[CommonProps]): Self = StObject.set(x, "shapeComponent", value.asInstanceOf[js.Any])
     }

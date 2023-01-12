@@ -15,7 +15,8 @@ object `1` {
     __obj.asInstanceOf[`1`[E]]
   }
   
-  extension [Self <: `1`[?], E](x: Self & `1`[E]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `1`[?], E] (val x: Self & `1`[E]) extends AnyVal {
     
     inline def setSend(value: E => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
   }

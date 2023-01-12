@@ -35,7 +35,8 @@ object ChatRoomOperation {
     __obj.asInstanceOf[ChatRoomOperation]
   }
   
-  extension [Self <: ChatRoomOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatRoomOperation] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: ChatRoomOperationType): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     

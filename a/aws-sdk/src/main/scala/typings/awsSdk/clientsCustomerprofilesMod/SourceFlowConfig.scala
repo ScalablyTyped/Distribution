@@ -33,7 +33,8 @@ object SourceFlowConfig {
     __obj.asInstanceOf[SourceFlowConfig]
   }
   
-  extension [Self <: SourceFlowConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceFlowConfig] (val x: Self) extends AnyVal {
     
     inline def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "ConnectorProfileName", value.asInstanceOf[js.Any])
     

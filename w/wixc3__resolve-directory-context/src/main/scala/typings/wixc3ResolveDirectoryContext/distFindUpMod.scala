@@ -28,7 +28,8 @@ object distFindUpMod {
       __obj.asInstanceOf[FindUpHost]
     }
     
-    extension [Self <: FindUpHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindUpHost] (val x: Self) extends AnyVal {
       
       inline def setDirname(value: String => String): Self = StObject.set(x, "dirname", js.Any.fromFunction1(value))
       

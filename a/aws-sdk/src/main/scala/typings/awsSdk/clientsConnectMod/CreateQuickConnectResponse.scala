@@ -23,7 +23,8 @@ object CreateQuickConnectResponse {
     __obj.asInstanceOf[CreateQuickConnectResponse]
   }
   
-  extension [Self <: CreateQuickConnectResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateQuickConnectResponse] (val x: Self) extends AnyVal {
     
     inline def setQuickConnectARN(value: ARN): Self = StObject.set(x, "QuickConnectARN", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object Evaluation {
     __obj.asInstanceOf[Evaluation]
   }
   
-  extension [Self <: Evaluation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Evaluation] (val x: Self) extends AnyVal {
     
     inline def setEvaluation(value: MlDataframeEvaluationContainer): Self = StObject.set(x, "evaluation", value.asInstanceOf[js.Any])
     

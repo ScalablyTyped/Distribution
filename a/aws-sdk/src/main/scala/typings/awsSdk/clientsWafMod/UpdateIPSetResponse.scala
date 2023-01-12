@@ -18,7 +18,8 @@ object UpdateIPSetResponse {
     __obj.asInstanceOf[UpdateIPSetResponse]
   }
   
-  extension [Self <: UpdateIPSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateIPSetResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     

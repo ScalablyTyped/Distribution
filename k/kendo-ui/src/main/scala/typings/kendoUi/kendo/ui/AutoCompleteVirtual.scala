@@ -19,7 +19,8 @@ object AutoCompleteVirtual {
     __obj.asInstanceOf[AutoCompleteVirtual]
   }
   
-  extension [Self <: AutoCompleteVirtual](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoCompleteVirtual] (val x: Self) extends AnyVal {
     
     inline def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
     

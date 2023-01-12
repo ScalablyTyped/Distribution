@@ -20,7 +20,8 @@ object ObjectIdLike {
     __obj.asInstanceOf[ObjectIdLike]
   }
   
-  extension [Self <: ObjectIdLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectIdLike] (val x: Self) extends AnyVal {
     
     inline def setId(value: String | Buffer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

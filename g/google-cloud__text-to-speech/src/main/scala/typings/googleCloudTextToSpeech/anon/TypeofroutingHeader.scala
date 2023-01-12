@@ -16,7 +16,8 @@ object TypeofroutingHeader {
     __obj.asInstanceOf[TypeofroutingHeader]
   }
   
-  extension [Self <: TypeofroutingHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofroutingHeader] (val x: Self) extends AnyVal {
     
     inline def setFromParams(value: StringDictionary[String | Double | Boolean] => String): Self = StObject.set(x, "fromParams", js.Any.fromFunction1(value))
   }

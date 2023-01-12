@@ -83,7 +83,8 @@ object distKnobManagerMod {
       __obj.asInstanceOf[KnobManager]
     }
     
-    extension [Self <: KnobManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KnobManager] (val x: Self) extends AnyVal {
       
       inline def setCalling(value: Boolean): Self = StObject.set(x, "calling", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object distKnobManagerMod {
       __obj.asInstanceOf[KnobManagerOptions]
     }
     
-    extension [Self <: KnobManagerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KnobManagerOptions] (val x: Self) extends AnyVal {
       
       inline def setDisableDebounce(value: Boolean): Self = StObject.set(x, "disableDebounce", value.asInstanceOf[js.Any])
       

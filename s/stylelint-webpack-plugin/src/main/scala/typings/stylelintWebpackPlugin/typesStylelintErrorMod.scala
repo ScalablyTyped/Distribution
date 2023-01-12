@@ -44,7 +44,8 @@ object typesStylelintErrorMod {
       __obj.asInstanceOf[StylelintError]
     }
     
-    extension [Self <: StylelintError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StylelintError] (val x: Self) extends AnyVal {
       
       inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     }

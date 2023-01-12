@@ -25,7 +25,8 @@ object GooglePrivacyDlpV2ExclusionRule {
     __obj.asInstanceOf[GooglePrivacyDlpV2ExclusionRule]
   }
   
-  extension [Self <: GooglePrivacyDlpV2ExclusionRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2ExclusionRule] (val x: Self) extends AnyVal {
     
     inline def setDictionary(value: GooglePrivacyDlpV2Dictionary): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
     

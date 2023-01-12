@@ -23,7 +23,8 @@ object LegacyFakeTimersConfig {
     __obj.asInstanceOf[LegacyFakeTimersConfig]
   }
   
-  extension [Self <: LegacyFakeTimersConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegacyFakeTimersConfig] (val x: Self) extends AnyVal {
     
     inline def setLegacyFakeTimers(value: `true`): Self = StObject.set(x, "legacyFakeTimers", value.asInstanceOf[js.Any])
     

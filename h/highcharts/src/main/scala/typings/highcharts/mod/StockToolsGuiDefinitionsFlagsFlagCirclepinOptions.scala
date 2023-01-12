@@ -18,7 +18,8 @@ object StockToolsGuiDefinitionsFlagsFlagCirclepinOptions {
     __obj.asInstanceOf[StockToolsGuiDefinitionsFlagsFlagCirclepinOptions]
   }
   
-  extension [Self <: StockToolsGuiDefinitionsFlagsFlagCirclepinOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockToolsGuiDefinitionsFlagsFlagCirclepinOptions] (val x: Self) extends AnyVal {
     
     inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object compressMod {
       __obj.asInstanceOf[CompressOptions]
     }
     
-    extension [Self <: CompressOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompressOptions] (val x: Self) extends AnyVal {
       
       inline def setLgwin(value: Double): Self = StObject.set(x, "lgwin", value.asInstanceOf[js.Any])
       

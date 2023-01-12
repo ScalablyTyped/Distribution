@@ -16,7 +16,8 @@ object BatchClearValuesRequest {
     __obj.asInstanceOf[BatchClearValuesRequest]
   }
   
-  extension [Self <: BatchClearValuesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchClearValuesRequest] (val x: Self) extends AnyVal {
     
     inline def setRanges(value: js.Array[String]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     

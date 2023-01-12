@@ -109,7 +109,8 @@ object Viewer {
       __obj.asInstanceOf[MoveEventData]
     }
     
-    extension [Self <: MoveEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoveEventData] (val x: Self) extends AnyVal {
       
       inline def setOldX(value: Double): Self = StObject.set(x, "oldX", value.asInstanceOf[js.Any])
       
@@ -249,7 +250,8 @@ object Viewer {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBackdrop(value: Boolean | String): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
       
@@ -480,7 +482,8 @@ object Viewer {
       __obj.asInstanceOf[Pivot]
     }
     
-    extension [Self <: Pivot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pivot] (val x: Self) extends AnyVal {
       
       inline def setX(value: Number): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -510,7 +513,8 @@ object Viewer {
       __obj.asInstanceOf[RotateEventData]
     }
     
-    extension [Self <: RotateEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RotateEventData] (val x: Self) extends AnyVal {
       
       inline def setDegree(value: Double): Self = StObject.set(x, "degree", value.asInstanceOf[js.Any])
       
@@ -553,7 +557,8 @@ object Viewer {
       __obj.asInstanceOf[ScaleEventData]
     }
     
-    extension [Self <: ScaleEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScaleEventData] (val x: Self) extends AnyVal {
       
       inline def setOldScaleX(value: Double): Self = StObject.set(x, "oldScaleX", value.asInstanceOf[js.Any])
       
@@ -591,7 +596,8 @@ object Viewer {
       __obj.asInstanceOf[ToolbarButtonOptions]
     }
     
-    extension [Self <: ToolbarButtonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarButtonOptions] (val x: Self) extends AnyVal {
       
       inline def setClick(value: js.Function): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
@@ -667,7 +673,8 @@ object Viewer {
       __obj.asInstanceOf[ToolbarOptions]
     }
     
-    extension [Self <: ToolbarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarOptions] (val x: Self) extends AnyVal {
       
       inline def setFlipHorizontal(value: ToolbarOption): Self = StObject.set(x, "flipHorizontal", value.asInstanceOf[js.Any])
       
@@ -762,7 +769,8 @@ object Viewer {
       __obj.asInstanceOf[ZoomEventData]
     }
     
-    extension [Self <: ZoomEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomEventData] (val x: Self) extends AnyVal {
       
       inline def setOldRatio(value: Double): Self = StObject.set(x, "oldRatio", value.asInstanceOf[js.Any])
       

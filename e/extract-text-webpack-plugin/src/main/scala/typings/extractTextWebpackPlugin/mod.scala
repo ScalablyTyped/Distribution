@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[LoaderOptions]
     }
     
-    extension [Self <: LoaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderOptions] (val x: Self) extends AnyVal {
       
       inline def setFallback(value: Loader | js.Array[Loader]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object mod {
       __obj.asInstanceOf[PluginOptions]
     }
     
-    extension [Self <: PluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
       
       inline def setAllChunks(value: Boolean): Self = StObject.set(x, "allChunks", value.asInstanceOf[js.Any])
       

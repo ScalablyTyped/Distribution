@@ -134,7 +134,8 @@ object mod {
         __obj.asInstanceOf[StreamChannelsOptions]
       }
       
-      extension [Self <: StreamChannelsOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StreamChannelsOptions] (val x: Self) extends AnyVal {
         
         inline def setEnableChannelsEvents(value: Boolean): Self = StObject.set(x, "enableChannelsEvents", value.asInstanceOf[js.Any])
         
@@ -205,7 +206,8 @@ object mod {
       __obj.asInstanceOf[TwitterStreamChannels]
     }
     
-    extension [Self <: TwitterStreamChannels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwitterStreamChannels] (val x: Self) extends AnyVal {
       
       inline def setGetApiClient(value: () => typings.twit.mod.^): Self = StObject.set(x, "getApiClient", js.Any.fromFunction0(value))
       

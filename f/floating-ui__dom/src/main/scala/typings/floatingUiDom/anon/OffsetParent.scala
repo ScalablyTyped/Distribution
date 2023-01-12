@@ -24,7 +24,8 @@ object OffsetParent {
     __obj.asInstanceOf[OffsetParent]
   }
   
-  extension [Self <: OffsetParent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OffsetParent] (val x: Self) extends AnyVal {
     
     inline def setOffsetParent(value: typings.std.Element): Self = StObject.set(x, "offsetParent", value.asInstanceOf[js.Any])
     

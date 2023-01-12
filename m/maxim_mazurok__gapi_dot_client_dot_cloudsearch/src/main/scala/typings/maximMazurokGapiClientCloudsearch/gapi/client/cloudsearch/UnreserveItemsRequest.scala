@@ -22,7 +22,8 @@ object UnreserveItemsRequest {
     __obj.asInstanceOf[UnreserveItemsRequest]
   }
   
-  extension [Self <: UnreserveItemsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnreserveItemsRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
     

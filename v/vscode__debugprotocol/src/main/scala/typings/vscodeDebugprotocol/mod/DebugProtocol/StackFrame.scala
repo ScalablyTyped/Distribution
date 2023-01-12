@@ -54,7 +54,8 @@ object StackFrame {
     __obj.asInstanceOf[StackFrame]
   }
   
-  extension [Self <: StackFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackFrame] (val x: Self) extends AnyVal {
     
     inline def setCanRestart(value: Boolean): Self = StObject.set(x, "canRestart", value.asInstanceOf[js.Any])
     

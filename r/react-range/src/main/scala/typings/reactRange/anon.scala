@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object anon {
       __obj.asInstanceOf[DraggedThumbIndex]
     }
     
-    extension [Self <: DraggedThumbIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraggedThumbIndex] (val x: Self) extends AnyVal {
       
       inline def setDraggedThumbIndex(value: Double): Self = StObject.set(x, "draggedThumbIndex", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

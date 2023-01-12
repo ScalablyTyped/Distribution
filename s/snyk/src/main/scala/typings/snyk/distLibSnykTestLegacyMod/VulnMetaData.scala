@@ -52,7 +52,8 @@ object VulnMetaData {
     __obj.asInstanceOf[VulnMetaData]
   }
   
-  extension [Self <: VulnMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VulnMetaData] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

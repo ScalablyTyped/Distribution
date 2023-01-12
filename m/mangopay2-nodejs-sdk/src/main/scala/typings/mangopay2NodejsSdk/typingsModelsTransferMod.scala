@@ -64,7 +64,8 @@ object typingsModelsTransferMod {
         __obj.asInstanceOf[CreateTransfer]
       }
       
-      extension [Self <: CreateTransfer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateTransfer] (val x: Self) extends AnyVal {
         
         inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
         
@@ -178,7 +179,8 @@ object typingsModelsTransferMod {
         __obj.asInstanceOf[TransferData]
       }
       
-      extension [Self <: TransferData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TransferData] (val x: Self) extends AnyVal {
         
         inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
         

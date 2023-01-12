@@ -39,7 +39,8 @@ object distCompileRulesMod {
       __obj.asInstanceOf[Rule]
     }
     
-    extension [Self <: Rule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
       
       inline def setDefinition(value: AddedKeywordDefinition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object distCompileRulesMod {
       __obj.asInstanceOf[RuleGroup]
     }
     
-    extension [Self <: RuleGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuleGroup] (val x: Self) extends AnyVal {
       
       inline def setRules(value: js.Array[Rule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object distCompileRulesMod {
       __obj.asInstanceOf[ValidationRules]
     }
     
-    extension [Self <: ValidationRules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationRules] (val x: Self) extends AnyVal {
       
       inline def setAll(
         value: /* import warning: importer.ImportType#apply Failed type conversion: {[ Key in string ]:? boolean | ajv.ajv/dist/compile/rules.Rule} */ js.Any

@@ -188,7 +188,8 @@ object BarDiagram {
     __obj.asInstanceOf[BarDiagram]
   }
   
-  extension [Self <: BarDiagram](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarDiagram] (val x: Self) extends AnyVal {
     
     inline def setDeep(value: Boolean): Self = StObject.set(x, "Deep", value.asInstanceOf[js.Any])
     

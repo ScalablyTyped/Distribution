@@ -36,7 +36,8 @@ object PartialSidenavOptions {
     __obj.asInstanceOf[PartialSidenavOptions]
   }
   
-  extension [Self <: PartialSidenavOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSidenavOptions] (val x: Self) extends AnyVal {
     
     inline def setDragTargetWidth(value: String): Self = StObject.set(x, "dragTargetWidth", value.asInstanceOf[js.Any])
     

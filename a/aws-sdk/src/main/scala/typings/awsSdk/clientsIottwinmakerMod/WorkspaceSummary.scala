@@ -38,7 +38,8 @@ object WorkspaceSummary {
     __obj.asInstanceOf[WorkspaceSummary]
   }
   
-  extension [Self <: WorkspaceSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: TwinMakerArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

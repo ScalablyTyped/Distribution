@@ -38,7 +38,8 @@ object EmbeddedRequestOptions {
     __obj.asInstanceOf[EmbeddedRequestOptions]
   }
   
-  extension [Self <: EmbeddedRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmbeddedRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setCc_roles(value: js.Array[Any]): Self = StObject.set(x, "cc_roles", value.asInstanceOf[js.Any])
     

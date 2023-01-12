@@ -74,7 +74,8 @@ object StatsDto {
     __obj.asInstanceOf[StatsDto]
   }
   
-  extension [Self <: StatsDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatsDto] (val x: Self) extends AnyVal {
     
     inline def setArmor(value: Double): Self = StObject.set(x, "armor", value.asInstanceOf[js.Any])
     

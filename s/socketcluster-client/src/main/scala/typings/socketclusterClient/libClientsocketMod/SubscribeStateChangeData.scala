@@ -25,7 +25,8 @@ object SubscribeStateChangeData {
     __obj.asInstanceOf[SubscribeStateChangeData]
   }
   
-  extension [Self <: SubscribeStateChangeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscribeStateChangeData] (val x: Self) extends AnyVal {
     
     inline def setNewChannelState(value: ChannelState): Self = StObject.set(x, "newChannelState", value.asInstanceOf[js.Any])
     

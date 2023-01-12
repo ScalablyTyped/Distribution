@@ -39,7 +39,8 @@ object ContextModuleFactory {
     __obj.asInstanceOf[ContextModuleFactory]
   }
   
-  extension [Self <: ContextModuleFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextModuleFactory] (val x: Self) extends AnyVal {
     
     inline def setHooks(value: ReadonlybeforeResolveAsyn): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     

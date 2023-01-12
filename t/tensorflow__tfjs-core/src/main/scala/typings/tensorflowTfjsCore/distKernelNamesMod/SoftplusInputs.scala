@@ -16,7 +16,8 @@ object SoftplusInputs {
     __obj.asInstanceOf[SoftplusInputs]
   }
   
-  extension [Self <: SoftplusInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoftplusInputs] (val x: Self) extends AnyVal {
     
     inline def setX(value: scala.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

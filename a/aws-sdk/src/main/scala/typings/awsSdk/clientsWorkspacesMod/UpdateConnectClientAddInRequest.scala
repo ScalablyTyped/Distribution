@@ -33,7 +33,8 @@ object UpdateConnectClientAddInRequest {
     __obj.asInstanceOf[UpdateConnectClientAddInRequest]
   }
   
-  extension [Self <: UpdateConnectClientAddInRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateConnectClientAddInRequest] (val x: Self) extends AnyVal {
     
     inline def setAddInId(value: AmazonUuid): Self = StObject.set(x, "AddInId", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ParametersPathLanguage {
     __obj.asInstanceOf[ParametersPathLanguage]
   }
   
-  extension [Self <: ParametersPathLanguage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersPathLanguage] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathLanguage): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

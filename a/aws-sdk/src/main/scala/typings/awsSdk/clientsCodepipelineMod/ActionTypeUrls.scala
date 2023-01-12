@@ -33,7 +33,8 @@ object ActionTypeUrls {
     __obj.asInstanceOf[ActionTypeUrls]
   }
   
-  extension [Self <: ActionTypeUrls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionTypeUrls] (val x: Self) extends AnyVal {
     
     inline def setConfigurationUrl(value: Url): Self = StObject.set(x, "configurationUrl", value.asInstanceOf[js.Any])
     

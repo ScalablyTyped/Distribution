@@ -17,7 +17,8 @@ object PhotoImportSelectionChangedEventArgs {
     __obj.asInstanceOf[PhotoImportSelectionChangedEventArgs]
   }
   
-  extension [Self <: PhotoImportSelectionChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhotoImportSelectionChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setIsSelectionEmpty(value: Boolean): Self = StObject.set(x, "isSelectionEmpty", value.asInstanceOf[js.Any])
   }

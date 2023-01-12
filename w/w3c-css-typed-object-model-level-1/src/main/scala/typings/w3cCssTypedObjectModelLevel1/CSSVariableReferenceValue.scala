@@ -17,7 +17,8 @@ object CSSVariableReferenceValue {
     __obj.asInstanceOf[CSSVariableReferenceValue]
   }
   
-  extension [Self <: CSSVariableReferenceValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSVariableReferenceValue] (val x: Self) extends AnyVal {
     
     inline def setFallback(value: CSSUnparsedValue): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     

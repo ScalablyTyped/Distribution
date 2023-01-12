@@ -29,7 +29,8 @@ object ComputedKeyframe {
     __obj.asInstanceOf[ComputedKeyframe]
   }
   
-  extension [Self <: ComputedKeyframe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputedKeyframe] (val x: Self) extends AnyVal {
     
     inline def setComposite(value: CompositeOperationOrAuto): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
     

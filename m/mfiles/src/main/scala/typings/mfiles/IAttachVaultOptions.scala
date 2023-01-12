@@ -45,7 +45,8 @@ object IAttachVaultOptions {
     __obj.asInstanceOf[IAttachVaultOptions]
   }
   
-  extension [Self <: IAttachVaultOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAttachVaultOptions] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IAttachVaultOptions): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

@@ -15,7 +15,8 @@ object JobPresetsSupported {
     __obj.asInstanceOf[JobPresetsSupported]
   }
   
-  extension [Self <: JobPresetsSupported](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobPresetsSupported] (val x: Self) extends AnyVal {
     
     inline def `setPreset-name`(value: String): Self = StObject.set(x, "preset-name", value.asInstanceOf[js.Any])
     

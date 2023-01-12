@@ -166,7 +166,8 @@ object mod {
       __obj.asInstanceOf[AutoSaveOptions]
     }
     
-    extension [Self <: AutoSaveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoSaveOptions] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -195,7 +196,8 @@ object mod {
       __obj.asInstanceOf[BlockStyleOptions]
     }
     
-    extension [Self <: BlockStyleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockStyleOptions] (val x: Self) extends AnyVal {
       
       inline def setBold(value: String): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
@@ -228,7 +230,8 @@ object mod {
       __obj.asInstanceOf[InsertTextOptions]
     }
     
-    extension [Self <: InsertTextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InsertTextOptions] (val x: Self) extends AnyVal {
       
       inline def setHorizontalRule(value: js.Array[String]): Self = StObject.set(x, "horizontalRule", value.asInstanceOf[js.Any])
       
@@ -315,7 +318,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAutoDownloadFontAwesome(value: Boolean): Self = StObject.set(x, "autoDownloadFontAwesome", value.asInstanceOf[js.Any])
       
@@ -438,7 +442,8 @@ object mod {
       __obj.asInstanceOf[ParsingOptions]
     }
     
-    extension [Self <: ParsingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsingOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowAtxHeaderWithoutSpace(value: Boolean): Self = StObject.set(x, "allowAtxHeaderWithoutSpace", value.asInstanceOf[js.Any])
       
@@ -467,7 +472,8 @@ object mod {
       __obj.asInstanceOf[RenderingOptions]
     }
     
-    extension [Self <: RenderingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderingOptions] (val x: Self) extends AnyVal {
       
       inline def setCodeSyntaxHighlighting(value: Boolean): Self = StObject.set(x, "codeSyntaxHighlighting", value.asInstanceOf[js.Any])
       
@@ -516,7 +522,8 @@ object mod {
       __obj.asInstanceOf[ShortcutsArray]
     }
     
-    extension [Self <: ShortcutsArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShortcutsArray] (val x: Self) extends AnyVal {
       
       inline def setCleanBlock(value: String): Self = StObject.set(x, "cleanBlock", value.asInstanceOf[js.Any])
       
@@ -610,7 +617,8 @@ object mod {
       __obj.asInstanceOf[StatusBarItem]
     }
     
-    extension [Self <: StatusBarItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatusBarItem] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -642,7 +650,8 @@ object mod {
       __obj.asInstanceOf[ToolbarIcon]
     }
     
-    extension [Self <: ToolbarIcon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarIcon] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String | (js.Function1[/* editor */ SimpleMDE, Unit])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object ObjectAnnotation {
     __obj.asInstanceOf[ObjectAnnotation]
   }
   
-  extension [Self <: ObjectAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectAnnotation] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     

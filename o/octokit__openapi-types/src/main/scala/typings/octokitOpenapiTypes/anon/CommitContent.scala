@@ -17,7 +17,8 @@ object CommitContent {
     __obj.asInstanceOf[CommitContent]
   }
   
-  extension [Self <: CommitContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitContent] (val x: Self) extends AnyVal {
     
     inline def setCommit(value: Verification): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     

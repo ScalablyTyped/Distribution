@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[AdditionalRoles]
     }
     
-    extension [Self <: AdditionalRoles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdditionalRoles] (val x: Self) extends AnyVal {
       
       inline def setAdditionalRoles(value: js.Array[String]): Self = StObject.set(x, "additionalRoles", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Altitude]
     }
     
-    extension [Self <: Altitude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Altitude] (val x: Self) extends AnyVal {
       
       inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object anon {
       __obj.asInstanceOf[Aperture]
     }
     
-    extension [Self <: Aperture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Aperture] (val x: Self) extends AnyVal {
       
       inline def setAperture(value: Double): Self = StObject.set(x, "aperture", value.asInstanceOf[js.Any])
       
@@ -253,7 +256,8 @@ object anon {
       __obj.asInstanceOf[CanAddChildren]
     }
     
-    extension [Self <: CanAddChildren](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanAddChildren] (val x: Self) extends AnyVal {
       
       inline def setCanAddChildren(value: Boolean): Self = StObject.set(x, "canAddChildren", value.asInstanceOf[js.Any])
       
@@ -318,7 +322,8 @@ object anon {
       __obj.asInstanceOf[DisplayName]
     }
     
-    extension [Self <: DisplayName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayName] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -349,7 +354,8 @@ object anon {
       __obj.asInstanceOf[DurationMillis]
     }
     
-    extension [Self <: DurationMillis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DurationMillis] (val x: Self) extends AnyVal {
       
       inline def setDurationMillis(value: Double): Self = StObject.set(x, "durationMillis", value.asInstanceOf[js.Any])
       
@@ -387,7 +393,8 @@ object anon {
       __obj.asInstanceOf[Hidden]
     }
     
-    extension [Self <: Hidden](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hidden] (val x: Self) extends AnyVal {
       
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
@@ -416,7 +423,8 @@ object anon {
       __obj.asInstanceOf[Image]
     }
     
-    extension [Self <: Image](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
       
       inline def setImage(value: js.typedarray.Uint8Array): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
@@ -435,7 +443,8 @@ object anon {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
@@ -452,7 +461,8 @@ object anon {
       __obj.asInstanceOf[Url]
     }
     
-    extension [Self <: Url](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

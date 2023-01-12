@@ -42,7 +42,8 @@ object X {
     __obj.asInstanceOf[X]
   }
   
-  extension [Self <: X](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
     
     inline def setX(value: ScrollStrategy): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

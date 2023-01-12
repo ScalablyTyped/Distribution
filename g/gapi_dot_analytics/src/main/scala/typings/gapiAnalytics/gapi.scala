@@ -35,7 +35,8 @@ object gapi {
               __obj.asInstanceOf[AnalyticsParameter]
             }
             
-            extension [Self <: AnalyticsParameter](x: Self) {
+            @scala.inline
+            implicit open class MutableBuilder[Self <: AnalyticsParameter] (val x: Self) extends AnyVal {
               
               inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
               

@@ -282,7 +282,8 @@ object InnerAudioContext {
     __obj.asInstanceOf[InnerAudioContext]
   }
   
-  extension [Self <: InnerAudioContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InnerAudioContext] (val x: Self) extends AnyVal {
     
     inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     

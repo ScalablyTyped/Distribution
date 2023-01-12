@@ -18,7 +18,8 @@ object MetricProcessingConfig {
     __obj.asInstanceOf[MetricProcessingConfig]
   }
   
-  extension [Self <: MetricProcessingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricProcessingConfig] (val x: Self) extends AnyVal {
     
     inline def setComputeLocation(value: ComputeLocation): Self = StObject.set(x, "computeLocation", value.asInstanceOf[js.Any])
   }

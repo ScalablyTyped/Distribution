@@ -23,7 +23,8 @@ object LoadBalancerTlsCertificateDomainValidationOption {
     __obj.asInstanceOf[LoadBalancerTlsCertificateDomainValidationOption]
   }
   
-  extension [Self <: LoadBalancerTlsCertificateDomainValidationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadBalancerTlsCertificateDomainValidationOption] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     

@@ -419,7 +419,8 @@ object libSessioncontextMod {
         __obj.asInstanceOf[IKernelSearch]
       }
       
-      extension [Self <: IKernelSearch](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IKernelSearch] (val x: Self) extends AnyVal {
         
         inline def setPreference(value: IKernelPreference): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
         
@@ -488,7 +489,8 @@ object libSessioncontextMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setKernelPreference(value: IKernelPreference): Self = StObject.set(x, "kernelPreference", value.asInstanceOf[js.Any])
         
@@ -792,7 +794,8 @@ object libSessioncontextMod {
         __obj.asInstanceOf[IKernelPreference]
       }
       
-      extension [Self <: IKernelPreference](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IKernelPreference] (val x: Self) extends AnyVal {
         
         inline def setAutoStartDefault(value: Boolean): Self = StObject.set(x, "autoStartDefault", value.asInstanceOf[js.Any])
         

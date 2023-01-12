@@ -76,7 +76,8 @@ object TileLayer {
     __obj.asInstanceOf[TileLayer]
   }
   
-  extension [Self <: TileLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileLayer] (val x: Self) extends AnyVal {
     
     inline def setGetOpacity(value: () => Double): Self = StObject.set(x, "getOpacity", js.Any.fromFunction0(value))
     

@@ -94,7 +94,8 @@ object IActionColumn {
     __obj.asInstanceOf[IActionColumn]
   }
   
-  extension [Self <: IActionColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IActionColumn] (val x: Self) extends AnyVal {
     
     inline def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
     

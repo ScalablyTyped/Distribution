@@ -23,7 +23,8 @@ object FailedBatchItem {
     __obj.asInstanceOf[FailedBatchItem]
   }
   
-  extension [Self <: FailedBatchItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailedBatchItem] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: BatchErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     

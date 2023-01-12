@@ -27,7 +27,8 @@ object RegexOptions {
     __obj.asInstanceOf[RegexOptions]
   }
   
-  extension [Self <: RegexOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegexOptions] (val x: Self) extends AnyVal {
     
     inline def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "isCaseSensitive", value.asInstanceOf[js.Any])
     

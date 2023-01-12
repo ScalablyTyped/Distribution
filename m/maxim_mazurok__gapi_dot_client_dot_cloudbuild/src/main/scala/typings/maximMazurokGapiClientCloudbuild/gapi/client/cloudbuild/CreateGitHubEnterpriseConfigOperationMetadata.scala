@@ -22,7 +22,8 @@ object CreateGitHubEnterpriseConfigOperationMetadata {
     __obj.asInstanceOf[CreateGitHubEnterpriseConfigOperationMetadata]
   }
   
-  extension [Self <: CreateGitHubEnterpriseConfigOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGitHubEnterpriseConfigOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setCompleteTime(value: String): Self = StObject.set(x, "completeTime", value.asInstanceOf[js.Any])
     

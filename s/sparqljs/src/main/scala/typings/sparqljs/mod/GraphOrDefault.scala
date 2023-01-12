@@ -21,7 +21,8 @@ object GraphOrDefault {
     __obj.asInstanceOf[GraphOrDefault]
   }
   
-  extension [Self <: GraphOrDefault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphOrDefault] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

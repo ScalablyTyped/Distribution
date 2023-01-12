@@ -25,7 +25,8 @@ object OnSortEventArgs {
     __obj.asInstanceOf[OnSortEventArgs[T]]
   }
   
-  extension [Self <: OnSortEventArgs[?], T /* <: SlickData */](x: Self & OnSortEventArgs[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnSortEventArgs[?], T /* <: SlickData */] (val x: Self & OnSortEventArgs[T]) extends AnyVal {
     
     inline def setMultiColumnSort(value: Boolean): Self = StObject.set(x, "multiColumnSort", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object RadioProps {
     __obj.asInstanceOf[RadioProps]
   }
   
-  extension [Self <: RadioProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadioProps] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

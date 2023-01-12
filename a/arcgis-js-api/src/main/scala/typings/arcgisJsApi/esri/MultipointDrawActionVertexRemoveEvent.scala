@@ -30,7 +30,8 @@ object MultipointDrawActionVertexRemoveEvent {
     __obj.asInstanceOf[MultipointDrawActionVertexRemoveEvent]
   }
   
-  extension [Self <: MultipointDrawActionVertexRemoveEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipointDrawActionVertexRemoveEvent] (val x: Self) extends AnyVal {
     
     inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     

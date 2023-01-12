@@ -17,7 +17,8 @@ object ConfigStatic {
     __obj.asInstanceOf[ConfigStatic]
   }
   
-  extension [Self <: ConfigStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigStatic] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: () => YogaConfig): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     

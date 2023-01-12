@@ -163,7 +163,8 @@ object sapUiTestMatchersAggregationLengthEqualsMod {
       __obj.asInstanceOf[AggregationLengthEqualsSettings]
     }
     
-    extension [Self <: AggregationLengthEqualsSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AggregationLengthEqualsSettings] (val x: Self) extends AnyVal {
       
       inline def setLength(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       

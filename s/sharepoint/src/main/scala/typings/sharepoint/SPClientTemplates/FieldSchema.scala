@@ -26,7 +26,8 @@ object FieldSchema {
     __obj.asInstanceOf[FieldSchema]
   }
   
-  extension [Self <: FieldSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldSchema] (val x: Self) extends AnyVal {
     
     inline def setAllowGridEditing(value: Boolean): Self = StObject.set(x, "AllowGridEditing", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object IMobileBroadbandAccountEventArgs {
     __obj.asInstanceOf[IMobileBroadbandAccountEventArgs]
   }
   
-  extension [Self <: IMobileBroadbandAccountEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMobileBroadbandAccountEventArgs] (val x: Self) extends AnyVal {
     
     inline def setNetworkAccountId(value: String): Self = StObject.set(x, "networkAccountId", value.asInstanceOf[js.Any])
   }

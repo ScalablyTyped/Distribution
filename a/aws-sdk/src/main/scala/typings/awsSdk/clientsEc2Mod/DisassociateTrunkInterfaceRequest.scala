@@ -28,7 +28,8 @@ object DisassociateTrunkInterfaceRequest {
     __obj.asInstanceOf[DisassociateTrunkInterfaceRequest]
   }
   
-  extension [Self <: DisassociateTrunkInterfaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateTrunkInterfaceRequest] (val x: Self) extends AnyVal {
     
     inline def setAssociationId(value: TrunkInterfaceAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     

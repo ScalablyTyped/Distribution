@@ -68,7 +68,8 @@ object Ingredient {
     __obj.asInstanceOf[Ingredient]
   }
   
-  extension [Self <: Ingredient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ingredient] (val x: Self) extends AnyVal {
     
     inline def setAllergenicIndicator(value: Boolean): Self = StObject.set(x, "allergenicIndicator", value.asInstanceOf[js.Any])
     

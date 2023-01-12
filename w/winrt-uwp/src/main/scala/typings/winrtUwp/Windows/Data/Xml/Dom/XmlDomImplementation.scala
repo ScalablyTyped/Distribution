@@ -22,7 +22,8 @@ object XmlDomImplementation {
     __obj.asInstanceOf[XmlDomImplementation]
   }
   
-  extension [Self <: XmlDomImplementation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XmlDomImplementation] (val x: Self) extends AnyVal {
     
     inline def setHasFeature(value: (String, Any) => Boolean): Self = StObject.set(x, "hasFeature", js.Any.fromFunction2(value))
   }

@@ -22,7 +22,8 @@ object EgressFrom {
     __obj.asInstanceOf[EgressFrom]
   }
   
-  extension [Self <: EgressFrom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EgressFrom] (val x: Self) extends AnyVal {
     
     inline def setIdentities(value: js.Array[String]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
     

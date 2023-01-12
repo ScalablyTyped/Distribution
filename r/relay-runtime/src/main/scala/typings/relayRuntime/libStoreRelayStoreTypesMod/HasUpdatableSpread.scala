@@ -20,7 +20,8 @@ object HasUpdatableSpread {
     __obj.asInstanceOf[HasUpdatableSpread[TData]]
   }
   
-  extension [Self <: HasUpdatableSpread[?], TData](x: Self & HasUpdatableSpread[TData]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasUpdatableSpread[?], TData] (val x: Self & HasUpdatableSpread[TData]) extends AnyVal {
     
     inline def set$updatableFragmentSpreads(value: FragmentType): Self = StObject.set(x, "$updatableFragmentSpreads", value.asInstanceOf[js.Any])
     

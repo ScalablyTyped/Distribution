@@ -28,7 +28,8 @@ object OmitInnerMultiVariantIcon {
     __obj.asInstanceOf[OmitInnerMultiVariantIcon]
   }
   
-  extension [Self <: OmitInnerMultiVariantIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitInnerMultiVariantIcon] (val x: Self) extends AnyVal {
     
     inline def setForwardedRef(value: ForwardedRef[Any]): Self = StObject.set(x, "forwardedRef", value.asInstanceOf[js.Any])
     

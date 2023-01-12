@@ -76,7 +76,8 @@ object TraceConfig {
     __obj.asInstanceOf[TraceConfig]
   }
   
-  extension [Self <: TraceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TraceConfig] (val x: Self) extends AnyVal {
     
     inline def setEnable_argument_filter(value: Boolean): Self = StObject.set(x, "enable_argument_filter", value.asInstanceOf[js.Any])
     

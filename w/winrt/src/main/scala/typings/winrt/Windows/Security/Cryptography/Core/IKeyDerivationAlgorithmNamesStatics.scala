@@ -59,7 +59,8 @@ object IKeyDerivationAlgorithmNamesStatics {
     __obj.asInstanceOf[IKeyDerivationAlgorithmNamesStatics]
   }
   
-  extension [Self <: IKeyDerivationAlgorithmNamesStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKeyDerivationAlgorithmNamesStatics] (val x: Self) extends AnyVal {
     
     inline def setPbkdf2Md5(value: String): Self = StObject.set(x, "pbkdf2Md5", value.asInstanceOf[js.Any])
     

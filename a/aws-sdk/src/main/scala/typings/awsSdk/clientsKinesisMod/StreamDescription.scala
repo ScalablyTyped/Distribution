@@ -77,7 +77,8 @@ object StreamDescription {
     __obj.asInstanceOf[StreamDescription]
   }
   
-  extension [Self <: StreamDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamDescription] (val x: Self) extends AnyVal {
     
     inline def setEncryptionType(value: EncryptionType): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
     

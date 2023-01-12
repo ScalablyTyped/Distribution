@@ -45,7 +45,8 @@ object IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchi
     __obj.asInstanceOf[IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie]
   }
   
-  extension [Self <: IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     

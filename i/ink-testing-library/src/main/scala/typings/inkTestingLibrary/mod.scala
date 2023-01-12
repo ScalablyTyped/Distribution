@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[RenderResponse]
     }
     
-    extension [Self <: RenderResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderResponse] (val x: Self) extends AnyVal {
       
       inline def setFrames(value: js.Array[String]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       

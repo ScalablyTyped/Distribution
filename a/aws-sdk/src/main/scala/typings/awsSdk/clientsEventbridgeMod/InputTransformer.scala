@@ -23,7 +23,8 @@ object InputTransformer {
     __obj.asInstanceOf[InputTransformer]
   }
   
-  extension [Self <: InputTransformer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputTransformer] (val x: Self) extends AnyVal {
     
     inline def setInputPathsMap(value: TransformerPaths): Self = StObject.set(x, "InputPathsMap", value.asInstanceOf[js.Any])
     

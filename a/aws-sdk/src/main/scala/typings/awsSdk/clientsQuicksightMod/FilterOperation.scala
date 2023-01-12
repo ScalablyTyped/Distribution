@@ -18,7 +18,8 @@ object FilterOperation {
     __obj.asInstanceOf[FilterOperation]
   }
   
-  extension [Self <: FilterOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterOperation] (val x: Self) extends AnyVal {
     
     inline def setConditionExpression(value: Expression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
   }

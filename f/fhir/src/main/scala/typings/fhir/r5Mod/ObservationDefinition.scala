@@ -245,7 +245,8 @@ object ObservationDefinition {
     __obj.asInstanceOf[ObservationDefinition]
   }
   
-  extension [Self <: ObservationDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObservationDefinition] (val x: Self) extends AnyVal {
     
     inline def setApprovalDate(value: String): Self = StObject.set(x, "approvalDate", value.asInstanceOf[js.Any])
     

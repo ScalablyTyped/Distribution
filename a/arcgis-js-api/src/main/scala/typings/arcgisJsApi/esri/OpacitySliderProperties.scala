@@ -36,7 +36,8 @@ object OpacitySliderProperties {
     __obj.asInstanceOf[OpacitySliderProperties]
   }
   
-  extension [Self <: OpacitySliderProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpacitySliderProperties] (val x: Self) extends AnyVal {
     
     inline def setStops(value: js.Array[OpacityStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     

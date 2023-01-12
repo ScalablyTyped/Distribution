@@ -23,7 +23,8 @@ object SelectState {
     __obj.asInstanceOf[SelectState]
   }
   
-  extension [Self <: SelectState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectState] (val x: Self) extends AnyVal {
     
     inline def setActiveDescendant(value: String): Self = StObject.set(x, "activeDescendant", value.asInstanceOf[js.Any])
     

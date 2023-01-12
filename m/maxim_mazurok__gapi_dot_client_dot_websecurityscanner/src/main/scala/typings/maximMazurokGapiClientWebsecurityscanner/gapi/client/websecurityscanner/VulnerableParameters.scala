@@ -16,7 +16,8 @@ object VulnerableParameters {
     __obj.asInstanceOf[VulnerableParameters]
   }
   
-  extension [Self <: VulnerableParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VulnerableParameters] (val x: Self) extends AnyVal {
     
     inline def setParameterNames(value: js.Array[String]): Self = StObject.set(x, "parameterNames", value.asInstanceOf[js.Any])
     

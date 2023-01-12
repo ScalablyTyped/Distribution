@@ -43,7 +43,8 @@ object BatchGetCustomDataIdentifierSummary {
     __obj.asInstanceOf[BatchGetCustomDataIdentifierSummary]
   }
   
-  extension [Self <: BatchGetCustomDataIdentifierSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetCustomDataIdentifierSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

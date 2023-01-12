@@ -21,7 +21,8 @@ object ClearButtonProps {
     __obj.asInstanceOf[ClearButtonProps]
   }
   
-  extension [Self <: ClearButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearButtonProps] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object TaskCompletionDetails {
     __obj.asInstanceOf[TaskCompletionDetails]
   }
   
-  extension [Self <: TaskCompletionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskCompletionDetails] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[Any]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

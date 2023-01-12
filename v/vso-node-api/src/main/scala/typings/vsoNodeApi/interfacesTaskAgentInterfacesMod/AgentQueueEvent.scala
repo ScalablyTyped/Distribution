@@ -17,7 +17,8 @@ object AgentQueueEvent {
     __obj.asInstanceOf[AgentQueueEvent]
   }
   
-  extension [Self <: AgentQueueEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentQueueEvent] (val x: Self) extends AnyVal {
     
     inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     

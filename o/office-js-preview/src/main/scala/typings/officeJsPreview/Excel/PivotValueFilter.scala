@@ -100,7 +100,8 @@ object PivotValueFilter {
     __obj.asInstanceOf[PivotValueFilter]
   }
   
-  extension [Self <: PivotValueFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotValueFilter] (val x: Self) extends AnyVal {
     
     inline def setComparator(value: Double): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     

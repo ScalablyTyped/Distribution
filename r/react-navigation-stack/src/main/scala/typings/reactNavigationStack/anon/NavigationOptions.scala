@@ -28,7 +28,8 @@ object NavigationOptions {
     __obj.asInstanceOf[NavigationOptions[Params, ScreenProps]]
   }
   
-  extension [Self <: NavigationOptions[?, ?], Params, ScreenProps](x: Self & (NavigationOptions[Params, ScreenProps])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationOptions[?, ?], Params, ScreenProps] (val x: Self & (NavigationOptions[Params, ScreenProps])) extends AnyVal {
     
     inline def setNavigationOptions(
       value: NavigationScreenConfig[

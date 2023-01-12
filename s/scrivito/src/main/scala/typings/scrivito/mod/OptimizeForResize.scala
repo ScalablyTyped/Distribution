@@ -19,7 +19,8 @@ object OptimizeForResize {
     __obj.asInstanceOf[OptimizeForResize]
   }
   
-  extension [Self <: OptimizeForResize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptimizeForResize] (val x: Self) extends AnyVal {
     
     inline def setFit(value: resize): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
   }

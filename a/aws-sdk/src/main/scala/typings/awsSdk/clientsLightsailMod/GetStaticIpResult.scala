@@ -18,7 +18,8 @@ object GetStaticIpResult {
     __obj.asInstanceOf[GetStaticIpResult]
   }
   
-  extension [Self <: GetStaticIpResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStaticIpResult] (val x: Self) extends AnyVal {
     
     inline def setStaticIp(value: StaticIp): Self = StObject.set(x, "staticIp", value.asInstanceOf[js.Any])
     

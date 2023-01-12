@@ -54,7 +54,8 @@ object UserInfoStats {
     __obj.asInstanceOf[UserInfoStats]
   }
   
-  extension [Self <: UserInfoStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserInfoStats] (val x: Self) extends AnyVal {
     
     inline def setClicks(value: Double): Self = StObject.set(x, "clicks", value.asInstanceOf[js.Any])
     

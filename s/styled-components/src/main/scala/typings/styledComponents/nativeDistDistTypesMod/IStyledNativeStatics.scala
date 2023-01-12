@@ -29,7 +29,8 @@ object IStyledNativeStatics {
     __obj.asInstanceOf[IStyledNativeStatics[OuterProps]]
   }
   
-  extension [Self <: IStyledNativeStatics[?], OuterProps](x: Self & IStyledNativeStatics[OuterProps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStyledNativeStatics[?], OuterProps] (val x: Self & IStyledNativeStatics[OuterProps]) extends AnyVal {
     
     inline def setInlineStyle(value: InstanceType[IInlineStyleConstructor[OuterProps]]): Self = StObject.set(x, "inlineStyle", value.asInstanceOf[js.Any])
     

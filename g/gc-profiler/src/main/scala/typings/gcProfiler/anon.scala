@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[KGCCallbackFlagCompacted]
     }
     
-    extension [Self <: KGCCallbackFlagCompacted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KGCCallbackFlagCompacted] (val x: Self) extends AnyVal {
       
       inline def setKGCCallbackFlagCompacted(value: `1`): Self = StObject.set(x, "kGCCallbackFlagCompacted", value.asInstanceOf[js.Any])
       

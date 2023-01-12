@@ -17,7 +17,8 @@ object QueryTarget {
     __obj.asInstanceOf[QueryTarget]
   }
   
-  extension [Self <: QueryTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryTarget] (val x: Self) extends AnyVal {
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

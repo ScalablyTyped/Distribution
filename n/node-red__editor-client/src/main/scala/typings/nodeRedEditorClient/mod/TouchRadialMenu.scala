@@ -18,7 +18,8 @@ object TouchRadialMenu {
     __obj.asInstanceOf[TouchRadialMenu]
   }
   
-  extension [Self <: TouchRadialMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchRadialMenu] (val x: Self) extends AnyVal {
     
     inline def setActive(value: () => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction0(value))
     

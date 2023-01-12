@@ -22,7 +22,8 @@ object Visibletoorganization {
     __obj.asInstanceOf[Visibletoorganization]
   }
   
-  extension [Self <: Visibletoorganization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Visibletoorganization] (val x: Self) extends AnyVal {
     
     inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

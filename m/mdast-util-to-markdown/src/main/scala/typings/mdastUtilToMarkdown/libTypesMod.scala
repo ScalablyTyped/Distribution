@@ -79,7 +79,8 @@ object libTypesMod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setBulletCurrent(value: String): Self = StObject.set(x, "bulletCurrent", value.asInstanceOf[js.Any])
       
@@ -194,7 +195,8 @@ object libTypesMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBullet(value: `-_` | Asterisk | Plussign): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
       
@@ -312,7 +314,8 @@ object libTypesMod {
       __obj.asInstanceOf[SafeFields]
     }
     
-    extension [Self <: SafeFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SafeFields] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -345,7 +348,8 @@ object libTypesMod {
       __obj.asInstanceOf[TrackFields]
     }
     
-    extension [Self <: TrackFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackFields] (val x: Self) extends AnyVal {
       
       inline def setLineShift(value: Double): Self = StObject.set(x, "lineShift", value.asInstanceOf[js.Any])
       
@@ -381,7 +385,8 @@ object libTypesMod {
       __obj.asInstanceOf[Unsafe]
     }
     
-    extension [Self <: Unsafe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unsafe] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       

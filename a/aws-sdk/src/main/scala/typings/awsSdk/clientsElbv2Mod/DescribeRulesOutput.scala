@@ -23,7 +23,8 @@ object DescribeRulesOutput {
     __obj.asInstanceOf[DescribeRulesOutput]
   }
   
-  extension [Self <: DescribeRulesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRulesOutput] (val x: Self) extends AnyVal {
     
     inline def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

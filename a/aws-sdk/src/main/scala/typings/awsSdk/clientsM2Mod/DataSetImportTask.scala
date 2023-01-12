@@ -28,7 +28,8 @@ object DataSetImportTask {
     __obj.asInstanceOf[DataSetImportTask]
   }
   
-  extension [Self <: DataSetImportTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSetImportTask] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: DataSetTaskLifecycle): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

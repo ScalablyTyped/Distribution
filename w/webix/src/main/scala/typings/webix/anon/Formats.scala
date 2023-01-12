@@ -32,7 +32,8 @@ object Formats {
     __obj.asInstanceOf[Formats]
   }
   
-  extension [Self <: Formats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Formats] (val x: Self) extends AnyVal {
     
     inline def setFormats(value: Currencies): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     

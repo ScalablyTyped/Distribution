@@ -33,7 +33,8 @@ object AbstractCollectionLikeMemberType {
     __obj.asInstanceOf[AbstractCollectionLikeMemberType]
   }
   
-  extension [Self <: AbstractCollectionLikeMemberType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractCollectionLikeMemberType] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ContextRule {
     __obj.asInstanceOf[ContextRule]
   }
   
-  extension [Self <: ContextRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextRule] (val x: Self) extends AnyVal {
     
     inline def setAllowedRequestExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedRequestExtensions", value.asInstanceOf[js.Any])
     

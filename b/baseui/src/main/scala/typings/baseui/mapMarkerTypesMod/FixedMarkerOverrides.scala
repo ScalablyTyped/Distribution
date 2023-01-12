@@ -40,7 +40,8 @@ object FixedMarkerOverrides {
     __obj.asInstanceOf[FixedMarkerOverrides]
   }
   
-  extension [Self <: FixedMarkerOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FixedMarkerOverrides] (val x: Self) extends AnyVal {
     
     inline def setBadgeEnhancer(value: Override[Any]): Self = StObject.set(x, "BadgeEnhancer", value.asInstanceOf[js.Any])
     

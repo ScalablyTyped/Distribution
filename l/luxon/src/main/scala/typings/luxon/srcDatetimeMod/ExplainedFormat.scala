@@ -33,7 +33,8 @@ object ExplainedFormat {
     __obj.asInstanceOf[ExplainedFormat]
   }
   
-  extension [Self <: ExplainedFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExplainedFormat] (val x: Self) extends AnyVal {
     
     inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

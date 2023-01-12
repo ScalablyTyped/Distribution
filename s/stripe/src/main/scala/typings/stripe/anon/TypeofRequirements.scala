@@ -15,7 +15,8 @@ object TypeofRequirements {
     __obj.asInstanceOf[TypeofRequirements]
   }
   
-  extension [Self <: TypeofRequirements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRequirements] (val x: Self) extends AnyVal {
     
     inline def setError(value: Any): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
   }

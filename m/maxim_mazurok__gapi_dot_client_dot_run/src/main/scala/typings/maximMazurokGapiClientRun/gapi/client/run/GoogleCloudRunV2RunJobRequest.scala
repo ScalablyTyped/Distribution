@@ -19,7 +19,8 @@ object GoogleCloudRunV2RunJobRequest {
     __obj.asInstanceOf[GoogleCloudRunV2RunJobRequest]
   }
   
-  extension [Self <: GoogleCloudRunV2RunJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRunV2RunJobRequest] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

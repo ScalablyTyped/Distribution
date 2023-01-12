@@ -138,7 +138,8 @@ object mod {
       __obj.asInstanceOf[Changes]
     }
     
-    extension [Self <: Changes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Changes] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: (Container[Any], Double) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
@@ -161,7 +162,8 @@ object mod {
       __obj.asInstanceOf[Container[T]]
     }
     
-    extension [Self <: Container[?], T](x: Self & Container[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Container[?], T] (val x: Self & Container[T]) extends AnyVal {
       
       inline def setGetStyles(value: () => String): Self = StObject.set(x, "getStyles", js.Any.fromFunction0(value))
       
@@ -191,7 +193,8 @@ object mod {
       __obj.asInstanceOf[Styles]
     }
     
-    extension [Self <: Styles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Styles] (val x: Self) extends AnyVal {
       
       inline def set$displayName(value: String): Self = StObject.set(x, "$displayName", value.asInstanceOf[js.Any])
       

@@ -46,7 +46,8 @@ object CADES_Plugin {
       __obj.asInstanceOf[EncodingType]
     }
     
-    extension [Self <: EncodingType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodingType] (val x: Self) extends AnyVal {
       
       inline def setCADESCOM_ENCODE_ANY(value: `-1`): Self = StObject.set(x, "CADESCOM_ENCODE_ANY", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object CADES_Plugin {
       __obj.asInstanceOf[LogLevel]
     }
     
-    extension [Self <: LogLevel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogLevel] (val x: Self) extends AnyVal {
       
       inline def setLOG_LEVEL_DEBUG(value: `4`): Self = StObject.set(x, "LOG_LEVEL_DEBUG", value.asInstanceOf[js.Any])
       
@@ -131,7 +133,8 @@ object CADES_Plugin {
       __obj.asInstanceOf[ObjectNames]
     }
     
-    extension [Self <: ObjectNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectNames] (val x: Self) extends AnyVal {
       
       inline def setCAPICOMDotStore(value: Store): Self = StObject.set(x, "CAPICOM.Store", value.asInstanceOf[js.Any])
       
@@ -201,7 +204,8 @@ object CADES_Plugin {
       __obj.asInstanceOf[ObjectNamesAsync]
     }
     
-    extension [Self <: ObjectNamesAsync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectNamesAsync] (val x: Self) extends AnyVal {
       
       inline def setCAdESCOMDotAbout(value: AboutAsync): Self = StObject.set(x, "CAdESCOM.About", value.asInstanceOf[js.Any])
       
@@ -246,7 +250,8 @@ object CADES_Plugin {
       __obj.asInstanceOf[SignedXmlUrls]
     }
     
-    extension [Self <: SignedXmlUrls](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignedXmlUrls] (val x: Self) extends AnyVal {
       
       inline def setXmlDsigGost3410Url(value: /* urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102001-gostr3411 */ String): Self = StObject.set(x, "XmlDsigGost3410Url", value.asInstanceOf[js.Any])
       

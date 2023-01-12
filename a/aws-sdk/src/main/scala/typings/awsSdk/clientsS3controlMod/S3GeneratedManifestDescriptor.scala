@@ -20,7 +20,8 @@ object S3GeneratedManifestDescriptor {
     __obj.asInstanceOf[S3GeneratedManifestDescriptor]
   }
   
-  extension [Self <: S3GeneratedManifestDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3GeneratedManifestDescriptor] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: GeneratedManifestFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     

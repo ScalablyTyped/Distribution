@@ -38,7 +38,8 @@ object EventContextDataType {
     __obj.asInstanceOf[EventContextDataType]
   }
   
-  extension [Self <: EventContextDataType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventContextDataType] (val x: Self) extends AnyVal {
     
     inline def setCity(value: StringType): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
     

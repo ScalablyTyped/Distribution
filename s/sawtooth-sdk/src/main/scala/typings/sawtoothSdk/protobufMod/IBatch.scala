@@ -25,7 +25,8 @@ object IBatch {
     __obj.asInstanceOf[IBatch]
   }
   
-  extension [Self <: IBatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBatch] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: js.typedarray.Uint8Array): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

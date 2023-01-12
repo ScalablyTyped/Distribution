@@ -53,7 +53,8 @@ object LocaleMessages {
     __obj.asInstanceOf[LocaleMessages]
   }
   
-  extension [Self <: LocaleMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocaleMessages] (val x: Self) extends AnyVal {
     
     inline def setAddDescription(value: String): Self = StObject.set(x, "addDescription", value.asInstanceOf[js.Any])
     

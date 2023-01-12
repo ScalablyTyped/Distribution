@@ -41,7 +41,8 @@ object HTMLCSSImportRule {
     __obj.asInstanceOf[HTMLCSSImportRule]
   }
   
-  extension [Self <: HTMLCSSImportRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLCSSImportRule] (val x: Self) extends AnyVal {
     
     inline def setCssText(value: String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
     

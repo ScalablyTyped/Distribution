@@ -88,7 +88,8 @@ object mod {
       __obj.asInstanceOf[ExtendedLoaderContext]
     }
     
-    extension [Self <: ExtendedLoaderContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedLoaderContext] (val x: Self) extends AnyVal {
       
       inline def setAddContextDependency(value: String => Unit): Self = StObject.set(x, "addContextDependency", js.Any.fromFunction1(value))
       
@@ -184,7 +185,8 @@ object mod {
       __obj.asInstanceOf[Loader]
     }
     
-    extension [Self <: Loader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Loader] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -237,7 +239,8 @@ object mod {
       __obj.asInstanceOf[RunLoaderOption]
     }
     
-    extension [Self <: RunLoaderOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunLoaderOption] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -272,7 +275,8 @@ object mod {
       __obj.asInstanceOf[RunLoaderResult]
     }
     
-    extension [Self <: RunLoaderResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunLoaderResult] (val x: Self) extends AnyVal {
       
       inline def setCacheable(value: Boolean): Self = StObject.set(x, "cacheable", value.asInstanceOf[js.Any])
       

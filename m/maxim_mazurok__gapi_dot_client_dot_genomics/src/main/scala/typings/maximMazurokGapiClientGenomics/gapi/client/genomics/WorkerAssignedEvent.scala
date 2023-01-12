@@ -22,7 +22,8 @@ object WorkerAssignedEvent {
     __obj.asInstanceOf[WorkerAssignedEvent]
   }
   
-  extension [Self <: WorkerAssignedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerAssignedEvent] (val x: Self) extends AnyVal {
     
     inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     

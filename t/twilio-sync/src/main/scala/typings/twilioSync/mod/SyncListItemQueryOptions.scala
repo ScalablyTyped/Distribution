@@ -39,7 +39,8 @@ object SyncListItemQueryOptions {
     __obj.asInstanceOf[SyncListItemQueryOptions]
   }
   
-  extension [Self <: SyncListItemQueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncListItemQueryOptions] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

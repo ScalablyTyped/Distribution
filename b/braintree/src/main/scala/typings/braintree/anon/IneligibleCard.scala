@@ -19,7 +19,8 @@ object IneligibleCard {
     __obj.asInstanceOf[IneligibleCard]
   }
   
-  extension [Self <: IneligibleCard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IneligibleCard] (val x: Self) extends AnyVal {
     
     inline def setIneligibleCard(value: String): Self = StObject.set(x, "IneligibleCard", value.asInstanceOf[js.Any])
     

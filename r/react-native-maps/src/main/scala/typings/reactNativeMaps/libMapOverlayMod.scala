@@ -156,7 +156,8 @@ object libMapOverlayMod {
       __obj.asInstanceOf[MapOverlayProps]
     }
     
-    extension [Self <: MapOverlayProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapOverlayProps] (val x: Self) extends AnyVal {
       
       inline def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
       
@@ -336,7 +337,8 @@ object libMapOverlayMod {
       __obj.asInstanceOf[NativeProps]
     }
     
-    extension [Self <: NativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object Lcd {
     __obj.asInstanceOf[Lcd]
   }
   
-  extension [Self <: Lcd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lcd] (val x: Self) extends AnyVal {
     
     inline def setDigitalFont(value: Boolean): Self = StObject.set(x, "digitalFont", value.asInstanceOf[js.Any])
     

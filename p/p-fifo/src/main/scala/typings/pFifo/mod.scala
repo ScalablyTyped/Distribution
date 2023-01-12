@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[PFifo[T]]
     }
     
-    extension [Self <: PFifo[?], T](x: Self & PFifo[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PFifo[?], T] (val x: Self & PFifo[T]) extends AnyVal {
       
       inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       

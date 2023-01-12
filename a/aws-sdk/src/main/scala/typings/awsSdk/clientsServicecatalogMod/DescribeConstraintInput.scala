@@ -23,7 +23,8 @@ object DescribeConstraintInput {
     __obj.asInstanceOf[DescribeConstraintInput]
   }
   
-  extension [Self <: DescribeConstraintInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeConstraintInput] (val x: Self) extends AnyVal {
     
     inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     

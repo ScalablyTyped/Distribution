@@ -35,7 +35,8 @@ object leafletMod {
     @js.native
     val ^ : LabelStatic = js.native
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -83,7 +84,8 @@ object leafletMod {
       __obj.asInstanceOf[CircleMarkerOptions]
     }
     
-    extension [Self <: CircleMarkerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircleMarkerOptions] (val x: Self) extends AnyVal {
       
       inline def setLabelAnchor(value: Point_): Self = StObject.set(x, "labelAnchor", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object leafletMod {
       __obj.asInstanceOf[IconOptions]
     }
     
-    extension [Self <: IconOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconOptions] (val x: Self) extends AnyVal {
       
       inline def setLabelAnchor(value: Point_): Self = StObject.set(x, "labelAnchor", value.asInstanceOf[js.Any])
       
@@ -149,7 +152,8 @@ object leafletMod {
       __obj.asInstanceOf[LabelOptions]
     }
     
-    extension [Self <: LabelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelOptions] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -235,7 +239,8 @@ object leafletMod {
       __obj.asInstanceOf[PathOptions]
     }
     
-    extension [Self <: PathOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathOptions] (val x: Self) extends AnyVal {
       
       inline def setLabelAnchor(value: Point_): Self = StObject.set(x, "labelAnchor", value.asInstanceOf[js.Any])
       

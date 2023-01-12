@@ -39,7 +39,8 @@ object clientsSagemakerruntimeMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object clientsSagemakerruntimeMod {
       __obj.asInstanceOf[InvokeEndpointAsyncInput]
     }
     
-    extension [Self <: InvokeEndpointAsyncInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvokeEndpointAsyncInput] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: Header): Self = StObject.set(x, "Accept", value.asInstanceOf[js.Any])
       
@@ -155,7 +157,8 @@ object clientsSagemakerruntimeMod {
       __obj.asInstanceOf[InvokeEndpointAsyncOutput]
     }
     
-    extension [Self <: InvokeEndpointAsyncOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvokeEndpointAsyncOutput] (val x: Self) extends AnyVal {
       
       inline def setInferenceId(value: Header): Self = StObject.set(x, "InferenceId", value.asInstanceOf[js.Any])
       
@@ -226,7 +229,8 @@ object clientsSagemakerruntimeMod {
       __obj.asInstanceOf[InvokeEndpointInput]
     }
     
-    extension [Self <: InvokeEndpointInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvokeEndpointInput] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: Header): Self = StObject.set(x, "Accept", value.asInstanceOf[js.Any])
       
@@ -295,7 +299,8 @@ object clientsSagemakerruntimeMod {
       __obj.asInstanceOf[InvokeEndpointOutput]
     }
     
-    extension [Self <: InvokeEndpointOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvokeEndpointOutput] (val x: Self) extends AnyVal {
       
       inline def setBody(value: BodyBlob): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       

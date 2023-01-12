@@ -39,7 +39,8 @@ object CompositeVideoFrameContext {
     __obj.asInstanceOf[CompositeVideoFrameContext]
   }
   
-  extension [Self <: CompositeVideoFrameContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositeVideoFrameContext] (val x: Self) extends AnyVal {
     
     inline def setBackgroundFrame(value: VideoFrame): Self = StObject.set(x, "backgroundFrame", value.asInstanceOf[js.Any])
     

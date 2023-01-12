@@ -27,7 +27,8 @@ object PopupFetchFeaturesScreenPoint {
     __obj.asInstanceOf[PopupFetchFeaturesScreenPoint]
   }
   
-  extension [Self <: PopupFetchFeaturesScreenPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupFetchFeaturesScreenPoint] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

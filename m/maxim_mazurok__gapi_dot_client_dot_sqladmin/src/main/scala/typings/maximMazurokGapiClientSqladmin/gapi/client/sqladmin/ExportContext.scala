@@ -44,7 +44,8 @@ object ExportContext {
     __obj.asInstanceOf[ExportContext]
   }
   
-  extension [Self <: ExportContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportContext] (val x: Self) extends AnyVal {
     
     inline def setCsvExportOptions(value: EscapeCharacter): Self = StObject.set(x, "csvExportOptions", value.asInstanceOf[js.Any])
     

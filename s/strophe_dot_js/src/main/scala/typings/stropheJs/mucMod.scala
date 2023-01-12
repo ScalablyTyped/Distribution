@@ -29,7 +29,8 @@ object mucMod {
           __obj.asInstanceOf[Connection]
         }
         
-        extension [Self <: Connection](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
           
           inline def setMuc(value: Plugin): Self = StObject.set(x, "muc", value.asInstanceOf[js.Any])
         }
@@ -68,7 +69,8 @@ object mucMod {
           __obj.asInstanceOf[Connection]
         }
         
-        extension [Self <: Connection](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
           
           inline def setMuc(value: typings.stropheJs.mucMod.stropheAugmentingMod.Strophe.MUC.Plugin): Self = StObject.set(x, "muc", value.asInstanceOf[js.Any])
         }
@@ -323,7 +325,8 @@ object mucMod {
             __obj.asInstanceOf[OccupantInfo]
           }
           
-          extension [Self <: OccupantInfo](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: OccupantInfo] (val x: Self) extends AnyVal {
             
             inline def setAffiliation(value: String): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
             

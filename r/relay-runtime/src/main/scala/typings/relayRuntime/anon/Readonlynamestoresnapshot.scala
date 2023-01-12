@@ -20,7 +20,8 @@ object Readonlynamestoresnapshot {
     __obj.asInstanceOf[Readonlynamestoresnapshot]
   }
   
-  extension [Self <: Readonlynamestoresnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlynamestoresnapshot] (val x: Self) extends AnyVal {
     
     inline def setName(value: storeDotsnapshot): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

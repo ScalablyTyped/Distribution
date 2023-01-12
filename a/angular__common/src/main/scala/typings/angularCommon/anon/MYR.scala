@@ -19,7 +19,8 @@ object MYR {
     __obj.asInstanceOf[MYR]
   }
   
-  extension [Self <: MYR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MYR] (val x: Self) extends AnyVal {
     
     inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     

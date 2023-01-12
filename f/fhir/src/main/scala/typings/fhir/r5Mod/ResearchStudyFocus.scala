@@ -32,7 +32,8 @@ object ResearchStudyFocus {
     __obj.asInstanceOf[ResearchStudyFocus]
   }
   
-  extension [Self <: ResearchStudyFocus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResearchStudyFocus] (val x: Self) extends AnyVal {
     
     inline def setFactor(value: String): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
     

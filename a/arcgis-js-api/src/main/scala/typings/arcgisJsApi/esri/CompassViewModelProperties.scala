@@ -33,7 +33,8 @@ object CompassViewModelProperties {
     __obj.asInstanceOf[CompassViewModelProperties]
   }
   
-  extension [Self <: CompassViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompassViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setOrientation(value: Any): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     

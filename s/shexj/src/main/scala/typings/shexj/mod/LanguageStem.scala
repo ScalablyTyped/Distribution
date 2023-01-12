@@ -26,7 +26,8 @@ object LanguageStem {
     __obj.asInstanceOf[LanguageStem]
   }
   
-  extension [Self <: LanguageStem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageStem] (val x: Self) extends AnyVal {
     
     inline def setStem(value: LANGTAG): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
     

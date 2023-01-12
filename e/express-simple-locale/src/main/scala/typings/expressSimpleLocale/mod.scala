@@ -85,7 +85,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCookieName(value: String): Self = StObject.set(x, "cookieName", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object mod {
         __obj.asInstanceOf[Request]
       }
       
-      extension [Self <: Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setUserLocale(value: ShortLocale): Self = StObject.set(x, "userLocale", value.asInstanceOf[js.Any])
       }

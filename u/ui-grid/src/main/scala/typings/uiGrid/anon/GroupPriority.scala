@@ -18,7 +18,8 @@ object GroupPriority {
     __obj.asInstanceOf[GroupPriority]
   }
   
-  extension [Self <: GroupPriority](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupPriority] (val x: Self) extends AnyVal {
     
     inline def setGroupPriority(value: Double): Self = StObject.set(x, "groupPriority", value.asInstanceOf[js.Any])
   }

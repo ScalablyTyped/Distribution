@@ -27,7 +27,8 @@ object ShiftItem {
     __obj.asInstanceOf[ShiftItem]
   }
   
-  extension [Self <: ShiftItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShiftItem] (val x: Self) extends AnyVal {
     
     inline def setActivities(value: NullableOption[js.Array[ShiftActivity]]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Credentials]
     }
     
-    extension [Self <: Credentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
       
       inline def setCredentials(value: Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[ExtraInfo]
     }
     
-    extension [Self <: ExtraInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtraInfo] (val x: Self) extends AnyVal {
       
       inline def setExtraInfo(value: typings.hapiAuthJwt2.mod.ExtraInfo): Self = StObject.set(x, "extraInfo", value.asInstanceOf[js.Any])
       

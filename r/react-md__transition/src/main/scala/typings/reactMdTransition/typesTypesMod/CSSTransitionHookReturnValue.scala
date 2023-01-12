@@ -87,7 +87,8 @@ object CSSTransitionHookReturnValue {
     __obj.asInstanceOf[CSSTransitionHookReturnValue[E]]
   }
   
-  extension [Self <: CSSTransitionHookReturnValue[?], E /* <: HTMLElement */](x: Self & CSSTransitionHookReturnValue[E]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSTransitionHookReturnValue[?], E /* <: HTMLElement */] (val x: Self & CSSTransitionHookReturnValue[E]) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

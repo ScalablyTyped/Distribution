@@ -63,7 +63,8 @@ object CodeCoverage {
     __obj.asInstanceOf[CodeCoverage]
   }
   
-  extension [Self <: CodeCoverage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeCoverage] (val x: Self) extends AnyVal {
     
     inline def setBranchCoveragePercentage(value: Percentage): Self = StObject.set(x, "branchCoveragePercentage", value.asInstanceOf[js.Any])
     

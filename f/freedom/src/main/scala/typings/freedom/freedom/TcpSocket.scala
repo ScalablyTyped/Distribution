@@ -24,7 +24,8 @@ object TcpSocket {
       __obj.asInstanceOf[ConnectInfo]
     }
     
-    extension [Self <: ConnectInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectInfo] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object TcpSocket {
       __obj.asInstanceOf[DisconnectInfo]
     }
     
-    extension [Self <: DisconnectInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisconnectInfo] (val x: Self) extends AnyVal {
       
       inline def setErrcode(value: String): Self = StObject.set(x, "errcode", value.asInstanceOf[js.Any])
       
@@ -66,7 +68,8 @@ object TcpSocket {
       __obj.asInstanceOf[ReadInfo]
     }
     
-    extension [Self <: ReadInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadInfo] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -131,7 +134,8 @@ object TcpSocket {
       __obj.asInstanceOf[SocketInfo]
     }
     
-    extension [Self <: SocketInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketInfo] (val x: Self) extends AnyVal {
       
       inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
       
@@ -164,7 +168,8 @@ object TcpSocket {
       __obj.asInstanceOf[WriteInfo]
     }
     
-    extension [Self <: WriteInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteInfo] (val x: Self) extends AnyVal {
       
       inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
     }

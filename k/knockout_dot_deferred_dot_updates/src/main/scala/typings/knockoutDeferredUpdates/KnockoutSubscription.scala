@@ -15,7 +15,8 @@ object KnockoutSubscription {
     __obj.asInstanceOf[KnockoutSubscription]
   }
   
-  extension [Self <: KnockoutSubscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutSubscription] (val x: Self) extends AnyVal {
     
     inline def setDeferUpdates(value: Boolean): Self = StObject.set(x, "deferUpdates", value.asInstanceOf[js.Any])
   }

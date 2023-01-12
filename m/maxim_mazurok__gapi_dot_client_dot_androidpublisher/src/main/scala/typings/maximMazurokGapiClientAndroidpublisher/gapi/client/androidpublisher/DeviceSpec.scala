@@ -22,7 +22,8 @@ object DeviceSpec {
     __obj.asInstanceOf[DeviceSpec]
   }
   
-  extension [Self <: DeviceSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceSpec] (val x: Self) extends AnyVal {
     
     inline def setScreenDensity(value: Double): Self = StObject.set(x, "screenDensity", value.asInstanceOf[js.Any])
     

@@ -98,7 +98,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[StartSetup]
     }
     
-    extension [Self <: StartSetup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartSetup] (val x: Self) extends AnyVal {
       
       inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[StopSetup]
     }
     
-    extension [Self <: StopSetup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StopSetup] (val x: Self) extends AnyVal {
       
       inline def setBusytone(value: String): Self = StObject.set(x, "busytone", value.asInstanceOf[js.Any])
       

@@ -41,7 +41,8 @@ object IntersectionObserverEntryInit {
     __obj.asInstanceOf[IntersectionObserverEntryInit]
   }
   
-  extension [Self <: IntersectionObserverEntryInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntersectionObserverEntryInit] (val x: Self) extends AnyVal {
     
     inline def setBoundingClientRect(value: DOMRectInit): Self = StObject.set(x, "boundingClientRect", value.asInstanceOf[js.Any])
     

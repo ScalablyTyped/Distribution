@@ -28,7 +28,8 @@ object AnalysisEdgeNGramTokenizer {
     __obj.asInstanceOf[AnalysisEdgeNGramTokenizer]
   }
   
-  extension [Self <: AnalysisEdgeNGramTokenizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisEdgeNGramTokenizer] (val x: Self) extends AnyVal {
     
     inline def setCustom_token_chars(value: String): Self = StObject.set(x, "custom_token_chars", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object GoogleCloudDialogflowCxV3ResponseMessageMixedAudio {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3ResponseMessageMixedAudio]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3ResponseMessageMixedAudio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3ResponseMessageMixedAudio] (val x: Self) extends AnyVal {
     
     inline def setSegments(value: js.Array[GoogleCloudDialogflowCxV3ResponseMessageMixedAudioSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     

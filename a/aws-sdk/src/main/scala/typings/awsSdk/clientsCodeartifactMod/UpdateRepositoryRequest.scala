@@ -38,7 +38,8 @@ object UpdateRepositoryRequest {
     __obj.asInstanceOf[UpdateRepositoryRequest]
   }
   
-  extension [Self <: UpdateRepositoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRepositoryRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

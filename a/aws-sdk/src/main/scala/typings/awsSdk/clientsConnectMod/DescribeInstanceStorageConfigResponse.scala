@@ -18,7 +18,8 @@ object DescribeInstanceStorageConfigResponse {
     __obj.asInstanceOf[DescribeInstanceStorageConfigResponse]
   }
   
-  extension [Self <: DescribeInstanceStorageConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInstanceStorageConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setStorageConfig(value: InstanceStorageConfig): Self = StObject.set(x, "StorageConfig", value.asInstanceOf[js.Any])
     

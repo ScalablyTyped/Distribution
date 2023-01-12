@@ -18,7 +18,8 @@ object QueryStringConditionConfig {
     __obj.asInstanceOf[QueryStringConditionConfig]
   }
   
-  extension [Self <: QueryStringConditionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryStringConditionConfig] (val x: Self) extends AnyVal {
     
     inline def setValues(value: QueryStringKeyValuePairList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     

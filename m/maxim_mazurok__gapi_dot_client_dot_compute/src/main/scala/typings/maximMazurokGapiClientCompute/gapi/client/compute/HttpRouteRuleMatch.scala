@@ -58,7 +58,8 @@ object HttpRouteRuleMatch {
     __obj.asInstanceOf[HttpRouteRuleMatch]
   }
   
-  extension [Self <: HttpRouteRuleMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpRouteRuleMatch] (val x: Self) extends AnyVal {
     
     inline def setFullPathMatch(value: String): Self = StObject.set(x, "fullPathMatch", value.asInstanceOf[js.Any])
     

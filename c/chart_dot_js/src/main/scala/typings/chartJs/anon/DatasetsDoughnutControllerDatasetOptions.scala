@@ -16,7 +16,8 @@ object DatasetsDoughnutControllerDatasetOptions {
     __obj.asInstanceOf[DatasetsDoughnutControllerDatasetOptions]
   }
   
-  extension [Self <: DatasetsDoughnutControllerDatasetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetsDoughnutControllerDatasetOptions] (val x: Self) extends AnyVal {
     
     inline def setDatasets(value: DoughnutControllerDatasetOptions): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,8 @@ object ListNodesResponse {
     __obj.asInstanceOf[ListNodesResponse]
   }
   
-  extension [Self <: ListNodesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNodesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

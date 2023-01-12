@@ -29,7 +29,8 @@ object CertificateStore {
     __obj.asInstanceOf[CertificateStore]
   }
   
-  extension [Self <: CertificateStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateStore] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Certificate => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

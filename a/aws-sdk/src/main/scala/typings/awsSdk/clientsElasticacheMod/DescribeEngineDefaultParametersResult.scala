@@ -15,7 +15,8 @@ object DescribeEngineDefaultParametersResult {
     __obj.asInstanceOf[DescribeEngineDefaultParametersResult]
   }
   
-  extension [Self <: DescribeEngineDefaultParametersResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEngineDefaultParametersResult] (val x: Self) extends AnyVal {
     
     inline def setEngineDefaults(value: EngineDefaults): Self = StObject.set(x, "EngineDefaults", value.asInstanceOf[js.Any])
     

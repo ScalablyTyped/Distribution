@@ -19,7 +19,8 @@ object RevertClientResponse {
     __obj.asInstanceOf[RevertClientResponse]
   }
   
-  extension [Self <: RevertClientResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevertClientResponse] (val x: Self) extends AnyVal {
     
     inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

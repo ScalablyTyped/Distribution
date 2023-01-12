@@ -20,7 +20,8 @@ object model {
   @js.native
   def apply(options: model): _model = js.native
   
-  extension [Self <: model](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: model] (val x: Self) extends AnyVal {
     
     inline def setEffects(value: Any): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     

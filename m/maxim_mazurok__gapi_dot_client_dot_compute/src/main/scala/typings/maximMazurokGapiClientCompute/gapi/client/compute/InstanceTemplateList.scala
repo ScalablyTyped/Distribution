@@ -35,7 +35,8 @@ object InstanceTemplateList {
     __obj.asInstanceOf[InstanceTemplateList]
   }
   
-  extension [Self <: InstanceTemplateList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceTemplateList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

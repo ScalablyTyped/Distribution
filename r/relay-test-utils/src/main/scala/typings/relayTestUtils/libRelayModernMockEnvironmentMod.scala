@@ -35,7 +35,8 @@ object libRelayModernMockEnvironmentMod {
       __obj.asInstanceOf[MockEnvironment]
     }
     
-    extension [Self <: MockEnvironment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockEnvironment] (val x: Self) extends AnyVal {
       
       inline def setMock(value: MockFunctions): Self = StObject.set(x, "mock", value.asInstanceOf[js.Any])
       

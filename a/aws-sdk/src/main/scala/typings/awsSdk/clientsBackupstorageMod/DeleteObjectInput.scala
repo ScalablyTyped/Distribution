@@ -23,7 +23,8 @@ object DeleteObjectInput {
     __obj.asInstanceOf[DeleteObjectInput]
   }
   
-  extension [Self <: DeleteObjectInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteObjectInput] (val x: Self) extends AnyVal {
     
     inline def setBackupJobId(value: String): Self = StObject.set(x, "BackupJobId", value.asInstanceOf[js.Any])
     

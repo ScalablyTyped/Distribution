@@ -15,7 +15,8 @@ object GeoChartSelection {
     __obj.asInstanceOf[GeoChartSelection]
   }
   
-  extension [Self <: GeoChartSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoChartSelection] (val x: Self) extends AnyVal {
     
     inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
   }

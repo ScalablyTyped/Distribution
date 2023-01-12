@@ -18,7 +18,8 @@ object BatchGetCrawlersRequest {
     __obj.asInstanceOf[BatchGetCrawlersRequest]
   }
   
-  extension [Self <: BatchGetCrawlersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetCrawlersRequest] (val x: Self) extends AnyVal {
     
     inline def setCrawlerNames(value: CrawlerNameList): Self = StObject.set(x, "CrawlerNames", value.asInstanceOf[js.Any])
     

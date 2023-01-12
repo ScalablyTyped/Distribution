@@ -19,7 +19,8 @@ object Marked {
     __obj.asInstanceOf[Marked]
   }
   
-  extension [Self <: Marked](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Marked] (val x: Self) extends AnyVal {
     
     inline def setMarked(value: Boolean): Self = StObject.set(x, "Marked", value.asInstanceOf[js.Any])
     

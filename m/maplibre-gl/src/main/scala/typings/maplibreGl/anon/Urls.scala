@@ -20,7 +20,8 @@ object Urls {
     __obj.asInstanceOf[Urls]
   }
   
-  extension [Self <: Urls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Urls] (val x: Self) extends AnyVal {
     
     inline def setCoordinates(value: typings.maplibreGl.mod.Coordinates): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     

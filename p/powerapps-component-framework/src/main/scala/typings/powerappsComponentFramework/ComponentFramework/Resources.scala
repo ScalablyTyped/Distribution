@@ -33,7 +33,8 @@ object Resources {
     __obj.asInstanceOf[Resources]
   }
   
-  extension [Self <: Resources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resources] (val x: Self) extends AnyVal {
     
     inline def setGetResource(value: (String, js.Function1[/* data */ String, Unit], js.Function0[Unit]) => Unit): Self = StObject.set(x, "getResource", js.Any.fromFunction3(value))
     

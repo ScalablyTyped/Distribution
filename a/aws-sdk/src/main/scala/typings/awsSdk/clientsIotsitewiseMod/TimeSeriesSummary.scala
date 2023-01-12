@@ -58,7 +58,8 @@ object TimeSeriesSummary {
     __obj.asInstanceOf[TimeSeriesSummary]
   }
   
-  extension [Self <: TimeSeriesSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeSeriesSummary] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: PropertyAlias): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

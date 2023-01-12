@@ -51,7 +51,8 @@ object PrintCopiesOptionDetails {
     __obj.asInstanceOf[PrintCopiesOptionDetails]
   }
   
-  extension [Self <: PrintCopiesOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintCopiesOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     

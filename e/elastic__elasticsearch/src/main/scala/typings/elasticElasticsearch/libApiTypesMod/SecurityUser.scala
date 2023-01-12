@@ -27,7 +27,8 @@ object SecurityUser {
     __obj.asInstanceOf[SecurityUser]
   }
   
-  extension [Self <: SecurityUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityUser] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

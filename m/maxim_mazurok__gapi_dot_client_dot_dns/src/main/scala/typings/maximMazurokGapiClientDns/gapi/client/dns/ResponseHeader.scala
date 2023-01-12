@@ -16,7 +16,8 @@ object ResponseHeader {
     __obj.asInstanceOf[ResponseHeader]
   }
   
-  extension [Self <: ResponseHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseHeader] (val x: Self) extends AnyVal {
     
     inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     

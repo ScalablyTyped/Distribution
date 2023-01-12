@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[AdjustCfgdimValuesMapDimV]
     }
     
-    extension [Self <: AdjustCfgdimValuesMapDimV](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdjustCfgdimValuesMapDimV] (val x: Self) extends AnyVal {
       
       inline def setAdjustNames(value: js.Array[String]): Self = StObject.set(x, "adjustNames", value.asInstanceOf[js.Any])
       

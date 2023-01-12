@@ -62,7 +62,8 @@ object DeploymentQueryParameters {
     __obj.asInstanceOf[DeploymentQueryParameters]
   }
   
-  extension [Self <: DeploymentQueryParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentQueryParameters] (val x: Self) extends AnyVal {
     
     inline def setArtifactSourceId(value: String): Self = StObject.set(x, "artifactSourceId", value.asInstanceOf[js.Any])
     

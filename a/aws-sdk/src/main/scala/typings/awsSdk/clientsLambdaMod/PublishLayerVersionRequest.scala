@@ -43,7 +43,8 @@ object PublishLayerVersionRequest {
     __obj.asInstanceOf[PublishLayerVersionRequest]
   }
   
-  extension [Self <: PublishLayerVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishLayerVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setCompatibleArchitectures(value: CompatibleArchitectures): Self = StObject.set(x, "CompatibleArchitectures", value.asInstanceOf[js.Any])
     

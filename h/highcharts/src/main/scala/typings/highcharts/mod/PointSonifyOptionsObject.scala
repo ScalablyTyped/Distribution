@@ -41,7 +41,8 @@ object PointSonifyOptionsObject {
     __obj.asInstanceOf[PointSonifyOptionsObject]
   }
   
-  extension [Self <: PointSonifyOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointSonifyOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setDataExtremes(value: js.Object): Self = StObject.set(x, "dataExtremes", value.asInstanceOf[js.Any])
     

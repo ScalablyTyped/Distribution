@@ -61,7 +61,8 @@ object BOOLQUERY {
     __obj.asInstanceOf[BOOLQUERY]
   }
   
-  extension [Self <: BOOLQUERY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BOOLQUERY] (val x: Self) extends AnyVal {
     
     inline def setBOOL_QUERY(value: `6`): Self = StObject.set(x, "BOOL_QUERY", value.asInstanceOf[js.Any])
     

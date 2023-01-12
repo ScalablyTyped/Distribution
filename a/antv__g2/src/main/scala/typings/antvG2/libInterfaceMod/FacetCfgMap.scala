@@ -50,7 +50,8 @@ object FacetCfgMap {
     __obj.asInstanceOf[FacetCfgMap]
   }
   
-  extension [Self <: FacetCfgMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FacetCfgMap] (val x: Self) extends AnyVal {
     
     inline def setCircle(value: CircleCfg): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     

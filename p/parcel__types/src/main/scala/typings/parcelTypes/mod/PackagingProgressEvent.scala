@@ -24,7 +24,8 @@ object PackagingProgressEvent {
     __obj.asInstanceOf[PackagingProgressEvent]
   }
   
-  extension [Self <: PackagingProgressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackagingProgressEvent] (val x: Self) extends AnyVal {
     
     inline def setBundle(value: NamedBundle): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
     

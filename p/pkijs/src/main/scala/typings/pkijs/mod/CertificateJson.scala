@@ -58,7 +58,8 @@ object CertificateJson {
     __obj.asInstanceOf[CertificateJson]
   }
   
-  extension [Self <: CertificateJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateJson] (val x: Self) extends AnyVal {
     
     inline def setExtensions(value: js.Array[ExtensionJson]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     

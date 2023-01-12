@@ -20,7 +20,8 @@ object DelObjectOptions {
     __obj.asInstanceOf[DelObjectOptions]
   }
   
-  extension [Self <: DelObjectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DelObjectOptions] (val x: Self) extends AnyVal {
     
     inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object TableRowData {
     __obj.asInstanceOf[TableRowData]
   }
   
-  extension [Self <: TableRowData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableRowData] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

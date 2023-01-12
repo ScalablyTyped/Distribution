@@ -30,7 +30,8 @@ object ChartDataLabelFormatUpdateData {
     __obj.asInstanceOf[ChartDataLabelFormatUpdateData]
   }
   
-  extension [Self <: ChartDataLabelFormatUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartDataLabelFormatUpdateData] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: ChartBorderUpdateData): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

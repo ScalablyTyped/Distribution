@@ -29,7 +29,8 @@ object SelectMenuClasses {
     __obj.asInstanceOf[SelectMenuClasses]
   }
   
-  extension [Self <: SelectMenuClasses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectMenuClasses] (val x: Self) extends AnyVal {
     
     inline def `setUi-selectmenu-button`(value: String): Self = StObject.set(x, "ui-selectmenu-button", value.asInstanceOf[js.Any])
     

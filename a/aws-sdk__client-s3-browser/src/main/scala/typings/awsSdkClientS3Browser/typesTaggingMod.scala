@@ -22,7 +22,8 @@ object typesTaggingMod {
       __obj.asInstanceOf[Tagging]
     }
     
-    extension [Self <: Tagging](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tagging] (val x: Self) extends AnyVal {
       
       inline def setTagSet(value: js.Array[Tag] | js.Iterable[Tag]): Self = StObject.set(x, "TagSet", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object typesTaggingMod {
       __obj.asInstanceOf[UnmarshalledTagging]
     }
     
-    extension [Self <: UnmarshalledTagging](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledTagging] (val x: Self) extends AnyVal {
       
       inline def setTagSet(value: js.Array[UnmarshalledTag]): Self = StObject.set(x, "TagSet", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object ForceRelative {
     __obj.asInstanceOf[ForceRelative]
   }
   
-  extension [Self <: ForceRelative](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForceRelative] (val x: Self) extends AnyVal {
     
     inline def setForceRelative(value: Boolean): Self = StObject.set(x, "forceRelative", value.asInstanceOf[js.Any])
     

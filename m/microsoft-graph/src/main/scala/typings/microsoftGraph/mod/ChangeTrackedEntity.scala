@@ -30,7 +30,8 @@ object ChangeTrackedEntity {
     __obj.asInstanceOf[ChangeTrackedEntity]
   }
   
-  extension [Self <: ChangeTrackedEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeTrackedEntity] (val x: Self) extends AnyVal {
     
     inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     

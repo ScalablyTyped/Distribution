@@ -123,7 +123,8 @@ object CreateFunctionRequest {
     __obj.asInstanceOf[CreateFunctionRequest]
   }
   
-  extension [Self <: CreateFunctionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFunctionRequest] (val x: Self) extends AnyVal {
     
     inline def setArchitectures(value: ArchitecturesList): Self = StObject.set(x, "Architectures", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object AwsApiGatewayEndpointConfiguration {
     __obj.asInstanceOf[AwsApiGatewayEndpointConfiguration]
   }
   
-  extension [Self <: AwsApiGatewayEndpointConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsApiGatewayEndpointConfiguration] (val x: Self) extends AnyVal {
     
     inline def setTypes(value: NonEmptyStringList): Self = StObject.set(x, "Types", value.asInstanceOf[js.Any])
     

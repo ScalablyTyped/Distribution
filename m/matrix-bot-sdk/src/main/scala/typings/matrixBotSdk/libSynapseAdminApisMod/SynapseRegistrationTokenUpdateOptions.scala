@@ -27,7 +27,8 @@ object SynapseRegistrationTokenUpdateOptions {
     __obj.asInstanceOf[SynapseRegistrationTokenUpdateOptions]
   }
   
-  extension [Self <: SynapseRegistrationTokenUpdateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SynapseRegistrationTokenUpdateOptions] (val x: Self) extends AnyVal {
     
     inline def setExpiry_time(value: Double): Self = StObject.set(x, "expiry_time", value.asInstanceOf[js.Any])
     

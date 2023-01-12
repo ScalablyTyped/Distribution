@@ -23,7 +23,8 @@ object TypeofBalance {
     __obj.asInstanceOf[TypeofBalance]
   }
   
-  extension [Self <: TypeofBalance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofBalance] (val x: Self) extends AnyVal {
     
     inline def setAvailable(value: Any): Self = StObject.set(x, "Available", value.asInstanceOf[js.Any])
     

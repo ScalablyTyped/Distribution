@@ -18,7 +18,8 @@ object SaslAuthenticationResponse {
     __obj.asInstanceOf[SaslAuthenticationResponse[ParseResult]]
   }
   
-  extension [Self <: SaslAuthenticationResponse[?], ParseResult](x: Self & SaslAuthenticationResponse[ParseResult]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaslAuthenticationResponse[?], ParseResult] (val x: Self & SaslAuthenticationResponse[ParseResult]) extends AnyVal {
     
     inline def setDecode(value: Buffer => Buffer | js.Promise[Buffer]): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     

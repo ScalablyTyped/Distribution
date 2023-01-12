@@ -27,7 +27,8 @@ object CustomDataValidation {
     __obj.asInstanceOf[CustomDataValidation]
   }
   
-  extension [Self <: CustomDataValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomDataValidation] (val x: Self) extends AnyVal {
     
     inline def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
   }

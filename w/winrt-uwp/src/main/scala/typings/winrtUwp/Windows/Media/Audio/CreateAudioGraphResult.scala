@@ -20,7 +20,8 @@ object CreateAudioGraphResult {
     __obj.asInstanceOf[CreateAudioGraphResult]
   }
   
-  extension [Self <: CreateAudioGraphResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAudioGraphResult] (val x: Self) extends AnyVal {
     
     inline def setGraph(value: AudioGraph): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
     

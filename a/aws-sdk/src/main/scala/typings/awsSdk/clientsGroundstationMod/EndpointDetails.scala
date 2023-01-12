@@ -23,7 +23,8 @@ object EndpointDetails {
     __obj.asInstanceOf[EndpointDetails]
   }
   
-  extension [Self <: EndpointDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointDetails] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: DataflowEndpoint): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     

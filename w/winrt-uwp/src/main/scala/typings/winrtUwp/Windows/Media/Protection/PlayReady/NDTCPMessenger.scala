@@ -66,7 +66,8 @@ object NDTCPMessenger {
     __obj.asInstanceOf[NDTCPMessenger]
   }
   
-  extension [Self <: NDTCPMessenger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NDTCPMessenger] (val x: Self) extends AnyVal {
     
     inline def setSendLicenseFetchRequestAsync(value: (js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult]): Self = StObject.set(x, "sendLicenseFetchRequestAsync", js.Any.fromFunction2(value))
     

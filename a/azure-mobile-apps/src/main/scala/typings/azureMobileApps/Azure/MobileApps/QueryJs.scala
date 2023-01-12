@@ -43,7 +43,8 @@ object QueryJs {
     __obj.asInstanceOf[QueryJs]
   }
   
-  extension [Self <: QueryJs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryJs] (val x: Self) extends AnyVal {
     
     inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

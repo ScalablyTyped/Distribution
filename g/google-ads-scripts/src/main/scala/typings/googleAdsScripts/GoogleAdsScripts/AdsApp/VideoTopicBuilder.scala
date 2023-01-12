@@ -36,7 +36,8 @@ object VideoTopicBuilder {
     __obj.asInstanceOf[VideoTopicBuilder]
   }
   
-  extension [Self <: VideoTopicBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoTopicBuilder] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: () => ExcludedVideoTopicOperation): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))
     

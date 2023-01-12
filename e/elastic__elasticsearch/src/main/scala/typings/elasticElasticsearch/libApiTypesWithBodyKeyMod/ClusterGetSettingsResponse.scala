@@ -20,7 +20,8 @@ object ClusterGetSettingsResponse {
     __obj.asInstanceOf[ClusterGetSettingsResponse]
   }
   
-  extension [Self <: ClusterGetSettingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterGetSettingsResponse] (val x: Self) extends AnyVal {
     
     inline def setDefaults(value: Record[String, Any]): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object PartialRecordBinaryNamest {
     __obj.asInstanceOf[PartialRecordBinaryNamest]
   }
   
-  extension [Self <: PartialRecordBinaryNamest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRecordBinaryNamest] (val x: Self) extends AnyVal {
     
     inline def setAapt(value: String): Self = StObject.set(x, "aapt", value.asInstanceOf[js.Any])
     

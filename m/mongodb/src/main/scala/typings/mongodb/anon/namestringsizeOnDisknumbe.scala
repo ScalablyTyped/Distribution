@@ -23,7 +23,8 @@ object namestringsizeOnDisknumbe {
     __obj.asInstanceOf[namestringsizeOnDisknumbe]
   }
   
-  extension [Self <: namestringsizeOnDisknumbe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: namestringsizeOnDisknumbe] (val x: Self) extends AnyVal {
     
     inline def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     

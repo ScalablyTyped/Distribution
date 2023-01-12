@@ -35,7 +35,8 @@ object GetRightsizingRecommendationRequest {
     __obj.asInstanceOf[GetRightsizingRecommendationRequest]
   }
   
-  extension [Self <: GetRightsizingRecommendationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRightsizingRecommendationRequest] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: RightsizingRecommendationConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     

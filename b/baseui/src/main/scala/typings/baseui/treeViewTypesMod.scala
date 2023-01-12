@@ -36,7 +36,8 @@ object treeViewTypesMod {
       __obj.asInstanceOf[SharedStyleProps]
     }
     
-    extension [Self <: SharedStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedStyleProps] (val x: Self) extends AnyVal {
       
       inline def set$hasChildren(value: Boolean): Self = StObject.set(x, "$hasChildren", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object treeViewTypesMod {
       __obj.asInstanceOf[StatefulContainerProps]
     }
     
-    extension [Self <: StatefulContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulContainerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: TreeViewProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
@@ -88,7 +90,8 @@ object treeViewTypesMod {
       __obj.asInstanceOf[TreeLabelOverrides]
     }
     
-    extension [Self <: TreeLabelOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeLabelOverrides] (val x: Self) extends AnyVal {
       
       inline def setCollapseIcon(value: Override[Any]): Self = StObject.set(x, "CollapseIcon", value.asInstanceOf[js.Any])
       
@@ -143,7 +146,8 @@ object treeViewTypesMod {
       __obj.asInstanceOf[TreeLabelProps]
     }
     
-    extension [Self <: TreeLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeLabelProps] (val x: Self) extends AnyVal {
       
       inline def setHasChildren(value: Boolean): Self = StObject.set(x, "hasChildren", value.asInstanceOf[js.Any])
       
@@ -192,7 +196,8 @@ object treeViewTypesMod {
       __obj.asInstanceOf[TreeNodeData[T]]
     }
     
-    extension [Self <: TreeNodeData[?], T](x: Self & TreeNodeData[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeNodeData[?], T] (val x: Self & TreeNodeData[T]) extends AnyVal {
       
       inline def setChildren(value: js.Array[TreeNodeData[Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -260,7 +265,8 @@ object treeViewTypesMod {
       __obj.asInstanceOf[TreeNodeProps]
     }
     
-    extension [Self <: TreeNodeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeNodeProps] (val x: Self) extends AnyVal {
       
       inline def setAddRef(value: (TreeNodeId, Ref[HTMLLIElement]) => Any): Self = StObject.set(x, "addRef", js.Any.fromFunction2(value))
       
@@ -327,7 +333,8 @@ object treeViewTypesMod {
       __obj.asInstanceOf[TreeViewOverrides]
     }
     
-    extension [Self <: TreeViewOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeViewOverrides] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: Override[Any]): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
@@ -370,7 +377,8 @@ object treeViewTypesMod {
       __obj.asInstanceOf[TreeViewProps]
     }
     
-    extension [Self <: TreeViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeViewProps] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[TreeNodeData[Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[ExportOptions]
     }
     
-    extension [Self <: ExportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object mod {
       __obj.asInstanceOf[GenerateOptions]
     }
     
-    extension [Self <: GenerateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -94,7 +96,8 @@ object mod {
       __obj.asInstanceOf[ImportOptions]
     }
     
-    extension [Self <: ImportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportOptions] (val x: Self) extends AnyVal {
       
       inline def setPem(value: String): Self = StObject.set(x, "pem", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object mod {
       __obj.asInstanceOf[Jwk]
     }
     
-    extension [Self <: Jwk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Jwk] (val x: Self) extends AnyVal {
       
       inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       
@@ -165,7 +169,8 @@ object mod {
       __obj.asInstanceOf[RsaKeys]
     }
     
-    extension [Self <: RsaKeys](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RsaKeys] (val x: Self) extends AnyVal {
       
       inline def setPrivate(value: String): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       

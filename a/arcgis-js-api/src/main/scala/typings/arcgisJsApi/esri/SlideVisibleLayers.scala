@@ -29,7 +29,8 @@ object SlideVisibleLayers {
     __obj.asInstanceOf[SlideVisibleLayers]
   }
   
-  extension [Self <: SlideVisibleLayers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideVisibleLayers] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

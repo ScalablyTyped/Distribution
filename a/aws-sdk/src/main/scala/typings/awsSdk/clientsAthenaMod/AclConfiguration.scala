@@ -18,7 +18,8 @@ object AclConfiguration {
     __obj.asInstanceOf[AclConfiguration]
   }
   
-  extension [Self <: AclConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AclConfiguration] (val x: Self) extends AnyVal {
     
     inline def setS3AclOption(value: S3AclOption): Self = StObject.set(x, "S3AclOption", value.asInstanceOf[js.Any])
   }

@@ -29,7 +29,8 @@ object libPickAttrsMod {
       __obj.asInstanceOf[PickConfig]
     }
     
-    extension [Self <: PickConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickConfig] (val x: Self) extends AnyVal {
       
       inline def setAria(value: Boolean): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
       

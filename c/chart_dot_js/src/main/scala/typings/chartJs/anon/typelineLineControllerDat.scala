@@ -216,7 +216,8 @@ object typelineLineControllerDat {
     __obj.asInstanceOf[typelineLineControllerDat]
   }
   
-  extension [Self <: typelineLineControllerDat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typelineLineControllerDat] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: `false` | AnimationSpeclineonProgre): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

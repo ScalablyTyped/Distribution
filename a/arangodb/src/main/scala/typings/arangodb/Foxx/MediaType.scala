@@ -23,7 +23,8 @@ object MediaType {
     __obj.asInstanceOf[MediaType]
   }
   
-  extension [Self <: MediaType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaType] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: Charset): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

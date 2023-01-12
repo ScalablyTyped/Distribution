@@ -26,7 +26,8 @@ object TrainingConfig {
     __obj.asInstanceOf[TrainingConfig]
   }
   
-  extension [Self <: TrainingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrainingConfig] (val x: Self) extends AnyVal {
     
     inline def setLoss(value: String | js.Array[String] | StringDictionary[String]): Self = StObject.set(x, "loss", value.asInstanceOf[js.Any])
     

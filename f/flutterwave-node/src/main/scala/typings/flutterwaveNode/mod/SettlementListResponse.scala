@@ -18,7 +18,8 @@ object SettlementListResponse {
     __obj.asInstanceOf[SettlementListResponse]
   }
   
-  extension [Self <: SettlementListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettlementListResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: Info): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

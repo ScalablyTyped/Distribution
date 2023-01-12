@@ -20,7 +20,8 @@ object VertexAttribute {
     __obj.asInstanceOf[VertexAttribute]
   }
   
-  extension [Self <: VertexAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VertexAttribute] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

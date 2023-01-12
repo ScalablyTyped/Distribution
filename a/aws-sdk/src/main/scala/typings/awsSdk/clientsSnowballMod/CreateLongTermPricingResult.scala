@@ -18,7 +18,8 @@ object CreateLongTermPricingResult {
     __obj.asInstanceOf[CreateLongTermPricingResult]
   }
   
-  extension [Self <: CreateLongTermPricingResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLongTermPricingResult] (val x: Self) extends AnyVal {
     
     inline def setLongTermPricingId(value: LongTermPricingId): Self = StObject.set(x, "LongTermPricingId", value.asInstanceOf[js.Any])
     

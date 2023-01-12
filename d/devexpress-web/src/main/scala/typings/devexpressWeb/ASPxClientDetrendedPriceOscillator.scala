@@ -36,7 +36,8 @@ object ASPxClientDetrendedPriceOscillator {
     __obj.asInstanceOf[ASPxClientDetrendedPriceOscillator]
   }
   
-  extension [Self <: ASPxClientDetrendedPriceOscillator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDetrendedPriceOscillator] (val x: Self) extends AnyVal {
     
     inline def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
     

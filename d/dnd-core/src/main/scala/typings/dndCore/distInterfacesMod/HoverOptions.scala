@@ -15,7 +15,8 @@ object HoverOptions {
     __obj.asInstanceOf[HoverOptions]
   }
   
-  extension [Self <: HoverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoverOptions] (val x: Self) extends AnyVal {
     
     inline def setClientOffset(value: XYCoord): Self = StObject.set(x, "clientOffset", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object QueryExecutionContext {
     __obj.asInstanceOf[QueryExecutionContext]
   }
   
-  extension [Self <: QueryExecutionContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryExecutionContext] (val x: Self) extends AnyVal {
     
     inline def setCatalog(value: CatalogNameString): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     

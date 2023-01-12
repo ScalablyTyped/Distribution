@@ -25,7 +25,8 @@ object IngredientManufacturer {
     __obj.asInstanceOf[IngredientManufacturer]
   }
   
-  extension [Self <: IngredientManufacturer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngredientManufacturer] (val x: Self) extends AnyVal {
     
     inline def setManufacturer(value: Reference): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     

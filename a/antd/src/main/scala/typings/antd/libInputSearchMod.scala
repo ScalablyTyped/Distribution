@@ -49,7 +49,8 @@ object libInputSearchMod extends Shortcut {
       __obj.asInstanceOf[SearchProps]
     }
     
-    extension [Self <: SearchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchProps] (val x: Self) extends AnyVal {
       
       inline def setEnterButton(value: ReactNode): Self = StObject.set(x, "enterButton", value.asInstanceOf[js.Any])
       

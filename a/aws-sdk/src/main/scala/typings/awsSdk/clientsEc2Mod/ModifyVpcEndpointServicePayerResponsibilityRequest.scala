@@ -28,7 +28,8 @@ object ModifyVpcEndpointServicePayerResponsibilityRequest {
     __obj.asInstanceOf[ModifyVpcEndpointServicePayerResponsibilityRequest]
   }
   
-  extension [Self <: ModifyVpcEndpointServicePayerResponsibilityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyVpcEndpointServicePayerResponsibilityRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

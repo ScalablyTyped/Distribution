@@ -39,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Always[T]]
     }
     
-    extension [Self <: Always[?], T /* <: Node */](x: Self & Always[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Always[?], T /* <: Node */] (val x: Self & Always[T]) extends AnyVal {
       
       inline def setAlways(value: Boolean): Self = StObject.set(x, "always", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object anon {
       __obj.asInstanceOf[At[T]]
     }
     
-    extension [Self <: At[?], T /* <: Node */](x: Self & At[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: At[?], T /* <: Node */] (val x: Self & At[T]) extends AnyVal {
       
       inline def setAt(value: Location): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
       
@@ -145,7 +147,8 @@ object anon {
       __obj.asInstanceOf[Compare[T]]
     }
     
-    extension [Self <: Compare[?], T /* <: Node */](x: Self & Compare[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compare[?], T /* <: Node */] (val x: Self & Compare[T]) extends AnyVal {
       
       inline def setAt(value: Location): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
       
@@ -202,7 +205,8 @@ object anon {
       __obj.asInstanceOf[Hanging[T]]
     }
     
-    extension [Self <: Hanging[?], T /* <: Node */](x: Self & Hanging[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hanging[?], T /* <: Node */] (val x: Self & Hanging[T]) extends AnyVal {
       
       inline def setAt(value: Location): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
       
@@ -245,7 +249,8 @@ object anon {
       __obj.asInstanceOf[Match[T]]
     }
     
-    extension [Self <: Match[?], T /* <: Node */](x: Self & Match[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Match[?], T /* <: Node */] (val x: Self & Match[T]) extends AnyVal {
       
       inline def setAt(value: Location): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
       
@@ -286,7 +291,8 @@ object anon {
       __obj.asInstanceOf[Mode[T]]
     }
     
-    extension [Self <: Mode[?], T /* <: Node */](x: Self & Mode[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mode[?], T /* <: Node */] (val x: Self & Mode[T]) extends AnyVal {
       
       inline def setAt(value: Location): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
       
@@ -330,7 +336,8 @@ object anon {
       __obj.asInstanceOf[NewProperties]
     }
     
-    extension [Self <: NewProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewProperties] (val x: Self) extends AnyVal {
       
       inline def setNewProperties(value: Range): Self = StObject.set(x, "newProperties", value.asInstanceOf[js.Any])
       
@@ -358,7 +365,8 @@ object anon {
       __obj.asInstanceOf[Properties]
     }
     
-    extension [Self <: Properties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Properties] (val x: Self) extends AnyVal {
       
       inline def setNewProperties(value: Partial[Range]): Self = StObject.set(x, "newProperties", value.asInstanceOf[js.Any])
       
@@ -387,7 +395,8 @@ object anon {
       __obj.asInstanceOf[Split[T]]
     }
     
-    extension [Self <: Split[?], T /* <: Node */](x: Self & Split[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Split[?], T /* <: Node */] (val x: Self & Split[T]) extends AnyVal {
       
       inline def setAt(value: Location): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
       
@@ -431,7 +440,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setNewProperties(value: Null): Self = StObject.set(x, "newProperties", value.asInstanceOf[js.Any])
       

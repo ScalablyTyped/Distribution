@@ -35,7 +35,8 @@ object libPickerPopupMixinMod {
       __obj.asInstanceOf[Args]
     }
     
-    extension [Self <: Args](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
       
       inline def setGetContent(value: Any): Self = StObject.set(x, "getContent", value.asInstanceOf[js.Any])
       

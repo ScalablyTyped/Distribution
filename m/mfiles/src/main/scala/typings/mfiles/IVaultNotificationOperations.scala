@@ -22,7 +22,8 @@ object IVaultNotificationOperations {
     __obj.asInstanceOf[IVaultNotificationOperations]
   }
   
-  extension [Self <: IVaultNotificationOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultNotificationOperations] (val x: Self) extends AnyVal {
     
     inline def setSendCustomNotification(value: (IUserOrUserGroupIDs, Boolean, IStrings, Boolean, String, String) => Unit): Self = StObject.set(x, "SendCustomNotification", js.Any.fromFunction6(value))
   }

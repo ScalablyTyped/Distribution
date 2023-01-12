@@ -37,7 +37,8 @@ object AdaptiveMediaSourceDownloadCompletedEventArgs {
     __obj.asInstanceOf[AdaptiveMediaSourceDownloadCompletedEventArgs]
   }
   
-  extension [Self <: AdaptiveMediaSourceDownloadCompletedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdaptiveMediaSourceDownloadCompletedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHttpResponseMessage(value: HttpResponseMessage): Self = StObject.set(x, "httpResponseMessage", value.asInstanceOf[js.Any])
     

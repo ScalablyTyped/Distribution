@@ -144,7 +144,8 @@ object routerMod {
       __obj.asInstanceOf[Router]
     }
     
-    extension [Self <: Router](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Router] (val x: Self) extends AnyVal {
       
       inline def setDel(
         value: (/* path */ String, /* middlewares */ Middleware | Middlewares, /* all */ Middlewares) => Middleware

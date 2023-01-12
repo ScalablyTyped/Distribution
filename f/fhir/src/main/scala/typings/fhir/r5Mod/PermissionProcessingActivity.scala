@@ -31,7 +31,8 @@ object PermissionProcessingActivity {
     __obj.asInstanceOf[PermissionProcessingActivity]
   }
   
-  extension [Self <: PermissionProcessingActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionProcessingActivity] (val x: Self) extends AnyVal {
     
     inline def setPartyCodeableConcept(value: js.Array[CodeableConcept]): Self = StObject.set(x, "partyCodeableConcept", value.asInstanceOf[js.Any])
     

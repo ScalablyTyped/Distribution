@@ -77,7 +77,8 @@ object distHistogramIterationValueMod {
       __obj.asInstanceOf[HistogramIterationValue]
     }
     
-    extension [Self <: HistogramIterationValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HistogramIterationValue] (val x: Self) extends AnyVal {
       
       inline def setCountAddedInThisIterationStep(value: Double): Self = StObject.set(x, "countAddedInThisIterationStep", value.asInstanceOf[js.Any])
       

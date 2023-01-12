@@ -138,7 +138,8 @@ object DevEndpoint {
     __obj.asInstanceOf[DevEndpoint]
   }
   
-  extension [Self <: DevEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevEndpoint] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: MapValue): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
     

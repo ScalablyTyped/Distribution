@@ -23,7 +23,8 @@ object ASPxClientVerticalGridBatchEditRecordInsertingEventArgs {
     __obj.asInstanceOf[ASPxClientVerticalGridBatchEditRecordInsertingEventArgs]
   }
   
-  extension [Self <: ASPxClientVerticalGridBatchEditRecordInsertingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientVerticalGridBatchEditRecordInsertingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }

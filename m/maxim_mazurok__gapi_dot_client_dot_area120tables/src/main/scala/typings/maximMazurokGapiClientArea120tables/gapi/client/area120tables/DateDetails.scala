@@ -16,7 +16,8 @@ object DateDetails {
     __obj.asInstanceOf[DateDetails]
   }
   
-  extension [Self <: DateDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateDetails] (val x: Self) extends AnyVal {
     
     inline def setHasTime(value: Boolean): Self = StObject.set(x, "hasTime", value.asInstanceOf[js.Any])
     

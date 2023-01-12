@@ -21,7 +21,8 @@ object ValidationMapPortalLegacy {
     __obj.asInstanceOf[ValidationMapPortalLegacy]
   }
   
-  extension [Self <: ValidationMapPortalLegacy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationMapPortalLegacy] (val x: Self) extends AnyVal {
     
     inline def setBlueprintPortalClassName(
       value: (/* props */ StringDictionary[Any], blueprintPortalClassName, /* componentName */ String, /* location */ String, /* propFullName */ String) => js.UndefOr[js.Error]

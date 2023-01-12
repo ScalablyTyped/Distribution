@@ -15,7 +15,8 @@ object GetSegmentsResponse {
     __obj.asInstanceOf[GetSegmentsResponse]
   }
   
-  extension [Self <: GetSegmentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSegmentsResponse] (val x: Self) extends AnyVal {
     
     inline def setSegmentsResponse(value: SegmentsResponse): Self = StObject.set(x, "SegmentsResponse", value.asInstanceOf[js.Any])
   }

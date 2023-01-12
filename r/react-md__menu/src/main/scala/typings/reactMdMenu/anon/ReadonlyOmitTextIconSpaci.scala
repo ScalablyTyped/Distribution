@@ -30,7 +30,8 @@ object ReadonlyOmitTextIconSpaci {
     __obj.asInstanceOf[ReadonlyOmitTextIconSpaci]
   }
   
-  extension [Self <: ReadonlyOmitTextIconSpaci](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyOmitTextIconSpaci] (val x: Self) extends AnyVal {
     
     inline def setAboveClassName(value: String): Self = StObject.set(x, "aboveClassName", value.asInstanceOf[js.Any])
     

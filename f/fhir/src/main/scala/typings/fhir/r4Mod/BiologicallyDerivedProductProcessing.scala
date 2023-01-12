@@ -44,7 +44,8 @@ object BiologicallyDerivedProductProcessing {
     __obj.asInstanceOf[BiologicallyDerivedProductProcessing]
   }
   
-  extension [Self <: BiologicallyDerivedProductProcessing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BiologicallyDerivedProductProcessing] (val x: Self) extends AnyVal {
     
     inline def setAdditive(value: Reference): Self = StObject.set(x, "additive", value.asInstanceOf[js.Any])
     

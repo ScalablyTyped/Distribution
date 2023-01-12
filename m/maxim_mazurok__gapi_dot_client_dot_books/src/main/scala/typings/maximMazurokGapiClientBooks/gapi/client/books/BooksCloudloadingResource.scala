@@ -21,7 +21,8 @@ object BooksCloudloadingResource {
     __obj.asInstanceOf[BooksCloudloadingResource]
   }
   
-  extension [Self <: BooksCloudloadingResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BooksCloudloadingResource] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

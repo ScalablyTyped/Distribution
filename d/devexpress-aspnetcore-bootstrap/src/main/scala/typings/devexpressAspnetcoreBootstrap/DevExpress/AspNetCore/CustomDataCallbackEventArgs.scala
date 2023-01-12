@@ -17,7 +17,8 @@ object CustomDataCallbackEventArgs {
     __obj.asInstanceOf[CustomDataCallbackEventArgs]
   }
   
-  extension [Self <: CustomDataCallbackEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomDataCallbackEventArgs] (val x: Self) extends AnyVal {
     
     inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }

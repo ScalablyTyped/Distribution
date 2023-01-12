@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsDocSendMod extends Shortcut {
       __obj.asInstanceOf[DocSendProps]
     }
     
-    extension [Self <: DocSendProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocSendProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

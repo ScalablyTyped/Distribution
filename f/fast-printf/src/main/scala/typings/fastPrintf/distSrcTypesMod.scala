@@ -43,7 +43,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[LiteralToken]
     }
     
-    extension [Self <: LiteralToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LiteralToken] (val x: Self) extends AnyVal {
       
       inline def setLiteral(value: String): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[PlaceholderToken]
     }
     
-    extension [Self <: PlaceholderToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlaceholderToken] (val x: Self) extends AnyVal {
       
       inline def setConversion(value: String): Self = StObject.set(x, "conversion", value.asInstanceOf[js.Any])
       

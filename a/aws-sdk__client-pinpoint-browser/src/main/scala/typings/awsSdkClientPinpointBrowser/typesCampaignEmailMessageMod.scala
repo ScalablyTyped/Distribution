@@ -35,7 +35,8 @@ object typesCampaignEmailMessageMod {
       __obj.asInstanceOf[CampaignEmailMessage]
     }
     
-    extension [Self <: CampaignEmailMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CampaignEmailMessage] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       

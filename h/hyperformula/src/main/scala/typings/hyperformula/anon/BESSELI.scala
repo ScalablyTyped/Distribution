@@ -216,7 +216,8 @@ object BESSELI {
     __obj.asInstanceOf[BESSELI]
   }
   
-  extension [Self <: BESSELI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BESSELI] (val x: Self) extends AnyVal {
     
     inline def setBESSELI(value: `12`): Self = StObject.set(x, "BESSELI", value.asInstanceOf[js.Any])
     

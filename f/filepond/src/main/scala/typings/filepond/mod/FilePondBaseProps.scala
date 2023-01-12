@@ -173,7 +173,8 @@ object FilePondBaseProps {
     __obj.asInstanceOf[FilePondBaseProps]
   }
   
-  extension [Self <: FilePondBaseProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilePondBaseProps] (val x: Self) extends AnyVal {
     
     inline def setAllowBrowse(value: Boolean): Self = StObject.set(x, "allowBrowse", value.asInstanceOf[js.Any])
     

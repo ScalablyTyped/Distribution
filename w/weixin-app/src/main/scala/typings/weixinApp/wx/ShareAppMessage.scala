@@ -45,7 +45,8 @@ object ShareAppMessage {
     __obj.asInstanceOf[ShareAppMessage]
   }
   
-  extension [Self <: ShareAppMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareAppMessage] (val x: Self) extends AnyVal {
     
     inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     

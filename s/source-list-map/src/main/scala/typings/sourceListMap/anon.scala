@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setFile(value: Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Map]
     }
     
-    extension [Self <: Map](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
       
       inline def setMap(value: Mappings): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
@@ -71,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Mappings]
     }
     
-    extension [Self <: Mappings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mappings] (val x: Self) extends AnyVal {
       
       inline def setFile(value: Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -108,7 +111,8 @@ object anon {
       __obj.asInstanceOf[Sources]
     }
     
-    extension [Self <: Sources](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sources] (val x: Self) extends AnyVal {
       
       inline def setMappings(value: String): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object DocumentViewResponse {
     __obj.asInstanceOf[DocumentViewResponse[V, D]]
   }
   
-  extension [Self <: DocumentViewResponse[?, ?], V, D](x: Self & (DocumentViewResponse[V, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentViewResponse[?, ?], V, D] (val x: Self & (DocumentViewResponse[V, D])) extends AnyVal {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

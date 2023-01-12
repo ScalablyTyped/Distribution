@@ -28,7 +28,8 @@ object ToggleBulletedListCommand {
     __obj.asInstanceOf[ToggleBulletedListCommand]
   }
   
-  extension [Self <: ToggleBulletedListCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToggleBulletedListCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
     

@@ -220,7 +220,8 @@ object httpTestingMod {
       __obj.asInstanceOf[RequestMatch]
     }
     
-    extension [Self <: RequestMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestMatch] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -251,7 +252,8 @@ object httpTestingMod {
       __obj.asInstanceOf[TestRequestErrorOptions]
     }
     
-    extension [Self <: TestRequestErrorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestRequestErrorOptions] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: HttpHeaders | (StringDictionary[String | js.Array[String]])): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

@@ -58,7 +58,8 @@ object DescribeProgramResponse {
     __obj.asInstanceOf[DescribeProgramResponse]
   }
   
-  extension [Self <: DescribeProgramResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeProgramResponse] (val x: Self) extends AnyVal {
     
     inline def setAdBreaks(value: listOfAdBreak): Self = StObject.set(x, "AdBreaks", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object ASPxClientDashboardItemElementCustomColorEventArgs {
     __obj.asInstanceOf[ASPxClientDashboardItemElementCustomColorEventArgs]
   }
   
-  extension [Self <: ASPxClientDashboardItemElementCustomColorEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardItemElementCustomColorEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGetColor(value: () => String): Self = StObject.set(x, "GetColor", js.Any.fromFunction0(value))
     

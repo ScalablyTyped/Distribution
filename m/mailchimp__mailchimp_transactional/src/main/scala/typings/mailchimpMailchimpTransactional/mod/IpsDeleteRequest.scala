@@ -18,7 +18,8 @@ object IpsDeleteRequest {
     __obj.asInstanceOf[IpsDeleteRequest]
   }
   
-  extension [Self <: IpsDeleteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpsDeleteRequest] (val x: Self) extends AnyVal {
     
     inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
   }

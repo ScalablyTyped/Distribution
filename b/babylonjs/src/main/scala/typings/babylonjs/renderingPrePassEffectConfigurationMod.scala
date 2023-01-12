@@ -51,7 +51,8 @@ object renderingPrePassEffectConfigurationMod {
       __obj.asInstanceOf[PrePassEffectConfiguration]
     }
     
-    extension [Self <: PrePassEffectConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrePassEffectConfiguration] (val x: Self) extends AnyVal {
       
       inline def setCreatePostProcess(value: () => PostProcess): Self = StObject.set(x, "createPostProcess", js.Any.fromFunction0(value))
       

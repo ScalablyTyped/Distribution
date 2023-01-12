@@ -23,7 +23,8 @@ object DeleteStageRequest {
     __obj.asInstanceOf[DeleteStageRequest]
   }
   
-  extension [Self <: DeleteStageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteStageRequest] (val x: Self) extends AnyVal {
     
     inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     

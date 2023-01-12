@@ -24,7 +24,8 @@ object esComponentsScrollMaskScrollMaskMod {
       __obj.asInstanceOf[ScrollMaskProps]
     }
     
-    extension [Self <: ScrollMaskProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollMaskProps] (val x: Self) extends AnyVal {
       
       inline def setScrollTrackRef(value: RefObject[HTMLElement]): Self = StObject.set(x, "scrollTrackRef", value.asInstanceOf[js.Any])
     }

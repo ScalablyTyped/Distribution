@@ -15,7 +15,8 @@ object ToolbarHelper {
     __obj.asInstanceOf[ToolbarHelper]
   }
   
-  extension [Self <: ToolbarHelper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolbarHelper] (val x: Self) extends AnyVal {
     
     inline def setAnalyse(value: js.Object => Unit): Self = StObject.set(x, "analyse", js.Any.fromFunction1(value))
   }

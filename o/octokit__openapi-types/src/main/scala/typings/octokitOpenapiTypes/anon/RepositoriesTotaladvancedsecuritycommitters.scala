@@ -27,7 +27,8 @@ object RepositoriesTotaladvancedsecuritycommitters {
     __obj.asInstanceOf[RepositoriesTotaladvancedsecuritycommitters]
   }
   
-  extension [Self <: RepositoriesTotaladvancedsecuritycommitters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositoriesTotaladvancedsecuritycommitters] (val x: Self) extends AnyVal {
     
     inline def setRepositories(
       value: js.Array[

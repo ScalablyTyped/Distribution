@@ -31,7 +31,8 @@ object PlotSolidgaugeDataSortingOptions {
     __obj.asInstanceOf[PlotSolidgaugeDataSortingOptions]
   }
   
-  extension [Self <: PlotSolidgaugeDataSortingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSolidgaugeDataSortingOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

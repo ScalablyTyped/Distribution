@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[Constants]
     }
     
-    extension [Self <: Constants](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constants] (val x: Self) extends AnyVal {
       
       inline def setDB(value: Double): Self = StObject.set(x, "DB", value.asInstanceOf[js.Any])
       

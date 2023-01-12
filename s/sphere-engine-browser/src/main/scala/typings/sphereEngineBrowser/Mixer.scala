@@ -19,7 +19,8 @@ object Mixer {
     __obj.asInstanceOf[Mixer]
   }
   
-  extension [Self <: Mixer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mixer] (val x: Self) extends AnyVal {
     
     inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }

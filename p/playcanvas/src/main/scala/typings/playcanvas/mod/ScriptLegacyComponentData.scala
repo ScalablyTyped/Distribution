@@ -32,7 +32,8 @@ object ScriptLegacyComponentData {
     __obj.asInstanceOf[ScriptLegacyComponentData]
   }
   
-  extension [Self <: ScriptLegacyComponentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptLegacyComponentData] (val x: Self) extends AnyVal {
     
     inline def setAreScriptsLoaded(value: Boolean): Self = StObject.set(x, "areScriptsLoaded", value.asInstanceOf[js.Any])
     

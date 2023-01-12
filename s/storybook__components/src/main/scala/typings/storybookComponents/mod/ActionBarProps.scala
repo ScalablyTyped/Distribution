@@ -15,7 +15,8 @@ object ActionBarProps {
     __obj.asInstanceOf[ActionBarProps]
   }
   
-  extension [Self <: ActionBarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionBarProps] (val x: Self) extends AnyVal {
     
     inline def setActionItems(value: js.Array[ActionItem]): Self = StObject.set(x, "actionItems", value.asInstanceOf[js.Any])
     

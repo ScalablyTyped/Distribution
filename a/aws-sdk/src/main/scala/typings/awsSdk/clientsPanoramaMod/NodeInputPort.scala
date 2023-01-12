@@ -38,7 +38,8 @@ object NodeInputPort {
     __obj.asInstanceOf[NodeInputPort]
   }
   
-  extension [Self <: NodeInputPort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeInputPort] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: PortDefaultValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     

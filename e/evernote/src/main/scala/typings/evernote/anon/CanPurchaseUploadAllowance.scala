@@ -32,7 +32,8 @@ object CanPurchaseUploadAllowance {
     __obj.asInstanceOf[CanPurchaseUploadAllowance]
   }
   
-  extension [Self <: CanPurchaseUploadAllowance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanPurchaseUploadAllowance] (val x: Self) extends AnyVal {
     
     inline def setCanPurchaseUploadAllowance(value: Boolean): Self = StObject.set(x, "canPurchaseUploadAllowance", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object JsonpRequestHandle {
     __obj.asInstanceOf[JsonpRequestHandle]
   }
   
-  extension [Self <: JsonpRequestHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonpRequestHandle] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     

@@ -18,7 +18,8 @@ object PowerFormsRequest {
     __obj.asInstanceOf[PowerFormsRequest]
   }
   
-  extension [Self <: PowerFormsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PowerFormsRequest] (val x: Self) extends AnyVal {
     
     inline def setPowerForms(value: js.Array[/* Contains details about a PowerForm. */ PowerForm]): Self = StObject.set(x, "powerForms", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object GetReginOptions {
     __obj.asInstanceOf[GetReginOptions]
   }
   
-  extension [Self <: GetReginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetReginOptions] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: /* callback */ js.Function1[/* res */ GetReginSuccessCallbackOptions, Unit] => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

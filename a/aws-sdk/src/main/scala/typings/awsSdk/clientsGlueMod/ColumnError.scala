@@ -23,7 +23,8 @@ object ColumnError {
     __obj.asInstanceOf[ColumnError]
   }
   
-  extension [Self <: ColumnError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnError] (val x: Self) extends AnyVal {
     
     inline def setColumnName(value: NameString): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
     

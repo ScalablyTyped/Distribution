@@ -18,7 +18,8 @@ object CreateDataRepositoryTaskResponse {
     __obj.asInstanceOf[CreateDataRepositoryTaskResponse]
   }
   
-  extension [Self <: CreateDataRepositoryTaskResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDataRepositoryTaskResponse] (val x: Self) extends AnyVal {
     
     inline def setDataRepositoryTask(value: DataRepositoryTask): Self = StObject.set(x, "DataRepositoryTask", value.asInstanceOf[js.Any])
     

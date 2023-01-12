@@ -21,7 +21,8 @@ object ExportBlobPromiseOptions {
     __obj.asInstanceOf[ExportBlobPromiseOptions]
   }
   
-  extension [Self <: ExportBlobPromiseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportBlobPromiseOptions] (val x: Self) extends AnyVal {
     
     inline def setOutput(value: `blob-promise`): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     

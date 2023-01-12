@@ -76,7 +76,8 @@ object DialogConfirmProps {
     __obj.asInstanceOf[DialogConfirmProps]
   }
   
-  extension [Self <: DialogConfirmProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogConfirmProps] (val x: Self) extends AnyVal {
     
     inline def setIconPath(value: String): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
     

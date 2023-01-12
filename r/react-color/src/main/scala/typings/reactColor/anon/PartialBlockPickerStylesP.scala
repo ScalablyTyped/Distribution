@@ -27,7 +27,8 @@ object PartialBlockPickerStylesP {
     __obj.asInstanceOf[PartialBlockPickerStylesP]
   }
   
-  extension [Self <: PartialBlockPickerStylesP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBlockPickerStylesP] (val x: Self) extends AnyVal {
     
     inline def setBody(value: CSSProperties): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object EntitlementManagementSchedule {
     __obj.asInstanceOf[EntitlementManagementSchedule]
   }
   
-  extension [Self <: EntitlementManagementSchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntitlementManagementSchedule] (val x: Self) extends AnyVal {
     
     inline def setExpiration(value: NullableOption[ExpirationPattern]): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     

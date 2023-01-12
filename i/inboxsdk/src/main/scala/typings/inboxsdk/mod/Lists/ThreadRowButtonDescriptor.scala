@@ -23,7 +23,8 @@ object ThreadRowButtonDescriptor {
     __obj.asInstanceOf[ThreadRowButtonDescriptor]
   }
   
-  extension [Self <: ThreadRowButtonDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreadRowButtonDescriptor] (val x: Self) extends AnyVal {
     
     inline def setHasDropdown(value: Boolean): Self = StObject.set(x, "hasDropdown", value.asInstanceOf[js.Any])
     

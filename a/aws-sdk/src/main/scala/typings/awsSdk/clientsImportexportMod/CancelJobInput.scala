@@ -17,7 +17,8 @@ object CancelJobInput {
     __obj.asInstanceOf[CancelJobInput]
   }
   
-  extension [Self <: CancelJobInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelJobInput] (val x: Self) extends AnyVal {
     
     inline def setAPIVersion(value: APIVersion_): Self = StObject.set(x, "APIVersion", value.asInstanceOf[js.Any])
     

@@ -66,7 +66,8 @@ object pluginsContextMenuContextMenuMod {
       __obj.asInstanceOf[DetailedSettings]
     }
     
-    extension [Self <: DetailedSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailedSettings] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* key */ String, /* selection */ js.Array[Selection], /* clickEvent */ MouseEvent) => Unit
@@ -128,7 +129,8 @@ object pluginsContextMenuContextMenuMod {
       __obj.asInstanceOf[MenuItemConfig]
     }
     
-    extension [Self <: MenuItemConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemConfig] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: js.ThisFunction3[
@@ -305,7 +307,8 @@ object pluginsContextMenuContextMenuMod {
       __obj.asInstanceOf[Selection]
     }
     
-    extension [Self <: Selection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Selection] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -324,7 +327,8 @@ object pluginsContextMenuContextMenuMod {
       __obj.asInstanceOf[SeparatorObject]
     }
     
-    extension [Self <: SeparatorObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeparatorObject] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -343,7 +347,8 @@ object pluginsContextMenuContextMenuMod {
       __obj.asInstanceOf[SubmenuConfig]
     }
     
-    extension [Self <: SubmenuConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubmenuConfig] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[SubmenuItemConfig]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -401,7 +406,8 @@ object pluginsContextMenuContextMenuMod {
       __obj.asInstanceOf[SubmenuItemConfig]
     }
     
-    extension [Self <: SubmenuItemConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubmenuItemConfig] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: js.ThisFunction3[

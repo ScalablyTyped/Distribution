@@ -29,7 +29,8 @@ object ItemChanged {
     __obj.asInstanceOf[ItemChanged]
   }
   
-  extension [Self <: ItemChanged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemChanged] (val x: Self) extends AnyVal {
     
     inline def setItemChanged(value: TabContainerItem): Self = StObject.set(x, "itemChanged", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object TezosSignedTx {
     __obj.asInstanceOf[TezosSignedTx]
   }
   
-  extension [Self <: TezosSignedTx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TezosSignedTx] (val x: Self) extends AnyVal {
     
     inline def setOperation_hash(value: String): Self = StObject.set(x, "operation_hash", value.asInstanceOf[js.Any])
     

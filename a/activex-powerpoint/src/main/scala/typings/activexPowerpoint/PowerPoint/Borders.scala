@@ -31,7 +31,8 @@ object Borders {
     __obj.asInstanceOf[Borders]
   }
   
-  extension [Self <: Borders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Borders] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

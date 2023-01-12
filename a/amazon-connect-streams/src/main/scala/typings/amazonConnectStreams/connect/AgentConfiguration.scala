@@ -53,7 +53,8 @@ object AgentConfiguration {
     __obj.asInstanceOf[AgentConfiguration]
   }
   
-  extension [Self <: AgentConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAgentPreferences(value: AgentPreferences): Self = StObject.set(x, "agentPreferences", value.asInstanceOf[js.Any])
     

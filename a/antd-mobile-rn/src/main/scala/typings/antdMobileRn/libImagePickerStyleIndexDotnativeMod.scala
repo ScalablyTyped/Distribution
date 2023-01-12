@@ -116,7 +116,8 @@ object libImagePickerStyleIndexDotnativeMod {
       __obj.asInstanceOf[IImagePickerStyle]
     }
     
-    extension [Self <: IImagePickerStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IImagePickerStyle] (val x: Self) extends AnyVal {
       
       inline def setCloseText(value: TextStyle): Self = StObject.set(x, "closeText", value.asInstanceOf[js.Any])
       

@@ -36,7 +36,8 @@ object PolygonBarrierProperties {
     __obj.asInstanceOf[PolygonBarrierProperties]
   }
   
-  extension [Self <: PolygonBarrierProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolygonBarrierProperties] (val x: Self) extends AnyVal {
     
     inline def setBarrierType(value: restriction | `added-cost`): Self = StObject.set(x, "barrierType", value.asInstanceOf[js.Any])
     

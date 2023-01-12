@@ -103,7 +103,8 @@ object XCell {
     __obj.asInstanceOf[XCell]
   }
   
-  extension [Self <: XCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCell] (val x: Self) extends AnyVal {
     
     inline def setError(value: Double): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     

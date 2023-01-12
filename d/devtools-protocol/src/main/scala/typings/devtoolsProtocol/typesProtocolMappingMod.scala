@@ -4431,7 +4431,8 @@ object typesProtocolMappingMod {
         __obj.asInstanceOf[Commands]
       }
       
-      extension [Self <: Commands](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Commands] (val x: Self) extends AnyVal {
         
         inline def setAccessibilityDotdisable(value: ParamsType): Self = StObject.set(x, "Accessibility.disable", value.asInstanceOf[js.Any])
         
@@ -6906,7 +6907,8 @@ object typesProtocolMappingMod {
         __obj.asInstanceOf[Events]
       }
       
-      extension [Self <: Events](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
         
         inline def setAccessibilityDotloadComplete(value: js.Array[LoadCompleteEvent]): Self = StObject.set(x, "Accessibility.loadComplete", value.asInstanceOf[js.Any])
         

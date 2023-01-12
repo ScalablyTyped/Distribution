@@ -166,7 +166,8 @@ object distSrcPowergraphMod {
       __obj.asInstanceOf[LinkTypeAccessor[Link]]
     }
     
-    extension [Self <: LinkTypeAccessor[?], Link](x: Self & LinkTypeAccessor[Link]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkTypeAccessor[?], Link] (val x: Self & LinkTypeAccessor[Link]) extends AnyVal {
       
       inline def setGetType(value: Link => Double): Self = StObject.set(x, "getType", js.Any.fromFunction1(value))
     }

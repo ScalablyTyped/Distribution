@@ -33,7 +33,8 @@ object DiskImageDescription {
     __obj.asInstanceOf[DiskImageDescription]
   }
   
-  extension [Self <: DiskImageDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiskImageDescription] (val x: Self) extends AnyVal {
     
     inline def setChecksum(value: String): Self = StObject.set(x, "Checksum", value.asInstanceOf[js.Any])
     

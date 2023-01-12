@@ -22,7 +22,8 @@ object mysql {
     __obj.asInstanceOf[mysql]
   }
   
-  extension [Self <: mysql](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: mysql] (val x: Self) extends AnyVal {
     
     inline def setService(value: String | (js.Function1[/* params */ Any, String])): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     

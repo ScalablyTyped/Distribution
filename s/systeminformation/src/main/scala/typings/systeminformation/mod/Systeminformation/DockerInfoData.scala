@@ -153,7 +153,8 @@ object DockerInfoData {
     __obj.asInstanceOf[DockerInfoData]
   }
   
-  extension [Self <: DockerInfoData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DockerInfoData] (val x: Self) extends AnyVal {
     
     inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     

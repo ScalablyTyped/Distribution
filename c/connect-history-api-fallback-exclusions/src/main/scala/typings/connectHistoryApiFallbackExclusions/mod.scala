@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setMatch(value: RegExpMatchArray): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDisableDotRule(value: `true`): Self = StObject.set(x, "disableDotRule", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object mod {
       __obj.asInstanceOf[Rewrite]
     }
     
-    extension [Self <: Rewrite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rewrite] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: js.RegExp): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

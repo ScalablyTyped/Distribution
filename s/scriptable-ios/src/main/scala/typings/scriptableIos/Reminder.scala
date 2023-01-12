@@ -134,7 +134,8 @@ object Reminder {
     __obj.asInstanceOf[Reminder]
   }
   
-  extension [Self <: Reminder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reminder] (val x: Self) extends AnyVal {
     
     inline def setAddRecurrenceRule(value: RecurrenceRule => Unit): Self = StObject.set(x, "addRecurrenceRule", js.Any.fromFunction1(value))
     

@@ -69,7 +69,8 @@ object distDomMod {
       __obj.asInstanceOf[LimitedMouseEvent]
     }
     
-    extension [Self <: LimitedMouseEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LimitedMouseEvent] (val x: Self) extends AnyVal {
       
       inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
@@ -129,7 +130,8 @@ object distDomMod {
       __obj.asInstanceOf[SubmitOptions]
     }
     
-    extension [Self <: SubmitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubmitOptions] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

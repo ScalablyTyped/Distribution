@@ -19,7 +19,8 @@ object ShippingsettingsGetSupportedPickupServicesResponse {
     __obj.asInstanceOf[ShippingsettingsGetSupportedPickupServicesResponse]
   }
   
-  extension [Self <: ShippingsettingsGetSupportedPickupServicesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShippingsettingsGetSupportedPickupServicesResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

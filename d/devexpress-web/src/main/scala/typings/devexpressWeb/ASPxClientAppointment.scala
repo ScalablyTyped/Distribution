@@ -229,7 +229,8 @@ object ASPxClientAppointment {
     __obj.asInstanceOf[ASPxClientAppointment]
   }
   
-  extension [Self <: ASPxClientAppointment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientAppointment] (val x: Self) extends AnyVal {
     
     inline def setAddResource(value: String => Unit): Self = StObject.set(x, "AddResource", js.Any.fromFunction1(value))
     

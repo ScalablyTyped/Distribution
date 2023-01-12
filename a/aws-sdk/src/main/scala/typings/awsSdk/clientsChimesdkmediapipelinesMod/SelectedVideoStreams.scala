@@ -23,7 +23,8 @@ object SelectedVideoStreams {
     __obj.asInstanceOf[SelectedVideoStreams]
   }
   
-  extension [Self <: SelectedVideoStreams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectedVideoStreams] (val x: Self) extends AnyVal {
     
     inline def setAttendeeIds(value: AttendeeIdList): Self = StObject.set(x, "AttendeeIds", value.asInstanceOf[js.Any])
     

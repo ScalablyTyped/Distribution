@@ -55,7 +55,8 @@ object examplesJsmLoadersPdbloaderMod {
       __obj.asInstanceOf[PDB]
     }
     
-    extension [Self <: PDB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PDB] (val x: Self) extends AnyVal {
       
       inline def setGeometryAtoms(value: BufferGeometry): Self = StObject.set(x, "geometryAtoms", value.asInstanceOf[js.Any])
       

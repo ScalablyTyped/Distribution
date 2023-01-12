@@ -32,7 +32,8 @@ object push {
       __obj.asInstanceOf[IAbstract]
     }
     
-    extension [Self <: IAbstract](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
       
       inline def setALERT(value: Double): Self = StObject.set(x, "ALERT", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object push {
       __obj.asInstanceOf[ICordova]
     }
     
-    extension [Self <: ICordova](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICordova] (val x: Self) extends AnyVal {
       
       inline def setRegister(value: () => Unit): Self = StObject.set(x, "register", js.Any.fromFunction0(value))
       
@@ -90,7 +92,8 @@ object push {
       __obj.asInstanceOf[ISencha]
     }
     
-    extension [Self <: ISencha](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISencha] (val x: Self) extends AnyVal {
       
       inline def setRegister(value: () => Unit): Self = StObject.set(x, "register", js.Any.fromFunction0(value))
       

@@ -29,7 +29,8 @@ object IStreamSocketControl {
     __obj.asInstanceOf[IStreamSocketControl]
   }
   
-  extension [Self <: IStreamSocketControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStreamSocketControl] (val x: Self) extends AnyVal {
     
     inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
     

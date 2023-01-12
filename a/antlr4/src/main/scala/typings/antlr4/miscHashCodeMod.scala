@@ -41,7 +41,8 @@ object miscHashCodeMod {
       __obj.asInstanceOf[HashCode]
     }
     
-    extension [Self <: HashCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashCode] (val x: Self) extends AnyVal {
       
       inline def setFinish(value: () => Double): Self = StObject.set(x, "finish", js.Any.fromFunction0(value))
       

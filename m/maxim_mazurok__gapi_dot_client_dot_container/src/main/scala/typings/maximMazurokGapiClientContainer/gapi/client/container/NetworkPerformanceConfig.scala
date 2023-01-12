@@ -16,7 +16,8 @@ object NetworkPerformanceConfig {
     __obj.asInstanceOf[NetworkPerformanceConfig]
   }
   
-  extension [Self <: NetworkPerformanceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkPerformanceConfig] (val x: Self) extends AnyVal {
     
     inline def setTotalEgressBandwidthTier(value: String): Self = StObject.set(x, "totalEgressBandwidthTier", value.asInstanceOf[js.Any])
     

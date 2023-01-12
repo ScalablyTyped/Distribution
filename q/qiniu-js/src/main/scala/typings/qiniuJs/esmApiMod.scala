@@ -81,7 +81,8 @@ object esmApiMod {
       __obj.asInstanceOf[InitPartsData]
     }
     
-    extension [Self <: InitPartsData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitPartsData] (val x: Self) extends AnyVal {
       
       inline def setExpireAt(value: Double): Self = StObject.set(x, "expireAt", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object esmApiMod {
       __obj.asInstanceOf[UpHosts]
     }
     
-    extension [Self <: UpHosts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpHosts] (val x: Self) extends AnyVal {
       
       inline def setData(value: Up): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -119,7 +121,8 @@ object esmApiMod {
       __obj.asInstanceOf[UploadChunkData]
     }
     
-    extension [Self <: UploadChunkData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadChunkData] (val x: Self) extends AnyVal {
       
       inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
@@ -147,7 +150,8 @@ object esmApiMod {
       __obj.asInstanceOf[UploadUrlConfig]
     }
     
-    extension [Self <: UploadUrlConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadUrlConfig] (val x: Self) extends AnyVal {
       
       inline def setRegion(value: z0 | z2 | na0 | as0 | z1 | `cn-east-2`): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       

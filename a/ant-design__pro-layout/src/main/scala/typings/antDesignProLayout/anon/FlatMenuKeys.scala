@@ -19,7 +19,8 @@ object FlatMenuKeys {
     __obj.asInstanceOf[FlatMenuKeys]
   }
   
-  extension [Self <: FlatMenuKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlatMenuKeys] (val x: Self) extends AnyVal {
     
     inline def setFlatMenuKeys(value: js.Array[String]): Self = StObject.set(x, "flatMenuKeys", value.asInstanceOf[js.Any])
     

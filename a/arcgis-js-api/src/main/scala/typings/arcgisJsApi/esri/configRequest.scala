@@ -87,7 +87,8 @@ object configRequest {
     __obj.asInstanceOf[configRequest]
   }
   
-  extension [Self <: configRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: configRequest] (val x: Self) extends AnyVal {
     
     inline def setHttpsDomains(value: js.Array[String]): Self = StObject.set(x, "httpsDomains", value.asInstanceOf[js.Any])
     

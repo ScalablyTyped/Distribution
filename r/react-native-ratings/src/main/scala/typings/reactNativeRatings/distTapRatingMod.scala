@@ -112,7 +112,8 @@ object distTapRatingMod extends Shortcut {
       __obj.asInstanceOf[TapRatingProps]
     }
     
-    extension [Self <: TapRatingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TapRatingProps] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

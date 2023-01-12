@@ -80,7 +80,8 @@ object buildSrcAuthPluggableAuthHandlerMod {
       __obj.asInstanceOf[PluggableAuthHandlerOptions]
     }
     
-    extension [Self <: PluggableAuthHandlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluggableAuthHandlerOptions] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       

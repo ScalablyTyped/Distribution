@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[`0`[TBase, TImpl, TArgs]]
     }
     
-    extension [Self <: `0`[?, ?, ?], TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](x: Self & (`0`[TBase, TImpl, TArgs])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`[?, ?, ?], TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] (val x: Self & (`0`[TBase, TImpl, TArgs])) extends AnyVal {
       
       inline def setGet(value: (Container, PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]) => TImpl): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     }
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setInject(value: Any): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
       
@@ -62,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Decorates]
     }
     
-    extension [Self <: Decorates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decorates] (val x: Self) extends AnyVal {
       
       inline def setDecorates(value: /* key */ Any => /* is aurelia-dependency-injection.anon.Get */ Boolean): Self = StObject.set(x, "decorates", js.Any.fromFunction1(value))
       
@@ -81,7 +84,8 @@ object anon {
       __obj.asInstanceOf[Get]
     }
     
-    extension [Self <: Get](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Get] (val x: Self) extends AnyVal {
       
       inline def setGet(value: (Container, Any) => Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     }
@@ -102,7 +106,8 @@ object anon {
       __obj.asInstanceOf[Inject[TArgs, TBase]]
     }
     
-    extension [Self <: Inject[?, ?], TArgs /* <: Args[TBase] */, TBase](x: Self & (Inject[TArgs, TBase])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Inject[?, ?], TArgs /* <: Args[TBase] */, TBase] (val x: Self & (Inject[TArgs, TBase])) extends AnyVal {
       
       inline def setInject(
         value: js.Array[

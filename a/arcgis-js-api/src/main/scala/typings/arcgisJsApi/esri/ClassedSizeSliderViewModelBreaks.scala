@@ -34,7 +34,8 @@ object ClassedSizeSliderViewModelBreaks {
     __obj.asInstanceOf[ClassedSizeSliderViewModelBreaks]
   }
   
-  extension [Self <: ClassedSizeSliderViewModelBreaks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassedSizeSliderViewModelBreaks] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

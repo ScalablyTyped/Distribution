@@ -19,7 +19,8 @@ object JobPayloadInput {
     __obj.asInstanceOf[JobPayloadInput]
   }
   
-  extension [Self <: JobPayloadInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobPayloadInput] (val x: Self) extends AnyVal {
     
     inline def setCompressedUrn(value: Boolean): Self = StObject.set(x, "compressedUrn", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object typesCommentsForComparedCommitMod {
       __obj.asInstanceOf[CommentsForComparedCommit]
     }
     
-    extension [Self <: CommentsForComparedCommit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentsForComparedCommit] (val x: Self) extends AnyVal {
       
       inline def setAfterBlobId(value: String): Self = StObject.set(x, "afterBlobId", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object typesCommentsForComparedCommitMod {
       __obj.asInstanceOf[UnmarshalledCommentsForComparedCommit]
     }
     
-    extension [Self <: UnmarshalledCommentsForComparedCommit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledCommentsForComparedCommit] (val x: Self) extends AnyVal {
       
       inline def setComments(value: js.Array[UnmarshalledComment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       

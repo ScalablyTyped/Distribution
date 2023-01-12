@@ -19,7 +19,8 @@ object ReturnTypeGetScriptSourceResponse {
     __obj.asInstanceOf[ReturnTypeGetScriptSourceResponse]
   }
   
-  extension [Self <: ReturnTypeGetScriptSourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetScriptSourceResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetScriptSourceRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

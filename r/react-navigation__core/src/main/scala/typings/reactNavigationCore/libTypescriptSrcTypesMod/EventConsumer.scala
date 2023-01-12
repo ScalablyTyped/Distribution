@@ -26,7 +26,8 @@ object EventConsumer {
     __obj.asInstanceOf[EventConsumer[EventMap]]
   }
   
-  extension [Self <: EventConsumer[?], EventMap /* <: EventMapBase */](x: Self & EventConsumer[EventMap]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventConsumer[?], EventMap /* <: EventMapBase */] (val x: Self & EventConsumer[EventMap]) extends AnyVal {
     
     inline def setAddListener(value: (Any, EventListenerCallback[EventMap, Any]) => js.Function0[Unit]): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
     

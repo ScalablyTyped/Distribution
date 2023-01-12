@@ -21,7 +21,8 @@ object WorkbookRangeFill {
     __obj.asInstanceOf[WorkbookRangeFill]
   }
   
-  extension [Self <: WorkbookRangeFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookRangeFill] (val x: Self) extends AnyVal {
     
     inline def setColor(value: NullableOption[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

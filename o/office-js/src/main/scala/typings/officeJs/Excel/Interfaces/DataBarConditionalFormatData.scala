@@ -90,7 +90,8 @@ object DataBarConditionalFormatData {
     __obj.asInstanceOf[DataBarConditionalFormatData]
   }
   
-  extension [Self <: DataBarConditionalFormatData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataBarConditionalFormatData] (val x: Self) extends AnyVal {
     
     inline def setAxisColor(value: String): Self = StObject.set(x, "axisColor", value.asInstanceOf[js.Any])
     

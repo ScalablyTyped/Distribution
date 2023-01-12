@@ -49,7 +49,8 @@ object DataProtection {
       __obj.asInstanceOf[IDataProtectionProvider]
     }
     
-    extension [Self <: IDataProtectionProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDataProtectionProvider] (val x: Self) extends AnyVal {
       
       inline def setProtectAsync(value: IBuffer => IAsyncOperation[IBuffer]): Self = StObject.set(x, "protectAsync", js.Any.fromFunction1(value))
       
@@ -72,7 +73,8 @@ object DataProtection {
       __obj.asInstanceOf[IDataProtectionProviderFactory]
     }
     
-    extension [Self <: IDataProtectionProviderFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDataProtectionProviderFactory] (val x: Self) extends AnyVal {
       
       inline def setCreateOverloadExplicit(value: String => DataProtectionProvider): Self = StObject.set(x, "createOverloadExplicit", js.Any.fromFunction1(value))
     }

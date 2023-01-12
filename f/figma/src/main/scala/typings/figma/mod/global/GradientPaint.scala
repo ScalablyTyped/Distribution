@@ -36,7 +36,8 @@ object GradientPaint {
     __obj.asInstanceOf[GradientPaint]
   }
   
-  extension [Self <: GradientPaint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GradientPaint] (val x: Self) extends AnyVal {
     
     inline def setBlendMode(value: BlendMode): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
     

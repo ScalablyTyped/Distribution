@@ -89,7 +89,8 @@ object mod {
       __obj.asInstanceOf[KDBush[T]]
     }
     
-    extension [Self <: KDBush[?], T](x: Self & KDBush[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KDBush[?], T] (val x: Self & KDBush[T]) extends AnyVal {
       
       inline def setCoords(value: js.Array[Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       

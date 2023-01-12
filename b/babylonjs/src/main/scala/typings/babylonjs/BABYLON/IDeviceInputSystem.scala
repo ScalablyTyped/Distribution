@@ -35,7 +35,8 @@ object IDeviceInputSystem {
     __obj.asInstanceOf[IDeviceInputSystem]
   }
   
-  extension [Self <: IDeviceInputSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDeviceInputSystem] (val x: Self) extends AnyVal {
     
     inline def setIsDeviceAvailable(value: DeviceType => Boolean): Self = StObject.set(x, "isDeviceAvailable", js.Any.fromFunction1(value))
     

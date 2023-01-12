@@ -23,7 +23,8 @@ object WebXRSpectatorModeOption {
     __obj.asInstanceOf[WebXRSpectatorModeOption]
   }
   
-  extension [Self <: WebXRSpectatorModeOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebXRSpectatorModeOption] (val x: Self) extends AnyVal {
     
     inline def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
     

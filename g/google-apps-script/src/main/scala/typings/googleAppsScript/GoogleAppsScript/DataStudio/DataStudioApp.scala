@@ -18,7 +18,8 @@ object DataStudioApp {
     __obj.asInstanceOf[DataStudioApp]
   }
   
-  extension [Self <: DataStudioApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataStudioApp] (val x: Self) extends AnyVal {
     
     inline def setCreateCommunityConnector(value: () => CommunityConnector): Self = StObject.set(x, "createCommunityConnector", js.Any.fromFunction0(value))
   }

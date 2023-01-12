@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Alt]
     }
     
-    extension [Self <: Alt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alt] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object anon {
       __obj.asInstanceOf[Altitude]
     }
     
-    extension [Self <: Altitude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Altitude] (val x: Self) extends AnyVal {
       
       inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object anon {
       __obj.asInstanceOf[Analyzetype]
     }
     
-    extension [Self <: Analyzetype](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Analyzetype] (val x: Self) extends AnyVal {
       
       inline def setAnalyze_type(value: AnalyzeType): Self = StObject.set(x, "analyze_type", value.asInstanceOf[js.Any])
       
@@ -183,7 +186,8 @@ object anon {
       __obj.asInstanceOf[Anchor]
     }
     
-    extension [Self <: Anchor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Anchor] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: LatLng): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -228,7 +232,8 @@ object anon {
       __obj.asInstanceOf[Bounds]
     }
     
-    extension [Self <: Bounds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bounds] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: LatLngBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -291,7 +296,8 @@ object anon {
       __obj.asInstanceOf[DrawingManager]
     }
     
-    extension [Self <: DrawingManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawingManager] (val x: Self) extends AnyVal {
       
       inline def setDrawingManager(value: typings.kakaomaps.kakao.maps.drawing.DrawingManager): Self = StObject.set(x, "drawingManager", value.asInstanceOf[js.Any])
       
@@ -310,7 +316,8 @@ object anon {
       __obj.asInstanceOf[Duration]
     }
     
-    extension [Self <: Duration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -329,7 +336,8 @@ object anon {
       __obj.asInstanceOf[Inputcoord]
     }
     
-    extension [Self <: Inputcoord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Inputcoord] (val x: Self) extends AnyVal {
       
       inline def setInput_coord(value: Coords): Self = StObject.set(x, "input_coord", value.asInstanceOf[js.Any])
       
@@ -368,7 +376,8 @@ object anon {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: LatLngBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -429,7 +438,8 @@ object anon {
       __obj.asInstanceOf[Outputcoord]
     }
     
-    extension [Self <: Outputcoord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Outputcoord] (val x: Self) extends AnyVal {
       
       inline def setInput_coord(value: Coords): Self = StObject.set(x, "input_coord", value.asInstanceOf[js.Any])
       
@@ -454,7 +464,8 @@ object anon {
       __obj.asInstanceOf[Rx]
     }
     
-    extension [Self <: Rx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rx] (val x: Self) extends AnyVal {
       
       inline def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
       

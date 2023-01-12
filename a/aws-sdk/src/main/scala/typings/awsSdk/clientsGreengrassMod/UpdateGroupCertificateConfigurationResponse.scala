@@ -28,7 +28,8 @@ object UpdateGroupCertificateConfigurationResponse {
     __obj.asInstanceOf[UpdateGroupCertificateConfigurationResponse]
   }
   
-  extension [Self <: UpdateGroupCertificateConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateGroupCertificateConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setCertificateAuthorityExpiryInMilliseconds(value: string): Self = StObject.set(x, "CertificateAuthorityExpiryInMilliseconds", value.asInstanceOf[js.Any])
     

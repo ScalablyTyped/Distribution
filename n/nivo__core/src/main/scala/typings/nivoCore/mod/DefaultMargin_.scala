@@ -22,7 +22,8 @@ object DefaultMargin_ {
     __obj.asInstanceOf[DefaultMargin_]
   }
   
-  extension [Self <: DefaultMargin_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultMargin_] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: `0`): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

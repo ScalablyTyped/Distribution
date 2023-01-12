@@ -22,7 +22,8 @@ object TasksTaskListResponseBase {
     __obj.asInstanceOf[TasksTaskListResponseBase]
   }
   
-  extension [Self <: TasksTaskListResponseBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TasksTaskListResponseBase] (val x: Self) extends AnyVal {
     
     inline def setNode_failures(value: js.Array[ErrorCause]): Self = StObject.set(x, "node_failures", value.asInstanceOf[js.Any])
     

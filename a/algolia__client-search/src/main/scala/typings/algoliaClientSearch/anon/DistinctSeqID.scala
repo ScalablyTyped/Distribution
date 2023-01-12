@@ -26,7 +26,8 @@ object DistinctSeqID {
     __obj.asInstanceOf[DistinctSeqID[THit]]
   }
   
-  extension [Self <: DistinctSeqID[?], THit](x: Self & DistinctSeqID[THit]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistinctSeqID[?], THit] (val x: Self & DistinctSeqID[THit]) extends AnyVal {
     
     inline def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])
     

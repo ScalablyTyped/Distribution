@@ -77,7 +77,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IRison]
     }
     
-    extension [Self <: IRison](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRison] (val x: Self) extends AnyVal {
       
       inline def setDecode(value: String => Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       

@@ -18,7 +18,8 @@ object ClientSetServerQueryLogin {
     __obj.asInstanceOf[ClientSetServerQueryLogin]
   }
   
-  extension [Self <: ClientSetServerQueryLogin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientSetServerQueryLogin] (val x: Self) extends AnyVal {
     
     inline def setClientLoginPassword(value: String): Self = StObject.set(x, "clientLoginPassword", value.asInstanceOf[js.Any])
   }

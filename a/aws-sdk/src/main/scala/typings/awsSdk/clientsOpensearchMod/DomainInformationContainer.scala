@@ -18,7 +18,8 @@ object DomainInformationContainer {
     __obj.asInstanceOf[DomainInformationContainer]
   }
   
-  extension [Self <: DomainInformationContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainInformationContainer] (val x: Self) extends AnyVal {
     
     inline def setAWSDomainInformation(value: AWSDomainInformation): Self = StObject.set(x, "AWSDomainInformation", value.asInstanceOf[js.Any])
     

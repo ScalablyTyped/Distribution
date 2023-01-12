@@ -29,7 +29,8 @@ object ResultUpdateRequestModel {
     __obj.asInstanceOf[ResultUpdateRequestModel]
   }
   
-  extension [Self <: ResultUpdateRequestModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultUpdateRequestModel] (val x: Self) extends AnyVal {
     
     inline def setActionResultDeletes(value: js.Array[TestActionResultModel]): Self = StObject.set(x, "actionResultDeletes", value.asInstanceOf[js.Any])
     

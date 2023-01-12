@@ -32,7 +32,8 @@ object TSModuleDeclaration__ {
     __obj.asInstanceOf[TSModuleDeclaration__]
   }
   
-  extension [Self <: TSModuleDeclaration__](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSModuleDeclaration__] (val x: Self) extends AnyVal {
     
     inline def setBody(value: TSModuleBlock__ | TSModuleDeclaration__): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

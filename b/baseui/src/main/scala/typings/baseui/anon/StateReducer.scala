@@ -17,7 +17,8 @@ object StateReducer {
     __obj.asInstanceOf[StateReducer]
   }
   
-  extension [Self <: StateReducer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateReducer] (val x: Self) extends AnyVal {
     
     inline def setInitialState(value: CurrentPage): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     

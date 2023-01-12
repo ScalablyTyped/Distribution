@@ -23,7 +23,8 @@ object Responses200ContentApplicationjsonColumnurl304Unknown {
     __obj.asInstanceOf[Responses200ContentApplicationjsonColumnurl304Unknown]
   }
   
-  extension [Self <: Responses200ContentApplicationjsonColumnurl304Unknown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses200ContentApplicationjsonColumnurl304Unknown] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathCardidNumber): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

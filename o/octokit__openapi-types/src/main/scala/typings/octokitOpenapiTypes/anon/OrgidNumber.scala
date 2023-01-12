@@ -19,7 +19,8 @@ object OrgidNumber {
     __obj.asInstanceOf[OrgidNumber]
   }
   
-  extension [Self <: OrgidNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrgidNumber] (val x: Self) extends AnyVal {
     
     inline def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     

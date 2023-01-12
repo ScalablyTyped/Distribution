@@ -43,7 +43,8 @@ object EChartsConvertFinder {
     __obj.asInstanceOf[EChartsConvertFinder]
   }
   
-  extension [Self <: EChartsConvertFinder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EChartsConvertFinder] (val x: Self) extends AnyVal {
     
     inline def setGeoId(value: String): Self = StObject.set(x, "geoId", value.asInstanceOf[js.Any])
     

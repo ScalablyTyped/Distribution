@@ -19,7 +19,8 @@ object DroppableCollectionExitEvent {
     __obj.asInstanceOf[DroppableCollectionExitEvent]
   }
   
-  extension [Self <: DroppableCollectionExitEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DroppableCollectionExitEvent] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: DropTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

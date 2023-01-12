@@ -42,7 +42,8 @@ object PartialOverflowListPropsa {
     __obj.asInstanceOf[PartialOverflowListPropsa]
   }
   
-  extension [Self <: PartialOverflowListPropsa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOverflowListPropsa] (val x: Self) extends AnyVal {
     
     inline def setAlwaysRenderOverflow(value: Boolean): Self = StObject.set(x, "alwaysRenderOverflow", value.asInstanceOf[js.Any])
     

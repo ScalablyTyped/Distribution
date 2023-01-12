@@ -19,7 +19,8 @@ object IImage {
     __obj.asInstanceOf[IImage]
   }
   
-  extension [Self <: IImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IImage] (val x: Self) extends AnyVal {
     
     inline def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     

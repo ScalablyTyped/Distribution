@@ -98,7 +98,8 @@ object RouteSummary {
     __obj.asInstanceOf[RouteSummary]
   }
   
-  extension [Self <: RouteSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteSummary] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: ApplicationId): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

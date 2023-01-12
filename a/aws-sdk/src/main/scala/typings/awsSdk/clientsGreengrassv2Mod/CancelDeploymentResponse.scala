@@ -18,7 +18,8 @@ object CancelDeploymentResponse {
     __obj.asInstanceOf[CancelDeploymentResponse]
   }
   
-  extension [Self <: CancelDeploymentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelDeploymentResponse] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: NonEmptyString): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ɵNgModuleTransitiveScopes {
     __obj.asInstanceOf[ɵNgModuleTransitiveScopes]
   }
   
-  extension [Self <: ɵNgModuleTransitiveScopes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ɵNgModuleTransitiveScopes] (val x: Self) extends AnyVal {
     
     inline def setCompilation(value: Directives): Self = StObject.set(x, "compilation", value.asInstanceOf[js.Any])
     

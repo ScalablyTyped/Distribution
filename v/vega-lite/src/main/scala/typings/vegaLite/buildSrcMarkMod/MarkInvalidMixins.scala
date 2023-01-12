@@ -21,7 +21,8 @@ object MarkInvalidMixins {
     __obj.asInstanceOf[MarkInvalidMixins]
   }
   
-  extension [Self <: MarkInvalidMixins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkInvalidMixins] (val x: Self) extends AnyVal {
     
     inline def setInvalid(value: filter | Hide): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     

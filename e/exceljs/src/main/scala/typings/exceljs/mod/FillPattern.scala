@@ -26,7 +26,8 @@ object FillPattern {
     __obj.asInstanceOf[FillPattern]
   }
   
-  extension [Self <: FillPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillPattern] (val x: Self) extends AnyVal {
     
     inline def setBgColor(value: PartialColor): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
     

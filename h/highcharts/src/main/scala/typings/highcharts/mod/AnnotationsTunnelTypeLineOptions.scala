@@ -17,7 +17,8 @@ object AnnotationsTunnelTypeLineOptions {
     __obj.asInstanceOf[AnnotationsTunnelTypeLineOptions]
   }
   
-  extension [Self <: AnnotationsTunnelTypeLineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsTunnelTypeLineOptions] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

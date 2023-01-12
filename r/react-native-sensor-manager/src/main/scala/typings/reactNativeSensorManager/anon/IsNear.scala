@@ -19,7 +19,8 @@ object IsNear {
     __obj.asInstanceOf[IsNear]
   }
   
-  extension [Self <: IsNear](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsNear] (val x: Self) extends AnyVal {
     
     inline def setIsNear(value: Boolean): Self = StObject.set(x, "isNear", value.asInstanceOf[js.Any])
     

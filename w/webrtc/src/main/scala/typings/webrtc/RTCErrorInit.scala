@@ -27,7 +27,8 @@ object RTCErrorInit {
     __obj.asInstanceOf[RTCErrorInit]
   }
   
-  extension [Self <: RTCErrorInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCErrorInit] (val x: Self) extends AnyVal {
     
     inline def setErrorDetail(value: RTCErrorDetailType): Self = StObject.set(x, "errorDetail", value.asInstanceOf[js.Any])
     

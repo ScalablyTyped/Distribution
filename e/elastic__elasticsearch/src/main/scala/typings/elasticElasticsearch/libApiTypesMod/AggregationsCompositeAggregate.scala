@@ -18,7 +18,8 @@ object AggregationsCompositeAggregate {
     __obj.asInstanceOf[AggregationsCompositeAggregate]
   }
   
-  extension [Self <: AggregationsCompositeAggregate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsCompositeAggregate] (val x: Self) extends AnyVal {
     
     inline def setAfter_key(value: AggregationsCompositeAggregateKey): Self = StObject.set(x, "after_key", value.asInstanceOf[js.Any])
     

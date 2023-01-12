@@ -47,7 +47,8 @@ object TitleLayer {
     __obj.asInstanceOf[TitleLayer]
   }
   
-  extension [Self <: TitleLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TitleLayer] (val x: Self) extends AnyVal {
     
     inline def setFontPath(value: String): Self = StObject.set(x, "fontPath", value.asInstanceOf[js.Any])
     

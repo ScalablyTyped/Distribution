@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setFlatten(value: `false`): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
     }
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[Comment]
     }
     
-    extension [Self <: Comment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Connection]
     }
     
-    extension [Self <: Connection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: Socket): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     }
@@ -90,7 +93,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: Buffer | js.typedarray.Uint8Array | js.Object | String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     }
@@ -107,7 +111,8 @@ object anon {
       __obj.asInstanceOf[Flatten]
     }
     
-    extension [Self <: Flatten](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flatten] (val x: Self) extends AnyVal {
       
       inline def setFlatten(value: `true`): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
     }
@@ -128,7 +133,8 @@ object anon {
       __obj.asInstanceOf[Host]
     }
     
-    extension [Self <: Host](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -151,7 +157,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -178,7 +185,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
@@ -199,7 +207,8 @@ object anon {
       __obj.asInstanceOf[Pending]
     }
     
-    extension [Self <: Pending](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pending] (val x: Self) extends AnyVal {
       
       inline def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
@@ -220,7 +229,8 @@ object anon {
       __obj.asInstanceOf[Prepared]
     }
     
-    extension [Self <: Prepared](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Prepared] (val x: Self) extends AnyVal {
       
       inline def setPrepared(value: Boolean): Self = StObject.set(x, "prepared", value.asInstanceOf[js.Any])
       
@@ -241,7 +251,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

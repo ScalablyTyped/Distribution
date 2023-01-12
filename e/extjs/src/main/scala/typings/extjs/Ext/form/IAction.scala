@@ -82,7 +82,8 @@ object IAction {
     __obj.asInstanceOf[IAction]
   }
   
-  extension [Self <: IAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAction] (val x: Self) extends AnyVal {
     
     inline def setCLIENT_INVALID(value: String): Self = StObject.set(x, "CLIENT_INVALID", value.asInstanceOf[js.Any])
     

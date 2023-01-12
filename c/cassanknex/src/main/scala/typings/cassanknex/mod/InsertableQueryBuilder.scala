@@ -17,7 +17,8 @@ object InsertableQueryBuilder {
     __obj.asInstanceOf[InsertableQueryBuilder]
   }
   
-  extension [Self <: InsertableQueryBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertableQueryBuilder] (val x: Self) extends AnyVal {
     
     inline def setIfNotExists(value: () => InsertableQueryBuilder): Self = StObject.set(x, "ifNotExists", js.Any.fromFunction0(value))
     

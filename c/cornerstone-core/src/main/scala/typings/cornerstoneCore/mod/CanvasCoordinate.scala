@@ -17,7 +17,8 @@ object CanvasCoordinate {
     __obj.asInstanceOf[CanvasCoordinate]
   }
   
-  extension [Self <: CanvasCoordinate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasCoordinate] (val x: Self) extends AnyVal {
     
     inline def set_canvasCoordinateBrand(value: String): Self = StObject.set(x, "_canvasCoordinateBrand", value.asInstanceOf[js.Any])
   }

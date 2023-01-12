@@ -20,7 +20,8 @@ object Dictx {
     __obj.asInstanceOf[Dictx]
   }
   
-  extension [Self <: Dictx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictx] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

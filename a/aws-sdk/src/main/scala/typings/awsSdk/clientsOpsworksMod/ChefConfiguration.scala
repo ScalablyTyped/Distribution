@@ -23,7 +23,8 @@ object ChefConfiguration {
     __obj.asInstanceOf[ChefConfiguration]
   }
   
-  extension [Self <: ChefConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChefConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBerkshelfVersion(value: String): Self = StObject.set(x, "BerkshelfVersion", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object HttpRangeOptions {
     __obj.asInstanceOf[HttpRangeOptions]
   }
   
-  extension [Self <: HttpRangeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpRangeOptions] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: (js.Iterable[js.Tuple2[String, String]]) | (Map[String, String])): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

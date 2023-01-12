@@ -23,7 +23,8 @@ object Av1QvbrSettings {
     __obj.asInstanceOf[Av1QvbrSettings]
   }
   
-  extension [Self <: Av1QvbrSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Av1QvbrSettings] (val x: Self) extends AnyVal {
     
     inline def setQvbrQualityLevel(value: integerMin1Max10): Self = StObject.set(x, "QvbrQualityLevel", value.asInstanceOf[js.Any])
     

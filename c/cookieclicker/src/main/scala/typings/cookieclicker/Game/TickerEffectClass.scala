@@ -16,7 +16,8 @@ object TickerEffectClass {
     __obj.asInstanceOf[TickerEffectClass]
   }
   
-  extension [Self <: TickerEffectClass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TickerEffectClass] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

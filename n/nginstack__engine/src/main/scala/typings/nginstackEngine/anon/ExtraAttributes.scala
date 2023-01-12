@@ -20,7 +20,8 @@ object ExtraAttributes {
     __obj.asInstanceOf[ExtraAttributes]
   }
   
-  extension [Self <: ExtraAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtraAttributes] (val x: Self) extends AnyVal {
     
     inline def setExtraAttributes(value: Any): Self = StObject.set(x, "extraAttributes", value.asInstanceOf[js.Any])
     

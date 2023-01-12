@@ -30,7 +30,8 @@ object IFolderContentItem {
     __obj.asInstanceOf[IFolderContentItem]
   }
   
-  extension [Self <: IFolderContentItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFolderContentItem] (val x: Self) extends AnyVal {
     
     inline def setFolderContentItemType(value: MFFolderContentItemType): Self = StObject.set(x, "FolderContentItemType", value.asInstanceOf[js.Any])
     

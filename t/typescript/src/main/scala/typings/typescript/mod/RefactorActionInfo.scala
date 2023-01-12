@@ -40,7 +40,8 @@ object RefactorActionInfo {
     __obj.asInstanceOf[RefactorActionInfo]
   }
   
-  extension [Self <: RefactorActionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefactorActionInfo] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: java.lang.String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

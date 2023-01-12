@@ -28,7 +28,8 @@ object FailOnError {
     __obj.asInstanceOf[FailOnError]
   }
   
-  extension [Self <: FailOnError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailOnError] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

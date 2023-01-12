@@ -62,7 +62,8 @@ object OmitHierarchyOptionastype {
     __obj.asInstanceOf[OmitHierarchyOptionastype]
   }
   
-  extension [Self <: OmitHierarchyOptionastype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitHierarchyOptionastype] (val x: Self) extends AnyVal {
     
     inline def setActiveDepth(value: Double): Self = StObject.set(x, "activeDepth", value.asInstanceOf[js.Any])
     

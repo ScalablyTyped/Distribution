@@ -27,7 +27,8 @@ object Vec3AnimationTrackXYZ {
     __obj.asInstanceOf[Vec3AnimationTrackXYZ]
   }
   
-  extension [Self <: Vec3AnimationTrackXYZ](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Vec3AnimationTrackXYZ] (val x: Self) extends AnyVal {
     
     inline def setGetChildTrackByIndex(value: Double => AnimationTrack): Self = StObject.set(x, "getChildTrackByIndex", js.Any.fromFunction1(value))
     

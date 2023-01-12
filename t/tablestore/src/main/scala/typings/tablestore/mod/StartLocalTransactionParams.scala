@@ -18,7 +18,8 @@ object StartLocalTransactionParams {
     __obj.asInstanceOf[StartLocalTransactionParams]
   }
   
-  extension [Self <: StartLocalTransactionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartLocalTransactionParams] (val x: Self) extends AnyVal {
     
     inline def setPrimaryKey(value: PrimaryKeyInput): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
     

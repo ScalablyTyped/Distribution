@@ -22,7 +22,8 @@ object MediationReportSpecSortCondition {
     __obj.asInstanceOf[MediationReportSpecSortCondition]
   }
   
-  extension [Self <: MediationReportSpecSortCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediationReportSpecSortCondition] (val x: Self) extends AnyVal {
     
     inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     

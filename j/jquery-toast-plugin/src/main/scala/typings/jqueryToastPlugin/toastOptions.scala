@@ -67,7 +67,8 @@ object toastOptions {
     __obj.asInstanceOf[toastOptions]
   }
   
-  extension [Self <: toastOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: toastOptions] (val x: Self) extends AnyVal {
     
     inline def setAfterHidden(value: () => Any): Self = StObject.set(x, "afterHidden", js.Any.fromFunction0(value))
     

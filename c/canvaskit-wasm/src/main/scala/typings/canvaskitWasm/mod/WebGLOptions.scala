@@ -39,7 +39,8 @@ object WebGLOptions {
     __obj.asInstanceOf[WebGLOptions]
   }
   
-  extension [Self <: WebGLOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLOptions] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

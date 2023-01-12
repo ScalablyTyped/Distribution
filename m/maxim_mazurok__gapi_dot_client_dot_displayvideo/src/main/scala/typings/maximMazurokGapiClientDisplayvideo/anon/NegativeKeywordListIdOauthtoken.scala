@@ -57,7 +57,8 @@ object NegativeKeywordListIdOauthtoken {
     __obj.asInstanceOf[NegativeKeywordListIdOauthtoken]
   }
   
-  extension [Self <: NegativeKeywordListIdOauthtoken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NegativeKeywordListIdOauthtoken] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

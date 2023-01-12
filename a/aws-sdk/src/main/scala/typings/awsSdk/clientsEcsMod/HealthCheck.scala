@@ -38,7 +38,8 @@ object HealthCheck {
     __obj.asInstanceOf[HealthCheck]
   }
   
-  extension [Self <: HealthCheck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HealthCheck] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: StringList): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

@@ -67,7 +67,8 @@ object types {
       __obj.asInstanceOf[ChromeSettingClearDetails]
     }
     
-    extension [Self <: ChromeSettingClearDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChromeSettingClearDetails] (val x: Self) extends AnyVal {
       
       inline def setScope(value: ChromeSettingScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object types {
       __obj.asInstanceOf[ChromeSettingGetDetails]
     }
     
-    extension [Self <: ChromeSettingGetDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChromeSettingGetDetails] (val x: Self) extends AnyVal {
       
       inline def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object types {
       __obj.asInstanceOf[ChromeSettingGetResultDetails]
     }
     
-    extension [Self <: ChromeSettingGetResultDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChromeSettingGetResultDetails] (val x: Self) extends AnyVal {
       
       inline def setIncognitoSpecific(value: Boolean): Self = StObject.set(x, "incognitoSpecific", value.asInstanceOf[js.Any])
       
@@ -179,7 +182,8 @@ object types {
       __obj.asInstanceOf[ChromeSettingSetDetails]
     }
     
-    extension [Self <: ChromeSettingSetDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChromeSettingSetDetails] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

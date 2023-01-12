@@ -20,7 +20,8 @@ object ImageOptions {
     __obj.asInstanceOf[ImageOptions]
   }
   
-  extension [Self <: ImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageOptions] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

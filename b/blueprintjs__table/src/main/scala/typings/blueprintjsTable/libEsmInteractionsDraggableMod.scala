@@ -60,7 +60,8 @@ object libEsmInteractionsDraggableMod {
       __obj.asInstanceOf[IDraggableProps]
     }
     
-    extension [Self <: IDraggableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDraggableProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object DeleteFleetsResult {
     __obj.asInstanceOf[DeleteFleetsResult]
   }
   
-  extension [Self <: DeleteFleetsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFleetsResult] (val x: Self) extends AnyVal {
     
     inline def setSuccessfulFleetDeletions(value: DeleteFleetSuccessSet): Self = StObject.set(x, "SuccessfulFleetDeletions", value.asInstanceOf[js.Any])
     

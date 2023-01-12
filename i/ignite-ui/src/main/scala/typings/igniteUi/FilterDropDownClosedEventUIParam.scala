@@ -18,7 +18,8 @@ object FilterDropDownClosedEventUIParam {
     __obj.asInstanceOf[FilterDropDownClosedEventUIParam]
   }
   
-  extension [Self <: FilterDropDownClosedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterDropDownClosedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setHierarchy(value: Any): Self = StObject.set(x, "hierarchy", value.asInstanceOf[js.Any])
     

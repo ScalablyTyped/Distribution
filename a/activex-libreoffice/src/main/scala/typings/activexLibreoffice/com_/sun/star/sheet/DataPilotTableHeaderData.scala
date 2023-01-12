@@ -40,7 +40,8 @@ object DataPilotTableHeaderData {
     __obj.asInstanceOf[DataPilotTableHeaderData]
   }
   
-  extension [Self <: DataPilotTableHeaderData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPilotTableHeaderData] (val x: Self) extends AnyVal {
     
     inline def setDimension(value: Double): Self = StObject.set(x, "Dimension", value.asInstanceOf[js.Any])
     

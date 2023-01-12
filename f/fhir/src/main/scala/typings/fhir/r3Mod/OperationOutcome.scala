@@ -25,7 +25,8 @@ object OperationOutcome {
     __obj.asInstanceOf[OperationOutcome]
   }
   
-  extension [Self <: OperationOutcome](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationOutcome] (val x: Self) extends AnyVal {
     
     inline def setIssue(value: js.Array[OperationOutcomeIssue]): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
     

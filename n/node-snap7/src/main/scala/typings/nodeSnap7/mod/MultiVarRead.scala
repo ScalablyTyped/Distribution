@@ -23,7 +23,8 @@ object MultiVarRead {
     __obj.asInstanceOf[MultiVarRead]
   }
   
-  extension [Self <: MultiVarRead](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiVarRead] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object RasterBandStatistics {
     __obj.asInstanceOf[RasterBandStatistics]
   }
   
-  extension [Self <: RasterBandStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterBandStatistics] (val x: Self) extends AnyVal {
     
     inline def setAvg(value: Double): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
     

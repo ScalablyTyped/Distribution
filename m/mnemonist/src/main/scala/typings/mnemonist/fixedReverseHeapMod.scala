@@ -73,7 +73,8 @@ object fixedReverseHeapMod {
       __obj.asInstanceOf[FixedReverseHeap[T]]
     }
     
-    extension [Self <: FixedReverseHeap[?], T](x: Self & FixedReverseHeap[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedReverseHeap[?], T] (val x: Self & FixedReverseHeap[T]) extends AnyVal {
       
       inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "angular-signalr-hub"
-version := "v1.5.0-dt-20220818Z-a04a90"
+version := "v1.5.0-dt-20220818Z-a59bc0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "jquery" % "3.5-dt-20221103Z-9a2a4d",
-  "org.scalablytyped" %%% "signalr" % "2.4.3-dt-20221103Z-6c2224",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20211202Z-4e4849",
-  "org.scalablytyped" %%% "std" % "4.9-5f989f")
+  "org.scalablytyped" %%% "jquery" % "3.5-dt-20221103Z-33f6f2",
+  "org.scalablytyped" %%% "signalr" % "2.4.3-dt-20221103Z-347a23",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20211202Z-62291b",
+  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

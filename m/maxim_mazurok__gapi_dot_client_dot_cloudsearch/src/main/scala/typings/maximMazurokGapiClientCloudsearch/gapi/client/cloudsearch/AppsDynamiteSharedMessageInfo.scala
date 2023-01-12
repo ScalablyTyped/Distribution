@@ -22,7 +22,8 @@ object AppsDynamiteSharedMessageInfo {
     __obj.asInstanceOf[AppsDynamiteSharedMessageInfo]
   }
   
-  extension [Self <: AppsDynamiteSharedMessageInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedMessageInfo] (val x: Self) extends AnyVal {
     
     inline def setMessageId(value: AppsDynamiteMessageId): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     

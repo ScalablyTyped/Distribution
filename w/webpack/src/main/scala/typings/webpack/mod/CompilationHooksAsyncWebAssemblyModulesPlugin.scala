@@ -19,7 +19,8 @@ object CompilationHooksAsyncWebAssemblyModulesPlugin {
     __obj.asInstanceOf[CompilationHooksAsyncWebAssemblyModulesPlugin]
   }
   
-  extension [Self <: CompilationHooksAsyncWebAssemblyModulesPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompilationHooksAsyncWebAssemblyModulesPlugin] (val x: Self) extends AnyVal {
     
     inline def setRenderModuleContent(
       value: SyncWaterfallHook[js.Tuple3[Source, Module, WebAssemblyRenderContext], UnsetAdditionalOptions]

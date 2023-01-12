@@ -55,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Bytes]
     }
     
-    extension [Self <: Bytes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bytes] (val x: Self) extends AnyVal {
       
       inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object anon {
       __obj.asInstanceOf[Frag]
     }
     
-    extension [Self <: Frag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Frag] (val x: Self) extends AnyVal {
       
       inline def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
       
@@ -124,7 +127,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -148,7 +152,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -172,7 +177,8 @@ object anon {
       __obj.asInstanceOf[PartialCMCDHeaders]
     }
     
-    extension [Self <: PartialCMCDHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCMCDHeaders] (val x: Self) extends AnyVal {
       
       inline def `setCMCD-Object`(value: String): Self = StObject.set(x, "CMCD-Object", value.asInstanceOf[js.Any])
       
@@ -406,7 +412,8 @@ object anon {
       __obj.asInstanceOf[PartialHlsConfig]
     }
     
-    extension [Self <: PartialHlsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialHlsConfig] (val x: Self) extends AnyVal {
       
       inline def setAbrBandWidthFactor(value: Double): Self = StObject.set(x, "abrBandWidthFactor", value.asInstanceOf[js.Any])
       
@@ -834,7 +841,8 @@ object anon {
       __obj.asInstanceOf[PartialPenStyles]
     }
     
-    extension [Self <: PartialPenStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPenStyles] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -876,7 +884,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordSourceBuffer]
     }
     
-    extension [Self <: PartialRecordSourceBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordSourceBuffer] (val x: Self) extends AnyVal {
       
       inline def setAudio(value: TimeRanges): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
@@ -905,7 +914,8 @@ object anon {
       __obj.asInstanceOf[Tdecrypt]
     }
     
-    extension [Self <: Tdecrypt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tdecrypt] (val x: Self) extends AnyVal {
       
       inline def setTdecrypt(value: Double): Self = StObject.set(x, "tdecrypt", value.asInstanceOf[js.Any])
       
@@ -966,7 +976,8 @@ object anon {
       __obj.asInstanceOf[TypeofCMCDController]
     }
     
-    extension [Self <: TypeofCMCDController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofCMCDController] (val x: Self) extends AnyVal {
       
       inline def setAppendQueryToUri(value: (Any, Any) => Any): Self = StObject.set(x, "appendQueryToUri", js.Any.fromFunction2(value))
       
@@ -1011,7 +1022,8 @@ object anon {
       __obj.asInstanceOf[keyinSourceBufferNameHlsC]
     }
     
-    extension [Self <: keyinSourceBufferNameHlsC](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: keyinSourceBufferNameHlsC] (val x: Self) extends AnyVal {
       
       inline def setAudio(value: HlsChunkPerformanceTiming): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       

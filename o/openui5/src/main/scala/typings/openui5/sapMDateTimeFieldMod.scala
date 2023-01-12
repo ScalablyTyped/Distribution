@@ -431,7 +431,8 @@ object sapMDateTimeFieldMod {
       __obj.asInstanceOf[DateTimeFieldSettings]
     }
     
-    extension [Self <: DateTimeFieldSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateTimeFieldSettings] (val x: Self) extends AnyVal {
       
       inline def setDateValue(value: js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "dateValue", value.asInstanceOf[js.Any])
       

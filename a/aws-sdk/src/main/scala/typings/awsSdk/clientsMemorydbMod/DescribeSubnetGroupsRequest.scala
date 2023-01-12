@@ -28,7 +28,8 @@ object DescribeSubnetGroupsRequest {
     __obj.asInstanceOf[DescribeSubnetGroupsRequest]
   }
   
-  extension [Self <: DescribeSubnetGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSubnetGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: IntegerOptional): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

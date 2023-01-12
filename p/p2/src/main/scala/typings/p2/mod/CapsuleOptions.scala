@@ -19,7 +19,8 @@ object CapsuleOptions {
     __obj.asInstanceOf[CapsuleOptions]
   }
   
-  extension [Self <: CapsuleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapsuleOptions] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

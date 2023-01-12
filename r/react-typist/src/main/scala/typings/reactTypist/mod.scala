@@ -99,7 +99,8 @@ object mod {
         __obj.asInstanceOf[BackSpaceProps]
       }
       
-      extension [Self <: BackSpaceProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BackSpaceProps] (val x: Self) extends AnyVal {
         
         inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
@@ -136,7 +137,8 @@ object mod {
         __obj.asInstanceOf[CurrentTextProps]
       }
       
-      extension [Self <: CurrentTextProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CurrentTextProps] (val x: Self) extends AnyVal {
         
         inline def setCharIdx(value: Double): Self = StObject.set(x, "charIdx", value.asInstanceOf[js.Any])
         
@@ -169,7 +171,8 @@ object mod {
         __obj.asInstanceOf[CursorProps]
       }
       
-      extension [Self <: CursorProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CursorProps] (val x: Self) extends AnyVal {
         
         inline def setBlink(value: Boolean): Self = StObject.set(x, "blink", value.asInstanceOf[js.Any])
         
@@ -204,7 +207,8 @@ object mod {
         __obj.asInstanceOf[DelayProps]
       }
       
-      extension [Self <: DelayProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DelayProps] (val x: Self) extends AnyVal {
         
         inline def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
       }
@@ -242,7 +246,8 @@ object mod {
       __obj.asInstanceOf[TypistProps]
     }
     
-    extension [Self <: TypistProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypistProps] (val x: Self) extends AnyVal {
       
       inline def setAvgTypingDelay(value: Double): Self = StObject.set(x, "avgTypingDelay", value.asInstanceOf[js.Any])
       

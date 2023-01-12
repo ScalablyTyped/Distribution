@@ -31,7 +31,8 @@ object UpdateOptions {
     __obj.asInstanceOf[UpdateOptions]
   }
   
-  extension [Self <: UpdateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
     
     inline def setArrayFilters(value: js.Array[Document]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
     

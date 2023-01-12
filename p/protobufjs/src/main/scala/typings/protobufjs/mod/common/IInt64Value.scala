@@ -17,7 +17,8 @@ object IInt64Value {
     __obj.asInstanceOf[IInt64Value]
   }
   
-  extension [Self <: IInt64Value](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInt64Value] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Double | Long): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

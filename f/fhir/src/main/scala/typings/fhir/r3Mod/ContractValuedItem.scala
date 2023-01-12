@@ -62,7 +62,8 @@ object ContractValuedItem {
     __obj.asInstanceOf[ContractValuedItem]
   }
   
-  extension [Self <: ContractValuedItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContractValuedItem] (val x: Self) extends AnyVal {
     
     inline def setEffectiveTime(value: String): Self = StObject.set(x, "effectiveTime", value.asInstanceOf[js.Any])
     

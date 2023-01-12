@@ -574,7 +574,8 @@ object mod {
       __obj.asInstanceOf[RcResultType]
     }
     
-    extension [Self <: RcResultType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RcResultType] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

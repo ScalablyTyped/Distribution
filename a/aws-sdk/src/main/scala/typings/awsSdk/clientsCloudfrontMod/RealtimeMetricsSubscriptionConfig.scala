@@ -18,7 +18,8 @@ object RealtimeMetricsSubscriptionConfig {
     __obj.asInstanceOf[RealtimeMetricsSubscriptionConfig]
   }
   
-  extension [Self <: RealtimeMetricsSubscriptionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RealtimeMetricsSubscriptionConfig] (val x: Self) extends AnyVal {
     
     inline def setRealtimeMetricsSubscriptionStatus(value: RealtimeMetricsSubscriptionStatus): Self = StObject.set(x, "RealtimeMetricsSubscriptionStatus", value.asInstanceOf[js.Any])
   }

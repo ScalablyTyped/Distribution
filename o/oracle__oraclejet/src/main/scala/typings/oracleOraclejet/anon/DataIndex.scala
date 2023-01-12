@@ -19,7 +19,8 @@ object DataIndex {
     __obj.asInstanceOf[DataIndex[D, K]]
   }
   
-  extension [Self <: DataIndex[?, ?], D, K](x: Self & (DataIndex[D, K])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataIndex[?, ?], D, K] (val x: Self & (DataIndex[D, K])) extends AnyVal {
     
     inline def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

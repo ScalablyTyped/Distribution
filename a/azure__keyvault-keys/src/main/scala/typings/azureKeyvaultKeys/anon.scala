@@ -131,7 +131,8 @@ object anon {
       __obj.asInstanceOf[KeyPropertiesreadonlyreco]
     }
     
-    extension [Self <: KeyPropertiesreadonlyreco](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyPropertiesreadonlyreco] (val x: Self) extends AnyVal {
       
       inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
       

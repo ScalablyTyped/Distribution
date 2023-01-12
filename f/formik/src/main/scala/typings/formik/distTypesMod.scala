@@ -72,7 +72,8 @@ object distTypesMod {
       __obj.asInstanceOf[FieldInputProps[Value]]
     }
     
-    extension [Self <: FieldInputProps[?], Value](x: Self & FieldInputProps[Value]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldInputProps[?], Value] (val x: Self & FieldInputProps[Value]) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object distTypesMod {
       __obj.asInstanceOf[FieldMetaProps[Value]]
     }
     
-    extension [Self <: FieldMetaProps[?], Value](x: Self & FieldMetaProps[Value]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldMetaProps[?], Value] (val x: Self & FieldMetaProps[Value]) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -176,7 +178,8 @@ object distTypesMod {
       __obj.asInstanceOf[FormikComputedProps[Values]]
     }
     
-    extension [Self <: FormikComputedProps[?], Values](x: Self & FormikComputedProps[Values]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormikComputedProps[?], Values] (val x: Self & FormikComputedProps[Values]) extends AnyVal {
       
       inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       
@@ -265,7 +268,8 @@ object distTypesMod {
       __obj.asInstanceOf[FormikConfig[Values]]
     }
     
-    extension [Self <: FormikConfig[?], Values](x: Self & FormikConfig[Values]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormikConfig[?], Values] (val x: Self & FormikConfig[Values]) extends AnyVal {
       
       inline def setChildren(value: (js.Function1[/* props */ FormikProps[Values], ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -575,7 +579,8 @@ object distTypesMod {
       __obj.asInstanceOf[FormikRegistration]
     }
     
-    extension [Self <: FormikRegistration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormikRegistration] (val x: Self) extends AnyVal {
       
       inline def setRegisterField(value: (String, Validate) => Unit): Self = StObject.set(x, "registerField", js.Any.fromFunction2(value))
       
@@ -607,7 +612,8 @@ object distTypesMod {
       __obj.asInstanceOf[FormikSharedConfig[Props]]
     }
     
-    extension [Self <: FormikSharedConfig[?], Props](x: Self & FormikSharedConfig[Props]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormikSharedConfig[?], Props] (val x: Self & FormikSharedConfig[Props]) extends AnyVal {
       
       inline def setEnableReinitialize(value: Boolean): Self = StObject.set(x, "enableReinitialize", value.asInstanceOf[js.Any])
       
@@ -670,7 +676,8 @@ object distTypesMod {
       __obj.asInstanceOf[FormikState[Values]]
     }
     
-    extension [Self <: FormikState[?], Values](x: Self & FormikState[Values]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormikState[?], Values] (val x: Self & FormikState[Values]) extends AnyVal {
       
       inline def setErrors(value: FormikErrors[Values]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -731,7 +738,8 @@ object distTypesMod {
       __obj.asInstanceOf[SharedRenderProps[T]]
     }
     
-    extension [Self <: SharedRenderProps[?], T](x: Self & SharedRenderProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedRenderProps[?], T] (val x: Self & SharedRenderProps[T]) extends AnyVal {
       
       inline def setChildren(value: /* props */ T => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       

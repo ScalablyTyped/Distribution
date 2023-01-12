@@ -43,7 +43,8 @@ object modifiersTypesMod {
       __obj.asInstanceOf[Modifier[Defaults, State, Name, Result]]
     }
     
-    extension [Self <: Modifier[?, ?, ?, ?], Defaults, State /* <: ModifierState[Any, Any, Any] */, Name /* <: String */, Result](x: Self & (Modifier[Defaults, State, Name, Result])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Modifier[?, ?, ?, ?], Defaults, State /* <: ModifierState[Any, Any, Any] */, Name /* <: String */, Result] (val x: Self & (Modifier[Defaults, State, Name, Result])) extends AnyVal {
       
       inline def setDisable(value: () => Modifier[Defaults, State, Name, Result]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
@@ -106,7 +107,8 @@ object modifiersTypesMod {
       __obj.asInstanceOf[ModifierArg[State]]
     }
     
-    extension [Self <: ModifierArg[?], State /* <: ModifierState[Any, Any, Any] */](x: Self & ModifierArg[State]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModifierArg[?], State /* <: ModifierState[Any, Any, Any] */] (val x: Self & ModifierArg[State]) extends AnyVal {
       
       inline def setCoords(value: Point): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
@@ -170,7 +172,8 @@ object modifiersTypesMod {
       __obj.asInstanceOf[ModifierModule[Defaults, State, Result]]
     }
     
-    extension [Self <: ModifierModule[?, ?, ?], Defaults /* <: Enabled */, State /* <: ModifierState[Any, Any, Any] */, Result](x: Self & (ModifierModule[Defaults, State, Result])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModifierModule[?, ?, ?], Defaults /* <: Enabled */, State /* <: ModifierState[Any, Any, Any] */, Result] (val x: Self & (ModifierModule[Defaults, State, Result])) extends AnyVal {
       
       inline def setBeforeEnd(value: /* arg */ ModifierArg[State] => Point | Unit): Self = StObject.set(x, "beforeEnd", js.Any.fromFunction1(value))
       

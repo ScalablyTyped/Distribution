@@ -34,7 +34,8 @@ object libNodesXmlCharRefMod {
       __obj.asInstanceOf[IXmlCharRefOptions]
     }
     
-    extension [Self <: IXmlCharRefOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IXmlCharRefOptions] (val x: Self) extends AnyVal {
       
       inline def setChar(value: String): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
       

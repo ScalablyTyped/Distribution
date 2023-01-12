@@ -69,7 +69,8 @@ object anon {
       __obj.asInstanceOf[Alternatives]
     }
     
-    extension [Self <: Alternatives](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alternatives] (val x: Self) extends AnyVal {
       
       inline def setAlternatives(value: AlternativesSchema): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object anon {
       __obj.asInstanceOf[Array]
     }
     
-    extension [Self <: Array](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Array] (val x: Self) extends AnyVal {
       
       inline def setArray(value: String | `false`): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
@@ -145,7 +147,8 @@ object anon {
       __obj.asInstanceOf[Arrays]
     }
     
-    extension [Self <: Arrays](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Arrays] (val x: Self) extends AnyVal {
       
       inline def setArrays(value: Boolean): Self = StObject.set(x, "arrays", value.asInstanceOf[js.Any])
       
@@ -170,7 +173,8 @@ object anon {
       __obj.asInstanceOf[Build]
     }
     
-    extension [Self <: Build](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Build] (val x: Self) extends AnyVal {
       
       inline def setBuild(value: (/* obj */ ExtensionBoundSchema, /* desc */ Record[String, Any]) => Any): Self = StObject.set(x, "build", js.Any.fromFunction2(value))
       
@@ -191,7 +195,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -229,7 +234,8 @@ object anon {
       __obj.asInstanceOf[Global]
     }
     
-    extension [Self <: Global](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
       
       inline def setGlobal(value: String): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
@@ -257,7 +263,8 @@ object anon {
       __obj.asInstanceOf[Override]
     }
     
-    extension [Self <: Override](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Override] (val x: Self) extends AnyVal {
       
       inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     }
@@ -276,7 +283,8 @@ object anon {
       __obj.asInstanceOf[To]
     }
     
-    extension [Self <: To](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: To] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Any => Any): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
       

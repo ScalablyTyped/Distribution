@@ -99,7 +99,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[EventBusError]
     }
     
-    extension [Self <: EventBusError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventBusError] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[EventBusOptions]
     }
     
-    extension [Self <: EventBusOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventBusOptions] (val x: Self) extends AnyVal {
       
       inline def setVertxbus_randomization_factor(value: Double): Self = StObject.set(x, "vertxbus_randomization_factor", value.asInstanceOf[js.Any])
       

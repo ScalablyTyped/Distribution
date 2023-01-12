@@ -67,7 +67,8 @@ object srcBufferedProcessMod {
       __obj.asInstanceOf[NodeProcessOptions]
     }
     
-    extension [Self <: NodeProcessOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeProcessOptions] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object srcBufferedProcessMod {
       __obj.asInstanceOf[ProcessOptions]
     }
     
-    extension [Self <: ProcessOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       
@@ -153,7 +155,8 @@ object srcBufferedProcessMod {
       __obj.asInstanceOf[SpawnProcessOptions]
     }
     
-    extension [Self <: SpawnProcessOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpawnProcessOptions] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object AccountsCustomBatchRequest {
     __obj.asInstanceOf[AccountsCustomBatchRequest]
   }
   
-  extension [Self <: AccountsCustomBatchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountsCustomBatchRequest] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: js.Array[AccountsCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

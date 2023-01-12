@@ -23,7 +23,8 @@ object DependencyRevision {
     __obj.asInstanceOf[DependencyRevision]
   }
   
-  extension [Self <: DependencyRevision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DependencyRevision] (val x: Self) extends AnyVal {
     
     inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

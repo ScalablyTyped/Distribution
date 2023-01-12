@@ -39,7 +39,8 @@ object SafariExtensionMessageEvent {
     __obj.asInstanceOf[SafariExtensionMessageEvent]
   }
   
-  extension [Self <: SafariExtensionMessageEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafariExtensionMessageEvent] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

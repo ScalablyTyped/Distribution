@@ -23,7 +23,8 @@ object SDPEncodingParameters {
     __obj.asInstanceOf[SDPEncodingParameters]
   }
   
-  extension [Self <: SDPEncodingParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SDPEncodingParameters] (val x: Self) extends AnyVal {
     
     inline def setCodecPayloadType(value: Double): Self = StObject.set(x, "codecPayloadType", value.asInstanceOf[js.Any])
     

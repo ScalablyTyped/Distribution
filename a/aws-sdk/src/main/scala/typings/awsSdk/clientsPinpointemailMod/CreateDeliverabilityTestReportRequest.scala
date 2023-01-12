@@ -33,7 +33,8 @@ object CreateDeliverabilityTestReportRequest {
     __obj.asInstanceOf[CreateDeliverabilityTestReportRequest]
   }
   
-  extension [Self <: CreateDeliverabilityTestReportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDeliverabilityTestReportRequest] (val x: Self) extends AnyVal {
     
     inline def setContent(value: EmailContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     

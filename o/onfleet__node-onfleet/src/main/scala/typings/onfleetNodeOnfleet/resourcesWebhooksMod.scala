@@ -163,7 +163,8 @@ object resourcesWebhooksMod {
       __obj.asInstanceOf[GetWebhookResult]
     }
     
-    extension [Self <: GetWebhookResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetWebhookResult] (val x: Self) extends AnyVal {
       
       inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     }
@@ -187,7 +188,8 @@ object resourcesWebhooksMod {
       __obj.asInstanceOf[OnfleetWebhook]
     }
     
-    extension [Self <: OnfleetWebhook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnfleetWebhook] (val x: Self) extends AnyVal {
       
       inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
@@ -218,7 +220,8 @@ object resourcesWebhooksMod {
       __obj.asInstanceOf[Webhook]
     }
     
-    extension [Self <: Webhook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Webhook] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: OnfleetWebhook => js.Promise[WebhookResult]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
@@ -250,7 +253,8 @@ object resourcesWebhooksMod {
       __obj.asInstanceOf[WebhookResult]
     }
     
-    extension [Self <: WebhookResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebhookResult] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

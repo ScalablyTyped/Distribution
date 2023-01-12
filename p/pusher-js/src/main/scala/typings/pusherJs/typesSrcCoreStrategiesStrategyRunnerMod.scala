@@ -19,7 +19,8 @@ object typesSrcCoreStrategiesStrategyRunnerMod {
       __obj.asInstanceOf[StrategyRunner]
     }
     
-    extension [Self <: StrategyRunner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyRunner] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       

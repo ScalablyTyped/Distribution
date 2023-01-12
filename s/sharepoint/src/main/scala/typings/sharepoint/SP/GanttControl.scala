@@ -16,7 +16,8 @@ object GanttControl {
     __obj.asInstanceOf[GanttControl]
   }
   
-  extension [Self <: GanttControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttControl] (val x: Self) extends AnyVal {
     
     inline def setGet_Columns(value: () => js.Array[ColumnInfo]): Self = StObject.set(x, "get_Columns", js.Any.fromFunction0(value))
   }

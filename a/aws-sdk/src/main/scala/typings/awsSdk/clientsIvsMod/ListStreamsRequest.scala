@@ -28,7 +28,8 @@ object ListStreamsRequest {
     __obj.asInstanceOf[ListStreamsRequest]
   }
   
-  extension [Self <: ListStreamsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStreamsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilterBy(value: StreamFilters): Self = StObject.set(x, "filterBy", value.asInstanceOf[js.Any])
     

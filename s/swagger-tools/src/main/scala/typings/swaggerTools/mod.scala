@@ -72,7 +72,8 @@ object mod {
       __obj.asInstanceOf[OperationParameter]
     }
     
-    extension [Self <: OperationParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationParameter] (val x: Self) extends AnyVal {
       
       inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object mod {
       __obj.asInstanceOf[Resource]
     }
     
-    extension [Self <: Resource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
       
       inline def setResourcePath(value: String): Self = StObject.set(x, "resourcePath", value.asInstanceOf[js.Any])
     }
@@ -126,7 +128,8 @@ object mod {
       __obj.asInstanceOf[Swagger20Operation]
     }
     
-    extension [Self <: Swagger20Operation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Swagger20Operation] (val x: Self) extends AnyVal {
       
       inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
       
@@ -177,7 +180,8 @@ object mod {
       __obj.asInstanceOf[Swagger20Response]
     }
     
-    extension [Self <: Swagger20Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Swagger20Response] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -221,7 +225,8 @@ object mod {
       __obj.asInstanceOf[SwaggerParameterSchema]
     }
     
-    extension [Self <: SwaggerParameterSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwaggerParameterSchema] (val x: Self) extends AnyVal {
       
       inline def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
       
@@ -278,7 +283,8 @@ object mod {
       __obj.asInstanceOf[SwaggerRequestParameter[T]]
     }
     
-    extension [Self <: SwaggerRequestParameter[?], T](x: Self & SwaggerRequestParameter[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwaggerRequestParameter[?], T] (val x: Self & SwaggerRequestParameter[T]) extends AnyVal {
       
       inline def setOriginalValue(value: Any): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
       
@@ -316,7 +322,8 @@ object mod {
       __obj.asInstanceOf[SwaggerRouter12Options]
     }
     
-    extension [Self <: SwaggerRouter12Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwaggerRouter12Options] (val x: Self) extends AnyVal {
       
       inline def setControllers(value: SwaggerRouter12OptionsControllers | String | js.Array[String]): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
       
@@ -358,7 +365,8 @@ object mod {
       __obj.asInstanceOf[SwaggerRouter20Options]
     }
     
-    extension [Self <: SwaggerRouter20Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwaggerRouter20Options] (val x: Self) extends AnyVal {
       
       inline def setControllers(value: SwaggerRouter20OptionsControllers | String | js.Array[String]): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
       
@@ -397,7 +405,8 @@ object mod {
       __obj.asInstanceOf[SwaggerSecurityError]
     }
     
-    extension [Self <: SwaggerSecurityError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwaggerSecurityError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -448,7 +457,8 @@ object mod {
       __obj.asInstanceOf[SwaggerUiOptions]
     }
     
-    extension [Self <: SwaggerUiOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwaggerUiOptions] (val x: Self) extends AnyVal {
       
       inline def setApiDocs(value: String): Self = StObject.set(x, "apiDocs", value.asInstanceOf[js.Any])
       
@@ -483,7 +493,8 @@ object mod {
       __obj.asInstanceOf[SwaggerValidatorOptions]
     }
     
-    extension [Self <: SwaggerValidatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwaggerValidatorOptions] (val x: Self) extends AnyVal {
       
       inline def setValidateResponse(value: Boolean): Self = StObject.set(x, "validateResponse", value.asInstanceOf[js.Any])
       

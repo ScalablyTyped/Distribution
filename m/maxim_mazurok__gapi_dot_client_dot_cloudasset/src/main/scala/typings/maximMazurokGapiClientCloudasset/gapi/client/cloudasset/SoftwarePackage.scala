@@ -43,7 +43,8 @@ object SoftwarePackage {
     __obj.asInstanceOf[SoftwarePackage]
   }
   
-  extension [Self <: SoftwarePackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoftwarePackage] (val x: Self) extends AnyVal {
     
     inline def setAptPackage(value: VersionedPackage): Self = StObject.set(x, "aptPackage", value.asInstanceOf[js.Any])
     

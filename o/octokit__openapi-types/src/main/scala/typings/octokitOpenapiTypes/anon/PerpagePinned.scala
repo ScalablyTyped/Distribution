@@ -27,7 +27,8 @@ object PerpagePinned {
     __obj.asInstanceOf[PerpagePinned]
   }
   
-  extension [Self <: PerpagePinned](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerpagePinned] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

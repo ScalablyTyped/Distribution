@@ -18,7 +18,8 @@ object TelephonyConfig {
     __obj.asInstanceOf[TelephonyConfig]
   }
   
-  extension [Self <: TelephonyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TelephonyConfig] (val x: Self) extends AnyVal {
     
     inline def setDistributions(value: DistributionList): Self = StObject.set(x, "Distributions", value.asInstanceOf[js.Any])
     

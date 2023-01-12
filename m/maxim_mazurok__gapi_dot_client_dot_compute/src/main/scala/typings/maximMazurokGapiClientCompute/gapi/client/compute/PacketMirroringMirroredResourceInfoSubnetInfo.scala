@@ -19,7 +19,8 @@ object PacketMirroringMirroredResourceInfoSubnetInfo {
     __obj.asInstanceOf[PacketMirroringMirroredResourceInfoSubnetInfo]
   }
   
-  extension [Self <: PacketMirroringMirroredResourceInfoSubnetInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PacketMirroringMirroredResourceInfoSubnetInfo] (val x: Self) extends AnyVal {
     
     inline def setCanonicalUrl(value: String): Self = StObject.set(x, "canonicalUrl", value.asInstanceOf[js.Any])
     

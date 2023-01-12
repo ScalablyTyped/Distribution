@@ -120,7 +120,8 @@ object buildSrcDatetimeMod {
       __obj.asInstanceOf[DateTime]
     }
     
-    extension [Self <: DateTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateTime] (val x: Self) extends AnyVal {
       
       inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -193,7 +194,8 @@ object buildSrcDatetimeMod {
       __obj.asInstanceOf[DateTimeExpr]
     }
     
-    extension [Self <: DateTimeExpr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateTimeExpr] (val x: Self) extends AnyVal {
       
       inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       

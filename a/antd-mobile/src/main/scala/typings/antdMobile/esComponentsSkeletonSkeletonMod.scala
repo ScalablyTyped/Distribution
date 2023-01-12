@@ -318,7 +318,8 @@ object esComponentsSkeletonSkeletonMod {
       __obj.asInstanceOf[SkeletonParagraphProps]
     }
     
-    extension [Self <: SkeletonParagraphProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkeletonParagraphProps] (val x: Self) extends AnyVal {
       
       inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
@@ -788,7 +789,8 @@ object esComponentsSkeletonSkeletonMod {
       __obj.asInstanceOf[SkeletonProps]
     }
     
-    extension [Self <: SkeletonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkeletonProps] (val x: Self) extends AnyVal {
       
       inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
@@ -1254,7 +1256,8 @@ object esComponentsSkeletonSkeletonMod {
       __obj.asInstanceOf[SkeletonTitleProps]
     }
     
-    extension [Self <: SkeletonTitleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkeletonTitleProps] (val x: Self) extends AnyVal {
       
       inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       

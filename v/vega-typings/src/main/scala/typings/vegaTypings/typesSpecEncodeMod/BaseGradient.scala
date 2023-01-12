@@ -20,7 +20,8 @@ object BaseGradient {
     __obj.asInstanceOf[BaseGradient]
   }
   
-  extension [Self <: BaseGradient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseGradient] (val x: Self) extends AnyVal {
     
     inline def setGradient(value: linear | radial): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
   }

@@ -49,7 +49,8 @@ object distEsmNodeSrcContextMod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setAppCheckToken(value: String): Self = StObject.set(x, "appCheckToken", value.asInstanceOf[js.Any])
       

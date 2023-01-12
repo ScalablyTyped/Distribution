@@ -50,7 +50,8 @@ object IAbstractPlugin {
     __obj.asInstanceOf[IAbstractPlugin]
   }
   
-  extension [Self <: IAbstractPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAbstractPlugin] (val x: Self) extends AnyVal {
     
     inline def setClonePlugin(value: /* overrideCfg */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "clonePlugin", js.Any.fromFunction1(value))
     

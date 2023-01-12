@@ -20,7 +20,8 @@ object InputTextMessageContent {
     __obj.asInstanceOf[InputTextMessageContent]
   }
   
-  extension [Self <: InputTextMessageContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputTextMessageContent] (val x: Self) extends AnyVal {
     
     inline def setDisable_web_page_preview(value: Boolean): Self = StObject.set(x, "disable_web_page_preview", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object DeploymentMachinesChangeEvent {
     __obj.asInstanceOf[DeploymentMachinesChangeEvent]
   }
   
-  extension [Self <: DeploymentMachinesChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentMachinesChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setMachineGroupReference(value: DeploymentGroupReference): Self = StObject.set(x, "machineGroupReference", value.asInstanceOf[js.Any])
     

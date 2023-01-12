@@ -36,7 +36,8 @@ object typesDevtoolsExplorerMod {
     @js.native
     val ^ : ForwardRefExoticComponent[HTMLAttributes[HTMLDivElement] & RefAttributes[HTMLDivElement]] = js.native
     
-    extension [Self <: Entry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     }
@@ -83,7 +84,8 @@ object typesDevtoolsExplorerMod {
       __obj.asInstanceOf[ExpanderProps]
     }
     
-    extension [Self <: ExpanderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpanderProps] (val x: Self) extends AnyVal {
       
       inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
@@ -125,7 +127,8 @@ object typesDevtoolsExplorerMod {
       __obj.asInstanceOf[ExplorerProps]
     }
     
-    extension [Self <: ExplorerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExplorerProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultExpanded(value: `true` | (Record[String, Boolean])): Self = StObject.set(x, "defaultExpanded", value.asInstanceOf[js.Any])
       
@@ -218,7 +221,8 @@ object typesDevtoolsExplorerMod {
       __obj.asInstanceOf[RendererProps]
     }
     
-    extension [Self <: RendererProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RendererProps] (val x: Self) extends AnyVal {
       
       inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       

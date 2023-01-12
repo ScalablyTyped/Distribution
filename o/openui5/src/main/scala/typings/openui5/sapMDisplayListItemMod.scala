@@ -244,7 +244,8 @@ object sapMDisplayListItemMod {
       __obj.asInstanceOf[DisplayListItemSettings]
     }
     
-    extension [Self <: DisplayListItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayListItemSettings] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String | PropertyBindingInfo): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

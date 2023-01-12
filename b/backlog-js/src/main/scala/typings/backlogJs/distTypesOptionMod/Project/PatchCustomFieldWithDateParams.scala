@@ -25,7 +25,8 @@ object PatchCustomFieldWithDateParams {
     __obj.asInstanceOf[PatchCustomFieldWithDateParams]
   }
   
-  extension [Self <: PatchCustomFieldWithDateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchCustomFieldWithDateParams] (val x: Self) extends AnyVal {
     
     inline def setInitialDate(value: String): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
     

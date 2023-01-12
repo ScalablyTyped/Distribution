@@ -124,7 +124,8 @@ object anon {
       __obj.asInstanceOf[TypeofParser]
     }
     
-    extension [Self <: TypeofParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofParser] (val x: Self) extends AnyVal {
       
       inline def setAcorn(value: Typeofacorn): Self = StObject.set(x, "acorn", value.asInstanceOf[js.Any])
       

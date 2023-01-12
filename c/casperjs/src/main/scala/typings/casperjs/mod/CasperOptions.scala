@@ -66,7 +66,8 @@ object CasperOptions {
     __obj.asInstanceOf[CasperOptions]
   }
   
-  extension [Self <: CasperOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CasperOptions] (val x: Self) extends AnyVal {
     
     inline def setClientScripts(value: js.Array[Any]): Self = StObject.set(x, "clientScripts", value.asInstanceOf[js.Any])
     

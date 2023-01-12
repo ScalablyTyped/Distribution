@@ -28,7 +28,8 @@ object ClientAuthenticationSettingInfo {
     __obj.asInstanceOf[ClientAuthenticationSettingInfo]
   }
   
-  extension [Self <: ClientAuthenticationSettingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientAuthenticationSettingInfo] (val x: Self) extends AnyVal {
     
     inline def setLastUpdatedDateTime(value: js.Date): Self = StObject.set(x, "LastUpdatedDateTime", value.asInstanceOf[js.Any])
     

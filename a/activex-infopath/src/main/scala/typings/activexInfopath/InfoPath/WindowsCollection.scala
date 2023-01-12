@@ -21,7 +21,8 @@ object WindowsCollection {
     __obj.asInstanceOf[WindowsCollection]
   }
   
-  extension [Self <: WindowsCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsCollection] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

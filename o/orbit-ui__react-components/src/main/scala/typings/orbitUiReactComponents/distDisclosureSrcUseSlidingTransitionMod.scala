@@ -61,7 +61,8 @@ object distDisclosureSrcUseSlidingTransitionMod {
       __obj.asInstanceOf[SlidingTransition]
     }
     
-    extension [Self <: SlidingTransition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlidingTransition] (val x: Self) extends AnyVal {
       
       inline def setTransitionClasses(value: String): Self = StObject.set(x, "transitionClasses", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object distDisclosureSrcUseSlidingTransitionMod {
       __obj.asInstanceOf[SlidingTransitionState]
     }
     
-    extension [Self <: SlidingTransitionState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlidingTransitionState] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: SlidingDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object SalesforceMetadata {
     __obj.asInstanceOf[SalesforceMetadata]
   }
   
-  extension [Self <: SalesforceMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SalesforceMetadata] (val x: Self) extends AnyVal {
     
     inline def setDataTransferApis(value: SalesforceDataTransferApiList): Self = StObject.set(x, "dataTransferApis", value.asInstanceOf[js.Any])
     

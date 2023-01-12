@@ -23,7 +23,8 @@ object RevokeDomainAccessRequest {
     __obj.asInstanceOf[RevokeDomainAccessRequest]
   }
   
-  extension [Self <: RevokeDomainAccessRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevokeDomainAccessRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

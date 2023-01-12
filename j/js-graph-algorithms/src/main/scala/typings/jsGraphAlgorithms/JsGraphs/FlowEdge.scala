@@ -43,7 +43,8 @@ object FlowEdge {
     __obj.asInstanceOf[FlowEdge]
   }
   
-  extension [Self <: FlowEdge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowEdge] (val x: Self) extends AnyVal {
     
     inline def setAddResidualFlowTo(value: (Double, Double) => Unit): Self = StObject.set(x, "addResidualFlowTo", js.Any.fromFunction2(value))
     

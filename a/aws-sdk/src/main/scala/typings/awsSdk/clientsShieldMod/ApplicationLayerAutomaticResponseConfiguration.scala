@@ -23,7 +23,8 @@ object ApplicationLayerAutomaticResponseConfiguration {
     __obj.asInstanceOf[ApplicationLayerAutomaticResponseConfiguration]
   }
   
-  extension [Self <: ApplicationLayerAutomaticResponseConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationLayerAutomaticResponseConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ResponseAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

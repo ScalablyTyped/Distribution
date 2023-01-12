@@ -15,7 +15,8 @@ object Matches {
     __obj.asInstanceOf[Matches]
   }
   
-  extension [Self <: Matches](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Matches] (val x: Self) extends AnyVal {
     
     inline def setMatches(value: Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
   }

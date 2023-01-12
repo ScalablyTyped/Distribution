@@ -152,7 +152,8 @@ object ojMenuButtonEventMap {
     __obj.asInstanceOf[ojMenuButtonEventMap]
   }
   
-  extension [Self <: ojMenuButtonEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojMenuButtonEventMap] (val x: Self) extends AnyVal {
     
     inline def setOjAction(value: ojAction): Self = StObject.set(x, "ojAction", value.asInstanceOf[js.Any])
   }

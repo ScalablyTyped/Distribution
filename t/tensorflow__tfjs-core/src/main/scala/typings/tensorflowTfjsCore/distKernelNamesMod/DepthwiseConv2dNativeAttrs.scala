@@ -36,7 +36,8 @@ object DepthwiseConv2dNativeAttrs {
     __obj.asInstanceOf[DepthwiseConv2dNativeAttrs]
   }
   
-  extension [Self <: DepthwiseConv2dNativeAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DepthwiseConv2dNativeAttrs] (val x: Self) extends AnyVal {
     
     inline def setDataFormat(value: NHWC | NCHW): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
     

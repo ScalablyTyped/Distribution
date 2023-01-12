@@ -33,7 +33,8 @@ object WithdrawOpts {
     __obj.asInstanceOf[WithdrawOpts]
   }
   
-  extension [Self <: WithdrawOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WithdrawOpts] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

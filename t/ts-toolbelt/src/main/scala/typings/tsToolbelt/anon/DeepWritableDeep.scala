@@ -19,7 +19,8 @@ object DeepWritableDeep {
     __obj.asInstanceOf[DeepWritableDeep[O]]
   }
   
-  extension [Self <: DeepWritableDeep[?], O /* <: js.Object */](x: Self & DeepWritableDeep[O]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeepWritableDeep[?], O /* <: js.Object */] (val x: Self & DeepWritableDeep[O]) extends AnyVal {
     
     inline def setDeep(value: WritableDeep[O]): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     

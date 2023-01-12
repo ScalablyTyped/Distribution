@@ -32,7 +32,8 @@ object Category {
     __obj.asInstanceOf[Category]
   }
   
-  extension [Self <: Category](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
     
     inline def setAuditRefs(value: js.Array[AuditRef]): Self = StObject.set(x, "auditRefs", value.asInstanceOf[js.Any])
     

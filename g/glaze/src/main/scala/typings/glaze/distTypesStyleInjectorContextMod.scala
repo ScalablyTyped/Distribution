@@ -33,7 +33,8 @@ object distTypesStyleInjectorContextMod {
       __obj.asInstanceOf[StyleInjectorProviderProps]
     }
     
-    extension [Self <: StyleInjectorProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleInjectorProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

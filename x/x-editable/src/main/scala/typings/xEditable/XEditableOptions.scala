@@ -67,7 +67,8 @@ object XEditableOptions {
     __obj.asInstanceOf[XEditableOptions]
   }
   
-  extension [Self <: XEditableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEditableOptions] (val x: Self) extends AnyVal {
     
     inline def setAjaxOptions(value: Any): Self = StObject.set(x, "ajaxOptions", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object XExactName {
     __obj.asInstanceOf[XExactName]
   }
   
-  extension [Self <: XExactName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XExactName] (val x: Self) extends AnyVal {
     
     inline def setGetExactName(value: String => String): Self = StObject.set(x, "getExactName", js.Any.fromFunction1(value))
   }

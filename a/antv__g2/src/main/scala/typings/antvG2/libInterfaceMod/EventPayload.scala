@@ -20,7 +20,8 @@ object EventPayload {
     __obj.asInstanceOf[EventPayload]
   }
   
-  extension [Self <: EventPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventPayload] (val x: Self) extends AnyVal {
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

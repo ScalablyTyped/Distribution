@@ -19,7 +19,8 @@ object QueryTransform {
     __obj.asInstanceOf[QueryTransform]
   }
   
-  extension [Self <: QueryTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryTransform] (val x: Self) extends AnyVal {
     
     inline def setAddOrReplaceParams(value: js.Array[QueryKeyValue]): Self = StObject.set(x, "addOrReplaceParams", value.asInstanceOf[js.Any])
     

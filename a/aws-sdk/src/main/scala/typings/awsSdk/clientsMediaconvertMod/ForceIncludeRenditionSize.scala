@@ -23,7 +23,8 @@ object ForceIncludeRenditionSize {
     __obj.asInstanceOf[ForceIncludeRenditionSize]
   }
   
-  extension [Self <: ForceIncludeRenditionSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForceIncludeRenditionSize] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: integerMin32Max8192): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     

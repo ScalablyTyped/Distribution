@@ -28,7 +28,8 @@ object DeleteModelVersionRequest {
     __obj.asInstanceOf[DeleteModelVersionRequest]
   }
   
-  extension [Self <: DeleteModelVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteModelVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setModelId(value: modelIdentifier): Self = StObject.set(x, "modelId", value.asInstanceOf[js.Any])
     

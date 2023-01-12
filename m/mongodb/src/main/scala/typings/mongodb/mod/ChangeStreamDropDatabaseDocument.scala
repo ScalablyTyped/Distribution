@@ -23,7 +23,8 @@ object ChangeStreamDropDatabaseDocument {
     __obj.asInstanceOf[ChangeStreamDropDatabaseDocument]
   }
   
-  extension [Self <: ChangeStreamDropDatabaseDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeStreamDropDatabaseDocument] (val x: Self) extends AnyVal {
     
     inline def setNs(value: typings.mongodb.anon.Db): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
     

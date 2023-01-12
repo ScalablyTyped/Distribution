@@ -16,7 +16,8 @@ object RealtimeListener {
     __obj.asInstanceOf[RealtimeListener]
   }
   
-  extension [Self <: RealtimeListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RealtimeListener] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
   }

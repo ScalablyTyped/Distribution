@@ -38,7 +38,8 @@ object ListAnomalyGroupRelatedMetricsRequest {
     __obj.asInstanceOf[ListAnomalyGroupRelatedMetricsRequest]
   }
   
-  extension [Self <: ListAnomalyGroupRelatedMetricsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAnomalyGroupRelatedMetricsRequest] (val x: Self) extends AnyVal {
     
     inline def setAnomalyDetectorArn(value: Arn): Self = StObject.set(x, "AnomalyDetectorArn", value.asInstanceOf[js.Any])
     

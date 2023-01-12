@@ -22,7 +22,8 @@ object Partialvisiblebooleanwidt {
     __obj.asInstanceOf[Partialvisiblebooleanwidt]
   }
   
-  extension [Self <: Partialvisiblebooleanwidt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialvisiblebooleanwidt] (val x: Self) extends AnyVal {
     
     inline def setFillcolor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "fillcolor", value.asInstanceOf[js.Any])
     

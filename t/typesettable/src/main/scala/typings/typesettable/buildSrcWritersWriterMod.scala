@@ -85,7 +85,8 @@ object buildSrcWritersWriterMod {
       __obj.asInstanceOf[IPen]
     }
     
-    extension [Self <: IPen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPen] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -116,7 +117,8 @@ object buildSrcWritersWriterMod {
       __obj.asInstanceOf[ITransform]
     }
     
-    extension [Self <: ITransform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITransform] (val x: Self) extends AnyVal {
       
       inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
@@ -166,7 +168,8 @@ object buildSrcWritersWriterMod {
       __obj.asInstanceOf[IWriteOptions]
     }
     
-    extension [Self <: IWriteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWriteOptions] (val x: Self) extends AnyVal {
       
       inline def setTextRotation(value: Double): Self = StObject.set(x, "textRotation", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object VolumeFrom {
     __obj.asInstanceOf[VolumeFrom]
   }
   
-  extension [Self <: VolumeFrom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeFrom] (val x: Self) extends AnyVal {
     
     inline def setReadOnly(value: BoxedBoolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     

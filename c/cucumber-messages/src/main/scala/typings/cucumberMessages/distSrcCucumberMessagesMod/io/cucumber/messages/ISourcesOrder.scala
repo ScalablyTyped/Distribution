@@ -22,7 +22,8 @@ object ISourcesOrder {
     __obj.asInstanceOf[ISourcesOrder]
   }
   
-  extension [Self <: ISourcesOrder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISourcesOrder] (val x: Self) extends AnyVal {
     
     inline def setSeed(
       value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any)

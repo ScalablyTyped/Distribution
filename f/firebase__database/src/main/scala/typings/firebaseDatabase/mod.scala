@@ -531,7 +531,8 @@ object mod {
       __obj.asInstanceOf[ListenOptions]
     }
     
-    extension [Self <: ListenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListenOptions] (val x: Self) extends AnyVal {
       
       inline def setOnlyOnce(value: Boolean): Self = StObject.set(x, "onlyOnce", value.asInstanceOf[js.Any])
       
@@ -691,7 +692,8 @@ object mod {
       __obj.asInstanceOf[TransactionOptions]
     }
     
-    extension [Self <: TransactionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionOptions] (val x: Self) extends AnyVal {
       
       inline def setApplyLocally(value: Boolean): Self = StObject.set(x, "applyLocally", value.asInstanceOf[js.Any])
       

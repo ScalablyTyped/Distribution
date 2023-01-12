@@ -31,7 +31,8 @@ object Index {
     __obj.asInstanceOf[Index]
   }
   
-  extension [Self <: Index](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
     
     inline def setCancelable(value: `true`): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     

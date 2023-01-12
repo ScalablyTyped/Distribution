@@ -23,7 +23,8 @@ object ASPxClientCardViewFocusedCellChangingEventArgs {
     __obj.asInstanceOf[ASPxClientCardViewFocusedCellChangingEventArgs]
   }
   
-  extension [Self <: ASPxClientCardViewFocusedCellChangingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCardViewFocusedCellChangingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCellInfo(value: ASPxClientCardViewCellInfo): Self = StObject.set(x, "cellInfo", value.asInstanceOf[js.Any])
   }

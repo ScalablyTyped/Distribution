@@ -22,7 +22,8 @@ object GetOobConfirmationCodeResponse {
     __obj.asInstanceOf[GetOobConfirmationCodeResponse]
   }
   
-  extension [Self <: GetOobConfirmationCodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOobConfirmationCodeResponse] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

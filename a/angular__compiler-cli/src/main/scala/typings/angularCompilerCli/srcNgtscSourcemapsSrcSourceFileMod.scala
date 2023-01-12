@@ -130,7 +130,8 @@ object srcNgtscSourcemapsSrcSourceFileMod {
       __obj.asInstanceOf[Mapping]
     }
     
-    extension [Self <: Mapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mapping] (val x: Self) extends AnyVal {
       
       inline def setGeneratedSegment(value: SegmentMarker): Self = StObject.set(x, "generatedSegment", value.asInstanceOf[js.Any])
       

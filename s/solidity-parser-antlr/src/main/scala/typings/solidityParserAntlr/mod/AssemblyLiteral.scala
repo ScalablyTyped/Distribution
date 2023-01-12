@@ -21,7 +21,8 @@ object AssemblyLiteral {
     __obj.asInstanceOf[AssemblyLiteral]
   }
   
-  extension [Self <: AssemblyLiteral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssemblyLiteral] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

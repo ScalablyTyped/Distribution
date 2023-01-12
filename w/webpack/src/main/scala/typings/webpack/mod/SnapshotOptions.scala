@@ -47,7 +47,8 @@ object SnapshotOptions {
     __obj.asInstanceOf[SnapshotOptions]
   }
   
-  extension [Self <: SnapshotOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotOptions] (val x: Self) extends AnyVal {
     
     inline def setBuildDependencies(value: Timestamp): Self = StObject.set(x, "buildDependencies", value.asInstanceOf[js.Any])
     

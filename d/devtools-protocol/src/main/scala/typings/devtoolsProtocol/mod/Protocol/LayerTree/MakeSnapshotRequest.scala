@@ -18,7 +18,8 @@ object MakeSnapshotRequest {
     __obj.asInstanceOf[MakeSnapshotRequest]
   }
   
-  extension [Self <: MakeSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MakeSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setLayerId(value: LayerId): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
   }

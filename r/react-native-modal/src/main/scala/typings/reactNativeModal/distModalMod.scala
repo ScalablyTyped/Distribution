@@ -291,7 +291,8 @@ object distModalMod {
       __obj.asInstanceOf[ModalProps]
     }
     
-    extension [Self <: ModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
       
       inline def setAnimationIn(
         value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.reactNativeModal.reactNativeModalStrings.bounce, typings.reactNativeModal.reactNativeModalStrings.flash, typings.reactNativeModal.reactNativeModalStrings.jello */ Any
@@ -446,7 +447,8 @@ object distModalMod {
       __obj.asInstanceOf[OnSwipeCompleteParams]
     }
     
-    extension [Self <: OnSwipeCompleteParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnSwipeCompleteParams] (val x: Self) extends AnyVal {
       
       inline def setSwipingDirection(value: Direction): Self = StObject.set(x, "swipingDirection", value.asInstanceOf[js.Any])
     }
@@ -479,7 +481,8 @@ object distModalMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setDeviceHeight(value: Double): Self = StObject.set(x, "deviceHeight", value.asInstanceOf[js.Any])
       

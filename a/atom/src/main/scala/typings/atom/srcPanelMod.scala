@@ -56,7 +56,8 @@ object srcPanelMod {
       __obj.asInstanceOf[Panel[T]]
     }
     
-    extension [Self <: Panel[?], T](x: Self & Panel[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Panel[?], T] (val x: Self & Panel[T]) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

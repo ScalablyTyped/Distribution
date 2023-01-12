@@ -36,7 +36,8 @@ object VideoBandwidthProfileOptions {
     __obj.asInstanceOf[VideoBandwidthProfileOptions]
   }
   
-  extension [Self <: VideoBandwidthProfileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoBandwidthProfileOptions] (val x: Self) extends AnyVal {
     
     inline def setClientTrackSwitchOffControl(value: ClientTrackSwitchOffControl): Self = StObject.set(x, "clientTrackSwitchOffControl", value.asInstanceOf[js.Any])
     

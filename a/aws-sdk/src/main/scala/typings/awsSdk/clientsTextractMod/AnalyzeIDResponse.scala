@@ -25,7 +25,8 @@ object AnalyzeIDResponse {
     __obj.asInstanceOf[AnalyzeIDResponse]
   }
   
-  extension [Self <: AnalyzeIDResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyzeIDResponse] (val x: Self) extends AnyVal {
     
     inline def setAnalyzeIDModelVersion(value: String): Self = StObject.set(x, "AnalyzeIDModelVersion", value.asInstanceOf[js.Any])
     

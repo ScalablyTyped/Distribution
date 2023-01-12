@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[KeenAutoTrackingConfig]
     }
     
-    extension [Self <: KeenAutoTrackingConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeenAutoTrackingConfig] (val x: Self) extends AnyVal {
       
       inline def setCollectIpAddress(value: Boolean): Self = StObject.set(x, "collectIpAddress", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object mod {
       __obj.asInstanceOf[KeenClient]
     }
     
-    extension [Self <: KeenClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeenClient] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Host): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -166,7 +168,8 @@ object mod {
       __obj.asInstanceOf[KeenTracking]
     }
     
-    extension [Self <: KeenTracking](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeenTracking] (val x: Self) extends AnyVal {
       
       inline def setExtendEvents(value: Any => KeenClient): Self = StObject.set(x, "extendEvents", js.Any.fromFunction1(value))
       

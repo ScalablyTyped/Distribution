@@ -48,7 +48,8 @@ object JobBookmarkEntry {
     __obj.asInstanceOf[JobBookmarkEntry]
   }
   
-  extension [Self <: JobBookmarkEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobBookmarkEntry] (val x: Self) extends AnyVal {
     
     inline def setAttempt(value: IntegerValue): Self = StObject.set(x, "Attempt", value.asInstanceOf[js.Any])
     

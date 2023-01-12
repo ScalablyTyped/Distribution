@@ -28,7 +28,8 @@ object FileSecurityState {
     __obj.asInstanceOf[FileSecurityState]
   }
   
-  extension [Self <: FileSecurityState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSecurityState] (val x: Self) extends AnyVal {
     
     inline def setFileHash(value: NullableOption[FileHash]): Self = StObject.set(x, "fileHash", value.asInstanceOf[js.Any])
     

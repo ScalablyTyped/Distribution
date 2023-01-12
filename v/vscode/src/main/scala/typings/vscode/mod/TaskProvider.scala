@@ -42,7 +42,8 @@ object TaskProvider {
     __obj.asInstanceOf[TaskProvider[T]]
   }
   
-  extension [Self <: TaskProvider[?], T /* <: Task */](x: Self & TaskProvider[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskProvider[?], T /* <: Task */] (val x: Self & TaskProvider[T]) extends AnyVal {
     
     inline def setProvideTasks(value: CancellationToken => ProviderResult[js.Array[T]]): Self = StObject.set(x, "provideTasks", js.Any.fromFunction1(value))
     

@@ -49,7 +49,8 @@ object IgGridResponsiveAllowedColumnWidthPerType {
     __obj.asInstanceOf[IgGridResponsiveAllowedColumnWidthPerType]
   }
   
-  extension [Self <: IgGridResponsiveAllowedColumnWidthPerType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridResponsiveAllowedColumnWidthPerType] (val x: Self) extends AnyVal {
     
     inline def setBool(value: Double): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
     

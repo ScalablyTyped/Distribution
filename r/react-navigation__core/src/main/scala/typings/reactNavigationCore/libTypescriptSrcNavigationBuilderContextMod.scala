@@ -68,7 +68,8 @@ object libTypescriptSrcNavigationBuilderContextMod extends Shortcut {
       __obj.asInstanceOf[KeyedListenerMap]
     }
     
-    extension [Self <: KeyedListenerMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyedListenerMap] (val x: Self) extends AnyVal {
       
       inline def setBeforeRemove(value: /* action */ NavigationAction => Boolean): Self = StObject.set(x, "beforeRemove", js.Any.fromFunction1(value))
       
@@ -92,7 +93,8 @@ object libTypescriptSrcNavigationBuilderContextMod extends Shortcut {
       __obj.asInstanceOf[ListenerMap]
     }
     
-    extension [Self <: ListenerMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListenerMap] (val x: Self) extends AnyVal {
       
       inline def setAction(value: (/* action */ NavigationAction, /* visitedNavigators */ js.UndefOr[Set[String]]) => Boolean): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
       

@@ -19,7 +19,8 @@ object SearchLinearInterpolationSmoothingModel {
     __obj.asInstanceOf[SearchLinearInterpolationSmoothingModel]
   }
   
-  extension [Self <: SearchLinearInterpolationSmoothingModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchLinearInterpolationSmoothingModel] (val x: Self) extends AnyVal {
     
     inline def setBigram_lambda(value: double): Self = StObject.set(x, "bigram_lambda", value.asInstanceOf[js.Any])
     

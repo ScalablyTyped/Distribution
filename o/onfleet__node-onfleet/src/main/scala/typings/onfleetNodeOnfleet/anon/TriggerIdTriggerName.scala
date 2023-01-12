@@ -22,7 +22,8 @@ object TriggerIdTriggerName {
     __obj.asInstanceOf[TriggerIdTriggerName]
   }
   
-  extension [Self <: TriggerIdTriggerName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TriggerIdTriggerName] (val x: Self) extends AnyVal {
     
     inline def setTriggerId(value: `2`): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
     

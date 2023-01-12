@@ -43,7 +43,8 @@ object libTypescriptComponentsRowItemMod {
       __obj.asInstanceOf[Props[T]]
     }
     
-    extension [Self <: Props[?], T](x: Self & Props[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?], T] (val x: Self & Props[T]) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       

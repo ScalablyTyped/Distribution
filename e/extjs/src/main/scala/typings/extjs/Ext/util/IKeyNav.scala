@@ -59,7 +59,8 @@ object IKeyNav {
     __obj.asInstanceOf[IKeyNav]
   }
   
-  extension [Self <: IKeyNav](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKeyNav] (val x: Self) extends AnyVal {
     
     inline def setDefaultEventAction(value: String): Self = StObject.set(x, "defaultEventAction", value.asInstanceOf[js.Any])
     

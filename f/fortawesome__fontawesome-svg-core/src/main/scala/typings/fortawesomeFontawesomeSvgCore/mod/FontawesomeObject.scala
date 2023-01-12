@@ -21,7 +21,8 @@ object FontawesomeObject {
     __obj.asInstanceOf[FontawesomeObject]
   }
   
-  extension [Self <: FontawesomeObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontawesomeObject] (val x: Self) extends AnyVal {
     
     inline def setAbstract(value: js.Array[AbstractElement]): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
     

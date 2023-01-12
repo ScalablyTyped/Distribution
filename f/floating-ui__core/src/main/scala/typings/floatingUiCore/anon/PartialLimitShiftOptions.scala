@@ -22,7 +22,8 @@ object PartialLimitShiftOptions {
     __obj.asInstanceOf[PartialLimitShiftOptions]
   }
   
-  extension [Self <: PartialLimitShiftOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLimitShiftOptions] (val x: Self) extends AnyVal {
     
     inline def setCrossAxis(value: Boolean): Self = StObject.set(x, "crossAxis", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IDOptions {
     __obj.asInstanceOf[IDOptions]
   }
   
-  extension [Self <: IDOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDOptions] (val x: Self) extends AnyVal {
     
     inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
     

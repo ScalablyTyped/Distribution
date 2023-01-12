@@ -19,7 +19,8 @@ object GoogleCloudDialogflowV2beta1IntentMessageLinkOutSuggestion {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageLinkOutSuggestion]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageLinkOutSuggestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageLinkOutSuggestion] (val x: Self) extends AnyVal {
     
     inline def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
     

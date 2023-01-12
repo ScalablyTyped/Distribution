@@ -336,7 +336,8 @@ object esComponentsSliderThumbMod extends Shortcut {
       __obj.asInstanceOf[ThumbProps]
     }
     
-    extension [Self <: ThumbProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThumbProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

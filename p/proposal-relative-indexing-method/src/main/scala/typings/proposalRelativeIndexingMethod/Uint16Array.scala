@@ -20,7 +20,8 @@ object Uint16Array {
     __obj.asInstanceOf[Uint16Array]
   }
   
-  extension [Self <: Uint16Array](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Uint16Array] (val x: Self) extends AnyVal {
     
     inline def setAt(value: Double => js.UndefOr[Double]): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
   }

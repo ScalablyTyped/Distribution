@@ -28,7 +28,8 @@ object NaturalEffect {
     __obj.asInstanceOf[NaturalEffect]
   }
   
-  extension [Self <: NaturalEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NaturalEffect] (val x: Self) extends AnyVal {
     
     inline def setEffect(value: EffectConstant): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object distLibCommandsMemoryUSAGEMod {
       __obj.asInstanceOf[MemoryUsageOptions]
     }
     
-    extension [Self <: MemoryUsageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemoryUsageOptions] (val x: Self) extends AnyVal {
       
       inline def setSAMPLES(value: Double): Self = StObject.set(x, "SAMPLES", value.asInstanceOf[js.Any])
       

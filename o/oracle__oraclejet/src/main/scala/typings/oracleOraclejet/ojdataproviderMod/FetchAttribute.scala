@@ -17,7 +17,8 @@ object FetchAttribute {
     __obj.asInstanceOf[FetchAttribute]
   }
   
-  extension [Self <: FetchAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchAttribute] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: js.Array[String | FetchAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

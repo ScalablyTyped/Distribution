@@ -26,7 +26,8 @@ object JobOutboundMessageChannelError {
     __obj.asInstanceOf[JobOutboundMessageChannelError]
   }
   
-  extension [Self <: JobOutboundMessageChannelError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobOutboundMessageChannelError] (val x: Self) extends AnyVal {
     
     inline def setError(value: JsonValue): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

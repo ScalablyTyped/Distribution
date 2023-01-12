@@ -27,7 +27,8 @@ object EventBridge {
     __obj.asInstanceOf[EventBridge]
   }
   
-  extension [Self <: EventBridge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventBridge] (val x: Self) extends AnyVal {
     
     inline def setEventBus(value: String): Self = StObject.set(x, "eventBus", value.asInstanceOf[js.Any])
     

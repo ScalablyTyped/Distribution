@@ -33,7 +33,8 @@ object XAxisCurrentDateIndicatorEventsOptions {
     __obj.asInstanceOf[XAxisCurrentDateIndicatorEventsOptions]
   }
   
-  extension [Self <: XAxisCurrentDateIndicatorEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAxisCurrentDateIndicatorEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setClick(value: EventCallbackFunction[PlotLineOrBand]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     

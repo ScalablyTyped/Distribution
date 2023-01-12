@@ -33,7 +33,8 @@ object ListStageDeploymentsRequest {
     __obj.asInstanceOf[ListStageDeploymentsRequest]
   }
   
-  extension [Self <: ListStageDeploymentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStageDeploymentsRequest] (val x: Self) extends AnyVal {
     
     inline def setGameName(value: GameName): Self = StObject.set(x, "GameName", value.asInstanceOf[js.Any])
     

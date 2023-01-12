@@ -182,7 +182,8 @@ object XSlideShowView {
     __obj.asInstanceOf[XSlideShowView]
   }
   
-  extension [Self <: XSlideShowView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSlideShowView] (val x: Self) extends AnyVal {
     
     inline def setAddMouseListener(value: XMouseListener => Unit): Self = StObject.set(x, "addMouseListener", js.Any.fromFunction1(value))
     

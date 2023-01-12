@@ -43,7 +43,8 @@ object UserPoolDescriptionType {
     __obj.asInstanceOf[UserPoolDescriptionType]
   }
   
-  extension [Self <: UserPoolDescriptionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserPoolDescriptionType] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     

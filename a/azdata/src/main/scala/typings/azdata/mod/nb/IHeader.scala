@@ -23,7 +23,8 @@ object IHeader {
     __obj.asInstanceOf[IHeader]
   }
   
-  extension [Self <: IHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHeader] (val x: Self) extends AnyVal {
     
     inline def setMsg_id(value: String): Self = StObject.set(x, "msg_id", value.asInstanceOf[js.Any])
     

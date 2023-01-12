@@ -28,7 +28,8 @@ object ActivityListItem {
     __obj.asInstanceOf[ActivityListItem]
   }
   
-  extension [Self <: ActivityListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityListItem] (val x: Self) extends AnyVal {
     
     inline def setActivityArn(value: Arn): Self = StObject.set(x, "activityArn", value.asInstanceOf[js.Any])
     

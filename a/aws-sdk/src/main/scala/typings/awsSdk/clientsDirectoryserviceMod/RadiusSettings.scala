@@ -53,7 +53,8 @@ object RadiusSettings {
     __obj.asInstanceOf[RadiusSettings]
   }
   
-  extension [Self <: RadiusSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadiusSettings] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationProtocol(value: RadiusAuthenticationProtocol): Self = StObject.set(x, "AuthenticationProtocol", value.asInstanceOf[js.Any])
     

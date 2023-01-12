@@ -33,7 +33,8 @@ object LaunchPermission {
     __obj.asInstanceOf[LaunchPermission]
   }
   
-  extension [Self <: LaunchPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchPermission] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: PermissionGroup): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     

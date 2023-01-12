@@ -18,7 +18,8 @@ object QueryArrayConfig {
     __obj.asInstanceOf[QueryArrayConfig[I]]
   }
   
-  extension [Self <: QueryArrayConfig[?], I /* <: js.Array[Any] */](x: Self & QueryArrayConfig[I]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryArrayConfig[?], I /* <: js.Array[Any] */] (val x: Self & QueryArrayConfig[I]) extends AnyVal {
     
     inline def setRowMode(value: array): Self = StObject.set(x, "rowMode", value.asInstanceOf[js.Any])
   }

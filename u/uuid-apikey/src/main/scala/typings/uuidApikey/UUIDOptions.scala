@@ -15,7 +15,8 @@ object UUIDOptions {
     __obj.asInstanceOf[UUIDOptions]
   }
   
-  extension [Self <: UUIDOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UUIDOptions] (val x: Self) extends AnyVal {
     
     inline def setNoDashes(value: Boolean): Self = StObject.set(x, "noDashes", value.asInstanceOf[js.Any])
   }

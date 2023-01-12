@@ -27,7 +27,8 @@ object SignInFrequencySessionControl {
     __obj.asInstanceOf[SignInFrequencySessionControl]
   }
   
-  extension [Self <: SignInFrequencySessionControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignInFrequencySessionControl] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationType(value: NullableOption[SignInFrequencyAuthenticationType]): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
     

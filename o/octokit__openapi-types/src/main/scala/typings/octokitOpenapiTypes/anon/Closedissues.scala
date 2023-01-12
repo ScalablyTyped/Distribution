@@ -19,7 +19,8 @@ object Closedissues {
     __obj.asInstanceOf[Closedissues]
   }
   
-  extension [Self <: Closedissues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Closedissues] (val x: Self) extends AnyVal {
     
     inline def setClosed_issues(value: Double): Self = StObject.set(x, "closed_issues", value.asInstanceOf[js.Any])
     

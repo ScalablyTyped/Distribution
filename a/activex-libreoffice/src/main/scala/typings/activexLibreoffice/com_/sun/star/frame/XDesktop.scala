@@ -118,7 +118,8 @@ object XDesktop {
     __obj.asInstanceOf[XDesktop]
   }
   
-  extension [Self <: XDesktop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDesktop] (val x: Self) extends AnyVal {
     
     inline def setAddTerminateListener(value: XTerminateListener => Unit): Self = StObject.set(x, "addTerminateListener", js.Any.fromFunction1(value))
     

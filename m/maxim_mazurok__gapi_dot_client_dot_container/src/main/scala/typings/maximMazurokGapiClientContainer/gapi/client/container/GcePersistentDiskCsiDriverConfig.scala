@@ -16,7 +16,8 @@ object GcePersistentDiskCsiDriverConfig {
     __obj.asInstanceOf[GcePersistentDiskCsiDriverConfig]
   }
   
-  extension [Self <: GcePersistentDiskCsiDriverConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GcePersistentDiskCsiDriverConfig] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object IInspectRequestMsg {
     __obj.asInstanceOf[IInspectRequestMsg]
   }
   
-  extension [Self <: IInspectRequestMsg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInspectRequestMsg] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Cursorpos): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

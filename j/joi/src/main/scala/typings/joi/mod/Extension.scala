@@ -55,7 +55,8 @@ object Extension {
     __obj.asInstanceOf[Extension]
   }
   
-  extension [Self <: Extension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Extension] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: /* repeated */ SchemaLike => Schema[Any]): Self = StObject.set(x, "args", js.Any.fromFunction1(value))
     

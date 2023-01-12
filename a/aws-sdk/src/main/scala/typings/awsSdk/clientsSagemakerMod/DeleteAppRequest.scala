@@ -33,7 +33,8 @@ object DeleteAppRequest {
     __obj.asInstanceOf[DeleteAppRequest]
   }
   
-  extension [Self <: DeleteAppRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAppRequest] (val x: Self) extends AnyVal {
     
     inline def setAppName(value: AppName): Self = StObject.set(x, "AppName", value.asInstanceOf[js.Any])
     

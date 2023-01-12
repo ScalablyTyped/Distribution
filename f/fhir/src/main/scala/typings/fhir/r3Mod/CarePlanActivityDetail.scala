@@ -128,7 +128,8 @@ object CarePlanActivityDetail {
     __obj.asInstanceOf[CarePlanActivityDetail]
   }
   
-  extension [Self <: CarePlanActivityDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CarePlanActivityDetail] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

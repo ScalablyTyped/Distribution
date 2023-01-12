@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[ColorDescriptor]
     }
     
-    extension [Self <: ColorDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorDescriptor] (val x: Self) extends AnyVal {
       
       inline def setModel(value: rgb | hsl | hwb): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       

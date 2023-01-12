@@ -23,7 +23,8 @@ object DescribeUserRequest {
     __obj.asInstanceOf[DescribeUserRequest]
   }
   
-  extension [Self <: DescribeUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeUserRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentityStoreId(value: IdentityStoreId): Self = StObject.set(x, "IdentityStoreId", value.asInstanceOf[js.Any])
     

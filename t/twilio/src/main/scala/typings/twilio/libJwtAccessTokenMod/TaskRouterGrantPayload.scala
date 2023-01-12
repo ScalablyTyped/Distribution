@@ -19,7 +19,8 @@ object TaskRouterGrantPayload {
     __obj.asInstanceOf[TaskRouterGrantPayload]
   }
   
-  extension [Self <: TaskRouterGrantPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskRouterGrantPayload] (val x: Self) extends AnyVal {
     
     inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     

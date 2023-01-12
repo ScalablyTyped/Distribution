@@ -21,7 +21,8 @@ object Mapping {
     __obj.asInstanceOf[Mapping]
   }
   
-  extension [Self <: Mapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mapping] (val x: Self) extends AnyVal {
     
     inline def setGenerated(value: Position): Self = StObject.set(x, "generated", value.asInstanceOf[js.Any])
     

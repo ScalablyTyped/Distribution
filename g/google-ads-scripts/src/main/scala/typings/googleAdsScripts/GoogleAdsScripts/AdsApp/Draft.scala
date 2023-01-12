@@ -63,7 +63,8 @@ object Draft {
     __obj.asInstanceOf[Draft]
   }
   
-  extension [Self <: Draft](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Draft] (val x: Self) extends AnyVal {
     
     inline def setGetBaseCampaign(value: () => Campaign): Self = StObject.set(x, "getBaseCampaign", js.Any.fromFunction0(value))
     

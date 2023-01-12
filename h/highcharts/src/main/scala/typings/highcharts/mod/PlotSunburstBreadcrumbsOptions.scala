@@ -101,7 +101,8 @@ object PlotSunburstBreadcrumbsOptions {
     __obj.asInstanceOf[PlotSunburstBreadcrumbsOptions]
   }
   
-  extension [Self <: PlotSunburstBreadcrumbsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSunburstBreadcrumbsOptions] (val x: Self) extends AnyVal {
     
     inline def setButtonSpacing(value: Double): Self = StObject.set(x, "buttonSpacing", value.asInstanceOf[js.Any])
     

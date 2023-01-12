@@ -38,7 +38,8 @@ object buildToolsLoadMetroConfigMod {
       __obj.asInstanceOf[ConfigLoadingContext]
     }
     
-    extension [Self <: ConfigLoadingContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigLoadingContext] (val x: Self) extends AnyVal {
       
       inline def setPlatforms(value: Dictname): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object buildToolsLoadMetroConfigMod {
       __obj.asInstanceOf[ConfigOptionsT]
     }
     
-    extension [Self <: ConfigOptionsT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptionsT] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -143,7 +145,8 @@ object buildToolsLoadMetroConfigMod {
       __obj.asInstanceOf[MetroConfig]
     }
     
-    extension [Self <: MetroConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetroConfig] (val x: Self) extends AnyVal {
       
       inline def setReporter(value: Any): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object NameNodeid {
     __obj.asInstanceOf[NameNodeid]
   }
   
-  extension [Self <: NameNodeid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NameNodeid] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

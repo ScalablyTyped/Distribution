@@ -27,7 +27,8 @@ object AggregateExpression {
     __obj.asInstanceOf[AggregateExpression]
   }
   
-  extension [Self <: AggregateExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateExpression] (val x: Self) extends AnyVal {
     
     inline def setAggregation(value: String): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
     

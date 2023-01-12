@@ -37,7 +37,8 @@ object OO {
       __obj.asInstanceOf[Cloneable]
     }
     
-    extension [Self <: Cloneable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cloneable] (val x: Self) extends AnyVal {
       
       inline def setClone_(value: Any => Any): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
     }
@@ -514,7 +515,8 @@ object OO {
       __obj.asInstanceOf[NodeLike]
     }
     
-    extension [Self <: NodeLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeLike] (val x: Self) extends AnyVal {
       
       inline def setCloneNode(value: Any => Any): Self = StObject.set(x, "cloneNode", js.Any.fromFunction1(value))
     }

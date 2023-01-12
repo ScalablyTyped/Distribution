@@ -21,7 +21,8 @@ object AscensionMode {
     __obj.asInstanceOf[AscensionMode]
   }
   
-  extension [Self <: AscensionMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AscensionMode] (val x: Self) extends AnyVal {
     
     inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     

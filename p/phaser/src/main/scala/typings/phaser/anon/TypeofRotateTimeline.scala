@@ -25,7 +25,8 @@ object TypeofRotateTimeline {
     __obj.asInstanceOf[TypeofRotateTimeline]
   }
   
-  extension [Self <: TypeofRotateTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRotateTimeline] (val x: Self) extends AnyVal {
     
     inline def setENTRIES(value: Double): Self = StObject.set(x, "ENTRIES", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object XInvocation2 {
     __obj.asInstanceOf[XInvocation2]
   }
   
-  extension [Self <: XInvocation2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInvocation2] (val x: Self) extends AnyVal {
     
     inline def setGetInfo(value: () => SafeArray[InvocationInfo]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
     

@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[BoxKeyPair]
     }
     
-    extension [Self <: BoxKeyPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxKeyPair] (val x: Self) extends AnyVal {
       
       inline def setBoxPk(value: js.typedarray.Uint8Array): Self = StObject.set(x, "boxPk", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object mod {
       __obj.asInstanceOf[BoxSharedSecret]
     }
     
-    extension [Self <: BoxSharedSecret](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxSharedSecret] (val x: Self) extends AnyVal {
       
       inline def setBoxK(value: js.typedarray.Uint8Array): Self = StObject.set(x, "boxK", value.asInstanceOf[js.Any])
     }
@@ -170,7 +172,8 @@ object mod {
       __obj.asInstanceOf[Nacl]
     }
     
-    extension [Self <: Nacl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Nacl] (val x: Self) extends AnyVal {
       
       inline def setCrypto_box(
         value: (js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.typedarray.Uint8Array) => js.typedarray.Uint8Array
@@ -259,7 +262,8 @@ object mod {
       __obj.asInstanceOf[SignKeyPair]
     }
     
-    extension [Self <: SignKeyPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignKeyPair] (val x: Self) extends AnyVal {
       
       inline def setSignPk(value: js.typedarray.Uint8Array): Self = StObject.set(x, "signPk", value.asInstanceOf[js.Any])
       

@@ -60,7 +60,8 @@ object AMap {
         __obj.asInstanceOf[EventMap]
       }
       
-      extension [Self <: EventMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
         
         inline def setHide(value: Event_[hide, Unit]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
         
@@ -97,7 +98,8 @@ object AMap {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setOffset(value: Pixel): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         

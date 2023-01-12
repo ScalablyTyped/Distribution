@@ -47,7 +47,8 @@ object LocalFileSystemSync {
     __obj.asInstanceOf[LocalFileSystemSync]
   }
   
-  extension [Self <: LocalFileSystemSync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalFileSystemSync] (val x: Self) extends AnyVal {
     
     inline def setPERSISTENT(value: Double): Self = StObject.set(x, "PERSISTENT", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object NodeConstraint {
     __obj.asInstanceOf[NodeConstraint]
   }
   
-  extension [Self <: NodeConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeConstraint] (val x: Self) extends AnyVal {
     
     inline def setDatatype(value: IRIREF): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
     

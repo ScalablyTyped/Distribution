@@ -21,7 +21,8 @@ object StateSchema {
     __obj.asInstanceOf[StateSchema[TC]]
   }
   
-  extension [Self <: StateSchema[?], TC](x: Self & StateSchema[TC]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateSchema[?], TC] (val x: Self & StateSchema[TC]) extends AnyVal {
     
     inline def setContext(value: Partial[TC]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

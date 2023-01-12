@@ -75,7 +75,8 @@ object libFormContextMod {
       __obj.asInstanceOf[FormContextProps]
     }
     
-    extension [Self <: FormContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormContextProps] (val x: Self) extends AnyVal {
       
       inline def setColon(value: Boolean): Self = StObject.set(x, "colon", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object libFormContextMod {
       __obj.asInstanceOf[FormItemPrefixContextProps]
     }
     
-    extension [Self <: FormItemPrefixContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormItemPrefixContextProps] (val x: Self) extends AnyVal {
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
@@ -155,7 +157,8 @@ object libFormContextMod {
       __obj.asInstanceOf[FormItemStatusContextProps]
     }
     
-    extension [Self <: FormItemStatusContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormItemStatusContextProps] (val x: Self) extends AnyVal {
       
       inline def setFeedbackIcon(value: ReactNode): Self = StObject.set(x, "feedbackIcon", value.asInstanceOf[js.Any])
       
@@ -193,7 +196,8 @@ object libFormContextMod {
       __obj.asInstanceOf[FormProviderProps]
     }
     
-    extension [Self <: FormProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -229,7 +233,8 @@ object libFormContextMod {
       __obj.asInstanceOf[NoFormStyleProps]
     }
     
-    extension [Self <: NoFormStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoFormStyleProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

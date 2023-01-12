@@ -15,7 +15,8 @@ object EntryIDCollection {
     __obj.asInstanceOf[EntryIDCollection]
   }
   
-  extension [Self <: EntryIDCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntryIDCollection] (val x: Self) extends AnyVal {
     
     inline def setEntryIDCollection(value: String): Self = StObject.set(x, "EntryIDCollection", value.asInstanceOf[js.Any])
   }

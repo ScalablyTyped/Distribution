@@ -71,7 +71,8 @@ object dxTabPanelOptions {
     __obj.asInstanceOf[dxTabPanelOptions[TItem, TKey]]
   }
   
-  extension [Self <: dxTabPanelOptions[?, ?], TItem /* <: ItemLike */, TKey](x: Self & (dxTabPanelOptions[TItem, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxTabPanelOptions[?, ?], TItem /* <: ItemLike */, TKey] (val x: Self & (dxTabPanelOptions[TItem, TKey])) extends AnyVal {
     
     inline def setItemTitleTemplate(
       value: template | (js.Function3[

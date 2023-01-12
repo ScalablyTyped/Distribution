@@ -33,7 +33,8 @@ object AdminRespondToAuthChallengeResponse {
     __obj.asInstanceOf[AdminRespondToAuthChallengeResponse]
   }
   
-  extension [Self <: AdminRespondToAuthChallengeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminRespondToAuthChallengeResponse] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationResult(value: AuthenticationResultType): Self = StObject.set(x, "AuthenticationResult", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object SvmEndpoint {
     __obj.asInstanceOf[SvmEndpoint]
   }
   
-  extension [Self <: SvmEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SvmEndpoint] (val x: Self) extends AnyVal {
     
     inline def setDNSName(value: DNSName): Self = StObject.set(x, "DNSName", value.asInstanceOf[js.Any])
     

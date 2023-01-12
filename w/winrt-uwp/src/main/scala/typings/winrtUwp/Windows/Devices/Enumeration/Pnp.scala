@@ -107,7 +107,8 @@ object Pnp {
       __obj.asInstanceOf[PnpObject]
     }
     
-    extension [Self <: PnpObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PnpObject] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object Pnp {
       __obj.asInstanceOf[PnpObjectUpdate]
     }
     
-    extension [Self <: PnpObjectUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PnpObjectUpdate] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

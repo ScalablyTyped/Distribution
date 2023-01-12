@@ -21,7 +21,8 @@ object ObjectReplaceOp {
     __obj.asInstanceOf[ObjectReplaceOp]
   }
   
-  extension [Self <: ObjectReplaceOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectReplaceOp] (val x: Self) extends AnyVal {
     
     inline def setOd(value: Any): Self = StObject.set(x, "od", value.asInstanceOf[js.Any])
     

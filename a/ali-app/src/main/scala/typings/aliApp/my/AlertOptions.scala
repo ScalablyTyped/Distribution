@@ -26,7 +26,8 @@ object AlertOptions {
     __obj.asInstanceOf[AlertOptions]
   }
   
-  extension [Self <: AlertOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlertOptions] (val x: Self) extends AnyVal {
     
     inline def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object MemberIdArnPair {
     __obj.asInstanceOf[MemberIdArnPair]
   }
   
-  extension [Self <: MemberIdArnPair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberIdArnPair] (val x: Self) extends AnyVal {
     
     inline def setMemberArn(value: Arn): Self = StObject.set(x, "MemberArn", value.asInstanceOf[js.Any])
     

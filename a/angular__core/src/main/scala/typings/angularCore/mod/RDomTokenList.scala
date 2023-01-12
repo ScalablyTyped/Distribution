@@ -17,7 +17,8 @@ object RDomTokenList {
     __obj.asInstanceOf[RDomTokenList]
   }
   
-  extension [Self <: RDomTokenList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RDomTokenList] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: String => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

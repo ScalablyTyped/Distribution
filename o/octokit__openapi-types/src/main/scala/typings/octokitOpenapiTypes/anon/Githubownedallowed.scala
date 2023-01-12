@@ -22,7 +22,8 @@ object Githubownedallowed {
     __obj.asInstanceOf[Githubownedallowed]
   }
   
-  extension [Self <: Githubownedallowed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Githubownedallowed] (val x: Self) extends AnyVal {
     
     inline def setGithub_owned_allowed(value: Boolean): Self = StObject.set(x, "github_owned_allowed", value.asInstanceOf[js.Any])
     

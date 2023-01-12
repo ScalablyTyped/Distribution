@@ -17,7 +17,8 @@ object PromptToInstall {
     __obj.asInstanceOf[PromptToInstall]
   }
   
-  extension [Self <: PromptToInstall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromptToInstall] (val x: Self) extends AnyVal {
     
     inline def setPromptToInstall(value: Boolean): Self = StObject.set(x, "promptToInstall", value.asInstanceOf[js.Any])
     

@@ -94,7 +94,8 @@ object libDsvVisualizationSchedulerJobMod {
       __obj.asInstanceOf[VisualizationSchedulerJob]
     }
     
-    extension [Self <: VisualizationSchedulerJob](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisualizationSchedulerJob] (val x: Self) extends AnyVal {
       
       inline def setFilters(value: StringDictionary[Any]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       

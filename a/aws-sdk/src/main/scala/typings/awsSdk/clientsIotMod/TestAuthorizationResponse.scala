@@ -18,7 +18,8 @@ object TestAuthorizationResponse {
     __obj.asInstanceOf[TestAuthorizationResponse]
   }
   
-  extension [Self <: TestAuthorizationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestAuthorizationResponse] (val x: Self) extends AnyVal {
     
     inline def setAuthResults(value: AuthResults): Self = StObject.set(x, "authResults", value.asInstanceOf[js.Any])
     

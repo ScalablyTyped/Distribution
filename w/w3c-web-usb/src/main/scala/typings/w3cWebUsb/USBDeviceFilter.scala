@@ -25,7 +25,8 @@ object USBDeviceFilter {
     __obj.asInstanceOf[USBDeviceFilter]
   }
   
-  extension [Self <: USBDeviceFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: USBDeviceFilter] (val x: Self) extends AnyVal {
     
     inline def setClassCode(value: Double): Self = StObject.set(x, "classCode", value.asInstanceOf[js.Any])
     

@@ -72,7 +72,8 @@ object FileTypes {
     __obj.asInstanceOf[FileTypes]
   }
   
-  extension [Self <: FileTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileTypes] (val x: Self) extends AnyVal {
     
     inline def setAllowedTargets(value: NameString): Self = StObject.set(x, "allowedTargets", value.asInstanceOf[js.Any])
     

@@ -73,7 +73,8 @@ object ImageScanner {
     __obj.asInstanceOf[ImageScanner]
   }
   
-  extension [Self <: ImageScanner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageScanner] (val x: Self) extends AnyVal {
     
     inline def setAutoConfiguration(value: ImageScannerAutoConfiguration): Self = StObject.set(x, "autoConfiguration", value.asInstanceOf[js.Any])
     

@@ -119,7 +119,8 @@ object DurandalViewEngineModule {
     __obj.asInstanceOf[DurandalViewEngineModule]
   }
   
-  extension [Self <: DurandalViewEngineModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DurandalViewEngineModule] (val x: Self) extends AnyVal {
     
     inline def setConvertViewIdToRequirePath(value: String => String): Self = StObject.set(x, "convertViewIdToRequirePath", js.Any.fromFunction1(value))
     

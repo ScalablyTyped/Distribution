@@ -136,7 +136,8 @@ object mod {
       __obj.asInstanceOf[DefaultSettings]
     }
     
-    extension [Self <: DefaultSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultSettings] (val x: Self) extends AnyVal {
       
       inline def setAPP_NAME(value: String): Self = StObject.set(x, "APP_NAME", value.asInstanceOf[js.Any])
       

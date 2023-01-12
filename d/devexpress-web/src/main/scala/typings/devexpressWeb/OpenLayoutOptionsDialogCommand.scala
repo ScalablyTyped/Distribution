@@ -23,7 +23,8 @@ object OpenLayoutOptionsDialogCommand {
     __obj.asInstanceOf[OpenLayoutOptionsDialogCommand]
   }
   
-  extension [Self <: OpenLayoutOptionsDialogCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenLayoutOptionsDialogCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

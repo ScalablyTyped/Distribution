@@ -18,7 +18,8 @@ object MessagesParseRequest {
     __obj.asInstanceOf[MessagesParseRequest]
   }
   
-  extension [Self <: MessagesParseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagesParseRequest] (val x: Self) extends AnyVal {
     
     inline def setRaw_message(value: String): Self = StObject.set(x, "raw_message", value.asInstanceOf[js.Any])
   }

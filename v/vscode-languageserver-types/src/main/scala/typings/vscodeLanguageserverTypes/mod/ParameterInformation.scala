@@ -46,7 +46,8 @@ object ParameterInformation {
   inline def create(label: js.Tuple2[uinteger, uinteger]): ParameterInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any]).asInstanceOf[ParameterInformation]
   inline def create(label: js.Tuple2[uinteger, uinteger], documentation: String): ParameterInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).asInstanceOf[ParameterInformation]
   
-  extension [Self <: ParameterInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterInformation] (val x: Self) extends AnyVal {
     
     inline def setDocumentation(value: String | MarkupContent): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     

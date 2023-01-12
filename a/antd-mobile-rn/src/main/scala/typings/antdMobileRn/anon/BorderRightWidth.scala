@@ -17,7 +17,8 @@ object BorderRightWidth {
     __obj.asInstanceOf[BorderRightWidth]
   }
   
-  extension [Self <: BorderRightWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderRightWidth] (val x: Self) extends AnyVal {
     
     inline def setBorderRightWidth(value: Double): Self = StObject.set(x, "borderRightWidth", value.asInstanceOf[js.Any])
     

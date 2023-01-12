@@ -106,7 +106,8 @@ object ListrSubClassOptions {
     __obj.asInstanceOf[ListrSubClassOptions[Ctx, Renderer]]
   }
   
-  extension [Self <: ListrSubClassOptions[?, ?], Ctx, Renderer /* <: ListrRendererValue */](x: Self & (ListrSubClassOptions[Ctx, Renderer])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListrSubClassOptions[?, ?], Ctx, Renderer /* <: ListrRendererValue */] (val x: Self & (ListrSubClassOptions[Ctx, Renderer])) extends AnyVal {
     
     inline def setCollectErrors(value: `false` | minimal | full): Self = StObject.set(x, "collectErrors", value.asInstanceOf[js.Any])
     

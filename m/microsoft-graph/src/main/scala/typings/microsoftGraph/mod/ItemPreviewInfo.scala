@@ -19,7 +19,8 @@ object ItemPreviewInfo {
     __obj.asInstanceOf[ItemPreviewInfo]
   }
   
-  extension [Self <: ItemPreviewInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemPreviewInfo] (val x: Self) extends AnyVal {
     
     inline def setGetUrl(value: NullableOption[String]): Self = StObject.set(x, "getUrl", value.asInstanceOf[js.Any])
     

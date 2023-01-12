@@ -21,7 +21,8 @@ object Months {
     __obj.asInstanceOf[Months[Month]]
   }
   
-  extension [Self <: Months[?], Month /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  bbox :@nivo/calendar.@nivo/calendar/dist/types/types.BBox} */ js.Any */](x: Self & Months[Month]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Months[?], Month /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  bbox :@nivo/calendar.@nivo/calendar/dist/types/types.BBox} */ js.Any */] (val x: Self & Months[Month]) extends AnyVal {
     
     inline def setMonths(value: js.Array[Month]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
     

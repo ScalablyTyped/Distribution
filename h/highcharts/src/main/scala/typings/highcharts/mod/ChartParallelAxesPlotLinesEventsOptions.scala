@@ -34,7 +34,8 @@ object ChartParallelAxesPlotLinesEventsOptions {
     __obj.asInstanceOf[ChartParallelAxesPlotLinesEventsOptions]
   }
   
-  extension [Self <: ChartParallelAxesPlotLinesEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartParallelAxesPlotLinesEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setClick(value: EventCallbackFunction[PlotLineOrBand]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     

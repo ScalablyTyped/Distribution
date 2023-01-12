@@ -19,7 +19,8 @@ object Task {
     __obj.asInstanceOf[Task]
   }
   
-  extension [Self <: Task](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: Double => scala.Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     

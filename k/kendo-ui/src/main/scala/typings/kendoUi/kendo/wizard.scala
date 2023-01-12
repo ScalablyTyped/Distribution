@@ -31,7 +31,8 @@ object wizard {
       __obj.asInstanceOf[Step]
     }
     
-    extension [Self <: Step](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: () => js.Array[Any]): Self = StObject.set(x, "buttons", js.Any.fromFunction0(value))
       
@@ -84,7 +85,8 @@ object wizard {
       __obj.asInstanceOf[WizardStepOptions]
     }
     
-    extension [Self <: WizardStepOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WizardStepOptions] (val x: Self) extends AnyVal {
       
       inline def setActionBar(value: Boolean): Self = StObject.set(x, "actionBar", value.asInstanceOf[js.Any])
       

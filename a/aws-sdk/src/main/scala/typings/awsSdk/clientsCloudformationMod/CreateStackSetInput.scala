@@ -88,7 +88,8 @@ object CreateStackSetInput {
     __obj.asInstanceOf[CreateStackSetInput]
   }
   
-  extension [Self <: CreateStackSetInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStackSetInput] (val x: Self) extends AnyVal {
     
     inline def setAdministrationRoleARN(value: RoleARN_): Self = StObject.set(x, "AdministrationRoleARN", value.asInstanceOf[js.Any])
     

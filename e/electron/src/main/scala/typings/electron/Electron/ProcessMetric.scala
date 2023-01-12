@@ -88,7 +88,8 @@ object ProcessMetric {
     __obj.asInstanceOf[ProcessMetric]
   }
   
-  extension [Self <: ProcessMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessMetric] (val x: Self) extends AnyVal {
     
     inline def setCpu(value: CPUUsage): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     

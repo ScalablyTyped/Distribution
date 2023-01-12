@@ -15,7 +15,8 @@ object EnumValuesSuspendUnprocessed {
     __obj.asInstanceOf[EnumValuesSuspendUnprocessed]
   }
   
-  extension [Self <: EnumValuesSuspendUnprocessed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesSuspendUnprocessed] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: SuspendUnprocessed): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

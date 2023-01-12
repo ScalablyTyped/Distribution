@@ -64,7 +64,8 @@ object Product {
     __obj.asInstanceOf[Product]
   }
   
-  extension [Self <: Product](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Product] (val x: Self) extends AnyVal {
     
     inline def setAvailableEndTime(value: String): Self = StObject.set(x, "availableEndTime", value.asInstanceOf[js.Any])
     

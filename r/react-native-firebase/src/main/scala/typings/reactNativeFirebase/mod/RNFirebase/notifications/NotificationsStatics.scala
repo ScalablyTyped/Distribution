@@ -19,7 +19,8 @@ object NotificationsStatics {
     __obj.asInstanceOf[NotificationsStatics]
   }
   
-  extension [Self <: NotificationsStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationsStatics] (val x: Self) extends AnyVal {
     
     inline def setAndroid(value: Action): Self = StObject.set(x, "Android", value.asInstanceOf[js.Any])
     

@@ -118,7 +118,8 @@ object MultiFactorResolver {
     __obj.asInstanceOf[MultiFactorResolver]
   }
   
-  extension [Self <: MultiFactorResolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiFactorResolver] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

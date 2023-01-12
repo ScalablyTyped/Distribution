@@ -23,7 +23,8 @@ object TerminateInstanceInAutoScalingGroupType {
     __obj.asInstanceOf[TerminateInstanceInAutoScalingGroupType]
   }
   
-  extension [Self <: TerminateInstanceInAutoScalingGroupType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminateInstanceInAutoScalingGroupType] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: XmlStringMaxLen19): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

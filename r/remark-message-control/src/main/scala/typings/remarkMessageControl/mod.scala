@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[MessageControl]
     }
     
-    extension [Self <: MessageControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageControl] (val x: Self) extends AnyVal {
       
       inline def setDefault(
         value: typings.unifiedMessageControl.mod.Options => js.Function2[/* tree */ Node, /* file */ typings.unifiedMessageControl.mod.VFile, Unit]

@@ -15,7 +15,8 @@ object BatteryColor {
     __obj.asInstanceOf[BatteryColor]
   }
   
-  extension [Self <: BatteryColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatteryColor] (val x: Self) extends AnyVal {
     
     inline def setBatteryColor(value: String): Self = StObject.set(x, "batteryColor", value.asInstanceOf[js.Any])
   }

@@ -234,7 +234,8 @@ object distSrcUtilsDocMod {
       __obj.asInstanceOf[DocOpts]
     }
     
-    extension [Self <: DocOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocOpts] (val x: Self) extends AnyVal {
       
       inline def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
       

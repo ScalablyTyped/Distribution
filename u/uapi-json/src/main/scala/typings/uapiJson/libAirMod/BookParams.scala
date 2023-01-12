@@ -37,7 +37,8 @@ object BookParams {
     __obj.asInstanceOf[BookParams]
   }
   
-  extension [Self <: BookParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BookParams] (val x: Self) extends AnyVal {
     
     inline def setAllowWaitlist(value: Boolean): Self = StObject.set(x, "allowWaitlist", value.asInstanceOf[js.Any])
     

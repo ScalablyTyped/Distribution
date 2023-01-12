@@ -24,7 +24,8 @@ object NumericBackreference {
     __obj.asInstanceOf[NumericBackreference]
   }
   
-  extension [Self <: NumericBackreference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumericBackreference] (val x: Self) extends AnyVal {
     
     inline def setKind(value: number): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

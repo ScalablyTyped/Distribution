@@ -322,7 +322,8 @@ object typingsOperationsMod {
       __obj.asInstanceOf[ChangedCell]
     }
     
-    extension [Self <: ChangedCell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangedCell] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: SimpleCellAddress_): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -347,7 +348,8 @@ object typingsOperationsMod {
       __obj.asInstanceOf[ColumnsRemoval]
     }
     
-    extension [Self <: ColumnsRemoval](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnsRemoval] (val x: Self) extends AnyVal {
       
       inline def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
       
@@ -380,7 +382,8 @@ object typingsOperationsMod {
       __obj.asInstanceOf[MoveCellsResult]
     }
     
-    extension [Self <: MoveCellsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoveCellsResult] (val x: Self) extends AnyVal {
       
       inline def setAddedGlobalNamedExpressions(value: js.Array[String]): Self = StObject.set(x, "addedGlobalNamedExpressions", value.asInstanceOf[js.Any])
       
@@ -411,7 +414,8 @@ object typingsOperationsMod {
       __obj.asInstanceOf[RowsRemoval]
     }
     
-    extension [Self <: RowsRemoval](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowsRemoval] (val x: Self) extends AnyVal {
       
       inline def setRemovedCells(value: js.Array[ChangedCell]): Self = StObject.set(x, "removedCells", value.asInstanceOf[js.Any])
       

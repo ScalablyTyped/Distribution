@@ -40,7 +40,8 @@ object DescribeHumanTaskUiResponse {
     __obj.asInstanceOf[DescribeHumanTaskUiResponse]
   }
   
-  extension [Self <: DescribeHumanTaskUiResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeHumanTaskUiResponse] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

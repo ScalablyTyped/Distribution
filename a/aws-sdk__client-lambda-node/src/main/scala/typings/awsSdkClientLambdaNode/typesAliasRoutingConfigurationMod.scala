@@ -21,7 +21,8 @@ object typesAliasRoutingConfigurationMod {
       __obj.asInstanceOf[AliasRoutingConfiguration]
     }
     
-    extension [Self <: AliasRoutingConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AliasRoutingConfiguration] (val x: Self) extends AnyVal {
       
       inline def setAdditionalVersionWeights(value: StringDictionary[Double] | (js.Iterable[js.Tuple2[String, Double]])): Self = StObject.set(x, "AdditionalVersionWeights", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object typesAliasRoutingConfigurationMod {
       __obj.asInstanceOf[UnmarshalledAliasRoutingConfiguration]
     }
     
-    extension [Self <: UnmarshalledAliasRoutingConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledAliasRoutingConfiguration] (val x: Self) extends AnyVal {
       
       inline def setAdditionalVersionWeights(value: StringDictionary[Double]): Self = StObject.set(x, "AdditionalVersionWeights", value.asInstanceOf[js.Any])
       

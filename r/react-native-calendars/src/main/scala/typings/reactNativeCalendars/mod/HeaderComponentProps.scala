@@ -73,7 +73,8 @@ object HeaderComponentProps {
     __obj.asInstanceOf[HeaderComponentProps]
   }
   
-  extension [Self <: HeaderComponentProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeaderComponentProps] (val x: Self) extends AnyVal {
     
     inline def setAddMonth(value: Double => Unit): Self = StObject.set(x, "addMonth", js.Any.fromFunction1(value))
     

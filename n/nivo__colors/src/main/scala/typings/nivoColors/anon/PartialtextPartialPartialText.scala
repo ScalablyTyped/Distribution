@@ -18,7 +18,8 @@ object PartialtextPartialPartialText {
     __obj.asInstanceOf[PartialtextPartialPartialText]
   }
   
-  extension [Self <: PartialtextPartialPartialText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialtextPartialPartialText] (val x: Self) extends AnyVal {
     
     inline def setText(value: Partial[Partial[CSSProperties]]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

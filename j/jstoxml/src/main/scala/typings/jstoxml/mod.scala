@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[XmlElement]
     }
     
-    extension [Self <: XmlElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlElement] (val x: Self) extends AnyVal {
       
       inline def set_attrs(value: XmlAttrs | js.Array[XmlAttrs]): Self = StObject.set(x, "_attrs", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object mod {
       __obj.asInstanceOf[XmlOptions]
     }
     
-    extension [Self <: XmlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributesFilter(value: js.Object): Self = StObject.set(x, "attributesFilter", value.asInstanceOf[js.Any])
       

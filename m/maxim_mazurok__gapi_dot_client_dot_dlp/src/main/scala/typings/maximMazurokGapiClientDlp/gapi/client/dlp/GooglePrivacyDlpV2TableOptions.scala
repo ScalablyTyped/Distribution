@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2TableOptions {
     __obj.asInstanceOf[GooglePrivacyDlpV2TableOptions]
   }
   
-  extension [Self <: GooglePrivacyDlpV2TableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2TableOptions] (val x: Self) extends AnyVal {
     
     inline def setIdentifyingFields(value: js.Array[GooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "identifyingFields", value.asInstanceOf[js.Any])
     

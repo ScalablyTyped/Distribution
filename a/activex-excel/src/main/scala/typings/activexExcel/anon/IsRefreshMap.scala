@@ -21,7 +21,8 @@ object IsRefreshMap {
     __obj.asInstanceOf[IsRefreshMap]
   }
   
-  extension [Self <: IsRefreshMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsRefreshMap] (val x: Self) extends AnyVal {
     
     inline def setIsRefresh(value: Boolean): Self = StObject.set(x, "IsRefresh", value.asInstanceOf[js.Any])
     

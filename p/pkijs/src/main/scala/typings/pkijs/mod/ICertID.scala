@@ -42,7 +42,8 @@ object ICertID {
     __obj.asInstanceOf[ICertID]
   }
   
-  extension [Self <: ICertID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICertID] (val x: Self) extends AnyVal {
     
     inline def setHashAlgorithm(value: AlgorithmIdentifier): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
     

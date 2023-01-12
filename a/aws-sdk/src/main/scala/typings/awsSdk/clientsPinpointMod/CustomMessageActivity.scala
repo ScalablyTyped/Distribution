@@ -43,7 +43,8 @@ object CustomMessageActivity {
     __obj.asInstanceOf[CustomMessageActivity]
   }
   
-  extension [Self <: CustomMessageActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomMessageActivity] (val x: Self) extends AnyVal {
     
     inline def setDeliveryUri(value: string): Self = StObject.set(x, "DeliveryUri", value.asInstanceOf[js.Any])
     

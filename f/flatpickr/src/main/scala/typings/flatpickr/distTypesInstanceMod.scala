@@ -155,7 +155,8 @@ object distTypesInstanceMod {
       __obj.asInstanceOf[Elements]
     }
     
-    extension [Self <: Elements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Elements] (val x: Self) extends AnyVal {
       
       inline def setAltInput(value: HTMLInputElement): Self = StObject.set(x, "altInput", value.asInstanceOf[js.Any])
       
@@ -305,7 +306,8 @@ object distTypesInstanceMod {
       __obj.asInstanceOf[Formatting]
     }
     
-    extension [Self <: Formatting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Formatting] (val x: Self) extends AnyVal {
       
       inline def setFormats(value: Formats_): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       

@@ -36,7 +36,8 @@ object MessagesSearchRequest {
     __obj.asInstanceOf[MessagesSearchRequest]
   }
   
-  extension [Self <: MessagesSearchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagesSearchRequest] (val x: Self) extends AnyVal {
     
     inline def setApi_keys(value: js.Array[String]): Self = StObject.set(x, "api_keys", value.asInstanceOf[js.Any])
     

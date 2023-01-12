@@ -18,7 +18,8 @@ object CanLoad {
     __obj.asInstanceOf[CanLoad]
   }
   
-  extension [Self <: CanLoad](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanLoad] (val x: Self) extends AnyVal {
     
     inline def setCanLoad(
       value: (Route, js.Array[UrlSegment]) => (Observable_[Boolean | UrlTree]) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree

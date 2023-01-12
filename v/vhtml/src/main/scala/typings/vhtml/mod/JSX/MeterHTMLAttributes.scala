@@ -29,7 +29,8 @@ object MeterHTMLAttributes {
     __obj.asInstanceOf[MeterHTMLAttributes]
   }
   
-  extension [Self <: MeterHTMLAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeterHTMLAttributes] (val x: Self) extends AnyVal {
     
     inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[Area_]
     }
     
-    extension [Self <: Area_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Area_] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Track): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object mod {
       __obj.asInstanceOf[Grid_]
     }
     
-    extension [Self <: Grid_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Grid_] (val x: Self) extends AnyVal {
       
       inline def setAreas(value: StringDictionary[Area_]): Self = StObject.set(x, "areas", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object mod {
       __obj.asInstanceOf[Rect_]
     }
     
-    extension [Self <: Rect_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rect_] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object mod {
       __obj.asInstanceOf[Track]
     }
     
-    extension [Self <: Track](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Track] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

@@ -94,7 +94,8 @@ object libKeystoreMod {
       __obj.asInstanceOf[EncryptOptions]
     }
     
-    extension [Self <: EncryptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptOptions] (val x: Self) extends AnyVal {
       
       inline def setClient(value: String): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object libKeystoreMod {
       __obj.asInstanceOf[_KeystoreAccount]
     }
     
-    extension [Self <: _KeystoreAccount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _KeystoreAccount] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       

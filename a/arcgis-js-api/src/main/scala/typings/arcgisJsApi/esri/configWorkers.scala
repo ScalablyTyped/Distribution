@@ -34,7 +34,8 @@ object configWorkers {
     __obj.asInstanceOf[configWorkers]
   }
   
-  extension [Self <: configWorkers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: configWorkers] (val x: Self) extends AnyVal {
     
     inline def setLoaderConfig(value: configWorkersLoaderConfig): Self = StObject.set(x, "loaderConfig", value.asInstanceOf[js.Any])
     

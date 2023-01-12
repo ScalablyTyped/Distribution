@@ -17,7 +17,8 @@ object StoriesSpecifier {
     __obj.asInstanceOf[StoriesSpecifier]
   }
   
-  extension [Self <: StoriesSpecifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoriesSpecifier] (val x: Self) extends AnyVal {
     
     inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
     

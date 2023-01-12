@@ -32,7 +32,8 @@ object IsOpen {
     __obj.asInstanceOf[IsOpen]
   }
   
-  extension [Self <: IsOpen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsOpen] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: fade | lift | none): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

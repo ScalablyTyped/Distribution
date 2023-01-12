@@ -17,7 +17,8 @@ object SortBy {
     __obj.asInstanceOf[SortBy]
   }
   
-  extension [Self <: SortBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortBy] (val x: Self) extends AnyVal {
     
     inline def setFacetOrdering(value: Boolean): Self = StObject.set(x, "facetOrdering", value.asInstanceOf[js.Any])
     

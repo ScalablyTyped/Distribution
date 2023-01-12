@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[DebounceOptions]
     }
     
-    extension [Self <: DebounceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebounceOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxWait(value: Double): Self = StObject.set(x, "maxWait", value.asInstanceOf[js.Any])
       

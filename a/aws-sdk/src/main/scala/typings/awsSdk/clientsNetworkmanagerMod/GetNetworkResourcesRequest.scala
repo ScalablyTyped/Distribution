@@ -58,7 +58,8 @@ object GetNetworkResourcesRequest {
     __obj.asInstanceOf[GetNetworkResourcesRequest]
   }
   
-  extension [Self <: GetNetworkResourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNetworkResourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AWSAccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

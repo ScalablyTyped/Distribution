@@ -44,7 +44,8 @@ object ChangeDirectionState {
     __obj.asInstanceOf[ChangeDirectionState]
   }
   
-  extension [Self <: ChangeDirectionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeDirectionState] (val x: Self) extends AnyVal {
     
     inline def setDeleteShiftDirection(value: DeleteShiftDirection | Up | Left): Self = StObject.set(x, "deleteShiftDirection", value.asInstanceOf[js.Any])
     

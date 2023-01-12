@@ -56,7 +56,8 @@ object scrollviewConfig {
     __obj.asInstanceOf[scrollviewConfig]
   }
   
-  extension [Self <: scrollviewConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: scrollviewConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

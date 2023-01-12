@@ -24,7 +24,8 @@ object CanvasRedrawOptions {
     __obj.asInstanceOf[CanvasRedrawOptions]
   }
   
-  extension [Self <: CanvasRedrawOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasRedrawOptions] (val x: Self) extends AnyVal {
     
     inline def setCtx(value: CanvasRenderingContext2D): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
   }

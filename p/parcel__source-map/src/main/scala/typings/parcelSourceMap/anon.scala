@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[ReadFile]
     }
     
-    extension [Self <: ReadFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadFile] (val x: Self) extends AnyVal {
       
       inline def setReadFile(value: (String, String) => js.Promise[String]): Self = StObject.set(x, "readFile", js.Any.fromFunction2(value))
     }

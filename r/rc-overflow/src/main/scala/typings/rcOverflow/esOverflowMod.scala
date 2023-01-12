@@ -210,7 +210,8 @@ object esOverflowMod extends Shortcut {
       __obj.asInstanceOf[OverflowProps[ItemType]]
     }
     
-    extension [Self <: OverflowProps[?], ItemType](x: Self & OverflowProps[ItemType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverflowProps[?], ItemType] (val x: Self & OverflowProps[ItemType]) extends AnyVal {
       
       inline def setComponent(value: ComponentType): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

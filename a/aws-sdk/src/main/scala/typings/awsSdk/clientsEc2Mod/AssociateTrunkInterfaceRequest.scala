@@ -43,7 +43,8 @@ object AssociateTrunkInterfaceRequest {
     __obj.asInstanceOf[AssociateTrunkInterfaceRequest]
   }
   
-  extension [Self <: AssociateTrunkInterfaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateTrunkInterfaceRequest] (val x: Self) extends AnyVal {
     
     inline def setBranchInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "BranchInterfaceId", value.asInstanceOf[js.Any])
     

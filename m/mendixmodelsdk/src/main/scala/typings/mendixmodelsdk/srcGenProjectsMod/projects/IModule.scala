@@ -116,7 +116,8 @@ object IModule {
     __obj.asInstanceOf[IModule]
   }
   
-  extension [Self <: IModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IModule] (val x: Self) extends AnyVal {
     
     inline def setAppStoreGuid(value: String): Self = StObject.set(x, "appStoreGuid", value.asInstanceOf[js.Any])
     

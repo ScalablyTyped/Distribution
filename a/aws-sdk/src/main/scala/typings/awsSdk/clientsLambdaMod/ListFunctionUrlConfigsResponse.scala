@@ -23,7 +23,8 @@ object ListFunctionUrlConfigsResponse {
     __obj.asInstanceOf[ListFunctionUrlConfigsResponse]
   }
   
-  extension [Self <: ListFunctionUrlConfigsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFunctionUrlConfigsResponse] (val x: Self) extends AnyVal {
     
     inline def setFunctionUrlConfigs(value: FunctionUrlConfigList): Self = StObject.set(x, "FunctionUrlConfigs", value.asInstanceOf[js.Any])
     

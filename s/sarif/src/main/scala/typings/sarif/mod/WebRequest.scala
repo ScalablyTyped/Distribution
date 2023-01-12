@@ -60,7 +60,8 @@ object WebRequest {
     __obj.asInstanceOf[WebRequest]
   }
   
-  extension [Self <: WebRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: ArtifactContent): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

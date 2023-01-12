@@ -107,7 +107,8 @@ object libComponentsIconMod {
       __obj.asInstanceOf[IconProps]
     }
     
-    extension [Self <: IconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object libComponentsIconMod {
       __obj.asInstanceOf[TwoToneColorPalette]
     }
     
-    extension [Self <: TwoToneColorPalette](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwoToneColorPalette] (val x: Self) extends AnyVal {
       
       inline def setSecondaryColor(value: String): Self = StObject.set(x, "secondaryColor", value.asInstanceOf[js.Any])
     }
@@ -172,7 +174,8 @@ object libComponentsIconMod {
       __obj.asInstanceOf[TwoToneColorPaletteSetter]
     }
     
-    extension [Self <: TwoToneColorPaletteSetter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwoToneColorPaletteSetter] (val x: Self) extends AnyVal {
       
       inline def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
       

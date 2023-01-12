@@ -36,7 +36,8 @@ object ManifestLoadedData {
     __obj.asInstanceOf[ManifestLoadedData]
   }
   
-  extension [Self <: ManifestLoadedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestLoadedData] (val x: Self) extends AnyVal {
     
     inline def setAudioTracks(value: js.Array[MediaPlaylist]): Self = StObject.set(x, "audioTracks", value.asInstanceOf[js.Any])
     

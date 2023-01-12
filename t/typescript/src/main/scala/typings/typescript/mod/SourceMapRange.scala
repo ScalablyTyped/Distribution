@@ -17,7 +17,8 @@ object SourceMapRange {
     __obj.asInstanceOf[SourceMapRange]
   }
   
-  extension [Self <: SourceMapRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceMapRange] (val x: Self) extends AnyVal {
     
     inline def setSource(value: SourceMapSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object ProcessesData {
     __obj.asInstanceOf[ProcessesData]
   }
   
-  extension [Self <: ProcessesData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessesData] (val x: Self) extends AnyVal {
     
     inline def setAll(value: Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

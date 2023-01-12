@@ -21,7 +21,8 @@ object libSystemIsystemMod {
       __obj.asInstanceOf[ISystem[INIT_OPTIONS, DESTROY_OPTIONS]]
     }
     
-    extension [Self <: ISystem[?, ?], INIT_OPTIONS, DESTROY_OPTIONS](x: Self & (ISystem[INIT_OPTIONS, DESTROY_OPTIONS])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISystem[?, ?], INIT_OPTIONS, DESTROY_OPTIONS] (val x: Self & (ISystem[INIT_OPTIONS, DESTROY_OPTIONS])) extends AnyVal {
       
       inline def setDestroy(value: /* options */ js.UndefOr[DESTROY_OPTIONS] => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       

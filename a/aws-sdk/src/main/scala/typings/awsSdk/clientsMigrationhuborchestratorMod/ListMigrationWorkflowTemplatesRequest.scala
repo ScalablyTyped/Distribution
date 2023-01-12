@@ -28,7 +28,8 @@ object ListMigrationWorkflowTemplatesRequest {
     __obj.asInstanceOf[ListMigrationWorkflowTemplatesRequest]
   }
   
-  extension [Self <: ListMigrationWorkflowTemplatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMigrationWorkflowTemplatesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object BuildResultoutputFilesArrErrors {
     __obj.asInstanceOf[BuildResultoutputFilesArrErrors]
   }
   
-  extension [Self <: BuildResultoutputFilesArrErrors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildResultoutputFilesArrErrors] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: js.Array[Message]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object mod {
         __obj.asInstanceOf[Endpoint]
       }
       
-      extension [Self <: Endpoint](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
         
         inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
         
@@ -79,7 +80,8 @@ object mod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setBind(value: String): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
         
@@ -202,7 +204,8 @@ object mod {
         __obj.asInstanceOf[RegistrationData]
       }
       
-      extension [Self <: RegistrationData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RegistrationData] (val x: Self) extends AnyVal {
         
         inline def setAdminCity(value: String): Self = StObject.set(x, "adminCity", value.asInstanceOf[js.Any])
         
@@ -397,7 +400,8 @@ object mod {
         __obj.asInstanceOf[ResultArrayElement]
       }
       
-      extension [Self <: ResultArrayElement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ResultArrayElement] (val x: Self) extends AnyVal {
         
         inline def setData(value: RegistrationData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -439,7 +443,8 @@ object mod {
         __obj.asInstanceOf[SocksProxy]
       }
       
-      extension [Self <: SocksProxy](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SocksProxy] (val x: Self) extends AnyVal {
         
         inline def setType(value: SocksProtocolVersion): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }

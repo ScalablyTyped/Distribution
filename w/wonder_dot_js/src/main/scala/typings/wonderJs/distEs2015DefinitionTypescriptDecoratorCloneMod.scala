@@ -93,7 +93,8 @@ object distEs2015DefinitionTypescriptDecoratorCloneMod {
       __obj.asInstanceOf[CloneAttributeAsBasicTypeConfigData]
     }
     
-    extension [Self <: CloneAttributeAsBasicTypeConfigData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloneAttributeAsBasicTypeConfigData] (val x: Self) extends AnyVal {
       
       inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object distEs2015DefinitionTypescriptDecoratorCloneMod {
       __obj.asInstanceOf[CloneAttributeAsCloneableConfigData]
     }
     
-    extension [Self <: CloneAttributeAsCloneableConfigData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloneAttributeAsCloneableConfigData] (val x: Self) extends AnyVal {
       
       inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
@@ -131,7 +133,8 @@ object distEs2015DefinitionTypescriptDecoratorCloneMod {
       __obj.asInstanceOf[CloneAttributeAsCustomTypeConfigData]
     }
     
-    extension [Self <: CloneAttributeAsCustomTypeConfigData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloneAttributeAsCustomTypeConfigData] (val x: Self) extends AnyVal {
       
       inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       

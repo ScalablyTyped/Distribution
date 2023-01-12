@@ -346,7 +346,8 @@ object mod {
       inline def unbind(channelName: String, eventName: Unit, callback: js.Function, context: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any]
       inline def unbind(channelName: String, eventName: Unit, callback: Unit, context: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any]
       
-      extension [Self <: Radio](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Radio] (val x: Self) extends AnyVal {
         
         inline def setChannel(value: String => typings.backboneRadio.mod.backboneAugmentingMod.Radio.Channel_): Self = StObject.set(x, "channel", js.Any.fromFunction1(value))
         

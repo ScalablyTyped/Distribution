@@ -21,7 +21,8 @@ object distTypesCssItypedescriptorMod {
       __obj.asInstanceOf[ITypeDescriptor[T]]
     }
     
-    extension [Self <: ITypeDescriptor[?], T](x: Self & ITypeDescriptor[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITypeDescriptor[?], T] (val x: Self & ITypeDescriptor[T]) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

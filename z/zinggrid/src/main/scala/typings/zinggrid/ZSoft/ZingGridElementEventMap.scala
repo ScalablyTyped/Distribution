@@ -285,7 +285,8 @@ object ZingGridElementEventMap {
     __obj.asInstanceOf[ZingGridElementEventMap]
   }
   
-  extension [Self <: ZingGridElementEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZingGridElementEventMap] (val x: Self) extends AnyVal {
     
     inline def setCardColonclick(value: CustomEvent[Any]): Self = StObject.set(x, "card:click", value.asInstanceOf[js.Any])
     

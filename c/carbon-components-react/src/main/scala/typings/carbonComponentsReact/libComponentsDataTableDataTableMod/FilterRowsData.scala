@@ -31,7 +31,8 @@ object FilterRowsData {
     __obj.asInstanceOf[FilterRowsData[R, H]]
   }
   
-  extension [Self <: FilterRowsData[?, ?], R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */](x: Self & (FilterRowsData[R, H])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterRowsData[?, ?], R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */] (val x: Self & (FilterRowsData[R, H])) extends AnyVal {
     
     inline def setCellsById(value: StringDictionary[DataTableCell[Any, DataTableHeader[String]]]): Self = StObject.set(x, "cellsById", value.asInstanceOf[js.Any])
     

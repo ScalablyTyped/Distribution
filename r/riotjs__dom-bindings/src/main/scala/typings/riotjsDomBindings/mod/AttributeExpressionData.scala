@@ -19,7 +19,8 @@ object AttributeExpressionData {
     __obj.asInstanceOf[AttributeExpressionData[Scope]]
   }
   
-  extension [Self <: AttributeExpressionData[?], Scope](x: Self & AttributeExpressionData[Scope]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeExpressionData[?], Scope] (val x: Self & AttributeExpressionData[Scope]) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

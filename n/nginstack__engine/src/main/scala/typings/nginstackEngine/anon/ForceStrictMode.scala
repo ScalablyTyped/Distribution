@@ -17,7 +17,8 @@ object ForceStrictMode {
     __obj.asInstanceOf[ForceStrictMode]
   }
   
-  extension [Self <: ForceStrictMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForceStrictMode] (val x: Self) extends AnyVal {
     
     inline def setForceStrictMode(value: Boolean): Self = StObject.set(x, "forceStrictMode", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,8 @@ object ParserOptions {
     __obj.asInstanceOf[ParserOptions[T]]
   }
   
-  extension [Self <: ParserOptions[?], T](x: Self & ParserOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParserOptions[?], T] (val x: Self & ParserOptions[T]) extends AnyVal {
     
     inline def setLocEnd(value: T => Double): Self = StObject.set(x, "locEnd", js.Any.fromFunction1(value))
     

@@ -24,7 +24,8 @@ object SecurityGrantApiKeyGrantApiKey {
     __obj.asInstanceOf[SecurityGrantApiKeyGrantApiKey]
   }
   
-  extension [Self <: SecurityGrantApiKeyGrantApiKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityGrantApiKeyGrantApiKey] (val x: Self) extends AnyVal {
     
     inline def setExpiration(value: DurationLarge): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     

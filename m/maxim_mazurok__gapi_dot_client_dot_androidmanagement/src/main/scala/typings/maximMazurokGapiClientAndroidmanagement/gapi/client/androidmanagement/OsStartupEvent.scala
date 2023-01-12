@@ -19,7 +19,8 @@ object OsStartupEvent {
     __obj.asInstanceOf[OsStartupEvent]
   }
   
-  extension [Self <: OsStartupEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OsStartupEvent] (val x: Self) extends AnyVal {
     
     inline def setVerifiedBootState(value: String): Self = StObject.set(x, "verifiedBootState", value.asInstanceOf[js.Any])
     

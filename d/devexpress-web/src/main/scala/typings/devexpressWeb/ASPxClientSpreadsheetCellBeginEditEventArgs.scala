@@ -56,7 +56,8 @@ object ASPxClientSpreadsheetCellBeginEditEventArgs {
     __obj.asInstanceOf[ASPxClientSpreadsheetCellBeginEditEventArgs]
   }
   
-  extension [Self <: ASPxClientSpreadsheetCellBeginEditEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSpreadsheetCellBeginEditEventArgs] (val x: Self) extends AnyVal {
     
     inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     

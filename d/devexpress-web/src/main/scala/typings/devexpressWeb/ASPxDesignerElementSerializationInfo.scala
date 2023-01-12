@@ -50,7 +50,8 @@ object ASPxDesignerElementSerializationInfo {
     __obj.asInstanceOf[ASPxDesignerElementSerializationInfo]
   }
   
-  extension [Self <: ASPxDesignerElementSerializationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxDesignerElementSerializationInfo] (val x: Self) extends AnyVal {
     
     inline def setArray(value: Boolean): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

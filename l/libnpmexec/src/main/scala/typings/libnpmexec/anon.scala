@@ -48,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Args]
     }
     
-    extension [Self <: Args](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -182,7 +184,8 @@ object anon {
       __obj.asInstanceOf[DisableProgress]
     }
     
-    extension [Self <: DisableProgress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisableProgress] (val x: Self) extends AnyVal {
       
       inline def setDisableProgress(value: () => Unit): Self = StObject.set(x, "disableProgress", js.Any.fromFunction0(value))
       

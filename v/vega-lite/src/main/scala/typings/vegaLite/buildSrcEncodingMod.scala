@@ -369,7 +369,8 @@ object buildSrcEncodingMod {
       __obj.asInstanceOf[Encoding[F]]
     }
     
-    extension [Self <: Encoding[?], F /* <: Field */](x: Self & Encoding[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoding[?], F /* <: Field */] (val x: Self & Encoding[F]) extends AnyVal {
       
       inline def setAngle(value: NumericMarkPropDef[F]): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       

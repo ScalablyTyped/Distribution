@@ -25,7 +25,8 @@ object FileManagerContextMenu {
     __obj.asInstanceOf[FileManagerContextMenu]
   }
   
-  extension [Self <: FileManagerContextMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileManagerContextMenu] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: /* e */ ContextMenuActivateEvent => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
     

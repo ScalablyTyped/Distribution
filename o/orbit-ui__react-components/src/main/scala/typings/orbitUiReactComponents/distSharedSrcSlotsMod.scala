@@ -51,7 +51,8 @@ object distSharedSrcSlotsMod {
       __obj.asInstanceOf[SlotOptions]
     }
     
-    extension [Self <: SlotOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlotOptions] (val x: Self) extends AnyVal {
       
       inline def set_underscore(value: DefaultWrapper): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
     }

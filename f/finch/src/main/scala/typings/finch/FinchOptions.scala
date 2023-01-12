@@ -15,7 +15,8 @@ object FinchOptions {
     __obj.asInstanceOf[FinchOptions]
   }
   
-  extension [Self <: FinchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinchOptions] (val x: Self) extends AnyVal {
     
     inline def setCoerceParameterTypes(value: Boolean): Self = StObject.set(x, "CoerceParameterTypes", value.asInstanceOf[js.Any])
     

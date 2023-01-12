@@ -56,7 +56,8 @@ object dxTreeListColumnButton {
     __obj.asInstanceOf[dxTreeListColumnButton[TRowData, TKey]]
   }
   
-  extension [Self <: dxTreeListColumnButton[?, ?], TRowData, TKey](x: Self & (dxTreeListColumnButton[TRowData, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxTreeListColumnButton[?, ?], TRowData, TKey] (val x: Self & (dxTreeListColumnButton[TRowData, TKey])) extends AnyVal {
     
     inline def setDisabled(value: Boolean | (js.Function1[/* options */ Row[TRowData, TKey], Boolean])): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object PITPolicyRule {
     __obj.asInstanceOf[PITPolicyRule]
   }
   
-  extension [Self <: PITPolicyRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PITPolicyRule] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

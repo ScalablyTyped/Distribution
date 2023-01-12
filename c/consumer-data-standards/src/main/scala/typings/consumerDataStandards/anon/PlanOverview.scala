@@ -28,7 +28,8 @@ object PlanOverview {
     __obj.asInstanceOf[PlanOverview]
   }
   
-  extension [Self <: PlanOverview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlanOverview] (val x: Self) extends AnyVal {
     
     inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[`0`[U]]
     }
     
-    extension [Self <: `0`[?], U](x: Self & `0`[U]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`[?], U] (val x: Self & `0`[U]) extends AnyVal {
       
       inline def setOnNoLanguageName(value: () => js.Promise[U]): Self = StObject.set(x, "onNoLanguageName", js.Any.fromFunction0(value))
     }
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[`1`[U]]
     }
     
-    extension [Self <: `1`[?], U](x: Self & `1`[U]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`[?], U] (val x: Self & `1`[U]) extends AnyVal {
       
       inline def setOnNoLanguageName(value: () => U): Self = StObject.set(x, "onNoLanguageName", js.Any.fromFunction0(value))
     }
@@ -57,7 +59,8 @@ object anon {
       __obj.asInstanceOf[`2`[T, U]]
     }
     
-    extension [Self <: `2`[?, ?], T /* <: Localization */, U](x: Self & (`2`[T, U])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `2`[?, ?], T /* <: Localization */, U] (val x: Self & (`2`[T, U])) extends AnyVal {
       
       inline def setMap(value: (T, Language) => U): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     }
@@ -75,7 +78,8 @@ object anon {
       __obj.asInstanceOf[CreateOptionsincludeLangu]
     }
     
-    extension [Self <: CreateOptionsincludeLangu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOptionsincludeLangu] (val x: Self) extends AnyVal {
       
       inline def setIncludeLanguageName(value: Boolean): Self = StObject.set(x, "includeLanguageName", value.asInstanceOf[js.Any])
       
@@ -95,7 +99,8 @@ object anon {
       __obj.asInstanceOf[CreateOptionsincludeLanguIncludeLanguageName]
     }
     
-    extension [Self <: CreateOptionsincludeLanguIncludeLanguageName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOptionsincludeLanguIncludeLanguageName] (val x: Self) extends AnyVal {
       
       inline def setIncludeLanguageName(value: Boolean): Self = StObject.set(x, "includeLanguageName", value.asInstanceOf[js.Any])
       
@@ -117,7 +122,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -148,7 +154,8 @@ object anon {
       __obj.asInstanceOf[Plist]
     }
     
-    extension [Self <: Plist](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plist] (val x: Self) extends AnyVal {
       
       inline def setPlist(value: PlistObject): Self = StObject.set(x, "plist", value.asInstanceOf[js.Any])
       

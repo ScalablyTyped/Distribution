@@ -18,7 +18,8 @@ object CollatorTypeT {
     __obj.asInstanceOf[CollatorTypeT]
   }
   
-  extension [Self <: CollatorTypeT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollatorTypeT] (val x: Self) extends AnyVal {
     
     inline def setKind(value: collator): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }

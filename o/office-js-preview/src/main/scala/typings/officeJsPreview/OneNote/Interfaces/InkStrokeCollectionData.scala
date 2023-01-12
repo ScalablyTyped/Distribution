@@ -16,7 +16,8 @@ object InkStrokeCollectionData {
     __obj.asInstanceOf[InkStrokeCollectionData]
   }
   
-  extension [Self <: InkStrokeCollectionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InkStrokeCollectionData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[InkStrokeData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

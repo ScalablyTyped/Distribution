@@ -35,7 +35,8 @@ object TimestampOperatorOptions {
     __obj.asInstanceOf[TimestampOperatorOptions]
   }
   
-  extension [Self <: TimestampOperatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimestampOperatorOptions] (val x: Self) extends AnyVal {
     
     inline def setGreaterThanOperatorName(value: String): Self = StObject.set(x, "greaterThanOperatorName", value.asInstanceOf[js.Any])
     

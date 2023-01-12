@@ -23,7 +23,8 @@ object ExtendedKeyUsage {
     __obj.asInstanceOf[ExtendedKeyUsage]
   }
   
-  extension [Self <: ExtendedKeyUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendedKeyUsage] (val x: Self) extends AnyVal {
     
     inline def setExtendedKeyUsageObjectIdentifier(value: CustomObjectIdentifier): Self = StObject.set(x, "ExtendedKeyUsageObjectIdentifier", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object RestrictionsObject {
     __obj.asInstanceOf[RestrictionsObject]
   }
   
-  extension [Self <: RestrictionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestrictionsObject] (val x: Self) extends AnyVal {
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }

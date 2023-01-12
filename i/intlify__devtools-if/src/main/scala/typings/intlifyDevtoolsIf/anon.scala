@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[timestampnumberi18nunknow]
     }
     
-    extension [Self <: timestampnumberi18nunknow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: timestampnumberi18nunknow] (val x: Self) extends AnyVal {
       
       inline def setI18n(value: Any): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object anon {
       __obj.asInstanceOf[timestampnumbermessagestr]
     }
     
-    extension [Self <: timestampnumbermessagestr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: timestampnumbermessagestr] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

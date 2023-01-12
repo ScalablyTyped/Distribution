@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Accuracy]
     }
     
-    extension [Self <: Accuracy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accuracy] (val x: Self) extends AnyVal {
       
       inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Guid]
     }
     
-    extension [Self <: Guid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Guid] (val x: Self) extends AnyVal {
       
       inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     }

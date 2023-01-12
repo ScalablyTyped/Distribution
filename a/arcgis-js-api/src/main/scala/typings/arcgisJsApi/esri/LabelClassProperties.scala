@@ -159,7 +159,8 @@ object LabelClassProperties {
     __obj.asInstanceOf[LabelClassProperties]
   }
   
-  extension [Self <: LabelClassProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelClassProperties] (val x: Self) extends AnyVal {
     
     inline def setAllowOverrun(value: Boolean): Self = StObject.set(x, "allowOverrun", value.asInstanceOf[js.Any])
     

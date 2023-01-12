@@ -17,7 +17,8 @@ object ApplicationjsonBodyEvent {
     __obj.asInstanceOf[ApplicationjsonBodyEvent]
   }
   
-  extension [Self <: ApplicationjsonBodyEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonBodyEvent] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: BodyEvent): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

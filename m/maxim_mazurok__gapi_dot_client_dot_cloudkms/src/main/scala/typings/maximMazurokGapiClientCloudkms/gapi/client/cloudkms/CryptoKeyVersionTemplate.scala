@@ -22,7 +22,8 @@ object CryptoKeyVersionTemplate {
     __obj.asInstanceOf[CryptoKeyVersionTemplate]
   }
   
-  extension [Self <: CryptoKeyVersionTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CryptoKeyVersionTemplate] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

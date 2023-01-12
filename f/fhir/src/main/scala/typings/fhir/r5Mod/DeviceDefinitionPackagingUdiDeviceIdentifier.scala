@@ -41,7 +41,8 @@ object DeviceDefinitionPackagingUdiDeviceIdentifier {
     __obj.asInstanceOf[DeviceDefinitionPackagingUdiDeviceIdentifier]
   }
   
-  extension [Self <: DeviceDefinitionPackagingUdiDeviceIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceDefinitionPackagingUdiDeviceIdentifier] (val x: Self) extends AnyVal {
     
     inline def setDeviceIdentifier(value: String): Self = StObject.set(x, "deviceIdentifier", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object PlayReadyLicense {
     __obj.asInstanceOf[PlayReadyLicense]
   }
   
-  extension [Self <: PlayReadyLicense](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayReadyLicense] (val x: Self) extends AnyVal {
     
     inline def setChainDepth(value: Double): Self = StObject.set(x, "chainDepth", value.asInstanceOf[js.Any])
     

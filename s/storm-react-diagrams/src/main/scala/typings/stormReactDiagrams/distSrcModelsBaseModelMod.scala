@@ -59,7 +59,8 @@ object distSrcModelsBaseModelMod {
       __obj.asInstanceOf[BaseModelListener]
     }
     
-    extension [Self <: BaseModelListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseModelListener] (val x: Self) extends AnyVal {
       
       inline def setEntityRemoved(value: /* event */ BaseEvent[BaseModel[BaseEntity[BaseListener[Any]], BaseModelListener]] => Unit): Self = StObject.set(x, "entityRemoved", js.Any.fromFunction1(value))
       

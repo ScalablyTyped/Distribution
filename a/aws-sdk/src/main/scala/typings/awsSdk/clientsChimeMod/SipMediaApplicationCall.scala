@@ -18,7 +18,8 @@ object SipMediaApplicationCall {
     __obj.asInstanceOf[SipMediaApplicationCall]
   }
   
-  extension [Self <: SipMediaApplicationCall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SipMediaApplicationCall] (val x: Self) extends AnyVal {
     
     inline def setTransactionId(value: GuidString): Self = StObject.set(x, "TransactionId", value.asInstanceOf[js.Any])
     

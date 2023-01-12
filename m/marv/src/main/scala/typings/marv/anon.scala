@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Quiet]
     }
     
-    extension [Self <: Quiet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Quiet] (val x: Self) extends AnyVal {
       
       inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       

@@ -36,7 +36,8 @@ object componentsRoutedAnchorMod {
       __obj.asInstanceOf[RoutedAnchorProps]
     }
     
-    extension [Self <: RoutedAnchorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoutedAnchorProps] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: push | replace): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       

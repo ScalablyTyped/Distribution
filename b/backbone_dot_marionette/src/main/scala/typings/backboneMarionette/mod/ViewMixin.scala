@@ -73,7 +73,8 @@ object ViewMixin {
     __obj.asInstanceOf[ViewMixin]
   }
   
-  extension [Self <: ViewMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewMixin] (val x: Self) extends AnyVal {
     
     inline def setBindUIElements(value: Any): Self = StObject.set(x, "bindUIElements", value.asInstanceOf[js.Any])
     

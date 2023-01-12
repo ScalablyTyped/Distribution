@@ -17,7 +17,8 @@ object KafkaJSConnectionErrorMetadata {
     __obj.asInstanceOf[KafkaJSConnectionErrorMetadata]
   }
   
-  extension [Self <: KafkaJSConnectionErrorMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KafkaJSConnectionErrorMetadata] (val x: Self) extends AnyVal {
     
     inline def setBroker(value: String): Self = StObject.set(x, "broker", value.asInstanceOf[js.Any])
     

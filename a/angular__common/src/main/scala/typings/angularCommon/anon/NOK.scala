@@ -53,7 +53,8 @@ object NOK {
     __obj.asInstanceOf[NOK]
   }
   
-  extension [Self <: NOK](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NOK] (val x: Self) extends AnyVal {
     
     inline def setBRL(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "BRL", value.asInstanceOf[js.Any])
     

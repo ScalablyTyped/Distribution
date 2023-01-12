@@ -19,7 +19,8 @@ object IUMASYNCINDEX {
     __obj.asInstanceOf[IUMASYNCINDEX]
   }
   
-  extension [Self <: IUMASYNCINDEX](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUMASYNCINDEX] (val x: Self) extends AnyVal {
     
     inline def setIUM_ASYNC_INDEX(value: `0`): Self = StObject.set(x, "IUM_ASYNC_INDEX", value.asInstanceOf[js.Any])
     

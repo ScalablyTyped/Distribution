@@ -71,7 +71,8 @@ object libComponentsPickersSuggestionsSuggestionsItemDottypesMod {
       __obj.asInstanceOf[ISuggestionItemProps[T]]
     }
     
-    extension [Self <: ISuggestionItemProps[?], T](x: Self & ISuggestionItemProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISuggestionItemProps[?], T] (val x: Self & ISuggestionItemProps[T]) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object libComponentsPickersSuggestionsSuggestionsItemDottypesMod {
       __obj.asInstanceOf[ISuggestionsItemStyleProps]
     }
     
-    extension [Self <: ISuggestionsItemStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISuggestionsItemStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -170,7 +172,8 @@ object libComponentsPickersSuggestionsSuggestionsItemDottypesMod {
       __obj.asInstanceOf[ISuggestionsItemStyles]
     }
     
-    extension [Self <: ISuggestionsItemStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISuggestionsItemStyles] (val x: Self) extends AnyVal {
       
       inline def setCloseButton(value: IStyle): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
       

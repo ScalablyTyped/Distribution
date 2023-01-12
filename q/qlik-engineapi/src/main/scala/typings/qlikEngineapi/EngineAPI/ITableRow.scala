@@ -21,7 +21,8 @@ object ITableRow {
     __obj.asInstanceOf[ITableRow]
   }
   
-  extension [Self <: ITableRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITableRow] (val x: Self) extends AnyVal {
     
     inline def setVqValue(value: js.Array[IFieldValue]): Self = StObject.set(x, "vqValue", value.asInstanceOf[js.Any])
     

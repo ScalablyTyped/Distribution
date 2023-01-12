@@ -166,7 +166,8 @@ object XInplaceClient {
     __obj.asInstanceOf[XInplaceClient]
   }
   
-  extension [Self <: XInplaceClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInplaceClient] (val x: Self) extends AnyVal {
     
     inline def setActivatingInplace(value: () => Unit): Self = StObject.set(x, "activatingInplace", js.Any.fromFunction0(value))
     

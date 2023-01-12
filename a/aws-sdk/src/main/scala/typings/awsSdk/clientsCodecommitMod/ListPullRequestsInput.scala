@@ -38,7 +38,8 @@ object ListPullRequestsInput {
     __obj.asInstanceOf[ListPullRequestsInput]
   }
   
-  extension [Self <: ListPullRequestsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPullRequestsInput] (val x: Self) extends AnyVal {
     
     inline def setAuthorArn(value: Arn): Self = StObject.set(x, "authorArn", value.asInstanceOf[js.Any])
     

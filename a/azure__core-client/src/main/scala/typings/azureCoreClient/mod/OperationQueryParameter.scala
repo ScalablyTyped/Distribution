@@ -26,7 +26,8 @@ object OperationQueryParameter {
     __obj.asInstanceOf[OperationQueryParameter]
   }
   
-  extension [Self <: OperationQueryParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationQueryParameter] (val x: Self) extends AnyVal {
     
     inline def setCollectionFormat(value: QueryCollectionFormat): Self = StObject.set(x, "collectionFormat", value.asInstanceOf[js.Any])
     

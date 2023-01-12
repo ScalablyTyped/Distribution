@@ -23,7 +23,8 @@ object MenuItemDefinition {
     __obj.asInstanceOf[MenuItemDefinition]
   }
   
-  extension [Self <: MenuItemDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuItemDefinition] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

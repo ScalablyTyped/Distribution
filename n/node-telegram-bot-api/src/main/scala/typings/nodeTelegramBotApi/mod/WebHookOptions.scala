@@ -42,7 +42,8 @@ object WebHookOptions {
     __obj.asInstanceOf[WebHookOptions]
   }
   
-  extension [Self <: WebHookOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebHookOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
     

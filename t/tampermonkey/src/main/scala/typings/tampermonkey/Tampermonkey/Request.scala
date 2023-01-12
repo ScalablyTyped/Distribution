@@ -93,7 +93,8 @@ object Request {
     __obj.asInstanceOf[Request[TContext]]
   }
   
-  extension [Self <: Request[?], TContext](x: Self & Request[TContext]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Request[?], TContext] (val x: Self & Request[TContext]) extends AnyVal {
     
     inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
     

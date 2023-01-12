@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Handle]
     }
     
-    extension [Self <: Handle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Handle] (val x: Self) extends AnyVal {
       
       inline def setNative_handle(value: () => Any): Self = StObject.set(x, "native_handle", js.Any.fromFunction0(value))
       
@@ -58,7 +59,8 @@ object anon {
       __obj.asInstanceOf[Payload]
     }
     
-    extension [Self <: Payload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: StringLike): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       

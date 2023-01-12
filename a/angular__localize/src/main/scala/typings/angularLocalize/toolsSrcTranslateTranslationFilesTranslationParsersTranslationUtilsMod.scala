@@ -49,7 +49,8 @@ object toolsSrcTranslateTranslationFilesTranslationParsersTranslationUtilsMod {
       __obj.asInstanceOf[XmlTranslationParserHint]
     }
     
-    extension [Self <: XmlTranslationParserHint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlTranslationParserHint] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       

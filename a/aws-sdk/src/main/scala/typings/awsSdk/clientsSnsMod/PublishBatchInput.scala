@@ -23,7 +23,8 @@ object PublishBatchInput {
     __obj.asInstanceOf[PublishBatchInput]
   }
   
-  extension [Self <: PublishBatchInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishBatchInput] (val x: Self) extends AnyVal {
     
     inline def setPublishBatchRequestEntries(value: PublishBatchRequestEntryList): Self = StObject.set(x, "PublishBatchRequestEntries", value.asInstanceOf[js.Any])
     

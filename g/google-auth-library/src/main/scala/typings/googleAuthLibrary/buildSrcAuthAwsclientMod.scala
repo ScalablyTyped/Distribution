@@ -91,7 +91,8 @@ object buildSrcAuthAwsclientMod {
       __obj.asInstanceOf[AwsClientOptions]
     }
     
-    extension [Self <: AwsClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AwsClientOptions] (val x: Self) extends AnyVal {
       
       inline def setCredential_source(value: Environmentid): Self = StObject.set(x, "credential_source", value.asInstanceOf[js.Any])
     }

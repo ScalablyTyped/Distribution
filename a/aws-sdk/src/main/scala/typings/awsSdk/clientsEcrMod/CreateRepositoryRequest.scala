@@ -43,7 +43,8 @@ object CreateRepositoryRequest {
     __obj.asInstanceOf[CreateRepositoryRequest]
   }
   
-  extension [Self <: CreateRepositoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRepositoryRequest] (val x: Self) extends AnyVal {
     
     inline def setEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "encryptionConfiguration", value.asInstanceOf[js.Any])
     

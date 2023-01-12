@@ -33,7 +33,8 @@ object VirtualGatewayClientPolicyTls {
     __obj.asInstanceOf[VirtualGatewayClientPolicyTls]
   }
   
-  extension [Self <: VirtualGatewayClientPolicyTls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualGatewayClientPolicyTls] (val x: Self) extends AnyVal {
     
     inline def setCertificate(value: VirtualGatewayClientTlsCertificate): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     

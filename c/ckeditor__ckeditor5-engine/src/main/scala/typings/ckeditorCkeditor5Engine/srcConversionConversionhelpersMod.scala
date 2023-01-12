@@ -43,7 +43,8 @@ object srcConversionConversionhelpersMod {
       __obj.asInstanceOf[ConversionHelpers[T]]
     }
     
-    extension [Self <: ConversionHelpers[?], T /* <: typings.ckeditorCkeditor5Engine.srcConversionDowncasthelpersMod.default | typings.ckeditorCkeditor5Engine.srcConversionUpcasthelpersMod.default */](x: Self & ConversionHelpers[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConversionHelpers[?], T /* <: typings.ckeditorCkeditor5Engine.srcConversionDowncasthelpersMod.default | typings.ckeditorCkeditor5Engine.srcConversionUpcasthelpersMod.default */] (val x: Self & ConversionHelpers[T]) extends AnyVal {
       
       inline def setAdd(
         value: js.Function1[

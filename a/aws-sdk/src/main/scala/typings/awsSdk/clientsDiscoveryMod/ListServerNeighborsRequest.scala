@@ -38,7 +38,8 @@ object ListServerNeighborsRequest {
     __obj.asInstanceOf[ListServerNeighborsRequest]
   }
   
-  extension [Self <: ListServerNeighborsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListServerNeighborsRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationId(value: ConfigurationId): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
     

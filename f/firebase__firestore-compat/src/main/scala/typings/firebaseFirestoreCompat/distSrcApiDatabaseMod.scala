@@ -332,7 +332,8 @@ object distSrcApiDatabaseMod {
       __obj.asInstanceOf[PersistenceProvider]
     }
     
-    extension [Self <: PersistenceProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersistenceProvider] (val x: Self) extends AnyVal {
       
       inline def setClearIndexedDbPersistence(value: Firestore => js.Promise[Unit]): Self = StObject.set(x, "clearIndexedDbPersistence", js.Any.fromFunction1(value))
       

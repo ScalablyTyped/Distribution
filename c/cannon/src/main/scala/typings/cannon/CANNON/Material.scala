@@ -21,7 +21,8 @@ object Material {
     __obj.asInstanceOf[Material]
   }
   
-  extension [Self <: Material](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Material] (val x: Self) extends AnyVal {
     
     inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     

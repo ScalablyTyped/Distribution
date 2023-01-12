@@ -19,7 +19,8 @@ object StarterManifest {
     __obj.asInstanceOf[StarterManifest]
   }
   
-  extension [Self <: StarterManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StarterManifest] (val x: Self) extends AnyVal {
     
     inline def setBaseref(value: String): Self = StObject.set(x, "baseref", value.asInstanceOf[js.Any])
     

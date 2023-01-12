@@ -18,7 +18,8 @@ object DetectCustomLabelsResponse {
     __obj.asInstanceOf[DetectCustomLabelsResponse]
   }
   
-  extension [Self <: DetectCustomLabelsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectCustomLabelsResponse] (val x: Self) extends AnyVal {
     
     inline def setCustomLabels(value: CustomLabels): Self = StObject.set(x, "CustomLabels", value.asInstanceOf[js.Any])
     

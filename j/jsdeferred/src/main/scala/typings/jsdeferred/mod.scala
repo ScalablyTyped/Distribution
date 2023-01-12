@@ -127,7 +127,8 @@ object mod {
         __obj.asInstanceOf[ConnectOption]
       }
       
-      extension [Self <: ConnectOption](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConnectOption] (val x: Self) extends AnyVal {
         
         inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
@@ -166,7 +167,8 @@ object mod {
         __obj.asInstanceOf[JQueryXHR]
       }
       
-      extension [Self <: JQueryXHR](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JQueryXHR] (val x: Self) extends AnyVal {
         
         inline def setNext(value: js.Function => Deferred): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
       }
@@ -187,7 +189,8 @@ object mod {
         __obj.asInstanceOf[Loop_]
       }
       
-      extension [Self <: Loop_](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Loop_] (val x: Self) extends AnyVal {
         
         inline def setBegin(value: Double): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
         
@@ -216,7 +219,8 @@ object mod {
         __obj.asInstanceOf[RetryOption]
       }
       
-      extension [Self <: RetryOption](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RetryOption] (val x: Self) extends AnyVal {
         
         inline def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
       }

@@ -24,7 +24,8 @@ object INxMultiRangeSelectInfo {
     __obj.asInstanceOf[INxMultiRangeSelectInfo]
   }
   
-  extension [Self <: INxMultiRangeSelectInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxMultiRangeSelectInfo] (val x: Self) extends AnyVal {
     
     inline def setQColumnsToSelect(value: Double): Self = StObject.set(x, "qColumnsToSelect", value.asInstanceOf[js.Any])
   }

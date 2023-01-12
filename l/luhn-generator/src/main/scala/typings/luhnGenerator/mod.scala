@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[InputOptions]
     }
     
-    extension [Self <: InputOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputOptions] (val x: Self) extends AnyVal {
       
       inline def setPad(value: Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
       

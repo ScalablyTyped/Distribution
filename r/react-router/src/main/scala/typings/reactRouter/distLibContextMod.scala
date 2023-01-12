@@ -76,7 +76,8 @@ object distLibContextMod {
       __obj.asInstanceOf[DataRouterContextObject]
     }
     
-    extension [Self <: DataRouterContextObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataRouterContextObject] (val x: Self) extends AnyVal {
       
       inline def setRouter(value: Router): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
     }
@@ -117,7 +118,8 @@ object distLibContextMod {
       __obj.asInstanceOf[IndexRouteObject]
     }
     
-    extension [Self <: IndexRouteObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexRouteObject] (val x: Self) extends AnyVal {
       
       inline def setAction(value: /* args */ ActionFunctionArgs => (js.Promise[Any | Response]) | Response | Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
@@ -182,7 +184,8 @@ object distLibContextMod {
       __obj.asInstanceOf[LocationContextObject]
     }
     
-    extension [Self <: LocationContextObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocationContextObject] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
@@ -207,7 +210,8 @@ object distLibContextMod {
       __obj.asInstanceOf[NavigateOptions]
     }
     
-    extension [Self <: NavigateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigateOptions] (val x: Self) extends AnyVal {
       
       inline def setPreventScrollReset(value: Boolean): Self = StObject.set(x, "preventScrollReset", value.asInstanceOf[js.Any])
       
@@ -242,7 +246,8 @@ object distLibContextMod {
       __obj.asInstanceOf[NavigationContextObject]
     }
     
-    extension [Self <: NavigationContextObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationContextObject] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -305,7 +310,8 @@ object distLibContextMod {
       __obj.asInstanceOf[NonIndexRouteObject]
     }
     
-    extension [Self <: NonIndexRouteObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NonIndexRouteObject] (val x: Self) extends AnyVal {
       
       inline def setAction(value: /* args */ ActionFunctionArgs => (js.Promise[Any | Response]) | Response | Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
@@ -388,7 +394,8 @@ object distLibContextMod {
       __obj.asInstanceOf[RouteContextObject]
     }
     
-    extension [Self <: RouteContextObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteContextObject] (val x: Self) extends AnyVal {
       
       inline def setMatches(value: js.Array[RouteMatch[String, RouteObject]]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       

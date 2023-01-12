@@ -42,7 +42,8 @@ object libHeaderHeaderMod {
       __obj.asInstanceOf[HeaderProps[RecordType]]
     }
     
-    extension [Self <: HeaderProps[?], RecordType](x: Self & HeaderProps[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderProps[?], RecordType] (val x: Self & HeaderProps[RecordType]) extends AnyVal {
       
       inline def setColumns(value: ColumnsType[RecordType]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

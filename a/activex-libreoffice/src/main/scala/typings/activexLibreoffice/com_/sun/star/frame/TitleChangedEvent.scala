@@ -21,7 +21,8 @@ object TitleChangedEvent {
     __obj.asInstanceOf[TitleChangedEvent]
   }
   
-  extension [Self <: TitleChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TitleChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }

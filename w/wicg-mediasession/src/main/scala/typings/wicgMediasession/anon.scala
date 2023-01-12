@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[RequiredPickMediaSessionA]
     }
     
-    extension [Self <: RequiredPickMediaSessionA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredPickMediaSessionA] (val x: Self) extends AnyVal {
       
       inline def setAction(value: MediaSessionAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

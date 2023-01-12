@@ -142,7 +142,8 @@ object libClientMod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: HttpAgentOptions | UndiciAgentOptions | agentFn | `false`): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -303,7 +304,8 @@ object libClientMod {
       __obj.asInstanceOf[NodeOptions]
     }
     
-    extension [Self <: NodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: HttpAgentOptions | UndiciAgentOptions): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

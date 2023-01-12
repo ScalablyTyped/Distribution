@@ -17,7 +17,8 @@ object PropertiesDecay {
     __obj.asInstanceOf[PropertiesDecay]
   }
   
-  extension [Self <: PropertiesDecay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertiesDecay] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: Decay): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

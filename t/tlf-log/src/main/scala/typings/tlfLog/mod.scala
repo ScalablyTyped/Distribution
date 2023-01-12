@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[NewLevel]
     }
     
-    extension [Self <: NewLevel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewLevel] (val x: Self) extends AnyVal {
       
       inline def setAfterLog(value: () => Unit): Self = StObject.set(x, "afterLog", js.Any.fromFunction0(value))
       
@@ -79,7 +80,8 @@ object mod {
       __obj.asInstanceOf[NewLevelAfter]
     }
     
-    extension [Self <: NewLevelAfter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewLevelAfter] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     }
@@ -98,7 +100,8 @@ object mod {
       __obj.asInstanceOf[NewLevelBefore]
     }
     
-    extension [Self <: NewLevelBefore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewLevelBefore] (val x: Self) extends AnyVal {
       
       inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     }

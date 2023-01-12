@@ -27,7 +27,8 @@ object typesInvalidKeyUsageExceptionMod {
       __obj.asInstanceOf[InvalidKeyUsageException]
     }
     
-    extension [Self <: InvalidKeyUsageException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidKeyUsageException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidKeyUsageException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -47,7 +48,8 @@ object typesInvalidKeyUsageExceptionMod {
       __obj.asInstanceOf[InvalidKeyUsageExceptionDetails]
     }
     
-    extension [Self <: InvalidKeyUsageExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidKeyUsageExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

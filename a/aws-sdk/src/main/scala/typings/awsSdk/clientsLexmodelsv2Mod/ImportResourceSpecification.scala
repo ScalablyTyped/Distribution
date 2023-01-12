@@ -25,7 +25,8 @@ object ImportResourceSpecification {
     __obj.asInstanceOf[ImportResourceSpecification]
   }
   
-  extension [Self <: ImportResourceSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportResourceSpecification] (val x: Self) extends AnyVal {
     
     inline def setBotImportSpecification(value: BotImportSpecification): Self = StObject.set(x, "botImportSpecification", value.asInstanceOf[js.Any])
     

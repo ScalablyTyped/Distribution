@@ -16,7 +16,8 @@ object DeleteConditionalFormatRuleResponse {
     __obj.asInstanceOf[DeleteConditionalFormatRuleResponse]
   }
   
-  extension [Self <: DeleteConditionalFormatRuleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteConditionalFormatRuleResponse] (val x: Self) extends AnyVal {
     
     inline def setRule(value: ConditionalFormatRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     

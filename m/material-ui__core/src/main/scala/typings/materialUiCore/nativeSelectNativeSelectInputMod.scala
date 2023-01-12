@@ -36,7 +36,8 @@ object nativeSelectNativeSelectInputMod extends Shortcut {
       __obj.asInstanceOf[NativeSelectInputProps]
     }
     
-    extension [Self <: NativeSelectInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeSelectInputProps] (val x: Self) extends AnyVal {
       
       inline def setIconComponent(value: ElementType[Any]): Self = StObject.set(x, "IconComponent", value.asInstanceOf[js.Any])
       

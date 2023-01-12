@@ -41,7 +41,8 @@ object Breaks {
     __obj.asInstanceOf[Breaks]
   }
   
-  extension [Self <: Breaks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Breaks] (val x: Self) extends AnyVal {
     
     inline def setBreaks(value: Boolean): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
     

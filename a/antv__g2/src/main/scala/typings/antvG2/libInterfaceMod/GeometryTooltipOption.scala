@@ -23,7 +23,8 @@ object GeometryTooltipOption {
     __obj.asInstanceOf[GeometryTooltipOption]
   }
   
-  extension [Self <: GeometryTooltipOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeometryTooltipOption] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: /* repeated */ Any => LooseObject): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     

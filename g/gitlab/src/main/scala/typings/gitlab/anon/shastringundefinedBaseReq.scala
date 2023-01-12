@@ -21,7 +21,8 @@ object shastringundefinedBaseReq {
     __obj.asInstanceOf[shastringundefinedBaseReq]
   }
   
-  extension [Self <: shastringundefinedBaseReq](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: shastringundefinedBaseReq] (val x: Self) extends AnyVal {
     
     inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     

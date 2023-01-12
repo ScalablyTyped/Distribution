@@ -29,7 +29,8 @@ object AfterStartup {
     __obj.asInstanceOf[AfterStartup]
   }
   
-  extension [Self <: AfterStartup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AfterStartup] (val x: Self) extends AnyVal {
     
     inline def setAfterStartup(value: js.Array[String]): Self = StObject.set(x, "afterStartup", value.asInstanceOf[js.Any])
     

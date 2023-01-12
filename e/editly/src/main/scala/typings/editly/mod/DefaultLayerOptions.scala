@@ -25,7 +25,8 @@ object DefaultLayerOptions {
     __obj.asInstanceOf[DefaultLayerOptions]
   }
   
-  extension [Self <: DefaultLayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultLayerOptions] (val x: Self) extends AnyVal {
     
     inline def setFontPath(value: String): Self = StObject.set(x, "fontPath", value.asInstanceOf[js.Any])
     

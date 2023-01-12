@@ -20,7 +20,8 @@ object StreamStream {
     __obj.asInstanceOf[StreamStream]
   }
   
-  extension [Self <: StreamStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamStream] (val x: Self) extends AnyVal {
     
     inline def setStream(value: typings.agoraRtcSdk.mod.Stream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
   }

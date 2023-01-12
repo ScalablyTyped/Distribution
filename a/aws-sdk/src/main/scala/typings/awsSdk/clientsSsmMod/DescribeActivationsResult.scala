@@ -23,7 +23,8 @@ object DescribeActivationsResult {
     __obj.asInstanceOf[DescribeActivationsResult]
   }
   
-  extension [Self <: DescribeActivationsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeActivationsResult] (val x: Self) extends AnyVal {
     
     inline def setActivationList(value: ActivationList): Self = StObject.set(x, "ActivationList", value.asInstanceOf[js.Any])
     

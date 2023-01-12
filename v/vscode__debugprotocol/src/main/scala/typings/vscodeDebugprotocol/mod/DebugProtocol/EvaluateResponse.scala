@@ -31,7 +31,8 @@ object EvaluateResponse {
     __obj.asInstanceOf[EvaluateResponse]
   }
   
-  extension [Self <: EvaluateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluateResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: MemoryReference): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

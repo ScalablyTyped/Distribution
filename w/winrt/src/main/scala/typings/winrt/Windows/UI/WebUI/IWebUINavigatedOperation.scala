@@ -15,7 +15,8 @@ object IWebUINavigatedOperation {
     __obj.asInstanceOf[IWebUINavigatedOperation]
   }
   
-  extension [Self <: IWebUINavigatedOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebUINavigatedOperation] (val x: Self) extends AnyVal {
     
     inline def setGetDeferral(value: () => WebUINavigatedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
   }

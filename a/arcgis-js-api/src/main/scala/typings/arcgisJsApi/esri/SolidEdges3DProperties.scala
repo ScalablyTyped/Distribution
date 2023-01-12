@@ -23,7 +23,8 @@ object SolidEdges3DProperties {
     __obj.asInstanceOf[SolidEdges3DProperties]
   }
   
-  extension [Self <: SolidEdges3DProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SolidEdges3DProperties] (val x: Self) extends AnyVal {
     
     inline def setType(value: solid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

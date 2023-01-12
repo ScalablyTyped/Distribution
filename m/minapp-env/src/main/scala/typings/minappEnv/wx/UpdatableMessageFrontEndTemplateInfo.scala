@@ -19,7 +19,8 @@ object UpdatableMessageFrontEndTemplateInfo {
     __obj.asInstanceOf[UpdatableMessageFrontEndTemplateInfo]
   }
   
-  extension [Self <: UpdatableMessageFrontEndTemplateInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatableMessageFrontEndTemplateInfo] (val x: Self) extends AnyVal {
     
     inline def setParameterList(value: UpdatableMessageFrontEndParameter): Self = StObject.set(x, "parameterList", value.asInstanceOf[js.Any])
   }

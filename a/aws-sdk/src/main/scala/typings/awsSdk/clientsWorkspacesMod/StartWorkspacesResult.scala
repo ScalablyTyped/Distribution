@@ -18,7 +18,8 @@ object StartWorkspacesResult {
     __obj.asInstanceOf[StartWorkspacesResult]
   }
   
-  extension [Self <: StartWorkspacesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartWorkspacesResult] (val x: Self) extends AnyVal {
     
     inline def setFailedRequests(value: FailedStartWorkspaceRequests): Self = StObject.set(x, "FailedRequests", value.asInstanceOf[js.Any])
     

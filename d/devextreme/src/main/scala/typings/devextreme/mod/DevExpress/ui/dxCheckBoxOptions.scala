@@ -36,7 +36,8 @@ object dxCheckBoxOptions {
     __obj.asInstanceOf[dxCheckBoxOptions]
   }
   
-  extension [Self <: dxCheckBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxCheckBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setIconSize(value: Double | String): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
     

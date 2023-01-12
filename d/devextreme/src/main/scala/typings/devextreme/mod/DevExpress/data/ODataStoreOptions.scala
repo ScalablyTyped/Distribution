@@ -75,7 +75,8 @@ object ODataStoreOptions {
     __obj.asInstanceOf[ODataStoreOptions[TItem, TKey]]
   }
   
-  extension [Self <: ODataStoreOptions[?, ?], TItem, TKey](x: Self & (ODataStoreOptions[TItem, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ODataStoreOptions[?, ?], TItem, TKey] (val x: Self & (ODataStoreOptions[TItem, TKey])) extends AnyVal {
     
     inline def setBeforeSend(value: /* options */ Async => Unit): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
     

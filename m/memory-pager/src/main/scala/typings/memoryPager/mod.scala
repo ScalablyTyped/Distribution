@@ -42,7 +42,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Page]
     }
     
-    extension [Self <: Page](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       

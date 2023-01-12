@@ -50,7 +50,8 @@ object AppRoleAssignment {
     __obj.asInstanceOf[AppRoleAssignment]
   }
   
-  extension [Self <: AppRoleAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppRoleAssignment] (val x: Self) extends AnyVal {
     
     inline def setAppRoleId(value: String): Self = StObject.set(x, "appRoleId", value.asInstanceOf[js.Any])
     

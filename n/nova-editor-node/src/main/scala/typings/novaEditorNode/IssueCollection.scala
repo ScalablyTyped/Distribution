@@ -39,7 +39,8 @@ object IssueCollection {
     __obj.asInstanceOf[IssueCollection]
   }
   
-  extension [Self <: IssueCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssueCollection] (val x: Self) extends AnyVal {
     
     inline def setAppend(value: (String, js.Array[Issue]) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
     

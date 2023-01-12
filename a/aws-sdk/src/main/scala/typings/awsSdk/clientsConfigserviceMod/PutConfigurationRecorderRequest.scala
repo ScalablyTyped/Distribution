@@ -18,7 +18,8 @@ object PutConfigurationRecorderRequest {
     __obj.asInstanceOf[PutConfigurationRecorderRequest]
   }
   
-  extension [Self <: PutConfigurationRecorderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutConfigurationRecorderRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationRecorder(value: ConfigurationRecorder): Self = StObject.set(x, "ConfigurationRecorder", value.asInstanceOf[js.Any])
   }

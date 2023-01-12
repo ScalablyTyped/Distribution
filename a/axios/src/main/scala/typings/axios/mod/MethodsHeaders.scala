@@ -75,7 +75,8 @@ object MethodsHeaders {
     __obj.asInstanceOf[MethodsHeaders]
   }
   
-  extension [Self <: MethodsHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MethodsHeaders] (val x: Self) extends AnyVal {
     
     inline def setDELETE(value: AxiosHeaders): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
     

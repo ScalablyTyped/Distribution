@@ -18,7 +18,8 @@ object ReleaseHostsRequest {
     __obj.asInstanceOf[ReleaseHostsRequest]
   }
   
-  extension [Self <: ReleaseHostsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseHostsRequest] (val x: Self) extends AnyVal {
     
     inline def setHostIds(value: RequestHostIdList): Self = StObject.set(x, "HostIds", value.asInstanceOf[js.Any])
     

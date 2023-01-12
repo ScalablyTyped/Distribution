@@ -35,7 +35,8 @@ object KeyBinding {
     __obj.asInstanceOf[KeyBinding]
   }
   
-  extension [Self <: KeyBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyBinding] (val x: Self) extends AnyVal {
     
     inline def setAddKeyboardHandler(value: (KeyboardHandler, Double) => Unit): Self = StObject.set(x, "addKeyboardHandler", js.Any.fromFunction2(value))
     

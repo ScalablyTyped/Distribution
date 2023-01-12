@@ -18,7 +18,8 @@ object ColumnDescription {
     __obj.asInstanceOf[ColumnDescription]
   }
   
-  extension [Self <: ColumnDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnDescription] (val x: Self) extends AnyVal {
     
     inline def setText(value: ColumnDescriptiveText): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     

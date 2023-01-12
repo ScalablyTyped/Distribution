@@ -18,7 +18,8 @@ object GetMeetingRequest {
     __obj.asInstanceOf[GetMeetingRequest]
   }
   
-  extension [Self <: GetMeetingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMeetingRequest] (val x: Self) extends AnyVal {
     
     inline def setMeetingId(value: GuidString): Self = StObject.set(x, "MeetingId", value.asInstanceOf[js.Any])
   }

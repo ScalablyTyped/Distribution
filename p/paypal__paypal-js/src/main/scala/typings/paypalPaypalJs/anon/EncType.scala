@@ -40,7 +40,8 @@ object EncType {
     __obj.asInstanceOf[EncType]
   }
   
-  extension [Self <: EncType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncType] (val x: Self) extends AnyVal {
     
     inline def setEncType(value: String): Self = StObject.set(x, "encType", value.asInstanceOf[js.Any])
     

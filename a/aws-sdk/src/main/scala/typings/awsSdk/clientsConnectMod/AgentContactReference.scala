@@ -45,7 +45,8 @@ object AgentContactReference {
     __obj.asInstanceOf[AgentContactReference]
   }
   
-  extension [Self <: AgentContactReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentContactReference] (val x: Self) extends AnyVal {
     
     inline def setAgentContactState(value: ContactState): Self = StObject.set(x, "AgentContactState", value.asInstanceOf[js.Any])
     

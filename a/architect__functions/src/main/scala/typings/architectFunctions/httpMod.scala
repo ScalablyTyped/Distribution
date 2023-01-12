@@ -66,7 +66,8 @@ object httpMod {
       __obj.asInstanceOf[ArcHttp]
     }
     
-    extension [Self <: ArcHttp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcHttp] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: HttpAsync): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object httpMod {
       __obj.asInstanceOf[HttpProxyOptions]
     }
     
-    extension [Self <: HttpProxyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpProxyOptions] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: Record[String, String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -209,7 +211,8 @@ object httpMod {
       __obj.asInstanceOf[HttpRequest]
     }
     
-    extension [Self <: HttpRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpRequest] (val x: Self) extends AnyVal {
       
       inline def setBody(value: RequestBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -286,7 +289,8 @@ object httpMod {
       __obj.asInstanceOf[HttpResponse]
     }
     
-    extension [Self <: HttpResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpResponse] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -335,7 +339,8 @@ object httpMod {
       __obj.asInstanceOf[HttpSession]
     }
     
-    extension [Self <: HttpSession](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpSession] (val x: Self) extends AnyVal {
       
       inline def setRead(value: HttpRequest => js.Promise[SessionData]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
@@ -366,7 +371,8 @@ object httpMod {
       __obj.asInstanceOf[StaticOptions]
     }
     
-    extension [Self <: StaticOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticOptions] (val x: Self) extends AnyVal {
       
       inline def setStagePath(value: String): Self = StObject.set(x, "stagePath", value.asInstanceOf[js.Any])
     }

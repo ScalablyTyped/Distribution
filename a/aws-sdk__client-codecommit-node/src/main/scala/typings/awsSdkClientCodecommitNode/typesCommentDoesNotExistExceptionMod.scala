@@ -27,7 +27,8 @@ object typesCommentDoesNotExistExceptionMod {
       __obj.asInstanceOf[CommentDoesNotExistException]
     }
     
-    extension [Self <: CommentDoesNotExistException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentDoesNotExistException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentDoesNotExistException

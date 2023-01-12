@@ -21,7 +21,8 @@ object INxLayoutErrors {
     __obj.asInstanceOf[INxLayoutErrors]
   }
   
-  extension [Self <: INxLayoutErrors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxLayoutErrors] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object Assignments {
     __obj.asInstanceOf[Assignments]
   }
   
-  extension [Self <: Assignments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Assignments] (val x: Self) extends AnyVal {
     
     inline def setAssignments(value: Assignment | js.Array[Assignment]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
     

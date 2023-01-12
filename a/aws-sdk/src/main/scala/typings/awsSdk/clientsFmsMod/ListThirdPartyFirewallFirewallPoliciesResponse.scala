@@ -23,7 +23,8 @@ object ListThirdPartyFirewallFirewallPoliciesResponse {
     __obj.asInstanceOf[ListThirdPartyFirewallFirewallPoliciesResponse]
   }
   
-  extension [Self <: ListThirdPartyFirewallFirewallPoliciesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListThirdPartyFirewallFirewallPoliciesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

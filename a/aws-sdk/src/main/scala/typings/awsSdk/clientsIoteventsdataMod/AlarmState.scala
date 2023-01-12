@@ -33,7 +33,8 @@ object AlarmState {
     __obj.asInstanceOf[AlarmState]
   }
   
-  extension [Self <: AlarmState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlarmState] (val x: Self) extends AnyVal {
     
     inline def setCustomerAction(value: CustomerAction): Self = StObject.set(x, "customerAction", value.asInstanceOf[js.Any])
     

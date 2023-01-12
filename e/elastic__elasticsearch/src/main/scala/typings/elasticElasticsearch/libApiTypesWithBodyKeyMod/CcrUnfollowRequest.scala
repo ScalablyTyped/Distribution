@@ -17,7 +17,8 @@ object CcrUnfollowRequest {
     __obj.asInstanceOf[CcrUnfollowRequest]
   }
   
-  extension [Self <: CcrUnfollowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CcrUnfollowRequest] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: IndexName): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }

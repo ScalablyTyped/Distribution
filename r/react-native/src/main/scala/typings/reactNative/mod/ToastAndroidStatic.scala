@@ -46,7 +46,8 @@ object ToastAndroidStatic {
     __obj.asInstanceOf[ToastAndroidStatic]
   }
   
-  extension [Self <: ToastAndroidStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToastAndroidStatic] (val x: Self) extends AnyVal {
     
     inline def setBOTTOM(value: Double): Self = StObject.set(x, "BOTTOM", value.asInstanceOf[js.Any])
     

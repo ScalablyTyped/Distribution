@@ -15,7 +15,8 @@ object CreateDBSnapshotResult {
     __obj.asInstanceOf[CreateDBSnapshotResult]
   }
   
-  extension [Self <: CreateDBSnapshotResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDBSnapshotResult] (val x: Self) extends AnyVal {
     
     inline def setDBSnapshot(value: DBSnapshot): Self = StObject.set(x, "DBSnapshot", value.asInstanceOf[js.Any])
     

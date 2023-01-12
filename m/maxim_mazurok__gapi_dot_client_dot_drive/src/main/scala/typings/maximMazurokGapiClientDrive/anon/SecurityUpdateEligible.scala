@@ -19,7 +19,8 @@ object SecurityUpdateEligible {
     __obj.asInstanceOf[SecurityUpdateEligible]
   }
   
-  extension [Self <: SecurityUpdateEligible](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityUpdateEligible] (val x: Self) extends AnyVal {
     
     inline def setSecurityUpdateEligible(value: Boolean): Self = StObject.set(x, "securityUpdateEligible", value.asInstanceOf[js.Any])
     

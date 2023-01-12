@@ -32,7 +32,8 @@ object ExceptionBreakpointsFilter {
     __obj.asInstanceOf[ExceptionBreakpointsFilter]
   }
   
-  extension [Self <: ExceptionBreakpointsFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExceptionBreakpointsFilter] (val x: Self) extends AnyVal {
     
     inline def setConditionDescription(value: String): Self = StObject.set(x, "conditionDescription", value.asInstanceOf[js.Any])
     

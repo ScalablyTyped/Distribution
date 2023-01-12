@@ -560,7 +560,8 @@ object libComponentsTextInputPropsMod {
       __obj.asInstanceOf[TextInputSharedProps]
     }
     
-    extension [Self <: TextInputSharedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextInputSharedProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

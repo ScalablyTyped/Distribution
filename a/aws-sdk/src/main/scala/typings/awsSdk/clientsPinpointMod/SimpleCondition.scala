@@ -28,7 +28,8 @@ object SimpleCondition {
     __obj.asInstanceOf[SimpleCondition]
   }
   
-  extension [Self <: SimpleCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleCondition] (val x: Self) extends AnyVal {
     
     inline def setEventCondition(value: EventCondition): Self = StObject.set(x, "EventCondition", value.asInstanceOf[js.Any])
     

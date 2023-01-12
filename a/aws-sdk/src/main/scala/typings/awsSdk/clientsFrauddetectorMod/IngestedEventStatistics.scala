@@ -38,7 +38,8 @@ object IngestedEventStatistics {
     __obj.asInstanceOf[IngestedEventStatistics]
   }
   
-  extension [Self <: IngestedEventStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestedEventStatistics] (val x: Self) extends AnyVal {
     
     inline def setEventDataSizeInBytes(value: Long): Self = StObject.set(x, "eventDataSizeInBytes", value.asInstanceOf[js.Any])
     

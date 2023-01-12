@@ -70,7 +70,8 @@ object distSrcExternalGherkinExeMod {
       __obj.asInstanceOf[GherkinExe]
     }
     
-    extension [Self <: GherkinExe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GherkinExe] (val x: Self) extends AnyVal {
       
       inline def setDialects(value: () => StringDictionary[Dialect]): Self = StObject.set(x, "dialects", js.Any.fromFunction0(value))
       

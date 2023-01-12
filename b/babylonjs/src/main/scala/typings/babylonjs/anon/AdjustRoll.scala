@@ -39,7 +39,8 @@ object AdjustRoll {
     __obj.asInstanceOf[AdjustRoll]
   }
   
-  extension [Self <: AdjustRoll](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdjustRoll] (val x: Self) extends AnyVal {
     
     inline def setAdjustPitch(value: Double): Self = StObject.set(x, "adjustPitch", value.asInstanceOf[js.Any])
     

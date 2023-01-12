@@ -22,7 +22,8 @@ object ExpiresAt {
     __obj.asInstanceOf[ExpiresAt]
   }
   
-  extension [Self <: ExpiresAt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpiresAt] (val x: Self) extends AnyVal {
     
     inline def setExpiresAt(value: Double): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
     

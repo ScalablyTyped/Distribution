@@ -41,7 +41,8 @@ object PartiallySucceeded {
     __obj.asInstanceOf[PartiallySucceeded]
   }
   
-  extension [Self <: PartiallySucceeded](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartiallySucceeded] (val x: Self) extends AnyVal {
     
     inline def setCanceled(value: scala.Double): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     

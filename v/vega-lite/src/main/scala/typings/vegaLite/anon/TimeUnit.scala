@@ -23,7 +23,8 @@ object TimeUnit {
     __obj.asInstanceOf[TimeUnit]
   }
   
-  extension [Self <: TimeUnit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeUnit] (val x: Self) extends AnyVal {
     
     inline def setTimeUnit(value: typings.vegaLite.buildSrcTimeunitMod.TimeUnit | TimeUnitParams): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
     

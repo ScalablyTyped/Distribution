@@ -24,7 +24,8 @@ object distTypesStoriesComponentsSystemCategoryListBaseSizesMod extends Shortcut
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: js.Array[IconDescriptor]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object IdentityDescription {
     __obj.asInstanceOf[IdentityDescription]
   }
   
-  extension [Self <: IdentityDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityDescription] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     

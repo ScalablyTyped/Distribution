@@ -23,7 +23,8 @@ object PathMark {
     __obj.asInstanceOf[PathMark]
   }
   
-  extension [Self <: PathMark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathMark] (val x: Self) extends AnyVal {
     
     inline def setType(value: path): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -37,7 +37,8 @@ object Labels {
     __obj.asInstanceOf[Labels]
   }
   
-  extension [Self <: Labels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Labels] (val x: Self) extends AnyVal {
     
     inline def setLabelDay(
       value: (/* day */ js.Date, /* activeModifiers */ ActiveModifiers, /* options */ js.UndefOr[Locale]) => String

@@ -600,7 +600,8 @@ object mod {
       __obj.asInstanceOf[ESObservable[T, S]]
     }
     
-    extension [Self <: ESObservable[?, ?], T, S](x: Self & (ESObservable[T, S])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ESObservable[?, ?], T, S] (val x: Self & (ESObservable[T, S])) extends AnyVal {
       
       inline def setSubscribe(value: ESObserver[T, S] => Unsubscribe): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     }
@@ -623,7 +624,8 @@ object mod {
       __obj.asInstanceOf[ESObserver[T, S]]
     }
     
-    extension [Self <: ESObserver[?, ?], T, S](x: Self & (ESObserver[T, S])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ESObserver[?, ?], T, S] (val x: Self & (ESObserver[T, S])) extends AnyVal {
       
       inline def setComplete(value: () => Any): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
@@ -672,7 +674,8 @@ object mod {
       __obj.asInstanceOf[Emitter[V, E]]
     }
     
-    extension [Self <: Emitter[?, ?], V, E](x: Self & (Emitter[V, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Emitter[?, ?], V, E] (val x: Self & (Emitter[V, E])) extends AnyVal {
       
       inline def setEmit(value: V => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
       
@@ -730,7 +733,8 @@ object mod {
       __obj.asInstanceOf[Observer[T, S]]
     }
     
-    extension [Self <: Observer[?, ?], T, S](x: Self & (Observer[T, S])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observer[?, ?], T, S] (val x: Self & (Observer[T, S])) extends AnyVal {
       
       inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
@@ -759,7 +763,8 @@ object mod {
       __obj.asInstanceOf[Subscription]
     }
     
-    extension [Self <: Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
       
       inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
       

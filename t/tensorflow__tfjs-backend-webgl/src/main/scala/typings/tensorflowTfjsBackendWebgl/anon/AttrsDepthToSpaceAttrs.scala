@@ -22,7 +22,8 @@ object AttrsDepthToSpaceAttrs {
     __obj.asInstanceOf[AttrsDepthToSpaceAttrs]
   }
   
-  extension [Self <: AttrsDepthToSpaceAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsDepthToSpaceAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: DepthToSpaceAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

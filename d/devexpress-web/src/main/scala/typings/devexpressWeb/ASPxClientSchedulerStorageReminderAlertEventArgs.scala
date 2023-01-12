@@ -23,7 +23,8 @@ object ASPxClientSchedulerStorageReminderAlertEventArgs {
     __obj.asInstanceOf[ASPxClientSchedulerStorageReminderAlertEventArgs]
   }
   
-  extension [Self <: ASPxClientSchedulerStorageReminderAlertEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSchedulerStorageReminderAlertEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAlertNotifications(value: js.Array[ASPxClientReminderAlertNotification]): Self = StObject.set(x, "alertNotifications", value.asInstanceOf[js.Any])
     

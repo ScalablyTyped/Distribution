@@ -159,7 +159,8 @@ object CMEventCallback {
     __obj.asInstanceOf[CMEventCallback]
   }
   
-  extension [Self <: CMEventCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CMEventCallback] (val x: Self) extends AnyVal {
     
     inline def setConnected(value: String => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction1(value))
     

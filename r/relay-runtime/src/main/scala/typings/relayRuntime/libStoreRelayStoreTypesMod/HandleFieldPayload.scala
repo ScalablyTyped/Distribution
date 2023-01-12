@@ -31,7 +31,8 @@ object HandleFieldPayload {
     __obj.asInstanceOf[HandleFieldPayload]
   }
   
-  extension [Self <: HandleFieldPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandleFieldPayload] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: Variables): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

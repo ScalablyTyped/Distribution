@@ -38,7 +38,8 @@ object distSrcTediousDotpubMod {
       __obj.asInstanceOf[ITediousData]
     }
     
-    extension [Self <: ITediousData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITediousData] (val x: Self) extends AnyVal {
       
       inline def setDatabase(value: Port): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object distSrcTediousDotpubMod {
       __obj.asInstanceOf[ITediousResult]
     }
     
-    extension [Self <: ITediousResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITediousResult] (val x: Self) extends AnyVal {
       
       inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
       

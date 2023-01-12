@@ -38,7 +38,8 @@ object InputValidation {
     __obj.asInstanceOf[InputValidation]
   }
   
-  extension [Self <: InputValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputValidation] (val x: Self) extends AnyVal {
     
     inline def setDataType(value: InputDataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object EventType {
     __obj.asInstanceOf[EventType]
   }
   
-  extension [Self <: EventType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventType] (val x: Self) extends AnyVal {
     
     inline def setArn(value: fraudDetectorArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

@@ -106,7 +106,8 @@ object distAbstractRendererMod {
       __obj.asInstanceOf[IRenderer]
     }
     
-    extension [Self <: IRenderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRenderer] (val x: Self) extends AnyVal {
       
       inline def setGetConfig(value: () => RendererConfig): Self = StObject.set(x, "getConfig", js.Any.fromFunction0(value))
       
@@ -137,7 +138,8 @@ object distAbstractRendererMod {
       __obj.asInstanceOf[RendererPlugin]
     }
     
-    extension [Self <: RendererPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RendererPlugin] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

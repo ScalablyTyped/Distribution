@@ -46,7 +46,8 @@ object DocumentMacroConfirmationRequest {
     __obj.asInstanceOf[DocumentMacroConfirmationRequest]
   }
   
-  extension [Self <: DocumentMacroConfirmationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentMacroConfirmationRequest] (val x: Self) extends AnyVal {
     
     inline def setDocumentSignatureInformation(value: SafeArray[DocumentSignatureInformation]): Self = StObject.set(x, "DocumentSignatureInformation", value.asInstanceOf[js.Any])
     

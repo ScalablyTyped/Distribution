@@ -27,7 +27,8 @@ object TeleconferenceDeviceVideoQuality {
     __obj.asInstanceOf[TeleconferenceDeviceVideoQuality]
   }
   
-  extension [Self <: TeleconferenceDeviceVideoQuality](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeleconferenceDeviceVideoQuality] (val x: Self) extends AnyVal {
     
     inline def setAverageInboundBitRate(value: NullableOption[Double]): Self = StObject.set(x, "averageInboundBitRate", value.asInstanceOf[js.Any])
     

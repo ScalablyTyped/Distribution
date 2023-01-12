@@ -17,7 +17,8 @@ object Dow {
     __obj.asInstanceOf[Dow]
   }
   
-  extension [Self <: Dow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dow] (val x: Self) extends AnyVal {
     
     inline def setDow(value: Double): Self = StObject.set(x, "dow", value.asInstanceOf[js.Any])
     

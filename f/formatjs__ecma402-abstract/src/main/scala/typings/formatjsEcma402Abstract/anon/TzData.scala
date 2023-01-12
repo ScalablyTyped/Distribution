@@ -18,7 +18,8 @@ object TzData {
     __obj.asInstanceOf[TzData]
   }
   
-  extension [Self <: TzData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TzData] (val x: Self) extends AnyVal {
     
     inline def setTzData(value: Record[String, Any]): Self = StObject.set(x, "tzData", value.asInstanceOf[js.Any])
     

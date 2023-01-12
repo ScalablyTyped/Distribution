@@ -47,7 +47,8 @@ object MMOItem {
     __obj.asInstanceOf[MMOItem]
   }
   
-  extension [Self <: MMOItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MMOItem] (val x: Self) extends AnyVal {
     
     inline def setAoiEnteryPoint(value: Vec3D): Self = StObject.set(x, "aoiEnteryPoint", value.asInstanceOf[js.Any])
     

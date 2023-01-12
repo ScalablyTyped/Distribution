@@ -71,7 +71,8 @@ object config {
       __obj.asInstanceOf[NetworkInfo]
     }
     
-    extension [Self <: NetworkInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkInfo] (val x: Self) extends AnyVal {
       
       inline def setBSSID(value: String): Self = StObject.set(x, "BSSID", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object config {
       __obj.asInstanceOf[NetworkInfoFilterHexSSID]
     }
     
-    extension [Self <: NetworkInfoFilterHexSSID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkInfoFilterHexSSID] (val x: Self) extends AnyVal {
       
       inline def setHexSSID(value: String): Self = StObject.set(x, "HexSSID", value.asInstanceOf[js.Any])
       
@@ -140,7 +142,8 @@ object config {
       __obj.asInstanceOf[NetworkInfoFilterSSID]
     }
     
-    extension [Self <: NetworkInfoFilterSSID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkInfoFilterSSID] (val x: Self) extends AnyVal {
       
       inline def setSSID(value: String): Self = StObject.set(x, "SSID", value.asInstanceOf[js.Any])
       

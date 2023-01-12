@@ -38,7 +38,8 @@ object UserDefinedFunctionInput {
     __obj.asInstanceOf[UserDefinedFunctionInput]
   }
   
-  extension [Self <: UserDefinedFunctionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserDefinedFunctionInput] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: NameString): Self = StObject.set(x, "ClassName", value.asInstanceOf[js.Any])
     

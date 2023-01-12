@@ -20,7 +20,8 @@ object XSidebar {
     __obj.asInstanceOf[XSidebar]
   }
   
-  extension [Self <: XSidebar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSidebar] (val x: Self) extends AnyVal {
     
     inline def setRequestLayout(value: () => Unit): Self = StObject.set(x, "requestLayout", js.Any.fromFunction0(value))
   }

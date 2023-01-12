@@ -182,7 +182,8 @@ object typesTypesMod {
       __obj.asInstanceOf[AutoCompleteListboxPositionOptions]
     }
     
-    extension [Self <: AutoCompleteListboxPositionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoCompleteListboxPositionOptions] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: PositionAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -937,7 +938,8 @@ object typesTypesMod {
       __obj.asInstanceOf[AutoCompleteProps]
     }
     
-    extension [Self <: AutoCompleteProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoCompleteProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -2041,7 +2043,8 @@ object typesTypesMod {
       __obj.asInstanceOf[AutoCompleteResult]
     }
     
-    extension [Self <: AutoCompleteResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoCompleteResult] (val x: Self) extends AnyVal {
       
       inline def setDataIndex(value: Double): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
       

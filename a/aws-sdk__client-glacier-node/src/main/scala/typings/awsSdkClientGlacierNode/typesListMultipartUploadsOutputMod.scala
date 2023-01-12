@@ -36,7 +36,8 @@ object typesListMultipartUploadsOutputMod {
       __obj.asInstanceOf[ListMultipartUploadsOutput]
     }
     
-    extension [Self <: ListMultipartUploadsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListMultipartUploadsOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

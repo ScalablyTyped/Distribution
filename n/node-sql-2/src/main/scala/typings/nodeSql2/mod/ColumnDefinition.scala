@@ -29,7 +29,8 @@ object ColumnDefinition {
     __obj.asInstanceOf[ColumnDefinition[Name, Type]]
   }
   
-  extension [Self <: ColumnDefinition[?, ?], Name /* <: String */, Type](x: Self & (ColumnDefinition[Name, Type])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnDefinition[?, ?], Name /* <: String */, Type] (val x: Self & (ColumnDefinition[Name, Type])) extends AnyVal {
     
     inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     

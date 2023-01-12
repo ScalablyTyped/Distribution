@@ -38,7 +38,8 @@ object OptionBuilder {
     __obj.asInstanceOf[OptionBuilder]
   }
   
-  extension [Self <: OptionBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionBuilder] (val x: Self) extends AnyVal {
     
     inline def setSetLabel(value: String => OptionBuilder): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
     

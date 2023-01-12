@@ -36,7 +36,8 @@ object componentsHeaderMod {
       __obj.asInstanceOf[HeaderProps]
     }
     
-    extension [Self <: HeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderProps] (val x: Self) extends AnyVal {
       
       inline def setSticky(value: scrollup): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
       

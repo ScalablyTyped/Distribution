@@ -81,7 +81,8 @@ object distImageSrcSvgImageMod {
       __obj.asInstanceOf[InnerSvgImageProps]
     }
     
-    extension [Self <: InnerSvgImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerSvgImageProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       

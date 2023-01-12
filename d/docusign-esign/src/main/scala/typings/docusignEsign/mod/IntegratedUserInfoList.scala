@@ -50,7 +50,8 @@ object IntegratedUserInfoList {
     __obj.asInstanceOf[IntegratedUserInfoList]
   }
   
-  extension [Self <: IntegratedUserInfoList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegratedUserInfoList] (val x: Self) extends AnyVal {
     
     inline def setAllUsersSelected(value: String): Self = StObject.set(x, "allUsersSelected", value.asInstanceOf[js.Any])
     

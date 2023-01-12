@@ -60,7 +60,8 @@ object anon {
       __obj.asInstanceOf[PauseStream]
     }
     
-    extension [Self <: PauseStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PauseStream] (val x: Self) extends AnyVal {
       
       inline def setPauseStream(value: Boolean): Self = StObject.set(x, "pauseStream", value.asInstanceOf[js.Any])
     }
@@ -77,7 +78,8 @@ object anon {
       __obj.asInstanceOf[UserProperty]
     }
     
-    extension [Self <: UserProperty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserProperty] (val x: Self) extends AnyVal {
       
       inline def setUserProperty(value: String): Self = StObject.set(x, "userProperty", value.asInstanceOf[js.Any])
     }

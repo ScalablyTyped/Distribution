@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[AxiosProxyConfig]
     }
     
-    extension [Self <: AxiosProxyConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxiosProxyConfig] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: Password): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object mod {
       __obj.asInstanceOf[HttpSignature]
     }
     
-    extension [Self <: HttpSignature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpSignature] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object mod {
       __obj.asInstanceOf[WaitOnAuth]
     }
     
-    extension [Self <: WaitOnAuth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaitOnAuth] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
@@ -192,7 +195,8 @@ object mod {
       __obj.asInstanceOf[WaitOnOptions]
     }
     
-    extension [Self <: WaitOnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaitOnOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: WaitOnAuth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

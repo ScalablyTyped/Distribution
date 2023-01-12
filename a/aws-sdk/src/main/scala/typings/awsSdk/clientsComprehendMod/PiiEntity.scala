@@ -33,7 +33,8 @@ object PiiEntity {
     __obj.asInstanceOf[PiiEntity]
   }
   
-  extension [Self <: PiiEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PiiEntity] (val x: Self) extends AnyVal {
     
     inline def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
     

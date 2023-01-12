@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[DictregistryUrls]
     }
     
-    extension [Self <: DictregistryUrls](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DictregistryUrls] (val x: Self) extends AnyVal {
       
       inline def setRegistry(value: String): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[PickAuthOptionsnpmrc]
     }
     
-    extension [Self <: PickAuthOptionsnpmrc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickAuthOptionsnpmrc] (val x: Self) extends AnyVal {
       
       inline def setNpmrc(value: DictregistryUrls): Self = StObject.set(x, "npmrc", value.asInstanceOf[js.Any])
       

@@ -48,7 +48,8 @@ object EC2InstanceCounts {
     __obj.asInstanceOf[EC2InstanceCounts]
   }
   
-  extension [Self <: EC2InstanceCounts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EC2InstanceCounts] (val x: Self) extends AnyVal {
     
     inline def setACTIVE(value: WholeNumber): Self = StObject.set(x, "ACTIVE", value.asInstanceOf[js.Any])
     

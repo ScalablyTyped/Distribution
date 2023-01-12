@@ -40,7 +40,8 @@ object FaxActivityLogging {
     __obj.asInstanceOf[FaxActivityLogging]
   }
   
-  extension [Self <: FaxActivityLogging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxActivityLogging] (val x: Self) extends AnyVal {
     
     inline def setDatabasePath(value: String): Self = StObject.set(x, "DatabasePath", value.asInstanceOf[js.Any])
     

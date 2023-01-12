@@ -37,7 +37,8 @@ object distTabsSrcTabListMod {
       __obj.asInstanceOf[InnerTabListProps]
     }
     
-    extension [Self <: InnerTabListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerTabListProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean | Double): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

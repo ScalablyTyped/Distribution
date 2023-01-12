@@ -29,7 +29,8 @@ object ButtonSize {
     __obj.asInstanceOf[ButtonSize]
   }
   
-  extension [Self <: ButtonSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonSize] (val x: Self) extends AnyVal {
     
     inline def setButtonSize(value: Double): Self = StObject.set(x, "buttonSize", value.asInstanceOf[js.Any])
     

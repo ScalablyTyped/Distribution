@@ -27,7 +27,8 @@ object GraphApplyEditsResultError {
     __obj.asInstanceOf[GraphApplyEditsResultError]
   }
   
-  extension [Self <: GraphApplyEditsResultError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphApplyEditsResultError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: Any): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

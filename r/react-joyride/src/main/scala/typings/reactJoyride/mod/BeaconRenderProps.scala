@@ -32,7 +32,8 @@ object BeaconRenderProps {
     __obj.asInstanceOf[BeaconRenderProps]
   }
   
-  extension [Self <: BeaconRenderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeaconRenderProps] (val x: Self) extends AnyVal {
     
     inline def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
     

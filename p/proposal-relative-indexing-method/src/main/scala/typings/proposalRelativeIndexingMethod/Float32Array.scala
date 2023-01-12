@@ -20,7 +20,8 @@ object Float32Array {
     __obj.asInstanceOf[Float32Array]
   }
   
-  extension [Self <: Float32Array](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Float32Array] (val x: Self) extends AnyVal {
     
     inline def setAt(value: Double => js.UndefOr[Double]): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
   }

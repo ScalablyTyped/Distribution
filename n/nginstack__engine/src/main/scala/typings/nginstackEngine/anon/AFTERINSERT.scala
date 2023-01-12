@@ -23,7 +23,8 @@ object AFTERINSERT {
     __obj.asInstanceOf[AFTERINSERT]
   }
   
-  extension [Self <: AFTERINSERT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AFTERINSERT] (val x: Self) extends AnyVal {
     
     inline def setAFTER_INSERT(value: Double): Self = StObject.set(x, "AFTER_INSERT", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ValidateMatchmakingRuleSetInput {
     __obj.asInstanceOf[ValidateMatchmakingRuleSetInput]
   }
   
-  extension [Self <: ValidateMatchmakingRuleSetInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateMatchmakingRuleSetInput] (val x: Self) extends AnyVal {
     
     inline def setRuleSetBody(value: RuleSetBody): Self = StObject.set(x, "RuleSetBody", value.asInstanceOf[js.Any])
   }

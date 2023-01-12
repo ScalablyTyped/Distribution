@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[DOMRectReadOnly]
     }
     
-    extension [Self <: DOMRectReadOnly](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DOMRectReadOnly] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object mod {
       __obj.asInstanceOf[ResizeObserver]
     }
     
-    extension [Self <: ResizeObserver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeObserver] (val x: Self) extends AnyVal {
       
       inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
@@ -122,7 +124,8 @@ object mod {
         __obj.asInstanceOf[typings.resizeObserverPolyfill.mod.global.ResizeObserver]
       }
       
-      extension [Self <: typings.resizeObserverPolyfill.mod.global.ResizeObserver](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.resizeObserverPolyfill.mod.global.ResizeObserver] (val x: Self) extends AnyVal {
         
         inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
         
@@ -151,7 +154,8 @@ object mod {
         __obj.asInstanceOf[ResizeObserverEntry]
       }
       
-      extension [Self <: ResizeObserverEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ResizeObserverEntry] (val x: Self) extends AnyVal {
         
         inline def setContentRect(value: DOMRectReadOnly): Self = StObject.set(x, "contentRect", value.asInstanceOf[js.Any])
         

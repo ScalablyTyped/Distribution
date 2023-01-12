@@ -19,7 +19,8 @@ object ResetInfo {
     __obj.asInstanceOf[ResetInfo]
   }
   
-  extension [Self <: ResetInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetInfo] (val x: Self) extends AnyVal {
     
     inline def setType(value: reset): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

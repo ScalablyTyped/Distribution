@@ -28,7 +28,8 @@ object AWSSessionCredentials {
     __obj.asInstanceOf[AWSSessionCredentials]
   }
   
-  extension [Self <: AWSSessionCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AWSSessionCredentials] (val x: Self) extends AnyVal {
     
     inline def setAccessKeyId(value: AccessKeyId): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
     

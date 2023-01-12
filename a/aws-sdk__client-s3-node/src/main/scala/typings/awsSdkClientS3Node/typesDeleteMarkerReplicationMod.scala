@@ -22,7 +22,8 @@ object typesDeleteMarkerReplicationMod {
       __obj.asInstanceOf[DeleteMarkerReplication]
     }
     
-    extension [Self <: DeleteMarkerReplication](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteMarkerReplication] (val x: Self) extends AnyVal {
       
       inline def setStatus(value: Enabled | Disabled | String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       

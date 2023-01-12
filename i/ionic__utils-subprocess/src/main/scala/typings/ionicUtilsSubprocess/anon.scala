@@ -69,7 +69,8 @@ object anon {
       __obj.asInstanceOf[ForkOptionsPickSpawnOptio]
     }
     
-    extension [Self <: ForkOptionsPickSpawnOptio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForkOptionsPickSpawnOptio] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -217,7 +218,8 @@ object anon {
       __obj.asInstanceOf[ReadonlySpawnOptions]
     }
     
-    extension [Self <: ReadonlySpawnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlySpawnOptions] (val x: Self) extends AnyVal {
       
       inline def setArgv0(value: String): Self = StObject.set(x, "argv0", value.asInstanceOf[js.Any])
       

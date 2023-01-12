@@ -28,7 +28,8 @@ object CreateTextureOptions {
     __obj.asInstanceOf[CreateTextureOptions]
   }
   
-  extension [Self <: CreateTextureOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTextureOptions] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

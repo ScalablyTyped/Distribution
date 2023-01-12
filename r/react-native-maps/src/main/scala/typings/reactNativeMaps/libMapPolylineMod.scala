@@ -216,7 +216,8 @@ object libMapPolylineMod {
       __obj.asInstanceOf[MapPolylineProps]
     }
     
-    extension [Self <: MapPolylineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapPolylineProps] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: js.Array[LatLng]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -828,7 +829,8 @@ object libMapPolylineMod {
       __obj.asInstanceOf[NativeProps]
     }
     
-    extension [Self <: NativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object TypeofTreeView {
     __obj.asInstanceOf[TypeofTreeView]
   }
   
-  extension [Self <: TypeofTreeView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTreeView] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => TreeView): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

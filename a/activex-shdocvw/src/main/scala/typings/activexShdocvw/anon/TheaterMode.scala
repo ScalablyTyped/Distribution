@@ -15,7 +15,8 @@ object TheaterMode {
     __obj.asInstanceOf[TheaterMode]
   }
   
-  extension [Self <: TheaterMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TheaterMode] (val x: Self) extends AnyVal {
     
     inline def setTheaterMode(value: Boolean): Self = StObject.set(x, "TheaterMode", value.asInstanceOf[js.Any])
   }

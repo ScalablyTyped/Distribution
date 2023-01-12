@@ -33,7 +33,8 @@ object ReadonlyStatusBarProps {
     __obj.asInstanceOf[ReadonlyStatusBarProps]
   }
   
-  extension [Self <: ReadonlyStatusBarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyStatusBarProps] (val x: Self) extends AnyVal {
     
     inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     

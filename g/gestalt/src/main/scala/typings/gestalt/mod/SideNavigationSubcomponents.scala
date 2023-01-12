@@ -30,7 +30,8 @@ object SideNavigationSubcomponents {
     __obj.asInstanceOf[SideNavigationSubcomponents]
   }
   
-  extension [Self <: SideNavigationSubcomponents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SideNavigationSubcomponents] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: FC[SideNavigationNestedGroupProps]): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     

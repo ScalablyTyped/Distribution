@@ -37,7 +37,8 @@ object NamedProperty {
     __obj.asInstanceOf[NamedProperty]
   }
   
-  extension [Self <: NamedProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedProperty] (val x: Self) extends AnyVal {
     
     inline def setBooleanValue(value: Boolean): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
     

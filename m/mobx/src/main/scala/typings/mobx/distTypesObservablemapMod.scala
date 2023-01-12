@@ -143,7 +143,8 @@ object distTypesObservablemapMod {
       __obj.asInstanceOf[IMapWillChange[K, V]]
     }
     
-    extension [Self <: IMapWillChange[?, ?], K, V](x: Self & (IMapWillChange[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMapWillChange[?, ?], K, V] (val x: Self & (IMapWillChange[K, V])) extends AnyVal {
       
       inline def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

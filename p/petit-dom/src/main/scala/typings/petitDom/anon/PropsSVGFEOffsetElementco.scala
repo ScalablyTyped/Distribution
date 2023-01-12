@@ -651,7 +651,8 @@ object PropsSVGFEOffsetElementco {
     __obj.asInstanceOf[PropsSVGFEOffsetElementco]
   }
   
-  extension [Self <: PropsSVGFEOffsetElementco](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsSVGFEOffsetElementco] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

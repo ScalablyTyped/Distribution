@@ -89,7 +89,8 @@ object libVictoryLabelVictoryLabelMod {
       __obj.asInstanceOf[OriginType]
     }
     
-    extension [Self <: OriginType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OriginType] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -194,7 +195,8 @@ object libVictoryLabelVictoryLabelMod {
       __obj.asInstanceOf[VictoryLabelProps]
     }
     
-    extension [Self <: VictoryLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryLabelProps] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: StringOrNumberOrCallback): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       

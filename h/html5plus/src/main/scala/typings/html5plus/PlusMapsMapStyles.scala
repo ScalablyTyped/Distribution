@@ -115,7 +115,8 @@ object PlusMapsMapStyles {
     __obj.asInstanceOf[PlusMapsMapStyles]
   }
   
-  extension [Self <: PlusMapsMapStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusMapsMapStyles] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: PlusMapsPoint): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

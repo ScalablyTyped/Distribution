@@ -15,7 +15,8 @@ object MemberLinks {
     __obj.asInstanceOf[MemberLinks]
   }
   
-  extension [Self <: MemberLinks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberLinks] (val x: Self) extends AnyVal {
     
     inline def setSelf(value: String): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
   }

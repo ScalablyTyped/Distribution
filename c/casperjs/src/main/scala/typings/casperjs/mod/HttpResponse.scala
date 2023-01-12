@@ -43,7 +43,8 @@ object HttpResponse {
     __obj.asInstanceOf[HttpResponse]
   }
   
-  extension [Self <: HttpResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpResponse] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

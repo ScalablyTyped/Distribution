@@ -18,7 +18,8 @@ object RevocationAndRenewalInformation {
     __obj.asInstanceOf[RevocationAndRenewalInformation]
   }
   
-  extension [Self <: RevocationAndRenewalInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevocationAndRenewalInformation] (val x: Self) extends AnyVal {
     
     inline def setItems(value: IVector[RevocationAndRenewalItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
   }

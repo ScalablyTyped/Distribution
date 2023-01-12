@@ -18,7 +18,8 @@ object UpdateListenerResponse {
     __obj.asInstanceOf[UpdateListenerResponse]
   }
   
-  extension [Self <: UpdateListenerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateListenerResponse] (val x: Self) extends AnyVal {
     
     inline def setListener(value: Listener): Self = StObject.set(x, "Listener", value.asInstanceOf[js.Any])
     

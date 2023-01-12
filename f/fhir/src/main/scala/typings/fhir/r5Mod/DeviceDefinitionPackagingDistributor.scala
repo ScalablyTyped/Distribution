@@ -27,7 +27,8 @@ object DeviceDefinitionPackagingDistributor {
     __obj.asInstanceOf[DeviceDefinitionPackagingDistributor]
   }
   
-  extension [Self <: DeviceDefinitionPackagingDistributor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceDefinitionPackagingDistributor] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

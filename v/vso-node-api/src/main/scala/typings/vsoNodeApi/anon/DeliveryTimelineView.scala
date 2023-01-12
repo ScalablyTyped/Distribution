@@ -15,7 +15,8 @@ object DeliveryTimelineView {
     __obj.asInstanceOf[DeliveryTimelineView]
   }
   
-  extension [Self <: DeliveryTimelineView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliveryTimelineView] (val x: Self) extends AnyVal {
     
     inline def setDeliveryTimelineView(value: scala.Double): Self = StObject.set(x, "deliveryTimelineView", value.asInstanceOf[js.Any])
   }

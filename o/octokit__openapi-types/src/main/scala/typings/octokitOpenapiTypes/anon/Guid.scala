@@ -19,7 +19,8 @@ object Guid {
     __obj.asInstanceOf[Guid]
   }
   
-  extension [Self <: Guid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Guid] (val x: Self) extends AnyVal {
     
     inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     

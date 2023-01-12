@@ -82,7 +82,8 @@ object mod {
       __obj.asInstanceOf[Blake2bCTX]
     }
     
-    extension [Self <: Blake2bCTX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blake2bCTX] (val x: Self) extends AnyVal {
       
       inline def setB(value: js.typedarray.Uint8Array): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object mod {
       __obj.asInstanceOf[Blake2sCTX]
     }
     
-    extension [Self <: Blake2sCTX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blake2sCTX] (val x: Self) extends AnyVal {
       
       inline def setB(value: js.typedarray.Uint8Array): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       

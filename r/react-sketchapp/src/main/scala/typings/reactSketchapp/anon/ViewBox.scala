@@ -30,7 +30,8 @@ object ViewBox {
     __obj.asInstanceOf[ViewBox]
   }
   
-  extension [Self <: ViewBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewBox] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Validator[String | Double | Boolean | js.Object | ReactElementLike | ReactNodeArray]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

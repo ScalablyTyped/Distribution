@@ -44,7 +44,8 @@ object authentication {
       __obj.asInstanceOf[AuthTokenRequest]
     }
     
-    extension [Self <: AuthTokenRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthTokenRequest] (val x: Self) extends AnyVal {
       
       inline def setClaims(value: js.Array[String]): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object authentication {
       __obj.asInstanceOf[AuthenticateParameters]
     }
     
-    extension [Self <: AuthenticateParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticateParameters] (val x: Self) extends AnyVal {
       
       inline def setFailureCallback(value: /* reason */ js.UndefOr[String] => Unit): Self = StObject.set(x, "failureCallback", js.Any.fromFunction1(value))
       
@@ -236,7 +238,8 @@ object authentication {
       __obj.asInstanceOf[UserProfile]
     }
     
-    extension [Self <: UserProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserProfile] (val x: Self) extends AnyVal {
       
       inline def setAmr(value: js.Array[String]): Self = StObject.set(x, "amr", value.asInstanceOf[js.Any])
       
@@ -293,7 +296,8 @@ object authentication {
       __obj.asInstanceOf[UserRequest]
     }
     
-    extension [Self <: UserRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserRequest] (val x: Self) extends AnyVal {
       
       inline def setFailureCallback(value: /* reason */ String => Unit): Self = StObject.set(x, "failureCallback", js.Any.fromFunction1(value))
       

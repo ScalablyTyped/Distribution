@@ -20,7 +20,8 @@ object TSExportAssignment {
   @js.native
   def apply(expression: Expression): TSExportAssignment = js.native
   
-  extension [Self <: TSExportAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSExportAssignment] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

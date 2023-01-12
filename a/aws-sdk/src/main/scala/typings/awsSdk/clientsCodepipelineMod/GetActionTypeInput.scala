@@ -33,7 +33,8 @@ object GetActionTypeInput {
     __obj.asInstanceOf[GetActionTypeInput]
   }
   
-  extension [Self <: GetActionTypeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetActionTypeInput] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: ActionCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

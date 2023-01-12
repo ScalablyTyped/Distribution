@@ -29,7 +29,8 @@ object libComponentsSelectedItemsListBaseSelectedItemsListDottypesMod {
       __obj.asInstanceOf[IBaseSelectedItemsList[T]]
     }
     
-    extension [Self <: IBaseSelectedItemsList[?], T](x: Self & IBaseSelectedItemsList[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBaseSelectedItemsList[?], T] (val x: Self & IBaseSelectedItemsList[T]) extends AnyVal {
       
       inline def setAddItems(value: js.Array[T] => Unit): Self = StObject.set(x, "addItems", js.Any.fromFunction1(value))
       
@@ -119,7 +120,8 @@ object libComponentsSelectedItemsListBaseSelectedItemsListDottypesMod {
       __obj.asInstanceOf[IBaseSelectedItemsListProps[T]]
     }
     
-    extension [Self <: IBaseSelectedItemsListProps[?], T](x: Self & IBaseSelectedItemsListProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBaseSelectedItemsListProps[?], T] (val x: Self & IBaseSelectedItemsListProps[T]) extends AnyVal {
       
       inline def setCanRemoveItem(value: /* item */ T => Boolean): Self = StObject.set(x, "canRemoveItem", js.Any.fromFunction1(value))
       
@@ -195,7 +197,8 @@ object libComponentsSelectedItemsListBaseSelectedItemsListDottypesMod {
       __obj.asInstanceOf[ISelectedItemProps[T]]
     }
     
-    extension [Self <: ISelectedItemProps[?], T](x: Self & ISelectedItemProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelectedItemProps[?], T] (val x: Self & ISelectedItemProps[T]) extends AnyVal {
       
       inline def setOnCopyItem(value: T => Unit): Self = StObject.set(x, "onCopyItem", js.Any.fromFunction1(value))
     }

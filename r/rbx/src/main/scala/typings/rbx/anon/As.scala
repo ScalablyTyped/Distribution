@@ -15,7 +15,8 @@ object As {
     __obj.asInstanceOf[As[TAsComponent]]
   }
   
-  extension [Self <: As[?], TAsComponent /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any */](x: Self & As[TAsComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: As[?], TAsComponent /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any */] (val x: Self & As[TAsComponent]) extends AnyVal {
     
     inline def setAs(value: TAsComponent): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

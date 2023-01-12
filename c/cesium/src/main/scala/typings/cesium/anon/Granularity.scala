@@ -28,7 +28,8 @@ object Granularity {
     __obj.asInstanceOf[Granularity]
   }
   
-  extension [Self <: Granularity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Granularity] (val x: Self) extends AnyVal {
     
     inline def setCornerType(value: typings.cesium.mod.CornerType): Self = StObject.set(x, "cornerType", value.asInstanceOf[js.Any])
     

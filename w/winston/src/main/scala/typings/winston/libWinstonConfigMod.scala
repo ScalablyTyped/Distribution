@@ -28,7 +28,8 @@ object libWinstonConfigMod extends Shortcut {
       __obj.asInstanceOf[AbstractConfigSet]
     }
     
-    extension [Self <: AbstractConfigSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractConfigSet] (val x: Self) extends AnyVal {
       
       inline def setColors(value: AbstractConfigSetColors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object libWinstonConfigMod extends Shortcut {
       __obj.asInstanceOf[CliConfigSetColors]
     }
     
-    extension [Self <: CliConfigSetColors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CliConfigSetColors] (val x: Self) extends AnyVal {
       
       inline def setData(value: String | js.Array[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -168,7 +170,8 @@ object libWinstonConfigMod extends Shortcut {
       __obj.asInstanceOf[CliConfigSetLevels]
     }
     
-    extension [Self <: CliConfigSetLevels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CliConfigSetLevels] (val x: Self) extends AnyVal {
       
       inline def setData(value: Double): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -217,7 +220,8 @@ object libWinstonConfigMod extends Shortcut {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setAddColors(value: AbstractConfigSetColors => Unit): Self = StObject.set(x, "addColors", js.Any.fromFunction1(value))
       
@@ -264,7 +268,8 @@ object libWinstonConfigMod extends Shortcut {
       __obj.asInstanceOf[NpmConfigSetColors]
     }
     
-    extension [Self <: NpmConfigSetColors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NpmConfigSetColors] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: String | js.Array[String]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -329,7 +334,8 @@ object libWinstonConfigMod extends Shortcut {
       __obj.asInstanceOf[NpmConfigSetLevels]
     }
     
-    extension [Self <: NpmConfigSetLevels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NpmConfigSetLevels] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Double): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -383,7 +389,8 @@ object libWinstonConfigMod extends Shortcut {
       __obj.asInstanceOf[SyslogConfigSetColors]
     }
     
-    extension [Self <: SyslogConfigSetColors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyslogConfigSetColors] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: String | js.Array[String]): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
@@ -455,7 +462,8 @@ object libWinstonConfigMod extends Shortcut {
       __obj.asInstanceOf[SyslogConfigSetLevels]
     }
     
-    extension [Self <: SyslogConfigSetLevels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyslogConfigSetLevels] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: Double): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       

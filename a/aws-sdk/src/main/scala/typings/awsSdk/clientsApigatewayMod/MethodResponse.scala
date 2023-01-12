@@ -28,7 +28,8 @@ object MethodResponse {
     __obj.asInstanceOf[MethodResponse]
   }
   
-  extension [Self <: MethodResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MethodResponse] (val x: Self) extends AnyVal {
     
     inline def setResponseModels(value: MapOfStringToString): Self = StObject.set(x, "responseModels", value.asInstanceOf[js.Any])
     

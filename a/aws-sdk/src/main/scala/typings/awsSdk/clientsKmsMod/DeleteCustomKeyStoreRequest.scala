@@ -18,7 +18,8 @@ object DeleteCustomKeyStoreRequest {
     __obj.asInstanceOf[DeleteCustomKeyStoreRequest]
   }
   
-  extension [Self <: DeleteCustomKeyStoreRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCustomKeyStoreRequest] (val x: Self) extends AnyVal {
     
     inline def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = StObject.set(x, "CustomKeyStoreId", value.asInstanceOf[js.Any])
   }

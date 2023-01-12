@@ -19,7 +19,8 @@ object AutoscrollPreserveFolds {
     __obj.asInstanceOf[AutoscrollPreserveFolds]
   }
   
-  extension [Self <: AutoscrollPreserveFolds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscrollPreserveFolds] (val x: Self) extends AnyVal {
     
     inline def setAutoscroll(value: Boolean): Self = StObject.set(x, "autoscroll", value.asInstanceOf[js.Any])
     

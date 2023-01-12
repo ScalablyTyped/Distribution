@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Close]
     }
     
-    extension [Self <: Close](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Close] (val x: Self) extends AnyVal {
       
       inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Closer]
     }
     
-    extension [Self <: Closer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Closer] (val x: Self) extends AnyVal {
       
       inline def setCloser(value: String): Self = StObject.set(x, "closer", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object anon {
       __obj.asInstanceOf[Closerhover]
     }
     
-    extension [Self <: Closerhover](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Closerhover] (val x: Self) extends AnyVal {
       
       inline def setCloser(value: Boolean): Self = StObject.set(x, "closer", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object anon {
       __obj.asInstanceOf[Nonblock]
     }
     
-    extension [Self <: Nonblock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Nonblock] (val x: Self) extends AnyVal {
       
       inline def setNonblock(value: Boolean): Self = StObject.set(x, "nonblock", value.asInstanceOf[js.Any])
       

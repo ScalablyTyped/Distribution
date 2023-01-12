@@ -79,7 +79,8 @@ object IImg {
     __obj.asInstanceOf[IImg]
   }
   
-  extension [Self <: IImg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IImg] (val x: Self) extends AnyVal {
     
     inline def setBackgroundCls(value: java.lang.String): Self = StObject.set(x, "backgroundCls", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DatabaseAccountRequestOptions {
     __obj.asInstanceOf[DatabaseAccountRequestOptions]
   }
   
-  extension [Self <: DatabaseAccountRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseAccountRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setUrlConnection(value: String): Self = StObject.set(x, "urlConnection", value.asInstanceOf[js.Any])
     

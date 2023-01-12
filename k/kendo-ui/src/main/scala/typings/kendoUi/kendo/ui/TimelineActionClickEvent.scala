@@ -21,7 +21,8 @@ object TimelineActionClickEvent {
     __obj.asInstanceOf[TimelineActionClickEvent]
   }
   
-  extension [Self <: TimelineActionClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineActionClickEvent] (val x: Self) extends AnyVal {
     
     inline def setDataItem(value: Model): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
     

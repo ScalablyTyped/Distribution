@@ -56,7 +56,8 @@ object dxSelectBoxOptions {
     __obj.asInstanceOf[dxSelectBoxOptions[TComponent]]
   }
   
-  extension [Self <: dxSelectBoxOptions[?], TComponent](x: Self & dxSelectBoxOptions[TComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxSelectBoxOptions[?], TComponent] (val x: Self & dxSelectBoxOptions[TComponent]) extends AnyVal {
     
     inline def setDropDownOptions(value: Properties): Self = StObject.set(x, "dropDownOptions", value.asInstanceOf[js.Any])
     

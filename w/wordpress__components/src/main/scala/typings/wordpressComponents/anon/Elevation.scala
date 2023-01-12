@@ -61,7 +61,8 @@ object Elevation {
     __obj.asInstanceOf[Elevation[T]]
   }
   
-  extension [Self <: Elevation[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.wordpressComponents.wordpressComponentsStrings.a, typings.wordpressComponents.wordpressComponentsStrings.abbr, typings.wordpressComponents.wordpressComponentsStrings.address */ Any */](x: Self & Elevation[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Elevation[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.wordpressComponents.wordpressComponentsStrings.a, typings.wordpressComponents.wordpressComponentsStrings.abbr, typings.wordpressComponents.wordpressComponentsStrings.address */ Any */] (val x: Self & Elevation[T]) extends AnyVal {
     
     inline def setAs(value: T): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

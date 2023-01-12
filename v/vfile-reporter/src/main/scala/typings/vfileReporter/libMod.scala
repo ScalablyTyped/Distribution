@@ -38,7 +38,8 @@ object libMod {
       __obj.asInstanceOf[FileRow]
     }
     
-    extension [Self <: FileRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileRow] (val x: Self) extends AnyVal {
       
       inline def setFile(value: VFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object libMod {
       __obj.asInstanceOf[Info]
     }
     
-    extension [Self <: Info](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
       
       inline def setRows(value: js.Array[FileRow | Row]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
@@ -94,7 +96,8 @@ object libMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -137,7 +140,8 @@ object libMod {
       __obj.asInstanceOf[Row]
     }
     
-    extension [Self <: Row](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

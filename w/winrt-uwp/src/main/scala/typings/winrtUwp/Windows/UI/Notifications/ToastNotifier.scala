@@ -55,7 +55,8 @@ object ToastNotifier {
     __obj.asInstanceOf[ToastNotifier]
   }
   
-  extension [Self <: ToastNotifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToastNotifier] (val x: Self) extends AnyVal {
     
     inline def setAddToSchedule(value: ScheduledToastNotification => Unit): Self = StObject.set(x, "addToSchedule", js.Any.fromFunction1(value))
     

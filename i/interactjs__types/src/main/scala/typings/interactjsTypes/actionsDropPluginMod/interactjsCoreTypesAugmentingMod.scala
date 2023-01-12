@@ -19,7 +19,8 @@ object interactjsCoreTypesAugmentingMod {
       __obj.asInstanceOf[ActionMap]
     }
     
-    extension [Self <: ActionMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionMap] (val x: Self) extends AnyVal {
       
       inline def setDrop(value: Plugin): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
       

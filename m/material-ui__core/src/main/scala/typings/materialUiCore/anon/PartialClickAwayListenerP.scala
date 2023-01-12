@@ -34,7 +34,8 @@ object PartialClickAwayListenerP {
     __obj.asInstanceOf[PartialClickAwayListenerP]
   }
   
-  extension [Self <: PartialClickAwayListenerP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClickAwayListenerP] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -413,7 +413,8 @@ object mod {
       __obj.asInstanceOf[IPointLike]
     }
     
-    extension [Self <: IPointLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPointLike] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -437,7 +438,8 @@ object mod {
       __obj.asInstanceOf[SweepContextOptions]
     }
     
-    extension [Self <: SweepContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SweepContextOptions] (val x: Self) extends AnyVal {
       
       inline def setCloneArrays(value: Boolean): Self = StObject.set(x, "cloneArrays", value.asInstanceOf[js.Any])
       

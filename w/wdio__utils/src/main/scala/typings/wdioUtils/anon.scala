@@ -54,7 +54,8 @@ object anon {
       __obj.asInstanceOf[Capabilities]
     }
     
-    extension [Self <: Capabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Capabilities] (val x: Self) extends AnyVal {
       
       inline def setCapabilities(value: DesiredCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def set__elementOverrides__(value: Value): Self = StObject.set(x, "__elementOverrides__", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object anon {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -132,7 +135,8 @@ object anon {
       __obj.asInstanceOf[IgnoredWorkerServices]
     }
     
-    extension [Self <: IgnoredWorkerServices](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IgnoredWorkerServices] (val x: Self) extends AnyVal {
       
       inline def setIgnoredWorkerServices(value: js.Array[String]): Self = StObject.set(x, "ignoredWorkerServices", value.asInstanceOf[js.Any])
       
@@ -172,7 +176,8 @@ object anon {
       __obj.asInstanceOf[IsAndroid]
     }
     
-    extension [Self <: IsAndroid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsAndroid] (val x: Self) extends AnyVal {
       
       inline def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
       
@@ -222,7 +227,8 @@ object anon {
       __obj.asInstanceOf[IsChrome]
     }
     
-    extension [Self <: IsChrome](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsChrome] (val x: Self) extends AnyVal {
       
       inline def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
       
@@ -279,7 +285,8 @@ object anon {
       __obj.asInstanceOf[IsDevTools]
     }
     
-    extension [Self <: IsDevTools](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsDevTools] (val x: Self) extends AnyVal {
       
       inline def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
       
@@ -413,7 +420,8 @@ object anon {
       __obj.asInstanceOf[OmitTestrunnercapabilitie]
     }
     
-    extension [Self <: OmitTestrunnercapabilitie](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitTestrunnercapabilitie] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Http): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -636,7 +644,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

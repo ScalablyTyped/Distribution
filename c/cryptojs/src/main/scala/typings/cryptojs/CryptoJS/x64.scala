@@ -62,7 +62,8 @@ object x64 {
       __obj.asInstanceOf[X64Static]
     }
     
-    extension [Self <: X64Static](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X64Static] (val x: Self) extends AnyVal {
       
       inline def setWord(value: Word): Self = StObject.set(x, "Word", value.asInstanceOf[js.Any])
       

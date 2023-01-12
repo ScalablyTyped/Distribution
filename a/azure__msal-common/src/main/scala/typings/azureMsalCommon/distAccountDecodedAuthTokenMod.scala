@@ -21,7 +21,8 @@ object distAccountDecodedAuthTokenMod {
       __obj.asInstanceOf[DecodedAuthToken]
     }
     
-    extension [Self <: DecodedAuthToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodedAuthToken] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       

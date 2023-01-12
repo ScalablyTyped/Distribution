@@ -17,7 +17,8 @@ object CircularArc {
     __obj.asInstanceOf[CircularArc]
   }
   
-  extension [Self <: CircularArc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircularArc] (val x: Self) extends AnyVal {
     
     inline def setC(value: js.Tuple2[Position, Position2D]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
   }

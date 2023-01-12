@@ -16,7 +16,8 @@ object InventorySourceVideoCreativeConfig {
     __obj.asInstanceOf[InventorySourceVideoCreativeConfig]
   }
   
-  extension [Self <: InventorySourceVideoCreativeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventorySourceVideoCreativeConfig] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

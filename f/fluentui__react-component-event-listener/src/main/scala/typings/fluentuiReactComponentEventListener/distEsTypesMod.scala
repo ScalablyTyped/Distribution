@@ -42,7 +42,8 @@ object distEsTypesMod {
       __obj.asInstanceOf[EventListenerOptions[T]]
     }
     
-    extension [Self <: EventListenerOptions[?], T /* <: EventTypes */](x: Self & EventListenerOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventListenerOptions[?], T /* <: EventTypes */] (val x: Self & EventListenerOptions[T]) extends AnyVal {
       
       inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       

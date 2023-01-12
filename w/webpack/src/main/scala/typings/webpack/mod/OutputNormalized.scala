@@ -275,7 +275,8 @@ object OutputNormalized {
     __obj.asInstanceOf[OutputNormalized]
   }
   
-  extension [Self <: OutputNormalized](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputNormalized] (val x: Self) extends AnyVal {
     
     inline def setAssetModuleFilename(
       value: String | (js.Function2[/* pathData */ PathData, /* assetInfo */ js.UndefOr[AssetInfo], String])

@@ -16,7 +16,8 @@ object AddDimensionGroupRequest {
     __obj.asInstanceOf[AddDimensionGroupRequest]
   }
   
-  extension [Self <: AddDimensionGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddDimensionGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setRange(value: DimensionRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

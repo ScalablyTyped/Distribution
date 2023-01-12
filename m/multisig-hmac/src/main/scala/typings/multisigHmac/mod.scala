@@ -228,7 +228,8 @@ object mod {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -473,7 +474,8 @@ object mod {
       __obj.asInstanceOf[Signature]
     }
     
-    extension [Self <: Signature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Signature] (val x: Self) extends AnyVal {
       
       inline def setBitfield(value: Double): Self = StObject.set(x, "bitfield", value.asInstanceOf[js.Any])
       

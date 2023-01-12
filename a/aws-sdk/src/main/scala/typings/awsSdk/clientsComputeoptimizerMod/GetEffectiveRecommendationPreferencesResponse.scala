@@ -18,7 +18,8 @@ object GetEffectiveRecommendationPreferencesResponse {
     __obj.asInstanceOf[GetEffectiveRecommendationPreferencesResponse]
   }
   
-  extension [Self <: GetEffectiveRecommendationPreferencesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEffectiveRecommendationPreferencesResponse] (val x: Self) extends AnyVal {
     
     inline def setEnhancedInfrastructureMetrics(value: EnhancedInfrastructureMetrics): Self = StObject.set(x, "enhancedInfrastructureMetrics", value.asInstanceOf[js.Any])
     

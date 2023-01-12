@@ -30,7 +30,8 @@ object UdpOutputSettings {
     __obj.asInstanceOf[UdpOutputSettings]
   }
   
-  extension [Self <: UdpOutputSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UdpOutputSettings] (val x: Self) extends AnyVal {
     
     inline def setBufferMsec(value: integerMin0Max10000): Self = StObject.set(x, "BufferMsec", value.asInstanceOf[js.Any])
     

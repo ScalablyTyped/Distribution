@@ -26,7 +26,8 @@ object DialOptions {
     __obj.asInstanceOf[DialOptions]
   }
   
-  extension [Self <: DialOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialOptions] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: StringDictionary[String]): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

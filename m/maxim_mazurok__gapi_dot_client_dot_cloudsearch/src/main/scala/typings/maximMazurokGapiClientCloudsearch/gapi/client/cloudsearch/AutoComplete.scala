@@ -15,7 +15,8 @@ object AutoComplete {
     __obj.asInstanceOf[AutoComplete]
   }
   
-  extension [Self <: AutoComplete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoComplete] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[AutoCompleteItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

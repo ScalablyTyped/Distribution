@@ -25,7 +25,8 @@ object MarkerShape {
       __obj.asInstanceOf[CircleOptions]
     }
     
-    extension [Self <: CircleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircleOptions] (val x: Self) extends AnyVal {
       
       inline def setCoords(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object MarkerShape {
       __obj.asInstanceOf[PolyOptions]
     }
     
-    extension [Self <: PolyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolyOptions] (val x: Self) extends AnyVal {
       
       inline def setCoords(value: js.Array[Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object MarkerShape {
       __obj.asInstanceOf[RectOptions]
     }
     
-    extension [Self <: RectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RectOptions] (val x: Self) extends AnyVal {
       
       inline def setCoords(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object SfReview extends Shortcut {
       __obj.asInstanceOf[Computed]
     }
     
-    extension [Self <: Computed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Computed] (val x: Self) extends AnyVal {
       
       inline def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object SfReview extends Shortcut {
       __obj.asInstanceOf[Constructor]
     }
     
-    extension [Self <: Constructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constructor] (val x: Self) extends AnyVal {
       
       inline def setComputed(value: Computed): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object SfReview extends Shortcut {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     }
@@ -94,7 +97,8 @@ object SfReview extends Shortcut {
       __obj.asInstanceOf[Methods]
     }
     
-    extension [Self <: Methods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Methods] (val x: Self) extends AnyVal {
       
       inline def setToggleMessage(value: () => Unit): Self = StObject.set(x, "toggleMessage", js.Any.fromFunction0(value))
     }
@@ -134,7 +138,8 @@ object SfReview extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       

@@ -47,7 +47,8 @@ object typesCreateSamplingRuleInputMod {
       __obj.asInstanceOf[CreateSamplingRuleInput]
     }
     
-    extension [Self <: CreateSamplingRuleInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateSamplingRuleInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

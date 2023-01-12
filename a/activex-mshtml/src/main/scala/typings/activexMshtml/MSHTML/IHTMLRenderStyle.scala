@@ -46,7 +46,8 @@ object IHTMLRenderStyle {
     __obj.asInstanceOf[IHTMLRenderStyle]
   }
   
-  extension [Self <: IHTMLRenderStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHTMLRenderStyle] (val x: Self) extends AnyVal {
     
     inline def setDefaultTextSelection(value: String): Self = StObject.set(x, "defaultTextSelection", value.asInstanceOf[js.Any])
     

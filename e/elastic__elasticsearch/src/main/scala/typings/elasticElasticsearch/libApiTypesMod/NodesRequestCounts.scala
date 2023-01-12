@@ -35,7 +35,8 @@ object NodesRequestCounts {
     __obj.asInstanceOf[NodesRequestCounts]
   }
   
-  extension [Self <: NodesRequestCounts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesRequestCounts] (val x: Self) extends AnyVal {
     
     inline def setGetBlob(value: long): Self = StObject.set(x, "GetBlob", value.asInstanceOf[js.Any])
     

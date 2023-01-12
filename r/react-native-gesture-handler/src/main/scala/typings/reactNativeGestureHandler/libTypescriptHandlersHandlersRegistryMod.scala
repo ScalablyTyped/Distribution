@@ -62,7 +62,8 @@ object libTypescriptHandlersHandlersRegistryMod {
       __obj.asInstanceOf[GestureHandlerCallbacks]
     }
     
-    extension [Self <: GestureHandlerCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GestureHandlerCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnGestureEvent(value: GestureEvent[Any] => Unit): Self = StObject.set(x, "onGestureEvent", js.Any.fromFunction1(value))
       

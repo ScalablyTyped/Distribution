@@ -17,7 +17,8 @@ object ToAddGroupCount {
     __obj.asInstanceOf[ToAddGroupCount]
   }
   
-  extension [Self <: ToAddGroupCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToAddGroupCount] (val x: Self) extends AnyVal {
     
     inline def setFanout(value: Double): Self = StObject.set(x, "fanout", value.asInstanceOf[js.Any])
     

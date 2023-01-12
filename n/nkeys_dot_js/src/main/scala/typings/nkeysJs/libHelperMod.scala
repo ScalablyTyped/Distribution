@@ -36,7 +36,8 @@ object libHelperMod {
       __obj.asInstanceOf[Ed25519Helper]
     }
     
-    extension [Self <: Ed25519Helper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ed25519Helper] (val x: Self) extends AnyVal {
       
       inline def setFromSeed(value: js.typedarray.Uint8Array => SignPair): Self = StObject.set(x, "fromSeed", js.Any.fromFunction1(value))
       
@@ -61,7 +62,8 @@ object libHelperMod {
       __obj.asInstanceOf[SignPair]
     }
     
-    extension [Self <: SignPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignPair] (val x: Self) extends AnyVal {
       
       inline def setPublicKey(value: js.typedarray.Uint8Array): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
       

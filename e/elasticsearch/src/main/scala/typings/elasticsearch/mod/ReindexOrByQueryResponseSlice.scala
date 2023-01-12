@@ -30,7 +30,8 @@ object ReindexOrByQueryResponseSlice {
     __obj.asInstanceOf[ReindexOrByQueryResponseSlice]
   }
   
-  extension [Self <: ReindexOrByQueryResponseSlice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReindexOrByQueryResponseSlice] (val x: Self) extends AnyVal {
     
     inline def setSlice_id(value: Double): Self = StObject.set(x, "slice_id", value.asInstanceOf[js.Any])
   }

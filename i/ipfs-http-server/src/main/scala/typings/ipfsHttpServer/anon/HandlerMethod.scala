@@ -27,7 +27,8 @@ object HandlerMethod {
     __obj.asInstanceOf[HandlerMethod]
   }
   
-  extension [Self <: HandlerMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandlerMethod] (val x: Self) extends AnyVal {
     
     inline def setHandler(value: (Request[ReqRefDefaults], ResponseToolkit[ReqRefDefaults]) => ResponseObject): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
     

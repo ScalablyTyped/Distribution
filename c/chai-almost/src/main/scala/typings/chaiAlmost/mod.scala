@@ -35,7 +35,8 @@ object mod {
           __obj.asInstanceOf[Assertion]
         }
         
-        extension [Self <: Assertion](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Assertion] (val x: Self) extends AnyVal {
           
           inline def setAlmost(value: Almost): Self = StObject.set(x, "almost", value.asInstanceOf[js.Any])
         }
@@ -94,7 +95,8 @@ object mod {
           __obj.asInstanceOf[Deep]
         }
         
-        extension [Self <: Deep](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Deep] (val x: Self) extends AnyVal {
           
           inline def setAlmost(value: DeepAlmost): Self = StObject.set(x, "almost", value.asInstanceOf[js.Any])
         }

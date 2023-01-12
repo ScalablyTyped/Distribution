@@ -189,7 +189,8 @@ object mod {
       __obj.asInstanceOf[MockFunctionResultIncomplete]
     }
     
-    extension [Self <: MockFunctionResultIncomplete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockFunctionResultIncomplete] (val x: Self) extends AnyVal {
       
       inline def setType(value: incomplete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -216,7 +217,8 @@ object mod {
       __obj.asInstanceOf[MockFunctionResultReturn[T]]
     }
     
-    extension [Self <: MockFunctionResultReturn[?], T /* <: FunctionLike */](x: Self & MockFunctionResultReturn[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockFunctionResultReturn[?], T /* <: FunctionLike */] (val x: Self & MockFunctionResultReturn[T]) extends AnyVal {
       
       inline def setType(value: `return`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -243,7 +245,8 @@ object mod {
       __obj.asInstanceOf[MockFunctionResultThrow]
     }
     
-    extension [Self <: MockFunctionResultThrow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockFunctionResultThrow] (val x: Self) extends AnyVal {
       
       inline def setType(value: `throw`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -298,7 +301,8 @@ object mod {
       __obj.asInstanceOf[MockFunctionState[T]]
     }
     
-    extension [Self <: MockFunctionState[?], T /* <: FunctionLike */](x: Self & MockFunctionState[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockFunctionState[?], T /* <: FunctionLike */] (val x: Self & MockFunctionState[T]) extends AnyVal {
       
       inline def setCalls(value: js.Array[Parameters[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
       
@@ -395,7 +399,8 @@ object mod {
       __obj.asInstanceOf[MockMetadata[T, MetadataType]]
     }
     
-    extension [Self <: MockMetadata[?, ?], T, MetadataType](x: Self & (MockMetadata[T, MetadataType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockMetadata[?, ?], T, MetadataType] (val x: Self & (MockMetadata[T, MetadataType])) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       

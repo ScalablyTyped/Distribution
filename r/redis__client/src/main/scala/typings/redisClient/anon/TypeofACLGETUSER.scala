@@ -24,7 +24,8 @@ object TypeofACLGETUSER {
     __obj.asInstanceOf[TypeofACLGETUSER]
   }
   
-  extension [Self <: TypeofACLGETUSER](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofACLGETUSER] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: RedisCommandArgument => RedisCommandArguments): Self = StObject.set(x, "transformArguments", js.Any.fromFunction1(value))
     

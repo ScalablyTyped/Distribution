@@ -57,7 +57,8 @@ object tsdefRemoteVideoTrackMod {
       __obj.asInstanceOf[VideoContentPreferences]
     }
     
-    extension [Self <: VideoContentPreferences](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoContentPreferences] (val x: Self) extends AnyVal {
       
       inline def setRenderDimensions(value: Dimensions): Self = StObject.set(x, "renderDimensions", value.asInstanceOf[js.Any])
       

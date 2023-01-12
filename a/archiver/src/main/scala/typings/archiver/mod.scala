@@ -155,7 +155,8 @@ object mod {
       __obj.asInstanceOf[CoreOptions]
     }
     
-    extension [Self <: CoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoreOptions] (val x: Self) extends AnyVal {
       
       inline def setStatConcurrency(value: Double): Self = StObject.set(x, "statConcurrency", value.asInstanceOf[js.Any])
       
@@ -193,7 +194,8 @@ object mod {
       __obj.asInstanceOf[EntryData]
     }
     
-    extension [Self <: EntryData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryData] (val x: Self) extends AnyVal {
       
       inline def setDate(value: js.Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -252,7 +254,8 @@ object mod {
       __obj.asInstanceOf[ProgressData]
     }
     
-    extension [Self <: ProgressData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressData] (val x: Self) extends AnyVal {
       
       inline def setEntries(value: Processed): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
@@ -275,7 +278,8 @@ object mod {
       __obj.asInstanceOf[TarOptions]
     }
     
-    extension [Self <: TarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TarOptions] (val x: Self) extends AnyVal {
       
       inline def setGzip(value: Boolean): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
       
@@ -310,7 +314,8 @@ object mod {
       __obj.asInstanceOf[TransformOptions]
     }
     
-    extension [Self <: TransformOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
       
@@ -356,7 +361,8 @@ object mod {
       __obj.asInstanceOf[ZipEntryData]
     }
     
-    extension [Self <: ZipEntryData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZipEntryData] (val x: Self) extends AnyVal {
       
       inline def setStore(value: Boolean): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
@@ -386,7 +392,8 @@ object mod {
       __obj.asInstanceOf[ZipOptions]
     }
     
-    extension [Self <: ZipOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZipOptions] (val x: Self) extends AnyVal {
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       

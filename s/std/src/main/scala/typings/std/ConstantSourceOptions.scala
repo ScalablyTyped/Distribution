@@ -16,7 +16,8 @@ object ConstantSourceOptions {
     __obj.asInstanceOf[ConstantSourceOptions]
   }
   
-  extension [Self <: ConstantSourceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstantSourceOptions] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

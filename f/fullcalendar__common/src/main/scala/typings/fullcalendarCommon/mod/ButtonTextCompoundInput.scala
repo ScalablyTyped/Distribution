@@ -32,7 +32,8 @@ object ButtonTextCompoundInput {
     __obj.asInstanceOf[ButtonTextCompoundInput]
   }
   
-  extension [Self <: ButtonTextCompoundInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonTextCompoundInput] (val x: Self) extends AnyVal {
     
     inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     

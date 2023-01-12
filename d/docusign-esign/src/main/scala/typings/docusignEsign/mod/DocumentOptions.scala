@@ -29,7 +29,8 @@ object DocumentOptions {
     __obj.asInstanceOf[DocumentOptions]
   }
   
-  extension [Self <: DocumentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentOptions] (val x: Self) extends AnyVal {
     
     inline def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     

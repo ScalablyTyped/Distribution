@@ -79,7 +79,8 @@ object Context {
     __obj.asInstanceOf[Context]
   }
   
-  extension [Self <: Context](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
     
     inline def setBuffers(value: Wp): Self = StObject.set(x, "buffers", value.asInstanceOf[js.Any])
     

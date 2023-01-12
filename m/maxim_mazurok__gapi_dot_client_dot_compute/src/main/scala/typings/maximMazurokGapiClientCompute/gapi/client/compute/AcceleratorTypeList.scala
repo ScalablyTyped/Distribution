@@ -35,7 +35,8 @@ object AcceleratorTypeList {
     __obj.asInstanceOf[AcceleratorTypeList]
   }
   
-  extension [Self <: AcceleratorTypeList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceleratorTypeList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

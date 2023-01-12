@@ -24,7 +24,8 @@ object NestTransform {
     __obj.asInstanceOf[NestTransform]
   }
   
-  extension [Self <: NestTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NestTransform] (val x: Self) extends AnyVal {
     
     inline def setGenerate(value: Boolean | SignalRef): Self = StObject.set(x, "generate", value.asInstanceOf[js.Any])
     

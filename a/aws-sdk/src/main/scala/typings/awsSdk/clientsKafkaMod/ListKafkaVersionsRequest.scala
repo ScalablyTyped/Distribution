@@ -25,7 +25,8 @@ object ListKafkaVersionsRequest {
     __obj.asInstanceOf[ListKafkaVersionsRequest]
   }
   
-  extension [Self <: ListKafkaVersionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListKafkaVersionsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

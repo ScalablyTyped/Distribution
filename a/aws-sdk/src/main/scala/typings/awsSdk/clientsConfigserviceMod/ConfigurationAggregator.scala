@@ -48,7 +48,8 @@ object ConfigurationAggregator {
     __obj.asInstanceOf[ConfigurationAggregator]
   }
   
-  extension [Self <: ConfigurationAggregator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationAggregator] (val x: Self) extends AnyVal {
     
     inline def setAccountAggregationSources(value: AccountAggregationSourceList): Self = StObject.set(x, "AccountAggregationSources", value.asInstanceOf[js.Any])
     

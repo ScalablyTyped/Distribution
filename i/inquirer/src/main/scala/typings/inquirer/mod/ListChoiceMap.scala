@@ -23,7 +23,8 @@ object ListChoiceMap {
     __obj.asInstanceOf[ListChoiceMap[T]]
   }
   
-  extension [Self <: ListChoiceMap[?], T /* <: Answers */](x: Self & ListChoiceMap[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListChoiceMap[?], T /* <: Answers */] (val x: Self & ListChoiceMap[T]) extends AnyVal {
     
     inline def setListChoiceOptions(value: ListChoiceOptions[T]): Self = StObject.set(x, "ListChoiceOptions", value.asInstanceOf[js.Any])
   }

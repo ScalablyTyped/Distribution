@@ -24,7 +24,8 @@ object FitOptions {
     __obj.asInstanceOf[FitOptions]
   }
   
-  extension [Self <: FitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FitOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: TimelineAnimationType): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

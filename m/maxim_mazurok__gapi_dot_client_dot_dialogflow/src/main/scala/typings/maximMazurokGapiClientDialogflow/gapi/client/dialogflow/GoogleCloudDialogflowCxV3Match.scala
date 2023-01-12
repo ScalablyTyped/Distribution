@@ -41,7 +41,8 @@ object GoogleCloudDialogflowCxV3Match {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3Match]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3Match](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3Match] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     

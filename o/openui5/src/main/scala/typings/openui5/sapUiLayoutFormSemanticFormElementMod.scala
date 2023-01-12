@@ -273,7 +273,8 @@ object sapUiLayoutFormSemanticFormElementMod {
       __obj.asInstanceOf[SemanticFormElementSettings]
     }
     
-    extension [Self <: SemanticFormElementSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticFormElementSettings] (val x: Self) extends AnyVal {
       
       inline def setDelimiter(value: String | PropertyBindingInfo): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[A]
     }
     
-    extension [Self <: A](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: A] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[ContentDOM]
     }
     
-    extension [Self <: ContentDOM](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentDOM] (val x: Self) extends AnyVal {
       
       inline def setContentDOM(value: HTMLElement): Self = StObject.set(x, "contentDOM", value.asInstanceOf[js.Any])
       
@@ -66,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Document]
     }
     
-    extension [Self <: Document](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
       
       inline def setDocument(value: typings.std.Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       
@@ -87,7 +90,8 @@ object anon {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -110,7 +114,8 @@ object anon {
       __obj.asInstanceOf[Marks]
     }
     
-    extension [Self <: Marks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Marks] (val x: Self) extends AnyVal {
       
       inline def setMarks(value: default[MarkSpec]): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
       
@@ -137,7 +142,8 @@ object anon {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -164,7 +170,8 @@ object anon {
       __obj.asInstanceOf[Offset]
     }
     
-    extension [Self <: Offset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
       
       inline def setNode(value: DOMNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object XSecondAxisTitleSupplier {
     __obj.asInstanceOf[XSecondAxisTitleSupplier]
   }
   
-  extension [Self <: XSecondAxisTitleSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSecondAxisTitleSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetSecondXAxisTitle(value: () => XShape): Self = StObject.set(x, "getSecondXAxisTitle", js.Any.fromFunction0(value))
     

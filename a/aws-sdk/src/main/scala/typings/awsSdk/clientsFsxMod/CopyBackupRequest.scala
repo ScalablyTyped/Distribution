@@ -34,7 +34,8 @@ object CopyBackupRequest {
     __obj.asInstanceOf[CopyBackupRequest]
   }
   
-  extension [Self <: CopyBackupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyBackupRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

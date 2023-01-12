@@ -20,7 +20,8 @@ object StatSuccessCallbackResult {
     __obj.asInstanceOf[StatSuccessCallbackResult]
   }
   
-  extension [Self <: StatSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

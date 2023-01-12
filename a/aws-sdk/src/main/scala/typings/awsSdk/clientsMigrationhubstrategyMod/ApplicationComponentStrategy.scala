@@ -28,7 +28,8 @@ object ApplicationComponentStrategy {
     __obj.asInstanceOf[ApplicationComponentStrategy]
   }
   
-  extension [Self <: ApplicationComponentStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationComponentStrategy] (val x: Self) extends AnyVal {
     
     inline def setIsPreferred(value: Boolean): Self = StObject.set(x, "isPreferred", value.asInstanceOf[js.Any])
     

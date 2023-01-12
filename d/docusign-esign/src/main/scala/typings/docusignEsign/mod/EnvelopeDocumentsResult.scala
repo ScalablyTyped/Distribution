@@ -27,7 +27,8 @@ object EnvelopeDocumentsResult {
     __obj.asInstanceOf[EnvelopeDocumentsResult]
   }
   
-  extension [Self <: EnvelopeDocumentsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeDocumentsResult] (val x: Self) extends AnyVal {
     
     inline def setEnvelopeDocuments(value: js.Array[/* This object contains details about the envelope document. */ EnvelopeDocument]): Self = StObject.set(x, "envelopeDocuments", value.asInstanceOf[js.Any])
     

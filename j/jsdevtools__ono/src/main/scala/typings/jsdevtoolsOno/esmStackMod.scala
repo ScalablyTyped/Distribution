@@ -43,7 +43,8 @@ object esmStackMod {
       __obj.asInstanceOf[LazyStack]
     }
     
-    extension [Self <: LazyStack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LazyStack] (val x: Self) extends AnyVal {
       
       inline def setConfigurable(value: `true`): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
       

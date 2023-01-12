@@ -49,7 +49,8 @@ object rendererMapMod {
       __obj.asInstanceOf[HitMatch[T]]
     }
     
-    extension [Self <: HitMatch[?], T](x: Self & HitMatch[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HitMatch[?], T] (val x: Self & HitMatch[T]) extends AnyVal {
       
       inline def setCallback(
         value: (/* p0 */ FeatureLike, /* p1 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], /* p2 */ typings.ol.geomSimpleGeometryMod.default) => T

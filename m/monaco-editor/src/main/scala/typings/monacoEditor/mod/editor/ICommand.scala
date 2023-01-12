@@ -32,7 +32,8 @@ object ICommand {
     __obj.asInstanceOf[ICommand]
   }
   
-  extension [Self <: ICommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICommand] (val x: Self) extends AnyVal {
     
     inline def setComputeCursorState(value: (ITextModel, ICursorStateComputerData) => Selection): Self = StObject.set(x, "computeCursorState", js.Any.fromFunction2(value))
     

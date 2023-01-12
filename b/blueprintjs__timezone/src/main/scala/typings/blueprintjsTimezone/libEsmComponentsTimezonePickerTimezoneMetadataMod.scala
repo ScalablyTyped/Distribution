@@ -32,7 +32,8 @@ object libEsmComponentsTimezonePickerTimezoneMetadataMod {
       __obj.asInstanceOf[ITimezoneMetadata]
     }
     
-    extension [Self <: ITimezoneMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimezoneMetadata] (val x: Self) extends AnyVal {
       
       inline def setAbbreviation(value: String): Self = StObject.set(x, "abbreviation", value.asInstanceOf[js.Any])
       

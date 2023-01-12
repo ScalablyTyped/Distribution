@@ -122,7 +122,8 @@ object mod {
       __obj.asInstanceOf[MiddlewaresOptions]
     }
     
-    extension [Self <: MiddlewaresOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MiddlewaresOptions] (val x: Self) extends AnyVal {
       
       inline def setBodyParser(value: Boolean): Self = StObject.set(x, "bodyParser", value.asInstanceOf[js.Any])
       

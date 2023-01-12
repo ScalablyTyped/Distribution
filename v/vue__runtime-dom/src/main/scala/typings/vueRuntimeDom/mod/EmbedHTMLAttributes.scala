@@ -23,7 +23,8 @@ object EmbedHTMLAttributes {
     __obj.asInstanceOf[EmbedHTMLAttributes]
   }
   
-  extension [Self <: EmbedHTMLAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmbedHTMLAttributes] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Numberish): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

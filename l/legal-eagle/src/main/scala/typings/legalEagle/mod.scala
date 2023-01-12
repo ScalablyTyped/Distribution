@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[Entry]
     }
     
-    extension [Self <: Entry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
       
       inline def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOmitPermissive(value: Boolean): Self = StObject.set(x, "omitPermissive", value.asInstanceOf[js.Any])
       

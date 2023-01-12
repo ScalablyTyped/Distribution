@@ -19,7 +19,8 @@ object IlmConfigurations {
     __obj.asInstanceOf[IlmConfigurations]
   }
   
-  extension [Self <: IlmConfigurations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IlmConfigurations] (val x: Self) extends AnyVal {
     
     inline def setForcemerge(value: IlmForceMergeConfiguration): Self = StObject.set(x, "forcemerge", value.asInstanceOf[js.Any])
     

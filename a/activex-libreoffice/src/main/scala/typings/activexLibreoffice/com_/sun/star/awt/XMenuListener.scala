@@ -40,7 +40,8 @@ object XMenuListener {
     __obj.asInstanceOf[XMenuListener]
   }
   
-  extension [Self <: XMenuListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMenuListener] (val x: Self) extends AnyVal {
     
     inline def setItemActivated(value: MenuEvent => Unit): Self = StObject.set(x, "itemActivated", js.Any.fromFunction1(value))
     

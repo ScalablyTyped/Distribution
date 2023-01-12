@@ -98,7 +98,8 @@ object mod {
         __obj.asInstanceOf[IProviderOptions]
       }
       
-      extension [Self <: IProviderOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IProviderOptions] (val x: Self) extends AnyVal {
         
         inline def setAccount_keys_path(value: String): Self = StObject.set(x, "account_keys_path", value.asInstanceOf[js.Any])
         
@@ -227,7 +228,8 @@ object mod {
         __obj.asInstanceOf[IServerOptions]
       }
       
-      extension [Self <: IServerOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IServerOptions] (val x: Self) extends AnyVal {
         
         inline def setKeepAliveTimeout(value: Double): Self = StObject.set(x, "keepAliveTimeout", value.asInstanceOf[js.Any])
         
@@ -266,7 +268,8 @@ object mod {
         __obj.asInstanceOf[Provider]
       }
       
-      extension [Self <: Provider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
         
         inline def setClose(value: js.Function => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
         
@@ -315,7 +318,8 @@ object mod {
       __obj.asInstanceOf[JsonRpcPayload]
     }
     
-    extension [Self <: JsonRpcPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonRpcPayload] (val x: Self) extends AnyVal {
       
       inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -348,7 +352,8 @@ object mod {
       __obj.asInstanceOf[JsonRpcResponse]
     }
     
-    extension [Self <: JsonRpcResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonRpcResponse] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

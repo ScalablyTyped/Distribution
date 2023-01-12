@@ -18,7 +18,8 @@ object ConfirmCallbackValue {
     __obj.asInstanceOf[ConfirmCallbackValue]
   }
   
-  extension [Self <: ConfirmCallbackValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmCallbackValue] (val x: Self) extends AnyVal {
     
     inline def setConfirm(value: Boolean): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
   }

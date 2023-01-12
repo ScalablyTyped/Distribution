@@ -20,7 +20,8 @@ object BackendServicesScopedList {
     __obj.asInstanceOf[BackendServicesScopedList]
   }
   
-  extension [Self <: BackendServicesScopedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendServicesScopedList] (val x: Self) extends AnyVal {
     
     inline def setBackendServices(value: js.Array[BackendService]): Self = StObject.set(x, "backendServices", value.asInstanceOf[js.Any])
     

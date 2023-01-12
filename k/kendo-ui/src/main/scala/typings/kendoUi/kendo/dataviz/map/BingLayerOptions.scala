@@ -19,7 +19,8 @@ object BingLayerOptions {
     __obj.asInstanceOf[BingLayerOptions]
   }
   
-  extension [Self <: BingLayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BingLayerOptions] (val x: Self) extends AnyVal {
     
     inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     

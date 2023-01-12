@@ -19,7 +19,8 @@ object PropertyType {
     __obj.asInstanceOf[PropertyType[T]]
   }
   
-  extension [Self <: PropertyType[?], T](x: Self & PropertyType[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyType[?], T] (val x: Self & PropertyType[T]) extends AnyVal {
     
     inline def setConvert(value: (/* value */ Any, /* context */ js.UndefOr[NativeObject]) => T): Self = StObject.set(x, "convert", js.Any.fromFunction2(value))
     

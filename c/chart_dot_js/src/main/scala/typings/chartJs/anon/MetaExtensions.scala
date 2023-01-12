@@ -37,7 +37,8 @@ object MetaExtensions {
     __obj.asInstanceOf[MetaExtensions]
   }
   
-  extension [Self <: MetaExtensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetaExtensions] (val x: Self) extends AnyVal {
     
     inline def setChartOptions(value: Any): Self = StObject.set(x, "chartOptions", value.asInstanceOf[js.Any])
     

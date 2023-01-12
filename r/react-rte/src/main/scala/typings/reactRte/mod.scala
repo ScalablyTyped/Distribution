@@ -92,7 +92,8 @@ object mod {
       __obj.asInstanceOf[CustomBlockObject]
     }
     
-    extension [Self <: CustomBlockObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomBlockObject] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object mod {
       __obj.asInstanceOf[ExportOptions]
     }
     
-    extension [Self <: ExportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportOptions] (val x: Self) extends AnyVal {
       
       inline def setBlockRenderers(value: StringDictionary[BlockRenderer]): Self = StObject.set(x, "blockRenderers", value.asInstanceOf[js.Any])
       
@@ -201,7 +203,8 @@ object mod {
       __obj.asInstanceOf[ImportOptions]
     }
     
-    extension [Self <: ImportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomBlockFn(value: /* element */ Element => js.UndefOr[Null | CustomBlockObject]): Self = StObject.set(x, "customBlockFn", js.Any.fromFunction1(value))
       
@@ -280,7 +283,8 @@ object mod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -371,7 +375,8 @@ object mod {
       __obj.asInstanceOf[RenderConfig]
     }
     
-    extension [Self <: RenderConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderConfig] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -407,7 +412,8 @@ object mod {
       __obj.asInstanceOf[Style]
     }
     
-    extension [Self <: Style](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -430,7 +436,8 @@ object mod {
       __obj.asInstanceOf[StyleConfig]
     }
     
-    extension [Self <: StyleConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleConfig] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -468,7 +475,8 @@ object mod {
       __obj.asInstanceOf[ToolbarConfig]
     }
     
-    extension [Self <: ToolbarConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarConfig] (val x: Self) extends AnyVal {
       
       inline def setBLOCK_TYPE_BUTTONS(value: StyleConfigList): Self = StObject.set(x, "BLOCK_TYPE_BUTTONS", value.asInstanceOf[js.Any])
       

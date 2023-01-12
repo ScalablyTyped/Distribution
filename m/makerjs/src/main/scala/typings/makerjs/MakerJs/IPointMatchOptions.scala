@@ -21,7 +21,8 @@ object IPointMatchOptions {
     __obj.asInstanceOf[IPointMatchOptions]
   }
   
-  extension [Self <: IPointMatchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPointMatchOptions] (val x: Self) extends AnyVal {
     
     inline def setPointMatchingDistance(value: Double): Self = StObject.set(x, "pointMatchingDistance", value.asInstanceOf[js.Any])
     

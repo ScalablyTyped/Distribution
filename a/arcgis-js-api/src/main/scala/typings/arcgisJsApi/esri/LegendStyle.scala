@@ -35,7 +35,8 @@ object LegendStyle {
     __obj.asInstanceOf[LegendStyle]
   }
   
-  extension [Self <: LegendStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendStyle] (val x: Self) extends AnyVal {
     
     inline def setLayout(value: auto | `side-by-side` | stack): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     

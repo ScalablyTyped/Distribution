@@ -184,7 +184,8 @@ object mod {
       __obj.asInstanceOf[Payload[ParamType]]
     }
     
-    extension [Self <: Payload[?], ParamType](x: Self & Payload[ParamType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Payload[?], ParamType] (val x: Self & Payload[ParamType]) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

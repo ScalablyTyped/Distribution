@@ -49,7 +49,8 @@ object DatabaseEnvironment {
     __obj.asInstanceOf[DatabaseEnvironment]
   }
   
-  extension [Self <: DatabaseEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseEnvironment] (val x: Self) extends AnyVal {
     
     inline def setNumberFormatsSupplier(value: XNumberFormatsSupplier): Self = StObject.set(x, "NumberFormatsSupplier", value.asInstanceOf[js.Any])
   }

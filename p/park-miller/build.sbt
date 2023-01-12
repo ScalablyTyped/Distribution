@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "park-miller"
-version := "2.0.0-cbdd7c"
+version := "2.0.0-b96eec"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

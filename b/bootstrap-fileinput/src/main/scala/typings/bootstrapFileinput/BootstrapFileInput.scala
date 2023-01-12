@@ -196,7 +196,8 @@ object BootstrapFileInput {
       __obj.asInstanceOf[FileActionSettings]
     }
     
-    extension [Self <: FileActionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileActionSettings] (val x: Self) extends AnyVal {
       
       inline def setDownloadClass(value: String): Self = StObject.set(x, "downloadClass", value.asInstanceOf[js.Any])
       
@@ -1271,7 +1272,8 @@ object BootstrapFileInput {
       __obj.asInstanceOf[FileInputOptions]
     }
     
-    extension [Self <: FileInputOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileInputOptions] (val x: Self) extends AnyVal {
       
       inline def setAjaxDeleteSettings(value: JQueryAjaxSettings): Self = StObject.set(x, "ajaxDeleteSettings", value.asInstanceOf[js.Any])
       
@@ -1844,7 +1846,8 @@ object BootstrapFileInput {
       __obj.asInstanceOf[FileTypeSettings]
     }
     
-    extension [Self <: FileTypeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileTypeSettings] (val x: Self) extends AnyVal {
       
       inline def setAudio(value: (String, String) => Boolean): Self = StObject.set(x, "audio", js.Any.fromFunction2(value))
       
@@ -2005,7 +2008,8 @@ object BootstrapFileInput {
       __obj.asInstanceOf[LayoutTemplates]
     }
     
-    extension [Self <: LayoutTemplates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutTemplates] (val x: Self) extends AnyVal {
       
       inline def setActionDelete(value: String): Self = StObject.set(x, "actionDelete", value.asInstanceOf[js.Any])
       
@@ -2112,7 +2116,8 @@ object BootstrapFileInput {
       __obj.asInstanceOf[PreviewConfig]
     }
     
-    extension [Self <: PreviewConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviewConfig] (val x: Self) extends AnyVal {
       
       inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
@@ -2149,7 +2154,8 @@ object BootstrapFileInput {
       __obj.asInstanceOf[PreviewInfo]
     }
     
-    extension [Self <: PreviewInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviewInfo] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: js.Array[PreviewConfig]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -2190,7 +2196,8 @@ object BootstrapFileInput {
       __obj.asInstanceOf[PreviewSettings]
     }
     
-    extension [Self <: PreviewSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviewSettings] (val x: Self) extends AnyVal {
       
       inline def setAudio(value: Height): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
@@ -2330,7 +2337,8 @@ object BootstrapFileInput {
       __obj.asInstanceOf[PreviewTemplates]
     }
     
-    extension [Self <: PreviewTemplates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviewTemplates] (val x: Self) extends AnyVal {
       
       inline def setAudio(value: String): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       

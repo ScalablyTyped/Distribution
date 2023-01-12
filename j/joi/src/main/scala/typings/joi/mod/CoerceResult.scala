@@ -17,7 +17,8 @@ object CoerceResult {
     __obj.asInstanceOf[CoerceResult]
   }
   
-  extension [Self <: CoerceResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoerceResult] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: js.Array[ErrorReport]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

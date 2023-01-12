@@ -15,7 +15,8 @@ object ButtonExportOptions {
     __obj.asInstanceOf[ButtonExportOptions]
   }
   
-  extension [Self <: ButtonExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonExportOptions] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: ButtonSelectorTypes | js.Array[ButtonSelectorTypes]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

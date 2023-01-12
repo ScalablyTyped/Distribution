@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Bindvalue]
     }
     
-    extension [Self <: Bindvalue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bindvalue] (val x: Self) extends AnyVal {
       
       inline def setBind_value(value: (String, ClassType) => Unit): Self = StObject.set(x, "bind_value", js.Any.fromFunction2(value))
     }
@@ -201,7 +202,8 @@ object anon {
       __obj.asInstanceOf[ParamList]
     }
     
-    extension [Self <: ParamList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParamList] (val x: Self) extends AnyVal {
       
       inline def setParamList(value: js.Array[Double | js.Array[Double]]): Self = StObject.set(x, "paramList", value.asInstanceOf[js.Any])
       
@@ -224,7 +226,8 @@ object anon {
       __obj.asInstanceOf[Reflect]
     }
     
-    extension [Self <: Reflect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reflect] (val x: Self) extends AnyVal {
       
       inline def setReflect(value: typings.nbind.distReflectMod.Reflect): Self = StObject.set(x, "reflect", value.asInstanceOf[js.Any])
       

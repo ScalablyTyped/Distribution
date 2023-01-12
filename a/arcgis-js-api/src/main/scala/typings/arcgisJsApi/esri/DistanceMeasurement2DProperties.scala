@@ -69,7 +69,8 @@ object DistanceMeasurement2DProperties {
     __obj.asInstanceOf[DistanceMeasurement2DProperties]
   }
   
-  extension [Self <: DistanceMeasurement2DProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistanceMeasurement2DProperties] (val x: Self) extends AnyVal {
     
     inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     

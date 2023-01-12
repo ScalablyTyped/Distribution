@@ -359,7 +359,8 @@ object libAutoCompleteMod extends Shortcut {
       __obj.asInstanceOf[AutoCompleteProps[ValueType, OptionType]]
     }
     
-    extension [Self <: AutoCompleteProps[?, ?], ValueType, OptionType /* <: BaseOptionType | DefaultOptionType */](x: Self & (AutoCompleteProps[ValueType, OptionType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoCompleteProps[?, ?], ValueType, OptionType /* <: BaseOptionType | DefaultOptionType */] (val x: Self & (AutoCompleteProps[ValueType, OptionType])) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
@@ -892,7 +893,8 @@ object libAutoCompleteMod extends Shortcut {
       __obj.asInstanceOf[DataSourceItemObject]
     }
     
-    extension [Self <: DataSourceItemObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceItemObject] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

@@ -56,7 +56,8 @@ object XDataPilotFieldGrouping {
     __obj.asInstanceOf[XDataPilotFieldGrouping]
   }
   
-  extension [Self <: XDataPilotFieldGrouping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataPilotFieldGrouping] (val x: Self) extends AnyVal {
     
     inline def setCreateDateGroup(value: DataPilotFieldGroupInfo => XDataPilotField): Self = StObject.set(x, "createDateGroup", js.Any.fromFunction1(value))
     

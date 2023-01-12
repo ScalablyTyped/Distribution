@@ -18,7 +18,8 @@ object EventSourcesConfig {
     __obj.asInstanceOf[EventSourcesConfig]
   }
   
-  extension [Self <: EventSourcesConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventSourcesConfig] (val x: Self) extends AnyVal {
     
     inline def setAmazonCodeGuruProfiler(value: AmazonCodeGuruProfilerIntegration): Self = StObject.set(x, "AmazonCodeGuruProfiler", value.asInstanceOf[js.Any])
     

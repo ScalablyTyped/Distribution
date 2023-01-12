@@ -33,7 +33,8 @@ object GitPushRef {
     __obj.asInstanceOf[GitPushRef]
   }
   
-  extension [Self <: GitPushRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitPushRef] (val x: Self) extends AnyVal {
     
     inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

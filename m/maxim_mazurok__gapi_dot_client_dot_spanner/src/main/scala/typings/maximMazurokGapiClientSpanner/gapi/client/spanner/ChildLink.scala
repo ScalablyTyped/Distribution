@@ -29,7 +29,8 @@ object ChildLink {
     __obj.asInstanceOf[ChildLink]
   }
   
-  extension [Self <: ChildLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildLink] (val x: Self) extends AnyVal {
     
     inline def setChildIndex(value: Double): Self = StObject.set(x, "childIndex", value.asInstanceOf[js.Any])
     

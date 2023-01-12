@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Lage]
     }
     
-    extension [Self <: Lage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lage] (val x: Self) extends AnyVal {
       
       inline def setLage(value: lageDotconfigDotjson): Self = StObject.set(x, "Lage", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object anon {
       __obj.asInstanceOf[MainConfig]
     }
     
-    extension [Self <: MainConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MainConfig] (val x: Self) extends AnyVal {
       
       inline def setMainConfig(value: StorybookConfig & (Record[String, Any])): Self = StObject.set(x, "mainConfig", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -106,7 +109,8 @@ object anon {
       __obj.asInstanceOf[NameOptions]
     }
     
-    extension [Self <: NameOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -129,7 +133,8 @@ object anon {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -154,7 +159,8 @@ object anon {
       __obj.asInstanceOf[PackageName]
     }
     
-    extension [Self <: PackageName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageName] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -176,7 +182,8 @@ object anon {
       __obj.asInstanceOf[PartialDependency]
     }
     
-    extension [Self <: PartialDependency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDependency] (val x: Self) extends AnyVal {
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
@@ -202,7 +209,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setConfigDir(value: String): Self = StObject.set(x, "configDir", value.asInstanceOf[js.Any])
       
@@ -244,7 +252,8 @@ object anon {
       __obj.asInstanceOf[PartialTypescriptOptions]
     }
     
-    extension [Self <: PartialTypescriptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTypescriptOptions] (val x: Self) extends AnyVal {
       
       inline def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
@@ -282,7 +291,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: PM): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

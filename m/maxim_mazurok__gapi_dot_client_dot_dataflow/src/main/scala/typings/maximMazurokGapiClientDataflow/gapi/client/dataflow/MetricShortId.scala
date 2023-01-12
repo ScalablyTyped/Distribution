@@ -19,7 +19,8 @@ object MetricShortId {
     __obj.asInstanceOf[MetricShortId]
   }
   
-  extension [Self <: MetricShortId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricShortId] (val x: Self) extends AnyVal {
     
     inline def setMetricIndex(value: Double): Self = StObject.set(x, "metricIndex", value.asInstanceOf[js.Any])
     

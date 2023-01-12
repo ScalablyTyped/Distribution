@@ -67,7 +67,8 @@ object distEncodingMod {
         __obj.asInstanceOf[WasmHistogram]
       }
       
-      extension [Self <: WasmHistogram](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WasmHistogram] (val x: Self) extends AnyVal {
         
         inline def setEncodeIntoCompressedBase64(value: /* compressionLevel */ js.UndefOr[Double] => String): Self = StObject.set(x, "encodeIntoCompressedBase64", js.Any.fromFunction1(value))
       }

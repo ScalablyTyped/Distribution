@@ -51,7 +51,8 @@ object DigestSecuritySchemeFragment {
     __obj.asInstanceOf[DigestSecuritySchemeFragment]
   }
   
-  extension [Self <: DigestSecuritySchemeFragment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DigestSecuritySchemeFragment] (val x: Self) extends AnyVal {
     
     inline def setDescribedBy(value: SecuritySchemePart10): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
     

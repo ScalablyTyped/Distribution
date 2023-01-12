@@ -83,7 +83,8 @@ object StorageDescriptor {
     __obj.asInstanceOf[StorageDescriptor]
   }
   
-  extension [Self <: StorageDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageDescriptor] (val x: Self) extends AnyVal {
     
     inline def setAdditionalLocations(value: LocationStringList): Self = StObject.set(x, "AdditionalLocations", value.asInstanceOf[js.Any])
     

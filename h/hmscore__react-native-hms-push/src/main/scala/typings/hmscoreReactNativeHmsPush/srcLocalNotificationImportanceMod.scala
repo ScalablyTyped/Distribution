@@ -36,7 +36,8 @@ object srcLocalNotificationImportanceMod {
       __obj.asInstanceOf[Importance]
     }
     
-    extension [Self <: Importance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Importance] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: default): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

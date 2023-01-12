@@ -25,7 +25,8 @@ object DistributionKDE {
     __obj.asInstanceOf[DistributionKDE]
   }
   
-  extension [Self <: DistributionKDE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributionKDE] (val x: Self) extends AnyVal {
     
     inline def setBandwidth(value: Double | SignalRef): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     

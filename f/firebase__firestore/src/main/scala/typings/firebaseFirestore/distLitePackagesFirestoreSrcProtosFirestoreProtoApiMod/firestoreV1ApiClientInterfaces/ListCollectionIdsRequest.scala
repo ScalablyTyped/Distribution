@@ -17,7 +17,8 @@ object ListCollectionIdsRequest {
     __obj.asInstanceOf[ListCollectionIdsRequest]
   }
   
-  extension [Self <: ListCollectionIdsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCollectionIdsRequest] (val x: Self) extends AnyVal {
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

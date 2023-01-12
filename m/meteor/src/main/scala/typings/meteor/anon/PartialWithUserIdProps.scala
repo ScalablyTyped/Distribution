@@ -16,7 +16,8 @@ object PartialWithUserIdProps {
     __obj.asInstanceOf[PartialWithUserIdProps]
   }
   
-  extension [Self <: PartialWithUserIdProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialWithUserIdProps] (val x: Self) extends AnyVal {
     
     inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     

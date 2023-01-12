@@ -40,7 +40,8 @@ object stylesCreateBreakpointsMod {
       __obj.asInstanceOf[BreakpointDefaults]
     }
     
-    extension [Self <: BreakpointDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreakpointDefaults] (val x: Self) extends AnyVal {
       
       inline def setLg(value: `true`): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object stylesCreateBreakpointsMod {
       __obj.asInstanceOf[BreakpointsOptions]
     }
     
-    extension [Self <: BreakpointsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreakpointsOptions] (val x: Self) extends AnyVal {
       
       inline def setBetween(value: (/* start */ Breakpoint | Double, /* end */ Breakpoint | Double) => String): Self = StObject.set(x, "between", js.Any.fromFunction2(value))
       

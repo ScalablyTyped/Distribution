@@ -27,7 +27,8 @@ object typesGetBucketInventoryConfigurationOutputMod {
       __obj.asInstanceOf[GetBucketInventoryConfigurationOutput]
     }
     
-    extension [Self <: GetBucketInventoryConfigurationOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetBucketInventoryConfigurationOutput] (val x: Self) extends AnyVal {
       
       inline def setInventoryConfiguration(value: UnmarshalledInventoryConfiguration): Self = StObject.set(x, "InventoryConfiguration", value.asInstanceOf[js.Any])
       

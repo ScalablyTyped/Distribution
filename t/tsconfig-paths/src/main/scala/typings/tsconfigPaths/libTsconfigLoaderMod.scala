@@ -52,7 +52,8 @@ object libTsconfigLoaderMod {
       __obj.asInstanceOf[TsConfigLoaderParams]
     }
     
-    extension [Self <: TsConfigLoaderParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TsConfigLoaderParams] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object libTsconfigLoaderMod {
       __obj.asInstanceOf[TsConfigLoaderResult]
     }
     
-    extension [Self <: TsConfigLoaderResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TsConfigLoaderResult] (val x: Self) extends AnyVal {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
@@ -110,7 +112,8 @@ object libTsconfigLoaderMod {
       __obj.asInstanceOf[Tsconfig]
     }
     
-    extension [Self <: Tsconfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tsconfig] (val x: Self) extends AnyVal {
       
       inline def setCompilerOptions(value: BaseUrl): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
       

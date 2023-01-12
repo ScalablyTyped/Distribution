@@ -15,7 +15,8 @@ object DataViewScriptResultData {
     __obj.asInstanceOf[DataViewScriptResultData]
   }
   
-  extension [Self <: DataViewScriptResultData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewScriptResultData] (val x: Self) extends AnyVal {
     
     inline def setPayloadBase64(value: String): Self = StObject.set(x, "payloadBase64", value.asInstanceOf[js.Any])
   }

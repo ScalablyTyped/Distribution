@@ -15,7 +15,8 @@ object GlobalData {
     __obj.asInstanceOf[GlobalData]
   }
   
-  extension [Self <: GlobalData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalData] (val x: Self) extends AnyVal {
     
     inline def set_result(value: Any): Self = StObject.set(x, "_result", value.asInstanceOf[js.Any])
   }

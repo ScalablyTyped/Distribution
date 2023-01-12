@@ -58,7 +58,8 @@ object ListSigningJobsRequest {
     __obj.asInstanceOf[ListSigningJobsRequest]
   }
   
-  extension [Self <: ListSigningJobsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSigningJobsRequest] (val x: Self) extends AnyVal {
     
     inline def setIsRevoked(value: bool): Self = StObject.set(x, "isRevoked", value.asInstanceOf[js.Any])
     

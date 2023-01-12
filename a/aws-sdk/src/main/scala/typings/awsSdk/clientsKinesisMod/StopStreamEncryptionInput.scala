@@ -28,7 +28,8 @@ object StopStreamEncryptionInput {
     __obj.asInstanceOf[StopStreamEncryptionInput]
   }
   
-  extension [Self <: StopStreamEncryptionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopStreamEncryptionInput] (val x: Self) extends AnyVal {
     
     inline def setEncryptionType(value: EncryptionType): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
     

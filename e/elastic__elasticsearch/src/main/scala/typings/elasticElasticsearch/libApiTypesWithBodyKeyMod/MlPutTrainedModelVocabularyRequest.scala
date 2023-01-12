@@ -21,7 +21,8 @@ object MlPutTrainedModelVocabularyRequest {
     __obj.asInstanceOf[MlPutTrainedModelVocabularyRequest]
   }
   
-  extension [Self <: MlPutTrainedModelVocabularyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPutTrainedModelVocabularyRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Merges): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

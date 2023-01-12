@@ -23,7 +23,8 @@ object LoadBalancerTlsCertificateSummary {
     __obj.asInstanceOf[LoadBalancerTlsCertificateSummary]
   }
   
-  extension [Self <: LoadBalancerTlsCertificateSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadBalancerTlsCertificateSummary] (val x: Self) extends AnyVal {
     
     inline def setIsAttached(value: Boolean): Self = StObject.set(x, "isAttached", value.asInstanceOf[js.Any])
     

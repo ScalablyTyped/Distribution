@@ -20,7 +20,8 @@ object MessageWithoutPayload {
     __obj.asInstanceOf[MessageWithoutPayload]
   }
   
-  extension [Self <: MessageWithoutPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageWithoutPayload] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: scala.Unit): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

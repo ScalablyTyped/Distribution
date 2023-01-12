@@ -52,7 +52,8 @@ object IndexDescriptor {
     __obj.asInstanceOf[IndexDescriptor]
   }
   
-  extension [Self <: IndexDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexDescriptor] (val x: Self) extends AnyVal {
     
     inline def setCatalog(value: String): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     

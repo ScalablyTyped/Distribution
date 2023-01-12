@@ -720,7 +720,8 @@ object IItemCollection {
     __obj.asInstanceOf[IItemCollection]
   }
   
-  extension [Self <: IItemCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IItemCollection] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (/* key */ js.UndefOr[java.lang.String], /* obj */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

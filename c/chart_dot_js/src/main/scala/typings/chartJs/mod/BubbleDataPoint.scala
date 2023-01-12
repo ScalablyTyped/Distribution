@@ -28,7 +28,8 @@ object BubbleDataPoint {
     __obj.asInstanceOf[BubbleDataPoint]
   }
   
-  extension [Self <: BubbleDataPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BubbleDataPoint] (val x: Self) extends AnyVal {
     
     inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     

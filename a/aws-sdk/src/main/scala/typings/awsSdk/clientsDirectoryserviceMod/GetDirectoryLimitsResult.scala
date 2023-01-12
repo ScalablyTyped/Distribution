@@ -18,7 +18,8 @@ object GetDirectoryLimitsResult {
     __obj.asInstanceOf[GetDirectoryLimitsResult]
   }
   
-  extension [Self <: GetDirectoryLimitsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDirectoryLimitsResult] (val x: Self) extends AnyVal {
     
     inline def setDirectoryLimits(value: DirectoryLimits): Self = StObject.set(x, "DirectoryLimits", value.asInstanceOf[js.Any])
     

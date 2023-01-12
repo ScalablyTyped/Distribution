@@ -47,7 +47,8 @@ object ReduceTripOptions {
     __obj.asInstanceOf[ReduceTripOptions]
   }
   
-  extension [Self <: ReduceTripOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReduceTripOptions] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: (/* error */ js.Error, DataAny) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     

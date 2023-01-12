@@ -25,7 +25,8 @@ object buildSrcCommonTypesMod {
       __obj.asInstanceOf[InstrumentationLibrary]
     }
     
-    extension [Self <: InstrumentationLibrary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstrumentationLibrary] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object buildSrcCommonTypesMod {
       __obj.asInstanceOf[InstrumentationScope]
     }
     
-    extension [Self <: InstrumentationScope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstrumentationScope] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object buildSrcCommonTypesMod {
       __obj.asInstanceOf[TimeOriginLegacy]
     }
     
-    extension [Self <: TimeOriginLegacy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeOriginLegacy] (val x: Self) extends AnyVal {
       
       inline def setTiming(value: FetchStart): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     }

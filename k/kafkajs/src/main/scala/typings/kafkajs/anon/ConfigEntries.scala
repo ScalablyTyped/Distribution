@@ -30,7 +30,8 @@ object ConfigEntries {
     __obj.asInstanceOf[ConfigEntries]
   }
   
-  extension [Self <: ConfigEntries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigEntries] (val x: Self) extends AnyVal {
     
     inline def setConfigEntries(value: js.Array[typings.kafkajs.mod.ConfigEntries]): Self = StObject.set(x, "configEntries", value.asInstanceOf[js.Any])
     

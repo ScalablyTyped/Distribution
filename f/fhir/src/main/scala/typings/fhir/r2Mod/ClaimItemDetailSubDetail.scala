@@ -61,7 +61,8 @@ object ClaimItemDetailSubDetail {
     __obj.asInstanceOf[ClaimItemDetailSubDetail]
   }
   
-  extension [Self <: ClaimItemDetailSubDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClaimItemDetailSubDetail] (val x: Self) extends AnyVal {
     
     inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
     

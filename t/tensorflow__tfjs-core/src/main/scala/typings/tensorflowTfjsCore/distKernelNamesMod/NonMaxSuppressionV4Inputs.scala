@@ -18,7 +18,8 @@ object NonMaxSuppressionV4Inputs {
     __obj.asInstanceOf[NonMaxSuppressionV4Inputs]
   }
   
-  extension [Self <: NonMaxSuppressionV4Inputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonMaxSuppressionV4Inputs] (val x: Self) extends AnyVal {
     
     inline def setBoxes(value: scala.Any): Self = StObject.set(x, "boxes", value.asInstanceOf[js.Any])
     

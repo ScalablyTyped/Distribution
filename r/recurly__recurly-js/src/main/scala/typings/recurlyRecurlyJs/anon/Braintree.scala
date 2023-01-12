@@ -19,7 +19,8 @@ object Braintree {
     __obj.asInstanceOf[Braintree]
   }
   
-  extension [Self <: Braintree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Braintree] (val x: Self) extends AnyVal {
     
     inline def setBraintree(value: DeviceData): Self = StObject.set(x, "braintree", value.asInstanceOf[js.Any])
     

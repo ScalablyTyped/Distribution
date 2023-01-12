@@ -50,7 +50,8 @@ object PartialCheckboxRenderCust {
     __obj.asInstanceOf[PartialCheckboxRenderCust]
   }
   
-  extension [Self <: PartialCheckboxRenderCust](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCheckboxRenderCust] (val x: Self) extends AnyVal {
     
     inline def setCheckbox(value: RenderCustomComponent[MUIDataTableCheckboxProps] | ReactNode): Self = StObject.set(x, "Checkbox", value.asInstanceOf[js.Any])
     

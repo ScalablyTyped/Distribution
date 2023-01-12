@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsPauseMod extends Shortcut {
       __obj.asInstanceOf[PauseProps]
     }
     
-    extension [Self <: PauseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PauseProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

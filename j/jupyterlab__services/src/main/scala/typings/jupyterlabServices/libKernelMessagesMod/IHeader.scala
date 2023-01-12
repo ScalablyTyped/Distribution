@@ -43,7 +43,8 @@ object IHeader {
     __obj.asInstanceOf[IHeader[T]]
   }
   
-  extension [Self <: IHeader[?], T /* <: MessageType */](x: Self & IHeader[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHeader[?], T /* <: MessageType */] (val x: Self & IHeader[T]) extends AnyVal {
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

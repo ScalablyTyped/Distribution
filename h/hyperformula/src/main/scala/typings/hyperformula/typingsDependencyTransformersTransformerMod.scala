@@ -82,7 +82,8 @@ object typingsDependencyTransformersTransformerMod {
       __obj.asInstanceOf[FormulaTransformer]
     }
     
-    extension [Self <: FormulaTransformer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormulaTransformer] (val x: Self) extends AnyVal {
       
       inline def setIsIrreversible(value: () => Boolean): Self = StObject.set(x, "isIrreversible", js.Any.fromFunction0(value))
       

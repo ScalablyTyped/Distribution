@@ -104,7 +104,8 @@ object ASPxClientDropDownEditBase {
     __obj.asInstanceOf[ASPxClientDropDownEditBase]
   }
   
-  extension [Self <: ASPxClientDropDownEditBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDropDownEditBase] (val x: Self) extends AnyVal {
     
     inline def setAdjustDropDownWindow(value: () => Unit): Self = StObject.set(x, "AdjustDropDownWindow", js.Any.fromFunction0(value))
     

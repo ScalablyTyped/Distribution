@@ -23,7 +23,8 @@ object ProfileCredentials {
     __obj.asInstanceOf[ProfileCredentials]
   }
   
-  extension [Self <: ProfileCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileCredentials] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

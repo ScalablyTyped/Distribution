@@ -32,7 +32,8 @@ object LruResults {
     __obj.asInstanceOf[LruResults]
   }
   
-  extension [Self <: LruResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LruResults] (val x: Self) extends AnyVal {
     
     inline def setDidRun(value: Boolean): Self = StObject.set(x, "didRun", value.asInstanceOf[js.Any])
     

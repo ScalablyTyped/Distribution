@@ -95,7 +95,8 @@ object libEncodingMbcsMod {
       __obj.asInstanceOf[IteratedChar]
     }
     
-    extension [Self <: IteratedChar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IteratedChar] (val x: Self) extends AnyVal {
       
       inline def setCharValue(value: Double): Self = StObject.set(x, "charValue", value.asInstanceOf[js.Any])
       

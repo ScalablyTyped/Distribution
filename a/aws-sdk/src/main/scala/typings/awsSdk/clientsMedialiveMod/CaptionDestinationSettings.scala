@@ -39,7 +39,8 @@ object CaptionDestinationSettings {
     __obj.asInstanceOf[CaptionDestinationSettings]
   }
   
-  extension [Self <: CaptionDestinationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionDestinationSettings] (val x: Self) extends AnyVal {
     
     inline def setAribDestinationSettings(value: AribDestinationSettings): Self = StObject.set(x, "AribDestinationSettings", value.asInstanceOf[js.Any])
     

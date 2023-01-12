@@ -36,7 +36,8 @@ object TooltipPayload {
     __obj.asInstanceOf[TooltipPayload]
   }
   
-  extension [Self <: TooltipPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipPayload] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

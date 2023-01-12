@@ -81,7 +81,8 @@ object ShapeFontData {
     __obj.asInstanceOf[ShapeFontData]
   }
   
-  extension [Self <: ShapeFontData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeFontData] (val x: Self) extends AnyVal {
     
     inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     

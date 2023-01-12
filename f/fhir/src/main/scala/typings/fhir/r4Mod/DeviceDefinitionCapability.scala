@@ -26,7 +26,8 @@ object DeviceDefinitionCapability {
     __obj.asInstanceOf[DeviceDefinitionCapability]
   }
   
-  extension [Self <: DeviceDefinitionCapability](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceDefinitionCapability] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: js.Array[CodeableConcept]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

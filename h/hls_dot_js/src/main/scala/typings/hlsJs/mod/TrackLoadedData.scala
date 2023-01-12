@@ -25,7 +25,8 @@ object TrackLoadedData {
     __obj.asInstanceOf[TrackLoadedData]
   }
   
-  extension [Self <: TrackLoadedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackLoadedData] (val x: Self) extends AnyVal {
     
     inline def setDeliveryDirectives(value: HlsUrlParameters): Self = StObject.set(x, "deliveryDirectives", value.asInstanceOf[js.Any])
     

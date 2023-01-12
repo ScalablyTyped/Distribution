@@ -42,7 +42,8 @@ object distChildMod {
       __obj.asInstanceOf[IGatsbyWorkerMessenger[MessagesFromParent, MessagesFromChild]]
     }
     
-    extension [Self <: IGatsbyWorkerMessenger[?, ?], MessagesFromParent, MessagesFromChild](x: Self & (IGatsbyWorkerMessenger[MessagesFromParent, MessagesFromChild])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGatsbyWorkerMessenger[?, ?], MessagesFromParent, MessagesFromChild] (val x: Self & (IGatsbyWorkerMessenger[MessagesFromParent, MessagesFromChild])) extends AnyVal {
       
       inline def setMessagingVersion(value: `1`): Self = StObject.set(x, "messagingVersion", value.asInstanceOf[js.Any])
       

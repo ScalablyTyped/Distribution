@@ -22,7 +22,8 @@ object CloneTaskOptions {
     __obj.asInstanceOf[CloneTaskOptions]
   }
   
-  extension [Self <: CloneTaskOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloneTaskOptions] (val x: Self) extends AnyVal {
     
     inline def setIncludeBarCodes(value: Boolean): Self = StObject.set(x, "includeBarCodes", value.asInstanceOf[js.Any])
     

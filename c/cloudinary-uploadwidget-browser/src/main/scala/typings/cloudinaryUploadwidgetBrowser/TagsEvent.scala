@@ -21,7 +21,8 @@ object TagsEvent {
     __obj.asInstanceOf[TagsEvent]
   }
   
-  extension [Self <: TagsEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagsEvent] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: tags): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

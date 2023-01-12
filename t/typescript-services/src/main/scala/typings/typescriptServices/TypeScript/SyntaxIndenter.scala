@@ -133,7 +133,8 @@ object SyntaxIndenter {
     __obj.asInstanceOf[SyntaxIndenter]
   }
   
-  extension [Self <: SyntaxIndenter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntaxIndenter] (val x: Self) extends AnyVal {
     
     inline def setIndentMultiLineComment(value: (Any, Any, Any) => Any): Self = StObject.set(x, "indentMultiLineComment", js.Any.fromFunction3(value))
     

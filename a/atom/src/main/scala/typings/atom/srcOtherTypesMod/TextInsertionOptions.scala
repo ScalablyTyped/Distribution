@@ -38,7 +38,8 @@ object TextInsertionOptions {
     __obj.asInstanceOf[TextInsertionOptions]
   }
   
-  extension [Self <: TextInsertionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextInsertionOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoDecreaseIndent(value: Boolean): Self = StObject.set(x, "autoDecreaseIndent", value.asInstanceOf[js.Any])
     

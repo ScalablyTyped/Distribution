@@ -16,7 +16,8 @@ object YaraRuleSignature {
     __obj.asInstanceOf[YaraRuleSignature]
   }
   
-  extension [Self <: YaraRuleSignature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YaraRuleSignature] (val x: Self) extends AnyVal {
     
     inline def setYaraRule(value: String): Self = StObject.set(x, "yaraRule", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object AudioPlayer {
     __obj.asInstanceOf[AudioPlayer]
   }
   
-  extension [Self <: AudioPlayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioPlayer] (val x: Self) extends AnyVal {
     
     inline def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
   }

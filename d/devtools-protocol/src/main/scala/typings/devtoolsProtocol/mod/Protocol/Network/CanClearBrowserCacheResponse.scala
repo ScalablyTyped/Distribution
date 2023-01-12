@@ -18,7 +18,8 @@ object CanClearBrowserCacheResponse {
     __obj.asInstanceOf[CanClearBrowserCacheResponse]
   }
   
-  extension [Self <: CanClearBrowserCacheResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanClearBrowserCacheResponse] (val x: Self) extends AnyVal {
     
     inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }

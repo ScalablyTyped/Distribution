@@ -35,7 +35,8 @@ object ConditionFormatEntry {
     __obj.asInstanceOf[ConditionFormatEntry]
   }
   
-  extension [Self <: ConditionFormatEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionFormatEntry] (val x: Self) extends AnyVal {
     
     inline def setFormula1(value: String): Self = StObject.set(x, "Formula1", value.asInstanceOf[js.Any])
     

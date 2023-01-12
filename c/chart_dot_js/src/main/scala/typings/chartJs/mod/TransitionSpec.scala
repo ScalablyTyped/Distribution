@@ -17,7 +17,8 @@ object TransitionSpec {
     __obj.asInstanceOf[TransitionSpec[TType]]
   }
   
-  extension [Self <: TransitionSpec[?], TType /* <: ChartType */](x: Self & TransitionSpec[TType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionSpec[?], TType /* <: ChartType */] (val x: Self & TransitionSpec[TType]) extends AnyVal {
     
     inline def setAnimation(value: AnimationSpec[TType]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

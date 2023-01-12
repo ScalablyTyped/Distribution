@@ -21,7 +21,8 @@ object SearchAggregationProfileDelegateDebugFilter {
     __obj.asInstanceOf[SearchAggregationProfileDelegateDebugFilter]
   }
   
-  extension [Self <: SearchAggregationProfileDelegateDebugFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchAggregationProfileDelegateDebugFilter] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     

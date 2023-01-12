@@ -18,7 +18,8 @@ object DocumentMetadata {
     __obj.asInstanceOf[DocumentMetadata]
   }
   
-  extension [Self <: DocumentMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentMetadata] (val x: Self) extends AnyVal {
     
     inline def setPages(value: UInteger): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
     

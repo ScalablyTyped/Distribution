@@ -21,7 +21,8 @@ object ObservableArrayEvent {
     __obj.asInstanceOf[ObservableArrayEvent]
   }
   
-  extension [Self <: ObservableArrayEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObservableArrayEvent] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

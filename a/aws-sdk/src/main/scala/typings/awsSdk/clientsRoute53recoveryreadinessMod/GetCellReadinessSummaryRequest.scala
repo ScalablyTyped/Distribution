@@ -28,7 +28,8 @@ object GetCellReadinessSummaryRequest {
     __obj.asInstanceOf[GetCellReadinessSummaryRequest]
   }
   
-  extension [Self <: GetCellReadinessSummaryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCellReadinessSummaryRequest] (val x: Self) extends AnyVal {
     
     inline def setCellName(value: string): Self = StObject.set(x, "CellName", value.asInstanceOf[js.Any])
     

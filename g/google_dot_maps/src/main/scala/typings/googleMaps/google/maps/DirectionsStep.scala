@@ -132,7 +132,8 @@ object DirectionsStep {
     __obj.asInstanceOf[DirectionsStep]
   }
   
-  extension [Self <: DirectionsStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsStep] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Distance): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

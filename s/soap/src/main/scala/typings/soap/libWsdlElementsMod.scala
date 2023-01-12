@@ -753,7 +753,8 @@ object libWsdlElementsMod {
       __obj.asInstanceOf[IInclude]
     }
     
-    extension [Self <: IInclude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInclude] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
@@ -774,7 +775,8 @@ object libWsdlElementsMod {
       __obj.asInstanceOf[IPort]
     }
     
-    extension [Self <: IPort](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPort] (val x: Self) extends AnyVal {
       
       inline def setBinding(value: BindingElement): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
       
@@ -795,7 +797,8 @@ object libWsdlElementsMod {
       __obj.asInstanceOf[ITopElement]
     }
     
-    extension [Self <: ITopElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITopElement] (val x: Self) extends AnyVal {
       
       inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
       
@@ -830,7 +833,8 @@ object libWsdlElementsMod {
       __obj.asInstanceOf[IWsdlXmlns]
     }
     
-    extension [Self <: IWsdlXmlns](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWsdlXmlns] (val x: Self) extends AnyVal {
       
       inline def setSoap(value: String): Self = StObject.set(x, "soap", value.asInstanceOf[js.Any])
       

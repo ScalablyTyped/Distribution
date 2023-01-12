@@ -108,7 +108,8 @@ object distTypesCssSyntaxParserMod {
       __obj.asInstanceOf[CSSBlock]
     }
     
-    extension [Self <: CSSBlock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSBlock] (val x: Self) extends AnyVal {
       
       inline def setType(value: CSSBlockType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -143,7 +144,8 @@ object distTypesCssSyntaxParserMod {
       __obj.asInstanceOf[CSSFunction]
     }
     
-    extension [Self <: CSSFunction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSFunction] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

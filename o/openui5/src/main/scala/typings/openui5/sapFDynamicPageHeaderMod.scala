@@ -314,7 +314,8 @@ object sapFDynamicPageHeaderMod {
       __obj.asInstanceOf[DynamicPageHeaderSettings]
     }
     
-    extension [Self <: DynamicPageHeaderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicPageHeaderSettings] (val x: Self) extends AnyVal {
       
       inline def setBackgroundDesign(
         value: BackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String) | PropertyBindingInfo

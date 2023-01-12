@@ -23,7 +23,8 @@ object NetworkEndpointGroupCloudFunction {
     __obj.asInstanceOf[NetworkEndpointGroupCloudFunction]
   }
   
-  extension [Self <: NetworkEndpointGroupCloudFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkEndpointGroupCloudFunction] (val x: Self) extends AnyVal {
     
     inline def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     

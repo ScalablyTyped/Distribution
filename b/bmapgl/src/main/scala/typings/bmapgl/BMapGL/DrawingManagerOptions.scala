@@ -43,7 +43,8 @@ object DrawingManagerOptions {
     __obj.asInstanceOf[DrawingManagerOptions]
   }
   
-  extension [Self <: DrawingManagerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawingManagerOptions] (val x: Self) extends AnyVal {
     
     inline def setCircleOptions(value: CircleOptions): Self = StObject.set(x, "circleOptions", value.asInstanceOf[js.Any])
     

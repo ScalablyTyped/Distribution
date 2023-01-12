@@ -28,7 +28,8 @@ object ErrorStatistics {
     __obj.asInstanceOf[ErrorStatistics]
   }
   
-  extension [Self <: ErrorStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorStatistics] (val x: Self) extends AnyVal {
     
     inline def setOtherCount(value: NullableLong): Self = StObject.set(x, "OtherCount", value.asInstanceOf[js.Any])
     

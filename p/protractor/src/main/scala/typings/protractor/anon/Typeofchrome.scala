@@ -35,7 +35,8 @@ object Typeofchrome {
     __obj.asInstanceOf[Typeofchrome]
   }
   
-  extension [Self <: Typeofchrome](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofchrome] (val x: Self) extends AnyVal {
     
     inline def setDriver(value: TypeofDriverInstantiable): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
     

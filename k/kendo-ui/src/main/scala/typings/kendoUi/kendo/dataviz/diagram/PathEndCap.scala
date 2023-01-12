@@ -19,7 +19,8 @@ object PathEndCap {
     __obj.asInstanceOf[PathEndCap]
   }
   
-  extension [Self <: PathEndCap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathEndCap] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String | PathEndCapFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

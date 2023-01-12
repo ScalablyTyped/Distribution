@@ -35,7 +35,8 @@ object SubstanceSourceMaterialOrganismOrganismGeneral {
     __obj.asInstanceOf[SubstanceSourceMaterialOrganismOrganismGeneral]
   }
   
-  extension [Self <: SubstanceSourceMaterialOrganismOrganismGeneral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceSourceMaterialOrganismOrganismGeneral] (val x: Self) extends AnyVal {
     
     inline def setClass(value: CodeableConcept): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     

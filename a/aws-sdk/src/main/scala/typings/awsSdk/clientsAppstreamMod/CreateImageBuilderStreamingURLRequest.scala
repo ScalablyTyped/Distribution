@@ -23,7 +23,8 @@ object CreateImageBuilderStreamingURLRequest {
     __obj.asInstanceOf[CreateImageBuilderStreamingURLRequest]
   }
   
-  extension [Self <: CreateImageBuilderStreamingURLRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateImageBuilderStreamingURLRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

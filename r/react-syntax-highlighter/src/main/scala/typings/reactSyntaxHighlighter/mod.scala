@@ -162,7 +162,8 @@ object mod {
       __obj.asInstanceOf[SyntaxHighlighterProps]
     }
     
-    extension [Self <: SyntaxHighlighterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyntaxHighlighterProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String | js.Array[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -266,7 +267,8 @@ object mod {
       __obj.asInstanceOf[createElementProps]
     }
     
-    extension [Self <: createElementProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: createElementProps] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

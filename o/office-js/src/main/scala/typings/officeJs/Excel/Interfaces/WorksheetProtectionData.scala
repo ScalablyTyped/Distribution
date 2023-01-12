@@ -73,7 +73,8 @@ object WorksheetProtectionData {
     __obj.asInstanceOf[WorksheetProtectionData]
   }
   
-  extension [Self <: WorksheetProtectionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetProtectionData] (val x: Self) extends AnyVal {
     
     inline def setAllowEditRanges(value: js.Array[AllowEditRangeData]): Self = StObject.set(x, "allowEditRanges", value.asInstanceOf[js.Any])
     

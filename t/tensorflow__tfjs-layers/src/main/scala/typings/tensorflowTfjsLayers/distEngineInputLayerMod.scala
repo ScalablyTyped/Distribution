@@ -69,7 +69,8 @@ object distEngineInputLayerMod {
       __obj.asInstanceOf[InputConfig]
     }
     
-    extension [Self <: InputConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputConfig] (val x: Self) extends AnyVal {
       
       inline def setBatchShape(value: Shape): Self = StObject.set(x, "batchShape", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object distEngineInputLayerMod {
       __obj.asInstanceOf[InputLayerArgs]
     }
     
-    extension [Self <: InputLayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputLayerArgs] (val x: Self) extends AnyVal {
       
       inline def setBatchInputShape(value: Shape): Self = StObject.set(x, "batchInputShape", value.asInstanceOf[js.Any])
       

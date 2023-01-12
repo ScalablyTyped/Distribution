@@ -21,7 +21,8 @@ object StorySortObjectParameter {
     __obj.asInstanceOf[StorySortObjectParameter]
   }
   
-  extension [Self <: StorySortObjectParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorySortObjectParameter] (val x: Self) extends AnyVal {
     
     inline def setIncludeNames(value: Boolean): Self = StObject.set(x, "includeNames", value.asInstanceOf[js.Any])
     

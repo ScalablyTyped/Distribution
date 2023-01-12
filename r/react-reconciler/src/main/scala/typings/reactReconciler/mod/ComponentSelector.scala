@@ -21,7 +21,8 @@ object ComponentSelector {
     __obj.asInstanceOf[ComponentSelector]
   }
   
-  extension [Self <: ComponentSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentSelector] (val x: Self) extends AnyVal {
     
     inline def setDollarDollartypeof(value: js.Symbol | Double): Self = StObject.set(x, "$$typeof", value.asInstanceOf[js.Any])
     

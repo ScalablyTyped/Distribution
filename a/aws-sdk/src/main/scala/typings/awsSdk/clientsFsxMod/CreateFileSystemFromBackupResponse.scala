@@ -18,7 +18,8 @@ object CreateFileSystemFromBackupResponse {
     __obj.asInstanceOf[CreateFileSystemFromBackupResponse]
   }
   
-  extension [Self <: CreateFileSystemFromBackupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFileSystemFromBackupResponse] (val x: Self) extends AnyVal {
     
     inline def setFileSystem(value: FileSystem): Self = StObject.set(x, "FileSystem", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ListMattersResponse {
     __obj.asInstanceOf[ListMattersResponse]
   }
   
-  extension [Self <: ListMattersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMattersResponse] (val x: Self) extends AnyVal {
     
     inline def setMatters(value: js.Array[Matter]): Self = StObject.set(x, "matters", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object SearchResultSnippet {
     __obj.asInstanceOf[SearchResultSnippet]
   }
   
-  extension [Self <: SearchResultSnippet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchResultSnippet] (val x: Self) extends AnyVal {
     
     inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     

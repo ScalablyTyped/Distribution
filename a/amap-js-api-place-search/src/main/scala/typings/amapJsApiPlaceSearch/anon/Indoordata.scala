@@ -18,7 +18,8 @@ object Indoordata {
     __obj.asInstanceOf[Indoordata]
   }
   
-  extension [Self <: Indoordata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Indoordata] (val x: Self) extends AnyVal {
     
     inline def setIndoor_data(value: Cpid): Self = StObject.set(x, "indoor_data", value.asInstanceOf[js.Any])
     

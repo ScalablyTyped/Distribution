@@ -19,7 +19,8 @@ object IPopupModel {
     __obj.asInstanceOf[IPopupModel[T]]
   }
   
-  extension [Self <: IPopupModel[?], T](x: Self & IPopupModel[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPopupModel[?], T] (val x: Self & IPopupModel[T]) extends AnyVal {
     
     inline def setContentComponentData(value: T): Self = StObject.set(x, "contentComponentData", value.asInstanceOf[js.Any])
     

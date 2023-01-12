@@ -21,7 +21,8 @@ object PrintObjects {
     __obj.asInstanceOf[PrintObjects]
   }
   
-  extension [Self <: PrintObjects](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintObjects] (val x: Self) extends AnyVal {
     
     inline def `setDocument-number`(value: Double): Self = StObject.set(x, "document-number", value.asInstanceOf[js.Any])
     

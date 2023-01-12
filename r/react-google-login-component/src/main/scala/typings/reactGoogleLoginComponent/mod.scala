@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[GoogleLoginInfo]
     }
     
-    extension [Self <: GoogleLoginInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoogleLoginInfo] (val x: Self) extends AnyVal {
       
       inline def setGetAuthResponse(value: () => Accesstoken): Self = StObject.set(x, "getAuthResponse", js.Any.fromFunction0(value))
     }
@@ -62,7 +63,8 @@ object mod {
       __obj.asInstanceOf[GoogleLoginProps]
     }
     
-    extension [Self <: GoogleLoginProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoogleLoginProps] (val x: Self) extends AnyVal {
       
       inline def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
       

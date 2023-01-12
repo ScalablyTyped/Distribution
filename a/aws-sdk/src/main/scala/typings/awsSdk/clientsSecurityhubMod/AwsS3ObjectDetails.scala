@@ -43,7 +43,8 @@ object AwsS3ObjectDetails {
     __obj.asInstanceOf[AwsS3ObjectDetails]
   }
   
-  extension [Self <: AwsS3ObjectDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsS3ObjectDetails] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: NonEmptyString): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     

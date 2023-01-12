@@ -43,7 +43,8 @@ object StartFaceSearchRequest {
     __obj.asInstanceOf[StartFaceSearchRequest]
   }
   
-  extension [Self <: StartFaceSearchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartFaceSearchRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

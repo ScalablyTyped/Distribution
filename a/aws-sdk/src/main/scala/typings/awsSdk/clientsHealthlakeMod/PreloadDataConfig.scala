@@ -18,7 +18,8 @@ object PreloadDataConfig {
     __obj.asInstanceOf[PreloadDataConfig]
   }
   
-  extension [Self <: PreloadDataConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreloadDataConfig] (val x: Self) extends AnyVal {
     
     inline def setPreloadDataType(value: PreloadDataType): Self = StObject.set(x, "PreloadDataType", value.asInstanceOf[js.Any])
   }

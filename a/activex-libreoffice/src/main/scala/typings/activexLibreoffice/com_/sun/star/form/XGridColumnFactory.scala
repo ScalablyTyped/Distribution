@@ -53,7 +53,8 @@ object XGridColumnFactory {
     __obj.asInstanceOf[XGridColumnFactory]
   }
   
-  extension [Self <: XGridColumnFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGridColumnFactory] (val x: Self) extends AnyVal {
     
     inline def setColumnTypes(value: SafeArray[String]): Self = StObject.set(x, "ColumnTypes", value.asInstanceOf[js.Any])
     

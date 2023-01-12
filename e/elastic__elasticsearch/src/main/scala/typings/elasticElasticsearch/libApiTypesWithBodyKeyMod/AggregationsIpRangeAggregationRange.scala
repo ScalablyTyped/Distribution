@@ -19,7 +19,8 @@ object AggregationsIpRangeAggregationRange {
     __obj.asInstanceOf[AggregationsIpRangeAggregationRange]
   }
   
-  extension [Self <: AggregationsIpRangeAggregationRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsIpRangeAggregationRange] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object UserProfilePhotos {
     __obj.asInstanceOf[UserProfilePhotos]
   }
   
-  extension [Self <: UserProfilePhotos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserProfilePhotos] (val x: Self) extends AnyVal {
     
     inline def setPhotos(value: js.Array[js.Array[PhotoSize]]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
     

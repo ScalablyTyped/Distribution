@@ -70,7 +70,8 @@ object StartTextTranslationJobRequest {
     __obj.asInstanceOf[StartTextTranslationJobRequest]
   }
   
-  extension [Self <: StartTextTranslationJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartTextTranslationJobRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientTokenString): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

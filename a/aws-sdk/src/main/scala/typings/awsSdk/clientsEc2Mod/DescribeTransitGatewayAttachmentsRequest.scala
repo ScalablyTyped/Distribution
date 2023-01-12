@@ -38,7 +38,8 @@ object DescribeTransitGatewayAttachmentsRequest {
     __obj.asInstanceOf[DescribeTransitGatewayAttachmentsRequest]
   }
   
-  extension [Self <: DescribeTransitGatewayAttachmentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTransitGatewayAttachmentsRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

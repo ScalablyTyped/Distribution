@@ -18,7 +18,8 @@ object WebGLContextEventInit {
     __obj.asInstanceOf[WebGLContextEventInit]
   }
   
-  extension [Self <: WebGLContextEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLContextEventInit] (val x: Self) extends AnyVal {
     
     inline def setStatusMessage(value: java.lang.String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     

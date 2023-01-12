@@ -108,7 +108,8 @@ object libSessionSessionManagerMod {
       __obj.asInstanceOf[SessionManager]
     }
     
-    extension [Self <: SessionManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionManager] (val x: Self) extends AnyVal {
       
       inline def setAbortSession(value: String => Unit): Self = StObject.set(x, "abortSession", js.Any.fromFunction1(value))
       

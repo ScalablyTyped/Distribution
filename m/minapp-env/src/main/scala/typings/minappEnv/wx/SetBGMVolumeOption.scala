@@ -25,7 +25,8 @@ object SetBGMVolumeOption {
     __obj.asInstanceOf[SetBGMVolumeOption]
   }
   
-  extension [Self <: SetBGMVolumeOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetBGMVolumeOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

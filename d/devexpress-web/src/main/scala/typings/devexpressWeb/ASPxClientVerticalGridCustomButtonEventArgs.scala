@@ -28,7 +28,8 @@ object ASPxClientVerticalGridCustomButtonEventArgs {
     __obj.asInstanceOf[ASPxClientVerticalGridCustomButtonEventArgs]
   }
   
-  extension [Self <: ASPxClientVerticalGridCustomButtonEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientVerticalGridCustomButtonEventArgs] (val x: Self) extends AnyVal {
     
     inline def setButtonID(value: String): Self = StObject.set(x, "buttonID", value.asInstanceOf[js.Any])
     

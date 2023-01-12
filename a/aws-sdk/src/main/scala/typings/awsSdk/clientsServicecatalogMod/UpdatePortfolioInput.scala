@@ -48,7 +48,8 @@ object UpdatePortfolioInput {
     __obj.asInstanceOf[UpdatePortfolioInput]
   }
   
-  extension [Self <: UpdatePortfolioInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePortfolioInput] (val x: Self) extends AnyVal {
     
     inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     

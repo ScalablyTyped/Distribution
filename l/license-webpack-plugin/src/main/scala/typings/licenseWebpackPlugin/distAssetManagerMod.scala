@@ -28,7 +28,8 @@ object distAssetManagerMod {
       __obj.asInstanceOf[AssetManager]
     }
     
-    extension [Self <: AssetManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssetManager] (val x: Self) extends AnyVal {
       
       inline def setWriteAllLicenses(value: (js.Array[LicenseIdentifiedModule], WebpackCompilation) => Unit): Self = StObject.set(x, "writeAllLicenses", js.Any.fromFunction2(value))
       

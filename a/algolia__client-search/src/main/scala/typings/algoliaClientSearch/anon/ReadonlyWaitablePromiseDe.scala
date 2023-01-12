@@ -28,7 +28,8 @@ object ReadonlyWaitablePromiseDe {
     __obj.asInstanceOf[ReadonlyWaitablePromiseDe]
   }
   
-  extension [Self <: ReadonlyWaitablePromiseDe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyWaitablePromiseDe] (val x: Self) extends AnyVal {
     
     inline def setCatch(value: () => js.Promise[DeleteResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     

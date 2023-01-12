@@ -25,7 +25,8 @@ object WatchExchangeTradeResponse {
     __obj.asInstanceOf[WatchExchangeTradeResponse]
   }
   
-  extension [Self <: WatchExchangeTradeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchExchangeTradeResponse] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

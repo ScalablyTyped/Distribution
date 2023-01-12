@@ -29,7 +29,8 @@ object RemoveRet {
     __obj.asInstanceOf[RemoveRet]
   }
   
-  extension [Self <: RemoveRet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveRet] (val x: Self) extends AnyVal {
     
     inline def setIn(value: /* collection */ Any => RemoveExpression): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
     

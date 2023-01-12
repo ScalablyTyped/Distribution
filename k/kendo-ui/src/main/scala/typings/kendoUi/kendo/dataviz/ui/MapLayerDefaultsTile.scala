@@ -21,7 +21,8 @@ object MapLayerDefaultsTile {
     __obj.asInstanceOf[MapLayerDefaultsTile]
   }
   
-  extension [Self <: MapLayerDefaultsTile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapLayerDefaultsTile] (val x: Self) extends AnyVal {
     
     inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     

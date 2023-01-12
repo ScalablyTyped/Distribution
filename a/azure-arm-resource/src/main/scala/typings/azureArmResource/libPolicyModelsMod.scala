@@ -44,7 +44,8 @@ object libPolicyModelsMod {
       __obj.asInstanceOf[ErrorResponse]
     }
     
-    extension [Self <: ErrorResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorResponse] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object libPolicyModelsMod {
       __obj.asInstanceOf[Identity]
     }
     
-    extension [Self <: Identity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Identity] (val x: Self) extends AnyVal {
       
       inline def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
       
@@ -268,7 +270,8 @@ object libPolicyModelsMod {
       __obj.asInstanceOf[PolicyDefinitionReference]
     }
     
-    extension [Self <: PolicyDefinitionReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolicyDefinitionReference] (val x: Self) extends AnyVal {
       
       inline def setParameters(value: Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
@@ -361,7 +364,8 @@ object libPolicyModelsMod {
       __obj.asInstanceOf[PolicySku]
     }
     
-    extension [Self <: PolicySku](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolicySku] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

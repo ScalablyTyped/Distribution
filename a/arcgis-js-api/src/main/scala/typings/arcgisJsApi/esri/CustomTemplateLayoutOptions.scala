@@ -20,7 +20,8 @@ object CustomTemplateLayoutOptions {
     __obj.asInstanceOf[CustomTemplateLayoutOptions]
   }
   
-  extension [Self <: CustomTemplateLayoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomTemplateLayoutOptions] (val x: Self) extends AnyVal {
     
     inline def setLegend(value: Boolean): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object MessageDefinitionFocus {
     __obj.asInstanceOf[MessageDefinitionFocus]
   }
   
-  extension [Self <: MessageDefinitionFocus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageDefinitionFocus] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

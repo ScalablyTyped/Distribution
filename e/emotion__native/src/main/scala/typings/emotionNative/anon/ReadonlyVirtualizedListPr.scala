@@ -392,7 +392,8 @@ object ReadonlyVirtualizedListPr {
     __obj.asInstanceOf[ReadonlyVirtualizedListPr]
   }
   
-  extension [Self <: ReadonlyVirtualizedListPr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyVirtualizedListPr] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequest {
     __obj.asInstanceOf[GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequest]
   }
   
-  extension [Self <: GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequest] (val x: Self) extends AnyVal {
     
     inline def setClient(value: GoogleSecuritySafebrowsingV4ClientInfo): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

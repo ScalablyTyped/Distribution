@@ -19,7 +19,8 @@ object PauseAction {
     __obj.asInstanceOf[PauseAction]
   }
   
-  extension [Self <: PauseAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PauseAction] (val x: Self) extends AnyVal {
     
     inline def setType(value: pause): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

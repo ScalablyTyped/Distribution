@@ -56,7 +56,8 @@ object builtClusterDelayQueueMod {
       __obj.asInstanceOf[DelayQueue]
     }
     
-    extension [Self <: DelayQueue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DelayQueue] (val x: Self) extends AnyVal {
       
       inline def setExecute(value: Any): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object builtClusterDelayQueueMod {
       __obj.asInstanceOf[DelayQueueOptions]
     }
     
-    extension [Self <: DelayQueueOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DelayQueueOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       

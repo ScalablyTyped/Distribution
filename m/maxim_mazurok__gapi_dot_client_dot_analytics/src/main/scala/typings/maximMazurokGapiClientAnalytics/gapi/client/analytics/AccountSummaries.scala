@@ -40,7 +40,8 @@ object AccountSummaries {
     __obj.asInstanceOf[AccountSummaries]
   }
   
-  extension [Self <: AccountSummaries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountSummaries] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[AccountSummary]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

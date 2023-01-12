@@ -50,7 +50,8 @@ object IGeoXmlStats {
     __obj.asInstanceOf[IGeoXmlStats]
   }
   
-  extension [Self <: IGeoXmlStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeoXmlStats] (val x: Self) extends AnyVal {
     
     inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     

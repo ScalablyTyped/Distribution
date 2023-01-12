@@ -63,7 +63,8 @@ object Blueprint {
     __obj.asInstanceOf[Blueprint]
   }
   
-  extension [Self <: Blueprint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Blueprint] (val x: Self) extends AnyVal {
     
     inline def setBlueprintLocation(value: GenericString): Self = StObject.set(x, "BlueprintLocation", value.asInstanceOf[js.Any])
     

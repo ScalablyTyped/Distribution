@@ -41,7 +41,8 @@ object WorkerPoolInterface {
     __obj.asInstanceOf[WorkerPoolInterface]
   }
   
-  extension [Self <: WorkerPoolInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerPoolInterface] (val x: Self) extends AnyVal {
     
     inline def setCreateWorker(value: WorkerOptions2 => WorkerInterface): Self = StObject.set(x, "createWorker", js.Any.fromFunction1(value))
     

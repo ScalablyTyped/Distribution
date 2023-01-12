@@ -53,7 +53,8 @@ object DisabledAsDuplicateOfDefault {
     __obj.asInstanceOf[DisabledAsDuplicateOfDefault]
   }
   
-  extension [Self <: DisabledAsDuplicateOfDefault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisabledAsDuplicateOfDefault] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: scala.Double): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

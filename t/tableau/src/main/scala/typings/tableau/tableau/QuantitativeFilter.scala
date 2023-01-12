@@ -41,7 +41,8 @@ object QuantitativeFilter {
     __obj.asInstanceOf[QuantitativeFilter]
   }
   
-  extension [Self <: QuantitativeFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuantitativeFilter] (val x: Self) extends AnyVal {
     
     inline def setGetDomainMax(value: () => DataValue): Self = StObject.set(x, "getDomainMax", js.Any.fromFunction0(value))
     

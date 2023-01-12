@@ -60,7 +60,8 @@ object distFirestoreSrcModelCollectionsMod {
       __obj.asInstanceOf[DocumentSizeEntries]
     }
     
-    extension [Self <: DocumentSizeEntries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentSizeEntries] (val x: Self) extends AnyVal {
       
       inline def setDocuments(value: MutableDocumentMap_): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
       

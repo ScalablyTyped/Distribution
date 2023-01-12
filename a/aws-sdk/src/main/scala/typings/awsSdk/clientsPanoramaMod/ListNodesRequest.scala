@@ -48,7 +48,8 @@ object ListNodesRequest {
     __obj.asInstanceOf[ListNodesRequest]
   }
   
-  extension [Self <: ListNodesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNodesRequest] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: NodeCategory): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     

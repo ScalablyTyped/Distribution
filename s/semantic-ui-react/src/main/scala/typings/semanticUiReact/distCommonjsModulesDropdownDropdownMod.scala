@@ -115,7 +115,8 @@ object distCommonjsModulesDropdownDropdownMod {
       __obj.asInstanceOf[DropdownOnSearchChangeData]
     }
     
-    extension [Self <: DropdownOnSearchChangeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownOnSearchChangeData] (val x: Self) extends AnyVal {
       
       inline def setSearchQuery(value: String): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
     }
@@ -455,7 +456,8 @@ object distCommonjsModulesDropdownDropdownMod {
       __obj.asInstanceOf[StrictDropdownProps]
     }
     
-    extension [Self <: StrictDropdownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictDropdownProps] (val x: Self) extends AnyVal {
       
       inline def setAdditionLabel(value: Double | String | ReactNode): Self = StObject.set(x, "additionLabel", value.asInstanceOf[js.Any])
       

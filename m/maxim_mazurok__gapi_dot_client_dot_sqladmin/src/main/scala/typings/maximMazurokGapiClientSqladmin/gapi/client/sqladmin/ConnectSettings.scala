@@ -39,7 +39,8 @@ object ConnectSettings {
     __obj.asInstanceOf[ConnectSettings]
   }
   
-  extension [Self <: ConnectSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectSettings] (val x: Self) extends AnyVal {
     
     inline def setBackendType(value: String): Self = StObject.set(x, "backendType", value.asInstanceOf[js.Any])
     

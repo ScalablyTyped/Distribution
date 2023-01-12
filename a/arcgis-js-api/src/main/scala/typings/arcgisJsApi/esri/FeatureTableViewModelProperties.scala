@@ -132,7 +132,8 @@ object FeatureTableViewModelProperties {
     __obj.asInstanceOf[FeatureTableViewModelProperties]
   }
   
-  extension [Self <: FeatureTableViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureTableViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setAttachmentsEnabled(value: Boolean): Self = StObject.set(x, "attachmentsEnabled", value.asInstanceOf[js.Any])
     

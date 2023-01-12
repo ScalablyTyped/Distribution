@@ -19,7 +19,8 @@ object AVPlaySubtitleAttribute {
     __obj.asInstanceOf[AVPlaySubtitleAttribute]
   }
   
-  extension [Self <: AVPlaySubtitleAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AVPlaySubtitleAttribute] (val x: Self) extends AnyVal {
     
     inline def setAttr_type(value: String): Self = StObject.set(x, "attr_type", value.asInstanceOf[js.Any])
     

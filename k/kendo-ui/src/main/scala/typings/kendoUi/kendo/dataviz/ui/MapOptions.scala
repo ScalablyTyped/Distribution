@@ -74,7 +74,8 @@ object MapOptions {
     __obj.asInstanceOf[MapOptions]
   }
   
-  extension [Self <: MapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
     
     inline def setBeforeReset(value: /* e */ MapBeforeResetEvent => Unit): Self = StObject.set(x, "beforeReset", js.Any.fromFunction1(value))
     

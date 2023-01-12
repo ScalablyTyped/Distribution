@@ -39,7 +39,8 @@ object FaceCropTextureProvider {
     __obj.asInstanceOf[FaceCropTextureProvider]
   }
   
-  extension [Self <: FaceCropTextureProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaceCropTextureProvider] (val x: Self) extends AnyVal {
     
     inline def setFaceCenterMouthWeight(value: Double): Self = StObject.set(x, "faceCenterMouthWeight", value.asInstanceOf[js.Any])
     

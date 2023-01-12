@@ -28,7 +28,8 @@ object Scte27SourceSettings {
     __obj.asInstanceOf[Scte27SourceSettings]
   }
   
-  extension [Self <: Scte27SourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scte27SourceSettings] (val x: Self) extends AnyVal {
     
     inline def setOcrLanguage(value: Scte27OcrLanguage): Self = StObject.set(x, "OcrLanguage", value.asInstanceOf[js.Any])
     

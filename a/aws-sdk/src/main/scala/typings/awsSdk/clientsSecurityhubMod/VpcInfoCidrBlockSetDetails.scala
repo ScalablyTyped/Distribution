@@ -18,7 +18,8 @@ object VpcInfoCidrBlockSetDetails {
     __obj.asInstanceOf[VpcInfoCidrBlockSetDetails]
   }
   
-  extension [Self <: VpcInfoCidrBlockSetDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcInfoCidrBlockSetDetails] (val x: Self) extends AnyVal {
     
     inline def setCidrBlock(value: NonEmptyString): Self = StObject.set(x, "CidrBlock", value.asInstanceOf[js.Any])
     

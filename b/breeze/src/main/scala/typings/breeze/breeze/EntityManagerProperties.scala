@@ -27,7 +27,8 @@ object EntityManagerProperties {
     __obj.asInstanceOf[EntityManagerProperties]
   }
   
-  extension [Self <: EntityManagerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityManagerProperties] (val x: Self) extends AnyVal {
     
     inline def setDataService(value: DataService): Self = StObject.set(x, "dataService", value.asInstanceOf[js.Any])
     

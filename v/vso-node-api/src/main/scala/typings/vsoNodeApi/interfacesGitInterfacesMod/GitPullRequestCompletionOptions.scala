@@ -56,7 +56,8 @@ object GitPullRequestCompletionOptions {
     __obj.asInstanceOf[GitPullRequestCompletionOptions]
   }
   
-  extension [Self <: GitPullRequestCompletionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitPullRequestCompletionOptions] (val x: Self) extends AnyVal {
     
     inline def setBypassPolicy(value: Boolean): Self = StObject.set(x, "bypassPolicy", value.asInstanceOf[js.Any])
     

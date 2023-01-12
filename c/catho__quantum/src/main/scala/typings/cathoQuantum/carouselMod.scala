@@ -47,7 +47,8 @@ object carouselMod {
       __obj.asInstanceOf[CarouselProps]
     }
     
-    extension [Self <: CarouselProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselProps] (val x: Self) extends AnyVal {
       
       inline def setArrowColor(value: primary | success | error | neutral | warning): Self = StObject.set(x, "arrowColor", value.asInstanceOf[js.Any])
       

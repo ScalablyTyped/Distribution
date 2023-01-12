@@ -34,7 +34,8 @@ object UniqueValueProperties {
     __obj.asInstanceOf[UniqueValueProperties]
   }
   
-  extension [Self <: UniqueValueProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UniqueValueProperties] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

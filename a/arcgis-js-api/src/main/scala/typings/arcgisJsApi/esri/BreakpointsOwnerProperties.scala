@@ -39,7 +39,8 @@ object BreakpointsOwnerProperties {
     __obj.asInstanceOf[BreakpointsOwnerProperties]
   }
   
-  extension [Self <: BreakpointsOwnerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreakpointsOwnerProperties] (val x: Self) extends AnyVal {
     
     inline def setBreakpoints(value: BreakpointsOwnerBreakpoints): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     

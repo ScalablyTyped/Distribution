@@ -19,7 +19,8 @@ object RoboScriptExecution {
     __obj.asInstanceOf[RoboScriptExecution]
   }
   
-  extension [Self <: RoboScriptExecution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoboScriptExecution] (val x: Self) extends AnyVal {
     
     inline def setSuccessfulActions(value: Double): Self = StObject.set(x, "successfulActions", value.asInstanceOf[js.Any])
     

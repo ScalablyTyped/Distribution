@@ -23,7 +23,8 @@ object TouchOptions {
     __obj.asInstanceOf[TouchOptions]
   }
   
-  extension [Self <: TouchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchOptions] (val x: Self) extends AnyVal {
     
     inline def setPersist_to(value: Double): Self = StObject.set(x, "persist_to", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[MappingEngine]
     }
     
-    extension [Self <: MappingEngine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MappingEngine] (val x: Self) extends AnyVal {
       
       inline def setFindSite(value: String => String): Self = StObject.set(x, "findSite", js.Any.fromFunction1(value))
       
@@ -100,7 +101,8 @@ object mod {
       __obj.asInstanceOf[SCCBrokerClientOptions]
     }
     
-    extension [Self <: SCCBrokerClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SCCBrokerClientOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthKey(value: Secret): Self = StObject.set(x, "authKey", value.asInstanceOf[js.Any])
       

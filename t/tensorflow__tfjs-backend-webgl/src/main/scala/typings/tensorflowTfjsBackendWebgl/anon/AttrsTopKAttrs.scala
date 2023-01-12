@@ -22,7 +22,8 @@ object AttrsTopKAttrs {
     __obj.asInstanceOf[AttrsTopKAttrs]
   }
   
-  extension [Self <: AttrsTopKAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsTopKAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: TopKAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

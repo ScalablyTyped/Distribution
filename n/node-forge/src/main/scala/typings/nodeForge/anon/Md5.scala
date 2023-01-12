@@ -24,7 +24,8 @@ object Md5 {
     __obj.asInstanceOf[Md5]
   }
   
-  extension [Self <: Md5](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Md5] (val x: Self) extends AnyVal {
     
     inline def setSha512Slash224(
       value: /* import warning: importer.ImportType#apply Failed type conversion: typeof md['sha512/224'] */ js.Any

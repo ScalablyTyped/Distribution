@@ -18,7 +18,8 @@ object DetectDominantLanguageResponse {
     __obj.asInstanceOf[DetectDominantLanguageResponse]
   }
   
-  extension [Self <: DetectDominantLanguageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectDominantLanguageResponse] (val x: Self) extends AnyVal {
     
     inline def setLanguages(value: ListOfDominantLanguages): Self = StObject.set(x, "Languages", value.asInstanceOf[js.Any])
     

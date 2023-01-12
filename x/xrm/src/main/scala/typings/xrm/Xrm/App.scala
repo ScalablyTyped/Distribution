@@ -77,7 +77,8 @@ object App {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setActionLabel(value: String): Self = StObject.set(x, "actionLabel", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object App {
     }
   }
   
-  extension [Self <: App](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: App] (val x: Self) extends AnyVal {
     
     inline def setAddGlobalNotification(value: Notifcation => PromiseLike[String]): Self = StObject.set(x, "addGlobalNotification", js.Any.fromFunction1(value))
     
@@ -137,7 +139,8 @@ object App {
       __obj.asInstanceOf[Notifcation]
     }
     
-    extension [Self <: Notifcation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Notifcation] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -266,7 +269,8 @@ object App {
       __obj.asInstanceOf[PaneOptions]
     }
     
-    extension [Self <: PaneOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaneOptions] (val x: Self) extends AnyVal {
       
       inline def setAlwaysRender(value: Boolean): Self = StObject.set(x, "alwaysRender", value.asInstanceOf[js.Any])
       

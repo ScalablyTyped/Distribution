@@ -41,7 +41,8 @@ object RendererTitle {
     __obj.asInstanceOf[RendererTitle]
   }
   
-  extension [Self <: RendererTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RendererTitle] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

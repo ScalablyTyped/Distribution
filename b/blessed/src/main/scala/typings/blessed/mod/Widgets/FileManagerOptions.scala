@@ -20,7 +20,8 @@ object FileManagerOptions {
     __obj.asInstanceOf[FileManagerOptions]
   }
   
-  extension [Self <: FileManagerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileManagerOptions] (val x: Self) extends AnyVal {
     
     inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     

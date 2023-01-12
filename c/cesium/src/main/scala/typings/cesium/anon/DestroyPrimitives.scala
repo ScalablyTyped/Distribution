@@ -17,7 +17,8 @@ object DestroyPrimitives {
     __obj.asInstanceOf[DestroyPrimitives]
   }
   
-  extension [Self <: DestroyPrimitives](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestroyPrimitives] (val x: Self) extends AnyVal {
     
     inline def setDestroyPrimitives(value: Boolean): Self = StObject.set(x, "destroyPrimitives", value.asInstanceOf[js.Any])
     

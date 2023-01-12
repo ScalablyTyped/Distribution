@@ -45,7 +45,8 @@ object Vibrato {
     __obj.asInstanceOf[Vibrato]
   }
   
-  extension [Self <: Vibrato](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Vibrato] (val x: Self) extends AnyVal {
     
     inline def setSetHarsh(value: Boolean => Vibrato): Self = StObject.set(x, "setHarsh", js.Any.fromFunction1(value))
     

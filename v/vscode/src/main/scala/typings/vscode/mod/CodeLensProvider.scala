@@ -40,7 +40,8 @@ object CodeLensProvider {
     __obj.asInstanceOf[CodeLensProvider[T]]
   }
   
-  extension [Self <: CodeLensProvider[?], T /* <: CodeLens */](x: Self & CodeLensProvider[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeLensProvider[?], T /* <: CodeLens */] (val x: Self & CodeLensProvider[T]) extends AnyVal {
     
     inline def setOnDidChangeCodeLenses(
       value: (/* listener */ js.Function1[Unit, Any], /* thisArgs */ js.UndefOr[Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable

@@ -17,7 +17,8 @@ object UnnamedParam {
     __obj.asInstanceOf[UnnamedParam]
   }
   
-  extension [Self <: UnnamedParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnnamedParam] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String | Boolean): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

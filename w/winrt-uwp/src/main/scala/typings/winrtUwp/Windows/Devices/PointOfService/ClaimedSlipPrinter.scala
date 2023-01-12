@@ -144,7 +144,8 @@ object ClaimedSlipPrinter {
     __obj.asInstanceOf[ClaimedSlipPrinter]
   }
   
-  extension [Self <: ClaimedSlipPrinter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClaimedSlipPrinter] (val x: Self) extends AnyVal {
     
     inline def setChangePrintSide(value: PosPrinterPrintSide => Unit): Self = StObject.set(x, "changePrintSide", js.Any.fromFunction1(value))
     

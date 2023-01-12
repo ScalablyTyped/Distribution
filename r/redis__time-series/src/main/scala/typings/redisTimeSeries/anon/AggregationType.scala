@@ -20,7 +20,8 @@ object AggregationType {
     __obj.asInstanceOf[AggregationType]
   }
   
-  extension [Self <: AggregationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationType] (val x: Self) extends AnyVal {
     
     inline def setAggregationType(value: TimeSeriesAggregationType): Self = StObject.set(x, "aggregationType", value.asInstanceOf[js.Any])
     

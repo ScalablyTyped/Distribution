@@ -34,7 +34,8 @@ object GoogleCloudSecuritycenterV1p1beta1Resource {
     __obj.asInstanceOf[GoogleCloudSecuritycenterV1p1beta1Resource]
   }
   
-  extension [Self <: GoogleCloudSecuritycenterV1p1beta1Resource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudSecuritycenterV1p1beta1Resource] (val x: Self) extends AnyVal {
     
     inline def setFolders(value: js.Array[GoogleCloudSecuritycenterV1p1beta1Folder]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
     

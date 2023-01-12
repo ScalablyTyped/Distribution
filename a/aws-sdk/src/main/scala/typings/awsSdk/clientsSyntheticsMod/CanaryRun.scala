@@ -38,7 +38,8 @@ object CanaryRun {
     __obj.asInstanceOf[CanaryRun]
   }
   
-  extension [Self <: CanaryRun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanaryRun] (val x: Self) extends AnyVal {
     
     inline def setArtifactS3Location(value: String): Self = StObject.set(x, "ArtifactS3Location", value.asInstanceOf[js.Any])
     

@@ -61,7 +61,8 @@ object typesSrcRuntimesWebDomDependencyLoaderMod {
       __obj.asInstanceOf[DependencyLoader]
     }
     
-    extension [Self <: DependencyLoader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependencyLoader] (val x: Self) extends AnyVal {
       
       inline def setGetPath(value: (String, Any) => String): Self = StObject.set(x, "getPath", js.Any.fromFunction2(value))
       

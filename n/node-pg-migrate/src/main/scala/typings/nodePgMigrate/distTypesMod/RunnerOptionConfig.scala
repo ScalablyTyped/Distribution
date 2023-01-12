@@ -116,7 +116,8 @@ object RunnerOptionConfig {
     __obj.asInstanceOf[RunnerOptionConfig]
   }
   
-  extension [Self <: RunnerOptionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunnerOptionConfig] (val x: Self) extends AnyVal {
     
     inline def setCheckOrder(value: Boolean): Self = StObject.set(x, "checkOrder", value.asInstanceOf[js.Any])
     

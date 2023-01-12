@@ -18,7 +18,8 @@ object QBnfDefs {
     __obj.asInstanceOf[QBnfDefs]
   }
   
-  extension [Self <: QBnfDefs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QBnfDefs] (val x: Self) extends AnyVal {
     
     inline def setQBnfDefs(value: IBNFDef): Self = StObject.set(x, "qBnfDefs", value.asInstanceOf[js.Any])
     

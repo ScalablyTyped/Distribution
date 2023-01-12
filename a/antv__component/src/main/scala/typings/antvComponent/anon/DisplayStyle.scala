@@ -18,7 +18,8 @@ object DisplayStyle {
     __obj.asInstanceOf[DisplayStyle]
   }
   
-  extension [Self <: DisplayStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayStyle] (val x: Self) extends AnyVal {
     
     inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     

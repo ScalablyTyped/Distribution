@@ -95,7 +95,8 @@ object distSrcDefaultsWidgetsDefaultLinkWidgetMod {
       __obj.asInstanceOf[DefaultLinkProps]
     }
     
-    extension [Self <: DefaultLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultLinkProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object distSrcDefaultsWidgetsDefaultLinkWidgetMod {
       __obj.asInstanceOf[DefaultLinkState]
     }
     
-    extension [Self <: DefaultLinkState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultLinkState] (val x: Self) extends AnyVal {
       
       inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }

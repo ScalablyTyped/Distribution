@@ -24,7 +24,8 @@ object SwitchCases {
     __obj.asInstanceOf[SwitchCases]
   }
   
-  extension [Self <: SwitchCases](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwitchCases] (val x: Self) extends AnyVal {
     
     inline def setIs(value: SchemaLike): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     

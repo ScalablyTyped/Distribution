@@ -43,7 +43,8 @@ object ListReviewPolicyResultsForHITRequest {
     __obj.asInstanceOf[ListReviewPolicyResultsForHITRequest]
   }
   
-  extension [Self <: ListReviewPolicyResultsForHITRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListReviewPolicyResultsForHITRequest] (val x: Self) extends AnyVal {
     
     inline def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CallFunctionOnReturnType {
     __obj.asInstanceOf[CallFunctionOnReturnType]
   }
   
-  extension [Self <: CallFunctionOnReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallFunctionOnReturnType] (val x: Self) extends AnyVal {
     
     inline def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
     

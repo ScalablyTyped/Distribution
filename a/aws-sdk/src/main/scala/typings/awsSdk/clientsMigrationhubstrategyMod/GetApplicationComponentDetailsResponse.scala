@@ -33,7 +33,8 @@ object GetApplicationComponentDetailsResponse {
     __obj.asInstanceOf[GetApplicationComponentDetailsResponse]
   }
   
-  extension [Self <: GetApplicationComponentDetailsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetApplicationComponentDetailsResponse] (val x: Self) extends AnyVal {
     
     inline def setApplicationComponentDetail(value: ApplicationComponentDetail): Self = StObject.set(x, "applicationComponentDetail", value.asInstanceOf[js.Any])
     

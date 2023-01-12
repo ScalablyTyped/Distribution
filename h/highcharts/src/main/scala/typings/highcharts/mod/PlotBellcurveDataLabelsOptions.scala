@@ -273,7 +273,8 @@ object PlotBellcurveDataLabelsOptions {
     __obj.asInstanceOf[PlotBellcurveDataLabelsOptions]
   }
   
-  extension [Self <: PlotBellcurveDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotBellcurveDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

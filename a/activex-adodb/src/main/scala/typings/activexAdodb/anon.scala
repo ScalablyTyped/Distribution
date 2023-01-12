@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[AdReason]
     }
     
-    extension [Self <: AdReason](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdReason] (val x: Self) extends AnyVal {
       
       inline def setAdReason(value: EventReasonEnum): Self = StObject.set(x, "adReason", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[AdReasonAdStatus]
     }
     
-    extension [Self <: AdReasonAdStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdReasonAdStatus] (val x: Self) extends AnyVal {
       
       inline def setAdReason(value: EventReasonEnum): Self = StObject.set(x, "adReason", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object anon {
       __obj.asInstanceOf[AdStatus]
     }
     
-    extension [Self <: AdStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdStatus] (val x: Self) extends AnyVal {
       
       inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
@@ -114,7 +117,8 @@ object anon {
       __obj.asInstanceOf[AdStatusPConnection]
     }
     
-    extension [Self <: AdStatusPConnection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdStatusPConnection] (val x: Self) extends AnyVal {
       
       inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
@@ -144,7 +148,8 @@ object anon {
       __obj.asInstanceOf[CFields]
     }
     
-    extension [Self <: CFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CFields] (val x: Self) extends AnyVal {
       
       inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
@@ -186,7 +191,8 @@ object anon {
       __obj.asInstanceOf[CRecords]
     }
     
-    extension [Self <: CRecords](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CRecords] (val x: Self) extends AnyVal {
       
       inline def setAdReason(value: EventReasonEnum): Self = StObject.set(x, "adReason", value.asInstanceOf[js.Any])
       
@@ -218,7 +224,8 @@ object anon {
       __obj.asInstanceOf[FMoreData]
     }
     
-    extension [Self <: FMoreData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FMoreData] (val x: Self) extends AnyVal {
       
       inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
@@ -248,7 +255,8 @@ object anon {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
@@ -280,7 +288,8 @@ object anon {
       __obj.asInstanceOf[MaxProgress]
     }
     
-    extension [Self <: MaxProgress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxProgress] (val x: Self) extends AnyVal {
       
       inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
@@ -307,7 +316,8 @@ object anon {
       __obj.asInstanceOf[PConnection]
     }
     
-    extension [Self <: PConnection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PConnection] (val x: Self) extends AnyVal {
       
       inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
@@ -335,7 +345,8 @@ object anon {
       __obj.asInstanceOf[PError]
     }
     
-    extension [Self <: PError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PError] (val x: Self) extends AnyVal {
       
       inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
@@ -365,7 +376,8 @@ object anon {
       __obj.asInstanceOf[PRecordset]
     }
     
-    extension [Self <: PRecordset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PRecordset] (val x: Self) extends AnyVal {
       
       inline def setAdReason(value: EventReasonEnum): Self = StObject.set(x, "adReason", value.asInstanceOf[js.Any])
       

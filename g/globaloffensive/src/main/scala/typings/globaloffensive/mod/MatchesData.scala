@@ -27,7 +27,8 @@ object MatchesData {
     __obj.asInstanceOf[MatchesData]
   }
   
-  extension [Self <: MatchesData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchesData] (val x: Self) extends AnyVal {
     
     inline def setAccountid(value: Double): Self = StObject.set(x, "accountid", value.asInstanceOf[js.Any])
     

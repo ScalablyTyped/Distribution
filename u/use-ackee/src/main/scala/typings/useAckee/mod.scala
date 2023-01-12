@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[ServerDetails]
     }
     
-    extension [Self <: ServerDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerDetails] (val x: Self) extends AnyVal {
       
       inline def setDomainId(value: String): Self = StObject.set(x, "domainId", value.asInstanceOf[js.Any])
       

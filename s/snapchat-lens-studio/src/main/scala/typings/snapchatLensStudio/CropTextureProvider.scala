@@ -27,7 +27,8 @@ object CropTextureProvider {
     __obj.asInstanceOf[CropTextureProvider]
   }
   
-  extension [Self <: CropTextureProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CropTextureProvider] (val x: Self) extends AnyVal {
     
     inline def setInputTexture(value: Texture): Self = StObject.set(x, "inputTexture", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object MoonOptions {
     __obj.asInstanceOf[MoonOptions]
   }
   
-  extension [Self <: MoonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoonOptions] (val x: Self) extends AnyVal {
     
     inline def setMobileDevice(value: DeviceName): Self = StObject.set(x, "mobileDevice", value.asInstanceOf[js.Any])
     

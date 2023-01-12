@@ -20,7 +20,8 @@ object ComplexReference {
     __obj.asInstanceOf[ComplexReference]
   }
   
-  extension [Self <: ComplexReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComplexReference] (val x: Self) extends AnyVal {
     
     inline def setReference1(value: SingleReference): Self = StObject.set(x, "Reference1", value.asInstanceOf[js.Any])
     

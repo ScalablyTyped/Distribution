@@ -37,7 +37,8 @@ object TraceCategoriesAndOptions {
     __obj.asInstanceOf[TraceCategoriesAndOptions]
   }
   
-  extension [Self <: TraceCategoriesAndOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TraceCategoriesAndOptions] (val x: Self) extends AnyVal {
     
     inline def setCategoryFilter(value: String): Self = StObject.set(x, "categoryFilter", value.asInstanceOf[js.Any])
     

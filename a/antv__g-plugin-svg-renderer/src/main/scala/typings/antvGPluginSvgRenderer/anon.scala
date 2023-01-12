@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[PartialSVGRendererPluginO]
     }
     
-    extension [Self <: PartialSVGRendererPluginO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSVGRendererPluginO] (val x: Self) extends AnyVal {
       
       inline def setOutputSVGElementId(value: Boolean): Self = StObject.set(x, "outputSVGElementId", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object ChatRatingChatEventData {
     __obj.asInstanceOf[ChatRatingChatEventData]
   }
   
-  extension [Self <: ChatRatingChatEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatRatingChatEventData] (val x: Self) extends AnyVal {
     
     inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
     

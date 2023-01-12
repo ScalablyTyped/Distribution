@@ -47,7 +47,8 @@ object AsyncLoop {
     __obj.asInstanceOf[AsyncLoop]
   }
   
-  extension [Self <: AsyncLoop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncLoop] (val x: Self) extends AnyVal {
     
     inline def setBreakLoop(value: () => Unit): Self = StObject.set(x, "breakLoop", js.Any.fromFunction0(value))
     

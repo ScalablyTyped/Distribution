@@ -105,7 +105,8 @@ object Contacts {
       __obj.asInstanceOf[b2Contact]
     }
     
-    extension [Self <: b2Contact](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: b2Contact] (val x: Self) extends AnyVal {
       
       inline def setFlagForFiltering(value: () => Unit): Self = StObject.set(x, "FlagForFiltering", js.Any.fromFunction0(value))
       
@@ -162,7 +163,8 @@ object Contacts {
       __obj.asInstanceOf[b2ContactEdge]
     }
     
-    extension [Self <: b2ContactEdge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: b2ContactEdge] (val x: Self) extends AnyVal {
       
       inline def setContact(value: b2Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
       
@@ -226,7 +228,8 @@ object Contacts {
       __obj.asInstanceOf[b2ContactResult]
     }
     
-    extension [Self <: b2ContactResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: b2ContactResult] (val x: Self) extends AnyVal {
       
       inline def setId(value: b2ContactID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

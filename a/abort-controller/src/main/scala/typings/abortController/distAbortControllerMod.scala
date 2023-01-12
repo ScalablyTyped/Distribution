@@ -68,7 +68,8 @@ object distAbortControllerMod {
       __obj.asInstanceOf[EventAttributes]
     }
     
-    extension [Self <: EventAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventAttributes] (val x: Self) extends AnyVal {
       
       inline def setOnabort(value: Any): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
     }
@@ -85,7 +86,8 @@ object distAbortControllerMod {
       __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: Events](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: Any): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     }

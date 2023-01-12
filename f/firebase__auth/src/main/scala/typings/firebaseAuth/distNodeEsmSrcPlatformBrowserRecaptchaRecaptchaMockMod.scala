@@ -100,7 +100,8 @@ object distNodeEsmSrcPlatformBrowserRecaptchaRecaptchaMockMod {
       __obj.asInstanceOf[Widget]
     }
     
-    extension [Self <: Widget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Widget] (val x: Self) extends AnyVal {
       
       inline def setDelete(value: () => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       

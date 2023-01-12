@@ -18,7 +18,8 @@ object Podium {
     __obj.asInstanceOf[Podium]
   }
   
-  extension [Self <: Podium](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Podium] (val x: Self) extends AnyVal {
     
     inline def setPodiumMedalType(value: gold | silver | bronze): Self = StObject.set(x, "podiumMedalType", value.asInstanceOf[js.Any])
     

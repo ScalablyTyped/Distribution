@@ -34,7 +34,8 @@ object Lane {
     __obj.asInstanceOf[Lane]
   }
   
-  extension [Self <: Lane](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lane] (val x: Self) extends AnyVal {
     
     inline def setChildLaneSet(value: LaneSet): Self = StObject.set(x, "childLaneSet", value.asInstanceOf[js.Any])
     

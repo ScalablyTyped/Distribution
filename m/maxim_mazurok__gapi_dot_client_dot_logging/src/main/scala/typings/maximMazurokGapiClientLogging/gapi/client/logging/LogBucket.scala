@@ -56,7 +56,8 @@ object LogBucket {
     __obj.asInstanceOf[LogBucket]
   }
   
-  extension [Self <: LogBucket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogBucket] (val x: Self) extends AnyVal {
     
     inline def setCmekSettings(value: CmekSettings): Self = StObject.set(x, "cmekSettings", value.asInstanceOf[js.Any])
     

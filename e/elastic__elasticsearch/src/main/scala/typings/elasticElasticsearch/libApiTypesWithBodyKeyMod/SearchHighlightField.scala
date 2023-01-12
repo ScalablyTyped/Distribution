@@ -21,7 +21,8 @@ object SearchHighlightField {
     __obj.asInstanceOf[SearchHighlightField]
   }
   
-  extension [Self <: SearchHighlightField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchHighlightField] (val x: Self) extends AnyVal {
     
     inline def setAnalyzer(value: AnalysisAnalyzer): Self = StObject.set(x, "analyzer", value.asInstanceOf[js.Any])
     

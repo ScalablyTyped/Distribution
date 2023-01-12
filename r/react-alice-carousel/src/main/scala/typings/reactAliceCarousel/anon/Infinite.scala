@@ -19,7 +19,8 @@ object Infinite {
     __obj.asInstanceOf[Infinite]
   }
   
-  extension [Self <: Infinite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Infinite] (val x: Self) extends AnyVal {
     
     inline def setInfinite(value: Boolean): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
     

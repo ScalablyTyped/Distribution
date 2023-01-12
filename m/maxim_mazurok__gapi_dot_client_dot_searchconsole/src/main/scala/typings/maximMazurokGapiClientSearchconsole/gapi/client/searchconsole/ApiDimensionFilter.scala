@@ -19,7 +19,8 @@ object ApiDimensionFilter {
     __obj.asInstanceOf[ApiDimensionFilter]
   }
   
-  extension [Self <: ApiDimensionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiDimensionFilter] (val x: Self) extends AnyVal {
     
     inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     

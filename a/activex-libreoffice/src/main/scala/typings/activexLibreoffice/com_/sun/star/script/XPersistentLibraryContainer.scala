@@ -84,7 +84,8 @@ object XPersistentLibraryContainer {
     __obj.asInstanceOf[XPersistentLibraryContainer]
   }
   
-  extension [Self <: XPersistentLibraryContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPersistentLibraryContainer] (val x: Self) extends AnyVal {
     
     inline def setContainerLocationName(value: String): Self = StObject.set(x, "ContainerLocationName", value.asInstanceOf[js.Any])
     

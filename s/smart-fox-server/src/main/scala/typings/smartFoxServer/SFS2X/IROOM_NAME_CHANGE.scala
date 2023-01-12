@@ -18,7 +18,8 @@ object IROOM_NAME_CHANGE {
     __obj.asInstanceOf[IROOM_NAME_CHANGE]
   }
   
-  extension [Self <: IROOM_NAME_CHANGE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IROOM_NAME_CHANGE] (val x: Self) extends AnyVal {
     
     inline def setOldName(value: String): Self = StObject.set(x, "oldName", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object SharpenOptions {
     __obj.asInstanceOf[SharpenOptions]
   }
   
-  extension [Self <: SharpenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharpenOptions] (val x: Self) extends AnyVal {
     
     inline def setM1(value: Double): Self = StObject.set(x, "m1", value.asInstanceOf[js.Any])
     

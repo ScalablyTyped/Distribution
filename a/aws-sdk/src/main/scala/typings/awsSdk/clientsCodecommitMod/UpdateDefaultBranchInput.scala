@@ -23,7 +23,8 @@ object UpdateDefaultBranchInput {
     __obj.asInstanceOf[UpdateDefaultBranchInput]
   }
   
-  extension [Self <: UpdateDefaultBranchInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDefaultBranchInput] (val x: Self) extends AnyVal {
     
     inline def setDefaultBranchName(value: BranchName): Self = StObject.set(x, "defaultBranchName", value.asInstanceOf[js.Any])
     

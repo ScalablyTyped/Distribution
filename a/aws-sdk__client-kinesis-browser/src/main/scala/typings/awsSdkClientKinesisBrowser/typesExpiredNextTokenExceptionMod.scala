@@ -23,7 +23,8 @@ object typesExpiredNextTokenExceptionMod {
       __obj.asInstanceOf[ExpiredNextTokenException]
     }
     
-    extension [Self <: ExpiredNextTokenException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpiredNextTokenException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ExpiredNextTokenException
@@ -45,7 +46,8 @@ object typesExpiredNextTokenExceptionMod {
       __obj.asInstanceOf[ExpiredNextTokenExceptionDetails]
     }
     
-    extension [Self <: ExpiredNextTokenExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpiredNextTokenExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

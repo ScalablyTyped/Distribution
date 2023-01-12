@@ -38,7 +38,8 @@ object AssumedRole {
     __obj.asInstanceOf[AssumedRole]
   }
   
-  extension [Self <: AssumedRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssumedRole] (val x: Self) extends AnyVal {
     
     inline def setAccessKeyId(value: string): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
     

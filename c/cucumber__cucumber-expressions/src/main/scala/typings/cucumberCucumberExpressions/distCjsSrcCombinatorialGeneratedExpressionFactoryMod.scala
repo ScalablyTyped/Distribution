@@ -53,7 +53,8 @@ object distCjsSrcCombinatorialGeneratedExpressionFactoryMod {
       __obj.asInstanceOf[CombinatorialGeneratedExpressionFactory]
     }
     
-    extension [Self <: CombinatorialGeneratedExpressionFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CombinatorialGeneratedExpressionFactory] (val x: Self) extends AnyVal {
       
       inline def setExpressionTemplate(value: Any): Self = StObject.set(x, "expressionTemplate", value.asInstanceOf[js.Any])
       

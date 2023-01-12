@@ -38,7 +38,8 @@ object ReadonlySchema {
     __obj.asInstanceOf[ReadonlySchema]
   }
   
-  extension [Self <: ReadonlySchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlySchema] (val x: Self) extends AnyVal {
     
     inline def setCompat(value: js.Array[CollectionTag | ScalarTag]): Self = StObject.set(x, "compat", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object SidewalkEventNotificationConfigurations {
     __obj.asInstanceOf[SidewalkEventNotificationConfigurations]
   }
   
-  extension [Self <: SidewalkEventNotificationConfigurations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SidewalkEventNotificationConfigurations] (val x: Self) extends AnyVal {
     
     inline def setAmazonIdEventTopic(value: EventNotificationTopicStatus): Self = StObject.set(x, "AmazonIdEventTopic", value.asInstanceOf[js.Any])
     

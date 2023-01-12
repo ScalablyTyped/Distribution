@@ -20,7 +20,8 @@ object ExistingSansProvider {
     __obj.asInstanceOf[ExistingSansProvider]
   }
   
-  extension [Self <: ExistingSansProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExistingSansProvider] (val x: Self) extends AnyVal {
     
     inline def setUseExisting(value: Any): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
   }

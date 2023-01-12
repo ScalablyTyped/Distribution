@@ -26,7 +26,8 @@ object PasswordRealmResponse {
     __obj.asInstanceOf[PasswordRealmResponse]
   }
   
-  extension [Self <: PasswordRealmResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordRealmResponse] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     

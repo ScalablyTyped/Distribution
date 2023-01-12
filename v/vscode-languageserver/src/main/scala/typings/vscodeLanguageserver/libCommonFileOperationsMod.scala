@@ -47,7 +47,8 @@ object libCommonFileOperationsMod {
       __obj.asInstanceOf[FileOperationsFeatureShape]
     }
     
-    extension [Self <: FileOperationsFeatureShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileOperationsFeatureShape] (val x: Self) extends AnyVal {
       
       inline def setOnDidCreateFiles(value: NotificationHandler[CreateFilesParams] => Disposable): Self = StObject.set(x, "onDidCreateFiles", js.Any.fromFunction1(value))
       

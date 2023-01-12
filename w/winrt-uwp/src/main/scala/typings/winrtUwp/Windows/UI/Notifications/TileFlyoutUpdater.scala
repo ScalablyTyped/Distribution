@@ -27,7 +27,8 @@ object TileFlyoutUpdater {
     __obj.asInstanceOf[TileFlyoutUpdater]
   }
   
-  extension [Self <: TileFlyoutUpdater](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileFlyoutUpdater] (val x: Self) extends AnyVal {
     
     inline def setClear(value: Any): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     

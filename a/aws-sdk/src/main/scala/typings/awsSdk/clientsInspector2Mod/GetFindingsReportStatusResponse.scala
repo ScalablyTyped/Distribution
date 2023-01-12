@@ -43,7 +43,8 @@ object GetFindingsReportStatusResponse {
     __obj.asInstanceOf[GetFindingsReportStatusResponse]
   }
   
-  extension [Self <: GetFindingsReportStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFindingsReportStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: Destination): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

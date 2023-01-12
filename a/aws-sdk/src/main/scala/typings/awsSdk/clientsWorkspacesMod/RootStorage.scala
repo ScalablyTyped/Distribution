@@ -18,7 +18,8 @@ object RootStorage {
     __obj.asInstanceOf[RootStorage]
   }
   
-  extension [Self <: RootStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RootStorage] (val x: Self) extends AnyVal {
     
     inline def setCapacity(value: NonEmptyString): Self = StObject.set(x, "Capacity", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object VisualConstructorOptions {
     __obj.asInstanceOf[VisualConstructorOptions]
   }
   
-  extension [Self <: VisualConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisualConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setModule(value: Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     

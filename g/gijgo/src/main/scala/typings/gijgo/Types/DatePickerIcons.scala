@@ -16,7 +16,8 @@ object DatePickerIcons {
     __obj.asInstanceOf[DatePickerIcons]
   }
   
-  extension [Self <: DatePickerIcons](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatePickerIcons] (val x: Self) extends AnyVal {
     
     inline def setRightIcon(value: String): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
     

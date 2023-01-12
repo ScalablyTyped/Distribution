@@ -29,7 +29,8 @@ object JobInformation {
     __obj.asInstanceOf[JobInformation]
   }
   
-  extension [Self <: JobInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobInformation] (val x: Self) extends AnyVal {
     
     inline def setCron(value: String): Self = StObject.set(x, "cron", value.asInstanceOf[js.Any])
     

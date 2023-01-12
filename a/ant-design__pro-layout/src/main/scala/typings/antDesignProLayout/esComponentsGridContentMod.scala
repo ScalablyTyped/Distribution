@@ -39,7 +39,8 @@ object esComponentsGridContentMod {
       __obj.asInstanceOf[GridContentProps]
     }
     
-    extension [Self <: GridContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridContentProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

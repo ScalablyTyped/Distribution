@@ -23,7 +23,8 @@ object DeliveryOptions {
     __obj.asInstanceOf[DeliveryOptions]
   }
   
-  extension [Self <: DeliveryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliveryOptions] (val x: Self) extends AnyVal {
     
     inline def setSendingPoolName(value: PoolName): Self = StObject.set(x, "SendingPoolName", value.asInstanceOf[js.Any])
     

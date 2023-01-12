@@ -25,7 +25,8 @@ object Pass {
     __obj.asInstanceOf[Pass]
   }
   
-  extension [Self <: Pass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pass] (val x: Self) extends AnyVal {
     
     inline def setPass(value: js.Array[Hit]): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
     

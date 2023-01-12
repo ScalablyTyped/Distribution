@@ -35,7 +35,8 @@ object AdornmentConfig {
     __obj.asInstanceOf[AdornmentConfig]
   }
   
-  extension [Self <: AdornmentConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdornmentConfig] (val x: Self) extends AnyVal {
     
     inline def setAdornmentConfig(
       value: js.Array[

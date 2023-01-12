@@ -26,7 +26,8 @@ object BoxLegendSymbolProps {
     __obj.asInstanceOf[BoxLegendSymbolProps]
   }
   
-  extension [Self <: BoxLegendSymbolProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoxLegendSymbolProps] (val x: Self) extends AnyVal {
     
     inline def setSymbolBorderColor(value: String): Self = StObject.set(x, "symbolBorderColor", value.asInstanceOf[js.Any])
     

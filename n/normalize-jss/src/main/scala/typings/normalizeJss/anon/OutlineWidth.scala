@@ -15,7 +15,8 @@ object OutlineWidth {
     __obj.asInstanceOf[OutlineWidth]
   }
   
-  extension [Self <: OutlineWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutlineWidth] (val x: Self) extends AnyVal {
     
     inline def setOutlineWidth(value: Double): Self = StObject.set(x, "outlineWidth", value.asInstanceOf[js.Any])
   }

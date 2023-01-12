@@ -15,7 +15,8 @@ object JStorageOptions {
     __obj.asInstanceOf[JStorageOptions]
   }
   
-  extension [Self <: JStorageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JStorageOptions] (val x: Self) extends AnyVal {
     
     inline def setTTL(value: Double): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
   }

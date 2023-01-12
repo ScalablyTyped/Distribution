@@ -25,7 +25,8 @@ object UpdateConfig {
     __obj.asInstanceOf[UpdateConfig]
   }
   
-  extension [Self <: UpdateConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateConfig] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "Delay", value.asInstanceOf[js.Any])
     

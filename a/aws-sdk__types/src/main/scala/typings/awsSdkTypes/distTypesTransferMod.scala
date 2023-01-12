@@ -33,7 +33,8 @@ object distTypesTransferMod {
       __obj.asInstanceOf[RequestHandlerMetadata]
     }
     
-    extension [Self <: RequestHandlerMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestHandlerMetadata] (val x: Self) extends AnyVal {
       
       inline def setHandlerProtocol(value: String): Self = StObject.set(x, "handlerProtocol", value.asInstanceOf[js.Any])
     }
@@ -50,7 +51,8 @@ object distTypesTransferMod {
       __obj.asInstanceOf[RequestHandlerOutput[ResponseType]]
     }
     
-    extension [Self <: RequestHandlerOutput[?], ResponseType](x: Self & RequestHandlerOutput[ResponseType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestHandlerOutput[?], ResponseType] (val x: Self & RequestHandlerOutput[ResponseType]) extends AnyVal {
       
       inline def setResponse(value: ResponseType): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }

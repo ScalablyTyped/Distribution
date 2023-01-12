@@ -18,7 +18,8 @@ object StartSchemaCreationResponse {
     __obj.asInstanceOf[StartSchemaCreationResponse]
   }
   
-  extension [Self <: StartSchemaCreationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartSchemaCreationResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: SchemaStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

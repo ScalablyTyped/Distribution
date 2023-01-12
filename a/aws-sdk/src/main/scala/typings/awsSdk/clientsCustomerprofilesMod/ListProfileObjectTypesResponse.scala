@@ -23,7 +23,8 @@ object ListProfileObjectTypesResponse {
     __obj.asInstanceOf[ListProfileObjectTypesResponse]
   }
   
-  extension [Self <: ListProfileObjectTypesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProfileObjectTypesResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: ProfileObjectTypeList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

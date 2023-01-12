@@ -55,7 +55,8 @@ object libTypescriptElementsLineMod {
       __obj.asInstanceOf[LineProps]
     }
     
-    extension [Self <: LineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineProps] (val x: Self) extends AnyVal {
       
       inline def setOpacity(value: NumberProp): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object Features {
     __obj.asInstanceOf[Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages, PNotebooks]]
   }
   
-  extension [Self <: Features[?, ?, ?, ?, ?, ?, ?, ?], PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages, PNotebooks](x: Self & (Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages, PNotebooks])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Features[?, ?, ?, ?, ?, ?, ?, ?], PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages, PNotebooks] (val x: Self & (Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages, PNotebooks])) extends AnyVal {
     
     inline def setClient(value: /* Base */ Instantiable0[RemoteClient] => Instantiable0[RemoteClient & PClient]): Self = StObject.set(x, "client", js.Any.fromFunction1(value))
     

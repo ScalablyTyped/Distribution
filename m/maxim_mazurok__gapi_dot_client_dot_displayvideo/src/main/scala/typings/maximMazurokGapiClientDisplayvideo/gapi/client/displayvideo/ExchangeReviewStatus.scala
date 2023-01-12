@@ -19,7 +19,8 @@ object ExchangeReviewStatus {
     __obj.asInstanceOf[ExchangeReviewStatus]
   }
   
-  extension [Self <: ExchangeReviewStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExchangeReviewStatus] (val x: Self) extends AnyVal {
     
     inline def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
     

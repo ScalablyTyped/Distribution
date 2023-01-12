@@ -23,7 +23,8 @@ object Fields {
       __obj.asInstanceOf[CreateTicketField]
     }
     
-    extension [Self <: CreateTicketField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateTicketField] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
@@ -106,7 +107,8 @@ object Fields {
       __obj.asInstanceOf[TicketField]
     }
     
-    extension [Self <: TicketField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TicketField] (val x: Self) extends AnyVal {
       
       inline def setActive(value: `true`): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Amqp]
     }
     
-    extension [Self <: Amqp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Amqp] (val x: Self) extends AnyVal {
       
       inline def setAmqp(value: Any): Self = StObject.set(x, "amqp", value.asInstanceOf[js.Any])
       

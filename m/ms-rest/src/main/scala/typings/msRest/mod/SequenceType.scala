@@ -20,7 +20,8 @@ object SequenceType {
     __obj.asInstanceOf[SequenceType]
   }
   
-  extension [Self <: SequenceType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SequenceType] (val x: Self) extends AnyVal {
     
     inline def setType(value: Element): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

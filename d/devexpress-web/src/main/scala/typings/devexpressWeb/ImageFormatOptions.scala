@@ -28,7 +28,8 @@ object ImageFormatOptions {
     __obj.asInstanceOf[ImageFormatOptions]
   }
   
-  extension [Self <: ImageFormatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageFormatOptions] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     

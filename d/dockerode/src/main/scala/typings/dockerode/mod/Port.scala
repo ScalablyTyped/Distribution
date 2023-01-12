@@ -21,7 +21,8 @@ object Port {
     __obj.asInstanceOf[Port]
   }
   
-  extension [Self <: Port](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Port] (val x: Self) extends AnyVal {
     
     inline def setIP(value: String): Self = StObject.set(x, "IP", value.asInstanceOf[js.Any])
     

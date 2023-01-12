@@ -24,7 +24,8 @@ object Group_ {
     __obj.asInstanceOf[Group_]
   }
   
-  extension [Self <: Group_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Group_] (val x: Self) extends AnyVal {
     
     inline def setBreak(value: Boolean): Self = StObject.set(x, "break", value.asInstanceOf[js.Any])
     

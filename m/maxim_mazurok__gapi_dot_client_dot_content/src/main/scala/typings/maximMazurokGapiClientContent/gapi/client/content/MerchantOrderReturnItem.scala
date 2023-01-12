@@ -46,7 +46,8 @@ object MerchantOrderReturnItem {
     __obj.asInstanceOf[MerchantOrderReturnItem]
   }
   
-  extension [Self <: MerchantOrderReturnItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MerchantOrderReturnItem] (val x: Self) extends AnyVal {
     
     inline def setCustomerReturnReason(value: CustomerReturnReason): Self = StObject.set(x, "customerReturnReason", value.asInstanceOf[js.Any])
     

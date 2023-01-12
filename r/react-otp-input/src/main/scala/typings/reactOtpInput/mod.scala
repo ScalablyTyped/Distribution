@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[OTPInputProps]
     }
     
-    extension [Self <: OTPInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OTPInputProps] (val x: Self) extends AnyVal {
       
       inline def setContainerStyle(value: String | CSSProperties): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object PartialClassNameMapStepCl {
     __obj.asInstanceOf[PartialClassNameMapStepCl]
   }
   
-  extension [Self <: PartialClassNameMapStepCl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapStepCl] (val x: Self) extends AnyVal {
     
     inline def setAlternativeLabel(value: String): Self = StObject.set(x, "alternativeLabel", value.asInstanceOf[js.Any])
     

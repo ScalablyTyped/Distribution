@@ -53,7 +53,8 @@ object DescribeNodeConfigurationOptionsMessage {
     __obj.asInstanceOf[DescribeNodeConfigurationOptionsMessage]
   }
   
-  extension [Self <: DescribeNodeConfigurationOptionsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNodeConfigurationOptionsMessage] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: ActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     

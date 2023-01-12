@@ -33,7 +33,8 @@ object ViewBillingRequest {
     __obj.asInstanceOf[ViewBillingRequest]
   }
   
-  extension [Self <: ViewBillingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewBillingRequest] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: js.Date): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object MaxAgeRule {
     __obj.asInstanceOf[MaxAgeRule]
   }
   
-  extension [Self <: MaxAgeRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxAgeRule] (val x: Self) extends AnyVal {
     
     inline def setDeleteSourceFromS3(value: BoxedBoolean): Self = StObject.set(x, "DeleteSourceFromS3", value.asInstanceOf[js.Any])
     

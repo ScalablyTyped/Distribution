@@ -27,7 +27,8 @@ object IgnorePunct {
     __obj.asInstanceOf[IgnorePunct]
   }
   
-  extension [Self <: IgnorePunct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnorePunct] (val x: Self) extends AnyVal {
     
     inline def setIgnorePunct(value: Boolean): Self = StObject.set(x, "ignorePunct", value.asInstanceOf[js.Any])
     

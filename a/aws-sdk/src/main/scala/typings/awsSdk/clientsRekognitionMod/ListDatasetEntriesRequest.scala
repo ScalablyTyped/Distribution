@@ -48,7 +48,8 @@ object ListDatasetEntriesRequest {
     __obj.asInstanceOf[ListDatasetEntriesRequest]
   }
   
-  extension [Self <: ListDatasetEntriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDatasetEntriesRequest] (val x: Self) extends AnyVal {
     
     inline def setContainsLabels(value: DatasetLabels): Self = StObject.set(x, "ContainsLabels", value.asInstanceOf[js.Any])
     

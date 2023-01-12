@@ -43,7 +43,8 @@ object ListBackupsInput {
     __obj.asInstanceOf[ListBackupsInput]
   }
   
-  extension [Self <: ListBackupsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBackupsInput] (val x: Self) extends AnyVal {
     
     inline def setBackupType(value: BackupTypeFilter): Self = StObject.set(x, "BackupType", value.asInstanceOf[js.Any])
     

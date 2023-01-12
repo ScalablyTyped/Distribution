@@ -189,7 +189,8 @@ object mod {
       __obj.asInstanceOf[AbstractPriorityQueue[T]]
     }
     
-    extension [Self <: AbstractPriorityQueue[?], T](x: Self & AbstractPriorityQueue[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractPriorityQueue[?], T] (val x: Self & AbstractPriorityQueue[T]) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
@@ -239,7 +240,8 @@ object mod {
       __obj.asInstanceOf[PriorityQueueOptions[T]]
     }
     
-    extension [Self <: PriorityQueueOptions[?], T](x: Self & PriorityQueueOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PriorityQueueOptions[?], T] (val x: Self & PriorityQueueOptions[T]) extends AnyVal {
       
       inline def setComparator(value: (/* a */ T, /* b */ T) => Double): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
       

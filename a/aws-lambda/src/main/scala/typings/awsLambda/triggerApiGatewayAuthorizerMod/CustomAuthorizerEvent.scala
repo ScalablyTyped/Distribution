@@ -49,7 +49,8 @@ object CustomAuthorizerEvent {
     __obj.asInstanceOf[CustomAuthorizerEvent]
   }
   
-  extension [Self <: CustomAuthorizerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomAuthorizerEvent] (val x: Self) extends AnyVal {
     
     inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ValueDef {
     __obj.asInstanceOf[ValueDef[V]]
   }
   
-  extension [Self <: ValueDef[?], V /* <: Value[ExprRef | SignalRef] */](x: Self & ValueDef[V]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueDef[?], V /* <: Value[ExprRef | SignalRef] */] (val x: Self & ValueDef[V]) extends AnyVal {
     
     inline def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

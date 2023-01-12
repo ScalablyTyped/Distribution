@@ -93,7 +93,8 @@ object AwsEc2VpnConnectionOptionsTunnelOptionsDetails {
     __obj.asInstanceOf[AwsEc2VpnConnectionOptionsTunnelOptionsDetails]
   }
   
-  extension [Self <: AwsEc2VpnConnectionOptionsTunnelOptionsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2VpnConnectionOptionsTunnelOptionsDetails] (val x: Self) extends AnyVal {
     
     inline def setDpdTimeoutSeconds(value: Integer): Self = StObject.set(x, "DpdTimeoutSeconds", value.asInstanceOf[js.Any])
     

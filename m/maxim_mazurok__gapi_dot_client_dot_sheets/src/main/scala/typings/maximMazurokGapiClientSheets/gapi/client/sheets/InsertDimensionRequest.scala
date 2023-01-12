@@ -24,7 +24,8 @@ object InsertDimensionRequest {
     __obj.asInstanceOf[InsertDimensionRequest]
   }
   
-  extension [Self <: InsertDimensionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertDimensionRequest] (val x: Self) extends AnyVal {
     
     inline def setInheritFromBefore(value: Boolean): Self = StObject.set(x, "inheritFromBefore", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object XMimeContentTypeFactory {
     __obj.asInstanceOf[XMimeContentTypeFactory]
   }
   
-  extension [Self <: XMimeContentTypeFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMimeContentTypeFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateMimeContentType(value: String => XMimeContentType): Self = StObject.set(x, "createMimeContentType", js.Any.fromFunction1(value))
   }

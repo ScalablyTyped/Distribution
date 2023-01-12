@@ -16,7 +16,8 @@ object OmitX500Namearray {
     __obj.asInstanceOf[OmitX500Namearray]
   }
   
-  extension [Self <: OmitX500Namearray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitX500Namearray] (val x: Self) extends AnyVal {
     
     inline def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object SigningConfiguration {
     __obj.asInstanceOf[SigningConfiguration]
   }
   
-  extension [Self <: SigningConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SigningConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEncryptionAlgorithmOptions(value: EncryptionAlgorithmOptions): Self = StObject.set(x, "encryptionAlgorithmOptions", value.asInstanceOf[js.Any])
     

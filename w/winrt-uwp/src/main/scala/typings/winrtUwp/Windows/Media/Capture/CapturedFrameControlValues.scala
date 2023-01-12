@@ -74,7 +74,8 @@ object CapturedFrameControlValues {
     __obj.asInstanceOf[CapturedFrameControlValues]
   }
   
-  extension [Self <: CapturedFrameControlValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapturedFrameControlValues] (val x: Self) extends AnyVal {
     
     inline def setExposure(value: Double): Self = StObject.set(x, "exposure", value.asInstanceOf[js.Any])
     

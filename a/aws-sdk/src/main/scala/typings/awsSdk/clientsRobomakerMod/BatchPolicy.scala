@@ -23,7 +23,8 @@ object BatchPolicy {
     __obj.asInstanceOf[BatchPolicy]
   }
   
-  extension [Self <: BatchPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchPolicy] (val x: Self) extends AnyVal {
     
     inline def setMaxConcurrency(value: MaxConcurrency): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
     

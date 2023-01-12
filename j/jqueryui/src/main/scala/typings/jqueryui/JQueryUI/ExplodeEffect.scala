@@ -15,7 +15,8 @@ object ExplodeEffect {
     __obj.asInstanceOf[ExplodeEffect]
   }
   
-  extension [Self <: ExplodeEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExplodeEffect] (val x: Self) extends AnyVal {
     
     inline def setPieces(value: Double): Self = StObject.set(x, "pieces", value.asInstanceOf[js.Any])
     

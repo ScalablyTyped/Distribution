@@ -127,7 +127,8 @@ object distFirestoreSrcLocalLocalStoreImplMod {
       __obj.asInstanceOf[LocalWriteResult]
     }
     
-    extension [Self <: LocalWriteResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalWriteResult] (val x: Self) extends AnyVal {
       
       inline def setBatchId(value: BatchId): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
       
@@ -148,7 +149,8 @@ object distFirestoreSrcLocalLocalStoreImplMod {
       __obj.asInstanceOf[QueryResult]
     }
     
-    extension [Self <: QueryResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryResult] (val x: Self) extends AnyVal {
       
       inline def setDocuments(value: DocumentMap_): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
       
@@ -175,7 +177,8 @@ object distFirestoreSrcLocalLocalStoreImplMod {
       __obj.asInstanceOf[UserChangeResult]
     }
     
-    extension [Self <: UserChangeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserChangeResult] (val x: Self) extends AnyVal {
       
       inline def setAddedBatchIds(value: js.Array[BatchId]): Self = StObject.set(x, "addedBatchIds", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object AliasPathType {
     __obj.asInstanceOf[AliasPathType]
   }
   
-  extension [Self <: AliasPathType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AliasPathType] (val x: Self) extends AnyVal {
     
     inline def setApiVersions(value: js.Array[String]): Self = StObject.set(x, "apiVersions", value.asInstanceOf[js.Any])
     

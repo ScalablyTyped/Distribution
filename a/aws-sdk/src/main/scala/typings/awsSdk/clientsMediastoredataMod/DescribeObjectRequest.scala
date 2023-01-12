@@ -18,7 +18,8 @@ object DescribeObjectRequest {
     __obj.asInstanceOf[DescribeObjectRequest]
   }
   
-  extension [Self <: DescribeObjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeObjectRequest] (val x: Self) extends AnyVal {
     
     inline def setPath(value: PathNaming): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
   }

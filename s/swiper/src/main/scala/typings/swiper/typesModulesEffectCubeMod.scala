@@ -47,7 +47,8 @@ object typesModulesEffectCubeMod {
       __obj.asInstanceOf[CubeEffectOptions]
     }
     
-    extension [Self <: CubeEffectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CubeEffectOptions] (val x: Self) extends AnyVal {
       
       inline def setShadow(value: Boolean): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object CaptiveRecipientInformation {
     __obj.asInstanceOf[CaptiveRecipientInformation]
   }
   
-  extension [Self <: CaptiveRecipientInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptiveRecipientInformation] (val x: Self) extends AnyVal {
     
     inline def setCaptiveRecipients(
       value: js.Array[

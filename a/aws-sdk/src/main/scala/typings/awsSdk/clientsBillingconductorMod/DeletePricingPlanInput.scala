@@ -18,7 +18,8 @@ object DeletePricingPlanInput {
     __obj.asInstanceOf[DeletePricingPlanInput]
   }
   
-  extension [Self <: DeletePricingPlanInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePricingPlanInput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: PricingPlanArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
   }

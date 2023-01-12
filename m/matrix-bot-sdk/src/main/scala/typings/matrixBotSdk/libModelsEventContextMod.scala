@@ -43,7 +43,8 @@ object libModelsEventContextMod {
       __obj.asInstanceOf[EventContext]
     }
     
-    extension [Self <: EventContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventContext] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: js.Array[RoomEvent[RoomEventContent]]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       

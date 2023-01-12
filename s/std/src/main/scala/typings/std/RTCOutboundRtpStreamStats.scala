@@ -88,7 +88,8 @@ object RTCOutboundRtpStreamStats {
     __obj.asInstanceOf[RTCOutboundRtpStreamStats]
   }
   
-  extension [Self <: RTCOutboundRtpStreamStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCOutboundRtpStreamStats] (val x: Self) extends AnyVal {
     
     inline def setFirCount(value: Double): Self = StObject.set(x, "firCount", value.asInstanceOf[js.Any])
     

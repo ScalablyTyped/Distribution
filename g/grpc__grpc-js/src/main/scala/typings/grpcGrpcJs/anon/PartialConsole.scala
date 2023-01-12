@@ -54,7 +54,8 @@ object PartialConsole {
     __obj.asInstanceOf[PartialConsole]
   }
   
-  extension [Self <: PartialConsole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialConsole] (val x: Self) extends AnyVal {
     
     inline def setAssert(value: (/* condition */ Boolean, /* repeated */ scala.Any) => Unit): Self = StObject.set(x, "assert", js.Any.fromFunction2(value))
     

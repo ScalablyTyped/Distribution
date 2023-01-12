@@ -30,7 +30,8 @@ object enginesExtensionsEngineDotwebVRMod {
       __obj.asInstanceOf[IVRPresentationAttributes]
     }
     
-    extension [Self <: IVRPresentationAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IVRPresentationAttributes] (val x: Self) extends AnyVal {
       
       inline def setFoveationLevel(value: Double): Self = StObject.set(x, "foveationLevel", value.asInstanceOf[js.Any])
       
@@ -161,7 +162,8 @@ object enginesExtensionsEngineDotwebVRMod {
         __obj.asInstanceOf[Engine]
       }
       
-      extension [Self <: Engine](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Engine] (val x: Self) extends AnyVal {
         
         inline def setEnableVR(value: WebVROptions => Unit): Self = StObject.set(x, "enableVR", js.Any.fromFunction1(value))
         

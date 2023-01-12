@@ -23,7 +23,8 @@ object OpsItemDataValue {
     __obj.asInstanceOf[OpsItemDataValue]
   }
   
-  extension [Self <: OpsItemDataValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpsItemDataValue] (val x: Self) extends AnyVal {
     
     inline def setType(value: OpsItemDataType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object UnzipDecoder {
     __obj.asInstanceOf[UnzipDecoder]
   }
   
-  extension [Self <: UnzipDecoder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnzipDecoder] (val x: Self) extends AnyVal {
     
     inline def setOndata(value: (/* err */ js.Error, /* data */ js.typedarray.Uint8Array, /* final */ Boolean) => Unit): Self = StObject.set(x, "ondata", js.Any.fromFunction3(value))
     

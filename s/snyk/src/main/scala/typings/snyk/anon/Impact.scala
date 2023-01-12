@@ -19,7 +19,8 @@ object Impact {
     __obj.asInstanceOf[Impact]
   }
   
-  extension [Self <: Impact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Impact] (val x: Self) extends AnyVal {
     
     inline def setImpact(value: String): Self = StObject.set(x, "impact", value.asInstanceOf[js.Any])
     

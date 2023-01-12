@@ -33,7 +33,8 @@ object FirewallConfig {
     __obj.asInstanceOf[FirewallConfig]
   }
   
-  extension [Self <: FirewallConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirewallConfig] (val x: Self) extends AnyVal {
     
     inline def setFirewallFailOpen(value: FirewallFailOpenStatus): Self = StObject.set(x, "FirewallFailOpen", value.asInstanceOf[js.Any])
     

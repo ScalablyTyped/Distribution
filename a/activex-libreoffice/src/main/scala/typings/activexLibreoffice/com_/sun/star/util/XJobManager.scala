@@ -34,7 +34,8 @@ object XJobManager {
     __obj.asInstanceOf[XJobManager]
   }
   
-  extension [Self <: XJobManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XJobManager] (val x: Self) extends AnyVal {
     
     inline def setCancelAllJobs(value: () => Unit): Self = StObject.set(x, "cancelAllJobs", js.Any.fromFunction0(value))
     

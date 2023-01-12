@@ -72,7 +72,8 @@ object XCommandProcessor {
     __obj.asInstanceOf[XCommandProcessor]
   }
   
-  extension [Self <: XCommandProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCommandProcessor] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: Double => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
     

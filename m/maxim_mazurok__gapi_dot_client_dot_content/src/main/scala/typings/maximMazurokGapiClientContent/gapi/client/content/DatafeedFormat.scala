@@ -31,7 +31,8 @@ object DatafeedFormat {
     __obj.asInstanceOf[DatafeedFormat]
   }
   
-  extension [Self <: DatafeedFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatafeedFormat] (val x: Self) extends AnyVal {
     
     inline def setColumnDelimiter(value: String): Self = StObject.set(x, "columnDelimiter", value.asInstanceOf[js.Any])
     

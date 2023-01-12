@@ -16,7 +16,8 @@ object OtherRegionsSubscriptionOfferConfig {
     __obj.asInstanceOf[OtherRegionsSubscriptionOfferConfig]
   }
   
-  extension [Self <: OtherRegionsSubscriptionOfferConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtherRegionsSubscriptionOfferConfig] (val x: Self) extends AnyVal {
     
     inline def setOtherRegionsNewSubscriberAvailability(value: Boolean): Self = StObject.set(x, "otherRegionsNewSubscriberAvailability", value.asInstanceOf[js.Any])
     

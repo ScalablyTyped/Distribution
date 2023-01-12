@@ -55,7 +55,8 @@ object FeatureViewModelAbilities {
     __obj.asInstanceOf[FeatureViewModelAbilities]
   }
   
-  extension [Self <: FeatureViewModelAbilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureViewModelAbilities] (val x: Self) extends AnyVal {
     
     inline def setAttachmentsContent(value: Boolean): Self = StObject.set(x, "attachmentsContent", value.asInstanceOf[js.Any])
     

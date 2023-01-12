@@ -37,7 +37,8 @@ object TextHit {
     __obj.asInstanceOf[TextHit]
   }
   
-  extension [Self <: TextHit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextHit] (val x: Self) extends AnyVal {
     
     inline def setEntryIndex(value: Double): Self = StObject.set(x, "EntryIndex", value.asInstanceOf[js.Any])
     

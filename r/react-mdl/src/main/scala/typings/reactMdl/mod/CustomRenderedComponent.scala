@@ -16,7 +16,8 @@ object CustomRenderedComponent {
     __obj.asInstanceOf[CustomRenderedComponent]
   }
   
-  extension [Self <: CustomRenderedComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomRenderedComponent] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: String | Element | js.Function): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object IWebXRControllerMovementOptions {
     __obj.asInstanceOf[IWebXRControllerMovementOptions]
   }
   
-  extension [Self <: IWebXRControllerMovementOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRControllerMovementOptions] (val x: Self) extends AnyVal {
     
     inline def setCustomRegistrationConfigurations(value: js.Array[WebXRControllerMovementRegistrationConfiguration]): Self = StObject.set(x, "customRegistrationConfigurations", value.asInstanceOf[js.Any])
     

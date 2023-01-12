@@ -24,7 +24,8 @@ object SlotElicitationStyle {
     __obj.asInstanceOf[SlotElicitationStyle]
   }
   
-  extension [Self <: SlotElicitationStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotElicitationStyle] (val x: Self) extends AnyVal {
     
     inline def setSlotElicitationStyle(value: Default | SpellByLetter | SpellByWord): Self = StObject.set(x, "slotElicitationStyle", value.asInstanceOf[js.Any])
     

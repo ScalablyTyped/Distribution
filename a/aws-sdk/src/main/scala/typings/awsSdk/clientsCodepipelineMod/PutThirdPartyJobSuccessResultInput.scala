@@ -38,7 +38,8 @@ object PutThirdPartyJobSuccessResultInput {
     __obj.asInstanceOf[PutThirdPartyJobSuccessResultInput]
   }
   
-  extension [Self <: PutThirdPartyJobSuccessResultInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutThirdPartyJobSuccessResultInput] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

@@ -112,7 +112,8 @@ object Item {
     __obj.asInstanceOf[Item]
   }
   
-  extension [Self <: Item](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
     
     inline def setAsCheckboxGridItem(value: () => CheckboxGridItem): Self = StObject.set(x, "asCheckboxGridItem", js.Any.fromFunction0(value))
     

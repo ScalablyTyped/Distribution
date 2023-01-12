@@ -22,7 +22,8 @@ object Introspect {
     __obj.asInstanceOf[Introspect]
   }
   
-  extension [Self <: Introspect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Introspect] (val x: Self) extends AnyVal {
     
     inline def setAssertMissingModProviders(value: Boolean): Self = StObject.set(x, "assertMissingModProviders", value.asInstanceOf[js.Any])
     

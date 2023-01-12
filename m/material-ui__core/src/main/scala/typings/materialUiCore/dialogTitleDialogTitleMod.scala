@@ -487,7 +487,8 @@ object dialogTitleDialogTitleMod {
       __obj.asInstanceOf[DialogTitleProps]
     }
     
-    extension [Self <: DialogTitleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogTitleProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

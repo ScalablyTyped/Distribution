@@ -38,7 +38,8 @@ object GetSchemaByDefinitionResponse {
     __obj.asInstanceOf[GetSchemaByDefinitionResponse]
   }
   
-  extension [Self <: GetSchemaByDefinitionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSchemaByDefinitionResponse] (val x: Self) extends AnyVal {
     
     inline def setCreatedTime(value: CreatedTimestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     

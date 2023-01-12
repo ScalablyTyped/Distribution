@@ -94,7 +94,8 @@ object anon {
       __obj.asInstanceOf[Any]
     }
     
-    extension [Self <: Any](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Any] (val x: Self) extends AnyVal {
       
       inline def setAny(value: () => js.Function0[Unit]): Self = StObject.set(x, "any", js.Any.fromFunction0(value))
       
@@ -143,7 +144,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: InfernoNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -174,7 +176,8 @@ object anon {
       __obj.asInstanceOf[ComponentComparator]
     }
     
-    extension [Self <: ComponentComparator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentComparator] (val x: Self) extends AnyVal {
       
       inline def setComponentComparator(value: (/* lastVNode */ VNode, /* nextVNode */ VNode) => Boolean): Self = StObject.set(x, "componentComparator", js.Any.fromFunction2(value))
       

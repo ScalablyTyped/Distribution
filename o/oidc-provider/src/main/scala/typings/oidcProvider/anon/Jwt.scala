@@ -36,7 +36,8 @@ object Jwt {
     __obj.asInstanceOf[Jwt]
   }
   
-  extension [Self <: Jwt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Jwt] (val x: Self) extends AnyVal {
     
     inline def setJwt(
       value: (/* ctx */ KoaContextWithOIDC, /* token */ typings.oidcProvider.mod.AccessToken | ClientCredentials, /* parts */ JWTStructured) => CanBePromise[JWTStructured]

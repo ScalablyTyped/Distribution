@@ -24,7 +24,8 @@ object MathEvents {
     __obj.asInstanceOf[MathEvents]
   }
   
-  extension [Self <: MathEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MathEvents] (val x: Self) extends AnyVal {
     
     inline def setHover(value: Double): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     

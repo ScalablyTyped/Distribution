@@ -133,7 +133,8 @@ object XExtendedToolkit {
     __obj.asInstanceOf[XExtendedToolkit]
   }
   
-  extension [Self <: XExtendedToolkit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XExtendedToolkit] (val x: Self) extends AnyVal {
     
     inline def setActiveTopWindow(value: XTopWindow): Self = StObject.set(x, "ActiveTopWindow", value.asInstanceOf[js.Any])
     

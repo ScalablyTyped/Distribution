@@ -32,7 +32,8 @@ object Autofocus {
     __obj.asInstanceOf[Autofocus]
   }
   
-  extension [Self <: Autofocus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Autofocus] (val x: Self) extends AnyVal {
     
     inline def setAutofocus(value: Boolean): Self = StObject.set(x, "autofocus", value.asInstanceOf[js.Any])
     

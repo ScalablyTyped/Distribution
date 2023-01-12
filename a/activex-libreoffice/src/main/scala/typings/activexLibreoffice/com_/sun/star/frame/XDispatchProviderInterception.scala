@@ -48,7 +48,8 @@ object XDispatchProviderInterception {
     __obj.asInstanceOf[XDispatchProviderInterception]
   }
   
-  extension [Self <: XDispatchProviderInterception](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDispatchProviderInterception] (val x: Self) extends AnyVal {
     
     inline def setRegisterDispatchProviderInterceptor(value: XDispatchProviderInterceptor => Unit): Self = StObject.set(x, "registerDispatchProviderInterceptor", js.Any.fromFunction1(value))
     

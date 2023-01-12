@@ -176,7 +176,8 @@ object distPagePageMod {
       __obj.asInstanceOf[PageState]
     }
     
-    extension [Self <: PageState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageState] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       

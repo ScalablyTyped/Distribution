@@ -17,7 +17,8 @@ object IChoice {
     __obj.asInstanceOf[IChoice]
   }
   
-  extension [Self <: IChoice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IChoice] (val x: Self) extends AnyVal {
     
     inline def setValue(value: js.Array[BaseBlock[ValueBlock, ValueBlockJson]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object BindingIdentifier {
     __obj.asInstanceOf[BindingIdentifier]
   }
   
-  extension [Self <: BindingIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingIdentifier] (val x: Self) extends AnyVal {
     
     inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     

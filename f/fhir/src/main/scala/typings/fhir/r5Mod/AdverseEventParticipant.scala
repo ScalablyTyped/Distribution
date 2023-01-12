@@ -25,7 +25,8 @@ object AdverseEventParticipant {
     __obj.asInstanceOf[AdverseEventParticipant]
   }
   
-  extension [Self <: AdverseEventParticipant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdverseEventParticipant] (val x: Self) extends AnyVal {
     
     inline def setActor(value: Reference): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

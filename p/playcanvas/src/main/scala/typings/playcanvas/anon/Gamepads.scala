@@ -22,7 +22,8 @@ object Gamepads {
     __obj.asInstanceOf[Gamepads]
   }
   
-  extension [Self <: Gamepads](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gamepads] (val x: Self) extends AnyVal {
     
     inline def setGamepads(value: GamePads): Self = StObject.set(x, "gamepads", value.asInstanceOf[js.Any])
     

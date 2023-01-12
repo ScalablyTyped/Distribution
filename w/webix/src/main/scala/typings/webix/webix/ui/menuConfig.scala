@@ -133,7 +133,8 @@ object menuConfig {
     __obj.asInstanceOf[menuConfig]
   }
   
-  extension [Self <: menuConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: menuConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object libUserMod {
       __obj.asInstanceOf[UserClientDeps]
     }
     
-    extension [Self <: UserClientDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserClientDeps] (val x: Self) extends AnyVal {
       
       inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }

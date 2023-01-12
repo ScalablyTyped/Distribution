@@ -32,7 +32,8 @@ object AwsJobExponentialRolloutRate {
     __obj.asInstanceOf[AwsJobExponentialRolloutRate]
   }
   
-  extension [Self <: AwsJobExponentialRolloutRate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsJobExponentialRolloutRate] (val x: Self) extends AnyVal {
     
     inline def setBaseRatePerMinute(value: AwsJobRolloutRatePerMinute): Self = StObject.set(x, "baseRatePerMinute", value.asInstanceOf[js.Any])
     

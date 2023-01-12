@@ -37,7 +37,8 @@ object DestroyItemOptions {
     __obj.asInstanceOf[DestroyItemOptions]
   }
   
-  extension [Self <: DestroyItemOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestroyItemOptions] (val x: Self) extends AnyVal {
     
     inline def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
     

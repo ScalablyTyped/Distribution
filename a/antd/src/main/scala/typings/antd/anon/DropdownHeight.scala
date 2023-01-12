@@ -19,7 +19,8 @@ object DropdownHeight {
     __obj.asInstanceOf[DropdownHeight]
   }
   
-  extension [Self <: DropdownHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropdownHeight] (val x: Self) extends AnyVal {
     
     inline def setControlItemWidth(value: Double): Self = StObject.set(x, "controlItemWidth", value.asInstanceOf[js.Any])
     

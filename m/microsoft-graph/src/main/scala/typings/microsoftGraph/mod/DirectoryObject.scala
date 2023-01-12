@@ -18,7 +18,8 @@ object DirectoryObject {
     __obj.asInstanceOf[DirectoryObject]
   }
   
-  extension [Self <: DirectoryObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectoryObject] (val x: Self) extends AnyVal {
     
     inline def setDeletedDateTime(value: NullableOption[String]): Self = StObject.set(x, "deletedDateTime", value.asInstanceOf[js.Any])
     

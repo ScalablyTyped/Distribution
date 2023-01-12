@@ -369,7 +369,8 @@ object mod {
       __obj.asInstanceOf[LoggerOptions]
     }
     
-    extension [Self <: LoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -408,7 +409,8 @@ object mod {
       __obj.asInstanceOf[RingBufferOptions]
     }
     
-    extension [Self <: RingBufferOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RingBufferOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -431,7 +433,8 @@ object mod {
       __obj.asInstanceOf[RotatingFileStreamOptions]
     }
     
-    extension [Self <: RotatingFileStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RotatingFileStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -472,7 +475,8 @@ object mod {
       __obj.asInstanceOf[StdSerializers_]
     }
     
-    extension [Self <: StdSerializers_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StdSerializers_] (val x: Self) extends AnyVal {
       
       inline def setErr(value: /* input */ Any => Any): Self = StObject.set(x, "err", js.Any.fromFunction1(value))
       
@@ -509,7 +513,8 @@ object mod {
       __obj.asInstanceOf[Stream]
     }
     
-    extension [Self <: Stream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
       
       inline def setCloseOnExit(value: Boolean): Self = StObject.set(x, "closeOnExit", value.asInstanceOf[js.Any])
       
@@ -560,7 +565,8 @@ object mod {
       __obj.asInstanceOf[WriteFn]
     }
     
-    extension [Self <: WriteFn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteFn] (val x: Self) extends AnyVal {
       
       inline def setWrite(value: js.Object => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }

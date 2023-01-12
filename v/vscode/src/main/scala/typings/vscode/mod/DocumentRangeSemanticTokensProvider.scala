@@ -20,7 +20,8 @@ object DocumentRangeSemanticTokensProvider {
     __obj.asInstanceOf[DocumentRangeSemanticTokensProvider]
   }
   
-  extension [Self <: DocumentRangeSemanticTokensProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentRangeSemanticTokensProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideDocumentRangeSemanticTokens(value: (TextDocument, Range, CancellationToken) => ProviderResult[SemanticTokens]): Self = StObject.set(x, "provideDocumentRangeSemanticTokens", js.Any.fromFunction3(value))
   }

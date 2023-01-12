@@ -25,7 +25,8 @@ object FetchOptions {
     __obj.asInstanceOf[FetchOptions[K, V]]
   }
   
-  extension [Self <: FetchOptions[?, ?], K, V](x: Self & (FetchOptions[K, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchOptions[?, ?], K, V] (val x: Self & (FetchOptions[K, V])) extends AnyVal {
     
     inline def setFetchContext(value: Any): Self = StObject.set(x, "fetchContext", value.asInstanceOf[js.Any])
     

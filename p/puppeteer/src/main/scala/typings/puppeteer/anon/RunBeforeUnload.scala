@@ -15,7 +15,8 @@ object RunBeforeUnload {
     __obj.asInstanceOf[RunBeforeUnload]
   }
   
-  extension [Self <: RunBeforeUnload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunBeforeUnload] (val x: Self) extends AnyVal {
     
     inline def setRunBeforeUnload(value: Boolean): Self = StObject.set(x, "runBeforeUnload", value.asInstanceOf[js.Any])
     

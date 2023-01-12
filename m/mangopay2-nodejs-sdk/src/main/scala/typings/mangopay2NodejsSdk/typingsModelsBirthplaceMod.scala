@@ -22,7 +22,8 @@ object typingsModelsBirthplaceMod {
         __obj.asInstanceOf[Birthplace]
       }
       
-      extension [Self <: Birthplace](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Birthplace] (val x: Self) extends AnyVal {
         
         inline def setCity(value: String): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
         

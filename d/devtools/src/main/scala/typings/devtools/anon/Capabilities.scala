@@ -16,7 +16,8 @@ object Capabilities {
     __obj.asInstanceOf[Capabilities]
   }
   
-  extension [Self <: Capabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Capabilities] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: ExtendedCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
   }

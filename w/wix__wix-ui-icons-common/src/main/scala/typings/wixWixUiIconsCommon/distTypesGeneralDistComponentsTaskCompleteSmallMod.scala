@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsTaskCompleteSmallMod extends Shortcut {
       __obj.asInstanceOf[TaskCompleteSmallProps]
     }
     
-    extension [Self <: TaskCompleteSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskCompleteSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

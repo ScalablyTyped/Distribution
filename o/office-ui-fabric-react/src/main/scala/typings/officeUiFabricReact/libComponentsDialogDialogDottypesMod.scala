@@ -188,7 +188,8 @@ object libComponentsDialogDialogDottypesMod {
       __obj.asInstanceOf[IDialogProps]
     }
     
-    extension [Self <: IDialogProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDialogProps] (val x: Self) extends AnyVal {
       
       inline def setAriaDescribedById(value: String): Self = StObject.set(x, "ariaDescribedById", value.asInstanceOf[js.Any])
       
@@ -343,7 +344,8 @@ object libComponentsDialogDialogDottypesMod {
       __obj.asInstanceOf[IDialogStyleProps]
     }
     
-    extension [Self <: IDialogStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDialogStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -389,7 +391,8 @@ object libComponentsDialogDialogDottypesMod {
       __obj.asInstanceOf[IDialogStyles]
     }
     
-    extension [Self <: IDialogStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDialogStyles] (val x: Self) extends AnyVal {
       
       inline def setMain(value: IStyle): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
       

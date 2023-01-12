@@ -18,7 +18,8 @@ object StartStageDeploymentResult {
     __obj.asInstanceOf[StartStageDeploymentResult]
   }
   
-  extension [Self <: StartStageDeploymentResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartStageDeploymentResult] (val x: Self) extends AnyVal {
     
     inline def setStageDeployment(value: StageDeploymentDetails): Self = StObject.set(x, "StageDeployment", value.asInstanceOf[js.Any])
     

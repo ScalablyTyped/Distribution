@@ -23,7 +23,8 @@ object ResourcePermission {
     __obj.asInstanceOf[ResourcePermission]
   }
   
-  extension [Self <: ResourcePermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourcePermission] (val x: Self) extends AnyVal {
     
     inline def setActions(value: ActionList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     

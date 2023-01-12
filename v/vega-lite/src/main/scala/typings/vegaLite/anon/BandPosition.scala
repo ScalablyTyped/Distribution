@@ -110,7 +110,8 @@ object BandPosition {
     __obj.asInstanceOf[BandPosition]
   }
   
-  extension [Self <: BandPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BandPosition] (val x: Self) extends AnyVal {
     
     inline def setAggregate(value: typings.vegaLite.buildSrcAggregateMod.Aggregate | CompositeAggregate): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     

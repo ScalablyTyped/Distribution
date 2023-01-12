@@ -26,7 +26,8 @@ object SurfaceProps {
     __obj.asInstanceOf[SurfaceProps]
   }
   
-  extension [Self <: SurfaceProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SurfaceProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

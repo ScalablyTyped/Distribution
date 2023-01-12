@@ -244,7 +244,8 @@ object ScopedElementDescriptor {
     __obj.asInstanceOf[ScopedElementDescriptor]
   }
   
-  extension [Self <: ScopedElementDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScopedElementDescriptor] (val x: Self) extends AnyVal {
     
     inline def setGetAttachmentEncryptionType(value: () => String): Self = StObject.set(x, "getAttachmentEncryptionType", js.Any.fromFunction0(value))
     

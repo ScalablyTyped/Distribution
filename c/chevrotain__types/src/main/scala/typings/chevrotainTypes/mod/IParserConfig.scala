@@ -81,7 +81,8 @@ object IParserConfig {
     __obj.asInstanceOf[IParserConfig]
   }
   
-  extension [Self <: IParserConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IParserConfig] (val x: Self) extends AnyVal {
     
     inline def setDynamicTokensEnabled(value: Boolean): Self = StObject.set(x, "dynamicTokensEnabled", value.asInstanceOf[js.Any])
     

@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[SkipNavContentProps]
     }
     
-    extension [Self <: SkipNavContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkipNavContentProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object mod {
       __obj.asInstanceOf[SkipNavLinkProps]
     }
     
-    extension [Self <: SkipNavLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkipNavLinkProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

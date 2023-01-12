@@ -26,7 +26,8 @@ object MKRangeSliderProperties {
     __obj.asInstanceOf[MKRangeSliderProperties]
   }
   
-  extension [Self <: MKRangeSliderProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MKRangeSliderProperties] (val x: Self) extends AnyVal {
     
     inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     

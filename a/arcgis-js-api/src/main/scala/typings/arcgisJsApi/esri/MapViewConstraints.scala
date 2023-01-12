@@ -108,7 +108,8 @@ object MapViewConstraints {
     __obj.asInstanceOf[MapViewConstraints]
   }
   
-  extension [Self <: MapViewConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapViewConstraints] (val x: Self) extends AnyVal {
     
     inline def setEffectiveLODs(value: js.Array[LOD]): Self = StObject.set(x, "effectiveLODs", value.asInstanceOf[js.Any])
     

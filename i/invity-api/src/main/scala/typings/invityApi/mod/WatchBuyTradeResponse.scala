@@ -18,7 +18,8 @@ object WatchBuyTradeResponse {
     __obj.asInstanceOf[WatchBuyTradeResponse]
   }
   
-  extension [Self <: WatchBuyTradeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchBuyTradeResponse] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

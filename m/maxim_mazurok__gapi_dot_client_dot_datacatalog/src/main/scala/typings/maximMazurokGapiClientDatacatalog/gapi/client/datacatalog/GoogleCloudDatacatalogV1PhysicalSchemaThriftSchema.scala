@@ -16,7 +16,8 @@ object GoogleCloudDatacatalogV1PhysicalSchemaThriftSchema {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1PhysicalSchemaThriftSchema]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1PhysicalSchemaThriftSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1PhysicalSchemaThriftSchema] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

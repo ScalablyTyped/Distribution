@@ -174,7 +174,8 @@ object distSrcScorePeerScoreMod {
       __obj.asInstanceOf[PeerScoreComponents]
     }
     
-    extension [Self <: PeerScoreComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeerScoreComponents] (val x: Self) extends AnyVal {
       
       inline def setConnectionManager(value: ConnectionManager): Self = StObject.set(x, "connectionManager", value.asInstanceOf[js.Any])
     }
@@ -204,7 +205,8 @@ object distSrcScorePeerScoreMod {
       __obj.asInstanceOf[PeerScoreOpts]
     }
     
-    extension [Self <: PeerScoreOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeerScoreOpts] (val x: Self) extends AnyVal {
       
       inline def setComputeScore(
         value: (/* peer */ String, /* pstats */ PeerStats, /* params */ PeerScoreParams, /* peerIPs */ Map[String, Set[String]]) => Double
@@ -233,7 +235,8 @@ object distSrcScorePeerScoreMod {
       __obj.asInstanceOf[ScoreCacheEntry]
     }
     
-    extension [Self <: ScoreCacheEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScoreCacheEntry] (val x: Self) extends AnyVal {
       
       inline def setCacheUntil(value: Double): Self = StObject.set(x, "cacheUntil", value.asInstanceOf[js.Any])
       

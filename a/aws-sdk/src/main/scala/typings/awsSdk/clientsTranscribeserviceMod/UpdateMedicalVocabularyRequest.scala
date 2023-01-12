@@ -28,7 +28,8 @@ object UpdateMedicalVocabularyRequest {
     __obj.asInstanceOf[UpdateMedicalVocabularyRequest]
   }
   
-  extension [Self <: UpdateMedicalVocabularyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateMedicalVocabularyRequest] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     

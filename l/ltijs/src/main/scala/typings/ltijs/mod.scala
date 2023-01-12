@@ -32,7 +32,8 @@ object mod {
         __obj.asInstanceOf[Response[ResBody, Locals]]
       }
       
-      extension [Self <: Response[?, ?], ResBody, Locals /* <: Record[String, Any] */](x: Self & (Response[ResBody, Locals])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Response[?, ?], ResBody, Locals /* <: Record[String, Any] */] (val x: Self & (Response[ResBody, Locals])) extends AnyVal {
         
         inline def setLocals(value: Locals & Context): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
       }

@@ -33,7 +33,8 @@ object LaunchPermissionConfiguration {
     __obj.asInstanceOf[LaunchPermissionConfiguration]
   }
   
-  extension [Self <: LaunchPermissionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchPermissionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setOrganizationArns(value: OrganizationArnList): Self = StObject.set(x, "organizationArns", value.asInstanceOf[js.Any])
     

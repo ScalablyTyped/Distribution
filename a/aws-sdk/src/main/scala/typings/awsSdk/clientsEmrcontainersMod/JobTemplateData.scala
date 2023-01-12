@@ -40,7 +40,8 @@ object JobTemplateData {
     __obj.asInstanceOf[JobTemplateData]
   }
   
-  extension [Self <: JobTemplateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobTemplateData] (val x: Self) extends AnyVal {
     
     inline def setConfigurationOverrides(value: ParametricConfigurationOverrides): Self = StObject.set(x, "configurationOverrides", value.asInstanceOf[js.Any])
     

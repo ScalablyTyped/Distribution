@@ -27,7 +27,8 @@ object keyinRouteRequestExtTypeR {
     __obj.asInstanceOf[keyinRouteRequestExtTypeR]
   }
   
-  extension [Self <: keyinRouteRequestExtTypeR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keyinRouteRequestExtTypeR] (val x: Self) extends AnyVal {
     
     inline def setOnCredentials(value: RouteExtObject | js.Array[RouteExtObject]): Self = StObject.set(x, "onCredentials", value.asInstanceOf[js.Any])
     

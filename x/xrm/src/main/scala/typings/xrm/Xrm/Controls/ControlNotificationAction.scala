@@ -26,7 +26,8 @@ object ControlNotificationAction {
     __obj.asInstanceOf[ControlNotificationAction]
   }
   
-  extension [Self <: ControlNotificationAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlNotificationAction] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[js.Function0[Unit]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object AgentNotebookInfo {
     __obj.asInstanceOf[AgentNotebookInfo]
   }
   
-  extension [Self <: AgentNotebookInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentNotebookInfo] (val x: Self) extends AnyVal {
     
     inline def setExecuteDatabase(value: String): Self = StObject.set(x, "executeDatabase", value.asInstanceOf[js.Any])
     

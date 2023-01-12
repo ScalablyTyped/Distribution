@@ -19,7 +19,8 @@ object DeepUndefinableDeep {
     __obj.asInstanceOf[DeepUndefinableDeep[O]]
   }
   
-  extension [Self <: DeepUndefinableDeep[?], O /* <: js.Object */](x: Self & DeepUndefinableDeep[O]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeepUndefinableDeep[?], O /* <: js.Object */] (val x: Self & DeepUndefinableDeep[O]) extends AnyVal {
     
     inline def setDeep(value: UndefinableDeep[O]): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     

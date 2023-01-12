@@ -40,7 +40,8 @@ object Typeofdevtools {
     __obj.asInstanceOf[Typeofdevtools]
   }
   
-  extension [Self <: Typeofdevtools](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofdevtools] (val x: Self) extends AnyVal {
     
     inline def setInspectedWindow(value: TypeofinspectedWindow): Self = StObject.set(x, "inspectedWindow", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object SavingsPlansUtilizationAggregates {
     __obj.asInstanceOf[SavingsPlansUtilizationAggregates]
   }
   
-  extension [Self <: SavingsPlansUtilizationAggregates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsPlansUtilizationAggregates] (val x: Self) extends AnyVal {
     
     inline def setAmortizedCommitment(value: SavingsPlansAmortizedCommitment): Self = StObject.set(x, "AmortizedCommitment", value.asInstanceOf[js.Any])
     

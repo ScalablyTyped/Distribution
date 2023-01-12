@@ -22,7 +22,8 @@ object Auth0DelegationToken {
     __obj.asInstanceOf[Auth0DelegationToken]
   }
   
-  extension [Self <: Auth0DelegationToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auth0DelegationToken] (val x: Self) extends AnyVal {
     
     inline def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
     

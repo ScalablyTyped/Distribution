@@ -19,7 +19,8 @@ object TempFileResponse {
     __obj.asInstanceOf[TempFileResponse]
   }
   
-  extension [Self <: TempFileResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TempFileResponse] (val x: Self) extends AnyVal {
     
     inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     

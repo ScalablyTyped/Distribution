@@ -25,7 +25,8 @@ object ProjectsGetXpnResources {
     __obj.asInstanceOf[ProjectsGetXpnResources]
   }
   
-  extension [Self <: ProjectsGetXpnResources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectsGetXpnResources] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

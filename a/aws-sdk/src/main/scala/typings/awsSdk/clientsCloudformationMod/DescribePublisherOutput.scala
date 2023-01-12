@@ -33,7 +33,8 @@ object DescribePublisherOutput {
     __obj.asInstanceOf[DescribePublisherOutput]
   }
   
-  extension [Self <: DescribePublisherOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePublisherOutput] (val x: Self) extends AnyVal {
     
     inline def setIdentityProvider(value: IdentityProvider): Self = StObject.set(x, "IdentityProvider", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PolylineWithCurves {
     __obj.asInstanceOf[PolylineWithCurves]
   }
   
-  extension [Self <: PolylineWithCurves](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolylineWithCurves] (val x: Self) extends AnyVal {
     
     inline def setCurvePaths(value: js.Array[js.Array[Position | JsonCurve]]): Self = StObject.set(x, "curvePaths", value.asInstanceOf[js.Any])
     

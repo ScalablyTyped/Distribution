@@ -27,7 +27,8 @@ object distSrcSystemDistComponentsHelp24Mod extends Shortcut {
       __obj.asInstanceOf[Help24Props]
     }
     
-    extension [Self <: Help24Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Help24Props] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

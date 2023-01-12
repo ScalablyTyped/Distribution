@@ -23,7 +23,8 @@ object NodesInfoNodeInfoSettingsHttp {
     __obj.asInstanceOf[NodesInfoNodeInfoSettingsHttp]
   }
   
-  extension [Self <: NodesInfoNodeInfoSettingsHttp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoSettingsHttp] (val x: Self) extends AnyVal {
     
     inline def setCompression(value: Boolean | String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     

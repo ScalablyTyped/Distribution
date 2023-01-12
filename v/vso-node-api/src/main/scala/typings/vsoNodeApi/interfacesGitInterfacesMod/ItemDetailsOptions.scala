@@ -23,7 +23,8 @@ object ItemDetailsOptions {
     __obj.asInstanceOf[ItemDetailsOptions]
   }
   
-  extension [Self <: ItemDetailsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemDetailsOptions] (val x: Self) extends AnyVal {
     
     inline def setIncludeContentMetadata(value: Boolean): Self = StObject.set(x, "includeContentMetadata", value.asInstanceOf[js.Any])
     

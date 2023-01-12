@@ -110,7 +110,8 @@ object XDriver {
     __obj.asInstanceOf[XDriver]
   }
   
-  extension [Self <: XDriver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDriver] (val x: Self) extends AnyVal {
     
     inline def setAcceptsURL(value: String => Boolean): Self = StObject.set(x, "acceptsURL", js.Any.fromFunction1(value))
     

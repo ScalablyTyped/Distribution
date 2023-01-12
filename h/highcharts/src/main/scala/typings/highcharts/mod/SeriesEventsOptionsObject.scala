@@ -79,7 +79,8 @@ object SeriesEventsOptionsObject {
     __obj.asInstanceOf[SeriesEventsOptionsObject]
   }
   
-  extension [Self <: SeriesEventsOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesEventsOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setAfterAnimate(value: SeriesAfterAnimateCallbackFunction): Self = StObject.set(x, "afterAnimate", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object StructuredValue {
     __obj.asInstanceOf[StructuredValue]
   }
   
-  extension [Self <: StructuredValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructuredValue] (val x: Self) extends AnyVal {
     
     inline def setName(value: NameString): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

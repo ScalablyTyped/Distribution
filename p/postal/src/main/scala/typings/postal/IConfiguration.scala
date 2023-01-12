@@ -19,7 +19,8 @@ object IConfiguration {
     __obj.asInstanceOf[IConfiguration]
   }
   
-  extension [Self <: IConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDEFAULT_CHANNEL(value: String): Self = StObject.set(x, "DEFAULT_CHANNEL", value.asInstanceOf[js.Any])
     

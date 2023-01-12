@@ -38,7 +38,8 @@ object ProjectFileSystemLocation {
     __obj.asInstanceOf[ProjectFileSystemLocation]
   }
   
-  extension [Self <: ProjectFileSystemLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectFileSystemLocation] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Audio]
     }
     
-    extension [Self <: Audio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Audio] (val x: Self) extends AnyVal {
       
       inline def setAudio(value: AudioStatistics): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object anon {
       __obj.asInstanceOf[Calltype]
     }
     
-    extension [Self <: Calltype](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Calltype] (val x: Self) extends AnyVal {
       
       inline def setCall_type(value: video | `video-only` | audio): Self = StObject.set(x, "call_type", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object anon {
       __obj.asInstanceOf[Credential]
     }
     
-    extension [Self <: Credential](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credential] (val x: Self) extends AnyVal {
       
       inline def setCredential(value: String): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
       
@@ -155,7 +158,8 @@ object anon {
       __obj.asInstanceOf[Enableactivespeakerindication]
     }
     
-    extension [Self <: Enableactivespeakerindication](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enableactivespeakerindication] (val x: Self) extends AnyVal {
       
       inline def setEnable_active_speaker_indication(value: Boolean): Self = StObject.set(x, "enable_active_speaker_indication", value.asInstanceOf[js.Any])
       
@@ -192,7 +196,8 @@ object anon {
       __obj.asInstanceOf[Guestmuted]
     }
     
-    extension [Self <: Guestmuted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Guestmuted] (val x: Self) extends AnyVal {
       
       inline def setGuest_muted(value: Boolean): Self = StObject.set(x, "guest_muted", value.asInstanceOf[js.Any])
       
@@ -213,7 +218,8 @@ object anon {
       __obj.asInstanceOf[IceServers]
     }
     
-    extension [Self <: IceServers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IceServers] (val x: Self) extends AnyVal {
       
       inline def setIceServers(value: js.Array[Double]): Self = StObject.set(x, "iceServers", value.asInstanceOf[js.Any])
       
@@ -243,7 +249,8 @@ object anon {
       __obj.asInstanceOf[Indicatorsenabled]
     }
     
-    extension [Self <: Indicatorsenabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Indicatorsenabled] (val x: Self) extends AnyVal {
       
       inline def setIndicators_enabled(value: Boolean): Self = StObject.set(x, "indicators_enabled", value.asInstanceOf[js.Any])
       
@@ -268,7 +275,8 @@ object anon {
       __obj.asInstanceOf[MutedAudio]
     }
     
-    extension [Self <: MutedAudio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutedAudio] (val x: Self) extends AnyVal {
       
       inline def setMutedAudio(value: Boolean): Self = StObject.set(x, "mutedAudio", value.asInstanceOf[js.Any])
       
@@ -291,7 +299,8 @@ object anon {
       __obj.asInstanceOf[Participantuuid]
     }
     
-    extension [Self <: Participantuuid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Participantuuid] (val x: Self) extends AnyVal {
       
       inline def setParticipant_uuid(value: String): Self = StObject.set(x, "participant_uuid", value.asInstanceOf[js.Any])
       
@@ -313,7 +322,8 @@ object anon {
       __obj.asInstanceOf[PickAnyParticipantuuid]
     }
     
-    extension [Self <: PickAnyParticipantuuid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickAnyParticipantuuid] (val x: Self) extends AnyVal {
       
       inline def setUuid(value: Any): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
@@ -332,7 +342,8 @@ object anon {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setResult(value: js.Array[String]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
@@ -351,7 +362,8 @@ object anon {
       __obj.asInstanceOf[Status]
     }
     
-    extension [Self <: Status](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
       
       inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }

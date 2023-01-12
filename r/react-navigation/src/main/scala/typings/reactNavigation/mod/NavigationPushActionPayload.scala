@@ -21,7 +21,8 @@ object NavigationPushActionPayload {
     __obj.asInstanceOf[NavigationPushActionPayload]
   }
   
-  extension [Self <: NavigationPushActionPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationPushActionPayload] (val x: Self) extends AnyVal {
     
     inline def setAction(value: NavigationNavigateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

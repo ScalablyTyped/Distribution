@@ -78,7 +78,8 @@ object DescribeClusterSnapshotsMessage {
     __obj.asInstanceOf[DescribeClusterSnapshotsMessage]
   }
   
-  extension [Self <: DescribeClusterSnapshotsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeClusterSnapshotsMessage] (val x: Self) extends AnyVal {
     
     inline def setClusterExists(value: BooleanOptional): Self = StObject.set(x, "ClusterExists", value.asInstanceOf[js.Any])
     

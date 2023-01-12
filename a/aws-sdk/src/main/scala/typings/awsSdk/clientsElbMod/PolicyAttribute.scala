@@ -23,7 +23,8 @@ object PolicyAttribute {
     __obj.asInstanceOf[PolicyAttribute]
   }
   
-  extension [Self <: PolicyAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyAttribute] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: AttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     

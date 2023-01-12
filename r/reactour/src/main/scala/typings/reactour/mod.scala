@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[ArrowProps]
     }
     
-    extension [Self <: ArrowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrowProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object mod {
       __obj.asInstanceOf[BadgeProps]
     }
     
-    extension [Self <: BadgeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgeProps] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
@@ -125,7 +127,8 @@ object mod {
       __obj.asInstanceOf[CloseProps]
     }
     
-    extension [Self <: CloseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -156,7 +159,8 @@ object mod {
       __obj.asInstanceOf[CustomHelperProps]
     }
     
-    extension [Self <: CustomHelperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomHelperProps] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -194,7 +198,8 @@ object mod {
       __obj.asInstanceOf[DotProps]
     }
     
-    extension [Self <: DotProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotProps] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
@@ -238,7 +243,8 @@ object mod {
       __obj.asInstanceOf[ReactourAccessibilityOptions]
     }
     
-    extension [Self <: ReactourAccessibilityOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactourAccessibilityOptions] (val x: Self) extends AnyVal {
       
       inline def setAriaLabelledBy(value: String): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
       
@@ -468,7 +474,8 @@ object mod {
       __obj.asInstanceOf[ReactourProps]
     }
     
-    extension [Self <: ReactourProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactourProps] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
@@ -676,7 +683,8 @@ object mod {
       __obj.asInstanceOf[ReactourState]
     }
     
-    extension [Self <: ReactourState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactourState] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -795,7 +803,8 @@ object mod {
       __obj.asInstanceOf[ReactourStep]
     }
     
-    extension [Self <: ReactourStep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactourStep] (val x: Self) extends AnyVal {
       
       inline def setAction(value: /* domNode */ Any => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
@@ -868,7 +877,8 @@ object mod {
       __obj.asInstanceOf[ReactourStepContentArgs]
     }
     
-    extension [Self <: ReactourStepContentArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactourStepContentArgs] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       

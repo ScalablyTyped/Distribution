@@ -260,7 +260,8 @@ object TextLayoutCursor {
     __obj.asInstanceOf[TextLayoutCursor]
   }
   
-  extension [Self <: TextLayoutCursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextLayoutCursor] (val x: Self) extends AnyVal {
     
     inline def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
   }

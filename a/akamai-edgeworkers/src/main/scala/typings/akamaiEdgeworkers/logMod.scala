@@ -49,7 +49,8 @@ object logMod {
       __obj.asInstanceOf[Logger_]
     }
     
-    extension [Self <: Logger_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logger_] (val x: Self) extends AnyVal {
       
       inline def setLog(value: (String, Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
     }

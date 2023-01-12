@@ -16,7 +16,8 @@ object Metaline {
     __obj.asInstanceOf[Metaline]
   }
   
-  extension [Self <: Metaline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Metaline] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: js.Array[DisplayedProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

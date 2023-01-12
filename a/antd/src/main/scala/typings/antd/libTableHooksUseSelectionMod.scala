@@ -80,7 +80,8 @@ object libTableHooksUseSelectionMod {
       __obj.asInstanceOf[UseSelectionConfig[RecordType]]
     }
     
-    extension [Self <: UseSelectionConfig[?], RecordType](x: Self & UseSelectionConfig[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseSelectionConfig[?], RecordType] (val x: Self & UseSelectionConfig[RecordType]) extends AnyVal {
       
       inline def setChildrenColumnName(value: String): Self = StObject.set(x, "childrenColumnName", value.asInstanceOf[js.Any])
       

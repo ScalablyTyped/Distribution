@@ -113,7 +113,8 @@ object Crawler {
     __obj.asInstanceOf[Crawler]
   }
   
-  extension [Self <: Crawler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Crawler] (val x: Self) extends AnyVal {
     
     inline def setClassifiers(value: ClassifierNameList): Self = StObject.set(x, "Classifiers", value.asInstanceOf[js.Any])
     

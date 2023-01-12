@@ -18,7 +18,8 @@ object ChannelMetadataFields {
     __obj.asInstanceOf[ChannelMetadataFields]
   }
   
-  extension [Self <: ChannelMetadataFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelMetadataFields] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

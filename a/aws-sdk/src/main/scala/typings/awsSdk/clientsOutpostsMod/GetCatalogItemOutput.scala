@@ -18,7 +18,8 @@ object GetCatalogItemOutput {
     __obj.asInstanceOf[GetCatalogItemOutput]
   }
   
-  extension [Self <: GetCatalogItemOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCatalogItemOutput] (val x: Self) extends AnyVal {
     
     inline def setCatalogItem(value: CatalogItem): Self = StObject.set(x, "CatalogItem", value.asInstanceOf[js.Any])
     

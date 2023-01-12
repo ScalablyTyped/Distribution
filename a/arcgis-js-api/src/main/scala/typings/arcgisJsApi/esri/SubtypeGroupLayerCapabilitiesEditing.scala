@@ -86,7 +86,8 @@ object SubtypeGroupLayerCapabilitiesEditing {
     __obj.asInstanceOf[SubtypeGroupLayerCapabilitiesEditing]
   }
   
-  extension [Self <: SubtypeGroupLayerCapabilitiesEditing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtypeGroupLayerCapabilitiesEditing] (val x: Self) extends AnyVal {
     
     inline def setSupportsDeleteByAnonymous(value: Boolean): Self = StObject.set(x, "supportsDeleteByAnonymous", value.asInstanceOf[js.Any])
     

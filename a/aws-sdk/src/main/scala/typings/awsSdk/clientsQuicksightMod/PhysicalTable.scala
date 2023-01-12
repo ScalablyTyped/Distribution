@@ -28,7 +28,8 @@ object PhysicalTable {
     __obj.asInstanceOf[PhysicalTable]
   }
   
-  extension [Self <: PhysicalTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhysicalTable] (val x: Self) extends AnyVal {
     
     inline def setCustomSql(value: CustomSql): Self = StObject.set(x, "CustomSql", value.asInstanceOf[js.Any])
     

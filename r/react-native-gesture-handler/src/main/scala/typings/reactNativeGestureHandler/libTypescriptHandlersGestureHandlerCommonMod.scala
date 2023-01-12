@@ -107,7 +107,8 @@ object libTypescriptHandlersGestureHandlerCommonMod {
       __obj.asInstanceOf[BaseGestureHandlerProps_[ExtraEventPayloadT]]
     }
     
-    extension [Self <: BaseGestureHandlerProps_[?], ExtraEventPayloadT /* <: Record[String, Any] */](x: Self & BaseGestureHandlerProps_[ExtraEventPayloadT]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseGestureHandlerProps_[?], ExtraEventPayloadT /* <: Record[String, Any] */] (val x: Self & BaseGestureHandlerProps_[ExtraEventPayloadT]) extends AnyVal {
       
       inline def setCancelsTouchesInView(value: Boolean): Self = StObject.set(x, "cancelsTouchesInView", value.asInstanceOf[js.Any])
       
@@ -192,7 +193,8 @@ object libTypescriptHandlersGestureHandlerCommonMod {
       __obj.asInstanceOf[CommonGestureConfig]
     }
     
-    extension [Self <: CommonGestureConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonGestureConfig] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -223,7 +225,8 @@ object libTypescriptHandlersGestureHandlerCommonMod {
       __obj.asInstanceOf[GestureEvent[ExtraEventPayloadT]]
     }
     
-    extension [Self <: GestureEvent[?], ExtraEventPayloadT](x: Self & GestureEvent[ExtraEventPayloadT]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GestureEvent[?], ExtraEventPayloadT] (val x: Self & GestureEvent[ExtraEventPayloadT]) extends AnyVal {
       
       inline def setNativeEvent(value: GestureEventPayload & ExtraEventPayloadT): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
     }
@@ -244,7 +247,8 @@ object libTypescriptHandlersGestureHandlerCommonMod {
       __obj.asInstanceOf[GestureEventPayload]
     }
     
-    extension [Self <: GestureEventPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GestureEventPayload] (val x: Self) extends AnyVal {
       
       inline def setHandlerTag(value: Double): Self = StObject.set(x, "handlerTag", value.asInstanceOf[js.Any])
       
@@ -284,7 +288,8 @@ object libTypescriptHandlersGestureHandlerCommonMod {
       __obj.asInstanceOf[GestureTouchEvent]
     }
     
-    extension [Self <: GestureTouchEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GestureTouchEvent] (val x: Self) extends AnyVal {
       
       inline def setAllTouches(value: js.Array[TouchData]): Self = StObject.set(x, "allTouches", value.asInstanceOf[js.Any])
       
@@ -317,7 +322,8 @@ object libTypescriptHandlersGestureHandlerCommonMod {
       __obj.asInstanceOf[HandlerStateChangeEvent[ExtraEventPayloadT]]
     }
     
-    extension [Self <: HandlerStateChangeEvent[?], ExtraEventPayloadT](x: Self & HandlerStateChangeEvent[ExtraEventPayloadT]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandlerStateChangeEvent[?], ExtraEventPayloadT] (val x: Self & HandlerStateChangeEvent[ExtraEventPayloadT]) extends AnyVal {
       
       inline def setNativeEvent(value: HandlerStateChangeEventPayload & ExtraEventPayloadT): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
     }
@@ -336,7 +342,8 @@ object libTypescriptHandlersGestureHandlerCommonMod {
       __obj.asInstanceOf[HandlerStateChangeEventPayload]
     }
     
-    extension [Self <: HandlerStateChangeEventPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandlerStateChangeEventPayload] (val x: Self) extends AnyVal {
       
       inline def setOldState(value: ValueOf[ACTIVE]): Self = StObject.set(x, "oldState", value.asInstanceOf[js.Any])
     }
@@ -371,7 +378,8 @@ object libTypescriptHandlersGestureHandlerCommonMod {
       __obj.asInstanceOf[TouchData]
     }
     
-    extension [Self <: TouchData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TouchData] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteX(value: Double): Self = StObject.set(x, "absoluteX", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object LayoutProps {
     __obj.asInstanceOf[LayoutProps]
   }
   
-  extension [Self <: LayoutProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutProps] (val x: Self) extends AnyVal {
     
     inline def setFixedDrawer(value: Boolean): Self = StObject.set(x, "fixedDrawer", value.asInstanceOf[js.Any])
     

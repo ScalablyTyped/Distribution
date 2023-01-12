@@ -29,7 +29,8 @@ object WorksheetDimensionProperties {
     __obj.asInstanceOf[WorksheetDimensionProperties]
   }
   
-  extension [Self <: WorksheetDimensionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetDimensionProperties] (val x: Self) extends AnyVal {
     
     inline def setDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
     

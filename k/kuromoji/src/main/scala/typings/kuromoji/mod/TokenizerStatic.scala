@@ -15,7 +15,8 @@ object TokenizerStatic {
     __obj.asInstanceOf[TokenizerStatic]
   }
   
-  extension [Self <: TokenizerStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenizerStatic] (val x: Self) extends AnyVal {
     
     inline def setSplitByPunctuation(value: String => js.Array[String]): Self = StObject.set(x, "splitByPunctuation", js.Any.fromFunction1(value))
   }

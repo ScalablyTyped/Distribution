@@ -81,7 +81,8 @@ object RequestMockOptions {
     __obj.asInstanceOf[RequestMockOptions]
   }
   
-  extension [Self <: RequestMockOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestMockOptions] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

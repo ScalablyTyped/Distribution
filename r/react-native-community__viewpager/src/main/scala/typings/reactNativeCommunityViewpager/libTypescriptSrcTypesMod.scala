@@ -66,7 +66,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[PageScrollStateChangedEvent]
     }
     
-    extension [Self <: PageScrollStateChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageScrollStateChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setPageScrollState(value: PageScrollState): Self = StObject.set(x, "pageScrollState", value.asInstanceOf[js.Any])
     }
@@ -101,7 +102,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[ViewPagerOnPageScrollEventData]
     }
     
-    extension [Self <: ViewPagerOnPageScrollEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewPagerOnPageScrollEventData] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[ViewPagerOnPageSelectedEventData]
     }
     
-    extension [Self <: ViewPagerOnPageSelectedEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewPagerOnPageSelectedEventData] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
@@ -235,7 +238,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[ViewPagerProps]
     }
     
-    extension [Self <: ViewPagerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewPagerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

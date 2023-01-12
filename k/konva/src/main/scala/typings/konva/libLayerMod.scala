@@ -106,7 +106,8 @@ object libLayerMod {
       __obj.asInstanceOf[LayerConfig]
     }
     
-    extension [Self <: LayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerConfig] (val x: Self) extends AnyVal {
       
       inline def setHitGraphEnabled(value: Boolean): Self = StObject.set(x, "hitGraphEnabled", value.asInstanceOf[js.Any])
       

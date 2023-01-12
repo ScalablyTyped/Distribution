@@ -33,7 +33,8 @@ object CreateCustomPluginRequest {
     __obj.asInstanceOf[CreateCustomPluginRequest]
   }
   
-  extension [Self <: CreateCustomPluginRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCustomPluginRequest] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: CustomPluginContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

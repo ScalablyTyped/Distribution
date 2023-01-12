@@ -32,7 +32,8 @@ object ImputeTransform {
     __obj.asInstanceOf[ImputeTransform]
   }
   
-  extension [Self <: ImputeTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImputeTransform] (val x: Self) extends AnyVal {
     
     inline def setField(value: FieldRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

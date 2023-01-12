@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[DownscaleOptions]
     }
     
-    extension [Self <: DownscaleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownscaleOptions] (val x: Self) extends AnyVal {
       
       inline def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object QueryRelationsResponse {
     __obj.asInstanceOf[QueryRelationsResponse]
   }
   
-  extension [Self <: QueryRelationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryRelationsResponse] (val x: Self) extends AnyVal {
     
     inline def setRelations(value: js.Array[QueryRelationsRelationship]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
     

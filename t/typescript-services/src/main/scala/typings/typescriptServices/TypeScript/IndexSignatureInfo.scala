@@ -17,7 +17,8 @@ object IndexSignatureInfo {
     __obj.asInstanceOf[IndexSignatureInfo]
   }
   
-  extension [Self <: IndexSignatureInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexSignatureInfo] (val x: Self) extends AnyVal {
     
     inline def setNumericSignature(value: PullSignatureSymbol): Self = StObject.set(x, "numericSignature", value.asInstanceOf[js.Any])
     

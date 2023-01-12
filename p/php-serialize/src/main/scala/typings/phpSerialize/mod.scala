@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[SerializeOptions]
     }
     
-    extension [Self <: SerializeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializeOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: utf8 | binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object mod {
       __obj.asInstanceOf[UnserializeOptions]
     }
     
-    extension [Self <: UnserializeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnserializeOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: utf8 | binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

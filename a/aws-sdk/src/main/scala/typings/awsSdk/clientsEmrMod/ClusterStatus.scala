@@ -28,7 +28,8 @@ object ClusterStatus {
     __obj.asInstanceOf[ClusterStatus]
   }
   
-  extension [Self <: ClusterStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatus] (val x: Self) extends AnyVal {
     
     inline def setState(value: ClusterState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

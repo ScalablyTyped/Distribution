@@ -33,7 +33,8 @@ object JobManifestGeneratorFilter {
     __obj.asInstanceOf[JobManifestGeneratorFilter]
   }
   
-  extension [Self <: JobManifestGeneratorFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobManifestGeneratorFilter] (val x: Self) extends AnyVal {
     
     inline def setCreatedAfter(value: js.Date): Self = StObject.set(x, "CreatedAfter", value.asInstanceOf[js.Any])
     

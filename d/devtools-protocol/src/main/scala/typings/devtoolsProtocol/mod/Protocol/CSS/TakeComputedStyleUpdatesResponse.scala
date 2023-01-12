@@ -19,7 +19,8 @@ object TakeComputedStyleUpdatesResponse {
     __obj.asInstanceOf[TakeComputedStyleUpdatesResponse]
   }
   
-  extension [Self <: TakeComputedStyleUpdatesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TakeComputedStyleUpdatesResponse] (val x: Self) extends AnyVal {
     
     inline def setNodeIds(value: js.Array[NodeId]): Self = StObject.set(x, "nodeIds", value.asInstanceOf[js.Any])
     

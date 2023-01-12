@@ -18,7 +18,8 @@ object SaveOptions {
     __obj.asInstanceOf[SaveOptions]
   }
   
-  extension [Self <: SaveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveOptions] (val x: Self) extends AnyVal {
     
     inline def setIncludeText(value: Boolean): Self = StObject.set(x, "includeText", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object contextPredictionContextMod {
       __obj.asInstanceOf[PredictionContext]
     }
     
-    extension [Self <: PredictionContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PredictionContext] (val x: Self) extends AnyVal {
       
       inline def setHasEmptyPath(value: () => Boolean): Self = StObject.set(x, "hasEmptyPath", js.Any.fromFunction0(value))
       

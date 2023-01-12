@@ -33,7 +33,8 @@ object UpdateGeofenceCollectionRequest {
     __obj.asInstanceOf[UpdateGeofenceCollectionRequest]
   }
   
-  extension [Self <: UpdateGeofenceCollectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateGeofenceCollectionRequest] (val x: Self) extends AnyVal {
     
     inline def setCollectionName(value: ResourceName): Self = StObject.set(x, "CollectionName", value.asInstanceOf[js.Any])
     

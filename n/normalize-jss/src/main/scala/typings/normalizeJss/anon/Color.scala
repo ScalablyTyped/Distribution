@@ -32,7 +32,8 @@ object Color {
     __obj.asInstanceOf[Color]
   }
   
-  extension [Self <: Color](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
     
     inline def setBoxSizing(value: String): Self = StObject.set(x, "boxSizing", value.asInstanceOf[js.Any])
     

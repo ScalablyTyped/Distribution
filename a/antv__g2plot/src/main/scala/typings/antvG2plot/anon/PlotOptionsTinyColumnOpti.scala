@@ -92,7 +92,8 @@ object PlotOptionsTinyColumnOpti {
     __obj.asInstanceOf[PlotOptionsTinyColumnOpti]
   }
   
-  extension [Self <: PlotOptionsTinyColumnOpti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotOptionsTinyColumnOpti] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

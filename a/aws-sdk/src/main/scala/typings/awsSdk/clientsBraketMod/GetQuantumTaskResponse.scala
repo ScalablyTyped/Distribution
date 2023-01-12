@@ -82,7 +82,8 @@ object GetQuantumTaskResponse {
     __obj.asInstanceOf[GetQuantumTaskResponse]
   }
   
-  extension [Self <: GetQuantumTaskResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetQuantumTaskResponse] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

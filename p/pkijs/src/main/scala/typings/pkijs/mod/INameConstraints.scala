@@ -17,7 +17,8 @@ object INameConstraints {
     __obj.asInstanceOf[INameConstraints]
   }
   
-  extension [Self <: INameConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INameConstraints] (val x: Self) extends AnyVal {
     
     inline def setExcludedSubtrees(value: js.Array[GeneralSubtree]): Self = StObject.set(x, "excludedSubtrees", value.asInstanceOf[js.Any])
     

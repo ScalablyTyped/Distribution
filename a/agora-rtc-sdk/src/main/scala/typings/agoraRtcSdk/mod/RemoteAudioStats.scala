@@ -63,7 +63,8 @@ object RemoteAudioStats {
     __obj.asInstanceOf[RemoteAudioStats]
   }
   
-  extension [Self <: RemoteAudioStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteAudioStats] (val x: Self) extends AnyVal {
     
     inline def setCodecType(value: String): Self = StObject.set(x, "CodecType", value.asInstanceOf[js.Any])
     

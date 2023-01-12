@@ -684,7 +684,8 @@ object AddSelectedRepoToOrgSecret {
     __obj.asInstanceOf[AddSelectedRepoToOrgSecret]
   }
   
-  extension [Self <: AddSelectedRepoToOrgSecret](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddSelectedRepoToOrgSecret] (val x: Self) extends AnyVal {
     
     inline def setAddSelectedRepoToOrgSecret(value: `233`): Self = StObject.set(x, "addSelectedRepoToOrgSecret", value.asInstanceOf[js.Any])
     

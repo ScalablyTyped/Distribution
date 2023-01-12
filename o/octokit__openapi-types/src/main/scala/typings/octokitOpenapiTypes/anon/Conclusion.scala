@@ -22,7 +22,8 @@ object Conclusion {
     __obj.asInstanceOf[Conclusion]
   }
   
-  extension [Self <: Conclusion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conclusion] (val x: Self) extends AnyVal {
     
     inline def setConclusion(value: Any): Self = StObject.set(x, "conclusion", value.asInstanceOf[js.Any])
     

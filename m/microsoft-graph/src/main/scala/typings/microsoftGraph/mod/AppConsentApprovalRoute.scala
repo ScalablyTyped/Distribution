@@ -18,7 +18,8 @@ object AppConsentApprovalRoute {
     __obj.asInstanceOf[AppConsentApprovalRoute]
   }
   
-  extension [Self <: AppConsentApprovalRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppConsentApprovalRoute] (val x: Self) extends AnyVal {
     
     inline def setAppConsentRequests(value: NullableOption[js.Array[AppConsentRequest]]): Self = StObject.set(x, "appConsentRequests", value.asInstanceOf[js.Any])
     

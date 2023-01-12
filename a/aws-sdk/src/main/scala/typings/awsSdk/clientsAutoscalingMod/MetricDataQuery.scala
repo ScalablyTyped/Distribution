@@ -38,7 +38,8 @@ object MetricDataQuery {
     __obj.asInstanceOf[MetricDataQuery]
   }
   
-  extension [Self <: MetricDataQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricDataQuery] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: XmlStringMaxLen1023): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     

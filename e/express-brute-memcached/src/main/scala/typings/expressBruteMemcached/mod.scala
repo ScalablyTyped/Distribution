@@ -136,7 +136,8 @@ object mod {
       __obj.asInstanceOf[MemcachedStoreOptions]
     }
     
-    extension [Self <: MemcachedStoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemcachedStoreOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

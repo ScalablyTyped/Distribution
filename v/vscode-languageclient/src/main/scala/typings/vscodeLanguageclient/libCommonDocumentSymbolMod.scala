@@ -61,7 +61,8 @@ object libCommonDocumentSymbolMod {
       __obj.asInstanceOf[DocumentSymbolMiddleware]
     }
     
-    extension [Self <: DocumentSymbolMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentSymbolMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideDocumentSymbols(
         value: js.ThisFunction3[

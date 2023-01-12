@@ -16,7 +16,8 @@ object ExitCode {
     __obj.asInstanceOf[ExitCode]
   }
   
-  extension [Self <: ExitCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExitCode] (val x: Self) extends AnyVal {
     
     inline def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
   }

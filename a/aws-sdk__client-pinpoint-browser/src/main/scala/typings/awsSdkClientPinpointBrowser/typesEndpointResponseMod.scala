@@ -119,7 +119,8 @@ object typesEndpointResponseMod {
       __obj.asInstanceOf[EndpointResponse]
     }
     
-    extension [Self <: EndpointResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointResponse] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
       
@@ -230,7 +231,8 @@ object typesEndpointResponseMod {
       __obj.asInstanceOf[UnmarshalledEndpointResponse]
     }
     
-    extension [Self <: UnmarshalledEndpointResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledEndpointResponse] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       

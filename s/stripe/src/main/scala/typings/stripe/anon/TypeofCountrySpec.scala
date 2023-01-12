@@ -15,7 +15,8 @@ object TypeofCountrySpec {
     __obj.asInstanceOf[TypeofCountrySpec]
   }
   
-  extension [Self <: TypeofCountrySpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCountrySpec] (val x: Self) extends AnyVal {
     
     inline def setVerificationFields(value: Any): Self = StObject.set(x, "VerificationFields", value.asInstanceOf[js.Any])
   }

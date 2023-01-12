@@ -27,7 +27,8 @@ object ItemIcon {
     __obj.asInstanceOf[ItemIcon]
   }
   
-  extension [Self <: ItemIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemIcon] (val x: Self) extends AnyVal {
     
     inline def setClearIcon(
       value: String | Double | Boolean | ReactFragment | Element | (js.Function1[/* props */ Any, ReactNode])

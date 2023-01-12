@@ -35,7 +35,8 @@ object TargetTcpProxyList {
     __obj.asInstanceOf[TargetTcpProxyList]
   }
   
-  extension [Self <: TargetTcpProxyList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetTcpProxyList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

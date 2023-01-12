@@ -23,7 +23,8 @@ object ListActivatedRulesInRuleGroupResponse {
     __obj.asInstanceOf[ListActivatedRulesInRuleGroupResponse]
   }
   
-  extension [Self <: ListActivatedRulesInRuleGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListActivatedRulesInRuleGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setActivatedRules(value: ActivatedRules): Self = StObject.set(x, "ActivatedRules", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object NodesInfoNodeInfoSettingsCluster {
     __obj.asInstanceOf[NodesInfoNodeInfoSettingsCluster]
   }
   
-  extension [Self <: NodesInfoNodeInfoSettingsCluster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoSettingsCluster] (val x: Self) extends AnyVal {
     
     inline def setDeprecation_indexing(value: NodesInfoDeprecationIndexing): Self = StObject.set(x, "deprecation_indexing", value.asInstanceOf[js.Any])
     

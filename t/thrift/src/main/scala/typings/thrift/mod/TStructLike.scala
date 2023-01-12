@@ -17,7 +17,8 @@ object TStructLike {
     __obj.asInstanceOf[TStructLike]
   }
   
-  extension [Self <: TStructLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TStructLike] (val x: Self) extends AnyVal {
     
     inline def setRead(value: TProtocol => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     

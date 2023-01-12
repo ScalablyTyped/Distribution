@@ -97,7 +97,8 @@ object CreateCapacityReservationRequest {
     __obj.asInstanceOf[CreateCapacityReservationRequest]
   }
   
-  extension [Self <: CreateCapacityReservationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCapacityReservationRequest] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

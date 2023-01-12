@@ -120,7 +120,8 @@ object mod {
       __obj.asInstanceOf[Account]
     }
     
-    extension [Self <: Account](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
       
       inline def setAlksAccount(value: String): Self = StObject.set(x, "alksAccount", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object mod {
       __obj.asInstanceOf[AlksAccount]
     }
     
-    extension [Self <: AlksAccount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlksAccount] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
@@ -172,7 +174,8 @@ object mod {
       __obj.asInstanceOf[Auth]
     }
     
-    extension [Self <: Auth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Auth] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
@@ -199,7 +202,8 @@ object mod {
       __obj.asInstanceOf[AwsKey]
     }
     
-    extension [Self <: AwsKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AwsKey] (val x: Self) extends AnyVal {
       
       inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
@@ -240,7 +244,8 @@ object mod {
       __obj.asInstanceOf[KeyData]
     }
     
-    extension [Self <: KeyData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyData] (val x: Self) extends AnyVal {
       
       inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
@@ -286,7 +291,8 @@ object mod {
       __obj.asInstanceOf[LongTermKeyData]
     }
     
-    extension [Self <: LongTermKeyData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LongTermKeyData] (val x: Self) extends AnyVal {
       
       inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       

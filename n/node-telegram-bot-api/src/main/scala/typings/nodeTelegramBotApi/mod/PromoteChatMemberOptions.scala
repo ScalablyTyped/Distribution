@@ -31,7 +31,8 @@ object PromoteChatMemberOptions {
     __obj.asInstanceOf[PromoteChatMemberOptions]
   }
   
-  extension [Self <: PromoteChatMemberOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromoteChatMemberOptions] (val x: Self) extends AnyVal {
     
     inline def setCan_change_info(value: Boolean): Self = StObject.set(x, "can_change_info", value.asInstanceOf[js.Any])
     

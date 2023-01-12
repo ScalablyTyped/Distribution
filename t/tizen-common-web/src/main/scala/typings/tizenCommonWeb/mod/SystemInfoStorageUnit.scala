@@ -63,7 +63,8 @@ object SystemInfoStorageUnit {
     __obj.asInstanceOf[SystemInfoStorageUnit]
   }
   
-  extension [Self <: SystemInfoStorageUnit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoStorageUnit] (val x: Self) extends AnyVal {
     
     inline def setAvailableCapacity(value: Double): Self = StObject.set(x, "availableCapacity", value.asInstanceOf[js.Any])
     

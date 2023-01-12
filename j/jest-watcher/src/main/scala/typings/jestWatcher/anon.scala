@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: ProjectConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[Header]
     }
     
-    extension [Self <: Header](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     }
@@ -67,7 +69,8 @@ object anon {
       __obj.asInstanceOf[IsWatchMode]
     }
     
-    extension [Self <: IsWatchMode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsWatchMode] (val x: Self) extends AnyVal {
       
       inline def setIsWatchMode(value: Boolean): Self = StObject.set(x, "isWatchMode", value.asInstanceOf[js.Any])
     }
@@ -93,7 +96,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyJestHookEmitter]
     }
     
-    extension [Self <: ReadonlyJestHookEmitter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyJestHookEmitter] (val x: Self) extends AnyVal {
       
       inline def setOnFileChange(value: JestHookExposedFS => Unit): Self = StObject.set(x, "onFileChange", js.Any.fromFunction1(value))
       
@@ -123,7 +127,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyJestHookSubscribe]
     }
     
-    extension [Self <: ReadonlyJestHookSubscribe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyJestHookSubscribe] (val x: Self) extends AnyVal {
       
       inline def setOnFileChange(value: FileChange => Unit): Self = StObject.set(x, "onFileChange", js.Any.fromFunction1(value))
       
@@ -146,7 +151,8 @@ object anon {
       __obj.asInstanceOf[Stdin]
     }
     
-    extension [Self <: Stdin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stdin] (val x: Self) extends AnyVal {
       
       inline def setStdin(value: ReadStream): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
       
@@ -169,7 +175,8 @@ object anon {
       __obj.asInstanceOf[Stdout]
     }
     
-    extension [Self <: Stdout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stdout] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Record[String, Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

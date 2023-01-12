@@ -23,7 +23,8 @@ object DescribeEndpointRequest {
     __obj.asInstanceOf[DescribeEndpointRequest]
   }
   
-  extension [Self <: DescribeEndpointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEndpointRequest] (val x: Self) extends AnyVal {
     
     inline def setHomeRegion(value: HomeRegion): Self = StObject.set(x, "HomeRegion", value.asInstanceOf[js.Any])
     

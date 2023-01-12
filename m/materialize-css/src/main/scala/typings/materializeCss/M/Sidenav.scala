@@ -36,7 +36,8 @@ object Sidenav {
     __obj.asInstanceOf[Sidenav]
   }
   
-  extension [Self <: Sidenav](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sidenav] (val x: Self) extends AnyVal {
     
     inline def setIsDragged(value: Boolean): Self = StObject.set(x, "isDragged", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object ShaderMaterialParameters {
     __obj.asInstanceOf[ShaderMaterialParameters]
   }
   
-  extension [Self <: ShaderMaterialParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShaderMaterialParameters] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

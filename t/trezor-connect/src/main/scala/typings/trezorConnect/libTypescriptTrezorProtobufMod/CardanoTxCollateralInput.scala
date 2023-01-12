@@ -17,7 +17,8 @@ object CardanoTxCollateralInput {
     __obj.asInstanceOf[CardanoTxCollateralInput]
   }
   
-  extension [Self <: CardanoTxCollateralInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoTxCollateralInput] (val x: Self) extends AnyVal {
     
     inline def setPrev_hash(value: String): Self = StObject.set(x, "prev_hash", value.asInstanceOf[js.Any])
     

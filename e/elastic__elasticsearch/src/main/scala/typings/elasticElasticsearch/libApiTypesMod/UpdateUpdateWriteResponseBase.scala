@@ -25,7 +25,8 @@ object UpdateUpdateWriteResponseBase {
     __obj.asInstanceOf[UpdateUpdateWriteResponseBase[TDocument]]
   }
   
-  extension [Self <: UpdateUpdateWriteResponseBase[?], TDocument](x: Self & UpdateUpdateWriteResponseBase[TDocument]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateUpdateWriteResponseBase[?], TDocument] (val x: Self & UpdateUpdateWriteResponseBase[TDocument]) extends AnyVal {
     
     inline def setGet(value: InlineGet[TDocument]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     

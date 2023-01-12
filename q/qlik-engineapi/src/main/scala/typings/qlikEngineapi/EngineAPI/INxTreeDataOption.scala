@@ -28,7 +28,8 @@ object INxTreeDataOption {
     __obj.asInstanceOf[INxTreeDataOption]
   }
   
-  extension [Self <: INxTreeDataOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxTreeDataOption] (val x: Self) extends AnyVal {
     
     inline def setMaxNbrOfNodes(value: Double): Self = StObject.set(x, "MaxNbrOfNodes", value.asInstanceOf[js.Any])
     

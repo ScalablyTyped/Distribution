@@ -26,7 +26,8 @@ object ProfileData {
     __obj.asInstanceOf[ProfileData]
   }
   
-  extension [Self <: ProfileData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileData] (val x: Self) extends AnyVal {
     
     inline def setIteratorsProfile(value: IteratorsProfile): Self = StObject.set(x, "iteratorsProfile", value.asInstanceOf[js.Any])
     

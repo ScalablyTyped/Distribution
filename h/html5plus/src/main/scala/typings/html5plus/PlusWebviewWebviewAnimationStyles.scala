@@ -36,7 +36,8 @@ object PlusWebviewWebviewAnimationStyles {
     __obj.asInstanceOf[PlusWebviewWebviewAnimationStyles]
   }
   
-  extension [Self <: PlusWebviewWebviewAnimationStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewAnimationStyles] (val x: Self) extends AnyVal {
     
     inline def setFromLeft(value: String): Self = StObject.set(x, "fromLeft", value.asInstanceOf[js.Any])
     

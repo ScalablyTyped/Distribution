@@ -31,7 +31,8 @@ object ToolBarItemMenuButton {
     __obj.asInstanceOf[ToolBarItemMenuButton]
   }
   
-  extension [Self <: ToolBarItemMenuButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolBarItemMenuButton] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

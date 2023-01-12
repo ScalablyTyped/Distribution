@@ -59,7 +59,8 @@ object libSeparatedMod {
       __obj.asInstanceOf[Separated_[E, A]]
     }
     
-    extension [Self <: Separated_[?, ?], E, A](x: Self & (Separated_[E, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Separated_[?, ?], E, A] (val x: Self & (Separated_[E, A])) extends AnyVal {
       
       inline def setLeft(value: E): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       

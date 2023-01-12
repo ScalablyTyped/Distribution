@@ -23,7 +23,8 @@ object PredictorExecution {
     __obj.asInstanceOf[PredictorExecution]
   }
   
-  extension [Self <: PredictorExecution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredictorExecution] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmArn(value: Arn): Self = StObject.set(x, "AlgorithmArn", value.asInstanceOf[js.Any])
     

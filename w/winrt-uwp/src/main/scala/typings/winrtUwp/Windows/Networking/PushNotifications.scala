@@ -124,7 +124,8 @@ object PushNotifications {
       __obj.asInstanceOf[PushNotificationReceivedEventArgs]
     }
     
-    extension [Self <: PushNotificationReceivedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PushNotificationReceivedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setBadgeNotification(value: BadgeNotification): Self = StObject.set(x, "badgeNotification", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object PushNotifications {
       __obj.asInstanceOf[RawNotification]
     }
     
-    extension [Self <: RawNotification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawNotification] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     }

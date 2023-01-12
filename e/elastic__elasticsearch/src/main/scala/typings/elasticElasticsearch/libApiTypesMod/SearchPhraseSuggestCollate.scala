@@ -20,7 +20,8 @@ object SearchPhraseSuggestCollate {
     __obj.asInstanceOf[SearchPhraseSuggestCollate]
   }
   
-  extension [Self <: SearchPhraseSuggestCollate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchPhraseSuggestCollate] (val x: Self) extends AnyVal {
     
     inline def setParams(value: Record[String, Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     

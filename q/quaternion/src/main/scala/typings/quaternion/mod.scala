@@ -287,7 +287,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[QuaternionComplexRecord]
     }
     
-    extension [Self <: QuaternionComplexRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuaternionComplexRecord] (val x: Self) extends AnyVal {
       
       inline def setIm(value: Double): Self = StObject.set(x, "im", value.asInstanceOf[js.Any])
       

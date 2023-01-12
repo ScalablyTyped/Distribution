@@ -18,7 +18,8 @@ object RegisterInstanceEventNotificationAttributesResult {
     __obj.asInstanceOf[RegisterInstanceEventNotificationAttributesResult]
   }
   
-  extension [Self <: RegisterInstanceEventNotificationAttributesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterInstanceEventNotificationAttributesResult] (val x: Self) extends AnyVal {
     
     inline def setInstanceTagAttribute(value: InstanceTagNotificationAttribute): Self = StObject.set(x, "InstanceTagAttribute", value.asInstanceOf[js.Any])
     

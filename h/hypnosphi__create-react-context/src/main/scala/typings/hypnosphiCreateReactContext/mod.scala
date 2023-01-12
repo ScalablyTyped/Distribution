@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[ConsumerProps[T]]
     }
     
-    extension [Self <: ConsumerProps[?], T](x: Self & ConsumerProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsumerProps[?], T] (val x: Self & ConsumerProps[T]) extends AnyVal {
       
       inline def setChildren(value: RenderFn[T] | js.Array[RenderFn[T]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object mod {
       __obj.asInstanceOf[Context[T]]
     }
     
-    extension [Self <: Context[?], T](x: Self & Context[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context[?], T] (val x: Self & Context[T]) extends AnyVal {
       
       inline def setConsumer(value: ComponentClass[ConsumerProps[T], ComponentState]): Self = StObject.set(x, "Consumer", value.asInstanceOf[js.Any])
       
@@ -80,7 +82,8 @@ object mod {
       __obj.asInstanceOf[ProviderProps[T]]
     }
     
-    extension [Self <: ProviderProps[?], T](x: Self & ProviderProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderProps[?], T] (val x: Self & ProviderProps[T]) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

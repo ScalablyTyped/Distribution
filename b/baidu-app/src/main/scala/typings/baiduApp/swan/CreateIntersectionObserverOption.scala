@@ -22,7 +22,8 @@ object CreateIntersectionObserverOption {
     __obj.asInstanceOf[CreateIntersectionObserverOption]
   }
   
-  extension [Self <: CreateIntersectionObserverOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateIntersectionObserverOption] (val x: Self) extends AnyVal {
     
     inline def setInitialRatio(value: Double): Self = StObject.set(x, "initialRatio", value.asInstanceOf[js.Any])
     

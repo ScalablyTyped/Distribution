@@ -35,7 +35,8 @@ object IObjectTemplateSelector {
     __obj.asInstanceOf[IObjectTemplateSelector]
   }
   
-  extension [Self <: IObjectTemplateSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjectTemplateSelector] (val x: Self) extends AnyVal {
     
     inline def setClassSelector(value: IMetadataCardControl): Self = StObject.set(x, "ClassSelector", value.asInstanceOf[js.Any])
     

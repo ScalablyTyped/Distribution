@@ -58,7 +58,8 @@ object IndexStatusInspectionResult {
     __obj.asInstanceOf[IndexStatusInspectionResult]
   }
   
-  extension [Self <: IndexStatusInspectionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexStatusInspectionResult] (val x: Self) extends AnyVal {
     
     inline def setCoverageState(value: String): Self = StObject.set(x, "coverageState", value.asInstanceOf[js.Any])
     

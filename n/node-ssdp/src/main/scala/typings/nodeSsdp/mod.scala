@@ -113,7 +113,8 @@ object mod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setExplicitSocketBind(value: Boolean): Self = StObject.set(x, "explicitSocketBind", value.asInstanceOf[js.Any])
       
@@ -179,7 +180,8 @@ object mod {
       __obj.asInstanceOf[ServerOptions]
     }
     
-    extension [Self <: ServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
       
       inline def setAdInterval(value: Double): Self = StObject.set(x, "adInterval", value.asInstanceOf[js.Any])
       
@@ -232,7 +234,8 @@ object mod {
       __obj.asInstanceOf[ServiceDescriptionLocation]
     }
     
-    extension [Self <: ServiceDescriptionLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceDescriptionLocation] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -267,7 +270,8 @@ object mod {
       __obj.asInstanceOf[SsdpHeaders]
     }
     
-    extension [Self <: SsdpHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SsdpHeaders] (val x: Self) extends AnyVal {
       
       inline def setLOCATION(value: String): Self = StObject.set(x, "LOCATION", value.asInstanceOf[js.Any])
       
@@ -325,7 +329,8 @@ object mod {
       __obj.asInstanceOf[SsdpOptions]
     }
     
-    extension [Self <: SsdpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SsdpOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomLogger(value: (/* format */ String, /* repeated */ Any) => Unit): Self = StObject.set(x, "customLogger", js.Any.fromFunction2(value))
       

@@ -39,7 +39,8 @@ object Appsurl {
     __obj.asInstanceOf[Appsurl]
   }
   
-  extension [Self <: Appsurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Appsurl] (val x: Self) extends AnyVal {
     
     inline def setApps(value: js.Array[Slug]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
     

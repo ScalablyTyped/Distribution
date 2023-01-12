@@ -42,7 +42,8 @@ object DocumentCloser {
     __obj.asInstanceOf[DocumentCloser]
   }
   
-  extension [Self <: DocumentCloser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentCloser] (val x: Self) extends AnyVal {
     
     inline def setDocumentCloserCtor1(value: XFrame => Unit): Self = StObject.set(x, "DocumentCloserCtor1", js.Any.fromFunction1(value))
   }

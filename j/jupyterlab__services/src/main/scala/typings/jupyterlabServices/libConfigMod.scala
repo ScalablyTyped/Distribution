@@ -45,7 +45,8 @@ object libConfigMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -125,7 +126,8 @@ object libConfigMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
@@ -169,7 +171,8 @@ object libConfigMod {
       __obj.asInstanceOf[IConfigSection]
     }
     
-    extension [Self <: IConfigSection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConfigSection] (val x: Self) extends AnyVal {
       
       inline def setData(value: JSONObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

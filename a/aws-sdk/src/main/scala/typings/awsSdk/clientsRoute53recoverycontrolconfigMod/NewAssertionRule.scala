@@ -44,7 +44,8 @@ object NewAssertionRule {
     __obj.asInstanceOf[NewAssertionRule]
   }
   
-  extension [Self <: NewAssertionRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewAssertionRule] (val x: Self) extends AnyVal {
     
     inline def setAssertedControls(value: listOfStringMin1Max256PatternAZaZ09): Self = StObject.set(x, "AssertedControls", value.asInstanceOf[js.Any])
     

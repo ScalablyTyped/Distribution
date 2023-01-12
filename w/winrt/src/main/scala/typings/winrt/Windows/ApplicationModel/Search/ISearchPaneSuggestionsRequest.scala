@@ -23,7 +23,8 @@ object ISearchPaneSuggestionsRequest {
     __obj.asInstanceOf[ISearchPaneSuggestionsRequest]
   }
   
-  extension [Self <: ISearchPaneSuggestionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchPaneSuggestionsRequest] (val x: Self) extends AnyVal {
     
     inline def setGetDeferral(value: () => SearchPaneSuggestionsRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     

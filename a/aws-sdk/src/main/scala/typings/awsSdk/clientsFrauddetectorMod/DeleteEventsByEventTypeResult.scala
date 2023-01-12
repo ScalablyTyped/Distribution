@@ -23,7 +23,8 @@ object DeleteEventsByEventTypeResult {
     __obj.asInstanceOf[DeleteEventsByEventTypeResult]
   }
   
-  extension [Self <: DeleteEventsByEventTypeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEventsByEventTypeResult] (val x: Self) extends AnyVal {
     
     inline def setEventTypeName(value: identifier): Self = StObject.set(x, "eventTypeName", value.asInstanceOf[js.Any])
     

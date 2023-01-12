@@ -68,7 +68,8 @@ object LogarithmicScaleOptions {
     __obj.asInstanceOf[LogarithmicScaleOptions]
   }
   
-  extension [Self <: LogarithmicScaleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogarithmicScaleOptions] (val x: Self) extends AnyVal {
     
     inline def setSuggestedMax(value: Double): Self = StObject.set(x, "suggestedMax", value.asInstanceOf[js.Any])
     

@@ -70,7 +70,8 @@ object libSrcArmProxyModelsArmResourceGroupMod {
       __obj.asInstanceOf[ResourceGroup]
     }
     
-    extension [Self <: ResourceGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceGroup] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object libSrcArmProxyModelsArmResourceGroupMod {
       __obj.asInstanceOf[ResourceGroupProperties]
     }
     
-    extension [Self <: ResourceGroupProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceGroupProperties] (val x: Self) extends AnyVal {
       
       inline def setLockState(value: String): Self = StObject.set(x, "lockState", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object SmsMfaConfigType {
     __obj.asInstanceOf[SmsMfaConfigType]
   }
   
-  extension [Self <: SmsMfaConfigType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmsMfaConfigType] (val x: Self) extends AnyVal {
     
     inline def setSmsAuthenticationMessage(value: SmsVerificationMessageType): Self = StObject.set(x, "SmsAuthenticationMessage", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object IdToken {
     __obj.asInstanceOf[IdToken]
   }
   
-  extension [Self <: IdToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdToken] (val x: Self) extends AnyVal {
     
     inline def setAvailable(value: UnknownObject): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     

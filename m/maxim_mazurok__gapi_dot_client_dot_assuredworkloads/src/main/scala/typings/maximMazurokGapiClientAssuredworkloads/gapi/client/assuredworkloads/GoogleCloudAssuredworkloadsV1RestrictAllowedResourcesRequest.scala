@@ -16,7 +16,8 @@ object GoogleCloudAssuredworkloadsV1RestrictAllowedResourcesRequest {
     __obj.asInstanceOf[GoogleCloudAssuredworkloadsV1RestrictAllowedResourcesRequest]
   }
   
-  extension [Self <: GoogleCloudAssuredworkloadsV1RestrictAllowedResourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudAssuredworkloadsV1RestrictAllowedResourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setRestrictionType(value: String): Self = StObject.set(x, "restrictionType", value.asInstanceOf[js.Any])
     

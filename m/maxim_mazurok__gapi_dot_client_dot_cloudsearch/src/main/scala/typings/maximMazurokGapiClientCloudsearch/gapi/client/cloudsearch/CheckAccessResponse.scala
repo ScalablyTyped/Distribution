@@ -16,7 +16,8 @@ object CheckAccessResponse {
     __obj.asInstanceOf[CheckAccessResponse]
   }
   
-  extension [Self <: CheckAccessResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckAccessResponse] (val x: Self) extends AnyVal {
     
     inline def setHasAccess(value: Boolean): Self = StObject.set(x, "hasAccess", value.asInstanceOf[js.Any])
     

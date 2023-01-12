@@ -21,7 +21,8 @@ object Hotel {
     __obj.asInstanceOf[Hotel]
   }
   
-  extension [Self <: Hotel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hotel] (val x: Self) extends AnyVal {
     
     inline def setDeep_type(value: HOTEL): Self = StObject.set(x, "deep_type", value.asInstanceOf[js.Any])
     

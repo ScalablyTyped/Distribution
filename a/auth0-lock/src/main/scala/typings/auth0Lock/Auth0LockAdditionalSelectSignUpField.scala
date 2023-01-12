@@ -36,7 +36,8 @@ object Auth0LockAdditionalSelectSignUpField {
     __obj.asInstanceOf[Auth0LockAdditionalSelectSignUpField]
   }
   
-  extension [Self <: Auth0LockAdditionalSelectSignUpField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auth0LockAdditionalSelectSignUpField] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object StartPollingOptions {
     __obj.asInstanceOf[StartPollingOptions]
   }
   
-  extension [Self <: StartPollingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartPollingOptions] (val x: Self) extends AnyVal {
     
     inline def setRestart(value: Boolean): Self = StObject.set(x, "restart", value.asInstanceOf[js.Any])
     

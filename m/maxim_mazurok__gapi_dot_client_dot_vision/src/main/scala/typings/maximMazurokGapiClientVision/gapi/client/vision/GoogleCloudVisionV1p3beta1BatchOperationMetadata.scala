@@ -22,7 +22,8 @@ object GoogleCloudVisionV1p3beta1BatchOperationMetadata {
     __obj.asInstanceOf[GoogleCloudVisionV1p3beta1BatchOperationMetadata]
   }
   
-  extension [Self <: GoogleCloudVisionV1p3beta1BatchOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p3beta1BatchOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

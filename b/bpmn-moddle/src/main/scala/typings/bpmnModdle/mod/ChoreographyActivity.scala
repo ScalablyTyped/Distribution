@@ -37,7 +37,8 @@ object ChoreographyActivity {
     __obj.asInstanceOf[ChoreographyActivity]
   }
   
-  extension [Self <: ChoreographyActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChoreographyActivity] (val x: Self) extends AnyVal {
     
     inline def setCorrelationKeys(value: js.Array[CorrelationKey]): Self = StObject.set(x, "correlationKeys", value.asInstanceOf[js.Any])
     

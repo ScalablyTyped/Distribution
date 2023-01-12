@@ -16,7 +16,8 @@ object Dpobj {
     __obj.asInstanceOf[Dpobj]
   }
   
-  extension [Self <: Dpobj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dpobj] (val x: Self) extends AnyVal {
     
     inline def setDpobj(value: ASN1Object): Self = StObject.set(x, "dpobj", value.asInstanceOf[js.Any])
   }

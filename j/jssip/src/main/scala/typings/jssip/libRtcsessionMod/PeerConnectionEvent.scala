@@ -15,7 +15,8 @@ object PeerConnectionEvent {
     __obj.asInstanceOf[PeerConnectionEvent]
   }
   
-  extension [Self <: PeerConnectionEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeerConnectionEvent] (val x: Self) extends AnyVal {
     
     inline def setPeerconnection(value: RTCPeerConnectionDeprecated): Self = StObject.set(x, "peerconnection", value.asInstanceOf[js.Any])
   }

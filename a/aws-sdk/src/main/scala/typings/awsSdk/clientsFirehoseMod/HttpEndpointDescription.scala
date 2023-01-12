@@ -23,7 +23,8 @@ object HttpEndpointDescription {
     __obj.asInstanceOf[HttpEndpointDescription]
   }
   
-  extension [Self <: HttpEndpointDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpEndpointDescription] (val x: Self) extends AnyVal {
     
     inline def setName(value: HttpEndpointName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

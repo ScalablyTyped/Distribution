@@ -31,7 +31,8 @@ object FragmentProps {
     __obj.asInstanceOf[FragmentProps]
   }
   
-  extension [Self <: FragmentProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FragmentProps] (val x: Self) extends AnyVal {
     
     inline def setForNoMatch(value: Boolean): Self = StObject.set(x, "forNoMatch", value.asInstanceOf[js.Any])
     

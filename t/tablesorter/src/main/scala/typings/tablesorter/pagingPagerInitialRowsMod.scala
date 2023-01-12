@@ -25,7 +25,8 @@ object pagingPagerInitialRowsMod {
       __obj.asInstanceOf[PagerInitialRows]
     }
     
-    extension [Self <: PagerInitialRows](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagerInitialRows] (val x: Self) extends AnyVal {
       
       inline def setFiltered(value: Double): Self = StObject.set(x, "filtered", value.asInstanceOf[js.Any])
       

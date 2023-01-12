@@ -18,7 +18,8 @@ object QueuesStartEvent {
     __obj.asInstanceOf[QueuesStartEvent]
   }
   
-  extension [Self <: QueuesStartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueuesStartEvent] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: `queues-start`): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
   }

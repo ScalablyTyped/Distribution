@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -68,7 +69,8 @@ object anon {
       __obj.asInstanceOf[OmitReceivedNotificationu]
     }
     
-    extension [Self <: OmitReceivedNotificationu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitReceivedNotificationu] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -111,7 +113,8 @@ object anon {
       __obj.asInstanceOf[Os]
     }
     
-    extension [Self <: Os](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Os] (val x: Self) extends AnyVal {
       
       inline def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
       

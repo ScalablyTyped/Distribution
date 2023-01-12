@@ -33,7 +33,8 @@ object PagePermission {
     __obj.asInstanceOf[PagePermission]
   }
   
-  extension [Self <: PagePermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PagePermission] (val x: Self) extends AnyVal {
     
     inline def setAffiliation(value: outside | direct | all): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
     

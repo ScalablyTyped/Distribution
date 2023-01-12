@@ -41,7 +41,8 @@ object INxAttrExprInfo {
     __obj.asInstanceOf[INxAttrExprInfo]
   }
   
-  extension [Self <: INxAttrExprInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxAttrExprInfo] (val x: Self) extends AnyVal {
     
     inline def setQContinuousAxes(value: Boolean): Self = StObject.set(x, "qContinuousAxes", value.asInstanceOf[js.Any])
     

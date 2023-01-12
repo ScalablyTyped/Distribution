@@ -32,7 +32,8 @@ object distSrcInternalsRequestsMod {
       __obj.asInstanceOf[ApiRequestBody]
     }
     
-    extension [Self <: ApiRequestBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApiRequestBody] (val x: Self) extends AnyVal {
       
       inline def setWeb(value: ApplicationPubKey): Self = StObject.set(x, "web", value.asInstanceOf[js.Any])
     }
@@ -51,7 +52,8 @@ object distSrcInternalsRequestsMod {
       __obj.asInstanceOf[ApiResponse]
     }
     
-    extension [Self <: ApiResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApiResponse] (val x: Self) extends AnyVal {
       
       inline def setError(value: Message): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

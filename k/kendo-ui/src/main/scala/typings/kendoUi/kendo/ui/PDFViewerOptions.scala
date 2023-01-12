@@ -39,7 +39,8 @@ object PDFViewerOptions {
     __obj.asInstanceOf[PDFViewerOptions]
   }
   
-  extension [Self <: PDFViewerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFViewerOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultPageSize(value: PDFViewerDefaultPageSize): Self = StObject.set(x, "defaultPageSize", value.asInstanceOf[js.Any])
     

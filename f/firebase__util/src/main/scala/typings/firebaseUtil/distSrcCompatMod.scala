@@ -24,7 +24,8 @@ object distSrcCompatMod {
       __obj.asInstanceOf[Compat[T]]
     }
     
-    extension [Self <: Compat[?], T](x: Self & Compat[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compat[?], T] (val x: Self & Compat[T]) extends AnyVal {
       
       inline def set_delegate(value: T): Self = StObject.set(x, "_delegate", value.asInstanceOf[js.Any])
     }

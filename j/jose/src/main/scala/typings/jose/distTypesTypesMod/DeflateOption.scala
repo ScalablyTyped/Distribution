@@ -19,7 +19,8 @@ object DeflateOption {
     __obj.asInstanceOf[DeflateOption]
   }
   
-  extension [Self <: DeflateOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeflateOption] (val x: Self) extends AnyVal {
     
     inline def setDeflateRaw(value: /* input */ js.typedarray.Uint8Array => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "deflateRaw", js.Any.fromFunction1(value))
     

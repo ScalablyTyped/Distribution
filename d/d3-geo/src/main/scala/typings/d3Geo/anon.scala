@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[`0`[T]]
     }
     
-    extension [Self <: `0`[?], T /* <: GeoTransformPrototype */](x: Self & `0`[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`[?], T /* <: GeoTransformPrototype */] (val x: Self & `0`[T]) extends AnyVal {
       
       inline def setStream(value: GeoStream_ => T & GeoStream_): Self = StObject.set(x, "stream", js.Any.fromFunction1(value))
     }
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Properties]
     }
     
-    extension [Self <: Properties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Properties] (val x: Self) extends AnyVal {
       
       inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
@@ -58,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Stream]
     }
     
-    extension [Self <: Stream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
       
       inline def setStream(value: GeoStream_): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }

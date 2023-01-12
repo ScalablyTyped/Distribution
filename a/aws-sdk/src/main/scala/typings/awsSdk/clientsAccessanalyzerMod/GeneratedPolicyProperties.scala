@@ -28,7 +28,8 @@ object GeneratedPolicyProperties {
     __obj.asInstanceOf[GeneratedPolicyProperties]
   }
   
-  extension [Self <: GeneratedPolicyProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneratedPolicyProperties] (val x: Self) extends AnyVal {
     
     inline def setCloudTrailProperties(value: CloudTrailProperties): Self = StObject.set(x, "cloudTrailProperties", value.asInstanceOf[js.Any])
     

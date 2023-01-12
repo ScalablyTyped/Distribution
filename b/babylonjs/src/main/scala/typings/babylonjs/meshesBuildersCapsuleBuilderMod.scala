@@ -93,7 +93,8 @@ object meshesBuildersCapsuleBuilderMod {
       __obj.asInstanceOf[ICreateCapsuleOptions]
     }
     
-    extension [Self <: ICreateCapsuleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICreateCapsuleOptions] (val x: Self) extends AnyVal {
       
       inline def setBottomCapSubdivisions(value: Double): Self = StObject.set(x, "bottomCapSubdivisions", value.asInstanceOf[js.Any])
       

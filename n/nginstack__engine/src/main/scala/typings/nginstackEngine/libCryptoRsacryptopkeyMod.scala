@@ -58,7 +58,8 @@ object libCryptoRsacryptopkeyMod {
       __obj.asInstanceOf[RSACryptoPKey]
     }
     
-    extension [Self <: RSACryptoPKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RSACryptoPKey] (val x: Self) extends AnyVal {
       
       inline def setPrivateDecrypt(value: (String, Double) => String): Self = StObject.set(x, "privateDecrypt", js.Any.fromFunction2(value))
       

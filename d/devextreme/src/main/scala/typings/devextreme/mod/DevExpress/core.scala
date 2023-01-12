@@ -65,7 +65,8 @@ object core {
       __obj.asInstanceOf[DefaultOptionsRule[T]]
     }
     
-    extension [Self <: DefaultOptionsRule[?], T](x: Self & DefaultOptionsRule[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultOptionsRule[?], T] (val x: Self & DefaultOptionsRule[T]) extends AnyVal {
       
       inline def setDevice(value: Device | js.Array[Device] | (js.Function1[/* device */ Device, Boolean])): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
@@ -129,7 +130,8 @@ object core {
       __obj.asInstanceOf[FunctionTemplate]
     }
     
-    extension [Self <: FunctionTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionTemplate] (val x: Self) extends AnyVal {
       
       inline def setRender(value: Container => DxElement_[HTMLElement]): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     }
@@ -159,7 +161,8 @@ object core {
       __obj.asInstanceOf[TemplateManager]
     }
     
-    extension [Self <: TemplateManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateManager] (val x: Self) extends AnyVal {
       
       inline def setAddDefaultTemplates(value: Record[String, Any] => Unit): Self = StObject.set(x, "addDefaultTemplates", js.Any.fromFunction1(value))
       
@@ -207,7 +210,8 @@ object core {
       __obj.asInstanceOf[dxTemplateOptions]
     }
     
-    extension [Self <: dxTemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: dxTemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

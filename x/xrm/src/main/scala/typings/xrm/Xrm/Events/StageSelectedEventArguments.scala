@@ -23,7 +23,8 @@ object StageSelectedEventArguments {
     __obj.asInstanceOf[StageSelectedEventArguments]
   }
   
-  extension [Self <: StageSelectedEventArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StageSelectedEventArguments] (val x: Self) extends AnyVal {
     
     inline def setGetStage(value: () => Stage): Self = StObject.set(x, "getStage", js.Any.fromFunction0(value))
   }

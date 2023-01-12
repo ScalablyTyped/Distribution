@@ -220,7 +220,8 @@ object buildCompilerMod {
       __obj.asInstanceOf[CreateOptions]
     }
     
-    extension [Self <: CreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOptions] (val x: Self) extends AnyVal {
       
       inline def setCompiler(value: String): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
@@ -375,7 +376,8 @@ object buildCompilerMod {
       __obj.asInstanceOf[RegisterOptions]
     }
     
-    extension [Self <: RegisterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisterOptions] (val x: Self) extends AnyVal {
       
       inline def setExperimentalResolverFeatures(value: Boolean): Self = StObject.set(x, "experimentalResolverFeatures", value.asInstanceOf[js.Any])
       

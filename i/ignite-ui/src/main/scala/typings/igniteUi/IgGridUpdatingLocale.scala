@@ -67,7 +67,8 @@ object IgGridUpdatingLocale {
     __obj.asInstanceOf[IgGridUpdatingLocale]
   }
   
-  extension [Self <: IgGridUpdatingLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridUpdatingLocale] (val x: Self) extends AnyVal {
     
     inline def setAddRowLabel(value: String): Self = StObject.set(x, "addRowLabel", value.asInstanceOf[js.Any])
     

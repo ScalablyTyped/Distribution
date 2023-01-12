@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[BaseDir]
     }
     
-    extension [Self <: BaseDir](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseDir] (val x: Self) extends AnyVal {
       
       inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[OmitProjectArgsname]
     }
     
-    extension [Self <: OmitProjectArgsname](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitProjectArgsname] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: DirJSON): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object anon {
       __obj.asInstanceOf[OmitProjectArgsnameversio]
     }
     
-    extension [Self <: OmitProjectArgsnameversio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitProjectArgsnameversio] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: DirJSON): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -112,7 +115,8 @@ object anon {
       __obj.asInstanceOf[Project]
     }
     
-    extension [Self <: Project](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Project] (val x: Self) extends AnyVal {
       
       inline def setProject(value: typings.fixturifyProject.mod.Project): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
@@ -137,7 +141,8 @@ object anon {
       __obj.asInstanceOf[RequestedRange]
     }
     
-    extension [Self <: RequestedRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestedRange] (val x: Self) extends AnyVal {
       
       inline def setRequestedRange(value: String): Self = StObject.set(x, "requestedRange", value.asInstanceOf[js.Any])
       

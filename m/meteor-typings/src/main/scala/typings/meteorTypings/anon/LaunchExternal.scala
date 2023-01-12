@@ -17,7 +17,8 @@ object LaunchExternal {
     __obj.asInstanceOf[LaunchExternal]
   }
   
-  extension [Self <: LaunchExternal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchExternal] (val x: Self) extends AnyVal {
     
     inline def setLaunchExternal(value: Boolean): Self = StObject.set(x, "launchExternal", value.asInstanceOf[js.Any])
     

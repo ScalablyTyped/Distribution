@@ -28,7 +28,8 @@ object AutoMLJobCompletionCriteria {
     __obj.asInstanceOf[AutoMLJobCompletionCriteria]
   }
   
-  extension [Self <: AutoMLJobCompletionCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoMLJobCompletionCriteria] (val x: Self) extends AnyVal {
     
     inline def setMaxAutoMLJobRuntimeInSeconds(value: MaxAutoMLJobRuntimeInSeconds): Self = StObject.set(x, "MaxAutoMLJobRuntimeInSeconds", value.asInstanceOf[js.Any])
     

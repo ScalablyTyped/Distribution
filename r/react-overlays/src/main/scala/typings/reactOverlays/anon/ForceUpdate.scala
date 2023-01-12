@@ -36,7 +36,8 @@ object ForceUpdate {
     __obj.asInstanceOf[ForceUpdate]
   }
   
-  extension [Self <: ForceUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForceUpdate] (val x: Self) extends AnyVal {
     
     inline def setArrowProps(value: (Record[String, Any]) & Ref): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
     

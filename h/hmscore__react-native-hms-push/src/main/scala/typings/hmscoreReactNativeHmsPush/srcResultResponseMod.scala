@@ -24,7 +24,8 @@ object srcResultResponseMod {
       __obj.asInstanceOf[ErrorResponse]
     }
     
-    extension [Self <: ErrorResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorResponse] (val x: Self) extends AnyVal {
       
       inline def setCode(value: HmsPushResultCodeEnum): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object srcResultResponseMod {
       __obj.asInstanceOf[ResultResponse[T]]
     }
     
-    extension [Self <: ResultResponse[?], T](x: Self & ResultResponse[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultResponse[?], T] (val x: Self & ResultResponse[T]) extends AnyVal {
       
       inline def setResult(value: T): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object ProfileSettings {
     __obj.asInstanceOf[ProfileSettings]
   }
   
-  extension [Self <: ProfileSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileSettings] (val x: Self) extends AnyVal {
     
     inline def setFriendsListVisibility(value: String): Self = StObject.set(x, "friendsListVisibility", value.asInstanceOf[js.Any])
     

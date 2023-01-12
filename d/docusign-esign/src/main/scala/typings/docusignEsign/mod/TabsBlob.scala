@@ -275,7 +275,8 @@ object TabsBlob {
     __obj.asInstanceOf[TabsBlob]
   }
   
-  extension [Self <: TabsBlob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabsBlob] (val x: Self) extends AnyVal {
     
     inline def setAllowTabOrder(value: String): Self = StObject.set(x, "allowTabOrder", value.asInstanceOf[js.Any])
     

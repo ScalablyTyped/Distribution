@@ -16,7 +16,8 @@ object KnockstrapStringTemplate {
     __obj.asInstanceOf[KnockstrapStringTemplate]
   }
   
-  extension [Self <: KnockstrapStringTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockstrapStringTemplate] (val x: Self) extends AnyVal {
     
     inline def setTemplateName(value: String): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
   }

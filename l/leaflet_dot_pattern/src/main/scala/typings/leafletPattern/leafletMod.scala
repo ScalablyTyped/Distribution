@@ -135,7 +135,8 @@ object leafletMod {
       __obj.asInstanceOf[PathOptions]
     }
     
-    extension [Self <: PathOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathOptions] (val x: Self) extends AnyVal {
       
       inline def setFillPattern(value: Pattern | StripePattern_): Self = StObject.set(x, "fillPattern", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object leafletMod {
       __obj.asInstanceOf[PatternCircleOptions]
     }
     
-    extension [Self <: PatternCircleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatternCircleOptions] (val x: Self) extends AnyVal {
       
       inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
@@ -201,7 +203,8 @@ object leafletMod {
       __obj.asInstanceOf[PatternOptions]
     }
     
-    extension [Self <: PatternOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatternOptions] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -254,7 +257,8 @@ object leafletMod {
       __obj.asInstanceOf[PatternPathOptions]
     }
     
-    extension [Self <: PatternPathOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatternPathOptions] (val x: Self) extends AnyVal {
       
       inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       
@@ -287,7 +291,8 @@ object leafletMod {
       __obj.asInstanceOf[PatternRectOptions]
     }
     
-    extension [Self <: PatternRectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatternRectOptions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -354,7 +359,8 @@ object leafletMod {
       __obj.asInstanceOf[PatternShapeOptions]
     }
     
-    extension [Self <: PatternShapeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatternShapeOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -441,7 +447,8 @@ object leafletMod {
       __obj.asInstanceOf[StripePatternOptions]
     }
     
-    extension [Self <: StripePatternOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StripePatternOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

@@ -50,7 +50,8 @@ object GEHtmlStringBalloon {
     __obj.asInstanceOf[GEHtmlStringBalloon]
   }
   
-  extension [Self <: GEHtmlStringBalloon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GEHtmlStringBalloon] (val x: Self) extends AnyVal {
     
     inline def setGetContentString(value: () => String): Self = StObject.set(x, "getContentString", js.Any.fromFunction0(value))
     

@@ -19,7 +19,8 @@ object DataSourceSheetDimensionRange {
     __obj.asInstanceOf[DataSourceSheetDimensionRange]
   }
   
-  extension [Self <: DataSourceSheetDimensionRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceSheetDimensionRange] (val x: Self) extends AnyVal {
     
     inline def setColumnReferences(value: js.Array[DataSourceColumnReference]): Self = StObject.set(x, "columnReferences", value.asInstanceOf[js.Any])
     

@@ -93,7 +93,8 @@ object smarttags {
       __obj.asInstanceOf[XRangeBasedSmartTagRecognizer]
     }
     
-    extension [Self <: XRangeBasedSmartTagRecognizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XRangeBasedSmartTagRecognizer] (val x: Self) extends AnyVal {
       
       inline def setRecognizeTextRange(value: (XTextRange, SmartTagRecognizerMode, XTextMarkup, String, XController) => Unit): Self = StObject.set(x, "recognizeTextRange", js.Any.fromFunction5(value))
     }
@@ -262,7 +263,8 @@ object smarttags {
       __obj.asInstanceOf[XSmartTagAction]
     }
     
-    extension [Self <: XSmartTagAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSmartTagAction] (val x: Self) extends AnyVal {
       
       inline def setGetActionCaptionFromID(value: (Double, String, Locale, XStringKeyMap, String, String, XController, XTextRange) => String): Self = StObject.set(x, "getActionCaptionFromID", js.Any.fromFunction8(value))
       
@@ -392,7 +394,8 @@ object smarttags {
       __obj.asInstanceOf[XSmartTagRecognizer]
     }
     
-    extension [Self <: XSmartTagRecognizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSmartTagRecognizer] (val x: Self) extends AnyVal {
       
       inline def setDisplayPropertyPage(value: (Double, Locale) => Unit): Self = StObject.set(x, "displayPropertyPage", js.Any.fromFunction2(value))
       

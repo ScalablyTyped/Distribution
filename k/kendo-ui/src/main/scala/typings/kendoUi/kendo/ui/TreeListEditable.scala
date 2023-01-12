@@ -21,7 +21,8 @@ object TreeListEditable {
     __obj.asInstanceOf[TreeListEditable]
   }
   
-  extension [Self <: TreeListEditable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListEditable] (val x: Self) extends AnyVal {
     
     inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

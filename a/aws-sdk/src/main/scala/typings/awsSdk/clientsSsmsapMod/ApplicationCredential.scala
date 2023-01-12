@@ -28,7 +28,8 @@ object ApplicationCredential {
     __obj.asInstanceOf[ApplicationCredential]
   }
   
-  extension [Self <: ApplicationCredential](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationCredential] (val x: Self) extends AnyVal {
     
     inline def setCredentialType(value: CredentialType): Self = StObject.set(x, "CredentialType", value.asInstanceOf[js.Any])
     

@@ -90,7 +90,8 @@ object PhysicsImpostorParameters {
     __obj.asInstanceOf[PhysicsImpostorParameters]
   }
   
-  extension [Self <: PhysicsImpostorParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhysicsImpostorParameters] (val x: Self) extends AnyVal {
     
     inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
     

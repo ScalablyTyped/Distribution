@@ -39,7 +39,8 @@ object DefaultZoomLevel {
     __obj.asInstanceOf[DefaultZoomLevel]
   }
   
-  extension [Self <: DefaultZoomLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultZoomLevel] (val x: Self) extends AnyVal {
     
     inline def setAnimationTime(value: Double): Self = StObject.set(x, "animationTime", value.asInstanceOf[js.Any])
     

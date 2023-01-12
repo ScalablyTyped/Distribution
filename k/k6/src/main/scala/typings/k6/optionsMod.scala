@@ -83,7 +83,8 @@ object optionsMod {
       __obj.asInstanceOf[Certificate]
     }
     
-    extension [Self <: Certificate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Certificate] (val x: Self) extends AnyVal {
       
       inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
@@ -223,7 +224,8 @@ object optionsMod {
       __obj.asInstanceOf[ObjectThreshold]
     }
     
-    extension [Self <: ObjectThreshold](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectThreshold] (val x: Self) extends AnyVal {
       
       inline def setAbortOnFail(value: Boolean): Self = StObject.set(x, "abortOnFail", value.asInstanceOf[js.Any])
       
@@ -360,7 +362,8 @@ object optionsMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBatch(value: Double): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
       
@@ -670,7 +673,8 @@ object optionsMod {
       __obj.asInstanceOf[Stage]
     }
     
-    extension [Self <: Stage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stage] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       

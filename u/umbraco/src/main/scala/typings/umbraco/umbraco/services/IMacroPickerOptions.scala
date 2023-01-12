@@ -19,7 +19,8 @@ object IMacroPickerOptions {
     __obj.asInstanceOf[IMacroPickerOptions]
   }
   
-  extension [Self <: IMacroPickerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMacroPickerOptions] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
   }

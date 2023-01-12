@@ -61,7 +61,8 @@ object buildHooksUseFocusManagerMod {
       __obj.asInstanceOf[Output]
     }
     
-    extension [Self <: Output](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
       
       inline def setDisableFocus(value: () => Unit): Self = StObject.set(x, "disableFocus", js.Any.fromFunction0(value))
       

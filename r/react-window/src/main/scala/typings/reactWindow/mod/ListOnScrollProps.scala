@@ -19,7 +19,8 @@ object ListOnScrollProps {
     __obj.asInstanceOf[ListOnScrollProps]
   }
   
-  extension [Self <: ListOnScrollProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListOnScrollProps] (val x: Self) extends AnyVal {
     
     inline def setScrollDirection(value: ScrollDirection): Self = StObject.set(x, "scrollDirection", value.asInstanceOf[js.Any])
     

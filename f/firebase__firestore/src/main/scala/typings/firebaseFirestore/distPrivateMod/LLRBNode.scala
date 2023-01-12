@@ -95,7 +95,8 @@ object LLRBNode {
     __obj.asInstanceOf[LLRBNode[K, V]]
   }
   
-  extension [Self <: LLRBNode[?, ?], K, V](x: Self & (LLRBNode[K, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LLRBNode[?, ?], K, V] (val x: Self & (LLRBNode[K, V])) extends AnyVal {
     
     inline def setCheck(value: () => Double): Self = StObject.set(x, "check", js.Any.fromFunction0(value))
     

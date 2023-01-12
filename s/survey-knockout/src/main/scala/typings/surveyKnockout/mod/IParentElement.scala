@@ -19,7 +19,8 @@ object IParentElement {
     __obj.asInstanceOf[IParentElement]
   }
   
-  extension [Self <: IParentElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IParentElement] (val x: Self) extends AnyVal {
     
     inline def setAddElement(value: (IElement, Double) => Any): Self = StObject.set(x, "addElement", js.Any.fromFunction2(value))
     

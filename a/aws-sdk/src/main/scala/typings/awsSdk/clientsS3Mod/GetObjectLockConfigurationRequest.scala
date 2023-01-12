@@ -23,7 +23,8 @@ object GetObjectLockConfigurationRequest {
     __obj.asInstanceOf[GetObjectLockConfigurationRequest]
   }
   
-  extension [Self <: GetObjectLockConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectLockConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

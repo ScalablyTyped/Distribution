@@ -92,7 +92,8 @@ object Device {
       __obj.asInstanceOf[CaptureFileResponse]
     }
     
-    extension [Self <: CaptureFileResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptureFileResponse] (val x: Self) extends AnyVal {
       
       inline def setFileContent(value: String): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object Device {
       __obj.asInstanceOf[CaptureImageOptions]
     }
     
-    extension [Self <: CaptureImageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptureImageOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowEdit(value: Boolean): Self = StObject.set(x, "allowEdit", value.asInstanceOf[js.Any])
       
@@ -177,7 +179,8 @@ object Device {
       __obj.asInstanceOf[GetCurrentPositionResponse]
     }
     
-    extension [Self <: GetCurrentPositionResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetCurrentPositionResponse] (val x: Self) extends AnyVal {
       
       inline def setCoords(value: Any): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
@@ -212,7 +215,8 @@ object Device {
       __obj.asInstanceOf[PickFileOptions]
     }
     
-    extension [Self <: PickFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickFileOptions] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: PickFileTypes): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object TargetApi {
     __obj.asInstanceOf[TargetApi]
   }
   
-  extension [Self <: TargetApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetApi] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object MobileBroadbandDeviceServiceCommandResult {
     __obj.asInstanceOf[MobileBroadbandDeviceServiceCommandResult]
   }
   
-  extension [Self <: MobileBroadbandDeviceServiceCommandResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileBroadbandDeviceServiceCommandResult] (val x: Self) extends AnyVal {
     
     inline def setResponseData(value: IBuffer): Self = StObject.set(x, "responseData", value.asInstanceOf[js.Any])
     

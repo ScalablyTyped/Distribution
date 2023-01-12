@@ -17,7 +17,8 @@ object IOCRPageResults {
     __obj.asInstanceOf[IOCRPageResults]
   }
   
-  extension [Self <: IOCRPageResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOCRPageResults] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object geotriggersInfoExpressionInfoProperties {
     __obj.asInstanceOf[geotriggersInfoExpressionInfoProperties]
   }
   
-  extension [Self <: geotriggersInfoExpressionInfoProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: geotriggersInfoExpressionInfoProperties] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

@@ -66,7 +66,8 @@ object InkStrokeBuilder {
     __obj.asInstanceOf[InkStrokeBuilder]
   }
   
-  extension [Self <: InkStrokeBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InkStrokeBuilder] (val x: Self) extends AnyVal {
     
     inline def setAppendToStroke(value: PointerPoint => PointerPoint): Self = StObject.set(x, "appendToStroke", js.Any.fromFunction1(value))
     

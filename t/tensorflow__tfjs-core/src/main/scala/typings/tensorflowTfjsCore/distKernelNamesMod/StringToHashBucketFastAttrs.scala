@@ -15,7 +15,8 @@ object StringToHashBucketFastAttrs {
     __obj.asInstanceOf[StringToHashBucketFastAttrs]
   }
   
-  extension [Self <: StringToHashBucketFastAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringToHashBucketFastAttrs] (val x: Self) extends AnyVal {
     
     inline def setNumBuckets(value: Double): Self = StObject.set(x, "numBuckets", value.asInstanceOf[js.Any])
   }

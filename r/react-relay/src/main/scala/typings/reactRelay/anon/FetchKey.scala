@@ -22,7 +22,8 @@ object FetchKey {
     __obj.asInstanceOf[FetchKey]
   }
   
-  extension [Self <: FetchKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchKey] (val x: Self) extends AnyVal {
     
     inline def setFetchKey(value: String | Double): Self = StObject.set(x, "fetchKey", value.asInstanceOf[js.Any])
     

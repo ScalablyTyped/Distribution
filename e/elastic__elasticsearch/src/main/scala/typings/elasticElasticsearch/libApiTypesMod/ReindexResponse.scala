@@ -45,7 +45,8 @@ object ReindexResponse {
     __obj.asInstanceOf[ReindexResponse]
   }
   
-  extension [Self <: ReindexResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReindexResponse] (val x: Self) extends AnyVal {
     
     inline def setBatches(value: long): Self = StObject.set(x, "batches", value.asInstanceOf[js.Any])
     

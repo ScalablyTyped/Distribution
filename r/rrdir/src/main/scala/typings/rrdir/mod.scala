@@ -34,7 +34,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Entry[T]]
     }
     
-    extension [Self <: Entry[?], T /* <: String | Buffer */](x: Self & Entry[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entry[?], T /* <: String | Buffer */] (val x: Self & Entry[T]) extends AnyVal {
       
       inline def setDirectory(value: Boolean): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       

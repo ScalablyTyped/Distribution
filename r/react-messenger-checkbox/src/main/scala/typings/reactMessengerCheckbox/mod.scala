@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[ReactMessengerProps]
     }
     
-    extension [Self <: ReactMessengerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactMessengerProps] (val x: Self) extends AnyVal {
       
       inline def setAllowLogin(value: Boolean): Self = StObject.set(x, "allowLogin", value.asInstanceOf[js.Any])
       

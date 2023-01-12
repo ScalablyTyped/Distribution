@@ -127,7 +127,8 @@ object mod {
       __obj.asInstanceOf[ContextFactory]
     }
     
-    extension [Self <: ContextFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextFactory] (val x: Self) extends AnyVal {
       
       inline def set_namespace(value: Namespace): Self = StObject.set(x, "_namespace", value.asInstanceOf[js.Any])
     }

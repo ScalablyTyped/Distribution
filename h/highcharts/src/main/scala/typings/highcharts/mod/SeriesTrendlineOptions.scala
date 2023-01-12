@@ -77,7 +77,8 @@ object SeriesTrendlineOptions {
     __obj.asInstanceOf[SeriesTrendlineOptions]
   }
   
-  extension [Self <: SeriesTrendlineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesTrendlineOptions] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

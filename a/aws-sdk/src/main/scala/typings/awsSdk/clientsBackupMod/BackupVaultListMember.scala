@@ -63,7 +63,8 @@ object BackupVaultListMember {
     __obj.asInstanceOf[BackupVaultListMember]
   }
   
-  extension [Self <: BackupVaultListMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackupVaultListMember] (val x: Self) extends AnyVal {
     
     inline def setBackupVaultArn(value: ARN): Self = StObject.set(x, "BackupVaultArn", value.asInstanceOf[js.Any])
     

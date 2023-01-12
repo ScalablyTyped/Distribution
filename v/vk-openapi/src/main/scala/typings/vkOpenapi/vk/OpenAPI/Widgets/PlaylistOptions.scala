@@ -15,7 +15,8 @@ object PlaylistOptions {
     __obj.asInstanceOf[PlaylistOptions]
   }
   
-  extension [Self <: PlaylistOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaylistOptions] (val x: Self) extends AnyVal {
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object IStorageFileStatics {
     __obj.asInstanceOf[IStorageFileStatics]
   }
   
-  extension [Self <: IStorageFileStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStorageFileStatics] (val x: Self) extends AnyVal {
     
     inline def setCreateStreamedFileAsync(
       value: (String, StreamedFileDataRequestedHandler, IRandomAccessStreamReference) => IAsyncOperation[StorageFile]

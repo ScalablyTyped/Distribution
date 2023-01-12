@@ -73,7 +73,8 @@ object IGizmo {
     __obj.asInstanceOf[IGizmo]
   }
   
-  extension [Self <: IGizmo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGizmo] (val x: Self) extends AnyVal {
     
     inline def setAttachedMesh(value: Nullable[AbstractMesh]): Self = StObject.set(x, "attachedMesh", value.asInstanceOf[js.Any])
     

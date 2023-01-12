@@ -19,7 +19,8 @@ object SpreadsheetToolbar {
     __obj.asInstanceOf[SpreadsheetToolbar]
   }
   
-  extension [Self <: SpreadsheetToolbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetToolbar] (val x: Self) extends AnyVal {
     
     inline def setData(value: Boolean | Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

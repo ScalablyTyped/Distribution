@@ -34,7 +34,8 @@ object AWSCloudFrontFunction {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setDistributionDomainName(value: String): Self = StObject.set(x, "distributionDomainName", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object AWSCloudFrontFunction {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object AWSCloudFrontFunction {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setCookies(value: ValueObject): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object AWSCloudFrontFunction {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setCookies(value: ResponseCookie): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
@@ -162,7 +166,8 @@ object AWSCloudFrontFunction {
       __obj.asInstanceOf[Viewer]
     }
     
-    extension [Self <: Viewer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Viewer] (val x: Self) extends AnyVal {
       
       inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     }

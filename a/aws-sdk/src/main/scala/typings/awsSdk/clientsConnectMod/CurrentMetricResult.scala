@@ -23,7 +23,8 @@ object CurrentMetricResult {
     __obj.asInstanceOf[CurrentMetricResult]
   }
   
-  extension [Self <: CurrentMetricResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentMetricResult] (val x: Self) extends AnyVal {
     
     inline def setCollections(value: CurrentMetricDataCollections): Self = StObject.set(x, "Collections", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ReturnBoolean {
     __obj.asInstanceOf[ReturnBoolean]
   }
   
-  extension [Self <: ReturnBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnBoolean] (val x: Self) extends AnyVal {
     
     inline def setMSFormsDotReturnBoolean_typekey(value: ReturnBoolean): Self = StObject.set(x, "MSForms.ReturnBoolean_typekey", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object ProtoBook {
     __obj.asInstanceOf[ProtoBook]
   }
   
-  extension [Self <: ProtoBook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtoBook] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (PeerId, js.Array[String]) => js.Promise[Unit]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

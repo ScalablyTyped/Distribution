@@ -92,7 +92,8 @@ object addonDotBarcodeReaderMod {
       __obj.asInstanceOf[FurtherModes]
     }
     
-    extension [Self <: FurtherModes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FurtherModes] (val x: Self) extends AnyVal {
       
       inline def setAccompanyingTextRecognitionModes(value: js.Array[Double]): Self = StObject.set(x, "accompanyingTextRecognitionModes", value.asInstanceOf[js.Any])
       
@@ -225,7 +226,8 @@ object addonDotBarcodeReaderMod {
       __obj.asInstanceOf[LocalizationResult]
     }
     
-    extension [Self <: LocalizationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalizationResult] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -282,7 +284,8 @@ object addonDotBarcodeReaderMod {
       __obj.asInstanceOf[Region]
     }
     
-    extension [Self <: Region](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
       
       inline def setRegionBottom(value: Double): Self = StObject.set(x, "regionBottom", value.asInstanceOf[js.Any])
       
@@ -321,7 +324,8 @@ object addonDotBarcodeReaderMod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setAccompanyingTextBytes(value: js.Array[Double]): Self = StObject.set(x, "accompanyingTextBytes", value.asInstanceOf[js.Any])
       
@@ -413,7 +417,8 @@ object addonDotBarcodeReaderMod {
       __obj.asInstanceOf[RuntimeSettings]
     }
     
-    extension [Self <: RuntimeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuntimeSettings] (val x: Self) extends AnyVal {
       
       inline def setBarcodeFormatIds(value: Double): Self = StObject.set(x, "barcodeFormatIds", value.asInstanceOf[js.Any])
       
@@ -533,7 +538,8 @@ object addonDotBarcodeReaderMod {
       __obj.asInstanceOf[TextResult]
     }
     
-    extension [Self <: TextResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextResult] (val x: Self) extends AnyVal {
       
       inline def setBarcodeBytes(value: js.Array[Double]): Self = StObject.set(x, "barcodeBytes", value.asInstanceOf[js.Any])
       

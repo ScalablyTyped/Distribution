@@ -28,7 +28,8 @@ object GitLastChangeTreeItems {
     __obj.asInstanceOf[GitLastChangeTreeItems]
   }
   
-  extension [Self <: GitLastChangeTreeItems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitLastChangeTreeItems] (val x: Self) extends AnyVal {
     
     inline def setCommits(value: js.Array[GitCommitRef]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     

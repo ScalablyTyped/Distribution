@@ -62,7 +62,8 @@ object googleProtobufFieldMaskPbMod {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setPathsList(value: js.Array[String]): Self = StObject.set(x, "pathsList", value.asInstanceOf[js.Any])
         

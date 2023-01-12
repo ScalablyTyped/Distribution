@@ -28,7 +28,8 @@ object ASPxClientRibbonCommandExecutedEventArgs {
     __obj.asInstanceOf[ASPxClientRibbonCommandExecutedEventArgs]
   }
   
-  extension [Self <: ASPxClientRibbonCommandExecutedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRibbonCommandExecutedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setItem(value: ASPxClientRibbonItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

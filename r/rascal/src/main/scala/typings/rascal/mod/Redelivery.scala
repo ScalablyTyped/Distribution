@@ -17,7 +17,8 @@ object Redelivery {
     __obj.asInstanceOf[Redelivery]
   }
   
-  extension [Self <: Redelivery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Redelivery] (val x: Self) extends AnyVal {
     
     inline def setCounters(value: StringDictionary[Size]): Self = StObject.set(x, "counters", value.asInstanceOf[js.Any])
     

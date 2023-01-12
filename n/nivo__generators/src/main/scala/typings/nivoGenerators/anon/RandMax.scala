@@ -17,7 +17,8 @@ object RandMax {
     __obj.asInstanceOf[RandMax]
   }
   
-  extension [Self <: RandMax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RandMax] (val x: Self) extends AnyVal {
     
     inline def setRandMax(value: Double): Self = StObject.set(x, "randMax", value.asInstanceOf[js.Any])
     

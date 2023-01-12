@@ -185,7 +185,8 @@ object examplesJsmPostprocessingSsrpassMod {
       __obj.asInstanceOf[SSRPassParams]
     }
     
-    extension [Self <: SSRPassParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SSRPassParams] (val x: Self) extends AnyVal {
       
       inline def setCamera(value: Camera): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
       

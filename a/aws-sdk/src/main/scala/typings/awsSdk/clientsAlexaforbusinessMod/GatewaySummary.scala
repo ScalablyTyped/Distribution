@@ -38,7 +38,8 @@ object GatewaySummary {
     __obj.asInstanceOf[GatewaySummary]
   }
   
-  extension [Self <: GatewaySummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GatewaySummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object qa {
       __obj.asInstanceOf[XDumper]
     }
     
-    extension [Self <: XDumper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XDumper] (val x: Self) extends AnyVal {
       
       inline def setDump(value: () => String): Self = StObject.set(x, "dump", js.Any.fromFunction0(value))
     }

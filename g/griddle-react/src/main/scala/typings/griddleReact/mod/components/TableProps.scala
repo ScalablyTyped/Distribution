@@ -21,7 +21,8 @@ object TableProps {
     __obj.asInstanceOf[TableProps]
   }
   
-  extension [Self <: TableProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableProps] (val x: Self) extends AnyVal {
     
     inline def setNoResults(value: Any): Self = StObject.set(x, "NoResults", value.asInstanceOf[js.Any])
     

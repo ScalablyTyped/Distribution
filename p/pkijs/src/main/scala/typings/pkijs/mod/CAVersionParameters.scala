@@ -20,7 +20,8 @@ object CAVersionParameters {
     __obj.asInstanceOf[CAVersionParameters]
   }
   
-  extension [Self <: CAVersionParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CAVersionParameters] (val x: Self) extends AnyVal {
     
     inline def setCertificateIndex(value: Double): Self = StObject.set(x, "certificateIndex", value.asInstanceOf[js.Any])
     

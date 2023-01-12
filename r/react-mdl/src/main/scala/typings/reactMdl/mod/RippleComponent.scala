@@ -15,7 +15,8 @@ object RippleComponent {
     __obj.asInstanceOf[RippleComponent]
   }
   
-  extension [Self <: RippleComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RippleComponent] (val x: Self) extends AnyVal {
     
     inline def setRipple(value: Boolean): Self = StObject.set(x, "ripple", value.asInstanceOf[js.Any])
     

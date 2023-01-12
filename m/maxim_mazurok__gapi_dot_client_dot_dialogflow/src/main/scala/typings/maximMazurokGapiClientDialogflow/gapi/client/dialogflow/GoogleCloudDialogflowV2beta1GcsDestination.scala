@@ -19,7 +19,8 @@ object GoogleCloudDialogflowV2beta1GcsDestination {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1GcsDestination]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1GcsDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1GcsDestination] (val x: Self) extends AnyVal {
     
     inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     

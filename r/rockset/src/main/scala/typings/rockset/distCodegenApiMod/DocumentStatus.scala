@@ -93,7 +93,8 @@ object DocumentStatus {
     /* 1 */ val REPLACED: typings.rockset.distCodegenApiMod.DocumentStatus.StatusEnum.REPLACED & Double = js.native
   }
   
-  extension [Self <: DocumentStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentStatus] (val x: Self) extends AnyVal {
     
     inline def setError(value: ErrorModel): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

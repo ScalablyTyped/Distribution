@@ -21,7 +21,8 @@ object EnvironmentRecord {
     __obj.asInstanceOf[EnvironmentRecord]
   }
   
-  extension [Self <: EnvironmentRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentRecord] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: EnvironmentRecordAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Followercluster {
     __obj.asInstanceOf[Followercluster]
   }
   
-  extension [Self <: Followercluster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Followercluster] (val x: Self) extends AnyVal {
     
     inline def setFollower_cluster(value: String): Self = StObject.set(x, "follower_cluster", value.asInstanceOf[js.Any])
     

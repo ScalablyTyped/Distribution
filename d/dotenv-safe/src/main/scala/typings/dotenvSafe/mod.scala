@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[DotenvSafeConfigOutput]
     }
     
-    extension [Self <: DotenvSafeConfigOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotenvSafeConfigOutput] (val x: Self) extends AnyVal {
       
       inline def setRequired(value: DotenvParseOutput): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     }
@@ -68,7 +69,8 @@ object mod {
       __obj.asInstanceOf[DotenvSafeOptions]
     }
     
-    extension [Self <: DotenvSafeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotenvSafeOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowEmptyValues(value: Boolean): Self = StObject.set(x, "allowEmptyValues", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object mod {
       __obj.asInstanceOf[MissingEnvVarsError]
     }
     
-    extension [Self <: MissingEnvVarsError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MissingEnvVarsError] (val x: Self) extends AnyVal {
       
       inline def setMissing(value: js.Array[String]): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
       

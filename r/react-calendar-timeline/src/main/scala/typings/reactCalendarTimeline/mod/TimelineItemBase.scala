@@ -42,7 +42,8 @@ object TimelineItemBase {
     __obj.asInstanceOf[TimelineItemBase[DateType]]
   }
   
-  extension [Self <: TimelineItemBase[?], DateType](x: Self & TimelineItemBase[DateType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineItemBase[?], DateType] (val x: Self & TimelineItemBase[DateType]) extends AnyVal {
     
     inline def setCanChangeGroup(value: Boolean): Self = StObject.set(x, "canChangeGroup", value.asInstanceOf[js.Any])
     

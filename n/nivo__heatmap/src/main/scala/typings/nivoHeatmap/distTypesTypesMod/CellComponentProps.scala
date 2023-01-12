@@ -60,7 +60,8 @@ object CellComponentProps {
     __obj.asInstanceOf[CellComponentProps[Datum]]
   }
   
-  extension [Self <: CellComponentProps[?], Datum /* <: HeatMapDatum */](x: Self & CellComponentProps[Datum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellComponentProps[?], Datum /* <: HeatMapDatum */] (val x: Self & CellComponentProps[Datum]) extends AnyVal {
     
     inline def setAnimatedProps(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimatedProps<CellAnimatedProps> */ Any

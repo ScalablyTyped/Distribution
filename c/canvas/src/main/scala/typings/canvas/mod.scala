@@ -465,7 +465,8 @@ object mod {
       __obj.asInstanceOf[JpegConfig]
     }
     
-    extension [Self <: JpegConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JpegConfig] (val x: Self) extends AnyVal {
       
       inline def setChromaSubsampling(value: Boolean): Self = StObject.set(x, "chromaSubsampling", value.asInstanceOf[js.Any])
       
@@ -609,7 +610,8 @@ object mod {
       __obj.asInstanceOf[NodeCanvasRenderingContext2DSettings]
     }
     
-    extension [Self <: NodeCanvasRenderingContext2DSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeCanvasRenderingContext2DSettings] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -644,7 +646,8 @@ object mod {
       __obj.asInstanceOf[PdfConfig]
     }
     
-    extension [Self <: PdfConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PdfConfig] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -713,7 +716,8 @@ object mod {
       __obj.asInstanceOf[PngConfig]
     }
     
-    extension [Self <: PngConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PngConfig] (val x: Self) extends AnyVal {
       
       inline def setBackgroundIndex(value: Double): Self = StObject.set(x, "backgroundIndex", value.asInstanceOf[js.Any])
       

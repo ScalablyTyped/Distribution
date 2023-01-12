@@ -64,7 +64,8 @@ object hooks {
     __obj.asInstanceOf[hooks]
   }
   
-  extension [Self <: hooks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: hooks] (val x: Self) extends AnyVal {
     
     inline def setBindEvents(value: js.Array[js.Function2[/* plot */ plot, /* eventHolder */ JQuery[HTMLElement], Unit]]): Self = StObject.set(x, "bindEvents", value.asInstanceOf[js.Any])
     

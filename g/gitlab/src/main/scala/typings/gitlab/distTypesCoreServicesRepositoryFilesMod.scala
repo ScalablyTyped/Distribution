@@ -127,7 +127,8 @@ object distTypesCoreServicesRepositoryFilesMod {
       __obj.asInstanceOf[RepositoryFileSchema]
     }
     
-    extension [Self <: RepositoryFileSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepositoryFileSchema] (val x: Self) extends AnyVal {
       
       inline def setBlob_id(value: String): Self = StObject.set(x, "blob_id", value.asInstanceOf[js.Any])
       

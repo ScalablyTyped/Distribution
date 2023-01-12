@@ -33,7 +33,8 @@ object distPanelMod {
       __obj.asInstanceOf[NotesLinkProps]
     }
     
-    extension [Self <: NotesLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotesLinkProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object distPanelMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object distPanelMod {
       __obj.asInstanceOf[SyntaxHighlighterProps]
     }
     
-    extension [Self <: SyntaxHighlighterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyntaxHighlighterProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

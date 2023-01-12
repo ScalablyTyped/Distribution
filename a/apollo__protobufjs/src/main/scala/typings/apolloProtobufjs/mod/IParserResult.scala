@@ -29,7 +29,8 @@ object IParserResult {
     __obj.asInstanceOf[IParserResult]
   }
   
-  extension [Self <: IParserResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IParserResult] (val x: Self) extends AnyVal {
     
     inline def setImports(value: js.Array[String]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     

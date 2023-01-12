@@ -20,7 +20,8 @@ object BoundVolume {
     __obj.asInstanceOf[BoundVolume]
   }
   
-  extension [Self <: BoundVolume](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoundVolume] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Position3D): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

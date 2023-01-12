@@ -31,7 +31,8 @@ object ExceptionInfoResponse {
     __obj.asInstanceOf[ExceptionInfoResponse]
   }
   
-  extension [Self <: ExceptionInfoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExceptionInfoResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: BreakMode): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

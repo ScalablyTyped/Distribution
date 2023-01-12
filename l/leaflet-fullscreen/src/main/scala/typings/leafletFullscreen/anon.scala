@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[False]
     }
     
-    extension [Self <: False](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: False] (val x: Self) extends AnyVal {
       
       inline def setFalse(value: String): Self = StObject.set(x, "false", value.asInstanceOf[js.Any])
       

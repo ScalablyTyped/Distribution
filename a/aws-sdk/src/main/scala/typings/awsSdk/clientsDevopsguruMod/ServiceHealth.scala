@@ -28,7 +28,8 @@ object ServiceHealth {
     __obj.asInstanceOf[ServiceHealth]
   }
   
-  extension [Self <: ServiceHealth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceHealth] (val x: Self) extends AnyVal {
     
     inline def setAnalyzedResourceCount(value: AnalyzedResourceCount): Self = StObject.set(x, "AnalyzedResourceCount", value.asInstanceOf[js.Any])
     

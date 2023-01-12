@@ -144,7 +144,8 @@ object Navigation {
       __obj.asInstanceOf[AlertStrings]
     }
     
-    extension [Self <: AlertStrings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlertStrings] (val x: Self) extends AnyVal {
       
       inline def setConfirmButtonLabel(value: String): Self = StObject.set(x, "confirmButtonLabel", value.asInstanceOf[js.Any])
       
@@ -175,7 +176,8 @@ object Navigation {
       __obj.asInstanceOf[ConfirmResult]
     }
     
-    extension [Self <: ConfirmResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmResult] (val x: Self) extends AnyVal {
       
       inline def setConfirmed(value: Boolean): Self = StObject.set(x, "confirmed", value.asInstanceOf[js.Any])
     }
@@ -215,7 +217,8 @@ object Navigation {
       __obj.asInstanceOf[ConfirmStrings]
     }
     
-    extension [Self <: ConfirmStrings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmStrings] (val x: Self) extends AnyVal {
       
       inline def setCancelButtonLabel(value: String): Self = StObject.set(x, "cancelButtonLabel", value.asInstanceOf[js.Any])
       
@@ -263,7 +266,8 @@ object Navigation {
       __obj.asInstanceOf[CustomPage]
     }
     
-    extension [Self <: CustomPage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomPage] (val x: Self) extends AnyVal {
       
       inline def setEntityName(value: String): Self = StObject.set(x, "entityName", value.asInstanceOf[js.Any])
       
@@ -295,7 +299,8 @@ object Navigation {
       __obj.asInstanceOf[Dashboard]
     }
     
-    extension [Self <: Dashboard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dashboard] (val x: Self) extends AnyVal {
       
       inline def setDashboardId(value: String): Self = StObject.set(x, "dashboardId", value.asInstanceOf[js.Any])
       
@@ -324,7 +329,8 @@ object Navigation {
       __obj.asInstanceOf[DialogSizeOptions]
     }
     
-    extension [Self <: DialogSizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogSizeOptions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -434,7 +440,8 @@ object Navigation {
       __obj.asInstanceOf[EntityFormOptions]
     }
     
-    extension [Self <: EntityFormOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntityFormOptions] (val x: Self) extends AnyVal {
       
       inline def setCmdbar(value: Boolean): Self = StObject.set(x, "cmdbar", value.asInstanceOf[js.Any])
       
@@ -536,7 +543,8 @@ object Navigation {
       __obj.asInstanceOf[ErrorDialogOptions]
     }
     
-    extension [Self <: ErrorDialogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorDialogOptions] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
@@ -581,7 +589,8 @@ object Navigation {
       __obj.asInstanceOf[FileDetails]
     }
     
-    extension [Self <: FileDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileDetails] (val x: Self) extends AnyVal {
       
       inline def setFileContent(value: String): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
       
@@ -631,7 +640,8 @@ object Navigation {
       __obj.asInstanceOf[NavigationOptions]
     }
     
-    extension [Self <: NavigationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationOptions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double | SizeValue): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -671,7 +681,8 @@ object Navigation {
         __obj.asInstanceOf[SizeValue]
       }
       
-      extension [Self <: SizeValue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SizeValue] (val x: Self) extends AnyVal {
         
         inline def setUnit(value: Percentsign | px): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
         
@@ -694,7 +705,8 @@ object Navigation {
       __obj.asInstanceOf[OpenFormResult]
     }
     
-    extension [Self <: OpenFormResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenFormResult] (val x: Self) extends AnyVal {
       
       inline def setSavedEntityReference(value: js.Array[LookupValue]): Self = StObject.set(x, "savedEntityReference", value.asInstanceOf[js.Any])
       
@@ -718,7 +730,8 @@ object Navigation {
       __obj.asInstanceOf[OpenWebresourceOptions]
     }
     
-    extension [Self <: OpenWebresourceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenWebresourceOptions] (val x: Self) extends AnyVal {
       
       inline def setOpenInNewWindow(value: Boolean): Self = StObject.set(x, "openInNewWindow", value.asInstanceOf[js.Any])
     }
@@ -750,7 +763,8 @@ object Navigation {
       __obj.asInstanceOf[PageInputEntityList]
     }
     
-    extension [Self <: PageInputEntityList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageInputEntityList] (val x: Self) extends AnyVal {
       
       inline def setEntityName(value: String): Self = StObject.set(x, "entityName", value.asInstanceOf[js.Any])
       
@@ -837,7 +851,8 @@ object Navigation {
       __obj.asInstanceOf[PageInputEntityRecord]
     }
     
-    extension [Self <: PageInputEntityRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageInputEntityRecord] (val x: Self) extends AnyVal {
       
       inline def setCreateFromEntity(value: LookupValue): Self = StObject.set(x, "createFromEntity", value.asInstanceOf[js.Any])
       
@@ -910,7 +925,8 @@ object Navigation {
       __obj.asInstanceOf[PageInputHtmlWebResource]
     }
     
-    extension [Self <: PageInputHtmlWebResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageInputHtmlWebResource] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -961,7 +977,8 @@ object Navigation {
       __obj.asInstanceOf[Relationship]
     }
     
-    extension [Self <: Relationship](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Relationship] (val x: Self) extends AnyVal {
       
       inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
       

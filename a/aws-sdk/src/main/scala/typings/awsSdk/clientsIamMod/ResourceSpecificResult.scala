@@ -43,7 +43,8 @@ object ResourceSpecificResult {
     __obj.asInstanceOf[ResourceSpecificResult]
   }
   
-  extension [Self <: ResourceSpecificResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceSpecificResult] (val x: Self) extends AnyVal {
     
     inline def setEvalDecisionDetails(value: EvalDecisionDetailsType): Self = StObject.set(x, "EvalDecisionDetails", value.asInstanceOf[js.Any])
     

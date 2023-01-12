@@ -25,7 +25,8 @@ object IOnInit {
     __obj.asInstanceOf[IOnInit]
   }
   
-  extension [Self <: IOnInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOnInit] (val x: Self) extends AnyVal {
     
     inline def set$onInit(value: () => Unit): Self = StObject.set(x, "$onInit", js.Any.fromFunction0(value))
   }

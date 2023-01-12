@@ -30,7 +30,8 @@ object TextDecoderStream {
     __obj.asInstanceOf[TextDecoderStream]
   }
   
-  extension [Self <: TextDecoderStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextDecoderStream] (val x: Self) extends AnyVal {
     
     inline def setReadable(value: ReadableStream[java.lang.String]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object MarksEvent {
     __obj.asInstanceOf[MarksEvent]
   }
   
-  extension [Self <: MarksEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarksEvent] (val x: Self) extends AnyVal {
     
     inline def setGetMarksAsync(value: () => js.Promise[js.Array[Mark]]): Self = StObject.set(x, "getMarksAsync", js.Any.fromFunction0(value))
     

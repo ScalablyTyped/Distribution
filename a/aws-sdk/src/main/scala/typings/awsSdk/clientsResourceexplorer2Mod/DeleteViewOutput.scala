@@ -18,7 +18,8 @@ object DeleteViewOutput {
     __obj.asInstanceOf[DeleteViewOutput]
   }
   
-  extension [Self <: DeleteViewOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteViewOutput] (val x: Self) extends AnyVal {
     
     inline def setViewArn(value: String): Self = StObject.set(x, "ViewArn", value.asInstanceOf[js.Any])
     

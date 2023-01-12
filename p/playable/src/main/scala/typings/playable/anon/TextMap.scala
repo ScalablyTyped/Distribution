@@ -30,7 +30,8 @@ object TextMap {
     __obj.asInstanceOf[TextMap]
   }
   
-  extension [Self <: TextMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextMap] (val x: Self) extends AnyVal {
     
     inline def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
     

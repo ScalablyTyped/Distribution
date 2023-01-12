@@ -20,7 +20,8 @@ object OrgChartCollapseEvent {
     __obj.asInstanceOf[OrgChartCollapseEvent]
   }
   
-  extension [Self <: OrgChartCollapseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrgChartCollapseEvent] (val x: Self) extends AnyVal {
     
     inline def setDataItems(value: Any): Self = StObject.set(x, "dataItems", value.asInstanceOf[js.Any])
     

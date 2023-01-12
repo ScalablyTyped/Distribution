@@ -52,7 +52,8 @@ object precision {
       __obj.asInstanceOf[GeometryPrecisionReducer]
     }
     
-    extension [Self <: GeometryPrecisionReducer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeometryPrecisionReducer] (val x: Self) extends AnyVal {
       
       inline def setReduce(value: Geometry => Geometry): Self = StObject.set(x, "reduce", js.Any.fromFunction1(value))
       

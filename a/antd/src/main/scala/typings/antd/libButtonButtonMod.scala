@@ -515,7 +515,8 @@ object libButtonButtonMod {
       __obj.asInstanceOf[AnchorButtonProps]
     }
     
-    extension [Self <: AnchorButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnchorButtonProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1331,7 +1332,8 @@ object libButtonButtonMod {
       __obj.asInstanceOf[BaseButtonProps]
     }
     
-    extension [Self <: BaseButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseButtonProps] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
@@ -1808,7 +1810,8 @@ object libButtonButtonMod {
       __obj.asInstanceOf[ButtonProps]
     }
     
-    extension [Self <: ButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -3070,7 +3073,8 @@ object libButtonButtonMod {
       __obj.asInstanceOf[NativeButtonProps]
     }
     
-    extension [Self <: NativeButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeButtonProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

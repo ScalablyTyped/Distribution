@@ -23,7 +23,8 @@ object SuspendingOperation {
     __obj.asInstanceOf[SuspendingOperation]
   }
   
-  extension [Self <: SuspendingOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuspendingOperation] (val x: Self) extends AnyVal {
     
     inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     

@@ -98,7 +98,8 @@ object SchedulerSizes {
     __obj.asInstanceOf[SchedulerSizes]
   }
   
-  extension [Self <: SchedulerSizes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerSizes] (val x: Self) extends AnyVal {
     
     inline def setBar_height(value: Double): Self = StObject.set(x, "bar_height", value.asInstanceOf[js.Any])
     

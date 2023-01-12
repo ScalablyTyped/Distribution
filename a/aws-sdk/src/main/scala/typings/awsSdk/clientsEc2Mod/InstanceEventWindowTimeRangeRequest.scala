@@ -33,7 +33,8 @@ object InstanceEventWindowTimeRangeRequest {
     __obj.asInstanceOf[InstanceEventWindowTimeRangeRequest]
   }
   
-  extension [Self <: InstanceEventWindowTimeRangeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceEventWindowTimeRangeRequest] (val x: Self) extends AnyVal {
     
     inline def setEndHour(value: Hour): Self = StObject.set(x, "EndHour", value.asInstanceOf[js.Any])
     

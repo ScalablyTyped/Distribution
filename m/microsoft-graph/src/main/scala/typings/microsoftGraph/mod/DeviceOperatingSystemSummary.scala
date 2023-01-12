@@ -31,7 +31,8 @@ object DeviceOperatingSystemSummary {
     __obj.asInstanceOf[DeviceOperatingSystemSummary]
   }
   
-  extension [Self <: DeviceOperatingSystemSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceOperatingSystemSummary] (val x: Self) extends AnyVal {
     
     inline def setAndroidCount(value: Double): Self = StObject.set(x, "androidCount", value.asInstanceOf[js.Any])
     

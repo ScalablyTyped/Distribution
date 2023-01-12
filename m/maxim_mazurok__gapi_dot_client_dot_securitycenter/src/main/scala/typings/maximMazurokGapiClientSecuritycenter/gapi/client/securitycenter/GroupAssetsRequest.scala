@@ -62,7 +62,8 @@ object GroupAssetsRequest {
     __obj.asInstanceOf[GroupAssetsRequest]
   }
   
-  extension [Self <: GroupAssetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupAssetsRequest] (val x: Self) extends AnyVal {
     
     inline def setCompareDuration(value: String): Self = StObject.set(x, "compareDuration", value.asInstanceOf[js.Any])
     

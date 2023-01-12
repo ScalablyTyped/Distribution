@@ -19,7 +19,8 @@ object RecorderEndpointOptions {
     __obj.asInstanceOf[RecorderEndpointOptions]
   }
   
-  extension [Self <: RecorderEndpointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecorderEndpointOptions] (val x: Self) extends AnyVal {
     
     inline def setMediaProfile(value: MediaProfileSpecType): Self = StObject.set(x, "mediaProfile", value.asInstanceOf[js.Any])
     

@@ -140,7 +140,8 @@ object componentsCardCardContentMod {
       __obj.asInstanceOf[CardContentProps]
     }
     
-    extension [Self <: CardContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardContentProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`

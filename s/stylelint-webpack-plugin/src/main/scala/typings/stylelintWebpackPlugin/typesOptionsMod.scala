@@ -115,7 +115,8 @@ object typesOptionsMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowEmptyInput(value: Boolean): Self = StObject.set(x, "allowEmptyInput", value.asInstanceOf[js.Any])
       
@@ -288,7 +289,8 @@ object typesOptionsMod {
       __obj.asInstanceOf[OutputReport]
     }
     
-    extension [Self <: OutputReport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputReport] (val x: Self) extends AnyVal {
       
       inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
@@ -350,7 +352,8 @@ object typesOptionsMod {
       __obj.asInstanceOf[PluginOptions]
     }
     
-    extension [Self <: PluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

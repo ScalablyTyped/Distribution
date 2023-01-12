@@ -18,7 +18,8 @@ object DeleteWorldTemplateRequest {
     __obj.asInstanceOf[DeleteWorldTemplateRequest]
   }
   
-  extension [Self <: DeleteWorldTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteWorldTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setTemplate(value: Arn): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }

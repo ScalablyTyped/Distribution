@@ -23,7 +23,8 @@ object SparkPostError {
     __obj.asInstanceOf[SparkPostError]
   }
   
-  extension [Self <: SparkPostError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparkPostError] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: js.Array[ErrorWithDescription | ErrorWithParam]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

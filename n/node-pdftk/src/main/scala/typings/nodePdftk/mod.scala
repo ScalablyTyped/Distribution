@@ -337,7 +337,8 @@ object mod {
       __obj.asInstanceOf[ConfigureOptions]
     }
     
-    extension [Self <: ConfigureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigureOptions] (val x: Self) extends AnyVal {
       
       inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
       

@@ -227,7 +227,8 @@ object CartesianAxisProps {
     __obj.asInstanceOf[CartesianAxisProps]
   }
   
-  extension [Self <: CartesianAxisProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CartesianAxisProps] (val x: Self) extends AnyVal {
     
     inline def setAlignmentBaseline(value: String): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     

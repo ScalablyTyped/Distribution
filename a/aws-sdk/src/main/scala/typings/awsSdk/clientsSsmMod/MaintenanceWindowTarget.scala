@@ -48,7 +48,8 @@ object MaintenanceWindowTarget {
     __obj.asInstanceOf[MaintenanceWindowTarget]
   }
   
-  extension [Self <: MaintenanceWindowTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaintenanceWindowTarget] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: MaintenanceWindowDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

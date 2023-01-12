@@ -38,7 +38,8 @@ object DescribeComplianceByResourceRequest {
     __obj.asInstanceOf[DescribeComplianceByResourceRequest]
   }
   
-  extension [Self <: DescribeComplianceByResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeComplianceByResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setComplianceTypes(value: ComplianceTypes): Self = StObject.set(x, "ComplianceTypes", value.asInstanceOf[js.Any])
     

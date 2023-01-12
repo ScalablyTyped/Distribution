@@ -17,7 +17,8 @@ object ContentApplicationjsonBodyhtml {
     __obj.asInstanceOf[ContentApplicationjsonBodyhtml]
   }
   
-  extension [Self <: ContentApplicationjsonBodyhtml](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonBodyhtml] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonBodyhtml): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

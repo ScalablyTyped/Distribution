@@ -15,7 +15,8 @@ object StyleLineDash {
     __obj.asInstanceOf[StyleLineDash]
   }
   
-  extension [Self <: StyleLineDash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleLineDash] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: LineDash): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }

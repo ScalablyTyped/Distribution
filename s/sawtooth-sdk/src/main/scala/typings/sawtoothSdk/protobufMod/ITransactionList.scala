@@ -16,7 +16,8 @@ object ITransactionList {
     __obj.asInstanceOf[ITransactionList]
   }
   
-  extension [Self <: ITransactionList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITransactionList] (val x: Self) extends AnyVal {
     
     inline def setTransactions(value: js.Array[ITransaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
     

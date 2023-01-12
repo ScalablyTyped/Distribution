@@ -47,7 +47,8 @@ object DataConnectionCollection {
     __obj.asInstanceOf[DataConnectionCollection]
   }
   
-  extension [Self <: DataConnectionCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataConnectionCollection] (val x: Self) extends AnyVal {
     
     inline def setContext(value: RequestContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

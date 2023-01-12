@@ -273,7 +273,8 @@ object PlotChaikinDataLabelsOptions {
     __obj.asInstanceOf[PlotChaikinDataLabelsOptions]
   }
   
-  extension [Self <: PlotChaikinDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotChaikinDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

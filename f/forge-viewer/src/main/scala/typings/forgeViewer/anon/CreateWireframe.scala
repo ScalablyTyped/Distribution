@@ -17,7 +17,8 @@ object CreateWireframe {
     __obj.asInstanceOf[CreateWireframe]
   }
   
-  extension [Self <: CreateWireframe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWireframe] (val x: Self) extends AnyVal {
     
     inline def setConserveMemory(value: Boolean): Self = StObject.set(x, "conserveMemory", value.asInstanceOf[js.Any])
     

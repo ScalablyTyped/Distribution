@@ -33,7 +33,8 @@ object Protocol {
     callback: js.Function2[/* err */ js.Error | Null, /* protocol */ Protocol, Unit]
   ): Unit = js.native
   
-  extension [Self <: Protocol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Protocol] (val x: Self) extends AnyVal {
     
     inline def setDomains(value: js.Array[Domain]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
     

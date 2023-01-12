@@ -44,7 +44,8 @@ object anon {
       __obj.asInstanceOf[PartialColumnNames]
     }
     
-    extension [Self <: PartialColumnNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialColumnNames] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object anon {
       __obj.asInstanceOf[PartialSchema]
     }
     
-    extension [Self <: PartialSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSchema] (val x: Self) extends AnyVal {
       
       inline def setColumnNames(value: PartialColumnNames): Self = StObject.set(x, "columnNames", value.asInstanceOf[js.Any])
       

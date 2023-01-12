@@ -48,7 +48,8 @@ object CreateFunctionDefinitionResponse {
     __obj.asInstanceOf[CreateFunctionDefinitionResponse]
   }
   
-  extension [Self <: CreateFunctionDefinitionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFunctionDefinitionResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

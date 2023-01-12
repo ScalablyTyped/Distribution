@@ -18,7 +18,8 @@ object StreamProcessorInput {
     __obj.asInstanceOf[StreamProcessorInput]
   }
   
-  extension [Self <: StreamProcessorInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamProcessorInput] (val x: Self) extends AnyVal {
     
     inline def setKinesisVideoStream(value: KinesisVideoStream): Self = StObject.set(x, "KinesisVideoStream", value.asInstanceOf[js.Any])
     

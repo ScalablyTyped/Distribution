@@ -23,7 +23,8 @@ object ASPxClientParametersSubmittedEventArgs {
     __obj.asInstanceOf[ASPxClientParametersSubmittedEventArgs]
   }
   
-  extension [Self <: ASPxClientParametersSubmittedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientParametersSubmittedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: StringDictionary[Any]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object MaterialboxOptions {
     __obj.asInstanceOf[MaterialboxOptions]
   }
   
-  extension [Self <: MaterialboxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaterialboxOptions] (val x: Self) extends AnyVal {
     
     inline def setInDuration(value: Double): Self = StObject.set(x, "inDuration", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object DocumentRangeFormattingEditProvider {
     __obj.asInstanceOf[DocumentRangeFormattingEditProvider]
   }
   
-  extension [Self <: DocumentRangeFormattingEditProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentRangeFormattingEditProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideDocumentRangeFormattingEdits(
       value: (TextDocument, Range, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]

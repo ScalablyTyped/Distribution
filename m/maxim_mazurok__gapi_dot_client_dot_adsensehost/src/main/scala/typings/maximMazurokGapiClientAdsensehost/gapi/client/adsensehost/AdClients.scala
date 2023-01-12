@@ -25,7 +25,8 @@ object AdClients {
     __obj.asInstanceOf[AdClients]
   }
   
-  extension [Self <: AdClients](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdClients] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object libClassdefFieldOptionsEventMod {
       __obj.asInstanceOf[FieldOptionsEvent]
     }
     
-    extension [Self <: FieldOptionsEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldOptionsEvent] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object ListOpsItemEventsRequest {
     __obj.asInstanceOf[ListOpsItemEventsRequest]
   }
   
-  extension [Self <: ListOpsItemEventsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListOpsItemEventsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: OpsItemEventFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

@@ -228,7 +228,8 @@ object mod {
         __obj.asInstanceOf[ClosableContext]
       }
       
-      extension [Self <: ClosableContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClosableContext] (val x: Self) extends AnyVal {
         
         inline def setClosePath(value: () => Unit): Self = StObject.set(x, "closePath", js.Any.fromFunction0(value))
       }
@@ -256,7 +257,8 @@ object mod {
         __obj.asInstanceOf[LineContext]
       }
       
-      extension [Self <: LineContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LineContext] (val x: Self) extends AnyVal {
         
         inline def setLineTo(value: (Double, Double) => Unit): Self = StObject.set(x, "lineTo", js.Any.fromFunction2(value))
       }
@@ -279,7 +281,8 @@ object mod {
         __obj.asInstanceOf[MoveContext]
       }
       
-      extension [Self <: MoveContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MoveContext] (val x: Self) extends AnyVal {
         
         inline def setMoveTo(value: (Double, Double) => Unit): Self = StObject.set(x, "moveTo", js.Any.fromFunction2(value))
       }
@@ -312,7 +315,8 @@ object mod {
         __obj.asInstanceOf[RectContext]
       }
       
-      extension [Self <: RectContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RectContext] (val x: Self) extends AnyVal {
         
         inline def setRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "rect", js.Any.fromFunction4(value))
       }

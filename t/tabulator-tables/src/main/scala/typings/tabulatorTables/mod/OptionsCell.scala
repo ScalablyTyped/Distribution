@@ -43,7 +43,8 @@ object OptionsCell {
     __obj.asInstanceOf[OptionsCell]
   }
   
-  extension [Self <: OptionsCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsCell] (val x: Self) extends AnyVal {
     
     inline def setCellClick(value: (/* e */ UIEvent, /* cell */ CellComponent) => Unit): Self = StObject.set(x, "cellClick", js.Any.fromFunction2(value))
     

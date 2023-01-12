@@ -18,7 +18,8 @@ object GetDimensionKeyDetailsResponse {
     __obj.asInstanceOf[GetDimensionKeyDetailsResponse]
   }
   
-  extension [Self <: GetDimensionKeyDetailsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDimensionKeyDetailsResponse] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: DimensionKeyDetailList): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     

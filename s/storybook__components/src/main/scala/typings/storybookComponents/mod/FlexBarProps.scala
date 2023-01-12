@@ -19,7 +19,8 @@ object FlexBarProps {
     __obj.asInstanceOf[FlexBarProps]
   }
   
-  extension [Self <: FlexBarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexBarProps] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object MipsInstruction {
     __obj.asInstanceOf[MipsInstruction]
   }
   
-  extension [Self <: MipsInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MipsInstruction] (val x: Self) extends AnyVal {
     
     inline def setOperands(value: js.Array[MipsOperand]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
     

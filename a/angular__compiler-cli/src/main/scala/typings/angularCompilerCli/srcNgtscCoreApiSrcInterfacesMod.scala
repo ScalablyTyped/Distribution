@@ -323,7 +323,8 @@ object srcNgtscCoreApiSrcInterfacesMod {
       __obj.asInstanceOf[ResourceHostContext]
     }
     
-    extension [Self <: ResourceHostContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceHostContext] (val x: Self) extends AnyVal {
       
       inline def setContainingFile(value: String): Self = StObject.set(x, "containingFile", value.asInstanceOf[js.Any])
       
@@ -349,7 +350,8 @@ object srcNgtscCoreApiSrcInterfacesMod {
       __obj.asInstanceOf[TransformResourceResult]
     }
     
-    extension [Self <: TransformResourceResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformResourceResult] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     }
@@ -372,7 +374,8 @@ object srcNgtscCoreApiSrcInterfacesMod {
       __obj.asInstanceOf[UnifiedModulesHost]
     }
     
-    extension [Self <: UnifiedModulesHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnifiedModulesHost] (val x: Self) extends AnyVal {
       
       inline def setFileNameToModuleName(value: (String, String) => String): Self = StObject.set(x, "fileNameToModuleName", js.Any.fromFunction2(value))
     }

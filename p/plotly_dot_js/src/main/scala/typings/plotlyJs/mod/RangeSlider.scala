@@ -32,7 +32,8 @@ object RangeSlider {
     __obj.asInstanceOf[RangeSlider]
   }
   
-  extension [Self <: RangeSlider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeSlider] (val x: Self) extends AnyVal {
     
     inline def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     

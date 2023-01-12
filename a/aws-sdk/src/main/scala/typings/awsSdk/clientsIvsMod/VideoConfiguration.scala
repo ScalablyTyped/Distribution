@@ -53,7 +53,8 @@ object VideoConfiguration {
     __obj.asInstanceOf[VideoConfiguration]
   }
   
-  extension [Self <: VideoConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAvcLevel(value: String): Self = StObject.set(x, "avcLevel", value.asInstanceOf[js.Any])
     

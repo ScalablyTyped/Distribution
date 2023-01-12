@@ -23,7 +23,8 @@ object ImageLoaderConfig {
     __obj.asInstanceOf[ImageLoaderConfig]
   }
   
-  extension [Self <: ImageLoaderConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageLoaderConfig] (val x: Self) extends AnyVal {
     
     inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     

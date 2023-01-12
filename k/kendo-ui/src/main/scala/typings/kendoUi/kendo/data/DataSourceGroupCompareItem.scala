@@ -19,7 +19,8 @@ object DataSourceGroupCompareItem {
     __obj.asInstanceOf[DataSourceGroupCompareItem]
   }
   
-  extension [Self <: DataSourceGroupCompareItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceGroupCompareItem] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

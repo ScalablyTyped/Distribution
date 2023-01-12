@@ -19,7 +19,8 @@ object BoxSizingHeight {
     __obj.asInstanceOf[BoxSizingHeight]
   }
   
-  extension [Self <: BoxSizingHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoxSizingHeight] (val x: Self) extends AnyVal {
     
     inline def setBoxSizing(value: String): Self = StObject.set(x, "boxSizing", value.asInstanceOf[js.Any])
     

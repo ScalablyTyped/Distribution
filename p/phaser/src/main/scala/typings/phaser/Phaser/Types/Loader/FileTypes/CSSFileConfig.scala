@@ -34,7 +34,8 @@ object CSSFileConfig {
     __obj.asInstanceOf[CSSFileConfig]
   }
   
-  extension [Self <: CSSFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSFileConfig] (val x: Self) extends AnyVal {
     
     inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     

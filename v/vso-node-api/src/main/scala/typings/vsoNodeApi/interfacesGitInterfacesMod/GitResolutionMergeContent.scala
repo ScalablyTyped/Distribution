@@ -21,7 +21,8 @@ object GitResolutionMergeContent {
     __obj.asInstanceOf[GitResolutionMergeContent]
   }
   
-  extension [Self <: GitResolutionMergeContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitResolutionMergeContent] (val x: Self) extends AnyVal {
     
     inline def setMergeType(value: GitResolutionMergeType): Self = StObject.set(x, "mergeType", value.asInstanceOf[js.Any])
     

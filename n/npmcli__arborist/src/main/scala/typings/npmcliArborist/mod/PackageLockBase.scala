@@ -22,7 +22,8 @@ object PackageLockBase {
     __obj.asInstanceOf[PackageLockBase]
   }
   
-  extension [Self <: PackageLockBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageLockBase] (val x: Self) extends AnyVal {
     
     inline def setPackages(
       value: StringDictionary[

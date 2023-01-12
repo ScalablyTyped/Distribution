@@ -84,7 +84,8 @@ object libClassdefStrictModeEvaluatorMod {
       __obj.asInstanceOf[ProtectedObject]
     }
     
-    extension [Self <: ProtectedObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtectedObject] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -157,7 +158,8 @@ object libClassdefStrictModeEvaluatorMod {
       __obj.asInstanceOf[StrictModeEvaluator]
     }
     
-    extension [Self <: StrictModeEvaluator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictModeEvaluator] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       

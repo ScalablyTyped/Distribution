@@ -198,7 +198,8 @@ object IBasicForm {
     __obj.asInstanceOf[IBasicForm]
   }
   
-  extension [Self <: IBasicForm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBasicForm] (val x: Self) extends AnyVal {
     
     inline def setApi(value: Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     

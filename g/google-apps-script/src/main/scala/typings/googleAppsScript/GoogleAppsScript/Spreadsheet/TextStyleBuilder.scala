@@ -45,7 +45,8 @@ object TextStyleBuilder {
     __obj.asInstanceOf[TextStyleBuilder]
   }
   
-  extension [Self <: TextStyleBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextStyleBuilder] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: () => TextStyle): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     

@@ -24,7 +24,8 @@ object GetInstanceHealthResponse {
     __obj.asInstanceOf[GetInstanceHealthResponse]
   }
   
-  extension [Self <: GetInstanceHealthResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInstanceHealthResponse] (val x: Self) extends AnyVal {
     
     inline def setHealthInfo(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

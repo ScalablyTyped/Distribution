@@ -40,7 +40,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ChildrenDatum[RawDatum]]
     }
     
-    extension [Self <: ChildrenDatum[?], RawDatum](x: Self & ChildrenDatum[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildrenDatum[?], RawDatum] (val x: Self & ChildrenDatum[RawDatum]) extends AnyVal {
       
       inline def setChildren(value: js.Array[RawDatum & ChildrenDatum[RawDatum]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ComputedDatum[RawDatum]]
     }
     
-    extension [Self <: ComputedDatum[?], RawDatum](x: Self & ComputedDatum[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputedDatum[?], RawDatum] (val x: Self & ComputedDatum[RawDatum]) extends AnyVal {
       
       inline def setArc(value: Arc): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
       
@@ -145,7 +147,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[DataProps[RawDatum]]
     }
     
-    extension [Self <: DataProps[?], RawDatum](x: Self & DataProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataProps[?], RawDatum] (val x: Self & DataProps[RawDatum]) extends AnyVal {
       
       inline def setData(value: RawDatum): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -193,7 +196,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[MouseHandlers[RawDatum]]
     }
     
-    extension [Self <: MouseHandlers[?], RawDatum](x: Self & MouseHandlers[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseHandlers[?], RawDatum] (val x: Self & MouseHandlers[RawDatum]) extends AnyVal {
       
       inline def setOnClick(
         value: (/* datum */ ComputedDatum[RawDatum], /* event */ MouseEvent[Element, NativeMouseEvent]) => Unit
@@ -309,7 +313,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[SunburstCommonProps[RawDatum]]
     }
     
-    extension [Self <: SunburstCommonProps[?], RawDatum](x: Self & SunburstCommonProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SunburstCommonProps[?], RawDatum] (val x: Self & SunburstCommonProps[RawDatum]) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -406,7 +411,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[SunburstCustomLayerProps[RawDatum]]
     }
     
-    extension [Self <: SunburstCustomLayerProps[?], RawDatum](x: Self & SunburstCustomLayerProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SunburstCustomLayerProps[?], RawDatum] (val x: Self & SunburstCustomLayerProps[RawDatum]) extends AnyVal {
       
       inline def setArcGenerator(value: ArcGenerator): Self = StObject.set(x, "arcGenerator", value.asInstanceOf[js.Any])
       
@@ -545,7 +551,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[SunburstSvgProps[RawDatum]]
     }
     
-    extension [Self <: SunburstSvgProps[?], RawDatum](x: Self & SunburstSvgProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SunburstSvgProps[?], RawDatum] (val x: Self & SunburstSvgProps[RawDatum]) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

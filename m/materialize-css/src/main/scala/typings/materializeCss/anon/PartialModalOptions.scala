@@ -38,7 +38,8 @@ object PartialModalOptions {
     __obj.asInstanceOf[PartialModalOptions]
   }
   
-  extension [Self <: PartialModalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialModalOptions] (val x: Self) extends AnyVal {
     
     inline def setDismissible(value: Boolean): Self = StObject.set(x, "dismissible", value.asInstanceOf[js.Any])
     

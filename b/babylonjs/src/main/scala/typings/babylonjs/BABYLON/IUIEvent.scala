@@ -45,7 +45,8 @@ object IUIEvent {
     __obj.asInstanceOf[IUIEvent]
   }
   
-  extension [Self <: IUIEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUIEvent] (val x: Self) extends AnyVal {
     
     inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     

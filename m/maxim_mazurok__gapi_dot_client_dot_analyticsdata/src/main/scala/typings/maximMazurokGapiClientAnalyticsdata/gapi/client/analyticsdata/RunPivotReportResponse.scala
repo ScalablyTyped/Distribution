@@ -45,7 +45,8 @@ object RunPivotReportResponse {
     __obj.asInstanceOf[RunPivotReportResponse]
   }
   
-  extension [Self <: RunPivotReportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunPivotReportResponse] (val x: Self) extends AnyVal {
     
     inline def setAggregates(value: js.Array[Row]): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
     

@@ -995,7 +995,8 @@ object mod {
       __obj.asInstanceOf[CompletionRecord]
     }
     
-    extension [Self <: CompletionRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompletionRecord] (val x: Self) extends AnyVal {
       
       inline def setArg(value: Any): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
       
@@ -1156,7 +1157,8 @@ object mod {
       __obj.asInstanceOf[DelegatedIterator]
     }
     
-    extension [Self <: DelegatedIterator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DelegatedIterator] (val x: Self) extends AnyVal {
       
       inline def setIterator(value: js.Iterator[Any]): Self = StObject.set(x, "iterator", value.asInstanceOf[js.Any])
     }
@@ -1191,7 +1193,8 @@ object mod {
       __obj.asInstanceOf[TryEntry]
     }
     
-    extension [Self <: TryEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TryEntry] (val x: Self) extends AnyVal {
       
       inline def setAfterLoc(value: ContextLocation): Self = StObject.set(x, "afterLoc", value.asInstanceOf[js.Any])
       

@@ -50,7 +50,8 @@ object EdiscoveryCase {
     __obj.asInstanceOf[EdiscoveryCase]
   }
   
-  extension [Self <: EdiscoveryCase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdiscoveryCase] (val x: Self) extends AnyVal {
     
     inline def setClosedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "closedBy", value.asInstanceOf[js.Any])
     

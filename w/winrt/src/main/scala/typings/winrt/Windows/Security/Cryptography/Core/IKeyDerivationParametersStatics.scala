@@ -30,7 +30,8 @@ object IKeyDerivationParametersStatics {
     __obj.asInstanceOf[IKeyDerivationParametersStatics]
   }
   
-  extension [Self <: IKeyDerivationParametersStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKeyDerivationParametersStatics] (val x: Self) extends AnyVal {
     
     inline def setBuildForPbkdf2(value: (IBuffer, Double) => KeyDerivationParameters): Self = StObject.set(x, "buildForPbkdf2", js.Any.fromFunction2(value))
     

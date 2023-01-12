@@ -20,7 +20,8 @@ object GitTreeDiffResponse {
     __obj.asInstanceOf[GitTreeDiffResponse]
   }
   
-  extension [Self <: GitTreeDiffResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitTreeDiffResponse] (val x: Self) extends AnyVal {
     
     inline def setContinuationToken(value: js.Array[String]): Self = StObject.set(x, "continuationToken", value.asInstanceOf[js.Any])
     

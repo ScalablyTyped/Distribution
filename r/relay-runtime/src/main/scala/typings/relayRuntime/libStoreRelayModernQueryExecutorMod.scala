@@ -88,7 +88,8 @@ object libStoreRelayModernQueryExecutorMod {
       __obj.asInstanceOf[ExecuteConfig]
     }
     
-    extension [Self <: ExecuteConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecuteConfig] (val x: Self) extends AnyVal {
       
       inline def setGetDataID(value: (StringDictionary[Any], String) => Any): Self = StObject.set(x, "getDataID", js.Any.fromFunction2(value))
       
@@ -159,7 +160,8 @@ object libStoreRelayModernQueryExecutorMod {
       __obj.asInstanceOf[Executor]
     }
     
-    extension [Self <: Executor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Executor] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     }
@@ -178,7 +180,8 @@ object libStoreRelayModernQueryExecutorMod {
       __obj.asInstanceOf[TaskScheduler]
     }
     
-    extension [Self <: TaskScheduler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskScheduler] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: String => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       

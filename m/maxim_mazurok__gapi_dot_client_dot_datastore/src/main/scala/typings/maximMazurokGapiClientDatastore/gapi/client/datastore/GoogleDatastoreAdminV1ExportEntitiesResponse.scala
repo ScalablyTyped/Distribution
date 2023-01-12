@@ -19,7 +19,8 @@ object GoogleDatastoreAdminV1ExportEntitiesResponse {
     __obj.asInstanceOf[GoogleDatastoreAdminV1ExportEntitiesResponse]
   }
   
-  extension [Self <: GoogleDatastoreAdminV1ExportEntitiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDatastoreAdminV1ExportEntitiesResponse] (val x: Self) extends AnyVal {
     
     inline def setOutputUrl(value: String): Self = StObject.set(x, "outputUrl", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object DistributionIdList {
     __obj.asInstanceOf[DistributionIdList]
   }
   
-  extension [Self <: DistributionIdList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributionIdList] (val x: Self) extends AnyVal {
     
     inline def setIsTruncated(value: Boolean): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

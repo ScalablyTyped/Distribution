@@ -28,7 +28,8 @@ object CreateDocumentationPartRequest {
     __obj.asInstanceOf[CreateDocumentationPartRequest]
   }
   
-  extension [Self <: CreateDocumentationPartRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDocumentationPartRequest] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: DocumentationPartLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

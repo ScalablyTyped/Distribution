@@ -78,7 +78,8 @@ object XStructTypeDescription {
     __obj.asInstanceOf[XStructTypeDescription]
   }
   
-  extension [Self <: XStructTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStructTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setGetTypeArguments(value: () => SafeArray[XTypeDescription]): Self = StObject.set(x, "getTypeArguments", js.Any.fromFunction0(value))
     

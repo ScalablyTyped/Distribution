@@ -18,7 +18,8 @@ object DeleteNetworkInsightsAccessScopeAnalysisResult {
     __obj.asInstanceOf[DeleteNetworkInsightsAccessScopeAnalysisResult]
   }
   
-  extension [Self <: DeleteNetworkInsightsAccessScopeAnalysisResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteNetworkInsightsAccessScopeAnalysisResult] (val x: Self) extends AnyVal {
     
     inline def setNetworkInsightsAccessScopeAnalysisId(value: NetworkInsightsAccessScopeAnalysisId): Self = StObject.set(x, "NetworkInsightsAccessScopeAnalysisId", value.asInstanceOf[js.Any])
     

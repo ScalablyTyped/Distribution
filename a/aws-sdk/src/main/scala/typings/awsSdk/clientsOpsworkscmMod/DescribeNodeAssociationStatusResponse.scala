@@ -23,7 +23,8 @@ object DescribeNodeAssociationStatusResponse {
     __obj.asInstanceOf[DescribeNodeAssociationStatusResponse]
   }
   
-  extension [Self <: DescribeNodeAssociationStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNodeAssociationStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setEngineAttributes(value: EngineAttributes): Self = StObject.set(x, "EngineAttributes", value.asInstanceOf[js.Any])
     

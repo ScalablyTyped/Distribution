@@ -18,7 +18,8 @@ object runtimeCoreMod {
       __obj.asInstanceOf[ComponentCustomOptions]
     }
     
-    extension [Self <: ComponentCustomOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentCustomOptions] (val x: Self) extends AnyVal {
       
       inline def setStore(value: Store[Any]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       

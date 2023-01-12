@@ -42,7 +42,8 @@ object distSliderSliderMod extends Shortcut {
       __obj.asInstanceOf[Sizable]
     }
     
-    extension [Self <: Sizable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sizable] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object distSliderSliderMod extends Shortcut {
       __obj.asInstanceOf[SliderProps]
     }
     
-    extension [Self <: SliderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderProps] (val x: Self) extends AnyVal {
       
       inline def setAllowTouchTrack(value: Boolean): Self = StObject.set(x, "allowTouchTrack", value.asInstanceOf[js.Any])
       

@@ -93,7 +93,8 @@ object XMLParser {
     __obj.asInstanceOf[XMLParser]
   }
   
-  extension [Self <: XMLParser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMLParser] (val x: Self) extends AnyVal {
     
     inline def setDidEndDocument(value: () => Unit): Self = StObject.set(x, "didEndDocument", js.Any.fromFunction0(value))
     

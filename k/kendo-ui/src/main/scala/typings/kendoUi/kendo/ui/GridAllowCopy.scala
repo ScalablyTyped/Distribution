@@ -15,7 +15,8 @@ object GridAllowCopy {
     __obj.asInstanceOf[GridAllowCopy]
   }
   
-  extension [Self <: GridAllowCopy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridAllowCopy] (val x: Self) extends AnyVal {
     
     inline def setDelimeter(value: String | Any): Self = StObject.set(x, "delimeter", value.asInstanceOf[js.Any])
     

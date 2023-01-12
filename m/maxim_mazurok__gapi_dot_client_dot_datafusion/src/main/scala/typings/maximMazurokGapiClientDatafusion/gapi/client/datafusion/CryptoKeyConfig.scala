@@ -16,7 +16,8 @@ object CryptoKeyConfig {
     __obj.asInstanceOf[CryptoKeyConfig]
   }
   
-  extension [Self <: CryptoKeyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CryptoKeyConfig] (val x: Self) extends AnyVal {
     
     inline def setKeyReference(value: String): Self = StObject.set(x, "keyReference", value.asInstanceOf[js.Any])
     

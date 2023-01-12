@@ -16,7 +16,8 @@ object BatchCreateAdminOverridesResponse {
     __obj.asInstanceOf[BatchCreateAdminOverridesResponse]
   }
   
-  extension [Self <: BatchCreateAdminOverridesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreateAdminOverridesResponse] (val x: Self) extends AnyVal {
     
     inline def setOverrides(value: js.Array[QuotaOverride]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     

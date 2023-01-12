@@ -20,7 +20,8 @@ object LastPlay {
     __obj.asInstanceOf[LastPlay]
   }
   
-  extension [Self <: LastPlay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LastPlay] (val x: Self) extends AnyVal {
     
     inline def setDj(value: DJ): Self = StObject.set(x, "dj", value.asInstanceOf[js.Any])
     

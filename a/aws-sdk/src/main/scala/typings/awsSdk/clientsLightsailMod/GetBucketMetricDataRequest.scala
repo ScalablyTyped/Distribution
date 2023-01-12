@@ -56,7 +56,8 @@ object GetBucketMetricDataRequest {
     __obj.asInstanceOf[GetBucketMetricDataRequest]
   }
   
-  extension [Self <: GetBucketMetricDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketMetricDataRequest] (val x: Self) extends AnyVal {
     
     inline def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     

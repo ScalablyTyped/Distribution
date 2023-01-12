@@ -23,7 +23,8 @@ object projectIdstringnumberundeGroupId {
     __obj.asInstanceOf[projectIdstringnumberundeGroupId]
   }
   
-  extension [Self <: projectIdstringnumberundeGroupId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: projectIdstringnumberundeGroupId] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: String | Double): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     

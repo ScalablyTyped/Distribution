@@ -350,7 +350,8 @@ object anon {
       __obj.asInstanceOf[Animate]
     }
     
-    extension [Self <: Animate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animate] (val x: Self) extends AnyVal {
       
       inline def setAnimate(
         value: Validator[
@@ -617,7 +618,8 @@ object anon {
       __obj.asInstanceOf[ContainerComponent]
     }
     
-    extension [Self <: ContainerComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerComponent] (val x: Self) extends AnyVal {
       
       inline def setContainerComponent(value: Element): Self = StObject.set(x, "containerComponent", value.asInstanceOf[js.Any])
       
@@ -654,7 +656,8 @@ object anon {
       __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: Events](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: js.Array[Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -747,7 +750,8 @@ object anon {
       __obj.asInstanceOf[TypeofVictoryLineBase]
     }
     
-    extension [Self <: TypeofVictoryLineBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofVictoryLineBase] (val x: Self) extends AnyVal {
       
       inline def setAnimationWhitelist(value: js.Array[String]): Self = StObject.set(x, "animationWhitelist", value.asInstanceOf[js.Any])
       
@@ -792,7 +796,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -817,7 +822,8 @@ object anon {
       __obj.asInstanceOf[XY]
     }
     
-    extension [Self <: XY](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XY] (val x: Self) extends AnyVal {
       
       inline def setX(value: Boolean): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -846,7 +852,8 @@ object anon {
       __obj.asInstanceOf[Y]
     }
     
-    extension [Self <: Y](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Y] (val x: Self) extends AnyVal {
       
       inline def setX(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_victory-core.D3Scale<any> */ Any

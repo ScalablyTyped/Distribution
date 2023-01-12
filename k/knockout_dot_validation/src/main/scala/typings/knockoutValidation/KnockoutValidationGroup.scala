@@ -19,7 +19,8 @@ object KnockoutValidationGroup {
     __obj.asInstanceOf[KnockoutValidationGroup]
   }
   
-  extension [Self <: KnockoutValidationGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutValidationGroup] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: KnockoutValidationErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

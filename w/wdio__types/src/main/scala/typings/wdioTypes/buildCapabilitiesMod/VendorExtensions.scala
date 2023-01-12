@@ -88,7 +88,8 @@ object VendorExtensions {
     __obj.asInstanceOf[VendorExtensions]
   }
   
-  extension [Self <: VendorExtensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VendorExtensions] (val x: Self) extends AnyVal {
     
     inline def setBrowserstackDotlocal(value: Boolean): Self = StObject.set(x, "browserstack.local", value.asInstanceOf[js.Any])
     

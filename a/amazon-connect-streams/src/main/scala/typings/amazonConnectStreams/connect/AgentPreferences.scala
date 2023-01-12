@@ -15,7 +15,8 @@ object AgentPreferences {
     __obj.asInstanceOf[AgentPreferences]
   }
   
-  extension [Self <: AgentPreferences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentPreferences] (val x: Self) extends AnyVal {
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object CategoricalChartWrapper {
     __obj.asInstanceOf[CategoricalChartWrapper[L]]
   }
   
-  extension [Self <: CategoricalChartWrapper[?], L](x: Self & CategoricalChartWrapper[L]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CategoricalChartWrapper[?], L] (val x: Self & CategoricalChartWrapper[L]) extends AnyVal {
     
     inline def setBarCategoryGap(value: Double | String): Self = StObject.set(x, "barCategoryGap", value.asInstanceOf[js.Any])
     

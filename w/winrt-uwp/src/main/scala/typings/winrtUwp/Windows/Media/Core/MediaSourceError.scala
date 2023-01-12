@@ -18,7 +18,8 @@ object MediaSourceError {
     __obj.asInstanceOf[MediaSourceError]
   }
   
-  extension [Self <: MediaSourceError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaSourceError] (val x: Self) extends AnyVal {
     
     inline def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
   }

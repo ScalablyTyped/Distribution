@@ -20,7 +20,8 @@ object Deferral {
     __obj.asInstanceOf[Deferral]
   }
   
-  extension [Self <: Deferral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deferral] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

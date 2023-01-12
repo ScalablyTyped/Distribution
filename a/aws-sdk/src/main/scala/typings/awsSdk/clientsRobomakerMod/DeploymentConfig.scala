@@ -33,7 +33,8 @@ object DeploymentConfig {
     __obj.asInstanceOf[DeploymentConfig]
   }
   
-  extension [Self <: DeploymentConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentConfig] (val x: Self) extends AnyVal {
     
     inline def setConcurrentDeploymentPercentage(value: Percentage): Self = StObject.set(x, "concurrentDeploymentPercentage", value.asInstanceOf[js.Any])
     

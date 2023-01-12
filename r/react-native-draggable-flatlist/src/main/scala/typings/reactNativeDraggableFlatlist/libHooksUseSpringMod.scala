@@ -26,7 +26,8 @@ object libHooksUseSpringMod {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: PartialSpringConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     }

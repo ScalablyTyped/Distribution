@@ -23,7 +23,8 @@ object Variation {
     __obj.asInstanceOf[Variation]
   }
   
-  extension [Self <: Variation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Variation] (val x: Self) extends AnyVal {
     
     inline def setName(value: VariationName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

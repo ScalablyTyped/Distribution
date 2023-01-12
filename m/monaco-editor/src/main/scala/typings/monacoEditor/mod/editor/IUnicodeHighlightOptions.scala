@@ -52,7 +52,8 @@ object IUnicodeHighlightOptions {
     __obj.asInstanceOf[IUnicodeHighlightOptions]
   }
   
-  extension [Self <: IUnicodeHighlightOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUnicodeHighlightOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowedCharacters(value: Record[String, `true`]): Self = StObject.set(x, "allowedCharacters", value.asInstanceOf[js.Any])
     

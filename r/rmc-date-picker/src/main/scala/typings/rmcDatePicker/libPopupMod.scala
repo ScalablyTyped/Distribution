@@ -50,7 +50,8 @@ object libPopupMod {
       __obj.asInstanceOf[IPopupDatePickerProps]
     }
     
-    extension [Self <: IPopupDatePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPopupDatePickerProps] (val x: Self) extends AnyVal {
       
       inline def setDate(value: Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       

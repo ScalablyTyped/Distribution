@@ -20,7 +20,8 @@ object filteringFormatterOptionsComparableOptionsMod {
       __obj.asInstanceOf[ComparableOptions]
     }
     
-    extension [Self <: ComparableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComparableOptions] (val x: Self) extends AnyVal {
       
       inline def setCompare(value: String | js.Array[String]): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
       

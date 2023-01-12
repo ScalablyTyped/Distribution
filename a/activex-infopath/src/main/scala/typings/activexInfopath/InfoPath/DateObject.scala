@@ -31,7 +31,8 @@ object DateObject {
     __obj.asInstanceOf[DateObject]
   }
   
-  extension [Self <: DateObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateObject] (val x: Self) extends AnyVal {
     
     inline def setAddDays(value: (Any, Any) => Any): Self = StObject.set(x, "AddDays", js.Any.fromFunction2(value))
     

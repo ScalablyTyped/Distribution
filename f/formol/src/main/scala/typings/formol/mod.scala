@@ -129,7 +129,8 @@ object mod {
       __obj.asInstanceOf[ConditionalProps[V]]
     }
     
-    extension [Self <: ConditionalProps[?], V](x: Self & ConditionalProps[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConditionalProps[?], V] (val x: Self & ConditionalProps[V]) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -234,7 +235,8 @@ object mod {
       __obj.asInstanceOf[FieldProps[V]]
     }
     
-    extension [Self <: FieldProps[?], V](x: Self & FieldProps[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldProps[?], V] (val x: Self & FieldProps[V]) extends AnyVal {
       
       inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -385,7 +387,8 @@ object mod {
       __obj.asInstanceOf[FieldSetProps[V]]
     }
     
-    extension [Self <: FieldSetProps[?], V](x: Self & FieldSetProps[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldSetProps[?], V] (val x: Self & FieldSetProps[V]) extends AnyVal {
       
       inline def setChoices(value: js.Array[Any]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
       
@@ -465,7 +468,8 @@ object mod {
       __obj.asInstanceOf[FormolProps[V]]
     }
     
-    extension [Self <: FormolProps[?], V](x: Self & FormolProps[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormolProps[?], V] (val x: Self & FormolProps[V]) extends AnyVal {
       
       inline def setAllowUnmodifiedSubmit(value: Any): Self = StObject.set(x, "allowUnmodifiedSubmit", value.asInstanceOf[js.Any])
       
@@ -540,7 +544,8 @@ object mod {
       __obj.asInstanceOf[InlinerProps]
     }
     
-    extension [Self <: InlinerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlinerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -567,7 +572,8 @@ object mod {
       __obj.asInstanceOf[SwitchButtonProps]
     }
     
-    extension [Self <: SwitchButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchButtonProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

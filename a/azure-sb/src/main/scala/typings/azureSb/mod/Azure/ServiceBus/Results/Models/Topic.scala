@@ -61,7 +61,8 @@ object Topic {
     __obj.asInstanceOf[Topic]
   }
   
-  extension [Self <: Topic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Topic] (val x: Self) extends AnyVal {
     
     inline def setAccessedAt(value: DateString): Self = StObject.set(x, "AccessedAt", value.asInstanceOf[js.Any])
     

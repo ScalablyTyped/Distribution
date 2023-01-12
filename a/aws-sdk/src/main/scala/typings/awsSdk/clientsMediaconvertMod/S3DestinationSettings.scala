@@ -23,7 +23,8 @@ object S3DestinationSettings {
     __obj.asInstanceOf[S3DestinationSettings]
   }
   
-  extension [Self <: S3DestinationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3DestinationSettings] (val x: Self) extends AnyVal {
     
     inline def setAccessControl(value: S3DestinationAccessControl): Self = StObject.set(x, "AccessControl", value.asInstanceOf[js.Any])
     

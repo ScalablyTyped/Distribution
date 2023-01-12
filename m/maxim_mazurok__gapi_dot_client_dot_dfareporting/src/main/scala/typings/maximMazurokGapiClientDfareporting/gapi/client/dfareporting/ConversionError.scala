@@ -22,7 +22,8 @@ object ConversionError {
     __obj.asInstanceOf[ConversionError]
   }
   
-  extension [Self <: ConversionError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversionError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

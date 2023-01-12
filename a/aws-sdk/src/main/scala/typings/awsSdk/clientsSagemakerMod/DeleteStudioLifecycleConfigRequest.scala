@@ -18,7 +18,8 @@ object DeleteStudioLifecycleConfigRequest {
     __obj.asInstanceOf[DeleteStudioLifecycleConfigRequest]
   }
   
-  extension [Self <: DeleteStudioLifecycleConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteStudioLifecycleConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setStudioLifecycleConfigName(value: StudioLifecycleConfigName): Self = StObject.set(x, "StudioLifecycleConfigName", value.asInstanceOf[js.Any])
   }

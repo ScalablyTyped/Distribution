@@ -27,7 +27,8 @@ object emailAddresses {
       __obj.asInstanceOf[ASTNode]
     }
     
-    extension [Self <: ASTNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ASTNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ASTNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object emailAddresses {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAddressListSeparator(value: String): Self = StObject.set(x, "addressListSeparator", value.asInstanceOf[js.Any])
       
@@ -138,7 +140,8 @@ object emailAddresses {
       __obj.asInstanceOf[ParsedGroup]
     }
     
-    extension [Self <: ParsedGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedGroup] (val x: Self) extends AnyVal {
       
       inline def setAddresses(value: js.Array[ParsedMailbox]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       
@@ -180,7 +183,8 @@ object emailAddresses {
       __obj.asInstanceOf[ParsedMailbox]
     }
     
-    extension [Self <: ParsedMailbox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedMailbox] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -215,7 +219,8 @@ object emailAddresses {
       __obj.asInstanceOf[ParsedResult]
     }
     
-    extension [Self <: ParsedResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedResult] (val x: Self) extends AnyVal {
       
       inline def setAddresses(value: js.Array[ParsedMailbox | ParsedGroup]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       

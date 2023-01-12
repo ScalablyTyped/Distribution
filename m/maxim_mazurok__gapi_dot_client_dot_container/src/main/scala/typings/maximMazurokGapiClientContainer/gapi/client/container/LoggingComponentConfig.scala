@@ -16,7 +16,8 @@ object LoggingComponentConfig {
     __obj.asInstanceOf[LoggingComponentConfig]
   }
   
-  extension [Self <: LoggingComponentConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoggingComponentConfig] (val x: Self) extends AnyVal {
     
     inline def setEnableComponents(value: js.Array[String]): Self = StObject.set(x, "enableComponents", value.asInstanceOf[js.Any])
     

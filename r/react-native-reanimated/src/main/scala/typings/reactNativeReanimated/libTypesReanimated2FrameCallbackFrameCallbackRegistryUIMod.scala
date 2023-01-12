@@ -27,7 +27,8 @@ object libTypesReanimated2FrameCallbackFrameCallbackRegistryUIMod {
       __obj.asInstanceOf[CallbackDetails]
     }
     
-    extension [Self <: CallbackDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackDetails] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: FrameInfo => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
@@ -67,7 +68,8 @@ object libTypesReanimated2FrameCallbackFrameCallbackRegistryUIMod {
       __obj.asInstanceOf[FrameCallbackRegistryUI]
     }
     
-    extension [Self <: FrameCallbackRegistryUI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameCallbackRegistryUI] (val x: Self) extends AnyVal {
       
       inline def setActiveFrameCallbacks(value: Set[Double]): Self = StObject.set(x, "activeFrameCallbacks", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object libTypesReanimated2FrameCallbackFrameCallbackRegistryUIMod {
       __obj.asInstanceOf[FrameInfo]
     }
     
-    extension [Self <: FrameInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameInfo] (val x: Self) extends AnyVal {
       
       inline def setTimeSinceFirstFrame(value: Double): Self = StObject.set(x, "timeSinceFirstFrame", value.asInstanceOf[js.Any])
       

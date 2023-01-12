@@ -845,7 +845,8 @@ object anon {
       __obj.asInstanceOf[TypeReferencetargetTupleT]
     }
     
-    extension [Self <: TypeReferencetargetTupleT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeReferencetargetTupleT] (val x: Self) extends AnyVal {
       
       inline def setAliasSymbol(value: Symbol): Self = StObject.set(x, "aliasSymbol", value.asInstanceOf[js.Any])
       

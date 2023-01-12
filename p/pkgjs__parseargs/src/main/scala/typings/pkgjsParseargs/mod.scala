@@ -92,7 +92,8 @@ object mod {
       __obj.asInstanceOf[ParseArgsConfig]
     }
     
-    extension [Self <: ParseArgsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseArgsConfig] (val x: Self) extends AnyVal {
       
       inline def setAllowPositionals(value: Boolean): Self = StObject.set(x, "allowPositionals", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object mod {
       __obj.asInstanceOf[ParseArgsOptionConfig]
     }
     
-    extension [Self <: ParseArgsOptionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseArgsOptionConfig] (val x: Self) extends AnyVal {
       
       inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       

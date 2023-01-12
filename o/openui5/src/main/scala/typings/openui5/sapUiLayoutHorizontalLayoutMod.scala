@@ -265,7 +265,8 @@ object sapUiLayoutHorizontalLayoutMod {
       __obj.asInstanceOf[HorizontalLayoutSettings]
     }
     
-    extension [Self <: HorizontalLayoutSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HorizontalLayoutSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowWrapping(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "allowWrapping", value.asInstanceOf[js.Any])
       

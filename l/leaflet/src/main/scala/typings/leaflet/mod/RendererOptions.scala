@@ -19,7 +19,8 @@ object RendererOptions {
     __obj.asInstanceOf[RendererOptions]
   }
   
-  extension [Self <: RendererOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RendererOptions] (val x: Self) extends AnyVal {
     
     inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[RedirectUri]
     }
     
-    extension [Self <: RedirectUri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedirectUri] (val x: Self) extends AnyVal {
       
       inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     }
@@ -34,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Rptendpoint]
     }
     
-    extension [Self <: Rptendpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rptendpoint] (val x: Self) extends AnyVal {
       
       inline def setRpt_endpoint(value: String): Self = StObject.set(x, "rpt_endpoint", value.asInstanceOf[js.Any])
     }

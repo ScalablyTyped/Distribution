@@ -26,7 +26,8 @@ object Trigger {
     __obj.asInstanceOf[Trigger[TTarget, TData]]
   }
   
-  extension [Self <: Trigger[?, ?], TTarget, TData](x: Self & (Trigger[TTarget, TData])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Trigger[?, ?], TTarget, TData] (val x: Self & (Trigger[TTarget, TData])) extends AnyVal {
     
     inline def setTrigger(value: (Event, TData) => Unit | `false`): Self = StObject.set(x, "trigger", js.Any.fromFunction2(value))
   }

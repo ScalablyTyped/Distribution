@@ -35,7 +35,8 @@ object UtilStatic {
     __obj.asInstanceOf[UtilStatic]
   }
   
-  extension [Self <: UtilStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UtilStatic] (val x: Self) extends AnyVal {
     
     inline def setDecode(value: String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     

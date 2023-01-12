@@ -34,7 +34,8 @@ object XUpdatable2 {
     __obj.asInstanceOf[XUpdatable2]
   }
   
-  extension [Self <: XUpdatable2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUpdatable2] (val x: Self) extends AnyVal {
     
     inline def setUpdateHard(value: () => Unit): Self = StObject.set(x, "updateHard", js.Any.fromFunction0(value))
     

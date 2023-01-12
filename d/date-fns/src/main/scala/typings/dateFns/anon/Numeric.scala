@@ -23,7 +23,8 @@ object Numeric {
     __obj.asInstanceOf[Numeric]
   }
   
-  extension [Self <: Numeric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Numeric] (val x: Self) extends AnyVal {
     
     inline def setLocale(value: String | js.Array[String]): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

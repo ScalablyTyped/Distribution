@@ -92,7 +92,8 @@ object CommandButton {
     __obj.asInstanceOf[CommandButton]
   }
   
-  extension [Self <: CommandButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandButton] (val x: Self) extends AnyVal {
     
     inline def setAccelerator(value: String): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
     

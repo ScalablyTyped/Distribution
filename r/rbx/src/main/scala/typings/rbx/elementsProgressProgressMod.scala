@@ -86,7 +86,8 @@ object elementsProgressProgressMod {
       __obj.asInstanceOf[ProgressModifierProps]
     }
     
-    extension [Self <: ProgressModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressModifierProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -200,7 +201,8 @@ object elementsProgressProgressMod {
       __obj.asInstanceOf[ProgressProps]
     }
     
-    extension [Self <: ProgressProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -368,7 +370,8 @@ object elementsProgressProgressMod {
       __obj.asInstanceOf[ProgressVariables]
     }
     
-    extension [Self <: ProgressVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressVariables] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }
@@ -385,7 +388,8 @@ object elementsProgressProgressMod {
       __obj.asInstanceOf[ProgressVariablesDefaults]
     }
     
-    extension [Self <: ProgressVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }

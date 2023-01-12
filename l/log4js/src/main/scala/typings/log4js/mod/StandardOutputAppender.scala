@@ -20,7 +20,8 @@ object StandardOutputAppender {
     __obj.asInstanceOf[StandardOutputAppender]
   }
   
-  extension [Self <: StandardOutputAppender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardOutputAppender] (val x: Self) extends AnyVal {
     
     inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     

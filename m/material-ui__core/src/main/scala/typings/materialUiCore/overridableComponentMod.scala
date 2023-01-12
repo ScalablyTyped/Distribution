@@ -36,7 +36,8 @@ object overridableComponentMod {
       __obj.asInstanceOf[CommonProps[M]]
     }
     
-    extension [Self <: CommonProps[?], M /* <: OverridableTypeMap */](x: Self & CommonProps[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonProps[?], M /* <: OverridableTypeMap */] (val x: Self & CommonProps[M]) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object overridableComponentMod {
       __obj.asInstanceOf[OverridableTypeMap]
     }
     
-    extension [Self <: OverridableTypeMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverridableTypeMap] (val x: Self) extends AnyVal {
       
       inline def setClassKey(value: String): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

@@ -37,7 +37,8 @@ object ExternalVpnGatewayList {
     __obj.asInstanceOf[ExternalVpnGatewayList]
   }
   
-  extension [Self <: ExternalVpnGatewayList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalVpnGatewayList] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

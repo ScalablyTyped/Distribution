@@ -30,7 +30,8 @@ object NumberFormatInfoData {
     __obj.asInstanceOf[NumberFormatInfoData]
   }
   
-  extension [Self <: NumberFormatInfoData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberFormatInfoData] (val x: Self) extends AnyVal {
     
     inline def setNumberDecimalSeparator(value: String): Self = StObject.set(x, "numberDecimalSeparator", value.asInstanceOf[js.Any])
     

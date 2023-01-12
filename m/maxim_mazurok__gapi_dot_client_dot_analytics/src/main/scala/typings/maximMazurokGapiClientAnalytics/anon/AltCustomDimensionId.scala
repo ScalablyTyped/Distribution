@@ -46,7 +46,8 @@ object AltCustomDimensionId {
     __obj.asInstanceOf[AltCustomDimensionId]
   }
   
-  extension [Self <: AltCustomDimensionId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AltCustomDimensionId] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

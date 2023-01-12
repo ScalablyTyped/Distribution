@@ -102,7 +102,8 @@ object Rating {
       __obj.asInstanceOf[ChangeEventArgs]
     }
     
-    extension [Self <: ChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -155,7 +156,8 @@ object Rating {
       __obj.asInstanceOf[ClickEventArgs]
     }
     
-    extension [Self <: ClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -200,7 +202,8 @@ object Rating {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -237,7 +240,8 @@ object Rating {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -374,7 +378,8 @@ object Rating {
       __obj.asInstanceOf[typings.ejWebAll.ej.Rating.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Rating.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Rating.Model] (val x: Self) extends AnyVal {
       
       inline def setAllowReset(value: Boolean): Self = StObject.set(x, "allowReset", value.asInstanceOf[js.Any])
       
@@ -503,7 +508,8 @@ object Rating {
       __obj.asInstanceOf[MousemoveEventArgs]
     }
     
-    extension [Self <: MousemoveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MousemoveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -556,7 +562,8 @@ object Rating {
       __obj.asInstanceOf[MouseoutEventArgs]
     }
     
-    extension [Self <: MouseoutEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseoutEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -613,7 +620,8 @@ object Rating {
       __obj.asInstanceOf[MouseoverEventArgs]
     }
     
-    extension [Self <: MouseoverEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseoverEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

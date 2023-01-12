@@ -23,7 +23,8 @@ object WFSOptions {
     __obj.asInstanceOf[WFSOptions]
   }
   
-  extension [Self <: WFSOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WFSOptions] (val x: Self) extends AnyVal {
     
     inline def setFeatureNS(value: StringDictionary[String] | String): Self = StObject.set(x, "featureNS", value.asInstanceOf[js.Any])
     

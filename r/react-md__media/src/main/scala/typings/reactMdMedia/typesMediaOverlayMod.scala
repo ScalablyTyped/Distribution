@@ -57,7 +57,8 @@ object typesMediaOverlayMod {
       __obj.asInstanceOf[MediaOverlayProps]
     }
     
-    extension [Self <: MediaOverlayProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaOverlayProps] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: MediaOverlayPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object RingRadius {
     __obj.asInstanceOf[RingRadius]
   }
   
-  extension [Self <: RingRadius](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RingRadius] (val x: Self) extends AnyVal {
     
     inline def setCalculateTangents(value: Boolean): Self = StObject.set(x, "calculateTangents", value.asInstanceOf[js.Any])
     

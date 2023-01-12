@@ -50,7 +50,8 @@ object EventBased {
     __obj.asInstanceOf[EventBased]
   }
   
-  extension [Self <: EventBased](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventBased] (val x: Self) extends AnyVal {
     
     inline def setEventBased(value: DictkDescription): Self = StObject.set(x, "eventBased", value.asInstanceOf[js.Any])
     

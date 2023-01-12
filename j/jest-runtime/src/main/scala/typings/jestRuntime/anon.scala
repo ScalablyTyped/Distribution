@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Console]
     }
     
-    extension [Self <: Console](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Console] (val x: Self) extends AnyVal {
       
       inline def setConsole(value: typings.std.Console): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[Virtual]
     }
     
-    extension [Self <: Virtual](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Virtual] (val x: Self) extends AnyVal {
       
       inline def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
       

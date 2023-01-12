@@ -74,7 +74,8 @@ object CanvasToTempFilePathOption {
     __obj.asInstanceOf[CanvasToTempFilePathOption]
   }
   
-  extension [Self <: CanvasToTempFilePathOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasToTempFilePathOption] (val x: Self) extends AnyVal {
     
     inline def setCanvas(value: IAnyObject): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     

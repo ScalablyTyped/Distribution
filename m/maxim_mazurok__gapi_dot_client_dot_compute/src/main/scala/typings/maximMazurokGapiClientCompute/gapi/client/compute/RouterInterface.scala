@@ -45,7 +45,8 @@ object RouterInterface {
     __obj.asInstanceOf[RouterInterface]
   }
   
-  extension [Self <: RouterInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterInterface] (val x: Self) extends AnyVal {
     
     inline def setIpRange(value: String): Self = StObject.set(x, "ipRange", value.asInstanceOf[js.Any])
     

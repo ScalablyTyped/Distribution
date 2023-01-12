@@ -23,7 +23,8 @@ object FilesystemChangeBasic {
     __obj.asInstanceOf[FilesystemChangeBasic[Action]]
   }
   
-  extension [Self <: FilesystemChangeBasic[?], Action /* <: created | modified | deleted | renamed */](x: Self & FilesystemChangeBasic[Action]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilesystemChangeBasic[?], Action /* <: created | modified | deleted | renamed */] (val x: Self & FilesystemChangeBasic[Action]) extends AnyVal {
     
     inline def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

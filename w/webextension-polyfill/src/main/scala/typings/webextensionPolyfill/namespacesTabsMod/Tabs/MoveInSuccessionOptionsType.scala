@@ -29,7 +29,8 @@ object MoveInSuccessionOptionsType {
     __obj.asInstanceOf[MoveInSuccessionOptionsType]
   }
   
-  extension [Self <: MoveInSuccessionOptionsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveInSuccessionOptionsType] (val x: Self) extends AnyVal {
     
     inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     

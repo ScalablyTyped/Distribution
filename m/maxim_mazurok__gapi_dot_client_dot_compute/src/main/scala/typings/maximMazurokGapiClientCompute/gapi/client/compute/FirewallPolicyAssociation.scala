@@ -28,7 +28,8 @@ object FirewallPolicyAssociation {
     __obj.asInstanceOf[FirewallPolicyAssociation]
   }
   
-  extension [Self <: FirewallPolicyAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirewallPolicyAssociation] (val x: Self) extends AnyVal {
     
     inline def setAttachmentTarget(value: String): Self = StObject.set(x, "attachmentTarget", value.asInstanceOf[js.Any])
     

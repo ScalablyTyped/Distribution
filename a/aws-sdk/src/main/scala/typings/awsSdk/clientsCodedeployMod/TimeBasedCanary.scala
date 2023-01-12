@@ -23,7 +23,8 @@ object TimeBasedCanary {
     __obj.asInstanceOf[TimeBasedCanary]
   }
   
-  extension [Self <: TimeBasedCanary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeBasedCanary] (val x: Self) extends AnyVal {
     
     inline def setCanaryInterval(value: WaitTimeInMins): Self = StObject.set(x, "canaryInterval", value.asInstanceOf[js.Any])
     

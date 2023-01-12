@@ -33,7 +33,8 @@ object DNSRecords {
     __obj.asInstanceOf[DNSRecords]
   }
   
-  extension [Self <: DNSRecords](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DNSRecords] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (String, DnsRecord) => js.Promise[js.Object]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

@@ -22,7 +22,8 @@ object BackendInputs {
     __obj.asInstanceOf[BackendInputs]
   }
   
-  extension [Self <: BackendInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendInputs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: DepthToSpaceAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

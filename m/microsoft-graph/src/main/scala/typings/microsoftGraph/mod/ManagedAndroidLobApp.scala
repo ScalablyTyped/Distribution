@@ -27,7 +27,8 @@ object ManagedAndroidLobApp {
     __obj.asInstanceOf[ManagedAndroidLobApp]
   }
   
-  extension [Self <: ManagedAndroidLobApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedAndroidLobApp] (val x: Self) extends AnyVal {
     
     inline def setMinimumSupportedOperatingSystem(value: NullableOption[AndroidMinimumOperatingSystem]): Self = StObject.set(x, "minimumSupportedOperatingSystem", value.asInstanceOf[js.Any])
     

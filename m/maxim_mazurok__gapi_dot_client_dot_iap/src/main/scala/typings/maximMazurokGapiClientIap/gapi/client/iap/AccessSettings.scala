@@ -31,7 +31,8 @@ object AccessSettings {
     __obj.asInstanceOf[AccessSettings]
   }
   
-  extension [Self <: AccessSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessSettings] (val x: Self) extends AnyVal {
     
     inline def setAllowedDomainsSettings(value: AllowedDomainsSettings): Self = StObject.set(x, "allowedDomainsSettings", value.asInstanceOf[js.Any])
     

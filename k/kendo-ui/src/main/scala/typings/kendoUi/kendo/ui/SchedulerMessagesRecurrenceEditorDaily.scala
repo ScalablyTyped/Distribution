@@ -17,7 +17,8 @@ object SchedulerMessagesRecurrenceEditorDaily {
     __obj.asInstanceOf[SchedulerMessagesRecurrenceEditorDaily]
   }
   
-  extension [Self <: SchedulerMessagesRecurrenceEditorDaily](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerMessagesRecurrenceEditorDaily] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

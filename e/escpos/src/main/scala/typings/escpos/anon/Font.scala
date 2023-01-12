@@ -39,7 +39,8 @@ object Font {
     __obj.asInstanceOf[Font]
   }
   
-  extension [Self <: Font](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
     
     inline def setFont(value: A | B): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

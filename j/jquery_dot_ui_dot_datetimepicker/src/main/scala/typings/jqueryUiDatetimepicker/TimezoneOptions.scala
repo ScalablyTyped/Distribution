@@ -17,7 +17,8 @@ object TimezoneOptions {
     __obj.asInstanceOf[TimezoneOptions]
   }
   
-  extension [Self <: TimezoneOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimezoneOptions] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

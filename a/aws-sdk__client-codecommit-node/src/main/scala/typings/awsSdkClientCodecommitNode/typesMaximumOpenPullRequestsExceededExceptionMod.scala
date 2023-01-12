@@ -21,7 +21,8 @@ object typesMaximumOpenPullRequestsExceededExceptionMod {
       __obj.asInstanceOf[MaximumOpenPullRequestsExceededException]
     }
     
-    extension [Self <: MaximumOpenPullRequestsExceededException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaximumOpenPullRequestsExceededException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.MaximumOpenPullRequestsExceededException

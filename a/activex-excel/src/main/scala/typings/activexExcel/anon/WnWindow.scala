@@ -16,7 +16,8 @@ object WnWindow {
     __obj.asInstanceOf[WnWindow]
   }
   
-  extension [Self <: WnWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WnWindow] (val x: Self) extends AnyVal {
     
     inline def setWn(value: Window): Self = StObject.set(x, "Wn", value.asInstanceOf[js.Any])
   }

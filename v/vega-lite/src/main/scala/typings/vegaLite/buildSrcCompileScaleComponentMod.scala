@@ -97,7 +97,8 @@ object buildSrcCompileScaleComponentMod {
       __obj.asInstanceOf[ScaleComponentProps]
     }
     
-    extension [Self <: ScaleComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScaleComponentProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: Double | SignalRef): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object PageBreakCollectionData {
     __obj.asInstanceOf[PageBreakCollectionData]
   }
   
-  extension [Self <: PageBreakCollectionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageBreakCollectionData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[PageBreakData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

@@ -82,7 +82,8 @@ object Delimiter {
     __obj.asInstanceOf[Delimiter]
   }
   
-  extension [Self <: Delimiter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Delimiter] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

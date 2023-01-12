@@ -64,7 +64,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AllTheCitiesCity]
     }
     
-    extension [Self <: AllTheCitiesCity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllTheCitiesCity] (val x: Self) extends AnyVal {
       
       inline def setAdminCode(value: String): Self = StObject.set(x, "adminCode", value.asInstanceOf[js.Any])
       

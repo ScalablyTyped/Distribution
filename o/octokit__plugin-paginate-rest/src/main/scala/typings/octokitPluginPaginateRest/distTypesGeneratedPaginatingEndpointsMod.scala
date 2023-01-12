@@ -1930,7 +1930,8 @@ object distTypesGeneratedPaginatingEndpointsMod {
       __obj.asInstanceOf[PaginatingEndpoints_]
     }
     
-    extension [Self <: PaginatingEndpoints_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginatingEndpoints_] (val x: Self) extends AnyVal {
       
       inline def `setGET SlashappSlashhookSlashdeliveries`(value: Parameters): Self = StObject.set(x, "GET /app/hook/deliveries", value.asInstanceOf[js.Any])
       

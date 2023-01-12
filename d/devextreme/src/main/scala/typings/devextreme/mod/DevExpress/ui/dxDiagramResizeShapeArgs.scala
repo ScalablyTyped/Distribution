@@ -29,7 +29,8 @@ object dxDiagramResizeShapeArgs {
     __obj.asInstanceOf[dxDiagramResizeShapeArgs]
   }
   
-  extension [Self <: dxDiagramResizeShapeArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxDiagramResizeShapeArgs] (val x: Self) extends AnyVal {
     
     inline def setNewSize(value: HeightWidth): Self = StObject.set(x, "newSize", value.asInstanceOf[js.Any])
     

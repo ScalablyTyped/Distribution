@@ -31,7 +31,8 @@ object AppsDynamiteV1ApiCompatV1Action {
     __obj.asInstanceOf[AppsDynamiteV1ApiCompatV1Action]
   }
   
-  extension [Self <: AppsDynamiteV1ApiCompatV1Action](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteV1ApiCompatV1Action] (val x: Self) extends AnyVal {
     
     inline def setConfirm(value: AppsDynamiteV1ApiCompatV1ActionConfirm): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
     

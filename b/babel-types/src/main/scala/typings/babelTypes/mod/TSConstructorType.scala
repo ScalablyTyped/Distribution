@@ -33,7 +33,8 @@ object TSConstructorType {
   @js.native
   def apply(typeParameters: TypeParameterDeclaration_, typeAnnotation: TSTypeAnnotation): TSConstructorType = js.native
   
-  extension [Self <: TSConstructorType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSConstructorType] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: js.Array[Identifier_ | RestElement_]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

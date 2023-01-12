@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Datastore]
     }
     
-    extension [Self <: Datastore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Datastore] (val x: Self) extends AnyVal {
       
       inline def setDatastore(value: typings.datastoreCore.distSrcMountMod.Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: typings.interfaceDatastore.keyMod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

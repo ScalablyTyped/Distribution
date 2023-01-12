@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String | Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Replace]
     }
     
-    extension [Self <: Replace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Replace] (val x: Self) extends AnyVal {
       
       inline def setReplace(value: (js.RegExp, String) => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
     }
@@ -57,7 +59,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

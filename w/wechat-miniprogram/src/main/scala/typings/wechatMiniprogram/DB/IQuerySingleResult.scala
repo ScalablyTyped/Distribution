@@ -18,7 +18,8 @@ object IQuerySingleResult {
     __obj.asInstanceOf[IQuerySingleResult]
   }
   
-  extension [Self <: IQuerySingleResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IQuerySingleResult] (val x: Self) extends AnyVal {
     
     inline def setData(value: IDocumentData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

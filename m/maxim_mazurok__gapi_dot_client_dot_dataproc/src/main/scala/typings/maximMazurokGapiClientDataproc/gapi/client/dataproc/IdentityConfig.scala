@@ -18,7 +18,8 @@ object IdentityConfig {
     __obj.asInstanceOf[IdentityConfig]
   }
   
-  extension [Self <: IdentityConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityConfig] (val x: Self) extends AnyVal {
     
     inline def setUserServiceAccountMapping(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

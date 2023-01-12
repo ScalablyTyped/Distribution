@@ -510,7 +510,8 @@ object ojtagcloudMod {
         __obj.asInstanceOf[ItemContext]
       }
       
-      extension [Self <: ItemContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ItemContext] (val x: Self) extends AnyVal {
         
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -538,7 +539,8 @@ object ojtagcloudMod {
         __obj.asInstanceOf[NodeContext]
       }
       
-      extension [Self <: NodeContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NodeContext] (val x: Self) extends AnyVal {
         
         inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
@@ -575,7 +577,8 @@ object ojtagcloudMod {
         __obj.asInstanceOf[TooltipContext[K]]
       }
       
-      extension [Self <: TooltipContext[?], K](x: Self & TooltipContext[K]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TooltipContext[?], K] (val x: Self & TooltipContext[K]) extends AnyVal {
         
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -749,7 +752,8 @@ object ojtagcloudMod {
       __obj.asInstanceOf[ojTagCloudEventMap[K, D]]
     }
     
-    extension [Self <: ojTagCloudEventMap[?, ?], K, D](x: Self & (ojTagCloudEventMap[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojTagCloudEventMap[?, ?], K, D] (val x: Self & (ojTagCloudEventMap[K, D])) extends AnyVal {
       
       inline def setAnimationOnDataChangeChanged(value: JetElementCustomEvent[auto | none]): Self = StObject.set(x, "animationOnDataChangeChanged", value.asInstanceOf[js.Any])
       
@@ -2002,7 +2006,8 @@ object ojtagcloudMod {
       __obj.asInstanceOf[ojTagCloudItemEventMap]
     }
     
-    extension [Self <: ojTagCloudItemEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojTagCloudItemEventMap] (val x: Self) extends AnyVal {
       
       inline def setCategoriesChanged(value: JetElementCustomEvent[js.Array[String]]): Self = StObject.set(x, "categoriesChanged", value.asInstanceOf[js.Any])
       
@@ -2060,7 +2065,8 @@ object ojtagcloudMod {
       __obj.asInstanceOf[ojTagCloudItemSettableProperties]
     }
     
-    extension [Self <: ojTagCloudItemSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojTagCloudItemSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
@@ -2114,7 +2120,8 @@ object ojtagcloudMod {
       __obj.asInstanceOf[ojTagCloudItemSettablePropertiesLenient]
     }
     
-    extension [Self <: ojTagCloudItemSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojTagCloudItemSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
@@ -2212,7 +2219,8 @@ object ojtagcloudMod {
       __obj.asInstanceOf[ojTagCloudSettableProperties[K, D]]
     }
     
-    extension [Self <: ojTagCloudSettableProperties[?, ?], K, D](x: Self & (ojTagCloudSettableProperties[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojTagCloudSettableProperties[?, ?], K, D] (val x: Self & (ojTagCloudSettableProperties[K, D])) extends AnyVal {
       
       inline def setAnimationOnDataChange(value: auto | none): Self = StObject.set(x, "animationOnDataChange", value.asInstanceOf[js.Any])
       
@@ -2298,7 +2306,8 @@ object ojtagcloudMod {
       __obj.asInstanceOf[ojTagCloudSettablePropertiesLenient[K, D]]
     }
     
-    extension [Self <: ojTagCloudSettablePropertiesLenient[?, ?], K, D](x: Self & (ojTagCloudSettablePropertiesLenient[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojTagCloudSettablePropertiesLenient[?, ?], K, D] (val x: Self & (ojTagCloudSettablePropertiesLenient[K, D])) extends AnyVal {
       
       inline def setAnimationOnDataChange(value: auto | none): Self = StObject.set(x, "animationOnDataChange", value.asInstanceOf[js.Any])
       

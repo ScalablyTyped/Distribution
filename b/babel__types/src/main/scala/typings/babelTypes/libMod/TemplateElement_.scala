@@ -27,7 +27,8 @@ object TemplateElement_ {
     __obj.asInstanceOf[TemplateElement_]
   }
   
-  extension [Self <: TemplateElement_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateElement_] (val x: Self) extends AnyVal {
     
     inline def setTail(value: Boolean): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
     

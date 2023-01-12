@@ -25,7 +25,8 @@ object ResourcesConstructorOptions {
     __obj.asInstanceOf[ResourcesConstructorOptions[ResourceType, RawType]]
   }
   
-  extension [Self <: ResourcesConstructorOptions[?, ?], ResourceType, RawType](x: Self & (ResourcesConstructorOptions[ResourceType, RawType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourcesConstructorOptions[?, ?], ResourceType, RawType] (val x: Self & (ResourcesConstructorOptions[ResourceType, RawType])) extends AnyVal {
     
     inline def setBase(value: ResourceBaseData[ResourceType]): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

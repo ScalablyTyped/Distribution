@@ -26,7 +26,8 @@ object AggregateIdentity {
     __obj.asInstanceOf[AggregateIdentity]
   }
   
-  extension [Self <: AggregateIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateIdentity] (val x: Self) extends AnyVal {
     
     inline def setAggregateIdentity(value: scala.Double): Self = StObject.set(x, "aggregateIdentity", value.asInstanceOf[js.Any])
     

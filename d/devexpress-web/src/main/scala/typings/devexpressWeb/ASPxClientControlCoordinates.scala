@@ -36,7 +36,8 @@ object ASPxClientControlCoordinates {
     __obj.asInstanceOf[ASPxClientControlCoordinates]
   }
   
-  extension [Self <: ASPxClientControlCoordinates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientControlCoordinates] (val x: Self) extends AnyVal {
     
     inline def setPane(value: ASPxClientXYDiagramPane): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     

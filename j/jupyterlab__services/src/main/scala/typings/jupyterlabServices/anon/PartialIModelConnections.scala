@@ -28,7 +28,8 @@ object PartialIModelConnections {
     __obj.asInstanceOf[PartialIModelConnections]
   }
   
-  extension [Self <: PartialIModelConnections](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIModelConnections] (val x: Self) extends AnyVal {
     
     inline def setConnections(value: Double): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
     

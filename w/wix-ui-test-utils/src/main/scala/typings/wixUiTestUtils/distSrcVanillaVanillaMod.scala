@@ -49,7 +49,8 @@ object distSrcVanillaVanillaMod {
       __obj.asInstanceOf[TestkitArgs]
     }
     
-    extension [Self <: TestkitArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestkitArgs] (val x: Self) extends AnyVal {
       
       inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       

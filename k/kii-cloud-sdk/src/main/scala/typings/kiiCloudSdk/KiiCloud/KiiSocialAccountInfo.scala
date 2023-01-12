@@ -19,7 +19,8 @@ object KiiSocialAccountInfo {
     __obj.asInstanceOf[KiiSocialAccountInfo]
   }
   
-  extension [Self <: KiiSocialAccountInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KiiSocialAccountInfo] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

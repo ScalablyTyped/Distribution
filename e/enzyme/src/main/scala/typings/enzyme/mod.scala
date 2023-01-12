@@ -1263,7 +1263,8 @@ object mod {
       __obj.asInstanceOf[HTMLAttributes]
     }
     
-    extension [Self <: HTMLAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTMLAttributes] (val x: Self) extends AnyVal {
       
       inline def setAccentHeight(value: Double | String): Self = StObject.set(x, "accentHeight", value.asInstanceOf[js.Any])
       
@@ -2255,7 +2256,8 @@ object mod {
       __obj.asInstanceOf[Lifecycles]
     }
     
-    extension [Self <: Lifecycles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lifecycles] (val x: Self) extends AnyVal {
       
       inline def setComponentDidUpdate(value: OnSetState): Self = StObject.set(x, "componentDidUpdate", value.asInstanceOf[js.Any])
       
@@ -2312,7 +2314,8 @@ object mod {
       __obj.asInstanceOf[MountRendererProps]
     }
     
-    extension [Self <: MountRendererProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MountRendererProps] (val x: Self) extends AnyVal {
       
       inline def setAttachTo(value: HTMLElement): Self = StObject.set(x, "attachTo", value.asInstanceOf[js.Any])
       
@@ -2419,7 +2422,8 @@ object mod {
       __obj.asInstanceOf[ShallowRendererProps]
     }
     
-    extension [Self <: ShallowRendererProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShallowRendererProps] (val x: Self) extends AnyVal {
       
       inline def setAdapter(value: EnzymeAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       

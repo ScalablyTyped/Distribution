@@ -18,7 +18,8 @@ object GitConfigForUpdate {
     __obj.asInstanceOf[GitConfigForUpdate]
   }
   
-  extension [Self <: GitConfigForUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitConfigForUpdate] (val x: Self) extends AnyVal {
     
     inline def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
     

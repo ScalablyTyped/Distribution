@@ -19,7 +19,8 @@ object EventStore {
     __obj.asInstanceOf[EventStore]
   }
   
-  extension [Self <: EventStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventStore] (val x: Self) extends AnyVal {
     
     inline def setDefs(value: EventDefHash): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[AsyncLoader]
     }
     
-    extension [Self <: AsyncLoader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncLoader] (val x: Self) extends AnyVal {
       
       inline def setLoad(value: String => js.Promise[Any]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
@@ -124,7 +125,8 @@ object mod {
       __obj.asInstanceOf[LoadResult]
     }
     
-    extension [Self <: LoadResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadResult] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object mod {
       __obj.asInstanceOf[MultiLoader]
     }
     
-    extension [Self <: MultiLoader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiLoader] (val x: Self) extends AnyVal {
       
       inline def setLoad(value: String => js.Promise[Any]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
@@ -192,7 +195,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -234,7 +238,8 @@ object mod {
       __obj.asInstanceOf[SyncLoader]
     }
     
-    extension [Self <: SyncLoader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncLoader] (val x: Self) extends AnyVal {
       
       inline def setLoadSync(value: String => Any): Self = StObject.set(x, "loadSync", js.Any.fromFunction1(value))
       

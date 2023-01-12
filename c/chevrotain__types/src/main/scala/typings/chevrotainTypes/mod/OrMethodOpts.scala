@@ -51,7 +51,8 @@ object OrMethodOpts {
     __obj.asInstanceOf[OrMethodOpts[T]]
   }
   
-  extension [Self <: OrMethodOpts[?], T](x: Self & OrMethodOpts[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrMethodOpts[?], T] (val x: Self & OrMethodOpts[T]) extends AnyVal {
     
     inline def setDEF(value: js.Array[IOrAlt[T]]): Self = StObject.set(x, "DEF", value.asInstanceOf[js.Any])
     

@@ -83,7 +83,8 @@ object NetworkInsightsAnalysis {
     __obj.asInstanceOf[NetworkInsightsAnalysis]
   }
   
-  extension [Self <: NetworkInsightsAnalysis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkInsightsAnalysis] (val x: Self) extends AnyVal {
     
     inline def setAlternatePathHints(value: AlternatePathHintList): Self = StObject.set(x, "AlternatePathHints", value.asInstanceOf[js.Any])
     

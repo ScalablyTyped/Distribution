@@ -19,7 +19,8 @@ object StopLocalServiceDiscoveryFailCallbackResult {
     __obj.asInstanceOf[StopLocalServiceDiscoveryFailCallbackResult]
   }
   
-  extension [Self <: StopLocalServiceDiscoveryFailCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopLocalServiceDiscoveryFailCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }

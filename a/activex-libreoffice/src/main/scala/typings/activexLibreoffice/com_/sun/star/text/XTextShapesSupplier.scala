@@ -37,7 +37,8 @@ object XTextShapesSupplier {
     __obj.asInstanceOf[XTextShapesSupplier]
   }
   
-  extension [Self <: XTextShapesSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextShapesSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetShapes(value: () => XIndexAccess): Self = StObject.set(x, "getShapes", js.Any.fromFunction0(value))
     

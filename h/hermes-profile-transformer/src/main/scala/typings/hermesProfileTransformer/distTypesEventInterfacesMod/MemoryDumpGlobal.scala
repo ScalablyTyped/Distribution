@@ -22,7 +22,8 @@ object MemoryDumpGlobal {
     __obj.asInstanceOf[MemoryDumpGlobal]
   }
   
-  extension [Self <: MemoryDumpGlobal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemoryDumpGlobal] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

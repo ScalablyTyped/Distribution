@@ -19,7 +19,8 @@ object ConsumeSharedPlugin {
     __obj.asInstanceOf[ConsumeSharedPlugin]
   }
   
-  extension [Self <: ConsumeSharedPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumeSharedPlugin] (val x: Self) extends AnyVal {
     
     inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
   }

@@ -16,7 +16,8 @@ object ResolvedKey {
     __obj.asInstanceOf[ResolvedKey]
   }
   
-  extension [Self <: ResolvedKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedKey] (val x: Self) extends AnyVal {
     
     inline def setKey(value: KeyLike | js.typedarray.Uint8Array): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }

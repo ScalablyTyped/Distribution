@@ -81,7 +81,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CompatibilityOptions]
     }
     
-    extension [Self <: CompatibilityOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompatibilityOptions] (val x: Self) extends AnyVal {
       
       inline def setColors(value: Opacity): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -166,7 +167,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FormatOptions]
     }
     
-    extension [Self <: FormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
       
       inline def setBreakWith(value: String): Self = StObject.set(x, "breakWith", value.asInstanceOf[js.Any])
       
@@ -260,7 +262,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[OptimizationsOptions]
     }
     
-    extension [Self <: OptimizationsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptimizationsOptions] (val x: Self) extends AnyVal {
       
       inline def set1(value: All): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
       
@@ -382,7 +385,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[OptionsBase]
     }
     
-    extension [Self <: OptionsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsBase] (val x: Self) extends AnyVal {
       
       inline def setCompatibility(value: Asterisk | ie9 | ie8 | ie7 | CompatibilityOptions): Self = StObject.set(x, "compatibility", value.asInstanceOf[js.Any])
       
@@ -454,7 +458,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[OptionsOutput]
     }
     
-    extension [Self <: OptionsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsOutput] (val x: Self) extends AnyVal {
       
       inline def setReturnPromise(value: `false`): Self = StObject.set(x, "returnPromise", value.asInstanceOf[js.Any])
       
@@ -482,7 +487,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[OptionsPromise]
     }
     
-    extension [Self <: OptionsPromise](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsPromise] (val x: Self) extends AnyVal {
       
       inline def setReturnPromise(value: `true`): Self = StObject.set(x, "returnPromise", value.asInstanceOf[js.Any])
     }
@@ -525,7 +531,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Output]
     }
     
-    extension [Self <: Output](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object AttachStaticIpResult {
     __obj.asInstanceOf[AttachStaticIpResult]
   }
   
-  extension [Self <: AttachStaticIpResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachStaticIpResult] (val x: Self) extends AnyVal {
     
     inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     

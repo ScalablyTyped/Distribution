@@ -24,7 +24,8 @@ object ResponseBankingTransactionById {
     __obj.asInstanceOf[ResponseBankingTransactionById]
   }
   
-  extension [Self <: ResponseBankingTransactionById](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseBankingTransactionById] (val x: Self) extends AnyVal {
     
     inline def setData(value: ApcaNumber): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

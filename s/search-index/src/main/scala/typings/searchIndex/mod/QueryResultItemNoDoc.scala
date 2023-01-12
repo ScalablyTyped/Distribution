@@ -17,7 +17,8 @@ object QueryResultItemNoDoc {
     __obj.asInstanceOf[QueryResultItemNoDoc]
   }
   
-  extension [Self <: QueryResultItemNoDoc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryResultItemNoDoc] (val x: Self) extends AnyVal {
     
     inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     

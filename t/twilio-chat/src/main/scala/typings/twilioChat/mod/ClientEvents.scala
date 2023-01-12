@@ -85,7 +85,8 @@ object ClientEvents {
     __obj.asInstanceOf[ClientEvents]
   }
   
-  extension [Self <: ClientEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientEvents] (val x: Self) extends AnyVal {
     
     inline def setChannelAdded(value: Channel => Unit): Self = StObject.set(x, "channelAdded", js.Any.fromFunction1(value))
     

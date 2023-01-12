@@ -18,7 +18,8 @@ object PointInTimeRecovery {
     __obj.asInstanceOf[PointInTimeRecovery]
   }
   
-  extension [Self <: PointInTimeRecovery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointInTimeRecovery] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: PointInTimeRecoveryStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

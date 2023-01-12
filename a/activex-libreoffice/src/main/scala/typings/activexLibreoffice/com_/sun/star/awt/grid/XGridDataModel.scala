@@ -82,7 +82,8 @@ object XGridDataModel {
     __obj.asInstanceOf[XGridDataModel]
   }
   
-  extension [Self <: XGridDataModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGridDataModel] (val x: Self) extends AnyVal {
     
     inline def setColumnCount(value: Double): Self = StObject.set(x, "ColumnCount", value.asInstanceOf[js.Any])
     

@@ -324,7 +324,8 @@ object mod {
     @js.native
     val ^ : Edit = js.native
     
-    extension [Self <: Edit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Edit] (val x: Self) extends AnyVal {
       
       inline def setChildDescriptors(value: EObject => js.Array[EObject]): Self = StObject.set(x, "childDescriptors", js.Any.fromFunction1(value))
       

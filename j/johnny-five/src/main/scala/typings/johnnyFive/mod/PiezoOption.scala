@@ -15,7 +15,8 @@ object PiezoOption {
     __obj.asInstanceOf[PiezoOption]
   }
   
-  extension [Self <: PiezoOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PiezoOption] (val x: Self) extends AnyVal {
     
     inline def setPin(value: Double): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
   }

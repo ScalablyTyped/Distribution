@@ -52,7 +52,8 @@ object AchievementDefinition {
     __obj.asInstanceOf[AchievementDefinition]
   }
   
-  extension [Self <: AchievementDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AchievementDefinition] (val x: Self) extends AnyVal {
     
     inline def setAchievementType(value: String): Self = StObject.set(x, "achievementType", value.asInstanceOf[js.Any])
     

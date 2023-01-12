@@ -34,7 +34,8 @@ object AjaxOptions {
     __obj.asInstanceOf[AjaxOptions[Result, RemoteResult]]
   }
   
-  extension [Self <: AjaxOptions[?, ?], Result, RemoteResult](x: Self & (AjaxOptions[Result, RemoteResult])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AjaxOptions[?, ?], Result, RemoteResult] (val x: Self & (AjaxOptions[Result, RemoteResult])) extends AnyVal {
     
     inline def setData(value: /* params */ QueryOptions => PlainObject[Any] | String): Self = StObject.set(x, "data", js.Any.fromFunction1(value))
     

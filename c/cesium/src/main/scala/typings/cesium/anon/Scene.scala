@@ -17,7 +17,8 @@ object Scene {
     __obj.asInstanceOf[Scene]
   }
   
-  extension [Self <: Scene](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scene] (val x: Self) extends AnyVal {
     
     inline def setLowFrameRateMessage(value: String): Self = StObject.set(x, "lowFrameRateMessage", value.asInstanceOf[js.Any])
     

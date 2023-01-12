@@ -18,7 +18,8 @@ object IndexeddbBoolean {
     __obj.asInstanceOf[IndexeddbBoolean]
   }
   
-  extension [Self <: IndexeddbBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexeddbBoolean] (val x: Self) extends AnyVal {
     
     inline def setDeletedatabase(value: scala.Boolean): Self = StObject.set(x, "deletedatabase", value.asInstanceOf[js.Any])
   }

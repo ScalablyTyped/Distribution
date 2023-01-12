@@ -24,7 +24,8 @@ object ScoreWeights {
     __obj.asInstanceOf[ScoreWeights[T]]
   }
   
-  extension [Self <: ScoreWeights[?], T](x: Self & ScoreWeights[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScoreWeights[?], T] (val x: Self & ScoreWeights[T]) extends AnyVal {
     
     inline def setByTopic(value: Map[TopicLabel, TopicScoreWeights[T]]): Self = StObject.set(x, "byTopic", value.asInstanceOf[js.Any])
     

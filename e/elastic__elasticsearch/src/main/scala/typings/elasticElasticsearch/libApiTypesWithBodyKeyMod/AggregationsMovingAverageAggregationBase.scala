@@ -21,7 +21,8 @@ object AggregationsMovingAverageAggregationBase {
     __obj.asInstanceOf[AggregationsMovingAverageAggregationBase]
   }
   
-  extension [Self <: AggregationsMovingAverageAggregationBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsMovingAverageAggregationBase] (val x: Self) extends AnyVal {
     
     inline def setMinimize(value: Boolean): Self = StObject.set(x, "minimize", value.asInstanceOf[js.Any])
     

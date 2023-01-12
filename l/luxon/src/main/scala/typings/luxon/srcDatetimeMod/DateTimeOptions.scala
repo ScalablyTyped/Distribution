@@ -28,7 +28,8 @@ object DateTimeOptions {
     __obj.asInstanceOf[DateTimeOptions]
   }
   
-  extension [Self <: DateTimeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimeOptions] (val x: Self) extends AnyVal {
     
     inline def setSetZone(value: Boolean): Self = StObject.set(x, "setZone", value.asInstanceOf[js.Any])
     

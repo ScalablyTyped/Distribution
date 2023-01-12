@@ -18,7 +18,8 @@ object GridErrorStateChanged {
     __obj.asInstanceOf[GridErrorStateChanged]
   }
   
-  extension [Self <: GridErrorStateChanged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridErrorStateChanged] (val x: Self) extends AnyVal {
     
     inline def setBAnyErrors(value: Boolean): Self = StObject.set(x, "bAnyErrors", value.asInstanceOf[js.Any])
   }

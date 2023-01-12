@@ -22,7 +22,8 @@ object StorageSourceManifest {
     __obj.asInstanceOf[StorageSourceManifest]
   }
   
-  extension [Self <: StorageSourceManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageSourceManifest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     

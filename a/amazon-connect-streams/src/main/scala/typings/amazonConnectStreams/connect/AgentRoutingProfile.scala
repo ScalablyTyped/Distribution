@@ -38,7 +38,8 @@ object AgentRoutingProfile {
     __obj.asInstanceOf[AgentRoutingProfile]
   }
   
-  extension [Self <: AgentRoutingProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentRoutingProfile] (val x: Self) extends AnyVal {
     
     inline def setChannelConcurrencyMap(value: AgentChannelConcurrencyMap): Self = StObject.set(x, "channelConcurrencyMap", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object DateMarkerMeta {
     __obj.asInstanceOf[DateMarkerMeta]
   }
   
-  extension [Self <: DateMarkerMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateMarkerMeta] (val x: Self) extends AnyVal {
     
     inline def setForcedTzo(value: Double): Self = StObject.set(x, "forcedTzo", value.asInstanceOf[js.Any])
     

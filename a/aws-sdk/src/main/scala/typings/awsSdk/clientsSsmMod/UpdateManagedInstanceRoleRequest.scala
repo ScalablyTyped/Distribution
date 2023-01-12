@@ -23,7 +23,8 @@ object UpdateManagedInstanceRoleRequest {
     __obj.asInstanceOf[UpdateManagedInstanceRoleRequest]
   }
   
-  extension [Self <: UpdateManagedInstanceRoleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateManagedInstanceRoleRequest] (val x: Self) extends AnyVal {
     
     inline def setIamRole(value: IamRole): Self = StObject.set(x, "IamRole", value.asInstanceOf[js.Any])
     

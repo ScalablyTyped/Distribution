@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[Feature]
     }
     
-    extension [Self <: Feature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Feature] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: js.Array[PolyfillFlag]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object mod {
       __obj.asInstanceOf[GetPolyfillStringOptions]
     }
     
-    extension [Self <: GetPolyfillStringOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetPolyfillStringOptions] (val x: Self) extends AnyVal {
       
       inline def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object mod {
       __obj.asInstanceOf[GetPolyfillsOptions]
     }
     
-    extension [Self <: GetPolyfillsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetPolyfillsOptions] (val x: Self) extends AnyVal {
       
       inline def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
       
@@ -126,7 +129,8 @@ object mod {
       __obj.asInstanceOf[PolyfillSpec]
     }
     
-    extension [Self <: PolyfillSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolyfillSpec] (val x: Self) extends AnyVal {
       
       inline def setAliasOf(value: Set[String]): Self = StObject.set(x, "aliasOf", value.asInstanceOf[js.Any])
       

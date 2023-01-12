@@ -19,7 +19,8 @@ object IWall {
     __obj.asInstanceOf[IWall]
   }
   
-  extension [Self <: IWall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWall] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: IRectangle): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

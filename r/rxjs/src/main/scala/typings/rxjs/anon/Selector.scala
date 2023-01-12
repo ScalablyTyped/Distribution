@@ -17,7 +17,8 @@ object Selector {
     __obj.asInstanceOf[Selector[T]]
   }
   
-  extension [Self <: Selector[?], T](x: Self & Selector[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Selector[?], T] (val x: Self & Selector[T]) extends AnyVal {
     
     inline def setSelector(value: Response => ObservableInput[T]): Self = StObject.set(x, "selector", js.Any.fromFunction1(value))
   }

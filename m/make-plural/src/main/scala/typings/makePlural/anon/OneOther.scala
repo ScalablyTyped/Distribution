@@ -101,7 +101,8 @@ object OneOther {
     __obj.asInstanceOf[OneOther]
   }
   
-  extension [Self <: OneOther](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OneOther] (val x: Self) extends AnyVal {
     
     inline def setOne(
       value: js.Tuple10[

@@ -22,7 +22,8 @@ object CaOptions {
     __obj.asInstanceOf[CaOptions]
   }
   
-  extension [Self <: CaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaOptions] (val x: Self) extends AnyVal {
     
     inline def setIsCa(value: Boolean): Self = StObject.set(x, "isCa", value.asInstanceOf[js.Any])
     

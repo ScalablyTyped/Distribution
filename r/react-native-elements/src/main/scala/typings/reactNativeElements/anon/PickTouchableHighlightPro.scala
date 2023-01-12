@@ -150,7 +150,8 @@ object PickTouchableHighlightPro {
     __obj.asInstanceOf[PickTouchableHighlightPro]
   }
   
-  extension [Self <: PickTouchableHighlightPro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickTouchableHighlightPro] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

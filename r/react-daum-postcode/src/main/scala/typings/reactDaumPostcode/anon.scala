@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[HasError]
     }
     
-    extension [Self <: HasError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasError] (val x: Self) extends AnyVal {
       
       inline def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
     }
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Load]
     }
     
-    extension [Self <: Load](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Load] (val x: Self) extends AnyVal {
       
       inline def setLoad(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
@@ -62,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Postcode]
     }
     
-    extension [Self <: Postcode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Postcode] (val x: Self) extends AnyVal {
       
       inline def setPostcode(value: PostcodeConstructor): Self = StObject.set(x, "Postcode", value.asInstanceOf[js.Any])
     }

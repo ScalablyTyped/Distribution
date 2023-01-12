@@ -54,7 +54,8 @@ object TextFinder {
     __obj.asInstanceOf[TextFinder]
   }
   
-  extension [Self <: TextFinder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextFinder] (val x: Self) extends AnyVal {
     
     inline def setFindAll(value: () => js.Array[Range]): Self = StObject.set(x, "findAll", js.Any.fromFunction0(value))
     

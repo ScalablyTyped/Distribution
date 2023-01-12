@@ -18,7 +18,8 @@ object BasicConstraintsJson {
     __obj.asInstanceOf[BasicConstraintsJson]
   }
   
-  extension [Self <: BasicConstraintsJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicConstraintsJson] (val x: Self) extends AnyVal {
     
     inline def setCA(value: Boolean): Self = StObject.set(x, "cA", value.asInstanceOf[js.Any])
     

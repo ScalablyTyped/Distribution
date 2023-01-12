@@ -62,7 +62,8 @@ object BatteryData {
     __obj.asInstanceOf[BatteryData]
   }
   
-  extension [Self <: BatteryData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatteryData] (val x: Self) extends AnyVal {
     
     inline def setAcConnected(value: Boolean): Self = StObject.set(x, "acConnected", value.asInstanceOf[js.Any])
     

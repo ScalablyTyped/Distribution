@@ -52,7 +52,8 @@ object CacheStorageApi {
     __obj.asInstanceOf[CacheStorageApi]
   }
   
-  extension [Self <: CacheStorageApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheStorageApi] (val x: Self) extends AnyVal {
     
     inline def setDeleteCache(value: DeleteCacheRequest => js.Promise[Unit]): Self = StObject.set(x, "deleteCache", js.Any.fromFunction1(value))
     

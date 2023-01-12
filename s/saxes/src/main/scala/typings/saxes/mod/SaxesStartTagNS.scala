@@ -21,7 +21,8 @@ object SaxesStartTagNS {
     __obj.asInstanceOf[SaxesStartTagNS]
   }
   
-  extension [Self <: SaxesStartTagNS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaxesStartTagNS] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Record[String, SaxesAttributeNS | String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

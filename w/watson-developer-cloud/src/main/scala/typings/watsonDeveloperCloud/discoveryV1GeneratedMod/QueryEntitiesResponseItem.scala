@@ -23,7 +23,8 @@ object QueryEntitiesResponseItem {
     __obj.asInstanceOf[QueryEntitiesResponseItem]
   }
   
-  extension [Self <: QueryEntitiesResponseItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryEntitiesResponseItem] (val x: Self) extends AnyVal {
     
     inline def setEvidence(value: js.Array[QueryEvidence]): Self = StObject.set(x, "evidence", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object OverlayProps {
     __obj.asInstanceOf[OverlayProps]
   }
   
-  extension [Self <: OverlayProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverlayProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: /* menuProps */ MenuProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     

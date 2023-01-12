@@ -17,7 +17,8 @@ object AllowedComponentProps {
     __obj.asInstanceOf[AllowedComponentProps]
   }
   
-  extension [Self <: AllowedComponentProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowedComponentProps] (val x: Self) extends AnyVal {
     
     inline def setClass(value: Any): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     

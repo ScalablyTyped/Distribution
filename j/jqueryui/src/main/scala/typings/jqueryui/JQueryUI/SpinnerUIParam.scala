@@ -15,7 +15,8 @@ object SpinnerUIParam {
     __obj.asInstanceOf[SpinnerUIParam]
   }
   
-  extension [Self <: SpinnerUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpinnerUIParam] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

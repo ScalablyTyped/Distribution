@@ -31,7 +31,8 @@ object JQueryFileUploadXhr {
     __obj.asInstanceOf[JQueryFileUploadXhr]
   }
   
-  extension [Self <: JQueryFileUploadXhr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryFileUploadXhr] (val x: Self) extends AnyVal {
     
     inline def setErrorThrown(value: Any): Self = StObject.set(x, "errorThrown", value.asInstanceOf[js.Any])
     

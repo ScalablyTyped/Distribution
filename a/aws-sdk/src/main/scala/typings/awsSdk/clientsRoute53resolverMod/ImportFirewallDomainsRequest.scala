@@ -32,7 +32,8 @@ object ImportFirewallDomainsRequest {
     __obj.asInstanceOf[ImportFirewallDomainsRequest]
   }
   
-  extension [Self <: ImportFirewallDomainsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportFirewallDomainsRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainFileUrl(value: DomainListFileUrl): Self = StObject.set(x, "DomainFileUrl", value.asInstanceOf[js.Any])
     

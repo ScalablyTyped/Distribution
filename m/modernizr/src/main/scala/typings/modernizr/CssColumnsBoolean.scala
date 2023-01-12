@@ -50,7 +50,8 @@ object CssColumnsBoolean {
     __obj.asInstanceOf[CssColumnsBoolean]
   }
   
-  extension [Self <: CssColumnsBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssColumnsBoolean] (val x: Self) extends AnyVal {
     
     inline def setBreakafter(value: scala.Boolean): Self = StObject.set(x, "breakafter", value.asInstanceOf[js.Any])
     

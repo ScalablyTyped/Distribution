@@ -143,7 +143,8 @@ object PartialColumnOptions {
     __obj.asInstanceOf[PartialColumnOptions]
   }
   
-  extension [Self <: PartialColumnOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialColumnOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object EvaluateSessionResponse {
     __obj.asInstanceOf[EvaluateSessionResponse]
   }
   
-  extension [Self <: EvaluateSessionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluateSessionResponse] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationResult(value: AuthenticationResult): Self = StObject.set(x, "AuthenticationResult", value.asInstanceOf[js.Any])
     

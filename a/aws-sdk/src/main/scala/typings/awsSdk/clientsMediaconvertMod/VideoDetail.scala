@@ -23,7 +23,8 @@ object VideoDetail {
     __obj.asInstanceOf[VideoDetail]
   }
   
-  extension [Self <: VideoDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoDetail] (val x: Self) extends AnyVal {
     
     inline def setHeightInPx(value: integer): Self = StObject.set(x, "HeightInPx", value.asInstanceOf[js.Any])
     

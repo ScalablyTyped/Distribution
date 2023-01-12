@@ -28,7 +28,8 @@ object OperationLoader {
     __obj.asInstanceOf[OperationLoader]
   }
   
-  extension [Self <: OperationLoader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationLoader] (val x: Self) extends AnyVal {
     
     inline def setGet(value: Any => js.UndefOr[NormalizationSplitOperation | Null]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     

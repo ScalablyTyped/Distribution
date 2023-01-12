@@ -15,7 +15,8 @@ object RoutingConfig {
     __obj.asInstanceOf[RoutingConfig]
   }
   
-  extension [Self <: RoutingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoutingConfig] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

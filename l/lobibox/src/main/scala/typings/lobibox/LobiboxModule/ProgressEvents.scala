@@ -17,7 +17,8 @@ object ProgressEvents {
     __obj.asInstanceOf[ProgressEvents]
   }
   
-  extension [Self <: ProgressEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressEvents] (val x: Self) extends AnyVal {
     
     inline def setProgressComplete(value: /* lobibox */ LobiboxStatic => Unit): Self = StObject.set(x, "progressComplete", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object IAuthenticationResult {
     __obj.asInstanceOf[IAuthenticationResult]
   }
   
-  extension [Self <: IAuthenticationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAuthenticationResult] (val x: Self) extends AnyVal {
     
     inline def setIntermediate(value: IAuthenticationResultIntermediate): Self = StObject.set(x, "Intermediate", value.asInstanceOf[js.Any])
     

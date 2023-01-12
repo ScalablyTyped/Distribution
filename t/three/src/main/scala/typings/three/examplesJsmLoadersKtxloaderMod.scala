@@ -46,7 +46,8 @@ object examplesJsmLoadersKtxloaderMod {
       __obj.asInstanceOf[KTX]
     }
     
-    extension [Self <: KTX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KTX] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: PixelFormat | CompressedPixelFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

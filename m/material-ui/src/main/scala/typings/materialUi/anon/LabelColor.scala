@@ -33,7 +33,8 @@ object LabelColor {
     __obj.asInstanceOf[LabelColor]
   }
   
-  extension [Self <: LabelColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelColor] (val x: Self) extends AnyVal {
     
     inline def setLabelColor(value: String): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
     

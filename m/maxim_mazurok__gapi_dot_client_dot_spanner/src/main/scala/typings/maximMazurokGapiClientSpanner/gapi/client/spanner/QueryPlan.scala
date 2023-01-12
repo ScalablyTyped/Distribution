@@ -16,7 +16,8 @@ object QueryPlan {
     __obj.asInstanceOf[QueryPlan]
   }
   
-  extension [Self <: QueryPlan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryPlan] (val x: Self) extends AnyVal {
     
     inline def setPlanNodes(value: js.Array[PlanNode]): Self = StObject.set(x, "planNodes", value.asInstanceOf[js.Any])
     

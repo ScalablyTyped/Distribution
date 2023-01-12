@@ -37,7 +37,8 @@ object ILineSeries {
     __obj.asInstanceOf[ILineSeries]
   }
   
-  extension [Self <: ILineSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILineSeries] (val x: Self) extends AnyVal {
     
     inline def setDrawSeries(value: () => Unit): Self = StObject.set(x, "drawSeries", js.Any.fromFunction0(value))
     

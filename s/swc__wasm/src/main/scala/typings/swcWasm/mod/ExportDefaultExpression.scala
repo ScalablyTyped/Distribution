@@ -23,7 +23,8 @@ object ExportDefaultExpression {
     __obj.asInstanceOf[ExportDefaultExpression]
   }
   
-  extension [Self <: ExportDefaultExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportDefaultExpression] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

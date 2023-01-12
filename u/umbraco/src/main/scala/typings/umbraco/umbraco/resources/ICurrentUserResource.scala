@@ -44,7 +44,8 @@ object ICurrentUserResource {
     __obj.asInstanceOf[ICurrentUserResource]
   }
   
-  extension [Self <: ICurrentUserResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICurrentUserResource] (val x: Self) extends AnyVal {
     
     inline def setChangePassword(value: Any => IPromise[IResourcePromise]): Self = StObject.set(x, "changePassword", js.Any.fromFunction1(value))
     

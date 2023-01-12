@@ -23,7 +23,8 @@ object ImportOptions {
     __obj.asInstanceOf[ImportOptions]
   }
   
-  extension [Self <: ImportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportOptions] (val x: Self) extends AnyVal {
     
     inline def setDelimitedTextOptions(value: DelimitedTextImportOptions): Self = StObject.set(x, "delimitedTextOptions", value.asInstanceOf[js.Any])
     

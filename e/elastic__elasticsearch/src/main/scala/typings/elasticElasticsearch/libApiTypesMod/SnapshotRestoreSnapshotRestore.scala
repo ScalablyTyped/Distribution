@@ -19,7 +19,8 @@ object SnapshotRestoreSnapshotRestore {
     __obj.asInstanceOf[SnapshotRestoreSnapshotRestore]
   }
   
-  extension [Self <: SnapshotRestoreSnapshotRestore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotRestoreSnapshotRestore] (val x: Self) extends AnyVal {
     
     inline def setIndices(value: js.Array[IndexName]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     

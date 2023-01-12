@@ -28,7 +28,8 @@ object ListTagsForProjectRequest {
     __obj.asInstanceOf[ListTagsForProjectRequest]
   }
   
-  extension [Self <: ListTagsForProjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTagsForProjectRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: ProjectId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

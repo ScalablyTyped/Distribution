@@ -55,7 +55,8 @@ object libCommonDefinitionMod {
       __obj.asInstanceOf[DefinitionMiddleware]
     }
     
-    extension [Self <: DefinitionMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefinitionMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideDefinition(
         value: js.ThisFunction4[

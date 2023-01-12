@@ -18,7 +18,8 @@ object ConnectorProvisioningConfig {
     __obj.asInstanceOf[ConnectorProvisioningConfig]
   }
   
-  extension [Self <: ConnectorProvisioningConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorProvisioningConfig] (val x: Self) extends AnyVal {
     
     inline def setLambda(value: LambdaConnectorProvisioningConfig): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[BlockIndice]
     }
     
-    extension [Self <: BlockIndice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockIndice] (val x: Self) extends AnyVal {
       
       inline def setBlockIndices(value: Double): Self = StObject.set(x, "blockIndices", value.asInstanceOf[js.Any])
     }
@@ -70,7 +71,8 @@ object mod {
       __obj.asInstanceOf[OffsetArg]
     }
     
-    extension [Self <: OffsetArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OffsetArg] (val x: Self) extends AnyVal {
       
       inline def setArray(value: Double): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
@@ -134,7 +136,8 @@ object mod {
       __obj.asInstanceOf[Procedure]
     }
     
-    extension [Self <: Procedure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Procedure] (val x: Self) extends AnyVal {
       
       inline def setArgTypes(value: js.Array[ArgType]): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
       
@@ -221,7 +224,8 @@ object mod {
       __obj.asInstanceOf[UserArgs]
     }
     
-    extension [Self <: UserArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserArgs] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[ArgType]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

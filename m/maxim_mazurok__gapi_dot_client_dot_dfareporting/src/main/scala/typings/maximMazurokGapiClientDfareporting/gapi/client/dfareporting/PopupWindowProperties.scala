@@ -40,7 +40,8 @@ object PopupWindowProperties {
     __obj.asInstanceOf[PopupWindowProperties]
   }
   
-  extension [Self <: PopupWindowProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupWindowProperties] (val x: Self) extends AnyVal {
     
     inline def setDimension(value: Size): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     

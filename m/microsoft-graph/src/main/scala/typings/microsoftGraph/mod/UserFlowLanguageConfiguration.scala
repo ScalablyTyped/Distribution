@@ -33,7 +33,8 @@ object UserFlowLanguageConfiguration {
     __obj.asInstanceOf[UserFlowLanguageConfiguration]
   }
   
-  extension [Self <: UserFlowLanguageConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserFlowLanguageConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDefaultPages(value: NullableOption[js.Array[UserFlowLanguagePage]]): Self = StObject.set(x, "defaultPages", value.asInstanceOf[js.Any])
     

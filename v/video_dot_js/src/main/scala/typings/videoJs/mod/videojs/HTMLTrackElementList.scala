@@ -25,7 +25,8 @@ object HTMLTrackElementList {
     __obj.asInstanceOf[HTMLTrackElementList]
   }
   
-  extension [Self <: HTMLTrackElementList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLTrackElementList] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object ListResourceSharePermissionsRequest {
     __obj.asInstanceOf[ListResourceSharePermissionsRequest]
   }
   
-  extension [Self <: ListResourceSharePermissionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResourceSharePermissionsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

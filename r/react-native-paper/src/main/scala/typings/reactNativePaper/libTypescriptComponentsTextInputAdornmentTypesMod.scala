@@ -23,7 +23,8 @@ object libTypescriptComponentsTextInputAdornmentTypesMod {
       __obj.asInstanceOf[AdornmentConfig]
     }
     
-    extension [Self <: AdornmentConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdornmentConfig] (val x: Self) extends AnyVal {
       
       inline def setSide(value: AdornmentSide): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object libTypescriptComponentsTextInputAdornmentTypesMod {
       __obj.asInstanceOf[AdornmentStyleAdjustmentForNativeInput]
     }
     
-    extension [Self <: AdornmentStyleAdjustmentForNativeInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdornmentStyleAdjustmentForNativeInput] (val x: Self) extends AnyVal {
       
       inline def setAdornmentStyleAdjustmentForNativeInput(value: js.Array[PaddingLeft | js.Object]): Self = StObject.set(x, "adornmentStyleAdjustmentForNativeInput", value.asInstanceOf[js.Any])
       

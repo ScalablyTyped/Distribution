@@ -47,7 +47,8 @@ object libMimetypeMod {
     @js.native
     val defaultMimeType: String = js.native
     
-    extension [Self <: IEditorMimeTypeService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEditorMimeTypeService] (val x: Self) extends AnyVal {
       
       inline def setGetMimeTypeByFilePath(value: String => String): Self = StObject.set(x, "getMimeTypeByFilePath", js.Any.fromFunction1(value))
       

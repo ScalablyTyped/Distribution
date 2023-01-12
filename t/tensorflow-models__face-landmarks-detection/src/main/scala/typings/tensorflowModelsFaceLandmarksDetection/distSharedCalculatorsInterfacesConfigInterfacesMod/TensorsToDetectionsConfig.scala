@@ -49,7 +49,8 @@ object TensorsToDetectionsConfig {
     __obj.asInstanceOf[TensorsToDetectionsConfig]
   }
   
-  extension [Self <: TensorsToDetectionsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TensorsToDetectionsConfig] (val x: Self) extends AnyVal {
     
     inline def setApplyExponentialOnBoxSize(value: Boolean): Self = StObject.set(x, "applyExponentialOnBoxSize", value.asInstanceOf[js.Any])
     

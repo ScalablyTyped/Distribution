@@ -157,7 +157,8 @@ object SearchSourceProperties {
     __obj.asInstanceOf[SearchSourceProperties]
   }
   
-  extension [Self <: SearchSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setAutoNavigate(value: Boolean): Self = StObject.set(x, "autoNavigate", value.asInstanceOf[js.Any])
     

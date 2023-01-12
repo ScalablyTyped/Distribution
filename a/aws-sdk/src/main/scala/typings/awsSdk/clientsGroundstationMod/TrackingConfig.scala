@@ -18,7 +18,8 @@ object TrackingConfig {
     __obj.asInstanceOf[TrackingConfig]
   }
   
-  extension [Self <: TrackingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackingConfig] (val x: Self) extends AnyVal {
     
     inline def setAutotrack(value: Criticality): Self = StObject.set(x, "autotrack", value.asInstanceOf[js.Any])
   }

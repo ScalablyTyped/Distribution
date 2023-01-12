@@ -21,7 +21,8 @@ object GenericClientOptions {
     __obj.asInstanceOf[GenericClientOptions]
   }
   
-  extension [Self <: GenericClientOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenericClientOptions] (val x: Self) extends AnyVal {
     
     inline def setDeprecatedArgumentOrder(value: Boolean): Self = StObject.set(x, "deprecatedArgumentOrder", value.asInstanceOf[js.Any])
     

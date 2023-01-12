@@ -20,7 +20,8 @@ object DocumentLinkOptions {
     __obj.asInstanceOf[DocumentLinkOptions]
   }
   
-  extension [Self <: DocumentLinkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentLinkOptions] (val x: Self) extends AnyVal {
     
     inline def setResolveProvider(value: Boolean): Self = StObject.set(x, "resolveProvider", value.asInstanceOf[js.Any])
     

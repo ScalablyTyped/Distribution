@@ -15,7 +15,8 @@ object ContentLength {
     __obj.asInstanceOf[ContentLength]
   }
   
-  extension [Self <: ContentLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentLength] (val x: Self) extends AnyVal {
     
     inline def `setContent-Length`(value: String): Self = StObject.set(x, "Content-Length", value.asInstanceOf[js.Any])
     

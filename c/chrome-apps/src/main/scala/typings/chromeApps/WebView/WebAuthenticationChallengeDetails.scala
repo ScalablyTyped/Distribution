@@ -45,7 +45,8 @@ object WebAuthenticationChallengeDetails {
     __obj.asInstanceOf[WebAuthenticationChallengeDetails]
   }
   
-  extension [Self <: WebAuthenticationChallengeDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAuthenticationChallengeDetails] (val x: Self) extends AnyVal {
     
     inline def setChallenger(value: WebAuthChallenger): Self = StObject.set(x, "challenger", value.asInstanceOf[js.Any])
     

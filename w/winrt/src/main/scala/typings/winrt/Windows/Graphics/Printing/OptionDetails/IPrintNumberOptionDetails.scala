@@ -28,7 +28,8 @@ object IPrintNumberOptionDetails {
     __obj.asInstanceOf[IPrintNumberOptionDetails]
   }
   
-  extension [Self <: IPrintNumberOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPrintNumberOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     

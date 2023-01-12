@@ -60,7 +60,8 @@ object SearchResults {
     __obj.asInstanceOf[SearchResults[TDoc]]
   }
   
-  extension [Self <: SearchResults[?], TDoc](x: Self & SearchResults[TDoc]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchResults[?], TDoc] (val x: Self & SearchResults[TDoc]) extends AnyVal {
     
     inline def setAppliedRelevancyStrictness(value: Double): Self = StObject.set(x, "appliedRelevancyStrictness", value.asInstanceOf[js.Any])
     

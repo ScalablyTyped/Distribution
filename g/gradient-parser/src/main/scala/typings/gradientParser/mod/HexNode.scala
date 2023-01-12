@@ -23,7 +23,8 @@ object HexNode {
     __obj.asInstanceOf[HexNode]
   }
   
-  extension [Self <: HexNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HexNode] (val x: Self) extends AnyVal {
     
     inline def setLength(value: PxNode | EmNode | PercentNode): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

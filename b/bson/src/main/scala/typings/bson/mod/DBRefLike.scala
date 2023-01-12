@@ -22,7 +22,8 @@ object DBRefLike {
     __obj.asInstanceOf[DBRefLike]
   }
   
-  extension [Self <: DBRefLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBRefLike] (val x: Self) extends AnyVal {
     
     inline def set$db(value: String): Self = StObject.set(x, "$db", value.asInstanceOf[js.Any])
     

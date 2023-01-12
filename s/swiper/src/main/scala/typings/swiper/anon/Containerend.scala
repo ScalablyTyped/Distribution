@@ -15,7 +15,8 @@ object Containerend {
     __obj.asInstanceOf[Containerend]
   }
   
-  extension [Self <: Containerend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Containerend] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: VirtualData): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
   }

@@ -104,7 +104,8 @@ object namespacesPrivacyNetworkMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setGlobalPrivacyControl(value: Setting): Self = StObject.set(x, "globalPrivacyControl", value.asInstanceOf[js.Any])
         
@@ -192,7 +193,8 @@ object namespacesPrivacyNetworkMod {
         __obj.asInstanceOf[tlsVersionRestrictionConfig]
       }
       
-      extension [Self <: tlsVersionRestrictionConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: tlsVersionRestrictionConfig] (val x: Self) extends AnyVal {
         
         inline def setMaximum(value: TlsVersionRestrictionConfigMaximumEnum): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
         

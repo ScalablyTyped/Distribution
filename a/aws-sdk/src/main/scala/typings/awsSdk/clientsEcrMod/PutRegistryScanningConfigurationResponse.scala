@@ -18,7 +18,8 @@ object PutRegistryScanningConfigurationResponse {
     __obj.asInstanceOf[PutRegistryScanningConfigurationResponse]
   }
   
-  extension [Self <: PutRegistryScanningConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRegistryScanningConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setRegistryScanningConfiguration(value: RegistryScanningConfiguration): Self = StObject.set(x, "registryScanningConfiguration", value.asInstanceOf[js.Any])
     

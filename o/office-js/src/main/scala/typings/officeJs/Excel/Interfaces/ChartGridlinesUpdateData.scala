@@ -30,7 +30,8 @@ object ChartGridlinesUpdateData {
     __obj.asInstanceOf[ChartGridlinesUpdateData]
   }
   
-  extension [Self <: ChartGridlinesUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartGridlinesUpdateData] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: ChartGridlinesFormatUpdateData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

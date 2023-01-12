@@ -26,7 +26,8 @@ object Repository {
     __obj.asInstanceOf[Repository]
   }
   
-  extension [Self <: Repository](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Repository] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: SlmConfiguration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object SpinnerEvents {
     __obj.asInstanceOf[SpinnerEvents]
   }
   
-  extension [Self <: SpinnerEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpinnerEvents] (val x: Self) extends AnyVal {
     
     inline def setChange(value: (/* event */ JQueryEventObject, js.Object) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
     

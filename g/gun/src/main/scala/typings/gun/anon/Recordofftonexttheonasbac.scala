@@ -32,7 +32,8 @@ object Recordofftonexttheonasbac {
     __obj.asInstanceOf[Recordofftonexttheonasbac]
   }
   
-  extension [Self <: Recordofftonexttheonasbac](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Recordofftonexttheonasbac] (val x: Self) extends AnyVal {
     
     inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DescribeStateMachineForExecutionInput {
     __obj.asInstanceOf[DescribeStateMachineForExecutionInput]
   }
   
-  extension [Self <: DescribeStateMachineForExecutionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStateMachineForExecutionInput] (val x: Self) extends AnyVal {
     
     inline def setExecutionArn(value: Arn): Self = StObject.set(x, "executionArn", value.asInstanceOf[js.Any])
   }

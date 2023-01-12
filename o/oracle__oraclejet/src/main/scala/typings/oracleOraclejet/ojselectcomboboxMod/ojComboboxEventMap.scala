@@ -167,7 +167,8 @@ object ojComboboxEventMap {
     __obj.asInstanceOf[ojComboboxEventMap[V, SP, SV, RV]]
   }
   
-  extension [Self <: ojComboboxEventMap[?, ?, ?, ?], V, SP /* <: ojComboboxSettableProperties[V, SV, RV] */, SV, RV](x: Self & (ojComboboxEventMap[V, SP, SV, RV])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojComboboxEventMap[?, ?, ?, ?], V, SP /* <: ojComboboxSettableProperties[V, SV, RV] */, SV, RV] (val x: Self & (ojComboboxEventMap[V, SP, SV, RV])) extends AnyVal {
     
     inline def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
     

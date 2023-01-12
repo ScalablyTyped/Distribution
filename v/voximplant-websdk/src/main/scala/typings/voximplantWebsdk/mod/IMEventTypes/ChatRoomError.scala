@@ -39,7 +39,8 @@ object ChatRoomError {
     __obj.asInstanceOf[ChatRoomError]
   }
   
-  extension [Self <: ChatRoomError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatRoomError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

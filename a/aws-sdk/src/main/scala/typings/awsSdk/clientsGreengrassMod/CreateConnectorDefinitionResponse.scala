@@ -48,7 +48,8 @@ object CreateConnectorDefinitionResponse {
     __obj.asInstanceOf[CreateConnectorDefinitionResponse]
   }
   
-  extension [Self <: CreateConnectorDefinitionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateConnectorDefinitionResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

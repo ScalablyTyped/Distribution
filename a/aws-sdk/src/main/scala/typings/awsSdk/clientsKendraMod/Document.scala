@@ -55,7 +55,8 @@ object Document {
     __obj.asInstanceOf[Document]
   }
   
-  extension [Self <: Document](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
     
     inline def setAccessControlConfigurationId(value: AccessControlConfigurationId): Self = StObject.set(x, "AccessControlConfigurationId", value.asInstanceOf[js.Any])
     

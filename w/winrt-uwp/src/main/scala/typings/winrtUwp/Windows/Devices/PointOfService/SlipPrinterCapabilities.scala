@@ -112,7 +112,8 @@ object SlipPrinterCapabilities {
     __obj.asInstanceOf[SlipPrinterCapabilities]
   }
   
-  extension [Self <: SlipPrinterCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlipPrinterCapabilities] (val x: Self) extends AnyVal {
     
     inline def setCartridgeSensors(value: PosPrinterCartridgeSensors): Self = StObject.set(x, "cartridgeSensors", value.asInstanceOf[js.Any])
     

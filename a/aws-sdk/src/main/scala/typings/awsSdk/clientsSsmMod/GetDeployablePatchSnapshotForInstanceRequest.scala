@@ -28,7 +28,8 @@ object GetDeployablePatchSnapshotForInstanceRequest {
     __obj.asInstanceOf[GetDeployablePatchSnapshotForInstanceRequest]
   }
   
-  extension [Self <: GetDeployablePatchSnapshotForInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDeployablePatchSnapshotForInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setBaselineOverride(value: BaselineOverride): Self = StObject.set(x, "BaselineOverride", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object PerceptionFrameSourcePropertiesChangedEventArgs {
     __obj.asInstanceOf[PerceptionFrameSourcePropertiesChangedEventArgs]
   }
   
-  extension [Self <: PerceptionFrameSourcePropertiesChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerceptionFrameSourcePropertiesChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCollectionChange(value: CollectionChange): Self = StObject.set(x, "collectionChange", value.asInstanceOf[js.Any])
     

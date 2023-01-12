@@ -50,7 +50,8 @@ object ReceiveTask {
     __obj.asInstanceOf[ReceiveTask]
   }
   
-  extension [Self <: ReceiveTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReceiveTask] (val x: Self) extends AnyVal {
     
     inline def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     

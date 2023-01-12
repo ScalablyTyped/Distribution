@@ -16,7 +16,8 @@ object Profiles {
     __obj.asInstanceOf[Profiles]
   }
   
-  extension [Self <: Profiles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Profiles] (val x: Self) extends AnyVal {
     
     inline def setProfiles(value: js.Array[BootstrapProfile]): Self = StObject.set(x, "profiles", value.asInstanceOf[js.Any])
     

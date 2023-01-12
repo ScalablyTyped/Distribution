@@ -45,7 +45,8 @@ object FunctionDescription {
     __obj.asInstanceOf[FunctionDescription]
   }
   
-  extension [Self <: FunctionDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionDescription] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: SafeArray[FunctionArgument]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
     

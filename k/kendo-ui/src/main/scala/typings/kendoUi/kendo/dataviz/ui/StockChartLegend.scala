@@ -37,7 +37,8 @@ object StockChartLegend {
     __obj.asInstanceOf[StockChartLegend]
   }
   
-  extension [Self <: StockChartLegend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartLegend] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

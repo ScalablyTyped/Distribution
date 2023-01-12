@@ -19,7 +19,8 @@ object ModifyPushConfigRequest {
     __obj.asInstanceOf[ModifyPushConfigRequest]
   }
   
-  extension [Self <: ModifyPushConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyPushConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setPushConfig(value: PushConfig): Self = StObject.set(x, "pushConfig", value.asInstanceOf[js.Any])
     

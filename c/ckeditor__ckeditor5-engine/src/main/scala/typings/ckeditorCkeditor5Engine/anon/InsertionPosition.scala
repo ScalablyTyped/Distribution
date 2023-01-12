@@ -29,7 +29,8 @@ object InsertionPosition {
     __obj.asInstanceOf[InsertionPosition]
   }
   
-  extension [Self <: InsertionPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertionPosition] (val x: Self) extends AnyVal {
     
     inline def setBaseVersion(value: Double): Self = StObject.set(x, "baseVersion", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object FavoriteTemplatesContentItem {
     __obj.asInstanceOf[FavoriteTemplatesContentItem]
   }
   
-  extension [Self <: FavoriteTemplatesContentItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FavoriteTemplatesContentItem] (val x: Self) extends AnyVal {
     
     inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails

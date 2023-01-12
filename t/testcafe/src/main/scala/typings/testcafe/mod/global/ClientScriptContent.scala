@@ -18,7 +18,8 @@ object ClientScriptContent {
     __obj.asInstanceOf[ClientScriptContent]
   }
   
-  extension [Self <: ClientScriptContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientScriptContent] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

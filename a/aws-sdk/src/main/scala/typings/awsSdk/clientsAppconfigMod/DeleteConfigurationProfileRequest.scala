@@ -23,7 +23,8 @@ object DeleteConfigurationProfileRequest {
     __obj.asInstanceOf[DeleteConfigurationProfileRequest]
   }
   
-  extension [Self <: DeleteConfigurationProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteConfigurationProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: Id): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

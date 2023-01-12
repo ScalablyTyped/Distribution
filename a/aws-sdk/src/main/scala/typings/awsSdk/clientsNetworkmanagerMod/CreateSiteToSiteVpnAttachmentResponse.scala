@@ -18,7 +18,8 @@ object CreateSiteToSiteVpnAttachmentResponse {
     __obj.asInstanceOf[CreateSiteToSiteVpnAttachmentResponse]
   }
   
-  extension [Self <: CreateSiteToSiteVpnAttachmentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSiteToSiteVpnAttachmentResponse] (val x: Self) extends AnyVal {
     
     inline def setSiteToSiteVpnAttachment(value: SiteToSiteVpnAttachment): Self = StObject.set(x, "SiteToSiteVpnAttachment", value.asInstanceOf[js.Any])
     

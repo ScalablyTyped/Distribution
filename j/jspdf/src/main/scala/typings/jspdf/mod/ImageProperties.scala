@@ -51,7 +51,8 @@ object ImageProperties {
     __obj.asInstanceOf[ImageProperties]
   }
   
-  extension [Self <: ImageProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageProperties] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: Double): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

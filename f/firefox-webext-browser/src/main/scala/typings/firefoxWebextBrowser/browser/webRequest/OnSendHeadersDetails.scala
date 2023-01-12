@@ -72,7 +72,8 @@ object OnSendHeadersDetails {
     __obj.asInstanceOf[OnSendHeadersDetails]
   }
   
-  extension [Self <: OnSendHeadersDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnSendHeadersDetails] (val x: Self) extends AnyVal {
     
     inline def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object InvalidateMaintainHistory {
     __obj.asInstanceOf[InvalidateMaintainHistory]
   }
   
-  extension [Self <: InvalidateMaintainHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidateMaintainHistory] (val x: Self) extends AnyVal {
     
     inline def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
     

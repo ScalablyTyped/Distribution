@@ -25,7 +25,8 @@ object NotebookTypePattern {
     __obj.asInstanceOf[NotebookTypePattern]
   }
   
-  extension [Self <: NotebookTypePattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookTypePattern] (val x: Self) extends AnyVal {
     
     inline def setNotebookType(value: String): Self = StObject.set(x, "notebookType", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object FileStats {
     __obj.asInstanceOf[FileStats]
   }
   
-  extension [Self <: FileStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileStats] (val x: Self) extends AnyVal {
     
     inline def setAccessTime(value: Double): Self = StObject.set(x, "accessTime", value.asInstanceOf[js.Any])
     

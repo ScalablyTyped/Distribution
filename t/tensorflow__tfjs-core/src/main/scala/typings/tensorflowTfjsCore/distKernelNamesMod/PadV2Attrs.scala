@@ -17,7 +17,8 @@ object PadV2Attrs {
     __obj.asInstanceOf[PadV2Attrs]
   }
   
-  extension [Self <: PadV2Attrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PadV2Attrs] (val x: Self) extends AnyVal {
     
     inline def setConstantValue(value: Double): Self = StObject.set(x, "constantValue", value.asInstanceOf[js.Any])
     

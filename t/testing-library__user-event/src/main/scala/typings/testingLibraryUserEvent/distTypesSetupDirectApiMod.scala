@@ -101,7 +101,8 @@ object distTypesSetupDirectApiMod {
       __obj.asInstanceOf[DirectOptions]
     }
     
-    extension [Self <: DirectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectOptions] (val x: Self) extends AnyVal {
       
       inline def setKeyboardState(value: System): Self = StObject.set(x, "keyboardState", value.asInstanceOf[js.Any])
       

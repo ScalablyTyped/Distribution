@@ -22,7 +22,8 @@ object PlaybackSeekingEvent {
     __obj.asInstanceOf[PlaybackSeekingEvent]
   }
   
-  extension [Self <: PlaybackSeekingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaybackSeekingEvent] (val x: Self) extends AnyVal {
     
     inline def setSeekTime(value: Double): Self = StObject.set(x, "seekTime", value.asInstanceOf[js.Any])
     

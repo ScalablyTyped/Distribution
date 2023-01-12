@@ -53,7 +53,8 @@ object PlotZigzagParamsOptions {
     __obj.asInstanceOf[PlotZigzagParamsOptions]
   }
   
-  extension [Self <: PlotZigzagParamsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotZigzagParamsOptions] (val x: Self) extends AnyVal {
     
     inline def setDeviation(value: Double): Self = StObject.set(x, "deviation", value.asInstanceOf[js.Any])
     

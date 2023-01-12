@@ -17,7 +17,8 @@ object GPUBlendState {
     __obj.asInstanceOf[GPUBlendState]
   }
   
-  extension [Self <: GPUBlendState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUBlendState] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: GPUBlendComponent): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

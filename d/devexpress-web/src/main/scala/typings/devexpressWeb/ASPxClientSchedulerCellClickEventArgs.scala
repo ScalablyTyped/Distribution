@@ -33,7 +33,8 @@ object ASPxClientSchedulerCellClickEventArgs {
     __obj.asInstanceOf[ASPxClientSchedulerCellClickEventArgs]
   }
   
-  extension [Self <: ASPxClientSchedulerCellClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSchedulerCellClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     

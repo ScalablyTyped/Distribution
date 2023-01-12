@@ -36,7 +36,8 @@ object PipelineOptions {
     __obj.asInstanceOf[PipelineOptions]
   }
   
-  extension [Self <: PipelineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelineOptions] (val x: Self) extends AnyVal {
     
     inline def setProxyOptions(value: ProxySettings): Self = StObject.set(x, "proxyOptions", value.asInstanceOf[js.Any])
     

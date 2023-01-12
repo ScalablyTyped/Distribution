@@ -50,7 +50,8 @@ object srcNgtscTypecheckApiApiMod {
       __obj.asInstanceOf[DirectTemplateSourceMapping]
     }
     
-    extension [Self <: DirectTemplateSourceMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectTemplateSourceMapping] (val x: Self) extends AnyVal {
       
       inline def setNode(value: StringLiteral | NoSubstitutionTemplateLiteral): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object srcNgtscTypecheckApiApiMod {
       __obj.asInstanceOf[ExternalTemplateSourceMapping]
     }
     
-    extension [Self <: ExternalTemplateSourceMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternalTemplateSourceMapping] (val x: Self) extends AnyVal {
       
       inline def setComponentClass(value: ClassDeclaration[DeclarationNode]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object srcNgtscTypecheckApiApiMod {
       __obj.asInstanceOf[FullTemplateMapping]
     }
     
-    extension [Self <: FullTemplateMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullTemplateMapping] (val x: Self) extends AnyVal {
       
       inline def setSourceLocation(value: SourceLocation): Self = StObject.set(x, "sourceLocation", value.asInstanceOf[js.Any])
       
@@ -148,7 +151,8 @@ object srcNgtscTypecheckApiApiMod {
       __obj.asInstanceOf[IndirectTemplateSourceMapping]
     }
     
-    extension [Self <: IndirectTemplateSourceMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndirectTemplateSourceMapping] (val x: Self) extends AnyVal {
       
       inline def setComponentClass(value: ClassDeclaration[DeclarationNode]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
@@ -180,7 +184,8 @@ object srcNgtscTypecheckApiApiMod {
       __obj.asInstanceOf[NgTemplateDiagnostic[T]]
     }
     
-    extension [Self <: NgTemplateDiagnostic[?], T /* <: ErrorCode */](x: Self & NgTemplateDiagnostic[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NgTemplateDiagnostic[?], T /* <: ErrorCode */] (val x: Self & NgTemplateDiagnostic[T]) extends AnyVal {
       
       inline def set__ngCode(value: T): Self = StObject.set(x, "__ngCode", value.asInstanceOf[js.Any])
     }
@@ -199,7 +204,8 @@ object srcNgtscTypecheckApiApiMod {
       __obj.asInstanceOf[SourceLocation]
     }
     
-    extension [Self <: SourceLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceLocation] (val x: Self) extends AnyVal {
       
       inline def setId(value: TemplateId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -234,7 +240,8 @@ object srcNgtscTypecheckApiApiMod {
       __obj.asInstanceOf[TemplateDiagnostic]
     }
     
-    extension [Self <: TemplateDiagnostic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateDiagnostic] (val x: Self) extends AnyVal {
       
       inline def setComponentFile(value: SourceFile): Self = StObject.set(x, "componentFile", value.asInstanceOf[js.Any])
       
@@ -318,7 +325,8 @@ object srcNgtscTypecheckApiApiMod {
       __obj.asInstanceOf[TypeCheckBlockMetadata]
     }
     
-    extension [Self <: TypeCheckBlockMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeCheckBlockMetadata] (val x: Self) extends AnyVal {
       
       inline def setBoundTarget(value: BoundTarget[TypeCheckableDirectiveMeta]): Self = StObject.set(x, "boundTarget", value.asInstanceOf[js.Any])
       
@@ -374,7 +382,8 @@ object srcNgtscTypecheckApiApiMod {
       __obj.asInstanceOf[TypeCheckableDirectiveMeta]
     }
     
-    extension [Self <: TypeCheckableDirectiveMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeCheckableDirectiveMeta] (val x: Self) extends AnyVal {
       
       inline def setInputs(value: ClassPropertyMapping): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
@@ -630,7 +639,8 @@ object srcNgtscTypecheckApiApiMod {
       __obj.asInstanceOf[TypeCheckingConfig]
     }
     
-    extension [Self <: TypeCheckingConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeCheckingConfig] (val x: Self) extends AnyVal {
       
       inline def setAlwaysCheckSchemaInTemplateBodies(value: Boolean): Self = StObject.set(x, "alwaysCheckSchemaInTemplateBodies", value.asInstanceOf[js.Any])
       
@@ -705,7 +715,8 @@ object srcNgtscTypecheckApiApiMod {
       __obj.asInstanceOf[TypeCtorMetadata]
     }
     
-    extension [Self <: TypeCtorMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeCtorMetadata] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Boolean): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

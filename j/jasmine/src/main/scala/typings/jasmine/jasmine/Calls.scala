@@ -56,7 +56,8 @@ object Calls {
     __obj.asInstanceOf[Calls[Fn]]
   }
   
-  extension [Self <: Calls[?], Fn /* <: Func */](x: Self & Calls[Fn]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Calls[?], Fn /* <: Func */] (val x: Self & Calls[Fn]) extends AnyVal {
     
     inline def setAll(value: () => js.Array[CallInfo[Fn]]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
     

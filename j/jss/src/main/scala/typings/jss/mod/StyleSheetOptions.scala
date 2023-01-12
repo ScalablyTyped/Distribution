@@ -36,7 +36,8 @@ object StyleSheetOptions {
     __obj.asInstanceOf[StyleSheetOptions]
   }
   
-  extension [Self <: StyleSheetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleSheetOptions] (val x: Self) extends AnyVal {
     
     inline def setGenerateId(value: (/* rule */ Rule, /* sheet */ js.UndefOr[StyleSheet[String]]) => String): Self = StObject.set(x, "generateId", js.Any.fromFunction2(value))
     

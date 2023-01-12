@@ -46,7 +46,8 @@ object GdataCompositeMedia {
     __obj.asInstanceOf[GdataCompositeMedia]
   }
   
-  extension [Self <: GdataCompositeMedia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GdataCompositeMedia] (val x: Self) extends AnyVal {
     
     inline def setBlobRef(value: String): Self = StObject.set(x, "blobRef", value.asInstanceOf[js.Any])
     

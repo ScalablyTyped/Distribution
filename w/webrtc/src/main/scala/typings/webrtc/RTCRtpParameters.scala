@@ -16,7 +16,8 @@ object RTCRtpParameters {
     __obj.asInstanceOf[RTCRtpParameters]
   }
   
-  extension [Self <: RTCRtpParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCRtpParameters] (val x: Self) extends AnyVal {
     
     inline def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
   }

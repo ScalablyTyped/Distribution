@@ -34,7 +34,8 @@ object distFastFieldMod {
       __obj.asInstanceOf[FastFieldConfig[T]]
     }
     
-    extension [Self <: FastFieldConfig[?], T](x: Self & FastFieldConfig[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FastFieldConfig[?], T] (val x: Self & FastFieldConfig[T]) extends AnyVal {
       
       inline def setShouldUpdate(value: (/* nextProps */ T & GenericFieldHTMLAttributes, /* props */ js.Object) => Boolean): Self = StObject.set(x, "shouldUpdate", js.Any.fromFunction2(value))
       
@@ -57,7 +58,8 @@ object distFastFieldMod {
       __obj.asInstanceOf[FastFieldProps[V]]
     }
     
-    extension [Self <: FastFieldProps[?], V](x: Self & FastFieldProps[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FastFieldProps[?], V] (val x: Self & FastFieldProps[V]) extends AnyVal {
       
       inline def setField(value: FieldInputProps[V]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       

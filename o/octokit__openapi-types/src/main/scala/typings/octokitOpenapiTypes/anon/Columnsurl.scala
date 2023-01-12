@@ -103,7 +103,8 @@ object Columnsurl {
     __obj.asInstanceOf[Columnsurl]
   }
   
-  extension [Self <: Columnsurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Columnsurl] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

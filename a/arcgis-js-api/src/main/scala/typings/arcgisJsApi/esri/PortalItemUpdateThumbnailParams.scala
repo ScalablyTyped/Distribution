@@ -28,7 +28,8 @@ object PortalItemUpdateThumbnailParams {
     __obj.asInstanceOf[PortalItemUpdateThumbnailParams]
   }
   
-  extension [Self <: PortalItemUpdateThumbnailParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortalItemUpdateThumbnailParams] (val x: Self) extends AnyVal {
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     

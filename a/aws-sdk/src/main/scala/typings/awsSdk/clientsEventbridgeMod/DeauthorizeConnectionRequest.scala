@@ -18,7 +18,8 @@ object DeauthorizeConnectionRequest {
     __obj.asInstanceOf[DeauthorizeConnectionRequest]
   }
   
-  extension [Self <: DeauthorizeConnectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeauthorizeConnectionRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: ConnectionName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

@@ -16,7 +16,8 @@ object GoogleSecuritySafebrowsingV4ThreatEntryMetadata {
     __obj.asInstanceOf[GoogleSecuritySafebrowsingV4ThreatEntryMetadata]
   }
   
-  extension [Self <: GoogleSecuritySafebrowsingV4ThreatEntryMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSecuritySafebrowsingV4ThreatEntryMetadata] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: js.Array[GoogleSecuritySafebrowsingV4ThreatEntryMetadataMetadataEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

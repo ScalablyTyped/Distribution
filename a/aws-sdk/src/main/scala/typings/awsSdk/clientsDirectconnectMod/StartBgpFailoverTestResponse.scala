@@ -18,7 +18,8 @@ object StartBgpFailoverTestResponse {
     __obj.asInstanceOf[StartBgpFailoverTestResponse]
   }
   
-  extension [Self <: StartBgpFailoverTestResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartBgpFailoverTestResponse] (val x: Self) extends AnyVal {
     
     inline def setVirtualInterfaceTest(value: VirtualInterfaceTestHistory): Self = StObject.set(x, "virtualInterfaceTest", value.asInstanceOf[js.Any])
     

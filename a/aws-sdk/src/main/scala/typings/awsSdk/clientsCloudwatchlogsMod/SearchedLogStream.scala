@@ -23,7 +23,8 @@ object SearchedLogStream {
     __obj.asInstanceOf[SearchedLogStream]
   }
   
-  extension [Self <: SearchedLogStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchedLogStream] (val x: Self) extends AnyVal {
     
     inline def setLogStreamName(value: LogStreamName): Self = StObject.set(x, "logStreamName", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object MaxAllowedMaturityRating {
     __obj.asInstanceOf[MaxAllowedMaturityRating]
   }
   
-  extension [Self <: MaxAllowedMaturityRating](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxAllowedMaturityRating] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

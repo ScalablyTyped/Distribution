@@ -30,7 +30,8 @@ object MaxEventLoopDelay {
     __obj.asInstanceOf[MaxEventLoopDelay]
   }
   
-  extension [Self <: MaxEventLoopDelay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxEventLoopDelay] (val x: Self) extends AnyVal {
     
     inline def setMaxEventLoopDelay(value: Double): Self = StObject.set(x, "maxEventLoopDelay", value.asInstanceOf[js.Any])
     

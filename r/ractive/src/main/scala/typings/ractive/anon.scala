@@ -58,7 +58,8 @@ object anon {
       __obj.asInstanceOf[`0`[T, U, X]]
     }
     
-    extension [Self <: `0`[?, ?, ?], T, U /* <: js.Array[Any] */, X](x: Self & (`0`[T, U, X])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`[?, ?, ?], T, U /* <: js.Array[Any] */, X] (val x: Self & (`0`[T, U, X])) extends AnyVal {
       
       inline def set0(value: T): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
@@ -217,7 +218,8 @@ object anon {
       __obj.asInstanceOf[Optional]
     }
     
-    extension [Self <: Optional](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optional] (val x: Self) extends AnyVal {
       
       inline def setOptional(value: js.Array[String]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
@@ -465,7 +467,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyArrayExtendOptsan]
     }
     
-    extension [Self <: ReadonlyArrayExtendOptsan](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyArrayExtendOptsan] (val x: Self) extends AnyVal {
       
       inline def setAt(value: Double => js.UndefOr[ExtendOpts[Any] & ValueMap]): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
       
@@ -616,7 +619,8 @@ object anon {
       __obj.asInstanceOf[Teardown]
     }
     
-    extension [Self <: Teardown](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Teardown] (val x: Self) extends AnyVal {
       
       inline def setTeardown(value: () => Unit): Self = StObject.set(x, "teardown", js.Any.fromFunction0(value))
     }
@@ -641,7 +645,8 @@ object anon {
       __obj.asInstanceOf[TransitionOpts]
     }
     
-    extension [Self <: TransitionOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionOpts] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       

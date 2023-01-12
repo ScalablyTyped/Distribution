@@ -22,7 +22,8 @@ object GoogleAnalyticsAdminV1alphaDataStreamWebStreamData {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaDataStreamWebStreamData]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaDataStreamWebStreamData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaDataStreamWebStreamData] (val x: Self) extends AnyVal {
     
     inline def setDefaultUri(value: String): Self = StObject.set(x, "defaultUri", value.asInstanceOf[js.Any])
     

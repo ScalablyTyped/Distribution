@@ -20,7 +20,8 @@ object OnAction {
     __obj.asInstanceOf[OnAction]
   }
   
-  extension [Self <: OnAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnAction] (val x: Self) extends AnyVal {
     
     inline def setAction(value: typings.antdMobile.esComponentsModalModalActionButtonMod.Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

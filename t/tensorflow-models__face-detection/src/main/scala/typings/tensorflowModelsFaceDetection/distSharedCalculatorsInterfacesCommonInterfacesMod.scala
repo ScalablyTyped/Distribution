@@ -33,7 +33,8 @@ object distSharedCalculatorsInterfacesCommonInterfacesMod {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object distSharedCalculatorsInterfacesCommonInterfacesMod {
       __obj.asInstanceOf[ImageSize]
     }
     
-    extension [Self <: ImageSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -79,7 +81,8 @@ object distSharedCalculatorsInterfacesCommonInterfacesMod {
       __obj.asInstanceOf[InputResolution]
     }
     
-    extension [Self <: InputResolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputResolution] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -106,7 +109,8 @@ object distSharedCalculatorsInterfacesCommonInterfacesMod {
       __obj.asInstanceOf[Keypoint]
     }
     
-    extension [Self <: Keypoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Keypoint] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -140,7 +144,8 @@ object distSharedCalculatorsInterfacesCommonInterfacesMod {
       __obj.asInstanceOf[KeypointsFilter]
     }
     
-    extension [Self <: KeypointsFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeypointsFilter] (val x: Self) extends AnyVal {
       
       inline def setApply(value: (js.Array[Keypoint], Double, Double) => js.Array[Keypoint]): Self = StObject.set(x, "apply", js.Any.fromFunction3(value))
       
@@ -170,7 +175,8 @@ object distSharedCalculatorsInterfacesCommonInterfacesMod {
       __obj.asInstanceOf[Mask]
     }
     
-    extension [Self <: Mask](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mask] (val x: Self) extends AnyVal {
       
       inline def setGetUnderlyingType(value: () => canvasimagesource | imagedata | tensor): Self = StObject.set(x, "getUnderlyingType", js.Any.fromFunction0(value))
       
@@ -199,7 +205,8 @@ object distSharedCalculatorsInterfacesCommonInterfacesMod {
       __obj.asInstanceOf[Padding]
     }
     
-    extension [Self <: Padding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Padding] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -226,7 +233,8 @@ object distSharedCalculatorsInterfacesCommonInterfacesMod {
       __obj.asInstanceOf[Segmentation]
     }
     
-    extension [Self <: Segmentation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Segmentation] (val x: Self) extends AnyVal {
       
       inline def setMask(value: Mask): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
@@ -247,7 +255,8 @@ object distSharedCalculatorsInterfacesCommonInterfacesMod {
       __obj.asInstanceOf[ValueTransform]
     }
     
-    extension [Self <: ValueTransform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueTransform] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -268,7 +277,8 @@ object distSharedCalculatorsInterfacesCommonInterfacesMod {
       __obj.asInstanceOf[WindowElement]
     }
     
-    extension [Self <: WindowElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowElement] (val x: Self) extends AnyVal {
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       

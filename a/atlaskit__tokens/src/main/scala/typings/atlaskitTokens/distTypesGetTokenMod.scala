@@ -1744,7 +1744,8 @@ object distTypesGetTokenMod {
       __obj.asInstanceOf[Tokens]
     }
     
-    extension [Self <: Tokens](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tokens] (val x: Self) extends AnyVal {
       
       inline def setColorDotaccentDotboldBlue(value: `--ds-accent-boldBlue`): Self = StObject.set(x, "color.accent.boldBlue", value.asInstanceOf[js.Any])
       

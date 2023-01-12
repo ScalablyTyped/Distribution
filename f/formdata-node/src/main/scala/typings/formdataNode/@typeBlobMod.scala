@@ -119,7 +119,8 @@ object `@typeBlobMod` {
       __obj.asInstanceOf[BlobPropertyBag]
     }
     
-    extension [Self <: BlobPropertyBag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlobPropertyBag] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

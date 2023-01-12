@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[AppendOptions]
     }
     
-    extension [Self <: AppendOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppendOptions] (val x: Self) extends AnyVal {
       
       inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object mod {
       __obj.asInstanceOf[CopyOptions]
     }
     
-    extension [Self <: CopyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreNoMatch(value: Boolean): Self = StObject.set(x, "ignoreNoMatch", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object mod {
       __obj.asInstanceOf[ReadRawOptions]
     }
     
-    extension [Self <: ReadRawOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadRawOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: ReadRawContents): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
@@ -184,7 +187,8 @@ object mod {
       __obj.asInstanceOf[ReadStringOptions]
     }
     
-    extension [Self <: ReadStringOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadStringOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: String): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
@@ -207,7 +211,8 @@ object mod {
       __obj.asInstanceOf[WithGlobOptions]
     }
     
-    extension [Self <: WithGlobOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithGlobOptions] (val x: Self) extends AnyVal {
       
       inline def setGlobOptions(value: IOptions): Self = StObject.set(x, "globOptions", value.asInstanceOf[js.Any])
       

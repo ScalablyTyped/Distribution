@@ -23,7 +23,8 @@ object EventHandler {
     __obj.asInstanceOf[EventHandler]
   }
   
-  extension [Self <: EventHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventHandler] (val x: Self) extends AnyVal {
     
     inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     

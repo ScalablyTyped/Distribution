@@ -140,7 +140,8 @@ object Core {
       __obj.asInstanceOf[ResourceCandidate]
     }
     
-    extension [Self <: ResourceCandidate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceCandidate] (val x: Self) extends AnyVal {
       
       inline def setGetQualifierValue(value: String => String): Self = StObject.set(x, "getQualifierValue", js.Any.fromFunction1(value))
       
@@ -284,7 +285,8 @@ object Core {
       __obj.asInstanceOf[ResourceLayoutInfo]
     }
     
-    extension [Self <: ResourceLayoutInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceLayoutInfo] (val x: Self) extends AnyVal {
       
       inline def setChecksum(value: Double): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
       
@@ -353,7 +355,8 @@ object Core {
       __obj.asInstanceOf[ResourceManager]
     }
     
-    extension [Self <: ResourceManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceManager] (val x: Self) extends AnyVal {
       
       inline def setAllResourceMaps(value: IMapView[String, ResourceMap]): Self = StObject.set(x, "allResourceMaps", value.asInstanceOf[js.Any])
       
@@ -460,7 +463,8 @@ object Core {
       __obj.asInstanceOf[ResourceMapIterator]
     }
     
-    extension [Self <: ResourceMapIterator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceMapIterator] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: IKeyValuePair[String, NamedResource]): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -516,7 +520,8 @@ object Core {
       __obj.asInstanceOf[ResourceMapMapView]
     }
     
-    extension [Self <: ResourceMapMapView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceMapMapView] (val x: Self) extends AnyVal {
       
       inline def setFirst(value: () => IIterator[IKeyValuePair[Any, Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
@@ -562,7 +567,8 @@ object Core {
       __obj.asInstanceOf[ResourceMapMapViewIterator]
     }
     
-    extension [Self <: ResourceMapMapViewIterator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceMapMapViewIterator] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: IKeyValuePair[String, ResourceMap]): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -599,7 +605,8 @@ object Core {
       __obj.asInstanceOf[ResourceQualifier]
     }
     
-    extension [Self <: ResourceQualifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceQualifier] (val x: Self) extends AnyVal {
       
       inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
       
@@ -657,7 +664,8 @@ object Core {
       __obj.asInstanceOf[ResourceQualifierMapView]
     }
     
-    extension [Self <: ResourceQualifierMapView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceQualifierMapView] (val x: Self) extends AnyVal {
       
       inline def setFirst(value: () => IIterator[IKeyValuePair[Any, Any]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       

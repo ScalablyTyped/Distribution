@@ -127,7 +127,8 @@ object Geolocation {
       __obj.asInstanceOf[ICivicAddress]
     }
     
-    extension [Self <: ICivicAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICivicAddress] (val x: Self) extends AnyVal {
       
       inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
@@ -175,7 +176,8 @@ object Geolocation {
       __obj.asInstanceOf[IGeocoordinate]
     }
     
-    extension [Self <: IGeocoordinate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGeocoordinate] (val x: Self) extends AnyVal {
       
       inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
       
@@ -227,7 +229,8 @@ object Geolocation {
       __obj.asInstanceOf[IGeoposition]
     }
     
-    extension [Self <: IGeoposition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGeoposition] (val x: Self) extends AnyVal {
       
       inline def setCivicAddress(value: CivicAddress): Self = StObject.set(x, "civicAddress", value.asInstanceOf[js.Any])
       
@@ -246,7 +249,8 @@ object Geolocation {
       __obj.asInstanceOf[IPositionChangedEventArgs]
     }
     
-    extension [Self <: IPositionChangedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPositionChangedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: Geoposition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
@@ -263,7 +267,8 @@ object Geolocation {
       __obj.asInstanceOf[IStatusChangedEventArgs]
     }
     
-    extension [Self <: IStatusChangedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStatusChangedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setStatus(value: PositionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }

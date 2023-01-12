@@ -27,7 +27,8 @@ object MlTrainedModelAssignment {
     __obj.asInstanceOf[MlTrainedModelAssignment]
   }
   
-  extension [Self <: MlTrainedModelAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlTrainedModelAssignment] (val x: Self) extends AnyVal {
     
     inline def setAssignment_state(value: MlDeploymentAssignmentState): Self = StObject.set(x, "assignment_state", value.asInstanceOf[js.Any])
     

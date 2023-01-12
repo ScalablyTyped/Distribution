@@ -24,7 +24,8 @@ object ProxyUrl {
     __obj.asInstanceOf[ProxyUrl]
   }
   
-  extension [Self <: ProxyUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProxyUrl] (val x: Self) extends AnyVal {
     
     inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     

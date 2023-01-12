@@ -23,7 +23,8 @@ object ErrorCorrectionLevel {
     __obj.asInstanceOf[ErrorCorrectionLevel]
   }
   
-  extension [Self <: ErrorCorrectionLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorCorrectionLevel] (val x: Self) extends AnyVal {
     
     inline def setBits(value: Double): Self = StObject.set(x, "Bits", value.asInstanceOf[js.Any])
     

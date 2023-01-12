@@ -30,7 +30,8 @@ object MediaKeySystemAccess {
     __obj.asInstanceOf[MediaKeySystemAccess]
   }
   
-  extension [Self <: MediaKeySystemAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaKeySystemAccess] (val x: Self) extends AnyVal {
     
     inline def setCreateMediaKeys(value: () => js.Promise[MediaKeys]): Self = StObject.set(x, "createMediaKeys", js.Any.fromFunction0(value))
     

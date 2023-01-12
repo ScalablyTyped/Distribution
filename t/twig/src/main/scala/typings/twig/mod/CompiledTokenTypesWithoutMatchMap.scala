@@ -29,7 +29,8 @@ object CompiledTokenTypesWithoutMatchMap {
     __obj.asInstanceOf[CompiledTokenTypesWithoutMatchMap]
   }
   
-  extension [Self <: CompiledTokenTypesWithoutMatchMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompiledTokenTypesWithoutMatchMap] (val x: Self) extends AnyVal {
     
     inline def setTwigDotexpressionDottypeDotbool(value: Boolean): Self = StObject.set(x, "Twig.expression.type.bool", value.asInstanceOf[js.Any])
     

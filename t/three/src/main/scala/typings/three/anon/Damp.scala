@@ -20,7 +20,8 @@ object Damp {
     __obj.asInstanceOf[Damp]
   }
   
-  extension [Self <: Damp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Damp] (val x: Self) extends AnyVal {
     
     inline def setDamp(value: IUniform[Any]): Self = StObject.set(x, "damp", value.asInstanceOf[js.Any])
     

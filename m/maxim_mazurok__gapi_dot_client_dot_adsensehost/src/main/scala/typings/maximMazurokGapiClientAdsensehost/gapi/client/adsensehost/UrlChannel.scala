@@ -22,7 +22,8 @@ object UrlChannel {
     __obj.asInstanceOf[UrlChannel]
   }
   
-  extension [Self <: UrlChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlChannel] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

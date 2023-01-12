@@ -32,7 +32,8 @@ object excelExporter {
       __obj.asInstanceOf[CellAddress]
     }
     
-    extension [Self <: CellAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellAddress] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object excelExporter {
       __obj.asInstanceOf[CellRange]
     }
     
-    extension [Self <: CellRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellRange] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: CellAddress): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object excelExporter {
       __obj.asInstanceOf[ExcelDataGridCell]
     }
     
-    extension [Self <: ExcelDataGridCell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExcelDataGridCell] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Column[Any, Any]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -184,7 +187,8 @@ object excelExporter {
       __obj.asInstanceOf[ExcelExportBaseProps]
     }
     
-    extension [Self <: ExcelExportBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExcelExportBaseProps] (val x: Self) extends AnyVal {
       
       inline def setKeepColumnWidths(value: Boolean): Self = StObject.set(x, "keepColumnWidths", value.asInstanceOf[js.Any])
       
@@ -235,7 +239,8 @@ object excelExporter {
       __obj.asInstanceOf[ExcelExportDataGridProps]
     }
     
-    extension [Self <: ExcelExportDataGridProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExcelExportDataGridProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFilterEnabled(value: Boolean): Self = StObject.set(x, "autoFilterEnabled", value.asInstanceOf[js.Any])
       
@@ -286,7 +291,8 @@ object excelExporter {
       __obj.asInstanceOf[ExcelExportPivotGridProps]
     }
     
-    extension [Self <: ExcelExportPivotGridProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExcelExportPivotGridProps] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: dxPivotGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -332,7 +338,8 @@ object excelExporter {
       __obj.asInstanceOf[ExcelPivotGridCell]
     }
     
-    extension [Self <: ExcelPivotGridCell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExcelPivotGridCell] (val x: Self) extends AnyVal {
       
       inline def setArea(value: String): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       

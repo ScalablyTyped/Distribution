@@ -18,7 +18,8 @@ object HiveJsonSerDe {
     __obj.asInstanceOf[HiveJsonSerDe]
   }
   
-  extension [Self <: HiveJsonSerDe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HiveJsonSerDe] (val x: Self) extends AnyVal {
     
     inline def setTimestampFormats(value: ListOfNonEmptyStrings): Self = StObject.set(x, "TimestampFormats", value.asInstanceOf[js.Any])
     

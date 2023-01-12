@@ -21,7 +21,8 @@ object RegistrationOptions {
     __obj.asInstanceOf[RegistrationOptions]
   }
   
-  extension [Self <: RegistrationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegistrationOptions] (val x: Self) extends AnyVal {
     
     inline def setDeterministic(value: Boolean): Self = StObject.set(x, "deterministic", value.asInstanceOf[js.Any])
     

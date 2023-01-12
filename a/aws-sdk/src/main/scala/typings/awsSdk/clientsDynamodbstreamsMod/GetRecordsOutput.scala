@@ -23,7 +23,8 @@ object GetRecordsOutput {
     __obj.asInstanceOf[GetRecordsOutput]
   }
   
-  extension [Self <: GetRecordsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRecordsOutput] (val x: Self) extends AnyVal {
     
     inline def setNextShardIterator(value: ShardIterator): Self = StObject.set(x, "NextShardIterator", value.asInstanceOf[js.Any])
     

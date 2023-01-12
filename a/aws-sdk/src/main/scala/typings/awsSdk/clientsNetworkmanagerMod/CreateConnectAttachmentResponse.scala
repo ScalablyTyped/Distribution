@@ -18,7 +18,8 @@ object CreateConnectAttachmentResponse {
     __obj.asInstanceOf[CreateConnectAttachmentResponse]
   }
   
-  extension [Self <: CreateConnectAttachmentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateConnectAttachmentResponse] (val x: Self) extends AnyVal {
     
     inline def setConnectAttachment(value: ConnectAttachment): Self = StObject.set(x, "ConnectAttachment", value.asInstanceOf[js.Any])
     

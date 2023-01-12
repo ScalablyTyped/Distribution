@@ -26,7 +26,8 @@ object DroppableSubject {
     __obj.asInstanceOf[DroppableSubject]
   }
   
-  extension [Self <: DroppableSubject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DroppableSubject] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Rect): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

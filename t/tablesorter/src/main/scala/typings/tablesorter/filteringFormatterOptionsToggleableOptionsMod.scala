@@ -25,7 +25,8 @@ object filteringFormatterOptionsToggleableOptionsMod {
       __obj.asInstanceOf[ToggleableOptions]
     }
     
-    extension [Self <: ToggleableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleableOptions] (val x: Self) extends AnyVal {
       
       inline def setAddToggle(value: Boolean): Self = StObject.set(x, "addToggle", value.asInstanceOf[js.Any])
       

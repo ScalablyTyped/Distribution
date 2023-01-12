@@ -52,7 +52,8 @@ object b2ManifoldPoint {
     __obj.asInstanceOf[b2ManifoldPoint]
   }
   
-  extension [Self <: b2ManifoldPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2ManifoldPoint] (val x: Self) extends AnyVal {
     
     inline def setM_id(value: b2ContactID): Self = StObject.set(x, "m_id", value.asInstanceOf[js.Any])
     

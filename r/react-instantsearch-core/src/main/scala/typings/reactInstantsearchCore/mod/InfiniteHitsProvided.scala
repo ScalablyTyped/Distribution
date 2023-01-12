@@ -31,7 +31,8 @@ object InfiniteHitsProvided {
     __obj.asInstanceOf[InfiniteHitsProvided[THit]]
   }
   
-  extension [Self <: InfiniteHitsProvided[?], THit](x: Self & InfiniteHitsProvided[THit]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfiniteHitsProvided[?], THit] (val x: Self & InfiniteHitsProvided[THit]) extends AnyVal {
     
     inline def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
     

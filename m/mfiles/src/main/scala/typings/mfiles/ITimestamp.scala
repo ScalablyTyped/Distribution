@@ -50,7 +50,8 @@ object ITimestamp {
     __obj.asInstanceOf[ITimestamp]
   }
   
-  extension [Self <: ITimestamp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITimestamp] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => ITimestamp): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

@@ -276,7 +276,8 @@ object EnumDescriptorProto {
       __obj.asInstanceOf[IEnumReservedRange]
     }
     
-    extension [Self <: IEnumReservedRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEnumReservedRange] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

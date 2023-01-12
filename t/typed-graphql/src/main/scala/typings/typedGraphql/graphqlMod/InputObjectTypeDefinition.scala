@@ -24,7 +24,8 @@ object InputObjectTypeDefinition {
     __obj.asInstanceOf[InputObjectTypeDefinition]
   }
   
-  extension [Self <: InputObjectTypeDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputObjectTypeDefinition] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[InputValueDefinition]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

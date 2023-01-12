@@ -40,7 +40,8 @@ object ILockable {
     __obj.asInstanceOf[ILockable]
   }
   
-  extension [Self <: ILockable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILockable] (val x: Self) extends AnyVal {
     
     inline def setLockedGridConfig(value: Any): Self = StObject.set(x, "lockedGridConfig", value.asInstanceOf[js.Any])
     

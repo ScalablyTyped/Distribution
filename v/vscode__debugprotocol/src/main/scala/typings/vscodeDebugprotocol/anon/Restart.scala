@@ -18,7 +18,8 @@ object Restart {
     __obj.asInstanceOf[Restart]
   }
   
-  extension [Self <: Restart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Restart] (val x: Self) extends AnyVal {
     
     inline def setRestart(value: Any): Self = StObject.set(x, "restart", value.asInstanceOf[js.Any])
     

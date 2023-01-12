@@ -22,7 +22,8 @@ object ExportJpgOptions {
     __obj.asInstanceOf[ExportJpgOptions]
   }
   
-  extension [Self <: ExportJpgOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportJpgOptions] (val x: Self) extends AnyVal {
     
     inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     

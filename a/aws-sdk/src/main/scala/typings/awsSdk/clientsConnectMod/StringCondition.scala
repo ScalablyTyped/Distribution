@@ -28,7 +28,8 @@ object StringCondition {
     __obj.asInstanceOf[StringCondition]
   }
   
-  extension [Self <: StringCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringCondition] (val x: Self) extends AnyVal {
     
     inline def setComparisonType(value: StringComparisonType): Self = StObject.set(x, "ComparisonType", value.asInstanceOf[js.Any])
     

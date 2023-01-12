@@ -31,7 +31,8 @@ object DeviceClaim {
     __obj.asInstanceOf[DeviceClaim]
   }
   
-  extension [Self <: DeviceClaim](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceClaim] (val x: Self) extends AnyVal {
     
     inline def setAdditionalService(value: String): Self = StObject.set(x, "additionalService", value.asInstanceOf[js.Any])
     

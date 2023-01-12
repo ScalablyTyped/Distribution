@@ -17,7 +17,8 @@ object MultiColumnComboBoxAnimationOpen {
     __obj.asInstanceOf[MultiColumnComboBoxAnimationOpen]
   }
   
-  extension [Self <: MultiColumnComboBoxAnimationOpen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiColumnComboBoxAnimationOpen] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

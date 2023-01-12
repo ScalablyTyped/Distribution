@@ -204,7 +204,8 @@ object libTransformParamsMod {
       __obj.asInstanceOf[TransformsParams]
     }
     
-    extension [Self <: TransformsParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformsParams] (val x: Self) extends AnyVal {
       
       inline def setAdjacency(value: Options): Self = StObject.set(x, "adjacency", value.asInstanceOf[js.Any])
       

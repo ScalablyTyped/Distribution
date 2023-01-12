@@ -20,7 +20,8 @@ object AggregationsTTestAggregate {
     __obj.asInstanceOf[AggregationsTTestAggregate]
   }
   
-  extension [Self <: AggregationsTTestAggregate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsTTestAggregate] (val x: Self) extends AnyVal {
     
     inline def setValue(value: double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

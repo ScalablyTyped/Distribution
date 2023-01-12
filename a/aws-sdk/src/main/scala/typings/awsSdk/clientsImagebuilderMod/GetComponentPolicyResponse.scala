@@ -23,7 +23,8 @@ object GetComponentPolicyResponse {
     __obj.asInstanceOf[GetComponentPolicyResponse]
   }
   
-  extension [Self <: GetComponentPolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetComponentPolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setPolicy(value: ResourcePolicyDocument): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setProtoAction(value: error | remove | ignore): Self = StObject.set(x, "protoAction", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object mod {
       __obj.asInstanceOf[ScanOptions]
     }
     
-    extension [Self <: ScanOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScanOptions] (val x: Self) extends AnyVal {
       
       inline def setProtoAction(value: error | remove): Self = StObject.set(x, "protoAction", value.asInstanceOf[js.Any])
       

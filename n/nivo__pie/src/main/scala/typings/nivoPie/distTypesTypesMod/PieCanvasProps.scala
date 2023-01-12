@@ -124,7 +124,8 @@ object PieCanvasProps {
     __obj.asInstanceOf[PieCanvasProps[RawDatum]]
   }
   
-  extension [Self <: PieCanvasProps[?], RawDatum](x: Self & PieCanvasProps[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PieCanvasProps[?], RawDatum] (val x: Self & PieCanvasProps[RawDatum]) extends AnyVal {
     
     inline def setActiveInnerRadiusOffset(value: Double): Self = StObject.set(x, "activeInnerRadiusOffset", value.asInstanceOf[js.Any])
     

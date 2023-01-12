@@ -18,7 +18,8 @@ object CreateExclusionsPreviewResponse {
     __obj.asInstanceOf[CreateExclusionsPreviewResponse]
   }
   
-  extension [Self <: CreateExclusionsPreviewResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateExclusionsPreviewResponse] (val x: Self) extends AnyVal {
     
     inline def setPreviewToken(value: UUID): Self = StObject.set(x, "previewToken", value.asInstanceOf[js.Any])
   }

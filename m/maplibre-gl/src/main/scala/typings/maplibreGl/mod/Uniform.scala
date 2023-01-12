@@ -23,7 +23,8 @@ object Uniform {
     __obj.asInstanceOf[Uniform[T]]
   }
   
-  extension [Self <: Uniform[?], T](x: Self & Uniform[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Uniform[?], T] (val x: Self & Uniform[T]) extends AnyVal {
     
     inline def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

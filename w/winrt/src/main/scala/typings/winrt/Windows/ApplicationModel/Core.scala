@@ -54,7 +54,8 @@ object Core {
       __obj.asInstanceOf[ICoreApplication]
     }
     
-    extension [Self <: ICoreApplication](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICoreApplication] (val x: Self) extends AnyVal {
       
       inline def setGetCurrentView(value: () => CoreApplicationView): Self = StObject.set(x, "getCurrentView", js.Any.fromFunction0(value))
       
@@ -85,7 +86,8 @@ object Core {
       __obj.asInstanceOf[ICoreApplicationExit]
     }
     
-    extension [Self <: ICoreApplicationExit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICoreApplicationExit] (val x: Self) extends AnyVal {
       
       inline def setExit(value: () => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction0(value))
       
@@ -106,7 +108,8 @@ object Core {
       __obj.asInstanceOf[ICoreApplicationUseCount]
     }
     
-    extension [Self <: ICoreApplicationUseCount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICoreApplicationUseCount] (val x: Self) extends AnyVal {
       
       inline def setDecrementApplicationUseCount(value: () => Unit): Self = StObject.set(x, "decrementApplicationUseCount", js.Any.fromFunction0(value))
       
@@ -131,7 +134,8 @@ object Core {
       __obj.asInstanceOf[ICoreApplicationView]
     }
     
-    extension [Self <: ICoreApplicationView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICoreApplicationView] (val x: Self) extends AnyVal {
       
       inline def setCoreWindow(value: CoreWindow): Self = StObject.set(x, "coreWindow", value.asInstanceOf[js.Any])
       
@@ -162,7 +166,8 @@ object Core {
       __obj.asInstanceOf[ICoreImmersiveApplication]
     }
     
-    extension [Self <: ICoreImmersiveApplication](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICoreImmersiveApplication] (val x: Self) extends AnyVal {
       
       inline def setCreateNewView(value: (String, String) => CoreApplicationView): Self = StObject.set(x, "createNewView", js.Any.fromFunction2(value))
       
@@ -197,7 +202,8 @@ object Core {
       __obj.asInstanceOf[IFrameworkView]
     }
     
-    extension [Self <: IFrameworkView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFrameworkView] (val x: Self) extends AnyVal {
       
       inline def setInitialize(value: CoreApplicationView => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
       
@@ -222,7 +228,8 @@ object Core {
       __obj.asInstanceOf[IFrameworkViewSource]
     }
     
-    extension [Self <: IFrameworkViewSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFrameworkViewSource] (val x: Self) extends AnyVal {
       
       inline def setCreateView(value: () => IFrameworkView): Self = StObject.set(x, "createView", js.Any.fromFunction0(value))
     }

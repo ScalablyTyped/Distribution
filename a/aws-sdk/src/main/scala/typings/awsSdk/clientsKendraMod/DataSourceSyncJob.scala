@@ -53,7 +53,8 @@ object DataSourceSyncJob {
     __obj.asInstanceOf[DataSourceSyncJob]
   }
   
-  extension [Self <: DataSourceSyncJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceSyncJob] (val x: Self) extends AnyVal {
     
     inline def setDataSourceErrorCode(value: String): Self = StObject.set(x, "DataSourceErrorCode", value.asInstanceOf[js.Any])
     

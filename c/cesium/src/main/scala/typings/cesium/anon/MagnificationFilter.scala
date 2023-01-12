@@ -38,7 +38,8 @@ object MagnificationFilter {
     __obj.asInstanceOf[MagnificationFilter]
   }
   
-  extension [Self <: MagnificationFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MagnificationFilter] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

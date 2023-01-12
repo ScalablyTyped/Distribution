@@ -57,7 +57,8 @@ object AccessibleTableModelChange {
     __obj.asInstanceOf[AccessibleTableModelChange]
   }
   
-  extension [Self <: AccessibleTableModelChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessibleTableModelChange] (val x: Self) extends AnyVal {
     
     inline def setFirstColumn(value: Double): Self = StObject.set(x, "FirstColumn", value.asInstanceOf[js.Any])
     

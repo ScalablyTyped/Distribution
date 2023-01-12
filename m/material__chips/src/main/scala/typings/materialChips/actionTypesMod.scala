@@ -23,7 +23,8 @@ object actionTypesMod {
       __obj.asInstanceOf[MDCChipActionInteractionEventDetail]
     }
     
-    extension [Self <: MDCChipActionInteractionEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCChipActionInteractionEventDetail] (val x: Self) extends AnyVal {
       
       inline def setActionID(value: String): Self = StObject.set(x, "actionID", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object actionTypesMod {
       __obj.asInstanceOf[MDCChipActionNavigationEventDetail]
     }
     
-    extension [Self <: MDCChipActionNavigationEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCChipActionNavigationEventDetail] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

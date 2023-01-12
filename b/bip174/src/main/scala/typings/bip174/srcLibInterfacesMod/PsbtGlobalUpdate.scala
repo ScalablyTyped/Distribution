@@ -15,7 +15,8 @@ object PsbtGlobalUpdate {
     __obj.asInstanceOf[PsbtGlobalUpdate]
   }
   
-  extension [Self <: PsbtGlobalUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PsbtGlobalUpdate] (val x: Self) extends AnyVal {
     
     inline def setGlobalXpub(value: js.Array[GlobalXpub]): Self = StObject.set(x, "globalXpub", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object SpatialInteractionSourceState {
     __obj.asInstanceOf[SpatialInteractionSourceState]
   }
   
-  extension [Self <: SpatialInteractionSourceState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialInteractionSourceState] (val x: Self) extends AnyVal {
     
     inline def setIsPressed(value: Any): Self = StObject.set(x, "isPressed", value.asInstanceOf[js.Any])
     

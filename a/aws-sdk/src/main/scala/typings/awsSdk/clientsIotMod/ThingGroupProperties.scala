@@ -23,7 +23,8 @@ object ThingGroupProperties {
     __obj.asInstanceOf[ThingGroupProperties]
   }
   
-  extension [Self <: ThingGroupProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThingGroupProperties] (val x: Self) extends AnyVal {
     
     inline def setAttributePayload(value: AttributePayload): Self = StObject.set(x, "attributePayload", value.asInstanceOf[js.Any])
     

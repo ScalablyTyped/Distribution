@@ -37,7 +37,8 @@ object ExpoUpdatesManifest {
     __obj.asInstanceOf[ExpoUpdatesManifest]
   }
   
-  extension [Self <: ExpoUpdatesManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpoUpdatesManifest] (val x: Self) extends AnyVal {
     
     inline def setAssets(value: js.Array[ExpoUpdatesManifestAsset]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     

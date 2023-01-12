@@ -31,7 +31,8 @@ object RequestSettings {
     __obj.asInstanceOf[RequestSettings]
   }
   
-  extension [Self <: RequestSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestSettings] (val x: Self) extends AnyVal {
     
     inline def setMaxCommandCount(value: Double): Self = StObject.set(x, "maxCommandCount", value.asInstanceOf[js.Any])
     

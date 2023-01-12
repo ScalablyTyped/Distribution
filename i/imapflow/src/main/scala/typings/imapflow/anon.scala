@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[AccessToken]
     }
     
-    extension [Self <: AccessToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessToken] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[ChangedSince]
     }
     
-    extension [Self <: ChangedSince](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangedSince] (val x: Self) extends AnyVal {
       
       inline def setChangedSince(value: js.BigInt): Self = StObject.set(x, "changedSince", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Charset]
     }
     
-    extension [Self <: Charset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Charset] (val x: Self) extends AnyVal {
       
       inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
@@ -112,7 +115,8 @@ object anon {
       __obj.asInstanceOf[ChunkSize]
     }
     
-    extension [Self <: ChunkSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChunkSize] (val x: Self) extends AnyVal {
       
       inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       
@@ -156,7 +160,8 @@ object anon {
       __obj.asInstanceOf[HighestModseq]
     }
     
-    extension [Self <: HighestModseq](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HighestModseq] (val x: Self) extends AnyVal {
       
       inline def setHighestModseq(value: Boolean): Self = StObject.set(x, "highestModseq", value.asInstanceOf[js.Any])
       
@@ -183,7 +188,8 @@ object anon {
       __obj.asInstanceOf[ReadOnly_]
     }
     
-    extension [Self <: ReadOnly_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadOnly_] (val x: Self) extends AnyVal {
       
       inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
@@ -202,7 +208,8 @@ object anon {
       __obj.asInstanceOf[Readonly]
     }
     
-    extension [Self <: Readonly](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Readonly] (val x: Self) extends AnyVal {
       
       inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
       
@@ -221,7 +228,8 @@ object anon {
       __obj.asInstanceOf[Uid]
     }
     
-    extension [Self <: Uid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Uid] (val x: Self) extends AnyVal {
       
       inline def setUid(value: Boolean): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       
@@ -244,7 +252,8 @@ object anon {
       __obj.asInstanceOf[UnchangedSince]
     }
     
-    extension [Self <: UnchangedSince](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnchangedSince] (val x: Self) extends AnyVal {
       
       inline def setUid(value: Boolean): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       

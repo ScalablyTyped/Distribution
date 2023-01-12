@@ -22,7 +22,8 @@ object AssertMissingModProviders {
     __obj.asInstanceOf[AssertMissingModProviders]
   }
   
-  extension [Self <: AssertMissingModProviders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssertMissingModProviders] (val x: Self) extends AnyVal {
     
     inline def setAssertMissingModProviders(value: Boolean): Self = StObject.set(x, "assertMissingModProviders", value.asInstanceOf[js.Any])
     

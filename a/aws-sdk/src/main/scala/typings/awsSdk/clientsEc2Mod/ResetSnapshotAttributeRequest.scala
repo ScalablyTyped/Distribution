@@ -28,7 +28,8 @@ object ResetSnapshotAttributeRequest {
     __obj.asInstanceOf[ResetSnapshotAttributeRequest]
   }
   
-  extension [Self <: ResetSnapshotAttributeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetSnapshotAttributeRequest] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: SnapshotAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     

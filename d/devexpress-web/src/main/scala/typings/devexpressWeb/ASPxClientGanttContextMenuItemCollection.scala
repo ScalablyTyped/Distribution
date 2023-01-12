@@ -72,7 +72,8 @@ object ASPxClientGanttContextMenuItemCollection {
     __obj.asInstanceOf[ASPxClientGanttContextMenuItemCollection]
   }
   
-  extension [Self <: ASPxClientGanttContextMenuItemCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGanttContextMenuItemCollection] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: ASPxClientGanttContextMenuItem => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     

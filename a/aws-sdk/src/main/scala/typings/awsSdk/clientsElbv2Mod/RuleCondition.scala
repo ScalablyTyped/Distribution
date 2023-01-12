@@ -53,7 +53,8 @@ object RuleCondition {
     __obj.asInstanceOf[RuleCondition]
   }
   
-  extension [Self <: RuleCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleCondition] (val x: Self) extends AnyVal {
     
     inline def setField(value: ConditionFieldName): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
     

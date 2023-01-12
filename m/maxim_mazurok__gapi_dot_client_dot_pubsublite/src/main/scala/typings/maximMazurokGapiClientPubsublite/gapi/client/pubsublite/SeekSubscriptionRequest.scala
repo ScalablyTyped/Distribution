@@ -22,7 +22,8 @@ object SeekSubscriptionRequest {
     __obj.asInstanceOf[SeekSubscriptionRequest]
   }
   
-  extension [Self <: SeekSubscriptionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeekSubscriptionRequest] (val x: Self) extends AnyVal {
     
     inline def setNamedTarget(value: String): Self = StObject.set(x, "namedTarget", value.asInstanceOf[js.Any])
     

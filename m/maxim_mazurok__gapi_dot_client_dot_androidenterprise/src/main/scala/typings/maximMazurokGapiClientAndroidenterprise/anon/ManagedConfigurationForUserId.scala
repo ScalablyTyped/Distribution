@@ -56,7 +56,8 @@ object ManagedConfigurationForUserId {
     __obj.asInstanceOf[ManagedConfigurationForUserId]
   }
   
-  extension [Self <: ManagedConfigurationForUserId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedConfigurationForUserId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

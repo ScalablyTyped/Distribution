@@ -60,7 +60,8 @@ object PropertyPrototype {
     __obj.asInstanceOf[PropertyPrototype]
   }
   
-  extension [Self <: PropertyPrototype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyPrototype] (val x: Self) extends AnyVal {
     
     inline def setCreditcard(value: Validator): Self = StObject.set(x, "creditcard", value.asInstanceOf[js.Any])
     

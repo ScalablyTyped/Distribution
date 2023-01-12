@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Format[InputComponentProps]]
     }
     
-    extension [Self <: Format[?], InputComponentProps](x: Self & Format[InputComponentProps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format[?], InputComponentProps] (val x: Self & Format[InputComponentProps]) extends AnyVal {
       
       inline def setFormat(value: /* value */ js.UndefOr[String] => FormatFunctionResult): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       

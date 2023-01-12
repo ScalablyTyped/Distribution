@@ -239,7 +239,8 @@ object mod {
       __obj.asInstanceOf[RoxFetcherResult]
     }
     
-    extension [Self <: RoxFetcherResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoxFetcherResult] (val x: Self) extends AnyVal {
       
       inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       
@@ -268,7 +269,8 @@ object mod {
       __obj.asInstanceOf[RoxReporting]
     }
     
-    extension [Self <: RoxReporting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoxReporting] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -315,7 +317,8 @@ object mod {
       __obj.asInstanceOf[RoxSetupOptions]
     }
     
-    extension [Self <: RoxSetupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoxSetupOptions] (val x: Self) extends AnyVal {
       
       inline def setConfigurationFetchedHandler(value: /* fetcherResult */ RoxFetcherResult => Unit): Self = StObject.set(x, "configurationFetchedHandler", js.Any.fromFunction1(value))
       

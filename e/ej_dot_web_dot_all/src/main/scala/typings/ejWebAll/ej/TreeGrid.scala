@@ -912,7 +912,8 @@ object TreeGrid {
       __obj.asInstanceOf[ActionBeginEventArgs]
     }
     
-    extension [Self <: ActionBeginEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionBeginEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -993,7 +994,8 @@ object TreeGrid {
       __obj.asInstanceOf[ActionCompleteEventArgs]
     }
     
-    extension [Self <: ActionCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1054,7 +1056,8 @@ object TreeGrid {
       __obj.asInstanceOf[BeforePrintEventArgs]
     }
     
-    extension [Self <: BeforePrintEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforePrintEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1099,7 +1102,8 @@ object TreeGrid {
       __obj.asInstanceOf[BeginEditEventArgs]
     }
     
-    extension [Self <: BeginEditEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeginEditEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1180,7 +1184,8 @@ object TreeGrid {
       __obj.asInstanceOf[CellSelectedEventArgs]
     }
     
-    extension [Self <: CellSelectedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellSelectedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1269,7 +1274,8 @@ object TreeGrid {
       __obj.asInstanceOf[CellSelectingEventArgs]
     }
     
-    extension [Self <: CellSelectingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellSelectingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1334,7 +1340,8 @@ object TreeGrid {
       __obj.asInstanceOf[CollapsedEventArgs]
     }
     
-    extension [Self <: CollapsedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapsedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1391,7 +1398,8 @@ object TreeGrid {
       __obj.asInstanceOf[CollapsingEventArgs]
     }
     
-    extension [Self <: CollapsingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapsingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1585,7 +1593,8 @@ object TreeGrid {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setAllowCellSelection(value: Boolean): Self = StObject.set(x, "allowCellSelection", value.asInstanceOf[js.Any])
       
@@ -1768,7 +1777,8 @@ object TreeGrid {
       __obj.asInstanceOf[ColumnDragEventArgs]
     }
     
-    extension [Self <: ColumnDragEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnDragEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCanDrop(value: Boolean): Self = StObject.set(x, "canDrop", value.asInstanceOf[js.Any])
       
@@ -1833,7 +1843,8 @@ object TreeGrid {
       __obj.asInstanceOf[ColumnDragStartEventArgs]
     }
     
-    extension [Self <: ColumnDragStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnDragStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1894,7 +1905,8 @@ object TreeGrid {
       __obj.asInstanceOf[ColumnDropEventArgs]
     }
     
-    extension [Self <: ColumnDropEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnDropEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1971,7 +1983,8 @@ object TreeGrid {
       __obj.asInstanceOf[ColumnResizeEndEventArgs]
     }
     
-    extension [Self <: ColumnResizeEndEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnResizeEndEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2025,7 +2038,8 @@ object TreeGrid {
       __obj.asInstanceOf[ColumnResizeSettings]
     }
     
-    extension [Self <: ColumnResizeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnResizeSettings] (val x: Self) extends AnyVal {
       
       inline def setColumnResizeMode(value: ColumnResizeMode | String): Self = StObject.set(x, "columnResizeMode", value.asInstanceOf[js.Any])
       
@@ -2070,7 +2084,8 @@ object TreeGrid {
       __obj.asInstanceOf[ColumnResizeStartEventArgs]
     }
     
-    extension [Self <: ColumnResizeStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnResizeStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2139,7 +2154,8 @@ object TreeGrid {
       __obj.asInstanceOf[ColumnResizedEventArgs]
     }
     
-    extension [Self <: ColumnResizedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnResizedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2188,7 +2204,8 @@ object TreeGrid {
       __obj.asInstanceOf[ColumnsCommand]
     }
     
-    extension [Self <: ColumnsCommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnsCommand] (val x: Self) extends AnyVal {
       
       inline def setButtonOptions(value: Any): Self = StObject.set(x, "buttonOptions", value.asInstanceOf[js.Any])
       
@@ -2229,7 +2246,8 @@ object TreeGrid {
       __obj.asInstanceOf[ContextMenuOpenEventArgs]
     }
     
-    extension [Self <: ContextMenuOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2274,7 +2292,8 @@ object TreeGrid {
       __obj.asInstanceOf[ContextMenuSettings]
     }
     
-    extension [Self <: ContextMenuSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuSettings] (val x: Self) extends AnyVal {
       
       inline def setContextMenuItems(value: js.Array[ContextMenuItems | String]): Self = StObject.set(x, "contextMenuItems", value.asInstanceOf[js.Any])
       
@@ -2309,7 +2328,8 @@ object TreeGrid {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2358,7 +2378,8 @@ object TreeGrid {
       __obj.asInstanceOf[DetailsDataBoundEventArgs]
     }
     
-    extension [Self <: DetailsDataBoundEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailsDataBoundEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2411,7 +2432,8 @@ object TreeGrid {
       __obj.asInstanceOf[DetailsHiddenEventArgs]
     }
     
-    extension [Self <: DetailsHiddenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailsHiddenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2464,7 +2486,8 @@ object TreeGrid {
       __obj.asInstanceOf[DetailsShownEventArgs]
     }
     
-    extension [Self <: DetailsShownEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailsShownEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2516,7 +2539,8 @@ object TreeGrid {
       __obj.asInstanceOf[DragTooltip]
     }
     
-    extension [Self <: DragTooltip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragTooltip] (val x: Self) extends AnyVal {
       
       inline def setShowTooltip(value: Boolean): Self = StObject.set(x, "showTooltip", value.asInstanceOf[js.Any])
       
@@ -2587,7 +2611,8 @@ object TreeGrid {
       __obj.asInstanceOf[EditSettings]
     }
     
-    extension [Self <: EditSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowAdding(value: Boolean): Self = StObject.set(x, "allowAdding", value.asInstanceOf[js.Any])
       
@@ -2641,7 +2666,8 @@ object TreeGrid {
       __obj.asInstanceOf[EditSettingsBatchEditSettings]
     }
     
-    extension [Self <: EditSettingsBatchEditSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditSettingsBatchEditSettings] (val x: Self) extends AnyVal {
       
       inline def setEditMode(value: BatchEditMode | String): Self = StObject.set(x, "editMode", value.asInstanceOf[js.Any])
       
@@ -2674,7 +2700,8 @@ object TreeGrid {
       __obj.asInstanceOf[EjPredicate]
     }
     
-    extension [Self <: EjPredicate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EjPredicate] (val x: Self) extends AnyVal {
       
       inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
       
@@ -2727,7 +2754,8 @@ object TreeGrid {
       __obj.asInstanceOf[EndEditEventArgs]
     }
     
-    extension [Self <: EndEditEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndEditEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2788,7 +2816,8 @@ object TreeGrid {
       __obj.asInstanceOf[ExpandedEventArgs]
     }
     
-    extension [Self <: ExpandedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpandedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2845,7 +2874,8 @@ object TreeGrid {
       __obj.asInstanceOf[ExpandingEventArgs]
     }
     
-    extension [Self <: ExpandingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpandingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2913,7 +2943,8 @@ object TreeGrid {
       __obj.asInstanceOf[FilterSettings]
     }
     
-    extension [Self <: FilterSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterSettings] (val x: Self) extends AnyVal {
       
       inline def setEnableCaseSensitivity(value: Boolean): Self = StObject.set(x, "enableCaseSensitivity", value.asInstanceOf[js.Any])
       
@@ -2972,7 +3003,8 @@ object TreeGrid {
       __obj.asInstanceOf[FilterSettingsFilteredColumn]
     }
     
-    extension [Self <: FilterSettingsFilteredColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterSettingsFilteredColumn] (val x: Self) extends AnyVal {
       
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -3013,7 +3045,8 @@ object TreeGrid {
       __obj.asInstanceOf[LoadEventArgs]
     }
     
-    extension [Self <: LoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3471,7 +3504,8 @@ object TreeGrid {
       __obj.asInstanceOf[typings.ejWebAll.ej.TreeGrid.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.TreeGrid.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.TreeGrid.Model] (val x: Self) extends AnyVal {
       
       inline def setActionBegin(value: /* e */ ActionBeginEventArgs => Unit): Self = StObject.set(x, "actionBegin", js.Any.fromFunction1(value))
       
@@ -3919,7 +3953,8 @@ object TreeGrid {
       __obj.asInstanceOf[PageSettings]
     }
     
-    extension [Self <: PageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageSettings] (val x: Self) extends AnyVal {
       
       inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
       
@@ -3980,7 +4015,8 @@ object TreeGrid {
       __obj.asInstanceOf[QueryCellInfoEventArgs]
     }
     
-    extension [Self <: QueryCellInfoEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryCellInfoEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4041,7 +4077,8 @@ object TreeGrid {
       __obj.asInstanceOf[RecordClickEventArgs]
     }
     
-    extension [Self <: RecordClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4110,7 +4147,8 @@ object TreeGrid {
       __obj.asInstanceOf[RecordDoubleClickEventArgs]
     }
     
-    extension [Self <: RecordDoubleClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordDoubleClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4163,7 +4201,8 @@ object TreeGrid {
       __obj.asInstanceOf[RowDataBoundEventArgs]
     }
     
-    extension [Self <: RowDataBoundEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDataBoundEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4228,7 +4267,8 @@ object TreeGrid {
       __obj.asInstanceOf[RowDragEventArgs]
     }
     
-    extension [Self <: RowDragEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDragEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCanDrop(value: Boolean): Self = StObject.set(x, "canDrop", value.asInstanceOf[js.Any])
       
@@ -4305,7 +4345,8 @@ object TreeGrid {
       __obj.asInstanceOf[RowDragStartEventArgs]
     }
     
-    extension [Self <: RowDragStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDragStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4374,7 +4415,8 @@ object TreeGrid {
       __obj.asInstanceOf[RowDragStopEventArgs]
     }
     
-    extension [Self <: RowDragStopEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDragStopEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4455,7 +4497,8 @@ object TreeGrid {
       __obj.asInstanceOf[RowDropActionBeginEventArgs]
     }
     
-    extension [Self <: RowDropActionBeginEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDropActionBeginEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4526,7 +4569,8 @@ object TreeGrid {
       __obj.asInstanceOf[RowSelectedEventArgs]
     }
     
-    extension [Self <: RowSelectedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowSelectedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4587,7 +4631,8 @@ object TreeGrid {
       __obj.asInstanceOf[RowSelectingEventArgs]
     }
     
-    extension [Self <: RowSelectingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowSelectingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4652,7 +4697,8 @@ object TreeGrid {
       __obj.asInstanceOf[SearchSettings]
     }
     
-    extension [Self <: SearchSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchSettings] (val x: Self) extends AnyVal {
       
       inline def setFields(value: js.Array[Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -4695,7 +4741,8 @@ object TreeGrid {
       __obj.asInstanceOf[SelectedCellIndex]
     }
     
-    extension [Self <: SelectedCellIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectedCellIndex] (val x: Self) extends AnyVal {
       
       inline def setCellIndex(value: Double): Self = StObject.set(x, "cellIndex", value.asInstanceOf[js.Any])
       
@@ -4736,7 +4783,8 @@ object TreeGrid {
       __obj.asInstanceOf[SelectionSettings]
     }
     
-    extension [Self <: SelectionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionSettings] (val x: Self) extends AnyVal {
       
       inline def setEnableHierarchySelection(value: Boolean): Self = StObject.set(x, "enableHierarchySelection", value.asInstanceOf[js.Any])
       
@@ -4775,7 +4823,8 @@ object TreeGrid {
       __obj.asInstanceOf[SizeSettings]
     }
     
-    extension [Self <: SizeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeSettings] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -4801,7 +4850,8 @@ object TreeGrid {
       __obj.asInstanceOf[SortSettings]
     }
     
-    extension [Self <: SortSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortSettings] (val x: Self) extends AnyVal {
       
       inline def setSortedColumns(value: js.Array[SortSettingsSortedColumn]): Self = StObject.set(x, "sortedColumns", value.asInstanceOf[js.Any])
       
@@ -4828,7 +4878,8 @@ object TreeGrid {
       __obj.asInstanceOf[SortSettingsSortedColumn]
     }
     
-    extension [Self <: SortSettingsSortedColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortSettingsSortedColumn] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -4854,7 +4905,8 @@ object TreeGrid {
       __obj.asInstanceOf[StackedHeaderRow]
     }
     
-    extension [Self <: StackedHeaderRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackedHeaderRow] (val x: Self) extends AnyVal {
       
       inline def setStackedHeaderColumns(value: js.Array[StackedHeaderRowsStackedHeaderColumn]): Self = StObject.set(x, "stackedHeaderColumns", value.asInstanceOf[js.Any])
       
@@ -4898,7 +4950,8 @@ object TreeGrid {
       __obj.asInstanceOf[StackedHeaderRowsStackedHeaderColumn]
     }
     
-    extension [Self <: StackedHeaderRowsStackedHeaderColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackedHeaderRowsStackedHeaderColumn] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -4939,7 +4992,8 @@ object TreeGrid {
       __obj.asInstanceOf[SummaryRow]
     }
     
-    extension [Self <: SummaryRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SummaryRow] (val x: Self) extends AnyVal {
       
       inline def setSummaryColumns(value: js.Array[SummaryRowsSummaryColumn]): Self = StObject.set(x, "summaryColumns", value.asInstanceOf[js.Any])
       
@@ -4990,7 +5044,8 @@ object TreeGrid {
       __obj.asInstanceOf[SummaryRowsSummaryColumn]
     }
     
-    extension [Self <: SummaryRowsSummaryColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SummaryRowsSummaryColumn] (val x: Self) extends AnyVal {
       
       inline def setCustomSummaryValue(value: String): Self = StObject.set(x, "customSummaryValue", value.asInstanceOf[js.Any])
       
@@ -5051,7 +5106,8 @@ object TreeGrid {
       __obj.asInstanceOf[ToolbarClickEventArgs]
     }
     
-    extension [Self <: ToolbarClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -5098,7 +5154,8 @@ object TreeGrid {
       __obj.asInstanceOf[ToolbarSettings]
     }
     
-    extension [Self <: ToolbarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarSettings] (val x: Self) extends AnyVal {
       
       inline def setCustomToolbarItems(value: js.Array[ToolbarSettingsCustomToolbarItem]): Self = StObject.set(x, "customToolbarItems", value.asInstanceOf[js.Any])
       
@@ -5139,7 +5196,8 @@ object TreeGrid {
       __obj.asInstanceOf[ToolbarSettingsCustomToolbarItem]
     }
     
-    extension [Self <: ToolbarSettingsCustomToolbarItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarSettingsCustomToolbarItem] (val x: Self) extends AnyVal {
       
       inline def setTemplateID(value: String): Self = StObject.set(x, "templateID", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object SecurityRealm {
     __obj.asInstanceOf[SecurityRealm]
   }
   
-  extension [Self <: SecurityRealm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityRealm] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

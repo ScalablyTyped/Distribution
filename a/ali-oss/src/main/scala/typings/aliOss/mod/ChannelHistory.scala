@@ -20,7 +20,8 @@ object ChannelHistory {
     __obj.asInstanceOf[ChannelHistory]
   }
   
-  extension [Self <: ChannelHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelHistory] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: String): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     

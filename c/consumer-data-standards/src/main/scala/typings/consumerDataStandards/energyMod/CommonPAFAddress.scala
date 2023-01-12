@@ -126,7 +126,8 @@ object CommonPAFAddress {
     __obj.asInstanceOf[CommonPAFAddress]
   }
   
-  extension [Self <: CommonPAFAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonPAFAddress] (val x: Self) extends AnyVal {
     
     inline def setBuildingName1(value: String): Self = StObject.set(x, "buildingName1", value.asInstanceOf[js.Any])
     

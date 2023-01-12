@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[IMSIBreakdown]
     }
     
-    extension [Self <: IMSIBreakdown](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMSIBreakdown] (val x: Self) extends AnyVal {
       
       inline def setCountry_code(value: String): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
       

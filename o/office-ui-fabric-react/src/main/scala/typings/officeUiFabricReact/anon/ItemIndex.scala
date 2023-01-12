@@ -15,7 +15,8 @@ object ItemIndex {
     __obj.asInstanceOf[ItemIndex]
   }
   
-  extension [Self <: ItemIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemIndex] (val x: Self) extends AnyVal {
     
     inline def setItemIndex(value: Double): Self = StObject.set(x, "itemIndex", value.asInstanceOf[js.Any])
   }

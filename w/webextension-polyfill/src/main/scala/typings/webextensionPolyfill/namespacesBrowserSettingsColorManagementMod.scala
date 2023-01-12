@@ -34,7 +34,8 @@ object namespacesBrowserSettingsColorManagementMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setMode(value: Setting): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         

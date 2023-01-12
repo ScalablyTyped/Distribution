@@ -28,7 +28,8 @@ object GenerateEmbedUrlForAnonymousUserResponse {
     __obj.asInstanceOf[GenerateEmbedUrlForAnonymousUserResponse]
   }
   
-  extension [Self <: GenerateEmbedUrlForAnonymousUserResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateEmbedUrlForAnonymousUserResponse] (val x: Self) extends AnyVal {
     
     inline def setEmbedUrl(value: EmbeddingUrl): Self = StObject.set(x, "EmbedUrl", value.asInstanceOf[js.Any])
     

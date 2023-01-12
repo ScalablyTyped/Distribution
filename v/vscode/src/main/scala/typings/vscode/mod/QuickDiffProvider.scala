@@ -22,7 +22,8 @@ object QuickDiffProvider {
     __obj.asInstanceOf[QuickDiffProvider]
   }
   
-  extension [Self <: QuickDiffProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuickDiffProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideOriginalResource(value: (/* uri */ Uri, /* token */ CancellationToken) => ProviderResult[Uri]): Self = StObject.set(x, "provideOriginalResource", js.Any.fromFunction2(value))
     

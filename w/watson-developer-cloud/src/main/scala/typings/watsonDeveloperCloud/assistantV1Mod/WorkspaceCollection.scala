@@ -20,7 +20,8 @@ object WorkspaceCollection {
     __obj.asInstanceOf[WorkspaceCollection]
   }
   
-  extension [Self <: WorkspaceCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceCollection] (val x: Self) extends AnyVal {
     
     inline def setPagination(value: Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     

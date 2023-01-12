@@ -248,7 +248,8 @@ object DragStateeventEventTypesd {
     __obj.asInstanceOf[DragStateeventEventTypesd]
   }
   
-  extension [Self <: DragStateeventEventTypesd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragStateeventEventTypesd] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

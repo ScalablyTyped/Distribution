@@ -29,7 +29,8 @@ object GroupItemHistory {
     __obj.asInstanceOf[GroupItemHistory]
   }
   
-  extension [Self <: GroupItemHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupItemHistory] (val x: Self) extends AnyVal {
     
     inline def setActor(value: Any): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

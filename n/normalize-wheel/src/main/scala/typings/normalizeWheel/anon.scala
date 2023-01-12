@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[PixelX]
     }
     
-    extension [Self <: PixelX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PixelX] (val x: Self) extends AnyVal {
       
       inline def setPixelX(value: Double): Self = StObject.set(x, "pixelX", value.asInstanceOf[js.Any])
       

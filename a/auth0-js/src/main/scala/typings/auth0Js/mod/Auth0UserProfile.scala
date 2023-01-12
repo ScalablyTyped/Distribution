@@ -59,7 +59,8 @@ object Auth0UserProfile {
     __obj.asInstanceOf[Auth0UserProfile]
   }
   
-  extension [Self <: Auth0UserProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auth0UserProfile] (val x: Self) extends AnyVal {
     
     inline def setApp_metadata(value: Any): Self = StObject.set(x, "app_metadata", value.asInstanceOf[js.Any])
     

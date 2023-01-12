@@ -1527,7 +1527,8 @@ object sapUiUx3ToolPopupMod {
       __obj.asInstanceOf[ToolPopupSettings]
     }
     
-    extension [Self <: ToolPopupSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolPopupSettings] (val x: Self) extends AnyVal {
       
       inline def setAutoClose(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object IDataRecord {
     __obj.asInstanceOf[IDataRecord]
   }
   
-  extension [Self <: IDataRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataRecord] (val x: Self) extends AnyVal {
     
     inline def setQValues(value: js.Array[String]): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ViewportWidget {
     __obj.asInstanceOf[ViewportWidget]
   }
   
-  extension [Self <: ViewportWidget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewportWidget] (val x: Self) extends AnyVal {
     
     inline def setType(value: viewport): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

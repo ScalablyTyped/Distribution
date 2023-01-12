@@ -83,7 +83,8 @@ object distUtilsActionsMod {
       __obj.asInstanceOf[RefreshTokenAction]
     }
     
-    extension [Self <: RefreshTokenAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshTokenAction] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: RefreshTokenActionPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object distUtilsActionsMod {
       __obj.asInstanceOf[RefreshTokenActionPayload]
     }
     
-    extension [Self <: RefreshTokenActionPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshTokenActionPayload] (val x: Self) extends AnyVal {
       
       inline def setNewAuthToken(value: String): Self = StObject.set(x, "newAuthToken", value.asInstanceOf[js.Any])
       
@@ -158,7 +160,8 @@ object distUtilsActionsMod {
       __obj.asInstanceOf[SignInAction]
     }
     
-    extension [Self <: SignInAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignInAction] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: SignInActionPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -181,7 +184,8 @@ object distUtilsActionsMod {
       __obj.asInstanceOf[SignInActionPayload]
     }
     
-    extension [Self <: SignInActionPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignInActionPayload] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: ExpiresAt): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -209,7 +213,8 @@ object distUtilsActionsMod {
       __obj.asInstanceOf[SignOutAction]
     }
     
-    extension [Self <: SignOutAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignOutAction] (val x: Self) extends AnyVal {
       
       inline def setType(value: SignOut): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

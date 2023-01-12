@@ -29,7 +29,8 @@ object LightmapMode {
     __obj.asInstanceOf[LightmapMode]
   }
   
-  extension [Self <: LightmapMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LightmapMode] (val x: Self) extends AnyVal {
     
     inline def setLightmapMode(value: Boolean): Self = StObject.set(x, "lightmapMode", value.asInstanceOf[js.Any])
     

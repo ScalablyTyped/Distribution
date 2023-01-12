@@ -29,7 +29,8 @@ object IngestGeoIpStatsGeoIpDownloadStatistics {
     __obj.asInstanceOf[IngestGeoIpStatsGeoIpDownloadStatistics]
   }
   
-  extension [Self <: IngestGeoIpStatsGeoIpDownloadStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestGeoIpStatsGeoIpDownloadStatistics] (val x: Self) extends AnyVal {
     
     inline def setDatabase_count(value: integer): Self = StObject.set(x, "database_count", value.asInstanceOf[js.Any])
     

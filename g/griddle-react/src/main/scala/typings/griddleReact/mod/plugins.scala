@@ -60,7 +60,8 @@ object plugins {
       __obj.asInstanceOf[PositionSettings]
     }
     
-    extension [Self <: PositionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositionSettings] (val x: Self) extends AnyVal {
       
       inline def setDefaultColumnWidth(value: Double | String): Self = StObject.set(x, "defaultColumnWidth", value.asInstanceOf[js.Any])
       

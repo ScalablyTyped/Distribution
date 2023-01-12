@@ -241,7 +241,8 @@ object CommonRouteProperties {
     __obj.asInstanceOf[CommonRouteProperties[Refs]]
   }
   
-  extension [Self <: CommonRouteProperties[?], Refs /* <: ReqRef */](x: Self & CommonRouteProperties[Refs]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonRouteProperties[?], Refs /* <: ReqRef */] (val x: Self & CommonRouteProperties[Refs]) extends AnyVal {
     
     inline def setApp(value: RouteOptionsApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

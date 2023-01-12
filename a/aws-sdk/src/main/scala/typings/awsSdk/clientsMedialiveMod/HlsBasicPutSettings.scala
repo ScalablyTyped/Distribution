@@ -33,7 +33,8 @@ object HlsBasicPutSettings {
     __obj.asInstanceOf[HlsBasicPutSettings]
   }
   
-  extension [Self <: HlsBasicPutSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsBasicPutSettings] (val x: Self) extends AnyVal {
     
     inline def setConnectionRetryInterval(value: integerMin0): Self = StObject.set(x, "ConnectionRetryInterval", value.asInstanceOf[js.Any])
     

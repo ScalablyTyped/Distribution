@@ -56,7 +56,8 @@ object scrolltopScrolltopMod {
       __obj.asInstanceOf[ScrollTopProps]
     }
     
-    extension [Self <: ScrollTopProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollTopProps] (val x: Self) extends AnyVal {
       
       inline def setBehavior(value: ScrollTopScrollBehavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       

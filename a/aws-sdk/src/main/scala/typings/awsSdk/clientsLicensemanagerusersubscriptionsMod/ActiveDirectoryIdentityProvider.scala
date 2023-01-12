@@ -18,7 +18,8 @@ object ActiveDirectoryIdentityProvider {
     __obj.asInstanceOf[ActiveDirectoryIdentityProvider]
   }
   
-  extension [Self <: ActiveDirectoryIdentityProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveDirectoryIdentityProvider] (val x: Self) extends AnyVal {
     
     inline def setDirectoryId(value: String): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     

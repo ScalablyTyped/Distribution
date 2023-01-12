@@ -18,7 +18,8 @@ object DeleteSourceCredentialsInput {
     __obj.asInstanceOf[DeleteSourceCredentialsInput]
   }
   
-  extension [Self <: DeleteSourceCredentialsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSourceCredentialsInput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }

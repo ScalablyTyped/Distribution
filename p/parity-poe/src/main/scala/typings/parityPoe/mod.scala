@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[POEMessage]
     }
     
-    extension [Self <: POEMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: POEMessage] (val x: Self) extends AnyVal {
       
       inline def setCanceledQuantity(value: Double): Self = StObject.set(x, "canceledQuantity", value.asInstanceOf[js.Any])
       

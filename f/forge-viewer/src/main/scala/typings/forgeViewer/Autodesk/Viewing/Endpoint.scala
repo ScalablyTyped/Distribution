@@ -38,7 +38,8 @@ object Endpoint {
     __obj.asInstanceOf[Endpoint]
   }
   
-  extension [Self <: Endpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
     
     inline def setENDPOINT_API_D3S(value: String): Self = StObject.set(x, "ENDPOINT_API_D3S", value.asInstanceOf[js.Any])
     

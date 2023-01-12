@@ -22,7 +22,8 @@ object PlayerStats {
     __obj.asInstanceOf[PlayerStats]
   }
   
-  extension [Self <: PlayerStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerStats] (val x: Self) extends AnyVal {
     
     inline def setAchievements(value: Record[String, Any]): Self = StObject.set(x, "achievements", value.asInstanceOf[js.Any])
     

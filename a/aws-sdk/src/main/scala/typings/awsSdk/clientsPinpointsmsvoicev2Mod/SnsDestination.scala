@@ -18,7 +18,8 @@ object SnsDestination {
     __obj.asInstanceOf[SnsDestination]
   }
   
-  extension [Self <: SnsDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnsDestination] (val x: Self) extends AnyVal {
     
     inline def setTopicArn(value: SnsTopicArn): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
   }

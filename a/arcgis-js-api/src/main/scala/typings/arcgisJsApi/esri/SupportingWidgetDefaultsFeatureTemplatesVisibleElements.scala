@@ -20,7 +20,8 @@ object SupportingWidgetDefaultsFeatureTemplatesVisibleElements {
     __obj.asInstanceOf[SupportingWidgetDefaultsFeatureTemplatesVisibleElements]
   }
   
-  extension [Self <: SupportingWidgetDefaultsFeatureTemplatesVisibleElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportingWidgetDefaultsFeatureTemplatesVisibleElements] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: Boolean): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

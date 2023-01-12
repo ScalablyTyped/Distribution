@@ -24,7 +24,8 @@ object MjmlCarouselImageProps {
     __obj.asInstanceOf[MjmlCarouselImageProps]
   }
   
-  extension [Self <: MjmlCarouselImageProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MjmlCarouselImageProps] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

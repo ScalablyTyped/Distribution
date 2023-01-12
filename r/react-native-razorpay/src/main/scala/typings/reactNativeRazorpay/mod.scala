@@ -96,7 +96,8 @@ object mod {
       __obj.asInstanceOf[CheckoutOptions]
     }
     
-    extension [Self <: CheckoutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckoutOptions] (val x: Self) extends AnyVal {
       
       inline def setAllow_rotation(value: Boolean): Self = StObject.set(x, "allow_rotation", value.asInstanceOf[js.Any])
       
@@ -211,7 +212,8 @@ object mod {
       __obj.asInstanceOf[ErrorResponse]
     }
     
-    extension [Self <: ErrorResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorResponse] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -253,7 +255,8 @@ object mod {
       __obj.asInstanceOf[SuccessResponse]
     }
     
-    extension [Self <: SuccessResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuccessResponse] (val x: Self) extends AnyVal {
       
       inline def setRazorpay_order_id(value: String): Self = StObject.set(x, "razorpay_order_id", value.asInstanceOf[js.Any])
       

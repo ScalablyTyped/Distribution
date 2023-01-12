@@ -111,7 +111,8 @@ object SystemInfoWifiNetwork {
     __obj.asInstanceOf[SystemInfoWifiNetwork]
   }
   
-  extension [Self <: SystemInfoWifiNetwork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoWifiNetwork] (val x: Self) extends AnyVal {
     
     inline def setDns(value: String): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
     

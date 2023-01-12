@@ -197,7 +197,8 @@ object mod {
       __obj.asInstanceOf[Component]
     }
     
-    extension [Self <: Component](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
       
       inline def setOnCreate(value: /* model */ Model => Any): Self = StObject.set(x, "onCreate", js.Any.fromFunction1(value))
       
@@ -236,7 +237,8 @@ object mod {
       __obj.asInstanceOf[Model]
     }
     
-    extension [Self <: Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Model] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -281,7 +283,8 @@ object mod {
       __obj.asInstanceOf[VirtualElement]
     }
     
-    extension [Self <: VirtualElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualElement] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

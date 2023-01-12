@@ -39,7 +39,8 @@ object Leaderindex {
     __obj.asInstanceOf[Leaderindex]
   }
   
-  extension [Self <: Leaderindex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Leaderindex] (val x: Self) extends AnyVal {
     
     inline def setLeader_index(value: IndexName): Self = StObject.set(x, "leader_index", value.asInstanceOf[js.Any])
     

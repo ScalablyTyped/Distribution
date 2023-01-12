@@ -41,7 +41,8 @@ object WidgetCommonProperties {
     __obj.asInstanceOf[WidgetCommonProperties]
   }
   
-  extension [Self <: WidgetCommonProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WidgetCommonProperties] (val x: Self) extends AnyVal {
     
     inline def setDefaultElement(value: String): Self = StObject.set(x, "defaultElement", value.asInstanceOf[js.Any])
     

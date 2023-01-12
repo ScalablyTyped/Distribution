@@ -31,7 +31,8 @@ object SpreadsheetSheetRowCellValidation {
     __obj.asInstanceOf[SpreadsheetSheetRowCellValidation]
   }
   
-  extension [Self <: SpreadsheetSheetRowCellValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetSheetRowCellValidation] (val x: Self) extends AnyVal {
     
     inline def setAllowNulls(value: Boolean): Self = StObject.set(x, "allowNulls", value.asInstanceOf[js.Any])
     

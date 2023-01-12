@@ -17,7 +17,8 @@ object AnnotationsMeasureTypeLabelStyleOptions {
     __obj.asInstanceOf[AnnotationsMeasureTypeLabelStyleOptions]
   }
   
-  extension [Self <: AnnotationsMeasureTypeLabelStyleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsMeasureTypeLabelStyleOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

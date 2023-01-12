@@ -50,7 +50,8 @@ object Topology {
       __obj.asInstanceOf[OClusterConfig]
     }
     
-    extension [Self <: OClusterConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OClusterConfig] (val x: Self) extends AnyVal {
       
       inline def setSelectionStrategy(value: typings.orientjs.mod.Topology.OCluster => OServerNode): Self = StObject.set(x, "selectionStrategy", js.Any.fromFunction1(value))
     }

@@ -18,7 +18,8 @@ object ManifestService {
     __obj.asInstanceOf[ManifestService]
   }
   
-  extension [Self <: ManifestService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestService] (val x: Self) extends AnyVal {
     
     inline def set$(value: ManifestServiceAttributes): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
     

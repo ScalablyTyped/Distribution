@@ -23,7 +23,8 @@ object badgeTypesMod {
       __obj.asInstanceOf[BadgeOverrides]
     }
     
-    extension [Self <: BadgeOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgeOverrides] (val x: Self) extends AnyVal {
       
       inline def setBadge(value: Override[Any]): Self = StObject.set(x, "Badge", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object badgeTypesMod {
       __obj.asInstanceOf[BadgeProps]
     }
     
-    extension [Self <: BadgeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgeProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -148,7 +150,8 @@ object badgeTypesMod {
       __obj.asInstanceOf[HintDotProps]
     }
     
-    extension [Self <: HintDotProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HintDotProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -201,7 +204,8 @@ object badgeTypesMod {
       __obj.asInstanceOf[NotificationCircleProps]
     }
     
-    extension [Self <: NotificationCircleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationCircleProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

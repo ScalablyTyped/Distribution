@@ -47,7 +47,8 @@ object NetworkInfo {
     __obj.asInstanceOf[NetworkInfo]
   }
   
-  extension [Self <: NetworkInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkInfo] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: Any): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
     

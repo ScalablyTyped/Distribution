@@ -37,7 +37,8 @@ object XRestoreListener {
     __obj.asInstanceOf[XRestoreListener]
   }
   
-  extension [Self <: XRestoreListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRestoreListener] (val x: Self) extends AnyVal {
     
     inline def setRestored(value: EventObject => Unit): Self = StObject.set(x, "restored", js.Any.fromFunction1(value))
   }

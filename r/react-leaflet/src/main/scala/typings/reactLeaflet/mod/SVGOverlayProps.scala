@@ -26,7 +26,8 @@ object SVGOverlayProps {
     __obj.asInstanceOf[SVGOverlayProps]
   }
   
-  extension [Self <: SVGOverlayProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGOverlayProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Children): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

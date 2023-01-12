@@ -49,7 +49,8 @@ object WeakValidationMapCardProp {
     __obj.asInstanceOf[WeakValidationMapCardProp]
   }
   
-  extension [Self <: WeakValidationMapCardProp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapCardProp] (val x: Self) extends AnyVal {
     
     inline def setContainerStyle(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined ? react.react.Validator<react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined | null | undefined> : undefined extends react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined ? react.react.Validator<react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined | null | undefined> : react.react.Validator<react-native.react-native.StyleProp<react-native.react-native.ViewStyle> | undefined> */ js.Any

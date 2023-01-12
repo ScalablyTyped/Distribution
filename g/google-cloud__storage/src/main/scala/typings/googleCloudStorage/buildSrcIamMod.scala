@@ -97,7 +97,8 @@ object buildSrcIamMod {
       __obj.asInstanceOf[Expr]
     }
     
-    extension [Self <: Expr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expr] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object buildSrcIamMod {
       __obj.asInstanceOf[GetPolicyOptions]
     }
     
-    extension [Self <: GetPolicyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetPolicyOptions] (val x: Self) extends AnyVal {
       
       inline def setRequestedPolicyVersion(value: Double): Self = StObject.set(x, "requestedPolicyVersion", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object buildSrcIamMod {
       __obj.asInstanceOf[Policy]
     }
     
-    extension [Self <: Policy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Policy] (val x: Self) extends AnyVal {
       
       inline def setBindings(value: js.Array[PolicyBinding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
       
@@ -191,7 +194,8 @@ object buildSrcIamMod {
       __obj.asInstanceOf[PolicyBinding]
     }
     
-    extension [Self <: PolicyBinding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolicyBinding] (val x: Self) extends AnyVal {
       
       inline def setCondition(value: Expr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
       
@@ -223,7 +227,8 @@ object buildSrcIamMod {
       __obj.asInstanceOf[SetPolicyOptions]
     }
     
-    extension [Self <: SetPolicyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetPolicyOptions] (val x: Self) extends AnyVal {
       
       inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
@@ -251,7 +256,8 @@ object buildSrcIamMod {
       __obj.asInstanceOf[TestIamPermissionsOptions]
     }
     
-    extension [Self <: TestIamPermissionsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestIamPermissionsOptions] (val x: Self) extends AnyVal {
       
       inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       

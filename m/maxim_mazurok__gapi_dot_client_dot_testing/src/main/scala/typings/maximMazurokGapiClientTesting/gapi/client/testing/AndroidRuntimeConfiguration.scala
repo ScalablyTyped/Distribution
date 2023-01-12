@@ -19,7 +19,8 @@ object AndroidRuntimeConfiguration {
     __obj.asInstanceOf[AndroidRuntimeConfiguration]
   }
   
-  extension [Self <: AndroidRuntimeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidRuntimeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLocales(value: js.Array[Locale]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
     

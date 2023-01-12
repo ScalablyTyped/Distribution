@@ -16,7 +16,8 @@ object ResultDebugInfo {
     __obj.asInstanceOf[ResultDebugInfo]
   }
   
-  extension [Self <: ResultDebugInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultDebugInfo] (val x: Self) extends AnyVal {
     
     inline def setFormattedDebugInfo(value: String): Self = StObject.set(x, "formattedDebugInfo", value.asInstanceOf[js.Any])
     

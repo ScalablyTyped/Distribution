@@ -1048,7 +1048,8 @@ object sapUiCommonsListBoxMod {
       __obj.asInstanceOf[ListBoxSettings]
     }
     
-    extension [Self <: ListBoxSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBoxSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowMultiSelect(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "allowMultiSelect", value.asInstanceOf[js.Any])
       

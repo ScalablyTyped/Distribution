@@ -30,7 +30,8 @@ object filteringSelectSourceMod {
       __obj.asInstanceOf[SelectSource]
     }
     
-    extension [Self <: SelectSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectSource] (val x: Self) extends AnyVal {
       
       inline def `setData-class`(value: String): Self = StObject.set(x, "data-class", value.asInstanceOf[js.Any])
       

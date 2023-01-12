@@ -18,7 +18,8 @@ object NotificationTargetItem {
     __obj.asInstanceOf[NotificationTargetItem]
   }
   
-  extension [Self <: NotificationTargetItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationTargetItem] (val x: Self) extends AnyVal {
     
     inline def setSnsTopicArn(value: Arn): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
     

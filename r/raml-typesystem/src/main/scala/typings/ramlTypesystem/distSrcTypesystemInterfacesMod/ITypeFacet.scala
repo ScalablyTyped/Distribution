@@ -66,7 +66,8 @@ object ITypeFacet {
     __obj.asInstanceOf[ITypeFacet]
   }
   
-  extension [Self <: ITypeFacet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITypeFacet] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: () => js.Array[IAnnotation]): Self = StObject.set(x, "annotations", js.Any.fromFunction0(value))
     

@@ -34,7 +34,8 @@ object RailRouteOptions {
     __obj.asInstanceOf[RailRouteOptions]
   }
   
-  extension [Self <: RailRouteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RailRouteOptions] (val x: Self) extends AnyVal {
     
     inline def setAmtrakRoutes(value: Boolean): Self = StObject.set(x, "amtrakRoutes", value.asInstanceOf[js.Any])
     

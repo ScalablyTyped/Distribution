@@ -19,7 +19,8 @@ object SubMethods {
     __obj.asInstanceOf[SubMethods]
   }
   
-  extension [Self <: SubMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubMethods] (val x: Self) extends AnyVal {
     
     inline def setPlan(value: SubMethod): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     

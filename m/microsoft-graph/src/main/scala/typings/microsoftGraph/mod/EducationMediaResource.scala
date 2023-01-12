@@ -18,7 +18,8 @@ object EducationMediaResource {
     __obj.asInstanceOf[EducationMediaResource]
   }
   
-  extension [Self <: EducationMediaResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationMediaResource] (val x: Self) extends AnyVal {
     
     inline def setFileUrl(value: NullableOption[String]): Self = StObject.set(x, "fileUrl", value.asInstanceOf[js.Any])
     

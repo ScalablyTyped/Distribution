@@ -17,7 +17,8 @@ object IndicesMigrateToDataStreamRequest {
     __obj.asInstanceOf[IndicesMigrateToDataStreamRequest]
   }
   
-  extension [Self <: IndicesMigrateToDataStreamRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesMigrateToDataStreamRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: IndexName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

@@ -84,7 +84,8 @@ object Module {
     __obj.asInstanceOf[Module]
   }
   
-  extension [Self <: Module](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
     
     inline def setBase(value: NativePointer): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

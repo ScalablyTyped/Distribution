@@ -62,7 +62,8 @@ object libTypescriptComponentsTextInputHelpersMod {
       __obj.asInstanceOf[AdjProps]
     }
     
-    extension [Self <: AdjProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdjProps] (val x: Self) extends AnyVal {
       
       inline def setPad(value: Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     }
@@ -81,7 +82,8 @@ object libTypescriptComponentsTextInputHelpersMod {
       __obj.asInstanceOf[Padding]
     }
     
-    extension [Self <: Padding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Padding] (val x: Self) extends AnyVal {
       
       inline def setPaddingBottom(value: Double): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
       
@@ -130,7 +132,8 @@ object libTypescriptComponentsTextInputHelpersMod {
       __obj.asInstanceOf[PaddingProps]
     }
     
-    extension [Self <: PaddingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaddingProps] (val x: Self) extends AnyVal {
       
       inline def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
       

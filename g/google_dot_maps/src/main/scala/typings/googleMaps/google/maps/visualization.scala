@@ -97,7 +97,8 @@ object visualization {
       __obj.asInstanceOf[HeatmapLayerOptions]
     }
     
-    extension [Self <: HeatmapLayerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeatmapLayerOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: (MVCArray[LatLng | WeightedLocation]) | (js.Array[LatLng | WeightedLocation])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -170,7 +171,8 @@ object visualization {
       __obj.asInstanceOf[WeightedLocation]
     }
     
-    extension [Self <: WeightedLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WeightedLocation] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       

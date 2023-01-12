@@ -38,7 +38,8 @@ object Override {
     __obj.asInstanceOf[Override]
   }
   
-  extension [Self <: Override](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Override] (val x: Self) extends AnyVal {
     
     inline def setOverride(value: String => Any): Self = StObject.set(x, "override", js.Any.fromFunction1(value))
   }

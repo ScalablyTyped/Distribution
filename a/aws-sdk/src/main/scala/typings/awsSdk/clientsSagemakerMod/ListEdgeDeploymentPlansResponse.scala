@@ -23,7 +23,8 @@ object ListEdgeDeploymentPlansResponse {
     __obj.asInstanceOf[ListEdgeDeploymentPlansResponse]
   }
   
-  extension [Self <: ListEdgeDeploymentPlansResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEdgeDeploymentPlansResponse] (val x: Self) extends AnyVal {
     
     inline def setEdgeDeploymentPlanSummaries(value: EdgeDeploymentPlanSummaries): Self = StObject.set(x, "EdgeDeploymentPlanSummaries", value.asInstanceOf[js.Any])
     

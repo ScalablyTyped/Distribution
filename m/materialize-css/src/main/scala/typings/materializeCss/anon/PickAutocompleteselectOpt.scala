@@ -19,7 +19,8 @@ object PickAutocompleteselectOpt {
     __obj.asInstanceOf[PickAutocompleteselectOpt]
   }
   
-  extension [Self <: PickAutocompleteselectOpt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickAutocompleteselectOpt] (val x: Self) extends AnyVal {
     
     inline def setSelectOption(value: /* el */ Element => Unit): Self = StObject.set(x, "selectOption", js.Any.fromFunction1(value))
   }

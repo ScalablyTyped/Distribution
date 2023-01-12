@@ -68,7 +68,8 @@ object DescribeBulkImportJobResponse {
     __obj.asInstanceOf[DescribeBulkImportJobResponse]
   }
   
-  extension [Self <: DescribeBulkImportJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBulkImportJobResponse] (val x: Self) extends AnyVal {
     
     inline def setErrorReportLocation(value: ErrorReportLocation): Self = StObject.set(x, "errorReportLocation", value.asInstanceOf[js.Any])
     

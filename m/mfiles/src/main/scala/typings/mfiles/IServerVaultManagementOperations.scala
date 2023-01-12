@@ -53,7 +53,8 @@ object IServerVaultManagementOperations {
     __obj.asInstanceOf[IServerVaultManagementOperations]
   }
   
-  extension [Self <: IServerVaultManagementOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IServerVaultManagementOperations] (val x: Self) extends AnyVal {
     
     inline def setAttachVault(value: (IVaultProperties, Boolean) => IVaultProperties): Self = StObject.set(x, "AttachVault", js.Any.fromFunction2(value))
     

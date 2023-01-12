@@ -4040,7 +4040,8 @@ object AccountSettingsInformation {
     __obj.asInstanceOf[AccountSettingsInformation]
   }
   
-  extension [Self <: AccountSettingsInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountSettingsInformation] (val x: Self) extends AnyVal {
     
     inline def setAccessCodeFormat(
       value: /* object specifying the format of the string provided to a recipient in order to access an envelope. */ AccessCodeFormat

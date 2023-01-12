@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[FileSaverOptions]
     }
     
-    extension [Self <: FileSaverOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSaverOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoBom(value: Boolean): Self = StObject.set(x, "autoBom", value.asInstanceOf[js.Any])
     }

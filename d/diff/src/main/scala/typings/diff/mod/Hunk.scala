@@ -32,7 +32,8 @@ object Hunk {
     __obj.asInstanceOf[Hunk]
   }
   
-  extension [Self <: Hunk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hunk] (val x: Self) extends AnyVal {
     
     inline def setLinedelimiters(value: js.Array[String]): Self = StObject.set(x, "linedelimiters", value.asInstanceOf[js.Any])
     

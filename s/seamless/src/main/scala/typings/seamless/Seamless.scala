@@ -83,7 +83,8 @@ object Seamless {
       __obj.asInstanceOf[ConnectOptions]
     }
     
-    extension [Self <: ConnectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowAppendedStyleInjection(value: Boolean): Self = StObject.set(x, "allowAppendedStyleInjection", value.asInstanceOf[js.Any])
       
@@ -251,7 +252,8 @@ object Seamless {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFallback(value: Boolean): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
@@ -359,7 +361,8 @@ object Seamless {
       __obj.asInstanceOf[Static]
     }
     
-    extension [Self <: Static](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
       
       inline def setConnect(value: ConnectOptions => Connection): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
       

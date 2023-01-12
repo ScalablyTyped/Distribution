@@ -27,7 +27,8 @@ object ClassifierShim {
     __obj.asInstanceOf[ClassifierShim]
   }
   
-  extension [Self <: ClassifierShim](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassifierShim] (val x: Self) extends AnyVal {
     
     inline def setClassifier(value: Classifier): Self = StObject.set(x, "classifier", value.asInstanceOf[js.Any])
     

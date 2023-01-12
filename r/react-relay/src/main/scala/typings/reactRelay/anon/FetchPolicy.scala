@@ -32,7 +32,8 @@ object FetchPolicy {
     __obj.asInstanceOf[FetchPolicy]
   }
   
-  extension [Self <: FetchPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchPolicy] (val x: Self) extends AnyVal {
     
     inline def setEnvironment(value: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     

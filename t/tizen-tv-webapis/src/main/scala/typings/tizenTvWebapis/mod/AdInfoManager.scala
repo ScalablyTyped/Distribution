@@ -78,7 +78,8 @@ object AdInfoManager {
     __obj.asInstanceOf[AdInfoManager]
   }
   
-  extension [Self <: AdInfoManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdInfoManager] (val x: Self) extends AnyVal {
     
     inline def setGetTIFA(value: () => String): Self = StObject.set(x, "getTIFA", js.Any.fromFunction0(value))
     

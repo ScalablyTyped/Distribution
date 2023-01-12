@@ -23,7 +23,8 @@ object GetBackendAPIModelsResponse {
     __obj.asInstanceOf[GetBackendAPIModelsResponse]
   }
   
-  extension [Self <: GetBackendAPIModelsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBackendAPIModelsResponse] (val x: Self) extends AnyVal {
     
     inline def setModels(value: string): Self = StObject.set(x, "Models", value.asInstanceOf[js.Any])
     

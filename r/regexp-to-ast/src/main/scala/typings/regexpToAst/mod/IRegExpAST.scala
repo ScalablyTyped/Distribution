@@ -19,7 +19,8 @@ object IRegExpAST {
     __obj.asInstanceOf[IRegExpAST]
   }
   
-  extension [Self <: IRegExpAST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRegExpAST] (val x: Self) extends AnyVal {
     
     inline def setLoc(value: Begin): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     

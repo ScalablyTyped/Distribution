@@ -20,7 +20,8 @@ object CellEditBegin {
     __obj.asInstanceOf[CellEditBegin]
   }
   
-  extension [Self <: CellEditBegin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellEditBegin] (val x: Self) extends AnyVal {
     
     inline def setFieldKey(value: String): Self = StObject.set(x, "fieldKey", value.asInstanceOf[js.Any])
     

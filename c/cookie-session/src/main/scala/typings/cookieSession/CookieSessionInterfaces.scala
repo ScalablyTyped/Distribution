@@ -37,7 +37,8 @@ object CookieSessionInterfaces {
       __obj.asInstanceOf[CookieSessionObject]
     }
     
-    extension [Self <: CookieSessionObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieSessionObject] (val x: Self) extends AnyVal {
       
       inline def setIsChanged(value: Boolean): Self = StObject.set(x, "isChanged", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object CookieSessionInterfaces {
       __obj.asInstanceOf[CookieSessionOptions]
     }
     
-    extension [Self <: CookieSessionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieSessionOptions] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -205,7 +207,8 @@ object CookieSessionInterfaces {
       __obj.asInstanceOf[CookieSessionRequest]
     }
     
-    extension [Self <: CookieSessionRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieSessionRequest] (val x: Self) extends AnyVal {
       
       inline def setSession(value: CookieSessionObject): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       

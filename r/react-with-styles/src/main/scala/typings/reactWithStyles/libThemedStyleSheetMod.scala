@@ -73,7 +73,8 @@ object libThemedStyleSheetMod {
       __obj.asInstanceOf[ThemedStyleSheet]
     }
     
-    extension [Self <: ThemedStyleSheet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemedStyleSheet] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: Any => Any): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       

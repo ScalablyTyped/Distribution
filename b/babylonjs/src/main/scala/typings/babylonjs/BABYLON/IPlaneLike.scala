@@ -19,7 +19,8 @@ object IPlaneLike {
     __obj.asInstanceOf[IPlaneLike]
   }
   
-  extension [Self <: IPlaneLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPlaneLike] (val x: Self) extends AnyVal {
     
     inline def setD(value: float): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     

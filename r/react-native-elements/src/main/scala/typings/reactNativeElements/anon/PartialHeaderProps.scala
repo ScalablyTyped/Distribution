@@ -223,7 +223,8 @@ object PartialHeaderProps {
     __obj.asInstanceOf[PartialHeaderProps]
   }
   
-  extension [Self <: PartialHeaderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialHeaderProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

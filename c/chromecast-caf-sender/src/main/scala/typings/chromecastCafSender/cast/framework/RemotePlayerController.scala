@@ -50,7 +50,8 @@ object RemotePlayerController {
     __obj.asInstanceOf[RemotePlayerController]
   }
   
-  extension [Self <: RemotePlayerController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemotePlayerController] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(
       value: (RemotePlayerEventType, js.Function1[/* event */ RemotePlayerChangedEvent[Any], Unit]) => Unit

@@ -23,7 +23,8 @@ object Map {
     __obj.asInstanceOf[Map]
   }
   
-  extension [Self <: Map](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
     
     inline def setDetectRetina(value: Boolean): Self = StObject.set(x, "detectRetina", value.asInstanceOf[js.Any])
     

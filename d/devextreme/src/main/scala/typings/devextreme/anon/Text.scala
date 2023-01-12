@@ -17,7 +17,8 @@ object Text {
     __obj.asInstanceOf[Text]
   }
   
-  extension [Self <: Text](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
     
     inline def setItem(value: typings.devextreme.mod.DevExpress.viz.dxFunnel.Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

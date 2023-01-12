@@ -40,7 +40,8 @@ object FormatColor {
     __obj.asInstanceOf[FormatColor]
   }
   
-  extension [Self <: FormatColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatColor] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

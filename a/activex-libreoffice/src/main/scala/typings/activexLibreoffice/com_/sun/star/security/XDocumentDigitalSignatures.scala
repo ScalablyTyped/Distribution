@@ -136,7 +136,8 @@ object XDocumentDigitalSignatures {
     __obj.asInstanceOf[XDocumentDigitalSignatures]
   }
   
-  extension [Self <: XDocumentDigitalSignatures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDocumentDigitalSignatures] (val x: Self) extends AnyVal {
     
     inline def setAddAuthorToTrustedSources(value: XCertificate => Unit): Self = StObject.set(x, "addAuthorToTrustedSources", js.Any.fromFunction1(value))
     

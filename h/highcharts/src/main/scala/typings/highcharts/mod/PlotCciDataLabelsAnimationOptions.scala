@@ -20,7 +20,8 @@ object PlotCciDataLabelsAnimationOptions {
     __obj.asInstanceOf[PlotCciDataLabelsAnimationOptions]
   }
   
-  extension [Self <: PlotCciDataLabelsAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotCciDataLabelsAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object SettingEntry {
     __obj.asInstanceOf[SettingEntry]
   }
   
-  extension [Self <: SettingEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettingEntry] (val x: Self) extends AnyVal {
     
     inline def setAllowedValues(value: DirectoryConfigurationSettingAllowedValues): Self = StObject.set(x, "AllowedValues", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object GeometryList {
     __obj.asInstanceOf[GeometryList]
   }
   
-  extension [Self <: GeometryList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeometryList] (val x: Self) extends AnyVal {
     
     inline def setDisableStreaming(value: Boolean): Self = StObject.set(x, "disableStreaming", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object StoreLocationPlugin {
     __obj.asInstanceOf[StoreLocationPlugin]
   }
   
-  extension [Self <: StoreLocationPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreLocationPlugin] (val x: Self) extends AnyVal {
     
     inline def setCAPICOM_CURRENT_USER_STORE(value: `2`): Self = StObject.set(x, "CAPICOM_CURRENT_USER_STORE", value.asInstanceOf[js.Any])
     

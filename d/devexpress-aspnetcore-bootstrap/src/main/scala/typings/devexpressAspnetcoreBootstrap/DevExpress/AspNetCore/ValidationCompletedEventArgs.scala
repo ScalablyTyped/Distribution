@@ -35,7 +35,8 @@ object ValidationCompletedEventArgs {
     __obj.asInstanceOf[ValidationCompletedEventArgs]
   }
   
-  extension [Self <: ValidationCompletedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationCompletedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object GetFeedback {
     __obj.asInstanceOf[GetFeedback]
   }
   
-  extension [Self <: GetFeedback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFeedback] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

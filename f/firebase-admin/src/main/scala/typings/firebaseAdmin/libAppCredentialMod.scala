@@ -23,7 +23,8 @@ object libAppCredentialMod {
       __obj.asInstanceOf[Credential]
     }
     
-    extension [Self <: Credential](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credential] (val x: Self) extends AnyVal {
       
       inline def setGetAccessToken(value: () => js.Promise[GoogleOAuthAccessToken]): Self = StObject.set(x, "getAccessToken", js.Any.fromFunction0(value))
     }
@@ -42,7 +43,8 @@ object libAppCredentialMod {
       __obj.asInstanceOf[GoogleOAuthAccessToken]
     }
     
-    extension [Self <: GoogleOAuthAccessToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoogleOAuthAccessToken] (val x: Self) extends AnyVal {
       
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
@@ -65,7 +67,8 @@ object libAppCredentialMod {
       __obj.asInstanceOf[ServiceAccount]
     }
     
-    extension [Self <: ServiceAccount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceAccount] (val x: Self) extends AnyVal {
       
       inline def setClientEmail(value: String): Self = StObject.set(x, "clientEmail", value.asInstanceOf[js.Any])
       

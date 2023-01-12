@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setGenerator(value: /* request */ Request => String): Self = StObject.set(x, "generator", js.Any.fromFunction1(value))
       
@@ -62,7 +63,8 @@ object mod {
           __obj.asInstanceOf[typings.expressRequestId.mod.global.Express.Request]
         }
         
-        extension [Self <: typings.expressRequestId.mod.global.Express.Request](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.expressRequestId.mod.global.Express.Request] (val x: Self) extends AnyVal {
           
           inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         }

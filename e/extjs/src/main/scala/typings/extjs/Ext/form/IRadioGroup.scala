@@ -26,7 +26,8 @@ object IRadioGroup {
     __obj.asInstanceOf[IRadioGroup]
   }
   
-  extension [Self <: IRadioGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRadioGroup] (val x: Self) extends AnyVal {
     
     inline def setCheckChange(value: () => Unit): Self = StObject.set(x, "checkChange", js.Any.fromFunction0(value))
     

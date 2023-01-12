@@ -23,7 +23,8 @@ object LambdaResource {
     __obj.asInstanceOf[LambdaResource]
   }
   
-  extension [Self <: LambdaResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaResource] (val x: Self) extends AnyVal {
     
     inline def setEventTriggers(value: EventTriggerDefinitionList): Self = StObject.set(x, "EventTriggers", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GoogleAppsCloudidentityDevicesV1ApproveDeviceUserRequest {
     __obj.asInstanceOf[GoogleAppsCloudidentityDevicesV1ApproveDeviceUserRequest]
   }
   
-  extension [Self <: GoogleAppsCloudidentityDevicesV1ApproveDeviceUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1ApproveDeviceUserRequest] (val x: Self) extends AnyVal {
     
     inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     

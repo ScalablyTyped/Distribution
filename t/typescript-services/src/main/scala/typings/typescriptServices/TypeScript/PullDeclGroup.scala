@@ -21,7 +21,8 @@ object PullDeclGroup {
     __obj.asInstanceOf[PullDeclGroup]
   }
   
-  extension [Self <: PullDeclGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullDeclGroup] (val x: Self) extends AnyVal {
     
     inline def setAddDecl(value: PullDecl => Unit): Self = StObject.set(x, "addDecl", js.Any.fromFunction1(value))
     

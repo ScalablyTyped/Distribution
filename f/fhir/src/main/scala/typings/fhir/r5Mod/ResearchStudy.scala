@@ -225,7 +225,8 @@ object ResearchStudy {
     __obj.asInstanceOf[ResearchStudy]
   }
   
-  extension [Self <: ResearchStudy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResearchStudy] (val x: Self) extends AnyVal {
     
     inline def setAssociatedParty(value: js.Array[ResearchStudyAssociatedParty]): Self = StObject.set(x, "associatedParty", value.asInstanceOf[js.Any])
     

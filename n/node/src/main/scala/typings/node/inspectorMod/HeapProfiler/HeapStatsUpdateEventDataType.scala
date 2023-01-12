@@ -18,7 +18,8 @@ object HeapStatsUpdateEventDataType {
     __obj.asInstanceOf[HeapStatsUpdateEventDataType]
   }
   
-  extension [Self <: HeapStatsUpdateEventDataType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeapStatsUpdateEventDataType] (val x: Self) extends AnyVal {
     
     inline def setStatsUpdate(value: js.Array[Double]): Self = StObject.set(x, "statsUpdate", value.asInstanceOf[js.Any])
     

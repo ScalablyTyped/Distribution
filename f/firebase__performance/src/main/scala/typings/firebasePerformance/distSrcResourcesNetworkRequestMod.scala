@@ -91,7 +91,8 @@ object distSrcResourcesNetworkRequestMod {
       __obj.asInstanceOf[NetworkRequest]
     }
     
-    extension [Self <: NetworkRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkRequest] (val x: Self) extends AnyVal {
       
       inline def setHttpMethod(value: HttpMethod): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
       

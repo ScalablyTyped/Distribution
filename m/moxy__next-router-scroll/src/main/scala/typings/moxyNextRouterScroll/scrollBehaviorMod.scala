@@ -56,7 +56,8 @@ object scrollBehaviorMod {
       __obj.asInstanceOf[NextScrollBehaviorContext]
     }
     
-    extension [Self <: NextScrollBehaviorContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NextScrollBehaviorContext] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: Location & LocationBase): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       

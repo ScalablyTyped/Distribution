@@ -33,7 +33,8 @@ object ListStreamConsumersInput {
     __obj.asInstanceOf[ListStreamConsumersInput]
   }
   
-  extension [Self <: ListStreamConsumersInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStreamConsumersInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ListStreamConsumersInputLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

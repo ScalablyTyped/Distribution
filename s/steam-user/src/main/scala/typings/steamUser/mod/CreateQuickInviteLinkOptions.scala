@@ -17,7 +17,8 @@ object CreateQuickInviteLinkOptions {
     __obj.asInstanceOf[CreateQuickInviteLinkOptions]
   }
   
-  extension [Self <: CreateQuickInviteLinkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateQuickInviteLinkOptions] (val x: Self) extends AnyVal {
     
     inline def setInviteDuration(value: Double): Self = StObject.set(x, "inviteDuration", value.asInstanceOf[js.Any])
     

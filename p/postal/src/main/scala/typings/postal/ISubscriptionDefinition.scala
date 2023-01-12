@@ -68,7 +68,8 @@ object ISubscriptionDefinition {
     __obj.asInstanceOf[ISubscriptionDefinition[T]]
   }
   
-  extension [Self <: ISubscriptionDefinition[?], T](x: Self & ISubscriptionDefinition[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISubscriptionDefinition[?], T] (val x: Self & ISubscriptionDefinition[T]) extends AnyVal {
     
     inline def setCallback(value: (T, /* envelope */ IEnvelope[T]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     

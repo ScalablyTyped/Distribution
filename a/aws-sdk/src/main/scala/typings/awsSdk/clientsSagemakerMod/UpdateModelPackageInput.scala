@@ -43,7 +43,8 @@ object UpdateModelPackageInput {
     __obj.asInstanceOf[UpdateModelPackageInput]
   }
   
-  extension [Self <: UpdateModelPackageInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateModelPackageInput] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInferenceSpecificationsToAdd(value: AdditionalInferenceSpecifications): Self = StObject.set(x, "AdditionalInferenceSpecificationsToAdd", value.asInstanceOf[js.Any])
     

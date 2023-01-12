@@ -345,7 +345,8 @@ object mod {
       __obj.asInstanceOf[AssertionError]
     }
     
-    extension [Self <: AssertionError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssertionError] (val x: Self) extends AnyVal {
       
       inline def setActual(value: Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object CreateLoginProfileResponse {
     __obj.asInstanceOf[CreateLoginProfileResponse]
   }
   
-  extension [Self <: CreateLoginProfileResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLoginProfileResponse] (val x: Self) extends AnyVal {
     
     inline def setLoginProfile(value: LoginProfile): Self = StObject.set(x, "LoginProfile", value.asInstanceOf[js.Any])
   }

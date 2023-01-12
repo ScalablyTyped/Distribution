@@ -26,7 +26,8 @@ object IListOperationsRequest {
     __obj.asInstanceOf[IListOperationsRequest]
   }
   
-  extension [Self <: IListOperationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListOperationsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

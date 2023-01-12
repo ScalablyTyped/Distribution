@@ -16,7 +16,8 @@ object SplitCapacityCommitmentRequest {
     __obj.asInstanceOf[SplitCapacityCommitmentRequest]
   }
   
-  extension [Self <: SplitCapacityCommitmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitCapacityCommitmentRequest] (val x: Self) extends AnyVal {
     
     inline def setSlotCount(value: String): Self = StObject.set(x, "slotCount", value.asInstanceOf[js.Any])
     

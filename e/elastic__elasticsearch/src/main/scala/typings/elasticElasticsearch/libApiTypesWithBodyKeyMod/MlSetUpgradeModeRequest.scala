@@ -19,7 +19,8 @@ object MlSetUpgradeModeRequest {
     __obj.asInstanceOf[MlSetUpgradeModeRequest]
   }
   
-  extension [Self <: MlSetUpgradeModeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlSetUpgradeModeRequest] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

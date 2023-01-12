@@ -17,7 +17,8 @@ object ZeptoPosition {
     __obj.asInstanceOf[ZeptoPosition]
   }
   
-  extension [Self <: ZeptoPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZeptoPosition] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

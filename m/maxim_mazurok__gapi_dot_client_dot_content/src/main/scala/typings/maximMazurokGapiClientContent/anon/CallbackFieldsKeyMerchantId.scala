@@ -57,7 +57,8 @@ object CallbackFieldsKeyMerchantId {
     __obj.asInstanceOf[CallbackFieldsKeyMerchantId]
   }
   
-  extension [Self <: CallbackFieldsKeyMerchantId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackFieldsKeyMerchantId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

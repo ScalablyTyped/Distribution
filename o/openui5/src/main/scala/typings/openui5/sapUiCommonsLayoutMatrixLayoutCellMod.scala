@@ -578,7 +578,8 @@ object sapUiCommonsLayoutMatrixLayoutCellMod {
       __obj.asInstanceOf[MatrixLayoutCellSettings]
     }
     
-    extension [Self <: MatrixLayoutCellSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatrixLayoutCellSettings] (val x: Self) extends AnyVal {
       
       inline def setBackgroundDesign(
         value: BackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof layout.BackgroundDesign * / any */ String) | PropertyBindingInfo

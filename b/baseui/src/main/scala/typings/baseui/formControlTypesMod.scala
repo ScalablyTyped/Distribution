@@ -33,7 +33,8 @@ object formControlTypesMod {
       __obj.asInstanceOf[FormControlOverrides]
     }
     
-    extension [Self <: FormControlOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormControlOverrides] (val x: Self) extends AnyVal {
       
       inline def setCaption(value: Override[Any]): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object formControlTypesMod {
       __obj.asInstanceOf[FormControlProps]
     }
     
-    extension [Self <: FormControlProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormControlProps] (val x: Self) extends AnyVal {
       
       inline def setCaption(value: ReactNode | (js.Function1[/* props */ js.Object, ReactNode])): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
@@ -165,7 +167,8 @@ object formControlTypesMod {
       __obj.asInstanceOf[FormControlState]
     }
     
-    extension [Self <: FormControlState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormControlState] (val x: Self) extends AnyVal {
       
       inline def setCaptionId(value: String): Self = StObject.set(x, "captionId", value.asInstanceOf[js.Any])
     }
@@ -198,7 +201,8 @@ object formControlTypesMod {
       __obj.asInstanceOf[StyleProps]
     }
     
-    extension [Self <: StyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleProps] (val x: Self) extends AnyVal {
       
       inline def set$counterError(value: Boolean): Self = StObject.set(x, "$counterError", value.asInstanceOf[js.Any])
       

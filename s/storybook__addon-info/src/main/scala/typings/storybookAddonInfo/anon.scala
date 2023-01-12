@@ -39,7 +39,8 @@ object anon {
       __obj.asInstanceOf[DefaultValue]
     }
     
-    extension [Self <: DefaultValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultValue] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object anon {
       __obj.asInstanceOf[ParametersinfoOptions]
     }
     
-    extension [Self <: ParametersinfoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParametersinfoOptions] (val x: Self) extends AnyVal {
       
       inline def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
       

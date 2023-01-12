@@ -23,7 +23,8 @@ object ListDeadLetterSourceQueuesResult {
     __obj.asInstanceOf[ListDeadLetterSourceQueuesResult]
   }
   
-  extension [Self <: ListDeadLetterSourceQueuesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDeadLetterSourceQueuesResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

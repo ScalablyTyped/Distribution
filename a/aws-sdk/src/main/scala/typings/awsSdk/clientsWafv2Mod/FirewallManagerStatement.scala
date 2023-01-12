@@ -23,7 +23,8 @@ object FirewallManagerStatement {
     __obj.asInstanceOf[FirewallManagerStatement]
   }
   
-  extension [Self <: FirewallManagerStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirewallManagerStatement] (val x: Self) extends AnyVal {
     
     inline def setManagedRuleGroupStatement(value: ManagedRuleGroupStatement): Self = StObject.set(x, "ManagedRuleGroupStatement", value.asInstanceOf[js.Any])
     

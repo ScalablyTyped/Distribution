@@ -50,7 +50,8 @@ object CreateInterruptedDownloadOptions {
     __obj.asInstanceOf[CreateInterruptedDownloadOptions]
   }
   
-  extension [Self <: CreateInterruptedDownloadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateInterruptedDownloadOptions] (val x: Self) extends AnyVal {
     
     inline def setETag(value: String): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
     

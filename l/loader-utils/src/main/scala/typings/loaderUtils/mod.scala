@@ -122,7 +122,8 @@ object mod {
       __obj.asInstanceOf[InterpolateOption]
     }
     
-    extension [Self <: InterpolateOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterpolateOption] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String | Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

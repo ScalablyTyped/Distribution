@@ -28,7 +28,8 @@ object GetResourcePoliciesInput {
     __obj.asInstanceOf[GetResourcePoliciesInput]
   }
   
-  extension [Self <: GetResourcePoliciesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourcePoliciesInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

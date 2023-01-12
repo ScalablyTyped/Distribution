@@ -80,7 +80,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Middleware]
       }
       
-      extension [Self <: Middleware](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Middleware] (val x: Self) extends AnyVal {
         
         inline def setBlockHelperName(value: String): Self = StObject.set(x, "blockHelperName", value.asInstanceOf[js.Any])
         
@@ -126,7 +127,8 @@ object mod extends Shortcut {
       }
     }
     
-    extension [Self <: Hbs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hbs] (val x: Self) extends AnyVal {
       
       inline def setMiddleware(value: Middleware => Any): Self = StObject.set(x, "middleware", js.Any.fromFunction1(value))
       

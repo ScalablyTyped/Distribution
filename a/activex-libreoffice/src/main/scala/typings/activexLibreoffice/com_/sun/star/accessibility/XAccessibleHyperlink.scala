@@ -103,7 +103,8 @@ object XAccessibleHyperlink {
     __obj.asInstanceOf[XAccessibleHyperlink]
   }
   
-  extension [Self <: XAccessibleHyperlink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleHyperlink] (val x: Self) extends AnyVal {
     
     inline def setEndIndex(value: Double): Self = StObject.set(x, "EndIndex", value.asInstanceOf[js.Any])
     

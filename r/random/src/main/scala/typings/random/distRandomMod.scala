@@ -336,7 +336,8 @@ object distRandomMod {
       __obj.asInstanceOf[ICacheEntry[T]]
     }
     
-    extension [Self <: ICacheEntry[?], T](x: Self & ICacheEntry[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICacheEntry[?], T] (val x: Self & ICacheEntry[T]) extends AnyVal {
       
       inline def setDistribution(value: () => T): Self = StObject.set(x, "distribution", js.Any.fromFunction0(value))
       

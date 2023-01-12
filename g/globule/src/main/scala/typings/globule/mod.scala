@@ -35,7 +35,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FindOptions]
     }
     
-    extension [Self <: FindOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(
         value: String | (js.Function2[/* filepath */ js.UndefOr[String], /* options */ js.UndefOr[Any], Boolean])
@@ -164,7 +165,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MappingOptions]
     }
     
-    extension [Self <: MappingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MappingOptions] (val x: Self) extends AnyVal {
       
       inline def setDestBase(value: String): Self = StObject.set(x, "destBase", value.asInstanceOf[js.Any])
       
@@ -201,7 +203,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[OneMapping]
     }
     
-    extension [Self <: OneMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OneMapping] (val x: Self) extends AnyVal {
       
       inline def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       

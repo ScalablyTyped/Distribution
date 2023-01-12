@@ -19,7 +19,8 @@ object GeoMultiPolygon {
     __obj.asInstanceOf[GeoMultiPolygon]
   }
   
-  extension [Self <: GeoMultiPolygon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoMultiPolygon] (val x: Self) extends AnyVal {
     
     inline def setPolygons(value: js.Array[GeoPolygon]): Self = StObject.set(x, "polygons", value.asInstanceOf[js.Any])
     

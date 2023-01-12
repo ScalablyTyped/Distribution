@@ -16,7 +16,8 @@ object GoogleApiServiceusageV1OperationMetadata {
     __obj.asInstanceOf[GoogleApiServiceusageV1OperationMetadata]
   }
   
-  extension [Self <: GoogleApiServiceusageV1OperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleApiServiceusageV1OperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setResourceNames(value: js.Array[String]): Self = StObject.set(x, "resourceNames", value.asInstanceOf[js.Any])
     

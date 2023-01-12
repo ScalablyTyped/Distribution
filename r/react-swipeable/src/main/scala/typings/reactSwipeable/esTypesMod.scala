@@ -89,7 +89,8 @@ object esTypesMod {
       __obj.asInstanceOf[ConfigurationOptions]
     }
     
-    extension [Self <: ConfigurationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigurationOptions] (val x: Self) extends AnyVal {
       
       inline def setDelta(value: ConfigurationOptionDelta): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
@@ -191,7 +192,8 @@ object esTypesMod {
       __obj.asInstanceOf[SwipeEventData]
     }
     
-    extension [Self <: SwipeEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeEventData] (val x: Self) extends AnyVal {
       
       inline def setAbsX(value: Double): Self = StObject.set(x, "absX", value.asInstanceOf[js.Any])
       
@@ -267,7 +269,8 @@ object esTypesMod {
       __obj.asInstanceOf[SwipeableCallbacks]
     }
     
-    extension [Self <: SwipeableCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeableCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnSwipeStart(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipeStart", js.Any.fromFunction1(value))
       
@@ -317,7 +320,8 @@ object esTypesMod {
       __obj.asInstanceOf[SwipeableDirectionCallbacks]
     }
     
-    extension [Self <: SwipeableDirectionCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeableDirectionCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnSwipedDown(value: /* eventData */ SwipeEventData => Unit): Self = StObject.set(x, "onSwipedDown", js.Any.fromFunction1(value))
       
@@ -382,7 +386,8 @@ object esTypesMod {
       __obj.asInstanceOf[SwipeableProps]
     }
     
-    extension [Self <: SwipeableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeableProps] (val x: Self) extends AnyVal {
       
       inline def setDelta(value: ConfigurationOptionDelta): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
@@ -527,7 +532,8 @@ object esTypesMod {
       __obj.asInstanceOf[SwipeablePropsWithDefaultOptions]
     }
     
-    extension [Self <: SwipeablePropsWithDefaultOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeablePropsWithDefaultOptions] (val x: Self) extends AnyVal {
       
       inline def setDelta(value: ConfigurationOptionDelta): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
@@ -610,7 +616,8 @@ object esTypesMod {
       __obj.asInstanceOf[SwipeableState]
     }
     
-    extension [Self <: SwipeableState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeableState] (val x: Self) extends AnyVal {
       
       inline def setCleanUpTouch(value: () => Unit): Self = StObject.set(x, "cleanUpTouch", js.Any.fromFunction0(value))
       

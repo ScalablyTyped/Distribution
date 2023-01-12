@@ -141,7 +141,8 @@ object mod {
         __obj.asInstanceOf[Format]
       }
       
-      extension [Self <: Format](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
         
         inline def setAbbreviations(value: Billion): Self = StObject.set(x, "abbreviations", value.asInstanceOf[js.Any])
         
@@ -323,7 +324,8 @@ object mod {
         __obj.asInstanceOf[NumbroLanguage]
       }
       
-      extension [Self <: NumbroLanguage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NumbroLanguage] (val x: Self) extends AnyVal {
         
         inline def setAbbreviations(value: Million): Self = StObject.set(x, "abbreviations", value.asInstanceOf[js.Any])
         

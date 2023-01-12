@@ -30,7 +30,8 @@ object GetNetworkTypeSuccessCallbackResult {
     __obj.asInstanceOf[GetNetworkTypeSuccessCallbackResult]
   }
   
-  extension [Self <: GetNetworkTypeSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNetworkTypeSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setNetworkType(value: wifi | `2g` | `3g` | `4g` | unknown | none): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
   }

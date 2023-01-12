@@ -17,7 +17,8 @@ object UnsubscribeData {
     __obj.asInstanceOf[UnsubscribeData]
   }
   
-  extension [Self <: UnsubscribeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsubscribeData] (val x: Self) extends AnyVal {
     
     inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ShowActionSheetRes {
     __obj.asInstanceOf[ShowActionSheetRes]
   }
   
-  extension [Self <: ShowActionSheetRes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowActionSheetRes] (val x: Self) extends AnyVal {
     
     inline def setTapIndex(value: Double): Self = StObject.set(x, "tapIndex", value.asInstanceOf[js.Any])
     

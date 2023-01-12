@@ -142,7 +142,8 @@ object mod {
       __obj.asInstanceOf[config]
     }
     
-    extension [Self <: config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: config] (val x: Self) extends AnyVal {
       
       inline def setAllowedUpdates(value: js.Array[String]): Self = StObject.set(x, "allowedUpdates", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,8 @@ object mod {
       __obj.asInstanceOf[module]
     }
     
-    extension [Self <: module](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: module] (val x: Self) extends AnyVal {
       
       inline def setDefaultConfig(value: Any): Self = StObject.set(x, "defaultConfig", value.asInstanceOf[js.Any])
       

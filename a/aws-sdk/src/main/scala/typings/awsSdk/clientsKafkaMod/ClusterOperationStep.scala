@@ -27,7 +27,8 @@ object ClusterOperationStep {
     __obj.asInstanceOf[ClusterOperationStep]
   }
   
-  extension [Self <: ClusterOperationStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterOperationStep] (val x: Self) extends AnyVal {
     
     inline def setStepInfo(value: ClusterOperationStepInfo): Self = StObject.set(x, "StepInfo", value.asInstanceOf[js.Any])
     

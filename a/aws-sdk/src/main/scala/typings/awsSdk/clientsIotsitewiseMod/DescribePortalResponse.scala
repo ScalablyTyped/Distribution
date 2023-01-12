@@ -98,7 +98,8 @@ object DescribePortalResponse {
     __obj.asInstanceOf[DescribePortalResponse]
   }
   
-  extension [Self <: DescribePortalResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePortalResponse] (val x: Self) extends AnyVal {
     
     inline def setAlarms(value: Alarms): Self = StObject.set(x, "alarms", value.asInstanceOf[js.Any])
     

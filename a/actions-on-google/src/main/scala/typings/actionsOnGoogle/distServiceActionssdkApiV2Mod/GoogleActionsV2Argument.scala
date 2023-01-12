@@ -82,7 +82,8 @@ object GoogleActionsV2Argument {
     __obj.asInstanceOf[GoogleActionsV2Argument]
   }
   
-  extension [Self <: GoogleActionsV2Argument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2Argument] (val x: Self) extends AnyVal {
     
     inline def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
     

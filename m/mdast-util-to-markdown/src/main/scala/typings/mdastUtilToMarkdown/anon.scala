@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[LineShift]
     }
     
-    extension [Self <: LineShift](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineShift] (val x: Self) extends AnyVal {
       
       inline def setLineShift(value: Double): Self = StObject.set(x, "lineShift", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object anon {
       __obj.asInstanceOf[SafeOptionsencodeArraystr]
     }
     
-    extension [Self <: SafeOptionsencodeArraystr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SafeOptionsencodeArraystr] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object Timeline {
     __obj.asInstanceOf[Timeline]
   }
   
-  extension [Self <: Timeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Timeline] (val x: Self) extends AnyVal {
     
     inline def setFrameInverval(value: Double): Self = StObject.set(x, "frameInverval", value.asInstanceOf[js.Any])
     

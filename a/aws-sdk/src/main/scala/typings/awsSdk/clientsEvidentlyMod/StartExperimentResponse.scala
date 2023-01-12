@@ -18,7 +18,8 @@ object StartExperimentResponse {
     __obj.asInstanceOf[StartExperimentResponse]
   }
   
-  extension [Self <: StartExperimentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartExperimentResponse] (val x: Self) extends AnyVal {
     
     inline def setStartedTime(value: js.Date): Self = StObject.set(x, "startedTime", value.asInstanceOf[js.Any])
     

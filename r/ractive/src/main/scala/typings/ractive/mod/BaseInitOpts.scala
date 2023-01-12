@@ -22,7 +22,8 @@ object BaseInitOpts {
     __obj.asInstanceOf[BaseInitOpts[T]]
   }
   
-  extension [Self <: BaseInitOpts[?], T /* <: Ractive[T] */](x: Self & BaseInitOpts[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseInitOpts[?], T /* <: Ractive[T] */] (val x: Self & BaseInitOpts[T]) extends AnyVal {
     
     inline def setObserve(value: Registry[ObserverCallback[T] | ObserverDescriptor[T]]): Self = StObject.set(x, "observe", value.asInstanceOf[js.Any])
     

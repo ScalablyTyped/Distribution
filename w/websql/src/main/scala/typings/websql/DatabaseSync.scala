@@ -28,7 +28,8 @@ object DatabaseSync {
     __obj.asInstanceOf[DatabaseSync]
   }
   
-  extension [Self <: DatabaseSync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseSync] (val x: Self) extends AnyVal {
     
     inline def setChangeVersion(value: (DOMString, DOMString, SQLTransactionSyncCallback) => Unit): Self = StObject.set(x, "changeVersion", js.Any.fromFunction3(value))
     

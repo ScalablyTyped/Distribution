@@ -25,7 +25,8 @@ object PartialOnfleetHub {
     __obj.asInstanceOf[PartialOnfleetHub]
   }
   
-  extension [Self <: PartialOnfleetHub](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOnfleetHub] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: Apartment): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

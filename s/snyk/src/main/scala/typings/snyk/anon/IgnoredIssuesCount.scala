@@ -18,7 +18,8 @@ object IgnoredIssuesCount {
     __obj.asInstanceOf[IgnoredIssuesCount]
   }
   
-  extension [Self <: IgnoredIssuesCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoredIssuesCount] (val x: Self) extends AnyVal {
     
     inline def setIgnoredIssuesCount(value: Double): Self = StObject.set(x, "ignoredIssuesCount", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ConversationsGrantPayload {
     __obj.asInstanceOf[ConversationsGrantPayload]
   }
   
-  extension [Self <: ConversationsGrantPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversationsGrantPayload] (val x: Self) extends AnyVal {
     
     inline def setConfiguration_profile_sid(value: String): Self = StObject.set(x, "configuration_profile_sid", value.asInstanceOf[js.Any])
     

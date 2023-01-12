@@ -48,7 +48,8 @@ object CreateLedgerResponse {
     __obj.asInstanceOf[CreateLedgerResponse]
   }
   
-  extension [Self <: CreateLedgerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLedgerResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

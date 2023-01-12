@@ -28,7 +28,8 @@ object UsageStatisticsFilter {
     __obj.asInstanceOf[UsageStatisticsFilter]
   }
   
-  extension [Self <: UsageStatisticsFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsageStatisticsFilter] (val x: Self) extends AnyVal {
     
     inline def setComparator(value: UsageStatisticsFilterComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     

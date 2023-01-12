@@ -541,7 +541,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SqlBricksParam]
     }
     
-    extension [Self <: SqlBricksParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SqlBricksParam] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
@@ -620,7 +621,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[WhereBinary]
     }
     
-    extension [Self <: WhereBinary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WhereBinary] (val x: Self) extends AnyVal {
       
       inline def setCol(value: String | SelectStatement): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
@@ -659,7 +661,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[WhereGroup]
     }
     
-    extension [Self <: WhereGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WhereGroup] (val x: Self) extends AnyVal {
       
       inline def setExpressions(value: js.Array[WhereExpression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
       

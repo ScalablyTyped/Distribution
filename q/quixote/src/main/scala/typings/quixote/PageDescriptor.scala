@@ -47,7 +47,8 @@ object PageDescriptor {
     __obj.asInstanceOf[PageDescriptor]
   }
   
-  extension [Self <: PageDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageDescriptor] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: PositionDescriptor): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

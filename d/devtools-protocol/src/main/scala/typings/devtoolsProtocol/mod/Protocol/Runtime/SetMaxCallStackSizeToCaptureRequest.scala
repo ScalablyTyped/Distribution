@@ -16,7 +16,8 @@ object SetMaxCallStackSizeToCaptureRequest {
     __obj.asInstanceOf[SetMaxCallStackSizeToCaptureRequest]
   }
   
-  extension [Self <: SetMaxCallStackSizeToCaptureRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetMaxCallStackSizeToCaptureRequest] (val x: Self) extends AnyVal {
     
     inline def setSize(value: integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }

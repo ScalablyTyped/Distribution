@@ -28,7 +28,8 @@ object Diffurl {
     __obj.asInstanceOf[Diffurl]
   }
   
-  extension [Self <: Diffurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Diffurl] (val x: Self) extends AnyVal {
     
     inline def setDiff_url(value: String): Self = StObject.set(x, "diff_url", value.asInstanceOf[js.Any])
     

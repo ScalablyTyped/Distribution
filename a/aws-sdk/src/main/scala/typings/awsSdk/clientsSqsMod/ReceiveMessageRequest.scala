@@ -48,7 +48,8 @@ object ReceiveMessageRequest {
     __obj.asInstanceOf[ReceiveMessageRequest]
   }
   
-  extension [Self <: ReceiveMessageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReceiveMessageRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributeNames(value: AttributeNameList): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
     

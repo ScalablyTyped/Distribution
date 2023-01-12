@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[options]
     }
     
-    extension [Self <: options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: options] (val x: Self) extends AnyVal {
       
       inline def setDuplicates(value: Boolean): Self = StObject.set(x, "duplicates", value.asInstanceOf[js.Any])
       

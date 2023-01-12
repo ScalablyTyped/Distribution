@@ -86,7 +86,8 @@ object ICircleOptions {
     __obj.asInstanceOf[ICircleOptions]
   }
   
-  extension [Self <: ICircleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICircleOptions] (val x: Self) extends AnyVal {
     
     inline def setCircleOverlay(
       value: String | (js.Function3[

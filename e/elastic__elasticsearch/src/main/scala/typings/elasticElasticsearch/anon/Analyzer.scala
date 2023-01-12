@@ -36,7 +36,8 @@ object Analyzer {
     __obj.asInstanceOf[Analyzer]
   }
   
-  extension [Self <: Analyzer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Analyzer] (val x: Self) extends AnyVal {
     
     inline def setAnalyzer(value: String): Self = StObject.set(x, "analyzer", value.asInstanceOf[js.Any])
     

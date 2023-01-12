@@ -152,7 +152,8 @@ object mod {
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    extension [Self <: ConnectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthPlugins(value: StringDictionary[authPlugins]): Self = StObject.set(x, "authPlugins", value.asInstanceOf[js.Any])
       
@@ -414,7 +415,8 @@ object mod {
       __obj.asInstanceOf[PoolOptions]
     }
     
-    extension [Self <: PoolOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PoolOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthPlugins(value: StringDictionary[authPlugins]): Self = StObject.set(x, "authPlugins", value.asInstanceOf[js.Any])
       

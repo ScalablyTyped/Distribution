@@ -21,7 +21,8 @@ object LastFrameCreated {
     __obj.asInstanceOf[LastFrameCreated]
   }
   
-  extension [Self <: LastFrameCreated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LastFrameCreated] (val x: Self) extends AnyVal {
     
     inline def setLastFrameCreated(value: Double): Self = StObject.set(x, "lastFrameCreated", value.asInstanceOf[js.Any])
     

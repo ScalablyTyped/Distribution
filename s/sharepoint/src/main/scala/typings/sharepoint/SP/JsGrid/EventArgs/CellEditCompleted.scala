@@ -25,7 +25,8 @@ object CellEditCompleted {
     __obj.asInstanceOf[CellEditCompleted]
   }
   
-  extension [Self <: CellEditCompleted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellEditCompleted] (val x: Self) extends AnyVal {
     
     inline def setBCancelled(value: Boolean): Self = StObject.set(x, "bCancelled", value.asInstanceOf[js.Any])
     

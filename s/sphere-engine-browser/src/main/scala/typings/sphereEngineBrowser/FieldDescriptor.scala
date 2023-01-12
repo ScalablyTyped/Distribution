@@ -44,7 +44,8 @@ object FieldDescriptor {
     __obj.asInstanceOf[FieldDescriptor]
   }
   
-  extension [Self <: FieldDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldDescriptor] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object AUTHENTICATIONREQUIRED {
     __obj.asInstanceOf[AUTHENTICATIONREQUIRED]
   }
   
-  extension [Self <: AUTHENTICATIONREQUIRED](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AUTHENTICATIONREQUIRED] (val x: Self) extends AnyVal {
     
     inline def setAUTHENTICATION_REQUIRED(value: authentication_required_): Self = StObject.set(x, "AUTHENTICATION_REQUIRED", value.asInstanceOf[js.Any])
     

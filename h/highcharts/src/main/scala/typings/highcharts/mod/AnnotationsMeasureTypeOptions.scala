@@ -54,7 +54,8 @@ object AnnotationsMeasureTypeOptions {
     __obj.asInstanceOf[AnnotationsMeasureTypeOptions]
   }
   
-  extension [Self <: AnnotationsMeasureTypeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsMeasureTypeOptions] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: AnnotationsMeasureTypeBackgroundOptions): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

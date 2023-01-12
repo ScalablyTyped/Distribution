@@ -23,7 +23,8 @@ object DeleteTaskTemplateRequest {
     __obj.asInstanceOf[DeleteTaskTemplateRequest]
   }
   
-  extension [Self <: DeleteTaskTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTaskTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

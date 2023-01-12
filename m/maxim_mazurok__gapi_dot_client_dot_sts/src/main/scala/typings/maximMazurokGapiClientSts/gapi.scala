@@ -50,7 +50,8 @@ object gapi {
           __obj.asInstanceOf[GoogleIamV1Binding]
         }
         
-        extension [Self <: GoogleIamV1Binding](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleIamV1Binding] (val x: Self) extends AnyVal {
           
           inline def setCondition(value: GoogleTypeExpr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
           
@@ -83,7 +84,8 @@ object gapi {
           __obj.asInstanceOf[GoogleIdentityStsV1AccessBoundary]
         }
         
-        extension [Self <: GoogleIdentityStsV1AccessBoundary](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleIdentityStsV1AccessBoundary] (val x: Self) extends AnyVal {
           
           inline def setAccessBoundaryRules(value: js.Array[GoogleIdentityStsV1AccessBoundaryRule]): Self = StObject.set(x, "accessBoundaryRules", value.asInstanceOf[js.Any])
           
@@ -123,7 +125,8 @@ object gapi {
           __obj.asInstanceOf[GoogleIdentityStsV1AccessBoundaryRule]
         }
         
-        extension [Self <: GoogleIdentityStsV1AccessBoundaryRule](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleIdentityStsV1AccessBoundaryRule] (val x: Self) extends AnyVal {
           
           inline def setAvailabilityCondition(value: GoogleTypeExpr): Self = StObject.set(x, "availabilityCondition", value.asInstanceOf[js.Any])
           
@@ -219,7 +222,8 @@ object gapi {
           __obj.asInstanceOf[GoogleIdentityStsV1ExchangeTokenRequest]
         }
         
-        extension [Self <: GoogleIdentityStsV1ExchangeTokenRequest](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleIdentityStsV1ExchangeTokenRequest] (val x: Self) extends AnyVal {
           
           inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
           
@@ -278,7 +282,8 @@ object gapi {
           __obj.asInstanceOf[GoogleIdentityStsV1ExchangeTokenResponse]
         }
         
-        extension [Self <: GoogleIdentityStsV1ExchangeTokenResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleIdentityStsV1ExchangeTokenResponse] (val x: Self) extends AnyVal {
           
           inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
           
@@ -313,7 +318,8 @@ object gapi {
           __obj.asInstanceOf[GoogleIdentityStsV1IntrospectTokenRequest]
         }
         
-        extension [Self <: GoogleIdentityStsV1IntrospectTokenRequest](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleIdentityStsV1IntrospectTokenRequest] (val x: Self) extends AnyVal {
           
           inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
           
@@ -364,7 +370,8 @@ object gapi {
           __obj.asInstanceOf[GoogleIdentityStsV1IntrospectTokenResponse]
         }
         
-        extension [Self <: GoogleIdentityStsV1IntrospectTokenResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleIdentityStsV1IntrospectTokenResponse] (val x: Self) extends AnyVal {
           
           inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
           
@@ -427,7 +434,8 @@ object gapi {
           __obj.asInstanceOf[GoogleIdentityStsV1Options]
         }
         
-        extension [Self <: GoogleIdentityStsV1Options](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleIdentityStsV1Options] (val x: Self) extends AnyVal {
           
           inline def setAccessBoundary(value: GoogleIdentityStsV1AccessBoundary): Self = StObject.set(x, "accessBoundary", value.asInstanceOf[js.Any])
           
@@ -460,7 +468,8 @@ object gapi {
           __obj.asInstanceOf[GoogleIdentityStsV1betaAccessBoundary]
         }
         
-        extension [Self <: GoogleIdentityStsV1betaAccessBoundary](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleIdentityStsV1betaAccessBoundary] (val x: Self) extends AnyVal {
           
           inline def setAccessBoundaryRules(value: js.Array[GoogleIdentityStsV1betaAccessBoundaryRule]): Self = StObject.set(x, "accessBoundaryRules", value.asInstanceOf[js.Any])
           
@@ -500,7 +509,8 @@ object gapi {
           __obj.asInstanceOf[GoogleIdentityStsV1betaAccessBoundaryRule]
         }
         
-        extension [Self <: GoogleIdentityStsV1betaAccessBoundaryRule](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleIdentityStsV1betaAccessBoundaryRule] (val x: Self) extends AnyVal {
           
           inline def setAvailabilityCondition(value: GoogleTypeExpr): Self = StObject.set(x, "availabilityCondition", value.asInstanceOf[js.Any])
           
@@ -545,7 +555,8 @@ object gapi {
           __obj.asInstanceOf[GoogleIdentityStsV1betaOptions]
         }
         
-        extension [Self <: GoogleIdentityStsV1betaOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleIdentityStsV1betaOptions] (val x: Self) extends AnyVal {
           
           inline def setAccessBoundary(value: GoogleIdentityStsV1betaAccessBoundary): Self = StObject.set(x, "accessBoundary", value.asInstanceOf[js.Any])
           
@@ -584,7 +595,8 @@ object gapi {
           __obj.asInstanceOf[GoogleTypeExpr]
         }
         
-        extension [Self <: GoogleTypeExpr](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleTypeExpr] (val x: Self) extends AnyVal {
           
           inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           

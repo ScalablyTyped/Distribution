@@ -17,7 +17,8 @@ object KafkaJSOffsetOutOfRangeMetadata {
     __obj.asInstanceOf[KafkaJSOffsetOutOfRangeMetadata]
   }
   
-  extension [Self <: KafkaJSOffsetOutOfRangeMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KafkaJSOffsetOutOfRangeMetadata] (val x: Self) extends AnyVal {
     
     inline def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     

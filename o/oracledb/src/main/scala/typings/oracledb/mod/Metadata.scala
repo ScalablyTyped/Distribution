@@ -66,7 +66,8 @@ object Metadata {
     __obj.asInstanceOf[Metadata[T]]
   }
   
-  extension [Self <: Metadata[?], T](x: Self & Metadata[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Metadata[?], T] (val x: Self & Metadata[T]) extends AnyVal {
     
     inline def setByteSize(value: Double): Self = StObject.set(x, "byteSize", value.asInstanceOf[js.Any])
     

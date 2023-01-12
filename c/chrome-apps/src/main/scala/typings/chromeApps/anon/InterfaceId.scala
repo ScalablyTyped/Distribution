@@ -20,7 +20,8 @@ object InterfaceId {
     __obj.asInstanceOf[InterfaceId]
   }
   
-  extension [Self <: InterfaceId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterfaceId] (val x: Self) extends AnyVal {
     
     inline def setInterfaceId(value: integer): Self = StObject.set(x, "interfaceId", value.asInstanceOf[js.Any])
     

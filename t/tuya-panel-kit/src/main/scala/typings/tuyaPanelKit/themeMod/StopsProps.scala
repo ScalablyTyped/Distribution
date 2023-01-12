@@ -19,7 +19,8 @@ object StopsProps {
     __obj.asInstanceOf[StopsProps]
   }
   
-  extension [Self <: StopsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopsProps] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

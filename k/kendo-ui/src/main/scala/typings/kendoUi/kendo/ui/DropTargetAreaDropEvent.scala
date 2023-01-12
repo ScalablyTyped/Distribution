@@ -23,7 +23,8 @@ object DropTargetAreaDropEvent {
     __obj.asInstanceOf[DropTargetAreaDropEvent]
   }
   
-  extension [Self <: DropTargetAreaDropEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropTargetAreaDropEvent] (val x: Self) extends AnyVal {
     
     inline def setDraggable(value: Draggable): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     

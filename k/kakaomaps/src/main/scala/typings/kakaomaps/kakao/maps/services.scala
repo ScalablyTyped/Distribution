@@ -128,7 +128,8 @@ object services {
       __obj.asInstanceOf[Cluster]
     }
     
-    extension [Self <: Cluster](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cluster] (val x: Self) extends AnyVal {
       
       inline def setGetBounds(value: () => LatLngBounds): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
       
@@ -277,7 +278,8 @@ object services {
       __obj.asInstanceOf[MarkerClusterOptions]
     }
     
-    extension [Self <: MarkerClusterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerClusterOptions] (val x: Self) extends AnyVal {
       
       inline def setAverageCenter(value: Boolean): Self = StObject.set(x, "averageCenter", value.asInstanceOf[js.Any])
       
@@ -374,7 +376,8 @@ object services {
       __obj.asInstanceOf[Pagination]
     }
     
-    extension [Self <: Pagination](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pagination] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object RangedAttackRangedMassAttack {
     __obj.asInstanceOf[RangedAttackRangedMassAttack]
   }
   
-  extension [Self <: RangedAttackRangedMassAttack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangedAttackRangedMassAttack] (val x: Self) extends AnyVal {
     
     inline def setRangedAttack(value: typings.screeps.screepsInts.`4`): Self = StObject.set(x, "rangedAttack", value.asInstanceOf[js.Any])
     

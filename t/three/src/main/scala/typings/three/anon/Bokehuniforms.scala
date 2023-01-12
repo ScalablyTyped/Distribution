@@ -36,7 +36,8 @@ object Bokehuniforms {
     __obj.asInstanceOf[Bokehuniforms]
   }
   
-  extension [Self <: Bokehuniforms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bokehuniforms] (val x: Self) extends AnyVal {
     
     inline def setBokeh_uniforms(value: BokehShaderUniforms): Self = StObject.set(x, "bokeh_uniforms", value.asInstanceOf[js.Any])
     

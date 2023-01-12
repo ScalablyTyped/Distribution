@@ -19,7 +19,8 @@ object PartialCookieDefaults {
     __obj.asInstanceOf[PartialCookieDefaults]
   }
   
-  extension [Self <: PartialCookieDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCookieDefaults] (val x: Self) extends AnyVal {
     
     inline def setPreserve(value: String | js.Array[String] | js.RegExp | (js.Function1[/* cookie */ Cookie, Boolean])): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
     

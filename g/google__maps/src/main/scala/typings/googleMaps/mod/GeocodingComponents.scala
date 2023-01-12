@@ -32,7 +32,8 @@ object GeocodingComponents {
     __obj.asInstanceOf[GeocodingComponents]
   }
   
-  extension [Self <: GeocodingComponents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeocodingComponents] (val x: Self) extends AnyVal {
     
     inline def setAdministrative_area(value: String): Self = StObject.set(x, "administrative_area", value.asInstanceOf[js.Any])
     

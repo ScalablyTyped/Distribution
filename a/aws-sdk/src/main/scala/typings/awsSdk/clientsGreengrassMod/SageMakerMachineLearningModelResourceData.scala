@@ -25,7 +25,8 @@ object SageMakerMachineLearningModelResourceData {
     __obj.asInstanceOf[SageMakerMachineLearningModelResourceData]
   }
   
-  extension [Self <: SageMakerMachineLearningModelResourceData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SageMakerMachineLearningModelResourceData] (val x: Self) extends AnyVal {
     
     inline def setDestinationPath(value: string): Self = StObject.set(x, "DestinationPath", value.asInstanceOf[js.Any])
     

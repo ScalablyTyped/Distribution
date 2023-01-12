@@ -28,7 +28,8 @@ object libPlotsBulletUtilsMod {
       __obj.asInstanceOf[TransformData_]
     }
     
-    extension [Self <: TransformData_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformData_] (val x: Self) extends AnyVal {
       
       inline def setDs(value: js.Array[Any]): Self = StObject.set(x, "ds", value.asInstanceOf[js.Any])
       

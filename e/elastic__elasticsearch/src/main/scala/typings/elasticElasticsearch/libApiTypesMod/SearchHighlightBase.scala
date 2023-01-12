@@ -56,7 +56,8 @@ object SearchHighlightBase {
     __obj.asInstanceOf[SearchHighlightBase]
   }
   
-  extension [Self <: SearchHighlightBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchHighlightBase] (val x: Self) extends AnyVal {
     
     inline def setBoundary_chars(value: String): Self = StObject.set(x, "boundary_chars", value.asInstanceOf[js.Any])
     

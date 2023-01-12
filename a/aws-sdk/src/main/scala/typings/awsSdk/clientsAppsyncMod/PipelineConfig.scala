@@ -18,7 +18,8 @@ object PipelineConfig {
     __obj.asInstanceOf[PipelineConfig]
   }
   
-  extension [Self <: PipelineConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelineConfig] (val x: Self) extends AnyVal {
     
     inline def setFunctions(value: FunctionsIds): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     

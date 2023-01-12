@@ -43,7 +43,8 @@ object DispatchTouchEventRequest {
     __obj.asInstanceOf[DispatchTouchEventRequest]
   }
   
-  extension [Self <: DispatchTouchEventRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DispatchTouchEventRequest] (val x: Self) extends AnyVal {
     
     inline def setModifiers(value: integer): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     

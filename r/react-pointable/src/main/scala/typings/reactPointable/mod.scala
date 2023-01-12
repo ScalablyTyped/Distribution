@@ -596,7 +596,8 @@ object mod {
       __obj.asInstanceOf[PointableProps]
     }
     
-    extension [Self <: PointableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointableProps] (val x: Self) extends AnyVal {
       
       inline def setAccentHeight(value: Double | String): Self = StObject.set(x, "accentHeight", value.asInstanceOf[js.Any])
       

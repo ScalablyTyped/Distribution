@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ui-select"
-version := "0.19.8-dt-20220818Z-f20483"
+version := "0.19.8-dt-20220818Z-e4d331"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

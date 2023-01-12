@@ -23,7 +23,8 @@ object VerifySMSSandboxPhoneNumberInput {
     __obj.asInstanceOf[VerifySMSSandboxPhoneNumberInput]
   }
   
-  extension [Self <: VerifySMSSandboxPhoneNumberInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifySMSSandboxPhoneNumberInput] (val x: Self) extends AnyVal {
     
     inline def setOneTimePassword(value: OTPCode): Self = StObject.set(x, "OneTimePassword", value.asInstanceOf[js.Any])
     

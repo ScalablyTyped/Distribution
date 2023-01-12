@@ -50,7 +50,8 @@ object InitializerOptions {
     __obj.asInstanceOf[InitializerOptions]
   }
   
-  extension [Self <: InitializerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitializerOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     

@@ -95,7 +95,8 @@ object typesGetObjectAclInputMod {
       __obj.asInstanceOf[GetObjectAclInput]
     }
     
-    extension [Self <: GetObjectAclInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetObjectAclInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

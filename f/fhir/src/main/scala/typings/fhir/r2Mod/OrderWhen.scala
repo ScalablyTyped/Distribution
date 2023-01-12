@@ -25,7 +25,8 @@ object OrderWhen {
     __obj.asInstanceOf[OrderWhen]
   }
   
-  extension [Self <: OrderWhen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderWhen] (val x: Self) extends AnyVal {
     
     inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

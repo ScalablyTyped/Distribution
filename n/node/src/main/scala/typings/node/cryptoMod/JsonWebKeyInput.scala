@@ -18,7 +18,8 @@ object JsonWebKeyInput {
     __obj.asInstanceOf[JsonWebKeyInput]
   }
   
-  extension [Self <: JsonWebKeyInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonWebKeyInput] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: jwk): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

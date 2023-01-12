@@ -48,7 +48,8 @@ object Client {
     __obj.asInstanceOf[Client]
   }
   
-  extension [Self <: Client](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
     
     inline def setDisableScroll(value: Boolean): Self = StObject.set(x, "disableScroll", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ClosedDaysRule {
     __obj.asInstanceOf[ClosedDaysRule]
   }
   
-  extension [Self <: ClosedDaysRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClosedDaysRule] (val x: Self) extends AnyVal {
     
     inline def setEndDateTime(value: string): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object DecayAnimationConfig {
     __obj.asInstanceOf[DecayAnimationConfig]
   }
   
-  extension [Self <: DecayAnimationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecayAnimationConfig] (val x: Self) extends AnyVal {
     
     inline def setDeceleration(value: Double): Self = StObject.set(x, "deceleration", value.asInstanceOf[js.Any])
     

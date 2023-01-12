@@ -34,7 +34,8 @@ object GetParametersPathOrgRunnergroupidQueryPagePerpage {
     __obj.asInstanceOf[GetParametersPathOrgRunnergroupidQueryPagePerpage]
   }
   
-  extension [Self <: GetParametersPathOrgRunnergroupidQueryPagePerpage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersPathOrgRunnergroupidQueryPagePerpage] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersPathOrgRunnergroupidQueryPagePerpage): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeleteResolverRuleRequest {
     __obj.asInstanceOf[DeleteResolverRuleRequest]
   }
   
-  extension [Self <: DeleteResolverRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteResolverRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setResolverRuleId(value: ResourceId): Self = StObject.set(x, "ResolverRuleId", value.asInstanceOf[js.Any])
   }

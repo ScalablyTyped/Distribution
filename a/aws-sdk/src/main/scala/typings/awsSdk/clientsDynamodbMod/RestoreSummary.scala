@@ -33,7 +33,8 @@ object RestoreSummary {
     __obj.asInstanceOf[RestoreSummary]
   }
   
-  extension [Self <: RestoreSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreSummary] (val x: Self) extends AnyVal {
     
     inline def setRestoreDateTime(value: js.Date): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
     

@@ -558,7 +558,8 @@ object InputContainerPropsMultiple {
     __obj.asInstanceOf[InputContainerPropsMultiple[T]]
   }
   
-  extension [Self <: InputContainerPropsMultiple[?], T /* <: TypeaheadModel */](x: Self & InputContainerPropsMultiple[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputContainerPropsMultiple[?], T /* <: TypeaheadModel */] (val x: Self & InputContainerPropsMultiple[T]) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object GetSdkRequest {
     __obj.asInstanceOf[GetSdkRequest]
   }
   
-  extension [Self <: GetSdkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSdkRequest] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: MapOfStringToString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

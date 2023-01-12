@@ -33,7 +33,8 @@ object SecureHeapUsage {
     __obj.asInstanceOf[SecureHeapUsage]
   }
   
-  extension [Self <: SecureHeapUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecureHeapUsage] (val x: Self) extends AnyVal {
     
     inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     

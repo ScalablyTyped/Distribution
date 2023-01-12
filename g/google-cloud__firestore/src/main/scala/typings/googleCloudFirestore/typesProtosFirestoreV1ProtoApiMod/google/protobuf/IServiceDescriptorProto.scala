@@ -23,7 +23,8 @@ object IServiceDescriptorProto {
     __obj.asInstanceOf[IServiceDescriptorProto]
   }
   
-  extension [Self <: IServiceDescriptorProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IServiceDescriptorProto] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: js.Array[IMethodDescriptorProto]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

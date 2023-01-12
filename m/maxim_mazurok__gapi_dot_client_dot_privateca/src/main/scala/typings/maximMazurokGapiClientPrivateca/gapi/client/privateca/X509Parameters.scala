@@ -28,7 +28,8 @@ object X509Parameters {
     __obj.asInstanceOf[X509Parameters]
   }
   
-  extension [Self <: X509Parameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X509Parameters] (val x: Self) extends AnyVal {
     
     inline def setAdditionalExtensions(value: js.Array[X509Extension]): Self = StObject.set(x, "additionalExtensions", value.asInstanceOf[js.Any])
     

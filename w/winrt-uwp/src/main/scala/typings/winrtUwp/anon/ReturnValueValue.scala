@@ -17,7 +17,8 @@ object ReturnValueValue {
     __obj.asInstanceOf[ReturnValueValue]
   }
   
-  extension [Self <: ReturnValueValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnValueValue] (val x: Self) extends AnyVal {
     
     inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     

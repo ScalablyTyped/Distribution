@@ -17,7 +17,8 @@ object InfoPageinfo {
     __obj.asInstanceOf[InfoPageinfo]
   }
   
-  extension [Self <: InfoPageinfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfoPageinfo] (val x: Self) extends AnyVal {
     
     inline def setInfo(value: js.Array[Cardlocale]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     

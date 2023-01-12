@@ -23,7 +23,8 @@ object Analysisconfig {
     __obj.asInstanceOf[Analysisconfig]
   }
   
-  extension [Self <: Analysisconfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Analysisconfig] (val x: Self) extends AnyVal {
     
     inline def setAnalysis_config(value: MlAnalysisConfig): Self = StObject.set(x, "analysis_config", value.asInstanceOf[js.Any])
     

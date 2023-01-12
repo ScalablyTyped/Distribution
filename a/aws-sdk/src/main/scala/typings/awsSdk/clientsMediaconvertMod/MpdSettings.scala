@@ -48,7 +48,8 @@ object MpdSettings {
     __obj.asInstanceOf[MpdSettings]
   }
   
-  extension [Self <: MpdSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MpdSettings] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityCaptionHints(value: MpdAccessibilityCaptionHints): Self = StObject.set(x, "AccessibilityCaptionHints", value.asInstanceOf[js.Any])
     

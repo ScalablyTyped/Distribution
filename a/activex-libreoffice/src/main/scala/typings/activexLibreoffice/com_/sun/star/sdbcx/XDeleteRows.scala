@@ -33,7 +33,8 @@ object XDeleteRows {
     __obj.asInstanceOf[XDeleteRows]
   }
   
-  extension [Self <: XDeleteRows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDeleteRows] (val x: Self) extends AnyVal {
     
     inline def setDeleteRows(value: SeqEquiv[Any] => SafeArray[Double]): Self = StObject.set(x, "deleteRows", js.Any.fromFunction1(value))
   }

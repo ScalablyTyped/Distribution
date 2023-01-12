@@ -28,7 +28,8 @@ object IHTMLDOMAttribute {
     __obj.asInstanceOf[IHTMLDOMAttribute]
   }
   
-  extension [Self <: IHTMLDOMAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHTMLDOMAttribute] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotIHTMLDOMAttribute_typekey(value: IHTMLDOMAttribute): Self = StObject.set(x, "MSHTML.IHTMLDOMAttribute_typekey", value.asInstanceOf[js.Any])
     

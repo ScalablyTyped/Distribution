@@ -47,7 +47,8 @@ object ExtensionCategory {
     __obj.asInstanceOf[ExtensionCategory]
   }
   
-  extension [Self <: ExtensionCategory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionCategory] (val x: Self) extends AnyVal {
     
     inline def setAssociatedProducts(value: js.Array[String]): Self = StObject.set(x, "associatedProducts", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object CreateBucketConfiguration {
     __obj.asInstanceOf[CreateBucketConfiguration]
   }
   
-  extension [Self <: CreateBucketConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBucketConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLocationConstraint(value: BucketLocationConstraint): Self = StObject.set(x, "LocationConstraint", value.asInstanceOf[js.Any])
     

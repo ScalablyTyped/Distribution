@@ -59,7 +59,8 @@ object SuccessOptions {
     __obj.asInstanceOf[SuccessOptions]
   }
   
-  extension [Self <: SuccessOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuccessOptions] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: String | js.Function): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     

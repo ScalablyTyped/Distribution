@@ -44,7 +44,8 @@ object PackageRegistryBackend {
     __obj.asInstanceOf[PackageRegistryBackend]
   }
   
-  extension [Self <: PackageRegistryBackend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageRegistryBackend] (val x: Self) extends AnyVal {
     
     inline def setCreatePersistent(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "createPersistent", js.Any.fromFunction3(value))
     

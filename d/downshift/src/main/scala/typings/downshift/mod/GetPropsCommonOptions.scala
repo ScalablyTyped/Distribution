@@ -15,7 +15,8 @@ object GetPropsCommonOptions {
     __obj.asInstanceOf[GetPropsCommonOptions]
   }
   
-  extension [Self <: GetPropsCommonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPropsCommonOptions] (val x: Self) extends AnyVal {
     
     inline def setSuppressRefError(value: Boolean): Self = StObject.set(x, "suppressRefError", value.asInstanceOf[js.Any])
     

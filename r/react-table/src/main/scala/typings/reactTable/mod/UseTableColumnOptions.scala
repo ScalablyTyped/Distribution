@@ -25,7 +25,8 @@ object UseTableColumnOptions {
     __obj.asInstanceOf[UseTableColumnOptions[D]]
   }
   
-  extension [Self <: UseTableColumnOptions[?], D /* <: js.Object */](x: Self & UseTableColumnOptions[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseTableColumnOptions[?], D /* <: js.Object */] (val x: Self & UseTableColumnOptions[D]) extends AnyVal {
     
     inline def setFooter(value: Renderer[FooterProps[D]]): Self = StObject.set(x, "Footer", value.asInstanceOf[js.Any])
     

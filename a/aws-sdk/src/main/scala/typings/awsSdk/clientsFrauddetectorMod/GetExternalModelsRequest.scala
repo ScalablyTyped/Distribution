@@ -28,7 +28,8 @@ object GetExternalModelsRequest {
     __obj.asInstanceOf[GetExternalModelsRequest]
   }
   
-  extension [Self <: GetExternalModelsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetExternalModelsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ExternalModelsMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

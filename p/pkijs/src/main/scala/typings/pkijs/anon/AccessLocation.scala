@@ -18,7 +18,8 @@ object AccessLocation {
     __obj.asInstanceOf[AccessLocation]
   }
   
-  extension [Self <: AccessLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessLocation] (val x: Self) extends AnyVal {
     
     inline def setAccessLocation(value: GeneralNameSchema): Self = StObject.set(x, "accessLocation", value.asInstanceOf[js.Any])
     

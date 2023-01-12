@@ -17,7 +17,8 @@ object TargetingValueDayPartTargeting {
     __obj.asInstanceOf[TargetingValueDayPartTargeting]
   }
   
-  extension [Self <: TargetingValueDayPartTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetingValueDayPartTargeting] (val x: Self) extends AnyVal {
     
     inline def setDayParts(value: js.Array[TargetingValueDayPartTargetingDayPart]): Self = StObject.set(x, "dayParts", value.asInstanceOf[js.Any])
     

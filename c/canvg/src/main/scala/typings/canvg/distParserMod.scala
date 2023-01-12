@@ -47,7 +47,8 @@ object distParserMod {
       __obj.asInstanceOf[IParserOptions]
     }
     
-    extension [Self <: IParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParserOptions] (val x: Self) extends AnyVal {
       
       inline def setDOMParser(value: DOMParserConstructor): Self = StObject.set(x, "DOMParser", value.asInstanceOf[js.Any])
       

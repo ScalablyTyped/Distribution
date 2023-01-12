@@ -21,7 +21,8 @@ object TimeSetObject {
     __obj.asInstanceOf[TimeSetObject]
   }
   
-  extension [Self <: TimeSetObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeSetObject] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

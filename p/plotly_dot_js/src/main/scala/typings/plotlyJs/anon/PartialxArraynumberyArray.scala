@@ -18,7 +18,8 @@ object PartialxArraynumberyArray {
     __obj.asInstanceOf[PartialxArraynumberyArray]
   }
   
-  extension [Self <: PartialxArraynumberyArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialxArraynumberyArray] (val x: Self) extends AnyVal {
     
     inline def setX(value: js.Array[Double]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

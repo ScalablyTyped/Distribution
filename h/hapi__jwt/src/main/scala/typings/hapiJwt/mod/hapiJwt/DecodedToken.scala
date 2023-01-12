@@ -29,7 +29,8 @@ object DecodedToken {
     __obj.asInstanceOf[DecodedToken]
   }
   
-  extension [Self <: DecodedToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecodedToken] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: Alg): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

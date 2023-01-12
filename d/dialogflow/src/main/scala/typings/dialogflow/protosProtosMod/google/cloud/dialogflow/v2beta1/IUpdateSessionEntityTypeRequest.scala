@@ -21,7 +21,8 @@ object IUpdateSessionEntityTypeRequest {
     __obj.asInstanceOf[IUpdateSessionEntityTypeRequest]
   }
   
-  extension [Self <: IUpdateSessionEntityTypeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUpdateSessionEntityTypeRequest] (val x: Self) extends AnyVal {
     
     inline def setSessionEntityType(value: ISessionEntityType): Self = StObject.set(x, "sessionEntityType", value.asInstanceOf[js.Any])
     

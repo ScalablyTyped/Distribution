@@ -154,7 +154,8 @@ object mod {
       __obj.asInstanceOf[Parsers_]
     }
     
-    extension [Self <: Parsers_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parsers_] (val x: Self) extends AnyVal {
       
       inline def setAvif(value: () => ParserStream): Self = StObject.set(x, "avif", js.Any.fromFunction0(value))
       
@@ -219,7 +220,8 @@ object mod {
       __obj.asInstanceOf[ProbeResult]
     }
     
-    extension [Self <: ProbeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProbeResult] (val x: Self) extends AnyVal {
       
       inline def setHUnits(value: String): Self = StObject.set(x, "hUnits", value.asInstanceOf[js.Any])
       
@@ -262,7 +264,8 @@ object mod {
       __obj.asInstanceOf[Variant]
     }
     
-    extension [Self <: Variant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Variant] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object AggregationsHoltWintersMovingAverageAggregation {
     __obj.asInstanceOf[AggregationsHoltWintersMovingAverageAggregation]
   }
   
-  extension [Self <: AggregationsHoltWintersMovingAverageAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsHoltWintersMovingAverageAggregation] (val x: Self) extends AnyVal {
     
     inline def setModel(value: holt_winters): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object ECBlocks {
     __obj.asInstanceOf[ECBlocks]
   }
   
-  extension [Self <: ECBlocks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ECBlocks] (val x: Self) extends AnyVal {
     
     inline def setECCodewordsPerBlock(value: Double): Self = StObject.set(x, "ECCodewordsPerBlock", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object VideoDiscoveryAdBuilder {
     __obj.asInstanceOf[VideoDiscoveryAdBuilder]
   }
   
-  extension [Self <: VideoDiscoveryAdBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoDiscoveryAdBuilder] (val x: Self) extends AnyVal {
     
     inline def setWithAdName(value: String => VideoDiscoveryAdBuilder): Self = StObject.set(x, "withAdName", js.Any.fromFunction1(value))
     

@@ -162,7 +162,8 @@ object ViewProps {
     __obj.asInstanceOf[ViewProps[TEvent, TResource]]
   }
   
-  extension [Self <: ViewProps[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */](x: Self & (ViewProps[TEvent, TResource])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewProps[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self & (ViewProps[TEvent, TResource])) extends AnyVal {
     
     inline def setAccessors(value: Any): Self = StObject.set(x, "accessors", value.asInstanceOf[js.Any])
     

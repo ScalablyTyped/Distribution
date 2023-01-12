@@ -18,7 +18,8 @@ object DeleteServiceProfileRequest {
     __obj.asInstanceOf[DeleteServiceProfileRequest]
   }
   
-  extension [Self <: DeleteServiceProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteServiceProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: ServiceProfileId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }

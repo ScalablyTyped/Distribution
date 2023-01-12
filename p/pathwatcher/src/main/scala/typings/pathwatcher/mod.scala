@@ -244,7 +244,8 @@ object mod {
       __obj.asInstanceOf[PathWatchErrorThrownEvent]
     }
     
-    extension [Self <: PathWatchErrorThrownEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathWatchErrorThrownEvent] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -268,7 +269,8 @@ object mod {
       __obj.asInstanceOf[PathWatcher]
     }
     
-    extension [Self <: PathWatcher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathWatcher] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -289,7 +291,8 @@ object mod {
       __obj.asInstanceOf[WatchedFilePathChangedEvent]
     }
     
-    extension [Self <: WatchedFilePathChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WatchedFilePathChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       

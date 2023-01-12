@@ -69,7 +69,8 @@ object anon {
       __obj.asInstanceOf[Packed]
     }
     
-    extension [Self <: Packed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Packed] (val x: Self) extends AnyVal {
       
       inline def setPacked(value: Boolean): Self = StObject.set(x, "packed", value.asInstanceOf[js.Any])
       

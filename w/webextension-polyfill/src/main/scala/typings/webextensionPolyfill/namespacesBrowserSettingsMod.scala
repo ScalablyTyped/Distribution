@@ -180,7 +180,8 @@ object namespacesBrowserSettingsMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setAllowPopupsForUserEvents(value: Setting): Self = StObject.set(x, "allowPopupsForUserEvents", value.asInstanceOf[js.Any])
         

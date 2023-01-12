@@ -24,7 +24,8 @@ object AsyncEventEnd {
     __obj.asInstanceOf[AsyncEventEnd]
   }
   
-  extension [Self <: AsyncEventEnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncEventEnd] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

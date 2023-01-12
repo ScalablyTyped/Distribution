@@ -28,7 +28,8 @@ object IfConditionalExpression {
     __obj.asInstanceOf[IfConditionalExpression]
   }
   
-  extension [Self <: IfConditionalExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IfConditionalExpression] (val x: Self) extends AnyVal {
     
     inline def setAlternate(value: BlockCodegenNode | IfConditionalExpression | MemoExpression): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object CounterStructuredName {
     __obj.asInstanceOf[CounterStructuredName]
   }
   
-  extension [Self <: CounterStructuredName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CounterStructuredName] (val x: Self) extends AnyVal {
     
     inline def setComponentStepName(value: String): Self = StObject.set(x, "componentStepName", value.asInstanceOf[js.Any])
     

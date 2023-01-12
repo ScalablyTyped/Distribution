@@ -26,7 +26,8 @@ object EncounterClassHistory {
     __obj.asInstanceOf[EncounterClassHistory]
   }
   
-  extension [Self <: EncounterClassHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncounterClassHistory] (val x: Self) extends AnyVal {
     
     inline def setClass(value: Coding): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     

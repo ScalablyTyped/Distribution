@@ -23,7 +23,8 @@ object AlternatePathHint {
     __obj.asInstanceOf[AlternatePathHint]
   }
   
-  extension [Self <: AlternatePathHint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlternatePathHint] (val x: Self) extends AnyVal {
     
     inline def setComponentArn(value: String): Self = StObject.set(x, "ComponentArn", value.asInstanceOf[js.Any])
     

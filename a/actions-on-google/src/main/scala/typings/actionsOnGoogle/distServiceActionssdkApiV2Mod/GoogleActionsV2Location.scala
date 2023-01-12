@@ -71,7 +71,8 @@ object GoogleActionsV2Location {
     __obj.asInstanceOf[GoogleActionsV2Location]
   }
   
-  extension [Self <: GoogleActionsV2Location](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2Location] (val x: Self) extends AnyVal {
     
     inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     

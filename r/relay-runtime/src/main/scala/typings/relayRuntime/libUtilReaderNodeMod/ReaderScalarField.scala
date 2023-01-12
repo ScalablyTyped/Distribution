@@ -26,7 +26,8 @@ object ReaderScalarField {
     __obj.asInstanceOf[ReaderScalarField]
   }
   
-  extension [Self <: ReaderScalarField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaderScalarField] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

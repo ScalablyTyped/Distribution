@@ -18,7 +18,8 @@ object BatchAttachTypedLinkResponse {
     __obj.asInstanceOf[BatchAttachTypedLinkResponse]
   }
   
-  extension [Self <: BatchAttachTypedLinkResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchAttachTypedLinkResponse] (val x: Self) extends AnyVal {
     
     inline def setTypedLinkSpecifier(value: TypedLinkSpecifier): Self = StObject.set(x, "TypedLinkSpecifier", value.asInstanceOf[js.Any])
     

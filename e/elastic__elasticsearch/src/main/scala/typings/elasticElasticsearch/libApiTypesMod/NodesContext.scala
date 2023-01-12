@@ -21,7 +21,8 @@ object NodesContext {
     __obj.asInstanceOf[NodesContext]
   }
   
-  extension [Self <: NodesContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesContext] (val x: Self) extends AnyVal {
     
     inline def setCache_evictions(value: long): Self = StObject.set(x, "cache_evictions", value.asInstanceOf[js.Any])
     

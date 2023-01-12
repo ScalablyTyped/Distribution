@@ -19,7 +19,8 @@ object Frame {
     __obj.asInstanceOf[Frame]
   }
   
-  extension [Self <: Frame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Frame] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: Stop | Location): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

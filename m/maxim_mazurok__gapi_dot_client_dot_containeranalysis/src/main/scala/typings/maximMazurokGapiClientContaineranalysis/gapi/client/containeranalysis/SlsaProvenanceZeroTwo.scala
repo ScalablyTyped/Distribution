@@ -27,7 +27,8 @@ object SlsaProvenanceZeroTwo {
     __obj.asInstanceOf[SlsaProvenanceZeroTwo]
   }
   
-  extension [Self <: SlsaProvenanceZeroTwo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlsaProvenanceZeroTwo] (val x: Self) extends AnyVal {
     
     inline def setBuildConfig(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

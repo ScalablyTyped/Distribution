@@ -75,7 +75,8 @@ object IDecorationOptions {
     __obj.asInstanceOf[IDecorationOptions]
   }
   
-  extension [Self <: IDecorationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDecorationOptions] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: right | left): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

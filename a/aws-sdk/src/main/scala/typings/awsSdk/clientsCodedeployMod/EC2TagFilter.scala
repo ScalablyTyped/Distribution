@@ -28,7 +28,8 @@ object EC2TagFilter {
     __obj.asInstanceOf[EC2TagFilter]
   }
   
-  extension [Self <: EC2TagFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EC2TagFilter] (val x: Self) extends AnyVal {
     
     inline def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

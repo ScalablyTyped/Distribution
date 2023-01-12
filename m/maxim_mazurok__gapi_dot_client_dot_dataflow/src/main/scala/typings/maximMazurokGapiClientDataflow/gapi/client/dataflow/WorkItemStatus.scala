@@ -71,7 +71,8 @@ object WorkItemStatus {
     __obj.asInstanceOf[WorkItemStatus]
   }
   
-  extension [Self <: WorkItemStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemStatus] (val x: Self) extends AnyVal {
     
     inline def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     

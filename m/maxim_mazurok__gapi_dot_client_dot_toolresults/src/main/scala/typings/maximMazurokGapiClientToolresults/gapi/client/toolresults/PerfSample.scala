@@ -19,7 +19,8 @@ object PerfSample {
     __obj.asInstanceOf[PerfSample]
   }
   
-  extension [Self <: PerfSample](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerfSample] (val x: Self) extends AnyVal {
     
     inline def setSampleTime(value: Timestamp): Self = StObject.set(x, "sampleTime", value.asInstanceOf[js.Any])
     

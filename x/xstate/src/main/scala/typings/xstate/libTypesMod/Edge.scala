@@ -37,7 +37,8 @@ object Edge {
     __obj.asInstanceOf[Edge[TContext, TEvent, TEventType]]
   }
   
-  extension [Self <: Edge[?, ?, ?], TContext, TEvent /* <: EventObject */, TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */](x: Self & (Edge[TContext, TEvent, TEventType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Edge[?, ?, ?], TContext, TEvent /* <: EventObject */, TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */] (val x: Self & (Edge[TContext, TEvent, TEventType])) extends AnyVal {
     
     inline def setActions(value: js.Array[Action[TContext, TEvent]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

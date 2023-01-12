@@ -142,7 +142,8 @@ object typesLatestSrcServiceClientMod {
       __obj.asInstanceOf[ProxySettings]
     }
     
-    extension [Self <: ProxySettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxySettings] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -244,7 +245,8 @@ object typesLatestSrcServiceClientMod {
       __obj.asInstanceOf[ServiceClientOptions]
     }
     
-    extension [Self <: ServiceClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceClientOptions] (val x: Self) extends AnyVal {
       
       inline def setClientRequestIdHeaderName(value: String): Self = StObject.set(x, "clientRequestIdHeaderName", value.asInstanceOf[js.Any])
       

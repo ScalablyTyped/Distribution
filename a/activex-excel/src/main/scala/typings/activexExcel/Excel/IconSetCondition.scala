@@ -84,7 +84,8 @@ object IconSetCondition {
     __obj.asInstanceOf[IconSetCondition]
   }
   
-  extension [Self <: IconSetCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconSetCondition] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

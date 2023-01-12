@@ -42,7 +42,8 @@ object DefaultFastifyPluginAsync {
     __obj.asInstanceOf[DefaultFastifyPluginAsync[Options, Server, TypeProvider]]
   }
   
-  extension [Self <: DefaultFastifyPluginAsync[?, ?, ?], Options /* <: FastifyPluginOptions */, Server /* <: RawServerBase */, TypeProvider /* <: FastifyTypeProvider */](x: Self & (DefaultFastifyPluginAsync[Options, Server, TypeProvider])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultFastifyPluginAsync[?, ?, ?], Options /* <: FastifyPluginOptions */, Server /* <: RawServerBase */, TypeProvider /* <: FastifyTypeProvider */] (val x: Self & (DefaultFastifyPluginAsync[Options, Server, TypeProvider])) extends AnyVal {
     
     inline def setDefault(
       value: (/* instance */ FastifyInstance[

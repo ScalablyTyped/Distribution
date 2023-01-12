@@ -36,7 +36,8 @@ object Groupsubtitle {
     __obj.asInstanceOf[Groupsubtitle[ES]]
   }
   
-  extension [Self <: Groupsubtitle[?], ES /* <: ExprRef | SignalRef */](x: Self & Groupsubtitle[ES]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Groupsubtitle[?], ES /* <: ExprRef | SignalRef */] (val x: Self & Groupsubtitle[ES]) extends AnyVal {
     
     inline def `setGroup-subtitle`(value: MarkConfig[ES]): Self = StObject.set(x, "group-subtitle", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object Entitlement {
     __obj.asInstanceOf[Entitlement]
   }
   
-  extension [Self <: Entitlement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Entitlement] (val x: Self) extends AnyVal {
     
     inline def setAppVisibility(value: AppVisibility): Self = StObject.set(x, "AppVisibility", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object UpdateRouteCalculatorRequest {
     __obj.asInstanceOf[UpdateRouteCalculatorRequest]
   }
   
-  extension [Self <: UpdateRouteCalculatorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRouteCalculatorRequest] (val x: Self) extends AnyVal {
     
     inline def setCalculatorName(value: ResourceName): Self = StObject.set(x, "CalculatorName", value.asInstanceOf[js.Any])
     

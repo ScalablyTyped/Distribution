@@ -55,7 +55,8 @@ object QueryLambda {
     __obj.asInstanceOf[QueryLambda]
   }
   
-  extension [Self <: QueryLambda](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryLambda] (val x: Self) extends AnyVal {
     
     inline def setCollections(value: js.Array[String]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
     

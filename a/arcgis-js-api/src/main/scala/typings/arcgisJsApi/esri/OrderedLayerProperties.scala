@@ -22,7 +22,8 @@ object OrderedLayerProperties {
     __obj.asInstanceOf[OrderedLayerProperties]
   }
   
-  extension [Self <: OrderedLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderedLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setOrderBy(value: js.Array[OrderedLayerOrderBy]): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     

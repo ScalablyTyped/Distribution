@@ -28,7 +28,8 @@ object ListAWSDefaultServiceQuotasRequest {
     __obj.asInstanceOf[ListAWSDefaultServiceQuotasRequest]
   }
   
-  extension [Self <: ListAWSDefaultServiceQuotasRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAWSDefaultServiceQuotasRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

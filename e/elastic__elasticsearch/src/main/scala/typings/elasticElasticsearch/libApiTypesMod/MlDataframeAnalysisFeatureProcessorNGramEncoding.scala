@@ -25,7 +25,8 @@ object MlDataframeAnalysisFeatureProcessorNGramEncoding {
     __obj.asInstanceOf[MlDataframeAnalysisFeatureProcessorNGramEncoding]
   }
   
-  extension [Self <: MlDataframeAnalysisFeatureProcessorNGramEncoding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeAnalysisFeatureProcessorNGramEncoding] (val x: Self) extends AnyVal {
     
     inline def setCustom(value: Boolean): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     

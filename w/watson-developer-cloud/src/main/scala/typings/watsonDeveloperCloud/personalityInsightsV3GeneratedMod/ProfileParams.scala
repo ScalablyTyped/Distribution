@@ -45,7 +45,8 @@ object ProfileParams {
     __obj.asInstanceOf[ProfileParams]
   }
   
-  extension [Self <: ProfileParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileParams] (val x: Self) extends AnyVal {
     
     inline def setAccept_language(value: AcceptLanguage | String): Self = StObject.set(x, "accept_language", value.asInstanceOf[js.Any])
     

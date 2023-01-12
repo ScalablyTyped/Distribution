@@ -52,7 +52,8 @@ object RefSort {
     __obj.asInstanceOf[RefSort]
   }
   
-  extension [Self <: RefSort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefSort] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

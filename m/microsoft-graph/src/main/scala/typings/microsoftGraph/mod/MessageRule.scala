@@ -39,7 +39,8 @@ object MessageRule {
     __obj.asInstanceOf[MessageRule]
   }
   
-  extension [Self <: MessageRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageRule] (val x: Self) extends AnyVal {
     
     inline def setActions(value: NullableOption[MessageRuleActions]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

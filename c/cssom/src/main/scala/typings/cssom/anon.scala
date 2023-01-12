@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Expression]
     }
     
-    extension [Self <: Expression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expression] (val x: Self) extends AnyVal {
       
       inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       

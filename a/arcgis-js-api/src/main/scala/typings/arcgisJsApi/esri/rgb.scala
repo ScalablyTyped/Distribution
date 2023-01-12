@@ -25,7 +25,8 @@ object rgb {
     __obj.asInstanceOf[rgb]
   }
   
-  extension [Self <: rgb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: rgb] (val x: Self) extends AnyVal {
     
     inline def setCreateRenderer(value: rgbCreateRendererParams => js.Promise[RasterRGBResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
   }

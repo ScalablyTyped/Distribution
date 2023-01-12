@@ -52,7 +52,8 @@ object IMonthPicker {
     __obj.asInstanceOf[IMonthPicker]
   }
   
-  extension [Self <: IMonthPicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMonthPicker] (val x: Self) extends AnyVal {
     
     inline def setAdjustYear(value: /* offset */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "adjustYear", js.Any.fromFunction1(value))
     

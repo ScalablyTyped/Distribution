@@ -70,7 +70,8 @@ object componentsContentSwitcherContentSwitcherMod {
       __obj.asInstanceOf[ContentSwitcherOptions]
     }
     
-    extension [Self <: ContentSwitcherOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentSwitcherOptions] (val x: Self) extends AnyVal {
       
       inline def setClassActive(value: String): Self = StObject.set(x, "classActive", value.asInstanceOf[js.Any])
       

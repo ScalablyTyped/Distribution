@@ -28,7 +28,8 @@ object ListAnomalousLogGroupsRequest {
     __obj.asInstanceOf[ListAnomalousLogGroupsRequest]
   }
   
-  extension [Self <: ListAnomalousLogGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAnomalousLogGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setInsightId(value: InsightId): Self = StObject.set(x, "InsightId", value.asInstanceOf[js.Any])
     

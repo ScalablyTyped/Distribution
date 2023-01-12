@@ -24,7 +24,8 @@ object Anchor {
     __obj.asInstanceOf[Anchor]
   }
   
-  extension [Self <: Anchor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Anchor] (val x: Self) extends AnyVal {
     
     inline def setKind(value: boundary | end | `not-boundary` | start): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }

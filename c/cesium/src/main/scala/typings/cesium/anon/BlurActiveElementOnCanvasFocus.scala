@@ -71,7 +71,8 @@ object BlurActiveElementOnCanvasFocus {
     __obj.asInstanceOf[BlurActiveElementOnCanvasFocus]
   }
   
-  extension [Self <: BlurActiveElementOnCanvasFocus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlurActiveElementOnCanvasFocus] (val x: Self) extends AnyVal {
     
     inline def setBlurActiveElementOnCanvasFocus(value: Boolean): Self = StObject.set(x, "blurActiveElementOnCanvasFocus", value.asInstanceOf[js.Any])
     

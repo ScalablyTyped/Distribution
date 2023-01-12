@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[CallbackifyAllOptions]
     }
     
-    extension [Self <: CallbackifyAllOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackifyAllOptions] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object mod {
       __obj.asInstanceOf[PromisifyAllOptions]
     }
     
-    extension [Self <: PromisifyAllOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromisifyAllOptions] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -100,7 +102,8 @@ object mod {
       __obj.asInstanceOf[PromisifyOptions]
     }
     
-    extension [Self <: PromisifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromisifyOptions] (val x: Self) extends AnyVal {
       
       inline def setSingular(value: Boolean): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
       
@@ -119,7 +122,8 @@ object mod {
       __obj.asInstanceOf[WithPromise]
     }
     
-    extension [Self <: WithPromise](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithPromise] (val x: Self) extends AnyVal {
       
       inline def setPromise(value: PromiseConstructor): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       

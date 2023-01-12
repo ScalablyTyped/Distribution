@@ -40,7 +40,8 @@ object hid {
       __obj.asInstanceOf[Collection]
     }
     
-    extension [Self <: Collection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Collection] (val x: Self) extends AnyVal {
       
       inline def setReportIds(value: js.Array[integer]): Self = StObject.set(x, "reportIds", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object hid {
       __obj.asInstanceOf[DeviceFilter]
     }
     
-    extension [Self <: DeviceFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceFilter] (val x: Self) extends AnyVal {
       
       inline def setProductId(value: integer): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object hid {
       __obj.asInstanceOf[DeviceOptions]
     }
     
-    extension [Self <: DeviceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceOptions] (val x: Self) extends AnyVal {
       
       inline def setFilters(value: js.Array[DeviceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
@@ -201,7 +204,8 @@ object hid {
       __obj.asInstanceOf[HidDeviceInfo]
     }
     
-    extension [Self <: HidDeviceInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HidDeviceInfo] (val x: Self) extends AnyVal {
       
       inline def setCollections(value: js.Array[Collection]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
       
@@ -247,7 +251,8 @@ object hid {
       __obj.asInstanceOf[UserSelectedDevicePickerOptions]
     }
     
-    extension [Self <: UserSelectedDevicePickerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserSelectedDevicePickerOptions] (val x: Self) extends AnyVal {
       
       inline def setFilters(value: js.Array[DeviceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       

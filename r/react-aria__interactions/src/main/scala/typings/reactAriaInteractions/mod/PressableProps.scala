@@ -18,7 +18,8 @@ object PressableProps {
     __obj.asInstanceOf[PressableProps]
   }
   
-  extension [Self <: PressableProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PressableProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
   }

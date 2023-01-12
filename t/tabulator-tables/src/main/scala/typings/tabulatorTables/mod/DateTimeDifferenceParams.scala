@@ -32,7 +32,8 @@ object DateTimeDifferenceParams {
     __obj.asInstanceOf[DateTimeDifferenceParams]
   }
   
-  extension [Self <: DateTimeDifferenceParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimeDifferenceParams] (val x: Self) extends AnyVal {
     
     inline def setDate(value: Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

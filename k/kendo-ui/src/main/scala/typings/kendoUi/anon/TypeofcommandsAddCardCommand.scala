@@ -75,7 +75,8 @@ object TypeofcommandsAddCardCommand {
     __obj.asInstanceOf[TypeofcommandsAddCardCommand]
   }
   
-  extension [Self <: TypeofcommandsAddCardCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofcommandsAddCardCommand] (val x: Self) extends AnyVal {
     
     inline def setAddCardCommand(value: Instantiable0[AddCardCommand]): Self = StObject.set(x, "AddCardCommand", value.asInstanceOf[js.Any])
     

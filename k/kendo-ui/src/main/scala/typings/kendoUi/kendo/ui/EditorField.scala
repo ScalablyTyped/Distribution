@@ -19,7 +19,8 @@ object EditorField {
     __obj.asInstanceOf[EditorField]
   }
   
-  extension [Self <: EditorField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorField] (val x: Self) extends AnyVal {
     
     inline def setEditor(value: String): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     

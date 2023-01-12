@@ -30,7 +30,8 @@ object KnockoutEditable {
     __obj.asInstanceOf[KnockoutEditable]
   }
   
-  extension [Self <: KnockoutEditable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutEditable] (val x: Self) extends AnyVal {
     
     inline def setAddEditable(value: Any => Any): Self = StObject.set(x, "addEditable", js.Any.fromFunction1(value))
     

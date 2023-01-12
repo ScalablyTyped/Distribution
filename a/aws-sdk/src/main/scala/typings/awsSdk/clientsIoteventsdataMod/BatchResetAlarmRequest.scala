@@ -18,7 +18,8 @@ object BatchResetAlarmRequest {
     __obj.asInstanceOf[BatchResetAlarmRequest]
   }
   
-  extension [Self <: BatchResetAlarmRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchResetAlarmRequest] (val x: Self) extends AnyVal {
     
     inline def setResetActionRequests(value: ResetAlarmActionRequests): Self = StObject.set(x, "resetActionRequests", value.asInstanceOf[js.Any])
     

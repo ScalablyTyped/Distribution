@@ -92,7 +92,8 @@ object DropdownMenuConfigurationProps {
     __obj.asInstanceOf[DropdownMenuConfigurationProps]
   }
   
-  extension [Self <: DropdownMenuConfigurationProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropdownMenuConfigurationProps] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: PositionAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

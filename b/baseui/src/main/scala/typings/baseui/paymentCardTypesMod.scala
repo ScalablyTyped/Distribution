@@ -40,7 +40,8 @@ object paymentCardTypesMod {
       __obj.asInstanceOf[PaymentCardOverrides]
     }
     
-    extension [Self <: PaymentCardOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentCardOverrides] (val x: Self) extends AnyVal {
       
       inline def setIconWrapper(value: Override[Any]): Self = StObject.set(x, "IconWrapper", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object paymentCardTypesMod {
       __obj.asInstanceOf[PaymentCardProps]
     }
     
-    extension [Self <: PaymentCardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentCardProps] (val x: Self) extends AnyVal {
       
       inline def setOverrides(value: PaymentCardOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     }
@@ -184,7 +186,8 @@ object paymentCardTypesMod {
       __obj.asInstanceOf[StatefulPaymentCardProps]
     }
     
-    extension [Self <: StatefulPaymentCardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulPaymentCardProps] (val x: Self) extends AnyVal {
       
       inline def setAdjoined(value: Adjoined): Self = StObject.set(x, "adjoined", value.asInstanceOf[js.Any])
       

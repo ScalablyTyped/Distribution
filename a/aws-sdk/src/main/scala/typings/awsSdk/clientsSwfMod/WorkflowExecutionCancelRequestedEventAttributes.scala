@@ -28,7 +28,8 @@ object WorkflowExecutionCancelRequestedEventAttributes {
     __obj.asInstanceOf[WorkflowExecutionCancelRequestedEventAttributes]
   }
   
-  extension [Self <: WorkflowExecutionCancelRequestedEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowExecutionCancelRequestedEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setCause(value: WorkflowExecutionCancelRequestedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

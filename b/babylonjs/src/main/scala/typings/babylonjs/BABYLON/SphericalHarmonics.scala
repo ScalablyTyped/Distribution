@@ -143,7 +143,8 @@ object SphericalHarmonics {
     __obj.asInstanceOf[SphericalHarmonics]
   }
   
-  extension [Self <: SphericalHarmonics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SphericalHarmonics] (val x: Self) extends AnyVal {
     
     inline def setAddLight(value: (Vector3, Color3, Double) => Unit): Self = StObject.set(x, "addLight", js.Any.fromFunction3(value))
     

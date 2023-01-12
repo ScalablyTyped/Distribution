@@ -18,7 +18,8 @@ object ResourceDefinitionVersion {
     __obj.asInstanceOf[ResourceDefinitionVersion]
   }
   
-  extension [Self <: ResourceDefinitionVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceDefinitionVersion] (val x: Self) extends AnyVal {
     
     inline def setResources(value: listOfResource): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     

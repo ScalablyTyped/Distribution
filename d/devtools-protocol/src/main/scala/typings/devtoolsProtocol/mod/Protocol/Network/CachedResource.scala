@@ -34,7 +34,8 @@ object CachedResource {
     __obj.asInstanceOf[CachedResource]
   }
   
-  extension [Self <: CachedResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CachedResource] (val x: Self) extends AnyVal {
     
     inline def setBodySize(value: Double): Self = StObject.set(x, "bodySize", value.asInstanceOf[js.Any])
     

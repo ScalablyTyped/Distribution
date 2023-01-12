@@ -53,7 +53,8 @@ object buildSrcMakeClientMod {
       __obj.asInstanceOf[ClientMethodDefinition[RequestType, ResponseType]]
     }
     
-    extension [Self <: ClientMethodDefinition[?, ?], RequestType, ResponseType](x: Self & (ClientMethodDefinition[RequestType, ResponseType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientMethodDefinition[?, ?], RequestType, ResponseType] (val x: Self & (ClientMethodDefinition[RequestType, ResponseType])) extends AnyVal {
       
       inline def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object buildSrcMakeClientMod {
       __obj.asInstanceOf[MethodDefinition[RequestType, ResponseType]]
     }
     
-    extension [Self <: MethodDefinition[?, ?], RequestType, ResponseType](x: Self & (MethodDefinition[RequestType, ResponseType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MethodDefinition[?, ?], RequestType, ResponseType] (val x: Self & (MethodDefinition[RequestType, ResponseType])) extends AnyVal {
       
       inline def setRequestDeserialize(value: /* bytes */ Buffer => RequestType): Self = StObject.set(x, "requestDeserialize", js.Any.fromFunction1(value))
       
@@ -146,7 +148,8 @@ object buildSrcMakeClientMod {
       __obj.asInstanceOf[ProtobufTypeDefinition]
     }
     
-    extension [Self <: ProtobufTypeDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtobufTypeDefinition] (val x: Self) extends AnyVal {
       
       inline def setFileDescriptorProtos(value: js.Array[Buffer]): Self = StObject.set(x, "fileDescriptorProtos", value.asInstanceOf[js.Any])
       
@@ -191,7 +194,8 @@ object buildSrcMakeClientMod {
       __obj.asInstanceOf[ServerMethodDefinition[RequestType, ResponseType]]
     }
     
-    extension [Self <: ServerMethodDefinition[?, ?], RequestType, ResponseType](x: Self & (ServerMethodDefinition[RequestType, ResponseType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerMethodDefinition[?, ?], RequestType, ResponseType] (val x: Self & (ServerMethodDefinition[RequestType, ResponseType])) extends AnyVal {
       
       inline def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
       

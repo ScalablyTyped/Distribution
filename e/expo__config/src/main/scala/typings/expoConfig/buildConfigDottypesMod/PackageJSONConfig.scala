@@ -19,7 +19,8 @@ object PackageJSONConfig {
     __obj.asInstanceOf[PackageJSONConfig]
   }
   
-  extension [Self <: PackageJSONConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageJSONConfig] (val x: Self) extends AnyVal {
     
     inline def setDependencies(value: Record[String, String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     

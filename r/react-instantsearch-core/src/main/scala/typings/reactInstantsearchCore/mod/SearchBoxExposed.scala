@@ -16,7 +16,8 @@ object SearchBoxExposed {
     __obj.asInstanceOf[SearchBoxExposed]
   }
   
-  extension [Self <: SearchBoxExposed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchBoxExposed] (val x: Self) extends AnyVal {
     
     inline def setDefaultRefinement(value: String): Self = StObject.set(x, "defaultRefinement", value.asInstanceOf[js.Any])
     

@@ -339,7 +339,8 @@ object libRestPreviewSyncServiceSyncMapMod {
       __obj.asInstanceOf[SyncMapListInstanceCreateOptions]
     }
     
-    extension [Self <: SyncMapListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncMapListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
       
@@ -388,7 +389,8 @@ object libRestPreviewSyncServiceSyncMapMod {
       __obj.asInstanceOf[SyncMapListInstanceEachOptions]
     }
     
-    extension [Self <: SyncMapListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncMapListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ SyncMapInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -437,7 +439,8 @@ object libRestPreviewSyncServiceSyncMapMod {
       __obj.asInstanceOf[SyncMapListInstanceOptions]
     }
     
-    extension [Self <: SyncMapListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncMapListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -471,7 +474,8 @@ object libRestPreviewSyncServiceSyncMapMod {
       __obj.asInstanceOf[SyncMapListInstancePageOptions]
     }
     
-    extension [Self <: SyncMapListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncMapListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
@@ -556,7 +560,8 @@ object libRestPreviewSyncServiceSyncMapMod {
       __obj.asInstanceOf[SyncMapResource]
     }
     
-    extension [Self <: SyncMapResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncMapResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -591,7 +596,8 @@ object libRestPreviewSyncServiceSyncMapMod {
       __obj.asInstanceOf[SyncMapSolution]
     }
     
-    extension [Self <: SyncMapSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncMapSolution] (val x: Self) extends AnyVal {
       
       inline def setServiceSid(value: String): Self = StObject.set(x, "serviceSid", value.asInstanceOf[js.Any])
       

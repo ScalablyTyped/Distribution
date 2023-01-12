@@ -15,7 +15,8 @@ object EnumValuesInactive {
     __obj.asInstanceOf[EnumValuesInactive]
   }
   
-  extension [Self <: EnumValuesInactive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesInactive] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: Inactive): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

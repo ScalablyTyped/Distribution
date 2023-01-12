@@ -20,7 +20,8 @@ object ExpansionProfileDesignationInclude {
     __obj.asInstanceOf[ExpansionProfileDesignationInclude]
   }
   
-  extension [Self <: ExpansionProfileDesignationInclude](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpansionProfileDesignationInclude] (val x: Self) extends AnyVal {
     
     inline def setDesignation(value: js.Array[ExpansionProfileDesignationIncludeDesignation]): Self = StObject.set(x, "designation", value.asInstanceOf[js.Any])
     

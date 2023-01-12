@@ -20,7 +20,8 @@ object StepsPips {
     __obj.asInstanceOf[StepsPips]
   }
   
-  extension [Self <: StepsPips](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepsPips] (val x: Self) extends AnyVal {
     
     inline def setMode(value: Steps): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }

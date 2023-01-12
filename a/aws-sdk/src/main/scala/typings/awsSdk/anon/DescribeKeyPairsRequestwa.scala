@@ -50,7 +50,8 @@ object DescribeKeyPairsRequestwa {
     __obj.asInstanceOf[DescribeKeyPairsRequestwa]
   }
   
-  extension [Self <: DescribeKeyPairsRequestwa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeKeyPairsRequestwa] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListMigrationTasksResult {
     __obj.asInstanceOf[ListMigrationTasksResult]
   }
   
-  extension [Self <: ListMigrationTasksResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMigrationTasksResult] (val x: Self) extends AnyVal {
     
     inline def setMigrationTaskSummaryList(value: MigrationTaskSummaryList): Self = StObject.set(x, "MigrationTaskSummaryList", value.asInstanceOf[js.Any])
     

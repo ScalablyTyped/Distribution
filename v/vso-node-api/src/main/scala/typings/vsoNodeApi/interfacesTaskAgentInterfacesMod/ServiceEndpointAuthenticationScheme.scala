@@ -27,7 +27,8 @@ object ServiceEndpointAuthenticationScheme {
     __obj.asInstanceOf[ServiceEndpointAuthenticationScheme]
   }
   
-  extension [Self <: ServiceEndpointAuthenticationScheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceEndpointAuthenticationScheme] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationHeaders(value: js.Array[AuthorizationHeader]): Self = StObject.set(x, "authorizationHeaders", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object TypeCheck {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCustomTypes(value: CustomType): Self = StObject.set(x, "customTypes", value.asInstanceOf[js.Any])
     }

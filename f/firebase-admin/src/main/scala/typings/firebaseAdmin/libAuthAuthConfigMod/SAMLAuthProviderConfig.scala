@@ -60,7 +60,8 @@ object SAMLAuthProviderConfig {
     __obj.asInstanceOf[SAMLAuthProviderConfig]
   }
   
-  extension [Self <: SAMLAuthProviderConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SAMLAuthProviderConfig] (val x: Self) extends AnyVal {
     
     inline def setCallbackURL(value: String): Self = StObject.set(x, "callbackURL", value.asInstanceOf[js.Any])
     

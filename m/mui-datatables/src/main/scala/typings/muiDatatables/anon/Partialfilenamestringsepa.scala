@@ -20,7 +20,8 @@ object Partialfilenamestringsepa {
     __obj.asInstanceOf[Partialfilenamestringsepa]
   }
   
-  extension [Self <: Partialfilenamestringsepa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialfilenamestringsepa] (val x: Self) extends AnyVal {
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object libModelsPoliciesMod {
       __obj.asInstanceOf[Policies]
     }
     
-    extension [Self <: Policies](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Policies] (val x: Self) extends AnyVal {
       
       inline def setPolicies(value: StringDictionary[Policy]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     }
@@ -37,7 +38,8 @@ object libModelsPoliciesMod {
       __obj.asInstanceOf[Policy]
     }
     
-    extension [Self <: Policy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Policy] (val x: Self) extends AnyVal {
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
@@ -56,7 +58,8 @@ object libModelsPoliciesMod {
       __obj.asInstanceOf[TranslatedPolicy]
     }
     
-    extension [Self <: TranslatedPolicy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TranslatedPolicy] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

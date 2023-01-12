@@ -258,7 +258,8 @@ object GetScriptLexicalStructureWalker {
     __obj.asInstanceOf[GetScriptLexicalStructureWalker]
   }
   
-  extension [Self <: GetScriptLexicalStructureWalker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetScriptLexicalStructureWalker] (val x: Self) extends AnyVal {
     
     inline def setAddAdditionalSpan(value: (Any, Any) => Any): Self = StObject.set(x, "addAdditionalSpan", js.Any.fromFunction2(value))
     

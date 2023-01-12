@@ -28,7 +28,8 @@ object GetSecretValueRequest {
     __obj.asInstanceOf[GetSecretValueRequest]
   }
   
-  extension [Self <: GetSecretValueRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSecretValueRequest] (val x: Self) extends AnyVal {
     
     inline def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
     

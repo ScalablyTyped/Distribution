@@ -69,7 +69,8 @@ object libColMod {
       __obj.asInstanceOf[ColProps]
     }
     
-    extension [Self <: ColProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColProps] (val x: Self) extends AnyVal {
       
       inline def setComponentClass(value: ElementType[Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       

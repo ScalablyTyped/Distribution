@@ -26,7 +26,8 @@ object XFilterFormulaParser {
     __obj.asInstanceOf[XFilterFormulaParser]
   }
   
-  extension [Self <: XFilterFormulaParser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFilterFormulaParser] (val x: Self) extends AnyVal {
     
     inline def setSupportedNamespace(value: String): Self = StObject.set(x, "SupportedNamespace", value.asInstanceOf[js.Any])
   }

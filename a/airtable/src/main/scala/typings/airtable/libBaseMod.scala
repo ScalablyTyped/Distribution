@@ -78,7 +78,8 @@ object libBaseMod {
       __obj.asInstanceOf[BaseRequestOptions]
     }
     
-    extension [Self <: BaseRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: BaseBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object libBaseMod {
       __obj.asInstanceOf[BaseResponse]
     }
     
-    extension [Self <: BaseResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseResponse] (val x: Self) extends AnyVal {
       
       inline def setBody(value: BaseBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

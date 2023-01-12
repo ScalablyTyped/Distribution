@@ -18,7 +18,8 @@ object AggregationsTopHitsAggregate {
     __obj.asInstanceOf[AggregationsTopHitsAggregate]
   }
   
-  extension [Self <: AggregationsTopHitsAggregate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsTopHitsAggregate] (val x: Self) extends AnyVal {
     
     inline def setHits(value: SearchHitsMetadata[Any]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
   }

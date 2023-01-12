@@ -25,7 +25,8 @@ object TrackOptions {
     __obj.asInstanceOf[TrackOptions]
   }
   
-  extension [Self <: TrackOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackOptions] (val x: Self) extends AnyVal {
     
     inline def setMacros(value: Record[String, Any]): Self = StObject.set(x, "macros", value.asInstanceOf[js.Any])
     

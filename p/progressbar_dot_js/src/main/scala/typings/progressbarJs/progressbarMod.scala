@@ -116,7 +116,8 @@ object progressbarMod {
         __obj.asInstanceOf[AnimationOptions]
       }
       
-      extension [Self <: AnimationOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AnimationOptions] (val x: Self) extends AnyVal {
         
         inline def setAttachement(value: SVGPathElement): Self = StObject.set(x, "attachement", value.asInstanceOf[js.Any])
         
@@ -191,7 +192,8 @@ object progressbarMod {
         __obj.asInstanceOf[Color]
       }
       
-      extension [Self <: Color](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
         
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       }
@@ -273,7 +275,8 @@ object progressbarMod {
         __obj.asInstanceOf[PathDrawingOptions]
       }
       
-      extension [Self <: PathDrawingOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PathDrawingOptions] (val x: Self) extends AnyVal {
         
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -376,7 +379,8 @@ object progressbarMod {
         __obj.asInstanceOf[TextOptions]
       }
       
-      extension [Self <: TextOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TextOptions] (val x: Self) extends AnyVal {
         
         inline def setAlignToBottom(value: Boolean): Self = StObject.set(x, "alignToBottom", value.asInstanceOf[js.Any])
         

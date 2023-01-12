@@ -68,7 +68,8 @@ object EditorOptions {
     __obj.asInstanceOf[EditorOptions[TComponent]]
   }
   
-  extension [Self <: EditorOptions[?], TComponent](x: Self & EditorOptions[TComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorOptions[?], TComponent] (val x: Self & EditorOptions[TComponent]) extends AnyVal {
     
     inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     

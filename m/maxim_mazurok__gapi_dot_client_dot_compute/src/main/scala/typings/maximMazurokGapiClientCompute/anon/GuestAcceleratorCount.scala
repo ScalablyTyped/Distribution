@@ -19,7 +19,8 @@ object GuestAcceleratorCount {
     __obj.asInstanceOf[GuestAcceleratorCount]
   }
   
-  extension [Self <: GuestAcceleratorCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GuestAcceleratorCount] (val x: Self) extends AnyVal {
     
     inline def setGuestAcceleratorCount(value: Double): Self = StObject.set(x, "guestAcceleratorCount", value.asInstanceOf[js.Any])
     

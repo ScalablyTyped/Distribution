@@ -150,7 +150,8 @@ object distLayoutSrcFlexMod {
       __obj.asInstanceOf[InnerFlexProps]
     }
     
-    extension [Self <: InnerFlexProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerFlexProps] (val x: Self) extends AnyVal {
       
       inline def setAlignContent(
         value: start | end | center | `space-between` | `space-around` | `space-evenly` | stretch | baseline | (`first baseline`) | (`last baseline`) | (`safe center`) | (`unsafe center`)

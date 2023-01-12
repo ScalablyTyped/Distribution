@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Basename]
     }
     
-    extension [Self <: Basename](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Basename] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object anon {
       __obj.asInstanceOf[EncType]
     }
     
-    extension [Self <: EncType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncType] (val x: Self) extends AnyVal {
       
       inline def setEncType(value: String): Self = StObject.set(x, "encType", value.asInstanceOf[js.Any])
       
@@ -110,7 +112,8 @@ object anon {
       __obj.asInstanceOf[IsActive]
     }
     
-    extension [Self <: IsActive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsActive] (val x: Self) extends AnyVal {
       
       inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object anon {
       __obj.asInstanceOf[OmitSubmitOptionsreplace]
     }
     
-    extension [Self <: OmitSubmitOptionsreplace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitSubmitOptionsreplace] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -176,7 +180,8 @@ object anon {
       __obj.asInstanceOf[PartialLocation]
     }
     
-    extension [Self <: PartialLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLocation] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -219,7 +224,8 @@ object anon {
       __obj.asInstanceOf[PreventScrollReset]
     }
     
-    extension [Self <: PreventScrollReset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreventScrollReset] (val x: Self) extends AnyVal {
       
       inline def setPreventScrollReset(value: Boolean): Self = StObject.set(x, "preventScrollReset", value.asInstanceOf[js.Any])
       
@@ -254,7 +260,8 @@ object anon {
       __obj.asInstanceOf[Relative]
     }
     
-    extension [Self <: Relative](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Relative] (val x: Self) extends AnyVal {
       
       inline def setRelative(value: RelativeRoutingType): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       

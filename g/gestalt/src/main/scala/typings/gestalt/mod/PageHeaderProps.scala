@@ -42,7 +42,8 @@ object PageHeaderProps {
     __obj.asInstanceOf[PageHeaderProps]
   }
   
-  extension [Self <: PageHeaderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageHeaderProps] (val x: Self) extends AnyVal {
     
     inline def setBadge(value: PageHeaderBadge): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     

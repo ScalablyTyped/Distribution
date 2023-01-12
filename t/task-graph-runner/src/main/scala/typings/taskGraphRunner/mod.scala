@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[Opts[Item, Result]]
     }
     
-    extension [Self <: Opts[?, ?], Item, Result](x: Self & (Opts[Item, Result])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opts[?, ?], Item, Result] (val x: Self & (Opts[Item, Result])) extends AnyVal {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object mod {
       __obj.asInstanceOf[Results[Item, Result]]
     }
     
-    extension [Self <: Results[?, ?], Item, Result](x: Self & (Results[Item, Result])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Results[?, ?], Item, Result] (val x: Self & (Results[Item, Result])) extends AnyVal {
       
       inline def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
       

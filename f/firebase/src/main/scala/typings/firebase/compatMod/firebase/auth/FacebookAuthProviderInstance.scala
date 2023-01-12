@@ -43,7 +43,8 @@ object FacebookAuthProviderInstance {
     __obj.asInstanceOf[FacebookAuthProviderInstance]
   }
   
-  extension [Self <: FacebookAuthProviderInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FacebookAuthProviderInstance] (val x: Self) extends AnyVal {
     
     inline def setAddScope(value: String => AuthProvider): Self = StObject.set(x, "addScope", js.Any.fromFunction1(value))
     

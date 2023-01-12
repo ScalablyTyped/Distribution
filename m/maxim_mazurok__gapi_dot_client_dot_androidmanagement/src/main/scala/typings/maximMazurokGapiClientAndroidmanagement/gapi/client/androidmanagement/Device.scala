@@ -136,7 +136,8 @@ object Device {
     __obj.asInstanceOf[Device]
   }
   
-  extension [Self <: Device](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
     
     inline def setApiLevel(value: Double): Self = StObject.set(x, "apiLevel", value.asInstanceOf[js.Any])
     

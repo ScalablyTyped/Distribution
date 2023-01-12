@@ -25,7 +25,8 @@ object QueryDslHasParentQuery {
     __obj.asInstanceOf[QueryDslHasParentQuery]
   }
   
-  extension [Self <: QueryDslHasParentQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslHasParentQuery] (val x: Self) extends AnyVal {
     
     inline def setIgnore_unmapped(value: Boolean): Self = StObject.set(x, "ignore_unmapped", value.asInstanceOf[js.Any])
     

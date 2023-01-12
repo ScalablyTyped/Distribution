@@ -30,7 +30,8 @@ object FancyBoxFullScreen {
     __obj.asInstanceOf[FancyBoxFullScreen]
   }
   
-  extension [Self <: FancyBoxFullScreen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancyBoxFullScreen] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: () => Boolean): Self = StObject.set(x, "enabled", js.Any.fromFunction0(value))
     

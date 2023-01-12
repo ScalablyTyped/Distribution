@@ -91,7 +91,8 @@ object libMenuMenuMod {
       __obj.asInstanceOf[MenuGroupProps]
     }
     
-    extension [Self <: MenuGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuGroupProps] (val x: Self) extends AnyVal {
       
       inline def setHeadingLevel(value: `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "headingLevel", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object libMenuMenuMod {
       __obj.asInstanceOf[MenuItemProps]
     }
     
-    extension [Self <: MenuItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -204,7 +206,8 @@ object libMenuMenuMod {
       __obj.asInstanceOf[MenuListProps]
     }
     
-    extension [Self <: MenuListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuListProps] (val x: Self) extends AnyVal {
       
       inline def setAddonBefore(value: Boolean): Self = StObject.set(x, "addonBefore", value.asInstanceOf[js.Any])
       
@@ -231,7 +234,8 @@ object libMenuMenuMod {
       __obj.asInstanceOf[MenuProps]
     }
     
-    extension [Self <: MenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuProps] (val x: Self) extends AnyVal {
       
       inline def setAddonBefore(value: Boolean): Self = StObject.set(x, "addonBefore", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object SetShowIsolatedElementsRequest {
     __obj.asInstanceOf[SetShowIsolatedElementsRequest]
   }
   
-  extension [Self <: SetShowIsolatedElementsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetShowIsolatedElementsRequest] (val x: Self) extends AnyVal {
     
     inline def setIsolatedElementHighlightConfigs(value: js.Array[IsolatedElementHighlightConfig]): Self = StObject.set(x, "isolatedElementHighlightConfigs", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object PersistentStorageSystem {
     __obj.asInstanceOf[PersistentStorageSystem]
   }
   
-  extension [Self <: PersistentStorageSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistentStorageSystem] (val x: Self) extends AnyVal {
     
     inline def setStore(value: GeneralDataStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
   }

@@ -45,7 +45,8 @@ object distSrcUpnpDeviceMod {
       __obj.asInstanceOf[GatewayDevice]
     }
     
-    extension [Self <: GatewayDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GatewayDevice] (val x: Self) extends AnyVal {
       
       inline def setDeviceList(value: typings.achingbrainNatPortMapper.anon.Device): Self = StObject.set(x, "deviceList", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object distSrcUpnpDeviceMod {
       __obj.asInstanceOf[GatewayService]
     }
     
-    extension [Self <: GatewayService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GatewayService] (val x: Self) extends AnyVal {
       
       inline def setControlURL(value: String): Self = StObject.set(x, "controlURL", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object distSrcUpnpDeviceMod {
       __obj.asInstanceOf[InternetGatewayDevice]
     }
     
-    extension [Self <: InternetGatewayDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternetGatewayDevice] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: GatewayDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     }

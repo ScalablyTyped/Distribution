@@ -38,7 +38,8 @@ object esComponentsFooterToolbarMod {
       __obj.asInstanceOf[FooterToolbarProps]
     }
     
-    extension [Self <: FooterToolbarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FooterToolbarProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -77,7 +77,8 @@ object libFieldAggregatorMinFieldAggregatorMod {
       __obj.asInstanceOf[MinFieldAggregator]
     }
     
-    extension [Self <: MinFieldAggregator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinFieldAggregator] (val x: Self) extends AnyVal {
       
       inline def setFValue(value: Any): Self = StObject.set(x, "fValue", value.asInstanceOf[js.Any])
       

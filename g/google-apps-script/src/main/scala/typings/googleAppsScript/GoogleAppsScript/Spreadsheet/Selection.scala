@@ -51,7 +51,8 @@ object Selection {
     __obj.asInstanceOf[Selection]
   }
   
-  extension [Self <: Selection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Selection] (val x: Self) extends AnyVal {
     
     inline def setGetActiveRange(value: () => Range | Null): Self = StObject.set(x, "getActiveRange", js.Any.fromFunction0(value))
     

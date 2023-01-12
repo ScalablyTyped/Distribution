@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[Cancel]
     }
     
-    extension [Self <: Cancel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object anon {
       __obj.asInstanceOf[Descending]
     }
     
-    extension [Self <: Descending](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Descending] (val x: Self) extends AnyVal {
       
       inline def setDescending(value: Boolean): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
       
@@ -145,7 +147,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -166,7 +169,8 @@ object anon {
       __obj.asInstanceOf[Password]
     }
     
-    extension [Self <: Password](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Password] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
@@ -185,7 +189,8 @@ object anon {
       __obj.asInstanceOf[Url]
     }
     
-    extension [Self <: Url](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

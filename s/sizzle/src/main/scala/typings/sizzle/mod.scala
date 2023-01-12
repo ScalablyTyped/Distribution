@@ -85,7 +85,8 @@ object mod extends Shortcut {
     
     type Matches = StringDictionary[js.RegExp]
     
-    extension [Self <: Selectors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Selectors] (val x: Self) extends AnyVal {
       
       inline def setAttrHandle(value: AttrHandleFunctions): Self = StObject.set(x, "attrHandle", value.asInstanceOf[js.Any])
       

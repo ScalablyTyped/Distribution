@@ -64,7 +64,8 @@ object GETime {
     __obj.asInstanceOf[GETime]
   }
   
-  extension [Self <: GETime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GETime] (val x: Self) extends AnyVal {
     
     inline def setGetControl(value: () => GETimeControl): Self = StObject.set(x, "getControl", js.Any.fromFunction0(value))
     

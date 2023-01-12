@@ -18,7 +18,8 @@ object ProgressUpdateStreamSummary {
     __obj.asInstanceOf[ProgressUpdateStreamSummary]
   }
   
-  extension [Self <: ProgressUpdateStreamSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressUpdateStreamSummary] (val x: Self) extends AnyVal {
     
     inline def setProgressUpdateStreamName(value: ProgressUpdateStream): Self = StObject.set(x, "ProgressUpdateStreamName", value.asInstanceOf[js.Any])
     

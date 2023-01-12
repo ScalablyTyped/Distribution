@@ -182,7 +182,8 @@ object libRestPreviewUnderstandAssistantAssistantFallbackActionsMod {
       __obj.asInstanceOf[AssistantFallbackActionsInstanceUpdateOptions]
     }
     
-    extension [Self <: AssistantFallbackActionsInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssistantFallbackActionsInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setFallbackActions(value: js.Object): Self = StObject.set(x, "fallbackActions", value.asInstanceOf[js.Any])
       
@@ -249,7 +250,8 @@ object libRestPreviewUnderstandAssistantAssistantFallbackActionsMod {
       __obj.asInstanceOf[AssistantFallbackActionsResource]
     }
     
-    extension [Self <: AssistantFallbackActionsResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssistantFallbackActionsResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -272,7 +274,8 @@ object libRestPreviewUnderstandAssistantAssistantFallbackActionsMod {
       __obj.asInstanceOf[AssistantFallbackActionsSolution]
     }
     
-    extension [Self <: AssistantFallbackActionsSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssistantFallbackActionsSolution] (val x: Self) extends AnyVal {
       
       inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
       

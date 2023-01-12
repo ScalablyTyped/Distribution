@@ -38,7 +38,8 @@ object Readonlynamesuspensequery {
     __obj.asInstanceOf[Readonlynamesuspensequery]
   }
   
-  extension [Self <: Readonlynamesuspensequery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlynamesuspensequery] (val x: Self) extends AnyVal {
     
     inline def setFetchPolicy(value: String): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
     

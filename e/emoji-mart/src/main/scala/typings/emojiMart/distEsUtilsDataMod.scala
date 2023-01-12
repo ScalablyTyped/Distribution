@@ -32,7 +32,8 @@ object distEsUtilsDataMod {
       __obj.asInstanceOf[Category]
     }
     
-    extension [Self <: Category](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
       
       inline def setEmojis(value: js.Array[String]): Self = StObject.set(x, "emojis", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object distEsUtilsDataMod {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: StringDictionary[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object distEsUtilsDataMod {
       __obj.asInstanceOf[Emoji]
     }
     
-    extension [Self <: Emoji](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Emoji] (val x: Self) extends AnyVal {
       
       inline def setA(value: String): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -366,7 +369,8 @@ object distEsUtilsDataMod {
       __obj.asInstanceOf[SkinVariation]
     }
     
-    extension [Self <: SkinVariation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkinVariation] (val x: Self) extends AnyVal {
       
       inline def setAdded_in(value: String): Self = StObject.set(x, "added_in", value.asInstanceOf[js.Any])
       

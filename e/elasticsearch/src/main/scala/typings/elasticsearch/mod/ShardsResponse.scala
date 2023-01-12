@@ -21,7 +21,8 @@ object ShardsResponse {
     __obj.asInstanceOf[ShardsResponse]
   }
   
-  extension [Self <: ShardsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShardsResponse] (val x: Self) extends AnyVal {
     
     inline def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object SchedulerMessagesViews {
     __obj.asInstanceOf[SchedulerMessagesViews]
   }
   
-  extension [Self <: SchedulerMessagesViews](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerMessagesViews] (val x: Self) extends AnyVal {
     
     inline def setAgenda(value: String): Self = StObject.set(x, "agenda", value.asInstanceOf[js.Any])
     

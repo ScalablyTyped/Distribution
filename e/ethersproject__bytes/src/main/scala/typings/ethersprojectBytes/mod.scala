@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[DataOptions]
     }
     
-    extension [Self <: DataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowMissingPrefix(value: Boolean): Self = StObject.set(x, "allowMissingPrefix", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object mod {
       __obj.asInstanceOf[Hexable]
     }
     
-    extension [Self <: Hexable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hexable] (val x: Self) extends AnyVal {
       
       inline def setToHexString(value: () => String): Self = StObject.set(x, "toHexString", js.Any.fromFunction0(value))
     }
@@ -142,7 +144,8 @@ object mod {
       __obj.asInstanceOf[Signature]
     }
     
-    extension [Self <: Signature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Signature] (val x: Self) extends AnyVal {
       
       inline def setCompact(value: String): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       

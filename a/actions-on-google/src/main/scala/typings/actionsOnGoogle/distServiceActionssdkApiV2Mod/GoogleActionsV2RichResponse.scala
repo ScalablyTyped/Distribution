@@ -44,7 +44,8 @@ object GoogleActionsV2RichResponse {
     __obj.asInstanceOf[GoogleActionsV2RichResponse]
   }
   
-  extension [Self <: GoogleActionsV2RichResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2RichResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[GoogleActionsV2RichResponseItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

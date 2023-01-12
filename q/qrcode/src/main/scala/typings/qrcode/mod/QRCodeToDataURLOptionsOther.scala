@@ -25,7 +25,8 @@ object QRCodeToDataURLOptionsOther {
     __obj.asInstanceOf[QRCodeToDataURLOptionsOther]
   }
   
-  extension [Self <: QRCodeToDataURLOptionsOther](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QRCodeToDataURLOptionsOther] (val x: Self) extends AnyVal {
     
     inline def setType(value: Exclude[QRCodeDataURLType, imageSlashjpeg | imageSlashwebp]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

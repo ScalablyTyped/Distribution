@@ -23,7 +23,8 @@ object treeView {
       __obj.asInstanceOf[typings.uiGrid.mod.treeView.IGridOptions]
     }
     
-    extension [Self <: typings.uiGrid.mod.treeView.IGridOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.treeView.IGridOptions] (val x: Self) extends AnyVal {
       
       inline def setEnableTreeView(value: Boolean): Self = StObject.set(x, "enableTreeView", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object treeView {
       __obj.asInstanceOf[IUiGridTreeViewConstants]
     }
     
-    extension [Self <: IUiGridTreeViewConstants](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUiGridTreeViewConstants] (val x: Self) extends AnyVal {
       
       inline def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
     }

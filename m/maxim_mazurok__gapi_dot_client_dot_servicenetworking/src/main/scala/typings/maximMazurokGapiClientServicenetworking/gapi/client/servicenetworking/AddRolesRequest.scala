@@ -22,7 +22,8 @@ object AddRolesRequest {
     __obj.asInstanceOf[AddRolesRequest]
   }
   
-  extension [Self <: AddRolesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddRolesRequest] (val x: Self) extends AnyVal {
     
     inline def setConsumerNetwork(value: String): Self = StObject.set(x, "consumerNetwork", value.asInstanceOf[js.Any])
     

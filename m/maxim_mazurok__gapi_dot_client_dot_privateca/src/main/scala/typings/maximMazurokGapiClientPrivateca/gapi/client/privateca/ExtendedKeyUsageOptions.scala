@@ -31,7 +31,8 @@ object ExtendedKeyUsageOptions {
     __obj.asInstanceOf[ExtendedKeyUsageOptions]
   }
   
-  extension [Self <: ExtendedKeyUsageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendedKeyUsageOptions] (val x: Self) extends AnyVal {
     
     inline def setClientAuth(value: Boolean): Self = StObject.set(x, "clientAuth", value.asInstanceOf[js.Any])
     

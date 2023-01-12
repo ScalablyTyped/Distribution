@@ -23,7 +23,8 @@ object DisassociateLambdaFunctionRequest {
     __obj.asInstanceOf[DisassociateLambdaFunctionRequest]
   }
   
-  extension [Self <: DisassociateLambdaFunctionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateLambdaFunctionRequest] (val x: Self) extends AnyVal {
     
     inline def setFunctionArn(value: FunctionArn): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
     

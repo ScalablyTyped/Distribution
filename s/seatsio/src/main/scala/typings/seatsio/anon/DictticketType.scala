@@ -18,7 +18,8 @@ object DictticketType {
     __obj.asInstanceOf[DictticketType]
   }
   
-  extension [Self <: DictticketType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictticketType] (val x: Self) extends AnyVal {
     
     inline def setNO_TICKET_TYPE(value: Double): Self = StObject.set(x, "NO_TICKET_TYPE", value.asInstanceOf[js.Any])
   }

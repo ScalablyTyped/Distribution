@@ -86,7 +86,8 @@ object scrollReveal {
       __obj.asInstanceOf[ScrollRevealObjectOptions]
     }
     
-    extension [Self <: ScrollRevealObjectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollRevealObjectOptions] (val x: Self) extends AnyVal {
       
       inline def setAfterReset(value: /* domEl */ HTMLElement | NodeListOf[Element] => Unit): Self = StObject.set(x, "afterReset", js.Any.fromFunction1(value))
       
@@ -187,7 +188,8 @@ object scrollReveal {
       __obj.asInstanceOf[ScrollRevealPositionObject]
     }
     
-    extension [Self <: ScrollRevealPositionObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollRevealPositionObject] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -222,7 +224,8 @@ object scrollReveal {
       __obj.asInstanceOf[ScrollRevealRotateObject]
     }
     
-    extension [Self <: ScrollRevealRotateObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollRevealRotateObject] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

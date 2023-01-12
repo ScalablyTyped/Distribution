@@ -88,7 +88,8 @@ object VideoDescription {
     __obj.asInstanceOf[VideoDescription]
   }
   
-  extension [Self <: VideoDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoDescription] (val x: Self) extends AnyVal {
     
     inline def setAfdSignaling(value: AfdSignaling): Self = StObject.set(x, "AfdSignaling", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object PseudoClass {
     __obj.asInstanceOf[PseudoClass]
   }
   
-  extension [Self <: PseudoClass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PseudoClass] (val x: Self) extends AnyVal {
     
     inline def setColonComments(value: js.Array[Comment]): Self = StObject.set(x, "colonComments", value.asInstanceOf[js.Any])
     

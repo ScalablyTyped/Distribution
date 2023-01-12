@@ -51,7 +51,8 @@ object distDisplayObjectsCustomElementMod {
       __obj.asInstanceOf[BaseCustomElementStyleProps]
     }
     
-    extension [Self <: BaseCustomElementStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseCustomElementStyleProps] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

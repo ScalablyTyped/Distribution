@@ -89,7 +89,8 @@ object libEsmComponentsPortalPortalMod {
       __obj.asInstanceOf[IPortalProps]
     }
     
-    extension [Self <: IPortalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPortalProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object libEsmComponentsPortalPortalMod {
       __obj.asInstanceOf[IPortalState]
     }
     
-    extension [Self <: IPortalState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPortalState] (val x: Self) extends AnyVal {
       
       inline def setHasMounted(value: Boolean): Self = StObject.set(x, "hasMounted", value.asInstanceOf[js.Any])
     }
@@ -134,7 +136,8 @@ object libEsmComponentsPortalPortalMod {
       __obj.asInstanceOf[PortalLegacyContext]
     }
     
-    extension [Self <: PortalLegacyContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortalLegacyContext] (val x: Self) extends AnyVal {
       
       inline def setBlueprintPortalClassName(value: String): Self = StObject.set(x, "blueprintPortalClassName", value.asInstanceOf[js.Any])
       

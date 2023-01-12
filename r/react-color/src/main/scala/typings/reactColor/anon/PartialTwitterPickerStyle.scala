@@ -33,7 +33,8 @@ object PartialTwitterPickerStyle {
     __obj.asInstanceOf[PartialTwitterPickerStyle]
   }
   
-  extension [Self <: PartialTwitterPickerStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTwitterPickerStyle] (val x: Self) extends AnyVal {
     
     inline def setBody(value: CSSProperties): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

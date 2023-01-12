@@ -35,7 +35,8 @@ object IKnownFoldersStatics {
     __obj.asInstanceOf[IKnownFoldersStatics]
   }
   
-  extension [Self <: IKnownFoldersStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKnownFoldersStatics] (val x: Self) extends AnyVal {
     
     inline def setDocumentsLibrary(value: StorageFolder): Self = StObject.set(x, "documentsLibrary", value.asInstanceOf[js.Any])
     

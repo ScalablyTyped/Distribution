@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[CompressParams]
     }
     
-    extension [Self <: CompressParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompressParams] (val x: Self) extends AnyVal {
       
       inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object mod {
       __obj.asInstanceOf[CropParams]
     }
     
-    extension [Self <: CropParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CropParams] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -109,7 +111,8 @@ object mod {
       __obj.asInstanceOf[OperationsParams]
     }
     
-    extension [Self <: OperationsParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationsParams] (val x: Self) extends AnyVal {
       
       inline def setCompress(value: CompressParams): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
@@ -135,7 +138,8 @@ object mod {
       __obj.asInstanceOf[PDFThumbnailOptions]
     }
     
-    extension [Self <: PDFThumbnailOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PDFThumbnailOptions] (val x: Self) extends AnyVal {
       
       inline def setCompress(value: CompressParams): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
@@ -164,7 +168,8 @@ object mod {
       __obj.asInstanceOf[ResizeParams]
     }
     
-    extension [Self <: ResizeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeParams] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

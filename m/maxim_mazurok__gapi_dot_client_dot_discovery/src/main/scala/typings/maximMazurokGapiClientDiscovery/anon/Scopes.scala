@@ -18,7 +18,8 @@ object Scopes {
     __obj.asInstanceOf[Scopes]
   }
   
-  extension [Self <: Scopes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scopes] (val x: Self) extends AnyVal {
     
     inline def setScopes(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: {  description :string | undefined}} */ js.Any

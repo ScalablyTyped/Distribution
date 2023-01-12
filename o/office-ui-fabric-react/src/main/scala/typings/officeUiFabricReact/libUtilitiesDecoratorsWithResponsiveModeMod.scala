@@ -92,7 +92,8 @@ object libUtilitiesDecoratorsWithResponsiveModeMod {
       __obj.asInstanceOf[IWithResponsiveModeState]
     }
     
-    extension [Self <: IWithResponsiveModeState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWithResponsiveModeState] (val x: Self) extends AnyVal {
       
       inline def setResponsiveMode(value: ResponsiveMode): Self = StObject.set(x, "responsiveMode", value.asInstanceOf[js.Any])
       

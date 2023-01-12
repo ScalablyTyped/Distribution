@@ -23,7 +23,8 @@ object typesPriceMod {
       __obj.asInstanceOf[Price]
     }
     
-    extension [Self <: Price](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Price] (val x: Self) extends AnyVal {
       
       inline def setFormatted(value: String): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
       

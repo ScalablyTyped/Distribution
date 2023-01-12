@@ -82,7 +82,8 @@ object libSshMod {
       __obj.asInstanceOf[SSHKeyClientDeps]
     }
     
-    extension [Self <: SSHKeyClientDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SSHKeyClientDeps] (val x: Self) extends AnyVal {
       
       inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object libSshMod {
       __obj.asInstanceOf[SSHKeyCreateDetails]
     }
     
-    extension [Self <: SSHKeyCreateDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SSHKeyCreateDetails] (val x: Self) extends AnyVal {
       
       inline def setPubkey(value: String): Self = StObject.set(x, "pubkey", value.asInstanceOf[js.Any])
     }

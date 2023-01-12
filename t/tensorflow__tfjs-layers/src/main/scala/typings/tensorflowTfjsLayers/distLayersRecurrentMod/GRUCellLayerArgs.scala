@@ -47,7 +47,8 @@ object GRUCellLayerArgs {
     __obj.asInstanceOf[GRUCellLayerArgs]
   }
   
-  extension [Self <: GRUCellLayerArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GRUCellLayerArgs] (val x: Self) extends AnyVal {
     
     inline def setImplementation(value: Double): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     

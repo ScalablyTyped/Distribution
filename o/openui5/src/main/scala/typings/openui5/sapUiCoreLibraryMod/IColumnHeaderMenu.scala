@@ -42,7 +42,8 @@ object IColumnHeaderMenu {
     __obj.asInstanceOf[IColumnHeaderMenu]
   }
   
-  extension [Self <: IColumnHeaderMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColumnHeaderMenu] (val x: Self) extends AnyVal {
     
     inline def setGetAriaHasPopupType(
       value: () => HasPopup | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof aria.HasPopup * / any */ String)

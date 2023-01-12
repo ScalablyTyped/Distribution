@@ -109,7 +109,8 @@ object AppletShape {
     __obj.asInstanceOf[AppletShape]
   }
   
-  extension [Self <: AppletShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppletShape] (val x: Self) extends AnyVal {
     
     inline def setAppletCode(value: String): Self = StObject.set(x, "AppletCode", value.asInstanceOf[js.Any])
     

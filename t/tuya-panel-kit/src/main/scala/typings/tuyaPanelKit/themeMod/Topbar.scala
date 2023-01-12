@@ -22,7 +22,8 @@ object Topbar {
     __obj.asInstanceOf[Topbar]
   }
   
-  extension [Self <: Topbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Topbar] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: BackgroundProps): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

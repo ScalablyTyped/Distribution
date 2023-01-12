@@ -23,7 +23,8 @@ object ReportingApiEndpoint {
     __obj.asInstanceOf[ReportingApiEndpoint]
   }
   
-  extension [Self <: ReportingApiEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportingApiEndpoint] (val x: Self) extends AnyVal {
     
     inline def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     

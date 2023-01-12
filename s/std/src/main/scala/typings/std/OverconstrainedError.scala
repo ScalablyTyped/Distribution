@@ -18,7 +18,8 @@ object OverconstrainedError {
     __obj.asInstanceOf[OverconstrainedError]
   }
   
-  extension [Self <: OverconstrainedError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverconstrainedError] (val x: Self) extends AnyVal {
     
     inline def setConstraint(value: java.lang.String): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
   }

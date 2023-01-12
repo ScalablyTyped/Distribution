@@ -15,7 +15,8 @@ object ContentApplicationjsonDefaults {
     __obj.asInstanceOf[ContentApplicationjsonDefaults]
   }
   
-  extension [Self <: ContentApplicationjsonDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonDefaults] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonDefaults): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

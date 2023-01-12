@@ -18,7 +18,8 @@ object InitiateVaultLockOutput {
     __obj.asInstanceOf[InitiateVaultLockOutput]
   }
   
-  extension [Self <: InitiateVaultLockOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitiateVaultLockOutput] (val x: Self) extends AnyVal {
     
     inline def setLockId(value: String): Self = StObject.set(x, "lockId", value.asInstanceOf[js.Any])
     

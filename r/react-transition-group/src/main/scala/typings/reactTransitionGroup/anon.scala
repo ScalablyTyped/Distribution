@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Appear]
     }
     
-    extension [Self <: Appear](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Appear] (val x: Self) extends AnyVal {
       
       inline def setAppear(value: Double): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object anon {
       __obj.asInstanceOf[ClassNames]
     }
     
-    extension [Self <: ClassNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassNames] (val x: Self) extends AnyVal {
       
       inline def setClassNames(value: String | CSSTransitionClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object anon {
       __obj.asInstanceOf[Dictprop]
     }
     
-    extension [Self <: Dictprop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictprop] (val x: Self) extends AnyVal {
       
       inline def setChildFactory(value: /* child */ ReactElement => ReactElement): Self = StObject.set(x, "childFactory", js.Any.fromFunction1(value))
       
@@ -126,7 +129,8 @@ object anon {
       __obj.asInstanceOf[Explicit[ImplicitRefHandler, ExplicitRefHandler]]
     }
     
-    extension [Self <: Explicit[?, ?], ImplicitRefHandler /* <: js.Function2[/* node */ HTMLElement, /* repeated */ Any, Unit] */, ExplicitRefHandler /* <: js.Function1[/* repeated */ Any, Unit] */](x: Self & (Explicit[ImplicitRefHandler, ExplicitRefHandler])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Explicit[?, ?], ImplicitRefHandler /* <: js.Function2[/* node */ HTMLElement, /* repeated */ Any, Unit] */, ExplicitRefHandler /* <: js.Function1[/* repeated */ Any, Unit] */] (val x: Self & (Explicit[ImplicitRefHandler, ExplicitRefHandler])) extends AnyVal {
       
       inline def setExplicit(value: ExplicitRefHandler): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
       

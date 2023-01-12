@@ -21,7 +21,8 @@ object FormalTypeParameterInfo {
     __obj.asInstanceOf[FormalTypeParameterInfo]
   }
   
-  extension [Self <: FormalTypeParameterInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormalTypeParameterInfo] (val x: Self) extends AnyVal {
     
     inline def setDocComment(value: String): Self = StObject.set(x, "docComment", value.asInstanceOf[js.Any])
     

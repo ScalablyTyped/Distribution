@@ -38,7 +38,8 @@ object interfacesDistributedTaskCommonInterfacesMod {
       __obj.asInstanceOf[DataSourceBindingBase]
     }
     
-    extension [Self <: DataSourceBindingBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceBindingBase] (val x: Self) extends AnyVal {
       
       inline def setDataSourceName(value: String): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object interfacesDistributedTaskCommonInterfacesMod {
       __obj.asInstanceOf[ProcessParameters]
     }
     
-    extension [Self <: ProcessParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessParameters] (val x: Self) extends AnyVal {
       
       inline def setDataSourceBindings(value: js.Array[DataSourceBindingBase]): Self = StObject.set(x, "dataSourceBindings", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object interfacesDistributedTaskCommonInterfacesMod {
       __obj.asInstanceOf[TaskInputDefinitionBase]
     }
     
-    extension [Self <: TaskInputDefinitionBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskInputDefinitionBase] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -175,7 +178,8 @@ object interfacesDistributedTaskCommonInterfacesMod {
       __obj.asInstanceOf[TaskSourceDefinitionBase]
     }
     
-    extension [Self <: TaskSourceDefinitionBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskSourceDefinitionBase] (val x: Self) extends AnyVal {
       
       inline def setAuthKey(value: String): Self = StObject.set(x, "authKey", value.asInstanceOf[js.Any])
       

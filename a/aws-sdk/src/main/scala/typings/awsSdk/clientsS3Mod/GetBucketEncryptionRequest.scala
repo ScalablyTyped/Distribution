@@ -23,7 +23,8 @@ object GetBucketEncryptionRequest {
     __obj.asInstanceOf[GetBucketEncryptionRequest]
   }
   
-  extension [Self <: GetBucketEncryptionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketEncryptionRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

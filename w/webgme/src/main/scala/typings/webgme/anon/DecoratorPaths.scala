@@ -70,7 +70,8 @@ object DecoratorPaths {
     __obj.asInstanceOf[DecoratorPaths]
   }
   
-  extension [Self <: DecoratorPaths](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecoratorPaths] (val x: Self) extends AnyVal {
     
     inline def setDecoratorPaths(value: js.Array[String]): Self = StObject.set(x, "decoratorPaths", value.asInstanceOf[js.Any])
     

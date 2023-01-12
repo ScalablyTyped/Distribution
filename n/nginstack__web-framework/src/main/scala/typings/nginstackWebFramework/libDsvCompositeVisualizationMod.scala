@@ -151,7 +151,8 @@ object libDsvCompositeVisualizationMod {
       __obj.asInstanceOf[CompositeVisualization]
     }
     
-    extension [Self <: CompositeVisualization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompositeVisualization] (val x: Self) extends AnyVal {
       
       inline def setAddSlot_(value: Any): Self = StObject.set(x, "addSlot_", value.asInstanceOf[js.Any])
       

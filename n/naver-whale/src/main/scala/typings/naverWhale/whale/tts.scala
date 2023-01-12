@@ -81,7 +81,8 @@ object tts {
       __obj.asInstanceOf[SpeakOptions]
     }
     
-    extension [Self <: SpeakOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpeakOptions] (val x: Self) extends AnyVal {
       
       inline def setDesiredEventTypes(value: js.Array[String]): Self = StObject.set(x, "desiredEventTypes", value.asInstanceOf[js.Any])
       
@@ -162,7 +163,8 @@ object tts {
       __obj.asInstanceOf[TtsEvent]
     }
     
-    extension [Self <: TtsEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TtsEvent] (val x: Self) extends AnyVal {
       
       inline def setCharIndex(value: Double): Self = StObject.set(x, "charIndex", value.asInstanceOf[js.Any])
       
@@ -214,7 +216,8 @@ object tts {
       __obj.asInstanceOf[TtsVoice]
     }
     
-    extension [Self <: TtsVoice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TtsVoice] (val x: Self) extends AnyVal {
       
       inline def setEventTypes(value: js.Array[String]): Self = StObject.set(x, "eventTypes", value.asInstanceOf[js.Any])
       

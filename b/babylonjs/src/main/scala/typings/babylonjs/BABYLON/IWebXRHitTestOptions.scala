@@ -52,7 +52,8 @@ object IWebXRHitTestOptions {
     __obj.asInstanceOf[IWebXRHitTestOptions]
   }
   
-  extension [Self <: IWebXRHitTestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRHitTestOptions] (val x: Self) extends AnyVal {
     
     inline def setDisablePermanentHitTest(value: Boolean): Self = StObject.set(x, "disablePermanentHitTest", value.asInstanceOf[js.Any])
     

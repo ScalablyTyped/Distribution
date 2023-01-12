@@ -20,7 +20,8 @@ object PartialSentinelAddress {
     __obj.asInstanceOf[PartialSentinelAddress]
   }
   
-  extension [Self <: PartialSentinelAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSentinelAddress] (val x: Self) extends AnyVal {
     
     inline def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     

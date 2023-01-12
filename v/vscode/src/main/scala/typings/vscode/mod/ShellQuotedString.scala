@@ -23,7 +23,8 @@ object ShellQuotedString {
     __obj.asInstanceOf[ShellQuotedString]
   }
   
-  extension [Self <: ShellQuotedString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShellQuotedString] (val x: Self) extends AnyVal {
     
     inline def setQuoting(value: ShellQuoting): Self = StObject.set(x, "quoting", value.asInstanceOf[js.Any])
     

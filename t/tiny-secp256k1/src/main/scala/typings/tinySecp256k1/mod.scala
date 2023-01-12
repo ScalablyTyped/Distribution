@@ -101,7 +101,8 @@ object mod {
       __obj.asInstanceOf[RecoverableSignature]
     }
     
-    extension [Self <: RecoverableSignature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecoverableSignature] (val x: Self) extends AnyVal {
       
       inline def setRecoveryId(value: RecoveryIdType): Self = StObject.set(x, "recoveryId", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object mod {
       __obj.asInstanceOf[XOnlyPointAddTweakResult]
     }
     
-    extension [Self <: XOnlyPointAddTweakResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XOnlyPointAddTweakResult] (val x: Self) extends AnyVal {
       
       inline def setParity(value: `1` | `0`): Self = StObject.set(x, "parity", value.asInstanceOf[js.Any])
       

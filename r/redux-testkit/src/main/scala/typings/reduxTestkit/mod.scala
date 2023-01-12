@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[ReducerTestkit]
     }
     
-    extension [Self <: ReducerTestkit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReducerTestkit] (val x: Self) extends AnyVal {
       
       inline def setExecute(value: Action[Any] => Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
       
@@ -68,7 +69,8 @@ object mod {
       __obj.asInstanceOf[ThunkTestkit]
     }
     
-    extension [Self <: ThunkTestkit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThunkTestkit] (val x: Self) extends AnyVal {
       
       inline def setExecute(value: /* repeated */ Any => Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     }

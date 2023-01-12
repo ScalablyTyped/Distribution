@@ -23,7 +23,8 @@ object DeleteResponses403ContentApplicationjsonErrors {
     __obj.asInstanceOf[DeleteResponses403ContentApplicationjsonErrors]
   }
   
-  extension [Self <: DeleteResponses403ContentApplicationjsonErrors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteResponses403ContentApplicationjsonErrors] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: Responses403ContentApplicationjsonErrors): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     

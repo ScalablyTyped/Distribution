@@ -25,7 +25,8 @@ object ocrBankCardOptions {
     __obj.asInstanceOf[ocrBankCardOptions]
   }
   
-  extension [Self <: ocrBankCardOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ocrBankCardOptions] (val x: Self) extends AnyVal {
     
     inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

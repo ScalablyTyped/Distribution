@@ -34,7 +34,8 @@ object PaymentGatewayTokenizationSpecification {
     __obj.asInstanceOf[PaymentGatewayTokenizationSpecification]
   }
   
-  extension [Self <: PaymentGatewayTokenizationSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentGatewayTokenizationSpecification] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PaymentGatewayTokenizationParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

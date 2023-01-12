@@ -94,7 +94,8 @@ object UserOptions {
     __obj.asInstanceOf[UserOptions]
   }
   
-  extension [Self <: UserOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserOptions] (val x: Self) extends AnyVal {
     
     inline def setAdditionalJsContext(value: js.Object): Self = StObject.set(x, "additionalJsContext", value.asInstanceOf[js.Any])
     

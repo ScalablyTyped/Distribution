@@ -28,7 +28,8 @@ object InlayHintsProvider {
     __obj.asInstanceOf[InlayHintsProvider]
   }
   
-  extension [Self <: InlayHintsProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlayHintsProvider] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

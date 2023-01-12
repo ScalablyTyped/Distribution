@@ -35,7 +35,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ContextOptions]
     }
     
-    extension [Self <: ContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextOptions] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       

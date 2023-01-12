@@ -587,7 +587,8 @@ object libBridgeMod {
       __obj.asInstanceOf[BridgeOpts]
     }
     
-    extension [Self <: BridgeOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BridgeOpts] (val x: Self) extends AnyVal {
       
       inline def setBridgeEncryption(value: HomeserverUrl): Self = StObject.set(x, "bridgeEncryption", value.asInstanceOf[js.Any])
       

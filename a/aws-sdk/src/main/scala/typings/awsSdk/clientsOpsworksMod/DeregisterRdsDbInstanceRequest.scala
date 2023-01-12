@@ -18,7 +18,8 @@ object DeregisterRdsDbInstanceRequest {
     __obj.asInstanceOf[DeregisterRdsDbInstanceRequest]
   }
   
-  extension [Self <: DeregisterRdsDbInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterRdsDbInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setRdsDbInstanceArn(value: String): Self = StObject.set(x, "RdsDbInstanceArn", value.asInstanceOf[js.Any])
   }

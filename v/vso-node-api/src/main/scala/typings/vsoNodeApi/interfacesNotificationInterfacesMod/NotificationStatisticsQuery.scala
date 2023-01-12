@@ -15,7 +15,8 @@ object NotificationStatisticsQuery {
     __obj.asInstanceOf[NotificationStatisticsQuery]
   }
   
-  extension [Self <: NotificationStatisticsQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationStatisticsQuery] (val x: Self) extends AnyVal {
     
     inline def setConditions(value: js.Array[NotificationStatisticsQueryConditions]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     

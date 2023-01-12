@@ -20,7 +20,8 @@ object Abilities {
     __obj.asInstanceOf[Abilities]
   }
   
-  extension [Self <: Abilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Abilities] (val x: Self) extends AnyVal {
     
     inline def setTime(value: Boolean): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object SMSConfiguration {
     __obj.asInstanceOf[SMSConfiguration]
   }
   
-  extension [Self <: SMSConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SMSConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAdditionalMessage(value: NotificationAdditionalMessage): Self = StObject.set(x, "additionalMessage", value.asInstanceOf[js.Any])
     

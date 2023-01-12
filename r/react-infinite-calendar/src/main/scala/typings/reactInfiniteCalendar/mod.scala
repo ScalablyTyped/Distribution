@@ -107,7 +107,8 @@ object mod {
       __obj.asInstanceOf[RangedSelection]
     }
     
-    extension [Self <: RangedSelection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangedSelection] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -174,7 +175,8 @@ object mod {
       __obj.asInstanceOf[ReactInfiniteCalendarProps]
     }
     
-    extension [Self <: ReactInfiniteCalendarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactInfiniteCalendarProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

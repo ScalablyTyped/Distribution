@@ -71,7 +71,8 @@ object identityIdentityMod {
       __obj.asInstanceOf[Identity]
     }
     
-    extension [Self <: Identity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Identity] (val x: Self) extends AnyVal {
       
       inline def setAp(value: Identity => Identity): Self = StObject.set(x, "ap", js.Any.fromFunction1(value))
       

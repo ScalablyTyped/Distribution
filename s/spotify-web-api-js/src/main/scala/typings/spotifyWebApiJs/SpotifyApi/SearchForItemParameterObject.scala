@@ -39,7 +39,8 @@ object SearchForItemParameterObject {
     __obj.asInstanceOf[SearchForItemParameterObject]
   }
   
-  extension [Self <: SearchForItemParameterObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchForItemParameterObject] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object DataSourceRequestStartEvent {
     __obj.asInstanceOf[DataSourceRequestStartEvent]
   }
   
-  extension [Self <: DataSourceRequestStartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceRequestStartEvent] (val x: Self) extends AnyVal {
     
     inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     

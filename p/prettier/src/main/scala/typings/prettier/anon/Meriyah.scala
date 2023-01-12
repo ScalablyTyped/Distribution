@@ -16,7 +16,8 @@ object Meriyah {
     __obj.asInstanceOf[Meriyah]
   }
   
-  extension [Self <: Meriyah](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Meriyah] (val x: Self) extends AnyVal {
     
     inline def setMeriyah(value: Parser[Any]): Self = StObject.set(x, "meriyah", value.asInstanceOf[js.Any])
   }

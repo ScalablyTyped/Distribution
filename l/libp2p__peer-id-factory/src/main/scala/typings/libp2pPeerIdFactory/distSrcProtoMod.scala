@@ -34,7 +34,8 @@ object distSrcProtoMod {
     
     inline def encode(obj: PeerIdProto): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: PeerIdProto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeerIdProto] (val x: Self) extends AnyVal {
       
       inline def setId(value: js.typedarray.Uint8Array): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

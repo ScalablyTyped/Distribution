@@ -21,7 +21,8 @@ object SubscriptionHandle {
     __obj.asInstanceOf[SubscriptionHandle]
   }
   
-  extension [Self <: SubscriptionHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionHandle] (val x: Self) extends AnyVal {
     
     inline def setReady(value: () => Boolean): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
     

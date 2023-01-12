@@ -50,7 +50,8 @@ object FieldsGoalId {
     __obj.asInstanceOf[FieldsGoalId]
   }
   
-  extension [Self <: FieldsGoalId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldsGoalId] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

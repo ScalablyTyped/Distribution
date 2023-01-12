@@ -57,7 +57,8 @@ object anon {
       __obj.asInstanceOf[ACTIVE]
     }
     
-    extension [Self <: ACTIVE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ACTIVE] (val x: Self) extends AnyVal {
       
       inline def setACTIVE(value: Double): Self = StObject.set(x, "ACTIVE", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object anon {
       __obj.asInstanceOf[AddWitnessSignature]
     }
     
-    extension [Self <: AddWitnessSignature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddWitnessSignature] (val x: Self) extends AnyVal {
       
       inline def setAddWitnessSignature(value: (String, Double, String, String, String) => String): Self = StObject.set(x, "addWitnessSignature", js.Any.fromFunction5(value))
       
@@ -184,7 +186,8 @@ object anon {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     }
@@ -203,7 +206,8 @@ object anon {
       __obj.asInstanceOf[Confirmations]
     }
     
-    extension [Self <: Confirmations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Confirmations] (val x: Self) extends AnyVal {
       
       inline def setConfirmations(value: Double): Self = StObject.set(x, "confirmations", value.asInstanceOf[js.Any])
       
@@ -224,7 +228,8 @@ object anon {
       __obj.asInstanceOf[DepositAddress]
     }
     
-    extension [Self <: DepositAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DepositAddress] (val x: Self) extends AnyVal {
       
       inline def setDepositAddress(value: String): Self = StObject.set(x, "depositAddress", value.asInstanceOf[js.Any])
       
@@ -257,7 +262,8 @@ object anon {
       __obj.asInstanceOf[Digest]
     }
     
-    extension [Self <: Digest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Digest] (val x: Self) extends AnyVal {
       
       inline def set_digest(value: String): Self = StObject.set(x, "_digest", value.asInstanceOf[js.Any])
       
@@ -288,7 +294,8 @@ object anon {
       __obj.asInstanceOf[Locktime]
     }
     
-    extension [Self <: Locktime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locktime] (val x: Self) extends AnyVal {
       
       inline def setLocktime(value: Any): Self = StObject.set(x, "locktime", value.asInstanceOf[js.Any])
       
@@ -315,7 +322,8 @@ object anon {
       __obj.asInstanceOf[MAINNET]
     }
     
-    extension [Self <: MAINNET](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MAINNET] (val x: Self) extends AnyVal {
       
       inline def setMAINNET(value: String): Self = StObject.set(x, "MAINNET", value.asInstanceOf[js.Any])
       
@@ -339,7 +347,8 @@ object anon {
       __obj.asInstanceOf[OmitFoundTransactionvalue]
     }
     
-    extension [Self <: OmitFoundTransactionvalue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitFoundTransactionvalue] (val x: Self) extends AnyVal {
       
       inline def setOutputPosition(value: Double): Self = StObject.set(x, "outputPosition", value.asInstanceOf[js.Any])
       
@@ -375,7 +384,8 @@ object anon {
       __obj.asInstanceOf[PubKeyHashFrom]
     }
     
-    extension [Self <: PubKeyHashFrom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PubKeyHashFrom] (val x: Self) extends AnyVal {
       
       inline def setPubKeyHashFrom(value: String => Buffer | Null): Self = StObject.set(x, "pubKeyHashFrom", js.Any.fromFunction1(value))
       
@@ -404,7 +414,8 @@ object anon {
       __obj.asInstanceOf[RequiredConfirmations]
     }
     
-    extension [Self <: RequiredConfirmations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredConfirmations] (val x: Self) extends AnyVal {
       
       inline def setRequiredConfirmations(value: Double): Self = StObject.set(x, "requiredConfirmations", value.asInstanceOf[js.Any])
       
@@ -425,7 +436,8 @@ object anon {
       __obj.asInstanceOf[RequiredConfirmationsTransactionID]
     }
     
-    extension [Self <: RequiredConfirmationsTransactionID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredConfirmationsTransactionID] (val x: Self) extends AnyVal {
       
       inline def setRequiredConfirmations(value: Double): Self = StObject.set(x, "requiredConfirmations", value.asInstanceOf[js.Any])
       
@@ -444,7 +456,8 @@ object anon {
       __obj.asInstanceOf[TransactionID]
     }
     
-    extension [Self <: TransactionID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionID] (val x: Self) extends AnyVal {
       
       inline def setTransactionID(value: String): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
     }

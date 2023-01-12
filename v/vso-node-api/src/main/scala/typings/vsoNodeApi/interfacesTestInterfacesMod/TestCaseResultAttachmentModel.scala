@@ -23,7 +23,8 @@ object TestCaseResultAttachmentModel {
     __obj.asInstanceOf[TestCaseResultAttachmentModel]
   }
   
-  extension [Self <: TestCaseResultAttachmentModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestCaseResultAttachmentModel] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

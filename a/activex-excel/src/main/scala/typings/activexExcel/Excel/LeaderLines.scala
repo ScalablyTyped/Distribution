@@ -40,7 +40,8 @@ object LeaderLines {
     __obj.asInstanceOf[LeaderLines]
   }
   
-  extension [Self <: LeaderLines](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeaderLines] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

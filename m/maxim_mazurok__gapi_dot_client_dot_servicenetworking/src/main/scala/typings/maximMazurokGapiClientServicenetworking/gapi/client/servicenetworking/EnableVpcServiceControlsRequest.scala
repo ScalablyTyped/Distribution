@@ -19,7 +19,8 @@ object EnableVpcServiceControlsRequest {
     __obj.asInstanceOf[EnableVpcServiceControlsRequest]
   }
   
-  extension [Self <: EnableVpcServiceControlsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableVpcServiceControlsRequest] (val x: Self) extends AnyVal {
     
     inline def setConsumerNetwork(value: String): Self = StObject.set(x, "consumerNetwork", value.asInstanceOf[js.Any])
     

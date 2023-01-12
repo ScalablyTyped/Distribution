@@ -25,7 +25,8 @@ object types {
       __obj.asInstanceOf[ClearDetails]
     }
     
-    extension [Self <: ClearDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClearDetails] (val x: Self) extends AnyVal {
       
       inline def setScope(value: SettingScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object types {
       __obj.asInstanceOf[GetDetails]
     }
     
-    extension [Self <: GetDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetDetails] (val x: Self) extends AnyVal {
       
       inline def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object types {
       __obj.asInstanceOf[GetReturnDetails]
     }
     
-    extension [Self <: GetReturnDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetReturnDetails] (val x: Self) extends AnyVal {
       
       inline def setIncognitoSpecific(value: Boolean): Self = StObject.set(x, "incognitoSpecific", value.asInstanceOf[js.Any])
       
@@ -135,7 +138,8 @@ object types {
       __obj.asInstanceOf[OnChangeDetails]
     }
     
-    extension [Self <: OnChangeDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnChangeDetails] (val x: Self) extends AnyVal {
       
       inline def setIncognitoSpecific(value: Boolean): Self = StObject.set(x, "incognitoSpecific", value.asInstanceOf[js.Any])
       
@@ -166,7 +170,8 @@ object types {
       __obj.asInstanceOf[SetDetails]
     }
     
-    extension [Self <: SetDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetDetails] (val x: Self) extends AnyVal {
       
       inline def setScope(value: SettingScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
@@ -211,7 +216,8 @@ object types {
       __obj.asInstanceOf[Setting]
     }
     
-    extension [Self <: Setting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Setting] (val x: Self) extends AnyVal {
       
       inline def setClear(value: ClearDetails => js.Promise[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
       

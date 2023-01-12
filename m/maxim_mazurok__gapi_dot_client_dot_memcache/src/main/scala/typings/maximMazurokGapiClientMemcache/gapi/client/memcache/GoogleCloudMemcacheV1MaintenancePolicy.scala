@@ -28,7 +28,8 @@ object GoogleCloudMemcacheV1MaintenancePolicy {
     __obj.asInstanceOf[GoogleCloudMemcacheV1MaintenancePolicy]
   }
   
-  extension [Self <: GoogleCloudMemcacheV1MaintenancePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMemcacheV1MaintenancePolicy] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

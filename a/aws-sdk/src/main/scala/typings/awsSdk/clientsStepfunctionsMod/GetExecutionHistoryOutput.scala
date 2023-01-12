@@ -23,7 +23,8 @@ object GetExecutionHistoryOutput {
     __obj.asInstanceOf[GetExecutionHistoryOutput]
   }
   
-  extension [Self <: GetExecutionHistoryOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetExecutionHistoryOutput] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: HistoryEventList): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

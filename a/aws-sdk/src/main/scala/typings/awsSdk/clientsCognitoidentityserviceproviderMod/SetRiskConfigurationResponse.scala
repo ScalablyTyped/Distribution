@@ -18,7 +18,8 @@ object SetRiskConfigurationResponse {
     __obj.asInstanceOf[SetRiskConfigurationResponse]
   }
   
-  extension [Self <: SetRiskConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetRiskConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setRiskConfiguration(value: RiskConfigurationType): Self = StObject.set(x, "RiskConfiguration", value.asInstanceOf[js.Any])
   }

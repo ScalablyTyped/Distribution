@@ -19,7 +19,8 @@ object DerivedSource {
     __obj.asInstanceOf[DerivedSource]
   }
   
-  extension [Self <: DerivedSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DerivedSource] (val x: Self) extends AnyVal {
     
     inline def setDerivationMode(value: String): Self = StObject.set(x, "derivationMode", value.asInstanceOf[js.Any])
     

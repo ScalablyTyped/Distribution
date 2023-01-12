@@ -155,7 +155,8 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
           
@@ -220,7 +221,8 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
           
@@ -269,7 +271,8 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setSide(value: String): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
           
@@ -308,7 +311,8 @@ object SemanticUI {
         __obj.asInstanceOf[Translation]
       }
       
-      extension [Self <: Translation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Translation] (val x: Self) extends AnyVal {
         
         inline def setTransform(value: String): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       }
@@ -426,7 +430,8 @@ object SemanticUI {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setBeforeChange(value: () => Unit): Self = StObject.set(x, "beforeChange", js.Any.fromFunction0(value))
         

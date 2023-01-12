@@ -25,7 +25,8 @@ object DecorationInstanceRenderOptions {
     __obj.asInstanceOf[DecorationInstanceRenderOptions]
   }
   
-  extension [Self <: DecorationInstanceRenderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecorationInstanceRenderOptions] (val x: Self) extends AnyVal {
     
     inline def setDark(value: ThemableDecorationInstanceRenderOptions): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     

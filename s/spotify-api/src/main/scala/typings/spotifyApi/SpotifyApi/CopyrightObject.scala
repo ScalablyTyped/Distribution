@@ -24,7 +24,8 @@ object CopyrightObject {
     __obj.asInstanceOf[CopyrightObject]
   }
   
-  extension [Self <: CopyrightObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyrightObject] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

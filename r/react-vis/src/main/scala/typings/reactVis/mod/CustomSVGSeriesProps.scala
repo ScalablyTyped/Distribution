@@ -22,7 +22,8 @@ object CustomSVGSeriesProps {
     __obj.asInstanceOf[CustomSVGSeriesProps]
   }
   
-  extension [Self <: CustomSVGSeriesProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomSVGSeriesProps] (val x: Self) extends AnyVal {
     
     inline def setCustomComponent(value: String | (js.Function1[/* row */ Any, Any])): Self = StObject.set(x, "customComponent", value.asInstanceOf[js.Any])
     

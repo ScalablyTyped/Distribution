@@ -25,7 +25,8 @@ object PrintMargin {
     __obj.asInstanceOf[PrintMargin]
   }
   
-  extension [Self <: PrintMargin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintMargin] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: NullableOption[Double]): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

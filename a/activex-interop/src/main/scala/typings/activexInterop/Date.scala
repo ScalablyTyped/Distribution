@@ -15,7 +15,8 @@ object Date {
     __obj.asInstanceOf[Date]
   }
   
-  extension [Self <: Date](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
     
     inline def setGetVarDate(value: () => VarDate): Self = StObject.set(x, "getVarDate", js.Any.fromFunction0(value))
   }

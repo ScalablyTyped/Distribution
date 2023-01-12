@@ -35,7 +35,8 @@ object useAutocompleteUseAutocompleteMod {
       __obj.asInstanceOf[AutocompleteChangeDetails[T]]
     }
     
-    extension [Self <: AutocompleteChangeDetails[?], T](x: Self & AutocompleteChangeDetails[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutocompleteChangeDetails[?], T] (val x: Self & AutocompleteChangeDetails[T]) extends AnyVal {
       
       inline def setOption(value: T): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     }
@@ -140,7 +141,8 @@ object useAutocompleteUseAutocompleteMod {
       __obj.asInstanceOf[CreateFilterOptionsConfig[T]]
     }
     
-    extension [Self <: CreateFilterOptionsConfig[?], T](x: Self & CreateFilterOptionsConfig[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateFilterOptionsConfig[?], T] (val x: Self & CreateFilterOptionsConfig[T]) extends AnyVal {
       
       inline def setIgnoreAccents(value: Boolean): Self = StObject.set(x, "ignoreAccents", value.asInstanceOf[js.Any])
       
@@ -181,7 +183,8 @@ object useAutocompleteUseAutocompleteMod {
       __obj.asInstanceOf[FilterOptionsState[T]]
     }
     
-    extension [Self <: FilterOptionsState[?], T](x: Self & FilterOptionsState[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterOptionsState[?], T] (val x: Self & FilterOptionsState[T]) extends AnyVal {
       
       inline def setGetOptionLabel(value: T => String): Self = StObject.set(x, "getOptionLabel", js.Any.fromFunction1(value))
       
@@ -458,7 +461,8 @@ object useAutocompleteUseAutocompleteMod {
       __obj.asInstanceOf[UseAutocompleteProps[T, Multiple, DisableClearable, FreeSolo]]
     }
     
-    extension [Self <: UseAutocompleteProps[?, ?, ?, ?], T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */](x: Self & (UseAutocompleteProps[T, Multiple, DisableClearable, FreeSolo])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseAutocompleteProps[?, ?, ?, ?], T, Multiple /* <: js.UndefOr[Boolean] */, DisableClearable /* <: js.UndefOr[Boolean] */, FreeSolo /* <: js.UndefOr[Boolean] */] (val x: Self & (UseAutocompleteProps[T, Multiple, DisableClearable, FreeSolo])) extends AnyVal {
       
       inline def setAutoComplete(value: Boolean): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
       

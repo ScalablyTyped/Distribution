@@ -28,7 +28,8 @@ object ListExperiencesRequest {
     __obj.asInstanceOf[ListExperiencesRequest]
   }
   
-  extension [Self <: ListExperiencesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListExperiencesRequest] (val x: Self) extends AnyVal {
     
     inline def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
     

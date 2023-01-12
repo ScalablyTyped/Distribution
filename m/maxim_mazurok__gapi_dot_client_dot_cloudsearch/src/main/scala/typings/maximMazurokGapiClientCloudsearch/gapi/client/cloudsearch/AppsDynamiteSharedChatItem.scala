@@ -22,7 +22,8 @@ object AppsDynamiteSharedChatItem {
     __obj.asInstanceOf[AppsDynamiteSharedChatItem]
   }
   
-  extension [Self <: AppsDynamiteSharedChatItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedChatItem] (val x: Self) extends AnyVal {
     
     inline def setActivityInfo(value: js.Array[AppsDynamiteSharedChatItemActivityInfo]): Self = StObject.set(x, "activityInfo", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object AwsEc2SecurityGroupIpv6Range {
     __obj.asInstanceOf[AwsEc2SecurityGroupIpv6Range]
   }
   
-  extension [Self <: AwsEc2SecurityGroupIpv6Range](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2SecurityGroupIpv6Range] (val x: Self) extends AnyVal {
     
     inline def setCidrIpv6(value: NonEmptyString): Self = StObject.set(x, "CidrIpv6", value.asInstanceOf[js.Any])
     

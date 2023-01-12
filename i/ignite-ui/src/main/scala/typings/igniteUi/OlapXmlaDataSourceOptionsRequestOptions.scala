@@ -31,7 +31,8 @@ object OlapXmlaDataSourceOptionsRequestOptions {
     __obj.asInstanceOf[OlapXmlaDataSourceOptionsRequestOptions]
   }
   
-  extension [Self <: OlapXmlaDataSourceOptionsRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlapXmlaDataSourceOptionsRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setBeforeSend(value: js.Function): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
     

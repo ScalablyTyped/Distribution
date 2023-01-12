@@ -17,7 +17,8 @@ object ListElasticsearchVersionsResponse {
     __obj.asInstanceOf[ListElasticsearchVersionsResponse]
   }
   
-  extension [Self <: ListElasticsearchVersionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListElasticsearchVersionsResponse] (val x: Self) extends AnyVal {
     
     inline def setElasticsearchVersions(value: ElasticsearchVersionList): Self = StObject.set(x, "ElasticsearchVersions", value.asInstanceOf[js.Any])
     

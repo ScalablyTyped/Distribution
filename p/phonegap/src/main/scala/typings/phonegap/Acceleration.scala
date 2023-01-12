@@ -21,7 +21,8 @@ object Acceleration {
     __obj.asInstanceOf[Acceleration]
   }
   
-  extension [Self <: Acceleration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Acceleration] (val x: Self) extends AnyVal {
     
     inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     

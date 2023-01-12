@@ -27,7 +27,8 @@ object distTs3Dot9UtilsCheckAddonOrderMod {
       __obj.asInstanceOf[AddonInfo]
     }
     
-    extension [Self <: AddonInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddonInfo] (val x: Self) extends AnyVal {
       
       inline def setInEssentials(value: Boolean): Self = StObject.set(x, "inEssentials", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object distTs3Dot9UtilsCheckAddonOrderMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: AddonInfo): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object distTs3Dot9UtilsCheckAddonOrderMod {
       __obj.asInstanceOf[OptionsEntry]
     }
     
-    extension [Self <: OptionsEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsEntry] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

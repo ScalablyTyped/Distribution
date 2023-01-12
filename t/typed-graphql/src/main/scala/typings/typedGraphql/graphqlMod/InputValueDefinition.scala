@@ -26,7 +26,8 @@ object InputValueDefinition {
     __obj.asInstanceOf[InputValueDefinition]
   }
   
-  extension [Self <: InputValueDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputValueDefinition] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: Value): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

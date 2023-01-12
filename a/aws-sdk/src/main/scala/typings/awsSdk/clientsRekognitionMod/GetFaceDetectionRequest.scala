@@ -28,7 +28,8 @@ object GetFaceDetectionRequest {
     __obj.asInstanceOf[GetFaceDetectionRequest]
   }
   
-  extension [Self <: GetFaceDetectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFaceDetectionRequest] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     

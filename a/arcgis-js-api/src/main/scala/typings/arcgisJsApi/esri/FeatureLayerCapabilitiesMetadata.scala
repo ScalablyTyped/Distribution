@@ -20,7 +20,8 @@ object FeatureLayerCapabilitiesMetadata {
     __obj.asInstanceOf[FeatureLayerCapabilitiesMetadata]
   }
   
-  extension [Self <: FeatureLayerCapabilitiesMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureLayerCapabilitiesMetadata] (val x: Self) extends AnyVal {
     
     inline def setSupportsAdvancedFieldProperties(value: Boolean): Self = StObject.set(x, "supportsAdvancedFieldProperties", value.asInstanceOf[js.Any])
   }

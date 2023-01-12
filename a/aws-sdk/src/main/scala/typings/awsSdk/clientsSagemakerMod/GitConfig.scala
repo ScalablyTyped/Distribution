@@ -28,7 +28,8 @@ object GitConfig {
     __obj.asInstanceOf[GitConfig]
   }
   
-  extension [Self <: GitConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitConfig] (val x: Self) extends AnyVal {
     
     inline def setBranch(value: Branch): Self = StObject.set(x, "Branch", value.asInstanceOf[js.Any])
     

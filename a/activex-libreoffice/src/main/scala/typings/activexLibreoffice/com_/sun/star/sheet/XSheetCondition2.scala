@@ -51,7 +51,8 @@ object XSheetCondition2 {
     __obj.asInstanceOf[XSheetCondition2]
   }
   
-  extension [Self <: XSheetCondition2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSheetCondition2] (val x: Self) extends AnyVal {
     
     inline def setConditionOperator(value: Double): Self = StObject.set(x, "ConditionOperator", value.asInstanceOf[js.Any])
     

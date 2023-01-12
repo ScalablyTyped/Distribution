@@ -21,7 +21,8 @@ object GeneralStats {
     __obj.asInstanceOf[GeneralStats]
   }
   
-  extension [Self <: GeneralStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneralStats] (val x: Self) extends AnyVal {
     
     inline def setCommands(value: StringDictionary[Calls]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     

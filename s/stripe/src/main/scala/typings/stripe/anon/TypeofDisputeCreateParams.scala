@@ -15,7 +15,8 @@ object TypeofDisputeCreateParams {
     __obj.asInstanceOf[TypeofDisputeCreateParams]
   }
   
-  extension [Self <: TypeofDisputeCreateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDisputeCreateParams] (val x: Self) extends AnyVal {
     
     inline def setEvidence(value: TypeofEvidence): Self = StObject.set(x, "Evidence", value.asInstanceOf[js.Any])
   }

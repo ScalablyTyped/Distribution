@@ -19,7 +19,8 @@ object PaginatorChangeTargetOptions {
     __obj.asInstanceOf[PaginatorChangeTargetOptions]
   }
   
-  extension [Self <: PaginatorChangeTargetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginatorChangeTargetOptions] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object AppsDynamiteSharedCallAnnotationData {
     __obj.asInstanceOf[AppsDynamiteSharedCallAnnotationData]
   }
   
-  extension [Self <: AppsDynamiteSharedCallAnnotationData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedCallAnnotationData] (val x: Self) extends AnyVal {
     
     inline def setCallEndedTimestamp(value: String): Self = StObject.set(x, "callEndedTimestamp", value.asInstanceOf[js.Any])
     

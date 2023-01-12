@@ -45,7 +45,8 @@ object Script {
     __obj.asInstanceOf[Script]
   }
   
-  extension [Self <: Script](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Script] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object Scales {
     __obj.asInstanceOf[Scales]
   }
   
-  extension [Self <: Scales](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scales] (val x: Self) extends AnyVal {
     
     inline def setChartOptions(value: DoughnutControllerChartOptions): Self = StObject.set(x, "chartOptions", value.asInstanceOf[js.Any])
     

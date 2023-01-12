@@ -23,7 +23,8 @@ object RecordActivityTaskHeartbeatInput {
     __obj.asInstanceOf[RecordActivityTaskHeartbeatInput]
   }
   
-  extension [Self <: RecordActivityTaskHeartbeatInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordActivityTaskHeartbeatInput] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: LimitedData): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

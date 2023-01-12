@@ -20,7 +20,8 @@ object UserMethodInvocation {
     __obj.asInstanceOf[UserMethodInvocation[D, T, S]]
   }
   
-  extension [Self <: UserMethodInvocation[?, ?, ?], D, T, S](x: Self & (UserMethodInvocation[D, T, S])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserMethodInvocation[?, ?, ?], D, T, S] (val x: Self & (UserMethodInvocation[D, T, S])) extends AnyVal {
     
     inline def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

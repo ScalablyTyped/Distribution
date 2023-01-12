@@ -22,7 +22,8 @@ object IpsCheckCustomDnsInvalidResponse {
     __obj.asInstanceOf[IpsCheckCustomDnsInvalidResponse]
   }
   
-  extension [Self <: IpsCheckCustomDnsInvalidResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpsCheckCustomDnsInvalidResponse] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

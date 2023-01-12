@@ -24,7 +24,8 @@ object TreeTableColumnResizeEndParams {
     __obj.asInstanceOf[TreeTableColumnResizeEndParams]
   }
   
-  extension [Self <: TreeTableColumnResizeEndParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeTableColumnResizeEndParams] (val x: Self) extends AnyVal {
     
     inline def setColumn(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColumnProps */ Any

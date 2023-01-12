@@ -107,7 +107,8 @@ object Annotation {
          with VerticalJustify
   }
   
-  extension [Self <: Annotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
     
     inline def setGetJustification(value: () => Justify): Self = StObject.set(x, "getJustification", js.Any.fromFunction0(value))
     

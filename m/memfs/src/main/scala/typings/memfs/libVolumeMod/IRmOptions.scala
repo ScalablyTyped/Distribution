@@ -21,7 +21,8 @@ object IRmOptions {
     __obj.asInstanceOf[IRmOptions]
   }
   
-  extension [Self <: IRmOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRmOptions] (val x: Self) extends AnyVal {
     
     inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object FollowupFlag {
     __obj.asInstanceOf[FollowupFlag]
   }
   
-  extension [Self <: FollowupFlag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FollowupFlag] (val x: Self) extends AnyVal {
     
     inline def setCompletedDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "completedDateTime", value.asInstanceOf[js.Any])
     

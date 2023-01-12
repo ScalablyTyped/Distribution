@@ -18,7 +18,8 @@ object DisassociateGatewayFromServerInput {
     __obj.asInstanceOf[DisassociateGatewayFromServerInput]
   }
   
-  extension [Self <: DisassociateGatewayFromServerInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateGatewayFromServerInput] (val x: Self) extends AnyVal {
     
     inline def setGatewayArn(value: GatewayArn): Self = StObject.set(x, "GatewayArn", value.asInstanceOf[js.Any])
   }

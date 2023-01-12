@@ -18,7 +18,8 @@ object AwsManagedResources {
     __obj.asInstanceOf[AwsManagedResources]
   }
   
-  extension [Self <: AwsManagedResources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsManagedResources] (val x: Self) extends AnyVal {
     
     inline def setTargetDestination(value: AwsManagedTargetDestinations): Self = StObject.set(x, "targetDestination", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object VersionToPublish {
     __obj.asInstanceOf[VersionToPublish]
   }
   
-  extension [Self <: VersionToPublish](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VersionToPublish] (val x: Self) extends AnyVal {
     
     inline def setAssociatedRuleGroupArn(value: ResourceArn): Self = StObject.set(x, "AssociatedRuleGroupArn", value.asInstanceOf[js.Any])
     

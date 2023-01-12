@@ -23,7 +23,8 @@ object SearchDatabasesByLFTagsResponse {
     __obj.asInstanceOf[SearchDatabasesByLFTagsResponse]
   }
   
-  extension [Self <: SearchDatabasesByLFTagsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchDatabasesByLFTagsResponse] (val x: Self) extends AnyVal {
     
     inline def setDatabaseList(value: DatabaseLFTagsList): Self = StObject.set(x, "DatabaseList", value.asInstanceOf[js.Any])
     

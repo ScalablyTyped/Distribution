@@ -20,7 +20,8 @@ object PartialARButtonSessionIni {
     __obj.asInstanceOf[PartialARButtonSessionIni]
   }
   
-  extension [Self <: PartialARButtonSessionIni](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialARButtonSessionIni] (val x: Self) extends AnyVal {
     
     inline def setDomOverlay(value: Root): Self = StObject.set(x, "domOverlay", value.asInstanceOf[js.Any])
     

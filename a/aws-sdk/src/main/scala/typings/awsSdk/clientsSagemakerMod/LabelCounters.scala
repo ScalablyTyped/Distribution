@@ -38,7 +38,8 @@ object LabelCounters {
     __obj.asInstanceOf[LabelCounters]
   }
   
-  extension [Self <: LabelCounters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelCounters] (val x: Self) extends AnyVal {
     
     inline def setFailedNonRetryableError(value: LabelCounter): Self = StObject.set(x, "FailedNonRetryableError", value.asInstanceOf[js.Any])
     

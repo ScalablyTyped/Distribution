@@ -25,7 +25,8 @@ object SnapshotJobRequest {
     __obj.asInstanceOf[SnapshotJobRequest]
   }
   
-  extension [Self <: SnapshotJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotJobRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

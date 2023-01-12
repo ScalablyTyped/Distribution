@@ -29,7 +29,8 @@ object TagsInfoResponse {
     __obj.asInstanceOf[TagsInfoResponse]
   }
   
-  extension [Self <: TagsInfoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagsInfoResponse] (val x: Self) extends AnyVal {
     
     inline def setStats(value: TagsAggregatedStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }

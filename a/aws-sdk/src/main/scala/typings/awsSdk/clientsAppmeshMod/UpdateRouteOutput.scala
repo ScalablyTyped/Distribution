@@ -18,7 +18,8 @@ object UpdateRouteOutput {
     __obj.asInstanceOf[UpdateRouteOutput]
   }
   
-  extension [Self <: UpdateRouteOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRouteOutput] (val x: Self) extends AnyVal {
     
     inline def setRoute(value: RouteData): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
   }

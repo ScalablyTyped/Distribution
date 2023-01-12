@@ -21,7 +21,8 @@ object Level {
     __obj.asInstanceOf[Level]
   }
   
-  extension [Self <: Level](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
     
     inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     

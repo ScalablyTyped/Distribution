@@ -19,7 +19,8 @@ object ReplaceLocalhost {
     __obj.asInstanceOf[ReplaceLocalhost]
   }
   
-  extension [Self <: ReplaceLocalhost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceLocalhost] (val x: Self) extends AnyVal {
     
     inline def setReplaceLocalhost(value: Boolean): Self = StObject.set(x, "replaceLocalhost", value.asInstanceOf[js.Any])
     

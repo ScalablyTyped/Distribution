@@ -84,7 +84,8 @@ object TreeDragAndDropController {
     __obj.asInstanceOf[TreeDragAndDropController[T]]
   }
   
-  extension [Self <: TreeDragAndDropController[?], T](x: Self & TreeDragAndDropController[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeDragAndDropController[?], T] (val x: Self & TreeDragAndDropController[T]) extends AnyVal {
     
     inline def setDragMimeTypes(value: js.Array[String]): Self = StObject.set(x, "dragMimeTypes", value.asInstanceOf[js.Any])
     

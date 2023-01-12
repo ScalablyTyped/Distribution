@@ -16,7 +16,8 @@ object FlexSubCompnents {
     __obj.asInstanceOf[FlexSubCompnents]
   }
   
-  extension [Self <: FlexSubCompnents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexSubCompnents] (val x: Self) extends AnyVal {
     
     inline def setItem(value: FC[FlexItemProps]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
   }

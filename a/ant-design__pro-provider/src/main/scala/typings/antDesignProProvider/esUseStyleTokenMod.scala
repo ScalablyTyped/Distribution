@@ -3120,7 +3120,8 @@ object esUseStyleTokenMod {
       __obj.asInstanceOf[AliasToken]
     }
     
-    extension [Self <: AliasToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AliasToken] (val x: Self) extends AnyVal {
       
       inline def setBlue(value: String): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
       

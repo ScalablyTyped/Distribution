@@ -26,7 +26,8 @@ object KmlDateTime {
     __obj.asInstanceOf[KmlDateTime]
   }
   
-  extension [Self <: KmlDateTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlDateTime] (val x: Self) extends AnyVal {
     
     inline def setGet(value: () => String): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     

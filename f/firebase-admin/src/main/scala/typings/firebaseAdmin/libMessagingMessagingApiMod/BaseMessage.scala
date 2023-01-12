@@ -26,7 +26,8 @@ object BaseMessage {
     __obj.asInstanceOf[BaseMessage]
   }
   
-  extension [Self <: BaseMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseMessage] (val x: Self) extends AnyVal {
     
     inline def setAndroid(value: AndroidConfig): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     

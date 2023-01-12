@@ -194,7 +194,8 @@ object componentsPaginationPaginationMod {
       __obj.asInstanceOf[PaginationModifiers]
     }
     
-    extension [Self <: PaginationModifiers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationModifiers] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: centered | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -300,7 +301,8 @@ object componentsPaginationPaginationMod {
       __obj.asInstanceOf[PaginationProps]
     }
     
-    extension [Self <: PaginationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: centered | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -466,7 +468,8 @@ object componentsPaginationPaginationMod {
       __obj.asInstanceOf[PaginationVariables]
     }
     
-    extension [Self <: PaginationVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationVariables] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: centered | right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
       
@@ -487,7 +490,8 @@ object componentsPaginationPaginationMod {
       __obj.asInstanceOf[PaginationVariablesDefaults]
     }
     
-    extension [Self <: PaginationVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: centered | right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
       

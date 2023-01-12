@@ -21,7 +21,8 @@ object InteractionInteraction {
     __obj.asInstanceOf[InteractionInteraction]
   }
   
-  extension [Self <: InteractionInteraction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractionInteraction] (val x: Self) extends AnyVal {
     
     inline def setInteraction(value: typings.interactjsTypes.coreInteractionMod.Interaction[drop]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
     

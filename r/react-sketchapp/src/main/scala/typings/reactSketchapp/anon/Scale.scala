@@ -30,7 +30,8 @@ object Scale {
     __obj.asInstanceOf[Scale]
   }
   
-  extension [Self <: Scale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scale] (val x: Self) extends AnyVal {
     
     inline def setFontScale(value: Requireable[Double]): Self = StObject.set(x, "fontScale", value.asInstanceOf[js.Any])
     

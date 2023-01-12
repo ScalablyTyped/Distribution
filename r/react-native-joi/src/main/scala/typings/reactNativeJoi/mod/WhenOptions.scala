@@ -28,7 +28,8 @@ object WhenOptions {
     __obj.asInstanceOf[WhenOptions]
   }
   
-  extension [Self <: WhenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WhenOptions] (val x: Self) extends AnyVal {
     
     inline def setIs(value: SchemaLike): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object HttpRequestValidation {
     __obj.asInstanceOf[HttpRequestValidation]
   }
   
-  extension [Self <: HttpRequestValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpRequestValidation] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: HttpRequestParametersValidation): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

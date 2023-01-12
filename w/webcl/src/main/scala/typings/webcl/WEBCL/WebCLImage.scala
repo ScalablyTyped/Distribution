@@ -18,7 +18,8 @@ object WebCLImage {
     __obj.asInstanceOf[WebCLImage]
   }
   
-  extension [Self <: WebCLImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebCLImage] (val x: Self) extends AnyVal {
     
     inline def setGetInfo(value: () => WebCLImageDescriptor): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
   }

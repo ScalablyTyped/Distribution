@@ -23,7 +23,8 @@ object AxisIconStyle {
     __obj.asInstanceOf[AxisIconStyle]
   }
   
-  extension [Self <: AxisIconStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisIconStyle] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

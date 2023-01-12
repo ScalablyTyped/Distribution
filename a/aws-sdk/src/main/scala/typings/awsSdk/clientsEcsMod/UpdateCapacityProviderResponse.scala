@@ -18,7 +18,8 @@ object UpdateCapacityProviderResponse {
     __obj.asInstanceOf[UpdateCapacityProviderResponse]
   }
   
-  extension [Self <: UpdateCapacityProviderResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCapacityProviderResponse] (val x: Self) extends AnyVal {
     
     inline def setCapacityProvider(value: CapacityProvider): Self = StObject.set(x, "capacityProvider", value.asInstanceOf[js.Any])
     

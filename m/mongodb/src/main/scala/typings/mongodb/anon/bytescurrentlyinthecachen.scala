@@ -110,7 +110,8 @@ object bytescurrentlyinthecachen {
     __obj.asInstanceOf[bytescurrentlyinthecachen]
   }
   
-  extension [Self <: bytescurrentlyinthecachen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: bytescurrentlyinthecachen] (val x: Self) extends AnyVal {
     
     inline def `setBytes currently in the cache`(value: Double): Self = StObject.set(x, "bytes currently in the cache", value.asInstanceOf[js.Any])
     

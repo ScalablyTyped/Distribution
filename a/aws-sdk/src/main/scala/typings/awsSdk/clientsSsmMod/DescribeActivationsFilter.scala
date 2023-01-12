@@ -23,7 +23,8 @@ object DescribeActivationsFilter {
     __obj.asInstanceOf[DescribeActivationsFilter]
   }
   
-  extension [Self <: DescribeActivationsFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeActivationsFilter] (val x: Self) extends AnyVal {
     
     inline def setFilterKey(value: DescribeActivationsFilterKeys): Self = StObject.set(x, "FilterKey", value.asInstanceOf[js.Any])
     

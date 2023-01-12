@@ -20,7 +20,8 @@ object FileSystemHttpResult {
     __obj.asInstanceOf[FileSystemHttpResult]
   }
   
-  extension [Self <: FileSystemHttpResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemHttpResult] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object VisitedExpression {
     __obj.asInstanceOf[VisitedExpression]
   }
   
-  extension [Self <: VisitedExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisitedExpression] (val x: Self) extends AnyVal {
     
     inline def setSourcePosition(value: SourcePosition): Self = StObject.set(x, "sourcePosition", value.asInstanceOf[js.Any])
     

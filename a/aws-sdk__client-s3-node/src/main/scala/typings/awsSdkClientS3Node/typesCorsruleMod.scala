@@ -43,7 +43,8 @@ object typesCorsruleMod {
       __obj.asInstanceOf[CORSRule]
     }
     
-    extension [Self <: CORSRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CORSRule] (val x: Self) extends AnyVal {
       
       inline def setAllowedHeaders(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "AllowedHeaders", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object typesCorsruleMod {
       __obj.asInstanceOf[UnmarshalledCORSRule]
     }
     
-    extension [Self <: UnmarshalledCORSRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledCORSRule] (val x: Self) extends AnyVal {
       
       inline def setAllowedHeaders(value: js.Array[String]): Self = StObject.set(x, "AllowedHeaders", value.asInstanceOf[js.Any])
       

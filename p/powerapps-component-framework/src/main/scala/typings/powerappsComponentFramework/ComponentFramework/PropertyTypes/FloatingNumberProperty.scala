@@ -23,7 +23,8 @@ object FloatingNumberProperty {
     __obj.asInstanceOf[FloatingNumberProperty]
   }
   
-  extension [Self <: FloatingNumberProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloatingNumberProperty] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: FloatingNumberMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

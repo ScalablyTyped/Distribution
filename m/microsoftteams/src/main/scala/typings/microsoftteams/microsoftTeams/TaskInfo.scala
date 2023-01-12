@@ -50,7 +50,8 @@ object TaskInfo {
     __obj.asInstanceOf[TaskInfo]
   }
   
-  extension [Self <: TaskInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskInfo] (val x: Self) extends AnyVal {
     
     inline def setCard(value: String): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     

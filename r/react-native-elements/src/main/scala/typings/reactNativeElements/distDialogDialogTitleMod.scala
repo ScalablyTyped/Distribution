@@ -32,7 +32,8 @@ object distDialogDialogTitleMod extends Shortcut {
       __obj.asInstanceOf[DialogTitleProps]
     }
     
-    extension [Self <: DialogTitleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogTitleProps] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

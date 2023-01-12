@@ -128,7 +128,8 @@ object IgTreeBindings {
     __obj.asInstanceOf[IgTreeBindings]
   }
   
-  extension [Self <: IgTreeBindings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTreeBindings] (val x: Self) extends AnyVal {
     
     inline def setBindings(value: IgTreeBindingsBindings): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object SimpleExpressionNode {
     __obj.asInstanceOf[SimpleExpressionNode]
   }
   
-  extension [Self <: SimpleExpressionNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleExpressionNode] (val x: Self) extends AnyVal {
     
     inline def setConstType(value: ConstantTypes): Self = StObject.set(x, "constType", value.asInstanceOf[js.Any])
     

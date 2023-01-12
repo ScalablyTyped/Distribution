@@ -24,7 +24,8 @@ object ReleaseDefinitionApprovalStep {
     __obj.asInstanceOf[ReleaseDefinitionApprovalStep]
   }
   
-  extension [Self <: ReleaseDefinitionApprovalStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseDefinitionApprovalStep] (val x: Self) extends AnyVal {
     
     inline def setApprover(value: IdentityRef): Self = StObject.set(x, "approver", value.asInstanceOf[js.Any])
     

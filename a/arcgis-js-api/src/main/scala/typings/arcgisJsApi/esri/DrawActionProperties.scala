@@ -29,7 +29,8 @@ object DrawActionProperties {
     __obj.asInstanceOf[DrawActionProperties]
   }
   
-  extension [Self <: DrawActionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawActionProperties] (val x: Self) extends AnyVal {
     
     inline def setHasZ(value: Boolean): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object Keyboard {
     __obj.asInstanceOf[Keyboard]
   }
   
-  extension [Self <: Keyboard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Keyboard] (val x: Self) extends AnyVal {
     
     inline def setFindFocusable(value: JQuery => js.Object): Self = StObject.set(x, "findFocusable", js.Any.fromFunction1(value))
     

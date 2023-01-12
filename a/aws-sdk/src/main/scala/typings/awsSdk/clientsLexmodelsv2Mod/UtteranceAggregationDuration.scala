@@ -18,7 +18,8 @@ object UtteranceAggregationDuration {
     __obj.asInstanceOf[UtteranceAggregationDuration]
   }
   
-  extension [Self <: UtteranceAggregationDuration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UtteranceAggregationDuration] (val x: Self) extends AnyVal {
     
     inline def setRelativeAggregationDuration(value: RelativeAggregationDuration): Self = StObject.set(x, "relativeAggregationDuration", value.asInstanceOf[js.Any])
   }

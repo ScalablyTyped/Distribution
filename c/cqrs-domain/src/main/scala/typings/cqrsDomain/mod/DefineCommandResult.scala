@@ -15,7 +15,8 @@ object DefineCommandResult {
     __obj.asInstanceOf[DefineCommandResult]
   }
   
-  extension [Self <: DefineCommandResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefineCommandResult] (val x: Self) extends AnyVal {
     
     inline def setDefineEventStreamsToLoad(value: defineEventStreamsToLoadHandler => Unit): Self = StObject.set(x, "defineEventStreamsToLoad", js.Any.fromFunction1(value))
   }

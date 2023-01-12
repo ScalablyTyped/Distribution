@@ -27,7 +27,8 @@ object RenderOptions {
     __obj.asInstanceOf[RenderOptions]
   }
   
-  extension [Self <: RenderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
     
     inline def setEvaluator(value: Instantiable0[typings.stylus.mod.Stylus.Evaluator]): Self = StObject.set(x, "Evaluator", value.asInstanceOf[js.Any])
     

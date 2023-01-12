@@ -44,7 +44,8 @@ object XFunctionDescriptions {
     __obj.asInstanceOf[XFunctionDescriptions]
   }
   
-  extension [Self <: XFunctionDescriptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFunctionDescriptions] (val x: Self) extends AnyVal {
     
     inline def setGetById(value: Double => SafeArray[PropertyValue]): Self = StObject.set(x, "getById", js.Any.fromFunction1(value))
   }

@@ -30,7 +30,8 @@ object errorsMod {
     @js.native
     val ^ : RequestErrorConstructor = js.native
     
-    extension [Self <: RequestError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestError] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object errorsMod {
     @js.native
     val ^ : StatusCodeErrorConstructor = js.native
     
-    extension [Self <: StatusCodeError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatusCodeError] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -157,7 +159,8 @@ object errorsMod {
     @js.native
     val ^ : TransformErrorConstructor = js.native
     
-    extension [Self <: TransformError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformError] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

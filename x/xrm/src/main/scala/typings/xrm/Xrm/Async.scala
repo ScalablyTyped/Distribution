@@ -31,7 +31,8 @@ object Async {
       __obj.asInstanceOf[ErrorCallbackObject]
     }
     
-    extension [Self <: ErrorCallbackObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorCallbackObject] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object Async {
       __obj.asInstanceOf[OfflineErrorCallbackObject]
     }
     
-    extension [Self <: OfflineErrorCallbackObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OfflineErrorCallbackObject] (val x: Self) extends AnyVal {
       
       inline def setDebugMessage(value: String): Self = StObject.set(x, "debugMessage", value.asInstanceOf[js.Any])
     }
@@ -86,7 +88,8 @@ object Async {
       __obj.asInstanceOf[OfflineOperationSuccessCallbackObject]
     }
     
-    extension [Self <: OfflineOperationSuccessCallbackObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OfflineOperationSuccessCallbackObject] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -111,7 +114,8 @@ object Async {
       __obj.asInstanceOf[OpenQuickCreateSuccessCallbackObject]
     }
     
-    extension [Self <: OpenQuickCreateSuccessCallbackObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenQuickCreateSuccessCallbackObject] (val x: Self) extends AnyVal {
       
       inline def setSavedEntityReference(value: LookupValue): Self = StObject.set(x, "savedEntityReference", value.asInstanceOf[js.Any])
     }

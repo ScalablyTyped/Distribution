@@ -20,7 +20,8 @@ object Columns {
     __obj.asInstanceOf[Columns]
   }
   
-  extension [Self <: Columns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Columns] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: (Any, /* index */ js.UndefOr[Double]) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
     

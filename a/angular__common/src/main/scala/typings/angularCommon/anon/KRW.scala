@@ -98,7 +98,8 @@ object KRW {
     __obj.asInstanceOf[KRW]
   }
   
-  extension [Self <: KRW](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KRW] (val x: Self) extends AnyVal {
     
     inline def setAUD(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     

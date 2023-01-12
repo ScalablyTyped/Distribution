@@ -17,7 +17,8 @@ object SubscribeAdvancedOptions {
     __obj.asInstanceOf[SubscribeAdvancedOptions]
   }
   
-  extension [Self <: SubscribeAdvancedOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscribeAdvancedOptions] (val x: Self) extends AnyVal {
     
     inline def setMatch(value: prefix | wildcard): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     

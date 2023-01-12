@@ -18,7 +18,8 @@ object DeleteReportInput {
     __obj.asInstanceOf[DeleteReportInput]
   }
   
-  extension [Self <: DeleteReportInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteReportInput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object ButtonGroupSelectEvent {
     __obj.asInstanceOf[ButtonGroupSelectEvent]
   }
   
-  extension [Self <: ButtonGroupSelectEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonGroupSelectEvent] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

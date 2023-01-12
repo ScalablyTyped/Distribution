@@ -43,7 +43,8 @@ object CopyNotebookModel {
     __obj.asInstanceOf[CopyNotebookModel]
   }
   
-  extension [Self <: CopyNotebookModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyNotebookModel] (val x: Self) extends AnyVal {
     
     inline def setCreatedBy(value: NullableOption[String]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     

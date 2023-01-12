@@ -421,7 +421,8 @@ object fontAwesome5ProMod {
       __obj.asInstanceOf[FontAwesome5ProIconProps]
     }
     
-    extension [Self <: FontAwesome5ProIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontAwesome5ProIconProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       

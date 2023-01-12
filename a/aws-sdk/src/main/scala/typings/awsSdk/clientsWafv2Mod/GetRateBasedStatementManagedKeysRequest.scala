@@ -38,7 +38,8 @@ object GetRateBasedStatementManagedKeysRequest {
     __obj.asInstanceOf[GetRateBasedStatementManagedKeysRequest]
   }
   
-  extension [Self <: GetRateBasedStatementManagedKeysRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRateBasedStatementManagedKeysRequest] (val x: Self) extends AnyVal {
     
     inline def setRuleGroupRuleName(value: EntityName): Self = StObject.set(x, "RuleGroupRuleName", value.asInstanceOf[js.Any])
     

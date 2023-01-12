@@ -92,7 +92,8 @@ object libInputGroupInputGroupMod {
       __obj.asInstanceOf[InputGroupAddonProps]
     }
     
-    extension [Self <: InputGroupAddonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputGroupAddonProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object libInputGroupInputGroupMod {
       __obj.asInstanceOf[InputGroupProps]
     }
     
-    extension [Self <: InputGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputGroupProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

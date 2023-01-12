@@ -18,7 +18,8 @@ object CSSSkewY {
     __obj.asInstanceOf[CSSSkewY]
   }
   
-  extension [Self <: CSSSkewY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSSkewY] (val x: Self) extends AnyVal {
     
     inline def setAy(value: CSSNumericValue): Self = StObject.set(x, "ay", value.asInstanceOf[js.Any])
   }

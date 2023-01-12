@@ -62,7 +62,8 @@ object typesTooltippedMod {
       __obj.asInstanceOf[ChildProps]
     }
     
-    extension [Self <: ChildProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
       
@@ -421,7 +422,8 @@ object typesTooltippedMod {
       __obj.asInstanceOf[TooltippedProps]
     }
     
-    extension [Self <: TooltippedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltippedProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
       
@@ -615,7 +617,8 @@ object typesTooltippedMod {
       __obj.asInstanceOf[TooltippedProvidedProps]
     }
     
-    extension [Self <: TooltippedProvidedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltippedProvidedProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,8 @@ object typesEndpointSendConfigurationMod {
       __obj.asInstanceOf[EndpointSendConfiguration]
     }
     
-    extension [Self <: EndpointSendConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointSendConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBodyOverride(value: String): Self = StObject.set(x, "BodyOverride", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object typesEndpointSendConfigurationMod {
       __obj.asInstanceOf[UnmarshalledEndpointSendConfiguration]
     }
     
-    extension [Self <: UnmarshalledEndpointSendConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledEndpointSendConfiguration] (val x: Self) extends AnyVal {
       
       inline def setContext(value: StringDictionary[String]): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
       

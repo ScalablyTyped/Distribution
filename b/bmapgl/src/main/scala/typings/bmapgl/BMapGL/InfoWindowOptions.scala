@@ -31,7 +31,8 @@ object InfoWindowOptions {
     __obj.asInstanceOf[InfoWindowOptions]
   }
   
-  extension [Self <: InfoWindowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfoWindowOptions] (val x: Self) extends AnyVal {
     
     inline def setEnableAutoPan(value: Boolean): Self = StObject.set(x, "enableAutoPan", value.asInstanceOf[js.Any])
     

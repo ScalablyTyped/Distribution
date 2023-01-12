@@ -43,7 +43,8 @@ object CompositeTemplate {
     __obj.asInstanceOf[CompositeTemplate]
   }
   
-  extension [Self <: CompositeTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositeTemplate] (val x: Self) extends AnyVal {
     
     inline def setCompositeTemplateId(value: String): Self = StObject.set(x, "compositeTemplateId", value.asInstanceOf[js.Any])
     

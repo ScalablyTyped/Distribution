@@ -32,7 +32,8 @@ object Button {
     __obj.asInstanceOf[Button]
   }
   
-  extension [Self <: Button](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
     
     inline def setSetAuthorizationAction(value: AuthorizationAction => Button): Self = StObject.set(x, "setAuthorizationAction", js.Any.fromFunction1(value))
     

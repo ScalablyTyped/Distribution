@@ -41,7 +41,8 @@ object IPixelPolygonGeometry {
     __obj.asInstanceOf[IPixelPolygonGeometry]
   }
   
-  extension [Self <: IPixelPolygonGeometry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPixelPolygonGeometry] (val x: Self) extends AnyVal {
     
     inline def setContains(value: js.Array[Double] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     

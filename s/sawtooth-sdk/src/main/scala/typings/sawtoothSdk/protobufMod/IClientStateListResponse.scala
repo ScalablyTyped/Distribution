@@ -27,7 +27,8 @@ object IClientStateListResponse {
     __obj.asInstanceOf[IClientStateListResponse]
   }
   
-  extension [Self <: IClientStateListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientStateListResponse] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: js.Array[IEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

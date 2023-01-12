@@ -55,7 +55,8 @@ object DescribeEndpointConfigOutput {
     __obj.asInstanceOf[DescribeEndpointConfigOutput]
   }
   
-  extension [Self <: DescribeEndpointConfigOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEndpointConfigOutput] (val x: Self) extends AnyVal {
     
     inline def setAsyncInferenceConfig(value: AsyncInferenceConfig): Self = StObject.set(x, "AsyncInferenceConfig", value.asInstanceOf[js.Any])
     

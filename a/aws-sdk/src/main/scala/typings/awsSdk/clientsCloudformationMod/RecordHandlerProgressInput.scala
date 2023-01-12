@@ -48,7 +48,8 @@ object RecordHandlerProgressInput {
     __obj.asInstanceOf[RecordHandlerProgressInput]
   }
   
-  extension [Self <: RecordHandlerProgressInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordHandlerProgressInput] (val x: Self) extends AnyVal {
     
     inline def setBearerToken(value: ClientToken): Self = StObject.set(x, "BearerToken", value.asInstanceOf[js.Any])
     

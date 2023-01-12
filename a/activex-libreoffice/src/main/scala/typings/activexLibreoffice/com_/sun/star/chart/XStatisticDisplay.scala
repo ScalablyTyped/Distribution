@@ -71,7 +71,8 @@ object XStatisticDisplay {
     __obj.asInstanceOf[XStatisticDisplay]
   }
   
-  extension [Self <: XStatisticDisplay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStatisticDisplay] (val x: Self) extends AnyVal {
     
     inline def setDownBar(value: XPropertySet): Self = StObject.set(x, "DownBar", value.asInstanceOf[js.Any])
     

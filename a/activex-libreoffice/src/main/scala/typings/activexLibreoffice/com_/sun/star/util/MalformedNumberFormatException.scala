@@ -21,7 +21,8 @@ object MalformedNumberFormatException {
     __obj.asInstanceOf[MalformedNumberFormatException]
   }
   
-  extension [Self <: MalformedNumberFormatException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MalformedNumberFormatException] (val x: Self) extends AnyVal {
     
     inline def setCheckPos(value: Double): Self = StObject.set(x, "CheckPos", value.asInstanceOf[js.Any])
   }

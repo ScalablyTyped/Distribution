@@ -36,7 +36,8 @@ object EventUriEndpointStateChan {
     __obj.asInstanceOf[EventUriEndpointStateChan]
   }
   
-  extension [Self <: EventUriEndpointStateChan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventUriEndpointStateChan] (val x: Self) extends AnyVal {
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object IamPolicy {
     __obj.asInstanceOf[IamPolicy]
   }
   
-  extension [Self <: IamPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IamPolicy] (val x: Self) extends AnyVal {
     
     inline def setBindings(value: js.Array[Binding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     

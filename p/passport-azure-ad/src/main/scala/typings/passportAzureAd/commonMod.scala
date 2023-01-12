@@ -40,7 +40,8 @@ object commonMod {
       __obj.asInstanceOf[IBaseStrategyOption]
     }
     
-    extension [Self <: IBaseStrategyOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBaseStrategyOption] (val x: Self) extends AnyVal {
       
       inline def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
       
@@ -196,7 +197,8 @@ object commonMod {
       __obj.asInstanceOf[ITokenPayload]
     }
     
-    extension [Self <: ITokenPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITokenPayload] (val x: Self) extends AnyVal {
       
       inline def setAcr(value: `0` | `1`): Self = StObject.set(x, "acr", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object dxChartValueAxisLabel {
     __obj.asInstanceOf[dxChartValueAxisLabel]
   }
   
-  extension [Self <: dxChartValueAxisLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartValueAxisLabel] (val x: Self) extends AnyVal {
     
     inline def setCustomizeHint(value: /* axisValue */ ValueValueText => String): Self = StObject.set(x, "customizeHint", js.Any.fromFunction1(value))
     

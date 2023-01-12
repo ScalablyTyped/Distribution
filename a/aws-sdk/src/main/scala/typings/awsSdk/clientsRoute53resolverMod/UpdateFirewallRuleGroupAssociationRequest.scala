@@ -33,7 +33,8 @@ object UpdateFirewallRuleGroupAssociationRequest {
     __obj.asInstanceOf[UpdateFirewallRuleGroupAssociationRequest]
   }
   
-  extension [Self <: UpdateFirewallRuleGroupAssociationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFirewallRuleGroupAssociationRequest] (val x: Self) extends AnyVal {
     
     inline def setFirewallRuleGroupAssociationId(value: ResourceId): Self = StObject.set(x, "FirewallRuleGroupAssociationId", value.asInstanceOf[js.Any])
     

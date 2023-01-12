@@ -32,7 +32,8 @@ object NotifyingFeature {
     __obj.asInstanceOf[NotifyingFeature[E, P]]
   }
   
-  extension [Self <: NotifyingFeature[?, ?], E, P](x: Self & (NotifyingFeature[E, P])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifyingFeature[?, ?], E, P] (val x: Self & (NotifyingFeature[E, P])) extends AnyVal {
     
     inline def setOnNotificationSent(
       value: (/* listener */ js.Function1[NotificationSendEvent[E, P], Any], /* thisArgs */ js.UndefOr[Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable

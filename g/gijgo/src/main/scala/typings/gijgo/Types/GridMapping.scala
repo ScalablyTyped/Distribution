@@ -17,7 +17,8 @@ object GridMapping {
     __obj.asInstanceOf[GridMapping]
   }
   
-  extension [Self <: GridMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridMapping] (val x: Self) extends AnyVal {
     
     inline def setDataField(value: String): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
     

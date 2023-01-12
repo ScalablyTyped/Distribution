@@ -39,7 +39,8 @@ object AutoFilterData {
     __obj.asInstanceOf[AutoFilterData]
   }
   
-  extension [Self <: AutoFilterData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoFilterData] (val x: Self) extends AnyVal {
     
     inline def setCriteria(value: js.Array[FilterCriteria]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     

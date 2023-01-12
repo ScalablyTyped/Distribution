@@ -30,7 +30,8 @@ object SubstituteDateTimeFormatOptions {
     __obj.asInstanceOf[SubstituteDateTimeFormatOptions]
   }
   
-  extension [Self <: SubstituteDateTimeFormatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstituteDateTimeFormatOptions] (val x: Self) extends AnyVal {
     
     inline def setIntlOptions(value: DateTimeFormatOptions): Self = StObject.set(x, "intlOptions", value.asInstanceOf[js.Any])
     

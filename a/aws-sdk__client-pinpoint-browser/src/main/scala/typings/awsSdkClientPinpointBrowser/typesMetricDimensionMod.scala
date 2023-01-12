@@ -25,7 +25,8 @@ object typesMetricDimensionMod {
       __obj.asInstanceOf[MetricDimension]
     }
     
-    extension [Self <: MetricDimension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetricDimension] (val x: Self) extends AnyVal {
       
       inline def setComparisonOperator(value: String): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
       

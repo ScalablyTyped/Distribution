@@ -19,7 +19,8 @@ object ReturnPolicyOnlineRestockingFee {
     __obj.asInstanceOf[ReturnPolicyOnlineRestockingFee]
   }
   
-  extension [Self <: ReturnPolicyOnlineRestockingFee](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnPolicyOnlineRestockingFee] (val x: Self) extends AnyVal {
     
     inline def setFixedFee(value: PriceAmount): Self = StObject.set(x, "fixedFee", value.asInstanceOf[js.Any])
     

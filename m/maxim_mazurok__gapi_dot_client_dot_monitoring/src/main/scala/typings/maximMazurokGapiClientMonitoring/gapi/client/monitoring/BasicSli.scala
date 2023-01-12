@@ -37,7 +37,8 @@ object BasicSli {
     __obj.asInstanceOf[BasicSli]
   }
   
-  extension [Self <: BasicSli](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicSli] (val x: Self) extends AnyVal {
     
     inline def setAvailability(value: Any): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     

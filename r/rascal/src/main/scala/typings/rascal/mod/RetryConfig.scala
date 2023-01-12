@@ -25,7 +25,8 @@ object RetryConfig {
     __obj.asInstanceOf[RetryConfig]
   }
   
-  extension [Self <: RetryConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetryConfig] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

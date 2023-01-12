@@ -18,7 +18,8 @@ object CreateDirectoryConfigResult {
     __obj.asInstanceOf[CreateDirectoryConfigResult]
   }
   
-  extension [Self <: CreateDirectoryConfigResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDirectoryConfigResult] (val x: Self) extends AnyVal {
     
     inline def setDirectoryConfig(value: DirectoryConfig): Self = StObject.set(x, "DirectoryConfig", value.asInstanceOf[js.Any])
     

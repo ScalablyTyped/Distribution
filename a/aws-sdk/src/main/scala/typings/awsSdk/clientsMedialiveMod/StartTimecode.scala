@@ -18,7 +18,8 @@ object StartTimecode {
     __obj.asInstanceOf[StartTimecode]
   }
   
-  extension [Self <: StartTimecode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartTimecode] (val x: Self) extends AnyVal {
     
     inline def setTimecode(value: string): Self = StObject.set(x, "Timecode", value.asInstanceOf[js.Any])
     

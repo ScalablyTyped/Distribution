@@ -31,7 +31,8 @@ object IDetectorOptions {
     __obj.asInstanceOf[IDetectorOptions]
   }
   
-  extension [Self <: IDetectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDetectorOptions] (val x: Self) extends AnyVal {
     
     inline def setBodies(value: js.Array[Body]): Self = StObject.set(x, "bodies", value.asInstanceOf[js.Any])
     

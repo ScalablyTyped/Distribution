@@ -299,7 +299,8 @@ object CZK {
     __obj.asInstanceOf[CZK]
   }
   
-  extension [Self <: CZK](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CZK] (val x: Self) extends AnyVal {
     
     inline def setAFN(value: js.Array[scala.Nothing]): Self = StObject.set(x, "AFN", value.asInstanceOf[js.Any])
     

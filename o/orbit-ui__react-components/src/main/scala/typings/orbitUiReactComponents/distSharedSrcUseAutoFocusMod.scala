@@ -35,7 +35,8 @@ object distSharedSrcUseAutoFocusMod {
       __obj.asInstanceOf[AbstractAutoFocusOptions]
     }
     
-    extension [Self <: AbstractAutoFocusOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractAutoFocusOptions] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object distSharedSrcUseAutoFocusMod {
       __obj.asInstanceOf[AutoFocusChildOptions]
     }
     
-    extension [Self <: AutoFocusChildOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoFocusChildOptions] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object distSharedSrcUseAutoFocusMod {
       __obj.asInstanceOf[AutoFocusOptions]
     }
     
-    extension [Self <: AutoFocusOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoFocusOptions] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       

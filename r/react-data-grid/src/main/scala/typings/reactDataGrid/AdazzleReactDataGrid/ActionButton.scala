@@ -17,7 +17,8 @@ object ActionButton {
     __obj.asInstanceOf[ActionButton]
   }
   
-  extension [Self <: ActionButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionButton] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     

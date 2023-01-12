@@ -116,7 +116,8 @@ object PowerFormRecipient {
     __obj.asInstanceOf[PowerFormRecipient]
   }
   
-  extension [Self <: PowerFormRecipient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PowerFormRecipient] (val x: Self) extends AnyVal {
     
     inline def setAccessCode(value: String): Self = StObject.set(x, "accessCode", value.asInstanceOf[js.Any])
     

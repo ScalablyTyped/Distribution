@@ -18,7 +18,8 @@ object CreateReplicaAction {
     __obj.asInstanceOf[CreateReplicaAction]
   }
   
-  extension [Self <: CreateReplicaAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateReplicaAction] (val x: Self) extends AnyVal {
     
     inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
   }

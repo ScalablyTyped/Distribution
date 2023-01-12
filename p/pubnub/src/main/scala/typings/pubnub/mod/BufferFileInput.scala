@@ -19,7 +19,8 @@ object BufferFileInput {
     __obj.asInstanceOf[BufferFileInput]
   }
   
-  extension [Self <: BufferFileInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferFileInput] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

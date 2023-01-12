@@ -27,7 +27,8 @@ object distTypesOnStageSystemDistComponentsLoyaltyPointsLargeMod extends Shortcu
       __obj.asInstanceOf[LoyaltyPointsLargeProps]
     }
     
-    extension [Self <: LoyaltyPointsLargeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoyaltyPointsLargeProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

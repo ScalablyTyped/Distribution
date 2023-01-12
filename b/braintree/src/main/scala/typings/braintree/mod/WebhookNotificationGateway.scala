@@ -15,7 +15,8 @@ object WebhookNotificationGateway {
     __obj.asInstanceOf[WebhookNotificationGateway]
   }
   
-  extension [Self <: WebhookNotificationGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebhookNotificationGateway] (val x: Self) extends AnyVal {
     
     inline def setParse(value: (String, String) => js.Promise[WebhookNotification]): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
   }

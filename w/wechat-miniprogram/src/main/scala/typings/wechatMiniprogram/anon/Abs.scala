@@ -335,7 +335,8 @@ object Abs {
     __obj.asInstanceOf[Abs]
   }
   
-  extension [Self <: Abs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Abs] (val x: Self) extends AnyVal {
     
     inline def setAbs(value: Any => DatabaseAggregateCommand): Self = StObject.set(x, "abs", js.Any.fromFunction1(value))
     

@@ -19,7 +19,8 @@ object QueryOperationOrder {
     __obj.asInstanceOf[QueryOperationOrder[T]]
   }
   
-  extension [Self <: QueryOperationOrder[?], T /* <: QuadTermName | Variable */](x: Self & QueryOperationOrder[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryOperationOrder[?], T /* <: QuadTermName | Variable */] (val x: Self & QueryOperationOrder[T]) extends AnyVal {
     
     inline def setCost(value: QueryOperationCost): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     

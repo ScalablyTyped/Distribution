@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[TypeofScenarioLevelPlugin]
     }
     
-    extension [Self <: TypeofScenarioLevelPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofScenarioLevelPlugin] (val x: Self) extends AnyVal {
       
       inline def setInit(value: Any => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     }

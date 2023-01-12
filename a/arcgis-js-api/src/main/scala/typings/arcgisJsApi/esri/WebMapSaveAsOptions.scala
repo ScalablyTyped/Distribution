@@ -27,7 +27,8 @@ object WebMapSaveAsOptions {
     __obj.asInstanceOf[WebMapSaveAsOptions]
   }
   
-  extension [Self <: WebMapSaveAsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebMapSaveAsOptions] (val x: Self) extends AnyVal {
     
     inline def setFolder(value: PortalFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     

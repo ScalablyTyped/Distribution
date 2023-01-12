@@ -17,7 +17,8 @@ object AdWordsUrls {
     __obj.asInstanceOf[AdWordsUrls]
   }
   
-  extension [Self <: AdWordsUrls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdWordsUrls] (val x: Self) extends AnyVal {
     
     inline def setGetCustomParameters(value: () => js.Object): Self = StObject.set(x, "getCustomParameters", js.Any.fromFunction0(value))
     

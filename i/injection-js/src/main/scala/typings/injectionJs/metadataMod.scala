@@ -30,7 +30,8 @@ object metadataMod {
     @js.native
     val ^ : InjectDecorator = js.native
     
-    extension [Self <: Inject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Inject] (val x: Self) extends AnyVal {
       
       inline def setToken(value: Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }

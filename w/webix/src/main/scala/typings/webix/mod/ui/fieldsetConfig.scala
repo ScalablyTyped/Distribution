@@ -58,7 +58,8 @@ object fieldsetConfig {
     __obj.asInstanceOf[fieldsetConfig]
   }
   
-  extension [Self <: fieldsetConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: fieldsetConfig] (val x: Self) extends AnyVal {
     
     inline def set$cssName(value: String): Self = StObject.set(x, "$cssName", value.asInstanceOf[js.Any])
     

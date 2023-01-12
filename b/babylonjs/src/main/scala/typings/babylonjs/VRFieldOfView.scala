@@ -21,7 +21,8 @@ object VRFieldOfView {
     __obj.asInstanceOf[VRFieldOfView]
   }
   
-  extension [Self <: VRFieldOfView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VRFieldOfView] (val x: Self) extends AnyVal {
     
     inline def setDownDegrees(value: Double): Self = StObject.set(x, "downDegrees", value.asInstanceOf[js.Any])
     

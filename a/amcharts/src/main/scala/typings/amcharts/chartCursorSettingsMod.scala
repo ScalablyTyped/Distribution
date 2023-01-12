@@ -223,7 +223,8 @@ object chartCursorSettingsMod {
       __obj.asInstanceOf[ChartCursorSettings]
     }
     
-    extension [Self <: ChartCursorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartCursorSettings] (val x: Self) extends AnyVal {
       
       inline def setBulletSize(value: Double): Self = StObject.set(x, "bulletSize", value.asInstanceOf[js.Any])
       

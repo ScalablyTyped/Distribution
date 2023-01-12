@@ -22,7 +22,8 @@ object ResourcePolicyGroupPlacementPolicy {
     __obj.asInstanceOf[ResourcePolicyGroupPlacementPolicy]
   }
   
-  extension [Self <: ResourcePolicyGroupPlacementPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourcePolicyGroupPlacementPolicy] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityDomainCount(value: Double): Self = StObject.set(x, "availabilityDomainCount", value.asInstanceOf[js.Any])
     

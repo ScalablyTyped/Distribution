@@ -18,7 +18,8 @@ object LayerProps {
     __obj.asInstanceOf[LayerProps]
   }
   
-  extension [Self <: LayerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

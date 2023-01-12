@@ -15,7 +15,8 @@ object ICopyVaultJobOutputInfo {
     __obj.asInstanceOf[ICopyVaultJobOutputInfo]
   }
   
-  extension [Self <: ICopyVaultJobOutputInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICopyVaultJobOutputInfo] (val x: Self) extends AnyVal {
     
     inline def setVaultProperties(value: IVaultProperties): Self = StObject.set(x, "VaultProperties", value.asInstanceOf[js.Any])
   }

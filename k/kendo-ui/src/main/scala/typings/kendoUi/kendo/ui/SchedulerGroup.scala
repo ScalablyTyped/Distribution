@@ -19,7 +19,8 @@ object SchedulerGroup {
     __obj.asInstanceOf[SchedulerGroup]
   }
   
-  extension [Self <: SchedulerGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerGroup] (val x: Self) extends AnyVal {
     
     inline def setDate(value: Boolean): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

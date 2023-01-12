@@ -26,7 +26,8 @@ object TabsSettings {
     __obj.asInstanceOf[TabsSettings]
   }
   
-  extension [Self <: TabsSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabsSettings] (val x: Self) extends AnyVal {
     
     inline def setDefaultTabStop(value: Double): Self = StObject.set(x, "defaultTabStop", value.asInstanceOf[js.Any])
     

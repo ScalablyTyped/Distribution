@@ -18,7 +18,8 @@ object SlotTypeRegexConfiguration {
     __obj.asInstanceOf[SlotTypeRegexConfiguration]
   }
   
-  extension [Self <: SlotTypeRegexConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotTypeRegexConfiguration] (val x: Self) extends AnyVal {
     
     inline def setPattern(value: RegexPattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
   }

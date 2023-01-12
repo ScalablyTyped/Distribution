@@ -36,7 +36,8 @@ object ExecutionContextDescription {
     __obj.asInstanceOf[ExecutionContextDescription]
   }
   
-  extension [Self <: ExecutionContextDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionContextDescription] (val x: Self) extends AnyVal {
     
     inline def setAuxData(value: js.Object): Self = StObject.set(x, "auxData", value.asInstanceOf[js.Any])
     

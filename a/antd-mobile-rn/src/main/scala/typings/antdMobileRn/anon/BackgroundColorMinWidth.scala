@@ -19,7 +19,8 @@ object BackgroundColorMinWidth {
     __obj.asInstanceOf[BackgroundColorMinWidth]
   }
   
-  extension [Self <: BackgroundColorMinWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundColorMinWidth] (val x: Self) extends AnyVal {
     
     inline def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     

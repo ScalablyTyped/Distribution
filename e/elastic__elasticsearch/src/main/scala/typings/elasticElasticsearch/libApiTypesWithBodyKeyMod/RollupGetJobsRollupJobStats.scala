@@ -50,7 +50,8 @@ object RollupGetJobsRollupJobStats {
     __obj.asInstanceOf[RollupGetJobsRollupJobStats]
   }
   
-  extension [Self <: RollupGetJobsRollupJobStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupGetJobsRollupJobStats] (val x: Self) extends AnyVal {
     
     inline def setDocuments_processed(value: long): Self = StObject.set(x, "documents_processed", value.asInstanceOf[js.Any])
     

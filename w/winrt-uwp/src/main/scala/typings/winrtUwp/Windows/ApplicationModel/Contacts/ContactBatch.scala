@@ -21,7 +21,8 @@ object ContactBatch {
     __obj.asInstanceOf[ContactBatch]
   }
   
-  extension [Self <: ContactBatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactBatch] (val x: Self) extends AnyVal {
     
     inline def setContacts(value: IVectorView[Contact]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     

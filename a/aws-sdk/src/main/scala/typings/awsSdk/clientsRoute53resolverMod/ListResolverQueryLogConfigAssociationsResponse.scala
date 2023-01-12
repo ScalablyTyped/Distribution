@@ -33,7 +33,8 @@ object ListResolverQueryLogConfigAssociationsResponse {
     __obj.asInstanceOf[ListResolverQueryLogConfigAssociationsResponse]
   }
   
-  extension [Self <: ListResolverQueryLogConfigAssociationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResolverQueryLogConfigAssociationsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -154,7 +154,8 @@ object esLibBaseServiceMod {
       __obj.asInstanceOf[BaseServiceOptions]
     }
     
-    extension [Self <: BaseServiceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseServiceOptions] (val x: Self) extends AnyVal {
       
       inline def setEnableRetries(value: Boolean): Self = StObject.set(x, "enableRetries", value.asInstanceOf[js.Any])
       
@@ -206,7 +207,8 @@ object esLibBaseServiceMod {
       __obj.asInstanceOf[UserOptions]
     }
     
-    extension [Self <: UserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthenticator(value: AuthenticatorInterface): Self = StObject.set(x, "authenticator", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object EventTriggerDefinition {
     __obj.asInstanceOf[EventTriggerDefinition]
   }
   
-  extension [Self <: EventTriggerDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventTriggerDefinition] (val x: Self) extends AnyVal {
     
     inline def setEventResourceARN(value: ResourceARN): Self = StObject.set(x, "EventResourceARN", value.asInstanceOf[js.Any])
     

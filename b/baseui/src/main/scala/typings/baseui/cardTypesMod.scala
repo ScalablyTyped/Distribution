@@ -32,7 +32,8 @@ object cardTypesMod {
       __obj.asInstanceOf[CardOverrides]
     }
     
-    extension [Self <: CardOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardOverrides] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Override[Any]): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object cardTypesMod {
       __obj.asInstanceOf[CardProps]
     }
     
-    extension [Self <: CardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardProps] (val x: Self) extends AnyVal {
       
       inline def setAction(value: ReactNode): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object cardTypesMod {
       __obj.asInstanceOf[ImageProps]
     }
     
-    extension [Self <: ImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageProps] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object RunnergroupidRunnerid {
     __obj.asInstanceOf[RunnergroupidRunnerid]
   }
   
-  extension [Self <: RunnergroupidRunnerid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunnergroupidRunnerid] (val x: Self) extends AnyVal {
     
     inline def setOrg_(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any

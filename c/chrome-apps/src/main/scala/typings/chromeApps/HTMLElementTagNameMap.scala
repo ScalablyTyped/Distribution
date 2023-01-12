@@ -17,7 +17,8 @@ object HTMLElementTagNameMap {
     __obj.asInstanceOf[HTMLElementTagNameMap]
   }
   
-  extension [Self <: HTMLElementTagNameMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLElementTagNameMap] (val x: Self) extends AnyVal {
     
     inline def setAppview(value: HTMLAppViewElement): Self = StObject.set(x, "appview", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object UpdateStreamInput {
     __obj.asInstanceOf[UpdateStreamInput]
   }
   
-  extension [Self <: UpdateStreamInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateStreamInput] (val x: Self) extends AnyVal {
     
     inline def setCurrentVersion(value: Version): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     

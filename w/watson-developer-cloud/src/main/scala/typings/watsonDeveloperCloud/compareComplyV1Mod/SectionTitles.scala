@@ -26,7 +26,8 @@ object SectionTitles {
     __obj.asInstanceOf[SectionTitles]
   }
   
-  extension [Self <: SectionTitles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionTitles] (val x: Self) extends AnyVal {
     
     inline def setElement_locations(value: js.Array[ElementLocations]): Self = StObject.set(x, "element_locations", value.asInstanceOf[js.Any])
     

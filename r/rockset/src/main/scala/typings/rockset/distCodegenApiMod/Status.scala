@@ -128,7 +128,8 @@ object Status {
     /* 1 */ val WATCHING: typings.rockset.distCodegenApiMod.Status.StateEnum.WATCHING & Double = js.native
   }
   
-  extension [Self <: Status](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
     
     inline def setLast_error_at(value: String): Self = StObject.set(x, "last_error_at", value.asInstanceOf[js.Any])
     

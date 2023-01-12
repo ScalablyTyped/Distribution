@@ -69,7 +69,8 @@ object soundmanager {
       __obj.asInstanceOf[DefaultOptions]
     }
     
-    extension [Self <: DefaultOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
       
@@ -226,7 +227,8 @@ object soundmanager {
       __obj.asInstanceOf[Flash9Options]
     }
     
-    extension [Self <: Flash9Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flash9Options] (val x: Self) extends AnyVal {
       
       inline def setIsMovieStar(value: `true`): Self = StObject.set(x, "isMovieStar", value.asInstanceOf[js.Any])
       
@@ -283,7 +285,8 @@ object soundmanager {
       __obj.asInstanceOf[MovieStarOptions]
     }
     
-    extension [Self <: MovieStarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MovieStarOptions] (val x: Self) extends AnyVal {
       
       inline def setBufferTime(value: Double): Self = StObject.set(x, "bufferTime", value.asInstanceOf[js.Any])
       
@@ -322,7 +325,8 @@ object soundmanager {
       __obj.asInstanceOf[PeekData]
     }
     
-    extension [Self <: PeekData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeekData] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -551,7 +555,8 @@ object soundmanager {
       __obj.asInstanceOf[SoundManagerAudioFormat]
     }
     
-    extension [Self <: SoundManagerAudioFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SoundManagerAudioFormat] (val x: Self) extends AnyVal {
       
       inline def setRelated(value: js.Array[String]): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
       
@@ -645,7 +650,8 @@ object soundmanager {
       __obj.asInstanceOf[SoundManagerProps]
     }
     
-    extension [Self <: SoundManagerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SoundManagerProps] (val x: Self) extends AnyVal {
       
       inline def setAllowScriptAccess(value: ScriptAccess): Self = StObject.set(x, "allowScriptAccess", value.asInstanceOf[js.Any])
       
@@ -778,7 +784,8 @@ object soundmanager {
       __obj.asInstanceOf[SoundProperties]
     }
     
-    extension [Self <: SoundProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SoundProperties] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

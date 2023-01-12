@@ -155,7 +155,8 @@ object ChainedTextFrame {
     __obj.asInstanceOf[ChainedTextFrame]
   }
   
-  extension [Self <: ChainedTextFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChainedTextFrame] (val x: Self) extends AnyVal {
     
     inline def setChainNextName(value: String): Self = StObject.set(x, "ChainNextName", value.asInstanceOf[js.Any])
     

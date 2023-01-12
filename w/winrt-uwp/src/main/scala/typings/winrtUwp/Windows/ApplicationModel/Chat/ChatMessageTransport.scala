@@ -47,7 +47,8 @@ object ChatMessageTransport {
     __obj.asInstanceOf[ChatMessageTransport]
   }
   
-  extension [Self <: ChatMessageTransport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatMessageTransport] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: ChatMessageTransportConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

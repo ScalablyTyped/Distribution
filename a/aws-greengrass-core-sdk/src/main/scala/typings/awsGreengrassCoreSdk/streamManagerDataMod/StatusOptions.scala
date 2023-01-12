@@ -28,7 +28,8 @@ object StatusOptions {
     __obj.asInstanceOf[StatusOptions]
   }
   
-  extension [Self <: StatusOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusOptions] (val x: Self) extends AnyVal {
     
     inline def setCanceled(value: `4`): Self = StObject.set(x, "Canceled", value.asInstanceOf[js.Any])
     

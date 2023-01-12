@@ -16,7 +16,8 @@ object Deserialize {
     __obj.asInstanceOf[Deserialize[ResponseType]]
   }
   
-  extension [Self <: Deserialize[?], ResponseType](x: Self & Deserialize[ResponseType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deserialize[?], ResponseType] (val x: Self & Deserialize[ResponseType]) extends AnyVal {
     
     inline def setDeserialize(value: Buffer => ResponseType): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
   }

@@ -21,7 +21,8 @@ object GridFilterableOperators {
     __obj.asInstanceOf[GridFilterableOperators]
   }
   
-  extension [Self <: GridFilterableOperators](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridFilterableOperators] (val x: Self) extends AnyVal {
     
     inline def setDate(value: GridFilterableOperatorsDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

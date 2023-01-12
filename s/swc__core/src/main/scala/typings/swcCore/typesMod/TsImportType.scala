@@ -28,7 +28,8 @@ object TsImportType {
     __obj.asInstanceOf[TsImportType]
   }
   
-  extension [Self <: TsImportType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TsImportType] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: StringLiteral): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     

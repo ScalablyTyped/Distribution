@@ -50,7 +50,8 @@ object CalendarContentProps {
     __obj.asInstanceOf[CalendarContentProps]
   }
   
-  extension [Self <: CalendarContentProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarContentProps] (val x: Self) extends AnyVal {
     
     inline def setForPrint(value: Boolean): Self = StObject.set(x, "forPrint", value.asInstanceOf[js.Any])
     

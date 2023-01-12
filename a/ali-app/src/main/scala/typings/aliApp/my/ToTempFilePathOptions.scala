@@ -34,7 +34,8 @@ object ToTempFilePathOptions {
     __obj.asInstanceOf[ToTempFilePathOptions]
   }
   
-  extension [Self <: ToTempFilePathOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToTempFilePathOptions] (val x: Self) extends AnyVal {
     
     inline def setDestHeight(value: Double): Self = StObject.set(x, "destHeight", value.asInstanceOf[js.Any])
     

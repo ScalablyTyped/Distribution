@@ -32,7 +32,8 @@ object ClusterAllocationExplainAllocationStore {
     __obj.asInstanceOf[ClusterAllocationExplainAllocationStore]
   }
   
-  extension [Self <: ClusterAllocationExplainAllocationStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterAllocationExplainAllocationStore] (val x: Self) extends AnyVal {
     
     inline def setAllocation_id(value: String): Self = StObject.set(x, "allocation_id", value.asInstanceOf[js.Any])
     

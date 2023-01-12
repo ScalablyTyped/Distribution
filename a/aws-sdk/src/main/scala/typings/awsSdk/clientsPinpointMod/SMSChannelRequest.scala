@@ -28,7 +28,8 @@ object SMSChannelRequest {
     __obj.asInstanceOf[SMSChannelRequest]
   }
   
-  extension [Self <: SMSChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SMSChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

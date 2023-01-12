@@ -25,7 +25,8 @@ object sizeRange {
     __obj.asInstanceOf[sizeRange]
   }
   
-  extension [Self <: sizeRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sizeRange] (val x: Self) extends AnyVal {
     
     inline def setSizeRange(value: sizeRangeSizeRangeParams => js.Promise[SizeRangeResult]): Self = StObject.set(x, "sizeRange", js.Any.fromFunction1(value))
   }

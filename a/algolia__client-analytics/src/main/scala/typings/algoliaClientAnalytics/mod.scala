@@ -98,7 +98,8 @@ object mod {
       __obj.asInstanceOf[ABTest]
     }
     
-    extension [Self <: ABTest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ABTest] (val x: Self) extends AnyVal {
       
       inline def setEndAt(value: String): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object mod {
       __obj.asInstanceOf[AddABTestResponse]
     }
     
-    extension [Self <: AddABTestResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddABTestResponse] (val x: Self) extends AnyVal {
       
       inline def setAbTestID(value: Double): Self = StObject.set(x, "abTestID", value.asInstanceOf[js.Any])
       
@@ -163,7 +165,8 @@ object mod {
       __obj.asInstanceOf[AnalyticsClient]
     }
     
-    extension [Self <: AnalyticsClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsClient] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
@@ -195,7 +198,8 @@ object mod {
       __obj.asInstanceOf[AnalyticsClientOptions]
     }
     
-    extension [Self <: AnalyticsClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsClientOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -231,7 +235,8 @@ object mod {
       __obj.asInstanceOf[DeleteABTestResponse]
     }
     
-    extension [Self <: DeleteABTestResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteABTestResponse] (val x: Self) extends AnyVal {
       
       inline def setAbTestID(value: Double): Self = StObject.set(x, "abTestID", value.asInstanceOf[js.Any])
       
@@ -306,7 +311,8 @@ object mod {
       __obj.asInstanceOf[GetABTestResponse]
     }
     
-    extension [Self <: GetABTestResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetABTestResponse] (val x: Self) extends AnyVal {
       
       inline def setAbTestID(value: Double): Self = StObject.set(x, "abTestID", value.asInstanceOf[js.Any])
       
@@ -349,7 +355,8 @@ object mod {
       __obj.asInstanceOf[GetABTestsOptions]
     }
     
-    extension [Self <: GetABTestsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetABTestsOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -385,7 +392,8 @@ object mod {
       __obj.asInstanceOf[GetABTestsResponse]
     }
     
-    extension [Self <: GetABTestsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetABTestsResponse] (val x: Self) extends AnyVal {
       
       inline def setAbtests(value: js.Array[GetABTestResponse]): Self = StObject.set(x, "abtests", value.asInstanceOf[js.Any])
       
@@ -423,7 +431,8 @@ object mod {
       __obj.asInstanceOf[StopABTestResponse]
     }
     
-    extension [Self <: StopABTestResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StopABTestResponse] (val x: Self) extends AnyVal {
       
       inline def setAbTestID(value: Double): Self = StObject.set(x, "abTestID", value.asInstanceOf[js.Any])
       
@@ -462,7 +471,8 @@ object mod {
       __obj.asInstanceOf[Variant]
     }
     
-    extension [Self <: Variant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Variant] (val x: Self) extends AnyVal {
       
       inline def setCustomSearchParameters(value: SearchOptions): Self = StObject.set(x, "customSearchParameters", value.asInstanceOf[js.Any])
       
@@ -534,7 +544,8 @@ object mod {
       __obj.asInstanceOf[VariantResponse]
     }
     
-    extension [Self <: VariantResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariantResponse] (val x: Self) extends AnyVal {
       
       inline def setAverageClickPosition(value: Double): Self = StObject.set(x, "averageClickPosition", value.asInstanceOf[js.Any])
       

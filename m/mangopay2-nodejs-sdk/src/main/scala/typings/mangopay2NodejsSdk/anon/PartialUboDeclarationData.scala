@@ -36,7 +36,8 @@ object PartialUboDeclarationData {
     __obj.asInstanceOf[PartialUboDeclarationData]
   }
   
-  extension [Self <: PartialUboDeclarationData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialUboDeclarationData] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     

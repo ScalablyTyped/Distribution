@@ -27,7 +27,8 @@ object IOwnerPropertyDef {
     __obj.asInstanceOf[IOwnerPropertyDef]
   }
   
-  extension [Self <: IOwnerPropertyDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOwnerPropertyDef] (val x: Self) extends AnyVal {
     
     inline def setDependencyRelation(value: MFDependencyRelation): Self = StObject.set(x, "DependencyRelation", value.asInstanceOf[js.Any])
     

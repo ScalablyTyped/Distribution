@@ -173,7 +173,8 @@ object mod {
       __obj.asInstanceOf[Mp4FragOptions]
     }
     
-    extension [Self <: Mp4FragOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mp4FragOptions] (val x: Self) extends AnyVal {
       
       inline def setHlsPlaylistBase(value: String): Self = StObject.set(x, "hlsPlaylistBase", value.asInstanceOf[js.Any])
       
@@ -231,7 +232,8 @@ object mod {
       __obj.asInstanceOf[SegmentObject]
     }
     
-    extension [Self <: SegmentObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentObject] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       

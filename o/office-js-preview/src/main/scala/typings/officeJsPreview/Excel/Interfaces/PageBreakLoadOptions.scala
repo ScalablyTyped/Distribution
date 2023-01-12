@@ -39,7 +39,8 @@ object PageBreakLoadOptions {
     __obj.asInstanceOf[PageBreakLoadOptions]
   }
   
-  extension [Self <: PageBreakLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageBreakLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

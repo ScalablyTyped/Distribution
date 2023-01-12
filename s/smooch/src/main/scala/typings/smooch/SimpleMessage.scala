@@ -18,7 +18,8 @@ object SimpleMessage {
     __obj.asInstanceOf[SimpleMessage]
   }
   
-  extension [Self <: SimpleMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleMessage] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

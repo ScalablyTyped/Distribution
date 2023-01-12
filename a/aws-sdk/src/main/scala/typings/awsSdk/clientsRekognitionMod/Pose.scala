@@ -28,7 +28,8 @@ object Pose {
     __obj.asInstanceOf[Pose]
   }
   
-  extension [Self <: Pose](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pose] (val x: Self) extends AnyVal {
     
     inline def setPitch(value: Degree): Self = StObject.set(x, "Pitch", value.asInstanceOf[js.Any])
     

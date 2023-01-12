@@ -97,7 +97,8 @@ object XDataProvider {
     __obj.asInstanceOf[XDataProvider]
   }
   
-  extension [Self <: XDataProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataProvider] (val x: Self) extends AnyVal {
     
     inline def setCreateDataSequenceByRangeRepresentation(value: String => XDataSequence): Self = StObject.set(x, "createDataSequenceByRangeRepresentation", js.Any.fromFunction1(value))
     

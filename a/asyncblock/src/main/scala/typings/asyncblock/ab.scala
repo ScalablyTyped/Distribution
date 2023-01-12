@@ -86,7 +86,8 @@ object ab {
         __obj.asInstanceOf[TaskOptions]
       }
       
-      extension [Self <: TaskOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TaskOptions] (val x: Self) extends AnyVal {
         
         inline def setDontWait(value: Boolean): Self = StObject.set(x, "dontWait", value.asInstanceOf[js.Any])
         

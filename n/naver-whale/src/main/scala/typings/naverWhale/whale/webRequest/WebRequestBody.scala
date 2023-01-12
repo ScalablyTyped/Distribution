@@ -29,7 +29,8 @@ object WebRequestBody {
     __obj.asInstanceOf[WebRequestBody]
   }
   
-  extension [Self <: WebRequestBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebRequestBody] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

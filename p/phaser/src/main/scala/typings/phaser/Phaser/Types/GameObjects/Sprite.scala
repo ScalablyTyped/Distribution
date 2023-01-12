@@ -27,7 +27,8 @@ object Sprite {
       __obj.asInstanceOf[SpriteConfig]
     }
     
-    extension [Self <: SpriteConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpriteConfig] (val x: Self) extends AnyVal {
       
       inline def setFrame(value: Double | String): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       

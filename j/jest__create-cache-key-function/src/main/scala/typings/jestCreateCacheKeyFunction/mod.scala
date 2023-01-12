@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[NewCacheKeyOptions]
     }
     
-    extension [Self <: NewCacheKeyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewCacheKeyOptions] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: ProjectConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object mod {
       __obj.asInstanceOf[OldCacheKeyOptions]
     }
     
-    extension [Self <: OldCacheKeyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OldCacheKeyOptions] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: ProjectConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

@@ -95,7 +95,8 @@ object RasterShadedReliefRendere {
     __obj.asInstanceOf[RasterShadedReliefRendere]
   }
   
-  extension [Self <: RasterShadedReliefRendere](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterShadedReliefRendere] (val x: Self) extends AnyVal {
     
     inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     

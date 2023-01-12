@@ -18,7 +18,8 @@ object DomainMetadataRequest {
     __obj.asInstanceOf[DomainMetadataRequest]
   }
   
-  extension [Self <: DomainMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }

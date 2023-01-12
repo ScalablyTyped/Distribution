@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
@@ -61,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Lazy]
     }
     
-    extension [Self <: Lazy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lazy] (val x: Self) extends AnyVal {
       
       inline def setLazy(value: `true`): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
     }

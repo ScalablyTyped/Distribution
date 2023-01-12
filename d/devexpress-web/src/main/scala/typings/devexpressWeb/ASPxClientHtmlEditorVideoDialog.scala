@@ -65,7 +65,8 @@ object ASPxClientHtmlEditorVideoDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorVideoDialog]
   }
   
-  extension [Self <: ASPxClientHtmlEditorVideoDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorVideoDialog] (val x: Self) extends AnyVal {
     
     inline def setGetAutoPlayCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetAutoPlayCheckBox", js.Any.fromFunction0(value))
     

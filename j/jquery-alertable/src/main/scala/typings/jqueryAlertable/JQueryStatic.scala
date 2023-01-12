@@ -15,7 +15,8 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  extension [Self <: JQueryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     inline def setAlertable(value: Alertable): Self = StObject.set(x, "alertable", value.asInstanceOf[js.Any])
   }

@@ -48,7 +48,8 @@ object SparkConnectorSource {
     __obj.asInstanceOf[SparkConnectorSource]
   }
   
-  extension [Self <: SparkConnectorSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparkConnectorSource] (val x: Self) extends AnyVal {
     
     inline def setAdditionalOptions(value: AdditionalOptions): Self = StObject.set(x, "AdditionalOptions", value.asInstanceOf[js.Any])
     

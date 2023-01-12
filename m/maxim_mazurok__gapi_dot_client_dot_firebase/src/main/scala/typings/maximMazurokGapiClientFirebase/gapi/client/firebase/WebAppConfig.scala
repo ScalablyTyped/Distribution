@@ -53,7 +53,8 @@ object WebAppConfig {
     __obj.asInstanceOf[WebAppConfig]
   }
   
-  extension [Self <: WebAppConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAppConfig] (val x: Self) extends AnyVal {
     
     inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListReportPlansInput {
     __obj.asInstanceOf[ListReportPlansInput]
   }
   
-  extension [Self <: ListReportPlansInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListReportPlansInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

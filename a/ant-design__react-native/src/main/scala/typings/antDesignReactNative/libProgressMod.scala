@@ -76,7 +76,8 @@ object libProgressMod {
       __obj.asInstanceOf[ProgressProps]
     }
     
-    extension [Self <: ProgressProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressProps] (val x: Self) extends AnyVal {
       
       inline def setAppearTransition(value: Boolean): Self = StObject.set(x, "appearTransition", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object MouseActionOptions {
     __obj.asInstanceOf[MouseActionOptions]
   }
   
-  extension [Self <: MouseActionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseActionOptions] (val x: Self) extends AnyVal {
     
     inline def setModifiers(value: KeyModifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     

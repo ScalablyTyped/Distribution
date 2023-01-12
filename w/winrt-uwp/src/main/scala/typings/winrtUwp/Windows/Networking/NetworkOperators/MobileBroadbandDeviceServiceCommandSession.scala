@@ -39,7 +39,8 @@ object MobileBroadbandDeviceServiceCommandSession {
     __obj.asInstanceOf[MobileBroadbandDeviceServiceCommandSession]
   }
   
-  extension [Self <: MobileBroadbandDeviceServiceCommandSession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileBroadbandDeviceServiceCommandSession] (val x: Self) extends AnyVal {
     
     inline def setCloseSession(value: () => Unit): Self = StObject.set(x, "closeSession", js.Any.fromFunction0(value))
     

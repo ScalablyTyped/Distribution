@@ -23,7 +23,8 @@ object NeoVpcConfig {
     __obj.asInstanceOf[NeoVpcConfig]
   }
   
-  extension [Self <: NeoVpcConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NeoVpcConfig] (val x: Self) extends AnyVal {
     
     inline def setSecurityGroupIds(value: NeoVpcSecurityGroupIds): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     

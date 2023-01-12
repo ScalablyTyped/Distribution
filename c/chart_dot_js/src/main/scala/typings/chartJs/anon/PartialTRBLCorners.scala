@@ -22,7 +22,8 @@ object PartialTRBLCorners {
     __obj.asInstanceOf[PartialTRBLCorners]
   }
   
-  extension [Self <: PartialTRBLCorners](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTRBLCorners] (val x: Self) extends AnyVal {
     
     inline def setBottomLeft(value: Double): Self = StObject.set(x, "bottomLeft", value.asInstanceOf[js.Any])
     

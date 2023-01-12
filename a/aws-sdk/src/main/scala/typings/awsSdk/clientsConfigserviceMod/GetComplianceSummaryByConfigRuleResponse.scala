@@ -18,7 +18,8 @@ object GetComplianceSummaryByConfigRuleResponse {
     __obj.asInstanceOf[GetComplianceSummaryByConfigRuleResponse]
   }
   
-  extension [Self <: GetComplianceSummaryByConfigRuleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetComplianceSummaryByConfigRuleResponse] (val x: Self) extends AnyVal {
     
     inline def setComplianceSummary(value: ComplianceSummary): Self = StObject.set(x, "ComplianceSummary", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object distLibCommandsLcsIDXMod {
       __obj.asInstanceOf[Reply]
     }
     
-    extension [Self <: Reply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reply] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       

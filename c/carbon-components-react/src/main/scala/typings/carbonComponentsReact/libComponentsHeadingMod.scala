@@ -580,7 +580,8 @@ object libComponentsHeadingMod {
       __obj.asInstanceOf[SectionDefaultProps]
     }
     
-    extension [Self <: SectionDefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SectionDefaultProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Unit): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     }

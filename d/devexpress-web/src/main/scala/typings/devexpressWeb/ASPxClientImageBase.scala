@@ -49,7 +49,8 @@ object ASPxClientImageBase {
     __obj.asInstanceOf[ASPxClientImageBase]
   }
   
-  extension [Self <: ASPxClientImageBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientImageBase] (val x: Self) extends AnyVal {
     
     inline def setSetSize(value: (Double, Double) => Unit): Self = StObject.set(x, "SetSize", js.Any.fromFunction2(value))
   }

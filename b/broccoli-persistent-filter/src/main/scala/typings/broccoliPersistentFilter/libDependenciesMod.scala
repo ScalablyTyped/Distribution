@@ -224,7 +224,8 @@ object libDependenciesMod {
       __obj.asInstanceOf[FSFacade]
     }
     
-    extension [Self <: FSFacade](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FSFacade] (val x: Self) extends AnyVal {
       
       inline def setExistsSync(value: /* path */ PathLike => Boolean): Self = StObject.set(x, "existsSync", js.Any.fromFunction1(value))
       
@@ -247,7 +248,8 @@ object libDependenciesMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFs(value: FSFacade): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
     }
@@ -266,7 +268,8 @@ object libDependenciesMod {
       __obj.asInstanceOf[SerializedDependencies]
     }
     
-    extension [Self <: SerializedDependencies](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedDependencies] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: Record[String, js.Array[String]]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
@@ -294,7 +297,8 @@ object libDependenciesMod {
       __obj.asInstanceOf[SerializedExternalRoot]
     }
     
-    extension [Self <: SerializedExternalRoot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedExternalRoot] (val x: Self) extends AnyVal {
       
       inline def setRootDir(value: String): Self = StObject.set(x, "rootDir", value.asInstanceOf[js.Any])
       
@@ -316,7 +320,8 @@ object libDependenciesMod {
       __obj.asInstanceOf[SerializedHashEntry]
     }
     
-    extension [Self <: SerializedHashEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedHashEntry] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -338,7 +343,8 @@ object libDependenciesMod {
       __obj.asInstanceOf[SerializedLocalRoot]
     }
     
-    extension [Self <: SerializedLocalRoot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedLocalRoot] (val x: Self) extends AnyVal {
       
       inline def setType(value: local): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -382,7 +388,8 @@ object libDependenciesMod {
       __obj.asInstanceOf[SerializedStatEntry]
     }
     
-    extension [Self <: SerializedStatEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedStatEntry] (val x: Self) extends AnyVal {
       
       inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -407,7 +414,8 @@ object libDependenciesMod {
       __obj.asInstanceOf[SerializedTree]
     }
     
-    extension [Self <: SerializedTree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedTree] (val x: Self) extends AnyVal {
       
       inline def setEntries(value: js.Array[SerializedEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
@@ -428,7 +436,8 @@ object libDependenciesMod {
       __obj.asInstanceOf[SerializedTreeEntry]
     }
     
-    extension [Self <: SerializedTreeEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedTreeEntry] (val x: Self) extends AnyVal {
       
       inline def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
     }

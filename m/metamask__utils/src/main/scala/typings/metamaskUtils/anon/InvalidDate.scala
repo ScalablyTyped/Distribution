@@ -19,7 +19,8 @@ object InvalidDate {
     __obj.asInstanceOf[InvalidDate]
   }
   
-  extension [Self <: InvalidDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidDate] (val x: Self) extends AnyVal {
     
     inline def setInvalidDate(value: js.Date): Self = StObject.set(x, "invalidDate", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ParametersQueryBefore {
     __obj.asInstanceOf[ParametersQueryBefore]
   }
   
-  extension [Self <: ParametersQueryBefore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersQueryBefore] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: QueryBefore): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

@@ -82,7 +82,8 @@ object deprecatedChipSetAdapterMod {
       __obj.asInstanceOf[MDCChipSetAdapter]
     }
     
-    extension [Self <: MDCChipSetAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCChipSetAdapter] (val x: Self) extends AnyVal {
       
       inline def setAnnounceMessage(value: String => Unit): Self = StObject.set(x, "announceMessage", js.Any.fromFunction1(value))
       

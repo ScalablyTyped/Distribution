@@ -77,7 +77,8 @@ object distFrameworkExpressMod {
       __obj.asInstanceOf[ExpressMetadata]
     }
     
-    extension [Self <: ExpressMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpressMetadata] (val x: Self) extends AnyVal {
       
       inline def setRequest(
         value: Request_[

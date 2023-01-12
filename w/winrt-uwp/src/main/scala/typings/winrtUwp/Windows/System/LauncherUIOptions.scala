@@ -26,7 +26,8 @@ object LauncherUIOptions {
     __obj.asInstanceOf[LauncherUIOptions]
   }
   
-  extension [Self <: LauncherUIOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LauncherUIOptions] (val x: Self) extends AnyVal {
     
     inline def setInvocationPoint(value: Point): Self = StObject.set(x, "invocationPoint", value.asInstanceOf[js.Any])
     

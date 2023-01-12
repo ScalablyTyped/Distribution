@@ -23,7 +23,8 @@ object EventInstance {
     __obj.asInstanceOf[EventInstance]
   }
   
-  extension [Self <: EventInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventInstance] (val x: Self) extends AnyVal {
     
     inline def setDefId(value: String): Self = StObject.set(x, "defId", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object CreateSnapshotResponse {
     __obj.asInstanceOf[CreateSnapshotResponse]
   }
   
-  extension [Self <: CreateSnapshotResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSnapshotResponse] (val x: Self) extends AnyVal {
     
     inline def setSnapshot(value: Snapshot): Self = StObject.set(x, "Snapshot", value.asInstanceOf[js.Any])
     

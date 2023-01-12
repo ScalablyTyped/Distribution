@@ -22,7 +22,8 @@ object FlexGrowProps {
     __obj.asInstanceOf[FlexGrowProps[ThemeType]]
   }
   
-  extension [Self <: FlexGrowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & FlexGrowProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexGrowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & FlexGrowProps[ThemeType]) extends AnyVal {
     
     inline def setFlexGrow(value: ResponsiveValue[FlexGrow, ThemeType]): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
     

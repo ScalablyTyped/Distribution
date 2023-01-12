@@ -76,7 +76,8 @@ object ServerInfo {
     __obj.asInstanceOf[ServerInfo]
   }
   
-  extension [Self <: ServerInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerInfo] (val x: Self) extends AnyVal {
     
     inline def setArch_bits(value: `32` | `64`): Self = StObject.set(x, "arch_bits", value.asInstanceOf[js.Any])
     

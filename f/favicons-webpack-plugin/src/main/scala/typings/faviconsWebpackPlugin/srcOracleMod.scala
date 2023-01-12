@@ -102,7 +102,8 @@ object srcOracleMod {
       __obj.asInstanceOf[Oracle]
     }
     
-    extension [Self <: Oracle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Oracle] (val x: Self) extends AnyVal {
       
       inline def setGuessAppName(value: () => Any): Self = StObject.set(x, "guessAppName", js.Any.fromFunction0(value))
       

@@ -30,7 +30,8 @@ object InlineCompletionContext {
     __obj.asInstanceOf[InlineCompletionContext]
   }
   
-  extension [Self <: InlineCompletionContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineCompletionContext] (val x: Self) extends AnyVal {
     
     inline def setSelectedCompletionInfo(value: SelectedCompletionInfo): Self = StObject.set(x, "selectedCompletionInfo", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object SsmControls {
     __obj.asInstanceOf[SsmControls]
   }
   
-  extension [Self <: SsmControls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SsmControls] (val x: Self) extends AnyVal {
     
     inline def setConcurrentExecutionRatePercentage(value: Percentage): Self = StObject.set(x, "ConcurrentExecutionRatePercentage", value.asInstanceOf[js.Any])
     

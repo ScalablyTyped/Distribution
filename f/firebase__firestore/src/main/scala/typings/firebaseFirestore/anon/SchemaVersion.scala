@@ -22,7 +22,8 @@ object SchemaVersion {
     __obj.asInstanceOf[SchemaVersion]
   }
   
-  extension [Self <: SchemaVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaVersion] (val x: Self) extends AnyVal {
     
     inline def setDontPurgeData(value: Boolean): Self = StObject.set(x, "dontPurgeData", value.asInstanceOf[js.Any])
     

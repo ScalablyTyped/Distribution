@@ -44,7 +44,8 @@ object RefinementControl {
     __obj.asInstanceOf[RefinementControl]
   }
   
-  extension [Self <: RefinementControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefinementControl] (val x: Self) extends AnyVal {
     
     inline def setAlternateRenderContext(value: Any): Self = StObject.set(x, "alternateRenderContext", value.asInstanceOf[js.Any])
     

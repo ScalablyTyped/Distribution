@@ -273,7 +273,8 @@ object PlotVectorDataLabelsOptions {
     __obj.asInstanceOf[PlotVectorDataLabelsOptions]
   }
   
-  extension [Self <: PlotVectorDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotVectorDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

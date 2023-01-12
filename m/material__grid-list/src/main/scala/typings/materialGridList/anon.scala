@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCGridListAdapter]
     }
     
-    extension [Self <: PartialMDCGridListAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCGridListAdapter] (val x: Self) extends AnyVal {
       
       inline def setDeregisterResizeHandler(value: /* handler */ EventListener => Unit): Self = StObject.set(x, "deregisterResizeHandler", js.Any.fromFunction1(value))
       
@@ -87,7 +88,8 @@ object anon {
       __obj.asInstanceOf[TILESELECTOR]
     }
     
-    extension [Self <: TILESELECTOR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TILESELECTOR] (val x: Self) extends AnyVal {
       
       inline def setTILES_SELECTOR(value: String): Self = StObject.set(x, "TILES_SELECTOR", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object DeleteNetworkProfileRequest {
     __obj.asInstanceOf[DeleteNetworkProfileRequest]
   }
   
-  extension [Self <: DeleteNetworkProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteNetworkProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setNetworkProfileArn(value: Arn): Self = StObject.set(x, "NetworkProfileArn", value.asInstanceOf[js.Any])
   }

@@ -24,7 +24,8 @@ object libCommonInlineValueMod {
       __obj.asInstanceOf[InlineValueFeatureShape]
     }
     
-    extension [Self <: InlineValueFeatureShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlineValueFeatureShape] (val x: Self) extends AnyVal {
       
       inline def setInlineValue(value: OnRefresh): Self = StObject.set(x, "inlineValue", value.asInstanceOf[js.Any])
     }

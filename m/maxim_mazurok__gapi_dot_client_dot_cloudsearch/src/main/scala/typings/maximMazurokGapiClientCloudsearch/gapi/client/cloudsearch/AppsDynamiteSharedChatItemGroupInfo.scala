@@ -24,7 +24,8 @@ object AppsDynamiteSharedChatItemGroupInfo {
     __obj.asInstanceOf[AppsDynamiteSharedChatItemGroupInfo]
   }
   
-  extension [Self <: AppsDynamiteSharedChatItemGroupInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedChatItemGroupInfo] (val x: Self) extends AnyVal {
     
     inline def setAttributeCheckerGroupType(value: String): Self = StObject.set(x, "attributeCheckerGroupType", value.asInstanceOf[js.Any])
     

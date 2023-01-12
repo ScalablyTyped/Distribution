@@ -19,7 +19,8 @@ object Global {
       __obj.asInstanceOf[GlobalInstance]
     }
     
-    extension [Self <: GlobalInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalInstance] (val x: Self) extends AnyVal {
       
       inline def setAddSidebarContentPanel(value: ContentPanelDescriptor => js.Promise[ContentPanelView]): Self = StObject.set(x, "addSidebarContentPanel", js.Any.fromFunction1(value))
     }

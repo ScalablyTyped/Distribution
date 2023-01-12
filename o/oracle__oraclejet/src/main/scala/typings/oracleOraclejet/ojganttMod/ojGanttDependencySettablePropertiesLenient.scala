@@ -33,7 +33,8 @@ object ojGanttDependencySettablePropertiesLenient {
     __obj.asInstanceOf[ojGanttDependencySettablePropertiesLenient]
   }
   
-  extension [Self <: ojGanttDependencySettablePropertiesLenient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojGanttDependencySettablePropertiesLenient] (val x: Self) extends AnyVal {
     
     inline def setPredecessorTaskId(value: Any): Self = StObject.set(x, "predecessorTaskId", value.asInstanceOf[js.Any])
     

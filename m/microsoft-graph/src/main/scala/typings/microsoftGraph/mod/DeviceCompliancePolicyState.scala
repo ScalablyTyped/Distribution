@@ -32,7 +32,8 @@ object DeviceCompliancePolicyState {
     __obj.asInstanceOf[DeviceCompliancePolicyState]
   }
   
-  extension [Self <: DeviceCompliancePolicyState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceCompliancePolicyState] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

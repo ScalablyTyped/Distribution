@@ -52,7 +52,8 @@ object symmetricStateMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCurve(value: Curve): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
       

@@ -104,7 +104,8 @@ object distTypesSetupSetupMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setAdvanceTimers(value: /* delay */ Double => js.Promise[Unit] | Unit): Self = StObject.set(x, "advanceTimers", js.Any.fromFunction1(value))
       
@@ -413,7 +414,8 @@ object distTypesSetupSetupMod {
       __obj.asInstanceOf[UserEvent]
     }
     
-    extension [Self <: UserEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserEvent] (val x: Self) extends AnyVal {
       
       inline def setClear(
         value: Parameters[js.ThisFunction1[/* this */ Instance, /* element */ Element, js.Promise[Unit]]] => ReturnType[js.ThisFunction1[/* this */ Instance, /* element */ Element, js.Promise[Unit]]]

@@ -51,7 +51,8 @@ object Fixtures {
     __obj.asInstanceOf[Fixtures]
   }
   
-  extension [Self <: Fixtures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fixtures] (val x: Self) extends AnyVal {
     
     inline def setAppendLoad(value: /* repeated */ String => Unit): Self = StObject.set(x, "appendLoad", js.Any.fromFunction1(value))
     

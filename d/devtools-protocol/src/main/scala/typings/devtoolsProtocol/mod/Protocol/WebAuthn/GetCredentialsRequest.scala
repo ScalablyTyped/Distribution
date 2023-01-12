@@ -15,7 +15,8 @@ object GetCredentialsRequest {
     __obj.asInstanceOf[GetCredentialsRequest]
   }
   
-  extension [Self <: GetCredentialsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCredentialsRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthenticatorId(value: AuthenticatorId): Self = StObject.set(x, "authenticatorId", value.asInstanceOf[js.Any])
   }

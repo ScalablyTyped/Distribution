@@ -19,7 +19,8 @@ object IConsensusStateEntry {
     __obj.asInstanceOf[IConsensusStateEntry]
   }
   
-  extension [Self <: IConsensusStateEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConsensusStateEntry] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object MarkOpenToken {
     __obj.asInstanceOf[MarkOpenToken]
   }
   
-  extension [Self <: MarkOpenToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkOpenToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: mark_open): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

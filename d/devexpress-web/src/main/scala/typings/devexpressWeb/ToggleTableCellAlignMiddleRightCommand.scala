@@ -23,7 +23,8 @@ object ToggleTableCellAlignMiddleRightCommand {
     __obj.asInstanceOf[ToggleTableCellAlignMiddleRightCommand]
   }
   
-  extension [Self <: ToggleTableCellAlignMiddleRightCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToggleTableCellAlignMiddleRightCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

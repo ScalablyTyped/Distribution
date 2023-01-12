@@ -17,7 +17,8 @@ object ParametersQueryArchivedstate {
     __obj.asInstanceOf[ParametersQueryArchivedstate]
   }
   
-  extension [Self <: ParametersQueryArchivedstate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersQueryArchivedstate] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: QueryArchivedstate): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

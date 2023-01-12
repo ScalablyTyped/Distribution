@@ -34,7 +34,8 @@ object AutoFold {
     __obj.asInstanceOf[AutoFold]
   }
   
-  extension [Self <: AutoFold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoFold] (val x: Self) extends AnyVal {
     
     inline def setAutoFold(value: Boolean): Self = StObject.set(x, "autoFold", value.asInstanceOf[js.Any])
     

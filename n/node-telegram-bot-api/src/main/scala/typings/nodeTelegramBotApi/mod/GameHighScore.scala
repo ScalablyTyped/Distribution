@@ -19,7 +19,8 @@ object GameHighScore {
     __obj.asInstanceOf[GameHighScore]
   }
   
-  extension [Self <: GameHighScore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GameHighScore] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

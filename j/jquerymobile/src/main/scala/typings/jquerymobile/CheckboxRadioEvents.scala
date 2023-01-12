@@ -16,7 +16,8 @@ object CheckboxRadioEvents {
     __obj.asInstanceOf[CheckboxRadioEvents]
   }
   
-  extension [Self <: CheckboxRadioEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckboxRadioEvents] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: (/* event */ Event, /* ui */ Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     

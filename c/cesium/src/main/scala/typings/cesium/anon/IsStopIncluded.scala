@@ -21,7 +21,8 @@ object IsStopIncluded {
     __obj.asInstanceOf[IsStopIncluded]
   }
   
-  extension [Self <: IsStopIncluded](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsStopIncluded] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object RemotePlayerChangedEvent {
     __obj.asInstanceOf[RemotePlayerChangedEvent[T]]
   }
   
-  extension [Self <: RemotePlayerChangedEvent[?], T](x: Self & RemotePlayerChangedEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemotePlayerChangedEvent[?], T] (val x: Self & RemotePlayerChangedEvent[T]) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

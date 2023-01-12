@@ -15,7 +15,8 @@ object ReadonlyProjection {
     __obj.asInstanceOf[ReadonlyProjection]
   }
   
-  extension [Self <: ReadonlyProjection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyProjection] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

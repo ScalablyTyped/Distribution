@@ -28,7 +28,8 @@ object ListMFADeviceTagsRequest {
     __obj.asInstanceOf[ListMFADeviceTagsRequest]
   }
   
-  extension [Self <: ListMFADeviceTagsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMFADeviceTagsRequest] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

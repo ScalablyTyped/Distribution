@@ -30,7 +30,8 @@ object GoldbergCreationOption {
     __obj.asInstanceOf[GoldbergCreationOption]
   }
   
-  extension [Self <: GoldbergCreationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoldbergCreationOption] (val x: Self) extends AnyVal {
     
     inline def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     

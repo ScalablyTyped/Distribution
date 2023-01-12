@@ -38,7 +38,8 @@ object OSPolicy {
     __obj.asInstanceOf[OSPolicy]
   }
   
-  extension [Self <: OSPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPolicy] (val x: Self) extends AnyVal {
     
     inline def setAllowNoResourceGroupMatch(value: Boolean): Self = StObject.set(x, "allowNoResourceGroupMatch", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object ClearImmediate {
     __obj.asInstanceOf[ClearImmediate]
   }
   
-  extension [Self <: ClearImmediate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearImmediate] (val x: Self) extends AnyVal {
     
     inline def setClearImmediate(value: /* handle */ TimerHandle => Unit): Self = StObject.set(x, "clearImmediate", js.Any.fromFunction1(value))
     

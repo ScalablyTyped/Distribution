@@ -54,7 +54,8 @@ object SizePerPageDropDownProps {
     __obj.asInstanceOf[SizePerPageDropDownProps]
   }
   
-  extension [Self <: SizePerPageDropDownProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizePerPageDropDownProps] (val x: Self) extends AnyVal {
     
     inline def setBtnContextual(value: String): Self = StObject.set(x, "btnContextual", value.asInstanceOf[js.Any])
     

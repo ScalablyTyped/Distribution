@@ -22,7 +22,8 @@ object Index {
     __obj.asInstanceOf[Index]
   }
   
-  extension [Self <: Index](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
     
     inline def setCollectionGroup(value: String): Self = StObject.set(x, "collectionGroup", value.asInstanceOf[js.Any])
     

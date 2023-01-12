@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[Expression]
     }
     
-    extension [Self <: Expression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expression] (val x: Self) extends AnyVal {
       
       inline def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object mod {
       __obj.asInstanceOf[MediaValues]
     }
     
-    extension [Self <: MediaValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaValues] (val x: Self) extends AnyVal {
       
       inline def `setAspect-ratio`(value: Any): Self = StObject.set(x, "aspect-ratio", value.asInstanceOf[js.Any])
       
@@ -149,7 +151,8 @@ object mod {
       __obj.asInstanceOf[QueryNode]
     }
     
-    extension [Self <: QueryNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryNode] (val x: Self) extends AnyVal {
       
       inline def setExpressions(value: js.Array[Expression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
       

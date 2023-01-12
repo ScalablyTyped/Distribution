@@ -42,7 +42,8 @@ object distLibCommandsBitcountMod {
       __obj.asInstanceOf[BitCountRange]
     }
     
-    extension [Self <: BitCountRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitCountRange] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

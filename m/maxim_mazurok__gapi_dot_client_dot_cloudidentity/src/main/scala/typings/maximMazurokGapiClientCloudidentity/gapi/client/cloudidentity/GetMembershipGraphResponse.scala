@@ -22,7 +22,8 @@ object GetMembershipGraphResponse {
     __obj.asInstanceOf[GetMembershipGraphResponse]
   }
   
-  extension [Self <: GetMembershipGraphResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMembershipGraphResponse] (val x: Self) extends AnyVal {
     
     inline def setAdjacencyList(value: js.Array[MembershipAdjacencyList]): Self = StObject.set(x, "adjacencyList", value.asInstanceOf[js.Any])
     

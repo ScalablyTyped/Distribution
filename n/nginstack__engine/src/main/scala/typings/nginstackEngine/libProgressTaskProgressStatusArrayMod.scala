@@ -39,7 +39,8 @@ object libProgressTaskProgressStatusArrayMod {
       __obj.asInstanceOf[TaskProgressStatusArray]
     }
     
-    extension [Self <: TaskProgressStatusArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskProgressStatusArray] (val x: Self) extends AnyVal {
       
       inline def setItem(value: Double => TaskProgressStatus): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
       

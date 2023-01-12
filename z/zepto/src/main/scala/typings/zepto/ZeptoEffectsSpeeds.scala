@@ -28,7 +28,8 @@ object ZeptoEffectsSpeeds {
     __obj.asInstanceOf[ZeptoEffectsSpeeds]
   }
   
-  extension [Self <: ZeptoEffectsSpeeds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZeptoEffectsSpeeds] (val x: Self) extends AnyVal {
     
     inline def setFast(value: Double): Self = StObject.set(x, "fast", value.asInstanceOf[js.Any])
     

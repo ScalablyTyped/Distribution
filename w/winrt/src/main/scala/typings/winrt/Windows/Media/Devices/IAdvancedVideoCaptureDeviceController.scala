@@ -17,7 +17,8 @@ object IAdvancedVideoCaptureDeviceController {
     __obj.asInstanceOf[IAdvancedVideoCaptureDeviceController]
   }
   
-  extension [Self <: IAdvancedVideoCaptureDeviceController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAdvancedVideoCaptureDeviceController] (val x: Self) extends AnyVal {
     
     inline def setGetDeviceProperty(value: String => Any): Self = StObject.set(x, "getDeviceProperty", js.Any.fromFunction1(value))
     

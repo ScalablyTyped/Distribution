@@ -29,7 +29,8 @@ object FallbackCacheGroup {
     __obj.asInstanceOf[FallbackCacheGroup]
   }
   
-  extension [Self <: FallbackCacheGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FallbackCacheGroup] (val x: Self) extends AnyVal {
     
     inline def setAutomaticNameDelimiter(value: String): Self = StObject.set(x, "automaticNameDelimiter", value.asInstanceOf[js.Any])
     

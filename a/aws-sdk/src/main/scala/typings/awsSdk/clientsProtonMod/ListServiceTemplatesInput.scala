@@ -23,7 +23,8 @@ object ListServiceTemplatesInput {
     __obj.asInstanceOf[ListServiceTemplatesInput]
   }
   
-  extension [Self <: ListServiceTemplatesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListServiceTemplatesInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxPageResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

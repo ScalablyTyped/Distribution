@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[BBOX]
     }
     
-    extension [Self <: BBOX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BBOX] (val x: Self) extends AnyVal {
       
       inline def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
       
@@ -247,7 +248,8 @@ object mod {
       __obj.asInstanceOf[Glyph]
     }
     
-    extension [Self <: Glyph](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Glyph] (val x: Self) extends AnyVal {
       
       inline def setAdvanceWidth(value: Double): Self = StObject.set(x, "advanceWidth", value.asInstanceOf[js.Any])
       
@@ -292,7 +294,8 @@ object mod {
       __obj.asInstanceOf[GlyphPosition]
     }
     
-    extension [Self <: GlyphPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlyphPosition] (val x: Self) extends AnyVal {
       
       inline def setXAdvance(value: Double): Self = StObject.set(x, "xAdvance", value.asInstanceOf[js.Any])
       
@@ -371,7 +374,8 @@ object mod {
       __obj.asInstanceOf[GlyphRun]
     }
     
-    extension [Self <: GlyphRun](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlyphRun] (val x: Self) extends AnyVal {
       
       inline def setAdvanceHeight(value: Double): Self = StObject.set(x, "advanceHeight", value.asInstanceOf[js.Any])
       
@@ -452,7 +456,8 @@ object mod {
       __obj.asInstanceOf[PathCommand]
     }
     
-    extension [Self <: PathCommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathCommand] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Double]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

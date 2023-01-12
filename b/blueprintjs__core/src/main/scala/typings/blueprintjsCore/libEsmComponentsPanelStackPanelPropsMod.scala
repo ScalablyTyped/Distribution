@@ -41,7 +41,8 @@ object libEsmComponentsPanelStackPanelPropsMod {
       __obj.asInstanceOf[IPanel[P]]
     }
     
-    extension [Self <: IPanel[?], P](x: Self & IPanel[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPanel[?], P] (val x: Self & IPanel[P]) extends AnyVal {
       
       inline def setComponent(value: ComponentType[P & IPanelProps]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object libEsmComponentsPanelStackPanelPropsMod {
       __obj.asInstanceOf[IPanelProps]
     }
     
-    extension [Self <: IPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPanelProps] (val x: Self) extends AnyVal {
       
       inline def setClosePanel(value: () => Unit): Self = StObject.set(x, "closePanel", js.Any.fromFunction0(value))
       

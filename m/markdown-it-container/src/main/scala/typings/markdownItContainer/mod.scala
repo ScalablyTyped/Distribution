@@ -41,7 +41,8 @@ object mod {
         __obj.asInstanceOf[ContainerOpts]
       }
       
-      extension [Self <: ContainerOpts](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ContainerOpts] (val x: Self) extends AnyVal {
         
         inline def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
         

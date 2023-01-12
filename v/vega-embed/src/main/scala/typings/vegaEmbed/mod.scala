@@ -669,7 +669,8 @@ object mod {
       __obj.asInstanceOf[Actions]
     }
     
-    extension [Self <: Actions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Actions] (val x: Self) extends AnyVal {
       
       inline def setCompiled(value: Boolean): Self = StObject.set(x, "compiled", value.asInstanceOf[js.Any])
       
@@ -754,7 +755,8 @@ object mod {
       __obj.asInstanceOf[EmbedOptions[S, R]]
     }
     
-    extension [Self <: EmbedOptions[?, ?], S, R](x: Self & (EmbedOptions[S, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmbedOptions[?, ?], S, R] (val x: Self & (EmbedOptions[S, R])) extends AnyVal {
       
       inline def setActions(value: Boolean | Actions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -887,7 +889,8 @@ object mod {
       __obj.asInstanceOf[Hover]
     }
     
-    extension [Self <: Hover](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hover] (val x: Self) extends AnyVal {
       
       inline def setHoverSet(value: EncodeEntryName): Self = StObject.set(x, "hoverSet", value.asInstanceOf[js.Any])
       
@@ -918,7 +921,8 @@ object mod {
       __obj.asInstanceOf[MessageData]
     }
     
-    extension [Self <: MessageData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageData] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -973,7 +977,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setEmbedOptions(value: EmbedOptions[String, Renderers]): Self = StObject.set(x, "embedOptions", value.asInstanceOf[js.Any])
       

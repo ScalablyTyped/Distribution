@@ -20,7 +20,8 @@ object IblIrradiance {
     __obj.asInstanceOf[IblIrradiance]
   }
   
-  extension [Self <: IblIrradiance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IblIrradiance] (val x: Self) extends AnyVal {
     
     inline def setIblIrradiance(value: default): Self = StObject.set(x, "iblIrradiance", value.asInstanceOf[js.Any])
     

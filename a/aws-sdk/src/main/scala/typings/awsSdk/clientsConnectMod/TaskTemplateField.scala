@@ -33,7 +33,8 @@ object TaskTemplateField {
     __obj.asInstanceOf[TaskTemplateField]
   }
   
-  extension [Self <: TaskTemplateField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskTemplateField] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: TaskTemplateFieldDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

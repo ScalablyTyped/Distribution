@@ -171,7 +171,8 @@ object sapUiCoreRoutingHashChangerMod {
       __obj.asInstanceOf[HashChangerEventInfo]
     }
     
-    extension [Self <: HashChangerEventInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashChangerEventInfo] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -213,7 +214,8 @@ object sapUiCoreRoutingHashChangerMod {
       __obj.asInstanceOf[HashChangerEventParameterMapping]
     }
     
-    extension [Self <: HashChangerEventParameterMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashChangerEventParameterMapping] (val x: Self) extends AnyVal {
       
       inline def setFullHash(value: String): Self = StObject.set(x, "fullHash", value.asInstanceOf[js.Any])
       

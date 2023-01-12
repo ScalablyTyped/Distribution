@@ -56,7 +56,8 @@ object EggLoggerConfig {
     __obj.asInstanceOf[EggLoggerConfig]
   }
   
-  extension [Self <: EggLoggerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EggLoggerConfig] (val x: Self) extends AnyVal {
     
     inline def setAgentLogName(value: String): Self = StObject.set(x, "agentLogName", value.asInstanceOf[js.Any])
     

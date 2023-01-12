@@ -34,7 +34,8 @@ object NavigatorYAxisPlotBandsEventsOptions {
     __obj.asInstanceOf[NavigatorYAxisPlotBandsEventsOptions]
   }
   
-  extension [Self <: NavigatorYAxisPlotBandsEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorYAxisPlotBandsEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setClick(value: EventCallbackFunction[PlotLineOrBand]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     

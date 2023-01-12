@@ -33,7 +33,8 @@ object GetHostReservationPurchasePreviewResult {
     __obj.asInstanceOf[GetHostReservationPurchasePreviewResult]
   }
   
-  extension [Self <: GetHostReservationPurchasePreviewResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHostReservationPurchasePreviewResult] (val x: Self) extends AnyVal {
     
     inline def setCurrencyCode(value: CurrencyCodeValues): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ConfirmQuestion {
     __obj.asInstanceOf[ConfirmQuestion[T]]
   }
   
-  extension [Self <: ConfirmQuestion[?], T /* <: Answers */](x: Self & ConfirmQuestion[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmQuestion[?], T /* <: Answers */] (val x: Self & ConfirmQuestion[T]) extends AnyVal {
     
     inline def setType(value: confirm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

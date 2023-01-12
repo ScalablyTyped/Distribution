@@ -28,7 +28,8 @@ object AnalyticsConfiguration {
     __obj.asInstanceOf[AnalyticsConfiguration]
   }
   
-  extension [Self <: AnalyticsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyticsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: AnalyticsFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

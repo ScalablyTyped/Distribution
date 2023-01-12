@@ -35,7 +35,8 @@ object CommandArray {
     __obj.asInstanceOf[CommandArray]
   }
   
-  extension [Self <: CommandArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandArray] (val x: Self) extends AnyVal {
     
     inline def setPush(value: /* repeated */ js.ThisFunction0[/* globalThis */ /* this */ Any, Unit] => Double): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
   }

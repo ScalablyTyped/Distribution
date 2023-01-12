@@ -18,7 +18,8 @@ object MonitorConfig {
     __obj.asInstanceOf[MonitorConfig]
   }
   
-  extension [Self <: MonitorConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitorConfig] (val x: Self) extends AnyVal {
     
     inline def setMonitorName(value: Name): Self = StObject.set(x, "MonitorName", value.asInstanceOf[js.Any])
   }

@@ -69,7 +69,8 @@ object TextStructureFindStructureResponse {
     __obj.asInstanceOf[TextStructureFindStructureResponse]
   }
   
-  extension [Self <: TextStructureFindStructureResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextStructureFindStructureResponse] (val x: Self) extends AnyVal {
     
     inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     

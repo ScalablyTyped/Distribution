@@ -24,7 +24,8 @@ object OpenShift {
     __obj.asInstanceOf[OpenShift]
   }
   
-  extension [Self <: OpenShift](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenShift] (val x: Self) extends AnyVal {
     
     inline def setDraftOpenShift(value: NullableOption[OpenShiftItem]): Self = StObject.set(x, "draftOpenShift", value.asInstanceOf[js.Any])
     

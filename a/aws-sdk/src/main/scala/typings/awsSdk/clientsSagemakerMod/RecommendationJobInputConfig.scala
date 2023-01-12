@@ -53,7 +53,8 @@ object RecommendationJobInputConfig {
     __obj.asInstanceOf[RecommendationJobInputConfig]
   }
   
-  extension [Self <: RecommendationJobInputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationJobInputConfig] (val x: Self) extends AnyVal {
     
     inline def setContainerConfig(value: RecommendationJobContainerConfig): Self = StObject.set(x, "ContainerConfig", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ATITrainingMetricsValue {
     __obj.asInstanceOf[ATITrainingMetricsValue]
   }
   
-  extension [Self <: ATITrainingMetricsValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATITrainingMetricsValue] (val x: Self) extends AnyVal {
     
     inline def setMetricDataPoints(value: ATIMetricDataPointsList): Self = StObject.set(x, "metricDataPoints", value.asInstanceOf[js.Any])
     

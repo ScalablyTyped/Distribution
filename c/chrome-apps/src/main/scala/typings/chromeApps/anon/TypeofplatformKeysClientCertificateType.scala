@@ -93,7 +93,8 @@ object TypeofplatformKeysClientCertificateType {
     __obj.asInstanceOf[TypeofplatformKeysClientCertificateType]
   }
   
-  extension [Self <: TypeofplatformKeysClientCertificateType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofplatformKeysClientCertificateType] (val x: Self) extends AnyVal {
     
     inline def setClientCertificateType(value: ECDSASIGN): Self = StObject.set(x, "ClientCertificateType", value.asInstanceOf[js.Any])
     

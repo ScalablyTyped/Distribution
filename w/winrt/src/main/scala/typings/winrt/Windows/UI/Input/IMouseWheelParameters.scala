@@ -22,7 +22,8 @@ object IMouseWheelParameters {
     __obj.asInstanceOf[IMouseWheelParameters]
   }
   
-  extension [Self <: IMouseWheelParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMouseWheelParameters] (val x: Self) extends AnyVal {
     
     inline def setCharTranslation(value: Point): Self = StObject.set(x, "charTranslation", value.asInstanceOf[js.Any])
     

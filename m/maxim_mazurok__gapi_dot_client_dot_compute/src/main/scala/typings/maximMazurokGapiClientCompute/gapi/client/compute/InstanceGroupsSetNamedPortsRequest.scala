@@ -23,7 +23,8 @@ object InstanceGroupsSetNamedPortsRequest {
     __obj.asInstanceOf[InstanceGroupsSetNamedPortsRequest]
   }
   
-  extension [Self <: InstanceGroupsSetNamedPortsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupsSetNamedPortsRequest] (val x: Self) extends AnyVal {
     
     inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     

@@ -136,7 +136,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IAnalyticsServiceProvider]
     }
     
-    extension [Self <: IAnalyticsServiceProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAnalyticsServiceProvider] (val x: Self) extends AnyVal {
       
       inline def setDeveloperMode(value: Boolean => Unit): Self = StObject.set(x, "developerMode", js.Any.fromFunction1(value))
       

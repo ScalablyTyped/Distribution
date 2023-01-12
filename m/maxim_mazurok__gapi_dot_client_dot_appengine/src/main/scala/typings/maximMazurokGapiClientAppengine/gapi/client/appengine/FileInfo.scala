@@ -22,7 +22,8 @@ object FileInfo {
     __obj.asInstanceOf[FileInfo]
   }
   
-  extension [Self <: FileInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileInfo] (val x: Self) extends AnyVal {
     
     inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     

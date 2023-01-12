@@ -22,7 +22,8 @@ object ZoomControlOptions {
     __obj.asInstanceOf[ZoomControlOptions]
   }
   
-  extension [Self <: ZoomControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoomControlOptions] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

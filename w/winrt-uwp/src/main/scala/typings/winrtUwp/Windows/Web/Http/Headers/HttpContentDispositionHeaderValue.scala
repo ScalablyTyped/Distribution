@@ -40,7 +40,8 @@ object HttpContentDispositionHeaderValue {
     __obj.asInstanceOf[HttpContentDispositionHeaderValue]
   }
   
-  extension [Self <: HttpContentDispositionHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpContentDispositionHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setDispositionType(value: String): Self = StObject.set(x, "dispositionType", value.asInstanceOf[js.Any])
     

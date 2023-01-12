@@ -28,7 +28,8 @@ object libGComponentsGroupMod extends Shortcut {
       __obj.asInstanceOf[IGroupProps]
     }
     
-    extension [Self <: IGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupProps] (val x: Self) extends AnyVal {
       
       inline def setTranslate(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       

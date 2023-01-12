@@ -35,7 +35,8 @@ object Emitter {
     __obj.asInstanceOf[Emitter]
   }
   
-  extension [Self <: Emitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Emitter] (val x: Self) extends AnyVal {
     
     inline def setAddKeyword(value: (String, String) => Unit): Self = StObject.set(x, "addKeyword", js.Any.fromFunction2(value))
     

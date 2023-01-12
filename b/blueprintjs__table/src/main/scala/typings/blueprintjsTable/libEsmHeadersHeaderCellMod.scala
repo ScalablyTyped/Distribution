@@ -92,7 +92,8 @@ object libEsmHeadersHeaderCellMod {
       __obj.asInstanceOf[IHeaderCellProps]
     }
     
-    extension [Self <: IHeaderCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHeaderCellProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -143,7 +144,8 @@ object libEsmHeadersHeaderCellMod {
       __obj.asInstanceOf[IHeaderCellState]
     }
     
-    extension [Self <: IHeaderCellState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHeaderCellState] (val x: Self) extends AnyVal {
       
       inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     }
@@ -165,7 +167,8 @@ object libEsmHeadersHeaderCellMod {
       __obj.asInstanceOf[IInternalHeaderCellProps]
     }
     
-    extension [Self <: IInternalHeaderCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInternalHeaderCellProps] (val x: Self) extends AnyVal {
       
       inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
       

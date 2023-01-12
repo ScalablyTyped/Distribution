@@ -407,7 +407,8 @@ object mod {
       __obj.asInstanceOf[Reporter]
     }
     
-    extension [Self <: Reporter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reporter] (val x: Self) extends AnyVal {
       
       inline def setGetLastError(value: () => js.Error | Unit): Self = StObject.set(x, "getLastError", js.Any.fromFunction0(value))
       
@@ -460,7 +461,8 @@ object mod {
       __obj.asInstanceOf[ReporterContext]
     }
     
-    extension [Self <: ReporterContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReporterContext] (val x: Self) extends AnyVal {
       
       inline def setChangedFiles(value: Set[String]): Self = StObject.set(x, "changedFiles", value.asInstanceOf[js.Any])
       
@@ -493,7 +495,8 @@ object mod {
       __obj.asInstanceOf[ReporterOnStartOptions]
     }
     
-    extension [Self <: ReporterOnStartOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReporterOnStartOptions] (val x: Self) extends AnyVal {
       
       inline def setEstimatedTime(value: Double): Self = StObject.set(x, "estimatedTime", value.asInstanceOf[js.Any])
       
@@ -522,7 +525,8 @@ object mod {
       __obj.asInstanceOf[SummaryOptions]
     }
     
-    extension [Self <: SummaryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SummaryOptions] (val x: Self) extends AnyVal {
       
       inline def setCurrentTestCases(value: js.Array[typings.jestReporters.anon.Test]): Self = StObject.set(x, "currentTestCases", value.asInstanceOf[js.Any])
       

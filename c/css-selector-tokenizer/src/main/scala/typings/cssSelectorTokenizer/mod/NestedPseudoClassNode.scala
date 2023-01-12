@@ -25,7 +25,8 @@ object NestedPseudoClassNode {
     __obj.asInstanceOf[NestedPseudoClassNode]
   }
   
-  extension [Self <: NestedPseudoClassNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NestedPseudoClassNode] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

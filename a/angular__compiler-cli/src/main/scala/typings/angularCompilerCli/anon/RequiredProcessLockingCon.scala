@@ -18,7 +18,8 @@ object RequiredProcessLockingCon {
     __obj.asInstanceOf[RequiredProcessLockingCon]
   }
   
-  extension [Self <: RequiredProcessLockingCon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredProcessLockingCon] (val x: Self) extends AnyVal {
     
     inline def setRetryAttempts(value: Double): Self = StObject.set(x, "retryAttempts", value.asInstanceOf[js.Any])
     

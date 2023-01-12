@@ -43,7 +43,8 @@ object ResponseHeadersPolicyConfig {
     __obj.asInstanceOf[ResponseHeadersPolicyConfig]
   }
   
-  extension [Self <: ResponseHeadersPolicyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseHeadersPolicyConfig] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     

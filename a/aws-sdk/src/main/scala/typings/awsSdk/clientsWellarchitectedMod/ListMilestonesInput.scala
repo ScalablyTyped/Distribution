@@ -19,7 +19,8 @@ object ListMilestonesInput {
     __obj.asInstanceOf[ListMilestonesInput]
   }
   
-  extension [Self <: ListMilestonesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMilestonesInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

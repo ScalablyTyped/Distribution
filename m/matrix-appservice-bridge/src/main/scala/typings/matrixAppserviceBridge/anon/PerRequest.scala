@@ -41,7 +41,8 @@ object PerRequest {
     __obj.asInstanceOf[PerRequest]
   }
   
-  extension [Self <: PerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerRequest] (val x: Self) extends AnyVal {
     
     inline def setPerRequest(value: Boolean): Self = StObject.set(x, "perRequest", value.asInstanceOf[js.Any])
     

@@ -100,7 +100,8 @@ object buildSrcCompileDataStackMod {
       __obj.asInstanceOf[StackComponent]
     }
     
-    extension [Self <: StackComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackComponent] (val x: Self) extends AnyVal {
       
       inline def setAs(value: js.Tuple2[FieldName, FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

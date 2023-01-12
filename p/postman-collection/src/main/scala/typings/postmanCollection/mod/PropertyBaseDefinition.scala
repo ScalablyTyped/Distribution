@@ -15,7 +15,8 @@ object PropertyBaseDefinition {
     __obj.asInstanceOf[PropertyBaseDefinition]
   }
   
-  extension [Self <: PropertyBaseDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyBaseDefinition] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String | DescriptionDefinition): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

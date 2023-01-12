@@ -27,7 +27,8 @@ object SearchOrganizationInsightsFilters {
     __obj.asInstanceOf[SearchOrganizationInsightsFilters]
   }
   
-  extension [Self <: SearchOrganizationInsightsFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchOrganizationInsightsFilters] (val x: Self) extends AnyVal {
     
     inline def setResourceCollection(value: ResourceCollection): Self = StObject.set(x, "ResourceCollection", value.asInstanceOf[js.Any])
     

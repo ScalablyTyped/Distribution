@@ -15,7 +15,8 @@ object Totalms {
     __obj.asInstanceOf[Totalms]
   }
   
-  extension [Self <: Totalms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Totalms] (val x: Self) extends AnyVal {
     
     inline def setTotal_ms(value: Double): Self = StObject.set(x, "total_ms", value.asInstanceOf[js.Any])
     

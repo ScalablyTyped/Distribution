@@ -17,7 +17,8 @@ object StatSyncOptions {
     __obj.asInstanceOf[StatSyncOptions]
   }
   
-  extension [Self <: StatSyncOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatSyncOptions] (val x: Self) extends AnyVal {
     
     inline def setThrowIfNoEntry(value: Boolean): Self = StObject.set(x, "throwIfNoEntry", value.asInstanceOf[js.Any])
     

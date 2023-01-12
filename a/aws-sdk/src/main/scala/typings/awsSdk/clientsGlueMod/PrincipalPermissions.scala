@@ -23,7 +23,8 @@ object PrincipalPermissions {
     __obj.asInstanceOf[PrincipalPermissions]
   }
   
-  extension [Self <: PrincipalPermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrincipalPermissions] (val x: Self) extends AnyVal {
     
     inline def setPermissions(value: PermissionList): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
     

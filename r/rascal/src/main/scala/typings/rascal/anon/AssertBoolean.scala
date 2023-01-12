@@ -15,7 +15,8 @@ object AssertBoolean {
     __obj.asInstanceOf[AssertBoolean]
   }
   
-  extension [Self <: AssertBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssertBoolean] (val x: Self) extends AnyVal {
     
     inline def setAssert(value: Boolean): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
   }

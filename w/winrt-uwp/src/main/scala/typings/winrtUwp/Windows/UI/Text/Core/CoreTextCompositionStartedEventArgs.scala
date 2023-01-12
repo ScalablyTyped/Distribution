@@ -24,7 +24,8 @@ object CoreTextCompositionStartedEventArgs {
     __obj.asInstanceOf[CoreTextCompositionStartedEventArgs]
   }
   
-  extension [Self <: CoreTextCompositionStartedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreTextCompositionStartedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     

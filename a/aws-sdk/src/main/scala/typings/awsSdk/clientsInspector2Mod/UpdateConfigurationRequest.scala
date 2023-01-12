@@ -18,7 +18,8 @@ object UpdateConfigurationRequest {
     __obj.asInstanceOf[UpdateConfigurationRequest]
   }
   
-  extension [Self <: UpdateConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setEcrConfiguration(value: EcrConfiguration): Self = StObject.set(x, "ecrConfiguration", value.asInstanceOf[js.Any])
   }

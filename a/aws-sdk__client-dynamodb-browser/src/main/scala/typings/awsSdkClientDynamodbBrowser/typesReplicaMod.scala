@@ -20,7 +20,8 @@ object typesReplicaMod {
       __obj.asInstanceOf[Replica]
     }
     
-    extension [Self <: Replica](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Replica] (val x: Self) extends AnyVal {
       
       inline def setRegionName(value: String): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
       

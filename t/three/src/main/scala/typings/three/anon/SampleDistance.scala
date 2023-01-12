@@ -30,7 +30,8 @@ object SampleDistance {
     __obj.asInstanceOf[SampleDistance]
   }
   
-  extension [Self <: SampleDistance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SampleDistance] (val x: Self) extends AnyVal {
     
     inline def setSampleDistance(value: IUniform[Any]): Self = StObject.set(x, "sampleDistance", value.asInstanceOf[js.Any])
     

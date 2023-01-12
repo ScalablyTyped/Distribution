@@ -88,7 +88,8 @@ object typesMoreTypesMod {
       __obj.asInstanceOf[JSONMatrix]
     }
     
-    extension [Self <: JSONMatrix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONMatrix] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -157,7 +158,8 @@ object typesMoreTypesMod {
       __obj.asInstanceOf[PointTuple]
     }
     
-    extension [Self <: PointTuple](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointTuple] (val x: Self) extends AnyVal {
       
       inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Slots[TSlots]]
     }
     
-    extension [Self <: Slots[?], TSlots](x: Self & Slots[TSlots]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Slots[?], TSlots] (val x: Self & Slots[TSlots]) extends AnyVal {
       
       inline def setSlots(
         value: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof TSlots ]:? @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotOptions<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<TSlots[key]>>} */ js.Any

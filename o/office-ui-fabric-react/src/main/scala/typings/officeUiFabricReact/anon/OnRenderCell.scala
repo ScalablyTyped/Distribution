@@ -27,7 +27,8 @@ object OnRenderCell {
     __obj.asInstanceOf[OnRenderCell]
   }
   
-  extension [Self <: OnRenderCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnRenderCell] (val x: Self) extends AnyVal {
     
     inline def setOnRenderCell(value: (Any, Double, Boolean) => Element): Self = StObject.set(x, "onRenderCell", js.Any.fromFunction3(value))
     

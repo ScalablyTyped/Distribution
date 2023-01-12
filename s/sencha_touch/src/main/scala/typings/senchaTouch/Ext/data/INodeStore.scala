@@ -95,7 +95,8 @@ object INodeStore {
     __obj.asInstanceOf[INodeStore]
   }
   
-  extension [Self <: INodeStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INodeStore] (val x: Self) extends AnyVal {
     
     inline def setFolderSort(value: Boolean): Self = StObject.set(x, "folderSort", value.asInstanceOf[js.Any])
     

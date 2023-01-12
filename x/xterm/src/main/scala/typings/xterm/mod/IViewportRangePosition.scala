@@ -31,7 +31,8 @@ object IViewportRangePosition {
     __obj.asInstanceOf[IViewportRangePosition]
   }
   
-  extension [Self <: IViewportRangePosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IViewportRangePosition] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

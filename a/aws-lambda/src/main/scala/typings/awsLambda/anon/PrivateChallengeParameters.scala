@@ -24,7 +24,8 @@ object PrivateChallengeParameters {
     __obj.asInstanceOf[PrivateChallengeParameters]
   }
   
-  extension [Self <: PrivateChallengeParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateChallengeParameters] (val x: Self) extends AnyVal {
     
     inline def setChallengeAnswer(value: String): Self = StObject.set(x, "challengeAnswer", value.asInstanceOf[js.Any])
     

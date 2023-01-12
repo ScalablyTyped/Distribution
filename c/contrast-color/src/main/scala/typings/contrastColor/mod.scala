@@ -69,7 +69,8 @@ object mod {
       __obj.asInstanceOf[ContrastColorConfig]
     }
     
-    extension [Self <: ContrastColorConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContrastColorConfig] (val x: Self) extends AnyVal {
       
       inline def setBgColor(value: Color): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
       

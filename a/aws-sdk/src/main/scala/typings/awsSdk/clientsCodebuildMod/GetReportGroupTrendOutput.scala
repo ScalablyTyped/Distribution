@@ -23,7 +23,8 @@ object GetReportGroupTrendOutput {
     __obj.asInstanceOf[GetReportGroupTrendOutput]
   }
   
-  extension [Self <: GetReportGroupTrendOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetReportGroupTrendOutput] (val x: Self) extends AnyVal {
     
     inline def setRawData(value: ReportGroupTrendRawDataList): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     

@@ -286,7 +286,8 @@ object MultiRemoteElementCommandsSync {
     __obj.asInstanceOf[MultiRemoteElementCommandsSync]
   }
   
-  extension [Self <: MultiRemoteElementCommandsSync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiRemoteElementCommandsSync] (val x: Self) extends AnyVal {
     
     inline def set$(
       value: /* args */ Parameters[

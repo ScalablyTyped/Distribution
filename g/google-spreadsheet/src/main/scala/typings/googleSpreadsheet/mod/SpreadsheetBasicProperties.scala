@@ -63,7 +63,8 @@ object SpreadsheetBasicProperties {
     __obj.asInstanceOf[SpreadsheetBasicProperties]
   }
   
-  extension [Self <: SpreadsheetBasicProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetBasicProperties] (val x: Self) extends AnyVal {
     
     inline def setAutoRecalc(value: RecalculationInterval): Self = StObject.set(x, "autoRecalc", value.asInstanceOf[js.Any])
     

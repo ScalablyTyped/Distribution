@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[UseColor]
     }
     
-    extension [Self <: UseColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseColor] (val x: Self) extends AnyVal {
       
       inline def setUseColor(value: Boolean): Self = StObject.set(x, "useColor", value.asInstanceOf[js.Any])
     }

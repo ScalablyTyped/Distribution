@@ -23,7 +23,8 @@ object CanvasImageData {
     __obj.asInstanceOf[CanvasImageData]
   }
   
-  extension [Self <: CanvasImageData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasImageData] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

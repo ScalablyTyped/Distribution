@@ -25,7 +25,8 @@ object CatMasterMasterRecord {
     __obj.asInstanceOf[CatMasterMasterRecord]
   }
   
-  extension [Self <: CatMasterMasterRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatMasterMasterRecord] (val x: Self) extends AnyVal {
     
     inline def setH(value: String): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     

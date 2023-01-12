@@ -301,7 +301,8 @@ object mod {
       __obj.asInstanceOf[DOMException]
     }
     
-    extension [Self <: DOMException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DOMException] (val x: Self) extends AnyVal {
       
       inline def setABORT_ERR(value: Double): Self = StObject.set(x, "ABORT_ERR", value.asInstanceOf[js.Any])
       

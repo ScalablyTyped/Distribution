@@ -33,7 +33,8 @@ object TaskRunFilterCriteria {
     __obj.asInstanceOf[TaskRunFilterCriteria]
   }
   
-  extension [Self <: TaskRunFilterCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskRunFilterCriteria] (val x: Self) extends AnyVal {
     
     inline def setStartedAfter(value: js.Date): Self = StObject.set(x, "StartedAfter", value.asInstanceOf[js.Any])
     

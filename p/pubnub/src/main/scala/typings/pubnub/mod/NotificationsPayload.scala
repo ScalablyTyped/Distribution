@@ -43,7 +43,8 @@ object NotificationsPayload {
     __obj.asInstanceOf[NotificationsPayload]
   }
   
-  extension [Self <: NotificationsPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationsPayload] (val x: Self) extends AnyVal {
     
     inline def setApns(value: APNSNotificationPayload): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object VNode {
     __obj.asInstanceOf[VNode]
   }
   
-  extension [Self <: VNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VNode] (val x: Self) extends AnyVal {
     
     inline def setChildFlags(value: ChildFlags): Self = StObject.set(x, "childFlags", value.asInstanceOf[js.Any])
     

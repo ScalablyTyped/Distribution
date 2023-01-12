@@ -17,7 +17,8 @@ object QueryAffiliationPagePerpage {
     __obj.asInstanceOf[QueryAffiliationPagePerpage]
   }
   
-  extension [Self <: QueryAffiliationPagePerpage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryAffiliationPagePerpage] (val x: Self) extends AnyVal {
     
     inline def setPath(value: ProjectidNumber): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

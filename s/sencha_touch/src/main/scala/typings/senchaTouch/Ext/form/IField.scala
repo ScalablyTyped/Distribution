@@ -217,7 +217,8 @@ object IField {
     __obj.asInstanceOf[IField]
   }
   
-  extension [Self <: IField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IField] (val x: Self) extends AnyVal {
     
     inline def setClearIcon(value: Boolean): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
     

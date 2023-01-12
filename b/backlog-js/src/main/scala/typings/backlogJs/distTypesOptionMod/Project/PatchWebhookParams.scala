@@ -23,7 +23,8 @@ object PatchWebhookParams {
     __obj.asInstanceOf[PatchWebhookParams]
   }
   
-  extension [Self <: PatchWebhookParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchWebhookParams] (val x: Self) extends AnyVal {
     
     inline def setActivityTypeIds(value: js.Array[Double]): Self = StObject.set(x, "activityTypeIds", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object TaskPanesCollection {
     __obj.asInstanceOf[TaskPanesCollection]
   }
   
-  extension [Self <: TaskPanesCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskPanesCollection] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

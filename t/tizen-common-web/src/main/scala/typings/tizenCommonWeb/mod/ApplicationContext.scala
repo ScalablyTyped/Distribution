@@ -23,7 +23,8 @@ object ApplicationContext {
     __obj.asInstanceOf[ApplicationContext]
   }
   
-  extension [Self <: ApplicationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationContext] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: ApplicationId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

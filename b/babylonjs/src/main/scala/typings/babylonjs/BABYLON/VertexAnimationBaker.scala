@@ -81,7 +81,8 @@ object VertexAnimationBaker {
     __obj.asInstanceOf[VertexAnimationBaker]
   }
   
-  extension [Self <: VertexAnimationBaker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VertexAnimationBaker] (val x: Self) extends AnyVal {
     
     inline def setBakeVertexData(value: js.Array[AnimationRange] => js.Promise[js.typedarray.Float32Array]): Self = StObject.set(x, "bakeVertexData", js.Any.fromFunction1(value))
     

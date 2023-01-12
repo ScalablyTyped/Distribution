@@ -19,7 +19,8 @@ object AchievementUpdateMultipleResponse {
     __obj.asInstanceOf[AchievementUpdateMultipleResponse]
   }
   
-  extension [Self <: AchievementUpdateMultipleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AchievementUpdateMultipleResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

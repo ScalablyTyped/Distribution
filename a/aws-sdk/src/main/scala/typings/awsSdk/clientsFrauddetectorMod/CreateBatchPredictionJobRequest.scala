@@ -60,7 +60,8 @@ object CreateBatchPredictionJobRequest {
     __obj.asInstanceOf[CreateBatchPredictionJobRequest]
   }
   
-  extension [Self <: CreateBatchPredictionJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBatchPredictionJobRequest] (val x: Self) extends AnyVal {
     
     inline def setDetectorName(value: identifier): Self = StObject.set(x, "detectorName", value.asInstanceOf[js.Any])
     

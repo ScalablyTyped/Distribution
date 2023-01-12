@@ -46,7 +46,8 @@ object Dictkey {
     __obj.asInstanceOf[Dictkey]
   }
   
-  extension [Self <: Dictkey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: TTLFunction[typings.oidcProvider.mod.AccessToken] | Double): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     

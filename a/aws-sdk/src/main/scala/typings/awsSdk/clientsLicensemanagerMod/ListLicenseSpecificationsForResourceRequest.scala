@@ -28,7 +28,8 @@ object ListLicenseSpecificationsForResourceRequest {
     __obj.asInstanceOf[ListLicenseSpecificationsForResourceRequest]
   }
   
-  extension [Self <: ListLicenseSpecificationsForResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLicenseSpecificationsForResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: BoxInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PutAlertManagerDefinitionResponse {
     __obj.asInstanceOf[PutAlertManagerDefinitionResponse]
   }
   
-  extension [Self <: PutAlertManagerDefinitionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutAlertManagerDefinitionResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: AlertManagerDefinitionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

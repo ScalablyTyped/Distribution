@@ -18,7 +18,8 @@ object Sshsigningkeyid {
     __obj.asInstanceOf[Sshsigningkeyid]
   }
   
-  extension [Self <: Sshsigningkeyid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sshsigningkeyid] (val x: Self) extends AnyVal {
     
     inline def setSsh_signing_key_id(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['ssh-signing-key-id'] */ js.Any

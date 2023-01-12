@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[Abbr[T]]
     }
     
-    extension [Self <: Abbr[?], T /* <: Unit */](x: Self & Abbr[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Abbr[?], T /* <: Unit */] (val x: Self & Abbr[T]) extends AnyVal {
       
       inline def setAbbr(value: T): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[CutOffNumber]
     }
     
-    extension [Self <: CutOffNumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CutOffNumber] (val x: Self) extends AnyVal {
       
       inline def setCutOffNumber(value: Double): Self = StObject.set(x, "cutOffNumber", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object anon {
       __obj.asInstanceOf[Measure[T]]
     }
     
-    extension [Self <: Measure[?], T /* <: Unit */](x: Self & Measure[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Measure[?], T /* <: Unit */] (val x: Self & Measure[T]) extends AnyVal {
       
       inline def setAbbr(value: T): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
       
@@ -120,7 +123,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: Singular): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -146,7 +150,8 @@ object anon {
       __obj.asInstanceOf[Plural]
     }
     
-    extension [Self <: Plural](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plural] (val x: Self) extends AnyVal {
       
       inline def setPlural(value: String): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
       
@@ -171,7 +176,8 @@ object anon {
       __obj.asInstanceOf[Singular]
     }
     
-    extension [Self <: Singular](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Singular] (val x: Self) extends AnyVal {
       
       inline def setPlural(value: String): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
       
@@ -204,7 +210,8 @@ object anon {
       __obj.asInstanceOf[System]
     }
     
-    extension [Self <: System](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: System] (val x: Self) extends AnyVal {
       
       inline def setAbbr(value: Unit): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
       

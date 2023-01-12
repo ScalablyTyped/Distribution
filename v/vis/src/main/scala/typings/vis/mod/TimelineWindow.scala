@@ -17,7 +17,8 @@ object TimelineWindow {
     __obj.asInstanceOf[TimelineWindow]
   }
   
-  extension [Self <: TimelineWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineWindow] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

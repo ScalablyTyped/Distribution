@@ -29,7 +29,8 @@ object ChartAxisDefaultsCrosshairTooltip {
     __obj.asInstanceOf[ChartAxisDefaultsCrosshairTooltip]
   }
   
-  extension [Self <: ChartAxisDefaultsCrosshairTooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartAxisDefaultsCrosshairTooltip] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

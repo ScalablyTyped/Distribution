@@ -48,7 +48,8 @@ object ICodeCell {
     __obj.asInstanceOf[ICodeCell]
   }
   
-  extension [Self <: ICodeCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICodeCell] (val x: Self) extends AnyVal {
     
     inline def setCell_type(value: code): Self = StObject.set(x, "cell_type", value.asInstanceOf[js.Any])
     

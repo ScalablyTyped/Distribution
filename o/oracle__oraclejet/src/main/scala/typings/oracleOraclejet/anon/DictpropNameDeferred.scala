@@ -18,7 +18,8 @@ object DictpropNameDeferred {
     __obj.asInstanceOf[DictpropNameDeferred]
   }
   
-  extension [Self <: DictpropNameDeferred](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictpropNameDeferred] (val x: Self) extends AnyVal {
     
     inline def setDeferred(value: Boolean): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
     

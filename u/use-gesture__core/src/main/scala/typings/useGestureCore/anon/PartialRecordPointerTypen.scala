@@ -20,7 +20,8 @@ object PartialRecordPointerTypen {
     __obj.asInstanceOf[PartialRecordPointerTypen]
   }
   
-  extension [Self <: PartialRecordPointerTypen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRecordPointerTypen] (val x: Self) extends AnyVal {
     
     inline def setMouse(value: Double): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
     

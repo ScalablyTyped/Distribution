@@ -16,7 +16,8 @@ object PartialClassesGithubPicke {
     __obj.asInstanceOf[PartialClassesGithubPicke]
   }
   
-  extension [Self <: PartialClassesGithubPicke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassesGithubPicke] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: PartialGithubPickerStyles): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

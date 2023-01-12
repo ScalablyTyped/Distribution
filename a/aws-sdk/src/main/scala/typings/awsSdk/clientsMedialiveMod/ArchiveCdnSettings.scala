@@ -15,7 +15,8 @@ object ArchiveCdnSettings {
     __obj.asInstanceOf[ArchiveCdnSettings]
   }
   
-  extension [Self <: ArchiveCdnSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArchiveCdnSettings] (val x: Self) extends AnyVal {
     
     inline def setArchiveS3Settings(value: ArchiveS3Settings): Self = StObject.set(x, "ArchiveS3Settings", value.asInstanceOf[js.Any])
     

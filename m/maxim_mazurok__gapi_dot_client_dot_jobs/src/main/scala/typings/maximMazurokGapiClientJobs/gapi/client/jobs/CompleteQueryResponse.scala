@@ -19,7 +19,8 @@ object CompleteQueryResponse {
     __obj.asInstanceOf[CompleteQueryResponse]
   }
   
-  extension [Self <: CompleteQueryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompleteQueryResponse] (val x: Self) extends AnyVal {
     
     inline def setCompletionResults(value: js.Array[CompletionResult]): Self = StObject.set(x, "completionResults", value.asInstanceOf[js.Any])
     

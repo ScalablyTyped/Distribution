@@ -17,7 +17,8 @@ object NavigationFocusInjectedProps {
     __obj.asInstanceOf[NavigationFocusInjectedProps[P]]
   }
   
-  extension [Self <: NavigationFocusInjectedProps[?], P](x: Self & NavigationFocusInjectedProps[P]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationFocusInjectedProps[?], P] (val x: Self & NavigationFocusInjectedProps[P]) extends AnyVal {
     
     inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
   }

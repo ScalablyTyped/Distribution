@@ -112,7 +112,8 @@ object esMotionTreeNodeMod extends Shortcut {
       __obj.asInstanceOf[MotionTreeNodeProps]
     }
     
-    extension [Self <: MotionTreeNodeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MotionTreeNodeProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

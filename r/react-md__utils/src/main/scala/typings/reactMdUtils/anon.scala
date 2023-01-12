@@ -70,7 +70,8 @@ object anon {
       __obj.asInstanceOf[AppSizeinitializedboolean]
     }
     
-    extension [Self <: AppSizeinitializedboolean](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppSizeinitializedboolean] (val x: Self) extends AnyVal {
       
       inline def setIsDesktop(value: Boolean): Self = StObject.set(x, "isDesktop", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object anon {
       __obj.asInstanceOf[Current[T]]
     }
     
-    extension [Self <: Current[?], T](x: Self & Current[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Current[?], T] (val x: Self & Current[T]) extends AnyVal {
       
       inline def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     }
@@ -116,7 +118,8 @@ object anon {
       __obj.asInstanceOf[Max]
     }
     
-    extension [Self <: Max](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
       
       inline def setMax(value: QuerySize): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     }
@@ -137,7 +140,8 @@ object anon {
       __obj.asInstanceOf[MaxMin]
     }
     
-    extension [Self <: MaxMin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxMin] (val x: Self) extends AnyVal {
       
       inline def setMax(value: QuerySize): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -158,7 +162,8 @@ object anon {
       __obj.asInstanceOf[Min]
     }
     
-    extension [Self <: Min](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Min] (val x: Self) extends AnyVal {
       
       inline def setMin(value: QuerySize): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     }
@@ -178,7 +183,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyActiveDescendantC]
     }
     
-    extension [Self <: ReadonlyActiveDescendantC](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyActiveDescendantC] (val x: Self) extends AnyVal {
       
       inline def setActiveId(value: String): Self = StObject.set(x, "activeId", value.asInstanceOf[js.Any])
       
@@ -206,7 +212,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyHoverModeEventHan]
     }
     
-    extension [Self <: ReadonlyHoverModeEventHan](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyHoverModeEventHan] (val x: Self) extends AnyVal {
       
       inline def setOnClick(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
@@ -233,7 +240,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyHoverModeHoverEve]
     }
     
-    extension [Self <: ReadonlyHoverModeHoverEve](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyHoverModeHoverEve] (val x: Self) extends AnyVal {
       
       inline def setOnMouseEnter(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
@@ -276,7 +284,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyKeyboardFocusCont]
     }
     
-    extension [Self <: ReadonlyKeyboardFocusCont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyKeyboardFocusCont] (val x: Self) extends AnyVal {
       
       inline def setAttach(value: /* element */ HTMLElement => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
       
@@ -310,7 +319,8 @@ object anon {
       __obj.asInstanceOf[Ref[E]]
     }
     
-    extension [Self <: Ref[?], E /* <: HTMLElement */](x: Self & Ref[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ref[?], E /* <: HTMLElement */] (val x: Self & Ref[E]) extends AnyVal {
       
       inline def setRef(value: typings.react.mod.Ref[E]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       

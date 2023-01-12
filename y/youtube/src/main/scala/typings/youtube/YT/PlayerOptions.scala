@@ -43,7 +43,8 @@ object PlayerOptions {
     __obj.asInstanceOf[PlayerOptions]
   }
   
-  extension [Self <: PlayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerOptions] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: Events): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

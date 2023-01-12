@@ -19,7 +19,8 @@ object MlDatafeedRunningState {
     __obj.asInstanceOf[MlDatafeedRunningState]
   }
   
-  extension [Self <: MlDatafeedRunningState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDatafeedRunningState] (val x: Self) extends AnyVal {
     
     inline def setReal_time_configured(value: Boolean): Self = StObject.set(x, "real_time_configured", value.asInstanceOf[js.Any])
     

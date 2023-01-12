@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[DefaultLogger_]
     }
     
-    extension [Self <: DefaultLogger_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultLogger_] (val x: Self) extends AnyVal {
       
       inline def setConsole(value: Boolean): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       

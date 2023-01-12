@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[AdjustX]
     }
     
-    extension [Self <: AdjustX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdjustX] (val x: Self) extends AnyVal {
       
       inline def setAdjustX(value: Double): Self = StObject.set(x, "adjustX", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Offset]
     }
     
-    extension [Self <: Offset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       

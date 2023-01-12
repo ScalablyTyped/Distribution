@@ -19,7 +19,8 @@ object AchievementUnlockResponse {
     __obj.asInstanceOf[AchievementUnlockResponse]
   }
   
-  extension [Self <: AchievementUnlockResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AchievementUnlockResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

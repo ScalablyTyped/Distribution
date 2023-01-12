@@ -106,7 +106,8 @@ object NightwatchGlobals {
     __obj.asInstanceOf[NightwatchGlobals]
   }
   
-  extension [Self <: NightwatchGlobals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NightwatchGlobals] (val x: Self) extends AnyVal {
     
     inline def setAbortOnAssertionFailure(value: Boolean): Self = StObject.set(x, "abortOnAssertionFailure", value.asInstanceOf[js.Any])
     

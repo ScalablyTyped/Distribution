@@ -22,7 +22,8 @@ object IndentGuides {
     __obj.asInstanceOf[IndentGuides]
   }
   
-  extension [Self <: IndentGuides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndentGuides] (val x: Self) extends AnyVal {
     
     inline def set$expanded(value: Boolean): Self = StObject.set(x, "$expanded", value.asInstanceOf[js.Any])
     

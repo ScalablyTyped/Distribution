@@ -75,7 +75,8 @@ object mod {
       __obj.asInstanceOf[Controller_]
     }
     
-    extension [Self <: Controller_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Controller_] (val x: Self) extends AnyVal {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object mod {
       __obj.asInstanceOf[ICacheConfig]
     }
     
-    extension [Self <: ICacheConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICacheConfig] (val x: Self) extends AnyVal {
       
       inline def setExpiresAt(value: Double): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
       

@@ -37,7 +37,8 @@ object statsbooleanundefinedOrie {
     __obj.asInstanceOf[statsbooleanundefinedOrie]
   }
   
-  extension [Self <: statsbooleanundefinedOrie](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: statsbooleanundefinedOrie] (val x: Self) extends AnyVal {
     
     inline def setOrderBy(value: OrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     

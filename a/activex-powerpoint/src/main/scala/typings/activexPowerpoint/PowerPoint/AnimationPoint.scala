@@ -37,7 +37,8 @@ object AnimationPoint {
     __obj.asInstanceOf[AnimationPoint]
   }
   
-  extension [Self <: AnimationPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationPoint] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

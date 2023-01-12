@@ -44,7 +44,8 @@ object MinecraftFilter {
     __obj.asInstanceOf[MinecraftFilter]
   }
   
-  extension [Self <: MinecraftFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinecraftFilter] (val x: Self) extends AnyVal {
     
     inline def setAll_of(value: js.Array[MinecraftFilter]): Self = StObject.set(x, "all_of", value.asInstanceOf[js.Any])
     

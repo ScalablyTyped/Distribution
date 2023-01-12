@@ -128,7 +128,8 @@ object KeyMetadata {
     __obj.asInstanceOf[KeyMetadata]
   }
   
-  extension [Self <: KeyMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyMetadata] (val x: Self) extends AnyVal {
     
     inline def setAWSAccountId(value: AWSAccountIdType): Self = StObject.set(x, "AWSAccountId", value.asInstanceOf[js.Any])
     

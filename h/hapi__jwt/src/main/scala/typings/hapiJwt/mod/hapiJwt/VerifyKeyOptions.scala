@@ -54,7 +54,8 @@ object VerifyKeyOptions {
     __obj.asInstanceOf[VerifyKeyOptions]
   }
   
-  extension [Self <: VerifyKeyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyKeyOptions] (val x: Self) extends AnyVal {
     
     inline def setAud(value: String | (js.Array[js.RegExp | String]) | js.RegExp | `false`): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
     

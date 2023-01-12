@@ -97,7 +97,8 @@ object Harness {
       __obj.asInstanceOf[IBrowser]
     }
     
-    extension [Self <: IBrowser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBrowser] (val x: Self) extends AnyVal {
       
       inline def setAutoRun(value: Boolean): Self = StObject.set(x, "autoRun", value.asInstanceOf[js.Any])
       
@@ -206,7 +207,8 @@ object Harness {
       __obj.asInstanceOf[IBrowserExtJS]
     }
     
-    extension [Self <: IBrowserExtJS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBrowserExtJS] (val x: Self) extends AnyVal {
       
       inline def setAllowExtVersionChange(value: Boolean): Self = StObject.set(x, "allowExtVersionChange", value.asInstanceOf[js.Any])
       
@@ -238,7 +240,8 @@ object Harness {
       __obj.asInstanceOf[IBrowserExtJSCore]
     }
     
-    extension [Self <: IBrowserExtJSCore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBrowserExtJSCore] (val x: Self) extends AnyVal {
       
       inline def setCoverageUnit(value: String): Self = StObject.set(x, "coverageUnit", value.asInstanceOf[js.Any])
       
@@ -313,7 +316,8 @@ object Harness {
       __obj.asInstanceOf[IBrowserSenchaTouch]
     }
     
-    extension [Self <: IBrowserSenchaTouch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBrowserSenchaTouch] (val x: Self) extends AnyVal {
       
       inline def setInstallLoaderInstrumentationHook(value: Boolean): Self = StObject.set(x, "installLoaderInstrumentationHook", value.asInstanceOf[js.Any])
       
@@ -381,7 +385,8 @@ object Harness {
       __obj.asInstanceOf[IBrowserSingleton]
     }
     
-    extension [Self <: IBrowserSingleton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBrowserSingleton] (val x: Self) extends AnyVal {
       
       inline def setExtJS(value: IBrowserExtJS): Self = StObject.set(x, "ExtJS", value.asInstanceOf[js.Any])
       
@@ -408,7 +413,8 @@ object Harness {
       __obj.asInstanceOf[IPreloadContentDescriptor]
     }
     
-    extension [Self <: IPreloadContentDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPreloadContentDescriptor] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -427,7 +433,8 @@ object Harness {
       __obj.asInstanceOf[IPreloadTextDescriptor]
     }
     
-    extension [Self <: IPreloadTextDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPreloadTextDescriptor] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
@@ -447,7 +454,8 @@ object Harness {
       __obj.asInstanceOf[IPreloadUrlDescriptor]
     }
     
-    extension [Self <: IPreloadUrlDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPreloadUrlDescriptor] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -468,7 +476,8 @@ object Harness {
       __obj.asInstanceOf[ITestGroupDescriptor]
     }
     
-    extension [Self <: ITestGroupDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITestGroupDescriptor] (val x: Self) extends AnyVal {
       
       inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
@@ -489,7 +498,8 @@ object Harness {
       __obj.asInstanceOf[ITestUrlDescriptor]
     }
     
-    extension [Self <: ITestUrlDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITestUrlDescriptor] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[Colorcontrast]
     }
     
-    extension [Self <: Colorcontrast](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Colorcontrast] (val x: Self) extends AnyVal {
       
       inline def `setColor-contrast`(value: EnabledBoolean): Self = StObject.set(x, "color-contrast", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Enabled]
     }
     
-    extension [Self <: Enabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: `false`): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     }
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[EnabledBoolean]
     }
     
-    extension [Self <: EnabledBoolean](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnabledBoolean] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     }
@@ -89,7 +92,8 @@ object anon {
       __obj.asInstanceOf[OmitValidationOptionsrule]
     }
     
-    extension [Self <: OmitValidationOptionsrule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitValidationOptionsrule] (val x: Self) extends AnyVal {
       
       inline def setMismatchTolerance(value: Double): Self = StObject.set(x, "mismatchTolerance", value.asInstanceOf[js.Any])
       

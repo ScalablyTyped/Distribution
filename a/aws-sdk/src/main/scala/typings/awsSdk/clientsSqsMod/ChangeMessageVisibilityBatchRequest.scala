@@ -23,7 +23,8 @@ object ChangeMessageVisibilityBatchRequest {
     __obj.asInstanceOf[ChangeMessageVisibilityBatchRequest]
   }
   
-  extension [Self <: ChangeMessageVisibilityBatchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeMessageVisibilityBatchRequest] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: ChangeMessageVisibilityBatchRequestEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     

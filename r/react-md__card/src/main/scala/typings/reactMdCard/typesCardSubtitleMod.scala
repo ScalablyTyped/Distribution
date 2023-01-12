@@ -37,7 +37,8 @@ object typesCardSubtitleMod {
       __obj.asInstanceOf[CardSubtitleProps]
     }
     
-    extension [Self <: CardSubtitleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardSubtitleProps] (val x: Self) extends AnyVal {
       
       inline def setDisableSecondaryColor(value: Boolean): Self = StObject.set(x, "disableSecondaryColor", value.asInstanceOf[js.Any])
       

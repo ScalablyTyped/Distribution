@@ -18,7 +18,8 @@ object RunStatementResponse {
     __obj.asInstanceOf[RunStatementResponse]
   }
   
-  extension [Self <: RunStatementResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunStatementResponse] (val x: Self) extends AnyVal {
     
     inline def setId(value: IntegerValue): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

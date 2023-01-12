@@ -43,7 +43,8 @@ object RuleGroupSourceStatefulRulesHeaderDetails {
     __obj.asInstanceOf[RuleGroupSourceStatefulRulesHeaderDetails]
   }
   
-  extension [Self <: RuleGroupSourceStatefulRulesHeaderDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleGroupSourceStatefulRulesHeaderDetails] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: NonEmptyString): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetLogGroupFieldsResponse {
     __obj.asInstanceOf[GetLogGroupFieldsResponse]
   }
   
-  extension [Self <: GetLogGroupFieldsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLogGroupFieldsResponse] (val x: Self) extends AnyVal {
     
     inline def setLogGroupFields(value: LogGroupFieldList): Self = StObject.set(x, "logGroupFields", value.asInstanceOf[js.Any])
     

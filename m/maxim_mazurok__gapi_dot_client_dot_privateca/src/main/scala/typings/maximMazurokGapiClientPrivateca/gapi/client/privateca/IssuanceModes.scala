@@ -19,7 +19,8 @@ object IssuanceModes {
     __obj.asInstanceOf[IssuanceModes]
   }
   
-  extension [Self <: IssuanceModes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssuanceModes] (val x: Self) extends AnyVal {
     
     inline def setAllowConfigBasedIssuance(value: Boolean): Self = StObject.set(x, "allowConfigBasedIssuance", value.asInstanceOf[js.Any])
     

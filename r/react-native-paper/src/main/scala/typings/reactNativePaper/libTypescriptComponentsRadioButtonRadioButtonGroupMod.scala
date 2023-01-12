@@ -145,7 +145,8 @@ object libTypescriptComponentsRadioButtonRadioButtonGroupMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -170,7 +171,8 @@ object libTypescriptComponentsRadioButtonRadioButtonGroupMod {
       __obj.asInstanceOf[RadioButtonContextType]
     }
     
-    extension [Self <: RadioButtonContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioButtonContextType] (val x: Self) extends AnyVal {
       
       inline def setOnValueChange(value: String => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
       

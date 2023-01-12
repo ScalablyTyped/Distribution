@@ -88,7 +88,8 @@ object pluginsSerializerMod {
       __obj.asInstanceOf[DeserializerOptions]
     }
     
-    extension [Self <: DeserializerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeserializerOptions] (val x: Self) extends AnyVal {
       
       inline def setGetConstructor(value: String => js.Function0[Any]): Self = StObject.set(x, "getConstructor", js.Any.fromFunction1(value))
       
@@ -121,7 +122,8 @@ object pluginsSerializerMod {
       __obj.asInstanceOf[SerializerOptions]
     }
     
-    extension [Self <: SerializerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializerOptions] (val x: Self) extends AnyVal {
       
       inline def setReplacer(value: (/* key */ String, /* value */ Any) => Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
       

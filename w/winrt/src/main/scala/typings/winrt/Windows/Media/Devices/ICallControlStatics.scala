@@ -17,7 +17,8 @@ object ICallControlStatics {
     __obj.asInstanceOf[ICallControlStatics]
   }
   
-  extension [Self <: ICallControlStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICallControlStatics] (val x: Self) extends AnyVal {
     
     inline def setFromId(value: String => CallControl): Self = StObject.set(x, "fromId", js.Any.fromFunction1(value))
     

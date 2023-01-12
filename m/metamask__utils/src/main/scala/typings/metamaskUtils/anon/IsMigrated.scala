@@ -32,7 +32,8 @@ object IsMigrated {
     __obj.asInstanceOf[IsMigrated]
   }
   
-  extension [Self <: IsMigrated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsMigrated] (val x: Self) extends AnyVal {
     
     inline def setIsMigrated(value: Boolean): Self = StObject.set(x, "isMigrated", value.asInstanceOf[js.Any])
     

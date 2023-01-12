@@ -97,7 +97,8 @@ object libObjectsChoiceMod {
       __obj.asInstanceOf[Choice[T]]
     }
     
-    extension [Self <: Choice[?], T /* <: Answers */](x: Self & Choice[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Choice[?], T /* <: Answers */] (val x: Self & Choice[T]) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

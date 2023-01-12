@@ -88,7 +88,8 @@ object GetEvaluationOutput {
     __obj.asInstanceOf[GetEvaluationOutput]
   }
   
-  extension [Self <: GetEvaluationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEvaluationOutput] (val x: Self) extends AnyVal {
     
     inline def setComputeTime(value: LongType): Self = StObject.set(x, "ComputeTime", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object IViewLocation {
     __obj.asInstanceOf[IViewLocation]
   }
   
-  extension [Self <: IViewLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IViewLocation] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IViewLocation): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

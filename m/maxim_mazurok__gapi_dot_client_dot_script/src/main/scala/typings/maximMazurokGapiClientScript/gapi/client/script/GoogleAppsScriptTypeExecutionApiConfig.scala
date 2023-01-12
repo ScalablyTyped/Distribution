@@ -16,7 +16,8 @@ object GoogleAppsScriptTypeExecutionApiConfig {
     __obj.asInstanceOf[GoogleAppsScriptTypeExecutionApiConfig]
   }
   
-  extension [Self <: GoogleAppsScriptTypeExecutionApiConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsScriptTypeExecutionApiConfig] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object LabelOptionsWithThreshold {
     __obj.asInstanceOf[LabelOptionsWithThreshold]
   }
   
-  extension [Self <: LabelOptionsWithThreshold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelOptionsWithThreshold] (val x: Self) extends AnyVal {
     
     inline def setRatio(value: Any): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     

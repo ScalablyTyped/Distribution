@@ -114,7 +114,8 @@ object modulesClientMod {
       __obj.asInstanceOf[ClientAnalyticsMetadata]
     }
     
-    extension [Self <: ClientAnalyticsMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientAnalyticsMetadata] (val x: Self) extends AnyVal {
       
       inline def setMerchantAppId(value: String): Self = StObject.set(x, "merchantAppId", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object modulesClientMod {
       __obj.asInstanceOf[Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def setAnalyticsMetadata(value: ClientAnalyticsMetadata): Self = StObject.set(x, "analyticsMetadata", value.asInstanceOf[js.Any])
       
@@ -166,7 +168,8 @@ object modulesClientMod {
       __obj.asInstanceOf[CreditCardInfo]
     }
     
-    extension [Self <: CreditCardInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreditCardInfo] (val x: Self) extends AnyVal {
       
       inline def setBillingAddress(value: PostalCode): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
       

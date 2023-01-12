@@ -19,7 +19,8 @@ object GoogleFirestoreAdminV1Progress {
     __obj.asInstanceOf[GoogleFirestoreAdminV1Progress]
   }
   
-  extension [Self <: GoogleFirestoreAdminV1Progress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleFirestoreAdminV1Progress] (val x: Self) extends AnyVal {
     
     inline def setCompletedWork(value: String): Self = StObject.set(x, "completedWork", value.asInstanceOf[js.Any])
     

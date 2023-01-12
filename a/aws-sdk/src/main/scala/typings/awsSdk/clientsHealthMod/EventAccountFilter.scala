@@ -23,7 +23,8 @@ object EventAccountFilter {
     __obj.asInstanceOf[EventAccountFilter]
   }
   
-  extension [Self <: EventAccountFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventAccountFilter] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: accountId): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object StockToolsGuiDefinitionsMeasureOptions {
     __obj.asInstanceOf[StockToolsGuiDefinitionsMeasureOptions]
   }
   
-  extension [Self <: StockToolsGuiDefinitionsMeasureOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockToolsGuiDefinitionsMeasureOptions] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

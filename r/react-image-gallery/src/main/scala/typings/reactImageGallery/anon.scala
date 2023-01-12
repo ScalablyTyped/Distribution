@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[CurrentIndex]
     }
     
-    extension [Self <: CurrentIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentIndex] (val x: Self) extends AnyVal {
       
       inline def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Media]
     }
     
-    extension [Self <: Media](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Media] (val x: Self) extends AnyVal {
       
       inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       

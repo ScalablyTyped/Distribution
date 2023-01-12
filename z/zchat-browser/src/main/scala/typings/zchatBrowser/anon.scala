@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Cleardeptidonchatended]
     }
     
-    extension [Self <: Cleardeptidonchatended](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cleardeptidonchatended] (val x: Self) extends AnyVal {
       
       inline def setClear_dept_id_on_chat_ended(value: Boolean): Self = StObject.set(x, "clear_dept_id_on_chat_ended", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Comment]
     }
     
-    extension [Self <: Comment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -68,7 +70,8 @@ object anon {
       __obj.asInstanceOf[Count]
     }
     
-    extension [Self <: Count](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -87,7 +90,8 @@ object anon {
       __obj.asInstanceOf[Jwtfn]
     }
     
-    extension [Self <: Jwtfn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Jwtfn] (val x: Self) extends AnyVal {
       
       inline def setJwt_fn(value: /* callback */ js.Function1[/* jwt */ String, Unit] => Unit): Self = StObject.set(x, "jwt_fn", js.Any.fromFunction1(value))
       
@@ -111,7 +115,8 @@ object anon {
       __obj.asInstanceOf[PartialVisitorInfo]
     }
     
-    extension [Self <: PartialVisitorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialVisitorInfo] (val x: Self) extends AnyVal {
       
       inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
       
@@ -140,7 +145,8 @@ object anon {
       __obj.asInstanceOf[Title]
     }
     
-    extension [Self <: Title](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Title] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -169,7 +175,8 @@ object anon {
       __obj.asInstanceOf[typeaccountacountschedule]
     }
     
-    extension [Self <: typeaccountacountschedule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typeaccountacountschedule] (val x: Self) extends AnyVal {
       
       inline def setAcount_schedule(value: Schedule): Self = StObject.set(x, "acount_schedule", value.asInstanceOf[js.Any])
       
@@ -202,7 +209,8 @@ object anon {
       __obj.asInstanceOf[typedepartmentdepartments]
     }
     
-    extension [Self <: typedepartmentdepartments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typedepartmentdepartments] (val x: Self) extends AnyVal {
       
       inline def setDepartment_schedule(value: NumberDictionary[Schedule]): Self = StObject.set(x, "department_schedule", value.asInstanceOf[js.Any])
       

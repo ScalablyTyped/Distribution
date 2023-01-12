@@ -26,7 +26,8 @@ object libProviderServicesDeepLinkingMod {
       __obj.asInstanceOf[ContentItem]
     }
     
-    extension [Self <: ContentItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentItem] (val x: Self) extends AnyVal {
       
       inline def setCustom(value: Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object libProviderServicesDeepLinkingMod {
       __obj.asInstanceOf[DeepLinkingMessageOptions]
     }
     
-    extension [Self <: DeepLinkingMessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepLinkingMessageOptions] (val x: Self) extends AnyVal {
       
       inline def setErrlog(value: String): Self = StObject.set(x, "errlog", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object libProviderServicesDeepLinkingMod {
       __obj.asInstanceOf[DeepLinkingService]
     }
     
-    extension [Self <: DeepLinkingService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepLinkingService] (val x: Self) extends AnyVal {
       
       inline def setCreateDeepLinkingForm(value: (IdToken, js.Array[ContentItem], DeepLinkingMessageOptions) => js.Promise[String | `false`]): Self = StObject.set(x, "createDeepLinkingForm", js.Any.fromFunction3(value))
       

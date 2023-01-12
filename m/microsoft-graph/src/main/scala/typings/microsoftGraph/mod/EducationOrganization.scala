@@ -27,7 +27,8 @@ object EducationOrganization {
     __obj.asInstanceOf[EducationOrganization]
   }
   
-  extension [Self <: EducationOrganization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationOrganization] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

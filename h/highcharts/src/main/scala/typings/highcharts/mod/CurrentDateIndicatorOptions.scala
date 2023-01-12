@@ -71,7 +71,8 @@ object CurrentDateIndicatorOptions {
     __obj.asInstanceOf[CurrentDateIndicatorOptions]
   }
   
-  extension [Self <: CurrentDateIndicatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentDateIndicatorOptions] (val x: Self) extends AnyVal {
     
     inline def setAcrossPanes(value: Boolean): Self = StObject.set(x, "acrossPanes", value.asInstanceOf[js.Any])
     

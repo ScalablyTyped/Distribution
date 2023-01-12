@@ -26,7 +26,8 @@ object DetailsType {
     __obj.asInstanceOf[DetailsType]
   }
   
-  extension [Self <: DetailsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailsType] (val x: Self) extends AnyVal {
     
     inline def setDetails(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['secret-scanning-location-commit'] */ js.Any

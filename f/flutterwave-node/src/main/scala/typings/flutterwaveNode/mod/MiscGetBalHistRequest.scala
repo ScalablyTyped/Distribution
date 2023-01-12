@@ -21,7 +21,8 @@ object MiscGetBalHistRequest {
     __obj.asInstanceOf[MiscGetBalHistRequest]
   }
   
-  extension [Self <: MiscGetBalHistRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MiscGetBalHistRequest] (val x: Self) extends AnyVal {
     
     inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object SortableEndEvent {
     __obj.asInstanceOf[SortableEndEvent]
   }
   
-  extension [Self <: SortableEndEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortableEndEvent] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

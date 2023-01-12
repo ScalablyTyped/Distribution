@@ -48,7 +48,8 @@ object IStandaloneEditorConstructionOptions {
     __obj.asInstanceOf[IStandaloneEditorConstructionOptions]
   }
   
-  extension [Self <: IStandaloneEditorConstructionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStandaloneEditorConstructionOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityHelpUrl(value: String): Self = StObject.set(x, "accessibilityHelpUrl", value.asInstanceOf[js.Any])
     

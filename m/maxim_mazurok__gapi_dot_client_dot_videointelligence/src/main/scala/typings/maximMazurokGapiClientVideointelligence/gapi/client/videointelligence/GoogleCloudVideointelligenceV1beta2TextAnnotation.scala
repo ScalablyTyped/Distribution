@@ -22,7 +22,8 @@ object GoogleCloudVideointelligenceV1beta2TextAnnotation {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2TextAnnotation]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1beta2TextAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1beta2TextAnnotation] (val x: Self) extends AnyVal {
     
     inline def setSegments(value: js.Array[GoogleCloudVideointelligenceV1beta2TextSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     

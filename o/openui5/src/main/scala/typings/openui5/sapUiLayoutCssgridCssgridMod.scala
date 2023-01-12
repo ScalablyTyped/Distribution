@@ -639,7 +639,8 @@ object sapUiLayoutCssgridCssgridMod {
       __obj.asInstanceOf[CSSGridSettings]
     }
     
-    extension [Self <: CSSGridSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSGridSettings] (val x: Self) extends AnyVal {
       
       inline def setCustomLayout(value: typings.openui5.sapUiLayoutCssgridGridLayoutBaseMod.default): Self = StObject.set(x, "customLayout", value.asInstanceOf[js.Any])
       

@@ -243,7 +243,8 @@ object Schedule {
       __obj.asInstanceOf[ActionBeginEventArgs]
     }
     
-    extension [Self <: ActionBeginEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionBeginEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -312,7 +313,8 @@ object Schedule {
       __obj.asInstanceOf[ActionCompleteEventArgs]
     }
     
-    extension [Self <: ActionCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
@@ -368,7 +370,8 @@ object Schedule {
       __obj.asInstanceOf[AgendaViewSettings]
     }
     
-    extension [Self <: AgendaViewSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AgendaViewSettings] (val x: Self) extends AnyVal {
       
       inline def setDateColumnTemplateId(value: String): Self = StObject.set(x, "dateColumnTemplateId", value.asInstanceOf[js.Any])
       
@@ -417,7 +420,8 @@ object Schedule {
       __obj.asInstanceOf[AppointmentChangedEventArgs]
     }
     
-    extension [Self <: AppointmentChangedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentChangedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
@@ -474,7 +478,8 @@ object Schedule {
       __obj.asInstanceOf[AppointmentClickEventArgs]
     }
     
-    extension [Self <: AppointmentClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
@@ -527,7 +532,8 @@ object Schedule {
       __obj.asInstanceOf[AppointmentCreatedEventArgs]
     }
     
-    extension [Self <: AppointmentCreatedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentCreatedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
@@ -580,7 +586,8 @@ object Schedule {
       __obj.asInstanceOf[AppointmentHoverEventArgs]
     }
     
-    extension [Self <: AppointmentHoverEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentHoverEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
@@ -637,7 +644,8 @@ object Schedule {
       __obj.asInstanceOf[AppointmentRemovedEventArgs]
     }
     
-    extension [Self <: AppointmentRemovedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentRemovedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
@@ -771,7 +779,8 @@ object Schedule {
       __obj.asInstanceOf[AppointmentSettings]
     }
     
-    extension [Self <: AppointmentSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentSettings] (val x: Self) extends AnyVal {
       
       inline def setAllDay(value: String): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
       
@@ -902,7 +911,8 @@ object Schedule {
       __obj.asInstanceOf[AppointmentWindowOpenEventArgs]
     }
     
-    extension [Self <: AppointmentWindowOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppointmentWindowOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
@@ -979,7 +989,8 @@ object Schedule {
       __obj.asInstanceOf[BeforeAppointmentChangeEventArgs]
     }
     
-    extension [Self <: BeforeAppointmentChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeAppointmentChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
@@ -1032,7 +1043,8 @@ object Schedule {
       __obj.asInstanceOf[BeforeAppointmentCreateEventArgs]
     }
     
-    extension [Self <: BeforeAppointmentCreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeAppointmentCreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
@@ -1081,7 +1093,8 @@ object Schedule {
       __obj.asInstanceOf[BeforeAppointmentRemoveEventArgs]
     }
     
-    extension [Self <: BeforeAppointmentRemoveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeAppointmentRemoveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
@@ -1150,7 +1163,8 @@ object Schedule {
       __obj.asInstanceOf[BeforeContextMenuOpenEventArgs]
     }
     
-    extension [Self <: BeforeContextMenuOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeContextMenuOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
@@ -1271,7 +1285,8 @@ object Schedule {
       __obj.asInstanceOf[BlockoutSettings]
     }
     
-    extension [Self <: BlockoutSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockoutSettings] (val x: Self) extends AnyVal {
       
       inline def setCustomStyle(value: String): Self = StObject.set(x, "customStyle", value.asInstanceOf[js.Any])
       
@@ -1376,7 +1391,8 @@ object Schedule {
       __obj.asInstanceOf[CategorizeSettings]
     }
     
-    extension [Self <: CategorizeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CategorizeSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
       
@@ -1455,7 +1471,8 @@ object Schedule {
       __obj.asInstanceOf[CellClickEventArgs]
     }
     
-    extension [Self <: CellClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1532,7 +1549,8 @@ object Schedule {
       __obj.asInstanceOf[CellDoubleClickEventArgs]
     }
     
-    extension [Self <: CellDoubleClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellDoubleClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1605,7 +1623,8 @@ object Schedule {
       __obj.asInstanceOf[CellHoverEventArgs]
     }
     
-    extension [Self <: CellHoverEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellHoverEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1660,7 +1679,8 @@ object Schedule {
       __obj.asInstanceOf[ContextMenuSettings]
     }
     
-    extension [Self <: ContextMenuSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuSettings] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -1689,7 +1709,8 @@ object Schedule {
       __obj.asInstanceOf[ContextMenuSettingsMenuItems]
     }
     
-    extension [Self <: ContextMenuSettingsMenuItems](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuSettingsMenuItems] (val x: Self) extends AnyVal {
       
       inline def setAppointment(value: js.Array[Any]): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
@@ -1726,7 +1747,8 @@ object Schedule {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1763,7 +1785,8 @@ object Schedule {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1808,7 +1831,8 @@ object Schedule {
       __obj.asInstanceOf[DragEventArgs]
     }
     
-    extension [Self <: DragEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1861,7 +1885,8 @@ object Schedule {
       __obj.asInstanceOf[DragStartEventArgs]
     }
     
-    extension [Self <: DragStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
@@ -1910,7 +1935,8 @@ object Schedule {
       __obj.asInstanceOf[DragStopEventArgs]
     }
     
-    extension [Self <: DragStopEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragStopEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
@@ -1948,7 +1974,8 @@ object Schedule {
       __obj.asInstanceOf[Group]
     }
     
-    extension [Self <: Group](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
       
       inline def setAllowGroupEditing(value: Boolean): Self = StObject.set(x, "allowGroupEditing", value.asInstanceOf[js.Any])
       
@@ -1987,7 +2014,8 @@ object Schedule {
       __obj.asInstanceOf[KeyDownEventArgs]
     }
     
-    extension [Self <: KeyDownEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyDownEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2036,7 +2064,8 @@ object Schedule {
       __obj.asInstanceOf[MenuItemClickEventArgs]
     }
     
-    extension [Self <: MenuItemClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2495,7 +2524,8 @@ object Schedule {
       __obj.asInstanceOf[typings.ejWebAll.ej.Schedule.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Schedule.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Schedule.Model] (val x: Self) extends AnyVal {
       
       inline def setActionBegin(value: /* e */ ActionBeginEventArgs => Unit): Self = StObject.set(x, "actionBegin", js.Any.fromFunction1(value))
       
@@ -2918,7 +2948,8 @@ object Schedule {
       __obj.asInstanceOf[NavigationEventArgs]
     }
     
-    extension [Self <: NavigationEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2987,7 +3018,8 @@ object Schedule {
       __obj.asInstanceOf[OverflowButtonClickEventArgs]
     }
     
-    extension [Self <: OverflowButtonClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverflowButtonClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3040,7 +3072,8 @@ object Schedule {
       __obj.asInstanceOf[OverflowButtonHoverEventArgs]
     }
     
-    extension [Self <: OverflowButtonHoverEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverflowButtonHoverEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3098,7 +3131,8 @@ object Schedule {
       __obj.asInstanceOf[PrioritySettings]
     }
     
-    extension [Self <: PrioritySettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrioritySettings] (val x: Self) extends AnyVal {
       
       inline def setDataSource(value: Any | js.Array[Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
@@ -3173,7 +3207,8 @@ object Schedule {
       __obj.asInstanceOf[QueryCellInfoEventArgs]
     }
     
-    extension [Self <: QueryCellInfoEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryCellInfoEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
@@ -3242,7 +3277,8 @@ object Schedule {
       __obj.asInstanceOf[ReminderEventArgs]
     }
     
-    extension [Self <: ReminderEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReminderEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3281,7 +3317,8 @@ object Schedule {
       __obj.asInstanceOf[ReminderSettings]
     }
     
-    extension [Self <: ReminderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReminderSettings] (val x: Self) extends AnyVal {
       
       inline def setAlertBefore(value: Double): Self = StObject.set(x, "alertBefore", value.asInstanceOf[js.Any])
       
@@ -3312,7 +3349,8 @@ object Schedule {
       __obj.asInstanceOf[RenderDates]
     }
     
-    extension [Self <: RenderDates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderDates] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -3353,7 +3391,8 @@ object Schedule {
       __obj.asInstanceOf[ResizeEventArgs]
     }
     
-    extension [Self <: ResizeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3406,7 +3445,8 @@ object Schedule {
       __obj.asInstanceOf[ResizeStartEventArgs]
     }
     
-    extension [Self <: ResizeStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
@@ -3459,7 +3499,8 @@ object Schedule {
       __obj.asInstanceOf[ResizeStopEventArgs]
     }
     
-    extension [Self <: ResizeStopEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeStopEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAppointment(value: Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
@@ -3516,7 +3557,8 @@ object Schedule {
       __obj.asInstanceOf[Resource]
     }
     
-    extension [Self <: Resource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
       
       inline def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
       
@@ -3595,7 +3637,8 @@ object Schedule {
       __obj.asInstanceOf[ResourcesResourceSettings]
     }
     
-    extension [Self <: ResourcesResourceSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourcesResourceSettings] (val x: Self) extends AnyVal {
       
       inline def setAppointmentClass(value: String): Self = StObject.set(x, "appointmentClass", value.asInstanceOf[js.Any])
       
@@ -3672,7 +3715,8 @@ object Schedule {
       __obj.asInstanceOf[TimeScale]
     }
     
-    extension [Self <: TimeScale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeScale] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -3724,7 +3768,8 @@ object Schedule {
       __obj.asInstanceOf[TimeZoneCollection]
     }
     
-    extension [Self <: TimeZoneCollection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeZoneCollection] (val x: Self) extends AnyVal {
       
       inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
@@ -3764,7 +3809,8 @@ object Schedule {
       __obj.asInstanceOf[TooltipSettings]
     }
     
-    extension [Self <: TooltipSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipSettings] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -3800,7 +3846,8 @@ object Schedule {
       __obj.asInstanceOf[WorkHours]
     }
     
-    extension [Self <: WorkHours](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkHours] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

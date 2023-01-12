@@ -63,7 +63,8 @@ object OsData {
     __obj.asInstanceOf[OsData]
   }
   
-  extension [Self <: OsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OsData] (val x: Self) extends AnyVal {
     
     inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
     

@@ -76,7 +76,8 @@ object ICollectionObserverSplice {
     __obj.asInstanceOf[ICollectionObserverSplice[T, K]]
   }
   
-  extension [Self <: ICollectionObserverSplice[?, ?], T, K](x: Self & (ICollectionObserverSplice[T, K])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICollectionObserverSplice[?, ?], T, K] (val x: Self & (ICollectionObserverSplice[T, K])) extends AnyVal {
     
     inline def setAddedCount(value: Double): Self = StObject.set(x, "addedCount", value.asInstanceOf[js.Any])
     

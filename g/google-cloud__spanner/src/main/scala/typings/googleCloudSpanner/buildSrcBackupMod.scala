@@ -404,7 +404,8 @@ object buildSrcBackupMod {
       __obj.asInstanceOf[CopyBackupOptions]
     }
     
-    extension [Self <: CopyBackupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyBackupOptions] (val x: Self) extends AnyVal {
       
       inline def setGaxOptions(value: CallOptions): Self = StObject.set(x, "gaxOptions", value.asInstanceOf[js.Any])
       
@@ -444,7 +445,8 @@ object buildSrcBackupMod {
       __obj.asInstanceOf[CreateBackupOptions]
     }
     
-    extension [Self <: CreateBackupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateBackupOptions] (val x: Self) extends AnyVal {
       
       inline def setDatabasePath(value: String): Self = StObject.set(x, "databasePath", value.asInstanceOf[js.Any])
       

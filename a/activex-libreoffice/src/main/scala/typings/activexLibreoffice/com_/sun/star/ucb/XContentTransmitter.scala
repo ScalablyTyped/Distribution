@@ -30,7 +30,8 @@ object XContentTransmitter {
     __obj.asInstanceOf[XContentTransmitter]
   }
   
-  extension [Self <: XContentTransmitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XContentTransmitter] (val x: Self) extends AnyVal {
     
     inline def setTransmit(value: (String, String, Double) => Unit): Self = StObject.set(x, "transmit", js.Any.fromFunction3(value))
   }

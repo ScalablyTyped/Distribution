@@ -29,10 +29,11 @@ object `9` {
     __obj.asInstanceOf[`9`[EventName]]
   }
   
-  extension [Self <: `9`[?], EventName /* <: Extract[
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `9`[?], EventName /* <: Extract[
     /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationEventMap */ transitionStart | transitionEnd | gestureStart | gestureEnd | gestureCancel, 
     String
-  ] */](x: Self & `9`[EventName]) {
+  ] */] (val x: Self & `9`[EventName]) extends AnyVal {
     
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

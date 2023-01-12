@@ -28,7 +28,8 @@ object IWebSocketControl {
     __obj.asInstanceOf[IWebSocketControl]
   }
   
-  extension [Self <: IWebSocketControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebSocketControl] (val x: Self) extends AnyVal {
     
     inline def setOutboundBufferSizeInBytes(value: Double): Self = StObject.set(x, "outboundBufferSizeInBytes", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[PageVisibilityProps]
     }
     
-    extension [Self <: PageVisibilityProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageVisibilityProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(
         value: ReactNode | (js.Function2[/* isVisible */ Boolean, /* visibilityState */ KnownVisibilityStates, ReactNode])

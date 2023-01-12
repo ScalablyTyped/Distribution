@@ -148,7 +148,8 @@ object mod {
       __obj.asInstanceOf[BEMClass]
     }
     
-    extension [Self <: BEMClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BEMClass] (val x: Self) extends AnyVal {
       
       inline def setCn(value: String): Self = StObject.set(x, "cn", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object InstructionOutput {
     __obj.asInstanceOf[InstructionOutput]
   }
   
-  extension [Self <: InstructionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstructionOutput] (val x: Self) extends AnyVal {
     
     inline def setCodec(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

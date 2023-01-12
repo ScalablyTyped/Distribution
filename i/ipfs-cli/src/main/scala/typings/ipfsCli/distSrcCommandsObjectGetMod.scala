@@ -52,7 +52,8 @@ object distSrcCommandsObjectGetMod extends Shortcut {
       __obj.asInstanceOf[Argv]
     }
     
-    extension [Self <: Argv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Argv] (val x: Self) extends AnyVal {
       
       inline def setCidBase(value: String): Self = StObject.set(x, "cidBase", value.asInstanceOf[js.Any])
       

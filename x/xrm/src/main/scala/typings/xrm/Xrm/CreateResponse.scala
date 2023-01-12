@@ -20,7 +20,8 @@ object CreateResponse {
     __obj.asInstanceOf[CreateResponse]
   }
   
-  extension [Self <: CreateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateResponse] (val x: Self) extends AnyVal {
     
     inline def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     

@@ -474,7 +474,8 @@ object PartialSideNavListItemPro {
     __obj.asInstanceOf[PartialSideNavListItemPro]
   }
   
-  extension [Self <: PartialSideNavListItemPro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSideNavListItemPro] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

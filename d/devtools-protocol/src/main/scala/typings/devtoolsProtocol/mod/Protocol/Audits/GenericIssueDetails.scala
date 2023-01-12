@@ -21,7 +21,8 @@ object GenericIssueDetails {
     __obj.asInstanceOf[GenericIssueDetails]
   }
   
-  extension [Self <: GenericIssueDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenericIssueDetails] (val x: Self) extends AnyVal {
     
     inline def setErrorType(value: GenericIssueErrorType): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Nature {
     __obj.asInstanceOf[Nature]
   }
   
-  extension [Self <: Nature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Nature] (val x: Self) extends AnyVal {
     
     inline def setDecreased_stat(value: String): Self = StObject.set(x, "decreased_stat", value.asInstanceOf[js.Any])
     

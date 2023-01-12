@@ -17,7 +17,8 @@ object SizeLiteral {
     __obj.asInstanceOf[SizeLiteral]
   }
   
-  extension [Self <: SizeLiteral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeLiteral] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

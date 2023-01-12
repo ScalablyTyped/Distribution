@@ -22,7 +22,8 @@ object ScriptStatistics {
     __obj.asInstanceOf[ScriptStatistics]
   }
   
-  extension [Self <: ScriptStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptStatistics] (val x: Self) extends AnyVal {
     
     inline def setEvaluationKind(value: String): Self = StObject.set(x, "evaluationKind", value.asInstanceOf[js.Any])
     

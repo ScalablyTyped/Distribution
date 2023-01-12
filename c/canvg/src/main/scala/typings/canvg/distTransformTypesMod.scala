@@ -32,7 +32,8 @@ object distTransformTypesMod {
       __obj.asInstanceOf[ITransform]
     }
     
-    extension [Self <: ITransform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITransform] (val x: Self) extends AnyVal {
       
       inline def setApply(value: RenderingContext2D => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       

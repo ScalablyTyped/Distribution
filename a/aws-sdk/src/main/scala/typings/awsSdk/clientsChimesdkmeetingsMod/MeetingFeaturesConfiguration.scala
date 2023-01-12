@@ -18,7 +18,8 @@ object MeetingFeaturesConfiguration {
     __obj.asInstanceOf[MeetingFeaturesConfiguration]
   }
   
-  extension [Self <: MeetingFeaturesConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeetingFeaturesConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAudio(value: AudioFeatures): Self = StObject.set(x, "Audio", value.asInstanceOf[js.Any])
     

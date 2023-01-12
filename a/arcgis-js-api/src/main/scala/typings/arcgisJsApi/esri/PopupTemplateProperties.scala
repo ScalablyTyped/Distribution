@@ -93,7 +93,8 @@ object PopupTemplateProperties {
     __obj.asInstanceOf[PopupTemplateProperties]
   }
   
-  extension [Self <: PopupTemplateProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupTemplateProperties] (val x: Self) extends AnyVal {
     
     inline def setActions(value: CollectionProperties[ActionButtonPropertiestyp | ActionTogglePropertiestyp]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

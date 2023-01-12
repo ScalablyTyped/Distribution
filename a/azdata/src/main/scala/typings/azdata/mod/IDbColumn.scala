@@ -81,7 +81,8 @@ object IDbColumn {
     __obj.asInstanceOf[IDbColumn]
   }
   
-  extension [Self <: IDbColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDbColumn] (val x: Self) extends AnyVal {
     
     inline def setAllowDBNull(value: Boolean): Self = StObject.set(x, "allowDBNull", value.asInstanceOf[js.Any])
     

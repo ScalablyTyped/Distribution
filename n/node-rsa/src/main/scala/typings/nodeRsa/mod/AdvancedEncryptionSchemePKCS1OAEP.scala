@@ -28,7 +28,8 @@ object AdvancedEncryptionSchemePKCS1OAEP {
     __obj.asInstanceOf[AdvancedEncryptionSchemePKCS1OAEP]
   }
   
-  extension [Self <: AdvancedEncryptionSchemePKCS1OAEP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvancedEncryptionSchemePKCS1OAEP] (val x: Self) extends AnyVal {
     
     inline def setHash(value: HashingAlgorithm): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

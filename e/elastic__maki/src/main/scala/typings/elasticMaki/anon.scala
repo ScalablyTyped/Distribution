@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def set1(value: SpriteSheet): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[All]
     }
     
-    extension [Self <: All](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: All] (val x: Self) extends AnyVal {
       
       inline def setAll(value: js.Array[IconName]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       

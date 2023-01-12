@@ -18,7 +18,8 @@ object SourcePriority {
     __obj.asInstanceOf[SourcePriority]
   }
   
-  extension [Self <: SourcePriority](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourcePriority] (val x: Self) extends AnyVal {
     
     inline def setPrimarySource(value: string): Self = StObject.set(x, "PrimarySource", value.asInstanceOf[js.Any])
     

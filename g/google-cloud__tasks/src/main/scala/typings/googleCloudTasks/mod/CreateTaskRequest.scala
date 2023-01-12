@@ -20,7 +20,8 @@ object CreateTaskRequest {
     __obj.asInstanceOf[CreateTaskRequest]
   }
   
-  extension [Self <: CreateTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

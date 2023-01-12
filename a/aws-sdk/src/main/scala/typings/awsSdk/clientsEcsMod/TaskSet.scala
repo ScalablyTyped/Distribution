@@ -133,7 +133,8 @@ object TaskSet {
     __obj.asInstanceOf[TaskSet]
   }
   
-  extension [Self <: TaskSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskSet] (val x: Self) extends AnyVal {
     
     inline def setCapacityProviderStrategy(value: CapacityProviderStrategy): Self = StObject.set(x, "capacityProviderStrategy", value.asInstanceOf[js.Any])
     

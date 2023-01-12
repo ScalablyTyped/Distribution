@@ -33,7 +33,8 @@ object ExportToS3TaskSpecification {
     __obj.asInstanceOf[ExportToS3TaskSpecification]
   }
   
-  extension [Self <: ExportToS3TaskSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportToS3TaskSpecification] (val x: Self) extends AnyVal {
     
     inline def setContainerFormat(value: ContainerFormat): Self = StObject.set(x, "ContainerFormat", value.asInstanceOf[js.Any])
     

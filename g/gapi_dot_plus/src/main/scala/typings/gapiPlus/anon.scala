@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[CoverInfo]
     }
     
-    extension [Self <: CoverInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoverInfo] (val x: Self) extends AnyVal {
       
       inline def setCoverInfo(value: LeftImageOffset): Self = StObject.set(x, "coverInfo", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object anon {
       __obj.asInstanceOf[Department]
     }
     
-    extension [Self <: Department](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Department] (val x: Self) extends AnyVal {
       
       inline def setDepartment(value: String): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
       
@@ -119,7 +121,8 @@ object anon {
       __obj.asInstanceOf[FamilyName]
     }
     
-    extension [Self <: FamilyName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FamilyName] (val x: Self) extends AnyVal {
       
       inline def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
       
@@ -150,7 +153,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -176,7 +180,8 @@ object anon {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -199,7 +204,8 @@ object anon {
       __obj.asInstanceOf[LeftImageOffset]
     }
     
-    extension [Self <: LeftImageOffset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeftImageOffset] (val x: Self) extends AnyVal {
       
       inline def setLeftImageOffset(value: Double): Self = StObject.set(x, "leftImageOffset", value.asInstanceOf[js.Any])
       
@@ -220,7 +226,8 @@ object anon {
       __obj.asInstanceOf[Max]
     }
     
-    extension [Self <: Max](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -241,7 +248,8 @@ object anon {
       __obj.asInstanceOf[Primary]
     }
     
-    extension [Self <: Primary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Primary] (val x: Self) extends AnyVal {
       
       inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
       
@@ -263,7 +271,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -282,7 +291,8 @@ object anon {
       __obj.asInstanceOf[Url]
     }
     
-    extension [Self <: Url](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

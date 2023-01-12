@@ -22,7 +22,8 @@ object CPUTime {
     __obj.asInstanceOf[CPUTime]
   }
   
-  extension [Self <: CPUTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CPUTime] (val x: Self) extends AnyVal {
     
     inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     

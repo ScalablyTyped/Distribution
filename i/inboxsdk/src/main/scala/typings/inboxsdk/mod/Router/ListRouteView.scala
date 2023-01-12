@@ -33,7 +33,8 @@ object ListRouteView {
     __obj.asInstanceOf[ListRouteView]
   }
   
-  extension [Self <: ListRouteView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRouteView] (val x: Self) extends AnyVal {
     
     inline def setAddCollapsibleSection(value: SectionDescriptor => CollapsibleSectionView): Self = StObject.set(x, "addCollapsibleSection", js.Any.fromFunction1(value))
     

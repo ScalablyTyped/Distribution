@@ -62,7 +62,8 @@ object experiments {
       __obj.asInstanceOf[ExperimentAPI]
     }
     
-    extension [Self <: ExperimentAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExperimentAPI] (val x: Self) extends AnyVal {
       
       inline def setChild(value: ExperimentAPIChild): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object experiments {
       __obj.asInstanceOf[ExperimentAPIChild]
     }
     
-    extension [Self <: ExperimentAPIChild](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExperimentAPIChild] (val x: Self) extends AnyVal {
       
       inline def setPaths(value: APIPaths): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object experiments {
       __obj.asInstanceOf[ExperimentAPIParent]
     }
     
-    extension [Self <: ExperimentAPIParent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExperimentAPIParent] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: APIEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       

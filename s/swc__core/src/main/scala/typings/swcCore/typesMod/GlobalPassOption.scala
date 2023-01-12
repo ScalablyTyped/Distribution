@@ -28,7 +28,8 @@ object GlobalPassOption {
     __obj.asInstanceOf[GlobalPassOption]
   }
   
-  extension [Self <: GlobalPassOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalPassOption] (val x: Self) extends AnyVal {
     
     inline def setEnvs(value: js.Array[String]): Self = StObject.set(x, "envs", value.asInstanceOf[js.Any])
     

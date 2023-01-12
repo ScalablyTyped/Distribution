@@ -17,7 +17,8 @@ object PaddingHorizontalPaddingVertical {
     __obj.asInstanceOf[PaddingHorizontalPaddingVertical]
   }
   
-  extension [Self <: PaddingHorizontalPaddingVertical](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaddingHorizontalPaddingVertical] (val x: Self) extends AnyVal {
     
     inline def setPaddingHorizontal(value: Double): Self = StObject.set(x, "paddingHorizontal", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object CreditCardType {
     __obj.asInstanceOf[CreditCardType]
   }
   
-  extension [Self <: CreditCardType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreditCardType] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

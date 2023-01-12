@@ -18,7 +18,8 @@ object StopSessionResponse {
     __obj.asInstanceOf[StopSessionResponse]
   }
   
-  extension [Self <: StopSessionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopSessionResponse] (val x: Self) extends AnyVal {
     
     inline def setId(value: NameString): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

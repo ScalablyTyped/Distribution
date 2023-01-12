@@ -23,7 +23,8 @@ object ListMonitoredResourcesResponse {
     __obj.asInstanceOf[ListMonitoredResourcesResponse]
   }
   
-  extension [Self <: ListMonitoredResourcesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMonitoredResourcesResponse] (val x: Self) extends AnyVal {
     
     inline def setMonitoredResourceIdentifiers(value: MonitoredResourceIdentifiers): Self = StObject.set(x, "MonitoredResourceIdentifiers", value.asInstanceOf[js.Any])
     

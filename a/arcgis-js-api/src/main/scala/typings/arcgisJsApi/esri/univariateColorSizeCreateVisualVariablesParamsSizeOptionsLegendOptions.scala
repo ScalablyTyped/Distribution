@@ -20,7 +20,8 @@ object univariateColorSizeCreateVisualVariablesParamsSizeOptionsLegendOptions {
     __obj.asInstanceOf[univariateColorSizeCreateVisualVariablesParamsSizeOptionsLegendOptions]
   }
   
-  extension [Self <: univariateColorSizeCreateVisualVariablesParamsSizeOptionsLegendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: univariateColorSizeCreateVisualVariablesParamsSizeOptionsLegendOptions] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }

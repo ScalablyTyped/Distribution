@@ -18,7 +18,8 @@ object ReturnType {
     __obj.asInstanceOf[ReturnType]
   }
   
-  extension [Self <: ReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnType] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[ContinueToLocationRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

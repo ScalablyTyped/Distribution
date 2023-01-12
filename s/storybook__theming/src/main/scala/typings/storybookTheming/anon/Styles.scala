@@ -16,7 +16,8 @@ object Styles {
     __obj.asInstanceOf[Styles]
   }
   
-  extension [Self <: Styles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Styles] (val x: Self) extends AnyVal {
     
     inline def setStyles(value: Interpolation[typings.storybookTheming.mod.Theme]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object DateTimeFieldOptions {
     __obj.asInstanceOf[DateTimeFieldOptions]
   }
   
-  extension [Self <: DateTimeFieldOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimeFieldOptions] (val x: Self) extends AnyVal {
     
     inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     

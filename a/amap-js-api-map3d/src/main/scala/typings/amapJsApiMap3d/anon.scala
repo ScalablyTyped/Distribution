@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Geometry3DreadonlyvertexI]
     }
     
-    extension [Self <: Geometry3DreadonlyvertexI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Geometry3DreadonlyvertexI] (val x: Self) extends AnyVal {
       
       inline def setDirections(value: js.Array[Double]): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -138,7 +140,8 @@ object anon {
       __obj.asInstanceOf[MeshreadonlyvertexNormals]
     }
     
-    extension [Self <: MeshreadonlyvertexNormals](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeshreadonlyvertexNormals] (val x: Self) extends AnyVal {
       
       inline def setFaces(value: js.Array[Double]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
       
@@ -190,7 +193,8 @@ object anon {
       __obj.asInstanceOf[unitmeterundefinedpathArr]
     }
     
-    extension [Self <: unitmeterundefinedpathArr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: unitmeterundefinedpathArr] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String | js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -240,7 +244,8 @@ object anon {
       __obj.asInstanceOf[unitpxpathArraynumbernumb]
     }
     
-    extension [Self <: unitpxpathArraynumbernumb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: unitpxpathArraynumbernumb] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String | js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

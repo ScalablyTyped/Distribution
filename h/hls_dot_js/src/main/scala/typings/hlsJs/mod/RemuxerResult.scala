@@ -25,7 +25,8 @@ object RemuxerResult {
     __obj.asInstanceOf[RemuxerResult]
   }
   
-  extension [Self <: RemuxerResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemuxerResult] (val x: Self) extends AnyVal {
     
     inline def setAudio(value: RemuxedTrack): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     

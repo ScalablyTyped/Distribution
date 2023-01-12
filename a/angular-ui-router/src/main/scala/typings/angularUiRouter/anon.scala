@@ -68,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Component]
     }
     
-    extension [Self <: Component](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object anon {
       __obj.asInstanceOf[Resolve]
     }
     
-    extension [Self <: Resolve](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resolve] (val x: Self) extends AnyVal {
       
       inline def setResolve(value: () => Any): Self = StObject.set(x, "resolve", js.Any.fromFunction0(value))
     }

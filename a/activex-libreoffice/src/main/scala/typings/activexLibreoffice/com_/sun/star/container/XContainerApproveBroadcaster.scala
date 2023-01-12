@@ -23,7 +23,8 @@ object XContainerApproveBroadcaster {
     __obj.asInstanceOf[XContainerApproveBroadcaster]
   }
   
-  extension [Self <: XContainerApproveBroadcaster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XContainerApproveBroadcaster] (val x: Self) extends AnyVal {
     
     inline def setAddContainerApproveListener(value: XContainerApproveListener => Unit): Self = StObject.set(x, "addContainerApproveListener", js.Any.fromFunction1(value))
     

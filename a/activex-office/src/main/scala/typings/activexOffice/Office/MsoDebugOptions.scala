@@ -46,7 +46,8 @@ object MsoDebugOptions {
     __obj.asInstanceOf[MsoDebugOptions]
   }
   
-  extension [Self <: MsoDebugOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MsoDebugOptions] (val x: Self) extends AnyVal {
     
     inline def setAddIgnoredAssertTag(value: String => Unit): Self = StObject.set(x, "AddIgnoredAssertTag", js.Any.fromFunction1(value))
     

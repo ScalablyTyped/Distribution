@@ -214,7 +214,8 @@ object libMapPolygonMod {
       __obj.asInstanceOf[MapPolygonProps]
     }
     
-    extension [Self <: MapPolygonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapPolygonProps] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: js.Array[LatLng]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -824,7 +825,8 @@ object libMapPolygonMod {
       __obj.asInstanceOf[NativeProps]
     }
     
-    extension [Self <: NativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       

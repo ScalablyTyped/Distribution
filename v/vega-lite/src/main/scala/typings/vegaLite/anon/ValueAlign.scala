@@ -15,7 +15,8 @@ object ValueAlign {
     __obj.asInstanceOf[ValueAlign]
   }
   
-  extension [Self <: ValueAlign](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueAlign] (val x: Self) extends AnyVal {
     
     inline def setValue(value: typings.vegaTypings.typesSpecEncodeMod.Align): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

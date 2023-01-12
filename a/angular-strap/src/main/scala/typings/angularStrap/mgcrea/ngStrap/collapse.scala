@@ -29,7 +29,8 @@ object collapse {
       __obj.asInstanceOf[ICollapseOptions]
     }
     
-    extension [Self <: ICollapseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICollapseOptions] (val x: Self) extends AnyVal {
       
       inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object collapse {
       __obj.asInstanceOf[ICollapseProvider]
     }
     
-    extension [Self <: ICollapseProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICollapseProvider] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: ICollapseOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }

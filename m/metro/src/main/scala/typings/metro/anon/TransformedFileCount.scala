@@ -26,7 +26,8 @@ object TransformedFileCount {
     __obj.asInstanceOf[TransformedFileCount]
   }
   
-  extension [Self <: TransformedFileCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformedFileCount] (val x: Self) extends AnyVal {
     
     inline def setBuildID(value: String): Self = StObject.set(x, "buildID", value.asInstanceOf[js.Any])
     

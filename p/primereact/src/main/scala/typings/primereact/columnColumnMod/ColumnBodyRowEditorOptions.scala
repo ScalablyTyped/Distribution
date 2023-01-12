@@ -36,7 +36,8 @@ object ColumnBodyRowEditorOptions {
     __obj.asInstanceOf[ColumnBodyRowEditorOptions]
   }
   
-  extension [Self <: ColumnBodyRowEditorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnBodyRowEditorOptions] (val x: Self) extends AnyVal {
     
     inline def setCancelClassName(value: String): Self = StObject.set(x, "cancelClassName", value.asInstanceOf[js.Any])
     

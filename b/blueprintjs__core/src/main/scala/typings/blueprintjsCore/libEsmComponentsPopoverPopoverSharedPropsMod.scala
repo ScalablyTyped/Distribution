@@ -318,7 +318,8 @@ object libEsmComponentsPopoverPopoverSharedPropsMod {
       __obj.asInstanceOf[IPopoverSharedProps]
     }
     
-    extension [Self <: IPopoverSharedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPopoverSharedProps] (val x: Self) extends AnyVal {
       
       inline def setBoundary(value: Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
       

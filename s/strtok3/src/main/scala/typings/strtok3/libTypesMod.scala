@@ -37,7 +37,8 @@ object libTypesMod {
       __obj.asInstanceOf[IFileInfo]
     }
     
-    extension [Self <: IFileInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFileInfo] (val x: Self) extends AnyVal {
       
       inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object libTypesMod {
       __obj.asInstanceOf[IReadChunkOptions]
     }
     
-    extension [Self <: IReadChunkOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IReadChunkOptions] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       

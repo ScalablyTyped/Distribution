@@ -43,7 +43,8 @@ object UpdateDistributionRequest {
     __obj.asInstanceOf[UpdateDistributionRequest]
   }
   
-  extension [Self <: UpdateDistributionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDistributionRequest] (val x: Self) extends AnyVal {
     
     inline def setCacheBehaviorSettings(value: CacheSettings): Self = StObject.set(x, "cacheBehaviorSettings", value.asInstanceOf[js.Any])
     

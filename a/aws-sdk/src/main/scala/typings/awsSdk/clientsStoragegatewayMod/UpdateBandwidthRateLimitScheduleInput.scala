@@ -20,7 +20,8 @@ object UpdateBandwidthRateLimitScheduleInput {
     __obj.asInstanceOf[UpdateBandwidthRateLimitScheduleInput]
   }
   
-  extension [Self <: UpdateBandwidthRateLimitScheduleInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBandwidthRateLimitScheduleInput] (val x: Self) extends AnyVal {
     
     inline def setBandwidthRateLimitIntervals(value: BandwidthRateLimitIntervals): Self = StObject.set(x, "BandwidthRateLimitIntervals", value.asInstanceOf[js.Any])
     

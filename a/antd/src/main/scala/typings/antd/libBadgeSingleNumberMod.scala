@@ -28,7 +28,8 @@ object libBadgeSingleNumberMod {
       __obj.asInstanceOf[SingleNumberProps]
     }
     
-    extension [Self <: SingleNumberProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingleNumberProps] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object libBadgeSingleNumberMod {
       __obj.asInstanceOf[UnitNumberProps]
     }
     
-    extension [Self <: UnitNumberProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnitNumberProps] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       

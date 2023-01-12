@@ -31,7 +31,8 @@ object PickImplserverErrorPartia {
     __obj.asInstanceOf[PickImplserverErrorPartia]
   }
   
-  extension [Self <: PickImplserverErrorPartia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplserverErrorPartia] (val x: Self) extends AnyVal {
     
     inline def setLogging(value: String): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     

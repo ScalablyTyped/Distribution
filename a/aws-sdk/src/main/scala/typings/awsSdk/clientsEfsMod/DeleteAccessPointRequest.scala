@@ -18,7 +18,8 @@ object DeleteAccessPointRequest {
     __obj.asInstanceOf[DeleteAccessPointRequest]
   }
   
-  extension [Self <: DeleteAccessPointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAccessPointRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessPointId(value: AccessPointId): Self = StObject.set(x, "AccessPointId", value.asInstanceOf[js.Any])
   }

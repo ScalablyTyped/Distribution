@@ -16,7 +16,8 @@ object ProcessProps {
     __obj.asInstanceOf[ProcessProps]
   }
   
-  extension [Self <: ProcessProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessProps] (val x: Self) extends AnyVal {
     
     inline def setProcessProps(value: DataNode => Any): Self = StObject.set(x, "processProps", js.Any.fromFunction1(value))
   }

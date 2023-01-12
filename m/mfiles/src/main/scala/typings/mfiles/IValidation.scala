@@ -19,7 +19,8 @@ object IValidation {
     __obj.asInstanceOf[IValidation]
   }
   
-  extension [Self <: IValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IValidation] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IValidation): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

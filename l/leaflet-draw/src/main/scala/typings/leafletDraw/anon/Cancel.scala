@@ -20,7 +20,8 @@ object Cancel {
     __obj.asInstanceOf[Cancel]
   }
   
-  extension [Self <: Cancel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Action): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

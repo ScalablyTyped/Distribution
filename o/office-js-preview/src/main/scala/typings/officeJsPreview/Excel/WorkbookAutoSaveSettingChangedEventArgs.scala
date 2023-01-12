@@ -29,7 +29,8 @@ object WorkbookAutoSaveSettingChangedEventArgs {
     __obj.asInstanceOf[WorkbookAutoSaveSettingChangedEventArgs]
   }
   
-  extension [Self <: WorkbookAutoSaveSettingChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookAutoSaveSettingChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setType(value: WorkbookAutoSaveSettingChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

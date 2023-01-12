@@ -22,7 +22,8 @@ object TextRun {
     __obj.asInstanceOf[TextRun]
   }
   
-  extension [Self <: TextRun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextRun] (val x: Self) extends AnyVal {
     
     inline def setTextStyle(value: TextRunStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     

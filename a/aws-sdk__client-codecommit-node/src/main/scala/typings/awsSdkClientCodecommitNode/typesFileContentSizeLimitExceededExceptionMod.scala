@@ -21,7 +21,8 @@ object typesFileContentSizeLimitExceededExceptionMod {
       __obj.asInstanceOf[FileContentSizeLimitExceededException]
     }
     
-    extension [Self <: FileContentSizeLimitExceededException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileContentSizeLimitExceededException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FileContentSizeLimitExceededException

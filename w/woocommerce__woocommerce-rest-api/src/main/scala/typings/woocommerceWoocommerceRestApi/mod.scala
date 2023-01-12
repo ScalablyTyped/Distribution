@@ -191,7 +191,8 @@ object mod {
       __obj.asInstanceOf[WooCommerceRestApiOptions]
     }
     
-    extension [Self <: WooCommerceRestApiOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WooCommerceRestApiOptions] (val x: Self) extends AnyVal {
       
       inline def setAxiosConfig(value: Any): Self = StObject.set(x, "axiosConfig", value.asInstanceOf[js.Any])
       

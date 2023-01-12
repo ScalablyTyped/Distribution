@@ -15,7 +15,8 @@ object IResourceLoaderFactory {
     __obj.asInstanceOf[IResourceLoaderFactory]
   }
   
-  extension [Self <: IResourceLoaderFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IResourceLoaderFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateResourceLoaderByName(value: String => ResourceLoader): Self = StObject.set(x, "createResourceLoaderByName", js.Any.fromFunction1(value))
   }

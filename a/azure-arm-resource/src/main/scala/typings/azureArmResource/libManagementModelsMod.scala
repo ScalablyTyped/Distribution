@@ -35,7 +35,8 @@ object libManagementModelsMod {
       __obj.asInstanceOf[ErrorDetails]
     }
     
-    extension [Self <: ErrorDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorDetails] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object libManagementModelsMod {
       __obj.asInstanceOf[ErrorResponse]
     }
     
-    extension [Self <: ErrorResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorResponse] (val x: Self) extends AnyVal {
       
       inline def setError(value: ErrorDetails): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object libManagementModelsMod {
       __obj.asInstanceOf[ManagementGroup]
     }
     
-    extension [Self <: ManagementGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManagementGroup] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: ManagementGroupDetailsProperties): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object libManagementModelsMod {
       __obj.asInstanceOf[ManagementGroupChildInfo]
     }
     
-    extension [Self <: ManagementGroupChildInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManagementGroupChildInfo] (val x: Self) extends AnyVal {
       
       inline def setChildId(value: String): Self = StObject.set(x, "childId", value.asInstanceOf[js.Any])
       
@@ -175,7 +179,8 @@ object libManagementModelsMod {
       __obj.asInstanceOf[ManagementGroupDetailsProperties]
     }
     
-    extension [Self <: ManagementGroupDetailsProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManagementGroupDetailsProperties] (val x: Self) extends AnyVal {
       
       inline def setManagementGroupType(value: String): Self = StObject.set(x, "managementGroupType", value.asInstanceOf[js.Any])
       
@@ -218,7 +223,8 @@ object libManagementModelsMod {
       __obj.asInstanceOf[ManagementGroupInfo]
     }
     
-    extension [Self <: ManagementGroupInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManagementGroupInfo] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -269,7 +275,8 @@ object libManagementModelsMod {
       __obj.asInstanceOf[ManagementGroupRecursiveChildInfo]
     }
     
-    extension [Self <: ManagementGroupRecursiveChildInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManagementGroupRecursiveChildInfo] (val x: Self) extends AnyVal {
       
       inline def setChildId(value: String): Self = StObject.set(x, "childId", value.asInstanceOf[js.Any])
       
@@ -318,7 +325,8 @@ object libManagementModelsMod {
       __obj.asInstanceOf[ManagementGroupWithChildren]
     }
     
-    extension [Self <: ManagementGroupWithChildren](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManagementGroupWithChildren] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ManagementGroupChildInfo]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -375,7 +383,8 @@ object libManagementModelsMod {
       __obj.asInstanceOf[ManagementGroupWithHierarchy]
     }
     
-    extension [Self <: ManagementGroupWithHierarchy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManagementGroupWithHierarchy] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ManagementGroupRecursiveChildInfo]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -422,7 +431,8 @@ object libManagementModelsMod {
       __obj.asInstanceOf[Operation]
     }
     
-    extension [Self <: Operation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: OperationDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
@@ -449,7 +459,8 @@ object libManagementModelsMod {
       __obj.asInstanceOf[OperationDisplay]
     }
     
-    extension [Self <: OperationDisplay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationDisplay] (val x: Self) extends AnyVal {
       
       inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       
@@ -486,7 +497,8 @@ object libManagementModelsMod {
       __obj.asInstanceOf[ParentGroupInfo]
     }
     
-    extension [Self <: ParentGroupInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParentGroupInfo] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       

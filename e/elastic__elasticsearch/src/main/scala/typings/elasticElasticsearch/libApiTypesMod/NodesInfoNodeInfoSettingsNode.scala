@@ -20,7 +20,8 @@ object NodesInfoNodeInfoSettingsNode {
     __obj.asInstanceOf[NodesInfoNodeInfoSettingsNode]
   }
   
-  extension [Self <: NodesInfoNodeInfoSettingsNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoSettingsNode] (val x: Self) extends AnyVal {
     
     inline def setAttr(value: Record[String, Any]): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     

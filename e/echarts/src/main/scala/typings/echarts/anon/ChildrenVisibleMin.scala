@@ -407,7 +407,8 @@ object ChildrenVisibleMin {
     __obj.asInstanceOf[ChildrenVisibleMin]
   }
   
-  extension [Self <: ChildrenVisibleMin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildrenVisibleMin] (val x: Self) extends AnyVal {
     
     inline def setChildrenVisibleMin(value: Double): Self = StObject.set(x, "childrenVisibleMin", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object DevDepOptions {
     __obj.asInstanceOf[DevDepOptions]
   }
   
-  extension [Self <: DevDepOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevDepOptions] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInvalidations(value: js.Array[Range]): Self = StObject.set(x, "additionalInvalidations", value.asInstanceOf[js.Any])
     

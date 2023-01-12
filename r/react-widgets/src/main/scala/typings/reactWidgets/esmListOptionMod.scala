@@ -728,7 +728,8 @@ object esmListOptionMod {
       __obj.asInstanceOf[ListOptionProps[TDataItem]]
     }
     
-    extension [Self <: ListOptionProps[?], TDataItem](x: Self & ListOptionProps[TDataItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListOptionProps[?], TDataItem] (val x: Self & ListOptionProps[TDataItem]) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

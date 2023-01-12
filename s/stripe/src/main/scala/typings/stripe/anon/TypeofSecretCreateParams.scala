@@ -15,7 +15,8 @@ object TypeofSecretCreateParams {
     __obj.asInstanceOf[TypeofSecretCreateParams]
   }
   
-  extension [Self <: TypeofSecretCreateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSecretCreateParams] (val x: Self) extends AnyVal {
     
     inline def setScope(value: Any): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
   }

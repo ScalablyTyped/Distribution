@@ -21,7 +21,8 @@ object IncludedGitCommit {
     __obj.asInstanceOf[IncludedGitCommit]
   }
   
-  extension [Self <: IncludedGitCommit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludedGitCommit] (val x: Self) extends AnyVal {
     
     inline def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     

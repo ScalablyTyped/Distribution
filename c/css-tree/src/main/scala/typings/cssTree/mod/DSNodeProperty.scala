@@ -22,7 +22,8 @@ object DSNodeProperty {
     __obj.asInstanceOf[DSNodeProperty]
   }
   
-  extension [Self <: DSNodeProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DSNodeProperty] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

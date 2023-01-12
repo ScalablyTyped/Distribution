@@ -40,7 +40,8 @@ object EnvelopeTransactionStatus {
     __obj.asInstanceOf[EnvelopeTransactionStatus]
   }
   
-  extension [Self <: EnvelopeTransactionStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeTransactionStatus] (val x: Self) extends AnyVal {
     
     inline def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     

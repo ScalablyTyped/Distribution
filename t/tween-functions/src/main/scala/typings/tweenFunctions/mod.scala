@@ -502,7 +502,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TweenFunctions]
     }
     
-    extension [Self <: TweenFunctions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TweenFunctions] (val x: Self) extends AnyVal {
       
       inline def setEaseInBack(
         value: (/* time */ Double, /* start */ Double, /* end */ Double, /* duration */ Double, /* overshoot */ js.UndefOr[Double]) => Double

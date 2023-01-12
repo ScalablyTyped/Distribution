@@ -26,7 +26,8 @@ object ExchangeTradeQuoteRequest {
     __obj.asInstanceOf[ExchangeTradeQuoteRequest]
   }
   
-  extension [Self <: ExchangeTradeQuoteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExchangeTradeQuoteRequest] (val x: Self) extends AnyVal {
     
     inline def setDex(value: enable | exclusively): Self = StObject.set(x, "dex", value.asInstanceOf[js.Any])
     

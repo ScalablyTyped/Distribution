@@ -170,7 +170,8 @@ object AggregationsAggregationContainer {
     __obj.asInstanceOf[AggregationsAggregationContainer]
   }
   
-  extension [Self <: AggregationsAggregationContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsAggregationContainer] (val x: Self) extends AnyVal {
     
     inline def setAdjacency_matrix(value: AggregationsAdjacencyMatrixAggregation): Self = StObject.set(x, "adjacency_matrix", value.asInstanceOf[js.Any])
     

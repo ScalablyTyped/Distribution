@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[PartialCacheNameDetails]
     }
     
-    extension [Self <: PartialCacheNameDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCacheNameDetails] (val x: Self) extends AnyVal {
       
       inline def setGoogleAnalytics(value: String): Self = StObject.set(x, "googleAnalytics", value.asInstanceOf[js.Any])
       

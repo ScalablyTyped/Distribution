@@ -28,7 +28,8 @@ object TapEvent {
     __obj.asInstanceOf[TapEvent]
   }
   
-  extension [Self <: TapEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TapEvent] (val x: Self) extends AnyVal {
     
     inline def setGetTapPosition(value: () => vec2): Self = StObject.set(x, "getTapPosition", js.Any.fromFunction0(value))
   }

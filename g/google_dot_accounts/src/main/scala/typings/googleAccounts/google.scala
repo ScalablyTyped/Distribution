@@ -67,7 +67,8 @@ object google {
           __obj.asInstanceOf[Credential]
         }
         
-        extension [Self <: Credential](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Credential] (val x: Self) extends AnyVal {
           
           inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           
@@ -98,7 +99,8 @@ object google {
           __obj.asInstanceOf[CredentialResponse]
         }
         
-        extension [Self <: CredentialResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: CredentialResponse] (val x: Self) extends AnyVal {
           
           inline def setCredential(value: String): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
           
@@ -171,7 +173,8 @@ object google {
           __obj.asInstanceOf[GsiButtonConfiguration]
         }
         
-        extension [Self <: GsiButtonConfiguration](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GsiButtonConfiguration] (val x: Self) extends AnyVal {
           
           inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
           
@@ -303,7 +306,8 @@ object google {
           __obj.asInstanceOf[IdConfiguration]
         }
         
-        extension [Self <: IdConfiguration](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IdConfiguration] (val x: Self) extends AnyVal {
           
           inline def setAllowed_parent_origin(value: String | js.Array[String]): Self = StObject.set(x, "allowed_parent_origin", value.asInstanceOf[js.Any])
           
@@ -429,7 +433,8 @@ object google {
           __obj.asInstanceOf[PromptMomentNotification]
         }
         
-        extension [Self <: PromptMomentNotification](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: PromptMomentNotification] (val x: Self) extends AnyVal {
           
           inline def setGetDismissedReason(value: () => credential_returned | cancel_called | flow_restarted): Self = StObject.set(x, "getDismissedReason", js.Any.fromFunction0(value))
           
@@ -475,7 +480,8 @@ object google {
           __obj.asInstanceOf[RevocationResponse]
         }
         
-        extension [Self <: RevocationResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: RevocationResponse] (val x: Self) extends AnyVal {
           
           inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
           
@@ -502,7 +508,8 @@ object google {
           __obj.asInstanceOf[CodeClient]
         }
         
-        extension [Self <: CodeClient](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: CodeClient] (val x: Self) extends AnyVal {
           
           inline def setRequestCode(value: () => Unit): Self = StObject.set(x, "requestCode", js.Any.fromFunction0(value))
         }
@@ -591,7 +598,8 @@ object google {
           __obj.asInstanceOf[CodeClientConfig]
         }
         
-        extension [Self <: CodeClientConfig](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: CodeClientConfig] (val x: Self) extends AnyVal {
           
           inline def setCallback(value: /* response */ Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
           
@@ -669,7 +677,8 @@ object google {
           __obj.asInstanceOf[OverridableTokenClientConfig]
         }
         
-        extension [Self <: OverridableTokenClientConfig](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: OverridableTokenClientConfig] (val x: Self) extends AnyVal {
           
           inline def setEnable_serial_consent(value: Boolean): Self = StObject.set(x, "enable_serial_consent", value.asInstanceOf[js.Any])
           
@@ -777,7 +786,8 @@ object google {
           __obj.asInstanceOf[TokenClientConfig]
         }
         
-        extension [Self <: TokenClientConfig](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: TokenClientConfig] (val x: Self) extends AnyVal {
           
           inline def setCallback(value: TokenResponse => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
           
@@ -889,7 +899,8 @@ object google {
           __obj.asInstanceOf[TokenResponse]
         }
         
-        extension [Self <: TokenResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: TokenResponse] (val x: Self) extends AnyVal {
           
           inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
           

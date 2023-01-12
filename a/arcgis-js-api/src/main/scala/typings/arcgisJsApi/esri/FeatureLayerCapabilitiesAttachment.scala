@@ -70,7 +70,8 @@ object FeatureLayerCapabilitiesAttachment {
     __obj.asInstanceOf[FeatureLayerCapabilitiesAttachment]
   }
   
-  extension [Self <: FeatureLayerCapabilitiesAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureLayerCapabilitiesAttachment] (val x: Self) extends AnyVal {
     
     inline def setSupportsCacheHint(value: Boolean): Self = StObject.set(x, "supportsCacheHint", value.asInstanceOf[js.Any])
     

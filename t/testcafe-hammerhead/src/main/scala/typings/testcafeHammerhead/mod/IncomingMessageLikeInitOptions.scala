@@ -27,7 +27,8 @@ object IncomingMessageLikeInitOptions {
     __obj.asInstanceOf[IncomingMessageLikeInitOptions]
   }
   
-  extension [Self <: IncomingMessageLikeInitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncomingMessageLikeInitOptions] (val x: Self) extends AnyVal {
     
     inline def setBody(value: js.Object | String | Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object WriteRecordsResponse {
     __obj.asInstanceOf[WriteRecordsResponse]
   }
   
-  extension [Self <: WriteRecordsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteRecordsResponse] (val x: Self) extends AnyVal {
     
     inline def setRecordsIngested(value: RecordsIngested): Self = StObject.set(x, "RecordsIngested", value.asInstanceOf[js.Any])
     

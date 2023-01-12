@@ -19,7 +19,8 @@ object IntegerGauge {
     __obj.asInstanceOf[IntegerGauge]
   }
   
-  extension [Self <: IntegerGauge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegerGauge] (val x: Self) extends AnyVal {
     
     inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     

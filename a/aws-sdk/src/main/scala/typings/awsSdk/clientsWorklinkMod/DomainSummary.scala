@@ -33,7 +33,8 @@ object DomainSummary {
     __obj.asInstanceOf[DomainSummary]
   }
   
-  extension [Self <: DomainSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainSummary] (val x: Self) extends AnyVal {
     
     inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     

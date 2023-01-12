@@ -38,7 +38,8 @@ object ReadonlyProps {
     __obj.asInstanceOf[ReadonlyProps]
   }
   
-  extension [Self <: ReadonlyProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyProps] (val x: Self) extends AnyVal {
     
     inline def setDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
     

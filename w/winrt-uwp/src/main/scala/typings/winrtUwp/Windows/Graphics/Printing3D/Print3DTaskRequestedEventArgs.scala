@@ -17,7 +17,8 @@ object Print3DTaskRequestedEventArgs {
     __obj.asInstanceOf[Print3DTaskRequestedEventArgs]
   }
   
-  extension [Self <: Print3DTaskRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Print3DTaskRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: Print3DTaskRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }

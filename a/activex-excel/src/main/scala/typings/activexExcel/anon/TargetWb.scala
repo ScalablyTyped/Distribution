@@ -19,7 +19,8 @@ object TargetWb {
     __obj.asInstanceOf[TargetWb]
   }
   
-  extension [Self <: TargetWb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetWb] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: PivotTable): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     

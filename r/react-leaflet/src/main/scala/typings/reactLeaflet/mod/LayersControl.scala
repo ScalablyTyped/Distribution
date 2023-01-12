@@ -90,7 +90,8 @@ object LayersControl {
       __obj.asInstanceOf[ControlledLayerProps]
     }
     
-    extension [Self <: ControlledLayerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlledLayerProps] (val x: Self) extends AnyVal {
       
       inline def setAddBaseLayer(value: (/* layer */ Layer, /* name */ String, /* checked */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "addBaseLayer", js.Any.fromFunction3(value))
       

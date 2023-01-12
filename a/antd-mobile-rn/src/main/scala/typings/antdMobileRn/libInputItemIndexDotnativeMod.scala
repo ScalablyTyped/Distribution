@@ -420,7 +420,8 @@ object libInputItemIndexDotnativeMod {
       __obj.asInstanceOf[InputItemProps]
     }
     
-    extension [Self <: InputItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputItemProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       
@@ -1190,7 +1191,8 @@ object libInputItemIndexDotnativeMod {
       __obj.asInstanceOf[TextInputProps]
     }
     
-    extension [Self <: TextInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextInputProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       

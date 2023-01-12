@@ -24,7 +24,8 @@ object Address {
     __obj.asInstanceOf[Address]
   }
   
-  extension [Self <: Address](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
     
     inline def setIsCertified(value: Boolean): Self = StObject.set(x, "isCertified", value.asInstanceOf[js.Any])
     

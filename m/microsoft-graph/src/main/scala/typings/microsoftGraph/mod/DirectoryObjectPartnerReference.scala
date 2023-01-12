@@ -27,7 +27,8 @@ object DirectoryObjectPartnerReference {
     __obj.asInstanceOf[DirectoryObjectPartnerReference]
   }
   
-  extension [Self <: DirectoryObjectPartnerReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectoryObjectPartnerReference] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

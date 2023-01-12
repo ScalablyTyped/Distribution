@@ -39,7 +39,8 @@ object Structure {
     __obj.asInstanceOf[Structure]
   }
   
-  extension [Self <: Structure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Structure] (val x: Self) extends AnyVal {
     
     inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

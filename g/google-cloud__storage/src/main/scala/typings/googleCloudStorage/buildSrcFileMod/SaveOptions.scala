@@ -17,7 +17,8 @@ object SaveOptions {
     __obj.asInstanceOf[SaveOptions]
   }
   
-  extension [Self <: SaveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveOptions] (val x: Self) extends AnyVal {
     
     inline def setOnUploadProgress(value: /* progressEvent */ Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
     

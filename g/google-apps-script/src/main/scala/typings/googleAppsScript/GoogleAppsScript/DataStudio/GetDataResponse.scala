@@ -47,7 +47,8 @@ object GetDataResponse {
     __obj.asInstanceOf[GetDataResponse]
   }
   
-  extension [Self <: GetDataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDataResponse] (val x: Self) extends AnyVal {
     
     inline def setAddAllRows(value: js.Array[js.Array[String]] => GetDataResponse): Self = StObject.set(x, "addAllRows", js.Any.fromFunction1(value))
     

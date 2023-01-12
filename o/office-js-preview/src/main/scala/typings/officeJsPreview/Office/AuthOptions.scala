@@ -77,7 +77,8 @@ object AuthOptions {
     __obj.asInstanceOf[AuthOptions]
   }
   
-  extension [Self <: AuthOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowConsentPrompt(value: Boolean): Self = StObject.set(x, "allowConsentPrompt", value.asInstanceOf[js.Any])
     

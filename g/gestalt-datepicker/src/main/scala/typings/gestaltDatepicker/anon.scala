@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Date]
     }
     
-    extension [Self <: Date](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
       
       inline def setDate(value: /* repeated */ Any => Any): Self = StObject.set(x, "date", js.Any.fromFunction1(value))
       
@@ -73,7 +74,8 @@ object anon {
       __obj.asInstanceOf[Day]
     }
     
-    extension [Self <: Day](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Day] (val x: Self) extends AnyVal {
       
       inline def setDay(value: /* repeated */ Any => Any): Self = StObject.set(x, "day", js.Any.fromFunction1(value))
       
@@ -102,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: SyntheticEvent[HTMLInputElement, typings.std.Event]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -123,7 +126,8 @@ object anon {
       __obj.asInstanceOf[FirstWeekContainsDate]
     }
     
-    extension [Self <: FirstWeekContainsDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirstWeekContainsDate] (val x: Self) extends AnyVal {
       
       inline def setFirstWeekContainsDate(value: `1` | `2` | `3` | `4` | `5` | `6` | `7`): Self = StObject.set(x, "firstWeekContainsDate", value.asInstanceOf[js.Any])
       

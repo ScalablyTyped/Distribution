@@ -31,7 +31,8 @@ object ngccSrcExecutionApiMod {
       __obj.asInstanceOf[Executor]
     }
     
-    extension [Self <: Executor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Executor] (val x: Self) extends AnyVal {
       
       inline def setExecute(value: (AnalyzeEntryPointsFn, CreateCompileFn) => Unit | js.Promise[Unit]): Self = StObject.set(x, "execute", js.Any.fromFunction2(value))
     }

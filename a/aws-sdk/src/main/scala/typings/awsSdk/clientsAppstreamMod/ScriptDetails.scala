@@ -33,7 +33,8 @@ object ScriptDetails {
     __obj.asInstanceOf[ScriptDetails]
   }
   
-  extension [Self <: ScriptDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptDetails] (val x: Self) extends AnyVal {
     
     inline def setExecutableParameters(value: String): Self = StObject.set(x, "ExecutableParameters", value.asInstanceOf[js.Any])
     

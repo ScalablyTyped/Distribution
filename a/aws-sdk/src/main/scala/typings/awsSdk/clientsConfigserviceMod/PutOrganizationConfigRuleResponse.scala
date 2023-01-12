@@ -18,7 +18,8 @@ object PutOrganizationConfigRuleResponse {
     __obj.asInstanceOf[PutOrganizationConfigRuleResponse]
   }
   
-  extension [Self <: PutOrganizationConfigRuleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutOrganizationConfigRuleResponse] (val x: Self) extends AnyVal {
     
     inline def setOrganizationConfigRuleArn(value: StringWithCharLimit256): Self = StObject.set(x, "OrganizationConfigRuleArn", value.asInstanceOf[js.Any])
     

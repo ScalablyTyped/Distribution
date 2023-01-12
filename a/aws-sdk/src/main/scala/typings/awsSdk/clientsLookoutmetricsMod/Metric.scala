@@ -28,7 +28,8 @@ object Metric {
     __obj.asInstanceOf[Metric]
   }
   
-  extension [Self <: Metric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Metric] (val x: Self) extends AnyVal {
     
     inline def setAggregationFunction(value: AggregationFunction): Self = StObject.set(x, "AggregationFunction", value.asInstanceOf[js.Any])
     

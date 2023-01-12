@@ -53,7 +53,8 @@ object ShimmerType {
     __obj.asInstanceOf[ShimmerType]
   }
   
-  extension [Self <: ShimmerType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShimmerType] (val x: Self) extends AnyVal {
     
     inline def setGetMaxTime(
       value: shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object] => Unit

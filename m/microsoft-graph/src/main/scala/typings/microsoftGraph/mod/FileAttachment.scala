@@ -24,7 +24,8 @@ object FileAttachment {
     __obj.asInstanceOf[FileAttachment]
   }
   
-  extension [Self <: FileAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileAttachment] (val x: Self) extends AnyVal {
     
     inline def setContentBytes(value: NullableOption[String]): Self = StObject.set(x, "contentBytes", value.asInstanceOf[js.Any])
     

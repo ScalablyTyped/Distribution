@@ -18,7 +18,8 @@ object DisassociateBrowserSettingsRequest {
     __obj.asInstanceOf[DisassociateBrowserSettingsRequest]
   }
   
-  extension [Self <: DisassociateBrowserSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateBrowserSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setPortalArn(value: ARN): Self = StObject.set(x, "portalArn", value.asInstanceOf[js.Any])
   }

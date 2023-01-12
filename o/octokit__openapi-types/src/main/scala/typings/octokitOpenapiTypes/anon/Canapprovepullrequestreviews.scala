@@ -19,7 +19,8 @@ object Canapprovepullrequestreviews {
     __obj.asInstanceOf[Canapprovepullrequestreviews]
   }
   
-  extension [Self <: Canapprovepullrequestreviews](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Canapprovepullrequestreviews] (val x: Self) extends AnyVal {
     
     inline def setCan_approve_pull_request_reviews(value: Boolean): Self = StObject.set(x, "can_approve_pull_request_reviews", value.asInstanceOf[js.Any])
     

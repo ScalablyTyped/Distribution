@@ -201,7 +201,8 @@ object ContentControlCollectionLoadOptions {
     __obj.asInstanceOf[ContentControlCollectionLoadOptions]
   }
   
-  extension [Self <: ContentControlCollectionLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentControlCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

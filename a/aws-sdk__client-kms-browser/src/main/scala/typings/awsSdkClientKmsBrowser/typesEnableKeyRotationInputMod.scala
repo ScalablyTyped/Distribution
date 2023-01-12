@@ -46,7 +46,8 @@ object typesEnableKeyRotationInputMod {
       __obj.asInstanceOf[EnableKeyRotationInput]
     }
     
-    extension [Self <: EnableKeyRotationInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnableKeyRotationInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

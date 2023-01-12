@@ -46,7 +46,8 @@ object SharePayload {
     __obj.asInstanceOf[SharePayload]
   }
   
-  extension [Self <: SharePayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharePayload] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

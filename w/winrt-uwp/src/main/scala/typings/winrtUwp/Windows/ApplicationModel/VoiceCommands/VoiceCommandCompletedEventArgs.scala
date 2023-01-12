@@ -17,7 +17,8 @@ object VoiceCommandCompletedEventArgs {
     __obj.asInstanceOf[VoiceCommandCompletedEventArgs]
   }
   
-  extension [Self <: VoiceCommandCompletedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceCommandCompletedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setReason(value: VoiceCommandCompletionReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }

@@ -39,7 +39,8 @@ object DataProvider {
     __obj.asInstanceOf[DataProvider]
   }
   
-  extension [Self <: DataProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataProvider] (val x: Self) extends AnyVal {
     
     inline def setIncludeHiddenCells(value: Boolean): Self = StObject.set(x, "IncludeHiddenCells", value.asInstanceOf[js.Any])
   }

@@ -15,7 +15,8 @@ object ICompassReadingChangedEventArgs {
     __obj.asInstanceOf[ICompassReadingChangedEventArgs]
   }
   
-  extension [Self <: ICompassReadingChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICompassReadingChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setReading(value: CompassReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
   }

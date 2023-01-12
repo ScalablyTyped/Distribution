@@ -22,7 +22,8 @@ object EmbeddedObjectPosition {
     __obj.asInstanceOf[EmbeddedObjectPosition]
   }
   
-  extension [Self <: EmbeddedObjectPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmbeddedObjectPosition] (val x: Self) extends AnyVal {
     
     inline def setNewSheet(value: Boolean): Self = StObject.set(x, "newSheet", value.asInstanceOf[js.Any])
     

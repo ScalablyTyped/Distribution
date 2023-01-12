@@ -26,7 +26,8 @@ object ManglePropertiesOptions {
     __obj.asInstanceOf[ManglePropertiesOptions]
   }
   
-  extension [Self <: ManglePropertiesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManglePropertiesOptions] (val x: Self) extends AnyVal {
     
     inline def setBuiltins(value: Boolean): Self = StObject.set(x, "builtins", value.asInstanceOf[js.Any])
     

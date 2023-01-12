@@ -58,7 +58,8 @@ object DescribeTaskOutput {
     __obj.asInstanceOf[DescribeTaskOutput]
   }
   
-  extension [Self <: DescribeTaskOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTaskOutput] (val x: Self) extends AnyVal {
     
     inline def setCompletedAt(value: js.Date): Self = StObject.set(x, "completedAt", value.asInstanceOf[js.Any])
     

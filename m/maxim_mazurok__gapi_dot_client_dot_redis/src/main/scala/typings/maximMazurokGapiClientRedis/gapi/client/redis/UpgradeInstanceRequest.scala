@@ -16,7 +16,8 @@ object UpgradeInstanceRequest {
     __obj.asInstanceOf[UpgradeInstanceRequest]
   }
   
-  extension [Self <: UpgradeInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpgradeInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setRedisVersion(value: String): Self = StObject.set(x, "redisVersion", value.asInstanceOf[js.Any])
     

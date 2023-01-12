@@ -38,7 +38,8 @@ object IndicesFieldUsageStatsFieldSummary {
     __obj.asInstanceOf[IndicesFieldUsageStatsFieldSummary]
   }
   
-  extension [Self <: IndicesFieldUsageStatsFieldSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesFieldUsageStatsFieldSummary] (val x: Self) extends AnyVal {
     
     inline def setAny(value: uint): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
     

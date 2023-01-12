@@ -33,7 +33,8 @@ object InsertTextRequest {
     __obj.asInstanceOf[InsertTextRequest]
   }
   
-  extension [Self <: InsertTextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertTextRequest] (val x: Self) extends AnyVal {
     
     inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
     

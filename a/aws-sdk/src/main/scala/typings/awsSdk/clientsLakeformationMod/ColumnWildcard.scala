@@ -18,7 +18,8 @@ object ColumnWildcard {
     __obj.asInstanceOf[ColumnWildcard]
   }
   
-  extension [Self <: ColumnWildcard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnWildcard] (val x: Self) extends AnyVal {
     
     inline def setExcludedColumnNames(value: ColumnNames): Self = StObject.set(x, "ExcludedColumnNames", value.asInstanceOf[js.Any])
     

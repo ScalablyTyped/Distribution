@@ -23,7 +23,8 @@ object EndAngle {
     __obj.asInstanceOf[EndAngle]
   }
   
-  extension [Self <: EndAngle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndAngle] (val x: Self) extends AnyVal {
     
     inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     

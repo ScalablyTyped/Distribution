@@ -23,7 +23,8 @@ object EnableSecurityHubRequest {
     __obj.asInstanceOf[EnableSecurityHubRequest]
   }
   
-  extension [Self <: EnableSecurityHubRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableSecurityHubRequest] (val x: Self) extends AnyVal {
     
     inline def setEnableDefaultStandards(value: Boolean): Self = StObject.set(x, "EnableDefaultStandards", value.asInstanceOf[js.Any])
     

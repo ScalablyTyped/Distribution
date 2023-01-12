@@ -18,7 +18,8 @@ object Partialleftnumbertopnumbe {
     __obj.asInstanceOf[Partialleftnumbertopnumbe]
   }
   
-  extension [Self <: Partialleftnumbertopnumbe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialleftnumbertopnumbe] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

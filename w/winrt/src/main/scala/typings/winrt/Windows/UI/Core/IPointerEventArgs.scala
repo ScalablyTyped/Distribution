@@ -29,7 +29,8 @@ object IPointerEventArgs {
     __obj.asInstanceOf[IPointerEventArgs]
   }
   
-  extension [Self <: IPointerEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPointerEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCurrentPoint(value: PointerPoint): Self = StObject.set(x, "currentPoint", value.asInstanceOf[js.Any])
     

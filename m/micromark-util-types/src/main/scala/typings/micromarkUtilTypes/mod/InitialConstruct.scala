@@ -19,7 +19,8 @@ object InitialConstruct {
     __obj.asInstanceOf[InitialConstruct]
   }
   
-  extension [Self <: InitialConstruct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitialConstruct] (val x: Self) extends AnyVal {
     
     inline def setTokenize(value: Initializer): Self = StObject.set(x, "tokenize", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object GetNodesForSubtreeByStyleResponse {
     __obj.asInstanceOf[GetNodesForSubtreeByStyleResponse]
   }
   
-  extension [Self <: GetNodesForSubtreeByStyleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNodesForSubtreeByStyleResponse] (val x: Self) extends AnyVal {
     
     inline def setNodeIds(value: js.Array[NodeId]): Self = StObject.set(x, "nodeIds", value.asInstanceOf[js.Any])
     

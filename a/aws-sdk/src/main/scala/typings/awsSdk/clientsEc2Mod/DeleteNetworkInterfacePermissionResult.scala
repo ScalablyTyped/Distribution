@@ -18,7 +18,8 @@ object DeleteNetworkInterfacePermissionResult {
     __obj.asInstanceOf[DeleteNetworkInterfacePermissionResult]
   }
   
-  extension [Self <: DeleteNetworkInterfacePermissionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteNetworkInterfacePermissionResult] (val x: Self) extends AnyVal {
     
     inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     

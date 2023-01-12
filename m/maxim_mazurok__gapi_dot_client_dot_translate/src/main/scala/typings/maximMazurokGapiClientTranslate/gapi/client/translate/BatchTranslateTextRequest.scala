@@ -49,7 +49,8 @@ object BatchTranslateTextRequest {
     __obj.asInstanceOf[BatchTranslateTextRequest]
   }
   
-  extension [Self <: BatchTranslateTextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchTranslateTextRequest] (val x: Self) extends AnyVal {
     
     inline def setGlossaries(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.translate.gapi.client.translate.TranslateTextGlossaryConfig} */ js.Any

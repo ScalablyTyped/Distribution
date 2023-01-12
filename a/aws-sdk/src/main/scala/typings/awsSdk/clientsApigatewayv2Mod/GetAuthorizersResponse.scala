@@ -23,7 +23,8 @@ object GetAuthorizersResponse {
     __obj.asInstanceOf[GetAuthorizersResponse]
   }
   
-  extension [Self <: GetAuthorizersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAuthorizersResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: listOfAuthorizer): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

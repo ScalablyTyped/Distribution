@@ -23,7 +23,8 @@ object RemoveSourceIdentifierFromSubscriptionMessage {
     __obj.asInstanceOf[RemoveSourceIdentifierFromSubscriptionMessage]
   }
   
-  extension [Self <: RemoveSourceIdentifierFromSubscriptionMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveSourceIdentifierFromSubscriptionMessage] (val x: Self) extends AnyVal {
     
     inline def setSourceIdentifier(value: String): Self = StObject.set(x, "SourceIdentifier", value.asInstanceOf[js.Any])
     

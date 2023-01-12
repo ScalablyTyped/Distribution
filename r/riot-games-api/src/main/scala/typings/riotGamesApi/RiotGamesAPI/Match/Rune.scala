@@ -17,7 +17,8 @@ object Rune {
     __obj.asInstanceOf[Rune]
   }
   
-  extension [Self <: Rune](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rune] (val x: Self) extends AnyVal {
     
     inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     

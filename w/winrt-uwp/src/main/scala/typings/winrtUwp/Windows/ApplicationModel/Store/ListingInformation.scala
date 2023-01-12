@@ -55,7 +55,8 @@ object ListingInformation {
     __obj.asInstanceOf[ListingInformation]
   }
   
-  extension [Self <: ListingInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListingInformation] (val x: Self) extends AnyVal {
     
     inline def setAgeRating(value: Double): Self = StObject.set(x, "ageRating", value.asInstanceOf[js.Any])
     

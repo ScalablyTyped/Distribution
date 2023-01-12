@@ -38,7 +38,8 @@ object CodeGenerationResults {
     __obj.asInstanceOf[CodeGenerationResults]
   }
   
-  extension [Self <: CodeGenerationResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeGenerationResults] (val x: Self) extends AnyVal {
     
     inline def setCodeGenerationResults(value: typings.webpack.mod.CodeGenerationResults): Self = StObject.set(x, "codeGenerationResults", value.asInstanceOf[js.Any])
     

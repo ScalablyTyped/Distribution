@@ -23,7 +23,8 @@ object ListCoreDefinitionVersionsResponse {
     __obj.asInstanceOf[ListCoreDefinitionVersionsResponse]
   }
   
-  extension [Self <: ListCoreDefinitionVersionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCoreDefinitionVersionsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

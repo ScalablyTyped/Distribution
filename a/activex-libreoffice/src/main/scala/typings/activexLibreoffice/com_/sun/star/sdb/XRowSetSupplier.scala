@@ -47,7 +47,8 @@ object XRowSetSupplier {
     __obj.asInstanceOf[XRowSetSupplier]
   }
   
-  extension [Self <: XRowSetSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRowSetSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetRowSet(value: () => XRowSet): Self = StObject.set(x, "getRowSet", js.Any.fromFunction0(value))
     

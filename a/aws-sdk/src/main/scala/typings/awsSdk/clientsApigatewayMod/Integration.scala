@@ -88,7 +88,8 @@ object Integration {
     __obj.asInstanceOf[Integration]
   }
   
-  extension [Self <: Integration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Integration] (val x: Self) extends AnyVal {
     
     inline def setCacheKeyParameters(value: ListOfString): Self = StObject.set(x, "cacheKeyParameters", value.asInstanceOf[js.Any])
     

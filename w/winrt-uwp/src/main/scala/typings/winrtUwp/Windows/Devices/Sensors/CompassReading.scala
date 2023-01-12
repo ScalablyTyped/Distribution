@@ -31,7 +31,8 @@ object CompassReading {
     __obj.asInstanceOf[CompassReading]
   }
   
-  extension [Self <: CompassReading](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompassReading] (val x: Self) extends AnyVal {
     
     inline def setHeadingAccuracy(value: MagnetometerAccuracy): Self = StObject.set(x, "headingAccuracy", value.asInstanceOf[js.Any])
     

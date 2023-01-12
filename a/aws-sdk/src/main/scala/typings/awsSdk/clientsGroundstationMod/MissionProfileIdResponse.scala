@@ -18,7 +18,8 @@ object MissionProfileIdResponse {
     __obj.asInstanceOf[MissionProfileIdResponse]
   }
   
-  extension [Self <: MissionProfileIdResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MissionProfileIdResponse] (val x: Self) extends AnyVal {
     
     inline def setMissionProfileId(value: Uuid): Self = StObject.set(x, "missionProfileId", value.asInstanceOf[js.Any])
     

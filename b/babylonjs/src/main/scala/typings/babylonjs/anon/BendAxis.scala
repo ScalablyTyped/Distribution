@@ -32,7 +32,8 @@ object BendAxis {
     __obj.asInstanceOf[BendAxis]
   }
   
-  extension [Self <: BendAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BendAxis] (val x: Self) extends AnyVal {
     
     inline def setBendAxis(value: Vector3): Self = StObject.set(x, "bendAxis", value.asInstanceOf[js.Any])
     

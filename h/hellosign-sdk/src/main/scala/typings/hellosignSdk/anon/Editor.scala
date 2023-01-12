@@ -27,7 +27,8 @@ object Editor {
     __obj.asInstanceOf[Editor]
   }
   
-  extension [Self <: Editor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Editor] (val x: Self) extends AnyVal {
     
     inline def setApi_id(value: String): Self = StObject.set(x, "api_id", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,8 @@ object tools {
       __obj.asInstanceOf[ConnectionTools]
     }
     
-    extension [Self <: ConnectionTools](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionTools] (val x: Self) extends AnyVal {
       
       inline def setCreateWithConnection(value: XConnection => Unit): Self = StObject.set(x, "createWithConnection", js.Any.fromFunction1(value))
     }
@@ -100,7 +101,8 @@ object tools {
       __obj.asInstanceOf[XConnectionSupplier]
     }
     
-    extension [Self <: XConnectionSupplier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XConnectionSupplier] (val x: Self) extends AnyVal {
       
       inline def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
     }
@@ -180,7 +182,8 @@ object tools {
       __obj.asInstanceOf[XConnectionTools]
     }
     
-    extension [Self <: XConnectionTools](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XConnectionTools] (val x: Self) extends AnyVal {
       
       inline def setCreateTableName(value: () => XTableName): Self = StObject.set(x, "createTableName", js.Any.fromFunction0(value))
       
@@ -210,7 +213,8 @@ object tools {
       __obj.asInstanceOf[XDataSourceMetaData]
     }
     
-    extension [Self <: XDataSourceMetaData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XDataSourceMetaData] (val x: Self) extends AnyVal {
       
       inline def setSupportsQueriesInFrom(value: () => Boolean): Self = StObject.set(x, "supportsQueriesInFrom", js.Any.fromFunction0(value))
     }
@@ -259,7 +263,8 @@ object tools {
       __obj.asInstanceOf[XIndexAlteration]
     }
     
-    extension [Self <: XIndexAlteration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XIndexAlteration] (val x: Self) extends AnyVal {
       
       inline def setAddIndex(value: (XPropertySet, XPropertySet) => Unit): Self = StObject.set(x, "addIndex", js.Any.fromFunction2(value))
       
@@ -310,7 +315,8 @@ object tools {
       __obj.asInstanceOf[XKeyAlteration]
     }
     
-    extension [Self <: XKeyAlteration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XKeyAlteration] (val x: Self) extends AnyVal {
       
       inline def setAddKey(value: (XPropertySet, XPropertySet) => Unit): Self = StObject.set(x, "addKey", js.Any.fromFunction2(value))
       
@@ -415,7 +421,8 @@ object tools {
       __obj.asInstanceOf[XObjectNames]
     }
     
-    extension [Self <: XObjectNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XObjectNames] (val x: Self) extends AnyVal {
       
       inline def setCheckNameForCreate(value: (Double, String) => Unit): Self = StObject.set(x, "checkNameForCreate", js.Any.fromFunction2(value))
       
@@ -487,7 +494,8 @@ object tools {
       __obj.asInstanceOf[XTableAlteration]
     }
     
-    extension [Self <: XTableAlteration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XTableAlteration] (val x: Self) extends AnyVal {
       
       inline def setAddColumn(value: (XPropertySet, XPropertySet) => Unit): Self = StObject.set(x, "addColumn", js.Any.fromFunction2(value))
       
@@ -577,7 +585,8 @@ object tools {
       __obj.asInstanceOf[XTableName]
     }
     
-    extension [Self <: XTableName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XTableName] (val x: Self) extends AnyVal {
       
       inline def setCatalogName(value: String): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
       
@@ -626,7 +635,8 @@ object tools {
       __obj.asInstanceOf[XTableRename]
     }
     
-    extension [Self <: XTableRename](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XTableRename] (val x: Self) extends AnyVal {
       
       inline def setRename(value: (XPropertySet, String) => Unit): Self = StObject.set(x, "rename", js.Any.fromFunction2(value))
     }
@@ -672,7 +682,8 @@ object tools {
       __obj.asInstanceOf[XViewAccess]
     }
     
-    extension [Self <: XViewAccess](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XViewAccess] (val x: Self) extends AnyVal {
       
       inline def setAlterCommand(value: (XPropertySet, String) => Unit): Self = StObject.set(x, "alterCommand", js.Any.fromFunction2(value))
       

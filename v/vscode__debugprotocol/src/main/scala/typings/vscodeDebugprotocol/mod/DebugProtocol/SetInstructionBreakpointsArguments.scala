@@ -17,7 +17,8 @@ object SetInstructionBreakpointsArguments {
     __obj.asInstanceOf[SetInstructionBreakpointsArguments]
   }
   
-  extension [Self <: SetInstructionBreakpointsArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetInstructionBreakpointsArguments] (val x: Self) extends AnyVal {
     
     inline def setBreakpoints(value: js.Array[InstructionBreakpoint]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     

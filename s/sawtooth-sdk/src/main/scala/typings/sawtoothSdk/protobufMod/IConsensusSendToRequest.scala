@@ -19,7 +19,8 @@ object IConsensusSendToRequest {
     __obj.asInstanceOf[IConsensusSendToRequest]
   }
   
-  extension [Self <: IConsensusSendToRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConsensusSendToRequest] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: IConsensusPeerMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

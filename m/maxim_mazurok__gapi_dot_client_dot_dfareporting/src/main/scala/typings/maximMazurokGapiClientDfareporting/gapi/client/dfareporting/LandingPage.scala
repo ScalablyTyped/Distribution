@@ -34,7 +34,8 @@ object LandingPage {
     __obj.asInstanceOf[LandingPage]
   }
   
-  extension [Self <: LandingPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LandingPage] (val x: Self) extends AnyVal {
     
     inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ListLinkedCustomChannelsResponse {
     __obj.asInstanceOf[ListLinkedCustomChannelsResponse]
   }
   
-  extension [Self <: ListLinkedCustomChannelsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLinkedCustomChannelsResponse] (val x: Self) extends AnyVal {
     
     inline def setCustomChannels(value: js.Array[CustomChannel]): Self = StObject.set(x, "customChannels", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Borderless {
     __obj.asInstanceOf[Borderless]
   }
   
-  extension [Self <: Borderless](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Borderless] (val x: Self) extends AnyVal {
     
     inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     

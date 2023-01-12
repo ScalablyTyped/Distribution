@@ -585,7 +585,8 @@ object ZingGrid {
     __obj.asInstanceOf[ZingGrid]
   }
   
-  extension [Self <: ZingGrid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZingGrid] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: center | left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

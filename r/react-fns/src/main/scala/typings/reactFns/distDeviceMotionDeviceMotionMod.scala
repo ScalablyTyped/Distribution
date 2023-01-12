@@ -45,7 +45,8 @@ object distDeviceMotionDeviceMotionMod {
       __obj.asInstanceOf[DeviceMotionProps]
     }
     
-    extension [Self <: DeviceMotionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceMotionProps] (val x: Self) extends AnyVal {
       
       inline def setAcceleration(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DeviceAcceleration */ Any

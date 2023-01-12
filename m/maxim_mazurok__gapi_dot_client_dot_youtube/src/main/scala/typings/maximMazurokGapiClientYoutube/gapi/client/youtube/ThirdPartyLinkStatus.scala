@@ -15,7 +15,8 @@ object ThirdPartyLinkStatus {
     __obj.asInstanceOf[ThirdPartyLinkStatus]
   }
   
-  extension [Self <: ThirdPartyLinkStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThirdPartyLinkStatus] (val x: Self) extends AnyVal {
     
     inline def setLinkStatus(value: String): Self = StObject.set(x, "linkStatus", value.asInstanceOf[js.Any])
     

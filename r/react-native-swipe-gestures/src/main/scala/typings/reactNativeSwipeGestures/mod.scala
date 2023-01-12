@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[GestureRecognizerConfig]
     }
     
-    extension [Self <: GestureRecognizerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GestureRecognizerConfig] (val x: Self) extends AnyVal {
       
       inline def setDirectionalOffsetThreshold(value: Double): Self = StObject.set(x, "directionalOffsetThreshold", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object mod {
       __obj.asInstanceOf[GestureRecognizerProps]
     }
     
-    extension [Self <: GestureRecognizerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GestureRecognizerProps] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: GestureRecognizerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

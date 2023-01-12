@@ -105,7 +105,8 @@ object AccessibleActionableMode {
     __obj.asInstanceOf[AccessibleActionableMode]
   }
   
-  extension [Self <: AccessibleActionableMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessibleActionableMode] (val x: Self) extends AnyVal {
     
     inline def setAccessibleActionableMode(value: String): Self = StObject.set(x, "accessibleActionableMode", value.asInstanceOf[js.Any])
     

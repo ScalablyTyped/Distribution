@@ -23,7 +23,8 @@ object AssociateUserSettingsRequest {
     __obj.asInstanceOf[AssociateUserSettingsRequest]
   }
   
-  extension [Self <: AssociateUserSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateUserSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setPortalArn(value: ARN): Self = StObject.set(x, "portalArn", value.asInstanceOf[js.Any])
     

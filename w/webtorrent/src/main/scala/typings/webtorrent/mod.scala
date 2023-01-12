@@ -195,7 +195,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDht(value: Boolean | js.Object): Self = StObject.set(x, "dht", value.asInstanceOf[js.Any])
       
@@ -353,7 +354,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TorrentDestroyOptions]
     }
     
-    extension [Self <: TorrentDestroyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TorrentDestroyOptions] (val x: Self) extends AnyVal {
       
       inline def setDestroyStore(value: Boolean): Self = StObject.set(x, "destroyStore", value.asInstanceOf[js.Any])
       
@@ -495,7 +497,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TorrentOptions]
     }
     
-    extension [Self <: TorrentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TorrentOptions] (val x: Self) extends AnyVal {
       
       inline def setAnnounce(value: js.Array[String]): Self = StObject.set(x, "announce", value.asInstanceOf[js.Any])
       
@@ -570,7 +573,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TorrentPiece]
     }
     
-    extension [Self <: TorrentPiece](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TorrentPiece] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       

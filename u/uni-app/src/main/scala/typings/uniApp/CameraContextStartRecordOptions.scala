@@ -33,7 +33,8 @@ object CameraContextStartRecordOptions {
     __obj.asInstanceOf[CameraContextStartRecordOptions]
   }
   
-  extension [Self <: CameraContextStartRecordOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraContextStartRecordOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

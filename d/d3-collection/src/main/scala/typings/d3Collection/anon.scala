@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Key[T]]
     }
     
-    extension [Self <: Key[?], T](x: Self & Key[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key[?], T] (val x: Self & Key[T]) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[KeyValue[RollupType]]
     }
     
-    extension [Self <: KeyValue[?], RollupType](x: Self & KeyValue[RollupType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyValue[?], RollupType] (val x: Self & KeyValue[RollupType]) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -68,7 +70,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -91,7 +94,8 @@ object anon {
       __obj.asInstanceOf[Values[Datum, RollupType]]
     }
     
-    extension [Self <: Values[?, ?], Datum, RollupType](x: Self & (Values[Datum, RollupType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Values[?, ?], Datum, RollupType] (val x: Self & (Values[Datum, RollupType])) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

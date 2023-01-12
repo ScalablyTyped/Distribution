@@ -412,7 +412,8 @@ object anon {
       __obj.asInstanceOf[AsFunction]
     }
     
-    extension [Self <: AsFunction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsFunction] (val x: Self) extends AnyVal {
       
       inline def setAsFunction(value: (NodePath[CallExpression_], TransformOptions) => Unit): Self = StObject.set(x, "asFunction", js.Any.fromFunction2(value))
       
@@ -443,7 +444,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Buffer): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -464,7 +466,8 @@ object anon {
       __obj.asInstanceOf[Filename]
     }
     
-    extension [Self <: Filename](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filename] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -483,7 +486,8 @@ object anon {
       __obj.asInstanceOf[Opts]
     }
     
-    extension [Self <: Opts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
       
       inline def setOpts(value: TransformOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
     }

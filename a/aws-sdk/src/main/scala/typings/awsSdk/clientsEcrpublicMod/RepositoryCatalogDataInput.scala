@@ -43,7 +43,8 @@ object RepositoryCatalogDataInput {
     __obj.asInstanceOf[RepositoryCatalogDataInput]
   }
   
-  extension [Self <: RepositoryCatalogDataInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositoryCatalogDataInput] (val x: Self) extends AnyVal {
     
     inline def setAboutText(value: AboutText): Self = StObject.set(x, "aboutText", value.asInstanceOf[js.Any])
     

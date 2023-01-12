@@ -43,7 +43,8 @@ object statesIstencilstateMod {
       __obj.asInstanceOf[IStencilState]
     }
     
-    extension [Self <: IStencilState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStencilState] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

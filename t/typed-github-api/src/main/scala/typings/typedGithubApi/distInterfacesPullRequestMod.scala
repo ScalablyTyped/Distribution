@@ -90,7 +90,8 @@ object distInterfacesPullRequestMod {
       __obj.asInstanceOf[PullRequest]
     }
     
-    extension [Self <: PullRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PullRequest] (val x: Self) extends AnyVal {
       
       inline def setAssignee(value: UserSummary): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
       
@@ -157,7 +158,8 @@ object distInterfacesPullRequestMod {
       __obj.asInstanceOf[PullRequestRef]
     }
     
-    extension [Self <: PullRequestRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PullRequestRef] (val x: Self) extends AnyVal {
       
       inline def setLoadAsync(value: () => js.Promise[PullRequest | Null]): Self = StObject.set(x, "loadAsync", js.Any.fromFunction0(value))
       
@@ -193,7 +195,8 @@ object distInterfacesPullRequestMod {
       __obj.asInstanceOf[Review]
     }
     
-    extension [Self <: Review](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Review] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -233,7 +236,8 @@ object distInterfacesPullRequestMod {
       __obj.asInstanceOf[ReviewComment]
     }
     
-    extension [Self <: ReviewComment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReviewComment] (val x: Self) extends AnyVal {
       
       inline def setDiffHunk(value: String): Self = StObject.set(x, "diffHunk", value.asInstanceOf[js.Any])
       
@@ -254,7 +258,8 @@ object distInterfacesPullRequestMod {
       __obj.asInstanceOf[ReviewRequests]
     }
     
-    extension [Self <: ReviewRequests](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReviewRequests] (val x: Self) extends AnyVal {
       
       inline def setTeams(value: js.Array[Team]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
       
@@ -287,7 +292,8 @@ object distInterfacesPullRequestMod {
       __obj.asInstanceOf[Team]
     }
     
-    extension [Self <: Team](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Team] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

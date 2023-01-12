@@ -43,7 +43,8 @@ object dxCircularGaugeOptions {
     __obj.asInstanceOf[dxCircularGaugeOptions]
   }
   
-  extension [Self <: dxCircularGaugeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxCircularGaugeOptions] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: EndAngle): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     

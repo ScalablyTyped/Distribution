@@ -17,7 +17,8 @@ object list {
     __obj.asInstanceOf[list]
   }
   
-  extension [Self <: list](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: list] (val x: Self) extends AnyVal {
     
     inline def setArrayToList(value: (Any, Any, Any, Any) => Unit): Self = StObject.set(x, "arrayToList", js.Any.fromFunction4(value))
     

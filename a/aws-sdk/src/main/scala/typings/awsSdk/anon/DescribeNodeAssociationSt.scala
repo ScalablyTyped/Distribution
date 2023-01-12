@@ -30,7 +30,8 @@ object DescribeNodeAssociationSt {
     __obj.asInstanceOf[DescribeNodeAssociationSt]
   }
   
-  extension [Self <: DescribeNodeAssociationSt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNodeAssociationSt] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

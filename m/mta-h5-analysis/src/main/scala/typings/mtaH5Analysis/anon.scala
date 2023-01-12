@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[AutoReport]
     }
     
-    extension [Self <: AutoReport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoReport] (val x: Self) extends AnyVal {
       
       inline def setAutoReport(value: `0` | `1`): Self = StObject.set(x, "autoReport", value.asInstanceOf[js.Any])
       

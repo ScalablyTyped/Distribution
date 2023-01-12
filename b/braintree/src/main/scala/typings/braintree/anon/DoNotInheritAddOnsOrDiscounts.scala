@@ -19,7 +19,8 @@ object DoNotInheritAddOnsOrDiscounts {
     __obj.asInstanceOf[DoNotInheritAddOnsOrDiscounts]
   }
   
-  extension [Self <: DoNotInheritAddOnsOrDiscounts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoNotInheritAddOnsOrDiscounts] (val x: Self) extends AnyVal {
     
     inline def setDoNotInheritAddOnsOrDiscounts(value: Boolean): Self = StObject.set(x, "doNotInheritAddOnsOrDiscounts", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object SavingsTradeAMLAnswersRequest {
     __obj.asInstanceOf[SavingsTradeAMLAnswersRequest]
   }
   
-  extension [Self <: SavingsTradeAMLAnswersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsTradeAMLAnswersRequest] (val x: Self) extends AnyVal {
     
     inline def setAnswers(value: js.Array[SavingsTradeAMLAnswer]): Self = StObject.set(x, "answers", value.asInstanceOf[js.Any])
     

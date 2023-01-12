@@ -53,7 +53,8 @@ object Extenders_ {
     __obj.asInstanceOf[Extenders_[T]]
   }
   
-  extension [Self <: Extenders_[?], T](x: Self & Extenders_[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Extenders_[?], T] (val x: Self & Extenders_[T]) extends AnyVal {
     
     inline def setDeferred(value: (Subscribable_[Any], `true`) => Subscribable_[Any]): Self = StObject.set(x, "deferred", js.Any.fromFunction2(value))
     

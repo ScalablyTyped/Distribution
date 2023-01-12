@@ -29,7 +29,8 @@ object libGComponentsTextMod extends Shortcut {
       __obj.asInstanceOf[ITextProps]
     }
     
-    extension [Self <: ITextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextProps] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: Text): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     }

@@ -31,7 +31,8 @@ object DepthTextureCreationOptions {
     __obj.asInstanceOf[DepthTextureCreationOptions]
   }
   
-  extension [Self <: DepthTextureCreationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DepthTextureCreationOptions] (val x: Self) extends AnyVal {
     
     inline def setBilinearFiltering(value: Boolean): Self = StObject.set(x, "bilinearFiltering", value.asInstanceOf[js.Any])
     

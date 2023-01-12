@@ -16,7 +16,8 @@ object ExtractDataSourceOption {
     __obj.asInstanceOf[ExtractDataSourceOption]
   }
   
-  extension [Self <: ExtractDataSourceOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtractDataSourceOption] (val x: Self) extends AnyVal {
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }

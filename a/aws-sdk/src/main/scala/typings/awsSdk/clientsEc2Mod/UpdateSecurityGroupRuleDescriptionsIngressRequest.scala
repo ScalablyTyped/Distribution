@@ -38,7 +38,8 @@ object UpdateSecurityGroupRuleDescriptionsIngressRequest {
     __obj.asInstanceOf[UpdateSecurityGroupRuleDescriptionsIngressRequest]
   }
   
-  extension [Self <: UpdateSecurityGroupRuleDescriptionsIngressRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSecurityGroupRuleDescriptionsIngressRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

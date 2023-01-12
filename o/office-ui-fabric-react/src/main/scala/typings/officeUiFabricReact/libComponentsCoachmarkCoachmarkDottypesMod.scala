@@ -31,7 +31,8 @@ object libComponentsCoachmarkCoachmarkDottypesMod {
       __obj.asInstanceOf[ICoachmark]
     }
     
-    extension [Self <: ICoachmark](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICoachmark] (val x: Self) extends AnyVal {
       
       inline def setDismiss(value: /* ev */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "dismiss", js.Any.fromFunction1(value))
       
@@ -231,7 +232,8 @@ object libComponentsCoachmarkCoachmarkDottypesMod {
       __obj.asInstanceOf[ICoachmarkProps]
     }
     
-    extension [Self <: ICoachmarkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICoachmarkProps] (val x: Self) extends AnyVal {
       
       inline def setAriaAlertText(value: String): Self = StObject.set(x, "ariaAlertText", value.asInstanceOf[js.Any])
       
@@ -461,7 +463,8 @@ object libComponentsCoachmarkCoachmarkDottypesMod {
       __obj.asInstanceOf[ICoachmarkStyleProps]
     }
     
-    extension [Self <: ICoachmarkStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICoachmarkStyleProps] (val x: Self) extends AnyVal {
       
       inline def setBeaconColorOne(value: String): Self = StObject.set(x, "beaconColorOne", value.asInstanceOf[js.Any])
       
@@ -582,7 +585,8 @@ object libComponentsCoachmarkCoachmarkDottypesMod {
       __obj.asInstanceOf[ICoachmarkStyles]
     }
     
-    extension [Self <: ICoachmarkStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICoachmarkStyles] (val x: Self) extends AnyVal {
       
       inline def setAriaContainer(value: IStyle): Self = StObject.set(x, "ariaContainer", value.asInstanceOf[js.Any])
       

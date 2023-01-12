@@ -15,7 +15,8 @@ object IPixelDataProvider {
     __obj.asInstanceOf[IPixelDataProvider]
   }
   
-  extension [Self <: IPixelDataProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPixelDataProvider] (val x: Self) extends AnyVal {
     
     inline def setDetachPixelData(value: () => js.typedarray.Uint8Array): Self = StObject.set(x, "detachPixelData", js.Any.fromFunction0(value))
   }

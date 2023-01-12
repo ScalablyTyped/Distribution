@@ -54,7 +54,8 @@ object StorageEngine {
     __obj.asInstanceOf[StorageEngine]
   }
   
-  extension [Self <: StorageEngine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageEngine] (val x: Self) extends AnyVal {
     
     inline def set_handleFile(
       value: (Request_[

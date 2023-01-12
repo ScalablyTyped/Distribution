@@ -90,7 +90,8 @@ object ScalingInstruction {
     __obj.asInstanceOf[ScalingInstruction]
   }
   
-  extension [Self <: ScalingInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScalingInstruction] (val x: Self) extends AnyVal {
     
     inline def setCustomizedLoadMetricSpecification(value: CustomizedLoadMetricSpecification): Self = StObject.set(x, "CustomizedLoadMetricSpecification", value.asInstanceOf[js.Any])
     

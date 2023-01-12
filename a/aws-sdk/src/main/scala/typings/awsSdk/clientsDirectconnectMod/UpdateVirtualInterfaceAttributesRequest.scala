@@ -33,7 +33,8 @@ object UpdateVirtualInterfaceAttributesRequest {
     __obj.asInstanceOf[UpdateVirtualInterfaceAttributesRequest]
   }
   
-  extension [Self <: UpdateVirtualInterfaceAttributesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateVirtualInterfaceAttributesRequest] (val x: Self) extends AnyVal {
     
     inline def setEnableSiteLink(value: EnableSiteLink): Self = StObject.set(x, "enableSiteLink", value.asInstanceOf[js.Any])
     

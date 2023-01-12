@@ -60,7 +60,8 @@ object SearchRecord {
     __obj.asInstanceOf[SearchRecord]
   }
   
-  extension [Self <: SearchRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchRecord] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: Endpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     

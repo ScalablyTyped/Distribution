@@ -16,7 +16,8 @@ object TooltipFormatter {
     __obj.asInstanceOf[TooltipFormatter[T]]
   }
   
-  extension [Self <: TooltipFormatter[?], T /* <: js.Object */](x: Self & TooltipFormatter[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipFormatter[?], T /* <: js.Object */] (val x: Self & TooltipFormatter[T]) extends AnyVal {
     
     inline def setTooltipFormatter(value: /* row */ T => Element): Self = StObject.set(x, "tooltipFormatter", js.Any.fromFunction1(value))
     

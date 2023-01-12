@@ -35,7 +35,8 @@ object distCommandsCuckooReserveMod {
       __obj.asInstanceOf[ReserveOptions]
     }
     
-    extension [Self <: ReserveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReserveOptions] (val x: Self) extends AnyVal {
       
       inline def setBUCKETSIZE(value: Double): Self = StObject.set(x, "BUCKETSIZE", value.asInstanceOf[js.Any])
       

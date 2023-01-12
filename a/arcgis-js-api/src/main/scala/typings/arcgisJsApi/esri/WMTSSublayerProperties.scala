@@ -97,7 +97,8 @@ object WMTSSublayerProperties {
     __obj.asInstanceOf[WMTSSublayerProperties]
   }
   
-  extension [Self <: WMTSSublayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WMTSSublayerProperties] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

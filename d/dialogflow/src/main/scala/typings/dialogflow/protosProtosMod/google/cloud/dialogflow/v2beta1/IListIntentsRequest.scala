@@ -31,7 +31,8 @@ object IListIntentsRequest {
     __obj.asInstanceOf[IListIntentsRequest]
   }
   
-  extension [Self <: IListIntentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListIntentsRequest] (val x: Self) extends AnyVal {
     
     inline def setIntentView(
       value: IntentView | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.IntentView * / any */ String)

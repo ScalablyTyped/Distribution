@@ -119,7 +119,8 @@ object mod {
       __obj.asInstanceOf[ResponsiveImageProps]
     }
     
-    extension [Self <: ResponsiveImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveImageProps] (val x: Self) extends AnyVal {
       
       inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
       

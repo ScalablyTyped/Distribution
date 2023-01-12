@@ -43,7 +43,8 @@ object CreatePresetRequest {
     __obj.asInstanceOf[CreatePresetRequest]
   }
   
-  extension [Self <: CreatePresetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePresetRequest] (val x: Self) extends AnyVal {
     
     inline def setAudio(value: AudioParameters): Self = StObject.set(x, "Audio", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object ExpansionPanelOptions {
     __obj.asInstanceOf[ExpansionPanelOptions]
   }
   
-  extension [Self <: ExpansionPanelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpansionPanelOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Boolean | ExpansionPanelAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

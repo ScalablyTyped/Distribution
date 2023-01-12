@@ -31,7 +31,8 @@ object MediaStreamTrackProcessor {
     __obj.asInstanceOf[MediaStreamTrackProcessor[T]]
   }
   
-  extension [Self <: MediaStreamTrackProcessor[?], T /* <: AudioData | VideoFrame */](x: Self & MediaStreamTrackProcessor[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaStreamTrackProcessor[?], T /* <: AudioData | VideoFrame */] (val x: Self & MediaStreamTrackProcessor[T]) extends AnyVal {
     
     inline def setReadable(value: ReadableStream[T]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
     

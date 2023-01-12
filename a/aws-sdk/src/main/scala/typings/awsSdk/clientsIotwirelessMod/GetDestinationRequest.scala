@@ -18,7 +18,8 @@ object GetDestinationRequest {
     __obj.asInstanceOf[GetDestinationRequest]
   }
   
-  extension [Self <: GetDestinationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDestinationRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: DestinationName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

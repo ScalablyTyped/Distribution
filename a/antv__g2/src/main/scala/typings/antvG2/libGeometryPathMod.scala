@@ -53,7 +53,8 @@ object libGeometryPathMod {
       __obj.asInstanceOf[PathCfg]
     }
     
-    extension [Self <: PathCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathCfg] (val x: Self) extends AnyVal {
       
       inline def setConnectNulls(value: Boolean): Self = StObject.set(x, "connectNulls", value.asInstanceOf[js.Any])
       

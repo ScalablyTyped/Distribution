@@ -15,7 +15,8 @@ object PickerItemProps {
     __obj.asInstanceOf[PickerItemProps]
   }
   
-  extension [Self <: PickerItemProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickerItemProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[ContentKeyName[contentKeyName]]
     }
     
-    extension [Self <: ContentKeyName[?], contentKeyName /* <: String */](x: Self & ContentKeyName[contentKeyName]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentKeyName[?], contentKeyName /* <: String */] (val x: Self & ContentKeyName[contentKeyName]) extends AnyVal {
       
       inline def setContentKeyName(value: contentKeyName): Self = StObject.set(x, "contentKeyName", value.asInstanceOf[js.Any])
     }
@@ -37,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def set__content(value: String): Self = StObject.set(x, "__content", value.asInstanceOf[js.Any])
     }

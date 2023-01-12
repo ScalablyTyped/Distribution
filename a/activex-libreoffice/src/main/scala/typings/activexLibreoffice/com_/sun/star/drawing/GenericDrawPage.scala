@@ -118,7 +118,8 @@ object GenericDrawPage {
     __obj.asInstanceOf[GenericDrawPage]
   }
   
-  extension [Self <: GenericDrawPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenericDrawPage] (val x: Self) extends AnyVal {
     
     inline def setBorderBottom(value: Double): Self = StObject.set(x, "BorderBottom", value.asInstanceOf[js.Any])
     

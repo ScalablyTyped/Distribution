@@ -56,7 +56,8 @@ object distCommonjsViewsFeedFeedMetaMod extends Shortcut {
       __obj.asInstanceOf[StrictFeedMetaProps]
     }
     
-    extension [Self <: StrictFeedMetaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictFeedMetaProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

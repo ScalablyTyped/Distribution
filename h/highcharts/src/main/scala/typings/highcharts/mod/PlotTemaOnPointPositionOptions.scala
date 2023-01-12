@@ -39,7 +39,8 @@ object PlotTemaOnPointPositionOptions {
     __obj.asInstanceOf[PlotTemaOnPointPositionOptions]
   }
   
-  extension [Self <: PlotTemaOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTemaOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

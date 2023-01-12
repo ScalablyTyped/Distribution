@@ -30,7 +30,8 @@ object componentsHocPortalMod {
       __obj.asInstanceOf[PortalProps]
     }
     
-    extension [Self <: PortalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortalProps] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

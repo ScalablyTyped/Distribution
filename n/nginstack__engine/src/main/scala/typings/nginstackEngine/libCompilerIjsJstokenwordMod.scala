@@ -49,7 +49,8 @@ object libCompilerIjsJstokenwordMod {
       __obj.asInstanceOf[JSTokenWord]
     }
     
-    extension [Self <: JSTokenWord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSTokenWord] (val x: Self) extends AnyVal {
       
       inline def setEscapeChars(value: Any): Self = StObject.set(x, "escapeChars", value.asInstanceOf[js.Any])
       

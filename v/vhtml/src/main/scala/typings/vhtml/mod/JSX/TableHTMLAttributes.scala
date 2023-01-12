@@ -23,7 +23,8 @@ object TableHTMLAttributes {
     __obj.asInstanceOf[TableHTMLAttributes]
   }
   
-  extension [Self <: TableHTMLAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableHTMLAttributes] (val x: Self) extends AnyVal {
     
     inline def setCellpadding(value: Double | String): Self = StObject.set(x, "cellpadding", value.asInstanceOf[js.Any])
     

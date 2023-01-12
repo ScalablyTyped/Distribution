@@ -24,7 +24,8 @@ object Text {
     __obj.asInstanceOf[Text]
   }
   
-  extension [Self <: Text](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
     
     inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

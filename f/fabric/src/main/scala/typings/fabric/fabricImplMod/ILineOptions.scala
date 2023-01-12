@@ -35,7 +35,8 @@ object ILineOptions {
     __obj.asInstanceOf[ILineOptions]
   }
   
-  extension [Self <: ILineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILineOptions] (val x: Self) extends AnyVal {
     
     inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     

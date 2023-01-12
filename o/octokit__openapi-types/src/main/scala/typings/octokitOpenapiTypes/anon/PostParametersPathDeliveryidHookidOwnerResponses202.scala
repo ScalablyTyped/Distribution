@@ -16,7 +16,8 @@ object PostParametersPathDeliveryidHookidOwnerResponses202 {
     __obj.asInstanceOf[PostParametersPathDeliveryidHookidOwnerResponses202]
   }
   
-  extension [Self <: PostParametersPathDeliveryidHookidOwnerResponses202](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostParametersPathDeliveryidHookidOwnerResponses202] (val x: Self) extends AnyVal {
     
     inline def setPost(value: ParametersPathDeliveryidHookidOwnerResponses202): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }

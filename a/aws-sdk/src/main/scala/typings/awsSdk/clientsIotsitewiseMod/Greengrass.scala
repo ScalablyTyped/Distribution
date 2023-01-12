@@ -18,7 +18,8 @@ object Greengrass {
     __obj.asInstanceOf[Greengrass]
   }
   
-  extension [Self <: Greengrass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Greengrass] (val x: Self) extends AnyVal {
     
     inline def setGroupArn(value: ARN): Self = StObject.set(x, "groupArn", value.asInstanceOf[js.Any])
   }

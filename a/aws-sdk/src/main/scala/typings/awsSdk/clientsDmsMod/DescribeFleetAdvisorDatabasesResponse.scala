@@ -23,7 +23,8 @@ object DescribeFleetAdvisorDatabasesResponse {
     __obj.asInstanceOf[DescribeFleetAdvisorDatabasesResponse]
   }
   
-  extension [Self <: DescribeFleetAdvisorDatabasesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFleetAdvisorDatabasesResponse] (val x: Self) extends AnyVal {
     
     inline def setDatabases(value: DatabaseList): Self = StObject.set(x, "Databases", value.asInstanceOf[js.Any])
     

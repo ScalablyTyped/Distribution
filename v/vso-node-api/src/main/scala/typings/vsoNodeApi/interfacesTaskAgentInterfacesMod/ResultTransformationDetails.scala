@@ -15,7 +15,8 @@ object ResultTransformationDetails {
     __obj.asInstanceOf[ResultTransformationDetails]
   }
   
-  extension [Self <: ResultTransformationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultTransformationDetails] (val x: Self) extends AnyVal {
     
     inline def setResultTemplate(value: String): Self = StObject.set(x, "resultTemplate", value.asInstanceOf[js.Any])
   }

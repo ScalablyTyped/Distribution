@@ -187,7 +187,8 @@ object srcCommandBuilderCommandModuleMod {
       __obj.asInstanceOf[CommandContext]
     }
     
-    extension [Self <: CommandContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandContext] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: typings.angularCli.anon.Options): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -241,7 +242,8 @@ object srcCommandBuilderCommandModuleMod {
       __obj.asInstanceOf[CommandModuleImplementation[T]]
     }
     
-    extension [Self <: CommandModuleImplementation[?], T /* <: js.Object */](x: Self & CommandModuleImplementation[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandModuleImplementation[?], T /* <: js.Object */] (val x: Self & CommandModuleImplementation[T]) extends AnyVal {
       
       inline def setAliases(value: js.Array[String] | String): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
@@ -290,7 +292,8 @@ object srcCommandBuilderCommandModuleMod {
       __obj.asInstanceOf[FullDescribe]
     }
     
-    extension [Self <: FullDescribe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullDescribe] (val x: Self) extends AnyVal {
       
       inline def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
       

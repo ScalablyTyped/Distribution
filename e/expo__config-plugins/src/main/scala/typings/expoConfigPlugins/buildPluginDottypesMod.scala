@@ -25,7 +25,8 @@ object buildPluginDottypesMod {
       __obj.asInstanceOf[ExportedConfig]
     }
     
-    extension [Self <: ExportedConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportedConfig] (val x: Self) extends AnyVal {
       
       inline def setMods(value: ModConfig): Self = StObject.set(x, "mods", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object buildPluginDottypesMod {
       __obj.asInstanceOf[ExportedConfigWithProps[Data]]
     }
     
-    extension [Self <: ExportedConfigWithProps[?], Data](x: Self & ExportedConfigWithProps[Data]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportedConfigWithProps[?], Data] (val x: Self & ExportedConfigWithProps[Data]) extends AnyVal {
       
       inline def setModRawConfig(value: ExpoConfig): Self = StObject.set(x, "modRawConfig", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object buildPluginDottypesMod {
       __obj.asInstanceOf[ModConfig]
     }
     
-    extension [Self <: ModConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModConfig] (val x: Self) extends AnyVal {
       
       inline def setAndroid(value: AppBuildGradle): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
@@ -158,7 +161,8 @@ object buildPluginDottypesMod {
       __obj.asInstanceOf[ModProps[T]]
     }
     
-    extension [Self <: ModProps[?], T](x: Self & ModProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModProps[?], T] (val x: Self & ModProps[T]) extends AnyVal {
       
       inline def setIntrospect(value: Boolean): Self = StObject.set(x, "introspect", value.asInstanceOf[js.Any])
       

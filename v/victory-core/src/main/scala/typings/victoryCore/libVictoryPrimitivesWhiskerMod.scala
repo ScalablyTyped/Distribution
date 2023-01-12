@@ -46,7 +46,8 @@ object libVictoryPrimitivesWhiskerMod {
       __obj.asInstanceOf[WhiskerAxes]
     }
     
-    extension [Self <: WhiskerAxes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WhiskerAxes] (val x: Self) extends AnyVal {
       
       inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object libVictoryPrimitivesWhiskerMod {
       __obj.asInstanceOf[WhiskerProps]
     }
     
-    extension [Self <: WhiskerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WhiskerProps] (val x: Self) extends AnyVal {
       
       inline def setGroupComponent(value: ReactElement): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
       

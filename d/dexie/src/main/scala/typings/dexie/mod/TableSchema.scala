@@ -32,7 +32,8 @@ object TableSchema {
     __obj.asInstanceOf[TableSchema]
   }
   
-  extension [Self <: TableSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableSchema] (val x: Self) extends AnyVal {
     
     inline def setIdxByName(value: StringDictionary[IndexSpec]): Self = StObject.set(x, "idxByName", value.asInstanceOf[js.Any])
     

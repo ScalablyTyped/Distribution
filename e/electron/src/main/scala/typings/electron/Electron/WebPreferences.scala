@@ -296,7 +296,8 @@ object WebPreferences {
     __obj.asInstanceOf[WebPreferences]
   }
   
-  extension [Self <: WebPreferences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebPreferences] (val x: Self) extends AnyVal {
     
     inline def setAccessibleTitle(value: String): Self = StObject.set(x, "accessibleTitle", value.asInstanceOf[js.Any])
     

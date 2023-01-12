@@ -28,7 +28,8 @@ object StartProjectVersionRequest {
     __obj.asInstanceOf[StartProjectVersionRequest]
   }
   
-  extension [Self <: StartProjectVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartProjectVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxInferenceUnits(value: InferenceUnits): Self = StObject.set(x, "MaxInferenceUnits", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object SqsQueueConfiguration {
     __obj.asInstanceOf[SqsQueueConfiguration]
   }
   
-  extension [Self <: SqsQueueConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqsQueueConfiguration] (val x: Self) extends AnyVal {
     
     inline def setQueuePolicy(value: SqsQueuePolicy): Self = StObject.set(x, "queuePolicy", value.asInstanceOf[js.Any])
     

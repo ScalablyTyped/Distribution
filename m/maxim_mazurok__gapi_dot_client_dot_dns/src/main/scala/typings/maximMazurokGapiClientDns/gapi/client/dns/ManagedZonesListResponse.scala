@@ -29,7 +29,8 @@ object ManagedZonesListResponse {
     __obj.asInstanceOf[ManagedZonesListResponse]
   }
   
-  extension [Self <: ManagedZonesListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedZonesListResponse] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: ResponseHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

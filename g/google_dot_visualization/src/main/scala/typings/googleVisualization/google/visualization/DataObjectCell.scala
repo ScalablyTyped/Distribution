@@ -19,7 +19,8 @@ object DataObjectCell {
     __obj.asInstanceOf[DataObjectCell]
   }
   
-  extension [Self <: DataObjectCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataObjectCell] (val x: Self) extends AnyVal {
     
     inline def setF(value: String): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     

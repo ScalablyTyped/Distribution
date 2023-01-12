@@ -43,7 +43,8 @@ object ITextboxOptions {
     __obj.asInstanceOf[ITextboxOptions]
   }
   
-  extension [Self <: ITextboxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextboxOptions] (val x: Self) extends AnyVal {
     
     inline def setDynamicMinWidth(value: Double): Self = StObject.set(x, "dynamicMinWidth", value.asInstanceOf[js.Any])
     

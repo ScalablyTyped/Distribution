@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Autoprefix]
     }
     
-    extension [Self <: Autoprefix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Autoprefix] (val x: Self) extends AnyVal {
       
       inline def setAutoprefix(value: Boolean): Self = StObject.set(x, "autoprefix", value.asInstanceOf[js.Any])
       

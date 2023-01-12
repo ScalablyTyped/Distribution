@@ -27,7 +27,8 @@ object ClearOptions {
     __obj.asInstanceOf[ClearOptions]
   }
   
-  extension [Self <: ClearOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearOptions] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
   }

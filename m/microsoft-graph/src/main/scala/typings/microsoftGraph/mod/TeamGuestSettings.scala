@@ -19,7 +19,8 @@ object TeamGuestSettings {
     __obj.asInstanceOf[TeamGuestSettings]
   }
   
-  extension [Self <: TeamGuestSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamGuestSettings] (val x: Self) extends AnyVal {
     
     inline def setAllowCreateUpdateChannels(value: NullableOption[Boolean]): Self = StObject.set(x, "allowCreateUpdateChannels", value.asInstanceOf[js.Any])
     

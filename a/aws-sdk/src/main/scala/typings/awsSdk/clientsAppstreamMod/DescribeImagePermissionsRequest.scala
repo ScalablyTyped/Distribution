@@ -33,7 +33,8 @@ object DescribeImagePermissionsRequest {
     __obj.asInstanceOf[DescribeImagePermissionsRequest]
   }
   
-  extension [Self <: DescribeImagePermissionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeImagePermissionsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

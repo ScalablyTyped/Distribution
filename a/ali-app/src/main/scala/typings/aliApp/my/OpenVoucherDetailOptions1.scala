@@ -17,7 +17,8 @@ object OpenVoucherDetailOptions1 {
     __obj.asInstanceOf[OpenVoucherDetailOptions1]
   }
   
-  extension [Self <: OpenVoucherDetailOptions1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenVoucherDetailOptions1] (val x: Self) extends AnyVal {
     
     inline def setPassId(value: String): Self = StObject.set(x, "passId", value.asInstanceOf[js.Any])
   }

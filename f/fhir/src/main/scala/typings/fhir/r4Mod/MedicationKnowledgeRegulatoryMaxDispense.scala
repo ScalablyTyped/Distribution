@@ -25,7 +25,8 @@ object MedicationKnowledgeRegulatoryMaxDispense {
     __obj.asInstanceOf[MedicationKnowledgeRegulatoryMaxDispense]
   }
   
-  extension [Self <: MedicationKnowledgeRegulatoryMaxDispense](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationKnowledgeRegulatoryMaxDispense] (val x: Self) extends AnyVal {
     
     inline def setPeriod(value: Duration): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     

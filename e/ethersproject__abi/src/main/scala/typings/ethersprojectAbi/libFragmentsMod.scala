@@ -224,7 +224,8 @@ object libFragmentsMod {
       __obj.asInstanceOf[JsonFragment]
     }
     
-    extension [Self <: JsonFragment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonFragment] (val x: Self) extends AnyVal {
       
       inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
       
@@ -287,7 +288,8 @@ object libFragmentsMod {
       __obj.asInstanceOf[JsonFragmentType]
     }
     
-    extension [Self <: JsonFragmentType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonFragmentType] (val x: Self) extends AnyVal {
       
       inline def setComponents(value: js.Array[JsonFragmentType]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       

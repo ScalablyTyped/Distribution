@@ -32,7 +32,8 @@ object distSrcPbPeerMod {
     
     inline def encode(obj: Address): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setIsCertified(value: Boolean): Self = StObject.set(x, "isCertified", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object distSrcPbPeerMod {
     
     inline def encode(obj: Metadata): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: Metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object distSrcPbPeerMod {
     
     inline def encode(obj: Peer): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: Peer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Peer] (val x: Self) extends AnyVal {
       
       inline def setAddresses(value: js.Array[Address]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       

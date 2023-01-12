@@ -48,7 +48,8 @@ object CreateNamespaceResponse {
     __obj.asInstanceOf[CreateNamespaceResponse]
   }
   
-  extension [Self <: CreateNamespaceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateNamespaceResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[AvgFps]
     }
     
-    extension [Self <: AvgFps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvgFps] (val x: Self) extends AnyVal {
       
       inline def setAvgFps(value: String): Self = StObject.set(x, "avgFps", value.asInstanceOf[js.Any])
       

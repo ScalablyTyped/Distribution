@@ -31,7 +31,8 @@ object AppsDynamiteSharedButton {
     __obj.asInstanceOf[AppsDynamiteSharedButton]
   }
   
-  extension [Self <: AppsDynamiteSharedButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedButton] (val x: Self) extends AnyVal {
     
     inline def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
     

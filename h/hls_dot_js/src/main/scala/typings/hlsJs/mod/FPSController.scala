@@ -61,7 +61,8 @@ object FPSController {
     __obj.asInstanceOf[FPSController]
   }
   
-  extension [Self <: FPSController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FPSController] (val x: Self) extends AnyVal {
     
     inline def setCheckFPS(value: (HTMLVideoElement, Double, Double) => Unit): Self = StObject.set(x, "checkFPS", js.Any.fromFunction3(value))
     

@@ -40,7 +40,8 @@ object libAtMod {
       __obj.asInstanceOf[At_[S, I, A]]
     }
     
-    extension [Self <: At_[?, ?, ?], S, I, A](x: Self & (At_[S, I, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: At_[?, ?, ?], S, I, A] (val x: Self & (At_[S, I, A])) extends AnyVal {
       
       inline def setAt(value: I => Lens_[S, A]): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
     }

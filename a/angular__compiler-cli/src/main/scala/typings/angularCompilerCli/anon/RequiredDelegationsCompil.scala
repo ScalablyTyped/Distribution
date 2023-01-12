@@ -145,7 +145,8 @@ object RequiredDelegationsCompil {
     __obj.asInstanceOf[RequiredDelegationsCompil]
   }
   
-  extension [Self <: RequiredDelegationsCompil](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredDelegationsCompil] (val x: Self) extends AnyVal {
     
     inline def setCreateHash(value: /* data */ String => String): Self = StObject.set(x, "createHash", js.Any.fromFunction1(value))
     

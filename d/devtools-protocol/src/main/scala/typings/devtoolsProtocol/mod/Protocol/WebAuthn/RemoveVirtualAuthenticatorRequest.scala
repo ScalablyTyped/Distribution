@@ -15,7 +15,8 @@ object RemoveVirtualAuthenticatorRequest {
     __obj.asInstanceOf[RemoveVirtualAuthenticatorRequest]
   }
   
-  extension [Self <: RemoveVirtualAuthenticatorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveVirtualAuthenticatorRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthenticatorId(value: AuthenticatorId): Self = StObject.set(x, "authenticatorId", value.asInstanceOf[js.Any])
   }

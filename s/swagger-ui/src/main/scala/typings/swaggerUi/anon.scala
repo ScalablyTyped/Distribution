@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[Actions]
     }
     
-    extension [Self <: Actions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Actions] (val x: Self) extends AnyVal {
       
       inline def setActions(value: Indexable): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Activate]
     }
     
-    extension [Self <: Activate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Activate] (val x: Self) extends AnyVal {
       
       inline def setActivate(value: Boolean): Self = StObject.set(x, "activate", value.asInstanceOf[js.Any])
       
@@ -109,7 +111,8 @@ object anon {
       __obj.asInstanceOf[AfterLoad]
     }
     
-    extension [Self <: AfterLoad](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AfterLoad] (val x: Self) extends AnyVal {
       
       inline def setAfterLoad(value: /* system */ Any => Any): Self = StObject.set(x, "afterLoad", js.Any.fromFunction1(value))
       
@@ -155,7 +158,8 @@ object anon {
       __obj.asInstanceOf[DefaultExpanded]
     }
     
-    extension [Self <: DefaultExpanded](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultExpanded] (val x: Self) extends AnyVal {
       
       inline def setDefaultExpanded(value: Boolean): Self = StObject.set(x, "defaultExpanded", value.asInstanceOf[js.Any])
       
@@ -186,7 +190,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -207,7 +212,8 @@ object anon {
       __obj.asInstanceOf[Syntax]
     }
     
-    extension [Self <: Syntax](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Syntax] (val x: Self) extends AnyVal {
       
       inline def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
       

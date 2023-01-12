@@ -9987,7 +9987,8 @@ object CSSPropertiesPartialRecorAnimationDirection {
     __obj.asInstanceOf[CSSPropertiesPartialRecorAnimationDirection]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorAnimationDirection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorAnimationDirection] (val x: Self) extends AnyVal {
     
     inline def `set--background`(value: String): Self = StObject.set(x, "--background", value.asInstanceOf[js.Any])
     

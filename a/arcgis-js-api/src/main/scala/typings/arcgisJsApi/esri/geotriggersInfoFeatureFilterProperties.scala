@@ -31,7 +31,8 @@ object geotriggersInfoFeatureFilterProperties {
     __obj.asInstanceOf[geotriggersInfoFeatureFilterProperties]
   }
   
-  extension [Self <: geotriggersInfoFeatureFilterProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: geotriggersInfoFeatureFilterProperties] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: GeometryProperties): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     

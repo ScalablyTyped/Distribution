@@ -45,7 +45,8 @@ object angularMod {
         __obj.asInstanceOf[IGrowlMessage]
       }
       
-      extension [Self <: IGrowlMessage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IGrowlMessage] (val x: Self) extends AnyVal {
         
         inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
         
@@ -89,7 +90,8 @@ object angularMod {
         __obj.asInstanceOf[IGrowlMessageConfig]
       }
       
-      extension [Self <: IGrowlMessageConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IGrowlMessageConfig] (val x: Self) extends AnyVal {
         
         inline def setDisableCloseButton(value: Boolean): Self = StObject.set(x, "disableCloseButton", value.asInstanceOf[js.Any])
         
@@ -386,7 +388,8 @@ object angularMod {
         __obj.asInstanceOf[IGrowlTTLConfig]
       }
       
-      extension [Self <: IGrowlTTLConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IGrowlTTLConfig] (val x: Self) extends AnyVal {
         
         inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         

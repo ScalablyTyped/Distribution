@@ -43,7 +43,8 @@ object AxisRangeChangedEventUIParam {
     __obj.asInstanceOf[AxisRangeChangedEventUIParam]
   }
   
-  extension [Self <: AxisRangeChangedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisRangeChangedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

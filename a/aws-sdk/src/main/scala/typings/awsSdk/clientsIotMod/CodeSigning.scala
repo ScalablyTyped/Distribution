@@ -28,7 +28,8 @@ object CodeSigning {
     __obj.asInstanceOf[CodeSigning]
   }
   
-  extension [Self <: CodeSigning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeSigning] (val x: Self) extends AnyVal {
     
     inline def setAwsSignerJobId(value: SigningJobId): Self = StObject.set(x, "awsSignerJobId", value.asInstanceOf[js.Any])
     

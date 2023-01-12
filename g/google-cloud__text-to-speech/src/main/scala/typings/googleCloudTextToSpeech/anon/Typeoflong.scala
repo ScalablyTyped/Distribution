@@ -23,7 +23,8 @@ object Typeoflong {
     __obj.asInstanceOf[Typeoflong]
   }
   
-  extension [Self <: Typeoflong](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeoflong] (val x: Self) extends AnyVal {
     
     inline def setFixed64(value: Double): Self = StObject.set(x, "fixed64", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object distTypesInternalOperatorsRepeatMod {
       __obj.asInstanceOf[RepeatConfig]
     }
     
-    extension [Self <: RepeatConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepeatConfig] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

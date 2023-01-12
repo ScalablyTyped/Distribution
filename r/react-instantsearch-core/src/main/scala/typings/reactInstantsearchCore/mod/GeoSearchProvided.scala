@@ -39,7 +39,8 @@ object GeoSearchProvided {
     __obj.asInstanceOf[GeoSearchProvided[THit]]
   }
   
-  extension [Self <: GeoSearchProvided[?], THit](x: Self & GeoSearchProvided[THit]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoSearchProvided[?], THit] (val x: Self & GeoSearchProvided[THit]) extends AnyVal {
     
     inline def setCreateURL(value: /* repeated */ Any => Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
     

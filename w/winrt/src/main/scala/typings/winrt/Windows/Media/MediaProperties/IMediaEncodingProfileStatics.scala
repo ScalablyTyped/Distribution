@@ -38,7 +38,8 @@ object IMediaEncodingProfileStatics {
     __obj.asInstanceOf[IMediaEncodingProfileStatics]
   }
   
-  extension [Self <: IMediaEncodingProfileStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMediaEncodingProfileStatics] (val x: Self) extends AnyVal {
     
     inline def setCreateFromFileAsync(value: IStorageFile => IAsyncOperation[MediaEncodingProfile]): Self = StObject.set(x, "createFromFileAsync", js.Any.fromFunction1(value))
     

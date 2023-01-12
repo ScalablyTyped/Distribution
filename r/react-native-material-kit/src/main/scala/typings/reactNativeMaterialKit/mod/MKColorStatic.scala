@@ -105,7 +105,8 @@ object MKColorStatic {
     __obj.asInstanceOf[MKColorStatic]
   }
   
-  extension [Self <: MKColorStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MKColorStatic] (val x: Self) extends AnyVal {
     
     inline def setAmber(value: String): Self = StObject.set(x, "Amber", value.asInstanceOf[js.Any])
     

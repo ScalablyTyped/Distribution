@@ -56,7 +56,8 @@ object CallbackURL {
     __obj.asInstanceOf[CallbackURL[T]]
   }
   
-  extension [Self <: CallbackURL[?], T /* <: String */](x: Self & CallbackURL[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackURL[?], T /* <: String */] (val x: Self & CallbackURL[T]) extends AnyVal {
     
     inline def setAddParameter(value: (String, String) => Unit): Self = StObject.set(x, "addParameter", js.Any.fromFunction2(value))
     

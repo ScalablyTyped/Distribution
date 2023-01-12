@@ -23,7 +23,8 @@ object DocumentAttribute {
     __obj.asInstanceOf[DocumentAttribute]
   }
   
-  extension [Self <: DocumentAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentAttribute] (val x: Self) extends AnyVal {
     
     inline def setKey(value: DocumentAttributeKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

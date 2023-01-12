@@ -19,7 +19,8 @@ object ZGText {
     __obj.asInstanceOf[ZGText]
   }
   
-  extension [Self <: ZGText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZGText] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

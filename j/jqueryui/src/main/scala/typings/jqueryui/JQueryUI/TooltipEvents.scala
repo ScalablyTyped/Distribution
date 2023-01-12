@@ -18,7 +18,8 @@ object TooltipEvents {
     __obj.asInstanceOf[TooltipEvents]
   }
   
-  extension [Self <: TooltipEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipEvents] (val x: Self) extends AnyVal {
     
     inline def setClose(value: (/* event */ JQueryEventObject, /* ui */ TooltipUIParams) => Unit): Self = StObject.set(x, "close", js.Any.fromFunction2(value))
     

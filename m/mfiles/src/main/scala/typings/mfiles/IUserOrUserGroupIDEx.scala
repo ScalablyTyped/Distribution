@@ -42,7 +42,8 @@ object IUserOrUserGroupIDEx {
     __obj.asInstanceOf[IUserOrUserGroupIDEx]
   }
   
-  extension [Self <: IUserOrUserGroupIDEx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUserOrUserGroupIDEx] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IUserOrUserGroupIDEx): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

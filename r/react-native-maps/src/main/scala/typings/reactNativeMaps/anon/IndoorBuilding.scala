@@ -15,7 +15,8 @@ object IndoorBuilding {
     __obj.asInstanceOf[IndoorBuilding]
   }
   
-  extension [Self <: IndoorBuilding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndoorBuilding] (val x: Self) extends AnyVal {
     
     inline def setIndoorBuilding(value: typings.reactNativeMaps.libMapViewDottypesMod.IndoorBuilding): Self = StObject.set(x, "IndoorBuilding", value.asInstanceOf[js.Any])
   }

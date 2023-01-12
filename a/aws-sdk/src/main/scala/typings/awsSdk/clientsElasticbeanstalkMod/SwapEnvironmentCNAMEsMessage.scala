@@ -33,7 +33,8 @@ object SwapEnvironmentCNAMEsMessage {
     __obj.asInstanceOf[SwapEnvironmentCNAMEsMessage]
   }
   
-  extension [Self <: SwapEnvironmentCNAMEsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwapEnvironmentCNAMEsMessage] (val x: Self) extends AnyVal {
     
     inline def setDestinationEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "DestinationEnvironmentId", value.asInstanceOf[js.Any])
     

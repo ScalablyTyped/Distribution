@@ -27,7 +27,8 @@ object BinaryOperation {
     __obj.asInstanceOf[BinaryOperation]
   }
   
-  extension [Self <: BinaryOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinaryOperation] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: Expression): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object FilePickerAcceptType {
     __obj.asInstanceOf[FilePickerAcceptType]
   }
   
-  extension [Self <: FilePickerAcceptType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilePickerAcceptType] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: Record[String, String | js.Array[String]]): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     

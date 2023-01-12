@@ -19,7 +19,8 @@ object ManagedProxyLocation {
     __obj.asInstanceOf[ManagedProxyLocation]
   }
   
-  extension [Self <: ManagedProxyLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedProxyLocation] (val x: Self) extends AnyVal {
     
     inline def setHost(value: ManagedDOMString): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     

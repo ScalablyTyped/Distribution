@@ -25,7 +25,8 @@ object PerDeviceStatusInBatch {
     __obj.asInstanceOf[PerDeviceStatusInBatch]
   }
   
-  extension [Self <: PerDeviceStatusInBatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerDeviceStatusInBatch] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object UpdateClientGrant {
     __obj.asInstanceOf[UpdateClientGrant]
   }
   
-  extension [Self <: UpdateClientGrant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateClientGrant] (val x: Self) extends AnyVal {
     
     inline def setScope(value: js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     

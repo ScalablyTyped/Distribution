@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Match]
     }
     
-    extension [Self <: Match](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Match] (val x: Self) extends AnyVal {
       
       inline def setMatch(value: String => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
       

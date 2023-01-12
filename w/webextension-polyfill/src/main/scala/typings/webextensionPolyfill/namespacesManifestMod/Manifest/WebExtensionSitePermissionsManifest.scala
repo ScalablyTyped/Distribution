@@ -29,7 +29,8 @@ object WebExtensionSitePermissionsManifest {
     __obj.asInstanceOf[WebExtensionSitePermissionsManifest]
   }
   
-  extension [Self <: WebExtensionSitePermissionsManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionSitePermissionsManifest] (val x: Self) extends AnyVal {
     
     inline def setInstall_origins(value: js.Array[String]): Self = StObject.set(x, "install_origins", value.asInstanceOf[js.Any])
     

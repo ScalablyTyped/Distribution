@@ -29,7 +29,8 @@ object BitStringParams {
     __obj.asInstanceOf[BitStringParams]
   }
   
-  extension [Self <: BitStringParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitStringParams] (val x: Self) extends AnyVal {
     
     inline def setIsConstructed(value: scala.Boolean): Self = StObject.set(x, "isConstructed", value.asInstanceOf[js.Any])
     

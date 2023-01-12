@@ -64,7 +64,8 @@ object distResultListMod {
       __obj.asInstanceOf[ResultListProps]
     }
     
-    extension [Self <: ResultListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultListProps] (val x: Self) extends AnyVal {
       
       inline def setClassNames(value: Item): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       

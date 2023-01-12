@@ -17,7 +17,8 @@ object DirectionChangedArgs {
     __obj.asInstanceOf[DirectionChangedArgs]
   }
   
-  extension [Self <: DirectionChangedArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionChangedArgs] (val x: Self) extends AnyVal {
     
     inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     

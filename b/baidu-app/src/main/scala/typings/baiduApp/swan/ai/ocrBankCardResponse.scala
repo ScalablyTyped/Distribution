@@ -19,7 +19,8 @@ object ocrBankCardResponse {
     __obj.asInstanceOf[ocrBankCardResponse]
   }
   
-  extension [Self <: ocrBankCardResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ocrBankCardResponse] (val x: Self) extends AnyVal {
     
     inline def setLog_id(value: String): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
     

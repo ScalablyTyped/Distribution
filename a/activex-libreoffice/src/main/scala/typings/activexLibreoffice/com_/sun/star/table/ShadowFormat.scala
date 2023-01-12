@@ -27,7 +27,8 @@ object ShadowFormat {
     __obj.asInstanceOf[ShadowFormat]
   }
   
-  extension [Self <: ShadowFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShadowFormat] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     

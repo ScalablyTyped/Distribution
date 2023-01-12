@@ -21,7 +21,8 @@ object MlEvaluateDataFrameDataframeRegressionSummary {
     __obj.asInstanceOf[MlEvaluateDataFrameDataframeRegressionSummary]
   }
   
-  extension [Self <: MlEvaluateDataFrameDataframeRegressionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlEvaluateDataFrameDataframeRegressionSummary] (val x: Self) extends AnyVal {
     
     inline def setHuber(value: MlEvaluateDataFrameDataframeEvaluationValue): Self = StObject.set(x, "huber", value.asInstanceOf[js.Any])
     

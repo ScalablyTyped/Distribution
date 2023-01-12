@@ -15,7 +15,8 @@ object ObjectDeserializerContext {
     __obj.asInstanceOf[ObjectDeserializerContext]
   }
   
-  extension [Self <: ObjectDeserializerContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectDeserializerContext] (val x: Self) extends AnyVal {
     
     inline def setRead(value: () => Any): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
   }

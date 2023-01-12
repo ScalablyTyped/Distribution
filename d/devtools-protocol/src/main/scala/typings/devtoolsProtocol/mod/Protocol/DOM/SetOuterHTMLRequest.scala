@@ -23,7 +23,8 @@ object SetOuterHTMLRequest {
     __obj.asInstanceOf[SetOuterHTMLRequest]
   }
   
-  extension [Self <: SetOuterHTMLRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetOuterHTMLRequest] (val x: Self) extends AnyVal {
     
     inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     

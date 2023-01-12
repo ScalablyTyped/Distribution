@@ -70,7 +70,8 @@ object HIDReportItem {
     __obj.asInstanceOf[HIDReportItem]
   }
   
-  extension [Self <: HIDReportItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HIDReportItem] (val x: Self) extends AnyVal {
     
     inline def setHasNull(value: Boolean): Self = StObject.set(x, "hasNull", value.asInstanceOf[js.Any])
     

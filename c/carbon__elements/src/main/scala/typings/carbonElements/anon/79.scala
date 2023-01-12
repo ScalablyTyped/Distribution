@@ -20,7 +20,8 @@ object `79` {
     __obj.asInstanceOf[`79`]
   }
   
-  extension [Self <: `79`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `79`] (val x: Self) extends AnyVal {
     
     inline def setName(value: `layer-accent-hover-03`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

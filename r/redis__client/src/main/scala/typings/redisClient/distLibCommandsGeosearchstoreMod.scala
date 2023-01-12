@@ -53,7 +53,8 @@ object distLibCommandsGeosearchstoreMod {
       __obj.asInstanceOf[GeoSearchStoreOptions]
     }
     
-    extension [Self <: GeoSearchStoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoSearchStoreOptions] (val x: Self) extends AnyVal {
       
       inline def setSTOREDIST(value: `true`): Self = StObject.set(x, "STOREDIST", value.asInstanceOf[js.Any])
       

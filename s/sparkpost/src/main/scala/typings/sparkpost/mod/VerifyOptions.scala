@@ -55,7 +55,8 @@ object VerifyOptions {
     __obj.asInstanceOf[VerifyOptions]
   }
   
-  extension [Self <: VerifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyOptions] (val x: Self) extends AnyVal {
     
     inline def setAbuse_at_token(value: String): Self = StObject.set(x, "abuse_at_token", value.asInstanceOf[js.Any])
     

@@ -96,7 +96,8 @@ object bitVectorMod {
       __obj.asInstanceOf[BitVectorOptions]
     }
     
-    extension [Self <: BitVectorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitVectorOptions] (val x: Self) extends AnyVal {
       
       inline def setInitialCapacity(value: Double): Self = StObject.set(x, "initialCapacity", value.asInstanceOf[js.Any])
       

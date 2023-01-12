@@ -19,7 +19,8 @@ object RASTER {
     __obj.asInstanceOf[RASTER]
   }
   
-  extension [Self <: RASTER](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RASTER] (val x: Self) extends AnyVal {
     
     inline def setRASTER(value: String): Self = StObject.set(x, "RASTER", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object VerifyOptions {
     __obj.asInstanceOf[VerifyOptions]
   }
   
-  extension [Self <: VerifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyOptions] (val x: Self) extends AnyVal {
     
     inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
     

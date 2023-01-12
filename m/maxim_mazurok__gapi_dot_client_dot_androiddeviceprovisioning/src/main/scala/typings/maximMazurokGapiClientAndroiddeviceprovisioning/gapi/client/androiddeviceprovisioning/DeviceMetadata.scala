@@ -18,7 +18,8 @@ object DeviceMetadata {
     __obj.asInstanceOf[DeviceMetadata]
   }
   
-  extension [Self <: DeviceMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceMetadata] (val x: Self) extends AnyVal {
     
     inline def setEntries(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

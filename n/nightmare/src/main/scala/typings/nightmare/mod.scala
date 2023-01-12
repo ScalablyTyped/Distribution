@@ -119,7 +119,8 @@ object mod {
       __obj.asInstanceOf[IConstructorOptions]
     }
     
-    extension [Self <: IConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setCookiesFile(value: String): Self = StObject.set(x, "cookiesFile", value.asInstanceOf[js.Any])
       
@@ -256,7 +257,8 @@ object mod {
       __obj.asInstanceOf[ICookie]
     }
     
-    extension [Self <: ICookie](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICookie] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -317,7 +319,8 @@ object mod {
       __obj.asInstanceOf[ICookieQuery]
     }
     
-    extension [Self <: ICookieQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICookieQuery] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -360,7 +363,8 @@ object mod {
       __obj.asInstanceOf[INetwordRequest]
     }
     
-    extension [Self <: INetwordRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INetwordRequest] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
@@ -389,7 +393,8 @@ object mod {
       __obj.asInstanceOf[IRequest]
     }
     
-    extension [Self <: IRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRequest] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -420,7 +425,8 @@ object mod {
       __obj.asInstanceOf[IResourceError]
     }
     
-    extension [Self <: IResourceError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResourceError] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
@@ -472,7 +478,8 @@ object mod {
       __obj.asInstanceOf[IResponse]
     }
     
-    extension [Self <: IResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResponse] (val x: Self) extends AnyVal {
       
       inline def setBodySize(value: Double): Self = StObject.set(x, "bodySize", value.asInstanceOf[js.Any])
       
@@ -511,7 +518,8 @@ object mod {
       __obj.asInstanceOf[IStackTrace]
     }
     
-    extension [Self <: IStackTrace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStackTrace] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

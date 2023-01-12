@@ -123,7 +123,8 @@ object SyntaxWalker {
     __obj.asInstanceOf[SyntaxWalker]
   }
   
-  extension [Self <: SyntaxWalker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntaxWalker] (val x: Self) extends AnyVal {
     
     inline def setVisitList(value: ISyntaxList => Unit): Self = StObject.set(x, "visitList", js.Any.fromFunction1(value))
     

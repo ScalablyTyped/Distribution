@@ -29,7 +29,8 @@ object AnalysisCompoundWordTokenFilterBase {
     __obj.asInstanceOf[AnalysisCompoundWordTokenFilterBase]
   }
   
-  extension [Self <: AnalysisCompoundWordTokenFilterBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisCompoundWordTokenFilterBase] (val x: Self) extends AnyVal {
     
     inline def setHyphenation_patterns_path(value: String): Self = StObject.set(x, "hyphenation_patterns_path", value.asInstanceOf[js.Any])
     

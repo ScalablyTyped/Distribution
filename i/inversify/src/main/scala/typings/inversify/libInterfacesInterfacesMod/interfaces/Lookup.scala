@@ -41,7 +41,8 @@ object Lookup {
     __obj.asInstanceOf[Lookup[T]]
   }
   
-  extension [Self <: Lookup[?], T](x: Self & Lookup[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lookup[?], T] (val x: Self & Lookup[T]) extends AnyVal {
     
     inline def setAdd(value: (ServiceIdentifier[Any], T) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

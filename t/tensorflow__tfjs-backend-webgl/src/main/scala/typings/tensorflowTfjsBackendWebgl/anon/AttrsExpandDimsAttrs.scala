@@ -22,7 +22,8 @@ object AttrsExpandDimsAttrs {
     __obj.asInstanceOf[AttrsExpandDimsAttrs]
   }
   
-  extension [Self <: AttrsExpandDimsAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsExpandDimsAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: ExpandDimsAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

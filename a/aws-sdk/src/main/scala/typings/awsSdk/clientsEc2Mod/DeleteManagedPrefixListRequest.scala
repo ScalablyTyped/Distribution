@@ -23,7 +23,8 @@ object DeleteManagedPrefixListRequest {
     __obj.asInstanceOf[DeleteManagedPrefixListRequest]
   }
   
-  extension [Self <: DeleteManagedPrefixListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteManagedPrefixListRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

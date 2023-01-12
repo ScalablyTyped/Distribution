@@ -36,7 +36,8 @@ object distCordovaTestHelpersMockFetchMod {
       __obj.asInstanceOf[Call]
     }
     
-    extension [Self <: Call](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Call] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object distCordovaTestHelpersMockFetchMod {
       __obj.asInstanceOf[Route]
     }
     
-    extension [Self <: Route](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
       
       inline def setCalls(value: js.Array[Call]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object PickLineOptionsisStack {
     __obj.asInstanceOf[PickLineOptionsisStack]
   }
   
-  extension [Self <: PickLineOptionsisStack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickLineOptionsisStack] (val x: Self) extends AnyVal {
     
     inline def setIsStack(value: Boolean): Self = StObject.set(x, "isStack", value.asInstanceOf[js.Any])
     

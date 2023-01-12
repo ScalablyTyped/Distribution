@@ -19,7 +19,8 @@ object QuickSelectOption {
     __obj.asInstanceOf[QuickSelectOption[T]]
   }
   
-  extension [Self <: QuickSelectOption[?], T](x: Self & QuickSelectOption[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuickSelectOption[?], T] (val x: Self & QuickSelectOption[T]) extends AnyVal {
     
     inline def setBeginDate(value: T): Self = StObject.set(x, "beginDate", value.asInstanceOf[js.Any])
     

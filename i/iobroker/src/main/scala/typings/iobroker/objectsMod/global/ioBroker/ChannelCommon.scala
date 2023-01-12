@@ -21,7 +21,8 @@ object ChannelCommon {
     __obj.asInstanceOf[ChannelCommon]
   }
   
-  extension [Self <: ChannelCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelCommon] (val x: Self) extends AnyVal {
     
     inline def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     

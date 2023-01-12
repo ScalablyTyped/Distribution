@@ -44,7 +44,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MimeEntry]
     }
     
-    extension [Self <: MimeEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MimeEntry] (val x: Self) extends AnyVal {
       
       inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       

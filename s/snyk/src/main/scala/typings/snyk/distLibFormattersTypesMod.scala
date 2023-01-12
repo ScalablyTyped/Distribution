@@ -52,7 +52,8 @@ object distLibFormattersTypesMod {
       __obj.asInstanceOf[BasicVulnInfo]
     }
     
-    extension [Self <: BasicVulnInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicVulnInfo] (val x: Self) extends AnyVal {
       
       inline def setFixedIn(value: js.Array[String]): Self = StObject.set(x, "fixedIn", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object distLibFormattersTypesMod {
       __obj.asInstanceOf[TopLevelPackageUpgrade]
     }
     
-    extension [Self <: TopLevelPackageUpgrade](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopLevelPackageUpgrade] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object WizardContentLoadEvent {
     __obj.asInstanceOf[WizardContentLoadEvent]
   }
   
-  extension [Self <: WizardContentLoadEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WizardContentLoadEvent] (val x: Self) extends AnyVal {
     
     inline def setStep(value: Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     

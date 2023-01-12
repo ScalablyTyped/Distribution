@@ -189,7 +189,8 @@ object libPluginlistMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setConfirm(value: /* id */ String => js.Promise[Unit]): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
         

@@ -27,7 +27,8 @@ object BillingAccount {
     __obj.asInstanceOf[BillingAccount]
   }
   
-  extension [Self <: BillingAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BillingAccount] (val x: Self) extends AnyVal {
     
     inline def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     

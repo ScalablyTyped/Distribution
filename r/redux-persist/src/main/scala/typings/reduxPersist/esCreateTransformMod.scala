@@ -45,7 +45,8 @@ object esCreateTransformMod {
       __obj.asInstanceOf[TransformConfig]
     }
     
-    extension [Self <: TransformConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformConfig] (val x: Self) extends AnyVal {
       
       inline def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       

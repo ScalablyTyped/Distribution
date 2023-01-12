@@ -106,7 +106,8 @@ object InsertModalColumnDescription {
     __obj.asInstanceOf[InsertModalColumnDescription[TRow]]
   }
   
-  extension [Self <: InsertModalColumnDescription[?], TRow /* <: js.Object */](x: Self & InsertModalColumnDescription[TRow]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertModalColumnDescription[?], TRow /* <: js.Object */] (val x: Self & InsertModalColumnDescription[TRow]) extends AnyVal {
     
     inline def setAutoValue(value: Boolean): Self = StObject.set(x, "autoValue", value.asInstanceOf[js.Any])
     

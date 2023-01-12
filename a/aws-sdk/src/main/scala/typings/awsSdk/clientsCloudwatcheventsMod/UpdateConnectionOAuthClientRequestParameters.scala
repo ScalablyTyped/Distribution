@@ -23,7 +23,8 @@ object UpdateConnectionOAuthClientRequestParameters {
     __obj.asInstanceOf[UpdateConnectionOAuthClientRequestParameters]
   }
   
-  extension [Self <: UpdateConnectionOAuthClientRequestParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateConnectionOAuthClientRequestParameters] (val x: Self) extends AnyVal {
     
     inline def setClientID(value: AuthHeaderParameters): Self = StObject.set(x, "ClientID", value.asInstanceOf[js.Any])
     

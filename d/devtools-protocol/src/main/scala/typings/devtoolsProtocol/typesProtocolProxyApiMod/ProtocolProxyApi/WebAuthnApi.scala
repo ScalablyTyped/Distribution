@@ -104,7 +104,8 @@ object WebAuthnApi {
     __obj.asInstanceOf[WebAuthnApi]
   }
   
-  extension [Self <: WebAuthnApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAuthnApi] (val x: Self) extends AnyVal {
     
     inline def setAddCredential(value: AddCredentialRequest => js.Promise[Unit]): Self = StObject.set(x, "addCredential", js.Any.fromFunction1(value))
     

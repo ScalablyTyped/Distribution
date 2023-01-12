@@ -23,7 +23,8 @@ object UplinkEchoConfig {
     __obj.asInstanceOf[UplinkEchoConfig]
   }
   
-  extension [Self <: UplinkEchoConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UplinkEchoConfig] (val x: Self) extends AnyVal {
     
     inline def setAntennaUplinkConfigArn(value: ConfigArn): Self = StObject.set(x, "antennaUplinkConfigArn", value.asInstanceOf[js.Any])
     

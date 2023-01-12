@@ -35,7 +35,8 @@ object TestResultParameterModel {
     __obj.asInstanceOf[TestResultParameterModel]
   }
   
-  extension [Self <: TestResultParameterModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestResultParameterModel] (val x: Self) extends AnyVal {
     
     inline def setActionPath(value: String): Self = StObject.set(x, "actionPath", value.asInstanceOf[js.Any])
     

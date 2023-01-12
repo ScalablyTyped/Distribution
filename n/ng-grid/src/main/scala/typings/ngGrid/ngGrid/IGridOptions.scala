@@ -176,7 +176,8 @@ object IGridOptions {
     __obj.asInstanceOf[IGridOptions]
   }
   
-  extension [Self <: IGridOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGridOptions] (val x: Self) extends AnyVal {
     
     inline def setAfterSelectionChange(value: (/* rowItem */ js.UndefOr[IRow], /* event */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "afterSelectionChange", js.Any.fromFunction2(value))
     

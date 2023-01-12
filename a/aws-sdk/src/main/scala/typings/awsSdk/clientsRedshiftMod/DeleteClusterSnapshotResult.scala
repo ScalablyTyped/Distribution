@@ -15,7 +15,8 @@ object DeleteClusterSnapshotResult {
     __obj.asInstanceOf[DeleteClusterSnapshotResult]
   }
   
-  extension [Self <: DeleteClusterSnapshotResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteClusterSnapshotResult] (val x: Self) extends AnyVal {
     
     inline def setSnapshot(value: Snapshot): Self = StObject.set(x, "Snapshot", value.asInstanceOf[js.Any])
     

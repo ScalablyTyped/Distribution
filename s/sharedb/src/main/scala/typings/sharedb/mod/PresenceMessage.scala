@@ -42,7 +42,8 @@ object PresenceMessage {
     __obj.asInstanceOf[PresenceMessage]
   }
   
-  extension [Self <: PresenceMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PresenceMessage] (val x: Self) extends AnyVal {
     
     inline def setA(value: p): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

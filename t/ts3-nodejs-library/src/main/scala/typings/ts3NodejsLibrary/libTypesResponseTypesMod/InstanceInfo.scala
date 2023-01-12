@@ -59,7 +59,8 @@ object InstanceInfo {
     __obj.asInstanceOf[InstanceInfo]
   }
   
-  extension [Self <: InstanceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceInfo] (val x: Self) extends AnyVal {
     
     inline def setServerinstanceDatabaseVersion(value: Double): Self = StObject.set(x, "serverinstanceDatabaseVersion", value.asInstanceOf[js.Any])
     

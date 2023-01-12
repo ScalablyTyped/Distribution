@@ -33,7 +33,8 @@ object RemoteFunctionOptions {
     __obj.asInstanceOf[RemoteFunctionOptions]
   }
   
-  extension [Self <: RemoteFunctionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteFunctionOptions] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

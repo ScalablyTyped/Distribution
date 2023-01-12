@@ -64,7 +64,8 @@ object XSimpleFileAccess3 {
     __obj.asInstanceOf[XSimpleFileAccess3]
   }
   
-  extension [Self <: XSimpleFileAccess3](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSimpleFileAccess3] (val x: Self) extends AnyVal {
     
     inline def setIsHidden(value: String => Boolean): Self = StObject.set(x, "isHidden", js.Any.fromFunction1(value))
     

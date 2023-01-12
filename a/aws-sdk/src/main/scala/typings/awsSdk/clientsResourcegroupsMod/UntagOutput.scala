@@ -23,7 +23,8 @@ object UntagOutput {
     __obj.asInstanceOf[UntagOutput]
   }
   
-  extension [Self <: UntagOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UntagOutput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: GroupArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

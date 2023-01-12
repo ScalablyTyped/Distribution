@@ -51,7 +51,8 @@ object XNumberFormatPreviewer {
     __obj.asInstanceOf[XNumberFormatPreviewer]
   }
   
-  extension [Self <: XNumberFormatPreviewer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNumberFormatPreviewer] (val x: Self) extends AnyVal {
     
     inline def setConvertNumberToPreviewString(value: (String, Double, Locale, Boolean) => String): Self = StObject.set(x, "convertNumberToPreviewString", js.Any.fromFunction4(value))
     

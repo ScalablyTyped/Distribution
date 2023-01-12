@@ -27,7 +27,8 @@ object GetIntegrationResponse {
     __obj.asInstanceOf[GetIntegrationResponse]
   }
   
-  extension [Self <: GetIntegrationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIntegrationResponse] (val x: Self) extends AnyVal {
     
     inline def setCollections(value: js.Array[Collection]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
     

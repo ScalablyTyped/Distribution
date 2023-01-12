@@ -24,7 +24,8 @@ object OptionsStore {
     __obj.asInstanceOf[OptionsStore]
   }
   
-  extension [Self <: OptionsStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsStore] (val x: Self) extends AnyVal {
     
     inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     

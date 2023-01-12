@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[ISaxHandler]
     }
     
-    extension [Self <: ISaxHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISaxHandler] (val x: Self) extends AnyVal {
       
       inline def setCdata(value: (String, Any) => Unit): Self = StObject.set(x, "cdata", js.Any.fromFunction2(value))
       

@@ -23,7 +23,8 @@ object ObjectRefinedBatchRequest {
     __obj.asInstanceOf[ObjectRefinedBatchRequest[RT]]
   }
   
-  extension [Self <: ObjectRefinedBatchRequest[?], RT /* <: js.UndefOr[ResponseType] */](x: Self & ObjectRefinedBatchRequest[RT]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectRefinedBatchRequest[?], RT /* <: js.UndefOr[ResponseType] */] (val x: Self & ObjectRefinedBatchRequest[RT]) extends AnyVal {
     
     inline def setBody(value: RequestBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

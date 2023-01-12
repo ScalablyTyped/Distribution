@@ -20,7 +20,8 @@ object OptionalCredentialsPerson {
     __obj.asInstanceOf[OptionalCredentialsPerson]
   }
   
-  extension [Self <: OptionalCredentialsPerson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionalCredentialsPerson] (val x: Self) extends AnyVal {
     
     inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     

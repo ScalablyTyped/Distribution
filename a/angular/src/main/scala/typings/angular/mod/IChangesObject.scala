@@ -19,7 +19,8 @@ object IChangesObject {
     __obj.asInstanceOf[IChangesObject[T]]
   }
   
-  extension [Self <: IChangesObject[?], T](x: Self & IChangesObject[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IChangesObject[?], T] (val x: Self & IChangesObject[T]) extends AnyVal {
     
     inline def setCurrentValue(value: T): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
     

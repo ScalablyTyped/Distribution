@@ -86,7 +86,8 @@ object AgentJobStepInfo {
     __obj.asInstanceOf[AgentJobStepInfo]
   }
   
-  extension [Self <: AgentJobStepInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentJobStepInfo] (val x: Self) extends AnyVal {
     
     inline def setAppendLogToTable(value: Boolean): Self = StObject.set(x, "appendLogToTable", value.asInstanceOf[js.Any])
     

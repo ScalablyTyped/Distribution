@@ -26,7 +26,8 @@ object RequestOptions {
     __obj.asInstanceOf[RequestOptions]
   }
   
-  extension [Self <: RequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
     
     inline def setConstructor(value: /* options */ js.UndefOr[RequestOptions] => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
     

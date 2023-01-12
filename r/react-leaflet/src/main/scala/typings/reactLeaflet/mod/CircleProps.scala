@@ -61,7 +61,8 @@ object CircleProps {
     __obj.asInstanceOf[CircleProps]
   }
   
-  extension [Self <: CircleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircleProps] (val x: Self) extends AnyVal {
     
     inline def setBubblingMouseEvents(value: Boolean): Self = StObject.set(x, "bubblingMouseEvents", value.asInstanceOf[js.Any])
     

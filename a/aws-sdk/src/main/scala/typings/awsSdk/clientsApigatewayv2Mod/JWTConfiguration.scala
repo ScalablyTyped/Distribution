@@ -24,7 +24,8 @@ object JWTConfiguration {
     __obj.asInstanceOf[JWTConfiguration]
   }
   
-  extension [Self <: JWTConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JWTConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAudience(value: listOfString): Self = StObject.set(x, "Audience", value.asInstanceOf[js.Any])
     

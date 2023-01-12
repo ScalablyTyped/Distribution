@@ -36,7 +36,8 @@ object StageChangeEventContext {
     __obj.asInstanceOf[StageChangeEventContext]
   }
   
-  extension [Self <: StageChangeEventContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StageChangeEventContext] (val x: Self) extends AnyVal {
     
     inline def setGetEventArgs(value: () => StageChangeEventArguments): Self = StObject.set(x, "getEventArgs", js.Any.fromFunction0(value))
   }

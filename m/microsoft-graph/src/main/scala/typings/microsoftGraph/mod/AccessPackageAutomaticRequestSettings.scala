@@ -20,7 +20,8 @@ object AccessPackageAutomaticRequestSettings {
     __obj.asInstanceOf[AccessPackageAutomaticRequestSettings]
   }
   
-  extension [Self <: AccessPackageAutomaticRequestSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessPackageAutomaticRequestSettings] (val x: Self) extends AnyVal {
     
     inline def setGracePeriodBeforeAccessRemoval(value: NullableOption[String]): Self = StObject.set(x, "gracePeriodBeforeAccessRemoval", value.asInstanceOf[js.Any])
     

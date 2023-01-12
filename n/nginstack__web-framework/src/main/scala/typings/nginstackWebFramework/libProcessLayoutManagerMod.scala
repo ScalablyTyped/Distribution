@@ -135,7 +135,8 @@ object libProcessLayoutManagerMod {
       __obj.asInstanceOf[LayoutManager]
     }
     
-    extension [Self <: LayoutManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutManager] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: (Any, Double, Double, /* repeated */ Any) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction4(value))
       

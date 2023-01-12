@@ -29,7 +29,8 @@ object IdentityRefWithEmail {
     __obj.asInstanceOf[IdentityRefWithEmail]
   }
   
-  extension [Self <: IdentityRefWithEmail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityRefWithEmail] (val x: Self) extends AnyVal {
     
     inline def setPreferredEmailAddress(value: String): Self = StObject.set(x, "preferredEmailAddress", value.asInstanceOf[js.Any])
   }

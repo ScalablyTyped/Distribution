@@ -22,7 +22,8 @@ object Authentication {
     __obj.asInstanceOf[Authentication]
   }
   
-  extension [Self <: Authentication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Authentication] (val x: Self) extends AnyVal {
     
     inline def setCustomAccount(value: CustomAccount): Self = StObject.set(x, "customAccount", value.asInstanceOf[js.Any])
     

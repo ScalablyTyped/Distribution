@@ -106,7 +106,8 @@ object IHttpProxy {
     __obj.asInstanceOf[IHttpProxy]
   }
   
-  extension [Self <: IHttpProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHttpProxy] (val x: Self) extends AnyVal {
     
     inline def setActionMethods(value: Any): Self = StObject.set(x, "actionMethods", value.asInstanceOf[js.Any])
     

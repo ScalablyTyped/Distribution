@@ -23,7 +23,8 @@ object StringLiteral {
     __obj.asInstanceOf[StringLiteral]
   }
   
-  extension [Self <: StringLiteral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringLiteral] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

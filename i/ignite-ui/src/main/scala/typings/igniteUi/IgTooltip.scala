@@ -23,7 +23,8 @@ object IgTooltip {
     __obj.asInstanceOf[IgTooltip]
   }
   
-  extension [Self <: IgTooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTooltip] (val x: Self) extends AnyVal {
     
     inline def setArrowLocation(value: String): Self = StObject.set(x, "arrowLocation", value.asInstanceOf[js.Any])
     

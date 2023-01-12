@@ -17,7 +17,8 @@ object DataTableRowExpansionTemplate {
     __obj.asInstanceOf[DataTableRowExpansionTemplate]
   }
   
-  extension [Self <: DataTableRowExpansionTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableRowExpansionTemplate] (val x: Self) extends AnyVal {
     
     inline def setCustomRendering(value: Boolean): Self = StObject.set(x, "customRendering", value.asInstanceOf[js.Any])
     

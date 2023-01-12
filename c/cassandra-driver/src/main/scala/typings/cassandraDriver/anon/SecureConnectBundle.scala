@@ -16,7 +16,8 @@ object SecureConnectBundle {
     __obj.asInstanceOf[SecureConnectBundle]
   }
   
-  extension [Self <: SecureConnectBundle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecureConnectBundle] (val x: Self) extends AnyVal {
     
     inline def setSecureConnectBundle(value: String | URL_): Self = StObject.set(x, "secureConnectBundle", value.asInstanceOf[js.Any])
   }

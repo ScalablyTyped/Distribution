@@ -82,7 +82,8 @@ object libInputdialogMod {
         __obj.asInstanceOf[IBooleanOptions]
       }
       
-      extension [Self <: IBooleanOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IBooleanOptions] (val x: Self) extends AnyVal {
         
         inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
@@ -127,7 +128,8 @@ object libInputdialogMod {
         __obj.asInstanceOf[IItemOptions]
       }
       
-      extension [Self <: IItemOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IItemOptions] (val x: Self) extends AnyVal {
         
         inline def setCurrent(value: Double | String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
         
@@ -166,7 +168,8 @@ object libInputdialogMod {
         __obj.asInstanceOf[INumberOptions]
       }
       
-      extension [Self <: INumberOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: INumberOptions] (val x: Self) extends AnyVal {
         
         inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
@@ -222,7 +225,8 @@ object libInputdialogMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setCancelLabel(value: String): Self = StObject.set(x, "cancelLabel", value.asInstanceOf[js.Any])
         
@@ -286,7 +290,8 @@ object libInputdialogMod {
         __obj.asInstanceOf[ITextOptions]
       }
       
-      extension [Self <: ITextOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ITextOptions] (val x: Self) extends AnyVal {
         
         inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
         

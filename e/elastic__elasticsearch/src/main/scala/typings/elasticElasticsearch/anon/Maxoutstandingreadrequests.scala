@@ -34,7 +34,8 @@ object Maxoutstandingreadrequests {
     __obj.asInstanceOf[Maxoutstandingreadrequests]
   }
   
-  extension [Self <: Maxoutstandingreadrequests](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Maxoutstandingreadrequests] (val x: Self) extends AnyVal {
     
     inline def setMax_outstanding_read_requests(value: long): Self = StObject.set(x, "max_outstanding_read_requests", value.asInstanceOf[js.Any])
     

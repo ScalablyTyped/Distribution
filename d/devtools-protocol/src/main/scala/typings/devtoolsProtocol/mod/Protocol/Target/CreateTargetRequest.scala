@@ -52,7 +52,8 @@ object CreateTargetRequest {
     __obj.asInstanceOf[CreateTargetRequest]
   }
   
-  extension [Self <: CreateTargetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTargetRequest] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

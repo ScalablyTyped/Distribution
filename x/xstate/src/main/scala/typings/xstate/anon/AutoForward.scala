@@ -19,7 +19,8 @@ object AutoForward {
     __obj.asInstanceOf[AutoForward]
   }
   
-  extension [Self <: AutoForward](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoForward] (val x: Self) extends AnyVal {
     
     inline def setAutoForward(value: Boolean): Self = StObject.set(x, "autoForward", value.asInstanceOf[js.Any])
     

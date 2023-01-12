@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsLayoutListWithPanelMod extends Shortcut {
       __obj.asInstanceOf[LayoutListWithPanelProps]
     }
     
-    extension [Self <: LayoutListWithPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutListWithPanelProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

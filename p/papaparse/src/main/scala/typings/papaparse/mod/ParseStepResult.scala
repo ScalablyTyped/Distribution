@@ -28,7 +28,8 @@ object ParseStepResult {
     __obj.asInstanceOf[ParseStepResult[T]]
   }
   
-  extension [Self <: ParseStepResult[?], T](x: Self & ParseStepResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseStepResult[?], T] (val x: Self & ParseStepResult[T]) extends AnyVal {
     
     inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

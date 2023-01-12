@@ -23,7 +23,8 @@ object ManualChunkMeta {
     __obj.asInstanceOf[ManualChunkMeta]
   }
   
-  extension [Self <: ManualChunkMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManualChunkMeta] (val x: Self) extends AnyVal {
     
     inline def setGetModuleIds(value: () => IterableIterator[String]): Self = StObject.set(x, "getModuleIds", js.Any.fromFunction0(value))
     

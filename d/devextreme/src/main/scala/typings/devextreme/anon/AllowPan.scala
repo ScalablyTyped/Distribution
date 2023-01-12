@@ -19,7 +19,8 @@ object AllowPan {
     __obj.asInstanceOf[AllowPan]
   }
   
-  extension [Self <: AllowPan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowPan] (val x: Self) extends AnyVal {
     
     inline def setAllowPan(value: Boolean): Self = StObject.set(x, "allowPan", value.asInstanceOf[js.Any])
     

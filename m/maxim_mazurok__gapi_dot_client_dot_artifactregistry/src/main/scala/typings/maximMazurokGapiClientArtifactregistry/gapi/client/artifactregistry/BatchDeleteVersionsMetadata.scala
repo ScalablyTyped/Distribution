@@ -16,7 +16,8 @@ object BatchDeleteVersionsMetadata {
     __obj.asInstanceOf[BatchDeleteVersionsMetadata]
   }
   
-  extension [Self <: BatchDeleteVersionsMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteVersionsMetadata] (val x: Self) extends AnyVal {
     
     inline def setFailedVersions(value: js.Array[String]): Self = StObject.set(x, "failedVersions", value.asInstanceOf[js.Any])
     

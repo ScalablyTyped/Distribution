@@ -25,7 +25,8 @@ object histogram {
     __obj.asInstanceOf[histogram]
   }
   
-  extension [Self <: histogram](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: histogram] (val x: Self) extends AnyVal {
     
     inline def setHistogram(value: histogramHistogramParams => js.Promise[HistogramResult]): Self = StObject.set(x, "histogram", js.Any.fromFunction1(value))
   }

@@ -110,7 +110,8 @@ object commangular {
       __obj.asInstanceOf[ICommAngularProvider]
     }
     
-    extension [Self <: ICommAngularProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommAngularProvider] (val x: Self) extends AnyVal {
       
       inline def setAsFlow(value: () => ICommAngularDescriptor): Self = StObject.set(x, "asFlow", js.Any.fromFunction0(value))
       
@@ -251,7 +252,8 @@ object commangular {
       __obj.asInstanceOf[ICommand]
     }
     
-    extension [Self <: ICommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommand] (val x: Self) extends AnyVal {
       
       inline def setExecute(value: () => Any): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
     }
@@ -277,7 +279,8 @@ object commangular {
       __obj.asInstanceOf[ICommandCall]
     }
     
-    extension [Self <: ICommandCall](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommandCall] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
@@ -307,7 +310,8 @@ object commangular {
       __obj.asInstanceOf[ICommandConfig]
     }
     
-    extension [Self <: ICommandConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommandConfig] (val x: Self) extends AnyVal {
       
       inline def setResultKey(value: String): Self = StObject.set(x, "resultKey", value.asInstanceOf[js.Any])
     }
@@ -354,7 +358,8 @@ object commangular {
       __obj.asInstanceOf[ICommandInfo]
     }
     
-    extension [Self <: ICommandInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommandInfo] (val x: Self) extends AnyVal {
       
       inline def setCanceled(value: () => Boolean): Self = StObject.set(x, "canceled", js.Any.fromFunction0(value))
       
@@ -385,7 +390,8 @@ object commangular {
       __obj.asInstanceOf[ICommandResult]
     }
     
-    extension [Self <: ICommandResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommandResult] (val x: Self) extends AnyVal {
       
       inline def setLastResult(value: Any): Self = StObject.set(x, "lastResult", value.asInstanceOf[js.Any])
     }
@@ -416,7 +422,8 @@ object commangular {
       __obj.asInstanceOf[IResultCommand]
     }
     
-    extension [Self <: IResultCommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResultCommand] (val x: Self) extends AnyVal {
       
       inline def setOnError(value: js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       

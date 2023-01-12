@@ -44,7 +44,8 @@ object WebUIWebAuthenticationBrokerContinuationEventArgs {
     __obj.asInstanceOf[WebUIWebAuthenticationBrokerContinuationEventArgs]
   }
   
-  extension [Self <: WebUIWebAuthenticationBrokerContinuationEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebUIWebAuthenticationBrokerContinuationEventArgs] (val x: Self) extends AnyVal {
     
     inline def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     

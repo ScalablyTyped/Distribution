@@ -27,7 +27,8 @@ object UpdateStorageResponse {
     __obj.asInstanceOf[UpdateStorageResponse]
   }
   
-  extension [Self <: UpdateStorageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateStorageResponse] (val x: Self) extends AnyVal {
     
     inline def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     

@@ -115,7 +115,8 @@ object mod {
       __obj.asInstanceOf[ProgressStatus]
     }
     
-    extension [Self <: ProgressStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressStatus] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object mod {
       __obj.asInstanceOf[ScryptParams]
     }
     
-    extension [Self <: ScryptParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScryptParams] (val x: Self) extends AnyVal {
       
       inline def setN(value: Double): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
       

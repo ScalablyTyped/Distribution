@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: Code): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     }
@@ -55,7 +57,8 @@ object anon {
       __obj.asInstanceOf[RequestId]
     }
     
-    extension [Self <: RequestId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestId] (val x: Self) extends AnyVal {
       
       inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     }

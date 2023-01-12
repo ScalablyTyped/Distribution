@@ -17,7 +17,8 @@ object RetrieveSourceOptions {
     __obj.asInstanceOf[RetrieveSourceOptions]
   }
   
-  extension [Self <: RetrieveSourceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetrieveSourceOptions] (val x: Self) extends AnyVal {
     
     inline def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
     

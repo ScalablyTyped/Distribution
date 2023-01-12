@@ -21,7 +21,8 @@ object InstancesListServerCasResponse {
     __obj.asInstanceOf[InstancesListServerCasResponse]
   }
   
-  extension [Self <: InstancesListServerCasResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancesListServerCasResponse] (val x: Self) extends AnyVal {
     
     inline def setActiveVersion(value: String): Self = StObject.set(x, "activeVersion", value.asInstanceOf[js.Any])
     

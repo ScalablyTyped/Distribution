@@ -16,7 +16,8 @@ object IGossipBlockResponse {
     __obj.asInstanceOf[IGossipBlockResponse]
   }
   
-  extension [Self <: IGossipBlockResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGossipBlockResponse] (val x: Self) extends AnyVal {
     
     inline def setContent(value: js.typedarray.Uint8Array): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

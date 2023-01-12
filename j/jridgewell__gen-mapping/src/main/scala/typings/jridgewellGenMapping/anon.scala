@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setGenerated(value: Pos): Self = StObject.set(x, "generated", value.asInstanceOf[js.Any])
     }
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Generated]
     }
     
-    extension [Self <: Generated](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Generated] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object anon {
       __obj.asInstanceOf[GeneratedName]
     }
     
-    extension [Self <: GeneratedName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeneratedName] (val x: Self) extends AnyVal {
       
       inline def setGenerated(value: Pos): Self = StObject.set(x, "generated", value.asInstanceOf[js.Any])
       
@@ -118,7 +121,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -155,7 +159,8 @@ object anon {
       __obj.asInstanceOf[Original]
     }
     
-    extension [Self <: Original](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Original] (val x: Self) extends AnyVal {
       
       inline def setGenerated(value: Pos): Self = StObject.set(x, "generated", value.asInstanceOf[js.Any])
       
@@ -186,7 +191,8 @@ object anon {
       __obj.asInstanceOf[Source]
     }
     
-    extension [Self <: Source](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
       
       inline def setGenerated(value: Pos): Self = StObject.set(x, "generated", value.asInstanceOf[js.Any])
       

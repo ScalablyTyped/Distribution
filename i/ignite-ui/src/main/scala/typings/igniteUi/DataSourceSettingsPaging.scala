@@ -65,7 +65,8 @@ object DataSourceSettingsPaging {
     __obj.asInstanceOf[DataSourceSettingsPaging]
   }
   
-  extension [Self <: DataSourceSettingsPaging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceSettingsPaging] (val x: Self) extends AnyVal {
     
     inline def setAppendPage(value: Boolean): Self = StObject.set(x, "appendPage", value.asInstanceOf[js.Any])
     

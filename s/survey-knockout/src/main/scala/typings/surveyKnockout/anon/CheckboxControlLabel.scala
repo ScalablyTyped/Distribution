@@ -74,7 +74,8 @@ object CheckboxControlLabel {
     __obj.asInstanceOf[CheckboxControlLabel]
   }
   
-  extension [Self <: CheckboxControlLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckboxControlLabel] (val x: Self) extends AnyVal {
     
     inline def setCheckboxControlLabel(value: String): Self = StObject.set(x, "checkboxControlLabel", value.asInstanceOf[js.Any])
     

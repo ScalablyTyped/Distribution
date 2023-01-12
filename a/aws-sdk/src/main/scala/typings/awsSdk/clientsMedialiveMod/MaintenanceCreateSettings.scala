@@ -23,7 +23,8 @@ object MaintenanceCreateSettings {
     __obj.asInstanceOf[MaintenanceCreateSettings]
   }
   
-  extension [Self <: MaintenanceCreateSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaintenanceCreateSettings] (val x: Self) extends AnyVal {
     
     inline def setMaintenanceDay(value: MaintenanceDay): Self = StObject.set(x, "MaintenanceDay", value.asInstanceOf[js.Any])
     

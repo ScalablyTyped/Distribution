@@ -34,7 +34,8 @@ object XPointer {
     __obj.asInstanceOf[XPointer]
   }
   
-  extension [Self <: XPointer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPointer] (val x: Self) extends AnyVal {
     
     inline def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     

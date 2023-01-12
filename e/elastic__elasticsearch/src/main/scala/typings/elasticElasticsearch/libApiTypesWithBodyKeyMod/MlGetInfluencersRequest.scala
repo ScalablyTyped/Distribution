@@ -37,7 +37,8 @@ object MlGetInfluencersRequest {
     __obj.asInstanceOf[MlGetInfluencersRequest]
   }
   
-  extension [Self <: MlGetInfluencersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetInfluencersRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Page): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object DataPointLabel {
     __obj.asInstanceOf[DataPointLabel]
   }
   
-  extension [Self <: DataPointLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPointLabel] (val x: Self) extends AnyVal {
     
     inline def setShowCategoryName(value: Boolean): Self = StObject.set(x, "ShowCategoryName", value.asInstanceOf[js.Any])
     

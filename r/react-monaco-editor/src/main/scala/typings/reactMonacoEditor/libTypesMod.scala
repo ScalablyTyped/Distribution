@@ -90,7 +90,8 @@ object libTypesMod {
       __obj.asInstanceOf[MonacoDiffEditorProps]
     }
     
-    extension [Self <: MonacoDiffEditorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonacoDiffEditorProps] (val x: Self) extends AnyVal {
       
       inline def setEditorDidMount(value: (/* editor */ IStandaloneDiffEditor, /* monaco */ TypeofmonacoEditor) => Unit): Self = StObject.set(x, "editorDidMount", js.Any.fromFunction2(value))
       
@@ -167,7 +168,8 @@ object libTypesMod {
       __obj.asInstanceOf[MonacoEditorBaseProps]
     }
     
-    extension [Self <: MonacoEditorBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonacoEditorBaseProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -247,7 +249,8 @@ object libTypesMod {
       __obj.asInstanceOf[MonacoEditorProps]
     }
     
-    extension [Self <: MonacoEditorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonacoEditorProps] (val x: Self) extends AnyVal {
       
       inline def setEditorDidMount(value: (/* editor */ IStandaloneCodeEditor, /* monaco */ TypeofmonacoEditor) => Unit): Self = StObject.set(x, "editorDidMount", js.Any.fromFunction2(value))
       

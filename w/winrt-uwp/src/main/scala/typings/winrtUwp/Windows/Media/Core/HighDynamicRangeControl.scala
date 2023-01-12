@@ -17,7 +17,8 @@ object HighDynamicRangeControl {
     __obj.asInstanceOf[HighDynamicRangeControl]
   }
   
-  extension [Self <: HighDynamicRangeControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighDynamicRangeControl] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }

@@ -21,7 +21,8 @@ object SearchDetails {
     __obj.asInstanceOf[SearchDetails]
   }
   
-  extension [Self <: SearchDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchDetails] (val x: Self) extends AnyVal {
     
     inline def setInteraction(value: typings.interactjsTypes.coreInteractionMod.Interaction[ActionName]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
     

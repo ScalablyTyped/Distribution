@@ -149,7 +149,8 @@ object DrawCustomMode {
     __obj.asInstanceOf[DrawCustomMode[CustomModeState, CustomModeOptions]]
   }
   
-  extension [Self <: DrawCustomMode[?, ?], CustomModeState, CustomModeOptions](x: Self & (DrawCustomMode[CustomModeState, CustomModeOptions])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawCustomMode[?, ?], CustomModeState, CustomModeOptions] (val x: Self & (DrawCustomMode[CustomModeState, CustomModeOptions])) extends AnyVal {
     
     inline def setOnClick(
       value: js.ThisFunction2[

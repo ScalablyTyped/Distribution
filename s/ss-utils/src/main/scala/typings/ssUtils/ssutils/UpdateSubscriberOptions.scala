@@ -17,7 +17,8 @@ object UpdateSubscriberOptions {
     __obj.asInstanceOf[UpdateSubscriberOptions]
   }
   
-  extension [Self <: UpdateSubscriberOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSubscriberOptions] (val x: Self) extends AnyVal {
     
     inline def setSubscribeChannels(value: String): Self = StObject.set(x, "SubscribeChannels", value.asInstanceOf[js.Any])
     

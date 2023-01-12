@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[ProcessStringResult]
     }
     
-    extension [Self <: ProcessStringResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessStringResult] (val x: Self) extends AnyVal {
       
       inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     }
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Recordoutputstring]
     }
     
-    extension [Self <: Recordoutputstring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Recordoutputstring] (val x: Self) extends AnyVal {
       
       inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     }
@@ -60,7 +62,8 @@ object anon {
       __obj.asInstanceOf[SortAndExpand]
     }
     
-    extension [Self <: SortAndExpand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortAndExpand] (val x: Self) extends AnyVal {
       
       inline def setSortAndExpand(value: Boolean): Self = StObject.set(x, "sortAndExpand", value.asInstanceOf[js.Any])
     }

@@ -40,7 +40,8 @@ object Contact {
     __obj.asInstanceOf[Contact]
   }
   
-  extension [Self <: Contact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Contact] (val x: Self) extends AnyVal {
     
     inline def setRemove(value: (js.Function0[Unit], js.Function1[/* error */ js.Error, Unit]) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
     

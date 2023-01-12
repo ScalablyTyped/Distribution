@@ -22,7 +22,8 @@ object HereNowParameters {
     __obj.asInstanceOf[HereNowParameters]
   }
   
-  extension [Self <: HereNowParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HereNowParameters] (val x: Self) extends AnyVal {
     
     inline def setChannelGroups(value: js.Array[String]): Self = StObject.set(x, "channelGroups", value.asInstanceOf[js.Any])
     

@@ -109,7 +109,8 @@ object IgBaseChart {
     __obj.asInstanceOf[IgBaseChart]
   }
   
-  extension [Self <: IgBaseChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgBaseChart] (val x: Self) extends AnyVal {
     
     inline def setDataBinding(value: (/* event */ Event, /* ui */ DataBindingEventUIParam) => Unit): Self = StObject.set(x, "dataBinding", js.Any.fromFunction2(value))
     

@@ -23,7 +23,8 @@ object ExtraMsg {
     __obj.asInstanceOf[ExtraMsg]
   }
   
-  extension [Self <: ExtraMsg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtraMsg] (val x: Self) extends AnyVal {
     
     inline def setExtraMsg(value: String): Self = StObject.set(x, "extraMsg", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AppStoreReceipt {
     __obj.asInstanceOf[AppStoreReceipt]
   }
   
-  extension [Self <: AppStoreReceipt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppStoreReceipt] (val x: Self) extends AnyVal {
     
     inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     

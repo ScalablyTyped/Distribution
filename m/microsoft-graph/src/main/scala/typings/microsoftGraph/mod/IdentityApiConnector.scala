@@ -27,7 +27,8 @@ object IdentityApiConnector {
     __obj.asInstanceOf[IdentityApiConnector]
   }
   
-  extension [Self <: IdentityApiConnector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityApiConnector] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationConfiguration(value: NullableOption[ApiAuthenticationConfigurationBase]): Self = StObject.set(x, "authenticationConfiguration", value.asInstanceOf[js.Any])
     

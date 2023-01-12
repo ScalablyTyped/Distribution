@@ -62,7 +62,8 @@ object EditFlags {
     __obj.asInstanceOf[EditFlags]
   }
   
-  extension [Self <: EditFlags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditFlags] (val x: Self) extends AnyVal {
     
     inline def setCanCopy(value: Boolean): Self = StObject.set(x, "canCopy", value.asInstanceOf[js.Any])
     

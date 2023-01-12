@@ -39,7 +39,8 @@ object SignalDecoder {
     __obj.asInstanceOf[SignalDecoder]
   }
   
-  extension [Self <: SignalDecoder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignalDecoder] (val x: Self) extends AnyVal {
     
     inline def setCanSignal(value: CanSignal): Self = StObject.set(x, "canSignal", value.asInstanceOf[js.Any])
     

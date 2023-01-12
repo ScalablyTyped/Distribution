@@ -23,7 +23,8 @@ object BatchCreateChannelMembershipResponse {
     __obj.asInstanceOf[BatchCreateChannelMembershipResponse]
   }
   
-  extension [Self <: BatchCreateChannelMembershipResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreateChannelMembershipResponse] (val x: Self) extends AnyVal {
     
     inline def setBatchChannelMemberships(value: BatchChannelMemberships): Self = StObject.set(x, "BatchChannelMemberships", value.asInstanceOf[js.Any])
     

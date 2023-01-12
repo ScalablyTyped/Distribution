@@ -79,7 +79,8 @@ object SidenavOptions {
     __obj.asInstanceOf[SidenavOptions]
   }
   
-  extension [Self <: SidenavOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SidenavOptions] (val x: Self) extends AnyVal {
     
     inline def setDragTargetWidth(value: String): Self = StObject.set(x, "dragTargetWidth", value.asInstanceOf[js.Any])
     

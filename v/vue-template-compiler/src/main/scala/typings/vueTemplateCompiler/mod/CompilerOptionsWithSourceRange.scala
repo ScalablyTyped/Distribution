@@ -19,7 +19,8 @@ object CompilerOptionsWithSourceRange {
     __obj.asInstanceOf[CompilerOptionsWithSourceRange]
   }
   
-  extension [Self <: CompilerOptionsWithSourceRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompilerOptionsWithSourceRange] (val x: Self) extends AnyVal {
     
     inline def setOutputSourceRange(value: `true`): Self = StObject.set(x, "outputSourceRange", value.asInstanceOf[js.Any])
   }

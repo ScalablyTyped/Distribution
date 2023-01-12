@@ -24,7 +24,8 @@ object Role {
       __obj.asInstanceOf[IHasTarget]
     }
     
-    extension [Self <: IHasTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHasTarget] (val x: Self) extends AnyVal {
       
       inline def setEl(value: Any): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       

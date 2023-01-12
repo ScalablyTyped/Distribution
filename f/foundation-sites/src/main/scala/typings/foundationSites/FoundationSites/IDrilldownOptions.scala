@@ -39,7 +39,8 @@ object IDrilldownOptions {
     __obj.asInstanceOf[IDrilldownOptions]
   }
   
-  extension [Self <: IDrilldownOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDrilldownOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimateHeight(value: Boolean): Self = StObject.set(x, "animateHeight", value.asInstanceOf[js.Any])
     

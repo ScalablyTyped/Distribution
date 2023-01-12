@@ -21,7 +21,8 @@ object ChartPdfMargin {
     __obj.asInstanceOf[ChartPdfMargin]
   }
   
-  extension [Self <: ChartPdfMargin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartPdfMargin] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

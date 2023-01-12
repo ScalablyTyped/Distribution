@@ -23,7 +23,8 @@ object RegistryId {
     __obj.asInstanceOf[RegistryId]
   }
   
-  extension [Self <: RegistryId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegistryId] (val x: Self) extends AnyVal {
     
     inline def setRegistryArn(value: GlueResourceArn): Self = StObject.set(x, "RegistryArn", value.asInstanceOf[js.Any])
     

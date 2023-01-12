@@ -33,7 +33,8 @@ object Principal {
     __obj.asInstanceOf[Principal]
   }
   
-  extension [Self <: Principal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Principal] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: ReadAccessType): Self = StObject.set(x, "Access", value.asInstanceOf[js.Any])
     

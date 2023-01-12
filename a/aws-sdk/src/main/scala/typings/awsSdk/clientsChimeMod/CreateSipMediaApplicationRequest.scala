@@ -28,7 +28,8 @@ object CreateSipMediaApplicationRequest {
     __obj.asInstanceOf[CreateSipMediaApplicationRequest]
   }
   
-  extension [Self <: CreateSipMediaApplicationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSipMediaApplicationRequest] (val x: Self) extends AnyVal {
     
     inline def setAwsRegion(value: String): Self = StObject.set(x, "AwsRegion", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object PartialSankeyLayoutOption {
     __obj.asInstanceOf[PartialSankeyLayoutOption]
   }
   
-  extension [Self <: PartialSankeyLayoutOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSankeyLayoutOption] (val x: Self) extends AnyVal {
     
     inline def setNodeAlign(value: NodeAlign): Self = StObject.set(x, "nodeAlign", value.asInstanceOf[js.Any])
     

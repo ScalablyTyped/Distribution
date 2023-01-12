@@ -25,7 +25,8 @@ object typesInvalidCiphertextExceptionMod {
       __obj.asInstanceOf[InvalidCiphertextException]
     }
     
-    extension [Self <: InvalidCiphertextException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidCiphertextException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidCiphertextException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -45,7 +46,8 @@ object typesInvalidCiphertextExceptionMod {
       __obj.asInstanceOf[InvalidCiphertextExceptionDetails]
     }
     
-    extension [Self <: InvalidCiphertextExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidCiphertextExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[ResolvedConfigOptions]
         }
         
-        extension [Self <: ResolvedConfigOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ResolvedConfigOptions] (val x: Self) extends AnyVal {
           
           inline def setTheme(value: dark | halloween | String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
           

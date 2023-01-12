@@ -91,7 +91,8 @@ object DocumentManifest {
     __obj.asInstanceOf[DocumentManifest]
   }
   
-  extension [Self <: DocumentManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentManifest] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: js.Array[Reference]): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

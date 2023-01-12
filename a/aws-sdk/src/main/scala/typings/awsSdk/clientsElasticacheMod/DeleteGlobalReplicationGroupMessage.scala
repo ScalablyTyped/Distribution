@@ -23,7 +23,8 @@ object DeleteGlobalReplicationGroupMessage {
     __obj.asInstanceOf[DeleteGlobalReplicationGroupMessage]
   }
   
-  extension [Self <: DeleteGlobalReplicationGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteGlobalReplicationGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
     

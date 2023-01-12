@@ -58,7 +58,8 @@ object CommitterEvent {
     __obj.asInstanceOf[CommitterEvent]
   }
   
-  extension [Self <: CommitterEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitterEvent] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: DateString): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

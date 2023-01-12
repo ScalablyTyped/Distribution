@@ -85,7 +85,8 @@ object SVGImageElement {
     __obj.asInstanceOf[SVGImageElement]
   }
   
-  extension [Self <: SVGImageElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGImageElement] (val x: Self) extends AnyVal {
     
     inline def setFarthestViewportElement(value: ISVGElement): Self = StObject.set(x, "farthestViewportElement", value.asInstanceOf[js.Any])
     

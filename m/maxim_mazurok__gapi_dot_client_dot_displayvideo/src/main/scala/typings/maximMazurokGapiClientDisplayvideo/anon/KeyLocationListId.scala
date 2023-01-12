@@ -53,7 +53,8 @@ object KeyLocationListId {
     __obj.asInstanceOf[KeyLocationListId]
   }
   
-  extension [Self <: KeyLocationListId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyLocationListId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object namespacesFindMod {
         __obj.asInstanceOf[FindParamsType]
       }
       
-      extension [Self <: FindParamsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FindParamsType] (val x: Self) extends AnyVal {
         
         inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
         
@@ -106,7 +107,8 @@ object namespacesFindMod {
         __obj.asInstanceOf[FindResult]
       }
       
-      extension [Self <: FindResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FindResult] (val x: Self) extends AnyVal {
         
         inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
@@ -154,7 +156,8 @@ object namespacesFindMod {
         __obj.asInstanceOf[HighlightResultsParamsType]
       }
       
-      extension [Self <: HighlightResultsParamsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HighlightResultsParamsType] (val x: Self) extends AnyVal {
         
         inline def setNoScroll(value: Boolean): Self = StObject.set(x, "noScroll", value.asInstanceOf[js.Any])
         
@@ -214,7 +217,8 @@ object namespacesFindMod {
         __obj.asInstanceOf[RangeData]
       }
       
-      extension [Self <: RangeData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RangeData] (val x: Self) extends AnyVal {
         
         inline def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
         
@@ -249,7 +253,8 @@ object namespacesFindMod {
         __obj.asInstanceOf[RectData]
       }
       
-      extension [Self <: RectData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RectData] (val x: Self) extends AnyVal {
         
         inline def setRectsAndTexts(value: RectsAndTexts): Self = StObject.set(x, "rectsAndTexts", value.asInstanceOf[js.Any])
         
@@ -286,7 +291,8 @@ object namespacesFindMod {
         __obj.asInstanceOf[Rectangle]
       }
       
-      extension [Self <: Rectangle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Rectangle] (val x: Self) extends AnyVal {
         
         inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
         
@@ -318,7 +324,8 @@ object namespacesFindMod {
         __obj.asInstanceOf[RectsAndTexts]
       }
       
-      extension [Self <: RectsAndTexts](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RectsAndTexts] (val x: Self) extends AnyVal {
         
         inline def setRectList(value: js.Array[Rectangle]): Self = StObject.set(x, "rectList", value.asInstanceOf[js.Any])
         

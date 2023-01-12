@@ -38,7 +38,8 @@ object CreateEntitlementRequest {
     __obj.asInstanceOf[CreateEntitlementRequest]
   }
   
-  extension [Self <: CreateEntitlementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEntitlementRequest] (val x: Self) extends AnyVal {
     
     inline def setAppVisibility(value: AppVisibility): Self = StObject.set(x, "AppVisibility", value.asInstanceOf[js.Any])
     

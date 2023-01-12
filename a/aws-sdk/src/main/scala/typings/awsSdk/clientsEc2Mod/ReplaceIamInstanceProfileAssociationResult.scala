@@ -18,7 +18,8 @@ object ReplaceIamInstanceProfileAssociationResult {
     __obj.asInstanceOf[ReplaceIamInstanceProfileAssociationResult]
   }
   
-  extension [Self <: ReplaceIamInstanceProfileAssociationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceIamInstanceProfileAssociationResult] (val x: Self) extends AnyVal {
     
     inline def setIamInstanceProfileAssociation(value: IamInstanceProfileAssociation): Self = StObject.set(x, "IamInstanceProfileAssociation", value.asInstanceOf[js.Any])
     

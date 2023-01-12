@@ -40,7 +40,8 @@ object ChangesReaderScope {
     __obj.asInstanceOf[ChangesReaderScope]
   }
   
-  extension [Self <: ChangesReaderScope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangesReaderScope] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ChangesReaderOptions => EventEmitter): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     

@@ -39,7 +39,8 @@ object typesLibAlertMod {
       __obj.asInstanceOf[AlertProps]
     }
     
-    extension [Self <: AlertProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlertProps] (val x: Self) extends AnyVal {
       
       inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object typesLibAlertMod {
       __obj.asInstanceOf[UncontrolledAlertProps]
     }
     
-    extension [Self <: UncontrolledAlertProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UncontrolledAlertProps] (val x: Self) extends AnyVal {
       
       inline def setCloseAriaLabel(value: String): Self = StObject.set(x, "closeAriaLabel", value.asInstanceOf[js.Any])
       

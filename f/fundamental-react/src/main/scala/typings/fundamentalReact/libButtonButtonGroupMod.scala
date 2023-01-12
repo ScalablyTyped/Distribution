@@ -59,7 +59,8 @@ object libButtonButtonGroupMod {
       __obj.asInstanceOf[ButtonGroupProps]
     }
     
-    extension [Self <: ButtonGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonGroupProps] (val x: Self) extends AnyVal {
       
       inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
       

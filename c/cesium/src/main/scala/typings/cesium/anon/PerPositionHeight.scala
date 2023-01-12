@@ -29,7 +29,8 @@ object PerPositionHeight {
     __obj.asInstanceOf[PerPositionHeight]
   }
   
-  extension [Self <: PerPositionHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerPositionHeight] (val x: Self) extends AnyVal {
     
     inline def setArcType(value: typings.cesium.mod.ArcType): Self = StObject.set(x, "arcType", value.asInstanceOf[js.Any])
     

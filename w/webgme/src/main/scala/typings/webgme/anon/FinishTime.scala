@@ -22,7 +22,8 @@ object FinishTime {
     __obj.asInstanceOf[FinishTime]
   }
   
-  extension [Self <: FinishTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinishTime] (val x: Self) extends AnyVal {
     
     inline def setFinishTime(value: String): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     

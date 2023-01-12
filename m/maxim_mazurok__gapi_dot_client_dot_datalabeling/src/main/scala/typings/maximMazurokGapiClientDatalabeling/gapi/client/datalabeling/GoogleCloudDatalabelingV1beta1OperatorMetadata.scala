@@ -25,7 +25,8 @@ object GoogleCloudDatalabelingV1beta1OperatorMetadata {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1OperatorMetadata]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1OperatorMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1OperatorMetadata] (val x: Self) extends AnyVal {
     
     inline def setComments(value: js.Array[String]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     

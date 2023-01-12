@@ -17,7 +17,8 @@ object InteractionComplete {
     __obj.asInstanceOf[InteractionComplete]
   }
   
-  extension [Self <: InteractionComplete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractionComplete] (val x: Self) extends AnyVal {
     
     inline def setInteractionComplete(value: String): Self = StObject.set(x, "interactionComplete", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object SeriesZonesOptionsObject {
     __obj.asInstanceOf[SeriesZonesOptionsObject]
   }
   
-  extension [Self <: SeriesZonesOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesZonesOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

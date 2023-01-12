@@ -22,7 +22,8 @@ object BatchModifyMessagesRequest {
     __obj.asInstanceOf[BatchModifyMessagesRequest]
   }
   
-  extension [Self <: BatchModifyMessagesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchModifyMessagesRequest] (val x: Self) extends AnyVal {
     
     inline def setAddLabelIds(value: js.Array[String]): Self = StObject.set(x, "addLabelIds", value.asInstanceOf[js.Any])
     

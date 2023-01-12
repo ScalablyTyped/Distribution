@@ -54,7 +54,8 @@ object resourcesWorkersMod {
       __obj.asInstanceOf[CreateWorkerProps]
     }
     
-    extension [Self <: CreateWorkerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateWorkerProps] (val x: Self) extends AnyVal {
       
       inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object resourcesWorkersMod {
       __obj.asInstanceOf[GetWorkerByLocationProps]
     }
     
-    extension [Self <: GetWorkerByLocationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetWorkerByLocationProps] (val x: Self) extends AnyVal {
       
       inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object resourcesWorkersMod {
       __obj.asInstanceOf[GetWorkerQueryProps]
     }
     
-    extension [Self <: GetWorkerQueryProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetWorkerQueryProps] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
@@ -206,7 +209,8 @@ object resourcesWorkersMod {
       __obj.asInstanceOf[OnfleetWorker]
     }
     
-    extension [Self <: OnfleetWorker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnfleetWorker] (val x: Self) extends AnyVal {
       
       inline def setAccountStatus(value: String): Self = StObject.set(x, "accountStatus", value.asInstanceOf[js.Any])
       
@@ -285,7 +289,8 @@ object resourcesWorkersMod {
       __obj.asInstanceOf[UpdateWorkerProps]
     }
     
-    extension [Self <: UpdateWorkerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateWorkerProps] (val x: Self) extends AnyVal {
       
       inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       
@@ -331,7 +336,8 @@ object resourcesWorkersMod {
       __obj.asInstanceOf[Vehicle]
     }
     
-    extension [Self <: Vehicle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vehicle] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -390,7 +396,8 @@ object resourcesWorkersMod {
       __obj.asInstanceOf[WorkerSchedule]
     }
     
-    extension [Self <: WorkerSchedule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerSchedule] (val x: Self) extends AnyVal {
       
       inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object esComponentsSiderMenuStyleMenuMod {
       __obj.asInstanceOf[ProLayoutBaseMenuToken]
     }
     
-    extension [Self <: ProLayoutBaseMenuToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProLayoutBaseMenuToken] (val x: Self) extends AnyVal {
       
       inline def setComponentCls(value: String): Self = StObject.set(x, "componentCls", value.asInstanceOf[js.Any])
     }

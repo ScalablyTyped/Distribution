@@ -32,7 +32,8 @@ object MaximumClock {
     __obj.asInstanceOf[MaximumClock]
   }
   
-  extension [Self <: MaximumClock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaximumClock] (val x: Self) extends AnyVal {
     
     inline def setInnerRadii(value: Cartesian3): Self = StObject.set(x, "innerRadii", value.asInstanceOf[js.Any])
     

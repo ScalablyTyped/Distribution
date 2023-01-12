@@ -29,7 +29,8 @@ object MailComposerOptions {
     __obj.asInstanceOf[MailComposerOptions]
   }
   
-  extension [Self <: MailComposerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailComposerOptions] (val x: Self) extends AnyVal {
     
     inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     

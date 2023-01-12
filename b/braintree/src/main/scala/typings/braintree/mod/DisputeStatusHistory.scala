@@ -21,7 +21,8 @@ object DisputeStatusHistory {
     __obj.asInstanceOf[DisputeStatusHistory]
   }
   
-  extension [Self <: DisputeStatusHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisputeStatusHistory] (val x: Self) extends AnyVal {
     
     inline def setDisbursementDate(value: js.Date): Self = StObject.set(x, "disbursementDate", value.asInstanceOf[js.Any])
     

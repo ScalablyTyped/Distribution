@@ -413,7 +413,8 @@ object mod {
       __obj.asInstanceOf[FlatListProps]
     }
     
-    extension [Self <: FlatListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlatListProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       
@@ -1131,7 +1132,8 @@ object mod {
       __obj.asInstanceOf[GestureState]
     }
     
-    extension [Self <: GestureState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GestureState] (val x: Self) extends AnyVal {
       
       inline def setDoubleTapUp(value: Boolean): Self = StObject.set(x, "doubleTapUp", value.asInstanceOf[js.Any])
       
@@ -1206,7 +1208,8 @@ object mod {
       __obj.asInstanceOf[ImageDimensions]
     }
     
-    extension [Self <: ImageDimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageDimensions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -1229,7 +1232,8 @@ object mod {
       __obj.asInstanceOf[LocalImage]
     }
     
-    extension [Self <: LocalImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalImage] (val x: Self) extends AnyVal {
       
       inline def setDimensions(value: ImageDimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
@@ -1314,7 +1318,8 @@ object mod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setErrorComponent(value: () => ReactNode): Self = StObject.set(x, "errorComponent", js.Any.fromFunction0(value))
       
@@ -1383,7 +1388,8 @@ object mod {
       __obj.asInstanceOf[RemoteImage]
     }
     
-    extension [Self <: RemoteImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteImage] (val x: Self) extends AnyVal {
       
       inline def setDimensions(value: ImageDimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
@@ -1408,7 +1414,8 @@ object mod {
       __obj.asInstanceOf[ScrollEvent]
     }
     
-    extension [Self <: ScrollEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollEvent] (val x: Self) extends AnyVal {
       
       inline def setFraction(value: Double): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
       

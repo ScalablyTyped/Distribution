@@ -33,7 +33,8 @@ object GenerateMacRequest {
     __obj.asInstanceOf[GenerateMacRequest]
   }
   
-  extension [Self <: GenerateMacRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateMacRequest] (val x: Self) extends AnyVal {
     
     inline def setGrantTokens(value: GrantTokenList): Self = StObject.set(x, "GrantTokens", value.asInstanceOf[js.Any])
     

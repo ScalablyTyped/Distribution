@@ -18,7 +18,8 @@ object CardShadowToken {
     __obj.asInstanceOf[CardShadowToken[BaseToken]]
   }
   
-  extension [Self <: CardShadowToken[?], BaseToken](x: Self & CardShadowToken[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardShadowToken[?], BaseToken] (val x: Self & CardShadowToken[BaseToken]) extends AnyVal {
     
     inline def setCard(value: ShadowToken[BaseToken]): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     

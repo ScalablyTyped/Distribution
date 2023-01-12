@@ -38,7 +38,8 @@ object ASPxClientTreeListContextMenuEventArgs {
     __obj.asInstanceOf[ASPxClientTreeListContextMenuEventArgs]
   }
   
-  extension [Self <: ASPxClientTreeListContextMenuEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTreeListContextMenuEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

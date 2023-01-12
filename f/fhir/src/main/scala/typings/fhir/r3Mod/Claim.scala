@@ -184,7 +184,8 @@ object Claim {
     __obj.asInstanceOf[Claim]
   }
   
-  extension [Self <: Claim](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Claim] (val x: Self) extends AnyVal {
     
     inline def setAccident(value: ClaimAccident): Self = StObject.set(x, "accident", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object CodeInjection {
     __obj.asInstanceOf[CodeInjection]
   }
   
-  extension [Self <: CodeInjection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeInjection] (val x: Self) extends AnyVal {
     
     inline def setCodeinjection_foot(value: Nullable[String]): Self = StObject.set(x, "codeinjection_foot", value.asInstanceOf[js.Any])
     

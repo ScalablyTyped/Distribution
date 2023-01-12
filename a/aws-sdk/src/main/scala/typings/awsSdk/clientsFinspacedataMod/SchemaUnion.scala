@@ -18,7 +18,8 @@ object SchemaUnion {
     __obj.asInstanceOf[SchemaUnion]
   }
   
-  extension [Self <: SchemaUnion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaUnion] (val x: Self) extends AnyVal {
     
     inline def setTabularSchemaConfig(value: SchemaDefinition): Self = StObject.set(x, "tabularSchemaConfig", value.asInstanceOf[js.Any])
     

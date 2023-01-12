@@ -21,7 +21,8 @@ object SelectAccount {
     __obj.asInstanceOf[SelectAccount]
   }
   
-  extension [Self <: SelectAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectAccount] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: AccountTypes): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

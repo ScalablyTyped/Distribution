@@ -18,7 +18,8 @@ object DeleteCommentContentOutput {
     __obj.asInstanceOf[DeleteCommentContentOutput]
   }
   
-  extension [Self <: DeleteCommentContentOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCommentContentOutput] (val x: Self) extends AnyVal {
     
     inline def setComment(value: Comment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

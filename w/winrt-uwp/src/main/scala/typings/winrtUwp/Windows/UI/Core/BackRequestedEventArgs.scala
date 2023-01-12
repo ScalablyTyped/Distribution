@@ -17,7 +17,8 @@ object BackRequestedEventArgs {
     __obj.asInstanceOf[BackRequestedEventArgs]
   }
   
-  extension [Self <: BackRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
   }

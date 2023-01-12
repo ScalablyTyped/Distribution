@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Alert]
     }
     
-    extension [Self <: Alert](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alert] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: Boolean): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object anon {
       __obj.asInstanceOf[Bits]
     }
     
-    extension [Self <: Bits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bits] (val x: Self) extends AnyVal {
       
       inline def setBits(value: Double): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
     }

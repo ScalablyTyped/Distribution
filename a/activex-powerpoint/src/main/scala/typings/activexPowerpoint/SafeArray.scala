@@ -15,7 +15,8 @@ object SafeArray {
     __obj.asInstanceOf[SafeArray[T]]
   }
   
-  extension [Self <: SafeArray[?], T](x: Self & SafeArray[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafeArray[?], T] (val x: Self & SafeArray[T]) extends AnyVal {
     
     inline def set_brand(value: SafeArray[T]): Self = StObject.set(x, "_brand", value.asInstanceOf[js.Any])
   }

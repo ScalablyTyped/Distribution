@@ -17,7 +17,8 @@ object SideSize {
     __obj.asInstanceOf[SideSize]
   }
   
-  extension [Self <: SideSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SideSize] (val x: Self) extends AnyVal {
     
     inline def setSide(value: String): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
     

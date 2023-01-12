@@ -43,7 +43,8 @@ object UrlMap {
     __obj.asInstanceOf[UrlMap]
   }
   
-  extension [Self <: UrlMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlMap] (val x: Self) extends AnyVal {
     
     inline def setApiEndpoint(value: ApiEndpointHandler): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
     

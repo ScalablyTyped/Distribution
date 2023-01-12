@@ -92,7 +92,8 @@ object mod {
       __obj.asInstanceOf[Contact]
     }
     
-    extension [Self <: Contact](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contact] (val x: Self) extends AnyVal {
       
       inline def setId(value: js.typedarray.Uint8Array): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -206,7 +207,8 @@ object mod {
       __obj.asInstanceOf[Node[T]]
     }
     
-    extension [Self <: Node[?], T /* <: Contact */](x: Self & Node[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node[?], T /* <: Contact */] (val x: Self & Node[T]) extends AnyVal {
       
       inline def setContacts(value: js.Array[T]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
       

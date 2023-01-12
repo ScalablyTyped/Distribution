@@ -41,7 +41,8 @@ object BufferPruningInterval {
     __obj.asInstanceOf[BufferPruningInterval]
   }
   
-  extension [Self <: BufferPruningInterval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferPruningInterval] (val x: Self) extends AnyVal {
     
     inline def setBufferPruningInterval(value: Double): Self = StObject.set(x, "bufferPruningInterval", value.asInstanceOf[js.Any])
     

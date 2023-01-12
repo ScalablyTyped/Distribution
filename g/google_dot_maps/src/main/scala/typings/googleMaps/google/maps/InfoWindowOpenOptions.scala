@@ -40,7 +40,8 @@ object InfoWindowOpenOptions {
     __obj.asInstanceOf[InfoWindowOpenOptions]
   }
   
-  extension [Self <: InfoWindowOpenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfoWindowOpenOptions] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: MVCObject | AdvancedMarkerView): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

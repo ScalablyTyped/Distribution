@@ -28,7 +28,8 @@ object UpdateChannelClassRequest {
     __obj.asInstanceOf[UpdateChannelClassRequest]
   }
   
-  extension [Self <: UpdateChannelClassRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateChannelClassRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelClass(value: ChannelClass): Self = StObject.set(x, "ChannelClass", value.asInstanceOf[js.Any])
     

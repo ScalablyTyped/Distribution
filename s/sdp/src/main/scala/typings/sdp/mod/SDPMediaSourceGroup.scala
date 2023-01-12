@@ -17,7 +17,8 @@ object SDPMediaSourceGroup {
     __obj.asInstanceOf[SDPMediaSourceGroup]
   }
   
-  extension [Self <: SDPMediaSourceGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SDPMediaSourceGroup] (val x: Self) extends AnyVal {
     
     inline def setSemantics(value: String): Self = StObject.set(x, "semantics", value.asInstanceOf[js.Any])
     

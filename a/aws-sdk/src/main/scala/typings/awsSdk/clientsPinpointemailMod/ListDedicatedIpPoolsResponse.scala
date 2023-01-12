@@ -23,7 +23,8 @@ object ListDedicatedIpPoolsResponse {
     __obj.asInstanceOf[ListDedicatedIpPoolsResponse]
   }
   
-  extension [Self <: ListDedicatedIpPoolsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDedicatedIpPoolsResponse] (val x: Self) extends AnyVal {
     
     inline def setDedicatedIpPools(value: ListOfDedicatedIpPools): Self = StObject.set(x, "DedicatedIpPools", value.asInstanceOf[js.Any])
     

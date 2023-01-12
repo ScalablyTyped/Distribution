@@ -54,7 +54,8 @@ object dxSankeyNode {
     __obj.asInstanceOf[dxSankeyNode]
   }
   
-  extension [Self <: dxSankeyNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxSankeyNode] (val x: Self) extends AnyVal {
     
     inline def setHideTooltip(value: () => Unit): Self = StObject.set(x, "hideTooltip", js.Any.fromFunction0(value))
     

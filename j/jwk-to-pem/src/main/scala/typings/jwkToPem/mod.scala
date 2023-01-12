@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[EC]
     }
     
-    extension [Self <: EC](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EC] (val x: Self) extends AnyVal {
       
       inline def setCrv(value: String): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object mod {
       __obj.asInstanceOf[ECPrivate]
     }
     
-    extension [Self <: ECPrivate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ECPrivate] (val x: Self) extends AnyVal {
       
       inline def setCrv(value: String): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
       
@@ -119,7 +121,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     }
@@ -154,7 +157,8 @@ object mod {
       __obj.asInstanceOf[RSA]
     }
     
-    extension [Self <: RSA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RSA] (val x: Self) extends AnyVal {
       
       inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       

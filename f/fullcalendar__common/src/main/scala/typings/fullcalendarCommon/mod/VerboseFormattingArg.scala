@@ -31,7 +31,8 @@ object VerboseFormattingArg {
     __obj.asInstanceOf[VerboseFormattingArg]
   }
   
-  extension [Self <: VerboseFormattingArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerboseFormattingArg] (val x: Self) extends AnyVal {
     
     inline def setDate(value: ExpandedZonedMarker): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

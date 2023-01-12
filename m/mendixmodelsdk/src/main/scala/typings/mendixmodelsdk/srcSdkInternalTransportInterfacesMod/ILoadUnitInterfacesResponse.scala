@@ -17,7 +17,8 @@ object ILoadUnitInterfacesResponse {
     __obj.asInstanceOf[ILoadUnitInterfacesResponse]
   }
   
-  extension [Self <: ILoadUnitInterfacesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILoadUnitInterfacesResponse] (val x: Self) extends AnyVal {
     
     inline def setEventId(value: Double): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     

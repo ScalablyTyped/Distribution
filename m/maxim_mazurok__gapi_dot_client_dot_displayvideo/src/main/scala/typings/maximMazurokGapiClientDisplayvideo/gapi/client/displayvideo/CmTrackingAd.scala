@@ -22,7 +22,8 @@ object CmTrackingAd {
     __obj.asInstanceOf[CmTrackingAd]
   }
   
-  extension [Self <: CmTrackingAd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CmTrackingAd] (val x: Self) extends AnyVal {
     
     inline def setCmAdId(value: String): Self = StObject.set(x, "cmAdId", value.asInstanceOf[js.Any])
     

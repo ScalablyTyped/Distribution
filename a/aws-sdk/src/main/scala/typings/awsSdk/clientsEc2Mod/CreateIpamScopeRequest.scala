@@ -38,7 +38,8 @@ object CreateIpamScopeRequest {
     __obj.asInstanceOf[CreateIpamScopeRequest]
   }
   
-  extension [Self <: CreateIpamScopeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateIpamScopeRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

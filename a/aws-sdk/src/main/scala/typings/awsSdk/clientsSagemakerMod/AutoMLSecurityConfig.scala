@@ -28,7 +28,8 @@ object AutoMLSecurityConfig {
     __obj.asInstanceOf[AutoMLSecurityConfig]
   }
   
-  extension [Self <: AutoMLSecurityConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoMLSecurityConfig] (val x: Self) extends AnyVal {
     
     inline def setEnableInterContainerTrafficEncryption(value: Boolean): Self = StObject.set(x, "EnableInterContainerTrafficEncryption", value.asInstanceOf[js.Any])
     

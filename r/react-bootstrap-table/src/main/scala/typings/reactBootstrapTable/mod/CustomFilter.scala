@@ -45,7 +45,8 @@ object CustomFilter {
     __obj.asInstanceOf[CustomFilter[FParams, FElement]]
   }
   
-  extension [Self <: CustomFilter[?, ?], FParams /* <: js.Object */, FElement /* <: CustomFilterElement */](x: Self & (CustomFilter[FParams, FElement])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomFilter[?, ?], FParams /* <: js.Object */, FElement /* <: CustomFilterElement */] (val x: Self & (CustomFilter[FParams, FElement])) extends AnyVal {
     
     inline def setCustomFilterParameters(value: CustomFilterParameters[FParams]): Self = StObject.set(x, "customFilterParameters", value.asInstanceOf[js.Any])
     

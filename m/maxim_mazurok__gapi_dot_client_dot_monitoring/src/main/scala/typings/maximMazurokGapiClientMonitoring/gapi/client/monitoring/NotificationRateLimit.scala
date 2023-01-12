@@ -16,7 +16,8 @@ object NotificationRateLimit {
     __obj.asInstanceOf[NotificationRateLimit]
   }
   
-  extension [Self <: NotificationRateLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationRateLimit] (val x: Self) extends AnyVal {
     
     inline def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object MountOptions {
     __obj.asInstanceOf[MountOptions]
   }
   
-  extension [Self <: MountOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MountOptions] (val x: Self) extends AnyVal {
     
     inline def setIpfsPath(value: String): Self = StObject.set(x, "ipfsPath", value.asInstanceOf[js.Any])
     

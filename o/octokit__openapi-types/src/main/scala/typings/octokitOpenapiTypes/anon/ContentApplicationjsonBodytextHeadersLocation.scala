@@ -17,7 +17,8 @@ object ContentApplicationjsonBodytextHeadersLocation {
     __obj.asInstanceOf[ContentApplicationjsonBodytextHeadersLocation]
   }
   
-  extension [Self <: ContentApplicationjsonBodytextHeadersLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonBodytextHeadersLocation] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonBodytext): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

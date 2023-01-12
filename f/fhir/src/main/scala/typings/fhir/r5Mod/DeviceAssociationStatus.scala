@@ -25,7 +25,8 @@ object DeviceAssociationStatus {
     __obj.asInstanceOf[DeviceAssociationStatus]
   }
   
-  extension [Self <: DeviceAssociationStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceAssociationStatus] (val x: Self) extends AnyVal {
     
     inline def setReason(value: js.Array[CodeableConcept]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

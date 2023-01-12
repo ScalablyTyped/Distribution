@@ -28,7 +28,8 @@ object InstanceProperty {
     __obj.asInstanceOf[InstanceProperty]
   }
   
-  extension [Self <: InstanceProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceProperty] (val x: Self) extends AnyVal {
     
     inline def setFailed(value: Boolean): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     

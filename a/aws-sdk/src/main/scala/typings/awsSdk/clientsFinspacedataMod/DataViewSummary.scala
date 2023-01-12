@@ -73,7 +73,8 @@ object DataViewSummary {
     __obj.asInstanceOf[DataViewSummary]
   }
   
-  extension [Self <: DataViewSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewSummary] (val x: Self) extends AnyVal {
     
     inline def setAsOfTimestamp(value: TimestampEpoch): Self = StObject.set(x, "asOfTimestamp", value.asInstanceOf[js.Any])
     

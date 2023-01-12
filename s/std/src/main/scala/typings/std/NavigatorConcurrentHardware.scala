@@ -16,7 +16,8 @@ object NavigatorConcurrentHardware {
     __obj.asInstanceOf[NavigatorConcurrentHardware]
   }
   
-  extension [Self <: NavigatorConcurrentHardware](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorConcurrentHardware] (val x: Self) extends AnyVal {
     
     inline def setHardwareConcurrency(value: Double): Self = StObject.set(x, "hardwareConcurrency", value.asInstanceOf[js.Any])
   }

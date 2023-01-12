@@ -34,7 +34,8 @@ object EventConfig {
     __obj.asInstanceOf[EventConfig]
   }
   
-  extension [Self <: EventConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventConfig] (val x: Self) extends AnyVal {
     
     inline def setEventProps(value: js.Object): Self = StObject.set(x, "eventProps", value.asInstanceOf[js.Any])
     

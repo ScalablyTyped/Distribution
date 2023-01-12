@@ -21,7 +21,8 @@ object distTypesGitCommitTypeMod {
       __obj.asInstanceOf[FileModification]
     }
     
-    extension [Self <: FileModification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileModification] (val x: Self) extends AnyVal {
       
       inline def setLinesAdded(value: Double): Self = StObject.set(x, "linesAdded", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object distTypesGitCommitTypeMod {
       __obj.asInstanceOf[FileRename]
     }
     
-    extension [Self <: FileRename](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileRename] (val x: Self) extends AnyVal {
       
       inline def setNewPath(value: String): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object distTypesGitCommitTypeMod {
       __obj.asInstanceOf[GitCommit]
     }
     
-    extension [Self <: GitCommit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitCommit] (val x: Self) extends AnyVal {
       
       inline def setAuthorEmail(value: String): Self = StObject.set(x, "authorEmail", value.asInstanceOf[js.Any])
       

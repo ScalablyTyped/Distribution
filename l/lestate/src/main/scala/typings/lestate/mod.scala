@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[LeState]
     }
     
-    extension [Self <: LeState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeState] (val x: Self) extends AnyVal {
       
       inline def setCreateListener(value: Force => Unit): Self = StObject.set(x, "createListener", js.Any.fromFunction1(value))
       

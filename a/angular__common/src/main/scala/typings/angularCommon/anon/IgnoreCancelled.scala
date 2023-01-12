@@ -15,7 +15,8 @@ object IgnoreCancelled {
     __obj.asInstanceOf[IgnoreCancelled]
   }
   
-  extension [Self <: IgnoreCancelled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoreCancelled] (val x: Self) extends AnyVal {
     
     inline def setIgnoreCancelled(value: Boolean): Self = StObject.set(x, "ignoreCancelled", value.asInstanceOf[js.Any])
     

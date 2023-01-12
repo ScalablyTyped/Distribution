@@ -29,7 +29,8 @@ object AlwaysReturnBasicInformation {
     __obj.asInstanceOf[AlwaysReturnBasicInformation]
   }
   
-  extension [Self <: AlwaysReturnBasicInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlwaysReturnBasicInformation] (val x: Self) extends AnyVal {
     
     inline def setAlwaysReturnBasicInformation(value: scala.Double): Self = StObject.set(x, "alwaysReturnBasicInformation", value.asInstanceOf[js.Any])
     

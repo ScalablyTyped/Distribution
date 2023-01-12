@@ -22,7 +22,8 @@ object PartialtextPartialfillstr {
     __obj.asInstanceOf[PartialtextPartialfillstr]
   }
   
-  extension [Self <: PartialtextPartialfillstr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialtextPartialfillstr] (val x: Self) extends AnyVal {
     
     inline def setLink(value: PartialstrokestringstrokeAccentColor): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     

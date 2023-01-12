@@ -17,7 +17,8 @@ object IsISO8601Options {
     __obj.asInstanceOf[IsISO8601Options]
   }
   
-  extension [Self <: IsISO8601Options](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsISO8601Options] (val x: Self) extends AnyVal {
     
     inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object UpdateElasticsearchDomainConfigResponse {
     __obj.asInstanceOf[UpdateElasticsearchDomainConfigResponse]
   }
   
-  extension [Self <: UpdateElasticsearchDomainConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateElasticsearchDomainConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setDomainConfig(value: ElasticsearchDomainConfig): Self = StObject.set(x, "DomainConfig", value.asInstanceOf[js.Any])
     

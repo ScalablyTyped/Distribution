@@ -66,7 +66,8 @@ object CreateStreamProcessorRequest {
     __obj.asInstanceOf[CreateStreamProcessorRequest]
   }
   
-  extension [Self <: CreateStreamProcessorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStreamProcessorRequest] (val x: Self) extends AnyVal {
     
     inline def setDataSharingPreference(value: StreamProcessorDataSharingPreference): Self = StObject.set(x, "DataSharingPreference", value.asInstanceOf[js.Any])
     

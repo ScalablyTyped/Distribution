@@ -16,7 +16,8 @@ object GoogleCloudRecommenderV1ValueMatcher {
     __obj.asInstanceOf[GoogleCloudRecommenderV1ValueMatcher]
   }
   
-  extension [Self <: GoogleCloudRecommenderV1ValueMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommenderV1ValueMatcher] (val x: Self) extends AnyVal {
     
     inline def setMatchesPattern(value: String): Self = StObject.set(x, "matchesPattern", value.asInstanceOf[js.Any])
     

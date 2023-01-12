@@ -254,7 +254,8 @@ object examplesJsmAnimationMmdphysicsMod {
       __obj.asInstanceOf[MMDPhysicsParameter]
     }
     
-    extension [Self <: MMDPhysicsParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MMDPhysicsParameter] (val x: Self) extends AnyVal {
       
       inline def setGravity(value: Vector3): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object DeletePublishingDestinationRequest {
     __obj.asInstanceOf[DeletePublishingDestinationRequest]
   }
   
-  extension [Self <: DeletePublishingDestinationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePublishingDestinationRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationId(value: String): Self = StObject.set(x, "DestinationId", value.asInstanceOf[js.Any])
     

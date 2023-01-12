@@ -27,7 +27,8 @@ object PartialStyleAlignment {
     __obj.asInstanceOf[PartialStyleAlignment]
   }
   
-  extension [Self <: PartialStyleAlignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleAlignment] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: PartialAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

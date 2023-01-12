@@ -23,7 +23,8 @@ object ForceLongPolling {
     __obj.asInstanceOf[ForceLongPolling]
   }
   
-  extension [Self <: ForceLongPolling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForceLongPolling] (val x: Self) extends AnyVal {
     
     inline def setForceLongPolling(value: () => Unit): Self = StObject.set(x, "forceLongPolling", js.Any.fromFunction0(value))
     

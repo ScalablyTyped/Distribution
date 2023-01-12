@@ -62,7 +62,8 @@ object ScriptMetadataOverrides {
     __obj.asInstanceOf[ScriptMetadataOverrides]
   }
   
-  extension [Self <: ScriptMetadataOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptMetadataOverrides] (val x: Self) extends AnyVal {
     
     inline def setMerge_connects(value: Boolean): Self = StObject.set(x, "merge_connects", value.asInstanceOf[js.Any])
     

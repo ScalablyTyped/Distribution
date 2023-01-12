@@ -45,7 +45,8 @@ object TileLayer {
       __obj.asInstanceOf[EventMap]
     }
     
-    extension [Self <: EventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: Event_[complete, Unit]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     }
@@ -93,7 +94,8 @@ object TileLayer {
         __obj.asInstanceOf[typings.amapJsApi.AMap.TileLayer.Flexible.Options]
       }
       
-      extension [Self <: typings.amapJsApi.AMap.TileLayer.Flexible.Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.amapJsApi.AMap.TileLayer.Flexible.Options] (val x: Self) extends AnyVal {
         
         inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
         
@@ -166,7 +168,8 @@ object TileLayer {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDetectRetina(value: Boolean): Self = StObject.set(x, "detectRetina", value.asInstanceOf[js.Any])
       
@@ -237,7 +240,8 @@ object TileLayer {
         __obj.asInstanceOf[typings.amapJsApi.AMap.TileLayer.Traffic.Options]
       }
       
-      extension [Self <: typings.amapJsApi.AMap.TileLayer.Traffic.Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.amapJsApi.AMap.TileLayer.Traffic.Options] (val x: Self) extends AnyVal {
         
         inline def setAutoRefresh(value: Boolean): Self = StObject.set(x, "autoRefresh", value.asInstanceOf[js.Any])
         
@@ -306,7 +310,8 @@ object TileLayer {
         __obj.asInstanceOf[typings.amapJsApi.AMap.TileLayer.WMS.Options]
       }
       
-      extension [Self <: typings.amapJsApi.AMap.TileLayer.WMS.Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.amapJsApi.AMap.TileLayer.WMS.Options] (val x: Self) extends AnyVal {
         
         inline def setBlend(value: Boolean): Self = StObject.set(x, "blend", value.asInstanceOf[js.Any])
         
@@ -345,7 +350,8 @@ object TileLayer {
         __obj.asInstanceOf[Params]
       }
       
-      extension [Self <: Params](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
         
         inline def setBGCOLOR(value: String): Self = StObject.set(x, "BGCOLOR", value.asInstanceOf[js.Any])
         
@@ -441,7 +447,8 @@ object TileLayer {
         __obj.asInstanceOf[typings.amapJsApi.AMap.TileLayer.WMTS.Options]
       }
       
-      extension [Self <: typings.amapJsApi.AMap.TileLayer.WMTS.Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.amapJsApi.AMap.TileLayer.WMTS.Options] (val x: Self) extends AnyVal {
         
         inline def setBlend(value: Boolean): Self = StObject.set(x, "blend", value.asInstanceOf[js.Any])
         
@@ -470,7 +477,8 @@ object TileLayer {
         __obj.asInstanceOf[typings.amapJsApi.AMap.TileLayer.WMTS.Params]
       }
       
-      extension [Self <: typings.amapJsApi.AMap.TileLayer.WMTS.Params](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.amapJsApi.AMap.TileLayer.WMTS.Params] (val x: Self) extends AnyVal {
         
         inline def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
         

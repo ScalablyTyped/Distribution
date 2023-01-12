@@ -21,7 +21,8 @@ object Thickness {
     __obj.asInstanceOf[Thickness]
   }
   
-  extension [Self <: Thickness](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Thickness] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String | Transform): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

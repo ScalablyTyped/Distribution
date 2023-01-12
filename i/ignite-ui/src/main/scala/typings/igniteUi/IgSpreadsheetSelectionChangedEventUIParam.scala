@@ -23,7 +23,8 @@ object IgSpreadsheetSelectionChangedEventUIParam {
     __obj.asInstanceOf[IgSpreadsheetSelectionChangedEventUIParam]
   }
   
-  extension [Self <: IgSpreadsheetSelectionChangedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgSpreadsheetSelectionChangedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

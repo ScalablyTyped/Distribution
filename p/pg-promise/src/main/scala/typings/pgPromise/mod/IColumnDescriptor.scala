@@ -21,7 +21,8 @@ object IColumnDescriptor {
     __obj.asInstanceOf[IColumnDescriptor[T]]
   }
   
-  extension [Self <: IColumnDescriptor[?], T](x: Self & IColumnDescriptor[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColumnDescriptor[?], T] (val x: Self & IColumnDescriptor[T]) extends AnyVal {
     
     inline def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
     

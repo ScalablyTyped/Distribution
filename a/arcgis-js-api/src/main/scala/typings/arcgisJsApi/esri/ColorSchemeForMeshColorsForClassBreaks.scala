@@ -27,7 +27,8 @@ object ColorSchemeForMeshColorsForClassBreaks {
     __obj.asInstanceOf[ColorSchemeForMeshColorsForClassBreaks]
   }
   
-  extension [Self <: ColorSchemeForMeshColorsForClassBreaks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorSchemeForMeshColorsForClassBreaks] (val x: Self) extends AnyVal {
     
     inline def setColors(value: js.Array[Color_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

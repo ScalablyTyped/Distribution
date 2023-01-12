@@ -33,7 +33,8 @@ object OnNetworkStatusChangeCallbackResult {
     __obj.asInstanceOf[OnNetworkStatusChangeCallbackResult]
   }
   
-  extension [Self <: OnNetworkStatusChangeCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnNetworkStatusChangeCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
     

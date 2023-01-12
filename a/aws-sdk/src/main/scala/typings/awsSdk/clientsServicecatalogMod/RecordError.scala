@@ -23,7 +23,8 @@ object RecordError {
     __obj.asInstanceOf[RecordError]
   }
   
-  extension [Self <: RecordError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: ErrorCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

@@ -217,7 +217,8 @@ object UnoControlNumericFieldModel {
     __obj.asInstanceOf[UnoControlNumericFieldModel]
   }
   
-  extension [Self <: UnoControlNumericFieldModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnoControlNumericFieldModel] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: Color): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
     

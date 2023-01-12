@@ -28,7 +28,8 @@ object DescribeIngestionResponse {
     __obj.asInstanceOf[DescribeIngestionResponse]
   }
   
-  extension [Self <: DescribeIngestionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeIngestionResponse] (val x: Self) extends AnyVal {
     
     inline def setIngestion(value: Ingestion): Self = StObject.set(x, "Ingestion", value.asInstanceOf[js.Any])
     

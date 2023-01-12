@@ -58,7 +58,8 @@ object ListRecordsResponse {
     __obj.asInstanceOf[ListRecordsResponse]
   }
   
-  extension [Self <: ListRecordsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRecordsResponse] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

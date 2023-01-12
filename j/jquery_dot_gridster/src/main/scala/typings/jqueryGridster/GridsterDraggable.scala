@@ -31,7 +31,8 @@ object GridsterDraggable {
     __obj.asInstanceOf[GridsterDraggable]
   }
   
-  extension [Self <: GridsterDraggable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridsterDraggable] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

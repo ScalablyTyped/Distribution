@@ -17,7 +17,8 @@ object GetFeaturedPlaylistsOptions {
     __obj.asInstanceOf[GetFeaturedPlaylistsOptions]
   }
   
-  extension [Self <: GetFeaturedPlaylistsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFeaturedPlaylistsOptions] (val x: Self) extends AnyVal {
     
     inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ACLsUpdateStatus {
     __obj.asInstanceOf[ACLsUpdateStatus]
   }
   
-  extension [Self <: ACLsUpdateStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ACLsUpdateStatus] (val x: Self) extends AnyVal {
     
     inline def setACLToApply(value: ACLName): Self = StObject.set(x, "ACLToApply", value.asInstanceOf[js.Any])
     

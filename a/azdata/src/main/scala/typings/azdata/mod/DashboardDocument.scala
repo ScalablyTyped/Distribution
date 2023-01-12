@@ -17,7 +17,8 @@ object DashboardDocument {
     __obj.asInstanceOf[DashboardDocument]
   }
   
-  extension [Self <: DashboardDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashboardDocument] (val x: Self) extends AnyVal {
     
     inline def setProfile(value: IConnectionProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     

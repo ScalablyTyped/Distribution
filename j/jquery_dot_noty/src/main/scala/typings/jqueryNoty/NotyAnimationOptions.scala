@@ -21,7 +21,8 @@ object NotyAnimationOptions {
     __obj.asInstanceOf[NotyAnimationOptions]
   }
   
-  extension [Self <: NotyAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotyAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setClose(value: Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

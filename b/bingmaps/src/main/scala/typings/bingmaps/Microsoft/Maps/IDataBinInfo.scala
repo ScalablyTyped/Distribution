@@ -19,7 +19,8 @@ object IDataBinInfo {
     __obj.asInstanceOf[IDataBinInfo]
   }
   
-  extension [Self <: IDataBinInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataBinInfo] (val x: Self) extends AnyVal {
     
     inline def setContainedPushpins(value: js.Array[Pushpin]): Self = StObject.set(x, "containedPushpins", value.asInstanceOf[js.Any])
     

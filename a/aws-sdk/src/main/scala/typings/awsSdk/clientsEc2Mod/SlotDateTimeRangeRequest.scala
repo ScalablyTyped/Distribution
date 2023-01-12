@@ -23,7 +23,8 @@ object SlotDateTimeRangeRequest {
     __obj.asInstanceOf[SlotDateTimeRangeRequest]
   }
   
-  extension [Self <: SlotDateTimeRangeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotDateTimeRangeRequest] (val x: Self) extends AnyVal {
     
     inline def setEarliestTime(value: js.Date): Self = StObject.set(x, "EarliestTime", value.asInstanceOf[js.Any])
     

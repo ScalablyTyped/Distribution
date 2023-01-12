@@ -153,7 +153,8 @@ object libDataSetMod {
       __obj.asInstanceOf[DataSetOptions]
     }
     
-    extension [Self <: DataSetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSetOptions] (val x: Self) extends AnyVal {
       
       inline def setState(value: Record[String, Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }

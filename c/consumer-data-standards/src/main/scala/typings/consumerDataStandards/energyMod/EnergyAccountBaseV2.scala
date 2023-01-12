@@ -43,7 +43,8 @@ object EnergyAccountBaseV2 {
     __obj.asInstanceOf[EnergyAccountBaseV2]
   }
   
-  extension [Self <: EnergyAccountBaseV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnergyAccountBaseV2] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

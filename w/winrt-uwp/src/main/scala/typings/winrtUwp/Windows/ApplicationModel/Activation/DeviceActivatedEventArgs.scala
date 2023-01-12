@@ -44,7 +44,8 @@ object DeviceActivatedEventArgs {
     __obj.asInstanceOf[DeviceActivatedEventArgs]
   }
   
-  extension [Self <: DeviceActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCurrentlyShownApplicationViewId(value: Double): Self = StObject.set(x, "currentlyShownApplicationViewId", value.asInstanceOf[js.Any])
     

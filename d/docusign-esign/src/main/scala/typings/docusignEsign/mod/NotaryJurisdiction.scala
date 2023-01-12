@@ -32,7 +32,8 @@ object NotaryJurisdiction {
     __obj.asInstanceOf[NotaryJurisdiction]
   }
   
-  extension [Self <: NotaryJurisdiction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotaryJurisdiction] (val x: Self) extends AnyVal {
     
     inline def setCommissionExpiration(value: String): Self = StObject.set(x, "commissionExpiration", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object StopKeyPhrasesDetectionJobResponse {
     __obj.asInstanceOf[StopKeyPhrasesDetectionJobResponse]
   }
   
-  extension [Self <: StopKeyPhrasesDetectionJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopKeyPhrasesDetectionJobResponse] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     

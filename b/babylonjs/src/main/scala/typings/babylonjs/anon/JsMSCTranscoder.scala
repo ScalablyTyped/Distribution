@@ -30,7 +30,8 @@ object JsMSCTranscoder {
     __obj.asInstanceOf[JsMSCTranscoder]
   }
   
-  extension [Self <: JsMSCTranscoder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsMSCTranscoder] (val x: Self) extends AnyVal {
     
     inline def setJsDecoderModule(value: String): Self = StObject.set(x, "jsDecoderModule", value.asInstanceOf[js.Any])
     

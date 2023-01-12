@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Blob]
     }
     
-    extension [Self <: Blob](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blob] (val x: Self) extends AnyVal {
       
       inline def setBlob(value: typings.std.Blob): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object anon {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setContent(value: ReactElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -157,7 +160,8 @@ object anon {
       __obj.asInstanceOf[Definitions]
     }
     
-    extension [Self <: Definitions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Definitions] (val x: Self) extends AnyVal {
       
       inline def setDefinitions(value: StringDictionary[Any]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
       
@@ -182,7 +186,8 @@ object anon {
       __obj.asInstanceOf[Description]
     }
     
-    extension [Self <: Description](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String | ReactElement): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -203,7 +208,8 @@ object anon {
       __obj.asInstanceOf[ErrorSchema]
     }
     
-    extension [Self <: ErrorSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorSchema] (val x: Self) extends AnyVal {
       
       inline def setErrorSchema(value: typings.reactJsonschemaForm.mod.ErrorSchema): Self = StObject.set(x, "errorSchema", value.asInstanceOf[js.Any])
       
@@ -228,7 +234,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -251,7 +258,8 @@ object anon {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

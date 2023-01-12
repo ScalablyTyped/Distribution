@@ -20,7 +20,8 @@ object Disjunction {
     __obj.asInstanceOf[Disjunction[F]]
   }
   
-  extension [Self <: Disjunction[?], F /* <: Features */](x: Self & Disjunction[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Disjunction[?], F /* <: Features */] (val x: Self & Disjunction[F]) extends AnyVal {
     
     inline def setBody(value: Array[RootNode[F]]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

@@ -34,7 +34,8 @@ object UserPermissionObject {
     __obj.asInstanceOf[UserPermissionObject]
   }
   
-  extension [Self <: UserPermissionObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserPermissionObject] (val x: Self) extends AnyVal {
     
     inline def setExpirationDate(value: Any): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     

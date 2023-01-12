@@ -17,7 +17,8 @@ object IPrintCustomItemDetails {
     __obj.asInstanceOf[IPrintCustomItemDetails]
   }
   
-  extension [Self <: IPrintCustomItemDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPrintCustomItemDetails] (val x: Self) extends AnyVal {
     
     inline def setItemDisplayName(value: String): Self = StObject.set(x, "itemDisplayName", value.asInstanceOf[js.Any])
     

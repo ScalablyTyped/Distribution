@@ -20,7 +20,8 @@ object AuthenticatedSafeParameters {
     __obj.asInstanceOf[AuthenticatedSafeParameters]
   }
   
-  extension [Self <: AuthenticatedSafeParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticatedSafeParameters] (val x: Self) extends AnyVal {
     
     inline def setParsedValue(value: Any): Self = StObject.set(x, "parsedValue", value.asInstanceOf[js.Any])
     

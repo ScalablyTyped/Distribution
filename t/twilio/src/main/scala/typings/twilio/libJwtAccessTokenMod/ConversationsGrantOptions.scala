@@ -15,7 +15,8 @@ object ConversationsGrantOptions {
     __obj.asInstanceOf[ConversationsGrantOptions]
   }
   
-  extension [Self <: ConversationsGrantOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversationsGrantOptions] (val x: Self) extends AnyVal {
     
     inline def setConfigurationProfileSid(value: String): Self = StObject.set(x, "configurationProfileSid", value.asInstanceOf[js.Any])
     

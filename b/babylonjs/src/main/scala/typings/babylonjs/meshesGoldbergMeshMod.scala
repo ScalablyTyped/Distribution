@@ -332,7 +332,8 @@ object meshesGoldbergMeshMod {
       __obj.asInstanceOf[GoldbergData]
     }
     
-    extension [Self <: GoldbergData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoldbergData] (val x: Self) extends AnyVal {
       
       inline def setAdjacentFaces(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "adjacentFaces", value.asInstanceOf[js.Any])
       

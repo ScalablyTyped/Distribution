@@ -222,7 +222,8 @@ object OmitCascadePickerPropsval {
     __obj.asInstanceOf[OmitCascadePickerPropsval]
   }
   
-  extension [Self <: OmitCascadePickerPropsval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitCascadePickerPropsval] (val x: Self) extends AnyVal {
     
     inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
     

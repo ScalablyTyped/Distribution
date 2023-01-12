@@ -21,7 +21,8 @@ object GroundOverlayOptions {
     __obj.asInstanceOf[GroundOverlayOptions]
   }
   
-  extension [Self <: GroundOverlayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroundOverlayOptions] (val x: Self) extends AnyVal {
     
     inline def setDisplayOnMaxLevel(value: Double): Self = StObject.set(x, "displayOnMaxLevel", value.asInstanceOf[js.Any])
     

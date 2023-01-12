@@ -39,7 +39,8 @@ object KnownStatsError {
     __obj.asInstanceOf[KnownStatsError]
   }
   
-  extension [Self <: KnownStatsError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnownStatsError] (val x: Self) extends AnyVal {
     
     inline def setChunkEntry(value: Boolean): Self = StObject.set(x, "chunkEntry", value.asInstanceOf[js.Any])
     

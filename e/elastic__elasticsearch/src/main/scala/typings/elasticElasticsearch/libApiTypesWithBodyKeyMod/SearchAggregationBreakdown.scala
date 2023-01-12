@@ -48,7 +48,8 @@ object SearchAggregationBreakdown {
     __obj.asInstanceOf[SearchAggregationBreakdown]
   }
   
-  extension [Self <: SearchAggregationBreakdown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchAggregationBreakdown] (val x: Self) extends AnyVal {
     
     inline def setBuild_aggregation(value: long): Self = StObject.set(x, "build_aggregation", value.asInstanceOf[js.Any])
     

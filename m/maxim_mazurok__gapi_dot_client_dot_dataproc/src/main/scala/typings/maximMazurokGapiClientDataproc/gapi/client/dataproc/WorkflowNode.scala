@@ -28,7 +28,8 @@ object WorkflowNode {
     __obj.asInstanceOf[WorkflowNode]
   }
   
-  extension [Self <: WorkflowNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowNode] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

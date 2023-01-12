@@ -34,7 +34,8 @@ object Descriptor {
     __obj.asInstanceOf[Descriptor[ScreenOptions, Navigation, Route]]
   }
   
-  extension [Self <: Descriptor[?, ?, ?], ScreenOptions /* <: js.Object */, Navigation /* <: NavigationProp[Any, Any, Any, Any, Any, Any] */, Route /* <: RouteProp[Any, Any] */](x: Self & (Descriptor[ScreenOptions, Navigation, Route])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Descriptor[?, ?, ?], ScreenOptions /* <: js.Object */, Navigation /* <: NavigationProp[Any, Any, Any, Any, Any, Any] */, Route /* <: RouteProp[Any, Any] */] (val x: Self & (Descriptor[ScreenOptions, Navigation, Route])) extends AnyVal {
     
     inline def setNavigation(value: Navigation): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     

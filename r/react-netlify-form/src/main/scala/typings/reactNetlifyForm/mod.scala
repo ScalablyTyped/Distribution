@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[NetlifyFormProps]
     }
     
-    extension [Self <: NetlifyFormProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetlifyFormProps] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object mod {
       __obj.asInstanceOf[NetlifyFormState]
     }
     
-    extension [Self <: NetlifyFormState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetlifyFormState] (val x: Self) extends AnyVal {
       
       inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

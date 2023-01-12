@@ -19,7 +19,8 @@ object RecordMeta {
     __obj.asInstanceOf[RecordMeta]
   }
   
-  extension [Self <: RecordMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordMeta] (val x: Self) extends AnyVal {
     
     inline def `set@rid`(value: ORID): Self = StObject.set(x, "@rid", value.asInstanceOf[js.Any])
     

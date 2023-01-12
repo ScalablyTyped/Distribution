@@ -289,7 +289,8 @@ object srcCursorMod {
       __obj.asInstanceOf[CursorPositionChangedEvent]
     }
     
-    extension [Self <: CursorPositionChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CursorPositionChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setCursor(value: Cursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       

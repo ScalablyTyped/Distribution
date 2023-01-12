@@ -16,7 +16,8 @@ object EnterpriseAuthenticationAppLinkConfig {
     __obj.asInstanceOf[EnterpriseAuthenticationAppLinkConfig]
   }
   
-  extension [Self <: EnterpriseAuthenticationAppLinkConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnterpriseAuthenticationAppLinkConfig] (val x: Self) extends AnyVal {
     
     inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     

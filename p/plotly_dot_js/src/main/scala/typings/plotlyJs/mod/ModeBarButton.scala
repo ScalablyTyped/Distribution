@@ -63,7 +63,8 @@ object ModeBarButton {
     __obj.asInstanceOf[ModeBarButton]
   }
   
-  extension [Self <: ModeBarButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModeBarButton] (val x: Self) extends AnyVal {
     
     inline def setAttr(value: String): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object MetricPolicyRule {
     __obj.asInstanceOf[MetricPolicyRule]
   }
   
-  extension [Self <: MetricPolicyRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricPolicyRule] (val x: Self) extends AnyVal {
     
     inline def setObjectGroup(value: ObjectGroup): Self = StObject.set(x, "ObjectGroup", value.asInstanceOf[js.Any])
     

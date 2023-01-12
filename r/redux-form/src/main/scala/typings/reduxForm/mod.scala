@@ -332,7 +332,8 @@ object mod {
       __obj.asInstanceOf[ErrorOther[T]]
     }
     
-    extension [Self <: ErrorOther[?], T](x: Self & ErrorOther[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorOther[?], T] (val x: Self & ErrorOther[T]) extends AnyVal {
       
       inline def set_error(value: T): Self = StObject.set(x, "_error", value.asInstanceOf[js.Any])
       
@@ -384,7 +385,8 @@ object mod {
       __obj.asInstanceOf[FormErrors[FormData, T]]
     }
     
-    extension [Self <: FormErrors[?, ?], FormData, T](x: Self & (FormErrors[FormData, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormErrors[?, ?], FormData, T] (val x: Self & (FormErrors[FormData, T])) extends AnyVal {
       
       inline def setAppend(value: ReactElement | T): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       
@@ -462,7 +464,8 @@ object mod {
       __obj.asInstanceOf[FormWarnings[FormData, T]]
     }
     
-    extension [Self <: FormWarnings[?, ?], FormData, T](x: Self & (FormWarnings[FormData, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormWarnings[?, ?], FormData, T] (val x: Self & (FormWarnings[FormData, T])) extends AnyVal {
       
       inline def setAppend(value: ReactElement | String | WarningOther[T]): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       
@@ -525,7 +528,8 @@ object mod {
       __obj.asInstanceOf[RegisteredFieldState]
     }
     
-    extension [Self <: RegisteredFieldState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisteredFieldState] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -544,7 +548,8 @@ object mod {
       __obj.asInstanceOf[WarningOther[T]]
     }
     
-    extension [Self <: WarningOther[?], T](x: Self & WarningOther[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WarningOther[?], T] (val x: Self & WarningOther[T]) extends AnyVal {
       
       inline def set_warning(value: T): Self = StObject.set(x, "_warning", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object DescribedBy {
     __obj.asInstanceOf[DescribedBy]
   }
   
-  extension [Self <: DescribedBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribedBy] (val x: Self) extends AnyVal {
     
     inline def setDescribedBy(value: Domain): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
     

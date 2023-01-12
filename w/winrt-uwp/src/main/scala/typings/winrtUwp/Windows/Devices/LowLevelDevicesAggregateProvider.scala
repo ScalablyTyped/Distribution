@@ -33,7 +33,8 @@ object LowLevelDevicesAggregateProvider {
     __obj.asInstanceOf[LowLevelDevicesAggregateProvider]
   }
   
-  extension [Self <: LowLevelDevicesAggregateProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LowLevelDevicesAggregateProvider] (val x: Self) extends AnyVal {
     
     inline def setAdcControllerProvider(value: Any): Self = StObject.set(x, "adcControllerProvider", value.asInstanceOf[js.Any])
     

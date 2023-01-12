@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setCreateBroadcaster(value: (String, Any) => Broadcast): Self = StObject.set(x, "createBroadcaster", js.Any.fromFunction2(value))
     }
@@ -76,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Add]
     }
     
-    extension [Self <: Add](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Add] (val x: Self) extends AnyVal {
       
       inline def setAdd(
         value: StringDictionary[
@@ -116,7 +118,8 @@ object anon {
       __obj.asInstanceOf[BroadcastIf]
     }
     
-    extension [Self <: BroadcastIf](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BroadcastIf] (val x: Self) extends AnyVal {
       
       inline def setBroadcastIf(value: Boolean | (js.Function1[/* payload */ Any, Boolean])): Self = StObject.set(x, "broadcastIf", value.asInstanceOf[js.Any])
       
@@ -149,7 +152,8 @@ object anon {
       __obj.asInstanceOf[BroadcastOn]
     }
     
-    extension [Self <: BroadcastOn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BroadcastOn] (val x: Self) extends AnyVal {
       
       inline def setBroadcastIf(value: Boolean | (js.Function1[/* payload */ Any, Boolean])): Self = StObject.set(x, "broadcastIf", value.asInstanceOf[js.Any])
       
@@ -180,7 +184,8 @@ object anon {
       __obj.asInstanceOf[CreateBroadcaster]
     }
     
-    extension [Self <: CreateBroadcaster](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateBroadcaster] (val x: Self) extends AnyVal {
       
       inline def setCreateBroadcaster(value: String => Any): Self = StObject.set(x, "createBroadcaster", js.Any.fromFunction1(value))
       
@@ -228,7 +233,8 @@ object anon {
       __obj.asInstanceOf[Exclude]
     }
     
-    extension [Self <: Exclude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exclude] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: String): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       

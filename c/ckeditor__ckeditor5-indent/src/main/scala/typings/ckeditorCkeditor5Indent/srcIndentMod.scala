@@ -42,7 +42,8 @@ object srcIndentMod {
         __obj.asInstanceOf[Plugins]
       }
       
-      extension [Self <: Plugins](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
         
         inline def setIndent(value: Indent): Self = StObject.set(x, "Indent", value.asInstanceOf[js.Any])
       }

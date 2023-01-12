@@ -28,7 +28,8 @@ object ImportSshPublicKeyRequest {
     __obj.asInstanceOf[ImportSshPublicKeyRequest]
   }
   
-  extension [Self <: ImportSshPublicKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportSshPublicKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setServerId(value: ServerId): Self = StObject.set(x, "ServerId", value.asInstanceOf[js.Any])
     

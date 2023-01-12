@@ -23,7 +23,8 @@ object ListTrackersRequest {
     __obj.asInstanceOf[ListTrackersRequest]
   }
   
-  extension [Self <: ListTrackersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTrackersRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ListTrackersRequestMaxResultsInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

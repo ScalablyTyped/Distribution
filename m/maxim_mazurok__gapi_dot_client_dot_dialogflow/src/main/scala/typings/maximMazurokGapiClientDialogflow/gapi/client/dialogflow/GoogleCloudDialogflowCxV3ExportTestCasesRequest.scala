@@ -29,7 +29,8 @@ object GoogleCloudDialogflowCxV3ExportTestCasesRequest {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3ExportTestCasesRequest]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3ExportTestCasesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3ExportTestCasesRequest] (val x: Self) extends AnyVal {
     
     inline def setDataFormat(value: String): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
     

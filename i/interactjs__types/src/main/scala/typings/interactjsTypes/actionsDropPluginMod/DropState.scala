@@ -30,7 +30,8 @@ object DropState {
     __obj.asInstanceOf[DropState]
   }
   
-  extension [Self <: DropState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropState] (val x: Self) extends AnyVal {
     
     inline def setActiveDrops(value: js.Array[ActiveDrop]): Self = StObject.set(x, "activeDrops", value.asInstanceOf[js.Any])
     

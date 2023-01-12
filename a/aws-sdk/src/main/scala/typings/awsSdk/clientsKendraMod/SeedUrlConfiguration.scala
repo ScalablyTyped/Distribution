@@ -23,7 +23,8 @@ object SeedUrlConfiguration {
     __obj.asInstanceOf[SeedUrlConfiguration]
   }
   
-  extension [Self <: SeedUrlConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeedUrlConfiguration] (val x: Self) extends AnyVal {
     
     inline def setSeedUrls(value: SeedUrlList): Self = StObject.set(x, "SeedUrls", value.asInstanceOf[js.Any])
     

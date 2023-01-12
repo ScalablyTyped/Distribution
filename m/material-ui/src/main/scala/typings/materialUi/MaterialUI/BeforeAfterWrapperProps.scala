@@ -26,7 +26,8 @@ object BeforeAfterWrapperProps {
     __obj.asInstanceOf[BeforeAfterWrapperProps]
   }
   
-  extension [Self <: BeforeAfterWrapperProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeforeAfterWrapperProps] (val x: Self) extends AnyVal {
     
     inline def setAfterElementType(value: String): Self = StObject.set(x, "afterElementType", value.asInstanceOf[js.Any])
     

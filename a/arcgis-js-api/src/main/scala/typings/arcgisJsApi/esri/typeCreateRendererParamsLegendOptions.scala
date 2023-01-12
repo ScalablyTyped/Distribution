@@ -20,7 +20,8 @@ object typeCreateRendererParamsLegendOptions {
     __obj.asInstanceOf[typeCreateRendererParamsLegendOptions]
   }
   
-  extension [Self <: typeCreateRendererParamsLegendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typeCreateRendererParamsLegendOptions] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }

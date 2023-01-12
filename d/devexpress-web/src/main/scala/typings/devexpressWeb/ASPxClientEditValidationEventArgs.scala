@@ -33,7 +33,8 @@ object ASPxClientEditValidationEventArgs {
     __obj.asInstanceOf[ASPxClientEditValidationEventArgs]
   }
   
-  extension [Self <: ASPxClientEditValidationEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientEditValidationEventArgs] (val x: Self) extends AnyVal {
     
     inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     

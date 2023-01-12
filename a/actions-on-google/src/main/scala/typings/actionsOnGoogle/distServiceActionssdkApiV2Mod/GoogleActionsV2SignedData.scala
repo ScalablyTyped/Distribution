@@ -28,7 +28,8 @@ object GoogleActionsV2SignedData {
     __obj.asInstanceOf[GoogleActionsV2SignedData]
   }
   
-  extension [Self <: GoogleActionsV2SignedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2SignedData] (val x: Self) extends AnyVal {
     
     inline def setInAppDataSignature(value: String): Self = StObject.set(x, "inAppDataSignature", value.asInstanceOf[js.Any])
     

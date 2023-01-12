@@ -34,7 +34,8 @@ object PieChartRendererOthersCategory {
     __obj.asInstanceOf[PieChartRendererOthersCategory]
   }
   
-  extension [Self <: PieChartRendererOthersCategory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PieChartRendererOthersCategory] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

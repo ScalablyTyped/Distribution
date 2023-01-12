@@ -22,7 +22,8 @@ object CseInfo {
     __obj.asInstanceOf[CseInfo]
   }
   
-  extension [Self <: CseInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CseInfo] (val x: Self) extends AnyVal {
     
     inline def setCseDomain(value: String): Self = StObject.set(x, "cseDomain", value.asInstanceOf[js.Any])
     

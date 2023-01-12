@@ -24,7 +24,8 @@ object libCommonDiagnosticMod {
       __obj.asInstanceOf[DiagnosticFeatureShape]
     }
     
-    extension [Self <: DiagnosticFeatureShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiagnosticFeatureShape] (val x: Self) extends AnyVal {
       
       inline def setDiagnostics(value: On): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     }

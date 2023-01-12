@@ -18,7 +18,8 @@ object IndexedKeyRangeInfos {
     __obj.asInstanceOf[IndexedKeyRangeInfos]
   }
   
-  extension [Self <: IndexedKeyRangeInfos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexedKeyRangeInfos] (val x: Self) extends AnyVal {
     
     inline def setKeyRangeInfos(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.KeyRangeInfos} */ js.Any

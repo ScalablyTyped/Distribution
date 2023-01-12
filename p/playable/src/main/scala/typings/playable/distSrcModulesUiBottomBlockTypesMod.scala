@@ -100,7 +100,8 @@ object distSrcModulesUiBottomBlockTypesMod {
       __obj.asInstanceOf[IBottomBlockAPI]
     }
     
-    extension [Self <: IBottomBlockAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBottomBlockAPI] (val x: Self) extends AnyVal {
       
       inline def setHideDownloadButton(value: () => Unit): Self = StObject.set(x, "hideDownloadButton", js.Any.fromFunction0(value))
       
@@ -180,7 +181,8 @@ object distSrcModulesUiBottomBlockTypesMod {
       __obj.asInstanceOf[IBottomBlockViewCallbacks]
     }
     
-    extension [Self <: IBottomBlockViewCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBottomBlockViewCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnBlockMouseMove(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onBlockMouseMove", value.asInstanceOf[js.Any])
       
@@ -205,7 +207,8 @@ object distSrcModulesUiBottomBlockTypesMod {
       __obj.asInstanceOf[IBottomBlockViewConfig]
     }
     
-    extension [Self <: IBottomBlockViewConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBottomBlockViewConfig] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: IBottomBlockViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -247,7 +250,8 @@ object distSrcModulesUiBottomBlockTypesMod {
       __obj.asInstanceOf[IBottomBlockViewElements]
     }
     
-    extension [Self <: IBottomBlockViewElements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBottomBlockViewElements] (val x: Self) extends AnyVal {
       
       inline def setDownload(value: HTMLElement): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
@@ -343,7 +347,8 @@ object distSrcModulesUiBottomBlockTypesMod {
       __obj.asInstanceOf[IBottomBlockViewStyles]
     }
     
-    extension [Self <: IBottomBlockViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBottomBlockViewStyles] (val x: Self) extends AnyVal {
       
       inline def setActivated(value: String): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
       

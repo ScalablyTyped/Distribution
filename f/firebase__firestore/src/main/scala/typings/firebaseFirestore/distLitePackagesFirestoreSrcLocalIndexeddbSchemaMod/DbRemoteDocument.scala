@@ -60,7 +60,8 @@ object DbRemoteDocument {
     __obj.asInstanceOf[DbRemoteDocument]
   }
   
-  extension [Self <: DbRemoteDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbRemoteDocument] (val x: Self) extends AnyVal {
     
     inline def setCollectionGroup(value: String): Self = StObject.set(x, "collectionGroup", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object SoftphoneError {
     __obj.asInstanceOf[SoftphoneError]
   }
   
-  extension [Self <: SoftphoneError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoftphoneError] (val x: Self) extends AnyVal {
     
     inline def setEndPointUrl(value: String): Self = StObject.set(x, "endPointUrl", value.asInstanceOf[js.Any])
     

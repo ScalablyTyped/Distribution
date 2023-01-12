@@ -27,7 +27,8 @@ object FieldSort {
     __obj.asInstanceOf[FieldSort]
   }
   
-  extension [Self <: FieldSort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldSort] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

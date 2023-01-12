@@ -60,7 +60,8 @@ object VNode {
     __obj.asInstanceOf[VNode[HostNode, HostElement, ExtraProps]]
   }
   
-  extension [Self <: VNode[?, ?, ?], HostNode, HostElement, ExtraProps](x: Self & (VNode[HostNode, HostElement, ExtraProps])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VNode[?, ?, ?], HostNode, HostElement, ExtraProps] (val x: Self & (VNode[HostNode, HostElement, ExtraProps])) extends AnyVal {
     
     inline def setAnchor(value: HostNode): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

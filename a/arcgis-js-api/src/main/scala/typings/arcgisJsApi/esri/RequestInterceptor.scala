@@ -62,7 +62,8 @@ object RequestInterceptor {
     __obj.asInstanceOf[RequestInterceptor]
   }
   
-  extension [Self <: RequestInterceptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestInterceptor] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: /* response */ RequestResponse => scala.Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
     

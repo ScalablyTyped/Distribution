@@ -28,7 +28,8 @@ object ListCrawlersRequest {
     __obj.asInstanceOf[ListCrawlersRequest]
   }
   
-  extension [Self <: ListCrawlersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCrawlersRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

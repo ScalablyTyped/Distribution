@@ -106,7 +106,8 @@ object VerificationResult {
     __obj.asInstanceOf[VerificationResult]
   }
   
-  extension [Self <: VerificationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerificationResult] (val x: Self) extends AnyVal {
     
     inline def setAttestation(value: VerificationResultAttestation): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
     

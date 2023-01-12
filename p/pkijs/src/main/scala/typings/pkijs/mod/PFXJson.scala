@@ -19,7 +19,8 @@ object PFXJson {
     __obj.asInstanceOf[PFXJson]
   }
   
-  extension [Self <: PFXJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PFXJson] (val x: Self) extends AnyVal {
     
     inline def setAuthSafe(value: ContentInfoJson): Self = StObject.set(x, "authSafe", value.asInstanceOf[js.Any])
     

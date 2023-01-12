@@ -23,7 +23,8 @@ object DeleteStepDetails {
     __obj.asInstanceOf[DeleteStepDetails]
   }
   
-  extension [Self <: DeleteStepDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteStepDetails] (val x: Self) extends AnyVal {
     
     inline def setName(value: WorkflowStepName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

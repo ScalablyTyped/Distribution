@@ -23,7 +23,8 @@ object UpdateSourceServerReplicationTypeRequest {
     __obj.asInstanceOf[UpdateSourceServerReplicationTypeRequest]
   }
   
-  extension [Self <: UpdateSourceServerReplicationTypeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSourceServerReplicationTypeRequest] (val x: Self) extends AnyVal {
     
     inline def setReplicationType(value: ReplicationType): Self = StObject.set(x, "replicationType", value.asInstanceOf[js.Any])
     

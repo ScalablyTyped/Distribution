@@ -19,7 +19,8 @@ object TraceParams {
     __obj.asInstanceOf[TraceParams]
   }
   
-  extension [Self <: TraceParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TraceParams] (val x: Self) extends AnyVal {
     
     inline def setDisableMemory(value: Boolean): Self = StObject.set(x, "disableMemory", value.asInstanceOf[js.Any])
     

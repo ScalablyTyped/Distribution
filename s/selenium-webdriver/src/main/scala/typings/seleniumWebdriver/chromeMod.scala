@@ -394,7 +394,8 @@ object chromeMod {
       __obj.asInstanceOf[IOptionsValues]
     }
     
-    extension [Self <: IOptionsValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptionsValues] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -443,7 +444,8 @@ object chromeMod {
       __obj.asInstanceOf[IPerfLoggingPrefs]
     }
     
-    extension [Self <: IPerfLoggingPrefs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPerfLoggingPrefs] (val x: Self) extends AnyVal {
       
       inline def setBufferUsageReportingInterval(value: Double): Self = StObject.set(x, "bufferUsageReportingInterval", value.asInstanceOf[js.Any])
       

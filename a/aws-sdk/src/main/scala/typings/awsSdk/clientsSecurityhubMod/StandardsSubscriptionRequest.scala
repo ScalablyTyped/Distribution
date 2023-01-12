@@ -23,7 +23,8 @@ object StandardsSubscriptionRequest {
     __obj.asInstanceOf[StandardsSubscriptionRequest]
   }
   
-  extension [Self <: StandardsSubscriptionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardsSubscriptionRequest] (val x: Self) extends AnyVal {
     
     inline def setStandardsArn(value: NonEmptyString): Self = StObject.set(x, "StandardsArn", value.asInstanceOf[js.Any])
     

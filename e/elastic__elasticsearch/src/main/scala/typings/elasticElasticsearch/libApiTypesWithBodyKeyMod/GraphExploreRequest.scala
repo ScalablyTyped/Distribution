@@ -25,7 +25,8 @@ object GraphExploreRequest {
     __obj.asInstanceOf[GraphExploreRequest]
   }
   
-  extension [Self <: GraphExploreRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphExploreRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Connections): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

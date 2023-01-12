@@ -19,7 +19,8 @@ object IdentityVerifications {
     __obj.asInstanceOf[IdentityVerifications]
   }
   
-  extension [Self <: IdentityVerifications](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityVerifications] (val x: Self) extends AnyVal {
     
     inline def setIdentityVerification(
       value: js.Array[

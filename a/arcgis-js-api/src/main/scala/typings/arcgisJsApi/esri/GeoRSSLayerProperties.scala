@@ -65,7 +65,8 @@ object GeoRSSLayerProperties {
     __obj.asInstanceOf[GeoRSSLayerProperties]
   }
   
-  extension [Self <: GeoRSSLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoRSSLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
     

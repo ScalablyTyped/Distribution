@@ -37,7 +37,8 @@ object typeanygroupIdstringundef {
     __obj.asInstanceOf[typeanygroupIdstringundef]
   }
   
-  extension [Self <: typeanygroupIdstringundef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typeanygroupIdstringundef] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: () => Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     

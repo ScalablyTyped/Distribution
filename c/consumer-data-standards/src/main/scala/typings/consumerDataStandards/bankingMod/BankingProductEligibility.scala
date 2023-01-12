@@ -50,7 +50,8 @@ object BankingProductEligibility {
     __obj.asInstanceOf[BankingProductEligibility]
   }
   
-  extension [Self <: BankingProductEligibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BankingProductEligibility] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInfo(value: String): Self = StObject.set(x, "additionalInfo", value.asInstanceOf[js.Any])
     

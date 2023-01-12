@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[Match[T]]
     }
     
-    extension [Self <: Match[?], T](x: Self & Match[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Match[?], T] (val x: Self & Match[T]) extends AnyVal {
       
       inline def setPage(value: T): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       

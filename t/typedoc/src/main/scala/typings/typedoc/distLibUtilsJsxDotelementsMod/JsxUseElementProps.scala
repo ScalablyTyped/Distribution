@@ -28,7 +28,8 @@ object JsxUseElementProps {
     __obj.asInstanceOf[JsxUseElementProps]
   }
   
-  extension [Self <: JsxUseElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxUseElementProps] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

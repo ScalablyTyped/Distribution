@@ -61,7 +61,8 @@ object ReadonlyIColorPickerProps {
     __obj.asInstanceOf[ReadonlyIColorPickerProps]
   }
   
-  extension [Self <: ReadonlyIColorPickerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyIColorPickerProps] (val x: Self) extends AnyVal {
     
     inline def setAlphaLabel(value: String): Self = StObject.set(x, "alphaLabel", value.asInstanceOf[js.Any])
     

@@ -113,7 +113,8 @@ object sapUiCoreLabelEnablementMod extends Shortcut {
       __obj.asInstanceOf[LabelEnablement]
     }
     
-    extension [Self <: LabelEnablement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelEnablement] (val x: Self) extends AnyVal {
       
       inline def setEnrich(value: typings.openui5.sapUiCoreControlMod.default => Unit): Self = StObject.set(x, "enrich", js.Any.fromFunction1(value))
       

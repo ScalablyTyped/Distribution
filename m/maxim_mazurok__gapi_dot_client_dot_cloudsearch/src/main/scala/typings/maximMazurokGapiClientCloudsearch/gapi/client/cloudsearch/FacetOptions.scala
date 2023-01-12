@@ -25,7 +25,8 @@ object FacetOptions {
     __obj.asInstanceOf[FacetOptions]
   }
   
-  extension [Self <: FacetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FacetOptions] (val x: Self) extends AnyVal {
     
     inline def setNumFacetBuckets(value: Double): Self = StObject.set(x, "numFacetBuckets", value.asInstanceOf[js.Any])
     

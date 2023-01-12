@@ -38,7 +38,8 @@ object TypeofBillingPortal {
     __obj.asInstanceOf[TypeofBillingPortal]
   }
   
-  extension [Self <: TypeofBillingPortal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofBillingPortal] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: TypeofConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     

@@ -97,7 +97,8 @@ object AppsDynamiteAnnotation {
     __obj.asInstanceOf[AppsDynamiteAnnotation]
   }
   
-  extension [Self <: AppsDynamiteAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteAnnotation] (val x: Self) extends AnyVal {
     
     inline def setBabelPlaceholderMetadata(value: AppsDynamiteBabelPlaceholderMetadata): Self = StObject.set(x, "babelPlaceholderMetadata", value.asInstanceOf[js.Any])
     

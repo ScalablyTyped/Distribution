@@ -17,7 +17,8 @@ object QueryKeyRef {
     __obj.asInstanceOf[QueryKeyRef]
   }
   
-  extension [Self <: QueryKeyRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryKeyRef] (val x: Self) extends AnyVal {
     
     inline def setPath(value: Owner): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

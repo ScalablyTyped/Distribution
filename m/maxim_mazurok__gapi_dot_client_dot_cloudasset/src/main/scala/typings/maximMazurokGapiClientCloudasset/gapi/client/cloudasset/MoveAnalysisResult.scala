@@ -22,7 +22,8 @@ object MoveAnalysisResult {
     __obj.asInstanceOf[MoveAnalysisResult]
   }
   
-  extension [Self <: MoveAnalysisResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveAnalysisResult] (val x: Self) extends AnyVal {
     
     inline def setBlockers(value: js.Array[MoveImpact]): Self = StObject.set(x, "blockers", value.asInstanceOf[js.Any])
     

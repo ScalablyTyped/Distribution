@@ -45,7 +45,8 @@ object ThreadFlow {
     __obj.asInstanceOf[ThreadFlow]
   }
   
-  extension [Self <: ThreadFlow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreadFlow] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

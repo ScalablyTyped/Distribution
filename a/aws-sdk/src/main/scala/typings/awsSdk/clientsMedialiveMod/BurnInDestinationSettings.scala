@@ -98,7 +98,8 @@ object BurnInDestinationSettings {
     __obj.asInstanceOf[BurnInDestinationSettings]
   }
   
-  extension [Self <: BurnInDestinationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BurnInDestinationSettings] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: BurnInAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     

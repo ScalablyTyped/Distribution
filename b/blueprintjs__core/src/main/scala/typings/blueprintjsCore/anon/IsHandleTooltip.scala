@@ -15,7 +15,8 @@ object IsHandleTooltip {
     __obj.asInstanceOf[IsHandleTooltip]
   }
   
-  extension [Self <: IsHandleTooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsHandleTooltip] (val x: Self) extends AnyVal {
     
     inline def setIsHandleTooltip(value: Boolean): Self = StObject.set(x, "isHandleTooltip", value.asInstanceOf[js.Any])
   }

@@ -21,7 +21,8 @@ object PromiseRejectionEventInit {
     __obj.asInstanceOf[PromiseRejectionEventInit]
   }
   
-  extension [Self <: PromiseRejectionEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromiseRejectionEventInit] (val x: Self) extends AnyVal {
     
     inline def setPromise(value: js.Promise[Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     

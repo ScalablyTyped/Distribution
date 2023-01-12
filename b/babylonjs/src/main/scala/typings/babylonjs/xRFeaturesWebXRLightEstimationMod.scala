@@ -152,7 +152,8 @@ object xRFeaturesWebXRLightEstimationMod {
       __obj.asInstanceOf[IWebXRLightEstimation]
     }
     
-    extension [Self <: IWebXRLightEstimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebXRLightEstimation] (val x: Self) extends AnyVal {
       
       inline def setLightColor(value: Color3): Self = StObject.set(x, "lightColor", value.asInstanceOf[js.Any])
       
@@ -218,7 +219,8 @@ object xRFeaturesWebXRLightEstimationMod {
       __obj.asInstanceOf[IWebXRLightEstimationOptions]
     }
     
-    extension [Self <: IWebXRLightEstimationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebXRLightEstimationOptions] (val x: Self) extends AnyVal {
       
       inline def setCreateDirectionalLightSource(value: Boolean): Self = StObject.set(x, "createDirectionalLightSource", value.asInstanceOf[js.Any])
       

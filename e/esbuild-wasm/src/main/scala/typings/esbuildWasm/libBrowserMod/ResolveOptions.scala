@@ -25,7 +25,8 @@ object ResolveOptions {
     __obj.asInstanceOf[ResolveOptions]
   }
   
-  extension [Self <: ResolveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveOptions] (val x: Self) extends AnyVal {
     
     inline def setImporter(value: String): Self = StObject.set(x, "importer", value.asInstanceOf[js.Any])
     

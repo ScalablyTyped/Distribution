@@ -23,7 +23,8 @@ object AutoExportRevisionToS3RequestDetails {
     __obj.asInstanceOf[AutoExportRevisionToS3RequestDetails]
   }
   
-  extension [Self <: AutoExportRevisionToS3RequestDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoExportRevisionToS3RequestDetails] (val x: Self) extends AnyVal {
     
     inline def setEncryption(value: ExportServerSideEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     

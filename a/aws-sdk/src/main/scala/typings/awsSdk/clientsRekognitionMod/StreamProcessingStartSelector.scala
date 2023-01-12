@@ -18,7 +18,8 @@ object StreamProcessingStartSelector {
     __obj.asInstanceOf[StreamProcessingStartSelector]
   }
   
-  extension [Self <: StreamProcessingStartSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamProcessingStartSelector] (val x: Self) extends AnyVal {
     
     inline def setKVSStreamStartSelector(value: KinesisVideoStreamStartSelector): Self = StObject.set(x, "KVSStreamStartSelector", value.asInstanceOf[js.Any])
     

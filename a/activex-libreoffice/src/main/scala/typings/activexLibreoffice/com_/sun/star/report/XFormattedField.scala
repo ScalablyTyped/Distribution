@@ -163,7 +163,8 @@ object XFormattedField {
     __obj.asInstanceOf[XFormattedField]
   }
   
-  extension [Self <: XFormattedField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFormattedField] (val x: Self) extends AnyVal {
     
     inline def setFormatKey(value: Double): Self = StObject.set(x, "FormatKey", value.asInstanceOf[js.Any])
     

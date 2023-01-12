@@ -133,7 +133,8 @@ object BucketMetadata {
     __obj.asInstanceOf[BucketMetadata]
   }
   
-  extension [Self <: BucketMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketMetadata] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

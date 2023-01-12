@@ -15,7 +15,8 @@ object AggregationsGoogleNormalizedDistanceHeuristic {
     __obj.asInstanceOf[AggregationsGoogleNormalizedDistanceHeuristic]
   }
   
-  extension [Self <: AggregationsGoogleNormalizedDistanceHeuristic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsGoogleNormalizedDistanceHeuristic] (val x: Self) extends AnyVal {
     
     inline def setBackground_is_superset(value: Boolean): Self = StObject.set(x, "background_is_superset", value.asInstanceOf[js.Any])
     

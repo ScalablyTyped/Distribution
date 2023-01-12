@@ -18,7 +18,8 @@ object ActiveXObject {
     __obj.asInstanceOf[ActiveXObject]
   }
   
-  extension [Self <: ActiveXObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveXObject] (val x: Self) extends AnyVal {
     
     inline def setSet(value: (WshEnvironment, Item, js.Array[String], String) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
   }

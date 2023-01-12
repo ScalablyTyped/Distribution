@@ -18,7 +18,8 @@ object ChannelSplitterOptions {
     __obj.asInstanceOf[ChannelSplitterOptions]
   }
   
-  extension [Self <: ChannelSplitterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelSplitterOptions] (val x: Self) extends AnyVal {
     
     inline def setNumberOfOutputs(value: Double): Self = StObject.set(x, "numberOfOutputs", value.asInstanceOf[js.Any])
     

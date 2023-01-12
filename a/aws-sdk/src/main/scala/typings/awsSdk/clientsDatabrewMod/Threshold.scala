@@ -28,7 +28,8 @@ object Threshold {
     __obj.asInstanceOf[Threshold]
   }
   
-  extension [Self <: Threshold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Threshold] (val x: Self) extends AnyVal {
     
     inline def setType(value: ThresholdType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object TypeofSpellCheck {
     __obj.asInstanceOf[TypeofSpellCheck]
   }
   
-  extension [Self <: TypeofSpellCheck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSpellCheck] (val x: Self) extends AnyVal {
     
     inline def setFn(value: SpellCheck): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

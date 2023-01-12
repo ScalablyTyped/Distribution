@@ -23,7 +23,8 @@ object PlatformScriptKey {
     __obj.asInstanceOf[PlatformScriptKey]
   }
   
-  extension [Self <: PlatformScriptKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlatformScriptKey] (val x: Self) extends AnyVal {
     
     inline def setLinux(value: S3Key): Self = StObject.set(x, "linux", value.asInstanceOf[js.Any])
     

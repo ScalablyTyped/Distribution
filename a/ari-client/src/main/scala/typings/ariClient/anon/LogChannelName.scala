@@ -15,7 +15,8 @@ object LogChannelName {
     __obj.asInstanceOf[LogChannelName]
   }
   
-  extension [Self <: LogChannelName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogChannelName] (val x: Self) extends AnyVal {
     
     inline def setLogChannelName(value: String): Self = StObject.set(x, "logChannelName", value.asInstanceOf[js.Any])
   }

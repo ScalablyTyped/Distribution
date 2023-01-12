@@ -31,7 +31,8 @@ object ResourceGroupPatchable {
     __obj.asInstanceOf[ResourceGroupPatchable]
   }
   
-  extension [Self <: ResourceGroupPatchable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceGroupPatchable] (val x: Self) extends AnyVal {
     
     inline def setManagedBy(value: String): Self = StObject.set(x, "managedBy", value.asInstanceOf[js.Any])
     

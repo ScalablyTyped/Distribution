@@ -34,7 +34,8 @@ object XCommandProcessor2 {
     __obj.asInstanceOf[XCommandProcessor2]
   }
   
-  extension [Self <: XCommandProcessor2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCommandProcessor2] (val x: Self) extends AnyVal {
     
     inline def setReleaseCommandIdentifier(value: Double => Unit): Self = StObject.set(x, "releaseCommandIdentifier", js.Any.fromFunction1(value))
   }

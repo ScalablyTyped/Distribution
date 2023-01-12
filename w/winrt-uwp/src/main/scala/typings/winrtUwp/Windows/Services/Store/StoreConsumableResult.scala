@@ -32,7 +32,8 @@ object StoreConsumableResult {
     __obj.asInstanceOf[StoreConsumableResult]
   }
   
-  extension [Self <: StoreConsumableResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreConsumableResult] (val x: Self) extends AnyVal {
     
     inline def setBalanceRemaining(value: Double): Self = StObject.set(x, "balanceRemaining", value.asInstanceOf[js.Any])
     

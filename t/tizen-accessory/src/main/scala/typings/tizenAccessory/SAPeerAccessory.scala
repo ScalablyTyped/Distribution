@@ -32,7 +32,8 @@ object SAPeerAccessory {
     __obj.asInstanceOf[SAPeerAccessory]
   }
   
-  extension [Self <: SAPeerAccessory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SAPeerAccessory] (val x: Self) extends AnyVal {
     
     inline def setAccessoryId(value: String): Self = StObject.set(x, "accessoryId", value.asInstanceOf[js.Any])
     

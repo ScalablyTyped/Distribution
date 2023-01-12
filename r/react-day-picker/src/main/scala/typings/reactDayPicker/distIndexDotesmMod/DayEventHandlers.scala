@@ -47,7 +47,8 @@ object DayEventHandlers {
     __obj.asInstanceOf[DayEventHandlers]
   }
   
-  extension [Self <: DayEventHandlers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayEventHandlers] (val x: Self) extends AnyVal {
     
     inline def setOnBlur(value: FocusEvent[HTMLButtonElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     

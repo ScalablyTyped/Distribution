@@ -115,7 +115,8 @@ object mod {
       __obj.asInstanceOf[Iterator[T]]
     }
     
-    extension [Self <: Iterator[?], T](x: Self & Iterator[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Iterator[?], T] (val x: Self & Iterator[T]) extends AnyVal {
       
       inline def setData(value: () => T | Null): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
       
@@ -168,7 +169,8 @@ object mod {
       __obj.asInstanceOf[TreeBase[T]]
     }
     
-    extension [Self <: TreeBase[?], T](x: Self & TreeBase[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeBase[?], T] (val x: Self & TreeBase[T]) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       

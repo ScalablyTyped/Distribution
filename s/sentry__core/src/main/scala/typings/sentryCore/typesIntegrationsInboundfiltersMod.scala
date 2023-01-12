@@ -85,7 +85,8 @@ object typesIntegrationsInboundfiltersMod {
       __obj.asInstanceOf[InboundFiltersOptions]
     }
     
-    extension [Self <: InboundFiltersOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InboundFiltersOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowUrls(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "allowUrls", value.asInstanceOf[js.Any])
       

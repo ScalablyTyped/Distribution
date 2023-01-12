@@ -194,7 +194,8 @@ object indexeddbMod {
       __obj.asInstanceOf[KeyValuePair]
     }
     
-    extension [Self <: KeyValuePair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyValuePair] (val x: Self) extends AnyVal {
       
       inline def setK(value: Any): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object DeviceIdentifier {
     __obj.asInstanceOf[DeviceIdentifier]
   }
   
-  extension [Self <: DeviceIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceIdentifier] (val x: Self) extends AnyVal {
     
     inline def setImei(value: String): Self = StObject.set(x, "imei", value.asInstanceOf[js.Any])
     

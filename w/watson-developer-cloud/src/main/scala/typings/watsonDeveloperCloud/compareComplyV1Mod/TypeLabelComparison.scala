@@ -17,7 +17,8 @@ object TypeLabelComparison {
     __obj.asInstanceOf[TypeLabelComparison]
   }
   
-  extension [Self <: TypeLabelComparison](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeLabelComparison] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: Label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

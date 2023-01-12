@@ -31,7 +31,8 @@ object StackHeaderInterpolationProps {
     __obj.asInstanceOf[StackHeaderInterpolationProps]
   }
   
-  extension [Self <: StackHeaderInterpolationProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackHeaderInterpolationProps] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: Progress): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

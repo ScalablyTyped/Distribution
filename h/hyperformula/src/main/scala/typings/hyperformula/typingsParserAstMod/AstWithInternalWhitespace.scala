@@ -17,7 +17,8 @@ object AstWithInternalWhitespace {
     __obj.asInstanceOf[AstWithInternalWhitespace]
   }
   
-  extension [Self <: AstWithInternalWhitespace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AstWithInternalWhitespace] (val x: Self) extends AnyVal {
     
     inline def setInternalWhitespace(value: String): Self = StObject.set(x, "internalWhitespace", value.asInstanceOf[js.Any])
     

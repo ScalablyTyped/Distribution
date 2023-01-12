@@ -15,7 +15,8 @@ object ClientTokenGateway {
     __obj.asInstanceOf[ClientTokenGateway]
   }
   
-  extension [Self <: ClientTokenGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientTokenGateway] (val x: Self) extends AnyVal {
     
     inline def setGenerate(value: ClientTokenRequest => js.Promise[ValidatedResponse[ClientToken]]): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
   }

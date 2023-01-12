@@ -17,7 +17,8 @@ object Register {
     __obj.asInstanceOf[Register]
   }
   
-  extension [Self <: Register](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Register] (val x: Self) extends AnyVal {
     
     inline def setRegister(value: String => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
     

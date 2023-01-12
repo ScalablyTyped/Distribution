@@ -18,7 +18,8 @@ object ModifyTargetGroupOutput {
     __obj.asInstanceOf[ModifyTargetGroupOutput]
   }
   
-  extension [Self <: ModifyTargetGroupOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyTargetGroupOutput] (val x: Self) extends AnyVal {
     
     inline def setTargetGroups(value: TargetGroups): Self = StObject.set(x, "TargetGroups", value.asInstanceOf[js.Any])
     

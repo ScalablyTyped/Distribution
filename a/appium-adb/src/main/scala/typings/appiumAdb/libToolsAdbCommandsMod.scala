@@ -971,7 +971,8 @@ object libToolsAdbCommandsMod extends Shortcut {
       __obj.asInstanceOf[ResolveActivityOptions]
     }
     
-    extension [Self <: ResolveActivityOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveActivityOptions] (val x: Self) extends AnyVal {
       
       inline def setPreferCmd(value: Boolean): Self = StObject.set(x, "preferCmd", value.asInstanceOf[js.Any])
       
@@ -1020,7 +1021,8 @@ object libToolsAdbCommandsMod extends Shortcut {
       __obj.asInstanceOf[ScreenrecordOptions]
     }
     
-    extension [Self <: ScreenrecordOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenrecordOptions] (val x: Self) extends AnyVal {
       
       inline def setBitRate(value: String | Double): Self = StObject.set(x, "bitRate", value.asInstanceOf[js.Any])
       
@@ -1055,7 +1057,8 @@ object libToolsAdbCommandsMod extends Shortcut {
       __obj.asInstanceOf[SetPropOptions]
     }
     
-    extension [Self <: SetPropOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetPropOptions] (val x: Self) extends AnyVal {
       
       inline def setPrivileged(value: Boolean): Self = StObject.set(x, "privileged", value.asInstanceOf[js.Any])
       

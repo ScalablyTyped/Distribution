@@ -38,7 +38,8 @@ object DataSourceSyncJobMetrics {
     __obj.asInstanceOf[DataSourceSyncJobMetrics]
   }
   
-  extension [Self <: DataSourceSyncJobMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceSyncJobMetrics] (val x: Self) extends AnyVal {
     
     inline def setDocumentsAdded(value: MetricValue): Self = StObject.set(x, "DocumentsAdded", value.asInstanceOf[js.Any])
     

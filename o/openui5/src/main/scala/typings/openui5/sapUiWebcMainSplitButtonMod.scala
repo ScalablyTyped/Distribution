@@ -597,7 +597,8 @@ object sapUiWebcMainSplitButtonMod {
       __obj.asInstanceOf[SplitButtonSettings]
     }
     
-    extension [Self <: SplitButtonSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitButtonSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleName(value: String | PropertyBindingInfo): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
       

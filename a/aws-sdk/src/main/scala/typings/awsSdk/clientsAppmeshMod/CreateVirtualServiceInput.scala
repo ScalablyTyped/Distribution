@@ -43,7 +43,8 @@ object CreateVirtualServiceInput {
     __obj.asInstanceOf[CreateVirtualServiceInput]
   }
   
-  extension [Self <: CreateVirtualServiceInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVirtualServiceInput] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

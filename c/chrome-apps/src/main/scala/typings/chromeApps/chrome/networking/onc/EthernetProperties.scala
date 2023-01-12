@@ -26,7 +26,8 @@ object EthernetProperties {
     __obj.asInstanceOf[EthernetProperties[M]]
   }
   
-  extension [Self <: EthernetProperties[?], M /* <: ManagedObject */](x: Self & EthernetProperties[M]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EthernetProperties[?], M /* <: ManagedObject */] (val x: Self & EthernetProperties[M]) extends AnyVal {
     
     inline def setAuthentication(
       value: /* import warning: importer.ImportType#apply Failed type conversion: M extends 'managed' ? chrome-apps.chrome.networking.onc.ManagedType<chrome-apps.chrome.networking.onc.EthernetAuthenticationType> : chrome-apps.chrome.networking.onc.EthernetAuthenticationType | undefined */ js.Any

@@ -103,7 +103,8 @@ object GameSessionPlacement {
     __obj.asInstanceOf[GameSessionPlacement]
   }
   
-  extension [Self <: GameSessionPlacement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GameSessionPlacement] (val x: Self) extends AnyVal {
     
     inline def setDnsName(value: DnsName): Self = StObject.set(x, "DnsName", value.asInstanceOf[js.Any])
     

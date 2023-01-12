@@ -361,7 +361,8 @@ object libOptionMod {
       __obj.asInstanceOf[None_]
     }
     
-    extension [Self <: None_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: None_] (val x: Self) extends AnyVal {
       
       inline def set_tag(value: None): Self = StObject.set(x, "_tag", value.asInstanceOf[js.Any])
     }
@@ -400,7 +401,8 @@ object libOptionMod {
       __obj.asInstanceOf[Some_[A]]
     }
     
-    extension [Self <: Some_[?], A](x: Self & Some_[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Some_[?], A] (val x: Self & Some_[A]) extends AnyVal {
       
       inline def setValue(value: A): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

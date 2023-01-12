@@ -35,7 +35,8 @@ object BloomFilter {
     __obj.asInstanceOf[BloomFilter]
   }
   
-  extension [Self <: BloomFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BloomFilter] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: String => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

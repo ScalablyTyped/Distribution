@@ -22,7 +22,8 @@ object ListInsertionOrderAssignedTargetingOptionsResponse {
     __obj.asInstanceOf[ListInsertionOrderAssignedTargetingOptionsResponse]
   }
   
-  extension [Self <: ListInsertionOrderAssignedTargetingOptionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInsertionOrderAssignedTargetingOptionsResponse] (val x: Self) extends AnyVal {
     
     inline def setAssignedTargetingOptions(value: js.Array[AssignedTargetingOption]): Self = StObject.set(x, "assignedTargetingOptions", value.asInstanceOf[js.Any])
     

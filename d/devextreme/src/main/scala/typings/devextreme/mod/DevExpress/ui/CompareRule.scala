@@ -42,7 +42,8 @@ object CompareRule {
     __obj.asInstanceOf[CompareRule]
   }
   
-  extension [Self <: CompareRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompareRule] (val x: Self) extends AnyVal {
     
     inline def setComparisonTarget(value: () => Any): Self = StObject.set(x, "comparisonTarget", js.Any.fromFunction0(value))
     

@@ -64,7 +64,8 @@ object JQueryTransitOptions {
     __obj.asInstanceOf[JQueryTransitOptions]
   }
   
-  extension [Self <: JQueryTransitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryTransitOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

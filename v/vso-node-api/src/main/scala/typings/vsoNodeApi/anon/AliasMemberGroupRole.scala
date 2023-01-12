@@ -50,7 +50,8 @@ object AliasMemberGroupRole {
     __obj.asInstanceOf[AliasMemberGroupRole]
   }
   
-  extension [Self <: AliasMemberGroupRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AliasMemberGroupRole] (val x: Self) extends AnyVal {
     
     inline def setAliasMemberGroupRole(value: scala.Double): Self = StObject.set(x, "aliasMemberGroupRole", value.asInstanceOf[js.Any])
     

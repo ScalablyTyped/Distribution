@@ -16,7 +16,8 @@ object ZoomOptionsLevel {
     __obj.asInstanceOf[ZoomOptionsLevel]
   }
   
-  extension [Self <: ZoomOptionsLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoomOptionsLevel] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }

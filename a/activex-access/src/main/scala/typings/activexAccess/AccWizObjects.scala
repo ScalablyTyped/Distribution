@@ -75,7 +75,8 @@ object AccWizObjects {
         __obj.asInstanceOf[FieldListDragOverParameter]
       }
       
-      extension [Self <: FieldListDragOverParameter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FieldListDragOverParameter] (val x: Self) extends AnyVal {
         
         inline def setSourceCtlName(value: String): Self = StObject.set(x, "SourceCtlName", value.asInstanceOf[js.Any])
         
@@ -121,7 +122,8 @@ object AccWizObjects {
         __obj.asInstanceOf[FieldListFldListDragDropParameter]
       }
       
-      extension [Self <: FieldListFldListDragDropParameter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FieldListFldListDragDropParameter] (val x: Self) extends AnyVal {
         
         inline def setSourceCtlName(value: String): Self = StObject.set(x, "SourceCtlName", value.asInstanceOf[js.Any])
         
@@ -170,7 +172,8 @@ object AccWizObjects {
         __obj.asInstanceOf[FieldListFldListDragOverParameter]
       }
       
-      extension [Self <: FieldListFldListDragOverParameter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FieldListFldListDragOverParameter] (val x: Self) extends AnyVal {
         
         inline def setSourceCtlName(value: String): Self = StObject.set(x, "SourceCtlName", value.asInstanceOf[js.Any])
         
@@ -271,7 +274,8 @@ object AccWizObjects {
       __obj.asInstanceOf[FieldList]
     }
     
-    extension [Self <: FieldList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldList] (val x: Self) extends AnyVal {
       
       inline def setAccWizObjectsDotFieldList_typekey(value: FieldList): Self = StObject.set(x, "AccWizObjects.FieldList_typekey", value.asInstanceOf[js.Any])
       
@@ -417,7 +421,8 @@ object AccWizObjects {
       __obj.asInstanceOf[ImexGrid]
     }
     
-    extension [Self <: ImexGrid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImexGrid] (val x: Self) extends AnyVal {
       
       inline def setAccWizObjectsDotImexGrid_typekey(value: ImexGrid): Self = StObject.set(x, "AccWizObjects.ImexGrid_typekey", value.asInstanceOf[js.Any])
       
@@ -571,7 +576,8 @@ object AccWizObjects {
       __obj.asInstanceOf[WIZ_FILETIME]
     }
     
-    extension [Self <: WIZ_FILETIME](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WIZ_FILETIME] (val x: Self) extends AnyVal {
       
       inline def setDwHighDateTime(value: Double): Self = StObject.set(x, "dwHighDateTime", value.asInstanceOf[js.Any])
       
@@ -661,7 +667,8 @@ object AccWizObjects {
       __obj.asInstanceOf[WIZ_WIN32_FIND_DATA]
     }
     
-    extension [Self <: WIZ_WIN32_FIND_DATA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WIZ_WIN32_FIND_DATA] (val x: Self) extends AnyVal {
       
       inline def setCAlternate(value: SafeArray[Double]): Self = StObject.set(x, "cAlternate", value.asInstanceOf[js.Any])
       
@@ -773,7 +780,8 @@ object AccWizObjects {
       __obj.asInstanceOf[WizShellLinkA]
     }
     
-    extension [Self <: WizShellLinkA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WizShellLinkA] (val x: Self) extends AnyVal {
       
       inline def setAccWizObjectsDotWizShellLinkA_typekey(value: WizShellLinkA): Self = StObject.set(x, "AccWizObjects.WizShellLinkA_typekey", value.asInstanceOf[js.Any])
       

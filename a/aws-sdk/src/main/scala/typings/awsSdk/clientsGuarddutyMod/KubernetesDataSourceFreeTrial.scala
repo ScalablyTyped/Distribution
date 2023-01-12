@@ -18,7 +18,8 @@ object KubernetesDataSourceFreeTrial {
     __obj.asInstanceOf[KubernetesDataSourceFreeTrial]
   }
   
-  extension [Self <: KubernetesDataSourceFreeTrial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KubernetesDataSourceFreeTrial] (val x: Self) extends AnyVal {
     
     inline def setAuditLogs(value: DataSourceFreeTrial): Self = StObject.set(x, "AuditLogs", value.asInstanceOf[js.Any])
     

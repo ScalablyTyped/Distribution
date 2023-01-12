@@ -16,7 +16,8 @@ object Screen {
     __obj.asInstanceOf[Screen[Options, NavigationScreenPropType]]
   }
   
-  extension [Self <: Screen[?, ?], Options, NavigationScreenPropType](x: Self & (Screen[Options, NavigationScreenPropType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Screen[?, ?], Options, NavigationScreenPropType] (val x: Self & (Screen[Options, NavigationScreenPropType])) extends AnyVal {
     
     inline def setScreen(value: NavigationComponent[Options, NavigationScreenPropType]): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
   }

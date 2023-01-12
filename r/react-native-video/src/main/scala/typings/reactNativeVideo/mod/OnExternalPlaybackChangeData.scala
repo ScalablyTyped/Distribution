@@ -15,7 +15,8 @@ object OnExternalPlaybackChangeData {
     __obj.asInstanceOf[OnExternalPlaybackChangeData]
   }
   
-  extension [Self <: OnExternalPlaybackChangeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnExternalPlaybackChangeData] (val x: Self) extends AnyVal {
     
     inline def setIsExternalPlaybackActive(value: Boolean): Self = StObject.set(x, "isExternalPlaybackActive", value.asInstanceOf[js.Any])
   }

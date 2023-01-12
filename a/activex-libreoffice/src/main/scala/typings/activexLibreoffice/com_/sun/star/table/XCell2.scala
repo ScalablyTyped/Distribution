@@ -51,7 +51,8 @@ object XCell2 {
     __obj.asInstanceOf[XCell2]
   }
   
-  extension [Self <: XCell2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCell2] (val x: Self) extends AnyVal {
     
     inline def setSetFormulaResult(value: Double => Unit): Self = StObject.set(x, "setFormulaResult", js.Any.fromFunction1(value))
     

@@ -24,7 +24,8 @@ object SavingsTradeUserRegistration {
     __obj.asInstanceOf[SavingsTradeUserRegistration]
   }
   
-  extension [Self <: SavingsTradeUserRegistration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsTradeUserRegistration] (val x: Self) extends AnyVal {
     
     inline def setDateOfBirth(value: String): Self = StObject.set(x, "dateOfBirth", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ReadonlyPromiseAssignUser {
     __obj.asInstanceOf[ReadonlyPromiseAssignUser]
   }
   
-  extension [Self <: ReadonlyPromiseAssignUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyPromiseAssignUser] (val x: Self) extends AnyVal {
     
     inline def setCatch(value: () => js.Promise[AssignUserIDResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     

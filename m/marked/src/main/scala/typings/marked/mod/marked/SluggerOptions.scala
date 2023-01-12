@@ -15,7 +15,8 @@ object SluggerOptions {
     __obj.asInstanceOf[SluggerOptions]
   }
   
-  extension [Self <: SluggerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SluggerOptions] (val x: Self) extends AnyVal {
     
     inline def setDryrun(value: Boolean): Self = StObject.set(x, "dryrun", value.asInstanceOf[js.Any])
   }

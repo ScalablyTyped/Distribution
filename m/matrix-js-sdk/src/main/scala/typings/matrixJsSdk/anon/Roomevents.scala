@@ -15,7 +15,8 @@ object Roomevents {
     __obj.asInstanceOf[Roomevents]
   }
   
-  extension [Self <: Roomevents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Roomevents] (val x: Self) extends AnyVal {
     
     inline def setRoom_events(value: Count): Self = StObject.set(x, "room_events", value.asInstanceOf[js.Any])
   }

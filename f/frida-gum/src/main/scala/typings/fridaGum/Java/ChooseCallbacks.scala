@@ -28,7 +28,8 @@ object ChooseCallbacks {
     __obj.asInstanceOf[ChooseCallbacks[T]]
   }
   
-  extension [Self <: ChooseCallbacks[?], T /* <: Members[T] */](x: Self & ChooseCallbacks[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChooseCallbacks[?], T /* <: Members[T] */] (val x: Self & ChooseCallbacks[T]) extends AnyVal {
     
     inline def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
     

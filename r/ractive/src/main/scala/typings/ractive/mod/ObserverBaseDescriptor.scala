@@ -31,7 +31,8 @@ object ObserverBaseDescriptor {
     __obj.asInstanceOf[ObserverBaseDescriptor[T]]
   }
   
-  extension [Self <: ObserverBaseDescriptor[?], T /* <: Ractive[T] */](x: Self & ObserverBaseDescriptor[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObserverBaseDescriptor[?], T /* <: Ractive[T] */] (val x: Self & ObserverBaseDescriptor[T]) extends AnyVal {
     
     inline def setHandler(value: ObserverCallback[T]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     

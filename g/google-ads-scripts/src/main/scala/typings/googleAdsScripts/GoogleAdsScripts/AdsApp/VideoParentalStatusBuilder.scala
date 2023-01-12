@@ -36,7 +36,8 @@ object VideoParentalStatusBuilder {
     __obj.asInstanceOf[VideoParentalStatusBuilder]
   }
   
-  extension [Self <: VideoParentalStatusBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoParentalStatusBuilder] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: () => ExcludedVideoParentalStatusOperation): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))
     

@@ -28,7 +28,8 @@ object ServerGroup {
     __obj.asInstanceOf[ServerGroup]
   }
   
-  extension [Self <: ServerGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerGroup] (val x: Self) extends AnyVal {
     
     inline def setName(value: ServerGroupName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[ReactFacebookFailureResponse]
     }
     
-    extension [Self <: ReactFacebookFailureResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactFacebookFailureResponse] (val x: Self) extends AnyVal {
       
       inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object mod {
       __obj.asInstanceOf[ReactFacebookLoginInfo]
     }
     
-    extension [Self <: ReactFacebookLoginInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactFacebookLoginInfo] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object mod {
       __obj.asInstanceOf[ReactFacebookLoginState]
     }
     
-    extension [Self <: ReactFacebookLoginState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactFacebookLoginState] (val x: Self) extends AnyVal {
       
       inline def setIsProcessing(value: Boolean): Self = StObject.set(x, "isProcessing", value.asInstanceOf[js.Any])
       

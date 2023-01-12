@@ -18,7 +18,8 @@ object DescribeChapCredentialsInput {
     __obj.asInstanceOf[DescribeChapCredentialsInput]
   }
   
-  extension [Self <: DescribeChapCredentialsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeChapCredentialsInput] (val x: Self) extends AnyVal {
     
     inline def setTargetARN(value: TargetARN): Self = StObject.set(x, "TargetARN", value.asInstanceOf[js.Any])
   }

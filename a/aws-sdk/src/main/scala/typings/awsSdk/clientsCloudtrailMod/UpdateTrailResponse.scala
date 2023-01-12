@@ -78,7 +78,8 @@ object UpdateTrailResponse {
     __obj.asInstanceOf[UpdateTrailResponse]
   }
   
-  extension [Self <: UpdateTrailResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTrailResponse] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchLogsLogGroupArn(value: String): Self = StObject.set(x, "CloudWatchLogsLogGroupArn", value.asInstanceOf[js.Any])
     

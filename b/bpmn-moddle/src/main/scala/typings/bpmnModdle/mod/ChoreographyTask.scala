@@ -32,7 +32,8 @@ object ChoreographyTask {
     __obj.asInstanceOf[ChoreographyTask]
   }
   
-  extension [Self <: ChoreographyTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChoreographyTask] (val x: Self) extends AnyVal {
     
     inline def setMessageFlowRef(value: js.Array[MessageFlow]): Self = StObject.set(x, "messageFlowRef", value.asInstanceOf[js.Any])
     

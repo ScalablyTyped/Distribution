@@ -15,7 +15,8 @@ object PostProjectAdministrators {
     __obj.asInstanceOf[PostProjectAdministrators]
   }
   
-  extension [Self <: PostProjectAdministrators](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostProjectAdministrators] (val x: Self) extends AnyVal {
     
     inline def setUserId(value: Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object JourneyCustomMessage {
     __obj.asInstanceOf[JourneyCustomMessage]
   }
   
-  extension [Self <: JourneyCustomMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JourneyCustomMessage] (val x: Self) extends AnyVal {
     
     inline def setData(value: string): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     

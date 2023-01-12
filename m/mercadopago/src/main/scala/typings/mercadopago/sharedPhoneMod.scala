@@ -21,7 +21,8 @@ object sharedPhoneMod {
       __obj.asInstanceOf[Phone]
     }
     
-    extension [Self <: Phone](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Phone] (val x: Self) extends AnyVal {
       
       inline def setArea_code(value: String): Self = StObject.set(x, "area_code", value.asInstanceOf[js.Any])
       

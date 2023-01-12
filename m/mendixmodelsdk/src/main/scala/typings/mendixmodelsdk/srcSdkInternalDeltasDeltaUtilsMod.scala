@@ -90,7 +90,8 @@ object srcSdkInternalDeltasDeltaUtilsMod {
       __obj.asInstanceOf[IContainmentInfo]
     }
     
-    extension [Self <: IContainmentInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContainmentInfo] (val x: Self) extends AnyVal {
       
       inline def setElement(value: AbstractElement[IAbstractModel, Container]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       

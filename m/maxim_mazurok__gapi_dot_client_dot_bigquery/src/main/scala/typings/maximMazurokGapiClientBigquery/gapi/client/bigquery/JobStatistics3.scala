@@ -31,7 +31,8 @@ object JobStatistics3 {
     __obj.asInstanceOf[JobStatistics3]
   }
   
-  extension [Self <: JobStatistics3](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobStatistics3] (val x: Self) extends AnyVal {
     
     inline def setBadRecords(value: String): Self = StObject.set(x, "badRecords", value.asInstanceOf[js.Any])
     

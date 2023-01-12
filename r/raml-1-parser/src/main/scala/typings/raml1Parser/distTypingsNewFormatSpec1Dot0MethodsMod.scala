@@ -40,7 +40,8 @@ object distTypingsNewFormatSpec1Dot0MethodsMod {
       __obj.asInstanceOf[Method10]
     }
     
-    extension [Self <: Method10](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Method10] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteParentUri(value: String): Self = StObject.set(x, "absoluteParentUri", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object distTypingsNewFormatSpec1Dot0MethodsMod {
       __obj.asInstanceOf[MethodBase10]
     }
     
-    extension [Self <: MethodBase10](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MethodBase10] (val x: Self) extends AnyVal {
       
       inline def setBody(value: js.Array[TypeDeclaration]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -173,7 +175,8 @@ object distTypingsNewFormatSpec1Dot0MethodsMod {
       __obj.asInstanceOf[Operation10]
     }
     
-    extension [Self <: Operation10](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Operation10] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: js.Array[TypeDeclaration]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -231,7 +234,8 @@ object distTypingsNewFormatSpec1Dot0MethodsMod {
       __obj.asInstanceOf[Response10]
     }
     
-    extension [Self <: Response10](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response10] (val x: Self) extends AnyVal {
       
       inline def setBody(value: js.Array[TypeDeclaration]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -266,7 +270,8 @@ object distTypingsNewFormatSpec1Dot0MethodsMod {
       __obj.asInstanceOf[TemplateReference]
     }
     
-    extension [Self <: TemplateReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateReference] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -299,7 +304,8 @@ object distTypingsNewFormatSpec1Dot0MethodsMod {
       __obj.asInstanceOf[Trait10]
     }
     
-    extension [Self <: Trait10](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Trait10] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -325,7 +331,8 @@ object distTypingsNewFormatSpec1Dot0MethodsMod {
       __obj.asInstanceOf[TraitFragment]
     }
     
-    extension [Self <: TraitFragment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraitFragment] (val x: Self) extends AnyVal {
       
       inline def setUses(value: js.Array[UsesDeclaration]): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
       

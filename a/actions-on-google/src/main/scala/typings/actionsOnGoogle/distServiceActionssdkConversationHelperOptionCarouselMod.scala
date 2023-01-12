@@ -44,7 +44,8 @@ object distServiceActionssdkConversationHelperOptionCarouselMod {
       __obj.asInstanceOf[CarouselOptionItem]
     }
     
-    extension [Self <: CarouselOptionItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselOptionItem] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     }
@@ -73,7 +74,8 @@ object distServiceActionssdkConversationHelperOptionCarouselMod {
       __obj.asInstanceOf[CarouselOptions]
     }
     
-    extension [Self <: CarouselOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselOptions] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: GoogleActionsV2UiElementsCarouselSelectImageDisplayOptions): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       

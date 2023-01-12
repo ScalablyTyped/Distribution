@@ -35,7 +35,8 @@ object libExportDataSetExporterMod {
       __obj.asInstanceOf[DataSetExporter]
     }
     
-    extension [Self <: DataSetExporter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSetExporter] (val x: Self) extends AnyVal {
       
       inline def setDataSet(value: typings.nginstackEngine.libDatasetDataSetMod.^): Self = StObject.set(x, "dataSet", value.asInstanceOf[js.Any])
     }

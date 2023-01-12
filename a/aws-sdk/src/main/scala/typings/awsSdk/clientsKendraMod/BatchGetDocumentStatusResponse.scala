@@ -23,7 +23,8 @@ object BatchGetDocumentStatusResponse {
     __obj.asInstanceOf[BatchGetDocumentStatusResponse]
   }
   
-  extension [Self <: BatchGetDocumentStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetDocumentStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setDocumentStatusList(value: DocumentStatusList): Self = StObject.set(x, "DocumentStatusList", value.asInstanceOf[js.Any])
     

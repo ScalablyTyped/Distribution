@@ -50,7 +50,8 @@ object CModule {
     __obj.asInstanceOf[CModule]
   }
   
-  extension [Self <: CModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CModule] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
   }

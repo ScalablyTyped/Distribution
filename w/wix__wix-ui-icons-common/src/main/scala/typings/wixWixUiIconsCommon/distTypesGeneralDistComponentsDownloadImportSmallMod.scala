@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsDownloadImportSmallMod extends Shortcut {
       __obj.asInstanceOf[DownloadImportSmallProps]
     }
     
-    extension [Self <: DownloadImportSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadImportSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

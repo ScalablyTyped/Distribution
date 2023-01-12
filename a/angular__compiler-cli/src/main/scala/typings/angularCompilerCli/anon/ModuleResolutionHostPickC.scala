@@ -50,7 +50,8 @@ object ModuleResolutionHostPickC {
     __obj.asInstanceOf[ModuleResolutionHostPickC]
   }
   
-  extension [Self <: ModuleResolutionHostPickC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleResolutionHostPickC] (val x: Self) extends AnyVal {
     
     inline def setDirectoryExists(value: /* directoryName */ String => Boolean): Self = StObject.set(x, "directoryExists", js.Any.fromFunction1(value))
     

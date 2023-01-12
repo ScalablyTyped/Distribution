@@ -19,7 +19,8 @@ object IMapBoundsOptions {
     __obj.asInstanceOf[IMapBoundsOptions]
   }
   
-  extension [Self <: IMapBoundsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMapBoundsOptions] (val x: Self) extends AnyVal {
     
     inline def setPreciseZoom(value: Boolean): Self = StObject.set(x, "preciseZoom", value.asInstanceOf[js.Any])
     

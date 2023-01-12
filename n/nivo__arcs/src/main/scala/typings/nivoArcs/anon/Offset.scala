@@ -38,7 +38,8 @@ object Offset {
     __obj.asInstanceOf[Offset[Datum]]
   }
   
-  extension [Self <: Offset[?], Datum /* <: DatumWithArcAndColor */](x: Self & Offset[Datum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Offset[?], Datum /* <: DatumWithArcAndColor */] (val x: Self & Offset[Datum]) extends AnyVal {
     
     inline def setData(value: js.Array[Datum]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

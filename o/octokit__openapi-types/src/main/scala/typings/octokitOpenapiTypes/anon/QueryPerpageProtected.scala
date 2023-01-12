@@ -17,7 +17,8 @@ object QueryPerpageProtected {
     __obj.asInstanceOf[QueryPerpageProtected]
   }
   
-  extension [Self <: QueryPerpageProtected](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryPerpageProtected] (val x: Self) extends AnyVal {
     
     inline def setPath(value: OwnerString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

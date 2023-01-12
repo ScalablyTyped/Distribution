@@ -32,7 +32,8 @@ object QueryDslDateRangeQuery {
     __obj.asInstanceOf[QueryDslDateRangeQuery]
   }
   
-  extension [Self <: QueryDslDateRangeQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslDateRangeQuery] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: DateFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

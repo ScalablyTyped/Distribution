@@ -16,7 +16,8 @@ object ComputeHeadCursorResponse {
     __obj.asInstanceOf[ComputeHeadCursorResponse]
   }
   
-  extension [Self <: ComputeHeadCursorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputeHeadCursorResponse] (val x: Self) extends AnyVal {
     
     inline def setHeadCursor(value: Cursor): Self = StObject.set(x, "headCursor", value.asInstanceOf[js.Any])
     

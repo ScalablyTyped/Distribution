@@ -20,7 +20,8 @@ object MagneticStripeReaderStatusUpdatedEventArgs {
     __obj.asInstanceOf[MagneticStripeReaderStatusUpdatedEventArgs]
   }
   
-  extension [Self <: MagneticStripeReaderStatusUpdatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MagneticStripeReaderStatusUpdatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setExtendedStatus(value: Double): Self = StObject.set(x, "extendedStatus", value.asInstanceOf[js.Any])
     

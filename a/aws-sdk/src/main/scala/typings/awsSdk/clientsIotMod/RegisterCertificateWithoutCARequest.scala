@@ -23,7 +23,8 @@ object RegisterCertificateWithoutCARequest {
     __obj.asInstanceOf[RegisterCertificateWithoutCARequest]
   }
   
-  extension [Self <: RegisterCertificateWithoutCARequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterCertificateWithoutCARequest] (val x: Self) extends AnyVal {
     
     inline def setCertificatePem(value: CertificatePem): Self = StObject.set(x, "certificatePem", value.asInstanceOf[js.Any])
     

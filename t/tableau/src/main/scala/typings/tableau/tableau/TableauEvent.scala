@@ -19,7 +19,8 @@ object TableauEvent {
     __obj.asInstanceOf[TableauEvent]
   }
   
-  extension [Self <: TableauEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableauEvent] (val x: Self) extends AnyVal {
     
     inline def setGetEventName(value: () => TableauEventName): Self = StObject.set(x, "getEventName", js.Any.fromFunction0(value))
     

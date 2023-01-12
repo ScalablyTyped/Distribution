@@ -21,7 +21,8 @@ object APPROXIMATE {
     __obj.asInstanceOf[APPROXIMATE]
   }
   
-  extension [Self <: APPROXIMATE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: APPROXIMATE] (val x: Self) extends AnyVal {
     
     inline def setAPPROXIMATE(value: String): Self = StObject.set(x, "APPROXIMATE", value.asInstanceOf[js.Any])
     

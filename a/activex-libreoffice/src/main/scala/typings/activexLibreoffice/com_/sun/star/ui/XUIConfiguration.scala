@@ -48,7 +48,8 @@ object XUIConfiguration {
     __obj.asInstanceOf[XUIConfiguration]
   }
   
-  extension [Self <: XUIConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUIConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAddConfigurationListener(value: XUIConfigurationListener => Unit): Self = StObject.set(x, "addConfigurationListener", js.Any.fromFunction1(value))
     

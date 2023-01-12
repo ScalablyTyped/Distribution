@@ -43,7 +43,8 @@ object ParametersInCacheKeyAndForwardedToOrigin {
     __obj.asInstanceOf[ParametersInCacheKeyAndForwardedToOrigin]
   }
   
-  extension [Self <: ParametersInCacheKeyAndForwardedToOrigin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersInCacheKeyAndForwardedToOrigin] (val x: Self) extends AnyVal {
     
     inline def setCookiesConfig(value: CachePolicyCookiesConfig): Self = StObject.set(x, "CookiesConfig", value.asInstanceOf[js.Any])
     

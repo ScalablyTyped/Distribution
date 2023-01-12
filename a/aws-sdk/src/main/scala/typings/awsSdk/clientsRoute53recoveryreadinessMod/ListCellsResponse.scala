@@ -23,7 +23,8 @@ object ListCellsResponse {
     __obj.asInstanceOf[ListCellsResponse]
   }
   
-  extension [Self <: ListCellsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCellsResponse] (val x: Self) extends AnyVal {
     
     inline def setCells(value: listOfCellOutput): Self = StObject.set(x, "Cells", value.asInstanceOf[js.Any])
     

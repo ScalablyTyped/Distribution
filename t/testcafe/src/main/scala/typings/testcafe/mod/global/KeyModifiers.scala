@@ -21,7 +21,8 @@ object KeyModifiers {
     __obj.asInstanceOf[KeyModifiers]
   }
   
-  extension [Self <: KeyModifiers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyModifiers] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: Boolean): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

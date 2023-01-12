@@ -24,7 +24,8 @@ object ClientSideLoggingClientInfoObject {
     __obj.asInstanceOf[ClientSideLoggingClientInfoObject]
   }
   
-  extension [Self <: ClientSideLoggingClientInfoObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientSideLoggingClientInfoObject] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: Boolean): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

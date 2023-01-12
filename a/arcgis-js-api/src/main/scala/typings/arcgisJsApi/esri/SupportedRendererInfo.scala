@@ -30,7 +30,8 @@ object SupportedRendererInfo {
     __obj.asInstanceOf[SupportedRendererInfo]
   }
   
-  extension [Self <: SupportedRendererInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportedRendererInfo] (val x: Self) extends AnyVal {
     
     inline def setDefaultRenderer(
       value: ClassBreaksRenderer | RasterColormapRenderer | UniqueValueRenderer | RasterStretchRenderer | VectorFieldRenderer | RasterShadedReliefRenderer | FlowRenderer

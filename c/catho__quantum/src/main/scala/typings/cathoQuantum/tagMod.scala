@@ -55,7 +55,8 @@ object tagMod {
       __obj.asInstanceOf[TagProps]
     }
     
-    extension [Self <: TagProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagProps] (val x: Self) extends AnyVal {
       
       inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object CcrFollowStatsResponse {
     __obj.asInstanceOf[CcrFollowStatsResponse]
   }
   
-  extension [Self <: CcrFollowStatsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CcrFollowStatsResponse] (val x: Self) extends AnyVal {
     
     inline def setIndices(value: js.Array[CcrFollowIndexStats]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     

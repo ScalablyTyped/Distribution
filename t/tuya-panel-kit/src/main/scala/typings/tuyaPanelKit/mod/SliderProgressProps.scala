@@ -173,7 +173,8 @@ object SliderProgressProps {
     __obj.asInstanceOf[SliderProgressProps]
   }
   
-  extension [Self <: SliderProgressProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderProgressProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     

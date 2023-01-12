@@ -17,7 +17,8 @@ object Interface {
     __obj.asInstanceOf[Interface]
   }
   
-  extension [Self <: Interface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Interface] (val x: Self) extends AnyVal {
     
     inline def setSocket(value: String): Self = StObject.set(x, "Socket", value.asInstanceOf[js.Any])
     

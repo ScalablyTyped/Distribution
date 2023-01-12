@@ -28,7 +28,8 @@ object UpdateGroupInput {
     __obj.asInstanceOf[UpdateGroupInput]
   }
   
-  extension [Self <: UpdateGroupInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateGroupInput] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

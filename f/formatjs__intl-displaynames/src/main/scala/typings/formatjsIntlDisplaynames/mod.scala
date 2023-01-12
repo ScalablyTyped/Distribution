@@ -94,7 +94,8 @@ object mod {
       __obj.asInstanceOf[DisplayNamesOptions]
     }
     
-    extension [Self <: DisplayNamesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayNamesOptions] (val x: Self) extends AnyVal {
       
       inline def setFallback(value: code | none): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object mod {
       __obj.asInstanceOf[DisplayNamesResolvedOptions]
     }
     
-    extension [Self <: DisplayNamesResolvedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayNamesResolvedOptions] (val x: Self) extends AnyVal {
       
       inline def setFallback(value: NonNullable[js.UndefOr[code | none]]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       

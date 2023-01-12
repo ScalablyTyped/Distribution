@@ -72,7 +72,8 @@ object EditorProviderRating {
     __obj.asInstanceOf[EditorProviderRating]
   }
   
-  extension [Self <: EditorProviderRating](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorProviderRating] (val x: Self) extends AnyVal {
     
     inline def setAttachErrorEvents(value: (js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "attachErrorEvents", js.Any.fromFunction3(value))
     

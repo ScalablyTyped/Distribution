@@ -25,7 +25,8 @@ object MidiSystemResetMessage {
     __obj.asInstanceOf[MidiSystemResetMessage]
   }
   
-  extension [Self <: MidiSystemResetMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MidiSystemResetMessage] (val x: Self) extends AnyVal {
     
     inline def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     

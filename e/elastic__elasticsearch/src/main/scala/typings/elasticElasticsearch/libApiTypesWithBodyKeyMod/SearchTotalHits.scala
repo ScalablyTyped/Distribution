@@ -17,7 +17,8 @@ object SearchTotalHits {
     __obj.asInstanceOf[SearchTotalHits]
   }
   
-  extension [Self <: SearchTotalHits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchTotalHits] (val x: Self) extends AnyVal {
     
     inline def setRelation(value: SearchTotalHitsRelation): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Limit {
     __obj.asInstanceOf[Limit]
   }
   
-  extension [Self <: Limit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double | String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

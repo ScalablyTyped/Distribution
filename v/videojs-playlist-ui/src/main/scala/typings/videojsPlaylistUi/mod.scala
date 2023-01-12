@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object mod {
         __obj.asInstanceOf[VideoJsPlayer]
       }
       
-      extension [Self <: VideoJsPlayer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoJsPlayer] (val x: Self) extends AnyVal {
         
         inline def setPlaylistUi(value: TypeofvideojsPlaylistUi): Self = StObject.set(x, "playlistUi", value.asInstanceOf[js.Any])
       }

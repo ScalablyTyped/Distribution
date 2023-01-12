@@ -15,7 +15,8 @@ object Behavior {
     __obj.asInstanceOf[Behavior]
   }
   
-  extension [Self <: Behavior](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Behavior] (val x: Self) extends AnyVal {
     
     inline def setTick(value: () => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction0(value))
   }

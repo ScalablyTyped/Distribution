@@ -58,7 +58,8 @@ object SubscriptionPurchaseV2 {
     __obj.asInstanceOf[SubscriptionPurchaseV2]
   }
   
-  extension [Self <: SubscriptionPurchaseV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionPurchaseV2] (val x: Self) extends AnyVal {
     
     inline def setAcknowledgementState(value: String): Self = StObject.set(x, "acknowledgementState", value.asInstanceOf[js.Any])
     

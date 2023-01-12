@@ -43,7 +43,8 @@ object SummarizedCounter {
     __obj.asInstanceOf[SummarizedCounter]
   }
   
-  extension [Self <: SummarizedCounter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SummarizedCounter] (val x: Self) extends AnyVal {
     
     inline def setAverage(value: Double): Self = StObject.set(x, "Average", value.asInstanceOf[js.Any])
     

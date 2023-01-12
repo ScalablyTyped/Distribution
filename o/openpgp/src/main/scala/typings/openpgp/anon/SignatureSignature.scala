@@ -15,7 +15,8 @@ object SignatureSignature {
     __obj.asInstanceOf[SignatureSignature]
   }
   
-  extension [Self <: SignatureSignature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureSignature] (val x: Self) extends AnyVal {
     
     inline def setSignature(value: typings.openpgp.mod.signature.Signature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
   }

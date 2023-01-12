@@ -28,7 +28,8 @@ object RedactionConfig {
     __obj.asInstanceOf[RedactionConfig]
   }
   
-  extension [Self <: RedactionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedactionConfig] (val x: Self) extends AnyVal {
     
     inline def setMaskCharacter(value: MaskCharacter): Self = StObject.set(x, "MaskCharacter", value.asInstanceOf[js.Any])
     

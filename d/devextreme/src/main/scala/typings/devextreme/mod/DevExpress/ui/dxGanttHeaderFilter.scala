@@ -43,7 +43,8 @@ object dxGanttHeaderFilter {
     __obj.asInstanceOf[dxGanttHeaderFilter]
   }
   
-  extension [Self <: dxGanttHeaderFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxGanttHeaderFilter] (val x: Self) extends AnyVal {
     
     inline def setAllowSearch(value: Boolean): Self = StObject.set(x, "allowSearch", value.asInstanceOf[js.Any])
     

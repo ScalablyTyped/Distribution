@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Add[K, V]]
     }
     
-    extension [Self <: Add[?, ?], K, V](x: Self & (Add[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Add[?, ?], K, V] (val x: Self & (Add[K, V])) extends AnyVal {
       
       inline def set$add(value: js.Array[js.Tuple2[K, V]]): Self = StObject.set(x, "$add", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[AddReadonlyArray[T]]
     }
     
-    extension [Self <: AddReadonlyArray[?], T](x: Self & AddReadonlyArray[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddReadonlyArray[?], T] (val x: Self & AddReadonlyArray[T]) extends AnyVal {
       
       inline def set$add(value: js.Array[T]): Self = StObject.set(x, "$add", value.asInstanceOf[js.Any])
       
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Apply[T]]
     }
     
-    extension [Self <: Apply[?], T](x: Self & Apply[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Apply[?], T] (val x: Self & Apply[T]) extends AnyVal {
       
       inline def set$apply(value: T => T): Self = StObject.set(x, "$apply", js.Any.fromFunction1(value))
     }
@@ -90,7 +93,8 @@ object anon {
       __obj.asInstanceOf[Merge[T]]
     }
     
-    extension [Self <: Merge[?], T](x: Self & Merge[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Merge[?], T] (val x: Self & Merge[T]) extends AnyVal {
       
       inline def set$merge(value: Partial[T]): Self = StObject.set(x, "$merge", value.asInstanceOf[js.Any])
     }
@@ -107,7 +111,8 @@ object anon {
       __obj.asInstanceOf[NoInferenceCustomCommandsBrand]
     }
     
-    extension [Self <: NoInferenceCustomCommandsBrand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoInferenceCustomCommandsBrand] (val x: Self) extends AnyVal {
       
       inline def set__noInferenceCustomCommandsBrand(value: Any): Self = StObject.set(x, "__noInferenceCustomCommandsBrand", value.asInstanceOf[js.Any])
     }
@@ -127,7 +132,8 @@ object anon {
       __obj.asInstanceOf[Push[T]]
     }
     
-    extension [Self <: Push[?], T](x: Self & Push[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Push[?], T] (val x: Self & Push[T]) extends AnyVal {
       
       inline def set$push(value: js.Array[T]): Self = StObject.set(x, "$push", value.asInstanceOf[js.Any])
       
@@ -149,7 +155,8 @@ object anon {
       __obj.asInstanceOf[Remove[K]]
     }
     
-    extension [Self <: Remove[?], K](x: Self & Remove[K]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Remove[?], K] (val x: Self & Remove[K]) extends AnyVal {
       
       inline def set$remove(value: js.Array[K]): Self = StObject.set(x, "$remove", value.asInstanceOf[js.Any])
       
@@ -171,7 +178,8 @@ object anon {
       __obj.asInstanceOf[RemoveReadonlyArray[T]]
     }
     
-    extension [Self <: RemoveReadonlyArray[?], T](x: Self & RemoveReadonlyArray[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveReadonlyArray[?], T] (val x: Self & RemoveReadonlyArray[T]) extends AnyVal {
       
       inline def set$remove(value: js.Array[T]): Self = StObject.set(x, "$remove", value.asInstanceOf[js.Any])
       
@@ -193,7 +201,8 @@ object anon {
       __obj.asInstanceOf[Set[T]]
     }
     
-    extension [Self <: Set[?], T](x: Self & Set[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Set[?], T] (val x: Self & Set[T]) extends AnyVal {
       
       inline def set$set(value: T): Self = StObject.set(x, "$set", value.asInstanceOf[js.Any])
     }
@@ -213,7 +222,8 @@ object anon {
       __obj.asInstanceOf[Splice[T]]
     }
     
-    extension [Self <: Splice[?], T](x: Self & Splice[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Splice[?], T] (val x: Self & Splice[T]) extends AnyVal {
       
       inline def set$splice(value: js.Array[(js.Tuple2[Double, js.UndefOr[Double]]) | (Array[Double | T])]): Self = StObject.set(x, "$splice", value.asInstanceOf[js.Any])
       
@@ -235,7 +245,8 @@ object anon {
       __obj.asInstanceOf[Toggle[T]]
     }
     
-    extension [Self <: Toggle[?], T](x: Self & Toggle[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Toggle[?], T] (val x: Self & Toggle[T]) extends AnyVal {
       
       inline def set$toggle(value: js.Array[/* keyof T */ String]): Self = StObject.set(x, "$toggle", value.asInstanceOf[js.Any])
       
@@ -257,7 +268,8 @@ object anon {
       __obj.asInstanceOf[Unset[T]]
     }
     
-    extension [Self <: Unset[?], T](x: Self & Unset[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unset[?], T] (val x: Self & Unset[T]) extends AnyVal {
       
       inline def set$unset(value: js.Array[/* keyof T */ String]): Self = StObject.set(x, "$unset", value.asInstanceOf[js.Any])
       
@@ -279,7 +291,8 @@ object anon {
       __obj.asInstanceOf[Unshift[T]]
     }
     
-    extension [Self <: Unshift[?], T](x: Self & Unshift[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unshift[?], T] (val x: Self & Unshift[T]) extends AnyVal {
       
       inline def set$unshift(value: js.Array[T]): Self = StObject.set(x, "$unshift", value.asInstanceOf[js.Any])
       

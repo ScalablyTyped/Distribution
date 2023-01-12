@@ -15,7 +15,8 @@ object UpdateAutomaticTapeCreationPolicyOutput {
     __obj.asInstanceOf[UpdateAutomaticTapeCreationPolicyOutput]
   }
   
-  extension [Self <: UpdateAutomaticTapeCreationPolicyOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAutomaticTapeCreationPolicyOutput] (val x: Self) extends AnyVal {
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     

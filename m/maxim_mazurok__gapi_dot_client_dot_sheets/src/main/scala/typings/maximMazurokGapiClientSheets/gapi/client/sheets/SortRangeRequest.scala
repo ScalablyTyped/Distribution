@@ -19,7 +19,8 @@ object SortRangeRequest {
     __obj.asInstanceOf[SortRangeRequest]
   }
   
-  extension [Self <: SortRangeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortRangeRequest] (val x: Self) extends AnyVal {
     
     inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

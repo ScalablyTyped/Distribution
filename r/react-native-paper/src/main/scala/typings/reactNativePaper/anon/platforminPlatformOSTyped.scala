@@ -29,7 +29,8 @@ object platforminPlatformOSTyped {
     __obj.asInstanceOf[platforminPlatformOSTyped]
   }
   
-  extension [Self <: platforminPlatformOSTyped](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: platforminPlatformOSTyped] (val x: Self) extends AnyVal {
     
     inline def setAndroid(value: Fonts): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     

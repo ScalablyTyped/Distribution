@@ -25,7 +25,8 @@ object LineDashedMaterialParameters {
     __obj.asInstanceOf[LineDashedMaterialParameters]
   }
   
-  extension [Self <: LineDashedMaterialParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineDashedMaterialParameters] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Double | String | Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

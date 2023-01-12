@@ -38,7 +38,8 @@ object ISyntaxTrivia {
     __obj.asInstanceOf[ISyntaxTrivia]
   }
   
-  extension [Self <: ISyntaxTrivia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyntaxTrivia] (val x: Self) extends AnyVal {
     
     inline def setFullText(value: () => String): Self = StObject.set(x, "fullText", js.Any.fromFunction0(value))
     

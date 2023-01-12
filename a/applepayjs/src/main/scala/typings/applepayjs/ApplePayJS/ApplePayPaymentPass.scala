@@ -45,7 +45,8 @@ object ApplePayPaymentPass {
     __obj.asInstanceOf[ApplePayPaymentPass]
   }
   
-  extension [Self <: ApplePayPaymentPass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplePayPaymentPass] (val x: Self) extends AnyVal {
     
     inline def setActivationState(value: ApplePayPaymentPassActivationState): Self = StObject.set(x, "activationState", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object srcWordcountMod {
       __obj.asInstanceOf[WordCountConfig]
     }
     
-    extension [Self <: WordCountConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WordCountConfig] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object srcWordcountMod {
         __obj.asInstanceOf[Plugins]
       }
       
-      extension [Self <: Plugins](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
         
         inline def setWordCount(value: WordCount): Self = StObject.set(x, "WordCount", value.asInstanceOf[js.Any])
       }

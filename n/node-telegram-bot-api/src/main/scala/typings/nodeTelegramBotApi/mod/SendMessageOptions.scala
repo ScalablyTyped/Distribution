@@ -19,7 +19,8 @@ object SendMessageOptions {
     __obj.asInstanceOf[SendMessageOptions]
   }
   
-  extension [Self <: SendMessageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendMessageOptions] (val x: Self) extends AnyVal {
     
     inline def setDisable_web_page_preview(value: Boolean): Self = StObject.set(x, "disable_web_page_preview", value.asInstanceOf[js.Any])
     

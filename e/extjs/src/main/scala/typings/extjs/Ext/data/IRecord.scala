@@ -209,7 +209,8 @@ object IRecord {
     __obj.asInstanceOf[IRecord]
   }
   
-  extension [Self <: IRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRecord] (val x: Self) extends AnyVal {
     
     inline def setAssociations(value: Array): Self = StObject.set(x, "associations", value.asInstanceOf[js.Any])
     

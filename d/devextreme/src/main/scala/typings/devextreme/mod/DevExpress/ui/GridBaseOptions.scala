@@ -447,7 +447,8 @@ object GridBaseOptions {
     __obj.asInstanceOf[GridBaseOptions[TComponent, TRowData, TKey]]
   }
   
-  extension [Self <: GridBaseOptions[?, ?, ?], TComponent /* <: GridBase[TRowData, TKey] */, TRowData, TKey](x: Self & (GridBaseOptions[TComponent, TRowData, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridBaseOptions[?, ?, ?], TComponent /* <: GridBase[TRowData, TKey] */, TRowData, TKey] (val x: Self & (GridBaseOptions[TComponent, TRowData, TKey])) extends AnyVal {
     
     inline def setAllowColumnReordering(value: Boolean): Self = StObject.set(x, "allowColumnReordering", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object ValidationOptions {
     __obj.asInstanceOf[ValidationOptions]
   }
   
-  extension [Self <: ValidationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationOptions] (val x: Self) extends AnyVal {
     
     inline def setAcceptFiles(value: Any): Self = StObject.set(x, "acceptFiles", value.asInstanceOf[js.Any])
     

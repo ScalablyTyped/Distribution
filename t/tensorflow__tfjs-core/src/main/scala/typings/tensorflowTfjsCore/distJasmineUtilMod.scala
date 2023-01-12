@@ -93,7 +93,8 @@ object distJasmineUtilMod {
       __obj.asInstanceOf[Constraints]
     }
     
-    extension [Self <: Constraints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constraints] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: Flags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object distJasmineUtilMod {
       __obj.asInstanceOf[TestEnv]
     }
     
-    extension [Self <: TestEnv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestEnv] (val x: Self) extends AnyVal {
       
       inline def setBackendName(value: String): Self = StObject.set(x, "backendName", value.asInstanceOf[js.Any])
       
@@ -153,7 +155,8 @@ object distJasmineUtilMod {
       __obj.asInstanceOf[TestFilter]
     }
     
-    extension [Self <: TestFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestFilter] (val x: Self) extends AnyVal {
       
       inline def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
       

@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[Cursor[T]]
     }
     
-    extension [Self <: Cursor[?], T](x: Self & Cursor[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cursor[?], T] (val x: Self & Cursor[T]) extends AnyVal {
       
       inline def setExec(value: js.Function2[/* err */ js.Error, /* documents */ js.Array[T], Unit] => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
       
@@ -66,7 +67,8 @@ object mod {
       __obj.asInstanceOf[CursorCount]
     }
     
-    extension [Self <: CursorCount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CursorCount] (val x: Self) extends AnyVal {
       
       inline def setExec(value: js.Function2[/* err */ js.Error, /* count */ Double, Unit] => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
     }
@@ -118,7 +120,8 @@ object mod {
       __obj.asInstanceOf[DataStoreOptions]
     }
     
-    extension [Self <: DataStoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataStoreOptions] (val x: Self) extends AnyVal {
       
       inline def setAfterSerialization(value: /* line */ String => String): Self = StObject.set(x, "afterSerialization", js.Any.fromFunction1(value))
       
@@ -175,7 +178,8 @@ object mod {
       __obj.asInstanceOf[EnsureIndexOptions]
     }
     
-    extension [Self <: EnsureIndexOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnsureIndexOptions] (val x: Self) extends AnyVal {
       
       inline def setExpireAfterSeconds(value: Double): Self = StObject.set(x, "expireAfterSeconds", value.asInstanceOf[js.Any])
       
@@ -442,7 +446,8 @@ object mod {
       __obj.asInstanceOf[Persistence]
     }
     
-    extension [Self <: Persistence](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Persistence] (val x: Self) extends AnyVal {
       
       inline def setCompactDatafile(value: () => Unit): Self = StObject.set(x, "compactDatafile", js.Any.fromFunction0(value))
       
@@ -466,7 +471,8 @@ object mod {
       __obj.asInstanceOf[RemoveOptions]
     }
     
-    extension [Self <: RemoveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveOptions] (val x: Self) extends AnyVal {
       
       inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
@@ -493,7 +499,8 @@ object mod {
       __obj.asInstanceOf[UpdateOptions]
     }
     
-    extension [Self <: UpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       

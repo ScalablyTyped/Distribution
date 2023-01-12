@@ -42,7 +42,8 @@ object MobileThreatDefenseConnector {
     __obj.asInstanceOf[MobileThreatDefenseConnector]
   }
   
-  extension [Self <: MobileThreatDefenseConnector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileThreatDefenseConnector] (val x: Self) extends AnyVal {
     
     inline def setAndroidDeviceBlockedOnMissingPartnerData(value: Boolean): Self = StObject.set(x, "androidDeviceBlockedOnMissingPartnerData", value.asInstanceOf[js.Any])
     

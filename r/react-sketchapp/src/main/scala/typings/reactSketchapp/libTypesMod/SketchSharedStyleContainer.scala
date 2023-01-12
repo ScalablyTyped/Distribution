@@ -26,7 +26,8 @@ object SketchSharedStyleContainer {
     __obj.asInstanceOf[SketchSharedStyleContainer]
   }
   
-  extension [Self <: SketchSharedStyleContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchSharedStyleContainer] (val x: Self) extends AnyVal {
     
     inline def setAddSharedObject(value: Any => Any): Self = StObject.set(x, "addSharedObject", js.Any.fromFunction1(value))
     

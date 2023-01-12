@@ -38,7 +38,8 @@ object CapabilityStatement2RestInteraction {
     __obj.asInstanceOf[CapabilityStatement2RestInteraction]
   }
   
-  extension [Self <: CapabilityStatement2RestInteraction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapabilityStatement2RestInteraction] (val x: Self) extends AnyVal {
     
     inline def setCode(value: transaction | batch | `search-system` | `history-system`): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

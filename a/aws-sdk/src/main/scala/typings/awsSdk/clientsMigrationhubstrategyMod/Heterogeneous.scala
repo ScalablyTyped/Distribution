@@ -18,7 +18,8 @@ object Heterogeneous {
     __obj.asInstanceOf[Heterogeneous]
   }
   
-  extension [Self <: Heterogeneous](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Heterogeneous] (val x: Self) extends AnyVal {
     
     inline def setTargetDatabaseEngine(value: HeterogeneousTargetDatabaseEngines): Self = StObject.set(x, "targetDatabaseEngine", value.asInstanceOf[js.Any])
     

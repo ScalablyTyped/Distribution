@@ -27,7 +27,8 @@ object HeaderFooter {
     __obj.asInstanceOf[HeaderFooter]
   }
   
-  extension [Self <: HeaderFooter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeaderFooter] (val x: Self) extends AnyVal {
     
     inline def setSubDocument(value: SubDocument): Self = StObject.set(x, "subDocument", value.asInstanceOf[js.Any])
     

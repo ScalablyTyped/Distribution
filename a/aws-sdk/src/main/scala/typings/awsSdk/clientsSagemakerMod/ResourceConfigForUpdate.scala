@@ -18,7 +18,8 @@ object ResourceConfigForUpdate {
     __obj.asInstanceOf[ResourceConfigForUpdate]
   }
   
-  extension [Self <: ResourceConfigForUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceConfigForUpdate] (val x: Self) extends AnyVal {
     
     inline def setKeepAlivePeriodInSeconds(value: KeepAlivePeriodInSeconds): Self = StObject.set(x, "KeepAlivePeriodInSeconds", value.asInstanceOf[js.Any])
   }

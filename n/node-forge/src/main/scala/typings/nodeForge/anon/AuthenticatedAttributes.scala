@@ -26,7 +26,8 @@ object AuthenticatedAttributes {
     __obj.asInstanceOf[AuthenticatedAttributes]
   }
   
-  extension [Self <: AuthenticatedAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticatedAttributes] (val x: Self) extends AnyVal {
     
     inline def setAuthenticatedAttributes(value: js.Array[Type]): Self = StObject.set(x, "authenticatedAttributes", value.asInstanceOf[js.Any])
     

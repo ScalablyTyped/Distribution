@@ -58,7 +58,8 @@ object AngularPipeOptionsSchema {
     __obj.asInstanceOf[AngularPipeOptionsSchema]
   }
   
-  extension [Self <: AngularPipeOptionsSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AngularPipeOptionsSchema] (val x: Self) extends AnyVal {
     
     inline def setExport(value: Boolean): Self = StObject.set(x, "export", value.asInstanceOf[js.Any])
     

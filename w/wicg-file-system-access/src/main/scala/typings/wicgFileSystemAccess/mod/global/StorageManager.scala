@@ -15,7 +15,8 @@ object StorageManager {
     __obj.asInstanceOf[StorageManager]
   }
   
-  extension [Self <: StorageManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageManager] (val x: Self) extends AnyVal {
     
     inline def setGetDirectory(value: () => js.Promise[FileSystemDirectoryHandle]): Self = StObject.set(x, "getDirectory", js.Any.fromFunction0(value))
   }

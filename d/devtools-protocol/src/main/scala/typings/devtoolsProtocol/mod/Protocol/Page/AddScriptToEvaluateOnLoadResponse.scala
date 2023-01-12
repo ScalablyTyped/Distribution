@@ -18,7 +18,8 @@ object AddScriptToEvaluateOnLoadResponse {
     __obj.asInstanceOf[AddScriptToEvaluateOnLoadResponse]
   }
   
-  extension [Self <: AddScriptToEvaluateOnLoadResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddScriptToEvaluateOnLoadResponse] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: ScriptIdentifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
   }

@@ -64,7 +64,8 @@ object pluginsOverscrollMod {
       __obj.asInstanceOf[Data2d]
     }
     
-    extension [Self <: Data2d](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data2d] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object pluginsOverscrollMod {
       __obj.asInstanceOf[OverscrollOptions]
     }
     
-    extension [Self <: OverscrollOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverscrollOptions] (val x: Self) extends AnyVal {
       
       inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
       

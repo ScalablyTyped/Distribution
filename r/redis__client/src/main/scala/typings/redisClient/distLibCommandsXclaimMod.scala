@@ -68,7 +68,8 @@ object distLibCommandsXclaimMod {
       __obj.asInstanceOf[XClaimOptions]
     }
     
-    extension [Self <: XClaimOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XClaimOptions] (val x: Self) extends AnyVal {
       
       inline def setFORCE(value: `true`): Self = StObject.set(x, "FORCE", value.asInstanceOf[js.Any])
       

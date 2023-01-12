@@ -28,7 +28,8 @@ object DescribeConnectClientAddInsRequest {
     __obj.asInstanceOf[DescribeConnectClientAddInsRequest]
   }
   
-  extension [Self <: DescribeConnectClientAddInsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeConnectClientAddInsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: Limit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

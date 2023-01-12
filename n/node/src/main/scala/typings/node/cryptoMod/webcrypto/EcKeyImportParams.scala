@@ -17,7 +17,8 @@ object EcKeyImportParams {
     __obj.asInstanceOf[EcKeyImportParams]
   }
   
-  extension [Self <: EcKeyImportParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EcKeyImportParams] (val x: Self) extends AnyVal {
     
     inline def setNamedCurve(value: NamedCurve): Self = StObject.set(x, "namedCurve", value.asInstanceOf[js.Any])
   }

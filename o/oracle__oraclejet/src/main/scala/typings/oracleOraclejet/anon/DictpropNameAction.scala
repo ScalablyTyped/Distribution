@@ -22,7 +22,8 @@ object DictpropNameAction {
     __obj.asInstanceOf[DictpropNameAction]
   }
   
-  extension [Self <: DictpropNameAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictpropNameAction] (val x: Self) extends AnyVal {
     
     inline def setAction(value: open | close): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

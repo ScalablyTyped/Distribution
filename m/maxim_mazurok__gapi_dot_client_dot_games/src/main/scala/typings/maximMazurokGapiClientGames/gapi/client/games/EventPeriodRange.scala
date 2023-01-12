@@ -22,7 +22,8 @@ object EventPeriodRange {
     __obj.asInstanceOf[EventPeriodRange]
   }
   
-  extension [Self <: EventPeriodRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventPeriodRange] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

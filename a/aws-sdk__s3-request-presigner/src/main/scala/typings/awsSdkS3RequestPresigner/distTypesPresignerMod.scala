@@ -51,7 +51,8 @@ object distTypesPresignerMod {
       __obj.asInstanceOf[S3RequestPresignerOptions]
     }
     
-    extension [Self <: S3RequestPresignerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3RequestPresignerOptions] (val x: Self) extends AnyVal {
       
       inline def setApplyChecksum(value: Boolean): Self = StObject.set(x, "applyChecksum", value.asInstanceOf[js.Any])
       

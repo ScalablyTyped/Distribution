@@ -33,7 +33,8 @@ object PlotPyramidOnPointOptions {
     __obj.asInstanceOf[PlotPyramidOnPointOptions]
   }
   
-  extension [Self <: PlotPyramidOnPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPyramidOnPointOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorOptions(value: PlotPyramidOnPointConnectorOptions | SVGAttributes): Self = StObject.set(x, "connectorOptions", value.asInstanceOf[js.Any])
     

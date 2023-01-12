@@ -28,7 +28,8 @@ object SelectFromCollection {
     __obj.asInstanceOf[SelectFromCollection]
   }
   
-  extension [Self <: SelectFromCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectFromCollection] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: NonNegativeInt): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     

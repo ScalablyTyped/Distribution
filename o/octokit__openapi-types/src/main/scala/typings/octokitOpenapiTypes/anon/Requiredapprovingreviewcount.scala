@@ -26,7 +26,8 @@ object Requiredapprovingreviewcount {
     __obj.asInstanceOf[Requiredapprovingreviewcount]
   }
   
-  extension [Self <: Requiredapprovingreviewcount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Requiredapprovingreviewcount] (val x: Self) extends AnyVal {
     
     inline def setBypass_pull_request_allowances(value: AppsTeamsArray): Self = StObject.set(x, "bypass_pull_request_allowances", value.asInstanceOf[js.Any])
     

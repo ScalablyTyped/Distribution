@@ -20,7 +20,8 @@ object Minimum {
     __obj.asInstanceOf[Minimum]
   }
   
-  extension [Self <: Minimum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Minimum] (val x: Self) extends AnyVal {
     
     inline def setCustomer_set_price(value: Price): Self = StObject.set(x, "customer_set_price", value.asInstanceOf[js.Any])
     

@@ -345,7 +345,8 @@ object mod {
       __obj.asInstanceOf[LogInfo]
     }
     
-    extension [Self <: LogInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogInfo] (val x: Self) extends AnyVal {
       
       inline def setConv(value: String): Self = StObject.set(x, "conv", value.asInstanceOf[js.Any])
       
@@ -414,7 +415,8 @@ object mod {
       __obj.asInstanceOf[RalLogger]
     }
     
-    extension [Self <: RalLogger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RalLogger] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: /* repeated */ Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
@@ -443,7 +445,8 @@ object mod {
       __obj.asInstanceOf[Server]
     }
     
-    extension [Self <: Server](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -498,7 +501,8 @@ object mod {
       __obj.asInstanceOf[Service]
     }
     
-    extension [Self <: Service](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
       
       inline def setBalance(value: random | roundrobin | hashring): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
       

@@ -40,7 +40,8 @@ object DistributionPointName {
     __obj.asInstanceOf[DistributionPointName]
   }
   
-  extension [Self <: DistributionPointName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributionPointName] (val x: Self) extends AnyVal {
     
     inline def setGetEncodedHex(value: () => String): Self = StObject.set(x, "getEncodedHex", js.Any.fromFunction0(value))
   }

@@ -63,7 +63,8 @@ object LocalGatewayRoute {
     __obj.asInstanceOf[LocalGatewayRoute]
   }
   
-  extension [Self <: LocalGatewayRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalGatewayRoute] (val x: Self) extends AnyVal {
     
     inline def setCoipPoolId(value: CoipPoolId): Self = StObject.set(x, "CoipPoolId", value.asInstanceOf[js.Any])
     

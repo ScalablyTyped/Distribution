@@ -22,7 +22,8 @@ object ChoiceColumn {
     __obj.asInstanceOf[ChoiceColumn]
   }
   
-  extension [Self <: ChoiceColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChoiceColumn] (val x: Self) extends AnyVal {
     
     inline def setAllowTextEntry(value: NullableOption[Boolean]): Self = StObject.set(x, "allowTextEntry", value.asInstanceOf[js.Any])
     

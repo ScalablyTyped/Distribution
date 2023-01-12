@@ -106,7 +106,8 @@ object XAxisProps {
     __obj.asInstanceOf[XAxisProps]
   }
   
-  extension [Self <: XAxisProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAxisProps] (val x: Self) extends AnyVal {
     
     inline def setAllowDataOverflow(value: Boolean): Self = StObject.set(x, "allowDataOverflow", value.asInstanceOf[js.Any])
     

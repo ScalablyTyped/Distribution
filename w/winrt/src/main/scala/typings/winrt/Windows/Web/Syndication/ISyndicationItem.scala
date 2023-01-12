@@ -84,7 +84,8 @@ object ISyndicationItem {
     __obj.asInstanceOf[ISyndicationItem]
   }
   
-  extension [Self <: ISyndicationItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyndicationItem] (val x: Self) extends AnyVal {
     
     inline def setAuthors(value: IVector[SyndicationPerson]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object DiagnosticOrderEvent {
     __obj.asInstanceOf[DiagnosticOrderEvent]
   }
   
-  extension [Self <: DiagnosticOrderEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagnosticOrderEvent] (val x: Self) extends AnyVal {
     
     inline def setActor(value: Reference): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

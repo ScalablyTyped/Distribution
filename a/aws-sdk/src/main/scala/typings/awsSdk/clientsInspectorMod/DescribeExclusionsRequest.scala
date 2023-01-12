@@ -23,7 +23,8 @@ object DescribeExclusionsRequest {
     __obj.asInstanceOf[DescribeExclusionsRequest]
   }
   
-  extension [Self <: DescribeExclusionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeExclusionsRequest] (val x: Self) extends AnyVal {
     
     inline def setExclusionArns(value: BatchDescribeExclusionsArnList): Self = StObject.set(x, "exclusionArns", value.asInstanceOf[js.Any])
     

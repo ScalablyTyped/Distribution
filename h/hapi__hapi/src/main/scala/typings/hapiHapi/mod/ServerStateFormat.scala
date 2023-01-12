@@ -19,7 +19,8 @@ object ServerStateFormat {
     __obj.asInstanceOf[ServerStateFormat]
   }
   
-  extension [Self <: ServerStateFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerStateFormat] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

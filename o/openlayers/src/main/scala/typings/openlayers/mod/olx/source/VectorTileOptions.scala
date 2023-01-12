@@ -64,7 +64,8 @@ object VectorTileOptions {
     __obj.asInstanceOf[VectorTileOptions]
   }
   
-  extension [Self <: VectorTileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VectorTileOptions] (val x: Self) extends AnyVal {
     
     inline def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
     

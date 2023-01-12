@@ -23,7 +23,8 @@ object NetworkAttachmentTaskSpec {
     __obj.asInstanceOf[NetworkAttachmentTaskSpec]
   }
   
-  extension [Self <: NetworkAttachmentTaskSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkAttachmentTaskSpec] (val x: Self) extends AnyVal {
     
     inline def setNetworkAttachmentSpec(value: ContainerID): Self = StObject.set(x, "NetworkAttachmentSpec", value.asInstanceOf[js.Any])
     

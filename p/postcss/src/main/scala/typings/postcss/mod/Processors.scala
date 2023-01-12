@@ -117,7 +117,8 @@ object Processors {
     __obj.asInstanceOf[Processors]
   }
   
-  extension [Self <: Processors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Processors] (val x: Self) extends AnyVal {
     
     inline def setAtRule(value: AtRuleProcessor | StringDictionary[AtRuleProcessor]): Self = StObject.set(x, "AtRule", value.asInstanceOf[js.Any])
     

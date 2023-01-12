@@ -53,7 +53,8 @@ object AwsOpenSearchServiceDomainServiceSoftwareOptionsDetails {
     __obj.asInstanceOf[AwsOpenSearchServiceDomainServiceSoftwareOptionsDetails]
   }
   
-  extension [Self <: AwsOpenSearchServiceDomainServiceSoftwareOptionsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsOpenSearchServiceDomainServiceSoftwareOptionsDetails] (val x: Self) extends AnyVal {
     
     inline def setAutomatedUpdateDate(value: NonEmptyString): Self = StObject.set(x, "AutomatedUpdateDate", value.asInstanceOf[js.Any])
     

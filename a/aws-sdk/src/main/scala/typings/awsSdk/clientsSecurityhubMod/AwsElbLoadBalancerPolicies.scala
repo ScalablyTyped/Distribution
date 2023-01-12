@@ -28,7 +28,8 @@ object AwsElbLoadBalancerPolicies {
     __obj.asInstanceOf[AwsElbLoadBalancerPolicies]
   }
   
-  extension [Self <: AwsElbLoadBalancerPolicies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElbLoadBalancerPolicies] (val x: Self) extends AnyVal {
     
     inline def setAppCookieStickinessPolicies(value: AwsElbAppCookieStickinessPolicies): Self = StObject.set(x, "AppCookieStickinessPolicies", value.asInstanceOf[js.Any])
     

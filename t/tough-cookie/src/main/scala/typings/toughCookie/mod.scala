@@ -106,7 +106,8 @@ object mod {
         __obj.asInstanceOf[ParseOptions]
       }
       
-      extension [Self <: ParseOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
         
         inline def setLoose(value: Boolean): Self = StObject.set(x, "loose", value.asInstanceOf[js.Any])
         
@@ -153,7 +154,8 @@ object mod {
         __obj.asInstanceOf[Properties]
       }
       
-      extension [Self <: Properties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Properties] (val x: Self) extends AnyVal {
         
         inline def setCreation(value: js.Date): Self = StObject.set(x, "creation", value.asInstanceOf[js.Any])
         
@@ -372,7 +374,8 @@ object mod {
         __obj.asInstanceOf[GetCookiesOptions]
       }
       
-      extension [Self <: GetCookiesOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GetCookiesOptions] (val x: Self) extends AnyVal {
         
         inline def setAllPaths(value: Boolean): Self = StObject.set(x, "allPaths", value.asInstanceOf[js.Any])
         
@@ -413,7 +416,8 @@ object mod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setAllowSpecialUseDomain(value: Boolean): Self = StObject.set(x, "allowSpecialUseDomain", value.asInstanceOf[js.Any])
         
@@ -455,7 +459,8 @@ object mod {
         __obj.asInstanceOf[Serialized]
       }
       
-      extension [Self <: Serialized](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Serialized] (val x: Self) extends AnyVal {
         
         inline def setCookies(value: js.Array[typings.toughCookie.mod.Cookie.Serialized]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
         
@@ -486,7 +491,8 @@ object mod {
         __obj.asInstanceOf[SetCookieOptions]
       }
       
-      extension [Self <: SetCookieOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SetCookieOptions] (val x: Self) extends AnyVal {
         
         inline def setHttp(value: Boolean): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
         

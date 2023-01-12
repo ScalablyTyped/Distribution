@@ -178,7 +178,8 @@ object RestoreFromClusterSnapshotMessage {
     __obj.asInstanceOf[RestoreFromClusterSnapshotMessage]
   }
   
-  extension [Self <: RestoreFromClusterSnapshotMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreFromClusterSnapshotMessage] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInfo(value: String): Self = StObject.set(x, "AdditionalInfo", value.asInstanceOf[js.Any])
     

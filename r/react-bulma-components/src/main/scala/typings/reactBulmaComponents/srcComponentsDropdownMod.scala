@@ -32,7 +32,8 @@ object srcComponentsDropdownMod extends Shortcut {
       __obj.asInstanceOf[DropdownItemProps[T]]
     }
     
-    extension [Self <: DropdownItemProps[?], T](x: Self & DropdownItemProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownItemProps[?], T] (val x: Self & DropdownItemProps[T]) extends AnyVal {
       
       inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -69,7 +70,8 @@ object srcComponentsDropdownMod extends Shortcut {
       __obj.asInstanceOf[DropdownProps[T]]
     }
     
-    extension [Self <: DropdownProps[?], T](x: Self & DropdownProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownProps[?], T] (val x: Self & DropdownProps[T]) extends AnyVal {
       
       inline def setAlign(value: right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

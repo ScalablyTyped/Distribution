@@ -47,7 +47,8 @@ object GanttColumn {
     __obj.asInstanceOf[GanttColumn]
   }
   
-  extension [Self <: GanttColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttColumn] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

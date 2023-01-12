@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Branch]
     }
     
-    extension [Self <: Branch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Branch] (val x: Self) extends AnyVal {
       
       inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Carrier]
     }
     
-    extension [Self <: Carrier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Carrier] (val x: Self) extends AnyVal {
       
       inline def setCarrier(value: Boolean): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
       
@@ -141,7 +143,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -164,7 +167,8 @@ object anon {
       __obj.asInstanceOf[Reason]
     }
     
-    extension [Self <: Reason](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reason] (val x: Self) extends AnyVal {
       
       inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     }

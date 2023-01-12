@@ -27,7 +27,8 @@ object JsonOptions {
     __obj.asInstanceOf[JsonOptions]
   }
   
-  extension [Self <: JsonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonOptions] (val x: Self) extends AnyVal {
     
     inline def setStringifyReplacer(value: (/* key */ String, /* value */ Any) => Any): Self = StObject.set(x, "stringifyReplacer", js.Any.fromFunction2(value))
     

@@ -21,7 +21,8 @@ object SnapshotCleanupRepositoryRequest {
     __obj.asInstanceOf[SnapshotCleanupRepositoryRequest]
   }
   
-  extension [Self <: SnapshotCleanupRepositoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotCleanupRepositoryRequest] (val x: Self) extends AnyVal {
     
     inline def setMaster_timeout(value: Duration): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     

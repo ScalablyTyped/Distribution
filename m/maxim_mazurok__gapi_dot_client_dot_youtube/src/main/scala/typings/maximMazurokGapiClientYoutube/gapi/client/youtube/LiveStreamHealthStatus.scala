@@ -22,7 +22,8 @@ object LiveStreamHealthStatus {
     __obj.asInstanceOf[LiveStreamHealthStatus]
   }
   
-  extension [Self <: LiveStreamHealthStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveStreamHealthStatus] (val x: Self) extends AnyVal {
     
     inline def setConfigurationIssues(value: js.Array[LiveStreamConfigurationIssue]): Self = StObject.set(x, "configurationIssues", value.asInstanceOf[js.Any])
     

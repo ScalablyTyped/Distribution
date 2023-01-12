@@ -21,7 +21,8 @@ object IndexExpression {
     __obj.asInstanceOf[IndexExpression]
   }
   
-  extension [Self <: IndexExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexExpression] (val x: Self) extends AnyVal {
     
     inline def setBase(value: Expression): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

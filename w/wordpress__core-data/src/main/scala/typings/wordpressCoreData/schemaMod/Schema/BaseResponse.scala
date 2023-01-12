@@ -19,7 +19,8 @@ object BaseResponse {
     __obj.asInstanceOf[BaseResponse]
   }
   
-  extension [Self <: BaseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseResponse] (val x: Self) extends AnyVal {
     
     inline def set_embedded(value: Record[String, js.Array[Any]]): Self = StObject.set(x, "_embedded", value.asInstanceOf[js.Any])
     

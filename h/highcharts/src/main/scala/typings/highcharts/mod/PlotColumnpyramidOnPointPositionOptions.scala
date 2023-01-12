@@ -39,7 +39,8 @@ object PlotColumnpyramidOnPointPositionOptions {
     __obj.asInstanceOf[PlotColumnpyramidOnPointPositionOptions]
   }
   
-  extension [Self <: PlotColumnpyramidOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotColumnpyramidOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

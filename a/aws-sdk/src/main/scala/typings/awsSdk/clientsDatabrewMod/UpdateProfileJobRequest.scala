@@ -70,7 +70,8 @@ object UpdateProfileJobRequest {
     __obj.asInstanceOf[UpdateProfileJobRequest]
   }
   
-  extension [Self <: UpdateProfileJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateProfileJobRequest] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: ProfileConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     

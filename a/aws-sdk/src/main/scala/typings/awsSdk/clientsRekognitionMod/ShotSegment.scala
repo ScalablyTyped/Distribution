@@ -23,7 +23,8 @@ object ShotSegment {
     __obj.asInstanceOf[ShotSegment]
   }
   
-  extension [Self <: ShotSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShotSegment] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: SegmentConfidence): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     

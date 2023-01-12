@@ -16,7 +16,8 @@ object GoogleApiTranslateLanguageListResponse {
     __obj.asInstanceOf[GoogleApiTranslateLanguageListResponse]
   }
   
-  extension [Self <: GoogleApiTranslateLanguageListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleApiTranslateLanguageListResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: Languages): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

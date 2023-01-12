@@ -21,7 +21,8 @@ object RecordChecked {
     __obj.asInstanceOf[RecordChecked]
   }
   
-  extension [Self <: RecordChecked](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordChecked] (val x: Self) extends AnyVal {
     
     inline def setBChecked(value: Boolean): Self = StObject.set(x, "bChecked", value.asInstanceOf[js.Any])
     

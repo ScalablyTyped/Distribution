@@ -81,7 +81,8 @@ object IDD {
     __obj.asInstanceOf[IDD]
   }
   
-  extension [Self <: IDD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDD] (val x: Self) extends AnyVal {
     
     inline def setAlignElWithMouse(
       value: (/* el */ js.UndefOr[HTMLElement], /* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Unit

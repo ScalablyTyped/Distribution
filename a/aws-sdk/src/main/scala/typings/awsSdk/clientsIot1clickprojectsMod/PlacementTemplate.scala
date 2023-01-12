@@ -23,7 +23,8 @@ object PlacementTemplate {
     __obj.asInstanceOf[PlacementTemplate]
   }
   
-  extension [Self <: PlacementTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlacementTemplate] (val x: Self) extends AnyVal {
     
     inline def setDefaultAttributes(value: DefaultPlacementAttributeMap): Self = StObject.set(x, "defaultAttributes", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object ArcGaugeOptions {
     __obj.asInstanceOf[ArcGaugeOptions]
   }
   
-  extension [Self <: ArcGaugeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcGaugeOptions] (val x: Self) extends AnyVal {
     
     inline def setCenterTemplate(value: String | js.Function): Self = StObject.set(x, "centerTemplate", value.asInstanceOf[js.Any])
     

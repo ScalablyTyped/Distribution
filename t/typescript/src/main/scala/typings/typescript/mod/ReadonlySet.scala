@@ -29,7 +29,8 @@ object ReadonlySet {
     __obj.asInstanceOf[ReadonlySet[T]]
   }
   
-  extension [Self <: ReadonlySet[?], T](x: Self & ReadonlySet[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlySet[?], T] (val x: Self & ReadonlySet[T]) extends AnyVal {
     
     inline def setEntries(value: () => Iterator[js.Tuple2[T, T]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
     

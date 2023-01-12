@@ -43,7 +43,8 @@ object ASPxClientRichEditHyperlinkClickEventArgs {
     __obj.asInstanceOf[ASPxClientRichEditHyperlinkClickEventArgs]
   }
   
-  extension [Self <: ASPxClientRichEditHyperlinkClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRichEditHyperlinkClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     

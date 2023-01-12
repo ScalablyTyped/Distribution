@@ -51,7 +51,8 @@ object Mouse {
     __obj.asInstanceOf[Mouse]
   }
   
-  extension [Self <: Mouse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mouse] (val x: Self) extends AnyVal {
     
     inline def setClearQueue(value: () => Unit): Self = StObject.set(x, "clearQueue", js.Any.fromFunction0(value))
     

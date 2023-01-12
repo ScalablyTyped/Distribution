@@ -27,7 +27,8 @@ object libTypesMod {
       __obj.asInstanceOf[ReaderOptions]
     }
     
-    extension [Self <: ReaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReaderOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Cache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

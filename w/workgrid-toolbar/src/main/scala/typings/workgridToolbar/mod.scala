@@ -53,7 +53,8 @@ object mod {
       __obj.asInstanceOf[WorkgridToolbarOptions]
     }
     
-    extension [Self <: WorkgridToolbarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkgridToolbarOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthorizerUrl(value: String): Self = StObject.set(x, "authorizerUrl", value.asInstanceOf[js.Any])
       

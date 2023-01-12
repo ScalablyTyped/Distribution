@@ -27,7 +27,8 @@ object IEntityStartRidingEventData {
     __obj.asInstanceOf[IEntityStartRidingEventData]
   }
   
-  extension [Self <: IEntityStartRidingEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEntityStartRidingEventData] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

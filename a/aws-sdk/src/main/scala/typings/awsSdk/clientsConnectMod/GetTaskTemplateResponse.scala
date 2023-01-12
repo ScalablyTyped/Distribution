@@ -78,7 +78,8 @@ object GetTaskTemplateResponse {
     __obj.asInstanceOf[GetTaskTemplateResponse]
   }
   
-  extension [Self <: GetTaskTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTaskTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: TaskTemplateArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object BulkRecipientsRequest {
     __obj.asInstanceOf[BulkRecipientsRequest]
   }
   
-  extension [Self <: BulkRecipientsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkRecipientsRequest] (val x: Self) extends AnyVal {
     
     inline def setBulkRecipients(value: js.Array[BulkRecipient]): Self = StObject.set(x, "bulkRecipients", value.asInstanceOf[js.Any])
     

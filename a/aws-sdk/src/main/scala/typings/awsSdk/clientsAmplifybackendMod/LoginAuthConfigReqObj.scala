@@ -33,7 +33,8 @@ object LoginAuthConfigReqObj {
     __obj.asInstanceOf[LoginAuthConfigReqObj]
   }
   
-  extension [Self <: LoginAuthConfigReqObj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoginAuthConfigReqObj] (val x: Self) extends AnyVal {
     
     inline def setAwsCognitoIdentityPoolId(value: string): Self = StObject.set(x, "AwsCognitoIdentityPoolId", value.asInstanceOf[js.Any])
     

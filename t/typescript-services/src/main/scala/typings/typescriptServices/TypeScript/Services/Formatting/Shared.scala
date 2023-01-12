@@ -20,7 +20,8 @@ object Shared {
       __obj.asInstanceOf[ITokenAccess]
     }
     
-    extension [Self <: ITokenAccess](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITokenAccess] (val x: Self) extends AnyVal {
       
       inline def setContains(value: SyntaxKind => Boolean): Self = StObject.set(x, "Contains", js.Any.fromFunction1(value))
       
@@ -54,7 +55,8 @@ object Shared {
       __obj.asInstanceOf[TokenRange]
     }
     
-    extension [Self <: TokenRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenRange] (val x: Self) extends AnyVal {
       
       inline def setContains(value: SyntaxKind => Boolean): Self = StObject.set(x, "Contains", js.Any.fromFunction1(value))
       
@@ -77,7 +79,8 @@ object Shared {
       __obj.asInstanceOf[TokenRangeAccess]
     }
     
-    extension [Self <: TokenRangeAccess](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenRangeAccess] (val x: Self) extends AnyVal {
       
       inline def setTokens(value: Any): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     }
@@ -96,7 +99,8 @@ object Shared {
       __obj.asInstanceOf[TokenSingleValueAccess]
     }
     
-    extension [Self <: TokenSingleValueAccess](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenSingleValueAccess] (val x: Self) extends AnyVal {
       
       inline def setToken(value: SyntaxKind): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
@@ -115,7 +119,8 @@ object Shared {
       __obj.asInstanceOf[TokenValuesAccess]
     }
     
-    extension [Self <: TokenValuesAccess](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenValuesAccess] (val x: Self) extends AnyVal {
       
       inline def setTokens(value: Any): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     }

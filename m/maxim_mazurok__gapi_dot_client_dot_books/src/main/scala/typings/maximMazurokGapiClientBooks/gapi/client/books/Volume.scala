@@ -59,7 +59,8 @@ object Volume {
     __obj.asInstanceOf[Volume]
   }
   
-  extension [Self <: Volume](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Volume] (val x: Self) extends AnyVal {
     
     inline def setAccessInfo(value: AccessViewStatus): Self = StObject.set(x, "accessInfo", value.asInstanceOf[js.Any])
     

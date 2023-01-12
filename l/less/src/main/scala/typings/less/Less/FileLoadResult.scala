@@ -19,7 +19,8 @@ object FileLoadResult {
     __obj.asInstanceOf[FileLoadResult]
   }
   
-  extension [Self <: FileLoadResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileLoadResult] (val x: Self) extends AnyVal {
     
     inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

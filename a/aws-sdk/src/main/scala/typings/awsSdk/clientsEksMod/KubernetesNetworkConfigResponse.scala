@@ -28,7 +28,8 @@ object KubernetesNetworkConfigResponse {
     __obj.asInstanceOf[KubernetesNetworkConfigResponse]
   }
   
-  extension [Self <: KubernetesNetworkConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KubernetesNetworkConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setIpFamily(value: IpFamily): Self = StObject.set(x, "ipFamily", value.asInstanceOf[js.Any])
     

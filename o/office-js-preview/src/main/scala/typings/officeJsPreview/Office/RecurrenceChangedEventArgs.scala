@@ -31,7 +31,8 @@ object RecurrenceChangedEventArgs {
     __obj.asInstanceOf[RecurrenceChangedEventArgs]
   }
   
-  extension [Self <: RecurrenceChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecurrenceChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRecurrence(value: Recurrence): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
     

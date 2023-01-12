@@ -33,7 +33,8 @@ object esIntegrationGetStoredStateMigrateV4Mod {
       __obj.asInstanceOf[V4Config]
     }
     
-    extension [Self <: V4Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: V4Config] (val x: Self) extends AnyVal {
       
       inline def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object esIntegrationGetStoredStateMigrateV4Mod {
       __obj.asInstanceOf[V4Storage]
     }
     
-    extension [Self <: V4Storage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: V4Storage] (val x: Self) extends AnyVal {
       
       inline def setGetAllKeys(value: /* cb */ js.Function2[/* err */ Any, /* allKeys */ js.Array[String], Any] => Any): Self = StObject.set(x, "getAllKeys", js.Any.fromFunction1(value))
       

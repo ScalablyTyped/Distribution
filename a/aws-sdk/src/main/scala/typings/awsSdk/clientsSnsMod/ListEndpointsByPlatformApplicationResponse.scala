@@ -23,7 +23,8 @@ object ListEndpointsByPlatformApplicationResponse {
     __obj.asInstanceOf[ListEndpointsByPlatformApplicationResponse]
   }
   
-  extension [Self <: ListEndpointsByPlatformApplicationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEndpointsByPlatformApplicationResponse] (val x: Self) extends AnyVal {
     
     inline def setEndpoints(value: ListOfEndpoints): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
     

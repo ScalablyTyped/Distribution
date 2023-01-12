@@ -18,7 +18,8 @@ object Commid {
     __obj.asInstanceOf[Commid]
   }
   
-  extension [Self <: Commid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Commid] (val x: Self) extends AnyVal {
     
     inline def setComm_id(value: String): Self = StObject.set(x, "comm_id", value.asInstanceOf[js.Any])
     

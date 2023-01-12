@@ -22,7 +22,8 @@ object IMediaProtectionManager {
     __obj.asInstanceOf[IMediaProtectionManager]
   }
   
-  extension [Self <: IMediaProtectionManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMediaProtectionManager] (val x: Self) extends AnyVal {
     
     inline def setOncomponentloadfailed(value: Any): Self = StObject.set(x, "oncomponentloadfailed", value.asInstanceOf[js.Any])
     

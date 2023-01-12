@@ -39,7 +39,8 @@ object HeatmapLayerSpecification {
     __obj.asInstanceOf[HeatmapLayerSpecification]
   }
   
-  extension [Self <: HeatmapLayerSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeatmapLayerSpecification] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: FilterSpecification): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

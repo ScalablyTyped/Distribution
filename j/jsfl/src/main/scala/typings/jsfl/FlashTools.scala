@@ -53,7 +53,8 @@ object FlashTools {
     __obj.asInstanceOf[FlashTools]
   }
   
-  extension [Self <: FlashTools](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashTools] (val x: Self) extends AnyVal {
     
     inline def setActiveTool(value: Any): Self = StObject.set(x, "activeTool", value.asInstanceOf[js.Any])
     

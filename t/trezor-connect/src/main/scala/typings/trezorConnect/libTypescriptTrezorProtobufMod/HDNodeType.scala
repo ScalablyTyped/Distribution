@@ -25,7 +25,8 @@ object HDNodeType {
     __obj.asInstanceOf[HDNodeType]
   }
   
-  extension [Self <: HDNodeType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HDNodeType] (val x: Self) extends AnyVal {
     
     inline def setChain_code(value: String): Self = StObject.set(x, "chain_code", value.asInstanceOf[js.Any])
     

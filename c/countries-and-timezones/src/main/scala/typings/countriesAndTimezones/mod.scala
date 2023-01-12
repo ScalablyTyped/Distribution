@@ -54,7 +54,8 @@ object mod {
   }
   object Country {
     
-    extension [Self <: Country](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Country] (val x: Self) extends AnyVal {
       
       inline def setId(value: CountryCode): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -330,7 +331,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     }
@@ -368,7 +370,8 @@ object mod {
       __obj.asInstanceOf[Timezone]
     }
     
-    extension [Self <: Timezone](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timezone] (val x: Self) extends AnyVal {
       
       inline def setAliasOf(value: String): Self = StObject.set(x, "aliasOf", value.asInstanceOf[js.Any])
       

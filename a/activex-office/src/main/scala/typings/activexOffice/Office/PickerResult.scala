@@ -51,7 +51,8 @@ object PickerResult {
     __obj.asInstanceOf[PickerResult]
   }
   
-  extension [Self <: PickerResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickerResult] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

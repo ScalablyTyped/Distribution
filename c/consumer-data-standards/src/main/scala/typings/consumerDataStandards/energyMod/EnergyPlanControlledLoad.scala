@@ -50,7 +50,8 @@ object EnergyPlanControlledLoad {
     __obj.asInstanceOf[EnergyPlanControlledLoad]
   }
   
-  extension [Self <: EnergyPlanControlledLoad](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnergyPlanControlledLoad] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

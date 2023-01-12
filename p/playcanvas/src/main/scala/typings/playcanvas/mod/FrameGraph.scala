@@ -55,7 +55,8 @@ object FrameGraph {
     __obj.asInstanceOf[FrameGraph]
   }
   
-  extension [Self <: FrameGraph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameGraph] (val x: Self) extends AnyVal {
     
     inline def setAddRenderPass(value: RenderPass => Unit): Self = StObject.set(x, "addRenderPass", js.Any.fromFunction1(value))
     

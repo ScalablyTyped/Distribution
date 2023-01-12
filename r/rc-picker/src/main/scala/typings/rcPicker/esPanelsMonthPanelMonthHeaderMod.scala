@@ -46,7 +46,8 @@ object esPanelsMonthPanelMonthHeaderMod {
       __obj.asInstanceOf[MonthHeaderProps[DateType]]
     }
     
-    extension [Self <: MonthHeaderProps[?], DateType](x: Self & MonthHeaderProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonthHeaderProps[?], DateType] (val x: Self & MonthHeaderProps[DateType]) extends AnyVal {
       
       inline def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       

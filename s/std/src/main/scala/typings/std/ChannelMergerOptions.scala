@@ -18,7 +18,8 @@ object ChannelMergerOptions {
     __obj.asInstanceOf[ChannelMergerOptions]
   }
   
-  extension [Self <: ChannelMergerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelMergerOptions] (val x: Self) extends AnyVal {
     
     inline def setNumberOfInputs(value: Double): Self = StObject.set(x, "numberOfInputs", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DeleteExportResponse {
     __obj.asInstanceOf[DeleteExportResponse]
   }
   
-  extension [Self <: DeleteExportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteExportResponse] (val x: Self) extends AnyVal {
     
     inline def setExportId(value: Id): Self = StObject.set(x, "exportId", value.asInstanceOf[js.Any])
     

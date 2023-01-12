@@ -42,7 +42,8 @@ object typesUploadListElementMod {
       __obj.asInstanceOf[UploadListElement]
     }
     
-    extension [Self <: UploadListElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadListElement] (val x: Self) extends AnyVal {
       
       inline def setArchiveDescription(value: String): Self = StObject.set(x, "ArchiveDescription", value.asInstanceOf[js.Any])
       

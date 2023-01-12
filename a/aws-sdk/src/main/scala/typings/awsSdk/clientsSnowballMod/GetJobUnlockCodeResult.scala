@@ -18,7 +18,8 @@ object GetJobUnlockCodeResult {
     __obj.asInstanceOf[GetJobUnlockCodeResult]
   }
   
-  extension [Self <: GetJobUnlockCodeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetJobUnlockCodeResult] (val x: Self) extends AnyVal {
     
     inline def setUnlockCode(value: String): Self = StObject.set(x, "UnlockCode", value.asInstanceOf[js.Any])
     

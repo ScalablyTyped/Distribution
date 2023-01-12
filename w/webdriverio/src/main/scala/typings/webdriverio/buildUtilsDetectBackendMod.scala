@@ -46,7 +46,8 @@ object buildUtilsDetectBackendMod {
       __obj.asInstanceOf[BackendConfigurations]
     }
     
-    extension [Self <: BackendConfigurations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackendConfigurations] (val x: Self) extends AnyVal {
       
       inline def setCapabilities(value: RemoteCapabilities | RemoteCapability): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       

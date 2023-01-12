@@ -34,7 +34,8 @@ object ExtendedChain {
     __obj.asInstanceOf[ExtendedChain[T]]
   }
   
-  extension [Self <: ExtendedChain[?], T](x: Self & ExtendedChain[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendedChain[?], T] (val x: Self & ExtendedChain[T]) extends AnyVal {
     
     inline def setContains(value: Any => T): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     

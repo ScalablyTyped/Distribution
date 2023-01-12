@@ -65,7 +65,8 @@ object distUtilRamlValidateMod {
       __obj.asInstanceOf[ValidationResult]
     }
     
-    extension [Self <: ValidationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationResult] (val x: Self) extends AnyVal {
       
       inline def setAttr(value: Any): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object distUtilRamlValidateMod {
       __obj.asInstanceOf[ValidationsResult]
     }
     
-    extension [Self <: ValidationsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationsResult] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[ValidationResult]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       

@@ -48,7 +48,8 @@ object ListPartsOutput {
     __obj.asInstanceOf[ListPartsOutput]
   }
   
-  extension [Self <: ListPartsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPartsOutput] (val x: Self) extends AnyVal {
     
     inline def setArchiveDescription(value: String): Self = StObject.set(x, "ArchiveDescription", value.asInstanceOf[js.Any])
     

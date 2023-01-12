@@ -21,7 +21,8 @@ object ImageDescriptor {
     __obj.asInstanceOf[ImageDescriptor]
   }
   
-  extension [Self <: ImageDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageDescriptor] (val x: Self) extends AnyVal {
     
     inline def setImageClass(value: String): Self = StObject.set(x, "imageClass", value.asInstanceOf[js.Any])
     

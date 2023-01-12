@@ -24,7 +24,8 @@ object SubscriptionTaxAndComplianceSettings {
     __obj.asInstanceOf[SubscriptionTaxAndComplianceSettings]
   }
   
-  extension [Self <: SubscriptionTaxAndComplianceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionTaxAndComplianceSettings] (val x: Self) extends AnyVal {
     
     inline def setEeaWithdrawalRightType(value: String): Self = StObject.set(x, "eeaWithdrawalRightType", value.asInstanceOf[js.Any])
     

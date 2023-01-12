@@ -34,7 +34,8 @@ object TiledImageEventMap {
     __obj.asInstanceOf[TiledImageEventMap]
   }
   
-  extension [Self <: TiledImageEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TiledImageEventMap] (val x: Self) extends AnyVal {
     
     inline def `setBounds-change`(value: TiledImageEvent): Self = StObject.set(x, "bounds-change", value.asInstanceOf[js.Any])
     

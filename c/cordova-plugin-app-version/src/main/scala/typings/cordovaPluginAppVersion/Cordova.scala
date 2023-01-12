@@ -16,7 +16,8 @@ object Cordova {
     __obj.asInstanceOf[Cordova]
   }
   
-  extension [Self <: Cordova](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cordova] (val x: Self) extends AnyVal {
     
     inline def setGetAppVersion(value: GetAppName): Self = StObject.set(x, "getAppVersion", value.asInstanceOf[js.Any])
   }

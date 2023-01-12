@@ -52,7 +52,8 @@ object ContainerComponent {
     __obj.asInstanceOf[ContainerComponent]
   }
   
-  extension [Self <: ContainerComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerComponent] (val x: Self) extends AnyVal {
     
     inline def setAppendChild(value: HummerComponent => Unit): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     

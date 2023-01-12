@@ -74,7 +74,8 @@ object BuildStep {
     __obj.asInstanceOf[BuildStep]
   }
   
-  extension [Self <: BuildStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildStep] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

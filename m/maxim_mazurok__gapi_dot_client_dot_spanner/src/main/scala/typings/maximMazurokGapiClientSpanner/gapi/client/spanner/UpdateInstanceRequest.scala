@@ -22,7 +22,8 @@ object UpdateInstanceRequest {
     __obj.asInstanceOf[UpdateInstanceRequest]
   }
   
-  extension [Self <: UpdateInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setFieldMask(value: String): Self = StObject.set(x, "fieldMask", value.asInstanceOf[js.Any])
     

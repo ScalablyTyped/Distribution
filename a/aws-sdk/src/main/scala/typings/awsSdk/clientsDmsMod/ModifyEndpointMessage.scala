@@ -175,7 +175,8 @@ object ModifyEndpointMessage {
     __obj.asInstanceOf[ModifyEndpointMessage]
   }
   
-  extension [Self <: ModifyEndpointMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyEndpointMessage] (val x: Self) extends AnyVal {
     
     inline def setCertificateArn(value: String): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     

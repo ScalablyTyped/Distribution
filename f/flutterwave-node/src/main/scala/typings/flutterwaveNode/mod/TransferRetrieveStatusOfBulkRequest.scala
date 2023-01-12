@@ -15,7 +15,8 @@ object TransferRetrieveStatusOfBulkRequest {
     __obj.asInstanceOf[TransferRetrieveStatusOfBulkRequest]
   }
   
-  extension [Self <: TransferRetrieveStatusOfBulkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferRetrieveStatusOfBulkRequest] (val x: Self) extends AnyVal {
     
     inline def setBatch_id(value: String): Self = StObject.set(x, "batch_id", value.asInstanceOf[js.Any])
   }

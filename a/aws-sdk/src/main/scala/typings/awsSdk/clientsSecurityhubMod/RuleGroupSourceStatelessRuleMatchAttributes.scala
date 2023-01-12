@@ -43,7 +43,8 @@ object RuleGroupSourceStatelessRuleMatchAttributes {
     __obj.asInstanceOf[RuleGroupSourceStatelessRuleMatchAttributes]
   }
   
-  extension [Self <: RuleGroupSourceStatelessRuleMatchAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleGroupSourceStatelessRuleMatchAttributes] (val x: Self) extends AnyVal {
     
     inline def setDestinationPorts(value: RuleGroupSourceStatelessRuleMatchAttributesDestinationPortsList): Self = StObject.set(x, "DestinationPorts", value.asInstanceOf[js.Any])
     

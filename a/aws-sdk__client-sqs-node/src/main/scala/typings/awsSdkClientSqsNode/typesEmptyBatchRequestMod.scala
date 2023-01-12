@@ -25,7 +25,8 @@ object typesEmptyBatchRequestMod {
       __obj.asInstanceOf[EmptyBatchRequest]
     }
     
-    extension [Self <: EmptyBatchRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmptyBatchRequest] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.EmptyBatchRequest): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

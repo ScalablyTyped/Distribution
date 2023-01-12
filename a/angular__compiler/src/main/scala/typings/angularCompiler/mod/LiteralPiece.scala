@@ -19,7 +19,8 @@ object LiteralPiece {
     __obj.asInstanceOf[LiteralPiece]
   }
   
-  extension [Self <: LiteralPiece](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiteralPiece] (val x: Self) extends AnyVal {
     
     inline def setSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "sourceSpan", value.asInstanceOf[js.Any])
     

@@ -974,7 +974,8 @@ object distLiteMod {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -1002,7 +1003,8 @@ object distLiteMod {
       __obj.asInstanceOf[TransactionOptions]
     }
     
-    extension [Self <: TransactionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
       

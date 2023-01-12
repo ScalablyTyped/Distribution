@@ -20,7 +20,8 @@ object StartIndexStartKey {
     __obj.asInstanceOf[StartIndexStartKey[K]]
   }
   
-  extension [Self <: StartIndexStartKey[?], K](x: Self & StartIndexStartKey[K]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartIndexStartKey[?], K] (val x: Self & StartIndexStartKey[K]) extends AnyVal {
     
     inline def setStartIndex(value: ColumnNumber): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     

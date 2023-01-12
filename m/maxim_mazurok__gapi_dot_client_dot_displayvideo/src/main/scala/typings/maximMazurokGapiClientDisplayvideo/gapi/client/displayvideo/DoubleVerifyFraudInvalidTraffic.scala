@@ -19,7 +19,8 @@ object DoubleVerifyFraudInvalidTraffic {
     __obj.asInstanceOf[DoubleVerifyFraudInvalidTraffic]
   }
   
-  extension [Self <: DoubleVerifyFraudInvalidTraffic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoubleVerifyFraudInvalidTraffic] (val x: Self) extends AnyVal {
     
     inline def setAvoidInsufficientOption(value: Boolean): Self = StObject.set(x, "avoidInsufficientOption", value.asInstanceOf[js.Any])
     

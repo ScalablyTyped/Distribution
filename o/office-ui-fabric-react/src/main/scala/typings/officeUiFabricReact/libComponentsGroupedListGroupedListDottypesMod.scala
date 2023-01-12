@@ -131,7 +131,8 @@ object libComponentsGroupedListGroupedListDottypesMod {
       __obj.asInstanceOf[IGroup]
     }
     
-    extension [Self <: IGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroup] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -290,7 +291,8 @@ object libComponentsGroupedListGroupedListDottypesMod {
       __obj.asInstanceOf[IGroupDividerProps]
     }
     
-    extension [Self <: IGroupDividerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupDividerProps] (val x: Self) extends AnyVal {
       
       inline def setAriaColSpan(value: Double): Self = StObject.set(x, "ariaColSpan", value.asInstanceOf[js.Any])
       
@@ -485,7 +487,8 @@ object libComponentsGroupedListGroupedListDottypesMod {
       __obj.asInstanceOf[IGroupRenderProps]
     }
     
-    extension [Self <: IGroupRenderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupRenderProps] (val x: Self) extends AnyVal {
       
       inline def setCollapseAllVisibility(value: CollapseAllVisibility): Self = StObject.set(x, "collapseAllVisibility", value.asInstanceOf[js.Any])
       
@@ -674,7 +677,8 @@ object libComponentsGroupedListGroupedListDottypesMod {
       __obj.asInstanceOf[IGroupedListStyleProps]
     }
     
-    extension [Self <: IGroupedListStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupedListStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -707,7 +711,8 @@ object libComponentsGroupedListGroupedListDottypesMod {
       __obj.asInstanceOf[IGroupedListStyles]
     }
     
-    extension [Self <: IGroupedListStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupedListStyles] (val x: Self) extends AnyVal {
       
       inline def setGroup(value: IStyle): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       

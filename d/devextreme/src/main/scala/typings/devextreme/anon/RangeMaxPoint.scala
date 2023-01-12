@@ -23,7 +23,8 @@ object RangeMaxPoint {
     __obj.asInstanceOf[RangeMaxPoint]
   }
   
-  extension [Self <: RangeMaxPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeMaxPoint] (val x: Self) extends AnyVal {
     
     inline def setRangeMaxPoint(value: Double): Self = StObject.set(x, "rangeMaxPoint", value.asInstanceOf[js.Any])
     

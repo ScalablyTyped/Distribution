@@ -18,7 +18,8 @@ object ImportGameConfigurationResult {
     __obj.asInstanceOf[ImportGameConfigurationResult]
   }
   
-  extension [Self <: ImportGameConfigurationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportGameConfigurationResult] (val x: Self) extends AnyVal {
     
     inline def setGameConfiguration(value: GameConfigurationDetails): Self = StObject.set(x, "GameConfiguration", value.asInstanceOf[js.Any])
     

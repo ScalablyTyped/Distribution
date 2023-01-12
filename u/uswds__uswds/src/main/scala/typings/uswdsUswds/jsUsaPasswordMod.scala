@@ -25,7 +25,8 @@ object jsUsaPasswordMod extends Shortcut {
       __obj.asInstanceOf[Password]
     }
     
-    extension [Self <: Password](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Password] (val x: Self) extends AnyVal {
       
       inline def setOff(value: HTMLElement => Unit): Self = StObject.set(x, "off", js.Any.fromFunction1(value))
       

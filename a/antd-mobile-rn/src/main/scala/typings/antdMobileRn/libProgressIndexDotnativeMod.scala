@@ -67,7 +67,8 @@ object libProgressIndexDotnativeMod {
       __obj.asInstanceOf[ProgressProps]
     }
     
-    extension [Self <: ProgressProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressProps] (val x: Self) extends AnyVal {
       
       inline def setBarStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
       

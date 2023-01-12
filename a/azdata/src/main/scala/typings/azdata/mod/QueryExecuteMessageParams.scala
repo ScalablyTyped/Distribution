@@ -17,7 +17,8 @@ object QueryExecuteMessageParams {
     __obj.asInstanceOf[QueryExecuteMessageParams]
   }
   
-  extension [Self <: QueryExecuteMessageParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryExecuteMessageParams] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: IResultMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

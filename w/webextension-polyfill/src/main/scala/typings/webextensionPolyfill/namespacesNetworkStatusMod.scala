@@ -35,7 +35,8 @@ object namespacesNetworkStatusMod {
         __obj.asInstanceOf[NetworkLinkInfo]
       }
       
-      extension [Self <: NetworkLinkInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NetworkLinkInfo] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -116,7 +117,8 @@ object namespacesNetworkStatusMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setGetLinkInfo(value: () => Unit): Self = StObject.set(x, "getLinkInfo", js.Any.fromFunction0(value))
         

@@ -31,7 +31,8 @@ object RoomState {
     __obj.asInstanceOf[RoomState]
   }
   
-  extension [Self <: RoomState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoomState] (val x: Self) extends AnyVal {
     
     inline def `setBroadcaster-lang`(value: String): Self = StObject.set(x, "broadcaster-lang", value.asInstanceOf[js.Any])
     

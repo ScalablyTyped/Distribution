@@ -769,7 +769,8 @@ object localeDeDotjsonMod extends Shortcut {
       __obj.asInstanceOf[Locale]
     }
     
-    extension [Self <: Locale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
       
       inline def setAC(value: String): Self = StObject.set(x, "AC", value.asInstanceOf[js.Any])
       

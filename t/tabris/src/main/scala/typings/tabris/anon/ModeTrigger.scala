@@ -22,7 +22,8 @@ object ModeTrigger {
     __obj.asInstanceOf[ModeTrigger[Target]]
   }
   
-  extension [Self <: ModeTrigger[?], Target](x: Self & ModeTrigger[Target]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModeTrigger[?], Target] (val x: Self & ModeTrigger[Target]) extends AnyVal {
     
     inline def setMode(value: default | strict): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

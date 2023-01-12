@@ -18,7 +18,8 @@ object AwsApiCallActionDomainDetails {
     __obj.asInstanceOf[AwsApiCallActionDomainDetails]
   }
   
-  extension [Self <: AwsApiCallActionDomainDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsApiCallActionDomainDetails] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: NonEmptyString): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     

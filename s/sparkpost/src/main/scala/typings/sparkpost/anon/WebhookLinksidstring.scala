@@ -18,7 +18,8 @@ object WebhookLinksidstring {
     __obj.asInstanceOf[WebhookLinksidstring]
   }
   
-  extension [Self <: WebhookLinksidstring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebhookLinksidstring] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

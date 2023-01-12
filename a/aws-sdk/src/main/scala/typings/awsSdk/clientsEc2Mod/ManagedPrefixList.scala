@@ -63,7 +63,8 @@ object ManagedPrefixList {
     __obj.asInstanceOf[ManagedPrefixList]
   }
   
-  extension [Self <: ManagedPrefixList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedPrefixList] (val x: Self) extends AnyVal {
     
     inline def setAddressFamily(value: String): Self = StObject.set(x, "AddressFamily", value.asInstanceOf[js.Any])
     

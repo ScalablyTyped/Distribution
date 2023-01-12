@@ -62,7 +62,8 @@ object ParsedTemplate {
     __obj.asInstanceOf[ParsedTemplate]
   }
   
-  extension [Self <: ParsedTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedTemplate] (val x: Self) extends AnyVal {
     
     inline def setCommentNodes(value: js.Array[typings.std.Comment]): Self = StObject.set(x, "commentNodes", value.asInstanceOf[js.Any])
     

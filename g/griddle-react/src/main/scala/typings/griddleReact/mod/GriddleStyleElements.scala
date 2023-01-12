@@ -51,7 +51,8 @@ object GriddleStyleElements {
     __obj.asInstanceOf[GriddleStyleElements[T]]
   }
   
-  extension [Self <: GriddleStyleElements[?], T](x: Self & GriddleStyleElements[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GriddleStyleElements[?], T] (val x: Self & GriddleStyleElements[T]) extends AnyVal {
     
     inline def setCell(value: T): Self = StObject.set(x, "Cell", value.asInstanceOf[js.Any])
     

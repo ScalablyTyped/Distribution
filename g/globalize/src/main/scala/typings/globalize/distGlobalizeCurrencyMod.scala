@@ -63,7 +63,8 @@ object distGlobalizeCurrencyMod extends Shortcut {
         __obj.asInstanceOf[CurrencyFormatterOptions]
       }
       
-      extension [Self <: CurrencyFormatterOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CurrencyFormatterOptions] (val x: Self) extends AnyVal {
         
         inline def setStyle(value: symbol | accounting | code | name): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         

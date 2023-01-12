@@ -50,7 +50,8 @@ object PortalData {
     __obj.asInstanceOf[PortalData]
   }
   
-  extension [Self <: PortalData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortalData] (val x: Self) extends AnyVal {
     
     inline def setArtifactBrief(value: Fragment): Self = StObject.set(x, "artifactBrief", value.asInstanceOf[js.Any])
     

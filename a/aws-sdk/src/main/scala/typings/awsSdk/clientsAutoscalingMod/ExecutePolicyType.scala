@@ -38,7 +38,8 @@ object ExecutePolicyType {
     __obj.asInstanceOf[ExecutePolicyType]
   }
   
-  extension [Self <: ExecutePolicyType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutePolicyType] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     

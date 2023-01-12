@@ -18,7 +18,8 @@ object ListReceiptRuleSetsRequest {
     __obj.asInstanceOf[ListReceiptRuleSetsRequest]
   }
   
-  extension [Self <: ListReceiptRuleSetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListReceiptRuleSetsRequest] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

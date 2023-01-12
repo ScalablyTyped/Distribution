@@ -54,7 +54,8 @@ object SearchResponse {
     __obj.asInstanceOf[SearchResponse]
   }
   
-  extension [Self <: SearchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchResponse] (val x: Self) extends AnyVal {
     
     inline def setActiveSourceIndex(value: Double): Self = StObject.set(x, "activeSourceIndex", value.asInstanceOf[js.Any])
     

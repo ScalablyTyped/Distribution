@@ -53,7 +53,8 @@ object CreateSolutionRequest {
     __obj.asInstanceOf[CreateSolutionRequest]
   }
   
-  extension [Self <: CreateSolutionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSolutionRequest] (val x: Self) extends AnyVal {
     
     inline def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "datasetGroupArn", value.asInstanceOf[js.Any])
     

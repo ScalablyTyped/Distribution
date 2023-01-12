@@ -18,7 +18,8 @@ object AccountSeals {
     __obj.asInstanceOf[AccountSeals]
   }
   
-  extension [Self <: AccountSeals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountSeals] (val x: Self) extends AnyVal {
     
     inline def setSeals(value: js.Array[SealIdentifier]): Self = StObject.set(x, "seals", value.asInstanceOf[js.Any])
     

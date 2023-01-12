@@ -236,7 +236,8 @@ object PageLayoutData {
     __obj.asInstanceOf[PageLayoutData]
   }
   
-  extension [Self <: PageLayoutData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageLayoutData] (val x: Self) extends AnyVal {
     
     inline def setBlackAndWhite(value: Boolean): Self = StObject.set(x, "blackAndWhite", value.asInstanceOf[js.Any])
     

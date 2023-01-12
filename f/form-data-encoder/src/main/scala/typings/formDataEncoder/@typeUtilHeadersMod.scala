@@ -23,7 +23,8 @@ object `@typeUtilHeadersMod` {
       __obj.asInstanceOf[FormDataEncoderHeaders]
     }
     
-    extension [Self <: FormDataEncoderHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormDataEncoderHeaders] (val x: Self) extends AnyVal {
       
       inline def `setContent-length`(value: String): Self = StObject.set(x, "content-length", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object `@typeUtilHeadersMod` {
       __obj.asInstanceOf[RawHeaders]
     }
     
-    extension [Self <: RawHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawHeaders] (val x: Self) extends AnyVal {
       
       inline def `setContent-Length`(value: String): Self = StObject.set(x, "Content-Length", value.asInstanceOf[js.Any])
       

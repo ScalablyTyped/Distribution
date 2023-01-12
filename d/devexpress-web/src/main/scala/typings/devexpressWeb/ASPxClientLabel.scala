@@ -54,7 +54,8 @@ object ASPxClientLabel {
     __obj.asInstanceOf[ASPxClientLabel]
   }
   
-  extension [Self <: ASPxClientLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientLabel] (val x: Self) extends AnyVal {
     
     inline def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
     

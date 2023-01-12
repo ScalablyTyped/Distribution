@@ -505,7 +505,8 @@ object PartialTableCellProps {
     __obj.asInstanceOf[PartialTableCellProps]
   }
   
-  extension [Self <: PartialTableCellProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTableCellProps] (val x: Self) extends AnyVal {
     
     inline def setAbbr(value: String): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
     

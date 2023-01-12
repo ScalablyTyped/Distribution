@@ -27,7 +27,8 @@ object distModifiersMod {
       __obj.asInstanceOf[Modifiers]
     }
     
-    extension [Self <: Modifiers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Modifiers] (val x: Self) extends AnyVal {
       
       inline def setOptional(value: KinkeyofPredicatesOptiona): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     }

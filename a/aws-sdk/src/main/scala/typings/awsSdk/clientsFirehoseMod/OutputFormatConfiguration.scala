@@ -18,7 +18,8 @@ object OutputFormatConfiguration {
     __obj.asInstanceOf[OutputFormatConfiguration]
   }
   
-  extension [Self <: OutputFormatConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputFormatConfiguration] (val x: Self) extends AnyVal {
     
     inline def setSerializer(value: Serializer): Self = StObject.set(x, "Serializer", value.asInstanceOf[js.Any])
     

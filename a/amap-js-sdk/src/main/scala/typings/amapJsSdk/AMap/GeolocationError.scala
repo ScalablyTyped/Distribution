@@ -15,7 +15,8 @@ object GeolocationError {
     __obj.asInstanceOf[GeolocationError]
   }
   
-  extension [Self <: GeolocationError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeolocationError] (val x: Self) extends AnyVal {
     
     inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
   }

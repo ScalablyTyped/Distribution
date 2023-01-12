@@ -17,7 +17,8 @@ object MailboxLockObject {
     __obj.asInstanceOf[MailboxLockObject]
   }
   
-  extension [Self <: MailboxLockObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailboxLockObject] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

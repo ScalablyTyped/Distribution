@@ -48,7 +48,8 @@ object VolumeDetail {
     __obj.asInstanceOf[VolumeDetail]
   }
   
-  extension [Self <: VolumeDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeDetail] (val x: Self) extends AnyVal {
     
     inline def setDeviceName(value: String): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
     

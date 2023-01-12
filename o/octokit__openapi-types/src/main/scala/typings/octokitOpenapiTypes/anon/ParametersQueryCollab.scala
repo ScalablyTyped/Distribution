@@ -17,7 +17,8 @@ object ParametersQueryCollab {
     __obj.asInstanceOf[ParametersQueryCollab]
   }
   
-  extension [Self <: ParametersQueryCollab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersQueryCollab] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: QueryCollab): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

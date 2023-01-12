@@ -22,7 +22,8 @@ object UiCanGetVisibleElement {
     __obj.asInstanceOf[UiCanGetVisibleElement]
   }
   
-  extension [Self <: UiCanGetVisibleElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UiCanGetVisibleElement] (val x: Self) extends AnyVal {
     
     inline def setGetVisible(value: () => Boolean): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
   }

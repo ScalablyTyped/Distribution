@@ -440,7 +440,8 @@ object XEnhancedCustomShapeDefaulter {
     __obj.asInstanceOf[XEnhancedCustomShapeDefaulter]
   }
   
-  extension [Self <: XEnhancedCustomShapeDefaulter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEnhancedCustomShapeDefaulter] (val x: Self) extends AnyVal {
     
     inline def setCreateCustomShapeDefaults(value: String => Unit): Self = StObject.set(x, "createCustomShapeDefaults", js.Any.fromFunction1(value))
   }

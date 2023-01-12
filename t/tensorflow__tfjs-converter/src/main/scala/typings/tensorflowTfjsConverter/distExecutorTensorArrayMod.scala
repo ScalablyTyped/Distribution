@@ -131,7 +131,8 @@ object distExecutorTensorArrayMod {
       __obj.asInstanceOf[TensorWithState]
     }
     
-    extension [Self <: TensorWithState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TensorWithState] (val x: Self) extends AnyVal {
       
       inline def setCleared(value: Boolean): Self = StObject.set(x, "cleared", value.asInstanceOf[js.Any])
       

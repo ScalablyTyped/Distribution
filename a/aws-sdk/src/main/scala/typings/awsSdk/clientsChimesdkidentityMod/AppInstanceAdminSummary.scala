@@ -18,7 +18,8 @@ object AppInstanceAdminSummary {
     __obj.asInstanceOf[AppInstanceAdminSummary]
   }
   
-  extension [Self <: AppInstanceAdminSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppInstanceAdminSummary] (val x: Self) extends AnyVal {
     
     inline def setAdmin(value: Identity): Self = StObject.set(x, "Admin", value.asInstanceOf[js.Any])
     

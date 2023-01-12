@@ -17,7 +17,8 @@ object ListCollectionFieldsResponse {
     __obj.asInstanceOf[ListCollectionFieldsResponse]
   }
   
-  extension [Self <: ListCollectionFieldsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCollectionFieldsResponse] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

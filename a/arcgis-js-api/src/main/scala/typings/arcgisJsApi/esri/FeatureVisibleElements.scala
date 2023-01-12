@@ -34,7 +34,8 @@ object FeatureVisibleElements {
     __obj.asInstanceOf[FeatureVisibleElements]
   }
   
-  extension [Self <: FeatureVisibleElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureVisibleElements] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Boolean | VisibleContentElements): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

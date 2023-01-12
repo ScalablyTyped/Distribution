@@ -21,7 +21,8 @@ object MoveEndEvent {
     __obj.asInstanceOf[MoveEndEvent]
   }
   
-  extension [Self <: MoveEndEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveEndEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: moveend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object Exclusion {
     __obj.asInstanceOf[Exclusion]
   }
   
-  extension [Self <: Exclusion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Exclusion] (val x: Self) extends AnyVal {
     
     inline def setExclusion(value: scala.Double): Self = StObject.set(x, "exclusion", value.asInstanceOf[js.Any])
     

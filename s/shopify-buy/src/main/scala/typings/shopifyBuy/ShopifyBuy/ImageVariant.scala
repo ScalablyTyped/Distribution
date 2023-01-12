@@ -37,7 +37,8 @@ object ImageVariant {
     __obj.asInstanceOf[ImageVariant]
   }
   
-  extension [Self <: ImageVariant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageVariant] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: String): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object NodesSerializedClusterStateDetail {
     __obj.asInstanceOf[NodesSerializedClusterStateDetail]
   }
   
-  extension [Self <: NodesSerializedClusterStateDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesSerializedClusterStateDetail] (val x: Self) extends AnyVal {
     
     inline def setCompressed_size(value: String): Self = StObject.set(x, "compressed_size", value.asInstanceOf[js.Any])
     

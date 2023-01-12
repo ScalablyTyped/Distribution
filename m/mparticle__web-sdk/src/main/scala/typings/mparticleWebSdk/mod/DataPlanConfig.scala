@@ -17,7 +17,8 @@ object DataPlanConfig {
     __obj.asInstanceOf[DataPlanConfig]
   }
   
-  extension [Self <: DataPlanConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPlanConfig] (val x: Self) extends AnyVal {
     
     inline def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
     

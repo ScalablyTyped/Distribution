@@ -19,7 +19,8 @@ object SearchContactsParameters {
     __obj.asInstanceOf[SearchContactsParameters]
   }
   
-  extension [Self <: SearchContactsParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchContactsParameters] (val x: Self) extends AnyVal {
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

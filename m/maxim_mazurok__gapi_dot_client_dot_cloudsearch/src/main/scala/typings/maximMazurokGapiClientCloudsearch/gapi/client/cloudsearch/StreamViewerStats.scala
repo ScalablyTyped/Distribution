@@ -16,7 +16,8 @@ object StreamViewerStats {
     __obj.asInstanceOf[StreamViewerStats]
   }
   
-  extension [Self <: StreamViewerStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamViewerStats] (val x: Self) extends AnyVal {
     
     inline def setEstimatedViewerCount(value: String): Self = StObject.set(x, "estimatedViewerCount", value.asInstanceOf[js.Any])
     

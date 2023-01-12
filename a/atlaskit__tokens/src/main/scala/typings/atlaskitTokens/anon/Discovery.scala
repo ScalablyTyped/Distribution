@@ -50,7 +50,8 @@ object Discovery {
     __obj.asInstanceOf[Discovery]
   }
   
-  extension [Self <: Discovery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Discovery] (val x: Self) extends AnyVal {
     
     inline def setBrand(value: PaintToken[BaseToken]): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     

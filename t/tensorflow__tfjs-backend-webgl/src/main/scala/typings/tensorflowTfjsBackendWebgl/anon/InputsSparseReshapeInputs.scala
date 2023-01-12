@@ -19,7 +19,8 @@ object InputsSparseReshapeInputs {
     __obj.asInstanceOf[InputsSparseReshapeInputs]
   }
   
-  extension [Self <: InputsSparseReshapeInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputsSparseReshapeInputs] (val x: Self) extends AnyVal {
     
     inline def setBackend(value: MathBackendWebGL): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     

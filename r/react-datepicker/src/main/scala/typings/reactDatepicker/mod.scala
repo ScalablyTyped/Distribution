@@ -90,7 +90,8 @@ object mod {
       __obj.asInstanceOf[CalendarContainerProps]
     }
     
-    extension [Self <: CalendarContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarContainerProps] (val x: Self) extends AnyVal {
       
       inline def setArrowProps(value: StringDictionary[Any]): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
       
@@ -163,7 +164,8 @@ object mod {
       __obj.asInstanceOf[ReactDatePickerCustomHeaderProps]
     }
     
-    extension [Self <: ReactDatePickerCustomHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactDatePickerCustomHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setChangeMonth(value: Double => Unit): Self = StObject.set(x, "changeMonth", js.Any.fromFunction1(value))
       

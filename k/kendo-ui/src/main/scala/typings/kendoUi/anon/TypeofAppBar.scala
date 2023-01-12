@@ -20,7 +20,8 @@ object TypeofAppBar {
     __obj.asInstanceOf[TypeofAppBar]
   }
   
-  extension [Self <: TypeofAppBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofAppBar] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => AppBar): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

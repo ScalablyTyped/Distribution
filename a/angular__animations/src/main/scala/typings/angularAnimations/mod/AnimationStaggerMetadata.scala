@@ -30,7 +30,8 @@ object AnimationStaggerMetadata {
     __obj.asInstanceOf[AnimationStaggerMetadata]
   }
   
-  extension [Self <: AnimationStaggerMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationStaggerMetadata] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: AnimationMetadata | js.Array[AnimationMetadata]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

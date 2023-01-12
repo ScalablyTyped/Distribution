@@ -25,7 +25,8 @@ object distCjsTypesMod {
       __obj.asInstanceOf[BaseSignOptions]
     }
     
-    extension [Self <: BaseSignOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseSignOptions] (val x: Self) extends AnyVal {
       
       inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object distCjsTypesMod {
       __obj.asInstanceOf[FlatOptions]
     }
     
-    extension [Self <: FlatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlatOptions] (val x: Self) extends AnyVal {
       
       inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object distCjsTypesMod {
       __obj.asInstanceOf[OnlyFlatOptions]
     }
     
-    extension [Self <: OnlyFlatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnlyFlatOptions] (val x: Self) extends AnyVal {
       
       inline def setIdentityValidation(value: Boolean): Self = StObject.set(x, "identityValidation", value.asInstanceOf[js.Any])
       
@@ -181,7 +184,8 @@ object distCjsTypesMod {
       __obj.asInstanceOf[OnlySignOptions]
     }
     
-    extension [Self <: OnlySignOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnlySignOptions] (val x: Self) extends AnyVal {
       
       inline def setBinaries(value: js.Array[String]): Self = StObject.set(x, "binaries", value.asInstanceOf[js.Any])
       
@@ -242,7 +246,8 @@ object distCjsTypesMod {
       __obj.asInstanceOf[OnlyValidatedBaseSignOptions]
     }
     
-    extension [Self <: OnlyValidatedBaseSignOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnlyValidatedBaseSignOptions] (val x: Self) extends AnyVal {
       
       inline def setPlatform(value: ElectronMacPlatform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     }
@@ -261,7 +266,8 @@ object distCjsTypesMod {
       __obj.asInstanceOf[OnlyValidatedFlatOptions]
     }
     
-    extension [Self <: OnlyValidatedFlatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnlyValidatedFlatOptions] (val x: Self) extends AnyVal {
       
       inline def setInstall(value: String): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
       
@@ -283,7 +289,8 @@ object distCjsTypesMod {
       __obj.asInstanceOf[OnlyValidatedSignOptions]
     }
     
-    extension [Self <: OnlyValidatedSignOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnlyValidatedSignOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnore(value: js.Array[String | (js.Function1[/* file */ String, Boolean])]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
@@ -332,7 +339,8 @@ object distCjsTypesMod {
       __obj.asInstanceOf[PerFileSignOptions]
     }
     
-    extension [Self <: PerFileSignOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerFileSignOptions] (val x: Self) extends AnyVal {
       
       inline def setEntitlements(value: String | js.Array[String]): Self = StObject.set(x, "entitlements", value.asInstanceOf[js.Any])
       
@@ -398,7 +406,8 @@ object distCjsTypesMod {
       __obj.asInstanceOf[SignOptions]
     }
     
-    extension [Self <: SignOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignOptions] (val x: Self) extends AnyVal {
       
       inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -492,7 +501,8 @@ object distCjsTypesMod {
       __obj.asInstanceOf[ValidatedBaseSignOptions]
     }
     
-    extension [Self <: ValidatedBaseSignOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidatedBaseSignOptions] (val x: Self) extends AnyVal {
       
       inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -534,7 +544,8 @@ object distCjsTypesMod {
       __obj.asInstanceOf[ValidatedFlatOptions]
     }
     
-    extension [Self <: ValidatedFlatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidatedFlatOptions] (val x: Self) extends AnyVal {
       
       inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -603,7 +614,8 @@ object distCjsTypesMod {
       __obj.asInstanceOf[ValidatedSignOptions]
     }
     
-    extension [Self <: ValidatedSignOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidatedSignOptions] (val x: Self) extends AnyVal {
       
       inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       

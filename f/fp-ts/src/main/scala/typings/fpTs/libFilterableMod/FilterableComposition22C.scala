@@ -64,7 +64,8 @@ object FilterableComposition22C {
     __obj.asInstanceOf[FilterableComposition22C[F, G, E]]
   }
   
-  extension [Self <: FilterableComposition22C[?, ?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (FilterableComposition22C[F, G, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterableComposition22C[?, ?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (FilterableComposition22C[F, G, E])) extends AnyVal {
     
     inline def setFilter(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, E, A>> */ Any, Predicate[Any]) => Any

@@ -37,7 +37,8 @@ object TwoInitialCapsExceptions {
     __obj.asInstanceOf[TwoInitialCapsExceptions]
   }
   
-  extension [Self <: TwoInitialCapsExceptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TwoInitialCapsExceptions] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: String => TwoInitialCapsException): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     

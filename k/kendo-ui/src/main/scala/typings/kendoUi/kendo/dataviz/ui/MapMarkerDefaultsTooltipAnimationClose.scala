@@ -17,7 +17,8 @@ object MapMarkerDefaultsTooltipAnimationClose {
     __obj.asInstanceOf[MapMarkerDefaultsTooltipAnimationClose]
   }
   
-  extension [Self <: MapMarkerDefaultsTooltipAnimationClose](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapMarkerDefaultsTooltipAnimationClose] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

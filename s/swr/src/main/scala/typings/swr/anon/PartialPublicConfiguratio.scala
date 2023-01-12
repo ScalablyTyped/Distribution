@@ -107,7 +107,8 @@ object PartialPublicConfiguratio {
     __obj.asInstanceOf[PartialPublicConfiguratio]
   }
   
-  extension [Self <: PartialPublicConfiguratio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPublicConfiguratio] (val x: Self) extends AnyVal {
     
     inline def setCompare(value: (/* a */ js.UndefOr[Any], /* b */ js.UndefOr[Any]) => Boolean): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
     

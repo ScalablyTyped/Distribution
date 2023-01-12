@@ -28,7 +28,8 @@ object AcceleratorTypeOffering {
     __obj.asInstanceOf[AcceleratorTypeOffering]
   }
   
-  extension [Self <: AcceleratorTypeOffering](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceleratorTypeOffering] (val x: Self) extends AnyVal {
     
     inline def setAcceleratorType(value: AcceleratorTypeName): Self = StObject.set(x, "acceleratorType", value.asInstanceOf[js.Any])
     

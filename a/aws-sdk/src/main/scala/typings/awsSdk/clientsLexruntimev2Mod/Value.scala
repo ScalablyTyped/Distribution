@@ -28,7 +28,8 @@ object Value {
     __obj.asInstanceOf[Value]
   }
   
-  extension [Self <: Value](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
     
     inline def setInterpretedValue(value: NonEmptyString): Self = StObject.set(x, "interpretedValue", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SelectionOptions {
     __obj.asInstanceOf[SelectionOptions]
   }
   
-  extension [Self <: SelectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionOptions] (val x: Self) extends AnyVal {
     
     inline def setHighlightEdges(value: Boolean): Self = StObject.set(x, "highlightEdges", value.asInstanceOf[js.Any])
     

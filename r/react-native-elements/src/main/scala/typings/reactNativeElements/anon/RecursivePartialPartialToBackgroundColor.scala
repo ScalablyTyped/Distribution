@@ -71,7 +71,8 @@ object RecursivePartialPartialToBackgroundColor {
     __obj.asInstanceOf[RecursivePartialPartialToBackgroundColor]
   }
   
-  extension [Self <: RecursivePartialPartialToBackgroundColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecursivePartialPartialToBackgroundColor] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: RecursivePartial[js.UndefOr[ColorValue]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object AbortMultipartUploadOutput {
     __obj.asInstanceOf[AbortMultipartUploadOutput]
   }
   
-  extension [Self <: AbortMultipartUploadOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbortMultipartUploadOutput] (val x: Self) extends AnyVal {
     
     inline def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
     

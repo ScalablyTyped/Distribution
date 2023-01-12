@@ -18,7 +18,8 @@ object PickParallaxdestroy {
     __obj.asInstanceOf[PickParallaxdestroy]
   }
   
-  extension [Self <: PickParallaxdestroy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickParallaxdestroy] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
   }

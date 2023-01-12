@@ -81,7 +81,8 @@ object IDiffEditorBaseOptions {
     __obj.asInstanceOf[IDiffEditorBaseOptions]
   }
   
-  extension [Self <: IDiffEditorBaseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDiffEditorBaseOptions] (val x: Self) extends AnyVal {
     
     inline def setDiffCodeLens(value: Boolean): Self = StObject.set(x, "diffCodeLens", value.asInstanceOf[js.Any])
     

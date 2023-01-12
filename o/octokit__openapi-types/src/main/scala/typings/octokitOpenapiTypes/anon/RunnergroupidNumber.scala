@@ -21,7 +21,8 @@ object RunnergroupidNumber {
     __obj.asInstanceOf[RunnergroupidNumber]
   }
   
-  extension [Self <: RunnergroupidNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunnergroupidNumber] (val x: Self) extends AnyVal {
     
     inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     

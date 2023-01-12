@@ -63,7 +63,8 @@ object DurandalActivatorSettings {
     __obj.asInstanceOf[DurandalActivatorSettings]
   }
   
-  extension [Self <: DurandalActivatorSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DurandalActivatorSettings] (val x: Self) extends AnyVal {
     
     inline def setAffirmations(value: js.Array[String]): Self = StObject.set(x, "affirmations", value.asInstanceOf[js.Any])
     

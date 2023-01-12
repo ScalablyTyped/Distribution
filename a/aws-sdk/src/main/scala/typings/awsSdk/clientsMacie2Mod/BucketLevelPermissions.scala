@@ -28,7 +28,8 @@ object BucketLevelPermissions {
     __obj.asInstanceOf[BucketLevelPermissions]
   }
   
-  extension [Self <: BucketLevelPermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketLevelPermissions] (val x: Self) extends AnyVal {
     
     inline def setAccessControlList(value: AccessControlList): Self = StObject.set(x, "accessControlList", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object SelectionRange {
     __obj.asInstanceOf[SelectionRange]
   }
   
-  extension [Self <: SelectionRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionRange] (val x: Self) extends AnyVal {
     
     inline def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }

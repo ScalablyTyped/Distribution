@@ -51,7 +51,8 @@ object ojDiagramLinkSettableProperties {
     __obj.asInstanceOf[ojDiagramLinkSettableProperties]
   }
   
-  extension [Self <: ojDiagramLinkSettableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojDiagramLinkSettableProperties] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

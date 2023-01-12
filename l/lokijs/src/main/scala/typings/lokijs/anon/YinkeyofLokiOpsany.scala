@@ -113,7 +113,8 @@ object YinkeyofLokiOpsany {
     __obj.asInstanceOf[YinkeyofLokiOpsany]
   }
   
-  extension [Self <: YinkeyofLokiOpsany](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YinkeyofLokiOpsany] (val x: Self) extends AnyVal {
     
     inline def set$aeq(value: Any): Self = StObject.set(x, "$aeq", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object TimedTextLine {
     __obj.asInstanceOf[TimedTextLine]
   }
   
-  extension [Self <: TimedTextLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimedTextLine] (val x: Self) extends AnyVal {
     
     inline def setSubformats(value: IVector[TimedTextSubformat]): Self = StObject.set(x, "subformats", value.asInstanceOf[js.Any])
     

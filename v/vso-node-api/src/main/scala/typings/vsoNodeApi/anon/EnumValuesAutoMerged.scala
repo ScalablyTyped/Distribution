@@ -15,7 +15,8 @@ object EnumValuesAutoMerged {
     __obj.asInstanceOf[EnumValuesAutoMerged]
   }
   
-  extension [Self <: EnumValuesAutoMerged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesAutoMerged] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: AutoMerged): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

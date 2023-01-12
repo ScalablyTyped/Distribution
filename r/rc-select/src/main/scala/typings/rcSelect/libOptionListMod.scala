@@ -36,7 +36,8 @@ object libOptionListMod extends Shortcut {
       __obj.asInstanceOf[RefOptionListProps]
     }
     
-    extension [Self <: RefOptionListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefOptionListProps] (val x: Self) extends AnyVal {
       
       inline def setOnKeyDown(value: KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       

@@ -38,7 +38,8 @@ object MinimalEventProps {
     __obj.asInstanceOf[MinimalEventProps]
   }
   
-  extension [Self <: MinimalEventProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinimalEventProps] (val x: Self) extends AnyVal {
     
     inline def setIsDateSelecting(value: Boolean): Self = StObject.set(x, "isDateSelecting", value.asInstanceOf[js.Any])
     

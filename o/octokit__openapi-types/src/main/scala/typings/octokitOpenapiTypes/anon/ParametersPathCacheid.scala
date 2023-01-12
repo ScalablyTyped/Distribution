@@ -15,7 +15,8 @@ object ParametersPathCacheid {
     __obj.asInstanceOf[ParametersPathCacheid]
   }
   
-  extension [Self <: ParametersPathCacheid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersPathCacheid] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathCacheid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
   }

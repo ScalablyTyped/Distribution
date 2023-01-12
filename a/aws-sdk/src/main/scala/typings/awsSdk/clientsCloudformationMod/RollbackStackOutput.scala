@@ -18,7 +18,8 @@ object RollbackStackOutput {
     __obj.asInstanceOf[RollbackStackOutput]
   }
   
-  extension [Self <: RollbackStackOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollbackStackOutput] (val x: Self) extends AnyVal {
     
     inline def setStackId(value: StackId): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     

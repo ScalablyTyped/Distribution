@@ -17,7 +17,8 @@ object ParametersPathHookidOwnerRepoQueryCursorPerpage {
     __obj.asInstanceOf[ParametersPathHookidOwnerRepoQueryCursorPerpage]
   }
   
-  extension [Self <: ParametersPathHookidOwnerRepoQueryCursorPerpage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersPathHookidOwnerRepoQueryCursorPerpage] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathHookidOwnerRepoQueryCursorPerpage): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

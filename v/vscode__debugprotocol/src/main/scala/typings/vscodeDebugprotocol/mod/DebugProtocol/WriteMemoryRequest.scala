@@ -32,7 +32,8 @@ object WriteMemoryRequest {
     __obj.asInstanceOf[WriteMemoryRequest]
   }
   
-  extension [Self <: WriteMemoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteMemoryRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: WriteMemoryArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

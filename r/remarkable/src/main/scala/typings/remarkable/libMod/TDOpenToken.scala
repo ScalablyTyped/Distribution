@@ -21,7 +21,8 @@ object TDOpenToken {
     __obj.asInstanceOf[TDOpenToken]
   }
   
-  extension [Self <: TDOpenToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TDOpenToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: td_open): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

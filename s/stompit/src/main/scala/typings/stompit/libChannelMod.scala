@@ -126,7 +126,8 @@ object libChannelMod {
       __obj.asInstanceOf[ChannelOptions]
     }
     
-    extension [Self <: ChannelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelOptions] (val x: Self) extends AnyVal {
       
       inline def setAlwaysConnected(value: Boolean): Self = StObject.set(x, "alwaysConnected", value.asInstanceOf[js.Any])
       
@@ -151,7 +152,8 @@ object libChannelMod {
       __obj.asInstanceOf[ChannelSubscription]
     }
     
-    extension [Self <: ChannelSubscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelSubscription] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       

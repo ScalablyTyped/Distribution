@@ -493,7 +493,8 @@ object fieldsetFieldsetMod {
       __obj.asInstanceOf[FieldsetProps]
     }
     
-    extension [Self <: FieldsetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldsetProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1250,7 +1251,8 @@ object fieldsetFieldsetMod {
       __obj.asInstanceOf[FieldsetToggleParams]
     }
     
-    extension [Self <: FieldsetToggleParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldsetToggleParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: MouseEvent[HTMLElement, NativeMouseEvent]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       

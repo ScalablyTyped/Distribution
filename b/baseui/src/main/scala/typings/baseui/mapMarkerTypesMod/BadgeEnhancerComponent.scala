@@ -21,7 +21,8 @@ object BadgeEnhancerComponent {
     __obj.asInstanceOf[BadgeEnhancerComponent]
   }
   
-  extension [Self <: BadgeEnhancerComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BadgeEnhancerComponent] (val x: Self) extends AnyVal {
     
     inline def setMarkerType(value: PinHead): Self = StObject.set(x, "markerType", value.asInstanceOf[js.Any])
     

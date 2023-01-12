@@ -36,7 +36,8 @@ object ClippingPlanes {
     __obj.asInstanceOf[ClippingPlanes]
   }
   
-  extension [Self <: ClippingPlanes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClippingPlanes] (val x: Self) extends AnyVal {
     
     inline def setClippingPlanes(value: ClippingPlaneCollection): Self = StObject.set(x, "clippingPlanes", value.asInstanceOf[js.Any])
     

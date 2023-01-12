@@ -50,7 +50,8 @@ object Gamepad {
     __obj.asInstanceOf[Gamepad]
   }
   
-  extension [Self <: Gamepad](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gamepad] (val x: Self) extends AnyVal {
     
     inline def setAxes(value: js.Array[Double]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
     

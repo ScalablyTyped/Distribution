@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[FrameComponentProps]
     }
     
-    extension [Self <: FrameComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameComponentProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object mod {
       __obj.asInstanceOf[FrameContextProps]
     }
     
-    extension [Self <: FrameContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameContextProps] (val x: Self) extends AnyVal {
       
       inline def setDocument(value: HTMLDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       

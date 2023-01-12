@@ -42,7 +42,8 @@ object EquationNumbers {
     __obj.asInstanceOf[EquationNumbers]
   }
   
-  extension [Self <: EquationNumbers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EquationNumbers] (val x: Self) extends AnyVal {
     
     inline def setAutoNumber(value: String): Self = StObject.set(x, "autoNumber", value.asInstanceOf[js.Any])
     

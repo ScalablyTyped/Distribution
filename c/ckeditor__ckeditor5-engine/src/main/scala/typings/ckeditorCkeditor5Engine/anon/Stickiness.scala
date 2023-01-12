@@ -25,7 +25,8 @@ object Stickiness {
     __obj.asInstanceOf[Stickiness]
   }
   
-  extension [Self <: Stickiness](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stickiness] (val x: Self) extends AnyVal {
     
     inline def setPath(value: js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

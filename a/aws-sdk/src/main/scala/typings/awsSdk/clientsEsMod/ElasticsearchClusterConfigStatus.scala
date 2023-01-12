@@ -23,7 +23,8 @@ object ElasticsearchClusterConfigStatus {
     __obj.asInstanceOf[ElasticsearchClusterConfigStatus]
   }
   
-  extension [Self <: ElasticsearchClusterConfigStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElasticsearchClusterConfigStatus] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: ElasticsearchClusterConfig): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     

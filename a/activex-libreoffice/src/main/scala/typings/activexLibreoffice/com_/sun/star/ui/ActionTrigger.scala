@@ -35,7 +35,8 @@ object ActionTrigger {
     __obj.asInstanceOf[ActionTrigger]
   }
   
-  extension [Self <: ActionTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionTrigger] (val x: Self) extends AnyVal {
     
     inline def setCommandURL(value: String): Self = StObject.set(x, "CommandURL", value.asInstanceOf[js.Any])
     

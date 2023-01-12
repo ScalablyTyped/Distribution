@@ -26,7 +26,8 @@ object EventBacklogStatus {
     __obj.asInstanceOf[EventBacklogStatus]
   }
   
-  extension [Self <: EventBacklogStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventBacklogStatus] (val x: Self) extends AnyVal {
     
     inline def setMaxUnprocessedEventAgeMs(value: Double): Self = StObject.set(x, "maxUnprocessedEventAgeMs", value.asInstanceOf[js.Any])
     

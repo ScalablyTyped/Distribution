@@ -62,7 +62,8 @@ object StripeCard {
     __obj.asInstanceOf[StripeCard]
   }
   
-  extension [Self <: StripeCard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StripeCard] (val x: Self) extends AnyVal {
     
     inline def setAddress_city(value: String): Self = StObject.set(x, "address_city", value.asInstanceOf[js.Any])
     

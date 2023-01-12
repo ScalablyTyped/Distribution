@@ -21,7 +21,8 @@ object Privacies {
     __obj.asInstanceOf[Privacies]
   }
   
-  extension [Self <: Privacies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Privacies] (val x: Self) extends AnyVal {
     
     inline def setLocations(value: Enum): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     

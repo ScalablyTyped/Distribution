@@ -18,7 +18,8 @@ object StartRxNormInferenceJobResponse {
     __obj.asInstanceOf[StartRxNormInferenceJobResponse]
   }
   
-  extension [Self <: StartRxNormInferenceJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartRxNormInferenceJobResponse] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     

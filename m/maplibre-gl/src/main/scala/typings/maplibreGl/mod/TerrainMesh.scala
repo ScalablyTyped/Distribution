@@ -19,7 +19,8 @@ object TerrainMesh {
     __obj.asInstanceOf[TerrainMesh]
   }
   
-  extension [Self <: TerrainMesh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerrainMesh] (val x: Self) extends AnyVal {
     
     inline def setIndexBuffer(value: IndexBuffer): Self = StObject.set(x, "indexBuffer", value.asInstanceOf[js.Any])
     

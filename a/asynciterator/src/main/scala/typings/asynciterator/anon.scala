@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[AutoStart]
     }
     
-    extension [Self <: AutoStart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoStart] (val x: Self) extends AnyVal {
       
       inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[BufferedIteratorOptionsde]
     }
     
-    extension [Self <: BufferedIteratorOptionsde](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferedIteratorOptionsde] (val x: Self) extends AnyVal {
       
       inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -105,7 +108,8 @@ object anon {
       __obj.asInstanceOf[Limit]
     }
     
-    extension [Self <: Limit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       

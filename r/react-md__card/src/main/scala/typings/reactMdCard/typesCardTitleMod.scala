@@ -38,7 +38,8 @@ object typesCardTitleMod {
       __obj.asInstanceOf[CardTitleProps]
     }
     
-    extension [Self <: CardTitleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardTitleProps] (val x: Self) extends AnyVal {
       
       inline def setNoWrap(value: Boolean): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
       

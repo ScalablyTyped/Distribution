@@ -161,7 +161,8 @@ object srcDockMod {
       __obj.asInstanceOf[Dock]
     }
     
-    extension [Self <: Dock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dock] (val x: Self) extends AnyVal {
       
       inline def setActivate(value: () => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
       

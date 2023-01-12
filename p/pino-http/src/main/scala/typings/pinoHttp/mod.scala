@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[AutoLoggingOptions]
     }
     
-    extension [Self <: AutoLoggingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoLoggingOptions] (val x: Self) extends AnyVal {
       
       inline def setGetPath(value: /* req */ IncomingMessage => js.UndefOr[String]): Self = StObject.set(x, "getPath", js.Any.fromFunction1(value))
       
@@ -78,7 +79,8 @@ object mod {
       __obj.asInstanceOf[CustomAttributeKeys]
     }
     
-    extension [Self <: CustomAttributeKeys](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomAttributeKeys] (val x: Self) extends AnyVal {
       
       inline def setErr(value: String): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAutoLogging(value: Boolean | AutoLoggingOptions): Self = StObject.set(x, "autoLogging", value.asInstanceOf[js.Any])
       
@@ -229,7 +232,8 @@ object mod {
         __obj.asInstanceOf[typings.pinoHttp.mod.httpAugmentingMod.IncomingMessage]
       }
       
-      extension [Self <: typings.pinoHttp.mod.httpAugmentingMod.IncomingMessage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.pinoHttp.mod.httpAugmentingMod.IncomingMessage] (val x: Self) extends AnyVal {
         
         inline def setId(value: ReqId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -251,7 +255,8 @@ object mod {
         __obj.asInstanceOf[typings.pinoHttp.mod.httpAugmentingMod.ServerResponse]
       }
       
-      extension [Self <: typings.pinoHttp.mod.httpAugmentingMod.ServerResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.pinoHttp.mod.httpAugmentingMod.ServerResponse] (val x: Self) extends AnyVal {
         
         inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
         

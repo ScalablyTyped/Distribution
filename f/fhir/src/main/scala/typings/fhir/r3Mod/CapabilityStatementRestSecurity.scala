@@ -39,7 +39,8 @@ object CapabilityStatementRestSecurity {
     __obj.asInstanceOf[CapabilityStatementRestSecurity]
   }
   
-  extension [Self <: CapabilityStatementRestSecurity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapabilityStatementRestSecurity] (val x: Self) extends AnyVal {
     
     inline def setCertificate(value: js.Array[CapabilityStatementRestSecurityCertificate]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     

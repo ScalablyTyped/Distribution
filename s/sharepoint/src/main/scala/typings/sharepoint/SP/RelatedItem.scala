@@ -57,7 +57,8 @@ object RelatedItem {
     __obj.asInstanceOf[RelatedItem]
   }
   
-  extension [Self <: RelatedItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedItem] (val x: Self) extends AnyVal {
     
     inline def setGet_iconUrl(value: () => String): Self = StObject.set(x, "get_iconUrl", js.Any.fromFunction0(value))
     

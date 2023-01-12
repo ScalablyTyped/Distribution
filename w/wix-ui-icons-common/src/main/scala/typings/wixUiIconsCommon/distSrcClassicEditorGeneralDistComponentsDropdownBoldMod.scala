@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsDropdownBoldMod extends Shortcut
       __obj.asInstanceOf[DropdownBoldProps]
     }
     
-    extension [Self <: DropdownBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

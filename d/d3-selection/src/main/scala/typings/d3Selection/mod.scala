@@ -101,7 +101,8 @@ object mod {
       __obj.asInstanceOf[ArrayLike[T]]
     }
     
-    extension [Self <: ArrayLike[?], T](x: Self & ArrayLike[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayLike[?], T] (val x: Self & ArrayLike[T]) extends AnyVal {
       
       inline def setItem(value: Double => T | Null): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
       
@@ -124,7 +125,8 @@ object mod {
       __obj.asInstanceOf[ClientPointEvent]
     }
     
-    extension [Self <: ClientPointEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientPointEvent] (val x: Self) extends AnyVal {
       
       inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
@@ -158,7 +160,8 @@ object mod {
       __obj.asInstanceOf[CustomEventParameters]
     }
     
-    extension [Self <: CustomEventParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomEventParameters] (val x: Self) extends AnyVal {
       
       inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       
@@ -196,7 +199,8 @@ object mod {
       __obj.asInstanceOf[EnterElement]
     }
     
-    extension [Self <: EnterElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnterElement] (val x: Self) extends AnyVal {
       
       inline def setAppendChild(value: Node => Node): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
       
@@ -247,7 +251,8 @@ object mod {
       __obj.asInstanceOf[Local_[T]]
     }
     
-    extension [Self <: Local_[?], T](x: Self & Local_[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Local_[?], T] (val x: Self & Local_[T]) extends AnyVal {
       
       inline def setGet(value: Element => js.UndefOr[T]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
@@ -276,7 +281,8 @@ object mod {
       __obj.asInstanceOf[NamespaceLocalObject]
     }
     
-    extension [Self <: NamespaceLocalObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamespaceLocalObject] (val x: Self) extends AnyVal {
       
       inline def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       

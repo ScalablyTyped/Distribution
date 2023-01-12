@@ -40,7 +40,8 @@ object radioControlMod {
         __obj.asInstanceOf[Option[T]]
       }
       
-      extension [Self <: Option[?], T](x: Self & Option[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Option[?], T] (val x: Self & Option[T]) extends AnyVal {
         
         inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         

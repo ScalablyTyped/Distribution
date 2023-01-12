@@ -84,7 +84,8 @@ object InstanceProperties {
     __obj.asInstanceOf[InstanceProperties]
   }
   
-  extension [Self <: InstanceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceProperties] (val x: Self) extends AnyVal {
     
     inline def setAdvancedMachineFeatures(value: AdvancedMachineFeatures): Self = StObject.set(x, "advancedMachineFeatures", value.asInstanceOf[js.Any])
     

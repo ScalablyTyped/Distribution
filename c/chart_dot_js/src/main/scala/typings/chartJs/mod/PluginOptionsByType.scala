@@ -32,7 +32,8 @@ object PluginOptionsByType {
     __obj.asInstanceOf[PluginOptionsByType[TType]]
   }
   
-  extension [Self <: PluginOptionsByType[?], TType /* <: ChartType */](x: Self & PluginOptionsByType[TType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginOptionsByType[?], TType /* <: ChartType */] (val x: Self & PluginOptionsByType[TType]) extends AnyVal {
     
     inline def setDecimation(value: DecimationOptions): Self = StObject.set(x, "decimation", value.asInstanceOf[js.Any])
     

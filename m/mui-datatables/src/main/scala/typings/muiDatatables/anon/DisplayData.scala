@@ -15,7 +15,8 @@ object DisplayData {
     __obj.asInstanceOf[DisplayData]
   }
   
-  extension [Self <: DisplayData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayData] (val x: Self) extends AnyVal {
     
     inline def setDisplayData(value: typings.muiDatatables.mod.DisplayData): Self = StObject.set(x, "displayData", value.asInstanceOf[js.Any])
     

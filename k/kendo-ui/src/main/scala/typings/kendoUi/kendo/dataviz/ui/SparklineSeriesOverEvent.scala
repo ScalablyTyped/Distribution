@@ -31,7 +31,8 @@ object SparklineSeriesOverEvent {
     __obj.asInstanceOf[SparklineSeriesOverEvent]
   }
   
-  extension [Self <: SparklineSeriesOverEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparklineSeriesOverEvent] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object DataTableShowRowReorderElementOptions {
     __obj.asInstanceOf[DataTableShowRowReorderElementOptions]
   }
   
-  extension [Self <: DataTableShowRowReorderElementOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableShowRowReorderElementOptions] (val x: Self) extends AnyVal {
     
     inline def setProps(value: DataTableProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

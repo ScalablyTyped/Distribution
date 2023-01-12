@@ -1075,7 +1075,8 @@ object idstringtypelinearGradien {
     __obj.asInstanceOf[idstringtypelinearGradien]
   }
   
-  extension [Self <: idstringtypelinearGradien](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: idstringtypelinearGradien] (val x: Self) extends AnyVal {
     
     inline def setAccentHeight(value: Double | String): Self = StObject.set(x, "accentHeight", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object ItineraryOptions {
     __obj.asInstanceOf[ItineraryOptions]
   }
   
-  extension [Self <: ItineraryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItineraryOptions] (val x: Self) extends AnyVal {
     
     inline def setAlternativeClassName(value: String): Self = StObject.set(x, "alternativeClassName", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object GenerateDataKeyPairResponse {
     __obj.asInstanceOf[GenerateDataKeyPairResponse]
   }
   
-  extension [Self <: GenerateDataKeyPairResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateDataKeyPairResponse] (val x: Self) extends AnyVal {
     
     inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     

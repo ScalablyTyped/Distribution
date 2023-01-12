@@ -52,7 +52,8 @@ object PropertyChangeEvent {
     __obj.asInstanceOf[PropertyChangeEvent]
   }
   
-  extension [Self <: PropertyChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setFurther(value: Boolean): Self = StObject.set(x, "Further", value.asInstanceOf[js.Any])
     

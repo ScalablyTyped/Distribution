@@ -18,7 +18,8 @@ object DeleteEventSourceMappingRequest {
     __obj.asInstanceOf[DeleteEventSourceMappingRequest]
   }
   
-  extension [Self <: DeleteEventSourceMappingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEventSourceMappingRequest] (val x: Self) extends AnyVal {
     
     inline def setUUID(value: String): Self = StObject.set(x, "UUID", value.asInstanceOf[js.Any])
   }

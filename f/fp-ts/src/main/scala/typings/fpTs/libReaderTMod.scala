@@ -955,7 +955,8 @@ object libReaderTMod {
       __obj.asInstanceOf[ReaderM[M]]
     }
     
-    extension [Self <: ReaderM[?], M](x: Self & ReaderM[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReaderM[?], M] (val x: Self & ReaderM[M]) extends AnyVal {
       
       inline def setAp(value: (ReaderT[M, Any, js.Function1[Any, Any]], ReaderT[M, Any, Any]) => ReaderT[M, Any, Any]): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
       
@@ -1018,7 +1019,8 @@ object libReaderTMod {
       __obj.asInstanceOf[ReaderM1[M]]
     }
     
-    extension [Self <: ReaderM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & ReaderM1[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReaderM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & ReaderM1[M]) extends AnyVal {
       
       inline def setAp(value: (ReaderT1[M, Any, js.Function1[Any, Any]], ReaderT1[M, Any, Any]) => ReaderT1[M, Any, Any]): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
       
@@ -1081,7 +1083,8 @@ object libReaderTMod {
       __obj.asInstanceOf[ReaderM2[M]]
     }
     
-    extension [Self <: ReaderM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & ReaderM2[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReaderM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & ReaderM2[M]) extends AnyVal {
       
       inline def setAp(
         value: (ReaderT2[M, Any, Any, js.Function1[Any, Any]], ReaderT2[M, Any, Any, Any]) => ReaderT2[M, Any, Any, Any]
@@ -1148,7 +1151,8 @@ object libReaderTMod {
       __obj.asInstanceOf[ReaderM2C[M, E]]
     }
     
-    extension [Self <: ReaderM2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (ReaderM2C[M, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReaderM2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (ReaderM2C[M, E])) extends AnyVal {
       
       inline def setAp(
         value: (ReaderT2[M, Any, E, js.Function1[Any, Any]], ReaderT2[M, Any, E, Any]) => ReaderT2[M, Any, E, Any]
@@ -1215,7 +1219,8 @@ object libReaderTMod {
       __obj.asInstanceOf[ReaderM3[M]]
     }
     
-    extension [Self <: ReaderM3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & ReaderM3[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReaderM3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & ReaderM3[M]) extends AnyVal {
       
       inline def setAp(
         value: (ReaderT3[M, Any, Any, Any, js.Function1[Any, Any]], ReaderT3[M, Any, Any, Any, Any]) => ReaderT3[M, Any, Any, Any, Any]

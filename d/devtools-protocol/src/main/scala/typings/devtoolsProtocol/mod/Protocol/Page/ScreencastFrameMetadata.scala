@@ -56,7 +56,8 @@ object ScreencastFrameMetadata {
     __obj.asInstanceOf[ScreencastFrameMetadata]
   }
   
-  extension [Self <: ScreencastFrameMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScreencastFrameMetadata] (val x: Self) extends AnyVal {
     
     inline def setDeviceHeight(value: Double): Self = StObject.set(x, "deviceHeight", value.asInstanceOf[js.Any])
     

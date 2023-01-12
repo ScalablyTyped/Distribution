@@ -23,7 +23,8 @@ object BatchDeleteBuildsOutput {
     __obj.asInstanceOf[BatchDeleteBuildsOutput]
   }
   
-  extension [Self <: BatchDeleteBuildsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteBuildsOutput] (val x: Self) extends AnyVal {
     
     inline def setBuildsDeleted(value: BuildIds): Self = StObject.set(x, "buildsDeleted", value.asInstanceOf[js.Any])
     

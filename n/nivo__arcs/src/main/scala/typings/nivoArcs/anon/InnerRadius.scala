@@ -29,7 +29,8 @@ object InnerRadius {
     __obj.asInstanceOf[InnerRadius]
   }
   
-  extension [Self <: InnerRadius](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InnerRadius] (val x: Self) extends AnyVal {
     
     inline def setEndAngle(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_web.SpringValue<number> */ Any

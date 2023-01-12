@@ -40,7 +40,8 @@ object UnsampledReports {
     __obj.asInstanceOf[UnsampledReports]
   }
   
-  extension [Self <: UnsampledReports](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsampledReports] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[UnsampledReport]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

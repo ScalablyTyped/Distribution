@@ -23,7 +23,8 @@ object FacetAttributeUpdate {
     __obj.asInstanceOf[FacetAttributeUpdate]
   }
   
-  extension [Self <: FacetAttributeUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FacetAttributeUpdate] (val x: Self) extends AnyVal {
     
     inline def setAction(value: UpdateActionType): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

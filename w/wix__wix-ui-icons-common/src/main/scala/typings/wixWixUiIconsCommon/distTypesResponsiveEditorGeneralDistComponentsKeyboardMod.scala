@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsKeyboardMod extends Shortcu
       __obj.asInstanceOf[KeyboardProps]
     }
     
-    extension [Self <: KeyboardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

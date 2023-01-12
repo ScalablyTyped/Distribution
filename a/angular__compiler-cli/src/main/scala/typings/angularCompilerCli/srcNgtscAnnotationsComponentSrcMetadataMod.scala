@@ -99,7 +99,8 @@ object srcNgtscAnnotationsComponentSrcMetadataMod {
       __obj.asInstanceOf[ComponentAnalysisData]
     }
     
-    extension [Self <: ComponentAnalysisData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentAnalysisData] (val x: Self) extends AnyVal {
       
       inline def setAnimationTriggerNames(value: AnimationTriggerNames): Self = StObject.set(x, "animationTriggerNames", value.asInstanceOf[js.Any])
       
@@ -191,7 +192,8 @@ object srcNgtscAnnotationsComponentSrcMetadataMod {
       __obj.asInstanceOf[ComponentResolutionData]
     }
     
-    extension [Self <: ComponentResolutionData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentResolutionData] (val x: Self) extends AnyVal {
       
       inline def setDeclarationListEmitMode(value: DeclarationListEmitMode): Self = StObject.set(x, "declarationListEmitMode", value.asInstanceOf[js.Any])
       

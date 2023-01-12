@@ -17,7 +17,8 @@ object GetBookingParams {
     __obj.asInstanceOf[GetBookingParams]
   }
   
-  extension [Self <: GetBookingParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBookingParams] (val x: Self) extends AnyVal {
     
     inline def setPnr(value: String): Self = StObject.set(x, "pnr", value.asInstanceOf[js.Any])
     

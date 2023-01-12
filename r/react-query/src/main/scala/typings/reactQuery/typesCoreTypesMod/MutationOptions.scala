@@ -64,7 +64,8 @@ object MutationOptions {
     __obj.asInstanceOf[MutationOptions[TData, TError, TVariables, TContext]]
   }
   
-  extension [Self <: MutationOptions[?, ?, ?, ?], TData, TError, TVariables, TContext](x: Self & (MutationOptions[TData, TError, TVariables, TContext])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MutationOptions[?, ?, ?, ?], TData, TError, TVariables, TContext] (val x: Self & (MutationOptions[TData, TError, TVariables, TContext])) extends AnyVal {
     
     inline def setMeta(value: MutationMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     

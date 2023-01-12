@@ -53,7 +53,8 @@ object mod {
       __obj.asInstanceOf[ReactStarsProps]
     }
     
-    extension [Self <: ReactStarsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactStarsProps] (val x: Self) extends AnyVal {
       
       inline def setChar(value: String): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
       

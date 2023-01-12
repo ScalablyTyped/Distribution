@@ -74,7 +74,8 @@ object PathOverlay {
       __obj.asInstanceOf[Options[ExtraData]]
     }
     
-    extension [Self <: Options[?], ExtraData](x: Self & Options[ExtraData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], ExtraData] (val x: Self & Options[ExtraData]) extends AnyVal {
       
       inline def setLineCap(value: StrokeLineCap): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
       

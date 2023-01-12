@@ -23,7 +23,8 @@ object MlCalendarEvent {
     __obj.asInstanceOf[MlCalendarEvent]
   }
   
-  extension [Self <: MlCalendarEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlCalendarEvent] (val x: Self) extends AnyVal {
     
     inline def setCalendar_id(value: Id): Self = StObject.set(x, "calendar_id", value.asInstanceOf[js.Any])
     

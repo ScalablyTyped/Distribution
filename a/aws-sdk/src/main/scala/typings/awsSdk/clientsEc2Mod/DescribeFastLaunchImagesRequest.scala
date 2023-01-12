@@ -38,7 +38,8 @@ object DescribeFastLaunchImagesRequest {
     __obj.asInstanceOf[DescribeFastLaunchImagesRequest]
   }
   
-  extension [Self <: DescribeFastLaunchImagesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFastLaunchImagesRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

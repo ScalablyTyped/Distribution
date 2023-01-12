@@ -15,7 +15,8 @@ object PanResponderInstance {
     __obj.asInstanceOf[PanResponderInstance]
   }
   
-  extension [Self <: PanResponderInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanResponderInstance] (val x: Self) extends AnyVal {
     
     inline def setPanHandlers(value: GestureResponderHandlers): Self = StObject.set(x, "panHandlers", value.asInstanceOf[js.Any])
   }

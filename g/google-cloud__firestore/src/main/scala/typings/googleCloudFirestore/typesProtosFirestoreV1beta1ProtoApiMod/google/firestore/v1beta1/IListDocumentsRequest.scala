@@ -42,7 +42,8 @@ object IListDocumentsRequest {
     __obj.asInstanceOf[IListDocumentsRequest]
   }
   
-  extension [Self <: IListDocumentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListDocumentsRequest] (val x: Self) extends AnyVal {
     
     inline def setCollectionId(value: String): Self = StObject.set(x, "collectionId", value.asInstanceOf[js.Any])
     

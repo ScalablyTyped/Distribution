@@ -25,7 +25,8 @@ object distSrcPublicTypesMod {
       __obj.asInstanceOf[AppCheck]
     }
     
-    extension [Self <: AppCheck](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCheck] (val x: Self) extends AnyVal {
       
       inline def setApp(value: FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     }
@@ -52,7 +53,8 @@ object distSrcPublicTypesMod {
       __obj.asInstanceOf[AppCheckOptions]
     }
     
-    extension [Self <: AppCheckOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCheckOptions] (val x: Self) extends AnyVal {
       
       inline def setIsTokenAutoRefreshEnabled(value: Boolean): Self = StObject.set(x, "isTokenAutoRefreshEnabled", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object distSrcPublicTypesMod {
       __obj.asInstanceOf[AppCheckToken]
     }
     
-    extension [Self <: AppCheckToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCheckToken] (val x: Self) extends AnyVal {
       
       inline def setExpireTimeMillis(value: Double): Self = StObject.set(x, "expireTimeMillis", value.asInstanceOf[js.Any])
       
@@ -102,7 +105,8 @@ object distSrcPublicTypesMod {
       __obj.asInstanceOf[AppCheckTokenResult]
     }
     
-    extension [Self <: AppCheckTokenResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCheckTokenResult] (val x: Self) extends AnyVal {
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
@@ -123,7 +127,8 @@ object distSrcPublicTypesMod {
       __obj.asInstanceOf[CustomProviderOptions]
     }
     
-    extension [Self <: CustomProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setGetToken(value: () => js.Promise[AppCheckToken]): Self = StObject.set(x, "getToken", js.Any.fromFunction0(value))
     }

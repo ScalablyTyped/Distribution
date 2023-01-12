@@ -24,7 +24,8 @@ object OverflowButtonClicked {
     __obj.asInstanceOf[OverflowButtonClicked]
   }
   
-  extension [Self <: OverflowButtonClicked](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverflowButtonClicked] (val x: Self) extends AnyVal {
     
     inline def setOverflowButtonClicked(value: Boolean): Self = StObject.set(x, "overflowButtonClicked", value.asInstanceOf[js.Any])
     

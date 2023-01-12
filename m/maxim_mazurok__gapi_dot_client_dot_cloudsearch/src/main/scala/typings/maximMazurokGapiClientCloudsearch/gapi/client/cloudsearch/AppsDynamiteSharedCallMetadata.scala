@@ -16,7 +16,8 @@ object AppsDynamiteSharedCallMetadata {
     __obj.asInstanceOf[AppsDynamiteSharedCallMetadata]
   }
   
-  extension [Self <: AppsDynamiteSharedCallMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedCallMetadata] (val x: Self) extends AnyVal {
     
     inline def setMeetMetadata(value: AppsDynamiteSharedMeetMetadata): Self = StObject.set(x, "meetMetadata", value.asInstanceOf[js.Any])
     

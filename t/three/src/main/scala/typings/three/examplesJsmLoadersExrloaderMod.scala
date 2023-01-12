@@ -51,7 +51,8 @@ object examplesJsmLoadersExrloaderMod {
       __obj.asInstanceOf[EXR]
     }
     
-    extension [Self <: EXR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EXR] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Float32Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

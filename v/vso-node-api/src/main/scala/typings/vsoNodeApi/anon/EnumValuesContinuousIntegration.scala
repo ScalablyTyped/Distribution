@@ -15,7 +15,8 @@ object EnumValuesContinuousIntegration {
     __obj.asInstanceOf[EnumValuesContinuousIntegration]
   }
   
-  extension [Self <: EnumValuesContinuousIntegration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesContinuousIntegration] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: ContinuousIntegration): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

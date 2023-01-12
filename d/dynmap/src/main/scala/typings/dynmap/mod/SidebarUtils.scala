@@ -26,7 +26,8 @@ object SidebarUtils {
     __obj.asInstanceOf[SidebarUtils]
   }
   
-  extension [Self <: SidebarUtils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SidebarUtils] (val x: Self) extends AnyVal {
     
     inline def setCreateListSection(
       value: String => ReturnType[js.Function2[/* labelText */ String, /* content */ JQuery, DownBtn[JQuery]]]

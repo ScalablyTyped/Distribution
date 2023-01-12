@@ -32,7 +32,8 @@ object BytesRead {
     __obj.asInstanceOf[BytesRead]
   }
   
-  extension [Self <: BytesRead](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BytesRead] (val x: Self) extends AnyVal {
     
     inline def setBytesRead(value: Double): Self = StObject.set(x, "bytesRead", value.asInstanceOf[js.Any])
     

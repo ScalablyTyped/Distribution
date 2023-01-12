@@ -23,7 +23,8 @@ object AbstractView {
     __obj.asInstanceOf[AbstractView]
   }
   
-  extension [Self <: AbstractView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractView] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

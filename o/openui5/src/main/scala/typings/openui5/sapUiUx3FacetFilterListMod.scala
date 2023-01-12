@@ -505,7 +505,8 @@ object sapUiUx3FacetFilterListMod {
       __obj.asInstanceOf[FacetFilterListSettings]
     }
     
-    extension [Self <: FacetFilterListSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FacetFilterListSettings] (val x: Self) extends AnyVal {
       
       inline def setDisplaySecondaryValues(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "displaySecondaryValues", value.asInstanceOf[js.Any])
       

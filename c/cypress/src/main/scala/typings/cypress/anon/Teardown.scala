@@ -25,7 +25,8 @@ object Teardown {
     __obj.asInstanceOf[Teardown[TTarget]]
   }
   
-  extension [Self <: Teardown[?], TTarget](x: Self & Teardown[TTarget]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Teardown[?], TTarget] (val x: Self & Teardown[TTarget]) extends AnyVal {
     
     inline def setTeardown(value: () => Unit | `false`): Self = StObject.set(x, "teardown", js.Any.fromFunction0(value))
   }

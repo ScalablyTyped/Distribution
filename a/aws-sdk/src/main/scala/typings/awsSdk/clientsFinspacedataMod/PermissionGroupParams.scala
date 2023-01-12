@@ -23,7 +23,8 @@ object PermissionGroupParams {
     __obj.asInstanceOf[PermissionGroupParams]
   }
   
-  extension [Self <: PermissionGroupParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionGroupParams] (val x: Self) extends AnyVal {
     
     inline def setDatasetPermissions(value: ResourcePermissionsList): Self = StObject.set(x, "datasetPermissions", value.asInstanceOf[js.Any])
     

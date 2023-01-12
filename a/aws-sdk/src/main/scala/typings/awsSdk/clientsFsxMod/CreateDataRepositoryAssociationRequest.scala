@@ -44,7 +44,8 @@ object CreateDataRepositoryAssociationRequest {
     __obj.asInstanceOf[CreateDataRepositoryAssociationRequest]
   }
   
-  extension [Self <: CreateDataRepositoryAssociationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDataRepositoryAssociationRequest] (val x: Self) extends AnyVal {
     
     inline def setBatchImportMetaDataOnCreate(value: BatchImportMetaDataOnCreate): Self = StObject.set(x, "BatchImportMetaDataOnCreate", value.asInstanceOf[js.Any])
     

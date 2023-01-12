@@ -345,7 +345,8 @@ object distLitePackagesFirestoreTestUnitSpecsSpecBuilderMod {
       __obj.asInstanceOf[ActiveTargetSpec]
     }
     
-    extension [Self <: ActiveTargetSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveTargetSpec] (val x: Self) extends AnyVal {
       
       inline def setQueries(value: js.Array[SpecQuery]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object typesReplicaAlreadyExistsExceptionMod {
       __obj.asInstanceOf[ReplicaAlreadyExistsException]
     }
     
-    extension [Self <: ReplicaAlreadyExistsException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicaAlreadyExistsException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.ReplicaAlreadyExistsException
@@ -43,7 +44,8 @@ object typesReplicaAlreadyExistsExceptionMod {
       __obj.asInstanceOf[ReplicaAlreadyExistsExceptionDetails]
     }
     
-    extension [Self <: ReplicaAlreadyExistsExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicaAlreadyExistsExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

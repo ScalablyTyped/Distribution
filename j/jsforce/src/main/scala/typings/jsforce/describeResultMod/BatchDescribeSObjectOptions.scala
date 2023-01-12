@@ -19,7 +19,8 @@ object BatchDescribeSObjectOptions {
     __obj.asInstanceOf[BatchDescribeSObjectOptions]
   }
   
-  extension [Self <: BatchDescribeSObjectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDescribeSObjectOptions] (val x: Self) extends AnyVal {
     
     inline def setAutofetch(value: Boolean): Self = StObject.set(x, "autofetch", value.asInstanceOf[js.Any])
     

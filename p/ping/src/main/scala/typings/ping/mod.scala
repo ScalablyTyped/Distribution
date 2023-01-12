@@ -107,7 +107,8 @@ object mod {
       __obj.asInstanceOf[PingConfig]
     }
     
-    extension [Self <: PingConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PingConfig] (val x: Self) extends AnyVal {
       
       inline def setDeadline(value: Double): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
       
@@ -226,7 +227,8 @@ object mod {
       __obj.asInstanceOf[PingResponse]
     }
     
-    extension [Self <: PingResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PingResponse] (val x: Self) extends AnyVal {
       
       inline def setAlive(value: Boolean): Self = StObject.set(x, "alive", value.asInstanceOf[js.Any])
       

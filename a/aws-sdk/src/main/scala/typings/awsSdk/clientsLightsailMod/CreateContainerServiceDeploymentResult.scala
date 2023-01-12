@@ -18,7 +18,8 @@ object CreateContainerServiceDeploymentResult {
     __obj.asInstanceOf[CreateContainerServiceDeploymentResult]
   }
   
-  extension [Self <: CreateContainerServiceDeploymentResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateContainerServiceDeploymentResult] (val x: Self) extends AnyVal {
     
     inline def setContainerService(value: ContainerService): Self = StObject.set(x, "containerService", value.asInstanceOf[js.Any])
     

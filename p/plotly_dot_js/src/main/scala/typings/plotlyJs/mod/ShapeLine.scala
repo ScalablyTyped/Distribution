@@ -19,7 +19,8 @@ object ShapeLine {
     __obj.asInstanceOf[ShapeLine]
   }
   
-  extension [Self <: ShapeLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeLine] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

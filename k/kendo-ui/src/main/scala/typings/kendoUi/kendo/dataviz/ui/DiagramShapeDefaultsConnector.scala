@@ -27,7 +27,8 @@ object DiagramShapeDefaultsConnector {
     __obj.asInstanceOf[DiagramShapeDefaultsConnector]
   }
   
-  extension [Self <: DiagramShapeDefaultsConnector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramShapeDefaultsConnector] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String | DiagramShapeDefaultsConnectorFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

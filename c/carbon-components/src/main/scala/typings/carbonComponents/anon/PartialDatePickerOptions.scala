@@ -52,7 +52,8 @@ object PartialDatePickerOptions {
     __obj.asInstanceOf[PartialDatePickerOptions]
   }
   
-  extension [Self <: PartialDatePickerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDatePickerOptions] (val x: Self) extends AnyVal {
     
     inline def setAttribType(value: String): Self = StObject.set(x, "attribType", value.asInstanceOf[js.Any])
     

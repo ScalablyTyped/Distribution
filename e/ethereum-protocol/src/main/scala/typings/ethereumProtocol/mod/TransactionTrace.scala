@@ -19,7 +19,8 @@ object TransactionTrace {
     __obj.asInstanceOf[TransactionTrace]
   }
   
-  extension [Self <: TransactionTrace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionTrace] (val x: Self) extends AnyVal {
     
     inline def setGas(value: Double): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
     

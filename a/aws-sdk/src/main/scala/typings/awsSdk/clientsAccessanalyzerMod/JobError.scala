@@ -23,7 +23,8 @@ object JobError {
     __obj.asInstanceOf[JobError]
   }
   
-  extension [Self <: JobError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: JobErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

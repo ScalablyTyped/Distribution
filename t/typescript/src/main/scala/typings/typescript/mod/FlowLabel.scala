@@ -18,7 +18,8 @@ object FlowLabel {
     __obj.asInstanceOf[FlowLabel]
   }
   
-  extension [Self <: FlowLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowLabel] (val x: Self) extends AnyVal {
     
     inline def setAntecedents(value: js.Array[FlowNode]): Self = StObject.set(x, "antecedents", value.asInstanceOf[js.Any])
     

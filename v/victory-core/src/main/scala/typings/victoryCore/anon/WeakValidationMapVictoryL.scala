@@ -154,7 +154,8 @@ object WeakValidationMapVictoryL {
     __obj.asInstanceOf[WeakValidationMapVictoryL]
   }
   
-  extension [Self <: WeakValidationMapVictoryL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapVictoryL] (val x: Self) extends AnyVal {
     
     inline def setAngle(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends victory-core.victory-core/lib/types/callbacks.StringOrNumberOrCallback | undefined ? react.react.Validator<victory-core.victory-core/lib/types/callbacks.StringOrNumberOrCallback | undefined | null | undefined> : undefined extends victory-core.victory-core/lib/types/callbacks.StringOrNumberOrCallback | undefined ? react.react.Validator<victory-core.victory-core/lib/types/callbacks.StringOrNumberOrCallback | undefined | null | undefined> : react.react.Validator<victory-core.victory-core/lib/types/callbacks.StringOrNumberOrCallback | undefined> */ js.Any

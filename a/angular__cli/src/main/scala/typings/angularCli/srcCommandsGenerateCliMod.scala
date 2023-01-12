@@ -56,7 +56,8 @@ object srcCommandsGenerateCliMod {
       __obj.asInstanceOf[GenerateCommandArgs]
     }
     
-    extension [Self <: GenerateCommandArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateCommandArgs] (val x: Self) extends AnyVal {
       
       inline def setSchematic(value: String): Self = StObject.set(x, "schematic", value.asInstanceOf[js.Any])
       

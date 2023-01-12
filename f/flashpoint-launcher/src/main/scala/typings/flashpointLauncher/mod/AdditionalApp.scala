@@ -46,7 +46,8 @@ object AdditionalApp {
     __obj.asInstanceOf[AdditionalApp]
   }
   
-  extension [Self <: AdditionalApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdditionalApp] (val x: Self) extends AnyVal {
     
     inline def setApplicationPath(value: String): Self = StObject.set(x, "applicationPath", value.asInstanceOf[js.Any])
     

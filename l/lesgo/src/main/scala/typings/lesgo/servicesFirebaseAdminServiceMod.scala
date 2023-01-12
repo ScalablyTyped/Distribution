@@ -67,7 +67,8 @@ object servicesFirebaseAdminServiceMod {
       __obj.asInstanceOf[FirebaseAdminOpts]
     }
     
-    extension [Self <: FirebaseAdminOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseAdminOpts] (val x: Self) extends AnyVal {
       
       inline def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object servicesFirebaseAdminServiceMod {
       __obj.asInstanceOf[UserData]
     }
     
-    extension [Self <: UserData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserData] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object ComputeMessageStatsRequest {
     __obj.asInstanceOf[ComputeMessageStatsRequest]
   }
   
-  extension [Self <: ComputeMessageStatsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputeMessageStatsRequest] (val x: Self) extends AnyVal {
     
     inline def setEndCursor(value: Cursor): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
     

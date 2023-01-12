@@ -15,7 +15,8 @@ object SizeLimit {
     __obj.asInstanceOf[SizeLimit]
   }
   
-  extension [Self <: SizeLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeLimit] (val x: Self) extends AnyVal {
     
     inline def setSizeLimit(value: Double | String): Self = StObject.set(x, "sizeLimit", value.asInstanceOf[js.Any])
     

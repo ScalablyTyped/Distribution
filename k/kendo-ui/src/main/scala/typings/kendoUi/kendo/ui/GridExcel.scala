@@ -23,7 +23,8 @@ object GridExcel {
     __obj.asInstanceOf[GridExcel]
   }
   
-  extension [Self <: GridExcel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridExcel] (val x: Self) extends AnyVal {
     
     inline def setAllPages(value: Boolean): Self = StObject.set(x, "allPages", value.asInstanceOf[js.Any])
     

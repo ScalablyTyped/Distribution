@@ -121,7 +121,8 @@ object saveMod {
       __obj.asInstanceOf[SaveDetails]
     }
     
-    extension [Self <: SaveDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SaveDetails] (val x: Self) extends AnyVal {
       
       inline def setType(value: autosave | disk | serialize | slot): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -167,7 +168,8 @@ object saveMod {
       __obj.asInstanceOf[SaveEventAPI[HandlerType]]
     }
     
-    extension [Self <: SaveEventAPI[?], HandlerType](x: Self & SaveEventAPI[HandlerType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SaveEventAPI[?], HandlerType] (val x: Self & SaveEventAPI[HandlerType]) extends AnyVal {
       
       inline def setAdd(value: HandlerType => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -208,7 +210,8 @@ object saveMod {
       __obj.asInstanceOf[SaveObject]
     }
     
-    extension [Self <: SaveObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SaveObject] (val x: Self) extends AnyVal {
       
       inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -246,7 +249,8 @@ object saveMod {
       __obj.asInstanceOf[SavedMoment]
     }
     
-    extension [Self <: SavedMoment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SavedMoment] (val x: Self) extends AnyVal {
       
       inline def setPull(value: Double): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
       
@@ -279,7 +283,8 @@ object saveMod {
       __obj.asInstanceOf[SavedState]
     }
     
-    extension [Self <: SavedState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SavedState] (val x: Self) extends AnyVal {
       
       inline def setExpired(value: Array[String]): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
       

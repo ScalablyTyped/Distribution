@@ -40,7 +40,8 @@ object triggerCognitoUserPoolTriggerPreTokenGenerationMod {
       __obj.asInstanceOf[BasePreTokenGenerationTriggerEvent[T]]
     }
     
-    extension [Self <: BasePreTokenGenerationTriggerEvent[?], T /* <: String */](x: Self & BasePreTokenGenerationTriggerEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasePreTokenGenerationTriggerEvent[?], T /* <: String */] (val x: Self & BasePreTokenGenerationTriggerEvent[T]) extends AnyVal {
       
       inline def setRequest(value: GroupConfiguration): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object triggerCognitoUserPoolTriggerPreTokenGenerationMod {
       __obj.asInstanceOf[GroupOverrideDetails]
     }
     
-    extension [Self <: GroupOverrideDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupOverrideDetails] (val x: Self) extends AnyVal {
       
       inline def setGroupsToOverride(value: js.Array[String]): Self = StObject.set(x, "groupsToOverride", value.asInstanceOf[js.Any])
       

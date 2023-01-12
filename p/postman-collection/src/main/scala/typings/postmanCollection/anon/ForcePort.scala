@@ -15,7 +15,8 @@ object ForcePort {
     __obj.asInstanceOf[ForcePort]
   }
   
-  extension [Self <: ForcePort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForcePort] (val x: Self) extends AnyVal {
     
     inline def setForcePort(value: Boolean): Self = StObject.set(x, "forcePort", value.asInstanceOf[js.Any])
   }

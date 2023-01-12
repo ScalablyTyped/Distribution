@@ -39,7 +39,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyCompletionRecord]
     }
     
-    extension [Self <: ReadonlyCompletionRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyCompletionRecord] (val x: Self) extends AnyVal {
       
       inline def setArg(value: Any): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object anon {
       __obj.asInstanceOf[readonlytryLocrootOmitTry]
     }
     
-    extension [Self <: readonlytryLocrootOmitTry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: readonlytryLocrootOmitTry] (val x: Self) extends AnyVal {
       
       inline def setAfterLoc(value: ContextLocation): Self = StObject.set(x, "afterLoc", value.asInstanceOf[js.Any])
       

@@ -457,7 +457,8 @@ object dom {
       __obj.asInstanceOf[typings.senchaTouch.Ext.dom.ICompositeElementLite]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.dom.ICompositeElementLite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.dom.ICompositeElementLite] (val x: Self) extends AnyVal {
       
       inline def setAdd(
         value: (/* els */ js.UndefOr[Any], /* root */ js.UndefOr[Any]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
@@ -1420,7 +1421,8 @@ object dom {
       __obj.asInstanceOf[typings.senchaTouch.Ext.dom.IElement]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.dom.IElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.dom.IElement] (val x: Self) extends AnyVal {
       
       inline def setAddCls(
         value: (/* names */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement
@@ -1982,7 +1984,8 @@ object dom {
       __obj.asInstanceOf[IHelper]
     }
     
-    extension [Self <: IHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHelper] (val x: Self) extends AnyVal {
       
       inline def setAppend(
         value: (/* el */ js.UndefOr[Any], /* o */ js.UndefOr[Any], /* returnElement */ js.UndefOr[Boolean]) => Any
@@ -2076,7 +2079,8 @@ object dom {
       __obj.asInstanceOf[IQuery]
     }
     
-    extension [Self <: IQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IQuery] (val x: Self) extends AnyVal {
       
       inline def setIs(value: (/* el */ js.UndefOr[Any], /* selector */ js.UndefOr[java.lang.String]) => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction2(value))
       

@@ -34,7 +34,8 @@ object SendingDomain {
     __obj.asInstanceOf[SendingDomain]
   }
   
-  extension [Self <: SendingDomain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendingDomain] (val x: Self) extends AnyVal {
     
     inline def setDkim(value: DKIM): Self = StObject.set(x, "dkim", value.asInstanceOf[js.Any])
     

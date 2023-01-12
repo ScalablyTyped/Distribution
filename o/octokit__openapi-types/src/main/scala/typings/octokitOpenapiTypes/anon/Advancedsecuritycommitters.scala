@@ -25,7 +25,8 @@ object Advancedsecuritycommitters {
     __obj.asInstanceOf[Advancedsecuritycommitters]
   }
   
-  extension [Self <: Advancedsecuritycommitters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Advancedsecuritycommitters] (val x: Self) extends AnyVal {
     
     inline def setAdvanced_security_committers(value: Double): Self = StObject.set(x, "advanced_security_committers", value.asInstanceOf[js.Any])
     

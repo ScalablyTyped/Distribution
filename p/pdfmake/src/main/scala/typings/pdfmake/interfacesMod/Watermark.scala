@@ -73,7 +73,8 @@ object Watermark {
     __obj.asInstanceOf[Watermark]
   }
   
-  extension [Self <: Watermark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Watermark] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

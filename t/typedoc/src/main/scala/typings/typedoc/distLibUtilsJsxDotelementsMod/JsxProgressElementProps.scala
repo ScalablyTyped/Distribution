@@ -19,7 +19,8 @@ object JsxProgressElementProps {
     __obj.asInstanceOf[JsxProgressElementProps]
   }
   
-  extension [Self <: JsxProgressElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxProgressElementProps] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

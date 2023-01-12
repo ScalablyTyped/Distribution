@@ -67,7 +67,8 @@ object FakeHookPickAsyncSeriesHoName {
     __obj.asInstanceOf[FakeHookPickAsyncSeriesHoName]
   }
   
-  extension [Self <: FakeHookPickAsyncSeriesHoName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FakeHookPickAsyncSeriesHoName] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

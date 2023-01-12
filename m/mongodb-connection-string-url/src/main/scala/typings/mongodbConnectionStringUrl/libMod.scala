@@ -72,7 +72,8 @@ object libMod {
       __obj.asInstanceOf[ConnectionStringParsingOptions]
     }
     
-    extension [Self <: ConnectionStringParsingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionStringParsingOptions] (val x: Self) extends AnyVal {
       
       inline def setLooseValidation(value: Boolean): Self = StObject.set(x, "looseValidation", value.asInstanceOf[js.Any])
       

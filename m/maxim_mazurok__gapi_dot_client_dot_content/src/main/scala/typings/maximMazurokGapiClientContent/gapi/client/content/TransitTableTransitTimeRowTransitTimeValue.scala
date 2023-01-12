@@ -19,7 +19,8 @@ object TransitTableTransitTimeRowTransitTimeValue {
     __obj.asInstanceOf[TransitTableTransitTimeRowTransitTimeValue]
   }
   
-  extension [Self <: TransitTableTransitTimeRowTransitTimeValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitTableTransitTimeRowTransitTimeValue] (val x: Self) extends AnyVal {
     
     inline def setMaxTransitTimeInDays(value: Double): Self = StObject.set(x, "maxTransitTimeInDays", value.asInstanceOf[js.Any])
     

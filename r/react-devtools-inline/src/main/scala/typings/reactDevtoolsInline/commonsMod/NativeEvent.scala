@@ -24,7 +24,8 @@ object NativeEvent {
     __obj.asInstanceOf[NativeEvent]
   }
   
-  extension [Self <: NativeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeEvent] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

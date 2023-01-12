@@ -25,7 +25,8 @@ object WBProps {
     __obj.asInstanceOf[WBProps]
   }
   
-  extension [Self <: WBProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WBProps] (val x: Self) extends AnyVal {
     
     inline def setNames(value: js.Array[DefinedName]): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     

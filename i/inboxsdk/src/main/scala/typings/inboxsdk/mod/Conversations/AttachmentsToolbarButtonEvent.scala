@@ -15,7 +15,8 @@ object AttachmentsToolbarButtonEvent {
     __obj.asInstanceOf[AttachmentsToolbarButtonEvent]
   }
   
-  extension [Self <: AttachmentsToolbarButtonEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachmentsToolbarButtonEvent] (val x: Self) extends AnyVal {
     
     inline def setAttachmentCardViews(value: js.Array[AttachmentCardView]): Self = StObject.set(x, "attachmentCardViews", value.asInstanceOf[js.Any])
     

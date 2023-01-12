@@ -23,7 +23,8 @@ object UpdateNumberOfDomainControllersRequest {
     __obj.asInstanceOf[UpdateNumberOfDomainControllersRequest]
   }
   
-  extension [Self <: UpdateNumberOfDomainControllersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateNumberOfDomainControllersRequest] (val x: Self) extends AnyVal {
     
     inline def setDesiredNumber(value: DesiredNumberOfDomainControllers): Self = StObject.set(x, "DesiredNumber", value.asInstanceOf[js.Any])
     

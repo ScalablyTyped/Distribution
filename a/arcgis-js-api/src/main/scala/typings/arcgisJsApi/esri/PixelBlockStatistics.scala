@@ -34,7 +34,8 @@ object PixelBlockStatistics {
     __obj.asInstanceOf[PixelBlockStatistics]
   }
   
-  extension [Self <: PixelBlockStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PixelBlockStatistics] (val x: Self) extends AnyVal {
     
     inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     

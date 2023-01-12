@@ -64,7 +64,8 @@ object RecognizeUtteranceRequest {
     __obj.asInstanceOf[RecognizeUtteranceRequest]
   }
   
-  extension [Self <: RecognizeUtteranceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecognizeUtteranceRequest] (val x: Self) extends AnyVal {
     
     inline def setBotAliasId(value: BotAliasIdentifier): Self = StObject.set(x, "botAliasId", value.asInstanceOf[js.Any])
     

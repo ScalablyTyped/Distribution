@@ -40,7 +40,8 @@ object XTextRangeCompare {
     __obj.asInstanceOf[XTextRangeCompare]
   }
   
-  extension [Self <: XTextRangeCompare](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextRangeCompare] (val x: Self) extends AnyVal {
     
     inline def setCompareRegionEnds(value: (XTextRange, XTextRange) => Double): Self = StObject.set(x, "compareRegionEnds", js.Any.fromFunction2(value))
     

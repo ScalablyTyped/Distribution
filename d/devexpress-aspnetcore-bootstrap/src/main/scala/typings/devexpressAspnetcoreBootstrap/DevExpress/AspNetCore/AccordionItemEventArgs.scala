@@ -27,7 +27,8 @@ object AccordionItemEventArgs {
     __obj.asInstanceOf[AccordionItemEventArgs]
   }
   
-  extension [Self <: AccordionItemEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccordionItemEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHtmlElement(value: js.Object): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     

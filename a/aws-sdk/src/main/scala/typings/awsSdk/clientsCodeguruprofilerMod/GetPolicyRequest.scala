@@ -18,7 +18,8 @@ object GetPolicyRequest {
     __obj.asInstanceOf[GetPolicyRequest]
   }
   
-  extension [Self <: GetPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
   }

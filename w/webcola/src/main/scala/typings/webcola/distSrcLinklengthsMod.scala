@@ -33,7 +33,8 @@ object distSrcLinklengthsMod {
       __obj.asInstanceOf[DirectedEdgeConstraints]
     }
     
-    extension [Self <: DirectedEdgeConstraints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectedEdgeConstraints] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object distSrcLinklengthsMod {
       __obj.asInstanceOf[IConstraint]
     }
     
-    extension [Self <: IConstraint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConstraint] (val x: Self) extends AnyVal {
       
       inline def setGap(value: Double): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
       
@@ -79,7 +81,8 @@ object distSrcLinklengthsMod {
       __obj.asInstanceOf[LinkAccessor[Link]]
     }
     
-    extension [Self <: LinkAccessor[?], Link](x: Self & LinkAccessor[Link]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkAccessor[?], Link] (val x: Self & LinkAccessor[Link]) extends AnyVal {
       
       inline def setGetSourceIndex(value: Link => Double): Self = StObject.set(x, "getSourceIndex", js.Any.fromFunction1(value))
       
@@ -100,7 +103,8 @@ object distSrcLinklengthsMod {
       __obj.asInstanceOf[LinkLengthAccessor[Link]]
     }
     
-    extension [Self <: LinkLengthAccessor[?], Link](x: Self & LinkLengthAccessor[Link]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkLengthAccessor[?], Link] (val x: Self & LinkLengthAccessor[Link]) extends AnyVal {
       
       inline def setSetLength(value: (Link, Double) => Unit): Self = StObject.set(x, "setLength", js.Any.fromFunction2(value))
     }
@@ -119,7 +123,8 @@ object distSrcLinklengthsMod {
       __obj.asInstanceOf[LinkSepAccessor[Link]]
     }
     
-    extension [Self <: LinkSepAccessor[?], Link](x: Self & LinkSepAccessor[Link]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkSepAccessor[?], Link] (val x: Self & LinkSepAccessor[Link]) extends AnyVal {
       
       inline def setGetMinSeparation(value: Link => Double): Self = StObject.set(x, "getMinSeparation", js.Any.fromFunction1(value))
     }

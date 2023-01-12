@@ -33,7 +33,8 @@ object DiskResourceUtilization {
     __obj.asInstanceOf[DiskResourceUtilization]
   }
   
-  extension [Self <: DiskResourceUtilization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiskResourceUtilization] (val x: Self) extends AnyVal {
     
     inline def setDiskReadBytesPerSecond(value: GenericString): Self = StObject.set(x, "DiskReadBytesPerSecond", value.asInstanceOf[js.Any])
     

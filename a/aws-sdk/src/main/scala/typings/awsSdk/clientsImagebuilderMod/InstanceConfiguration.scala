@@ -23,7 +23,8 @@ object InstanceConfiguration {
     __obj.asInstanceOf[InstanceConfiguration]
   }
   
-  extension [Self <: InstanceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBlockDeviceMappings(value: InstanceBlockDeviceMappings): Self = StObject.set(x, "blockDeviceMappings", value.asInstanceOf[js.Any])
     

@@ -81,7 +81,8 @@ object mod {
         __obj.asInstanceOf[TextDecodeOptions]
       }
       
-      extension [Self <: TextDecodeOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TextDecodeOptions] (val x: Self) extends AnyVal {
         
         inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
         
@@ -119,7 +120,8 @@ object mod {
         __obj.asInstanceOf[TextDecoderOptions]
       }
       
-      extension [Self <: TextDecoderOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TextDecoderOptions] (val x: Self) extends AnyVal {
         
         inline def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
         
@@ -159,7 +161,8 @@ object mod {
         __obj.asInstanceOf[TextEncodeOptions]
       }
       
-      extension [Self <: TextEncodeOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TextEncodeOptions] (val x: Self) extends AnyVal {
         
         inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
         
@@ -189,7 +192,8 @@ object mod {
         __obj.asInstanceOf[TextEncoderOptions]
       }
       
-      extension [Self <: TextEncoderOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TextEncoderOptions] (val x: Self) extends AnyVal {
         
         inline def setNONSTANDARD_allowLegacyEncoding(value: Boolean): Self = StObject.set(x, "NONSTANDARD_allowLegacyEncoding", value.asInstanceOf[js.Any])
         
@@ -237,7 +241,8 @@ object mod {
         __obj.asInstanceOf[TextEncodingStatic]
       }
       
-      extension [Self <: TextEncodingStatic](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TextEncodingStatic] (val x: Self) extends AnyVal {
         
         inline def setTextDecoder(value: TextDecoderStatic): Self = StObject.set(x, "TextDecoder", value.asInstanceOf[js.Any])
         

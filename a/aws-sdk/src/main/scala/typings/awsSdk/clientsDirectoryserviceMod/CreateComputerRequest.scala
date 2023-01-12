@@ -38,7 +38,8 @@ object CreateComputerRequest {
     __obj.asInstanceOf[CreateComputerRequest]
   }
   
-  extension [Self <: CreateComputerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateComputerRequest] (val x: Self) extends AnyVal {
     
     inline def setComputerAttributes(value: Attributes): Self = StObject.set(x, "ComputerAttributes", value.asInstanceOf[js.Any])
     

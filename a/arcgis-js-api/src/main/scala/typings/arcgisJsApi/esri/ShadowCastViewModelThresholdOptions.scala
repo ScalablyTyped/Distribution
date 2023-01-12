@@ -49,7 +49,8 @@ object ShadowCastViewModelThresholdOptions {
     __obj.asInstanceOf[ShadowCastViewModelThresholdOptions]
   }
   
-  extension [Self <: ShadowCastViewModelThresholdOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShadowCastViewModelThresholdOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

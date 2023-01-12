@@ -23,7 +23,8 @@ object distSrcInterfaceMod {
       __obj.asInstanceOf[PBLink]
     }
     
-    extension [Self <: PBLink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PBLink] (val x: Self) extends AnyVal {
       
       inline def setHash(value: CID[Any, Double, Double, Version]): Self = StObject.set(x, "Hash", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object distSrcInterfaceMod {
       __obj.asInstanceOf[PBNode]
     }
     
-    extension [Self <: PBNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PBNode] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object distSrcInterfaceMod {
       __obj.asInstanceOf[RawPBLink]
     }
     
-    extension [Self <: RawPBLink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawPBLink] (val x: Self) extends AnyVal {
       
       inline def setHash(value: js.typedarray.Uint8Array): Self = StObject.set(x, "Hash", value.asInstanceOf[js.Any])
       
@@ -100,7 +103,8 @@ object distSrcInterfaceMod {
       __obj.asInstanceOf[RawPBNode]
     }
     
-    extension [Self <: RawPBNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawPBNode] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       

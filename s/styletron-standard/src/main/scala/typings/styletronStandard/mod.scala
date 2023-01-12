@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[StandardEngine]
     }
     
-    extension [Self <: StandardEngine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StandardEngine] (val x: Self) extends AnyVal {
       
       inline def setRenderFontFace(value: FontFace => String): Self = StObject.set(x, "renderFontFace", js.Any.fromFunction1(value))
       

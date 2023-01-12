@@ -35,7 +35,8 @@ object RunInTerminalRequest {
     __obj.asInstanceOf[RunInTerminalRequest]
   }
   
-  extension [Self <: RunInTerminalRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunInTerminalRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: RunInTerminalRequestArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

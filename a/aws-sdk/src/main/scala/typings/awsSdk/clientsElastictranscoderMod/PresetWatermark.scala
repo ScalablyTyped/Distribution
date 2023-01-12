@@ -63,7 +63,8 @@ object PresetWatermark {
     __obj.asInstanceOf[PresetWatermark]
   }
   
-  extension [Self <: PresetWatermark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PresetWatermark] (val x: Self) extends AnyVal {
     
     inline def setHorizontalAlign(value: HorizontalAlign): Self = StObject.set(x, "HorizontalAlign", value.asInstanceOf[js.Any])
     

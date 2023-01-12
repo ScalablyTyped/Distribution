@@ -19,7 +19,8 @@ object ExtentEvent {
     __obj.asInstanceOf[ExtentEvent]
   }
   
-  extension [Self <: ExtentEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtentEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

@@ -21,7 +21,8 @@ object TargetedManagedAppProtection {
     __obj.asInstanceOf[TargetedManagedAppProtection]
   }
   
-  extension [Self <: TargetedManagedAppProtection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetedManagedAppProtection] (val x: Self) extends AnyVal {
     
     inline def setAssignments(value: NullableOption[js.Array[TargetedManagedAppPolicyAssignment]]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
     

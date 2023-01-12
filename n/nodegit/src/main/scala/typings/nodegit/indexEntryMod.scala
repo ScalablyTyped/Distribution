@@ -49,7 +49,8 @@ object indexEntryMod {
       __obj.asInstanceOf[IndexTime]
     }
     
-    extension [Self <: IndexTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexTime] (val x: Self) extends AnyVal {
       
       inline def setNanoseconds(value: () => Double): Self = StObject.set(x, "nanoseconds", js.Any.fromFunction0(value))
       

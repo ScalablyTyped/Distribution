@@ -50,7 +50,8 @@ object XSpinField {
     __obj.asInstanceOf[XSpinField]
   }
   
-  extension [Self <: XSpinField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSpinField] (val x: Self) extends AnyVal {
     
     inline def setAddSpinListener(value: XSpinListener => Unit): Self = StObject.set(x, "addSpinListener", js.Any.fromFunction1(value))
     

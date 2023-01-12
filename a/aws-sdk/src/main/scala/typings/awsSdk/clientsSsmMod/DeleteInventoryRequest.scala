@@ -33,7 +33,8 @@ object DeleteInventoryRequest {
     __obj.asInstanceOf[DeleteInventoryRequest]
   }
   
-  extension [Self <: DeleteInventoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteInventoryRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: UUID): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

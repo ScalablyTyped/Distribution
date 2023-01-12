@@ -21,7 +21,8 @@ object SQLErrorEvent {
     __obj.asInstanceOf[SQLErrorEvent]
   }
   
-  extension [Self <: SQLErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SQLErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setReason(value: Any): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
   }

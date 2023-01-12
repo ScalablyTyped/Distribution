@@ -458,7 +458,8 @@ object sapUiUx3ExactListMod {
       __obj.asInstanceOf[ExactListSettings]
     }
     
-    extension [Self <: ExactListSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExactListSettings] (val x: Self) extends AnyVal {
       
       inline def setAttributeSelected(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "attributeSelected", js.Any.fromFunction1(value))
       

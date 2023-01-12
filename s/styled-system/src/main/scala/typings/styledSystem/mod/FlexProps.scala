@@ -21,7 +21,8 @@ object FlexProps {
     __obj.asInstanceOf[FlexProps[ThemeType, TVal]]
   }
   
-  extension [Self <: FlexProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (FlexProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (FlexProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setFlex(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     

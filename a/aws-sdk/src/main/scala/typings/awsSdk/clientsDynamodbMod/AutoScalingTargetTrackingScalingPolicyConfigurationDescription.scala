@@ -33,7 +33,8 @@ object AutoScalingTargetTrackingScalingPolicyConfigurationDescription {
     __obj.asInstanceOf[AutoScalingTargetTrackingScalingPolicyConfigurationDescription]
   }
   
-  extension [Self <: AutoScalingTargetTrackingScalingPolicyConfigurationDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoScalingTargetTrackingScalingPolicyConfigurationDescription] (val x: Self) extends AnyVal {
     
     inline def setDisableScaleIn(value: BooleanObject): Self = StObject.set(x, "DisableScaleIn", value.asInstanceOf[js.Any])
     

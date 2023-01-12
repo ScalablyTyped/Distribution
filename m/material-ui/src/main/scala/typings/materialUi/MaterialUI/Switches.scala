@@ -58,7 +58,8 @@ object Switches {
       __obj.asInstanceOf[CheckboxProps]
     }
     
-    extension [Self <: CheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setCheckedIcon(value: ReactElement): Self = StObject.set(x, "checkedIcon", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object Switches {
       __obj.asInstanceOf[CommonEnhancedSwitchProps[T]]
     }
     
-    extension [Self <: CommonEnhancedSwitchProps[?], T](x: Self & CommonEnhancedSwitchProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonEnhancedSwitchProps[?], T] (val x: Self & CommonEnhancedSwitchProps[T]) extends AnyVal {
       
       inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -193,7 +195,8 @@ object Switches {
       __obj.asInstanceOf[EnhancedSwitchProps]
     }
     
-    extension [Self <: EnhancedSwitchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnhancedSwitchProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultSwitched(value: Boolean): Self = StObject.set(x, "defaultSwitched", value.asInstanceOf[js.Any])
       
@@ -300,7 +303,8 @@ object Switches {
       __obj.asInstanceOf[RadioButtonGroupProps]
     }
     
-    extension [Self <: RadioButtonGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioButtonGroupProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -362,7 +366,8 @@ object Switches {
       __obj.asInstanceOf[RadioButtonProps]
     }
     
-    extension [Self <: RadioButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioButtonProps] (val x: Self) extends AnyVal {
       
       inline def setCheckedIcon(value: ReactElement): Self = StObject.set(x, "checkedIcon", value.asInstanceOf[js.Any])
       
@@ -445,7 +450,8 @@ object Switches {
       __obj.asInstanceOf[ToggleProps]
     }
     
-    extension [Self <: ToggleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultToggled(value: Boolean): Self = StObject.set(x, "defaultToggled", value.asInstanceOf[js.Any])
       

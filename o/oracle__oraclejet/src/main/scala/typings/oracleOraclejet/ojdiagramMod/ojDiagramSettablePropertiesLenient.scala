@@ -120,7 +120,8 @@ object ojDiagramSettablePropertiesLenient {
     __obj.asInstanceOf[ojDiagramSettablePropertiesLenient[K1, K2, D1, D2]]
   }
   
-  extension [Self <: ojDiagramSettablePropertiesLenient[?, ?, ?, ?], K1, K2, D1, D2](x: Self & (ojDiagramSettablePropertiesLenient[K1, K2, D1, D2])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojDiagramSettablePropertiesLenient[?, ?, ?, ?], K1, K2, D1, D2] (val x: Self & (ojDiagramSettablePropertiesLenient[K1, K2, D1, D2])) extends AnyVal {
     
     inline def setAnimationOnDataChange(value: auto | none): Self = StObject.set(x, "animationOnDataChange", value.asInstanceOf[js.Any])
     

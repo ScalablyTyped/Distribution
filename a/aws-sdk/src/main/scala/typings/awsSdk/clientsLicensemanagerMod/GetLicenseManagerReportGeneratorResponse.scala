@@ -18,7 +18,8 @@ object GetLicenseManagerReportGeneratorResponse {
     __obj.asInstanceOf[GetLicenseManagerReportGeneratorResponse]
   }
   
-  extension [Self <: GetLicenseManagerReportGeneratorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLicenseManagerReportGeneratorResponse] (val x: Self) extends AnyVal {
     
     inline def setReportGenerator(value: ReportGenerator): Self = StObject.set(x, "ReportGenerator", value.asInstanceOf[js.Any])
     

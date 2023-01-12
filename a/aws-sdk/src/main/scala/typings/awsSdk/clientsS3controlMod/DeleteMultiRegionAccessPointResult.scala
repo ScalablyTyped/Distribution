@@ -18,7 +18,8 @@ object DeleteMultiRegionAccessPointResult {
     __obj.asInstanceOf[DeleteMultiRegionAccessPointResult]
   }
   
-  extension [Self <: DeleteMultiRegionAccessPointResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMultiRegionAccessPointResult] (val x: Self) extends AnyVal {
     
     inline def setRequestTokenARN(value: AsyncRequestTokenARN): Self = StObject.set(x, "RequestTokenARN", value.asInstanceOf[js.Any])
     

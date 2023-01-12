@@ -22,7 +22,8 @@ object ExpressionRuleType {
     __obj.asInstanceOf[ExpressionRuleType]
   }
   
-  extension [Self <: ExpressionRuleType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpressionRuleType] (val x: Self) extends AnyVal {
     
     inline def setFormulae(value: js.Array[Any]): Self = StObject.set(x, "formulae", value.asInstanceOf[js.Any])
     

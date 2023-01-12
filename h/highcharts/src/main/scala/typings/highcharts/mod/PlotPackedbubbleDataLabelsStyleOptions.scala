@@ -15,7 +15,8 @@ object PlotPackedbubbleDataLabelsStyleOptions {
     __obj.asInstanceOf[PlotPackedbubbleDataLabelsStyleOptions]
   }
   
-  extension [Self <: PlotPackedbubbleDataLabelsStyleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPackedbubbleDataLabelsStyleOptions] (val x: Self) extends AnyVal {
     
     inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     

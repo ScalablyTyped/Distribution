@@ -18,7 +18,8 @@ object ReplicaModifications {
     __obj.asInstanceOf[ReplicaModifications]
   }
   
-  extension [Self <: ReplicaModifications](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicaModifications] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: ReplicaModificationsStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }

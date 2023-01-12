@@ -48,7 +48,8 @@ object ICoreWindowFlyout {
     __obj.asInstanceOf[ICoreWindowFlyout]
   }
   
-  extension [Self <: ICoreWindowFlyout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICoreWindowFlyout] (val x: Self) extends AnyVal {
     
     inline def setBackButtonCommand(value: /* command */ IUICommand => Unit): Self = StObject.set(x, "backButtonCommand", js.Any.fromFunction1(value))
     

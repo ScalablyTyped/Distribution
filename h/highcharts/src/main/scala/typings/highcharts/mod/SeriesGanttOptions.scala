@@ -88,7 +88,8 @@ object SeriesGanttOptions {
     __obj.asInstanceOf[SeriesGanttOptions]
   }
   
-  extension [Self <: SeriesGanttOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesGanttOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[GanttPointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

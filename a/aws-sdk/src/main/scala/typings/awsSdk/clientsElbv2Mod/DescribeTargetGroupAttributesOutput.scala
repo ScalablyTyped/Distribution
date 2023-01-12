@@ -18,7 +18,8 @@ object DescribeTargetGroupAttributesOutput {
     __obj.asInstanceOf[DescribeTargetGroupAttributesOutput]
   }
   
-  extension [Self <: DescribeTargetGroupAttributesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTargetGroupAttributesOutput] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: TargetGroupAttributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

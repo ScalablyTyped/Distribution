@@ -125,7 +125,8 @@ object PipelineRequest {
     __obj.asInstanceOf[PipelineRequest]
   }
   
-  extension [Self <: PipelineRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelineRequest] (val x: Self) extends AnyVal {
     
     inline def setAbortSignal(value: AbortSignalLike): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
     

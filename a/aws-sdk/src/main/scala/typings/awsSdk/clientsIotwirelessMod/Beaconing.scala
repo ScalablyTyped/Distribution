@@ -23,7 +23,8 @@ object Beaconing {
     __obj.asInstanceOf[Beaconing]
   }
   
-  extension [Self <: Beaconing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Beaconing] (val x: Self) extends AnyVal {
     
     inline def setDataRate(value: BeaconingDataRate): Self = StObject.set(x, "DataRate", value.asInstanceOf[js.Any])
     

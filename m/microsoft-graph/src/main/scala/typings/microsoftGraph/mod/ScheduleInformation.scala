@@ -35,7 +35,8 @@ object ScheduleInformation {
     __obj.asInstanceOf[ScheduleInformation]
   }
   
-  extension [Self <: ScheduleInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduleInformation] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityView(value: NullableOption[String]): Self = StObject.set(x, "availabilityView", value.asInstanceOf[js.Any])
     

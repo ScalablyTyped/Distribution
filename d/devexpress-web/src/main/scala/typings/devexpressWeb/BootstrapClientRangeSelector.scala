@@ -72,7 +72,8 @@ object BootstrapClientRangeSelector {
     __obj.asInstanceOf[BootstrapClientRangeSelector]
   }
   
-  extension [Self <: BootstrapClientRangeSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientRangeSelector] (val x: Self) extends AnyVal {
     
     inline def setGetValue(value: () => js.Array[Any]): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
     

@@ -98,7 +98,8 @@ object AwsElbLoadBalancerDetails {
     __obj.asInstanceOf[AwsElbLoadBalancerDetails]
   }
   
-  extension [Self <: AwsElbLoadBalancerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElbLoadBalancerDetails] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZones(value: StringList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     

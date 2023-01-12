@@ -23,7 +23,8 @@ object Published {
     __obj.asInstanceOf[Published]
   }
   
-  extension [Self <: Published](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Published] (val x: Self) extends AnyVal {
     
     inline def setAdditions(value: js.Array[DraggableDimension]): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
     

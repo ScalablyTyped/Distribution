@@ -183,7 +183,8 @@ object libMapUrlTileMod {
       __obj.asInstanceOf[MapUrlTileProps]
     }
     
-    extension [Self <: MapUrlTileProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapUrlTileProps] (val x: Self) extends AnyVal {
       
       inline def setDoubleTileSize(value: Boolean): Self = StObject.set(x, "doubleTileSize", value.asInstanceOf[js.Any])
       

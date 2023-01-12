@@ -33,7 +33,8 @@ object CreateArchiveRuleRequest {
     __obj.asInstanceOf[CreateArchiveRuleRequest]
   }
   
-  extension [Self <: CreateArchiveRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateArchiveRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalyzerName(value: Name): Self = StObject.set(x, "analyzerName", value.asInstanceOf[js.Any])
     

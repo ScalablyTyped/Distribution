@@ -71,7 +71,8 @@ object CustomBiddingAlgorithmIdFields {
     __obj.asInstanceOf[CustomBiddingAlgorithmIdFields]
   }
   
-  extension [Self <: CustomBiddingAlgorithmIdFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomBiddingAlgorithmIdFields] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

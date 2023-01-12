@@ -25,7 +25,8 @@ object SubscriptionListing {
     __obj.asInstanceOf[SubscriptionListing]
   }
   
-  extension [Self <: SubscriptionListing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionListing] (val x: Self) extends AnyVal {
     
     inline def setBenefits(value: js.Array[String]): Self = StObject.set(x, "benefits", value.asInstanceOf[js.Any])
     

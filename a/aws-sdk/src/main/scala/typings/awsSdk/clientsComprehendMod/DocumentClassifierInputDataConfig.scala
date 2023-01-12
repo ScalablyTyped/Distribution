@@ -38,7 +38,8 @@ object DocumentClassifierInputDataConfig {
     __obj.asInstanceOf[DocumentClassifierInputDataConfig]
   }
   
-  extension [Self <: DocumentClassifierInputDataConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentClassifierInputDataConfig] (val x: Self) extends AnyVal {
     
     inline def setAugmentedManifests(value: DocumentClassifierAugmentedManifestsList): Self = StObject.set(x, "AugmentedManifests", value.asInstanceOf[js.Any])
     

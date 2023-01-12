@@ -23,7 +23,8 @@ object DashConfigurationForPut {
     __obj.asInstanceOf[DashConfigurationForPut]
   }
   
-  extension [Self <: DashConfigurationForPut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashConfigurationForPut] (val x: Self) extends AnyVal {
     
     inline def setMpdLocation(value: _String): Self = StObject.set(x, "MpdLocation", value.asInstanceOf[js.Any])
     

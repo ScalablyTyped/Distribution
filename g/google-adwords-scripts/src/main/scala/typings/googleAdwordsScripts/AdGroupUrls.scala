@@ -24,7 +24,8 @@ object AdGroupUrls {
     __obj.asInstanceOf[AdGroupUrls]
   }
   
-  extension [Self <: AdGroupUrls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdGroupUrls] (val x: Self) extends AnyVal {
     
     inline def setClearTrackingTemplate(value: () => Unit): Self = StObject.set(x, "clearTrackingTemplate", js.Any.fromFunction0(value))
   }

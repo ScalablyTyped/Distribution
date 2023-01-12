@@ -23,7 +23,8 @@ object UserGroupPendingChanges {
     __obj.asInstanceOf[UserGroupPendingChanges]
   }
   
-  extension [Self <: UserGroupPendingChanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserGroupPendingChanges] (val x: Self) extends AnyVal {
     
     inline def setUserIdsToAdd(value: UserIdList): Self = StObject.set(x, "UserIdsToAdd", value.asInstanceOf[js.Any])
     

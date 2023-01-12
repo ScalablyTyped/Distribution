@@ -76,7 +76,8 @@ object distConfigColorsMod extends Shortcut {
       __obj.asInstanceOf[Colors]
     }
     
-    extension [Self <: Colors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
       
       inline def setBlack(value: String): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object distConfigColorsMod extends Shortcut {
       __obj.asInstanceOf[PlatformColors]
     }
     
-    extension [Self <: PlatformColors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlatformColors] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

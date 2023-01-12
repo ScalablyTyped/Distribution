@@ -19,7 +19,8 @@ object InternetMessageHeader {
     __obj.asInstanceOf[InternetMessageHeader]
   }
   
-  extension [Self <: InternetMessageHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternetMessageHeader] (val x: Self) extends AnyVal {
     
     inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

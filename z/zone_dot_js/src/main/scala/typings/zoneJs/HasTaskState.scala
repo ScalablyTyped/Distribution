@@ -21,7 +21,8 @@ object HasTaskState {
     __obj.asInstanceOf[HasTaskState]
   }
   
-  extension [Self <: HasTaskState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasTaskState] (val x: Self) extends AnyVal {
     
     inline def setChange(value: TaskType): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     

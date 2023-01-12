@@ -35,7 +35,8 @@ object SunLight {
     __obj.asInstanceOf[SunLight]
   }
   
-  extension [Self <: SunLight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SunLight] (val x: Self) extends AnyVal {
     
     inline def setAmbient(value: ColorAndIntensity): Self = StObject.set(x, "ambient", value.asInstanceOf[js.Any])
     

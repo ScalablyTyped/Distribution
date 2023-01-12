@@ -25,7 +25,8 @@ object DidCloseNotebookDocumentParams {
     __obj.asInstanceOf[DidCloseNotebookDocumentParams]
   }
   
-  extension [Self <: DidCloseNotebookDocumentParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DidCloseNotebookDocumentParams] (val x: Self) extends AnyVal {
     
     inline def setCellTextDocuments(value: js.Array[TextDocumentIdentifier]): Self = StObject.set(x, "cellTextDocuments", value.asInstanceOf[js.Any])
     

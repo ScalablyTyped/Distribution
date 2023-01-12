@@ -15,7 +15,8 @@ object NetworkConfigurationCatalog {
     __obj.asInstanceOf[NetworkConfigurationCatalog]
   }
   
-  extension [Self <: NetworkConfigurationCatalog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkConfigurationCatalog] (val x: Self) extends AnyVal {
     
     inline def setConfigurations(value: js.Array[NetworkConfiguration]): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
     

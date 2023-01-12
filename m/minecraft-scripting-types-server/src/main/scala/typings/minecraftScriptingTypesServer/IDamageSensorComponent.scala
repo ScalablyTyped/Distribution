@@ -33,7 +33,8 @@ object IDamageSensorComponent {
     __obj.asInstanceOf[IDamageSensorComponent]
   }
   
-  extension [Self <: IDamageSensorComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDamageSensorComponent] (val x: Self) extends AnyVal {
     
     inline def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

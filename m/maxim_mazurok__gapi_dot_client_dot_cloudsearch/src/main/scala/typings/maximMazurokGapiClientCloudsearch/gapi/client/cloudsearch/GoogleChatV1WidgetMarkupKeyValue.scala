@@ -37,7 +37,8 @@ object GoogleChatV1WidgetMarkupKeyValue {
     __obj.asInstanceOf[GoogleChatV1WidgetMarkupKeyValue]
   }
   
-  extension [Self <: GoogleChatV1WidgetMarkupKeyValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleChatV1WidgetMarkupKeyValue] (val x: Self) extends AnyVal {
     
     inline def setBottomLabel(value: String): Self = StObject.set(x, "bottomLabel", value.asInstanceOf[js.Any])
     

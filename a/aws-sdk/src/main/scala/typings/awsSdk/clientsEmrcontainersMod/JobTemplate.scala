@@ -58,7 +58,8 @@ object JobTemplate {
     __obj.asInstanceOf[JobTemplate]
   }
   
-  extension [Self <: JobTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobTemplate] (val x: Self) extends AnyVal {
     
     inline def setArn(value: JobTemplateArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object SourceAlgorithm {
     __obj.asInstanceOf[SourceAlgorithm]
   }
   
-  extension [Self <: SourceAlgorithm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceAlgorithm] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmName(value: ArnOrName): Self = StObject.set(x, "AlgorithmName", value.asInstanceOf[js.Any])
     

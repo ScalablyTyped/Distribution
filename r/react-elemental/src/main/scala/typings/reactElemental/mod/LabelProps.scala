@@ -17,7 +17,8 @@ object LabelProps {
     __obj.asInstanceOf[LabelProps]
   }
   
-  extension [Self <: LabelProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelProps] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[FormDataOptions]
     }
     
-    extension [Self <: FormDataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormDataOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoClean(value: Boolean): Self = StObject.set(x, "autoClean", value.asInstanceOf[js.Any])
       

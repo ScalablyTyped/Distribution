@@ -32,7 +32,8 @@ object distCommandsCountMinSketchIncrbyMod {
       __obj.asInstanceOf[IncrByItem]
     }
     
-    extension [Self <: IncrByItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncrByItem] (val x: Self) extends AnyVal {
       
       inline def setIncrementBy(value: Double): Self = StObject.set(x, "incrementBy", value.asInstanceOf[js.Any])
       

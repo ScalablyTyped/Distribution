@@ -19,7 +19,8 @@ object CAGExtrudeOptions {
     __obj.asInstanceOf[CAGExtrudeOptions]
   }
   
-  extension [Self <: CAGExtrudeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CAGExtrudeOptions] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

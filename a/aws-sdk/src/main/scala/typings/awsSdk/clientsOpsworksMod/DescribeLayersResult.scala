@@ -18,7 +18,8 @@ object DescribeLayersResult {
     __obj.asInstanceOf[DescribeLayersResult]
   }
   
-  extension [Self <: DescribeLayersResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLayersResult] (val x: Self) extends AnyVal {
     
     inline def setLayers(value: Layers): Self = StObject.set(x, "Layers", value.asInstanceOf[js.Any])
     

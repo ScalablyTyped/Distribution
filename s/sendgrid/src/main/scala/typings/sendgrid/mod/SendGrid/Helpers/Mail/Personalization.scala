@@ -67,7 +67,8 @@ object Personalization {
     __obj.asInstanceOf[Personalization]
   }
   
-  extension [Self <: Personalization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Personalization] (val x: Self) extends AnyVal {
     
     inline def setAddBcc(value: Email => Unit): Self = StObject.set(x, "addBcc", js.Any.fromFunction1(value))
     

@@ -25,7 +25,8 @@ object distDeclarationsSrcSelectMod {
       __obj.asInstanceOf[SelectProps]
     }
     
-    extension [Self <: SelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectProps] (val x: Self) extends AnyVal {
       
       inline def setArrow(value: ReactElement): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
       

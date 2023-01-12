@@ -24,7 +24,8 @@ object BrowseOptions {
     __obj.asInstanceOf[BrowseOptions[TObject]]
   }
   
-  extension [Self <: BrowseOptions[?], TObject](x: Self & BrowseOptions[TObject]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowseOptions[?], TObject] (val x: Self & BrowseOptions[TObject]) extends AnyVal {
     
     inline def setBatch(value: /* batch */ js.Array[TObject & ObjectWithObjectID] => Any): Self = StObject.set(x, "batch", js.Any.fromFunction1(value))
     

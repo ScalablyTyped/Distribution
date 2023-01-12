@@ -19,7 +19,8 @@ object GdataDownloadParameters {
     __obj.asInstanceOf[GdataDownloadParameters]
   }
   
-  extension [Self <: GdataDownloadParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GdataDownloadParameters] (val x: Self) extends AnyVal {
     
     inline def setAllowGzipCompression(value: Boolean): Self = StObject.set(x, "allowGzipCompression", value.asInstanceOf[js.Any])
     

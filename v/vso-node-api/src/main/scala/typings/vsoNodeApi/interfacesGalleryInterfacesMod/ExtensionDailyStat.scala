@@ -34,7 +34,8 @@ object ExtensionDailyStat {
     __obj.asInstanceOf[ExtensionDailyStat]
   }
   
-  extension [Self <: ExtensionDailyStat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionDailyStat] (val x: Self) extends AnyVal {
     
     inline def setCounts(value: EventCounts): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
     

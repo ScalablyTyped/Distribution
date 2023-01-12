@@ -52,7 +52,8 @@ object TransformJobDefinition {
     __obj.asInstanceOf[TransformJobDefinition]
   }
   
-  extension [Self <: TransformJobDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformJobDefinition] (val x: Self) extends AnyVal {
     
     inline def setBatchStrategy(value: BatchStrategy): Self = StObject.set(x, "BatchStrategy", value.asInstanceOf[js.Any])
     

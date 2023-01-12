@@ -28,7 +28,8 @@ object PartialStringOptions {
     __obj.asInstanceOf[PartialStringOptions]
   }
   
-  extension [Self <: PartialStringOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStringOptions] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

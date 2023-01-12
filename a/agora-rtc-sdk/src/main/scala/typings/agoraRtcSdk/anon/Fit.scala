@@ -40,7 +40,8 @@ object Fit {
     __obj.asInstanceOf[Fit]
   }
   
-  extension [Self <: Fit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fit] (val x: Self) extends AnyVal {
     
     inline def setFit(value: cover | contain): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     

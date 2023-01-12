@@ -34,7 +34,8 @@ object RecordsCount {
     __obj.asInstanceOf[RecordsCount]
   }
   
-  extension [Self <: RecordsCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordsCount] (val x: Self) extends AnyVal {
     
     inline def setAttach(value: () => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction0(value))
     

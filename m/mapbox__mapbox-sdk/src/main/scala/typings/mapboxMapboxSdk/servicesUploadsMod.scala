@@ -46,7 +46,8 @@ object servicesUploadsMod {
       __obj.asInstanceOf[S3Credentials]
     }
     
-    extension [Self <: S3Credentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3Credentials] (val x: Self) extends AnyVal {
       
       inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object servicesUploadsMod {
       __obj.asInstanceOf[UploadResponse]
     }
     
-    extension [Self <: UploadResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadResponse] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       

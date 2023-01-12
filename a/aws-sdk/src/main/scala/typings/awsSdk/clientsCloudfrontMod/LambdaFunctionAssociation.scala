@@ -28,7 +28,8 @@ object LambdaFunctionAssociation {
     __obj.asInstanceOf[LambdaFunctionAssociation]
   }
   
-  extension [Self <: LambdaFunctionAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaFunctionAssociation] (val x: Self) extends AnyVal {
     
     inline def setEventType(value: EventType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
     

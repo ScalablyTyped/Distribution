@@ -146,7 +146,8 @@ object InteractionModeMap {
     __obj.asInstanceOf[InteractionModeMap]
   }
   
-  extension [Self <: InteractionModeMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractionModeMap] (val x: Self) extends AnyVal {
     
     inline def setDataset(
       value: (/* chart */ Chart[ChartType, DefaultDataPoint[ChartType], Any], /* e */ ChartEvent, /* options */ InteractionOptions, /* useFinalPosition */ js.UndefOr[Boolean]) => js.Array[InteractionItem]

@@ -29,7 +29,8 @@ object BadRequest {
     __obj.asInstanceOf[BadRequest]
   }
   
-  extension [Self <: BadRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BadRequest] (val x: Self) extends AnyVal {
     
     inline def setBadRequest(value: scala.Double): Self = StObject.set(x, "badRequest", value.asInstanceOf[js.Any])
     

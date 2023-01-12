@@ -113,7 +113,8 @@ object distCommonjsElementsButtonButtonGroupMod extends Shortcut {
       __obj.asInstanceOf[StrictButtonGroupProps]
     }
     
-    extension [Self <: StrictButtonGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictButtonGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

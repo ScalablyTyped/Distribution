@@ -47,7 +47,8 @@ object ServerOpts {
     __obj.asInstanceOf[ServerOpts]
   }
   
-  extension [Self <: ServerOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerOpts] (val x: Self) extends AnyVal {
     
     inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
     

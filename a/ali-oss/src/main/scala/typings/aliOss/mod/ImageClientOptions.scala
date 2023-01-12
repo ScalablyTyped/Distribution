@@ -34,7 +34,8 @@ object ImageClientOptions {
     __obj.asInstanceOf[ImageClientOptions]
   }
   
-  extension [Self <: ImageClientOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageClientOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
     

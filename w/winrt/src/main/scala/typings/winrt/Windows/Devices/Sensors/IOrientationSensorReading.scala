@@ -19,7 +19,8 @@ object IOrientationSensorReading {
     __obj.asInstanceOf[IOrientationSensorReading]
   }
   
-  extension [Self <: IOrientationSensorReading](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOrientationSensorReading] (val x: Self) extends AnyVal {
     
     inline def setQuaternion(value: SensorQuaternion): Self = StObject.set(x, "quaternion", value.asInstanceOf[js.Any])
     

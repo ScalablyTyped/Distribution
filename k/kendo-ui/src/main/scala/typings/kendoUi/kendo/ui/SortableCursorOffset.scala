@@ -17,7 +17,8 @@ object SortableCursorOffset {
     __obj.asInstanceOf[SortableCursorOffset]
   }
   
-  extension [Self <: SortableCursorOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortableCursorOffset] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

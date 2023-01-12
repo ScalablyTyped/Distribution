@@ -20,7 +20,8 @@ object ServerlessSasl {
     __obj.asInstanceOf[ServerlessSasl]
   }
   
-  extension [Self <: ServerlessSasl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerlessSasl] (val x: Self) extends AnyVal {
     
     inline def setIam(value: Iam): Self = StObject.set(x, "Iam", value.asInstanceOf[js.Any])
     

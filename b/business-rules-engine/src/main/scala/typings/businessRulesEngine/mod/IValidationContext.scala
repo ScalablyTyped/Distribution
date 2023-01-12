@@ -19,7 +19,8 @@ object IValidationContext {
     __obj.asInstanceOf[IValidationContext[T]]
   }
   
-  extension [Self <: IValidationContext[?], T](x: Self & IValidationContext[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IValidationContext[?], T] (val x: Self & IValidationContext[T]) extends AnyVal {
     
     inline def setData(value: T): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     

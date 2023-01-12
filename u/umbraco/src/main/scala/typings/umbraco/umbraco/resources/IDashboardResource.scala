@@ -33,7 +33,8 @@ object IDashboardResource {
     __obj.asInstanceOf[IDashboardResource]
   }
   
-  extension [Self <: IDashboardResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDashboardResource] (val x: Self) extends AnyVal {
     
     inline def setGetDashboard(value: String => IPromise[IResourcePromise]): Self = StObject.set(x, "getDashboard", js.Any.fromFunction1(value))
   }

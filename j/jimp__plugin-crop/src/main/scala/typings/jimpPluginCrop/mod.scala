@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[Crop]
     }
     
-    extension [Self <: Crop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Crop] (val x: Self) extends AnyVal {
       
       inline def setClass(value: CropClass): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     }

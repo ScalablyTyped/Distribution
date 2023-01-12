@@ -144,7 +144,8 @@ object queryMod {
       __obj.asInstanceOf[ExecuteOptions]
     }
     
-    extension [Self <: ExecuteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecuteOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoFetch(value: Boolean): Self = StObject.set(x, "autoFetch", value.asInstanceOf[js.Any])
       
@@ -181,7 +182,8 @@ object queryMod {
       __obj.asInstanceOf[QueryResult[T]]
     }
     
-    extension [Self <: QueryResult[?], T](x: Self & QueryResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryResult[?], T] (val x: Self & QueryResult[T]) extends AnyVal {
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       

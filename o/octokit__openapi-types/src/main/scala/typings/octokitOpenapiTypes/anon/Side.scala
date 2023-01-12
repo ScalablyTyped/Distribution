@@ -34,7 +34,8 @@ object Side {
     __obj.asInstanceOf[Side]
   }
   
-  extension [Self <: Side](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Side] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

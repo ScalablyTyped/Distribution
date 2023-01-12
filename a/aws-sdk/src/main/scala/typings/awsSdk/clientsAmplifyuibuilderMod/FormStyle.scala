@@ -28,7 +28,8 @@ object FormStyle {
     __obj.asInstanceOf[FormStyle]
   }
   
-  extension [Self <: FormStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormStyle] (val x: Self) extends AnyVal {
     
     inline def setHorizontalGap(value: FormStyleConfig): Self = StObject.set(x, "horizontalGap", value.asInstanceOf[js.Any])
     

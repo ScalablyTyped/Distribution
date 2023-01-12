@@ -618,7 +618,8 @@ object libComponentsGridGridMod {
       __obj.asInstanceOf[GridBaseIsolatedProps]
     }
     
-    extension [Self <: GridBaseIsolatedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridBaseIsolatedProps] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -653,7 +654,8 @@ object libComponentsGridGridMod {
       __obj.asInstanceOf[GridBaseProps]
     }
     
-    extension [Self <: GridBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridBaseProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -976,7 +978,8 @@ object libComponentsGridGridMod {
       __obj.asInstanceOf[GridDefaultProps]
     }
     
-    extension [Self <: GridDefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridDefaultProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

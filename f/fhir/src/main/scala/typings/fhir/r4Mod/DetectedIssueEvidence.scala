@@ -25,7 +25,8 @@ object DetectedIssueEvidence {
     __obj.asInstanceOf[DetectedIssueEvidence]
   }
   
-  extension [Self <: DetectedIssueEvidence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectedIssueEvidence] (val x: Self) extends AnyVal {
     
     inline def setCode(value: js.Array[CodeableConcept]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

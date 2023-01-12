@@ -53,7 +53,8 @@ object AttackDetail {
     __obj.asInstanceOf[AttackDetail]
   }
   
-  extension [Self <: AttackDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttackDetail] (val x: Self) extends AnyVal {
     
     inline def setAttackCounters(value: SummarizedCounterList): Self = StObject.set(x, "AttackCounters", value.asInstanceOf[js.Any])
     

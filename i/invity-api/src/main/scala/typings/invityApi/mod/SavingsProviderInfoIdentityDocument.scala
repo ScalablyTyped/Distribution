@@ -22,7 +22,8 @@ object SavingsProviderInfoIdentityDocument {
     __obj.asInstanceOf[SavingsProviderInfoIdentityDocument]
   }
   
-  extension [Self <: SavingsProviderInfoIdentityDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsProviderInfoIdentityDocument] (val x: Self) extends AnyVal {
     
     inline def setDocumentImageSides(value: js.Array[SavingsTradeUserKYCStartDocumentImageSide]): Self = StObject.set(x, "documentImageSides", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object PrismaticConstraintOptions {
     __obj.asInstanceOf[PrismaticConstraintOptions]
   }
   
-  extension [Self <: PrismaticConstraintOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrismaticConstraintOptions] (val x: Self) extends AnyVal {
     
     inline def setDisableRotationalLock(value: Boolean): Self = StObject.set(x, "disableRotationalLock", value.asInstanceOf[js.Any])
     

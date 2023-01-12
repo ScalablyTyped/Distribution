@@ -23,7 +23,8 @@ object SparklinePlotAreaHoverEvent {
     __obj.asInstanceOf[SparklinePlotAreaHoverEvent]
   }
   
-  extension [Self <: SparklinePlotAreaHoverEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparklinePlotAreaHoverEvent] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

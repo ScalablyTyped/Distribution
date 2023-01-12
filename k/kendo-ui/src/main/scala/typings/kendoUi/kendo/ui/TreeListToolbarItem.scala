@@ -21,7 +21,8 @@ object TreeListToolbarItem {
     __obj.asInstanceOf[TreeListToolbarItem]
   }
   
-  extension [Self <: TreeListToolbarItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListToolbarItem] (val x: Self) extends AnyVal {
     
     inline def setClick(value: js.Function): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     

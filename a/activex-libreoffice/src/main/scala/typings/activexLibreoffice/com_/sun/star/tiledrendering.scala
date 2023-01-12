@@ -46,7 +46,8 @@ object tiledrendering {
       __obj.asInstanceOf[XTiledRenderable]
     }
     
-    extension [Self <: XTiledRenderable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XTiledRenderable] (val x: Self) extends AnyVal {
       
       inline def setPaintTile(value: (Any, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "paintTile", js.Any.fromFunction7(value))
     }

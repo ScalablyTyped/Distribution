@@ -25,7 +25,8 @@ object GoogleCloudDialogflowV2CreateConversationModelEvaluationOperationMetadata
     __obj.asInstanceOf[GoogleCloudDialogflowV2CreateConversationModelEvaluationOperationMetadata]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2CreateConversationModelEvaluationOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2CreateConversationModelEvaluationOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setConversationModel(value: String): Self = StObject.set(x, "conversationModel", value.asInstanceOf[js.Any])
     

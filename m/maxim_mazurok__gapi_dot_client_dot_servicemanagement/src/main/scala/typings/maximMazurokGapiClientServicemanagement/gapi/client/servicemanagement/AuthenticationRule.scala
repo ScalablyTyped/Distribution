@@ -25,7 +25,8 @@ object AuthenticationRule {
     __obj.asInstanceOf[AuthenticationRule]
   }
   
-  extension [Self <: AuthenticationRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticationRule] (val x: Self) extends AnyVal {
     
     inline def setAllowWithoutCredential(value: Boolean): Self = StObject.set(x, "allowWithoutCredential", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object EnclosureLocation {
     __obj.asInstanceOf[EnclosureLocation]
   }
   
-  extension [Self <: EnclosureLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnclosureLocation] (val x: Self) extends AnyVal {
     
     inline def setInDock(value: Boolean): Self = StObject.set(x, "inDock", value.asInstanceOf[js.Any])
     

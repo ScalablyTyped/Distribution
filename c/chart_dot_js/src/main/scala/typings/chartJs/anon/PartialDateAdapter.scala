@@ -50,7 +50,8 @@ object PartialDateAdapter {
     __obj.asInstanceOf[PartialDateAdapter]
   }
   
-  extension [Self <: PartialDateAdapter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDateAdapter] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (/* timestamp */ Double, /* amount */ Double, /* unit */ TimeUnit) => Double): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
     

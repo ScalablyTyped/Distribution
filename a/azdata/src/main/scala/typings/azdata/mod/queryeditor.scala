@@ -75,7 +75,8 @@ object queryeditor {
       __obj.asInstanceOf[QueryDocument]
     }
     
-    extension [Self <: QueryDocument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryDocument] (val x: Self) extends AnyVal {
       
       inline def setConnect(value: ConnectionProfile => Thenable[Unit]): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
       

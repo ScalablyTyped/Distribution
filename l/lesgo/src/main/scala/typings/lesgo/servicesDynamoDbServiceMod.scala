@@ -156,7 +156,8 @@ object servicesDynamoDbServiceMod {
       __obj.asInstanceOf[DynamoDb]
     }
     
-    extension [Self <: DynamoDb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamoDb] (val x: Self) extends AnyVal {
       
       inline def setClient(value: DocumentClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,8 @@ object servicesDynamoDbServiceMod {
       __obj.asInstanceOf[DynamoDbParams]
     }
     
-    extension [Self <: DynamoDbParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamoDbParams] (val x: Self) extends AnyVal {
       
       inline def setRegion(value: RegionName): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     }

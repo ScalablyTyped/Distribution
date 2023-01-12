@@ -38,7 +38,8 @@ object TestCafe {
     __obj.asInstanceOf[TestCafe]
   }
   
-  extension [Self <: TestCafe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestCafe] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

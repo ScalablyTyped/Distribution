@@ -38,7 +38,8 @@ object ChildWorkflowExecutionTerminatedEventAttributes {
     __obj.asInstanceOf[ChildWorkflowExecutionTerminatedEventAttributes]
   }
   
-  extension [Self <: ChildWorkflowExecutionTerminatedEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildWorkflowExecutionTerminatedEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setInitiatedEventId(value: EventId): Self = StObject.set(x, "initiatedEventId", value.asInstanceOf[js.Any])
     

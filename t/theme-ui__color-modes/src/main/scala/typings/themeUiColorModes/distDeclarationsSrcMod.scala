@@ -39,7 +39,8 @@ object distDeclarationsSrcMod {
         __obj.asInstanceOf[ThemeUIContextValue]
       }
       
-      extension [Self <: ThemeUIContextValue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ThemeUIContextValue] (val x: Self) extends AnyVal {
         
         inline def setColorMode(value: String): Self = StObject.set(x, "colorMode", value.asInstanceOf[js.Any])
         

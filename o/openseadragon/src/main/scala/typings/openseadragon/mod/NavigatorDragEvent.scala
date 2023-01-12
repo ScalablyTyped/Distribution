@@ -35,7 +35,8 @@ object NavigatorDragEvent {
     __obj.asInstanceOf[NavigatorDragEvent]
   }
   
-  extension [Self <: NavigatorDragEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorDragEvent] (val x: Self) extends AnyVal {
     
     inline def setDelta(value: Point): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     

@@ -150,7 +150,8 @@ object srcNgtscAnnotationsDirectiveSrcHandlerMod {
       __obj.asInstanceOf[DirectiveHandlerData]
     }
     
-    extension [Self <: DirectiveHandlerData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectiveHandlerData] (val x: Self) extends AnyVal {
       
       inline def setBaseClass(value: Reference[ClassDeclaration[DeclarationNode]] | dynamic): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
       

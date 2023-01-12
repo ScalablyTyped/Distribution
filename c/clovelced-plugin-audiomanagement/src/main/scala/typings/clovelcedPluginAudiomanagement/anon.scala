@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[AudioMode]
     }
     
-    extension [Self <: AudioMode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AudioMode] (val x: Self) extends AnyVal {
       
       inline def setAudioMode(value: typings.clovelcedPluginAudiomanagement.mod.AudioMode): Self = StObject.set(x, "audioMode", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[MaxVolume]
     }
     
-    extension [Self <: MaxVolume](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxVolume] (val x: Self) extends AnyVal {
       
       inline def setMaxVolume(value: Double): Self = StObject.set(x, "maxVolume", value.asInstanceOf[js.Any])
     }
@@ -55,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Volume]
     }
     
-    extension [Self <: Volume](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Volume] (val x: Self) extends AnyVal {
       
       inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     }

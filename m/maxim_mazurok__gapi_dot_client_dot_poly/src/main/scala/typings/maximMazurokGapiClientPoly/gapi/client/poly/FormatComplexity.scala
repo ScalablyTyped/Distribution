@@ -22,7 +22,8 @@ object FormatComplexity {
     __obj.asInstanceOf[FormatComplexity]
   }
   
-  extension [Self <: FormatComplexity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatComplexity] (val x: Self) extends AnyVal {
     
     inline def setLodHint(value: Double): Self = StObject.set(x, "lodHint", value.asInstanceOf[js.Any])
     

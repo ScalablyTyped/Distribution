@@ -33,7 +33,8 @@ object ScanThreatName {
     __obj.asInstanceOf[ScanThreatName]
   }
   
-  extension [Self <: ScanThreatName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanThreatName] (val x: Self) extends AnyVal {
     
     inline def setFilePaths(value: FilePaths): Self = StObject.set(x, "FilePaths", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object DisplayReasonText {
     __obj.asInstanceOf[DisplayReasonText]
   }
   
-  extension [Self <: DisplayReasonText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayReasonText] (val x: Self) extends AnyVal {
     
     inline def setDisplayReasonText(value: String): Self = StObject.set(x, "displayReasonText", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ATVDeepLinkOptions {
     __obj.asInstanceOf[ATVDeepLinkOptions]
   }
   
-  extension [Self <: ATVDeepLinkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVDeepLinkOptions] (val x: Self) extends AnyVal {
     
     inline def setOpenURL(value: String): Self = StObject.set(x, "openURL", value.asInstanceOf[js.Any])
   }

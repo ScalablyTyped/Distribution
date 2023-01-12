@@ -25,7 +25,8 @@ object GitPullRequestReviewFileContentInfo {
     __obj.asInstanceOf[GitPullRequestReviewFileContentInfo]
   }
   
-  extension [Self <: GitPullRequestReviewFileContentInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitPullRequestReviewFileContentInfo] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

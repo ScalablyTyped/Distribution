@@ -100,7 +100,8 @@ object ClearAnimationOptions {
     __obj.asInstanceOf[ClearAnimationOptions]
   }
   
-  extension [Self <: ClearAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: Boolean): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

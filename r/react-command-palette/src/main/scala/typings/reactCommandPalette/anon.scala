@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[MaxDisplayed]
     }
     
-    extension [Self <: MaxDisplayed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxDisplayed] (val x: Self) extends AnyVal {
       
       inline def setMaxDisplayed(value: Double): Self = StObject.set(x, "maxDisplayed", value.asInstanceOf[js.Any])
     }

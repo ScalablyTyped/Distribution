@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[DurationUnitFormat]
     }
     
-    extension [Self <: DurationUnitFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DurationUnitFormat] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: Double => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
@@ -84,7 +85,8 @@ object mod {
       __obj.asInstanceOf[DurationUnitFormatOptions]
     }
     
-    extension [Self <: DurationUnitFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DurationUnitFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object mod {
       __obj.asInstanceOf[DurationUnitFormatPart]
     }
     
-    extension [Self <: DurationUnitFormatPart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DurationUnitFormatPart] (val x: Self) extends AnyVal {
       
       inline def setType(value: DurationUnitFormatPartType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

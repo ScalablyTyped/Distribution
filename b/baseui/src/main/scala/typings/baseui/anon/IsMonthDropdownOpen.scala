@@ -19,7 +19,8 @@ object IsMonthDropdownOpen {
     __obj.asInstanceOf[IsMonthDropdownOpen]
   }
   
-  extension [Self <: IsMonthDropdownOpen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsMonthDropdownOpen] (val x: Self) extends AnyVal {
     
     inline def setIsFocusVisible(value: Boolean): Self = StObject.set(x, "isFocusVisible", value.asInstanceOf[js.Any])
     

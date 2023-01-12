@@ -22,7 +22,8 @@ object PartialPlotNumberFont {
     __obj.asInstanceOf[PartialPlotNumberFont]
   }
   
-  extension [Self <: PartialPlotNumberFont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPlotNumberFont] (val x: Self) extends AnyVal {
     
     inline def setFont(value: PartialFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

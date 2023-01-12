@@ -18,7 +18,8 @@ object AudioSelectorGroup {
     __obj.asInstanceOf[AudioSelectorGroup]
   }
   
-  extension [Self <: AudioSelectorGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioSelectorGroup] (val x: Self) extends AnyVal {
     
     inline def setAudioSelectorNames(value: listOfStringMin1): Self = StObject.set(x, "AudioSelectorNames", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object LegendTitleCfg {
     __obj.asInstanceOf[LegendTitleCfg]
   }
   
-  extension [Self <: LegendTitleCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendTitleCfg] (val x: Self) extends AnyVal {
     
     inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     

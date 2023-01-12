@@ -34,7 +34,8 @@ object ForInStatement_ {
     __obj.asInstanceOf[ForInStatement_]
   }
   
-  extension [Self <: ForInStatement_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForInStatement_] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

@@ -92,7 +92,8 @@ object distEs2015CoreEntityObjectEntityObjectMod {
       __obj.asInstanceOf[CloneEntityObjectConfigData]
     }
     
-    extension [Self <: CloneEntityObjectConfigData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloneEntityObjectConfigData] (val x: Self) extends AnyVal {
       
       inline def setCloneChildren(value: Boolean): Self = StObject.set(x, "cloneChildren", value.asInstanceOf[js.Any])
       

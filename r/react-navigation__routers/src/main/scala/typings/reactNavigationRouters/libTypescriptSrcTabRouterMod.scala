@@ -75,7 +75,8 @@ object libTypescriptSrcTabRouterMod {
       __obj.asInstanceOf[TabActionHelpers[ParamList]]
     }
     
-    extension [Self <: TabActionHelpers[?], ParamList /* <: ParamListBase */](x: Self & TabActionHelpers[ParamList]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabActionHelpers[?], ParamList /* <: ParamListBase */] (val x: Self & TabActionHelpers[ParamList]) extends AnyVal {
       
       inline def setJumpTo(
         value: /* import warning: importer.ImportType#apply Failed type conversion: undefined extends ParamList[RouteName] ? [screen: RouteName] | [screen: RouteName, params: ParamList[RouteName]] : [screen: RouteName, params: ParamList[RouteName]] */ js.Any => Unit
@@ -103,7 +104,8 @@ object libTypescriptSrcTabRouterMod {
       __obj.asInstanceOf[TabActionType]
     }
     
-    extension [Self <: TabActionType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabActionType] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: NameParams): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -157,7 +159,8 @@ object libTypescriptSrcTabRouterMod {
       __obj.asInstanceOf[TabNavigationState[ParamList]]
     }
     
-    extension [Self <: TabNavigationState[?], ParamList /* <: ParamListBase */](x: Self & TabNavigationState[ParamList]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabNavigationState[?], ParamList /* <: ParamListBase */] (val x: Self & TabNavigationState[ParamList]) extends AnyVal {
       
       inline def setHistory(value: js.Array[KeyType]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
@@ -194,7 +197,8 @@ object libTypescriptSrcTabRouterMod {
       __obj.asInstanceOf[TabRouterOptions]
     }
     
-    extension [Self <: TabRouterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabRouterOptions] (val x: Self) extends AnyVal {
       
       inline def setBackBehavior(value: BackBehavior): Self = StObject.set(x, "backBehavior", value.asInstanceOf[js.Any])
       

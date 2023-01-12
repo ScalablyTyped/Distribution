@@ -17,7 +17,8 @@ object BEST {
     __obj.asInstanceOf[BEST]
   }
   
-  extension [Self <: BEST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BEST] (val x: Self) extends AnyVal {
     
     inline def setBEST(value: String): Self = StObject.set(x, "BEST", value.asInstanceOf[js.Any])
     

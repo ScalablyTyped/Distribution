@@ -28,7 +28,8 @@ object Presence {
     __obj.asInstanceOf[Presence]
   }
   
-  extension [Self <: Presence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Presence] (val x: Self) extends AnyVal {
     
     inline def setActivity(value: NullableOption[String]): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     

@@ -183,7 +183,8 @@ object Refinement {
     __obj.asInstanceOf[Refinement]
   }
   
-  extension [Self <: Refinement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Refinement] (val x: Self) extends AnyVal {
     
     inline def setAddRefinementFilter(value: (String, Any) => Unit): Self = StObject.set(x, "addRefinementFilter", js.Any.fromFunction2(value))
     

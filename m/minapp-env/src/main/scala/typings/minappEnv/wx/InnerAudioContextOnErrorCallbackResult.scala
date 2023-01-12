@@ -28,7 +28,8 @@ object InnerAudioContextOnErrorCallbackResult {
     __obj.asInstanceOf[InnerAudioContextOnErrorCallbackResult]
   }
   
-  extension [Self <: InnerAudioContextOnErrorCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InnerAudioContextOnErrorCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrCode(value: `10001` | `10002` | `10003` | `10004` | `-1`): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
   }

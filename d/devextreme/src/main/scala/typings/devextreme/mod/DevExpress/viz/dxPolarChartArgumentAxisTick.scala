@@ -20,7 +20,8 @@ object dxPolarChartArgumentAxisTick {
     __obj.asInstanceOf[dxPolarChartArgumentAxisTick]
   }
   
-  extension [Self <: dxPolarChartArgumentAxisTick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPolarChartArgumentAxisTick] (val x: Self) extends AnyVal {
     
     inline def setShift(value: Double): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
     

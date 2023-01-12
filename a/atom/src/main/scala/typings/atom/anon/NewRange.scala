@@ -23,7 +23,8 @@ object NewRange {
     __obj.asInstanceOf[NewRange]
   }
   
-  extension [Self <: NewRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewRange] (val x: Self) extends AnyVal {
     
     inline def setNewRange(value: Range): Self = StObject.set(x, "newRange", value.asInstanceOf[js.Any])
     

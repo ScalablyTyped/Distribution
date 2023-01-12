@@ -17,7 +17,8 @@ object PseudoBigInt {
     __obj.asInstanceOf[PseudoBigInt]
   }
   
-  extension [Self <: PseudoBigInt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PseudoBigInt] (val x: Self) extends AnyVal {
     
     inline def setBase10Value(value: java.lang.String): Self = StObject.set(x, "base10Value", value.asInstanceOf[js.Any])
     

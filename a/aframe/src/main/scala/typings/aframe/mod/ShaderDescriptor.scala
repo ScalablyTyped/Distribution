@@ -17,7 +17,8 @@ object ShaderDescriptor {
     __obj.asInstanceOf[ShaderDescriptor[T]]
   }
   
-  extension [Self <: ShaderDescriptor[?], T /* <: Shader */](x: Self & ShaderDescriptor[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShaderDescriptor[?], T /* <: Shader */] (val x: Self & ShaderDescriptor[T]) extends AnyVal {
     
     inline def setSchema(value: Schema_[js.Object]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     

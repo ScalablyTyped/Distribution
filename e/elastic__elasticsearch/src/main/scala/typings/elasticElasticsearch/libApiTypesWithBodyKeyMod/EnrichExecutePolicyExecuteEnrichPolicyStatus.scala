@@ -15,7 +15,8 @@ object EnrichExecutePolicyExecuteEnrichPolicyStatus {
     __obj.asInstanceOf[EnrichExecutePolicyExecuteEnrichPolicyStatus]
   }
   
-  extension [Self <: EnrichExecutePolicyExecuteEnrichPolicyStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnrichExecutePolicyExecuteEnrichPolicyStatus] (val x: Self) extends AnyVal {
     
     inline def setPhase(value: EnrichExecutePolicyEnrichPolicyPhase): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
   }

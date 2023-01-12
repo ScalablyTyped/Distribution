@@ -252,7 +252,8 @@ object IgScroll {
     __obj.asInstanceOf[IgScroll]
   }
   
-  extension [Self <: IgScroll](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgScroll] (val x: Self) extends AnyVal {
     
     inline def setAlwaysVisible(value: Boolean): Self = StObject.set(x, "alwaysVisible", value.asInstanceOf[js.Any])
     

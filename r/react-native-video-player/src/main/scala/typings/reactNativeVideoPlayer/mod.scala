@@ -465,7 +465,8 @@ object mod {
       __obj.asInstanceOf[VideoPlayerProps]
     }
     
-    extension [Self <: VideoPlayerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoPlayerProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       
@@ -1198,7 +1199,8 @@ object mod {
       __obj.asInstanceOf[VideoPlayerState]
     }
     
-    extension [Self <: VideoPlayerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoPlayerState] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       

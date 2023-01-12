@@ -19,7 +19,8 @@ object KnockoutAMDTemplate {
     __obj.asInstanceOf[KnockoutAMDTemplate]
   }
   
-  extension [Self <: KnockoutAMDTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutAMDTemplate] (val x: Self) extends AnyVal {
     
     inline def setDefaultPath(value: String): Self = StObject.set(x, "defaultPath", value.asInstanceOf[js.Any])
     

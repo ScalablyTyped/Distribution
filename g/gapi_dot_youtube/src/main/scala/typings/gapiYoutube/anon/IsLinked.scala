@@ -23,7 +23,8 @@ object IsLinked {
     __obj.asInstanceOf[IsLinked]
   }
   
-  extension [Self <: IsLinked](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsLinked] (val x: Self) extends AnyVal {
     
     inline def setIsLinked(value: Boolean): Self = StObject.set(x, "isLinked", value.asInstanceOf[js.Any])
     

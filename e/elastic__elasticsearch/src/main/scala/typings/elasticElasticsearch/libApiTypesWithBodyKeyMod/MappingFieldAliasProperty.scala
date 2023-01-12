@@ -22,7 +22,8 @@ object MappingFieldAliasProperty {
     __obj.asInstanceOf[MappingFieldAliasProperty]
   }
   
-  extension [Self <: MappingFieldAliasProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingFieldAliasProperty] (val x: Self) extends AnyVal {
     
     inline def setPath(value: Field): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

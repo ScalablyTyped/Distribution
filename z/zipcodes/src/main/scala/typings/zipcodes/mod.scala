@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[ZipCode]
     }
     
-    extension [Self <: ZipCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZipCode] (val x: Self) extends AnyVal {
       
       inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object CaPool {
     __obj.asInstanceOf[CaPool]
   }
   
-  extension [Self <: CaPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaPool] (val x: Self) extends AnyVal {
     
     inline def setIssuancePolicy(value: IssuancePolicy): Self = StObject.set(x, "issuancePolicy", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AwsEcsTaskDefinitionContainerDefinitionsDependsOnDetails {
     __obj.asInstanceOf[AwsEcsTaskDefinitionContainerDefinitionsDependsOnDetails]
   }
   
-  extension [Self <: AwsEcsTaskDefinitionContainerDefinitionsDependsOnDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskDefinitionContainerDefinitionsDependsOnDetails] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: NonEmptyString): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     

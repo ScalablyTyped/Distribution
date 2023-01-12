@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Bugs]
     }
     
-    extension [Self <: Bugs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bugs] (val x: Self) extends AnyVal {
       
       inline def setBugs(value: String): Self = StObject.set(x, "bugs", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object anon {
       __obj.asInstanceOf[Email]
     }
     
-    extension [Self <: Email](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object anon {
       __obj.asInstanceOf[Username]
     }
     
-    extension [Self <: Username](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Username] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

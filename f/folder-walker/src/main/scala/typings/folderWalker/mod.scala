@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[Entry]
     }
     
-    extension [Self <: Entry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object mod {
       __obj.asInstanceOf[WalkerOptions]
     }
     
-    extension [Self <: WalkerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WalkerOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       

@@ -31,7 +31,8 @@ object DuplicateWorksheetBasicProperties {
     __obj.asInstanceOf[DuplicateWorksheetBasicProperties]
   }
   
-  extension [Self <: DuplicateWorksheetBasicProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DuplicateWorksheetBasicProperties] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

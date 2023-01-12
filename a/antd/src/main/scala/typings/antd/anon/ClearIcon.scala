@@ -35,7 +35,8 @@ object ClearIcon {
     __obj.asInstanceOf[ClearIcon]
   }
   
-  extension [Self <: ClearIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearIcon] (val x: Self) extends AnyVal {
     
     inline def setClearIcon(value: RenderNode): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
     

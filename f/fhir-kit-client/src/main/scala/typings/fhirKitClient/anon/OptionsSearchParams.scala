@@ -19,7 +19,8 @@ object OptionsSearchParams {
     __obj.asInstanceOf[OptionsSearchParams]
   }
   
-  extension [Self <: OptionsSearchParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsSearchParams] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

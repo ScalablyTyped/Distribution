@@ -23,7 +23,8 @@ object ConcatenateExpression {
     __obj.asInstanceOf[ConcatenateExpression]
   }
   
-  extension [Self <: ConcatenateExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConcatenateExpression] (val x: Self) extends AnyVal {
     
     inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     

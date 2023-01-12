@@ -27,7 +27,8 @@ object MigrationOptions {
     __obj.asInstanceOf[MigrationOptions]
   }
   
-  extension [Self <: MigrationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MigrationOptions] (val x: Self) extends AnyVal {
     
     inline def setLiteral(value: /* v */ Name => String): Self = StObject.set(x, "literal", js.Any.fromFunction1(value))
     

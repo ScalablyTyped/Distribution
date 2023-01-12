@@ -21,7 +21,8 @@ object EmbindObject {
     __obj.asInstanceOf[EmbindObject[T]]
   }
   
-  extension [Self <: EmbindObject[?], T /* <: EmbindObject[T] */](x: Self & EmbindObject[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmbindObject[?], T /* <: EmbindObject[T] */] (val x: Self & EmbindObject[T]) extends AnyVal {
     
     inline def setDelete(value: () => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     

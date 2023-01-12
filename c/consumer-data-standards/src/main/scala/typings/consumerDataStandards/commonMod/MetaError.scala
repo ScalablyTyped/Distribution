@@ -21,7 +21,8 @@ object MetaError {
     __obj.asInstanceOf[MetaError]
   }
   
-  extension [Self <: MetaError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetaError] (val x: Self) extends AnyVal {
     
     inline def setUrn(value: String): Self = StObject.set(x, "urn", value.asInstanceOf[js.Any])
     

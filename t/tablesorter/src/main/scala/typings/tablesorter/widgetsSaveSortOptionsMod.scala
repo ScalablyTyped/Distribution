@@ -46,7 +46,8 @@ object widgetsSaveSortOptionsMod {
       __obj.asInstanceOf[SaveSortOptions]
     }
     
-    extension [Self <: SaveSortOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SaveSortOptions] (val x: Self) extends AnyVal {
       
       inline def setSaveSort(value: Boolean): Self = StObject.set(x, "saveSort", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[CustomLevelNames]
     }
     
-    extension [Self <: CustomLevelNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomLevelNames] (val x: Self) extends AnyVal {
       
       inline def setCustomLevelNames(value: StringDictionary[Double]): Self = StObject.set(x, "customLevelNames", value.asInstanceOf[js.Any])
       

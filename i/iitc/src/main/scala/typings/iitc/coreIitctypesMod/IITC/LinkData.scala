@@ -35,7 +35,8 @@ object LinkData {
     __obj.asInstanceOf[LinkData]
   }
   
-  extension [Self <: LinkData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkData] (val x: Self) extends AnyVal {
     
     inline def setDGuid(value: String): Self = StObject.set(x, "dGuid", value.asInstanceOf[js.Any])
     

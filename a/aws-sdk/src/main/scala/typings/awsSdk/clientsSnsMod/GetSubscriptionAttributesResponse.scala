@@ -18,7 +18,8 @@ object GetSubscriptionAttributesResponse {
     __obj.asInstanceOf[GetSubscriptionAttributesResponse]
   }
   
-  extension [Self <: GetSubscriptionAttributesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSubscriptionAttributesResponse] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: SubscriptionAttributesMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

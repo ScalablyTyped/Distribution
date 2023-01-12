@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[Arg]
     }
     
-    extension [Self <: Arg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Arg] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object mod {
       __obj.asInstanceOf[BashCompletionConfiguration]
     }
     
-    extension [Self <: BashCompletionConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BashCompletionConfiguration] (val x: Self) extends AnyVal {
       
       inline def setArgtypes(value: js.Array[String]): Self = StObject.set(x, "argtypes", value.asInstanceOf[js.Any])
       
@@ -171,7 +173,8 @@ object mod {
       __obj.asInstanceOf[BashCompletionSpecConfiguration]
     }
     
-    extension [Self <: BashCompletionSpecConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BashCompletionSpecConfiguration] (val x: Self) extends AnyVal {
       
       inline def setArgtypes(value: js.Array[String]): Self = StObject.set(x, "argtypes", value.asInstanceOf[js.Any])
       
@@ -204,7 +207,8 @@ object mod {
       __obj.asInstanceOf[Group]
     }
     
-    extension [Self <: Group](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
       
       inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     }
@@ -278,7 +282,8 @@ object mod {
       __obj.asInstanceOf[HelpConfiguration]
     }
     
-    extension [Self <: HelpConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelpConfiguration] (val x: Self) extends AnyVal {
       
       inline def setHeadingIndent(value: Double | String): Self = StObject.set(x, "headingIndent", value.asInstanceOf[js.Any])
       
@@ -403,7 +408,8 @@ object mod {
       __obj.asInstanceOf[OptionBase]
     }
     
-    extension [Self <: OptionBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionBase] (val x: Self) extends AnyVal {
       
       inline def setCompletionType(value: String): Self = StObject.set(x, "completionType", value.asInstanceOf[js.Any])
       
@@ -483,7 +489,8 @@ object mod {
       __obj.asInstanceOf[OptionType]
     }
     
-    extension [Self <: OptionType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionType] (val x: Self) extends AnyVal {
       
       inline def setArray(value: Boolean): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
@@ -531,7 +538,8 @@ object mod {
       __obj.asInstanceOf[OptionWithAliases]
     }
     
-    extension [Self <: OptionWithAliases](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionWithAliases] (val x: Self) extends AnyVal {
       
       inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
@@ -557,7 +565,8 @@ object mod {
       __obj.asInstanceOf[OptionWithoutAliases]
     }
     
-    extension [Self <: OptionWithoutAliases](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionWithoutAliases] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -599,7 +608,8 @@ object mod {
       __obj.asInstanceOf[ParserConfiguration]
     }
     
-    extension [Self <: ParserConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserConfiguration] (val x: Self) extends AnyVal {
       
       inline def setAllowUnknown(value: Boolean): Self = StObject.set(x, "allowUnknown", value.asInstanceOf[js.Any])
       
@@ -642,7 +652,8 @@ object mod {
       __obj.asInstanceOf[ParsingConfiguration]
     }
     
-    extension [Self <: ParsingConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsingConfiguration] (val x: Self) extends AnyVal {
       
       inline def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       
@@ -681,7 +692,8 @@ object mod {
       __obj.asInstanceOf[Results]
     }
     
-    extension [Self <: Results](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
       
       inline def set_args(value: js.Array[String]): Self = StObject.set(x, "_args", value.asInstanceOf[js.Any])
       

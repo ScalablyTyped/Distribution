@@ -17,7 +17,8 @@ object BackgroundTaskDeferral {
     __obj.asInstanceOf[BackgroundTaskDeferral]
   }
   
-  extension [Self <: BackgroundTaskDeferral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundTaskDeferral] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }

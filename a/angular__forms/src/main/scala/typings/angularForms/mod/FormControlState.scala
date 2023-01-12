@@ -17,7 +17,8 @@ object FormControlState {
     __obj.asInstanceOf[FormControlState[T]]
   }
   
-  extension [Self <: FormControlState[?], T](x: Self & FormControlState[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormControlState[?], T] (val x: Self & FormControlState[T]) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

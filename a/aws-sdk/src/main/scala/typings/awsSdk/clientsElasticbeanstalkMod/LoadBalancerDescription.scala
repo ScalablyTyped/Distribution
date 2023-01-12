@@ -28,7 +28,8 @@ object LoadBalancerDescription {
     __obj.asInstanceOf[LoadBalancerDescription]
   }
   
-  extension [Self <: LoadBalancerDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadBalancerDescription] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     

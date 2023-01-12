@@ -67,7 +67,8 @@ object OlkLabel {
     __obj.asInstanceOf[OlkLabel]
   }
   
-  extension [Self <: OlkLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlkLabel] (val x: Self) extends AnyVal {
     
     inline def setAccelerator(value: String): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
     

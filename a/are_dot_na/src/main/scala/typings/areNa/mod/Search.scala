@@ -56,7 +56,8 @@ object Search {
     __obj.asInstanceOf[Search]
   }
   
-  extension [Self <: Search](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Search] (val x: Self) extends AnyVal {
     
     inline def setBlocks(value: js.Array[Block]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     

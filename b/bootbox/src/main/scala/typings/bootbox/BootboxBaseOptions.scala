@@ -47,7 +47,8 @@ object BootboxBaseOptions {
     __obj.asInstanceOf[BootboxBaseOptions[T]]
   }
   
-  extension [Self <: BootboxBaseOptions[?], T](x: Self & BootboxBaseOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootboxBaseOptions[?], T] (val x: Self & BootboxBaseOptions[T]) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

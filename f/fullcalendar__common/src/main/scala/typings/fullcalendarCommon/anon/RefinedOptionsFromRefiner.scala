@@ -106,7 +106,8 @@ object RefinedOptionsFromRefiner {
     __obj.asInstanceOf[RefinedOptionsFromRefiner]
   }
   
-  extension [Self <: RefinedOptionsFromRefiner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefinedOptionsFromRefiner] (val x: Self) extends AnyVal {
     
     inline def setAllDay(
       value: /* import warning: importer.ImportType#apply Failed type conversion: std.BooleanConstructor extends (input : any): infer RefinedType ? RefinedType : never */ js.Any

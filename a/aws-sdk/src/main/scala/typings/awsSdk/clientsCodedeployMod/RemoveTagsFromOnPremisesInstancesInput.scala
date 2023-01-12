@@ -23,7 +23,8 @@ object RemoveTagsFromOnPremisesInstancesInput {
     __obj.asInstanceOf[RemoveTagsFromOnPremisesInstancesInput]
   }
   
-  extension [Self <: RemoveTagsFromOnPremisesInstancesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveTagsFromOnPremisesInstancesInput] (val x: Self) extends AnyVal {
     
     inline def setInstanceNames(value: InstanceNameList): Self = StObject.set(x, "instanceNames", value.asInstanceOf[js.Any])
     

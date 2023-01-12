@@ -36,7 +36,8 @@ object MappingDateProperty {
     __obj.asInstanceOf[MappingDateProperty]
   }
   
-  extension [Self <: MappingDateProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingDateProperty] (val x: Self) extends AnyVal {
     
     inline def setBoost(value: double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
     

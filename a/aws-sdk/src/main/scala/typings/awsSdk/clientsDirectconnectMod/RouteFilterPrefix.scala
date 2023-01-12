@@ -18,7 +18,8 @@ object RouteFilterPrefix {
     __obj.asInstanceOf[RouteFilterPrefix]
   }
   
-  extension [Self <: RouteFilterPrefix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteFilterPrefix] (val x: Self) extends AnyVal {
     
     inline def setCidr(value: CIDR): Self = StObject.set(x, "cidr", value.asInstanceOf[js.Any])
     

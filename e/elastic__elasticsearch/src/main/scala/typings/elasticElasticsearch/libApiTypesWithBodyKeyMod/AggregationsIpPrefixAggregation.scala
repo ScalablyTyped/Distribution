@@ -27,7 +27,8 @@ object AggregationsIpPrefixAggregation {
     __obj.asInstanceOf[AggregationsIpPrefixAggregation]
   }
   
-  extension [Self <: AggregationsIpPrefixAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsIpPrefixAggregation] (val x: Self) extends AnyVal {
     
     inline def setAppend_prefix_length(value: Boolean): Self = StObject.set(x, "append_prefix_length", value.asInstanceOf[js.Any])
     

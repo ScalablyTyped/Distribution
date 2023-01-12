@@ -27,7 +27,8 @@ object MlGetModelSnapshotsRequest {
     __obj.asInstanceOf[MlGetModelSnapshotsRequest]
   }
   
-  extension [Self <: MlGetModelSnapshotsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetModelSnapshotsRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Desc): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

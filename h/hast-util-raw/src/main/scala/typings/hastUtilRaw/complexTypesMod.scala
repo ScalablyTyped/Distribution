@@ -23,7 +23,8 @@ object complexTypesMod {
       __obj.asInstanceOf[Raw]
     }
     
-    extension [Self <: Raw](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Raw] (val x: Self) extends AnyVal {
       
       inline def setType(value: raw): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -43,7 +44,8 @@ object complexTypesMod {
         __obj.asInstanceOf[ElementContentMap]
       }
       
-      extension [Self <: ElementContentMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ElementContentMap] (val x: Self) extends AnyVal {
         
         inline def setRaw(value: Raw): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       }
@@ -60,7 +62,8 @@ object complexTypesMod {
         __obj.asInstanceOf[RootContentMap]
       }
       
-      extension [Self <: RootContentMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RootContentMap] (val x: Self) extends AnyVal {
         
         inline def setRaw(value: Raw): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       }

@@ -38,7 +38,8 @@ object DomainEndpointOptions {
     __obj.asInstanceOf[DomainEndpointOptions]
   }
   
-  extension [Self <: DomainEndpointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainEndpointOptions] (val x: Self) extends AnyVal {
     
     inline def setCustomEndpoint(value: DomainNameFqdn): Self = StObject.set(x, "CustomEndpoint", value.asInstanceOf[js.Any])
     

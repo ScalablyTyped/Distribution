@@ -25,7 +25,8 @@ object WebSocketEventMap {
     __obj.asInstanceOf[WebSocketEventMap]
   }
   
-  extension [Self <: WebSocketEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebSocketEventMap] (val x: Self) extends AnyVal {
     
     inline def setClose(value: CloseEvent): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DescribeProtectedResourceInput {
     __obj.asInstanceOf[DescribeProtectedResourceInput]
   }
   
-  extension [Self <: DescribeProtectedResourceInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeProtectedResourceInput] (val x: Self) extends AnyVal {
     
     inline def setResourceArn(value: ARN): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object UpdateApiKeyResponse {
     __obj.asInstanceOf[UpdateApiKeyResponse]
   }
   
-  extension [Self <: UpdateApiKeyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateApiKeyResponse] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

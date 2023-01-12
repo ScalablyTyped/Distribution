@@ -45,7 +45,8 @@ object Center {
     __obj.asInstanceOf[Center]
   }
   
-  extension [Self <: Center](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Center] (val x: Self) extends AnyVal {
     
     inline def setArcGenerator(value: typings.nivoChord.distTypesTypesMod.ArcGenerator): Self = StObject.set(x, "arcGenerator", value.asInstanceOf[js.Any])
     

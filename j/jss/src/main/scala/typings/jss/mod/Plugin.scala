@@ -52,7 +52,8 @@ object Plugin {
     __obj.asInstanceOf[Plugin]
   }
   
-  extension [Self <: Plugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
     
     inline def setOnChangeValue(value: (/* value */ String, /* prop */ String, /* rule */ Rule) => String | Null | `false`): Self = StObject.set(x, "onChangeValue", js.Any.fromFunction3(value))
     

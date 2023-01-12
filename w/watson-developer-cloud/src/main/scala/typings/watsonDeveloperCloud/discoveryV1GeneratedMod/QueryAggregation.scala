@@ -26,7 +26,8 @@ object QueryAggregation {
     __obj.asInstanceOf[QueryAggregation]
   }
   
-  extension [Self <: QueryAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryAggregation] (val x: Self) extends AnyVal {
     
     inline def setAggregations(value: js.Array[QueryAggregation]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     

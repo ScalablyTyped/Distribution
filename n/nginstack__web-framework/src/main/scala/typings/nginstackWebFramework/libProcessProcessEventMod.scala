@@ -35,7 +35,8 @@ object libProcessProcessEventMod {
       __obj.asInstanceOf[ProcessEvent]
     }
     
-    extension [Self <: ProcessEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessEvent] (val x: Self) extends AnyVal {
       
       inline def setProcess(value: Process): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
     }

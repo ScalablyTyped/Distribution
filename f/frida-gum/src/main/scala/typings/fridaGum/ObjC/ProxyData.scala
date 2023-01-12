@@ -20,7 +20,8 @@ object ProxyData {
     __obj.asInstanceOf[ProxyData]
   }
   
-  extension [Self <: ProxyData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProxyData] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: Object): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

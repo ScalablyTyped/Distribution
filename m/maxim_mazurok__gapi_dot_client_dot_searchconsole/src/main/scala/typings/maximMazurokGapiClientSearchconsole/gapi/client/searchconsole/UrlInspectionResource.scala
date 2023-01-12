@@ -15,7 +15,8 @@ object UrlInspectionResource {
     __obj.asInstanceOf[UrlInspectionResource]
   }
   
-  extension [Self <: UrlInspectionResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlInspectionResource] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: IndexResource): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }

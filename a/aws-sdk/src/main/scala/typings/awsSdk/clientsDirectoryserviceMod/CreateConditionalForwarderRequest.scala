@@ -28,7 +28,8 @@ object CreateConditionalForwarderRequest {
     __obj.asInstanceOf[CreateConditionalForwarderRequest]
   }
   
-  extension [Self <: CreateConditionalForwarderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateConditionalForwarderRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     

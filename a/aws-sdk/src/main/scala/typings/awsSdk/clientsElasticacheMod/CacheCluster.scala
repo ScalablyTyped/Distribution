@@ -170,7 +170,8 @@ object CacheCluster {
     __obj.asInstanceOf[CacheCluster]
   }
   
-  extension [Self <: CacheCluster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheCluster] (val x: Self) extends AnyVal {
     
     inline def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

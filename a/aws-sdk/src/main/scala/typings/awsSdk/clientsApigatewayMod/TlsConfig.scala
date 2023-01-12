@@ -18,7 +18,8 @@ object TlsConfig {
     __obj.asInstanceOf[TlsConfig]
   }
   
-  extension [Self <: TlsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TlsConfig] (val x: Self) extends AnyVal {
     
     inline def setInsecureSkipVerification(value: Boolean): Self = StObject.set(x, "insecureSkipVerification", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyCSSTransitionClas]
     }
     
-    extension [Self <: ReadonlyCSSTransitionClas](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyCSSTransitionClas] (val x: Self) extends AnyVal {
       
       inline def setAppear(value: String): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyRequiredCSSTransi]
     }
     
-    extension [Self <: ReadonlyRequiredCSSTransi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyRequiredCSSTransi] (val x: Self) extends AnyVal {
       
       inline def setAppear(value: String): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyRequiredFixedPosi]
     }
     
-    extension [Self <: ReadonlyRequiredFixedPosi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyRequiredFixedPosi] (val x: Self) extends AnyVal {
       
       inline def setOnEnter(value: /* appearing */ Boolean => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
       
@@ -188,7 +191,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyRequiredTransitio]
     }
     
-    extension [Self <: ReadonlyRequiredTransitio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyRequiredTransitio] (val x: Self) extends AnyVal {
       
       inline def setAppear(value: Double): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
       
@@ -214,7 +218,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyTransitionTimeout]
     }
     
-    extension [Self <: ReadonlyTransitionTimeout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyTransitionTimeout] (val x: Self) extends AnyVal {
       
       inline def setAppear(value: Double): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
       
@@ -248,7 +253,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyTransitionTimeoutAppear]
     }
     
-    extension [Self <: ReadonlyTransitionTimeoutAppear](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyTransitionTimeoutAppear] (val x: Self) extends AnyVal {
       
       inline def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
       

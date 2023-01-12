@@ -17,7 +17,8 @@ object StyleLayerOptions {
     __obj.asInstanceOf[StyleLayerOptions]
   }
   
-  extension [Self <: StyleLayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleLayerOptions] (val x: Self) extends AnyVal {
     
     inline def setSanitizer(value: /* template */ String => String): Self = StObject.set(x, "sanitizer", js.Any.fromFunction1(value))
     

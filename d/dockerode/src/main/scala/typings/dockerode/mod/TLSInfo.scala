@@ -19,7 +19,8 @@ object TLSInfo {
     __obj.asInstanceOf[TLSInfo]
   }
   
-  extension [Self <: TLSInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TLSInfo] (val x: Self) extends AnyVal {
     
     inline def setCertIssuerPublicKey(value: String): Self = StObject.set(x, "CertIssuerPublicKey", value.asInstanceOf[js.Any])
     

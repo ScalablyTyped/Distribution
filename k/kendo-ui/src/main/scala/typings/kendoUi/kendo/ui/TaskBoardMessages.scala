@@ -53,7 +53,8 @@ object TaskBoardMessages {
     __obj.asInstanceOf[TaskBoardMessages]
   }
   
-  extension [Self <: TaskBoardMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskBoardMessages] (val x: Self) extends AnyVal {
     
     inline def setAddCard(value: String): Self = StObject.set(x, "addCard", value.asInstanceOf[js.Any])
     

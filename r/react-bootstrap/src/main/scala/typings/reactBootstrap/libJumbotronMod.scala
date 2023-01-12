@@ -29,7 +29,8 @@ object libJumbotronMod {
       __obj.asInstanceOf[JumbotronProps]
     }
     
-    extension [Self <: JumbotronProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JumbotronProps] (val x: Self) extends AnyVal {
       
       inline def setComponentClass(value: ElementType[Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       

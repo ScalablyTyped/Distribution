@@ -26,7 +26,8 @@ object DateTimeSkeleton {
     __obj.asInstanceOf[DateTimeSkeleton]
   }
   
-  extension [Self <: DateTimeSkeleton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimeSkeleton] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

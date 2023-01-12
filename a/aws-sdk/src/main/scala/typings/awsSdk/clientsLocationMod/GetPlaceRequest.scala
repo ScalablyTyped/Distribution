@@ -28,7 +28,8 @@ object GetPlaceRequest {
     __obj.asInstanceOf[GetPlaceRequest]
   }
   
-  extension [Self <: GetPlaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPlaceRequest] (val x: Self) extends AnyVal {
     
     inline def setIndexName(value: ResourceName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     

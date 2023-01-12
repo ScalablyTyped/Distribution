@@ -48,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Accepteditems]
     }
     
-    extension [Self <: Accepteditems](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accepteditems] (val x: Self) extends AnyVal {
       
       inline def setAccepted_items(value: js.Array[String]): Self = StObject.set(x, "accepted_items", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object anon {
       __obj.asInstanceOf[Amplifier]
     }
     
-    extension [Self <: Amplifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Amplifier] (val x: Self) extends AnyVal {
       
       inline def setAmplifier(value: Double): Self = StObject.set(x, "amplifier", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object anon {
       __obj.asInstanceOf[Dropchance]
     }
     
-    extension [Self <: Dropchance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dropchance] (val x: Self) extends AnyVal {
       
       inline def setDrop_chance(value: Double): Self = StObject.set(x, "drop_chance", value.asInstanceOf[js.Any])
       
@@ -162,7 +165,8 @@ object anon {
       __obj.asInstanceOf[Effects]
     }
     
-    extension [Self <: Effects](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Effects] (val x: Self) extends AnyVal {
       
       inline def setEffects(value: js.Array[Amplifier]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
       
@@ -191,7 +195,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -218,7 +223,8 @@ object anon {
       __obj.asInstanceOf[Namefilter]
     }
     
-    extension [Self <: Namefilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Namefilter] (val x: Self) extends AnyVal {
       
       inline def setName_filter(value: js.Array[String]): Self = StObject.set(x, "name_filter", value.asInstanceOf[js.Any])
       
@@ -254,7 +260,8 @@ object anon {
       __obj.asInstanceOf[Particleoffsettowardsinteractor]
     }
     
-    extension [Self <: Particleoffsettowardsinteractor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Particleoffsettowardsinteractor] (val x: Self) extends AnyVal {
       
       inline def setParticle_offset_towards_interactor(value: Boolean): Self = StObject.set(x, "particle_offset_towards_interactor", value.asInstanceOf[js.Any])
       
@@ -285,7 +292,8 @@ object anon {
       __obj.asInstanceOf[Rangemax]
     }
     
-    extension [Self <: Rangemax](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rangemax] (val x: Self) extends AnyVal {
       
       inline def setRange_max(value: Double): Self = StObject.set(x, "range_max", value.asInstanceOf[js.Any])
       
@@ -307,7 +315,8 @@ object anon {
       __obj.asInstanceOf[Table]
     }
     
-    extension [Self <: Table](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
       
       inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     }

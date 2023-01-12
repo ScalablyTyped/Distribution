@@ -28,7 +28,8 @@ object BatchPutGeofenceSuccess {
     __obj.asInstanceOf[BatchPutGeofenceSuccess]
   }
   
-  extension [Self <: BatchPutGeofenceSuccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchPutGeofenceSuccess] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     

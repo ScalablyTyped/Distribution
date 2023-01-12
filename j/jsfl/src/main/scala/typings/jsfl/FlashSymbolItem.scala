@@ -44,7 +44,8 @@ object FlashSymbolItem {
     __obj.asInstanceOf[FlashSymbolItem]
   }
   
-  extension [Self <: FlashSymbolItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashSymbolItem] (val x: Self) extends AnyVal {
     
     inline def setConvertToCompiledClip(value: () => Unit): Self = StObject.set(x, "convertToCompiledClip", js.Any.fromFunction0(value))
     

@@ -95,7 +95,8 @@ object mod {
       __obj.asInstanceOf[XummJwtOptionsStore]
     }
     
-    extension [Self <: XummJwtOptionsStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XummJwtOptionsStore] (val x: Self) extends AnyVal {
       
       inline def setGet(value: String => xAppJwtOtt | Unit): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
@@ -116,7 +117,8 @@ object mod {
       __obj.asInstanceOf[XummSdkJwtOptions]
     }
     
-    extension [Self <: XummSdkJwtOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XummSdkJwtOptions] (val x: Self) extends AnyVal {
       
       inline def setFatalHandler(value: /* error */ js.Error => Unit): Self = StObject.set(x, "fatalHandler", js.Any.fromFunction1(value))
       

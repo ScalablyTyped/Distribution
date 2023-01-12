@@ -33,7 +33,8 @@ object RandomLayoutOptions {
     __obj.asInstanceOf[RandomLayoutOptions]
   }
   
-  extension [Self <: RandomLayoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RandomLayoutOptions] (val x: Self) extends AnyVal {
     
     inline def setBoundingBox(value: BoundingBox12 | BoundingBoxWH): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
     

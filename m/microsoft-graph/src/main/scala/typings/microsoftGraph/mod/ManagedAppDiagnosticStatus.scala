@@ -22,7 +22,8 @@ object ManagedAppDiagnosticStatus {
     __obj.asInstanceOf[ManagedAppDiagnosticStatus]
   }
   
-  extension [Self <: ManagedAppDiagnosticStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedAppDiagnosticStatus] (val x: Self) extends AnyVal {
     
     inline def setMitigationInstruction(value: NullableOption[String]): Self = StObject.set(x, "mitigationInstruction", value.asInstanceOf[js.Any])
     

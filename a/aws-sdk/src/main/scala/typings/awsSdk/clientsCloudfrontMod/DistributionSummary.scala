@@ -132,7 +132,8 @@ object DistributionSummary {
     __obj.asInstanceOf[DistributionSummary]
   }
   
-  extension [Self <: DistributionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributionSummary] (val x: Self) extends AnyVal {
     
     inline def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

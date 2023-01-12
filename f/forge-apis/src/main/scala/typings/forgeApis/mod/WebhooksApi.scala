@@ -330,7 +330,8 @@ object WebhooksApi {
       __obj.asInstanceOf[HooksOptions]
     }
     
-    extension [Self <: HooksOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HooksOptions] (val x: Self) extends AnyVal {
       
       inline def setAcceptEncoding(value: String): Self = StObject.set(x, "acceptEncoding", value.asInstanceOf[js.Any])
       

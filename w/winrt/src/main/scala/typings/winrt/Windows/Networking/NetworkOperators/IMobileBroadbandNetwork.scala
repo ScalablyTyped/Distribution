@@ -45,7 +45,8 @@ object IMobileBroadbandNetwork {
     __obj.asInstanceOf[IMobileBroadbandNetwork]
   }
   
-  extension [Self <: IMobileBroadbandNetwork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMobileBroadbandNetwork] (val x: Self) extends AnyVal {
     
     inline def setAccessPointName(value: String): Self = StObject.set(x, "accessPointName", value.asInstanceOf[js.Any])
     

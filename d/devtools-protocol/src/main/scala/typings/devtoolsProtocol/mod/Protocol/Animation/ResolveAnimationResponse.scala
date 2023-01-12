@@ -19,7 +19,8 @@ object ResolveAnimationResponse {
     __obj.asInstanceOf[ResolveAnimationResponse]
   }
   
-  extension [Self <: ResolveAnimationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveAnimationResponse] (val x: Self) extends AnyVal {
     
     inline def setRemoteObject(value: RemoteObject): Self = StObject.set(x, "remoteObject", value.asInstanceOf[js.Any])
   }

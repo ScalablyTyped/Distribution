@@ -18,7 +18,8 @@ object VerifyDomainDkimRequest {
     __obj.asInstanceOf[VerifyDomainDkimRequest]
   }
   
-  extension [Self <: VerifyDomainDkimRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyDomainDkimRequest] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: Domain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
   }

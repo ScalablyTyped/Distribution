@@ -67,7 +67,8 @@ object mod {
       __obj.asInstanceOf[OffMainThreadOptions]
     }
     
-    extension [Self <: OffMainThreadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OffMainThreadOptions] (val x: Self) extends AnyVal {
       
       inline def setAmdFunctionName(value: String): Self = StObject.set(x, "amdFunctionName", value.asInstanceOf[js.Any])
       

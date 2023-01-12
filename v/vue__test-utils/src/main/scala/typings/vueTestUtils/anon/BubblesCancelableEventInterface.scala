@@ -21,7 +21,8 @@ object BubblesCancelableEventInterface {
     __obj.asInstanceOf[BubblesCancelableEventInterface]
   }
   
-  extension [Self <: BubblesCancelableEventInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BubblesCancelableEventInterface] (val x: Self) extends AnyVal {
     
     inline def setBubbles(value: `false`): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     

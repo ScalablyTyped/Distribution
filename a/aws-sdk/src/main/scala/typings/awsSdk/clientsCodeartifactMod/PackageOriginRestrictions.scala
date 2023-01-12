@@ -23,7 +23,8 @@ object PackageOriginRestrictions {
     __obj.asInstanceOf[PackageOriginRestrictions]
   }
   
-  extension [Self <: PackageOriginRestrictions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageOriginRestrictions] (val x: Self) extends AnyVal {
     
     inline def setPublish(value: AllowPublish): Self = StObject.set(x, "publish", value.asInstanceOf[js.Any])
     

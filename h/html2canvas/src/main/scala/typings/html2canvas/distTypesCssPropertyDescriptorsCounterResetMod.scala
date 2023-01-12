@@ -24,7 +24,8 @@ object distTypesCssPropertyDescriptorsCounterResetMod {
       __obj.asInstanceOf[COUNTER_RESET]
     }
     
-    extension [Self <: COUNTER_RESET](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: COUNTER_RESET] (val x: Self) extends AnyVal {
       
       inline def setCounter(value: String): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
       

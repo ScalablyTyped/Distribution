@@ -15,7 +15,8 @@ object ControlsDescendantBindings {
     __obj.asInstanceOf[ControlsDescendantBindings]
   }
   
-  extension [Self <: ControlsDescendantBindings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlsDescendantBindings] (val x: Self) extends AnyVal {
     
     inline def setControlsDescendantBindings(value: Boolean): Self = StObject.set(x, "controlsDescendantBindings", value.asInstanceOf[js.Any])
   }

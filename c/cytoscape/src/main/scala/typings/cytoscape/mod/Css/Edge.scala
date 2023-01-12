@@ -341,7 +341,8 @@ object Edge {
     __obj.asInstanceOf[Edge]
   }
   
-  extension [Self <: Edge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
     
     inline def `setArrow-scale`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "arrow-scale", value.asInstanceOf[js.Any])
     

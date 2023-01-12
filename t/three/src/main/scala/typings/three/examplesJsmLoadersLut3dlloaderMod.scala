@@ -54,7 +54,8 @@ object examplesJsmLoadersLut3dlloaderMod {
       __obj.asInstanceOf[LUT3dlResult]
     }
     
-    extension [Self <: LUT3dlResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LUT3dlResult] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

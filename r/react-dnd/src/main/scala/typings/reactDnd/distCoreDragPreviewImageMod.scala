@@ -31,7 +31,8 @@ object distCoreDragPreviewImageMod {
       __obj.asInstanceOf[DragPreviewImageProps]
     }
     
-    extension [Self <: DragPreviewImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragPreviewImageProps] (val x: Self) extends AnyVal {
       
       inline def setConnect(
         value: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[DragPreviewOptions]) => ReactElement | Null

@@ -28,7 +28,8 @@ object PartialLocation {
     __obj.asInstanceOf[PartialLocation]
   }
   
-  extension [Self <: PartialLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLocation] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

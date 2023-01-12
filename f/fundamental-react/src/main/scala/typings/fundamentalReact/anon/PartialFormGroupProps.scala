@@ -16,7 +16,8 @@ object PartialFormGroupProps {
     __obj.asInstanceOf[PartialFormGroupProps]
   }
   
-  extension [Self <: PartialFormGroupProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFormGroupProps] (val x: Self) extends AnyVal {
     
     inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
     

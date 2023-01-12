@@ -31,7 +31,8 @@ object InteractivityProps {
     __obj.asInstanceOf[InteractivityProps]
   }
   
-  extension [Self <: InteractivityProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractivityProps] (val x: Self) extends AnyVal {
     
     inline def setOnClick(value: (/* datum */ Datum, /* event */ MouseEvent[SVGRectElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
     

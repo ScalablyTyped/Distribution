@@ -24,7 +24,8 @@ object ConsolaReporterLogObject {
     __obj.asInstanceOf[ConsolaReporterLogObject]
   }
   
-  extension [Self <: ConsolaReporterLogObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsolaReporterLogObject] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ViolinShapePoint {
     __obj.asInstanceOf[ViolinShapePoint]
   }
   
-  extension [Self <: ViolinShapePoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViolinShapePoint] (val x: Self) extends AnyVal {
     
     inline def set_size(value: js.Array[Double]): Self = StObject.set(x, "_size", value.asInstanceOf[js.Any])
     

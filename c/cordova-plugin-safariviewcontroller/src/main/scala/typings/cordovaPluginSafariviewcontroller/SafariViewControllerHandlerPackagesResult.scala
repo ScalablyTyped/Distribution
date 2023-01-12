@@ -26,7 +26,8 @@ object SafariViewControllerHandlerPackagesResult {
     __obj.asInstanceOf[SafariViewControllerHandlerPackagesResult]
   }
   
-  extension [Self <: SafariViewControllerHandlerPackagesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafariViewControllerHandlerPackagesResult] (val x: Self) extends AnyVal {
     
     inline def setCustomTabsImplementations(value: js.Array[String]): Self = StObject.set(x, "customTabsImplementations", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object LocationContext {
     __obj.asInstanceOf[LocationContext]
   }
   
-  extension [Self <: LocationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationContext] (val x: Self) extends AnyVal {
     
     inline def setGeoCriteriaIds(value: js.Array[Double]): Self = StObject.set(x, "geoCriteriaIds", value.asInstanceOf[js.Any])
     

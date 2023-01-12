@@ -20,7 +20,8 @@ object AccelerometerOptions {
     __obj.asInstanceOf[AccelerometerOptions]
   }
   
-  extension [Self <: AccelerometerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccelerometerOptions] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: game | ui | normal): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
   }

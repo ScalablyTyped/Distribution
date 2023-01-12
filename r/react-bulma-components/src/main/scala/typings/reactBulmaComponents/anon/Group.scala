@@ -20,7 +20,8 @@ object Group {
     __obj.asInstanceOf[Group]
   }
   
-  extension [Self <: Group](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: /* props */ ButtonGroupProps & (ElementProps[ButtonGroupProps, div]) => ReactElement): Self = StObject.set(x, "Group", js.Any.fromFunction1(value))
   }

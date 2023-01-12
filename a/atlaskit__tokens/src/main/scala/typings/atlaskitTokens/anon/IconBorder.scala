@@ -35,7 +35,8 @@ object IconBorder {
     __obj.asInstanceOf[IconBorder]
   }
   
-  extension [Self <: IconBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconBorder] (val x: Self) extends AnyVal {
     
     inline def setAccent(value: BoldBlue): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
     

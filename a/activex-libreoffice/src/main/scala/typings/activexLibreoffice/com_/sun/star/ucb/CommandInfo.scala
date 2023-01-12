@@ -31,7 +31,8 @@ object CommandInfo {
     __obj.asInstanceOf[CommandInfo]
   }
   
-  extension [Self <: CommandInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandInfo] (val x: Self) extends AnyVal {
     
     inline def setArgType(value: `type`): Self = StObject.set(x, "ArgType", value.asInstanceOf[js.Any])
     

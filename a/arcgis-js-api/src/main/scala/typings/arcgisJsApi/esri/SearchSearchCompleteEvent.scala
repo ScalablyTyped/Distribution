@@ -29,7 +29,8 @@ object SearchSearchCompleteEvent {
     __obj.asInstanceOf[SearchSearchCompleteEvent]
   }
   
-  extension [Self <: SearchSearchCompleteEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchSearchCompleteEvent] (val x: Self) extends AnyVal {
     
     inline def setActiveSourceIndex(value: Double): Self = StObject.set(x, "activeSourceIndex", value.asInstanceOf[js.Any])
     

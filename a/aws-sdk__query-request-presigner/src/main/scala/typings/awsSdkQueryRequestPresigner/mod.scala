@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[PresignOption]
     }
     
-    extension [Self <: PresignOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PresignOption] (val x: Self) extends AnyVal {
       
       inline def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       

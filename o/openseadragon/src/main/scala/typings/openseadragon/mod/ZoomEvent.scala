@@ -21,7 +21,8 @@ object ZoomEvent {
     __obj.asInstanceOf[ZoomEvent]
   }
   
-  extension [Self <: ZoomEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoomEvent] (val x: Self) extends AnyVal {
     
     inline def setImmediately(value: Boolean): Self = StObject.set(x, "immediately", value.asInstanceOf[js.Any])
     

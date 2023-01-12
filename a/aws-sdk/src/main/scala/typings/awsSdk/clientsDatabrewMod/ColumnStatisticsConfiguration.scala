@@ -23,7 +23,8 @@ object ColumnStatisticsConfiguration {
     __obj.asInstanceOf[ColumnStatisticsConfiguration]
   }
   
-  extension [Self <: ColumnStatisticsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnStatisticsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setSelectors(value: ColumnSelectorList): Self = StObject.set(x, "Selectors", value.asInstanceOf[js.Any])
     

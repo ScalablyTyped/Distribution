@@ -30,7 +30,8 @@ object VertexEvent {
     __obj.asInstanceOf[VertexEvent]
   }
   
-  extension [Self <: VertexEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VertexEvent] (val x: Self) extends AnyVal {
     
     inline def setVertex(value: VertexMarker): Self = StObject.set(x, "vertex", value.asInstanceOf[js.Any])
   }

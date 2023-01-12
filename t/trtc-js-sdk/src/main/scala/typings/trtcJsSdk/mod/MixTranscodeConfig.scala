@@ -51,7 +51,8 @@ object MixTranscodeConfig {
     __obj.asInstanceOf[MixTranscodeConfig]
   }
   
-  extension [Self <: MixTranscodeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MixTranscodeConfig] (val x: Self) extends AnyVal {
     
     inline def setAudioBitrate(value: Double): Self = StObject.set(x, "audioBitrate", value.asInstanceOf[js.Any])
     

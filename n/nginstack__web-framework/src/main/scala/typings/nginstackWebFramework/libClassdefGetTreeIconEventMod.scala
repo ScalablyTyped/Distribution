@@ -33,7 +33,8 @@ object libClassdefGetTreeIconEventMod {
       __obj.asInstanceOf[GetTreeIconEvent]
     }
     
-    extension [Self <: GetTreeIconEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTreeIconEvent] (val x: Self) extends AnyVal {
       
       inline def setIconPath(value: Double | String): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
     }

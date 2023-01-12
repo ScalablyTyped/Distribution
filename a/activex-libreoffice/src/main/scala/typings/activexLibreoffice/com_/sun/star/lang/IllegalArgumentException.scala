@@ -25,7 +25,8 @@ object IllegalArgumentException {
     __obj.asInstanceOf[IllegalArgumentException]
   }
   
-  extension [Self <: IllegalArgumentException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IllegalArgumentException] (val x: Self) extends AnyVal {
     
     inline def setArgumentPosition(value: Double): Self = StObject.set(x, "ArgumentPosition", value.asInstanceOf[js.Any])
   }

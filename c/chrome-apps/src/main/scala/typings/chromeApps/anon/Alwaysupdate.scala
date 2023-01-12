@@ -24,7 +24,8 @@ object Alwaysupdate {
     __obj.asInstanceOf[Alwaysupdate]
   }
   
-  extension [Self <: Alwaysupdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Alwaysupdate] (val x: Self) extends AnyVal {
     
     inline def setAlways_update(value: Boolean): Self = StObject.set(x, "always_update", value.asInstanceOf[js.Any])
     

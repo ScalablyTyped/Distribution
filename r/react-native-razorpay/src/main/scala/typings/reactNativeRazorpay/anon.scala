@@ -39,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Animation]
     }
     
-    extension [Self <: Animation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object anon {
       __obj.asInstanceOf[Backdropcolor]
     }
     
-    extension [Self <: Backdropcolor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Backdropcolor] (val x: Self) extends AnyVal {
       
       inline def setBackdrop_color(value: String): Self = StObject.set(x, "backdrop_color", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object anon {
       __obj.asInstanceOf[Contact]
     }
     
-    extension [Self <: Contact](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contact] (val x: Self) extends AnyVal {
       
       inline def setContact(value: String): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
       
@@ -148,7 +151,8 @@ object anon {
       __obj.asInstanceOf[ContactEmail]
     }
     
-    extension [Self <: ContactEmail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContactEmail] (val x: Self) extends AnyVal {
       
       inline def setContact(value: Boolean): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
       
@@ -171,7 +175,8 @@ object anon {
       __obj.asInstanceOf[Display]
     }
     
-    extension [Self <: Display](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Display] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: Language): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     }
@@ -192,7 +197,8 @@ object anon {
       __obj.asInstanceOf[Email]
     }
     
-    extension [Self <: Email](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
       
       inline def setContact(value: Boolean): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
       
@@ -221,7 +227,8 @@ object anon {
       __obj.asInstanceOf[Enabled]
     }
     
-    extension [Self <: Enabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -240,7 +247,8 @@ object anon {
       __obj.asInstanceOf[Language]
     }
     
-    extension [Self <: Language](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: en | ben | hi | mar | guj | tam | tel): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     }
@@ -259,7 +267,8 @@ object anon {
       __obj.asInstanceOf[Orderid]
     }
     
-    extension [Self <: Orderid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Orderid] (val x: Self) extends AnyVal {
       
       inline def setOrder_id(value: String): Self = StObject.set(x, "order_id", value.asInstanceOf[js.Any])
       

@@ -47,7 +47,8 @@ object precacheControllerMod {
         __obj.asInstanceOf[InstallOptions]
       }
       
-      extension [Self <: InstallOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InstallOptions] (val x: Self) extends AnyVal {
         
         inline def setEvent(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FetchEvent */ Any

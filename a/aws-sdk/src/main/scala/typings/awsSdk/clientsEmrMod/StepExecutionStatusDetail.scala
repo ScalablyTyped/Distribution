@@ -38,7 +38,8 @@ object StepExecutionStatusDetail {
     __obj.asInstanceOf[StepExecutionStatusDetail]
   }
   
-  extension [Self <: StepExecutionStatusDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepExecutionStatusDetail] (val x: Self) extends AnyVal {
     
     inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     

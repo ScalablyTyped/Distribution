@@ -48,7 +48,8 @@ object PutSigningProfileRequest {
     __obj.asInstanceOf[PutSigningProfileRequest]
   }
   
-  extension [Self <: PutSigningProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutSigningProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setOverrides(value: SigningPlatformOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     

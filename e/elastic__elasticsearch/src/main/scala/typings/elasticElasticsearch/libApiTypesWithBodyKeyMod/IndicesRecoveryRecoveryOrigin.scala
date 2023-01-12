@@ -37,7 +37,8 @@ object IndicesRecoveryRecoveryOrigin {
     __obj.asInstanceOf[IndicesRecoveryRecoveryOrigin]
   }
   
-  extension [Self <: IndicesRecoveryRecoveryOrigin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesRecoveryRecoveryOrigin] (val x: Self) extends AnyVal {
     
     inline def setBootstrap_new_history_uuid(value: Boolean): Self = StObject.set(x, "bootstrap_new_history_uuid", value.asInstanceOf[js.Any])
     

@@ -60,7 +60,8 @@ object ActivateTypeInput {
     __obj.asInstanceOf[ActivateTypeInput]
   }
   
-  extension [Self <: ActivateTypeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivateTypeInput] (val x: Self) extends AnyVal {
     
     inline def setAutoUpdate(value: AutoUpdate): Self = StObject.set(x, "AutoUpdate", value.asInstanceOf[js.Any])
     

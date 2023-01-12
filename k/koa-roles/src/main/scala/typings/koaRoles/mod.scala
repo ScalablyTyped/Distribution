@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[Options[StateT, ContextT, ResponseBodyT]]
     }
     
-    extension [Self <: Options[?, ?, ?], StateT /* <: DefaultStateExtends */, ContextT /* <: DefaultContextExtends */, ResponseBodyT](x: Self & (Options[StateT, ContextT, ResponseBodyT])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?, ?], StateT /* <: DefaultStateExtends */, ContextT /* <: DefaultContextExtends */, ResponseBodyT] (val x: Self & (Options[StateT, ContextT, ResponseBodyT])) extends AnyVal {
       
       inline def setFailureHandler(
         value: (/* ctx */ ParameterizedContext[StateT, ContextT, ResponseBodyT], /* action */ String) => Unit

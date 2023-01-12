@@ -29,7 +29,8 @@ object DialogflowV1WebhookRequest {
     __obj.asInstanceOf[DialogflowV1WebhookRequest]
   }
   
-  extension [Self <: DialogflowV1WebhookRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1WebhookRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

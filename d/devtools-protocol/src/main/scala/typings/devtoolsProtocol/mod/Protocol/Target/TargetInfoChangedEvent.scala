@@ -15,7 +15,8 @@ object TargetInfoChangedEvent {
     __obj.asInstanceOf[TargetInfoChangedEvent]
   }
   
-  extension [Self <: TargetInfoChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetInfoChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setTargetInfo(value: TargetInfo): Self = StObject.set(x, "targetInfo", value.asInstanceOf[js.Any])
   }

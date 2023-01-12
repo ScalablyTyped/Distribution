@@ -48,7 +48,8 @@ object TrunkInterfaceAssociation {
     __obj.asInstanceOf[TrunkInterfaceAssociation]
   }
   
-  extension [Self <: TrunkInterfaceAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrunkInterfaceAssociation] (val x: Self) extends AnyVal {
     
     inline def setAssociationId(value: TrunkInterfaceAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     

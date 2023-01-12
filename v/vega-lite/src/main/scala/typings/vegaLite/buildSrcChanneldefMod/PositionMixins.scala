@@ -36,7 +36,8 @@ object PositionMixins {
     __obj.asInstanceOf[PositionMixins]
   }
   
-  extension [Self <: PositionMixins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionMixins] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Axis[ExprRef | SignalRef]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

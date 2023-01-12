@@ -48,7 +48,8 @@ object ResourceMapping {
     __obj.asInstanceOf[ResourceMapping]
   }
   
-  extension [Self <: ResourceMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceMapping] (val x: Self) extends AnyVal {
     
     inline def setAppRegistryAppName(value: EntityName): Self = StObject.set(x, "appRegistryAppName", value.asInstanceOf[js.Any])
     

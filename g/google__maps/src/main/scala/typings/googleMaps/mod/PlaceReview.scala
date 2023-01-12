@@ -52,7 +52,8 @@ object PlaceReview {
     __obj.asInstanceOf[PlaceReview]
   }
   
-  extension [Self <: PlaceReview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceReview] (val x: Self) extends AnyVal {
     
     inline def setAspects(value: js.Array[AspectRating]): Self = StObject.set(x, "aspects", value.asInstanceOf[js.Any])
     

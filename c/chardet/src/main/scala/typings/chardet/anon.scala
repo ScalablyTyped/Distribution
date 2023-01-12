@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[PartialFullOptions]
     }
     
-    extension [Self <: PartialFullOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFullOptions] (val x: Self) extends AnyVal {
       
       inline def setSampleSize(value: Double): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
       

@@ -71,7 +71,8 @@ object GattDeviceService {
     __obj.asInstanceOf[GattDeviceService]
   }
   
-  extension [Self <: GattDeviceService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GattDeviceService] (val x: Self) extends AnyVal {
     
     inline def setAttributeHandle(value: Double): Self = StObject.set(x, "attributeHandle", value.asInstanceOf[js.Any])
     

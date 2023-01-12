@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[FullPattern]
     }
     
-    extension [Self <: FullPattern](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullPattern] (val x: Self) extends AnyVal {
       
       inline def setFullPattern(value: js.RegExp): Self = StObject.set(x, "fullPattern", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object anon {
       __obj.asInstanceOf[Oss]
     }
     
-    extension [Self <: Oss](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Oss] (val x: Self) extends AnyVal {
       
       inline def setOss(value: MobileDetectRules): Self = StObject.set(x, "oss", value.asInstanceOf[js.Any])
       

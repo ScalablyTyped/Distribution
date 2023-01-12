@@ -28,7 +28,8 @@ object UpdateDomainMetadataRequest {
     __obj.asInstanceOf[UpdateDomainMetadataRequest]
   }
   
-  extension [Self <: UpdateDomainMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDomainMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: DisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     

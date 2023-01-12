@@ -143,7 +143,8 @@ object mod {
       __obj.asInstanceOf[i18nState]
     }
     
-    extension [Self <: i18nState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: i18nState] (val x: Self) extends AnyVal {
       
       inline def setFallback(value: String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
@@ -195,7 +196,8 @@ object mod {
         __obj.asInstanceOf[VueConstructor[V]]
       }
       
-      extension [Self <: VueConstructor[?], V /* <: Vue */](x: Self & VueConstructor[V]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VueConstructor[?], V /* <: Vue */] (val x: Self & VueConstructor[V]) extends AnyVal {
         
         inline def setI18n(value: Ii18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       }

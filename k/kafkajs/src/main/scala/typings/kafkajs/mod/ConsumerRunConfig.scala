@@ -27,7 +27,8 @@ object ConsumerRunConfig {
     __obj.asInstanceOf[ConsumerRunConfig]
   }
   
-  extension [Self <: ConsumerRunConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumerRunConfig] (val x: Self) extends AnyVal {
     
     inline def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
     

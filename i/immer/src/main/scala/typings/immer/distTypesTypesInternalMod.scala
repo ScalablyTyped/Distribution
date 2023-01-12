@@ -70,7 +70,8 @@ object distTypesTypesInternalMod {
       __obj.asInstanceOf[ImmerBaseState]
     }
     
-    extension [Self <: ImmerBaseState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImmerBaseState] (val x: Self) extends AnyVal {
       
       inline def setFinalized_(value: Boolean): Self = StObject.set(x, "finalized_", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object KebabKeysZGDialog {
     __obj.asInstanceOf[KebabKeysZGDialog]
   }
   
-  extension [Self <: KebabKeysZGDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KebabKeysZGDialog] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

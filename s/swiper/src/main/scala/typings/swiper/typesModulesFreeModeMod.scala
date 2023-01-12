@@ -21,7 +21,8 @@ object typesModulesFreeModeMod {
       __obj.asInstanceOf[FreeModeMethods]
     }
     
-    extension [Self <: FreeModeMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FreeModeMethods] (val x: Self) extends AnyVal {
       
       inline def setOnTouchEnd(value: () => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction0(value))
       
@@ -94,7 +95,8 @@ object typesModulesFreeModeMod {
       __obj.asInstanceOf[FreeModeOptions]
     }
     
-    extension [Self <: FreeModeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FreeModeOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

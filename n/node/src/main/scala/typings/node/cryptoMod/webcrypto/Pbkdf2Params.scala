@@ -21,7 +21,8 @@ object Pbkdf2Params {
     __obj.asInstanceOf[Pbkdf2Params]
   }
   
-  extension [Self <: Pbkdf2Params](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pbkdf2Params] (val x: Self) extends AnyVal {
     
     inline def setHash(value: HashAlgorithmIdentifier): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

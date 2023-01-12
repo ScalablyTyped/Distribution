@@ -43,7 +43,8 @@ object CellValuePropertyMetadata {
     __obj.asInstanceOf[CellValuePropertyMetadata]
   }
   
-  extension [Self <: CellValuePropertyMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellValuePropertyMetadata] (val x: Self) extends AnyVal {
     
     inline def setAttribution(value: js.Array[CellValueAttributionAttributes]): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object DevtoolsHook {
     __obj.asInstanceOf[DevtoolsHook]
   }
   
-  extension [Self <: DevtoolsHook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevtoolsHook] (val x: Self) extends AnyVal {
     
     inline def setAppRecords(value: js.Array[AppRecord]): Self = StObject.set(x, "appRecords", value.asInstanceOf[js.Any])
     

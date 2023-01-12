@@ -31,7 +31,8 @@ object distOperationsTypesMod {
       __obj.asInstanceOf[AttrParamMapper]
     }
     
-    extension [Self <: AttrParamMapper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttrParamMapper] (val x: Self) extends AnyVal {
       
       inline def setTfDeprecatedName(value: String): Self = StObject.set(x, "tfDeprecatedName", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object distOperationsTypesMod {
       __obj.asInstanceOf[Graph]
     }
     
-    extension [Self <: Graph](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Graph] (val x: Self) extends AnyVal {
       
       inline def setFunctions(value: StringDictionary[Graph]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
       
@@ -189,7 +191,8 @@ object distOperationsTypesMod {
       __obj.asInstanceOf[GraphNode]
     }
     
-    extension [Self <: GraphNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphNode] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: StringDictionary[ValueType]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -215,7 +218,8 @@ object distOperationsTypesMod {
       __obj.asInstanceOf[InputParamMapper]
     }
     
-    extension [Self <: InputParamMapper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputParamMapper] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -241,7 +245,8 @@ object distOperationsTypesMod {
       __obj.asInstanceOf[InputParamValue]
     }
     
-    extension [Self <: InputParamValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputParamValue] (val x: Self) extends AnyVal {
       
       inline def setInputIndexEnd(value: Double): Self = StObject.set(x, "inputIndexEnd", value.asInstanceOf[js.Any])
       
@@ -312,7 +317,8 @@ object distOperationsTypesMod {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setAttrParams(value: StringDictionary[ParamValue]): Self = StObject.set(x, "attrParams", value.asInstanceOf[js.Any])
       
@@ -382,7 +388,8 @@ object distOperationsTypesMod {
       __obj.asInstanceOf[OpMapper]
     }
     
-    extension [Self <: OpMapper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpMapper] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: js.Array[AttrParamMapper]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -434,7 +441,8 @@ object distOperationsTypesMod {
       __obj.asInstanceOf[ParamMapper]
     }
     
-    extension [Self <: ParamMapper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParamMapper] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: ValueType): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -511,7 +519,8 @@ object distOperationsTypesMod {
       __obj.asInstanceOf[ParamValue]
     }
     
-    extension [Self <: ParamValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParamValue] (val x: Self) extends AnyVal {
       
       inline def setType(value: ParamType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

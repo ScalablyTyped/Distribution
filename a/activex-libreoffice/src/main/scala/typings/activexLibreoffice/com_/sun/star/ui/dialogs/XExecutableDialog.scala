@@ -36,7 +36,8 @@ object XExecutableDialog {
     __obj.asInstanceOf[XExecutableDialog]
   }
   
-  extension [Self <: XExecutableDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XExecutableDialog] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Double): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
     

@@ -22,7 +22,8 @@ object Local {
     __obj.asInstanceOf[Local]
   }
   
-  extension [Self <: Local](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Local] (val x: Self) extends AnyVal {
     
     inline def setEffective(value: js.Array[String]): Self = StObject.set(x, "effective", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object BitsOfOpaqueRandomness {
     __obj.asInstanceOf[BitsOfOpaqueRandomness]
   }
   
-  extension [Self <: BitsOfOpaqueRandomness](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitsOfOpaqueRandomness] (val x: Self) extends AnyVal {
     
     inline def setBitsOfOpaqueRandomness(value: Double | (js.Function2[/* ctx */ KoaContextWithOIDC, /* model */ BaseModel, Double])): Self = StObject.set(x, "bitsOfOpaqueRandomness", value.asInstanceOf[js.Any])
     

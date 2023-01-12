@@ -33,7 +33,8 @@ object PutRowParams {
     __obj.asInstanceOf[PutRowParams]
   }
   
-  extension [Self <: PutRowParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRowParams] (val x: Self) extends AnyVal {
     
     inline def setAttributeColumns(value: AttributesInput): Self = StObject.set(x, "attributeColumns", value.asInstanceOf[js.Any])
     

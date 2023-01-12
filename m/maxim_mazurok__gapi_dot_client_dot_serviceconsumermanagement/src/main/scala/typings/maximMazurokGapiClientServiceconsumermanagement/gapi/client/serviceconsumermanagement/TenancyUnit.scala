@@ -28,7 +28,8 @@ object TenancyUnit {
     __obj.asInstanceOf[TenancyUnit]
   }
   
-  extension [Self <: TenancyUnit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TenancyUnit] (val x: Self) extends AnyVal {
     
     inline def setConsumer(value: String): Self = StObject.set(x, "consumer", value.asInstanceOf[js.Any])
     

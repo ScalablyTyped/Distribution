@@ -22,7 +22,8 @@ object AttrsStringNGramsAttrs {
     __obj.asInstanceOf[AttrsStringNGramsAttrs]
   }
   
-  extension [Self <: AttrsStringNGramsAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsStringNGramsAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: StringNGramsAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object Toolbars {
       __obj.asInstanceOf[AppToolbarButtonDescriptor]
     }
     
-    extension [Self <: AppToolbarButtonDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppToolbarButtonDescriptor] (val x: Self) extends AnyVal {
       
       inline def setArrowColor(value: String): Self = StObject.set(x, "arrowColor", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object Toolbars {
       __obj.asInstanceOf[AppToolbarButtonEvent]
     }
     
-    extension [Self <: AppToolbarButtonEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppToolbarButtonEvent] (val x: Self) extends AnyVal {
       
       inline def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     }
@@ -98,7 +100,8 @@ object Toolbars {
       __obj.asInstanceOf[AppToolbarButtonView]
     }
     
-    extension [Self <: AppToolbarButtonView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppToolbarButtonView] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -137,7 +140,8 @@ object Toolbars {
       __obj.asInstanceOf[LegacyToolbarButtonDescriptor]
     }
     
-    extension [Self <: LegacyToolbarButtonDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyToolbarButtonDescriptor] (val x: Self) extends AnyVal {
       
       inline def setHasDropdown(value: Boolean): Self = StObject.set(x, "hasDropdown", value.asInstanceOf[js.Any])
       
@@ -188,7 +192,8 @@ object Toolbars {
       __obj.asInstanceOf[LegacyToolbarButtonEvent]
     }
     
-    extension [Self <: LegacyToolbarButtonEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyToolbarButtonEvent] (val x: Self) extends AnyVal {
       
       inline def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
       
@@ -252,7 +257,8 @@ object Toolbars {
       __obj.asInstanceOf[ToolbarButtonDescriptor]
     }
     
-    extension [Self <: ToolbarButtonDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarButtonDescriptor] (val x: Self) extends AnyVal {
       
       inline def setHasDropdown(value: Boolean): Self = StObject.set(x, "hasDropdown", value.asInstanceOf[js.Any])
       
@@ -319,7 +325,8 @@ object Toolbars {
       __obj.asInstanceOf[ToolbarButtonEvent]
     }
     
-    extension [Self <: ToolbarButtonEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarButtonEvent] (val x: Self) extends AnyVal {
       
       inline def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
       
@@ -382,7 +389,8 @@ object Toolbars {
       __obj.asInstanceOf[ToolbarsInstance]
     }
     
-    extension [Self <: ToolbarsInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarsInstance] (val x: Self) extends AnyVal {
       
       inline def setAddToolbarButtonForApp(value: AppToolbarButtonDescriptor => AppToolbarButtonView): Self = StObject.set(x, "addToolbarButtonForApp", js.Any.fromFunction1(value))
       

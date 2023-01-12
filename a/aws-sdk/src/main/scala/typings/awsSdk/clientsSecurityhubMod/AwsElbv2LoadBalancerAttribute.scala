@@ -23,7 +23,8 @@ object AwsElbv2LoadBalancerAttribute {
     __obj.asInstanceOf[AwsElbv2LoadBalancerAttribute]
   }
   
-  extension [Self <: AwsElbv2LoadBalancerAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElbv2LoadBalancerAttribute] (val x: Self) extends AnyVal {
     
     inline def setKey(value: NonEmptyString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object NgProgress {
       __obj.asInstanceOf[INgProgress]
     }
     
-    extension [Self <: INgProgress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INgProgress] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String => Unit): Self = StObject.set(x, "color", js.Any.fromFunction1(value))
       
@@ -71,7 +72,8 @@ object NgProgress {
       __obj.asInstanceOf[INgProgressFactory]
     }
     
-    extension [Self <: INgProgressFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INgProgressFactory] (val x: Self) extends AnyVal {
       
       inline def setCreateInstance(value: () => INgProgress): Self = StObject.set(x, "createInstance", js.Any.fromFunction0(value))
     }

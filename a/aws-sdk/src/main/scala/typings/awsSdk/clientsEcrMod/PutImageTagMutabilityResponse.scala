@@ -28,7 +28,8 @@ object PutImageTagMutabilityResponse {
     __obj.asInstanceOf[PutImageTagMutabilityResponse]
   }
   
-  extension [Self <: PutImageTagMutabilityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutImageTagMutabilityResponse] (val x: Self) extends AnyVal {
     
     inline def setImageTagMutability(value: ImageTagMutability): Self = StObject.set(x, "imageTagMutability", value.asInstanceOf[js.Any])
     

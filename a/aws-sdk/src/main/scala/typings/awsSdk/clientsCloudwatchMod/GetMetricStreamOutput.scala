@@ -68,7 +68,8 @@ object GetMetricStreamOutput {
     __obj.asInstanceOf[GetMetricStreamOutput]
   }
   
-  extension [Self <: GetMetricStreamOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMetricStreamOutput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

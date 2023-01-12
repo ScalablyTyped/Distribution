@@ -43,7 +43,8 @@ object DevicePosition {
     __obj.asInstanceOf[DevicePosition]
   }
   
-  extension [Self <: DevicePosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevicePosition] (val x: Self) extends AnyVal {
     
     inline def setAccuracy(value: PositionalAccuracy): Self = StObject.set(x, "Accuracy", value.asInstanceOf[js.Any])
     

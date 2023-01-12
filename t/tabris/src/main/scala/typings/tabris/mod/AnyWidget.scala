@@ -41,7 +41,8 @@ object AnyWidget {
     __obj.asInstanceOf[AnyWidget]
   }
   
-  extension [Self <: AnyWidget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnyWidget] (val x: Self) extends AnyVal {
     
     inline def setAppendTo(value: js.Function): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     

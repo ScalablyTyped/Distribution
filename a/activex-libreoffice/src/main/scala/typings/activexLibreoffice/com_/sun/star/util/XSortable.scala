@@ -65,7 +65,8 @@ object XSortable {
     __obj.asInstanceOf[XSortable]
   }
   
-  extension [Self <: XSortable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSortable] (val x: Self) extends AnyVal {
     
     inline def setCreateSortDescriptor(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "createSortDescriptor", js.Any.fromFunction0(value))
     

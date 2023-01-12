@@ -71,7 +71,8 @@ object esmMiddlewareSubscribeWithSelectorMod {
         __obj.asInstanceOf[StoreMutators[S, A]]
       }
       
-      extension [Self <: StoreMutators[?, ?], S, A](x: Self & (StoreMutators[S, A])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StoreMutators[?, ?], S, A] (val x: Self & (StoreMutators[S, A])) extends AnyVal {
         
         inline def setZustandSlashsubscribeWithSelector(value: WithSelectorSubscribe[S]): Self = StObject.set(x, "zustand/subscribeWithSelector", value.asInstanceOf[js.Any])
       }

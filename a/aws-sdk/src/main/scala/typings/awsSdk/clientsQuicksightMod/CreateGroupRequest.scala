@@ -33,7 +33,8 @@ object CreateGroupRequest {
     __obj.asInstanceOf[CreateGroupRequest]
   }
   
-  extension [Self <: CreateGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     

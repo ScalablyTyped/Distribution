@@ -27,7 +27,8 @@ object GridColumnCommandItem {
     __obj.asInstanceOf[GridColumnCommandItem]
   }
   
-  extension [Self <: GridColumnCommandItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridColumnCommandItem] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

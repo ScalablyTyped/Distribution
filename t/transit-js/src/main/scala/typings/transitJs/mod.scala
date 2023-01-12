@@ -135,7 +135,8 @@ object mod {
       __obj.asInstanceOf[ArrayBuilder[T]]
     }
     
-    extension [Self <: ArrayBuilder[?], T](x: Self & ArrayBuilder[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayBuilder[?], T] (val x: Self & ArrayBuilder[T]) extends AnyVal {
       
       inline def setAdd(value: (T, Any, Any) => T): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
       
@@ -182,7 +183,8 @@ object mod {
       __obj.asInstanceOf[MapBuilder[T]]
     }
     
-    extension [Self <: MapBuilder[?], T](x: Self & MapBuilder[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapBuilder[?], T] (val x: Self & MapBuilder[T]) extends AnyVal {
       
       inline def setAdd(value: (T, Any, Any, Any) => T): Self = StObject.set(x, "add", js.Any.fromFunction4(value))
       
@@ -219,7 +221,8 @@ object mod {
       __obj.asInstanceOf[ReaderOptions]
     }
     
-    extension [Self <: ReaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReaderOptions] (val x: Self) extends AnyVal {
       
       inline def setArrayBuilder(value: ArrayBuilder[Any]): Self = StObject.set(x, "arrayBuilder", value.asInstanceOf[js.Any])
       
@@ -251,7 +254,8 @@ object mod {
       __obj.asInstanceOf[TransitBuilder[T]]
     }
     
-    extension [Self <: TransitBuilder[?], T](x: Self & TransitBuilder[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitBuilder[?], T] (val x: Self & TransitBuilder[T]) extends AnyVal {
       
       inline def setAdd(value: /* repeated */ Any => T): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -276,7 +280,8 @@ object mod {
       __obj.asInstanceOf[TransitReader]
     }
     
-    extension [Self <: TransitReader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitReader] (val x: Self) extends AnyVal {
       
       inline def setRead(value: String => Any): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     }
@@ -297,7 +302,8 @@ object mod {
       __obj.asInstanceOf[TransitType]
     }
     
-    extension [Self <: TransitType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitType] (val x: Self) extends AnyVal {
       
       inline def setEquiv(value: Any => Boolean): Self = StObject.set(x, "equiv", js.Any.fromFunction1(value))
     }
@@ -314,7 +320,8 @@ object mod {
       __obj.asInstanceOf[TransitWriter]
     }
     
-    extension [Self <: TransitWriter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitWriter] (val x: Self) extends AnyVal {
       
       inline def setWrite(value: Any => String): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
@@ -346,7 +353,8 @@ object mod {
       __obj.asInstanceOf[WriteHandler]
     }
     
-    extension [Self <: WriteHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteHandler] (val x: Self) extends AnyVal {
       
       inline def setGetVerboseHandler(value: /* val */ Any => WriteHandler): Self = StObject.set(x, "getVerboseHandler", js.Any.fromFunction1(value))
       
@@ -376,7 +384,8 @@ object mod {
       __obj.asInstanceOf[WriterOptions]
     }
     
-    extension [Self <: WriterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriterOptions] (val x: Self) extends AnyVal {
       
       inline def setHandlerForForeign(value: (/* val */ Any, /* handlers */ TransitMap[Any, Any]) => WriteHandler): Self = StObject.set(x, "handlerForForeign", js.Any.fromFunction2(value))
       

@@ -27,7 +27,8 @@ object distSrcSystemDistComponentsFormFieldErrorSmallMod extends Shortcut {
       __obj.asInstanceOf[FormFieldErrorSmallProps]
     }
     
-    extension [Self <: FormFieldErrorSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormFieldErrorSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

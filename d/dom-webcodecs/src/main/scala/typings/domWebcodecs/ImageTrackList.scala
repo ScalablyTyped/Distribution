@@ -24,7 +24,8 @@ object ImageTrackList {
     __obj.asInstanceOf[ImageTrackList]
   }
   
-  extension [Self <: ImageTrackList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageTrackList] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

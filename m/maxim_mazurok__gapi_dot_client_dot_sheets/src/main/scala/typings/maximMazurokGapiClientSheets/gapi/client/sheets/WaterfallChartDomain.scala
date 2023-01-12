@@ -19,7 +19,8 @@ object WaterfallChartDomain {
     __obj.asInstanceOf[WaterfallChartDomain]
   }
   
-  extension [Self <: WaterfallChartDomain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaterfallChartDomain] (val x: Self) extends AnyVal {
     
     inline def setData(value: ChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

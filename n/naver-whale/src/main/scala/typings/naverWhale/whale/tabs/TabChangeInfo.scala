@@ -67,7 +67,8 @@ object TabChangeInfo {
     __obj.asInstanceOf[TabChangeInfo]
   }
   
-  extension [Self <: TabChangeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabChangeInfo] (val x: Self) extends AnyVal {
     
     inline def setAudible(value: Boolean): Self = StObject.set(x, "audible", value.asInstanceOf[js.Any])
     

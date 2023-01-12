@@ -109,7 +109,8 @@ object distLinkSrcIconLinkMod {
       __obj.asInstanceOf[InnerIconLinkProps]
     }
     
-    extension [Self <: InnerIconLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerIconLinkProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

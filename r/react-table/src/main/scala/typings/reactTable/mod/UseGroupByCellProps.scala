@@ -19,7 +19,8 @@ object UseGroupByCellProps {
     __obj.asInstanceOf[UseGroupByCellProps[D]]
   }
   
-  extension [Self <: UseGroupByCellProps[?], D /* <: js.Object */](x: Self & UseGroupByCellProps[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseGroupByCellProps[?], D /* <: js.Object */] (val x: Self & UseGroupByCellProps[D]) extends AnyVal {
     
     inline def setIsAggregated(value: Boolean): Self = StObject.set(x, "isAggregated", value.asInstanceOf[js.Any])
     

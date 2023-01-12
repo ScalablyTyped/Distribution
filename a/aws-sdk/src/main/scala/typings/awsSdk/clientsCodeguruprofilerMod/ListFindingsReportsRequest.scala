@@ -43,7 +43,8 @@ object ListFindingsReportsRequest {
     __obj.asInstanceOf[ListFindingsReportsRequest]
   }
   
-  extension [Self <: ListFindingsReportsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFindingsReportsRequest] (val x: Self) extends AnyVal {
     
     inline def setDailyReportsOnly(value: Boolean): Self = StObject.set(x, "dailyReportsOnly", value.asInstanceOf[js.Any])
     

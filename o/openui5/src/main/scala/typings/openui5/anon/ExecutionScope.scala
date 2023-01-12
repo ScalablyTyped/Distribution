@@ -39,7 +39,8 @@ object ExecutionScope {
     __obj.asInstanceOf[ExecutionScope]
   }
   
-  extension [Self <: ExecutionScope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionScope] (val x: Self) extends AnyVal {
     
     inline def setExecutionScope(value: Selectors): Self = StObject.set(x, "executionScope", value.asInstanceOf[js.Any])
     

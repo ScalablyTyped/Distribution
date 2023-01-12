@@ -68,7 +68,8 @@ object IAsymmetricAlgorithmNamesStatics {
     __obj.asInstanceOf[IAsymmetricAlgorithmNamesStatics]
   }
   
-  extension [Self <: IAsymmetricAlgorithmNamesStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAsymmetricAlgorithmNamesStatics] (val x: Self) extends AnyVal {
     
     inline def setDsaSha1(value: String): Self = StObject.set(x, "dsaSha1", value.asInstanceOf[js.Any])
     

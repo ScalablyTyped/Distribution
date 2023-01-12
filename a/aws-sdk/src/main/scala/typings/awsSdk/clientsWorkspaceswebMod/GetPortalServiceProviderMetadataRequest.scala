@@ -18,7 +18,8 @@ object GetPortalServiceProviderMetadataRequest {
     __obj.asInstanceOf[GetPortalServiceProviderMetadataRequest]
   }
   
-  extension [Self <: GetPortalServiceProviderMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPortalServiceProviderMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setPortalArn(value: ARN): Self = StObject.set(x, "portalArn", value.asInstanceOf[js.Any])
   }

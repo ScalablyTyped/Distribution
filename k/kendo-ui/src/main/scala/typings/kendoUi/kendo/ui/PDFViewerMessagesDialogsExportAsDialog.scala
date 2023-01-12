@@ -25,7 +25,8 @@ object PDFViewerMessagesDialogsExportAsDialog {
     __obj.asInstanceOf[PDFViewerMessagesDialogsExportAsDialog]
   }
   
-  extension [Self <: PDFViewerMessagesDialogsExportAsDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFViewerMessagesDialogsExportAsDialog] (val x: Self) extends AnyVal {
     
     inline def setDefaultFileName(value: String): Self = StObject.set(x, "defaultFileName", value.asInstanceOf[js.Any])
     

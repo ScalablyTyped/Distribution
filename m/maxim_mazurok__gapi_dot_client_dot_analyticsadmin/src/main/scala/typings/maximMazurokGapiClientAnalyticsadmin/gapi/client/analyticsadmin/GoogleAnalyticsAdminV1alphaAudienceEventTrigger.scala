@@ -19,7 +19,8 @@ object GoogleAnalyticsAdminV1alphaAudienceEventTrigger {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAudienceEventTrigger]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAudienceEventTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAudienceEventTrigger] (val x: Self) extends AnyVal {
     
     inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     

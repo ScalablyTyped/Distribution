@@ -16,7 +16,8 @@ object NodeTaints {
     __obj.asInstanceOf[NodeTaints]
   }
   
-  extension [Self <: NodeTaints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeTaints] (val x: Self) extends AnyVal {
     
     inline def setTaints(value: js.Array[NodeTaint]): Self = StObject.set(x, "taints", value.asInstanceOf[js.Any])
     

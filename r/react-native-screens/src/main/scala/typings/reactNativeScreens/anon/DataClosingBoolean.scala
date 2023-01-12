@@ -15,7 +15,8 @@ object DataClosingBoolean {
     __obj.asInstanceOf[DataClosingBoolean]
   }
   
-  extension [Self <: DataClosingBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataClosingBoolean] (val x: Self) extends AnyVal {
     
     inline def setData(value: ClosingBoolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

@@ -45,7 +45,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[BrokenLinksStatistics]
     }
     
-    extension [Self <: BrokenLinksStatistics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrokenLinksStatistics] (val x: Self) extends AnyVal {
       
       inline def setDistinctBrokenLinks(value: Double): Self = StObject.set(x, "distinctBrokenLinks", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[CompareFileHandler]
     }
     
-    extension [Self <: CompareFileHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompareFileHandler] (val x: Self) extends AnyVal {
       
       inline def setCompareAsync(
         value: (/* path1 */ String, /* stat1 */ Stats, /* path2 */ String, /* stat2 */ Stats, /* options */ Options) => js.Promise[Boolean]
@@ -217,7 +219,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[Difference]
     }
     
-    extension [Self <: Difference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Difference] (val x: Self) extends AnyVal {
       
       inline def setDate1(value: js.Date): Self = StObject.set(x, "date1", value.asInstanceOf[js.Any])
       
@@ -346,7 +349,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[Entry]
     }
     
-    extension [Self <: Entry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
       
       inline def setAbsolutePath(value: String): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
       
@@ -395,7 +399,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[FileCompareHandlers]
     }
     
-    extension [Self <: FileCompareHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileCompareHandlers] (val x: Self) extends AnyVal {
       
       inline def setDefaultFileCompare(value: CompareFileHandler): Self = StObject.set(x, "defaultFileCompare", value.asInstanceOf[js.Any])
       
@@ -507,7 +512,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[InitialStatistics]
     }
     
-    extension [Self <: InitialStatistics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitialStatistics] (val x: Self) extends AnyVal {
       
       inline def setBrokenLinks(value: BrokenLinksStatistics): Self = StObject.set(x, "brokenLinks", value.asInstanceOf[js.Any])
       
@@ -695,7 +701,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCompareContent(value: Boolean): Self = StObject.set(x, "compareContent", value.asInstanceOf[js.Any])
       
@@ -825,7 +832,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[PermissionDeniedStatistics]
     }
     
-    extension [Self <: PermissionDeniedStatistics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PermissionDeniedStatistics] (val x: Self) extends AnyVal {
       
       inline def setDistinctPermissionDenied(value: Double): Self = StObject.set(x, "distinctPermissionDenied", value.asInstanceOf[js.Any])
       
@@ -887,7 +895,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setDiffSet(value: DiffSet): Self = StObject.set(x, "diffSet", value.asInstanceOf[js.Any])
       
@@ -990,7 +999,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[Statistics]
     }
     
-    extension [Self <: Statistics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Statistics] (val x: Self) extends AnyVal {
       
       inline def setDifferences(value: Double): Self = StObject.set(x, "differences", value.asInstanceOf[js.Any])
       
@@ -1054,7 +1064,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[SymlinkStatistics]
     }
     
-    extension [Self <: SymlinkStatistics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SymlinkStatistics] (val x: Self) extends AnyVal {
       
       inline def setDifferencesSymlinks(value: Double): Self = StObject.set(x, "differencesSymlinks", value.asInstanceOf[js.Any])
       

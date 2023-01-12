@@ -21,7 +21,8 @@ object SjclHashes {
     __obj.asInstanceOf[SjclHashes]
   }
   
-  extension [Self <: SjclHashes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SjclHashes] (val x: Self) extends AnyVal {
     
     inline def setRipemd160(value: SjclHashStatic): Self = StObject.set(x, "ripemd160", value.asInstanceOf[js.Any])
     

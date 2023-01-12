@@ -15,7 +15,8 @@ object DwUniqueID {
     __obj.asInstanceOf[DwUniqueID]
   }
   
-  extension [Self <: DwUniqueID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DwUniqueID] (val x: Self) extends AnyVal {
     
     inline def setDwUniqueID(value: Double): Self = StObject.set(x, "dwUniqueID", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object WafExcludedRule {
     __obj.asInstanceOf[WafExcludedRule]
   }
   
-  extension [Self <: WafExcludedRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WafExcludedRule] (val x: Self) extends AnyVal {
     
     inline def setRuleId(value: NonEmptyString): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
     

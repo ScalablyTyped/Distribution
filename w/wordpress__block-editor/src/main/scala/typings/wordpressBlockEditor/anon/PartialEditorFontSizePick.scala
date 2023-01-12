@@ -20,7 +20,8 @@ object PartialEditorFontSizePick {
     __obj.asInstanceOf[PartialEditorFontSizePick]
   }
   
-  extension [Self <: PartialEditorFontSizePick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialEditorFontSizePick] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

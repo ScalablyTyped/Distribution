@@ -23,7 +23,8 @@ object IAnnotationValidationPlugin {
     __obj.asInstanceOf[IAnnotationValidationPlugin]
   }
   
-  extension [Self <: IAnnotationValidationPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAnnotationValidationPlugin] (val x: Self) extends AnyVal {
     
     inline def setId(value: () => String): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
     

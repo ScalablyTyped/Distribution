@@ -18,7 +18,8 @@ object BrandResourcesList {
     __obj.asInstanceOf[BrandResourcesList]
   }
   
-  extension [Self <: BrandResourcesList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrandResourcesList] (val x: Self) extends AnyVal {
     
     inline def setResourcesContentTypes(value: js.Array[BrandResources]): Self = StObject.set(x, "resourcesContentTypes", value.asInstanceOf[js.Any])
     

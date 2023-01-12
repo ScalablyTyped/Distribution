@@ -25,7 +25,8 @@ object ConsulOptions {
     __obj.asInstanceOf[ConsulOptions]
   }
   
-  extension [Self <: ConsulOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsulOptions] (val x: Self) extends AnyVal {
     
     inline def setCa(value: js.Array[String]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
     

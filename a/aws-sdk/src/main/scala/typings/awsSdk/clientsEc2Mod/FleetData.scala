@@ -118,7 +118,8 @@ object FleetData {
     __obj.asInstanceOf[FleetData]
   }
   
-  extension [Self <: FleetData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FleetData] (val x: Self) extends AnyVal {
     
     inline def setActivityStatus(value: FleetActivityStatus): Self = StObject.set(x, "ActivityStatus", value.asInstanceOf[js.Any])
     

@@ -70,7 +70,8 @@ object Scenario_ {
     __obj.asInstanceOf[Scenario_]
   }
   
-  extension [Self <: Scenario_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scenario_] (val x: Self) extends AnyVal {
     
     inline def setCompanyValueRecord(value: Double): Self = StObject.set(x, "companyValueRecord", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ProcessLauncherResult {
     __obj.asInstanceOf[ProcessLauncherResult]
   }
   
-  extension [Self <: ProcessLauncherResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessLauncherResult] (val x: Self) extends AnyVal {
     
     inline def setExitCode(value: Any): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
   }

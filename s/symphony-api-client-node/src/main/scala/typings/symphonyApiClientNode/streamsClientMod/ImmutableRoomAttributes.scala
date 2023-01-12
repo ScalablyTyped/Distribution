@@ -19,7 +19,8 @@ object ImmutableRoomAttributes {
     __obj.asInstanceOf[ImmutableRoomAttributes]
   }
   
-  extension [Self <: ImmutableRoomAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImmutableRoomAttributes] (val x: Self) extends AnyVal {
     
     inline def setCopyProtected(value: Boolean): Self = StObject.set(x, "copyProtected", value.asInstanceOf[js.Any])
     

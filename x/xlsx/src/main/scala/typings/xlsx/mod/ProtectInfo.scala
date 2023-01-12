@@ -111,7 +111,8 @@ object ProtectInfo {
     __obj.asInstanceOf[ProtectInfo]
   }
   
-  extension [Self <: ProtectInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtectInfo] (val x: Self) extends AnyVal {
     
     inline def setAutoFilter(value: Boolean): Self = StObject.set(x, "autoFilter", value.asInstanceOf[js.Any])
     

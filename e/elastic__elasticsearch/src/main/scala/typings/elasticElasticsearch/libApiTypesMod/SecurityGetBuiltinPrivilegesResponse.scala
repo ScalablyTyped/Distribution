@@ -17,7 +17,8 @@ object SecurityGetBuiltinPrivilegesResponse {
     __obj.asInstanceOf[SecurityGetBuiltinPrivilegesResponse]
   }
   
-  extension [Self <: SecurityGetBuiltinPrivilegesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityGetBuiltinPrivilegesResponse] (val x: Self) extends AnyVal {
     
     inline def setCluster(value: js.Array[String]): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ImportSortBy {
     __obj.asInstanceOf[ImportSortBy]
   }
   
-  extension [Self <: ImportSortBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportSortBy] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: ImportSortAttribute): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

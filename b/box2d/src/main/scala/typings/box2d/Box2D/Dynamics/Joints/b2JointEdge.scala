@@ -34,7 +34,8 @@ object b2JointEdge {
     __obj.asInstanceOf[b2JointEdge]
   }
   
-  extension [Self <: b2JointEdge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2JointEdge] (val x: Self) extends AnyVal {
     
     inline def setJoint(value: b2Joint): Self = StObject.set(x, "joint", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object JCanvasRect {
     __obj.asInstanceOf[JCanvasRect]
   }
   
-  extension [Self <: JCanvasRect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JCanvasRect] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GestureOptions {
     __obj.asInstanceOf[GestureOptions]
   }
   
-  extension [Self <: GestureOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GestureOptions] (val x: Self) extends AnyVal {
     
     inline def setMacHelpText(value: String): Self = StObject.set(x, "macHelpText", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object TileLayerOptions {
     __obj.asInstanceOf[TileLayerOptions]
   }
   
-  extension [Self <: TileLayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileLayerOptions] (val x: Self) extends AnyVal {
     
     inline def setCopyright(value: Copyright): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     

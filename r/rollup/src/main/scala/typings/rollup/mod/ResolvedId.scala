@@ -29,7 +29,8 @@ object ResolvedId {
     __obj.asInstanceOf[ResolvedId]
   }
   
-  extension [Self <: ResolvedId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedId] (val x: Self) extends AnyVal {
     
     inline def setExternal(value: Boolean | absolute): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     

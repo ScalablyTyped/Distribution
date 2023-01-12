@@ -48,7 +48,8 @@ object libSelectMod extends Shortcut {
       __obj.asInstanceOf[BaseOptionType]
     }
     
-    extension [Self <: BaseOptionType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptionType] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object libSelectMod extends Shortcut {
       __obj.asInstanceOf[DefaultOptionType]
     }
     
-    extension [Self <: DefaultOptionType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultOptionType] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[OmitDefaultOptionTypechil]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object libSelectMod extends Shortcut {
       __obj.asInstanceOf[FieldNames]
     }
     
-    extension [Self <: FieldNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldNames] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -153,7 +156,8 @@ object libSelectMod extends Shortcut {
       __obj.asInstanceOf[LabelInValueType]
     }
     
-    extension [Self <: LabelInValueType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelInValueType] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -251,7 +255,8 @@ object libSelectMod extends Shortcut {
       __obj.asInstanceOf[SelectProps[ValueType, OptionType]]
     }
     
-    extension [Self <: SelectProps[?, ?], ValueType, OptionType /* <: BaseOptionType */](x: Self & (SelectProps[ValueType, OptionType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectProps[?, ?], ValueType, OptionType /* <: BaseOptionType */] (val x: Self & (SelectProps[ValueType, OptionType])) extends AnyVal {
       
       inline def setAutoClearSearchValue(value: Boolean): Self = StObject.set(x, "autoClearSearchValue", value.asInstanceOf[js.Any])
       

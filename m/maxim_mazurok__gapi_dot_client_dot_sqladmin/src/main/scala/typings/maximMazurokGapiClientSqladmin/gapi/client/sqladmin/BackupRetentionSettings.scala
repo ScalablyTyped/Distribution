@@ -19,7 +19,8 @@ object BackupRetentionSettings {
     __obj.asInstanceOf[BackupRetentionSettings]
   }
   
-  extension [Self <: BackupRetentionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackupRetentionSettings] (val x: Self) extends AnyVal {
     
     inline def setRetainedBackups(value: Double): Self = StObject.set(x, "retainedBackups", value.asInstanceOf[js.Any])
     

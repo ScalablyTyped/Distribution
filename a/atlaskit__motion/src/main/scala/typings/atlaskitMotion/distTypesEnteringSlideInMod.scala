@@ -76,7 +76,8 @@ object distTypesEnteringSlideInMod {
       __obj.asInstanceOf[SlideInProps]
     }
     
-    extension [Self <: SlideInProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlideInProps] (val x: Self) extends AnyVal {
       
       inline def setAnimationTimingFunction(value: /* state */ Transition => AnimationCurve): Self = StObject.set(x, "animationTimingFunction", js.Any.fromFunction1(value))
       

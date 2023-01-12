@@ -613,7 +613,8 @@ object mod {
       __obj.asInstanceOf[Transaction]
     }
     
-    extension [Self <: Transaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
       
       inline def setCommit(value: js.Function1[/* err */ js.Error | Null, Unit] => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction1(value))
       

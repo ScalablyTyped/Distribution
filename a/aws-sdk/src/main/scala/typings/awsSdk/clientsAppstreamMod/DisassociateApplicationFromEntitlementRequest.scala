@@ -28,7 +28,8 @@ object DisassociateApplicationFromEntitlementRequest {
     __obj.asInstanceOf[DisassociateApplicationFromEntitlementRequest]
   }
   
-  extension [Self <: DisassociateApplicationFromEntitlementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateApplicationFromEntitlementRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationIdentifier(value: String): Self = StObject.set(x, "ApplicationIdentifier", value.asInstanceOf[js.Any])
     

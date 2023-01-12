@@ -18,7 +18,8 @@ object GetSensitiveDataOccurrencesAvailabilityRequest {
     __obj.asInstanceOf[GetSensitiveDataOccurrencesAvailabilityRequest]
   }
   
-  extension [Self <: GetSensitiveDataOccurrencesAvailabilityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSensitiveDataOccurrencesAvailabilityRequest] (val x: Self) extends AnyVal {
     
     inline def setFindingId(value: string): Self = StObject.set(x, "findingId", value.asInstanceOf[js.Any])
   }

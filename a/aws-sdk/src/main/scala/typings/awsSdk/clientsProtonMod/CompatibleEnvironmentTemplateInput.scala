@@ -23,7 +23,8 @@ object CompatibleEnvironmentTemplateInput {
     __obj.asInstanceOf[CompatibleEnvironmentTemplateInput]
   }
   
-  extension [Self <: CompatibleEnvironmentTemplateInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompatibleEnvironmentTemplateInput] (val x: Self) extends AnyVal {
     
     inline def setMajorVersion(value: TemplateVersionPart): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
     

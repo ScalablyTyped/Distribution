@@ -23,7 +23,8 @@ object RunCommandTarget {
     __obj.asInstanceOf[RunCommandTarget]
   }
   
-  extension [Self <: RunCommandTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunCommandTarget] (val x: Self) extends AnyVal {
     
     inline def setKey(value: RunCommandTargetKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

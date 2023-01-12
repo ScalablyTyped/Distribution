@@ -18,7 +18,8 @@ object DisableKeyRotationRequest {
     __obj.asInstanceOf[DisableKeyRotationRequest]
   }
   
-  extension [Self <: DisableKeyRotationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableKeyRotationRequest] (val x: Self) extends AnyVal {
     
     inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
   }

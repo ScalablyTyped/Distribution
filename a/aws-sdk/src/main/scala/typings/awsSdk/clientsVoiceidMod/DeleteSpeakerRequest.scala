@@ -23,7 +23,8 @@ object DeleteSpeakerRequest {
     __obj.asInstanceOf[DeleteSpeakerRequest]
   }
   
-  extension [Self <: DeleteSpeakerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSpeakerRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
     

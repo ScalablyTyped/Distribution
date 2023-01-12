@@ -16,7 +16,8 @@ object ImageLoadEventData {
     __obj.asInstanceOf[ImageLoadEventData]
   }
   
-  extension [Self <: ImageLoadEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageLoadEventData] (val x: Self) extends AnyVal {
     
     inline def setSource(value: Uri): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }

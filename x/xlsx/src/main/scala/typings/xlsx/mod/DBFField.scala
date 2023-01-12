@@ -25,7 +25,8 @@ object DBFField {
     __obj.asInstanceOf[DBFField]
   }
   
-  extension [Self <: DBFField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBFField] (val x: Self) extends AnyVal {
     
     inline def setDec(value: Double): Self = StObject.set(x, "dec", value.asInstanceOf[js.Any])
     

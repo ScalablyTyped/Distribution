@@ -56,7 +56,8 @@ object XNumberFormatCode {
     __obj.asInstanceOf[XNumberFormatCode]
   }
   
-  extension [Self <: XNumberFormatCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNumberFormatCode] (val x: Self) extends AnyVal {
     
     inline def setGetAllFormatCode(value: (Double, Locale) => SafeArray[NumberFormatCode]): Self = StObject.set(x, "getAllFormatCode", js.Any.fromFunction2(value))
     

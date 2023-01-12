@@ -87,7 +87,8 @@ object libEsmColumnMod {
       __obj.asInstanceOf[IColumnProps]
     }
     
-    extension [Self <: IColumnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColumnProps] (val x: Self) extends AnyVal {
       
       inline def setCellRenderer(value: (/* rowIndex */ Double, /* columnIndex */ Double) => js.UndefOr[ReactElement]): Self = StObject.set(x, "cellRenderer", js.Any.fromFunction2(value))
       

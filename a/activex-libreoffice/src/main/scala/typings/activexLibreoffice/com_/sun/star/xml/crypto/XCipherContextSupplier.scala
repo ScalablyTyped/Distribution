@@ -45,7 +45,8 @@ object XCipherContextSupplier {
     __obj.asInstanceOf[XCipherContextSupplier]
   }
   
-  extension [Self <: XCipherContextSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCipherContextSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetCipherContext(
       value: (Double, SeqEquiv[Double], SeqEquiv[Double], Boolean, SeqEquiv[NamedValue]) => XCipherContext

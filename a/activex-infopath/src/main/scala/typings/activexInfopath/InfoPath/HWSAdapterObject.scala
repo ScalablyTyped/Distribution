@@ -34,7 +34,8 @@ object HWSAdapterObject {
     __obj.asInstanceOf[HWSAdapterObject]
   }
   
-  extension [Self <: HWSAdapterObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HWSAdapterObject] (val x: Self) extends AnyVal {
     
     inline def setInfoPathDotHWSAdapterObject_typekey(value: HWSAdapterObject): Self = StObject.set(x, "InfoPath.HWSAdapterObject_typekey", value.asInstanceOf[js.Any])
     

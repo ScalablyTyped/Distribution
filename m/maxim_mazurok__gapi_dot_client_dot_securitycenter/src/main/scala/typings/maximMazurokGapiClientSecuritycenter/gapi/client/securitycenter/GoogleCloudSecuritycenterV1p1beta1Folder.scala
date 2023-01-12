@@ -19,7 +19,8 @@ object GoogleCloudSecuritycenterV1p1beta1Folder {
     __obj.asInstanceOf[GoogleCloudSecuritycenterV1p1beta1Folder]
   }
   
-  extension [Self <: GoogleCloudSecuritycenterV1p1beta1Folder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudSecuritycenterV1p1beta1Folder] (val x: Self) extends AnyVal {
     
     inline def setResourceFolder(value: String): Self = StObject.set(x, "resourceFolder", value.asInstanceOf[js.Any])
     

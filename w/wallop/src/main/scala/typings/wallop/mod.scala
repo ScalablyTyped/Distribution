@@ -127,7 +127,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setButtonNextClass(value: String): Self = StObject.set(x, "buttonNextClass", value.asInstanceOf[js.Any])
       
@@ -213,7 +214,8 @@ object mod {
       __obj.asInstanceOf[Wallop]
     }
     
-    extension [Self <: Wallop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Wallop] (val x: Self) extends AnyVal {
       
       inline def setGoTo(value: Double => Wallop): Self = StObject.set(x, "goTo", js.Any.fromFunction1(value))
       

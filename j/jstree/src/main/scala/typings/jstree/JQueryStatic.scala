@@ -27,7 +27,8 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  extension [Self <: JQueryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     inline def setJstree(value: JSTreeStatic): Self = StObject.set(x, "jstree", value.asInstanceOf[js.Any])
     

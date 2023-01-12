@@ -20,7 +20,8 @@ object OriginatorIdentifierOrKeyParameters {
     __obj.asInstanceOf[OriginatorIdentifierOrKeyParameters]
   }
   
-  extension [Self <: OriginatorIdentifierOrKeyParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginatorIdentifierOrKeyParameters] (val x: Self) extends AnyVal {
     
     inline def setSchema(value: SchemaType): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     

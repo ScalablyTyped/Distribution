@@ -15,7 +15,8 @@ object OnSelect {
     __obj.asInstanceOf[OnSelect]
   }
   
-  extension [Self <: OnSelect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnSelect] (val x: Self) extends AnyVal {
     
     inline def setOnSelect(value: String => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
   }

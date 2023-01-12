@@ -31,7 +31,8 @@ object MessageContextOptions {
     __obj.asInstanceOf[MessageContextOptions[T, N]]
   }
   
-  extension [Self <: MessageContextOptions[?, ?], T, N](x: Self & (MessageContextOptions[T, N])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageContextOptions[?, ?], T, N] (val x: Self & (MessageContextOptions[T, N])) extends AnyVal {
     
     inline def setList(value: js.Array[Any]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     

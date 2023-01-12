@@ -17,7 +17,8 @@ object DialogMessages {
     __obj.asInstanceOf[DialogMessages]
   }
   
-  extension [Self <: DialogMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogMessages] (val x: Self) extends AnyVal {
     
     inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

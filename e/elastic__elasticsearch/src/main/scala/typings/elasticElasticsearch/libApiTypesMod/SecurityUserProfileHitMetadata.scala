@@ -17,7 +17,8 @@ object SecurityUserProfileHitMetadata {
     __obj.asInstanceOf[SecurityUserProfileHitMetadata]
   }
   
-  extension [Self <: SecurityUserProfileHitMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityUserProfileHitMetadata] (val x: Self) extends AnyVal {
     
     inline def set_primary_term(value: long): Self = StObject.set(x, "_primary_term", value.asInstanceOf[js.Any])
     

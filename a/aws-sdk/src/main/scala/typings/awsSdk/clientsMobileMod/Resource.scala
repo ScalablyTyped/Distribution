@@ -23,7 +23,8 @@ object Resource {
     __obj.asInstanceOf[Resource]
   }
   
-  extension [Self <: Resource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ResourceArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

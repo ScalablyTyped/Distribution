@@ -23,7 +23,8 @@ object PutWebhookInput {
     __obj.asInstanceOf[PutWebhookInput]
   }
   
-  extension [Self <: PutWebhookInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutWebhookInput] (val x: Self) extends AnyVal {
     
     inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

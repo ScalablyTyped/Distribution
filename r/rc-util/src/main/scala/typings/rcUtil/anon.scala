@@ -350,7 +350,8 @@ object anon {
       __obj.asInstanceOf[AfterClose]
     }
     
-    extension [Self <: AfterClose](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AfterClose] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: js.Function): Self = StObject.set(x, "afterClose", value.asInstanceOf[js.Any])
       
@@ -377,7 +378,8 @@ object anon {
       __obj.asInstanceOf[DefaultValue[T]]
     }
     
-    extension [Self <: DefaultValue[?], T](x: Self & DefaultValue[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultValue[?], T] (val x: Self & DefaultValue[T]) extends AnyVal {
       
       inline def setDefaultValue(value: T | js.Function0[T]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -3491,7 +3493,8 @@ object anon {
       __obj.asInstanceOf[GetContainer]
     }
     
-    extension [Self <: GetContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetContainer] (val x: Self) extends AnyVal {
       
       inline def setGetContainer(value: () => HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
       
@@ -3520,7 +3523,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -3539,7 +3543,8 @@ object anon {
       __obj.asInstanceOf[MockRestore]
     }
     
-    extension [Self <: MockRestore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockRestore] (val x: Self) extends AnyVal {
       
       inline def setMockRestore(value: () => Unit): Self = StObject.set(x, "mockRestore", js.Any.fromFunction0(value))
     }
@@ -3556,7 +3561,8 @@ object anon {
       __obj.asInstanceOf[Nonce]
     }
     
-    extension [Self <: Nonce](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Nonce] (val x: Self) extends AnyVal {
       
       inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
@@ -3584,7 +3590,8 @@ object anon {
       __obj.asInstanceOf[PartialPortalWrapperProps]
     }
     
-    extension [Self <: PartialPortalWrapperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPortalWrapperProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: /* info */ GetContainer => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       

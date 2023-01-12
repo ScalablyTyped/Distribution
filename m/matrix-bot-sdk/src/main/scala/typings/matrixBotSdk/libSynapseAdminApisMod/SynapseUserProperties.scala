@@ -20,7 +20,8 @@ object SynapseUserProperties {
     __obj.asInstanceOf[SynapseUserProperties]
   }
   
-  extension [Self <: SynapseUserProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SynapseUserProperties] (val x: Self) extends AnyVal {
     
     inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     

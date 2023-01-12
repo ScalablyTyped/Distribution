@@ -20,7 +20,8 @@ object opacityCreateVisualVariableParamsLegendOptions {
     __obj.asInstanceOf[opacityCreateVisualVariableParamsLegendOptions]
   }
   
-  extension [Self <: opacityCreateVisualVariableParamsLegendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: opacityCreateVisualVariableParamsLegendOptions] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

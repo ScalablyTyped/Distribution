@@ -24,7 +24,8 @@ object ResolvedSSROptions {
     __obj.asInstanceOf[ResolvedSSROptions]
   }
   
-  extension [Self <: ResolvedSSROptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedSSROptions] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: SSRFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

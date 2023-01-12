@@ -173,7 +173,8 @@ object esUtilsUiUtilMod {
       __obj.asInstanceOf[KeyboardConfig]
     }
     
-    extension [Self <: KeyboardConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardConfig] (val x: Self) extends AnyVal {
       
       inline def setOnCtrlLeftRight(value: /* diff */ Double => Unit): Self = StObject.set(x, "onCtrlLeftRight", js.Any.fromFunction1(value))
       

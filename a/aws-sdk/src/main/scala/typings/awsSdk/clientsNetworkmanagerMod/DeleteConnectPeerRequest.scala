@@ -18,7 +18,8 @@ object DeleteConnectPeerRequest {
     __obj.asInstanceOf[DeleteConnectPeerRequest]
   }
   
-  extension [Self <: DeleteConnectPeerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteConnectPeerRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectPeerId(value: ConnectPeerId): Self = StObject.set(x, "ConnectPeerId", value.asInstanceOf[js.Any])
   }

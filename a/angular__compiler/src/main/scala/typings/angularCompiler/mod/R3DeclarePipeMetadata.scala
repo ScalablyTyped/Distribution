@@ -37,7 +37,8 @@ object R3DeclarePipeMetadata {
     __obj.asInstanceOf[R3DeclarePipeMetadata]
   }
   
-  extension [Self <: R3DeclarePipeMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3DeclarePipeMetadata] (val x: Self) extends AnyVal {
     
     inline def setIsStandalone(value: Boolean): Self = StObject.set(x, "isStandalone", value.asInstanceOf[js.Any])
     

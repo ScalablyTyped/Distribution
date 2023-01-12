@@ -23,7 +23,8 @@ object RuleGroupSourceStatelessRuleMatchAttributesTcpFlags {
     __obj.asInstanceOf[RuleGroupSourceStatelessRuleMatchAttributesTcpFlags]
   }
   
-  extension [Self <: RuleGroupSourceStatelessRuleMatchAttributesTcpFlags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleGroupSourceStatelessRuleMatchAttributesTcpFlags] (val x: Self) extends AnyVal {
     
     inline def setFlags(value: NonEmptyStringList): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     

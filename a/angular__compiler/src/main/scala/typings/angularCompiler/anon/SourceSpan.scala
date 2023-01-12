@@ -16,7 +16,8 @@ object SourceSpan {
     __obj.asInstanceOf[SourceSpan]
   }
   
-  extension [Self <: SourceSpan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceSpan] (val x: Self) extends AnyVal {
     
     inline def setSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "sourceSpan", value.asInstanceOf[js.Any])
     

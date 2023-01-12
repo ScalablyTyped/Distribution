@@ -28,7 +28,8 @@ object DefaultOverlay {
     __obj.asInstanceOf[DefaultOverlay[BaseToken]]
   }
   
-  extension [Self <: DefaultOverlay[?], BaseToken](x: Self & DefaultOverlay[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultOverlay[?], BaseToken] (val x: Self & DefaultOverlay[BaseToken]) extends AnyVal {
     
     inline def setOverlay(value: DefaultHoveredPressed[BaseToken]): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     

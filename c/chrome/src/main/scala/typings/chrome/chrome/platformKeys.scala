@@ -37,7 +37,8 @@ object platformKeys {
       __obj.asInstanceOf[ClientCertificateSelectDetails]
     }
     
-    extension [Self <: ClientCertificateSelectDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientCertificateSelectDetails] (val x: Self) extends AnyVal {
       
       inline def setClientCerts(value: js.Array[js.typedarray.ArrayBuffer]): Self = StObject.set(x, "clientCerts", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object platformKeys {
       __obj.asInstanceOf[ClientCertificateSelectRequestDetails]
     }
     
-    extension [Self <: ClientCertificateSelectRequestDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientCertificateSelectRequestDetails] (val x: Self) extends AnyVal {
       
       inline def setCertificateAuthorities(value: js.Array[js.typedarray.ArrayBuffer]): Self = StObject.set(x, "certificateAuthorities", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object platformKeys {
       __obj.asInstanceOf[Match]
     }
     
-    extension [Self <: Match](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Match] (val x: Self) extends AnyVal {
       
       inline def setCertificate(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
@@ -116,7 +119,8 @@ object platformKeys {
       __obj.asInstanceOf[ServerCertificateVerificationDetails]
     }
     
-    extension [Self <: ServerCertificateVerificationDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerCertificateVerificationDetails] (val x: Self) extends AnyVal {
       
       inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
@@ -144,7 +148,8 @@ object platformKeys {
       __obj.asInstanceOf[ServerCertificateVerificationResult]
     }
     
-    extension [Self <: ServerCertificateVerificationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerCertificateVerificationResult] (val x: Self) extends AnyVal {
       
       inline def setDebug_errors(value: js.Array[String]): Self = StObject.set(x, "debug_errors", value.asInstanceOf[js.Any])
       

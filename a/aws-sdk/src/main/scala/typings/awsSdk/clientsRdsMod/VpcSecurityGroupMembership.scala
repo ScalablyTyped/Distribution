@@ -23,7 +23,8 @@ object VpcSecurityGroupMembership {
     __obj.asInstanceOf[VpcSecurityGroupMembership]
   }
   
-  extension [Self <: VpcSecurityGroupMembership](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcSecurityGroupMembership] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

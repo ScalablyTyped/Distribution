@@ -59,7 +59,8 @@ object ShowAsRule {
     __obj.asInstanceOf[ShowAsRule]
   }
   
-  extension [Self <: ShowAsRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowAsRule] (val x: Self) extends AnyVal {
     
     inline def setBaseField(value: PivotField): Self = StObject.set(x, "baseField", value.asInstanceOf[js.Any])
     

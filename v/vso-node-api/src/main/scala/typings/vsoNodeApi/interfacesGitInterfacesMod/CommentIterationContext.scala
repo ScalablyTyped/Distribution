@@ -23,7 +23,8 @@ object CommentIterationContext {
     __obj.asInstanceOf[CommentIterationContext]
   }
   
-  extension [Self <: CommentIterationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentIterationContext] (val x: Self) extends AnyVal {
     
     inline def setFirstComparingIteration(value: Double): Self = StObject.set(x, "firstComparingIteration", value.asInstanceOf[js.Any])
     

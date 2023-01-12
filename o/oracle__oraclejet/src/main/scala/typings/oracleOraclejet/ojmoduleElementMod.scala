@@ -170,7 +170,8 @@ object ojmoduleElementMod {
       __obj.asInstanceOf[ModuleElementAnimation]
     }
     
-    extension [Self <: ModuleElementAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleElementAnimation] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: InsertNewView => js.Promise[Any]): Self = StObject.set(x, "animate", js.Any.fromFunction1(value))
       
@@ -1383,7 +1384,8 @@ object ojmoduleElementMod {
       __obj.asInstanceOf[ojModuleEventMap]
     }
     
-    extension [Self <: ojModuleEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojModuleEventMap] (val x: Self) extends AnyVal {
       
       inline def setAnimationChanged(
         value: JetElementCustomEvent[
@@ -1418,7 +1420,8 @@ object ojmoduleElementMod {
       __obj.asInstanceOf[ojModuleSettableProperties]
     }
     
-    extension [Self <: ojModuleSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojModuleSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: js.Object): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -1442,7 +1445,8 @@ object ojmoduleElementMod {
       __obj.asInstanceOf[ojModuleSettablePropertiesLenient]
     }
     
-    extension [Self <: ojModuleSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojModuleSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: js.Object): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

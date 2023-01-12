@@ -21,7 +21,8 @@ object IceCandidatePair {
     __obj.asInstanceOf[IceCandidatePair]
   }
   
-  extension [Self <: IceCandidatePair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IceCandidatePair] (val x: Self) extends AnyVal {
     
     inline def setComponentID(value: Double): Self = StObject.set(x, "componentID", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object PlotNetworkgraphOnPointPositionOptions {
     __obj.asInstanceOf[PlotNetworkgraphOnPointPositionOptions]
   }
   
-  extension [Self <: PlotNetworkgraphOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotNetworkgraphOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

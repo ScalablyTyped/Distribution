@@ -18,7 +18,8 @@ object CreateMicrosoftADResult {
     __obj.asInstanceOf[CreateMicrosoftADResult]
   }
   
-  extension [Self <: CreateMicrosoftADResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMicrosoftADResult] (val x: Self) extends AnyVal {
     
     inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[ReactShowMoreTextProps]
     }
     
-    extension [Self <: ReactShowMoreTextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactShowMoreTextProps] (val x: Self) extends AnyVal {
       
       inline def setAnchorClass(value: String): Self = StObject.set(x, "anchorClass", value.asInstanceOf[js.Any])
       

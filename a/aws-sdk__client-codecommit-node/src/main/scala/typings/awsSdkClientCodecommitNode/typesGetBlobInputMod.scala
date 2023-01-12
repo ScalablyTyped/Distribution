@@ -51,7 +51,8 @@ object typesGetBlobInputMod {
       __obj.asInstanceOf[GetBlobInput]
     }
     
-    extension [Self <: GetBlobInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetBlobInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

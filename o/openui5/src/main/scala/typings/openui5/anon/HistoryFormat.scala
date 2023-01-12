@@ -25,7 +25,8 @@ object HistoryFormat {
     __obj.asInstanceOf[HistoryFormat]
   }
   
-  extension [Self <: HistoryFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryFormat] (val x: Self) extends AnyVal {
     
     inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[ForeignKeySuffix]
     }
     
-    extension [Self <: ForeignKeySuffix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForeignKeySuffix] (val x: Self) extends AnyVal {
       
       inline def setForeignKeySuffix(value: String): Self = StObject.set(x, "foreignKeySuffix", value.asInstanceOf[js.Any])
     }

@@ -25,7 +25,8 @@ object Region {
     __obj.asInstanceOf[Region]
   }
   
-  extension [Self <: Region](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

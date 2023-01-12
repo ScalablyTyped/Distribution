@@ -24,7 +24,8 @@ object CRLBagParameters {
     __obj.asInstanceOf[CRLBagParameters]
   }
   
-  extension [Self <: CRLBagParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CRLBagParameters] (val x: Self) extends AnyVal {
     
     inline def setCertValue(value: Any): Self = StObject.set(x, "certValue", value.asInstanceOf[js.Any])
     

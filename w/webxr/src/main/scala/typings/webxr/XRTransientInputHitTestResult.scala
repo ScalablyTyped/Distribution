@@ -17,7 +17,8 @@ object XRTransientInputHitTestResult {
     __obj.asInstanceOf[XRTransientInputHitTestResult]
   }
   
-  extension [Self <: XRTransientInputHitTestResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRTransientInputHitTestResult] (val x: Self) extends AnyVal {
     
     inline def setInputSource(value: XRInputSource): Self = StObject.set(x, "inputSource", value.asInstanceOf[js.Any])
     

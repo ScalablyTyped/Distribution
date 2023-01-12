@@ -196,7 +196,8 @@ object distLayersConvolutionalDepthwiseMod {
       __obj.asInstanceOf[DepthwiseConv2DLayerArgs]
     }
     
-    extension [Self <: DepthwiseConv2DLayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DepthwiseConv2DLayerArgs] (val x: Self) extends AnyVal {
       
       inline def setDepthMultiplier(value: Double): Self = StObject.set(x, "depthMultiplier", value.asInstanceOf[js.Any])
       

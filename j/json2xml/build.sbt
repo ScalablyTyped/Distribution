@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "json2xml"
-version := "0.1-dt-20211202Z-8e0e1f"
+version := "0.1-dt-20211202Z-6777c2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

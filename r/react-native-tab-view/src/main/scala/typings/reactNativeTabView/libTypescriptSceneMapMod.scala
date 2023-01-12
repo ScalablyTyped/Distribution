@@ -32,7 +32,8 @@ object libTypescriptSceneMapMod {
       __obj.asInstanceOf[SceneProps]
     }
     
-    extension [Self <: SceneProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SceneProps] (val x: Self) extends AnyVal {
       
       inline def setJumpTo(value: /* key */ String => Unit): Self = StObject.set(x, "jumpTo", js.Any.fromFunction1(value))
       

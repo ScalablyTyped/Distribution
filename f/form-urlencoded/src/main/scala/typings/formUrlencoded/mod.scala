@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[FormEncodedOptions]
     }
     
-    extension [Self <: FormEncodedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormEncodedOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnorenull(value: Boolean): Self = StObject.set(x, "ignorenull", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object Easing {
     __obj.asInstanceOf[Easing]
   }
   
-  extension [Self <: Easing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Easing] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

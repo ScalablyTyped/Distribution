@@ -43,7 +43,8 @@ object TooltipHiddenEventUIParam {
     __obj.asInstanceOf[TooltipHiddenEventUIParam]
   }
   
-  extension [Self <: TooltipHiddenEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipHiddenEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setActualItemBrush(value: Any): Self = StObject.set(x, "actualItemBrush", value.asInstanceOf[js.Any])
     

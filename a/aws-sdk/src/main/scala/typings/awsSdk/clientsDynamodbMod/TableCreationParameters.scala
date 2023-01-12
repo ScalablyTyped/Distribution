@@ -42,7 +42,8 @@ object TableCreationParameters {
     __obj.asInstanceOf[TableCreationParameters]
   }
   
-  extension [Self <: TableCreationParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableCreationParameters] (val x: Self) extends AnyVal {
     
     inline def setAttributeDefinitions(value: AttributeDefinitions): Self = StObject.set(x, "AttributeDefinitions", value.asInstanceOf[js.Any])
     

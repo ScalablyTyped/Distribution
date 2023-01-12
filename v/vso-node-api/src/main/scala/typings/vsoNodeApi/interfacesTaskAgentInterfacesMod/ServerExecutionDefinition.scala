@@ -15,7 +15,8 @@ object ServerExecutionDefinition {
     __obj.asInstanceOf[ServerExecutionDefinition]
   }
   
-  extension [Self <: ServerExecutionDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerExecutionDefinition] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: JobEventsConfig): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object CompanyStartDate {
     __obj.asInstanceOf[CompanyStartDate]
   }
   
-  extension [Self <: CompanyStartDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompanyStartDate] (val x: Self) extends AnyVal {
     
     inline def setCompanyStartDate(value: Timestamp): Self = StObject.set(x, "companyStartDate", value.asInstanceOf[js.Any])
     

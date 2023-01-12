@@ -37,7 +37,8 @@ object gapi {
           __obj.asInstanceOf[ImportSshPublicKeyResponse]
         }
         
-        extension [Self <: ImportSshPublicKeyResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ImportSshPublicKeyResponse] (val x: Self) extends AnyVal {
           
           inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
           
@@ -69,7 +70,8 @@ object gapi {
           __obj.asInstanceOf[LoginProfile]
         }
         
-        extension [Self <: LoginProfile](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: LoginProfile] (val x: Self) extends AnyVal {
           
           inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
@@ -131,7 +133,8 @@ object gapi {
           __obj.asInstanceOf[PosixAccount]
         }
         
-        extension [Self <: PosixAccount](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: PosixAccount] (val x: Self) extends AnyVal {
           
           inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
           
@@ -208,7 +211,8 @@ object gapi {
           __obj.asInstanceOf[SshPublicKey]
         }
         
-        extension [Self <: SshPublicKey](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SshPublicKey] (val x: Self) extends AnyVal {
           
           inline def setExpirationTimeUsec(value: String): Self = StObject.set(x, "expirationTimeUsec", value.asInstanceOf[js.Any])
           

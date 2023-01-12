@@ -62,7 +62,8 @@ object jsonldSpecMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBase(value: DOMString): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object jsonldSpecMod {
       __obj.asInstanceOf[RemoteDocument]
     }
     
-    extension [Self <: RemoteDocument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteDocument] (val x: Self) extends AnyVal {
       
       inline def setContextUrl(value: Url): Self = StObject.set(x, "contextUrl", value.asInstanceOf[js.Any])
       

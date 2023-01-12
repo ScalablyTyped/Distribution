@@ -39,7 +39,8 @@ object MeasureSupplementalData {
     __obj.asInstanceOf[MeasureSupplementalData]
   }
   
-  extension [Self <: MeasureSupplementalData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeasureSupplementalData] (val x: Self) extends AnyVal {
     
     inline def setCriteria(value: String): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     

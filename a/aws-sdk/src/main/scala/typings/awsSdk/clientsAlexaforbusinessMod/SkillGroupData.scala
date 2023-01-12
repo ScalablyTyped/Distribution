@@ -28,7 +28,8 @@ object SkillGroupData {
     __obj.asInstanceOf[SkillGroupData]
   }
   
-  extension [Self <: SkillGroupData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkillGroupData] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: SkillGroupDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

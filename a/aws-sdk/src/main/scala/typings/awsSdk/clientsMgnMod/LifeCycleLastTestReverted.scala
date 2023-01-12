@@ -18,7 +18,8 @@ object LifeCycleLastTestReverted {
     __obj.asInstanceOf[LifeCycleLastTestReverted]
   }
   
-  extension [Self <: LifeCycleLastTestReverted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LifeCycleLastTestReverted] (val x: Self) extends AnyVal {
     
     inline def setApiCallDateTime(value: ISO8601DatetimeString): Self = StObject.set(x, "apiCallDateTime", value.asInstanceOf[js.Any])
     

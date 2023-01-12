@@ -25,7 +25,8 @@ object QueryExecuteOptions {
     __obj.asInstanceOf[QueryExecuteOptions[OrderItemsType]]
   }
   
-  extension [Self <: QueryExecuteOptions[?], OrderItemsType /* <: QuadTermName | Variable */](x: Self & QueryExecuteOptions[OrderItemsType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryExecuteOptions[?], OrderItemsType /* <: QuadTermName | Variable */] (val x: Self & QueryExecuteOptions[OrderItemsType]) extends AnyVal {
     
     inline def setOrder(value: QueryOperationOrder[OrderItemsType]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object NfsExportOptions {
     __obj.asInstanceOf[NfsExportOptions]
   }
   
-  extension [Self <: NfsExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NfsExportOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessMode(value: String): Self = StObject.set(x, "accessMode", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object releaseInputMod {
     
     inline def getChangeState(previous: File, current: File): FileChangeState = (^.asInstanceOf[js.Dynamic].applyDynamic("getChangeState")(previous.asInstanceOf[js.Any], current.asInstanceOf[js.Any])).asInstanceOf[FileChangeState]
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -220,7 +221,8 @@ object releaseInputMod {
       __obj.asInstanceOf[FileChange]
     }
     
-    extension [Self <: FileChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileChange] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: File): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       

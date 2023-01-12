@@ -19,7 +19,8 @@ object GetPublishListResult {
     __obj.asInstanceOf[GetPublishListResult]
   }
   
-  extension [Self <: GetPublishListResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPublishListResult] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object SaaSConfiguration {
     __obj.asInstanceOf[SaaSConfiguration]
   }
   
-  extension [Self <: SaaSConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaaSConfiguration] (val x: Self) extends AnyVal {
     
     inline def setHostUrl(value: Url): Self = StObject.set(x, "HostUrl", value.asInstanceOf[js.Any])
     

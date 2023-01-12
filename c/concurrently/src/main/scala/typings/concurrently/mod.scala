@@ -197,7 +197,8 @@ object mod {
       __obj.asInstanceOf[ConcurrentlyOptions]
     }
     
-    extension [Self <: ConcurrentlyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConcurrentlyOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultInputTarget(value: CommandIdentifier): Self = StObject.set(x, "defaultInputTarget", value.asInstanceOf[js.Any])
       

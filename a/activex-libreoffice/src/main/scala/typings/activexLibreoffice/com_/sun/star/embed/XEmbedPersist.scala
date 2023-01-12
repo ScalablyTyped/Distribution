@@ -133,7 +133,8 @@ object XEmbedPersist {
     __obj.asInstanceOf[XEmbedPersist]
   }
   
-  extension [Self <: XEmbedPersist](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEmbedPersist] (val x: Self) extends AnyVal {
     
     inline def setEntryName(value: String): Self = StObject.set(x, "EntryName", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Post]
     }
     
-    extension [Self <: Post](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Post] (val x: Self) extends AnyVal {
       
       inline def setPost(
         value: (/* schema */ SchemaObject, /* jsonPtr */ String, /* rootSchema */ SchemaObject, /* parentJsonPtr */ js.UndefOr[String], /* parentKeyword */ js.UndefOr[String], /* parentSchema */ js.UndefOr[SchemaObject], /* keyIndex */ js.UndefOr[String | Double]) => Unit

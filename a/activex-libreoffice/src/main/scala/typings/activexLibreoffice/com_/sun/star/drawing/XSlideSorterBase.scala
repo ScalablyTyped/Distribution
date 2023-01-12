@@ -117,7 +117,8 @@ object XSlideSorterBase {
     __obj.asInstanceOf[XSlideSorterBase]
   }
   
-  extension [Self <: XSlideSorterBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSlideSorterBase] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: Color): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
     

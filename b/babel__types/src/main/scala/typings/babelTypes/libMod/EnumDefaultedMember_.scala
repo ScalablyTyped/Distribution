@@ -25,7 +25,8 @@ object EnumDefaultedMember_ {
     __obj.asInstanceOf[EnumDefaultedMember_]
   }
   
-  extension [Self <: EnumDefaultedMember_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumDefaultedMember_] (val x: Self) extends AnyVal {
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

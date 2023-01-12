@@ -337,7 +337,8 @@ object libMod {
       __obj.asInstanceOf[Map]
     }
     
-    extension [Self <: Map](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -419,7 +420,8 @@ object libMod {
       __obj.asInstanceOf[VFileCoreOptions]
     }
     
-    extension [Self <: VFileCoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VFileCoreOptions] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       

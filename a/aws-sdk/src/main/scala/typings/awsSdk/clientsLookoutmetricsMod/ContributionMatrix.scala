@@ -18,7 +18,8 @@ object ContributionMatrix {
     __obj.asInstanceOf[ContributionMatrix]
   }
   
-  extension [Self <: ContributionMatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContributionMatrix] (val x: Self) extends AnyVal {
     
     inline def setDimensionContributionList(value: DimensionContributionList): Self = StObject.set(x, "DimensionContributionList", value.asInstanceOf[js.Any])
     

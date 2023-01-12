@@ -130,7 +130,8 @@ object CalendarSvgProps {
     __obj.asInstanceOf[CalendarSvgProps]
   }
   
-  extension [Self <: CalendarSvgProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarSvgProps] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: BoxAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

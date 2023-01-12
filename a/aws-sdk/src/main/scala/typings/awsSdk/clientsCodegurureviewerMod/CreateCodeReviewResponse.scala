@@ -15,7 +15,8 @@ object CreateCodeReviewResponse {
     __obj.asInstanceOf[CreateCodeReviewResponse]
   }
   
-  extension [Self <: CreateCodeReviewResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCodeReviewResponse] (val x: Self) extends AnyVal {
     
     inline def setCodeReview(value: CodeReview): Self = StObject.set(x, "CodeReview", value.asInstanceOf[js.Any])
     

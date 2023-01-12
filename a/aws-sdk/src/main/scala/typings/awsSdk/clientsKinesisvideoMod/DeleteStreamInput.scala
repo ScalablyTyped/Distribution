@@ -23,7 +23,8 @@ object DeleteStreamInput {
     __obj.asInstanceOf[DeleteStreamInput]
   }
   
-  extension [Self <: DeleteStreamInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteStreamInput] (val x: Self) extends AnyVal {
     
     inline def setCurrentVersion(value: Version): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     

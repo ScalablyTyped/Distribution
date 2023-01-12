@@ -21,7 +21,8 @@ object CaptureOptions {
     __obj.asInstanceOf[CaptureOptions]
   }
   
-  extension [Self <: CaptureOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptureOptions] (val x: Self) extends AnyVal {
     
     inline def setRequestedVariant(value: RequestedVariant): Self = StObject.set(x, "requestedVariant", value.asInstanceOf[js.Any])
     

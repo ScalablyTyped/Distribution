@@ -33,7 +33,8 @@ object TestWindowSummary {
     __obj.asInstanceOf[TestWindowSummary]
   }
   
-  extension [Self <: TestWindowSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestWindowSummary] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: ErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

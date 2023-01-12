@@ -97,7 +97,8 @@ object DeviceEnrollmentWindowsHelloForBusinessConfiguration {
     __obj.asInstanceOf[DeviceEnrollmentWindowsHelloForBusinessConfiguration]
   }
   
-  extension [Self <: DeviceEnrollmentWindowsHelloForBusinessConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceEnrollmentWindowsHelloForBusinessConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEnhancedBiometricsState(value: Enablement): Self = StObject.set(x, "enhancedBiometricsState", value.asInstanceOf[js.Any])
     

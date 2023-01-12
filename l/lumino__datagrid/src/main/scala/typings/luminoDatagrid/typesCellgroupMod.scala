@@ -156,7 +156,8 @@ object typesCellgroupMod {
       */
     inline def joinCellGroupsIntersectingAtAxis(dataModel: DataModel, regions: js.Array[CellRegion], axis: row | column, group: CellGroup): CellGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("joinCellGroupsIntersectingAtAxis")(dataModel.asInstanceOf[js.Any], regions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], group.asInstanceOf[js.Any])).asInstanceOf[CellGroup]
     
-    extension [Self <: CellGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellGroup] (val x: Self) extends AnyVal {
       
       inline def setC1(value: Double): Self = StObject.set(x, "c1", value.asInstanceOf[js.Any])
       

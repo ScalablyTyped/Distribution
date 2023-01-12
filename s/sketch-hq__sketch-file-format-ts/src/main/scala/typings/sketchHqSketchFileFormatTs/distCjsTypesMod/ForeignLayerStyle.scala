@@ -37,7 +37,8 @@ object ForeignLayerStyle {
     __obj.asInstanceOf[ForeignLayerStyle]
   }
   
-  extension [Self <: ForeignLayerStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForeignLayerStyle] (val x: Self) extends AnyVal {
     
     inline def setDo_objectID(value: Uuid): Self = StObject.set(x, "do_objectID", value.asInstanceOf[js.Any])
     

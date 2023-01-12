@@ -21,7 +21,8 @@ object QueryDslTermsSetQuery {
     __obj.asInstanceOf[QueryDslTermsSetQuery]
   }
   
-  extension [Self <: QueryDslTermsSetQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslTermsSetQuery] (val x: Self) extends AnyVal {
     
     inline def setMinimum_should_match_field(value: Field): Self = StObject.set(x, "minimum_should_match_field", value.asInstanceOf[js.Any])
     

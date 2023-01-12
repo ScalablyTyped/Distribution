@@ -34,7 +34,8 @@ object DeviceDetail {
     __obj.asInstanceOf[DeviceDetail]
   }
   
-  extension [Self <: DeviceDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceDetail] (val x: Self) extends AnyVal {
     
     inline def setBrowser(value: NullableOption[String]): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     

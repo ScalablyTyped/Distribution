@@ -136,7 +136,8 @@ object buildSrcSignerMod {
       __obj.asInstanceOf[AuthClient]
     }
     
-    extension [Self <: AuthClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthClient] (val x: Self) extends AnyVal {
       
       inline def setGetCredentials(value: () => js.Promise[GetCredentialsResponse]): Self = StObject.set(x, "getCredentials", js.Any.fromFunction0(value))
       
@@ -155,7 +156,8 @@ object buildSrcSignerMod {
       __obj.asInstanceOf[BucketI]
     }
     
-    extension [Self <: BucketI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BucketI] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -172,7 +174,8 @@ object buildSrcSignerMod {
       __obj.asInstanceOf[FileI]
     }
     
-    extension [Self <: FileI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileI] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -189,7 +192,8 @@ object buildSrcSignerMod {
       __obj.asInstanceOf[GetCredentialsResponse]
     }
     
-    extension [Self <: GetCredentialsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetCredentialsResponse] (val x: Self) extends AnyVal {
       
       inline def setClient_email(value: String): Self = StObject.set(x, "client_email", value.asInstanceOf[js.Any])
       
@@ -228,7 +232,8 @@ object buildSrcSignerMod {
       __obj.asInstanceOf[GetSignedUrlConfigInternal]
     }
     
-    extension [Self <: GetSignedUrlConfigInternal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetSignedUrlConfigInternal] (val x: Self) extends AnyVal {
       
       inline def setAccessibleAt(value: js.Date): Self = StObject.set(x, "accessibleAt", value.asInstanceOf[js.Any])
       
@@ -299,7 +304,8 @@ object buildSrcSignerMod {
       __obj.asInstanceOf[SignerGetSignedUrlConfig]
     }
     
-    extension [Self <: SignerGetSignedUrlConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignerGetSignedUrlConfig] (val x: Self) extends AnyVal {
       
       inline def setAccessibleAt(value: String | Double | js.Date): Self = StObject.set(x, "accessibleAt", value.asInstanceOf[js.Any])
       

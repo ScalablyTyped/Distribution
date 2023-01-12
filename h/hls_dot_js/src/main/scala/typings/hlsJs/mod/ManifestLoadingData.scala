@@ -15,7 +15,8 @@ object ManifestLoadingData {
     __obj.asInstanceOf[ManifestLoadingData]
   }
   
-  extension [Self <: ManifestLoadingData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestLoadingData] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

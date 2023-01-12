@@ -17,7 +17,8 @@ object SketchAssetCollection {
     __obj.asInstanceOf[SketchAssetCollection]
   }
   
-  extension [Self <: SketchAssetCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchAssetCollection] (val x: Self) extends AnyVal {
     
     inline def setColors(value: () => js.Array[MSColor]): Self = StObject.set(x, "colors", js.Any.fromFunction0(value))
     
